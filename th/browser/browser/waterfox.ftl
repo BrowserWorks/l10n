@@ -124,13 +124,6 @@ preset-title = Presets
 waterfox-defaults =
     .label = Waterfox Defaults
 rounded-corners =
-    .label = Rounded Corners
-    .label =
-        { $isRounded ->
-            [true] Toggle Square Corners
-            *[false] Toggle Smooth Corners
-        }
-autohide-all =
     .label =
         { $isAutohide ->
             [true] Toggle Autohide Off
