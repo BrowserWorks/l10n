@@ -8,7 +8,7 @@ N=$(getconf _NPROCESSORS_ONLN 2>/dev/null || getconf NPROCESSORS_ONLN)
 for AB_CD in ar cs da de el en-GB es-ES es-MX fr hu id it ja ko lt nl nn-NO pl pt-BR pt-PT ru sv-SE th vi zh-CN zh-TW; do
    rm -rf $AB_CD || true
    (
-   wget -O $AB_CD.zip https://hg.mozilla.org/l10n-central/$AB_CD/archive/tip.zip
+   curl -L -o $AB_CD.zip https://hg.mozilla.org/l10n-central/$AB_CD/archive/tip.zip
    unzip $AB_CD.zip
    rm $AB_CD.zip
    for DIR in $AB_CD-*;
