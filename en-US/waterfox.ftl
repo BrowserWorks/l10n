@@ -114,7 +114,7 @@ load-images =
     .label = Load images automatically
 enable-javascript =
     .label = Enable JavaScript
-enable-dooh = 
+enable-dooh =
     .label = Use DNS over Oblivious HTTP
 webrtc-header = WebRTC peer connection
 ref-header = HTTP Referrer Header
@@ -126,7 +126,6 @@ preset-title = Presets
 waterfox-defaults =
     .label = Waterfox Defaults
 rounded-corners =
-    .label = Rounded Corners
     .label =
         { $isRounded ->
             [true] Toggle Square Corners
