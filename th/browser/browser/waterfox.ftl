@@ -123,30 +123,22 @@ category-theme =
 preset-title = Presets
 waterfox-defaults =
     .label = Waterfox Defaults
-rounded-corners =
-    .label =
-        { $isAutohide ->
-            [true] Toggle Autohide Off
-            *[false] Toggle Autohide On
-        }
-center-all =
-    .label =
-        { $isCentered ->
-            [true] Toggle Centered Off
-            *[false] Toggle Centered On
-        }
-reduce-padding =
-    .label =
-        { $isPadded ->
-            [true] Toggle Compact Off
-            *[false] Toggle Compact On
-        }
+lepton-style =
+    .label = Lepton Style
+proton-style =
+    .label = Proton Style
 enable-waterfox-theme-0 =
     .label = Enable Waterfox theme customisations on all themes
 enable-waterfox-theme-1 =
     .label = Enable Waterfox theme customisations on Waterfox themes
 enable-waterfox-theme-2 =
     .label = Disable Waterfox theme customisations
+enable-default-accent-color =
+    .label = Default Accent Color
+enable-cyan-accent-color =
+    .label = Cyan Accent Color
+enable-system-accent-color =
+    .label = System Accent Color
 disable-panel-animate =
     .label = Disable app menu panel animation
 disable-sidebar-animate =
@@ -232,14 +224,23 @@ monospace-font-theme =
 tab-context-line =
     .label = Tab Context Line
 
+theme-header = Theme
+appearance-header = Appearance
+interface-component-header = Interface Components
+rounding-header = Rounding
+autohide-hidden-header = Auto Hide & Hidden
+center-header = Center
+
 tab-bar-header = Tab Bar
 nav-bar-header = Nav Bar
 bookmark-header = Bookmarks Bar
-font-header = Fonts
-full-screen-header = Full screen
 panels-header = Panels
 sidebar-header = Sidebar
+
+font-header = Fonts
 icons-header = Icons
+animation-header = Animations
+full-screen-header = Full screen
 media-player-header = Media Player
 
 ## about:telemetry
