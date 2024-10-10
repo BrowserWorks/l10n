@@ -1,92 +1,242 @@
 restart-prompt-title = Redémarrer { -brand-short-name }
 restart-prompt-question = Voulez-vous vraiment redémarrer { -brand-short-name }?
-appmenuitem-restart-browser = 
+appmenuitem-restart-browser =
     .label = Redémarrer
-copy-url = 
+copy-url =
     .label = Copier le lien d'onglet
-copy-all-urls = 
+copy-all-urls =
     .label = Copier tous les liens des onglets
-unload-tab = 
+unload-tab =
     .label = Vider l'onglet
-open-all-private = 
+open-all-private =
     .label = Tout ouvrir dans des onglets privés
-open-all-links-private = 
+open-all-links-private =
     .label = Ouvrir tous les liens dans des onglets privés
-open-private-tab = 
+open-private-tab =
     .label = Ouvrir dans un nouvel onglet privé
-new-private-tab = 
+new-private-tab =
     .label = Nouvel onglet privé
     .tooltiptext = Ouvrir un nouvel onglet privé
-open-link-private = 
+open-link-private =
     .label = Ouvrir le lien dans un nouvel onglet privé
-status-bar = 
+status-bar =
     .label = Barre d'état
 tab-position-header = Position de la barre d'onglets
-tab-bar-top-above = 
+tab-bar-top-above =
     .label = Haut au-dessus de la barre d'adresse
-tab-bar-top-below = 
+tab-bar-top-below =
     .label = Au-dessous de la barre d'adresse
-tab-bar-bottom-above = 
+tab-bar-bottom-above =
     .label = En bas au-dessus de la barre d'état
-tab-bar-bottom-below = 
+tab-bar-bottom-below =
     .label = Bas en dessous de la barre d'état
 tab-additional-header = Préférences d'onglets supplémentaires
-pinned-icon-only = 
+pinned-icon-only =
     .label = Réduire les onglets épinglés pour n'afficher que l'icône du site
-insert-after-current = 
+insert-after-current =
     .label = Insérer un nouvel onglet après l'onglet courant
-
 dynamic-theme-header = Thèmes Dynamiques
-dynamic-theme-dark = 
+dynamic-theme-dark =
     .label = Forcer le mode sombre
-dynamic-theme-light = 
+dynamic-theme-light =
     .label = Forcer le mode lumière
-
 restart-header = Redémarrer l'élément du menu
-restart-show-button = 
+restart-show-button =
     .label = Afficher le bouton redémarrer dans PanelUI
-restart-purge-cache = 
+restart-purge-cache =
     .label = Effacer le au redémarrage rapide du navigateur
-restart-require-confirmation = 
+restart-require-confirmation =
     .label = Exiger une confirmation au redémarrage
-
-
-
-
-
-
-statusbar-enabled = 
+statusbar-enabled =
     .label = Afficher la barre d'état
-statusbar-show-links = 
+statusbar-show-links =
     .label = Afficher les liens
-statusbar-contrast-text = 
+statusbar-contrast-text =
     .label = Couleur du texte de la barre d'état
 bookmarks-bar-position-header = Position de la barre d'outils
-bookmarks-position-top = 
+bookmarks-position-top =
     .label = Haut
-bookmarks-position-bottom = 
+bookmarks-position-bottom =
     .label = Bas
 geolocation-api-header = Géolocalisation de type
 geolocation-description = Certains sites Web nécessitent votre emplacement pour fonctionner. Si un site Web ne fonctionne pas en raison de l'incapacité de trouver votre emplacement, veuillez activer cette préférence et réessayer.
-geolocation-api-enabled = 
+geolocation-api-enabled =
     .label = Activer
-geolocation-api-disabled = 
+geolocation-api-disabled =
     .label = Désactiver
-send-referrer-header-0 = 
+send-referrer-header-0 =
     .label = Ne jamais envoyer l'entête du référant
-send-referrer-header-1 = 
+send-referrer-header-1 =
     .label = Envoyer l'en-tête du référent uniquement en cliquant sur les liens et éléments similaires
-send-referrer-header-2 = 
+send-referrer-header-2 =
     .label = Envoyer l'en-tête du référant sur toutes les demandes (par défaut)
-enable-webrtc-p2p = 
+enable-webrtc-p2p =
     .label = Activer la connexion WebRTC
-load-images = 
+load-images =
     .label = Charger les images automatiquement
-enable-javascript = 
+enable-javascript =
     .label = Activez JavaScript
 webrtc-header = Connexion WebRTC entre pairs
 ref-header = En-tête du référent HTTP
-update-updateCheckDisabled = 
-    .label = La recherche de mises à jour est actuellement désactivée.
 statusbar-header = Barre d'état
-
+enable-copy-active-tab =
+    .label = Copy URL only from active tab
+show-copy-url =
+    .label = Show copy tab url menu item
+show-duplicate-tab =
+    .label = Show duplicate tab menu item
+waterfox-defaults =
+    .label = Waterfox Defaults
+rounded-corners =
+    .label =
+        { $isRounded ->
+            [true] Toggle Square Corners
+           *[false] Toggle Smooth Corners
+        }
+hide-tab-icons =
+    .label = Hide Tab Icons
+center-tab-label =
+    .label = Center Tab Label Only
+hide-bookmarkbar-label =
+    .label = Hide Bookmarks Bar Labels
+hide-disabled-menuitems =
+    .label = Hide Disabled Menu Items
+auto-hide-tabbar =
+    .label = Auto Hide Tab Bar
+show-mac-menu-icons =
+    .label = Show Mac Menu Icons
+auto-hide-back =
+    .label = Auto Hide Back Button
+square-button-edges =
+    .label = Square Button Corners
+auto-hide-sidebar =
+    .label = Auto Hide Sidebar
+hide-all-icons =
+    .label = Hide All Icons
+disable-sidebar-animate =
+    .label = Disable sidebar panel animation
+panels-header = Panels
+enable-menu-transparency =
+    .label = Enable menu transparency
+drag-space =
+    .label = Enable Fixed Drag Space
+onboarding-grassroots-title = Supporting the grassroots
+dynamic-theme-auto =
+    .label = Dynamically Set Light/Dark Mode
+insert-related-after-current =
+    .label = Insert related new tab after current tab
+hide-urlbar-iconbox =
+    .label = Hide URL Bar Icon Box
+media-player-header = Media Player
+monospace-font =
+    .label = Enable monospaced font for page
+square-tab-edges =
+    .label = Square Tab Corners
+hide-bookmarkbar-icon =
+    .label = Hide Bookmarks Bar Icons
+telemetry-privacy-policy = Privacy Policy
+square-menu-item =
+    .label = Square Context Menu Item Corners
+onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
+compact-context-menu =
+    .label = Reduce Context Menu Padding
+hide-sidebar-header =
+    .label = Hide Sidebar Header
+square-menu-popup =
+    .label = Square Context Menu Panel Corners
+tab-bar-header = Tab Bar
+tab-feature-header = Tab Context Menu
+full-screen-header = Full screen
+auto-hide-forward =
+    .label = Auto Hide Forward Button
+square-checkbox =
+    .label = Square Checkbox
+enable-waterfox-theme-2 =
+    .label = Disable Waterfox theme customisations
+monospace-font-theme =
+    .label = Enable monospaced font for theme
+compact-panel-header =
+    .label = Reduce Panel Header Padding
+compact-bookmark-menu =
+    .label = Reduce Bookmarks Menu Padding
+enable-dooh =
+    .label = Use DNS over Oblivious HTTP
+auto-blur-tabs =
+    .label = Auto Blur Tabs
+full-panel-strip =
+    .label = Full Width App Menu Separator
+show-menu-icons =
+    .label = Show Menu Icons
+private-tab =
+    .label =
+        { $isPrivate ->
+            [true] Exit Private Tab
+           *[false] Make Private Tab
+        }
+remove-panel-strip =
+    .label = Remove Coloured App Menu Separator
+nav-bar-header = Nav Bar
+sidebar-header = Sidebar
+enable-panel-transparency =
+    .label = Enable panel transparency
+compact-navbar-popup =
+    .label = Reduce Nav Bar Popup Padding
+telemetry-page-subtitle = Waterfox does not collect telemetry about your installation - any telemetry modules are disabled when the browser is built. What you do in your browser is only known by you.
+enable-waterfox-theme-0 =
+    .label = Enable Waterfox theme customisations on all themes
+auto-hide-navbar =
+    .label = Auto Hide Nav Bar
+square-field =
+    .label = Square Entry Field Corners
+enable-waterfox-theme-1 =
+    .label = Enable Waterfox theme customisations on Waterfox themes
+show-unload-tab =
+    .label = Show unload tab menu item
+bookmark-header = Bookmarks Bar
+disable-panel-animate =
+    .label = Disable app menu panel animation
+pane-theme-title = Look & Feel
+preset-title = Presets
+font-header = Fonts
+show-copy-all-urls =
+    .label = Show copy all tab urls menu item
+center-navbar-text =
+    .label = Center Nav Bar Text
+close-button-hover =
+    .label = Display close tab button on hover of selected tab when many tabs are open
+autohide-all =
+    .label =
+        { $isAutohide ->
+            [true] Toggle Autohide Off
+           *[false] Toggle Autohide On
+        }
+center-tab-content =
+    .label = Center Tab Content
+auto-hide-tabs =
+    .label = Auto Hide Tabs
+auto-hide-bookmarkbar =
+    .label = Auto Hide Bookmarks Bar
+center-all =
+    .label =
+        { $isCentered ->
+            [true] Toggle Centered Off
+           *[false] Toggle Centered On
+        }
+auto-hide-pageaction =
+    .label = Auto Hide Page Action
+category-theme =
+    .tooltiptext = { pane-theme-title }
+reduce-padding =
+    .label =
+        { $isPadded ->
+            [true] Toggle Compact Off
+           *[false] Toggle Compact On
+        }
+icons-header = Icons
+tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
+tab-context-line =
+    .label = Tab Context Line
+square-panel-item =
+    .label = Square App Menu Item Corners
+square-menu-panel =
+    .label = Square App Menu Panel Corners
