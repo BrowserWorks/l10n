@@ -1,15 +1,19 @@
 # In browser/locales/jar.mn
 # Localised versions MUST be located in browser/locales/l10n/{locale}/browser/browser/waterfox.ftl
 
+
 ## Restart Prompt
+
 restart-prompt-title = Restart { -brand-short-name }
 restart-prompt-question = Are you sure that you want to restart { -brand-short-name }?
 
 ## App Menu
+
 appmenuitem-restart-browser =
     .label = Restart
 
 ## Tab Context Menu
+
 copy-url =
     .label = Copy Tab Link
 copy-all-urls =
@@ -18,6 +22,7 @@ unload-tab =
     .label = Unload Tab
 
 ## Private Tab
+
 open-all-private =
     .label = Open All in Private Tabs
 open-all-links-private =
@@ -33,15 +38,19 @@ private-tab =
     .label =
         { $isPrivate ->
             [true] Exit Private Tab
-            *[false] Make Private Tab
+           *[false] Make Private Tab
         }
 
 ## Status Bar
+
 status-bar =
     .label = Status Bar
 
 ## about:preferences
+
+
 ### Main
+
 tab-position-header = Tab Bar Position
 tab-bar-top-above =
     .label = Top above address bar
@@ -101,7 +110,9 @@ geolocation-api-enabled =
     .label = Enable
 geolocation-api-disabled =
     .label = Disable
+
 ### Privacy
+
 send-referrer-header-0 =
     .label = Never send the referrer header
 send-referrer-header-1 =
@@ -116,7 +127,9 @@ enable-javascript =
     .label = Enable JavaScript
 webrtc-header = WebRTC peer connection
 ref-header = HTTP Referrer Header
+
 ### Look & Feel
+
 pane-theme-title = Look & Feel
 category-theme =
     .tooltiptext = { pane-theme-title }
@@ -127,19 +140,19 @@ rounded-corners =
     .label =
         { $isAutohide ->
             [true] Toggle Autohide Off
-            *[false] Toggle Autohide On
+           *[false] Toggle Autohide On
         }
 center-all =
     .label =
         { $isCentered ->
             [true] Toggle Centered Off
-            *[false] Toggle Centered On
+           *[false] Toggle Centered On
         }
 reduce-padding =
     .label =
         { $isPadded ->
             [true] Toggle Compact Off
-            *[false] Toggle Compact On
+           *[false] Toggle Compact On
         }
 enable-waterfox-theme-0 =
     .label = Enable Waterfox theme customisations on all themes
@@ -231,7 +244,6 @@ monospace-font-theme =
     .label = Enable monospaced font for theme
 tab-context-line =
     .label = Tab Context Line
-
 tab-bar-header = Tab Bar
 nav-bar-header = Nav Bar
 bookmark-header = Bookmarks Bar
@@ -243,8 +255,21 @@ icons-header = Icons
 media-player-header = Media Player
 
 ## about:telemetry
+
 telemetry-page-subtitle = Waterfox does not collect telemetry about your installation - any telemetry modules are disabled when the browser is built. What you do in your browser is only known by you.
 telemetry-privacy-policy = Privacy Policy
-
 onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
+tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
+enable-menu-transparency =
+    .label = Enable menu transparency
+enable-dooh =
+    .label = Use DNS over Oblivious HTTP
+enable-panel-transparency =
+    .label = Enable panel transparency
+autohide-all =
+    .label =
+        { $isAutohide ->
+            [true] Toggle Autohide Off
+           *[false] Toggle Autohide On
+        }
