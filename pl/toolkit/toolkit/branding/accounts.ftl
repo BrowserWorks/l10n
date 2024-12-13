@@ -8,32 +8,32 @@
     { $case ->
        *[nom]
             { $capitalization ->
-               *[upper] Konto Firefoksa
-                [lower] konto Firefoksa
+               *[upper] Konto Waterfoksa
+                [lower] konto Waterfoksa
             }
         [gen]
             { $capitalization ->
-               *[upper] Konta Firefoksa
-                [lower] konta Firefoksa
+               *[upper] Konta Waterfoksa
+                [lower] konta Waterfoksa
             }
         [dat]
             { $capitalization ->
-               *[upper] Kontu Firefoksa
-                [lower] kontu Firefoksa
+               *[upper] Kontu Waterfoksa
+                [lower] kontu Waterfoksa
             }
         [acc]
             { $capitalization ->
-               *[upper] Konto Firefoksa
-                [lower] konto Firefoksa
+               *[upper] Konto Waterfoksa
+                [lower] konto Waterfoksa
             }
         [ins]
             { $capitalization ->
-               *[upper] Kontem Firefoksa
-                [lower] kontem Firefoksa
+               *[upper] Kontem Waterfoksa
+                [lower] kontem Waterfoksa
             }
         [loc]
             { $capitalization ->
-               *[upper] Koncie Firefoksa
-                [lower] koncie Firefoksa
+               *[upper] Koncie Waterfoksa
+                [lower] koncie Waterfoksa
             }
     }
