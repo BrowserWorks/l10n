@@ -34,40 +34,40 @@
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
 # The particle "by" can be localized, "Fakespot" and "BrowserWorks" should not be localized or transliterated.
--fakespot-brand-full-name = Fakespot od Mozilli
+-fakespot-brand-full-name = Fakespot od BrowserWorks
 # “Suggest” can be localized, “Waterfox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name =
     { $case ->
        *[nom]
             { $capitalization ->
-               *[upper] Podpowiedzi Firefoksa
-                [lower] podpowiedzi Firefoksa
+               *[upper] Podpowiedzi Waterfoksa
+                [lower] podpowiedzi Waterfoksa
             }
         [gen]
             { $capitalization ->
-               *[upper] Podpowiedzi Firefoksa
-                [lower] podpowiedzi Firefoksa
+               *[upper] Podpowiedzi Waterfoksa
+                [lower] podpowiedzi Waterfoksa
             }
         [dat]
             { $capitalization ->
-               *[upper] Podpowiedziom Firefoksa
-                [lower] podpowiedziom Firefoksa
+               *[upper] Podpowiedziom Waterfoksa
+                [lower] podpowiedziom Waterfoksa
             }
         [acc]
             { $capitalization ->
-               *[upper] Podpowiedzi Firefoksa
-                [lower] podpowiedzi Firefoksa
+               *[upper] Podpowiedzi Waterfoksa
+                [lower] podpowiedzi Waterfoksa
             }
         [ins]
             { $capitalization ->
-               *[upper] Podpowiedziami Firefoksa
-                [lower] podpowiedziami Firefoksa
+               *[upper] Podpowiedziami Waterfoksa
+                [lower] podpowiedziami Waterfoksa
             }
         [loc]
             { $capitalization ->
-               *[upper] Podpowiedziach Firefoksa
-                [lower] podpowiedziach Firefoksa
+               *[upper] Podpowiedziach Waterfoksa
+                [lower] podpowiedziach Waterfoksa
             }
     }
 # ”Home" can be localized, “Waterfox” must be treated as a brand
@@ -76,33 +76,33 @@
     { $case ->
        *[nom]
             { $capitalization ->
-               *[upper] Strona startowa Firefoksa
-                [lower] strona startowa Firefoksa
+               *[upper] Strona startowa Waterfoksa
+                [lower] strona startowa Waterfoksa
             }
         [gen]
             { $capitalization ->
-               *[upper] Strony startowej Firefoksa
-                [lower] strony startowej Firefoksa
+               *[upper] Strony startowej Waterfoksa
+                [lower] strony startowej Waterfoksa
             }
         [dat]
             { $capitalization ->
-               *[upper] Stronie startowej Firefoksa
-                [lower] stronie startowej Firefoksa
+               *[upper] Stronie startowej Waterfoksa
+                [lower] stronie startowej Waterfoksa
             }
         [acc]
             { $capitalization ->
-               *[upper] Stronę startową Firefoksa
-                [lower] stronę startową Firefoksa
+               *[upper] Stronę startową Waterfoksa
+                [lower] stronę startową Waterfoksa
             }
         [ins]
             { $capitalization ->
-               *[upper] Stroną startową Firefoksa
-                [lower] stroną startową Firefoksa
+               *[upper] Stroną startową Waterfoksa
+                [lower] stroną startową Waterfoksa
             }
         [loc]
             { $capitalization ->
-               *[upper] Stronie startowej Firefoksa
-                [lower] stronie startowej Firefoksa
+               *[upper] Stronie startowej Waterfoksa
+                [lower] stronie startowej Waterfoksa
             }
     }
 # View" can be localized, “Waterfox” must be treated as a brand
@@ -111,37 +111,37 @@
     { $case ->
        *[nom]
             { $capitalization ->
-               *[upper] Przegląd Firefoksa
-                [lower] przegląd Firefoksa
+               *[upper] Przegląd Waterfoksa
+                [lower] przegląd Waterfoksa
             }
         [gen]
             { $capitalization ->
-               *[upper] Przeglądu Firefoksa
-                [lower] przeglądu Firefoksa
+               *[upper] Przeglądu Waterfoksa
+                [lower] przeglądu Waterfoksa
             }
         [dat]
             { $capitalization ->
-               *[upper] Przeglądowi Firefoksa
-                [lower] przeglądowi Firefoksa
+               *[upper] Przeglądowi Waterfoksa
+                [lower] przeglądowi Waterfoksa
             }
         [acc]
             { $capitalization ->
-               *[upper] Przegląd Firefoksa
-                [lower] przegląd Firefoksa
+               *[upper] Przegląd Waterfoksa
+                [lower] przegląd Waterfoksa
             }
         [ins]
             { $capitalization ->
-               *[upper] Przeglądem Firefoksa
-                [lower] przeglądem Firefoksa
+               *[upper] Przeglądem Waterfoksa
+                [lower] przeglądem Waterfoksa
             }
         [loc]
             { $capitalization ->
-               *[upper] Przeglądzie Firefoksa
-                [lower] przeglądzie Firefoksa
+               *[upper] Przeglądzie Waterfoksa
+                [lower] przeglądzie Waterfoksa
             }
     }
 # Waterfox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
 # The "Labs" portion can be localized, “Waterfox” must be treated as a brand
 # and kept in English.
--firefoxlabs-brand-name = Waterfox Labs
+-firefoxlabs-brand-name = Laboratorium Waterfoksa
