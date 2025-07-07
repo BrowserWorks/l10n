@@ -1,18 +1,26 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nový panel
 newtab-settings-button =
     .title = Přizpůsobení stránky nového panelu
+newtab-customize-panel-icon-button-label = Přizpůsobit
+newtab-personalize-settings-icon-label =
+    .title = Přizpůsobení nového panelu
+    .aria-label = Nastavení
+newtab-settings-dialog-label =
+    .aria-label = Nastavení
 newtab-personalize-icon-label =
     .title = Přizpůsobení nového panelu
     .aria-label = Přizpůsobení nového panelu
 newtab-personalize-dialog-label =
     .aria-label = Přizpůsobit
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -109,6 +117,21 @@ newtab-menu-save-to-pocket = Uložit do { -pocket-brand-name(case: "gen") }
 newtab-menu-delete-pocket = Smazat z { -pocket-brand-name(case: "gen") }
 newtab-menu-archive-pocket = Archivovat do { -pocket-brand-name(case: "gen") }
 newtab-menu-show-privacy-info = Naši sponzoři a vaše soukromí
+newtab-menu-about-fakespot = Co je { -fakespot-brand-name }
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = Nahlásit
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = Blokovat
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = Přestat sledovat téma
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = Správa sponzorovaného obsahu
+newtab-menu-our-sponsors-and-your-privacy = Naši sponzoři a vaše soukromí
+newtab-menu-report-this-ad = Nahlásit tento inzerát
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -116,12 +139,12 @@ newtab-privacy-modal-button-done = Hotovo
 newtab-privacy-modal-button-manage = Nastavení sponzorovaného obsahu
 newtab-privacy-modal-header = Na vašem soukromí záleží.
 newtab-privacy-modal-paragraph-2 =
-    Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných partnerů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí { -brand-product-name.gender ->
-        [masculine] váš { -brand-product-name(case: "acc") }
-        [feminine] vaši { -brand-product-name(case: "acc") }
-        [neuter] vaše { -brand-product-name(case: "acc") }
-       *[other] vaši aplikaci { -brand-product-name }
-    }</strong> - neodesílají se nám ani našim partnerům.
+    { -brand-product-name.gender ->
+        [masculine] Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných partnerů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí váš { -brand-product-name(case: "acc") }</strong> - neodesílají se nám ani našim partnerům.
+        [feminine] Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných partnerů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí vaši { -brand-product-name(case: "acc") }</strong> - neodesílají se nám ani našim partnerům.
+        [neuter] Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných partnerů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí vaše { -brand-product-name(case: "acc") }</strong> - neodesílají se nám ani našim partnerům.
+       *[other] Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných partnerů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí vaši aplikaci { -brand-product-name }</strong> - neodesílají se nám ani našim partnerům.
+    }
 newtab-privacy-modal-link = Zjistěte, jak chráníme vaše soukromí na stránce nového panelu.
 
 ##
@@ -172,6 +195,8 @@ newtab-label-sponsored-by = Sponzorováno společností { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } min.
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = Sponzorováno
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -202,6 +227,8 @@ newtab-section-header-recent-activity = Nedávná aktivita
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Doporučení ze služby { $provider }
 newtab-section-header-stories = Podnětné články
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = Dnešní výběr pro vás
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -232,9 +259,23 @@ newtab-pocket-learn-more = Zjistit více
 newtab-pocket-cta-button = Získejte { -pocket-brand-name(case: "acc") }
 newtab-pocket-cta-text = Ukládejte si články do { -pocket-brand-name(case: "gen") } a užívejte si skvělé čtení.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } je součástí rodiny { -brand-product-name(case: "gen") }
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Uložit
 newtab-pocket-saved = Uloženo
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Další podobné
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Ne pro mě
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = Děkujeme. Vaše zpětná vazba nám pomůže váš informační kanál vylepšit.
+newtab-toast-dismiss-button =
+    .title = Zavřít
+    .aria-label = Zavřít
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -282,6 +323,9 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = Počasí
     .description = Dnešní předpověď ve zkratce
+newtab-custom-trending-search-toggle =
+    .label = Trendy ve vyhledávání
+    .description = Oblíbená a často vyhledávaná témata
 newtab-custom-close-button = Zavřít
 newtab-custom-settings = Další nastavení
 
@@ -289,6 +333,12 @@ newtab-custom-settings = Další nastavení
 
 newtab-wallpaper-title = Tapety
 newtab-wallpaper-reset = Obnovit výchozí nastavení
+newtab-wallpaper-upload-image = Nahrát obrázek
+newtab-wallpaper-custom-color = Vybrat barvu
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = Obrázek překročil limit velikosti souboru { $file_size } MB. Zkuste nahrát menší soubor.
+newtab-wallpaper-error-file-type = Váš soubor se nám nepodařilo nahrát. Zkuste to prosím znovu s jiným typem souboru.
 newtab-wallpaper-light-red-panda = Panda červená
 newtab-wallpaper-light-mountain = Bílá hora
 newtab-wallpaper-light-sky = Obloha s fialovými a růžovými mraky
@@ -301,6 +351,8 @@ newtab-wallpaper-dark-panda = Panda červená ukrytá v lese
 newtab-wallpaper-dark-sky = Městská krajina s noční oblohou
 newtab-wallpaper-dark-mountain = Horská scenérie
 newtab-wallpaper-dark-city = Fialová krajina města
+newtab-wallpaper-dark-fox-anniversary = Liška na chodníku u lesa
+newtab-wallpaper-light-fox-anniversary = Liška na louce se zamlženou horskou krajinou
 
 ## Solid Colors
 
@@ -330,8 +382,12 @@ newtab-wallpaper-abstract-purple = Fialové tvary
 newtab-wallpaper-abstract-orange = Oranžové tvary
 newtab-wallpaper-gradient-orange = Přechod oranžové a růžové
 newtab-wallpaper-abstract-blue-purple = Modré a fialové tvary
+newtab-wallpaper-abstract-white-curves = Bílá se stínovanými křivkami
+newtab-wallpaper-abstract-purple-green = Přechod fialové a zelené barvy
+newtab-wallpaper-abstract-blue-purple-waves = Modré a fialové zvlněné tvary
+newtab-wallpaper-abstract-black-waves = Černé zvlněné tvary
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = Fotografie
 newtab-wallpaper-beach-at-sunrise = Pláž při východu slunce
@@ -340,10 +396,16 @@ newtab-wallpaper-storm-sky = Bouřková obloha
 newtab-wallpaper-sky-with-pink-clouds = Obloha s růžovými obláčky
 newtab-wallpaper-red-panda-yawns-in-a-tree = Panda červená zívá na stromě
 newtab-wallpaper-white-mountains = Bílé hory
+newtab-wallpaper-hot-air-balloons = Různé barvy horkovzdušných balonů během dne
+newtab-wallpaper-starry-canyon = Modrá hvězdná noc
+newtab-wallpaper-suspension-bridge = Šedivé fotografování celé visuté můstky během dne
+newtab-wallpaper-sand-dunes = Bílé písečné duny
+newtab-wallpaper-palm-trees = Silueta kokosových palem během zlaté hodiny
+newtab-wallpaper-blue-flowers = Detailní fotografie modrých okvětních lístků v květu
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
-newtab-wallpaper-attribution = Fotografie od autora <a data-l10n-name="name-link">{ $author_string }</a> na <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-attribution = Fotografie od autora <a data-l10n-name="name-link">{ $author_string }</a> z webu <a data-l10n-name="webpage-link">{ $webpage_string }</a>
 newtab-wallpaper-feature-highlight-header = Zkuste barevný nádech
 newtab-wallpaper-feature-highlight-content = Dejte svému novému panelu svěží vzhled pomocí tapet.
 newtab-wallpaper-feature-highlight-button = Rozumím
@@ -355,6 +417,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = Nebeská
+newtab-wallpaper-celestial-lunar-eclipse = Zatmění Měsíce
+newtab-wallpaper-celestial-earth-night = Noční fotografie z nízké oběžné dráhy Země
+newtab-wallpaper-celestial-starry-sky = Hvězdná obloha
+newtab-wallpaper-celestial-eclipse-time-lapse = Časosběrné snímání zatmění Měsíce
+newtab-wallpaper-celestial-black-hole = Ilustrace galaxie Černá díra
+newtab-wallpaper-celestial-river = Satelitní snímek řeky
+
 ## New Tab Weather
 
 # Variables:
@@ -365,6 +440,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙Sponzorované
 newtab-weather-menu-change-location = Změnit místo
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = Hledat umístění
+    .aria-label = Hledat umístění
 newtab-weather-change-location-search-input = Hledat umístění
 newtab-weather-menu-weather-display = Zobrazení počasí
 # Display options are:
@@ -383,3 +461,144 @@ newtab-weather-menu-hide-weather = Skrýt počasí na novém panelu
 newtab-weather-menu-learn-more = Zjistit více
 # This message is shown if user is working offline
 newtab-weather-error-not-available = Údaje o počasí nejsou momentálně dostupné.
+
+## Topic Labels
+
+newtab-topic-label-business = Podnikání
+newtab-topic-label-career = Kariéra
+newtab-topic-label-education = Vzdělávání
+newtab-topic-label-arts = Zábava
+newtab-topic-label-food = Jídlo
+newtab-topic-label-health = Zdraví
+newtab-topic-label-hobbies = Hraní her
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = Finance
+newtab-topic-label-society-parenting = Rodičovství
+newtab-topic-label-government = Politika
+newtab-topic-label-education-science = Věda
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = Zajímavé tipy
+newtab-topic-label-sports = Sporty
+newtab-topic-label-tech = Technologie
+newtab-topic-label-travel = Cestování
+newtab-topic-label-home = Dům a zahrada
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = Vyberte témata pro vyladění svého kanálu
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = Vyberte dvě nebo více témat. Naši odborní kurátoři upřednostňují články přizpůsobené vašim zájmům. Aktualizovat můžete kdykoliv.
+newtab-topic-selection-save-button = Uložit
+newtab-topic-selection-cancel-button = Zrušit
+newtab-topic-selection-button-maybe-later = Možná později
+newtab-topic-selection-privacy-link = Zjistěte, jak chráníme a spravujeme data
+newtab-topic-selection-button-update-interests = Aktualizujte své zájmy
+newtab-topic-selection-button-pick-interests = Vyberte, co vás zajímá
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = Sledovat
+newtab-section-following-button = Sledované
+newtab-section-unfollow-button = Přestat sledovat
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = Blokovat
+newtab-section-blocked-button = Blokováno
+newtab-section-unblock-button = Odblokovat
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = Teď ne
+newtab-section-confirm-block-topic-p1 = Opravdu chcete zablokovat toto téma?
+newtab-section-confirm-block-topic-p2 = Zablokovaná témata se již nebudou zobrazovat ve vašem kanálu.
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = Blokovat { $topic }
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = Témata
+newtab-section-manage-topics-button-v2 =
+    .label = Správa témat
+newtab-section-mangage-topics-followed-topics = Sledováno
+newtab-section-mangage-topics-followed-topics-empty-state = Zatím nesledujete žádné téma.
+newtab-section-mangage-topics-blocked-topics = Blokováno
+newtab-section-mangage-topics-blocked-topics-empty-state = Zatím jste nezablokovali žádná témata.
+newtab-custom-wallpaper-title = Vlastní tapety jsou zde
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle =
+    { -brand-product-name.case-status ->
+        [with-cases] Nahrajte si vlastní tapetu nebo si vyberte vlastní barvu, aby { -brand-product-name } byl podle vás.
+       *[no-cases] Nahrajte si vlastní tapetu nebo si vyberte vlastní barvu, aby aplikace { -brand-product-name } byla podle vás.
+    }
+newtab-custom-wallpaper-cta = Vyzkoušejte ho
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title =
+    { -brand-product-name.case-status ->
+        [with-cases] Stáhnout { -brand-product-name(case: "acc") } pro mobily
+       *[no-cases] Stáhnout aplikaci { -brand-product-name } pro mobily
+    }
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = Naskenujte kód a bezpečně prohlížejte internet i na cestách.
+newtab-download-mobile-highlight-body-variant-b = Se synchronizací svých panelů, hesel a dalších věcí můžete pokračovat tam, kde jste skončili.
+newtab-download-mobile-highlight-body-variant-c =
+    { -brand-product-name.case-status ->
+        [with-cases] Víte, že { -brand-product-name(case: "acc") } si můžete vzít s sebou? Stejný prohlížeč. Do vaší kapsy.
+       *[no-cases] Víte, že aplikaci { -brand-product-name } si můžete vzít s sebou? Stejný prohlížeč. Do vaší kapsy.
+    }
+newtab-download-mobile-highlight-image =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobilní zařízení
+           *[no-cases] QR kód pro stažení aplikace { -brand-product-name } pro mobilní zařízení
+        }
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = Proč to nahlašujete?
+newtab-report-ads-reason-not-interested =
+    .label = Nemám zájem
+newtab-report-ads-reason-inappropriate =
+    .label = Je to nevhodné
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = Už jsem to viděl(a) mockrát
+newtab-report-content-wrong-category =
+    .label = Špatná kategorie
+newtab-report-content-outdated =
+    .label = Zastaralé
+newtab-report-content-inappropriate-offensive =
+    .label = Nevhodné nebo urážlivé
+newtab-report-content-spam-misleading =
+    .label = Nevyžádaný příspěvek nebo klamavá zpráva
+newtab-report-cancel = Zrušit
+newtab-report-submit = Odeslat
+newtab-toast-thanks-for-reporting =
+    .message = Děkujeme za nahlášení.
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Trendy na Googlu
+newtab-trending-searches-show-trending =
+    .title = Zobrazit populární vyhledávání
+newtab-trending-searches-hide-trending =
+    .title = Skrýt populární vyhledávání
+newtab-trending-searches-learn-more = Zjistit více
+newtab-trending-searches-dismiss = Skrýt populární vyhledávání
+# "Trending searches refers to popular searches from search engines
+newtab-trending-searches-title = Trendy ve vyhledávání

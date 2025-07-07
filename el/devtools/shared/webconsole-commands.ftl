@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,13 +22,3 @@ webconsole-commands-usage-unblock =
     Διακοπή αποκλεισμού αιτημάτων δικτύου
     
       Δέχεται μόνο ένα όρισμα, ακριβώς την ίδια συμβολοσειρά που περάστηκε στο :block.
-# Usage string for :trace command
-webconsole-commands-usage-trace =
-    :trace
-    
-    (Απ)ενεργοποιεί την ιχνηλάτηση JavaScript
-    
-      Υποστηρίζει τα εξής ορίσματα:
-        --logMethod, που μπορεί να οριστεί σε «console» για την καταγραφή στην κονσόλα ιστού (προεπιλογή) ή σε »stdout» για την καταγραφή στην τυπική έξοδο,
-        --prefix, μια προαιρετική συμβολοσειρά που θα καταγραφεί μπροστά από όλες τις καταγραφές ιχνηλάτησης,
-        --help ή --usage, για την εμφάνιση αυτού του μηνύματος.

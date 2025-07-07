@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Mở địa chỉ…
 menu-file-open-file =
@@ -254,6 +254,15 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Dấu trang trên di động
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Hồ sơ
+menu-profiles-manage-profiles =
+    .label = Quản lý hồ sơ
+menu-profiles-new-profile =
+    .label = Hồ sơ mới
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +271,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Tải xuống
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Tiện ích mở rộng và chủ đề
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Tiện ích mở rộng và chủ đề
     .accesskey = A
@@ -273,7 +285,7 @@ menu-tools-turn-on-sync2 =
     .accesskey = n
 menu-tools-sync-now =
     .label = Đồng bộ ngay
-    .accesskey = S
+    .accesskey = o
 menu-tools-fxa-re-auth =
     .label = Kết nối lại vào { -brand-product-name }…
     .accesskey = R

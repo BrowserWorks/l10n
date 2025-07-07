@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,7 +11,6 @@ wizard-linux-button-back =
 wizard-win-button-back =
     .label = < Zpět
     .accesskey = Z
-
 wizard-macos-button-next =
     .label = Pokračovat
     .accesskey = P
@@ -21,14 +20,12 @@ wizard-linux-button-next =
 wizard-win-button-next =
     .label = Další >
     .accesskey = D
-
 wizard-macos-button-finish =
     .label = Hotovo
 wizard-linux-button-finish =
     .label = Dokončit
 wizard-win-button-finish =
     .label = Dokončit
-
 wizard-macos-button-cancel =
     .label = Zrušit
 wizard-linux-button-cancel =

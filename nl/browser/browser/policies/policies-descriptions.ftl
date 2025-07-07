@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = Ondersteuning voor hotspot-aanmeldingspagina inschakelen 
 policy-CertificatesDescription = Certificaten toevoegen of ingebouwde certificaten gebruiken.
 policy-ContentAnalysis = Verbinding met data-loss-prevention-agent in- of uitschakelen.
 policy-Cookies = Toestaan of weigeren dat websites cookies instellen.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Beleid met betrekking tot containers instellen.
 policy-DisableAccounts = Accountgebaseerde services uitschakelen, waaronder synchronisatie.
 policy-DisabledCiphers = Coderingssuites uitschakelen.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Voorkomen dat de standaard browseragent enig
 policy-DisableDeveloperTools = Toegang tot de ontwikkelaarshulpmiddelen blokkeren.
 policy-DisableEncryptedClientHello = Gebruik van de TLS-functie Encrypted Client Hello (ECH) uitschakelen.
 policy-DisableFeedbackCommands = Opdrachten voor het verzenden van feedback vanuit het menu Help uitschakelen (Feedback verzenden en Misleidende website rapporteren).
-policy-DisableWaterfoxAccounts = Op { -fxaccount-brand-name } gebaseerde services uitschakelen, waaronder Sync.
+policy-DisableFirefoxAccounts = Op { -fxaccount-brand-name } gebaseerde services uitschakelen, waaronder Synchronisatie.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Accountgebaseerde services uitschakelen, waaronder synchronisatie.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = De Waterfox Screenshots-functie uitschakelen.
-policy-DisableWaterfoxStudies = Voorkomen dat { -brand-short-name } onderzoeken uitvoert.
+policy-DisableFirefoxAccounts1 = Accountgebaseerde services uitschakelen, waaronder synchronisatie.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = De Waterfox Screenshots-functie uitschakelen.
+policy-DisableFirefoxStudies = Voorkomen dat { -brand-short-name } onderzoeken uitvoert.
 policy-DisableForgetButton = Toegang tot de knop Vergeten voorkomen.
 policy-DisableFormHistory = Geen zoek- en formuliergeschiedenis onthouden.
 policy-DisablePrimaryPasswordCreation = Wanneer true, kan geen hoofdwachtwoord worden aangemaakt.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Waarschuwingen ui
 policy-Extensions = Extensies installeren, de-installeren of vergrendelen. De optie voor installeren gebruikt URL’s of paden als parameters. De opties voor de-installeren en vergrendelen gebruiken extensie-ID’s.
 policy-ExtensionSettings = Alle aspecten van installatie van extensies beheren.
 policy-ExtensionUpdate = Automatische extensie-updates inschakelen of uitschakelen.
-policy-WaterfoxHome2 = { -firefox-home-brand-name } configureren.
-policy-WaterfoxSuggest = { -firefox-suggest-brand-name } configureren.
+policy-FirefoxHome2 = { -firefox-home-brand-name } configureren.
+policy-FirefoxSuggest = { -firefox-suggest-brand-name } configureren.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Directe navigatie op intranetsites forceren in plaats van zoeken bij het typen van enkele woorden in de adresbalk.
 policy-Handlers = Standaard toepassinghandlers configureren
 policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
@@ -119,6 +119,7 @@ policy-Permissions2 = Toestemmingen voor camera, microfoon, locatie, notificatie
 policy-PictureInPicture = Picture-in-picture in- of uitschakelen.
 policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeven.
 policy-Preferences = De waarde voor een subset van voorkeuren instellen en vergrendelen.
+policy-PrivateBrowsingModeAvailability = Beschikbaarheid van privénavigatiemodus instellen.
 policy-PromptForDownloadLocation = Vragen waar gedownloade bestanden moeten worden opgeslagen.
 policy-Proxy = Proxyinstellingen configureren.
 policy-RequestedLocales = De lijst van gevraagde locales voor de toepassing instellen, op volgorde van voorkeur.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Zoeksuggesties inschakelen of uitschakelen.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11-modules toevoegen of verwijderen.
 policy-ShowHomeButton = De startpaginaknop op de werkbalk tonen.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = De gebruiksvoorwaarden en privacyverklaring niet tonen bij opstarten. U verklaart dat u de Gebruiksvoorwaarden accepteert en de zeggenschap hebt om deze te accepteren namens alle personen aan wie u toegang tot deze browser geeft.
 policy-SSLVersionMax = De maximale SSL-versie instellen.
 policy-SSLVersionMin = De minimale SSL-versie instellen.
 policy-StartDownloadsInTempDirectory = Afdwingen dat downloads starten in een lokale, tijdelijke locatie in plaats van de standaard downloadmap.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Afdrukken via het afdrukdialoogvenster van het sys
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.
 policy-Windows10SSO = Windows-single-sign-on toestaan voor Microsoft- werk- en schoolaccounts.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Single sign-on voor Microsoft Entra-accounts toestaan.

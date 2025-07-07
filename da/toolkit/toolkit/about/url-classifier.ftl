@@ -1,11 +1,15 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = Information om url-classifier
 url-classifier-search-title = Søgning
 url-classifier-search-result-title = Resultater
+# Variables:
+#   $uri (string) - URI of blocked page
 url-classifier-search-result-uri = URI: { $uri }
+# Variables:
+#   $list (string) - List of tables where the page is blocked
 url-classifier-search-result-list = Liste 0ver tabeller: { $list }
 url-classifier-search-input = URL
 url-classifier-search-error-invalid-url = Ugyldig URL
@@ -40,7 +44,6 @@ url-classifier-debug-sb-modules = Safe Browsing-logmoduler
 url-classifier-debug-modules = Nuværende logmoduler
 url-classifier-debug-sbjs-modules = Safe Browsing-JS-log
 url-classifier-debug-file = Nuværende logfil
-
 url-classifier-trigger-update = Udløs opdatering
 url-classifier-not-available = Ikke tilgængelig
 url-classifier-disable-sbjs-log = Deaktiver Safe Browsing-JS-log

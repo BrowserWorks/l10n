@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Oversæt denne side
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Håndter sprog
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Vis oprindelig
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Oversættelser
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Hent sprog til oversættelse offline.
 translations-manage-all-language = Alle sprog
 translations-manage-download-button = Hent
 translations-manage-delete-button = Slet
-translations-manage-intro = Vælg dit sprog, indstillinger for oversættelser af websteder og håndter sprog installeret til brug for oversættelse offline.
-translations-manage-install-description = Installer sprog til offline oversættelse
-translations-manage-language-install-button =
-    .label = Installer
-translations-manage-language-install-all-button =
-    .label = Installer alle
-    .accesskey = a
 translations-manage-intro-2 = Indstil dine præferencer for sprog og oversættelse af websteder og håndter sprog som er blevet hentet for at oversætte sider, når du ikke er online.
 translations-manage-download-description = Hent sprog for at oversætte sider, når du er offline
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Fjern alle
     .accesskey = e
-translations-manage-error-install = Der opstod et problem med at installere sprogfilerne. Prøv igen.
 translations-manage-error-download = Der opstod et problem med at hente sprogfilerne. Prøv igen.
 translations-manage-error-delete = Der opstod en fejl under sletningen af sprogfilerne. Prøv igen.
 translations-manage-error-remove = Der opstod en fejl med at fjerne sprogfilerne. Prøv igen.

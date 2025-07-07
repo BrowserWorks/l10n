@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Sépia
     .title = Esquema de cores sépia
 about-reader-color-scheme-auto = Automático
     .title = Esquema de cores automático
-about-reader-color-theme-light = Claro
-    .title = Tema de cores claras
-about-reader-color-theme-dark = Escuro
-    .title = Tema de cores escuras
-about-reader-color-theme-sepia = Sépia
-    .title = Tema de cores sépia
-about-reader-color-theme-auto = Automático
-    .title = Tema automático de cores
-about-reader-color-theme-gray = Cinza
-    .title = Tema de cores cinza
-about-reader-color-theme-contrast = Contraste
-    .title = Tema de cores com contraste
-about-reader-color-theme-custom = Cores personalizadas
-    .title = Tema de cores personalizadas
 about-reader-color-light-theme = Claro
     .title = Tema claro
 about-reader-color-dark-theme = Escuro
@@ -49,7 +35,7 @@ about-reader-estimated-read-time =
        *[other] { $range } minutos
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Diminuir tamanho da fonte
@@ -72,9 +58,8 @@ about-reader-font-type-monospace = Monoespaçada
 
 ## Reader View toolbar buttons
 
-about-reader-toolbar-close = Fechar leitor
+about-reader-toolbar-close = Fechar modo de leitura
 about-reader-toolbar-type-controls = Controle de fontes
-about-reader-toolbar-color-controls = Cores
 about-reader-toolbar-text-layout-controls = Texto e layout
 about-reader-toolbar-theme-controls = Tema
 about-reader-toolbar-savetopocket = Salvar no { -pocket-brand-name }
@@ -99,10 +84,24 @@ about-reader-custom-colors-visited-links = Links visitados
     .title = Editar cor
 about-reader-custom-colors-selection-highlight = Destacador para ler em voz alta
     .title = Editar cor
-about-reader-custom-colors-reset-button = Restaurar padrão
 about-reader-reset-button = Restaurar padrão
+about-reader-custom-colors-foreground2 =
+    .label = Texto
+    .title = Editar cor
+about-reader-custom-colors-background2 =
+    .label = Fundo
+    .title = Editar cor
+about-reader-custom-colors-unvisited-links2 =
+    .label = Links não visitados
+    .title = Editar cor
+about-reader-custom-colors-visited-links2 =
+    .label = Links visitados
+    .title = Editar cor
+about-reader-custom-colors-selection-highlight2 =
+    .label = Destacador para ler em voz alta
+    .title = Editar cor
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Texto
 about-reader-text-size-label = Tamanho do texto
@@ -119,9 +118,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Espaçamento entre linhas
 about-reader-advanced-layout-header = Avançado
-about-reader-slider-label-width-narrow = Estreito
-about-reader-slider-label-width-wide = Largo
-about-reader-slider-label-spacing-narrow = Estreito
 about-reader-character-spacing-label =
     .label = Espaçamento entre caracteres
 about-reader-word-spacing-label =
@@ -133,3 +129,5 @@ about-reader-text-alignment-center =
     .title = Centralizar texto
 about-reader-text-alignment-right =
     .title = Alinhar texto à direita
+about-reader-text-alignment-justify =
+    .title = Justificar texto

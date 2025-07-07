@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -48,7 +48,6 @@ downloads-cmd-use-system-default =
 downloads-cmd-use-system-default-named =
     .label = { $handler } で開く
     .accesskey = I
-
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
@@ -183,6 +182,18 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = ダウンロードの詳細
+
+## These strings are displayed in the private browsing view of the downloads panel
+
+downloads-private-browsing-details =
+    .title = ファイルは端末に残ります
+downloads-private-browsing-message = すべてのプライベートウィンドウを閉じても、この端末を使用する人はダウンロードの履歴を表示できます。
+downloads-private-browsing-delete-button =
+    .label = ファイルを自動的に削除
+    .accesskey = D
+downloads-private-browsing-accept-button =
+    .label = 了解
+    .accesskey = G
 
 ## Displayed when a site attempts to automatically download many files.
 ## Variables:

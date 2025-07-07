@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,16 @@ webext-perms-header-unsigned = Leggje til { $extension }? Denne utvidinga er ikk
 webext-perms-header-unsigned-with-perms = Leggje til { $extension }? Denne utvidinga er ikkje stadfesta. Skadelege utvidingar kan stele privatopplysningane dine eller kompromittere datamaskina di. Legg berre til denne utvidinga om du stolar på kjelda. Denne utvidinga vil ha løyve til å:
 webext-perms-sideload-header = { $extension } lagt til
 webext-perms-optional-perms-header = { $extension } ber om ytterlegare løyve.
+webext-perms-header2 = Legg til { $extension }
+webext-perms-list-intro-unsigned = Denne ikkje-stadfesta utvidinga kan sette personvernet ditt i fare eller kompromittere eininga di. Legg henne berre til dersom du stolar på kjelda.
+
+## Headers used in the webextension permissions dialog, inside the content.
+
+webext-perms-header-required-perms = Påkravde løyve
+webext-perms-header-optional-settings = Valfrie innstillingar
+webext-perms-header-update-required-perms = Nye påkravde løyve:
+webext-perms-header-optional-required-perms = Nye løyve:
+webext-perms-header-data-collection-is-none = Datainnsamling:
 
 ##
 
@@ -25,7 +35,6 @@ webext-perms-add =
 webext-perms-cancel =
     .label = Avbryt
     .accesskey = A
-
 webext-perms-sideload-text = Eit anna program på datamaskina har installert eit tillegg som kan påverke nettlesaren din. Ver snill og vurder løyveførespurnadane til dette tillegget og vel Slå på eller Avbryt (for at det framleis skal vere slått av).
 webext-perms-sideload-text-no-perms = Eit anna program installerte eit tillegg som kan påverke nettlesaren din. Vel Slå på eller Avbryt (for at det framleis skal vere slått av).
 webext-perms-sideload-enable =
@@ -34,14 +43,12 @@ webext-perms-sideload-enable =
 webext-perms-sideload-cancel =
     .label = Avbryt
     .accesskey = A
-
 # Variables:
 #   $extension (String): replaced with the localized name of the extension.
 webext-perms-update-text = { $extension } er oppdatert. Du må godkjenne nye løyve før den oppdaterte versjonen vil bli installert. Vel du «Avbryt», vil du behalde den noverande versjonen av utvidinga. Denne utvideinga vil ha løyve til å:
 webext-perms-update-accept =
     .label = Oppdater
     .accesskey = O
-
 webext-perms-optional-perms-list-intro = Den vil:
 webext-perms-optional-perms-allow =
     .label = Tillat
@@ -49,13 +56,10 @@ webext-perms-optional-perms-allow =
 webext-perms-optional-perms-deny =
     .label = Ikkje tillat
     .accesskey = I
-
 webext-perms-host-description-all-urls = Få tilgang til dine data for alle nettstadar
-
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Få tilgang til dine data frå nettstadar under { $domain }-domenet
-
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
@@ -67,7 +71,6 @@ webext-perms-host-description-too-many-wildcards =
 # Variables:
 #   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., www.mozilla.org)
 webext-perms-host-description-one-site = Få tilgang til dine data for { $domain }
-
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
@@ -76,6 +79,13 @@ webext-perms-host-description-too-many-sites =
         [one] Få tilgang til dine data frå { $domainCount } annan nettstad
        *[other] Få tilgang til dine data frå { $domainCount } andre nettstadar
     }
+# Variables:
+#   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., mozilla.org),
+#     $domain should be treated as plural (because it may also include all subdomains, e.g www.mozilla.org, ftp.mozilla.org).
+webext-perms-host-description-one-domain = Få tilgang til dine data frå nettstadar under { $domain }-domenet
+
+## Strings for data collection permissions in the permission prompt.
+
 
 ## Headers used in the webextension permissions dialog for synthetic add-ons.
 ## The part of the string describing what privileges the extension gives should be consistent
@@ -110,3 +120,6 @@ webext-site-perms-header-unsigned-with-perms = Leggje til { $extension }? Denne 
 
 webext-site-perms-midi = Tilgang til MIDI-einingar
 webext-site-perms-midi-sysex = Tilgang til MIDI-einingar med SysEx-sttte
+
+## Colorway theme migration
+

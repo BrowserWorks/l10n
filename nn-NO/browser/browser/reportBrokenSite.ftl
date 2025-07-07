@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,23 @@ report-broken-site-panel-reason-label = Kva er øydelagt?
 report-broken-site-panel-reason-optional-label = Kva er øydelagt? (valfritt)
 report-broken-site-panel-reason-choose =
     .label = Vel grunn
+report-broken-site-panel-reason-load =
+    .label = Nettstaden lastar seg ikkje inn
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = Kan ikkje betale, sjekke ut eller handle
+report-broken-site-panel-reason-slow2 =
+    .label = Nettstaden er treg
+report-broken-site-panel-reason-media2 =
+    .label = Videoen spelar ikkje eller vert ikkje lasta inn
+report-broken-site-panel-reason-content2 =
+    .label = Manglande innhald
+report-broken-site-panel-reason-account2 =
+    .label = Kan ikkje logge inn eller registrere meg
+report-broken-site-panel-reason-adblocker2 =
+    .label = Nettstaden ba om å slå av annonseblokkering
+report-broken-site-panel-reason-notsupported =
+    .label = Nettlesaren er ikkje støtta eller blokkert
 report-broken-site-panel-reason-slow =
     .label = Sida er treg eller fungerer ikkje
 report-broken-site-panel-reason-media =

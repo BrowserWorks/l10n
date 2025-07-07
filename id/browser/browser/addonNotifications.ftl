@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = { $addonName } ditambahkan pada { -brand-short
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } memerlukan izin baru
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = Selesaikan pemasangan ekstensi yang diimpor ke { -brand-short-name }
 
@@ -123,6 +123,8 @@ addon-local-install-error-not-signed = Pengaya ini tidak dapat dipasang karena b
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } tidak dapat dipasang karena tidak kompatibel dengan { -brand-short-name } { $appVersion }.
+addon-install-error-hard-blocked = { $addonName } melanggar kebijakan BrowserWorks dan tidak bisa dipasang di { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } tidak dapat dipasang karena berisiko tinggi untuk menyebabkan masalah stabilitas dan keamanan.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
-addon-install-error-admin-install-only = Anda tak bisa memasang { $addonName } sebagai pengguna akhir, hanya bisa dipasang oleh sebuah organisasi menggunakan kebijakan perusahaan.
+addon-install-error-soft-blocked = { $addonName } melanggar kebijakan BrowserWorks dan tidak bisa dipasang di { -brand-short-name }.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Anda tidak bisa memasang { $addonName } sebagai pengguna akhir. Pengaya hanya bisa dipasang oleh sebuah organisasi menggunakan kebijakan perusahaan.

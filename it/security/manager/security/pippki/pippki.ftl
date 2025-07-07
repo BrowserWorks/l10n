@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -55,11 +55,13 @@ download-cert-view-text = Esamina certificato CA
 
 client-auth-window =
     .title = Richiesta identificazione utente
-client-auth-send-no-certificate =
-  .label = Non inviare un certificato
 client-auth-site-description = Questo sito richiede di identificarti tramite un certificato:
-client-auth-site-identification = “{ $hostname }” richiede di identificarti tramite un certificato:
 client-auth-choose-cert = Scegliere un certificato da presentare come identificativo:
+client-auth-send-no-certificate =
+    .label = Non inviare un certificato
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = “{ $hostname }” richiede di identificarti tramite un certificato:
 client-auth-cert-details = Dettagli del certificato selezionato:
 # Variables:
 # $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
@@ -83,6 +85,13 @@ client-auth-cert-details-issued-by = Rilasciato da: { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Archiviato in: { $storedOn }
+client-auth-cert-remember-label = Ricorda questa scelta:
+client-auth-cert-remember-never =
+    .label = Una volta
+client-auth-cert-remember-always =
+    .label = In modo permanente
+client-auth-cert-remember-temporarily =
+    .label = Per questa sessione
 client-auth-cert-remember-box =
     .label = Ricorda questa scelta
 
@@ -102,4 +111,3 @@ set-password-reminder = Importante: se si dovesse scordare la password della cop
 # Variables:
 # $tokenName (String) - The name of the token to authenticate to (for example, "OS Client Cert Token (Modern)")
 protected-auth-alert = Effettuare l’autenticazione utilizzando il token “{ $tokenName }”. La modalità precisa dipende dal token, ad esempio potrebbe essere necessario utilizzare un lettore di impronte digitali o inserire un codice con un tastierino numerico.
-

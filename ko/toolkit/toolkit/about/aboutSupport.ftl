@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = 유형
 support-addons-enabled = 사용
 support-addons-version = 버전
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = 위치
 legacy-user-stylesheets-title = 레거시 사용자 스타일시트
 legacy-user-stylesheets-enabled = 활성화
 legacy-user-stylesheets-stylesheet-types = 스타일시트
@@ -181,6 +185,8 @@ media-capabilities-enumerate = 데이터베이스 열거
 
 media-codec-support-sw-decoding = 소프트웨어 디코딩
 media-codec-support-hw-decoding = 하드웨어 디코딩
+media-codec-support-sw-encoding = 소프트웨어 인코딩
+media-codec-support-hw-encoding = 하드웨어 인코딩
 media-codec-support-codec-name = 코덱 이름
 media-codec-support-supported = 지원됨
 media-codec-support-unsupported = 지원 안 됨
@@ -218,7 +224,7 @@ intl-regional-prefs = 지역 설정
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

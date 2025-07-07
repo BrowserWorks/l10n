@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } の動作に問題が�
 crashreporter-plea = 問題の原因特定と解決のためにご協力いただける方は、クラッシュレポートの送信をお願いします。
 crashreporter-information = このプログラムは不正終了時に実行され、{ -vendor-short-name } に問題を報告するためのものです。直接単体で起動することはできません。
 crashreporter-error = { -brand-short-name } の動作に問題が発生し、不正終了してしまいました。申し訳ありませんが、このクラッシュについてのレポートは送信できません。
+crashreporter-error-details-header = 詳細:
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = 詳細: { $details }
 crashreporter-no-run-message = このプログラムは不正終了時にプログラムの開発元に問題を知らせるためのものです。直接単体で起動することはできません。
@@ -16,9 +17,13 @@ crashreporter-loading-details = 読み込み中...
 crashreporter-view-report-title = レポートの内容
 crashreporter-comment-prompt = コメントを記入できます (入力内容は公開されます)
 crashreporter-report-info = 上記の他にプログラム不正終了時の状態についての技術情報がこのレポートに含まれます。
+crashreporter-checkbox-test-hardware = 端末のハードウェアと設定の問題を確認する
+crashreporter-checkbox-send-report = 問題解決に役立てるため、このクラッシュを { -vendor-short-name } に報告する
+crashreporter-checkbox-include-url = 表示していたページのアドレスをレポートに含める
 crashreporter-send-report = 問題を解決できるよう { -vendor-short-name } にレポートを送信する
 crashreporter-include-url = 表示していたページのアドレスをレポートに含める
 crashreporter-submit-status = 終了または再起動時にクラッシュレポートが送信されます。
+crashreporter-submit-waiting-hardware-tests = ハードウェアと設定を確認しています...
 crashreporter-submit-in-progress = レポートを送信しています...
 crashreporter-submit-success = レポートは正常に送信されました。
 crashreporter-submit-failure = レポートの送信中に問題が発生しました。
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = ホームディレクトリーが設定され�
 # $to (String) - the destination path
 crashreporter-error-moving-path = { $from } から { $to } への移動に失敗しました
 crashreporter-error-version-eol = サポート終了: ご使用のバージョンのクラッシュレポートは受付終了しました。
+crashreporter-error-failed-to-generate-minidump = プログラムがクラッシュ情報の生成に失敗しました。

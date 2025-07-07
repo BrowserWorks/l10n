@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -62,6 +62,14 @@ perftools-button-add-directory = 新增目錄
 perftools-button-remove-directory = 移除選擇項目
 perftools-button-edit-settings = 編輯設定值…
 
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = 更多操作
+perftools-menu-more-actions-restart-with-profiling = 重新啟動 { -brand-shorter-name } 並開啟啟動效能檢測
+perftools-menu-more-actions-copy-for-startup = 複製用於啟動效能監測的環境變數
+perftools-menu-more-actions-copy-for-perf-tests = 複製用於效能測試的參數
+
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 perftools-thread-gecko-main =
@@ -110,7 +118,7 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
-perftools-onboarding-message = <b>全新</b>: 現在起，已將 { -profiler-brand-name } 整合進開發者工具。了解這個全新強大工具的<a>更多資訊</a>。
+perftools-onboarding-message = <b>全新</b>：現在起，已將 { -profiler-brand-name } 整合進開發者工具。了解這個全新強大工具的<a>更多資訊</a>。
 perftools-onboarding-close-button =
     .aria-label = 關閉功能介紹訊息
 
@@ -134,6 +142,8 @@ perftools-presets-graphics-label = 圖形
 perftools-presets-graphics-description = 於 { -brand-shorter-name } 診斷圖形 Bug 時的預設值。
 perftools-presets-media-label = 媒體
 perftools-presets-media-description2 = 於 { -brand-shorter-name } 診斷影音 Bug 時的預設值。
+perftools-presets-ml-label = 機器學習
+perftools-presets-ml-description2 = 於 { -brand-shorter-name } 診斷機器學習 Bug 時的預設值。
 perftools-presets-networking-label = 網路連線
 perftools-presets-networking-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值。
 # "Power" is used in the sense of energy (electricity used by the computer).

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } heeft een probleem ond
 crashreporter-plea = Om ons te helpen het probleem te onderzoeken en op te lossen, kunt u ons een crashrapport toesturen.
 crashreporter-information = De crashreporter wordt na een crash uitgevoerd om het probleem aan { -vendor-short-name } te rapporteren. Deze dient niet direct te worden gestart.
 crashreporter-error = { -brand-short-name } ondervond een probleem en is vastgelopen. Helaas kan de crashreporter geen rapport voor deze crash verzenden.
+crashreporter-error-details-header = Details:
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = Details: { $details }
 crashreporter-no-run-message = De crashreporter wordt na een crash uitgevoerd om het probleem aan de maker van de toepassing te rapporteren. Deze dient niet direct te worden gestart.
@@ -16,9 +17,13 @@ crashreporter-loading-details = Laden…
 crashreporter-view-report-title = Rapportinhoud
 crashreporter-comment-prompt = Voeg een opmerking toe (opmerkingen zijn publiekelijk zichtbaar)
 crashreporter-report-info = Dit rapport bevat tevens technische gegevens over de staat van de toepassing toen deze vastliep.
+crashreporter-checkbox-test-hardware = Controleren op hardware- en configuratieproblemen op mijn apparaat.
+crashreporter-checkbox-send-report = { -vendor-short-name } van deze crash op de hoogte stellen, zodat dit kan worden verholpen
+crashreporter-checkbox-include-url = Het adres van de bezochte pagina bijvoegen.
 crashreporter-send-report = { -vendor-short-name } van deze crash op de hoogte stellen, zodat dit kan worden verholpen
 crashreporter-include-url = Het adres van de bezochte pagina bijvoegen.
 crashreporter-submit-status = Uw crashrapport zal worden verzonden voordat u afsluit of herstart.
+crashreporter-submit-waiting-hardware-tests = Controleren op hardware- en configuratieproblemen…
 crashreporter-submit-in-progress = Uw rapport verzenden…
 crashreporter-submit-success = Rapport met succes verzonden!
 crashreporter-submit-failure = Er was een probleem tijdens het verzenden van uw rapport.
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = Hoofdmap ontbreekt
 # $to (String) - the destination path
 crashreporter-error-moving-path = Kan niet van { $from } naar { $to } verplaatsen
 crashreporter-error-version-eol = Einde levensduur versie: crashrapporten worden niet meer geaccepteerd.
+crashreporter-error-failed-to-generate-minidump = De toepassing kan geen crashgegevens genereren.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,15 @@ firefoxview-tabpickup-progress-label = Dokončeno { $percentValue } %
 firefoxview-tabpickup-step-signin-header = Plynule přecházejte mezi zařízeními
 firefoxview-tabpickup-step-signin-description = Pro převzetí svých panelů z telefonu se musíte přihlásit nebo si vytvořit účet.
 firefoxview-tabpickup-step-signin-primarybutton = Pokračovat
+firefoxview-syncedtabs-signin-header-2 =
+    { -brand-short-name.gender ->
+        [masculine] Váš { -brand-product-name } na všech vašich zařízeních
+        [feminine] Vaše { -brand-product-name } na všech vašich zařízeních
+        [neuter] Vaše { -brand-product-name } na všech vašich zařízeních
+       *[other] Vaše aplikace { -brand-product-name } na všech vašich zařízeních
+    }
+firefoxview-syncedtabs-signin-description-2 = Chcete-li zobrazit panely otevřené v telefonu a dalších zařízeních, přihlaste se nebo si zaregistrujte účet. S účtem můžete také synchronizovat svá hesla, historii a další údaje.
+firefoxview-syncedtabs-signin-primarybutton-2 = Přihlásit se
 firefoxview-syncedtabs-signin-header = Vezměte si panely odkudkoliv
 firefoxview-syncedtabs-signin-description =
     { -brand-product-name.case-status ->
@@ -54,6 +63,12 @@ firefoxview-tabpickup-adddevice-primarybutton =
     { -brand-product-name.case-status ->
         [with-cases] Získat { -brand-product-name(case: "acc") } pro mobily
        *[no-cases] Získat aplikaci { -brand-product-name } pro mobily
+    }
+firefoxview-syncedtabs-adddevice-header-2 = Vezměte si panely odkudkoliv
+firefoxview-syncedtabs-adddevice-description-2 =
+    { -brand-product-name.case-status ->
+        [with-cases] Přihlaste se k { -brand-product-name(case: "dat") } v telefonu nebo v jiném počítači a zobrazte si zde panely. Zjistěte, jak <a data-l10n-name="url">připojit další zařízení</a>.
+       *[no-cases] Přihlaste se k aplikaci { -brand-product-name } v telefonu nebo v jiném počítači a zobrazte si zde panely. Zjistěte, jak <a data-l10n-name="url">připojit další zařízení</a>.
     }
 firefoxview-syncedtabs-adddevice-header =
     { -brand-product-name.case-status ->
@@ -190,7 +205,7 @@ firefoxview-synced-tabs-header = Panely z jiných zařízení
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Zobrazit vše
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -216,6 +231,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Hledat v nedávno zavřených panelech
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Hledat panely
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Hledat v synchronizovaných panelech
@@ -265,7 +283,7 @@ firefoxview-history-site-localhost = (místní soubor)
 firefoxview-show-all-history = Zobrazit celou historii
 firefoxview-view-more-browsing-history = Zobrazit více z historie prohlížení
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Vraťte se tam, kde jste byli
 firefoxview-history-empty-description = V průběhu prohlížení se zde zobrazí stránky, které navštívíte.
@@ -277,15 +295,17 @@ firefoxview-history-empty-description-two = Ochrana vašeho soukromí je jádrem
 firefoxview-choose-browser-button = Zvolte prohlížeč
     .title = Zvolte prohlížeč
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Zatím tu není nic k vidění
 firefoxview-dont-remember-history-empty-description = Ochrana vašeho soukromí je jádrem toho, co děláme. Proto můžete spravovat aktivitu, kterou si { -brand-short-name } pamatuje.
 firefoxview-dont-remember-history-empty-description-two = Na základě vašeho aktuálního nastavení si { -brand-short-name } nepamatuje vaši aktivitu při procházení. Chcete-li to změnit, <a data-l10n-name="history-settings-url-two">změňte nastavení historie tak, aby si historii pamatoval</a>.
+firefoxview-dont-remember-history-empty-header-2 = Vy máte kontrolu nad tím, co si { -brand-short-name } pamatuje
+firefoxview-dont-remember-history-empty-description-one = Nyní si { -brand-short-name } nepamatuje vaši aktivitu při procházení. Chcete-li to změnit, <a data-l10n-name="history-settings-url-two">aktualizujte nastavení historie</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Zavřít
     .title = Zavřít
@@ -299,7 +319,7 @@ firefoxview-import-history-description =
        *[no-cases] Učiňte z aplikace { -brand-short-name } svůj prohlížeč. Importujte si historii prohlížení, záložky a další položky.
     }
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Zavřeli jste panel příliš brzy?
 firefoxview-recentlyclosed-empty-description = Zde najdete panely, které jste nedávno zavřeli. Kterýkoliv z nich můžete rychle znovu otevřít.

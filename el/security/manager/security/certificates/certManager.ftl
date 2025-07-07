@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -97,7 +97,7 @@ pkcs12-decode-err = Αποτυχία αποκωδικοποίησης αρχεί
 pkcs12-unknown-err-restore = Αποτυχία ανάκτησης του αρχείου  PKCS#12 για άγνωστους λόγους
 pkcs12-unknown-err-backup = Αποτυχία δημιουργίας αντιγράφου ασφαλείας του αρχείου PKCS#12 για άγνωστους λόγους.
 pkcs12-unknown-err = Η λειτουργία PKCS #12  απέτυχε για άγνωστους λόγους.
-pkcs12-info-no-smartcard-backup = Δεν είναι δυνατή η αντιγραφή πιστοποιητικών από συσκευές ασφαλείας hardware όπως οι "έξυπνες κάρτες"
+pkcs12-info-no-smartcard-backup = Δεν είναι δυνατή η αντιγραφή πιστοποιητικών από φυσικές συσκευές ασφαλείας, όπως έξυπνες κάρτες.
 pkcs12-dup-data = Το πιστοποιητικό και το ιδιωτικό κλειδί υπάρχουν ήδη στη συσκευή ασφάλειας.
 
 ## PKCS#12 file dialogs
@@ -116,7 +116,7 @@ import-email-cert-prompt = Επιλογή αρχείου που περιέχει
 
 # Variables:
 #   $certName: the name of certificate
-edit-trust-ca = Το πιστοποιητικό "{ $certName }" αντιπροσωπεύει μια Αρχή Πιστοποίησης.
+edit-trust-ca = Το πιστοποιητικό «{ $certName }» αντιπροσωπεύει μια αρχή πιστοποίησης.
 
 ## For Deleting Certificates
 
@@ -161,7 +161,7 @@ add-exception-invalid-header = Αυτή σελίδα προσπαθεί να π�
 add-exception-domain-mismatch-short = Εσφαλμένος ιστότοπος
 add-exception-domain-mismatch-long = Το πιστοποιητικό ανήκει σε διαφορετικό ιστότοπο, πράγμα το οποίο μπορεί να σημαίνει ότι κάποιος προσπαθεί να τον μιμηθεί.
 add-exception-expired-short = Παρωχημένες πληροφορίες
-add-exception-expired-long = Το πιστοποιητικό δεν είναι έγκυρο αυτή τη στιγμή. Ενδέχεται να έχει κλαπεί ή χαθεί και να χρησιμοποιείται από κάποιον για να μιμηθεί αυτόν τον ιστότοπο.
+add-exception-expired-long = Το πιστοποιητικό δεν είναι έγκυρο αυτήν τη στιγμή. Ενδέχεται να έχει κλαπεί ή χαθεί και να χρησιμοποιείται από κάποιον για να μιμηθεί αυτόν τον ιστότοπο.
 add-exception-unverified-or-bad-signature-short = Άγνωστη ταυτότητα
 add-exception-unverified-or-bad-signature-long = Το πιστοποιητικό δεν είναι έγκυρο, επειδή δεν έχει επικυρωθεί από μια αναγνωρισμένη αρχή με χρήση ασφαλούς υπογραφής.
 add-exception-valid-short = Έγκυρο πιστοποιητικό
@@ -169,7 +169,7 @@ add-exception-valid-long = Αυτή η σελίδα παρέχει έγκυρη 
 add-exception-checking-short = Έλεγχος πληροφοριών
 add-exception-checking-long = Γίνεται προσπάθεια πιστοποίησης της σελίδας…
 add-exception-no-cert-short = Δεν υπάρχουν διαθέσιμες πληροφορίες
-add-exception-no-cert-long = Αδυναμία λήψης κατάστασης ταυτότητας για αυτή τη σελίδα.
+add-exception-no-cert-long = Δεν είναι δυνατή η λήψη της κατάστασης ταυτότητας για αυτόν τον ιστότοπο.
 
 ## Certificate export "Save as" and error dialogs
 

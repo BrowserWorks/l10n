@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,11 +8,36 @@ tabbrowser-menuitem-close-tab =
     .label = Закрыть вкладку
 tabbrowser-menuitem-close =
     .label = Закрыть
+# Displayed within the tooltip on tabs inside of a tab group.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+tabbrowser-tab-tooltip-tab-group = { $tabGroupName }
+# Displayed within the tooltip on tabs in a container.
+# Variables:
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-container = { $containerName }
+# Displayed within the tooltip on tabs inside of a tab group if the tab is also in a container.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-tab-group-container = { $tabGroupName } — { $containerName }
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } — { $containerName }
+# This text serves as an on-screen tooltip as well as an accessible name for
+# the "X" button that is shown on the active tab or, when multiple tabs are
+# selected, to all their "X" buttons.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-button =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Закрыть { $tabCount } вкладку
+            [few] Закрыть { $tabCount } вкладки
+           *[many] Закрыть { $tabCount } вкладок
+        }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -67,6 +92,16 @@ tabbrowser-unblock-tab-audio-tooltip =
            *[many] Воспроизвести звук { $tabCount } вкладок
         }
 
+## Tooltips for tab audio control
+
+tabbrowser-unmute-tab-audio-aria-label =
+    .aria-label = Восстановить звук во вкладке
+tabbrowser-mute-tab-audio-aria-label =
+    .aria-label = Убрать звук во вкладке
+# Used to unblock a tab with audio from autoplaying
+tabbrowser-unblock-tab-audio-aria-label =
+    .aria-label = Воспроизвести звук во вкладке
+
 ## Confirmation dialog when closing a window with more than one tab open,
 ## or when quitting when only one window is open.
 
@@ -80,6 +115,7 @@ tabbrowser-confirm-close-tabs-title =
        *[many] Закрыть { $tabCount } вкладок?
     }
 tabbrowser-confirm-close-tabs-button = Закрыть вкладки
+tabbrowser-ask-close-tabs-checkbox = Спрашивать перед закрытием нескольких вкладок
 tabbrowser-confirm-close-tabs-checkbox = Подтверждать закрытие нескольких вкладок
 
 ## Confirmation dialog when quitting using the menu and multiple windows are open.
@@ -107,7 +143,21 @@ tabbrowser-confirm-close-tabs-with-key-title = Закрыть окно и вый
 tabbrowser-confirm-close-tabs-with-key-button = Выйти из { -brand-short-name }
 # Variables:
 #   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-ask-close-tabs-with-key-checkbox = Спрашивать перед выходом с помощью { $quitKey }
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
 tabbrowser-confirm-close-tabs-with-key-checkbox = Подтверждать выход с помощью { $quitKey }
+
+## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
+## and browser.warnOnQuitShortcut is true.
+
+tabbrowser-confirm-close-warn-shortcut-title = Выйти из { -brand-short-name } или закрыть текущую вкладку?
+tabbrowser-confirm-close-windows-warn-shortcut-button =
+    { PLATFORM() ->
+        [windows] Выйти из { -brand-short-name }
+       *[other] Выйти из { -brand-short-name }
+    }
+tabbrowser-confirm-close-tab-only-button = Закрыть текущую вкладку
 
 ## Confirmation dialog when opening multiple tabs simultaneously
 
@@ -124,7 +174,7 @@ tabbrowser-confirm-open-multiple-tabs-checkbox = Предупреждать ме
 ## Confirmation dialog for enabling caret browsing
 
 tabbrowser-confirm-caretbrowsing-title = Активный курсор
-tabbrowser-confirm-caretbrowsing-message = Нажатие клавиши F7 включает или выключает режим активного курсора. В этом режиме, поместив курсор на страницу, вы можете выделять текст с помощью клавиатуры. Включить этот режим?
+tabbrowser-confirm-caretbrowsing-message = Нажатие клавиши F7 включает или отключает режим активного курсора. В этом режиме, поместив курсор на страницу, вы можете выделять текст с помощью клавиатуры. Включить этот режим?
 tabbrowser-confirm-caretbrowsing-checkbox = Больше не показывать это окно.
 
 ## Confirmation dialog for closing all duplicate tabs
@@ -177,6 +227,9 @@ tabbrowser-ctrl-tab-list-all-tabs =
         }
 
 ## Tab manager menu buttons
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
 
 tabbrowser-manager-mute-tab =
     .tooltiptext = Убрать звук во вкладке
@@ -184,3 +237,124 @@ tabbrowser-manager-unmute-tab =
     .tooltiptext = Восстановить звук во вкладке
 tabbrowser-manager-close-tab =
     .tooltiptext = Закрыть вкладку
+# This is for tab groups that have been "saved and closed" (see tab-group-editor-action-save). It does
+# not include "deleted" tab groups (see tab-group-editor-action-delete).
+tabbrowser-manager-closed-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Закрыта
+tabbrowser-manager-current-window-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Текущее окно
+
+## Tab Groups
+
+tab-group-editor-title-create = Создать группу вкладок
+tab-group-editor-title-edit = Управление группой вкладок
+tab-group-editor-name-label = Имя
+tab-group-editor-name-field =
+    .placeholder = Пример: Шоппинг
+tab-group-editor-cancel =
+    .label = Отмена
+    .accesskey = С
+tab-group-editor-color-selector =
+    .aria-label = Цвет группы вкладок
+tab-group-editor-color-selector2-blue = Синий
+    .title = Синий
+tab-group-editor-color-selector2-purple = Фиолетовый
+    .title = Фиолетовый
+tab-group-editor-color-selector2-cyan = Бирюзовый
+    .title = Бирюзовый
+tab-group-editor-color-selector2-orange = Оранжевый
+    .title = Оранжевый
+tab-group-editor-color-selector2-yellow = Жёлтый
+    .title = Жёлтый
+tab-group-editor-color-selector2-pink = Розовый
+    .title = Розовый
+tab-group-editor-color-selector2-green = Зелёный
+    .title = Зелёный
+tab-group-editor-color-selector2-gray = Серый
+    .title = Серый
+tab-group-editor-color-selector2-red = Красный
+    .title = Красный
+# Variables:
+#  $tabGroupName (String): The name of the tab group. Defaults to the value
+#                          of tab-group-name-default.
+tab-group-description = { $tabGroupName } — Группа вкладок
+tab-context-unnamed-group =
+    .label = Безымянная группа
+tab-group-name-default = Безымянная группа
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-move-tab-to-new-group =
+    .label =
+        { $tabCount ->
+            [1] Добавить вкладку в новую группу
+            [one] Добавить вкладку в новую группу
+            [few] Добавить вкладки в новую группу
+           *[many] Добавить вкладки в новую группу
+        }
+    .accesskey = п
+tab-context-move-tab-to-group =
+    .label =
+        { $tabCount ->
+            [1] Добавить вкладку в группу
+            [one] Добавить вкладку в группу
+            [few] Добавить вкладки в группу
+           *[many] Добавить вкладки в группу
+        }
+    .accesskey = п
+tab-context-move-tab-to-group-saved-groups =
+    .label = Закрытые группы
+tab-group-editor-action-new-tab =
+    .label = Новая вкладка в группе
+tab-group-editor-action-new-window =
+    .label = Переместить группу в новое окно
+tab-group-editor-action-save =
+    .label = Сохранить и закрыть группу
+tab-group-editor-action-ungroup =
+    .label = Разгруппировать вкладки
+tab-group-editor-action-delete =
+    .label = Удалить группу
+tab-group-editor-done =
+    .label = Готово
+    .accessKey = в
+tab-context-reopen-tab-group =
+    .label = Восстановить группу вкладок
+# Variables:
+#  $groupCount (Number): the number of tab groups that are affected by the action.
+tab-context-ungroup-tab =
+    .label =
+        { $groupCount ->
+            [1] Удалить из группы
+            [one] Удалить из группы
+            [few] Удалить из групп
+           *[many] Удалить из групп
+        }
+    .accesskey = к
+
+## Open/saved tab group context menu
+
+# For a tab group open in any window, clicking this will create a new
+# window and move this tab group to that new window.
+tab-group-context-move-to-new-window =
+    .label = Переместить группу в новое окно
+# For a tab group open in a different window from the one that the
+# user is using to access the tab group menu, move that tab group into the
+# user's current window.
+tab-group-context-move-to-this-window =
+    .label = Переместить группу в это окно
+# For a tab group that is open in any window, close the tab group and
+# do not save it. For a tab group that is closed but saved by the user, clicking
+# this will forget the saved tab group.
+tab-group-context-delete =
+    .label = Удалить группу
+# For a saved tab group that is not open in any window, open the tab group
+# in the user's current window.
+tab-group-context-open-saved-group-in-this-window =
+    .label = Открыть группу в этом окне
+# For a saved tab group that is not open in any window, create a new window and
+# open the tab group in that window.
+tab-group-context-open-saved-group-in-new-window =
+    .label = Открыть группу в новом окне

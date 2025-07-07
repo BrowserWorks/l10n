@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,10 +67,11 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } مستخدم
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = زامِن علاماتك في كل مكان.
 cfr-doorhanger-bookmark-fxa-body = أحسنت باكتشاف هذا! حريّ بك أن تحفظ هذه العلامة على أجهزتك المحمولة، وإلا فما الداعي من الاكتشاف؟ ابدأ الآن وافتح { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = أحسنت باكتشاف هذا! حريّ بك أن تحفظ هذه العلامة على أجهزتك المحمولة. ابدأ الآن بحساب.
 cfr-doorhanger-bookmark-fxa-link-text = زامِن العلامات الآن…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = زر الإغلاق
@@ -131,7 +132,7 @@ cfr-doorhanger-video-support-primary-button = حدّث الآن
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = يبدو أنك تستخدم شبكة Wi-Fi عامة
@@ -180,7 +181,7 @@ mr2022-background-update-toast-primary-button-label = افتح { -brand-shorter-
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = ذكّرني لاحقًا
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = جربه
     .accesskey = ه
@@ -189,7 +190,7 @@ firefoxview-cfr-secondarybutton = ليس الآن
 firefoxview-cfr-header-v2 = أكمل بسرعة من حيث انتهيت
 firefoxview-cfr-body-v2 = استعد الألسنة المغلقة مؤخرًا، أضِف إليها الانتقال بين الأجهزة مستخدماً { -firefoxview-brand-name } بسلاسة.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = قل مرحبًا لـ { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -216,8 +217,9 @@ cfr-cbh-confirm-button = أرفض لافتات الكعكات
     .accesskey = ض
 cfr-cbh-dismiss-button = ليس الآن
     .accesskey = آ
-cookie-banner-blocker-cfr-header = { -brand-short-name } حظر ملفات تعريف الارتباط نيابةً عنك
-cookie-banner-blocker-cfr-body = نرفض تلقائيًا العديد من النوافذ المنبثقة لملفات تعريف الارتباط لنجعل من الصعب على المواقع تتبعك.
+cookie-banner-blocker-onboarding-header = رفض { -brand-short-name } للتو لافتة ملفات تعريف الارتباط لك
+cookie-banner-blocker-onboarding-body = أقل تشتيتًا، وأقل ملفات تعريف الارتباط التي تتبعك على هذا الموقع.
+cookie-banner-blocker-onboarding-learn-more = اطّلع على المزيد
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -231,7 +233,7 @@ fox-doodle-pin-body = هذا تذكير سريع يمكنك من خلاله أن
 fox-doodle-pin-primary = افتح روابطي مع { -brand-short-name }
 fox-doodle-pin-secondary = ليس الآن
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>يُفتح الآن ملفات PDF الخاصة بك في { -brand-short-name }.</strong> حرر النماذج أو التوقيع عليها مباشرةً في متصفحك. للتغيير، ابحث عن "PDF" في الإعدادات.
 set-default-pdf-handler-primary = فهمت
@@ -247,18 +249,18 @@ fxa-sync-cfr-secondary = ذكّرني لاحقًا
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = هل تستخدم جهازًا قديمًا؟
-device-migration-fxa-spotlight-body = انسخ بياناتك إحتياطياً لتتأكد من عدم خسارة المعلومات المهمة مثل العلامات وكلمات السر — خصوصاً إذا انتقلت إلى جهاز جديد.
-device-migration-fxa-spotlight-primary-button = كيفية عمل نسخة احتياطية من بياناتي
-device-migration-fxa-spotlight-link = ذكّرني لاحقًا
 device-migration-fxa-spotlight-heavy-user-header = لا تنسَ عمل نُسخة احتياطية لبياناتك
 device-migration-fxa-spotlight-heavy-user-body = تأكد من أن المعلومات المهمة، مثل العلامات وكلمات السر، مُحدّثة و محمية عبر جميع أجهزتك.
 device-migration-fxa-spotlight-heavy-user-primary-button = ابدأ
 device-migration-fxa-spotlight-older-device-header = راحة البال من { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = يساعدك الحساب على تحديث معلوماتك المهمة وحمايتها على أي جهاز تتصل به.
 device-migration-fxa-spotlight-older-device-primary-button = أنشئ حسابًا
 device-migration-fxa-spotlight-getting-new-device-header-2 = جهاز جديد في مستقبلك؟
 device-migration-fxa-spotlight-getting-new-device-body-2 = اتبع بعض الخطوات البسيطة لجلب العلامات والتأريخ وكلمات السر معك عند البدء على جهاز جديد.
 device-migration-fxa-spotlight-getting-new-device-primary-button = كيفية عمل نسخة احتياطية من بياناتي
+device-migration-fxa-spotlight-sync-header = تصفح دون أن تفوت أي لحظة
+device-migration-fxa-spotlight-sync-body = زامِن جميع معلوماتك المهمة مع التعمية، مثل العلامات وكلمات السر. يمكنك الوصول إليها من أي مكان تستخدم فيه { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = ابدأ
 
 ## Set as Default PDF Reader Infobar
 
@@ -284,3 +286,62 @@ launch-on-login-infobar-reject-button = ليس الآن
 launch-on-login-infobar-final-message = <strong>افتح { -brand-short-name } في كل مرة تقوم فيها بإعادة تشغيل جهاز الكمبيوتر الخاص بك؟</strong> لإدارة تفضيلات بدء التشغيل، ابحث عن "البدء" في الإعدادات.
 launch-on-login-infobar-final-reject-button = لا، شكرًا
     .accesskey = ا
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = أبعد المتتبعين المزعجين عن ذيلك
+tail-fox-spotlight-subtitle = قل وداعًا لمتتبعات الإعلانات المزعجة واستمتع بتجربة إنترنت أكثر أمانًا وسرعة.
+tail-fox-spotlight-primary-button = افتح روابطي ب { -brand-short-name }
+tail-fox-spotlight-secondary-button = ليس الآن
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>قد تبدأ الإصدارات الأقدم من { -brand-short-name } في مواجهة مشكلات في 14 يناير 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>حدِّث للاستمرار في استخدام { -brand-short-name } بعد 14 مارس 2025.</strong>
+root-certificate-succession-infobar-link = لماذا أحتاج إلى التحديث؟
+root-certificate-succession-infobar-primary-button =
+    .label = حدّث الآن
+    .accesskey = د
+root-certificate-succession-infobar-secondary-button =
+    .label = لاحقًا
+    .accesskey = ا
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = لقد فاتك تحديث مهم لـ { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = ستتوقف أجزاء من المتصفح عن العمل قريبًا إذا لم تُحدِّثه. الآن هو الوقت المناسب للحصول على أحدث ميزاتنا وحمايتنا.
+root-certificate-windows-background-notification-learn-more-button = اطّلع على المزيد
+root-certificate-windows-background-notification-update-button = حدِّث { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = أغلق
+    .aria-label = أغلق
+fxa-menu-message-sign-up-button = سجّل حسابًا
+fxa-menu-message-sync-devices-primary-text = زامِن كل أجهزتك
+fxa-menu-message-sync-devices-secondary-text = احصل على معلوماتك على الفور — مثل العلامات وكلمات السر — في أي مكان تستخدم فيه { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = زامِن كل أجهزتك
+fxa-menu-message-backup-data-primary-text = انسخ بيانات متصفحك احتياطيًا
+fxa-menu-message-backup-data-secondary-text = حماية العلامات وكلمات السر والمعلومات الأخرى على جميع أجهزتك تلقائيًا.
+fxa-menu-message-backup-data-collapsed-text = انسخ بيانات المتصفح احتياطيًا
+fxa-menu-message-backup-sync-primary-text = أبقِ على بياناتك آمنة ومتزامنة
+fxa-menu-message-backup-sync-secondary-text = المزامنة تعمل نُسخة احتياطية لمعظم بياناتك حتى تتمكن من الوصول إليها في أي مكان تستخدمه { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = مزامنة البيانات والنسخ الاحتياطي
+fxa-menu-message-mobile-primary-text = أرسل الألسنة إلى هاتفك
+fxa-menu-message-mobile-secondary-text = استأنف من حيث توقفت على الفور عندما تُزامن ألسنتك مع جهاز محمول.
+fxa-menu-message-mobile-collapsed-text = زامِن مع هاتفك
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = مرحبا بعودتك
+multi-cta-fox-doodle-set-default-checkbox = اضبط { -brand-short-name } ليكون المبدئي
+multi-cta-fox-doodle-pin-startmenu-checkbox = ثبّت { -brand-short-name } في قائمة البدء
+multi-cta-fox-doodle-start-browsing-primary-button-label = ابدأ التصفح
+multi-cta-fox-doodle-main-browser-primary-button-label = اضبط { -brand-short-name } ليكون متصفّحي الرئيسي
+multi-cta-fox-doodle-quick-reminder-subtitle = فيما يلي تذكير سريع بأنه يمكنك الاحتفاظ بمتصفحك المفضل الذي يركز على الخصوصية بنقرة واحدة فقط.
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = حافظ على متصفحك المفضل الذي يُركز على الخصوصية بنقرة واحدة. عيّن { -brand-short-name } كمتصفحك المبدئي لفتح الروابط، ثم ثبّته على شريط المهام وقائمة البدء.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -61,7 +61,7 @@ cfr-doorhanger-extension-total-users =
        *[many] { $total } пользователей
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Синхронизируйте свои закладки, где бы вы ни находились.
 cfr-doorhanger-bookmark-fxa-body = Отличная находка! Не оставайтесь без этой закладки на своих мобильных устройствах. Создайте { -fxaccount-brand-name }.
@@ -123,7 +123,7 @@ cfr-doorhanger-video-support-primary-button = Обновить сейчас
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Похоже, что вы используете общедоступный Wi-Fi
@@ -172,7 +172,7 @@ mr2022-background-update-toast-primary-button-label = Открыть { -brand-sh
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Напомнить позже
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Попробовать его
     .accesskey = б
@@ -181,7 +181,7 @@ firefoxview-cfr-secondarybutton = Не сейчас
 firefoxview-cfr-header-v2 = Быстро вернитесь к месту, где остановились
 firefoxview-cfr-body-v2 = Верните недавно закрытые вкладки, а также легко переключайтесь между устройствами с помощью { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Поздоровайтесь с { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -224,7 +224,7 @@ fox-doodle-pin-body = Небольшое напоминание о том, чт�
 fox-doodle-pin-primary = Открывать мои ссылки с помощью { -brand-short-name }
 fox-doodle-pin-secondary = Не сейчас
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>Ваши PDF-файлы теперь открываются в { -brand-short-name }.</strong> Редактируйте или подписывайте формы прямо в браузере. Чтобы изменить это, откройте настройки и в поле поиска наберите PDF.
 set-default-pdf-handler-primary = Понятно
@@ -249,6 +249,9 @@ device-migration-fxa-spotlight-older-device-primary-button = Создать ак
 device-migration-fxa-spotlight-getting-new-device-header-2 = Собираетесь перейти на новое устройство?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Выполните несколько простых шагов, чтобы перенести свои закладки, историю и пароли, когда начнете работу на новом устройстве.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Как сделать резервную копию моих данных
+device-migration-fxa-spotlight-sync-header = Сёрфите, не пропуская ни секунды
+device-migration-fxa-spotlight-sync-body = Синхронизируйте всю важную информацию, такую как закладки и пароли, с помощью шифрования. Вы можете просматривать всё, где бы вы ни использовали { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Начало работы
 
 ## Set as Default PDF Reader Infobar
 
@@ -285,3 +288,61 @@ tail-fox-spotlight-title = Держите надоедливые трекеры 
 tail-fox-spotlight-subtitle = Попрощайтесь с надоедливыми рекламными трекерами и переключитесь на более безопасный и быстрый Интернет.
 tail-fox-spotlight-primary-button = Открывать мои ссылки с помощью { -brand-short-name }
 tail-fox-spotlight-secondary-button = Не сейчас
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>14 января 2025 г. в более старых версиях { -brand-short-name } могут начаться проблемы.</strong>
+root-certificate-succession-infobar-march-message = <strong>Обновите, чтобы продолжить использовать { -brand-short-name } после 14 марта 2025 г.</strong>
+root-certificate-succession-infobar-link = Почему мне необходимо обновление?
+root-certificate-succession-infobar-primary-button =
+    .label = Обновить сейчас
+    .accesskey = Г
+root-certificate-succession-infobar-secondary-button =
+    .label = Позже
+    .accesskey = Д
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Вы пропустили важное обновление { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Если вы не обновитесь, некоторые части браузера скоро перестанут работать. Самое время получить доступ к нашим новейшим защитам и функциям.
+root-certificate-windows-background-notification-learn-more-button = Подробнее
+root-certificate-windows-background-notification-update-button = Обновить { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Закрыть
+    .aria-label = Закрыть
+fxa-menu-message-sign-up-button = Зарегистрироваться
+fxa-menu-message-sync-devices-primary-text = Синхронизируйте все свои устройства
+fxa-menu-message-sync-devices-secondary-text = Мгновенно получайте доступ к вашей информации — закладкам и паролям — везде, где бы вы ни использовали { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Синхронизируйте все свои устройства
+fxa-menu-message-backup-data-primary-text = Создайте резервную копию данных браузера
+fxa-menu-message-backup-data-secondary-text = Автоматически защищайте закладки, пароли и другую информацию на всех ваших устройствах.
+fxa-menu-message-backup-data-collapsed-text = Создайте резервную копию данных браузера
+fxa-menu-message-backup-sync-primary-text = Обеспечьте безопасность и синхронизацию своих данных
+fxa-menu-message-backup-sync-secondary-text = Синхронизация создает резервные копии большей части ваших данных, чтобы вы могли получить к ним доступ, где бы вы ни использовали { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Синхронизация и резервное копирование данных
+fxa-menu-message-mobile-primary-text = Отправляйте вкладки на телефон
+fxa-menu-message-mobile-secondary-text = Мгновенно продолжайте с того места, на котором остановились, когда вы синхронизируете вкладки с мобильным устройством.
+fxa-menu-message-mobile-collapsed-text = Синхронизируйтесь со своим телефоном
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = С возвращением
+multi-cta-fox-doodle-set-default-checkbox = Установить { -brand-short-name } по умолчанию
+multi-cta-fox-doodle-pin-startmenu-checkbox = Закрепить { -brand-short-name } в меню «Пуск»
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Сохранить { -brand-short-name } в Dock
+       *[other] Закрепить { -brand-short-name } на панели задач
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Начать веб-сёрфинг
+multi-cta-fox-doodle-main-browser-primary-button-label = Сделать { -brand-short-name } моим основным браузером
+multi-cta-fox-doodle-quick-reminder-subtitle = Небольшое напоминание о том, что вы всегда можете держать под рукой свой любимый, ориентированный на приватность браузер.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Держите под рукой свой любимый, ориентированный на приватность браузер. Установите { -brand-short-name } в качестве браузера по умолчанию для открытия ссылок и сохраните его в Dock.
+       *[other] Держите под рукой свой любимый, ориентированный на приватность браузер. Установите { -brand-short-name } в качестве браузера по умолчанию для открытия ссылок и закрепите его на панели задач.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Держите под рукой свой любимый, ориентированный на приватность браузер. Установите { -brand-short-name } в качестве браузера по умолчанию для открытия ссылок и закрепите его на панели задач и в меню «Пуск».

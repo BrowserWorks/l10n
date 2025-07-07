@@ -1,11 +1,15 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = URL 분류자 정보
 url-classifier-search-title = 검색
 url-classifier-search-result-title = 결과
+# Variables:
+#   $uri (string) - URI of blocked page
 url-classifier-search-result-uri = URI: { $uri }
+# Variables:
+#   $list (string) - List of tables where the page is blocked
 url-classifier-search-result-list = 테이블 목록: { $list }
 url-classifier-search-input = URL
 url-classifier-search-error-invalid-url = 잘못된 URL
@@ -40,7 +44,6 @@ url-classifier-debug-sb-modules = 안전한 탐색 로그 모듈
 url-classifier-debug-modules = 현재 로그 모듈
 url-classifier-debug-sbjs-modules = 안전한 탐색 JS 로그
 url-classifier-debug-file = 현재 로그 파일
-
 url-classifier-trigger-update = 업데이트 실행
 url-classifier-not-available = 해당 없음
 url-classifier-disable-sbjs-log = 안전한 탐색 JS 로그 사용 안 함

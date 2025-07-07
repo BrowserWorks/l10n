@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,6 @@ refresh-profile-dialog-description = Pradėkite iš naujo, norėdami išspręsti
 refresh-profile = Įpūsti „{ -brand-short-name }“ naujos gyvybės
 refresh-profile-button = Atšviežinti „{ -brand-short-name }“…
 refresh-profile-learn-more = Sužinoti daugiau
-
 refresh-profile-progress =
     .title = Atšviežinti „{ -brand-short-name }“
 refresh-profile-progress-description = Beveik atlikta…

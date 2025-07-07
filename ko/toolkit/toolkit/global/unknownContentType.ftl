@@ -1,18 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 unknowncontenttype-handleinternally =
     .label = { -brand-short-name }로 열기
     .accesskey = e
-
 unknowncontenttype-settingschange =
     .value =
         { PLATFORM() ->
             [windows] { -brand-short-name } 설정에서 변경할 수 있습니다.
            *[other] { -brand-short-name } 설정에서 변경할 수 있습니다.
         }
-
 unknowncontenttype-intro = 다음 파일 열기를 선택하셨습니다:
 unknowncontenttype-which-is = 파일 형식:
 unknowncontenttype-from = 원본 위치:

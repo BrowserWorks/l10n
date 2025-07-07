@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = 下载
 appmenuitem-passwords =
     .label = 密码
+appmenuitem-extensions-and-themes =
+    .label = 扩展和主题
+appmenuitem-extensions =
+    .label = 扩展
 appmenuitem-addons-and-themes =
     .label = 扩展和主题
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 全屏
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = 登录以同步…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = 开启标签页同步功能，就能看到�
 appmenu-remote-tabs-opensettings =
     .label = 设置
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 想查看您在其他设备上的标签页吗？
 appmenu-remote-tabs-connectdevice =
     .label = 关联其他设备
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = 同步并保存数据
 appmenu-fxa-signed-in-label = 登录
 appmenu-fxa-setup-sync =
     .label = 开启同步...
+appmenu-fxa-setup-sync-new = 开启
 appmenuitem-save-page =
     .label = 另存页面为…
+appmenuitem-fxa-sync-off-title = 同步已关闭
+appmenuitem-fxa-sync-off-description = 保护书签、密码等数据，并可在所有设备上使用。
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = 有新功能推出时通知我
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -189,6 +196,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = 排查 { -brand-shorter-name } 音视频 Bug 时使用。
 profiler-popup-presets-media-label =
     .label = 媒体
+profiler-popup-presets-ml-description = 排查 { -brand-shorter-name } 机器学习 Bug 时使用。
+profiler-popup-presets-ml-label =
+    .label = 机器学习
 profiler-popup-presets-networking-description = 排查 { -brand-shorter-name } 网络 Bug 时使用。
 profiler-popup-presets-networking-label =
     .label = 网络
@@ -277,5 +287,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 接收数据外泄警报
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = 掩藏真实邮箱地址和电话号码
+appmenuitem-services-relay-description = 打开马甲邮箱面板
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = 保护在线活动
+appmenu-services-header = 我的服务
+appmenu-other-protection-header = 试用 { -vendor-short-name } 提供的其他保护工具：
+
+## Profiles panel
+
+appmenu-other-profiles = 其他配置文件
+appmenu-manage-profiles =
+    .label = 管理配置文件
+appmenu-create-profile =
+    .label = 新建配置文件
+appmenu-edit-profile =
+    .aria-label = 编辑配置文件
+appmenu-profiles-2 =
+    .label = 配置文件

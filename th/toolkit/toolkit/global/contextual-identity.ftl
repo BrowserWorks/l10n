@@ -1,9 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## Names of the default containers in Waterfox.
+## Names of the default containers in Firefox.
 ## See https://support.mozilla.org/kb/how-use-firefox-containers
 
 user-context-personal =
@@ -22,8 +22,8 @@ user-context-shopping =
 ##
 
 user-context-none =
-    .label = ไม่มีการแยกข้อมูล
+    .label = ไม่มีที่แยกข้อมูล
     .accesskey = ม
 user-context-manage-containers =
-    .label = จัดการการแยกข้อมูล
+    .label = จัดการที่แยกข้อมูล
     .accesskey = จ

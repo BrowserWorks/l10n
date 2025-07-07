@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% complete
 firefoxview-tabpickup-step-signin-header = Switch seamlessly between devices
 firefoxview-tabpickup-step-signin-description = To grab your phone tabs here, first sign in or create an account.
 firefoxview-tabpickup-step-signin-primarybutton = Continue
+firefoxview-syncedtabs-signin-header-2 = Your { -brand-product-name } on all your devices
+firefoxview-syncedtabs-signin-description-2 = To see tabs you have open on your phone and other devices, sign in or sign up for an account. With an account, you can also synchronise your passwords, history, and more.
+firefoxview-syncedtabs-signin-primarybutton-2 = Sign in
 firefoxview-syncedtabs-signin-header = Grab tabs from anywhere
 firefoxview-syncedtabs-signin-description = To see your tabs from wherever you use { -brand-product-name }, sign in to your account. If you don’t have an account, we’ll take you through the steps to sign up.
 firefoxview-syncedtabs-signin-primarybutton = Sign in or sign up
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synchronise { -brand-product-name } on 
 firefoxview-tabpickup-adddevice-description = Download { -brand-product-name } for mobile and sign in there.
 firefoxview-tabpickup-adddevice-learn-how = Learn how
 firefoxview-tabpickup-adddevice-primarybutton = Get { -brand-product-name } for mobile
+firefoxview-syncedtabs-adddevice-header-2 = Grab tabs from anywhere
+firefoxview-syncedtabs-adddevice-description-2 = Sign in to { -brand-product-name } on your phone or another computer to see tabs here. Learn how to <a data-l10n-name="url">connect additional devices</a>.
 firefoxview-syncedtabs-adddevice-header = Sign in to { -brand-product-name } on your other devices
 firefoxview-syncedtabs-adddevice-description = To see your tabs from wherever you use { -brand-product-name }, sign in on all your devices. Learn how to <a data-l10n-name="url">connect additional devices</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Try { -brand-product-name } for mobile
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Tabs from other devices
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = View all
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Search recently closed tabs
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Search tabs
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Search synchronised tabs
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (local files)
 firefoxview-show-all-history = Show all history
 firefoxview-view-more-browsing-history = View more browsing history
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Get back to where you’ve been
 firefoxview-history-empty-description = As you browse, the pages you visit will be listed here.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Protecting your privacy is at the he
 firefoxview-choose-browser-button = Choose browser
     .title = Choose browser
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Nothing to show
 firefoxview-dont-remember-history-empty-description = Protecting your privacy is at the heart of what we do. It’s why you can control the activity { -brand-short-name } remembers.
 firefoxview-dont-remember-history-empty-description-two = Based on your current settings, { -brand-short-name } doesn’t remember your activity as you browse. To change that, <a data-l10n-name="history-settings-url-two">change your history settings to remember your history</a>.
+firefoxview-dont-remember-history-empty-header-2 = You’re in control of what { -brand-short-name } remembers
+firefoxview-dont-remember-history-empty-description-one = Right now, { -brand-short-name } does not remember your browsing activity. To change that, <a data-l10n-name="history-settings-url-two">update your history settings</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Close
     .title = Close
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Import history from another browser
 firefoxview-import-history-description = Make { -brand-short-name } your go-to browser. Import browsing history, bookmarks, and more.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Closed a tab too soon?
 firefoxview-recentlyclosed-empty-description = Here you’ll find the tabs you recently closed, so you can reopen any of them quickly.

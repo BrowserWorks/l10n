@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -115,7 +115,6 @@ shopping-settings-sidebar-enabled-state = Trình kiểm tra đánh giá đang <s
 shopping-adjusted-rating-label =
     .label = Đánh giá đã được điều chỉnh
 shopping-adjusted-rating-unreliable-reviews = Đã xóa các đánh giá không đáng tin cậy
-shopping-adjusted-rating-based-reliable-reviews = Dựa trên những đánh giá đáng tin cậy
 
 ## Strings for the review reliability component
 
@@ -134,8 +133,6 @@ shopping-analysis-explainer-learn-more2 = Tìm hiểu thêm về <a data-l10n-na
 # websites, which will be inserted without being translated.
 #  $retailer (String) - capitalized name of the shopping website, for example, "Amazon".
 shopping-analysis-explainer-highlights-description = <strong>Điểm nổi bật</strong> từ { $retailer } đánh giá trong vòng 80 ngày qua mà chúng tôi tin là đáng tin cậy.
-# Fallback for analysis highlights explainer if the retailer is ever unknown
-shopping-analysis-explainer-highlights-description-unknown-retailer = <strong>Điểm nổi bật</strong> từ đánh giá trong vòng 80 ngày qua mà chúng tôi tin là đáng tin cậy.
 shopping-analysis-explainer-review-grading-scale-reliable = Đánh giá đáng tin cậy. Chúng tôi tin rằng các đánh giá có thể đến từ những khách hàng thực sự đã để lại những đánh giá trung thực, không thiên vị.
 shopping-analysis-explainer-review-grading-scale-mixed = Chúng tôi tin rằng có sự kết hợp giữa các đánh giá đáng tin cậy và không đáng tin cậy.
 shopping-analysis-explainer-review-grading-scale-unreliable = Đánh giá không đáng tin cậy. Chúng tôi tin rằng các đánh giá có thể là giả mạo hoặc từ những người đánh giá thiên vị.
@@ -150,8 +147,8 @@ shopping-sidebar-close-button2 =
 ## Strings for the unanalyzed product card.
 ## The word 'analyzer' when used here reflects what this tool is called on
 ## fakespot.com. If possible, a different word should be used for the Fakespot
-## tool (the Fakespot by BrowserWorks 'analyzer') other than 'checker', which is
-## used in the name of the Waterfox feature ('Review Checker'). If that is not
+## tool (the Fakespot by Mozilla 'analyzer') other than 'checker', which is
+## used in the name of the Firefox feature ('Review Checker'). If that is not
 ## possible - if these terms are not meaningfully different - that is OK.
 
 shopping-unanalyzed-product-header-2 = Chưa có thông tin về những đánh giá này

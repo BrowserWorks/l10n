@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,7 +25,7 @@ type-tab = Καρτέλα
 type-subframe = Υποπλαίσιο
 type-tracker = Ιχνηλάτης
 type-addon = Πρόσθετο
-type-browser = Φυλλομετρητής
+type-browser = Πρόγραμμα περιήγησης
 type-worker = Worker
 type-other = Άλλο
 
@@ -54,7 +54,6 @@ close-tab =
     .title = Κλείσιμο καρτέλας
 show-addon =
     .title = Εμφάνιση στη Διαχείριση προσθέτων
-
 # Tooltip when hovering an item of the about:performance table
 # Variables:
 #   $totalDispatches (Number) - how many dispatches occurred for this page since it loaded

@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 새 탭
 newtab-settings-button =
     .title = 새 탭 페이지 사용자 지정
+newtab-customize-panel-icon-button =
+    .title = 이 페이지 사용자 지정
+newtab-customize-panel-icon-button-label = 사용자 지정
+newtab-personalize-settings-icon-label =
+    .title = 새 탭 개인화
+    .aria-label = 설정
+newtab-settings-dialog-label =
+    .aria-label = 설정
 newtab-personalize-icon-label =
     .title = 새 탭 개인화
     .aria-label = 새 탭 개인화
 newtab-personalize-dialog-label =
     .aria-label = 개인화
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -109,6 +119,21 @@ newtab-menu-save-to-pocket = { -pocket-brand-name }에 저장
 newtab-menu-delete-pocket = { -pocket-brand-name }에서 삭제
 newtab-menu-archive-pocket = { -pocket-brand-name }에 보관
 newtab-menu-show-privacy-info = 우리의 스폰서와 개인 정보 보호
+newtab-menu-about-fakespot = { -fakespot-brand-name } 정보
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = 신고
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = 차단
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = 주제 팔로우 취소
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = 스폰서 콘텐츠 관리
+newtab-menu-our-sponsors-and-your-privacy = 스폰서와 개인 정보 보호
+newtab-menu-report-this-ad = 이 광고 신고
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -160,7 +185,7 @@ newtab-label-download = 다운로드됨
 # This string is used in the story cards to indicate sponsored content
 # Variables:
 #   $sponsorOrSource (string) - The name of a company or their domain
-newtab-label-sponsored = { $sponsorOrSource } · 후원
+newtab-label-sponsored = { $sponsorOrSource } · 스폰서
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
 #   $sponsor (string) - The name of a sponsor
@@ -170,6 +195,8 @@ newtab-label-sponsored-by = { $sponsor } 후원
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead }분
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = 스폰서
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -183,7 +210,7 @@ newtab-section-menu-add-topsite = 상위 사이트 추가
 newtab-section-menu-add-search-engine = 검색 엔진 추가
 newtab-section-menu-move-up = 위로 이동
 newtab-section-menu-move-down = 아래로 이동
-newtab-section-menu-privacy-notice = 개인정보처리방침
+newtab-section-menu-privacy-notice = 개인정보 보호정책
 
 ## Section aria-labels
 
@@ -200,6 +227,8 @@ newtab-section-header-recent-activity = 최근 활동
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } 추천
 newtab-section-header-stories = 생각하게 하는 이야기
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = 오늘의 추천
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -230,7 +259,6 @@ newtab-pocket-learn-more = 더 알아보기
 newtab-pocket-cta-button = { -pocket-brand-name } 받기
 newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저장하고 재미있게 읽어 보세요.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name }은 { -brand-product-name } 제품군의 일부입니다.
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = 저장
 newtab-pocket-saved = 저장됨
 
@@ -242,7 +270,9 @@ newtab-pocket-thumbs-up-tooltip =
 # Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
 newtab-pocket-thumbs-down-tooltip =
     .title = 싫어요
-newtab-toast-thumbs-up-or-down = 감사합니다. 사용자의 의견은 제품 개선에 도움이 됩니다.
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = 감사합니다. 사용자의 의견은 제품 개선에 도움이 됩니다.
 newtab-toast-dismiss-button =
     .title = 닫기
     .aria-label = 닫기
@@ -287,18 +317,27 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = 날씨
     .description = 오늘의 일기예보를 한눈에 보기
+newtab-custom-trending-search-toggle =
+    .label = 인기 검색어
+    .description = 인기 있고 자주 검색되는 주제
 newtab-custom-close-button = 닫기
-newtab-custom-settings = 설정 더 보기
+newtab-custom-settings = 추가 설정
 
 ## New Tab Wallpapers
 
 newtab-wallpaper-title = 배경 화면
 newtab-wallpaper-reset = 기본값으로 재설정
+newtab-wallpaper-upload-image = 이미지 업로드
+newtab-wallpaper-custom-color = 색상 선택
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = 이미지가 파일 크기 제한인 { $file_size }MB를 초과했습니다. 더 작은 파일을 업로드 해 주세요.
+newtab-wallpaper-error-file-type = 파일을 업로드하지 못했습니다. 다른 파일 형식으로 다시 시도하세요.
 newtab-wallpaper-light-red-panda = 레서판다
 newtab-wallpaper-light-mountain = 하얀 산
 newtab-wallpaper-light-sky = 보라색과 분홍색 구름이 있는 하늘
 newtab-wallpaper-light-color = 파란색, 분홍색, 노란색 모양
-newtab-wallpaper-light-landscape = 푸른 안개 산 풍경
+newtab-wallpaper-light-landscape = 파란 안개 산 풍경
 newtab-wallpaper-light-beach = 야자수가 있는 해변
 newtab-wallpaper-dark-aurora = 북극 오로라
 newtab-wallpaper-dark-color = 빨간색과 파란색 모양
@@ -306,6 +345,8 @@ newtab-wallpaper-dark-panda = 숲속에 숨어있는 레서판다
 newtab-wallpaper-dark-sky = 밤하늘이 있는 도시 풍경
 newtab-wallpaper-dark-mountain = 산 풍경
 newtab-wallpaper-dark-city = 보라색 도시 풍경
+newtab-wallpaper-dark-fox-anniversary = 숲 근처 포장도로에 있는 여우
+newtab-wallpaper-light-fox-anniversary = 안개가 자욱한 산 풍경이 있는 풀밭에 있는 여우
 
 ## Solid Colors
 
@@ -322,7 +363,7 @@ newtab-wallpaper-pink = 분홍색
 newtab-wallpaper-light-pink = 연분홍색
 newtab-wallpaper-red = 빨간색
 newtab-wallpaper-dark-blue = 진청색
-newtab-wallpaper-dark-purple = 진보라
+newtab-wallpaper-dark-purple = 진보라색
 newtab-wallpaper-dark-green = 진녹색
 newtab-wallpaper-brown = 갈색
 
@@ -335,8 +376,12 @@ newtab-wallpaper-abstract-purple = 보라색 모양
 newtab-wallpaper-abstract-orange = 주황색 모양
 newtab-wallpaper-gradient-orange = 주황색과 분홍색 그라데이션
 newtab-wallpaper-abstract-blue-purple = 파란색과 보라색 모양
+newtab-wallpaper-abstract-white-curves = 음영 곡선이 있는 흰색
+newtab-wallpaper-abstract-purple-green = 보라색과 녹색 빛 그라데이션
+newtab-wallpaper-abstract-blue-purple-waves = 파란색과 보라색 물결 모양
+newtab-wallpaper-abstract-black-waves = 검은 물결 모양
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = 사진
 newtab-wallpaper-beach-at-sunrise = 일출의 해변
@@ -345,6 +390,12 @@ newtab-wallpaper-storm-sky = 폭풍우 하늘
 newtab-wallpaper-sky-with-pink-clouds = 분홍색 구름의 하늘
 newtab-wallpaper-red-panda-yawns-in-a-tree = 나무 위에서 하품하는 레서판다
 newtab-wallpaper-white-mountains = 하얀 산
+newtab-wallpaper-hot-air-balloons = 낮 동안 다양한 색상의 열기구
+newtab-wallpaper-starry-canyon = 파란 별이 빛나는 밤
+newtab-wallpaper-suspension-bridge = 낮 동안 회색 전체 현수교 사진
+newtab-wallpaper-sand-dunes = 하얀 모래언덕
+newtab-wallpaper-palm-trees = 골든 아워의 코코넛 야자수 실루엣
+newtab-wallpaper-blue-flowers = 푸른 꽃잎이 만발한 꽃의 근접 촬영 사진
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
@@ -360,6 +411,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = 천문
+newtab-wallpaper-celestial-lunar-eclipse = 월식
+newtab-wallpaper-celestial-earth-night = 지구 저궤도에서 본 야간 사진
+newtab-wallpaper-celestial-starry-sky = 별이 빛나는 하늘
+newtab-wallpaper-celestial-eclipse-time-lapse = 월식 타임 랩스
+newtab-wallpaper-celestial-black-hole = 블랙홀 은하 일러스트
+newtab-wallpaper-celestial-river = 강의 인공위성 이미지
+
 ## New Tab Weather
 
 # Variables:
@@ -370,6 +434,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ 스폰서
 newtab-weather-menu-change-location = 위치 변경
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = 위치 검색
+    .aria-label = 위치 검색
 newtab-weather-change-location-search-input = 위치 검색
 newtab-weather-menu-weather-display = 날씨 표시
 # Display options are:
@@ -388,3 +455,131 @@ newtab-weather-menu-hide-weather = 새 탭에서 날씨 숨기기
 newtab-weather-menu-learn-more = 더 알아보기
 # This message is shown if user is working offline
 newtab-weather-error-not-available = 지금은 날씨 데이터를 사용할 수 없습니다.
+
+## Topic Labels
+
+newtab-topic-label-business = 사업
+newtab-topic-label-career = 직업
+newtab-topic-label-education = 교육
+newtab-topic-label-arts = 연예
+newtab-topic-label-food = 음식
+newtab-topic-label-health = 건강
+newtab-topic-label-hobbies = 게임
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = 금융
+newtab-topic-label-society-parenting = 육아
+newtab-topic-label-government = 정치
+newtab-topic-label-education-science = 과학
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = 생활
+newtab-topic-label-sports = 스포츠
+newtab-topic-label-tech = 기술
+newtab-topic-label-travel = 여행
+newtab-topic-label-home = 홈 & 마당
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = 피드를 세부 조정하려면 주제를 선택하세요
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = 두 개 이상의 주제를 선택하세요. 전문 큐레이터가 여러분의 관심사에 맞는 이야기를 우선적으로 선정합니다. 언제든지 업데이트하세요.
+newtab-topic-selection-save-button = 저장
+newtab-topic-selection-cancel-button = 취소
+newtab-topic-selection-button-maybe-later = 나중에요
+newtab-topic-selection-privacy-link = 데이터를 보호하고 관리하는 방법 알아보기
+newtab-topic-selection-button-update-interests = 관심 분야 업데이트
+newtab-topic-selection-button-pick-interests = 관심 분야를 선택하세요
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = 팔로우
+newtab-section-following-button = 팔로잉
+newtab-section-unfollow-button = 팔로우 취소
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = 피드를 미세 조정하세요
+newtab-section-follow-highlight-subtitle = 관심 분야를 팔로우하면 좋아하는 것을 더 많이 볼 수 있습니다.
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = 차단
+newtab-section-blocked-button = 차단됨
+newtab-section-unblock-button = 차단 해제
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = 나중에
+newtab-section-confirm-block-topic-p1 = 정말로 이 주제를 차단하시겠습니까?
+newtab-section-confirm-block-topic-p2 = 차단된 주제는 더 이상 피드에 나타나지 않습니다.
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = { $topic } 차단
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = 주제
+newtab-section-manage-topics-button-v2 =
+    .label = 주제 관리
+newtab-section-mangage-topics-followed-topics = 팔로우됨
+newtab-section-mangage-topics-followed-topics-empty-state = 아직 주제를 팔로우하지 않았습니다.
+newtab-section-mangage-topics-blocked-topics = 차단됨
+newtab-section-mangage-topics-blocked-topics-empty-state = 아직 주제를 차단하지 않았습니다.
+newtab-custom-wallpaper-title = 사용자 지정 배경 화면이 있습니다
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = 자신만의 배경 화면을 업로드하거나 사용자 지정 색상을 선택하여 나만의 { -brand-product-name }로 만들 수 있습니다.
+newtab-custom-wallpaper-cta = 사용해 보기
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = 모바일용 { -brand-product-name } 다운로드
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = 코드를 스캔하면 이동 중에도 안전하게 탐색할 수 있습니다.
+newtab-download-mobile-highlight-body-variant-b = 탭, 비밀번호 등을 동기화할 때 중단한 부분부터 다시 시작하세요.
+newtab-download-mobile-highlight-body-variant-c = 이동 중에도 { -brand-product-name }를 가져갈 수 있다는 사실을 알고 계셨나요? 같은 브라우저. 주머니에 넣고 다니세요.
+newtab-download-mobile-highlight-image =
+    .aria-label = 모바일용 { -brand-product-name } 다운로드를 위한 QR 코드
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = 보고하는 이유?
+newtab-report-ads-reason-not-interested =
+    .label = 관심 없음
+newtab-report-ads-reason-inappropriate =
+    .label = 부적절함
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = 너무 많이 본 경우
+newtab-report-content-wrong-category =
+    .label = 잘못된 분류
+newtab-report-content-outdated =
+    .label = 오래됨
+newtab-report-content-inappropriate-offensive =
+    .label = 부적절하거나 불쾌감을 주는 내용
+newtab-report-content-spam-misleading =
+    .label = 스팸 또는 오해의 소지가 있는 내용
+newtab-report-cancel = 취소
+newtab-report-submit = 보내기
+newtab-toast-thanks-for-reporting =
+    .message = 신고해 주셔서 감사합니다.
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Google 트렌드
+newtab-trending-searches-show-trending =
+    .title = 인기 검색어 표시
+newtab-trending-searches-hide-trending =
+    .title = 인기 검색어 숨기기
+newtab-trending-searches-learn-more = 더 알아보기
+newtab-trending-searches-dismiss = 인기 검색어 숨기기
+# "Trending searches refers to popular searches from search engines
+newtab-trending-searches-title = 인기 검색어

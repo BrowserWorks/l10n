@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Letöltések
 appmenuitem-passwords =
     .label = Jelszavak
+appmenuitem-extensions-and-themes =
+    .label = Kiegészítők és témák
+appmenuitem-extensions =
+    .label = Kiegészítők
 appmenuitem-addons-and-themes =
     .label = Kiegészítők és témák
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Teljes képernyő
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Jelentkezzen be a Syncbe…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = Kapcsolja be a lapszinkronizálást a más 
 appmenu-remote-tabs-opensettings =
     .label = Beállítások
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Szeretné a más eszközein megnyitott lapjait itt látni?
 appmenu-remote-tabs-connectdevice =
     .label = Másik eszköz csatlakoztatása
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = Adatok szinkronizálása és mentése
 appmenu-fxa-signed-in-label = Bejelentkezés
 appmenu-fxa-setup-sync =
     .label = Szinkronizálás bekapcsolása…
+appmenu-fxa-setup-sync-new = Bekapcsolás
 appmenuitem-save-page =
     .label = Oldal mentése…
+appmenuitem-fxa-sync-off-title = A Sync ki van kapcsolva
+appmenuitem-fxa-sync-off-description = Védje és érje el bárhol könyvjelzőit, jelszavait és egyebeit.
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = Értesítés az új funkciókról
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -277,5 +284,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Kapjon figyelmeztetést az adatvédelmi incidensekről
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Maszkolja a valódi e-mail-címét és telefonszámát
+appmenuitem-services-relay-description = E-mail-maszkok irányítópultjának elindítása
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Védje meg az online tevékenységét
+appmenu-services-header = Saját szolgáltatások
+appmenu-other-protection-header = Próbálja ki a { -vendor-short-name } egyéb védelmi eszközeit:
+
+## Profiles panel
+
+appmenu-other-profiles = Egyéb profilok
+appmenu-manage-profiles =
+    .label = Profilok kezelése
+appmenu-create-profile =
+    .label = Új profil
+appmenu-edit-profile =
+    .aria-label = Profil szerkesztése
+appmenu-profiles-2 =
+    .label = Profilok

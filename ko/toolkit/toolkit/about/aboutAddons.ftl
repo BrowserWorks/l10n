@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -108,7 +108,7 @@ disabled-unsigned-heading =
     .value = 몇몇 부가 기능이 비활성화 됨
 disabled-unsigned-description = 다음 부가 기능은 { -brand-short-name }에서의 사용이 확인되지 않았습니다. <label data-l10n-name="find-addons">대체제를 검색</label>하거나 개발자가 확인을 받도록 요청할 수 있습니다.
 disabled-unsigned-learn-more = 사용자가 온라인에서 안전할 수 있게 노력하는 내용에 대해서 더 알아보세요.
-disabled-unsigned-devinfo = 부가 기능을 확인하는데 관심이 있는 개발자는 <label data-l10n-name="learn-more">메뉴얼</label>을 읽어보세요.
+disabled-unsigned-devinfo = 부가 기능을 확인하는 데 관심이 있는 개발자는 <label data-l10n-name="learn-more">메뉴얼</label>을 읽어보세요.
 plugin-deprecation-description = 빠진게 있습니까? 어떤 플러그인은 { -brand-short-name }에서 더 이상 지원하지 않습니다. <label data-l10n-name="learn-more">더 알아보기.</label>
 legacy-warning-show-legacy = 레거시 확장 기능 보기
 legacy-extensions =
@@ -205,6 +205,10 @@ addon-updates-manual-updates-found = 업데이트 있는 항목 보기
 
 addon-install-from-file = 파일에서 부가 기능 설치…
     .accesskey = I
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = 파일에서 부가 기능 설치 또는 업데이트…
+    .accesskey = I
 addon-install-from-file-dialog-title = 설치할 부가 기능 선택
 addon-install-from-file-filter-name = 부가 기능
 addon-open-about-debugging = 부가 기능 디버그
@@ -221,7 +225,7 @@ shortcuts-input =
     .placeholder = 단축키 입력
 # Accessible name for a trashcan icon button that removes an existent shortcut
 shortcuts-remove-button =
-    .aria-label = 바로가기 제거
+    .aria-label = 바로 가기 제거
 shortcuts-browserAction2 = 도구 모음 버튼 활성화
 shortcuts-pageAction = 페이지 작업 활성화
 shortcuts-sidebarAction = 사이드바 표시/숨기기
@@ -266,6 +270,15 @@ discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 �
 discopane-notice-recommendations2 =
     .message = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
 discopane-notice-learn-more = 더 알아보기
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = 컬러웨이 테마가 제거되었습니다.
+    .message =
+        { -brand-product-name } 컬러웨이 컬렉션을 업데이트했습니다. 
+        "저장된 테마" 목록에서 이전 버전을 제거했습니다. 
+        부가 기능 사이트에서 새 버전을 받으세요.
+colorway-removal-notice-learn-more = 더 알아보기
+colorway-removal-notice-button = 업데이트된 컬러웨이 테마 받기
 privacy-policy = 개인정보처리방침
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -286,6 +299,16 @@ find-more-themes = 테마 더 찾기
 # used for screen readers.
 addon-options-button =
     .aria-label = 추가 옵션
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    확장 기능과 테마를 사용하면 { -brand-product-name }를 사용자 지정할 수 있습니다.
+    개인정보 보호 강화, 생산성 향상, 미디어 개선, { -brand-product-name } 외관 변경 등 
+    다양한 작업을 수행할 수 있습니다. 이 작은 소프트웨어 프로그램은 종종 
+    제3자에 의해 개발됩니다. 여기에 뛰어난 보안, 성능 및 기능을 위해 Waterfox가 
+    <a data-l10n-name="learn-more-trigger">추천</a>하는 선정된 부가 기능들이 있습니다.
 
 ## Add-on actions
 
@@ -371,6 +394,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = 사생활 보호 창에서 허용됨
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = 사생활 보호 창에서 허용됨
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -402,14 +429,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name }는 보안 및 성능 표준을 충족하는 확장 기능만 추천함
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = BrowserWorks에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = 이 확장 기능은 보안 및 성능 표준을 충족하는 것으로 검토되었습니다
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = BrowserWorks에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = 이 확장 기능은 보안 및 성능 표준을 충족하는 것으로 검토되었습니다
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox는 보안 및 성능 표준을 충족하는 확장 기능만 추천합니다
 
 ##
 
@@ -417,6 +462,7 @@ available-updates-heading = 업데이트 있음
 recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
 release-notes-error = 죄송합니다. 출시 정보를 로드하는 중에 오류가 발생했습니다.
+addon-permissions-empty2 = 이 확장 기능은 권한이 필요하지 않습니다.
 addon-permissions-empty = 이 확장 기능은 권한이 필요하지 않습니다.
 addon-permissions-required = 핵심 기능에 필요한 필수 권한:
 addon-permissions-optional = 추가 기능에 필요한 선택 권한:
@@ -426,8 +472,8 @@ recommended-themes-heading = 추천 테마
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = <span data-l10n-name="hostname">{ $hostname }</span>에 다음 권한을 부여합니다:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = 창의적인 느낌이 떠오르십니까? <a data-l10n-name="link">Waterfox Color로 나만의 테마를 만들어 보세요.</a>
 
 ## Page headings
@@ -444,6 +490,9 @@ shortcuts-heading = 확장 기능 단축키 관리
 default-heading-search-label = 부가 기능 더 찾기
 addons-heading-search-input =
     .placeholder = addons.mozilla.org 검색
+addons-heading-search-button =
+    .title = addons.mozilla.org 검색
+    .aria-label = addons.mozilla.org 검색
 addon-page-options-button =
     .title = 부가 기능 도구
 
@@ -466,10 +515,24 @@ details-notification-unsigned-and-disabled-link = 추가 정보
 details-notification-unsigned = { $name } 부가 기능이 { -brand-short-name }에서 사용할 수 있는지 확인할 수 없습니다. 주의해서 진행하세요.
 details-notification-unsigned2 =
     .message = { $name } 부가 기능이 { -brand-short-name }에서 사용할 수 있는지 확인할 수 없습니다. 주의해서 진행하세요.
+details-notification-hard-blocked-extension =
+    .message = 이 확장 기능은 BrowserWorks 정책 위반으로 차단되어 비활성화되었습니다.
+details-notification-hard-blocked-other =
+    .message = 이 부가 기능은 BrowserWorks 정책 위반으로 차단되어 비활성화되었습니다.
 details-notification-unsigned-link = 추가 정보
 details-notification-blocked = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
 details-notification-blocked2 =
     .message = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
+details-notification-blocked-link2 = 상세 보기
+details-notification-soft-blocked-extension-disabled =
+    .message = 이 확장 기능은 BrowserWorks 정책 위반으로 제한되어 비활성화되었습니다. 활성화할 수 있지만 위험할 수 있습니다.
+details-notification-soft-blocked-extension-enabled =
+    .message = 이 확장 기능은 BrowserWorks의 정책을 위반합니다. 사용하면 위험할 수 있습니다.
+details-notification-soft-blocked-other-disabled =
+    .message = 이 부가 기능은 BrowserWorks 정책 위반으로 제한되어 비활성화되었습니다. 활성화할 수 있지만 위험할 수 있습니다.
+details-notification-soft-blocked-other-enabled =
+    .message = 이 부가 기능은 BrowserWorks의 정책을 위반합니다. 사용하면 위험할 수 있습니다.
+details-notification-softblocked-link2 = 상세 보기
 details-notification-blocked-link = 추가 정보
 details-notification-softblocked = { $name }는 보안이나 안정성 문제를 일으킬 수 있습니다.
 details-notification-softblocked2 =
@@ -487,3 +550,41 @@ plugins-openh264-name = Cisco Systems, Inc.가 제공하는 OpenH264 동영상 �
 plugins-openh264-description = 이 플러그인은 WebRTC 표준을 따르고 H.264 동영상 코덱을 필요로 하는 기기로 부터의 WebRTC 통신을 활성화하기 위해서 BrowserWorks에 의해서 설치되었습니다. 코덱 소스 코드와 구현에 대한 내용을 확인하기 위해서는 http://www.openh264.org/ 를 방문하세요.
 plugins-widevine-name = Google Inc.에서 제공하는 Widevine 콘텐츠 복호화 모듈
 plugins-widevine-description = 이 플러그인은 암호화된 미디어 확장 명세를 준수하는 암호화된 미디어를 실행할 수 있게 합니다. 암호화된 미디어는 보통 사이트에서 프리미엄 미디어 콘텐츠가 복제되는 것을 보호하기 위해 사용됩니다. 암호화된 미디어 확장에 대한 자세한 내용은 https://www.w3.org/TR/encrypted-media/ 페이지를 참조하세요.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = 필수 데이터 수집:
+addon-permissions-optional-data-collection = 선택적 정보 수집:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = 권한 및 데이터
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = { $extensionName } 확장 기능에서 사용됨
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = { -brand-short-name }가 about:inference에 이것을 사용함
+mlmodel-link-preview = { -brand-short-name }는 사용자가 링크를 미리 볼 때 요점을 생성하기 위해 이것을 사용함
+mlmodel-pdfjs = { -brand-short-name }는 사용자가 PDF에 추가하는 이미지에 대한 대체 텍스트를 생성하기 위해 이것을 사용함
+mlmodel-smart-tab-topic-engine = { -brand-short-name }는 탭 그룹의 이름을 제안하는 데 이것을 사용함
+mlmodel-smart-tab-embedding-engine = { -brand-short-name }는 탭 그룹에 탭을 제안하는 데 이것을 사용함
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = 온디바이스 AI
+addon-category-mlmodel-title =
+    .title = 온디바이스 AI
+mlmodel-heading = 온디바이스 AI 모델 관리
+mlmodel-description = { -brand-short-name }의 일부 기능 및 확장 기능은 사용자 기기에서 로컬로 작동하는 AI 모델에 의해 제공됩니다. 이 접근 방식은 개인 정보를 보호하고, 많은 경우 성능을 향상시킵니다. <a data-l10n-name="learn-more">더 알아보기</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = 제거
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = 파일 크기
+mlmodel-addon-detail-last-used-label = 마지막 사용
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = 사용됨
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = 모델 카드
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Hugging Face에서 보기

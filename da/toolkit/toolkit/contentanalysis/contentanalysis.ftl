@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -13,6 +13,15 @@ contentanalysis-slow-agent-dialog-header = Skanning undervejs
 contentanalysis-slow-agent-dialog-body-file = { $agent } gennemgår om "{ $filename }" overholder din organisations data-politikker. Dette kan tage lidt tid.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more =
+    { $count ->
+        [one] { $agent } vurderer, om "{ $filename }" og { $count } yderligere element overholder din organisations data-politikker. Dette kan tage et øjeblik.
+       *[other] { $agent } vurderer, om "{ $filename }" og { $count } yderligere elementer overholder din organisations data-politikker. Dette kan tage et øjeblik.
+    }
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent } gennemgår, om det du har indsat overholder din organisations data-politikker. Dette kan tage lidt tid.
 # Note that this is shown when the user drag and drops text into the browser.
 # Variables:
@@ -24,6 +33,10 @@ contentanalysis-slow-agent-dialog-body-print = { $agent } gennemgår din udskrif
 contentanalysis-operationtype-clipboard = udklipsholder
 contentanalysis-operationtype-dropped-text = sluppet tekst
 contentanalysis-operationtype-print = udskrift
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-upload-description = upload af "{ $filename }"
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = hentning af "{ $filename }"
 #   $filename - The filename associated with the request, such as "aFile.txt"
 contentanalysis-customdisplaystring-description = upload af "{ $filename }"
 contentanalysis-warndialogtitle = Dette indhold kan være usikkert
@@ -39,22 +52,7 @@ contentanalysis-notification-title = Indholdsanalyse
 contentanalysis-genericresponse-message = Indholdsanalyse svarede med { $response } for ressourcen { $content }
 # Variables:
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-block-message = Din organisation bruger værktøj til forhindring af datatab, hvilket har blokeret indholdet { $content }.
-# Variables:
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-error-message = En fejl opstod i kommunikationen med værktøjet til forhindring af datatab. Overførsel blev nægtet for ressourcen { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-unspecified-error-message = En fejl opstod i kommunikationen med { $agent }. Overførsel blev nægtet for ressourcen { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-no-agent-connected-message = Kunne ikke oprette forbindelse til { $agent }. Overførsel blev nægtet for ressourcen { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-invalid-agent-signature-message = Kunne ikke verificere signaturen for { $agent }. Overførsel blev nægtet for ressourcen { $content }.
+contentanalysis-block-message = Din organisation bruger software til at forhindre tab af data. Softwaren har blokeret dette indhold: { $content }.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
@@ -73,11 +71,21 @@ contentanalysis-error-message-upload-file = Upload af "{ $filename }" nægtet.
 contentanalysis-error-message-dropped-text = Træk og slip nægtet.
 contentanalysis-error-message-clipboard = Indsæt nægtet.
 contentanalysis-error-message-print = Udskrivning nægtet.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = Tidsfristen for forbindelsen til { $agent } udløb. { $contentName } er blevet blokeret.
 contentanalysis-block-dialog-title-upload-file = Du har ikke tilladelse til at uploade denne fil
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file =
     Din organisations politik for databeskyttelse tillader ikke, at du uploader filen "{ $filename }".
+    Kontakt din administrator for at få mere at vide.
+contentanalysis-block-dialog-title-download-file = Du har ikke tilladelse til at hente denne fil
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file =
+    Din organisations politik for databeskyttelse tillader ikke, at du henter filen "{ $filename }".
     Kontakt din administrator for at få mere at vide.
 contentanalysis-block-dialog-title-clipboard = Du har ikke tilladelse til at indsætte dette indhold.
 contentanalysis-block-dialog-body-clipboard = Din organisations politik for databeskyttelse tillader ikke, at du indsætter dette indhold. Kontakt din administrator for at få mere at vide.

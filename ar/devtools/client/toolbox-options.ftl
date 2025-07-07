@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,7 +15,7 @@ options-select-default-tools-label = أدوات المطورين المبدئي�
 options-tool-not-supported-label = * ليس مدعوما لهدف صندوق الأدوات الحالي
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
-options-select-additional-tools-label = أدوات المطورين المنصّبة عن طريق الإضافات
+options-select-additional-tools-label = أدوات المطورين المثبتة عن طريق الإضافات
 # The label for the heading of group of checkboxes corresponding to the default developer
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = أزرار شريط الأدوات المتوفرة
@@ -74,7 +74,7 @@ options-sourceeditor-autoclosebrackets-label = أغلِق الأقواس تلق�
 options-sourceeditor-expandtab-tooltip =
     .title = استخدم المسافات بدل محرف الجدولة
 options-sourceeditor-expandtab-label = أزِح مستخدما المسافات
-options-sourceeditor-tabsize-label = حجم التبويب
+options-sourceeditor-tabsize-label = حجم اللسان
 options-sourceeditor-keybinding-label = ربطات المفاتيح
 options-sourceeditor-keybinding-default-label = المبدئي
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = 닫기
     .secondarybuttonaccesskey = m
 appmenu-update-restart-message2 = 최신 버전의 { -brand-shorter-name }를 받으세요. 열린 탭과 창이 복원됩니다.
+appmenu-theme-installed =
+    .secondarybuttonlabel = 실행 취소
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name }를 자동으로 최신 버전으로 업데이트를 할 수 없습니다.
     .buttonlabel = { -brand-shorter-name } 업데이트
@@ -41,6 +44,12 @@ appmenu-addon-private-browsing-installed2 =
     .buttonlabel = 확인
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = 애플리케이션 메뉴를 통해 부가 기능과 테마를 관리하세요.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = <a data-l10n-name="settings-link">확장 기능 설정</a>에서 권한 및 데이터 설정을 언제든지 업데이트할 수 있습니다.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = 확장 기능을 도구 모음에 고정
+    .accesskey = P
 appmenu-addon-post-install-incognito-checkbox =
     .label = 이 확장 기능이 사생활 보호 창에서 실행되도록 허용
     .accesskey = A

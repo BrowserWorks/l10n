@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } người dùng
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Đồng bộ dấu trang của bạn ở mọi nơi.
 cfr-doorhanger-bookmark-fxa-body = Đã tìm thấy tuyệt vời! Bây giờ hãy đồng bộ các dấu trang này với thiết bị di động của bạn. Bắt đầu với một { -fxaccount-brand-name }.
@@ -117,7 +117,7 @@ cfr-doorhanger-video-support-primary-button = Cập nhật bây giờ
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Có vẻ như bạn đang sử dụng Wi-Fi công cộng
@@ -166,7 +166,7 @@ mr2022-background-update-toast-primary-button-label = Mở { -brand-shorter-name
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Nhắc tôi sau
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Thử ngay
     .accesskey = T
@@ -175,7 +175,7 @@ firefoxview-cfr-secondarybutton = Để sau
 firefoxview-cfr-header-v2 = Nhanh chóng bắt đầu từ nơi bạn đã dừng lại
 firefoxview-cfr-body-v2 = Lấy lại các thẻ đã đóng gần đây, cộng với chuyển đổi liền mạch giữa các thiết bị với { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Xin chào với { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -218,7 +218,7 @@ fox-doodle-pin-body = Đây là lời nhắc nhanh rằng bạn có thể giữ 
 fox-doodle-pin-primary = Mở liên kết của tôi bằng { -brand-short-name }
 fox-doodle-pin-secondary = Không phải bây giờ
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>Các tập tin PDF của bạn bây giờ mở trong { -brand-short-name }.</strong> Chỉnh sửa hoặc ký biểu mẫu trực tiếp trong trình duyệt của bạn. Để thay đổi, tìm kiếm “PDF” trong cài đặt.
 set-default-pdf-handler-primary = Đã hiểu
@@ -243,6 +243,9 @@ device-migration-fxa-spotlight-older-device-primary-button = Tạo tài khoản
 device-migration-fxa-spotlight-getting-new-device-header-2 = Thiết bị mới trong tương lai của bạn?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Hãy làm theo một số bước đơn giản để mang theo dấu trang, lịch sử và mật khẩu khi bạn bắt đầu sử dụng thiết bị mới.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Làm thế nào để sao lưu dữ liệu của tôi
+device-migration-fxa-spotlight-sync-header = Duyệt mà không bỏ lỡ nhịp nào
+device-migration-fxa-spotlight-sync-body = Đồng bộ hóa tất cả thông tin quan trọng của bạn bằng mã hóa — như dấu trang và mật khẩu. Bạn có thể tìm thấy mọi thứ bất cứ nơi nào bạn sử dụng { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Bắt đầu
 
 ## Set as Default PDF Reader Infobar
 
@@ -279,3 +282,61 @@ tail-fox-spotlight-title = Loại bỏ những trình theo dõi phiền toái ph
 tail-fox-spotlight-subtitle = Nói lời tạm biệt với những trình theo dõi quảng cáo phiền toái và tận hưởng trải nghiệm Internet nhanh chóng, an toàn hơn.
 tail-fox-spotlight-primary-button = Mở liên kết của tôi bằng { -brand-short-name }
 tail-fox-spotlight-secondary-button = Không phải bây giờ
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Các phiên bản cũ hơn của { -brand-short-name } có thể bắt đầu gặp sự cố vào ngày 14 tháng 1 năm 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Cập nhật để tiếp tục sử dụng { -brand-short-name } sau ngày 14 tháng 3 năm 2025.</strong>
+root-certificate-succession-infobar-link = Tại sao tôi cần cập nhật?
+root-certificate-succession-infobar-primary-button =
+    .label = Cập nhật ngay
+    .accesskey = U
+root-certificate-succession-infobar-secondary-button =
+    .label = Để sau
+    .accesskey = L
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Bạn đã bỏ qua bản cập nhật quan trọng của { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Các phần của trình duyệt sẽ sớm ngừng hoạt động nếu bạn không cập nhật. Bây giờ là thời điểm tuyệt vời để cập nhật các tính năng và biện pháp bảo vệ mới nhất của chúng tôi.
+root-certificate-windows-background-notification-learn-more-button = Tìm hiểu thêm
+root-certificate-windows-background-notification-update-button = Cập nhật { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Đóng
+    .aria-label = Đóng
+fxa-menu-message-sign-up-button = Đăng ký
+fxa-menu-message-sync-devices-primary-text = Đồng bộ hoá tất cả thiết bị của bạn
+fxa-menu-message-sync-devices-secondary-text = Lấy tức thì dữ liệu của bạn — như dấu trang và mật khẩu — bất cứ mọi nơi bạn sử dụng { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Đồng bộ hoá tất cả thiết bị của bạn
+fxa-menu-message-backup-data-primary-text = Sao lưu dữ liệu trình duyệt của bạn
+fxa-menu-message-backup-data-secondary-text = Tự động bảo vệ dấu trang, mật khẩu và thông tin khác trên tất cả thiết bị của bạn.
+fxa-menu-message-backup-data-collapsed-text = Sao lưu dữ liệu trình duyệt
+fxa-menu-message-backup-sync-primary-text = Giữ dữ liệu của bạn an toàn và được đồng bộ hóa
+fxa-menu-message-backup-sync-secondary-text = Đồng bộ hóa sẽ sao lưu hầu hết dữ liệu của bạn để bạn có thể truy cập nó ở mọi nơi bạn sử dụng { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Đồng bộ hóa và sao lưu dữ liệu
+fxa-menu-message-mobile-primary-text = Gửi các thẻ đến điện thoại của bạn
+fxa-menu-message-mobile-secondary-text = Tiếp tục nơi bạn đã dừng lại ngay lập tức khi bạn đồng bộ hóa các thẻ của mình với thiết bị di động.
+fxa-menu-message-mobile-collapsed-text = Đồng bộ hóa với điện thoại của bạn
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Chào mừng bạn trở lại
+multi-cta-fox-doodle-set-default-checkbox = Đặt { -brand-short-name } làm trình duyệt mặc định
+multi-cta-fox-doodle-pin-startmenu-checkbox = Ghim { -brand-short-name } vào Start menu
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Giữ { -brand-short-name } trên Dock
+       *[other] Ghim { -brand-short-name } vào thanh tác vụ
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Bắt đầu duyệt web
+multi-cta-fox-doodle-main-browser-primary-button-label = Đặt { -brand-short-name } làm trình duyệt chính của tôi
+multi-cta-fox-doodle-quick-reminder-subtitle = Dưới đây là lời nhắc nhanh rằng bạn có thể giữ trình duyệt yêu thích tập trung vào quyền riêng tư của mình để mở bằng một cú nhấp chuột.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Giữ trình duyệt yêu thích tập trung vào quyền riêng tư của mình để mở bằng một cú nhấp chuột. Đặt { -brand-short-name } làm trình duyệt mặc định để mở liên kết và giữ nó trong Dock của bạn.
+       *[other] Giữ trình duyệt yêu thích tập trung vào quyền riêng tư của mình để mở bằng một cú nhấp chuột. Đặt { -brand-short-name } làm trình duyệt mặc định để mở các liên kết và ghim nó vào thanh tác vụ của bạn.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Giữ trình duyệt yêu thích tập trung vào quyền riêng tư của mình để mở bằng một cú nhấp chuột. Đặt { -brand-short-name } làm trình duyệt mặc định để mở các liên kết và ghim nó vào thanh tác vụ và Start menu của bạn.

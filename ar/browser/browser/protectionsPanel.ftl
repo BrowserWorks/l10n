@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -23,6 +23,11 @@ protections-panel-etp-more-info =
     .aria-label = معلومات أخرى حول الحماية الموسّعة من التعقب
 protections-panel-etp-on-header = فُعّلت الحماية الموسّعة من التعقب في هذا الموقع
 protections-panel-etp-off-header = عُطّلت الحماية الموسّعة من التعقب في هذا الموقع
+# The link to be clicked to open the sub-panel view
+protections-panel-site-not-working = ألا يعمل الموقع؟
+# The heading/title of the sub-panel view
+protections-panel-site-not-working-view =
+    .title = ألا يعمل الموقع؟
 
 ## Text for the toggles shown when ETP is enabled/disabled for a given site.
 ## .description is transferred into a separate paragraph by the moz-toggle
@@ -37,11 +42,6 @@ protections-panel-etp-toggle-off =
     .label = الحماية الموسّعة من التعقب
     .description = مُعطّل لهذا الموقع
     .aria-label = الحماية الموسّعة من التعقب: مُعطّل ل{ $host }
-# The link to be clicked to open the sub-panel view
-protections-panel-site-not-working = ألا يعمل الموقع؟
-# The heading/title of the sub-panel view
-protections-panel-site-not-working-view =
-    .title = ألا يعمل الموقع؟
 
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
@@ -71,6 +71,15 @@ protections-panel-content-blocking-fingerprinters-label = مسجّلات الب�
 protections-panel-blocking-label = محجوبة
 protections-panel-not-blocking-label = مسموح بها
 protections-panel-not-found-label = لم تُكتشف في الصفحة
+
+## Smartblock strings
+
+# Variables
+#  $trackername (String): the name of the tracker that is currently being blocked.
+protections-panel-smartblock-blocking-toggle =
+    .label = اسمح { $trackername }
+#  $websitehost (String): host of website with blocked content.
+smartblock-placeholder-button-text = اسمح على { $websitehost }
 
 ##
 
@@ -107,7 +116,6 @@ protections-panel-content-blocking-manage-settings =
     .accesskey = د
 protections-panel-content-blocking-breakage-report-view =
     .title = أبلِغ عن موقع معطوب
-protections-panel-content-blocking-breakage-report-view-description2 = حجب متعقبات معينة قد يتسبب بالمشاكل لبعض المواقع. الإبلاغ عن هذه المشاكل يساعد على جعل { -brand-short-name } أفضل للجميع. إرسال هذا البلاغ سيرسل عنوان بريدك ومعلومات عن إعدادات المتصفح لديك إلى { -vendor-short-name }.
 protections-panel-content-blocking-breakage-report-view-collection-url = المسار
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = المسار
@@ -122,6 +130,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = تخفيض لافتة ملف التعريف
+protections-panel-cookie-banner-blocker-header = مانع لافتة ملفات تعريف الارتباط
 protections-panel-cookie-banner-handling-enabled = فعله لهذا الموقع
 protections-panel-cookie-banner-handling-disabled = عطله لهذا الموقع
 protections-panel-cookie-banner-handling-undetected = الموقع غير مدعوم حاليا
@@ -131,6 +140,8 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = أتريد تعطيل تخفيض لافتة ملف التعريف ل{ $host }؟
 protections-panel-cookie-banner-view-turn-on-for-site = أتريد تفعيل تخفيض لافتة ملف التعريف لهذا الموقع؟
+protections-panel-cookie-banner-blocker-view-title =
+    .title = مانع لافتة ملفات تعريف الارتباط
 protections-panel-cookie-banner-view-cookie-clear-warning = سيمسح { -brand-short-name } كعكات هذا الموقع و ينعش الصفحة. مسحك كل الكعكات قد يخرجك أو يمسح خانات التسوق.
 protections-panel-cookie-banner-view-turn-on-description = يحاول { -brand-short-name } رفض جميع طلبات ملفات تعريف الارتباط تلقائيًا على المواقع المدعومة.
 protections-panel-cookie-banner-view-cancel = ألغِ

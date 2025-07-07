@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -206,6 +206,10 @@ addon-updates-manual-updates-found = Az elérhető frissítések megtekintése
 
 addon-install-from-file = Kiegészítő telepítése fájlból…
     .accesskey = f
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Kiegészítő telepítése vagy frissítése fájlból…
+    .accesskey = t
 addon-install-from-file-dialog-title = Válassza ki a telepíteni kívánt kiegészítőt
 addon-install-from-file-filter-name = Kiegészítők
 addon-open-about-debugging = Kiegészítők hibakeresése
@@ -279,6 +283,15 @@ discopane-notice-recommendations2 =
         Ezen javaslatok egy része személyre szabott. Ennek alapja a telepített kiegészítői,
         a profilbeállításai és a használati statisztikái.
 discopane-notice-learn-more = További tudnivalók
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = A színvilágtémái el lettek távolítva.
+    .message =
+        A { -brand-product-name } frissítette a színvilág-gyűjteményét. Eltávolítottuk
+        a régi verziókat a „Mentett témák” listából. Szerezzen be új verziókat
+        a kiegészítők oldalán.
+colorway-removal-notice-learn-more = További tudnivalók
+colorway-removal-notice-button = Frissített színvilágtémák beszerzése
 privacy-policy = Adatvédelmi irányelvek
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -288,7 +301,7 @@ created-by-author = szerző: <a data-l10n-name="author">{ $author }</a>
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
 user-count = Felhasználók: { $dailyUsers }
-install-extension-button = Hozzáadás a { -brand-product-name }hoz
+install-extension-button = Hozzáadás a { -brand-product-name(case: "allative") }
 install-theme-button = Téma telepítése
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
@@ -299,6 +312,11 @@ find-more-themes = További témák keresése
 # used for screen readers.
 addon-options-button =
     .aria-label = További beállítások
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 = A kiegészítők és témák lehetővé teszik a { -brand-product-name } testreszabását. Elősegíthetik az adatvédelmet, növelhetik a hatékonyságot, jobbá tehetik a médiatartalmakat, módosíthatják a { -brand-product-name } megjelenését, és még sok másra képesek. Ezeket a kis szoftvereket gyakran harmadik felek fejlesztik. Itt egy válogatás, melyet a Waterfox <a data-l10n-name="learn-more-trigger">ajánl</a> a kivételes biztonság, teljesítmény és funkcionalitás érdekében.
 
 ## Add-on actions
 
@@ -333,7 +351,7 @@ locale-disabled-heading = Tiltva
 sitepermission-enabled-heading = Engedélyezve
 sitepermission-disabled-heading = Tiltva
 always-activate-button = Mindig aktiválja
-never-activate-button = Soha ne aktiválja
+never-activate-button = Sose aktiválja
 addon-detail-author-label = Szerző
 addon-detail-version-label = Verzió
 addon-detail-last-updated-label = Utoljára frissítve
@@ -385,6 +403,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Engedélyezett privát ablakokban
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Engedélyezett privát ablakokban
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -416,14 +438,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = A { -brand-product-name } csak olyan kiegészítőket ajánl, amelyek megfelelnek a biztonsági és a teljesítménybeli követelményeinknek.
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Hivatalos, a BrowserWorks által készített kiegészítő. Megfelel a biztonsági és teljesítményi előírásoknak.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Megvizsgáltuk ezt a kiegészítőt, és megfelelt a biztonsági és a teljesítménybeli követelményeinknek.
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Hivatalos, a BrowserWorks által készített kiegészítő. Megfelel a biztonsági és teljesítményi előírásoknak.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = Megvizsgáltuk ezt a kiegészítőt, és megfelelt a biztonsági és a teljesítménybeli követelményeknek.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = A Waterfox csak olyan kiegészítőket ajánl, amelyek megfelelnek a biztonsági és a teljesítménybeli követelményeknek.
 
 ##
 
@@ -431,6 +471,7 @@ available-updates-heading = Elérhető frissítések
 recent-updates-heading = Legutóbbi frissítések
 release-notes-loading = Betöltés…
 release-notes-error = Sajnáljuk, de hiba történt a kiadási megjegyzések betöltésekor.
+addon-permissions-empty2 = Ez a kiegészítő nem igényel semmilyen engedélyt.
 addon-permissions-empty = Ez a kiegészítő nem igényel semmilyen engedélyt
 addon-permissions-required = Az alapvető funkciókhoz szükséges engedélyek:
 addon-permissions-optional = A további funkciókhoz szükséges engedélyek:
@@ -440,8 +481,8 @@ recommended-themes-heading = Ajánlott témák
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = A következő lehetőségeket biztosítja a(z) <span data-l10n-name="hostname">{ $hostname }</span> számára:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Kreatívnak érzi magát? <a data-l10n-name="link">Állítsa össze a saját témáját a Waterfox Color használatával.</a>
 
 ## Page headings
@@ -458,6 +499,9 @@ shortcuts-heading = Kiegészítő-gyorsbillentyűk kezelése
 default-heading-search-label = Több kiegészítő keresése
 addons-heading-search-input =
     .placeholder = Keresés itt: addons.mozilla.org
+addons-heading-search-button =
+    .title = Keresés itt: addons.mozilla.org
+    .aria-label = Keresés itt: addons.mozilla.org
 addon-page-options-button =
     .title = Eszközök minden kiegészítőhöz
 
@@ -480,10 +524,24 @@ details-notification-unsigned-and-disabled-link = További információ
 details-notification-unsigned = { $name } használhatósága nem ellenőrizhető a { -brand-short-name } programban. Legyen óvatos.
 details-notification-unsigned2 =
     .message = { $name } használhatósága nem ellenőrizhető a { -brand-short-name } programban. Legyen óvatos.
+details-notification-hard-blocked-extension =
+    .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt blokkolva lett, és le lett tiltva.
+details-notification-hard-blocked-other =
+    .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt blokkolva lett, és le lett tiltva.
 details-notification-unsigned-link = További információ
 details-notification-blocked = A(z) { $name } le lett tiltva biztonsági vagy stabilitási problémák miatt.
 details-notification-blocked2 =
     .message = A(z) { $name } le lett tiltva biztonsági vagy stabilitási problémák miatt.
+details-notification-blocked-link2 = Részletek megtekintése
+details-notification-soft-blocked-extension-disabled =
+    .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt korlátozva lett, és le lett tiltva. Engedélyezheti, de ez kockázatos lehet.
+details-notification-soft-blocked-extension-enabled =
+    .message = Ez a kiegészítő megsérti a BrowserWorks irányelveit. A használata kockázatos lehet.
+details-notification-soft-blocked-other-disabled =
+    .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt korlátozva lett, és le lett tiltva. Engedélyezheti, de ez kockázatos lehet.
+details-notification-soft-blocked-other-enabled =
+    .message = Ez a kiegészítő megsérti a BrowserWorks irányelveit. A használata kockázatos lehet.
+details-notification-softblocked-link2 = Részletek megtekintése
 details-notification-blocked-link = További információ
 details-notification-softblocked = A(z) { $name } biztonsági vagy stabilitási problémát okoz.
 details-notification-softblocked2 =
@@ -501,3 +559,41 @@ plugins-openh264-name = OpenH264 videokodek a Cisco Systems, Inc.-től
 plugins-openh264-description = Ezt a bővítményt a BrowserWorks automatikusan telepítette a WebRTC specifikációnak való megfelelés érdekében, és a WebRTC hívások lehetővé tételéhez olyan eszközökkel, amelyek a H.264 videokodeket igénylik. Keresse fel a http://www.openh264.org/ oldalt a megvalósítással kapcsolatos további tudnivalókért.
 plugins-widevine-name = Widevine tartalom-visszafejtő modul a Google Inc.-től
 plugins-widevine-description = Ez a bővítmény lehetővé teszi a titkosított médiák lejátszását, az Encrypted Media Extensions specifikációnak megfelelően. Titkosított médiát jellemzően azok az oldalak használnak, amelyek a prémium médiatartalmak másolása ellen védekeznek. A titkosított médiakiterjesztésekről szóló további információkért keresse fel az https://www.w3.org/TR/encrypted-media/ oldalt.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = Szükséges adatgyűjtés:
+addon-permissions-optional-data-collection = Nem kötelező adatgyűjtés:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = Engedélyek és adatok
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = A(z) { $extensionName } kiegészítő használja
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = A { -brand-short-name } használja az about:inference oldalon
+mlmodel-link-preview = A { -brand-short-name } használja a kulcspontok előállításakor a hivatkozások előnézetekor
+mlmodel-pdfjs = A { -brand-short-name } használja arra, hogy alternatív szövegeket hozzon létre a PDF-hez hozzáadott képekhez
+mlmodel-smart-tab-topic-engine = A { -brand-short-name } használja, hogy neveket javasoljon a lapcsoportjaihoz
+mlmodel-smart-tab-embedding-engine = A { -brand-short-name } használja, hogy lapokat javasoljon a lapcsoportjaihoz
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = Eszközön lévő MI
+addon-category-mlmodel-title =
+    .title = Eszközön lévő MI
+mlmodel-heading = Eszközön lévő MI modellek kezelése
+mlmodel-description = A { -brand-short-name } egyes funkciói és kiegészítői helyben működő MI modelleket használnak. Ez a megoldás védi a magánszféráját, és számos esetben nagyobb teljesítményt eredményez. <a data-l10n-name="learn-more">További tudnivalók</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = Eltávolítás
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = Fájlméret
+mlmodel-addon-detail-last-used-label = Legutóbbi használat
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = Használja:
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = Modellkártya
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Megtekintés a Hugging Face-en

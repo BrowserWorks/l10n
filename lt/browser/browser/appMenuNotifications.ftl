@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -37,7 +37,6 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Ne dabar
     .secondarybuttonaccesskey = N
 appmenu-update-other-instance-message = Yra išleistas „{ -brand-shorter-name }“ naujinimas, tačiau jo negalima įdiegti dėl šiuo metu veikiančios kitos „{ -brand-shorter-name }“ kopijos. Užverkite ją, norėdami tęsti naujinimą, arba pasirinkite „Vis tiek naujinti“ (kita kopija gali veikti netinkamai, kol nepaleisite iš naujo).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = Gerai
     .buttonaccesskey = G
@@ -45,7 +44,6 @@ appmenu-addon-post-install-message3 = Tvarkykite savo priedus ir grafinius apval
 appmenu-addon-post-install-incognito-checkbox =
     .label = Leisti šiam priedui veikti privačiojo naršymo languose
     .accesskey = L
-    
 appmenu-new-tab-controlled-changes =
     .label = Pasikeitė jūsų nauja kortelė.
     .buttonlabel = Palikti pakeitimus

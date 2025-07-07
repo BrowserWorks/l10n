@@ -1,10 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
     .title = Fontes
-
 fonts-window-close =
     .key = W
 
@@ -12,7 +11,6 @@ fonts-window-close =
 
 fonts-langgroup-header = Fontes para
     .accesskey = F
-
 fonts-langgroup-arabic =
     .label = Árabe
 fonts-langgroup-armenian =
@@ -77,42 +75,27 @@ fonts-langgroup-other =
 
 fonts-proportional-header = Proporcional
     .accesskey = P
-
 fonts-default-serif =
     .label = Com serifa
 fonts-default-sans-serif =
     .label = Sem serifa
-
 fonts-proportional-size = Tamanho
     .accesskey = T
-
 fonts-serif = Com serifa
     .accesskey = s
-
 fonts-sans-serif = Sem serifa
     .accesskey = e
-
 fonts-monospace = Monoespaçado
     .accesskey = M
-
 fonts-monospace-size = Tamanho
     .accesskey = a
-
 fonts-minsize = Tamanho mínimo de fonte
     .accesskey = n
-
 fonts-minsize-none =
     .label = Nenhum
-
 fonts-allow-own =
     .label = Permitir que páginas escolham as próprias fontes, ao invés das selecionadas acima
     .accesskey = P
-
-## Text Encodings
-##
-## Translate the encoding names as adjectives for an encoding, not as the name
-## of the language.
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

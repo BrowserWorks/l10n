@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = แปลหน้านี้
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } เบต้า
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = จัดการภาษา
@@ -116,17 +116,17 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = แสดงต้นฉบับ
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = การแปล
 translations-manage-settings-button =
     .label = การตั้งค่า…
-    .accesskey = ต
+    .accesskey = T
 translations-manage-description = ดาวน์โหลดภาษาสำหรับการแปลแบบออฟไลน์
 translations-manage-all-language = ภาษาทั้งหมด
 translations-manage-download-button = ดาวน์โหลด
 translations-manage-delete-button = ลบ
-translations-manage-intro-2 = ตั้งค่าการกำหนดลักษณะภาษาและการแปลไซต์ของคุณและจัดการภาษาที่ดาวน์โหลดสำหรับการแปลแบบออฟไลน์
+translations-manage-intro-2 = ตั้งค่าปรับแต่งภาษาและการแปลไซต์ของคุณและจัดการภาษาที่ดาวน์โหลดสำหรับการแปลแบบออฟไลน์
 translations-manage-download-description = ดาวน์โหลดภาษาสำหรับการแปลแบบออฟไลน์
 translations-manage-language-download-button =
     .label = ดาวน์โหลด

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = เยี่ยม คุณได้ติดตั้
 return-to-amo-addon-title = ตอนนี้มาติดตั้ง <img data-l10n-name="icon"/> <b>{ $addon-name }</b> กันเลย
 return-to-amo-add-extension-label = เพิ่มส่วนขยาย
 return-to-amo-add-theme-label = เพิ่มชุดตกแต่ง
+return-to-amo-theme-install-complete-label = ติดตั้งชุดตกแต่งแล้ว
+return-to-amo-extension-install-complete-label = ติดตั้งส่วนขยายแล้ว
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = ความคืบหน้า: ขั้นตอนที่ { $current } จาก { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = ปิดภาพเคลื่อนไหว
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = ลงชื่อเข้า
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = นำเข้าจาก { $previous }
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = ใช้ { $appLanguage } ต่�
 onboarding-live-language-secondary-cancel-download = ยกเลิก
 onboarding-live-language-skip-button-label = ข้าม
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -174,35 +176,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = ตั้ง { -brand-
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = นำเข้าจากเบราว์เซอร์ก่อนหน้า
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = เปิดโลกสู่อินเทอร์เน็ตที่น่าทึ่ง
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = เปิดใช้งาน { -brand-short-name } ได้จากทุกที่แค่เพียงคลิกเดียว ทุกครั้งที่คุณทำ คุณเลือกเว็บที่เปิดกว้างและเป็นอิสระยิ่งขึ้น
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] เก็บ { -brand-short-name } ลงใน Dock
        *[other] ปักหมุด { -brand-short-name } เข้ากับแถบงาน
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = ปักหมุด { -brand-short-name } เข้ากับแถบงานและเมนูเริ่ม
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = เปลี่ยนมาใช้เบราว์เซอร์ที่สนับสนุนโดยองค์กรไม่แสวงหาผลกำไร เราจะปกป้องความเป็นส่วนตัวของคุณในขณะที่คุณท่องเว็บ
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = ขอบคุณที่หลงรัก { -brand-product-name }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = เข้าสู่โลกอินเทอร์เน็ตอันแข็งแกร่งได้จากทุกที่แค่เพียงคลิกเดียว ในรุ่นล่าสุดของเรามีสิ่งใหม่ ๆ หลายอย่างที่เราคิดว่าคุณจะต้องชอบแน่
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = ใช้เบราว์เซอร์ที่ปกป้องความเป็นส่วนตัวของคุณในขณะที่คุณท่องเว็บ รุ่นล่าสุดของเรามีสิ่งต่าง ๆ หลายอย่างที่คุณจะต้องชอบแน่
 mr2022-onboarding-existing-pin-checkbox-label = เพิ่มการเรียกดูแบบส่วนตัวของ { -brand-short-name } ด้วย
 
@@ -217,14 +221,16 @@ mr2022-onboarding-set-default-subtitle = ใช้เบราว์เซอร
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = รุ่นล่าสุดของเราถูกสร้างขึ้นจากสิ่งต่าง ๆ รอบตัวคุณ ซึ่งจะทำให้คุณท่องเว็บได้ง่ายกว่าเดิม รุ่นล่าสุดนี้มาพร้อมกับคุณลักษณะต่าง ๆ ที่เราคิดว่าคุณจะต้องชอบแน่
 mr2022-onboarding-get-started-primary-button-label = ตั้งค่าในไม่กี่วินาที
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = ตั้งค่าต่าง ๆ ได้อย่างรวดเร็วทันใจ
 mr2022-onboarding-import-subtitle = ตั้งค่า { -brand-short-name } ในแบบที่คุณต้องการ เพิ่มที่คั่นหน้า รหัสผ่าน และอื่น ๆ จากเบราว์เซอร์ตัวเดิมของคุณ
@@ -276,7 +282,7 @@ mr2022-onboarding-mobile-download-cta-text = สแกนคิวอาร์�
 mr2022-onboarding-no-mobile-download-cta-text = สแกนคิวอาร์โค้ดเพื่อดาวน์โหลด { -brand-product-name } สำหรับมือถือ
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = อิสระในการเรียกดูแบบส่วนตัวในคลิกเดียว
 mr2022-upgrade-onboarding-pin-private-window-subtitle = ไม่เก็บคุกกี้หรือประวัติที่บันทึกไว้จากเดสก์ท็อปของคุณ ให้คุณเรียกดูโดยไม่มีใครแอบมอง
@@ -336,6 +342,14 @@ onboarding-device-migration-subtitle = ลงชื่อเข้าใช้ {
 onboarding-device-migration-subtitle2 = ลงชื่อเข้าใช้บัญชีของคุณเพื่อนำที่คั่นหน้า รหัสผ่าน และประวัติไปกับคุณบนอุปกรณ์เครื่องใหม่ของคุณ
 onboarding-device-migration-primary-button-label = ลงชื่อเข้า
 
+## Add-ons Picker screen
+
+amo-picker-title = ปรับแต่ง { -brand-short-name } ของคุณ
+amo-picker-subtitle = ส่วนขยายนั้นเหมือนกับแอปสำหรับเบราว์เซอร์ของคุณ และช่วยให้คุณปกป้องรหัสผ่าน ดาวน์โหลดวิดีโอ ค้นหาโปรโมชั่น ปิดกั้นโฆษณาที่น่ารำคาญ เปลี่ยนรูปลักษณ์ของเบราว์เซอร์ของคุณ และทำสิ่งต่างๆ ได้อีกมากมาย
+amo-picker-install-button-label = เพิ่มไปยัง { -brand-short-name }
+amo-picker-install-complete-label = ติดตั้งแล้ว
+amo-picker-collection-link = สำรวจส่วนเสริมเพิ่มเติม
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -347,6 +361,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = เมื่อคุ
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } พร้อมดูแลคุณ
 onboarding-gratitude-security-and-privacy-subtitle = ขอบคุณที่ใช้ { -brand-short-name } ซึ่งสนับสนุนโดย BrowserWorks ด้วยการสนับสนุนของคุณ เรากำลังทำงานเพื่อให้อินเทอร์เน็ตปลอดภัยและเข้าถึงได้มากยิ่งขึ้นสำหรับทุกคน
+# Sign up or Sign in screen
+onboarding-sign-up-title = ซิงค์ข้อมูลของคุณระหว่างอุปกรณ์ต่างๆ
+onboarding-sign-up-description = ลงทะเบียนเพื่อสร้างบัญชีและเก็บข้อมูลสำคัญของคุณ เช่น รหัสผ่าน ที่คั่นหน้า และอื่นๆ ซึ่งจะถูกจัดเก็บอย่างปลอดภัยและพร้อมให้ใช้ได้เมื่อคุณลงชื่อเข้าในอุปกรณ์ใดก็ตาม
+onboarding-sign-up-button = ลงทะเบียนหรือลงชื่อเข้า
+onboarding-sign-up-secondary-button = เริ่มการเรียกดู
 
 ## New user time and familiarity survey strings
 
@@ -366,3 +385,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = ฉันเพิ่ง
 onboarding-new-user-survey-familiarity-based-option-2 = ฉันใช้มาบ้างแล้ว
 onboarding-new-user-survey-familiarity-based-option-3 = ฉันคุ้นเคยมาก
 onboarding-new-user-survey-familiarity-based-option-4 = ฉันเคยใช้ในอดีต แต่ก็ผ่านไปนานแล้ว
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = บอกเราว่าคุณต้องการให้แท็บของคุณอยู่ด้านไหน
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = คุณสามารถเปลี่ยนได้เมื่อคุณต้องการในการตั้งค่าแถบข้าง
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = จัดระเบียบแท็บในแบบของคุณ
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = เปิดแท็บไว้หลายแท็บใช่หรือไม่? ลองเปิดแท็บไว้ด้านข้างเพื่อให้ดูคล่องตัวขึ้น หรือจะเลือกให้แท็บอยู่ด้านบนก็ได้ คุณสามารถเปลี่ยนได้ตลอดเวลา
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = เลือกเค้าโครงแท็บของคุณ
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = หากต้องการมุมมองที่คล่องตัวและช่วยให้คุณจดจ่อกับเนื้อหาได้ ให้ลองใช้แท็บที่ด้านข้าง หรือจะเลือกแท็บแบบคลาสสิกที่ด้านบนก็ได้ คุณสามารถเปลี่ยนได้ตลอดเวลา
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = อยู่ด้านข้าง
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = อยู่ด้านบน
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = แท็บแนวตั้งอยู่ตรงนี้
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = ขอแนะนำแท็บแนวตั้ง
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = ลองนำแท็บของคุณมาไว้ด้านข้าง คุณสามารถเปลี่ยนได้เมื่อคุณต้องการในการตั้งค่าแถบข้าง
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = ลองใช้แท็บแนวตั้ง
+onboarding-flair-text = ใหม่!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = ใช้แท็บแนวนอนเหมือนเดิม
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = หน้าต่างเบราว์เซอร์ซึ่งแสดงแท็บอยู่บริเวณด้านข้างของหน้าจอ โดยเป็นส่วนหนึ่งของแถบข้างใน { -brand-shorter-name }
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = หน้าต่างเบราว์เซอร์ซึ่งแสดงแท็บอยู่บริเวณด้านข้างของหน้าจอ โดยเป็นส่วนหนึ่งของแถบข้างใน { -brand-shorter-name }
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = หน้าต่างเบราว์เซอร์ซึ่งแสดงแท็บอยู่บริเวณด้านบน
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = หน้าต่างเบราว์เซอร์ซึ่งแสดงแท็บอยู่บริเวณด้านบน
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = ลองใช้บอตสนทนา AI ในแถบข้าง
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = สรุปเนื้อหาบนเว็บ ระดมความคิด ร่างข้อความ ทั้งหมดนี้ทำได้ในขณะที่คุณท่องเว็บ คุณสามารถเลือกบอตสนทนาจากผู้ให้บริการต่างๆ หลายราย และสามารถสลับเปลี่ยนได้ตลอดเวลา <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
+onboarding-genai-sidebar-primary-button = เลือกบอตสนทนา
+onboarding-genai-sidebar-secondary-button = เริ่มต้นการเรียกดู
+
+## New user onboarding checklist
+
+onboarding-checklist-title = ตั้งค่า { -brand-short-name } ให้เสร็จ
+onboarding-checklist-subtitle = ทำตามขั้นตอนเหล่านี้เพื่อให้ได้รับประสบการณ์การเรียกดูที่ดีที่สุด
+onboarding-checklist-set-default = ตั้ง { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้น
+onboarding-checklist-pin = ปักหมุด { -brand-short-name } ที่แถบงาน
+onboarding-checklist-import = นำเข้าจากเบราว์เซอร์ก่อนหน้า
+onboarding-checklist-extension = เพิ่มส่วนขยาย
+onboarding-checklist-sign-up = ลงทะเบียนหรือลงชื่อเข้าสู่บัญชีของคุณ
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = ลองใช้กลุ่มแท็บเพื่อลดความยุ่งเหยิงและให้คุณมีสมาธิได้มากขึ้น
+tab-groups-onboarding-feature-callout-subtitle = จัดระเบียบได้ด้วยการลากแท็บหนึ่งไปไว้ด้านบนของอีกแท็บหนึ่งเพื่อสร้างกลุ่มแรกของคุณ
+tab-groups-onboarding-create-group-title-2 = ค้นหากลุ่มแท็บของคุณได้ตลอดเวลาที่นี่
+tab-groups-onboarding-create-group-no-alltabs-button-title = มองหากลุ่มของคุณได้โดยค้นหาในแถบที่อยู่
+tab-groups-onboarding-saved-groups-title-2 = เมื่อคุณปิดกลุ่มแท็บ คุณสามารถเปิดใหม่จากที่นี่เมื่อใดก็ได้
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = มองหากลุ่มที่ปิดไปของคุณได้โดยค้นหาในแถบที่อยู่
+tab-groups-onboarding-session-restore-title = เปิดกลุ่มแท็บของคุณใหม่ได้ตลอดเวลาที่นี่
+tab-groups-onboarding-dismiss = ตกลง
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = พบกับโปรไฟล์ใน { -brand-product-name }
+multi-profile-spotlight-body = สลับระหว่างการเรียกดูเพื่อการทำงานและการเรียกดูเพื่อความสนุกสนานได้อย่างง่ายดาย โปรไฟล์จะเก็บข้อมูลการเรียกดูของคุณ รวมถึงประวัติการค้นหาและรหัสผ่านแยกจากกันโดยสิ้นเชิง เพื่อให้คุณจัดระเบียบได้
+multi-profile-spotlight-cta = สร้างโปรไฟล์
+multi-profile-callout-title = สร้างโปรไฟล์แยกกันสำหรับการทำงานและความบันเทิง
+multi-profile-callout-subtitle = โปรไฟล์ช่วยให้คุณสามารถเก็บข้อมูลการท่องเว็บ เช่น ประวัติการค้นหา และรหัสผ่าน แยกจากกันได้โดยสิ้นเชิง
+multi-profile-callout-cta = สร้างโปรไฟล์
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = ดาวน์โหลด ซิงค์ แล้วไปต่อได้เลย!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = สแกนคิวอาร์โค้ดเพื่อดาวน์โหลด { -brand-product-name } สำหรับมือถือ เมื่อติดตั้งแล้ว ให้เลือก “ซิงค์กับมือถือ” เพื่อเข้าถึงรหัสผ่าน ที่คั่นหน้า และอีกหลายอย่างได้ทุกที่
+dismiss-button-label = ปิด
+sync-to-mobile-button-label = ซิงค์กับมือถือ
+desktop-to-mobile-qr-code-alt =
+    .aria-label = คิวอาร์โค้ดสำหรับดาวน์โหลด { -brand-product-name } สำหรับมือถือ

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ neterror-blocked-by-policy-page-title = Trang bị chặn
 neterror-captive-portal-page-title = Đăng nhập vào mạng
 neterror-dns-not-found-title = Không tìm thấy máy chủ
 neterror-malformed-uri-page-title = URL không hợp lệ
+general-body-title = Hãy cẩn thận. Có điều gì đó không ổn.
+problem-with-this-site-title = Có vẻ như có vấn đề với trang web này
 
 ## Error page actions
 
@@ -41,6 +43,9 @@ neterror-generic-error = Vì lý do nào đó, { -brand-short-name } không th�
 neterror-load-error-try-again = Trang web này có thể bị gián đoạn tạm thời hoặc do quá tải. Hãy thử lại trong chốc lát.
 neterror-load-error-connection = Nếu bạn không thể mở bất kì trang nào, hãy kiểm tra kết nối mạng.
 neterror-load-error-firewall = Nếu máy tính hoặc mạng của bạn được bảo vệ bởi tường lửa hoặc proxy, hãy chắc chắn rằng { -brand-short-name } được phép truy cập Web.
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = Nếu bạn đang cố tải một trang mạng cục bộ, vui lòng kiểm tra xem { -brand-short-name } đã được cấp quyền Mạng cục bộ trong cài đặt Quyền riêng tư & bảo mật trên macOS hay chưa.
+neterror-http-error-page = Kiểm tra để đảm bảo bạn đã gõ địa chỉ trang web một cách chính xác.
 neterror-captive-portal = Bạn cần đăng nhập vào mạng trước khi có thể truy cập Internet.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -49,6 +54,10 @@ neterror-dns-not-found-hint-header = <strong>Nếu bạn đã nhập đúng đ�
 neterror-dns-not-found-hint-try-again = Thử lại sau
 neterror-dns-not-found-hint-check-network = Kiểm tra kết nối mạng của bạn
 neterror-dns-not-found-hint-firewall = Kiểm tra xem { -brand-short-name } có quyền truy cập web hay không (bạn có thể được kết nối nhưng có tường lửa)
+neterror-dns-not-found-offline-hint-header = <strong>Bạn có thể làm gì về điều đó?</strong>
+neterror-dns-not-found-offline-hint-different-device = Hãy thử kết nối trên một thiết bị khác.
+neterror-dns-not-found-offline-hint-modem = Kiểm tra modem hoặc bộ định tuyến của bạn.
+neterror-dns-not-found-offline-hint-reconnect = Ngắt kết nối và kết nối lại đến Wi-Fi.
 
 ## TRR-only specific messages
 ## Variables:
@@ -64,6 +73,7 @@ neterror-dns-not-found-trr-offline = Bạn không kết nối với Internet.
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain } không tìm thấy trang web này.
 neterror-dns-not-found-trr-server-problem = Đã xảy ra sự cố với { $trrDomain }.
 neterror-dns-not-found-bad-trr-url = URL không hợp lệ.
+neterror-dns-not-found-system-sleep = Hệ thống đang ở chế độ ngủ.
 neterror-dns-not-found-trr-unknown-problem = Sự cố không xác định.
 
 ## Native fallback specific messages
@@ -95,6 +105,9 @@ neterror-proxy-connect-failure-settings = Kiểm tra thiết lập proxy để c
 neterror-proxy-connect-failure-contact-admin = Liên hệ với quản trị mạng của bạn để chắc chắn rằng máy chủ proxy  vẫn đang hoạt động.
 neterror-content-encoding-error = Vui lòng liên hệ với chủ trang web để báo với họ về vấn đề này.
 neterror-unsafe-content-type = Vui lòng liên hệ với chủ trang web để báo với họ về vấn đề này.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = { -brand-short-name } không tin tưởng { $hostname } Vì kết nối không an toàn. Hãy thử thay đổi URL thành HTTPS.
 neterror-nss-failure-not-verified = Không thể hiển thị trang bạn muốn xem vì không thể kiểm tra tính xác thực của dữ liệu nhận được.
 neterror-nss-failure-contact-website = Vui lòng liên hệ chủ trang web để báo với họ vấn đề này.
 # Variables:
@@ -147,3 +160,11 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = Nếu bạn không quen v�
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> có chính sách bảo mật được gọi là HTTP Strict Transport Security (HSTS), có nghĩa là { -brand-short-name } chỉ có thể kết nối với nó một cách an toàn. Bạn không thể thêm ngoại lệ để truy cập trang web này.
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = Có vẻ không có gì, vì rất có thể trang web đó có vấn đề.
+certerror-blocked-by-corp-headers-description = Đôi khi các trang web thiết lập các biện pháp bảo vệ cho chính họ và những người như bạn từ các tương tác không mong muốn với các trang web khác.
+certerror-coop-learn-more = Tìm hiểu thêm về Cross Origin Opener Policies (COOP)
+certerror-coep-learn-more = Tìm hiểu thêm về Cross Origin Embedder Policies (COEP)
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = Mã lỗi: { $responsestatus } { $responsestatustext }

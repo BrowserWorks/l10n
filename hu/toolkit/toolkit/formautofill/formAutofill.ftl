@@ -1,16 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = tárolt fizetésimód-információk használata
 autofill-use-payment-method-os-prompt-windows = A { -brand-short-name } tárolt fizetésimód-információkat akar használni. Erősítse meg a hozzáférést az alábbi Windows-fiókhoz.
 autofill-use-payment-method-os-prompt-other = A { -brand-short-name } tárolt fizetésimód-információkat akar használni.
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = tárolt fizetésimód-információk megjelenítése
 autofill-edit-payment-method-os-prompt-windows = A { -brand-short-name } tárolt fizetésimód-információkat akar megjeleníteni. Erősítse meg a hozzáférést az alábbi Windows-fiókhoz.
@@ -81,3 +81,6 @@ autofill-category-name = név
 autofill-category-organization = szervezet
 autofill-category-tel = telefonszám
 autofill-category-email = e-mail
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = A { -brand-short-name } nem biztonságos oldalt észlelt. Az automatikus űrlapkitöltés ideiglenesen letiltva

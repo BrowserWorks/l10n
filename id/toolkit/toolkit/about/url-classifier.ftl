@@ -1,11 +1,15 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = Informasi Penggolong URL
 url-classifier-search-title = Cari
 url-classifier-search-result-title = Hasil
+# Variables:
+#   $uri (string) - URI of blocked page
 url-classifier-search-result-uri = URI: { $uri }
+# Variables:
+#   $list (string) - List of tables where the page is blocked
 url-classifier-search-result-list = Daftar tabel: { $list }
 url-classifier-search-input = URL
 url-classifier-search-error-invalid-url = URL tidak valid
@@ -40,7 +44,6 @@ url-classifier-debug-sb-modules = Modul log Penjelajahan Aman
 url-classifier-debug-modules = Modul log terkini
 url-classifier-debug-sbjs-modules = Log Safe Browsing JS
 url-classifier-debug-file = Berkas log saat ini
-
 url-classifier-trigger-update = Pemutakhiran Pemicu
 url-classifier-not-available = N/A
 url-classifier-disable-sbjs-log = Nonaktifkan Log JS Penjelajahan Aman

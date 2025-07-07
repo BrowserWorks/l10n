@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -58,18 +58,6 @@ screenshots-component-cancel-button =
     .aria-label = Zrušit
 # Variables
 #   $shortcut (String) - A keyboard shortcut for copying the screenshot.
-screenshots-component-copy-button =
-    .title = Kopírovat ({ $shortcut })
-    .aria-label = Kopírovat
-screenshots-component-copy-button-label = Kopírovat
-# Variables
-#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
-screenshots-component-download-button =
-    .title = Stáhnout ({ $shortcut })
-    .aria-label = Stáhnout
-screenshots-component-download-button-label = Stáhnout
-# Variables
-#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
 screenshots-component-copy-button-2 = Kopírovat
     .title = Kopírovat ({ $shortcut })
     .aria-label = Kopírovat
@@ -78,6 +66,11 @@ screenshots-component-copy-button-2 = Kopírovat
 screenshots-component-download-button-2 = Stáhnout
     .title = Stáhnout ({ $shortcut })
     .aria-label = Stáhnout
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the screenshot command.
+screenshot-toolbar-button =
+    .label = Snímek obrazovky
+    .tooltiptext = Vytvoří snímek obrazovky ({ $shortcut })
 
 ## The below strings are used to capture keydown events so the strings should
 ## not be changed unless the keyboard layout in the locale requires it.
@@ -88,14 +81,10 @@ screenshots-component-copy-key = C
 ##
 
 # This string represents the selection size area
-# "x" here represents "by" (i.e 123 by 456)
-# Variables:
-#   $width (Number) - The width of the selection region in pixels
-#   $height (Number) - The height of the selection region in pixels
-screenshots-overlay-selection-region-size-2 = { $width } x { $height }
-# This string represents the selection size area
 # "×" here represents "by" (i.e 123 by 456)
 # Variables:
 #   $width (Number) - The width of the selection region in pixels
 #   $height (Number) - The height of the selection region in pixels
 screenshots-overlay-selection-region-size-3 = { $width } × { $height }
+screenshots-overlay-preview-face-label =
+    .aria-label = Vybrat tuto oblast

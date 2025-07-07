@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -61,8 +61,8 @@ third-party-button-to-unblock-module = Débloquer ce module
     .title = Actuellement bloqué. Cliquer pour le débloquer.
     .aria-label = Actuellement bloqué. Cliquer pour le débloquer.
 third-party-button-to-unblock-module-disabled = Débloquer ce module (la liste de blocage est actuellement désactivée)
-    .title = Module actuellement marqué comme bloqué, malgré la désactivation de la liste de blocage pour cette exécution de { -brand-short-name }. Cliquer pour le débloquer.
-    .aria-label = Module actuellement marqué comme bloqué, malgré la désactivation de la liste de blocage pour cette exécution de { -brand-short-name }. Cliquer pour le débloquer.
+    .title = Actuellement marqué comme bloqué, bien que la liste de blocage soit désactivée pour cette exécution de { -brand-short-name }. Cliquez pour le débloquer.
+    .aria-label = Actuellement marqué comme bloqué, bien que la liste de blocage soit désactivée pour cette exécution de { -brand-short-name }. Cliquez pour le débloquer.
 third-party-button-expand =
     .title = Afficher les informations détaillées
 third-party-button-collapse =

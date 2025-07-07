@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Tornar o { -brand-short-name } o seu navegador principal?
 default-browser-prompt-message-pin = Manter o { -brand-short-name } na ponta dos seus dedos — torne o mesmo no seu navegador predefinido e fixe-o à sua barra de ferramentas.
+default-browser-prompt-message-pin-msix = Mantenha o { -brand-short-name } sempre à mão — defina-o como o seu navegador predefinido e fixe-o na sua barra de tarefas e no menu Iniciar.
 default-browser-prompt-message-pin-mac = Mantenha o { -brand-short-name } perto dos seus dedos — utilize-o como o seu navegador predefinido e mantenha-o na sua Doca.
+default-browser-prompt-button-primary-set = Definir como navegador predefinido
 default-browser-prompt-button-primary-pin = Tornar o navegador principal
 default-browser-prompt-title-alt = Tornar o { -brand-short-name } no seu navegador predefinido?
 default-browser-prompt-message-alt = Obtenha velocidade, segurança e privacidade sempre que navega.

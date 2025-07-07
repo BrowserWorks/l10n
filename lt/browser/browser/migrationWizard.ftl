@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,7 +27,7 @@ migration-imported-safari-reading-list = Skaitinių sąrašas (iš „Safari“)
 migration-imported-edge-reading-list = Skaitinių sąrašas (iš „Edge“)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 
@@ -63,7 +63,7 @@ migration-passwords-from-file-tsv-filter-title =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 
 ##

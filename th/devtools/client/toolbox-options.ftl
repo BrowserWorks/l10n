@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -93,7 +93,7 @@ options-screenshot-audio-tooltip =
 ## Editor section
 
 # The heading
-options-sourceeditor-label = การกำหนดลักษณะตัวแก้ไข
+options-sourceeditor-label = ค่าปรับแต่งตัวแก้ไข
 options-sourceeditor-detectindentation-tooltip =
     .title = กะประมาณการเยื้องขึ้นอยู่กับเนื้อหาต้นฉบับ
 options-sourceeditor-detectindentation-label = ตรวจสอบการเยื้อง

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -167,6 +167,9 @@ extensions-warning-update-security2 =
     .message = Pemeriksaan keamanan pemutakhiran pengaya telah dinonaktifkan. Pemutakhiran pengaya saat ini memiliki risiko keamanan.
 extensions-warning-update-security-button = Aktifkan
     .title = Aktifkan pemeriksaan keamanan pemutakhiran pengaya
+extensions-warning-imported-addons2 =
+    .message = Selesaikan pemasangan ekstensi yang diimpor ke { -brand-short-name }
+extensions-warning-imported-addons-button = Pasang Ekstensi
 
 ## Strings connected to add-on updates
 
@@ -203,6 +206,10 @@ addon-updates-manual-updates-found = Tampilkan Versi Baru yang Tersedia
 
 addon-install-from-file = Pasang Pengaya dari Berkas…
     .accesskey = B
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Pasang atau Perbarui Pengaya Dari Berkas…
+    .accesskey = P
 addon-install-from-file-dialog-title = Pilih berkas pengaya untuk dipasang
 addon-install-from-file-filter-name = Pengaya
 addon-open-about-debugging = Debug Pengaya
@@ -217,6 +224,9 @@ shortcuts-no-addons = Anda tidak memiliki ekstensi yang aktif.
 shortcuts-no-commands = Ekstensi berikut tidak memiliki pintasan:
 shortcuts-input =
     .placeholder = Ketikkan pintasan
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = Hapus Pintasan
 shortcuts-browserAction2 = Aktifkan tombol bilah alat
 shortcuts-pageAction = Aktifkan tindakan laman
 shortcuts-sidebarAction = Aktifkan/Nonaktifkan bilah samping
@@ -366,6 +376,14 @@ addon-detail-updates-radio-on = Aktif
 addon-detail-updates-radio-off = Nonaktif
 addon-detail-update-check-label = Periksa Versi Baru
 install-update-button = Perbarui
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Diizinkan di jendela pribadi
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -374,12 +392,21 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Jika diizinkan, ekstensi akan memiliki akses ke aktivitas daring Anda saat menjelajah secara pribadi. <a data-l10n-name="learn-more">Pelajari lebih lanjut</a>
 addon-detail-private-browsing-allow = Izinkan
 addon-detail-private-browsing-disallow = Jangan Izinkan
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
 
 ## "sites with restrictions" (internally called "quarantined") are special domains
 ## where add-ons are normally blocked for security reasons.
 
 # Used as a description for the option to allow or block an add-on on quarantined domains.
 addon-detail-quarantined-domains-label = Jalankan pada situs yang dibatasi
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = Jika diizinkan, ekstensi akan memiliki akses ke situs yang dibatasi oleh { -vendor-short-name }. Izinkan hanya jika Anda memercayai ekstensi ini.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Izinkan
+addon-detail-quarantined-domains-disallow = Jangan Izinkan
 # aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
 addon-detail-group-label-quarantined-domains =
     .aria-label = { addon-detail-quarantined-domains-label }
@@ -390,14 +417,18 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name } hanya menyarankan ekstensi yang memenuhi standar keamanan dan kinerja kami.
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Ekstensi resmi yang dibuat oleh BrowserWorks, memenuhi standar keamanan dan kinerja
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Ekstensi ini telah ditinjau untuk memenuhi standar keamanan dan kinerja kami
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Ekstensi resmi yang dibuat oleh BrowserWorks, memenuhi standar keamanan dan kinerja
 
 ##
 
@@ -405,6 +436,7 @@ available-updates-heading = Versi Baru yang Tersedia
 recent-updates-heading = Versi Terkini
 release-notes-loading = Memuat…
 release-notes-error = Maaf, galat terjadi ketika memuat catatan rilis.
+addon-permissions-empty2 = Ekstensi ini tidak memerlukan izin apa pun.
 addon-permissions-empty = Ekstensi ini tidak memerlukan izin apa pun
 addon-permissions-required = Izin yang diperlukan untuk fungsi inti:
 addon-permissions-optional = Izin opsional untuk fungsi tambahan:
@@ -414,8 +446,8 @@ recommended-themes-heading = Tema yang Disarankan
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Berikan kemampuan berikut untuk <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Merasa kreatif? <a data-l10n-name="link">Buat tema Anda sendiri dengan Waterfox Color.</a>
 
 ## Page headings
@@ -454,10 +486,24 @@ details-notification-unsigned-and-disabled-link = Informasi Lebih Lanjut
 details-notification-unsigned = { $name } tidak dapat diverifikasi untuk digunakan di { -brand-short-name }. Lanjutkan dengan hati-hati.
 details-notification-unsigned2 =
     .message = { $name } tidak dapat diverifikasi untuk digunakan di { -brand-short-name }. Lanjutkan dengan hati-hati.
+details-notification-hard-blocked-extension =
+    .message = Ekstensi ini diblokir karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan.
+details-notification-hard-blocked-other =
+    .message = Pengaya ini diblokir karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan.
 details-notification-unsigned-link = Informasi Lebih Lanjut
 details-notification-blocked = { $name } telah dimatikan karena masalah keamanan atau kestabilan.
 details-notification-blocked2 =
     .message = { $name } telah dimatikan karena masalah keamanan atau kestabilan.
+details-notification-blocked-link2 = Lihat Detail
+details-notification-soft-blocked-extension-disabled =
+    .message = Ekstensi ini dibatasi karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan. Anda dapat mengaktifkannya, tetapi ini mungkin berisiko.
+details-notification-soft-blocked-extension-enabled =
+    .message = Ekstensi ini melanggar kebijakan BrowserWorks. Menggunakannya mungkin berisiko.
+details-notification-soft-blocked-other-disabled =
+    .message = Pengaya ini dibatasi karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan. Anda dapat mengaktifkannya, tetapi ini mungkin berisiko.
+details-notification-soft-blocked-other-enabled =
+    .message = Pengaya ini melanggar kebijakan BrowserWorks. Menggunakannya mungkin berisiko.
+details-notification-softblocked-link2 = Lihat Detail
 details-notification-blocked-link = Informasi Lebih Lanjut
 details-notification-softblocked = { $name } telah dikenali mengakibatkan masalah keamanan atau kestabilan.
 details-notification-softblocked2 =
@@ -475,3 +521,10 @@ plugins-openh264-name = Codec Video OpenH264 disediakan oleh Cisco Systems, Inc.
 plugins-openh264-description = Plugin ini diinstal secara otomatis oleh BrowserWorks untuk memenuhi spesifikasi WebRTC dan untuk mengaktifkan panggilan WebRTC dengan perangkat yang menggunakan codec video H.264. Kunjungi http://www.openh264.org/ untuk melihat kode sumber codec dan mempelajari implementasinya lebih lanjut.
 plugins-widevine-name = Modul Dekripsi Konten Widevine disediakan oleh Google Inc.
 plugins-widevine-description = Plugin ini memungkinkan pemutaran media terenkripsi sesuai dengan spesifikasi Encrypted Media Extensions. Media terenkripsi biasanya digunakan oleh situs untuk perlindungan terhadap penyalinan konten media premium. Kunjungi https://www.w3.org/TR/encrypted-media/ untuk informasi lebih lanjut tentang Encrypted Media Extensions.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+

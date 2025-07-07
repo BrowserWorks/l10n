@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = Stopp faner og avslutt prosessen
+about-processes-kill-process =
+    .title = Avslutt prosessen
 about-processes-shutdown-tab =
     .title = Lat att fane
 # Profiler icons
@@ -51,6 +53,7 @@ about-processes-remote-sandbox-broker-process = Remote Sandbox Broker ({ $pid })
 about-processes-fork-server-process = Forkserver ({ $pid })
 about-processes-preallocated-process = Førehandstildelt ({ $pid })
 about-processes-utility-process = Verktøy ({ $pid })
+about-processes-inference-process = Inferens ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -124,7 +127,7 @@ about-processes-utility-actor-audio-decoder-generic = Generisk lyd-dekodar
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media Audio-dekodar
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework Audio-dekodar
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows-verktøy
 about-processes-utility-actor-windows-file-dialog = Windows fildialog

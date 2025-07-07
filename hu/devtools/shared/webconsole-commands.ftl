@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,13 +22,3 @@ webconsole-commands-usage-unblock =
     Hálózati kérések blokkolásának megszüntetése
     
       Csak egy WEBCÍM argumentumot fogad, amely megegyezik a :block parancsnak előzőleg átadott karakterlánccal.
-# Usage string for :trace command
-webconsole-commands-usage-trace =
-    :trace
-    
-    Be- és kikapcsolja a JavaScript nyomkövetőt
-    
-      A következő argumentumokat támogatja:
-        --logMethod lehet „console” a webkonzolra történő naplózáshoz (az alapértelmezett), vagy „stdout” a szabványos kimenetre történő naplózáshoz,
-        --prefix nem kötelező karakterlánc, amely az összes nyomkövetési naplósor elé lesz írva,
-        --help vagy --usage ezen üzenet megjelenítése.

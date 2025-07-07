@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ chooser-dialog-remember = ใช้แอปพลิเคชันนี้เ
 chooser-dialog-remember-extra =
     { PLATFORM() ->
         [windows] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในตัวเลือกของ { -brand-short-name }
-       *[other] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในการกำหนดลักษณะของ { -brand-short-name }
+       *[other] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในค่าปรับแต่งของ { -brand-short-name }
     }
 choose-other-app-description = เลือกแอปพลิเคชันอื่น
 choose-app-btn =

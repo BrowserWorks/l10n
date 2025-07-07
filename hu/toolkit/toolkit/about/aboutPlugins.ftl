@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = A bővítményekről
 installed-plugins-label = Telepített bővítmények
 no-plugins-are-installed-label = Nincsenek telepített bővítmények
 deprecation-description = Hiányzik valami? Néhány bővítményt már nem támogatott. <a data-l10n-name="deprecation-link">További tudnivalók</a>
-deprecation-description2 =
-    .message = Hiányzik valami? Néhány bővítményt már nem támogatott.
 
 ## The information of plugins
 ##

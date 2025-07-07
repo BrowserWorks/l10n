@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = Toppen, du har { -brand-short-name }
 return-to-amo-addon-title = Låt oss nu hämta <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Lägg till tillägget
 return-to-amo-add-theme-label = Lägg till temat
+return-to-amo-theme-install-complete-label = Tema installerat
+return-to-amo-extension-install-complete-label = Tillägget installerat
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Framsteg: steg { $current } av { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Stäng av animationer
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Logga in
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importera från { $previous }
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = Fortsätt med { $appLanguage }
 onboarding-live-language-secondary-cancel-download = Avbryt
 onboarding-live-language-skip-button-label = Hoppa över
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -173,35 +175,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = Ställ in { -brand-sho
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importera från tidigare webbläsare
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Öppna upp ett fantastiskt internet
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = Starta { -brand-short-name } från var som helst med ett enda klick. Varje gång du gör det väljer du en mer öppen och oberoende webb.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Behåll { -brand-short-name } i Dock
        *[other] Fäst { -brand-short-name } i aktivitetsfältet
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = Fäst { -brand-short-name } i aktivitetsfältet och startmenyn
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Börja med en webbläsare som stöds av en ideell organisation. Vi försvarar din integritet medan du surfar runt på webben.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = Tack för att du älskar { -brand-product-name }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Starta ett hälsosammare internet från var som helst med ett enda klick. Vår senaste uppdatering är full av nya saker som vi tror att du kommer att älska.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Använd en webbläsare som skyddar din integritet medan du surfar runt på webben. Vår senaste uppdatering är full av saker som du älskar.
 mr2022-onboarding-existing-pin-checkbox-label = Lägg även till { -brand-short-name } privat surfning
 
@@ -216,14 +220,16 @@ mr2022-onboarding-set-default-subtitle = Använd en webbläsare som stöds av en
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = Vår senaste version är byggd runt dig, vilket gör det enklare än någonsin att surfa runt på webben. Den är fullproppad med funktioner som vi tror att du kommer att älska.
 mr2022-onboarding-get-started-primary-button-label = Konfigurera på några sekunder
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Blixtsnabb konfiguration
 mr2022-onboarding-import-subtitle = Ställ in { -brand-short-name } som du vill. Lägg till dina bokmärken, lösenord och mer från din gamla webbläsare.
@@ -275,7 +281,7 @@ mr2022-onboarding-mobile-download-cta-text = Skanna QR-koden för att hämta { -
 mr2022-onboarding-no-mobile-download-cta-text = Skanna QR-koden för att skaffa { -brand-product-name } för mobil.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Få privat surffrihet med ett klick
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Inga sparade kakor eller historik, direkt från ditt skrivbord. Surfa som om ingen tittar.
@@ -335,6 +341,14 @@ onboarding-device-migration-subtitle = Logga in på ditt { -fxaccount-brand-name
 onboarding-device-migration-subtitle2 = Logga in på ditt konto för att ta med dig dina bokmärken, lösenord och historik på din nya enhet.
 onboarding-device-migration-primary-button-label = Logga in
 
+## Add-ons Picker screen
+
+amo-picker-title = Anpassa { -brand-short-name }
+amo-picker-subtitle = Tillägg är som appar för din webbläsare och de låter dig skydda lösenord, ladda ner videor, hitta erbjudanden, blockera irriterande annonser, ändra hur din webbläsare ser ut och mycket mer.
+amo-picker-install-button-label = Lägg till i { -brand-short-name }
+amo-picker-install-complete-label = Installerad
+amo-picker-collection-link = Utforska fler tillägg
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -346,6 +360,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = När du synkroniserar
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } tar hand om dig
 onboarding-gratitude-security-and-privacy-subtitle = Tack för att du använder { -brand-short-name }, med stöd av BrowserWorks. Med ditt stöd arbetar vi för att göra internet säkrare och mer tillgängligt för alla.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Synkronisera din data mellan enheter
+onboarding-sign-up-description = Registrera dig för ett konto så lagras all din viktiga information — lösenord, bokmärken och mer — säkert och tillgänglig när du loggar in på vilken enhet som helst.
+onboarding-sign-up-button = Registrera dig eller logga in
+onboarding-sign-up-secondary-button = Börja surfa
 
 ## New user time and familiarity survey strings
 
@@ -365,3 +384,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = Jag är ny
 onboarding-new-user-survey-familiarity-based-option-2 = Jag har använt det en del
 onboarding-new-user-survey-familiarity-based-option-3 = Jag är mycket bekant med det
 onboarding-new-user-survey-familiarity-based-option-4 = Jag använde det tidigare, men det var ett tag sedan
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Berätta var du vill ha dina flikar
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Växla när du vill i sidofältsinställningarna.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Dina flikar, på ditt sätt
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Vill du ha många flikar öppna? Prova dina flikar på sidan för en mer strömlinjeformad vy. Eller behåll det klassiska med flikar på toppen. Byt när som helst.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Välj din fliklayout
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = För en strömlinjeformad vy som kan hjälpa dig att hålla fokus, prova flikarna på sidan. Eller behåll det klassiska med flikar på toppen. Byt när som helst.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Flikar på sidan
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Flikar på toppen
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Vertikala flikar är här
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Introducerar vertikala flikar
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Prova dina flikar på sidan. Växla när du vill i sidofältsinställningarna.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Prova vertikala flikar
+onboarding-flair-text = Nytt!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Beåll horisontella flikar
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = Ett webbläsarfönster som visar flikar längs sidan av skärmen som en del av sidofältet i { -brand-shorter-name }.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = Ett webbläsarfönster som visar flikar längs sidan av skärmen som en del av sidofältet i { -brand-shorter-name }.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Ett webbläsarfönster som visar flikar längst upp.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Ett webbläsarfönster som visar flikar längst upp.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Testa en AI chatbot i sidofältet
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Sammanfatta webbinnehåll, brainstorma idéer, skapa utkast — allt när du surfar. Välj bland flera leverantörer. Byt när som helst. <a data-l10n-name="learn-more">Läs mer</a>
+onboarding-genai-sidebar-primary-button = Välj en chatbot
+onboarding-genai-sidebar-secondary-button = Börja surfa
+
+## New user onboarding checklist
+
+onboarding-checklist-title = Slutför konfigureringen av { -brand-short-name }
+onboarding-checklist-subtitle = Slutför de här stegen för att få ut det mesta av din surfupplevelse.
+onboarding-checklist-set-default = Ange { -brand-short-name } som standardwebbläsare
+onboarding-checklist-pin = Fäst { -brand-short-name } i aktivitetsfältet
+onboarding-checklist-import = Importera från tidigare webbläsare
+onboarding-checklist-extension = Lägg till ett tillägg
+onboarding-checklist-sign-up = Registrera dig eller logga in på ditt konto
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Testa flikgrupper för mindre röra, mer fokus
+tab-groups-onboarding-feature-callout-subtitle = Bli organiserad genom att dra en flik ovanpå en annan för att skapa din första grupp.
+tab-groups-onboarding-create-group-title-2 = Hitta dina flikgrupper här när som helst.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Hitta dina grupper genom att söka efter dem i adressfältet.
+tab-groups-onboarding-saved-groups-title-2 = När du stänger en flikgrupp kan du öppna den här igen när som helst.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Hitta dina stängda grupper genom att söka efter dem i adressfältet.
+tab-groups-onboarding-session-restore-title = Återöppna dina flikgrupper här när som helst.
+tab-groups-onboarding-dismiss = Ok
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = Säg hej till { -brand-product-name } profiler
+multi-profile-spotlight-body = Växla enkelt mellan att surfa för arbete och nöje. Profiler håller din webbinformation, inklusive sökhistorik och lösenord, helt åtskilda så att du kan hålla ordning.
+multi-profile-spotlight-cta = Skapa en profil
+multi-profile-callout-title = Skapa olika profiler för arbete och underhållning
+multi-profile-callout-subtitle = Profiler låter dig hålla din webbinformation, som sökhistorik och lösenord, helt åtskilda.
+multi-profile-callout-cta = Skapa en profil
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Ladda ner, synkronisera och kör!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Skanna QR-koden för att ladda ner { -brand-product-name } för mobil. När du har installerat den, välj "Synkronisera till mobil" för att komma åt dina lösenord, bokmärken och mer när du är på språng.
+dismiss-button-label = Ignorera
+sync-to-mobile-button-label = Synka till mobil
+desktop-to-mobile-qr-code-alt =
+    .aria-label = QR-kod för att ladda ner { -brand-product-name } för mobil

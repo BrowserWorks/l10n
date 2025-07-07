@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -71,6 +71,19 @@ protections-panel-content-blocking-fingerprinters-label = Nettlesaravtrykk
 protections-panel-blocking-label = Blokkert
 protections-panel-not-blocking-label = Tillate
 protections-panel-not-found-label = Ingen oppdaga
+
+## Smartblock strings
+
+protections-panel-smartblock-desc-label = { -brand-short-name } blokkerer sporings-innhald medan du er på denne nettstaden, med mindre du tillèt det.
+# Variables
+#  $trackername (String): the name of the tracker that is currently being blocked.
+protections-panel-smartblock-blocking-toggle =
+    .label = Tillat { $trackername }
+#  $trackername (String): the name of the tracker that is currently being blocked.
+smartblock-placeholder-title = { $trackername } sporarar og innhald blokkert
+smartblock-placeholder-desc = { -brand-short-name }-innstillingane dine sperra dette innhaldet frå å spore deg på tvers av nettstadar eller bli brukt til annonser.
+#  $websitehost (String): host of website with blocked content.
+smartblock-placeholder-button-text = Tillat på { $websitehost }
 
 ##
 

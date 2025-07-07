@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ about-private-browsing-pin-promo-link-text =
         [macos] Διατήρηση στο Dock
        *[other] Καρφίτσωμα στη γραμμή εργασιών
     }
-about-private-browsing-pin-promo-title = Χωρίς αποθήκευση cookie ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μη σας παρακολουθεί κανείς.
+about-private-browsing-pin-promo-title = Χωρίς αποθήκευση cookie ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μην σας παρακολουθεί κανείς.
 
 ## Strings used in a promotion message for cookie banner reduction
 

@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Send nettsider eit «Ikkje spor»-signal om at du ikkje vil bli spora
+do-not-track-removal = Vi støtter ikkje lenger «Ikkje spor»-signalet
 do-not-track-description2 =
     .label = Send nettstadar ein «Ikkje spor»-førespurnad
     .accesskey = d
@@ -98,7 +99,7 @@ extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $
 extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrollerer denne innstillinga.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> krev innhaldsfaner.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> krev behaldarfaner.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrollerer denne innstillinga.
@@ -136,7 +137,8 @@ startup-restore-windows-and-tabs =
 windows-launch-on-login =
     .label = Opne { -brand-short-name } automatisk når datamaskina di startar opp
     .accesskey = O
-windows-launch-on-login-disabled = Denne innstillinga er deaktivert i Windows. For å endre, gå til <a data-l10n-name="startup-link">Oppstartsapper</a> i Systeminnstillingar.
+windows-launch-on-login-disabled = Denne innstillinga er deaktivert i Windows. For å endre, gå til <a data-l10n-name="startup-link">Appar > Oppstart</a> i Systeminnstillingar.
+windows-launch-on-login-profile-disabled = Aktiver denne innstillinga ved å merke av for «{ profile-manager-use-selected.label }» i «Vel brukarprofil»-vindauget.
 startup-restore-warn-on-quit =
     .label = Åtvar meg når eg avsluttar nettlesaren
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = Importer bokmerke, passord, historikk o
 preferences-data-migration-button =
     .label = Importer data
     .accesskey = m
+preferences-profiles-header = Profilar
+preferences-manage-profiles-description = Kvar profil har eigne nettlesardata og innstillingar, medrekna historikk, passord og meir.
+preferences-manage-profiles-learn-more = Les meir
+preferences-manage-profiles-button =
+    .label = Handsam profilar
 tabs-group-header = Faner
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab vekslar mellom faner i nyleg brukt-rekkjefølgje
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Opne lenker i faner i staden for nye vindauge
     .accesskey = l
+ask-on-close-multiple-tabs =
+    .label = Spør før attlating av fleire faner
+    .accesskey = S
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Spør før du avsluttar med { $quitKey }
+    .accesskey = a
 confirm-on-close-multiple-tabs =
     .label = Stadfest før attlating av fleire faner
     .accesskey = S
@@ -174,26 +192,26 @@ show-tabs-in-taskbar =
     .label = Vis førehandsvising av faner i Windows-oppgåvelinja
     .accesskey = s
 browser-containers-enabled =
-    .label = Aktiver innhaldsfaner
+    .label = Aktiver behaldarfaner
     .accesskey = k
 browser-containers-learn-more = Les meir
 browser-containers-settings =
     .label = Innstillingar…
     .accesskey = I
-containers-disable-alert-title = Late att alle innhaldsfaner?
+containers-disable-alert-title = Late att alle behaldarfaner?
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
 
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Dersom du deaktiverer innhaldsfaner no, vil { $tabCount } innhaldsfane bli stengt. Er du sikker på at du vil deaktivere innhaldsfaner?
-       *[other] Dersom du deaktiverer innhaldsfaner no, vil { $tabCount } innhaldsfaner bli stengt. Er du sikker på at du vil deaktivere innhaldsfaner?
+        [one] Dersom du deaktiverer behaldarfaner no, vil { $tabCount } innhaldsfane bli stengt. Er du sikker på at du vil deaktivere behaldarfaner?
+       *[other] Dersom du deaktiverer behaldarfaner no, vil { $tabCount } behaldarfaner bli stengt. Er du sikker på at du vil deaktivere behaldarfaner?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
         [one] Lat att { $tabCount } innhaldsfane
-       *[other] Lat att { $tabCount } innhaldsfaner
+       *[other] Lat att { $tabCount } behaldarfaner
     }
 
 ##
@@ -210,8 +228,18 @@ containers-remove-alert-msg =
 containers-remove-ok-button = Fjern denne behaldaren
 containers-remove-cancel-button = Ikkje fjern denne behaldaren
 settings-tabs-show-image-in-preview =
-    .label = Vis ei førehandsvising av eit bilde når du held musepeikaren på ei fane
+    .label = Vis ei førehandsvising når du held musepeikaren over ei fane
     .accessKey = f
+browser-layout-header = Nettlesarutforming
+browser-layout-horizontal-tabs =
+    .label = Horisontale faner
+browser-layout-horizontal-tabs-desc = Vis øvst i nettlesaren
+browser-layout-vertical-tabs =
+    .label = Vertikale faner
+browser-layout-vertical-tabs-desc = Vis på sida, i sidestolpen
+browser-layout-show-sidebar =
+    .label = Vis sidestolpe
+browser-layout-show-sidebar-desc = Få rask tilgang til bokmerke, faner frå mobilen din, AI-chatbotar og meir utan å forlate hovudvisinga.
 
 ## General Section - Language & Appearance
 
@@ -235,6 +263,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Kontrastinnstillingane dine overstyrer utsjånaden til nettstaden.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Fargevala dine overstyrer utsjånaden til nettstaden. <a data-l10n-name="colors-link">Handsam fargar</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -243,6 +275,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Handsam { -brand-short-name }-tema i <a data-l10n-name="themes-link">Utvidingar og tema</a>
+preferences-contrast-control-header = Kontrastkontroll
+preferences-contrast-control-description = Nettstadar har ei rekkje forgrunns- og bakgrunnsfargar. Konfigurer { -brand-short-name } for å bruke dei same fargane på tvers av nettstadar for forbetra lesbarheit.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatisk (bruk systeminnstillingar)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Av
+    .accesskey = A
+preferences-contrast-control-custom =
+    .label = Tilpassa
+    .accesskey = T
 preferences-colors-header = Fargar
 preferences-colors-description = Overstyr { -brand-short-name } sine standardfargar for tekst, nettsidebakgrunnar og lenker.
 preferences-colors-manage-button =
@@ -318,6 +361,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Spør alltid om kvar eg vil lagre filer
     .accesskey = a
+download-private-browsing-delete =
+    .label = Slett filer som er lasta ned i privat nettlesing når alle private vindauge er attlatne
+    .accesskey = S
 applications-header = Program
 applications-description = Vel korleis { -brand-short-name } handsamar filer du hentar frå nettet eller programma du brukar når du surfar.
 applications-filter =
@@ -408,7 +454,7 @@ play-drm-content-learn-more = Les meir
 update-application-title = { -brand-short-name }-oppdateringar
 update-application-description = Hald { -brand-short-name } oppdatert for beste yting, stabilitet og sikkerheit.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Versjon { $version } <a data-l10n-name="learn-more">Kva er nytt</a>
 update-history =
     .label = Vis oppdateringshistorikk…
@@ -472,6 +518,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Nettlesing
+browsing-group-label =
+    .aria-label = Nettlesing
 browsing-use-autoscroll =
     .label = Bruk automatisk rulling
     .accesskey = B
@@ -556,7 +604,7 @@ choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } Innhald
 home-prefs-content-description2 = Velg kva for innhald som du vil ha på { -firefox-home-brand-name }-skjermen din.
@@ -568,8 +616,7 @@ home-prefs-shortcuts-description = Nettstadar du lagrar eller besøkjer
 home-prefs-shortcuts-by-option-sponsored =
     .label = Sponsa snarvegar
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Tilrådd av { $provider }
@@ -580,7 +627,7 @@ home-prefs-recommended-by-description-generic = Eineståande innhald utvalt av {
 
 ##
 
-home-prefs-recommended-by-learn-more = Korleis det fungerar
+home-prefs-recommended-by-learn-more = Korleis det fungerer
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsa historiar
 home-prefs-recommended-by-option-recent-saves =
@@ -607,6 +654,14 @@ home-prefs-weather-header =
     .label = Vêr
 home-prefs-weather-description = Vêrmeldinga i dag, i korte trekk
 home-prefs-weather-learn-more-link = Les meir
+home-prefs-trending-search-header =
+    .label = Populære søk
+home-prefs-trending-search-description = Populære og ofte søkte emne
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Støtt { -brand-product-name }
+home-prefs-mission-message = Sponsorane våre støttar oppdraget vårt om å byggje eit betre internett
+home-prefs-mission-message-learn-more-link = Finn ut korleis
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -641,6 +696,10 @@ search-show-suggestions-url-bar-option =
     .label = Vis søkjeforslag i adresselinja
     .accesskey = l
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Vis søkjeord i adressefeltet på resultatsidene
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -671,6 +730,9 @@ search-remove-engine =
 search-add-engine =
     .label = Legg til
     .accesskey = L
+search-edit-engine =
+    .label = Rediger
+    .accesskey = R
 search-find-more-link = Finn fleire søkjemotorar
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -679,12 +741,19 @@ search-keyword-warning-title = Kopiere stikkord
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Du har valt eit nøkkelord som allereie er i bruk av «{ $name }». Vel eit anna nøkkelord.
 search-keyword-warning-bookmark = Du har valt eit nøkkelord som allereie vert brukt av eit bokmerke. Vel eit anna nøkkelord.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Det finst allereie ein søkjemotor med namnet «{ $name }». Vel eit anna namn.
+remove-engine-confirmation = Er du sikker på at du vil fjerne denne søkjemotoren?
+remove-engine-remove = Fjern
+remove-addon-engine-alert = For å fjerne denne søkjemotoren, fjern det tilknytte tillegget.
 
 ## Containers Section
 
 containers-back-button2 =
     .aria-label = Tilbake til innstillingar
-containers-header = Innhaldsfaner
+containers-header = Behaldarfaner
 containers-add-button =
     .label = Legg til ny behaldar
     .accesskey = L
@@ -696,7 +765,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Fjern
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med deg nettet
@@ -714,7 +783,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Last ned Waterfox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller  <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med mobileininga di.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
@@ -732,7 +801,7 @@ sync-manage-account = Handsam kontoen
     .accesskey = k
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } er ikkje stadfesta.
 sync-signedin-login-failure = Logg inn for å kople til på nytt { $email }
@@ -783,6 +852,9 @@ sync-currently-syncing-creditcards = Kredittkort
 sync-currently-syncing-payment-methods = Betalingsmåtar
 sync-currently-syncing-addons = Tillegg
 sync-currently-syncing-settings = Innstillingar
+sync-manage-options =
+    .label = Handsam synkronisering…
+    .accesskey = H
 sync-change-options =
     .label = Endre…
     .accesskey = E
@@ -835,6 +907,13 @@ sync-engine-settings =
     .label = Innstillingar
     .tooltiptext = Generelle, personvern- og sikkerheitsinnstillingar du har endra
     .accesskey = n
+sync-choose-what-to-sync-dialog4 =
+    .title = Handsam kva som skal synkroniserast på dei tilkopla einingane dine
+    .style = min-width: 36em;
+    .buttonlabelaccept = Lagre
+    .buttonaccesskeyaccept = L
+    .buttonlabelextra2 = Kople frå…
+    .buttonaccesskeyextra2 = f
 
 ## The device name controls.
 
@@ -855,7 +934,7 @@ sync-connect-another-device = Kople til ei anna eining
 
 sync-verification-sent-title = Stadfesting sendt
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = Ei stadfestingslenke er sendt til { $email }.
 sync-verification-not-sent-title = Klarte ikkje å sende stadfesting
 sync-verification-not-sent-body = Vi klarte ikkje å sende ei stadfesting på e-post no, prøv på nytt seinare.
@@ -950,12 +1029,12 @@ windows-passkey-settings-label = Handsam passnøkkel i systeminnstillingane
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen din for Windows for å lage eit hovudpassord. Dette vil gjere kontoen din tryggare.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = lag eit hovudpassord
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] endre innstillingane for betalingsmåtar
@@ -974,7 +1053,7 @@ autofill-payment-methods-checkbox-message = Lagre og fyll inn betalingsmåtar
     .accesskey = L
 autofill-payment-methods-checkbox-submessage = Inkluderer kreditt- og debetkort
     .accesskey = I
-autofill-saved-payment-methods-button = Lagra betaslingsmetodar
+autofill-saved-payment-methods-button = Lagra betalingsmetodar
     .accesskey = a
 # This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox = Krev einingsinnlogging for å fylle ut og behandle betalingsmåtar
@@ -986,12 +1065,12 @@ history-header = Historikk
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } vil
     .accesskey = v
 history-remember-option-all =
@@ -1086,6 +1165,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Adresselinje
 addressbar-suggest = Når du brukar adresselinja, føreslå
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Adresselinje — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Vel typen forslag som skal visast i adresselinja.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Les meir
 addressbar-locbar-history-option =
     .label = Nettlesarhistorikk
     .accesskey = h
@@ -1115,7 +1201,21 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 addressbar-locbar-showrecentsearches-option =
     .label = Vis nylege søk
     .accesskey = V
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Vis populære søkjeforslag
+    .accesskey = V
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Forslag frå { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Få forslag frå nettet relatert til søkinga di.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Forslag frå sponsorar
+addressbar-locbar-suggest-sponsored-desc = Støtt { -brand-short-name } med sporadiske sponsa forslag.
 addressbar-quickactions-learn-more = Les meir
+addressbar-dismissed-suggestions-label = Avviste forslag
+addressbar-restore-dismissed-suggestions-description = Gjenopprett avviste forslag frå sponsorar og { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Bygg oppatt
 
 ## Privacy Section - Content Blocking
 
@@ -1230,7 +1330,7 @@ permissions-location-settings =
     .accesskey = t
 permissions-xr = Virtuell røyndom
 permissions-xr-settings =
-    .label = Innstillingear…
+    .label = Innstillingar…
     .accesskey = s
 permissions-camera = Kamera
 permissions-camera-settings =
@@ -1278,17 +1378,42 @@ permissions-addon-exceptions =
 collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-header2 = Datainnsamling og bruk for { -brand-short-name }
     .searchkeywords = telemetri
+preferences-collection-description = Vi strevar etter å gi deg valmoglegheiter og samlar berre inn minimalt med data som er nødvendig for å forbetre { -brand-product-name } for alle.
+preferences-collection-privacy-notice = Vis personvernerklæring
+preferences-across-profiles = Desse innstillingane gjeld for alle { -brand-product-name }-profilane på denne eininga.
+preferences-view-profiles = VIs alle profilar
 collection-description = Vi prøver alltid å gje deg val og samlar inn berre det vi treng for å levere og forbetre { -brand-short-name } for alle. Vi ber alltid om løyve før vi får personopplysningar.
 collection-privacy-notice = Personvernpraksis
 collection-health-report-telemetry-disabled = Du tillèt ikkje lenger { -vendor-short-name } å samle inn teknisk- og interaksjonsdata. Alle tidlegare data vil bli sletta innan 30 dagar.
 collection-health-report-telemetry-disabled-link = Les meir
+collection-usage-ping =
+    .label = Send ping for dagleg bruk til { -vendor-short-name }
+    .accesskey = e
+collection-usage-ping-description = Dette hjelper { -vendor-short-name } med å berekne aktive brukarar.
+collection-health-report2 =
+    .label = Send tekniske data og data om bruk til { -vendor-short-name }
+    .accesskey = e
 collection-health-report =
     .label = Tillat { -brand-short-name } å sende tekniske data og data for bruk til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les meir
+collection-health-report-description = Dette hjelper oss med å forbetre { -brand-product-name }-funksjonar, yting og stabilitet.
+collection-studies2 =
+    .label = Installer og køyr studium
+collection-studies-description = Prøv nye funksjonar og idéar før dei blir tilgjengelege for alle.
 collection-studies =
     .label = Tillat { -brand-short-name } å installere og køyre studium
 collection-studies-link = Vis { -brand-short-name }-studium
+addon-recommendations2 =
+    .label = Tillat personleg tilpassa utvidingstilrådingar
+addon-recommendations-description = Få utvidingstilrådingar for å forbetre nettlesaropplevinga di.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Datarapportering er deaktivert for denne byggekonfigurasjonen.
+collection-backlogged-crash-reports2 =
+    .label = Send inn krasjrapportar automatisk
+    .accesskey = k
+collection-backlogged-crash-reports-description = Dette hjelper { -vendor-short-name } med å diagnostisere og løyse problem med nettlesaren. Rapportar kan innehalde personlege eller sensitive data.
 addon-recommendations =
     .label = Tillat { -brand-short-name } å kome med tilpassa utvidingstilrådingar
 addon-recommendations-link = Les meir
@@ -1356,12 +1481,17 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } er i ferd med å 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Berre HTTPS-modus
+httpsonly-description3 = Tillèt berre sikre tilkoplingar til nettstadar. { -brand-short-name } vil spørje før du koplar til på ein usikker måte.
+httpsonly-learn-more2 = Korleis Berre-HTTPS fungerer
 httpsonly-description = HTTPS gir eit trygt, kryptert samband mellom { -brand-short-name } og nettstadane du besøkjer. Dei fleste nettstadar støttar HTTPS, og dersom berre HTTPS-modus er slått på, vil { -brand-short-name } oppgradere alle tilkoplingar til HTTPS.
 httpsonly-learn-more = Les meir
 httpsonly-radio-enabled =
     .label = Slå på berre HTTPS-modus i alle vindauge
 httpsonly-radio-enabled-pbm =
     .label = Slå på berre HTTPS-modus kun i private vindauge
+httpsonly-radio-disabled3 =
+    .label = Ikkje slå på Berre-HTTPS-modus
+    .description = { -brand-short-name } kan framleis oppgradere nokre tilkoplingar
 httpsonly-radio-disabled =
     .label = Ikkje slå på berre HTTPS-modus
 
@@ -1390,7 +1520,7 @@ preferences-doh-group-message2 = Aktiver DNS-over-HTTPS med:
 preferences-doh-expand-section =
     .tooltiptext = Meir informasjon
 preferences-doh-setting-default =
-    .label = Standard vern
+    .label = Standardvern
     .accesskey = S
 preferences-doh-default-desc = { -brand-short-name } avgjer når sikker DNS skal brukast for å ta vare på personvernet ditt.
 preferences-doh-default-detailed-desc-1 = Bruk sikker DNS i regionar der det er tilgjengeleg

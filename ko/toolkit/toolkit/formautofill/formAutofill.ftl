@@ -1,16 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = 저장된 결제 방법 정보 이용
 autofill-use-payment-method-os-prompt-windows = { -brand-short-name }가 저장된 결제 방법 정보를 사용하려고 합니다. 아래 Windows 계정에 대한 접근을 확인하세요.
 autofill-use-payment-method-os-prompt-other = { -brand-short-name }가 저장된 결제 방법 정보를 사용하려고 합니다.
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = 저장된 결제 방법 정보 표시
 autofill-edit-payment-method-os-prompt-windows = { -brand-short-name }가 저장된 결제 방법 정보를 표시하려고 합니다. 아래 Windows 계정에 대한 접근을 확인하세요.
@@ -81,3 +81,6 @@ autofill-category-name = 이름
 autofill-category-organization = 조직
 autofill-category-tel = 전화
 autofill-category-email = 이메일
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = { -brand-short-name } 사이트가 안전하지 않은 사이트로 감지되었습니다. 양식 자동 채우기가 일시적으로 비활성화됩니다.

@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = لسان جديد
 newtab-settings-button =
     .title = خصص صفحة اللسان الجديد
+newtab-customize-panel-icon-button =
+    .title = خصّص هذه الصفحة
+newtab-customize-panel-icon-button-label = خصّص
+newtab-personalize-settings-icon-label =
+    .title = خصّص صفحة اللسان الجديد
+    .aria-label = إعدادات
+newtab-settings-dialog-label =
+    .aria-label = الإعدادات
 newtab-personalize-icon-label =
     .title = خصّص صفحة اللسان الجديد
     .aria-label = خصّص صفحة اللسان الجديد
 newtab-personalize-dialog-label =
     .aria-label = خصّص
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -22,14 +32,14 @@ newtab-search-box-search-button =
     .aria-label = ابحث
 # Variables:
 #   $engine (string) - The name of the user's default search engine
-newtab-search-box-handoff-text = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
+newtab-search-box-handoff-text = ‫ابحث ب { $engine } أو أدخِل عنوانا
 newtab-search-box-handoff-text-no-engine = ابحث أو أدخِل عنوانا
 # Variables:
 #   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-input =
-    .placeholder = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
-    .title = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
-    .aria-label = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
+    .placeholder = ‫ابحث ب { $engine } أو أدخِل عنوانا
+    .title = ‫ابحث ب { $engine } أو أدخِل عنوانا
+    .aria-label = ‫ابحث ب { $engine } أو أدخِل عنوانا
 newtab-search-box-handoff-input-no-engine =
     .placeholder = ابحث أو أدخِل عنوانا
     .title = ابحث أو أدخِل عنوانا
@@ -45,6 +55,7 @@ newtab-topsites-add-search-engine-header = أضِف محرك بحث
 newtab-topsites-add-shortcut-header = اختصار جديد
 newtab-topsites-edit-topsites-header = حرّر الموقع الشائع
 newtab-topsites-edit-shortcut-header = حرّر الاختصار
+newtab-topsites-add-shortcut-label = أضِف اختصارًا
 newtab-topsites-title-label = العنوان
 newtab-topsites-title-input =
     .placeholder = أدخل عنوانًا
@@ -108,6 +119,21 @@ newtab-menu-save-to-pocket = احفظ في { -pocket-brand-name }
 newtab-menu-delete-pocket = احذف من { -pocket-brand-name }
 newtab-menu-archive-pocket = أرشِف في { -pocket-brand-name }
 newtab-menu-show-privacy-info = رُعاتنا الرسميّون وخصوصيّتك
+newtab-menu-about-fakespot = عن { -fakespot-brand-name }
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = أبلِغ
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = احجب
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = ألغِ متابعة الموضوع
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = أدر المحتوى المموّل
+newtab-menu-our-sponsors-and-your-privacy = ممولّينا وخصوصيتك
+newtab-menu-report-this-ad = أبلغ عن هذا الإعلان
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -165,6 +191,8 @@ newtab-label-sponsored-by = برعاية { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } دقيقة
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = مموّل
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -194,6 +222,9 @@ newtab-section-header-recent-activity = أحدث الأنشطة
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = ينصح به { $provider }
+newtab-section-header-stories = قصص تدعو للتأمل
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = اختياراتنا لك اليوم
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -221,9 +252,23 @@ newtab-pocket-more-recommendations = مقترحات أخرى
 newtab-pocket-learn-more = اطّلع على المزيد
 newtab-pocket-cta-button = نزِّل { -pocket-brand-name }
 newtab-pocket-cta-text = احفظ القصص التي تحبّها في { -pocket-brand-name }، وزوّد عقلك بمقالات رائعة.
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = احفظ
 newtab-pocket-saved = حُفظت
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = المزيد من هذا القبيل
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = ليس لي
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = شكرًا لك. ستساعدنا تعليقاتك في تحسين خلاصتك.
+newtab-toast-dismiss-button =
+    .title = أهمِل
+    .aria-label = أهمِل
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -257,9 +302,6 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = الاختصارات الممولة
 newtab-custom-pocket-title = مُقترح من { -pocket-brand-name }
 newtab-custom-pocket-subtitle = محتوى مميّز جمعه لك { -pocket-brand-name }، وهو جزء من عائلة { -brand-product-name }
-newtab-custom-pocket-toggle =
-    .label = مُقترح من { -pocket-brand-name }
-    .description = محتوى مميّز جمعه لك { -pocket-brand-name }، وهو جزء من عائلة { -brand-product-name }
 newtab-custom-pocket-sponsored = قصص مموّلة
 newtab-custom-pocket-show-recent-saves = أظهِر عمليات الحفظ الأخيرة
 newtab-custom-recent-title = أحدث الأنشطة
@@ -269,3 +311,141 @@ newtab-custom-recent-toggle =
     .description = مختارات من المواقع والمحتويات الحديثة
 newtab-custom-close-button = أغلِق
 newtab-custom-settings = أدِر المزيد من الإعدادات
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = الخلفيات
+newtab-wallpaper-reset = صفّر إلى المبدئي
+newtab-wallpaper-upload-image = ارفع صورة
+newtab-wallpaper-custom-color = اختر لونًا
+newtab-wallpaper-light-red-panda = باندا أحمر
+newtab-wallpaper-light-mountain = جبل ابيض
+newtab-wallpaper-light-sky = سماء مع غيوم أرجوانية ووردية
+newtab-wallpaper-light-color = الأشكال الزرقاء والوردية والصفراء
+newtab-wallpaper-light-landscape = منظر جبلي ضبابي أزرق
+newtab-wallpaper-light-beach = شاطئ مع شجرة نخيل
+newtab-wallpaper-dark-aurora = شفق قطبي
+newtab-wallpaper-dark-color = أشكال حمراء وزرقاء
+newtab-wallpaper-dark-panda = باندا حمراء مختبئة في الغابة
+newtab-wallpaper-dark-sky = منظر المدينة مع سماء الليل
+newtab-wallpaper-dark-mountain = منظر جبلي
+newtab-wallpaper-dark-city = منظر المدينة الأرجواني
+newtab-wallpaper-dark-fox-anniversary = ثعلب على الرصيف بالقرب من الغابة
+newtab-wallpaper-light-fox-anniversary = ثعلب في حقل عشبي مع منظر جبلي ضبابي
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = الألوان الصلبة
+newtab-wallpaper-blue = أزرق
+newtab-wallpaper-light-blue = أزرق فاتح
+newtab-wallpaper-light-purple = ارجواني فاتح
+newtab-wallpaper-light-green = اخضر فاتح
+newtab-wallpaper-green = أخضر
+newtab-wallpaper-beige = بيج
+newtab-wallpaper-yellow = أصفر
+newtab-wallpaper-orange = برتقالي
+newtab-wallpaper-pink = وردي
+newtab-wallpaper-light-pink = وردي فاتح
+newtab-wallpaper-red = أحمر
+newtab-wallpaper-dark-blue = أزرق غامق
+newtab-wallpaper-dark-purple = أرجواني داكن
+newtab-wallpaper-dark-green = أخضر غامق
+newtab-wallpaper-brown = بني
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = مجرّدة
+newtab-wallpaper-abstract-green = أشكال خضراء
+newtab-wallpaper-abstract-blue = أشكال زرقاء
+newtab-wallpaper-abstract-purple = أشكال أرجوانية
+newtab-wallpaper-abstract-orange = أشكال برتقالية
+newtab-wallpaper-gradient-orange = تدرج اللون البرتقالي والوردي
+newtab-wallpaper-abstract-blue-purple = الأشكال الزرقاء والأرجوانية
+
+## Celestial
+
+newtab-wallpaper-white-mountains = جبال بيضاء
+newtab-wallpaper-feature-highlight-header = جرب دفقة من الألوان
+newtab-wallpaper-feature-highlight-button = فهمت
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## Celestial
+
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = أظهِر التوقعات في { $provider }
+newtab-weather-menu-change-location = غيّر المكان
+newtab-weather-menu-weather-display = عرض الطقس
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = بسيط
+newtab-weather-menu-weather-display-option-detailed = مفصل
+newtab-weather-menu-change-weather-display-detailed = بدّل إلى العرض التفصيلي
+newtab-weather-menu-temperature-option-celsius = درجة مئوية
+newtab-weather-menu-learn-more = اطّلع على المزيد
+
+## Topic Labels
+
+
+## Topic Selection Modal
+
+newtab-topic-selection-save-button = احفظ
+newtab-topic-selection-cancel-button = ألغِ
+newtab-topic-selection-button-maybe-later = ربما لاحقا
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-unfollow-button = ألغِ المتابعة
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = احجب
+newtab-section-blocked-button = حُجبت
+newtab-section-unblock-button = ألعِ الحجب
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = ليس الآن
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = المواضيع
+newtab-custom-wallpaper-cta = جربه
+
+## Strings for download mobile highlight
+
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = افحص الرمز للتصفح بشكل آمن أثناء التنقل.
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = لماذا تُبلِّغ عن هذا؟
+newtab-report-ads-reason-not-interested =
+    .label = أنا لست مهتم
+newtab-report-ads-reason-inappropriate =
+    .label = غير مناسب
+newtab-report-content-wrong-category =
+    .label = فئة خاطئة
+newtab-report-content-outdated =
+    .label = قديم
+newtab-report-content-inappropriate-offensive =
+    .label = غير ملائم أو بذيء
+newtab-report-cancel = ألغِ
+newtab-report-submit = أرسِل
+newtab-toast-thanks-for-reporting =
+    .message = شكرا لك على الإبلاغ عن هذا.
+
+## Strings for trending searches
+

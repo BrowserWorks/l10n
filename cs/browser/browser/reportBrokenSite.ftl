@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,23 @@ report-broken-site-panel-reason-label = Co je nefunkční?
 report-broken-site-panel-reason-optional-label = Co je nefunkční? (volitelné)
 report-broken-site-panel-reason-choose =
     .label = Vyberte důvod
+report-broken-site-panel-reason-load =
+    .label = Stránka se nenačítá
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = Nelze zaplatit nebo nakupovat
+report-broken-site-panel-reason-slow2 =
+    .label = Stránka je pomalá
+report-broken-site-panel-reason-media2 =
+    .label = Video se nepřehrává nebo se nenačítá
+report-broken-site-panel-reason-content2 =
+    .label = Chybějící obsah
+report-broken-site-panel-reason-account2 =
+    .label = Nelze se přihlásit nebo zaregistrovat
+report-broken-site-panel-reason-adblocker2 =
+    .label = Stránka požádala o vypnutí blokování reklam
+report-broken-site-panel-reason-notsupported =
+    .label = Prohlížeč není podporován nebo je blokován
 report-broken-site-panel-reason-slow =
     .label = Stránka je pomalá nebo nefunguje
 report-broken-site-panel-reason-media =
@@ -29,7 +46,7 @@ report-broken-site-panel-reason-adblockers =
 report-broken-site-panel-reason-other =
     .label = Něco jiného
 report-broken-site-panel-description-label = Popis problému
-report-broken-site-panel-description-optional-label = Popis problému (volitelné)
+report-broken-site-panel-description-optional-label = Popište problém (volitelné)
 report-broken-site-panel-send-more-info-link = Odeslat více informací
 report-broken-site-panel-button-cancel =
     .label = Zrušit

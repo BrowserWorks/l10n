@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
@@ -170,7 +171,7 @@ webrtc-share-monitor = 画面 { $monitorIndex }
 # Variables:
 #   $windowCount (Number): the number of windows currently displayed by the application.
 #   $appName (String): the name of the application.
-webrtc-share-application = { $appName } ({ $windowCount } ウィンドウ)
+webrtc-share-application = { $appName } (ウィンドウ { $windowCount } 個)
 
 ## These buttons are the possible answers to the various prompts in the "webrtc-allow-share-*" strings.
 

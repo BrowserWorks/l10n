@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,9 +17,9 @@ graph-week-summary-private-window = { -brand-short-name } が今週ブロック�
 # This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protection-report-webpage-title = プライバシー保護ダッシュボード
 protection-report-page-content-title = プライバシー保護ダッシュボード
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } はブラウジングの舞台裏でプライバシーを保護します。これはユーザーにパーソナライズされた保護結果の概要であり、オンラインセキュリティを制御するツールを含みます。
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } はブラウジングの舞台裏でプライバシーを保護します。これはユーザーにパーソナライズされた保護結果の概要であり、オンラインセキュリティを制御するツールを含みます。
 protection-report-settings-link = プライバシーとセキュリティの設定を管理
 etp-card-title-always = 強化型トラッキング防止機能: 常にオン
@@ -124,12 +124,14 @@ monitor-partial-breaches-motivation-title-end = ほぼ完了しました。も�
 monitor-partial-breaches-motivation-description = { -monitor-brand-short-name } で残りの漏洩データを解決しましょう。
 monitor-resolve-breaches-link = 漏洩データを解決
     .title = { -monitor-brand-short-name } で漏洩データを解決
+
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.
 ##
 ## Variables:
 ##   $count (Number) - Number of specific trackers
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
+
 bar-tooltip-social =
     .title = ソーシャルメディアトラッカー
     .aria-label = { $count } 個のソーシャルメディアトラッカー ({ $percentage }%)

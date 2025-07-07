@@ -1,10 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
     .title = แบบอักษร
-
 fonts-window-close =
     .key = w
 
@@ -12,7 +11,6 @@ fonts-window-close =
 
 fonts-langgroup-header = แบบอักษรสำหรับ
     .accesskey = บ
-
 fonts-langgroup-arabic =
     .label = อาหรับ
 fonts-langgroup-armenian =
@@ -77,42 +75,27 @@ fonts-langgroup-other =
 
 fonts-proportional-header = ความกว้างตามสัดส่วน
     .accesskey = ค
-
 fonts-default-serif =
     .label = มีเชิง
 fonts-default-sans-serif =
     .label = ไม่มีเชิง
-
 fonts-proportional-size = ขนาด
     .accesskey = ข
-
 fonts-serif = มีเชิง
     .accesskey = ม
-
 fonts-sans-serif = ไม่มีเชิง
     .accesskey = ง
-
 fonts-monospace = ความกว้างคงที่
     .accesskey = ว
-
 fonts-monospace-size = ขนาด
     .accesskey = น
-
 fonts-minsize = ขนาดแบบอักษรต่ำสุด
     .accesskey = ด
-
 fonts-minsize-none =
     .label = ไม่มี
-
 fonts-allow-own =
     .label = อนุญาตให้หน้าเลือกใช้แบบอักษรของตัวเอง แทนที่จะเป็นที่คุณเลือกไว้ด้านบน
     .accesskey = อ
-
-## Text Encodings
-##
-## Translate the encoding names as adjectives for an encoding, not as the name
-## of the language.
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = 新建标签页
@@ -28,10 +32,16 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = 关闭左侧标签页
     .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = 关闭上方的标签页
+    .accesskey = I
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = 关闭右侧标签页
+    .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = 关闭下方的标签页
     .accesskey = i
 close-other-tabs =
     .label = 关闭其他标签页
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = 共享
     .accesskey = h
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = 在右侧新建标签页
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = 在下方新建标签页
+    .accesskey = w
+tab-context-new-group =
+    .label = 新建标签页群组
+    .accesskey = G
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -110,3 +130,10 @@ tab-context-send-tabs-to-device =
            *[other] 发送 { $tabCount } 个标签页至设备
         }
     .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] 卸载标签页
+           *[other] 卸载 { $tabCount } 个标签页
+        }
+    .accesskey = U

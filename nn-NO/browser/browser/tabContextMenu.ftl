@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Ny fane
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Lat att faner til venstre
     .accesskey = L
+close-tabs-to-the-start-vertical =
+    .label = Lat att fana ovanfor
+    .accesskey = o
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Lat att faner til høgre
     .accesskey = h
+close-tabs-to-the-end-vertical =
+    .label = Lat att fana nedanfor
+    .accesskey = n
 close-other-tabs =
     .label = Lat att andre faner
     .accesskey = a
@@ -58,7 +68,7 @@ tab-context-bookmark-tab =
     .label = Bokmerk fane…
     .accesskey = B
 tab-context-open-in-new-container-tab =
-    .label = Opne i ny innhaldsfane
+    .label = Opne i ny behaldarfane
     .accesskey = O
 move-to-start =
     .label = Flytt heilt til venstre
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Del
     .accesskey = D
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Ny fane til høgre
+    .accesskey = h
+tab-context-new-tab-open-vertical =
+    .label = Ny fane nedanfor
+    .accesskey = n
+tab-context-new-group =
+    .label = Ny gruppe
+    .accesskey = N
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.

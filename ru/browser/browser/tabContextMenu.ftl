@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Новая вкладка
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Закрыть вкладки слева
     .accesskey = л
+close-tabs-to-the-start-vertical =
+    .label = Закрыть вкладки выше
+    .accesskey = Ш
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Закрыть вкладки справа
     .accesskey = п
+close-tabs-to-the-end-vertical =
+    .label = Закрыть вкладки ниже
+    .accesskey = ш
 close-other-tabs =
     .label = Закрыть другие вкладки
     .accesskey = ы
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Поделиться
     .accesskey = д
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Новая вкладка справа
+    .accesskey = ц
+tab-context-new-tab-open-vertical =
+    .label = Новая вкладка ниже
+    .accesskey = ц
+tab-context-new-group =
+    .label = Новая группа
+    .accesskey = П
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -102,11 +122,11 @@ tab-context-close-n-tabs =
     .accesskey = ы
 tab-context-move-tabs =
     .label =
-        Переместить { $tabCount ->
-            [1] вкладку
-            [one] { $tabCount } вкладку
-            [few] { $tabCount } вкладки
-           *[many] { $tabCount } вкладок
+        { $tabCount ->
+            [1] Переместить вкладку
+            [one] Переместить { $tabCount } вкладку
+            [few] Переместить { $tabCount } вкладки
+           *[many] Переместить { $tabCount } вкладок
         }
     .accesskey = м
 tab-context-send-tabs-to-device =
@@ -117,3 +137,12 @@ tab-context-send-tabs-to-device =
            *[many] Отправить { $tabCount } вкладок на устройство
         }
     .accesskey = п
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Выгрузить вкладку
+            [one] Выгрузить { $tabCount } вкладку
+            [few] Выгрузить { $tabCount } вкладки
+           *[many] Выгрузить { $tabCount } вкладок
+        }
+    .accesskey = Г

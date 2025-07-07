@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = “{ $addonName }”已添加到 { -brand-shor
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = “{ $addonName }”需要新的权限
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = 正在完成安装已导入 { -brand-short-name } 的扩展
 
@@ -75,12 +75,14 @@ webext-imported-addons = 正在完成安装已导入 { -brand-short-name } 的�
 
 # Variables:
 #  $name (String): The name of the add-on that will be removed.
-addon-removal-title = 要移除“{ $name }”吗？
+addon-removal-title = 确定要移除“{ $name }”吗？
 # Variables:
 #   $name (String): the name of the extension which is about to be removed.
 addon-removal-message = 移除 { -brand-shorter-name } 中的“{ $name }”吗？
 addon-removal-button = 移除
 addon-removal-abuse-report-checkbox = 向 { -vendor-short-name } 举报此扩展
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = 在使用需依靠此模型运作的功能或扩展时，其将重新添加。
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying = 正在下载并验证 { $addonCount } 个附加组件…
@@ -119,6 +121,8 @@ addon-local-install-error-not-signed = 此附加组件无法安装，因为它�
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = “{ $addonName }”未能安装，因为它与 { -brand-short-name } { $appVersion } 不兼容。
+addon-install-error-hard-blocked = “{ $addonName }”由于违反 BrowserWorks 的政策，无法安装到 { -brand-short-name }。
 addon-install-error-blocklisted = “{ $addonName }”未能安装，因为它很可能引发稳定性或安全性问题。
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = “{ $addonName }”由于违反 BrowserWorks 的政策，无法安装到 { -brand-short-name }。
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = 您无法以终端用户身份安装“{ $addonName }”，它只能由采用企业策略的组织安装。

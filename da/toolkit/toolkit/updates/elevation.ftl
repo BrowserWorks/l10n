@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # This is temporary until bug 1521632 is fixed
@@ -21,3 +21,8 @@ elevation-more-elevated =
     kan genstarte
     { -brand-short-name } nu, fortsætte med at arbejde og genstarte senere, eller du kan afvise denne
     opdatering.
+sandbox-missing-unprivileged-namespaces = Nogle af sikkerhedsfunktionerne i { -brand-short-name } giver muligvis mindre beskyttelse i dit aktuelle styresystem.
+sandbox-unprivileged-namespaces-dismiss-button =
+    .label = Vis ikke igen
+    .accesskey = V
+sandbox-unprivileged-namespaces-howtofix = Sådan løser du problemet

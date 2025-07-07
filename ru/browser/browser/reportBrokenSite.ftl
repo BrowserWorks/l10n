@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,23 @@ report-broken-site-panel-reason-label = Что сломано?
 report-broken-site-panel-reason-optional-label = Что сломано? (необязательно)
 report-broken-site-panel-reason-choose =
     .label = Выберите причину
+report-broken-site-panel-reason-load =
+    .label = Сайт не загружается
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = Невозможно заплатить, проверить или сделать покупки
+report-broken-site-panel-reason-slow2 =
+    .label = Сайт медленный
+report-broken-site-panel-reason-media2 =
+    .label = Видео не воспроизводится или не загружается
+report-broken-site-panel-reason-content2 =
+    .label = Отсутствует содержимое
+report-broken-site-panel-reason-account2 =
+    .label = Не могу войти или зарегистрироваться
+report-broken-site-panel-reason-adblocker2 =
+    .label = Сайт попросил отключить блокировщик рекламы
+report-broken-site-panel-reason-notsupported =
+    .label = Браузер не поддерживается или заблокирован
 report-broken-site-panel-reason-slow =
     .label = Сайт медленный или не работает
 report-broken-site-panel-reason-media =

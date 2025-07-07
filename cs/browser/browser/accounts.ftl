@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = Dokončit nastavení účtu
 account-disconnected2 = Účet odpojen
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Poslat do všech zařízení
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Správa zařízení…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = Znovu připojit { $email }
 account-verify = Ověřit { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = Připojit další zařízení…
 account-send-tab-to-device-verify-status = Účet není ověřen
 account-send-tab-to-device-verify = Ověřit účet…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Účet
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Tento počítač je nyní propojený se zařízením { $deviceName }.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = Tento počítač je nyní propojený s novým zařízením.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = Vaše přihlášení bylo úspěšné
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = Tento počítač byl odpojen.
 
 ## These strings are used in a notification shown when we're opening
@@ -108,8 +108,24 @@ account-multiple-tabs-arriving-from-unknown-device =
 account-view-recently-closed-tabs = Zobrazit nedávno zavřené panely
 account-tabs-closed-remotely =
     { $closedCount ->
-        [one] { $closedCount } panel aplikace { -brand-short-name } byl zavřen
-        [few] { $closedCount } panely aplikace { -brand-short-name } byly zavřeny
-        [many] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
-       *[other] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
+        [one]
+            { -brand-short-name.case-status ->
+                [with-cases] { $closedCount } panel { -brand-short-name(case: "gen") } byl zavřen
+               *[no-cases] { $closedCount } panel aplikace { -brand-short-name } byl zavřen
+            }
+        [few]
+            { -brand-short-name.case-status ->
+                [with-cases] { $closedCount } panely { -brand-short-name(case: "gen") } byly zavřeny
+               *[no-cases] { $closedCount } panely aplikace { -brand-short-name } byly zavřeny
+            }
+        [many]
+            { -brand-short-name.case-status ->
+                [with-cases] { $closedCount } panelů { -brand-short-name(case: "gen") } bylo zavřeno
+               *[no-cases] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
+            }
+       *[other]
+            { -brand-short-name.case-status ->
+                [with-cases] { $closedCount } panelů { -brand-short-name(case: "gen") } bylo zavřeno
+               *[no-cases] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
+            }
     }

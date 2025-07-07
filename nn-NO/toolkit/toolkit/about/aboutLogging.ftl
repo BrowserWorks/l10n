@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,8 @@ about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Førehandsval for logging:
 about-logging-with-profiler-stacks-checkbox = Aktiver stack-sporing for loggmeldingar
+about-logging-menu =
+    .title = Avanserte innstillingar
 
 ## Logging presets
 
@@ -44,6 +46,8 @@ about-logging-preset-media-playback-label = Medieavspeling
 about-logging-preset-media-playback-description = Loggmodular for å diagnostisere problem med medieavspeling (ikkje for problem med videokonferansar)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Loggmodular for å diagnostisere WebRTC-oppkall
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-ml-label = Maskinlæring
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Loggmodular for å diagnostisere WebGPU-problem
 about-logging-preset-gfx-label = Grafikk
@@ -56,9 +60,7 @@ about-logging-preset-custom-description = Loggmodular valde manuelt
 # Error handling
 about-logging-error = Feil:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Ugyldig verdi «{ $v }» for nøkkel «{ $k }»
 about-logging-unknown-logging-preset = Ukjent førehandsval for logging «{ $v }»
@@ -67,3 +69,12 @@ about-logging-unknown-option = Ukjent alternativ for about:logging «{ $k }»
 about-logging-configuration-url-ignored = Konfigurasjons-URL ignorert
 about-logging-file-and-profiler-override = Kan ikkje tvinge utdata for fil og overstyre innstillingar for profilering samtidig
 about-logging-configured-via-url = Alternativ sett opp via URL
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-save-button = Lagre
+about-logging-upload-button = Last opp
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Lagra til { $path }

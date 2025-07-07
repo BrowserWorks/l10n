@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = Thật tuyệt, bạn đã có { -brand-short-name }
 return-to-amo-addon-title = Bây giờ, bạn có thể cài đặt <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Thêm tiện ích mở rộng
 return-to-amo-add-theme-label = Thêm chủ đề
+return-to-amo-theme-install-complete-label = Đã cài đặt chủ đề
+return-to-amo-extension-install-complete-label = Đã cài đặt tiện ích
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Tiến trình: bước { $current }/{ $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Tắt hoạt ảnh
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Đăng nhập
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Nhập từ { $previous }
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = Tiếp tục với ngôn ngữ { $
 onboarding-live-language-secondary-cancel-download = Hủy bỏ
 onboarding-live-language-skip-button-label = Bỏ qua
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -173,35 +175,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = Đặt { -brand-short-
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Nhập từ trình duyệt trước
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Mở ra một mạng internet tuyệt vời
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = Khởi chạy { -brand-short-name } từ bất kỳ đâu chỉ với một cú nhấp chuột. Mỗi lần như vậy, bạn đang chọn một trang web độc lập và cởi mở hơn.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Giữ { -brand-short-name } trên thanh dock
        *[other] Ghim { -brand-short-name } vào thanh tác vụ
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = Ghim { -brand-short-name } vào thanh tác vụ và start menu
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Bắt đầu với một trình duyệt được hỗ trợ bởi một tổ chức phi lợi nhuận. Chúng tôi bảo vệ quyền riêng tư của bạn trong khi bạn duyệt web.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = Cảm ơn bạn đã yêu thích { -brand-product-name }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Khởi động một mạng internet lành mạnh hơn từ mọi nơi chỉ với một cú nhấp chuột. Bản cập nhật mới nhất của chúng tôi chứa đựng những điều mới mà chúng tôi nghĩ rằng bạn sẽ yêu thích.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Sử dụng trình duyệt bảo vệ quyền riêng tư của bạn khi bạn lướt web. Bản cập nhật mới nhất của chúng tôi chứa đầy những thứ mà bạn yêu thích.
 mr2022-onboarding-existing-pin-checkbox-label = Đồng thời thêm { -brand-short-name } duyệt web riêng tư
 
@@ -216,14 +220,16 @@ mr2022-onboarding-set-default-subtitle = Sử dụng trình duyệt được h�
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = Phiên bản mới nhất của chúng tôi được xây dựng xung quanh bạn, giúp bạn truy cập trên web dễ dàng hơn bao giờ hết. Nó được đóng gói với các tính năng mà chúng tôi nghĩ rằng bạn sẽ yêu thích.
 mr2022-onboarding-get-started-primary-button-label = Thiết lập trong vài giây
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Thiết lập nhanh như chớp
 mr2022-onboarding-import-subtitle = Thiết lập { -brand-short-name } theo cách bạn thích. Thêm dấu trang, mật khẩu và hơn thế nữa từ trình duyệt cũ của bạn.
@@ -275,7 +281,7 @@ mr2022-onboarding-mobile-download-cta-text = Quét mã QR để lấy liên kế
 mr2022-onboarding-no-mobile-download-cta-text = Quét mã QR để tải xuống { -brand-product-name } dành cho di động.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Tự do duyệt web riêng tư trong một cú nhấp chuột
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Không có cookie hoặc lịch sử đã lưu, ngay từ màn hình của bạn. Duyệt như không có ai đang xem.
@@ -335,6 +341,14 @@ onboarding-device-migration-subtitle = Đăng nhập vào { -fxaccount-brand-nam
 onboarding-device-migration-subtitle2 = Đăng nhập vào tài khoản của bạn để mang theo dấu trang, mật khẩu và lịch sử trên thiết bị mới của bạn.
 onboarding-device-migration-primary-button-label = Đăng nhập
 
+## Add-ons Picker screen
+
+amo-picker-title = Tuỳ biến { -brand-short-name } của bạn
+amo-picker-subtitle = Tiện ích mở rộng giống như các ứng dụng dành cho trình duyệt của bạn và chúng cho phép bạn bảo vệ mật khẩu, tải video xuống, tìm ưu đãi, chặn quảng cáo gây phiền nhiễu, thay đổi giao diện trình duyệt của bạn và hơn thế nữa.
+amo-picker-install-button-label = Thêm vào { -brand-short-name }
+amo-picker-install-complete-label = Đã cài đặt
+amo-picker-collection-link = Khám phá thêm tiện ích mở rộng
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -346,6 +360,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = Khi bạn đồng b�
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } luôn ủng hộ bạn
 onboarding-gratitude-security-and-privacy-subtitle = Cảm ơn bạn đã sử dụng { -brand-short-name }, được hỗ trợ bởi BrowserWorks. Với sự hỗ trợ của bạn, chúng tôi đang nỗ lực làm cho Internet an toàn hơn và dễ truy cập hơn cho mọi người.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Đồng bộ hóa dữ liệu của bạn giữa các thiết bị
+onboarding-sign-up-description = Đăng ký tài khoản và tất cả thông tin quan trọng của bạn — mật khẩu, dấu trang, v.v. — sẽ được lưu trữ an toàn và khả dụng khi bạn đăng nhập vào bất kỳ thiết bị nào.
+onboarding-sign-up-button = Đăng ký hoặc đăng nhập
+onboarding-sign-up-secondary-button = Bắt đầu duyệt web
 
 ## New user time and familiarity survey strings
 
@@ -365,3 +384,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = Tôi là người mới
 onboarding-new-user-survey-familiarity-based-option-2 = Tôi đã sử dụng nó nhiều lúc
 onboarding-new-user-survey-familiarity-based-option-3 = Tôi rất quen thuộc với nó
 onboarding-new-user-survey-familiarity-based-option-4 = Tôi có dùng nó trước đây, nhưng đã rất lâu rồi
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Hãy cho chúng tôi biết bạn muốn đặt thẻ ở đâu
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Chuyển sang thẻ ở trên cùng bất cứ khi nào bạn muốn trong cài đặt thanh lề.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Thẻ của bạn, theo cách của bạn
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Giữ nhiều thẻ đang mở? Hãy thử chế độ thẻ dọc để có chế độ xem hợp lý hơn. Hoặc giữ mặc định với thẻ ở trên cùng. Có thể chuyển bất cứ lúc nào.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Chọn bố cục thẻ của bạn
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Để có chế độ xem hợp lý có thể giúp bạn tập trung, hãy thử chế độ thẻ dọc. Hoặc giữ mặc định với thẻ ở trên cùng. Có thể chuyển bất cứ lúc nào.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Thẻ ở bên cạnh
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Thẻ ở trên cùng
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Các thẻ dọc ở đây
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Giới thiệu thẻ dọc
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Hãy thử thẻ của bạn ở bên cạnh. Chuyển sang thẻ ở trên cùng bất cứ khi nào bạn muốn trong cài đặt thanh lề.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Hãy thử thẻ dọc (Vertical tabs)
+onboarding-flair-text = Mới!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Giữ thẻ ở trên cùng
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = Cửa sổ trình duyệt hiển thị các thẻ dọc theo cạnh màn hình như một phần của thanh lề { -brand-shorter-name }.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = Cửa sổ trình duyệt hiển thị các thẻ dọc theo cạnh màn hình như một phần của thanh lề { -brand-shorter-name }.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Một cửa sổ trình duyệt hiển thị các thẻ dọc theo phía trên.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Một cửa sổ trình duyệt hiển thị các thẻ dọc theo phía trên.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Hãy thử chatbot AI trong thanh lề
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Tổng hợp nội dung web, lên ý tưởng, soạn thảo tin nhắn — tất cả khi bạn duyệt. Chọn từ nhiều nhà cung cấp. Chuyển đổi bất kỳ lúc nào. <a data-l10n-name="learn-more">Tìm hiểu thêm</a>
+onboarding-genai-sidebar-primary-button = Chọn một chatbot
+onboarding-genai-sidebar-secondary-button = Bắt đầu duyệt web
+
+## New user onboarding checklist
+
+onboarding-checklist-title = Hoàn tất thiết lập { -brand-short-name }
+onboarding-checklist-subtitle = Hãy hoàn thành các bước này để có trải nghiệm duyệt web tốt nhất cho bạn.
+onboarding-checklist-set-default = Đặt { -brand-short-name } làm trình duyệt mặc định
+onboarding-checklist-pin = Ghim { -brand-short-name } vào thanh tác vụ
+onboarding-checklist-import = Nhập từ trình duyệt trước
+onboarding-checklist-extension = Thêm tiện ích
+onboarding-checklist-sign-up = Đăng ký hoặc đăng nhập vào tài khoản của bạn
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Hãy thử nhóm thẻ để bớt lộn xộn hơn, tập trung hơn
+tab-groups-onboarding-feature-callout-subtitle = Sắp xếp gọn gàng bằng cách kéo thẻ này lên trên thẻ khác để tạo nhóm đầu tiên của bạn.
+tab-groups-onboarding-create-group-title-2 = Tìm nhóm thẻ của bạn tại đây bất cứ lúc nào.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Tìm nhóm của bạn bằng cách tìm kiếm nhóm trong thanh địa chỉ.
+tab-groups-onboarding-saved-groups-title-2 = Khi đóng một nhóm thẻ, bạn có thể mở lại nhóm đó tại đây bất cứ lúc nào.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Tìm các nhóm mà bạn đã đóng bằng cách tìm kiếm chúng trong thanh địa chỉ.
+tab-groups-onboarding-session-restore-title = Mở lại các nhóm thẻ của bạn tại đây bất cứ lúc nào.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = Hãy thử chế độ hồ sơ của { -brand-product-name }
+multi-profile-spotlight-body = Dễ dàng chuyển đổi giữa duyệt web để làm việc và giải trí. Hồ sơ giữ thông tin duyệt web của bạn, bao gồm cả lịch sử tìm kiếm và mật khẩu, hoàn toàn riêng biệt giúp bạn có thể sắp xếp hợp lý.
+multi-profile-spotlight-cta = Tạo hồ sơ
+multi-profile-callout-title = Tạo các hồ sơ khác nhau cho công việc và giải trí
+multi-profile-callout-subtitle = Hồ sơ cho phép bạn giữ thông tin duyệt web của mình, như lịch sử tìm kiếm và mật khẩu, hoàn toàn riêng biệt.
+multi-profile-callout-cta = Tạo hồ sơ
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Tải xuống, đồng bộ hoá và sử dụng!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Quét mã QR để tải xuống { -brand-product-name } cho di động. Sau khi cài đặt, chọn “Đồng bộ trên di động” để truy cập mật khẩu, dấu trang của bạn và nhiều hơn nữa để sử dụng.
+dismiss-button-label = Bỏ qua
+sync-to-mobile-button-label = Đồng bộ trên di động
+desktop-to-mobile-qr-code-alt =
+    .aria-label = Mã QR để tải xuống { -brand-product-name } dành cho di động

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = 閱讀列表（來自 Safari）
 migration-imported-edge-reading-list = 閱讀清單（來自 Edge）
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } 沒有權限存取此裝置上其他瀏覽器的設定檔。
@@ -184,6 +184,14 @@ migration-safari-password-import-step1 = 在 Safari 點擊「Safari」選單，�
 migration-safari-password-import-step2 = 選擇 <img data-l10n-name="safari-icon-3dots"/> 按鈕，然後選擇「匯出所有密碼」
 migration-safari-password-import-step3 = 儲存密碼檔案
 migration-safari-password-import-step4 = 使用下方的「選擇檔案」選擇您儲存的密碼檔案
+migration-chrome-windows-password-import-header = 如何從 Chrome 匯入密碼
+migration-chrome-windows-password-import-steps-header = 在 Chrome：
+migration-chrome-windows-password-import-step1 = 開啟主選單 <img data-l10n-name="chrome-icon-3dots"/> 然後前往「密碼和自動填入 > Google 密碼管理工具」。
+migration-chrome-windows-password-import-step2 = 點擊選單中的「設定」。
+migration-chrome-windows-password-import-step3 = 選擇「下載檔案」然後儲存到您的裝置上。
+migration-chrome-windows-password-import-step4 = 回到此處，然後點擊「選擇檔案」，選擇剛剛儲存的檔案即可匯入。
+migration-manual-password-import-skip-button = 略過
+migration-manual-password-import-select-button = 選擇檔案
 migration-safari-password-import-skip-button = 略過
 migration-safari-password-import-select-button = 選擇檔案
 # Shown in the migration wizard after importing bookmarks from another
@@ -203,7 +211,7 @@ migration-wizard-progress-success-favorites = { $quantity } 筆最愛
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.
@@ -240,7 +248,7 @@ migration-wizard-progress-success-passwords = { $quantity } 筆密碼
 migration-wizard-progress-success-history =
     { $maxAgeInDays ->
         [one] 昨天以來
-       *[other] 過去 { $maxAgeInDays } 來
+       *[other] 過去 { $maxAgeInDays } 天以來的資料
     }
 migration-wizard-progress-success-formdata = 表單填寫紀錄
 # Shown in the migration wizard after importing payment methods from another

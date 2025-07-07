@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,6 +6,7 @@ pictureinpicture-player-title = Picture-in-Picture
 
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
+
 
 ## Note that this uses .tooltip rather than the standard '.title'
 ## or '.tooltiptext' -  but it has the same effect. Code in the
@@ -21,30 +22,24 @@ pictureinpicture-pause-btn =
 pictureinpicture-play-btn =
     .aria-label = Reproduzir
     .tooltip = Reproduzir (barra de espaço)
-
 pictureinpicture-mute-btn =
     .aria-label = Silenciar
     .tooltip = Silenciar ({ $shortcut })
 pictureinpicture-unmute-btn =
     .aria-label = Ativar som
     .tooltip = Ativar som ({ $shortcut })
-
 pictureinpicture-unpip-btn =
     .aria-label = Enviar de volta à aba
     .tooltip = Voltar para a aba
-
 pictureinpicture-close-btn =
     .aria-label = Fechar
     .tooltip = Fechar ({ $shortcut })
-
 pictureinpicture-subtitles-btn =
     .aria-label = Legendas
     .tooltip = Legendas
-
 pictureinpicture-fullscreen-btn2 =
     .aria-label = Tela inteira
     .tooltip = Tela inteira (duplo-clique ou { $shortcut })
-
 pictureinpicture-exit-fullscreen-btn2 =
     .aria-label = Sair de tela inteira
     .tooltip = Sair de tela inteira (duplo-clique ou { $shortcut })
@@ -63,7 +58,6 @@ pictureinpicture-toggle-fullscreen-shortcut =
 pictureinpicture-seekbackward-btn =
     .aria-label = Voltar
     .tooltip = Voltar (←)
-
 pictureinpicture-seekforward-btn =
     .aria-label = Avançar
     .tooltip = Avançar (→)
@@ -74,13 +68,8 @@ pictureinpicture-seekforward-btn =
 # a screen reader whenever a user opens the subtitles settings panel
 # after selecting the subtitles button.
 pictureinpicture-subtitles-panel-accessible = Configurações de legendas
-
 pictureinpicture-subtitles-label = Subtítulos
-
 pictureinpicture-font-size-label = Tamanho da fonte
-
 pictureinpicture-font-size-small = Pequeno
-
 pictureinpicture-font-size-medium = Médio
-
 pictureinpicture-font-size-large = Grande

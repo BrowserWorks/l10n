@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,7 +6,14 @@
 # NOTE: For English locales, strings in this file should be in APA-style Title Case.
 # See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
 #
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
 # NOTE: For Engineers, please don't reuse these strings outside of the menubar.
+
 
 ## Application Menu (macOS only)
 
@@ -63,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = URL を開く...
 menu-file-open-file =
@@ -232,20 +239,33 @@ menu-bookmarks-menu =
 menu-bookmarks-manage =
     .label = ブックマークを管理
 menu-bookmark-tab =
-    .label = 現在のタブをブックマーク...
+    .label = 現在のタブをブックマークに追加...
 menu-edit-bookmark =
     .label = このブックマークを編集...
 # "Search" is a verb, as in "Search in bookmarks"
 menu-bookmarks-search =
     .label = ブックマークを検索
 menu-bookmarks-all-tabs =
-    .label = すべてのタブをブックマーク...
+    .label = すべてのタブをブックマークに追加...
 menu-bookmarks-toolbar =
     .label = ブックマークツールバー
 menu-bookmarks-other =
     .label = 他のブックマーク
 menu-bookmarks-mobile =
     .label = モバイルのブックマーク
+
+## Profiles Menu
+
+menu-profiles =
+    .label = プロファイル
+menu-profiles-manage-profiles =
+    .label = プロファイルを管理
+menu-profiles-new-profile =
+    .label = 新しいプロファイル
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (使用中)
 
 ## Tools Menu
 
@@ -255,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = ダウンロード
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = 拡張機能とテーマ
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = アドオンとテーマ
     .accesskey = A

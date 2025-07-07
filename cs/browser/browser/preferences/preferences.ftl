@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Říci webovým stránkám pomocí signálu Do Not Track, že nechcete být sledováni
+do-not-track-removal = Funkce “Do Not Track” již není podporována
 do-not-track-description2 =
     .label = Posílat stránkám žádost Do Not Track
     .accesskey = D
@@ -177,6 +178,7 @@ windows-launch-on-login =
         }
     .accesskey = O
 windows-launch-on-login-disabled = Tato předvolba byla v systému Windows zakázána. Chcete-li ji změnit, navštivte <a data-l10n-name="startup-link">Spouštěné aplikace</a> v nastavení systému.
+windows-launch-on-login-profile-disabled = Povolte tuto předvolbu zaškrtnutím "{ profile-manager-use-selected.label }" v okně "Výběr profilu uživatele".
 startup-restore-warn-on-quit =
     .label = Varovat při ukončování prohlížeče
 disable-extension =
@@ -190,6 +192,11 @@ preferences-data-migration-description =
 preferences-data-migration-button =
     .label = Import dat
     .accesskey = m
+preferences-profiles-header = Profily
+preferences-manage-profiles-description = Každý profil má samostatné údaje o procházení a nastavení, včetně historie, hesel a dalších údajů.
+preferences-manage-profiles-learn-more = Zjistit více
+preferences-manage-profiles-button =
+    .label = Správa profilů
 tabs-group-header = Panely
 ctrl-tab-recently-used-order =
     .label = Přepínat panely pomocí Ctrl+Tab v pořadí podle jejich posledního použití
@@ -197,6 +204,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Otevírat odkazy v panelech místo v nových oknech
     .accesskey = O
+ask-on-close-multiple-tabs =
+    .label = Zeptat se před zavřením více panelů
+    .accesskey = p
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Zeptat se před ukončením zkratkou { $quitKey }
+    .accesskey = k
 confirm-on-close-multiple-tabs =
     .label = Vždy se zeptat při zavírání více panelů
     .accesskey = V
@@ -263,6 +281,16 @@ containers-remove-cancel-button = Neodstraňovat tento kontejner
 settings-tabs-show-image-in-preview =
     .label = Zobrazit obrázek s náhledem při přejetí nad panelem
     .accessKey = o
+browser-layout-header = Rozložení prohlížeče
+browser-layout-horizontal-tabs =
+    .label = Vodorovné panely
+browser-layout-horizontal-tabs-desc = Zobrazují se v horní části prohlížeče
+browser-layout-vertical-tabs =
+    .label = Svislé panely
+browser-layout-vertical-tabs-desc = Zobrazují se v postranním panelu
+browser-layout-show-sidebar =
+    .label = Zobrazit postranní lištu
+browser-layout-show-sidebar-desc = Získejte rychlý přístup k záložkám, panelům z telefonu, AI chatbotu a dalším bez toho, abyste opustili hlavní okno.
 
 ## General Section - Language & Appearance
 
@@ -290,6 +318,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Vaše nastavení kontrastu má přednost před vzhledem webu.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Vaše nastavení upravuje vzhled stránky. <a data-l10n-name="colors-link">Nastavit barvy</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -302,6 +334,17 @@ preferences-web-appearance-footer =
         [with-cases] Vzhled { -brand-short-name(case: "gen") } nastavíte ve <a data-l10n-name="themes-link">správci doplňků</a>
        *[no-cases] Vzhled aplikace { -brand-short-name } nastavíte ve <a data-l10n-name="themes-link">správci doplňků</a>
     }
+preferences-contrast-control-header = Nastavení kontrastu
+preferences-contrast-control-description = Webové stránky mají různé barvy popředí a pozadí. Nastavte { -brand-short-name } tak, aby se na všech webových stránkách používaly stejné barvy a zlepšila se tak čitelnost.
+preferences-contrast-control-use-platform-settings =
+    .label = Automaticky (použít systémové nastavení)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Vypnuto
+    .accesskey = V
+preferences-contrast-control-custom =
+    .label = Vlastní
+    .accesskey = V
 preferences-colors-header = Barvy
 preferences-colors-description = Nastavení výchozích barev pro text, odkazy a pozadí webových stránek.
 preferences-colors-manage-button =
@@ -385,6 +428,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = U každého souboru se zeptat, kam ho uložit
     .accesskey = a
+download-private-browsing-delete =
+    .label = Smazat soubory stažené v anonymním prohlížení při zavření všech anonymních oken
+    .accesskey = S
 applications-header = Aplikace
 applications-description = Co má { -brand-short-name } dělat se staženými soubory, nebo s aplikacemi, které používáte při prohlížení?
 applications-filter =
@@ -486,7 +532,7 @@ update-application-description =
        *[no-cases] Pro nejvyšší rychlost, stabilitu a bezpečnost udržujte aplikaci { -brand-short-name } stále aktuální.
     }
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Verze { $version } <a data-l10n-name="learn-more">Co je nového</a>
 update-history =
     .label = Zobrazit historii aktualizací…
@@ -532,13 +578,23 @@ update-setting-write-failure-title2 = Chyba při ukládání nastavení aktualiz
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } zaznamenal
-        [feminine] { -brand-short-name } zaznamenala
-        [neuter] { -brand-short-name } zaznamenalo
-       *[other] Aplikace { -brand-short-name } zaznamenala
-    } problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
-    
-        Není možný zápis do souboru: { $path }
+        [masculine]
+            { -brand-short-name } zaznamenal problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+            
+                Není možný zápis do souboru: { $path }
+        [feminine]
+            { -brand-short-name } zaznamenala problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+            
+                Není možný zápis do souboru: { $path }
+        [neuter]
+            { -brand-short-name } zaznamenalo problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+            
+                Není možný zápis do souboru: { $path }
+       *[other]
+            Aplikace { -brand-short-name } zaznamenala problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+            
+                Není možný zápis do souboru: { $path }
+    }
 update-in-progress-title = Probíhá aktualizace
 update-in-progress-message =
     { -brand-short-name.gender ->
@@ -579,6 +635,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Prohlížení
+browsing-group-label =
+    .aria-label = Prohlížení
 browsing-use-autoscroll =
     .label = Použít automatické posouvání
     .accesskey = a
@@ -667,7 +725,7 @@ choose-bookmark =
     .label = Použít záložku…
     .accesskey = z
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = Obsah { -firefox-home-brand-name(case: "gen", capitalization: "lower") }
 home-prefs-content-description2 = Vyberte obsah, který chcete mít na { -firefox-home-brand-name(case: "loc", capitalization: "lower") }.
@@ -679,8 +737,7 @@ home-prefs-shortcuts-description = Uložené nebo navštěvované stránky
 home-prefs-shortcuts-by-option-sponsored =
     .label = Sponzorované zkratky
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Doporučení ze služby { $provider }
@@ -722,6 +779,18 @@ home-prefs-weather-header =
     .label = Počasí
 home-prefs-weather-description = Přehled dnešní předpovědi
 home-prefs-weather-learn-more-link = Zjistit více
+home-prefs-trending-search-header =
+    .label = Trendy ve vyhledávání
+home-prefs-trending-search-description = Populární a často vyhledávaná témata
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label =
+        { -brand-product-name.case-status ->
+            [with-cases] Podpořte { -brand-product-name(case: "acc") }
+           *[no-cases] Podpořte aplikaci { -brand-product-name }
+        }
+home-prefs-mission-message = Naši sponzoři podporují naši misi budovat lepší web
+home-prefs-mission-message-learn-more-link = Zjistěte jak
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -757,6 +826,10 @@ search-show-suggestions-url-bar-option =
     .label = Našeptávat dotazy pro vyhledávač také v adresním řádku
     .accesskey = e
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Na stránkách s výsledky zobrazovat v panelu s adresou hledané výrazy
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -791,6 +864,9 @@ search-remove-engine =
 search-add-engine =
     .label = Přidat
     .accesskey = P
+search-edit-engine =
+    .label = Upravit
+    .accesskey = U
 search-find-more-link = Přidat další vyhledávače
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -799,6 +875,13 @@ search-keyword-warning-title = Použité klíčové slovo
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Zvolili jste klíčové slovo, které už je použito pro „{ $name }“. Zvolte prosím jiné.
 search-keyword-warning-bookmark = Zvolili jste klíčové slovo, které už je použito pro záložku. Zvolte prosím jiné.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Vyhledávač s názvem „{ $name }“ už existuje. Zvolte prosím jiný název.
+remove-engine-confirmation = Opravdu chcete odstranit tento vyhledávač?
+remove-engine-remove = Odebrat
+remove-addon-engine-alert = Chcete-li tento vyhledávač odstranit, odstraňte související doplněk.
 
 ## Containers Section
 
@@ -816,7 +899,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Odstranit
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Vezměte si web s sebou
@@ -834,7 +917,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Stáhněte si Waterfox pro <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> nebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> a synchronizujte svá data se svým mobilním zařízením.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Změnit profilový obrázek
@@ -852,7 +935,7 @@ sync-manage-account = Spravovat účet
     .accesskey = S
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = Účet { $email } není ověřen.
 sync-signedin-login-failure = Pro opětovné připojení účtem { $email } se přihlaste
@@ -892,7 +975,7 @@ prefs-syncing-button =
 
 ## The list of things currently syncing.
 
-sync-syncing-across-devices-heading = Synchronizujete tyto položky ve všech připojených zařízeních:
+sync-syncing-across-devices-heading = Tyto položky synchronizujete ve všech připojených zařízeních:
 sync-currently-syncing-bookmarks = Záložky
 sync-currently-syncing-history = Historie
 sync-currently-syncing-tabs = Otevřené panely
@@ -903,6 +986,9 @@ sync-currently-syncing-creditcards = Platební karty
 sync-currently-syncing-payment-methods = Způsoby platby
 sync-currently-syncing-addons = Doplňky
 sync-currently-syncing-settings = Nastavení
+sync-manage-options =
+    .label = Spravovat synchronizaci…
+    .accesskey = S
 sync-change-options =
     .label = Změnit…
     .accesskey = Z
@@ -955,6 +1041,13 @@ sync-engine-settings =
     .label = Nastavení
     .tooltiptext = Nastavení v sekcích Obecné a Soukromí a zabezpečení
     .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Správa synchronizace všech připojených zařízení
+    .style = min-width: 36em;
+    .buttonlabelaccept = Uložit
+    .buttonaccesskeyaccept = U
+    .buttonlabelextra2 = Odpojit…
+    .buttonaccesskeyextra2 = O
 
 ## The device name controls.
 
@@ -975,7 +1068,7 @@ sync-connect-another-device = Připojit další zařízení
 
 sync-verification-sent-title = Ověření odesláno
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = Odkaz pro ověření byl odeslán na { $email }.
 sync-verification-not-sent-title = Ověření nelze odeslat
 sync-verification-not-sent-body = V tuto chvíli nemůžeme ověřovací email odeslat, zkuste to prosím znovu později.
@@ -1042,7 +1135,7 @@ forms-primary-pw-use =
     .accesskey = P
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
-    .label = Vyžadovat heslo k účtu na zařízení na vyplnění a správu hesel
+    .label = K vyplňování a správě hesel vyžadovat přihlášení se do zařízení
 forms-primary-pw-learn-more-link = Zjistit více
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -1070,12 +1163,12 @@ windows-passkey-settings-label = Správa přístupových klíčů v nastavení s
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] změnit nastavení pro způsoby plateb
@@ -1106,12 +1199,12 @@ history-header = Historie prohlížení
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = Historii prohlížených stránek
     .accesskey = i
 history-remember-option-all =
@@ -1214,6 +1307,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Adresní řádek
 addressbar-suggest = V adresním řádku našeptávat
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Adresní řádek — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Vyberte typ návrhů, které se zobrazí v adresním řádku.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Zjistit více
 addressbar-locbar-history-option =
     .label = Historii prohlížení
     .accesskey = H
@@ -1246,7 +1346,26 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = Našeptávat návrhy populárních vyhledávání
     .accesskey = p
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label =
+        { -brand-full-name.case-status ->
+            [with-cases] Návrhy od { -brand-short-name(case: "gen") }
+           *[no-cases] Návrhy od aplikace { -brand-short-name }
+        }
+addressbar-locbar-suggest-nonsponsored-desc = Získat návrhy z webu související s vaším vyhledáváním.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Návrhy od sponzorů
+addressbar-locbar-suggest-sponsored-desc = Podpořte { -brand-short-name } zobrazením občasných sponzorovaných návrhů.
 addressbar-quickactions-learn-more = Zjistit více
+addressbar-dismissed-suggestions-label = Odmítnuté návrhy
+addressbar-restore-dismissed-suggestions-description =
+    { -brand-short-name.case-status ->
+        [with-cases] Obnovit odmítnuté návrhy od sponzorů a { -brand-short-name(case: "gen") }.
+       *[no-cases] Obnovit odmítnuté návrhy od sponzorů a aplikace { -brand-short-name }.
+    }
+addressbar-restore-dismissed-suggestions-button =
+    .label = Obnovit
 
 ## Privacy Section - Content Blocking
 
@@ -1425,6 +1544,18 @@ collection-header2 =
        *[no-cases] Sběr a používání dat o aplikaci { -brand-short-name }
     }
     .searchkeywords = telemetrie
+preferences-collection-description =
+    { -brand-product-name.case-status ->
+        [with-cases] Snažíme se vám poskytnout možnost volby a shromažďovat pouze minimum údajů nezbytných pro zlepšení { -brand-product-name(case: "gen") } pro všechny.
+       *[no-cases] Snažíme se vám poskytnout možnost volby a shromažďovat pouze minimum údajů nezbytných pro zlepšení aplikace { -brand-product-name } pro všechny.
+    }
+preferences-collection-privacy-notice = Zobrazit zásady ochrany osobních údajů
+preferences-across-profiles =
+    { -brand-product-name.case-status ->
+        [with-cases] Tato nastavení platí pro každý profil { -brand-product-name(case: "gen") } na tomto zařízení.
+       *[no-cases] Tato nastavení platí pro každý profil aplikace { -brand-product-name } na tomto zařízení.
+    }
+preferences-view-profiles = Zobrazit všechny profily
 collection-description =
     { -brand-short-name.case-status ->
         [with-cases] S daty vám dáváme vždy na výběr a sbíráme jen data potřebná pro vylepšování { -brand-short-name(case: "gen") }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
@@ -1437,6 +1568,21 @@ collection-health-report-telemetry-disabled =
        *[no-cases] Odesílat organizaci { -vendor-short-name } technická data a data o interakcích není nadále povoleno. Všechna historická data budou smazána během 30 dnů.
     }
 collection-health-report-telemetry-disabled-link = Zjistit více
+collection-usage-ping =
+    .label =
+        { -vendor-short-name.case-status ->
+            [with-cases] Odeslat ping o denní frekvenci { -vendor-short-name(case: "dat") }
+           *[no-cases] Odeslat ping o denní frekvenci organizaci { -vendor-short-name }
+        }
+    .accesskey = p
+collection-usage-ping-description =
+    { -vendor-short-name.case-status ->
+        [with-cases] To { -vendor-short-name(case: "dat") } pomáhá odhadnout počet aktivních uživatelů.
+       *[no-cases] To organizaci { -vendor-short-name } pomáhá odhadnout počet aktivních uživatelů.
+    }
+collection-health-report2 =
+    .label = Odesílat technická data a data o interakcích organizaci { -vendor-short-name }
+    .accesskey = t
 collection-health-report =
     .label =
         { -vendor-short-name.case-status ->
@@ -1445,6 +1591,14 @@ collection-health-report =
         }
     .accesskey = r
 collection-health-report-link = Zjistit více
+collection-health-report-description =
+    { -brand-product-name.case-status ->
+        [with-cases] To nám pomáhá vylepšovat funkce, výkon a stabilitu { -brand-product-name(case: "gen") }.
+       *[no-cases] To nám pomáhá vylepšovat funkce, výkon a stabilitu aplikace { -brand-product-name }.
+    }
+collection-studies2 =
+    .label = Instalovat a spouštět studie
+collection-studies-description = Vyzkoušejte funkce a nápady dříve, než budou veřejně dostupné.
 collection-studies =
     .label =
         { -brand-short-name.case-status ->
@@ -1455,6 +1609,20 @@ collection-studies-link =
     { -brand-short-name.case-status ->
         [with-cases] Zobrazit studie { -brand-short-name(case: "gen") }
        *[no-cases] Zobrazit studie aplikace { -brand-short-name }
+    }
+addon-recommendations2 =
+    .label = Povolit personalizovaná doporučení rozšíření
+addon-recommendations-description = Nechte si doporučovat rozšíření pro zlepšení vašeho prohlížení.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Pro tuto konfiguraci sestavení je hlášení dat vypnuto.
+collection-backlogged-crash-reports2 =
+    .label = Automaticky odesílat hlášení o pádech
+    .accesskey = m
+collection-backlogged-crash-reports-description =
+    { -vendor-short-name.case-status ->
+        [with-cases] To pomáhá { -vendor-short-name(case: "dat") } diagnostikovat a opravovat problémy s prohlížečem. Hlášení mohou obsahovat osobní nebo citlivé údaje.
+       *[no-cases] To pomáhá organizaci { -vendor-short-name } diagnostikovat a opravovat problémy s prohlížečem. Hlášení mohou obsahovat osobní nebo citlivé údaje.
     }
 addon-recommendations =
     .label =
@@ -1551,6 +1719,8 @@ space-alert-under-5gb-message2 =
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Režim „pouze HTTPS“
+httpsonly-description3 = Umožňuje pouze zabezpečená připojení k webovým stránkám. { -brand-short-name } se před použitím nezabezpečeným připojení zeptá.
+httpsonly-learn-more2 = Jak funguje režim „pouze HTTPS“.
 httpsonly-description =
     { -brand-short-name.case-status ->
         [with-cases] Protokol HTTPS poskytuje zabezpečené, šifrované spojení mezi { -brand-short-name(case: "ins") } a navštěvovanými webovými stránkami. Většina webů protokol HTTPS podporuje, a pokud je zapnut režim „pouze HTTPS“, bude { -brand-short-name } navazovat spojení jen skrze protokol HTTPS.
@@ -1561,6 +1731,9 @@ httpsonly-radio-enabled =
     .label = Zapnout režim „pouze HTTPS“ ve všech oknech
 httpsonly-radio-enabled-pbm =
     .label = Zapnout režim „pouze HTTPS“ v anonymních oknech
+httpsonly-radio-disabled3 =
+    .label = Nezapínat režim „pouze HTTPS“.
+    .description = { -brand-short-name } může stále aktualizovat některá připojení
 httpsonly-radio-disabled =
     .label = Nezapínat režim „pouze HTTPS“
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,12 +11,12 @@ about-private-browsing-search-btn =
 # Variables
 #  $engine (String): the name of the user's default search engine
 about-private-browsing-handoff =
-    .title = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
+    .title = ‫ابحث ب { $engine } أو أدخِل عنوانا
 about-private-browsing-handoff-no-engine =
     .title = ابحث أو أدخِل عنوانا
 # Variables
 #  $engine (String): the name of the user's default search engine
-about-private-browsing-handoff-text = ‫ابحث مستعملًا { $engine } أو أدخِل عنوانا
+about-private-browsing-handoff-text = ‫ابحث ب { $engine } أو أدخِل عنوانا
 about-private-browsing-handoff-text-no-engine = ابحث أو أدخِل عنوانا
 about-private-browsing-not-private = لستَ حاليا في نافذة خاصة.
 about-private-browsing-info-description-private-window = نافذة خاصة: يمسح { -brand-short-name } تأريخ البحث والتصفح عند إغلاق جميع النوافذ الخاصة. هذا لا يجعلك مجهول الهوية.
@@ -63,8 +63,15 @@ about-private-browsing-pin-promo-title = لن تحفظ ملفات تعريف ا�
 
 ## Strings used in a promotion message for cookie banner reduction
 
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = وداعًا لافتات ملفات تعريف الارتباط!
 about-private-browsing-cookie-banners-promo-button = تقليل لافتات ملفات تعريف الارتباط
 about-private-browsing-cookie-banners-promo-message = اسمح لـ { -brand-short-name } بالرد تلقائيًا على النوافذ المنبثقة لملفات تعريف الارتباط حتى تتمكن من العودة إلى التصفح الخالي من التشتيت. { -brand-short-name } سيرفض جميع الطلبات إن أمكن.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } يتولى أمر لافتات ملفات تعريف الارتباط نيابةً عنك
+about-private-browsing-cookie-banners-promo-body = نحن الآن نرفض تلقائيًا العديد من لافتات ملفات تعريف الارتباط حتى تتمكن من تتبعك بشكل أقل والعودة إلى التصفح الخالي من التشتيت.
 
 ## Strings for Felt Privacy v1 experiments in 119
 

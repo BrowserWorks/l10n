@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,13 +8,10 @@
 # "Auto" is short for automatic. It can be localized without limitations.
 extension-default-theme-name-auto = Motyw systemu — automatyczny
 extension-default-theme-description = Używa systemowych ustawień przycisków, menu i okien.
-
 extension-firefox-compact-light-name = Jasny
 extension-firefox-compact-light-description = Motyw o jasnych kolorach.
-
 extension-firefox-compact-dark-name = Ciemny
 extension-firefox-compact-dark-description = Motyw o ciemnych kolorach.
-
 extension-firefox-alpenglow-name = Waterfox Alpenglow
 extension-firefox-alpenglow-description = Kolorowe przyciski, menu i okna.
 

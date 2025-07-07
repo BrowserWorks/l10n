@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Leseliste (frå Safari)
 migration-imported-edge-reading-list = Leseliste (frå Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } har ikkje tilgang til profilar i andre nettlesarar installerte på denne eininga.
@@ -196,6 +196,14 @@ migration-safari-password-import-step1 = I Safari, opne «Safari»-menyen og gå
 migration-safari-password-import-step2 = Vel knappen <img data-l10n-name="safari-icon-3dots"/> og vel «Eksporter alle passord»
 migration-safari-password-import-step3 = Lagre passordfila
 migration-safari-password-import-step4 = Bruk «Vel fil» nedanfor for å velje passordfila du lagra
+migration-chrome-windows-password-import-header = Korleis importere passord frå Chrome
+migration-chrome-windows-password-import-steps-header = I Chrome:
+migration-chrome-windows-password-import-step1 = Opne hovudmenyen <img data-l10n-name="chrome-icon-3dots"/> og gå til Passord og autofyll > Google Passordhandsaming.
+migration-chrome-windows-password-import-step2 = Vel «Innstillingar» frå menyen.
+migration-chrome-windows-password-import-step3 = Vel «Last ned fil» og lagre ho på eininga di.
+migration-chrome-windows-password-import-step4 = Gå tilbake hit og trykk på «Vel fil» for å fullføre importen.
+migration-manual-password-import-skip-button = Hopp over
+migration-manual-password-import-select-button = Vel fil
 migration-safari-password-import-skip-button = Hopp over
 migration-safari-password-import-select-button = Vel fil
 # Shown in the migration wizard after importing bookmarks from another
@@ -223,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

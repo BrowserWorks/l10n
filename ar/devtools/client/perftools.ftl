@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,7 +32,6 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = حجم الصِوان:
-
 perftools-devtools-threads-label = الخيوط:
 perftools-devtools-settings-label = الإعدادات
 
@@ -54,6 +53,9 @@ perftools-button-restart = أعِد التشغيل
 perftools-button-remove-directory = أزِل المحدد
 perftools-button-edit-settings = عدّل الإعدادات…
 
+## More actions menu
+
+
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 
@@ -61,20 +63,21 @@ perftools-button-edit-settings = عدّل الإعدادات…
 
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
+
 
 ## Profiler presets
 
-# Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
-# The same labels and descriptions are also defined in appmenu.ftl.
 
 # Presets and their l10n IDs are defined in the file
 # devtools/client/performance-new/shared/background.jsm.js
 # The same labels and descriptions are also defined in appmenu.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+
 ##
+

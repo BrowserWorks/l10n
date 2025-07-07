@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,3 +12,9 @@ input-file-and-more-files =
         [one] και ένα ακόμα
        *[other] και { $fileCount } ακόμα
     }
+form-post-secure-to-insecure-warning-title = Προειδοποίηση ασφαλείας
+form-post-secure-to-insecure-warning-message =
+    Οι πληροφορίες που έχετε εισαγάγει σε αυτήν τη σελίδα θα σταλούν μέσω επισφαλούς σύνδεσης και ενδέχεται να προβληθούν από τρίτους.
+    
+    Θέλετε σίγουρα να στείλετε αυτές τις πληροφορίες;
+form-post-secure-to-insecure-warning-continue = Συνέχεια

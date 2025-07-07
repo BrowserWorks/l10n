@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = 兩小時內
 clear-time-duration-value-last-4-hours =
     .label = 四小時內
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = 自 { $midnightTime } 起
 clear-time-duration-value-today =
     .label = 今天
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = 瀏覽紀錄
 item-history-and-downloads =
     .label = 瀏覽與下載記錄
     .accesskey = B
+item-history-and-downloads-description2 = 清除網站與下載紀錄
 item-history-form-data-downloads =
     .label = 瀏覽紀錄
     .accesskey = H
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = 網站設定
     .accesskey = i
+item-formdata-prefs =
+    .label = 儲存的表單資訊
+    .accesskey = o
+item-formdata-description = 清除您在表單中輸入過的姓名、電子郵件地址與其他資訊
 item-site-prefs-description = 將您的權限與網站偏好設定重設回原始設定
 data-section-label = 資料
 item-site-settings =

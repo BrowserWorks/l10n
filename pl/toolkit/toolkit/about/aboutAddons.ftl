@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -47,7 +47,7 @@ detail-contributions-button = Wspomóż
     .title = Wspomóż rozwój tego dodatku
     .accesskey = s
 detail-update-type =
-    .value = Aktualizacje automatyczne
+    .value = Aktualizacje automatyczne:
 detail-update-default =
     .label = ustawienia domyślne
     .tooltiptext = Instaluj aktualizacje automatycznie tylko, jeśli takie jest domyślne ustawienie
@@ -206,6 +206,10 @@ addon-updates-manual-updates-found = Wyświetl dostępne aktualizacje
 
 addon-install-from-file = Zainstaluj dodatek z pliku…
     .accesskey = Z
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Zainstaluj lub zaktualizuj dodatek z pliku…
+    .accesskey = Z
 addon-install-from-file-dialog-title = Wybierz dodatek do zainstalowania
 addon-install-from-file-filter-name = Dodatki
 addon-open-about-debugging = Debuguj dodatki
@@ -275,6 +279,12 @@ discopane-notice-recommendations = Część tych poleceń jest spersonalizowanyc
 discopane-notice-recommendations2 =
     .message = Część tych poleceń jest spersonalizowanych na podstawie pozostałych zainstalowanych rozszerzeń, preferencji profilu i statystyk użytkowania.
 discopane-notice-learn-more = Więcej informacji
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Używane kolorystyki zostały usunięte.
+    .message = Kolekcja kolorystyk { -brand-product-name(case: "gen") } została odświeżona. Usunęliśmy stare wersje z listy „Zachowane motywy”. Na witrynie z dodatkami znajdziesz nowe.
+colorway-removal-notice-learn-more = Więcej informacji
+colorway-removal-notice-button = Pobierz odświeżone kolorystyki
 privacy-policy = Zasady ochrony prywatności
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -295,6 +305,11 @@ find-more-themes = Znajdź więcej motywów
 # used for screen readers.
 addon-options-button =
     .aria-label = Więcej opcji
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 = Rozszerzenia i motywy pozwalają dostosować { -brand-product-name(case: "acc") }. Mogą polepszać prywatność, zwiększać produktywność, ulepszać multimedia, zmieniać wygląd { -brand-product-name(case: "gen") } i wiele więcej. Te małe programy są często tworzone przez osoby trzecie. Poniżej znajduje się wybór wyjątkowo bezpiecznych, wydajnych i funkcjonalnych dodatków <a data-l10n-name="learn-more-trigger">polecanych</a> przez Firefoksa.
 
 ## Add-on actions
 
@@ -382,6 +397,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Dozwolone w oknach prywatnych
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Dozwolone w oknach prywatnych
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -397,12 +416,12 @@ addon-detail-group-label-private-browsing =
 ## where add-ons are normally blocked for security reasons.
 
 # Used as a description for the option to allow or block an add-on on quarantined domains.
-addon-detail-quarantined-domains-label = Działanie na witrynach z ograniczeniami
+addon-detail-quarantined-domains-label = Działanie na witrynach z ograniczeniami:
 # Used as help text part of the quarantined domains UI controls row.
 addon-detail-quarantined-domains-help = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do witryn z ograniczeniami nałożonymi przez { -vendor-short-name(case: "acc") }. Zezwalaj tylko wtedy, gdy ufasz temu rozszerzeniu.
 # Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
-addon-detail-quarantined-domains-allow = Zezwól
-addon-detail-quarantined-domains-disallow = Nie zezwalaj
+addon-detail-quarantined-domains-allow = zezwól
+addon-detail-quarantined-domains-disallow = nie zezwalaj
 # aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
 addon-detail-group-label-quarantined-domains =
     .aria-label = { addon-detail-quarantined-domains-label }
@@ -413,14 +432,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name } poleca wyłącznie rozszerzenia spełniające nasze standardy bezpieczeństwa i wydajności
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Oficjalne rozszerzenie zbudowane przez Mozillę. Spełnia standardy bezpieczeństwa i wydajności.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = To rozszerzenie zostało sprawdzone pod kątem zgodności z naszymi standardami bezpieczeństwa i wydajności
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Oficjalne rozszerzenie zbudowane przez Mozillę. Spełnia standardy bezpieczeństwa i wydajności.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = To rozszerzenie zostało sprawdzone pod kątem zgodności ze standardami bezpieczeństwa i wydajności
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox poleca wyłącznie rozszerzenia spełniające standardy bezpieczeństwa i wydajności
 
 ##
 
@@ -428,6 +465,7 @@ available-updates-heading = Dostępne aktualizacje
 recent-updates-heading = Ostatnie aktualizacje
 release-notes-loading = Wczytywanie…
 release-notes-error = Przepraszamy, podczas pobierania informacji o wydaniu wystąpił błąd.
+addon-permissions-empty2 = To rozszerzenie nie wymaga żadnych uprawnień.
 addon-permissions-empty = To rozszerzenie nie wymaga żadnych uprawnień
 addon-permissions-required = Uprawnienia wymagane do działania podstawowych funkcji:
 addon-permissions-optional = Opcjonalne uprawnienia do działania dodatkowych funkcji:
@@ -437,8 +475,8 @@ recommended-themes-heading = Polecane motywy
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Daje witrynie <span data-l10n-name="hostname">{ $hostname }</span> te możliwości:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Masz ochotę coś stworzyć? <a data-l10n-name="link">Utwórz własny motyw za pomocą Waterfox Color.</a>
 
 ## Page headings
@@ -455,6 +493,9 @@ shortcuts-heading = Zarządzanie skrótami rozszerzeń
 default-heading-search-label = Znajdź więcej dodatków
 addons-heading-search-input =
     .placeholder = Szukaj na stronie addons.mozilla.org
+addons-heading-search-button =
+    .title = Szukaj na stronie addons.mozilla.org
+    .aria-label = Szukaj na stronie addons.mozilla.org
 addon-page-options-button =
     .title = Narzędzia dla wszystkich dodatków
 
@@ -477,10 +518,24 @@ details-notification-unsigned-and-disabled-link = Więcej informacji
 details-notification-unsigned = Dodatek „{ $name }” nie mógł zostać zweryfikowany do użytku w { -brand-short-name(case: "loc") }. Ostrożnie.
 details-notification-unsigned2 =
     .message = Dodatek „{ $name }” nie mógł zostać zweryfikowany do użytku w { -brand-short-name(case: "loc") }. Ostrożnie.
+details-notification-hard-blocked-extension =
+    .message = To rozszerzenie jest zablokowane z powodu naruszenia zasad Mozilli i zostało wyłączone.
+details-notification-hard-blocked-other =
+    .message = Ten dodatek jest zablokowany z powodu naruszenia zasad Mozilli i został wyłączony.
 details-notification-unsigned-link = Więcej informacji
 details-notification-blocked = Dodatek „{ $name }” został wyłączony z powodu problemów z bezpieczeństwem lub stabilnością.
 details-notification-blocked2 =
     .message = Dodatek „{ $name }” został wyłączony z powodu problemów z bezpieczeństwem lub stabilnością.
+details-notification-blocked-link2 = Szczegóły
+details-notification-soft-blocked-extension-disabled =
+    .message = To rozszerzenie jest ograniczone z powodu naruszania zasad Mozilli i zostało wyłączone. Można je włączyć, ale może to być ryzykowne.
+details-notification-soft-blocked-extension-enabled =
+    .message = To rozszerzenie narusza zasady Mozilli. Korzystanie z niego może być ryzykowne.
+details-notification-soft-blocked-other-disabled =
+    .message = Ten dodatek jest ograniczony z powodu naruszania zasad Mozilli i został wyłączony. Można go włączyć, ale może to być ryzykowne.
+details-notification-soft-blocked-other-enabled =
+    .message = Ten dodatek narusza zasady Mozilli. Korzystanie z niego może być ryzykowne.
+details-notification-softblocked-link2 = Szczegóły
 details-notification-blocked-link = Więcej informacji
 details-notification-softblocked = Dodatek „{ $name }” został zgłoszony jako powodujący problemy z bezpieczeństwem lub stabilnością.
 details-notification-softblocked2 =
@@ -498,3 +553,41 @@ plugins-openh264-name = OpenH264 Video Codec dostarczony przez Cisco Systems, In
 plugins-openh264-description = Wtyczka automatycznie instalowana przez Mozillę dla zapewnienia zgodności ze specyfikacją WebRTC oraz umożliwienia rozmów przy jej wykorzystaniu z urządzeniami wymagającymi kodeka H.264. Więcej informacji oraz kod źródłowy można znaleźć na stronie http://www.openh264.org
 plugins-widevine-name = Widevine Content Decryption Module dostarczony przez Google Inc.
 plugins-widevine-description = Wtyczka umożliwiająca odtwarzanie szyfrowanych treści zgodnych ze specyfikacją „Encrypted Media Extensions”. Szyfrowane treści są zazwyczaj używane przez strony, aby zabezpieczyć je przed kopiowaniem. Więcej informacji o „Encrypted Media Extensions” można znaleźć pod adresem https://www.w3.org/TR/encrypted-media/
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = Wymagane zbieranie danych:
+addon-permissions-optional-data-collection = Opcjonalne zbieranie danych:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = Uprawnienia i dane
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = Używane przez rozszerzenie { $extensionName }
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = { -brand-short-name } używa tego na about:inference
+mlmodel-link-preview = { -brand-short-name } używa tego do generowania punktów kluczowych podczas podglądu odnośników
+mlmodel-pdfjs = { -brand-short-name } używa tego do tworzenia tekstu alternatywnego dla obrazów dodawanych do plików PDF
+mlmodel-smart-tab-topic-engine = { -brand-short-name } używa tego do podpowiadania nazw grup kart
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } używa tego do podpowiadania kart grup kart
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = Sztuczna inteligencja na urządzeniu
+addon-category-mlmodel-title =
+    .title = Sztuczna inteligencja na urządzeniu
+mlmodel-heading = Zarządzanie modelami sztucznej inteligencji na urządzeniu
+mlmodel-description = Niektóre funkcje i rozszerzenia { -brand-short-name(case: "gen") } korzystają z modeli sztucznej inteligencji działających lokalnie na Twoim urządzeniu. Takie podejście chroni Twoją prywatność i w wielu przypadkach przyspiesza działanie. <a data-l10n-name="learn-more">Więcej informacji</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = Usuń
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = Rozmiar pliku
+mlmodel-addon-detail-last-used-label = Ostatnie użycie
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = Używane przez
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = Karta modelu
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Otwórz na Hugging Face

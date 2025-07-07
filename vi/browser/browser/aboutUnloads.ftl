@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,27 +6,24 @@
 ### Strings used in about:unloads, allowing users to manage the "tab unloading"
 ### feature.
 
-about-unloads-page-title = Quản lý dỡ thẻ
+about-unloads-page-title = Quản lý giải phóng thẻ
 about-unloads-intro =
-    { -brand-short-name } có tính năng tự động dỡ thẻ
-    để ngăn ứng dụng bị treo do không đủ bộ nhớ
-    khi bộ nhớ khả dụng của hệ thống sắp hết. Thẻ tiếp theo sẽ dỡ xuống
+    { -brand-short-name } có tính năng tự động giải phóng thẻ
+    để ngăn ứng dụng bị treo do không đủ bộ nhớ khi bộ nhớ
+    khả dụng của hệ thống sắp hết. Thẻ tiếp theo sẽ giải phóng
     được chọn dựa trên nhiều thuộc tính. Trang này hiển thị cách
-    { -brand-short-name } đặt ưu tiên các thẻ và thẻ nào sẽ được dỡ xuống
-    khi lệnh dỡ thẻ được kích hoạt. Bạn có thể kích hoạt dỡ thẻ theo cách
-    thủ công bằng cách nhấp vào nút <em>Dỡ</em>.
-
-# The link points to a Waterfox documentation page, only available in English,
+    { -brand-short-name } đặt ưu tiên các thẻ và thẻ nào sẽ bị giải phóng
+    khi lệnh giải phóng thẻ được kích hoạt. Bạn có thể kích hoạt giải phóng thẻ
+    theo cách thủ công bằng cách nhấp vào nút <em>Giải phóng</em>.
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
-    Xem <a data-l10n-name="doc-link">Quản lý dỡ thẻ</a> để tìm hiểu thêm
+    Xem <a data-l10n-name="doc-link">Quản lý giải phóng thẻ</a> để tìm hiểu thêm
     về tính năng và trang này.
-
 about-unloads-last-updated = Cập nhật gần đây nhất: { DATETIME($date, year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", hour12: "false") }
-about-unloads-button-unload = Dỡ
-    .title = Dỡ thẻ có mức độ ưu tiên cao nhất
-about-unloads-no-unloadable-tab = Không có thẻ nào có thể dỡ xuống.
-
+about-unloads-button-unload = Giải phóng
+    .title = Giải phóng thẻ có mức độ ưu tiên cao nhất
+about-unloads-no-unloadable-tab = Không có thẻ nào có thể giải phóng.
 about-unloads-column-priority = Ưu tiên
 about-unloads-column-host = Máy chủ
 about-unloads-column-last-accessed = Lần truy cập cuối
@@ -38,7 +35,6 @@ about-unloads-column-memory = Bộ nhớ
     .title = Mức sử dụng bộ nhớ ước tính của thẻ
 about-unloads-column-processes = ID tiến trình
     .title = ID của các tiến trình lưu trữ nội dung của thẻ
-
 about-unloads-last-accessed = { DATETIME($date, year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", hour12: "false") }
 about-unloads-memory-in-mb = { NUMBER($mem, maxFractionalUnits: 2) } MB
 about-unloads-memory-in-mb-tooltip =

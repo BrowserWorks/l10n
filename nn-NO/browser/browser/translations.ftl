@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Omset denne sida
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Handsam språk
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Vis original
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Omsetjingar
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Last ned språk for fråkopla-omsetting.
 translations-manage-all-language = Alle språk
 translations-manage-download-button = Last ned
 translations-manage-delete-button = Slett
-translations-manage-intro = Vel innstillingane for språk og nettstadomsetjing og behandle språk som er installert for fråkopla omsetjing.
-translations-manage-install-description = Installer språk for fråkopla-omsetjing.
-translations-manage-language-install-button =
-    .label = Installer
-translations-manage-language-install-all-button =
-    .label = Installer alle
-    .accesskey = a
 translations-manage-intro-2 = Angje innstillingar for språk og nettstadomsetting og behandle språk som er lasta ned for fråkopla omsetting.
 translations-manage-download-description = Last ned språk for fråkopla omsetting
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Fjern alle
     .accesskey = F
-translations-manage-error-install = Klarte ikkje å installere språkfilene. Prøv på nytt.
 translations-manage-error-download = Klarte ikkje å laste ned språkfilene. Prøv på nytt.
 translations-manage-error-delete = Det oppstod ein feil ved sletting av språkfilene. Prøv på nytt.
 translations-manage-error-remove = Det oppstod ein feil ved sletting av språkfilene. Prøv på nytt.

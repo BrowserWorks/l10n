@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = Ativar ou desativar suporte a portal cativo.
 policy-CertificatesDescription = Adicionar certificados ou usar certificados integrados.
 policy-ContentAnalysis = Ativar ou desativar conexão com agente de prevenção de perda de dados.
 policy-Cookies = Permitir ou impedir que sites criem cookies.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Definir diretivas relacionadas a contêineres.
 policy-DisableAccounts = Desativar serviços baseados em conta, inclusive sincronização.
 policy-DisabledCiphers = Desativar criptografia.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Impedir que o agente padrão do navegador ex
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas de desenvolvimento.
 policy-DisableEncryptedClientHello = Desativar o uso do recurso TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Desativar comandos de envio de comentários no menu Ajuda (Enviar opinião e Denunciar site enganoso).
-policy-DisableWaterfoxAccounts = Desativar serviços baseados em { -fxaccount-brand-name }, incluindo a sincronização.
+policy-DisableFirefoxAccounts = Desativar serviços baseados em { -fxaccount-brand-name }, incluindo a sincronização.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Desativar serviços baseados em conta, inclusive sincronização.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Desativar o recurso de captura de tela do Waterfox.
-policy-DisableWaterfoxStudies = Impedir que o { -brand-short-name } execute estudos.
+policy-DisableFirefoxAccounts1 = Desativar serviços baseados em conta, inclusive sincronização.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Desativar o recurso de captura de tela do Waterfox.
+policy-DisableFirefoxStudies = Impedir que o { -brand-short-name } execute estudos.
 policy-DisableForgetButton = Impedir acesso ao botão "Esquecer".
 policy-DisableFormHistory = Não memorizar o histórico de pesquisas e formulários.
 policy-DisablePrimaryPasswordCreation = Se for true, não pode ser criada uma senha principal.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Desativar avisos 
 policy-Extensions = Instalar, desinstalar e bloquear extensões. A opção “Instalar” recebe URLs ou caminhos como parâmetros. As opções “Desinstalar” e "Bloqueado" usam IDs de extensões.
 policy-ExtensionSettings = Gerenciar todos os aspectos da instalação de extensões.
 policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
-policy-WaterfoxHome2 = Configurar a { -firefox-home-brand-name }.
-policy-WaterfoxSuggest = Configurar o { -firefox-suggest-brand-name }.
+policy-FirefoxHome2 = Configurar a { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Configurar o { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Forçar navegação direta em site da intranet em vez de pesquisar ao digitar uma única palavra na barra de endereços.
 policy-Handlers = Configurar manipuladores de aplicativos padrão.
 policy-HardwareAcceleration = Caso definido como "false", desativar a aceleração de hardware.
@@ -119,6 +119,7 @@ policy-Permissions2 = Configurar permissões de câmera, microfone, localizaçã
 policy-PictureInPicture = Ativar ou desativar picture-in-picture.
 policy-PopupBlocking = Permitir por padrão que determinados sites abram janelas ou abas.
 policy-Preferences = Definir e bloquear o valor de um subconjunto de preferências.
+policy-PrivateBrowsingModeAvailability = Definir disponibilidade do modo de navegação privativa.
 policy-PromptForDownloadLocation = Perguntar onde salvar arquivos ao baixar.
 policy-Proxy = Definir as configurações de proxy.
 policy-RequestedLocales = Definir a lista de idiomas solicitados para a aplicação por ordem de preferência.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Ativar ou desativar sugestões de pesquisa.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Adicionar ou excluir módulos PKCS #11.
 policy-ShowHomeButton = Mostrar o botão de página inicial na barra de ferramentas.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Não exibir os termos de uso e o aviso de privacidade ao iniciar. Você declara que aceita e tem autoridade para aceitar os termos de uso em nome de todos os indivíduos a quem você fornece acesso a este navegador.
 policy-SSLVersionMax = Definir a versão SSL máxima.
 policy-SSLVersionMin = Definir a versão SSL mínima.
 policy-StartDownloadsInTempDirectory = Forçar iniciar downloads em um lugar temporário local em vez do diretório de download padrão.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Imprimir usando o diálogo de impressão do sistem
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear o acesso a determinados sites. Confira a documentação para mais detalhes sobre o formato.
 policy-Windows10SSO = Permitir autenticação única (single sign-on) do Windows em contas da Microsoft no trabalho e na escola.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Permitir autenticação única em contas Microsoft Entra.

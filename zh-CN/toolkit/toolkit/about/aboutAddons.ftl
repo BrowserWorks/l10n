@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -203,6 +203,10 @@ addon-updates-manual-updates-found = 查看可用更新
 
 addon-install-from-file = 从文件安装附加组件…
     .accesskey = I
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = 从文件安装或更新附加组件…
+    .accesskey = I
 addon-install-from-file-dialog-title = 选择附加组件来安装
 addon-install-from-file-filter-name = 附加组件
 addon-open-about-debugging = 调试附加组件
@@ -264,6 +268,12 @@ discopane-notice-recommendations = 以下的部分推荐是基于您的已安装
 discopane-notice-recommendations2 =
     .message = 以下的部分推荐是基于您的已安装附加组件、选项设置和使用统计得出的个性化结果。
 discopane-notice-learn-more = 详细了解
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = 您的配色主题已移除
+    .message = { -brand-product-name } 更新了配色收藏集，因此已从您的“保存的主题”列表移除旧版本。请从附加组件站获取新版本。
+colorway-removal-notice-learn-more = 详细了解
+colorway-removal-notice-button = 获取新版配色主题
 privacy-policy = 隐私政策
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -284,6 +294,11 @@ find-more-themes = 寻找更多主题
 # used for screen readers.
 addon-options-button =
     .aria-label = 更多选项
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 = 您可通过安装扩展和主题来定制 { -brand-product-name }，强化隐私保护、提升浏览效率、改进媒体体验、更改 { -brand-product-name } 外观，还有更多妙用。这些小型软件程序大多由第三方开发。以下是一些 Waterfox <a data-l10n-name="learn-more-trigger">推荐</a>的附加组件，它们在安全、性能、功能等方面表现优秀。
 
 ## Add-on actions
 
@@ -369,6 +384,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = 允许运行于隐私窗口
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = 允许运行于隐私窗口
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -400,14 +419,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name } 只推荐符合我们的安全和性能标准的扩展。
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = 由 BrowserWorks 构建的官方扩展，符合安全和性能标准
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = 此扩展已通过审核，符合我们的安全和性能标准
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = 由 BrowserWorks 构建的官方扩展，符合安全和性能标准
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = 此扩展已通过审核，符合我们的安全和性能标准
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox 只推荐符合安全和性能标准的扩展。
 
 ##
 
@@ -415,6 +452,7 @@ available-updates-heading = 可用更新
 recent-updates-heading = 最近更新
 release-notes-loading = 正在加载…
 release-notes-error = 抱歉，加载发行说明时出错。
+addon-permissions-empty2 = 此扩展未要求任何权限。
 addon-permissions-empty = 此扩展未要求任何权限
 addon-permissions-required = 核心功能所需的权限：
 addon-permissions-optional = 附加功能的可选权限：
@@ -424,8 +462,8 @@ recommended-themes-heading = 推荐主题
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = 授予 <span data-l10n-name="hostname">{ $hostname }</span> 以下功能：
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = 有好的创意？<a data-l10n-name="link">使用 Waterfox Color 打造自己的主题。</a>
 
 ## Page headings
@@ -442,6 +480,9 @@ shortcuts-heading = 管理扩展快捷键
 default-heading-search-label = 寻找更多附加组件
 addons-heading-search-input =
     .placeholder = 搜索 addons.mozilla.org
+addons-heading-search-button =
+    .title = 搜索 addons.mozilla.org
+    .aria-label = 搜索 addons.mozilla.org
 addon-page-options-button =
     .title = 用于所有附加组件的工具
 
@@ -464,24 +505,76 @@ details-notification-unsigned-and-disabled-link = 了解详情
 details-notification-unsigned = { $name } 未通过针对是否适用于 { -brand-short-name } 的验证。请谨慎。
 details-notification-unsigned2 =
     .message = { $name } 未通过针对是否适用于 { -brand-short-name } 的验证。请谨慎。
+details-notification-hard-blocked-extension =
+    .message = 此扩展因违反 BrowserWorks 的政策而被阻止，并且已被禁用。
+details-notification-hard-blocked-other =
+    .message = 此附加组件因违反 BrowserWorks 的政策而被阻止，并且已被禁用。
 details-notification-unsigned-link = 了解详情
 details-notification-blocked = { $name } 由于安全或稳定性问题已被禁用。
 details-notification-blocked2 =
     .message = { $name } 由于安全或稳定性问题已被禁用。
+details-notification-blocked-link2 = 查阅详情
+details-notification-soft-blocked-extension-disabled =
+    .message = 此扩展因违反 BrowserWorks 的政策而受限，并且已经被禁用。您可以重新启用，但可能存在风险。
+details-notification-soft-blocked-extension-enabled =
+    .message = 此扩展违反了 BrowserWorks 的政策，使用时可能存在风险。
+details-notification-soft-blocked-other-disabled =
+    .message = 此附加组件因违反 BrowserWorks 的政策而受限，并且已经被禁用。您可以重新启用，但可能存在风险。
+details-notification-soft-blocked-other-enabled =
+    .message = 此附加组件违反了 BrowserWorks 的政策，使用时可能存在风险。
+details-notification-softblocked-link2 = 查阅详情
 details-notification-blocked-link = 了解详情
 details-notification-softblocked = { $name } 已知会导致安全性或稳定性问题。
 details-notification-softblocked2 =
     .message = { $name } 已知会导致安全性或稳定性问题。
 details-notification-softblocked-link = 了解详情
-details-notification-gmp-pending = { $name } 即将安装。
+details-notification-gmp-pending = “{ $name }”即将安装。
 details-notification-gmp-pending2 =
-    .message = { $name } 即将安装。
+    .message = “{ $name }”即将安装。
 
 ## Gecko Media Plugins (GMPs)
 
 plugins-gmp-license-info = 许可协议信息
 plugins-gmp-privacy-info = 隐私信息
-plugins-openh264-name = OpenH264 视频编码器，由思科系统公司提供
-plugins-openh264-description = 此插件由 BrowserWorks 自动安装，以遵从 WebRTC 技术标准，满足设备进行 WebRTC 通话所需要的 H.264 视频编码器。访问 http://www.openh264.org/ 可查看编码器的源代码和详细了解其实现。
+plugins-openh264-name = OpenH264 视频编解码器，由思科系统公司提供
+plugins-openh264-description = 此插件由 BrowserWorks 自动安装，以遵从 WebRTC 技术标准，满足设备进行 WebRTC 通话所需要的 H.264 视频编解码器。访问 http://www.openh264.org/ 可查看编解码器的源代码和详细了解其实现。
 plugins-widevine-name = Widevine 内容解密模块，由 Google 公司提供
 plugins-widevine-description = 此插件让您可播放符合加密媒体扩展（EME）规范的加密媒体内容。网站通常使用加密媒体内容来防止高质量媒体内容的非法复制。访问 https://www.w3.org/TR/encrypted-media/ 可获取加密媒体扩展（EME）的更多信息。
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = 必要的数据收集：
+addon-permissions-optional-data-collection = 可选的数据收集：
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = 权限与数据
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = 扩展“{ $extensionName }”使用此模型
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = { -brand-short-name } 在 about:inference 中使用此模型
+mlmodel-link-preview = { -brand-short-name } 使用此模型在您预览链接时列举要点
+mlmodel-pdfjs = { -brand-short-name } 使用此模型为您添加到 PDF 的图像创建替换文字
+mlmodel-smart-tab-topic-engine = { -brand-short-name } 使用此模型建议标签页群组名称
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } 使用此模型为标签页群组建议标签页
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = 端侧 AI
+addon-category-mlmodel-title =
+    .title = 端侧 AI
+mlmodel-heading = 管理端侧 AI 模型
+mlmodel-description = { -brand-short-name } 的部分功能和扩展由运行在您设备本地的 AI 模型驱动。这种做法可以保护您的隐私，并提升多个场景下的性能。 <a data-l10n-name="learn-more">详细了解</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = 移除
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = 文件大小
+mlmodel-addon-detail-last-used-label = 上次使用
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = 用于
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = 模型卡片
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = 到 Hugging Face 查看

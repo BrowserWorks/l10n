@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -52,7 +52,7 @@ connection-proxy-socks5 =
     .accesskey = v
 connection-proxy-noproxy = 直接連線
     .accesskey = n
-connection-proxy-noproxy-desc = 範例: .mozilla.org, .net.tw, 192.168.1.0/24
+connection-proxy-noproxy-desc = 範例：.mozilla.org, .net.tw, 192.168.1.0/24
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = 與 localhost、127.0.0.1/8 與 ::1 的連線永遠不會經過代理伺服器。
 connection-proxy-autotype =

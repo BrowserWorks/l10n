@@ -1,16 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = bruge oplysninger om gemte betalingsmetoder
 autofill-use-payment-method-os-prompt-windows = { -brand-short-name } forsøger at bruge oplysninger om gemte betalingsmetoder. Godkend adgang til denne Windows-konto.
 autofill-use-payment-method-os-prompt-other = { -brand-short-name } forsøger at bruge oplysninger om gemte betalingsmetoder.
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = vise oplysninger om gemte betalingsmetoder
 autofill-edit-payment-method-os-prompt-windows = { -brand-short-name } forsøger at vise oplysninger om gemte betalingsmetoder. Godkend adgang til denne Windows-konto.
@@ -81,3 +81,6 @@ autofill-category-name = navn
 autofill-category-organization = organisation
 autofill-category-tel = telefonnummer
 autofill-category-email = mailadresse
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = Webstedet er ikke sikkert og { -brand-short-name } har derfor midlertidigt deaktiveret autofyldning.

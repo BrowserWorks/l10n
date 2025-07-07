@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,7 +18,7 @@ permission-dialog-description-app = 要允许此网站使用“{ $appName }”�
 permission-dialog-description-host-app = 要允许 { $host } 使用“{ $appName }”打开 { $scheme } 链接吗？
 permission-dialog-description-file-app = 要允许此文件使用“{ $appName }”打开 { $scheme } 链接吗？
 permission-dialog-description-extension-app = 要允许扩展“{ $extension }”使用“{ $appName }”打开 { $scheme } 链接吗？
-permission-dialog-description-system-app = 要使用 { $appName } 打开 { $scheme } 链接吗？
+permission-dialog-description-system-app = 要使用“{ $appName }”打开 { $scheme } 链接吗？
 permission-dialog-description-system-noapp = 要打开 { $scheme } 链接吗？
 
 ## Please keep the emphasis around the hostname and scheme (ie the

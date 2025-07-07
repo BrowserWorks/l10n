@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = 새 탭
@@ -28,10 +32,16 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = 왼쪽 탭 닫기
     .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = 위 탭 닫기
+    .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = 오른쪽 탭 닫기
+    .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = 아래 탭 닫기
     .accesskey = i
 close-other-tabs =
     .label = 다른 탭 닫기
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = 공유
     .accesskey = h
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = 오른쪽에 새 탭
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = 아래에 새 탭
+    .accesskey = w
+tab-context-new-group =
+    .label = 새 그룹
+    .accesskey = G
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -106,3 +126,10 @@ tab-context-move-tabs =
 tab-context-send-tabs-to-device =
     .label = 탭 { $tabCount }개를 기기로 보내기
     .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] 탭 언로드
+           *[other] 탭 { $tabCount }개 언로드
+        }
+    .accesskey = U

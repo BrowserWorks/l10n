@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Dịch trang này
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Quản lý ngôn ngữ
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Hiển thị bản gốc
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Dịch
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Tải xuống ngôn ngữ để dịch ngoại
 translations-manage-all-language = Tất cả ngôn ngữ
 translations-manage-download-button = Tải xuống
 translations-manage-delete-button = Xóa
-translations-manage-intro = Đặt tùy chọn ngôn ngữ và bản dịch trang web của bạn, đồng thời quản lý các ngôn ngữ được cài đặt để dịch ngoại tuyến.
-translations-manage-install-description = Cài đặt ngôn ngữ để dịch ngoại tuyến
-translations-manage-language-install-button =
-    .label = Cài đặt
-translations-manage-language-install-all-button =
-    .label = Cài đặt tất cả
-    .accesskey = I
 translations-manage-intro-2 = Đặt tùy chọn ngôn ngữ và bản dịch trang web của bạn, đồng thời quản lý các ngôn ngữ được tải xuống để dịch ngoại tuyến.
 translations-manage-download-description = Tải xuống ngôn ngữ để dịch ngoại tuyến
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Xóa tất cả
     .accesskey = e
-translations-manage-error-install = Đã xảy ra sự cố khi cài đặt tập tin ngôn ngữ. Vui lòng thử lại.
 translations-manage-error-download = Đã xảy ra sự cố khi tải xuống tập tin ngôn ngữ. Hãy thử lại.
 translations-manage-error-delete = Đã xảy ra sự cố khi xóa tập tin ngôn ngữ. Hãy thử lại.
 translations-manage-error-remove = Đã xảy ra lỗi khi xóa tập tin ngôn ngữ. Vui lòng thử lại.

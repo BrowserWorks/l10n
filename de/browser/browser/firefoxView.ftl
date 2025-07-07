@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue } % abgeschlossen
 firefoxview-tabpickup-step-signin-header = Nahtlos zwischen Geräten wechseln
 firefoxview-tabpickup-step-signin-description = Um Ihre Tabs vom Telefon hier abzurufen, melden Sie sich zuerst an oder erstellen Sie ein Konto.
 firefoxview-tabpickup-step-signin-primarybutton = Weiter
+firefoxview-syncedtabs-signin-header-2 = Ihr { -brand-product-name } auf all Ihren Geräten
+firefoxview-syncedtabs-signin-description-2 = Melden Sie sich an oder erstellen Sie ein Konto, um Tabs zu sehen, die Sie auf Ihrem Telefon und anderen Geräten geöffnet haben. Mit einem Konto können Sie auch Ihre Passwörter, Chronik und mehr synchronisieren.
+firefoxview-syncedtabs-signin-primarybutton-2 = Anmelden
 firefoxview-syncedtabs-signin-header = Holen Sie sich Tabs von überall
 firefoxview-syncedtabs-signin-description = Um Ihre Tabs von überall anzuzeigen, wo Sie { -brand-product-name } verwenden, melden Sie sich bei Ihrem Konto an. Wenn Sie kein Konto haben, führen wir Sie durch die Schritte zur Registrierung.
 firefoxview-syncedtabs-signin-primarybutton = Anmelden oder registrieren
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synchronisieren Sie { -brand-product-na
 firefoxview-tabpickup-adddevice-description = Laden Sie { -brand-product-name } für Mobilgeräte herunter und melden Sie sich dort an.
 firefoxview-tabpickup-adddevice-learn-how = So wird's gemacht
 firefoxview-tabpickup-adddevice-primarybutton = { -brand-product-name } für Mobilgeräte holen
+firefoxview-syncedtabs-adddevice-header-2 = Holen Sie sich Tabs von überall
+firefoxview-syncedtabs-adddevice-description-2 = Melden Sie sich bei { -brand-product-name } auf Ihrem Handy oder einem anderen Computer an, um hier Tabs anzuzeigen. Erfahren Sie, wie Sie <a data-l10n-name="url">weitere Geräte verbinden</a>.
 firefoxview-syncedtabs-adddevice-header = Melden Sie sich auf Ihren anderen Geräten bei { -brand-product-name } an
 firefoxview-syncedtabs-adddevice-description = Um Ihre Tabs von überall anzuzeigen, wo Sie { -brand-product-name } verwenden, melden Sie sich auf all Ihren Geräten an. Erfahren Sie, wie Sie <a data-l10n-name="url">zusätzliche Geräte verbinden</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = { -brand-product-name } für Mobilgeräte ausprobieren
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Tabs von anderen Geräten
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Alle ansehen
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Kürzlich geschlossene Tabs durchsuchen
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Tabs durchsuchen
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Synchronisierte Tabs durchsuchen
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (lokale Dateien)
 firefoxview-show-all-history = Gesamte Chronik anzeigen
 firefoxview-view-more-browsing-history = Mehr Browserverlauf anzeigen
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Kommen Sie zurück dorthin, wo Sie schon waren
 firefoxview-history-empty-description = Während Sie surfen, werden die von Ihnen besuchten Seiten hier aufgelistet.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Der Schutz Ihrer Privatsphäre ist d
 firefoxview-choose-browser-button = Browser wählen
     .title = Browser wählen
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Nichts zum Anzeigen
 firefoxview-dont-remember-history-empty-description = Der Schutz Ihrer Privatsphäre ist das Herzstück dessen, was wir tun. Deshalb können Sie anpassen, welche Aktivitäten { -brand-short-name } sich merkt.
 firefoxview-dont-remember-history-empty-description-two = Basierend auf Ihren aktuellen Einstellungen speichert { -brand-short-name } Ihre Aktivitäten nicht während des Surfens. Um das zu ändern, ändern Sie <a data-l10n-name="history-settings-url-two">Ihre Chronik-Einstellungen, um Ihre Chronik zu speichern</a>.
+firefoxview-dont-remember-history-empty-header-2 = Sie haben die Kontrolle darüber, was { -brand-short-name } speichert
+firefoxview-dont-remember-history-empty-description-one = { -brand-short-name } kann im Moment Ihre Surf-Aktivitäten nicht speichern. Um dies zu ändern, <a data-l10n-name="history-settings-url-two">aktualisieren Sie Ihre Chronikeinstellungen</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Schließen
     .title = Schließen
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Chronik aus einem anderen Browser importieren
 firefoxview-import-history-description = Machen Sie { -brand-short-name } zu Ihrem Browser Nr. 1. Importieren Sie die Surf-Chronik, Lesezeichen und mehr.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Einen Tab zu früh geschlossen?
 firefoxview-recentlyclosed-empty-description = Hier finden Sie die Tabs, die Sie kürzlich geschlossen haben, damit Sie sie schnell wieder öffnen können.

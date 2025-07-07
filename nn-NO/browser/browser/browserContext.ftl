@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Waterfox Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
@@ -131,8 +131,8 @@ main-context-menu-open-link-new-tab =
     .label = Opne lenke i ny fane
     .accesskey = n
 main-context-menu-open-link-container-tab =
-    .label = Opne lenke i ny innhaldsfane
-    .accesskey = a
+    .label = Opne lenke i ny behaldarfane
+    .accesskey = O
 main-context-menu-open-link-new-window =
     .label = Opne lenke i nytt vindauge
     .accesskey = O
@@ -149,9 +149,7 @@ main-context-menu-save-link-to-pocket =
     .label = Lagre lenke til { -pocket-brand-name }
     .accesskey = o
 
-## The access keys for "Copy Link" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-copy-email =
     .label = Kopier e-postadressa
@@ -162,6 +160,15 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Kopier lenke
     .accesskey = l
+main-context-menu-preview-link =
+    .label = Førehandsvis
+    .accesskey = r
+# "Copy Clean Link" means that Firefox will remove things from the link you
+# copied, like items that identify you for advertising purposes, and other items
+# sites add into URLs to help them deliver a certain browsing experience.
+main-context-menu-copy-clean-link =
+    .label = Kopier rein lenke
+    .accesskey = K
 # This command copies the link, removing additional
 # query parameters used to track users across sites.
 main-context-menu-strip-on-share-link =
@@ -290,9 +297,7 @@ main-context-menu-send-to-device =
     .label = Send sida til eining
     .accesskey = e
 
-## The access keys for "Use Saved Login" and "Use Saved Password"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-use-saved-login =
     .label = Bruk lagra innlogging
@@ -318,6 +323,9 @@ main-context-menu-manage-passwords =
     .accesskey = H
 main-context-menu-keyword =
     .label = Lag nøkkelord for dette søket…
+    .accesskey = L
+main-context-menu-add-engine =
+    .label = Legg til søkjemotor
     .accesskey = L
 main-context-menu-link-send-to-device =
     .label = Send lenke til eining
@@ -384,7 +392,7 @@ main-context-menu-eme-learn-more =
 # Variables
 #   $containerName (String): The name of the current container
 main-context-menu-open-link-in-container-tab =
-    .label = Opne lenke i ny { $containerName }-innhaldsfane
+    .label = Opne lenke i ny { $containerName }-behaldarfane
     .accesskey = p
 main-context-menu-reveal-password =
     .label = Vis passord

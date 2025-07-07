@@ -1,9 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sidebar-menu-bookmarks =
     .label = Favoritos
+sidebar-menu-bookmarks-2 = Favoritos
 sidebar-menu-history =
     .label = Histórico
 sidebar-menu-synced-tabs =
@@ -11,6 +12,6 @@ sidebar-menu-synced-tabs =
 sidebar-menu-megalist =
     .label = Senhas
 sidebar-menu-close =
-    .label = Fechar painel
+    .label = Fechar painel lateral
 sidebar-close-button =
-    .tooltiptext = Fechar painel
+    .tooltiptext = Fechar painel lateral

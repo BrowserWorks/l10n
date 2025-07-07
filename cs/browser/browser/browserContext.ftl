@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Waterfox Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name(capitalization: "upper") }
@@ -149,9 +149,7 @@ main-context-menu-save-link-to-pocket =
     .label = Uložit odkaz do { -pocket-brand-name(case: "gen") }
     .accesskey = o
 
-## The access keys for "Copy Link" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-copy-email =
     .label = Kopírovat e-mailovou adresu
@@ -161,6 +159,15 @@ main-context-menu-copy-phone =
     .accesskey = o
 main-context-menu-copy-link-simple =
     .label = Zkopírovat odkaz
+    .accesskey = a
+main-context-menu-preview-link =
+    .label = Náhled odkazu
+    .accesskey = N
+# "Copy Clean Link" means that Firefox will remove things from the link you
+# copied, like items that identify you for advertising purposes, and other items
+# sites add into URLs to help them deliver a certain browsing experience.
+main-context-menu-copy-clean-link =
+    .label = Zkopírovat čistý odkaz
     .accesskey = a
 # This command copies the link, removing additional
 # query parameters used to track users across sites.
@@ -290,9 +297,7 @@ main-context-menu-send-to-device =
     .label = Poslat stránku do zařízení
     .accesskey = e
 
-## The access keys for "Use Saved Login" and "Use Saved Password"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-use-saved-login =
     .label = Použit uložené uživatelské jméno
@@ -319,6 +324,9 @@ main-context-menu-manage-passwords =
 main-context-menu-keyword =
     .label = Přiřadit k tomuto vyhledávání klíčové slovo…
     .accesskey = h
+main-context-menu-add-engine =
+    .label = Přidat vyhledávač
+    .accesskey = v
 main-context-menu-link-send-to-device =
     .label = Poslat odkaz do zařízení
     .accesskey = e

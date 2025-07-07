@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -72,6 +72,19 @@ protections-panel-blocking-label = 차단됨
 protections-panel-not-blocking-label = 허용됨
 protections-panel-not-found-label = 감지되지 않음
 
+## Smartblock strings
+
+protections-panel-smartblock-desc-label = { -brand-short-name }는 사용자가 이 사이트에 있는 동안 사용자가 허용하지 않는 한 추적 콘텐츠를 차단합니다.
+# Variables
+#  $trackername (String): the name of the tracker that is currently being blocked.
+protections-panel-smartblock-blocking-toggle =
+    .label = { $trackername } 허용
+#  $trackername (String): the name of the tracker that is currently being blocked.
+smartblock-placeholder-title = { $trackername } 추적기 및 콘텐츠 차단됨
+smartblock-placeholder-desc = { -brand-short-name } 설정으로 인해 이 콘텐츠가 여러 사이트에서 사용자를 추적하거나 광고에 사용되는 것을 차단했습니다.
+#  $websitehost (String): host of website with blocked content.
+smartblock-placeholder-button-text = { $websitehost }에서 허용
+
 ##
 
 protections-panel-settings-label = 보호 설정
@@ -107,7 +120,7 @@ protections-panel-content-blocking-manage-settings =
     .accesskey = M
 protections-panel-content-blocking-breakage-report-view =
     .title = 깨진 사이트 신고
-protections-panel-content-blocking-breakage-report-view-description = 특정 추적기를 차단하면 일부 웹 사이트에서 문제가 발생할 수 있습니다. 이러한 문제를 보고하면 모든 사람에게 더 나은 { -brand-short-name }를 제공하는데 도움이 됩니다. 이 보고서를 보내면 URL과 브라우저 설정에 대한 정보가 BrowserWorks로 전송됩니다. <label data-l10n-name="learn-more">더 알아보기</label>
+protections-panel-content-blocking-breakage-report-view-description = 특정 추적기를 차단하면 일부 웹 사이트에서 문제가 발생할 수 있습니다. 이러한 문제를 보고하면 모든 사람에게 더 나은 { -brand-short-name }를 제공하는 데 도움이 됩니다. 이 보고서를 보내면 URL과 브라우저 설정에 대한 정보가 BrowserWorks로 전송됩니다. <label data-l10n-name="learn-more">더 알아보기</label>
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,6 +17,9 @@ webext-perms-header-unsigned-with-perms = Pridėti „{ $extension }“? Šis pr
 webext-perms-sideload-header = „{ $extension }“ pridėtas
 webext-perms-optional-perms-header = „{ $extension }“ prašo papildomų leidimų.
 
+## Headers used in the webextension permissions dialog, inside the content.
+
+
 ##
 
 webext-perms-add =
@@ -25,7 +28,6 @@ webext-perms-add =
 webext-perms-cancel =
     .label = Atsisakyti
     .accesskey = A
-
 webext-perms-sideload-text = Kita jūsų kompiuteryje esanti programa įrašė priedą, galintį paveikti jūsų naršyklę. Prašome peržiūrėti šio priedo prašomų leidimų sąrašą ir nuspręsti ar įjungti, ar atsisakyti (palikti išjungtą).
 webext-perms-sideload-text-no-perms = Kita jūsų kompiuteryje esanti programa įrašė priedą, galintį paveikti jūsų naršyklę. Prašome nuspręsti ar įjungti, ar atsisakyti (palikti išjungtą).
 webext-perms-sideload-enable =
@@ -34,14 +36,12 @@ webext-perms-sideload-enable =
 webext-perms-sideload-cancel =
     .label = Atsisakyti
     .accesskey = A
-
 # Variables:
 #   $extension (String): replaced with the localized name of the extension.
 webext-perms-update-text = „{ $extension }“ buvo atnaujintas. Jūs turite patvirtinti naujus leidimus prieš įrašant šią versiją. Pasirinkę „Atsisakyti“, liksite prie senos priedo versijos. Šis priedas turės tokius leidimus:
 webext-perms-update-accept =
     .label = Naujinti
     .accesskey = N
-
 webext-perms-optional-perms-list-intro = Jam reikia:
 webext-perms-optional-perms-allow =
     .label = Leisti
@@ -49,13 +49,10 @@ webext-perms-optional-perms-allow =
 webext-perms-optional-perms-deny =
     .label = Drausti
     .accesskey = D
-
 webext-perms-host-description-all-urls = Pasiekti jūsų duomenis visose svetainėse
-
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Pasiekti jūsų duomenis svetainėse, priklausančiose { $domain } sričiai
-
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
@@ -68,7 +65,6 @@ webext-perms-host-description-too-many-wildcards =
 # Variables:
 #   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., www.mozilla.org)
 webext-perms-host-description-one-site = Pasiekti jūsų duomenis iš { $domain }
-
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
@@ -78,6 +74,9 @@ webext-perms-host-description-too-many-sites =
         [few] Pasiekti jūsų duomenis { $domainCount } kitose svetainėse
        *[other] Pasiekti jūsų duomenis { $domainCount } kitų svetainių
     }
+
+## Strings for data collection permissions in the permission prompt.
+
 
 ## Headers used in the webextension permissions dialog for synthetic add-ons.
 ## The part of the string describing what privileges the extension gives should be consistent
@@ -103,3 +102,6 @@ webext-site-perms-header-unsigned-with-perms = Pridėti „{ $extension }“? Š
 
 webext-site-perms-midi = Naudoti MIDI įrenginius
 webext-site-perms-midi-sysex = Naudoti MIDI įrenginius su „SysEx“ palaikymu
+
+## Colorway theme migration
+

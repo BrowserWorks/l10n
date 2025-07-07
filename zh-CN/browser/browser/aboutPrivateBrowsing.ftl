@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,7 +28,7 @@ about-private-browsing-hide-activity-1 = { -mozilla-vpn-brand-name } 可隐藏�
 about-private-browsing-prominent-cta = { -mozilla-vpn-brand-name } 可提供隐私保护
 about-private-browsing-focus-promo-cta = 下载 { -focus-brand-name }
 about-private-browsing-focus-promo-header = { -focus-brand-name }：随手可得的隐私浏览
-about-private-browsing-focus-promo-text = 我们隐私浏览专用 App，可自动清除您每次上网的历史记录和 Cookie。
+about-private-browsing-focus-promo-text = 我们的隐私浏览专用应用，可自动清除您每次上网的历史记录和 Cookie。
 
 ## The following strings will be used for experiments in Fx99 and Fx100
 

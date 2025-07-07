@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,6 +11,15 @@ contentanalysis-slow-agent-dialog-header = Pesquisa em progresso
 #   $agent - The name of the DLP agent doing the analysis
 #   $filename - Name of the file being analyzed, such as "aFile.txt"
 contentanalysis-slow-agent-dialog-body-file = { $agent } está a rever “{ $filename }” contra as políticas de dados da sua organização. Isto poderá demorar algum tempo.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more =
+    { $count ->
+        [one] { $agent } está a rever “{ $filename }” e { $count } item adicional contra as políticas de dados da sua organização. Isto poderá demorar algum tempo.
+       *[other] { $agent } está a rever “{ $filename }” e { $count } itens adicionais contra as políticas de dados da sua organização. Isto poderá demorar algum tempo.
+    }
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent } está a rever o que colou contra as políticas de dados da sua organização. Isto poderá demorar algum tempo.
@@ -41,21 +50,6 @@ contentanalysis-genericresponse-message = A Análise de Conteúdo respondeu com 
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
 contentanalysis-block-message = A sua organização utiliza um software de proteção contra perda de dados que bloqueou este conteúdo: { $content }.
 # Variables:
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-error-message = Ocorreu um erro ao comunicar com o software de proteção contra perda de dados. Transferência negada para o recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-unspecified-error-message = Ocorreu um erro na comunicação com { $agent }. Transferência negada para o recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-no-agent-connected-message = Não é possível ligar a { $agent }. Transferência negada para o recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-invalid-agent-signature-message = A verificação da assinatura falhou para { $agent }. Transferência negada para o recurso: { $content }.
-# Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
 contentanalysis-unspecified-error-message-content = Ocorreu um erro ao comunicar com { $agent }. { $content }
@@ -73,6 +67,10 @@ contentanalysis-error-message-upload-file = Envio de “{ $filename }” negado.
 contentanalysis-error-message-dropped-text = Arrastar e largar negado.
 contentanalysis-error-message-clipboard = Colagem negada.
 contentanalysis-error-message-print = Impressão negada.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = A ligação a { $agent } expirou. { $contentName } foi bloqueado.
 contentanalysis-block-dialog-title-upload-file = Não tem permissão para carregar este ficheiro
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"

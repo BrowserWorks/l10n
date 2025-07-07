@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = Herstarten
 perftools-button-add-directory = Een directory toevoegen
 perftools-button-remove-directory = Geselecteerde verwijderen
 perftools-button-edit-settings = Instellingen bewerken…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Meer acties
+perftools-menu-more-actions-restart-with-profiling = { -brand-shorter-name } herstarten met opstartprofilering ingeschakeld
+perftools-menu-more-actions-copy-for-startup = Omgevingsvariabelen voor opstartprofilering kopiëren
+perftools-menu-more-actions-copy-for-perf-tests = Parameters voor prestatietests kopiëren
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -141,6 +149,8 @@ perftools-presets-graphics-label = Grafisch
 perftools-presets-graphics-description = Voorinstelling voor het onderzoeken van grafische bugs in { -brand-shorter-name }.
 perftools-presets-media-label = Media
 perftools-presets-media-description2 = Voorinstelling voor het onderzoeken van audio- en videobugs in { -brand-shorter-name }.
+perftools-presets-ml-label = Machinaal leren
+perftools-presets-ml-description2 = Voorinstelling voor het onderzoeken van machinevertalingsbugs in { -brand-shorter-name }.
 perftools-presets-networking-label = Netwerk
 perftools-presets-networking-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }.
 # "Power" is used in the sense of energy (electricity used by the computer).

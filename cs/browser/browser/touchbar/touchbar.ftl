@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -19,7 +19,6 @@ open-location = Zadat hledání nebo adresu
 share = Sdílet
 close-window = Zavřít okno
 open-sidebar = Postranní lišty
-
 # This string describes shortcuts for search.
 search-popover = Vyhledávače
 # Describes searches limited to a specific scope

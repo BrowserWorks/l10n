@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -57,6 +57,11 @@ client-auth-window =
     .title = Petición de identificación de usuario
 client-auth-site-description = El siguiente sitio ha pedido que te identifiques con un certificado:
 client-auth-choose-cert = Elige un certificado para presentarlo como identificación:
+client-auth-send-no-certificate =
+    .label = No enviar certificado
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = “{ $hostname }” ha solicitado que te identifiques con un certificado:
 client-auth-cert-details = Detalles del certificado seleccionado:
 # Variables:
 # $issuedTo (String) - The subject common name of the currently-selected client authentication certificate

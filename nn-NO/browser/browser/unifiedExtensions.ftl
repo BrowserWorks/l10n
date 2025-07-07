@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,6 +21,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Opne menyen for { $extensionName }
 unified-extensions-item-message-manage = Handsam utviding
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked = { $extensionName } bryt BrowserWorkss retningslinjer. Å bruke ho kan vere risikabelt.
 
 ## Extension's context menu
 
@@ -41,10 +44,30 @@ unified-extensions-context-menu-move-widget-down =
 
 unified-extensions-mb-quarantined-domain-title = Nokre utvidingar er ikkje tillatne
 unified-extensions-mb-quarantined-domain-message = For å beskytte dataa dine er berre utvalde utvidingar overvaka av { -vendor-short-name } tillate på denne nettstaden.
-unified-extensions-mb-quarantined-domain-message-2 = For å beskytte dataa dine, kan enkelte utvidingar ikkje lese eller endre data på denne nettstaden. Gå til innstillingane for utvidinga for å tillate nettstadar avgrensa av { -vendor-short-name }.
 # .heading is processed by moz-message-bar to be used as a heading attribute
 unified-extensions-mb-quarantined-domain-message-3 =
     .heading = Nokre utvidingar er ikkje tillatne
     .message = For å beskytte dataa dine, kan enkelte utvidingar ikkje lese eller endre data på denne nettstaden. Gå til innstillingane for utvidinga for å tillate nettstadar avgrensa av { -vendor-short-name }.
 unified-extensions-mb-quarantined-domain-learn-more = Les meir
     .aria-label = Les meir: Enkelte utvitingar er ikkje tillatne
+unified-extensions-mb-about-addons-link = Gå til innstillingar for utvidingar
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single =
+    .heading = { $extensionName } deaktivert
+    .message =
+        Denne utvidinga bryt BrowserWorkss retningslinjer og har vorte deaktivert.
+        Du kan aktivere ho i innstillingar, men dette kan vere risikabelt.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a hard-block.
+unified-extensions-mb-blocklist-error-single =
+    .heading = { $extensionName } deaktivert
+    .message = Denne utvidinga bryt BrowserWorkss retningslinjer og har vorte deaktivert.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple =
+    .heading =
+        { $extensionsCount ->
+           *[other] { $extensionsCount } extensions disabled
+        }
+    .message = { $extensionsCount }-utvidingar er deaktiverte

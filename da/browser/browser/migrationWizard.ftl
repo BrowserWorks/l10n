@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Læseliste (fra Safari)
 migration-imported-edge-reading-list = Læseliste (fra Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } har ikke adgang til andre browseres profiler installeret på denne enhed.
@@ -172,7 +172,7 @@ migration-list-favorites-label = favoritter
 migration-list-password-label = adgangskoder
 migration-list-history-label = historik
 migration-list-extensions-label = udvidelser
-migration-list-autofill-label = autofyldnings-data
+migration-list-autofill-label = data til autofyldning
 migration-list-payment-methods-label = betalingsmetoder
 
 ##
@@ -196,6 +196,14 @@ migration-safari-password-import-step1 = Åbn "Safari"-menuen i Safari og gå ti
 migration-safari-password-import-step2 = Klik på knappen <img data-l10n-name="safari-icon-3dots"/> og vælg "Eksporter alle adgangskoder"
 migration-safari-password-import-step3 = Gem filen med adgangskoder
 migration-safari-password-import-step4 = Brug "Vælg fil" nedenfor for at vælge den gemte fil med adgangskoder
+migration-chrome-windows-password-import-header = Sådan importerer du adgangskoder fra Chrome
+migration-chrome-windows-password-import-steps-header = I Chrome:
+migration-chrome-windows-password-import-step1 = Åbn hovedmenuen <img data-l10n-name="chrome-icon-3dots"/> og gå til Adgangskoder og autofyld >Google Adgangskodeadministrator.
+migration-chrome-windows-password-import-step2 = Vælg "Indstillinger" fra menuen.
+migration-chrome-windows-password-import-step3 = Vælg "Download fil" og gem filen på din enhed.
+migration-chrome-windows-password-import-step4 = Kom her tilbage og "Vælg fil" for at færdiggøre importen.
+migration-manual-password-import-skip-button = Spring over
+migration-manual-password-import-select-button = Vælg fil
 migration-safari-password-import-skip-button = Spring over
 migration-safari-password-import-select-button = Vælg fil
 # Shown in the migration wizard after importing bookmarks from another
@@ -223,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

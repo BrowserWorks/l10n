@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Elenco lettura (da Safari)
 migration-imported-edge-reading-list = Elenco di lettura (da Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } non ha accesso ai profili di altri browser installati su questo dispositivo.
@@ -178,7 +178,13 @@ migration-list-payment-methods-label = metodi di pagamento
 ##
 
 migration-wizard-progress-header = Importazione dati
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Importazione dei dati completata correttamente
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
 migration-wizard-progress-done-with-warnings-header = Importazione dei dati completata
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importazione in corso…
@@ -190,6 +196,14 @@ migration-safari-password-import-step1 = In Safari, apri il menu “Safari”, p
 migration-safari-password-import-step2 = Fai clic sul pulsante <img data-l10n-name="safari-icon-3dots"/> e seleziona “Esporta tutte le password…”
 migration-safari-password-import-step3 = Salva il file delle password
 migration-safari-password-import-step4 = Utilizza “Seleziona file” di seguito per scegliere il file delle password che hai salvato
+migration-chrome-windows-password-import-header = Come importare le password da Chrome
+migration-chrome-windows-password-import-steps-header = In Chrome:
+migration-chrome-windows-password-import-step1 = Apri il menu principale <img data-l10n-name="chrome-icon-3dots"/> e seleziona Password e compilazione automatica > Gestione delle password di Google.
+migration-chrome-windows-password-import-step2 = Seleziona “Impostazioni” dal menu.
+migration-chrome-windows-password-import-step3 = Scegli “Scarica file” e salvalo sul tuo dispositivo.
+migration-chrome-windows-password-import-step4 = Ritorna qui e utilizza “Seleziona file” per completare l’importazione.
+migration-manual-password-import-skip-button = Salta
+migration-manual-password-import-select-button = Seleziona file
 migration-safari-password-import-skip-button = Salta
 migration-safari-password-import-select-button = Seleziona file
 # Shown in the migration wizard after importing bookmarks from another
@@ -217,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.
@@ -274,5 +288,3 @@ migration-wizard-progress-success-payment-methods =
 migration-wizard-safari-permissions-sub-header = Per importare i segnalibri di Safari e la cronologia di navigazione:
 migration-wizard-safari-instructions-continue = Seleziona “Continua”
 migration-wizard-safari-instructions-folder = Seleziona la cartella Safari nell’elenco e fai clic su “Apri”
-
-

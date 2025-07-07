@@ -1,16 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = utilizar a informação do método de pagamento armazenado
 autofill-use-payment-method-os-prompt-windows = O { -brand-short-name } está a tentar utilizar informações do método de pagamento armazenadas. Confirme o acesso a esta conta do Windows abaixo.
 autofill-use-payment-method-os-prompt-other = O { -brand-short-name } está a tentar utilizar informações do método de pagamento armazenadas.
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = mostrar informações armazenadas sobre o método de pagamento
 autofill-edit-payment-method-os-prompt-windows = O { -brand-short-name } está a tentar mostrar informações armazenadas sobre o método de pagamento. Confirme o acesso a esta conta do Windows abaixo.
@@ -81,3 +81,6 @@ autofill-category-name = nome
 autofill-category-organization = organização
 autofill-category-tel = telefone
 autofill-category-email = email
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = O { -brand-short-name } detetou um site inseguro. O autopreenchimento de formulários está temporariamente desativado.

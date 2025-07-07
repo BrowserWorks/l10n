@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -16,7 +16,7 @@ policy-AllowFileSelectionDialogs = Tillat dialogvindauge for val av filer.
 policy-AppAutoUpdate = Slå på eller slå av automatiske programoppdateringar.
 policy-AppUpdatePin = Hindre { -brand-short-name } i å oppdatere utover den spesifiserte versjonen.
 policy-AppUpdateURL = Spesifiser eigendefinert programoppdateringsadresse.
-policy-Authentication = Konfigurer integrert godkjenning for nettsider som støttar det.
+policy-Authentication = Konfigurer integrert autentisering for nettstadar som støttar det.
 policy-AutofillAddressEnabled = Aktiver autofyll for adresser.
 policy-AutofillCreditCardEnabled = Aktiver autofyll for betalingsmåtar.
 policy-AutoLaunchProtocolsFromOrigins = Definer ei liste over eksterne protokollar som kan brukast frå spesifiserte kjelder uan å spørje brukaren.
@@ -30,7 +30,7 @@ policy-CaptivePortal = Aktiver eller deaktiver støtte for captive portal.
 policy-CertificatesDescription = Legg til sertifikat eller bruk innebygde sertifikat.
 policy-ContentAnalysis = Aktiver eller deaktiver tilkopling til hindre-tap-av-data-agenten.
 policy-Cookies = Tillat eller nekt nettstadar å lagre infokapslar.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Angi policyar relatert til behaldarar.
 policy-DisableAccounts = Slå av kontobaserte tenester, inkludert synkronisering.
 policy-DisabledCiphers = Deaktiver krypteringsmetodar.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Hindre at standardnettlesaren gjer noko. Det
 policy-DisableDeveloperTools = Blokker tilgang til utviklarverktøya.
 policy-DisableEncryptedClientHello = Deaktiver bruk av TLS-funksjonen Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Deaktiver kommandoar for å sende tilbakemelding frå Hjelp-menyen (Gje tilbakemelding og Rapporter villeiande nettstad).
-policy-DisableWaterfoxAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
+policy-DisableFirefoxAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Deaktiver kontobaserte tenester, inkludert synkronisering.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Deaktiver funksjonen Waterfox Screenshots
-policy-DisableWaterfoxStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
+policy-DisableFirefoxAccounts1 = Deaktiver kontobaserte tenester, inkludert synkronisering.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funksjonen Waterfox Screenshots
+policy-DisableFirefoxStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
 policy-DisableForgetButton = Hindre tilgang til knappen Gløym.
 policy-DisableFormHistory = Ikkje lagre søkje- og skjemahistorikk.
 policy-DisablePrimaryPasswordCreation = Om aktiv, kan ikkje eit hovudpassord lagast.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Slå av åtvaring
 policy-Extensions = Installere, avinstallere eller låse tillegg. Installeringsalternativet tar nettadresser eller baner som parameter. Avinstallerings- og Låse-alternativa tek tilleggs-ID som parameter.
 policy-ExtensionSettings = Handsam alle aspekt av utvidingsinstallasjonen.
 policy-ExtensionUpdate = Slå på eller slå av automatisk utvidingsoppdateringar.
-policy-WaterfoxHome2 = Konfigurer { -firefox-home-brand-name }.
-policy-WaterfoxSuggest = Konfigurer { -firefox-suggest-brand-name }.
+policy-FirefoxHome2 = Konfigurer { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Konfigurer { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Tving direkte navigering på intranettet i staden for å søkje når du skriv inn enkeltord i adressefeltet.
 policy-Handlers = Konfigurer standard applikasjonshandsamar.
 policy-HardwareAcceleration = Om inaktiv, slå av maskinvareakselerasjon.
@@ -119,6 +119,7 @@ policy-Permissions2 = Konfigurer løyve for kamera, mikrofon, plassering, varsel
 policy-PictureInPicture = Slå på eller av bilde-i-bilde
 policy-PopupBlocking = Tillat at visse nettstadar skal kunne vise sprettoppvindauge som standard.
 policy-Preferences = Still inn og lås verdien for ei delmengde av innstillingar.
+policy-PrivateBrowsingModeAvailability = Vel tilgjengelegheit for privat nettlesingsmodus.
 policy-PromptForDownloadLocation = Spør kvar nedlasta filer skal lagrast.
 policy-Proxy = Konfigurer proxy-innstillingar.
 policy-RequestedLocales = Vel rekkjefølgja av språk, som skal brukeast i programmet.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Slå på eller av søkjeforslag.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Legg til eller slett PKCS #11-modular.
 policy-ShowHomeButton = Vis heimknappen på verktøylinja.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Ikkje vis vilkåra for bruk og personvernerklæringa ved oppstart. Du stadfestar at du aksepterer og har fullmakt til å godta vilkåra for bruk på vegner av alle personar som du gir tilgang til denne nettlesaren.
 policy-SSLVersionMax = Still inn den maksimale SSL-versjonen.
 policy-SSLVersionMin = Still inn den minimale SSL-versjonen.
 policy-StartDownloadsInTempDirectory = Tving nedlastinger til å starte på ei lokal, mellombels plassering i staden for standard nedlastingskatalog.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Skriv ut ved hjelp av utskriftsdialogvindauget til
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokker besøk på nettstadar. Les dokumentasjonen for detaljer om formatet.
 policy-Windows10SSO = Tillat Windows enkel pålogging for Microsoft, arbeids- og skulekontoar.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Tillat enkel pålogging for Microsoft Entra-kontoar.

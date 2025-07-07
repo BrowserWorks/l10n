@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,3 +27,9 @@ pending-crash-reports-send =
     .label = ส่ง
 pending-crash-reports-always-send =
     .label = ส่งเสมอ
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message = คุณมี { $reportCount } รายงานข้อขัดข้องที่ยังไม่ได้ส่งซึ่งตรงกับข้อขัดข้องที่กำลังตรวจสอบอยู่ การส่งรายงานดังกล่าวจะช่วยให้เราปรับปรุง { -brand-product-name } ได้ การปิดการแจ้งเตือนนี้จะละเว้นรายงานเหล่านี้
+requested-crash-reports-dont-show-again =
+    .label = ไม่ต้องแสดงอีก
+    .accesskey = D

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% завершено
 firefoxview-tabpickup-step-signin-header = Легко переключайтесь между устройствами
 firefoxview-tabpickup-step-signin-description = Чтобы просматривать здесь вкладки со своего телефона, сначала выполните вход или создайте аккаунт.
 firefoxview-tabpickup-step-signin-primarybutton = Продолжить
+firefoxview-syncedtabs-signin-header-2 = Ваш { -brand-product-name } на всех ваших устройствах
+firefoxview-syncedtabs-signin-description-2 = Чтобы увидеть вкладки, открытые на вашем телефоне и других устройствах, войдите или зарегистрируйте аккаунт. С аккаунтом вы также можете синхронизировать пароли, историю и многое другое.
+firefoxview-syncedtabs-signin-primarybutton-2 = Войти
 firefoxview-syncedtabs-signin-header = Захватывайте вкладки отовсюду
 firefoxview-syncedtabs-signin-description = Чтобы видеть свои вкладки везде, где вы используете { -brand-product-name }, войдите в свой аккаунт. Если у вас нет аккаунта, мы проведем вас через этапы регистрации.
 firefoxview-syncedtabs-signin-primarybutton = Войдите или зарегистрируйтесь
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Синхронизируйте { -brand
 firefoxview-tabpickup-adddevice-description = Загрузите { -brand-product-name } для мобильных устройств и выполните вход.
 firefoxview-tabpickup-adddevice-learn-how = Подробнее
 firefoxview-tabpickup-adddevice-primarybutton = Получить { -brand-product-name } для мобильных устройств
+firefoxview-syncedtabs-adddevice-header-2 = Захватывайте вкладки отовсюду
+firefoxview-syncedtabs-adddevice-description-2 = Войдите в { -brand-product-name } на вашем телефоне или другом компьютере, чтобы увидеть здесь вкладки. Узнайте, как <a data-l10n-name="url">подключить дополнительные устройства</a>.
 firefoxview-syncedtabs-adddevice-header = Войдите в { -brand-product-name } на других ваших устройствах.
 firefoxview-syncedtabs-adddevice-description = Чтобы видеть свои вкладки везде, где вы используете { -brand-product-name }, войдите на всех своих устройствах. Узнайте, как <a data-l10n-name="url">подключить дополнительные устройства</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Попробуйте { -brand-product-name } для мобильных устройств
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Вкладки с других устройст
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Просмотреть все
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Поиск недавно закрытых вкладок
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Поиск во вкладках
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Поиск облачных вкладок
@@ -212,7 +220,7 @@ firefoxview-history-site-localhost = (локальные файлы)
 firefoxview-show-all-history = Показать всю историю
 firefoxview-view-more-browsing-history = Увидеть больше из истории просмотров
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Вернуться обратно
 firefoxview-history-empty-description = По мере сёрфинга, страницы, которые вы посещаете, будут появляться здесь.
@@ -224,15 +232,17 @@ firefoxview-history-empty-description-two = Защита вашей конфид
 firefoxview-choose-browser-button = Выберите браузер
     .title = Выберите браузер
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Нет информации
 firefoxview-dont-remember-history-empty-description = Защита вашей конфиденциальности лежит в основе того, что мы делаем. Вот почему вы можете контролировать активность, которую помнит { -brand-short-name }.
 firefoxview-dont-remember-history-empty-description-two = Основываясь на ваших текущих настройках, { -brand-short-name } не запоминает ваши действия во время просмотра. Чтобы изменить это, <a data-l10n-name="history-settings-url-two">отредактируйте настройки истории для её запоминания</a>.
+firefoxview-dont-remember-history-empty-header-2 = Вы контролируете то, что запоминает { -brand-short-name }
+firefoxview-dont-remember-history-empty-description-one = В данный момент { -brand-short-name } не запоминает вашу активность в Интернете. Чтобы изменить это, <a data-l10n-name="history-settings-url-two">обновите настройки истории</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Закрыть
     .title = Закрыть
@@ -242,7 +252,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Импорт истории из другого браузера
 firefoxview-import-history-description = Сделайте { -brand-short-name } своим любимым браузером. Импортируйте историю посещённых страниц, закладки и многое другое.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Слишком рано закрыли вкладку?
 firefoxview-recentlyclosed-empty-description = Здесь вы найдете вкладки, которые вы недавно закрыли, и любую из них можно быстро снова открыть.

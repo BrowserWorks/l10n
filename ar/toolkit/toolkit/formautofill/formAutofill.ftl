@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -44,3 +44,6 @@ autofill-category-name = الأسماء
 autofill-category-organization = المؤسسات
 autofill-category-tel = الهواتف
 autofill-category-email = البُرُد الإلكترونية
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = اكتشف { -brand-short-name } موقعا غير آمن. عُطّل الملء الآمن للاستمارات مؤقتا

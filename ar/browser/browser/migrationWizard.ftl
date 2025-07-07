@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = قائمة القراءة (من سفا�
 migration-imported-edge-reading-list = قائمة القراءة (من إدج)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = لا يملك { -brand-short-name } الوصول إلى ملفات المتصفحات الأخرى المثبتة على هذا الجهاز.
@@ -76,6 +76,7 @@ migration-bookmarks-option-label = العلامات
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = المفضّلة
 migration-logins-and-passwords-option-label = جلسات الولوج وكلمات السر المحفوظة
+migration-passwords-option-label = كلمات السر المحفوظة
 migration-history-option-label = تأريخ التصفح
 migration-extensions-option-label = الامتدادات
 migration-form-autofill-option-label = بيانات الملء الآلي للاستمارات
@@ -108,6 +109,14 @@ migration-bookmarks-from-file-picker-title = استورد ملف علامات
 migration-bookmarks-from-file-progress-header = استيراد العلامات
 migration-bookmarks-from-file = العلامات
 migration-bookmarks-from-file-success-header = استوردت العلامات بنجاح
+migration-bookmarks-from-file-no-valid-data = لا يحتوي الملف على أي بيانات علامة. أختر ملفا آخر.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] مستند HTML
+       *[other] ملف HTML
+    }
 # A description for the .json file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-json-filter-title = ملف JSON
@@ -118,6 +127,7 @@ migration-cancel-button-label = ألغِ
 migration-done-button-label = تمّ
 migration-continue-button-label = واصِل
 migration-wizard-import-browser-no-browsers = تعذر على { -brand-short-name } إيجاد أي برامج تحتوي على بيانات أو علامات أو تأريخ أو كلمات سر.
+migration-wizard-import-browser-no-resources = حدث خطأ. لا يمكن لـ { -brand-short-name } العثور على أي بيانات لاستيرادها من ملف شخصي المتصفح هذا.
 
 ## These strings will be used to create a dynamic list of items that can be
 ## imported. The list will be created using Intl.ListFormat(), so it will
@@ -153,12 +163,14 @@ migration-wizard-progress-icon-completed =
 migration-safari-password-import-header = استورد كلمات السر من Safari
 migration-safari-password-import-steps-header = لاستيراد كلمات سر Safari:
 migration-safari-password-import-step3 = احفظ ملف كلمات السر
+migration-manual-password-import-skip-button = تخطَّ
+migration-manual-password-import-select-button = اختر ملفًا
 migration-safari-password-import-skip-button = تخطَّ
 migration-safari-password-import-select-button = اختر ملفًا
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard if there are no matched extensions
 # on import from supported browsers.
@@ -168,4 +180,5 @@ migration-wizard-progress-extensions-addons-link = تصفح الامتدادات
 ##
 
 migration-wizard-progress-success-formdata = تأريخ الاستمارات
+migration-wizard-safari-permissions-sub-header = لاستيراد علامات Safari وتأريخ التصفح:
 migration-wizard-safari-instructions-continue = اختر "واصِل"

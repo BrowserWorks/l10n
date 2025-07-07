@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = Включает или отключает поддерж
 policy-CertificatesDescription = Добавляет сертификаты или использует встроенные сертификаты.
 policy-ContentAnalysis = Включает или отключает соединение с агентом системы предотвращения утечек данных (DLP).
 policy-Cookies = Разрешает или запрещает веб-сайтам устанавливать куки.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Устанавливает политики, связанные с контейнерами.
 policy-DisableAccounts = Отключает службы на основе аккаунтов, включая синхронизацию.
 policy-DisabledCiphers = Отключает шифры.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Не позволяет агенту бра�
 policy-DisableDeveloperTools = Блокирует доступ к инструментам разработчика.
 policy-DisableEncryptedClientHello = Отключает использование функции TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Отключает команды отправки отзывов в меню Справка («Отправить отзыв...» и «Сообщить о поддельном сайте...»).
-policy-DisableWaterfoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
+policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Отключает службы на основе аккаунтов, включая синхронизацию.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Отключает функцию Waterfox Screenshots.
-policy-DisableWaterfoxStudies = Запрещает { -brand-short-name } выполнять исследования.
+policy-DisableFirefoxAccounts1 = Отключает службы на основе аккаунтов, включая синхронизацию.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Отключает функцию Waterfox Screenshots.
+policy-DisableFirefoxStudies = Запрещает { -brand-short-name } выполнять исследования.
 policy-DisableForgetButton = Закрывает доступ к кнопке «Забыть».
 policy-DisableFormHistory = Отключает запоминание истории поиска и данных форм.
 policy-DisablePrimaryPasswordCreation = Не позволяет устанавливать основной пароль, если установлено значение true.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Отключае�
 policy-Extensions = Устанавливает, удаляет или блокирует установку/удаление расширений. Параметр «Установка» использует URL-адреса или пути в качестве параметров. Параметры «Удаление» и «Блокировка» принимают идентификаторы расширений.
 policy-ExtensionSettings = Управляет всеми аспектами установки расширений.
 policy-ExtensionUpdate = Включает или отключает автоматические обновления расширений.
-policy-WaterfoxHome2 = Настройка { -firefox-home-brand-name(case: "genitive") }.
-policy-WaterfoxSuggest = Настройка { -firefox-suggest-brand-name }.
+policy-FirefoxHome2 = Настройка { -firefox-home-brand-name(case: "genitive") }.
+policy-FirefoxSuggest = Настройка { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Принудительный прямой переход на сайт интрасети вместо поиска при вводе отдельных слов в адресной строке.
 policy-Handlers = Настраивает обработчики приложений по умолчанию.
 policy-HardwareAcceleration = Отключает аппаратное ускорение, если установлена в false.
@@ -119,6 +119,7 @@ policy-Permissions2 = Настраивает разрешения для кам�
 policy-PictureInPicture = Включает или отключает функцию «Картинка в картинке».
 policy-PopupBlocking = Разрешает некоторым веб-сайтам открывать всплывающие окна по умолчанию.
 policy-Preferences = Устанавливает и фиксирует значение набора настроек.
+policy-PrivateBrowsingModeAvailability = Устанавливает доступность приватного режима.
 policy-PromptForDownloadLocation = Спрашивает, куда сохранять файлы при загрузке.
 policy-Proxy = Настраивает параметры прокси.
 policy-RequestedLocales = Настраивает список запрашиваемых языков для приложения в порядке предпочтения.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Включает или отключает пои�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Добавляет или удаляет модули PKCS #11.
 policy-ShowHomeButton = Включает кнопку «Домой» на панели инструментов.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Не отображать условия использования и уведомления о конфиденциальности при запуске. Вы заверяете, что принимаете и имеете право принимать Условия использования от имени всех лиц, которым вы предоставляете доступ к этому браузеру.
 policy-SSLVersionMax = Устанавливает максимальную версию SSL.
 policy-SSLVersionMin = Устанавливает минимальную версию SSL.
 policy-StartDownloadsInTempDirectory = Заставляет загрузки запускаться в локальном временном расположении, а не в каталоге загрузки по умолчанию.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Использует для печати сист�
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Блокирует посещение веб-сайтов. Для получения дополнительной информации о формате обратитесь к документации.
 policy-Windows10SSO = Разрешает единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Разрешать единый вход для аккаунтов Microsoft Entra.

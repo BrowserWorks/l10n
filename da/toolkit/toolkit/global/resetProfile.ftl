@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,6 @@ refresh-profile-dialog-description = Start forfra for at løse problemer med yde
 refresh-profile = Giv { -brand-short-name } en tuning
 refresh-profile-button = Nulstil { -brand-short-name }…
 refresh-profile-learn-more = Læs mere
-
 refresh-profile-progress =
     .title = Nulstil { -brand-short-name }
 refresh-profile-progress-description = Næsten færdig…

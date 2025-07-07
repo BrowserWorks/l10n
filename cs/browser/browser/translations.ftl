@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Přeložit tuto stránku
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -37,7 +37,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Správa jazyků
@@ -132,7 +132,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Zobrazit původní
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Překlady
 translations-manage-settings-button =
@@ -142,13 +142,6 @@ translations-manage-description = Stažení jazyků pro offline překlad.
 translations-manage-all-language = Všechny jazyky
 translations-manage-download-button = Stáhnout
 translations-manage-delete-button = Smazat
-translations-manage-intro = Nastavte předvolby jazyka a překladu webu a spravujte jazyky nainstalované pro překlad offline.
-translations-manage-install-description = Instalace jazyků pro offline překlad
-translations-manage-language-install-button =
-    .label = Nainstalovat
-translations-manage-language-install-all-button =
-    .label = Nainstalovat vše
-    .accesskey = N
 translations-manage-intro-2 = Nastavte předvolby jazyka a překladu webu a spravujte jazyky stažené pro překlad offline.
 translations-manage-download-description = Stažení jazyků pro offline překlad
 translations-manage-language-download-button =
@@ -161,7 +154,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Odebrat vše
     .accesskey = O
-translations-manage-error-install = Při instalaci jazykových souborů došlo k chybě. Prosím zkuste to znovu.
 translations-manage-error-download = Při stahování jazykových souborů se vyskytl problém. Zkuste to prosím znovu.
 translations-manage-error-delete = Při odstraňování jazykových souborů se vyskytl problém. Zkuste to prosím znovu.
 translations-manage-error-remove = Při odstraňování jazykových souborů došlo k chybě. Prosím zkuste to znovu.

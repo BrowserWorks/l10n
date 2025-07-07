@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -238,7 +238,7 @@ region-name-to = 汤加
 region-name-tr = 土耳其
 region-name-tt = 特立尼达和多巴哥
 region-name-tv = 图瓦卢
-region-name-tw = 台湾
+region-name-tw = 台湾地区
 region-name-tz = 坦桑尼亚
 region-name-ua = 乌克兰
 region-name-ug = 乌干达

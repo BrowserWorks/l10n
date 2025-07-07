@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = 開啟網址…
 menu-file-open-file =
@@ -192,11 +192,11 @@ menu-view-full-screen =
 
 # This should match reader-view-enter-button in browser.ftl
 menu-view-enter-readerview =
-    .label = 進入閱讀模式
+    .label = 進入閱讀畫面
     .accesskey = R
 # This should match reader-view-close-button in browser.ftl
 menu-view-close-readerview =
-    .label = 關閉閱讀模式
+    .label = 關閉閱讀畫面
     .accesskey = R
 
 ##
@@ -254,6 +254,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = 行動書籤
 
+## Profiles Menu
+
+menu-profiles =
+    .label = 設定檔
+menu-profiles-manage-profiles =
+    .label = 管理設定檔
+menu-profiles-new-profile =
+    .label = 新增設定檔
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName }（目前）
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = 下載
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = 擴充套件和佈景主題
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = 附加元件與佈景主題
     .accesskey = A

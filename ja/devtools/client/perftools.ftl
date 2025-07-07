@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ### These strings are used in DevTools’ performance-new panel, about:profiling, and
 ### the remote profiling panel. There are additional profiler strings in the appmenu.ftl
@@ -60,6 +61,14 @@ perftools-button-restart = 再開
 perftools-button-add-directory = ディレクトリーを追加
 perftools-button-remove-directory = 選択したディレクトリーを削除
 perftools-button-edit-settings = 設定を編集...
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = 他の操作
+perftools-menu-more-actions-restart-with-profiling = 起動時プロファイリングを有効にして { -brand-shorter-name } を再起動
+perftools-menu-more-actions-copy-for-startup = 起動時プロファイリングのための環境変数をコピー
+perftools-menu-more-actions-copy-for-perf-tests = パフォーマンステストのためのパラメーターをコピー
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -127,6 +136,8 @@ perftools-presets-graphics-label = グラフィック
 perftools-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットです。
 perftools-presets-media-label = メディア
 perftools-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットです。
+perftools-presets-ml-label = 機械学習
+perftools-presets-ml-description2 = { -brand-shorter-name } の機械学習のバグを調査するための推奨プリセットです。
 perftools-presets-networking-label = ネットワーク
 perftools-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
 # "Power" is used in the sense of energy (electricity used by the computer).

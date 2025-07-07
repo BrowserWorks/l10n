@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,6 +24,10 @@ contentanalysis-slow-agent-dialog-body-print = { $agent } granskar det du skreiv
 contentanalysis-operationtype-clipboard = utklippstavle
 contentanalysis-operationtype-dropped-text = sleppt tekst
 contentanalysis-operationtype-print = skriv ut
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-upload-description = opplasting av «{ $filename }»
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = nedlasting av «{ $filename }»
 #   $filename - The filename associated with the request, such as "aFile.txt"
 contentanalysis-customdisplaystring-description = opplasting av «{ $filename }»
 contentanalysis-warndialogtitle = Dette innhaldet kan vere utrygt
@@ -58,10 +62,18 @@ contentanalysis-error-message-upload-file = Opplasting av «{ $filename }» vart
 contentanalysis-error-message-dropped-text = Drag og slepp nekta.
 contentanalysis-error-message-clipboard = Lim inn nekta.
 contentanalysis-error-message-print = Utskrift nekta.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = Tilkoplinga til { $agent } vart tidsavbroten. { $contentName } er blokkert.
 contentanalysis-block-dialog-title-upload-file = Du har ikkje løyve til å laste opp denne fila
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file = I samsvar med retningslinjene til organisasjonen for datavern har du ikkje løyve til å laste opp fila «{ $filename }». Kontakt administratoren din for meir informasjon.
+contentanalysis-block-dialog-title-download-file = Du har ikkje løyve til å laste ned denne fila
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = I samsvar med retningslinjene i organisasjonen for datavern har du ikkje løyve til å laste ned fila «{ $filename }». Kontakt administratoren din for meir informasjon.
 contentanalysis-block-dialog-title-clipboard = Du har ikkje løyve til å lime inn dette innhaldet
 contentanalysis-block-dialog-body-clipboard = I samsvar med retningslinjene til organisasjonen for datavern har du ikkje løyve til å lime inn dette innhaldet. Kontakt administratoren din for meir informasjon.
 contentanalysis-block-dialog-title-dropped-text = Du har ikkje løyve til å dra og sleppe dette innhaldet

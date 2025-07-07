@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,9 @@
 # Variables
 #   $host (String) - Hostname for which the password is saved for.
 password-manager-save-password-message = Simpan sandi untuk { $host }?
+password-manager-save-password-button-deny =
+    .label = Jangan sekarang
+    .accesskey = J
 password-manager-save-password-button-allow =
     .label = Simpan
     .accesskey = S
@@ -17,6 +20,9 @@ password-manager-save-password-button-never =
 # Variables
 #   $host (String) - Hostname for which the password is updated for.
 password-manager-update-password-message = Perbarui sandi untuk { $host }?
+password-manager-update-password-button-delete =
+    .label = Hapus sandi tersimpan
+    .accesskey = H
 password-manager-update-login-add-username = Tambahkan nama pengguna ke kata sandi yang disimpan?
 password-manager-password-password-button-allow =
     .label = Perbarui

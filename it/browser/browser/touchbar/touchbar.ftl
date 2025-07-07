@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -19,7 +19,6 @@ open-location = Inserisci un indirizzo o avvia una ricerca
 share = Condividi
 close-window = Chiudi finestra
 open-sidebar = Barre laterali
-
 # This string describes shortcuts for search.
 search-popover = Scorciatoie ricerca
 # Describes searches limited to a specific scope
@@ -35,3 +34,4 @@ search-tags = Etichette
 search-titles = Titoli
 
 ##
+

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Nie teraz
     .secondarybuttonaccesskey = N
 appmenu-update-restart-message2 = Pobierz najnowszą wersję przeglądarki { -brand-shorter-name }. Otwarte karty i okna zostaną przywrócone.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Cofnij
+    .secondarybuttonaccesskey = C
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } nie może zostać automatycznie uaktualniony do najnowszej wersji.
     .buttonlabel = Uaktualnij przeglądarkę { -brand-shorter-name } mimo to
@@ -37,15 +40,19 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Nie teraz
     .secondarybuttonaccesskey = N
 appmenu-update-other-instance-message = Dostępna jest nowa aktualizacja przeglądarki { -brand-shorter-name }, ale nie można jej zainstalować, ponieważ uruchomiona jest inna kopia programu. Zamknij ją, aby kontynuować aktualizację lub zdecyduj się uaktualnić mimo to (druga kopia programu może nie działać poprawnie do czasu uruchomienia jej ponownie).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = OK
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = Zarządzaj dodatkami i motywami w menu aplikacji.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = W <a data-l10n-name="settings-link">ustawieniach rozszerzenia</a> można w każdej chwili zmienić uprawnienia i preferencje zbierania danych.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Przypnij rozszerzenie do paska narzędzi
+    .accesskey = P
 appmenu-addon-post-install-incognito-checkbox =
     .label = To rozszerzenie może działać w oknach prywatnych
     .accesskey = T
-    
 appmenu-new-tab-controlled-changes =
     .label = Strona nowej karty została zmieniona.
     .buttonlabel = Używaj nowej

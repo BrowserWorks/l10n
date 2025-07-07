@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,12 +14,12 @@ change-password-token = Συσκευή ασφάλειας: { $tokenName }
 change-password-old = Τρέχων κωδικός πρόσβασης:
 change-password-new = Νέος κωδικός πρόσβασης:
 change-password-reenter = Νέος κωδικός πρόσβασης (ξανά):
-pippki-failed-pw-change = Αδυναμία αλλαγής κωδικού πρόσβασης.
+pippki-failed-pw-change = Δεν είναι δυνατή η αλλαγή του κωδικού πρόσβασης.
 pippki-incorrect-pw = Δεν εισήγατε τον σωστό κωδικό πρόσβασης. Δοκιμάστε ξανά.
 pippki-pw-change-ok = Επιτυχής αλλαγή κωδικού πρόσβασης.
 pippki-pw-empty-warning = Δεν θα προστατεύονται οι αποθηκευμένοι κωδικοί πρόσβασης και τα ιδιωτικά κλειδιά σας.
 pippki-pw-erased-ok = Ο κωδικός πρόσβασής σας έχει διαγραφεί. { pippki-pw-empty-warning }
-pippki-pw-not-wanted = Προσοχή! Αποφασίσατε να μη χρησιμοποιήσετε κωδικό πρόσβασης. { pippki-pw-empty-warning }
+pippki-pw-not-wanted = Προειδοποίηση! Έχετε αποφασίσει να μην χρησιμοποιήσετε κωδικό πρόσβασης. { pippki-pw-empty-warning }
 pippki-pw-change2empty-in-fips-mode = Βρίσκεστε σε λειτουργία FIPS . Το FIPS απαιτεί ένα μη κενό κωδικό πρόσβασης.
 
 ## Reset Primary Password dialog
@@ -29,7 +29,7 @@ reset-primary-password-window2 =
     .style = min-width: 40em
 reset-password-button-label =
     .label = Επαναφορά
-reset-primary-password-text = Εάν επαναφέρετε τον κύριο κωδικό πρόσβασής σας, θα διαγραφούν από την μνήμη όλοι οι αποθηκευμένοι κωδικοί πρόσβασης ιστοτόπων και email, προσωπικών πιστοποιητικών και ιδιωτικών κλειδιών. Θέλετε σίγουρα να επαναφέρετε τον κύριο κωδικό πρόσβασης;
+reset-primary-password-text = Εάν επαναφέρετε τον κύριο κωδικό πρόσβασής σας, θα διαγραφούν από τη μνήμη όλοι οι αποθηκευμένοι κωδικοί πρόσβασης ιστοτόπων και email, προσωπικών πιστοποιητικών και ιδιωτικών κλειδιών. Θέλετε σίγουρα να επαναφέρετε τον κύριο κωδικό πρόσβασης;
 pippki-reset-password-confirmation-title = Επαναφορά κύριου κωδικού πρόσβασης
 pippki-reset-password-confirmation-message = Έγινε επαναφορά του κύριου κωδικού πρόσβασής σας.
 
@@ -85,6 +85,13 @@ client-auth-cert-details-issued-by = Εκδόθηκε από: { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Αποθηκευμένο σε: { $storedOn }
+client-auth-cert-remember-label = Απομνημόνευση απόφασης:
+client-auth-cert-remember-never =
+    .label = Μία φορά
+client-auth-cert-remember-always =
+    .label = Μόνιμα
+client-auth-cert-remember-temporarily =
+    .label = Για αυτήν τη συνεδρία
 client-auth-cert-remember-box =
     .label = Απομνημόνευση απόφασης
 
@@ -97,7 +104,7 @@ set-password-backup-pw =
     .value = Κωδικός αντιγράφου ασφάλειας πιστοποιητικού:
 set-password-repeat-backup-pw =
     .value = Κωδικός αντιγράφου ασφάλειας πιστοποιητικού (ξανά):
-set-password-reminder = Προειδοποίηση: Αν ξεχάσετε τον κωδικό ασφάλειας, δεν θα μπορείτε να ανακτήσετε αυτό το αντίγραφο αργότερα. Φυλάξτε το σε ασφαλή τοποθεσία.
+set-password-reminder = Σημαντικό: Αν ξεχάσετε τον κωδικό πρόσβασης του αντιγράφου ασφαλείας του πιστοποιητικού, δεν θα μπορείτε να ανακτήσετε αυτό το αντίγραφο ασφαλείας αργότερα. Φυλάξτε τον σε ασφαλή τοποθεσία.
 
 ## Protected authentication alert
 

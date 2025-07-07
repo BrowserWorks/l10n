@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -115,7 +115,6 @@ shopping-settings-sidebar-enabled-state = 商品評論檢查器<strong>已開啟
 shopping-adjusted-rating-label =
     .label = 調整後評分
 shopping-adjusted-rating-unreliable-reviews = 已移除不可靠的評論
-shopping-adjusted-rating-based-reliable-reviews = 根據可靠評論調整
 
 ## Strings for the review reliability component
 
@@ -134,8 +133,6 @@ shopping-analysis-explainer-learn-more2 = 了解<a data-l10n-name="review-qualit
 # websites, which will be inserted without being translated.
 #  $retailer (String) - capitalized name of the shopping website, for example, "Amazon".
 shopping-analysis-explainer-highlights-description = <strong>重點資訊</strong>是根據過去 80 天中，我們相信是可靠的 { $retailer } 評論所整理出的資訊。
-# Fallback for analysis highlights explainer if the retailer is ever unknown
-shopping-analysis-explainer-highlights-description-unknown-retailer = <strong>重點資訊</strong>是根據過去 80 天中，我們相信是可靠的評論所整理出的資訊。
 shopping-analysis-explainer-review-grading-scale-reliable = 評論可靠。我們相信此商品的評論內容很可能是來自實際客戶所留下真實而中立的評論。
 shopping-analysis-explainer-review-grading-scale-mixed = 我們相信此商品評論混和了可靠與不可靠的評論。
 shopping-analysis-explainer-review-grading-scale-unreliable = 評論不可靠。我們相信此商品的評論內容很可能是由虛假或偏頗的評論者所留下。
@@ -150,8 +147,8 @@ shopping-sidebar-close-button2 =
 ## Strings for the unanalyzed product card.
 ## The word 'analyzer' when used here reflects what this tool is called on
 ## fakespot.com. If possible, a different word should be used for the Fakespot
-## tool (the Fakespot by BrowserWorks 'analyzer') other than 'checker', which is
-## used in the name of the Waterfox feature ('Review Checker'). If that is not
+## tool (the Fakespot by Mozilla 'analyzer') other than 'checker', which is
+## used in the name of the Firefox feature ('Review Checker'). If that is not
 ## possible - if these terms are not meaningfully different - that is OK.
 
 shopping-unanalyzed-product-header-2 = 還沒有這些評論的相關資訊

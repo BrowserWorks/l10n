@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -107,3 +107,11 @@ storage-idb-delete-blocked = Η βάση δεδομένων «{ $dbName }» θα
 # Variables:
 #   $dbName (String) - Name of the database
 storage-idb-delete-error = Δεν ήταν δυνατή η διαγραφή της βάσης δεδομένων «{ $dbName }».
+# Error notification when cookie could not be created (e.g. because it's invalid).
+# Variables:
+#   $errorString (String) - Platform error message
+storage-cookie-create-error = Δεν ήταν δυνατή η δημιουργία του cookie: «{ $errorString }».
+# Error notification when cookie could not be edited (e.g. because it's invalid).
+# Variables:
+#   $errorString (String) - Platform error message
+storage-cookie-edit-error = Δεν ήταν δυνατή η ενημέρωση του cookie: «{ $errorString }».

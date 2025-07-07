@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -110,7 +110,7 @@ login-intro-instructions-fxa = Maak op het apparaat waarop uw aanmeldgegevens st
 about-logins-login-intro-heading-message = Bewaar uw wachtwoorden op een veilige plek
 login-intro-description2 = Alle wachtwoorden die u opslaat naar { -brand-product-name } worden versleuteld. Bovendien letten we op datalekken en geven we een waarschuwing als dit voor u geldt. <a data-l10n-name="breach-alert-link">Meer info</a>
 login-intro-instructions-fxa2 = Maak op het apparaat waarop uw aanmeldgegevens staan een account of meld u aan.
-login-intro-instructions-fxa-settings = Ga naar Instellingen > Sync > Synchronisatie inschakelen… Plaats een vinkje bij Aanmeldingen en wachtwoorden.
+login-intro-instructions-fxa-settings = Ga naar Instellingen > Synchronisatie > Synchronisatie inschakelen… Plaats een vinkje bij Aanmeldingen en wachtwoorden.
 login-intro-instructions-fxa-passwords-help = Bezoek <a data-l10n-name="passwords-help-link">hulp bij wachtwoorden</a> voor meer hulp.
 about-logins-intro-browser-only-import = Als uw aanmeldingen in een andere browser worden opgeslagen, kunt u <a data-l10n-name="import-link">ze importeren in { -brand-product-name }</a>
 about-logins-intro-import2 = Als uw aanmeldingen buiten { -brand-product-name } zijn opgeslagen, dan kunt u ze importeren <a data-l10n-name="import-browser-link">vanuit een andere browser</a> of <a data-l10n-name = "import-file-link">vanuit een bestand</a>
@@ -140,6 +140,8 @@ login-item-copied-username-button-text = Gekopieerd!
 login-item-password-label = Wachtwoord
 login-item-password-reveal-checkbox =
     .aria-label = Wachtwoord tonen
+login-item-password-conceal-checkbox =
+    .aria-label = Wachtwoord verbergen
 login-item-copy-password-button-text = Kopiëren
 login-item-copied-password-button-text = Gekopieerd!
 login-item-save-changes-button = Wijzigingen opslaan
@@ -162,7 +164,7 @@ login-item-timeline-action-used = Gebruikt
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -171,7 +173,7 @@ about-logins-edit-login-os-auth-dialog-message-win = Voer uw aanmeldgegevens voo
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = bewerk de opgeslagen aanmelding
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->

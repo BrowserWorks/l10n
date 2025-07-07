@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = 2 時間以内の履歴
 clear-time-duration-value-last-4-hours =
     .label = 4 時間以内の履歴
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = { $midnightTime } 以降の履歴
 clear-time-duration-value-today =
     .label = 今日の履歴
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = 履歴
 item-history-and-downloads =
     .label = 表示したページとダウンロードの履歴
     .accesskey = B
+item-history-and-downloads-description2 = 表示したページとダウンロードの履歴を消去します
 item-history-form-data-downloads =
     .label = 履歴
     .accesskey = H
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = サイト設定
     .accesskey = i
+item-formdata-prefs =
+    .label = 保存されたフォームの入力履歴
+    .accesskey = o
+item-formdata-description = フォームに入力した名前やメールアドレス、その他の項目の履歴を消去します
 item-site-prefs-description = 変更した許可設定とサイト設定を元の設定にリセットします
 data-section-label = データ
 item-site-settings =

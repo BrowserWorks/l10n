@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -90,7 +90,7 @@ login-list-intro-title2 = Пароли не сохранены
 login-list-intro-description = Когда вы сохраните пароль в { -brand-product-name }, он появится здесь.
 about-logins-login-list-empty-search-title = Логины не найдены
 about-logins-login-list-empty-search-title2 = Пароли не найдены
-about-logins-login-list-empty-search-description = Результатов, подходящих под ваш запрос, не найдено
+about-logins-login-list-empty-search-description = Результатов, подходящих под ваш запрос, не найдено.
 login-list-item-title-new-login = Новый логин
 login-list-item-subtitle-new-login = Введите свои учётные данные
 login-list-item-title-new-login2 = Добавить пароль
@@ -111,7 +111,7 @@ about-logins-list-section-week = За последние 7 дней
 about-logins-login-intro-heading-logged-out2 = Ищете сохранённые логины? Включите синхронизацию или импортируйте их.
 about-logins-login-intro-heading-logged-in = Синхронизированных логинов не найдено.
 login-intro-description = Если вы сохранили ваши логины в { -brand-product-name } на другом устройстве, то вот как получить к ним доступ здесь:
-login-intro-instructions-fxa = Создайте или войдите в ваш { -fxaccount-brand-name } на устройстве, где сохранены ваши логины
+login-intro-instructions-fxa = Создайте или войдите в ваш { -fxaccount-brand-name } на устройстве, где сохранены ваши логины.
 about-logins-login-intro-heading-message = Сохраняйте свои пароли в безопасном месте
 login-intro-description2 = Все пароли, которые вы сохраняете в { -brand-product-name }, зашифрованы. Кроме того, мы следим за утечками и сообщаем вам, если они вас касаются. <a data-l10n-name="breach-alert-link">Подробнее</a>
 login-intro-instructions-fxa2 = Создайте или войдите в ваш аккаунт на устройстве, где сохранены ваши логины.
@@ -145,6 +145,8 @@ login-item-copied-username-button-text = Скопировано!
 login-item-password-label = Пароль
 login-item-password-reveal-checkbox =
     .aria-label = Показать пароль
+login-item-password-conceal-checkbox =
+    .aria-label = Скрыть пароль
 login-item-copy-password-button-text = Копировать
 login-item-copied-password-button-text = Скопировано!
 login-item-save-changes-button = Сохранить изменения
@@ -167,7 +169,7 @@ login-item-timeline-action-used = Использован
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -176,7 +178,7 @@ about-logins-edit-login-os-auth-dialog-message-win = Чтобы изменить
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = изменить сохранённый логин
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
@@ -184,10 +186,10 @@ about-logins-os-auth-dialog-message =
        *[other] { -brand-short-name } пытается изменить настройки паролей. Используйте вход на устройстве, чтобы разрешить это.
     }
 # This message can be seen when attempting to edit a login in about:logins on Windows.
-about-logins-edit-login-os-auth-dialog-message2-win = Чтобы изменить свой пароль, введите свои учетные данные для входа в Windows. Это помогает защитить безопасность ваших аккаунтов.
+about-logins-edit-login-os-auth-dialog-message2-win = Чтобы изменить свой пароль, введите свои учётные данные для входа в Windows. Это помогает защитить безопасность ваших аккаунтов.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-edit-login-os-auth-dialog-message2-macosx = изменить сохраненный пароль
+about-logins-edit-login-os-auth-dialog-message2-macosx = изменить сохранённый пароль
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Чтобы просмотреть свой пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -204,10 +206,10 @@ about-logins-export-password-os-auth-dialog-message-win = Чтобы экспо�
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = экспортировать сохранённые логины и пароли
 # This message can be seen when attempting to export a password in about:logins on Windows.
-about-logins-export-password-os-auth-dialog-message2-win = Чтобы экспортировать пароли, введите свои учетные данные для входа в Windows. Это помогает защитить безопасность ваших аккаунтов.
+about-logins-export-password-os-auth-dialog-message2-win = Чтобы экспортировать пароли, введите свои учётные данные для входа в Windows. Это помогает защитить безопасность ваших аккаунтов.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-export-password-os-auth-dialog-message2-macosx = экспорт сохраненных паролей
+about-logins-export-password-os-auth-dialog-message2-macosx = экспорт сохранённых паролей
 
 ## Primary Password notification
 
@@ -248,16 +250,16 @@ about-logins-confirm-remove-all-dialog-checkbox-label =
     }
 about-logins-confirm-remove-all-dialog-title =
     { $count ->
-        [one] Сохранён { $count } логин. Удалить их все?
+        [one] Сохранён { $count } логин. Удалить его?
         [few] Сохранено { $count } логина. Удалить их все?
        *[many] Сохранено { $count } логинов. Удалить их все?
     }
 about-logins-confirm-remove-all-dialog-message =
     { $count ->
-        [1] Это приведет к удалению логина, сохранённого вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
-        [one] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
-        [few] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
-       *[many] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+        [1] Это приведёт к удалению логина, сохранённого вами в { -brand-short-name }, и всех предупреждений о взломе, появляющихся здесь. Вы не сможете отменить это действие.
+        [one] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений о взломе, появляющихся здесь. Вы не сможете отменить это действие.
+        [few] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений о взломе, появляющихся здесь. Вы не сможете отменить это действие.
+       *[many] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений о взломе, появляющихся здесь. Вы не сможете отменить это действие.
     }
 about-logins-confirm-remove-all-sync-dialog-title =
     { $count ->
@@ -267,10 +269,10 @@ about-logins-confirm-remove-all-sync-dialog-title =
     }
 about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
-        [1] Это приведет к удалению логина, сохранённого вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения об утечках. Вы не сможете отменить это действие.
-        [one] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения об утечках. Вы не сможете отменить это действие.
-        [few] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения об утечках. Вы не сможете отменить это действие.
-       *[many] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения об утечках. Вы не сможете отменить это действие.
+        [1] Это приведёт к удалению логина, сохранённого вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения о взломе. Вы не сможете отменить это действие.
+        [one] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения о взломе. Вы не сможете отменить это действие.
+        [few] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения о взломе. Вы не сможете отменить это действие.
+       *[many] Это приведёт к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизируемых с вашим { -fxaccount-brand-name(case: "instrumental") }. Также будут удалены появляющиеся здесь предупреждения о взломе. Вы не сможете отменить это действие.
     }
 # Checkbox for modal to confirm the removal of saved passwords
 about-logins-confirm-remove-all-dialog-checkbox-label2 =
@@ -290,31 +292,31 @@ about-logins-confirm-remove-all-dialog-title2 =
 # Message for modal to confirm the removal of saved passwords when user is NOT synced
 about-logins-confirm-remove-all-dialog-message2 =
     { $count ->
-        [1] При этом будут удален пароль, сохраненный в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
-        [one] При этом будут удален пароль, сохраненный в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
-        [few] При этом будут удалены пароли, сохраненные в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
-       *[many] При этом будут удалены пароли, сохраненные в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
+        [1] При этом будет удалён пароль, сохранённый в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
+        [one] При этом будет удалён пароль, сохранённый в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
+        [few] При этом будут удалены пароли, сохранённые в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
+       *[many] При этом будут удалены пароли, сохранённые в { -brand-short-name }, и все предупреждения о взломе. Вы не можете отменить это действие.
     }
 # Title for modal to confirm the removal of all saved passwords when user IS SYNCED
 about-logins-confirm-remove-all-sync-dialog-title2 =
     { $count ->
         [one] Удалить { $count } пароль со всех устройств?
         [few] Удалить { $count } пароля со всех устройств?
-       *[many] Удалить все { $count } пролей со всех устройств?
+       *[many] Удалить все { $count } паролей со всех устройств?
     }
 # Message for modal to confirm the removal of saved passwords when user IS synced.
 about-logins-confirm-remove-all-sync-dialog-message3 =
     { $count ->
-        [1] Это приведет к удалению пароля, сохраненного в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведет к удалению всех отображаемых здесь предупреждений об утечках. Вы не можете отменить это действие.
-        [one] Это приведет к удалению пароля, сохраненного в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведет к удалению всех отображаемых здесь предупреждений об утечках. Вы не можете отменить это действие.
-        [few] Это приведет к удалению паролей, сохраненных в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведет к удалению всех отображаемых здесь предупреждений об утечках. Вы не можете отменить это действие.
-       *[many] Это приведет к удалению паролей, сохраненных в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведет к удалению всех отображаемых здесь предупреждений об утечках. Вы не можете отменить это действие.
+        [1] Это приведёт к удалению пароля, сохранённого в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведёт к удалению всех отображаемых здесь предупреждениях о взломе. Вы не можете отменить это действие.
+        [one] Это приведёт к удалению пароля, сохранённого в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведёт к удалению всех отображаемых здесь предупреждениях о взломе. Вы не можете отменить это действие.
+        [few] Это приведёт к удалению паролей, сохранённых в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведёт к удалению всех отображаемых здесь предупреждениях о взломе. Вы не можете отменить это действие.
+       *[many] Это приведёт к удалению паролей, сохранённых в { -brand-short-name } на всех ваших синхронизированных устройствах. Это также приведёт к удалению всех отображаемых здесь предупреждениях о взломе. Вы не можете отменить это действие.
     }
 
 ##
 
 about-logins-confirm-export-dialog-title = Экспорт логинов и паролей
-about-logins-confirm-export-dialog-message = Ваши пароли будут сохранены в виде читаемого текста (например, BadP@ssw0rd), поэтому любой, кто может открыть файл с ними, сможет их просмотреть.
+about-logins-confirm-export-dialog-message = Ваши пароли будут сохранены в виде читаемого текста (например, ПлохойП@р0ль), поэтому любой, кто может открыть файл с ними, сможет их просмотреть.
 about-logins-confirm-export-dialog-confirm-button = Экспортировать…
 about-logins-confirm-export-dialog-title2 = Примечание об экспорте паролей
 about-logins-confirm-export-dialog-message2 =
@@ -323,9 +325,9 @@ about-logins-confirm-export-dialog-message2 =
 about-logins-confirm-export-dialog-confirm-button2 = Продолжить экспорт
 about-logins-alert-import-title = Импорт завершён
 about-logins-alert-import-message = Посмотреть подробную сводку импорта
-confirm-discard-changes-dialog-title = Отменить несохранённые изменения?
+confirm-discard-changes-dialog-title = Отказаться от несохранённых изменений?
 confirm-discard-changes-dialog-message = Все несохранённые изменения будут потеряны.
-confirm-discard-changes-dialog-confirm-button = Отменить
+confirm-discard-changes-dialog-confirm-button = Отказаться
 
 ## Breach Alert notification
 
@@ -366,7 +368,7 @@ about-logins-export-file-picker-default-filename = логины.csv
 about-logins-export-file-picker-title2 = Экспорт паролей из { -brand-short-name }
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
-about-logins-export-file-picker-default-filename2 = passwords.csv
+about-logins-export-file-picker-default-filename2 = пароли.csv
 about-logins-export-file-picker-export-button = Экспортировать
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -405,25 +407,25 @@ about-logins-import-file-picker-tsv-filter-title =
 about-logins-import-dialog-title = Импорт завершён
 about-logins-import-dialog-items-added =
     { $count ->
-        [one] <span>Добавлены новые логины:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Добавлен новый логин:</span> <span data-l10n-name="count">{ $count }</span>
         [few] <span>Добавлены новые логины:</span> <span data-l10n-name="count">{ $count }</span>
        *[many] <span>Добавлены новые логины:</span> <span data-l10n-name="count">{ $count }</span>
     }
 about-logins-import-dialog-items-modified =
     { $count ->
-        [one] <span>Обновлены существующие логины:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Обновлён существующий логин:</span> <span data-l10n-name="count">{ $count }</span>
         [few] <span>Обновлены существующие логины:</span> <span data-l10n-name="count">{ $count }</span>
        *[many] <span>Обновлены существующие логины:</span> <span data-l10n-name="count">{ $count }</span>
     }
 about-logins-import-dialog-items-no-change =
     { $count ->
-        [one] <span>Найдены повторяющие логины:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не импортирован)</span>
+        [one] <span>Найден повторяющийся логин:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не импортирован)</span>
         [few] <span>Найдены повторяющие логины:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не импортированы)</span>
        *[many] <span>Найдены повторяющие логины:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не импортированы)</span>
     }
 about-logins-import-dialog-items-added2 =
     { $count ->
-        [one] <span>Добавлен новый пароли:</span> <span data-l10n-name="count">{ $count }</span>
+        [one] <span>Добавлен новый пароль:</span> <span data-l10n-name="count">{ $count }</span>
         [few] <span>Добавлены новые пароли:</span> <span data-l10n-name="count">{ $count }</span>
        *[many] <span>Добавлены новые пароли:</span> <span data-l10n-name="count">{ $count }</span>
     }
@@ -454,7 +456,7 @@ about-logins-import-dialog-error-file-format-description = Неверные ил
 about-logins-import-dialog-error-file-permission-title = Не удалось прочитать файл
 about-logins-import-dialog-error-file-permission-description = { -brand-short-name } не имеет прав на чтение файла. Попробуйте сменить разрешения для файла.
 about-logins-import-dialog-error-unable-to-read-title = Не удалось обработать файл
-about-logins-import-dialog-error-unable-to-read-description = Проверьте, что вы действительно выбрали CSV- или TSV-файл.
+about-logins-import-dialog-error-unable-to-read-description = Проверьте, что вы действительно выбрали CSV или TSV-файл.
 about-logins-import-dialog-error-no-logins-imported = Ни один логин не импортирован
 about-logins-import-dialog-error-learn-more = Подробнее
 about-logins-import-dialog-error-try-import-again = Повторить попытку импорта…
@@ -466,19 +468,19 @@ about-logins-import-report-description2 = Пароли импортирован�
 # Variables:
 #  $number (number) - The number of the row
 about-logins-import-report-row-index = Строка { $number }
-about-logins-import-report-row-description-no-change = Дубликат: Такой логин уже существует
-about-logins-import-report-row-description-modified = Существующий логин обновлен
+about-logins-import-report-row-description-no-change = Дубликат: такой логин уже существует
+about-logins-import-report-row-description-modified = Существующий логин обновлён
 about-logins-import-report-row-description-added = Новый логин добавлен
 about-logins-import-report-row-description-no-change2 = Дубликат: точное совпадение с существующей записью
 about-logins-import-report-row-description-modified2 = Существующая запись обновлена
 about-logins-import-report-row-description-added2 = Добавлен новый пароль
-about-logins-import-report-row-description-error = Ошибка: Отсутствует поле
+about-logins-import-report-row-description-error = Ошибка: отсутствует поле
 
 ##
 ## Variables:
 ##  $field (String) - The name of the field from the CSV file for example url, username or password
 
-about-logins-import-report-row-description-error-multiple-values = Ошибка: Несколько значений для { $field }
+about-logins-import-report-row-description-error-multiple-values = Ошибка: несколько значений для { $field }
 about-logins-import-report-row-description-error-missing-field = Ошибка: Отсутствует { $field }
 
 ##
@@ -499,7 +501,7 @@ about-logins-import-report-modified =
     }
 about-logins-import-report-no-change =
     { $count ->
-        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющийся логин</div> <div data-l10n-name="not-imported">(не импортировано)</div>
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющийся логин</div> <div data-l10n-name="not-imported">(не импортирован)</div>
         [few] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющихся логина</div> <div data-l10n-name="not-imported">(не импортировано)</div>
        *[many] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">повторяющихся логинов</div> <div data-l10n-name="not-imported">(не импортировано)</div>
     }

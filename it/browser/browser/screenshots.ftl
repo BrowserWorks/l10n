@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 screenshot-toolbarbutton =
-    .label = Acquisisci schermata
-    .tooltiptext = Acquisisci schermata
+    .label = Cattura schermata
+    .tooltiptext = Cattura schermata
 screenshot-shortcut =
     .key = S
 screenshots-instructions = Trascina o fai clic su una pagina per selezionare un’area della pagina. Premi ESC per annullare.
@@ -66,6 +66,11 @@ screenshots-component-copy-button-2 = Copia
 screenshots-component-download-button-2 = Scarica
     .title = Scarica ({ $shortcut })
     .aria-label = Scarica
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the screenshot command.
+screenshot-toolbar-button =
+    .label = Cattura schermata
+    .tooltiptext = Cattura schermata ({ $shortcut })
 
 ## The below strings are used to capture keydown events so the strings should
 ## not be changed unless the keyboard layout in the locale requires it.
@@ -76,9 +81,11 @@ screenshots-component-copy-key = C
 ##
 
 # This string represents the selection size area
-# "x" here represents "by" (i.e 123 by 456)
+# "×" here represents "by" (i.e 123 by 456)
 # Variables:
 #   $width (Number) - The width of the selection region in pixels
 #   $height (Number) - The height of the selection region in pixels
 screenshots-overlay-selection-region-size-3 = { $width } × { $height }
+screenshots-overlay-preview-face-label =
+    .aria-label = Seleziona questa regione
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } stødte på en fejl og
 crashreporter-plea = Du kan hjælpe os med at diagnosticere og rette problemet ved at sende os en fejlrapport.
 crashreporter-information = Dette program køres efter et nedbrud for at rapportere problemet til { -vendor-short-name }. Det bør ikke blive kørt direkte.
 crashreporter-error = { -brand-short-name } stødte på en fejl og gik ned. Desværre kan Fejlrapportøren ikke indsende en rapport om dette nedbrud.
+crashreporter-error-details-header = Detaljer:
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = Detaljer: { $details }
 crashreporter-no-run-message = Dette program køres efter et nedbrud for at rapportere problemet til producenten. Det bør ikke blive kørt direkte.
@@ -16,9 +17,13 @@ crashreporter-loading-details = Indlæser…
 crashreporter-view-report-title = Rapportindhold
 crashreporter-comment-prompt = Tilføj en kommentar (kommentarer er offentligt tilgængelige)
 crashreporter-report-info = Denne rapport indeholder også teknisk information omkring programmets tilstand da det brød ned.
+crashreporter-checkbox-test-hardware = Undersøg problemer med hardware og opsætning på min enhed.
+crashreporter-checkbox-send-report = Fortæl { -vendor-short-name } om nedbruddet, så de kan rette fejlen.
+crashreporter-checkbox-include-url = Inkluder webadressen til den besøgte side.
 crashreporter-send-report = Fortæl { -vendor-short-name } om nedbruddet, så de kan rette fejlen
 crashreporter-include-url = Inkluder webadressen til den besøgte side.
 crashreporter-submit-status = Din fejlrapport vil blive sendt inden du afslutter eller genstarter.
+crashreporter-submit-waiting-hardware-tests = Undersøger problemer med hardware og opsætning…
 crashreporter-submit-in-progress = Sender din fejlrapport…
 crashreporter-submit-success = Fejlrapport indsendt korrekt!
 crashreporter-submit-failure = Der opstod et problem under indsendelsen af din fejlrapport.
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = Manglende hjem-mappe
 # $to (String) - the destination path
 crashreporter-error-moving-path = Kunne ikke flytte { $from } til { $to }
 crashreporter-error-version-eol = Versionen understøttes ikke længere og fejlrapporter accepteres ikke.
+crashreporter-error-failed-to-generate-minidump = Programmet kunne ikke oprette oplysninger om nedbrud.

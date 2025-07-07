@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ## Credential panel
 ##
@@ -26,4 +27,3 @@ identity-credential-sign-in-button =
     .accesskey = A
 identity-credential-policy-title = Utilizza { $provider } come provider di accesso
 identity-credential-policy-description = L’accesso a { $host } con un account { $provider } è soggetto all’<label data-l10n-name="privacy-url">Informativa sulla privacy</label> e alle <label data-l10n-name="tos-url">Condizioni di utilizzo del servizio</label> di quest’ultimo.
-

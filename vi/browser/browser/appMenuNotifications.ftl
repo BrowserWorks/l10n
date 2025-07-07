@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Bỏ qua
     .secondarybuttonaccesskey = m
 appmenu-update-restart-message2 = Tải xuống phiên bản mới nhất của { -brand-shorter-name }. Các thẻ và cửa sổ đang mở sẽ được khôi phục.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Hoàn tác
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } không thể tự động cập nhật lên phiên bản mới nhất.
     .buttonlabel = Vẫn cập nhật { -brand-shorter-name }
@@ -37,15 +40,19 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Không phải lúc này
     .secondarybuttonaccesskey = N
 appmenu-update-other-instance-message = Đã có bản cập nhật { -brand-shorter-name } mới nhưng không thể cài đặt bản cập nhật này vì một bản sao khác của { -brand-shorter-name } đang chạy. Đóng nó để tiếp tục cập nhật hoặc chọn vẫn cập nhật (bản sao khác có thể không hoạt động chính xác cho đến khi bạn khởi động lại nó).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = Okay
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = Quản lý các tiện ích mở rộng và chủ đề của bạn thông qua menu ứng dụng.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = Cập nhật quyền và tùy chọn dữ liệu bất kỳ lúc nào trong <a data-l10n-name="settings-link">cài đặt tiện ích</a>.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Ghim tiện ích vào thanh công cụ
+    .accesskey = P
 appmenu-addon-post-install-incognito-checkbox =
     .label = Cho phép tiện ích mở rộng này chạy trong cửa sổ riêng tư
     .accesskey = A
-
 appmenu-new-tab-controlled-changes =
     .label = Thẻ mới của bạn đã thay đổi.
     .buttonlabel = Lưu thay đổi

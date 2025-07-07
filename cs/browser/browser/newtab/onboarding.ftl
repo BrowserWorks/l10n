@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -29,6 +29,8 @@ return-to-amo-subtitle =
 return-to-amo-addon-title = Teď zpět k doplňku <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Přidat rozšíření
 return-to-amo-add-theme-label = Přidat motiv vzhledu
+return-to-amo-theme-install-complete-label = Vzhled nainstalován
+return-to-amo-extension-install-complete-label = Rozšíření nainstalováno
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -56,9 +58,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Postup: krok { $current } z { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Vypnout animace
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Přihlásit se
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importovat z prohlížeče { $previous }
@@ -160,7 +162,7 @@ mr2022-onboarding-live-language-continue-in = Ponechat jazyk { $appLanguage }
 onboarding-live-language-secondary-cancel-download = Zrušit
 onboarding-live-language-skip-button-label = Přeskočit
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -215,20 +217,20 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label =
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importovat z dříve používaného prohlížeče
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Objevte úžasný internet
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle =
     { -brand-short-name.case-status ->
         [with-cases] Spusťte { -brand-short-name(case: "acc") } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
        *[no-cases] Spusťte aplikaci { -brand-short-name } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
     }
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos]
@@ -242,24 +244,30 @@ mr2022-onboarding-pin-primary-button-label =
                *[no-cases] Připnout aplikaci { -brand-short-name } na hlavní panel
             }
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix =
+    { -brand-short-name.case-status ->
+        [with-cases] Připnout { -brand-short-name(case: "acc") } na hlavní panel a do nabídky start
+       *[no-cases] Připnout aplikaci { -brand-short-name } na hlavní panel a do nabídky start
+    }
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Začněte s prohlížečem podporovaným neziskovou organizací. Chráníme vaše soukromí, když se pohybujete po webu.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header =
     { -brand-product-name.case-status ->
         [with-cases] Děkujeme, že máte rádi { -brand-product-name(case: "acc") }
        *[no-cases] Děkujeme, že máte rádi aplikaci { -brand-product-name }
     }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Spusťte zdravější internet odkudkoli jediným klepnutím. Naše nejnovější aktualizace je plná nových věcí, o kterých si myslíme, že si je zamilujete.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Používejte prohlížeč, který chrání vaše soukromí při procházení webu. Naše nejnovější aktualizace je plná věcí, které si zamilujete.
 mr2022-onboarding-existing-pin-checkbox-label =
     { -brand-short-name.case-status ->
@@ -286,14 +294,16 @@ mr2022-onboarding-set-default-subtitle = Používejte prohlížeč podporovaný 
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = Naše nejnovější verze je postavená podle vás, díky čemuž je procházení webu snazší než kdykoli předtím. Je nabitá funkcemi, které si podle nás zamilujete.
 mr2022-onboarding-get-started-primary-button-label = Nastavení během okamžiku
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Bleskové nastaveni
 mr2022-onboarding-import-subtitle =
@@ -369,7 +379,7 @@ mr2022-onboarding-no-mobile-download-cta-text =
     }
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Získejte svobodu soukromého prohlížení jediným klepnutím
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Žádné uložené cookies ani historie, přímo z vaší plochy. Prohlížejte, jako když se nikdo nedívá.Žádné uložené soubory cookies ani historie, přímo z vaší plochy. Prohlížejte, jako by se nikdo nedíval.
@@ -469,6 +479,24 @@ onboarding-device-migration-subtitle = Přihlaste se ke svému { -fxaccount-bran
 onboarding-device-migration-subtitle2 = Přihlaste se ke svému účtu a přeneste své záložky, hesla a historii na vaše nové zařízení.
 onboarding-device-migration-primary-button-label = Přihlásit se
 
+## Add-ons Picker screen
+
+amo-picker-title =
+    { -brand-short-name.gender ->
+        [masculine] Přizpůsobte si svůj { -brand-short-name(case: "acc") }
+        [feminine] Přizpůsobte si svou { -brand-short-name(case: "acc") }
+        [neuter] Přizpůsobte si své { -brand-short-name(case: "acc") }
+       *[other] Přizpůsobte si svou aplikaci { -brand-short-name }
+    }
+amo-picker-subtitle = Rozšíření jsou jako aplikace pro váš prohlížeč. Umožňují vám chránit hesla, stahovat videa, hledat akční nabídky, blokovat obtěžující reklamy, měnit vzhled prohlížeče a mnoho dalšího.
+amo-picker-install-button-label =
+    { -brand-short-name.case-status ->
+        [with-cases] Přidat do { -brand-short-name(case: "gen") }
+       *[no-cases] Přidat do aplikace { -brand-short-name }
+    }
+amo-picker-install-complete-label = Nainstalováno
+amo-picker-collection-link = Prozkoumat další doplňky
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -484,6 +512,11 @@ onboarding-gratitude-security-and-privacy-subtitle =
         [with-cases] Děkujeme, že používáte { -brand-short-name(case: "acc") }, za kterým stojí nadace BrowserWorks. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
        *[no-cases] Děkujeme, že používáte aplikaci { -brand-short-name }, za kterým stojí nadace BrowserWorks. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
     }
+# Sign up or Sign in screen
+onboarding-sign-up-title = Synchronizujte svoje údaje mezi zařízeními
+onboarding-sign-up-description = Zaregistrujte si účet a všechny vaše důležité informace — hesla, záložky a další — budou bezpečně uloženy a dostupné při přihlášení na jakémkoli zařízení.
+onboarding-sign-up-button = Přihlásit nebo registrovat
+onboarding-sign-up-secondary-button = Začít pohlížet
 
 ## New user time and familiarity survey strings
 
@@ -515,3 +548,124 @@ onboarding-new-user-survey-familiarity-based-option-1 = Jsem nováček
 onboarding-new-user-survey-familiarity-based-option-2 = Několikrát jsem ho použil
 onboarding-new-user-survey-familiarity-based-option-3 = Znám jej velmi dobře
 onboarding-new-user-survey-familiarity-based-option-4 = V minulosti jsem jej používal, ale už je to nějaký čas
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Sdělte nám, kde chcete mít své panely
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Přepněte si ho kdykoliv chcete v nastavení postranní lišty.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Vaše panely, vaše volba
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Máte otevřeno mnoho panelů? Vyzkoušejte panely na boční straně a získejte tak přehlednější zobrazení. Nebo si zachovejte klasický vzhled s panely nahoře. Přepnout můžete kdykoliv.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Vyberte si rozložení panelů
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Chcete-li mít přehlednější zobrazení, které vám pomůže udržet pozornost, zkuste vertikální panely. Nebo si zachovejte klasický vzhled s panely nahoře. Přepnout můžete kdykoliv.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Panely na straně
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Panely v horní části
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Svislé panely jsou tady
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Představujeme svislé panely
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Vyzkoušejte panely nalevo. Zobrazení panelů můžete kdykoliv přepnout v nastavení postranní lišty.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Vyzkoušet svislé panely
+onboarding-flair-text = Novinka!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Ponechat panely vodorovně
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title =
+        { -brand-shorter-name.case-status ->
+            [with-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty { -brand-shorter-name(case: "gen") }.
+           *[no-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty aplikace { -brand-shorter-name }.
+        }
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description =
+        { -brand-shorter-name.case-status ->
+            [with-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty { -brand-shorter-name(case: "gen") }.
+           *[no-cases] Okno prohlížeče zobrazující panely podél obrazovky jako součást postranní lišty aplikace { -brand-shorter-name }.
+        }
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Okno prohlížeče s panely v horní části.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Okno prohlížeče s panely v horní části.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Vyzkoušejte AI chatbota v postranní liště
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Shrnujte webový obsah, využívejte nové nápady, koncepty zpráv – to vše během prohlížení. Vyberte si z více poskytovatelů. Přepnout můžete kdykoli. <a data-l10n-name="learn-more">Zjistit více</a>
+onboarding-genai-sidebar-primary-button = Vyberte si chatbota
+onboarding-genai-sidebar-secondary-button = Začít prohlížet
+
+## New user onboarding checklist
+
+onboarding-checklist-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Dokončení nastavení { -brand-short-name(case: "gen") }
+       *[no-cases] Dokončení nastavení aplikace { -brand-short-name }
+    }
+onboarding-checklist-subtitle = Dokončete tyto kroky a využijte tak své prohlížení na maximum.
+onboarding-checklist-set-default =
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako výchozí prohlížeč
+       *[no-cases] Nastavit aplikaci { -brand-short-name } jako výchozí prohlížeč
+    }
+onboarding-checklist-pin =
+    { -brand-short-name.case-status ->
+        [with-cases] Připnout { -brand-short-name(case: "acc") } na hlavní panel
+       *[no-cases] Připnout aplikaci { -brand-short-name } na hlavní panel
+    }
+onboarding-checklist-import = Importovat z dříve používaného prohlížeče
+onboarding-checklist-extension = Přidat rozšíření
+onboarding-checklist-sign-up = Zaregistrujte se nebo se přihlaste ke svému účtu
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Vyzkoušejte skupiny karet, abyste měli méně nepořádku a více se soustředili.
+tab-groups-onboarding-feature-callout-subtitle = Vytvořte si pořádek přesunutím jednoho panelu na druhý, čímž vytvoříte svoji první skupinu.
+tab-groups-onboarding-create-group-title-2 = Kdykoli zde najdete své skupiny panelů.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Skupiny najdete vyhledáním v adresním řádku.
+tab-groups-onboarding-saved-groups-title-2 = Když skupinu panelů zavřete, můžete ji zde kdykoli znovu otevřít.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Uzavřené skupiny najdete vyhledáním v adresním řádku.
+tab-groups-onboarding-session-restore-title = Zde můžete kdykoli znovu otevřít skupiny panelů.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title =
+    { -brand-product-name.case-status ->
+        [with-cases] Pozdravte profily { -brand-product-name(case: "gen") }
+       *[no-cases] Pozdravte profily aplikace { -brand-product-name }
+    }
+multi-profile-spotlight-body = Snadno přepínejte mezi prohlížením pro práci a zábavu. Profily uchovávají informace o procházení, včetně historie vyhledávání a hesel, zcela odděleně, takže si můžete udržet pořádek.
+multi-profile-spotlight-cta = Vytvořit profil
+multi-profile-callout-title = Vytvořte si různé profily pro práci a zábavu
+multi-profile-callout-subtitle = Profily umožňují uchovávat informace o procházení, jako je historie vyhledávání a hesla, zcela odděleně.
+multi-profile-callout-cta = Vytvořit profil
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Stáhněte, synchronizujte a vyrazte na cesty!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle =
+    { -brand-product-name.case-status ->
+        [with-cases] Naskenujte QR kód a stáhněte si { -brand-product-name(case: "acc") } pro mobilní zařízení. Po instalaci vyberte možnost "Synchronizovat s mobilním telefonem" a získejte přístup ke svým heslům, záložkám a dalším údajům na cestách.
+       *[no-cases] Naskenujte QR kód a stáhněte si aplikaci { -brand-product-name } pro mobilní zařízení. Po instalaci vyberte možnost "Synchronizovat s mobilním telefonem" a získejte přístup ke svým heslům, záložkám a dalším údajům na cestách.
+    }
+dismiss-button-label = Zavřít
+sync-to-mobile-button-label = Synchronizace s mobilem
+desktop-to-mobile-qr-code-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobilní zařízení
+           *[no-cases] QR kód pro stažení aplikace { -brand-product-name } pro mobilní zařízení
+        }

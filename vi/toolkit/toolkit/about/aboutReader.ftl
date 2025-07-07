@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Nâu đỏ
     .title = Phối màu nâu đỏ
 about-reader-color-scheme-auto = Tự động
     .title = Phối màu tự động
-about-reader-color-theme-light = Sáng
-    .title = Chủ đề màu sáng
-about-reader-color-theme-dark = Tối
-    .title = Chủ đề màu tối
-about-reader-color-theme-sepia = Nâu đỏ
-    .title = Chủ đề màu nâu đỏ
-about-reader-color-theme-auto = Tự động
-    .title = Chủ đề tự động
-about-reader-color-theme-gray = Xám
-    .title = Chủ đề màu xám
-about-reader-color-theme-contrast = Tương phản
-    .title = Chủ đề tương phản
-about-reader-color-theme-custom = Màu tùy chỉnh
-    .title = Chủ đề màu theo tùy chỉnh
 about-reader-color-light-theme = Sáng
     .title = Chủ đề sáng
 about-reader-color-dark-theme = Tối
@@ -45,7 +31,7 @@ about-reader-color-contrast-theme = Tương phản
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 about-reader-estimated-read-time = { $range } phút
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Giảm cỡ chữ
@@ -70,7 +56,6 @@ about-reader-font-type-monospace = Monospace
 
 about-reader-toolbar-close = Đóng chế độ đọc sách
 about-reader-toolbar-type-controls = Kiểu hiển thị
-about-reader-toolbar-color-controls = Màu sắc
 about-reader-toolbar-text-layout-controls = Văn bản và bố cục
 about-reader-toolbar-theme-controls = Chủ đề
 about-reader-toolbar-savetopocket = Lưu vào { -pocket-brand-name }
@@ -95,10 +80,24 @@ about-reader-custom-colors-visited-links = Liên kết đã truy cập
     .title = Chỉnh sửa màu
 about-reader-custom-colors-selection-highlight = Công cụ đánh dấu để đọc to
     .title = Chỉnh sửa màu
-about-reader-custom-colors-reset-button = Khôi phục về mặc định
 about-reader-reset-button = Khôi phục về mặc định
+about-reader-custom-colors-foreground2 =
+    .label = Văn bản
+    .title = Chỉnh sửa màu
+about-reader-custom-colors-background2 =
+    .label = Nền
+    .title = Chỉnh sửa màu
+about-reader-custom-colors-unvisited-links2 =
+    .label = Liên kết chưa truy cập
+    .title = Chỉnh sửa màu
+about-reader-custom-colors-visited-links2 =
+    .label = Liên kết đã truy cập
+    .title = Chỉnh sửa màu
+about-reader-custom-colors-selection-highlight2 =
+    .label = Công cụ đánh dấu để đọc to
+    .title = Chỉnh sửa màu
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Chữ
 about-reader-text-size-label = Cỡ chữ
@@ -115,9 +114,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Khoảng cách dòng
 about-reader-advanced-layout-header = Nâng cao
-about-reader-slider-label-width-narrow = Hẹp
-about-reader-slider-label-width-wide = Rộng
-about-reader-slider-label-spacing-narrow = Hẹp
 about-reader-character-spacing-label =
     .label = Khoảng cách kí tự
 about-reader-word-spacing-label =
@@ -129,3 +125,5 @@ about-reader-text-alignment-center =
     .title = Căn chỉnh văn bản ở giữa
 about-reader-text-alignment-right =
     .title = Căn chỉnh văn bản sang phải
+about-reader-text-alignment-justify =
+    .title = Căn chỉnh văn bản đều hai bên

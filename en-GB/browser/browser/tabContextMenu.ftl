@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = New Tab
@@ -28,10 +32,16 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Close Tabs to Left
     .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = Close Tabs Above
+    .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Close Tabs to Right
+    .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = Close Tabs Below
     .accesskey = i
 close-other-tabs =
     .label = Close Other Tabs
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Share
     .accesskey = h
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = New Tab to Right
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = New Tab Below
+    .accesskey = w
+tab-context-new-group =
+    .label = New Group
+    .accesskey = G
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -110,3 +130,10 @@ tab-context-send-tabs-to-device =
            *[other] Send { $tabCount } Tabs to Device
         }
     .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Unload Tab
+           *[other] Unload { $tabCount } Tabs
+        }
+    .accesskey = U

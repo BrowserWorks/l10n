@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,6 +11,11 @@ contentanalysis-slow-agent-dialog-header = กำลังสแกน
 #   $agent - The name of the DLP agent doing the analysis
 #   $filename - Name of the file being analyzed, such as "aFile.txt"
 contentanalysis-slow-agent-dialog-body-file = { $agent } กำลังตรวจสอบ “{ $filename }” กับนโยบายข้อมูลขององค์กรของคุณ ขั้นตอนนี้อาจจะใช้เวลาสักครู่
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more = { $agent } กำลังตรวจสอบ “{ $filename }” และ { $count } รายการเพิ่มเติมว่าสอดคล้องตามนโยบายข้อมูลขององค์กรของคุณหรือไม่ การกระทำนี้จะใช้เวลาสักครู่
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent } กำลังตรวจสอบข้อมูลที่คุณวางกับนโยบายข้อมูลขององค์กรของคุณ ขั้นตอนนี้อาจจะใช้เวลาสักครู่
@@ -58,6 +63,10 @@ contentanalysis-error-message-upload-file = การอัปโหลด “{ 
 contentanalysis-error-message-dropped-text = การลากแล้วปล่อยถูกปฏิเสธ
 contentanalysis-error-message-clipboard = การวางถูกปฏิเสธ
 contentanalysis-error-message-print = การพิมพ์ถูกปฏิเสธ
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = การเชื่อมต่อกับ { $agent } หมดเวลาลงแล้ว { $contentName } ถูกปิดกั้น
 contentanalysis-block-dialog-title-upload-file = คุณไม่ได้รับอนุญาตให้อัปโหลดไฟล์นี้
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"

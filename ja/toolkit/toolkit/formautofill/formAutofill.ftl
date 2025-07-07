@@ -1,16 +1,16 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = 保存した支払い方法情報を使用しようとしています
 autofill-use-payment-method-os-prompt-windows = 保存した支払い方法情報を { -brand-short-name } が使用しようとしています。以下の Windows アカウントへのアクセスを確認してください。
 autofill-use-payment-method-os-prompt-other = 保存した支払い方法情報を { -brand-short-name } が使用しようとしています。
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = 保存した支払い方法情報を表示しようとしています
 autofill-edit-payment-method-os-prompt-windows = 保存した支払い方法情報を { -brand-short-name } が表示しようとしています。以下の Windows アカウントへのアクセスを確認してください。
@@ -36,9 +36,6 @@ credit-card-capture-cancel-button =
 credit-card-capture-never-save-button =
     .label = カード情報を保存しない
     .accessKey = N
-
-# Used on the doorhanger when an credit card change is detected.
-
 # Used on the doorhanger when an credit card change is detected.
 credit-card-update-doorhanger-header = クレジットカード情報を更新しますか？
 credit-card-update-doorhanger-description = 更新するクレジットカード:
@@ -82,3 +79,6 @@ autofill-category-name = お名前
 autofill-category-organization = 所属組織
 autofill-category-tel = 電話番号
 autofill-category-email = メールアドレス
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = { -brand-short-name } が安全でないサイトを検出しました。フォーム自動入力が一時的に無効化されています。

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,23 @@ report-broken-site-panel-reason-label = Co działa niepoprawnie?
 report-broken-site-panel-reason-optional-label = Co działa niepoprawnie? (opcjonalnie)
 report-broken-site-panel-reason-choose =
     .label = Wybierz powód
+report-broken-site-panel-reason-load =
+    .label = Strona się nie wczytuje
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = Nie można zapłacić, dokonać płatności ani zrobić zakupów
+report-broken-site-panel-reason-slow2 =
+    .label = Strona jest wolna
+report-broken-site-panel-reason-media2 =
+    .label = Film się nie odtwarza lub nie wczytuje
+report-broken-site-panel-reason-content2 =
+    .label = Brakujące treści
+report-broken-site-panel-reason-account2 =
+    .label = Nie można się zalogować ani zarejestrować
+report-broken-site-panel-reason-adblocker2 =
+    .label = Strona poprosiła o wyłączenie blokowania reklam
+report-broken-site-panel-reason-notsupported =
+    .label = Przeglądarka nie jest obsługiwana lub została zablokowana
 report-broken-site-panel-reason-slow =
     .label = Strona działa wolno lub nie działa w ogóle
 report-broken-site-panel-reason-media =

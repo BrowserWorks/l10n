@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Send web sites a “Do Not Track” signal that you don’t want to be tracked
+do-not-track-removal = We no longer support the “Do Not Track” signal
 do-not-track-description2 =
     .label = Send web sites a “Do Not Track” request
     .accesskey = d
@@ -137,6 +138,7 @@ windows-launch-on-login =
     .label = Open { -brand-short-name } automatically when your computer starts up
     .accesskey = O
 windows-launch-on-login-disabled = This preference has been disabled in Windows. To change, visit <a data-l10n-name="startup-link">Startup Apps</a> in System settings.
+windows-launch-on-login-profile-disabled = Enable this preference by checking “{ profile-manager-use-selected.label }” in the “Choose User Profile” window.
 startup-restore-warn-on-quit =
     .label = Warn you when quitting the browser
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = Import bookmarks, passwords, history an
 preferences-data-migration-button =
     .label = Import Data
     .accesskey = m
+preferences-profiles-header = Profiles
+preferences-manage-profiles-description = Each profile has separate browsing data and settings, including history, passwords, and more.
+preferences-manage-profiles-learn-more = Learn more
+preferences-manage-profiles-button =
+    .label = Manage Profiles
 tabs-group-header = Tabs
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab cycles through tabs in recently used order
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Open links in tabs instead of new windows
     .accesskey = w
+ask-on-close-multiple-tabs =
+    .label = Ask before closing multiple tabs
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Ask before quitting with { $quitKey }
+    .accesskey = b
 confirm-on-close-multiple-tabs =
     .label = Confirm before closing multiple tabs
     .accesskey = m
@@ -212,6 +230,16 @@ containers-remove-cancel-button = Don’t remove this Container
 settings-tabs-show-image-in-preview =
     .label = Show an image preview when you hover on a tab
     .accessKey = h
+browser-layout-header = Browser Layout
+browser-layout-horizontal-tabs =
+    .label = Horizontal tabs
+browser-layout-horizontal-tabs-desc = Display at top of browser
+browser-layout-vertical-tabs =
+    .label = Vertical tabs
+browser-layout-vertical-tabs-desc = Display on the side, in the sidebar
+browser-layout-show-sidebar =
+    .label = Show sidebar
+browser-layout-show-sidebar-desc = Quickly access bookmarks, tabs from your phone, AI chatbots, and more without leaving your main view.
 
 ## General Section - Language & Appearance
 
@@ -235,6 +263,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Your contrast control settings are overriding web site appearance.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Your colour selections are overriding web site appearance. <a data-l10n-name="colors-link">Manage colours</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -243,6 +275,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Manage { -brand-short-name } themes in <a data-l10n-name="themes-link">Extensions & Themes</a>
+preferences-contrast-control-header = Contrast Control
+preferences-contrast-control-description = Web sites have a variety of foreground and background colours. Configure { -brand-short-name } to use the same colours across web sites for improved readability.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatic (use system settings)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Off
+    .accesskey = O
+preferences-contrast-control-custom =
+    .label = Custom
+    .accesskey = C
 preferences-colors-header = Colours
 preferences-colors-description = Override { -brand-short-name }’s default colours for text, web site backgrounds, and links.
 preferences-colors-manage-button =
@@ -318,6 +361,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Always ask you where to save files
     .accesskey = A
+download-private-browsing-delete =
+    .label = Delete files downloaded in private browsing when all private windows are closed
+    .accesskey = D
 applications-header = Applications
 applications-description = Choose how { -brand-short-name } handles the files you download from the web or the applications you use while browsing.
 applications-filter =
@@ -408,7 +454,7 @@ play-drm-content-learn-more = Learn more
 update-application-title = { -brand-short-name } Updates
 update-application-description = Keep { -brand-short-name } up to date for the best performance, stability, and security.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Version { $version } <a data-l10n-name="learn-more">What’s new</a>
 update-history =
     .label = Show Update History…
@@ -472,6 +518,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Browsing
+browsing-group-label =
+    .aria-label = Browsing
 browsing-use-autoscroll =
     .label = Use autoscrolling
     .accesskey = a
@@ -497,7 +545,7 @@ browsing-search-on-start-typing =
     .label = Search for text when you start typing
     .accesskey = x
 browsing-picture-in-picture-toggle-enabled =
-    .label = Enable picture-in-picture video controls
+    .label = Enable Picture-in-Picture video controls
     .accesskey = E
 browsing-picture-in-picture-learn-more = Learn more
 browsing-media-control =
@@ -556,7 +604,7 @@ choose-bookmark =
     .label = Use Bookmark…
     .accesskey = B
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } Content
 home-prefs-content-description2 = Choose what content you want on your { -firefox-home-brand-name } screen.
@@ -568,8 +616,7 @@ home-prefs-shortcuts-description = Sites you save or visit
 home-prefs-shortcuts-by-option-sponsored =
     .label = Sponsored shortcuts
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Recommended by { $provider }
@@ -607,6 +654,14 @@ home-prefs-weather-header =
     .label = Weather
 home-prefs-weather-description = Today’s forecast at a glance
 home-prefs-weather-learn-more-link = Learn more
+home-prefs-trending-search-header =
+    .label = Trending searches
+home-prefs-trending-search-description = Popular and frequently searched topics
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Support { -brand-product-name }
+home-prefs-mission-message = Our sponsors support our mission to build a better web
+home-prefs-mission-message-learn-more-link = Find out how
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -641,6 +696,10 @@ search-show-suggestions-url-bar-option =
     .label = Show search suggestions in address bar results
     .accesskey = l
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Show search terms in the address bar on results pages
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -671,6 +730,9 @@ search-remove-engine =
 search-add-engine =
     .label = Add
     .accesskey = A
+search-edit-engine =
+    .label = Edit
+    .accesskey = E
 search-find-more-link = Find more search engines
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -679,6 +741,13 @@ search-keyword-warning-title = Duplicate Keyword
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = You have chosen a keyword that is currently in use by “{ $name }”. Please select another.
 search-keyword-warning-bookmark = You have chosen a keyword that is currently in use by a bookmark. Please select another.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = There already is a search engine with the name “{ $name }”. Please choose another name.
+remove-engine-confirmation = Are you sure you want to remove this search engine?
+remove-engine-remove = Remove
+remove-addon-engine-alert = To remove this search engine, remove the associated add-on.
 
 ## Containers Section
 
@@ -696,7 +765,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Remove
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Take Your Web With You
@@ -714,7 +783,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Download Waterfox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to synchronise with your mobile device.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Change profile picture
@@ -732,7 +801,7 @@ sync-manage-account = Manage account
     .accesskey = o
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } is not verified.
 sync-signedin-login-failure = Please sign in to reconnect { $email }
@@ -783,6 +852,9 @@ sync-currently-syncing-creditcards = Credit cards
 sync-currently-syncing-payment-methods = Payment methods
 sync-currently-syncing-addons = Add-ons
 sync-currently-syncing-settings = Settings
+sync-manage-options =
+    .label = Manage synchronisation…
+    .accesskey = M
 sync-change-options =
     .label = Change…
     .accesskey = C
@@ -835,6 +907,13 @@ sync-engine-settings =
     .label = Settings
     .tooltiptext = General, Privacy, and Security settings you’ve changed
     .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Manage what synchronises on all your connected devices
+    .style = min-width: 36em;
+    .buttonlabelaccept = Save
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Disconnect…
+    .buttonaccesskeyextra2 = D
 
 ## The device name controls.
 
@@ -855,7 +934,7 @@ sync-connect-another-device = Connect another device
 
 sync-verification-sent-title = Verification Sent
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = A verification link has been sent to { $email }.
 sync-verification-not-sent-title = Unable to Send Verification
 sync-verification-not-sent-body = We are unable to send a verification mail at this time, please try again later.
@@ -950,12 +1029,12 @@ windows-passkey-settings-label = Manage passkeys in system settings
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = To create a Primary Password, enter your Windows login credentials. This helps protect the security of your accounts.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = create a Primary Password
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] change the settings for payment methods
@@ -986,12 +1065,12 @@ history-header = History
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } will
     .accesskey = w
 history-remember-option-all =
@@ -1076,7 +1155,7 @@ cookie-banner-handling-description = { -brand-short-name } automatically tries t
 
 cookie-banner-blocker-header = Cookie Banner Blocker
 cookie-banner-blocker-description = When a site asks if they can use cookies in private browsing mode, { -brand-short-name } automatically refuses for you. Only on supported sites.
-cookie-banner-learn-more = Learn More
+cookie-banner-learn-more = Learn more
 forms-handle-cookie-banners =
     .label = Reduce Cookie Banners
 cookie-banner-blocker-checkbox-label =
@@ -1086,6 +1165,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Address Bar
 addressbar-suggest = When using the address bar, suggest
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Address Bar — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Choose the type of suggestions that appear in the address bar.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Learn more
 addressbar-locbar-history-option =
     .label = Browsing history
     .accesskey = H
@@ -1118,7 +1204,18 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = Show trending search suggestions
     .accesskey = t
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Suggestions from { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Get suggestions from the web related to your search.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Suggestions from sponsors
+addressbar-locbar-suggest-sponsored-desc = Support { -brand-short-name } with occasional sponsored suggestions.
 addressbar-quickactions-learn-more = Learn more
+addressbar-dismissed-suggestions-label = Dismissed suggestions
+addressbar-restore-dismissed-suggestions-description = Restore dismissed suggestions from sponsors and { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Restore
 
 ## Privacy Section - Content Blocking
 
@@ -1281,17 +1378,42 @@ permissions-addon-exceptions =
 collection-header = { -brand-short-name } Data Collection and Use
 collection-header2 = { -brand-short-name } Data Collection and Use
     .searchkeywords = telemetry
+preferences-collection-description = We strive to provide you with choices and collect only the minimal data necessary to improve { -brand-product-name } for everyone.
+preferences-collection-privacy-notice = View Privacy Notice
+preferences-across-profiles = These settings apply to every { -brand-product-name } profile on this device.
+preferences-view-profiles = View all profiles
 collection-description = We strive to provide you with choices and collect only what we need to provide and improve { -brand-short-name } for everyone. We always ask permission before receiving personal information.
 collection-privacy-notice = Privacy Notice
 collection-health-report-telemetry-disabled = You’re no longer allowing { -vendor-short-name } to capture technical and interaction data. All past data will be deleted within 30 days.
 collection-health-report-telemetry-disabled-link = Learn more
+collection-usage-ping =
+    .label = Send daily usage ping to { -vendor-short-name }
+    .accesskey = u
+collection-usage-ping-description = This helps { -vendor-short-name } to estimate active users.
+collection-health-report2 =
+    .label = Send technical and interaction data to { -vendor-short-name }
+    .accesskey = r
 collection-health-report =
     .label = Allow { -brand-short-name } to send technical and interaction data to { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Learn more
+collection-health-report-description = This helps us improve { -brand-product-name } features, performance, and stability.
+collection-studies2 =
+    .label = Install and run studies
+collection-studies-description = Try out features and ideas before they’re released to everyone.
 collection-studies =
     .label = Allow { -brand-short-name } to install and run studies
 collection-studies-link = View { -brand-short-name } studies
+addon-recommendations2 =
+    .label = Allow personalised extension recommendations
+addon-recommendations-description = Get extension recommendations to improve your browsing experience.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Data reporting is disabled for this build configuration.
+collection-backlogged-crash-reports2 =
+    .label = Automatically send crash reports
+    .accesskey = c
+collection-backlogged-crash-reports-description = This helps { -vendor-short-name } diagnose and fix issues with the browser. Reports may include personal or sensitive data.
 addon-recommendations =
     .label = Allow { -brand-short-name } to make personalised extension recommendations
 addon-recommendations-link = Learn more
@@ -1359,12 +1481,17 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } is running out of
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only Mode
+httpsonly-description3 = Only allows secure connections to web sites. { -brand-short-name } will ask before connecting insecurely.
+httpsonly-learn-more2 = How HTTPS-Only works
 httpsonly-description = HTTPS provides a secure, encrypted connection between { -brand-short-name } and the web sites you visit. Most web sites support HTTPS, and if HTTPS-Only Mode is enabled, then { -brand-short-name } will upgrade all connections to HTTPS.
 httpsonly-learn-more = Learn more
 httpsonly-radio-enabled =
     .label = Enable HTTPS-Only Mode in all windows
 httpsonly-radio-enabled-pbm =
     .label = Enable HTTPS-Only Mode in private windows only
+httpsonly-radio-disabled3 =
+    .label = Don’t enable HTTPS-Only Mode
+    .description = { -brand-short-name } may still upgrade some connections
 httpsonly-radio-disabled =
     .label = Don’t enable HTTPS-Only Mode
 

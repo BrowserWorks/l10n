@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
@@ -9,13 +10,11 @@
 
 psmerr-ssl-disabled = Impossibile stabilire una connessione sicura, il protocollo SSL è stato disattivato.
 psmerr-ssl2-disabled = Impossibile stabilire una connessione sicura, il sito utilizza una versione obsoleta e non sicura del protocollo SSL.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Si è ricevuto un certificato non valido. Si consiglia di contattare l’amministratore del server o l’indirizzo email corrispondente e fornire le seguenti informazioni:
-
+    
     Il certificato contiene lo stesso numero di serie di un altro certificato emesso dall’autorità di certificazione. Richiedere un nuovo certificato contenente un numero di serie univoco.
-
 ssl-error-export-only-server = Impossibile stabilire una connessione sicura. Il peer non supporta algoritmi crittografici di alto livello.
 ssl-error-us-only-server = Impossibile stabilire una connessione sicura. Il peer richiede algoritmi crittografici di alto livello non disponibili.
 ssl-error-no-cypher-overlap = Impossibile stabilire una connessione sicura con il peer: non esistono algoritmi crittografici in comune.
@@ -152,7 +151,6 @@ ssl-error-no-supported-signature-algorithm = Non è stato configurato alcun algo
 ssl-error-unsupported-signature-algorithm = Il peer ha utilizzato una combinazione non supportata di firma e algoritmo hash.
 ssl-error-missing-extended-master-secret = Tentativo da parte del peer di ripresa senza una corretta estensione correct extended_master_secret.
 ssl-error-unexpected-extended-master-secret = Tentativo da parte del peer di ripresa con un’estensione extended_master_secret imprevista.
-
 sec-error-io = Si è verificato un errore di I/O durante l’autorizzazione di sicurezza.
 sec-error-library-failure = Errore nella libreria di sicurezza.
 sec-error-bad-data = libreria di sicurezza: ricevuti dati scorretti.
@@ -319,8 +317,7 @@ sec-error-locked-password = La password è bloccata.
 sec-error-unknown-pkcs11-error = Errore sconosciuto PKCS #11.
 sec-error-bad-crl-dp-url = URL non valido o non supportato nel nome del punto di distribuzione CRL.
 sec-error-cert-signature-algorithm-disabled = Il certificato è stato firmato con un algoritmo di firma disattivato in quanto non sicuro.
-
-mozilla-pkix-error-key-pinning-failure = Il server utilizza il meccanismo di “key pinning” ma non è possibile creare una catena di certificati affidabili che corrisponda al pinset. Non è possibile ignorare violazioni relative al “key pinning”.
+mozilla-pkix-error-key-pinning-failure = Il server utilizza il meccanismo di “key pinning” ma non è possibile creare una catena di certificati attendibili che corrisponda al pinset. Non è possibile ignorare violazioni relative al “key pinning”.
 mozilla-pkix-error-ca-cert-used-as-end-entity = Il server utilizza un certificato con un’estensione limitazioni di base che lo identifica come autorità di certificazione. Questo non dovrebbe accadere per un certificato emesso correttamente.
 mozilla-pkix-error-inadequate-key-size = Il certificato inviato dal server utilizza una chiave troppo corta per stabilire una connessione sicura.
 mozilla-pkix-error-v1-cert-used-as-ca = Un certificato di tipo X.509 versione 1, non trust anchor, è stato utilizzato per emettere il certificato del server. I certificati di tipo X.509 versione 1 sono deprecati e non dovrebbero essere utilizzati per firmare altri certificati.
@@ -334,11 +331,10 @@ mozilla-pkix-error-invalid-integer-encoding = Il server ha fornito un certificat
 mozilla-pkix-error-empty-issuer-name = Il server ha fornito un certificato in cui il nome distinto dell’autorità emittente è vuoto.
 mozilla-pkix-error-additional-policy-constraint-failed = Un vincolo regole aggiuntivo non è stato rispettato durante la validazione di questo certificato.
 mozilla-pkix-error-self-signed-cert = Il certificato non è attendibile in quanto autofirmato.
-
+mozilla-pkix-error-issuer-no-longer-trusted = L’autorità di certificazione che ha emesso il certificato è stata identificata come non attendibile prima dell’emissione del certificato.
 xp-java-remove-principal-error = Impossibile rimuovere l’entità di sicurezza (principal)
 xp-java-delete-privilege-error = Impossibile cancellare il privilegio
 xp-java-cert-not-exists-error = Questa entità di sicurezza (principal) non possiede un certificato
-
 xp-sec-fortezza-bad-card = La card Fortezza non è stata correttamente inizializzata. Rimuoverla e restituirla all’autorità emittente.
 xp-sec-fortezza-no-card = Nessuna card Fortezza rilevata
 xp-sec-fortezza-none-selected = Nessuna card Fortezza selezionata

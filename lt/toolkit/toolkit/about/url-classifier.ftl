@@ -1,11 +1,15 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = URL klasifikatoriaus informacija
 url-classifier-search-title = Ieškoti
 url-classifier-search-result-title = Rezultatai
+# Variables:
+#   $uri (string) - URI of blocked page
 url-classifier-search-result-uri = URI: { $uri }
+# Variables:
+#   $list (string) - List of tables where the page is blocked
 url-classifier-search-result-list = Lentelių sąrašas: { $list }
 url-classifier-search-input = URL
 url-classifier-search-error-invalid-url = Neteisingas URL
@@ -40,7 +44,6 @@ url-classifier-debug-sb-modules = Saugaus naršymo žurnalo moduliai
 url-classifier-debug-modules = Dabartiniai žurnalo moduliai
 url-classifier-debug-sbjs-modules = Saugaus naršymo JS žurnalas
 url-classifier-debug-file = Dabartinis žurnalo failas
-
 url-classifier-trigger-update = Sukelti atnaujinimą
 url-classifier-not-available = Nėra
 url-classifier-disable-sbjs-log = Išjungti saugaus naršymo JS žurnalą

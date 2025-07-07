@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = Aktivera eller inaktivera captive portal support.
 policy-CertificatesDescription = Lägg till certifikat eller använd inbyggda certifikat.
 policy-ContentAnalysis = Aktivera eller inaktivera anslutningen till agenten för förebyggande av dataförlust.
 policy-Cookies = Tillåt eller neka webbplatser att lagra kakor
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Ange policyer relaterade till behållare.
 policy-DisableAccounts = Inaktivera kontobaserade tjänster, inklusive synkronisering.
 policy-DisabledCiphers = Inaktivera chiffer.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Förhindra att standardwebbläsaren agerar. 
 policy-DisableDeveloperTools = Blockera tillgång till utvecklarverktygen.
 policy-DisableEncryptedClientHello = Inaktivera användning av TLS-funktionen ECH (Encrypted Client Hello).
 policy-DisableFeedbackCommands = Inaktivera menyalternativen att skicka feedback från hjälpmenyn (Skicka in feedback och rapportera vilseledande webbplats).
-policy-DisableWaterfoxAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
+policy-DisableFirefoxAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Inaktivera kontobaserade tjänster, inklusive synkronisering.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Inaktivera funktionen Waterfox Screenshots
-policy-DisableWaterfoxStudies = Förhindra { -brand-short-name } att genomföra studier.
+policy-DisableFirefoxAccounts1 = Inaktivera kontobaserade tjänster, inklusive synkronisering.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Inaktivera funktionen Waterfox Screenshots
+policy-DisableFirefoxStudies = Förhindra { -brand-short-name } att genomföra studier.
 policy-DisableForgetButton = Förhindra tillgång till knappen Glöm.
 policy-DisableFormHistory = Spara inte sök- och formulärhistorik.
 policy-DisablePrimaryPasswordCreation = Om det är sant kan ett huvudlösenord inte skapas.
@@ -69,16 +69,16 @@ policy-DownloadDirectory = Ange och lås nedladdningskatalogen.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivera eller inaktivera Innehållsblockering med möjlighet att låsa valet.
 # “lock” means that the user won’t be able to change this setting
-policy-EncryptedMediaExtensions = Aktivera eller inaktivera krypterade medieutökningar och lås den eventuellt.
+policy-EncryptedMediaExtensions = Aktivera eller inaktivera Encrypted Media Extensions och lås eventuellt inställningen.
 policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Inaktivera varningar baserade på filtillägg för specifika filtyper på domäner.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Installera, avinstallera eller låsa tillägg. Installeringsalternativet tar webbadresser eller sökvägar som parametrar. Alternativen för borttagning och låsning använder tilläggs-ID.
 policy-ExtensionSettings = Hantera alla aspekter av tilläggsinstallation.
-policy-ExtensionUpdate = Aktivera eller inaktivera automatiska utökningsuppdateringar.
-policy-WaterfoxHome2 = Konfigurera { -firefox-home-brand-name }.
-policy-WaterfoxSuggest = Konfigurera { -firefox-suggest-brand-name }.
+policy-ExtensionUpdate = Aktivera eller inaktivera automatiska tilläggsuppdateringar.
+policy-FirefoxHome2 = Konfigurera { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Konfigurera { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Tvinga direkt navigering på intranätet istället för att söka när du skriver in enstaka ord i adressfältet.
 policy-Handlers = Konfigurera standardprogramhanterare.
 policy-HardwareAcceleration = Om inaktiv, stäng av hårdvaruacceleration.
@@ -119,6 +119,7 @@ policy-Permissions2 = Konfigurera behörigheter för kamera, mikrofon, plats, av
 policy-PictureInPicture = Aktivera eller inaktivera bild-i-bild.
 policy-PopupBlocking = Tillåt vissa webbplatser att visa popup-fönster som standard.
 policy-Preferences = Ställ in och lås värdet för en delmängd av inställningar.
+policy-PrivateBrowsingModeAvailability = Ange tillgänglighet för privat surfläge.
 policy-PromptForDownloadLocation = Fråga var du ska spara filer när du laddar ner.
 policy-Proxy = Ange inställningar för proxy.
 policy-RequestedLocales = Ange listan över begärda språk för programmet efter ordning i inställningar.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Aktivera eller inaktivera sökförslag.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Lägg till eller ta bort PKCS #11-moduler.
 policy-ShowHomeButton = Visa hemknappen i verktygsfältet.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Visa inte användarvillkoren och sekretessmeddelandet vid start. Du intygar att du accepterar och har behörighet att acceptera användarvillkoren på uppdrag av alla individer som du ger åtkomst till den här webbläsaren.
 policy-SSLVersionMax = Ange den maximala SSL-versionen.
 policy-SSLVersionMin = Ange den lägsta SSL-versionen.
 policy-StartDownloadsInTempDirectory = Tvinga nedladdningar att starta på en lokal, tillfällig plats snarare än standardnedladdningskatalogen.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Skriv ut med hjälp av systemets utskriftsdialog.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blockera besök på webbplatser. Läs dokumentationen för mer detaljer om hur de anges.
 policy-Windows10SSO = Tillåt Windows enkel inloggning för Microsoft-, arbets- och skolkonton.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Tillåt enkel inloggning för Microsoft Entra-konton.

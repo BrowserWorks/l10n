@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,8 +21,8 @@ third-party-detail-publisher = Nhà phát hành
 third-party-th-process = Tiến trình
 third-party-th-duration = Thời lượng tải (mili giây)
 third-party-th-status = Trạng thái
-third-party-tag-ime = IME
-    .title = Loại module này được tải khi bạn sử dụng IME của bên thứ ba.
+third-party-tag-ime = Bộ gõ
+    .title = Loại mô đun này được tải khi bạn sử dụng bộ gõ của bên thứ ba.
 third-party-tag-shellex = Phần mở rộng Shell
     .title = Loại module này được tải khi bạn mở hộp thoại tập tin hệ thống.
 third-party-tag-background = Nền

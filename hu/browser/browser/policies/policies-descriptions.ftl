@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -15,7 +15,7 @@ policy-AllowedDomainsForApps = Adja meg azokat a domaineket, amelyek hozzáférh
 policy-AllowFileSelectionDialogs = Fájlválasztó párbeszédablakok engedélyezése.
 policy-AppAutoUpdate = Az automatikus alkalmazásfrissítés engedélyezése vagy letiltása.
 policy-AppUpdatePin = A { -brand-short-name } megakadályozása abban, hogy a megadott verzión túl frissüljön.
-policy-AppUpdateURL = Egyéni alkalmazás-frissítési URL megadása.
+policy-AppUpdateURL = Egyéni alkalmazásfrissítési webcím megadása.
 policy-Authentication = Integrált hitelesítés beállítása azokhoz a weboldalakhoz, melyek támogatják.
 policy-AutofillAddressEnabled = Automatikus címkitöltés engedélyezése.
 policy-AutofillCreditCardEnabled = Fizetési módok automatikus kitöltésének engedélyezése.
@@ -30,7 +30,7 @@ policy-CaptivePortal = Beléptető oldal támogatás engedélyezése vagy letilt
 policy-CertificatesDescription = Tanúsítványok hozzáadása vagy beépített tanúsítványok használata.
 policy-ContentAnalysis = Az adatvesztés-megelőzési ügynökhöz való kapcsolat engedélyezése vagy letiltása.
 policy-Cookies = A weboldalak süti elhelyezésének engedélyezése vagy letiltása.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = A konténerekhez kapcsolódó házirendek beállítása.
 policy-DisableAccounts = Fiókalapú szolgáltatások, köztük a szinkronizálás letiltása.
 policy-DisabledCiphers = Titkosítási módok letiltása.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Akadályozza meg, hogy az alapértelmezett b
 policy-DisableDeveloperTools = A fejlesztői eszközökhöz hozzáférés blokkolása.
 policy-DisableEncryptedClientHello = Az Encrypted Client Hello (ECH) TLS funkció használatának letiltása.
 policy-DisableFeedbackCommands = A visszajelzés küldési parancsok letiltása a Súgó menüben (Visszajelzés beküldése és Félrevezető oldal jelentése).
-policy-DisableWaterfoxAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
+policy-DisableFirefoxAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Fiókalapú szolgáltatások, köztük a szinkronizálás letiltása.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = A Waterfox Screenshots funkció letiltása.
-policy-DisableWaterfoxStudies = Annak a megakadályozása, hogy a { -brand-short-name } tanulmányokat futtasson.
+policy-DisableFirefoxAccounts1 = Fiókalapú szolgáltatások, köztük a szinkronizálás letiltása.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = A Waterfox Screenshots funkció letiltása.
+policy-DisableFirefoxStudies = Annak a megakadályozása, hogy a { -brand-short-name } tanulmányokat futtasson.
 policy-DisableForgetButton = Az Elfelejtés gombhoz hozzáférés megakadályozása.
 policy-DisableFormHistory = Ne jegyezze meg a keresőmezők és űrlapmezők előzményeit.
 policy-DisablePrimaryPasswordCreation = Ha igaz, akkor nem hozható létre elsődleges jelszó.
@@ -74,11 +74,11 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = A fájlok kiterje
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
-policy-Extensions = Kiegészítők telepítése, eltávolítása vagy zárolása. A Telepítés lehetőség URL-t vagy útvonalat vár paraméterként. Az Eltávolítás és Zárolás kiegészítőazonosítót vár.
+policy-Extensions = Kiegészítők telepítése, eltávolítása vagy zárolása. A Telepítés lehetőség webcímet vagy útvonalat vár paraméterként. Az Eltávolítás és Zárolás kiegészítőazonosítót vár.
 policy-ExtensionSettings = Kezelje a kiegészítők telepítésének összes vonatkozását.
 policy-ExtensionUpdate = Az automatikus kiegészítőfrissítések engedélyezése vagy letiltása.
-policy-WaterfoxHome2 = A { -firefox-home-brand-name } beállítása.
-policy-WaterfoxSuggest = A { -firefox-suggest-brand-name } beállítása.
+policy-FirefoxHome2 = A { -firefox-home-brand-name } beállítása.
+policy-FirefoxSuggest = A { -firefox-suggest-brand-name } beállítása.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = A közvetlen intranetes navigáció kényszerítése a keresés helyett, amikor egyetlen szót ír be a címsorba.
 policy-Handlers = Alapértelmezett alkalmazáskezelők beállítása
 policy-HardwareAcceleration = Ha hamis, akkor kikapcsolja a hardveres gyorsítást.
@@ -103,7 +103,7 @@ policy-PrimaryPassword = Elsődleges jelszó használatának előírása vagy me
 policy-PrintingEnabled = Nyomtatás engedélyezése vagy letiltása.
 policy-NetworkPrediction = Hálózati előrejelzés engedélyezése vagy letiltása (DNS előhívás).
 policy-NewTabPage = Az Új lap oldal engedélyezése vagy letiltása.
-policy-NoDefaultBookmarks = A { -brand-short-name(case: "instrumental") } szállított alapértelmezett könyvjelzők és okos könyvjelzők (Legtöbbet látogatott, Friss címkék) létrehozásának letiltása. Megjegyzés: ez a házirend csak a profil első futtatása előtt van érvényben.
+policy-NoDefaultBookmarks = A { -brand-short-name }szal szállított alapértelmezett könyvjelzők és okos könyvjelzők (Legtöbbet látogatott, Friss címkék) létrehozásának letiltása. Megjegyzés: ez a házirend csak a profil első futtatása előtt van érvényben.
 policy-OfferToSaveLogins = A beállítás erőltetése, miszerint a { -brand-short-name } felajánlja a mentett bejelentkezések és jelszavak megjegyzését. Mind az igaz, mind a hamis érték elfogadott.
 policy-OfferToSaveLoginsDefault = Adja meg az alapértelmezett értéket, hogy a { -brand-short-name } felajánlja-e a mentett bejelentkezések és jelszavak megjegyzését. Mind az igaz, mind a hamis érték elfogadott.
 policy-OverrideFirstRunPage = Az első indítás oldal felülbírálása. Állítsa üres értékre ezt a házirendet, ha le akarja tiltani a az első indítás oldalt.
@@ -119,6 +119,7 @@ policy-Permissions2 = A kamera, mikrofon, helyadatok, értesítések és automat
 policy-PictureInPicture = Kép a képben engedélyezése vagy letiltása.
 policy-PopupBlocking = Bizonyos weboldalak alapértelmezetten jeleníthessenek meg felugró ablakokat.
 policy-Preferences = Értékek beállítása és zárolása a beállítások egy részhalmazánál.
+policy-PrivateBrowsingModeAvailability = A privát böngészési mód elérhetőségének beállítása.
 policy-PromptForDownloadLocation = Kérdezze meg, hogy hová legyenek letöltve a fájlok.
 policy-Proxy = Proxy-beállítások konfigurálása.
 policy-RequestedLocales = Adja meg a kért területi beállításokat az alkalmazásnak, az Ön által előnyben részesített sorrendben.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = A keresési javaslatok engedélyezése vagy letilt
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11 modulok hozzáadása vagy törlése.
 policy-ShowHomeButton = A kezdőoldal gomb megjelenítése az eszköztáron.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Indításkor ne jelenítse meg a felhasználási feltételeket és az adatvédelmi nyilatkozatot. Ön kijelenti, hogy elfogadja a felhasználási feltételeket, és felhatalmazással rendelkezik arra, hogy elfogadja azok nevében is, akiknek hozzáférést biztosít a böngészőhöz.
 policy-SSLVersionMax = A legmagasabb SSL verzió beállítása.
 policy-SSLVersionMin = A legkisebb SSL verzió beállítása.
 policy-StartDownloadsInTempDirectory = A letöltések arra kényszerítése, hogy az alapértelmezett letöltési könyvtár helyett egy helyi, ideiglenes helyen induljanak el.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Nyomtatás a rendszer nyomtatási párbeszédablak
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Weboldalak felkeresésének blokkolása. Lásd a dokumentációt a formátum részleteiért.
 policy-Windows10SSO = Lehetővé teszi a Windows egyszeri bejelentkezésének használatát a microsoftos, munkahelyi és iskolai fiókok számára.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Egyszeri bejelentkezés engedélyezése a Microsoft Entra-fiókokhoz.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Waterfox Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
@@ -149,9 +149,7 @@ main-context-menu-save-link-to-pocket =
     .label = บันทึกลิงก์ไปยัง { -pocket-brand-name }
     .accesskey = น
 
-## The access keys for "Copy Link" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-copy-email =
     .label = คัดลอกที่อยู่อีเมล
@@ -162,6 +160,15 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = คัดลอกลิงก์
     .accesskey = L
+main-context-menu-preview-link =
+    .label = ดูตัวอย่างลิงก์
+    .accesskey = ด
+# "Copy Clean Link" means that Firefox will remove things from the link you
+# copied, like items that identify you for advertising purposes, and other items
+# sites add into URLs to help them deliver a certain browsing experience.
+main-context-menu-copy-clean-link =
+    .label = คัดลอกลิงก์แบบสะอาด
+    .accesskey = u
 # This command copies the link, removing additional
 # query parameters used to track users across sites.
 main-context-menu-strip-on-share-link =
@@ -290,9 +297,7 @@ main-context-menu-send-to-device =
     .label = ส่งหน้าไปยังอุปกรณ์
     .accesskey = ส
 
-## The access keys for "Use Saved Login" and "Use Saved Password"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-use-saved-login =
     .label = ใช้การเข้าสู่ระบบที่บันทึกไว้
@@ -319,6 +324,9 @@ main-context-menu-manage-passwords =
 main-context-menu-keyword =
     .label = เพิ่มคำสำคัญสำหรับการค้นหานี้…
     .accesskey = พ
+main-context-menu-add-engine =
+    .label = เพิ่มเครื่องมือค้นหา
+    .accesskey = ค
 main-context-menu-link-send-to-device =
     .label = ส่งลิงก์ไปยังอุปกรณ์
     .accesskey = ส

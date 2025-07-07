@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,10 +17,10 @@ about-debugging-page-title-runtime-page = Έλεγχος σφαλμάτων - Ε
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Waterfox. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name }
-# Sidebar heading for selecting the currently running instance of Waterfox
+# Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
@@ -52,8 +52,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Η σύ�
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = Το χρονικό όριο σύνδεσης έληξε
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Waterfox) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Waterfox is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Αναμονή για το πρόγραμμα περιήγησης…
 # Text displayed in sidebar items for remote devices that have been disconnected from the
 # computer.
@@ -87,7 +87,7 @@ about-debugging-refresh-usb-devices-button = Ανανέωση συσκευών
 about-debugging-setup-title = Ρύθμιση
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Ρυθμίστε τη μέθοδο σύνδεσης για απομακρυσμένο έλεγχο σφαλμάτων στη συσκευή σας.
-# Explanatory text in the Setup page about what the 'This Waterfox' page is for
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Χρησιμοποιήστε την επιλογή <a>{ about-debugging-this-firefox-runtime-name }</a> για να κάνετε έλεγχο σφαλμάτων στις επεκτάσεις και τα service worker σε αυτήν την έκδοση του { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Σύνδεση συσκευής
@@ -111,6 +111,8 @@ about-debugging-setup-usb-status-updating = Ενημέρωση…
 about-debugging-setup-usb-step-enable-dev-menu2 = Ενεργοποιήστε το μενού προγραμματιστών στην Android συσκευή σας.
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = Ενεργοποιήστε το «Εντοπισμός σφαλμάτων μέσω USB» στο μενού προγραμματιστή Android.
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-file-transfer = Ενεργοποιήστε τη μεταφορά αρχείων και βεβαιωθείτε ότι η συσκευή σας δεν είναι σε λειτουργία «Μόνο φόρτιση».
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug-firefox2 = Ενεργοποιήστε τον έλεγχο σφαλμάτων μέσω USB στο Waterfox της Android συσκευής σας.
 # USB section step by step guide
@@ -149,7 +151,7 @@ about-debugging-network-location-form-duplicate = Ο κεντρικός υπολ
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Waterfox" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 # .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-temporary-extensions =
     .name = Προσωρινές επεκτάσεις
@@ -187,20 +189,20 @@ about-debugging-runtime-service-workers-not-compatible = Οι ρυθμίσεις
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Waterfox instance (same format)
-about-debugging-browser-version-too-old = Το συνδεδεμένο πρόγραμμα περιήγησης έχει παλιά έκδοση ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }).  Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Αντιμετώπιση προβλημάτων</a>
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
+about-debugging-browser-version-too-old = Η έκδοση του συνδεδεμένου προγράμματος περιήγησης είναι παλιά ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }). Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία του DevTools. Ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Επίλυση προβλημάτων</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Waterfox for Android (aka Fennec) which uses Fx 68.
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Waterfox δεν μπορεί να χρησιμοποιηθεί για έλεγχο σφαλμάτων στο Waterfox για Android (68). Προτείνουμε να εγκαταστήσετε το Waterfox για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Waterfox instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης είναι πιο πρόσφατο ({ $runtimeVersion }, buildID { $runtimeID }) από το { -brand-shorter-name } ({ $localVersion }, buildID { $localID }) σας. Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το Waterfox. <a>Αντιμετώπιση προβλημάτων</a>
+about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης ({ $runtimeVersion }, buildID: { $runtimeID }) είναι πιο πρόσφατο από το { -brand-shorter-name } ({ $localVersion }, buildID: { $localID }) που χρησιμοποιείτε. Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία του DevTools. Ενημερώστε το Waterfox. <a>Επίλυση προβλημάτων</a>
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Waterfox Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
@@ -228,18 +230,18 @@ about-debugging-debug-target-list-empty = Τίποτα ακόμα.
 # button will open a DevTools toolbox that will allow inspecting the target.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Επιθεώρηση
-# Text of a button displayed in the "This Waterfox" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Φόρτωση προσωρινού προσθέτου…
-# Text displayed when trying to install a temporary extension in the "This Waterfox" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Προέκυψε σφάλμα κατά την εγκατάσταση προσωρινού προσθέτου.
-# Text of a button displayed for a temporary extension loaded in the "This Waterfox" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Ανανέωση
-# Text of a button displayed for a temporary extension loaded in the "This Waterfox" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Αφαίρεση
-# Text of a button displayed for a temporary extension loaded in the "This Waterfox" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will forcefully terminate the extension background script (button
 # only visible in extensions that includes a non-persistent background script, either an
 # event page or a background service worker).
@@ -282,7 +284,7 @@ about-debugging-extension-backgroundscript-status-stopped = Διακόπηκε
 # probably better to not localize it.
 # .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-push2 = Push
-    .disabledTitle = Το push του service worker είναι ανενεργό αυτή τη στιγμή για το { -brand-shorter-name } πολλαπλών διεργασιών
+    .disabledTitle = Η υπηρεσία push του service worker είναι προς το παρόν απενεργοποιημένη για το { -brand-shorter-name } πολλαπλών διεργασιών
 # This string is displayed as a label of the button that starts a service worker.
 # .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-start2 = Έναρξη
@@ -311,6 +313,9 @@ about-debugging-worker-scope =
 # of a worker
 about-debugging-worker-push-service =
     .label = Υπηρεσία Push
+# Displayed for service workers in runtime pages, to label the origin of a worker.
+about-debugging-worker-origin =
+    .label = Προέλευση
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Η επιθεώρηση του service worker είναι απενεργοποιημένη αυτήν τη στιγμή για το { -brand-shorter-name } πολλαπλών διεργασιών

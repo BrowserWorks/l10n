@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = أنهِ إعداد الحساب
 account-disconnected2 = فُصل الحساب
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = أرسله إلى كل الأجهزة
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = أدِر الأجهزة…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = أعِد توصيل { $email }
 account-verify = أكّد { $email }
@@ -40,19 +40,22 @@ account-send-tab-to-device-connectdevice = صِلْ جهازا آخر…
 account-send-tab-to-device-verify-status = الحساب غير مُؤكّد
 account-send-tab-to-device-verify = أكّد حسابك…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = الحساب
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = أصبح هذا الحاسوب الآن متصلًا مع { $deviceName }.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = صار هذا الحاسوب متصلًا الآن مع جهاز جديد.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = نجح الولوج إلى حسابك
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = قُطع اتصال هذا الحاسوب.
 
 ## These strings are used in a notification shown when we're opening
@@ -80,15 +83,15 @@ account-multiple-tabs-arriving-title = وصل لسان
 account-multiple-tabs-arriving-from-single-device =
     { $tabCount ->
         [one] وصل لسان من { $deviceName }
-        [two] وصل لسانين من { $deviceName }
+        [two] وصل لسانان من { $deviceName }
         [few] وصلت { $tabCount } ألسنة من { $deviceName }
         [many] وصل { $tabCount } لسانًا من { $deviceName }
-       *[other] وصل { $tabCount } لسان من { $deviceName }
+       *[other] وصل { $tabCount } لسانًا من { $deviceName }
     }
 account-multiple-tabs-arriving-from-multiple-devices =
     { $tabCount ->
         [one] وصل لسان من أجهزتك المتصلة
-        [two] وصل لسانين من أجهزتك المتصلة
+        [two] وصل لسانان من أجهزتك المتصلة
         [few] وصلت { $tabCount } ألسنة من أجهزتك المتصلة
         [many] وصل { $tabCount } لسانًا من أجهزتك المتصلة
        *[other] وصل { $tabCount } لسان من أجهزتك المتصلة
@@ -97,8 +100,24 @@ account-multiple-tabs-arriving-from-multiple-devices =
 account-multiple-tabs-arriving-from-unknown-device =
     { $tabCount ->
         [one] وصل لسان
-        [two] وصل لسانين
+        [two] وصل لسانان
         [few] وصلت { $tabCount } ألسنة
         [many] وصل { $tabCount } لسانًا
        *[other] وصل { $tabCount } لسان
+    }
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = عرض الألسنة المُغلقة مؤخرًا
+account-tabs-closed-remotely =
+    { $closedCount ->
+        [zero] أغلق { $closedCount } لسان من { -brand-short-name }
+        [one] أغلق لسان { -brand-short-name } واحد
+        [two] أغلق لسانان من { -brand-short-name }
+        [few] أغلقت { $closedCount } ألسنة من { -brand-short-name }
+        [many] أغلق { $closedCount } لسانًا من { -brand-short-name }
+       *[other] أغلق { $closedCount } لسانًا من { -brand-short-name }
     }

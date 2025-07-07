@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新标签页
 newtab-settings-button =
     .title = 定制您的新标签页
+newtab-customize-panel-icon-button =
+    .title = 定制此页面
+newtab-customize-panel-icon-button-label = 定制
+newtab-personalize-settings-icon-label =
+    .title = 个性化新标签页
+    .aria-label = 设置
+newtab-settings-dialog-label =
+    .aria-label = 设置
 newtab-personalize-icon-label =
     .title = 个性化标签页
     .aria-label = 个性化标签页
 newtab-personalize-dialog-label =
     .aria-label = 个性化
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -67,7 +77,7 @@ newtab-topsites-add-button = 添加
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = 确定删除此页面在您的历史记录中的所有记录？
+newtab-confirm-delete-history-p1 = 您确定要删除此页面在您的历史记录中的所有记录吗？
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = 此操作无法撤销。
 
@@ -109,6 +119,21 @@ newtab-menu-save-to-pocket = 保存到 { -pocket-brand-name }
 newtab-menu-delete-pocket = 从 { -pocket-brand-name } 删除
 newtab-menu-archive-pocket = 在 { -pocket-brand-name } 中存档
 newtab-menu-show-privacy-info = 我们的赞助商＆您的隐私
+newtab-menu-about-fakespot = 关于 { -fakespot-brand-name }
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = 反馈
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = 屏蔽
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = 取消关注主题
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = 管理赞助内容
+newtab-menu-our-sponsors-and-your-privacy = 我们的赞助商与您的隐私
+newtab-menu-report-this-ad = 举报此广告
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -166,6 +191,8 @@ newtab-label-sponsored-by = 由 { $sponsor } 赞助
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } 分钟
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = 赞助推广
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -196,6 +223,8 @@ newtab-section-header-recent-activity = 近期动态
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } 推荐
 newtab-section-header-stories = 精选文章
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = 今日专属荐读
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -226,7 +255,6 @@ newtab-pocket-learn-more = 详细了解
 newtab-pocket-cta-button = 获取 { -pocket-brand-name }
 newtab-pocket-cta-text = 将您喜爱的故事保存到 { -pocket-brand-name }，用精彩的读物为思想注入活力。
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } 是 { -brand-product-name } 系列产品的一部分
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = 保存
 newtab-pocket-saved = 已保存
 
@@ -234,10 +262,13 @@ newtab-pocket-saved = 已保存
 
 # Clicking the thumbs up button for this story will result in more stories like this one being recommended
 newtab-pocket-thumbs-up-tooltip =
-    .title = 相似推荐
+    .title = 再多来点
 # Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
 newtab-pocket-thumbs-down-tooltip =
     .title = 不感兴趣
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = 谢谢，您的反馈有助于我们改进为您提供的推送。
 newtab-toast-dismiss-button =
     .title = 知道了
     .aria-label = 知道了
@@ -282,6 +313,9 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = 天气
     .description = 速览今日天气预报
+newtab-custom-trending-search-toggle =
+    .label = 热门搜索
+    .description = 流行及常搜主题
 newtab-custom-close-button = 关闭
 newtab-custom-settings = 管理更多设置
 
@@ -289,6 +323,12 @@ newtab-custom-settings = 管理更多设置
 
 newtab-wallpaper-title = 壁纸
 newtab-wallpaper-reset = 重置为默认设置
+newtab-wallpaper-upload-image = 上传图像
+newtab-wallpaper-custom-color = 选择颜色
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = 图像超出文件大小上限（{ $file_size }MB），请尝试上传较小的文件。
+newtab-wallpaper-error-file-type = 无法上传文件，请尝试使用其他文件类型。
 newtab-wallpaper-light-red-panda = 小熊猫
 newtab-wallpaper-light-mountain = 白山山脉
 newtab-wallpaper-light-sky = 漂浮着粉紫色云的天空
@@ -301,6 +341,8 @@ newtab-wallpaper-dark-panda = 躲在森林里的小熊猫
 newtab-wallpaper-dark-sky = 夜空下的城市景观
 newtab-wallpaper-dark-mountain = 山地景观
 newtab-wallpaper-dark-city = 紫色城市景观
+newtab-wallpaper-dark-fox-anniversary = 树林旁边人行道上的狐狸
+newtab-wallpaper-light-fox-anniversary = 迷蒙山景中草地上的狐狸
 
 ## Solid Colors
 
@@ -330,8 +372,12 @@ newtab-wallpaper-abstract-purple = 紫色形状
 newtab-wallpaper-abstract-orange = 橙色形状
 newtab-wallpaper-gradient-orange = 橙粉渐变
 newtab-wallpaper-abstract-blue-purple = 蓝紫渐变
+newtab-wallpaper-abstract-white-curves = 白色带阴影曲线
+newtab-wallpaper-abstract-purple-green = 紫绿光渐变
+newtab-wallpaper-abstract-blue-purple-waves = 蓝色和紫色的波浪形状
+newtab-wallpaper-abstract-black-waves = 黑色波浪形状
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = 摄影
 newtab-wallpaper-beach-at-sunrise = 海滩日出
@@ -340,10 +386,16 @@ newtab-wallpaper-storm-sky = 电闪雷鸣
 newtab-wallpaper-sky-with-pink-clouds = 飘着粉色云朵的天空
 newtab-wallpaper-red-panda-yawns-in-a-tree = 在树上打哈欠的小熊猫
 newtab-wallpaper-white-mountains = 皑白山脉
+newtab-wallpaper-hot-air-balloons = 白天各种颜色的热气球
+newtab-wallpaper-starry-canyon = 蓝色星空
+newtab-wallpaper-suspension-bridge = 白天时的灰色全悬索桥照片
+newtab-wallpaper-sand-dunes = 白色沙丘
+newtab-wallpaper-palm-trees = 魔术光下的椰子树侧影
+newtab-wallpaper-blue-flowers = 蓝瓣花绽放的近景照片
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
-newtab-wallpaper-attribution = 照片由 <a data-l10n-name="name-link">{ $author_string }</a> 在 <a data-l10n-name="webpage-link">{ $webpage_string }</a> 上发布
+newtab-wallpaper-attribution = 照片由 <a data-l10n-name="name-link">{ $author_string }</a> 发布于 <a data-l10n-name="webpage-link">{ $webpage_string }</a>
 newtab-wallpaper-feature-highlight-header = 试用新色彩
 newtab-wallpaper-feature-highlight-content = 选张壁纸，给新标签页加点新鲜感。
 newtab-wallpaper-feature-highlight-button = 知道了
@@ -355,6 +407,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = 天体
+newtab-wallpaper-celestial-lunar-eclipse = 月食
+newtab-wallpaper-celestial-earth-night = 从近地轨道拍摄的夜晚照片
+newtab-wallpaper-celestial-starry-sky = 星空
+newtab-wallpaper-celestial-eclipse-time-lapse = 月食延时照片
+newtab-wallpaper-celestial-black-hole = 黑洞星空图
+newtab-wallpaper-celestial-river = 河流卫星图
+
 ## New Tab Weather
 
 # Variables:
@@ -365,6 +430,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ 赞助
 newtab-weather-menu-change-location = 更改位置
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = 搜索位置
+    .aria-label = 搜索位置
 newtab-weather-change-location-search-input = 搜索位置
 newtab-weather-menu-weather-display = 天气信息显示方式
 # Display options are:
@@ -383,3 +451,131 @@ newtab-weather-menu-hide-weather = 隐藏新标签页上的天气信息
 newtab-weather-menu-learn-more = 详细了解
 # This message is shown if user is working offline
 newtab-weather-error-not-available = 目前无法获取天气数据。
+
+## Topic Labels
+
+newtab-topic-label-business = 商业
+newtab-topic-label-career = 职场
+newtab-topic-label-education = 教育
+newtab-topic-label-arts = 娱乐
+newtab-topic-label-food = 饮食
+newtab-topic-label-health = 健康
+newtab-topic-label-hobbies = 游戏
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = 理财
+newtab-topic-label-society-parenting = 育儿
+newtab-topic-label-government = 政治
+newtab-topic-label-education-science = 科学
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = 自我提升
+newtab-topic-label-sports = 体育
+newtab-topic-label-tech = 科技
+newtab-topic-label-travel = 旅行
+newtab-topic-label-home = 家庭与园艺
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = 选择主题，让推送内容更合您胃口
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = 请选择两个或更多主题。我们的专业采编团队会按照您的喜好，优先呈上专属推荐，您还可以随时刷新。
+newtab-topic-selection-save-button = 保存
+newtab-topic-selection-cancel-button = 取消
+newtab-topic-selection-button-maybe-later = 以后再说
+newtab-topic-selection-privacy-link = 了解我们保护和管理数据的方式
+newtab-topic-selection-button-update-interests = 更新您感兴趣的主题
+newtab-topic-selection-button-pick-interests = 选择您感兴趣的主题
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = 关注
+newtab-section-following-button = 正在关注
+newtab-section-unfollow-button = 取消关注
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = 优化推荐内容
+newtab-section-follow-highlight-subtitle = 随心所好，悦见更多。
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = 屏蔽
+newtab-section-blocked-button = 已屏蔽
+newtab-section-unblock-button = 取消屏蔽
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = 暂时不要
+newtab-section-confirm-block-topic-p1 = 确定要屏蔽此主题吗？
+newtab-section-confirm-block-topic-p2 = 将不再向您推送被屏蔽的主题。
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = 屏蔽“{ $topic }”
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = 主题
+newtab-section-manage-topics-button-v2 =
+    .label = 管理主题
+newtab-section-mangage-topics-followed-topics = 已关注
+newtab-section-mangage-topics-followed-topics-empty-state = 没有已关注的主题。
+newtab-section-mangage-topics-blocked-topics = 已屏蔽
+newtab-section-mangage-topics-blocked-topics-empty-state = 没有已屏蔽的主题
+newtab-custom-wallpaper-title = 在此处自定义壁纸
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = 自行上传壁纸或选取自定义颜色，让 { -brand-product-name } 更有个性。
+newtab-custom-wallpaper-cta = 试试看
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = 下载移动版 { -brand-product-name }
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = 扫码下载移动版本，随时随地安全浏览。
+newtab-download-mobile-highlight-body-variant-b = 同步标签页、密码等信息，随时从上次看到的地方继续浏览。
+newtab-download-mobile-highlight-body-variant-c = 您还可以将 { -brand-product-name } 随身带着走。相同体验，装入口袋。
+newtab-download-mobile-highlight-image =
+    .aria-label = 移动版 { -brand-product-name } 的下载二维码
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = 此内容存在什么问题？
+newtab-report-ads-reason-not-interested =
+    .label = 不感兴趣
+newtab-report-ads-reason-inappropriate =
+    .label = 内容不当
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = 推荐次数过多
+newtab-report-content-wrong-category =
+    .label = 分类错误
+newtab-report-content-outdated =
+    .label = 过时
+newtab-report-content-inappropriate-offensive =
+    .label = 不适宜或具有冒犯性
+newtab-report-content-spam-misleading =
+    .label = 垃圾信息或具有误导性
+newtab-report-cancel = 取消
+newtab-report-submit = 提交
+newtab-toast-thanks-for-reporting =
+    .message = 感谢反馈。
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Google 热门搜索
+newtab-trending-searches-show-trending =
+    .title = 显示热门搜索
+newtab-trending-searches-hide-trending =
+    .title = 隐藏热门搜索
+newtab-trending-searches-learn-more = 详细了解
+newtab-trending-searches-dismiss = 隐藏热门搜索
+# "Trending searches refers to popular searches from search engines
+newtab-trending-searches-title = 热门搜索

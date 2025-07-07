@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Olvasási lista (a Safariból)
 migration-imported-edge-reading-list = Olvasási lista (az Edge-ből)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = A { -brand-short-name } nem fér hozzá más böngészők erre az eszközre telepített profiljához.
@@ -196,6 +196,14 @@ migration-safari-password-import-step1 = A Safariban nyissa meg a „Safari” m
 migration-safari-password-import-step2 = Válassza a <img data-l10n-name="safari-icon-3dots"/> gombot, és válassza az „Összes jelszó exportálása” lehetőséget
 migration-safari-password-import-step3 = Mentse a jelszavakat tartalmazó fájlt
 migration-safari-password-import-step4 = Használja az alábbi „Fájl kiválasztása” lehetőséget a mentett jelszófájl kiválasztásához
+migration-chrome-windows-password-import-header = Hogyan importáljon jelszavakat a Chrome-ból
+migration-chrome-windows-password-import-steps-header = A Chrome-ban:
+migration-chrome-windows-password-import-step1 = Nyissa meg a főmenüt <img data-l10n-name="chrome-icon-3dots"/> és ugorjon a Automatikus kitöltés és jelszavak > Google jelszókezelő menüponthoz.
+migration-chrome-windows-password-import-step2 = Válassza a „Beállítások” lehetőséget a menüből.
+migration-chrome-windows-password-import-step3 = Válassza a „Fájl letöltése” lehetőséget, és mentse el az eszközére.
+migration-chrome-windows-password-import-step4 = Térjen vissza ide, és válassza a „Fájl kiválasztása” lehetőséget az importálás befejezéséhez.
+migration-manual-password-import-skip-button = Kihagyás
+migration-manual-password-import-select-button = Fájl kiválasztása
 migration-safari-password-import-skip-button = Kihagyás
 migration-safari-password-import-select-button = Fájl kiválasztása
 # Shown in the migration wizard after importing bookmarks from another
@@ -223,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Waterfox Da
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Waterfox Telemetry クライアントドキュメント</a> には、コンセプト、API ドキュメント、データ参照についての定義が含まれます。
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry ダッシュボード</a> では、Telemetry 経由で BrowserWorks が受信したデータが視覚化されています。
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> は、Telemetry により収集されたプローブの詳細と説明を提供します。
-about-telemetry-show-in-Waterfox-json-viewer = JSON ビューアーで開く
+about-telemetry-show-in-Firefox-json-viewer = JSON ビューアーで開く
 about-telemetry-home-section = ホーム
 about-telemetry-general-data-section = 一般データ
 about-telemetry-environment-data-section = 環境データ
@@ -63,7 +63,7 @@ about-telemetry-upload-type =
 #   $sum (number) - Sum of histogram samples
 about-telemetry-histogram-stats = サンプル数 { $sampleCount }、平均 = { $prettyAverage }、合計 = { $sum }
 # Variables:
-#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "BrowserWorks"
+#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = このページは、Telemetry によって収集されたパフォーマンスとハードウェア、使用状況、カスタマイズについての情報を表示します。この情報は、{ -brand-full-name } の改善のため { $telemetryServerOwner } に送信されます。
 about-telemetry-settings-explanation = Telemetry は { about-telemetry-data-type }を収集しています。アップロードは<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>です。
 # Variables:

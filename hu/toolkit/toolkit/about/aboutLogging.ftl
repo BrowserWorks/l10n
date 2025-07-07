@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,6 +17,8 @@ about-logging-set-log-file = Naplófájl beállítása
 about-logging-set-log-modules = Naplómodulok beállítása
 about-logging-start-logging = Naplózás elkezdése
 about-logging-stop-logging = Naplózás leállítása
+about-logging-copy-as-url = Jelenlegi beállítások másolása webcímként
+about-logging-url-copied = A naplózási beállítások a vágólapra másolva előre beállított webcímként
 about-logging-buttons-disabled = A naplózás környezeti változókkal lett beállítva, a dinamikus konfiguráció nem érhető el.
 about-logging-some-elements-disabled = A naplózás webcím alapján lett beállítva, néhány konfigurációs lehetőség nem érhető el
 about-logging-info = Információ:
@@ -29,6 +31,8 @@ about-logging-no-log-modules = Nincs
 about-logging-no-log-file = Nincs
 about-logging-logging-preset-selector-text = Naplózási előbeállítás:
 about-logging-with-profiler-stacks-checkbox = Veremkiíratások engedélyezése a naplóüzeneteknél
+about-logging-menu =
+    .title = Speciális beállítások
 
 ## Logging presets
 
@@ -46,6 +50,8 @@ about-logging-preset-media-playback-label = Médialejátszás
 about-logging-preset-media-playback-description = Naplómodulok a médialejátszási (nem videókonferenciával kapcsolatos) problémák diagnosztizálásához
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Naplómodulok a WebRTC hívások diagnosztizálásához
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Naplómodulok a WebCodecs hang/videó dekódolók és kódolók, valamint képdekódolók problémáinak diagnosztizálásához
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Naplómodulok a WebGPU problémák diagnosztizálásához
 about-logging-preset-gfx-label = Grafika
@@ -58,9 +64,7 @@ about-logging-preset-custom-description = Kézzel kiválasztott naplómodulok
 # Error handling
 about-logging-error = Hiba:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Érvénytelen „{ $v }“ érték a(z) „{ $k }“ kulcshoz
 about-logging-unknown-logging-preset = Ismeretlen „{ $v }” naplózási előbeállítás
@@ -68,4 +72,30 @@ about-logging-unknown-profiler-preset = Ismeretlen „{ $v }” profil-előbeál
 about-logging-unknown-option = Ismeretlen „{ $k }” about:logging kapcsoló
 about-logging-configuration-url-ignored = Konfigurációs webcím figyelmen kívül hagyva
 about-logging-file-and-profiler-override = Nem lehet egyszerre kényszeríteni a fájlkimenetet és felülbírálni a profilozó beállításait
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Hiba történt: { $errorText }
 about-logging-configured-via-url = Webcím alapján beállított kapcsoló
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-upload-question = A profiladatok rögzítve lettek. Menti vagy feltölti?
+about-logging-save-button = Mentés
+about-logging-upload-button = Feltöltés
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Mentve ide: { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Profiladatok feltöltése: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Feltöltve ide: <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Webcím megosztása
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Hiba történt a profil feltöltésekor: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Hiba történt a fájl mentésekor: { $errorText }

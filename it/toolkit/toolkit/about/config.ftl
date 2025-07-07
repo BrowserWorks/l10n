@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ## These strings appear on the warning you see when first visiting about:config.
 
@@ -13,15 +14,11 @@ about-config-intro-warning-button = Accetta il rischio e continua
 
 # This is shown on the page before searching but after the warning is accepted.
 about-config-caution-text = La modifica di queste impostazioni può compromettere le prestazioni e la sicurezza di { -brand-short-name }.
-
 about-config-page-title = Impostazioni avanzate
-
 about-config-search-input1 =
     .placeholder = Cerca nome preferenza
 about-config-show-all = Visualizza tutto
-
 about-config-show-only-modified = Visualizza solo preferenze modificate
-
 about-config-pref-add-button =
     .title = Aggiungi
 about-config-pref-toggle-button =

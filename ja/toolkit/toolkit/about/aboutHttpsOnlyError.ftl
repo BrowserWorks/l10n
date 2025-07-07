@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,6 +11,7 @@ about-httpsonly-explanation-question = この問題の原因は？
 about-httpsonly-explanation-nosupport = おそらく、ウェブサイトが HTTPS をサポートしていないだけでしょう。
 about-httpsonly-explanation-risk = また、攻撃者が関係している可能性もあります。ウェブサイトへ移動することにした場合でも、パスワードやメールアドレス、クレジットカードなどの取り扱いに注意が必要な情報を入力しないでください。
 about-httpsonly-explanation-continue = 続ける場合、このサイトでは HTTPS-Only モードが一時的にオフになります。
+about-httpsonly-explanation-iframe = 混在コンテンツのブロックにより、このフレームの読み込みを手動で許可することができません。
 about-httpsonly-button-continue-to-site = HTTP サイトを開く
 about-httpsonly-button-go-back = 戻る
 about-httpsonly-link-learn-more = 詳細情報...

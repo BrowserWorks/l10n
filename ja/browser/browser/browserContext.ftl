@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Waterfox Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
@@ -146,9 +146,7 @@ main-context-menu-save-link-to-pocket =
     .label = リンクを { -pocket-brand-name } に保存
     .accesskey = o
 
-## The access keys for "Copy Link" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-copy-email =
     .label = メールアドレスをコピー
@@ -159,6 +157,15 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = リンクをコピー
     .accesskey = L
+main-context-menu-preview-link =
+    .label = リンク先をプレビュー
+    .accesskey = r
+# "Copy Clean Link" means that Firefox will remove things from the link you
+# copied, like items that identify you for advertising purposes, and other items
+# sites add into URLs to help them deliver a certain browsing experience.
+main-context-menu-copy-clean-link =
+    .label = 追跡を除去したリンクをコピー
+    .accesskey = u
 # This command copies the link, removing additional
 # query parameters used to track users across sites.
 main-context-menu-strip-on-share-link =
@@ -287,9 +294,7 @@ main-context-menu-send-to-device =
     .label = ページを端末へ送信
     .accesskey = n
 
-## The access keys for "Use Saved Login" and "Use Saved Password"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
+##
 
 main-context-menu-use-saved-login =
     .label = 保存したログイン情報を使用
@@ -316,6 +321,9 @@ main-context-menu-manage-passwords =
 main-context-menu-keyword =
     .label = この検索にキーワードを設定...
     .accesskey = K
+main-context-menu-add-engine =
+    .label = 検索エンジンを追加
+    .accesskey = S
 main-context-menu-link-send-to-device =
     .label = リンクを端末へ送信
     .accesskey = n

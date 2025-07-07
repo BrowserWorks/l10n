@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Download
 appmenuitem-passwords =
     .label = Password
+appmenuitem-extensions-and-themes =
+    .label = Estensioni e temi
+appmenuitem-extensions =
+    .label = Estensioni
 appmenuitem-addons-and-themes =
     .label = Estensioni e temi
 appmenuitem-print =
@@ -63,7 +67,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Schermo intero
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Accedi per sincronizzare…
@@ -75,8 +79,8 @@ appmenu-remote-tabs-showmore =
     .tooltiptext = Visualizza altre schede da questo dispositivo
 # This is shown as the label for an element to show inactive tabs from this device.
 appmenu-remote-tabs-show-inactive-tabs =
-  .label = Schede inattive
-  .tooltiptext = Visualizza le schede inattive su questo dispositivo
+    .label = Schede inattive
+    .tooltiptext = Visualizza le schede inattive su questo dispositivo
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Nessuna scheda aperta
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -84,7 +88,7 @@ appmenu-remote-tabs-tabsnotsyncing = Attiva la sincronizzazione delle schede per
 appmenu-remote-tabs-opensettings =
     .label = Impostazioni
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Come fare per visualizzare in questa sezione le schede da altri dispositivi?
 appmenu-remote-tabs-connectdevice =
     .label = Connetti un altro dispositivo
@@ -104,8 +108,11 @@ appmenu-fxa-sync-and-save-data2 = Sincronizza e salva i dati
 appmenu-fxa-signed-in-label = Accedi
 appmenu-fxa-setup-sync =
     .label = Attiva sincronizzazione…
+appmenu-fxa-setup-sync-new = Attiva
 appmenuitem-save-page =
     .label = Salva pagina con nome…
+appmenuitem-fxa-sync-off-title = La sincronizzazione è disattivata
+appmenuitem-fxa-sync-off-description = Proteggi e accedi ai tuoi segnalibri, password e altri dati ovunque ti trovi.
 
 ## What's New panel in App menu.
 
@@ -116,7 +123,7 @@ whatsnew-panel-footer-checkbox =
     .label = Notifica nuove funzionalità
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -148,7 +155,7 @@ profiler-popup-start-recording-button =
 profiler-popup-discard-button =
     .label = Rimuovi
 profiler-popup-capture-button =
-    .label = Acquisisci
+    .label = Cattura
 profiler-popup-start-shortcut =
     { PLATFORM() ->
         [macos] ⌃⇧1
@@ -185,6 +192,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Preset per la diagnosi di problemi audio e video in { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Multimediale
+profiler-popup-presets-ml-description = Preset per la diagnosi di problemi relativi a machine learning in { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Machine learning
 profiler-popup-presets-networking-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Rete
@@ -192,11 +202,9 @@ profiler-popup-presets-power-description = Preset per la diagnosi di problemi re
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Energia
-
 profiler-popup-presets-debug-description = Preset per il debug di { -brand-shorter-name }. Overhead elevato, non utilizzare per analisi delle prestazioni ma solo per comprendere il comportamento del browser.
 profiler-popup-presets-debug-label =
-  .label = Debug
-
+    .label = Debug
 profiler-popup-presets-custom-label =
     .label = Personalizzato
 
@@ -275,6 +283,21 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Ottieni informazioni sulle violazioni di dati
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Mantieni al sicuro il tuo indirizzo email e telefono
+appmenuitem-services-relay-description = Apri la dashboard per gli alias di posta elettronica
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Proteggi la tua attività online
+appmenu-services-header = I miei servizi
+appmenu-other-protection-header = Prova altri strumenti di protezione di { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Altri profili
+appmenu-manage-profiles =
+    .label = Gestisci profili
+appmenu-create-profile =
+    .label = Nuovo profilo
+appmenu-edit-profile =
+    .aria-label = Modifica profilo
+appmenu-profiles-2 =
+    .label = Profili
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% voltooid
 firefoxview-tabpickup-step-signin-header = Schakel naadloos tussen apparaten
 firefoxview-tabpickup-step-signin-description = Meld u eerst aan of maak een account aan om hier de tabbladen van uw telefoon op te halen.
 firefoxview-tabpickup-step-signin-primarybutton = Doorgaan
+firefoxview-syncedtabs-signin-header-2 = Uw { -brand-product-name } op al uw apparaten
+firefoxview-syncedtabs-signin-description-2 = Meld u aan of registreer u voor een account om op uw telefoon en andere apparaten geopende tabbladen te zien. Met een account kunt u ook uw wachtwoorden, geschiedenis en meer synchroniseren.
+firefoxview-syncedtabs-signin-primarybutton-2 = Aanmelden
 firefoxview-syncedtabs-signin-header = Pak overal tabbladen
 firefoxview-syncedtabs-signin-description = Meld u aan bij uw account om uw tabbladen te bekijken, ongeacht waar u { -brand-product-name } gebruikt. Als u geen account hebt, zullen we u door de stappen leiden om u in te schrijven.
 firefoxview-syncedtabs-signin-primarybutton = Aanmelden of inschrijven
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = { -brand-product-name } op uw telefoon 
 firefoxview-tabpickup-adddevice-description = Download { -brand-product-name } voor mobiel en meld u daar aan.
 firefoxview-tabpickup-adddevice-learn-how = Meer info
 firefoxview-tabpickup-adddevice-primarybutton = { -brand-product-name } voor mobiel downloaden
+firefoxview-syncedtabs-adddevice-header-2 = Pak overal tabbladen
+firefoxview-syncedtabs-adddevice-description-2 = Meld u aan bij { -brand-product-name } op uw telefoon of een andere computer om hier tabbladen te bekijken. Lees hoe u <a data-l10n-name="url">extra apparaten kunt verbinden</a>.
 firefoxview-syncedtabs-adddevice-header = Meld u aan bij { -brand-product-name } op uw andere apparaten
 firefoxview-syncedtabs-adddevice-description = Meld u aan op al uw apparaten om uw tabbladen te bekijken, waar u { -brand-product-name } ook gebruikt. Lees hoe u <a data-l10n-name="url">extra apparaten aansluit</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = { -brand-product-name } voor mobiel proberen
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Tabbladen van andere apparaten
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Alles bekijken
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Onlangs gesloten tabbladen doorzoeken
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Tabbladen doorzoeken
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Gesynchroniseerde tabbladen doorzoeken
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (lokale bestanden)
 firefoxview-show-all-history = Alle geschiedenis tonen
 firefoxview-view-more-browsing-history = Meer navigatiegeschiedenis bekijken
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Terug naar waar u was
 firefoxview-history-empty-description = Terwijl u surft, worden de pagina’s die u bezoekt hier weergegeven.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Het beschermen van uw privacy staat 
 firefoxview-choose-browser-button = Kies browser
     .title = Kies browser
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Niets om te laten zien
 firefoxview-dont-remember-history-empty-description = Het beschermen van uw privacy staat centraal in wat we doen. Daarom kunt u de activiteit die { -brand-short-name } onthoudt beheren.
 firefoxview-dont-remember-history-empty-description-two = Op basis van uw huidige instellingen onthoudt { -brand-short-name } uw activiteit niet terwijl u surft. <a data-l10n-name="history-settings-url-two">Wijzig uw geschiedenisinstellingen om uw geschiedenis te onthouden</a> om dat te wijzigen.
+firefoxview-dont-remember-history-empty-header-2 = U hebt controle over wat { -brand-short-name } onthoudt
+firefoxview-dont-remember-history-empty-description-one = Op dit moment onthoudt { -brand-short-name } uw surfactiviteit niet. <a data-l10n-name="history-settings-url-two">Werk uw geschiedenisinstellingen bij</a> om dat te wijzigen.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Sluiten
     .title = Sluiten
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Geschiedenis importeren vanuit een andere browser
 firefoxview-import-history-description = Maak van { -brand-short-name } uw favoriete browser. Importeer navigatiegeschiedenis, bladwijzers en meer.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Te vroeg een tabblad gesloten?
 firefoxview-recentlyclosed-empty-description = Hier vindt u de tabbladen die u onlangs hebt gesloten, zodat u ze snel weer kunt openen.

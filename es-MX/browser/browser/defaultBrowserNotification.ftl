@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = ¿Hacer { -brand-short-name } su navegador principal?
 default-browser-prompt-message-pin = Mantén { -brand-short-name } al alcance de tus dedos — hazlo tu navegador predeterminado y fíjalo a tu barra de tareas.
+default-browser-prompt-message-pin-msix = Mantén { -brand-short-name } al alcance de tus dedos — hazlo tu navegador predeterminado y fíjalo a tu barra de tareas y menú Inicio.
 default-browser-prompt-message-pin-mac = Mantén { -brand-short-name } al alcance de tus dedos — hazlo tu navegador predeterminado y mantenlo en tu Dock
+default-browser-prompt-button-primary-set = Establecer como navegador principal
 default-browser-prompt-button-primary-pin = Establecer como navegador principal
 default-browser-prompt-title-alt = ¿Hacer que { -brand-short-name } sea tu navegador predeterminado?
 default-browser-prompt-message-alt = Obtén velocidad, seguridad y privacidad cada vez que navegas.
@@ -27,5 +29,14 @@ default-browser-prompt-button-secondary = Ahora no
 ## Windows 10 and 11.
 
 default-browser-guidance-notification-title = Termina de hacer que { -brand-short-name } sea tu predeterminado
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win10 =
+    Paso 1: Ve a los Ajustes > Aplicaciones predeterminadas
+    Paso 2: Baja hasta “Navegador Web”
+    Paso 3: Selecciona y elige { -brand-short-name }
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win11 =
+    Paso 1: Ve a los Ajustes > Aplicaciones predeterminadas
+    Paso 2: Selecciona “Establecer como predeterminado” para { -brand-short-name }
 default-browser-guidance-notification-info-page = Muéstrame
 default-browser-guidance-notification-dismiss = Listo

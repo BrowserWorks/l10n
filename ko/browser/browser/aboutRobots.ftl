@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ### These strings are used in the about:robots page, which ties in with the
-### robots theme used in the Waterfox 3 Beta 2/3 first run pages.
+### robots theme used in the Firefox 3 Beta 2/3 first run pages.
 ### They're just meant to be fun and whimsical, with references to some geeky
 ### but well-known robots in movies and books. Be creative with translations!
 
@@ -25,5 +25,6 @@ error-long-desc4 = 로봇은 누구도 깨물 수 없는 반짝이는 금속 엉
 # TV: Battlestar Galactica (2004 series). From the opening text.
 error-trailer-desc-text = 그리고 그들은 계획을 가지고 있습니다.
 # Book: Hitchhiker's Guide To The Galaxy. Arthur presses a button and it warns him.
+# Note: .label2 replaces this label after pressing the button the first time.
 error-try-again = 다시 시도
     .label2 = 이 버튼을 다시 누르지 마세요.

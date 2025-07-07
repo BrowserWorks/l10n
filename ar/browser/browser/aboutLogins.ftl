@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -65,6 +65,17 @@ login-list-filtered-count =
         [many] { $count } من أصل { $total } جلسات الولوج
        *[other] { $count } من أصل { $total } جلسات الولوج
     }
+# Variables
+#   $count (number) - Number of logins
+login-list-count2 =
+    { $count ->
+        [zero] ولا كلمة مرور
+        [one] كلمة مرور واحدة
+        [two] كلمتا مرور
+        [few] { $count } كلمات مرور
+        [many] { $count } كلمة مرور
+       *[other] { $count } كلمة مرور
+    }
 login-list-sort-label-text = افرز حسب:
 login-list-name-option = الاسم (ا-ي)
 login-list-name-reverse-option = الاسم (ي-ا)
@@ -74,6 +85,7 @@ about-logins-login-list-alerts-option = التنبيهات
 login-list-last-changed-option = آخر تعديل
 login-list-last-used-option = آخر استخدام
 login-list-intro-title = لا جلسات ولوج
+login-list-intro-title2 = لم يتم حفظ كلمات مرور
 login-list-intro-description = متى ما حفظت كلمة سر في { -brand-product-name } ستظهر هنا.
 about-logins-login-list-empty-search-title = لا جلسات ولوج
 about-logins-login-list-empty-search-title2 = لم يُعثر على كلمات السر
@@ -99,11 +111,14 @@ about-logins-login-intro-heading-logged-out2 = أتبحث عن جلسات ولو
 about-logins-login-intro-heading-logged-in = لم نجد أيّ جلسة ولوج متزامنة.
 login-intro-description = إن حفظت جلسات ولوجك في { -brand-product-name } على جهاز آخر، فهكذا يمكنك أن تزامنها هنا:
 login-intro-instructions-fxa = أنشِئ أو لِج إلى { -fxaccount-brand-name } على الأجهزة التي لديك عليها جلسات ولوج محفوظة
+about-logins-login-intro-heading-message = احفظ كلمات مرورك في مكان آمن
+login-intro-description2 = جميع كلمات السر التي تحفظها في { -brand-product-name } مُعمَّاة. بالإضافة إلى ذلك، إننا نراقب الانتهاكات وننبهك إذا تأثرت بها. <a data-l10n-name="breach-alert-link">معرفة المزيد</a>
 login-intro-instructions-fxa2 = أنشئ أو لج إلى حسابك على الأجهزة التي لديك عليها جلسات ولوج محفوظة.
 login-intro-instructions-fxa-settings = انتقل إلى ”الإعدادات > المزامنة > فعّل المزامنة…“ وضَع علامة على ”جلسات الولوج وكلمات السر“.
 login-intro-instructions-fxa-passwords-help = زُر <a data-l10n-name="passwords-help-link">دعم كلمات السر</a> لمزيد من المساعدة.
 about-logins-intro-browser-only-import = لو كانت جلسات ولوجك محفوظة في متصفّح آخر فيمكنك <a data-l10n-name="import-link">استيرادها إلى { -brand-product-name }</a>
 about-logins-intro-import2 = إن حفظت جلسات الولوج خارج { -brand-product-name } فيمكنك <a data-l10n-name="import-browser-link">استيرادها من متصفّح آخر</a> أو <a data-l10n-name="import-file-link">من ملف</a>
+about-logins-intro-import3 = اختر زر علامة الزائد أعلى هذا النص لاضافة كلمة سر الآن. يمكنك أيضًا <a data-l10n-name="import-browser-link">استيراد كلمات السر من متصفح آخر</a> أو <a data-l10n-name="import-file-link">من ملف</a>.
 
 ## Login
 
@@ -114,6 +129,11 @@ login-item-edit-button = حرِّر
 about-logins-login-item-remove-button = أزِل
 login-item-origin-label = عنوان الموقع
 login-item-tooltip-message = تأكّد من تطابق هذا العنوان مع عنوان الموقع الذي تريد الولوج إليه.
+about-logins-origin-tooltip2 = أدخل العنوان بالكامل وتأكد من أنه مطابق تمامًا للمكان الذي تسجل الدخول فيه.
+# Variables
+#   $webTitle (String) - Website title of the password being changed.
+about-logins-edit-password-tooltip = تأكد من حفظ كلمة السر الحالية لهذا الموقع. تغيير كلمة السر هنا لا يغيرها باستخدام { $webTitle }.
+about-logins-add-password-tooltip = تأكد من حفظ كلمة السر الحالية لهذا الموقع.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = اسم المستخدم
@@ -124,9 +144,12 @@ login-item-copied-username-button-text = نُسخ.
 login-item-password-label = كلمة السر
 login-item-password-reveal-checkbox =
     .aria-label = أظهِر كلمة السر
+login-item-password-conceal-checkbox =
+    .aria-label = أخفِ كلمة السر
 login-item-copy-password-button-text = انسخ
 login-item-copied-password-button-text = نُسخ.
 login-item-save-changes-button = احفظ التغييرات
+about-logins-login-item-save-changes-button = احفظ
 login-item-save-new-button = احفظ
 login-item-cancel-button = ألغِ
 
@@ -145,7 +168,7 @@ login-item-timeline-action-used = استُعمِل
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -154,6 +177,18 @@ about-logins-edit-login-os-auth-dialog-message-win = أدخِل معلومات �
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = تحرير جلسة الولوج المحفوظة
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
+# This message can be seen when attempting to disable osauth in about:preferences.
+about-logins-os-auth-dialog-message =
+    { PLATFORM() ->
+        [macos] تغيير إعدادات كلمات السر
+       *[other] يحاول { -brand-short-name } تغيير إعدادات كلمات السر. استخدم الولوج لجهازك للسماح بذلك.
+    }
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message2-win = لتحرير كلمة سرك، أدخل بيانات ولوجك بنظام ويندوز. يساعد هذا في حماية أمان حساباتك.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message2-macosx = تحرير كلمة المرور المحفوظة
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتعرض كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -169,6 +204,11 @@ about-logins-export-password-os-auth-dialog-message-win = أدخِل معلوم�
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = صدّر جلسات الولوج وكلمات السر المحفوظة
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message2-win = لتصدير كلمات سرك، أدخل بيانات ولوجك بنظام ويندوز. يساعد هذا في حماية أمان حساباتك.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message2-macosx = صدّر كلمات السر المحفوظة
 
 ## Primary Password notification
 
@@ -184,6 +224,10 @@ confirmation-dialog-dismiss-button =
     .title = ألغِ
 about-logins-confirm-remove-dialog-title = أنُزيل هذا الولوج؟
 confirm-delete-dialog-message = هذا إجراء لا عودة فيه.
+# Title for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-title = إزالة كلمة السر؟
+# Message for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-message = لا يمكنك التراجع عن هذا الإجراء.
 about-logins-confirm-remove-dialog-confirm-button = أزِل
 
 ## Variables
@@ -247,12 +291,59 @@ about-logins-confirm-remove-all-sync-dialog-message =
         [many] بهذا تحذف جلسات الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
        *[other] بهذا تحذف جلسات الولوج المحفوظة في { -brand-short-name } من كلّ الأجهزة المتزامنة مع { -fxaccount-brand-name } لديك. كما سيُزيل أيّ تحذيرات أخرى تظهر هنا عن تسريبات البيانات. لا يمكنك العودة عن هذا الإجراء.
     }
+# Checkbox for modal to confirm the removal of saved passwords
+about-logins-confirm-remove-all-dialog-checkbox-label2 =
+    { $count ->
+        [1] نعم، أزل كلمة السر
+        [zero] نعم، أزل كلمات السر
+        [one] نعم، أزل كلمة السر
+        [two] نعم، أزل كلمتي السر
+        [few] نعم، أزل كلمات السر
+        [many] نعم، أزل كلمات السر
+       *[other] نعم، أزل كلمات السر
+    }
+# Title for modal to confirm the removal of all saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-title2 =
+    { $count ->
+        [zero] أتريد إزالة { $count } كلمة سر؟
+        [one] أتريد إزالة كلمة السر؟
+        [two] أتريد إزالة كلمتي السر؟
+        [few] أتريد إزالة { $count } كلمات سر؟
+        [many] أتريد إزالة { $count } كلمة سر؟
+       *[other] أتريد إزالة { $count } كلمة سر؟
+    }
+# Message for modal to confirm the removal of saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-message2 =
+    { $count ->
+        [1] سيؤدي هذا إلى إزالة كلمة السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+        [zero] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+        [one] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+        [two] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+        [few] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+        [many] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+       *[other] سيؤدي هذا إلى إزالة كلمات السر المحفوظة في { -brand-short-name } وأي تنبيهات بشأن تسريب البيانات. لا يمكنك التراجع عن هذا الإجراء.
+    }
+# Title for modal to confirm the removal of all saved passwords when user IS SYNCED
+about-logins-confirm-remove-all-sync-dialog-title2 =
+    { $count ->
+        [zero] أتريد إزالة { $count } كلمة السر من كل الأجهزة؟
+        [one] أتريد إزالة { $count } كلمات السر من كل الأجهزة؟
+        [two] أتريد إزالة { $count } كلمات السر من كل الأجهزة؟
+        [few] أتريد إزالة { $count } كلمات السر من كل الأجهزة؟
+        [many] أتريد إزالة { $count } كلمات السر من كل الأجهزة؟
+       *[other] أتريد إزالة { $count } كلمات السر من كل الأجهزة؟
+    }
 
 ##
 
 about-logins-confirm-export-dialog-title = صدّر جلسات الولوج وكلمات السر
 about-logins-confirm-export-dialog-message = ستُحفظ جلسات الولوج على هيئة نص مقروء (مثلا 12345 أو BadP@ssw0rd) وبهذا يستطيع أيّ شخص معاينتها لو فتح الملف المصدّر.
 about-logins-confirm-export-dialog-confirm-button = صدّر…
+about-logins-confirm-export-dialog-title2 = ملاحظة حول تصدير كلمات السر
+about-logins-confirm-export-dialog-message2 =
+    عند التصدير، تُحفظ كلمات سرك في ملف نصي قابل للقراءة.
+    عند الانتهاء من استخدام الملف، نوصي بحذفه حتى لا يتمكن المستخدمون الأخرون لهذا الجهاز من رؤية كلمات سرك.
+about-logins-confirm-export-dialog-confirm-button2 = متابعة التصدير
 about-logins-alert-import-title = تمّ الاستيراد
 about-logins-alert-import-message = اعرض ملخص الاستيراد التفصيلي
 confirm-discard-changes-dialog-title = أتريد إهمال التغييرات غير المحفوظة؟
@@ -294,6 +385,11 @@ about-logins-export-file-picker-title = صدّر ملف جلسات الولوج
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = جلسات_الولوج.csv
+# Title of the file picker dialog
+about-logins-export-file-picker-title2 = صدّر كلمات السر من { -brand-short-name }
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename2 = passwords.csv
 about-logins-export-file-picker-export-button = صدّر
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -307,6 +403,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 # Title of the file picker dialog
 about-logins-import-file-picker-title = استورِد ملف جلسات الولوج
+# Title of the file picker dialog
+about-logins-import-file-picker-title2 = استورد كلمات السر إلى { -brand-short-name }
 about-logins-import-file-picker-import-button = استورِد
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -380,6 +478,7 @@ about-logins-import-dialog-error-try-import-again = حاوِل الاستيرا�
 about-logins-import-dialog-error-cancel = ألغِ
 about-logins-import-report-title = ملخص الاستيراد
 about-logins-import-report-description = استوردت جلسات الولوج وكلمات السر إلى { -brand-short-name }.
+about-logins-import-report-description2 = استوردت كلمات السر إلى { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -387,6 +486,9 @@ about-logins-import-report-row-index = صف { $number }
 about-logins-import-report-row-description-no-change = متكرّر: مطابقة تامة لجلسة ولوج موجودة
 about-logins-import-report-row-description-modified = حُدّثت جلسة الولوج الموجودة
 about-logins-import-report-row-description-added = أُضيفت جلسة ولوج جديدة
+about-logins-import-report-row-description-no-change2 = متكرّر: مطابقة تامة للولوج الحالي
+about-logins-import-report-row-description-modified2 = حُدّثت الولوج الموجودة
+about-logins-import-report-row-description-added2 = أضيفت كلمة مرور جديدة
 about-logins-import-report-row-description-error = خطأ: حقل مفقود
 
 ##

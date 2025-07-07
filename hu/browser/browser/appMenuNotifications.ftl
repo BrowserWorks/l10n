@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Elvetés
     .secondarybuttonaccesskey = E
 appmenu-update-restart-message2 = Szerezze be a { -brand-shorter-name } legújabb verzióját. A nyitott lapok és ablakok visszaállnak.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Visszavonás
+    .secondarybuttonaccesskey = V
 appmenu-update-other-instance =
     .label = A { -brand-shorter-name } nem tud automatikusan a legújabb verzióra frissíteni.
     .buttonlabel = A { -brand-shorter-name } frissítése mindenképp
@@ -37,15 +40,19 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Most nem
     .secondarybuttonaccesskey = n
 appmenu-update-other-instance-message = Egy új { -brand-shorter-name } frissítés érhető el, de nem telepíthető, mert a { -brand-shorter-name } egy másik példánya fut. Zárja be a frissítés folytatásához, vagy válassza azt, hogy mindenképp frissíti (a másik példány lehet hogy az újraindításáig nem fog megfelelően működni).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = Rendben
     .buttonaccesskey = R
 appmenu-addon-post-install-message3 = Kezelje a kiegészítőit és témáit az alkalmazásmenün keresztül.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = Az engedélyeket és adatbeállításokat bármikor frissítheti a <a data-l10n-name="settings-link">kiegészítő beállításaiban</a>.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Kiegészítő rögzítése az eszköztárra
+    .accesskey = r
 appmenu-addon-post-install-incognito-checkbox =
     .label = A kiegészítő futtatásának engedélyezése privát ablakokban
     .accesskey = e
-    
 appmenu-new-tab-controlled-changes =
     .label = Az új lap megváltozott.
     .buttonlabel = Változások megtartása

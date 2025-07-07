@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Seznam ke čtení (ze Safari)
 migration-imported-edge-reading-list = Seznam ke čtení (z Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } nemá přístup k profilům jiných prohlížečů nainstalovaných na tomto zařízení
@@ -214,6 +214,14 @@ migration-safari-password-import-step1 = V Safari otevřete nabídku „Safari�
 migration-safari-password-import-step2 = Klepněte na tlačítko <img data-l10n-name="safari-icon-3dots"/> a zvolte „Exportovat všechna hesla“
 migration-safari-password-import-step3 = Uložte soubor s hesly
 migration-safari-password-import-step4 = Klepněte na „Vybrat soubor“ níže a vyberte uložený soubor s hesly
+migration-chrome-windows-password-import-header = Jak importovat hesla z prohlížeče Chrome
+migration-chrome-windows-password-import-steps-header = V prohlížeči Chrome:
+migration-chrome-windows-password-import-step1 = Otevřete hlavní nabídku <img data-l10n-name="chrome-icon-3dots"/> a vyberte položku Hesla a automatické vyplňování > Správce hesel Google.
+migration-chrome-windows-password-import-step2 = V nabídce vyberte “Nastavení”.
+migration-chrome-windows-password-import-step3 = Zvolte “Stáhnout soubor” a uložte jej do svého zařízení.
+migration-chrome-windows-password-import-step4 = Vraťte se sem a klepnutím na tlačítko “Vybrat soubor” dokončete import.
+migration-manual-password-import-skip-button = Přeskočit
+migration-manual-password-import-select-button = Vybrat soubor
 migration-safari-password-import-skip-button = Přeskočit
 migration-safari-password-import-select-button = Vybrat soubor
 # Shown in the migration wizard after importing bookmarks from another
@@ -245,7 +253,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

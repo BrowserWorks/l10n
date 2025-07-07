@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -41,7 +41,7 @@ about-logins-menu-menuitem-help = Bantuan
 ## Login List
 
 login-list =
-    .aria-label = Info masuk yang cocok dengan permintaan pencarian
+    .aria-label = Info masuk yang cocok dengan kueri pencarian
 # Variables
 #   $count (number) - Number of logins
 login-list-count =
@@ -127,6 +127,8 @@ login-item-copied-username-button-text = Tersalin!
 login-item-password-label = Sandi
 login-item-password-reveal-checkbox =
     .aria-label = Tampilkan sandi
+login-item-password-conceal-checkbox =
+    .aria-label = Sembunyikan sandi
 login-item-copy-password-button-text = Salin
 login-item-copied-password-button-text = Tersalin!
 login-item-save-changes-button = Simpan Perubahan
@@ -149,7 +151,7 @@ login-item-timeline-action-used = Digunakan
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -158,11 +160,11 @@ about-logins-edit-login-os-auth-dialog-message-win = Untuk mengubah info masuk A
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = mengedit info masuk tersimpan
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
-        [macos] ubah setelan sandi
+        [macos] mengubah setelan sandi
        *[other] { -brand-short-name } mencoba mengubah setelan sandi. Gunakan perangkat masuk Anda untuk mengizinkan ini.
     }
 # This message can be seen when attempting to edit a login in about:logins on Windows.

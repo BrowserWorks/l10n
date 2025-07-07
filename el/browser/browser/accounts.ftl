@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = Ολοκλήρωση ρύθμισης λογαρ�
 account-disconnected2 = Ο λογαριασμός αποσυνδέθηκε
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Αποστολή σε όλες τις συσκευές
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Διαχείριση συσκευών…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = Επανασύνδεση { $email }
 account-verify = Επαλήθευση { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = Σύνδεση άλλης συσκε�
 account-send-tab-to-device-verify-status = Ο λογαριασμός δεν επαληθεύτηκε
 account-send-tab-to-device-verify = Επαλήθευση λογαριασμού…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(case: "nom", capitalization: "upper") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Λογαριασμός
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Αυτός ο υπολογιστής είναι πλέον συνδεδεμένος με το { $deviceName }.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = Αυτός ο υπολογιστής είναι πλέον συνδεδεμένος με μια νέα συσκευή.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = Έγινε επιτυχής σύνδεση
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = Αυτός ο υπολογιστείς έχει αποσυνδεθεί.
 
 ## These strings are used in a notification shown when we're opening

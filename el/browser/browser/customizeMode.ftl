@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 customize-mode-restore-defaults =
     .label = Επαναφορά προεπιλογών
-customize-mode-menu-and-toolbars-header = Σύρετε τα αγαπημένα σας στοιχεία στη γραμμή εργαλείων ή το αναδυόμενο μενού.
-customize-mode-overflow-list-title = Αναδυόμενο μενού
+customize-mode-menu-and-toolbars-header = Σύρετε τα αγαπημένα σας στοιχεία στη γραμμή εργαλείων ή το μενού υπερχείλισης.
+customize-mode-overflow-list-title = Μενού υπερχείλισης
 customize-mode-uidensity =
     .label = Πυκνότητα
 customize-mode-done =

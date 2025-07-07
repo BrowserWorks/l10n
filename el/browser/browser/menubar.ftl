@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -37,16 +37,16 @@ menu-quit =
     .label =
         { PLATFORM() ->
             [windows] Έξοδος
-           *[other] Έξοδος
+           *[other] Τερματισμός
         }
     .accesskey =
         { PLATFORM() ->
             [windows] ξ
-           *[other] ξ
+           *[other] Τ
         }
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
-    .label = Έξοδος από το { -brand-shorter-name }
+    .label = Τερματισμός του { -brand-shorter-name }
 menu-about =
     .label = Σχετικά με το { -brand-shorter-name }
     .accesskey = τ
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = δ
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Άνοιγμα τοποθεσίας…
 menu-file-open-file =
@@ -254,6 +254,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Σελιδοδείκτες κινητού
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Προφίλ
+menu-profiles-manage-profiles =
+    .label = Διαχείριση προφίλ
+menu-profiles-new-profile =
+    .label = Νέο προφίλ
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (τρέχον)
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Λήψεις
     .accesskey = ψ
+menu-tools-extensions-and-themes =
+    .label = Επεκτάσεις και θέματα
+    .accesskey = Ε
 menu-tools-addons-and-themes =
     .label = Πρόσθετα και θέματα
     .accesskey = Π

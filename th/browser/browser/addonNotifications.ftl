@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = เพิ่ม { $addonName } ลงใน { 
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } จำเป็นต้องขอสิทธิ์ใหม่
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = เสร็จสิ้นการติดตั้งส่วนขยายที่นำเข้าไปยัง { -brand-short-name }
 
@@ -81,6 +81,8 @@ addon-removal-title = ต้องการเอา { $name } ออกหร�
 addon-removal-message = เอา { $name } ออกจาก { -brand-shorter-name }?
 addon-removal-button = เอาออก
 addon-removal-abuse-report-checkbox = รายงานส่วนขยายนี้ไปยัง { -vendor-short-name }
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = ถ้าคุณใช้คุณลักษณะหรือส่วนขยายที่ใช้โมเดลนี้ โมเดลนั้นจะถูกเพิ่มกลับมาอีกครั้ง
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying = กำลังดาวน์โหลดและยืนยัน { $addonCount } ส่วนเสริม…
@@ -119,4 +121,8 @@ addon-local-install-error-not-signed = ไม่สามารถติดต�
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = ไม่สามารถติดตั้ง { $addonName } เนื่องจากใช้ร่วมกับ { -brand-short-name } { $appVersion } ไม่ได้
+addon-install-error-hard-blocked = { $addonName } ละเมิดนโยบายของ BrowserWorks และไม่สามารถติดตั้งบน { -brand-short-name } ได้
 addon-install-error-blocklisted = ไม่สามารถติดตั้ง { $addonName } เนื่องจากมีความเสี่ยงสูงที่จะก่อให้เกิดปัญหาด้านเสถียรภาพหรือความปลอดภัย
+addon-install-error-soft-blocked = { $addonName } ละเมิดนโยบายของ BrowserWorks และไม่สามารถติดตั้งบน { -brand-short-name } ได้
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = คุณไม่สามารถติดตั้ง { $addonName } ในฐานะผู้ใช้ปลายทางได้ แต่สามารถติดตั้งได้โดยองค์กรที่ใช้นโยบายองค์กรเท่านั้น

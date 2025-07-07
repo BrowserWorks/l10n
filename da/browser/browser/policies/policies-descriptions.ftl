@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = Slå understøttelse af tvungen portal til eller fra.
 policy-CertificatesDescription = Tilføj certifikater eller brug indbyggede certifikater.
 policy-ContentAnalysis = Aktiver eller deaktiver forbindelse til agent til forhindring af data-tab.
 policy-Cookies = Tillad eller nægt websteder at sætte cookies.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Angiv politikker relateret til kontekster.
 policy-DisableAccounts = Deaktiver kontobaserede tjenester, inklusive synkronisering.
 policy-DisabledCiphers = Deaktiver ciphers.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Tillad ikke at standard browser-agenten fore
 policy-DisableDeveloperTools = Bloker adgang til Udviklerværktøj.
 policy-DisableEncryptedClientHello = Deaktiver TLS-funktionen Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Deaktiver kommandoer til at indsende feedback fra menuen Hjælp (Indsend feedback og Anmeld vildledende websted).
-policy-DisableWaterfoxAccounts = Deaktiver tjenester baseret på { -fxaccount-brand-name }, inklusive Sync.
+policy-DisableFirefoxAccounts = Deaktiver tjenester baseret på { -fxaccount-brand-name }, inklusive Sync.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Deaktiver kontobaserede tjenester, inklusive synkronisering.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Deaktiver funktionen Waterfox Screenshots
-policy-DisableWaterfoxStudies = Deaktiver afvikling af { -brand-short-name }-undersøgelser.
+policy-DisableFirefoxAccounts1 = Deaktiver kontobaserede tjenester, inklusive synkronisering.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funktionen Waterfox Screenshots
+policy-DisableFirefoxStudies = Deaktiver afvikling af { -brand-short-name }-undersøgelser.
 policy-DisableForgetButton = Bloker adgang til knappen Glem.
 policy-DisableFormHistory = Husk ikke formular- og søgehistorik.
 policy-DisablePrimaryPasswordCreation = En hovedadgangskode kan ikke oprettes, hvis værdien er sat til true.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Deaktiver advarsl
 policy-Extensions = Installer, afinstaller eller lås udvidelser. Valgmuligheden Installer tager URL’er eller stier som parametre. Valgmulighederne Afinstaller og Låst tager udvidelelses-ID som parameter.
 policy-ExtensionSettings = Håndter alle aspekter af udvidelses-installering.
 policy-ExtensionUpdate = Slå automatisk opdatering af udvidelser til eller fra.
-policy-WaterfoxHome2 = Konfigurer { -firefox-home-brand-name }.
-policy-WaterfoxSuggest = Konfigurer { -firefox-suggest-brand-name }.
+policy-FirefoxHome2 = Konfigurer { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Konfigurer { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Gennemtving direkte intranet-navigation fremfor søgning, når der indtastes enkelte ord i adresselinjen.
 policy-Handlers = Indstil håndtering af standard-applikationer.
 policy-HardwareAcceleration = False slår hardware-acceleration fra.
@@ -119,6 +119,7 @@ policy-Permissions2 = Indstil tilladelser for kamera, mikrofon, position, besked
 policy-PictureInPicture = Slå Billede-i-billede til eller fra.
 policy-PopupBlocking = Tillad bestemte websteder at vise pop op-vinduer som standard.
 policy-Preferences = Indstil og lås værdien for en undergruppe af indstillingerne.
+policy-PrivateBrowsingModeAvailability = Indstil adgang til privat browsing-tilstand.
 policy-PromptForDownloadLocation = Spørg hvor hentede filer skal gemmes.
 policy-Proxy = Opsæt proxy-indstillinger.
 policy-RequestedLocales = Vælg rækkefølgen af sprog, der skal anvendes i programmet.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = Slå søgeforslag til eller fra.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Tilføj eller slet PKCS #11-moduler
 policy-ShowHomeButton = Vis hjem-knappen på værktøjslinjen.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Vis ikke Betingelser for brug og Privatlivserklæringen ved opstart. Du tilkendegiver, at du accepterer og har autoritet til at acceptere Betingelser for brug på vegne af alle brugere, du giver adgang til denne browser.
 policy-SSLVersionMax = Angiv den højeste SSL-version.
 policy-SSLVersionMin = Angiv den laveste SSL-version.
 policy-StartDownloadsInTempDirectory = Tving filhentninger til at starte i en lokal, midlertidig placering i stedet for standard-mappen for filhentninger.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = Udskriv ved at bruge systemets udskriftsdialog.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloker websteder fra at blive besøgt. Se dokumentationen for detaljer om formatet.
 policy-Windows10SSO = Tillad Windows enkeltlogon for Microsoft-, arbejds- og skole-konti.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Tillad enkeltlogon for Microsoft Entra-konti.

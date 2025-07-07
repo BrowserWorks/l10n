@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nova aba
 newtab-settings-button =
     .title = Personalizar sua página de nova aba
+newtab-customize-panel-icon-button =
+    .title = Personalizar esta página
+newtab-customize-panel-icon-button-label = Personalizar
+newtab-personalize-settings-icon-label =
+    .title = Personalizar página de nova aba
+    .aria-label = Configurações
+newtab-settings-dialog-label =
+    .aria-label = Configurações
 newtab-personalize-icon-label =
     .title = Personalizar página de nova aba
     .aria-label = Personalizar página de nova aba
 newtab-personalize-dialog-label =
     .aria-label = Personalizar
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -109,6 +119,21 @@ newtab-menu-save-to-pocket = Salvar no { -pocket-brand-name }
 newtab-menu-delete-pocket = Excluir do { -pocket-brand-name }
 newtab-menu-archive-pocket = Arquivar no { -pocket-brand-name }
 newtab-menu-show-privacy-info = Nossos patrocinadores e sua privacidade
+newtab-menu-about-fakespot = Informações sobre o { -fakespot-brand-name }
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = Relatar
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = Bloquear
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = Deixar de seguir o tópico
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = Gerenciar conteúdo patrocinado
+newtab-menu-our-sponsors-and-your-privacy = Nossos patrocinadores e sua privacidade
+newtab-menu-report-this-ad = Relatar este anúncio
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -166,6 +191,8 @@ newtab-label-sponsored-by = Patrocinado por { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } min
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = Patrocinado
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -196,6 +223,8 @@ newtab-section-header-recent-activity = Atividade recente
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Recomendado pelo { $provider }
 newtab-section-header-stories = Histórias que instigam o pensamento
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = Escolhas de hoje para você
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -226,7 +255,6 @@ newtab-pocket-learn-more = Saiba mais
 newtab-pocket-cta-button = Adicionar o { -pocket-brand-name }
 newtab-pocket-cta-text = Salve as histórias que você gosta no { -pocket-brand-name } e abasteça sua mente com leituras fascinantes.
 newtab-pocket-pocket-firefox-family = O { -pocket-brand-name } faz parte da família { -brand-product-name }
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Salvar
 newtab-pocket-saved = Salvo
 
@@ -238,7 +266,9 @@ newtab-pocket-thumbs-up-tooltip =
 # Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
 newtab-pocket-thumbs-down-tooltip =
     .title = Não me interessa
-newtab-toast-thumbs-up-or-down = Obrigado. Sua opinião nos ajudará a melhorar seu canal de informações.
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = Obrigado. Sua opinião nos ajudará a melhorar seu canal de informações.
 newtab-toast-dismiss-button =
     .title = Descartar
     .aria-label = Descartar
@@ -284,13 +314,22 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = Tempo
     .description = Visão geral da previsão para hoje
+newtab-custom-trending-search-toggle =
+    .label = Pesquisas em alta
+    .description = Tópicos populares e pesquisados com frequência
 newtab-custom-close-button = Fechar
 newtab-custom-settings = Gerenciar mais configurações
 
 ## New Tab Wallpapers
 
-newtab-wallpaper-title = Imagens de fundo
+newtab-wallpaper-title = Fundo de tela
 newtab-wallpaper-reset = Restaurar padrão
+newtab-wallpaper-upload-image = Enviar uma imagem
+newtab-wallpaper-custom-color = Escolher uma cor
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = A imagem excedeu o limite de tamanho de arquivo de { $file_size }MB. Tente enviar um arquivo menor.
+newtab-wallpaper-error-file-type = Não foi possível enviar o arquivo. Tente novamente com outro tipo de arquivo.
 newtab-wallpaper-light-red-panda = Panda vermelho
 newtab-wallpaper-light-mountain = Montanha branca
 newtab-wallpaper-light-sky = Céu com nuvens violeta e rosa
@@ -303,6 +342,8 @@ newtab-wallpaper-dark-panda = Panda vermelho escondido na floresta
 newtab-wallpaper-dark-sky = Paisagem de cidade com céu noturno
 newtab-wallpaper-dark-mountain = Paisagem com montanhas
 newtab-wallpaper-dark-city = Paisagem de cidade em tonalidade violeta
+newtab-wallpaper-dark-fox-anniversary = Uma raposa na rua perto de uma floresta
+newtab-wallpaper-light-fox-anniversary = Uma raposa em um campo gramado com uma paisagem montanhosa enevoada
 
 ## Solid Colors
 
@@ -332,8 +373,12 @@ newtab-wallpaper-abstract-purple = Formas em tons de roxo
 newtab-wallpaper-abstract-orange = Formas em tons de laranja
 newtab-wallpaper-gradient-orange = Gradiente laranja e rosa
 newtab-wallpaper-abstract-blue-purple = Formas em tons de azul e roxo
+newtab-wallpaper-abstract-white-curves = Branco com curvas sombreadas
+newtab-wallpaper-abstract-purple-green = Gradiente de luz roxo e verde
+newtab-wallpaper-abstract-blue-purple-waves = Formas onduladas em azul e roxo
+newtab-wallpaper-abstract-black-waves = Formas onduladas pretas
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = Fotos
 newtab-wallpaper-beach-at-sunrise = Praia ao ao nascer do sol
@@ -342,6 +387,12 @@ newtab-wallpaper-storm-sky = Céu de tempestade
 newtab-wallpaper-sky-with-pink-clouds = Céu com nuvens cor-de-rosa.
 newtab-wallpaper-red-panda-yawns-in-a-tree = Panda vermelho boceja em uma árvore
 newtab-wallpaper-white-mountains = Montanhas brancas
+newtab-wallpaper-hot-air-balloons = Cores variadas de balões de ar quente durante o dia
+newtab-wallpaper-starry-canyon = Noite estrelada azul
+newtab-wallpaper-suspension-bridge = Fotografia de ponte totalmente suspensa cinza durante o dia
+newtab-wallpaper-sand-dunes = Dunas de areia branca
+newtab-wallpaper-palm-trees = Silhueta de coqueiros durante o entardecer
+newtab-wallpaper-blue-flowers = Fotografia de perto de flores de pétalas azuis a desabrochar
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
@@ -357,6 +408,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = Celestial
+newtab-wallpaper-celestial-lunar-eclipse = Eclipse lunar
+newtab-wallpaper-celestial-earth-night = Foto noturna de órbita baixa da Terra
+newtab-wallpaper-celestial-starry-sky = Céu estrelado
+newtab-wallpaper-celestial-eclipse-time-lapse = Lapso de tempo de eclipse lunar
+newtab-wallpaper-celestial-black-hole = Ilustração de galáxia com buraco negro
+newtab-wallpaper-celestial-river = Imagem de satélite de rio
+
 ## New Tab Weather
 
 # Variables:
@@ -367,6 +431,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ Patrocinado
 newtab-weather-menu-change-location = Mudar local
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = Pesquisar local
+    .aria-label = Pesquisar local
 newtab-weather-change-location-search-input = Pesquisar local
 newtab-weather-menu-weather-display = Exibição do tempo
 # Display options are:
@@ -385,3 +452,131 @@ newtab-weather-menu-hide-weather = Ocultar tempo em nova aba
 newtab-weather-menu-learn-more = Saiba mais
 # This message is shown if user is working offline
 newtab-weather-error-not-available = Dados sobre o tempo não estão disponíveis no momento.
+
+## Topic Labels
+
+newtab-topic-label-business = Negócios
+newtab-topic-label-career = Carreira
+newtab-topic-label-education = Educação
+newtab-topic-label-arts = Entretenimento
+newtab-topic-label-food = Alimentação
+newtab-topic-label-health = Saúde
+newtab-topic-label-hobbies = Jogos
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = Dinheiro
+newtab-topic-label-society-parenting = Criação dos filhos
+newtab-topic-label-government = Política
+newtab-topic-label-education-science = Ciências
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = Aperfeiçoamento pessoal
+newtab-topic-label-sports = Esportes
+newtab-topic-label-tech = Tecnologia
+newtab-topic-label-travel = Viagens
+newtab-topic-label-home = Casa e jardim
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = Selecione tópicos para ajustar seu feed
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = Escolha dois ou mais tópicos. Nossos consultores especializados priorizam histórias adaptadas aos seus interesses. Atualize quando quiser.
+newtab-topic-selection-save-button = Salvar
+newtab-topic-selection-cancel-button = Cancelar
+newtab-topic-selection-button-maybe-later = Talvez mais tarde
+newtab-topic-selection-privacy-link = Saiba como protegemos e gerenciamos dados
+newtab-topic-selection-button-update-interests = Atualize seus interesses
+newtab-topic-selection-button-pick-interests = Escolha seus interesses
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = Seguir
+newtab-section-following-button = Seguindo
+newtab-section-unfollow-button = Parar de seguir
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = Personalize seu canal de notícias
+newtab-section-follow-highlight-subtitle = Siga o que você se interessa para aparecer mais do que você gosta.
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = Bloquear
+newtab-section-blocked-button = Bloqueado
+newtab-section-unblock-button = Desbloquear
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = Agora não
+newtab-section-confirm-block-topic-p1 = Tem certeza que quer bloquear este tópico?
+newtab-section-confirm-block-topic-p2 = Tópicos bloqueados não aparecerão mais no seu canal de informações.
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = Bloquear { $topic }
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = Tópicos
+newtab-section-manage-topics-button-v2 =
+    .label = Gerenciar tópicos
+newtab-section-mangage-topics-followed-topics = Seguido
+newtab-section-mangage-topics-followed-topics-empty-state = Você ainda não seguiu nenhum tópico.
+newtab-section-mangage-topics-blocked-topics = Bloqueado
+newtab-section-mangage-topics-blocked-topics-empty-state = Você ainda não bloqueou nenhum tópico.
+newtab-custom-wallpaper-title = Agora você pode usar fundos de tela personalizados
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = Envie seu próprio fundo de tela ou escolha uma cor personalizada para deixar o { -brand-product-name } do seu jeito.
+newtab-custom-wallpaper-cta = Experimentar
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = Instale o { -brand-product-name } para dispositivos móveis
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = Capture o código para navegar com segurança em qualquer lugar.
+newtab-download-mobile-highlight-body-variant-b = Continue de onde parou ao sincronizar suas abas, senhas e muito mais.
+newtab-download-mobile-highlight-body-variant-c = Sabia que você pode levar o { -brand-product-name } para qualquer lugar? O mesmo navegador. No seu bolso.
+newtab-download-mobile-highlight-image =
+    .aria-label = Código QR para instalar o { -brand-product-name } de dispositivos móveis
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = Por que você está relatando isto?
+newtab-report-ads-reason-not-interested =
+    .label = Não estou interessado
+newtab-report-ads-reason-inappropriate =
+    .label = É inapropriado
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = Já vi isso demais.
+newtab-report-content-wrong-category =
+    .label = Categoria errada
+newtab-report-content-outdated =
+    .label = Desatualizado
+newtab-report-content-inappropriate-offensive =
+    .label = Impróprio ou ofensivo
+newtab-report-content-spam-misleading =
+    .label = Spam ou enganoso
+newtab-report-cancel = Cancelar
+newtab-report-submit = Enviar
+newtab-toast-thanks-for-reporting =
+    .message = Obrigado por informar isto.
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Em alta no Google
+newtab-trending-searches-show-trending =
+    .title = Mostrar pesquisas em alta
+newtab-trending-searches-hide-trending =
+    .title = Ocultar pesquisas em alta
+newtab-trending-searches-learn-more = Saiba mais
+newtab-trending-searches-dismiss = Ocultar pesquisas em alta
+# "Trending searches refers to popular searches from search engines
+newtab-trending-searches-title = Pesquisas em alta

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = 다운로드
 appmenuitem-passwords =
     .label = 비밀번호
+appmenuitem-extensions-and-themes =
+    .label = 확장 기능 및 테마
+appmenuitem-extensions =
+    .label = 확장 기능
 appmenuitem-addons-and-themes =
     .label = 부가 기능 및 테마
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 전체 화면
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Sync에 로그인…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = 다른 기기의 탭 목록을 보려면 �
 appmenu-remote-tabs-opensettings =
     .label = 설정
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 다른 기기에서도 여기에서 열린 탭을 사용하시겠습니까?
 appmenu-remote-tabs-connectdevice =
     .label = 다른 기기 연결
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = 데이터 동기화 및 저장
 appmenu-fxa-signed-in-label = 로그인
 appmenu-fxa-setup-sync =
     .label = 동기화 켜기…
+appmenu-fxa-setup-sync-new = 켜기
 appmenuitem-save-page =
     .label = 페이지를 다른 이름으로 저장…
+appmenuitem-fxa-sync-off-title = 동기화 꺼짐
+appmenuitem-fxa-sync-off-description = 어디서나 북마크, 비밀번호 등을 보호하고 접근하세요.
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = 새 기능 알림
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -189,6 +196,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = { -brand-shorter-name }의 오디오 및 비디오 버그를 조사하기 위한 프리셋입니다.
 profiler-popup-presets-media-label =
     .label = 미디어
+profiler-popup-presets-ml-description = { -brand-shorter-name }의 기계 학습 버그를 조사하기 위한 프리셋입니다.
+profiler-popup-presets-ml-label =
+    .label = 기계 학습
 profiler-popup-presets-networking-description = { -brand-shorter-name }의 네트워킹 버그를 조사하기 위한 프리셋입니다.
 profiler-popup-presets-networking-label =
     .label = 네트워킹
@@ -235,7 +245,7 @@ appmenu-help-more-troubleshooting-info =
 appmenu-help-report-site-issue =
     .label = 사이트 문제 보고…
 appmenu-help-share-ideas =
-    .label = 아이디어 공유 및 의견 보내기…
+    .label = 아이디어 및 의견 공유…
     .accesskey = S
 appmenu-help-switch-device =
     .label = 새 기기로 전환
@@ -277,5 +287,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 데이터 유출 알림 받기
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = 실제 이메일과 전화를 가리세요
+appmenuitem-services-relay-description = 이메일 가리기 대시보드 실행
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = 온라인 활동을 보호하세요
+appmenu-services-header = 내 서비스
+appmenu-other-protection-header = { -vendor-short-name }의 다른 보호 도구를 사용해 보세요:
+
+## Profiles panel
+
+appmenu-other-profiles = 다른 프로필
+appmenu-manage-profiles =
+    .label = 프로필 관리
+appmenu-create-profile =
+    .label = 새 프로필
+appmenu-edit-profile =
+    .aria-label = 프로필 편집
+appmenu-profiles-2 =
+    .label = 프로필

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ neterror-blocked-by-policy-page-title = Blockierte Seite
 neterror-captive-portal-page-title = Anmeldung beim Netzwerk
 neterror-dns-not-found-title = Server nicht gefunden
 neterror-malformed-uri-page-title = Ungültige Adresse
+general-body-title = Seien Sie vorsichtig. Irgendetwas stimmt hier nicht.
+problem-with-this-site-title = Anscheinend gibt es ein Problem mit dieser Website
 
 ## Error page actions
 
@@ -41,6 +43,9 @@ neterror-generic-error = { -brand-short-name } konnte die Seite aus unbekanntem 
 neterror-load-error-try-again = Die Website könnte vorübergehend nicht erreichbar sein, versuchen Sie es bitte später nochmals.
 neterror-load-error-connection = Wenn Sie auch keine andere Website aufrufen können, überprüfen Sie bitte die Netzwerk-/Internetverbindung.
 neterror-load-error-firewall = Wenn Ihr Computer oder Netzwerk von einer Firewall oder einem Proxy geschützt wird, stellen Sie bitte sicher, dass { -brand-short-name } auf das Internet zugreifen darf.
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = Wenn Sie versuchen, eine Seite im lokalen Netzwerk zu laden, überprüfen Sie bitte, ob { -brand-short-name } in den macOS-Datenschutz- & -Sicherheitseinstellungen die Berechtigung "Lokales Netzwerk" erhalten hat.
+neterror-http-error-page = Vergewissern Sie sich, dass Sie die Adresse der Website richtig eingegeben haben.
 neterror-captive-portal = Sie müssen sich bei dem Netzwerk anmelden, um auf das Internet zugreifen zu können.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -49,6 +54,10 @@ neterror-dns-not-found-hint-header = <strong>Wenn Sie die richtige Adresse einge
 neterror-dns-not-found-hint-try-again = Versuchen Sie es später erneut.
 neterror-dns-not-found-hint-check-network = Überprüfen Sie Ihre Netzwerkverbindung.
 neterror-dns-not-found-hint-firewall = Überprüfen Sie, ob { -brand-short-name } die Berechtigung hat, auf das Internet zuzugreifen (Sie sind möglicherweise verbunden, aber hinter einer Firewall).
+neterror-dns-not-found-offline-hint-header = <strong>Was können Sie dagegen tun?</strong>
+neterror-dns-not-found-offline-hint-different-device = Versuchen Sie, auf einem anderen Gerät eine Verbindung herzustellen.
+neterror-dns-not-found-offline-hint-modem = Überprüfen Sie Ihr Modem oder den Router.
+neterror-dns-not-found-offline-hint-reconnect = Trennen Sie die WLAN-Verbindung und stellen Sie die Verbindung wieder her.
 
 ## TRR-only specific messages
 ## Variables:
@@ -64,6 +73,7 @@ neterror-dns-not-found-trr-offline = Sie sind nicht mit dem Internet verbunden.
 neterror-dns-not-found-trr-unknown-host2 = Diese Website wurde nicht von { $trrDomain } gefunden.
 neterror-dns-not-found-trr-server-problem = Es gab ein Problem mit { $trrDomain }.
 neterror-dns-not-found-bad-trr-url = Ungültige Adresse.
+neterror-dns-not-found-system-sleep = Das System befindet sich im Ruhezustand.
 neterror-dns-not-found-trr-unknown-problem = Unerwartetes Problem.
 
 ## Native fallback specific messages
@@ -95,6 +105,9 @@ neterror-proxy-connect-failure-settings = Überprüfen Sie bitte, ob die Proxy-E
 neterror-proxy-connect-failure-contact-admin = Kontaktieren Sie bitte Ihren Netzwerk-Administrator, um sicherzustellen, dass der Proxy-Server funktioniert
 neterror-content-encoding-error = Kontaktieren Sie bitte den Inhaber der Website, um ihn über dieses Problem zu informieren.
 neterror-unsafe-content-type = Bitte kontaktieren Sie die Webseitenbetreiber, um sie über dieses Problem zu informieren.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = { -brand-short-name } vertraut { $hostname } nicht, weil die Verbindung nicht sicher ist. Versuchen Sie, die URL in HTTPS zu ändern.
 neterror-nss-failure-not-verified = Die Website kann nicht angezeigt werden, da die Authentizität der erhaltenen Daten nicht verifiziert werden konnte.
 neterror-nss-failure-contact-website = Kontaktieren Sie bitte den Inhaber der Website, um ihn über dieses Problem zu informieren.
 # Variables:
@@ -147,3 +160,11 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = Falls Sie mit <b>{ $mitm }<
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> verwendet eine Sicherheitstechnologie namens "HTTP Strict Transport Security (HSTS)", durch welche { -brand-short-name } nur über gesicherte Verbindungen mit der Website verbinden darf. Daher kann keine Ausnahme für die Website hinzugefügt werden.
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = Wahrscheinlich nichts, da es wahrscheinlich ein Problem mit der Website selbst gibt.
+certerror-blocked-by-corp-headers-description = Manchmal schützen Websites sich selbst und Personen wie Sie vor unerwünschten Interaktionen mit anderen Websites.
+certerror-coop-learn-more = Weitere Informationen über Cross Origin Opener Policies (COOP)
+certerror-coep-learn-more = Weitere Informationen über Cross Origin Embedder Policies (COEP)
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = Fehlercode: { $responsestatus } { $responsestatustext }

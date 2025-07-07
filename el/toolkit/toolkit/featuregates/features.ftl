@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,8 +22,8 @@ experimental-features-devtools-compatibility-panel =
 experimental-features-devtools-compatibility-panel-description = Ένας πλευρικός πίνακας για την Επιθεώρηση σελίδας που εμφανίζει πληροφορίες που περιγράφουν την κατάσταση συμβατότητας μεταξύ προγραμμάτων περιήγησης της εφαρμογής σας. Δείτε το <a data-l10n-name="bugzilla">σφάλμα 1584464 </a> για περισσότερες λεπτομέρειες.
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-none-requires-secure2 =
-    .label = Cookies: Το SameSite=None απαιτεί την ιδιότητα «secure»
-experimental-features-cookie-samesite-none-requires-secure2-description = Τα cookie με την ιδιότητα «SameSite=None» απαιτούν την ιδιότητα «secure». Αυτή η λειτουργία απαιτεί το «Cookies: SameSite=Lax από προεπιλογή».
+    .label = Cookie: Το SameSite=None απαιτεί την ιδιότητα «secure»
+experimental-features-cookie-samesite-none-requires-secure2-description = Τα cookie με την ιδιότητα «SameSite=None» απαιτούν την ιδιότητα «secure». Αυτή η λειτουργία απαιτεί το «Cookie: SameSite=Lax από προεπιλογή».
 # about:home should be kept in English, as it refers to the the URI for
 # the internal default home page.
 experimental-features-abouthome-startup-cache =

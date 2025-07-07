@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,14 +40,18 @@ inactive-css-placeholder-pseudo-element-not-supported = ::placeholder 伪元素�
 inactive-css-property-because-of-display = 由于其有 <strong>{ $display }</strong> 的 display 属性，<strong>{ $property }</strong> 对此元素没有影响。
 inactive-css-not-display-block-on-floated = 由于是 <strong>floated</strong> 元素，引擎已将 <strong>display</strong> 值更改为 <strong>block</strong>。
 inactive-css-not-display-block-on-floated-2 = 由于是 <strong>floated</strong> 元素，引擎已将 <strong>display</strong> 值更改为 <strong>{ $display }</strong>。
+inactive-css-only-non-grid-or-flex-item = 由于不能用于网格和弹性项目，<strong>{ $property }</strong> 并未生效。
+inactive-css-not-block = 由于仅适用于块级元素，<strong>{ $property }</strong> 对此元素无效。
 inactive-css-not-floated = 由于仅适用于浮动元素，<strong>{ $property }</strong> 并未生效。
 inactive-css-property-is-impossible-to-override-in-visited = 由于 <strong>:visited</strong> 的限制，无法覆盖 <strong>{ $property }</strong>。
 inactive-css-position-property-on-unpositioned-box = 由于不是定位元素，<strong>{ $property }</strong> 对此元素无效。
 inactive-css-only-replaced-elements = <strong>{ $property }</strong> 对此元素无效，因为其只能对可替换元素应用。
 inactive-text-overflow-when-no-overflow = 由于未设置 <strong>overflow:hidden</strong>，<strong>{ $property }</strong> 对此元素无效。
+inactive-css-no-size-containment = 由于没有尺寸局限，<strong>{ $property }</strong> 对此元素无效。
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> 对内部表格元素无影响。
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> 对内部表格元素（表格单元格除外）无影响。
 inactive-css-not-table = 由于不是表格项目，<strong>{ $property }</strong> 对此元素无效。
+inactive-css-collapsed-table-borders = 由于此表格含合并边框，<strong>{ $property }</strong> 对此元素无效。
 inactive-css-not-table-cell = 由于不是单元格，<strong>{ $property }</strong> 对此元素无效。
 inactive-scroll-padding-when-not-scroll-container = 由于不会滚动，<strong>{ $property }</strong> 对此元素无效。
 inactive-css-border-image = 由于父表格元素的 <strong>border-collapse</strong> 已设为 <strong>collapse</strong>，无法应用至内部表格元素，<strong>{ $property }</strong> 对此元素无效。
@@ -55,8 +59,13 @@ inactive-css-resize = <strong>{ $property }</strong> 对此元素无效，因为
 inactive-css-ruby-element = <strong>{ $property }</strong> 对此 ruby 元素无效。此元素大小由 ruby 字体大小决定。
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain how
-## the problem can be solved.
+## an icon. When this icon is hovered this message is displayed to explain why
+## the property is not applied.
+## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
+## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
+## Variables:
+##   $property (string) - A CSS property name e.g. "color".
+##   $display (string) - A CSS display value e.g. "inline-block".
 
 inactive-css-highlight-pseudo-elements-not-supported = 强调（highlight）目的的伪元素上不支持 <strong>{ $property }</strong>。
 inactive-css-cue-pseudo-element-not-supported = ::cue 伪元素不支持 <strong>{ $property }</strong>。
@@ -85,10 +94,13 @@ inactive-css-not-inline-or-tablecell-fix = 请尝试添加 <strong>display:inlin
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = 请尝试添加 <strong>display:inline-block</strong> 或 <strong>display:block</strong>。{ learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = 请尝试添加 <strong>display:inline-block</strong>。{ learn-more }
 inactive-css-not-display-block-on-floated-fix = 请尝试移除 <strong>float</strong> 或添加 <strong>display:block</strong>。{ learn-more }
+inactive-css-only-non-grid-or-flex-item-fix = 请尝试将此元素所属容器的 <strong>display</strong> 值更改为 <strong>flex</strong>、<strong>grid</strong>、<strong>inline-flex</strong>、<strong>inline-grid</strong> 以外的值，或是移除 <strong>float</strong> 属性。{ learn-more }
+inactive-css-not-block-fix = 请尝试添加 <strong>display:block</strong> 或 <strong>float:left</strong> 等属性。{ learn-more }
 inactive-css-not-floated-fix = 请尝试添加 <strong>float</strong> 属性，使用 <strong>none</strong> 以外的值。{ learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = 请尝试将其 <strong>position</strong> 属性设为非 <strong>static</strong> 的值。{ learn-more }
 inactive-css-only-replaced-elements-fix = 请确保您在对可替换元素添加此属性。{ learn-more }
 inactive-text-overflow-when-no-overflow-fix = 请尝试添加 <strong>overflow:hidden</strong>。{ learn-more }
+inactive-css-no-size-containment-fix = 请尝试将其 <strong>display</strong> 属性设为 <strong>none</strong>、<strong>contents</strong>、<strong>table</strong> 和 <strong>inline-table</strong> 以外的值，并确认其不在表格和 ruby 段落中。{ learn-more }
 inactive-css-not-for-internal-table-elements-fix = 请尝试将其 <strong>display</strong> 设为 <strong>table-cell</strong>、<strong>table-column</strong>、<strong>table-row</strong>、<strong>table-column-group</strong>、<strong>table-row-group</strong> 或 <strong>table-footer-group</strong> 以外的值。{ learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = 请尝试将其 <strong>display</strong> 设为 <strong>table-column</strong>、<strong>table-row</strong>、<strong>table-column-group</strong>、<strong>table-row-group</strong> 或 <strong>table-footer-group</strong> 以外的值。{ learn-more }
 inactive-css-not-table-fix = 请尝试添加 <strong>display:table</strong> 或 <strong>display:inline-table</strong>。{ learn-more }

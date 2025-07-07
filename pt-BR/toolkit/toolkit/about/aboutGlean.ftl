@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,11 @@ glean-debug-ping-viewer-brand-name = Visor de ping de debugo do { -glean-brand-n
 about-glean-page-title2 = Sobre o { -glean-brand-name }
 about-glean-header = Sobre o { -glean-brand-name }
 about-glean-interface-description = O <a data-l10n-name="glean-sdk-doc-link">{ glean-sdk-brand-name }</a> é uma biblioteca de coleta de dados usada em projetos da { -vendor-short-name }. Esta interface foi projetada para ser usada por desenvolvedores e testadores para <a data-l10n-name="fog-link">testar instrumentação</a> manualmente.
+about-glean-category-about-glean = Informações sobre o { -glean-brand-name }
+about-glean-category-manual-testing = Testes manuais
+about-glean-category-adhoc-testing = Testes direcionados
+about-glean-category-profiler = Como usar o Profiler
+about-glean-category-about-data = Informações sobre dados
 about-glean-upload-enabled = O envio de dados está ativado.
 about-glean-upload-disabled = O envio de dados está desativado.
 about-glean-upload-enabled-local = O envio de dados está ativado apenas para enviar a um servidor local.
@@ -36,6 +41,9 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links =
+    Para uma explicação das diferentes formas de gravar e encontrar dados, consulte a aba
+    <strong>Informações sobre dados</strong>.
 about-glean-about-testing-header = Informações sobre testes
 # This message is followed by a numbered list.
 about-glean-manual-testing = Instruções completas estão documentadas na <a data-l10n-name="fog-instrumentation-test-doc-link">documentação de testes de instrumentação do { -fog-brand-name }</a> e na <a data-l10n-name="glean-sdk-doc-link">documentação do { glean-sdk-brand-name }</a>, mas, resumindo, para testar manualmente se sua instrumentação funciona, você deve:
@@ -66,8 +74,23 @@ about-glean-adhoc-note =
     Observe que você está usando a API Glean JS usando o console do devtools.
     Significa que a categoria e o nome da métrica são formatados em
     <code>camelCase</code>, diferente das APIs de Rust e C++.
+about-glean-profiler-explanation =
+    Para ter uma visão completa de todas as métricas gravadas, você pode usar o { -profiler-brand-name }.
+    Primeiro você deve <a data-l10n-name="firefox-profiler-link">capturar um profile de desempenho</a>.
+    Após capturar o profile, selecione <q>Gráfico de marcadores</q> e olhe para os marcadores em <q>Telemetry</q>.
+about-glean-profiler-explanation-profiler = No profile de desempenho, você pode ver todas as métricas coletadas, quando foram coletadas e exatamente quais valores foram coletados. Ao passar o mouse sobre marcadores individuais, pode-se verificar se o valor correto foi coletado e se a coleta aconteceu na hora certa.
 controls-button-label-verbose = Aplicar configurações e enviar ping
+about-glean-feedback-settings-only =
+    .message = Configurações aplicadas!
+about-glean-feedback-settings-and-ping =
+    .message = Configurações aplicadas e ping enviado!
 about-glean-about-data-header = Informações sobre dados
+about-glean-about-data-description = Existem algumas ferramentas diferentes que você pode usar para ver seus dados, dependendo do que está procurando.
+about-glean-about-data-description-list-intro = Consulte na lista abaixo casos de uso específicos de cada ferramenta:
+about-glean-about-data-list-item-dictionary = Para consultar a lista de dados coletados pelo { -glean-brand-name } por aplicativo, consulte o <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name }Dicionário</a>.
+about-glean-about-data-list-item-about-telemetry = Para consultar dados coletados pela telemetria legada, use <a data-l10n-name="about-telemetry-link">about:telemetry</a>.
+about-glean-about-data-list-item-debug-ping-viewer = Para consultar tags de debug, ver pings completos, acompanhar uma transmissão de evento ao vivo ou examinar visualizações de métricas, use o <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>.
+about-glean-about-data-list-item-firefox-profiler = Para gravar um profile de desempenho e ver todas as métricas registradas, use o <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
 about-glean-about-data-explanation =
     Para ver a lista de dados coletados, consulte o
     <a data-l10n-name="glean-dictionary-link">dicionário do { -glean-brand-name }</a>.

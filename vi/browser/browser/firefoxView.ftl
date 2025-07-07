@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,7 +24,7 @@ firefoxview-empty-state-icon =
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 firefoxview-just-now-timestamp = Vừa xong
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
-firefoxview-tabpickup-header = Các thẻ trên thiết bị khác
+firefoxview-tabpickup-header = Thẻ trên thiết bị khác
 firefoxview-tabpickup-description = Mở trang từ các thiết bị khác.
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% hoàn thành
 firefoxview-tabpickup-step-signin-header = Chuyển đổi liền mạch giữa các thiết bị
 firefoxview-tabpickup-step-signin-description = Để truy cập các thẻ điện thoại của bạn tại đây, trước tiên hãy đăng nhập hoặc tạo tài khoản.
 firefoxview-tabpickup-step-signin-primarybutton = Tiếp tục
+firefoxview-syncedtabs-signin-header-2 = { -brand-product-name } của riêng bạn trên tất cả các thiết bị
+firefoxview-syncedtabs-signin-description-2 = Để được xem các thẻ đang mở trên điện thoại và các thiết bị khác của bạn, hãy đăng nhập hoặc đăng ký tài khoản. Với tài khoản, bạn cũng có thể đồng bộ hoá mật khẩu, lịch sử của bạn và hơn thế nữa.
+firefoxview-syncedtabs-signin-primarybutton-2 = Đăng nhập
 firefoxview-syncedtabs-signin-header = Lấy các thẻ từ bất cứ đâu
 firefoxview-syncedtabs-signin-description = Để xem các thẻ của bạn từ bất cứ nơi nào bạn sử dụng { -brand-product-name }, hãy đăng nhập vào tài khoản của bạn. Nếu bạn chưa có tài khoản, chúng tôi sẽ hướng dẫn bạn các bước để đăng ký.
 firefoxview-syncedtabs-signin-primarybutton = Đăng nhập hoặc đăng ký
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Đồng bộ hóa { -brand-product-name
 firefoxview-tabpickup-adddevice-description = Tải xuống { -brand-product-name } cho điện thoại di động và đăng nhập vào đó.
 firefoxview-tabpickup-adddevice-learn-how = Tìm hiểu cách làm
 firefoxview-tabpickup-adddevice-primarybutton = Tải { -brand-product-name } dành cho điện thoại di động
+firefoxview-syncedtabs-adddevice-header-2 = Lấy các thẻ từ bất cứ đâu
+firefoxview-syncedtabs-adddevice-description-2 = Đăng nhập vào { -brand-product-name } trên điện thoại hoặc máy tính để xem các thẻ ở đây. Tìm hiểu cách <a data-l10n-name="url">kết nối thiết bị khác</a>.
 firefoxview-syncedtabs-adddevice-header = Đăng nhập vào { -brand-product-name } trên các thiết bị khác của bạn
 firefoxview-syncedtabs-adddevice-description = Để xem các thẻ của bạn từ bất cứ nơi nào bạn sử dụng { -brand-product-name }, đăng nhập trên tất cả các thiết bị của bạn. Tìm hiểu cách <a data-l10n-name="url">kết nối các thiết bị khác</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Thử { -brand-product-name } cho di động
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Thẻ từ thiết bị khác
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Xem tất cả
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Tìm kiếm thẻ đã đóng gần đây
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Tìm kiếm thẻ
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Tìm các thẻ đã đồng bộ
@@ -207,7 +215,7 @@ firefoxview-history-site-localhost = (tập tin cục bộ)
 firefoxview-show-all-history = Xem tất cả lịch sử
 firefoxview-view-more-browsing-history = Xem thêm lịch sử duyệt web
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Quay trở lại nơi bạn đã đến
 firefoxview-history-empty-description = Khi bạn duyệt, các trang bạn truy cập sẽ được hiển thị ở đây.
@@ -219,15 +227,17 @@ firefoxview-history-empty-description-two = Bảo vệ sự riêng tư của b�
 firefoxview-choose-browser-button = Chọn trình duyệt
     .title = Chọn trình duyệt
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Không có gì để hiển thị
 firefoxview-dont-remember-history-empty-description = Bảo vệ sự riêng tư của bạn là trọng tâm của những gì chúng tôi làm. Đó là lý do tại sao bạn có thể kiểm soát hoạt động mà { -brand-short-name } ghi nhớ.
 firefoxview-dont-remember-history-empty-description-two = Dựa trên cài đặt hiện tại của bạn, { -brand-short-name } không nhớ hoạt động của bạn khi bạn duyệt. Để thay đổi ý định, <a data-l10n-name="history-settings-url-two">hãy thay đổi cài đặt lịch sử của bạn để ghi nhớ lịch sử của bạn</a>.
+firefoxview-dont-remember-history-empty-header-2 = Bạn được quyền kiểm soát những gì { -brand-short-name } nhớ.
+firefoxview-dont-remember-history-empty-description-one = Hiện tại, { -brand-short-name } không nhớ hoạt động duyệt web của bạn. Để chỉnh tuỳ chọn này, <a data-l10n-name="history-settings-url-two">cập nhật cài đặt lịch sử</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Đóng
     .title = Đóng
@@ -237,7 +247,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Nhập lịch sử từ trình duyệt khác
 firefoxview-import-history-description = Đặt { -brand-short-name } làm trình duyệt mặc định của bạn. Nhập lịch sử duyệt web, dấu trang, và hơn thế nữa.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Đóng một thẻ quá sớm?
 firefoxview-recentlyclosed-empty-description = Tại đây, bạn sẽ tìm thấy các thẻ bạn đã đóng gần đây, vì vậy bạn có thể mở lại bất kỳ thẻ nào một cách nhanh chóng.

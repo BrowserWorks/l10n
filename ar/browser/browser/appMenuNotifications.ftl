@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = أهِمل
     .secondarybuttonaccesskey = ه
 appmenu-update-restart-message2 = ثبّت أحدث نسخة من { -brand-shorter-name }. ستُستعاد الألسنة والنوافذ المفتوحة.
+appmenu-theme-installed =
+    .secondarybuttonlabel = تراجع
+    .secondarybuttonaccesskey = ر
 appmenu-update-other-instance =
     .label = تعذّر تحديث { -brand-shorter-name } لآخر إصدارة تلقائيًا.
     .buttonlabel = مع ذلك، حدّث { -brand-shorter-name }
@@ -41,6 +44,12 @@ appmenu-addon-private-browsing-installed2 =
     .buttonlabel = حسنا
     .buttonaccesskey = ح
 appmenu-addon-post-install-message3 = أدِر الإضافات والسمات لديك عبر قائمة التطبيق.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = يُمكنك تحديث تصاريح وتفضيلات البيانات في أي وقت في <a data-l10n-name="settings-link">إعدادات الامتداد</a>.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = ثبّت الامتداد على شريط الأدوات
+    .accesskey = د
 appmenu-addon-post-install-incognito-checkbox =
     .label = اسمح لهذا الامتداد بأن يعمل في النوافذ الخاصة
     .accesskey = س

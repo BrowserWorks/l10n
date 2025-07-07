@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = Σχετικά με τα αρθρώματα
 installed-plugins-label = Εγκατεστημένα αρθρώματα
 no-plugins-are-installed-label = Δεν βρέθηκαν εγκατεστημένα αρθρώματα
 deprecation-description = Λείπει κάτι; Μερικά αρθρώματα δεν υποστηρίζονται πλέον. <a data-l10n-name="deprecation-link">Μάθετε περισσότερα.</a>
-deprecation-description2 =
-    .message = Λείπει κάτι; Μερικές πρόσθετες λειτουργίες δεν υποστηρίζονται πλέον.
 
 ## The information of plugins
 ##
@@ -25,10 +23,10 @@ version-dd = <span data-l10n-name="version">Έκδοση:</span> { $version }
 ## Variables:
 ##   $blockListState: show some special state of the plugin, such as blocked, outdated
 
-state-dd-enabled = <span data-l10n-name="state">Κατάσταση:</span> Ενεργό
-state-dd-enabled-block-list-state = <span data-l10n-name="state">Κατάσταση:</span> Ενεργό ({ $blockListState })
-state-dd-Disabled = <span data-l10n-name="state">Κατάσταση:</span> Ανενεργό
-state-dd-Disabled-block-list-state = <span data-l10n-name="state">Κατάσταση:</span> Ανενεργό ({ $blockListState })
+state-dd-enabled = <span data-l10n-name="state">Κατάσταση:</span> ενεργό
+state-dd-enabled-block-list-state = <span data-l10n-name="state">Κατάσταση:</span> ενεργό ({ $blockListState })
+state-dd-Disabled = <span data-l10n-name="state">Κατάσταση:</span> ανενεργό
+state-dd-Disabled-block-list-state = <span data-l10n-name="state">Κατάσταση:</span> ανενεργό ({ $blockListState })
 mime-type-label = Τύπος MIME
 description-label = Περιγραφή
 suffixes-label = Επιθέματα

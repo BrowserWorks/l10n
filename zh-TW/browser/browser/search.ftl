@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,3 +33,71 @@ searchbar-icon =
 removed-search-engine-message = <strong>您的預設搜尋引擎有變動。</strong>{ -brand-short-name } 已不再將 { $oldEngine } 作為預設搜尋引擎，現在起將以 { $newEngine } 做為新的預設搜尋引擎。若要改用其他的預設搜尋引擎，請到「設定」調整。<label data-l10n-name="remove-search-engine-article">了解更多</label>
 removed-search-engine-message2 = <strong>您的預設搜尋引擎有變動。</strong>{ -brand-short-name } 已不再將 { $oldEngine } 作為預設搜尋引擎，現在起將以 { $newEngine } 做為新的預設搜尋引擎。若要改用其他的預設搜尋引擎，請到「設定」調整。
 remove-search-engine-button = 確定
+
+## Infobar shown when default search engine is reset due to an issue reading the settings file.
+## Variables
+## $newEngine (String) - the name of the new default search engine.
+
+reset-search-settings-message = 由於技術問題，需將您的預設搜尋引擎改回 { $newEngine }。可到「設定」更改預設搜尋引擎。
+reset-search-settings-button = 確定
+
+## Infobar shown when user is prompted to install search engine.
+## Variables
+## $engineName (String) - the name of the search engine to install.
+
+install-search-engine = 要新增 { $engineName } 這套搜尋引擎嗎？
+install-search-engine-add = 新增
+install-search-engine-no = 不要
+
+## The following strings are used as input labels.
+
+add-engine-window =
+    .title = 新增搜尋引擎
+    .style = min-width: 32em;
+edit-engine-window =
+    .title = 編輯搜尋引擎
+    .style = min-width: 32em;
+add-engine-button = 新增自訂搜尋引擎
+add-engine-name = 搜尋引擎名稱
+add-engine-url2 = 網址（使用 %s 取代搜尋詞彙部分）
+add-engine-keyword2 = 關鍵字（選填）
+# POST and GET refer to the HTTP methods.
+add-engine-post-data = POST 資料（使用 %s 取代搜尋詞彙部分，若使用 GET 方法請留空）
+add-engine-suggest-url = 搜尋建議網址（使用 %s 取代搜尋詞彙部分，選填）
+
+## The following placeholders are shown in the inputs when adding a new engine.
+
+add-engine-name-placeholder =
+    .placeholder = 例如：BrowserWorks Developer Network
+add-engine-url-placeholder =
+    .placeholder = 例如：https://developer.mozilla.com/search?q=%s
+add-engine-keyword-placeholder =
+    .placeholder = 例如：@mdn
+
+## The following strings are used as error messages.
+
+add-engine-keyword-exists = 該關鍵字已被使用，請改用其他關鍵字。
+add-engine-name-exists = 該名稱已被使用，請改用其他名稱。
+add-engine-no-name = 請輸入名稱。
+add-engine-no-url = 請輸入網址。
+add-engine-invalid-url = 網址看起來不正確，請確認後再試一次。
+add-engine-invalid-protocol = 網址看來不正確，請使用以 http 或 https 開頭的網址。
+# This error is shown when the user typed URL is missing %s.
+add-engine-missing-terms-url = 請將 %s 放置於搜尋詞彙的位置，搜尋時就會自動取代。
+# This error is shown when the user typed post data is missing %s.
+add-engine-missing-terms-post-data = 請將 %s 放置於搜尋詞彙的位置，搜尋時就會自動取代。
+
+## The following strings are used as labels for the dialog's buttons.
+
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+add-engine-dialog2 =
+    .buttonlabelaccept = 新增搜尋引擎
+    .buttonaccesskeyaccept = A
+    .buttonlabelextra1 = 進階
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+edit-engine-dialog =
+    .buttonlabelaccept = 儲存搜尋引擎
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra1 = 進階

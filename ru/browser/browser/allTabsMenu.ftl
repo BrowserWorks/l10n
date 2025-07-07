@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,3 +16,15 @@ all-tabs-menu-close-duplicate-tabs =
     .label = Закрыть дублирующиеся вкладки
 all-tabs-menu-close-all-duplicate-tabs =
     .label = Закрыть все дублирующиеся вкладки
+all-tabs-menu-synced-tabs =
+    .label = Вкладки с других устройств
+# "Recent" refers to tab groups being sorted in recently used order. We show up
+# to five of these in this section.
+all-tabs-menu-recent-tab-groups-header = Недавние группы вкладок
+all-tabs-menu-current-window-header = Текущее окно
+# This opens the sub view listing _all_ open and saved tab groups.
+all-tabs-menu-tab-groups-show-all =
+    .label = Показать все
+# This is header for the sub view listing _all_ open and saved tab groups.
+all-tabs-menu-tab-groups-sub-view =
+    .title = Группы вкладок

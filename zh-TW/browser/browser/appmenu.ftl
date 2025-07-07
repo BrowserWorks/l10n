@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = 下載項目
 appmenuitem-passwords =
     .label = 密碼
+appmenuitem-extensions-and-themes =
+    .label = 擴充套件和佈景主題
+appmenuitem-extensions =
+    .label = 擴充套件
 appmenuitem-addons-and-themes =
     .label = 附加元件與佈景主題
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 全螢幕
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = 登入進行同步…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = 開啟分頁同步功能以檢視您其他�
 appmenu-remote-tabs-opensettings =
     .label = 選項
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 想在這裡看到您其他裝置上開啟的分頁嗎？
 appmenu-remote-tabs-connectdevice =
     .label = 連結其他裝置
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = 同步並儲存資料
 appmenu-fxa-signed-in-label = 登入
 appmenu-fxa-setup-sync =
     .label = 開啟同步…
+appmenu-fxa-setup-sync-new = 開啟
 appmenuitem-save-page =
     .label = 另存新檔…
+appmenuitem-fxa-sync-off-title = Sync 已關閉
+appmenuitem-fxa-sync-off-description = 保護並從任何裝置存取您的書籤、密碼與其他資訊。
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = 有新功能推出時通知我
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -189,6 +196,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = 於 { -brand-shorter-name } 診斷影音 Bug 時的預設值。
 profiler-popup-presets-media-label =
     .label = 媒體
+profiler-popup-presets-ml-description = 於 { -brand-shorter-name } 診斷機器學習 Bug 時的預設值。
+profiler-popup-presets-ml-label =
+    .label = 機器學習
 profiler-popup-presets-networking-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值。
 profiler-popup-presets-networking-label =
     .label = 網路連線
@@ -277,5 +287,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 獲得資料外洩警報
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = 隱藏您的實際信箱與電話號碼
+appmenuitem-services-relay-description = 啟動轉寄信箱儀錶板
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = 保護您的線上行為隱私
+appmenu-services-header = 我的服務
+appmenu-other-protection-header = 試用來自 { -vendor-short-name } 的其他保護工具：
+
+## Profiles panel
+
+appmenu-other-profiles = 其他設定檔
+appmenu-manage-profiles =
+    .label = 管理設定檔
+appmenu-create-profile =
+    .label = 新增設定檔
+appmenu-edit-profile =
+    .aria-label = 編輯設定檔
+appmenu-profiles-2 =
+    .label = 設定檔

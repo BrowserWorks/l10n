@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,8 @@ about-logging-set-log-file = Ange loggfil
 about-logging-set-log-modules = Ange loggmoduler
 about-logging-start-logging = Starta loggning
 about-logging-stop-logging = Stoppa loggning
+about-logging-copy-as-url = Kopiera aktuella inställningar som URL
+about-logging-url-copied = Logginställningar kopierade till urklipp som en förinställd URL
 about-logging-buttons-disabled = Loggning konfigurerad via miljövariabler, dynamisk konfiguration inte tillgänglig.
 about-logging-some-elements-disabled = Loggning konfigurerad via URL, vissa konfigurationsalternativ är inte tillgängliga
 about-logging-info = Info:
@@ -27,6 +29,8 @@ about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Förinställning för loggar:
 about-logging-with-profiler-stacks-checkbox = Aktivera stackspårningar för loggmeddelanden
+about-logging-menu =
+    .title = Avancerade alternativ
 
 ## Logging presets
 
@@ -44,6 +48,10 @@ about-logging-preset-media-playback-label = Uppspelning av media
 about-logging-preset-media-playback-description = Logga moduler för att diagnostisera uppspelningsproblem av media (inte videokonferensproblem)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Logga moduler för att diagnostisera WebRTC-anrop
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Logga moduler för att diagnostisera problem med WebCodecs ljud/video-avkodare och kodare och bildavkodare
+about-logging-preset-ml-label = Maskininlärning
+about-logging-preset-ml-description = Logga moduler för att diagnostisera problem med maskininlärning
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Logga moduler för att diagnostisera WebGPU-problem
 about-logging-preset-gfx-label = Grafik
@@ -56,9 +64,7 @@ about-logging-preset-custom-description = Loggmoduler manuellt valda
 # Error handling
 about-logging-error = Fel:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Ogiltigt värde "{ $v }" för nyckeln "{ $k }"
 about-logging-unknown-logging-preset = Okänd förinställning av logg "{ $v }"
@@ -66,4 +72,30 @@ about-logging-unknown-profiler-preset = Okänd förinställning av profilering "
 about-logging-unknown-option = Okänt alternativ för about:logging "{ $k }"
 about-logging-configuration-url-ignored = Konfigurations-URL ignoreras
 about-logging-file-and-profiler-override = Det går inte att tvinga fram filutmatning och åsidosätta profileringsalternativ samtidigt
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Ett fel inträffade: { $errorText }
 about-logging-configured-via-url = Alternativ konfigurerat via URL
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-upload-question = Profildata har samlats in. Vill du spara eller ladda upp den?
+about-logging-save-button = Spara
+about-logging-upload-button = Ladda upp
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Sparad till { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Laddar upp profildata: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Överförd till <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Dela webbadress
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Ett fel inträffade vid uppladdning av profilen: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Ett fel inträffade när filen sparades: { $errorText }

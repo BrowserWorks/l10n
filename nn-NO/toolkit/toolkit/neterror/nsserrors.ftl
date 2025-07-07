@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -331,6 +331,7 @@ mozilla-pkix-error-invalid-integer-encoding = Tenaren spesifiserte eit sertifika
 mozilla-pkix-error-empty-issuer-name = Serveren presenterte eit sertifikat med eit tomt unikt utskrivarnamn.
 mozilla-pkix-error-additional-policy-constraint-failed = Ei ytterlegare policy-avgrensing mislykkast ved validering av dette sertifikatet.
 mozilla-pkix-error-self-signed-cert = Sertifikatet er ikkje tiltrudd fordi det er sjølvsignert.
+mozilla-pkix-error-issuer-no-longer-trusted = Sertifiseringsstyresmakta som skreiv ut sertifikatet vart mistrudd før sertifikatet vart skrive ut.
 xp-java-remove-principal-error = Klarte ikkje å fjerne kontohavar
 xp-java-delete-privilege-error = Klarte ikkje å slette privilegiet
 xp-java-cert-not-exists-error = Denne principalen har ikkje eit sertifikat

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,13 +40,18 @@ inactive-css-placeholder-pseudo-element-not-supported = <strong>{ $property }</s
 inactive-css-property-because-of-display = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil sein display-Wert <strong>{ $display }</strong> ist.
 inactive-css-not-display-block-on-floated = Der Wert <strong>display</strong> wurde automatisch auf den Wert <strong>block</strong> geändert, weil das Element auf <strong>float</strong> gesetzt wurde.
 inactive-css-not-display-block-on-floated-2 = Der Wert <strong>display</strong> wurde automatisch auf den Wert <strong>{ $display }</strong> geändert, weil das Element auf <strong>float</strong> gesetzt wurde.
+inactive-css-only-non-grid-or-flex-item = <strong>{ $property }</strong> hat keine Wirkung, da es nicht für Grid- oder Flex-Elemente verwendet werden kann.
+inactive-css-not-block = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, da es nur für Elemente auf Blockebene gilt.
+inactive-css-not-floated = <strong>{ $property }</strong> hat keine Wirkung, da es nur für Elemente mit float gilt.
 inactive-css-property-is-impossible-to-override-in-visited = <strong>{ $property }</strong> kann aufgrund der Einschränkung durch <strong>:visited</strong> nicht überschrieben werden.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es kein positioniertes Element ist.
 inactive-css-only-replaced-elements = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es nur auf ersetzte Elemente angewendet werden kann.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil <strong>overflow:hidden</strong> nicht gesetzt ist.
+inactive-css-no-size-containment = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es kein Größen-Containment hat.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> hat keine Wirkung auf interne Tabellenelemente.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> hat keine Wirkung auf interne Tabellenelemente außer Tabellenzellen.
 inactive-css-not-table = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es keine Tabelle ist.
+inactive-css-collapsed-table-borders = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, da es sich um eine Tabelle mit eingeklappten Rändern handelt.
 inactive-css-not-table-cell = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es keine Tabellenzelle ist.
 inactive-scroll-padding-when-not-scroll-container = <strong>{ $property }</strong> hat bei diesem Element keine Wirkung, weil es nicht scrollt.
 inactive-css-border-image = <strong>{ $property }</strong> hat keine Auswirkung auf dieses Element, da es nicht auf interne Tabellenelemente angewendet werden kann, bei denen auf dem übergeordneten Tabellenelement <strong>border-collapse</strong> auf <strong>collapse</strong> gesetzt ist.
@@ -54,8 +59,13 @@ inactive-css-resize = <strong>{ $property }</strong> hat bei diesem Element kein
 inactive-css-ruby-element = <strong>{ $property }</strong> hat keine Auswirkung auf dieses Element, da es sich um ein Ruby-Element handelt. Seine Größe wird durch die Schriftgröße des Ruby-Textes bestimmt.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain how
-## the problem can be solved.
+## an icon. When this icon is hovered this message is displayed to explain why
+## the property is not applied.
+## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
+## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
+## Variables:
+##   $property (string) - A CSS property name e.g. "color".
+##   $display (string) - A CSS display value e.g. "inline-block".
 
 inactive-css-highlight-pseudo-elements-not-supported = <strong>{ $property }</strong> wird bei Highlight-Pseudo-Elementen nicht unterstützt.
 inactive-css-cue-pseudo-element-not-supported = <strong>{ $property }</strong> wird bei ::cue-Pseudo-Elementen nicht unterstützt.
@@ -88,12 +98,17 @@ inactive-css-not-inline-or-tablecell-fix = Versuchen Sie, <strong>display:inline
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Versuchen Sie, <strong>display:inline-block</strong> oder <strong>display:block</strong> hinzuzufügen. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Versuchen Sie, <strong>display:inline-block</strong> hinzuzufügen. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Versuchen Sie, <strong>float</strong> zu entfernen oder <strong>display:block</strong> hinzuzufügen. { learn-more }
+inactive-css-only-non-grid-or-flex-item-fix = Versuchen Sie, den Wert von <strong>display</strong> des Containers des Elements auf etwas anderes als <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong>, oder <strong>inline-grid</strong> zu ändern, oder <strong>float</strong> zu entfernen. { learn-more }
+inactive-css-not-block-fix = Versuchen Sie, Eigenschaften wie <strong>display:block</strong> oder <strong>float:left</strong> hinzuzufügen. { learn-more }
+inactive-css-not-floated-fix = Versuchen Sie, die Eigenschaft <strong>float</strong> mit einem anderen Wert als <strong>none</strong> hinzuzufügen. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Versuchen Sie, die <strong>position</strong>-Eigenschaft auf etwas anderes als <strong>static</strong> zu setzen. { learn-more }
 inactive-css-only-replaced-elements-fix = Stellen Sie sicher, dass Sie die Eigenschaft zu einem ersetzten Element hinzufügen. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Versuchen Sie, <strong>overflow:hidden</strong> hinzuzufügen. { learn-more }
+inactive-css-no-size-containment-fix = Versuchen Sie, die <strong>display</strong>-Eigenschaft auf etwas anderes als <strong>none</strong>, <strong>contents</strong>, <strong>table</strong> oder <strong>inline-table</strong> zu setzen und stellen Sie sicher, dass es nicht innerhalb einer Tabelle oder eines Ruby-Segments ist. { learn-more }
 inactive-css-not-for-internal-table-elements-fix = Versuchen Sie, die <strong>display</strong>-Eigenschaft auf etwas anderes als <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> oder <strong>table-footer-group</strong> zu setzen. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Versuchen Sie, die <strong>display</strong>-Eigenschaft auf etwas anderes als <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> oder <strong>table-footer-group</strong> zu setzen. { learn-more }
 inactive-css-not-table-fix = Versuchen Sie, <strong>display:table</strong> oder <strong>display:inline-table</strong> hinzuzufügen. { learn-more }
+inactive-css-collapsed-table-borders-fix = Versuchen Sie, <strong>border-collapse:separate</strong> hinzuzufügen. { learn-more }
 inactive-css-not-table-cell-fix = Versuchen Sie, <strong>display:table-cell</strong> hinzuzufügen. { learn-more }
 inactive-scroll-padding-when-not-scroll-container-fix = Versuchen Sie, <strong>overflow:auto</strong>, <strong>overflow:scroll</strong> oder <strong>overflow:hidden</strong> hinzuzufügen. { learn-more }
 inactive-css-border-image-fix = Entfernen Sie auf dem übergeordneten Tabellenelement die Eigenschaft oder ändern Sie den Wert von <strong>border-collapse</strong> auf einen anderen Wert als <strong>collapse</strong>. { learn-more }

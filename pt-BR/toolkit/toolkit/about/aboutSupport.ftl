@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = Tipo
 support-addons-enabled = Ativado
 support-addons-version = Versão
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Local
 legacy-user-stylesheets-title = Folhas de estilo de usuário legadas
 legacy-user-stylesheets-enabled = Ativo
 legacy-user-stylesheets-stylesheet-types = Folhas de estilo
@@ -72,7 +76,7 @@ app-basics-multi-process-support = Janelas multiprocessadas
 app-basics-fission-support = Janelas do Fission
 app-basics-remote-processes-count = Processos remotos
 app-basics-enterprise-policies = Diretivas corporativas
-app-basics-location-service-key-google = Chave do Serviço de Localização do Google
+app-basics-location-service-key-google = Chave do serviço de localização do Google
 app-basics-safebrowsing-key-google = Chave do Google Safebrowsing
 app-basics-key-mozilla = Chave do serviço de localização da BrowserWorks
 app-basics-safe-mode = Modo de segurança
@@ -161,8 +165,8 @@ max-audio-channels = Máximo de Canais
 sample-rate = Taxa de amostragem preferida
 roundtrip-latency = Latência de ida e volta (desvio padrão)
 media-title = Mídia
-media-output-devices-title = Dispositivos de Saída
-media-input-devices-title = Dispositivos de Entrada
+media-output-devices-title = Dispositivos de saída
+media-input-devices-title = Dispositivos de entrada
 media-device-name = Nome
 media-device-group = Grupo
 media-device-vendor = Fabricante
@@ -181,6 +185,8 @@ media-capabilities-enumerate = Enumeração de banco de dados
 
 media-codec-support-sw-decoding = Decodificação de software
 media-codec-support-hw-decoding = Decodificação de hardware
+media-codec-support-sw-encoding = Codificação de software
+media-codec-support-hw-encoding = Codificação de hardware
 media-codec-support-codec-name = Nome do codec
 media-codec-support-supported = Suportado
 media-codec-support-unsupported = Não suportado
@@ -218,7 +224,7 @@ intl-regional-prefs = Preferências regionais
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -332,7 +338,7 @@ wmfvpxvideo-crash-guard = Decodificador de vídeo WMF VPX
 reset-on-next-restart = Redefinir na próxima reinicialização
 gpu-process-kill-button = Finalizar processo GPU
 gpu-device-reset = Redefinir dispositivo
-gpu-device-reset-button = Ativar a Redefinição de Dispositivo
+gpu-device-reset-button = Ativar a redefinição de dispositivo
 uses-tiling = Usa mosaicos
 content-uses-tiling = Usa mosaicos (conteúdo)
 off-main-thread-paint-enabled = Ativado o desenho fora do processo principal

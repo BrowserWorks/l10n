@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = 启用或禁用强制门户支持。
 policy-CertificatesDescription = 添加证书或使用内置的证书。
 policy-ContentAnalysis = 启用或禁用与数据泄露防护工具的连接。
 policy-Cookies = 允许或拒绝网站设置 Cookie。
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = 设置身份标签页相关策略。
 policy-DisableAccounts = 禁用基于账户的服务，包括同步。
 policy-DisabledCiphers = 禁用加密算法。
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = 阻止默认浏览器用户代理执行任�
 policy-DisableDeveloperTools = 阻止访问开发者工具。
 policy-DisableEncryptedClientHello = 禁用 TLS 功能“Encrypted Client Hello”（ECH）。
 policy-DisableFeedbackCommands = 禁用“帮助”菜单中的“发送反馈”命令（提交反馈和举报诈骗网站）。
-policy-DisableWaterfoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
+policy-DisableFirefoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = 禁用基于账户的服务，包括同步。
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = 禁用 Waterfox 的“截图”功能。
-policy-DisableWaterfoxStudies = 阻止 { -brand-short-name } 运行研究实验。
+policy-DisableFirefoxAccounts1 = 禁用基于账户的服务，包括同步。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 禁用 Waterfox 的“截图”功能。
+policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究实验。
 policy-DisableForgetButton = 阻止使用“抹去足迹”按钮。
 policy-DisableFormHistory = 不要记住搜索和表单的历史记录。
 policy-DisablePrimaryPasswordCreation = 若为 true，将无法创建主密码。
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 针对指定域�
 policy-Extensions = 安装，移除或锁定扩展。安装选项可将网址或路径作为参数。移除和锁定选项则需要扩展 ID 作为参数。
 policy-ExtensionSettings = 管理扩展的各种安装设置。
 policy-ExtensionUpdate = 启用或禁用扩展自动更新。
-policy-WaterfoxHome2 = 配置 { -firefox-home-brand-name }。
-policy-WaterfoxSuggest = 配置 { -firefox-suggest-brand-name }
+policy-FirefoxHome2 = 配置 { -firefox-home-brand-name }。
+policy-FirefoxSuggest = 配置 { -firefox-suggest-brand-name }
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 在地址栏输入单个词条时，强制导航至内部网站，而非进行网上搜索。
 policy-Handlers = 配置默认应用程序处理方式。
 policy-HardwareAcceleration = 若为 false，将会关闭硬件加速。
@@ -91,8 +91,8 @@ policy-LegacyProfiles = 禁用要求每个安装实例有不同用户配置文�
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
-policy-LegacySameSiteCookieBehaviorEnabled = 启用默认旧有 SameSite cookie 行为设置。
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 对指定的网站恢复旧有 SameSite cookie 行为。
+policy-LegacySameSiteCookieBehaviorEnabled = 启用默认旧有 SameSite Cookie 行为设置。
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 对指定的网站恢复旧有 SameSite Cookie 行为。
 
 ##
 
@@ -119,6 +119,7 @@ policy-Permissions2 = 配置摄像头、麦克风、位置、通知和自动播�
 policy-PictureInPicture = 启用或禁用画中画。
 policy-PopupBlocking = 默认允许特定网站显示弹出式窗口。
 policy-Preferences = 设置并锁定若干首选项的值。
+policy-PrivateBrowsingModeAvailability = 设置隐私浏览模式的可用性。
 policy-PromptForDownloadLocation = 下载前询问文件保存位置。
 policy-Proxy = 配置代理设置
 policy-RequestedLocales = 设置应用程序表明语言区域偏好的语言区域请求列表。
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = 启用或禁用搜索建议。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 添加或删除 PKCS #11 模块。
 policy-ShowHomeButton = 在工具栏显示“主页”按钮
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = 启动时不显示使用条款和隐私声明。通过启用此策略，您声明自己接受使用条款；若您将此浏览器提供给其他人使用，则还需确认自己有权代表所有相关个人接受使用条款。
 policy-SSLVersionMax = 设置最高 SSL 版本。
 policy-SSLVersionMin = 设置最低 SSL 版本。
 policy-StartDownloadsInTempDirectory = 强制下载至本地临时文件夹，而非默认下载路径。
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = 使用系统打印对话框打印。
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 阻止访问某些网站。参阅文档了解该格式的更多详情。
 policy-Windows10SSO = 允许面向 Microsoft 账户（个人/工作/学校）的 Windows 单点登录。
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = 允许面向 Microsoft Entra 账户的单点登录。

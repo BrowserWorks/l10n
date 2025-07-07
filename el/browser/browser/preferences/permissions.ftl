@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -69,7 +69,7 @@ permissions-capabilities-listitem-off-temporarily =
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Μη έγκυρο όνομα κεντρικού υπολογιστή
-permissions-invalid-uri-label = Παρακαλώ εισαγάγετε ένα έγκυρο όνομα κεντρικού υπολογιστή
+permissions-invalid-uri-label = Εισαγάγετε ένα έγκυρο όνομα κεντρικού υπολογιστή
 
 ## Exceptions - Tracking Protection
 

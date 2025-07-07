@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Sepia
     .title = Schemat kolorów sepii
 about-reader-color-scheme-auto = Auto
     .title = Automatyczny schemat kolorów
-about-reader-color-theme-light = Jasny
-    .title = Jasny motyw kolorów
-about-reader-color-theme-dark = Ciemny
-    .title = Ciemny motyw kolorów
-about-reader-color-theme-sepia = Sepia
-    .title = Motyw kolorów sepii
-about-reader-color-theme-auto = Auto
-    .title = Automatyczny motyw kolorów
-about-reader-color-theme-gray = Szary
-    .title = Szary motyw kolorów
-about-reader-color-theme-contrast = Kontrastowy
-    .title = Kontrastowy motyw kolorów
-about-reader-color-theme-custom = Inne kolory
-    .title = Inny motyw kolorów
 about-reader-color-light-theme = Jasny
     .title = Jasny motyw
 about-reader-color-dark-theme = Ciemny
@@ -50,7 +36,7 @@ about-reader-estimated-read-time =
        *[many] { $range } minut
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Zmniejsz rozmiar czcionki
@@ -75,7 +61,6 @@ about-reader-font-type-monospace = O stałej szerokości znaków
 
 about-reader-toolbar-close = Wygląd oryginalny
 about-reader-toolbar-type-controls = Czcionki
-about-reader-toolbar-color-controls = Kolory
 about-reader-toolbar-text-layout-controls = Tekst i układ
 about-reader-toolbar-theme-controls = Motyw
 about-reader-toolbar-savetopocket = Wyślij do { -pocket-brand-name }
@@ -100,10 +85,24 @@ about-reader-custom-colors-visited-links = Odwiedzone odnośniki
     .title = Zmień kolor
 about-reader-custom-colors-selection-highlight = Wyróżnianie do czytania na głos
     .title = Zmień kolor
-about-reader-custom-colors-reset-button = Przywróć domyślne
 about-reader-reset-button = Przywróć domyślne
+about-reader-custom-colors-foreground2 =
+    .label = Tekst
+    .title = Zmień kolor
+about-reader-custom-colors-background2 =
+    .label = Tło
+    .title = Zmień kolor
+about-reader-custom-colors-unvisited-links2 =
+    .label = Nieodwiedzone odnośniki
+    .title = Zmień kolor
+about-reader-custom-colors-visited-links2 =
+    .label = Odwiedzone odnośniki
+    .title = Zmień kolor
+about-reader-custom-colors-selection-highlight2 =
+    .label = Wyróżnianie do czytania na głos
+    .title = Zmień kolor
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Tekst
 about-reader-text-size-label = Rozmiar tekstu
@@ -120,9 +119,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Odstępy między wierszami
 about-reader-advanced-layout-header = Zaawansowany
-about-reader-slider-label-width-narrow = Wąska
-about-reader-slider-label-width-wide = Szeroka
-about-reader-slider-label-spacing-narrow = Wąskie
 about-reader-character-spacing-label =
     .label = Odstępy między znakami
 about-reader-word-spacing-label =
@@ -134,3 +130,5 @@ about-reader-text-alignment-center =
     .title = Wyrównaj tekst do środka
 about-reader-text-alignment-right =
     .title = Wyrównaj tekst do prawej
+about-reader-text-alignment-justify =
+    .title = Wyjustuj tekst

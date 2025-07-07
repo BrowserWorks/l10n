@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = 웹 사이트에 “추적 안 함” 신호를 보내서 추적을 원하지 않는다고 알림
+do-not-track-removal = "추적 안 함" 신호를 더 이상 지원하지 않음
 do-not-track-description2 =
     .label = 웹 사이트에 “추적 안 함” 요청 보내기
     .accesskey = d
@@ -137,6 +138,7 @@ windows-launch-on-login =
     .label = 컴퓨터가 시작될 때 자동으로 { -brand-short-name } 열기
     .accesskey = O
 windows-launch-on-login-disabled = 이 설정은 Windows에서 비활성화되었습니다. 변경하려면, 시스템 설정에서 <a data-l10n-name="startup-link">시작 프로그램</a>을 방문하세요.
+windows-launch-on-login-profile-disabled = “사용자 프로필 선택” 창에서 “{ profile-manager-use-selected.label }”에 체크하여 이 설정을 활성화하세요.
 startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = 북마크, 비밀번호, 기록 및 자
 preferences-data-migration-button =
     .label = 데이터 가져오기
     .accesskey = m
+preferences-profiles-header = 프로필
+preferences-manage-profiles-description = 각 프로필에는 기록, 비밀번호 등을 포함한 별도의 탐색 데이터와 설정이 있습니다.
+preferences-manage-profiles-learn-more = 더 알아보기
+preferences-manage-profiles-button =
+    .label = 프로필 관리
 tabs-group-header = 탭
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab 단축키로 최근 사용한 순서대로 탭 순환
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = 링크를 새 창 대신 새 탭에서 열기
     .accesskey = w
+ask-on-close-multiple-tabs =
+    .label = 여러 탭을 닫기 전에 묻기
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = { $quitKey } 단축키로 종료하기 전에 묻기
+    .accesskey = b
 confirm-on-close-multiple-tabs =
     .label = 여러 탭을 닫기 전에 확인
     .accesskey = m
@@ -198,8 +216,18 @@ containers-remove-alert-msg = 이 컨테이너를 삭제하면 { $count } 컨테
 containers-remove-ok-button = 이 컨테이너 삭제
 containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
 settings-tabs-show-image-in-preview =
-    .label = 탭 위로 마우스를 가져가면 이미지 미리 보기 표시
+    .label = 탭 위로 마우스를 올리면 이미지 미리 보기 표시
     .accessKey = h
+browser-layout-header = 브라우저 레이아웃
+browser-layout-horizontal-tabs =
+    .label = 가로 탭
+browser-layout-horizontal-tabs-desc = 브라우저 상단에 표시
+browser-layout-vertical-tabs =
+    .label = 세로 탭
+browser-layout-vertical-tabs-desc = 사이드바의 측면에 표시
+browser-layout-show-sidebar =
+    .label = 사이드바 표시
+browser-layout-show-sidebar-desc = 주 화면을 떠나지 않고 북마크, 휴대폰의 탭, AI 챗봇 등에 빠르게 접근하세요.
 
 ## General Section - Language & Appearance
 
@@ -223,6 +251,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = 대비 제어 설정이 웹 사이트 화면 배색보다 우선합니다.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = 선택한 색상이 웹 사이트 화면 배색보다 우선합니다. <a data-l10n-name="colors-link">색상 관리</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -231,6 +263,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = <a data-l10n-name="themes-link">확장 기능 및 테마</a>에서 { -brand-short-name } 테마 관리
+preferences-contrast-control-header = 대비 제어
+preferences-contrast-control-description = 웹 사이트는 다양한 전경색과 배경색을 가지고 있습니다. 가독성을 높이기 위해 웹 사이트에서 동일한 색상을 사용하도록 { -brand-short-name }를 구성합니다.
+preferences-contrast-control-use-platform-settings =
+    .label = 자동 (시스템 설정 사용)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = 끄기
+    .accesskey = O
+preferences-contrast-control-custom =
+    .label = 사용자 지정
+    .accesskey = C
 preferences-colors-header = 색상
 preferences-colors-description = 텍스트, 웹 사이트 배경 및 링크에 대한 { -brand-short-name }의 기본 색상을 재정의합니다.
 preferences-colors-manage-button =
@@ -262,7 +305,7 @@ choose-language-description = 웹 페이지를 표시할 기본 언어 선택
 choose-button =
     .label = 선택…
     .accesskey = o
-choose-browser-language-description = { -brand-short-name }가 메뉴, 메시지 및 알림을 표시하는데 사용할 언어를 선택하세요.
+choose-browser-language-description = { -brand-short-name }가 메뉴, 메시지 및 알림을 표시하는 데 사용할 언어를 선택하세요.
 manage-browser-languages-button =
     .label = 대체 설정…
     .accesskey = I
@@ -281,7 +324,7 @@ translate-exceptions =
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
-    .label = 날짜, 시간, 숫자 및 측정 단위에 운영 체제의 “{ $localeName }” 형식을 사용
+    .label = 날짜, 시간, 숫자 및 측정 단위에 운영 체제의 “{ $localeName }” 형식 사용
 check-user-spelling =
     .label = 입력할 때 맞춤법 검사
     .accesskey = t
@@ -306,6 +349,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = 파일을 저장할 위치를 항상 묻기
     .accesskey = A
+download-private-browsing-delete =
+    .label = 모든 사생활 보호 창이 닫힐 때, 사생활 보호 모드에서 다운로드한 파일 삭제
+    .accesskey = D
 applications-header = 애플리케이션
 applications-description = { -brand-short-name }가 웹에서 다운로드한 파일이나 탐색하는 동안에 사용하는 애플리케이션을 처리하는 방법을 선택하세요.
 applications-filter =
@@ -396,8 +442,8 @@ play-drm-content-learn-more = 더 알아보기
 update-application-title = { -brand-short-name } 업데이트
 update-application-description = { -brand-short-name }가 최상의 성능, 안정성, 보안을 유지할 수 있도록 최신 버전으로 유지하세요.
 # Variables:
-# $version (string) - Waterfox version
-update-application-version = 버전 { $version } <a data-l10n-name="learn-more">새 기능</a>
+# $version (string) - Firefox version
+update-application-version = { $version } 버전 <a data-l10n-name="learn-more">새 기능</a>
 update-history =
     .label = 업데이트 기록 보기…
     .accesskey = p
@@ -441,7 +487,7 @@ update-in-progress-cancel-button = 계속(&C)
 
 performance-title = 성능
 performance-use-recommended-settings-checkbox =
-    .label = 권장 설정을 사용
+    .label = 권장 설정 사용
     .accesskey = U
 performance-use-recommended-settings-desc = 이 설정은 컴퓨터 하드웨어 및 운영체제에 맞게 조정됩니다.
 performance-settings-learn-more = 더 알아보기
@@ -460,6 +506,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = 탐색
+browsing-group-label =
+    .aria-label = 탐색
 browsing-use-autoscroll =
     .label = 자동 스크롤 사용
     .accesskey = a
@@ -544,7 +592,7 @@ choose-bookmark =
     .label = 북마크 사용…
     .accesskey = B
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } 콘텐츠
 home-prefs-content-description2 = { -firefox-home-brand-name } 화면에서 원하는 콘텐츠를 선택하세요.
@@ -556,8 +604,7 @@ home-prefs-shortcuts-description = 저장하거나 방문한 사이트
 home-prefs-shortcuts-by-option-sponsored =
     .label = 스폰서 바로 가기
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = { $provider } 추천
@@ -595,6 +642,14 @@ home-prefs-weather-header =
     .label = 날씨
 home-prefs-weather-description = 오늘의 일기예보를 한눈에
 home-prefs-weather-learn-more-link = 더 알아보기
+home-prefs-trending-search-header =
+    .label = 인기 검색어
+home-prefs-trending-search-description = 인기 있고 자주 검색되는 주제
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = { -brand-product-name } 지원
+home-prefs-mission-message = 스폰서는 더 나은 웹을 만들려는 우리의 사명을 지원합니다
+home-prefs-mission-message-learn-more-link = 방법 알아보기
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -624,6 +679,10 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = 주소 표시줄 결과에 검색 제안 표시
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = 결과 페이지의 주소 표시줄에 검색어 표시
 # With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
@@ -655,6 +714,9 @@ search-remove-engine =
 search-add-engine =
     .label = 추가
     .accesskey = A
+search-edit-engine =
+    .label = 편집
+    .accesskey = E
 search-find-more-link = 검색 엔진 더 찾기
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -663,6 +725,13 @@ search-keyword-warning-title = 키워드 복사
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = "{ $name }"에서 이미 사용 중인 키워드를 선택했습니다. 다른 것을 선택하세요.
 search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드를 선택했습니다. 다른 것을 선택하세요.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = 이미 “{ $name }” 이름의 검색 엔진이 있습니다. 다른 이름을 선택해 주세요.
+remove-engine-confirmation = 이 검색 엔진을 제거하시겠습니까?
+remove-engine-remove = 제거
+remove-addon-engine-alert = 이 검색 엔진을 제거하려면 관련 부가 기능도 삭제하세요.
 
 ## Containers Section
 
@@ -680,7 +749,7 @@ containers-settings-button =
 containers-remove-button =
     .label = 삭제
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
@@ -698,7 +767,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = 모바일 기기와 동기화하려면 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Waterfox를 다운로드하세요.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 프로필 사진 변경
@@ -716,7 +785,7 @@ sync-manage-account = 계정 관리
     .accesskey = o
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } 은 아직 인증되지 않았습니다.
 sync-signedin-login-failure = { $email }으로 다시 연결하려면 로그인하세요
@@ -767,6 +836,9 @@ sync-currently-syncing-creditcards = 신용카드
 sync-currently-syncing-payment-methods = 결제 방법
 sync-currently-syncing-addons = 부가 기능
 sync-currently-syncing-settings = 설정
+sync-manage-options =
+    .label = 동기화 관리…
+    .accesskey = M
 sync-change-options =
     .label = 변경…
     .accesskey = C
@@ -819,6 +891,13 @@ sync-engine-settings =
     .label = 설정
     .tooltiptext = 변경한 일반, 개인 정보 및 보안 설정
     .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = 연결된 모든 기기에서 동기화 할 항목 관리
+    .style = min-width: 36em;
+    .buttonlabelaccept = 저장
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 연결끊기…
+    .buttonaccesskeyextra2 = D
 
 ## The device name controls.
 
@@ -839,7 +918,7 @@ sync-connect-another-device = 다른 기기 연결
 
 sync-verification-sent-title = 검증 이메일 보냄
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = { $email }로 검증 링크를 보냈습니다.
 sync-verification-not-sent-title = 검증 이메일을 보낼 수 없음
 sync-verification-not-sent-body = 지금 검증 이메일을 보낼 수 없습니다. 나중에 다시 시도하세요.
@@ -906,7 +985,7 @@ forms-primary-pw-use =
     .accesskey = U
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
-    .label = 비밀번호를 입력하고 관리하는데 기기 로그인 요구
+    .label = 비밀번호를 입력하고 관리하는 데 기기 로그인 요구
 forms-primary-pw-learn-more-link = 더 알아보기
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -924,22 +1003,22 @@ forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
 forms-master-pw-fips-desc = 비밀번호 변경 실패
 forms-windows-sso =
-    .label = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On을 허용
+    .label = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On 허용
 forms-windows-sso-learn-more-link = 더 알아보기
 forms-windows-sso-desc = 기기 설정에서 계정 관리
-windows-passkey-settings-label = 시스템 설정에서 암호 키 관리
+windows-passkey-settings-label = 시스템 설정에서 패스키 관리
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
+primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는 데 도움이 됩니다.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] 결제 방법 설정 변경
@@ -970,12 +1049,12 @@ history-header = 기록
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }가
     .accesskey = w
 history-remember-option-all =
@@ -1070,6 +1149,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = 주소 표시줄
 addressbar-suggest = 주소 표시줄에서 제안할 항목
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = 주소 표시줄 — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = 주소 표시줄에 나타나는 제안 유형을 선택하세요.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = 더 알아보기
 addressbar-locbar-history-option =
     .label = 방문 기록
     .accesskey = H
@@ -1102,7 +1188,18 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = 인기 검색어 제안 표시
     .accesskey = t
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = { -brand-short-name }의 제안
+addressbar-locbar-suggest-nonsponsored-desc = 사용자 검색과 관련된 웹 제안을 받으세요.
+addressbar-locbar-suggest-sponsored-option =
+    .label = 스폰서 제안
+addressbar-locbar-suggest-sponsored-desc = 가끔씩 스폰서 제안으로 { -brand-short-name }를 지원합니다.
 addressbar-quickactions-learn-more = 더 알아보기
+addressbar-dismissed-suggestions-label = 닫은 제안
+addressbar-restore-dismissed-suggestions-description = 스폰서와 { -brand-short-name }로부터 닫은 제안을 복원합니다.
+addressbar-restore-dismissed-suggestions-button =
+    .label = 복원
 
 ## Privacy Section - Content Blocking
 
@@ -1155,7 +1252,7 @@ content-blocking-known-and-suspected-fingerprinters = 알려지거나 의심되�
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
 # "Contains" here means "isolates", "limits".
-content-blocking-etp-standard-tcp-rollout-description = 전체 쿠키 보호는 사용자가 있는 사이트에 대한 쿠키가 포함되어 있으므로, 추적기가 사이트 간에 사용자를 팔로우하는데 쿠키를 사용할 수 없습니다.
+content-blocking-etp-standard-tcp-rollout-description = 전체 쿠키 보호는 사용자가 있는 사이트에 대한 쿠키가 포함되어 있으므로, 추적기가 사이트 간에 사용자를 팔로우하는 데 쿠키를 사용할 수 없습니다.
 content-blocking-etp-standard-tcp-rollout-learn-more = 더 알아보기
 content-blocking-etp-standard-tcp-title = 가장 강력한 개인 정보 보호 기능인 전체 쿠키 보호 포함
 content-blocking-warning-title = 주의하세요!
@@ -1265,17 +1362,42 @@ permissions-addon-exceptions =
 collection-header = { -brand-short-name } 데이터 수집과 사용
 collection-header2 = { -brand-short-name } 데이터 수집과 사용
     .searchkeywords = 원격 분석
+preferences-collection-description = 우리는 사용자에게 선택권을 제공하고 모두를 위해 { -brand-product-name }를 개선하는 데 필요한 최소한의 데이터만 수집하기 위해 노력합니다.
+preferences-collection-privacy-notice = 개인정보처리방침 보기
+preferences-across-profiles = 이 설정은 이 기기의 모든 { -brand-product-name } 프로필에 적용됩니다.
+preferences-view-profiles = 모든 프로필 보기
 collection-description = 저희는 사용자에게 선택권을 제공하고 모두를 위해 { -brand-short-name }를 제공하고 개선하는 데 필요한 정보만 수집하기 위해 노력합니다. 개인정보를 전송하기 전에 항상 사용자의 동의를 구합니다.
-collection-privacy-notice = 개인정보처리방침
+collection-privacy-notice = 개인정보 보호정책
 collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
+collection-usage-ping =
+    .label = { -vendor-short-name }에 일일 사용량 핑 보내기
+    .accesskey = U
+collection-usage-ping-description = { -vendor-short-name }가 활성 사용자를 예측하는 데 도움이 됩니다.
+collection-health-report2 =
+    .label = { -vendor-short-name }로 기술 및 상호 작용 데이터 보내기
+    .accesskey = r
 collection-health-report =
     .label = { -brand-short-name }가 기술 및 상호 작용 데이터를 { -vendor-short-name }에 전송하도록 허용
     .accesskey = r
 collection-health-report-link = 더 알아보기
+collection-health-report-description = { -brand-product-name }의 기능, 성능, 안정성을 개선하는 데 도움이 됩니다.
+collection-studies2 =
+    .label = 연구 설치 및 실행
+collection-studies-description = 기능과 아이디어가 공개되기 전에 미리 사용해 보세요.
 collection-studies =
     .label = { -brand-short-name }가 연구를 설치하고 실행하도록 허용
 collection-studies-link = { -brand-short-name } 연구 보기
+addon-recommendations2 =
+    .label = 개인화된 확장 기능 추천 허용
+addon-recommendations-description = 탐색 경험을 향상시키기 위한 확장 기능 추천을 받으세요.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = 이 빌드 구성에서는 데이터 보고를 하지 않습니다.
+collection-backlogged-crash-reports2 =
+    .label = 자동으로 충돌 보고서 제출
+    .accesskey = c
+collection-backlogged-crash-reports-description = { -vendor-short-name }가 브라우저의 문제를 진단하고 해결하는 데 도움이 됩니다. 보고서에는 개인 정보나 민감한 정보가 포함되어 있을 수 있습니다.
 addon-recommendations =
     .label = { -brand-short-name }가 개인화된 확장 기능 추천을 할 수 있도록 허용
 addon-recommendations-link = 더 알아보기
@@ -1343,12 +1465,17 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 디스크 용량�
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS 전용 모드
+httpsonly-description3 = 웹 사이트에 보안 연결만 허용합니다. { -brand-short-name }는 안전하지 않은 연결을 하기 전에 묻습니다.
+httpsonly-learn-more2 = HTTPS 전용 모드 작동 방식
 httpsonly-description = HTTPS는 { -brand-short-name }와 사용자가 방문한 웹 사이트 간에 안전한 암호화된 연결을 제공합니다. 대부분의 웹 사이트는 HTTPS를 지원하며, HTTPS 전용 모드를 사용하도록 설정한 경우 { -brand-short-name }는 모든 연결을 HTTPS로 업그레이드합니다.
 httpsonly-learn-more = 더 알아보기
 httpsonly-radio-enabled =
     .label = 모든 창에서 HTTPS 전용 모드 사용
 httpsonly-radio-enabled-pbm =
     .label = 사생활 보호 창에서만 HTTPS 전용 모드 사용
+httpsonly-radio-disabled3 =
+    .label = HTTPS 전용 모드 사용 안 함
+    .description = { -brand-short-name }는 여전히 ​​일부 연결을 업그레이드 할 수 있음
 httpsonly-radio-disabled =
     .label = HTTPS 전용 모드 사용 안 함
 
@@ -1373,7 +1500,7 @@ preferences-doh-status-disabled = 꺼짐
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = 활성 안 됨 ({ $reason })
 preferences-doh-group-message = 보안 DNS 활성화 수준:
-preferences-doh-group-message2 = 다음을 사용하여 DNS over HTTPS 활성화:
+preferences-doh-group-message2 = DNS over HTTPS 보호 수준:
 preferences-doh-expand-section =
     .tooltiptext = 추가 정보
 preferences-doh-setting-default =
@@ -1381,7 +1508,7 @@ preferences-doh-setting-default =
     .accesskey = D
 preferences-doh-default-desc = { -brand-short-name }가 보안 DNS를 사용하여 개인 정보를 보호할 때를 결정합니다.
 preferences-doh-default-detailed-desc-1 = 사용 가능한 지역에서 보안 DNS 사용
-preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 확인자를 사용
+preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 확인자 사용
 preferences-doh-default-detailed-desc-3 = 가능하면 로컬 공급자를 사용
 preferences-doh-default-detailed-desc-4 = VPN, 자녀 보호 또는 엔터프라이즈 정책이 활성화되면 끄기
 preferences-doh-default-detailed-desc-5 = 네트워크에서 { -brand-short-name }에 보안 DNS를 사용하지 말라고 하면 끄기
@@ -1390,7 +1517,7 @@ preferences-doh-setting-enabled =
     .accesskey = I
 preferences-doh-enabled-desc = 보안 DNS를 사용할 때를 제어하고 공급자를 선택합니다.
 preferences-doh-enabled-detailed-desc-1 = 선택한 공급자 사용
-preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우에만 기본 DNS 확인자를 사용
+preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우에만 기본 DNS 확인자 사용
 preferences-doh-setting-strict =
     .label = 최대 보호
     .accesskey = M

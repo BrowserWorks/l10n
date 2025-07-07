@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -13,7 +13,7 @@ default-bookmarks-toolbarfolder = Cartella della barra dei segnalibri
 default-bookmarks-toolbarfolder-description = Aggiungere un segnalibro a questa cartella per mostrarlo nella barra dei segnalibri
 # link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Come iniziare
-# Waterfox links folder name
+# Firefox links folder name
 default-bookmarks-firefox-heading = Waterfox
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Ricevi assistenza
@@ -23,7 +23,7 @@ default-bookmarks-firefox-customize = Personalizza Waterfox
 default-bookmarks-firefox-community = Collabora con noi
 # link title for https://www.mozilla.org/about/
 default-bookmarks-firefox-about = Informazioni
-# Waterfox Nightly links folder name
+# Firefox Nightly links folder name
 default-bookmarks-nightly-heading = Risorse per Waterfox Nightly
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
 default-bookmarks-nightly-blog = Blog di Waterfox Nightly

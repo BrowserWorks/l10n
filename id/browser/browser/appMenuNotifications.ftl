@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Tutup
     .secondarybuttonaccesskey = T
 appmenu-update-restart-message2 = Dapatkan versi terbaru { -brand-shorter-name }. Tab dan jendela terbuka akan dipulihkan.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Urungkan
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } tidak dapat memperbarui ke versi terbaru secara otomatis.
     .buttonlabel = Perbarui saja { -brand-shorter-name }
@@ -37,7 +40,6 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Jangan Sekarang
     .secondarybuttonaccesskey = J
 appmenu-update-other-instance-message = Versi baru { -brand-shorter-name } tersedia, namun tidak dapat dipasang karena salinan { -brand-shorter-name } yang lain sedang berjalan. Tutup untuk melanjutkan pembaruan, atau pilih untuk tetap memperbarui (salinan lainnya mungkin tidak bekerja dengan benar hingga Anda memulai ulang).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = Oke
     .buttonaccesskey = O
@@ -45,7 +47,6 @@ appmenu-addon-post-install-message3 = Kelola pengaya dan tema Anda melalui menu 
 appmenu-addon-post-install-incognito-checkbox =
     .label = Izinkan ekstensi ini untuk berjalan di Jendela Pribadi
     .accesskey = I
-    
 appmenu-new-tab-controlled-changes =
     .label = Tab baru Anda telah berubah.
     .buttonlabel = Pertahankan Perubahan

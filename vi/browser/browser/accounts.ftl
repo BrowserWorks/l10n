@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = Hoàn tất thiết lập tài khoản
 account-disconnected2 = Đã ngắt kết nối tài khoản
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Gửi tới tất cả các thiết bị
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Quản lý thiết bị…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = Tái kết nối { $email }
 account-verify = Xác minh { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = Kết nối thiết bị khác…
 account-send-tab-to-device-verify-status = Tài khoản chưa được xác thực
 account-send-tab-to-device-verify = Xác minh tài khoản của bạn…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Tài khoản
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Máy tính này hiện được kết nối với { $deviceName }.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = Máy tính này hiện được kết nối với một thiết bị mới.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = Bạn đã đăng nhập thành công
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = Máy tính này đã bị ngắt kết nối.
 
 ## These strings are used in a notification shown when we're opening

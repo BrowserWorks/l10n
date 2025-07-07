@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,7 +11,9 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = "Ξεφόρτωμα" καρτελών και τερματισμός διεργασίας
+    .title = Εκφόρτωση καρτελών και τερματισμός διεργασίας
+about-processes-kill-process =
+    .title = Τερματισμός διεργασίας
 about-processes-shutdown-tab =
     .title = Κλείσιμο καρτέλας
 # Profiler icons
@@ -39,7 +41,7 @@ about-processes-browser-process = { -brand-short-name } ({ $pid })
 about-processes-web-process = Κοινόχρηστη διεργασία ιστού ({ $pid })
 about-processes-file-process = Αρχεία ({ $pid })
 about-processes-extension-process = Επεκτάσεις ({ $pid })
-about-processes-privilegedabout-process = Σελίδες "about:" ({ $pid })
+about-processes-privilegedabout-process = Σελίδες «about:» ({ $pid })
 about-processes-plugin-process = Αρθρώματα ({ $pid })
 about-processes-privilegedmozilla-process = Σελίδες της { -vendor-short-name } ({ $pid })
 about-processes-gmp-plugin-process = Αρθρώματα πολυμέσων Gecko ({ $pid })
@@ -51,6 +53,7 @@ about-processes-remote-sandbox-broker-process = Απομακρυσμένο Sandb
 about-processes-fork-server-process = Διακομιστής fork ({ $pid })
 about-processes-preallocated-process = Προκατανεμημένο ({ $pid })
 about-processes-utility-process = Εργαλείο ({ $pid })
+about-processes-inference-process = Συμπέρασμα ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -124,7 +127,7 @@ about-processes-utility-actor-audio-decoder-generic = Γενικός αποκω�
 about-processes-utility-actor-audio-decoder-applemedia = Αποκωδικοποιητής ήχου Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Αποκωδικοποιητής ήχου Windows Media Framework
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Βοηθήματα των Windows
 about-processes-utility-actor-windows-file-dialog = Παράθυρο διαλόγου αρχείων των Windows

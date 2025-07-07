@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Új lap
 newtab-settings-button =
     .title = Az Új lap oldal személyre szabása
+newtab-customize-panel-icon-button =
+    .title = Oldal testreszabása
+newtab-customize-panel-icon-button-label = Testreszabás
+newtab-personalize-settings-icon-label =
+    .title = Új lap testreszabása
+    .aria-label = Beállítások
+newtab-settings-dialog-label =
+    .aria-label = Beállítások
 newtab-personalize-icon-label =
     .title = Új lap testreszabása
     .aria-label = Új lap testreszabása
 newtab-personalize-dialog-label =
     .aria-label = Testreszabás
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -49,13 +59,13 @@ newtab-topsites-add-shortcut-label = Indítóikon hozzáadása
 newtab-topsites-title-label = Cím
 newtab-topsites-title-input =
     .placeholder = Cím megadása
-newtab-topsites-url-label = URL
+newtab-topsites-url-label = Webcím
 newtab-topsites-url-input =
-    .placeholder = Írjon vagy illesszen be egy URL-t
-newtab-topsites-url-validation = Érvényes URL szükséges
-newtab-topsites-image-url-label = Egyéni kép URL
+    .placeholder = Írjon vagy illesszen be egy webcímet
+newtab-topsites-url-validation = Érvényes webcím szükséges
+newtab-topsites-image-url-label = Egyéni kép webcíme
 newtab-topsites-use-image-link = Egyéni kép használata…
-newtab-topsites-image-validation = A kép betöltése nem sikerült. Próbáljon meg egy másik URL-t.
+newtab-topsites-image-validation = A kép betöltése nem sikerült. Próbáljon meg egy másik webcímet.
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
@@ -109,6 +119,21 @@ newtab-menu-save-to-pocket = Mentés a { -pocket-brand-name }be
 newtab-menu-delete-pocket = Törlés a { -pocket-brand-name }ből
 newtab-menu-archive-pocket = Archiválás a { -pocket-brand-name }ben
 newtab-menu-show-privacy-info = Támogatóink és az Ön adatvédelme
+newtab-menu-about-fakespot = A { -fakespot-brand-name } névjegye
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = Jelentés
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = Tiltás
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = Téma követésének megszüntetése
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = Szponzorált tartalmak kezelése
+newtab-menu-our-sponsors-and-your-privacy = Támogatóink és az Ön adatvédelme
+newtab-menu-report-this-ad = Hirdetés jelentése
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -170,6 +195,8 @@ newtab-label-sponsored-by = Szponzorálta: { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } perc
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = Szponzorált
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -200,6 +227,8 @@ newtab-section-header-recent-activity = Legutóbbi tevékenység
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = A(z) { $provider } ajánlásával
 newtab-section-header-stories = Elgondolkodtató történetek
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = Mai kedvencek
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -230,7 +259,6 @@ newtab-pocket-learn-more = További tudnivalók
 newtab-pocket-cta-button = { -pocket-brand-name } beszerzése
 newtab-pocket-cta-text = Mentse az Ön által kedvelt történeteket a { -pocket-brand-name }be, és töltse fel elméjét lebilincselő olvasnivalókkal.
 newtab-pocket-pocket-firefox-family = A { -pocket-brand-name } a { -brand-product-name } család része
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Mentés
 newtab-pocket-saved = Mentve
 
@@ -239,6 +267,12 @@ newtab-pocket-saved = Mentve
 # Clicking the thumbs up button for this story will result in more stories like this one being recommended
 newtab-pocket-thumbs-up-tooltip =
     .title = Több hasonló
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Nem nekem való
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = Köszönjük. Visszajelzése segít nekünk a hírforrás fejlesztésében.
 newtab-toast-dismiss-button =
     .title = Eltüntetés
     .aria-label = Eltüntetés
@@ -284,6 +318,9 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = Időjárás
     .description = A mai előrejelzés egy pillantásra
+newtab-custom-trending-search-toggle =
+    .label = Felkapott keresések
+    .description = Népszerű és gyakran keresett témák
 newtab-custom-close-button = Bezárás
 newtab-custom-settings = További beállítások kezelése
 
@@ -291,6 +328,12 @@ newtab-custom-settings = További beállítások kezelése
 
 newtab-wallpaper-title = Háttérképek
 newtab-wallpaper-reset = Visszaállítás az alapértelmezésre
+newtab-wallpaper-upload-image = Kép feltöltése
+newtab-wallpaper-custom-color = Válasszon színt
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = A kép túllépte a { $file_size } MB-os fájlméretkorlátot. Próbáljon meg egy kisebb fájlt feltölteni.
+newtab-wallpaper-error-file-type = Nem tudtuk feltölteni a fájlt. Próbálja meg újra egy másik fájltípussal.
 newtab-wallpaper-light-red-panda = Vörös panda
 newtab-wallpaper-light-mountain = Fehér hegy
 newtab-wallpaper-light-sky = Ég, lila és rózsaszín felhőkkel
@@ -303,6 +346,8 @@ newtab-wallpaper-dark-panda = Vörös panda elrejtve az erdőben
 newtab-wallpaper-dark-sky = Városi táj éjszakai égbolttal
 newtab-wallpaper-dark-mountain = Hegyvidéki táj
 newtab-wallpaper-dark-city = Lila városi táj
+newtab-wallpaper-dark-fox-anniversary = Egy róka a járdán, közel egy erdőhöz
+newtab-wallpaper-light-fox-anniversary = Egy róka egy füves mezőben, ködös hegyi tájjal
 
 ## Solid Colors
 
@@ -332,8 +377,12 @@ newtab-wallpaper-abstract-purple = Lila alakzatok
 newtab-wallpaper-abstract-orange = Narancssárga alakzatok
 newtab-wallpaper-gradient-orange = Narancssárga és rózsaszín átmenet
 newtab-wallpaper-abstract-blue-purple = Kék és lila alakzatok
+newtab-wallpaper-abstract-white-curves = Fehér, árnyalt ívekkel
+newtab-wallpaper-abstract-purple-green = Lila és zöld fényátmenet
+newtab-wallpaper-abstract-blue-purple-waves = Kék és lila hullámos alakzatok
+newtab-wallpaper-abstract-black-waves = Fekete hullámos alakzatok
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = Fényképek
 newtab-wallpaper-beach-at-sunrise = Strand napkeltekor
@@ -342,6 +391,12 @@ newtab-wallpaper-storm-sky = Viharos égbolt
 newtab-wallpaper-sky-with-pink-clouds = Égbolt rózsaszín felhőkkel
 newtab-wallpaper-red-panda-yawns-in-a-tree = Vörös panda ásít egy fán
 newtab-wallpaper-white-mountains = Fehér hegyek
+newtab-wallpaper-hot-air-balloons = Különböző színű hőlégballonok napközben
+newtab-wallpaper-starry-canyon = Kék csillagos éjszaka
+newtab-wallpaper-suspension-bridge = Fénykép egy szürke függőhídról, napközben
+newtab-wallpaper-sand-dunes = Fehér homokdűnék
+newtab-wallpaper-palm-trees = Kókuszpálmák sziluettje alkonyatkor
+newtab-wallpaper-blue-flowers = Közeli fénykép kék szirmú virágokról virágzás közben
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
@@ -357,6 +412,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = Mennyei
+newtab-wallpaper-celestial-lunar-eclipse = Holdfogyatkozás
+newtab-wallpaper-celestial-earth-night = Éjszakai fénykép alacsony Föld körüli pályáról
+newtab-wallpaper-celestial-starry-sky = Csillagos égbolt
+newtab-wallpaper-celestial-eclipse-time-lapse = Holdfogyatkozás gyorsítva
+newtab-wallpaper-celestial-black-hole = Illusztráció egy galaxisról egy fekete lyukkal
+newtab-wallpaper-celestial-river = Folyó műholdképe
+
 ## New Tab Weather
 
 # Variables:
@@ -367,6 +435,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ Szponzorálva
 newtab-weather-menu-change-location = Hely módosítása
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = Keresési hely
+    .aria-label = Keresési hely
 newtab-weather-change-location-search-input = Keresési hely
 newtab-weather-menu-weather-display = Időjárás-kijelző
 # Display options are:
@@ -385,3 +456,129 @@ newtab-weather-menu-hide-weather = Időjárás elrejtése az Új lapon
 newtab-weather-menu-learn-more = További tudnivalók
 # This message is shown if user is working offline
 newtab-weather-error-not-available = Az időjárásadatok most nem érhetők el
+
+## Topic Labels
+
+newtab-topic-label-business = Üzlet
+newtab-topic-label-career = Karrier
+newtab-topic-label-education = Oktatás
+newtab-topic-label-arts = Szórakozás
+newtab-topic-label-food = Étel
+newtab-topic-label-health = Egészség
+newtab-topic-label-hobbies = Játék
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = Pénz
+newtab-topic-label-society-parenting = Gyereknevelés
+newtab-topic-label-government = Politika
+newtab-topic-label-education-science = Tudomány
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = Életmód
+newtab-topic-label-sports = Sport
+newtab-topic-label-tech = Technika
+newtab-topic-label-travel = Utazás
+newtab-topic-label-home = Otthon és kert
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = Válasszon témákat a hírforrás finomhangolásához
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = Válasszon kettő vagy több témát. Szakértő kurátoraink az érdeklődési körének megfelelő történeteket részesítik előnyben. Frissítse bármikor.
+newtab-topic-selection-save-button = Mentés
+newtab-topic-selection-cancel-button = Mégse
+newtab-topic-selection-button-maybe-later = Talán később
+newtab-topic-selection-privacy-link = Tudja meg, hogyan védjük és kezeljük az adatait
+newtab-topic-selection-button-update-interests = Frissítse az érdeklődési köreit
+newtab-topic-selection-button-pick-interests = Válassza ki az érdeklődési köreit
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = Követés
+newtab-section-following-button = Követés
+newtab-section-unfollow-button = Követés megszüntetése
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = Finomhangolja a hírfolyamát
+newtab-section-follow-highlight-subtitle = Kövesse az érdeklődési köreit, hogy többet lásson abból, amit kedvel.
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = Blokkolás
+newtab-section-blocked-button = Blokkolva
+newtab-section-unblock-button = Blokkolás feloldása
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = Most nem
+newtab-section-confirm-block-topic-p1 = Biztos, hogy blokkolja ezt a témát?
+newtab-section-confirm-block-topic-p2 = A blokkolt témák többé nem fognak megjelenni a hírfolyamában.
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = { $topic } blokkolása
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = Témák
+newtab-section-manage-topics-button-v2 =
+    .label = Témák kezelése
+newtab-section-mangage-topics-followed-topics = Követve
+newtab-section-mangage-topics-followed-topics-empty-state = Még nem követ egyetlen témát sem.
+newtab-section-mangage-topics-blocked-topics = Blokkolva
+newtab-section-mangage-topics-blocked-topics-empty-state = Még nem blokkol egyetlen témát sem.
+newtab-custom-wallpaper-title = Itt vannak az egyéni háttérképek
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = Töltse fel a saját háttérképét, vagy válasszon egy egyéni háttérszínt, hogy a { -brand-product-name } a sajátja legyen.
+newtab-custom-wallpaper-cta = Próbálja ki
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = Töltse le a mobilos { -brand-product-name }ot
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = Olvassa le a kódot, hogy biztonságosan böngésszen útközben.
+newtab-download-mobile-highlight-body-variant-b = Folytassa ott, ahol abbahagyta, és szinkronizálja lapjait, jelszavait és egyebeit.
+newtab-download-mobile-highlight-body-variant-c = Tudta, hogy magával viheti a { -brand-product-name }ot? Ugyanaz a böngésző. A zsebében.
+newtab-download-mobile-highlight-image =
+    .aria-label = QR-kód a mobilos { -brand-product-name } letöltéséhez
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = Miért jelenti ezt be?
+newtab-report-ads-reason-not-interested =
+    .label = Nem érdekel
+newtab-report-ads-reason-inappropriate =
+    .label = Nem megfelelő
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = Túl sokszor láttam
+newtab-report-content-wrong-category =
+    .label = Hibás kategória
+newtab-report-content-outdated =
+    .label = Elavult
+newtab-report-content-inappropriate-offensive =
+    .label = Nem megfelelő vagy sértő
+newtab-report-content-spam-misleading =
+    .label = Kéretlen vagy félrevezető
+newtab-report-cancel = Mégse
+newtab-report-submit = Elküldés
+newtab-toast-thanks-for-reporting =
+    .message = Köszönjük, hogy bejelentette.
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Felkapott a Google-ön
+newtab-trending-searches-show-trending =
+    .title = Felkapott keresések megjelenítése
+newtab-trending-searches-hide-trending =
+    .title = Felkapott keresések elrejtése
+newtab-trending-searches-learn-more = További tudnivalók
+newtab-trending-searches-dismiss = Felkapott keresések elrejtése

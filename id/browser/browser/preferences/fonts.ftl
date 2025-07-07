@@ -1,10 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
     .title = Fon
-
 fonts-window-close =
     .key = w
 
@@ -12,7 +11,6 @@ fonts-window-close =
 
 fonts-langgroup-header = Fon untuk
     .accesskey = F
-
 fonts-langgroup-arabic =
     .label = Arab
 fonts-langgroup-armenian =
@@ -77,42 +75,27 @@ fonts-langgroup-other =
 
 fonts-proportional-header = Proporsional
     .accesskey = P
-
 fonts-default-serif =
     .label = Serif
 fonts-default-sans-serif =
     .label = Tanpa Serif
-
 fonts-proportional-size = Ukuran
     .accesskey = u
-
 fonts-serif = Serif
     .accesskey = S
-
 fonts-sans-serif = Sans-serif
     .accesskey = n
-
 fonts-monospace = Monospace
     .accesskey = M
-
 fonts-monospace-size = Ukuran
     .accesskey = k
-
 fonts-minsize = Ukuran fon minimum
     .accesskey = o
-
 fonts-minsize-none =
     .label = Tidak Ada
-
 fonts-allow-own =
     .label = Izinkan laman untuk memilih jenis fonnya sendiri, dari pada menggunakan pilihan Anda di atas
     .accesskey = I
-
-## Text Encodings
-##
-## Translate the encoding names as adjectives for an encoding, not as the name
-## of the language.
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

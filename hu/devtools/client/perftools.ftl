@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = Újraindítás
 perftools-button-add-directory = Könyvtár hozzáadása
 perftools-button-remove-directory = Kijelölt eltávolítása
 perftools-button-edit-settings = Beállítások szerkesztése…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = További műveletek
+perftools-menu-more-actions-restart-with-profiling = A { -brand-shorter-name } újraindítása az indítási profilozás engedélyezésével
+perftools-menu-more-actions-copy-for-startup = Környezeti változók másolása az indítási profilozáshoz
+perftools-menu-more-actions-copy-for-perf-tests = Paraméterek másolása a teljesítménytesztekhez
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 

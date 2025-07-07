@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,7 @@ appmenuitem-banner-update-manual =
 appmenuitem-banner-update-unsupported =
     .label = Não foi possível atualizar — sistema incompatível
 appmenuitem-banner-update-restart =
-    .label = Atualização disponível — Reiniciar o Waterfox
+    .label = Atualização disponível, reiniciar o Waterfox
 appmenuitem-new-tab =
     .label = Nova aba
 appmenuitem-new-window =
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Downloads
 appmenuitem-passwords =
     .label = Senhas
+appmenuitem-extensions-and-themes =
+    .label = Extensões e temas
+appmenuitem-extensions =
+    .label = Extensões
 appmenuitem-addons-and-themes =
     .label = Extensões e temas
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Tela inteira
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Entrar na conta para sincronizar…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = Ative a sincronização de abas para ver um
 appmenu-remote-tabs-opensettings =
     .label = Configurações
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Quer ver aqui suas abas de outros dispositivos?
 appmenu-remote-tabs-connectdevice =
     .label = Conectar outro dispositivo
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = Sincronizar e salvar dados
 appmenu-fxa-signed-in-label = Entrar
 appmenu-fxa-setup-sync =
     .label = Ativar sincronização…
+appmenu-fxa-setup-sync-new = Ativar
 appmenuitem-save-page =
     .label = Salvar página como…
+appmenuitem-fxa-sync-off-title = Sincronização desativada
+appmenuitem-fxa-sync-off-description = Proteja e acesse seus favoritos, senhas e outros dados em qualquer lugar.
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = Me notificar sobre novos recursos
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -189,6 +196,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Ajuste prévio para investigar bugs de áudio e vídeo no { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Mídia
+profiler-popup-presets-ml-description = Ajuste prévio para investigar bugs de aprendizado de máquina no { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Aprendizado de máquina
 profiler-popup-presets-networking-description = Ajuste prévio para investigar bugs de rede no { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Rede
@@ -277,5 +287,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Receba alertas de vazamentos de dados
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Oculte seu email e celular verdadeiros
+appmenuitem-services-relay-description = Abrir painel de máscaras de email
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Proteja sua atividade online
+appmenu-services-header = Meus serviços
+appmenu-other-protection-header = Experimente outras ferramentas de proteção da { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Outros perfis
+appmenu-manage-profiles =
+    .label = Gerenciar perfis
+appmenu-create-profile =
+    .label = Novo perfil
+appmenu-edit-profile =
+    .aria-label = Editar perfil
+appmenu-profiles-2 =
+    .label = Perfis

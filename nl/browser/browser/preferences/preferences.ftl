@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Websites een ‘Niet volgen’-signaal sturen om te laten weten dat u niet gevolgd wilt worden
+do-not-track-removal = We ondersteunen het ‘Niet volgen’-signaal niet meer
 do-not-track-description2 =
     .label = Stuur websites een ‘Niet-volgen’-verzoek
     .accesskey = v
@@ -137,6 +138,7 @@ windows-launch-on-login =
     .label = { -brand-short-name } automatisch openen bij het opstarten van uw computer
     .accesskey = a
 windows-launch-on-login-disabled = Deze voorkeur is uitgeschakeld in Windows. Ga naar <a data-l10n-name="startup-link">Apps > Opstarten</a> in Systeeminstellingen om dit te wijzigen.
+windows-launch-on-login-profile-disabled = Schakel deze voorkeur in door ‘{ profile-manager-use-selected.label }’ in het venster ‘Gebruikersprofiel kiezen’ aan te vinken.
 startup-restore-warn-on-quit =
     .label = Waarschuwen bij het afsluiten van de browser
 disable-extension =
@@ -146,12 +148,28 @@ preferences-data-migration-description = Bladwijzers, wachtwoorden, geschiedenis
 preferences-data-migration-button =
     .label = Gegevens importeren
     .accesskey = m
+preferences-profiles-header = Profielen
+preferences-manage-profiles-description = Elk profiel heeft aparte navigatiegegevens en -instellingen, waaronder geschiedenis, wachtwoorden en meer.
+preferences-manage-profiles-learn-more = Meer info
+preferences-manage-profiles-button =
+    .label = Profielen beheren
 tabs-group-header = Tabbladen
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab doorloopt tabbladen in onlangs gebruikte volgorde
     .accesskey = T
 open-new-link-as-tabs =
     .label = Koppelingen openen in tabbladen in plaats van nieuwe vensters
+    .accesskey = v
+ask-on-close-multiple-tabs =
+    .label = Vragen voor het sluiten van meerdere tabbladen
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Vragen voor afsluiten met { $quitKey }
     .accesskey = v
 confirm-on-close-multiple-tabs =
     .label = Bevestigen voor het sluiten van meerdere tabbladen
@@ -212,6 +230,16 @@ containers-remove-cancel-button = Deze container niet verwijderen
 settings-tabs-show-image-in-preview =
     .label = Een afbeeldingsvoorbeeld tonen als u een tabblad aanwijst
     .accessKey = w
+browser-layout-header = Browserindeling
+browser-layout-horizontal-tabs =
+    .label = Horizontale tabbladen
+browser-layout-horizontal-tabs-desc = Bovenaan in browser tonen
+browser-layout-vertical-tabs =
+    .label = Verticale tabbladen
+browser-layout-vertical-tabs-desc = Aan de zijkant, in de zijbalk tonen
+browser-layout-show-sidebar =
+    .label = Zijbalk tonen
+browser-layout-show-sidebar-desc = Benader snel bladwijzers, tabbladen van uw telefoon, AI-chatbots en meer zonder uw hoofdvenster te verlaten.
 
 ## General Section - Language & Appearance
 
@@ -235,6 +263,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Uw instellingen voor contrastregeling hebben voorrang op het uiterlijk van de website.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Uw kleurselecties hebben voorrang op het uiterlijk van de website. <a data-l10n-name="colors-link">Kleuren beheren</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -243,6 +275,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = U kunt { -brand-short-name }-thema’s beheren in <a data-l10n-name="themes-link">Extensies en thema’s</a>
+preferences-contrast-control-header = Contrastregeling
+preferences-contrast-control-description = Websites hebben een verscheidenheid aan voor- en achtergrondkleuren. Configureer { -brand-short-name } om op verschillende websites dezelfde kleuren te gebruiken voor verbeterde leesbaarheid.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatisch (systeeminstellingen gebruiken)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Uit
+    .accesskey = U
+preferences-contrast-control-custom =
+    .label = Aangepast
+    .accesskey = g
 preferences-colors-header = Kleuren
 preferences-colors-description = De standaardkleuren van { -brand-short-name } overschrijven voor tekst, website-achtergronden en koppelingen.
 preferences-colors-manage-button =
@@ -318,6 +361,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Altijd vragen waar bestanden moeten worden opgeslagen
     .accesskey = r
+download-private-browsing-delete =
+    .label = Bestanden die tijdens privénavigatie zijn gedownload verwijderen wanneer alle privévensters zijn gesloten
+    .accesskey = v
 applications-header = Toepassingen
 applications-description = Kies hoe { -brand-short-name } omgaat met de bestanden die u van het web downloadt of de toepassingen die u tijdens het surfen gebruikt.
 applications-filter =
@@ -408,7 +454,7 @@ play-drm-content-learn-more = Meer info
 update-application-title = { -brand-short-name }-updates
 update-application-description = Houd { -brand-short-name } up-to-date voor de beste prestaties, stabiliteit en beveiliging.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Versie { $version } <a data-l10n-name="learn-more">Wat is er nieuw</a>
 update-history =
     .label = Updategeschiedenis tonen…
@@ -472,6 +518,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Navigeren
+browsing-group-label =
+    .aria-label = Navigeren
 browsing-use-autoscroll =
     .label = Automatisch scrollen gebruiken
     .accesskey = m
@@ -556,7 +604,7 @@ choose-bookmark =
     .label = Bladwijzer gebruiken…
     .accesskey = B
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name }-inhoud
 home-prefs-content-description2 = Kies welke inhoud u op uw { -firefox-home-brand-name }-scherm wilt laten weergeven.
@@ -568,8 +616,7 @@ home-prefs-shortcuts-description = Opgeslagen of bezochte websites
 home-prefs-shortcuts-by-option-sponsored =
     .label = Gesponsorde snelkoppelingen
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Aanbevolen door { $provider }
@@ -607,6 +654,14 @@ home-prefs-weather-header =
     .label = Weer
 home-prefs-weather-description = De weersverwachting van vandaag in een oogopslag.
 home-prefs-weather-learn-more-link = Meer info
+home-prefs-trending-search-header =
+    .label = Trending zoekopdrachten
+home-prefs-trending-search-description = Populaire en veel gezochte onderwerpen
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = { -brand-product-name } ondersteunen
+home-prefs-mission-message = Onze sponsors steunen onze missie om een beter web te bouwen
+home-prefs-mission-message-learn-more-link = Lees hier hoe
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -641,6 +696,10 @@ search-show-suggestions-url-bar-option =
     .label = Zoeksuggesties in adresbalkresultaten tonen
     .accesskey = l
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Zoektermen in de adresbalk op resultaatpagina’s tonen
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -671,6 +730,9 @@ search-remove-engine =
 search-add-engine =
     .label = Toevoegen
     .accesskey = T
+search-edit-engine =
+    .label = Bewerken
+    .accesskey = w
 search-find-more-link = Meer zoekmachines zoeken
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -679,6 +741,13 @@ search-keyword-warning-title = Dubbel sleutelwoord
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = U hebt een sleutelwoord gekozen dat momenteel wordt gebruikt door ‘{ $name }’. Kies een ander.
 search-keyword-warning-bookmark = U hebt een sleutelwoord gekozen dat momenteel wordt gebruikt door een bladwijzer. Kies een ander.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Er is al een zoekmachine met de naam ‘{ $name }’. Kies een andere naam.
+remove-engine-confirmation = Weet u zeker dat u deze zoekmachine wilt verwijderen?
+remove-engine-remove = Verwijderen
+remove-addon-engine-alert = Verwijder de geassocieerde add-on om deze zoekmachine te verwijderen.
 
 ## Containers Section
 
@@ -696,7 +765,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Verwijderen
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Neem uw web mee
@@ -714,7 +783,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Download Waterfox voor <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> of <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> om met uw mobiele apparaat te synchroniseren.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profielafbeelding wijzigen
@@ -732,7 +801,7 @@ sync-manage-account = Account beheren
     .accesskey = b
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } is niet geverifieerd.
 sync-signedin-login-failure = Meld u aan om { $email } opnieuw te verbinden
@@ -783,6 +852,9 @@ sync-currently-syncing-creditcards = Creditcards
 sync-currently-syncing-payment-methods = Betalingsmethoden
 sync-currently-syncing-addons = Add-ons
 sync-currently-syncing-settings = Instellingen
+sync-manage-options =
+    .label = Synchronisatie beheren…
+    .accesskey = b
 sync-change-options =
     .label = Wijzigen…
     .accesskey = W
@@ -835,6 +907,13 @@ sync-engine-settings =
     .label = Instellingen
     .tooltiptext = Door u gewijzigde algemene, privacy- en beveiligingsinstellingen
     .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Beheren wat wordt gesynchroniseerd op al uw verbonden apparaten
+    .style = min-width: 36em;
+    .buttonlabelaccept = Opslaan
+    .buttonaccesskeyaccept = s
+    .buttonlabelextra2 = Verbinding verbreken…
+    .buttonaccesskeyextra2 = v
 
 ## The device name controls.
 
@@ -855,7 +934,7 @@ sync-connect-another-device = Een ander apparaat verbinden
 
 sync-verification-sent-title = Verificatie verzonden
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = Er is een verificatiekoppeling verzonden naar { $email }.
 sync-verification-not-sent-title = Kan geen verificatie verzenden
 sync-verification-not-sent-body = We kunnen op dit moment geen verificatie-e-mail verzenden, probeer het later opnieuw.
@@ -950,12 +1029,12 @@ windows-passkey-settings-label = Wachtwoordsleutels beheren in systeeminstelling
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windows in om een hoofdwachtwoord in te stellen. Hierdoor wordt de beveiliging van uw accounts beschermd.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = een hoofdwachtwoord aanmaken
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] instellingen voor betalingsmethoden wijzigen
@@ -986,12 +1065,12 @@ history-header = Geschiedenis
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } zal
     .accesskey = z
 history-remember-option-all =
@@ -1086,6 +1165,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Adresbalk
 addressbar-suggest = Bij gebruik van de adresbalk, suggesties weergeven uit
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Adresbalk – { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Kies het type suggesties dat in de adresbalk verschijnt.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Meer info
 addressbar-locbar-history-option =
     .label = Navigatiegeschiedenis
     .accesskey = g
@@ -1118,7 +1204,18 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = Trending zoeksuggesties tonen
     .accesskey = T
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Suggesties van { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Ontvang suggesties van het web gerelateerd aan uw zoekopdracht.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Suggesties van sponsors
+addressbar-locbar-suggest-sponsored-desc = Ondersteun { -brand-short-name } met af en toe gesponsorde suggesties.
 addressbar-quickactions-learn-more = Meer info
+addressbar-dismissed-suggestions-label = Gesloten suggesties
+addressbar-restore-dismissed-suggestions-description = Gesloten suggesties van sponsors en { -brand-short-name } herstellen.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Herstellen
 
 ## Privacy Section - Content Blocking
 
@@ -1281,17 +1378,42 @@ permissions-addon-exceptions =
 collection-header = { -brand-short-name }-gegevensverzameling en -gebruik
 collection-header2 = { -brand-short-name }-gegevensverzameling en -gebruik
     .searchkeywords = telemetrie
+preferences-collection-description = We streven ernaar om u keuzes te bieden en verzamelen alleen de gegevens die minimaal nodig zijn om { -brand-product-name } voor iedereen te verbeteren.
+preferences-collection-privacy-notice = Privacyverklaring bekijken
+preferences-across-profiles = Deze instellingen zijn van toepassing op elk { -brand-product-name }-profiel op dit apparaat.
+preferences-view-profiles = Alle profielen bekijken
 collection-description = We streven ernaar u keuzes te bieden en alleen te verzamelen wat we nodig hebben om { -brand-short-name } voor iedereen beschikbaar te maken en te verbeteren. We vragen altijd toestemming voordat we persoonlijke gegevens ontvangen.
 collection-privacy-notice = Privacyverklaring
 collection-health-report-telemetry-disabled = U staat { -vendor-short-name } niet langer toe technische en interactiegegevens vast te leggen. Alle eerdere gegevens worden binnen 30 dagen verwijderd.
 collection-health-report-telemetry-disabled-link = Meer info
+collection-usage-ping =
+    .label = Ping voor dagelijks gebruik naar { -vendor-short-name } verzenden
+    .accesskey = u
+collection-usage-ping-description = Dit helpt { -vendor-short-name } bij het schatten van actieve gebruikers.
+collection-health-report2 =
+    .label = Technische en interactiegegevens naar { -vendor-short-name } verzenden
+    .accesskey = r
 collection-health-report =
     .label = { -brand-short-name } toestaan om technische en interactiegegevens naar { -vendor-short-name } te verzenden
     .accesskey = r
 collection-health-report-link = Meer info
+collection-health-report-description = Dit helpt ons de functies, prestaties en stabiliteit van { -brand-product-name } te verbeteren.
+collection-studies2 =
+    .label = Onderzoeken installeren en uitvoeren
+collection-studies-description = Probeer functies en ideeën uit voordat ze voor iedereen beschikbaar zijn.
 collection-studies =
     .label = { -brand-short-name } toestaan om onderzoeken te installeren en uit te voeren
 collection-studies-link = { -brand-short-name }-onderzoeken weergeven
+addon-recommendations2 =
+    .label = Gepersonaliseerde extensieaanbevelingen toestaan
+addon-recommendations-description = Ontvang extensieaanbevelingen om uw surfervaring te verbeteren.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Gegevensrapportage is uitgeschakeld voor deze buildconfiguratie.
+collection-backlogged-crash-reports2 =
+    .label = Automatisch crashrapporten verzenden
+    .accesskey = r
+collection-backlogged-crash-reports-description = Dit helpt { -vendor-short-name } problemen met de browser te analyseren en op te lossen. Rapporten kunnen persoonlijke of gevoelige gegevens bevatten.
 addon-recommendations =
     .label = { -brand-short-name } toestaan om gepersonaliseerde extensieaanbevelingen te doen
 addon-recommendations-link = Meer info
@@ -1359,12 +1481,17 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } heeft bijna geen 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Alleen-HTTPS-modus
+httpsonly-description3 = Staat alleen beveiligde verbindingen met websites toe. { -brand-short-name } zal vragen voordat een onveilige verbinding wordt gemaakt.
+httpsonly-learn-more2 = Hoe Alleen-HTTPS werkt
 httpsonly-description = HTTPS biedt een veilige, versleutelde verbinding tussen { -brand-short-name } en de door u bezochte websites. De meeste websites ondersteunen HTTPS en als de Alleen-HTTPS-modus is ingeschakeld, zal { -brand-short-name } alle verbindingen upgraden naar HTTPS.
 httpsonly-learn-more = Meer info
 httpsonly-radio-enabled =
     .label = Alleen-HTTPS-modus in alle vensters inschakelen
 httpsonly-radio-enabled-pbm =
     .label = Alleen-HTTPS-modus uitsluitend in privévensters inschakelen
+httpsonly-radio-disabled3 =
+    .label = Alleen-HTTPS-modus niet inschakelen
+    .description = { -brand-short-name } kan nog steeds sommige verbindingen upgraden
 httpsonly-radio-disabled =
     .label = Alleen-HTTPS-modus niet inschakelen
 

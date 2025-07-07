@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,6 +10,10 @@
 
 origin-controls-no-access =
     .label = La extensión no puede leer ni cambiar datos
+origin-controls-quarantined =
+    .label = La extensión no tiene permiso de leer ni cambiar datos
+origin-controls-quarantined-status =
+    .label = Extensión no permitida en sitios restringidos
 origin-controls-quarantined-allow =
     .label = Permitir en Sitios Restringidos
 origin-controls-options =
@@ -51,3 +55,10 @@ origin-controls-toolbar-button-permission-needed =
     .tooltiptext =
         { $extensionTitle }
         Permisos necesarios
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { $extensionTitle }
+        No permitido por { -vendor-short-name } en este sitio

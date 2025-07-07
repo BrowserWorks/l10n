@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = 忽略
     .secondarybuttonaccesskey = m
 appmenu-update-restart-message2 = 升级至最新版 { -brand-shorter-name } 。打开的标签页和窗口将在下次启动时恢复。
+appmenu-theme-installed =
+    .secondarybuttonlabel = 撤销
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } 无法自动更新至最新版本。
     .buttonlabel = 仍要更新 { -brand-shorter-name }
@@ -37,15 +40,19 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = 暂时不要
     .secondarybuttonaccesskey = N
 appmenu-update-other-instance-message = { -brand-shorter-name } 有更新可用，由于 { -brand-shorter-name } 的另一副本还在运行，因此无法安装。您可以将其关闭以继续更新，或选择仍要更新（其他副本在重新启动之前可能无法正常工作）。
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = 好的
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = 通过应用程序菜单管理扩展和主题。
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = 可随时在<a data-l10n-name="settings-link">扩展设置</a>中更新权限和数据首选项。
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = 将扩展固定到工具栏
+    .accesskey = P
 appmenu-addon-post-install-incognito-checkbox =
     .label = 允许此扩展在隐私窗口中运行
     .accesskey = A
-    
 appmenu-new-tab-controlled-changes =
     .label = 您的新标签页已变更。
     .buttonlabel = 保留变更
@@ -59,7 +66,7 @@ appmenu-homepage-controlled-changes =
     .secondarybuttonlabel = 管理主页
     .secondarybuttonaccesskey = M
 appmenu-tab-hide-controlled =
-    .label = 存取您隐藏的标签页
+    .label = 访问您隐藏的标签页
     .buttonlabel = 保持隐藏标签页
     .buttonaccesskey = K
     .secondarybuttonlabel = 禁用扩展

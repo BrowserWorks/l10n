@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = P
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Abrir dirección…
 menu-file-open-file =
@@ -255,6 +255,15 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Marcadores del móvil
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Perfiles
+menu-profiles-manage-profiles =
+    .label = Administrar perfiles
+menu-profiles-new-profile =
+    .label = Nuevo perfil
+
 ## Tools Menu
 
 menu-tools =
@@ -263,6 +272,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Descargas
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Extensiones y temas
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Complementos y temas
     .accesskey = C

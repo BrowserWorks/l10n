@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = ترجم هذه الصفحة
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } الإصدار التجريبي
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = أدر اللغات
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = اعرض الأصل
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = الترجمات
 translations-manage-settings-button =
@@ -126,21 +126,20 @@ translations-manage-description = تنزيل اللغات من أجل الترج
 translations-manage-all-language = كل اللغات
 translations-manage-download-button = نزّل
 translations-manage-delete-button = احذف
+translations-manage-intro-2 = عيّن تفضيلات اللغة وترجمة الموقع وإدارة اللغات المُنزلة للترجمة في وضع عدم الاتصال.
+translations-manage-download-description = نزّل اللغات من أجل الترجمة بلا إنترنت
+translations-manage-language-download-button =
+    .label = نزّل
+translations-manage-language-download-all-button =
+    .label = نزّل الكل
+    .accesskey = ز
 translations-manage-language-remove-button =
     .label = أزِل
 translations-manage-language-remove-all-button =
     .label = أزِل الكل
     .accesskey = ك
-translations-manage-error-install = حدثت مشكلة أثناء تثبيت ملفات اللغة. حاول مرة اخرى.
 translations-manage-error-download = حدثت مشكلة أثناء تنزيل ملفات اللغة. من فضلك حاول ثانية.
 translations-manage-error-delete = حدثت مشكلة أثناء حذف ملفات اللغة. من فضلك حاول ثانية.
-translations-manage-intro = عيّن تفضيلات اللغة وترجمة الموقع وإدارة اللغات المثبتة للترجمة في وضع عدم الاتصال.
-translations-manage-install-description = تثبيت اللغات للترجمة دون اتصال بالإنترنت
-translations-manage-language-install-button =
-    .label = ثبّت
-translations-manage-language-install-all-button =
-    .label = تثبيت الكل
-    .accesskey = ب
 translations-manage-error-remove = حدث خطأ أثناء إزالة ملفات اللغة. حاول مرة اخرى.
 translations-manage-error-list = فشل الحصول على قائمة اللغات المتاحة للترجمة. حدّث الصفحة للمحاولة مرة أخرى.
 translations-settings-title =
@@ -170,12 +169,62 @@ translations-settings-remove-all-sites-button =
 translations-settings-close-dialog =
     .buttonlabelaccept = أغلِق
     .buttonaccesskeyaccept = ق
+# Text displayed in the right-click context menu for translating
+# selected text to a yet-to-be-determined language.
+main-context-menu-translate-selection =
+    .label = ترجم المحدّد…
+    .accesskey = م
+# Text displayed in the right-click context menu for translating
+# selected text to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-selection-to-language =
+    .label = ترجم المحدّد إلى { $language }
+    .accesskey = م
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a yet-to-be-determined language.
+main-context-menu-translate-link-text =
+    .label = ترجم نص الرابط…
+    .accesskey = ن
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-link-text-to-language =
+    .label = ترجم نص الرابط إلى { $language }
+    .accesskey = ن
+# Text displayed in the select translations panel header.
+select-translations-panel-header = الترجمة
+# Text displayed above the from-language dropdown menu.
+select-translations-panel-from-label = من
+# Text displayed above the to-language dropdown menu.
+select-translations-panel-to-label = إلى
+# Text displayed above the try-another-source-language dropdown menu.
+select-translations-panel-try-another-language-label = حاول استخدام لغة مصدر أخرى
 select-translations-panel-cancel-button =
     .label = ألغِ
+# Text displayed on the copy button before it is clicked.
+select-translations-panel-copy-button =
+    .label = انسخ
+# Text displayed on the copy button after it is clicked.
+select-translations-panel-copy-button-copied =
+    .label = نُسخ
+select-translations-panel-done-button =
+    .label = تمّ
+select-translations-panel-translate-full-page-button =
+    .label = ترجم الصفحة كاملة
 select-translations-panel-translate-button =
     .label = ترجم
 select-translations-panel-try-again-button =
     .label = حاول مجددًا
+# Text displayed as a placeholder when the panel is idle.
+select-translations-panel-idle-placeholder-text = سيظهر النص المترجم هنا.
+# Text displayed as a placeholder when the panel is actively translating.
+select-translations-panel-translating-placeholder-text = نترجم…
+select-translations-panel-init-failure-message =
+    .message = تعذر تحميل اللغات. تحقق من اتصالك بالإنترنت وحاول مرة أخرى.
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = حدثت مشكلة أثناء الترجمة. من فضلك حاول ثانية.
@@ -189,3 +238,8 @@ select-translations-panel-unsupported-language-message-known =
     .message = للأسف، لا ندعم { $language } بعد.
 select-translations-panel-unsupported-language-message-unknown =
     .message = معذرةً، لا ندعم هذه اللغة بعد.
+# Text displayed on the menuitem that opens the Translation Settings page.
+select-translations-panel-open-translations-settings-menuitem =
+    .label = إعدادات الترجمة
+# An announcement made to assistive technology when the translation is complete
+select-translations-panel-translation-complete-announcement = اكتمل الترجمة

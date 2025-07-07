@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Λίστα ανάγνωσης (Από S
 migration-imported-edge-reading-list = Λίστα ανάγνωσης (Από Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = Το { -brand-short-name } δεν έχει πρόσβαση στα προφίλ άλλων προγραμμάτων περιήγησης που έχουν εγκατασταθεί σε αυτήν τη συσκευή.
@@ -196,6 +196,14 @@ migration-safari-password-import-step1 = Στο Safari, ανοίξτε το με
 migration-safari-password-import-step2 = Κάντε κλικ στο κουμπί <img data-l10n-name="safari-icon-3dots"/> και επιλέξτε «Εξαγωγή όλων των συνθηματικών»
 migration-safari-password-import-step3 = Αποθηκεύστε το αρχείο κωδικών πρόσβασης
 migration-safari-password-import-step4 = Χρησιμοποιήστε το «Επιλογή αρχείου» παρακάτω για να επιλέξετε το αρχείο κωδικών πρόσβασης που αποθηκεύσατε
+migration-chrome-windows-password-import-header = Εισαγωγή κωδικών πρόσβασης από το Chrome
+migration-chrome-windows-password-import-steps-header = Στο Chrome:
+migration-chrome-windows-password-import-step1 = Ανοίξτε το κύριο μενού <img data-l10n-name="chrome-icon-3dots"/> και μεταβείτε στην επιλογή «Κωδικοί πρόσβασης και αυτόματη συμπλήρωση» > «Διαχείριση κωδικών πρόσβασης Google».
+migration-chrome-windows-password-import-step2 = Επιλέξτε «Ρυθμίσεις» από το μενού.
+migration-chrome-windows-password-import-step3 = Επιλέξτε «Λήψη αρχείου» και αποθηκεύστε το στη συσκευή σας.
+migration-chrome-windows-password-import-step4 = Επιστρέψτε εδώ και κάντε κλικ στο «Επιλογή αρχείου» για να ολοκληρώσετε την εισαγωγή.
+migration-manual-password-import-skip-button = Παράλειψη
+migration-manual-password-import-select-button = Επιλογή αρχείου
 migration-safari-password-import-skip-button = Παράλειψη
 migration-safari-password-import-select-button = Επιλογή αρχείου
 # Shown in the migration wizard after importing bookmarks from another
@@ -223,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

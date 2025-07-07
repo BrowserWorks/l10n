@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,8 @@ about-logging-set-log-file = Ορισμός αρχείου καταγραφής
 about-logging-set-log-modules = Ορισμός μονάδων καταγραφής
 about-logging-start-logging = Έναρξη καταγραφής
 about-logging-stop-logging = Τερματισμός καταγραφής
+about-logging-copy-as-url = Αντιγραφή τρεχουσών ρυθμίσεων ως URL
+about-logging-url-copied = Οι ρυθμίσεις καταγραφής αντιγράφηκαν στο πρόχειρο ως προκαθορισμένο URL
 about-logging-buttons-disabled = Η καταγραφή διαμορφώθηκε μέσω μεταβλητών περιβάλλοντος, η δυναμική διαμόρφωση δεν είναι διαθέσιμη.
 about-logging-some-elements-disabled = Η καταγραφή διαμορφώθηκε μέσω URL, ορισμένες επιλογές δεν είναι διαθέσιμες
 about-logging-info = Πληροφορίες:
@@ -27,6 +29,8 @@ about-logging-no-log-modules = Καμία
 about-logging-no-log-file = Κανένα
 about-logging-logging-preset-selector-text = Προκαθορισμένη καταγραφή:
 about-logging-with-profiler-stacks-checkbox = Ενεργοποίηση ιχνών στοίβας για μηνύματα καταγραφής
+about-logging-menu =
+    .title = Σύνθετες επιλογές
 
 ## Logging presets
 
@@ -44,6 +48,9 @@ about-logging-preset-media-playback-label = Αναπαραγωγή πολυμέ�
 about-logging-preset-media-playback-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων αναπαραγωγής πολυμέσων (όχι ζητημάτων τηλεδιασκέψεων)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Μονάδες καταγραφής για τη διάγνωση κλήσεων WebRTC
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Μονάδες καταγραφής για τη διάγνωση ζητημάτων των κωδικοποιητών και των αποκωδικοποιητών ήχου και βίντεο WebCodecs, καθώς και των αποκωδικοποιητών εικόνας
+about-logging-preset-ml-label = Μηχανική μάθηση
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων WebGPU
 about-logging-preset-gfx-label = Γραφικά
@@ -56,9 +63,7 @@ about-logging-preset-custom-description = Οι μονάδες καταγραφή
 # Error handling
 about-logging-error = Σφάλμα:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Μη έγκυρη τιμή «{ $v }» για το κλειδί «{ $k }»
 about-logging-unknown-logging-preset = Άγνωστη προκαθορισμένη τιμή καταγραφής «{ $v }»
@@ -66,4 +71,30 @@ about-logging-unknown-profiler-preset = Άγνωστη προκαθορισμέ�
 about-logging-unknown-option = Άγνωστη επιλογή about:logging «{ $k }»
 about-logging-configuration-url-ignored = Αγνοήθηκε το URL ρυθμίσεων
 about-logging-file-and-profiler-override = Δεν είναι δυνατή η ταυτόχρονη επιβολή της εξόδου αρχείου και της παράκαμψης των επιλογών του εργαλείου προφίλ
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Προέκυψε σφάλμα: { $errorText }
 about-logging-configured-via-url = Η επιλογή διαμορφώθηκε μέσω URL
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-upload-question = Τα δεδομένα του προφίλ έχουν καταγραφεί. Θέλετε να το αποθηκεύσετε ή να το μεταφορτώσετε;
+about-logging-save-button = Αποθήκευση
+about-logging-upload-button = Μεταφόρτωση
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Αποθηκεύτηκε στο { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Μεταφόρτωση δεδομένων προφίλ: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Μεταφορτώθηκε στο <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Κοινοποίηση URL
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Προέκυψε σφάλμα κατά τη μεταφόρτωση του προφίλ: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Προέκυψε σφάλμα κατά την αποθήκευση του αρχείου: { $errorText }

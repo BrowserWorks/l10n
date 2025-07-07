@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -55,7 +55,7 @@ chooser-dialog =
     .buttonaccesskeyaccept = o
 chooser-dialog-description = Escolha uma aplicação para abrir a ligação { $scheme }.
 # Please keep the emphasis around the scheme (ie the `<strong>` HTML tags).
-chooser-dialog-remember = Permitir sempre que esta aplicação possa abrir ligações <strong>{ $scheme }</strong>.
+chooser-dialog-remember = Utilizar sempre esta aplicação para abrir ligações <strong>{ $scheme }</strong>.
 chooser-dialog-remember-extra =
     { PLATFORM() ->
         [windows] Isto pode ser alterado nas opções do { -brand-short-name }.

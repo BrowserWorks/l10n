@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Aktiveret
 support-addons-version = Version
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Placering
 legacy-user-stylesheets-title = Gamle bruger-stylesheets
 legacy-user-stylesheets-enabled = Aktiv
 legacy-user-stylesheets-stylesheet-types = Stylesheets
@@ -184,6 +188,8 @@ media-capabilities-enumerate = Vis database-poster
 
 media-codec-support-sw-decoding = Software-afkodning
 media-codec-support-hw-decoding = Hardware-afkodning
+media-codec-support-sw-encoding = Software-kodning
+media-codec-support-hw-encoding = Hardware-kodning
 media-codec-support-codec-name = Codec-navn
 media-codec-support-supported = Understøttet
 media-codec-support-unsupported = Ikke understøttet
@@ -221,7 +227,7 @@ intl-regional-prefs = Regionale indstillinger
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -347,6 +353,9 @@ has-seccomp-bpf = Seccomp-BPF (filtrering af systemkald)
 has-seccomp-tsync = Seccomp tråd-synkronisering
 has-user-namespaces = Navneområder
 has-privileged-user-namespaces = Navneområder for priviligerede processer
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } - Denne funktion tillades ikke af dit system. Det kan begrænse sikkerhedsfunktionerne i { -brand-short-name }.
 can-sandbox-content = Sandboxning indholdsprocesser
 can-sandbox-media = Sandboxning af medie-plugin
 content-sandbox-level = Content Process Sandbox Level

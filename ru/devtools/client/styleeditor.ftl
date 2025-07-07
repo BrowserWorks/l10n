@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,7 +11,7 @@ styleeditor-import-button =
 styleeditor-filter-input =
     .placeholder = Фильтр таблиц стилей
 styleeditor-visibility-toggle =
-    .tooltiptext = Включить/выключить видимость таблицы стилей
+    .tooltiptext = Включить/отключить видимость таблицы стилей
     .accesskey = х
 styleeditor-visibility-toggle-system =
     .tooltiptext = Системные таблицы стилей не могут быть отключены
@@ -55,3 +55,7 @@ styleeditor-pretty-print-button =
 # Title for the pretty print button in the editor footer, when it's disabled
 styleeditor-pretty-print-button-disabled =
     .title = Можно красиво печатать только CSS-файлы
+# Title for the pretty print button in the editor footer, when it's disabled because
+# the stylesheet is read-only
+styleeditor-pretty-print-button-disabled-read-only =
+    .title = Не могу красиво распечатать таблицу стилей, доступную только для чтения.

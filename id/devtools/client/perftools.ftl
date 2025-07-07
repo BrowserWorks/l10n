@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -42,9 +42,7 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = Ukuran buffer:
-
 perftools-custom-threads-label = Tambahkan thread khusus berdasarkan nama:
-
 perftools-devtools-interval-label = Interval:
 perftools-devtools-threads-label = Thread:
 perftools-devtools-settings-label = Pengaturan
@@ -69,6 +67,14 @@ perftools-button-restart = Mulai Ulang
 perftools-button-add-directory = Tambahkan direktori
 perftools-button-remove-directory = Hapus yang dipilih
 perftools-button-edit-settings = Edit Pengaturan…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Tindakan lainnya
+perftools-menu-more-actions-restart-with-profiling = Mulai ulang { -brand-shorter-name } dengan profil awal diaktifkan
+perftools-menu-more-actions-copy-for-startup = Salin variabel lingkungan untuk profil startup
+perftools-menu-more-actions-copy-for-perf-tests = Salin parameter untuk pengujian kinerja
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -112,7 +118,6 @@ perftools-thread-jvm-pool =
 ##
 
 perftools-record-all-registered-threads = Lewati pilihan di atas dan rekam semua utas yang terdaftar
-
 perftools-tools-threads-input-label =
     .title = Nama utas ini berupa daftar yang dipisahkan karakter koma, yang akan digunakan untuk mengaktifkan profiling utas pada profiler. Pencocokan nama juga akan dilakukan secara bagian, tidak secara lengkap pada utas yang disertakan. Karakter spasi pada nama berpengaruh.
 
@@ -120,7 +125,6 @@ perftools-tools-threads-input-label =
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Baru</b>: { -profiler-brand-name } telah diintegrasikan ke dalam Alat Pengembang. <a>Pelajari lebih lanjut</a> tentang alat baru yang canggih ini.
-
 perftools-onboarding-close-button =
     .aria-label = Tutup pesan orientasi
 
@@ -128,32 +132,29 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # The same labels and descriptions are also defined in appmenu.ftl.
 
+
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Pengembang Web
 perftools-presets-web-developer-description = Prasetel yang direkomendasikan untuk sebagian besar debugging aplikasi web, dengan overhead yang rendah.
-
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Prasetel yang disarankan untuk pembuatan profil { -brand-shorter-name }.
-
 perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Prasetel untuk menyelidiki bug grafis di { -brand-shorter-name }.
-
 perftools-presets-media-label = Media
 perftools-presets-media-description2 = Prasetel untuk menyelidiki bug audio dan video di { -brand-shorter-name }.
-
 perftools-presets-networking-label = Jaringan
 perftools-presets-networking-description = Prasetel untuk menyelidiki bug jaringan di { -brand-shorter-name }.
-
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Daya
 perftools-presets-power-description = Prasetel untuk menyelidiki bug penggunaan daya di { -brand-shorter-name }, dengan overhead rendah.
-
+perftools-presets-debug-label = Debug
+perftools-presets-debug-description = Prasetel untuk debugging di { -brand-shorter-name }. Profiler ini memiliki overhead tinggi, jangan gunakan untuk pekerjaan kinerja tetapi gunakan untuk fokus pada pemahaman perilaku peramban.
 perftools-presets-custom-label = Khusus
 
 ##

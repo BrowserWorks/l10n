@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,8 +14,7 @@ psmerr-ssl2-disabled = 由于该站点使用了旧的不安全版本的SSL协议
 psmerr-hostreusedissuerandserial =
     您收到了一个无效的证书。请与服务器管理员或者邮件联系人联系，并提供以下信息：
     
-    您的证书具有与证书颁发机构签发的另一个证书相同的序列号。请获取一个具有唯一序列号的新证书。
-
+    您的证书具有与证书颁发机构颁发的另一个证书相同的序列号。请获取一个具有唯一序列号的新证书。
 ssl-error-export-only-server = 无法安全通信。对等端不支持高等级加密。
 ssl-error-us-only-server = 无法安全通信。不支持对等端要求的高等级加密。
 ssl-error-no-cypher-overlap = 无法安全地与对等端通信：没有双方共用的加密算法。
@@ -152,7 +151,6 @@ ssl-error-no-supported-signature-algorithm = 已配置的 TLS 签名算法不支
 ssl-error-unsupported-signature-algorithm = 不支持对等端使用的签名与散列算法的组合。
 ssl-error-missing-extended-master-secret = 对等端尝试恢复时未提供正确的 extended_master_secret 扩展。
 ssl-error-unexpected-extended-master-secret = 对等端尝试恢复时提供了意外的 extended_master_secret 扩展。
-
 sec-error-io = 在安全授权过程中发生了一个 I/O 错误。
 sec-error-library-failure = 安全程序库错误。
 sec-error-bad-data = 安全程序库: 接收到损坏的数据。
@@ -183,8 +181,8 @@ sec-error-no-key = 此证书的私钥无法在密钥数据库中找到
 sec-error-cert-valid = 此证书有效。
 sec-error-cert-not-valid = 此证书无效。
 sec-error-cert-no-response = 证书程序库：无响应
-sec-error-expired-issuer-certificate = 证书签发者的证书已过期。请检查您的系统日期和时间。
-sec-error-crl-expired = 证书签发者的证书吊销列表（CRL）已过期。请更新吊销列表，或者检查您的系统日期和时间。
+sec-error-expired-issuer-certificate = 证书颁发者的证书已过期。请检查您的系统日期和时间。
+sec-error-crl-expired = 证书颁发者的证书吊销列表（CRL）已过期。请更新吊销列表，或者检查您的系统日期和时间。
 sec-error-crl-bad-signature = 证书颁发者的证书吊销列表含有的签名无效。
 sec-error-crl-invalid = 新的 CRL 格式无效。
 sec-error-extension-value-invalid = 证书扩展值无效。
@@ -319,13 +317,12 @@ sec-error-locked-password = 密码已锁定。
 sec-error-unknown-pkcs11-error = 未知的 PKCS #11 错误。
 sec-error-bad-crl-dp-url = CRL 分发点名称的 URL 无效或不支持。
 sec-error-cert-signature-algorithm-disabled = 该证书使用的签名算法已因不安全而被禁用。
-
 mozilla-pkix-error-key-pinning-failure = 此服务器使用了公钥固定（HPKP）机制，但无法构成与其固定的证书集合（pinset）匹配的可信任证书链。无法忽视对密钥固定的违反。
 mozilla-pkix-error-ca-cert-used-as-end-entity = 该服务器使用了一个使用“基本约束扩展”标识它为一个证书颁发机构的证书。对于一个正常颁发的证书，不应该是这样。
 mozilla-pkix-error-inadequate-key-size = 该服务器提供的证书密钥位数太小，不足以建立安全连接。
-mozilla-pkix-error-v1-cert-used-as-ca = 服务器的证书由非信任源（Trust Anchor）的X.509 版本 1 证书签发。X.509 版本 1 证书已弃用，不应再用来签发其他证书。
+mozilla-pkix-error-v1-cert-used-as-ca = 服务器的证书由非信任锚（Trust Anchor）的 X.509 版本 1 证书颁发。X.509 版本 1 证书已弃用，不应再用来为其他证书签名。
 mozilla-pkix-error-not-yet-valid-certificate = 服务器出示的证书尚未生效。
-mozilla-pkix-error-not-yet-valid-issuer-certificate = 用来签发此服务器证书的一个证书尚未生效。
+mozilla-pkix-error-not-yet-valid-issuer-certificate = 用来颁发此服务器证书的一个证书尚未生效。
 mozilla-pkix-error-signature-algorithm-mismatch = 该证书在签名字段中的签名算法与其在 signatureAlgorithm 字段的算法不匹配。
 mozilla-pkix-error-ocsp-response-for-cert-missing = 该 OCSP 响应不包括该证书被验证的状态。
 mozilla-pkix-error-validity-too-long = 服务器出示的证书有效期太长。
@@ -334,11 +331,10 @@ mozilla-pkix-error-invalid-integer-encoding = 服务器提供的证书包含无�
 mozilla-pkix-error-empty-issuer-name = 服务器出示的证书有一个空的发行者专有名称。
 mozilla-pkix-error-additional-policy-constraint-failed = 验证此证书时，某个附加策略约束验证失败。
 mozilla-pkix-error-self-signed-cert = 此证书由于自签名而不被信任。
-
+mozilla-pkix-error-issuer-no-longer-trusted = 此证书的授权机构在颁发此证书时已不受信任。
 xp-java-remove-principal-error = 无法移除 Principal
 xp-java-delete-privilege-error = 无法删除权限
 xp-java-cert-not-exists-error = 此 Principal 没有证书
-
 xp-sec-fortezza-bad-card = Fortezza 卡未正确初始化。请将其取出并退还给签发者。
 xp-sec-fortezza-no-card = 没有找到 Fortezza 卡
 xp-sec-fortezza-none-selected = 未选择 Fortezza 卡

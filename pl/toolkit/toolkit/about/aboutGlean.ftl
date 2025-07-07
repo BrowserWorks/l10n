@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,11 @@ about-glean-interface-description =
     <a data-l10n-name="glean-sdk-doc-link">{ glean-sdk-brand-name }</a> to biblioteka do zbierania danych używana w projektach { -vendor-short-name(case: "gen") }.
     Ten interfejs jest przeznaczony do ręcznego <a data-l10n-name="fog-link">testowania instrumentacji</a>
     przez programistów i testerów.
+about-glean-category-about-glean = Informacje o { -glean-brand-name }
+about-glean-category-manual-testing = Testowanie ręczne
+about-glean-category-adhoc-testing = Testowanie ad hoc
+about-glean-category-profiler = Używanie profilera
+about-glean-category-about-data = Informacje o danych
 about-glean-upload-enabled = Przesyłanie danych jest włączone.
 about-glean-upload-disabled = Przesyłanie danych jest wyłączone.
 about-glean-upload-enabled-local = Przesyłanie danych jest włączone tylko do wysyłania do lokalnego serwera.
@@ -42,6 +47,7 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links = Karta <strong>Informacje o danych</strong> zawiera wyjaśnienie różnych sposobów rejestrowania i wyszukiwania danych.
 about-glean-about-testing-header = Informacje o testowaniu
 # This message is followed by a numbered list.
 about-glean-manual-testing =
@@ -97,8 +103,30 @@ about-glean-adhoc-explanation2 =
 about-glean-adhoc-note =
     Proszę pamiętać, że za pomocą konsoli programistycznej używane jest API Glean języka JavaScript.
     Oznacza to, że kategoria i nazwa statystyki jest sformatowana w konwencji <code>camelCase</code>, inaczej niż w API języków Rust i C++.
+about-glean-profiler-explanation =
+    Można użyć narzędzia { -profiler-brand-name }, aby wyświetlić pełny widok wszystkich zarejestrowanych statystyk.
+    Najpierw należy <a data-l10n-name="firefox-profiler-link">przechwycić profil wydajności</a>.
+    Następnie wybierz <q>Marker Chart</q> i spójrz na znaczniki pod <q>Telemetria</q>.
+about-glean-profiler-explanation-profiler =
+    W profilu wydajności można zobaczyć wszystkie zebrane statystyki, kiedy zostały zebrane
+    oraz jakie dokładnie wartości zostały zebrane. Najeżdżając kursorem na poszczególne znaczniki
+    można zweryfikować, czy zebrano właściwe wartości i czy zebranie nastąpiło w odpowiednim czasie.
 controls-button-label-verbose = Zastosuj ustawienia i wyślij ping
+about-glean-feedback-settings-only =
+    .message = Zastosowano ustawienia
+about-glean-feedback-settings-and-ping =
+    .message = Zastosowano ustawienia i wysłano ping
 about-glean-about-data-header = Informacje o danych
+about-glean-about-data-description =
+    Istnieje kilka różnych narzędzi, których można używać do wyświetlania danych,
+    w zależności od tego, czego szukasz.
+about-glean-about-data-description-list-intro = Konkretne zastosowania każdego narzędzia:
+about-glean-about-data-list-item-dictionary =
+    <a data-l10n-name="glean-dictionary-link">Słownik { -glean-brand-name }</a>
+    umożliwia przeglądanie listy danych zebranych przez { -glean-brand-name } dla każdej aplikacji.
+about-glean-about-data-list-item-about-telemetry = <a data-l10n-name="about-telemetry-link">about:telemetry</a> umożliwia przeglądanie danych zbieranych przez starszą telemetrię.
+about-glean-about-data-list-item-debug-ping-viewer = <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> umożliwia przeglądanie znaczników debugowania, wyświetlanie pełnych pingów, strumienia wydarzeń na żywo i wizualizacji statystyk.
+about-glean-about-data-list-item-firefox-profiler = <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a> umożliwia zarejestrowanie profilu wydajności i wyświetlenie wszystkich zarejestrowanych statystyk.
 about-glean-about-data-explanation =
     <a data-l10n-name="glean-dictionary-link">Słownik { -glean-brand-name }</a>
     umożliwia przeglądanie listy zebranych danych.

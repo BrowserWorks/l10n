@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Ingeschakeld
 support-addons-version = Versie
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Locatie
 legacy-user-stylesheets-title = Verouderde gebruikersstijlbladen
 legacy-user-stylesheets-enabled = Actief
 legacy-user-stylesheets-stylesheet-types = Stijlbladen
@@ -184,6 +188,8 @@ media-capabilities-enumerate = Database inventariseren
 
 media-codec-support-sw-decoding = Software-decodering
 media-codec-support-hw-decoding = Hardware-decodering
+media-codec-support-sw-encoding = Softwarecodering
+media-codec-support-hw-encoding = Hardwarecodering
 media-codec-support-codec-name = Codecnaam
 media-codec-support-supported = Ondersteund
 media-codec-support-unsupported = Niet ondersteund
@@ -221,7 +227,7 @@ intl-regional-prefs = Regionale voorkeuren
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

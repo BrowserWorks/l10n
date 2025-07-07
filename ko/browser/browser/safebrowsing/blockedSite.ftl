@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,6 +10,8 @@ safeb-blocked-phishing-page-short-desc = 소프트웨어를 설치하거나 비�
 safeb-blocked-malware-page-short-desc = 컴퓨터의 개인 정보를 훔치거나 지울 수 있는 악성 코드를 설치할 수 있기 때문에 { -brand-short-name }가 페이지를 차단했습니다.
 safeb-blocked-unwanted-page-short-desc = 탐색 경험을 해칠 수 있는 프로그램을 설치하도록 속일 수 있기 때문(예를 들어 첫페이지를 바꾸거나 방문한 사이트에 광고를 추가)에 { -brand-short-name }가 이 페이지를 차단했습니다.
 safeb-blocked-harmful-page-short-desc = 사용자 정보(예를 들어 사진, 비밀번호, 메시지, 신용카드)를 훔치거나 지울 수 있는 위험한 앱을 설치할 수 있기 때문에 { -brand-short-name }가 이 페이지를 차단했습니다.
+# Variables:
+#   $advisoryname (string) - Name of the advisory entity
 safeb-palm-advisory-desc = <a data-l10n-name='advisory_provider'>{ $advisoryname }</a>의 자문을 받음
 safeb-palm-accept-label = 뒤로 가기
 safeb-palm-see-details-label = 상세 보기
@@ -20,7 +22,8 @@ safeb-palm-see-details-label = 상세 보기
 safeb-blocked-phishing-page-error-desc-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>의심스러운 사이트로 보고</a>되었습니다. <a data-l10n-name='report_detection'>감지 문제를 보고</a>하거나 <a data-l10n-name='ignore_warning_link'>위험을 무시하고</a>안전하지 않은 사이트로 진행할 수 있습니다.
 safeb-blocked-phishing-page-error-desc-no-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>의심스러운 사이트로 보고</a>되었습니다. <a data-l10n-name='report_detection'>감지 문제를 보고</a>할 수 있습니다.
 
-##
+## Variables
+##  $sitename (string) - Domain name for the blocked page
 
 safeb-blocked-phishing-page-learn-more = <a data-l10n-name='learn_more_link'>www.antiphishing.org</a>에서 의심가는 사이트와 피싱에 대해서 더 알아보세요. <a data-l10n-name='firefox_support'>support.mozilla.org</a>에서 { -brand-short-name }의 피싱과 악성코드 방지에 대해 더 알아보세요.
 
@@ -30,7 +33,8 @@ safeb-blocked-phishing-page-learn-more = <a data-l10n-name='learn_more_link'>www
 safeb-blocked-malware-page-error-desc-override-sumo = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>악성 소프트웨어를 포함</a>하고 있는 것으로 보고되었습니다. <a data-l10n-name='ignore_warning_link'>위험을 무시</a>하고 안전하지 않은 사이트로 진행할 수 있습니다.
 safeb-blocked-malware-page-error-desc-no-override-sumo = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>악성 소프트웨어를 포함</a>하고 있는 것으로 보고되었습니다.
 
-##
+## Variables
+##  $sitename (string) - Domain name for the blocked page
 
 safeb-blocked-malware-page-learn-more-sumo = <a data-l10n-name='firefox_support'>support.mozilla.org</a>에서 { -brand-short-name }의 피싱과 악성코드 방지에 대해 더 알아보세요.
 
@@ -40,7 +44,8 @@ safeb-blocked-malware-page-learn-more-sumo = <a data-l10n-name='firefox_support'
 safeb-blocked-unwanted-page-error-desc-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>유해한 소프트웨어를 포함</a>하고 있는 것으로 신고되었습니다. <a data-l10n-name='ignore_warning_link'>위험을 무시</a>하고 안전하지 않은 사이트로 진행할 수 있습니다.
 safeb-blocked-unwanted-page-error-desc-no-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>유해한 소프트웨어를 포함</a>하고 있는 것으로 신고되었습니다.
 
-##
+## Variables
+##  $sitename (string) - Domain name for the blocked page
 
 safeb-blocked-unwanted-page-learn-more = <a data-l10n-name='learn_more_link'>사용자 동의 없이 설치된 소프트웨어 정책</a>에서 유해하고 사용자 동의 없이 설치된 소프트웨어에 대해 더 알아보세요. <a data-l10n-name='firefox_support'>support.mozilla.org</a>에서 { -brand-short-name }의 피싱과 악성코드 방지에 대해 더 알아보세요.
 
@@ -50,7 +55,8 @@ safeb-blocked-unwanted-page-learn-more = <a data-l10n-name='learn_more_link'>사
 safeb-blocked-harmful-page-error-desc-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>잠재적으로 유해한 애플리케이션을 포함하는 것으로 신고</a>되었습니다. <a data-l10n-name='ignore_warning_link'>위험을 무시하고</a> 안전하지 않은 사이트로 진행할 수 있습니다.
 safeb-blocked-harmful-page-error-desc-no-override = <span data-l10n-name='sitename'>{ $sitename }</span> 사이트가 <a data-l10n-name='error_desc_link'>잠재적으로 유해한 애플리케이션을 포함하는 것으로 신고</a>되었습니다.
 
-##
+## Variables
+##  $sitename (string) - Domain name for the blocked page
 
 safeb-blocked-harmful-page-learn-more = <a data-l10n-name='firefox_support'>support.mozilla.org</a>에서 { -brand-short-name }의 피싱과 악성코드 방지에 대해 더 알아보세요.
 safeb-palm-notdeceptive =

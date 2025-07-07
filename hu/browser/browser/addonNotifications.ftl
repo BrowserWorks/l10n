@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,7 +18,7 @@ xpinstall-prompt-dont-allow =
     .label = Tiltás
     .accesskey = L
 xpinstall-prompt-never-allow =
-    .label = Soha ne engedélyezze
+    .label = Sosem engedélyezze
     .accesskey = S
 # Long text in this context make the dropdown menu extend awkwardly to the left,
 # avoid a localization that's significantly longer than the English version.
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = { $addonName } hozzáadva ide: { -brand-short-
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = A(z) { $addonName } új engedélyeket igényel
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = A { -brand-short-name }ba importált kiegészítők telepítésének véglegesítése.
 
@@ -81,6 +81,8 @@ addon-removal-title = Eltávolítja a következőt: { $name }?
 addon-removal-message = Eltávolítja a(z) { $name } kiegészítőt a { -brand-shorter-name }ból?
 addon-removal-button = Eltávolítás
 addon-removal-abuse-report-checkbox = A kiegészítő jelentése a { -vendor-short-name } felé
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = Ha azokat a funkciókat vagy kiegészítőket használja, amelyek használják ezt a modellt, akkor újra hozzáadásra kerül.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -131,6 +133,8 @@ addon-local-install-error-not-signed = Ez a kiegészítő nem telepíthető, mer
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = A(z) { $addonName } nem volt telepíthető, mert nem kompatibilis a { -brand-short-name } { $appVersion } verzióval.
+addon-install-error-hard-blocked = A(z) { $addonName } sérti a BrowserWorks házirendjeit, és nem telepíthető a { -brand-short-name }ra.
 addon-install-error-blocklisted = A(z) { $addonName } nem volt telepíthető, mert stabilitási és biztonsági szempontból magas kockázatú.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = A(z) { $addonName } sérti a BrowserWorks házirendjeit, és nem telepíthető a { -brand-short-name }ra.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = Végfelhasználóként nem telepítheti a(z) { $addonName } kiegészítőt, csak a szervezete telepítheti vállalati házirendek használatával.

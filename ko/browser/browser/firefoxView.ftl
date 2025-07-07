@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% 완료
 firefoxview-tabpickup-step-signin-header = 기기 간 원활한 전환
 firefoxview-tabpickup-step-signin-description = 여기에서 휴대폰 탭을 보려면, 먼저 로그인하거나 계정을 만드세요.
 firefoxview-tabpickup-step-signin-primarybutton = 계속
+firefoxview-syncedtabs-signin-header-2 = 모든 기기에 { -brand-product-name } 사용
+firefoxview-syncedtabs-signin-description-2 = 휴대폰 및 다른 기기에서 열려 있는 탭을 보려면, 계정에 로그인하거나 가입하세요. 계정을 사용하면 비밀번호, 기록 등을 동기화 할 수도 있습니다.
+firefoxview-syncedtabs-signin-primarybutton-2 = 로그인
 firefoxview-syncedtabs-signin-header = 어디서나 탭 가져오기
 firefoxview-syncedtabs-signin-description = { -brand-product-name }를 사용하는 모든 곳에서 탭을 보려면 계정에 로그인하세요. 계정이 없는 경우 가입 단계를 안내해 드립니다.
 firefoxview-syncedtabs-signin-primarybutton = 로그인 또는 가입
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = 휴대폰 또는 태블릿에서 { -bra
 firefoxview-tabpickup-adddevice-description = 모바일용 { -brand-product-name }를 다운로드하고 로그인하세요.
 firefoxview-tabpickup-adddevice-learn-how = 방법 알아보기
 firefoxview-tabpickup-adddevice-primarybutton = 모바일용 { -brand-product-name } 받기
+firefoxview-syncedtabs-adddevice-header-2 = 어디서나 탭 가져오기
+firefoxview-syncedtabs-adddevice-description-2 = 여기에서 탭을 보려면 휴대전화나 다른 컴퓨터에서 { -brand-product-name }에 로그인하세요. <a data-l10n-name="url">추가 기기 연결</a> 방법에 대해 알아보세요.
 firefoxview-syncedtabs-adddevice-header = 다른 기기에서 { -brand-product-name }에 로그인하세요.
 firefoxview-syncedtabs-adddevice-description = { -brand-product-name }를 사용하는 모든 곳에서 탭을 보려면 모든 기기에서 로그인하세요. <a data-l10n-name="url">추가 기기 연결</a> 방법에 대해 알아보세요.
 firefoxview-syncedtabs-adddevice-primarybutton = 모바일용 { -brand-product-name } 사용해보기
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = 다른 기기의 탭
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = 모두 보기
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = 최근에 닫은 탭 검색
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = 탭 검색
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = 동기화된 탭 검색
@@ -205,9 +213,9 @@ firefoxview-history-site-localhost = (로컬 파일)
 ##
 
 firefoxview-show-all-history = 모든 기록 보기
-firefoxview-view-more-browsing-history = 탐색 기록 더 보기
+firefoxview-view-more-browsing-history = 방문 기록 더 보기
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = 이전으로 돌아가기
 firefoxview-history-empty-description = 탐색할 때, 방문하는 페이지가 여기에 나열됩니다.
@@ -219,15 +227,17 @@ firefoxview-history-empty-description-two = 개인 정보를 보호하는 것은
 firefoxview-choose-browser-button = 브라우저 선택
     .title = 브라우저 선택
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = 표시할 항목 없음
 firefoxview-dont-remember-history-empty-description = 개인 정보를 보호하는 것은 우리가 하는 일의 핵심입니다. { -brand-short-name }가 기억하는 활동을 제어할 수 있는 이유입니다.
 firefoxview-dont-remember-history-empty-description-two = 현재 설정에 따라 { -brand-short-name }는 탐색 중 활동을 기억하지 않습니다. 이를 변경하려면 <a data-l10n-name="history-settings-url-two">기록을 기억하도록 기록 설정을 변경</a>하세요.
+firefoxview-dont-remember-history-empty-header-2 = { -brand-short-name }가 기억하는 것을 제어할 수 있습니다.
+firefoxview-dont-remember-history-empty-description-one = 현재 { -brand-short-name }는 탐색 활동을 기억하지 않습니다. 변경하려면, <a data-l10n-name="history-settings-url-two">기록 설정을 업데이트</a>하세요.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = 닫기
     .title = 닫기
@@ -237,7 +247,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = 다른 브라우저에서 기록 가져오기
 firefoxview-import-history-description = { -brand-short-name }를 기본 브라우저로 만드세요. 방문 기록, 북마크 등을 가져옵니다.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = 탭을 너무 빨리 닫았습니까?
 firefoxview-recentlyclosed-empty-description = 여기에서 최근에 닫은 탭을 찾을 수 있으므로, 원하는 탭을 빠르게 다시 열 수 있습니다.

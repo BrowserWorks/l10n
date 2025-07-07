@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Avvis
     .secondarybuttonaccesskey = A
 appmenu-update-restart-message2 = Få den siste versjonen av { -brand-shorter-name }. Opne faner og vindauge vert gjenoppretta.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Angre
+    .secondarybuttonaccesskey = A
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } kan ikkje oppdatere automatisk til den siste versjonen.
     .buttonlabel = Oppdater { -brand-shorter-name } likevel
@@ -41,6 +44,12 @@ appmenu-addon-private-browsing-installed2 =
     .buttonlabel = OK
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = Handsam utvidingar og tema via applikasjonsmenyen.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = Oppdater løyve og datainnstillingar når som helst i <a data-l10n-name="settings-link">innstillingane for utvidinga</a>.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Fest utvidinga til verktøylinja
+    .accesskey = F
 appmenu-addon-post-install-incognito-checkbox =
     .label = Tillat denne utvidinga å køyre i private vindauge
     .accesskey = T

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,6 +31,10 @@ appmenuitem-downloads =
     .label = Stahování
 appmenuitem-passwords =
     .label = Hesla
+appmenuitem-extensions-and-themes =
+    .label = Rozšíření a vzhledy
+appmenuitem-extensions =
+    .label = Rozšíření
 appmenuitem-addons-and-themes =
     .label = Doplňky a vzhledy
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Celá obrazovka
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Přihlásit se k synchronizaci…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = Zapněte synchronizaci panelů pro zobrazen
 appmenu-remote-tabs-opensettings =
     .label = Nastavení
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Chcete zde vidět své panely z ostatních zařízení?
 appmenu-remote-tabs-connectdevice =
     .label = Připojit další zařízení
@@ -112,8 +116,11 @@ appmenu-fxa-sync-and-save-data2 = Synchronizace a ukládání dat
 appmenu-fxa-signed-in-label = Přihlásit se
 appmenu-fxa-setup-sync =
     .label = Zapnout synchronizaci…
+appmenu-fxa-setup-sync-new = Zapnout
 appmenuitem-save-page =
     .label = Uložit stránku jako…
+appmenuitem-fxa-sync-off-title = Synchronizace je vypnutá
+appmenuitem-fxa-sync-off-description = Chraňte své záložky, hesla a další údaje a získejte k nim přístup odkudkoli.
 
 ## What's New panel in App menu.
 
@@ -124,7 +131,7 @@ whatsnew-panel-footer-checkbox =
     .label = Informovat o nových funkcích
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -205,6 +212,9 @@ profiler-popup-presets-media-description2 =
     }
 profiler-popup-presets-media-label =
     .label = Média
+profiler-popup-presets-ml-description = Doporučené nastavení pro ladění problémů se strojovým učením v aplikaci { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Strojové učení
 profiler-popup-presets-networking-description =
     { -brand-shorter-name.case-status ->
         [with-cases] Doporučené nastavení pro ladění síťových problémů ve { -brand-shorter-name(case: "loc") }.
@@ -222,7 +232,7 @@ profiler-popup-presets-power-label =
     .label = Napájení a spotřeba
 profiler-popup-presets-debug-description =
     { -brand-shorter-name.case-status ->
-        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "gen") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "loc") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
        *[no-cases] Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
     }
 profiler-popup-presets-debug-label =
@@ -313,5 +323,24 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Získejte upozornění na úniky údajů
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Zamaskujte svůj skutečný e-mail a telefon
+appmenuitem-services-relay-description = Spustit nástěnku e-mailových masek
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Chraňte svou online aktivitu
+appmenu-services-header = Mé služby
+appmenu-other-protection-header =
+    { -vendor-short-name.case-status ->
+        [with-cases] Vyzkoušejte další nástroje ochrany od { -vendor-short-name(case: "gen") }:
+       *[no-cases] Vyzkoušejte další nástroje ochrany od organizace { -vendor-short-name }:
+    }
+
+## Profiles panel
+
+appmenu-other-profiles = Další profily
+appmenu-manage-profiles =
+    .label = Správa profilů
+appmenu-create-profile =
+    .label = Nový profil
+appmenu-edit-profile =
+    .aria-label = Upravit profil
+appmenu-profiles-2 =
+    .label = Profily

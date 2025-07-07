@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Νέα καρτέλα
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Κλείσιμο καρτελών στα αριστερά
     .accesskey = μ
+close-tabs-to-the-start-vertical =
+    .label = Κλείσιμο των από πάνω καρτελών
+    .accesskey = λ
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Κλείσιμο καρτελών στα δεξιά
     .accesskey = ξ
+close-tabs-to-the-end-vertical =
+    .label = Κλείσιμο των από κάτω καρτελών
+    .accesskey = ι
 close-other-tabs =
     .label = Κλείσιμο άλλων καρτελών
     .accesskey = ω
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Κοινή χρήση
     .accesskey = χ
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Νέα καρτέλα στα δεξιά
+    .accesskey = α
+tab-context-new-tab-open-vertical =
+    .label = Νέα καρτέλα από κάτω
+    .accesskey = α
+tab-context-new-group =
+    .label = Νέα ομάδα
+    .accesskey = ο
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -110,3 +130,10 @@ tab-context-send-tabs-to-device =
            *[other] Αποστολή { $tabCount } καρτελών σε συσκευή
         }
     .accesskey = π
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Εκφόρτωση καρτέλας
+           *[other] Εκφόρτωση { $tabCount } καρτελών
+        }
+    .accesskey = Ε

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,9 +6,9 @@
 devtools-commandkey-toggle-toolbox = I
 # Alternative key pressed to open a toolbox with the default panel selected
 devtools-commandkey-toggle-toolbox-f12 = VK_F12
-# Key pressed to open the Browser Toolbox, used for debugging Waterfox itself
+# Key pressed to open the Browser Toolbox, used for debugging Firefox itself
 devtools-commandkey-browser-toolbox = I
-# Key pressed to open the Browser Console, used for debugging Waterfox itself
+# Key pressed to open the Browser Console, used for debugging Firefox itself
 devtools-commandkey-browser-console = J
 # Key pressed to toggle on the Responsive Design Mode
 devtools-commandkey-responsive-design-mode = M
@@ -34,3 +34,5 @@ devtools-commandkey-accessibility-f12 = VK_F12
 devtools-commandkey-profiler-start-stop = VK_1
 # Key pressed to capture a recorded performance profile
 devtools-commandkey-profiler-capture = VK_2
+# Key pressed to toggle the JavaScript tracing
+devtools-commandkey-javascript-tracing-toggle = VK_5

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = 完成帳號設定
 account-disconnected2 = 帳號已取消連結
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = 傳送到所有裝置
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = 管理裝置…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = 重新連線至 { $email }
 account-verify = 確認 { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = 連結其他裝置…
 account-send-tab-to-device-verify-status = 帳號未驗證
 account-send-tab-to-device-verify = 確認您的帳號…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = 帳號
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = 此電腦已連結至 { $deviceName }。
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = 此電腦已與新裝置連結。
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = 成功登入
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = 此電腦已取消連結。
 
 ## These strings are used in a notification shown when we're opening

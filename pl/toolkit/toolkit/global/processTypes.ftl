@@ -1,11 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ##
 ## Localization for remote types defined in RemoteType.h
-##
 
 process-type-web = Strony
 # process used to run privileged about pages,
@@ -30,7 +29,6 @@ process-type-prealloc = Wstępnie przydzielony
 
 ##
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
-##
 
 process-type-default = Główny
 process-type-tab = Karta
@@ -41,19 +39,20 @@ process-type-gpu = GPU
 process-type-socket = Gniazdo
 # process used to decode media
 process-type-rdd = RDD
+# process used to run inference
+process-type-inference = Wnioskowanie
 # process used to run some IPC actor in their own sandbox
 process-type-utility = Aktor IPC w piaskownicy
 process-type-utility-actor-audio-decoder-generic = Narzędziowy standardowy dekoder dźwięku
 process-type-utility-actor-audio-decoder-applemedia = Narzędziowy AppleMedia
 process-type-utility-actor-audio-decoder-wmf = Narzędziowy Windows Media Foundation
 process-type-utility-actor-mf-media-engine = Narzędziowy Media Foundation Engine
-process-type-utility-actor-js-oracle = Narzędziowy Oracle języka JavaScript
+process-type-utility-actor-js-oracle = Narzędziowy JavaScript Oracle
 process-type-utility-actor-windows-utils = Narzędziowy narzędzi systemu Windows
 process-type-utility-actor-windows-file-dialog = Narzędziowy okna otwierania pliku w systemie Windows
 
 ##
 ## Other
-##
 
 # fallback
 process-type-unknown = Nieznany

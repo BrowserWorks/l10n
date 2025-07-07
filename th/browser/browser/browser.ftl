@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,8 +9,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Waterfox"
-# private - "Waterfox (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -26,8 +26,8 @@ browser-main-window-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Waterfox"
-# "private" - "Waterfox — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -51,6 +51,70 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = การเรียกดูแบบส่วนตัวของ { -brand-shortcut-name }
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = การเรียกดูแบบส่วนตัวใน { -brand-full-name }
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — การเรียกดูแบบส่วนตัวใน { -brand-full-name }
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — การเรียกดูแบบส่วนตัวใน { -brand-full-name }
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name } — { -brand-full-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — การเรียกดูแบบส่วนตัวใน { -brand-full-name }
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — การเรียกดูแบบส่วนตัว
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — การเรียกดูแบบส่วนตัวใน { -brand-full-name }
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — การเรียกดูแบบส่วนตัว
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — การเรียกดูแบบส่วนตัว
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-default-title = { -brand-full-name }
 
 ##
 
@@ -123,6 +187,32 @@ urlbar-result-menu-remove-from-history =
 urlbar-result-menu-tip-get-help =
     .label = รับความช่วยเหลือ
     .accesskey = ช
+urlbar-result-menu-dismiss-suggestion =
+    .label = เพิกเฉยข้อเสนอแนะนี้
+    .accesskey = พ
+urlbar-result-menu-learn-more-about-firefox-suggest =
+    .label = เรียนรู้เพิ่มเติมเกี่ยวกับ { -firefox-suggest-brand-name }
+    .accesskey = L
+urlbar-result-menu-manage-firefox-suggest =
+    .label = จัดการ { -firefox-suggest-brand-name }
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location =
+    .label = รายงานตำแหน่งที่ไม่แม่นยำ
+urlbar-result-menu-show-less-frequently =
+    .label = แสดงน้อยลง
+urlbar-result-menu-dont-show-weather-suggestions =
+    .label = ไม่ต้องแสดงคำแนะนำเกี่ยวกับสภาพอากาศ
+# A message shown in the urlbar when the user submits feedback on a suggestion
+# (e.g., it shows an inaccurate location, it's shown too often, etc.).
+urlbar-feedback-acknowledgment = ขอบคุณสำหรับข้อคิดเห็นของคุณ
+# A message shown in the urlbar when the user dismisses weather suggestions.
+# Weather suggestions won't be shown at all anymore.
+urlbar-dismissal-acknowledgment-weather = ขอบคุณสำหรับข้อคิดเห็นของคุณ คุณจะไม่เห็นคำแนะนำเกี่ยวกับสภาพอากาศอีกต่อไป
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -254,10 +344,17 @@ search-one-offs-actions =
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = ดูส่วนเสริม
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-addons3 = ส่วนขยาย, ชุดตกแต่ง, ส่วนเสริม
 quickactions-cmd-addons2 = ส่วนเสริม
 # Opens the bookmarks library window
 quickactions-bookmarks2 = จัดการที่คั่นหน้า
 quickactions-cmd-bookmarks = ที่คั่นหน้าที่คั่นหน้า
+# Opens a SUMO article explaining how to clear history
+quickactions-clearrecenthistory = ล้างประวัติล่าสุด
+quickactions-cmd-clearrecenthistory = ล้างประวัติล่าสุด, ประวัติ
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = ล้างประวัติ
 quickactions-cmd-clearhistory = ล้างประวัติ
@@ -267,8 +364,18 @@ quickactions-cmd-downloads = ดาวน์โหลด
 # Opens about:addons page in the extensions section
 quickactions-extensions = จัดการส่วนขยาย
 quickactions-cmd-extensions = ส่วนขยาย
+# Opens Firefox View
+quickactions-firefoxview = เปิด { -firefoxview-brand-name }
+# English is using "view" and "open view", since the feature name is
+# "Firefox View". If you have translated the name in your language, you
+# should use a word related to the existing translation.
+quickactions-cmd-firefoxview = เปิด { -firefoxview-brand-name }, { -firefoxview-brand-name }, เปิด view, view
+# Opens SUMO home page
+quickactions-help = ความช่วยเหลือของ { -brand-product-name }
+quickactions-cmd-help = ความช่วยเหลือ, สนับสนุน
 # Opens the devtools web inspector
 quickactions-inspector2 = เปิดเครื่องมือนักพัฒนา
+quickactions-cmd-inspector2 = ตัวตรวจสอบ, devtools, เครื่องมือนักพัฒนา
 quickactions-cmd-inspector = ตัวตรวจสอบ, devtools
 # Opens about:logins
 quickactions-logins2 = จัดการรหัสผ่าน
@@ -281,6 +388,7 @@ quickactions-print2 = พิมพ์หน้า
 quickactions-cmd-print = พิมพ์
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = บันทึกหน้าเป็น PDF
+quickactions-cmd-savepdf2 = pdf, บันทึกหน้า
 quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = เปิดหน้าต่างส่วนตัว
@@ -293,22 +401,34 @@ quickactions-restart = เริ่มการทำงาน { -brand-short-na
 quickactions-cmd-restart = เริ่มการทำงานใหม่
 # Opens the screenshot tool
 quickactions-screenshot3 = จับภาพหน้าจอ
+quickactions-cmd-screenshot2 = ภาพหน้าจอ, เก็บภาพหน้าจอ
 quickactions-cmd-screenshot = ภาพหน้าจอ
 # Opens about:preferences
 quickactions-settings2 = จัดการการตั้งค่า
-quickactions-cmd-settings = การตั้งค่า, การกำหนดลักษณะ, ตัวเลือก
+# "manage" should match the corresponding command, which is “Manage settings” in English.
+quickactions-cmd-settings2 = การตั้งค่า, ค่าปรับแต่ง, ตัวเลือก, จัดการ
+quickactions-cmd-settings = การตั้งค่า, ค่าปรับแต่ง, ตัวเลือก
 # Opens about:addons page in the themes section
 quickactions-themes = จัดการชุดตกแต่ง
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = ชุดตกแต่ง, ส่วนเสริม
 quickactions-cmd-themes = ชุดตกแต่ง
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = อัปเดต { -brand-short-name }
 quickactions-cmd-update = อัปเดต
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = ดูต้นฉบับหน้า
+quickactions-cmd-viewsource2 = ดูต้นฉบับ, ต้นฉบับ, ต้นฉบับหน้า
 quickactions-cmd-viewsource = ดูต้นฉบับ, ต้นฉบับ
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
     .title = เรียนรู้เพิ่มเติมเกี่ยวกับคำสั่งด่วน
+# Will be shown to users the first configurable number of times
+# they experience actions giving them instructions on how to
+# select the action shown by pressing the tab key.
+press-tab-label = กดแท็บเพื่อเลือก:
 
 ## Bookmark Panel
 
@@ -491,6 +611,10 @@ urlbar-search-mode-indicator-close =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ค้นหาหรือป้อนที่อยู่
+# This placeholder is used when not in search mode and searching in the urlbar
+# is disabled via the keyword.enabled pref.
+urlbar-placeholder-keyword-disabled =
+    .placeholder = ป้อนที่อยู่
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -543,6 +667,8 @@ urlbar-go-button =
     .tooltiptext = ไปยังที่อยู่ในแถบตำแหน่งที่ตั้ง
 urlbar-page-action-button =
     .tooltiptext = การกระทำหน้า
+urlbar-revert-button =
+    .tooltiptext = แสดงที่อยู่ในแถบตำแหน่งที่ตั้ง
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -568,6 +694,8 @@ urlbar-result-action-visit = เยี่ยมชม
 # Variables
 # $container (String): the name of the target container
 urlbar-result-action-switch-tab-with-container = สลับไปยังแท็บ · <span>{ $container }</span>
+# Used when the target tab is in a tab group that doesn't have a label.
+urlbar-result-action-tab-group-unnamed = กลุ่มที่ไม่มีชื่อ
 # Allows the user to visit a URL that was previously copied to the clipboard.
 urlbar-result-action-visit-from-clipboard = เยี่ยมชมจากคลิปบอร์ด
 # Directs a user to press the Tab key to perform a search with the specified
@@ -597,12 +725,108 @@ urlbar-result-action-copy-to-clipboard = คัดลอก
 # Variables
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
+# The string returned for an undefined calculator result such as when dividing by 0
+urlbar-result-action-undefined-calculator-result = ไม่นิยาม
+# Shows the result of a formula expression being calculated, in scientific notation.
+# The last = sign will be shown as part of the result (e.g. "= 1.0e17").
+# Variables
+#  $result (String): the string representation for a result in scientific notation
+#  (e.g. "1.0e17").
+urlbar-result-action-calculator-result-scientific-notation = = { $result }
+# Shows the result of a formula expression being calculated, this is used for numbers >= 1.
+# The last = sign will be shown as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-3 = = { NUMBER($result, useGrouping: "false", maximumFractionDigits: 8) }
+# Shows the result of a formula expression being calculated, to a maximum of 9 significant
+# digits. This is used for numbers < 1.
+# The last = sign will be shown as part of the result (e.g. "= 0.333333333").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-decimal = = { NUMBER($result, maximumSignificantDigits: 9) }
+# The title of a weather suggestion in the urlbar. The temperature and unit
+# substring should be inside a <strong> tag. If the temperature and unit are not
+# adjacent in the localization, it's OK to include only the temperature in the
+# tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name of the city's region or country. Depending on
+#       the user's location in relation to the city, this may be the name or
+#       abbreviation of one of the city's administrative divisions like a
+#       province or state, or it may be the name of the city's country.
+urlbar-result-weather-title = <strong>{ $temperature }°{ $unit }</strong> ใน { $city } { $region }
+# The title of a weather suggestion in the urlbar including a region and
+# country. The temperature and unit substring should be inside a <strong> tag.
+# If the temperature and unit are not adjacent in the localization, it's OK to
+# include only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name or abbreviation of one of the city's
+#       administrative divisions like a province or state.
+#   $country (String) - The name of the city's country.
+urlbar-result-weather-title-with-country = <strong>{ $temperature }°{ $unit }</strong> ใน { $city } { $region } { $country }
+# The title of a weather suggestion in the urlbar only including the city. The
+# temperature and unit substring should be inside a <strong> tag. If the
+# temperature and unit are not adjacent in the localization, it's OK to include
+# only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</strong> ใน { $city }
+# Shows the name of the provider of weather data in a weather suggestion in the
+# urlbar.
+# Variables:
+#   $provider (String) - The name of the weather-data provider. It will be the
+#       name of a company, organization, or service.
+urlbar-result-weather-provider-sponsored = { $provider } · ได้รับการสนับสนุน
 
 ## Strings used for buttons in the urlbar
 
 # Label prompting user to search with a particular search engine.
 #  $engine (String): the name of a search engine that searches a specific site
 urlbar-result-search-with = ค้นหาด้วย { $engine }
+# Label for the urlbar result row, prompting the user to use a local keyword to enter search mode.
+#  $keywords (String): the restrict keyword to enter search mode.
+#  $localSearchMode (String): the local search mode (history, tabs, bookmarks,
+#  or actions) to search with.
+urlbar-result-search-with-local-search-mode = { $keywords } - ค้นหา { $localSearchMode }
+# Label for the urlbar result row, prompting the user to use engine keywords to enter search mode.
+#  $keywords (String): the default keyword and user's set keyword if available
+#  $engine (String): the name of a search engine
+urlbar-result-search-with-engine-keywords = { $keywords } - ค้นหาด้วย { $engine }
+urlbar-searchmode-dropmarker =
+    .tooltiptext = เลือกเครื่องมือค้นหา
+urlbar-searchmode-bookmarks =
+    .label = ที่คั่นหน้า
+urlbar-searchmode-tabs =
+    .label = แท็บ
+urlbar-searchmode-history =
+    .label = ประวัติ
+urlbar-searchmode-actions =
+    .label = การกระทำ
+urlbar-searchmode-exit-button =
+    .tooltiptext = ปิด
+urlbar-searchmode-default =
+    .tooltiptext = เครื่องมือค้นหาเริ่มต้น
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = ครั้งนี้ค้นหาด้วย:
+urlbar-searchmode-popup-search-settings-menuitem =
+    .label = การตั้งค่าการค้นหา
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button2 =
+    .label = ขณะนี้คือ { $engine } โปรดเลือกเครื่องมือค้นหา
+    .tooltiptext = ขณะนี้คือ { $engine } โปรดเลือกเครื่องมือค้นหา
+urlbar-searchmode-button-no-engine =
+    .label = ไม่ได้เลือกทางลัด โปรดเลือกทางลัดด้วย
+    .tooltiptext = ไม่ได้เลือกทางลัด โปรดเลือกทางลัดด้วย
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -612,10 +836,16 @@ urlbar-result-action-search-bookmarks = ค้นหาที่คั่นห�
 urlbar-result-action-search-history = ค้นหาประวัติ
 urlbar-result-action-search-tabs = ค้นหาแท็บ
 urlbar-result-action-search-actions = คำสั่งการค้นหา
+# Label for a quickaction result used to switch to an open tab group.
+#  $group (String): the name of the tab group to switch to
+urlbar-result-action-switch-to-tabgroup = สลับไปยัง { $group }
+# Label for a quickaction result used to re-opan a saved tab group.
+#  $group (String): the name of the tab group to re-open
+urlbar-result-action-open-saved-tabgroup = เปิด { $group }
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Waterfox Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -633,6 +863,24 @@ urlbar-group-quickactions =
 #  $engine (String): the name of the search engine used to search.
 urlbar-group-recent-searches =
     .label = การค้นหาล่าสุด
+# The header shown above trending results.
+# Variables:
+#  $engine (String): the name of the search engine providing the trending suggestions
+urlbar-group-trending =
+    .label = กำลังมาแรงใน { $engine }
+# Label shown above sponsored suggestions in the urlbar results.
+urlbar-group-sponsored =
+    .label = ได้รับการสนับสนุน
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show =
+    .label = ไม่ต้องแสดงการค้นหาที่กำลังมาแรง
+    .accesskey = ม
+urlbar-result-menu-trending-why =
+    .label = ทำไมฉันถึงเห็นสิ่งนี้?
+    .accesskey = ท
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-trending-dismissal-acknowledgment = ขอบคุณสำหรับความคิดเห็นของคุณ คุณจะไม่เห็นการค้นหาที่กำลังมาแรงอีกต่อไป
 
 ## Reader View toolbar buttons
 
@@ -819,6 +1067,9 @@ panel-save-update-password = รหัสผ่าน
 # "More" item in macOS share menu
 menu-share-more =
     .label = เพิ่มเติม…
+menu-share-copy-link =
+    .label = คัดลอกลิงก์
+    .accesskey = ง
 ui-tour-info-panel-close =
     .tooltiptext = ปิด
 
@@ -866,6 +1117,8 @@ navbar-accessible =
     .aria-label = การนำทาง
 navbar-downloads =
     .label = การดาวน์โหลด
+navbar-overflow-2 =
+    .tooltiptext = เครื่องมือเพิ่มเติม
 navbar-overflow =
     .tooltiptext = เครื่องมือเพิ่มเติม…
 # Variables:
@@ -902,7 +1155,7 @@ restore-session-startup-suggestion-button = แสดงวิธีให้ฉ
 
 filepicker-blocked-infobar = องค์กรของคุณได้ปิดกั้นการเข้าถึงไฟล์ภายในเครื่องคอมพิวเตอร์นี้
 
-## BrowserWorks data reporting notification (Telemetry, Waterfox Health Report, etc)
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } ส่งข้อมูลบางอย่างไปยัง { -vendor-short-name } โดยอัตโนมัติเพื่อให้เราสามารถปรับปรุงประสบการณ์ของคุณ
 data-reporting-notification-button =
@@ -910,6 +1163,9 @@ data-reporting-notification-button =
     .accesskey = ล
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = การเรียกดูแบบส่วนตัว
+# Tooltip for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-tooltip =
+    .tooltiptext = การเรียกดูแบบส่วนตัว
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -918,7 +1174,7 @@ content-analysis-indicator-tooltip =
 content-analysis-panel-title = การปกป้องข้อมูล
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
-content-analysis-panel-text = องค์กรของคุณใช้ { $agentName } เพื่อป้องกันข้อมูลสูญหาย <a data-l10n-name="info">เรียนรู้เพิ่มเติม</a>
+content-analysis-panel-text-styled = องค์กรของคุณใช้ <b>{ $agentName }</b> เพื่อป้องกันข้อมูลสูญหาย <a data-l10n-name="info">เรียนรู้เพิ่มเติม</a>
 
 ## Unified extensions (toolbar) button
 
@@ -943,6 +1199,15 @@ unified-extensions-button-quarantined =
     .tooltiptext =
         ส่วนขยาย
         ไม่ได้อนุญาตส่วนขยายบางตัว
+
+## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-blocklisted =
+    .label = ส่วนขยาย
+    .tooltiptext =
+        ส่วนขยาย
+        ส่วนขยายบางตัวถูกปิดใช้งาน
 
 ## Private browsing reset button
 
@@ -970,7 +1235,7 @@ refresh-blocked-allow =
     .label = อนุญาต
     .accesskey = อ
 
-## Waterfox Relay integration
+## Firefox Relay integration
 
 firefox-relay-offer-why-to-use-relay = ตัวปกปิดที่ปลอดภัยและใช้ง่ายของเราช่วยปกป้องข้อมูลประจำตัวของคุณและป้องกันสแปมด้วยการซ่อนที่อยู่อีเมลของคุณ
 # Variables:
@@ -983,6 +1248,16 @@ firefox-relay-offer-legal-notice = การคลิก “ใช้ตัว�
 popup-notification-addon-install-unsigned =
     .value = (ไม่ได้รับการยืนยัน)
 popup-notification-xpinstall-prompt-learn-more = เรียนรู้เพิ่มเติมเกี่ยวกับการติดตั้งส่วนเสริมอย่างปลอดภัย
+popup-notification-xpinstall-prompt-block-url = ดูรายละเอียด
+# Note: Access key is set to p to match "private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox2 =
+    .label = อนุญาตให้ส่วนขยายทำงานในหน้าต่างส่วนตัว
+    .accesskey = อ
+# This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
+# but it is used in the install prompt, and it needs an access key.
+popup-notification-addon-technical-and-interaction-checkbox =
+    .label = แบ่งปันข้อมูลทางเทคนิคและการโต้ตอบกับผู้พัฒนาส่วนขยาย
+    .accesskey = บ
 
 ## Pop-up warning
 
@@ -997,7 +1272,7 @@ popup-warning-button =
     .label =
         { PLATFORM() ->
             [windows] ตัวเลือก
-           *[other] การตั้งค่า
+           *[other] ค่าปรับแต่ง
         }
     .accesskey =
         { PLATFORM() ->
@@ -1008,3 +1283,31 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = แสดง “{ $popupURI }”
+
+## File-picker crash notification ("FilePickerCrashed.sys.mjs")
+
+file-picker-failed-open = ไม่สามารถเปิดกล่องโต้ตอบไฟล์ Windows ได้ ไม่สามารถเลือกไฟล์หรือโฟลเดอร์ได้
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-failed-save-somewhere = ไม่สามารถเปิดกล่องโต้ตอบไฟล์ Windows ได้ ไฟล์ดังกล่าวจะถูกบันทึกไว้ที่ { $path }
+file-picker-failed-save-nowhere = ไม่สามารถเปิดกล่องโต้ตอบไฟล์ Windows ได้ ไม่พบโฟลเดอร์เริ่มต้น ไฟล์จึงไม่ถูกบันทึก
+file-picker-crashed-open = กล่องโต้ตอบไฟล์ Windows ขัดข้อง ไม่สามารถเลือกไฟล์หรือโฟลเดอร์ได้
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-crashed-save-somewhere = กล่องโต้ตอบไฟล์ Windows ขัดข้อง ไฟล์ดังกล่าวจะถูกบันทึกไว้ที่ { $path }
+file-picker-crashed-save-nowhere = กล่องโต้ตอบไฟล์ Windows ขัดข้อง ไม่พบโฟลเดอร์เริ่มต้น ไฟล์จึงไม่ถูกบันทึก
+
+# Button used with file-picker-crashed-save-default. Opens the folder in Windows
+# Explorer, with the saved file selected and in focus.
+#
+# The wording here should be consistent with the Windows variant of
+# `downloads-cmd-show-menuitem-2` and similar messages.
+
+file-picker-crashed-show-in-folder =
+    .label = แสดงในโฟลเดอร์
+    .accessKey = F
+
+## Onboarding Finish Setup checklist
+
+onboarding-checklist-button-label = ตั้งค่าให้เสร็จสิ้น
+onboarding-aw-finish-setup-button =
+    .label = ตั้งค่าให้เสร็จสิ้น
+    .tooltiptext = ตั้งค่า { -brand-short-name } ให้เสร็จสิ้น

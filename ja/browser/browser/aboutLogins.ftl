@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -11,10 +11,10 @@ create-new-login-button =
     .title = 新しいログイン情報を作成
 about-logins-page-title-name = パスワード
 about-logins-login-filter2 =
-  .placeholder = パスワードを検索
-  .key = F
+    .placeholder = パスワードを検索
+    .key = F
 create-login-button =
-  .title = パスワードを追加します
+    .title = パスワードを追加します
 fxaccounts-sign-in-text = 他の端末でもパスワードが使える
 fxaccounts-sign-in-sync-button = ログインして同期
 fxaccounts-avatar-button =
@@ -48,26 +48,14 @@ login-list-count = { $count } 件のログイン情報
 # Variables
 #   $count (number) - Number of filtered logins
 #   $total (number) - Total number of logins
-login-list-filtered-count =
-    { $total ->
-        [one] { $total } 件中 { $count } 件のログイン情報
-       *[other] { $total } 件中 { $count } 件のログイン情報
-    }
+login-list-filtered-count = { $total } 件中 { $count } 件のログイン情報
 # Variables
 #   $count (number) - Number of logins
-login-list-count2 =
-    { $count ->
-        [one] { $count } 件のパスワード
-       *[other] { $count } 件のパスワード
-    }
+login-list-count2 = { $count } 件のパスワード
 # Variables
 #   $count (number) - Number of filtered logins
 #   $total (number) - Total number of logins
-login-list-filtered-count2 =
-    { $total ->
-        [one] { $total } 件中 { $count } 件のパスワード
-       *[other] { $total } 件中 { $count } 件のパスワード
-    }
+login-list-filtered-count2 = { $total } 件中 { $count } 件のパスワード
 login-list-sort-label-text = 並べ替え:
 login-list-name-option = 名前 (昇順)
 login-list-name-reverse-option = 名前 (降順)
@@ -135,7 +123,9 @@ login-item-copy-username-button-text = コピー
 login-item-copied-username-button-text = コピーしました！
 login-item-password-label = パスワード
 login-item-password-reveal-checkbox =
-    .aria-label = パスワードを表示
+    .aria-label = パスワードを開示
+login-item-password-conceal-checkbox =
+    .aria-label = パスワードを隠す
 login-item-copy-password-button-text = コピー
 login-item-copied-password-button-text = コピーしました！
 login-item-save-changes-button = 変更を保存
@@ -158,7 +148,7 @@ login-item-timeline-action-used = 利用
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -167,10 +157,10 @@ about-logins-edit-login-os-auth-dialog-message-win = ログイン情報を編集
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = 保存したログイン情報を編集
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
-# (^m^) [macos] Waterfox が...しようとしています。
-about-logins-os-auth-dialog-message=
+# (^m^) [macos] Firefox が...しようとしています。
+about-logins-os-auth-dialog-message =
     { PLATFORM() ->
         [macos] パスワード設定を変更
        *[other] { -brand-short-name } がパスワード設定を変更しようとしています。許可するには端末のログイン情報を使用してください。
@@ -184,7 +174,7 @@ about-logins-edit-login-os-auth-dialog-message2-macosx = 保存したパスワ�
 about-logins-reveal-password-os-auth-dialog-message-win = ログイン情報を表示するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-reveal-password-os-auth-dialog-message-macosx = 保存したパスワードを表示
+about-logins-reveal-password-os-auth-dialog-message-macosx = 保存したパスワードを開示
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = ログイン情報をコピーするには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
 # This message can be seen when attempting to copy a password in about:logins
@@ -245,7 +235,7 @@ about-logins-confirm-remove-all-sync-dialog-title =
         [one] すべての端末から { $count } 件のログイン情報を消去しますか？
        *[other] すべての端末から { $count } 件のすべてのログイン情報を消去しますか？
     }
-about-logins-confirm-remove-all-sync-dialog-message=
+about-logins-confirm-remove-all-sync-dialog-message =
     { $count ->
         [1] { -fxaccount-brand-name } と同期した全端末の { -brand-short-name } に保存したログイン情報が消去されます。ここ表示される情報漏洩の警告も消去されます。この操作は取り消すことができません。
        *[other] { -fxaccount-brand-name } と同期した全端末の { -brand-short-name } に保存したすべてのログイン情報が消去されます。ここ表示される情報漏洩の警告も消去されます。この操作は取り消すことができません。
@@ -287,7 +277,7 @@ about-logins-confirm-export-dialog-title = ログイン情報とパスワード�
 about-logins-confirm-export-dialog-message = あなたのパスワードは可読テキストとして保存されます。(例: BadP@ssw0rd) エクスポートされたファイルを開ける人なら誰でも内容を読み取ることが可能になります。
 about-logins-confirm-export-dialog-confirm-button = エクスポート...
 about-logins-confirm-export-dialog-title2 = パスワードのエクスポートについて
-about-logins-confirm-export-dialog-message2 = 
+about-logins-confirm-export-dialog-message2 =
     パスワードをエクスポートすると、人の読めるテキスト形式でファイルに保存されます。
     このファイルを使用した後は必ず削除して、この端末を使用する他者にあなたのパスワードが見られないようにしてください。
 about-logins-confirm-export-dialog-confirm-button2 = エクスポートを続ける
@@ -443,15 +433,15 @@ about-logins-import-report-no-change =
     }
 about-logins-import-report-added2 =
     { $count ->
-        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">新しいパスワードを追加しました</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">新しいパスワードを追加しました</div>
     }
 about-logins-import-report-modified2 =
     { $count ->
-        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">既存のエントリーを更新しました</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">既存のエントリーを更新しました</div>
     }
 about-logins-import-report-no-change2 =
     { $count ->
-        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">エントリーが重複</div> <div data-l10n-name="not-imported">(インポートされませんでした)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">エントリーが重複</div> <div data-l10n-name="not-imported">(インポートされませんでした)</div>
     }
 about-logins-import-report-error =
     { $count ->

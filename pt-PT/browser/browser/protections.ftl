@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,9 +24,9 @@ graph-private-window = O { -brand-short-name } continua a bloquear os rastreador
 graph-week-summary-private-window = Rastreadores que o { -brand-short-name } bloqueou esta semana
 protection-report-webpage-title = Painel das proteções
 protection-report-page-content-title = Painel das proteções
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = O { -brand-short-name } pode proteger a sua privacidade nos bastidores, enquanto navega. Este é um resumo personalizado destas proteções, incluindo ferramentas para assumir o controle da sua segurança na Internet.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = O { -brand-short-name } protege a sua privacidade, nos bastidores, enquanto navega. Este é um resumo personalizado destas proteções, incluindo ferramentas para assumir a gestão da sua segurança na Internet.
 protection-report-settings-link = Gerir as suas definições de privacidade e segurança
 etp-card-title-always = Proteção melhorada contra a monitorização: Sempre ligada
@@ -56,7 +56,7 @@ mobile-app-title = Bloquear anúncios de monitorização em mais dispositivos
 mobile-app-card-content = Utilize o navegador móvel com proteção integrada contra anúncios de monitorização.
 mobile-app-links = O navegador { -brand-product-name } para <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Nunca mais esqueça uma palavra-passe
-passwords-title-logged-in = Gira as suas palavras-passe
+passwords-title-logged-in = Gerir as suas palavras-passe
 passwords-header-content = O { -brand-product-name } guarda as suas palavras-passe em segurança no seu navegador.
 lockwise-header-content-logged-in = Guarde e sincronize em segurança as suas palavras-passe em todos os seus dispositivos.
 protection-report-passwords-save-passwords-button = Guardar palavras-passe

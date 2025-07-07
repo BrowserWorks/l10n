@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,21 +22,18 @@ download-ui-dont-quit-button =
         [mac] 종료 안 함
        *[other] 종료 안 함
     }
-
 download-ui-confirm-offline-cancel-downloads =
     { $downloadsCount ->
         [1] 오프라인 상태가 되면 1개의 다운로드가 취소됩니다. 오프라인 상태로 전환하시겠습니까?
        *[other] 오프라인 상태가 되면 { $downloadsCount }개의 다운로드가 취소됩니다. 오프라인 상태로 전환하시겠습니까?
     }
 download-ui-dont-go-offline-button = 온라인 상태 유지
-
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
         [1] 모든 사생활 보호 창을 닫으면, 1개의 다운로드가 취소됩니다. 사생활 보호 모드에서 나가시겠습니까?
        *[other] 모든 사생활 보호 창을 닫으면, { $downloadsCount }개의 다운로드가 취소됩니다. 사생활 보호 모드에서 나가시겠습니까?
     }
 download-ui-dont-leave-private-browsing-button = 사생활 보호 모드 계속하기
-
 download-ui-cancel-downloads-ok =
     { $downloadsCount ->
         [1] 다운로드 1개 취소

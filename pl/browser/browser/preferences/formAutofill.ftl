@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,8 +39,6 @@ address-capture-manage-address-button =
     .label = Ustawienia adresu
 address-capture-learn-more-button =
     .label = Więcej informacji
-# The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = Nowy adres
 address-capture-open-menu-button =
     .aria-label = Otwórz menu
 address-capture-edit-address-button =
@@ -49,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = Dodawanie adresu
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Edycja adresu
-autofill-address-name = Nazwa
 autofill-address-given-name = Imię
 autofill-address-additional-name = Drugie imię
 autofill-address-family-name = Nazwisko
+autofill-address-name = Nazwa
 autofill-address-organization = Organizacja
 autofill-address-street-address = Adres
 autofill-address-street = Adres
@@ -108,9 +106,8 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = Nowy adres
 autofill-address-country = Państwo lub region
 autofill-address-country-only = Państwo
 autofill-address-tel = Telefon
@@ -122,7 +119,7 @@ autofill-country-warning-message = Wypełnianie formularzy jest obecnie dostępn
 autofill-add-new-card-title = Dodawanie nowej karty płatniczej
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Edycja danych karty płatniczej
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

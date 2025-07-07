@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,9 +18,13 @@ support-addons-type = Τύπος
 support-addons-enabled = Ενεργό
 support-addons-version = Έκδοση
 support-addons-id = ID
-legacy-user-stylesheets-title = Φύλλα στυλ χρήστη παλαιού τύπου
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Τοποθεσία
+legacy-user-stylesheets-title = Παλαιού τύπου φύλλα μορφοποίησης χρήστη
 legacy-user-stylesheets-enabled = Ενεργό
-legacy-user-stylesheets-stylesheet-types = Φύλλο στυλ
+legacy-user-stylesheets-stylesheet-types = Φύλλα μορφοποίησης
 legacy-user-stylesheets-no-stylesheets-found = Δεν βρέθηκαν φύλλα στυλ
 security-software-title = Λογισμικό ασφαλείας
 security-software-type = Τύπος
@@ -59,7 +63,7 @@ app-basics-profile-dir =
     }
 app-basics-enabled-plugins = Ενεργά αρθρώματα
 app-basics-build-config = Ρύθμιση δομής
-app-basics-user-agent = Παράγοντας χρήστη
+app-basics-user-agent = Πράκτορας χρήστη
 app-basics-os = ΛΣ
 app-basics-os-theme = Θέμα ΛΣ
 # Rosetta is Apple's translation process to run apps containing x86_64
@@ -88,7 +92,7 @@ app-basics-pointing-devices = Συσκευές κατάδειξης
 app-basics-data-size = { $value } { $unit }
 show-dir-label =
     { PLATFORM() ->
-        [macos] Προβολή στο Finder
+        [macos] Εμφάνιση στο Finder
         [windows] Άνοιγμα φακέλου
        *[other] Άνοιγμα καταλόγου
     }
@@ -184,6 +188,8 @@ media-capabilities-enumerate = Απαρίθμηση βάσης δεδομένω�
 
 media-codec-support-sw-decoding = Αποκωδικοποίηση λογισμικού
 media-codec-support-hw-decoding = Αποκωδικοποίηση υλικού
+media-codec-support-sw-encoding = Κωδικοποίηση λογισμικού
+media-codec-support-hw-encoding = Κωδικοποίηση υλικού
 media-codec-support-codec-name = Όνομα κωδικοποιητή
 media-codec-support-supported = Υποστηρίζεται
 media-codec-support-unsupported = Δεν υποστηρίζεται
@@ -221,7 +227,7 @@ intl-regional-prefs = Προτιμήσεις περιοχής
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -347,6 +353,9 @@ has-seccomp-bpf = Seccomp-BPF (Φιλτράρισμα κλήσεων συστή�
 has-seccomp-tsync = Συγχρονισμός νήματος Seccomp
 has-user-namespaces = Χώροι ονομάτων χρήστη
 has-privileged-user-namespaces = Χώροι ονομάτων χρήστη για προνομιακές διεργασίες
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Αυτή η λειτουργία δεν επιτρέπεται από το σύστημά σας. Αυτό μπορεί να περιορίσει τις λειτουργίες ασφαλείας του { -brand-short-name }.
 can-sandbox-content = Sandboxing διεργασίας περιεχομένου
 can-sandbox-media = Sandboxing αρθρώματος πολυμέσων
 content-sandbox-level = Επίπεδο sandbox διεργασίας περιεχομένου
@@ -381,8 +390,8 @@ fission-status-enabled-by-env = Ενεργοποιήθηκε από το περ�
 fission-status-disabled-by-env = Ανενεργό λόγω περιβάλλοντος
 fission-status-enabled-by-default = Ενεργό από προεπιλογή
 fission-status-disabled-by-default = Απενεργοποιήθηκε από προεπιλογή
-fission-status-enabled-by-user-pref = Ενεργοποιήθηκε από το χρήστη
-fission-status-disabled-by-user-pref = Απενεργοποιήθηκε από το χρήστη
+fission-status-enabled-by-user-pref = Ενεργοποιήθηκε από τον χρήστη
+fission-status-disabled-by-user-pref = Απενεργοποιήθηκε από τον χρήστη
 fission-status-disabled-by-e10s-other = Ανενεργό E10s
 fission-status-enabled-by-rollout = Ενεργό με σταδιακή διάθεση
 async-pan-zoom = Ασύγχρονο pan/zoom
@@ -453,7 +462,7 @@ pointing-device-none = Δεν υπάρχουν συσκευές κατάδειξ
 # to external websites.
 content-analysis-title = Ανάλυση περιεχομένου (DLP)
 content-analysis-active = Ενεργή
-content-analysis-connected-to-agent = Έγινε σύνδεση με πάροχο
-content-analysis-agent-path = Διαδρομή παρόχου
-content-analysis-agent-failed-signature-verification = Αποτυχία επαλήθευσης υπογραφής παρόχου
+content-analysis-connected-to-agent = Σε σύνδεση με παράγοντα
+content-analysis-agent-path = Διαδρομή παράγοντα
+content-analysis-agent-failed-signature-verification = Αποτυχία επαλήθευσης υπογραφής παράγοντα
 content-analysis-request-count = Αριθμός αιτημάτων

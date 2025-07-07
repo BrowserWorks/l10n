@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -140,6 +140,8 @@ login-item-copied-username-button-text = Αντιγράφηκε!
 login-item-password-label = Κωδικός πρόσβασης
 login-item-password-reveal-checkbox =
     .aria-label = Εμφάνιση κωδικού πρόσβασης
+login-item-password-conceal-checkbox =
+    .aria-label = Απόκρυψη κωδικού πρόσβασης
 login-item-copy-password-button-text = Αντιγραφή
 login-item-copied-password-button-text = Αντιγράφηκε!
 login-item-save-changes-button = Αποθήκευση αλλαγών
@@ -162,7 +164,7 @@ login-item-timeline-action-used = Χρήση
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -171,7 +173,7 @@ about-logins-edit-login-os-auth-dialog-message-win = Για να επεξεργ�
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = επεξεργαστεί την αποθηκευμένη σύνδεση
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
@@ -206,7 +208,7 @@ about-logins-export-password-os-auth-dialog-message2-macosx = εξαγάγει �
 
 ## Primary Password notification
 
-about-logins-primary-password-notification-message = Παρακαλώ εισαγάγετε τον κύριο κωδικό πρόσβασής σας για να δείτε τις αποθηκευμένες συνδέσεις και κωδικούς πρόσβασης
+about-logins-primary-password-notification-message = Εισαγάγετε τον κύριο κωδικό πρόσβασής σας για να δείτε τις αποθηκευμένες συνδέσεις και κωδικούς πρόσβασης
 master-password-reload-button =
     .label = Σύνδεση
     .accesskey = Σ
@@ -273,7 +275,7 @@ about-logins-confirm-remove-all-dialog-title2 =
 about-logins-confirm-remove-all-dialog-message2 =
     { $count ->
         [1] Αυτή η ενέργεια θα αφαιρέσει τον κωδικό πρόσβασης που έχει αποθηκευτεί στο { -brand-short-name }, καθώς και τυχόν ειδοποιήσεις παραβιάσεων. Δεν μπορείτε να αναιρέσετε αυτήν την ενέργεια.
-       *[other] This will remove the passwords saved to { -brand-short-name } and any breach alerts. You cannot undo this action.
+       *[other] Αυτή η ενέργεια θα αφαιρέσει τους κωδικούς πρόσβασης που έχουν αποθηκευτεί στο { -brand-short-name }, καθώς και τυχόν ειδοποιήσεις παραβιάσεων. Δεν μπορείτε να αναιρέσετε αυτήν την ενέργεια.
     }
 # Title for modal to confirm the removal of all saved passwords when user IS SYNCED
 about-logins-confirm-remove-all-sync-dialog-title2 =
@@ -307,7 +309,7 @@ confirm-discard-changes-dialog-confirm-button = Απόρριψη
 ## Breach Alert notification
 
 about-logins-breach-alert-title = Παραβίαση ιστοτόπου
-breach-alert-text = Από την τελευταία φορά που αλλάξατε τα στοιχεία σύνδεσής σας σε αυτόν τον ιστότοπο, έχουν υπάρξει περιπτώσεις διαρροής ή κλοπής κωδικών. Για να προστατεύσετε το λογαριασμό σας, αλλάξτε τον κωδικό σας.
+breach-alert-text = Από την τελευταία φορά που αλλάξατε τα στοιχεία σύνδεσής σας σε αυτόν τον ιστότοπο, έχουν υπάρξει περιπτώσεις διαρροής ή κλοπής κωδικών πρόσβασης. Για να προστατέψετε τον λογαριασμό σας, αλλάξτε τον κωδικό πρόσβασής σας.
 about-logins-breach-alert-date = Η παραβίαση συνέβη στις { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -414,9 +416,9 @@ about-logins-import-dialog-error-conflicting-values-title = Πολλές τιμ�
 about-logins-import-dialog-error-conflicting-values-description = Για παράδειγμα: πολλαπλά ονόματα χρήστη, κωδικοί πρόσβασης, URL, κ.λπ. για μια σύνδεση.
 about-logins-import-dialog-error-file-format-title = Πρόβλημα μορφής αρχείου
 about-logins-import-dialog-error-file-format-description = Σφάλμα ή απουσία κεφαλίδων στήλης. Βεβαιωθείτε ότι το αρχείο περιλαμβάνει στήλες για όνομα χρήστη, κωδικό πρόσβασης και URL.
-about-logins-import-dialog-error-file-permission-title = Αδυναμία ανάγνωσης αρχείου
+about-logins-import-dialog-error-file-permission-title = Δεν είναι δυνατή η ανάγνωση του αρχείου
 about-logins-import-dialog-error-file-permission-description = Το { -brand-short-name } δεν έχει άδεια ανάγνωσης για το αρχείο. Δοκιμάστε να αλλάξετε τα δικαιώματα του αρχείου.
-about-logins-import-dialog-error-unable-to-read-title = Αδυναμία ανάλυσης αρχείου
+about-logins-import-dialog-error-unable-to-read-title = Δεν είναι δυνατή η ανάλυση του αρχείου
 about-logins-import-dialog-error-unable-to-read-description = Βεβαιωθείτε ότι έχετε επιλέξει ένα αρχείο CSV ή TSV.
 about-logins-import-dialog-error-no-logins-imported = Δεν έγινε εισαγωγή συνδέσεων
 about-logins-import-dialog-error-learn-more = Μάθετε περισσότερα

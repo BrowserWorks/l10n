@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,7 +10,6 @@ crashed-subframe-message =
         [with-cases] <strong>Část této stránky spadla.</strong> Pokud chcete autorům { -brand-product-name(case: "gen") } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
        *[no-cases] <strong>Část této stránky spadla.</strong> Pokud chcete autorům aplikace { -brand-product-name } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
     }
-
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -41,3 +40,15 @@ pending-crash-reports-send =
     .label = Odeslat
 pending-crash-reports-always-send =
     .label = Vždy odeslat
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message =
+    { $reportCount ->
+        [one] Máte neodeslané hlášení o pádu, které odpovídá prošetřovaným pádům. Jeho odesláním nám pomůžete vylepšit aplikaci { -brand-product-name }. Zavřením tohoto oznámení bude toto hlášení ignorováno.
+        [few] Máte { $reportCount } neodeslaná hlášení o pádu, která odpovídají prošetřovaným pádům. Jejich odesláním nám pomůžete vylepšit aplikaci { -brand-product-name }. Zavřením tohoto oznámení budou tato hlášení ignorována.
+        [many] Máte { $reportCount } neodeslaných hlášení o pádu, která odpovídají prošetřovaným pádům. Jejich odesláním nám pomůžete vylepšit aplikaci { -brand-product-name }. Zavřením tohoto oznámení budou tato hlášení ignorována.
+       *[other] Máte { $reportCount } neodeslaných hlášení o pádu, která odpovídají prošetřovaným pádům. Jejich odesláním nám pomůžete vylepšit aplikaci { -brand-product-name }. Zavřením tohoto oznámení budou tato hlášení ignorována.
+    }
+requested-crash-reports-dont-show-again =
+    .label = Znovu nezobrazovat
+    .accesskey = Z

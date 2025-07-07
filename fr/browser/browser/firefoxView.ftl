@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = Terminé à { $percentValue } %
 firefoxview-tabpickup-step-signin-header = Passez facilement d’un appareil à l’autre
 firefoxview-tabpickup-step-signin-description = Pour récupérer les onglets de votre téléphone ici, commencez par vous connecter ou créer un compte.
 firefoxview-tabpickup-step-signin-primarybutton = Continuer
+firefoxview-syncedtabs-signin-header-2 = Votre { -brand-product-name } sur tous vos appareils
+firefoxview-syncedtabs-signin-description-2 = Pour afficher les onglets ouverts sur votre téléphone et vos autres appareils, connectez-vous ou créez un compte. Avec un compte, vous pouvez également synchroniser mots de passe, historique et plus encore.
+firefoxview-syncedtabs-signin-primarybutton-2 = Connexion
 firefoxview-syncedtabs-signin-header = Récupérez vos onglets où que vous soyez
 firefoxview-syncedtabs-signin-description = Pour consulter vos onglets où que vous utilisiez { -brand-product-name }, connectez-vous à votre compte. Si vous n’avez pas de compte, nous vous guiderons à chaque étape de l’inscription.
 firefoxview-syncedtabs-signin-primarybutton = S’inscrire ou se connecter
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synchronisez { -brand-product-name } av
 firefoxview-tabpickup-adddevice-description = Téléchargez { -brand-product-name } pour mobile et connectez-vous.
 firefoxview-tabpickup-adddevice-learn-how = Découvrez comment
 firefoxview-tabpickup-adddevice-primarybutton = Installez { -brand-product-name } sur votre appareil mobile
+firefoxview-syncedtabs-adddevice-header-2 = Récupérez vos onglets où que vous soyez
+firefoxview-syncedtabs-adddevice-description-2 = Connectez-vous à { -brand-product-name } sur votre téléphone ou un autre ordinateur pour afficher leurs onglets ici. Découvrez comment <a data-l10n-name="url">connecter des appareils supplémentaires</a>.
 firefoxview-syncedtabs-adddevice-header = Connectez-vous à { -brand-product-name } sur vos autres appareils
 firefoxview-syncedtabs-adddevice-description = Pour consulter vos onglets où que vous utilisiez { -brand-product-name }, connectez-vous sur tous vos appareils. Découvrez comment <a data-l10n-name="url">connecter des appareils supplémentaires</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Essayer { -brand-product-name } pour mobile
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Onglets d’autres appareils
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Tout afficher
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Rechercher dans les onglets récemment fermés
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Rechercher dans les onglets
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Rechercher parmi les onglets synchronisés
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (fichiers locaux)
 firefoxview-show-all-history = Afficher tout l’historique
 firefoxview-view-more-browsing-history = Afficher plus d’historique de navigation
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Reprenez là où vous en étiez
 firefoxview-history-empty-description = Au cours de votre navigation, les pages visitées seront répertoriées ici.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = La protection de votre vie privée e
 firefoxview-choose-browser-button = Choisir le navigateur
     .title = Choisir le navigateur
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Rien à afficher
 firefoxview-dont-remember-history-empty-description = La protection de votre vie privée est notre priorité. C’est la raison pour laquelle vous pouvez contrôler les activités dont { -brand-short-name } garde trace.
 firefoxview-dont-remember-history-empty-description-two = D’après vos paramètres actuels, { -brand-short-name } ne conserve aucune trace de vos activités de navigation. Pour changer cela, <a data-l10n-name="history-settings-url-two">modifiez vos paramètres d’historique pour conserver votre historique de navigation</a>.
+firefoxview-dont-remember-history-empty-header-2 = Vous contrôlez ce que { -brand-short-name } mémorise
+firefoxview-dont-remember-history-empty-description-one = Pour l’instant, { -brand-short-name } ne mémorise pas votre navigation. Pour changer cela, <a data-l10n-name="history-settings-url-two">modifiez vos paramètres d’historique</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Fermer
     .title = Fermer
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importer l’historique d’un autre navigateur
 firefoxview-import-history-description = Faites de { -brand-short-name } votre navigateur par défaut. Importez l’historique de navigation, les marque-pages, etc.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Vous avez fermé un onglet par erreur ?
 firefoxview-recentlyclosed-empty-description = Vous trouverez ici les onglets que vous avez récemment fermés, afin de pouvoir les rouvrir rapidement.

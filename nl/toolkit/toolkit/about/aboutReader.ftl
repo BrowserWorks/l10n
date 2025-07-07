@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Sepia
     .title = Kleurenschema Sepia
 about-reader-color-scheme-auto = Auto
     .title = Kleurenschema Automatisch
-about-reader-color-theme-light = Licht
-    .title = Kleurthema Licht
-about-reader-color-theme-dark = Donker
-    .title = Kleurthema Donker
-about-reader-color-theme-sepia = Sepia
-    .title = Kleurthema Sepia
-about-reader-color-theme-auto = Auto
-    .title = Kleurthema Auto
-about-reader-color-theme-gray = Grijs
-    .title = Kleurthema Grijs
-about-reader-color-theme-contrast = Contrast
-    .title = Kleurthema Contrast
-about-reader-color-theme-custom = Aangepaste kleuren
-    .title = Kleurthema Aangepaste kleuren
 about-reader-color-light-theme = Licht
     .title = Licht thema
 about-reader-color-dark-theme = Donker
@@ -49,7 +35,7 @@ about-reader-estimated-read-time =
        *[other] { $range } minuten
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Tekengrootte verkleinen
@@ -74,7 +60,6 @@ about-reader-font-type-monospace = Monospace
 
 about-reader-toolbar-close = Lezerweergave sluiten
 about-reader-toolbar-type-controls = Lettertype-instellingen
-about-reader-toolbar-color-controls = Kleuren
 about-reader-toolbar-text-layout-controls = Tekst en opmaak
 about-reader-toolbar-theme-controls = Thema
 about-reader-toolbar-savetopocket = Opslaan in { -pocket-brand-name }
@@ -99,10 +84,24 @@ about-reader-custom-colors-visited-links = Bezochte koppelingen
     .title = Kleur bewerken
 about-reader-custom-colors-selection-highlight = Markeerstift voor hardop lezen
     .title = Kleur bewerken
-about-reader-custom-colors-reset-button = Standaardinstellingen opnieuw instellen
 about-reader-reset-button = Standaardinstellingen opnieuw instellen
+about-reader-custom-colors-foreground2 =
+    .label = Tekst
+    .title = Kleur bewerken
+about-reader-custom-colors-background2 =
+    .label = Achtergrond
+    .title = Kleur bewerken
+about-reader-custom-colors-unvisited-links2 =
+    .label = Niet-bezochte koppelingen
+    .title = Kleur bewerken
+about-reader-custom-colors-visited-links2 =
+    .label = Bezochte koppelingen
+    .title = Kleur bewerken
+about-reader-custom-colors-selection-highlight2 =
+    .label = Markeerstift voor hardop lezen
+    .title = Kleur bewerken
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Tekst
 about-reader-text-size-label = Tekengrootte
@@ -119,9 +118,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Regelafstand
 about-reader-advanced-layout-header = Geavanceerd
-about-reader-slider-label-width-narrow = Smal
-about-reader-slider-label-width-wide = Breed
-about-reader-slider-label-spacing-narrow = Smal
 about-reader-character-spacing-label =
     .label = Tekenafstand
 about-reader-word-spacing-label =
@@ -133,3 +129,5 @@ about-reader-text-alignment-center =
     .title = Tekst gecentreerd uitlijnen
 about-reader-text-alignment-right =
     .title = Tekst rechts uitlijnen
+about-reader-text-alignment-justify =
+    .title = Tekst uitlijnen

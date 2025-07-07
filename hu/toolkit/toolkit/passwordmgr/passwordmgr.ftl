@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,7 +15,7 @@ password-manager-save-password-button-allow =
     .label = Mentés
     .accesskey = e
 password-manager-save-password-button-never =
-    .label = Soha ne mentse
+    .label = Sose mentse
     .accesskey = S
 # Variables
 #   $host (String) - Hostname for which the password is updated for.

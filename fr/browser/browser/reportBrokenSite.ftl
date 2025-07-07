@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,9 +9,26 @@ report-broken-site-panel-header =
 report-broken-site-panel-intro = Contribuez à améliorer { -brand-product-name } pour tout le monde. { -vendor-short-name } utilise les informations que vous envoyez pour régler des problèmes rencontrés avec des sites web.
 report-broken-site-panel-url = Adresse web
 report-broken-site-panel-reason-label = Quel est le problème ?
-report-broken-site-panel-reason-optional-label = Quel est le problème ? (facultatif)
+report-broken-site-panel-reason-optional-label = Quel est le problème ? (facultatif)
 report-broken-site-panel-reason-choose =
     .label = Choisissez un motif
+report-broken-site-panel-reason-load =
+    .label = Le site ne se charge pas
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = Je ne peux pas payer ou faire des achats
+report-broken-site-panel-reason-slow2 =
+    .label = Le site est lent
+report-broken-site-panel-reason-media2 =
+    .label = Impossible de lire une vidéo ou de la charger
+report-broken-site-panel-reason-content2 =
+    .label = Contenus manquants
+report-broken-site-panel-reason-account2 =
+    .label = Impossible de se connecter ou de s’inscrire
+report-broken-site-panel-reason-adblocker2 =
+    .label = Le site demande de désactiver le bloqueur de publicités
+report-broken-site-panel-reason-notsupported =
+    .label = Le navigateur n’est pas pris en charge ou est bloqué
 report-broken-site-panel-reason-slow =
     .label = Le site est lent ou ne fonctionne pas
 report-broken-site-panel-reason-media =

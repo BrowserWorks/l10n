@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -65,6 +65,14 @@ perftools-button-restart = Restartovat
 perftools-button-add-directory = Přidat adresář
 perftools-button-remove-directory = Odebrat vybrané
 perftools-button-edit-settings = Upravit nastavení…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Více akcí
+perftools-menu-more-actions-restart-with-profiling = Restartovat { -brand-shorter-name } s povoleným profilováním při spuštění
+perftools-menu-more-actions-copy-for-startup = Kopírování proměnných prostředí pro profilování při spuštění
+perftools-menu-more-actions-copy-for-perf-tests = Kopírovat parametry pro výkonnostní testy
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -150,6 +158,8 @@ perftools-presets-media-description2 =
         [with-cases] Doporučené nastavení pro ladění chyb při přehrávání zvuku nebo videa ve { -brand-shorter-name(case: "loc") }.
        *[no-cases] Doporučené nastavení pro ladění chyb při přehrávání zvuku nebo videa v aplikaci { -brand-shorter-name }.
     }
+perftools-presets-ml-label = Strojové učení
+perftools-presets-ml-description2 = Doporučené nastavení pro ladění problémů se strojovým učením v aplikaci { -brand-shorter-name }.
 perftools-presets-networking-label = Síť
 perftools-presets-networking-description =
     { -brand-shorter-name.case-status ->
@@ -164,7 +174,11 @@ perftools-presets-power-description =
        *[no-cases] Doporučené nastavení pro ladění chyb ve spotřebě aplikace { -brand-shorter-name }.
     }
 perftools-presets-debug-label = Ladění
-perftools-presets-debug-description = Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+perftools-presets-debug-description =
+    { -brand-shorter-name.case-status ->
+        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "loc") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+       *[no-cases] Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+    }
 perftools-presets-custom-label = Vlastní
 
 ##

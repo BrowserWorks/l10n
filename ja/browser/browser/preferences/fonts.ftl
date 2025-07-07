@@ -1,10 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
     .title = フォント
-
 fonts-window-close =
     .key = w
 
@@ -12,7 +11,6 @@ fonts-window-close =
 
 fonts-langgroup-header = 対象言語
     .accesskey = F
-
 fonts-langgroup-arabic =
     .label = アラビア語
 fonts-langgroup-armenian =
@@ -77,37 +75,27 @@ fonts-langgroup-other =
 
 fonts-proportional-header = プロポーショナル
     .accesskey = P
-
 fonts-default-serif =
     .label = 明朝体 (Serif)
 fonts-default-sans-serif =
     .label = ゴシック体 (Sans-serif)
-
 fonts-proportional-size = サイズ
     .accesskey = z
-
 fonts-serif = 明朝体 (Serif)
     .accesskey = S
-
 fonts-sans-serif = ゴシック体 (Sans-serif)
     .accesskey = n
-
 fonts-monospace = 等幅 (Monospace)
     .accesskey = M
-
 fonts-monospace-size = サイズ
     .accesskey = e
-
 fonts-minsize = 最小フォントサイズ
     .accesskey = o
-
 fonts-minsize-none =
     .label = なし
-
 fonts-allow-own =
     .label = ウェブページが指定したフォントを優先する
     .accesskey = A
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

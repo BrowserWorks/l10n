@@ -1,11 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ##
 ## Localization for remote types defined in RemoteType.h
-##
 
 process-type-web = 网页内容
 # process used to run privileged about pages,
@@ -30,7 +29,6 @@ process-type-prealloc = 预分配
 
 ##
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
-##
 
 process-type-default = 主要
 process-type-tab = 标签页
@@ -41,6 +39,8 @@ process-type-gpu = GPU
 process-type-socket = 套接字
 # process used to decode media
 process-type-rdd = RDD
+# process used to run inference
+process-type-inference = 推理进程
 # process used to run some IPC actor in their own sandbox
 process-type-utility = 沙盒化 IPC 角色
 process-type-utility-actor-audio-decoder-generic = 实用工具“通用音频解码器”
@@ -53,7 +53,6 @@ process-type-utility-actor-windows-file-dialog = 实用工具”Windows File Dia
 
 ##
 ## Other
-##
 
 # fallback
 process-type-unknown = 未知

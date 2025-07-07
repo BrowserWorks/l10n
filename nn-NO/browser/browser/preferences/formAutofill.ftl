@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,7 @@ autofill-manage-addresses-title = Lagra adresser
 autofill-manage-addresses-list-header = Adressat
 autofill-manage-credit-cards-title = Lagra kredittkort
 autofill-manage-credit-cards-list-header = Kredittkort
-autofill-manage-payment-methods-title = Lagra betaslingsmetodar
+autofill-manage-payment-methods-title = Lagra betalingsmetodar
 autofill-manage-cards-list-header = Kort
 autofill-manage-dialog =
     .style = min-width: 560px
@@ -106,9 +106,6 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = Legg til ny adresse
 autofill-address-country = Land eller region
@@ -122,7 +119,7 @@ autofill-country-warning-message = Automatisk utfylling av skjema er for tida be
 autofill-add-new-card-title = Legg til nytt kredittkort
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Rediger kredittkort
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

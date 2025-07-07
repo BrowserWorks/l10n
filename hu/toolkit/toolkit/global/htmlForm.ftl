@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,3 +12,9 @@ input-file-and-more-files =
         [one] és még egy
        *[other] és még { $fileCount }
     }
+form-post-secure-to-insecure-warning-title = Biztonsági figyelmeztetés
+form-post-secure-to-insecure-warning-message =
+    A jelen oldalon beírt információk egy nem biztonságos kapcsolaton keresztül kerülnek elküldésre, így egy harmadik fél elolvashatja ezeket.
+    
+    Biztos, hogy el akarja küldeni az információkat?
+form-post-secure-to-insecure-warning-continue = Folytatás

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,9 +25,51 @@ webext-perms-description-nativeMessaging = Üzenetváltás a { -brand-short-name
 webext-perms-description-notifications = Értesítések megjelenítése
 webext-perms-description-pkcs11 = Kriptográfiai hitelesítési szolgáltatások biztosítása
 webext-perms-description-privacy = Adatvédelmi beállítások olvasása és módosítása
-webext-perms-description-proxy = Böngésző proxy beállítások vezérlése
+webext-perms-description-proxy = Böngésző proxybeállításainak vezérlése
 webext-perms-description-sessions = Nemrég bezárt lapok elérése
 webext-perms-description-tabs = Böngészőlapok elérése
 webext-perms-description-tabHide = Böngészőlapok elrejtése és megjelenítése
 webext-perms-description-topSites = Böngészés előzményeinek elérése
+webext-perms-description-trialML = MI modellek letöltése és futtatása az eszközön
+webext-perms-description-userScripts = Engedélyezés, hogy nem ellenőrzött harmadik féltől származó parancsfájlok hozzáférjenek az adataihoz
 webext-perms-description-webNavigation = Böngészőtevékenység elérése navigáláskor
+
+## The userScripts permission includes an additional explanation that is
+## displayed prominently near the usual permission description.
+
+webext-perms-extra-warning-userScripts-long = A nem ellenőrzött parancsfájlok biztonsági és adatvédelmi kockázatot jelenthetnek, például ártalmas kódot futtathatnak, vagy követhetik a webes tevékenységet. Csak olyan kiegészítőkből vagy forrásokból futtasson parancsfájlokat, melyekben megbízik.
+# A shorter warning is displayed in UI surfaces with little room, such as a permission prompt.
+webext-perms-extra-warning-userScripts-short = A nem ellenőrzött parancsfájlok biztonsági és adatvédelmi kockázatot jelenthetnek. Csak olyan kiegészítőkből vagy forrásokból futtasson parancsfájlokat, melyekben megbízik.
+
+## Short form to be used in lists or in a string (`webext-perms-description-data-some`)
+## that formats some of the data collection permissions below using `Intl.ListFormat`.
+##
+## This is used when the data collection permissions are required.
+
+webext-perms-description-data-short-authenticationInfo = hitelesítési információk
+webext-perms-description-data-short-bookmarksInfo = könyvjelzők
+webext-perms-description-data-short-browsingActivity = böngészési tevékenység
+webext-perms-description-data-short-financialAndPaymentInfo = pénzügyi és fizetési információk
+webext-perms-description-data-short-healthInfo = egészségügyi információk
+webext-perms-description-data-short-locationInfo = hely
+webext-perms-description-data-short-personalCommunications = személyes kommunikáció
+webext-perms-description-data-short-personallyIdentifyingInfo = személyazonosításra alkalmas információk
+webext-perms-description-data-short-searchTerms = keresési kifejezések
+webext-perms-description-data-short-technicalAndInteraction = műszaki és interakciós adatok
+webext-perms-description-data-short-websiteActivity = webhelytevékenység
+webext-perms-description-data-short-websiteContent = webhelytartalom
+
+## Long form to be used in `about:addons` when these data collection permissions are optional.
+
+webext-perms-description-data-long-authenticationInfo = Hitelesítési információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-bookmarksInfo = Könyvjelző-információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-browsingActivity = Böngészési információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-financialAndPaymentInfo = Pénzügyi információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-healthInfo = Egészségügyi információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-locationInfo = Helyinformációk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-personalCommunications = Személyes információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-personallyIdentifyingInfo = Személyazonosításra alkalmas információk megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-searchTerms = Keresési kifejezések megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-technicalAndInteraction = Műszaki és interakciós adatok megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-websiteActivity = Webhelytevékenységek megosztása a kiegészítő fejlesztőjével
+webext-perms-description-data-long-websiteContent = Webhelytartalom megosztása a kiegészítő fejlesztőjével

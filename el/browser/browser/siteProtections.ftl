@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,7 +28,7 @@ tracking-protection-icon-active-container =
 tracking-protection-icon-disabled = Η ενισχυμένη προστασία από καταγραφή είναι ΑΝΕΝΕΡΓΗ για τον ιστότοπο.
 tracking-protection-icon-disabled-container =
     .aria-label = { tracking-protection-icon-disabled }
-tracking-protection-icon-no-trackers-detected = Δεν εντοπίστηκαν ιχνηλάτες γνωστοί στο { -brand-short-name } στη σελίδα.
+tracking-protection-icon-no-trackers-detected = Δεν εντοπίστηκαν ιχνηλάτες γνωστοί στο { -brand-short-name } σε αυτήν τη σελίδα.
 tracking-protection-icon-no-trackers-detected-container =
     .aria-label = { tracking-protection-icon-no-trackers-detected }
 
@@ -92,7 +92,7 @@ protections-footer-blocked-tracker-counter-no-tooltip =
         [one] { $trackerCount } αποκλεισμένο
        *[other] { $trackerCount } αποκλεισμένα
     }
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone =
     { $trackerCount ->
         [one] Το { -brand-short-name } απέκλεισε { $trackerCount } ιχνηλάτη από τον { DATETIME($date, year: "numeric", month: "long") }

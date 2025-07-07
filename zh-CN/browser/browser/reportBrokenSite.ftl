@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,8 +12,25 @@ report-broken-site-panel-reason-label = 什么方面出现问题？
 report-broken-site-panel-reason-optional-label = 什么方面出现问题？（选填）
 report-broken-site-panel-reason-choose =
     .label = 选择原因
+report-broken-site-panel-reason-load =
+    .label = 网站无法加载
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = 无法支付、结算或购物
+report-broken-site-panel-reason-slow2 =
+    .label = 网站响应迟缓
+report-broken-site-panel-reason-media2 =
+    .label = 视频无法播放或加载
+report-broken-site-panel-reason-content2 =
+    .label = 内容缺失
+report-broken-site-panel-reason-account2 =
+    .label = 无法登录或注册
+report-broken-site-panel-reason-adblocker2 =
+    .label = 网站要求关闭广告拦截器
+report-broken-site-panel-reason-notsupported =
+    .label = 浏览器不受支持或被阻止
 report-broken-site-panel-reason-slow =
-    .label = 网站速度缓慢或无法使用
+    .label = 网站响应迟缓或无法使用
 report-broken-site-panel-reason-media =
     .label = 图像或视频
 report-broken-site-panel-reason-content =

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,12 +32,17 @@ firefoxview-tabpickup-progress-label = { $percentValue }% 完了
 firefoxview-tabpickup-step-signin-header = 端末間をシームレスに切り替える
 firefoxview-tabpickup-step-signin-description = 携帯端末のタブをここで取り出すには、まずはログインするかアカウントを作成しましょう。
 firefoxview-tabpickup-step-signin-primarybutton = 続行
+firefoxview-syncedtabs-signin-header-2 = すべての端末の { -brand-product-name }
+firefoxview-syncedtabs-signin-description-2 = ログインまたはアカウント登録すると、携帯端末や別の端末で開いたタブを表示できます。アカウントを使用することで、パスワードや履歴なども同期できます。
+firefoxview-syncedtabs-signin-primarybutton-2 = ログイン
 firefoxview-syncedtabs-signin-header = どこからでもタブを取り出す
 firefoxview-syncedtabs-signin-description = どの端末の { -brand-product-name } から開いたタブでもアカウントにログインするだけで表示できます。まだアカウントをお持ちでない場合は、アカウント登録の手順をご案内します。
 firefoxview-syncedtabs-signin-primarybutton = ログインまたはアカウント登録
 firefoxview-tabpickup-adddevice-header = スマートフォンやタブレットの { -brand-product-name } と同期
 firefoxview-tabpickup-adddevice-description = モバイル版 { -brand-product-name } をダウンロードして、ログインしてください。
 firefoxview-tabpickup-adddevice-learn-how = 詳細
+firefoxview-syncedtabs-adddevice-header-2 = どこからでもタブを取り出す
+firefoxview-syncedtabs-adddevice-description-2 = 携帯端末や他のコンピューターの { -brand-product-name } にログインすると、ここでタブを表示できます。<a data-l10n-name="url">追加の端末を接続する方法</a> を確認してください。
 firefoxview-syncedtabs-adddevice-header = 別の端末で { -brand-product-name } にログインする
 firefoxview-syncedtabs-adddevice-description = どの端末からでも { -brand-product-name } で開いたタブを表示できるようにするには、すべての端末でログインしましょう。<a data-l10n-name="url">追加の端末を接続する方法</a> について学んでください。
 firefoxview-syncedtabs-adddevice-primarybutton = モバイル版 { -brand-product-name } を試す
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = 他の端末のタブ
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = すべて表示
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -165,6 +170,9 @@ firefoxview-search-text-box-history =
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = 最近閉じたタブを検索
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = タブを検索
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = 同期したタブを検索
 # Placeholder for the input field to search in open tabs ("search" is a verb).
@@ -176,11 +184,7 @@ firefoxview-search-text-box-opentabs =
 firefoxview-search-results-header = “{ $query }” の検索結果
 # Variables:
 #   $count (Number) - The number of visits matching the search query.
-firefoxview-search-results-count =
-    { $count ->
-        [one] { $count } サイト
-       *[other] { $count } サイト
-    }
+firefoxview-search-results-count = { $count } サイト
 # Message displayed when a search is performed and no matching results were found.
 # Variables:
 #   $query (String) - The search query.
@@ -211,7 +215,7 @@ firefoxview-history-site-localhost = (ローカルファイル)
 firefoxview-show-all-history = すべての履歴を表示
 firefoxview-view-more-browsing-history = 閲覧履歴の続きを表示
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = 閉じたページに戻れます
 firefoxview-history-empty-description = ブラウジングを続けると、以前表示したページの一覧がここに表示されます。
@@ -223,15 +227,17 @@ firefoxview-history-empty-description-two = 私たちの活動の中心はユー
 firefoxview-choose-browser-button = ブラウザーを選ぶ
     .title = ブラウザーを選ぶ
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = データがありません
 firefoxview-dont-remember-history-empty-description = 私たちの活動の中心はユーザーのプライバシーを保護することです。あなたはいつでも { -brand-short-name } に記憶させる履歴をコントロールできます。
 firefoxview-dont-remember-history-empty-description-two = 現在の設定に基づいて { -brand-short-name } は閲覧履歴を記憶しません。記憶させるには、<a data-l10n-name="history-settings-url-two">履歴の設定を変更してください</a>。
+firefoxview-dont-remember-history-empty-header-2 = { -brand-short-name } に記憶させる履歴は、あなたがコントロールできます。
+firefoxview-dont-remember-history-empty-description-one = 現在、{ -brand-short-name } は閲覧履歴を記憶しません。記憶させるには、<a data-l10n-name="history-settings-url-two">履歴の設定を変更してください</a>。
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = 閉じる
     .title = 閉じる
@@ -241,7 +247,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = 別のブラウザーから履歴をインポート
 firefoxview-import-history-description = { -brand-short-name } を日常的に使うには、まず閲覧履歴やブックマークなどのデータをインポートしましょう。
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = もうすぐタブを閉じますか？
 firefoxview-recentlyclosed-empty-description = ここで最近閉じたタブを見つけましょう。すぐに開き直すことができます。

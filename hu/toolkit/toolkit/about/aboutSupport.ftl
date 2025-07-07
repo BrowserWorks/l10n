@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = Típus
 support-addons-enabled = Engedélyezve
 support-addons-version = Verzió
 support-addons-id = Azonosító
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Hely
 legacy-user-stylesheets-title = Hagyományos felhasználói stíluslapok
 legacy-user-stylesheets-enabled = Aktív
 legacy-user-stylesheets-stylesheet-types = Stíluslapok
@@ -150,7 +154,7 @@ troubleshoot-mode-title = Problémák diagnosztizálása
 restart-in-troubleshoot-mode-label = Hibaelhárítási mód…
 clear-startup-cache-title = Próbálja meg üríteni az indítási gyorsítótárat
 clear-startup-cache-label = Indítási gyorsítótár törlése…
-startup-cache-dialog-title2 = Újraindítja a { -brand-short-name(case: "accusative") } az indítási gyorsítótár törléséhez?
+startup-cache-dialog-title2 = Újraindítja a { -brand-short-name }ot az indítási gyorsítótár törléséhez?
 startup-cache-dialog-body2 = Ez nem módosítja a beállításait, és nem távolít el kiegészítőket.
 restart-button-label = Újraindítás
 
@@ -181,6 +185,8 @@ media-capabilities-enumerate = Adatbázis felsorolása
 
 media-codec-support-sw-decoding = Szoftveres dekódolás
 media-codec-support-hw-decoding = Hardveres dekódolás
+media-codec-support-sw-encoding = Szoftveres kódolás
+media-codec-support-hw-encoding = Hardveres kódolás
 media-codec-support-codec-name = Kodeknév
 media-codec-support-supported = Támogatott
 media-codec-support-unsupported = Nem támogatott
@@ -218,7 +224,7 @@ intl-regional-prefs = Területi beállítások
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -227,7 +233,7 @@ intl-regional-prefs = Területi beállítások
 
 remote-debugging-title = Távoli hibakeresés (Chromium protokoll)
 remote-debugging-accepting-connections = Kapcsolatok elfogadása
-remote-debugging-url = URL
+remote-debugging-url = Webcím
 
 ##
 
@@ -344,6 +350,9 @@ has-seccomp-bpf = Seccomp-BPF (rendszerhívás-szűrés)
 has-seccomp-tsync = Seccomp szálszinkronizáció
 has-user-namespaces = Felhasználói névterek
 has-privileged-user-namespaces = Felhasználói névterek privilegizált folyamatokhoz
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } – Ezt a funkciót a rendszer nem engedélyezi. Ez korlátozhatja a { -brand-short-name } biztonsági funkcióit.
 can-sandbox-content = Tartalomfolyamat homokozója
 can-sandbox-media = Médiabővítmény homokozója
 content-sandbox-level = Tartalomfolyamat homokozóhasználati szintje

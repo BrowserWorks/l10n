@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,13 +32,18 @@ firefoxview-tabpickup-progress-label = { $percentValue }% เสร็จสม�
 firefoxview-tabpickup-step-signin-header = สลับระหว่างอุปกรณ์ได้อย่างไร้รอยต่อ
 firefoxview-tabpickup-step-signin-description = เมื่อต้องการนำแท็บบนโทรศัพท์ของคุณมาที่นี่ ให้ลงชื่อเข้าหรือสร้างบัญชีก่อน
 firefoxview-tabpickup-step-signin-primarybutton = ดำเนินการต่อ
+firefoxview-syncedtabs-signin-header-2 = ให้ { -brand-product-name } เป็นแบบคุณในทุกอุปกรณ์ของคุณ
+firefoxview-syncedtabs-signin-description-2 = หากต้องการเห็นแท็บที่คุณเปิดไว้ในโทรศัพท์และอุปกรณ์อื่นๆ ของคุณ ให้ลงชื่อเข้าหรือลงทะเบียนบัญชีใหม่ เมื่อคุณมีบัญชีแล้ว คุณจะสามารถซิงค์รหัสผ่าน ประวัติ และอื่นๆ ของคุณได้ด้วย
+firefoxview-syncedtabs-signin-primarybutton-2 = ลงชื่อเข้า
 firefoxview-syncedtabs-signin-header = หยิบแท็บได้จากทุกที่
-firefoxview-syncedtabs-signin-description = ถ้าต้องการเห็นแท็บต่างๆ จากที่ใดก็ตามที่คุณใช้ { -brand-product-name } ให้ลงชื่อเข้าใช้บัญชีของคุณ ถ้าคุณไม่มีบัญชี เราจะแนะนำขั้นตอนต่างๆ ในการสมัครให้คุณ
-firefoxview-syncedtabs-signin-primarybutton = ลงชื่อเข้าหรือสมัคร
+firefoxview-syncedtabs-signin-description = ถ้าต้องการเห็นแท็บต่างๆ จากอุปกรณ์ทั้งหมดที่คุณใช้ { -brand-product-name } ให้ลงชื่อเข้าใช้บัญชีของคุณ ถ้าคุณไม่มีบัญชี เราจะแนะนำขั้นตอนต่างๆ ในการลงทะเบียนให้คุณ
+firefoxview-syncedtabs-signin-primarybutton = ลงชื่อเข้าหรือลงทะเบียน
 firefoxview-tabpickup-adddevice-header = ซิงค์ { -brand-product-name } บนโทรศัพท์หรือแท็บเล็ตของคุณ
 firefoxview-tabpickup-adddevice-description = ดาวน์โหลด { -brand-product-name } สำหรับมือถือแล้วลงชื่อเข้าจากที่นั่น
 firefoxview-tabpickup-adddevice-learn-how = เรียนรู้วิธี
 firefoxview-tabpickup-adddevice-primarybutton = รับ { -brand-product-name } สำหรับมือถือ
+firefoxview-syncedtabs-adddevice-header-2 = หยิบแท็บได้จากทุกที่
+firefoxview-syncedtabs-adddevice-description-2 = ลงชื่อเข้าใช้ { -brand-product-name } ในโทรศัพท์ของคุณหรือคอมพิวเตอร์อีกเครื่องเพื่อให้แท็บต่างๆ ปรากฏที่นี่ เรียนรู้วิธีการ<a data-l10n-name="url">เชื่อมต่ออุปกรณ์เพิ่มเติม</a>
 firefoxview-syncedtabs-adddevice-header = ลงชื่อเข้า { -brand-product-name } บนอุปกรณ์อื่น ๆ ของคุณ
 firefoxview-syncedtabs-adddevice-description = ถ้าต้องการเห็นแท็บต่างๆ จากที่ใดก็ตามที่คุณใช้ { -brand-product-name } ให้ลงชื่อเข้าใช้บนอุปกรณ์ทั้งหมดของคุณ เรียนรู้วิธีการ<a data-l10n-name="url">เชื่อมต่อกับอุปกรณ์เพิ่มเติม</a>
 firefoxview-syncedtabs-adddevice-primarybutton = ลองใช้ { -brand-product-name } สำหรับมือถือ
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = แท็บจากอุปกรณ์อ�
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = ดูทั้งหมด
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = ค้นหาแท็บที่เพิ่งปิดล่าสุด
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = ค้นหาแท็บ
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = ค้นหาแท็บที่ซิงค์
@@ -207,7 +215,7 @@ firefoxview-history-site-localhost = (ไฟล์ในเครื่อง)
 firefoxview-show-all-history = แสดงประวัติทั้งหมด
 firefoxview-view-more-browsing-history = ดูประวัติการเข้าชมเพิ่มเติม
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = กลับมายังที่ที่คุณเคยไป
 firefoxview-history-empty-description = ระหว่างที่คุณเรียกดู หน้าที่คุณเยี่ยมชมจะแสดงอยู่ที่นี่
@@ -219,15 +227,17 @@ firefoxview-history-empty-description-two = การปกป้องควา
 firefoxview-choose-browser-button = เลือกเบราว์เซอร์
     .title = เลือกเบราว์เซอร์
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = ไม่มีอะไรจะแสดง
 firefoxview-dont-remember-history-empty-description = การปกป้องความเป็นส่วนตัวของคุณเป็นหัวใจสำคัญของสิ่งที่เราทำ ซึ่งเป็นเหตุผลที่คุณสามารถควบคุมกิจกรรมที่ { -brand-short-name } จำได้
 firefoxview-dont-remember-history-empty-description-two = ตามการตั้งค่าปัจจุบันของคุณ { -brand-short-name } จะไม่จดจำกิจกรรมของคุณขณะที่คุณเรียกดู ถ้าต้องการเปลี่ยนแปลง ให้<a data-l10n-name="history-settings-url-two">เปลี่ยนการตั้งค่าประวัติเพื่อจดจำประวัติของคุณ</a>
+firefoxview-dont-remember-history-empty-header-2 = คุณควบคุมสิ่งที่จะให้ { -brand-short-name } จดจำได้ทุกอย่าง
+firefoxview-dont-remember-history-empty-description-one = ขณะนี้ { -brand-short-name } จะไม่จดจำกิจกรรมการเรียกดูของคุณ หากต้องการเปลี่ยนแปลง ให้<a data-l10n-name="history-settings-url-two">ปรับปรุงการตั้งค่าประวัติของคุณ</a>
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = ปิด
     .title = ปิด
@@ -237,7 +247,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = นำเข้าประวัติจากเบราว์เซอร์อื่น
 firefoxview-import-history-description = ทำให้ { -brand-short-name } เป็นเบราว์เซอร์ที่คุณใช้ นำเข้าประวัติการเข้าชม ที่คั่นหน้า และอื่น ๆ
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = ปิดแท็บเร็วเกินไป?
 firefoxview-recentlyclosed-empty-description = ที่นี่จะแสดงแท็บที่เพิ่งปิดไป คุณจึงสามารถเปิดใหม่ได้อย่างรวดเร็ว

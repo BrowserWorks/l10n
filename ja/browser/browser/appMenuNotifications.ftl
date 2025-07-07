@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = 閉じる
     .secondarybuttonaccesskey = m
 appmenu-update-restart-message2 = { -brand-shorter-name } の最新版をインストールしましょう。開いているタブとウィンドウは復元されます。
+appmenu-theme-installed =
+    .secondarybuttonlabel = 元に戻す
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } は自動で最新バージョンに更新できません。
     .buttonlabel = とにかく { -brand-shorter-name } を更新
@@ -41,6 +44,12 @@ appmenu-addon-private-browsing-installed2 =
     .buttonlabel = OK
     .buttonaccesskey = O
 appmenu-addon-post-install-message3 = アプリケーションメニューからアドオンとテーマを管理できます。
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = 権限とデータの設定は<a data-l10n-name="settings-link">拡張機能の設定</a>でいつでも変更できます。
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = 拡張機能をツールバーにピン留めする
+    .accesskey = P
 appmenu-addon-post-install-incognito-checkbox =
     .label = この拡張機能のプライベートウィンドウでの実行を許可する
     .accesskey = A

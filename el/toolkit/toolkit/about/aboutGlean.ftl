@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,11 @@ about-glean-interface-description =
     μια βιβλιοθήκη συλλογής δεδομένων που χρησιμοποιείται στα έργα της { -vendor-short-name }.
     Αυτό το περιβάλλον χρήστη έχει σχεδιαστεί για τη χειροκίνητη <a data-l10n-name="fog-link">δοκιμή της ενοργάνισης</a>
     από προγραμματιστές και δοκιμαστές.
+about-glean-category-about-glean = Σχετικά με το { -glean-brand-name }
+about-glean-category-manual-testing = Χειροκίνητη δοκιμή
+about-glean-category-adhoc-testing = Δοκιμή Ad Hoc
+about-glean-category-profiler = Χρήση του εργαλείου προφίλ
+about-glean-category-about-data = Σχετικά με τα δεδομένα
 about-glean-upload-enabled = Η μεταφόρτωση δεδομένων είναι ενεργοποιημένη.
 about-glean-upload-disabled = Η μεταφόρτωση δεδομένων είναι απενεργοποιημένη.
 about-glean-upload-enabled-local = Η μεταφόρτωση δεδομένων είναι ενεργοποιημένη μόνο για αποστολή σε τοπικό διακομιστή.
@@ -43,6 +48,9 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links =
+    Για μια εξήγηση των διάφορων τρόπων καταγραφής και εύρεσης δεδομένων, ανατρέξτε
+    στην καρτέλα <strong>Σχετικά με τα δεδομένα</strong>.
 about-glean-about-testing-header = Σχετικά με τη δοκιμή
 # This message is followed by a numbered list.
 about-glean-manual-testing =
@@ -100,8 +108,37 @@ about-glean-adhoc-note =
     Σημειώστε ότι χρησιμοποιείτε το API του Glean JS μέσω της κονσόλας εργαλείων ανάπτυξης.
     Αυτό σημαίνει ότι οι κατηγορίες και τα ονόματα των μετρήσεων μορφοποιούνται σε
     <code>camelCase</code>, σε αντίθεση με τα API των Rust και C++.
+about-glean-profiler-explanation =
+    Για μια πλήρη προβολή όλων των καταγεγραμμένων μετρήσεων, μπορείτε να χρησιμοποιήσετε το { -profiler-brand-name }.
+    Θα πρέπει πρώτα να <a data-l10n-name="firefox-profiler-link">καταγράψετε ένα προφίλ επιδόσεων</a>.
+    Μόλις καταγράψετε το προφίλ, επιλέξτε <q>Διάγραμμα δεικτών</q> και δείτε τους δείκτες για την <q>Τηλεμετρία</q>.
+about-glean-profiler-explanation-profiler =
+    Στο προφίλ επιδόσεων, μπορείτε να δείτε όλες τις μετρήσεις που συλλέχθησαν, πότε συλλέχθησαν
+    και ακριβώς ποιες τιμές συλλέχθησαν. Περνώντας τον κέρσορα πάνω από μεμονωμένους δείκτες,
+    μπορείτε να επαληθεύσετε ότι συλλέχθηκε η σωστή τιμή και ότι η συλλογή έγινε τη σωστή στιγμή.
 controls-button-label-verbose = Εφαρμογή ρυθμίσεων και υποβολή ping
+about-glean-feedback-settings-only =
+    .message = Οι ρυθμίσεις εφαρμόστηκαν!
+about-glean-feedback-settings-and-ping =
+    .message = Οι ρυθμίσεις εφαρμόστηκαν και έγινε αποστολή του ping!
 about-glean-about-data-header = Σχετικά με τα δεδομένα
+about-glean-about-data-description =
+    Υπάρχουν διάφορα εργαλεία που μπορείτε να χρησιμοποιήσετε για να δείτε τα δεδομένα σας,
+    ανάλογα με αυτό που ψάχνετε.
+about-glean-about-data-description-list-intro =
+    Ανατρέξτε στην παρακάτω λίστα για συγκεκριμένες
+    περιπτώσεις χρήσης για το κάθε εργαλείο:
+about-glean-about-data-list-item-dictionary =
+    Για να περιηγηθείτε στη λίστα των δεδομένων που συλλέγονται από το { -glean-brand-name } ανά εφαρμογή, συμβουλευτείτε το
+    <a data-l10n-name="glean-dictionary-link">Λεξικό του { -glean-brand-name }</a>.
+about-glean-about-data-list-item-about-telemetry =
+    Για να περιηγηθείτε στα δεδομένα που συλλέγονται από την τηλεμετρία παλαιού τύπου, συμβουλευτείτε
+    το <a data-l10n-name="about-telemetry-link">about:telemetry</a>.
+about-glean-about-data-list-item-debug-ping-viewer =
+    Για να περιηγηθείτε στις ετικέτες ελέγχου σφαλμάτων, να δείτε πλήρη ping, να δείτε μια ζωντανή ροή γεγονότων
+    ή να προβάλετε οπτικοποιήσεις των μετρήσεων, συμβουλευτείτε το
+    <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>.
+about-glean-about-data-list-item-firefox-profiler = Για να καταγράψετε ένα προφίλ επιδόσεων και να δείτε όλες τις καταγεγραμμένες μετρήσεις, χρησιμοποιήστε το <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
 about-glean-about-data-explanation =
     Για να περιηγηθείτε στη λίστα των συλλεγμένων δεδομένων, συμβουλευτείτε το
     <a data-l10n-name="glean-dictionary-link">Λεξικό του { -glean-brand-name }</a>.

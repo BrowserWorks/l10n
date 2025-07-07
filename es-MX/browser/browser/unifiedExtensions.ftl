@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -20,28 +20,62 @@ unified-extensions-manage-extensions =
 #   $extensionName (String) - Name of the extension
 unified-extensions-item-open-menu =
     .aria-label = Abrir menú para { $extensionName }
-
 unified-extensions-item-message-manage = Gestionar extensión
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked = { $extensionName } viola las políticas de BrowserWorks. Usarla podría ser arriesgado.
 
 ## Extension's context menu
 
 unified-extensions-context-menu-pin-to-toolbar =
     .label = Anclar a la barra de herramientas
-
 unified-extensions-context-menu-manage-extension =
     .label = Gestionar extensión
-
 unified-extensions-context-menu-remove-extension =
     .label = Eliminar extensión
-
 unified-extensions-context-menu-report-extension =
     .label = Denunciar extensión
-
 unified-extensions-context-menu-move-widget-up =
     .label = Subir
-
 unified-extensions-context-menu-move-widget-down =
     .label = Bajar
 
 ## Notifications
 
+unified-extensions-mb-quarantined-domain-title = Algunas extensiones no están permitidas
+unified-extensions-mb-quarantined-domain-message = Solo algunas extensiones supervisadas por { -vendor-short-name } están permitidas en este sitio para proteger tus datos.
+# .heading is processed by moz-message-bar to be used as a heading attribute
+unified-extensions-mb-quarantined-domain-message-3 =
+    .heading = Algunas extensiones no están permitidas.
+    .message = Para proteger tus datos, algunas extensiones no pueden leer ni cambiar datos en este sitio. Utiliza la configuración de la extensión para permitir sitios restringidos por { -vendor-short-name }.
+unified-extensions-mb-quarantined-domain-learn-more = Saber más
+    .aria-label = Saber más: Algunas extensiones no están permitidas
+unified-extensions-mb-about-addons-link = Ir a los ajustes de extensiones
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single =
+    .heading = { $extensionName } deshabilitada
+    .message =
+        Esta extensión viola las políticas de BrowserWorks y ha sido deshabilitada.
+        Puedes habilitarla en los ajustes, pero podría ser arriesgado.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a hard-block.
+unified-extensions-mb-blocklist-error-single =
+    .heading = { $extensionName } deshabilitada
+    .message = Esta extensión viola las políticas de BrowserWorks y ha sido deshabilitada.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple =
+    .heading =
+        { $extensionsCount ->
+           *[other] { $extensionsCount } extensions disabled
+        }
+    .message = { $extensionsCount } extensiones deshabilitadas
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through hard-blocks.
+unified-extensions-mb-blocklist-error-multiple =
+    .heading =
+        { $extensionsCount ->
+           *[other] { $extensionsCount } extensions disabled
+        }
+    .message = { $extensionsCount } extensiones deshabilitadas

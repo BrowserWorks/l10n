@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = За последние два часа
 clear-time-duration-value-last-4-hours =
     .label = За последние четыре часа
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = С { $midnightTime }
 clear-time-duration-value-today =
     .label = За сегодня
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = Историю
 item-history-and-downloads =
     .label = Журнал посещений и загрузок
     .accesskey = п
+item-history-and-downloads-description2 = Очищает историю страниц и загрузок
 item-history-form-data-downloads =
     .label = Журнал
     .accesskey = Р
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Настройки сайтов
     .accesskey = ш
+item-formdata-prefs =
+    .label = Информация о сохранённой форме
+    .accesskey = щ
+item-formdata-description = Удаляет имена, адреса электронной почты и другие данные, вводимые вами в формах
 item-site-prefs-description = Сбрасывает ваши разрешения и настройки сайтов на исходные настройки
 data-section-label = Данные
 item-site-settings =

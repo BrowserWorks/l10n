@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -13,6 +13,11 @@ contentanalysis-slow-agent-dialog-header = 스캔 진행 중
 contentanalysis-slow-agent-dialog-body-file = { $agent }이(가) 조직의 데이터 정책에 따라 '{ $filename }' 파일을 분석 중입니다. 잠시 시간이 걸릴 수 있습니다.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more = { $agent }이(가) 조직의 데이터 정책에 따라 “{ $filename }” 및 { $count }개의 추가 항목을 검토 중입니다. 잠시 시간이 걸릴 수 있습니다.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent }이(가) 조직의 데이터 정책에 따라 붙여넣은 내용을 분석 중입니다. 잠시 시간이 걸릴 수 있습니다.
 # Note that this is shown when the user drag and drops text into the browser.
 # Variables:
@@ -24,6 +29,10 @@ contentanalysis-slow-agent-dialog-body-print = { $agent }이(가) 조직의 데�
 contentanalysis-operationtype-clipboard = 클립보드
 contentanalysis-operationtype-dropped-text = 드롭된 텍스트
 contentanalysis-operationtype-print = 인쇄
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-upload-description = “{ $filename }” 업로드
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = “{ $filename }” 다운로드
 #   $filename - The filename associated with the request, such as "aFile.txt"
 contentanalysis-customdisplaystring-description = “{ $filename }” 업로드
 contentanalysis-warndialogtitle = 이 콘텐츠는 안전하지 않을 수 있음
@@ -40,21 +49,6 @@ contentanalysis-genericresponse-message = 콘텐츠 분석이 { $content } 리�
 # Variables:
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
 contentanalysis-block-message = 사용자의 조직에서는 { $content } 콘텐츠를 차단하는 데이터 손실 방지 소프트웨어를 사용하고 있습니다.
-# Variables:
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-error-message = 데이터 손실 방지 소프트웨어와 통신하는 동안 오류가 발생했습니다. { $content } 리소스에 대한 전송이 거부되었습니다.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-unspecified-error-message = { $agent }와(과) 통신하는 중 오류가 발생했습니다.  { $content } 리소스에 대한 전송이 거부되었습니다.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-no-agent-connected-message = { $agent }에 연결할 수 없습니다. { $content } 리소스에 대한 전송이 거부되었습니다.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-invalid-agent-signature-message = { $agent }에 대한 서명 확인에 실패했습니다. { $content } 리소스에 대한 전송이 거부되었습니다.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
@@ -73,10 +67,18 @@ contentanalysis-error-message-upload-file = “{ $filename }” 업로드가 거
 contentanalysis-error-message-dropped-text = 끌어서 놓기가 거부되었습니다.
 contentanalysis-error-message-clipboard = 붙여넣기가 거부되었습니다.
 contentanalysis-error-message-print = 인쇄가 거부되었습니다.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = { $agent } 연결에 대한 연결 시간이 초과되었습니다. { $contentName }이(가) 차단되었습니다.
 contentanalysis-block-dialog-title-upload-file = 이 파일을 업로드할 권한이 없습니다
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file = 사용자 조직의 데이터 보호 정책에 따라 '{ $filename }' 파일을 업로드하는 것이 허용되지 않습니다. 자세한 내용은 관리자에게 문의하세요.
+contentanalysis-block-dialog-title-download-file = 이 파일을 다운로드할 권한이 없음
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = 사용자 조직의 데이터 보호 정책에 따라 '{ $filename }' 파일을 다운로드하는 것이 허용되지 않습니다. 자세한 내용은 관리자에게 문의하세요.
 contentanalysis-block-dialog-title-clipboard = 이 콘텐츠를 붙여넣을 수 있는 권한이 없습니다.
 contentanalysis-block-dialog-body-clipboard = 사용자 조직의 데이터 보호 정책에 따라 이 콘텐츠를 붙여넣는 것이 허용되지 않습니다. 자세한 내용은 관리자에게 문의하세요.
 contentanalysis-block-dialog-title-dropped-text = 이 콘텐츠를 끌어서 놓을 권한이 없습니다.

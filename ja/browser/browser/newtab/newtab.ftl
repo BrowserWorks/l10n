@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新しいタブ
 newtab-settings-button =
     .title = 新しいタブページをカスタマイズ
+newtab-customize-panel-icon-button =
+    .title = このページをカスタマイズ
+newtab-customize-panel-icon-button-label = カスタマイズ
+newtab-personalize-settings-icon-label =
+    .title = 新しいタブをパーソナライズ
+    .aria-label = 設定
+newtab-settings-dialog-label =
+    .aria-label = 設定
 newtab-personalize-icon-label =
     .title = 新しいタブをパーソナライズ
     .aria-label = 新しいタブをパーソナライズ
 newtab-personalize-dialog-label =
     .aria-label = パーソナライズ
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -109,11 +119,26 @@ newtab-menu-save-to-pocket = { -pocket-brand-name } に保存
 newtab-menu-delete-pocket = { -pocket-brand-name } から削除
 newtab-menu-archive-pocket = { -pocket-brand-name } にアーカイブ
 newtab-menu-show-privacy-info = 私たちのスポンサーとあなたのプライバシー
+newtab-menu-about-fakespot = { -fakespot-brand-name } について
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = 報告
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = ブロック
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = トピックのフォローを解除
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = 広告コンテンツを管理
+newtab-menu-our-sponsors-and-your-privacy = 私たちのスポンサーとユーザーのプライバシー
+newtab-menu-report-this-ad = この広告を報告
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = 完了
-newtab-privacy-modal-button-manage = スポンサーコンテンツの設定を管理
+newtab-privacy-modal-button-manage = 広告コンテンツの設定を管理
 newtab-privacy-modal-header = プライバシーは重要です。
 newtab-privacy-modal-paragraph-2 =
     盛り上がる魅力あるストーリーに加えて、選ばれたスポンサーからあなたの興味を引きそうな厳選コンテンツを提供します。
@@ -168,6 +193,8 @@ newtab-label-sponsored-by = 提供: { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } 分
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = 広告
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -198,6 +225,8 @@ newtab-section-header-recent-activity = 最近のアクティビティ
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } のおすすめ
 newtab-section-header-stories = 示唆に富むストーリー
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = 本日のおすすめ
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -228,9 +257,23 @@ newtab-pocket-learn-more = 詳細
 newtab-pocket-cta-button = { -pocket-brand-name } を入手
 newtab-pocket-cta-text = お気に入りに記事を { -pocket-brand-name } に保存して、魅力的な読み物を思う存分楽しみましょう。
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } は { -brand-product-name } ファミリーの一員です
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = 保存
 newtab-pocket-saved = 保存しました
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = お気に入り
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = 興味なし
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = ありがとうございます。あなたのフィードバックがフィードを改善する助けになります。
+newtab-toast-dismiss-button =
+    .title = 閉じる
+    .aria-label = 閉じる
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -269,6 +312,9 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = 天気予報
     .description = 一目でわかる今日の天気
+newtab-custom-trending-search-toggle =
+    .label = トレンド検索
+    .description = 人気があり頻繁に検索されているトピックです
 newtab-custom-close-button = 閉じる
 newtab-custom-settings = 他の設定を管理
 
@@ -276,6 +322,12 @@ newtab-custom-settings = 他の設定を管理
 
 newtab-wallpaper-title = 壁紙
 newtab-wallpaper-reset = 既定値にリセット
+newtab-wallpaper-upload-image = 画像をアップロード
+newtab-wallpaper-custom-color = 色を選択
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = 画像がファイルサイズの上限を超えています。{ $file_size } MB より小さなファイルをアップロードしてください。
+newtab-wallpaper-error-file-type = ファイルをアップロードできませんでした。別のファイル形式で再度試してください。
 newtab-wallpaper-light-red-panda = レッサーパンダ
 newtab-wallpaper-light-mountain = 白い雪山
 newtab-wallpaper-light-sky = 紫色の雲と空
@@ -288,6 +340,8 @@ newtab-wallpaper-dark-panda = 森に隠れるレッサーパンダ
 newtab-wallpaper-dark-sky = 夜空と街の景色
 newtab-wallpaper-dark-mountain = 山の景色
 newtab-wallpaper-dark-city = 紫色の街の景色
+newtab-wallpaper-dark-fox-anniversary = 森林の道路に座るキツネ
+newtab-wallpaper-light-fox-anniversary = 霧がかかった山を背景に草原にたたずむキツネ
 
 ## Solid Colors
 
@@ -317,6 +371,10 @@ newtab-wallpaper-abstract-purple = 紫色の形状
 newtab-wallpaper-abstract-orange = オレンジ色の形状
 newtab-wallpaper-gradient-orange = オレンジとピンクのグラデーション
 newtab-wallpaper-abstract-blue-purple = 青色と紫色の形状
+newtab-wallpaper-abstract-white-curves = 影のついた白色の曲線
+newtab-wallpaper-abstract-purple-green = 紫色と緑色の明るいグラデーション
+newtab-wallpaper-abstract-blue-purple-waves = 青色と紫色の波形の形状
+newtab-wallpaper-abstract-black-waves = 黒色の波形の形状
 
 ## Photographs
 
@@ -327,6 +385,12 @@ newtab-wallpaper-storm-sky = 嵐の空
 newtab-wallpaper-sky-with-pink-clouds = ピンク色に染まる雲
 newtab-wallpaper-red-panda-yawns-in-a-tree = あくびをするレッサーパンダ
 newtab-wallpaper-white-mountains = 白い雪山
+newtab-wallpaper-hot-air-balloons = 昼空に浮かぶさまざまな色の熱気球
+newtab-wallpaper-starry-canyon = 青い星夜
+newtab-wallpaper-suspension-bridge = 昼の灰色の吊橋
+newtab-wallpaper-sand-dunes = 白砂の砂丘
+newtab-wallpaper-palm-trees = 朝焼けに照らされたココヤシの木々のシルエット
+newtab-wallpaper-blue-flowers = 咲き誇る青い花のクローズアップ写真
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
@@ -342,6 +406,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = 宇宙
+newtab-wallpaper-celestial-lunar-eclipse = 月食
+newtab-wallpaper-celestial-earth-night = 地球低軌道からの夜景
+newtab-wallpaper-celestial-starry-sky = 星空
+newtab-wallpaper-celestial-eclipse-time-lapse = 月食のタイムラプス
+newtab-wallpaper-celestial-black-hole = ブラックホール銀河のイラスト
+newtab-wallpaper-celestial-river = 河川の衛星画像
+
 ## New Tab Weather
 
 # Variables:
@@ -352,21 +429,157 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = 提供: { $provider }
 newtab-weather-menu-change-location = 予報地点を変更
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = 場所を検索
+    .aria-label = 場所を検索
 newtab-weather-change-location-search-input = 場所を検索
 newtab-weather-menu-weather-display = 天気表示
 # Display options are:
 # - Simple: Displays a current weather condition icon and the current temperature
 # - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
 newtab-weather-menu-weather-display-option-simple = シンプル
-newtab-weather-menu-change-weather-display-simple = シンプル表示に切り替えます
+newtab-weather-menu-change-weather-display-simple = シンプル表示に切り替える
 newtab-weather-menu-weather-display-option-detailed = 詳細
-newtab-weather-menu-change-weather-display-detailed = 詳細表示に切り替えます
+newtab-weather-menu-change-weather-display-detailed = 詳細表示に切り替える
 newtab-weather-menu-temperature-units = 温度の単位
 newtab-weather-menu-temperature-option-fahrenheit = 華氏 (℉)
 newtab-weather-menu-temperature-option-celsius = 摂氏 (℃)
-newtab-weather-menu-change-temperature-units-fahrenheit = ファーレンハイト度に切り替えます
-newtab-weather-menu-change-temperature-units-celsius = セルシウス度に切り替えます
+newtab-weather-menu-change-temperature-units-fahrenheit = ファーレンハイト度に切り替える
+newtab-weather-menu-change-temperature-units-celsius = セルシウス度に切り替える
 newtab-weather-menu-hide-weather = 新しいタブの天気表示を隠す
 newtab-weather-menu-learn-more = 詳細情報
 # This message is shown if user is working offline
 newtab-weather-error-not-available = 現在、天気データが利用できません。
+
+## Topic Labels
+
+newtab-topic-label-business = 仕事
+newtab-topic-label-career = 経歴
+newtab-topic-label-education = 教育
+newtab-topic-label-arts = 娯楽
+newtab-topic-label-food = 食品
+newtab-topic-label-health = 健康
+newtab-topic-label-hobbies = ゲーム
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = 金融
+newtab-topic-label-society-parenting = 育児
+newtab-topic-label-government = 政治
+newtab-topic-label-education-science = 科学
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = ライフハック
+newtab-topic-label-sports = スポーツ
+newtab-topic-label-tech = 技術
+newtab-topic-label-travel = 旅行
+newtab-topic-label-home = 家庭
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = あなたのフィードに最適なトピックを選択
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = 複数のトピックを選んでください。専門のキュレーターがあなたの関心事に合わせてストーリーに優先順位を付けます。いつでも更新できます。
+newtab-topic-selection-save-button = 保存
+newtab-topic-selection-cancel-button = キャンセル
+newtab-topic-selection-button-maybe-later = 後で選ぶ
+newtab-topic-selection-privacy-link = ユーザーデータの保護と管理について
+newtab-topic-selection-button-update-interests = 関心事を更新
+newtab-topic-selection-button-pick-interests = 関心事を選ぶ
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = フォローする
+newtab-section-following-button = フォロー中
+newtab-section-unfollow-button = フォロー解除
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = フィードを微調整
+newtab-section-follow-highlight-subtitle = 興味のあることをフォローして、お好みのコンテンツを多く表示します
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = ブロックする
+newtab-section-blocked-button = ブロック中
+newtab-section-unblock-button = ブロック解除
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = 後で
+newtab-section-confirm-block-topic-p1 = 本当にこのトピックをブロックしますか？
+newtab-section-confirm-block-topic-p2 = ブロックしたトピックはフィードに表示されません。
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = { $topic } をブロック
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = トピック
+newtab-section-manage-topics-button-v2 =
+    .label = トピックを管理
+newtab-section-mangage-topics-followed-topics = フォロー中
+newtab-section-mangage-topics-followed-topics-empty-state = フォローしているトピックはありません。
+newtab-section-mangage-topics-blocked-topics = ブロック中
+newtab-section-mangage-topics-blocked-topics-empty-state = ブロックしているトピックはありません。
+newtab-custom-wallpaper-title = カスタム壁紙が利用できます
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = 壁紙をアップロードするかお好みの色を選んで、あなただけの { -brand-product-name } にカスタマイズしましょう。
+newtab-custom-wallpaper-cta = 壁紙を試す
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = モバイル版 { -brand-product-name } をダウンロード
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = QR コードをスキャンして安全にダウンロード。
+newtab-download-mobile-highlight-body-variant-b = タブやパスワード、他のデータを同期しておけば、中断したところからピックアップできます。
+newtab-download-mobile-highlight-body-variant-c = 同じ { -brand-product-name } ブラウザーをポケットに入れてを持ち出せることをご存じですか？ 
+newtab-download-mobile-highlight-image =
+    .aria-label = モバイル版 { -brand-product-name } をダウンロードするための QR コード
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = この広告を報告した理由を教えてください。
+newtab-report-ads-reason-not-interested =
+    .label = 興味がない
+newtab-report-ads-reason-inappropriate =
+    .label = 不適切
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = 表示回数が多すぎる
+newtab-report-content-wrong-category =
+    .label = カテゴリーが誤っている
+newtab-report-content-outdated =
+    .label = 古くなっている
+newtab-report-content-inappropriate-offensive =
+    .label = 不適切または攻撃的
+newtab-report-content-spam-misleading =
+    .label = スパムまたはミスリード
+newtab-report-cancel = キャンセル
+newtab-report-submit = 送信
+newtab-toast-thanks-for-reporting =
+    .message = ご報告ありがとうございます。
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Google のトレンド
+newtab-trending-searches-show-trending =
+    .title = トレンド検索を表示します
+newtab-trending-searches-hide-trending =
+    .title = トレンド検索を隠します
+newtab-trending-searches-learn-more = 詳細情報
+newtab-trending-searches-dismiss = トレンド検索を隠す
+# "Trending searches refers to popular searches from search engines
+newtab-trending-searches-title = トレンド検索

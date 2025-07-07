@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = Apie papildinius
 installed-plugins-label = Įdiegti papildiniai
 no-plugins-are-installed-label = Nėra įdiegtų papildinių
 deprecation-description = Kažko trūksta? Kai kurie papildiniai daugiau nepalaikomi. <a data-l10n-name="deprecation-link">Sužinoti daugiau.</a>
-deprecation-description2 =
-    .message = Kažko trūksta? Kai kurie papildiniai daugiau nepalaikomi.
 
 ## The information of plugins
 ##

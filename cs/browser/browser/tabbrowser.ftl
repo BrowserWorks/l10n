@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,11 +8,36 @@ tabbrowser-menuitem-close-tab =
     .label = Zavřít panel
 tabbrowser-menuitem-close =
     .label = Zavřít
+# Displayed within the tooltip on tabs inside of a tab group.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+tabbrowser-tab-tooltip-tab-group = { $tabGroupName }
+# Displayed within the tooltip on tabs in a container.
+# Variables:
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-container = { $containerName }
+# Displayed within the tooltip on tabs inside of a tab group if the tab is also in a container.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-tab-group-container = { $tabGroupName } — { $containerName }
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } - { $containerName }
+# This text serves as an on-screen tooltip as well as an accessible name for
+# the "X" button that is shown on the active tab or, when multiple tabs are
+# selected, to all their "X" buttons.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-button =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Zavřít panel
+            [few] Zavřít { $tabCount } panely
+           *[other] Zavřít { $tabCount } panelů
+        }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -67,6 +92,16 @@ tabbrowser-unblock-tab-audio-tooltip =
            *[other] Spustit v { $tabCount } panelech přehrávání
         }
 
+## Tooltips for tab audio control
+
+tabbrowser-unmute-tab-audio-aria-label =
+    .aria-label = Zapne zvuk panelu
+tabbrowser-mute-tab-audio-aria-label =
+    .aria-label = Vypne zvuk panelu
+# Used to unblock a tab with audio from autoplaying
+tabbrowser-unblock-tab-audio-aria-label =
+    .aria-label = Spustí v panelu přehrávání
+
 ## Confirmation dialog when closing a window with more than one tab open,
 ## or when quitting when only one window is open.
 
@@ -80,6 +115,7 @@ tabbrowser-confirm-close-tabs-title =
        *[other] Zavřít { $tabCount } panelů?
     }
 tabbrowser-confirm-close-tabs-button = Zavřít panely
+tabbrowser-ask-close-tabs-checkbox = Zeptat se před zavřením více panelů
 tabbrowser-confirm-close-tabs-checkbox = Vždy se zeptat při zavírání více panelů
 
 ## Confirmation dialog when quitting using the menu and multiple windows are open.
@@ -115,7 +151,33 @@ tabbrowser-confirm-close-tabs-with-key-button =
     }
 # Variables:
 #   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-ask-close-tabs-with-key-checkbox = Zeptat se před ukončením zkratkou { $quitKey }
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
 tabbrowser-confirm-close-tabs-with-key-checkbox = Vždy se zeptat při ukončování aplikace zkratkou { $quitKey }
+
+## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
+## and browser.warnOnQuitShortcut is true.
+
+tabbrowser-confirm-close-warn-shortcut-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Ukončit { -brand-short-name(case: "acc") } nebo zavřít aktuální panel?
+       *[no-cases] Ukončit aplikaci { -brand-short-name } nebo zavřít aktuální panel?
+    }
+tabbrowser-confirm-close-windows-warn-shortcut-button =
+    { PLATFORM() ->
+        [macos]
+            { -brand-short-name.case-status ->
+                [with-cases] Ukončit { -brand-short-name(case: "acc") }
+               *[no-cases] Ukončit aplikaci { -brand-short-name }
+            }
+       *[other]
+            { -brand-short-name.case-status ->
+                [with-cases] Ukončit { -brand-short-name(case: "acc") }
+               *[no-cases] Ukončit aplikaci { -brand-short-name }
+            }
+    }
+tabbrowser-confirm-close-tab-only-button = Zavřít aktuální panel
 
 ## Confirmation dialog when opening multiple tabs simultaneously
 
@@ -192,6 +254,9 @@ tabbrowser-ctrl-tab-list-all-tabs =
         }
 
 ## Tab manager menu buttons
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
 
 tabbrowser-manager-mute-tab =
     .tooltiptext = Vypne zvuk panelu
@@ -199,3 +264,125 @@ tabbrowser-manager-unmute-tab =
     .tooltiptext = Zapne zvuk panelu
 tabbrowser-manager-close-tab =
     .tooltiptext = Zavře panel
+# This is for tab groups that have been "saved and closed" (see tab-group-editor-action-save). It does
+# not include "deleted" tab groups (see tab-group-editor-action-delete).
+tabbrowser-manager-closed-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — zavřená
+tabbrowser-manager-current-window-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — aktuální okno
+
+## Tab Groups
+
+tab-group-editor-title-create = Vytvořit skupinu panelů
+tab-group-editor-title-edit = Spravovat skupinu panelů
+tab-group-editor-name-label = Název
+tab-group-editor-name-field =
+    .placeholder = Například: Nakupování
+tab-group-editor-cancel =
+    .label = Zrušit
+    .accesskey = Z
+tab-group-editor-color-selector =
+    .aria-label = Barva skupiny panelů
+tab-group-editor-color-selector2-blue = Modrá
+    .title = Modrá
+tab-group-editor-color-selector2-purple = Fialová
+    .title = Fialová
+tab-group-editor-color-selector2-cyan = Azurová
+    .title = Azurová
+tab-group-editor-color-selector2-orange = Oranžová
+    .title = Oranžová
+tab-group-editor-color-selector2-yellow = Žlutá
+    .title = Žlutá
+tab-group-editor-color-selector2-pink = Růžová
+    .title = Růžová
+tab-group-editor-color-selector2-green = Zelená
+    .title = Zelená
+tab-group-editor-color-selector2-gray = Šedivý
+    .title = Šedivý
+tab-group-editor-color-selector2-red = Červená
+    .title = Červená
+# Variables:
+#  $tabGroupName (String): The name of the tab group. Defaults to the value
+#                          of tab-group-name-default.
+tab-group-description = { $tabGroupName } — Skupina panelů
+tab-context-unnamed-group =
+    .label = Nepojmenovaná skupina
+tab-group-name-default = Nepojmenovaná skupina
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-move-tab-to-new-group =
+    .label =
+        { $tabCount ->
+            [1] Přidat panel do nové skupiny
+            [one] Přidat panel do nové skupiny
+            [few] Přidat panely do nové skupiny
+            [many] Přidat panely do nové skupiny
+           *[other] Přidat panely do nové skupiny
+        }
+    .accesskey = d
+tab-context-move-tab-to-group =
+    .label =
+        { $tabCount ->
+            [1] Přidat panel do skupiny
+            [one] Přidat panel do skupiny
+            [few] Přidat panely do skupiny
+            [many] Přidat panely do skupiny
+           *[other] Přidat panely do skupiny
+        }
+    .accesskey = d
+tab-group-editor-action-new-tab =
+    .label = Nový panel ve skupině
+tab-group-editor-action-new-window =
+    .label = Přesunout skupinu do nového okna
+tab-group-editor-action-save =
+    .label = Uložit a zavřít skupinu
+tab-group-editor-action-ungroup =
+    .label = Zrušit seskupení panelů
+tab-group-editor-action-delete =
+    .label = Smazat skupinu
+tab-group-editor-done =
+    .label = Hotovo
+    .accessKey = H
+tab-context-reopen-tab-group =
+    .label = Znovu otevřít skupinu panelů
+# Variables:
+#  $groupCount (Number): the number of tab groups that are affected by the action.
+tab-context-ungroup-tab =
+    .label =
+        { $groupCount ->
+            [1] Odebrat ze skupiny
+            [one] Odebrat ze skupiny
+            [few] Odebrat ze skupin
+            [many] Odebrat ze skupin
+           *[other] Odebrat ze skupin
+        }
+    .accesskey = d
+
+## Open/saved tab group context menu
+
+# For a tab group open in any window, clicking this will create a new
+# window and move this tab group to that new window.
+tab-group-context-move-to-new-window =
+    .label = Přesunout skupinu do nového okna
+# For a tab group open in a different window from the one that the
+# user is using to access the tab group menu, move that tab group into the
+# user's current window.
+tab-group-context-move-to-this-window =
+    .label = Přesunout skupinu do tohoto okna
+# For a tab group that is open in any window, close the tab group and
+# do not save it. For a tab group that is closed but saved by the user, clicking
+# this will forget the saved tab group.
+tab-group-context-delete =
+    .label = Smazat skupinu
+# For a saved tab group that is not open in any window, open the tab group
+# in the user's current window.
+tab-group-context-open-saved-group-in-this-window =
+    .label = Otevřít skupinu v tomto okně
+# For a saved tab group that is not open in any window, create a new window and
+# open the tab group in that window.
+tab-group-context-open-saved-group-in-new-window =
+    .label = Otevřít skupinu v novém okně

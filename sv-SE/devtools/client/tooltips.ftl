@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,7 +39,7 @@ inactive-css-first-letter-pseudo-element-not-supported = <strong>{ $property }</
 inactive-css-placeholder-pseudo-element-not-supported = <strong>{ $property }</strong> stöds inte i ::placeholder pseudoelement.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> har ingen effekt på det här elementet eftersom den har en visning av <strong>{ $display }</strong>.
 inactive-css-not-display-block-on-floated = Värdet <strong>display</strong> har ändrats av motorn till <strong>block</strong> eftersom elementet är <strong>floated</strong>.
-inactive-css-not-display-block-on-floated-2 = Värdet <strong>display</strong> har ändrats av sökmotorn till <strong>{ $display }</strong> eftersom elementet är <strong>flytande</strong>.
+inactive-css-not-display-block-on-floated-2 = Värdet <strong>display</strong> har ändrats av sökmotorn till <strong>{ $display }</strong> eftersom elementet är <strong>floated</strong>.
 inactive-css-only-non-grid-or-flex-item = <strong>{ $property }</strong> har ingen effekt eftersom den inte kan användas på rutnät eller flex-objekt.
 inactive-css-not-block = <strong>{ $property }</strong> har ingen effekt på det här elementet eftersom det endast gäller element på blocknivå.
 inactive-css-not-floated = <strong>{ $property }</strong> har ingen effekt eftersom den endast gäller för flytande element.
@@ -47,6 +47,7 @@ inactive-css-property-is-impossible-to-override-in-visited = Det är omöjligt a
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> har ingen effekt på detta element eftersom det inte är ett positionerat element.
 inactive-css-only-replaced-elements = <strong>{ $property }</strong> har ingen effekt på detta element eftersom det endast kan tillämpas på ersatta element.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> har ingen effekt på detta element eftersom <strong>overflow:hidden</strong> inte är satt.
+inactive-css-no-size-containment = <strong>{ $property }</strong> har ingen effekt på det här elementet eftersom det inte har någon storleksinneslutning.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> har ingen effekt på interna tabellelement.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> har ingen effekt på interna tabellelement utom tabellceller.
 inactive-css-not-table = <strong>{ $property }</strong> har ingen effekt på detta element eftersom det inte är en tabell.
@@ -58,8 +59,13 @@ inactive-css-resize = <strong>{ $property }</strong> har ingen effekt på detta 
 inactive-css-ruby-element = <strong>{ $property }</strong> har ingen effekt på detta element eftersom det är ett ruby-element. Dess storlek bestäms av teckenstorleken på ruby-texten.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain how
-## the problem can be solved.
+## an icon. When this icon is hovered this message is displayed to explain why
+## the property is not applied.
+## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
+## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
+## Variables:
+##   $property (string) - A CSS property name e.g. "color".
+##   $display (string) - A CSS display value e.g. "inline-block".
 
 inactive-css-highlight-pseudo-elements-not-supported = <strong>{ $property }</strong> stöds inte på highlight-pseudoelement.
 inactive-css-cue-pseudo-element-not-supported = <strong>{ $property }</strong> stöds inte på ::cue pseudoelement.
@@ -92,12 +98,13 @@ inactive-css-not-inline-or-tablecell-fix = Försök lägga till <strong>display:
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Försök lägga till <strong>display:inline-block</strong> eller <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Försök lägga till <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Försök ta bort <strong>float</strong> eller lägga till <strong>display:block</strong>. { learn-more }
-inactive-css-only-non-grid-or-flex-item-fix = Försök att ändra värdet för <strong>display</strong> för elementets behållare till något annat än <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong>, eller <strong>inline-grid</strong>, eller ta bort <strong>float</strong>. { learn-more }
+inactive-css-only-non-grid-or-flex-item-fix = Försök att ändra värdet för <strong>display</strong> för elementets behållare till något annat än <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong> eller <strong>inline-grid</strong> eller ta bort <strong>float</strong>. { learn-more }
 inactive-css-not-block-fix = Testa att lägga till egenskaper som <strong>display:block</strong> eller <strong>float:left</strong>. { learn-more }
 inactive-css-not-floated-fix = Prova att lägga till egenskapen <strong>float</strong> med ett annat värde än <strong>none</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Försök ställa in egenskapen <strong>position</strong> till något annat än <strong>static</strong>. { learn-more }
 inactive-css-only-replaced-elements-fix = Se till att du lägger till egenskapen i ett ersatt element. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Försök att lägga till <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-no-size-containment-fix = Testa att ställa in egenskapen <strong>display</strong> till något annat än <strong>none</strong>, <strong>contents</strong>, <strong>table</strong> eller <strong>inline-table </strong> och se till att det inte är inom en tabell eller ruby-segment. { learn-more }
 inactive-css-not-for-internal-table-elements-fix = Prova att ställa in egenskapen <strong>display</strong> till något annat än <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> eller <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Prova att ställa in egenskapen <strong>display</strong> till något annat än <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> eller <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-table-fix = Prova att lägga till <strong>display:table</strong> eller <strong>display:inline-table</strong>. { learn-more }

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,8 +39,6 @@ address-capture-manage-address-button =
     .label = Настройки адреса
 address-capture-learn-more-button =
     .label = Подробнее
-# The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = Добавить новый адрес
 address-capture-open-menu-button =
     .aria-label = Открыть меню
 address-capture-edit-address-button =
@@ -49,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = Добавить адрес
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Изменить адрес
-autofill-address-name = Имя
 autofill-address-given-name = Имя
 autofill-address-additional-name = Отчество
 autofill-address-family-name = Фамилия
+autofill-address-name = Имя
 autofill-address-organization = Организация
 autofill-address-street-address = Улица, дом, квартира
 autofill-address-street = Адрес
@@ -108,9 +106,8 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = Добавить новый адрес
 autofill-address-country = Страна или регион
 autofill-address-country-only = Страна
 autofill-address-tel = Телефон
@@ -122,12 +119,7 @@ autofill-country-warning-message = В настоящее время автоза
 autofill-add-new-card-title = Добавить новую банковскую карту
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Изменить банковскую карту
-autofill-message-tooltip = Посмотреть сообщение об автозаполнении
-# The dialog title for creating credit cards in browser preferences.
-autofill-add-card-title = Добавить карту
-# The dialog title for editing credit cards in browser preferences.
-autofill-edit-card-title2 = Изменить карту
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->
@@ -135,6 +127,11 @@ autofill-edit-card-password-prompt =
         [windows] { -brand-short-name } пытается показать данные банковской карты. Подтвердите ниже доступ к этой учётной записи Windows.
        *[other] { -brand-short-name } пытается показать данные банковской карты.
     }
+autofill-message-tooltip = Посмотреть сообщение об автозаполнении
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = Добавить карту
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = Изменить карту
 autofill-card-number = Номер карты
 autofill-card-invalid-number = Введите корректный номер карты
 autofill-card-name-on-card = Имя держателя

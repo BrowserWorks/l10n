@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Μετάφραση σελίδας
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } (BETA)
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Διαχείριση γλωσσών
@@ -53,12 +53,12 @@ translations-panel-settings-always-offer-translation =
 # Variables:
 #   $language (string) - The localized display name of the detected language
 translations-panel-settings-never-translate-language =
-    .label = Να μη μεταφράζονται ποτέ τα { $language }
+    .label = Να μην μεταφράζονται ποτέ τα { $language }
 translations-panel-settings-never-translate-unknown-language =
-    .label = Να μη μεταφράζεται ποτέ αυτή η γλώσσα
+    .label = Να μην μεταφράζεται ποτέ αυτή η γλώσσα
 # Text displayed for the option to never translate this website
 translations-panel-settings-never-translate-site =
-    .label = Να μη μεταφράζεται ποτέ αυτός ο ιστότοπος
+    .label = Να μην μεταφράζεται ποτέ αυτός ο ιστότοπος
 
 ## The translation panel appears from the url bar, and this view is the default
 ## translation view.
@@ -67,13 +67,13 @@ translations-panel-header = Μετάφραση σελίδας;
 translations-panel-translate-button =
     .label = Μετάφραση
 translations-panel-translate-button-loading =
-    .label = Παρακαλώ περιμένετε…
+    .label = Περιμένετε…
 translations-panel-translate-cancel =
     .label = Ακύρωση
 translations-panel-learn-more-link = Μάθετε περισσότερα
 translations-panel-intro-header = Δοκιμάστε ιδιωτικές μεταφράσεις στο { -brand-shorter-name }
 translations-panel-intro-description = Για το απόρρητό σας, οι μεταφράσεις δεν φεύγουν ποτέ από τη συσκευή σας. Σύντομα έρχονται νέες γλώσσες και βελτιώσεις!
-translations-panel-error-translating = Προέκυψε πρόβλημα με τη μετάφραση. Παρακαλώ δοκιμάστε ξανά.
+translations-panel-error-translating = Προέκυψε πρόβλημα με τη μετάφραση. Δοκιμάστε ξανά.
 translations-panel-error-load-languages = Δεν ήταν δυνατή η φόρτωση των γλωσσών
 translations-panel-error-load-languages-hint = Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
 translations-panel-error-load-languages-hint-button =
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Εμφάνιση πρωτότυπου
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Μεταφράσεις
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Λήψη γλωσσών για μετάφρα�
 translations-manage-all-language = Όλες οι γλώσσες
 translations-manage-download-button = Λήψη
 translations-manage-delete-button = Διαγραφή
-translations-manage-intro = Ορίστε τις προτιμήσεις γλώσσας και μετάφρασης ιστοτόπων και διαχειριστείτε τις γλώσσες που έχουν εγκατασταθεί για μετάφραση εκτός σύνδεσης.
-translations-manage-install-description = Εγκατάσταση γλωσσών για μετάφραση εκτός σύνδεσης
-translations-manage-language-install-button =
-    .label = Εγκατάσταση
-translations-manage-language-install-all-button =
-    .label = Εγκατάσταση όλων
-    .accesskey = Ε
 translations-manage-intro-2 = Ορίστε τις προτιμήσεις γλώσσας και μετάφρασης ιστοτόπων και διαχειριστείτε τις γλώσσες που θα ληφθούν για μετάφραση εκτός σύνδεσης.
 translations-manage-download-description = Λήψη γλωσσών για μετάφραση εκτός σύνδεσης
 translations-manage-language-download-button =
@@ -145,10 +138,9 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Αφαίρεση όλων
     .accesskey = φ
-translations-manage-error-install = Προέκυψε πρόβλημα κατά την εγκατάσταση των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
-translations-manage-error-download = Προέκυψε πρόβλημα κατά τη λήψη του αρχείου γλώσσας. Παρακαλώ δοκιμάστε ξανά.
-translations-manage-error-delete = Προέκυψε σφάλμα κατά τη διαγραφή των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
-translations-manage-error-remove = Προέκυψε σφάλμα κατά τη αφαίρεση των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
+translations-manage-error-download = Προέκυψε πρόβλημα κατά τη λήψη του αρχείου γλώσσας. Δοκιμάστε ξανά.
+translations-manage-error-delete = Προέκυψε σφάλμα κατά τη διαγραφή των αρχείων γλώσσας. Δοκιμάστε ξανά.
+translations-manage-error-remove = Προέκυψε σφάλμα κατά τη αφαίρεση των αρχείων γλώσσας. Δοκιμάστε ξανά.
 translations-manage-error-list = Αποτυχία λήψης της λίστας με τις διαθέσιμες γλώσσες για μετάφραση. Ανανεώστε τη σελίδα για να δοκιμάσετε ξανά.
 translations-settings-title =
     .title = Ρυθμίσεις μεταφράσεων
@@ -232,10 +224,10 @@ select-translations-panel-idle-placeholder-text = Το μεταφρασμένο 
 # Text displayed as a placeholder when the panel is actively translating.
 select-translations-panel-translating-placeholder-text = Μετάφραση…
 select-translations-panel-init-failure-message =
-    .message = Αδυναμία φόρτωσης γλωσσών. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
+    .message = Δεν ήταν δυνατή η φόρτωση των γλωσσών. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
-    .message = Προέκυψε πρόβλημα με τη μετάφραση. Παρακαλώ δοκιμάστε ξανά.
+    .message = Προέκυψε πρόβλημα με τη μετάφραση. Δοκιμάστε ξανά.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

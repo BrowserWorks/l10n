@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,12 +28,19 @@ clear-data-settings-label = على { -brand-short-name } مسح كل شيء تل
 clear-time-duration-prefix =
     .value = المدى الزمني الذي سيُمسح:{ " " }
     .accesskey = م
+clear-time-duration-prefix2 =
+    .value = متى:
+    .accesskey = م
 clear-time-duration-value-last-hour =
     .label = آخر ساعة
 clear-time-duration-value-last-2-hours =
     .label = آخر ساعتين
 clear-time-duration-value-last-4-hours =
     .label = آخر أربع ساعات
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = منذ { $midnightTime }
 clear-time-duration-value-today =
     .label = التأريخ لهذا اليوم
 clear-time-duration-value-everything =
@@ -48,9 +55,21 @@ history-section-label = التأريخ
 item-history-and-downloads =
     .label = تأريخ التصفح و التنزيلات
     .accesskey = ص
+item-history-form-data-downloads =
+    .label = التأريخ
+    .accesskey = ر
 item-cookies =
     .label = الكعكات
     .accesskey = ت
+# Variables:
+#   $amount (Number) - Amount of site data currently stored on disk
+#   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
+item-cookies-site-data-with-size =
+    .label = الكعكات وبيانات المواقع ({ $amount } ‏{ $unit })
+    .accesskey = م
+item-cookies-site-data =
+    .label = الكعكات وبيانات المواقع
+    .accesskey = م
 item-active-logins =
     .label = جلسات الدخول النشِطة
     .accesskey = ش
@@ -60,6 +79,9 @@ item-cache =
 item-form-search-history =
     .label = تأريخ البحث و النماذج
     .accesskey = ث
+item-site-prefs =
+    .label = إعدادات الموقع
+    .accesskey = ق
 item-site-prefs-description = إعادة تعيين أذوناتك وتفضيلات الموقع إلى الإعدادات الأصلية
 data-section-label = البيانات
 item-site-settings =
@@ -73,6 +95,10 @@ window-close =
     .key = w
 sanitize-button-ok =
     .label = امسح الآن
+sanitize-button-ok2 =
+    .label = امسح
+sanitize-button-ok-on-shutdown =
+    .label = احفظ التغييرات
 # The label for the default button between the user clicking it and the window
 # closing.  Indicates the items are being cleared.
 sanitize-button-clearing =

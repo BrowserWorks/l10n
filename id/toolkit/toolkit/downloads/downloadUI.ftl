@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,21 +22,18 @@ download-ui-dont-quit-button =
         [mac] Jangan Keluar
        *[other] Jangan Keluar
     }
-
 download-ui-confirm-offline-cancel-downloads =
     { $downloadsCount ->
         [1] Apabila Anda keluar sekarang, sebuah unduhan akan dibatalkan. Yakin ingin keluar?
        *[other] Apabila Anda keluar sekarang, { $downloadsCount } unduhan akan dibatalkan. Yakin ingin keluar?
     }
 download-ui-dont-go-offline-button = Tetap Daring
-
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
         [1] Jika Anda menutup semua jendela pada Mode Penjelajahan Pribadi sekarang, 1 unduhan akan dibatalkan. Yakin akan meninggalkan Mode Penjelajahan Pribadi?
        *[other] Jika Anda menutup semua jendela pada Mode Penjelajahan Pribadi sekarang, { $downloadsCount } unduhan akan dibatalkan. Yakin akan meninggalkan Mode Penjelajahan Pribadi?
     }
 download-ui-dont-leave-private-browsing-button = Tetap dalam Mode Penjelajahan Pribadi
-
 download-ui-cancel-downloads-ok =
     { $downloadsCount ->
         [1] Batalkan 1 Unduhan

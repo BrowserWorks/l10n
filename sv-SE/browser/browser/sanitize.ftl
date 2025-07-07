@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Senaste 2 timmarna
 clear-time-duration-value-last-4-hours =
     .label = Senaste 4 timmarna
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Sedan { $midnightTime }
 clear-time-duration-value-today =
     .label = Idag
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = Historik
 item-history-and-downloads =
     .label = Besökta sidor och filhämtningshistorik
     .accesskey = B
+item-history-and-downloads-description2 = Rensar webbplats- och nedladdningshistorik
 item-history-form-data-downloads =
     .label = Historik
     .accesskey = H
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Webbplatsinställningar
     .accesskey = W
+item-formdata-prefs =
+    .label = Sparad formulärinfo
+    .accesskey = S
+item-formdata-description = Rensar saker som namn, e-post och andra objekt som du anger i formulär
 item-site-prefs-description = Återställer dina behörigheter och webbplatsinställningar till ursprungliga inställningar
 data-section-label = Data
 item-site-settings =

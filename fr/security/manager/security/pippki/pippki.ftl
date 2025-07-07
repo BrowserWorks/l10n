@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -85,6 +85,13 @@ client-auth-cert-details-issued-by = Émis par : { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Stocké sur : { $storedOn }
+client-auth-cert-remember-label = Se souvenir de cette décision :
+client-auth-cert-remember-never =
+    .label = Une seule fois
+client-auth-cert-remember-always =
+    .label = De façon permanente
+client-auth-cert-remember-temporarily =
+    .label = Pour cette session
 client-auth-cert-remember-box =
     .label = Se souvenir de cette décision
 

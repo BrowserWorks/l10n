@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = 新しいタブ
@@ -28,10 +32,16 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = 左側のタブをすべて閉じる
     .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = 上側のタブをすべて閉じる
+    .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = 右側のタブをすべて閉じる
+    .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = 下側のタブをすべて閉じる
     .accesskey = i
 close-other-tabs =
     .label = 他のタブをすべて閉じる
@@ -52,10 +62,10 @@ unpin-selected-tabs =
     .label = タブのピン留めを外す
     .accesskey = p
 bookmark-selected-tabs =
-    .label = タブをブックマーク...
+    .label = 選択したタブをブックマークに追加...
     .accesskey = B
 tab-context-bookmark-tab =
-    .label = タブをブックマーク...
+    .label = タブをブックマークに追加...
     .accesskey = B
 tab-context-open-in-new-container-tab =
     .label = 新しいコンテナータブで開く
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = 共有
     .accesskey = h
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = 新しいタブを右隣に開く
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = 新しいタブを下隣に開く
+    .accesskey = w
+tab-context-new-group =
+    .label = 新しいグループ
+    .accesskey = G
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -102,3 +122,10 @@ tab-context-send-tabs-to-device =
            *[other] { $tabCount } 個のタブを端末へ送信
         }
     .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] タブを解放
+           *[other] { $tabCount } 個のタブを解放
+        }
+    .accesskey = U

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = À propos des plugins
 installed-plugins-label = Plugins installés
 no-plugins-are-installed-label = Aucun plugin installé n’a été trouvé
 deprecation-description = Quelque chose semble manquer ? Certains plugins ne sont plus pris en charge. <a data-l10n-name="deprecation-link">En savoir plus.</a>
-deprecation-description2 =
-    .message = Quelque chose semble manquer ? Certains plugins ne sont plus pris en charge.
 
 ## The information of plugins
 ##

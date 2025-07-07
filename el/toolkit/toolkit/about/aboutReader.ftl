@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Σέπια
     .title = Σέπια σύνολο χρωμάτων
 about-reader-color-scheme-auto = Αυτόματο
     .title = Αυτόματο σύνολο χρωμάτων
-about-reader-color-theme-light = Ανοιχτόχρωμο
-    .title = Θέμα χρωμάτων: Ανοιχτό
-about-reader-color-theme-dark = Σκουρόχρωμο
-    .title = Θέμα χρωμάτων: Σκούρο
-about-reader-color-theme-sepia = Σέπια
-    .title = Θέμα χρωμάτων: Σέπια
-about-reader-color-theme-auto = Αυτόματο
-    .title = Θέμα χρωμάτων: Αυτόματο
-about-reader-color-theme-gray = Γκρι
-    .title = Θέμα χρωμάτων: Γκρι
-about-reader-color-theme-contrast = Αντίθεση
-    .title = Θέμα χρωμάτων: Αντίθεση
-about-reader-color-theme-custom = Προσαρμοσμένα χρώματα
-    .title = Θέμα χρωμάτων: Προσαρμοσμένο
 about-reader-color-light-theme = Φωτεινό
     .title = Φωτεινό θέμα
 about-reader-color-dark-theme = Σκοτεινό
@@ -49,7 +35,7 @@ about-reader-estimated-read-time =
        *[other] { $range } λεπτά
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Μείωση μεγέθους γραμματοσειράς
@@ -74,7 +60,6 @@ about-reader-font-type-monospace = Σταθερού πλάτους
 
 about-reader-toolbar-close = Κλείσιμο προβολής ανάγνωσης
 about-reader-toolbar-type-controls = Ρυθμίσεις τυπογραφίας
-about-reader-toolbar-color-controls = Χρώματα
 about-reader-toolbar-text-layout-controls = Κείμενο και διάταξη
 about-reader-toolbar-theme-controls = Θέμα
 about-reader-toolbar-savetopocket = Αποθήκευση στο { -pocket-brand-name }
@@ -99,10 +84,24 @@ about-reader-custom-colors-visited-links = Σύνδεσμοι που έχετε 
     .title = Επεξεργασία χρώματος
 about-reader-custom-colors-selection-highlight = Επισήμανση για εκφώνηση
     .title = Επεξεργασία χρώματος
-about-reader-custom-colors-reset-button = Επαναφορά προεπιλογών
 about-reader-reset-button = Επαναφορά προεπιλογών
+about-reader-custom-colors-foreground2 =
+    .label = Κείμενο
+    .title = Επεξεργασία χρώματος
+about-reader-custom-colors-background2 =
+    .label = Παρασκήνιο
+    .title = Επεξεργασία χρώματος
+about-reader-custom-colors-unvisited-links2 =
+    .label = Σύνδεσμοι που δεν έχετε επισκεφτεί
+    .title = Επεξεργασία χρώματος
+about-reader-custom-colors-visited-links2 =
+    .label = Σύνδεσμοι που έχετε επισκεφτεί
+    .title = Επεξεργασία χρώματος
+about-reader-custom-colors-selection-highlight2 =
+    .label = Επισήμανση για εκφώνηση
+    .title = Επεξεργασία χρώματος
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Κείμενο
 about-reader-text-size-label = Μέγεθος κειμένου
@@ -119,9 +118,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Διάστιχο
 about-reader-advanced-layout-header = Για προχωρημένους
-about-reader-slider-label-width-narrow = Στενό
-about-reader-slider-label-width-wide = Πλατύ
-about-reader-slider-label-spacing-narrow = Στενό
 about-reader-character-spacing-label =
     .label = Διάστιχο χαρακτήρων
 about-reader-word-spacing-label =
@@ -133,3 +129,5 @@ about-reader-text-alignment-center =
     .title = Στοίχιση κειμένου στο κέντρο
 about-reader-text-alignment-right =
     .title = Στοίχιση κειμένου δεξιά
+about-reader-text-alignment-justify =
+    .title = Πλήρης στοίχιση κειμένου

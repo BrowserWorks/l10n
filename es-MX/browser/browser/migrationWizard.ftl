@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,10 +49,18 @@ migration-imported-safari-reading-list = Lista de lectura (de Safari)
 migration-imported-edge-reading-list = Lista de lectura (de Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
+migration-no-permissions-message = { -brand-short-name } no tiene acceso a los perfiles de otros navegadores instalados en este dispositivo.
+migration-no-permissions-instructions = Para continuar importando datos desde otro navegador, { -brand-short-name } debe tener acceso a su carpeta de perfil.
 migration-no-permissions-instructions-step1 = Selecciona "Continuar"
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = En el seleccionador de archivos, navega a <code>{ $permissionsPath }</code> y elige "Seleccionar"
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -81,6 +89,7 @@ migration-passwords-from-file-success-header = Contraseñas importadas correctam
 migration-passwords-from-file = Buscando contraseñas en el archivo
 migration-passwords-new = Nuevas contraseñas
 migration-passwords-updated = Contraseñas existentes
+migration-passwords-from-file-no-valid-data = El archivo no incluye ningún dato de contraseña válido. Elige otro archivo.
 migration-passwords-from-file-picker-title = Importar archivo de contraseñas
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -187,6 +196,8 @@ migration-safari-password-import-step1 = En Safari, abre el menú "Safari" y ve 
 migration-safari-password-import-step2 = Selecciona el botón <img data-l10n-name="safari-icon-3dots"/> y elige “Exportar todas las contraseñas”
 migration-safari-password-import-step3 = Guarda el archivo de contraseñas
 migration-safari-password-import-step4 = Usa “Seleccionar archivo” a continuación para elegir el archivo de contraseñas que guardaste
+migration-manual-password-import-skip-button = Saltar
+migration-manual-password-import-select-button = Seleccionar archivo
 migration-safari-password-import-skip-button = Saltar
 migration-safari-password-import-select-button = Seleccionar archivo
 # Shown in the migration wizard after importing bookmarks from another
@@ -214,7 +225,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

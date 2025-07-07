@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -35,18 +35,20 @@ search-find-selection-shortcut =
 # are recommended by the Human Interface Guidelines
 # of each platform for your locale.
 search-focus-shortcut-alt =
-    .key = { PLATFORM() ->
-        [linux] J
-       *[other] E
-    }
+    .key =
+        { PLATFORM() ->
+            [linux] J
+           *[other] E
+        }
 # Verify what shortcut for that operation
 # are recommended by the Human Interface Guidelines
 # of each platform for your locale.
 downloads-shortcut =
-    .key = { PLATFORM() ->
-        [linux] Y
-       *[other] J
-    }
+    .key =
+        { PLATFORM() ->
+            [linux] Y
+           *[other] J
+        }
 addons-shortcut =
     .key = A
 file-open-shortcut =
@@ -57,7 +59,7 @@ page-source-shortcut =
     .key = U
 # This should match the Option+Command keyboard shortcut letter that Safari
 # and Chrome use for "View Source" on macOS. `page-source-shortcut` above
-# is Waterfox's official keyboard shortcut shown in the GUI.
+# is Firefox's official keyboard shortcut shown in the GUI.
 # Safari variant is an alias provided for the convenience of Safari and Chrome
 # users on macOS. See bug 1398988.
 page-source-shortcut-safari =
@@ -77,6 +79,10 @@ nav-reload-shortcut =
 # Shortcut available only on macOS.
 nav-stop-shortcut =
     .key = .
+ai-chatbot-sidebar-shortcut =
+    .key = X
+toggle-sidebar-shortcut =
+    .key = Z
 history-show-all-shortcut =
     .key = H
 history-show-all-shortcut-mac =
@@ -95,14 +101,14 @@ picture-in-picture-toggle-shortcut-mac =
 # in your locale keyboards above the
 # `picture-in-picture-toggle-shortcut-mac` key.
 picture-in-picture-toggle-shortcut-mac-alt =
-    .key = {"}"}
+    .key = { "}" }
 picture-in-picture-toggle-shortcut =
     .key = ]
 # Pick the key that is commonly present
 # in your locale keyboards above the
 # `picture-in-picture-toggle-shortcut` key.
 picture-in-picture-toggle-shortcut-alt =
-    .key = {"}"}
+    .key = { "}" }
 bookmark-this-page-shortcut =
     .key = D
 # Verify what shortcut for that operation
@@ -130,7 +136,7 @@ full-zoom-reduce-shortcut =
 full-zoom-reduce-shortcut-alt-a =
     .key = _
 full-zoom-reduce-shortcut-alt-b =
-    .key = {""}
+    .key = { "" }
 full-zoom-enlarge-shortcut =
     .key = +
 full-zoom-enlarge-shortcut-alt =
@@ -141,7 +147,7 @@ full-zoom-enlarge-shortcut-alt2 =
 full-zoom-reset-shortcut =
     .key = 0
 full-zoom-reset-shortcut-alt =
-    .key = {""}
+    .key = { "" }
 
 ##
 

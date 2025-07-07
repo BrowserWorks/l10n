@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = 类型
 support-addons-enabled = 已启用
 support-addons-version = 版本
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = 位置
 legacy-user-stylesheets-title = 旧版用户样式表单
 legacy-user-stylesheets-enabled = 启用
 legacy-user-stylesheets-stylesheet-types = 样式表
@@ -54,8 +58,8 @@ app-basics-show-update-history = 显示更新历史
 app-basics-binary = 应用程序二进制文件
 app-basics-profile-dir =
     { PLATFORM() ->
-        [linux] 配置文件夹
-       *[other] 配置文件夹
+        [linux] 配置文件文件夹
+       *[other] 配置文件文件夹
     }
 app-basics-enabled-plugins = 已启用的插件
 app-basics-build-config = 构建配置
@@ -176,7 +180,7 @@ media-device-channels = 声道
 media-device-rate = 采样率
 media-device-latency = 延迟
 media-capabilities-title = 媒体能力
-media-codec-support-info = 解码器支持信息
+media-codec-support-info = 编解码器支持信息
 # List all the entries of the database.
 media-capabilities-enumerate = 枚举数据库
 
@@ -184,6 +188,8 @@ media-capabilities-enumerate = 枚举数据库
 
 media-codec-support-sw-decoding = 软件解码
 media-codec-support-hw-decoding = 硬件解码
+media-codec-support-sw-encoding = 软件编码
+media-codec-support-hw-encoding = 硬件编码
 media-codec-support-codec-name = 编解码器名称
 media-codec-support-supported = 已支持
 media-codec-support-unsupported = 不支持
@@ -217,11 +223,11 @@ intl-locales-supported = 应用程序语言环境
 intl-locales-default = 默认语言环境
 intl-os-title = 操作系统
 intl-os-prefs-system-locales = 系统语言环境
-intl-regional-prefs = 地区偏好
+intl-regional-prefs = 区域偏好
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -327,6 +333,9 @@ has-seccomp-bpf = Seccomp-BPF（系统调用过滤）
 has-seccomp-tsync = Seccomp 线程同步
 has-user-namespaces = 用户命名空间
 has-privileged-user-namespaces = 用于特权进程的用户命名空间
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } - 您的系统不允许此功能，可能限制 { -brand-short-name } 的安全功能发挥作用。
 can-sandbox-content = 内容进程沙盒化
 can-sandbox-media = 媒体插件沙盒化
 content-sandbox-level = 内容进程沙盒级别

@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Send websteder signalet 'Spor mig ikke' ('Do not track') for at fortælle, at du ikke vil spores
+do-not-track-removal = Vi understøtter ikke længere "Spor mig ikke"-signalet
 do-not-track-description2 =
     .label = Send websteder en "Spor mig ikke"-forespørgsel
     .accesskey = d
@@ -137,6 +138,7 @@ windows-launch-on-login =
     .label = Åbn { -brand-short-name } automatisk når din computer starter
     .accesskey = a
 windows-launch-on-login-disabled = Denne indstilling er blevet deaktiveret i Windows. Gå til <a data-l10n-name="startup-link">Apps > Start</a> i Indstillinger for at ændre den.
+windows-launch-on-login-profile-disabled = Aktiver denne indstilling ved at sætte flueben ud for "{ profile-manager-use-selected.label }" i vinduet "Vælg din brugerprofil".
 startup-restore-warn-on-quit =
     .label = Advar mig, når jeg lukker browseren
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = Importer bogmærker, adgangskoder, hist
 preferences-data-migration-button =
     .label = Importer data
     .accesskey = m
+preferences-profiles-header = Profiler
+preferences-manage-profiles-description = Hver profil har forskellige browsing-data og -indstillinger, inklusive historik, adgangskoder med mere.
+preferences-manage-profiles-learn-more = Læs mere
+preferences-manage-profiles-button =
+    .label = Håndter profiler
 tabs-group-header = Faneblade
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tabulator-tasten skifter mellem de senest anvendte faneblade
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Åbn links i faneblade fremfor i nye vinduer
     .accesskey = f
+ask-on-close-multiple-tabs =
+    .label = Spørg, når jeg lukker flere faneblade
+    .accesskey = f
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Spørg, inden jeg afslutter med { $quitKey }
+    .accesskey = a
 confirm-on-close-multiple-tabs =
     .label = Bekræft, når jeg lukker flere faneblade
     .accesskey = B
@@ -212,6 +230,16 @@ containers-remove-cancel-button = Fjern ikke denne kontekst
 settings-tabs-show-image-in-preview =
     .label = Forhåndsvis når musemarkøren er over et faneblad
     .accessKey = m
+browser-layout-header = Browser-layout
+browser-layout-horizontal-tabs =
+    .label = Vandrette faneblade
+browser-layout-horizontal-tabs-desc = Vises øverst i browseren
+browser-layout-vertical-tabs =
+    .label = Lodrette faneblade
+browser-layout-vertical-tabs-desc = Vis i siden, i sidepanelet
+browser-layout-show-sidebar =
+    .label = Vis sidepanel
+browser-layout-show-sidebar-desc = Få hurtig adgang til bogmærker, faneblade fra din telefon, AI-chatbots og mere uden at forlade din primære visning.
 
 ## General Section - Language & Appearance
 
@@ -235,6 +263,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Dine indstillinger for kontrast tilsidesætter webstedets udseende.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Dine farvevalg tilsidesætter webstedets udseende. <a data-l10n-name="colors-link">Håndter farver</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -243,6 +275,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Håndter { -brand-short-name }-temaer i <a data-l10n-name="themes-link">Udvidelser og temaer</a>
+preferences-contrast-control-header = Kontrastkontrol
+preferences-contrast-control-description = Websteder har alle mulige farver i forgrunden og baggrunden. Indstil { -brand-short-name } til at bruge de samme farver på alle websteder for at gøre det nemmere at læse tekst.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatisk (brug systemets indstillinger)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Fra
+    .accesskey = F
+preferences-contrast-control-custom =
+    .label = Tilpasset
+    .accesskey = T
 preferences-colors-header = Farver
 preferences-colors-description = Tilsidesæt { -brand-short-name }' standardfarver for tekst, websteds-baggrunde og links.
 preferences-colors-manage-button =
@@ -318,6 +361,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Spørg mig altid, hvor filer skal gemmes
     .accesskey = a
+download-private-browsing-delete =
+    .label = Slet filer hentet i privat browsing, når alle private vinduer bliver lukket
+    .accesskey = S
 applications-header = Programmer
 applications-description = Vælg, hvordan { -brand-short-name } håndterer hentede filer og eksterne programmer.
 applications-filter =
@@ -408,7 +454,7 @@ play-drm-content-learn-more = Læs mere
 update-application-title = { -brand-short-name }-opdateringer
 update-application-description = Hold { -brand-short-name } opdateret for at få den bedste ydelse, stabilitet og sikkerhed.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Version { $version }. <a data-l10n-name="learn-more">Nyheder</a>
 update-history =
     .label = Vis opdateringshistorik…
@@ -472,6 +518,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Browsing
+browsing-group-label =
+    .aria-label = Browsing
 browsing-use-autoscroll =
     .label = Anvend autoscrolling
     .accesskey = a
@@ -556,7 +604,7 @@ choose-bookmark =
     .label = Anvend bogmærke…
     .accesskey = b
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = Indhold på { -firefox-home-brand-name }
 home-prefs-content-description2 = Vælg det indhold, du vil have vist på din { -firefox-home-brand-name }.
@@ -568,8 +616,7 @@ home-prefs-shortcuts-description = Gemte eller besøgte websteder
 home-prefs-shortcuts-by-option-sponsored =
     .label = Sponsorerede genveje
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Anbefalet af { $provider }
@@ -607,6 +654,14 @@ home-prefs-weather-header =
     .label = Vejr
 home-prefs-weather-description = Dagens vejrudsigt
 home-prefs-weather-learn-more-link = Lær mere
+home-prefs-trending-search-header =
+    .label = Populære søgninger
+home-prefs-trending-search-description = Populære og ofte søgte emner
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Støt { -brand-product-name }
+home-prefs-mission-message = Vores sponsorer støtter vores mission om at bygge et bedre internet
+home-prefs-mission-message-learn-more-link = Find ud af hvordan
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -641,6 +696,10 @@ search-show-suggestions-url-bar-option =
     .label = Vis søgeforslag i adressefeltet
     .accesskey = a
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Vis søgestrenge i adressefeltet på resultatsider
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -671,6 +730,9 @@ search-remove-engine =
 search-add-engine =
     .label = Tilføj
     .accesskey = T
+search-edit-engine =
+    .label = Rediger
+    .accesskey = R
 search-find-more-link = Find flere søgetjenester
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -679,6 +741,13 @@ search-keyword-warning-title = Genvej findes allerede
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Du har valgt en genvej som allerede bruges af "{ $name }". Vælg venligst en anden.
 search-keyword-warning-bookmark = Du har valgt en genvej som bruges af et bogmærke. Vælg venligst en anden.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Der findes allerede en søgetjeneste med navnet "{ $name }". Vælg et andet navn.
+remove-engine-confirmation = Er du sikker på, at du vil fjerne denne søgetjeneste?
+remove-engine-remove = Fjern
+remove-addon-engine-alert = For at fjerne denne søgetjeneste skal du fjerne den tilknyttede tilføjelse.
 
 ## Containers Section
 
@@ -696,7 +765,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Fjern
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Tag dit net med dig
@@ -714,7 +783,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Hent Waterfox til <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for at synkronisere med din mobil-enhed
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Skift profilbillede
@@ -732,7 +801,7 @@ sync-manage-account = Håndter konto
     .accesskey = H
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } er ikke blevet bekræftet.
 sync-signedin-login-failure = Log ind for at synkronisere { $email }
@@ -783,6 +852,9 @@ sync-currently-syncing-creditcards = Betalingskort
 sync-currently-syncing-payment-methods = Betalingsmetoder
 sync-currently-syncing-addons = Tilføjelser
 sync-currently-syncing-settings = Indstillinger
+sync-manage-options =
+    .label = Håndter synkronisering…
+    .accesskey = H
 sync-change-options =
     .label = Skift…
     .accesskey = S
@@ -829,12 +901,19 @@ sync-engine-payment-methods2 =
     .accesskey = e
 sync-engine-addons =
     .label = Tilføjelser
-    .tooltiptext = Tilføjelser og temaer til Waterfox til computer
+    .tooltiptext = Udvidelser og temaer til Waterfox til computer
     .accesskey = T
 sync-engine-settings =
     .label = Indstillinger
     .tooltiptext = Generelle indstillinger, samt indstillinger for privatliv og sikkerhed, som du har ændret
     .accesskey = I
+sync-choose-what-to-sync-dialog4 =
+    .title = Håndter, hvad som skal synkroniseres til dine tilknyttede enheder
+    .style = min-width: 36em;
+    .buttonlabelaccept = Gem
+    .buttonaccesskeyaccept = G
+    .buttonlabelextra2 = Afbryd forbindelse…
+    .buttonaccesskeyextra2 = r
 
 ## The device name controls.
 
@@ -855,7 +934,7 @@ sync-connect-another-device = Opret forbindelse til en ny enhed
 
 sync-verification-sent-title = Bekræftelse er sendt
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = Et bekræftelseslink er blevet sendt til { $email }.
 sync-verification-not-sent-title = Kunne ikke sende bekræftelse
 sync-verification-not-sent-body = Det er i øjeblikket ikke muligt for os at sende en bekræftelsesmail. Prøv igen senere.
@@ -950,12 +1029,12 @@ windows-passkey-settings-label = Håndter adgangsnøgler i operativsystemets ind
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = For at oprette en hovedadgangskode skal du indtaste dine login-oplysninger til Windows. Dette hjælper dig med at holde dine konti sikre.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = oprette en hovedadgangskode
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] ændre indstillingerne for betalingsmetoder
@@ -986,12 +1065,12 @@ history-header = Historik
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } vil:
     .accesskey = i
 history-remember-option-all =
@@ -1086,6 +1165,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Adressefelt
 addressbar-suggest = Når jeg bruger adressefeltet ønsker jeg forslag fra
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Adressefelt — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Vælg hvilken slags forslag, du vil have vist i adressefeltet.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Læs mere
 addressbar-locbar-history-option =
     .label = Historik
     .accesskey = H
@@ -1115,7 +1201,21 @@ addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 addressbar-locbar-showrecentsearches-option =
     .label = Vis seneste søgninger
     .accesskey = s
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Vis populære søgeforslag
+    .accesskey = p
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Forslag fra { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Få forslag fra internettet relateret til din søgning.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Forslag fra sponsorer
+addressbar-locbar-suggest-sponsored-desc = Støt { -brand-short-name } med lejlighedsvise sponsorerede forslag.
 addressbar-quickactions-learn-more = Læs mere
+addressbar-dismissed-suggestions-label = Afviste forslag
+addressbar-restore-dismissed-suggestions-description = Gendan afviste forslag fra sponsorer og { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Gendan
 
 ## Privacy Section - Content Blocking
 
@@ -1278,17 +1378,42 @@ permissions-addon-exceptions =
 collection-header = Indsamling og brug af data i { -brand-short-name }
 collection-header2 = Indsamling og brug af data i { -brand-short-name }
     .searchkeywords = telemetry
+preferences-collection-description = Vi stræber efter at give dig mulighed for at vælge og indsamler kun data, der er nødvendige for at forbedre { -brand-product-name } for alle.
+preferences-collection-privacy-notice = Se privatlivserklæring
+preferences-across-profiles = Disse indstillinger vil gælde alle { -brand-product-name }-profiler på denne enhed.
+preferences-view-profiles = Vis alle profiler
 collection-description = Vi stræber efter at give dig mulighed for selv at vælge og indsamler kun, hvad vi har brug for til at forbedre { -brand-short-name } for alle. Vi spørger altid om din tilladelse, før vi modtager personlig information.
 collection-privacy-notice = Privatlivserklæring
 collection-health-report-telemetry-disabled = Du tillader ikke længere, at { -vendor-short-name } indsamler teknisk data og data om brug. Alle tidligere data vil blive slettet indenfor 30 dage.
 collection-health-report-telemetry-disabled-link = Læs mere
+collection-usage-ping =
+    .label = Send ping for dagligt brug til { -vendor-short-name }
+    .accesskey = b
+collection-usage-ping-description = Dette hjælper { -vendor-short-name } med at vurdere antallet af aktive brugere.
+collection-health-report2 =
+    .label = Send tekniske data og data om brug til { -vendor-short-name }
+    .accesskey = r
 collection-health-report =
     .label = Tillad at { -brand-short-name } indsender tekniske data og data om brug til { -vendor-short-name }
     .accesskey = d
 collection-health-report-link = Læs mere
+collection-health-report-description = Dette hjælper os med at forbedre funktionerne i { -brand-product-name } samt ydelse og stabilitet.
+collection-studies2 =
+    .label = Installer og kør undersøgelser
+collection-studies-description = Prøv nye funktioner og idéer, før de bliver tilgængelige for alle.
 collection-studies =
     .label = Tillad at { -brand-short-name } installerer og afvikler undersøgelser
 collection-studies-link = Vis { -brand-short-name }-undersøgelser
+addon-recommendations2 =
+    .label = Tillad tilpassede anbefalinger af udvidelser
+addon-recommendations-description = Få anbefalinger om udvidelser, der kan forbedre din oplevelse på nettet.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Data-rapportering er deaktiveret for denne build-konfiguration.
+collection-backlogged-crash-reports2 =
+    .label = Send automatisk fejlrapporter
+    .accesskey = S
+collection-backlogged-crash-reports-description = Dette hjælper { -vendor-short-name } med at diagnosticere og løse problemer med browseren. Rapporter kan indeholde personlige eller følsomme data.
 addon-recommendations =
     .label = Tillad at { -brand-short-name } anbefaler udvidelser specielt udvalgt til dig
 addon-recommendations-link = Læs mere
@@ -1360,12 +1485,17 @@ space-alert-under-5gb-message2 =
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Tilstanden Kun-HTTPS
+httpsonly-description3 = Tillad kun sikre forbindelser til websteder. { -brand-short-name } vil spørge, før en usikker forbindelse oprettes.
+httpsonly-learn-more2 = Sådan virker tilstanden kun-HTTPS
 httpsonly-description = HTTPS sørger for en sikker, krypteret forbindelse mellem { -brand-short-name } og de websteder, du besøger. De fleste websteder understøtter HTTPS, og hvis kun-HTTPS er slået til, så opgraderer { -brand-short-name } alle forbindelser til HTTPS.
 httpsonly-learn-more = Læs mere
 httpsonly-radio-enabled =
     .label = Slå kun-HTTPS til for alle vinduer
 httpsonly-radio-enabled-pbm =
     .label = Slå udelukkende kun-HTTPS til for private vinduer
+httpsonly-radio-disabled3 =
+    .label = Slå ikke kun-HTTPS til
+    .description = { -brand-short-name } kan stadig opgradere nogle forbindelser
 httpsonly-radio-disabled =
     .label = Slå ikke kun-HTTPS til
 

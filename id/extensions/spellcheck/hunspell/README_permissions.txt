@@ -5,7 +5,7 @@ This readme files contains email conversation to the creator of myspell
 dictionaries used here. The creator Benitius Brevoort 
 <benitius.brevoort@kapusin.org> is willing to relicense his work on myspell
 dictionaries for Indonesia to GPLv2, LGPL v2.1, and MPL v1.1 according to
-BrowserWorks License Policy found in http://www.mozilla.org/MPL/license-policy.html.
+Mozilla License Policy found in http://www.mozilla.org/MPL/license-policy.html.
 
 The second conversation in Indonesian language is asking permission from the
 creator to be included in BrowserWorks distribution with addition found in 

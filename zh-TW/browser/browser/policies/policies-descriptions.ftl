@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = 開啟或關閉支援 Captive portal。
 policy-CertificatesDescription = 新增憑證，或使用內建憑證。
 policy-ContentAnalysis = 啟用或停用與資料外洩防護軟體之間的連線。
 policy-Cookies = 允許或拒絕網站設定 Cookie。
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = 設定容器分頁相關政策。
 policy-DisableAccounts = 停用需要帳號才可使用的服務，包含 Sync。
 policy-DisabledCiphers = 停用加密演算法。
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何�
 policy-DisableDeveloperTools = 防止使用開發者工具。
 policy-DisableEncryptedClientHello = 停用 TLS 的 Encrypted Client Hello（ECH）功能。
 policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「回報詐騙網站」）。
-policy-DisableWaterfoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
+policy-DisableFirefoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = 停用需要帳號才可使用的服務，包含 Sync。
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = 停用 Waterfox Screenshots 功能。
-policy-DisableWaterfoxStudies = 防止 { -brand-short-name } 進行使用者研究。
+policy-DisableFirefoxAccounts1 = 停用需要帳號才可使用的服務，包含 Sync。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 停用 Waterfox Screenshots 功能。
+policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研究。
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
 policy-DisablePrimaryPasswordCreation = 若為 true，將無法建立主控密碼。
@@ -77,15 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 針對特定網�
 policy-Extensions = 安裝、移除或鎖定擴充套件。安裝選項可加入網址或路徑作為參數。移除和鎖定選項則需要擴充套件 ID 作為參數。
 policy-ExtensionSettings = 管理擴充套件的各種安裝設定。
 policy-ExtensionUpdate = 開啟或關閉擴充套件自動更新。
-policy-WaterfoxHome2 = 設定 { -firefox-home-brand-name }。
-policy-WaterfoxSuggest = 設定 { -firefox-suggest-brand-name }。
+policy-FirefoxHome2 = 設定 { -firefox-home-brand-name }。
+policy-FirefoxSuggest = 設定 { -firefox-suggest-brand-name }。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 在網址列輸入單一文字時，強制導航到企業內部網站，而非進行線上搜尋。
 policy-Handlers = 設定預設應用程式處理方式。
 policy-HardwareAcceleration = 若為 false，就會關閉硬體加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 設定或鎖定首頁。
 policy-HttpAllowlist = 不升級為 HTTPS 連線的來源。
-policy-HttpsOnlyMode = 允許開啟僅 HTTPS 模式。
+policy-HttpsOnlyMode = 允許開啟純 HTTPS 模式。
 policy-InstallAddonsPermission = 允許某些網站安裝附加元件。
 policy-LegacyProfiles = 停用「於每一套安裝使用不同設定檔」的功能。
 
@@ -119,6 +119,7 @@ policy-Permissions2 = 設定攝影機、麥克風、地理位置、通知、自�
 policy-PictureInPicture = 開啟或關閉子母畫面功能。
 policy-PopupBlocking = 允許某些網站預設可顯示彈出型視窗。
 policy-Preferences = 鎖定部分偏好設定的內容。
+policy-PrivateBrowsingModeAvailability = 設定是否可使用隱私瀏覽模式。
 policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至何處。
 policy-Proxy = 設定代理伺服器選項。
 policy-RequestedLocales = 為應用程式設定使用的語系清單順序。
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 新增或刪除 PKCS #11 模組。
 policy-ShowHomeButton = 於工具列顯示首頁按鈕。
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = 程式啟動時不顯示使用條款與隱私權公告。您必須獲得您提供使用此瀏覽器的所有使用者授權，並代表他們同意使用條款。
 policy-SSLVersionMax = 設定最大 SSL 版本。
 policy-SSLVersionMin = 設定最小 SSL 版本。
 policy-StartDownloadsInTempDirectory = 強制在本機的暫存位置，而非預設下載目錄開始下載。
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = 使用系統列印對話框列印。
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 封鎖網站，不讓使用者開啟。請參考文件取得設定格式的詳細資料。
 policy-Windows10SSO = 允許使用 Windows 單一登入系統，登入微軟、工作單位、學校提供的帳號。
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = 允許使用 Microsoft Entra 帳號單一登入。

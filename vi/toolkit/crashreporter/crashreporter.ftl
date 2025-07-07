@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } gặp sự cố và đ
 crashreporter-plea = Để giúp chúng tôi chẩn đoán và sửa chữa, bạn có thể gửi báo cáo lỗi cho chúng tôi.
 crashreporter-information = Ứng dụng này được chạy sau khi gặp sự cố để báo cáo nó cho { -vendor-short-name }. Nó không nên được chạy trực tiếp.
 crashreporter-error = { -brand-short-name } gặp sự cố và đã thoát. Thật không may, trình báo cáo sự cố không thể gửi báo cáo về sự cố này.
+crashreporter-error-details-header = Chi tiết:
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = Chi tiết: { $details }
 crashreporter-no-run-message = Ứng dụng này được chạy sau khi gặp lỗi để báo cáo vấn đề tới nhà cung cấp ứng dụng. Không nên chạy nó trực tiếp.
@@ -16,9 +17,13 @@ crashreporter-loading-details = Đang tải…
 crashreporter-view-report-title = Báo cáo nội dung
 crashreporter-comment-prompt = Thêm bình luận (bình luận sễ được hiển thị công khai)
 crashreporter-report-info = Báo cáo cũng bao gồm thông tin kĩ thuật về trạng thái ứng dụng lúc bị lỗi.
+crashreporter-checkbox-test-hardware = Kiểm tra các vấn đề về phần cứng và cấu hình trên thiết bị của tôi.
+crashreporter-checkbox-send-report = Hãy cho { -vendor-short-name } biết về sự cố này để họ có thể khắc phục nó.
+crashreporter-checkbox-include-url = Bao gồm địa chỉ của trang tôi đã truy cập.
 crashreporter-send-report = Hãy cho { -vendor-short-name } biết về sự cố này để họ có thể khắc phục nó.
 crashreporter-include-url = Bao gồm địa chỉ của trang tôi đã truy cập.
 crashreporter-submit-status = Báo cáo của bạn sẽ được gửi trước khi bạn thoát hoặc khởi động lại.
+crashreporter-submit-waiting-hardware-tests = Đang kiểm tra các vấn đề về phần cứng và cấu hình…
 crashreporter-submit-in-progress = Đang gửi báo cáo của bạn…
 crashreporter-submit-success = Báo cáo đã được gửi thành công!
 crashreporter-submit-failure = Có vấn đề trong khi gửi báo cáo của bạn.
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = Thiếu thư mục home
 # $to (String) - the destination path
 crashreporter-error-moving-path = Không thể di chuyển { $from } đến { $to }
 crashreporter-error-version-eol = Phiên bản đã lỗi thời: báo cáo sự cố không còn được chấp nhận.
+crashreporter-error-failed-to-generate-minidump = Ứng dụng không thể truy xuất thông tin sự cố.

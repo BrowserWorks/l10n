@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,12 +11,11 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = Προσθήκη ετικετών
-
 pocket-panel-saved-error-generic = Προέκυψε σφάλμα κατά την προσπάθεια αποθήκευσης στο { -pocket-brand-name }.
 pocket-panel-saved-error-tag-length = Οι ετικέτες έχουν όριο 25 χαρακτήρες
 pocket-panel-saved-error-only-links = Μόνο οι σύνδεσμοι μπορούν να αποθηκευτούν
 pocket-panel-saved-error-not-saved = Η σελίδα δεν αποθηκεύτηκε
-pocket-panel-saved-error-no-internet = Πρέπει να συνδεθείτε στο Διαδίκτυο για να κάνετε αποθήκευση στο { -pocket-brand-name }. Παρακαλώ συνδεθείτε στο Διαδίκτυο και δοκιμάστε ξανά.
+pocket-panel-saved-error-no-internet = Πρέπει να συνδεθείτε στο διαδίκτυο για να κάνετε αποθήκευση στο { -pocket-brand-name }. Συνδεθείτε στο διαδίκτυο και δοκιμάστε ξανά.
 pocket-panel-saved-error-remove = Προέκυψε σφάλμα κατά την προσπάθεια αφαίρεσης αυτής της σελίδας.
 pocket-panel-saved-page-removed = Η σελίδα αφαιρέθηκε
 pocket-panel-saved-page-saved = Αποθηκεύτηκε στο { -pocket-brand-name }
@@ -29,7 +28,6 @@ pocket-panel-saved-save-tags = Αποθήκευση
 pocket-panel-saved-saving-tags = Αποθήκευση…
 pocket-panel-saved-suggested-tags = Προτεινόμενες ετικέτες
 pocket-panel-saved-tags-saved = Προστέθηκαν ετικέτες
-
 # This is displayed above a field where the user can add tags
 pocket-panel-signup-add-tags = Προσθήκη ετικετών:
 
@@ -44,7 +42,6 @@ pocket-panel-signup-signup-firefox = Εγγραφή με { -brand-product-name }
 pocket-panel-signup-tagline = Αποθηκεύστε άρθρα και βίντεο από το { -brand-product-name } για προβολή στο { -pocket-brand-name } από οποιαδήποτε συσκευή, ανά πάσα στιγμή.
 pocket-panel-signup-tagline-story-one = Κάντε κλικ στο κουμπί του { -pocket-brand-name } για να αποθηκεύσετε οποιοδήποτε άρθρο, βίντεο ή σελίδα από το { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Προβολή στο { -pocket-brand-name } σε οποιαδήποτε συσκευή, ανά πάσα στιγμή.
-
 pocket-panel-signup-cta-a-fix = Το κουμπί αποθήκευσής σας για το διαδίκτυο
 pocket-panel-signup-cta-b-updated = Κάντε κλικ στο κουμπί του { -pocket-brand-name } για να αποθηκεύσετε άρθρα, βίντεο και συνδέσμους. Δείτε τα αποθηκευμένα στοιχεία σας σε οποιαδήποτε συσκευή, ανά πάσα στιγμή.
 pocket-panel-signup-cta-b-short = Κάντε κλικ στο κουμπί του { -pocket-brand-name } για να αποθηκεύσετε άρθρα, βίντεο και συνδέσμους.
@@ -57,7 +54,6 @@ pocket-panel-home-paragraph = Μπορείτε να χρησιμοποιήσετ
 pocket-panel-home-explore-popular-topics = Εξερεύνηση δημοφιλών θεμάτων
 pocket-panel-home-discover-more = Ανακάλυψη
 pocket-panel-home-explore-more = Εξερεύνηση
-
 pocket-panel-home-most-recent-saves = Ακολουθούν οι πιο πρόσφατες αποθηκεύσεις σας:
 pocket-panel-home-most-recent-saves-loading = Φόρτωση πρόσφατων αποθηκεύσεων…
 pocket-panel-home-new-user-cta = Κάντε κλικ στο κουμπί του { -pocket-brand-name } για να αποθηκεύσετε άρθρα, βίντεο και συνδέσμους.

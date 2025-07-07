@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,3 +12,9 @@ input-file-and-more-files =
         [one] og ein til
        *[other] og { $fileCount } fleire
     }
+form-post-secure-to-insecure-warning-title = Tryggingsåtvaringar
+form-post-secure-to-insecure-warning-message =
+    Informasjonen du har skrive inn på denne sida vert sendt over ein utrygg kanal, og kan lesast av ein tredjepart.
+    
+    Er du viss på at du vil senda denne informasjonen?
+form-post-secure-to-insecure-warning-continue = Hald fram

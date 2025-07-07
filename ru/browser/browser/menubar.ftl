@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = е
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Открыть адрес…
 menu-file-open-file =
@@ -256,6 +256,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Мобильные закладки
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Профили
+menu-profiles-manage-profiles =
+    .label = Управление профилями
+menu-profiles-new-profile =
+    .label = Новый профиль
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (текущий)
+
 ## Tools Menu
 
 menu-tools =
@@ -264,6 +277,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Загрузки
     .accesskey = З
+menu-tools-extensions-and-themes =
+    .label = Расширения и темы
+    .accesskey = У
 menu-tools-addons-and-themes =
     .label = Дополнения и темы
     .accesskey = п

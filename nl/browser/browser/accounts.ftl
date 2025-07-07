@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = Aanmaken account voltooien
 account-disconnected2 = Account niet verbonden
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Verzenden naar alle apparaten
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Apparaten beheren…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = { $email } opnieuw koppelen
 account-verify = { $email } verifiëren
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = Een ander apparaat verbinden…
 account-send-tab-to-device-verify-status = Account niet geverifieerd
 account-send-tab-to-device-verify = Uw account verifiëren…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Account
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Deze computer is nu verbonden met { $deviceName }.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = Deze computer is nu verbonden met een nieuw apparaat.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = U bent met succes aangemeld
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = De verbinding van deze computer is verbroken.
 
 ## These strings are used in a notification shown when we're opening

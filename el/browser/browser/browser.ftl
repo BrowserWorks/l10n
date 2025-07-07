@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,8 +9,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Waterfox"
-# private - "Waterfox (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -26,8 +26,8 @@ browser-main-window-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Waterfox"
-# "private" - "Waterfox — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -51,6 +51,70 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = Ιδιωτική περιήγηση { -brand-shortcut-name }
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = Ιδιωτική περιήγηση { -brand-full-name }
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — Ιδιωτική περιήγηση { -brand-full-name }
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — Ιδιωτική περιήγηση { -brand-full-name }
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name } — { -brand-full-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Ιδιωτική περιήγηση { -brand-full-name }
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — Ιδιωτική περιήγηση
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — Ιδιωτική περιήγηση { -brand-full-name }
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — Ιδιωτική περιήγηση
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Ιδιωτική περιήγηση
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-default-title = { -brand-full-name }
 
 ##
 
@@ -76,7 +140,7 @@ urlbar-web-rtc-share-microphone-notification-anchor =
 urlbar-default-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων
 urlbar-geolocation-notification-anchor =
-    .tooltiptext = Άνοιγμα πλαισίου αίτησης τοποθεσίας
+    .tooltiptext = Άνοιγμα πίνακα αιτήματος τοποθεσίας
 urlbar-xr-notification-anchor =
     .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων εικονικής πραγματικότητας
 urlbar-storage-access-anchor =
@@ -86,7 +150,7 @@ urlbar-web-rtc-share-screen-notification-anchor =
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων αποθηκευμένων εκτός σύνδεσης
 urlbar-password-notification-anchor =
-    .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων αποθήκευσης συνθηματικού
+    .tooltiptext = Άνοιγμα πλαισίου μηνύματος αποθήκευσης κωδικού πρόσβασης
 urlbar-plugins-notification-anchor =
     .tooltiptext = Διαχείριση χρήσης αρθρωμάτων
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -103,7 +167,7 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων εγκατάστασης προσθέτων
 urlbar-tip-help-icon =
     .title = Λάβετε βοήθεια
-urlbar-search-tips-confirm = Εντάξει, το 'πιασα
+urlbar-search-tips-confirm = Εντάξει, το κατάλαβα
 urlbar-search-tips-confirm-short = Το κατάλαβα
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -123,6 +187,32 @@ urlbar-result-menu-remove-from-history =
 urlbar-result-menu-tip-get-help =
     .label = Λήψη βοήθειας
     .accesskey = β
+urlbar-result-menu-dismiss-suggestion =
+    .label = Απόρριψη πρότασης
+    .accesskey = Α
+urlbar-result-menu-learn-more-about-firefox-suggest =
+    .label = Μάθετε περισσότερα για τις { -firefox-suggest-brand-name(case: "nom") }
+    .accesskey = Μ
+urlbar-result-menu-manage-firefox-suggest =
+    .label = Διαχείριση { -firefox-suggest-brand-name(case: "gen") }
+    .accesskey = Δ
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location =
+    .label = Αναφορά ανακριβούς τοποθεσίας
+urlbar-result-menu-show-less-frequently =
+    .label = Εμφάνιση σπανιότερα
+urlbar-result-menu-dont-show-weather-suggestions =
+    .label = Να μην εμφανίζονται προτάσεις καιρού
+# A message shown in the urlbar when the user submits feedback on a suggestion
+# (e.g., it shows an inaccurate location, it's shown too often, etc.).
+urlbar-feedback-acknowledgment = Ευχαριστούμε για τα σχόλιά σας
+# A message shown in the urlbar when the user dismisses weather suggestions.
+# Weather suggestions won't be shown at all anymore.
+urlbar-dismissal-acknowledgment-weather = Ευχαριστούμε για τα σχόλιά σας. Δεν θα βλέπετε πλέον προτάσεις καιρού.
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -254,37 +344,55 @@ search-one-offs-actions =
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Προβολή προσθέτων
-quickactions-cmd-addons2 = πρόσθετα
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-addons3 = επεκτάσεις, θέματα, πρόσθετα, addons, add-ons
+quickactions-cmd-addons2 = πρόσθετα, add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Διαχείριση σελιδοδεικτών
-quickactions-cmd-bookmarks = σελιδοδείκτες
+quickactions-cmd-bookmarks = σελιδοδείκτες, αγαπημένα
+# Opens a SUMO article explaining how to clear history
+quickactions-clearrecenthistory = Απαλοιφή πρόσφατου ιστορικού
+quickactions-cmd-clearrecenthistory = απαλοιφή πρόσφατου ιστορικού, ιστορικό
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Απαλοιφή ιστορικού
 quickactions-cmd-clearhistory = απαλοιφή ιστορικού, εκκαθάριση ιστορικού, διαγραφή ιστορικού
 # Opens about:downloads page
 quickactions-downloads2 = Προβολή λήψεων
-quickactions-cmd-downloads = λήψεις
+quickactions-cmd-downloads = λήψεις, αρχεία λήψης
 # Opens about:addons page in the extensions section
 quickactions-extensions = Διαχείριση επεκτάσεων
 quickactions-cmd-extensions = επεκτάσεις
+# Opens Firefox View
+quickactions-firefoxview = Άνοιγμα { -firefoxview-brand-name(case: "gen") }
+# English is using "view" and "open view", since the feature name is
+# "Firefox View". If you have translated the name in your language, you
+# should use a word related to the existing translation.
+quickactions-cmd-firefoxview = άνοιγμα { -firefoxview-brand-name(case: "gen") }, { -firefoxview-brand-name(case: "nom") }, άνοιγμα προβολής, προβολή
+# Opens SUMO home page
+quickactions-help = Βοήθεια { -brand-product-name }
+quickactions-cmd-help = βοήθεια, υποστήριξη
 # Opens the devtools web inspector
 quickactions-inspector2 = Άνοιγμα εργαλείων ανάπτυξης
+quickactions-cmd-inspector2 = επιθεώρηση, επιθεώρηση σελίδας, εργαλεία ανάπτυξης, ανάπτυξη, devtools
 quickactions-cmd-inspector = επιθεώρηση, εργαλεία προγραμματιστή, εργαλεία ανάπτυξης, devtools
 # Opens about:logins
 quickactions-logins2 = Διαχείριση κωδικών πρόσβασης
-quickactions-cmd-logins = συνδέσεις, στοιχεία σύνδεσης, διαπιστευτήρια, κωδικοί πρόσβασης
+quickactions-cmd-logins = συνδέσεις, στοιχεία σύνδεσης, διαπιστευτήρια, κωδικοί πρόσβασης, κωδικοί
 # Opens about:addons page in the plugins section
 quickactions-plugins = Διαχείριση αρθρωμάτων
-quickactions-cmd-plugins = αρθρώματα
+quickactions-cmd-plugins = αρθρώματα, plugins
 # Opens the print dialog
 quickactions-print2 = Εκτύπωση σελίδας
 quickactions-cmd-print = εκτύπωση
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Αποθήκευση σελίδας ως PDF
+quickactions-cmd-savepdf2 = pdf, αποθήκευση σελίδας
 quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Άνοιγμα ιδιωτικού παραθύρου
-quickactions-cmd-private = ιδιωτική περιήγηση
+quickactions-cmd-private = ιδιωτική περιήγηση, ανώνυμη περιήγηση
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Ανανέωση του { -brand-short-name }
 quickactions-cmd-refresh = ανανέωση, επαναφόρτωση
@@ -293,22 +401,34 @@ quickactions-restart = Επανεκκίνηση του { -brand-short-name }
 quickactions-cmd-restart = επανεκκίνηση
 # Opens the screenshot tool
 quickactions-screenshot3 = Λήψη στιγμιότυπου
-quickactions-cmd-screenshot = στιγμιότυπο
+quickactions-cmd-screenshot2 = στιγμιότυπο, στιγμιότυπο οθόνης, λήψη στιγμιότυπου, screenshot
+quickactions-cmd-screenshot = στιγμιότυπο, στιγμιότυπο οθόνης, screenshot
 # Opens about:preferences
 quickactions-settings2 = Διαχείριση ρυθμίσεων
+# "manage" should match the corresponding command, which is “Manage settings” in English.
+quickactions-cmd-settings2 = ρυθμίσεις, προτιμήσεις, επιλογές, διαχείριση
 quickactions-cmd-settings = ρυθμίσεις, προτιμήσεις, επιλογές
 # Opens about:addons page in the themes section
 quickactions-themes = Διαχείριση θεμάτων
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = θέματα, πρόσθετα
 quickactions-cmd-themes = θέματα
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = Ενημέρωση του { -brand-short-name }
-quickactions-cmd-update = ενημέρωση
+quickactions-cmd-update = ενημέρωση, αναβάθμιση
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Προβολή πηγαίου κώδικα σελίδας
-quickactions-cmd-viewsource = προβολή πηγής, πηγαίος κώδικας
+quickactions-cmd-viewsource2 = προβολή πηγής, πηγή, πηγή σελίδας
+quickactions-cmd-viewsource = προβολή πηγής, πηγαίος κώδικας, πηγή
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
     .title = Μάθετε περισσότερα για τις γρήγορες ενέργειες
+# Will be shown to users the first configurable number of times
+# they experience actions giving them instructions on how to
+# select the action shown by pressing the tab key.
+press-tab-label = Πατήστε Tab για επιλογή:
 
 ## Bookmark Panel
 
@@ -495,6 +615,10 @@ urlbar-search-mode-indicator-close =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Αναζήτηση όρου ή εισαγωγή διεύθυνσης
+# This placeholder is used when not in search mode and searching in the urlbar
+# is disabled via the keyword.enabled pref.
+urlbar-placeholder-keyword-disabled =
+    .placeholder = Εισαγάγετε διεύθυνση
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -547,6 +671,8 @@ urlbar-go-button =
     .tooltiptext = Μετάβαση στη διεύθυνση της γραμμής διευθύνσεων
 urlbar-page-action-button =
     .tooltiptext = Ενέργειες σελίδας
+urlbar-revert-button =
+    .tooltiptext = Εμφάνιση διεύθυνσης στη γραμμή τοποθεσίας
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -572,6 +698,8 @@ urlbar-result-action-visit = Επίσκεψη
 # Variables
 # $container (String): the name of the target container
 urlbar-result-action-switch-tab-with-container = Εναλλαγή σε καρτέλα · <span>{ $container }</span>
+# Used when the target tab is in a tab group that doesn't have a label.
+urlbar-result-action-tab-group-unnamed = Ανώνυμη ομάδα
 # Allows the user to visit a URL that was previously copied to the clipboard.
 urlbar-result-action-visit-from-clipboard = Επίσκεψη από το πρόχειρο
 # Directs a user to press the Tab key to perform a search with the specified
@@ -601,12 +729,108 @@ urlbar-result-action-copy-to-clipboard = Αντιγραφή
 # Variables
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
+# The string returned for an undefined calculator result such as when dividing by 0
+urlbar-result-action-undefined-calculator-result = δεν ορίζεται
+# Shows the result of a formula expression being calculated, in scientific notation.
+# The last = sign will be shown as part of the result (e.g. "= 1.0e17").
+# Variables
+#  $result (String): the string representation for a result in scientific notation
+#  (e.g. "1.0e17").
+urlbar-result-action-calculator-result-scientific-notation = = { $result }
+# Shows the result of a formula expression being calculated, this is used for numbers >= 1.
+# The last = sign will be shown as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-3 = = { NUMBER($result, useGrouping: "false", maximumFractionDigits: 8) }
+# Shows the result of a formula expression being calculated, to a maximum of 9 significant
+# digits. This is used for numbers < 1.
+# The last = sign will be shown as part of the result (e.g. "= 0.333333333").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-decimal = = { NUMBER($result, maximumSignificantDigits: 9) }
+# The title of a weather suggestion in the urlbar. The temperature and unit
+# substring should be inside a <strong> tag. If the temperature and unit are not
+# adjacent in the localization, it's OK to include only the temperature in the
+# tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name of the city's region or country. Depending on
+#       the user's location in relation to the city, this may be the name or
+#       abbreviation of one of the city's administrative divisions like a
+#       province or state, or it may be the name of the city's country.
+urlbar-result-weather-title = <strong>{ $temperature }°{ $unit }</strong> — { $city }, { $region }
+# The title of a weather suggestion in the urlbar including a region and
+# country. The temperature and unit substring should be inside a <strong> tag.
+# If the temperature and unit are not adjacent in the localization, it's OK to
+# include only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name or abbreviation of one of the city's
+#       administrative divisions like a province or state.
+#   $country (String) - The name of the city's country.
+urlbar-result-weather-title-with-country = <strong>{ $temperature }°{ $unit }</strong> — { $city }, { $region }, { $country }
+# The title of a weather suggestion in the urlbar only including the city. The
+# temperature and unit substring should be inside a <strong> tag. If the
+# temperature and unit are not adjacent in the localization, it's OK to include
+# only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</strong> — { $city }
+# Shows the name of the provider of weather data in a weather suggestion in the
+# urlbar.
+# Variables:
+#   $provider (String) - The name of the weather-data provider. It will be the
+#       name of a company, organization, or service.
+urlbar-result-weather-provider-sponsored = { $provider } · Χορηγία
 
 ## Strings used for buttons in the urlbar
 
 # Label prompting user to search with a particular search engine.
 #  $engine (String): the name of a search engine that searches a specific site
 urlbar-result-search-with = Αναζήτηση με { $engine }
+# Label for the urlbar result row, prompting the user to use a local keyword to enter search mode.
+#  $keywords (String): the restrict keyword to enter search mode.
+#  $localSearchMode (String): the local search mode (history, tabs, bookmarks,
+#  or actions) to search with.
+urlbar-result-search-with-local-search-mode = { $keywords } - Αναζήτηση σε { $localSearchMode }
+# Label for the urlbar result row, prompting the user to use engine keywords to enter search mode.
+#  $keywords (String): the default keyword and user's set keyword if available
+#  $engine (String): the name of a search engine
+urlbar-result-search-with-engine-keywords = { $keywords } - Αναζήτηση με { $engine }
+urlbar-searchmode-dropmarker =
+    .tooltiptext = Επιλογή μηχανής αναζήτησης
+urlbar-searchmode-bookmarks =
+    .label = Σελιδοδείκτες
+urlbar-searchmode-tabs =
+    .label = Καρτέλες
+urlbar-searchmode-history =
+    .label = Ιστορικό
+urlbar-searchmode-actions =
+    .label = Ενέργειες
+urlbar-searchmode-exit-button =
+    .tooltiptext = Κλείσιμο
+urlbar-searchmode-default =
+    .tooltiptext = Προεπιλεγμένη μηχανή αναζήτησης
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = Αυτήν τη φορά αναζήτηση με:
+urlbar-searchmode-popup-search-settings-menuitem =
+    .label = Ρυθμίσεις αναζήτησης
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button2 =
+    .label = { $engine }, επιλογή μηχανής αναζήτησης
+    .tooltiptext = { $engine }, επιλογή μηχανής αναζήτησης
+urlbar-searchmode-button-no-engine =
+    .label = Δεν έχει επιλεγεί συντόμευση, επιλέξτε συντόμευση
+    .tooltiptext = Δεν έχει επιλεγεί συντόμευση, επιλέξτε συντόμευση
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -616,13 +840,19 @@ urlbar-result-action-search-bookmarks = Αναζήτηση σελιδοδεικ�
 urlbar-result-action-search-history = Αναζήτηση ιστορικού
 urlbar-result-action-search-tabs = Αναζήτηση καρτελών
 urlbar-result-action-search-actions = Αναζήτηση ενεργειών
+# Label for a quickaction result used to switch to an open tab group.
+#  $group (String): the name of the tab group to switch to
+urlbar-result-action-switch-to-tabgroup = Εναλλαγή σε «{ $group }»
+# Label for a quickaction result used to re-opan a saved tab group.
+#  $group (String): the name of the tab group to re-open
+urlbar-result-action-open-saved-tabgroup = Άνοιγμα «{ $group }»
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Waterfox Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
-    .label = { -firefox-suggest-brand-name }
+    .label = { -firefox-suggest-brand-name(case: "nom") }
 # A label shown above the search suggestions group in the urlbar results. It
 # should use sentence case.
 # Variables
@@ -642,6 +872,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Τάσεις στο { $engine }
+# Label shown above sponsored suggestions in the urlbar results.
+urlbar-group-sponsored =
+    .label = Χορηγία
 # The result menu labels shown next to trending results.
 urlbar-result-menu-trending-dont-show =
     .label = Απόκρυψη δημοφιλών αναζητήσεων
@@ -838,6 +1071,9 @@ panel-save-update-password = Κωδικός πρόσβασης
 # "More" item in macOS share menu
 menu-share-more =
     .label = Περισσότερα…
+menu-share-copy-link =
+    .label = Αντιγραφή συνδέσμου
+    .accesskey = σ
 ui-tour-info-panel-close =
     .tooltiptext = Κλείσιμο
 
@@ -885,6 +1121,8 @@ navbar-accessible =
     .aria-label = Πλοήγηση
 navbar-downloads =
     .label = Λήψεις
+navbar-overflow-2 =
+    .tooltiptext = Περισσότερα εργαλεία
 navbar-overflow =
     .tooltiptext = Περισσότερα εργαλεία…
 # Variables:
@@ -921,7 +1159,7 @@ restore-session-startup-suggestion-button = Εμφάνιση οδηγιών
 
 filepicker-blocked-infobar = Η εταιρεία σας έχει αποκλείσει την πρόσβαση σε τοπικά αρχεία αυτού του υπολογιστή
 
-## BrowserWorks data reporting notification (Telemetry, Waterfox Health Report, etc)
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = Το { -brand-short-name } στέλνει αυτόματα μερικά δεδομένα στη { -vendor-short-name }, έτσι ώστε να μπορέσουμε να βελτιώσουμε την εμπειρία σας.
 data-reporting-notification-button =
@@ -929,6 +1167,9 @@ data-reporting-notification-button =
     .accesskey = ξ
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Ιδιωτική περιήγηση
+# Tooltip for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-tooltip =
+    .tooltiptext = Ιδιωτική περιήγηση
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -937,7 +1178,7 @@ content-analysis-indicator-tooltip =
 content-analysis-panel-title = Προστασία δεδομένων
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
-content-analysis-panel-text = Ο οργανισμός σας χρησιμοποιεί το { $agentName } για προστασία από απώλεια δεδομένων. <a data-l10n-name="info">Μάθετε περισσότερα</a>
+content-analysis-panel-text-styled = Ο οργανισμός σας χρησιμοποιεί το <b>{ $agentName }</b> για προστασία από απώλεια δεδομένων. <a data-l10n-name="info">Μάθετε περισσότερα</a>
 
 ## Unified extensions (toolbar) button
 
@@ -962,6 +1203,15 @@ unified-extensions-button-quarantined =
     .tooltiptext =
         Επεκτάσεις
         Ορισμένες επεκτάσεις δεν επιτρέπονται
+
+## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-blocklisted =
+    .label = Επεκτάσεις
+    .tooltiptext =
+        Επεκτάσεις
+        Ορισμένες επεκτάσεις είναι απενεργοποιημένες
 
 ## Private browsing reset button
 
@@ -989,7 +1239,7 @@ refresh-blocked-allow =
     .label = Αποδοχή
     .accesskey = Α
 
-## Waterfox Relay integration
+## Firefox Relay integration
 
 firefox-relay-offer-why-to-use-relay = Οι ασφαλείς και εύχρηστες μάσκες μας, προστατεύουν την ταυτότητά σας και αποτρέπουν τα ανεπιθύμητα μηνύματα κρύβοντας τη διεύθυνση email σας.
 # Variables:
@@ -1002,10 +1252,16 @@ firefox-relay-offer-legal-notice = Κάνοντας κλικ στο «Χρήση
 popup-notification-addon-install-unsigned =
     .value = (Μη επαληθευμένο)
 popup-notification-xpinstall-prompt-learn-more = Μάθετε περισσότερα σχετικά με την ασφαλή εγκατάσταση πρόσθετων
-# Note: Access key is set to P to match "Private" in the corresponding localized label.
-popup-notification-addon-privatebrowsing-checkbox =
-    .label = Εκτέλεση σε ιδιωτικά παράθυρα
-    .accesskey = Ε
+popup-notification-xpinstall-prompt-block-url = Προβολή λεπτομερειών
+# Note: Access key is set to p to match "private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox2 =
+    .label = Να επιτρέπεται η εκτέλεση της επέκτασης σε ιδιωτικά παράθυρα
+    .accesskey = π
+# This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
+# but it is used in the install prompt, and it needs an access key.
+popup-notification-addon-technical-and-interaction-checkbox =
+    .label = Κοινοποίηση τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης με τον προγραμματιστή της επέκτασης
+    .accesskey = Κ
 
 ## Pop-up warning
 
@@ -1035,3 +1291,31 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Εμφάνιση του «{ $popupURI }»
+
+## File-picker crash notification ("FilePickerCrashed.sys.mjs")
+
+file-picker-failed-open = Δεν ήταν δυνατό το άνοιγμα του παραθύρου διαλόγου αρχείων των Windows. Δεν ήταν δυνατή η επιλογή αρχείου ή φακέλου.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-failed-save-somewhere = Δεν ήταν δυνατό το άνοιγμα του παραθύρου διαλόγου αρχείων των Windows. Το αρχείο θα αποθηκευτεί στο { $path }.
+file-picker-failed-save-nowhere = Δεν ήταν δυνατό το άνοιγμα του παραθύρου διαλόγου αρχείων των Windows. Δεν ήταν δυνατή η εύρεση προεπιλεγμένου φακέλου· το αρχείο δεν θα αποθηκευτεί.
+file-picker-crashed-open = Το παράθυρο διαλόγου αρχείων των Windows κατέρρευσε. Δεν ήταν δυνατή η επιλογή αρχείου ή φακέλου.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-crashed-save-somewhere = Το παράθυρο διαλόγου αρχείων των Windows κατέρρευσε. Το αρχείο θα αποθηκευτεί στο { $path }.
+file-picker-crashed-save-nowhere = Το παράθυρο διαλόγου αρχείων των Windows κατέρρευσε. Δεν ήταν δυνατή η εύρεση προεπιλεγμένου φακέλου· το αρχείο δεν θα αποθηκευτεί.
+
+# Button used with file-picker-crashed-save-default. Opens the folder in Windows
+# Explorer, with the saved file selected and in focus.
+#
+# The wording here should be consistent with the Windows variant of
+# `downloads-cmd-show-menuitem-2` and similar messages.
+
+file-picker-crashed-show-in-folder =
+    .label = Εμφάνιση στον φάκελο
+    .accessKey = φ
+
+## Onboarding Finish Setup checklist
+
+onboarding-checklist-button-label = Ολοκλήρωση ρύθμισης
+onboarding-aw-finish-setup-button =
+    .label = Ολοκλήρωση ρύθμισης
+    .tooltiptext = Ολοκλήρωση της ρύθμισης του { -brand-short-name }

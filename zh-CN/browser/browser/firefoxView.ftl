@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = 完成 { $percentValue }%
 firefoxview-tabpickup-step-signin-header = 无缝切换设备
 firefoxview-tabpickup-step-signin-description = 请先登录或创建账户，即可在此处接收手机上的标签页。
 firefoxview-tabpickup-step-signin-primarybutton = 继续
+firefoxview-syncedtabs-signin-header-2 = 您各设备上的 { -brand-product-name }
+firefoxview-syncedtabs-signin-description-2 = 若要查看您在手机等其他设备上打开的标签页，请登录或注册账户。您还可以借助账户来同步密码、历史记录等数据。
+firefoxview-syncedtabs-signin-primarybutton-2 = 登录
 firefoxview-syncedtabs-signin-header = 跨平台接收标签页
 firefoxview-syncedtabs-signin-description = 登录账户即可查看您在其他设备上的 { -brand-product-name } 中打开的标签页。如果还没有账户，我们可以引导您完成注册。
 firefoxview-syncedtabs-signin-primarybutton = 登录或注册
@@ -39,8 +42,10 @@ firefoxview-tabpickup-adddevice-header = 与您的手机或平板电脑同步 { 
 firefoxview-tabpickup-adddevice-description = 下载移动版 { -brand-product-name } 并登录。
 firefoxview-tabpickup-adddevice-learn-how = 了解要如何做
 firefoxview-tabpickup-adddevice-primarybutton = 下载 { -brand-product-name } 移动版
+firefoxview-syncedtabs-adddevice-header-2 = 跨平台接收标签页
+firefoxview-syncedtabs-adddevice-description-2 = 登录手机或其他计算机上的 { -brand-product-name }，即可在此处查看标签页。您可了解<a data-l10n-name="url">连接其他设备的方法</a>。
 firefoxview-syncedtabs-adddevice-header = 在您的其他设备上登录 { -brand-product-name }
-firefoxview-syncedtabs-adddevice-description = 为您在各设备上使用的 { -brand-product-name } 登录账户，即可查看您在其他设备上打开的标签页。详细了解<a data-l10n-name="url">连接其他设备的方法</a>。
+firefoxview-syncedtabs-adddevice-description = 为您在各设备上使用的 { -brand-product-name } 登录账户，即可查看在其他设备上打开的标签页。您可了解<a data-l10n-name="url">连接其他设备的方法</a>。
 firefoxview-syncedtabs-adddevice-primarybutton = 试试 { -brand-product-name } 移动版
 firefoxview-tabpickup-synctabs-header = 开启标签页同步
 firefoxview-tabpickup-synctabs-description = 允许 { -brand-short-name } 跨设备共享标签页。
@@ -67,7 +72,7 @@ firefoxview-tabpickup-password-locked-header = 请输入您的主密码以查看
 firefoxview-tabpickup-password-locked-description = 若要接收您的标签页，需先输入 { -brand-short-name } 的主密码。
 firefoxview-tabpickup-password-locked-link = 详细了解
 firefoxview-tabpickup-password-locked-primarybutton = 请输入主密码
-firefoxview-syncedtab-password-locked-link = <a data-l10n-name="syncedtab-password-locked-link">了解更多</a>
+firefoxview-syncedtab-password-locked-link = <a data-l10n-name="syncedtab-password-locked-link">详细了解</a>
 firefoxview-tabpickup-signed-out-header = 登录以重新连接
 firefoxview-tabpickup-signed-out-description = 登录 { -fxaccount-brand-name }即可重新连接并接收标签页。
 firefoxview-tabpickup-signed-out-description2 = 登录账户即可重新连接并接收标签页。
@@ -138,8 +143,8 @@ firefoxview-synced-tabs-header = 其他设备
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
-firefoxview-view-all-link = 查看所有
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
+firefoxview-view-all-link = 查看全部
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
 firefoxview-opentabs-window-header =
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = 搜索最近关闭的标签页
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = 搜索标签页
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = 搜索同步的标签页
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = （本地文件）
 firefoxview-show-all-history = 显示所有历史
 firefoxview-view-more-browsing-history = 查看更多浏览历史
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = 接续上次浏览
 firefoxview-history-empty-description = 浏览时，您访问过的页面会记录在此处。
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = 保护隐私是我们的首要事项
 firefoxview-choose-browser-button = 选择浏览器
     .title = 选择浏览器
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = 无内容
 firefoxview-dont-remember-history-empty-description = 保护隐私是我们的首要事项。因此，您可以控制 { -brand-short-name } 所记录的活动。
 firefoxview-dont-remember-history-empty-description-two = 基于当前的设置，{ -brand-short-name } 不会记录您的浏览活动。如有需要，请将历史记录设置<a data-l10n-name="history-settings-url-two">更改为记录历史</a>。
+firefoxview-dont-remember-history-empty-header-2 = 您已控制 { -brand-short-name } 可记录的内容
+firefoxview-dont-remember-history-empty-description-one = { -brand-short-name } 当前不会记录您的浏览历史。若要更改，请<a data-l10n-name="history-settings-url-two">更新历史记录设置</a>。
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = 关闭
     .title = 关闭
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = 从其他浏览器导入历史记录
 firefoxview-import-history-description = 将 { -brand-short-name } 设为默认浏览器，导入浏览历史和书签等项目。
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = 要用到刚关闭的标签页？
 firefoxview-recentlyclosed-empty-description = 您可以在这里找回最近关闭的标签页，方便重新打开。

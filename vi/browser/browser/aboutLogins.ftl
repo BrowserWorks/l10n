@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -127,6 +127,8 @@ login-item-copied-username-button-text = Đã sao chép!
 login-item-password-label = Mật khẩu
 login-item-password-reveal-checkbox =
     .aria-label = Hiển thị mật khẩu
+login-item-password-conceal-checkbox =
+    .aria-label = Ẩn mật khẩu
 login-item-copy-password-button-text = Sao chép
 login-item-copied-password-button-text = Đã sao chép!
 login-item-save-changes-button = Lưu thay đổi
@@ -149,7 +151,7 @@ login-item-timeline-action-used = Được sử dụng
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -158,7 +160,7 @@ about-logins-edit-login-os-auth-dialog-message-win = Để chỉnh sửa thông 
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = chỉnh sửa thông tin đăng nhập đã lưu
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->

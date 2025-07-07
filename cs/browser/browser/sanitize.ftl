@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -45,6 +45,10 @@ clear-time-duration-value-last-2-hours =
     .label = Poslední dvě hodiny
 clear-time-duration-value-last-4-hours =
     .label = Poslední čtyři hodiny
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Od { $midnightTime }
 clear-time-duration-value-today =
     .label = Dnes
 clear-time-duration-value-everything =
@@ -59,6 +63,7 @@ history-section-label = Historii
 item-history-and-downloads =
     .label = Historii prohlížení a stahování
     .accesskey = H
+item-history-and-downloads-description2 = Vymaže historii stránek a stahování
 item-history-form-data-downloads =
     .label = Historie
     .accesskey = H
@@ -98,6 +103,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Nastavení serveru
     .accesskey = N
+item-formdata-prefs =
+    .label = Uložené údaje z formulářů
+    .accesskey = o
+item-formdata-description = Vymaže jména, e-maily a další informace, které jste zadali do formulářů.
 item-site-prefs-description = Obnoví původní nastavení oprávnění a předvoleb stránek
 data-section-label = Data
 item-site-settings =

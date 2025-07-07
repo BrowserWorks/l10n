@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,3 +33,71 @@ searchbar-icon =
 removed-search-engine-message = <strong>Su buscador predeterminado ha cambiado.</strong> { $oldEngine } ya no está disponible como buscador predeterminado en { -brand-short-name }. { $newEngine } es ahora su buscador predeterminado. Para cambiar a otro buscador predeterminado, vaya a los ajustes. <label data-l10n-name="remove-search-engine-article">Saber más</label>
 removed-search-engine-message2 = <strong>Su buscador predeterminado ha cambiado.</strong> { $oldEngine } ya no está disponible como buscador predeterminado en { -brand-short-name }. { $newEngine } es ahora su buscador predeterminado. Para cambiar a otro buscador predeterminado, vaya a los ajustes.
 remove-search-engine-button = Aceptar
+
+## Infobar shown when default search engine is reset due to an issue reading the settings file.
+## Variables
+## $newEngine (String) - the name of the new default search engine.
+
+reset-search-settings-message = Debido a un problema técnico, el buscador predeterminado se cambió de nuevo a { $newEngine }. Para cambiar el buscador predeterminado, vaya a los ajustes.
+reset-search-settings-button = Aceptar
+
+## Infobar shown when user is prompted to install search engine.
+## Variables
+## $engineName (String) - the name of the search engine to install.
+
+install-search-engine = ¿Añadir { $engineName } como buscador?
+install-search-engine-add = Añadir
+install-search-engine-no = No
+
+## The following strings are used as input labels.
+
+add-engine-window =
+    .title = Añadir buscador
+    .style = min-width: 32em;
+edit-engine-window =
+    .title = Editar buscador
+    .style = min-width: 32em;
+add-engine-button = Añadir buscador personalizado
+add-engine-name = Nombre del buscador
+add-engine-url2 = URL con %s en lugar del término de búsqueda
+add-engine-keyword2 = Palabra clave (opcional)
+# POST and GET refer to the HTTP methods.
+add-engine-post-data = Datos POST con %s en lugar del término de búsqueda (dejar en blanco para GET)
+add-engine-suggest-url = URL de sugerencias con %s en lugar del término de búsqueda (opcional)
+
+## The following placeholders are shown in the inputs when adding a new engine.
+
+add-engine-name-placeholder =
+    .placeholder = p.ej. BrowserWorks Developer Network
+add-engine-url-placeholder =
+    .placeholder = p.ej. https://developer.mozilla.com/search?q=%s
+add-engine-keyword-placeholder =
+    .placeholder = p.ej. @mdn
+
+## The following strings are used as error messages.
+
+add-engine-keyword-exists = Esa palabra clave ya se está usando. Pruebe con una diferente.
+add-engine-name-exists = Ese nombre ya se está usando. Pruebe con uno diferente.
+add-engine-no-name = Por favor añada un nombre.
+add-engine-no-url = Introduzca una URL.
+add-engine-invalid-url = La URL no parece correcta. Compruébelo y vuelva a intentarlo.
+add-engine-invalid-protocol = La URL no parece correcta. Use una URL que comience por http o https.
+# This error is shown when the user typed URL is missing %s.
+add-engine-missing-terms-url = Pruebe a incluir %s en lugar del término de búsqueda.
+# This error is shown when the user typed post data is missing %s.
+add-engine-missing-terms-post-data = Pruebe a incluir %s en lugar del término de búsqueda.
+
+## The following strings are used as labels for the dialog's buttons.
+
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+add-engine-dialog2 =
+    .buttonlabelaccept = Añadir buscador
+    .buttonaccesskeyaccept = A
+    .buttonlabelextra1 = Avanzado
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+edit-engine-dialog =
+    .buttonlabelaccept = Guardar buscador
+    .buttonaccesskeyaccept = G
+    .buttonlabelextra1 = Avanzado

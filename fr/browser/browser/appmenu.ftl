@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Téléchargements
 appmenuitem-passwords =
     .label = Mots de passe
+appmenuitem-extensions-and-themes =
+    .label = Extensions et thèmes
+appmenuitem-extensions =
+    .label = Extensions
 appmenuitem-addons-and-themes =
     .label = Extensions et thèmes
 appmenuitem-print =
@@ -63,7 +67,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Plein écran
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Se connecter pour synchroniser…
@@ -84,7 +88,7 @@ appmenu-remote-tabs-tabsnotsyncing = Activez la synchronisation des onglets pour
 appmenu-remote-tabs-opensettings =
     .label = Paramètres
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Vous souhaitez afficher ici les onglets de vos autres appareils ?
 appmenu-remote-tabs-connectdevice =
     .label = Connecter un autre appareil
@@ -104,8 +108,11 @@ appmenu-fxa-sync-and-save-data2 = Synchroniser et enregistrer les données
 appmenu-fxa-signed-in-label = Connexion
 appmenu-fxa-setup-sync =
     .label = Activer la synchronisation…
+appmenu-fxa-setup-sync-new = Activer
 appmenuitem-save-page =
     .label = Enregistrer sous…
+appmenuitem-fxa-sync-off-title = Synchronisation désactivée
+appmenuitem-fxa-sync-off-description = Protégez vos marque-pages, mots de passe et d’autres données et accédez-y où que vous soyez.
 
 ## What's New panel in App menu.
 
@@ -116,7 +123,7 @@ whatsnew-panel-footer-checkbox =
     .label = M’avertir des nouvelles fonctionnalités
     .accesskey = M
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -273,5 +280,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Recevez des alertes lors de fuites de données
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Masquez votre véritable adresse e-mail et votre véritable numéro de téléphone
+appmenuitem-services-relay-description = Ouvrir le tableau de bord des alias de messagerie
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Protégez vos activités en ligne
+appmenu-services-header = Mes services
+appmenu-other-protection-header = Essayez d’autres outils de protection de { -vendor-short-name } :
+
+## Profiles panel
+
+appmenu-other-profiles = Autres profils
+appmenu-manage-profiles =
+    .label = Gérer les profils
+appmenu-create-profile =
+    .label = Nouveau profil
+appmenu-edit-profile =
+    .aria-label = Modifier le profil
+appmenu-profiles-2 =
+    .label = Profils

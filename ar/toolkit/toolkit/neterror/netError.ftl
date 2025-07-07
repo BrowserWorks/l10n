@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ neterror-blocked-by-policy-page-title = الصفحة محجوبة
 neterror-captive-portal-page-title = لِج إلى الشبكة
 neterror-dns-not-found-title = الخادوم غير موجود
 neterror-malformed-uri-page-title = مسار غير صحيح
+general-body-title = كن حذرًا، هناك شيء لا يبدو على ما يرام.
+problem-with-this-site-title = يبدو أن هناك مشكلة في هذا الموقع
 
 ## Error page actions
 
@@ -41,14 +43,21 @@ neterror-generic-error = لا يستطيع { -brand-short-name } تحميل هذ
 neterror-load-error-try-again = قد يكون الموقع متوقفًا مؤقتًا أو مشغولا جدًا. حاول ثانية بعد عدّة دقائق.
 neterror-load-error-connection = إذا كنت غير قادر على تحميل أي صفحة، افحص اتصال الحاسوب بالشبكة.
 neterror-load-error-firewall = إذا كان حاسوبك محميًا بجدار حماية أو وسيط، تأكد من السماح ل‍{ -brand-short-name } بالوصول إلى الوِب.
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = إذا كنت تحاول تحميل صفحة شبكة محلية، فيُرجى التأكد مِن منح { -brand-short-name } تصاريح الشبكة المحلية في إعدادات الخصوصية والأمان في نظام التشغيل macOS.
+neterror-http-error-page = تأكد من أنك كتبت عنوان الموقع بشكل صحيح.
 neterror-captive-portal = تحتاج الولوج إلى هذه الشبكة أولا لتستطيع الوصول إلى الإنترنت.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
 neterror-dns-not-found-with-suggestion = هل قصدت الانتقال إلى <a data-l10n-name="website">{ $hostAndPath }</a>؟
 neterror-dns-not-found-hint-header = <strong>إذا أدخلت العنوان الصحيح، فيمكنك:</strong>
-neterror-dns-not-found-hint-try-again = حاول مجددًا لاحقاً
-neterror-dns-not-found-hint-check-network = افحص اتصال الشبكة
-neterror-dns-not-found-hint-firewall = تأكد من أن { -brand-short-name } لديه إذن للوصول إلى الوب (قد تكون متصلاً ولكن خلف جدار حماية)
+neterror-dns-not-found-hint-try-again = المحاولة مجددًا لاحقاً
+neterror-dns-not-found-hint-check-network = فحص اتصال الشبكة
+neterror-dns-not-found-hint-firewall = التأكد من أن { -brand-short-name } لديه إذن للوصول إلى الوب (قد تكون متصلاً ولكن خلف جدار حماية)
+neterror-dns-not-found-offline-hint-header = <strong>ماذا يمكنك أن تفعل حيال ذلك؟</strong>
+neterror-dns-not-found-offline-hint-different-device = جرّب الاتصال بجهاز مختلف.
+neterror-dns-not-found-offline-hint-modem = تحقق من المودم أو جهاز توجيهك.
+neterror-dns-not-found-offline-hint-reconnect = افصل الاتصال بشبكة Wi-Fi ثم أعد الاتصال بها.
 
 ## TRR-only specific messages
 ## Variables:
@@ -64,6 +73,7 @@ neterror-dns-not-found-trr-offline = أنت غير متصل بالإنترنت.
 neterror-dns-not-found-trr-unknown-host2 = لم يتم العثور على موقع الوب هذا بواسطة { $trrDomain }.
 neterror-dns-not-found-trr-server-problem = حدثت مشكلة في { $trrDomain }.
 neterror-dns-not-found-bad-trr-url = مسار غير صحيح.
+neterror-dns-not-found-system-sleep = النظام في وضع السكون.
 neterror-dns-not-found-trr-unknown-problem = خطأ غير متوقّع.
 
 ## Native fallback specific messages
@@ -82,7 +92,7 @@ neterror-file-not-found-moved = تأكد أن الملف لم يُنقل، أو 
 neterror-access-denied = قد يكون حُذِف أو نُقِل أو أن صلاحيّات الملف تمنع الوصول إليه.
 neterror-unknown-protocol = قد تحتاج تنصيب برمجيات أخرى لفتح هذا العنوان.
 neterror-redirect-loop = سبب هذه المشكلة هو تعطيل الكعكات أو عدم قبولها.
-neterror-unknown-socket-type-psm-installed = تأكّد أنّ مدير الأمن الشخصي منصّب في نظامك.
+neterror-unknown-socket-type-psm-installed = تأكّد أنّ مدير الأمن الشخصي مثبت في نظامك.
 neterror-unknown-socket-type-server-config = قد يكون سبب هذا هو إعداد مخالف للمعايير في الخادوم.
 neterror-not-cached-intro = المستند المطلوب لم يعد متوفرًا في ذاكرة { -brand-short-name } الخبيئة.
 neterror-not-cached-sensitive = كإجراء وقائي، { -brand-short-name } لا يعيد طلب المستندات الحساسة بشكل آلي.
@@ -95,6 +105,9 @@ neterror-proxy-connect-failure-settings = افحص إعدادات الوسيط �
 neterror-proxy-connect-failure-contact-admin = اتصل بمدير الشبكة لتتأكد أن الخادوم الوسيط يعمل.
 neterror-content-encoding-error = من فضلك اتصل بمالكي الموقع لإعلامهم بهذه المشكلة.
 neterror-unsafe-content-type = من فضلك اتصل بمالكي الموقع لإعلامهم بهذه المشكلة.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = لا يثق { -brand-short-name } بـ { $hostname } لأن الاتصال غير آمن. حاول تغيير عنوان URL إلى HTTPS.
 neterror-nss-failure-not-verified = لا يمكن عرض الصفحة التي تحاول زيارتها لعدم إمكانية الاستيثاق من البيانات المستقبلة.
 neterror-nss-failure-contact-website = من فضلك اتصل بمالكي الموقع لإعلامهم بهذه المشكلة.
 # Variables:
@@ -147,3 +160,11 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = إن لم تكن تعلم �
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = يستخدم الموقع <b>{ $hostname }</b> سياسة النقل الصارمة (HSTS)، ما يعني بأن { -brand-short-name } لا يستطيع الاتصال به إلا بأمان. لا يمكنك إضافة استثناء لزيارة هذا الموقع.
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = ربما لا يوجد شيء، لأنه من المحتمل أن تكون هناك مشكلة في الموقع نفسه.
+certerror-blocked-by-corp-headers-description = في بعض الأحيان تقوم المواقع بإعداد وسائل حماية لأنفسها ولأشخاص مثلك من التفاعلات غير المرغوب فيها مع المواقع الأخرى.
+certerror-coop-learn-more = تعرف على المزيد حول سياسات فتح الأصول المتقاطعة (COOP)
+certerror-coep-learn-more = تعرف على المزيد حول سياسات تضمين الأصول المتقاطعة (COEP)
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = رمز الخطأ: { $responsestatus } { $responsestatustext }

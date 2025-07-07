@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,13 +6,13 @@ certificate-viewer-certificate-section-title = Πιστοποιητικό
 
 ## Error messages
 
-certificate-viewer-error-message = Δεν μπορέσαμε να βρούμε τις πληροφορίες του πιστοποιητικού, ή το πιστοποιητικό έχει καταστραφεί. Παρακαλούμε δοκιμάστε ξανά.
+certificate-viewer-error-message = Δεν μπορέσαμε να βρούμε τις πληροφορίες του πιστοποιητικού, ή το πιστοποιητικό έχει καταστραφεί. Δοκιμάστε ξανά.
 certificate-viewer-error-title = Κάτι πήγε στραβά.
 
 ## Certificate information labels
 
 certificate-viewer-algorithm = Αλγόριθμος
-certificate-viewer-certificate-authority = Αρχή πιστοποιητικού
+certificate-viewer-certificate-authority = Αρχή πιστοποίησης
 certificate-viewer-cipher-suite = Σουίτα κρυπτογράφησης
 certificate-viewer-common-name = Κοινό όνομα
 certificate-viewer-email-address = Διεύθυνση email
@@ -81,7 +81,6 @@ certificate-viewer-authority-info-aia = Πληροφορίες αρχής (AIA)
 certificate-viewer-certificate-policies = Πολιτικές πιστοποιητικού
 certificate-viewer-embedded-scts = Ενσωματωμένα SCT
 certificate-viewer-crl-endpoints = Τελικά σημεία CRL
-
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = Λήψη
@@ -101,7 +100,6 @@ certificate-viewer-download-pem = PEM (πιστοποιητικό)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (αλυσίδα)
     .download = { $fileName }-chain.pem
-
 # The title attribute for Critical Extension icon
 certificate-viewer-critical-extension =
     .title = Αυτή η επέκταση έχει επισημανθεί ως κρίσιμη, πράγμα που σημαίνει ότι οι πελάτες πρέπει να απορρίψουν το πιστοποιητικό εάν δεν το καταλαβαίνουν.

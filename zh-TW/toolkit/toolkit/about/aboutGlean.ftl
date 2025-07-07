@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,6 +14,11 @@ about-glean-header = 關於 { -glean-brand-name }
 about-glean-interface-description =
     <a data-l10n-name="glean-sdk-doc-link">{ glean-sdk-brand-name }</a>
     是一套 { -vendor-short-name } 專案所使用的資料收集程式庫。本介面是設計來讓開發者與測試者能夠手動<a data-l10n-name="fog-link">操作測試</a>。
+about-glean-category-about-glean = 關於 { -glean-brand-name }
+about-glean-category-manual-testing = 手動測試
+about-glean-category-adhoc-testing = 臨時測試
+about-glean-category-profiler = 使用效能分析器
+about-glean-category-about-data = 關於資料
 about-glean-upload-enabled = 已啟用資料上傳。
 about-glean-upload-disabled = 已停用資料上傳。
 about-glean-upload-enabled-local = 僅允許資料上傳至本機伺服器。
@@ -36,6 +41,7 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links = 若需各種紀錄與搜尋資料的方式的相關解釋，請參考<strong>關於資料</strong>分頁。
 about-glean-about-testing-header = 關於測試
 # This message is followed by a numbered list.
 about-glean-manual-testing = 完整的操作教學文件撰寫於 <a data-l10n-name="fog-instrumentation-test-doc-link">{ -fog-brand-name } 測試文件</a>與 <a data-l10n-name="glean-sdk-doc-link">{ glean-sdk-brand-name } 文件</a>中。但簡單來說，如果要手動測試您的測試工具是否正常，應該：
@@ -61,6 +67,18 @@ about-glean-adhoc-explanation = 若需進行 <i>ad hoc 臨時測試</i>，也可
 about-glean-adhoc-explanation2 = 若需進行 <i>ad hoc 臨時測試</i>，也可以在 <code>about:glean</code> 本頁面開啟開發者主控台，使用 <code>Glean.metricCategory.metricName.testGetValue()</code> 等 <code>testGetValue()</code> API 來取得 <code>metric.category.metric_name</code> 儀器中的資訊，決定測試儀器中的特定值。
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-note = 註：您正透過開發者工具主控台使用 Glean JS API。這代表指標的分類與名稱會使用 <code>camelCase</code> 格式顯示，而與 Rust 及 C++ API 格式不同。
+about-glean-profiler-explanation = 您可以使用 { -profiler-brand-name } 來檢視所有紀錄指標。首先您必須<a data-l10n-name="firefox-profiler-link">捕捉效能紀錄檔</a>，捕捉完成後即可選擇<q>標記表</q>，檢視 <q>Telemetry</q> 下方的標記。
+about-glean-profiler-explanation-profiler = 您可以在效能紀錄檔中看到所有收集到的指標、收集時間，以及收集下來的資料值。將游標停留在各個標記上，即可確認收集到的值、收集時間是否正確。
 controls-button-label-verbose = 套用設定並送出 ping
+about-glean-feedback-settings-only =
+    .message = 設定已套用！
+about-glean-feedback-settings-and-ping =
+    .message = 設定已套用，並已送出 ping！
 about-glean-about-data-header = 關於資料
+about-glean-about-data-description = 視您想要了解的資料，可以使用不同工具來檢視。
+about-glean-about-data-description-list-intro = 可參考下列各工具的不同用途：
+about-glean-about-data-list-item-dictionary = 可參考 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 字典</a>瀏覽 { -glean-brand-name } 在每套應用程式收集的資料清單。
+about-glean-about-data-list-item-about-telemetry = 可透過 <a data-l10n-name="about-telemetry-link">about:telemetry</a> 瀏覽傳統 Telemetry 功能收集的資料。
+about-glean-about-data-list-item-debug-ping-viewer = 可使用 <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> 瀏覽除錯標籤、檢視完整的 Ping、檢視即時事件串流，或以視覺化方式檢視指標。
+about-glean-about-data-list-item-firefox-profiler = 可使用 <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a> 捕捉效能紀錄檔，並檢視所有記錄下來的指標。
 about-glean-about-data-explanation = 要瀏覽收集的資料清單，請參考 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 字典</a>。

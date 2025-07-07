@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,11 +30,24 @@
 -focus-brand-name = Waterfox Focus
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
-# “Suggest” can be localized, “Waterfox” must be treated as a brand
+-fakespot-brand-name = بقعة وهمية
+# Note the name of the website is capitalized.
+-fakespot-website-name = Fakespot.com
+# The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
+-fakespot-brand-full-name = Fakespot من شركة BrowserWorks
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = يقترح Waterfox
-# Waterfox Labs is the name for a page in Settings to allow users to learn about
+# ”Home" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-home-brand-name = شاشة بداية Waterfox
+# View" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxview-brand-name = واجهة عرض Waterfox
+# Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
-# The "Labs" portion can be localized, “Waterfox” must be treated as a brand
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs
+-solo-ai-brand-name = Solo
+

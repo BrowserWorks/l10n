@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,8 +9,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Waterfox"
-# private - "Waterfox (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -26,8 +26,8 @@ browser-main-window-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Waterfox"
-# "private" - "Waterfox — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -51,6 +51,70 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = { -brand-shortcut-name } duyệt web riêng tư
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } duyệt web riêng tư
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — { -brand-full-name } duyệt web riêng tư
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } duyệt web riêng tư
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name } — { -brand-full-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — { -brand-full-name } duyệt web riêng tư
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — Duyệt web riêng tư
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — { -brand-full-name } duyệt web riêng tư
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — Duyệt web riêng tư
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Duyệt web riêng tư
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-default-title = { -brand-full-name }
 
 ##
 
@@ -123,6 +187,32 @@ urlbar-result-menu-remove-from-history =
 urlbar-result-menu-tip-get-help =
     .label = Nhận trợ giúp
     .accesskey = h
+urlbar-result-menu-dismiss-suggestion =
+    .label = Bỏ qua đề xuất này
+    .accesskey = D
+urlbar-result-menu-learn-more-about-firefox-suggest =
+    .label = Tìm hiểu thêm về { -firefox-suggest-brand-name }
+    .accesskey = L
+urlbar-result-menu-manage-firefox-suggest =
+    .label = Quản lý { -firefox-suggest-brand-name }
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location =
+    .label = Báo cáo vị trí không chính xác
+urlbar-result-menu-show-less-frequently =
+    .label = Hiển thị ít thường xuyên hơn
+urlbar-result-menu-dont-show-weather-suggestions =
+    .label = Không hiển thị đề xuất về thời tiết
+# A message shown in the urlbar when the user submits feedback on a suggestion
+# (e.g., it shows an inaccurate location, it's shown too often, etc.).
+urlbar-feedback-acknowledgment = Cảm ơn phản hồi của bạn
+# A message shown in the urlbar when the user dismisses weather suggestions.
+# Weather suggestions won't be shown at all anymore.
+urlbar-dismissal-acknowledgment-weather = Cảm ơn phản hồi của bạn. Bạn sẽ không thấy đề xuất về thời tiết nữa.
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -254,37 +344,55 @@ search-one-offs-actions =
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Xem tiện tích
-quickactions-cmd-addons2 = tiện ích
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-addons3 = tiện ích, chủ đề, tien ich, chu de, tiện ích mở rộng, tien ich mo rong
+quickactions-cmd-addons2 = xem tiện ích, xem tien ich, tiện ích, tien ich, extensions, add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Quản lý dấu trang
-quickactions-cmd-bookmarks = dấu trang, dau trang
+quickactions-cmd-bookmarks = quản lý dấu trang, quan ly dau trang, quản lí dấu trang, quan li dau trang, dấu trang, dau trang, bookmarks
+# Opens a SUMO article explaining how to clear history
+quickactions-clearrecenthistory = Xoá lịch sử gần đây
+quickactions-cmd-clearrecenthistory = xoá lịch sử gần đây, xóa lịch sử gần đây, xoa lich su gan day, lich su
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Xóa lịch sử
-quickactions-cmd-clearhistory = xóa lịch sử, xoa lich su
+quickactions-cmd-clearhistory = xóa lịch sử, xoá lịch sử, xoa lich su, lịch sử, lich su
 # Opens about:downloads page
 quickactions-downloads2 = Xem tải xuống
-quickactions-cmd-downloads = tải xuống, tai xuong
+quickactions-cmd-downloads = xem tải xuống, xem tai xuong, tải xuống, tai xuong, downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = Quản lý tiện ích
-quickactions-cmd-extensions = tiện ích mở rộng
+quickactions-cmd-extensions = quản lý tiện ích, quan ly tien ich, tiện ích mở rộng, tien ich mo rong, tiện ích, tien ich
+# Opens Firefox View
+quickactions-firefoxview = Mở { -firefoxview-brand-name }
+# English is using "view" and "open view", since the feature name is
+# "Firefox View". If you have translated the name in your language, you
+# should use a word related to the existing translation.
+quickactions-cmd-firefoxview = mở { -firefoxview-brand-name }, { -firefoxview-brand-name }, mở view, view, mo { -firefoxview-brand-name }, mo view,
+# Opens SUMO home page
+quickactions-help = Trợ giúp về { -brand-product-name }
+quickactions-cmd-help = trợ giúp, hỗ trợ, tro giup, ho tro
 # Opens the devtools web inspector
 quickactions-inspector2 = Mở Công cụ dành cho nhà phát triển
-quickactions-cmd-inspector = trình kiểm tra, devtools, trinh kiem tra
+quickactions-cmd-inspector2 = trình kiểm tra, trinh kiem tra, devtools, dev tools
+quickactions-cmd-inspector = trình kiểm tra, devtools, trinh kiem tra, nhà phát triển, nha phat trien
 # Opens about:logins
 quickactions-logins2 = Quản lý mật khẩu
 quickactions-cmd-logins = đăng nhập, thông tin đăng nhập, mật khẩu, dang nhap, thong tin dang nhap, mat khau
 # Opens about:addons page in the plugins section
 quickactions-plugins = Quản lý phần bổ trợ
-quickactions-cmd-plugins = phần bổ trợ
+quickactions-cmd-plugins = phần bổ trợ, phan bo tro, plugins
 # Opens the print dialog
-quickactions-print2 = Trang in
-quickactions-cmd-print = in
+quickactions-print2 = In trang
+quickactions-cmd-print = in, in trang, print
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Lưu trang dưới dạng PDF
-quickactions-cmd-savepdf = pdf
+quickactions-cmd-savepdf2 = pdf, lưu trang, luu trang
+quickactions-cmd-savepdf = pdf, save as pdf
 # Opens a new private browsing window
 quickactions-private2 = Mở cửa sổ riêng tư
-quickactions-cmd-private = duyệt web riêng tư, duyet web rieng tu
+quickactions-cmd-private = duyệt web riêng tư, duyet web rieng tu, cửa sổ riêng tư, cua so rieng tu
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Làm mới { -brand-short-name }
 quickactions-cmd-refresh = làm mới, lam moi
@@ -293,22 +401,30 @@ quickactions-restart = Khởi động lại { -brand-short-name }
 quickactions-cmd-restart = khởi động lại, khoi dong lai
 # Opens the screenshot tool
 quickactions-screenshot3 = Chụp ảnh màn hình
+quickactions-cmd-screenshot2 = chụp màn hình, chup man hinh, ảnh chụp màn hình, anh chup man hinh, screenshot
 quickactions-cmd-screenshot = chụp ảnh màn hình, chup anh man hinh
 # Opens about:preferences
 quickactions-settings2 = Quản lý cài đặt
+# "manage" should match the corresponding command, which is “Manage settings” in English.
+quickactions-cmd-settings2 = cài đặt, tùy chọn, tùy chỉnh, quản lý, quản lí, cai dat, tuy chon, tuy chinh, quan ly, quan li
 quickactions-cmd-settings = cài đặt, tùy chọn, thiết lập, cai dat, tuy chon, thiet lap
 # Opens about:addons page in the themes section
 quickactions-themes = Quản lý chủ đề
-quickactions-cmd-themes = chủ đề
+quickactions-cmd-themes = chủ đề, chu de, themes
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = Cập nhật { -brand-short-name }
-quickactions-cmd-update = cập nhật, cap nhat
+quickactions-cmd-update = cập nhật, cap nhat, update
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Xem mã nguồn trang
-quickactions-cmd-viewsource = xem mã nguồn, xem nguồn, nguồn, xem ma nguon, xem nguon, nguon
+quickactions-cmd-viewsource2 = xem mã nguồn trang, xem ma nguon trang, trang, source, mã nguồn trang, ma nguon trang
+quickactions-cmd-viewsource = xem mã nguồn trang, xem ma nguon trang, xem mã nguồn, xem ma nguon, xem nguồn, xem nguon, mã nguồn, ma nguon, source code page, code
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
     .title = Tìm hiểu thêm về Hành động nhanh
+# Will be shown to users the first configurable number of times
+# they experience actions giving them instructions on how to
+# select the action shown by pressing the tab key.
+press-tab-label = Nhấn phím tab để chọn:
 
 ## Bookmark Panel
 
@@ -491,6 +607,10 @@ urlbar-search-mode-indicator-close =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Nhập địa chỉ hoặc từ khóa tìm kiếm
+# This placeholder is used when not in search mode and searching in the urlbar
+# is disabled via the keyword.enabled pref.
+urlbar-placeholder-keyword-disabled =
+    .placeholder = Nhập địa chỉ
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -543,6 +663,8 @@ urlbar-go-button =
     .tooltiptext = Mở trang trong thanh địa chỉ
 urlbar-page-action-button =
     .tooltiptext = Hành động trên trang
+urlbar-revert-button =
+    .tooltiptext = Hiển thị địa chỉ trong thanh địa chỉ
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -568,6 +690,8 @@ urlbar-result-action-visit = Truy cập
 # Variables
 # $container (String): the name of the target container
 urlbar-result-action-switch-tab-with-container = Chuyển sang thẻ · <span>{ $container }</span>
+# Used when the target tab is in a tab group that doesn't have a label.
+urlbar-result-action-tab-group-unnamed = Nhóm không tên
 # Allows the user to visit a URL that was previously copied to the clipboard.
 urlbar-result-action-visit-from-clipboard = Truy cập từ bộ nhớ tạm
 # Directs a user to press the Tab key to perform a search with the specified
@@ -597,12 +721,106 @@ urlbar-result-action-copy-to-clipboard = Sao chép
 # Variables
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
+# The string returned for an undefined calculator result such as when dividing by 0
+urlbar-result-action-undefined-calculator-result = không xác định
+# Shows the result of a formula expression being calculated, in scientific notation.
+# The last = sign will be shown as part of the result (e.g. "= 1.0e17").
+# Variables
+#  $result (String): the string representation for a result in scientific notation
+#  (e.g. "1.0e17").
+urlbar-result-action-calculator-result-scientific-notation = = { $result }
+# Shows the result of a formula expression being calculated, this is used for numbers >= 1.
+# The last = sign will be shown as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-3 = = { NUMBER($result, useGrouping: "false", maximumFractionDigits: 8) }
+# Shows the result of a formula expression being calculated, to a maximum of 9 significant
+# digits. This is used for numbers < 1.
+# The last = sign will be shown as part of the result (e.g. "= 0.333333333").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-decimal = = { NUMBER($result, maximumSignificantDigits: 9) }
+# The title of a weather suggestion in the urlbar. The temperature and unit
+# substring should be inside a <strong> tag. If the temperature and unit are not
+# adjacent in the localization, it's OK to include only the temperature in the
+# tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name of the city's region or country. Depending on
+#       the user's location in relation to the city, this may be the name or
+#       abbreviation of one of the city's administrative divisions like a
+#       province or state, or it may be the name of the city's country.
+urlbar-result-weather-title = <strong>{ $temperature }°{ $unit }</strong> tại { $city }, { $region }
+# The title of a weather suggestion in the urlbar including a region and
+# country. The temperature and unit substring should be inside a <strong> tag.
+# If the temperature and unit are not adjacent in the localization, it's OK to
+# include only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name or abbreviation of one of the city's
+#       administrative divisions like a province or state.
+#   $country (String) - The name of the city's country.
+urlbar-result-weather-title-with-country = <strong>{ $temperature }°{ $unit }</strong> tại { $city }, { $region }, { $country }
+# The title of a weather suggestion in the urlbar only including the city. The
+# temperature and unit substring should be inside a <strong> tag. If the
+# temperature and unit are not adjacent in the localization, it's OK to include
+# only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</strong> tại { $city }
+# Shows the name of the provider of weather data in a weather suggestion in the
+# urlbar.
+# Variables:
+#   $provider (String) - The name of the weather-data provider. It will be the
+#       name of a company, organization, or service.
+urlbar-result-weather-provider-sponsored = { $provider } · Được tài trợ
 
 ## Strings used for buttons in the urlbar
 
 # Label prompting user to search with a particular search engine.
 #  $engine (String): the name of a search engine that searches a specific site
 urlbar-result-search-with = Tìm với { $engine }
+# Label for the urlbar result row, prompting the user to use a local keyword to enter search mode.
+#  $keywords (String): the restrict keyword to enter search mode.
+#  $localSearchMode (String): the local search mode (history, tabs, bookmarks,
+#  or actions) to search with.
+urlbar-result-search-with-local-search-mode = { $keywords } - Tìm kiếm { $localSearchMode }
+# Label for the urlbar result row, prompting the user to use engine keywords to enter search mode.
+#  $keywords (String): the default keyword and user's set keyword if available
+#  $engine (String): the name of a search engine
+urlbar-result-search-with-engine-keywords = { $keywords } - Tìm kiếm với { $engine }
+urlbar-searchmode-dropmarker =
+    .tooltiptext = Chọn công cụ tìm kiếm
+urlbar-searchmode-bookmarks =
+    .label = Dấu trang
+urlbar-searchmode-tabs =
+    .label = Thẻ
+urlbar-searchmode-history =
+    .label = Lịch sử
+urlbar-searchmode-actions =
+    .label = Hành động
+urlbar-searchmode-exit-button =
+    .tooltiptext = Đóng
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = Lần này, tìm kiếm với:
+urlbar-searchmode-popup-search-settings-menuitem =
+    .label = Cài đặt tìm kiếm
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button2 =
+    .label = { $engine }, chọn một công cụ tìm kiếm
+    .tooltiptext = { $engine }, chọn một công cụ tìm kiếm
+urlbar-searchmode-button-no-engine =
+    .label = Không có lối tắt được chọn, hãy chọn một lối tắt
+    .tooltiptext = Không có lối tắt được chọn, hãy chọn một lối tắt
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -612,10 +830,16 @@ urlbar-result-action-search-bookmarks = Tìm kiếm dấu trang
 urlbar-result-action-search-history = Tìm kiếm lịch sử
 urlbar-result-action-search-tabs = Tìm kiếm thẻ
 urlbar-result-action-search-actions = Tìm kiếm hành động
+# Label for a quickaction result used to switch to an open tab group.
+#  $group (String): the name of the tab group to switch to
+urlbar-result-action-switch-to-tabgroup = Chuyển đến { $group }
+# Label for a quickaction result used to re-opan a saved tab group.
+#  $group (String): the name of the tab group to re-open
+urlbar-result-action-open-saved-tabgroup = Mở { $group }
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Waterfox Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -638,6 +862,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Đang thịnh hành trên { $engine }
+# Label shown above sponsored suggestions in the urlbar results.
+urlbar-group-sponsored =
+    .label = Được tài trợ
 # The result menu labels shown next to trending results.
 urlbar-result-menu-trending-dont-show =
     .label = Không hiển thị các tìm kiếm thịnh hành
@@ -834,6 +1061,9 @@ panel-save-update-password = Mật khẩu
 # "More" item in macOS share menu
 menu-share-more =
     .label = Xem thêm…
+menu-share-copy-link =
+    .label = Sao chép liên kết
+    .accesskey = L
 ui-tour-info-panel-close =
     .tooltiptext = Đóng
 
@@ -881,6 +1111,8 @@ navbar-accessible =
     .aria-label = Điều hướng
 navbar-downloads =
     .label = Tải xuống
+navbar-overflow-2 =
+    .tooltiptext = Công cụ khác
 navbar-overflow =
     .tooltiptext = Công cụ khác...
 # Variables:
@@ -917,7 +1149,7 @@ restore-session-startup-suggestion-button = Hướng dẫn cho tôi
 
 filepicker-blocked-infobar = Tổ chức của bạn đã chặn quyền truy cập vào các tập tin cục bộ trên máy tính này
 
-## BrowserWorks data reporting notification (Telemetry, Waterfox Health Report, etc)
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } tự động gửi dữ liệu về { -vendor-short-name } để chúng tôi có thể cải thiện trải nghiệm của bạn.
 data-reporting-notification-button =
@@ -925,6 +1157,9 @@ data-reporting-notification-button =
     .accesskey = C
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Duyệt web riêng tư
+# Tooltip for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-tooltip =
+    .tooltiptext = Duyệt web riêng tư
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -933,7 +1168,7 @@ content-analysis-indicator-tooltip =
 content-analysis-panel-title = Bảo vệ dữ liệu
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
-content-analysis-panel-text = Tổ chức của bạn sử dụng { $agentName } để bảo vệ chống mất dữ liệu. <a data-l10n-name="info">Tìm hiểu thêm</a>
+content-analysis-panel-text-styled = Tổ chức của bạn sử dụng <b>{ $agentName }</b> để bảo vệ chống mất dữ liệu. <a data-l10n-name="info">Tìm hiểu thêm</a>
 
 ## Unified extensions (toolbar) button
 
@@ -958,6 +1193,13 @@ unified-extensions-button-quarantined =
     .tooltiptext =
         Tiện ích mở rộng
         Vài tiện ích mở rộng không được phép
+
+## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-blocklisted =
+    .label = Tiện ích mở rộng
+    .tooltiptext = Một số tiện ích mở rộng bị tắt
 
 ## Private browsing reset button
 
@@ -985,23 +1227,29 @@ refresh-blocked-allow =
     .label = Cho phép
     .accesskey = A
 
-## Waterfox Relay integration
+## Firefox Relay integration
 
 firefox-relay-offer-why-to-use-relay = Mặt nạ an toàn, dễ sử dụng của chúng tôi bảo vệ danh tính của bạn và ngăn chặn thư rác bằng cách ẩn địa chỉ email của bạn.
 # Variables:
 #  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-provides = Tất cả email gửi đến mặt nạ email của bạn sẽ được chuyển đến <strong>{ $useremail }</strong> (trừ khi bạn quyết định chặn chúng).
-firefox-relay-offer-legal-notice = Bằng cách nhấp vào “Sử dụng mặt nạ email”, bạn đồng ý với <label data-l10n-name="tos-url">điều khoản sử dụng</label> và <label data-l10n-name="privacy-url">thông báo về quyền riêng tư</label>.
+firefox-relay-offer-what-relay-provides = Tất cả email gửi đến email ẩn danh của bạn sẽ được chuyển đến <strong>{ $useremail }</strong> (trừ khi bạn quyết định chặn chúng).
+firefox-relay-offer-legal-notice = Bằng cách nhấp vào “Sử dụng email ẩn danh”, bạn đồng ý với <label data-l10n-name="tos-url">điều khoản sử dụng</label> và <label data-l10n-name="privacy-url">thông báo về quyền riêng tư</label>.
 
 ## Add-on Pop-up Notifications
 
 popup-notification-addon-install-unsigned =
     .value = (Chưa xác thực)
 popup-notification-xpinstall-prompt-learn-more = Tìm hiểu thêm về cách cài đặt tiện ích một cách an toàn
-# Note: Access key is set to P to match "Private" in the corresponding localized label.
-popup-notification-addon-privatebrowsing-checkbox =
-    .label = Chạy trong cửa sổ riêng tư
-    .accesskey = P
+popup-notification-xpinstall-prompt-block-url = Xem chi tiết
+# Note: Access key is set to p to match "private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox2 =
+    .label = Cho phép tiện ích chạy trong cửa sổ riêng tư
+    .accesskey = p
+# This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
+# but it is used in the install prompt, and it needs an access key.
+popup-notification-addon-technical-and-interaction-checkbox =
+    .label = Chia sẻ dữ liệu kỹ thuật và tương tác với nhà phát triển tiện ích mở rộng
+    .accesskey = S
 
 ## Pop-up warning
 
@@ -1027,3 +1275,31 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Hiển thị '{ $popupURI }'
+
+## File-picker crash notification ("FilePickerCrashed.sys.mjs")
+
+file-picker-failed-open = Không thể mở hộp thoại tập tin Windows. Không thể chọn tập tin hoặc thư mục.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-failed-save-somewhere = Không thể mở hộp thoại tập tin Windows. Tập tin sẽ được lưu vào { $path }.
+file-picker-failed-save-nowhere = Không thể mở hộp thoại tập tin Windows. Không tìm thấy thư mục mặc định; tập tin sẽ không được lưu.
+file-picker-crashed-open = Không thể mở hộp thoại tập tin Windows. Không thể chọn tập tin hoặc thư mục.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-crashed-save-somewhere = Hộp thoại tập tin Windows đã bị lỗi. Tập tin sẽ được lưu vào { $path }.
+file-picker-crashed-save-nowhere = Hộp thoại tập tin Windows đã bị lỗi. Không tìm thấy thư mục mặc định; tập tin sẽ không được lưu.
+
+# Button used with file-picker-crashed-save-default. Opens the folder in Windows
+# Explorer, with the saved file selected and in focus.
+#
+# The wording here should be consistent with the Windows variant of
+# `downloads-cmd-show-menuitem-2` and similar messages.
+
+file-picker-crashed-show-in-folder =
+    .label = Hiển thị trong thư mục
+    .accessKey = F
+
+## Onboarding Finish Setup checklist
+
+onboarding-checklist-button-label = Hoàn tất thiết lập
+onboarding-aw-finish-setup-button =
+    .label = Hoàn tất thiết lập
+    .tooltiptext = Hoàn tất thiết lập { -brand-short-name }

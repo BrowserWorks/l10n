@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -227,10 +227,7 @@ about-webrtc-round-trip-time-ms = RTT (ms)
 #   $track-identifier (String) - The unique identifier for the MediaStreamTrack.
 about-webrtc-frame-stats-heading = 動画フレーム統計 - MediaStreamTrack ID: { $track-identifier }
 
-## These are paths used for saving the about:webrtc page or log files so
-## they can be attached to bug reports.
-## Variables:
-##  $path (String) - The path to which the file is saved.
+##
 
 about-webrtc-save-page-msg = ページを保存しました: { $path }
 about-webrtc-debug-mode-off-state-msg = トレースログの保存場所: { $path }
@@ -244,43 +241,23 @@ about-webrtc-save-page-complete-msg = ページを保存しました: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
-about-webrtc-frames =
-    { $frames ->
-        [one] { $frames } フレーム
-       *[other] { $frames } フレーム
-    }
+about-webrtc-frames = { $frames } フレーム
 # This is the number of audio channels encoded or decoded over an RTP stream.
 # Variables:
 #  $channels (Number) - The number of channels encoded or decoded.
-about-webrtc-channels =
-    { $channels ->
-        [one] { $channels } チャンネル
-       *[other] { $channels } チャンネル
-    }
+about-webrtc-channels = { $channels } チャンネル
 # This is the total number of packets received on the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets received.
-about-webrtc-received-label =
-    { $packets ->
-        [one] { $packets } パケット受信
-       *[other] { $packets } パケット受信
-    }
+about-webrtc-received-label = { $packets } パケット受信
 # This is the total number of packets lost by the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets lost.
-about-webrtc-lost-label =
-    { $packets ->
-        [one] { $packets } パケット損失
-       *[other] { $packets } パケット損失
-    }
+about-webrtc-lost-label = { $packets } パケット損失
 # This is the total number of packets sent by the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets sent.
-about-webrtc-sent-label =
-    { $packets ->
-        [one] { $packets } パケット送信
-       *[other] { $packets } パケット送信
-    }
+about-webrtc-sent-label = { $packets } パケット送信
 # Jitter is the variance in the arrival time of packets.
 # See: https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter
 # Variables:

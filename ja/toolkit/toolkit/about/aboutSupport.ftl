@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = 種類
 support-addons-enabled = 有効
 support-addons-version = バージョン
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = 格納場所
 legacy-user-stylesheets-title = 従来のユーザースタイルシート
 legacy-user-stylesheets-enabled = 使用中
 legacy-user-stylesheets-stylesheet-types = スタイルシート
@@ -179,6 +183,8 @@ media-capabilities-enumerate = データベースを列挙
 
 media-codec-support-sw-decoding = ソフトウェアデコーディング
 media-codec-support-hw-decoding = ハードウェアデコーディング
+media-codec-support-sw-encoding = ソフトウェアエンコーディング
+media-codec-support-hw-encoding = ハードウェアエンコーディング
 media-codec-support-codec-name = コーデック名
 media-codec-support-supported = 対応
 media-codec-support-unsupported = 未対応
@@ -216,7 +222,7 @@ intl-regional-prefs = 地域設定
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

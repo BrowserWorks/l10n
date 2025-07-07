@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Докум�
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Документация клиента телеметрии Waterfox</a> содержит определения концепций, документацию по API и справку по данным.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Панели Телеметрии</a> позволяют вам визуализировать данные, полученные BrowserWorks через Телеметрию.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Словарь Зондов</a> содержит сведения о зондах и описания зондов, собранные Телеметрией.
-about-telemetry-show-in-Waterfox-json-viewer = Открыть в просмотрщике JSON
+about-telemetry-show-in-Firefox-json-viewer = Открыть в просмотрщике JSON
 about-telemetry-home-section = Главная
 about-telemetry-general-data-section = Общие данные
 about-telemetry-environment-data-section = Данные окружения
@@ -68,7 +68,7 @@ about-telemetry-histogram-stats =
        *[many] { $sampleCount } замеров, среднее = { $prettyAverage }, сумма = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "BrowserWorks"
+#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = На этой странице показаны сведения о производительности, аппаратном обеспечении, использовании и настройках, собранные Телеметрией. Эта информация будет отправлена в { $telemetryServerOwner }, чтобы помочь улучшить { -brand-full-name }.
 about-telemetry-settings-explanation = Настроен сбор телеметрии на { about-telemetry-data-type } версии Waterfox и её отправка <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:

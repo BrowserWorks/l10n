@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,9 @@
 # Variables
 #   $host (String) - Hostname for which the password is saved for.
 password-manager-save-password-message = ¿Guardar contraseña para { $host }?
+password-manager-save-password-button-deny =
+    .label = Ahora no
+    .accesskey = N
 password-manager-save-password-button-allow =
     .label = Guardar
     .accesskey = S
@@ -17,6 +20,9 @@ password-manager-save-password-button-never =
 # Variables
 #   $host (String) - Hostname for which the password is updated for.
 password-manager-update-password-message = ¿Actualizar contraseña para { $host }?
+password-manager-update-password-button-delete =
+    .label = Eliminar contraseña guardada
+    .accesskey = R
 password-manager-update-login-add-username = ¿Añadir nombre de usuario a la contraseña guardada?
 password-manager-password-password-button-allow =
     .label = Actualizar

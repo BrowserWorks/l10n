@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ page-source-shortcut =
     .key = u
 # This should match the Option+Command keyboard shortcut letter that Safari
 # and Chrome use for "View Source" on macOS. `page-source-shortcut` above
-# is Waterfox's official keyboard shortcut shown in the GUI.
+# is Firefox's official keyboard shortcut shown in the GUI.
 # Safari variant is an alias provided for the convenience of Safari and Chrome
 # users on macOS. See bug 1398988.
 page-source-shortcut-safari =
@@ -79,6 +79,10 @@ nav-reload-shortcut =
 # Shortcut available only on macOS.
 nav-stop-shortcut =
     .key = .
+ai-chatbot-sidebar-shortcut =
+    .key = X
+toggle-sidebar-shortcut =
+    .key = Z
 history-show-all-shortcut =
     .key = H
 history-show-all-shortcut-mac =

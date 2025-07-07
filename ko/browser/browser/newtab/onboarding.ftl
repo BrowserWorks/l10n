@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,7 +10,7 @@
 
 ## Welcome page strings
 
-onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니다
+onboarding-welcome-header = { -brand-short-name } 사용을 환영합니다
 onboarding-start-browsing-button-label = 탐색 시작
 onboarding-not-now-button-label = 나중에
 mr1-onboarding-get-started-primary-button-label = 시작하기
@@ -25,6 +25,8 @@ return-to-amo-subtitle = 좋습니다. { -brand-short-name }를 설치했네요.
 return-to-amo-addon-title = 이제 <img data-l10n-name="icon"/> <b>{ $addon-name }</b> 부가 기능을 설치하겠습니다.
 return-to-amo-add-extension-label = 확장 기능 추가
 return-to-amo-add-theme-label = 테마 추가
+return-to-amo-theme-install-complete-label = 테마 설치됨
+return-to-amo-extension-install-complete-label = 확장 기능 설치됨
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = 진행률: { $current } / { $total } 단계
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = 애니메이션 끄기
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = 로그인
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = { $previous }에서 가져오기
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = { $appLanguage } 언어로 계속 
 onboarding-live-language-secondary-cancel-download = 취소
 onboarding-live-language-skip-button-label = 건너뛰기
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -153,7 +155,7 @@ fx100-thank-you-hero-text =
 fx100-thank-you-subtitle = 100번째 출시입니다! 더 나은 건강한 인터넷을 구축할 수 있도록 도와주셔서 감사합니다.
 fx100-thank-you-pin-primary-button-label =
     { PLATFORM() ->
-        [macos] { -brand-short-name }를 Dock에 넣기
+        [macos] { -brand-short-name }를 독에 넣기
        *[other] { -brand-short-name }를 작업 표시줄에 고정
     }
 fx100-upgrade-thanks-header = 100 감사합니다
@@ -173,35 +175,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = { -brand-short-name }�
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = 이전 브라우저에서 가져오기
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = 놀라운 인터넷을 여세요
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = 어디서나 클릭 한 번으로 { -brand-short-name }를 실행하세요. 그럴 때마다 더 개방적이고 독립적인 웹을 선택하게 됩니다.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
-        [macos] { -brand-short-name }를 Dock에 넣기
+        [macos] { -brand-short-name }를 독에 넣기
        *[other] { -brand-short-name }를 작업 표시줄에 고정
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = 작업 표시줄 및 시작 메뉴에 { -brand-short-name } 고정
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = 비영리 단체가 지원하는 브라우저로 시작하세요. 웹을 탐색하시는 동안 저희는 개인 정보를 보호합니다.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = { -brand-product-name }를 사랑해 주셔서 감사합니다.
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = 어디서나 클릭 한 번으로 더 건강한 인터넷을 시작하세요. 최신 업데이트에는 여러분이 좋아할 만한 새로운 것들이 가득합니다.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = 웹을 탐색하는 동안 개인 정보를 보호하는 브라우저를 사용하세요. 최신 업데이트는 당신이 좋아하는 것들로 가득 차 있습니다.
 mr2022-onboarding-existing-pin-checkbox-label = { -brand-short-name } 사생활 보호 모드도 추가
 
@@ -216,14 +220,16 @@ mr2022-onboarding-set-default-subtitle = 비영리 단체가 지원하는 브라
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = 최신 버전이 사용자 중심으로 구축되어, 그 어느 때보다 쉽게 웹을 둘러볼 수 있습니다. 여러분이 좋아할 만한 기능으로 가득 차 있습니다.
 mr2022-onboarding-get-started-primary-button-label = 빠른 설정
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = 매우 빠른 설정
 mr2022-onboarding-import-subtitle = { -brand-short-name }를 원하는 대로 설정하세요. 기존 브라우저의 북마크, 비밀번호 등을 추가하세요.
@@ -275,13 +281,13 @@ mr2022-onboarding-mobile-download-cta-text = QR 코드를 스캔하여 모바일
 mr2022-onboarding-no-mobile-download-cta-text = 모바일용 { -brand-product-name }를 받으려면 QR 코드를 스캔하세요.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = 한 번의 클릭으로 사생활 보호 모드의 자유를 얻으세요
 mr2022-upgrade-onboarding-pin-private-window-subtitle = 쿠키나 기록이 저장되지 않습니다. 아무도 보고 있지 않은 것처럼 탐색하세요.
 mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
     { PLATFORM() ->
-        [macos] { -brand-short-name } 사생활 보호 모드를 Dock에 넣기
+        [macos] { -brand-short-name } 사생활 보호 모드를 독에 넣기
        *[other] { -brand-short-name } 사생활 보호 모드를 작업 표시줄에 고정
     }
 
@@ -335,6 +341,14 @@ onboarding-device-migration-subtitle = { -fxaccount-brand-name(capitalization: "
 onboarding-device-migration-subtitle2 = 새 기기에서 북마크, 비밀번호, 기록을 가져오려면 계정에 로그인하세요.
 onboarding-device-migration-primary-button-label = 로그인
 
+## Add-ons Picker screen
+
+amo-picker-title = { -brand-short-name } 사용자 지정
+amo-picker-subtitle = 확장 기능은 브라우저용 앱과 같은 것으로, 이를 통해 비밀번호 보호, 동영상 다운로드, 거래 찾기, 성가신 광고 차단, 브라우저 모양 변경 등을 할 수 있습니다.
+amo-picker-install-button-label = { -brand-short-name }에 추가
+amo-picker-install-complete-label = 설치됨
+amo-picker-collection-link = 더 많은 부가 기능 살펴보기
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -346,6 +360,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = 동기화되면 { -br
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name }가 여러분을 도와드립니다.
 onboarding-gratitude-security-and-privacy-subtitle = BrowserWorks 재단이 지원하는 { -brand-short-name }를 사용해 주셔서 감사합니다. 여러분의 지원으로 우리는 인터넷을 더 안전하고 더 쉽게 이용할 수 있도록 노력하고 있습니다.
+# Sign up or Sign in screen
+onboarding-sign-up-title = 기기 간에 데이터 동기화
+onboarding-sign-up-description = 계정에 가입하면 비밀번호, 북마크 등 모든 중요한 정보가 안전하게 저장되며 모든 기기에서 로그인 할 때 사용할 수 있습니다.
+onboarding-sign-up-button = 가입 또는 로그인
+onboarding-sign-up-secondary-button = 탐색 시작
 
 ## New user time and familiarity survey strings
 
@@ -365,3 +384,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = 완전 새내기
 onboarding-new-user-survey-familiarity-based-option-2 = 사용해 본 적이 있음
 onboarding-new-user-survey-familiarity-based-option-3 = 매우 익숙함
 onboarding-new-user-survey-familiarity-based-option-4 = 예전에 사용했지만 시간이 좀 지남
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = 탭의 위치를 알려주세요
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = 사이드바 설정에서 원할 때마다 기능을 전환할 수 있습니다.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = 탭을 내 방식대로
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = 탭을 많이 열어 놓으시겠습니까? 더 간소화된 보기를 위해 탭을 세로로 사용해 보세요. 또는 클래식하게 상단의 탭을 유지하세요. 언제든지 전환할 수 있습니다.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = 탭 레이아웃 선택
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = 집중에 도움이 되는 간소화된 보기를 위해 탭을 세로로 사용해 보세요. 또는 클래식하게 상단의 탭을 유지하세요. 언제든지 전환할 수 있습니다.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = 측면에 있는 탭
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = 상단에 있는 탭
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = 세로 탭
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = 세로 탭 소개
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = 측면에서 탭을 사용해보세요. 사이드바 설정에서 원할 때마다 기능을 전환할 수 있습니다.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = 세로 탭 사용해보기
+onboarding-flair-text = 새 기능!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = 가로 탭 유지
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = { -brand-shorter-name } 사이드바의 일부로 화면 측면에 탭을 표시하는 브라우저 창입니다.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = { -brand-shorter-name } 사이드바의 일부로 화면 측면에 탭을 표시하는 브라우저 창입니다.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = 탭을 상단에 표시하는 브라우저 창입니다.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = 탭을 상단에 표시하는 브라우저 창입니다.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = 사이드바에서 AI 챗봇을 사용해 보세요
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = 탐색하는 동안 웹 콘텐츠를 요약하고, 아이디어를 브레인스토밍하고, 메시지 초안을 작성하세요. 여러 공급자 중에서 선택하세요. 언제든지 전환할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
+onboarding-genai-sidebar-primary-button = 챗봇 선택
+onboarding-genai-sidebar-secondary-button = 탐색 시작
+
+## New user onboarding checklist
+
+onboarding-checklist-title = { -brand-short-name } 설정을 마치시겠습니까?
+onboarding-checklist-subtitle = 최고의 탐색 경험을 위해 다음 단계를 완료하세요.
+onboarding-checklist-set-default = { -brand-short-name }를 기본 브라우저로 설정
+onboarding-checklist-pin = { -brand-short-name }를 작업 표시줄에 고정
+onboarding-checklist-import = 이전 브라우저에서 가져오기
+onboarding-checklist-extension = 확장 기능 추가
+onboarding-checklist-sign-up = 계정 가입 또는 로그인
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = 덜 복잡하고 더 집중할 수 있도록 탭 그룹을 사용해 보세요
+tab-groups-onboarding-feature-callout-subtitle = 하나의 탭을 다른 탭 위에 드래그하여 첫 번째 그룹을 만들어 정리하세요.
+tab-groups-onboarding-create-group-title-2 = 언제든지 여기에서 탭 그룹을 찾으세요.
+tab-groups-onboarding-create-group-no-alltabs-button-title = 주소 표시줄에서 그룹을 검색하여 찾으세요.
+tab-groups-onboarding-saved-groups-title-2 = 탭 그룹을 닫으면, 언제든지 여기서 다시 열 수 있습니다.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = 주소 표시줄에서 검색하여 닫힌 그룹을 찾으세요.
+tab-groups-onboarding-session-restore-title = 언제든지 여기에서 탭 그룹을 다시 열 수 있습니다.
+tab-groups-onboarding-dismiss = 확인
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = { -brand-product-name } 프로필 소개
+multi-profile-spotlight-body = 업무용과 여가용 탐색을 간편하게 전환하세요. 프로필은 검색 기록과 비밀번호를 포함한 탐색 정보를 완전히 분리하여 별도로 관리할 수 있도록 해줍니다.
+multi-profile-spotlight-cta = 프로필 만들기
+multi-profile-callout-title = 업무와 여가를 위한 다양한 프로필 만들기
+multi-profile-callout-subtitle = 프로필을 사용하면 검색 기록이나 비밀번호와 같은 탐색 정보를 완전히 분리할 수 있습니다.
+multi-profile-callout-cta = 프로필 만들기
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = 모바일용 Waterfox와 탐색을 동기화하세요.
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = QR 코드를 스캔하여 모바일용 { -brand-product-name }를 다운로드하세요. 설치가 완료되면, "모바일에 동기화"를 선택해서 이동 중에도 비밀번호, 북마크 등에 접근할 수 있습니다.
+dismiss-button-label = 닫기
+sync-to-mobile-button-label = 모바일에 동기화
+desktop-to-mobile-qr-code-alt =
+    .aria-label = 모바일용 { -brand-product-name } 다운로드를 위한 QR 코드

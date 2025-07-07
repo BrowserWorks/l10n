@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = เสร็จสิ้นการตั้ง�
 account-disconnected2 = ตัดการเชื่อมต่อบัญชีแล้ว
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = ส่งไปยังอุปกรณ์ทั้งหมด
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = จัดการอุปกรณ์…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = เชื่อมต่อ { $email } ใหม่
 account-verify = ยืนยัน { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = เชื่อมต่ออุป�
 account-send-tab-to-device-verify-status = บัญชีไม่ได้รับการยืนยัน
 account-send-tab-to-device-verify = ยืนยันบัญชีของคุณ…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = บัญชี
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = คอมพิวเตอร์นี้เชื่อมต่อกับ { $deviceName } แล้ว
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = คอมพิวเตอร์นี้เชื่อมต่อกับอุปกรณ์ใหม่แล้ว
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = คุณได้ลงชื่อเข้าเรียบร้อยแล้ว
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = ตัดการเชื่อมต่อคอมพิวเตอร์นี้แล้ว
 
 ## These strings are used in a notification shown when we're opening
@@ -84,3 +84,11 @@ account-multiple-tabs-arriving-from-single-device = มี { $tabCount } แท�
 account-multiple-tabs-arriving-from-multiple-devices = มี { $tabCount } แท็บเข้ามาจากอุปกรณ์ที่เชื่อมต่อของคุณ
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device = มี { $tabCount } แท็บเข้ามา
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = ดูแท็บที่ปิดล่าสุด
+account-tabs-closed-remotely = ปิดแท็บ { -brand-short-name } { $closedCount } แท็บแล้ว

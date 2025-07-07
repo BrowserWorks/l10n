@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,6 +24,11 @@ about-glean-interface-description =
             Toto rozhraní je navržené tak, aby ho vývojáři a testeři mohli používat na ruční
             <a data-l10n-name="fog-link">instrumentační testování</a>.
     }
+about-glean-category-about-glean = Co je { -glean-brand-name }
+about-glean-category-manual-testing = Ruční testování
+about-glean-category-adhoc-testing = Ad hoc testování
+about-glean-category-profiler = Používání Profileru
+about-glean-category-about-data = O datech
 about-glean-upload-enabled = Nahrávání dat je povoleno.
 about-glean-upload-disabled = Nahrávání dat je zakázáno.
 about-glean-upload-enabled-local = Nahrávání dat je povoleno pouze pro odesílání na místní server.
@@ -51,6 +56,9 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links =
+    Pro vysvětlení různých způsobů záznamu a vyhledávání dat prosím použijte
+    panel <strong>O datech</strong>.
 about-glean-about-testing-header = O testování
 # This message is followed by a numbered list.
 about-glean-manual-testing =
@@ -108,8 +116,38 @@ about-glean-adhoc-note =
     Upozorňujeme, že používáte rozhraní API Glean JS pomocí konzole devtools.
     To znamená, že kategorie metriky a název metriky jsou formátovány ve formátu
     <code>camelCase</code> na rozdíl od rozhraní API Rustu a C++.
+about-glean-profiler-explanation =
+    Chcete-li zobrazit úplné zobrazení všech zaznamenaných metrik, můžete použít { -profiler-brand-name(case: "acc") }.
+    Nejprve musíte <a data-l10n-name="firefox-profiler-link">zachytit profil výkonu</a>.
+    Jakmile profil zachytíte, vyberte možnost <q>Graf značek</q> a podívejte se na značky v části <q>Telemetrie</q>.
+about-glean-profiler-explanation-profiler =
+    Ve výkonnostním profilu můžete zobrazit všechny shromážděné metriky, kdy byly
+    a jaké hodnoty byly přesně shromážděny. Po najetí na jednotlivé ukazatele,
+    můžete ověřit, zda byla shromážděna správná hodnota a zda ke shromáždění došlo ve správný čas.
 controls-button-label-verbose = Použít nastavení a odeslat ping
+about-glean-feedback-settings-only =
+    .message = Nastavení použito!
+about-glean-feedback-settings-and-ping =
+    .message = Nastavení bylo použito a ping odeslán!
 about-glean-about-data-header = O datech
+about-glean-about-data-description =
+    Existuje několik různých nástrojů, které můžete použít k zobrazení svých dat v závislosti na tom,
+    co hledáte.
+about-glean-about-data-description-list-intro =
+    Pro konkrétní použití každého nástroje se prosím
+    podívejte do seznamu níže:
+about-glean-about-data-list-item-dictionary =
+    Chcete-li si prohlédnout seznam údajů shromážděných pomocí nástroje { -glean-brand-name } pro jednotlivé aplikace, nahlédněte do seznamu
+    <a data-l10n-name="glean-dictionary-link">Slovník nástroje { -glean-brand-name }</a>.
+about-glean-about-data-list-item-about-telemetry =
+    Chcete-li procházet data shromážděná starší telemetrií, navštivte prosím
+    <a data-l10n-name="about-telemetry-link">about:telemetry</a>.
+about-glean-about-data-list-item-debug-ping-viewer =
+    Chcete-li procházet ladicí značky, vidět úplné pingy, vidět přímý přenos událostí nebo zobrazit metriku
+    vizualizací, nahlédněte do <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>.
+about-glean-about-data-list-item-firefox-profiler =
+    Pro nahrání profilu výkonu a zobrazení všech zaznamenaných metrik prosím použijte 
+    <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name(case: "acc") }</a>.
 about-glean-about-data-explanation =
     Chcete-li si prohlédnout seznam shromážděných údajů, podívejte se na stránku
     <a data-l10n-name="glean-dictionary-link">slovníku { -glean-brand-name }</a>.

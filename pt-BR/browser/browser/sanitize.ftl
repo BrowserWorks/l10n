@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,14 +33,18 @@ clear-time-duration-prefix =
     .value = Intervalo de tempo a limpar:{ " " }
     .accesskey = t
 clear-time-duration-prefix2 =
-    .value = Quando:
-    .accesskey = Q
+    .value = Período:
+    .accesskey = P
 clear-time-duration-value-last-hour =
     .label = Última hora
 clear-time-duration-value-last-2-hours =
     .label = Últimas duas horas
 clear-time-duration-value-last-4-hours =
     .label = Últimas quatro horas
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Desde { $midnightTime }
 clear-time-duration-value-today =
     .label = Hoje
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = Histórico
 item-history-and-downloads =
     .label = Histórico de navegação e downloads
     .accesskey = H
+item-history-and-downloads-description2 = Limpa o histórico de sites e downloads
 item-history-form-data-downloads =
     .label = Histórico
     .accesskey = H
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Configurações de sites
     .accesskey = f
+item-formdata-prefs =
+    .label = Informações salvas de formulários
+    .accesskey = o
+item-formdata-description = Limpa coisas como nomes, emails e outros itens preenchidos em formulários
 item-site-prefs-description = Redefine suas permissões e preferências de sites para a configuração original
 data-section-label = Dados
 item-site-settings =

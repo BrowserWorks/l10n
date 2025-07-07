@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -141,6 +141,8 @@ login-item-copied-username-button-text = Copiado!
 login-item-password-label = Palavra-passe
 login-item-password-reveal-checkbox =
     .aria-label = Mostrar palavra-passe
+login-item-password-conceal-checkbox =
+    .aria-label = Ocultar palavra-passe
 login-item-copy-password-button-text = Copiar
 login-item-copied-password-button-text = Copiada!
 login-item-save-changes-button = Guardar alterações
@@ -163,7 +165,7 @@ login-item-timeline-action-used = Utilizado
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -172,7 +174,7 @@ about-logins-edit-login-os-auth-dialog-message-win = Para editar a sua credencia
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = editar a credencial guardada
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
@@ -207,7 +209,7 @@ about-logins-export-password-os-auth-dialog-message2-macosx = exportar palavras-
 
 ## Primary Password notification
 
-about-logins-primary-password-notification-message = Por favor introduza a sua palavra-passe principal para ver credenciais e palavras-passe guardadas
+about-logins-primary-password-notification-message = Introduza a sua palavra-passe principal para ver credenciais e palavras-passe guardadas
 master-password-reload-button =
     .label = Iniciar sessão
     .accesskey = I

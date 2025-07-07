@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # This is temporary until bug 1521632 is fixed
@@ -12,3 +12,8 @@ elevation-finished-page = Uppdatering färdig att installera
 elevation-finished-background-page = En säkerhets- och stabilitetsuppdatering till { -brand-short-name } har hämtats och är färdig att installera.
 elevation-finished-background = Uppdatering:
 elevation-more-elevated = Denna uppdateringen kräver administratörsbehörighet. Uppdateringen kommer att installeras nästa gång { -brand-short-name } startar. Du kan starta om { -brand-short-name } nu, fortsätta att arbeta och starta om senare eller avvisa den här uppdateringen.
+sandbox-missing-unprivileged-namespaces = Vissa av { -brand-short-name }:s säkerhetsfunktioner kan erbjuda ett sämre skydd på ditt nuvarande operativsystem.
+sandbox-unprivileged-namespaces-dismiss-button =
+    .label = Visa inte igen
+    .accesskey = n
+sandbox-unprivileged-namespaces-howtofix = Hur du åtgärdar det här problemet

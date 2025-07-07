@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,3 +15,5 @@ places-bookmarks-restore-format-error = 不支持的文件类型。
 places-bookmarks-restore-parse-error = 无法处理备份文件。
 places-bookmarks-import = 导入书签文件
 places-bookmarks-export = 导出书签文件
+places-bookmarks-paste-error-title = 发现无效的网址
+places-bookmarks-paste-error-message-header = 下列网址无法添加到您的书签。请尝试检查格式并重新添加。

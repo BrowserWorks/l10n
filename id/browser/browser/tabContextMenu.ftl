@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Tab Baru
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Tutup Tab yang Ada di Kiri Tab Ini
     .accesskey = i
+close-tabs-to-the-start-vertical =
+    .label = Tutup Tab di Atas
+    .accesskey = A
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Tutup Tab yang Ada di Kanan Tab Ini
     .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = Tutup Tab di Bawah
+    .accesskey = B
 close-other-tabs =
     .label = Tutup Tab Lainnya
     .accesskey = L
@@ -72,8 +82,21 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Tutup Banyak Tab
     .accesskey = T
+tab-context-close-duplicate-tabs =
+    .label = Tutup Tab Berganda
+    .accesskey = g
 tab-context-share-url =
     .label = Bagikan
+    .accesskey = B
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Tab Baru ke Kanan
+    .accesskey = a
+tab-context-new-tab-open-vertical =
+    .label = Tab Baru di Bawah
+    .accesskey = B
+tab-context-new-group =
+    .label = Grup Baru
     .accesskey = B
 
 ## Variables:
@@ -100,7 +123,6 @@ tab-context-move-tabs =
            *[other] Pindahkan Tab
         }
     .accesskey = P
-
 tab-context-send-tabs-to-device =
     .label = Kirim Tab ke { $tabCount } Peranti
     .accesskey = k

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -23,6 +23,6 @@ install-failed-message = A { -brand-short-name } telepítése sikertelen, de tov
 ## rather than the app that was double-clicked in a .dmg.
 
 prompt-to-launch-existing-app-title = Megnyitja a meglévő { -brand-short-name } alkalmazást?
-prompt-to-launch-existing-app-message = Már telepítette a { -brand-short-name(case: "accusative") }. Használja a telepített alkalmazást, hogy naprakész maradjon és megakadályozza az adatvesztést.
+prompt-to-launch-existing-app-message = Már telepítette a { -brand-short-name }ot. Használja a telepített alkalmazást, hogy naprakész maradjon és megakadályozza az adatvesztést.
 prompt-to-launch-existing-app-yes-button = Meglévő megnyitása
 prompt-to-launch-existing-app-no-button = Köszönöm, nem

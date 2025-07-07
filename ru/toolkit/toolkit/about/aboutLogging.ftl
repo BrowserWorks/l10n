@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,8 @@ about-logging-set-log-file = Указать файл журнала
 about-logging-set-log-modules = Указать модули журнала
 about-logging-start-logging = Начать ведение журнала
 about-logging-stop-logging = Остановить ведение журнала
+about-logging-copy-as-url = Копировать текущие настройки как URL
+about-logging-url-copied = Параметры ведения журнала скопированы в буфер обмена как предустановленный URL
 about-logging-buttons-disabled = Ведение журнала настроено через переменные среды, динамическая настройка недоступна.
 about-logging-some-elements-disabled = Ведение журнала настроено через сетевой адрес, некоторые настройки конфигурации недоступны
 about-logging-info = Информация:
@@ -27,6 +29,8 @@ about-logging-no-log-modules = Нет
 about-logging-no-log-file = Нет
 about-logging-logging-preset-selector-text = Предустановка ведения журнала:
 about-logging-with-profiler-stacks-checkbox = Включить трассировку стека для сообщений журнала
+about-logging-menu =
+    .title = Дополнительные настройки
 
 ## Logging presets
 
@@ -44,6 +48,10 @@ about-logging-preset-media-playback-label = Воспроизведение ме�
 about-logging-preset-media-playback-description = Модули журнала для диагностики проблем с воспроизведением мультимедиа (не проблем с видеоконференциями)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Модули журнала для диагностики вызовов WebRTC
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Модули журнала для диагностики проблем с аудио/видео-декодерами и кодировщиками WebCodecs, а также декодерами изображений
+about-logging-preset-ml-label = Машинное обучение
+about-logging-preset-ml-description = Модули журнала для диагностики проблем машинного обучения
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Модули журнала для диагностики проблем WebGPU
 about-logging-preset-gfx-label = Графика
@@ -56,9 +64,7 @@ about-logging-preset-custom-description = Вручную выбранные мо
 # Error handling
 about-logging-error = Ошибка:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Недопустимое значение «{ $v }» для ключа «{ $k }»
 about-logging-unknown-logging-preset = Неизвестная предустановка ведения журнала «{ $v }»
@@ -66,4 +72,30 @@ about-logging-unknown-profiler-preset = Неизвестная предуста�
 about-logging-unknown-option = Неизвестная настройка about:logging «{ $k }»
 about-logging-configuration-url-ignored = Сетевой адрес конфигурации проигнорирован
 about-logging-file-and-profiler-override = Невозможно одновременно принудительно вывести в файл и переопределить настройки профайлера.
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Произошла ошибка: { $errorText }
 about-logging-configured-via-url = Опция настроена через сетевой адрес
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-upload-question = Данные профиля были захвачены. Вы хотите его сохранить или выгрузить?
+about-logging-save-button = Сохранить
+about-logging-upload-button = Выгрузить
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Сохранено в { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Выгрузка данных профиля: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Выгружено на <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Поделиться URL
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = При загрузке профиля произошла ошибка: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = При сохранении файла произошла ошибка: { $errorText }

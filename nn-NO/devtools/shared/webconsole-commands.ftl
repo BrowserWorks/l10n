@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,13 +22,3 @@ webconsole-commands-usage-unblock =
     Stop blocking network requests
     
       It accepts only one argument, the exact same string previously passed to :block.
-# Usage string for :trace command
-webconsole-commands-usage-trace =
-    :trace
-    
-    Toggles the JavaScript tracer
-    
-      It supports the following arguments:
-        --logMethod to be set to ‘console’ for logging to the web console (the default), or ‘stdout’ for logging to the standard output,
-        --prefix Optional string which will be logged in front of all the trace logs,
-        --help or --usage to show this message.

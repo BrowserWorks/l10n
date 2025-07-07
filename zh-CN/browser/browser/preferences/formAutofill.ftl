@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -47,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = 添加地址
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = 编辑地址
-autofill-address-name = 姓名
 autofill-address-given-name = 名
 autofill-address-additional-name = 中间名
 autofill-address-family-name = 姓
+autofill-address-name = 姓名
 autofill-address-organization = 组织
 autofill-address-street-address = 街道地址
 autofill-address-street = 街道地址
@@ -106,9 +106,6 @@ autofill-address-eircode = Eircode 邮政编码
 
 ##
 
-
-##
-
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = 添加新地址
 autofill-address-country = 国家/地区
@@ -122,7 +119,7 @@ autofill-country-warning-message = 表单自动填写目前仅部分国家/地�
 autofill-add-new-card-title = 添加新信用卡
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = 编辑信用卡
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->
@@ -137,7 +134,7 @@ autofill-add-card-title = 添加卡片
 autofill-edit-card-title2 = 编辑卡片
 autofill-card-number = 卡号
 autofill-card-invalid-number = 请输入有效的卡号
-autofill-card-name-on-card = 持卡人姓名
+autofill-card-name-on-card = 卡面姓名
 autofill-card-expires-month = 到期月
 autofill-card-expires-year = 到期年
 autofill-card-billing-address = 账单地址

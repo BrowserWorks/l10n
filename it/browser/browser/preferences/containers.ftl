@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,10 +10,8 @@ containers-window-new2 =
 containers-window-update-settings2 =
     .title = Impostazioni contenitore “{ $name }”
     .style = min-width: 45em
-
 containers-window-close =
     .key = w
-
 # This is a term to store style to be applied
 # on the three labels in the containers add/edit dialog:
 #   - name
@@ -24,26 +22,20 @@ containers-window-close =
 # of the three messages ensures that all three labels
 # will be aligned correctly.
 -containers-labels-style = min-width: 4rem
-
 containers-name-label = Nome
     .accesskey = N
     .style = { -containers-labels-style }
-
 containers-name-text =
     .placeholder = Inserire il nome del contenitore
-
 containers-icon-label = Icona
     .accesskey = I
     .style = { -containers-labels-style }
-
 containers-color-label = Colore
     .accesskey = C
     .style = { -containers-labels-style }
-
 containers-dialog =
     .buttonlabelaccept = Fatto
     .buttonaccesskeyaccept = F
-
 containers-color-blue =
     .label = Blu
 containers-color-turquoise =
@@ -62,7 +54,6 @@ containers-color-purple =
     .label = Viola
 containers-color-toolbar =
     .label = Colore della barra degli strumenti
-
 containers-icon-fence =
     .label = Recinto
 containers-icon-fingerprint =

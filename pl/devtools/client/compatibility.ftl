@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,15 +40,13 @@ compatibility-issue-occurrences =
         [few] { $number } wystąpienia
        *[many] { $number } wystąpień
     }
-
 compatibility-no-issues-found = Nie znaleziono problemów ze zgodnością.
 compatibility-close-settings-button =
     .title = Zamknij ustawienia
-
 # Text used in the element containing the browser icons for a given compatibility issue.
 # Line breaks are significant.
 # Variables:
-#   $browsers (String) - A line-separated list of browser information (e.g. Waterfox 98\nChrome 99).
+#   $browsers (String) - A line-separated list of browser information (e.g. Firefox 98\nChrome 99).
 compatibility-issue-browsers-list =
     .title =
         Problemy ze zgodnością w:

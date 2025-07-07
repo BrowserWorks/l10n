@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Min historik for de seneste to timer
 clear-time-duration-value-last-4-hours =
     .label = Min historik for de seneste fire timer
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Min historik siden kl. { $midnightTime }
 clear-time-duration-value-today =
     .label = Min historik for i dag
 clear-time-duration-value-everything =
@@ -55,10 +59,11 @@ history-section-label = Historik
 item-history-and-downloads =
     .label = Browser- og filhentningshistorik
     .accesskey = B
+item-history-and-downloads-description2 = Rydder historik for websteder og filhentninger
 item-history-form-data-downloads =
     .label = Historik
     .accesskey = s
-item-history-form-data-downloads-description = Rydder websteds- og downloadhistorik, gemte formularoplysninger og søgehistorik
+item-history-form-data-downloads-description = Rydder websteds- og filhentningshistorik, gemte formularoplysninger og søgehistorik
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Websteds-indstillinger
     .accesskey = W
+item-formdata-prefs =
+    .label = Gemte formularoplysninger
+    .accesskey = o
+item-formdata-description = Rydder data såsom navne, mailadresser og anden tekst, du indtaster i formularer
 item-site-prefs-description = Nulstiller dine tilladelser og websteds-indstillinger til de oprindelige indstillinger
 data-section-label = Data
 item-site-settings =

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,7 +18,7 @@
 ## Application Menu (macOS only)
 
 menu-application-preferences =
-    .label = การกำหนดลักษณะ
+    .label = ค่าปรับแต่ง
 menu-application-services =
     .label = บริการ
 menu-application-hide-this =
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = ส
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = เปิดตำแหน่งที่ตั้ง…
 menu-file-open-file =
@@ -254,6 +254,15 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = ที่คั่นหน้าในมือถือ
 
+## Profiles Menu
+
+menu-profiles =
+    .label = โปรไฟล์
+menu-profiles-manage-profiles =
+    .label = จัดการโปรไฟล์
+menu-profiles-new-profile =
+    .label = โปรไฟล์ใหม่
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +271,9 @@ menu-tools =
 menu-tools-downloads =
     .label = การดาวน์โหลด
     .accesskey = ด
+menu-tools-extensions-and-themes =
+    .label = ส่วนขยายและชุดตกแต่ง
+    .accesskey = ส
 menu-tools-addons-and-themes =
     .label = ส่วนเสริมและชุดตกแต่ง
     .accesskey = ส

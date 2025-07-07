@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = 關於外掛程式
 installed-plugins-label = 已安裝的外掛程式
 no-plugins-are-installed-label = 找不到已安裝的外掛程式
 deprecation-description = 少了點東西嗎？已不再支援某些外掛程式。<a data-l10n-name="deprecation-link">了解更多。</a>
-deprecation-description2 =
-    .message = 少了點東西嗎？已不再支援某些外掛程式。
 
 ## The information of plugins
 ##

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Descartar
     .secondarybuttonaccesskey = c
 appmenu-update-restart-message2 = Obtén la versión más reciente de { -brand-shorter-name }. Las pestañas y ventanas abiertas serán restauradas.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Deshacer
+    .secondarybuttonaccesskey = U
 appmenu-update-other-instance =
     .label = { -brand-shorter-name } no puede actualizarse automáticamente a la última versión.
     .buttonlabel = Actualizar { -brand-shorter-name } de todas formas
@@ -37,7 +40,6 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Ahora no
     .secondarybuttonaccesskey = N
 appmenu-update-other-instance-message = Hay una nueva actualización de { -brand-shorter-name } disponible, pero no se puede instalar porque se está ejecutando otra copia de { -brand-shorter-name }. Ciérrala para continuar con la actualización o elige actualizar de todas formas (es posible que la otra copia no funcione correctamente hasta que la reinicies).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = Aceptar
     .buttonaccesskey = A
@@ -45,7 +47,6 @@ appmenu-addon-post-install-message3 = Administra tus complementos y temas a trav
 appmenu-addon-post-install-incognito-checkbox =
     .label = Permitir que esta extensión funcione en ventanas privadas
     .accesskey = P
-    
 appmenu-new-tab-controlled-changes =
     .label = Tu página de nueva pestaña ha cambiado.
     .buttonlabel = Mantener los cambios

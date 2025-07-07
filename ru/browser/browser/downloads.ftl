@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -182,6 +182,18 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Сведения о загрузке
+
+## These strings are displayed in the private browsing view of the downloads panel
+
+downloads-private-browsing-details =
+    .title = Файлы остаются на вашем устройстве
+downloads-private-browsing-message = Любой, кто использует это устройство, сможет видеть загрузки, даже если вы закроете все приватные окна.
+downloads-private-browsing-delete-button =
+    .label = Автоматически удалять файлы
+    .accesskey = В
+downloads-private-browsing-accept-button =
+    .label = Понятно
+    .accesskey = П
 
 ## Displayed when a site attempts to automatically download many files.
 ## Variables:

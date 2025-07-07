@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,11 +28,11 @@ third-party-tag-shellex = Estensione shell
 third-party-tag-background = Background
     .title = Questo modulo non ha bloccato l’applicazione in quanto è stato caricato in background.
 third-party-icon-unsigned =
-    .alt = Questo modulo non è firmato.
     .title = Questo modulo non è firmato.
+    .alt = Questo modulo non è firmato.
 third-party-icon-warning =
-    .alt = { -brand-short-name } si è arrestato in modo anomalo eseguendo codice in questo modulo
     .title = { -brand-short-name } si è arrestato in modo anomalo eseguendo codice in questo modulo
+    .alt = { -brand-short-name } si è arrestato in modo anomalo eseguendo codice in questo modulo
 third-party-status-loaded = Caricato
 third-party-status-blocked = Bloccato
 third-party-status-redirected = Reindirizzato

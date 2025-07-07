@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Отправлять сайтам сигнал «Не отслеживать», означающий, что вы не хотите, чтобы вас отслеживали
+do-not-track-removal = Мы больше не поддерживаем сигнал «Не отслеживать»
 do-not-track-description2 =
     .label = Отправлять веб-сайтам запрос «Не отслеживать»
     .accesskey = в
@@ -134,9 +135,10 @@ startup-restore-windows-and-tabs =
     .label = Открыть предыдущие окна и вкладки
     .accesskey = п
 windows-launch-on-login =
-    .label = Открывать { -brand-short-name } автоматически при загрузке компьютера.
+    .label = Открывать { -brand-short-name } автоматически при загрузке компьютера
     .accesskey = м
 windows-launch-on-login-disabled = Эта настройка отключена в Windows. Чтобы изменить это, откройте <a data-l10n-name="startup-link">Автозагрузка приложений</a> в настройках системы.
+windows-launch-on-login-profile-disabled = Включите эту настройку, установив флажок «{ profile-manager-use-selected.label }» в окне «Выбор профиля пользователя».
 startup-restore-warn-on-quit =
     .label = Предупреждать при выходе из браузера
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = Импорт закладок, паро
 preferences-data-migration-button =
     .label = Импорт данных
     .accesskey = м
+preferences-profiles-header = Профили
+preferences-manage-profiles-description = Каждый профиль имеет отдельные данные и настройки просмотра, включая историю просмотра, пароли и пр.
+preferences-manage-profiles-learn-more = Подробнее
+preferences-manage-profiles-button =
+    .label = Управление профилями
 tabs-group-header = Вкладки
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab переключает между вкладками в порядке недавнего использования
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Открывать ссылки во вкладках вместо новых окон
     .accesskey = ы
+ask-on-close-multiple-tabs =
+    .label = Спрашивать перед закрытием нескольких вкладок
+    .accesskey = ь
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Спрашивать перед выходом с помощью { $quitKey }
+    .accesskey = и
 confirm-on-close-multiple-tabs =
     .label = Подтвердить перед закрытием нескольких вкладок
     .accesskey = е
@@ -215,6 +233,16 @@ containers-remove-cancel-button = Не удалять этот контейне�
 settings-tabs-show-image-in-preview =
     .label = Отображать предпросмотр изображения при наведении на вкладку
     .accessKey = h
+browser-layout-header = Внешний вид браузера
+browser-layout-horizontal-tabs =
+    .label = Горизонтальные вкладки
+browser-layout-horizontal-tabs-desc = Отображать в верхней части браузера
+browser-layout-vertical-tabs =
+    .label = Вертикальные вкладки
+browser-layout-vertical-tabs-desc = Отображать сбоку, в боковой панели
+browser-layout-show-sidebar =
+    .label = Показать боковую панель
+browser-layout-show-sidebar-desc = Быстрый доступ к закладкам, вкладкам с телефона, ИИ-чат-ботам и многому другому, не покидая основного вида.
 
 ## General Section - Language & Appearance
 
@@ -238,6 +266,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Ваши настройки контрастности переопределяют внешний вид сайтов.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Выбранные вами цвета изменяют внешний вид сайтов. <a data-l10n-name="colors-link">Управлять цветами</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -246,6 +278,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Управляйте темами { -brand-short-name } в разделе <a data-l10n-name="themes-link">«Расширения и темы»</a>
+preferences-contrast-control-header = Управление контрастом
+preferences-contrast-control-description = Веб-сайты имеют различные цвета переднего плана и фона. Настройте { -brand-short-name } на использование одинаковых цветов на всех веб-сайтах для улучшения читабельности.
+preferences-contrast-control-use-platform-settings =
+    .label = Автоматически (использовать системные настройки)
+    .accesskey = Ф
+preferences-contrast-control-off =
+    .label = Выкл.
+    .accesskey = Щ
+preferences-contrast-control-custom =
+    .label = Персональная
+    .accesskey = Ц
 preferences-colors-header = Цвета
 preferences-colors-description = Переопределяйте цвета { -brand-short-name } по умолчанию для текста, фона сайтов и ссылок.
 preferences-colors-manage-button =
@@ -321,6 +364,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Всегда выдавать запрос на сохранение файлов
     .accesskey = е
+download-private-browsing-delete =
+    .label = Удалять файлы, загруженные в приватном режиме, когда все приватные окна закрыты
+    .accesskey = В
 applications-header = Приложения
 applications-description = Выберите, как { -brand-short-name } будет обрабатывать файлы, загружаемые из Интернета, или приложения, используемые при работе в Интернете.
 applications-filter =
@@ -411,7 +457,7 @@ play-drm-content-learn-more = Подробнее
 update-application-title = Обновления { -brand-short-name }
 update-application-description = Используйте последнюю версию { -brand-short-name } для наилучшей производительности, стабильности и безопасности.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Версия { $version } <a data-l10n-name="learn-more">Что нового</a>
 update-history =
     .label = Показать журнал обновлений…
@@ -475,6 +521,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Просмотр сети
+browsing-group-label =
+    .aria-label = Просмотр сайтов
 browsing-use-autoscroll =
     .label = Использовать автоматическую прокрутку
     .accesskey = а
@@ -559,7 +607,7 @@ choose-bookmark =
     .label = Использовать закладку…
     .accesskey = в
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = Содержимое { -firefox-home-brand-name(case: "genitive") }
 home-prefs-content-description2 = Выберите, какое содержимое вы хотите видеть на экране { -firefox-home-brand-name(case: "genitive") }.
@@ -571,8 +619,7 @@ home-prefs-shortcuts-description = Сохранённые или посещае�
 home-prefs-shortcuts-by-option-sponsored =
     .label = Спонсируемые ярлыки
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
@@ -610,6 +657,14 @@ home-prefs-weather-header =
     .label = Погода
 home-prefs-weather-description = Краткий прогноз на сегодня
 home-prefs-weather-learn-more-link = Подробнее
+home-prefs-trending-search-header =
+    .label = Популярные поисковые запросы
+home-prefs-trending-search-description = Популярные и часто запрашиваемые темы
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Поддержите { -brand-product-name }
+home-prefs-mission-message = Наши спонсоры поддерживают нашу миссию по построению лучшего Интернета
+home-prefs-mission-message-learn-more-link = Узнать как
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -645,6 +700,10 @@ search-show-suggestions-url-bar-option =
     .label = Отображать поисковые предложения при использовании адресной строки
     .accesskey = ж
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Показывать поисковые запросы в адресной строке на страницах с результатами
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -675,6 +734,9 @@ search-remove-engine =
 search-add-engine =
     .label = Добавить
     .accesskey = в
+search-edit-engine =
+    .label = Изменить
+    .accesskey = У
 search-find-more-link = Найти другие поисковые системы
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -683,6 +745,13 @@ search-keyword-warning-title = Ключевое слово уже использ
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Выбранное ключевое слово уже используется «{ $name }». Пожалуйста, выберите другое.
 search-keyword-warning-bookmark = Выбранное ключевое слово уже используется одной из закладок. Пожалуйста, выберите другое.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Поисковая система с именем «{ $name }» уже существует. Пожалуйста, выберите другое имя.
+remove-engine-confirmation = Вы уверены, что хотите удалить эту поисковую систему?
+remove-engine-remove = Удалить
+remove-addon-engine-alert = Чтобы удалить эту поисковую систему, удалите связанное с ней дополнение.
 
 ## Containers Section
 
@@ -700,7 +769,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Удалить
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Возьмите свой Интернет с собой
@@ -718,7 +787,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Загрузите Waterfox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> или <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS,</a> чтобы синхронизироваться со своим мобильным устройством.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Изменить фотографию в профиле
@@ -736,7 +805,7 @@ sync-manage-account = Управление аккаунтом
     .accesskey = в
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } не подтверждён.
 sync-signedin-login-failure = Войдите для повтора соединения с { $email }
@@ -787,6 +856,9 @@ sync-currently-syncing-creditcards = Банковские карты
 sync-currently-syncing-payment-methods = Способы оплаты
 sync-currently-syncing-addons = Дополнения
 sync-currently-syncing-settings = Настройки
+sync-manage-options =
+    .label = Управление синхронизацией…
+    .accesskey = Ь
 sync-change-options =
     .label = Изменить…
     .accesskey = м
@@ -839,6 +911,13 @@ sync-engine-settings =
     .label = Настройки
     .tooltiptext = Изменённые вами общие настройки, настройки приватности и безопасности
     .accesskey = а
+sync-choose-what-to-sync-dialog4 =
+    .title = Управляйте синхронизируемыми данными на всех подключённых устройствах
+    .style = min-width: 36em;
+    .buttonlabelaccept = Сохранить
+    .buttonaccesskeyaccept = Ы
+    .buttonlabelextra2 = Отключить…
+    .buttonaccesskeyextra2 = В
 
 ## The device name controls.
 
@@ -859,7 +938,7 @@ sync-connect-another-device = Подключить другое устройст
 
 sync-verification-sent-title = Подтверждение отправлено
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = Ссылка для подтверждения была отправлена на { $email }.
 sync-verification-not-sent-title = Не удалось отправить подтверждение
 sync-verification-not-sent-body = Мы не можем отправить сейчас письмо для подтверждения, пожалуйста, повторите попытку позже.
@@ -954,12 +1033,12 @@ windows-passkey-settings-label = Управление ключами досту�
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Чтобы создать основной пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = создать основной пароль
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] изменить настройки способов оплаты
@@ -990,12 +1069,12 @@ history-header = История
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }
     .accesskey = i
 history-remember-option-all =
@@ -1090,6 +1169,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Адресная строка
 addressbar-suggest = При использовании адресной строки предлагать ссылки
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Адресная строка — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Выберите тип предложений, которые отображаются в адресной строке.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Подробнее
 addressbar-locbar-history-option =
     .label = из журнала посещений
     .accesskey = ж
@@ -1122,7 +1208,18 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = Отображать популярные поисковые предложения
     .accesskey = е
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Предложения от { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Получать предложения из сети на основе вашего поиска.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Предложения от спонсоров
+addressbar-locbar-suggest-sponsored-desc = Поддержите { -brand-short-name } периодическими предложениями от спонсоров.
 addressbar-quickactions-learn-more = Подробнее
+addressbar-dismissed-suggestions-label = Скрытые предложения
+addressbar-restore-dismissed-suggestions-description = Восстановить отклонённые предложения от спонсоров и { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Восстановить
 
 ## Privacy Section - Content Blocking
 
@@ -1285,17 +1382,42 @@ permissions-addon-exceptions =
 collection-header = Сбор и использование данных { -brand-short-name }
 collection-header2 = Сбор и использование данных { -brand-short-name }
     .searchkeywords = телеметрия
+preferences-collection-description = Мы стремимся предоставить вам возможность выбора и собираем только минимальные данные, необходимые для улучшения { -brand-product-name } для всех и каждого.
+preferences-collection-privacy-notice = Просмотреть Уведомление о конфиденциальности
+preferences-across-profiles = Эти настройки применяются ко всем профилям { -brand-product-name } на этом устройстве.
+preferences-view-profiles = Просмотреть все профили
 collection-description = Мы стремимся предоставить вам выбор и собирать только то, что нам нужно, для выпуска и улучшения { -brand-short-name } для всех и каждого. Мы всегда спрашиваем разрешения перед получением личных сведений.
 collection-privacy-notice = Уведомление о конфиденциальности
 collection-health-report-telemetry-disabled = Вы больше не разрешаете { -vendor-short-name } собирать технические данные и данные взаимодействия. Все собранные ранее данные будут удалены в течение 30 дней.
 collection-health-report-telemetry-disabled-link = Подробнее
+collection-usage-ping =
+    .label = Отправлять ежедневный пинг использования в { -vendor-short-name }
+    .accesskey = г
+collection-usage-ping-description = Это помогает { -vendor-short-name } оценить активных пользователей.
+collection-health-report2 =
+    .label = Отправлять технические данные и данные взаимодействия в { -vendor-short-name }
+    .accesskey = к
 collection-health-report =
     .label = Разрешить { -brand-short-name } отправлять технические данные и данные взаимодействия в { -vendor-short-name }
     .accesskey = е
 collection-health-report-link = Подробнее
+collection-health-report-description = Это поможет нам улучшить возможности, производительность и стабильность { -brand-product-name }.
+collection-studies2 =
+    .label = Установка и запуск исследований
+collection-studies-description = Опробуйте функции и идеи перед тем, как они станут доступны для всех и каждого.
 collection-studies =
     .label = Разрешить { -brand-short-name } устанавливать и проводить исследования
 collection-studies-link = Просмотреть исследования { -brand-short-name }
+addon-recommendations2 =
+    .label = Разрешить персонализированные рекомендации расширений
+addon-recommendations-description = Получать рекомендации расширений, чтобы улучшить свою работу в Интернете.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Для этой конфигурации сборки отправка данных отключена.
+collection-backlogged-crash-reports2 =
+    .label = Автоматически отправлять сообщения о падениях
+    .accesskey = с
+collection-backlogged-crash-reports-description = Это помогает { -vendor-short-name } диагностировать и устранять проблемы с браузером. Отчёты могут содержать личные или важные данные.
 addon-recommendations =
     .label = Разрешить { -brand-short-name } давать персональные рекомендации расширений
 addon-recommendations-link = Подробнее
@@ -1363,12 +1485,17 @@ space-alert-under-5gb-message2 = <strong>У { -brand-short-name } заканчи
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Режим «Только HTTPS»
+httpsonly-description3 = Разрешает только защищённые соединения с веб-сайтами. { -brand-short-name } будет спрашивать перед незащищённым соединением.
+httpsonly-learn-more2 = Как работает «Только HTTPS»
 httpsonly-description = HTTPS обеспечивает безопасное и зашифрованное соединение между { -brand-short-name } и сайтами, которые вы посещаете. Большинство сайтов поддерживают HTTPS, и если включён режим «Только HTTPS», то { -brand-short-name } переключит все соединения на HTTPS.
 httpsonly-learn-more = Подробнее
 httpsonly-radio-enabled =
     .label = Включить режим «Только HTTPS» во всех окнах
 httpsonly-radio-enabled-pbm =
     .label = Включить режим «Только HTTPS» только в приватных окнах
+httpsonly-radio-disabled3 =
+    .label = Не включать режим «Только HTTPS»
+    .description = { -brand-short-name } сможет всё ещё переключать некоторые соединения
 httpsonly-radio-disabled =
     .label = Не включать режим «Только HTTPS»
 

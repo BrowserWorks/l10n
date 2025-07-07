@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # This is temporary until bug 1521632 is fixed
@@ -16,3 +16,8 @@ elevation-finished-background-page =
     und ist bereit zur Installation.
 elevation-finished-background = Update:
 elevation-more-elevated = Dieses Update benötigt Administrator-Berechtigungen. Es wird beim nächsten Neustart von { -brand-short-name } installiert. Sie können { -brand-short-name } jetzt neu starten oder weiterarbeiten und später neu starten oder dieses Update ablehnen.
+sandbox-missing-unprivileged-namespaces = Einige der Sicherheitsfunktionen von { -brand-short-name } bieten auf Ihrem aktuellen Betriebssystem möglicherweise weniger Schutz.
+sandbox-unprivileged-namespaces-dismiss-button =
+    .label = Nicht erneut anzeigen
+    .accesskey = N
+sandbox-unprivileged-namespaces-howtofix = Wie Sie dieses Problem beheben

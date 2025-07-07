@@ -1,8 +1,8 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-protections-panel-sendreportview-error = Προέκυψε σφάλμα κατά την αποστολή της αναφοράς. Παρακαλούμε δοκιμάστε ξανά αργότερα.
+protections-panel-sendreportview-error = Προέκυψε σφάλμα κατά την αποστολή της αναφοράς. Δοκιμάστε ξανά αργότερα.
 # A link shown when ETP is disabled for a site. Opens the breakage report subview when clicked.
 protections-panel-sitefixedsendreport-label = Διορθώθηκε ο ιστότοπος; Αποστολή αναφοράς
 
@@ -23,6 +23,11 @@ protections-panel-etp-more-info =
     .aria-label = Περισσότερες πληροφορίες σχετικά με την Ενισχυμένη προστασία από καταγραφή
 protections-panel-etp-on-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΕΝΕΡΓΗ σε αυτόν τον ιστότοπο
 protections-panel-etp-off-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΑΝΕΝΕΡΓΗ σε αυτόν τον ιστότοπο
+# The link to be clicked to open the sub-panel view
+protections-panel-site-not-working = Δεν λειτουργεί ο ιστότοπος;
+# The heading/title of the sub-panel view
+protections-panel-site-not-working-view =
+    .title = Δεν λειτουργεί ο ιστότοπος;
 
 ## Text for the toggles shown when ETP is enabled/disabled for a given site.
 ## .description is transferred into a separate paragraph by the moz-toggle
@@ -37,20 +42,15 @@ protections-panel-etp-toggle-off =
     .label = Ενισχυμένη προστασία από καταγραφή
     .description = Ανενεργή για αυτόν τον ιστότοπο
     .aria-label = Ενισχυμένη προστασία από καταγραφή: Ανενεργή για το { $host }
-# The link to be clicked to open the sub-panel view
-protections-panel-site-not-working = Δεν λειτουργεί ο ιστότοπος;
-# The heading/title of the sub-panel view
-protections-panel-site-not-working-view =
-    .title = Δεν λειτουργεί ο ιστότοπος;
 
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
 
 protections-panel-not-blocking-why-label = Γιατί;
-protections-panel-not-blocking-why-etp-on-tooltip = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, μερικά κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
+protections-panel-not-blocking-why-etp-on-tooltip = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
 protections-panel-not-blocking-why-etp-off-tooltip = Έχουν φορτωθεί όλοι οι ιχνηλάτες του ιστοτόπου επειδή η προστασία είναι ανενεργή.
 protections-panel-not-blocking-why-etp-on-tooltip-label =
-    .label = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, μερικά κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
+    .label = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
 protections-panel-not-blocking-why-etp-off-tooltip-label =
     .label = Έχουν φορτωθεί όλοι οι ιχνηλάτες του ιστοτόπου επειδή η προστασία είναι ανενεργή.
 
@@ -71,6 +71,21 @@ protections-panel-content-blocking-fingerprinters-label = Fingerprinter
 protections-panel-blocking-label = Αποκλείονται
 protections-panel-not-blocking-label = Επιτρέπονται
 protections-panel-not-found-label = Δεν εντοπίστηκαν
+
+## Smartblock strings
+
+protections-panel-smartblock-desc-label =
+    Το { -brand-short-name } αποκλείει το περιεχόμενο καταγραφής όσο βρίσκεστε σε αυτόν τον ιστότοπο, εκτός κι 
+     αν το επιτρέψετε.
+# Variables
+#  $trackername (String): the name of the tracker that is currently being blocked.
+protections-panel-smartblock-blocking-toggle =
+    .label = Να επιτρέπεται το { $trackername }
+#  $trackername (String): the name of the tracker that is currently being blocked.
+smartblock-placeholder-title = Αποκλείστηκαν ιχνηλάτες { $trackername } και περιεχόμενο
+smartblock-placeholder-desc = Οι ρυθμίσεις του { -brand-short-name } απέτρεψαν την καταγραφή σας από αυτό το περιεχόμενο στους ιστοτόπους ή τη χρήση του για διαφημίσεις.
+#  $websitehost (String): host of website with blocked content.
+smartblock-placeholder-button-text = Να επιτρέπεται στο { $websitehost }
 
 ##
 
@@ -94,9 +109,9 @@ protections-panel-site-not-working-view-send-report = Αποστολή αναφ�
 ##
 
 protections-panel-cross-site-tracking-cookies = Αυτά τα cookie σάς ακολουθούν από ιστότοπο σε ιστότοπο για να συλλέξουν δεδομένα σχετικά με τη δραστηριότητά σας στο διαδίκτυο. Δημιουργούνται από τρίτους, όπως εταιρείες διαφημίσεων και ανάλυσης.
-protections-panel-cryptominers = Τα cryptominers χρησιμοποιούν την υπολογιστική ισχύ του συστήματός σας για να εξορύξουν κρυπτονομίσματα. Τα σενάρια εξόρυξης κρυπτονομισμάτων εξαντλούν την μπαταρία σας, επιβραδύνουν τον υπολογιστή σας, ενώ ενδέχεται να δείτε αυξημένες χρεώσεις στο λογαριασμό τους ρεύματος.
+protections-panel-cryptominers = Τα cryptominer χρησιμοποιούν την υπολογιστική ισχύ του συστήματός σας για να κάνουν εξόρυξη κρυπτονομισμάτων. Τα σενάρια εξόρυξης κρυπτονομισμάτων καταναλώνουν μπαταρία, επιβραδύνουν τον υπολογιστή σας, ενώ ενδέχεται να δείτε αυξημένες χρεώσεις στον λογαριασμό ρεύματός σας.
 protections-panel-fingerprinters = Τα fingerprinter συλλέγουν ρυθμίσεις από το πρόγραμμα περιήγησης και τον υπολογιστή σας για να δημιουργήσουν ένα προφίλ για εσάς. Με τη χρήση αυτού του ψηφιακού αποτυπώματος, μπορούν να σας παρακολουθούν σε διάφορους ιστοτόπους.
-protections-panel-tracking-content = Οι ιστότοποι ενδέχεται να φορτώνουν εξωτερικές διαφημίσεις, βίντεο και άλλο περιεχόμενο με κώδικα καταγραφής. Η φραγή περιεχομένου καταγραφής μπορεί να συμβάλλει στην ταχύτερη φόρτωση των ιστοτόπων, αλλά ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
+protections-panel-tracking-content = Οι ιστότοποι ενδέχεται να φορτώνουν εξωτερικές διαφημίσεις, βίντεο και άλλο περιεχόμενο με κώδικα καταγραφής. Η φραγή περιεχομένου καταγραφής μπορεί να συμβάλλει στην ταχύτερη φόρτωση των ιστοτόπων, αλλά ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
 protections-panel-social-media-trackers = Τα κοινωνικά δίκτυα τοποθετούν ιχνηλάτες σε άλλους ιστοτόπους για να καταγράφουν ό,τι κάνετε και βλέπετε στο διαδίκτυο. Αυτό επιτρέπει στις εταιρείες κοινωνικών δικτύων να μάθουν περισσότερα για εσάς πέρα από αυτά που κοινοποιείτε στα προφίλ σας.
 protections-panel-description-shim-allowed = Οι παρακάτω ιχνηλάτες της σελίδας επιτρέπονται μερικώς λόγω της αλληλεπίδρασής σας μαζί τους.
 protections-panel-description-shim-allowed-learn-more = Μάθετε περισσότερα
@@ -108,7 +123,6 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Αναφορά προβληματικού ιστοτόπου
 protections-panel-content-blocking-breakage-report-view-description = Ο αποκλεισμός ορισμένων ιχνηλατών μπορεί να προκαλέσει προβλήματα σε κάποιους ιστοτόπους. Όταν αναφέρετε τέτοια προβλήματα, συμβάλλετε στη βελτίωση του { -brand-short-name } για όλους. Με την αποστολή της αναφοράς, θα αποσταλεί ένα URL, καθώς και πληροφορίες για τις ρυθμίσεις του προγράμματος περιήγησής σας στη BrowserWorks. <label data-l10n-name="learn-more">Μάθετε περισσότερα</label>
-protections-panel-content-blocking-breakage-report-view-description2 = Ο αποκλεισμός ορισμένων ιχνηλατών μπορεί να προκαλέσει προβλήματα σε κάποιους ιστοτόπους. Όταν αναφέρετε τέτοια προβλήματα, συμβάλλετε στη βελτίωση του { -brand-short-name } για όλους. Με την αποστολή της αναφοράς, θα αποσταλεί ένα URL, καθώς και πληροφορίες για τις ρυθμίσεις του προγράμματος περιήγησής σας στη { -vendor-short-name }.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL

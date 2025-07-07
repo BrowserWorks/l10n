@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -7,7 +7,7 @@ certificate-viewer-certificate-section-title = 证书
 ## Error messages
 
 certificate-viewer-error-message = 找不到证书信息，或该证书已损坏。请再试一次。
-certificate-viewer-error-title = 出问题了。
+certificate-viewer-error-title = 出了点问题。
 
 ## Certificate information labels
 

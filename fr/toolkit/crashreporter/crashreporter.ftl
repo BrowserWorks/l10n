@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } a rencontré un probl�
 crashreporter-plea = Pour nous aider à diagnostiquer et corriger ce problème, vous pouvez nous envoyer un rapport de plantage.
 crashreporter-information = Cette application est exécutée après un plantage pour rapporter le problème survenu à { -vendor-short-name }. Elle ne doit pas être lancée directement.
 crashreporter-error = { -brand-short-name } a rencontré un problème et a planté. Malheureusement, le rapporteur de plantage n’est pas en mesure de transmettre un rapport pour ce plantage.
+crashreporter-error-details-header = Détails :
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = Détails : { $details }
 crashreporter-no-run-message = Cette application est exécutée après un plantage pour rapporter le problème survenu à l’éditeur de l’application. Elle ne doit pas être lancée directement.
@@ -16,9 +17,13 @@ crashreporter-loading-details = Chargement…
 crashreporter-view-report-title = Contenu du rapport
 crashreporter-comment-prompt = Ajouter un commentaire (les commentaires sont visibles par tout le monde)
 crashreporter-report-info = Ce rapport contient également des informations techniques sur l’état de l’application lors du plantage.
+crashreporter-checkbox-test-hardware = Rechercher des problèmes liés au matériel et à la configuration de mon appareil.
+crashreporter-checkbox-send-report = Informer { -vendor-short-name } de ce problème pour qu’il puisse être corrigé
+crashreporter-checkbox-include-url = Inclure l’adresse de la page où vous vous trouviez.
 crashreporter-send-report = Informer { -vendor-short-name } de ce problème pour qu’il puisse être corrigé
 crashreporter-include-url = Inclure l’adresse de la page où vous vous trouviez.
 crashreporter-submit-status = Votre rapport de plantage sera envoyé avant la fermeture ou le redémarrage du programme.
+crashreporter-submit-waiting-hardware-tests = Recherche de problèmes liés au matériel et à la configuration…
 crashreporter-submit-in-progress = Envoi du rapport…
 crashreporter-submit-success = Le rapport a été envoyé avec succès !
 crashreporter-submit-failure = Il y a eu un problème lors de l’envoi du rapport.
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = Répertoire home manquant
 # $to (String) - the destination path
 crashreporter-error-moving-path = Impossible de déplacer { $from } vers { $to }
 crashreporter-error-version-eol = Fin de vie de cette version : les rapports de plantage ne sont plus acceptés.
+crashreporter-error-failed-to-generate-minidump = L’application n’a pas réussi à générer les informations de plantage.

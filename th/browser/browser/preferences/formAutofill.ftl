@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,8 +39,6 @@ address-capture-manage-address-button =
     .label = การตั้งค่าที่อยู่
 address-capture-learn-more-button =
     .label = เรียนรู้เพิ่มเติม
-# The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = เพิ่มที่อยู่ใหม่
 address-capture-open-menu-button =
     .aria-label = เปิดเมนู
 address-capture-edit-address-button =
@@ -49,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = เพิ่มที่อยู่
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = แก้ไขที่อยู่
-autofill-address-name = ชื่อ
 autofill-address-given-name = ชื่อจริง
 autofill-address-additional-name = ชื่อกลาง
 autofill-address-family-name = นามสกุล
+autofill-address-name = ชื่อ
 autofill-address-organization = องค์กร
 autofill-address-street-address = ที่อยู่ถนน
 autofill-address-street = ที่อยู่
@@ -108,9 +106,8 @@ autofill-address-eircode = เอียร์โค้ด
 
 ##
 
-
-##
-
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = เพิ่มที่อยู่ใหม่
 autofill-address-country = ประเทศหรือภูมิภาค
 autofill-address-country-only = ประเทศ
 autofill-address-tel = โทรศัพท์
@@ -122,7 +119,7 @@ autofill-country-warning-message = ขณะนี้การกรอกแบ
 autofill-add-new-card-title = เพิ่มบัตรเครดิตใหม่
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = แก้ไขบัตรเครดิต
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

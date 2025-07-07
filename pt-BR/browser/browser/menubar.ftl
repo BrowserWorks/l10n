@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = p
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Abrir endereço…
 menu-file-open-file =
@@ -192,11 +192,11 @@ menu-view-full-screen =
 
 # This should match reader-view-enter-button in browser.ftl
 menu-view-enter-readerview =
-    .label = Ativar leitor
+    .label = Ativar modo de leitura
     .accesskey = l
 # This should match reader-view-close-button in browser.ftl
 menu-view-close-readerview =
-    .label = Desativar leitor
+    .label = Desativar modo de leitura
     .accesskey = l
 
 ##
@@ -254,6 +254,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Favoritos do celular
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Perfis
+menu-profiles-manage-profiles =
+    .label = Gerenciar perfis
+menu-profiles-new-profile =
+    .label = Novo perfil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (atual)
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Downloads
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Extensões e temas
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Extensões e temas
     .accesskey = E

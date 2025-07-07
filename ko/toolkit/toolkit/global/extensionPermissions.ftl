@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,4 +30,46 @@ webext-perms-description-sessions = 최근에 닫힌 탭에 접근
 webext-perms-description-tabs = 브라우저 탭에 접근
 webext-perms-description-tabHide = 브라우저 탭 숨기기 및 표시
 webext-perms-description-topSites = 방문 기록에 접근
+webext-perms-description-trialML = 기기에 AI 모델을 다운로드 및 실행
+webext-perms-description-userScripts = 검증되지 않은 제3자 스크립트가 데이터에 접근하도록 허용
 webext-perms-description-webNavigation = 탐색 중 브라우저 활동에 접근
+
+## The userScripts permission includes an additional explanation that is
+## displayed prominently near the usual permission description.
+
+webext-perms-extra-warning-userScripts-long = 확인되지 않은 스크립트는 유해한 코드를 실행하거나 웹 사이트 활동을 추적하는 등의 보안 및 개인 정보 위험을 야기할 수 있습니다. 신뢰할 수 있는 확장 기능이나 출처의 스크립트만 실행하세요.
+# A shorter warning is displayed in UI surfaces with little room, such as a permission prompt.
+webext-perms-extra-warning-userScripts-short = 확인되지 않은 스크립트는 보안 및 개인 정보 보호에 위험이 될 수 있습니다. 신뢰할 수 있는 확장 기능이나 출처의 스크립트만 실행하세요.
+
+## Short form to be used in lists or in a string (`webext-perms-description-data-some`)
+## that formats some of the data collection permissions below using `Intl.ListFormat`.
+##
+## This is used when the data collection permissions are required.
+
+webext-perms-description-data-short-authenticationInfo = 인증 정보
+webext-perms-description-data-short-bookmarksInfo = 북마크
+webext-perms-description-data-short-browsingActivity = 탐색 활동
+webext-perms-description-data-short-financialAndPaymentInfo = 금융 및 결제 정보
+webext-perms-description-data-short-healthInfo = 건강 정보
+webext-perms-description-data-short-locationInfo = 위치
+webext-perms-description-data-short-personalCommunications = 개인 커뮤니케이션
+webext-perms-description-data-short-personallyIdentifyingInfo = 개인 식별 정보
+webext-perms-description-data-short-searchTerms = 검색어
+webext-perms-description-data-short-technicalAndInteraction = 기술 및 상호 작용 데이터
+webext-perms-description-data-short-websiteActivity = 웹 사이트 활동
+webext-perms-description-data-short-websiteContent = 웹 사이트 콘텐츠
+
+## Long form to be used in `about:addons` when these data collection permissions are optional.
+
+webext-perms-description-data-long-authenticationInfo = 확장 기능 개발자와 인증 정보 공유
+webext-perms-description-data-long-bookmarksInfo = 확장 기능 개발자와 북마크 정보 공유
+webext-perms-description-data-long-browsingActivity = 확장 기능 개발자와 탐색 활동 공유
+webext-perms-description-data-long-financialAndPaymentInfo = 확장 기능 개발자와 금융 및 결제 정보 공유
+webext-perms-description-data-long-healthInfo = 확장 기능 개발자와 건강 정보 공유
+webext-perms-description-data-long-locationInfo = 확장 기능 개발자와 위치 정보 공유
+webext-perms-description-data-long-personalCommunications = 확장 기능 개발자와 개인 커뮤니케이션 공유
+webext-perms-description-data-long-personallyIdentifyingInfo = 확장 기능 개발자와 개인 식별 정보 공유
+webext-perms-description-data-long-searchTerms = 확장 기능 개발자와 검색어 공유
+webext-perms-description-data-long-technicalAndInteraction = 확장 기능 개발자와 기술 및 상호 작용 데이터 공유
+webext-perms-description-data-long-websiteActivity = 확장 기능 개발자와 웹 사이트 활동 공유
+webext-perms-description-data-long-websiteContent = 확장 기능 개발자와 웹 사이트 콘텐츠 공유

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,33 +31,42 @@
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
+-solo-ai-brand-name = Solo
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
-# The particle "by" can be localized, "Fakespot" and "BrowserWorks" should not be localized or transliterated.
+# The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
 -fakespot-brand-full-name = Fakespot από τη BrowserWorks
-# “Suggest” can be localized, “Waterfox” must be treated as a brand
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Προτάσεις Waterfox
-# ”Home" can be localized, “Waterfox” must be treated as a brand
+-firefox-suggest-brand-name =
+    { $case ->
+        [gen] Προτάσεων Waterfox
+       *[nom] Προτάσεις Waterfox
+    }
+# ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name =
     { $case ->
-       *[nom]
-            { $capitalization ->
-               *[upper] Αρχική Waterfox
-                [lower] αρχική Waterfox
-            }
         [gen]
             { $capitalization ->
-               *[upper] Αρχικής Waterfox
                 [lower] αρχικής Waterfox
+               *[upper] Αρχικής Waterfox
+            }
+       *[nom]
+            { $capitalization ->
+                [lower] αρχική Waterfox
+               *[upper] Αρχική Waterfox
             }
     }
-# View" can be localized, “Waterfox” must be treated as a brand
+# View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxview-brand-name = Προβολή Waterfox
-# Waterfox Labs is the name for a page in Settings to allow users to learn about
+-firefoxview-brand-name =
+    { $case ->
+        [gen] Προβολής Waterfox
+       *[nom] Προβολή Waterfox
+    }
+# Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
-# The "Labs" portion can be localized, “Waterfox” must be treated as a brand
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs

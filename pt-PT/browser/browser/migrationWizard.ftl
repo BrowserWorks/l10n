@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = Lista de leitura (Do Safari)
 migration-imported-edge-reading-list = Lista de leitura (do Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = O { -brand-short-name } não tem acesso aos perfis de outros navegadores instalados neste dispositivo.
@@ -196,6 +196,14 @@ migration-safari-password-import-step1 = No Safari, abra o menu “Safari” e a
 migration-safari-password-import-step2 = Selecione o botão <img data-l10n-name="safari-icon-3dots"/> e escolha “Exportar todas as palavras-passe”
 migration-safari-password-import-step3 = Guardar ficheiro de palavras-passe
 migration-safari-password-import-step4 = Utilize “Selecionar ficheiro” abaixo para escolher o ficheiro de palavras-passe que guardou
+migration-chrome-windows-password-import-header = Como importar palavras-passe do Chrome
+migration-chrome-windows-password-import-steps-header = No Chrome:
+migration-chrome-windows-password-import-step1 = Abra o menu principal <img data-l10n-name="chrome-icon-3dots"/> e aceda a Palavras-passe e preenchimento automático > Gestor de palavras-passe da Google.
+migration-chrome-windows-password-import-step2 = Selecione “Definições” no menu.
+migration-chrome-windows-password-import-step3 = Escolha “Transferir ficheiro” e guarde-o no seu dispositivo.
+migration-chrome-windows-password-import-step4 = Retorne aqui e “Selecione ficheiro” para concluir a importação.
+migration-manual-password-import-skip-button = Ignorar
+migration-manual-password-import-select-button = Selecionar ficheiro
 migration-safari-password-import-skip-button = Ignorar
 migration-safari-password-import-select-button = Selecionar ficheiro
 # Shown in the migration wizard after importing bookmarks from another
@@ -223,7 +231,7 @@ migration-wizard-progress-success-favorites =
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

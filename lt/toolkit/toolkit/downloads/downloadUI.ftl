@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,21 +22,18 @@ download-ui-dont-quit-button =
         [mac] Tęsti darbą
        *[other] Tęsti darbą
     }
-
 download-ui-confirm-offline-cancel-downloads =
     { $downloadsCount ->
         [1] Jei atsijungsite nuo tinklo dabar, tai tuo pačiu atsisakysite vieno failo atsiuntimo. Ar tikrai atsijungti nuo tinklo?
        *[other] Jei atsijungsite nuo tinklo dabar, tai tuo pačiu atsisakysite { $downloadsCount } failų atsiuntimo. Ar tikrai atsijungti nuo tinklo?
     }
 download-ui-dont-go-offline-button = Neatsijungti nuo tinklo
-
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
         [1] Jei dabar užversite visus privačiojo naršymo langus, bus nutrauktas vienas siuntimas. Ar tikrai norite nutraukti privačiojo naršymo seansą?
        *[other] Jei dabar užversite visus privačiojo naršymo langus, bus nutraukti (-a) { $downloadsCount } siuntimai (-ų). Ar tikrai norite nutraukti privačiojo naršymo seansą?
     }
 download-ui-dont-leave-private-browsing-button = Tęsti privatųjį naršymą
-
 download-ui-cancel-downloads-ok =
     { $downloadsCount ->
         [1] Atsisakyti 1 atsiuntimo

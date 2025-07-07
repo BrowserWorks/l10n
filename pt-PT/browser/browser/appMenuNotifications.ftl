@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -30,6 +30,9 @@ appmenu-update-restart2 =
     .secondarybuttonlabel = Dispensar
     .secondarybuttonaccesskey = D
 appmenu-update-restart-message2 = Obtenha a versão mais recente do { -brand-shorter-name }. Os separadores e janelas abertas serão restaurados.
+appmenu-theme-installed =
+    .secondarybuttonlabel = Anular
+    .secondarybuttonaccesskey = u
 appmenu-update-other-instance =
     .label = O { -brand-shorter-name } não consegue atualizar automaticamente para a nova versão.
     .buttonlabel = Atualizar o { -brand-shorter-name } mesmo assim
@@ -37,15 +40,19 @@ appmenu-update-other-instance =
     .secondarybuttonlabel = Agora não
     .secondarybuttonaccesskey = n
 appmenu-update-other-instance-message = Está disponível uma nova atualização para o { -brand-shorter-name }, mas a mesma não pode ser instalada porque está em execução uma outra cópia do { -brand-shorter-name }. Encerre a mesma para continuar a atualização ou opte por atualizar mesmo assim (a outra cópia pode não funcionar corretamente até que a reinicie).
-
 appmenu-addon-private-browsing-installed2 =
     .buttonlabel = OK
     .buttonaccesskey = O
-appmenu-addon-post-install-message3 = Faça a gestão das suas extensões e temas através do menu da aplicação.
+appmenu-addon-post-install-message3 = Controle as suas extensões e temas através do menu da aplicação.
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = Atualize as permissões e preferências de dados a qualquer momento nas <a data-l10n-name="settings-link">definições da extensão</a>.
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Fixar extensão à barra de ferramentas
+    .accesskey = x
 appmenu-addon-post-install-incognito-checkbox =
     .label = Permitir que esta extensão seja executada em janelas privadas
     .accesskey = a
-    
 appmenu-new-tab-controlled-changes =
     .label = A página novo separador foi alterada.
     .buttonlabel = Manter alterações

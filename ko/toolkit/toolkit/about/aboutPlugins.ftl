@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = 플러그인에 대하여
 installed-plugins-label = 설치한 플러그인
 no-plugins-are-installed-label = 설치한 플러그인 없음
 deprecation-description = 빠진게 있습니까? 일부 플러그인은 더 이상 지원되지 않습니다. <a data-l10n-name="deprecation-link">더 알아보기.</a>
-deprecation-description2 =
-    .message = 빠진게 있습니까? 일부 플러그인은 더 이상 지원되지 않습니다.
 
 ## The information of plugins
 ##

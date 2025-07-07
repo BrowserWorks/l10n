@@ -1,11 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ##
 ## Localization for remote types defined in RemoteType.h
-##
 
 process-type-web = Webinhoud
 # process used to run privileged about pages,
@@ -30,7 +29,6 @@ process-type-prealloc = Vooraf toegewezen
 
 ##
 ## Localization for Gecko process types defined in GeckoProcessTypes.h
-##
 
 process-type-default = Hoofd
 process-type-tab = Tabblad
@@ -41,6 +39,8 @@ process-type-gpu = GPU
 process-type-socket = Socket
 # process used to decode media
 process-type-rdd = RDD
+# process used to run inference
+process-type-inference = Conclusie
 # process used to run some IPC actor in their own sandbox
 process-type-utility = Gesandboxte IPC Actor
 process-type-utility-actor-audio-decoder-generic = Hulpprogramma Generieke audiodecoder
@@ -53,7 +53,6 @@ process-type-utility-actor-windows-file-dialog = Hulpprogramma Windows-bestandsd
 
 ##
 ## Other
-##
 
 # fallback
 process-type-unknown = Onbekend

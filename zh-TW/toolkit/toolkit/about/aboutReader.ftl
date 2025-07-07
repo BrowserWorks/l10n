@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = 棕褐色調
     .title = 棕褐色調主題
 about-reader-color-scheme-auto = 自動
     .title = 自動色彩布景
-about-reader-color-theme-light = 亮色
-    .title = 亮色佈景主題
-about-reader-color-theme-dark = 暗色
-    .title = 暗色佈景主題
-about-reader-color-theme-sepia = 懷舊風
-    .title = 懷舊風佈景主題
-about-reader-color-theme-auto = 自動
-    .title = 自動色調佈景主題
-about-reader-color-theme-gray = 灰暗
-    .title = 灰暗佈景主題
-about-reader-color-theme-contrast = 對比
-    .title = 對比色佈景主題
-about-reader-color-theme-custom = 自訂色彩
-    .title = 自訂色彩佈景主題
 about-reader-color-light-theme = 亮色
     .title = 亮色佈景主題
 about-reader-color-dark-theme = 暗色
@@ -45,7 +31,7 @@ about-reader-color-contrast-theme = 高對比
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 about-reader-estimated-read-time = { $range } 分鐘
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = 縮小文字
@@ -68,9 +54,8 @@ about-reader-font-type-monospace = 等寬
 
 ## Reader View toolbar buttons
 
-about-reader-toolbar-close = 關閉閱讀模式
+about-reader-toolbar-close = 關閉閱讀畫面
 about-reader-toolbar-type-controls = 字體控制
-about-reader-toolbar-color-controls = 色彩
 about-reader-toolbar-text-layout-controls = 文字與版面
 about-reader-toolbar-theme-controls = 佈景主題
 about-reader-toolbar-savetopocket = 儲存到 { -pocket-brand-name }
@@ -95,10 +80,24 @@ about-reader-custom-colors-visited-links = 已拜訪鏈結
     .title = 編輯色彩
 about-reader-custom-colors-selection-highlight = 為閱讀功能加上強調效果
     .title = 編輯色彩
-about-reader-custom-colors-reset-button = 重設為預設值
 about-reader-reset-button = 重設為預設值
+about-reader-custom-colors-foreground2 =
+    .label = 文字
+    .title = 編輯色彩
+about-reader-custom-colors-background2 =
+    .label = 背景
+    .title = 編輯色彩
+about-reader-custom-colors-unvisited-links2 =
+    .label = 未拜訪鏈結
+    .title = 編輯色彩
+about-reader-custom-colors-visited-links2 =
+    .label = 已拜訪鏈結
+    .title = 編輯色彩
+about-reader-custom-colors-selection-highlight2 =
+    .label = 為閱讀功能加上強調效果
+    .title = 編輯色彩
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = 文字
 about-reader-text-size-label = 文字大小
@@ -115,9 +114,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = 行距
 about-reader-advanced-layout-header = 進階
-about-reader-slider-label-width-narrow = 窄小
-about-reader-slider-label-width-wide = 寬闊
-about-reader-slider-label-spacing-narrow = 窄小
 about-reader-character-spacing-label =
     .label = 字元間距
 about-reader-word-spacing-label =
@@ -129,3 +125,5 @@ about-reader-text-alignment-center =
     .title = 文字置中
 about-reader-text-alignment-right =
     .title = 文字置右
+about-reader-text-alignment-justify =
+    .title = 文字對齊

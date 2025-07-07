@@ -1,10 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
     .title = Polices
-
 fonts-window-close =
     .key = w
 
@@ -12,7 +11,6 @@ fonts-window-close =
 
 fonts-langgroup-header = Polices pour
     .accesskey = o
-
 fonts-langgroup-arabic =
     .label = Arabe
 fonts-langgroup-armenian =
@@ -77,37 +75,27 @@ fonts-langgroup-other =
 
 fonts-proportional-header = Proportionnelle
     .accesskey = P
-
 fonts-default-serif =
     .label = Serif
 fonts-default-sans-serif =
     .label = Sans serif
-
 fonts-proportional-size = Taille
     .accesskey = T
-
 fonts-serif = Sérif
     .accesskey = S
-
 fonts-sans-serif = Sans sérif
     .accesskey = n
-
 fonts-monospace = Largeur fixe
     .accesskey = L
-
 fonts-monospace-size = Taille
     .accesskey = e
-
 fonts-minsize = Taille minimale des polices
     .accesskey = m
-
 fonts-minsize-none =
     .label = Aucune
-
 fonts-allow-own =
     .label = Autoriser les pages web à utiliser leurs propres polices au lieu de celles choisies ci-dessus
     .accesskey = h
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

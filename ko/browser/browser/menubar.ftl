@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = 주소 열기…
 menu-file-open-file =
@@ -254,6 +254,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = 모바일 북마크
 
+## Profiles Menu
+
+menu-profiles =
+    .label = 프로필
+menu-profiles-manage-profiles =
+    .label = 프로필 관리
+menu-profiles-new-profile =
+    .label = 새 프로필
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (현재)
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = 다운로드
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = 확장 기능 및 테마
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = 부가 기능 및 테마
     .accesskey = A
@@ -330,7 +346,7 @@ menu-help-more-troubleshooting-info =
 menu-help-report-site-issue =
     .label = 사이트 문제 보고…
 menu-help-share-ideas =
-    .label = 아이디어 공유 및 의견 보내기…
+    .label = 아이디어 및 의견 공유…
     .accesskey = S
 menu-help-enter-troubleshoot-mode2 =
     .label = 문제 해결 모드…

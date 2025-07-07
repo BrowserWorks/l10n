@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -47,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = Adicionar morada
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Editar endereço
-autofill-address-name = Nome
 autofill-address-given-name = Primeiro nome
 autofill-address-additional-name = Nome do meio
 autofill-address-family-name = Último nome
+autofill-address-name = Nome
 autofill-address-organization = Organização
 autofill-address-street-address = Morada da rua
 autofill-address-street = Endereço da rua
@@ -106,9 +106,6 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = Adicionar novo endereço
 autofill-address-country = País ou região
@@ -122,7 +119,7 @@ autofill-country-warning-message = O autopreenchimento de formulários está dis
 autofill-add-new-card-title = Adicionar novo cartão de crédito
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Editar cartão de crédito
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -44,7 +44,6 @@ url-classifier-debug-sb-modules = Модули лога безопасного �
 url-classifier-debug-modules = Текущие модули логирования
 url-classifier-debug-sbjs-modules = Лог JS безопасного веб-сёрфинга
 url-classifier-debug-file = Текущий файл лога
-
 url-classifier-trigger-update = Запустить обновление
 url-classifier-not-available = недоступно
 url-classifier-disable-sbjs-log = Отключить лог JS безопасного веб-сёрфинга

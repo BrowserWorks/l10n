@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,13 +40,18 @@ inactive-css-placeholder-pseudo-element-not-supported = Το <strong>{ $property
 inactive-css-property-because-of-display = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν έχει προβολή του <strong>{ $display }</strong>.
 inactive-css-not-display-block-on-floated = Η τιμή <strong>display</strong> έχει αλλάξει από τη μηχανή σε <strong>block</strong> επειδή το στοιχείο είναι <strong>floated</strong>.
 inactive-css-not-display-block-on-floated-2 = Η τιμή <strong>display</strong> έχει αλλάξει από τη μηχανή σε <strong>{ $display }</strong> επειδή το στοιχείο είναι <strong>floated</strong>.
+inactive-css-only-non-grid-or-flex-item = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού δεν μπορεί να χρησιμοποιηθεί σε στοιχεία «grid» ή «flex».
+inactive-css-not-block = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «block-level».
+inactive-css-not-floated = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «floated».
 inactive-css-property-is-impossible-to-override-in-visited = Είναι αδύνατο να παρακάμψετε το <strong>{ $property }</strong> λόγω του περιορισμού <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι τοποθετημένο στοιχείο.
 inactive-css-only-replaced-elements = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού μπορεί να εφαρμοστεί μόνο σε στοιχεία που έχουν αντικατασταθεί.
 inactive-text-overflow-when-no-overflow = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο αφού το  <strong>overflow:hidden</strong> δεν έχει οριστεί.
+inactive-css-no-size-containment = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν έχει περιορισμό μεγέθους.
 inactive-css-not-for-internal-table-elements = Το <strong>{ $property }</strong> δεν επηρεάζει τα εσωτερικά στοιχεία πίνακα.
 inactive-css-not-for-internal-table-elements-except-table-cells = Το <strong>{ $property }</strong> δεν επηρεάζει τα εσωτερικά στοιχεία πίνακα, εκτός από τα κελιά πίνακα.
 inactive-css-not-table = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι πίνακας.
+inactive-css-collapsed-table-borders = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού είναι πίνακας με συμπτυγμένα πλαίσια.
 inactive-css-not-table-cell = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι κελί πίνακα.
 inactive-scroll-padding-when-not-scroll-container = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν κάνει κύλιση.
 inactive-css-border-image = Το <strong>{ $property }</strong> δεν έχει καμία επίδραση σε αυτό το στοιχείο, επειδή δεν μπορεί να εφαρμοστεί σε εσωτερικά στοιχεία πίνακα όπου το <strong>border-collapse</strong> έχει οριστεί σε <strong>collapse</strong>, στο στοιχείο γονικού πίνακα.
@@ -54,8 +59,13 @@ inactive-css-resize = Το <strong>{ $property }</strong> δεν έχει καμ
 inactive-css-ruby-element = Το <strong>{ $property }</strong> δεν έχει καμία επίδραση σε αυτό το στοιχείο, επειδή είναι στοιχείο ruby. Το μέγεθός του καθορίζεται από το μέγεθος γραμματοσειράς του κειμένου ruby.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain how
-## the problem can be solved.
+## an icon. When this icon is hovered this message is displayed to explain why
+## the property is not applied.
+## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
+## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
+## Variables:
+##   $property (string) - A CSS property name e.g. "color".
+##   $display (string) - A CSS display value e.g. "inline-block".
 
 inactive-css-highlight-pseudo-elements-not-supported = Το <strong>{ $property }</strong> δεν υποστηρίζεται στα ψευδοστοιχεία επισήμανσης.
 inactive-css-cue-pseudo-element-not-supported = Το <strong>{ $property }</strong> δεν υποστηρίζεται σε ψευδοστοιχεία ::cue.
@@ -88,12 +98,17 @@ inactive-css-not-inline-or-tablecell-fix = Δοκιμάστε να προσθέ�
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Δοκιμάστε να προσθέσετε το <strong>display:inline-block</strong> ή το <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Δοκιμάστε να προσθέσετε το <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Δοκιμάστε να αφαιρέσετε το <strong>float</strong> ή να προσθέσετε το <strong>display:block</strong>. { learn-more }
-inactive-css-position-property-on-unpositioned-box-fix = Δοκιμάστε να ορίσετε τη ιδιότητα <strong>position</strong> του σε κάτι άλλο εκτός από <strong>static</strong>. { learn-more }
+inactive-css-only-non-grid-or-flex-item-fix = Δοκιμάστε να αλλάξετε την τιμή του <strong>display</strong> του περιέκτη του στοιχείου σε κάτι άλλο εκτός των <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong> ή <strong>inline-grid</strong>, ή να καταργήσετε το <strong>float</strong>. { learn-more }
+inactive-css-not-block-fix = Δοκιμάστε να προσθέσετε ιδιότητες, όπως <strong>display:block</strong> ή <strong>float:left</strong>. { learn-more }
+inactive-css-not-floated-fix = Δοκιμάστε να προσθέσετε την ιδιότητα <strong>float</strong> με μια τιμή εκτός της <strong>none</strong>. { learn-more }
+inactive-css-position-property-on-unpositioned-box-fix = Δοκιμάστε να ορίσετε την ιδιότητα <strong>position</strong> του σε κάτι άλλο εκτός από <strong>static</strong>. { learn-more }
 inactive-css-only-replaced-elements-fix = Βεβαιωθείτε ότι προσθέτετε την ιδιότητα σε ένα στοιχείο που έχει αντικατασταθεί. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Δοκιμάστε να προσθέσετε το <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-no-size-containment-fix = Δοκιμάστε να ορίσετε την ιδιότητα <strong>display</strong> του σε κάτι άλλο, εκτός από <strong>none</strong>, <strong>contents</strong>, <strong>table</strong> ή <strong>inline-table</strong> και βεβαιωθείτε ότι δεν βρίσκεται εντός πίνακα ή ενότητας ruby. { learn-more }
 inactive-css-not-for-internal-table-elements-fix = Δοκιμάστε να ορίσετε την ιδιότητα <strong>display</strong> του σε κάτι άλλο εκτός από <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, ή <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Δοκιμάστε να ορίσετε την ιδιότητα <strong>display</strong> του σε κάτι άλλο εκτός από <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, ή <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-table-fix = Δοκιμάστε να προσθέσετε το <strong>display:table</strong> ή το <strong>display:inline-table</strong>. { learn-more }
+inactive-css-collapsed-table-borders-fix = Δοκιμάστε να προσθέσετε το <strong>border-collapse:separate</strong>. { learn-more }
 inactive-css-not-table-cell-fix = Δοκιμάστε να προσθέσετε το <strong>display:table-cell</strong>. { learn-more }
 inactive-scroll-padding-when-not-scroll-container-fix = Δοκιμάστε να προσθέσετε το <strong>overflow:auto</strong>, το <strong>overflow:scroll</strong>, ή το <strong>overflow:hidden</strong>. { learn-more }
 inactive-css-border-image-fix = Στο στοιχείο γονικού πίνακα, καταργήστε την ιδιότητα ή αλλάξτε την τιμή του <strong>border-collapse</strong> σε μια τιμή εκτός της <strong>collapse</strong>. { learn-more }

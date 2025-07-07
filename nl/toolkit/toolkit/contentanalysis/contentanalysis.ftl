@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -13,6 +13,15 @@ contentanalysis-slow-agent-dialog-header = Scan wordt uitgevoerd
 contentanalysis-slow-agent-dialog-body-file = { $agent } toetst ‘{ $filename }’ aan het gegevensbeleid van uw organisatie. Dit kan even duren.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more =
+    { $count ->
+        [one] { $agent } toetst ‘{ $filename }’ en { $count } extra item aan het gegevensbeleid van uw organisatie. Dit kan even duren.
+       *[other] { $agent } toetst ‘{ $filename }’ en { $count } extra items aan het gegevensbeleid van uw organisatie. Dit kan even duren.
+    }
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent } toetst wat u hebt geplakt aan het gegevensbeleid van uw organisatie. Dit kan even duren.
 # Note that this is shown when the user drag and drops text into the browser.
 # Variables:
@@ -24,6 +33,10 @@ contentanalysis-slow-agent-dialog-body-print = { $agent } toetst wat u hebt afge
 contentanalysis-operationtype-clipboard = klembord
 contentanalysis-operationtype-dropped-text = geplakte tekst
 contentanalysis-operationtype-print = afdrukken
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-upload-description = upload van ‘{ $filename }’
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = download van ‘{ $filename }’
 #   $filename - The filename associated with the request, such as "aFile.txt"
 contentanalysis-customdisplaystring-description = upload van ‘{ $filename }’
 contentanalysis-warndialogtitle = Deze inhoud is mogelijk onveilig
@@ -40,21 +53,6 @@ contentanalysis-genericresponse-message = Inhoudsanalyse antwoordde met { $respo
 # Variables:
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
 contentanalysis-block-message = Uw organisatie gebruikt software voor het voorkomen van gegevensverlies die de volgende inhoud heeft geblokkeerd: { $content }.
-# Variables:
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-error-message = Er is een fout opgetreden bij de communicatie met de software voor het voorkomen van gegevensverlies. Overdracht geweigerd voor bron: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-unspecified-error-message = Er is een fout opgetreden bij de communicatie met { $agent }. Overdracht geweigerd voor bron: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-no-agent-connected-message = Kan geen verbinding maken met { $agent }. Overdracht geweigerd voor bron: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-invalid-agent-signature-message = Ondertekeningsverificatie voor { $agent } mislukt. Overdracht geweigerd voor bron: { $content }.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
@@ -73,10 +71,18 @@ contentanalysis-error-message-upload-file = Upload van ‘{ $filename }’ gewei
 contentanalysis-error-message-dropped-text = Verslepen geweigerd.
 contentanalysis-error-message-clipboard = Plakken geweigerd.
 contentanalysis-error-message-print = Afdrukken geweigerd.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = De verbinding met { $agent } is verlopen. { $contentName } is geblokkeerd.
 contentanalysis-block-dialog-title-upload-file = U mag dit bestand niet uploaden
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file = Volgens het gegevensbeschermingsbeleid van uw organisatie mag u het bestand ‘{ $filename }’ niet uploaden. Neem contact op met uw beheerder voor meer info.
+contentanalysis-block-dialog-title-download-file = U mag dit bestand niet downloaden
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = Volgens het gegevensbeschermingsbeleid van uw organisatie mag u het bestand ‘{ $filename }’ niet downloaden. Neem contact op met uw beheerder voor meer info.
 contentanalysis-block-dialog-title-clipboard = U mag deze inhoud niet plakken
 contentanalysis-block-dialog-body-clipboard = Volgens het gegevensbeschermingsbeleid van uw organisatie mag u deze inhoud niet plakken. Neem contact op met uw beheerder voor meer info.
 contentanalysis-block-dialog-title-dropped-text = U mag deze inhoud niet verslepen

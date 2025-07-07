@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Traduzir esta página
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Gerenciar idiomas
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Mostrar original
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Tradução
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Baixar idiomas para traduzir sem acessar a int
 translations-manage-all-language = Todos os idiomas
 translations-manage-download-button = Baixar
 translations-manage-delete-button = Excluir
-translations-manage-intro = Defina suas preferências de idioma e tradução de sites e gerencie os idiomas instalados para traduzir sem acessar a internet.
-translations-manage-install-description = Instalar idiomas para traduzir sem acessar a internet
-translations-manage-language-install-button =
-    .label = Instalar
-translations-manage-language-install-all-button =
-    .label = Instalar todos
-    .accesskey = I
 translations-manage-intro-2 = Defina suas preferências de idioma e tradução de sites e gerencie os idiomas baixados para tradução sem acessar a internet.
 translations-manage-download-description = Baixar idiomas para tradução sem acessar a internet.
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Remover todos
     .accesskey = e
-translations-manage-error-install = Houve um problema ao instalar os arquivos de idioma. Tente novamente.
 translations-manage-error-download = Houve um problema ao baixar os arquivos de idioma. Tente novamente.
 translations-manage-error-delete = Houve um erro ao excluir os arquivos de idioma. Tente novamente.
 translations-manage-error-remove = Houve um erro ao remover os arquivos de idioma. Tente novamente.
@@ -222,7 +214,7 @@ select-translations-panel-copy-button-copied =
 select-translations-panel-done-button =
     .label = Pronto
 select-translations-panel-translate-full-page-button =
-    .label = Traduzir página inteira
+    .label = Traduzir a página inteira
 select-translations-panel-translate-button =
     .label = Traduzir
 select-translations-panel-try-again-button =

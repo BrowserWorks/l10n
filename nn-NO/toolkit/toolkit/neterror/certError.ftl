@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,9 @@ cert-error-trust-signature-algorithm-disabled = Sertifikatet er ikkje tiltrudd f
 cert-error-trust-expired-issuer = Sertifikatet er ikkje tiltrudd fordi utskrivarsertifikatet har gått ut på dato.
 cert-error-trust-self-signed = Sertifikatet er ikkje tiltrudd fordi det er sjølvsignert.
 cert-error-trust-symantec = Sertifikat er skrivne ut av GeoTrust, RapidSSL, Symantec, Thawte og VeriSign er ikkje lenger sett på som trygge fordi desse sertifikatstyremaktene ikkje klarte å følgje tidlegare tryggingspraksis.
+# Variables:
+#   $hostname (string) - Hostname of the website with cert error.
+cert-error-trust-certificate-transparency = { -brand-short-name } stolar ikkje på { $hostname } fordi ho ikkje kunne bevise at ho oppfyller krava til offentleg sertifikatopenheit.
 cert-error-untrusted-default = Sertifikatet kjem ikkje frå ei tiltrudd kjelde.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
@@ -68,6 +71,31 @@ open-in-new-window-for-csp-or-xfo-error = Opne nettstad i nytt vindauge
 # Variables:
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = For å ta vare på sikkerheita di, vil { $hostname } ikkje tillate at { -brand-short-name } viser sida dersom ein annan nettstad har bygd henne inn. For å sjå denne sida, må du opne henne i eit nytt vindauge.
+fp-certerror-view-certificate-link = Vis sertifikatet til nettstaden
+fp-certerror-return-to-previous-page-recommended-button = Gå tilbake (tilrådd)
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-self-signed-what-can-you-do-body = Ikkje mykje. Det er sannsynleg at det er eit problem med sjølve nettstaden.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $date (Date) - Certificate expiration date.
+fp-certerror-expired-why-dangerous-body = Nettstadar brukar sertifikat utskrive av ein sertifikatutferdar for å bevise at dei verkeleg er den dei seier dei er. { -brand-short-name } stolar ikkje på denne nettstaden fordi det ser ut til at sertifikatet gjekk ut { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Clock date.
+fp-certerror-expired-what-can-you-do-body = Klokka i eininga er sett til { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }. Viss dette er rett, er tryggingsproblemet sannsynlegvis med sjølve nettstaden. Viss det er feil, kan du endre det i systeminnstillingane i eininga.
+# Variables:
+#   $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
+fp-cert-error-code = Feilkode: { $error }
+# Variables:
+#   $datetime (Date) - Current datetime.
+fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+fp-learn-more-about-secure-connection-failures = Les meir om feil med trygg tilkopling
+fp-learn-more-about-cert-issues = Les meir om slike sertifikatproblem
+fp-learn-more-about-time-related-errors = Les meir om feilsøking av tidsrelaterte feil
+
+## Variables:
+##   $hostname (string) - Hostname of the website with cert error.
+
 
 ## Messages used for certificate error titles
 
@@ -76,6 +104,7 @@ deniedPortAccess-title = Tilgang til denne adressa er avgrensa
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 dnsNotFound-title = Hmm. Vi har problem med å finne nettstaden.
+internet-connection-offline-title = Det ser ut til at det er eit problem med internett-tilkoplinga di.
 dns-not-found-trr-only-title2 = Muleg sikkerheitsrisiko ved å søkje opp dette domenet
 dns-not-found-native-fallback-title2 = Muleg sikkerheitsrisiko ved å søkje opp dette domenet
 fileNotFound-title = Fann ikkje fila
@@ -92,6 +121,8 @@ contentEncodingError-title = Feil med teiknkoding
 unsafeContentType-title = Utrygg filtype
 netReset-title = Tilkoplinga vart broten
 netTimeout-title = Tilkoplinga fekk tidsavbrot
+httpErrorPage-title = Det ser ut til at det er eit problem med denne nettstaden
+serverError-title = Det ser ut til at det er eit problem med denne nettstaden
 unknownProtocolFound-title = Klarte ikkje å forstå adressa
 proxyConnectFailure-title = Proxyserveren godtek ikkje tilkoplingar
 proxyResolveFailure-title = Klarte ikkje å finne proxyserveren
@@ -108,3 +139,20 @@ networkProtocolError-title = Nettverksprotokollfeil
 nssBadCert-title = Åtvaring: Potensiell sikkerheitsrisiko framom her
 nssBadCert-sts-title = Kopla ikkje til: Potensielt tryggingsproblem
 certerror-mitm-title = Programvara hindrar { -brand-short-name } frå trygg tilkopling til denne nettstaden
+
+## Felt Privacy V1 Strings
+
+fp-certerror-page-title = Åtvaring: Tryggingsrisiko
+fp-certerror-body-title = Ver varsam. Noko ser ikkje rett ut.
+fp-certerror-why-site-dangerous = Kva får sida til å sjå farleg ut?
+fp-certerror-what-can-you-do = Kva kan du gjere med det?
+fp-certerror-advanced-title = Avansert
+fp-certerror-advanced-button = Avansert
+fp-certerror-hide-advanced-button = Skjul avansert
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-certerror-override-exception-button = Hald fram til { $hostname } (risikofylt)
+fp-certerror-intro = { -brand-short-name } oppdaga eit potensielt alvorleg tryggingsproblem med <strong>{ $hostname }</strong>. Nokon som gir seg ut for å vere nettstaden kan prøve å stele ting som kredittkortinformasjon, passord eller e-postar.
+fp-certerror-expired-into = { -brand-short-name } oppdaga eit tryggingsproblem med <strong>{ $hostname }</strong>. Anten er nettstaden ikkje konfigurert rett eller klokka i eininga er sett til feil dato/tid.

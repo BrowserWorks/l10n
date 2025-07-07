@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Layar Penuh
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Masuk ke Sinkronisasi…
@@ -88,7 +88,7 @@ appmenu-remote-tabs-tabsnotsyncing = Aktifkan sinkronisasi tab untuk melihat daf
 appmenu-remote-tabs-opensettings =
     .label = Pengaturan
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Ingin melihat tab dari perangkat Anda yang lain di sini?
 appmenu-remote-tabs-connectdevice =
     .label = Sambungkan Perangkat Lainnya
@@ -108,8 +108,11 @@ appmenu-fxa-sync-and-save-data2 = Sinkronkan dan Simpan Data
 appmenu-fxa-signed-in-label = Masuk
 appmenu-fxa-setup-sync =
     .label = Aktifkan Sinkronisasi…
+appmenu-fxa-setup-sync-new = Nyalakan
 appmenuitem-save-page =
     .label = Simpan Laman dengan Nama…
+appmenuitem-fxa-sync-off-title = Sinkronisasi nonaktif
+appmenuitem-fxa-sync-off-description = Lindungi dan akses markah, sandi, dan berbagai hal lainnya milik Anda di mana saja.
 
 ## What's New panel in App menu.
 
@@ -120,7 +123,7 @@ whatsnew-panel-footer-checkbox =
     .label = Beri tahu tentang fitur baru
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -196,6 +199,7 @@ profiler-popup-presets-power-description = Prasetel untuk menyelidiki bug penggu
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Daya
+profiler-popup-presets-debug-description = Prasetel untuk debugging di { -brand-shorter-name }. Profiler ini memiliki overhead tinggi, jangan gunakan untuk kinerja tetapi gunakan untuk fokus pada pemahaman perilaku peramban.
 profiler-popup-presets-debug-label =
     .label = Debug
 profiler-popup-presets-custom-label =
@@ -276,5 +280,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Dapatkan peringatan kebocoran data
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Tutupi surel dan telepon asli Anda
+appmenuitem-services-relay-description = Luncurkan dasbor masker surel
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Lindungi aktivitas daring Anda
+appmenu-services-header = Layanan saya
+appmenu-other-protection-header = Coba alat perlindungan lain dari { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Profil lainnya
+appmenu-manage-profiles =
+    .label = Kelola profil
+appmenu-create-profile =
+    .label = Profil baru
+appmenu-edit-profile =
+    .aria-label = Sunting profil
+appmenu-profiles-2 =
+    .label = Profil

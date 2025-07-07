@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,35 +12,29 @@ cfr-doorhanger-feature-heading = Rekomenduojama funkcija
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Kodėl tai matau
-
 cfr-doorhanger-extension-cancel-button = Ne dabar
     .accesskey = N
-
 cfr-doorhanger-extension-ok-button = Pridėti dabar
     .accesskey = P
-
 cfr-doorhanger-extension-manage-settings-button = Tvarkyti rekomendacijų nuostatas
     .accesskey = T
-
 cfr-doorhanger-extension-never-show-recommendation = Nerodyti man šios rekomendacijos
     .accesskey = N
-
 cfr-doorhanger-extension-learn-more-link = Sužinoti daugiau
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = sukūrė { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Rekomendacija
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Rekomendacija
     .tooltiptext = Priedo rekomendacija
     .a11y-announcement = Siūloma priedo rekomendacija
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Rekomendacija
     .tooltiptext = Funkcijos rekomendacija
     .a11y-announcement = Siūloma funkcijos rekomendacija
@@ -67,7 +61,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } naudotojų
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sinchronizuokite adresyną visuose įrenginiuose.
 cfr-doorhanger-bookmark-fxa-body = Puikus radinys! O kad nepasigestumėte šio įrašo kituose įrenginiuose, susikurkite „{ -fxaccount-brand-name }“ paskyrą.
@@ -87,11 +81,9 @@ cfr-protections-panel-link-text = Sužinoti daugiau
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Naujovė:
-
 cfr-whatsnew-button =
     .label = Kas naujo
     .tooltiptext = Kas naujo
-
 cfr-whatsnew-release-notes-link-text = Skaityti laidos apžvalgą
 
 ## Enhanced Tracking Protection Milestones
@@ -119,8 +111,6 @@ cfr-doorhanger-doh-primary-button-2 = Gerai
 cfr-doorhanger-doh-secondary-button = Išjungti
     .accesskey = I
 
-## Fission Experiment Message
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Šios svetainės vaizdo įrašai gali būti rodomi netinkamai su šia „{ -brand-short-name }“ versija. Norėdami gauti geriausią palaikymą, atnaujinkite „{ -brand-short-name }“.
@@ -128,13 +118,11 @@ cfr-doorhanger-video-support-header = Atnaujinkite „{ -brand-short-name }“, 
 cfr-doorhanger-video-support-primary-button = Atnaujinti dabar
     .accesskey = A
 
-## Spotlight modal shared strings
-
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Panašu, kad naudojatės viešu „Wi-Fi“
@@ -143,8 +131,6 @@ spotlight-public-wifi-vpn-primary-button = Išsaugoti privatumą su „{ -mozill
     .accesskey = I
 spotlight-public-wifi-vpn-link = Ne dabar
     .accesskey = N
-
-## Total Cookie Protection Rollout
 
 ## Emotive Continuous Onboarding
 
@@ -172,19 +158,52 @@ spotlight-pin-secondary-button = Ne dabar
 ## The button labels are fitted into narrow fixed-width buttons by
 ## Windows and therefore must be as narrow as possible.
 
-## Waterfox View CFR
 
-## Waterfox View Spotlight
+## Firefox View CFR
+
+
+## Firefox View Spotlight
+
 
 ## Colorways expiry reminder CFR
 
+
 ## Cookie Banner Handling CFR
+
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
 
 ## FxA sync CFR
 
+
 ## Device Migration FxA Spotlight
+
+
+## Set as Default PDF Reader Infobar
+
+
+## Launch on login infobar notification
+
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+
+## Tail Fox Set Default Spotlight
+
+
+## Root Certificate Succession Infobar
+
+
+## Root Certificate Succession Windows Background Notification
+
+
+## FxA Menu Message variants
+
+
+## Multi-CTA Fox Doodle Spotlight
 

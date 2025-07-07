@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,10 @@ support-addons-type = Typ
 support-addons-enabled = Povoleno
 support-addons-version = Verze
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Umístění
 legacy-user-stylesheets-title = Starší uživatelské kaskádové styly
 legacy-user-stylesheets-enabled = Aktivní
 legacy-user-stylesheets-stylesheet-types = Kaskádové styly
@@ -231,7 +235,7 @@ intl-regional-prefs = Předvolby regionu
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -362,6 +366,13 @@ has-seccomp-bpf = Seccomp-BPF (filtrování systémových volání)
 has-seccomp-tsync = Synchronizace vláken Seccomp
 has-user-namespaces = Uživatelské jmenné prostory
 has-privileged-user-namespaces = Uživatelské jmenné prostory pro privilegované procesy
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable =
+    { -brand-short-name.case-status ->
+        [with-cases] { $status } — Tato funkce není v systému povolena. To může omezit bezpečnostní funkce { -brand-short-name(case: "gen") }.
+       *[no-cases] { $status } — Tato funkce není v systému povolena. To může omezit bezpečnostní funkce aplikace { -brand-short-name }.
+    }
 can-sandbox-content = Sandbox procesů pro obsah
 can-sandbox-media = Sandbox zásuvných modulů médií
 content-sandbox-level = Úroveň sandboxu procesů pro obsah

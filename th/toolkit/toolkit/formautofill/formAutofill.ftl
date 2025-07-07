@@ -1,23 +1,23 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## OS Prompt Dialog
 
-# The macos string is preceded by the operating system (macOS) with "Waterfox is trying to ",
+# The macos string is preceded by the operating system (macOS) with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-use-payment-method-os-prompt-macos = ใช้ข้อมูลวิธีการชำระเงินที่เก็บไว้
 autofill-use-payment-method-os-prompt-windows = { -brand-short-name } กำลังพยายามจะใช้ข้อมูลวิธีการชำระเงินที่เก็บไว้ ยืนยันการเข้าถึงบัญชี Windows นี้ด้านล่าง
 autofill-use-payment-method-os-prompt-other = { -brand-short-name } กำลังพยายามจะใช้ข้อมูลวิธีการชำระเงินที่เก็บไว้
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-payment-method-os-prompt-macos = แสดงข้อมูลวิธีการชำระเงินที่เก็บไว้
 autofill-edit-payment-method-os-prompt-windows = { -brand-short-name } กำลังพยายามจะแสดงข้อมูลวิธีการชำระเงินที่เก็บไว้ ยืนยันการเข้าถึงบัญชี Windows นี้ด้านล่าง
 autofill-edit-payment-method-os-prompt-other = { -brand-short-name } กำลังพยายามจะแสดงข้อมูลวิธีการชำระเงินที่เก็บไว้
 # The links lead users to Form Autofill browser preferences.
 autofill-options-link = ตัวเลือกการกรอกแบบฟอร์มอัตโนมัติ
-autofill-options-link-osx = การกำหนดลักษณะการกรอกแบบฟอร์มอัตโนมัติ
+autofill-options-link-osx = ค่าปรับแต่งการกรอกแบบฟอร์มอัตโนมัติ
 
 ## The credit card capture doorhanger
 
@@ -81,3 +81,6 @@ autofill-category-name = ชื่อ
 autofill-category-organization = องค์กร
 autofill-category-tel = โทรศัพท์
 autofill-category-email = อีเมล
+# This string is used in drop down suggestion when users try to autofill credit
+# card on an insecure website (without https).
+autofill-insecure-field-warning-description = { -brand-short-name } ตรวจพบไซต์ที่ไม่ปลอดภัย การกรอกแบบฟอร์มอัตโนมัติถูกปิดใช้งานชั่วคราว

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = การดาวน์โหลด
 appmenuitem-passwords =
     .label = รหัสผ่าน
+appmenuitem-extensions-and-themes =
+    .label = ส่วนขยายและชุดตกแต่ง
+appmenuitem-extensions =
+    .label = ส่วนขยาย
 appmenuitem-addons-and-themes =
     .label = ส่วนเสริมและชุดตกแต่ง
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = เต็มหน้าจอ
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = ลงชื่อเข้า Sync…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = เปิดการซิงค์แท�
 appmenu-remote-tabs-opensettings =
     .label = การตั้งค่า
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = ต้องการเห็นแท็บของคุณจากอุปกรณ์อื่นๆ ที่นี่ไหม?
 appmenu-remote-tabs-connectdevice =
     .label = เชื่อมต่ออุปกรณ์อื่น
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = ซิงค์และบันทึกข�
 appmenu-fxa-signed-in-label = ลงชื่อเข้า
 appmenu-fxa-setup-sync =
     .label = เปิดการซิงค์…
+appmenu-fxa-setup-sync-new = เปิด
 appmenuitem-save-page =
     .label = บันทึกหน้าเป็น…
+appmenuitem-fxa-sync-off-title = Sync ปิดอยู่
+appmenuitem-fxa-sync-off-description = ปกป้องและเข้าถึงที่คั่นหน้า รหัสผ่าน และอื่นๆ ของคุณได้ทุกที่
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = แจ้งเตือนเกี่ยวกับคุณลักษณะใหม่
     .accesskey = จ
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -196,6 +203,9 @@ profiler-popup-presets-power-description = ค่าที่ตั้งล่�
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = พลังงาน
+profiler-popup-presets-debug-description = พรีเซ็ตสำหรับการดีบั๊กใน { -brand-shorter-name }  มีโอเวอร์เฮดสูง อย่าใช้เพื่องานด้านประสิทธิภาพ แต่ให้ใช้เพื่อทำความเข้าใจพฤติกรรมการทำงานของเบราว์เซอร์
+profiler-popup-presets-debug-label =
+    .label = ดีบั๊ก
 profiler-popup-presets-custom-label =
     .label = กำหนดเอง
 
@@ -274,5 +284,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = รับการแจ้งเตือนเมื่อเกิดการรั่วไหลของข้อมูล
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = ปิดบังอีเมลและหมายเลขโทรศัพท์จริงของคุณ
+appmenuitem-services-relay-description = เปิดแดชบอร์ดตัวปกปิดอีเมล
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = ปกป้องกิจกรรมออนไลน์ของคุณ
+appmenu-services-header = บริการของฉัน
+appmenu-other-protection-header = ลองใช้เครื่องมือป้องกันตัวอื่นๆ จาก { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = โปรไฟล์อื่น ๆ
+appmenu-manage-profiles =
+    .label = จัดการโปรไฟล์
+appmenu-create-profile =
+    .label = โปรไฟล์ใหม่
+appmenu-edit-profile =
+    .aria-label = แก้ไขโปรไฟล์
+appmenu-profiles-2 =
+    .label = โปรไฟล์

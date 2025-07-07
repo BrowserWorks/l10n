@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = Ukończono { $percentValue }%
 firefoxview-tabpickup-step-signin-header = Płynnie przechodź z urządzenia na urządzenie
 firefoxview-tabpickup-step-signin-description = Zaloguj się lub utwórz konto, aby otwierać tutaj karty z telefonu.
 firefoxview-tabpickup-step-signin-primarybutton = Kontynuuj
+firefoxview-syncedtabs-signin-header-2 = Twój { -brand-product-name } na wszystkich urządzeniach
+firefoxview-syncedtabs-signin-description-2 = Zaloguj się lub utwórz konto, aby widzieć karty otwarte na telefonie i innych urządzeniach. Za pomocą konta możesz także synchronizować hasła, historię i nie tylko.
+firefoxview-syncedtabs-signin-primarybutton-2 = Zaloguj się
 firefoxview-syncedtabs-signin-header = Otwieraj karty z każdego miejsca
 firefoxview-syncedtabs-signin-description = Zaloguj się na swoje konto, aby widzieć karty z każdego urządzenia, na którym używasz { -brand-product-name(case: "acc") }. Jeśli jeszcze nie masz konta, pomożemy Ci je założyć.
 firefoxview-syncedtabs-signin-primarybutton = Zaloguj się lub utwórz konto
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synchronizuj { -brand-product-name(case
 firefoxview-tabpickup-adddevice-description = Pobierz { -brand-product-name(case: "acc") } na telefon i zaloguj się na nim.
 firefoxview-tabpickup-adddevice-learn-how = Dowiedz się, jak to zrobić
 firefoxview-tabpickup-adddevice-primarybutton = Pobierz { -brand-product-name(case: "acc") } na telefon
+firefoxview-syncedtabs-adddevice-header-2 = Otwieraj karty z każdego miejsca
+firefoxview-syncedtabs-adddevice-description-2 = Zaloguj się w { -brand-product-name(case: "loc") } na telefonie lub innym komputerze, aby widzieć karty w tym miejscu. Dowiedz się, jak <a data-l10n-name="url">połączyć dodatkowe urządzenia</a>.
 firefoxview-syncedtabs-adddevice-header = Zaloguj się w { -brand-product-name(case: "loc") } na pozostałych urządzeniach
 firefoxview-syncedtabs-adddevice-description = Zaloguj się na wszystkich swoich urządzeniach, aby widzieć karty z każdego urządzenia, na którym używasz { -brand-product-name(case: "acc") }. Dowiedz się, jak <a data-l10n-name="url">połączyć dodatkowe urządzenia</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Wypróbuj { -brand-product-name(case: "acc") } na telefon
@@ -122,7 +127,7 @@ firefoxview-history-context-delete = Usuń z historii
 
 firefoxview-opentabs-nav = Otwarte karty
     .title = Otwarte karty
-firefoxview-opentabs-header = Otwórz karty
+firefoxview-opentabs-header = Otwarte karty
 
 ## Recently closed tabs in this context refers to recently closed tabs from all windows
 
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Karty z innych urządzeń
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Pokaż wszystko
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Szukaj w ostatnio zamkniętych kartach
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Szukaj w kartach
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Szukaj w kartach z innych urządzeń
@@ -212,7 +220,7 @@ firefoxview-history-site-localhost = (pliki lokalne)
 firefoxview-show-all-history = Wyświetl całą historię
 firefoxview-view-more-browsing-history = Wyświetl więcej historii przeglądania
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Wracaj do przeszłości
 firefoxview-history-empty-description = Strony otwierane w czasie przeglądania będą tutaj widoczne.
@@ -224,15 +232,17 @@ firefoxview-history-empty-description-two = Ochrona Twojej prywatności leży u�
 firefoxview-choose-browser-button = Wybierz przeglądarkę
     .title = Wybierz przeglądarkę
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Nic tu nie ma
 firefoxview-dont-remember-history-empty-description = Ochrona Twojej prywatności leży u podstaw naszej działalności. Dlatego możesz kontrolować, co { -brand-short-name } zapamiętuje.
 firefoxview-dont-remember-history-empty-description-two = Z powodu obecnych ustawień { -brand-short-name } nie zapamiętuje tego, co przeglądasz. Możesz zmienić <a data-l10n-name="history-settings-url-two">ustawienia historii</a>, aby to pamiętał.
+firefoxview-dont-remember-history-empty-header-2 = Masz kontrolę nad tym, co { -brand-short-name } zapamiętuje
+firefoxview-dont-remember-history-empty-description-one = W tej chwili { -brand-short-name } nie zapamiętuje tego, co przeglądasz. Możesz zmienić <a data-l10n-name="history-settings-url-two">ustawienia historii</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Zamknij
     .title = Zamknij
@@ -242,7 +252,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importuj historię z innej przeglądarki
 firefoxview-import-history-description = Używaj przeglądarki { -brand-short-name } za każdym razem. Zaimportuj historię przeglądania, zakładki i nie tylko.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Karta zamknęła się za wcześnie?
 firefoxview-recentlyclosed-empty-description = Tutaj znajdziesz ostatnio zamknięte karty, dzięki czemu możesz szybko otworzyć jakąś z powrotem.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Impostare { -brand-short-name } come browser principale?
 default-browser-prompt-message-pin = Tieni { -brand-short-name } sempre a portata di mano: impostalo come browser predefinito e aggiungilo alla barra delle applicazioni.
+default-browser-prompt-message-pin-msix = Tieni { -brand-short-name } sempre a portata di mano: impostalo come browser predefinito, aggiungilo alla barra delle applicazioni e al menu Start.
 default-browser-prompt-message-pin-mac = Tieni { -brand-short-name } sempre a portata di mano: impostalo come browser predefinito e mantienilo nel Dock.
+default-browser-prompt-button-primary-set = Imposta come browser principale
 default-browser-prompt-button-primary-pin = Imposta come browser principale
 default-browser-prompt-title-alt = Impostare { -brand-short-name } come browser predefinito?
 default-browser-prompt-message-alt = Velocità, sicurezza e privacy sempre garantiti quando navighi online.
@@ -38,4 +40,3 @@ default-browser-guidance-notification-body-instruction-win11 =
     Passo 2: Seleziona “Imposta come predefinito” per { -brand-short-name }
 default-browser-guidance-notification-info-page = Mostrami come
 default-browser-guidance-notification-dismiss = Fatto
-

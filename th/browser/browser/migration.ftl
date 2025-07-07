@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,8 @@ migration-wizard =
     .title = ตัวช่วยนำเข้า
 import-from =
     { PLATFORM() ->
-        [windows] นำเข้าตัวเลือก, ที่คั่นหน้า, ประวัติ, รหัสผ่าน และข้อมูลอื่น ๆ จาก:
-       *[other] นำเข้าการกำหนดลักษณะ, ที่คั่นหน้า, ประวัติ, รหัสผ่าน และข้อมูลอื่น ๆ จาก:
+        [windows] นำเข้าตัวเลือก ที่คั่นหน้า ประวัติ รหัสผ่าน และข้อมูลอื่นๆ จาก:
+       *[other] นำเข้าค่าปรับแต่ง ที่คั่นหน้า ประวัติ รหัสผ่าน และข้อมูลอื่นๆ จาก:
     }
 import-from-bookmarks = นำเข้าที่คั่นหน้าจาก:
 import-from-ie =

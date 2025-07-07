@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = Выгрузить вкладки и убить процесс
+about-processes-kill-process =
+    .title = Завершить процесс
 about-processes-shutdown-tab =
     .title = Закрыть вкладку
 # Profiler icons
@@ -128,7 +130,7 @@ about-processes-utility-actor-audio-decoder-generic = Универсальный
 about-processes-utility-actor-audio-decoder-applemedia = Аудиодекодер Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Аудиодекодер Windows Media Framework
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Утилиты Windows
 about-processes-utility-actor-windows-file-dialog = Диалоговое окно Файл в Windows

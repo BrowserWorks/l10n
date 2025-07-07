@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,3 +12,9 @@ input-file-and-more-files =
         [one] e mais um
        *[other] e mais { $fileCount }
     }
+form-post-secure-to-insecure-warning-title = Aviso de segurança
+form-post-secure-to-insecure-warning-message =
+    A informação que introduziu nesta página vai ser enviada através de uma ligação insegura e pode ser lida por terceiros.
+    
+    Tem a certeza que pretende enviar esta informação?
+form-post-secure-to-insecure-warning-continue = Continuar

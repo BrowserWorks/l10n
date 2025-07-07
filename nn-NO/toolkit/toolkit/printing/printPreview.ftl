@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,10 +14,10 @@ printpreview-close =
     .label = Lat att
     .accesskey = L
 printpreview-portrait =
-    .label = Ståande
+    .label = Ståande (portrait)
     .accesskey = S
 printpreview-landscape =
-    .label = Liggande
+    .label = Liggande (landscape)
     .accesskey = n
 printpreview-scale =
     .value = Skaler:
@@ -38,7 +38,6 @@ printpreview-page-setup =
 printpreview-page =
     .value = Side:
     .accesskey = d
-
 # Variables
 # $sheetNum (integer) - The current sheet number
 # $sheetCount (integer) - The total number of sheets to print
@@ -62,7 +61,6 @@ printpreview-nextarrow =
 printpreview-endarrow =
     .label = { $arrow }
     .tooltiptext = Siste side
-
 printpreview-homearrow-button =
     .title = Første side
 printpreview-previousarrow-button =

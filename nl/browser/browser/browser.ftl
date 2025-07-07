@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,8 +9,8 @@
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
 #
-# default - "Waterfox"
-# private - "Waterfox (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -26,8 +26,8 @@ browser-main-window-window-titles =
 # opened has no title:
 #
 #
-# "default" - "Waterfox"
-# "private" - "Waterfox — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # .data-content-title-default and .data-content-title-private are for use when
 # there *is* a content title.
@@ -51,6 +51,70 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = { -brand-shortcut-name }-privénavigatie
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name }-privénavigatie
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — { -brand-full-name }-privénavigatie
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name }-privénavigatie
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name } — { -brand-full-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — { -brand-full-name }-privénavigatie
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
+#
+# .data-title-default-with-profile, .data-title-private-with-profile,
+# .data-content-title-default-with-profile,
+# .data-content-title-private-with-profile are used when there a
+# SelectableProfileService.current profile exists.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+#  $profile-name (String): the name of the current profile.
+browser-main-window-titles-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — privénavigatie
+    .data-title-default-with-profile = { $profile-name } — { -brand-full-name }
+    .data-title-private-with-profile = { $profile-name } — { -brand-full-name }-privénavigatie
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — privénavigatie
+    .data-content-title-default-with-profile = { $content-title } — { $profile-name }
+    .data-content-title-private-with-profile = { $content-title } — { $profile-name } — privénavigatie
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-default-title = { -brand-full-name }
 
 ##
 
@@ -123,6 +187,32 @@ urlbar-result-menu-remove-from-history =
 urlbar-result-menu-tip-get-help =
     .label = Hulp verkrijgen
     .accesskey = H
+urlbar-result-menu-dismiss-suggestion =
+    .label = Deze suggestie verwijderen
+    .accesskey = w
+urlbar-result-menu-learn-more-about-firefox-suggest =
+    .label = Meer info over { -firefox-suggest-brand-name }
+    .accesskey = M
+urlbar-result-menu-manage-firefox-suggest =
+    .label = { -firefox-suggest-brand-name } beheren
+    .accesskey = b
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location =
+    .label = Onjuiste locatie melden
+urlbar-result-menu-show-less-frequently =
+    .label = Minder vaak tonen
+urlbar-result-menu-dont-show-weather-suggestions =
+    .label = Geen weersuggesties tonen
+# A message shown in the urlbar when the user submits feedback on a suggestion
+# (e.g., it shows an inaccurate location, it's shown too often, etc.).
+urlbar-feedback-acknowledgment = Bedankt voor uw feedback
+# A message shown in the urlbar when the user dismisses weather suggestions.
+# Weather suggestions won't be shown at all anymore.
+urlbar-dismissal-acknowledgment-weather = Bedankt voor uw feedback. U ziet geen weersuggesties meer.
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -254,10 +344,17 @@ search-one-offs-actions =
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Add-ons bekijken
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-addons3 = extensies, thema’s, add-ons
 quickactions-cmd-addons2 = add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Bladwijzers beheren
 quickactions-cmd-bookmarks = bladwijzers
+# Opens a SUMO article explaining how to clear history
+quickactions-clearrecenthistory = Recente geschiedenis wissen
+quickactions-cmd-clearrecenthistory = recente geschiedenis wissen, geschiedenis
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Geschiedenis wissen
 quickactions-cmd-clearhistory = geschiedenis wissen
@@ -267,8 +364,18 @@ quickactions-cmd-downloads = downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = Extensies beheren
 quickactions-cmd-extensions = extensies
+# Opens Firefox View
+quickactions-firefoxview = { -firefoxview-brand-name } openen
+# English is using "view" and "open view", since the feature name is
+# "Firefox View". If you have translated the name in your language, you
+# should use a word related to the existing translation.
+quickactions-cmd-firefoxview = { -firefoxview-brand-name } openen, { -firefoxview-brand-name }, beeld openen, bekijken
+# Opens SUMO home page
+quickactions-help = Hulp voor { -brand-product-name }
+quickactions-cmd-help = hulp, ondersteuning
 # Opens the devtools web inspector
 quickactions-inspector2 = Ontwikkelaarshulpmiddelen openen
+quickactions-cmd-inspector2 = inspector, devtools, ontwikkelaarshulpmiddelen
 quickactions-cmd-inspector = inspector, devtools
 # Opens about:logins
 quickactions-logins2 = Wachtwoorden beheren
@@ -281,6 +388,7 @@ quickactions-print2 = Pagina afdrukken
 quickactions-cmd-print = afdrukken
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Pagina opslaan als PDF
+quickactions-cmd-savepdf2 = pdf, pagina opslaan
 quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Privévenster openen
@@ -293,22 +401,34 @@ quickactions-restart = { -brand-short-name } herstarten
 quickactions-cmd-restart = herstarten
 # Opens the screenshot tool
 quickactions-screenshot3 = Een schermafbeelding maken
+quickactions-cmd-screenshot2 = schermafdruk, een schermafdruk nemen
 quickactions-cmd-screenshot = schermafbeelding
 # Opens about:preferences
 quickactions-settings2 = Instellingen beheren
+# "manage" should match the corresponding command, which is “Manage settings” in English.
+quickactions-cmd-settings2 = instellingen, voorkeuren, opties, beheren
 quickactions-cmd-settings = instellingen, voorkeuren, opties
 # Opens about:addons page in the themes section
 quickactions-themes = Thema’s beheren
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = thema’s, add-ons
 quickactions-cmd-themes = thema’s
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = { -brand-short-name } bijwerken
 quickactions-cmd-update = bijwerken
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Paginabron bekijken
+quickactions-cmd-viewsource2 = bron bekijken, bron, paginabron
 quickactions-cmd-viewsource = bron bekijken, bron
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
     .title = Meer info over Snelle acties
+# Will be shown to users the first configurable number of times
+# they experience actions giving them instructions on how to
+# select the action shown by pressing the tab key.
+press-tab-label = Druk op Tab om te selecteren:
 
 ## Bookmark Panel
 
@@ -412,7 +532,7 @@ browser-window-minimize-button =
 browser-window-maximize-button =
     .tooltiptext = Maximaliseren
 browser-window-restore-down-button =
-    .tooltiptext = Omlaag herstellen
+    .tooltiptext = Kleiner venster herstellen
 browser-window-close-button =
     .tooltiptext = Sluiten
 
@@ -498,6 +618,10 @@ urlbar-search-mode-indicator-close =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = Voer zoekterm of adres in
+# This placeholder is used when not in search mode and searching in the urlbar
+# is disabled via the keyword.enabled pref.
+urlbar-placeholder-keyword-disabled =
+    .placeholder = Voer adres in
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -550,6 +674,8 @@ urlbar-go-button =
     .tooltiptext = Naar het adres in de locatiebalk gaan
 urlbar-page-action-button =
     .tooltiptext = Pagina-acties
+urlbar-revert-button =
+    .tooltiptext = Adres in de locatiebalk tonen
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -575,6 +701,8 @@ urlbar-result-action-visit = Bezoeken
 # Variables
 # $container (String): the name of the target container
 urlbar-result-action-switch-tab-with-container = Wisselen naar tabblad · <span>{ $container }</span>
+# Used when the target tab is in a tab group that doesn't have a label.
+urlbar-result-action-tab-group-unnamed = Naamloze groep
 # Allows the user to visit a URL that was previously copied to the clipboard.
 urlbar-result-action-visit-from-clipboard = Bezoeken vanaf klembord
 # Directs a user to press the Tab key to perform a search with the specified
@@ -604,12 +732,108 @@ urlbar-result-action-copy-to-clipboard = Kopiëren
 # Variables
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
+# The string returned for an undefined calculator result such as when dividing by 0
+urlbar-result-action-undefined-calculator-result = ongedefinieerd
+# Shows the result of a formula expression being calculated, in scientific notation.
+# The last = sign will be shown as part of the result (e.g. "= 1.0e17").
+# Variables
+#  $result (String): the string representation for a result in scientific notation
+#  (e.g. "1.0e17").
+urlbar-result-action-calculator-result-scientific-notation = = { $result }
+# Shows the result of a formula expression being calculated, this is used for numbers >= 1.
+# The last = sign will be shown as part of the result (e.g. "= 2").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-3 = = { NUMBER($result, useGrouping: "false", maximumFractionDigits: 8) }
+# Shows the result of a formula expression being calculated, to a maximum of 9 significant
+# digits. This is used for numbers < 1.
+# The last = sign will be shown as part of the result (e.g. "= 0.333333333").
+# Variables
+#  $result (String): the string representation for a formula result
+urlbar-result-action-calculator-result-decimal = = { NUMBER($result, maximumSignificantDigits: 9) }
+# The title of a weather suggestion in the urlbar. The temperature and unit
+# substring should be inside a <strong> tag. If the temperature and unit are not
+# adjacent in the localization, it's OK to include only the temperature in the
+# tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name of the city's region or country. Depending on
+#       the user's location in relation to the city, this may be the name or
+#       abbreviation of one of the city's administrative divisions like a
+#       province or state, or it may be the name of the city's country.
+urlbar-result-weather-title = <strong>{ $temperature }°{ $unit }</strong> in { $city }, { $region }
+# The title of a weather suggestion in the urlbar including a region and
+# country. The temperature and unit substring should be inside a <strong> tag.
+# If the temperature and unit are not adjacent in the localization, it's OK to
+# include only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+#   $region (String) - The name or abbreviation of one of the city's
+#       administrative divisions like a province or state.
+#   $country (String) - The name of the city's country.
+urlbar-result-weather-title-with-country = <strong>{ $temperature }°{ $unit }</strong> in { $city }, { $region }, { $country }
+# The title of a weather suggestion in the urlbar only including the city. The
+# temperature and unit substring should be inside a <strong> tag. If the
+# temperature and unit are not adjacent in the localization, it's OK to include
+# only the temperature in the tag.
+# Variables:
+#   $temperature (number) - The temperature value
+#   $unit (String) - The unit for the temperature, either "C" or "F"
+#   $city (String) - The name of the city the weather data is for
+urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</strong> in { $city }
+# Shows the name of the provider of weather data in a weather suggestion in the
+# urlbar.
+# Variables:
+#   $provider (String) - The name of the weather-data provider. It will be the
+#       name of a company, organization, or service.
+urlbar-result-weather-provider-sponsored = { $provider } · Gesponsord
 
 ## Strings used for buttons in the urlbar
 
 # Label prompting user to search with a particular search engine.
 #  $engine (String): the name of a search engine that searches a specific site
 urlbar-result-search-with = Zoeken met { $engine }
+# Label for the urlbar result row, prompting the user to use a local keyword to enter search mode.
+#  $keywords (String): the restrict keyword to enter search mode.
+#  $localSearchMode (String): the local search mode (history, tabs, bookmarks,
+#  or actions) to search with.
+urlbar-result-search-with-local-search-mode = { $keywords } – Zoeken in { $localSearchMode }
+# Label for the urlbar result row, prompting the user to use engine keywords to enter search mode.
+#  $keywords (String): the default keyword and user's set keyword if available
+#  $engine (String): the name of a search engine
+urlbar-result-search-with-engine-keywords = { $keywords } – Zoeken met { $engine }
+urlbar-searchmode-dropmarker =
+    .tooltiptext = Kies een zoekmachine
+urlbar-searchmode-bookmarks =
+    .label = Bladwijzers
+urlbar-searchmode-tabs =
+    .label = Tabbladen
+urlbar-searchmode-history =
+    .label = Geschiedenis
+urlbar-searchmode-actions =
+    .label = Acties
+urlbar-searchmode-exit-button =
+    .tooltiptext = Sluiten
+urlbar-searchmode-default =
+    .tooltiptext = Standaardzoekmachine
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = Deze keer zoeken met:
+urlbar-searchmode-popup-search-settings-menuitem =
+    .label = Zoekinstellingen
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button2 =
+    .label = { $engine }, kies een zoekmachine
+    .tooltiptext = { $engine }, kies een zoekmachine
+urlbar-searchmode-button-no-engine =
+    .label = Geen snelkoppeling geselecteerd, kies een snelkoppeling
+    .tooltiptext = Geen snelkoppeling geselecteerd, kies een snelkoppeling
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -619,10 +843,16 @@ urlbar-result-action-search-bookmarks = Bladwijzers doorzoeken
 urlbar-result-action-search-history = Geschiedenis doorzoeken
 urlbar-result-action-search-tabs = Tabbladen doorzoeken
 urlbar-result-action-search-actions = Zoekacties
+# Label for a quickaction result used to switch to an open tab group.
+#  $group (String): the name of the tab group to switch to
+urlbar-result-action-switch-to-tabgroup = Omschakelen naar { $group }
+# Label for a quickaction result used to re-opan a saved tab group.
+#  $group (String): the name of the tab group to re-open
+urlbar-result-action-open-saved-tabgroup = { $group } openen
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Waterfox Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -645,6 +875,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Trending op { $engine }
+# Label shown above sponsored suggestions in the urlbar results.
+urlbar-group-sponsored =
+    .label = Gesponsord
 # The result menu labels shown next to trending results.
 urlbar-result-menu-trending-dont-show =
     .label = Geen trending zoekopdrachten tonen
@@ -841,6 +1074,9 @@ panel-save-update-password = Wachtwoord
 # "More" item in macOS share menu
 menu-share-more =
     .label = Meer…
+menu-share-copy-link =
+    .label = Koppeling kopiëren
+    .accesskey = K
 ui-tour-info-panel-close =
     .tooltiptext = Sluiten
 
@@ -888,6 +1124,8 @@ navbar-accessible =
     .aria-label = Navigatie
 navbar-downloads =
     .label = Downloads
+navbar-overflow-2 =
+    .tooltiptext = Meer hulpmiddelen
 navbar-overflow =
     .tooltiptext = Meer hulpmiddelen…
 # Variables:
@@ -924,7 +1162,7 @@ restore-session-startup-suggestion-button = Tonen hoe
 
 filepicker-blocked-infobar = Uw organisatie heeft toegang tot lokale bestanden op deze computer geblokkeerd.
 
-## BrowserWorks data reporting notification (Telemetry, Waterfox Health Report, etc)
+## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } verzendt automatisch een aantal gegevens naar { -vendor-short-name }, zodat we uw ervaring kunnen verbeteren.
 data-reporting-notification-button =
@@ -932,6 +1170,9 @@ data-reporting-notification-button =
     .accesskey = K
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Privénavigatie
+# Tooltip for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-tooltip =
+    .tooltiptext = Privénavigatie
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -940,7 +1181,7 @@ content-analysis-indicator-tooltip =
 content-analysis-panel-title = Gegevensbescherming
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
-content-analysis-panel-text = Uw organisatie gebruikt { $agentName } om u te beschermen tegen gegevensverlies. <a data-l10n-name="info">Meer info</a>
+content-analysis-panel-text-styled = Uw organisatie gebruikt <b>{ $agentName }</b> om u te beschermen tegen gegevensverlies. <a data-l10n-name="info">Meer info</a>
 
 ## Unified extensions (toolbar) button
 
@@ -965,6 +1206,15 @@ unified-extensions-button-quarantined =
     .tooltiptext =
         Extensies
         Sommige extensies zijn niet toegestaan
+
+## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-blocklisted =
+    .label = Extensies
+    .tooltiptext =
+        Extensies
+        Sommige extensies zijn uitgeschakeld
 
 ## Private browsing reset button
 
@@ -992,7 +1242,7 @@ refresh-blocked-allow =
     .label = Toestaan
     .accesskey = T
 
-## Waterfox Relay integration
+## Firefox Relay integration
 
 firefox-relay-offer-why-to-use-relay = Onze veilige, gebruiksvriendelijke maskers beschermen uw identiteit en voorkomen spam door uw e-mailadres te verbergen.
 # Variables:
@@ -1005,10 +1255,16 @@ firefox-relay-offer-legal-notice = Door op ‘E-mailmasker gebruiken’ te klikk
 popup-notification-addon-install-unsigned =
     .value = (Niet geverifieerd)
 popup-notification-xpinstall-prompt-learn-more = Meer info over het veilig installeren van add-ons
-# Note: Access key is set to P to match "Private" in the corresponding localized label.
-popup-notification-addon-privatebrowsing-checkbox =
-    .label = Uitvoeren in privévensters
+popup-notification-xpinstall-prompt-block-url = Details bekijken
+# Note: Access key is set to p to match "private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox2 =
+    .label = Toestaan dat extensie in privévensters wordt uitgevoerd
     .accesskey = p
+# This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
+# but it is used in the install prompt, and it needs an access key.
+popup-notification-addon-technical-and-interaction-checkbox =
+    .label = Technische en interactiegegevens delen met extensieontwikkelaar
+    .accesskey = d
 
 ## Pop-up warning
 
@@ -1038,3 +1294,31 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = “{ $popupURI }” tonen
+
+## File-picker crash notification ("FilePickerCrashed.sys.mjs")
+
+file-picker-failed-open = Het Windows-bestandsdialoogvenster kon niet worden geopend. Er is geen bestand of map geselecteerd.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-failed-save-somewhere = Het Windows-bestandsdialoogvenster kon niet worden geopend. Het bestand wordt opgeslagen in { $path }.
+file-picker-failed-save-nowhere = Het Windows-bestandsdialoogvenster kon niet worden geopend. Er is geen standaardmap gevonden; het bestand zal niet worden opgeslagen.
+file-picker-crashed-open = Het Windows-bestandsdialoogvenster is gecrasht. Er is geen bestand of map geselecteerd.
+#   $path (string): The full path to which the file will be saved (e.g., 'C:\Users\Default User\Downloads\readme.txt').
+file-picker-crashed-save-somewhere = Het Windows-bestandsdialoogvenster is gecrasht. Het bestand wordt opgeslagen in { $path }.
+file-picker-crashed-save-nowhere = Het Windows-bestandsdialoogvenster is gecrasht. Er is geen standaardmap gevonden; het bestand zal niet worden opgeslagen.
+
+# Button used with file-picker-crashed-save-default. Opens the folder in Windows
+# Explorer, with the saved file selected and in focus.
+#
+# The wording here should be consistent with the Windows variant of
+# `downloads-cmd-show-menuitem-2` and similar messages.
+
+file-picker-crashed-show-in-folder =
+    .label = In map tonen
+    .accessKey = m
+
+## Onboarding Finish Setup checklist
+
+onboarding-checklist-button-label = Instellen voltooien
+onboarding-aw-finish-setup-button =
+    .label = Instellen voltooien
+    .tooltiptext = Instellen { -brand-short-name } voltooien

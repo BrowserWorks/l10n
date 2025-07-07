@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,11 +8,35 @@ tabbrowser-menuitem-close-tab =
     .label = Lat att fane
 tabbrowser-menuitem-close =
     .label = Lat att
+# Displayed within the tooltip on tabs inside of a tab group.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+tabbrowser-tab-tooltip-tab-group = { $tabGroupName }
+# Displayed within the tooltip on tabs in a container.
+# Variables:
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-container = { $containerName }
+# Displayed within the tooltip on tabs inside of a tab group if the tab is also in a container.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-tab-group-container = { $tabGroupName } — { $containerName }
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } - { $containerName }
+# This text serves as an on-screen tooltip as well as an accessible name for
+# the "X" button that is shown on the active tab or, when multiple tabs are
+# selected, to all their "X" buttons.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-button =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Lat att fane
+           *[other] Lat at { $tabCount } faner
+        }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -61,6 +85,16 @@ tabbrowser-unblock-tab-audio-tooltip =
            *[other] Spel av { $tabCount } faner
         }
 
+## Tooltips for tab audio control
+
+tabbrowser-unmute-tab-audio-aria-label =
+    .aria-label = Lyd på i fane
+tabbrowser-mute-tab-audio-aria-label =
+    .aria-label = Lyd av i fane
+# Used to unblock a tab with audio from autoplaying
+tabbrowser-unblock-tab-audio-aria-label =
+    .aria-label = Spel fane
+
 ## Confirmation dialog when closing a window with more than one tab open,
 ## or when quitting when only one window is open.
 
@@ -69,6 +103,7 @@ tabbrowser-unblock-tab-audio-tooltip =
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-confirm-close-tabs-title = Late att { $tabCount } faner?
 tabbrowser-confirm-close-tabs-button = Lat att faner
+tabbrowser-ask-close-tabs-checkbox = Spør før attlating av fleire faner
 tabbrowser-confirm-close-tabs-checkbox = Stadfest før attlating av fleire faner
 
 ## Confirmation dialog when quitting using the menu and multiple windows are open.
@@ -91,7 +126,21 @@ tabbrowser-confirm-close-tabs-with-key-title = Late att vindauge og avslutte { -
 tabbrowser-confirm-close-tabs-with-key-button = Avslutt { -brand-short-name }
 # Variables:
 #   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-ask-close-tabs-with-key-checkbox = Spør før du avsluttar med { $quitKey }
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
 tabbrowser-confirm-close-tabs-with-key-checkbox = Stadfest før du avsluttar med { $quitKey }
+
+## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
+## and browser.warnOnQuitShortcut is true.
+
+tabbrowser-confirm-close-warn-shortcut-title = Avslutt { -brand-short-name } eller lat att gjeldande fane?
+tabbrowser-confirm-close-windows-warn-shortcut-button =
+    { PLATFORM() ->
+        [windows] Avslutt { -brand-short-name }
+       *[other] Avslutt { -brand-short-name }
+    }
+tabbrowser-confirm-close-tab-only-button = Lat att denne fana
 
 ## Confirmation dialog when opening multiple tabs simultaneously
 
@@ -115,6 +164,10 @@ tabbrowser-confirm-caretbrowsing-checkbox = Ikkje vis denne dialogen igjen.
 
 tabbrowser-confirm-close-duplicate-tabs-title = Varsel
 tabbrowser-confirm-close-duplicate-tabs-text = Vi held den siste aktive fana open
+tabbrowser-confirm-close-all-duplicate-tabs-title = Late att dupliserte faner?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    Vi vil late att dupliserte faner i dette vindauget. Siste aktive
+    fane held fram med å vere open.
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Lat att faner
 
 ##
@@ -152,6 +205,9 @@ tabbrowser-ctrl-tab-list-all-tabs =
     .label = List opp alle { $tabCount } faner
 
 ## Tab manager menu buttons
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
 
 tabbrowser-manager-mute-tab =
     .tooltiptext = Lyd av i fane
@@ -159,3 +215,116 @@ tabbrowser-manager-unmute-tab =
     .tooltiptext = Lyd på i fane
 tabbrowser-manager-close-tab =
     .tooltiptext = Lat att fane
+# This is for tab groups that have been "saved and closed" (see tab-group-editor-action-save). It does
+# not include "deleted" tab groups (see tab-group-editor-action-delete).
+tabbrowser-manager-closed-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Attlaten
+tabbrowser-manager-current-window-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Gjeldande vindauge
+
+## Tab Groups
+
+tab-group-editor-title-create = Opprett fanegruppe
+tab-group-editor-title-edit = Handsam fanegruppe
+tab-group-editor-name-label = Namn
+tab-group-editor-name-field =
+    .placeholder = Døme: Shopping
+tab-group-editor-cancel =
+    .label = Avbryt
+    .accesskey = A
+tab-group-editor-color-selector =
+    .aria-label = Farge på fanegruppe
+tab-group-editor-color-selector2-blue = Blå
+    .title = Blå
+tab-group-editor-color-selector2-purple = Lilla
+    .title = Lilla
+tab-group-editor-color-selector2-cyan = Cyan
+    .title = Cyan
+tab-group-editor-color-selector2-orange = Oransje
+    .title = Oransje
+tab-group-editor-color-selector2-yellow = Gul
+    .title = Gul
+tab-group-editor-color-selector2-pink = Rosa
+    .title = Rosa
+tab-group-editor-color-selector2-green = Grøn
+    .title = Grøn
+tab-group-editor-color-selector2-gray = Grå
+    .title = Grå
+tab-group-editor-color-selector2-red = Raud
+    .title = Raud
+# Variables:
+#  $tabGroupName (String): The name of the tab group. Defaults to the value
+#                          of tab-group-name-default.
+tab-group-description = { $tabGroupName } — Fanegruppe
+tab-context-unnamed-group =
+    .label = Namnlaus gruppe
+tab-group-name-default = Namnlaus gruppe
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-move-tab-to-new-group =
+    .label =
+        { $tabCount ->
+            [1] Legg til fane i ny gruppe
+           *[other] Legg til faner i ny gruppe
+        }
+    .accesskey = n
+tab-context-move-tab-to-group =
+    .label =
+        { $tabCount ->
+            [1] Legg til fane i gruppe
+           *[other] Legg til faner i gruppe
+        }
+    .accesskey = g
+tab-group-editor-action-new-tab =
+    .label = Ny fane i gruppe
+tab-group-editor-action-new-window =
+    .label = Flytt gruppe til nytt vindauge
+tab-group-editor-action-save =
+    .label = Lagre og lat att gruppe
+tab-group-editor-action-ungroup =
+    .label = Avgrupper faner
+tab-group-editor-action-delete =
+    .label = Slett gruppe
+tab-group-editor-done =
+    .label = Ferdig
+    .accessKey = F
+tab-context-reopen-tab-group =
+    .label = Opne fanegruppe på nytt
+# Variables:
+#  $groupCount (Number): the number of tab groups that are affected by the action.
+tab-context-ungroup-tab =
+    .label =
+        { $groupCount ->
+            [1] Fjern frå gruppe
+           *[other] Remove from Groups
+        }
+    .accesskey = F
+
+## Open/saved tab group context menu
+
+# For a tab group open in any window, clicking this will create a new
+# window and move this tab group to that new window.
+tab-group-context-move-to-new-window =
+    .label = Flytt gruppe til nytt vindauge
+# For a tab group open in a different window from the one that the
+# user is using to access the tab group menu, move that tab group into the
+# user's current window.
+tab-group-context-move-to-this-window =
+    .label = Flytt gruppe til dette vindauget
+# For a tab group that is open in any window, close the tab group and
+# do not save it. For a tab group that is closed but saved by the user, clicking
+# this will forget the saved tab group.
+tab-group-context-delete =
+    .label = Slett gruppe
+# For a saved tab group that is not open in any window, open the tab group
+# in the user's current window.
+tab-group-context-open-saved-group-in-this-window =
+    .label = Opne gruppe i dette vindauget
+# For a saved tab group that is not open in any window, create a new window and
+# open the tab group in that window.
+tab-group-context-open-saved-group-in-new-window =
+    .label = Opne gruppe i nytt vindauge

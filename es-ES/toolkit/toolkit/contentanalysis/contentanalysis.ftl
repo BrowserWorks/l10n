@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,6 +11,15 @@ contentanalysis-slow-agent-dialog-header = Escaneo en curso
 #   $agent - The name of the DLP agent doing the analysis
 #   $filename - Name of the file being analyzed, such as "aFile.txt"
 contentanalysis-slow-agent-dialog-body-file = { $agent } está revisando “{ $filename }” según las políticas de datos de su organización. Esto puede llevar un momento
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of a file being analyzed, such as "aFile.txt"
+#   $count (number) - The number of additional items in the request for analysis
+contentanalysis-slow-agent-dialog-body-file-and-more =
+    { $count ->
+        [one] { $agent } está revisando “{ $filename }” y { $count } elemento adicional según las políticas de datos de su organización. Esto puede llevar un momento.
+       *[other] { $agent } está revisando “{ $filename }” y { $count } elementos adicionales según las políticas de datos de su organización. Esto puede llevar un momento.
+    }
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 contentanalysis-slow-agent-dialog-body-clipboard = { $agent } está revisando lo que ha pegado según las políticas de datos de su organización. Esto puede tardar un momento
@@ -41,21 +50,6 @@ contentanalysis-genericresponse-message = El análisis de contenido ha respondid
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
 contentanalysis-block-message = Su organización utiliza software de prevención de pérdida de datos que ha bloqueado este contenido: { $content }.
 # Variables:
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-error-message = Ha ocurrido un error al comunicarse con el software de prevención de pérdida de datos. Transferencia denegada para el recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-unspecified-error-message = Ha ocurrido un error al comunicarse con { $agent }. Transferencia denegada para el recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-no-agent-connected-message = No se puede conectar con { $agent }. Transferencia denegada para el recurso: { $content }.
-# Variables:
-#   $agent - The name of the DLP agent doing the analysis
-#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-invalid-agent-signature-message = Ha fallado la verificación de firma para { $agent }. Transferencia denegada para el recurso: { $content }.
-# Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
 contentanalysis-unspecified-error-message-content = Se ha producido un error al establecer comunicación con { $agent }. { $content }
@@ -73,6 +67,10 @@ contentanalysis-error-message-upload-file = Carga de “{ $filename }” denegad
 contentanalysis-error-message-dropped-text = Arrastrar y soltar denegado.
 contentanalysis-error-message-clipboard = Pegar denegado.
 contentanalysis-error-message-print = Impresión denegada.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
+contentanalysis-timeout-block-error-message-content = Se agotó el tiempo de conexión a { $agent }. { $contentName } ha sido bloqueado.
 contentanalysis-block-dialog-title-upload-file = No tiene permiso para subir este archivo.
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"

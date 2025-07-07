@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = 세피아
     .title = 세피아 색 구성표
 about-reader-color-scheme-auto = 자동
     .title = 자동 색 구성표
-about-reader-color-theme-light = 밝게
-    .title = 밝은 색상 테마
-about-reader-color-theme-dark = 어둡게
-    .title = 어두운 색상 테마
-about-reader-color-theme-sepia = 세피아
-    .title = 세피아 색상 테마
-about-reader-color-theme-auto = 자동
-    .title = 자동 색상 테마
-about-reader-color-theme-gray = 회색
-    .title = 회색 색상 테마
-about-reader-color-theme-contrast = 대비
-    .title = 대비 색상 테마
-about-reader-color-theme-custom = 사용자 색상
-    .title = 사용자 색상 테마
 about-reader-color-light-theme = 밝게
     .title = 밝은 테마
 about-reader-color-dark-theme = 어둡게
@@ -45,7 +31,7 @@ about-reader-color-contrast-theme = 대비
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 about-reader-estimated-read-time = { $range }분
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = 글꼴 크기 줄이기
@@ -70,7 +56,6 @@ about-reader-font-type-monospace = 고정폭
 
 about-reader-toolbar-close = 리더뷰 닫기
 about-reader-toolbar-type-controls = 글자 조절
-about-reader-toolbar-color-controls = 색상
 about-reader-toolbar-text-layout-controls = 텍스트 및 레이아웃
 about-reader-toolbar-theme-controls = 테마
 about-reader-toolbar-savetopocket = { -pocket-brand-name }에 저장
@@ -95,10 +80,24 @@ about-reader-custom-colors-visited-links = 방문한 링크
     .title = 색상 편집
 about-reader-custom-colors-selection-highlight = 소리내어 읽기 하이라이터
     .title = 색상 편집
-about-reader-custom-colors-reset-button = 기본값 재설정
 about-reader-reset-button = 기본값 재설정
+about-reader-custom-colors-foreground2 =
+    .label = 텍스트
+    .title = 색상 편집
+about-reader-custom-colors-background2 =
+    .label = 배경
+    .title = 색상 편집
+about-reader-custom-colors-unvisited-links2 =
+    .label = 방문하지 않은 링크
+    .title = 색상 편집
+about-reader-custom-colors-visited-links2 =
+    .label = 방문한 링크
+    .title = 색상 편집
+about-reader-custom-colors-selection-highlight2 =
+    .label = 소리내어 읽기 하이라이터
+    .title = 색상 편집
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = 텍스트
 about-reader-text-size-label = 글자 크기
@@ -115,9 +114,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = 줄 간격
 about-reader-advanced-layout-header = 고급
-about-reader-slider-label-width-narrow = 좁게
-about-reader-slider-label-width-wide = 넓게
-about-reader-slider-label-spacing-narrow = 좁게
 about-reader-character-spacing-label =
     .label = 문자 간격
 about-reader-word-spacing-label =
@@ -129,3 +125,5 @@ about-reader-text-alignment-center =
     .title = 텍스트 중앙 정렬
 about-reader-text-alignment-right =
     .title = 텍스트 오른쪽 정렬
+about-reader-text-alignment-justify =
+    .title = 텍스트 양쪽 맞춤

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,11 @@ about-glean-interface-description =
     egy a { -vendor-short-name } projekjeiben használt adatgyűjtő programkönyvtár.
     Ez a felület arra lett tervezve, hogy a fejlesztők és tesztelők kézileg
     <a data-l10n-name="fog-link">teszteljék a mérőeszközöket</a>.
+about-glean-category-about-glean = A { -glean-brand-name } névjegye
+about-glean-category-manual-testing = Kézi tesztelés
+about-glean-category-adhoc-testing = Ad hoc tesztelés
+about-glean-category-profiler = A Profilozó használata
+about-glean-category-about-data = Információk az adatokról
 about-glean-upload-enabled = Az adatfeltöltés engedélyezett.
 about-glean-upload-disabled = Az adatfeltöltés le van tiltva.
 about-glean-upload-enabled-local = Az adatfeltöltés csak helyi kiszolgálóra történő küldés esetén engedélyezett.
@@ -43,6 +48,9 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links =
+    Az adatok rögzítésének és keresésének különböző módjainak magyarázatához tekintse meg az
+    <strong>Információk az adatokról</strong> lapot.
 about-glean-about-testing-header = Tudnivalók a tesztelésről
 # This message is followed by a numbered list.
 about-glean-manual-testing =
@@ -100,8 +108,38 @@ about-glean-adhoc-note =
     Vegye figyelembe, hogy a fejlesztői eszközök konzolban a Glean JS API-t használja.
     Ez azt jelenti, hogy a metrikák kategóriája és neve <code>camelCase</code>
     formázást használ, ellentétben a Rust és C++ API-kkal.
+about-glean-profiler-explanation =
+    Az összes rögzített metrika teljes nézetéhez használja a { -profiler-brand-name }t.
+    Először egy <a data-l10n-name="firefox-profiler-link">teljesítményprofilt kell rögzítenie</a>.
+    A profil rögzítése után válassza a <q>Marker Chart</q> lehetőséget, és nézze meg a jelölőket a <q>Telemetry</q> szakasz alatt.
+about-glean-profiler-explanation-profiler =
+    A teljesítményprofilban látható az összes begyűjtött mérőszám, illetve hogy mikor
+    és pontosan milyen értékek lettek begyűjtve. Az egyes jelölőkre mutatva ellenőrizheti,
+    hogy a megfelelő érték lett-e begyűjtve, és hogy a gyűjtés a megfelelő időben történt-e.
 controls-button-label-verbose = Beállítások alkalmazása, és ping küldése
+about-glean-feedback-settings-only =
+    .message = Beállítások alkalmazva.
+about-glean-feedback-settings-and-ping =
+    .message = Beállítások alkalmazva, és a ping elküldve.
 about-glean-about-data-header = Információk az adatokról
+about-glean-about-data-description =
+    Különböző eszközök segítségével jelenítheti meg az adatokat,
+    attól függően, hogy mire kíváncsi.
+about-glean-about-data-description-list-intro =
+    Tekintse meg az alábbi listát az egyes eszközök
+    konkrét felhasználásairól:
+about-glean-about-data-list-item-dictionary =
+    A { -glean-brand-name } által alkalmazásonként gyűjtött adatok listájának böngészéséhez tekintse
+    meg a <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } szótárat</a>.
+about-glean-about-data-list-item-about-telemetry =
+    A hagyományos telemetria által gyűjtött adatok közti tallózáshoz forduljon a következőhöz:
+    <a data-l10n-name="about-telemetry-link">about:telemetry</a>.
+about-glean-about-data-list-item-debug-ping-viewer =
+    A hibakeresési címkék böngészéséhez tekintse meg a teljes pingeket, tekintse meg az élő eseményfolyamot vagy tekintse meg a mutatók
+    vizualizációit, tekintse meg a<a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }t</a>.
+about-glean-about-data-list-item-firefox-profiler =
+    Teljesítményprofil rögzítéséhez és az összes rögzített metrika megtekintéséhez használja a
+    <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }t</a>.
 about-glean-about-data-explanation =
     Az összegyűjtött adatok tallózásához tekintse meg a
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Szótárat</a>.

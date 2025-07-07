@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,12 +6,14 @@
 ## Error page titles
 
 neterror-page-title = 頁面載入發生問題
-certerror-page-title = 警告: 本網站可能有安全性風險
-certerror-sts-page-title = 未連線: 潛在的安全性問題
+certerror-page-title = 警告：本網站可能有安全性風險
+certerror-sts-page-title = 未連線：可能有安全性問題
 neterror-blocked-by-policy-page-title = 已封鎖頁面
 neterror-captive-portal-page-title = 登入到網路
 neterror-dns-not-found-title = 找不到伺服器
 neterror-malformed-uri-page-title = 網址無效
+general-body-title = 請小心，有些東西不對勁。
+problem-with-this-site-title = 看來此網站有點問題
 
 ## Error page actions
 
@@ -41,6 +43,9 @@ neterror-generic-error = { -brand-short-name } 因為某些原因無法載入此
 neterror-load-error-try-again = 該網站可能暫時無法使用或太過忙碌，請過幾分鐘後再試試。
 neterror-load-error-connection = 若無法載入任何網站，請檢查您的網路連線狀態。
 neterror-load-error-firewall = 若電腦或網路被防火牆或 Proxy 保護，請確定 { -brand-short-name } 被允許存取網路。
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = 若您要開啟的本地區域網路頁面，請確認已經在 macOS 的「隱私權與安全性」選項當中，授權 { -brand-short-name } 存取本地網路權限。
+neterror-http-error-page = 請檢查是否正確輸入網址。
 neterror-captive-portal = 您必須先登入才能存取網際網路。
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -49,6 +54,10 @@ neterror-dns-not-found-hint-header = <strong>若您確認輸入的網址是正�
 neterror-dns-not-found-hint-try-again = 稍後再試
 neterror-dns-not-found-hint-check-network = 檢查網際網路連線是否正常
 neterror-dns-not-found-hint-firewall = 檢查 { -brand-short-name } 是否有權限開啟網頁（可能已經連上網路，但被防火牆阻擋）
+neterror-dns-not-found-offline-hint-header = <strong>您可以做什麼？</strong>
+neterror-dns-not-found-offline-hint-different-device = 嘗試改連線到其他裝置。
+neterror-dns-not-found-offline-hint-modem = 檢查您的數據機或路由器。
+neterror-dns-not-found-offline-hint-reconnect = 中斷，然後重新連線到 Wi-Fi 網路。
 
 ## TRR-only specific messages
 ## Variables:
@@ -64,6 +73,7 @@ neterror-dns-not-found-trr-offline = 您未連線到網際網路。
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain } 找不到此網站。
 neterror-dns-not-found-trr-server-problem = { $trrDomain } 發生問題。
 neterror-dns-not-found-bad-trr-url = 網址無效。
+neterror-dns-not-found-system-sleep = 系統處於睡眠模式。
 neterror-dns-not-found-trr-unknown-problem = 發生未預期的問題。
 
 ## Native fallback specific messages
@@ -95,6 +105,9 @@ neterror-proxy-connect-failure-settings = 請檢查 Proxy 設定是否正確。
 neterror-proxy-connect-failure-contact-admin = 與您的網路管理員聯絡，確定 Proxy 伺服器正常運作。
 neterror-content-encoding-error = 請向網站擁有者回報此問題。
 neterror-unsafe-content-type = 請向網站擁有者回報此問題。
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = 由於連線不安全，{ -brand-short-name } 無法信任 { $hostname }。可將網址更改為 HTTPS 網址再試試看。
 neterror-nss-failure-not-verified = 因為無法驗證已接收資料的真實性，無法顯示您嘗試檢視的頁面。
 neterror-nss-failure-contact-website = 請向網站擁有者回報此問題。
 # Variables:
@@ -113,12 +126,12 @@ certerror-mitm = <b>{ $hostname }</b> 應該是一個安全的網站，但無法
 neterror-corrupted-content-intro = 因為在資料傳輸過程當中偵測到錯誤，無法顯示您正要檢視的頁面。
 neterror-corrupted-content-contact-website = 請向網站擁有者回報此問題。
 # Do not translate "SSL_ERROR_UNSUPPORTED_VERSION".
-neterror-sslv3-used = 進階資訊: SSL_ERROR_UNSUPPORTED_VERSION
+neterror-sslv3-used = 進階資訊：SSL_ERROR_UNSUPPORTED_VERSION
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 neterror-inadequate-security-intro = <b>{ $hostname }</b> 使用過時的安全性技術，容易遭受攻擊。攻擊者可以簡單地得知您認為安全的資訊。網站管理員修正伺服器設定後您才能連線至此網站。
 # Do not translate "NS_ERROR_NET_INADEQUATE_SECURITY".
-neterror-inadequate-security-code = 錯誤代碼: NS_ERROR_NET_INADEQUATE_SECURITY
+neterror-inadequate-security-code = 錯誤代碼：NS_ERROR_NET_INADEQUATE_SECURITY
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 # $now (Date) - The current datetime, to be formatted as a date
@@ -147,3 +160,11 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = 若您不了解 <b>{ $mitm 
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> 有一條稱為 HTTP Strict Transport Security (HSTS) 的安全性政策，讓 { -brand-short-name } 僅能與其進行安全連線。您無法加入例外，手動排除此政策。
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = 可能無法由您解決，因為這通常是網站本身的問題。
+certerror-blocked-by-corp-headers-description = 有時網站會設定一些保護機制，避免網站本身與像您這樣的使用者，受到與其他網站間不必要的互動影響。
+certerror-coop-learn-more = 了解 Cross Origin Opener Policies（COOP）的更多資訊
+certerror-coep-learn-more = 了解 Cross Origin Embedder Policies（COEP）的更多資訊
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = 錯誤代碼：{ $responsestatus } { $responsestatustext }

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% færdig
 firefoxview-tabpickup-step-signin-header = Skift nemt mellem enheder
 firefoxview-tabpickup-step-signin-description = For at hente faneblade fra din telefon skal du først logge ind eller oprette en konto.
 firefoxview-tabpickup-step-signin-primarybutton = Fortsæt
+firefoxview-syncedtabs-signin-header-2 = Din { -brand-product-name } på alle dine enheder
+firefoxview-syncedtabs-signin-description-2 = For at se åbne faneblade fra din telefon og andre enheder, skal du logge ind eller oprette en konto. Med en konto kan du også synkronisere dine adgangskoder, din historik og mere.
+firefoxview-syncedtabs-signin-primarybutton-2 = Log ind
 firefoxview-syncedtabs-signin-header = Hent faneblade uanset hvor du er
 firefoxview-syncedtabs-signin-description = Log ind på din konto for at se faneblade fra dine andre enheder med { -brand-product-name }. Hvis du ikke har en konto, så kan vi føre dig gennem trinene for at tilmelde dig.
 firefoxview-syncedtabs-signin-primarybutton = Log ind eller tilmeld dig
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synkroniser { -brand-product-name } på
 firefoxview-tabpickup-adddevice-description = Hent { -brand-product-name } til mobil og login på din telefon.
 firefoxview-tabpickup-adddevice-learn-how = Læs hvordan
 firefoxview-tabpickup-adddevice-primarybutton = Hent { -brand-product-name } til mobilen
+firefoxview-syncedtabs-adddevice-header-2 = Hent faneblade uanset hvor du er
+firefoxview-syncedtabs-adddevice-description-2 = Log ind på { -brand-product-name } på din telefon eller en anden computer for at se faneblade her. Læs mere om, hvordan du <a data-l10n-name="url">opretter forbindelse til flere enheder</a>.
 firefoxview-syncedtabs-adddevice-header = Log ind på { -brand-product-name } på dine andre enheder
 firefoxview-syncedtabs-adddevice-description = Log ind på alle dine enheder for at se dine faneblade fra alle de steder, du bruger { -brand-product-name }. <a data-l10n-name="url">Sådan tilføjer du nye enheder</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Prøv { -brand-product-name } på din mobil
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Faneblade fra andre enheder
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Vis alle
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Søg i senest lukkede faneblade
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Søg i faneblade
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Søg i synkroniserede faneblade
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (lokale filer)
 firefoxview-show-all-history = Vis al historik
 firefoxview-view-more-browsing-history = Vis mere browserhistorik
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Find tilbage til hvor du var tidligere
 firefoxview-history-empty-description = Her vises sider, du har besøgt tidligere.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = At beskytte dit privatliv er en del 
 firefoxview-choose-browser-button = Vælg browser
     .title = Vælg browser
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Intet at vise
 firefoxview-dont-remember-history-empty-description = At beskytte dit privatliv er en del af vores mission. Derfor er det dig, der bestemmer hvilke aktiviteter { -brand-short-name } husker.
 firefoxview-dont-remember-history-empty-description-two = I overensstemmelse med dine aktuelle indstillinger husker { -brand-short-name } ikke dine aktiviteter på nettet. For at ændre dette skal du <a data-l10n-name="history-settings-url-two">ændre dine indstillinger for historik til at huske din historik</a>.
+firefoxview-dont-remember-history-empty-header-2 = Du har kontrollen over, hvilke data { -brand-short-name } gemmer
+firefoxview-dont-remember-history-empty-description-one = I øjeblikket husker { -brand-short-name } ikke dine aktiviteter på nettet. Hvis du vil ændre dette, skal du <a data-l10n-name="history-settings-url-two">opdatere dine indstillinger for historik</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Luk
     .title = Luk
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importer historik fra en anden browser
 firefoxview-import-history-description = Gør { -brand-short-name } til din foretrukne browser. Importer historik, bogmærker og mere.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Lukkede du et faneblad for hurtigt?
 firefoxview-recentlyclosed-empty-description = Her kan du finde faneblade, du har lukket for nyligt. Så kan du hurtigt åbne nogen af dem igen.

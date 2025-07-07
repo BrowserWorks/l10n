@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,8 +40,8 @@ certificate-viewer-logid = ログ ID
 certificate-viewer-method = 方式
 certificate-viewer-modulus = 母数
 certificate-viewer-name = 名称
-certificate-viewer-not-after = 終了日
-certificate-viewer-not-before = 開始日
+certificate-viewer-not-after = 終了日時
+certificate-viewer-not-before = 開始日時
 certificate-viewer-organization = 組織
 certificate-viewer-organizational-unit = 組織単位
 certificate-viewer-policy = ポリシー
@@ -81,31 +81,30 @@ certificate-viewer-authority-info-aia = 機関情報アクセス (AIA)
 certificate-viewer-certificate-policies = 証明書ポリシー
 certificate-viewer-embedded-scts = 埋め込み SCT
 certificate-viewer-crl-endpoints = CRL エンドポイント
-
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = ダウンロード
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
 # Variables:
 #   $boolean (String) - true/false value for the specific field
-certificate-viewer-boolean = { $boolean ->
-  [true] はい
- *[false] いいえ
-}
+certificate-viewer-boolean =
+    { $boolean ->
+        [true] はい
+       *[false] いいえ
+    }
 
 ## Variables:
 ##   $fileName (String) - The file name to save the PEM data in, derived from the common name from the certificate being displayed.
 
 certificate-viewer-download-pem = PEM (証明書)
-  .download = { $fileName }.pem
+    .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (チェーン)
-  .download = { $fileName }-chain.pem
-
+    .download = { $fileName }-chain.pem
 # The title attribute for Critical Extension icon
 certificate-viewer-critical-extension =
-  .title = この拡張には危険マークが付けられており、クライアントがこれを理解できない場合は証明書を却下すべきであることを意味します。
+    .title = この拡張には危険マークが付けられており、クライアントがこれを理解できない場合は証明書を却下すべきであることを意味します。
 certificate-viewer-export = エクスポート
-  .download = { $fileName }.pem
+    .download = { $fileName }.pem
 
 ##
 

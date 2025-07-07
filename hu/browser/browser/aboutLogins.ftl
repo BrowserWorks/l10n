@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
@@ -7,8 +7,6 @@ about-logins-page-title = Bejelentkezések és jelszavak
 about-logins-login-filter =
     .placeholder = Bejelentkezések keresése
     .key = F
-create-new-login-button =
-    .title = Új bejelentkezés létrehozása
 about-logins-page-title-name = Jelszavak
 about-logins-login-filter2 =
     .placeholder = Jelszavak keresése
@@ -113,7 +111,7 @@ login-intro-instructions-fxa2 = Hozzon létre egyet, vagy jelentkezzen be a fió
 login-intro-instructions-fxa-settings = Válassza a Beállítások > Szinkronizálás > Szinkronizálás bekapcsolása… lehetőséget. Jelölje be a Bejelentkezések és jelszavak jelölőnégyzetet.
 login-intro-instructions-fxa-passwords-help = További segítségért keresse fel a <a data-l10n-name="passwords-help-link">jelszavak támogatását</a>.
 about-logins-intro-browser-only-import = Ha bejelentkezéseit egy másik böngészőben mentette el, <a data-l10n-name="import-link">importálhatja azokat a { -brand-product-name }ba</a>
-about-logins-intro-import2 = Ha a bejelentkezéseit a { -brand-product-name }on kívül mentette, akkor <a data-l10n-name="import-browser-link">importálhatja őket egy másik böngészőből</a> vagy <a data-l10n-name="import-file-link">egy fájlból</a>
+about-logins-intro-import2 = Ha a bejelentkezéseit a { -brand-product-name }on kívül mentette, akkor <a data-l10n-name="import-browser-link">importálhatja őket egy másik böngészőből</a> vagy <a data-l10n-name="import-file-link">egy fájlból</a>create-new-login-button =
 about-logins-intro-import3 = Válassza a plusz jelet a jelszó hozzáadásához most. Továbbá <a data-l10n-name="import-browser-link">importálhatja is őket egy másik böngészőből</a> vagy <a data-l10n-name="import-file-link">egy fájlból</a>
 
 ## Login
@@ -140,6 +138,8 @@ login-item-copied-username-button-text = Másolva!
 login-item-password-label = Jelszó
 login-item-password-reveal-checkbox =
     .aria-label = Jelszó megjelenítése
+login-item-password-conceal-checkbox =
+    .aria-label = Jelszó elrejtése
 login-item-copy-password-button-text = Másolás
 login-item-copied-password-button-text = Másolva!
 login-item-save-changes-button = Változások mentése
@@ -162,7 +162,7 @@ login-item-timeline-action-used = Használva
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Waterfox is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
@@ -171,7 +171,7 @@ about-logins-edit-login-os-auth-dialog-message-win = A bejelentkezés szerkeszt�
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = szerkessze a mentett bejelentkezést
-# The macOS strings are preceded by the operating system with "Waterfox is trying to ".
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
 # This message can be seen when attempting to disable osauth in about:preferences.
 about-logins-os-auth-dialog-message =
     { PLATFORM() ->
@@ -425,9 +425,9 @@ about-logins-import-dialog-items-error =
 about-logins-import-dialog-done = Kész
 about-logins-import-dialog-error-title = Importálási hiba
 about-logins-import-dialog-error-conflicting-values-title = Több ütköző érték egy bejelentkezéshez
-about-logins-import-dialog-error-conflicting-values-description = Például: több felhasználónév, jelszó, URL-ek stb. egy bejelentkezéshez.
+about-logins-import-dialog-error-conflicting-values-description = Például: több felhasználónév, jelszó, webcímek stb. egy bejelentkezéshez.
 about-logins-import-dialog-error-file-format-title = Fájlformátum probléma
-about-logins-import-dialog-error-file-format-description = Helytelen vagy hiányzó oszlopfejlécek. Ellenőrizze, hogy a fájl tartalmaz-e oszlopokat a felhasználónévhez, a jelszóhoz és az URL-hez.
+about-logins-import-dialog-error-file-format-description = Helytelen vagy hiányzó oszlopfejlécek. Ellenőrizze, hogy a fájl tartalmaz-e oszlopokat a felhasználónévhez, a jelszóhoz és a webcímhez.
 about-logins-import-dialog-error-file-permission-title = Nem lehet olvasni a fájlt
 about-logins-import-dialog-error-file-permission-description = A { -brand-short-name }nak nincs engedélye a fájl olvasásához. Próbálja módosítani a fájl jogosultságait.
 about-logins-import-dialog-error-unable-to-read-title = Nem lehet értelmezni a fájlt

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% concluído
 firefoxview-tabpickup-step-signin-header = Alterne facilmente entre dispositivos
 firefoxview-tabpickup-step-signin-description = Para obter os separadores do seu telemóvel aqui, primeiro, entre ou crie uma conta.
 firefoxview-tabpickup-step-signin-primarybutton = Continuar
+firefoxview-syncedtabs-signin-header-2 = O seu { -brand-product-name } em todos os seus dispositivos
+firefoxview-syncedtabs-signin-description-2 = Para ver os separadores que tem abertos no seu telemóvel e outros dispositivos, inicie sessão ou registe-se para uma conta. Com uma conta, pode também sincronizar as suas palavras-passe, histórico e muito mais.
+firefoxview-syncedtabs-signin-primarybutton-2 = Iniciar sessão
 firefoxview-syncedtabs-signin-header = Obtém separadores de qualquer sítio
 firefoxview-syncedtabs-signin-description = Para ver os seus separadores onde quer que utilize o { -brand-product-name }, inicie sessão na sua conta. Se não tiver uma conta, iremos indicar os passos para se registar.
 firefoxview-syncedtabs-signin-primarybutton = Iniciar sessão ou registar
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Sincronize o { -brand-product-name } no
 firefoxview-tabpickup-adddevice-description = Transfira o { -brand-product-name } para dispositivos móveis e inicie sessão no mesmo.
 firefoxview-tabpickup-adddevice-learn-how = Saber mais
 firefoxview-tabpickup-adddevice-primarybutton = Obtenha o { -brand-product-name } para dispositivos móveis.
+firefoxview-syncedtabs-adddevice-header-2 = Obtenha separadores a partir de qualquer sítio
+firefoxview-syncedtabs-adddevice-description-2 = Inicie sessão no { -brand-product-name } no seu telefone ou outro computador para ver os separadores aqui. Aprenda como <a data-l10n-name="url">associar dispositivos adicionais</a>.
 firefoxview-syncedtabs-adddevice-header = Iniciar sessão no { -brand-product-name } nos seus outros dispositivos
 firefoxview-syncedtabs-adddevice-description = Para ver os seus separadores onde quer que utilize o { -brand-product-name }, inicie sessão em todos os seus dispositivos. Saiba como <a data-l10n-name="url">associar dispositivos adicionais</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Experimente o { -brand-product-name } para dispositivos móveis
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Separadores de outros dispositivos
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Ver tudo
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Pesquisar separadores fechados recentemente
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Pesquisar separadores
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Pesquisar nos separadores sincronizados
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (ficheiros locais)
 firefoxview-show-all-history = Mostrar todo o histórico
 firefoxview-view-more-browsing-history = Ver mais histórico de navegação
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Regresse para onde já esteve
 firefoxview-history-empty-description = Enquanto navega, as páginas visitadas serão listadas aqui.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Proteger a sua privacidade está no 
 firefoxview-choose-browser-button = Escolher o navegador
     .title = Escolher o navegador
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Nada a mostrar
 firefoxview-dont-remember-history-empty-description = Proteger a sua privacidade está no centro do que fazemos. É por isto que pode controlar a atividade que o { -brand-short-name } guarda.
 firefoxview-dont-remember-history-empty-description-two = Com base nas suas definições atuais, o { -brand-short-name } não guarda a sua atividade enquanto você navega. Para mudar isto, <a data-l10n-name="history-settings-url-two">altere as suas definições do histórico para guardar o seu histórico</a>.
+firefoxview-dont-remember-history-empty-header-2 = Tem o controlo absoluto sobre o que o { -brand-short-name } memoriza
+firefoxview-dont-remember-history-empty-description-one = Neste momento, o { -brand-short-name } não guarda a sua atividade de navegação. Para alterar isto, <a data-l10n-name="history-settings-url-two">atualize as suas definições do histórico</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Fechar
     .title = Fechar
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importar histórico de outro navegador
 firefoxview-import-history-description = Faça do { -brand-short-name } o seu navegador de eleição. Importe histórico de navegação, marcadores e muito mais.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Fechou um separador por engano?
 firefoxview-recentlyclosed-empty-description = Aqui poderá encontrar os separadores que fechou recentemente, para que possa reabrir qualquer um dos mesmos rapidamente.

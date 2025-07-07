@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,3 +33,71 @@ searchbar-icon =
 removed-search-engine-message = <strong>您的默认搜索引擎有变动。</strong>“{ $oldEngine }”不再作为 { -brand-short-name } 的默认搜索引擎，现已替换为“{ $newEngine }”。若要使用其他搜索引擎，请前往“设置”页面。<label data-l10n-name="remove-search-engine-article">详细了解</label>
 removed-search-engine-message2 = <strong>您的默认搜索引擎有变动。</strong>“{ $oldEngine }”不再作为 { -brand-short-name } 的默认搜索引擎，现已替换为“{ $newEngine }”。若要使用其他搜索引擎，请前往“设置”页面。
 remove-search-engine-button = 确定
+
+## Infobar shown when default search engine is reset due to an issue reading the settings file.
+## Variables
+## $newEngine (String) - the name of the new default search engine.
+
+reset-search-settings-message = 由于遇到技术问题，您的默认搜索引擎已改回 { $newEngine }。请到“设置”更改默认搜索引擎。
+reset-search-settings-button = 确定
+
+## Infobar shown when user is prompted to install search engine.
+## Variables
+## $engineName (String) - the name of the search engine to install.
+
+install-search-engine = 要将“{ $engineName }”添加为搜索引擎吗？
+install-search-engine-add = 添加
+install-search-engine-no = 取消
+
+## The following strings are used as input labels.
+
+add-engine-window =
+    .title = 添加搜索引擎
+    .style = min-width: 32em;
+edit-engine-window =
+    .title = 编辑搜索引擎
+    .style = min-width: 32em;
+add-engine-button = 添加自定义引擎
+add-engine-name = 搜索引擎名称
+add-engine-url2 = 网址（用 %s 代替搜索词）
+add-engine-keyword2 = 关键字（选填）
+# POST and GET refer to the HTTP methods.
+add-engine-post-data = POST 数据，用 %s 代替搜索词（若使用 GET 方法请留空）
+add-engine-suggest-url = 搜索建议网址（选填，用 %s 代替搜索词）
+
+## The following placeholders are shown in the inputs when adding a new engine.
+
+add-engine-name-placeholder =
+    .placeholder = 例如：BrowserWorks 开发者网络
+add-engine-url-placeholder =
+    .placeholder = 例如：https://developer.mozilla.com/search?q=%s
+add-engine-keyword-placeholder =
+    .placeholder = 例如：@mdn
+
+## The following strings are used as error messages.
+
+add-engine-keyword-exists = 此关键词已被占用，请尝试使用其他关键词。
+add-engine-name-exists = 此名称已被占用，请选择其他名称。
+add-engine-no-name = 请添加名称。
+add-engine-no-url = 请输入网址。
+add-engine-invalid-url = 此网址似乎有误，请检查后重试。
+add-engine-invalid-protocol = 此网址似乎有误，请使用以 http 或 https 开头的网址。
+# This error is shown when the user typed URL is missing %s.
+add-engine-missing-terms-url = 请尝试用 %s 代替搜索词。
+# This error is shown when the user typed post data is missing %s.
+add-engine-missing-terms-post-data = 请尝试用 %s 代替搜索词。
+
+## The following strings are used as labels for the dialog's buttons.
+
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+add-engine-dialog2 =
+    .buttonlabelaccept = 添加搜索引擎
+    .buttonaccesskeyaccept = A
+    .buttonlabelextra1 = 高级
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+edit-engine-dialog =
+    .buttonlabelaccept = 保存引擎
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra1 = 高级

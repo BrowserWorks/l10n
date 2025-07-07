@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = このページを翻訳します
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = 言語の管理
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = 元の言語で表示
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = 翻訳
 translations-manage-settings-button =
@@ -148,8 +148,8 @@ translations-settings-title =
 translations-settings-close-key =
     .key = w
 translations-settings-always-translate-langs-description = 以下の言語は自動的に翻訳します
-translations-settings-never-translate-langs-description = 以下の言語は翻訳しません
-translations-settings-never-translate-sites-description = 以下のサイトは翻訳しません
+translations-settings-never-translate-langs-description = 以下の言語では翻訳機能を使用しません
+translations-settings-never-translate-sites-description = 以下のサイトでは翻訳機能を使用しません
 translations-settings-languages-column =
     .label = 言語
 translations-settings-remove-language-button =

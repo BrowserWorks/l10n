@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -34,6 +34,12 @@ toolbar-context-menu-reopen-closed-tabs =
            *[other] أعِد فتح الألسنة المغلقة
         }
     .accesskey = ع
+toolbar-context-turn-on-vertical-tabs =
+    .label = فعِّل الألسنة العمودية
+toolbar-context-turn-off-vertical-tabs =
+    .label = عطّل الألسنة العمودية
+toolbar-context-customize-sidebar =
+    .label = تخصيص الشريط الجانبي
 toolbar-context-menu-manage-extension =
     .label = أدِر الامتداد
     .accesskey = د
@@ -41,7 +47,7 @@ toolbar-context-menu-remove-extension =
     .label = أزِل الامتداد
     .accesskey = ت
 # This label is used in the extensions toolbar buttons context menus,
-# a user can use this command to submit to BrowserWorks an abuse report
+# a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = أبلِغ عن الامتداد
@@ -58,6 +64,10 @@ toolbar-context-menu-auto-hide-downloads-button-2 =
 toolbar-context-menu-always-open-downloads-panel =
     .label = إظهار اللوحة عند بدء التنزيل
     .accesskey = ع
+# Label of checkbox menu item to toggle visibility of Extensions Button.
+toolbar-context-menu-always-show-extensions-button =
+    .label = أظهر دائمًا في شريط الأدوات
+    .accesskey = ه
 toolbar-context-menu-remove-from-toolbar =
     .label = احذف من شريط الأدوات
     .accesskey = ح

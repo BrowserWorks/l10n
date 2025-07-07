@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = 翻译此页面
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language }（测试中）
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = 管理语言
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = 显示原文
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = 翻译
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = 下载离线翻译语言包。
 translations-manage-all-language = 所有语言
 translations-manage-download-button = 下载
 translations-manage-delete-button = 删除
-translations-manage-intro = 设置语言与网站翻译首选项，管理离线翻译语言包。
-translations-manage-install-description = 安装离线翻译语言包
-translations-manage-language-install-button =
-    .label = 安装
-translations-manage-language-install-all-button =
-    .label = 全部安装
-    .accesskey = I
 translations-manage-intro-2 = 设置语言与网站翻译首选项，管理离线翻译语言包。
 translations-manage-download-description = 下载离线翻译语言包
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = 全部移除
     .accesskey = e
-translations-manage-error-install = 安装离线包时遇到问题，请重试。
 translations-manage-error-download = 下载离线包时遇到问题，请重试。
 translations-manage-error-delete = 删除离线包时遇到问题，请重试。
 translations-manage-error-remove = 删除离线包时遇到问题，请重试。

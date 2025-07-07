@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -29,6 +29,8 @@ report-broken-site-panel-description-optional-label = Jelaskan masalahnya (opsio
 report-broken-site-panel-send-more-info-link = Kirim info lebih lanjut
 report-broken-site-panel-button-cancel =
     .label = Batalkan
+report-broken-site-panel-button-okay =
+    .label = Oke
 report-broken-site-panel-button-send =
     .label = Kirim
 report-broken-site-panel-unspecified = Tidak ditentukan

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,7 +8,7 @@ about-networking-http-clear-cache-button = HTTP-gyorsítótár törlése
 about-networking-sockets = Foglalatok
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = DNS-gyorsítótár törlése
-about-networking-dns-trr-url = DoH URL
+about-networking-dns-trr-url = DoH webcím
 about-networking-dns-trr-mode = DoH mód
 about-networking-dns-suffix = DNS utótag
 about-networking-websockets = WebSocketek

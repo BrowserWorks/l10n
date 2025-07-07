@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = Om insticksprogram
 installed-plugins-label = Installerade insticksprogram
 no-plugins-are-installed-label = Inga installerade insticksprogram hittades
 deprecation-description = Saknar du något? Vissa insticksmoduler stöds inte längre. <a data-l10n-name="deprecation-link">Läs mer.</a>
-deprecation-description2 =
-    .message = Saknar du något? Vissa insticksmoduler stöds inte längre.
 
 ## The information of plugins
 ##

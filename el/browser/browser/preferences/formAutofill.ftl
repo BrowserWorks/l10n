@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,8 +39,6 @@ address-capture-manage-address-button =
     .label = Ρυθμίσεις διεύθυνσης
 address-capture-learn-more-button =
     .label = Μάθετε περισσότερα
-# The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = Προσθήκη νέας διεύθυνσης
 address-capture-open-menu-button =
     .aria-label = Άνοιγμα μενού
 address-capture-edit-address-button =
@@ -49,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = Προσθήκη διεύθυνσης
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Επεξεργασία διεύθυνσης
-autofill-address-name = Όνομα
 autofill-address-given-name = Όνομα
 autofill-address-additional-name = Μεσαίο όνομα
 autofill-address-family-name = Επώνυμο
+autofill-address-name = Όνομα
 autofill-address-organization = Εταιρεία
 autofill-address-street-address = Διεύθυνση
 autofill-address-street = Διεύθυνση
@@ -108,9 +106,8 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = Προσθήκη νέας διεύθυνσης
 autofill-address-country = Χώρα ή περιοχή
 autofill-address-country-only = Χώρα
 autofill-address-tel = Τηλέφωνο
@@ -122,7 +119,7 @@ autofill-country-warning-message = Η αυτόματη συμπλήρωση φο
 autofill-add-new-card-title = Προσθήκη νέας πιστωτικής κάρτας
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Επεξεργασία πιστωτικής κάρτας
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

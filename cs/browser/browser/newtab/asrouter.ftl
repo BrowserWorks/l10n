@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -61,7 +61,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } uživatelů
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Mějte své záložky všude s sebou.
 cfr-doorhanger-bookmark-fxa-body = Skvělý nález! Chcete mít tuto záložku i ve svém mobilním zařízení? Použijte { -fxaccount-brand-name(case: "acc", capitalization: "lower") }.
@@ -143,7 +143,7 @@ cfr-doorhanger-video-support-primary-button = Aktualizovat
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Zdá se, že používáte veřejnou Wi-Fi síť
@@ -212,7 +212,7 @@ mr2022-background-update-toast-primary-button-label =
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Upozornit mě později
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Vyzkoušejte ho
     .accesskey = t
@@ -221,7 +221,7 @@ firefoxview-cfr-secondarybutton = Teď ne
 firefoxview-cfr-header-v2 = Rychle pokračujte tam, kde jste skončili
 firefoxview-cfr-body-v2 = Získejte zpět nedávno zavřené panely a plynule přecházejte mezi zařízeními pomocí { -firefoxview-brand-name(case: "gen") }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Přivítejte { -firefoxview-brand-name(case: "acc") }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -286,7 +286,7 @@ fox-doodle-pin-primary =
     }
 fox-doodle-pin-secondary = Teď ne
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline =
     { -brand-short-name.case-status ->
@@ -319,6 +319,13 @@ device-migration-fxa-spotlight-older-device-primary-button = Vytvořit účet
 device-migration-fxa-spotlight-getting-new-device-header-2 = Plánujete v blízké budoucnosti nové zařízení?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Když začínáte používat nové zařízení, přeneste si s sebou své záložky, historii a hesla pomocí několika jednoduchých kroků.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Jak zálohovat moje data
+device-migration-fxa-spotlight-sync-header = Prohlížejte bez ztráty kytičky
+device-migration-fxa-spotlight-sync-body =
+    { -brand-product-name.case-status ->
+        [with-cases] Synchronizujte všechny důležité informace se šifrováním - například záložky a hesla. Vše můžete vytáhnout odkudkoli, kde použijete { -brand-product-name(case: "acc") }.
+       *[no-cases] Synchronizujte všechny důležité informace se šifrováním - například záložky a hesla. Vše můžete vytáhnout odkudkoli, kde použijete aplikaci { -brand-product-name }.
+    }
+device-migration-fxa-spotlight-sync-primary-button = Začít
 
 ## Set as Default PDF Reader Infobar
 
@@ -377,3 +384,105 @@ tail-fox-spotlight-primary-button =
        *[no-cases] Otevírat mé odkazy pomocí aplikace { -brand-short-name }
     }
 tail-fox-spotlight-secondary-button = Teď ne
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message =
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Starší verze { -brand-short-name(case: "gen") } mohou začít mít 14. ledna 2025 problémy.</strong>
+       *[no-cases] <strong>Starší verze aplikace { -brand-short-name } mohou začít mít 14. ledna 2025 problémy.</strong>
+    }
+root-certificate-succession-infobar-march-message =
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Proveďte aktualizaci, abyste mohli { -brand-short-name(case: "acc") } nadále používat i po 14. březnu 2025.</strong>
+       *[no-cases] <strong>Proveďte aktualizaci, abyste mohli aplikaci { -brand-short-name } nadále používat i po 14. březnu 2025.</strong>
+    }
+root-certificate-succession-infobar-link = Proč potřebuji aktualizaci?
+root-certificate-succession-infobar-primary-button =
+    .label = Aktualizovat
+    .accesskey = A
+root-certificate-succession-infobar-secondary-button =
+    .label = Později
+    .accesskey = P
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title =
+    { -brand-full-name.case-status ->
+        [with-cases] Zmeškali jste důležitou aktualizaci { -brand-short-name(case: "gen") }
+       *[no-cases] Zmeškali jste důležitou aktualizaci aplikace { -brand-short-name }
+    }
+root-certificate-windows-background-notification-subtitle = Pokud prohlížeč neaktualizujete, přestanou jeho části brzy fungovat. Nyní je vhodná doba pro získání našich nejnovějších ochran a funkcí.
+root-certificate-windows-background-notification-learn-more-button = Zjistit více
+root-certificate-windows-background-notification-update-button =
+    { -brand-full-name.case-status ->
+        [with-cases] Aktualizovat { -brand-short-name(case: "acc") }
+       *[no-cases] Aktualizovat aplikaci { -brand-short-name }
+    }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Zavřít
+    .aria-label = Zavřít
+fxa-menu-message-sign-up-button = Přihlásit se
+fxa-menu-message-sync-devices-primary-text = Synchronizace všech zařízení
+fxa-menu-message-sync-devices-secondary-text =
+    { -brand-short-name.case-status ->
+        [with-cases] Okamžitě získáte své informace — například záložky a hesla — všude tam, kde použijete { -brand-short-name(case: "acc") }.
+       *[no-cases] Okamžitě získáte své informace — například záložky a hesla — všude tam, kde použijete aplikaci { -brand-short-name }.
+    }
+fxa-menu-message-sync-devices-collapsed-text = Synchronizace všech zařízení
+fxa-menu-message-backup-data-primary-text = Zálohujte si údaje prohlížeče
+fxa-menu-message-backup-data-secondary-text = Automaticky chraňte záložky, hesla a další informace na všech svých zařízeních.
+fxa-menu-message-backup-data-collapsed-text = Zálohujte údaje prohlížeče
+fxa-menu-message-backup-sync-primary-text = Udržujte své údaje v bezpečí a synchronizované
+fxa-menu-message-backup-sync-secondary-text =
+    { -brand-short-name.case-status ->
+        [with-cases] Synchronizace zálohuje většinu vašich dat, takže k nim máte přístup všude, kde používáte { -brand-short-name(case: "acc") }.
+       *[no-cases] Synchronizace zálohuje většinu vašich dat, takže k nim máte přístup všude, kde používáte aplikaci { -brand-short-name }.
+    }
+fxa-menu-message-backup-sync-collapsed-text = Synchronizujte a zálohujte data
+fxa-menu-message-mobile-primary-text = Odešlete panely do telefonu
+fxa-menu-message-mobile-secondary-text = Po synchronizaci panelů s mobilním zařízením můžete okamžitě pokračovat tam, kde jste skončili.
+fxa-menu-message-mobile-collapsed-text = Synchronizujte s telefonem
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Vítejte zpět
+multi-cta-fox-doodle-set-default-checkbox =
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako výchozí
+       *[no-cases] Nastavit aplikaci { -brand-short-name } jako výchozí
+    }
+multi-cta-fox-doodle-pin-startmenu-checkbox =
+    { -brand-short-name.case-status ->
+        [with-cases] Připnout { -brand-short-name(case: "acc") } do nabídky Start
+       *[no-cases] Připnout aplikaci { -brand-short-name } do nabídky Start
+    }
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Ponechat { -brand-short-name } v Docku
+       *[other] Připnout { -brand-short-name } na hlavní panel
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Začít prohlížet
+multi-cta-fox-doodle-main-browser-primary-button-label =
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako můj hlavní prohlížeč
+       *[no-cases] Nastavit aplikaci { -brand-short-name }  jako můj hlavní prohlížeč
+    }
+multi-cta-fox-doodle-quick-reminder-subtitle = Připomínáme vám, že svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít jen na jedno klepnutí.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos]
+            { -brand-short-name.case-status ->
+                [with-cases] Svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít na dosah jediného klepnutí. Nastavte { -brand-short-name(case: "acc") } jako výchozí prohlížeč pro otevírání odkazů a mějte ho v Docku.
+               *[no-cases] Svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít na dosah jediného klepnutí. Nastavte aplikaci { -brand-short-name } jako výchozí prohlížeč pro otevírání odkazů a mějte ho v Docku.
+            }
+       *[other]
+            { -brand-short-name.case-status ->
+                [with-cases] Svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít na dosah jediného klepnutí. Nastavte { -brand-short-name(case: "acc") } jako výchozí prohlížeč pro otevírání odkazů a připněte jej na hlavní panel.
+               *[no-cases] Svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít na dosah jediného klepnutí. Nastavte aplikaci { -brand-short-name } jako výchozí prohlížeč pro otevírání odkazů a připněte jej na hlavní panel.
+            }
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Svůj oblíbený prohlížeč zaměřený na ochranu soukromí můžete mít na dosah jediného klepnutí. Nastavte { -brand-short-name } jako výchozí prohlížeč pro otevírání odkazů a připněte jej na hlavní panel a do nabídky Start.

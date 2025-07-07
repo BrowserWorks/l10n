@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,13 +8,10 @@
 # "Auto" is short for automatic. It can be localized without limitations.
 extension-default-theme-name-auto = Systemtema — automatisk
 extension-default-theme-description = Brukar same fargeskjema som operativsystemet for knappar, menyar og vindauge.
-
 extension-firefox-compact-light-name = Lyst
 extension-firefox-compact-light-description = Eit tema med ein lys fargeskala.
-
 extension-firefox-compact-dark-name = Mørkt
 extension-firefox-compact-dark-description = Eit tema med ein mørk fargeskala.
-
 extension-firefox-alpenglow-name = Waterfox Alpenglow
 extension-firefox-alpenglow-description = Bruk ein fargerik utsjånad for knappar, menyar og vindauge.
 

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -211,6 +211,10 @@ addon-updates-manual-updates-found = 更新可能なアドオンを表示
 
 addon-install-from-file = ファイルからアドオンをインストール...
     .accesskey = I
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = ファイルからアドオンをインストールまたは更新...
+    .accesskey = I
 addon-install-from-file-dialog-title = インストールするアドオンを選択してください
 addon-install-from-file-filter-name = アドオン
 addon-open-about-debugging = アドオンをデバッグ
@@ -281,6 +285,16 @@ discopane-notice-recommendations2 =
         これらのおすすめの一部はパーソナライズされています。
         この情報は、インストールされている他の拡張機能やプロファイル設定、使用統計データに基づきます。
 discopane-notice-learn-more = 詳細情報
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Colorway テーマが削除されました。
+    .message =
+        { -brand-product-name } にインストールされた Colorway コレクションの更新により、
+        保存されたテーマのリストから古いバージョンのものが削除されました。
+        アドオンサイトで新しいバージョンを入手してください。
+colorway-removal-notice-learn-more = 詳細情報
+colorway-removal-notice-button = 更新された Colorway テーマを入手
+
 privacy-policy = プライバシーポリシー
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -301,6 +315,16 @@ find-more-themes = 他のテーマを検索
 # used for screen readers.
 addon-options-button =
     .aria-label = 他のオプション
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    拡張機能やテーマを使用すると { -brand-product-name } をカスタマイズできます。
+    プライバシー保護を強化したり、生産性を向上させたり、メディアを見やすくしたり、
+    { -brand-product-name } の見た目を変更したり、その他さまざまな拡張機能やテーマがあります。
+    これらの小さなソフトウェアプログラムのほとんどは、サードパーティーによって開発されています。
+    セキュリティ、パフォーマンス、生産性を向上させる Firefox の<a data-l10n-name="learn-more-trigger">おすすめ</a>はこちらです。
 
 ## Add-on actions
 
@@ -383,6 +407,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = プライベートウィンドウでの実行
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = プライベートウィンドウでの実行
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -414,14 +442,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name } は BrowserWorks が定めた安全性とパフォーマンスの基準に適合する拡張機能のみをおすすめします
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = BrowserWorks により作成された公式の拡張機能です。安全性とパフォーマンスの基準に適合します
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = この拡張機能はセキュリティとパフォーマンスの基準に適合するようレビューされています。
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = BrowserWorks により作成された公式の拡張機能です。安全性とパフォーマンスの基準に適合します
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = この拡張機能はセキュリティとパフォーマンスの基準に適合するようレビューされています
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox は安全性とパフォーマンスの基準に適合する拡張機能のみをおすすめします
 
 ##
 
@@ -429,6 +475,7 @@ available-updates-heading = 更新可能
 recent-updates-heading = 最近の更新
 release-notes-loading = 読み込み中...
 release-notes-error = リリースノートの読み込み中にエラーが発生しました。
+addon-permissions-empty2 = この拡張機能は権限を必要としません。
 addon-permissions-empty = この拡張機能は権限を必要としません。
 addon-permissions-required = 中核機能に必要な権限:
 addon-permissions-optional = 追加機能の任意の権限:
@@ -438,8 +485,8 @@ recommended-themes-heading = おすすめのテーマ
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = <span data-l10n-name="hostname">{ $hostname }</span> に以下の機能を許可します:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ご自分で作ってみませんか？ <a data-l10n-name="link">Waterfox Color で独自のテーマを構築できます。</a>
 
 ## Page headings
@@ -456,6 +503,9 @@ shortcuts-heading = 拡張機能のショートカットキーの管理
 default-heading-search-label = アドオンを探す
 addons-heading-search-input =
     .placeholder = addons.mozilla.org を検索
+addons-heading-search-button =
+    .title = addons.mozilla.org を検索
+    .aria-label = addons.mozilla.org を検索
 addon-page-options-button =
     .title = アドオンツール
 
@@ -478,10 +528,24 @@ details-notification-unsigned-and-disabled-link = 詳細情報
 details-notification-unsigned = { $name } は { -brand-short-name } での使用が検証できません。配布元を確認して慎重に使用してください。
 details-notification-unsigned2 =
     .message = { $name } は { -brand-short-name } での使用が検証できません。配布元を確認して慎重に使用してください。
+details-notification-hard-blocked-extension =
+    .message = この拡張機能は BrowserWorks のポリシーに違反しているためブロックされ、無効化されています。
+details-notification-hard-blocked-other =
+    .message = このアドオンは BrowserWorks のポリシーに違反しているためブロックされ、無効化されています。
 details-notification-unsigned-link = 詳細情報
 details-notification-blocked = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
 details-notification-blocked2 =
     .message = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
+details-notification-blocked-link2 = 詳細を表示
+details-notification-soft-blocked-extension-disabled =
+    .message = この拡張機能は BrowserWorks のポリシーに違反しているため制限され、無効化されています。有効にすると危険を伴う可能性があります。
+details-notification-soft-blocked-extension-enabled =
+    .message = この拡張機能は BrowserWorks のポリシーに違反しています。使用すると危険を伴う可能性があります。
+details-notification-soft-blocked-other-disabled =
+    .message = このアドオンは BrowserWorks のポリシーに違反しているため制限され、無効化されています。有効にすると危険を伴う可能性があります。
+details-notification-soft-blocked-other-enabled =
+    .message = このアドオンは BrowserWorks のポリシーに違反しています。使用すると危険を伴う可能性があります。
+details-notification-softblocked-link2 = 詳細を表示
 details-notification-blocked-link = 詳細情報
 details-notification-softblocked = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
 details-notification-softblocked2 =
@@ -499,3 +563,41 @@ plugins-openh264-name = OpenH264 Video Codec (Cisco Systems, Inc. 提供)
 plugins-openh264-description = このプラグインは、WebRTC 仕様に従うため BrowserWorks により自動的にインストールされ、H.264 動画コーデックを必要とする端末で WebRTC 通話を有効にします。このコーデックのソースコードと実装についての詳細は、https://www.openh264.org/ を参照してください。
 plugins-widevine-name = Widevine Content Decryption Module (Google Inc. 提供)
 plugins-widevine-description = このプラグインは、Encrypted Media Extensions の仕様に従って暗号化されたメディアの再生を有効にします。暗号化されたメディアは、一般的に有料メディアコンテンツのコピーを防止するためにサイトにより使用されます。Encrypted Media Extensions についての詳細は、https://www.w3.org/TR/encrypted-media/ を参照してください。
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = 必須のデータ収集:
+addon-permissions-optional-data-collection = 任意のデータ収集:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = 権限とデータ
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = 拡張機能 { $extensionName } に利用されています
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = これは { -brand-short-name } が about:inference で利用しています
+mlmodel-link-preview = これは { -brand-short-name } がリンク先プレビュー時の要点の生成に利用しています
+mlmodel-pdfjs = これは { -brand-short-name } が PDF に追加した画像の代替テキストを作成するのに利用しています
+mlmodel-smart-tab-topic-engine = これは { -brand-short-name } がタブグループ名を提案するのに利用しています
+mlmodel-smart-tab-embedding-engine = これは { -brand-short-name } タブグループのタブを提案するのに利用しています
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = 端末上の AI
+addon-category-mlmodel-title =
+    .title = 端末上の AI
+mlmodel-heading = 端末上の AI モデルを管理
+mlmodel-description = { -brand-short-name } の一部の機能や拡張機能は端末上のローカルで動作する AI モデルによって機能しています。このアプローチはユーザーのプライバシーを保護し、動作速度のパフォーマンスが向上します。<a data-l10n-name="learn-more">詳細情報</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = 削除
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = ファイルサイズ
+mlmodel-addon-detail-last-used-label = 最終使用日時
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = 利用者
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = モデルカード
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Hugging Face で表示

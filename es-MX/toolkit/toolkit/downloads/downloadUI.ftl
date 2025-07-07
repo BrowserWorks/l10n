@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,21 +22,18 @@ download-ui-dont-quit-button =
         [mac] No cerrar
        *[other] No salir
     }
-
 download-ui-confirm-offline-cancel-downloads =
     { $downloadsCount ->
         [1] Si cambias al modo sin conexión ahora, se cancelará una descarga. ¿Realmente quieres hacerlo?
        *[other] Si cambias al modo sin conexión ahora, se cancelarán { $downloadsCount } descargas. ¿Realmente quieres hacerlo?
     }
 download-ui-dont-go-offline-button = Permanecer conectado
-
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
         [1] Si cierras todas las ventanas de navegación privada ahora, se cancelará 1 descarga. ¿Estás seguro de que quieres salir de la navegación privada?
        *[other] Si cierras todas las ventanas de navegación privada ahora, se cancelarán { $downloadsCount } descargas. ¿Estás seguro de que quieres salir de la navegación privada?
     }
 download-ui-dont-leave-private-browsing-button = Permanecer en el modo de Navegación Privada
-
 download-ui-cancel-downloads-ok =
     { $downloadsCount ->
         [1] Cancelar una descarga

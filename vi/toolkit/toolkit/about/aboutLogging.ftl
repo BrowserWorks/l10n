@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,10 +15,12 @@ about-logging-set-log-file = Đặt tập tin nhật ký
 about-logging-set-log-modules = Đặt module nhật ký
 about-logging-start-logging = Bắt đầu ghi
 about-logging-stop-logging = Dừng ghi
+about-logging-copy-as-url = Sao chép cài đặt hiện tại dưới dạng URL
+about-logging-url-copied = Đã sao chép cài đặt ghi nhật ký vào khay nhớ tạm dưới dạng URL được cài đặt trước
 about-logging-buttons-disabled = Ghi nhật ký được định cấu hình thông qua các biến môi trường, cấu hình động không khả dụng.
 about-logging-some-elements-disabled = Ghi nhật ký được định cấu hình qua URL, một số tùy chọn cấu hình hiện không khả dụng
 about-logging-info = Thông tin:
-about-logging-log-modules-selection = Lựa chọn nhật ký module
+about-logging-log-modules-selection = Lựa chọn module nhật ký
 about-logging-new-log-modules = Module nhật ký mới:
 about-logging-logging-output-selection = Nơi xuất ghi nhật ký
 about-logging-logging-to-file = Ghi vào một tập tin
@@ -27,6 +29,8 @@ about-logging-no-log-modules = Không
 about-logging-no-log-file = Không
 about-logging-logging-preset-selector-text = Ghi nhật ký đặt trước:
 about-logging-with-profiler-stacks-checkbox = Bật dấu vết ngăn xếp (stack trace) cho tin nhắn nhật ký
+about-logging-menu =
+    .title = Tùy chọn nâng cao
 
 ## Logging presets
 
@@ -44,6 +48,8 @@ about-logging-preset-media-playback-label = Trình phát phương tiện
 about-logging-preset-media-playback-description = Ghi nhật ký các module để chẩn đoán sự cố trình phát phương tiện (không phải sự cố về cuộc gọi trực tuyến)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Ghi nhật ký các module để chẩn đoán cuộc gọi WebRTC
+about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Module nhật ký để chuẩn đoán sự cố với bộ giải mã và mã hoá âm thanh/video, và giải mã hình ảnh WebCodecs
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Ghi lại các module để chẩn đoán sự cố WebGPU
 about-logging-preset-gfx-label = Đồ họa
@@ -56,9 +62,7 @@ about-logging-preset-custom-description = Ghi nhật ký các module được ch
 # Error handling
 about-logging-error = Lỗi:
 
-## Variables:
-##   $k (String) - Variable name
-##   $v (String) - Variable value
+##
 
 about-logging-invalid-output = Giá trị không hợp lệ “{ $v }“ cho khóa “{ $k }“
 about-logging-unknown-logging-preset = Cài đặt trước ghi nhật ký không xác định “{ $v }“
@@ -66,4 +70,30 @@ about-logging-unknown-profiler-preset = Giá trị đặt trước của profile
 about-logging-unknown-option = Tùy chọn about:logging không xác định “{ $k }“
 about-logging-configuration-url-ignored = URL cấu hình bị bỏ qua
 about-logging-file-and-profiler-override = Không thể buộc nơi xuất tập tin và ghi đè các tùy chọn profiler cùng một lúc
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Đã xảy ra lỗi: { $errorText }
 about-logging-configured-via-url = Tùy chọn được định cấu hình qua URL
+
+## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
+## set to true. It is false by default, except on Android.
+
+about-logging-upload-question = Dữ liệu hồ sơ đã được ghi lại. Bạn muốn lưu hay tải lên?
+about-logging-save-button = Lưu
+about-logging-upload-button = Tải lên
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Đã lưu vào { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Đang tải lên dữ liệu hồ sơ: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Đã tải lên tại <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Chia sẻ liên kết
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Đã xảy ra lỗi khi tải lên hồ sơ: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Đã xảy ra lỗi khi lưu tập tin: { $errorText }

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,9 +27,9 @@ options-select-dev-tools-theme-label = Θέματα
 # The heading
 options-context-inspector = Επιθεώρηση
 # The label for the checkbox option to show user agent styles
-options-show-user-agent-styles-label = Εμφάνιση στυλ προγράμματος περιήγησης
+options-show-user-agent-styles-label = Εμφάνιση μορφοποιήσεων προγράμματος περιήγησης
 options-show-user-agent-styles-tooltip =
-    .title = Η ενεργοποίηση αυτού θα εμφανίσει τα προεπιλεγμένα στυλ που φορτώνονται από το πρόγραμμα περιήγησης.
+    .title = Η ενεργοποίηση αυτού θα εμφανίσει τις προεπιλεγμένες μορφοποιήσεις που φορτώνονται από το πρόγραμμα περιήγησης.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Κόψιμο ιδιοτήτων DOM
 options-collapse-attrs-tooltip =
@@ -75,7 +75,7 @@ options-styleeditor-label = Επεξεργασία στυλ
 # The label for the checkbox that toggles autocompletion of css in the Style Editor
 options-stylesheet-autocompletion-label = Αυτόματη συμπλήρωση CSS
 options-stylesheet-autocompletion-tooltip =
-    .title = Αυτόματη συμπλήρωση ιδιοτήτων CSS, τιμών και επιλογέων στην Επεξεργασία Στυλ καθώς πληκτρολογείτε
+    .title = Αυτόματη συμπλήρωση ιδιοτήτων CSS, τιμών και επιλογέων στην Επεξεργασία μορφοποίησης καθώς πληκτρολογείτε
 
 ## Screenshot section
 

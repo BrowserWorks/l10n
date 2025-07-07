@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = { $addonName } zu { -brand-short-name } hinzug
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } benötigt neue Berechtigungen
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = Abschluss der Installation von Erweiterungen, die in { -brand-short-name } importiert wurden
 
@@ -81,6 +81,8 @@ addon-removal-title = { $name } entfernen?
 addon-removal-message = { $name } aus { -brand-shorter-name } entfernen?
 addon-removal-button = Entfernen
 addon-removal-abuse-report-checkbox = Erweiterung an { -vendor-short-name } melden
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = Wenn Sie die Funktionen oder Erweiterungen verwenden, die dieses Modell nutzen, wird es wieder hinzugefügt.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -131,6 +133,8 @@ addon-local-install-error-not-signed = Dieses Add-on konnte nicht installiert we
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } konnte nicht installiert werden, da es nicht mit { -brand-short-name } { $appVersion } kompatibel ist.
+addon-install-error-hard-blocked = { $addonName } verstößt gegen BrowserWorkss Richtlinien und kann nicht auf { -brand-short-name } installiert werden.
 addon-install-error-blocklisted = { $addonName } konnte nicht installiert werden, da es ein hohes Risiko bezüglich Stabilität und Sicherheit darstellt.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = { $addonName } verstößt gegen BrowserWorkss Richtlinien und kann nicht auf { -brand-short-name } installiert werden.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = Sie können { $addonName } nicht als Endbenutzer installieren, es kann nur von einer Organisation installiert werden, die Unternehmensrichtlinien verwendet.

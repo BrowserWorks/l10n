@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } brukarar
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Synkroniser bokmerka dine overalt.
 cfr-doorhanger-bookmark-fxa-body = Bra funn! Manglar du bokmerket på dei mobile einingane dine. Kom i gang med ein { -fxaccount-brand-name }.
@@ -119,7 +119,7 @@ cfr-doorhanger-video-support-primary-button = Oppdater no
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Det ser ut til at du brukar offentleg Wi-Fi
@@ -168,7 +168,7 @@ mr2022-background-update-toast-primary-button-label = Opne { -brand-shorter-name
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Minn meg på det seinare
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Prøv det
     .accesskey = t
@@ -177,7 +177,7 @@ firefoxview-cfr-secondarybutton = Ikkje no
 firefoxview-cfr-header-v2 = Hald fram raskt der du slutta
 firefoxview-cfr-body-v2 = Få tilbake nyleg attlatne faner, og skift snøgt mellom einingar med { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Sei hei til { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -220,7 +220,7 @@ fox-doodle-pin-body = Her er ei rask påminning om at du kan ha den uavhengige n
 fox-doodle-pin-primary = Opne lenkene mine med { -brand-short-name }
 fox-doodle-pin-secondary = Ikkje no
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>PDF-filene dine vert no opna i { -brand-short-name }.</strong> Rediger eller fyll ut skjema direkte i nettlesaren din. For å endre, søk etter «PDF» i innstillingane.
 set-default-pdf-handler-primary = Eg forstår
@@ -245,6 +245,9 @@ device-migration-fxa-spotlight-older-device-primary-button = Opprett ein konto
 device-migration-fxa-spotlight-getting-new-device-header-2 = Planlegg du å kjøpe ei ny eining i framtida?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Følg nokre få enkle steg for å ta med deg bokmerka, historikken og passorda dine når du startar med ei ny eining.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Korleis tryggingskopiere mine data
+device-migration-fxa-spotlight-sync-header = Surf utan å gå glipp av noko viktig
+device-migration-fxa-spotlight-sync-body = Synkroniser all viktig informasjon med kryptering — som bokmerke og passord. Du kan hente alt kvar som helst du brukar { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Kom i gang
 
 ## Set as Default PDF Reader Infobar
 
@@ -281,3 +284,61 @@ tail-fox-spotlight-title = Hald irriterande sporingstenester på avstand
 tail-fox-spotlight-subtitle = Sei farvel til irriterande annonsesporarar, og møt ei tryggare og raskere internettoppleving.
 tail-fox-spotlight-primary-button = Opne lenkene mine med { -brand-short-name }
 tail-fox-spotlight-secondary-button = Ikkje no
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Eldre versjonar av { -brand-short-name } kan byrje å få problem 14. januar 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Oppdater for å halde fram med å bruke { -brand-short-name } etter 14. mars 2025.</strong>
+root-certificate-succession-infobar-link = Kvifor må eg oppdatere?
+root-certificate-succession-infobar-primary-button =
+    .label = Oppdater no
+    .accesskey = O
+root-certificate-succession-infobar-secondary-button =
+    .label = Seinare
+    .accesskey = S
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Du gjekk glipp av ei viktig { -brand-short-name }-oppdatering
+root-certificate-windows-background-notification-subtitle = Delar av nettlesaren sluttar snart å fungere viss du ikkje oppdaterer. No er ei flott tid for å få nyaste vern og funksjonar.
+root-certificate-windows-background-notification-learn-more-button = Les meir
+root-certificate-windows-background-notification-update-button = Oppdater { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Lat att
+    .aria-label = Lat att
+fxa-menu-message-sign-up-button = Registrer deg
+fxa-menu-message-sync-devices-primary-text = Synkroniser alle einingane dine
+fxa-menu-message-sync-devices-secondary-text = Få informasjonen din omgåande — som bokmerke og passord — overalt der du brukar { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Synkroniser alle einingane dine
+fxa-menu-message-backup-data-primary-text = Sikkerheitskopier nettlesardataa dine
+fxa-menu-message-backup-data-secondary-text = Vern bokmerke, passord og annan informasjon automatisk på alle einingane dine.
+fxa-menu-message-backup-data-collapsed-text = Sikkerheitskopier nettlesardata
+fxa-menu-message-backup-sync-primary-text = Hald dataa dine trygge og synkroniserte
+fxa-menu-message-backup-sync-secondary-text = Synkronisering sikkerhetskopierer dei fleste dataa dine slik at du kan få tilgang til dei overalt der du brukar { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Synkroniser og sikkerheitskopier data
+fxa-menu-message-mobile-primary-text = Send faner til telefonen din
+fxa-menu-message-mobile-secondary-text = Hald fram der du sleppte omgåande når du synkroniserer fanene dine med ei mobileining.
+fxa-menu-message-mobile-collapsed-text = Synkroniser med telefonen din
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Velkomen tilbake
+multi-cta-fox-doodle-set-default-checkbox = Bruk { -brand-short-name } som standard
+multi-cta-fox-doodle-pin-startmenu-checkbox = Fest { -brand-short-name } til Start-menyen
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Behald { -brand-short-name } i Dock
+       *[other] Fest { -brand-short-name } til oppgåvelinja
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Begynn å surfe
+multi-cta-fox-doodle-main-browser-primary-button-label = Gjer { -brand-short-name } til hovudnettlesaren min
+multi-cta-fox-doodle-quick-reminder-subtitle = Her er ei rask påminning om at du kan ha favorittnettlesaren din med fokus på personvern berre eitt klikk unna.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Hald favorittnettlesaren din med fokus på personvern berre eitt klikk unna. Still inn { -brand-short-name } som standard nettlesar for å opne koplingar, og hald den i Dock.
+       *[other] Hald favorittnettlesaren din med fokus på personvern berre eitt klikk unna. Still inn { -brand-short-name } som standard nettlesar for å opne lenker og fest han til oppgåvelinja.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Hald favorittnettlesaren din med fokus på personvern berre eitt klikk unna. Still inn { -brand-short-name } som standard nettlesar for å opne lenker og fest han til oppgåvelinja og Start-menyen.

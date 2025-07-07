@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Sepia
     .title = Sepia farveskema
 about-reader-color-scheme-auto = Auto
     .title = Automatisk farveskema
-about-reader-color-theme-light = Lys
-    .title = Lyst farvetema
-about-reader-color-theme-dark = Mørk
-    .title = Mørkt farvetema
-about-reader-color-theme-sepia = Sepia
-    .title = Sepia farvetema
-about-reader-color-theme-auto = Auto
-    .title = Automatisk farvetema
-about-reader-color-theme-gray = Grå
-    .title = Gråt farvetema
-about-reader-color-theme-contrast = Kontrast
-    .title = Kontrast farvetema
-about-reader-color-theme-custom = Tilpassede farver
-    .title = Tilpasset farvetema
 about-reader-color-light-theme = Lyst
     .title = Lyst tema
 about-reader-color-dark-theme = Mørkt
@@ -49,7 +35,7 @@ about-reader-estimated-read-time =
        *[other] { $range } minutter
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Formindsk skriftstørrelsen
@@ -74,7 +60,6 @@ about-reader-font-type-monospace = Fast tegnbredde
 
 about-reader-toolbar-close = Luk læsevisning
 about-reader-toolbar-type-controls = Indstillinger
-about-reader-toolbar-color-controls = Farver
 about-reader-toolbar-text-layout-controls = Tekst og layout
 about-reader-toolbar-theme-controls = Temaer
 about-reader-toolbar-savetopocket = Gem til { -pocket-brand-name }
@@ -99,10 +84,24 @@ about-reader-custom-colors-visited-links = Besøgte links
     .title = Rediger farve
 about-reader-custom-colors-selection-highlight = Fremhævning af oplæst tekst
     .title = Rediger farve
-about-reader-custom-colors-reset-button = Nulstil til standard-indstillingerne
 about-reader-reset-button = Nulstil til standard-indstillingerne
+about-reader-custom-colors-foreground2 =
+    .label = Tekst
+    .title = Rediger farve
+about-reader-custom-colors-background2 =
+    .label = Baggrund
+    .title = Rediger farve
+about-reader-custom-colors-unvisited-links2 =
+    .label = Ubesøgte links
+    .title = Rediger farve
+about-reader-custom-colors-visited-links2 =
+    .label = Besøgte links
+    .title = Rediger farve
+about-reader-custom-colors-selection-highlight2 =
+    .label = Fremhævning af oplæst tekst
+    .title = Rediger farve
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Tekst
 about-reader-text-size-label = Tekststørrelse
@@ -119,9 +118,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Linjeafstand
 about-reader-advanced-layout-header = Avanceret
-about-reader-slider-label-width-narrow = Smal
-about-reader-slider-label-width-wide = Bred
-about-reader-slider-label-spacing-narrow = Smal
 about-reader-character-spacing-label =
     .label = Afstand mellem tegn
 about-reader-word-spacing-label =
@@ -133,3 +129,5 @@ about-reader-text-alignment-center =
     .title = Centrer tekst
 about-reader-text-alignment-right =
     .title = Juster tekst til højre
+about-reader-text-alignment-justify =
+    .title = Lige margener

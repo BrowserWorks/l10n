@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -298,7 +298,7 @@ sec-error-not-initialized = NSS не инициализирован.
 sec-error-token-not-logged-in = Операция не удалась, так как не был произведён вход с помощью токена PKCS#11.
 sec-error-ocsp-responder-cert-invalid = Настроенный сертификат OCSP-сервера неверен.
 sec-error-ocsp-bad-signature = OCSP-ответ имеет неверную подпись.
-sec-error-out-of-search-limits = Поиск проверки статуса сертификата вышел за лимиты поиска
+sec-error-out-of-search-limits = Поиск проверки статуса сертификата вышел за пределы поиска
 sec-error-invalid-policy-mapping = Отображение политики содержит anypolicy
 sec-error-policy-validation-failed = Цепочка сертификатов не проходит проверку политики
 sec-error-unknown-aia-location-type = Неизвестный тип расположения в расширении сертификата AIA
@@ -331,6 +331,7 @@ mozilla-pkix-error-invalid-integer-encoding = Сертификат, получе
 mozilla-pkix-error-empty-issuer-name = В сертификате, полученном от сервера, отличительное имя издателя является пустым.
 mozilla-pkix-error-additional-policy-constraint-failed = При проверке этого сертификата выявлено нарушение ограничений, наложенных дополнительной политикой.
 mozilla-pkix-error-self-signed-cert = К сертификату нет доверия, так как он является самоподписанным.
+mozilla-pkix-error-issuer-no-longer-trusted = Центру сертификации, выдавшему сертификат, не было доверия до его выдачи.
 xp-java-remove-principal-error = Не могу удалить принципала
 xp-java-delete-privilege-error = Не могу удалить привилегию
 xp-java-cert-not-exists-error = Этот принципал не имеет сертификата

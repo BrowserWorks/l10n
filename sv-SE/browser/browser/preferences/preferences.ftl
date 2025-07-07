@@ -1,8 +1,9 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Skicka webbplatser en “Spåra inte”-signal att du inte vill bli spårad
+do-not-track-removal = Vi stöder inte längre signalen "Spåra inte".
 do-not-track-description2 =
     .label = Skicka en "Spåra inte"-begäran till webbplatser
     .accesskey = S
@@ -137,6 +138,7 @@ windows-launch-on-login =
     .label = Öppna { -brand-short-name } automatiskt när din dator startar
     .accesskey = p
 windows-launch-on-login-disabled = Den här inställningen har inaktiverats i Windows. För att ändra, besök <a data-l10n-name="startup-link">Autostart-appar</a> i Systeminställningar.
+windows-launch-on-login-profile-disabled = Aktivera den här inställningen genom att markera "{ profile-manager-use-selected.label }" i fönstret "Välj användarprofil".
 startup-restore-warn-on-quit =
     .label = Varna när du avslutar webbläsaren
 disable-extension =
@@ -146,6 +148,11 @@ preferences-data-migration-description = Importera bokmärken, lösenord, histor
 preferences-data-migration-button =
     .label = Importera data
     .accesskey = m
+preferences-profiles-header = Profiler
+preferences-manage-profiles-description = Varje profil har separat webbläsardata och inställningar, inklusive historik, lösenord och mer.
+preferences-manage-profiles-learn-more = Läs mer
+preferences-manage-profiles-button =
+    .label = Hantera profiler
 tabs-group-header = Flikar
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab växlar mellan flikarna i nyligen använd ordning
@@ -153,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Öppna länkar i flikar istället för nya fönster
     .accesskey = f
+ask-on-close-multiple-tabs =
+    .label = Fråga innan du stänger flera flikar
+    .accesskey = F
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Fråga innan du avslutar med { $quitKey }
+    .accesskey = r
 confirm-on-close-multiple-tabs =
     .label = Bekräfta innan du stänger flera flikar
     .accesskey = k
@@ -212,6 +230,16 @@ containers-remove-cancel-button = Ta inte bort denna behållare
 settings-tabs-show-image-in-preview =
     .label = Visa en förhandsgranskning av bilden när du håller muspekaren på en flik
     .accessKey = V
+browser-layout-header = Webbläsarlayout
+browser-layout-horizontal-tabs =
+    .label = Horisontella flikar
+browser-layout-horizontal-tabs-desc = Visas överst i webbläsaren
+browser-layout-vertical-tabs =
+    .label = Vertikala flikar
+browser-layout-vertical-tabs-desc = Visa på sidan, i sidofältet
+browser-layout-show-sidebar =
+    .label = Visa sidofält
+browser-layout-show-sidebar-desc = Snabb åtkomst till bokmärken, flikar från din telefon, AI-chatbotar och mer utan att lämna huvudvyn.
 
 ## General Section - Language & Appearance
 
@@ -235,6 +263,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Dina inställningar för kontrastkontroll åsidosätter webbplatsens utseende.
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = Dina färgval åsidosätter webbplatsens utseende. <a data-l10n-name="colors-link">Hantera färger</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -243,6 +275,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Hantera { -brand-short-name } teman i <a data-l10n-name="themes-link">Tillägg och teman</a>
+preferences-contrast-control-header = Kontrastkontroll
+preferences-contrast-control-description = Webbplatser har en mängd olika förgrunds- och bakgrundsfärger. Konfigurera { -brand-short-name } att använda samma färger på alla webbplatser för förbättrad läsbarhet.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatisk (använd systeminställningar)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Av
+    .accesskey = A
+preferences-contrast-control-custom =
+    .label = Anpassad
+    .accesskey = A
 preferences-colors-header = Färger
 preferences-colors-description = Åsidosätt { -brand-short-name }s standardfärger för text, webbplatsbakgrunder och länkar.
 preferences-colors-manage-button =
@@ -318,6 +361,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = Fråga alltid var jag vill spara filerna
     .accesskey = A
+download-private-browsing-delete =
+    .label = Ta bort filer som hämtats i privat surfning när alla privata fönster är stängda
+    .accesskey = T
 applications-header = Program
 applications-description = Välj hur { -brand-short-name } hanterar filer du hämtar från webben eller de program du använder när du surfar.
 applications-filter =
@@ -408,7 +454,7 @@ play-drm-content-learn-more = Lär dig mer
 update-application-title = Uppdateringar för { -brand-short-name }
 update-application-description = Håll { -brand-short-name } uppdaterad för bästa prestanda, stabilitet och säkerhet.
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = Version { $version } <a data-l10n-name="learn-more">Vad är nytt</a>
 update-history =
     .label = Visa uppdateringshistorik…
@@ -472,6 +518,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = Webbläsning
+browsing-group-label =
+    .aria-label = Webbläsning
 browsing-use-autoscroll =
     .label = Använd autorullning
     .accesskey = n
@@ -556,7 +604,7 @@ choose-bookmark =
     .label = Använd bokmärke…
     .accesskey = d
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } Innehåll
 home-prefs-content-description2 = Välj vilket innehåll du vill ha på din startskärm i { -firefox-home-brand-name }.
@@ -568,8 +616,7 @@ home-prefs-shortcuts-description = Webbplatser du sparar eller besöker
 home-prefs-shortcuts-by-option-sponsored =
     .label = Sponsrade genvägar
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = Rekommenderas av { $provider }
@@ -607,6 +654,14 @@ home-prefs-weather-header =
     .label = Väder
 home-prefs-weather-description = Dagens prognos i korthet
 home-prefs-weather-learn-more-link = Läs mer
+home-prefs-trending-search-header =
+    .label = Trendiga sökningar
+home-prefs-trending-search-description = Populära och ofta sökta ämnen
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Stöd { -brand-product-name }
+home-prefs-mission-message = Våra sponsorer stöder vårt uppdrag att bygga en bättre webb
+home-prefs-mission-message-learn-more-link = Ta reda på hur
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -641,6 +696,10 @@ search-show-suggestions-url-bar-option =
     .label = Visa sökförslag i adressfältets resultat
     .accesskey = f
 # With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = Visa söktermer i adressfältet på resultatsidor
+# With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
@@ -671,6 +730,9 @@ search-remove-engine =
 search-add-engine =
     .label = Lägg till
     .accesskey = L
+search-edit-engine =
+    .label = Redigera
+    .accesskey = R
 search-find-more-link = Hitta fler sökmotorer
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -679,6 +741,13 @@ search-keyword-warning-title = Duplicera nyckelord
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Du har valt ett nyckelord som redan används av “{ $name }”. Var god välj ett annat.
 search-keyword-warning-bookmark = Du har valt ett nyckelord som redan används av ett bokmärke. Var god välj ett annat.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Det finns redan en sökmotor med namnet "{ $name }". Välj ett annat namn.
+remove-engine-confirmation = Är du säker på att du vill ta bort den här sökmotorn?
+remove-engine-remove = Ta bort
+remove-addon-engine-alert = För att ta bort denna sökmotor, ta bort det tillhörande tillägget.
 
 ## Containers Section
 
@@ -696,7 +765,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Ta bort
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med dig webben
@@ -714,7 +783,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Hämta Waterfox för <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> för att synkronisera med din mobila enhet.
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ändra profilbild
@@ -732,7 +801,7 @@ sync-manage-account = Hantera konto
     .accesskey = o
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } är inte verifierat.
 sync-signedin-login-failure = Logga in för att återansluta { $email }
@@ -783,6 +852,9 @@ sync-currently-syncing-creditcards = Kreditkort
 sync-currently-syncing-payment-methods = Betalningsmetoder
 sync-currently-syncing-addons = Tillägg
 sync-currently-syncing-settings = Inställningar
+sync-manage-options =
+    .label = Hantera synkronisering…
+    .accesskey = H
 sync-change-options =
     .label = Ändra…
     .accesskey = n
@@ -835,6 +907,13 @@ sync-engine-settings =
     .label = Inställningar
     .tooltiptext = Allmänna, sekretess- och säkerhetsinställningar som du har ändrat
     .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Hantera vad som synkroniseras på alla dina anslutna enheter
+    .style = min-width: 36em;
+    .buttonlabelaccept = Spara
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Koppla från…
+    .buttonaccesskeyextra2 = f
 
 ## The device name controls.
 
@@ -855,7 +934,7 @@ sync-connect-another-device = Anslut en annan enhet
 
 sync-verification-sent-title = Verifiering skickad
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = En verifieringslänk har skickats till { $email }.
 sync-verification-not-sent-title = Det gick inte att skicka verifiering
 sync-verification-not-sent-body = Vi kan inte skicka ett verifieringsmeddelande just nu, försök igen senare.
@@ -950,12 +1029,12 @@ windows-passkey-settings-label = Hantera lösenordsnycklar i systeminställninga
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = För att skapa ett huvudlösenord anger du dina inloggningsuppgifter för Windows. Detta skyddar dina kontons säkerhet.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = skapa ett huvudlösenord
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] ändra inställningarna för betalningsmetoder
@@ -986,12 +1065,12 @@ history-header = Historik
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } kommer att
     .accesskey = m
 history-remember-option-all =
@@ -1086,6 +1165,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = Adressfält
 addressbar-suggest = När du använder adressfältet, föreslå
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Adressfält — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Välj vilken typ av förslag som ska visas i adressfältet.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Läs mer
 addressbar-locbar-history-option =
     .label = Webbläsarhistorik
     .accesskey = W
@@ -1117,8 +1203,19 @@ addressbar-locbar-showrecentsearches-option =
     .accesskey = s
 addressbar-locbar-showtrendingsuggestions-option =
     .label = Visa populära sökförslag
-    .accesskey = V
+    .accesskey = p
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Förslag från { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Få förslag från webben relaterade till din sökning.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Förslag från sponsorer
+addressbar-locbar-suggest-sponsored-desc = Stöd { -brand-short-name } med enstaka sponsrade förslag.
 addressbar-quickactions-learn-more = Läs mer
+addressbar-dismissed-suggestions-label = Avvisade förslag
+addressbar-restore-dismissed-suggestions-description = Återställ avvisade förslag från sponsorer och { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Återställ
 
 ## Privacy Section - Content Blocking
 
@@ -1281,19 +1378,44 @@ permissions-addon-exceptions =
 collection-header = Datainsamling och användning för { -brand-short-name }
 collection-header2 = { -brand-short-name } Datainsamling och användning
     .searchkeywords = telemetri
+preferences-collection-description = Vi strävar efter att ge dig val och samlar bara in den minimala information som behövs för att förbättra { -brand-product-name } för alla.
+preferences-collection-privacy-notice = Visa sekretessmeddelande
+preferences-across-profiles = Dessa inställningar gäller för alla { -brand-product-name }-profiler på den här enheten.
+preferences-view-profiles = Visa alla profiler
 collection-description = Vi strävar alltid efter att ge dig val och samlar endast in vad vi behöver för tillhandahålla och förbättra { -brand-short-name } för alla. Vi ber alltid om tillåtelse innan vi tar emot personliga uppgifter.
 collection-privacy-notice = Sekretessmeddelande
 collection-health-report-telemetry-disabled = Du tillåter inte längre { -vendor-short-name } att fånga in teknisk data och interaktionsdata. All tidigare data kommer att raderas inom 30 dagar.
 collection-health-report-telemetry-disabled-link = Läs mer
+collection-usage-ping =
+    .label = Skicka ping för daglig användning till { -vendor-short-name }
+    .accesskey = d
+collection-usage-ping-description = Detta hjälper { -vendor-short-name } att uppskatta antalet aktiva användare.
+collection-health-report2 =
+    .label = Skicka teknisk data och interaktionsdata till { -vendor-short-name }
+    .accesskey = r
 collection-health-report =
     .label = Tillåt { -brand-short-name } att automatiskt skicka teknisk och interaktionsdata till { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Läs mer
+collection-health-report-description = Detta hjälper oss att förbättra funktioner, prestanda och stabilitet i { -brand-product-name }.
+collection-studies2 =
+    .label = Installera och kör studier
+collection-studies-description = Testa funktioner och idéer innan de släpps för alla.
 collection-studies =
     .label = Tillåt { -brand-short-name } att installera och köra studier
 collection-studies-link = Visa { -brand-short-name }-studier
+addon-recommendations2 =
+    .label = Tillåt anpassade tilläggsrekommendationer
+addon-recommendations-description = Få tilläggsrekommendationer för att förbättra din webbupplevelse.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Datarapportering är inaktiverad för den här byggkonfigurationen.
+collection-backlogged-crash-reports2 =
+    .label = Skicka automatiskt kraschrapporter
+    .accesskey = k
+collection-backlogged-crash-reports-description = Det här hjälper { -vendor-short-name } att diagnostisera och lösa problem med webbläsaren. Rapporter kan innehålla personliga eller känsliga uppgifter.
 addon-recommendations =
-    .label = Tillåt { -brand-short-name } att göra personliga utökningsrekommendationer
+    .label = Tillåt { -brand-short-name } att göra personliga tilläggsrekommendationer
 addon-recommendations-link = Läs mer
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1359,12 +1481,17 @@ space-alert-under-5gb-message2 = <strong>{ -brand-short-name } håller på att f
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Endast HTTPS-läge
+httpsonly-description3 = Tillåter endast säkra anslutningar till webbplatser. { -brand-short-name } kommer att fråga innan du ansluter osäkert.
+httpsonly-learn-more2 = Hur endast HTTPS fungerar
 httpsonly-description = HTTPS ger en säker, krypterad anslutning mellan { -brand-short-name } och de webbplatser du besöker. De flesta webbplatser stöder HTTPS och om endast HTTPS-läget är aktiverat kommer { -brand-short-name } att uppgradera alla anslutningar till HTTPS.
 httpsonly-learn-more = Läs mer
 httpsonly-radio-enabled =
     .label = Aktivera endast HTTPS-läge i alla fönster
 httpsonly-radio-enabled-pbm =
     .label = Aktivera endast HTTPS-läge i privata fönster
+httpsonly-radio-disabled3 =
+    .label = Aktivera inte endast HTTPS-läge
+    .description = { -brand-short-name } kan fortfarande uppgradera vissa anslutningar
 httpsonly-radio-disabled =
     .label = Aktivera inte endast HTTPS-läge
 

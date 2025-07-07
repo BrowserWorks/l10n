@@ -1,13 +1,14 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sidebar-menu-bookmarks =
     .label = ブックマーク
+sidebar-menu-bookmarks-2 = ブックマーク
 sidebar-menu-history =
     .label = 履歴
 sidebar-menu-synced-tabs =
-    .label = 同期タブ
+    .label = 同期したタブ
 sidebar-menu-megalist =
     .label = パスワード
 sidebar-menu-close =

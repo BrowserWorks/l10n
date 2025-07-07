@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -29,3 +29,16 @@ webext-perms-description-tabs = Pasiekti naršyklės korteles
 webext-perms-description-tabHide = Slėpti ir rodyti naršyklės kortelės
 webext-perms-description-topSites = Matyti naršymo istoriją
 webext-perms-description-webNavigation = Pasiekti naršyklės veiklą navigacijos metu
+
+## The userScripts permission includes an additional explanation that is
+## displayed prominently near the usual permission description.
+
+
+## Short form to be used in lists or in a string (`webext-perms-description-data-some`)
+## that formats some of the data collection permissions below using `Intl.ListFormat`.
+##
+## This is used when the data collection permissions are required.
+
+
+## Long form to be used in `about:addons` when these data collection permissions are optional.
+

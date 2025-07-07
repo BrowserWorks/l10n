@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Tải xuống
 appmenuitem-passwords =
     .label = Mật khẩu
+appmenuitem-extensions-and-themes =
+    .label = Tiện ích mở rộng và chủ đề
+appmenuitem-extensions =
+    .label = Tiện ích mở rộng
 appmenuitem-addons-and-themes =
     .label = Tiện ích mở rộng và chủ đề
 appmenuitem-print =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Toàn màn hình
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Đăng nhập để đồng bộ hóa…
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = Bật đồng bộ thẻ để xem danh sá
 appmenu-remote-tabs-opensettings =
     .label = Cài đặt
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Muốn xem thẻ từ các thiết bị khác của bạn ở đây?
 appmenu-remote-tabs-connectdevice =
     .label = Kết nối thiết bị khác
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = Đồng bộ hóa và lưu dữ liệu
 appmenu-fxa-signed-in-label = Đăng nhập
 appmenu-fxa-setup-sync =
     .label = Bật đồng bộ hóa…
+appmenu-fxa-setup-sync-new = Bật
 appmenuitem-save-page =
     .label = Lưu trang dưới dạng…
+appmenuitem-fxa-sync-off-title = Đã tắt đồng bộ hoá
+appmenuitem-fxa-sync-off-description = Bảo mật và truy cập đánh dấu trang, mật khẩu, và nhiều hơn thế từ bất cứ nơi đâu
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = Thông báo về các tính năng mới
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -277,5 +284,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Nhận cảnh báo rò rỉ dữ liệu
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Che giấu email và điện thoại thật của bạn
+appmenuitem-services-relay-description = Khởi chạy bảng điều khiển email ẩn danh
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Bảo vệ hoạt động trực tuyến của bạn
+appmenu-services-header = Dịch vụ của tôi
+appmenu-other-protection-header = Hãy thử các công cụ bảo vệ khác từ { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Các hồ sơ người dùng khác
+appmenu-manage-profiles =
+    .label = Quản lý hồ sơ người dùng
+appmenu-create-profile =
+    .label = Hồ sơ người dùng mới
+appmenu-edit-profile =
+    .aria-label = Chỉnh sửa hồ sơ người dùng
+appmenu-profiles-2 =
+    .label = Hồ sơ người dùng

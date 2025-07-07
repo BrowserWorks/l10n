@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Waterfox Da
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Waterfox Telemetry 客戶端文件</a>當中包含資料收集概念、API 文件以及資料格式的參考資料。
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry 儀錶板</a>讓您可將 BrowserWorks 透過 Telemetry 收集到的資料以視覺化的方式呈現。
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> 當中提供 Telemetry 所收集的探測資料的詳細資訊與說明。
-about-telemetry-show-in-Waterfox-json-viewer = 用 JSON 檢視器開啟
+about-telemetry-show-in-Firefox-json-viewer = 用 JSON 檢視器開啟
 about-telemetry-home-section = 首頁
 about-telemetry-general-data-section = 一般資料
 about-telemetry-environment-data-section = 環境資料
@@ -66,7 +66,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } 個樣本、平均 = { $prettyAverage }、加總 = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "BrowserWorks"
+#   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = 此頁面顯示 Telemetry 所收集到效能、硬體設定、使用程度、以及自訂選項的相關資訊。此資訊將會傳送到 { $telemetryServerOwner } 以幫助改善 { -brand-full-name }。
 about-telemetry-settings-explanation = Telemetry 正在收集{ about-telemetry-data-type }，已<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>上傳。
 # Variables:

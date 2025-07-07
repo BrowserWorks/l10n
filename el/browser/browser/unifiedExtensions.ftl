@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,6 +21,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Άνοιγμα μενού για το { $extensionName }
 unified-extensions-item-message-manage = Διαχείριση επέκτασης
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked = Η επέκταση { $extensionName } παραβιάζει τις πολιτικές της BrowserWorks. Η χρήση της ενδέχεται να είναι επικίνδυνη.
 
 ## Extension's context menu
 
@@ -41,10 +44,40 @@ unified-extensions-context-menu-move-widget-down =
 
 unified-extensions-mb-quarantined-domain-title = Ορισμένες επεκτάσεις δεν επιτρέπονται
 unified-extensions-mb-quarantined-domain-message = Επιτρέπονται μόνο ορισμένες επεκτάσεις που εποπτεύονται από τη { -vendor-short-name } σε αυτόν τον ιστότοπο για την προστασία των δεδομένων σας.
-unified-extensions-mb-quarantined-domain-message-2 = Για την προστασία των δεδομένων σας, ορισμένες επεκτάσεις δεν μπορούν να διαβάσουν ή να αλλάξουν δεδομένα σε αυτόν τον ιστότοπο. Χρησιμοποιήστε τις ρυθμίσεις της επέκτασης για να την επιτρέψετε σε ιστοτόπους όπου περιορίζεται από τη { -vendor-short-name }.
 # .heading is processed by moz-message-bar to be used as a heading attribute
 unified-extensions-mb-quarantined-domain-message-3 =
     .heading = Ορισμένες επεκτάσεις δεν επιτρέπονται
     .message = Για την προστασία των δεδομένων σας, ορισμένες επεκτάσεις δεν μπορούν να διαβάσουν ή να αλλάξουν δεδομένα σε αυτόν τον ιστότοπο. Χρησιμοποιήστε τις ρυθμίσεις της επέκτασης για να την επιτρέψετε σε ιστοτόπους όπου περιορίζεται από τη { -vendor-short-name }.
 unified-extensions-mb-quarantined-domain-learn-more = Μάθετε περισσότερα
     .aria-label = Μάθετε περισσότερα: Ορισμένες επεκτάσεις δεν επιτρέπονται
+unified-extensions-mb-about-addons-link = Μετάβαση στις ρυθμίσεις επέκτασης
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single =
+    .heading = Το { $extensionName } απενεργοποιήθηκε
+    .message =
+        Αυτή η επέκταση παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
+        Μπορείτε να την ενεργοποιήσετε στις ρυθμίσεις, αλλά αυτό μπορεί να είναι επικίνδυνο.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a hard-block.
+unified-extensions-mb-blocklist-error-single =
+    .heading = Το { $extensionName } απενεργοποιήθηκε
+    .message = Αυτή η επέκταση παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple =
+    .heading =
+        { $extensionsCount ->
+           *[other] Απενεργοποιήθηκαν { $extensionsCount } επεκτάσεις
+        }
+    .message =
+        Μερικές από τις επεκτάσεις σας έχουν απενεργοποιηθεί επειδή παραβιάζουν τις πολιτικές της BrowserWorks.
+        Μπορείτε να τις ενεργοποιήσετε στις ρυθμίσεις, αλλά αυτό μπορεί να είναι επικίνδυνο.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through hard-blocks.
+unified-extensions-mb-blocklist-error-multiple =
+    .heading =
+        { $extensionsCount ->
+           *[other] Απενεργοποιήθηκαν { $extensionsCount } επεκτάσεις
+        }
+    .message = Μερικές από τις επεκτάσεις σας έχουν απενεργοποιηθεί επειδή παραβιάζουν τις πολιτικές της BrowserWorks.

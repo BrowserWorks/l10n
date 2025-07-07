@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ## These strings appear on the warning you see when first visiting about:config.
 
@@ -13,15 +14,11 @@ about-config-intro-warning-button = 危険性を承知の上で使用する
 
 # This is shown on the page before searching but after the warning is accepted.
 about-config-caution-text = これらの設定を変更すると、{ -brand-short-name } のセキュリティ、パフォーマンスに深刻な問題を引き起こす恐れがあります。
-
 about-config-page-title = 高度な設定
-
 about-config-search-input1 =
     .placeholder = 設定名を検索
 about-config-show-all = すべて表示
-
 about-config-show-only-modified = 変更された設定のみ表示する
-
 about-config-pref-add-button =
     .title = 新規作成
 about-config-pref-toggle-button =

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = Últimas 2 horas
 clear-time-duration-value-last-4-hours =
     .label = Últimas 4 horas
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Desde { $midnightTime }
 clear-time-duration-value-today =
     .label = Hoje
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = Histórico
 item-history-and-downloads =
     .label = Histórico de navegação e de transferências
     .accesskey = H
+item-history-and-downloads-description2 = Limpa o histórico de pesquisas, sites e transferências
 item-history-form-data-downloads =
     .label = Histórico
     .accesskey = H
@@ -94,6 +99,10 @@ item-form-search-history =
 item-site-prefs =
     .label = Definições do site
     .accesskey = i
+item-formdata-prefs =
+    .label = Informação de formulário guardada
+    .accesskey = o
+item-formdata-description = Limpa coisas como nomes, e-mails e outros itens que introduz nos formulários
 item-site-prefs-description = Repõe as suas permissões e as preferências de site para as definições originais
 data-section-label = Dados
 item-site-settings =

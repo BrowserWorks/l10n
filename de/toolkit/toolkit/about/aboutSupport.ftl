@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = Typ
 support-addons-enabled = Aktiviert
 support-addons-version = Version
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Ort
 legacy-user-stylesheets-title = Ältere Benutzer-Stylesheets
 legacy-user-stylesheets-enabled = Aktiv
 legacy-user-stylesheets-stylesheet-types = Stylesheets
@@ -184,6 +188,8 @@ media-capabilities-enumerate = Datenbankeinträge auflisten
 
 media-codec-support-sw-decoding = Software-Dekodierung
 media-codec-support-hw-decoding = Hardware-Dekodierung
+media-codec-support-sw-encoding = Software-Dekodierung
+media-codec-support-hw-encoding = Hardware-Dekodierung
 media-codec-support-codec-name = Codec-Name
 media-codec-support-supported = Unterstützt
 media-codec-support-unsupported = Nicht unterstützt
@@ -221,7 +227,7 @@ intl-regional-prefs = Region-Einstellungen
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -347,6 +353,9 @@ has-seccomp-bpf = Seccomp-BPF (Filtern von Systemaufrufen)
 has-seccomp-tsync = Seccomp-Thread-Synchronisierung
 has-user-namespaces = User-Namespaces
 has-privileged-user-namespaces = User-Namespaces für privilegierte Prozesse
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } – Diese Funktion wird von Ihrem System nicht erlaubt. Dies kann die Sicherheitsfunktionen von { -brand-short-name } einschränken.
 can-sandbox-content = Inhaltsprozesse in isolierter Umgebung
 can-sandbox-media = Medienplugins in isolierter Umgebung
 content-sandbox-level = Ebene der isolierten Umgebung des Inhaltsprozesses

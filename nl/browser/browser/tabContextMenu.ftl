@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Nieuw tabblad
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Tabbladen aan de linkerkant sluiten
     .accesskey = i
+close-tabs-to-the-start-vertical =
+    .label = Bovenstaande tabbladen sluiten
+    .accesskey = l
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Tabbladen aan de rechterkant sluiten
     .accesskey = r
+close-tabs-to-the-end-vertical =
+    .label = Onderstaande tabbladen sluiten
+    .accesskey = O
 close-other-tabs =
     .label = Overige tabbladen sluiten
     .accesskey = e
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Delen
     .accesskey = e
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Nieuw tabblad rechts
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = Nieuw tabblad hieronder
+    .accesskey = w
+tab-context-new-group =
+    .label = Nieuwe groep
+    .accesskey = g
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -113,3 +133,11 @@ tab-context-send-tabs-to-device =
            *[other] { $tabCount } tabbladen naar apparaat verzenden
         }
     .accesskey = z
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tabblad ontladen
+            [one] { $tabCount } tabblad ontladen
+           *[other] { $tabCount } tabbladen ontladen
+        }
+    .accesskey = o

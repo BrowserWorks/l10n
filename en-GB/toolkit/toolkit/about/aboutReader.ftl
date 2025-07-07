@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Sepia
     .title = Colour Scheme Sepia
 about-reader-color-scheme-auto = Auto
     .title = Colour Scheme Auto
-about-reader-color-theme-light = Light
-    .title = Colour Theme Light
-about-reader-color-theme-dark = Dark
-    .title = Colour Theme Dark
-about-reader-color-theme-sepia = Sepia
-    .title = Colour Theme Sepia
-about-reader-color-theme-auto = Auto
-    .title = Colour Theme Auto
-about-reader-color-theme-gray = Gray
-    .title = Colour Theme Gray
-about-reader-color-theme-contrast = Contrast
-    .title = Colour Theme Contrast
-about-reader-color-theme-custom = Custom colours
-    .title = Colour Theme Custom
 about-reader-color-light-theme = Light
     .title = Light theme
 about-reader-color-dark-theme = Dark
@@ -49,7 +35,7 @@ about-reader-estimated-read-time =
        *[other] { $range } minutes
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Decrease font size
@@ -74,7 +60,6 @@ about-reader-font-type-monospace = Monospace
 
 about-reader-toolbar-close = Close Reader View
 about-reader-toolbar-type-controls = Type controls
-about-reader-toolbar-color-controls = Colours
 about-reader-toolbar-text-layout-controls = Text and layout
 about-reader-toolbar-theme-controls = Theme
 about-reader-toolbar-savetopocket = Save to { -pocket-brand-name }
@@ -99,10 +84,24 @@ about-reader-custom-colors-visited-links = Visited links
     .title = Edit colour
 about-reader-custom-colors-selection-highlight = Highlighter for read aloud
     .title = Edit colour
-about-reader-custom-colors-reset-button = Reset defaults
 about-reader-reset-button = Reset defaults
+about-reader-custom-colors-foreground2 =
+    .label = Text
+    .title = Edit colour
+about-reader-custom-colors-background2 =
+    .label = Background
+    .title = Edit colour
+about-reader-custom-colors-unvisited-links2 =
+    .label = Unvisited links
+    .title = Edit colour
+about-reader-custom-colors-visited-links2 =
+    .label = Visited links
+    .title = Edit colour
+about-reader-custom-colors-selection-highlight2 =
+    .label = Highlighter for read aloud
+    .title = Edit colour
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Text
 about-reader-text-size-label = Text size
@@ -119,9 +118,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Line spacing
 about-reader-advanced-layout-header = Advanced
-about-reader-slider-label-width-narrow = Narrow
-about-reader-slider-label-width-wide = Wide
-about-reader-slider-label-spacing-narrow = Narrow
 about-reader-character-spacing-label =
     .label = Character spacing
 about-reader-word-spacing-label =
@@ -133,3 +129,5 @@ about-reader-text-alignment-center =
     .title = Align text centre
 about-reader-text-alignment-right =
     .title = Align text right
+about-reader-text-alignment-justify =
+    .title = Justify text

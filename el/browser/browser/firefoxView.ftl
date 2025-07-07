@@ -1,21 +1,21 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 toolbar-button-firefox-view =
-    .label = { -firefoxview-brand-name }
-    .tooltiptext = { -firefoxview-brand-name }
+    .label = { -firefoxview-brand-name(case: "nom") }
+    .tooltiptext = { -firefoxview-brand-name(case: "nom") }
 toolbar-button-firefox-view-2 =
-    .label = { -firefoxview-brand-name }
+    .label = { -firefoxview-brand-name(case: "nom") }
     .tooltiptext = Προβολή πρόσφατης περιήγησης από όλα τα παράθυρα και τις συσκευές
 menu-tools-firefox-view =
-    .label = { -firefoxview-brand-name }
+    .label = { -firefoxview-brand-name(case: "nom") }
     .accesskey = F
-firefoxview-page-title = { -firefoxview-brand-name }
+firefoxview-page-title = { -firefoxview-brand-name(case: "nom") }
 firefoxview-page-heading =
-    .heading = { -firefoxview-brand-name }
+    .heading = { -firefoxview-brand-name(case: "nom") }
 firefoxview-page-label =
-    .label = { -firefoxview-brand-name }
+    .label = { -firefoxview-brand-name(case: "nom") }
 firefoxview-close-button =
     .title = Κλείσιμο
     .aria-label = Κλείσιμο
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = Ολοκλήρωση κατά { $percentV
 firefoxview-tabpickup-step-signin-header = Απρόσκοπτη εναλλαγή μεταξύ συσκευών
 firefoxview-tabpickup-step-signin-description = Για να φέρετε τις καρτέλες του τηλεφώνου σας εδώ, κάντε πρώτα σύνδεση ή δημιουργήστε έναν λογαριασμό.
 firefoxview-tabpickup-step-signin-primarybutton = Συνέχεια
+firefoxview-syncedtabs-signin-header-2 = Το { -brand-product-name } σας σε όλες τις συσκευές σας
+firefoxview-syncedtabs-signin-description-2 = Για να δείτε τις ανοικτές σας καρτέλες στο τηλέφωνο και σε άλλες συσκευές σας, συνδεθείτε ή δημιουργήστε έναν λογαριασμό. Με έναν λογαριασμό, μπορείτε να συγχρονίσετε τους κωδικούς πρόσβασης, το ιστορικό σας και πολλά άλλα.
+firefoxview-syncedtabs-signin-primarybutton-2 = Σύνδεση
 firefoxview-syncedtabs-signin-header = Λάβετε καρτέλες από οπουδήποτε
 firefoxview-syncedtabs-signin-description = Για να δείτε τις καρτέλες σας από όπου κι αν χρησιμοποιείτε το { -brand-product-name }, συνδεθείτε στον λογαριασμό σας. Εάν δεν έχετε λογαριασμό, θα σας καθοδηγήσουμε κατά την εγγραφή.
 firefoxview-syncedtabs-signin-primarybutton = Σύνδεση ή εγγραφή
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Συγχρονισμός του { -bran
 firefoxview-tabpickup-adddevice-description = Κάντε λήψη του { -brand-product-name } για κινητές συσκευές και συνδεθείτε εκεί.
 firefoxview-tabpickup-adddevice-learn-how = Μάθετε πώς
 firefoxview-tabpickup-adddevice-primarybutton = Λήψη του { -brand-product-name } για κινητά
+firefoxview-syncedtabs-adddevice-header-2 = Λάβετε καρτέλες από οπουδήποτε
+firefoxview-syncedtabs-adddevice-description-2 = Συνδεθείτε στο { -brand-product-name } από το τηλέφωνό σας ή από κάποιο άλλο υπολογιστή για να δείτε τις καρτέλες. Μάθετε πώς να <a data-l10n-name="url">συνδέσετε επιπλέον συσκευές</a>.
 firefoxview-syncedtabs-adddevice-header = Συνδεθείτε στο { -brand-product-name } στις άλλες συσκευές σας
 firefoxview-syncedtabs-adddevice-description = Για να δείτε τις καρτέλες σας από όπου κι αν χρησιμοποιείτε το { -brand-product-name }, συνδεθείτε από όλες τις συσκευές σας. Μάθετε πώς να <a data-l10n-name="url">συνδέσετε πρόσθετες συσκευές</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Δοκιμάστε το { -brand-product-name } για κινητές συσκευές
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Καρτέλες από άλλες συσκευ
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Προβολή όλων
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Αναζήτηση πρόσφατα κλεισμένων καρτελών
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Αναζήτηση καρτελών
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Αναζήτηση συγχρονισμένων καρτελών
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (τοπικά αρχεία)
 firefoxview-show-all-history = Εμφάνιση πλήρους ιστορικού
 firefoxview-view-more-browsing-history = Προβολή περισσότερου ιστορικού περιήγησης
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Επιστρέψτε εκεί που ήσασταν
 firefoxview-history-empty-description = Καθώς περιηγείστε, οι σελίδες που επισκέπτεστε θα εμφανίζονται εδώ.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Η προστασία του απο�
 firefoxview-choose-browser-button = Επιλογή προγράμματος περιήγησης
     .title = Επιλογή προγράμματος περιήγησης
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Δεν υπάρχουν δεδομένα
 firefoxview-dont-remember-history-empty-description = Η προστασία του απορρήτου σας βρίσκεται στο επίκεντρο της αποστολής μας. Γι' αυτό, μπορείτε να ελέγξετε τη δραστηριότητα που απομνημονεύει το { -brand-short-name }.
 firefoxview-dont-remember-history-empty-description-two = Με βάση τις τρέχουσες ρυθμίσεις σας, το { -brand-short-name } δεν αποθηκεύει τη δραστηριότητά σας κατά την περιήγηση. Για να το αλλάξετε αυτό, <a data-l10n-name="history-settings-url-two">αλλάξτε τις ρυθμίσεις απομνημόνευσης του ιστορικού σας</a>.
+firefoxview-dont-remember-history-empty-header-2 = Εσείς έχετε τον έλεγχο του τι αποθηκεύει το { -brand-short-name }
+firefoxview-dont-remember-history-empty-description-one = Προς το παρόν, το { -brand-short-name } δεν αποθηκεύει τη δραστηριότητα περιήγησής σας. Για να το αλλάξετε αυτό, <a data-l10n-name="history-settings-url-two">ενημερώστε τις ρυθμίσεις ιστορικού σας</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Κλείσιμο
     .title = Κλείσιμο
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Εισαγωγή ιστορικού από άλλο πρόγραμμα περιήγησης
 firefoxview-import-history-description = Κάντε το { -brand-short-name } το προεπιλεγμένο πρόγραμμα περιήγησής σας. Εισαγάγετε ιστορικό περιήγησης, σελιδοδείκτες και πολλά άλλα.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Κλείσατε κάποια καρτέλα πολύ νωρίς;
 firefoxview-recentlyclosed-empty-description = Εδώ θα βρείτε τις καρτέλες που κλείσατε πρόσφατα, ώστε να μπορέσετε να τις ανοίξετε ξανά πιο γρήγορα.

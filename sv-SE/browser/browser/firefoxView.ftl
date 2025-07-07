@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% klar
 firefoxview-tabpickup-step-signin-header = Växla enkelt mellan enheter
 firefoxview-tabpickup-step-signin-description = För att se de öppna flikarna på din telefon, logga in eller skapa ett konto.
 firefoxview-tabpickup-step-signin-primarybutton = Fortsätt
+firefoxview-syncedtabs-signin-header-2 = Ditt { -brand-product-name } på alla dina enheter
+firefoxview-syncedtabs-signin-description-2 = För att se flikar du har öppna på din telefon och andra enheter, logga in eller registrera dig för ett konto. Med ett konto kan du också synkronisera dina lösenord, historik och mer.
+firefoxview-syncedtabs-signin-primarybutton-2 = Logga in
 firefoxview-syncedtabs-signin-header = Hämta flikar var du än befinner dig
 firefoxview-syncedtabs-signin-description = Logga in på ditt konto om du vill se dina flikar var du än använder { -brand-product-name }. Om du inte har ett konto tar vi dig genom stegen för att registrera dig.
 firefoxview-syncedtabs-signin-primarybutton = Logga in eller registrera dig
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Synkronisera { -brand-product-name } p�
 firefoxview-tabpickup-adddevice-description = Ladda ner { -brand-product-name } för mobil och logga in där.
 firefoxview-tabpickup-adddevice-learn-how = Läs mer
 firefoxview-tabpickup-adddevice-primarybutton = Hämta { -brand-product-name } för mobil
+firefoxview-syncedtabs-adddevice-header-2 = Hämta flikar från överallt
+firefoxview-syncedtabs-adddevice-description-2 = Logga in på { -brand-product-name } på din telefon eller en annan dator för att se flikar här. Lär dig hur du <a data-l10n-name="url">ansluter ytterligare enheter</a>.
 firefoxview-syncedtabs-adddevice-header = Logga in på { -brand-product-name } på dina andra enheter
 firefoxview-syncedtabs-adddevice-description = Om du vill se dina flikar var du än använder { -brand-product-name }, loggar du in på alla dina enheter. Lär dig hur du <a data-l10n-name="url">ansluter ytterligare enheter</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Prova { -brand-product-name } för mobil
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Flikar från andra enheter
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Visa alla
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Sök i nyligen stängda flikar
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Sök flikar
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Sök i synkroniserade flikar
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (lokala filer)
 firefoxview-show-all-history = Visa all historik
 firefoxview-view-more-browsing-history = Visa mer webbhistorik
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Gå tillbaka dit du redan har varit
 firefoxview-history-empty-description = När du surfar kommer de sidor du besöker att listas här.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = Att skydda din integritet är kärna
 firefoxview-choose-browser-button = Välj webbläsare
     .title = Välj webbläsare
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Inget att visa
 firefoxview-dont-remember-history-empty-description = Att skydda din integritet är kärnan i vad vi gör. Det är därför du kan kontrollera den aktivitet som { -brand-short-name } kommer ihåg.
 firefoxview-dont-remember-history-empty-description-two = Baserat på dina nuvarande inställningar kommer inte { -brand-short-name } ihåg din aktivitet när du surfar. För att ändra det, <a data-l10n-name="history-settings-url-two">ändra dina historikinställningar för att komma ihåg din historik</a>.
+firefoxview-dont-remember-history-empty-header-2 = Du har kontroll över vad { -brand-short-name } kommer ihåg
+firefoxview-dont-remember-history-empty-description-one = Just nu kommer inte { -brand-short-name } ihåg din surfaktivitet. För att ändra det, <a data-l10n-name="history-settings-url-two">uppdatera dina historikinställningar</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Stäng
     .title = Stäng
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importera historik från en annan webbläsare
 firefoxview-import-history-description = Gör { -brand-short-name } till din webbläsare. Importera webbhistorik, bokmärken och mer.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = Stängt en flik för tidigt?
 firefoxview-recentlyclosed-empty-description = Här hittar du flikarna du nyligen stängt, så att du snabbt kan öppna någon av dem igen.

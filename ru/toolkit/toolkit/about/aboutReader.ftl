@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,20 +12,6 @@ about-reader-color-scheme-sepia = Сепия
     .title = Цветовая схема «Сепия»
 about-reader-color-scheme-auto = Авто
     .title = Цветовая схема «Авто»
-about-reader-color-theme-light = Светлая
-    .title = Светлая цветовая схема
-about-reader-color-theme-dark = Тёмная
-    .title = Тёмная цветовая схема
-about-reader-color-theme-sepia = Сепия
-    .title = Цветовая схема Сепия
-about-reader-color-theme-auto = Автоматическая
-    .title = Автоматическая световая схема
-about-reader-color-theme-gray = Серая
-    .title = Серая цветовая схема
-about-reader-color-theme-contrast = Контрастная
-    .title = Контрастная цветовая схема
-about-reader-color-theme-custom = Настраиваемые цвета
-    .title = Настраиваемая цветовая схема
 about-reader-color-light-theme = Светлая
     .title = Светлая тема
 about-reader-color-dark-theme = Тёмная
@@ -50,7 +36,7 @@ about-reader-estimated-read-time =
        *[many] { $range } минут
     }
 
-## These are used as tooltips in Type Control
+## Reader View text and layout menu
 
 about-reader-toolbar-minus =
     .title = Уменьшить размер шрифта
@@ -75,7 +61,6 @@ about-reader-font-type-monospace = Моноширинный
 
 about-reader-toolbar-close = Закрыть режим чтения
 about-reader-toolbar-type-controls = Настройка шрифтов
-about-reader-toolbar-color-controls = Цвета
 about-reader-toolbar-text-layout-controls = Текст и разбивка окна
 about-reader-toolbar-theme-controls = Тема
 about-reader-toolbar-savetopocket = Сохранить в { -pocket-brand-name }
@@ -100,16 +85,30 @@ about-reader-custom-colors-visited-links = Посещённые ссылки
     .title = Изменить цвет
 about-reader-custom-colors-selection-highlight = Подсветка для чтения вслух
     .title = Изменить цвет
-about-reader-custom-colors-reset-button = Восстановить по умолчанию
 about-reader-reset-button = Восстановить по умолчанию
+about-reader-custom-colors-foreground2 =
+    .label = Текст
+    .title = Изменить цвет
+about-reader-custom-colors-background2 =
+    .label = Фон
+    .title = Изменить цвет
+about-reader-custom-colors-unvisited-links2 =
+    .label = Непосещённые ссылки
+    .title = Изменить цвет
+about-reader-custom-colors-visited-links2 =
+    .label = Посещённые ссылки
+    .title = Изменить цвет
+about-reader-custom-colors-selection-highlight2 =
+    .label = Подсветка для чтения вслух
+    .title = Изменить цвет
 
-## Reader View improved text and layout menu
+## Reader View text and layout menu
 
 about-reader-text-header = Текст
 about-reader-text-size-label = Размер текста
 about-reader-font-type-selector-label = Шрифт
 about-reader-font-weight-selector-label = Размер шрифта
-about-reader-font-weight-light = Светлый
+about-reader-font-weight-light = Лёгкий
 about-reader-font-weight-regular = Обычный
 about-reader-font-weight-bold = Полужирный
 about-reader-layout-header = Разбивка окна
@@ -120,9 +119,6 @@ about-reader-content-width-label =
 about-reader-line-spacing-label =
     .label = Межстрочный интервал
 about-reader-advanced-layout-header = Дополнительно
-about-reader-slider-label-width-narrow = Узкая
-about-reader-slider-label-width-wide = Широкая
-about-reader-slider-label-spacing-narrow = Узкая
 about-reader-character-spacing-label =
     .label = Межсимвольный интервал
 about-reader-word-spacing-label =
@@ -134,3 +130,5 @@ about-reader-text-alignment-center =
     .title = Выровнять по центру
 about-reader-text-alignment-right =
     .title = Выровнять по правому краю
+about-reader-text-alignment-justify =
+    .title = Выравнивание по ширине

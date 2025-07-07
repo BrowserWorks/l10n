@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,3 +15,5 @@ places-bookmarks-restore-format-error = サポートされていないファイ�
 places-bookmarks-restore-parse-error = バックアップファイルを処理できませんでした
 places-bookmarks-import = ブックマークファイルのインポート
 places-bookmarks-export = ブックマークファイルのエクスポート
+places-bookmarks-paste-error-title = 不正な URL が見つかりました
+places-bookmarks-paste-error-message-header = 以下の URL はブックマークに追加できません。書式を確認してから追加してみてください。

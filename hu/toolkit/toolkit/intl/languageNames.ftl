@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -166,6 +166,7 @@ language-name-se = északi számi
 language-name-sg = sango
 language-name-si = szingaléz
 language-name-sk = szlovák
+language-name-skr = Saraiki
 language-name-sl = szlovén
 language-name-sm = szamoai
 language-name-sn = shona

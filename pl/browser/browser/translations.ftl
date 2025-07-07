@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Przetłumacz tę stronę
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Zarządzaj językami
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Wyświetl w oryginale
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Tłumaczenia
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Pobierz języki do tłumaczenia bez dostępu d
 translations-manage-all-language = Wszystkie języki
 translations-manage-download-button = Pobierz
 translations-manage-delete-button = Usuń
-translations-manage-intro = Ustaw preferencje dotyczące języka i tłumaczenia witryn oraz zarządzaj językami zainstalowanymi do tłumaczenia bez dostępu do Internetu.
-translations-manage-install-description = Zainstaluj języki do tłumaczenia bez dostępu do Internetu
-translations-manage-language-install-button =
-    .label = Zainstaluj
-translations-manage-language-install-all-button =
-    .label = Zainstaluj wszystkie
-    .accesskey = Z
 translations-manage-intro-2 = Ustaw preferencje dotyczące języka i tłumaczenia witryn oraz zarządzaj językami pobranymi do tłumaczenia bez dostępu do Internetu.
 translations-manage-download-description = Pobierz języki do tłumaczenia bez dostępu do Internetu
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Usuń wszystkie
     .accesskey = U
-translations-manage-error-install = Wystąpił problem przy instalacji plików językowych. Spróbuj ponownie.
 translations-manage-error-download = Wystąpił problem przy pobieraniu plików językowych. Spróbuj ponownie.
 translations-manage-error-delete = Wystąpił błąd podczas usuwania plików językowych. Spróbuj ponownie.
 translations-manage-error-remove = Wystąpił błąd podczas usuwania plików językowych. Spróbuj ponownie.
@@ -194,7 +186,7 @@ main-context-menu-translate-selection-to-language =
 # the text of a hyperlink to a yet-to-be-determined language.
 main-context-menu-translate-link-text =
     .label = Przetłumacz tekst odnośnika…
-    .accesskey = P
+    .accesskey = c
 # Text displayed in the right-click context menu for translating
 # the text of a hyperlink to a target language.
 #
@@ -202,7 +194,7 @@ main-context-menu-translate-link-text =
 #   $language (string) - The localized display name of the target language
 main-context-menu-translate-link-text-to-language =
     .label = Przetłumacz tekst odnośnika na { $language }
-    .accesskey = P
+    .accesskey = c
 # Text displayed in the select translations panel header.
 select-translations-panel-header = Tłumaczenie
 # Text displayed above the from-language dropdown menu.

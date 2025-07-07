@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -43,7 +43,7 @@ synced-tabs-context-open-in-private-window =
 # string is located in tabContextMenu.ftl. So, this string should be translated
 # consistently with the "Bookmark Tab…" string there.
 synced-tabs-context-bookmark =
-    .label = タブをブックマーク...
+    .label = タブをブックマークに追加...
     .accesskey = B
 synced-tabs-context-copy =
     .label = コピー
@@ -59,3 +59,8 @@ synced-tabs-context-sync-now =
     .accesskey = S
 synced-tabs-fxa-sign-in = ログインして同期
 synced-tabs-turn-on-sync = 同期をオンにする
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables
+# $deviceName - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab = { $deviceName } のタブを閉じる

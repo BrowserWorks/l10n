@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -39,8 +39,6 @@ address-capture-manage-address-button =
     .label = Címbeállítások
 address-capture-learn-more-button =
     .label = További tudnivalók
-# The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = Új cím hozzáadása
 address-capture-open-menu-button =
     .aria-label = Menü megnyitása
 address-capture-edit-address-button =
@@ -49,10 +47,10 @@ address-capture-edit-address-button =
 autofill-add-address-title = Cím hozzáadása
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Cím szerkesztése
-autofill-address-name = Név
 autofill-address-given-name = Utónév
 autofill-address-additional-name = Egyéb név
 autofill-address-family-name = Vezetéknév
+autofill-address-name = Név
 autofill-address-organization = Szervezet
 autofill-address-street-address = Utca, házszám
 autofill-address-street = Utca, házszám
@@ -108,9 +106,8 @@ autofill-address-eircode = Eircode
 
 ##
 
-
-##
-
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = Új cím hozzáadása
 autofill-address-country = Ország vagy régió
 autofill-address-country-only = Ország
 autofill-address-tel = Telefonszám
@@ -122,7 +119,7 @@ autofill-country-warning-message = Az űrlapkitöltés jelenleg csak egyes orsz�
 autofill-add-new-card-title = Új bankkártya hozzáadása
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Bankkártya szerkesztése
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

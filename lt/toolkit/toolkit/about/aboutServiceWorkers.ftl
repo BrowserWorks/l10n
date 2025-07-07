@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,6 @@ about-service-workers-title = Apie aptarnavimo scenarijus
 about-service-workers-main-title = Registruoti aptarnavimo scenarijai
 about-service-workers-warning-not-enabled = Aptarnavimo scenarijai yra išjungti.
 about-service-workers-warning-no-service-workers = Nėra registruotų aptarnavimo scenarijų.
-
 # The original title of service workers' information
 #
 # Variables:
@@ -29,12 +28,8 @@ active-cache-name = <strong>Aktyvaus podėlio pavadinimas:</strong> { $name }
 waiting-cache-name = <strong>Laukiančio podėlio pavadinimas:</strong> { $name }
 push-end-point-waiting = <strong>Galinis siuntimo taškas:</strong> { waiting }
 push-end-point-result = <strong>Galinis siuntimo taškas:</strong> { $name }
-
 # This term is used as a button label (verb, not noun).
 update-button = Atnaujinti
-
 unregister-button = Išregistruoti
-
 unregister-error = Nepavyko išregistruoti šio scenarijaus.
-
 waiting = Laukiama…

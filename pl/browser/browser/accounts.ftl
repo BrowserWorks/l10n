@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -10,11 +10,11 @@ account-finish-account-setup = Dokończ konfigurację konta
 account-disconnected2 = Konto zostało rozłączone
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Wyślij do wszystkich urządzeń
-# Menu item that links to the Waterfox Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Zarządzaj urządzeniami…
 
 ## Variables:
-##   $email (String): = Email address of user's Waterfox Account.
+##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = Połącz ponownie z kontem { $email }
 account-verify = Zweryfikuj adres { $email }
@@ -40,22 +40,22 @@ account-send-tab-to-device-connectdevice = Połącz inne urządzenie…
 account-send-tab-to-device-verify-status = Konto nie zostało zweryfikowane
 account-send-tab-to-device-verify = Zweryfikuj konto…
 
-## These strings are used in a notification shown when a new device joins the Waterfox account.
+## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name }
 # The title shown in a notification when either this device or another device
-# has connected to, or disconnected from, a Waterfox account.
+# has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Konto
 # Variables:
 #   $deviceName (String): the name of the new device
-account-connection-connected-with = Ten komputer jest teraz połączony z urządzeniem { $deviceName }.
+account-connection-connected-with = Ten komputer jest teraz połączony z „{ $deviceName }”.
 # Used when the name of the new device is not known.
 account-connection-connected-with-noname = Ten komputer jest teraz połączony z nowym urządzeniem.
-# Used in a notification shown after a Waterfox account is connected to the current device.
+# Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = Pomyślnie zalogowano
-# Used in a notification shown after the Waterfox account was disconnected remotely.
+# Used in a notification shown after the Firefox account was disconnected remotely.
 account-connection-disconnected = Ten komputer został rozłączony.
 
 ## These strings are used in a notification shown when we're opening
@@ -65,7 +65,7 @@ account-connection-disconnected = Ten komputer został rozłączony.
 account-single-tab-arriving-title = Przychodząca karta
 # Variables:
 #   $deviceName (String): the device name.
-account-single-tab-arriving-from-device-title = Karta z urządzenia { $deviceName }
+account-single-tab-arriving-from-device-title = Karta z „{ $deviceName }”
 # Used when a tab from a remote device arrives but the URL must be truncated.
 # Should display the URL with an indication that it's been truncated.
 # Variables:
@@ -82,15 +82,15 @@ account-multiple-tabs-arriving-title = Przychodzące karty
 #   $deviceName (String): the device name.
 account-multiple-tabs-arriving-from-single-device =
     { $tabCount ->
-        [one] { $tabCount } karta od „{ $deviceName }”.
-        [few] { $tabCount } karty od „{ $deviceName }”.
-       *[many] { $tabCount } kart od „{ $deviceName }”.
+        [one] { $tabCount } karta z „{ $deviceName }”
+        [few] { $tabCount } karty z „{ $deviceName }”
+       *[many] { $tabCount } kart z „{ $deviceName }”
     }
 account-multiple-tabs-arriving-from-multiple-devices =
     { $tabCount ->
-        [one] { $tabCount } karta od połączonych urządzeń.
-        [few] { $tabCount } karty od połączonych urządzeń.
-       *[many] { $tabCount } kart od połączonych urządzeń.
+        [one] { $tabCount } karta z połączonego urządzenia
+        [few] { $tabCount } karty z połączonych urządzeń
+       *[many] { $tabCount } kart z połączonych urządzeń
     }
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device =

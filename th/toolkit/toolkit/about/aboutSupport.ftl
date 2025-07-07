@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,6 +15,10 @@ support-addons-type = ชนิด
 support-addons-enabled = ถูกเปิดใช้งาน
 support-addons-version = รุ่น
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = ตำแหน่งที่ตั้ง
 legacy-user-stylesheets-title = สไตล์ชีตผู้ใช้แบบเดิม
 legacy-user-stylesheets-enabled = ใช้งานอยู่
 legacy-user-stylesheets-stylesheet-types = สไตล์ชีต
@@ -98,7 +102,7 @@ experimental-features-value = ค่า
 modified-key-prefs-title = ค่าปรับแต่งสำคัญที่ถูกปรับเปลี่ยน
 modified-prefs-name = ชื่อ
 modified-prefs-value = ค่า
-user-js-title = การกำหนดลักษณะ user.js
+user-js-title = ค่าปรับแต่ง user.js
 user-js-description = โฟลเดอร์โปรไฟล์ของคุณมี <a data-l10n-name="user-js-link">ไฟล์ user.js</a> ซึ่งมีค่าปรับแต่งที่ไม่ได้ถูกสร้างโดย { -brand-short-name }
 locked-key-prefs-title = ค่าปรับแต่งสำคัญที่ถูกล็อก
 locked-prefs-name = ชื่อ
@@ -181,6 +185,8 @@ media-capabilities-enumerate = แจงนับฐานข้อมูล
 
 media-codec-support-sw-decoding = การถอดรหัสด้วยซอฟต์แวร์
 media-codec-support-hw-decoding = การถอดรหัสด้วยฮาร์ดแวร์
+media-codec-support-sw-encoding = การเข้ารหัสด้วยซอฟต์แวร์
+media-codec-support-hw-encoding = การเข้ารหัสด้วยฮาร์ดแวร์
 media-codec-support-codec-name = ชื่อตัวแปลงสัญญาณ
 media-codec-support-supported = รองรับ
 media-codec-support-unsupported = ไม่รองรับ
@@ -214,11 +220,11 @@ intl-locales-supported = ภาษาของแอป
 intl-locales-default = ภาษาเริ่มต้น
 intl-os-title = ระบบปฏิบัติการ
 intl-os-prefs-system-locales = ภาษาของระบบ
-intl-regional-prefs = การกำหนดลักษณะภูมิภาค
+intl-regional-prefs = ค่าปรับแต่งภูมิภาค
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -324,6 +330,9 @@ has-seccomp-bpf = Seccomp-BPF (System Call Filtering)
 has-seccomp-tsync = Seccomp Thread Synchronization
 has-user-namespaces = เนมสเปซผู้ใช้
 has-privileged-user-namespaces = เนมสเปซผู้ใช้สำหรับโพรเซสที่ได้รับสิทธิ์
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — คุณลักษณะนี้ไม่ได้รับอนุญาตให้ใช้งานในระบบของคุณ ซึ่งอาจจำกัดคุณลักษณะด้านความปลอดภัยของ { -brand-short-name }
 can-sandbox-content = Content Process Sandboxing
 can-sandbox-media = Media Plugin Sandboxing
 content-sandbox-level = ระดับแซนด์บอกซ์ของโพรเซสเนื้อหา
@@ -391,6 +400,20 @@ support-printing-clear-settings-button = ล้างการตั้งค่
 support-printing-modified-settings = การตั้งค่าการพิมพ์ที่ถูกปรับเปลี่ยน
 support-printing-prefs-name = ชื่อ
 support-printing-prefs-value = ค่า
+
+## Remote Settings sections
+
+support-remote-settings-title = ตั้งค่าระยะไกล
+support-remote-settings-status = สถานะ
+support-remote-settings-status-ok = ตกลง
+# Status when synchronization is not working.
+support-remote-settings-status-broken = ไม่ทำงาน
+support-remote-settings-last-check = ตรวจสอบครั้งล่าสุด
+support-remote-settings-local-timestamp = การลงบันทึกเวลาเฉพาะที่
+support-remote-settings-sync-history = ประวัติ
+support-remote-settings-sync-history-status = สถานะ
+support-remote-settings-sync-history-datetime = วันที่
+support-remote-settings-sync-history-infos = ข้อมูล
 
 ## Normandy sections
 

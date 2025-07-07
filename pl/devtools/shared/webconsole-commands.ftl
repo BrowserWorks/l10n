@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,13 +22,3 @@ webconsole-commands-usage-unblock =
     Zatrzymuje blokowanie żądań sieciowych
     
       Przyjmuje tylko jeden parametr, dokładnie ten sam ciąg, co uprzednio przekazany do :block.
-# Usage string for :trace command
-webconsole-commands-usage-trace =
-    :trace
-    
-    Przełącza śledzenie JavaScript
-    
-      Obsługuje te parametry:
-        --logMethod ustawione na „console” będzie zapisywać do konsoli WWW (domyślnie), a ustawione na „stdout” będzie zapisywać do standardowego wyjścia,
-        --prefix Opcjonalny ciąg, który będzie zapisywany przed wszystkimi dziennikami śledzenia,
-        --help lub --usage wyświetla ten komunikat.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,6 +24,7 @@ crashreporter-error =
         [neuter] { -brand-short-name } zaznamenalo problém a spadlo. Hlášení pádu se bohužel nepodařilo odeslat.
        *[other] Aplikace { -brand-short-name } zaznamenala problém a spadla. Hlášení pádu se bohužel nepodařilo odeslat.
     }
+crashreporter-error-details-header = Podrobnosti:
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = Podrobnosti: { $details }
 crashreporter-no-run-message = Tato aplikace je spuštěna po pádu jiné aplikace a jejím účelem je zaslat hlášení o pádu vývojářům aplikace. Není ji proto možné spustit samostatně.
@@ -32,6 +33,25 @@ crashreporter-loading-details = Načítání…
 crashreporter-view-report-title = Obsah hlášení
 crashreporter-comment-prompt = Přidat komentář (komentáře jsou veřejně dostupné)
 crashreporter-report-info = Toto hlášení obsahuje také informace o stavu aplikace před pádem.
+crashreporter-checkbox-test-hardware = Zkontrolujte, zda v mém zařízení nejsou problémy s hardwarem a konfigurací.
+crashreporter-checkbox-send-report =
+    { -vendor-short-name.case-status ->
+        [with-cases]
+            { -vendor-short-name.gender ->
+                [masculine] Upozornit { -vendor-short-name(case: "acc") } na tento pád, aby ho mohl opravit.
+                [feminine] Upozornit { -vendor-short-name(case: "acc") } na tento pád, aby ho mohla opravit.
+                [neuter] Upozornit { -vendor-short-name(case: "acc") } na tento pád, aby ho mohlo opravit.
+               *[other] Upozornit organizaci { -vendor-short-name } na tento pád, aby ho mohla opravit.
+            }
+       *[no-cases]
+            { -vendor-short-name.gender ->
+                [masculine] Upozornit organizaci { -vendor-short-name } na tento pád, aby ho mohla opravit.
+                [feminine] Upozornit organizaci { -vendor-short-name } na tento pád, aby ho mohla opravit.
+                [neuter] Upozornit organizaci { -vendor-short-name } na tento pád, aby ho mohla opravit.
+               *[other] Upozornit organizaci { -vendor-short-name } na tento pád, aby ho mohla opravit.
+            }
+    }
+crashreporter-checkbox-include-url = Zahrnout i adresu stránky, kde došlo k pádu.
 crashreporter-send-report =
     { -vendor-short-name.gender ->
         [masculine] Upozornit { -vendor-short-name(case: "acc") } na tento pád, aby ho mohl opravit.
@@ -41,6 +61,7 @@ crashreporter-send-report =
     }
 crashreporter-include-url = Zahrnout i adresu stránky, kde došlo k pádu.
 crashreporter-submit-status = Vaše hlášení o pádu bude odesláno před ukončením či restartem aplikace
+crashreporter-submit-waiting-hardware-tests = Probíhá kontrola problémů s hardwarem a konfigurací...
 crashreporter-submit-in-progress = Odesílání hlášení o pádu…
 crashreporter-submit-success = Hlášení o pádu bylo úspěšně odesláno.
 crashreporter-submit-failure = Pří odesílání hlášení o pádu nastala chyba.
@@ -76,3 +97,4 @@ crashreporter-error-no-home-dir = Chybějící domovský adresář
 # $to (String) - the destination path
 crashreporter-error-moving-path = Nepodařilo se přesunout z { $from } do { $to }
 crashreporter-error-version-eol = Nepodporovaná verze: hlášení jejích pádů už nejsou přijímána.
+crashreporter-error-failed-to-generate-minidump = Aplikaci se nepodařilo vygenerovat informace o pádu.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -76,5 +76,5 @@ about-private-browsing-cookie-banners-promo-body = 多くの Cookie バナーを
 ## Strings for Felt Privacy v1 experiments in 119
 
 about-private-browsing-felt-privacy-v1-info-header = この端末を追跡させません
-about-private-browsing-felt-privacy-v1-info-body = すべてのプライベートウィンドウを閉じると、{ -brand-short-name} により Cookie、履歴、サイトデータが削除されます。
+about-private-browsing-felt-privacy-v1-info-body = すべてのプライベートウィンドウを閉じると、{ -brand-short-name } により Cookie、履歴、サイトデータが削除されます。
 about-private-browsing-felt-privacy-v1-info-link = 私の行動を知ることができるのは誰？

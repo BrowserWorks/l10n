@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Új lap
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Balra lévő lapok bezárása
     .accesskey = B
+close-tabs-to-the-start-vertical =
+    .label = Fenti lapok bezárása
+    .accesskey = F
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Jobbra lévő lapok bezárása
     .accesskey = J
+close-tabs-to-the-end-vertical =
+    .label = Lenti lapok bezárása
+    .accesskey = L
 close-other-tabs =
     .label = Többi lap bezárása
     .accesskey = T
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Megosztás
     .accesskey = M
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Új lap jobbra
+    .accesskey = j
+tab-context-new-tab-open-vertical =
+    .label = Új lap alább
+    .accesskey = j
+tab-context-new-group =
+    .label = Új csoport
+    .accesskey = j
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -114,3 +134,11 @@ tab-context-send-tabs-to-device =
            *[other] { $tabCount } lap küldése az eszközre
         }
     .accesskey = k
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Lap kiürítése
+            [one] Lap kiürítése
+           *[other] { $tabCount } lap kiürítése
+        }
+    .accesskey = r

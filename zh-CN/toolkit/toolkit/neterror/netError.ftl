@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ neterror-blocked-by-policy-page-title = 页面已封锁
 neterror-captive-portal-page-title = 请登录网络
 neterror-dns-not-found-title = 找不到服务器
 neterror-malformed-uri-page-title = 无效网址
+general-body-title = 当心，看来有异常情况。
+problem-with-this-site-title = 此网站似乎存在问题
 
 ## Error page actions
 
@@ -41,6 +43,9 @@ neterror-generic-error = { -brand-short-name } 因某些不明原因无法加载
 neterror-load-error-try-again = 此站点暂时无法使用或者太过忙碌。请过几分钟后再试。
 neterror-load-error-connection = 如果您无法加载任何网页，请检查您计算机的网络连接状态。
 neterror-load-error-firewall = 如果您的计算机或网络受到防火墙或者代理服务器的保护，请确认 { -brand-short-name } 已被授权访问网络。
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = 若您正尝试加载本地网络页面，请在 macOS 的“隐私与安全性”设置中检查是否已允许 { -brand-short-name } 访问“本地网络”。
+neterror-http-error-page = 请确认输入的网址是否正确。
 neterror-captive-portal = 您必须先登录此网络才能访问互联网。
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -49,6 +54,10 @@ neterror-dns-not-found-hint-header = <strong>若您确认输入的是正确网�
 neterror-dns-not-found-hint-try-again = 稍后再试
 neterror-dns-not-found-hint-check-network = 检查您的网络连接
 neterror-dns-not-found-hint-firewall = 检查 { -brand-short-name } 是否有联网权限（可能已接入网络，但被防火墙阻止）
+neterror-dns-not-found-offline-hint-header = <strong>您可以：</strong>
+neterror-dns-not-found-offline-hint-different-device = 尝试通过其他设备连接。
+neterror-dns-not-found-offline-hint-modem = 检查调制解调器和路由器。
+neterror-dns-not-found-offline-hint-reconnect = 断开 Wi-Fi 连接后重新连接。
 
 ## TRR-only specific messages
 ## Variables:
@@ -64,6 +73,7 @@ neterror-dns-not-found-trr-offline = 您未连接到互联网。
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain } 找不到此网站。
 neterror-dns-not-found-trr-server-problem = { $trrDomain } 出现问题。
 neterror-dns-not-found-bad-trr-url = 无效网址。
+neterror-dns-not-found-system-sleep = 系统处于睡眠模式。
 neterror-dns-not-found-trr-unknown-problem = 未知问题。
 
 ## Native fallback specific messages
@@ -78,7 +88,7 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } �
 ##
 
 neterror-file-not-found-filename = 请检查文件名是否大小写输错，或者有其他输入错误。
-neterror-file-not-found-moved = 请检查文件是否已被移动，重命名或删除。
+neterror-file-not-found-moved = 请检查文件是否已被移动、重命名或删除。
 neterror-access-denied = 文件可能已被删除、移动，或者因文件权限问题被拒绝访问。
 neterror-unknown-protocol = 您可能需要安装其他软件才能打开此网址。
 neterror-redirect-loop = 有时候禁用或拒绝接受 Cookie 会导致此问题。
@@ -95,6 +105,9 @@ neterror-proxy-connect-failure-settings = 请检查浏览器的代理服务器�
 neterror-proxy-connect-failure-contact-admin = 请联系您的网络管理员以确认代理服务器工作正常。
 neterror-content-encoding-error = 建议向此网站的管理员反馈这个问题。
 neterror-unsafe-content-type = 建议向此网站的管理员反馈这个问题。
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = { -brand-short-name } 无法信任 { $hostname }，因为连接不安全。请尝试将网址更改为 HTTPS 协议。
 neterror-nss-failure-not-verified = 由于不能验证所收到的数据是否可信，无法显示您想要查看的页面。
 neterror-nss-failure-contact-website = 建议向此网站的管理员反馈这个问题。
 # Variables:
@@ -147,3 +160,11 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = 如果您并不熟悉 <b>{ 
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> 启用了被称为 HTTP 严格传输安全（HSTS）的安全策略，{ -brand-short-name } 只能与其建立安全连接。您无法为此网站添加例外，以访问此网站。
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = 这很可能是网站自身存在问题，无法通过您的操作解决。
+certerror-blocked-by-corp-headers-description = 有时网站会为自身及用户设置保护措施，阻止与其他网站进行非预期的交互。
+certerror-coop-learn-more = 详细了解跨源打开程序策略（COOP）
+certerror-coep-learn-more = 详细了解跨源嵌入程序策略（COEP）
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = 错误代码：{ $responsestatus } { $responsestatustext }

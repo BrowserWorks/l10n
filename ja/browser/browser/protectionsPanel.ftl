@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -71,6 +71,19 @@ protections-panel-content-blocking-fingerprinters-label = フィンガープリ�
 protections-panel-blocking-label = ブロック済み
 protections-panel-not-blocking-label = 許可済み
 protections-panel-not-found-label = 検出されませんでした
+
+## Smartblock strings
+
+protections-panel-smartblock-desc-label = このサイトでは、あなたが許可しない限り { -brand-short-name } がトラッキングコンテンツをブロックします。
+# Variables
+#  $trackername (String): the name of the tracker that is currently being blocked.
+protections-panel-smartblock-blocking-toggle =
+    .label = { $trackername } を許可する
+#  $trackername (String): the name of the tracker that is currently being blocked.
+smartblock-placeholder-title = { $trackername } のトラッカーとコンテンツをブロックしました
+smartblock-placeholder-desc = { -brand-short-name } の設定により、サイトをまたぐ追跡や広告に利用されるコンテンツをブロックしました。
+#  $websitehost (String): host of website with blocked content.
+smartblock-placeholder-button-text = { $websitehost } のコンテンツを許可する
 
 ##
 

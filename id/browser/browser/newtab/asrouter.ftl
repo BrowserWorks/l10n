@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -57,10 +57,11 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } pengguna
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sinkronkan markah Anda di mana saja.
 cfr-doorhanger-bookmark-fxa-body = Penemuan yang mantap! Sekarang jangan pergi tanpa markah ini di perangkat seluler Anda. Mulai dengan { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = Temuan yang bagus! Gunakan markah ini kapan saja - juga di perangkat seluler Anda. Mulai dengan membuat akun.
 cfr-doorhanger-bookmark-fxa-link-text = Sinkronkan markah sekarang…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tombol tutup
@@ -116,7 +117,7 @@ cfr-doorhanger-video-support-primary-button = Perbarui Sekarang
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Sepertinya Anda menggunakan Wi-Fi publik
@@ -165,7 +166,7 @@ mr2022-background-update-toast-primary-button-label = Buka { -brand-shorter-name
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Ingatkan Saya nanti
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Coba sekarang
     .accesskey = C
@@ -174,7 +175,7 @@ firefoxview-cfr-secondarybutton = Jangan sekarang
 firefoxview-cfr-header-v2 = Cepat lanjutkan dari bagian terakhir yang Anda tinggalkan
 firefoxview-cfr-body-v2 = Dapatkan kembali tab yang baru saja ditutup, plus mulus melompat antar perangkat dengan { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Mari menyambut { -firefoxview-brand-name }.
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -195,10 +196,14 @@ colorways-cfr-header-today = Ragam warna Suara Independen kedaluarsa hari ini
 
 ## Cookie Banner Handling CFR
 
+cfr-cbh-header = Izinkan { -brand-short-name } untuk menolak spanduk kuki?
+cfr-cbh-body = { -brand-short-name } dapat menolak permintaan berbagai spanduk secara otomatis.
 cfr-cbh-confirm-button = Tolak spanduk kuki
     .accesskey = T
 cfr-cbh-dismiss-button = Jangan sekarang
     .accesskey = J
+cookie-banner-blocker-onboarding-header = { -brand-short-name } baru saja menolak spanduk kuki untuk Anda
+cookie-banner-blocker-onboarding-body = Lebih sedikit gangguan, lebih sedikit kuki yang melacak Anda di situs ini.
 cookie-banner-blocker-onboarding-learn-more = Pelajari lebih lanjut
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
@@ -207,13 +212,21 @@ july-jam-headline = Kami membantu Anda
 july-jam-body = Setiap bulan { -brand-short-name } memblokir rata-rata 3000+ pelacak per pengguna, memberikan Anda akses yang aman dan cepat ke internet yang baik.
 july-jam-set-default-primary = Buka tautan saya dengan { -brand-short-name }
 fox-doodle-pin-headline = Selamat datang kembali
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Ini adalah pengingat singkat bahwa Anda dapat menyimpan peramban indie favorit Anda hanya dengan sekali klik lagi.
+fox-doodle-pin-primary = Buka tautan saya dengan { -brand-short-name }
+fox-doodle-pin-secondary = Jangan sekarang
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
+set-default-pdf-handler-headline = <strong>PDF Anda sekarang terbuka di { -brand-short-name }.</strong> Edit atau tandatangani formulir langsung di peramban Anda. Untuk mengubah, cari “PDF” di pengaturan.
 set-default-pdf-handler-primary = Paham
 
 ## FxA sync CFR
 
+fxa-sync-cfr-header = Perangkat baru nanti?
+fxa-sync-cfr-body = Pastikan markah, sandi, dan tab terbaru Anda disertakan setiap kali Anda membuka peramban { -brand-product-name } baru.
 fxa-sync-cfr-primary = Pelajari lebih lanjut
     .accesskey = L
 fxa-sync-cfr-secondary = Ingatkan saya nanti
@@ -222,17 +235,108 @@ fxa-sync-cfr-secondary = Ingatkan saya nanti
 ## Device Migration FxA Spotlight
 
 device-migration-fxa-spotlight-heavy-user-header = Jangan lupa mencadangkan data Anda
+device-migration-fxa-spotlight-heavy-user-body = Pastikan info penting — seperti markah dan kata sandi — diperbarui dan dilindungi di semua perangkat Anda.
 device-migration-fxa-spotlight-heavy-user-primary-button = Memulai
+device-migration-fxa-spotlight-older-device-header = Ketenangan batin, dari { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = Akun akan membuat info penting Anda diperbarui dan dilindungi di perangkat apa pun yang Anda sambungkan.
+device-migration-fxa-spotlight-older-device-primary-button = Buat akun
+device-migration-fxa-spotlight-getting-new-device-header-2 = Perangkat baru nanti?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Ikuti beberapa langkah sederhana untuk membawa markah, riwayat, dan kata sandi saat Anda mulai menggunakan perangkat baru.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Cara mencadangkan data saya
+device-migration-fxa-spotlight-sync-header = Meramban tanpa hambatan
+device-migration-fxa-spotlight-sync-body = Sinkronkan semua info penting Anda dengan enkripsi — seperti markah dan sandi. Semuanya dapat diambil di mana saja Anda menggunakan { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Memulai
 
 ## Set as Default PDF Reader Infobar
 
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Jadikan { -brand-short-name } sebagai pembaca PDF baku Anda?</strong> Gunakan { -brand-short-name } untuk membaca dan mengedit PDF yang disimpan ke komputer Anda.
+pdf-default-notification-set-default-button =
+    .label = Jadikan baku
+pdf-default-notification-decline-button =
+    .label = Jangan sekarang
 
 ## Launch on login infobar notification
 
+launch-on-login-infobar-message = <strong>Buka { -brand-short-name } setiap kali memulai ulang komputer?</strong> Sekarang Anda dapat mengatur { -brand-short-name } untuk terbuka secara otomatis saat memulai ulang perangkat.
+launch-on-login-learnmore = Pelajari lebih lanjut
+launch-on-login-infobar-confirm-button = Ya, buka { -brand-short-name }
+    .accesskey = Y
+launch-on-login-infobar-reject-button = Jangan sekarang
+    .accesskey = J
 
 ## These string variants are used when the “launch on login” infobar
 ## notification is displayed for a second time.
 
+launch-on-login-infobar-final-message = <strong>Buka { -brand-short-name } setiap kali Anda memulai ulang komputer?</strong> Untuk mengelola preferensi mulai Anda, cari “mulai” di pengaturan.
+launch-on-login-infobar-final-reject-button = Tidak, terima kasih
+    .accesskey = T
 
 ## Tail Fox Set Default Spotlight
 
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Hindari pelacak bandel mengikuti Anda
+tail-fox-spotlight-subtitle = Ucapkan selamat tinggal pada pelacak iklan yang mengganggu dan nikmati pengalaman internet yang lebih aman dan cepat.
+tail-fox-spotlight-primary-button = Buka tautan saya dengan { -brand-short-name }
+tail-fox-spotlight-secondary-button = Jangan sekarang
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Versi lama { -brand-short-name } mungkin mulai bermasalah pada 14 Januari 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Perbarui untuk terus menggunakan { -brand-short-name } setelah 14 Maret 2025.</strong>
+root-certificate-succession-infobar-link = Mengapa saya perlu memperbarui?
+root-certificate-succession-infobar-primary-button =
+    .label = Perbarui sekarang
+    .accesskey = u
+root-certificate-succession-infobar-secondary-button =
+    .label = Nanti
+    .accesskey = N
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Anda melewatkan pembaruan penting { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Beberapa bagian peramban akan segera berhenti bekerja jika Anda tidak memperbarui. Sekarang adalah waktu yang tepat untuk mendapatkan perlindungan dan fitur terbaru kami.
+root-certificate-windows-background-notification-learn-more-button = Pelajari lebih lanjut
+root-certificate-windows-background-notification-update-button = Perbarui { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Tutup
+    .aria-label = Tutup
+fxa-menu-message-sign-up-button = Daftar
+fxa-menu-message-sync-devices-primary-text = Sinkronkan semua perangkat Anda
+fxa-menu-message-sync-devices-secondary-text = Dapatkan info Anda secara instan — seperti markah dan sandi — di mana pun Anda menggunakan { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Sinkronkan semua perangkat Anda
+fxa-menu-message-backup-data-primary-text = Cadangkan data peramban Anda
+fxa-menu-message-backup-data-secondary-text = Secara otomatis melindungi markah, sandi, dan info lainnya di semua perangkat Anda.
+fxa-menu-message-backup-data-collapsed-text = Cadangkan data peramban Anda
+fxa-menu-message-backup-sync-primary-text = Jaga data Anda tetap aman dan tersinkronisasi
+fxa-menu-message-backup-sync-secondary-text = Sinkronisasi akan mencadangkan sebagian besar data Anda sehingga dapat diakses di mana saja Anda menggunakan { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Sinkronkan dan cadangkan data
+fxa-menu-message-mobile-primary-text = Kirim tab ke ponsel Anda
+fxa-menu-message-mobile-secondary-text = Lanjutkan dari tempat terakhir Anda berada secara instan ketika menyinkronkan tab dengan perangkat seluler.
+fxa-menu-message-mobile-collapsed-text = Sinkronkan dengan ponsel Anda
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Selamat datang kembali
+multi-cta-fox-doodle-set-default-checkbox = Jadikan { -brand-short-name } baku
+multi-cta-fox-doodle-pin-startmenu-checkbox = Sematkan { -brand-short-name } ke menu Mulai
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Simpan { -brand-short-name } di Dock
+       *[other] Sematkan { -brand-short-name } ke taskbar
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Mulai menjelajah
+multi-cta-fox-doodle-main-browser-primary-button-label = Jadikan { -brand-short-name } peramban utama saya
+multi-cta-fox-doodle-quick-reminder-subtitle = Ini adalah pengingat singkat bahwa Anda dapat menyimpan peramban favorit yang berfokus pada privasi hanya dengan sekali klik.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Simpan peramban favorit Anda yang berfokus pada privasi hanya dengan sekali klik. Tetapkan { -brand-short-name } sebagai peramban baku Anda untuk membuka tautan dan sematkan ke Dock Anda.
+       *[other] Simpan peramban favorit Anda yang berfokus pada privasi hanya dengan sekali klik. Tetapkan { -brand-short-name } sebagai peramban baku Anda untuk membuka tautan dan sematkan ke bilah tugas Anda.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Simpan peramban favorit Anda yang berfokus pada privasi hanya dengan sekali klik. Tetapkan { -brand-short-name } sebagai peramban baku Anda untuk membuka tautan dan sematkan ke bilah tugas dan menu Mulai Anda.

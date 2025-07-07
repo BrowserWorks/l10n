@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = Starta om
 perftools-button-add-directory = Lägg till en katalog
 perftools-button-remove-directory = Ta bort markerad
 perftools-button-edit-settings = Redigera inställningar…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Fler åtgärder
+perftools-menu-more-actions-restart-with-profiling = Starta om { -brand-shorter-name } med startprofilering aktiverad
+perftools-menu-more-actions-copy-for-startup = Kopiera miljövariabler för startprofilering
+perftools-menu-more-actions-copy-for-perf-tests = Kopiera parametrar för prestandatester
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -141,6 +149,8 @@ perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Förinställd för att undersöka grafikbuggar i { -brand-shorter-name }.
 perftools-presets-media-label = Media
 perftools-presets-media-description2 = Förinställd för att undersöka ljud- och videobuggar i { -brand-shorter-name }.
+perftools-presets-ml-label = Maskininlärning
+perftools-presets-ml-description2 = Förinställd för att undersöka maskininlärningsbuggar i { -brand-shorter-name }.
 perftools-presets-networking-label = Nätverk
 perftools-presets-networking-description = Förinställd för att undersöka ljud- och videobuggar i { -brand-shorter-name }.
 # "Power" is used in the sense of energy (electricity used by the computer).

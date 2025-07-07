@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = Λήψεις
 appmenuitem-passwords =
     .label = Κωδικοί πρόσβασης
+appmenuitem-extensions-and-themes =
+    .label = Επεκτάσεις και θέματα
+appmenuitem-extensions =
+    .label = Επεκτάσεις
 appmenuitem-addons-and-themes =
     .label = Πρόσθετα και θέματα
 appmenuitem-print =
@@ -44,7 +48,7 @@ appmenuitem-help =
 appmenuitem-exit2 =
     .label =
         { PLATFORM() ->
-            [linux] Έξοδος
+            [linux] Τερματισμός
            *[other] Έξοδος
         }
 appmenu-menu-button-closed2 =
@@ -67,10 +71,10 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Πλήρης οθόνη
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-    .label = Σύνδεση στο Sync…
+    .label = Σύνδεση για συγχρονισμό…
 appmenu-remote-tabs-turn-on-sync =
     .label = Ενεργοποίηση Sync…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
@@ -88,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = Ενεργοποιήστε τον συγχ�
 appmenu-remote-tabs-opensettings =
     .label = Ρυθμίσεις
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Θέλετε να δείτε εδώ τις καρτέλες σας από άλλες συσκευές;
 appmenu-remote-tabs-connectdevice =
     .label = Σύνδεση άλλης συσκευής
@@ -108,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = Συγχρονισμός και αποθήκε
 appmenu-fxa-signed-in-label = Σύνδεση
 appmenu-fxa-setup-sync =
     .label = Ενεργοποίηση συγχρονισμού…
+appmenu-fxa-setup-sync-new = Ενεργοποίηση
 appmenuitem-save-page =
     .label = Αποθήκευση σελίδας ως…
+appmenuitem-fxa-sync-off-title = Ο συγχρονισμός είναι ανενεργός
+appmenuitem-fxa-sync-off-description = Προστατέψτε και χρησιμοποιήστε τους σελιδοδείκτες, τους κωδικούς πρόσβασης και πολλά άλλα, οπουδήποτε.
 
 ## What's New panel in App menu.
 
@@ -120,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = Ειδοποίηση για νέες λειτουργίες
     .accesskey = λ
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -183,13 +190,16 @@ profiler-popup-presets-web-developer-label =
 profiler-popup-presets-firefox-description = Προτεινόμενη προεπιλογή για την καταγραφή προφίλ στο { -brand-shorter-name }.
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
-profiler-popup-presets-graphics-description = Προτεινόμενη προεπιλογή για τη διερεύνηση σφαλμάτων γραφικών στο { -brand-shorter-name }.
+profiler-popup-presets-graphics-description = Προεπιλογή για τη διερεύνηση σφαλμάτων γραφικών στο { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
     .label = Γραφικά
-profiler-popup-presets-media-description2 = Προτεινόμενη προεπιλογή για τη διερεύνηση σφαλμάτων ήχου και βίντεο στο { -brand-shorter-name }.
+profiler-popup-presets-media-description2 = Προεπιλογή για τη διερεύνηση σφαλμάτων ήχου και βίντεο στο { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Πολυμέσα
-profiler-popup-presets-networking-description = Προτεινόμενη προεπιλογή για τη διερεύνηση σφαλμάτων δικτύωσης στο { -brand-shorter-name }.
+profiler-popup-presets-ml-description = Προεπιλογή για τη διερεύνηση σφαλμάτων μηχανικής μάθησης στο { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Μηχανική μάθηση
+profiler-popup-presets-networking-description = Προεπιλογή για τη διερεύνηση σφαλμάτων δικτύωσης στο { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Δικτύωση
 profiler-popup-presets-power-description = Προκαθορισμένη ρύθμιση για τη διερεύνηση σφαλμάτων χρήσης ενέργειας στο { -brand-shorter-name }, με μικρή επιβάρυνση.
@@ -277,5 +287,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Λάβετε ειδοποιήσεις παραβίασης δεδομένων
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Αποκρύψτε το πραγματικό email και το τηλέφωνό σας
+appmenuitem-services-relay-description = Εκκίνηση πίνακα μασκών email
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = Προστατέψτε το διαδικτυακό σας απόρρητο
+appmenu-services-header = Οι υπηρεσίες μου
+appmenu-other-protection-header = Δοκιμάστε άλλα εργαλεία προστασίας από τη { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Άλλα προφίλ
+appmenu-manage-profiles =
+    .label = Διαχείριση προφίλ
+appmenu-create-profile =
+    .label = Νέο προφίλ
+appmenu-edit-profile =
+    .aria-label = Επεξεργασία προφίλ
+appmenu-profiles-2 =
+    .label = Προφίλ

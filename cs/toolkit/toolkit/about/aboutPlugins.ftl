@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,8 +6,6 @@ title-label = O zásuvných modulech
 installed-plugins-label = Nainstalované zásuvné moduly
 no-plugins-are-installed-label = Nenalezeny žádné zásuvné moduly
 deprecation-description = Něco chybí? Některé zásuvné moduly už nejsou podporovány. <a data-l10n-name="deprecation-link">Zjistit více.</a>
-deprecation-description2 =
-    .message = Něco chybí? Některé zásuvné moduly už nejsou podporovány.
 
 ## The information of plugins
 ##

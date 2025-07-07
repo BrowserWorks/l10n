@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,12 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-reopen-closed-tabs =
     .label = 閉じたタブを開きなおす
     .accesskey = o
+toolbar-context-turn-on-vertical-tabs =
+    .label = 垂直タブをオンにする
+toolbar-context-turn-off-vertical-tabs =
+    .label = 垂直タブをオフにする
+toolbar-context-customize-sidebar =
+    .label = サイドバーをカスタマイズ
 toolbar-context-menu-manage-extension =
     .label = 拡張機能を管理
     .accesskey = E
@@ -32,7 +38,7 @@ toolbar-context-menu-remove-extension =
     .label = 拡張機能を削除
     .accesskey = v
 # This label is used in the extensions toolbar buttons context menus,
-# a user can use this command to submit to BrowserWorks an abuse report
+# a user can use this command to submit to Mozilla an abuse report
 # related to that extension. "Report" is a verb.
 toolbar-context-menu-report-extension =
     .label = 拡張機能を報告
@@ -49,6 +55,10 @@ toolbar-context-menu-auto-hide-downloads-button-2 =
 toolbar-context-menu-always-open-downloads-panel =
     .label = ダウンロード開始時にパネルを表示する
     .accesskey = S
+# Label of checkbox menu item to toggle visibility of Extensions Button.
+toolbar-context-menu-always-show-extensions-button =
+    .label = 常にツールバーに表示する
+    .accesskey = A
 toolbar-context-menu-remove-from-toolbar =
     .label = ツールバーから削除
     .accesskey = R

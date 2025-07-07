@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = 종속 포털 지원을 사용하거나 사용하지 않�
 policy-CertificatesDescription = 인증서를 추가하거나 기본 제공 인증서를 사용합니다.
 policy-ContentAnalysis = 데이터 손실 방지 에이전트에 대한 연결을 사용하거나 사용하지 않게 합니다.
 policy-Cookies = 웹 사이트의 쿠키 설정을 허용하거나 거부합니다.
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = 컨테이너와 관련된 정책을 설정합니다.
 policy-DisableAccounts = 동기화를 포함한 계정 기반 서비스를 사용 안 합니다.
 policy-DisabledCiphers = 암호화를 사용 안 합니다.
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = 기본 브라우저 에이전트가 작업�
 policy-DisableDeveloperTools = 개발자 도구 접근을 차단합니다.
 policy-DisableEncryptedClientHello = TLS 기능 ECH(Encrypted Client Hello) 사용을 비활성화합니다.
 policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령 (의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
-policy-DisableWaterfoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
+policy-DisableFirefoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = 동기화를 포함한 계정 기반 서비스를 사용 안 합니다.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Waterfox 스크린샷 기능을 사용 안 합니다.
-policy-DisableWaterfoxStudies = { -brand-short-name } 연구 실행을 막습니다.
+policy-DisableFirefoxAccounts1 = 동기화를 포함한 계정 기반 서비스를 사용 안 합니다.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Waterfox 스크린샷 기능을 사용 안 합니다.
+policy-DisableFirefoxStudies = { -brand-short-name } 연구 실행을 막습니다.
 policy-DisableForgetButton = Forget 버튼 접근을 막습니다.
 policy-DisableFormHistory = 검색과 양식 기록을 기억하지 않습니다.
 policy-DisablePrimaryPasswordCreation = True 값이면 기본 비밀번호를 만들 수 없습니다.
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 도메인의 특�
 policy-Extensions = 확장 기능을 설치, 제거 또는 잠급니다. 설치 옵션은 URL 또는 경로를 매개 변수로 사용합니다. 제거 및 잠금 옵션은 확장 기능의 ID를 사용합니다.
 policy-ExtensionSettings = 확장 기능 설치의 모든 측면을 관리합니다.
 policy-ExtensionUpdate = 확장 기능 자동 업데이트를 사용하거나 사용하지 않게 합니다.
-policy-WaterfoxHome2 = { -firefox-home-brand-name }을 구성합니다.
-policy-WaterfoxSuggest = { -firefox-suggest-brand-name }을 구성합니다.
+policy-FirefoxHome2 = { -firefox-home-brand-name }을 구성합니다.
+policy-FirefoxSuggest = { -firefox-suggest-brand-name }을 구성합니다.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 주소 표시줄에 단일 단어 항목을 입력할 때 검색하는 대신 인트라넷 사이트를 직접 탐색합니다.
 policy-Handlers = 기본 애플리케이션 핸들러를 구성합니다.
 policy-HardwareAcceleration = False 값이면 하드웨어 가속 기능을 끕니다.
@@ -119,6 +119,7 @@ policy-Permissions2 = 카메라, 마이크, 위치, 알림 및 자동 재생에 
 policy-PictureInPicture = 화면 속 화면을 사용하거나 사용하지 않게 합니다.
 policy-PopupBlocking = 기본으로 특정 웹 사이트가 팝업을 보여주도록 허용합니다.
 policy-Preferences = 설정의 하위 집합에 대한 값을 설정하고 잠급니다.
+policy-PrivateBrowsingModeAvailability = 사생활 보호 모드의 가용성을 설정합니다.
 policy-PromptForDownloadLocation = 다운로드시 파일 저장 위치를 물어봅니다.
 policy-Proxy = 프록시 설정을 구성합니다.
 policy-RequestedLocales = 애플리케이션의 요청된 로케일의 목록을 설정 순서로 설정합니다.
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = 검색 제안을 사용하거나 사용하지 않�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11 모듈을 추가하거나 삭제합니다.
 policy-ShowHomeButton = 도구 모음에 홈 버튼을 표시합니다.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = 시작할 때 이용 약관과 개인정보처리방침을 표시하지 않습니다. 귀하는 이 브라우저에 대한 접근 권한을 부여받은 모든 개인을 대신하여 이용 약관에 동의했으며 이를 수락할 권한이 있음을 나타냅니다.
 policy-SSLVersionMax = 최대 SSL 버전을 설정합니다.
 policy-SSLVersionMin = 최소 SSL 버전을 설정합니다.
 policy-StartDownloadsInTempDirectory = 기본 다운로드 디렉터리가 아닌 로컬 임시 위치에서 강제로 다운로드를 시작합니다.
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = 시스템 인쇄 대화 상자를 사용하여 인
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 특정 웹 사이트 방문을 차단합니다. 자세한 형식에 대해서는 문서를 참고하세요.
 policy-Windows10SSO = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On을 허용합니다.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Microsoft Entra 계정에 Single Sign-On을 허용합니다.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = Ρυθμίσεις
 toolbox-meatball-menu-documentation-label = Τεκμηρίωση…
 toolbox-meatball-menu-community-label = Κοινότητα…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Waterfox
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Απενεργοποίηση αυτόματης απόκρυψης αναδυόμενων παραθύρων
 toolbox-meatball-menu-pseudo-locale-accented = Ενεργοποίηση γλώσσας «accented»

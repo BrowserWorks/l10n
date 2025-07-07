@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -94,7 +94,7 @@ protections-footer-blocked-tracker-counter-no-tooltip =
         [few] { $trackerCount } заблокировано
        *[many] { $trackerCount } заблокировано
     }
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone =
     { $trackerCount ->
         [one] С { DATETIME($date, year: "numeric", month: "long") } { -brand-short-name } заблокировал более { $trackerCount } трекера

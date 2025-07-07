@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = التنزيلات
 appmenuitem-passwords =
     .label = كلمات السر
+appmenuitem-extensions-and-themes =
+    .label = الامتدادات والسمات
+appmenuitem-extensions =
+    .label = الامتدادات
 appmenuitem-addons-and-themes =
     .label = الإضافات والسمات
 appmenuitem-print =
@@ -34,7 +38,7 @@ appmenuitem-print =
 appmenuitem-find-in-page =
     .label = ابحث في الصفحة…
 appmenuitem-translate =
-    .label = ترجِم الصفحة…
+    .label = ترجم الصفحة…
 appmenuitem-zoom =
     .value = قرّب
 appmenuitem-more-tools =
@@ -67,7 +71,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = ملء الشاشة
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = لِج كي تبدأ المزامنة…
@@ -77,6 +81,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = أظهِر ألسنة أكثر
     .tooltiptext = اعرض المزيد من الألسنة من هذا الجهاز
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = الألسنة غير النشطة
+    .tooltiptext = أظهِر الألسنة غير النشطة على هذا الجهاز
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = لا ألسنة مفتوحة
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -84,7 +92,7 @@ appmenu-remote-tabs-tabsnotsyncing = فعّل مزامنة الألسنة لعر
 appmenu-remote-tabs-opensettings =
     .label = الإعدادات
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟
 appmenu-remote-tabs-connectdevice =
     .label = صِلْ جهازا آخر
@@ -104,8 +112,11 @@ appmenu-fxa-sync-and-save-data2 = زامِن واحفظ البيانات
 appmenu-fxa-signed-in-label = لِج
 appmenu-fxa-setup-sync =
     .label = فعّل المزامنة…
+appmenu-fxa-setup-sync-new = فعّل
 appmenuitem-save-page =
     .label = احفظ الصفحة باسم…
+appmenuitem-fxa-sync-off-title = التزامن متوقف
+appmenuitem-fxa-sync-off-description = احمِ و اطلع على علاماتك وكلمات سرك والمزيد في أي مكان.
 
 ## What's New panel in App menu.
 
@@ -116,7 +127,7 @@ whatsnew-panel-footer-checkbox =
     .label = أعلِمني بالميزات الجديدة
     .accesskey = ع
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -168,6 +179,11 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = الإعداد المسبق الموصى به لتنقيح أغلبية تطبيقات الوِب دون استهلاك موارد كثيرة.
 profiler-popup-presets-web-developer-label =
     .label = مطوّري الوب
@@ -177,13 +193,19 @@ profiler-popup-presets-firefox-label =
 profiler-popup-presets-graphics-description = إعداد مسبق للتحقيق في أخطاء الرسومات في { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
     .label = الرسوميات
+profiler-popup-presets-media-description2 = إعداد مسبق للتحرّي عن مشاكل الصوت والفيديو في { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = الوسائط
+profiler-popup-presets-networking-description = إعداد مسبق للتحرّي عن مشاكل الشبكة في { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = الشبكة
+profiler-popup-presets-power-description = إعداد مسبق للتحرّي عن العلل التي تستخدم الطاقة في { -brand-shorter-name }، مع حمل منخفض.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = طاقة
+profiler-popup-presets-debug-description = إعداد مسبق للتنقيح في { -brand-shorter-name }. تكلفة إضافية عالية، لا تستخدمه لأعمال الأداء ولكن استخدمه للتركيز على فهم سلوك المتصفح.
+profiler-popup-presets-debug-label =
+    .label = نقّح
 profiler-popup-presets-custom-label =
     .label = مخصّص
 
@@ -254,3 +276,28 @@ appmenu-developer-tools-extensions =
     .label = الامتدادات التي تخصّ المطوّرين
 appmenuitem-report-broken-site =
     .label = أبلِغ عن موقع معطوب
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = لِج إلى حسابك
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = احصل على تنبيهات تسريب البيانات
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = أخفِ بريدك الإلكتروني ورقم هاتفك الحقيقي
+appmenuitem-services-relay-description = إطلاق لوحة معلومات أقنعة البريد الإلكتروني
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = احمِ نشاطك على الإنترنت
+appmenu-services-header = خدماتي
+appmenu-other-protection-header = جرّب أدوات حماية أخرى من { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = ملفات تعريف أخرى
+appmenu-manage-profiles =
+    .label = أدِر ملفات التعريف
+appmenu-create-profile =
+    .label = ملف شخصي جديد
+appmenu-edit-profile =
+    .aria-label = حرّر الملف الشخصي
+appmenu-profiles-2 =
+    .label = ملفات تعريف

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = Nagyszerű, már van { -brand-short-name }a
 return-to-amo-addon-title = Most pedig szerezze be a(z) <img data-l10n-name="icon"/> <b>{ $addon-name } kiegészítőt.</b>
 return-to-amo-add-extension-label = Kiegészítő hozzáadása
 return-to-amo-add-theme-label = Téma hozzáadása
+return-to-amo-theme-install-complete-label = Téma telepítve
+return-to-amo-extension-install-complete-label = Kiegészítő telepítve
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Haladás: { $current }. / { $total } lépés
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Animációk kikapcsolása
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Bejelentkezés
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importálás innen: { $previous }
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = Folytatás { $appLanguage } nyelve
 onboarding-live-language-secondary-cancel-download = Mégse
 onboarding-live-language-skip-button-label = Kihagyás
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -161,7 +163,7 @@ fx100-upgrade-thanks-header = 100 köszönet
 # but "Thank" can be used instead if there's no "you" in the translation.
 fx100-upgrade-thank-you-body = Ez a { -brand-short-name } 100. kiadása. Köszönjük <em>Önnek</em>, hogy segít nekünk egy jobb, egészségesebb internet felépítésében.
 # Message shown with either a pin-to-taskbar or set-default button.
-fx100-upgrade-thanks-keep-body = Ez a 100. kiadásunk! Köszönjük, hogy segít a közösségünk tagja. Tartsa egy kattintásnyira a { -brand-short-name(case: "accusative") } a következő 100-hoz.
+fx100-upgrade-thanks-keep-body = Ez a 100. kiadásunk! Köszönjük, hogy segít a közösségünk tagja. Tartsa egy kattintásnyira a { -brand-short-name }ot a következő 100-hoz.
 mr2022-onboarding-secondary-skip-button-label = Lépés kihagyása
 
 ## MR2022 New User Easy Setup screen strings
@@ -173,35 +175,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = A { -brand-short-name 
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importálás az előző böngészőből
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Fedezzen fel egy csodálatos internetet
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
-mr2022-onboarding-welcome-pin-subtitle = Indítsa el a { -brand-short-name(case: "accusative") } bárhonnan egyetlen kattintással. Minden alkalommal, amikor ezt teszi, egy nyitottabb és függetlenebb internetet választ.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
+mr2022-onboarding-welcome-pin-subtitle = Indítsa el a { -brand-short-name }ot bárhonnan egyetlen kattintással. Minden alkalommal, amikor ezt teszi, egy nyitottabb és függetlenebb internetet választ.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] A { -brand-short-name } Dokkban tartása
        *[other] A { -brand-short-name } rögzítése a tálcára
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = A { -brand-short-name } rögzítése a tálcára és a start menüre
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Kezdje egy nonprofit szervezet által támogatott böngészővel. Megvédjük a magánszféráját, miközben a világhálón böngészik.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = Köszönjük, hogy szereti a { -brand-product-name(case: "accusative") }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Indítson el egy egészségesebb internetet bárhonnan egyetlen kattintással. A legfrissebb frissítésünk tele van olyan új dolgokkal, amelyekről azt gondoljuk, hogy imádni fog.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Használjon olyan böngészőt, amely megvédi a magánszféráját, miközben a világhálón böngészik. Legújabb frissítésünk tele van olyan dolgokkal, amelyeket imádni fog.
 mr2022-onboarding-existing-pin-checkbox-label = Adja hozzá a { -brand-short-name } privát böngészését is
 
@@ -216,17 +220,19 @@ mr2022-onboarding-set-default-subtitle = Használjon egy nonprofit szervezet ál
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = A legfrissebb verziónk Ön köré épül fel, így minden eddiginél egyszerűbb a világhálón szörfölés. Tele van olyan funkciókkal, amelyekről úgy gondoljuk, hogy imádni fog.
 mr2022-onboarding-get-started-primary-button-label = Beállítás másodpercek alatt
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Villámgyors beállítás
-mr2022-onboarding-import-subtitle = Állítsa be úgy a { -brand-short-name(case: "accusative") }, ahogy Önnek tetszik. Adja hozzá könyvjelzőit, jelszavait és egyebeket a régi böngészőjéből.
+mr2022-onboarding-import-subtitle = Állítsa be úgy a { -brand-short-name }ot, ahogy Önnek tetszik. Adja hozzá könyvjelzőit, jelszavait és egyebeket a régi böngészőjéből.
 mr2022-onboarding-import-primary-button-label-no-attribution = Importálás az előző böngészőből
 
 ## If your language uses grammatical genders, in the description for the
@@ -275,7 +281,7 @@ mr2022-onboarding-mobile-download-cta-text = Olvassa le a QR-kódot, hogy megkap
 mr2022-onboarding-no-mobile-download-cta-text = Olvassa le a QR-kódot, hogy beszerezze a { -brand-product-name(case: "accusative") } a mobiljára.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Kapja meg a privát böngészés szabadságát egyetlen kattintással
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Nincsenek mentett sütik vagy előzmények, közvetlenül az asztaláról. Böngésszen úgy, mintha senki sem nézné.
@@ -296,7 +302,7 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Részletes infor
 ## MR2022 Multistage Gratitude screen strings
 
 mr2022-onboarding-gratitude-title = Segít nekünk egy jobb világháló felépítésében
-mr2022-onboarding-gratitude-subtitle = Köszönjük, hogy a { -brand-short-name(case: "accusative") } használja, amelyet a BrowserWorks Alapítvány támogat. Az Ön támogatásával azon dolgozunk, hogy az internetet mindenki számára nyitottabbá, hozzáférhetőbbé és jobbá tegyük.
+mr2022-onboarding-gratitude-subtitle = Köszönjük, hogy a { -brand-short-name }ot használja, amelyet a BrowserWorks Alapítvány támogat. Az Ön támogatásával azon dolgozunk, hogy az internetet mindenki számára nyitottabbá, hozzáférhetőbbé és jobbá tegyük.
 mr2022-onboarding-gratitude-primary-button-label = Nézze meg az újdonságokat
 mr2022-onboarding-gratitude-secondary-button-label = Böngészés megkezdése
 
@@ -335,6 +341,14 @@ onboarding-device-migration-subtitle = Jelentkezzen be a { -fxaccount-brand-name
 onboarding-device-migration-subtitle2 = Jelentkezzen be a fiókjába, hogy áthozza a könyvjelzőit, jelszavait és előzményeit az új eszközére.
 onboarding-device-migration-primary-button-label = Bejelentkezés
 
+## Add-ons Picker screen
+
+amo-picker-title = A { -brand-short-name } testreszabása
+amo-picker-subtitle = A kiegészítők olyanok, mintha alkalmazások lennének a böngészőhöz, és lehetővé teszik a jelszavak védelmét, videók letöltését, akciók megtalálását, a bosszantó hirdetések blokkolását, a böngésző kinézetének módosítását, és még sok minden mást.
+amo-picker-install-button-label = Hozzáadás a { -brand-short-name }hoz
+amo-picker-install-complete-label = Telepítve
+amo-picker-collection-link = További kiegészítők felfedezése
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -345,12 +359,17 @@ onboarding-mobile-download-security-and-privacy-title = Maradjon titkosítva, am
 onboarding-mobile-download-security-and-privacy-subtitle = Ha befejeződik a szinkronizálás, akkor a { -brand-short-name } titkosítja jelszavait, könyvjelzőit és egyebeit. Továbbá átvehet lapokat a többi eszközéről.
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = Számíthat a { -brand-short-name }ra
-onboarding-gratitude-security-and-privacy-subtitle = Köszönjük, hogy a { -brand-short-name(case: "accusative") } használja, amelyet a BrowserWorks Alapítvány támogat. Az Ön támogatásával azon dolgozunk, hogy az internetet mindenki számára biztonságosabbá, és mindenki számára hozzáférhetőbbé tegyük.
+onboarding-gratitude-security-and-privacy-subtitle = Köszönjük, hogy a { -brand-short-name }ot használja, amelyet a BrowserWorks Alapítvány támogat. Az Ön támogatásával azon dolgozunk, hogy az internetet mindenki számára biztonságosabbá, és mindenki számára hozzáférhetőbbé tegyük.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Adatok szinkronizálása az eszközök közt
+onboarding-sign-up-description = Regisztráljon egy fiókot, és minden fontos információja – jelszavak, könyvjelzők és egyeket – biztonságosan lesz tárolva, és elérhető lesz, ha bejelentkezik bármely eszközön.
+onboarding-sign-up-button = Regisztráljon vagy jelentkezzen be
+onboarding-sign-up-secondary-button = Böngészés megkezdése
 
 ## New user time and familiarity survey strings
 
-onboarding-new-user-time-based-survey-title = Mióta használja a { -brand-short-name(case: "accusative") }?
-onboarding-new-user-familiarity-based-survey-title = Mennyire ismeri jól a { -brand-short-name(case: "accusative") }?
+onboarding-new-user-time-based-survey-title = Mióta használja a { -brand-short-name }ot?
+onboarding-new-user-familiarity-based-survey-title = Mennyire ismeri jól a { -brand-short-name }ot?
 onboarding-new-user-survey-subtitle = Visszajelzése segít, hogy a { -brand-short-name } még jobb legyen.
 # When translating "next" it means the next screen in onboarding.
 onboarding-new-user-survey-next-button-label = Tovább
@@ -365,3 +384,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = Teljesen új vagyok
 onboarding-new-user-survey-familiarity-based-option-2 = Használtam valamennyit
 onboarding-new-user-survey-familiarity-based-option-3 = Jól ismerem
 onboarding-new-user-survey-familiarity-based-option-4 = Régebben használtam, de ennek már egy ideje
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Mondja el, hová szeretné tenni a lapjait
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Állítsa be bármikor az oldalsáv beállításaiban.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Az Ön lapjai, az Ön útja
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Sok lapot tart nyitva? Próbálja ki az oldalra helyezett lapokat a letisztultabb nézet érdekében. Vagy tartsa meg a klasszikust, a fent lévő lapokkal. Váltson bármikor.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Válassza ki a lapelrendezést
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = A letisztultabb nézetért, amely segít koncentrálni, próbálja ki az oldalra helyezett lapokat. Vagy tartsa meg a klasszikust, a fent lévő lapokkal. Váltson bármikor.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Lapok oldalt
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Lapok fent
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Megérkeztek a függőleges lapok
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = A függőleges lapok bemutatása
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Próbálja ki, hogy oldalra teszi lapjait. Állítsa be bármikor az oldalsáv beállításaiban.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Függőleges lapok kipróbálása
+onboarding-flair-text = Új!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Vízszintes lapok megtartása
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = Egy böngészőablak, amely a lapokat a képernyő szélén jeleníti meg, a { -brand-shorter-name } oldalsávjának részeként.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = Egy böngészőablak, amely a lapokat a képernyő szélén jeleníti meg, a { -brand-shorter-name } oldalsávjának részeként.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Egy böngészőablak, amely a lapokat felül jeleníti meg.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Egy böngészőablak, amely a lapokat felül jeleníti meg.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Próbáljon ki egy MI csevegőbotot az oldalsávban
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Foglalja össze a webes tartalmakat, ötleteljen, írjon összes piszkozatokat – mindezt böngészés közben. Válasszon több szolgáltató közül. Váltson bármikor. <a data-l10n-name="learn-more">További információk</a>
+onboarding-genai-sidebar-primary-button = Válasszon csevegőbotot
+onboarding-genai-sidebar-secondary-button = Böngészés megkezdése
+
+## New user onboarding checklist
+
+onboarding-checklist-title = A { -brand-short-name } beállításának befejezése
+onboarding-checklist-subtitle = Végezze el ezeket a lépéseket, hogy a legtöbbet hozza ki a böngészési élményéből.
+onboarding-checklist-set-default = A { -brand-short-name } beállítása alapértelmezett böngészőként
+onboarding-checklist-pin = A { -brand-short-name } rögzítése a tálcára
+onboarding-checklist-import = Importálás az előző böngészőből
+onboarding-checklist-extension = Egy kiegészítő hozzáadása
+onboarding-checklist-sign-up = Regisztráljon vagy jelentkezzen be a fiókjába
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Próbálja ki a lapcsoportokat a kisebb zsúfoltság és a nagyobb fókusz érdekében
+tab-groups-onboarding-feature-callout-subtitle = Rendszerezzen a lapok egymásra húzásával, hozzon létre így csoportokat.
+tab-groups-onboarding-create-group-title-2 = Itt bármikor megtalálja a lapcsoportjait.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Találja meg a csoportjait a címsorban keresve.
+tab-groups-onboarding-saved-groups-title-2 = Ha bezár egy lapcsoportot, itt bármikor újra megnyithatja.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Találja meg a bezárt csoportjait a címsorban keresve.
+tab-groups-onboarding-session-restore-title = Nyissa meg újra a lapcsoportjait itt.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = Köszöntse a { -brand-product-name }-profilokat
+multi-profile-spotlight-body = Váltson könnyen a munka és a szórakozás között. A profilok teljesen elkülönítik a böngészési információit, beleértve a keresési előzményeket és a jelszavakat, így rendszerezett lehet.
+multi-profile-spotlight-cta = Profil létrehozása
+multi-profile-callout-title = Hozzon létre különböző profilokat a munkához és a szórakozáshoz
+multi-profile-callout-subtitle = A profilok segítségével teljesen külön tárolhatja a böngészési adatait, mint a keresési előzményeket és a jelszavakat.
+multi-profile-callout-cta = Profil létrehozása
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Töltse le, szinkronizáljon és hajrá!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Olvassa le a QR-kódot a mobilos { -brand-product-name } letöltéséhez. A telepítés után válassza a „Szinkronizálás mobilra” lehetőséget, hogy útközben is elérje jelszavait, könyvjelzőit és egyebeit.
+dismiss-button-label = Eltüntetés
+sync-to-mobile-button-label = Szinkronizálás mobilra
+desktop-to-mobile-qr-code-alt =
+    .aria-label = QR-kód a mobilos { -brand-product-name } letöltéséhez

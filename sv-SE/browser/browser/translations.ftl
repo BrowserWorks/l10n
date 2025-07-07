@@ -1,11 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Waterfox Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Översätt den här sidan
-# The button for "Waterfox Translations" in the url bar. Note that here "Beta" should
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
 # not be translated, as it is a reflection of the un-localized BETA icon that is in the
 # panel.
 urlbar-translations-button2 =
@@ -33,7 +33,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Waterfox Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Hantera språk
@@ -116,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Visa original
 
-## Waterfox Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Översättningar
 translations-manage-settings-button =
@@ -126,13 +126,6 @@ translations-manage-description = Ladda ner språk för offlineöversättning.
 translations-manage-all-language = Alla språk
 translations-manage-download-button = Hämta
 translations-manage-delete-button = Ta bort
-translations-manage-intro = Ställ in dina språk- och webbplatsöversättningsinställningar och hantera språk som är installerade för offlineöversättning.
-translations-manage-install-description = Installera språk för offlineöversättning
-translations-manage-language-install-button =
-    .label = Installera
-translations-manage-language-install-all-button =
-    .label = Installera alla
-    .accesskey = a
 translations-manage-intro-2 = Ställ in dina språk- och webbplatsöversättningsinställningar och hantera språk som laddas ner för offlineöversättning.
 translations-manage-download-description = Ladda ner språk för offlineöversättning
 translations-manage-language-download-button =
@@ -145,7 +138,6 @@ translations-manage-language-remove-button =
 translations-manage-language-remove-all-button =
     .label = Ta bort alla
     .accesskey = T
-translations-manage-error-install = Det uppstod ett problem när språkfilerna skulle installeras. Var god försök igen.
 translations-manage-error-download = Det gick inte att ladda ned språkfilerna. Var god försök igen.
 translations-manage-error-delete = Det gick inte att ta bort språkfilerna. Var god försök igen.
 translations-manage-error-remove = Det uppstod ett fel när språkfilerna skulle tas bort. Var god försök igen.

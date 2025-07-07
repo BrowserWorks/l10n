@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -28,6 +28,13 @@ default-browser-prompt-message-pin =
         [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté na své liště.
        *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou na své liště.
     }
+default-browser-prompt-message-pin-msix =
+    { -brand-short-name.gender ->
+        [masculine] Mějte { -brand-short-name(case: "acc") } nastavený jako výchozí prohlížeč a připnutý na své liště a v nabídce start.
+        [feminine] Mějte { -brand-short-name(case: "acc") } nastavenou jako výchozí prohlížeč a připnutou na své liště a v nabídce start.
+        [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté na své liště a v nabídce start.
+       *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou na své liště a v nabídce start.
+    }
 default-browser-prompt-message-pin-mac =
     { -brand-short-name.gender ->
         [masculine] Mějte { -brand-short-name(case: "acc") } nastavený jako výchozí prohlížeč a připnutý ve svém docku.
@@ -35,6 +42,7 @@ default-browser-prompt-message-pin-mac =
         [neuter] Mějte { -brand-short-name(case: "acc") } nastavené jako výchozí prohlížeč a připnuté ve svém docku.
        *[other] Mějte aplikaci { -brand-short-name } nastavenou jako výchozí prohlížeč a připnutou ve svém docku.
     }
+default-browser-prompt-button-primary-set = Nastavit jako výchozí prohlížeč
 default-browser-prompt-button-primary-pin = Nastavit jako hlavní prohlížeč
 default-browser-prompt-title-alt =
     { -brand-short-name.case-status ->

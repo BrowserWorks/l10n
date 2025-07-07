@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -206,6 +206,10 @@ addon-updates-manual-updates-found = Показать доступные обн�
 
 addon-install-from-file = Установить дополнение из файла…
     .accesskey = а
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Установить или обновить дополнение из файла…
+    .accesskey = Ш
 addon-install-from-file-dialog-title = Выберите дополнение для установки
 addon-install-from-file-filter-name = Дополнения
 addon-open-about-debugging = Отладка дополнений
@@ -278,6 +282,12 @@ discopane-notice-recommendations2 =
         Некоторые из этих рекомендаций персонализированы. Они основаны на других
         установленных вами расширениях, настройках профиля и статистике использования.
 discopane-notice-learn-more = Подробнее
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Ваши темы с расцветками были удалены.
+    .message = { -brand-product-name } обновил коллекцию расцветок. Старые версии удалены из списка «Сохранённые темы». Получите новые версии на сайте дополнений.
+colorway-removal-notice-learn-more = Подробнее
+colorway-removal-notice-button = Получить обновлённые темы с расцветками
 privacy-policy = Политика приватности
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -298,6 +308,16 @@ find-more-themes = Найти другие темы
 # used for screen readers.
 addon-options-button =
     .aria-label = Другие настройки
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    Расширения и темы позволяют вам настроить { -brand-product-name }. Они могут повысить приватность,
+    повысить производительность, улучшить мультимедиа, изменить внешний вид { -brand-product-name } и
+    гораздо больше. Эти небольшие программы часто разрабатываются сторонними разработчиками. Вот
+    выбор, который Firefox <a data-l10n-name="learn-more-trigger">рекомендует</a> для
+    исключительной безопасности, производительности и функциональности.
 
 ## Add-on actions
 
@@ -385,6 +405,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Разрешено в приватных окнах
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Разрешено в приватных окнах
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -416,14 +440,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = { -brand-product-name } рекомендует только те расширения, которые соответствуют нашим стандартам по безопасности и производительности
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Официальное расширение, созданное BrowserWorks. Соответствует стандартам безопасности и производительности.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Это расширение было проверено на соответствие нашим стандартам безопасности и производительности
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Официальное расширение, созданное BrowserWorks. Соответствует стандартам безопасности и производительности.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = Это расширение было проверено на соответствие стандартам безопасности и производительности
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox рекомендует только те расширения, которые соответствуют стандартам безопасности и производительности
 
 ##
 
@@ -431,6 +473,7 @@ available-updates-heading = Доступные обновления
 recent-updates-heading = Недавно обновлённые
 release-notes-loading = Загрузка…
 release-notes-error = При загрузке примечаний к выпуску возникли проблемы.
+addon-permissions-empty2 = Это расширение не требует никаких разрешений.
 addon-permissions-empty = Это расширение не требует дополнительных разрешений
 addon-permissions-required = Необходимые разрешения для основных функций:
 addon-permissions-optional = Необязательные разрешения для дополнительных функций:
@@ -440,8 +483,8 @@ recommended-themes-heading = Рекомендуемые темы
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Предоставляет следующие возможности <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Чувствуете прилив вдохновения? <a data-l10n-name="link">Создайте свою тему с помощью Waterfox Color.</a>
 
 ## Page headings
@@ -458,6 +501,9 @@ shortcuts-heading = Управление горячими клавишами р�
 default-heading-search-label = Найти больше дополнений
 addons-heading-search-input =
     .placeholder = Поиск на addons.mozilla.org
+addons-heading-search-button =
+    .title = Поиск на addons.mozilla.org
+    .aria-label = Поиск на addons.mozilla.org
 addon-page-options-button =
     .title = Инструменты для всех дополнений
 
@@ -480,10 +526,24 @@ details-notification-unsigned-and-disabled-link = Подробная инфор�
 details-notification-unsigned = Работа { $name } в { -brand-short-name } не была проверена. Действуйте с осторожностью.
 details-notification-unsigned2 =
     .message = Работа { $name } в { -brand-short-name } не была проверена. Действуйте с осторожностью.
+details-notification-hard-blocked-extension =
+    .message = Это расширение заблокировано за нарушение политик BrowserWorks и было отключено.
+details-notification-hard-blocked-other =
+    .message = Это дополнение заблокировано за нарушение политик BrowserWorks, и было отключено.
 details-notification-unsigned-link = Подробная информация
 details-notification-blocked = { $name } было отключено из-за проблем со стабильностью или безопасностью.
 details-notification-blocked2 =
     .message = { $name } было отключено из-за проблем со стабильностью или безопасностью.
+details-notification-blocked-link2 = Узнать подробнее
+details-notification-soft-blocked-extension-disabled =
+    .message = Это расширение ограничено за нарушение политик BrowserWorks и было отключено. Вы можете включить его, но это может быть рискованно.
+details-notification-soft-blocked-extension-enabled =
+    .message = Это расширение нарушает политики BrowserWorks. Его использование может быть рискованным.
+details-notification-soft-blocked-other-disabled =
+    .message = Это дополнение ограничено за нарушение политик BrowserWorks и было отключено. Вы можете включить его, но это может быть рискованно.
+details-notification-soft-blocked-other-enabled =
+    .message = Это дополнение нарушает политики BrowserWorks. Его использование может быть рискованным.
+details-notification-softblocked-link2 = Узнать подробнее
 details-notification-blocked-link = Подробная информация
 details-notification-softblocked = { $name } вызывает проблемы со стабильностью или безопасностью.
 details-notification-softblocked2 =
@@ -501,3 +561,41 @@ plugins-openh264-name = Видеокодек OpenH264, предоставлен�
 plugins-openh264-description = Плагин автоматически установлен BrowserWorks для реализации спецификации WebRTC и выполнения звонков через WebRTC на устройства, требующие использования видеокодека H.264. Посетите https://www.openh264.org/ для просмотра исходного кода кодека и получения подробной информации о его реализации.
 plugins-widevine-name = Плагин расшифровки контента Widevine, предоставленный Google Inc.
 plugins-widevine-description = Плагин включает поддержку воспроизведения зашифрованного медиа в соответствии со спецификацией Encrypted Media Extensions (EME). Зашифрованные медиа обычно используются сайтами для защиты от копирования премиум медиа-контента. Посетите https://www.w3.org/TR/encrypted-media/ для получения подробной информации об Encrypted Media Extensions (EME).
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = Требуемый сбор данных:
+addon-permissions-optional-data-collection = Необязательный сбор данных:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = Разрешения и данные
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = Используется расширением { $extensionName }
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = { -brand-short-name } использует это на about:inference
+mlmodel-link-preview = { -brand-short-name } использует это для генерации ключевых точек при предпросмотре ссылок
+mlmodel-pdfjs = { -brand-short-name } использует это для создания альтернативного текста для изображений, которые вы добавляете в PDF-файлы.
+mlmodel-smart-tab-topic-engine = { -brand-short-name } использует это, чтобы предлагать имена для ваших групп вкладок
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } использует это, чтобы предлагать вкладки для ваших групп вкладок
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = ИИ на устройстве
+addon-category-mlmodel-title =
+    .title = ИИ на устройстве
+mlmodel-heading = Управление моделями ИИ на устройстве
+mlmodel-description = Некоторые функции и расширения в { -brand-short-name } созданы на основе моделей ИИ, которые работают локально на вашем устройстве. Этот подход защищает вашу приватность и во многих случаях повышает производительность. <a data-l10n-name="learn-more">Подробнее</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = Удалить
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = Размер файла
+mlmodel-addon-detail-last-used-label = Последнее использование
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = Используется
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = Карточка модели
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Открыть на Hugging Face

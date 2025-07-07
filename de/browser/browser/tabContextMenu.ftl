@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = Neuer Tab
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = Linke Tabs schließen
     .accesskey = L
+close-tabs-to-the-start-vertical =
+    .label = Obere Tabs schließen
+    .accesskey = O
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = Rechte Tabs schließen
     .accesskey = R
+close-tabs-to-the-end-vertical =
+    .label = Untere Tabs schließen
+    .accesskey = U
 close-other-tabs =
     .label = Andere Tabs schließen
     .accesskey = A
@@ -78,6 +88,16 @@ tab-context-close-duplicate-tabs =
 tab-context-share-url =
     .label = Teilen
     .accesskey = T
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Neuer Tab rechts
+    .accesskey = r
+tab-context-new-tab-open-vertical =
+    .label = Neuer Tab unten
+    .accesskey = r
+tab-context-new-group =
+    .label = Neue Gruppe
+    .accesskey = G
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -112,3 +132,10 @@ tab-context-send-tabs-to-device =
            *[other] { $tabCount } Tabs an Gerät senden
         }
     .accesskey = s
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [one] Tab entladen
+           *[other] { $tabCount } Tabs entladen
+        }
+    .accesskey = e

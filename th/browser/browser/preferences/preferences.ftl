@@ -1,10 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = ส่งสัญญาณ “ไม่ติดตาม” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม
+do-not-track-description = ส่งสัญญาณ “Do Not Track” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม
+do-not-track-removal = เราไม่รองรับสัญญาณ “Do Not Track” อีกต่อไป
 do-not-track-description2 =
-    .label = ส่งคำขอ “ไม่ติดตาม” ให้กับเว็บไซต์
+    .label = ส่งคำขอ “Do Not Track” ให้กับเว็บไซต์
     .accesskey = ม
 do-not-track-learn-more = เรียนรู้เพิ่มเติม
 do-not-track-option-default-content-blocking-known =
@@ -14,7 +15,7 @@ do-not-track-option-always =
 global-privacy-control-description =
     .label = บอกเว็บไซต์ไม่ให้ขายหรือแบ่งปันข้อมูลของฉัน
     .accesskey = บ
-non-technical-privacy-header = การกำหนดลักษณะความเป็นส่วนตัวของเว็บ
+non-technical-privacy-header = ค่าปรับแต่งความเป็นส่วนตัวของเว็บ
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
@@ -60,6 +61,7 @@ pane-experimental-description2 = การเปลี่ยนแปลงก�
 settings-pane-labs-title = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description3 = ลองใช้คุณลักษณะทดลองของเรา! คุณลักษณะเหล่านั้นกำลังอยู่ระหว่างพัฒนาและปรับปรุง ซึ่งอาจส่งผลต่อการทำงานของ { -brand-short-name }
 pane-experimental-reset =
     .label = เรียกคืนค่าเริ่มต้น
     .accesskey = R
@@ -135,7 +137,8 @@ startup-restore-windows-and-tabs =
 windows-launch-on-login =
     .label = เปิด { -brand-short-name } โดยอัตโนมัติตอนเปิดเครื่องคอมพิวเตอร์
     .accesskey = ป
-windows-launch-on-login-disabled = การกำหนดลักษณะนี้ถูกปิดใช้งานใน Windows เมื่อต้องการเปลี่ยน ให้ไปที่ <a data-l10n-name="startup-link">แอปเริ่มต้น</a> ในการตั้งค่าระบบ
+windows-launch-on-login-disabled = ค่าปรับแต่งนี้ถูกปิดใช้งานใน Windows เมื่อต้องการเปลี่ยน ให้ไปที่ <a data-l10n-name="startup-link">แอปเริ่มต้น</a> ในการตั้งค่าระบบ
+windows-launch-on-login-profile-disabled = เปิดใช้งานค่าปรับแต่งนี้โดยทำเครื่องหมายที่ “{ profile-manager-use-selected.label }” ในหน้าต่าง “เลือกโปรไฟล์ผู้ใช้”
 startup-restore-warn-on-quit =
     .label = เตือนคุณเมื่อออกจากเบราว์เซอร์
 disable-extension =
@@ -145,6 +148,11 @@ preferences-data-migration-description = นำเข้าที่คั่น
 preferences-data-migration-button =
     .label = นำเข้าข้อมูล
     .accesskey = น
+preferences-profiles-header = โปรไฟล์
+preferences-manage-profiles-description = แต่ละโปรไฟล์จะมีข้อมูลการเรียกดูและการตั้งค่าแยกจากกัน รวมถึงประวัติ รหัสผ่าน และอื่นๆ
+preferences-manage-profiles-learn-more = เรียนรู้เพิ่มเติม
+preferences-manage-profiles-button =
+    .label = จัดการโปรไฟล์
 tabs-group-header = แท็บ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab เพื่อสลับเปลี่ยนแท็บตามลำดับที่ใช้ล่าสุด
@@ -152,6 +160,17 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = เปิดลิงก์ในแท็บแทนที่จะเป็นหน้าต่างใหม่
     .accesskey = ป
+ask-on-close-multiple-tabs =
+    .label = ถามก่อนที่จะปิดหลายแท็บ
+    .accesskey = ห
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = ถามก่อนที่จะออกด้วย { $quitKey }
+    .accesskey = ก
 confirm-on-close-multiple-tabs =
     .label = ยืนยันก่อนปิดหลายแท็บ
     .accesskey = ย
@@ -179,32 +198,42 @@ browser-containers-learn-more = เรียนรู้เพิ่มเติ
 browser-containers-settings =
     .label = การตั้งค่า…
     .accesskey = ต
-containers-disable-alert-title = ปิดแท็บแยกข้อมูลทั้งหมด?
+containers-disable-alert-title = ปิดแท็บแยกข้อมูลทั้งหมดหรือไม่?
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
 
-containers-disable-alert-desc = ถ้าคุณปิดใช้งานแท็บแยกข้อมูลตอนนี้ { $tabCount } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการปิดใช้งานแท็บแยกข้อมูล?
+containers-disable-alert-desc = ถ้าคุณปิดใช้งานแท็บแยกข้อมูลตอนนี้ ก็จะปิดแท็บแยกข้อมูล { $tabCount } แท็บ คุณแน่ใจหรือไม่ว่าต้องการปิดใช้งานแท็บแยกข้อมูล?
 containers-disable-alert-ok-button = ปิด { $tabCount } แท็บแยกข้อมูล
 
 ##
 
 containers-disable-alert-cancel-button = เปิดใช้งานต่อไป
-containers-remove-alert-title = เอาการแยกข้อมูลนี้ออก?
+containers-remove-alert-title = เอาที่แยกข้อมูลนี้ออกหรือไม่?
 # Variables:
 #   $count (number) - Number of tabs that will be closed.
-containers-remove-alert-msg = ถ้าคุณเอาการแยกข้อมูลนี้ออกตอนนี้ { $count } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการเอาการแยกข้อมูลนี้ออก?
-containers-remove-ok-button = เอาการแยกข้อมูลนี้ออก
-containers-remove-cancel-button = ไม่เอาการแยกข้อมูลนี้ออก
+containers-remove-alert-msg = ถ้าคุณเอาที่แยกข้อมูลนี้ออกตอนนี้ ก็จะปิดแท็บแยกข้อมูล { $count } แท็บ คุณแน่ใจหรือไม่ว่าต้องการเอาที่แยกข้อมูลนี้ออก?
+containers-remove-ok-button = เอาที่แยกข้อมูลนี้ออก
+containers-remove-cancel-button = ไม่เอาที่แยกข้อมูลนี้ออก
 settings-tabs-show-image-in-preview =
     .label = แสดงตัวอย่างภาพเมื่อคุณวางเมาส์เหนือแท็บ
     .accessKey = แ
+browser-layout-header = เค้าโครงของเบราว์เซอร์
+browser-layout-horizontal-tabs =
+    .label = แท็บแนวนอน
+browser-layout-horizontal-tabs-desc = แสดงที่ด้านบนของเบราว์เซอร์
+browser-layout-vertical-tabs =
+    .label = แท็บแนวตั้ง
+browser-layout-vertical-tabs-desc = แสดงที่ด้านข้าง ในแถบข้าง
+browser-layout-show-sidebar =
+    .label = แสดงแถบข้าง
+browser-layout-show-sidebar-desc = เข้าถึงที่คั่นหน้า แท็บต่างๆ ได้อย่างรวดเร็วจากโทรศัพท์ บอตสนทนา AI และอื่นๆ ของคุณได้โดยไม่ต้องออกจากมุมมองหลัก
 
 ## General Section - Language & Appearance
 
 language-and-appearance-header = ภาษาและรูปลักษณ์
 preferences-web-appearance-header = รูปลักษณ์ของเว็บไซต์
-preferences-web-appearance-description = บางเว็บไซต์ปรับโทนสีตามการกำหนดลักษณะของคุณ เลือกชุดสีที่คุณต้องการใช้สำหรับไซต์เหล่านั้น
+preferences-web-appearance-description = บางเว็บไซต์ปรับโทนสีตามค่าปรับแต่งของคุณ เลือกชุดสีที่คุณต้องการใช้สำหรับไซต์เหล่านั้น
 preferences-web-appearance-choice-auto = อัตโนมัติ
 preferences-web-appearance-choice-light = สว่าง
 preferences-web-appearance-choice-dark = มืด
@@ -222,6 +251,10 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
+preferences-web-appearance-override-warning3 =
+    .message = การตั้งค่าการควบคุมความคมชัดของคุณมีผลเหนือรูปลักษณ์ของเว็บไซต์
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
 preferences-web-appearance-override-warning = การเลือกสีของคุณมีผลเหนือรูปลักษณ์ของเว็บไซต์ <a data-l10n-name="colors-link">จัดการสี</a>
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
@@ -230,6 +263,17 @@ preferences-web-appearance-override-warning2 =
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = จัดการชุดตกแต่งของ { -brand-short-name } ใน <a data-l10n-name="themes-link">ส่วนขยายและชุดตกแต่ง</a>
+preferences-contrast-control-header = การควบคุมความคมชัด
+preferences-contrast-control-description = เว็บไซต์ใช้สีพื้นหน้าและพื้นหลังที่หลากหลาย กำหนดค่า { -brand-short-name } ให้ใช้สีเดียวกันทั่วทั้งเว็บไซต์ เพื่อให้อ่านง่ายขึ้น
+preferences-contrast-control-use-platform-settings =
+    .label = อัตโนมัติ (ใช้การตั้งค่าระบบ)
+    .accesskey = อ
+preferences-contrast-control-off =
+    .label = ปิด
+    .accesskey = ป
+preferences-contrast-control-custom =
+    .label = กำหนดเอง
+    .accesskey = ก
 preferences-colors-header = สี
 preferences-colors-description = แทนที่สีเริ่มต้นของ { -brand-short-name } สำหรับข้อความ พื้นหลังของเว็บไซต์ และลิงก์
 preferences-colors-manage-button =
@@ -305,6 +349,9 @@ download-choose-folder =
 download-always-ask-where =
     .label = ถามคุณเสมอว่าจะบันทึกไฟล์ที่ไหน
     .accesskey = ถ
+download-private-browsing-delete =
+    .label = ลบไฟล์ที่ดาวน์โหลดจากการเรียกดูแบบส่วนตัวเมื่อปิดหน้าต่างส่วนตัวทั้งหมดแล้ว
+    .accesskey = ล
 applications-header = แอปพลิเคชัน
 applications-description = เลือกวิธีที่ { -brand-short-name } จัดการกับไฟล์ที่คุณดาวน์โหลดจากเว็บหรือแอปพลิเคชันที่คุณใช้ขณะเรียกดู
 applications-filter =
@@ -395,7 +442,7 @@ play-drm-content-learn-more = เรียนรู้เพิ่มเติ�
 update-application-title = การอัปเดต { -brand-short-name }
 update-application-description = คง { -brand-short-name } ให้เป็นรุ่นล่าสุดเพื่อประสิทธิภาพ, เสถียรภาพ และความปลอดภัยที่ดีที่สุด
 # Variables:
-# $version (string) - Waterfox version
+# $version (string) - Firefox version
 update-application-version = รุ่น { $version } <a data-l10n-name="learn-more">มีอะไรใหม่</a>
 update-history =
     .label = แสดงประวัติการอัปเดต…
@@ -459,6 +506,8 @@ performance-default-content-process-count =
 ## General Section - Browsing
 
 browsing-title = การเรียกดู
+browsing-group-label =
+    .aria-label = การเรียกดู
 browsing-use-autoscroll =
     .label = ใช้การเลื่อนอัตโนมัติ
     .accesskey = ช
@@ -543,7 +592,7 @@ choose-bookmark =
     .label = ใช้ที่คั่นหน้า…
     .accesskey = ท
 
-## Home Section - Waterfox Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = เนื้อหา { -firefox-home-brand-name }
 home-prefs-content-description2 = เลือกเนื้อหาที่คุณต้องการบนหน้าจอ { -firefox-home-brand-name } ของคุณ
@@ -555,8 +604,7 @@ home-prefs-shortcuts-description = ไซต์ที่คุณบันทึ
 home-prefs-shortcuts-by-option-sponsored =
     .label = ทางลัดที่ได้รับการสนับสนุน
 
-## Variables:
-##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+## Home Section - Firefox Home Content Customization
 
 home-prefs-recommended-by-header =
     .label = แนะนำโดย { $provider }
@@ -594,6 +642,14 @@ home-prefs-weather-header =
     .label = พยากรณ์อากาศ
 home-prefs-weather-description = ดูพยากรณ์อากาศประจำวันนี้ได้อย่างรวดเร็ว
 home-prefs-weather-learn-more-link = เรียนรู้เพิ่มเติม
+home-prefs-trending-search-header =
+    .label = การค้นหาที่กำลังนิยม
+home-prefs-trending-search-description = หัวข้อยอดนิยมและที่ค้นหาบ่อย
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = ร่วมสนับสนุน { -brand-product-name }
+home-prefs-mission-message = ผู้สนับสนุนของเราสนับสนุนภารกิจที่จะสร้างเว็บที่ดีขึ้น
+home-prefs-mission-message-learn-more-link = ค้นหาว่าทำอย่างไร
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -623,6 +679,10 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = แสดงข้อเสนอแนะการค้นหาในผลลัพธ์ของแถบที่อยู่
     .accesskey = ส
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar.
+search-show-search-term-option-2 =
+    .label = แสดงคำค้นหาในแถบที่อยู่บนหน้าผลลัพธ์
 # With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
@@ -654,6 +714,9 @@ search-remove-engine =
 search-add-engine =
     .label = เพิ่ม
     .accesskey = พ
+search-edit-engine =
+    .label = แก้ไข
+    .accesskey = ก
 search-find-more-link = ค้นหาเครื่องมือค้นหาเพิ่มเติม
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -662,6 +725,13 @@ search-keyword-warning-title = คำสำคัญซ้ำกัน
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = คุณได้เลือกคำสำคัญที่มีการใช้งานอยู่โดย “{ $name }” โปรดเลือกคำสำคัญอื่น
 search-keyword-warning-bookmark = คุณได้เลือกคำสำคัญที่มีการใช้งานอยู่โดยที่คั่นหน้า โปรดเลือกคำสำคัญอื่น
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = มีเครื่องมือค้นหาชื่อ “{ $name }” อยู่แล้ว โปรดเลือกชื่ออื่น
+remove-engine-confirmation = คุณแน่ใจหรือไม่ว่าต้องการลบเครื่องมือค้นหานี้?
+remove-engine-remove = ลบ
+remove-addon-engine-alert = เมื่อต้องการลบเครื่องมือค้นหานี้ ให้ลบส่วนเสริมที่สัมพันธ์กันออก
 
 ## Containers Section
 
@@ -669,17 +739,17 @@ containers-back-button2 =
     .aria-label = กลับไปที่การตั้งค่า
 containers-header = แท็บแยกข้อมูล
 containers-add-button =
-    .label = เพิ่มการแยกข้อมูลใหม่
+    .label = เพิ่มที่แยกข้อมูลใหม่
     .accesskey = พ
 containers-new-tab-check =
-    .label = เลือกการแยกข้อมูลสำหรับแต่ละแท็บใหม่
+    .label = เลือกที่แยกข้อมูลสำหรับแต่ละแท็บใหม่
     .accesskey = ล
 containers-settings-button =
     .label = การตั้งค่า
 containers-remove-button =
     .label = เอาออก
 
-## Waterfox account - Signed out. Note that "Sync" and "Waterfox account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = นำเว็บของคุณไปกับคุณ
@@ -697,7 +767,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = ดาวน์โหลด Waterfox สำหรับ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> หรือ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> เพื่อซิงค์กับอุปกรณ์มือถือของคุณ
 
-## Waterfox account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = เปลี่ยนรูปโปรไฟล์
@@ -715,7 +785,7 @@ sync-manage-account = จัดการบัญชี
     .accesskey = จ
 
 ## Variables
-## $email (string) - Email used for Waterfox account
+## $email (string) - Email used for Firefox account
 
 sync-signedin-unverified = { $email } ยังไม่ได้รับการยืนยัน
 sync-signedin-login-failure = โปรดลงชื่อเข้าเพื่อเชื่อมต่อ { $email } ใหม่
@@ -766,6 +836,9 @@ sync-currently-syncing-creditcards = บัตรเครดิต
 sync-currently-syncing-payment-methods = วิธีการชำระเงิน
 sync-currently-syncing-addons = ส่วนเสริม
 sync-currently-syncing-settings = การตั้งค่า
+sync-manage-options =
+    .label = จัดการการซิงค์…
+    .accesskey = จ
 sync-change-options =
     .label = เปลี่ยน…
     .accesskey = ป
@@ -818,6 +891,13 @@ sync-engine-settings =
     .label = การตั้งค่า
     .tooltiptext = การตั้งค่าทั่วไป ความเป็นส่วนตัว และความปลอดภัยที่คุณเปลี่ยน
     .accesskey = ต
+sync-choose-what-to-sync-dialog4 =
+    .title = จัดการสิ่งที่จะซิงค์บนอุปกรณ์ที่เชื่อมต่อทั้งหมดของคุณ
+    .style = min-width: 36em;
+    .buttonlabelaccept = บันทึก
+    .buttonaccesskeyaccept = บ
+    .buttonlabelextra2 = ตัดการเชื่อมต่อ…
+    .buttonaccesskeyextra2 = ต
 
 ## The device name controls.
 
@@ -838,7 +918,7 @@ sync-connect-another-device = เชื่อมต่ออุปกรณ์�
 
 sync-verification-sent-title = ส่งการยืนยันแล้ว
 # Variables:
-#   $email (String): Email address of user's Waterfox account.
+#   $email (String): Email address of user's Firefox account.
 sync-verification-sent-body = ส่งลิงก์ยืนยันไปยัง { $email } แล้ว
 sync-verification-not-sent-title = ไม่สามารถส่งการยืนยัน
 sync-verification-not-sent-body = เราไม่สามารถส่งจดหมายยืนยันได้ในตอนนี้ โปรดลองอีกครั้งในภายหลัง
@@ -933,12 +1013,12 @@ windows-passkey-settings-label = จัดการพาสคีย์ใน�
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = ถ้าต้องการสร้างรหัสผ่านหลัก ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Waterfox is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = สร้างรหัสผ่านหลัก
 master-password-os-auth-dialog-caption = { -brand-full-name }
-# The macOS string is preceded by the operating system with "Waterfox is trying to ".
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
         [macos] เปลี่ยนการตั้งค่าเกี่ยวกับวิธีการชำระเงิน
@@ -969,12 +1049,12 @@ history-header = ประวัติ
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Waterfox will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Waterfox", moving the verb into each option.
-#     This will result in "Waterfox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Waterfox history settings:".
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } จะ
     .accesskey = จ
 history-remember-option-all =
@@ -1069,6 +1149,13 @@ cookie-banner-blocker-checkbox-label =
 
 addressbar-header = แถบที่อยู่
 addressbar-suggest = เมื่อใช้แถบที่อยู่ เสนอแนะ
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = แถบที่อยู่ — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = เลือกประเภทข้อเสนอแนะที่ปรากฏในแถบที่อยู่
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = เรียนรู้เพิ่มเติม
 addressbar-locbar-history-option =
     .label = ประวัติการเรียกดู
     .accesskey = ว
@@ -1094,11 +1181,25 @@ addressbar-locbar-engines-option =
 addressbar-locbar-quickactions-option =
     .label = คำสั่งด่วน
     .accesskey = ด
-addressbar-suggestions-settings = เปลี่ยนการกำหนดลักษณะสำหรับข้อเสนอแนะของเครื่องมือค้นหา
+addressbar-suggestions-settings = เปลี่ยนค่าปรับแต่งสำหรับข้อเสนอแนะของเครื่องมือค้นหา
 addressbar-locbar-showrecentsearches-option =
     .label = แสดงการค้นหาล่าสุด
     .accesskey = ล
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = แสดงข้อเสนอแนะการค้นหาที่กำลังมาแรง
+    .accesskey = ม
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = ข้อเสนอแนะจาก { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = รับคำแนะนำจากเว็บที่เกี่ยวข้องกับการค้นหาของคุณ
+addressbar-locbar-suggest-sponsored-option =
+    .label = คำแนะนำจากผู้สนับสนุน
+addressbar-locbar-suggest-sponsored-desc = สนับสนุน { -brand-short-name } ด้วยคำแนะนำจากผู้สนับสนุนซึ่งแสดงเป็นครั้งคราว
 addressbar-quickactions-learn-more = เรียนรู้เพิ่มเติม
+addressbar-dismissed-suggestions-label = ข้อเสนอแนะที่ถูกปิด
+addressbar-restore-dismissed-suggestions-description = เรียกคืนข้อเสนอแนะที่ถูกปิดจากผู้สนับสนุนและ { -brand-short-name }
+addressbar-restore-dismissed-suggestions-button =
+    .label = เรียกคืน
 
 ## Privacy Section - Content Blocking
 
@@ -1258,20 +1359,45 @@ permissions-addon-exceptions =
 
 ## Privacy Section - Data Collection
 
-collection-header = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
-collection-header2 = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
+collection-header = การเก็บรวบรวมและใช้ข้อมูลของ { -brand-short-name }
+collection-header2 = การเก็บรวบรวมและใช้ข้อมูลของ { -brand-short-name }
     .searchkeywords = การวัดและส่งข้อมูลทางไกล
+preferences-collection-description = เราพยายามที่จะมอบทางเลือกให้กับคุณและรวบรวมข้อมูลอย่างน้อยที่สุดเท่าที่จำเป็นเพื่อปรับปรุง { -brand-product-name } ให้กับทุกคน
+preferences-collection-privacy-notice = ดูประกาศความเป็นส่วนตัว
+preferences-across-profiles = การตั้งค่าเหล่านี้จะมีผลกับโปรไฟล์ { -brand-product-name } ทุกอันบนอุปกรณ์นี้
+preferences-view-profiles = ดูโปรไฟล์ทั้งหมด
 collection-description = เรามุ่งมั่นที่จะให้ทางเลือกกับคุณและเก็บรวบรวมเฉพาะสิ่งที่เราจำเป็นต้องให้บริการและปรับปรุง { -brand-short-name } สำหรับทุกคน เราขออนุญาตก่อนที่จะรับข้อมูลส่วนบุคคลเสมอ
 collection-privacy-notice = ข้อกำหนดความเป็นส่วนตัว
 collection-health-report-telemetry-disabled = คุณจะไม่อนุญาตให้ { -vendor-short-name } เก็บข้อมูลทางเทคนิคและการโต้ตอบอีกต่อไป ข้อมูลที่ผ่านมาทั้งหมดจะถูกลบภายใน 30 วัน
 collection-health-report-telemetry-disabled-link = เรียนรู้เพิ่มเติม
+collection-usage-ping =
+    .label = ส่งพิงการใช้งานรายวันไปยัง { -vendor-short-name }
+    .accesskey = ช
+collection-usage-ping-description = ตัวเลือกนี้จะช่วยให้ { -vendor-short-name } ประเมินจำนวนผู้ใช้ที่มีความเคลื่อนไหวได้
+collection-health-report2 =
+    .label = ส่งข้อมูลทางเทคนิคและการโต้ตอบไปยัง { -vendor-short-name }
+    .accesskey = ต
 collection-health-report =
     .label = อนุญาตให้ { -brand-short-name } ส่งข้อมูลทางเทคนิคและการโต้ตอบไปยัง { -vendor-short-name }
     .accesskey = อ
 collection-health-report-link = เรียนรู้เพิ่มเติม
+collection-health-report-description = ตัวเลือกนี้จะช่วยเราปรับปรุงคุณลักษณะ ประสิทธิภาพ และความเสถียรของ { -brand-product-name }
+collection-studies2 =
+    .label = ติดตั้งและเรียกใช้การศึกษา
+collection-studies-description = ทดลองใช้คุณสมบัติและไอเดียต่างๆ ก่อนที่จะเผยแพร่ให้ทุกคนได้ใช้งานจริง
 collection-studies =
     .label = อนุญาตให้ { -brand-short-name } ติดตั้งและเรียกใช้การศึกษา
 collection-studies-link = ดูการศึกษาของ { -brand-short-name }
+addon-recommendations2 =
+    .label = อนุญาตคำแนะนำส่วนขยายแบบส่วนตัว
+addon-recommendations-description = รับคำแนะนำส่วนขยายเพื่อปรับปรุงประสบการณ์การเรียกดูของคุณ
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = การรายงานข้อมูลถูกปิดใช้งานสำหรับการกำหนดค่าบิลด์นี้
+collection-backlogged-crash-reports2 =
+    .label = ส่งรายงานข้อขัดข้องโดยอัตโนมัติ
+    .accesskey = ข
+collection-backlogged-crash-reports-description = ข้อมูลนี้จะช่วยให้ { -vendor-short-name } สามารถวินิจฉัยและแก้ไขปัญหาเกี่ยวกับเบราว์เซอร์ได้ รายงานอาจรวมถึงข้อมูลส่วนตัวหรือข้อมูลละเอียดอ่อน
 addon-recommendations =
     .label = อนุญาตให้ { -brand-short-name } สร้างคำแนะนำส่วนขยายส่วนบุคคล
 addon-recommendations-link = เรียนรู้เพิ่มเติม
@@ -1291,6 +1417,11 @@ privacy-segmentation-radio-on =
 
 ## Privacy Section - Website Advertising Preferences
 
+website-advertising-header = ค่าปรับแต่งการโฆษณาในเว็บไซต์
+website-advertising-private-attribution =
+    .label = เปิดให้เว็บไซต์ทำการวัดผลโฆษณาได้โดยปกป้องความเป็นส่วนตัว
+    .accesskey = ป
+website-advertising-private-attribution-description = ตัวเลือกนี้จะช่วยให้ไซต์ต่างๆ สามารถเข้าใจถึงผลตอบรับของโฆษณาได้โดยไม่ต้องรวบรวมข้อมูลเกี่ยวกับตัวคุณ
 
 ## Privacy Section - Security
 ##
@@ -1334,12 +1465,17 @@ space-alert-under-5gb-message2 = <strong>พื้นที่ดิสก์ข
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = โหมด HTTPS-Only
+httpsonly-description3 = อนุญาตเฉพาะการเชื่อมต่อที่ปลอดภัยกับเว็บไซต์เท่านั้น { -brand-short-name } จะถามก่อนเชื่อมต่อแบบไม่ปลอดภัย
+httpsonly-learn-more2 = HTTPS-Only ทำงานอย่างไร
 httpsonly-description = HTTPS จะจัดให้มีการเชื่อมต่อแบบเข้ารหัสที่ปลอดภัยระหว่าง { -brand-short-name } และเว็บไซต์ที่คุณเยี่ยมชม เว็บไซต์ส่วนใหญ่จะรองรับ HTTPS และถ้าเปิดใช้งานโหมด HTTPS-Only แล้ว { -brand-short-name } จะอัปเกรดการเชื่อมต่อทั้งหมดเป็น HTTPS
 httpsonly-learn-more = เรียนรู้เพิ่มเติม
 httpsonly-radio-enabled =
     .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างทั้งหมด
 httpsonly-radio-enabled-pbm =
     .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างส่วนตัวเท่านั้น
+httpsonly-radio-disabled3 =
+    .label = ไม่ต้องเปิดใช้งานโหมด HTTPS-Only
+    .description = { -brand-short-name } อาจจะยังคงอัปเกรดการเชื่อมต่อบางอย่าง
 httpsonly-radio-disabled =
     .label = ไม่ต้องเปิดใช้งานโหมด HTTPS-Only
 

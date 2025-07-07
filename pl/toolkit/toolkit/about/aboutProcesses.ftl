@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -11,7 +11,9 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = Usuń karty z pamięci i zakończ proces
+    .title = Usuń karty z pamięci i wymuś zakończenie procesu
+about-processes-kill-process =
+    .title = Wymuś zakończenie procesu
 about-processes-shutdown-tab =
     .title = Zamknij kartę
 # Profiler icons
@@ -52,6 +54,7 @@ about-processes-remote-sandbox-broker-process = Broker zdalnej piaskownicy ({ $p
 about-processes-fork-server-process = Serwer rozdzielania ({ $pid })
 about-processes-preallocated-process = Wstępnie przydzielony ({ $pid })
 about-processes-utility-process = Narzędziowy ({ $pid })
+about-processes-inference-process = Wnioskowanie ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -127,8 +130,8 @@ about-processes-utility-actor-audio-decoder-generic = Standardowy dekoder dźwi�
 about-processes-utility-actor-audio-decoder-applemedia = Dekoder dźwięku Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Dekoder dźwięku Windows Media Framework
 about-processes-utility-actor-mf-media-engine = Moduł CDM mechanizmu Windows Media Foundation Media Engine
-# "Oracle" refers to an internal Waterfox process and should be kept in English
-about-processes-utility-actor-js-oracle = Oracle języka JavaScript
+# "Oracle" refers to an internal Firefox process and should be kept in English
+about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Narzędzia systemu Windows
 about-processes-utility-actor-windows-file-dialog = Okno otwierania pliku w systemie Windows
 

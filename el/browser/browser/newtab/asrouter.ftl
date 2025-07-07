@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } χρήστες
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Συγχρονίστε παντού τους σελιδοδείκτες σας.
 cfr-doorhanger-bookmark-fxa-body = Εξαιρετική ανακάλυψη! Μην ξεχάσετε να αποθηκεύσετε αυτόν τον σελιδοδείκτη στις κινητές συσκευές σας. Ξεκινήστε με έναν { -fxaccount-brand-name(case: "acc", capitalization: "lower") }.
@@ -119,10 +119,10 @@ cfr-doorhanger-video-support-primary-button = Ενημέρωση τώρα
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
-spotlight-public-wifi-vpn-header = Φαίνεται πως χρησιμοποιείτε δημόσιο Wi-Fi
+spotlight-public-wifi-vpn-header = Φαίνεται ότι χρησιμοποιείτε δημόσιο Wi-Fi
 spotlight-public-wifi-vpn-body = Για να αποκρύψετε την τοποθεσία και τη διαδικτυακή σας δραστηριότητα, δοκιμάστε ένα VPN. Θα σας προστατεύει κατά την περιήγηση από δημόσια μέρη, όπως αεροδρόμια και καφετέριες.
 spotlight-public-wifi-vpn-primary-button = Προστατέψτε το απόρρητό σας με το { -mozilla-vpn-brand-name }
     .accesskey = Π
@@ -168,20 +168,20 @@ mr2022-background-update-toast-primary-button-label = Άνοιγμα του { -b
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Υπενθύμιση αργότερα
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Δοκιμή
     .accesskey = Δ
 firefoxview-cfr-secondarybutton = Όχι τώρα
     .accesskey = χ
 firefoxview-cfr-header-v2 = Συνεχίστε γρήγορα από εκεί που σταματήσατε
-firefoxview-cfr-body-v2 = Βρείτε ξανά τις καρτέλες που έκλεισαν πρόσφατα και κάντε απρόσκοπτη εναλλαγή μεταξύ συσκευών με την { -firefoxview-brand-name }.
+firefoxview-cfr-body-v2 = Βρείτε ξανά τις καρτέλες που έκλεισαν πρόσφατα και κάντε απρόσκοπτη εναλλαγή μεταξύ συσκευών με την { -firefoxview-brand-name(case: "nom") }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
-firefoxview-spotlight-promo-title = Πείτε «γεια» στην { -firefoxview-brand-name }
+firefoxview-spotlight-promo-title = Πείτε «γεια» στην { -firefoxview-brand-name(case: "nom") }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
-firefoxview-spotlight-promo-subtitle = Θέλετε αυτήν την ανοικτή καρτέλα στο τηλέφωνό σας; Αρπάξτε την. Χρειάζεστε αυτόν τον ιστότοπο που μόλις επισκεφτήκατε; Πουφ, επέστρεψε με την { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-subtitle = Θέλετε αυτήν την ανοικτή καρτέλα στο τηλέφωνό σας; Αρπάξτε την. Χρειάζεστε αυτόν τον ιστότοπο που μόλις επισκεφτήκατε; Eπέστρεψε μαγικά με την { -firefoxview-brand-name(case: "nom") }.
 firefoxview-spotlight-promo-primarybutton = Δείτε πώς λειτουργεί
 firefoxview-spotlight-promo-secondarybutton = Παράλειψη
 
@@ -220,7 +220,7 @@ fox-doodle-pin-body = Ακολουθεί μια γρήγορη υπενθύμι�
 fox-doodle-pin-primary = Άνοιγμα συνδέσμων με το { -brand-short-name }
 fox-doodle-pin-secondary = Όχι τώρα
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>Τα PDF σας ανοίγουν πλέον στο { -brand-short-name }.</strong> Επεξεργαστείτε ή υπογράψτε φόρμες απευθείας από το πρόγραμμα περιήγησής σας. Για αλλαγή, αναζητήστε «PDF» στις ρυθμίσεις.
 set-default-pdf-handler-primary = Το κατάλαβα
@@ -245,6 +245,9 @@ device-migration-fxa-spotlight-older-device-primary-button = Δημιουργί�
 device-migration-fxa-spotlight-getting-new-device-header-2 = Νέα συσκευή στο μέλλον;
 device-migration-fxa-spotlight-getting-new-device-body-2 = Ακολουθήστε μερικά απλά βήματα για να έχετε μαζί σας τους σελιδοδείκτες, το ιστορικό και τους κωδικούς πρόσβασής σας όταν ξεκινάτε σε μια νέα συσκευή.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Δημιουργία αντιγράφων ασφαλείας δεδομένων
+device-migration-fxa-spotlight-sync-header = Περιηγηθείτε χωρίς να χάσετε λεπτό
+device-migration-fxa-spotlight-sync-body = Συγχρονίστε όλα τα σημαντικά δεδομένα σας με κρυπτογράφηση, όπως σελιδοδείκτες και κωδικούς πρόσβασης. Μπορείτε να φέρετε τα πάντα σε όποια συσκευή χρησιμοποιείτε το { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Ξεκινήστε
 
 ## Set as Default PDF Reader Infobar
 
@@ -281,3 +284,61 @@ tail-fox-spotlight-title = Κρατήστε μακριά τους ενοχλητ
 tail-fox-spotlight-subtitle = Πείτε αντίο στους ενοχλητικούς ιχνηλάτες διαφημίσεων και απολαύστε μια πιο ασφαλή και γρήγορη εμπειρία στο διαδίκτυο.
 tail-fox-spotlight-primary-button = Άνοιγμα συνδέσμων με το { -brand-short-name }
 tail-fox-spotlight-secondary-button = Όχι τώρα
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Οι παλαιότερες εκδόσεις του { -brand-short-name } ίσως αρχίσουν να έχουν προβλήματα στις 14 Ιανουαρίου 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Κάντε ενημέρωση για να συνεχίσετε τη χρήση του { -brand-short-name } μετά τις 14 Μαρτίου 2025.</strong>
+root-certificate-succession-infobar-link = Γιατί πρέπει να κάνω ενημέρωση;
+root-certificate-succession-infobar-primary-button =
+    .label = Ενημέρωση τώρα
+    .accesskey = Ε
+root-certificate-succession-infobar-secondary-button =
+    .label = Αργότερα
+    .accesskey = Α
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Χάσατε μια σημαντική ενημέρωση του { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Ορισμένα τμήματα του προγράμματος περιήγησης θα σταματήσουν να λειτουργούν σύντομα αν δεν κάνετε ενημέρωση. Τώρα είναι η κατάλληλη στιγμή να λάβετε τις πιο πρόσφατες λύσεις προστασίας και λειτουργίες μας.
+root-certificate-windows-background-notification-learn-more-button = Μάθετε περισσότερα
+root-certificate-windows-background-notification-update-button = Ενημέρωση του { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Κλείσιμο
+    .aria-label = Κλείσιμο
+fxa-menu-message-sign-up-button = Εγγραφή
+fxa-menu-message-sync-devices-primary-text = Συγχρονισμός με όλες τις συσκευές σας
+fxa-menu-message-sync-devices-secondary-text = Λάβετε άμεσα τα δεδομένα σας, όπως σελιδοδείκτες και κωδικούς πρόσβασης, σε οποιαδήποτε συσκευή με το { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Συγχρονισμός με όλες τις συσκευές σας
+fxa-menu-message-backup-data-primary-text = Αντίγραφα δεδομένων του προγράμματος περιήγησής σας
+fxa-menu-message-backup-data-secondary-text = Προστατέψτε αυτόματα τους σελιδοδείκτες, τους κωδικούς πρόσβασης και άλλα δεδομένα σε όλες τις συσκευές σας.
+fxa-menu-message-backup-data-collapsed-text = Αντίγραφα δεδομένων προγράμματος περιήγησης
+fxa-menu-message-backup-sync-primary-text = Προστασία και συγχρονισμός δεδομένων
+fxa-menu-message-backup-sync-secondary-text = Το Sync δημιουργεί αντίγραφα ασφαλείας των περισσότερων δεδομένων σας, ώστε να έχετε πρόσβαση σε αυτά από οποιαδήποτε συσκευή με το { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Συγχρονισμός και αντίγραφα δεδομένων
+fxa-menu-message-mobile-primary-text = Αποστολή καρτελών στο τηλέφωνό σας
+fxa-menu-message-mobile-secondary-text = Συνεχίστε από εκεί που σταματήσατε όταν συγχρονίζετε τις καρτέλες σας με μια κινητή συσκευή.
+fxa-menu-message-mobile-collapsed-text = Συγχρονισμός με το τηλέφωνό σας
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Καλώς ορίσατε και πάλι
+multi-cta-fox-doodle-set-default-checkbox = Ορισμός του { -brand-short-name } ως προεπιλογή
+multi-cta-fox-doodle-pin-startmenu-checkbox = Καρφίτσωμα του { -brand-short-name } στο μενού έναρξης
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Διατήρηση του { -brand-short-name } στο Dock
+       *[other] Καρφίτσωμα του { -brand-short-name } στη γραμμή εργασιών
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Έναρξη περιήγησης
+multi-cta-fox-doodle-main-browser-primary-button-label = Ορισμός του { -brand-short-name } ως προεπιλογής
+multi-cta-fox-doodle-quick-reminder-subtitle = Ακολουθεί μια γρήγορη υπενθύμιση ότι μπορείτε να έχετε το αγαπημένο σας πρόγραμμα περιήγησης που έχει ως επίκεντρο το απόρρητό σας, μόνο ένα κλικ μακριά.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Κρατήστε σε απόσταση ενός κλικ το αγαπημένο σας πρόγραμμα περιήγησης, που δίνει έμφαση στο απόρρητο. Ορίστε το { -brand-short-name } ως προεπιλογή για το άνοιγμα συνδέσμων και τοποθετήστε το στο Dock σας.
+       *[other] Κρατήστε σε απόσταση ενός κλικ το αγαπημένο σας πρόγραμμα περιήγησης, που δίνει έμφαση στο απόρρητο. Ορίστε το { -brand-short-name } ως προεπιλογή για το άνοιγμα συνδέσμων και καρφιτσώστε το στη γραμμή εργασιών σας.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Κρατήστε σε απόσταση ενός κλικ το αγαπημένο σας πρόγραμμα περιήγησης, που δίνει έμφαση στο απόρρητο. Ορίστε το { -brand-short-name } ως προεπιλογή για το άνοιγμα συνδέσμων και καρφιτσώστε το στη γραμμή εργασιών και το μενού «Έναρξη» σας.

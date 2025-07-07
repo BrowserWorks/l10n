@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -37,7 +37,7 @@ about-networking-bytes-received = 接收的位元組數
 about-networking-logging = 紀錄
 about-networking-dns-lookup = DNS 查詢
 about-networking-dns-lookup-button = 解析
-about-networking-dns-domain = 網域:
+about-networking-dns-domain = 網域：
 about-networking-dns-lookup-table-column = IP
 about-networking-dns-https-rr-lookup-table-column = HTTP RRs
 about-networking-rcwn = RCWN 統計

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,8 @@ return-to-amo-subtitle = Ótimo, você instalou o { -brand-short-name }
 return-to-amo-addon-title = Agora experimente o <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Adicionar a extensão
 return-to-amo-add-theme-label = Adicionar o tema
+return-to-amo-theme-install-complete-label = Tema instalado
+return-to-amo-extension-install-complete-label = Extensão instalada
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -44,9 +46,9 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Progresso: passo { $current } de { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Desativar animações
-# String for the Waterfox Accounts button
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Entrar
-# The primary import button label will depend on whether we can detect which browser was used to download Waterfox.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importar do { $previous }
@@ -138,7 +140,7 @@ mr2022-onboarding-live-language-continue-in = Continuar em { $appLanguage }
 onboarding-live-language-secondary-cancel-download = Cancelar
 onboarding-live-language-skip-button-label = Ignorar
 
-## Waterfox 100 Thank You screens
+## Firefox 100 Thank You screens
 
 # "Hero Text" displayed on left side of welcome screen. This text can be
 # formatted to span multiple lines as needed. The <span data-l10n-name="zap">
@@ -173,35 +175,37 @@ mr2022-onboarding-easy-setup-set-default-checkbox-label = Definir o { -brand-sho
 # Import action checkbox label used on new user onboarding first screen
 mr2022-onboarding-easy-setup-import-checkbox-label = Importar do navegador anterior
 
-## MR2022 New User Pin Waterfox screen strings
+## MR2022 New User Pin Firefox screen strings
 
-# Title used on about:welcome for new users when Waterfox is not pinned.
+# Title used on about:welcome for new users when Firefox is not pinned.
 # In this context, open up is synonymous with "Discover".
-# The metaphor is that when they open their Waterfox browser, it helps them discover an amazing internet.
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Abra-se uma internet incrível
-# Subtitle is used on onboarding page for new users page when Waterfox is not pinned
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = Inicie o { -brand-short-name } de qualquer lugar com um único clique. Toda vez que faz isso, você está escolhendo uma web mais aberta e independente.
-# Primary button string used on welcome page for when Waterfox is not pinned.
+# Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Manter o { -brand-short-name } no Dock
        *[other] Fixar o { -brand-short-name } na barra de tarefas
     }
-# Subtitle will be used when user already has Waterfox pinned, but
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = Fixar o { -brand-short-name } na barra de tarefas e no menu Iniciar
+# Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-set-default-only-subtitle = Comece com um navegador respaldado por uma organização sem fins lucrativos. Defendemos sua privacidade enquanto você passeia pela web.
 
-## MR2022 Existing User Pin Waterfox Screen Strings
+## MR2022 Existing User Pin Firefox Screen Strings
 
-# Title used on multistage onboarding page for existing users when Waterfox is not pinned
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-header = Obrigado por gostar do { -brand-product-name }
-# Subtitle is used on onboarding page for existing users when Waterfox is not pinned
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
 mr2022-onboarding-existing-pin-subtitle = Inicie uma internet mais saudável de qualquer lugar com um único clique. Nossa versão mais recente está repleta de novidades que achamos que você vai adorar.
 # Subtitle will be used on the welcome screen for existing users
-# when they already have Waterfox pinned but not set as default
+# when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Use um navegador que defende sua privacidade enquanto você passeia pela web. Nossa versão mais recente está repleta de coisas que você adora.
 mr2022-onboarding-existing-pin-checkbox-label = Adicione também a navegação privativa do { -brand-short-name }
 
@@ -216,14 +220,16 @@ mr2022-onboarding-set-default-subtitle = Use um navegador respaldado por uma org
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
-## when Waterfox is already set to default and pinned.
+## when Firefox is already set to default and pinned.
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
 mr2022-onboarding-get-started-primary-subtitle = Nossa versão mais recente foi construída com base em vocês, tornando mais fácil do que nunca passear pela web. Está repleto de recursos que achamos que você vai adorar.
 mr2022-onboarding-get-started-primary-button-label = Configure em segundos
 
-## MR2022 Import Settings screen strings
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
 
 mr2022-onboarding-import-header = Configuração extremamente rápida
 mr2022-onboarding-import-subtitle = Configure o { -brand-short-name } como você quiser. Adicione favoritos, senhas e muito mais do seu navegador antigo.
@@ -275,7 +281,7 @@ mr2022-onboarding-mobile-download-cta-text = Aponte a câmera do celular para o 
 mr2022-onboarding-no-mobile-download-cta-text = Aponte a câmera para o código QR para instalar o { -brand-product-name } em dispositivos móveis.
 
 ## MR2022 Upgrade Dialog screens
-## Pin private window screen shown only for users who don't have Waterfox private pinned
+## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Tenha liberdade de navegação privativa em apenas um clique
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Não salva cookies nem histórico, direto da sua área de trabalho. Navegue como se ninguém estivesse vendo.
@@ -335,6 +341,14 @@ onboarding-device-migration-subtitle = Entre na sua { -fxaccount-brand-name(capi
 onboarding-device-migration-subtitle2 = Entre na sua conta para ter seus favoritos, senhas e histórico em seu novo dispositivo.
 onboarding-device-migration-primary-button-label = Entrar
 
+## Add-ons Picker screen
+
+amo-picker-title = Personalize seu { -brand-short-name }
+amo-picker-subtitle = Extensões são como aplicativos em seu navegador. Elas permitem que você proteja senhas, baixe vídeos, encontre ofertas, bloqueie anúncios chatos, mude a aparência do navegador e muito mais.
+amo-picker-install-button-label = Adicionar ao { -brand-short-name }
+amo-picker-install-complete-label = Instalado
+amo-picker-collection-link = Explorar mais extensões
+
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
@@ -346,6 +360,11 @@ onboarding-mobile-download-security-and-privacy-subtitle = Quando você usa a si
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } protege você
 onboarding-gratitude-security-and-privacy-subtitle = Obrigado por usar o { -brand-short-name }, respaldado pela Fundação BrowserWorks. Com seu apoio, estamos trabalhando para tornar a internet mais segura e acessível a todos.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Sincronize seus dados entre dispositivos
+onboarding-sign-up-description = Crie uma conta e todas as suas informações importantes (senhas, favoritos e outros dados) são armazenadas com segurança e ficam disponíveis quando você entra na conta em qualquer dispositivo.
+onboarding-sign-up-button = Entrar na sua conta ou criar uma
+onboarding-sign-up-secondary-button = Iniciar navegação
 
 ## New user time and familiarity survey strings
 
@@ -365,3 +384,92 @@ onboarding-new-user-survey-familiarity-based-option-1 = Acabei de começar
 onboarding-new-user-survey-familiarity-based-option-2 = Já usei um pouco
 onboarding-new-user-survey-familiarity-based-option-3 = Estou muito familiarizado
 onboarding-new-user-survey-familiarity-based-option-4 = Já usei, mas faz um tempo
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Diga onde você prefere ter suas abas
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Mude quando quiser nas configurações do painel lateral.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Suas abas, do seu jeito
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Mantém muitas abas abertas? Experimente colocar as abas na lateral para ter uma visão mais simplificada. Ou mantenha o clássico com abas na parte superior. Mude quando quiser.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Escolha uma disposição de abas
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Para uma visão simplificada que pode ajudar você a manter o foco, experimente suas abas na lateral. Ou mantenha o clássico com abas na parte superior. Mude quando quiser.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Abas na lateral
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Abas no alto
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Chegou a opção de abas na vertical
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Apresentamos abas na vertical
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Experimente suas abas na lateral. Mude quando quiser nas configurações do painel lateral.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Experimentar abas na vertical
+onboarding-flair-text = Novidade!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Manter abas na horizontal
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = Uma janela do navegador com abas ao lado, no painel lateral do { -brand-shorter-name }.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = Uma janela do navegador com abas ao lado, no painel lateral do { -brand-shorter-name }.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Uma janela do navegador com abas na parte superior.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Uma janela do navegador com abas na parte superior.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Experimente um chatbot de inteligência artificial no painel lateral
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Resuma conteúdo, tenha ideias, rascunhe mensagens, tudo isso enquanto navega. Escolha entre vários provedores. Mude quando quiser. <a data-l10n-name="learn-more">Saiba mais</a>
+onboarding-genai-sidebar-primary-button = Escolha um chatbot
+onboarding-genai-sidebar-secondary-button = Iniciar navegação
+
+## New user onboarding checklist
+
+onboarding-checklist-title = Conclua a configuração do { -brand-short-name }
+onboarding-checklist-subtitle = Complete estas etapas para aproveitar ao máximo sua experiência de navegação.
+onboarding-checklist-set-default = Defina o { -brand-short-name } como navegador padrão
+onboarding-checklist-pin = Fixe o { -brand-short-name } na barra de tarefas
+onboarding-checklist-import = Importe do navegador anterior
+onboarding-checklist-extension = Adicione uma extensão
+onboarding-checklist-sign-up = Entre na sua conta ou crie uma
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Experimente grupos de abas para reduzir a desordem e aumentar a concentração.
+tab-groups-onboarding-feature-callout-subtitle = Organize-se arrastando uma aba sobre outra para criar seu primeiro grupo.
+tab-groups-onboarding-create-group-title-2 = Encontre aqui seus grupos de abas quando quiser.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Encontre seus grupos procurando na barra de endereços.
+tab-groups-onboarding-saved-groups-title-2 = Grupos de abas fechados podem ser reabertos aqui sempre que precisar.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Encontre grupos fechados, procurando na barra de endereços.
+tab-groups-onboarding-session-restore-title = Reabra aqui seus grupos de abas quando quiser.
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = Apresentamos perfis do { -brand-product-name }
+multi-profile-spotlight-body = Alterne facilmente entre navegação de trabalho ou diversão. Perfis mantêm suas informações de navegação totalmente separadas, inclusive histórico de pesquisa e senhas, para você se manter organizado.
+multi-profile-spotlight-cta = Criar um perfil
+multi-profile-callout-title = Crie perfis diferentes para trabalho e diversão
+multi-profile-callout-subtitle = Perfis permitem manter suas informações de navegação, como o histórico de pesquisa e as senhas, totalmente separadas.
+multi-profile-callout-cta = Criar perfil
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Instale, sincronize e pronto!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Capture o código QR para instalar o { -brand-product-name } para dispositivos móveis. Após instalar, selecione “Sincronizar com dispositivos móveis” para acessar suas senhas, favoritos e muito mais em qualquer lugar.
+dismiss-button-label = Descartar
+sync-to-mobile-button-label = Sincronização com dispositivos móveis
+desktop-to-mobile-qr-code-alt =
+    .aria-label = Código QR para baixar o { -brand-product-name } para dispositivos móveis

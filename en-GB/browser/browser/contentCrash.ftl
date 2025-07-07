@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,7 +6,6 @@
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { -brand-product-name } know about this issue and get it fixed faster, please submit a report.
-
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -32,3 +31,20 @@ pending-crash-reports-send =
     .label = Send
 pending-crash-reports-always-send =
     .label = Always send
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message-new =
+    { $reportCount ->
+        [one] You have an unsent crash report related to crashes being investigated, sending it will help us improve { -brand-product-name }. Closing this notification will ignore this report.
+       *[other] You have { $reportCount } unsent crash reports related to crashes being investigated, sending them will help us improve { -brand-product-name }. Closing this notification will ignore these reports.
+    }
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message =
+    { $reportCount ->
+        [one] You have an unsent crash report that matches crashes being investigated, sending it will help us improve { -brand-product-name }. Closing this notification will ignore this report.
+       *[other] You have { $reportCount } unsent crash reports that matches crashes being investigated, sending it will help us improve { -brand-product-name }. Closing this notification will ignore these reports.
+    }
+requested-crash-reports-dont-show-again =
+    .label = Don’t show again
+    .accesskey = D

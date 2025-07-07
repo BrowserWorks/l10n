@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,15 +22,11 @@ about-config-caution-text =
         [with-cases] Změny v těchto předvolbách mohou negativně ovlivnit výkon a bezpečnost { -brand-short-name(case: "gen") }.
        *[no-cases] Změny v těchto předvolbách mohou negativně ovlivnit výkon a bezpečnost aplikace { -brand-short-name }.
     }
-
 about-config-page-title = Pokročilá konfigurace
-
 about-config-search-input1 =
     .placeholder = Hledat podle názvu předvolby
 about-config-show-all = Zobrazit vše
-
 about-config-show-only-modified = Zobrazit pouze změněné předvolby
-
 about-config-pref-add-button =
     .title = Přidat
 about-config-pref-toggle-button =

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -85,6 +85,13 @@ client-auth-cert-details-issued-by = Kibocsátó: { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Tárolva ezen: { $storedOn }
+client-auth-cert-remember-label = Döntés megjegyzése:
+client-auth-cert-remember-never =
+    .label = Egyszer
+client-auth-cert-remember-always =
+    .label = Véglegesen
+client-auth-cert-remember-temporarily =
+    .label = Ebben a munkamenetben
 client-auth-cert-remember-box =
     .label = A döntés megjegyzése
 

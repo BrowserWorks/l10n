@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,7 +27,7 @@ about-private-browsing-get-privacy = Få ivaretaking av personvernet overalt der
 about-private-browsing-hide-activity-1 = Gøym nettlesaraktivitet og plasseringa di med { -mozilla-vpn-brand-name }. Eitt klikk skapar ei trygg tilkopling, sjølv på offentleg Wi-Fi.
 about-private-browsing-prominent-cta = Hald deg privat med { -mozilla-vpn-brand-name }
 about-private-browsing-focus-promo-cta = Last ned { -focus-brand-name }
-about-private-browsing-focus-promo-header = { -focus-brand-name }: Privat nettlesing medan du er på farten
+about-private-browsing-focus-promo-header = { -focus-brand-name }: Privat nettlesing medan du er på farta
 about-private-browsing-focus-promo-text = Vår dedikerte mobilapp for privat nettlesing slettar historikken og infokapslane kvar gong.
 
 ## The following strings will be used for experiments in Fx99 and Fx100

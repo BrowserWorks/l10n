@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -9,7 +9,7 @@ places-open-in-tab =
     .label = Opne i ny fane
     .accesskey = O
 places-open-in-container-tab =
-    .label = Opne i ny innhaldsfane
+    .label = Opne i ny behaldarfane
     .accesskey = O
 places-open-all-bookmarks =
     .label = Opne alle bokmerke
@@ -98,7 +98,7 @@ places-delete-page =
            *[other] Slett sider
         }
     .accesskey = S
-# Managed bookmarks are created by an administrator and cannot be changed by the user.
+# Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
     .label = Administrerte bokmerke
 # This label is used when a managed bookmarks folder doesn't have a name.

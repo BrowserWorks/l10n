@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = เริ่มการทำงานใหม่
 perftools-button-add-directory = เพิ่มไดเร็กทอรี
 perftools-button-remove-directory = เอาที่เลือกออก
 perftools-button-edit-settings = แก้ไขการตั้งค่า…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = การกระทำเพิ่มเติม
+perftools-menu-more-actions-restart-with-profiling = เริ่ม { -brand-shorter-name } ใหม่พร้อมเปิดใช้งานการทำโปรไฟล์ตอนเริ่มโปรแกรม
+perftools-menu-more-actions-copy-for-startup = คัดลอกตัวแปรสภาพแวดล้อมสำหรับการทำโปรไฟล์ตอนเริ่มโปรแกรม
+perftools-menu-more-actions-copy-for-perf-tests = คัดลอกพารามิเตอร์สำหรับการทดสอบประสิทธิภาพ
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -146,6 +154,8 @@ perftools-presets-networking-description = ค่าที่ตั้งล่�
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = พลังงาน
 perftools-presets-power-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับการใช้พลังงานใน { -brand-shorter-name } โดยมีโอเวอร์เฮดต่ำ
+perftools-presets-debug-label = ดีบั๊ก
+perftools-presets-debug-description = พรีเซ็ตสำหรับการดีบั๊กใน { -brand-shorter-name }  มีโอเวอร์เฮดสูง อย่าใช้เพื่องานด้านประสิทธิภาพ แต่ให้ใช้เพื่อทำความเข้าใจพฤติกรรมการทำงานของเบราว์เซอร์
 perftools-presets-custom-label = กำหนดเอง
 
 ##

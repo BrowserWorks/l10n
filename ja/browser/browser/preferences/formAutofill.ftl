@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -77,11 +77,11 @@ autofill-address-suburb = 地区
 
 ## address-level-1 names
 
-autofill-address-province = 県
+autofill-address-province = 州/省/県
 autofill-address-state = 州
-autofill-address-county = 国
+autofill-address-county = 郡
 # Used in BB, JM
-autofill-address-parish = 郡
+autofill-address-parish = 教区
 # Used in JP
 autofill-address-prefecture = 都道府県
 # Used in HK
@@ -89,9 +89,9 @@ autofill-address-area = 地区
 # Used in KR
 autofill-address-do-si = 道/市
 # Used in NI, CO
-autofill-address-department = 管区
+autofill-address-department = 県
 # Used in AE
-autofill-address-emirate = 管轄区
+autofill-address-emirate = 首長国
 # Used in RU and UA
 autofill-address-oblast = 州
 
@@ -103,8 +103,6 @@ autofill-address-postal-code = 郵便番号
 autofill-address-zip = ZIP Code
 # Used in IE
 autofill-address-eircode = Eircode
-
-##
 
 ##
 
@@ -121,7 +119,7 @@ autofill-country-warning-message = 現在、フォーム自動入力機能は特
 autofill-add-new-card-title = 新しいクレジットカード情報の追加
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = クレジットカード情報の編集
-# In macOS, this string is preceded by the operating system with "Waterfox is trying to ",
+# In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
     { PLATFORM() ->

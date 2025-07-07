@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = Tabbladen leegmaken en proces beëindigen
+about-processes-kill-process =
+    .title = Proces beëindigen
 about-processes-shutdown-tab =
     .title = Tabblad sluiten
 # Profiler icons
@@ -51,6 +53,7 @@ about-processes-remote-sandbox-broker-process = Remote Sandbox Broker ({ $pid })
 about-processes-fork-server-process = Forkserver ({ $pid })
 about-processes-preallocated-process = Vooraf toegewezen ({ $pid })
 about-processes-utility-process = Hulpprogramma ({ $pid })
+about-processes-inference-process = Conclusie ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -124,7 +127,7 @@ about-processes-utility-actor-audio-decoder-generic = Generieke audiodecoder
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media-audiodecoder
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework-audiodecoder
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
 about-processes-utility-actor-windows-file-dialog = Windows-bestandsdialoogvenster

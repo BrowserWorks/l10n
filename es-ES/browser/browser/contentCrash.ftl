@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -6,7 +6,6 @@
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>Parte de esta página falló.</strong> Para que { -brand-product-name } sepa sobre este problema y se arregle más rápido, por favor envíe un informe.
-
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -32,3 +31,13 @@ pending-crash-reports-send =
     .label = Enviar
 pending-crash-reports-always-send =
     .label = Enviar siempre
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message =
+    { $reportCount ->
+        [one] Tiene { $reportCount } informe de fallos no enviado que coincide con errores que están siendo investigados, enviarlo nos ayudará a mejorar { -brand-product-name }. Cerrar esta notificación ignorará este informe.
+       *[other] Tiene { $reportCount } informes de fallos no enviados que coinciden con errores que están siendo investigados, enviarlos nos ayudará a mejorar { -brand-product-name }. Cerrar esta notificación ignorará estos informes.
+    }
+requested-crash-reports-dont-show-again =
+    .label = No volver a mostrar
+    .accesskey = N

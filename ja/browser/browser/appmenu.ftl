@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -27,6 +27,10 @@ appmenuitem-downloads =
     .label = ダウンロード
 appmenuitem-passwords =
     .label = パスワード
+appmenuitem-extensions-and-themes =
+    .label = 拡張機能とテーマ
+appmenuitem-extensions =
+    .label = 拡張機能
 appmenuitem-addons-and-themes =
     .label = アドオンとテーマ
 appmenuitem-print =
@@ -63,7 +67,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 全画面表示
 
-## Waterfox Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = ログインして同期...
@@ -84,7 +88,7 @@ appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あ�
 appmenu-remote-tabs-opensettings =
     .label = 設定
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Waterfox for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 他の端末のタブを表示しますか？
 appmenu-remote-tabs-connectdevice =
     .label = 他の端末を接続
@@ -104,8 +108,11 @@ appmenu-fxa-sync-and-save-data2 = 同期してデータを保存
 appmenu-fxa-signed-in-label = ログイン
 appmenu-fxa-setup-sync =
     .label = 同期をオンにする...
+appmenu-fxa-setup-sync-new = オンにする
 appmenuitem-save-page =
     .label = 名前を付けてページを保存...
+appmenuitem-fxa-sync-off-title = 同期はオフです
+appmenuitem-fxa-sync-off-description = ブックマークやパスワードなどを保護し、どこからでもアクセスできるようにしましょう。
 
 ## What's New panel in App menu.
 
@@ -116,7 +123,7 @@ whatsnew-panel-footer-checkbox =
     .label = 新機能を通知する
     .accesskey = f
 
-## The Waterfox Profiler – The popup is the UI to turn on the profiler, and record
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
@@ -163,9 +170,11 @@ profiler-popup-capture-shortcut =
 ## Profiler presets
 ## They are shown in the popup's select box.
 
+
 # Presets and their l10n IDs are defined in the file
 # devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
+
 
 # Presets and their l10n IDs are defined in the file
 # devtools/client/performance-new/shared/background.sys.mjs
@@ -183,6 +192,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットです。
 profiler-popup-presets-media-label =
     .label = メディア
+profiler-popup-presets-ml-description = { -brand-shorter-name } の機械学習のバグを調査するための推奨プリセットです。
+profiler-popup-presets-ml-label =
+    .label = 機械学習
 profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
 profiler-popup-presets-networking-label =
     .label = ネットワーク
@@ -271,5 +283,20 @@ appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = データ漏洩の警告を受け取ります
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = 実際のメールアドレスと電話番号を隠します
+appmenuitem-services-relay-description = メールマスクダッシュボードを起動します
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description = ユーザーのオンラインプライバシーを保護します
+appmenu-services-header = マイサービス
+appmenu-other-protection-header = { -vendor-short-name } が提供する他の保護ツールをお試しください:
+
+## Profiles panel
+
+appmenu-other-profiles = 他のプロファイル
+appmenu-manage-profiles =
+    .label = プロファイルを管理
+appmenu-create-profile =
+    .label = 新しいプロファイル
+appmenu-edit-profile =
+    .aria-label = プロファイルを編集
+appmenu-profiles-2 =
+    .label = プロファイル

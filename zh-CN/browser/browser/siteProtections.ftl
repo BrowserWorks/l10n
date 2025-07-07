@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -84,5 +84,5 @@ protections-footer-blocked-tracker-counter = 已拦截 { $trackerCount } 个
 # It should be the same as protections-footer-blocked-tracker-counter;
 # this message is used to leave out the tooltip when the date is not available.
 protections-footer-blocked-tracker-counter-no-tooltip = 已拦截 { $trackerCount } 个
-# In English this looks like "Waterfox blocked over 10,000 trackers since October 2019"
+# In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
 protections-milestone = 自{ DATETIME($date, year: "numeric", month: "long") }起，{ -brand-short-name } 拦截了超过 { $trackerCount } 个跟踪器

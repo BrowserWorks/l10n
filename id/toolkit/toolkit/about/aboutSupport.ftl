@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,7 +15,14 @@ support-addons-type = Tipe
 support-addons-enabled = Diaktifkan
 support-addons-version = Versi
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = Lokasi
+legacy-user-stylesheets-title = Stylesheet Pengguna Lawas
 legacy-user-stylesheets-enabled = Aktif
+legacy-user-stylesheets-stylesheet-types = Stylesheet
+legacy-user-stylesheets-no-stylesheets-found = Tidak ada stylesheet ditemukan
 security-software-title = Perangkat Lunak Keamanan
 security-software-type = Jenis
 security-software-name = Nama
@@ -75,6 +82,7 @@ app-basics-key-mozilla = Kunci Layanan Lokasi BrowserWorks
 app-basics-safe-mode = Mode Aman
 app-basics-memory-size = Ukuran Memori (RAM)
 app-basics-disk-available = Kapasitas Disk Tersedia
+app-basics-pointing-devices = Perangkat Penunjuk
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -175,9 +183,30 @@ media-capabilities-enumerate = Daftar basis data
 
 ## Codec support table
 
+media-codec-support-sw-decoding = Dekode Perangkat Lunak
 media-codec-support-hw-decoding = Dekode Perangkat Keras
+media-codec-support-codec-name = Nama Codec
 media-codec-support-supported = Didukung
 media-codec-support-unsupported = Tidak didukung
+media-codec-support-error = Informasi dukungan codec tidak tersedia. Coba lagi setelah memutar berkas media.
+media-codec-support-lack-of-extension = Pasang ekstensi
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informasi Modul Dekripsi Konten
+media-key-system-name = Nama Sistem Kunci
+media-video-robustness = Kekokohan Video
+media-audio-robustness = Kekokohan Audio
+media-cdm-capabilities = Kemampuan
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Clear Lead
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Kompatibel dengan HDCP 2.2
 
 ##
 
@@ -193,7 +222,7 @@ intl-regional-prefs = Pengaturan Regional
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
@@ -237,6 +266,7 @@ try-newer-driver = Diblokir untuk versi penggerak grafik Anda. Coba perbarui pen
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Parameter ClearType
 compositing = Compositing
+support-font-determination = Info Debug Visibilitas Font
 hardware-h264 = Dekode H264 Perangkat Keras
 main-thread-no-omtc = thread utama, tanpa OMTC
 yes = Ya
@@ -272,6 +302,8 @@ webgl2-renderer = Perender WebGL2
 webgl2-version = Versi Penggerak WebGL 2
 webgl2-driver-extensions = Ekstensi Penggerak WebGL 2
 webgl2-extensions = Ekstensi WebGL 2
+webgpu-default-adapter = Adaptor Baku WebGPU
+webgpu-fallback-adapter = Adaptor Pengganti WebGPU
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Dicekal karena masalah yang diketahui: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -296,6 +328,9 @@ has-seccomp-bpf = Seccomp-BPF (Pemfilteran Pemanggilan Sistem - System Call Filt
 has-seccomp-tsync = Sinkronisasi Utas Seccomp
 has-user-namespaces = Ruang Nama Pengguna
 has-privileged-user-namespaces = Ruang Nama Pengguna untuk proses istimewa
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Fitur ini tidak diizinkan oleh sistem Anda. Hal ini dapat membatasi fungsi fitur keamanan { -brand-short-name }.
 can-sandbox-content = Sandbox Proses Konten
 can-sandbox-media = Media Plugin Sandboxing
 content-sandbox-level = Tingkat Proses Konten Sandbox
@@ -364,6 +399,20 @@ support-printing-modified-settings = Pengaturan cetak yang diubah
 support-printing-prefs-name = Nama
 support-printing-prefs-value = Nilai
 
+## Remote Settings sections
+
+support-remote-settings-title = Pengaturan Jarak Jauh
+support-remote-settings-status = Status
+support-remote-settings-status-ok = Oke
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Tidak berfungsi
+support-remote-settings-last-check = Pemeriksaan terakhir
+support-remote-settings-local-timestamp = Stempel waktu lokal
+support-remote-settings-sync-history = Riwayat
+support-remote-settings-sync-history-status = Status
+support-remote-settings-sync-history-datetime = Tanggal
+support-remote-settings-sync-history-infos = Info
+
 ## Normandy sections
 
 support-remote-experiments-title = Eksperimen Jarak Jauh
@@ -373,3 +422,22 @@ support-remote-experiments-see-about-studies = Lihat <a data-l10n-name="support-
 support-remote-features-title = Fitur Jarak Jauh
 support-remote-features-name = Nama
 support-remote-features-status = Status
+
+## Pointing devices
+
+pointing-device-mouse = Mouse
+pointing-device-touchscreen = Layar Sentuh
+pointing-device-pen-digitizer = Digitizer Pen
+pointing-device-none = Tidak ada alat penunjuk
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Analisis Konten (DLP)
+content-analysis-active = Aktif
+content-analysis-connected-to-agent = Tersambung dengan Agen
+content-analysis-agent-path = Jalur Agen
+content-analysis-agent-failed-signature-verification = Verifikasi Tanda Tangan Agen Gagal
+content-analysis-request-count = Jumlah Permintaan

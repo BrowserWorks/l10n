@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,7 +18,7 @@ migration-wizard-selection-option-without-profile = { $sourceBrowser }
 # Variables:
 #  $sourceBrowser (String): the name of the browser to import from.
 #  $profileName (String): the name of the user profile to import from.
-migration-wizard-selection-option-with-profile = { $sourceBrowser } - { $profileName }
+migration-wizard-selection-option-with-profile = { $sourceBrowser } — { $profileName }
 
 # Each migrator is expected to include a display name string, and that display
 # name string should have a key with "migration-wizard-migrator-display-name-"
@@ -36,7 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = 旧版 Microsoft Edge
 migration-wizard-migrator-display-name-firefox = Waterfox
 migration-wizard-migrator-display-name-file-password-csv = CSV 文件中的密码
-migration-wizard-migrator-display-name-file-bookmarks = 从 HTML 文件导入书签
+migration-wizard-migrator-display-name-file-bookmarks = HTML 文件中的书签
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer（IE 浏览器）
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = 阅读列表（来自 Safari 浏览器�
 migration-imported-edge-reading-list = 阅读列表（来自 Edge）
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name } 无法访问此设备上安装的其他浏览器的配置文件。
@@ -184,6 +184,14 @@ migration-safari-password-import-step1 = 在 Safari 浏览器中，打开“Safa
 migration-safari-password-import-step2 = 点按 <img data-l10n-name="safari-icon-3dots"/> 按钮，然后选取“导出所有密码”
 migration-safari-password-import-step3 = 保存密码文件
 migration-safari-password-import-step4 = 使用下方的“选择文件”来选取您保存的密码文件
+migration-chrome-windows-password-import-header = 从 Chrome 导入密码的方法
+migration-chrome-windows-password-import-steps-header = 在 Chrome 中：
+migration-chrome-windows-password-import-step1 = 打开主菜单 <img data-l10n-name="chrome-icon-3dots"/>，前往“密码和自动填充”>“Google 密码管理工具”。
+migration-chrome-windows-password-import-step2 = 选择菜单中的“设置”。
+migration-chrome-windows-password-import-step3 = 选择“下载文件”并将其保存到设备。
+migration-chrome-windows-password-import-step4 = 回到此处，选择“选择文件”以完成导入。
+migration-manual-password-import-skip-button = 跳过
+migration-manual-password-import-select-button = 选择文件
 migration-safari-password-import-skip-button = 跳过
 migration-safari-password-import-select-button = 选择文件
 # Shown in the migration wizard after importing bookmarks from another
@@ -203,7 +211,7 @@ migration-wizard-progress-success-favorites = { $quantity } 个收藏
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.
@@ -239,8 +247,8 @@ migration-wizard-progress-success-passwords = { $quantity } 个密码
 #  $maxAgeInDays (Number): the maximum number of days of history that might be imported.
 migration-wizard-progress-success-history =
     { $maxAgeInDays ->
-        [one] 昨天以来
-       *[other] 过去 { $maxAgeInDays } 天
+        [one] 昨天以来的数据
+       *[other] 过去 { $maxAgeInDays } 天内的数据
     }
 migration-wizard-progress-success-formdata = 表单历史记录
 # Shown in the migration wizard after importing payment methods from another
@@ -249,6 +257,6 @@ migration-wizard-progress-success-formdata = 表单历史记录
 # Variables:
 #  $quantity (Number): the number of successfully imported payment methods
 migration-wizard-progress-success-payment-methods = { $quantity } 个付款方式
-migration-wizard-safari-permissions-sub-header = 如需导入 Safari 浏览器书签和历史记录：
+migration-wizard-safari-permissions-sub-header = 如需导入 Safari 浏览器书签和浏览历史：
 migration-wizard-safari-instructions-continue = 选择“继续”
 migration-wizard-safari-instructions-folder = 在列表中选择“Safari”文件夹，然后选取“打开”

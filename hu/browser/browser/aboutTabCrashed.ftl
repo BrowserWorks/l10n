@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,7 +16,7 @@ crashed-request-report-title = A lap jelentése
 crashed-send-report-2 = Automatikus összeomlás-bejelentés küldése, hogy megoldhassuk az ilyen problémákat
 crashed-comment =
     .placeholder = Választható hozzászólások (a hozzászólások nyilvánosak)
-crashed-include-URL-2 = Oldal URL-ek elküldése, ha a { -brand-short-name } összeomlik
+crashed-include-URL-2 = Oldalak webcímeinek elküldése, ha a { -brand-short-name } összeomlik
 crashed-report-sent = A hibajelentés már be lett küldve, köszönjük segítségét a { -brand-short-name } jobbá tételéhez!
 crashed-request-auto-submit-title = Háttérben lévő lapok jelentése
 crashed-auto-submit-checkbox-2 = Beállítások frissítése, hogy a jelentések automatikusan elküldésre kerüljenek, ha a { -brand-short-name } összeomlik

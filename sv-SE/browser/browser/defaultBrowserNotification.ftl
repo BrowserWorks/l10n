@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -14,7 +14,9 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = Gör { -brand-short-name } till din primära webbläsare?
 default-browser-prompt-message-pin = Ha alltid { -brand-short-name } nära till hands — gör den till din standardwebbläsare och fäst den i aktivitetsfältet.
+default-browser-prompt-message-pin-msix = Ha alltid { -brand-short-name } nära till hands — gör den till din standardwebbläsare och fäst den i aktivitetsfältet och startmenyn.
 default-browser-prompt-message-pin-mac = Ha alltid { -brand-short-name } nära till hands — gör den till din standardwebbläsare och behåll den i Dock.
+default-browser-prompt-button-primary-set = Ange som primär webbläsare
 default-browser-prompt-button-primary-pin = Gör till primär webbläsare
 default-browser-prompt-title-alt = Gör { -brand-short-name } till din standardwebbläsare?
 default-browser-prompt-message-alt = Få hastighet, säkerhet och integritet varje gång du surfar.

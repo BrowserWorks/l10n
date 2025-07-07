@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,9 +24,9 @@ graph-private-window = { -brand-short-name } fortset å  blokkere sporarar i pri
 graph-week-summary-private-window = Sporarar { -brand-short-name } blokkerte denne veka
 protection-report-webpage-title = Tryggingspanel
 protection-report-page-content-title = Tryggingspanel
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } kan ta vare på personvernet ditt bak kulissene medan du surfar. Dette er ei personleg oppsummering av desse verna, inkludert verktøy for å ta kontroll over sikkerheita di på nettet.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } tek vare på personvernet ditt bak kulissene medan du surfar. Dette er ei personleg oppsummering av desse verna, inkludert verktøy for å ta kontroll over sikkerheita di på nettet.
 protection-report-settings-link = Handsam personvern- og tryggingsinnstillingar
 etp-card-title-always = Utvida sporingsvern: Alltid på
@@ -81,7 +81,7 @@ lockwise-scanned-text-no-breached-logins =
     }
 lockwise-how-it-works-link = Korleis det fungerer
 monitor-title = Sjå opp for datalekkasjer.
-monitor-link = Korleis det verkar
+monitor-link = Korleis det fungerer
 monitor-header-content-no-account = SJekk { -monitor-brand-name } for å sjå om du har vore ein del av ein datalekkasje, og få varsel om nye datalekkasjar.
 monitor-header-content-signed-in = { -monitor-brand-name } åtvarar deg om informasjonen din har dukka opp i ein kjend datalekkasje.
 monitor-sign-up-link = Registrer deg for datalekkasjevarsel

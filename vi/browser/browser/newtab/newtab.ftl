@@ -1,18 +1,28 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Waterfox Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Thẻ mới
 newtab-settings-button =
     .title = Tùy biến trang thẻ mới
+newtab-customize-panel-icon-button =
+    .title = Tuỳ chỉnh trang này
+newtab-customize-panel-icon-button-label = Tùy chỉnh
+newtab-personalize-settings-icon-label =
+    .title = Cá nhân hóa thẻ mới
+    .aria-label = Cài đặt
+newtab-settings-dialog-label =
+    .aria-label = Cài đặt
 newtab-personalize-icon-label =
     .title = Cá nhân hóa thẻ mới
     .aria-label = Cá nhân hóa thẻ mới
 newtab-personalize-dialog-label =
     .aria-label = Cá nhân hóa
+newtab-logo-and-wordmark =
+    .aria-label = { -brand-full-name }
 
 ## Search box component.
 
@@ -109,6 +119,21 @@ newtab-menu-save-to-pocket = Lưu vào { -pocket-brand-name }
 newtab-menu-delete-pocket = Xóa khỏi { -pocket-brand-name }
 newtab-menu-archive-pocket = Lưu trữ trong { -pocket-brand-name }
 newtab-menu-show-privacy-info = Nhà tài trợ của chúng tôi và sự riêng tư của bạn
+newtab-menu-about-fakespot = Về { -fakespot-brand-name }
+# Report is a verb (i.e. report issue with the content).
+newtab-menu-report = Báo cáo
+# Context menu option to personalize New Tab recommended stories by blocking a section of stories,
+# e.g. "Sports". "Block" is a verb here.
+newtab-menu-section-block = Chặn
+# "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+# e.g. Following the travel section of stories.
+newtab-menu-section-unfollow = Bỏ theo dõi chủ đề
+
+## Context menu options for sponsored stories and new ad formats on New Tab.
+
+newtab-menu-manage-sponsored-content = Quản lý nội dung được tài trợ
+newtab-menu-our-sponsors-and-your-privacy = Nhà tài trợ của chúng tôi và sự riêng tư của bạn
+newtab-menu-report-this-ad = Báo cáo quảng cáo này
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -170,6 +195,8 @@ newtab-label-sponsored-by = Được tài trợ bởi { $sponsor }
 #   $source (string) - The name of a company or their domain
 #   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } phút
+# This string is used under fixed size ads to indicate sponsored content
+newtab-label-sponsored-fixed = Được tài trợ
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -200,6 +227,8 @@ newtab-section-header-recent-activity = Hoạt động gần đây
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Được đề xuất bởi { $provider }
 newtab-section-header-stories = Những câu chuyện kích động tư tưởng
+# "picks" refers to recommended articles
+newtab-section-header-todays-picks = Lựa chọn hôm nay dành cho bạn
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -230,7 +259,6 @@ newtab-pocket-learn-more = Tìm hiểu thêm
 newtab-pocket-cta-button = Sử dụng { -pocket-brand-name }
 newtab-pocket-cta-text = Lưu những câu chuyện bạn yêu thích trong { -pocket-brand-name } và vui vẻ khi đọc chúng.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } là một phần của gia đình { -brand-product-name }
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Lưu
 newtab-pocket-saved = Đã lưu
 
@@ -242,7 +270,9 @@ newtab-pocket-thumbs-up-tooltip =
 # Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
 newtab-pocket-thumbs-down-tooltip =
     .title = Không hợp với tôi
-newtab-toast-thumbs-up-or-down = Cảm ơn. Những phản hồi của bạn sẽ giúp chúng tôi cải thiện bản tin của bạn.
+# Used to show the user a message upon clicking the thumbs up or down buttons
+newtab-toast-thumbs-up-or-down2 =
+    .message = Cảm ơn. Những phản hồi của bạn sẽ giúp chúng tôi cải thiện bản tin của bạn.
 newtab-toast-dismiss-button =
     .title = Bỏ qua
     .aria-label = Bỏ qua
@@ -287,6 +317,9 @@ newtab-custom-recent-toggle =
 newtab-custom-weather-toggle =
     .label = Thời tiết
     .description = Sơ lược về dự báo hôm nay
+newtab-custom-trending-search-toggle =
+    .label = Tìm kiếm thịnh hành
+    .description = Các chủ đề phổ biến và được tìm kiếm thường xuyên
 newtab-custom-close-button = Đóng
 newtab-custom-settings = Quản lý các cài đặt khác
 
@@ -294,6 +327,12 @@ newtab-custom-settings = Quản lý các cài đặt khác
 
 newtab-wallpaper-title = Hình nền
 newtab-wallpaper-reset = Đặt lại về mặc định
+newtab-wallpaper-upload-image = Tải lên một ảnh
+newtab-wallpaper-custom-color = Chọn màu
+# Variables
+#   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
+newtab-wallpaper-error-max-file-size = Hình ảnh vượt quá giới hạn kích thước tập tin { $file_size }MB. Vui lòng thử tải lên một tập tin nhỏ hơn.
+newtab-wallpaper-error-file-type = Chúng tôi không thể tải lên tập tin của bạn. Vui lòng thử lại với loại tập tin khác.
 newtab-wallpaper-light-red-panda = Gấu trúc đỏ
 newtab-wallpaper-light-mountain = Núi trắng
 newtab-wallpaper-light-sky = Bầu trời với những đám mây màu tím và hồng
@@ -306,6 +345,8 @@ newtab-wallpaper-dark-panda = Gấu trúc đỏ ẩn trong rừng
 newtab-wallpaper-dark-sky = Cảnh quan thành phố với bầu trời đêm
 newtab-wallpaper-dark-mountain = Phong cảnh núi
 newtab-wallpaper-dark-city = Phong cảnh thành phố màu tím
+newtab-wallpaper-dark-fox-anniversary = Một chú cáo đứng trên vỉa hè gần khu rừng
+newtab-wallpaper-light-fox-anniversary = Một chú cáo trong cánh đồng xanh cỏ với phong cảnh núi non mờ sương
 
 ## Solid Colors
 
@@ -333,10 +374,14 @@ newtab-wallpaper-abstract-green = Hình dạng màu xanh lục
 newtab-wallpaper-abstract-blue = Hình dạng màu xanh dương
 newtab-wallpaper-abstract-purple = Hình dạng màu tím
 newtab-wallpaper-abstract-orange = Hình dạng màu cam
-newtab-wallpaper-gradient-orange = Gradient màu cam và màu hồng
+newtab-wallpaper-gradient-orange = Chuyển sắc màu cam và màu hồng
 newtab-wallpaper-abstract-blue-purple = Hình dạng màu xanh dương và màu tím
+newtab-wallpaper-abstract-white-curves = Màu trắng với các đường cong bóng mờ
+newtab-wallpaper-abstract-purple-green = Chuyển sắc ánh sáng tím và xanh lá cây
+newtab-wallpaper-abstract-blue-purple-waves = Hình dạng gợn sóng màu xanh dương và tím
+newtab-wallpaper-abstract-black-waves = Hình dạng gợn sóng màu đen
 
-## Photographs
+## Celestial
 
 newtab-wallpaper-category-title-photographs = Hình ảnh
 newtab-wallpaper-beach-at-sunrise = Bãi biển lúc bình minh
@@ -345,6 +390,12 @@ newtab-wallpaper-storm-sky = Trời giông bão
 newtab-wallpaper-sky-with-pink-clouds = Bầu trời với đám mây màu hồng
 newtab-wallpaper-red-panda-yawns-in-a-tree = Gấu trúc đỏ ngáp trên cây
 newtab-wallpaper-white-mountains = Núi trắng
+newtab-wallpaper-hot-air-balloons = Các loại màu của bóng bay không khí nóng vào ban ngày
+newtab-wallpaper-starry-canyon = Đêm sao màu xanh
+newtab-wallpaper-suspension-bridge = Ảnh cầu treo màu xám chụp vào ban ngày
+newtab-wallpaper-sand-dunes = Đồi cát trắng
+newtab-wallpaper-palm-trees = Hình bóng của cây cọ dừa trong giờ vàng
+newtab-wallpaper-blue-flowers = Ảnh chụp cận cảnh những bông hoa cánh xanh đang nở
 # Variables
 #   $author_string (String) - The name of the creator of the photo.
 #   $webpage_string (String) - The name of the webpage where the photo is located.
@@ -360,6 +411,19 @@ feature-highlight-wallpaper =
     .title = { -newtab-wallpaper-feature-highlight-header }
     .aria-label = { -newtab-wallpaper-feature-highlight-content }
 
+## Celestial
+
+# “Celestial” referring to astronomy; positioned in or relating to the sky,
+# or outer space as observed in astronomy.
+# Not to be confused with religious definition of the word.
+newtab-wallpaper-category-title-celestial = Thiên thể
+newtab-wallpaper-celestial-lunar-eclipse = Nguyệt thực
+newtab-wallpaper-celestial-earth-night = Ảnh ban đêm từ quỹ đạo thấp của Trái Đất
+newtab-wallpaper-celestial-starry-sky = Bầu trời đầy sao
+newtab-wallpaper-celestial-eclipse-time-lapse = Thời gian trôi nhanh của nguyệt thực
+newtab-wallpaper-celestial-black-hole = Minh họa lỗ đen trong thiên hà
+newtab-wallpaper-celestial-river = Hình ảnh vệ tinh của sông
+
 ## New Tab Weather
 
 # Variables:
@@ -370,6 +434,9 @@ newtab-weather-see-forecast =
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ Được tài trợ
 newtab-weather-menu-change-location = Thay đổi khu vực
+newtab-weather-change-location-search-input-placeholder =
+    .placeholder = Tìm kiếm khu vực
+    .aria-label = Tìm kiếm khu vực
 newtab-weather-change-location-search-input = Tìm kiếm khu vực
 newtab-weather-menu-weather-display = Cách hiển thị thời tiết
 # Display options are:
@@ -388,3 +455,129 @@ newtab-weather-menu-hide-weather = Ẩn thời tiết trên thẻ mới
 newtab-weather-menu-learn-more = Tìm hiểu thêm
 # This message is shown if user is working offline
 newtab-weather-error-not-available = Dữ liệu thời tiết hiện không có sẵn.
+
+## Topic Labels
+
+newtab-topic-label-business = Kinh doanh
+newtab-topic-label-career = Cơ hội nghề nghiệp
+newtab-topic-label-education = Giáo dục
+newtab-topic-label-arts = Giải trí
+newtab-topic-label-food = Thực phẩm
+newtab-topic-label-health = Sức khỏe
+newtab-topic-label-hobbies = Trò chơi
+# ”Money” = “Personal Finance”, refers to articles and stories that help readers better manage
+# and understand their personal finances – from saving money to buying a home. See the
+# “Curated by our editors“ section at the top of https://getpocket.com/explore/personal-finance for more context
+newtab-topic-label-finance = Tài chính cá nhân
+newtab-topic-label-society-parenting = Nuôi dạy con cái
+newtab-topic-label-government = Chính trị
+newtab-topic-label-education-science = Khoa học
+# ”Life Hacks” = “Self Improvement”, refers to articles and stories aimed at helping readers improve various
+# aspects of their lives – from mental health to  productivity. See the “Curated by our editors“ section
+# at the top of https://getpocket.com/explore/self-improvement for more context.
+newtab-topic-label-society = Mẹo vặt cuộc sống
+newtab-topic-label-sports = Thể thao
+newtab-topic-label-tech = Công nghệ
+newtab-topic-label-travel = Du lịch
+newtab-topic-label-home = Nhà & vườn
+
+## Topic Selection Modal
+
+# “fine-tune” refers to the process of making small adjustments to something to get
+# the best or desired experience or performance.
+newtab-topic-selection-title = Chọn chủ đề để tinh chỉnh nguồn cấp dữ liệu của bạn
+# “tailored” refers to process of (a tailor) making (clothes) to fit individual customers.
+# In other words, “Our expert curators prioritize stories to fit your selected interests”
+newtab-topic-selection-subtitle = Chọn hai hoặc nhiều chủ đề. Các người chuyên gia giám tuyển của chúng tôi sẽ ưu tiên những câu chuyện phù hợp với sở thích của bạn. Cập nhật bất cứ lúc nào.
+newtab-topic-selection-save-button = Lưu
+newtab-topic-selection-cancel-button = Hủy bỏ
+newtab-topic-selection-button-maybe-later = Có lẽ để sau
+newtab-topic-selection-privacy-link = Tìm hiểu cách chúng tôi bảo vệ và quản lý dữ liệu
+newtab-topic-selection-button-update-interests = Cập nhật sở thích của bạn
+newtab-topic-selection-button-pick-interests = Chọn sở thích của bạn
+
+## Content Feed Sections
+## "Follow", "unfollow", and "following" are social media terms that refer to subscribing to or unsubscribing from a section of stories.
+## e.g. Following the travel section of stories.
+
+newtab-section-follow-button = Theo dõi
+newtab-section-following-button = Đang theo dõi
+newtab-section-unfollow-button = Huỷ theo dõi
+# A modal may appear next to the Follow button, directing users to try out the feature
+newtab-section-follow-highlight-title = Tinh chỉnh nguồn cấp dữ liệu của bạn
+newtab-section-follow-highlight-subtitle = Theo dõi sở thích của bạn để xem thêm những gì bạn thích.
+
+## Button to block/unblock listed topics
+## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
+## e.g. Blocked the politics section of stories.
+
+newtab-section-block-button = Chặn
+newtab-section-blocked-button = Đã chặn
+newtab-section-unblock-button = Bỏ chặn
+
+## Confirmation modal for blocking a section
+
+newtab-section-cancel-button = Không phải bây giờ
+newtab-section-confirm-block-topic-p1 = Bạn có chắc là bạn muốn chặn chủ đề này?
+newtab-section-confirm-block-topic-p2 = Chủ đề bị chặn sẽ không còn xuất hiện trong nguồn cấp dữ liệu của bạn.
+# Variables:
+#   $topic (string) - Name of topic that user is blocking
+newtab-section-block-topic-button = Chặn { $topic }
+
+## Strings for custom wallpaper highlight
+
+newtab-section-mangage-topics-title = Các chủ đề
+newtab-section-manage-topics-button-v2 =
+    .label = Quản lý chủ đề
+newtab-section-mangage-topics-followed-topics = Đã theo dõi
+newtab-section-mangage-topics-followed-topics-empty-state = Bạn chưa theo dõi bất kỳ chủ đề nào.
+newtab-section-mangage-topics-blocked-topics = Đã chặn
+newtab-section-mangage-topics-blocked-topics-empty-state = Bạn chưa chặn bất kỳ chủ đề nào.
+newtab-custom-wallpaper-title = Hình nền tùy chỉnh ở đây
+# 'Make firefox yours" means to customize or personalize
+newtab-custom-wallpaper-subtitle = Tải lên hình nền của bạn hoặc chọn một màu tùy chỉnh để biến { -brand-product-name } thành của riêng bạn.
+newtab-custom-wallpaper-cta = Thử ngay
+
+## Strings for download mobile highlight
+
+newtab-download-mobile-highlight-title = Tải xuống { -brand-product-name } dành cho di động
+# "Scan the code" refers to scanning the QR code that appears above the body text that leads to Firefox for mobile download.
+newtab-download-mobile-highlight-body-variant-a = Quét mã để duyệt web an toàn khi đang di chuyển.
+newtab-download-mobile-highlight-body-variant-b = Tiếp tục từ nơi bạn dừng lại khi đồng bộ hóa các thẻ, mật khẩu và nhiều thứ khác.
+newtab-download-mobile-highlight-body-variant-c = Bạn có biết bạn có thể mang theo { -brand-product-name } khi đang di chuyển? Cùng một trình duyệt. Trong túi của bạn.
+newtab-download-mobile-highlight-image =
+    .aria-label = Mã QR để tải xuống { -brand-product-name } dành cho di động
+
+## Strings for reporting ads and content
+
+newtab-report-content-why-reporting-this =
+    .label = Tại sao bạn báo cáo điều này?
+newtab-report-ads-reason-not-interested =
+    .label = Tôi không quan tâm
+newtab-report-ads-reason-inappropriate =
+    .label = Không phù hợp
+newtab-report-ads-reason-seen-it-too-many-times =
+    .label = Tôi đã nhìn thấy nó quá nhiều lần
+newtab-report-content-wrong-category =
+    .label = Sai danh mục
+newtab-report-content-outdated =
+    .label = Đã lỗi thời
+newtab-report-content-inappropriate-offensive =
+    .label = Không phù hợp hoặc xúc phạm
+newtab-report-content-spam-misleading =
+    .label = Spam hoặc gây hiểu lầm
+newtab-report-cancel = Hủy bỏ
+newtab-report-submit = Gửi
+newtab-toast-thanks-for-reporting =
+    .message = Cảm ơn bạn đã báo cáo điều này.
+
+## Strings for trending searches
+
+# "Trending on Google" refers to the trending topics coming from Google Search, usually seen when a user is focused on the search bar
+newtab-trending-searches-trending-on-google = Thịnh hành trên Google
+newtab-trending-searches-show-trending =
+    .title = Hiển thị tìm kiếm thịnh hành
+newtab-trending-searches-hide-trending =
+    .title = Ẩn tìm kiếm thịnh hành
+newtab-trending-searches-learn-more = Tìm hiểu thêm
+newtab-trending-searches-dismiss = Ẩn tìm kiếm thịnh hành

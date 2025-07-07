@@ -1,6 +1,7 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 
 ## These strings appear on the warning you see when first visiting about:config.
 
@@ -9,19 +10,15 @@ about-config-intro-warning-text = يمكن أن يؤثّر التغيير على
 about-config-intro-warning-checkbox = حذّرني حين أحاول دخول هذه التفضيلات
 about-config-intro-warning-button = أقبلُ المخاطرة فتابِع
 
-
-
 ##
 
 # This is shown on the page before searching but after the warning is accepted.
 about-config-caution-text = يمكن أن يؤثّر التغيير على هذه التفضيلات أداء { -brand-short-name } وأمنه.
-
 about-config-page-title = التفضيلات المتقدمة
-
 about-config-search-input1 =
     .placeholder = ابحث عن اسم التفضيل
 about-config-show-all = أظهر الكل
-
+about-config-show-only-modified = أظهِر التفضيلات المعدّلة فقط
 about-config-pref-add-button =
     .title = أضِف
 about-config-pref-toggle-button =

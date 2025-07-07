@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = v
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Hely megnyitása…
 menu-file-open-file =
@@ -253,7 +253,16 @@ menu-bookmarks-toolbar =
 menu-bookmarks-other =
     .label = Más könyvjelzők
 menu-bookmarks-mobile =
-    .label = Mobil könyvjelzők
+    .label = Mobilos könyvjelzők
+
+## Profiles Menu
+
+menu-profiles =
+    .label = Profilok
+menu-profiles-manage-profiles =
+    .label = Profilok kezelése
+menu-profiles-new-profile =
+    .label = Új profil
 
 ## Tools Menu
 
@@ -263,6 +272,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Letöltések
     .accesskey = L
+menu-tools-extensions-and-themes =
+    .label = Kiegészítők és témák
+    .accesskey = K
 menu-tools-addons-and-themes =
     .label = Kiegészítők és témák
     .accesskey = K

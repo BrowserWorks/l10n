@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,7 +30,7 @@ policy-CaptivePortal = キャプティブポータルサポートを有効また
 policy-CertificatesDescription = 証明書を追加、または組み込みの証明書を利用します。
 policy-ContentAnalysis = データ損失防止エージェントへの接続を有効または無効にします。
 policy-Cookies = ウェブサイトの Cookie の保存を許可するか拒否するか設定します。
-# Containers in this context is referring to container tabs in Waterfox.
+# Containers in this context is referring to container tabs in Firefox.
 policy-Containers = コンテナーに関連するポリシーを設定します。
 policy-DisableAccounts = 同期を含め、アカウントに基づくサービスを無効にします。
 policy-DisabledCiphers = 暗号を無効にします。
@@ -41,12 +41,12 @@ policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションを�
 policy-DisableDeveloperTools = 開発ツールへのアクセスをブロックします。
 policy-DisableEncryptedClientHello = TLS の Encrypted Client Hello (ECH) 機能の使用を無効にします。
 policy-DisableFeedbackCommands = ヘルプメニューのフィードバックの送信 (フィードバックと詐欺サイトの報告の送信) を無効にします。
-policy-DisableWaterfoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
+policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
-policy-DisableWaterfoxAccounts1 = Sync を含め、アカウントを利用したサービスを無効にします。
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = Waterfox Screenshots 機能を無効にします。
-policy-DisableWaterfoxStudies = { -brand-short-name } による Shield 調査の実行を抑止します。
+policy-DisableFirefoxAccounts1 = Sync を含め、アカウントを利用したサービスを無効にします。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Waterfox Screenshots 機能を無効にします。
+policy-DisableFirefoxStudies = { -brand-short-name } による Shield 調査の実行を抑止します。
 policy-DisableForgetButton = [忘れる] ボタンへのアクセスを抑止します。
 policy-DisableFormHistory = 検索とフォームの履歴を記憶しないようにします。
 policy-DisablePrimaryPasswordCreation = true の場合、マスターパスワードを作成できないようにします。
@@ -77,8 +77,8 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 指定のドメ�
 policy-Extensions = 拡張機能をインストール、削除、またはロックします。インストールオプションは URL とパスを指定します。削除とロックは拡張機能の ID を指定します。
 policy-ExtensionSettings = 拡張機能のインストール全般を管理します。
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
-policy-WaterfoxHome2 = { -firefox-home-brand-name } を設定します。
-policy-WaterfoxSuggest = { -firefox-suggest-brand-name } を設定します。
+policy-FirefoxHome2 = { -firefox-home-brand-name } を設定します。
+policy-FirefoxSuggest = { -firefox-suggest-brand-name } を設定します。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = アドレスバーに単語を入力すると、検索の代わりにイントラネットサイトへの案内を強制します。
 policy-Handlers = 既定のアプリケーションハンドラーを設定します。
 policy-HardwareAcceleration = false にすると、ハードウェアアクセラレーションをオフにします。
@@ -119,6 +119,7 @@ policy-Permissions2 = カメラ、マイク、位置情報、通知、自動再�
 policy-PictureInPicture = ピクチャーインピクチャーを有効または無効にします。
 policy-PopupBlocking = 特定のウェブサイトのポップアップ表示を既定で許可します。
 policy-Preferences = 設定のサブセットに対する値を設定してロックします。
+policy-PrivateBrowsingModeAvailability = プライベートブラウジングモードの利用許可を設定します。
 policy-PromptForDownloadLocation = ダウンロード時にファイルの保存先を確認します。
 policy-Proxy = プロキシーの設定を指示します。
 policy-RequestedLocales = アプリケーションに要求される言語リストと優先順位を設定します。
@@ -129,6 +130,8 @@ policy-SearchSuggestEnabled = 検索候補の表示機能を有効または無�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11 モジュールを追加または削除します。
 policy-ShowHomeButton = ホームボタンをツールバーに表示します。
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = 起動時に利用規約とプライバシー通知を表示しない。この端末のブラウザーにアクセスできるすべてのユーザーに代わって、あなたが利用規約に同意または同意する権限を持っていることを表します。
 policy-SSLVersionMax = SSL の最高バージョンを設定します。
 policy-SSLVersionMin = SSL の最低バージョンを設定します。
 policy-StartDownloadsInTempDirectory = 既定のダウンロードディレクトリーではなく、ローカルの一時的な場所にダウンロードするよう強制します。
@@ -139,3 +142,5 @@ policy-UseSystemPrintDialog = システムの印刷ダイアログで印刷し�
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = ウェブサイトを訪問済みにしません。書式の詳細はドキュメントをご覧ください。
 policy-Windows10SSO = Microsoft アカウント、職場または学校アカウントで Windows のシングルサインオンを許可します。
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Microsoft Entra アカウントでシングルサインオンを許可します。

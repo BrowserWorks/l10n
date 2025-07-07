@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = Khởi động lại
 perftools-button-add-directory = Thêm một thư mục
 perftools-button-remove-directory = Xóa mục đã chọn
 perftools-button-edit-settings = Chỉnh sửa cài đặt…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Hành động khác
+perftools-menu-more-actions-restart-with-profiling = Khởi động lại { -brand-shorter-name } với startup profiling được bật
+perftools-menu-more-actions-copy-for-startup = Sao chép biến môi trường cho startup profiling
+perftools-menu-more-actions-copy-for-perf-tests = Sao chép các tham số cho việc kiểm tra hiệu suất
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 

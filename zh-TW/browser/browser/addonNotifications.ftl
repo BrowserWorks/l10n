@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = 已安裝 { $addonName } 至 { -brand-short-na
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } 要求新權限
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = 完成安裝匯入至 { -brand-short-name } 的擴充套件
 
@@ -81,6 +81,8 @@ addon-removal-title = 要移除 { $name } 嗎？
 addon-removal-message = 要從 { -brand-shorter-name } 移除 { $name } 嗎？
 addon-removal-button = 移除
 addon-removal-abuse-report-checkbox = 回報此擴充套件給 { -vendor-short-name }
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = 若您用到會使用此模型的功能或擴充套件，將會重新安裝此模型。
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying = 正在下載與驗證 { $addonCount } 套附加元件…
@@ -96,10 +98,10 @@ addon-install-accept-button =
 ##   $addonCount (Number): the number of add-ons being installed
 
 addon-confirm-install-message = 此網站想安裝 { $addonCount } 套附加元件到 { -brand-short-name }:
-addon-confirm-install-unsigned-message = 警告: 此網站想要安裝 { $addonCount } 套未驗證的附加元件到 { -brand-short-name }，請小心。
+addon-confirm-install-unsigned-message = 警告：此網站想要安裝 { $addonCount } 套未驗證的附加元件到 { -brand-short-name }，請小心。
 # Variables:
 #   $addonCount (Number): the number of add-ons being installed (at least 2)
-addon-confirm-install-some-unsigned-message = 警告: 此網站想要安裝 { $addonCount } 套附加元件到 { -brand-short-name }，當中有些還沒有經過驗證，請小心。
+addon-confirm-install-some-unsigned-message = 警告：此網站想要安裝 { $addonCount } 套附加元件到 { -brand-short-name }，當中有些還沒有經過驗證，請小心。
 
 ## Add-on install errors
 ## Variables:
@@ -119,6 +121,8 @@ addon-local-install-error-not-signed = 因為此附加元件尚未經過驗證�
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = 因為與 { -brand-short-name } { $appVersion } 不相容，無法安裝 { $addonName }。
+addon-install-error-hard-blocked = { $addonName } 違反了 BrowserWorks 的政策規定，無法安裝到 { -brand-short-name }。
 addon-install-error-blocklisted = 無法安裝 { $addonName }，因為它很可能會造成穩定性或安全性問題。
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = { $addonName } 違反了 BrowserWorks 的政策規定，無法安裝到 { -brand-short-name }。
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = 無法以使用者身分安裝 { $addonName }，該元件僅能透過組織的企業政策安裝。

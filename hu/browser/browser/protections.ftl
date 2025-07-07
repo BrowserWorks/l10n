@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -24,9 +24,9 @@ graph-private-window = A { -brand-short-name } továbbra is blokkolja a nyomköv
 graph-week-summary-private-window = Követők, melyet a { -brand-short-name } blokkolt a héten
 protection-report-webpage-title = Védelmi vezérlőpult
 protection-report-page-content-title = Védelmi vezérlőpult
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Waterfox is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Waterfox is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
 protection-report-settings-link = Kezelje az adatvédelmi és biztonsági beállításait
 etp-card-title-always = Fokozott követés elleni védelem: Mindig bekapcsolva
@@ -54,7 +54,7 @@ protections-close-button2 =
     .title = Bezárás
 mobile-app-title = Blokkolja a hirdetéskövetőket több eszközön
 mobile-app-card-content = Használja a beépített hirdetéskövetés elleni védelemmel ellátott mobilböngészőt.
-mobile-app-links = { -brand-product-name } Böngésző <a data-l10n-name="android-mobile-inline-link">Androidra</a> és <a data-l10n-name="ios-mobile-inline-link">iOS-re</a>
+mobile-app-links = { -brand-product-name } böngésző <a data-l10n-name="android-mobile-inline-link">Androidra</a> és <a data-l10n-name="ios-mobile-inline-link">iOS-re</a>
 lockwise-title = Ne felejtsen el egyetlen jelszót sem
 passwords-title-logged-in = Jelszavak kezelése
 passwords-header-content = A { -brand-product-name } biztonságosan tárolja a jelszavait a böngészőjében.

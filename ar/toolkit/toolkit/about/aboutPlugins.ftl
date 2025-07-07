@@ -1,13 +1,11 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 title-label = عن الملحقات
-installed-plugins-label = الملحقات المنصّبة
-no-plugins-are-installed-label = لا يوجد ملحقات منصّبة
+installed-plugins-label = الملحقات المثبتة
+no-plugins-are-installed-label = لا يوجد ملحقات مثبتة
 deprecation-description = أهناك ما تفتقده؟ بعض الملحقات لم تعد مدعومة. <a data-l10n-name="deprecation-link">اطّلع على المزيد.</a>
-deprecation-description2 =
-    .message = أهناك ما تفتقده؟ بعض الملحقات لم تعد مدعومة.
 
 ## The information of plugins
 ##

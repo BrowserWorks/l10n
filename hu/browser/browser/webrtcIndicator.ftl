@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -33,7 +33,7 @@ webrtc-sharing-menu =
     .label = Eszközöket megosztó lapok
     .accesskey = E
 webrtc-sharing-window = Egy másik alkalmazásablakot oszt meg.
-webrtc-sharing-browser-window = Megosztja a { -brand-short-name(case: "accusative") }.
+webrtc-sharing-browser-window = Megosztja a { -brand-short-name }ot.
 webrtc-sharing-screen = A teljes képernyőt megosztja.
 webrtc-stop-sharing-button = Megosztás leállítása
 webrtc-microphone-unmuted =

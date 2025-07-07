@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -25,6 +25,7 @@ scale =
     .accesskey = S
 scale-percent =
     .value = %
+# shrink-to-fit (^^; 長い表現禁止
 shrink-to-fit =
     .label = 用紙に合わせて縮小
     .accesskey = W

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -31,8 +31,8 @@ ssl-error-ssl2-disabled = O sistema remoto suporta somente SSL versão 2, que es
 ssl-error-bad-mac-read = SSL recebeu um registro com um código de autenticação de mensagem incorreto.
 ssl-error-bad-mac-alert = O sistema remoto SSL informa código de autenticação de mensagem incorreto.
 ssl-error-bad-cert-alert = O sistema remoto SSL não pôde verificar seu certificado.
-ssl-error-revoked-cert-alert = O sistema remoto SSL rejeitou seu certificado por considerá-lo revogado.
-ssl-error-expired-cert-alert = O sistema remoto SSL rejeitou seu certificado por considerá-lo expirado.
+ssl-error-revoked-cert-alert = O sistema remoto SSL rejeitou seu certificado por considerar revogado.
+ssl-error-expired-cert-alert = O sistema remoto SSL rejeitou seu certificado por considerar expirado.
 ssl-error-ssl-disabled = Não foi possível conectar: SSL está desativado.
 ssl-error-fortezza-pqg = Não foi possível conectar: o sistema remoto SSL está em outro domínio FORTEZZA.
 ssl-error-unknown-cipher-suite = Foi solicitado um conjunto desconhecido de códigos de criptografia SSL.
@@ -331,6 +331,7 @@ mozilla-pkix-error-invalid-integer-encoding = O servidor apresentou um certifica
 mozilla-pkix-error-empty-issuer-name = O servidor apresentou um certificado faltando o nome de emissor.
 mozilla-pkix-error-additional-policy-constraint-failed = Uma restrição adicional de diretiva falhou ao validar este certificado.
 mozilla-pkix-error-self-signed-cert = O certificado não é considerado confiável porque é autoassinado.
+mozilla-pkix-error-issuer-no-longer-trusted = A autoridade certificadora que emitiu o certificado foi considerada não confiável antes do certificado ser emitido.
 xp-java-remove-principal-error = Não foi possível remover o principal
 xp-java-delete-privilege-error = Não foi possível excluir o direito
 xp-java-cert-not-exists-error = Este principal não tem um certificado

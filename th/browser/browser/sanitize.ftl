@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -41,6 +41,10 @@ clear-time-duration-value-last-2-hours =
     .label = สองชั่วโมงที่แล้ว
 clear-time-duration-value-last-4-hours =
     .label = สี่ชั่วโมงที่แล้ว
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = ตั้งแต่ { $midnightTime }
 clear-time-duration-value-today =
     .label = วันนี้
 clear-time-duration-value-everything =
@@ -55,6 +59,7 @@ history-section-label = ประวัติ
 item-history-and-downloads =
     .label = ประวัติการเรียกดูและการดาวน์โหลด
     .accesskey = ป
+item-history-and-downloads-description2 = ล้างประวัติไซต์และการดาวน์โหลด
 item-history-form-data-downloads =
     .label = ประวัติ
     .accesskey = ป
@@ -94,7 +99,11 @@ item-form-search-history =
 item-site-prefs =
     .label = การตั้งค่าไซต์
     .accesskey = ไ
-item-site-prefs-description = กลับค่าการกำหนดสิทธิ์และการกำหนดลักษณะไซต์ของคุณเป็นการตั้งค่าดั้งเดิม
+item-formdata-prefs =
+    .label = ข้อมูลแบบฟอร์มที่บันทึกไว้
+    .accesskey = แ
+item-formdata-description = ล้างข้อมูลต่างๆ เช่น ชื่อ อีเมล และรายการอื่นๆ ที่คุณป้อนในแบบฟอร์ม
+item-site-prefs-description = กลับค่าการกำหนดสิทธิ์และค่าปรับแต่งไซต์ของคุณเป็นการตั้งค่าดั้งเดิม
 data-section-label = ข้อมูล
 item-site-settings =
     .label = การตั้งค่าไซต์

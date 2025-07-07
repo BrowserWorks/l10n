@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -68,6 +68,14 @@ perftools-button-restart = Перезапустить
 perftools-button-add-directory = Добавить каталог
 perftools-button-remove-directory = Удалить выбранное
 perftools-button-edit-settings = Изменить настройки…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Другие действия
+perftools-menu-more-actions-restart-with-profiling = Перезапустить { -brand-shorter-name } с включённым профилированием запуска
+perftools-menu-more-actions-copy-for-startup = Скопировать переменные среды для профилирования при запуске
+perftools-menu-more-actions-copy-for-perf-tests = Копировать параметры для тестов производительности
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
@@ -141,6 +149,8 @@ perftools-presets-graphics-label = Графика
 perftools-presets-graphics-description = Настройки для выявления ошибок графики в { -brand-shorter-name }.
 perftools-presets-media-label = Медиа
 perftools-presets-media-description2 = Настройки для выявления ошибок аудио и видео в { -brand-shorter-name }.
+perftools-presets-ml-label = Машинное обучение
+perftools-presets-ml-description2 = Настройки для выявления ошибок машинного обучения в { -brand-shorter-name }.
 perftools-presets-networking-label = Сеть
 perftools-presets-networking-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }.
 # "Power" is used in the sense of energy (electricity used by the computer).

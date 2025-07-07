@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -182,6 +182,18 @@ downloads-history =
 # that we are showing the details of a single download.
 downloads-details =
     .title = Letöltés részletei
+
+## These strings are displayed in the private browsing view of the downloads panel
+
+downloads-private-browsing-details =
+    .title = A fájlok az eszközön maradnak
+downloads-private-browsing-message = Bárki, aki használja ezt az eszközt, láthatja a letöltéseket, még akkor is, ha bezárja az összes privát ablakot.
+downloads-private-browsing-delete-button =
+    .label = Fájlok automatikus törlése
+    .accesskey = t
+downloads-private-browsing-accept-button =
+    .label = Megértettem!
+    .accesskey = M
 
 ## Displayed when a site attempts to automatically download many files.
 ## Variables:

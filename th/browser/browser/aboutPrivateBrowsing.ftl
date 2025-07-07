@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -44,7 +44,7 @@ about-private-browsing-search-banner-title = { $engineName } เป็นเค�
 about-private-browsing-search-banner-description =
     { PLATFORM() ->
         [windows] ถ้าต้องการเลือกเครื่องมือค้นหาอื่น ให้ไปที่ <a data-l10n-name="link-options">ตัวเลือก</a>
-       *[other] ถ้าต้องการเลือกเครื่องมือค้นหาอื่น ให้ไปที่ <a data-l10n-name="link-options">การกำหนดลักษณะ</a>
+       *[other] ถ้าต้องการเลือกเครื่องมือค้นหาอื่น ให้ไปที่ <a data-l10n-name="link-options">ค่าปรับแต่ง</a>
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = ปิด

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -16,6 +16,11 @@ about-glean-interface-description =
     เป็นไลบรารีรวบรวมข้อมูลที่ใช้ในโครงการต่างๆ ของ { -vendor-short-name }
     อินเทอร์เฟซนี้ถูกออกแบบมาเพื่อให้นักพัฒนาและนักทดสอบใช้ในการ
     <a data-l10n-name="fog-link">กำหนดเครื่องมือที่จะใช้ในการทดสอบ</a>ด้วยตนเอง
+about-glean-category-about-glean = เกี่ยวกับ { -glean-brand-name }
+about-glean-category-manual-testing = การทดสอบด้วยตนเอง
+about-glean-category-adhoc-testing = การทดสอบแอดฮ็อก
+about-glean-category-profiler = การใช้ตัวสร้างโปรไฟล์
+about-glean-category-about-data = เกี่ยวกับข้อมูล
 about-glean-upload-enabled = เปิดใช้งานการอัปโหลดข้อมูลแล้ว
 about-glean-upload-disabled = ปิดใช้งานการอัปโหลดข้อมูลแล้ว
 about-glean-upload-enabled-local = เปิดใช้งานการอัปโหลดข้อมูลสำหรับส่งไปยังเซิร์ฟเวอร์เฉพาะที่เท่านั้น
@@ -26,7 +31,7 @@ about-glean-upload-fake-enabled =
     หมายเหตุ: หากคุณกำหนดแท็กการดีบั๊ก Ping ต่างๆ จะถูกอัปโหลดไปยัง
     <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> โดยไม่คำนึงถึงการตั้งค่าใดๆ
 # This message is followed by a bulleted list.
-about-glean-prefs-and-defines = <a data-l10n-name="fog-prefs-and-defines-doc-link">การกำหนดลักษณะและค่ากำหนด</a>ที่เกี่ยวข้องประกอบด้วย:
+about-glean-prefs-and-defines = <a data-l10n-name="fog-prefs-and-defines-doc-link">ค่าปรับแต่งและค่ากำหนด</a>ที่เกี่ยวข้องประกอบด้วย:
 # Variables:
 #   $data-upload-pref-value (String): the value of the datareporting.healthreport.uploadEnabled pref. Typically "true", sometimes "false"
 # Do not translate strings between <code> </code> tags.
@@ -43,6 +48,7 @@ about-glean-glean-android = <code>MOZ_GLEAN_ANDROID</code>: { $glean-android-def
 #   $moz-official-define-value (Boolean): the value of the MOZILLA_OFFICIAL define.
 # Do not translate strings between <code> </code> tags.
 about-glean-moz-official = <code>MOZILLA_OFFICIAL</code>: { $moz-official-define-value }
+about-glean-additional-links = สำหรับคำอธิบายเกี่ยวกับวิธีต่างๆ ในการบันทึกและค้นหาข้อมูล กรุณาดูที่แท็บ <strong>เกี่ยวกับข้อมูล</strong>
 about-glean-about-testing-header = เกี่ยวกับการทดสอบ
 # This message is followed by a numbered list.
 about-glean-manual-testing =
@@ -100,8 +106,23 @@ about-glean-adhoc-note =
     โปรดทราบว่าคุณกำลังใช้ Glean JS API โดยใช้คอนโซล devtools
     ซึ่งหมายความว่าหมวดหมู่เมตริกและชื่อเมตริกจะถูกจัดเป็นรูปแบบ
     <code>camelCase</code> ซึ่งต่างจากใน API สำหรับ Rust และ C++
+about-glean-profiler-explanation =
+    เมื่อต้องการดูเมตริกที่บันทึกไว้แบบเต็ม คุณสามารถใช้ { -profiler-brand-name } ได้
+    ก่อนอื่น คุณจะต้อง<a data-l10n-name="firefox-profiler-link">ทำการแคปเจอร์โปรไฟล์ประสิทธิภาพ</a>
+    เมื่อคุณทำการแคปเจอร์โปรไฟล์ได้แล้ว ให้เลือก <q>แผนภูมิจุดข้อมูล</q> แล้วดูที่จุดข้อมูลต่างๆ ภายใต้ <q>การวัดและส่งข้อมูลทางไกล</q>
+about-glean-profiler-explanation-profiler = ในโปรไฟล์ประสิทธิภาพ คุณจะเห็นเมตริกทั้งหมดที่รวบรวมมาได้ รวมไปถึงเวลาที่รวบรวมเมตริกเหล่านั้น และค่าของแต่ละเมตริกที่รวบรวมมาได้ เมื่อคุณวางเมาส์เหนือจุดข้อมูลแต่ละจุด คุณจะสามารถตรวจสอบได้ว่าค่าและเวลาที่รวบรวมถูกต้องหรือไม่
 controls-button-label-verbose = นำการตั้งค่าไปใช้และส่ง ping
+about-glean-feedback-settings-only =
+    .message = ตั้งค่าเรียบร้อยแล้ว!
+about-glean-feedback-settings-and-ping =
+    .message = ตั้งค่าและส่ง ping เรียบร้อยแล้ว!
 about-glean-about-data-header = เกี่ยวกับข้อมูล
+about-glean-about-data-description = มีเครื่องมือต่างๆ อยู่ด้วยกันไม่กี่อย่างที่คุณสามารถใช้ดูข้อมูลของคุณได้ ตามแต่ที่คุณกำลังมองหา
+about-glean-about-data-description-list-intro = กรุณาดูที่รายการด้านล่างนี้สำหรับรูปแบบการใช้งานจริงของเครื่องมือแต่ละอย่าง:
+about-glean-about-data-list-item-dictionary = เมื่อต้องการเรียกดูรายการข้อมูลที่รวบรวมโดย { -glean-brand-name } ต่อแอปพลิเคชัน กรุณาดูที่ <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Dictionary</a>
+about-glean-about-data-list-item-about-telemetry = เมื่อต้องการเรียกดูข้อมูลที่รวบรวมโดยการวัดและส่งข้อมูลทางไกลแบบดั้งเดิม กรุณาดูที่ <a data-l10n-name="about-telemetry-link">about:telemetry</a>
+about-glean-about-data-list-item-debug-ping-viewer = เมื่อต้องการเรียกดูแท็กการดีบั๊ก ดู Ping แบบเต็ม ดูสตรีมเหตุการณ์สด หรือดูการจำลองภาพเมตริก กรุณาดูที่ <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>
+about-glean-about-data-list-item-firefox-profiler = เมื่อต้องการบันทึกโปรไฟล์ประสิทธิภาพและดูเมตริกที่บันทึกได้ทั้งหมด กรุณาใช้ <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>
 about-glean-about-data-explanation =
     หากต้องการเรียกดูรายการข้อมูลที่รวบรวม โปรดดูที่
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Dictionary</a>

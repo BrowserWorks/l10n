@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -17,7 +17,7 @@ list-empty-get-language-packs-message = احصل على حزم اللغات عل
 ##
 
 list-empty-installed =
-    .value = ليس لديك أي إضافات منصّبة من هذا النوع
+    .value = ليس لديك أي إضافات مثبتة من هذا النوع
 list-empty-available-updates =
     .value = لا تحديثات متوفرة
 list-empty-recent-updates =
@@ -40,6 +40,8 @@ detail-version =
     .label = النسخة
 detail-last-updated =
     .label = آخر تحديث
+addon-detail-description-expand = أظهر المزيد
+addon-detail-description-collapse = أظهر أقل
 detail-contributions-description = يطلب منك مطوّر هذه الإضافة مساعدته بدعم استمرار تطوير هذا العمل من خلال تبرع صغير منك.
 detail-contributions-button = ساهِم
     .title = ساهِم بتطويل هذه الإضافة
@@ -213,6 +215,9 @@ shortcuts-no-addons = ليس لديك أيّ امتدادات مفعّلة.
 shortcuts-no-commands = لا اختصارات للامتدادات الآتية:
 shortcuts-input =
     .placeholder = اكتب اختصارًا
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = أزِل الاختصار
 shortcuts-browserAction2 = تفعيل زر شريط الأدوات
 shortcuts-pageAction = تفعيل إجراء على الصفحة
 shortcuts-sidebarAction = عرض/إخفاء الشريط الجانبي
@@ -253,12 +258,19 @@ header-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    الامتدادات والسمات هي كالتطبيقات لمتصفحك، وهي ستدعك:
+    تحمي كلمات السر، تُنزل مقاطع الفيديو، تجد العروض، تحجب الإعلانات المزعجة، تغيّر كيف يبدو متصفحك، وغيرها الكثير.
+    هذه البرمجيات الصغيرة غالبا ما تطور من قِبل جهة ثالثة. ها هي مختارات <a data-l10n-name="learn-more-trigger">انتقاها</a> { -brand-product-name } لأمن وأداء وتوظيف استثنائي.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = بعض هذه المُقترحات مخصّصة لك، إذ تعتمد على الامتدادات التي ثبّتها وتفضيلات الملف الشخصي وإحصاءات الاستخدام.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations2 =
     .message = بعض هذه المُقترحات مخصّصة لك، إذ تعتمد على الامتدادات التي ثبّتها وتفضيلات الملف الشخصي وإحصاءات الاستخدام.
 discopane-notice-learn-more = اطّلع على المزيد
+colorway-removal-notice-learn-more = اطّلع على المزيد
 privacy-policy = سياسة الخصوصية
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -369,6 +381,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = مسموح بها في النوافذ الخاصة
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = مسموح بها في النوافذ الخاصة
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -400,6 +416,18 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = يوصي { -brand-product-name } ويقترح فقط الامتدادات التي تلبي معاييرنا للأمان والأداء.
     .aria-label = { addon-badge-recommended2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line3 =
+    .title = الامتدادات الرسمية التي أنشأتها موزيلا. يستوفي معايير الأمن والأداء
+    .aria-label = { addon-badge-line3.title }
+addon-badge-verified2 =
+    .title = جرت مراجعة هذا الامتداد ليفي بمعاييرنا للأمن والأداء
+    .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = الامتدادات الرسمية التي أنشأتها موزيلا. يستوفي معايير الأمن والأداء
 
 ##
 
@@ -407,14 +435,18 @@ available-updates-heading = التحديثات المتاحة
 recent-updates-heading = التحديثات الأخيرة
 release-notes-loading = يحمّل…
 release-notes-error = المعذرة، ولكن حصل خطأ أثناء تحميل ملاحظات الإصدار.
+addon-permissions-empty2 = لا يطلب هذا الامتداد أيّ صلاحيات.
 addon-permissions-empty = لا يطلب هذا الامتداد أيّ صلاحيات
+addon-permissions-required = الصلاحيات المطلوبة للوظيفة الجوهرية:
+addon-permissions-optional = صلاحيات اختيارية للوظائف المضافة:
+addon-permissions-learnmore = اطّلع على المزيد عن التصاريح
 recommended-extensions-heading = الامتدادات المقترحة
 recommended-themes-heading = السمات المقترحة
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = يمنح الإمكانيات التالية لـ <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ترى فيك الإبداع؟ <a data-l10n-name="link">اصنع سمتك الخاصة باستعمال Waterfox Color.</a>
 
 ## Page headings
@@ -453,10 +485,24 @@ details-notification-unsigned-and-disabled-link = المزيد من المعلو
 details-notification-unsigned = تعذّر التحقق من { $name } للاستخدام مع { -brand-short-name }. واصل بحذر.
 details-notification-unsigned2 =
     .message = تعذّر التحقق من { $name } للاستخدام مع { -brand-short-name }. واصل بحذر.
+details-notification-hard-blocked-extension =
+    .message = حُظر هذا الامتداد بسبب انتهاكه لسياسات BrowserWorks وعُطّل.
+details-notification-hard-blocked-other =
+    .message = حُظرت هذه الإضافة بسبب انتهاكه لسياسات BrowserWorks وعُطّلت.
 details-notification-unsigned-link = المزيد من المعلومات
 details-notification-blocked = عُطّلت { $name } لأسباب تتعلق بالأمن أو الثبات.
 details-notification-blocked2 =
     .message = عُطّلت { $name } لأسباب تتعلق بالأمن أو الثبات.
+details-notification-blocked-link2 = اعرض التفاصيل
+details-notification-soft-blocked-extension-disabled =
+    .message = حُظر هذا الامتداد بسبب انتهاكه لسياسات BrowserWorks وعُطّل. يمكنك تفعيله، ولكن هذا قد يكون محفوفًا بالمخاطر.
+details-notification-soft-blocked-extension-enabled =
+    .message = ينتهك هذا الامتداد سياسات BrowserWorks. قد يكون استخدامه محفوفًا بالمخاطر.
+details-notification-soft-blocked-other-disabled =
+    .message = حُظرت هذه الإضافة بسبب انتهاكها لسياسات BrowserWorks وعُطّلت. يمكنك تفعيلها، ولكن هذا قد يكون محفوفًا بالمخاطر.
+details-notification-soft-blocked-other-enabled =
+    .message = تنتهك هذه الإضافة سياسات BrowserWorks. قد يكون استخدامها محفوفًا بالمخاطر.
+details-notification-softblocked-link2 = اعرض التفاصيل
 details-notification-blocked-link = مزيد من المعلومات
 details-notification-softblocked = { $name } معروفة بتسببها لمشاكل في الأمن أو الثبات.
 details-notification-softblocked2 =
@@ -474,3 +520,20 @@ plugins-openh264-name = مرماز الڤديو OpenH264 من سيسكو سيس�
 plugins-openh264-description = تنصّب BrowserWorks هذه الملحقة تلقائيا للتوافق مع معيار WebRTC و لتفعيل مكالمات WebRTC على الأجهزة التي تحتاج مرماز لڤديو H.264. انتقل إلى ‪http://www.openh264.org/‬ للاطلاع على المصدر البرمجي للمرماز و للاطلاع أكثر على التطبيق.
 plugins-widevine-name = وحدة Widevine لتعمية المحتوى من جوجل.
 plugins-widevine-description = تتيح هذه الملحقة تشغيل الوسائط المعمّاة لتتوافق ومواصفات امتدادات الوسائط المعمّاة. تستعمل المواقع عادةً الوسائط المعمّاة لتحميل محتواها الممتاز من النسخ. زُر https://www.w3.org/TR/encrypted-media/ لمزيد من المعلومات حول امتدادات الوسائط المعمّاة.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = أزِل
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = حجم الملف
+mlmodel-addon-detail-last-used-label = آخر استخدام
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = يستخدمُها
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = بطاقة نموذجية

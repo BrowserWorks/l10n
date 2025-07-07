@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -22,13 +22,3 @@ webconsole-commands-usage-unblock =
     Прекратить блокировку сетевых запросов
     
       Принимается только один аргумент — та же самая строка, которая ранее была передана в :block.
-# Usage string for :trace command
-webconsole-commands-usage-trace =
-    :trace
-    
-    Включает/отключает трассировщик JavaScript
-    
-      Поддерживает следующие аргументы:
-        --logMethod должен быть установлен в «console» для входа в веб-консоль (по умолчанию) или «stdout» для входа в стандартный вывод,
-        --prefix Необязательная строка, которая будет записываться перед всеми журналами трассировки,
-        --help или --usage, чтобы показать это сообщение.

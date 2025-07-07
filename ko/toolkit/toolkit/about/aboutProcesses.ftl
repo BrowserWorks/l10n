@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -12,6 +12,8 @@ about-processes-column-action =
 
 about-processes-shutdown-process =
     .title = 탭 언로드 및 프로세스 종료
+about-processes-kill-process =
+    .title = 프로세스 종료
 about-processes-shutdown-tab =
     .title = 탭 닫기
 # Profiler icons
@@ -122,7 +124,7 @@ about-processes-utility-actor-audio-decoder-generic = 일반 오디오 디코더
 about-processes-utility-actor-audio-decoder-applemedia = 애플 미디어 오디오 디코더
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework 오디오 디코더
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation 미디어 엔진 CDM
-# "Oracle" refers to an internal Waterfox process and should be kept in English
+# "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows 유틸리티
 about-processes-utility-actor-windows-file-dialog = Windows 파일 대화 상자

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } utenti
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sincronizza ovunque i tuoi segnalibri
 cfr-doorhanger-bookmark-fxa-body = Ottima scoperta. Assicurati di non restare senza questo segnalibro sul tuo dispositivo mobile. Crea un { -fxaccount-brand-name }.
@@ -116,7 +116,7 @@ cfr-doorhanger-video-support-primary-button = Aggiorna adesso
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Sembra che ti trovi su una rete Wi-Fi pubblica
@@ -165,7 +165,7 @@ mr2022-background-update-toast-primary-button-label = Apri { -brand-shorter-name
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Ricorda più tardi
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Provalo
     .accesskey = P
@@ -174,7 +174,7 @@ firefoxview-cfr-secondarybutton = Non adesso
 firefoxview-cfr-header-v2 = Riprendi da dove eri rimasto
 firefoxview-cfr-body-v2 = Recupera le schede chiuse di recente e passa velocemente da un dispositivo all’altro con { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Ti presentiamo { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -201,7 +201,6 @@ cfr-cbh-confirm-button = Rifiuta banner per i cookie
     .accesskey = R
 cfr-cbh-dismiss-button = Non adesso
     .accesskey = N
-
 cookie-banner-blocker-onboarding-header = { -brand-short-name } ha appena rifiutato un banner per i cookie
 cookie-banner-blocker-onboarding-body = Meno distrazioni, meno cookie in grado di tracciarti su questo sito.
 cookie-banner-blocker-onboarding-learn-more = Ulteriori informazioni
@@ -218,7 +217,7 @@ fox-doodle-pin-body = Un promemoria al volo: puoi tenere il tuo browser indipend
 fox-doodle-pin-primary = Apri i miei link con { -brand-short-name }
 fox-doodle-pin-secondary = Non adesso
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>Ora puoi aprire i tuoi PDF in { -brand-short-name }.</strong> Modifica o firma i moduli direttamente nel tuo browser. Per iniziare, cerca “PDF” nelle impostazioni.
 set-default-pdf-handler-primary = OK
@@ -243,6 +242,9 @@ device-migration-fxa-spotlight-older-device-primary-button = Crea un account
 device-migration-fxa-spotlight-getting-new-device-header-2 = Nuovo dispositivo nel tuo futuro?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Segui alcuni semplici passaggi per portare con te segnalibri, cronologia e password quando inizi a utilizzare un nuovo dispositivo.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Come posso salvare i miei dati
+device-migration-fxa-spotlight-sync-header = Naviga senza perdere un colpo
+device-migration-fxa-spotlight-sync-body = Sincronizza tutte le tue informazioni più importanti, come segnalibri e password, e proteggile con la crittografia. Potrai accedervi ovunque utilizzi { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Inizia
 
 ## Set as Default PDF Reader Infobar
 
@@ -280,3 +282,60 @@ tail-fox-spotlight-subtitle = Dì addio alle irritanti pubblicità che ti seguon
 tail-fox-spotlight-primary-button = Apri i miei link con { -brand-short-name }
 tail-fox-spotlight-secondary-button = Non adesso
 
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Le versioni più vecchie di { -brand-short-name } potrebbero avere problemi a partire dal 14 gennaio 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Aggiorna per continuare a utilizzare { -brand-short-name } dopo il 14 marzo 2025.</strong>
+root-certificate-succession-infobar-link = Perché devo aggiornare?
+root-certificate-succession-infobar-primary-button =
+    .label = Aggiorna adesso
+    .accesskey = A
+root-certificate-succession-infobar-secondary-button =
+    .label = Più tardi
+    .accesskey = P
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Ti sei perso un importante aggiornamento di { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Se non aggiorni, alcune parti del browser smetteranno di funzionare a breve. Adesso è il momento giusto per ottenere le nostre più recenti protezioni e funzionalità.
+root-certificate-windows-background-notification-learn-more-button = Ulteriori informazioni
+root-certificate-windows-background-notification-update-button = Aggiorna { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Chiudi
+    .aria-label = Chiudi
+fxa-menu-message-sign-up-button = Registrati
+fxa-menu-message-sync-devices-primary-text = Sincronizza tutti i tuoi dispositivi
+fxa-menu-message-sync-devices-secondary-text = Accedi al volo alle tue informazioni, come segnalibri e password, ovunque utilizzi { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Sincronizza tutti i tuoi dispositivi
+fxa-menu-message-backup-data-primary-text = Salva i dati del browser
+fxa-menu-message-backup-data-secondary-text = Proteggi automaticamente segnalibri, password e altre informazioni su tutti i tuoi dispositivi.
+fxa-menu-message-backup-data-collapsed-text = Salva i dati del browser
+fxa-menu-message-backup-sync-primary-text = Mantieni i tuoi dati al sicuro e sincronizzati
+fxa-menu-message-backup-sync-secondary-text = La sincronizzazione esegue il backup della maggior parte dei tuoi dati, così puoi accedervi ovunque utilizzi { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Sincronizza e salva i tuoi dati
+fxa-menu-message-mobile-primary-text = Invia schede al tuo telefono
+fxa-menu-message-mobile-secondary-text = Riprendi immediatamente da dove eri rimasto sincronizzando le schede con un dispositivo mobile.
+fxa-menu-message-mobile-collapsed-text = Sincronizza con il tuo telefono
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Bentornato
+multi-cta-fox-doodle-set-default-checkbox = Imposta { -brand-short-name } come predefinito
+multi-cta-fox-doodle-pin-startmenu-checkbox = Aggiungi { -brand-short-name } al menu Start
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Mantieni { -brand-short-name } nel Dock
+       *[other] Aggiungi { -brand-short-name } al menu Start
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Inizia a navigare
+multi-cta-fox-doodle-main-browser-primary-button-label = Imposta { -brand-short-name } come browser principale
+multi-cta-fox-doodle-quick-reminder-subtitle = Un promemoria al volo: puoi avere il tuo browser preferito incentrato sulla privacy sempre a portata di clic.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Mantieni il tuo browser preferito incentrato sulla privacy sempre a portata di clic. Imposta { -brand-short-name } come browser predefinito per l’apertura dei link e aggiungilo alla barra delle applicazioni.
+       *[other] Mantieni il tuo browser preferito incentrato sulla privacy sempre a portata di clic. Imposta { -brand-short-name } come browser predefinito per l’apertura dei link, aggiungilo alla barra delle applicazioni e al menu Start.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Mantieni il tuo browser preferito incentrato sulla privacy sempre a portata di clic. Imposta { -brand-short-name } come browser predefinito per l’apertura dei link, aggiungilo alla barra delle applicazioni.

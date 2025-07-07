@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,3 +8,9 @@
 # Variables:
 #   $fileCount (Number): The number of remaining files.
 input-file-and-more-files = และเพิ่มเติมอีก { $fileCount }
+form-post-secure-to-insecure-warning-title = คำเตือนความปลอดภัย
+form-post-secure-to-insecure-warning-message =
+    ข้อมูลที่คุณได้ป้อนในหน้านี้จะถูกส่งผ่านการเชื่อมต่อที่ไม่ปลอดภัยและอาจถูกอ่านได้โดยบุคคลที่สาม
+    
+    คุณแน่ใจหรือไม่ว่าต้องการส่งข้อมูลนี้?
+form-post-secure-to-insecure-warning-continue = ดำเนินการต่อ

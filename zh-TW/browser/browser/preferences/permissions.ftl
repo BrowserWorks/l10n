@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -40,7 +40,7 @@ permissions-remove-all =
 permission-dialog =
     .buttonlabelaccept = 儲存變更
     .buttonaccesskeyaccept = S
-permissions-autoplay-menu = 對所有網站的預設行為:
+permissions-autoplay-menu = 對所有網站的預設行為：
 permissions-searchbox =
     .placeholder = 搜尋網站
 permissions-capabilities-autoplay-allow =

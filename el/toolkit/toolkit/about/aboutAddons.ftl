@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -167,7 +167,7 @@ extensions-warning-update-security2 =
 extensions-warning-update-security-button = Ενεργοποίηση
     .title = Ενεργοποίηση ελέγχου ασφαλείας ενημερώσεων προσθέτων
 extensions-warning-imported-addons2 =
-    .message = Παρακαλώ ολοκληρώστε την εγκατάσταση των επεκτάσεων που εισήχθησαν στο { -brand-short-name }.
+    .message = Ολοκληρώστε την εγκατάσταση των επεκτάσεων που εισήχθησαν στο { -brand-short-name }.
 extensions-warning-imported-addons-button = Εγκατάσταση επεκτάσεων
 
 ## Strings connected to add-on updates
@@ -205,6 +205,10 @@ addon-updates-manual-updates-found = Εμφάνιση διαθέσιμων εν�
 
 addon-install-from-file = Εγκατάσταση προσθέτου από αρχείο…
     .accesskey = γ
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Εγκατάσταση ή ενημέρωση προσθέτου από αρχείο…
+    .accesskey = Ε
 addon-install-from-file-dialog-title = Επιλέξτε πρόσθετο για εγκατάσταση
 addon-install-from-file-filter-name = Πρόσθετα
 addon-open-about-debugging = Έλεγχος σφαλμάτων προσθέτων
@@ -229,7 +233,7 @@ shortcuts-modifier-mac = Συμπεριλάβετε Ctrl, Alt, ή ⌘
 shortcuts-modifier-other = Συμπεριλάβετε Ctrl ή Alt
 shortcuts-invalid = Άκυρος συνδυασμός
 shortcuts-letter = Πληκτρολογήστε ένα γράμμα
-shortcuts-system = Αδυναμία αντικατάστασης συντόμευσης του { -brand-short-name }
+shortcuts-system = Δεν είναι δυνατή η αντικατάσταση μιας συντόμευσης του { -brand-short-name }
 # String displayed in warning label when there is a duplicate shortcut
 shortcuts-duplicate = Διπλή συντόμευση
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
@@ -275,6 +279,15 @@ discopane-notice-recommendations2 =
         Μερικές από αυτές τις προτάσεις είναι εξατομικευμένες. Βασίζονται σε άλλες
         επεκτάσεις που έχετε εγκαταστήσει, σε προτιμήσεις προφίλ και σε στατιστικά χρήσης.
 discopane-notice-learn-more = Μάθετε περισσότερα
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Τα θέματα χρωματικών συνδυασμών σας αφαιρέθηκαν.
+    .message =
+        Το { -brand-product-name } ενημέρωσε τη συλλογή χρωματικών συνδυασμών του.
+        Αφαιρέσαμε τις παλιές εκδόσεις από τη λίστα «Αποθηκευμένα θέματα». Λάβετε τις
+        νέες εκδόσεις από τον ιστότοπο των προσθέτων.
+colorway-removal-notice-learn-more = Μάθετε περισσότερα
+colorway-removal-notice-button = Αποκτήστε τα νέα θέματα χρωματικών συνδυασμών
 privacy-policy = Πολιτική απορρήτου
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -295,13 +308,24 @@ find-more-themes = Εύρεση περισσότερων θεμάτων
 # used for screen readers.
 addon-options-button =
     .aria-label = Περισσότερες επιλογές
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    Οι επεκτάσεις και τα θέματα σάς επιτρέπουν να προσαρμόσετε το { -brand-product-name }. Μπορούν να
+    αναβαθμίσουν την ιδιωτικότητα, να ενισχύσουν την παραγωγικότητα, να βελτιώσουν την αναπαραγωγή
+    πολυμέσων, να αλλάξουν την εμφάνιση του { -brand-product-name } και πολλά ακόμα. Αυτά τα μικρά
+    προγράμματα αναπτύσσονται συνήθως από τρίτους δημιουργούς. Ακολουθεί μια συλλογή από
+    <a data-l10n-name="learn-more-trigger">προτάσεις</a> του Waterfox για απαράμιλλη
+    ασφάλεια, επιδόσεις και λειτουργικότητα.
 
 ## Add-on actions
 
 report-addon-button = Αναφορά
 remove-addon-button = Αφαίρεση
 # The link will always be shown after the other text.
-remove-addon-disabled-button = Δεν μπορεί να αφαιρεθεί <a data-l10n-name="link">Γιατί;</a>
+remove-addon-disabled-button = Δεν είναι δυνατή η αφαίρεση. <a data-l10n-name="link">Γιατί;</a>
 disable-addon-button = Απενεργοποίηση
 enable-addon-button = Ενεργοποίηση
 # This is used for the toggle on the extension card, it's a checkbox and this
@@ -381,6 +405,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Επιτρέπεται σε ιδιωτικά παράθυρα
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Επιτρέπεται σε ιδιωτικά παράθυρα
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -412,14 +440,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = Το { -brand-product-name } προτείνει μόνο επεκτάσεις που πληρούν τα πρότυπα ασφαλείας και επιδόσεών μας
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Επίσημη επέκταση από τη BrowserWorks. Πληροί τα πρότυπα ασφαλείας και επιδόσεων
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Αυτή η επέκταση έχει ελεγχθεί και πληροί τα πρότυπα ασφαλείας και επιδόσεών μας
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Επίσημη επέκταση από τη BrowserWorks. Πληροί τα πρότυπα ασφαλείας και επιδόσεων
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = Αυτή η επέκταση έχει ελεγχθεί και πληροί τα πρότυπα ασφαλείας και επιδόσεων
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Το Waterfox προτείνει μόνο τις επεκτάσεις που πληρούν τα πρότυπα ασφαλείας και επιδόσεων
 
 ##
 
@@ -427,6 +473,7 @@ available-updates-heading = Διαθέσιμες ενημερώσεις
 recent-updates-heading = Πρόσφατες ενημερώσεις
 release-notes-loading = Φόρτωση…
 release-notes-error = Λυπούμαστε, αλλά προέκυψε σφάλμα φόρτωσης των σημειώσεων έκδοσης.
+addon-permissions-empty2 = Αυτή η επέκταση δεν απαιτεί κανένα δικαίωμα.
 addon-permissions-empty = Αυτή η επέκταση δεν απαιτεί δικαιώματα
 addon-permissions-required = Απαιτούμενα δικαιώματα για βασική λειτουργικότητα:
 addon-permissions-optional = Προαιρετικά δικαιώματα για επιπρόσθετη λειτουργικότητα:
@@ -436,8 +483,8 @@ recommended-themes-heading = Προτεινόμενα θέματα
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Παραχωρεί τις εξής δυνατότητες στο <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Waterfox Color.</a>
 
 ## Page headings
@@ -454,6 +501,9 @@ shortcuts-heading = Διαχείριση συντομεύσεων επεκτάσ
 default-heading-search-label = Εύρεση περισσότερων προσθέτων
 addons-heading-search-input =
     .placeholder = Αναζήτηση στο addons.mozilla.org
+addons-heading-search-button =
+    .title = Αναζήτηση στο addons.mozilla.org
+    .aria-label = Αναζήτηση στο addons.mozilla.org
 addon-page-options-button =
     .title = Εργαλεία για όλα τα πρόσθετα
 
@@ -469,17 +519,31 @@ details-notification-incompatible = Το { $name } είναι ασύμβατο �
 details-notification-incompatible2 =
     .message = Το { $name } είναι ασύμβατο με τον { -brand-short-name } { $version }.
 details-notification-incompatible-link = Περισσότερες πληροφορίες
-details-notification-unsigned-and-disabled = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name } και έχει απενεργοποιηθεί.
+details-notification-unsigned-and-disabled = Δεν ήταν δυνατή η επαλήθευση του { $name } για χρήση στο { -brand-short-name }, οπότε απενεργοποιήθηκε.
 details-notification-unsigned-and-disabled2 =
-    .message = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name } και έχει απενεργοποιηθεί.
+    .message = Δεν ήταν δυνατή η επαλήθευση του { $name } για χρήση στο { -brand-short-name }, οπότε απενεργοποιήθηκε.
 details-notification-unsigned-and-disabled-link = Περισσότερες πληροφορίες
-details-notification-unsigned = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name }. Συνεχίστε με προσοχή.
+details-notification-unsigned = Δεν ήταν δυνατή η επαλήθευση του { $name } για χρήση στο { -brand-short-name }. Συνεχίστε με προσοχή.
 details-notification-unsigned2 =
-    .message = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name }. Συνεχίστε με προσοχή.
+    .message = Δεν ήταν δυνατή η επαλήθευση του { $name } για χρήση στο { -brand-short-name }. Συνεχίστε με προσοχή.
+details-notification-hard-blocked-extension =
+    .message = Αυτή η επέκταση έχει αποκλειστεί επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
+details-notification-hard-blocked-other =
+    .message = Αυτό το πρόσθετο έχει αποκλειστεί επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
 details-notification-unsigned-link = Περισσότερες πληροφορίες
 details-notification-blocked = Το { $name } έχει απενεργοποιηθεί για λόγους ασφαλείας ή σταθερότητας.
 details-notification-blocked2 =
     .message = Το { $name } έχει απενεργοποιηθεί για λόγους ασφαλείας ή σταθερότητας.
+details-notification-blocked-link2 = Προβολή λεπτομερειών
+details-notification-soft-blocked-extension-disabled =
+    .message = Αυτή η επέκταση περιορίζεται επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί. Μπορείτε να το ενεργοποιήσετε, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
+details-notification-soft-blocked-extension-enabled =
+    .message = Αυτή η επέκταση παραβιάζει τις πολιτικές της BrowserWorks. Η χρήση της ενδέχεται να είναι επικίνδυνη.
+details-notification-soft-blocked-other-disabled =
+    .message = Αυτό το πρόσθετο περιορίζεται επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί. Μπορείτε να το ενεργοποιήσετε, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
+details-notification-soft-blocked-other-enabled =
+    .message = Αυτό το πρόσθετο παραβιάζει τις πολιτικές της BrowserWorks. Η χρήση του ενδέχεται να είναι επικίνδυνη.
+details-notification-softblocked-link2 = Προβολή λεπτομερειών
 details-notification-blocked-link = Περισσότερες πληροφορίες
 details-notification-softblocked = Το { $name } είναι γνωστό ότι προκαλεί προβλήματα ασφαλείας ή σταθερότητας.
 details-notification-softblocked2 =
@@ -497,3 +561,41 @@ plugins-openh264-name = Κωδικοποιητής βίντεο OpenH264 από 
 plugins-openh264-description = Αυτό το άρθρωμα εγκαθίσταται αυτόματα από τη BrowserWorks για τη συμμόρφωση με τις προδιαγραφές WebRTC και την ενεργοποίηση κλήσεων WebRTC με συσκευές που απαιτούν την κωδικοποίηση βίντεο H.264. Επισκεφθείτε το http://www.openh264.org/ για να δείτε τον πηγαίο κώδικα του κωδικοποιητή και για να μάθετε περισσότερα σχετικά με την υλοποίηση.
 plugins-widevine-name = Πρόσθετο αποκρυπτογράφησης περιεχομένου Widevine από την Google Inc.
 plugins-widevine-description = Αυτό το άρθρωμα ενεργοποιεί την αναπαραγωγή κρυπτογραφημένων πολυμέσων σύμφωνα με τις προδιαγραφές Encrypted Media Extensions. Τα κρυπτογραφημένα πολυμέσα χρησιμοποιούνται συνήθως από ιστοτόπους για προστασία ενάντια στην αντιγραφή προνομιακού περιεχομένου πολυμέσων. Επισκεφθείτε το https://www.w3.org/TR/encrypted-media/ για περισσότερες πληροφορίες σχετικά με το Encrypted Media Extensions.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = Συλλογή υποχρεωτικών δεδομένων:
+addon-permissions-optional-data-collection = Συλλογή προαιρετικών δεδομένων:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = Δικαιώματα και δεδομένα
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = Χρησιμοποιείται από την επέκταση { $extensionName }
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = Χρησιμοποιείται από το { -brand-short-name } στο about:inference
+mlmodel-link-preview = Χρησιμοποιείται από το { -brand-short-name } για τη δημιουργία βασικών σημείων κατά την προεπισκόπηση συνδέσμων
+mlmodel-pdfjs = Χρησιμοποιείται από το { -brand-short-name } για τη δημιουργία εναλλακτικού κειμένου για τις εικόνες που προσθέτετε σε αρχεία PDF
+mlmodel-smart-tab-topic-engine = Χρησιμοποιείται από το { -brand-short-name } για την πρόταση ονομάτων για τις ομάδες καρτελών σας
+mlmodel-smart-tab-embedding-engine = Χρησιμοποιείται από το { -brand-short-name } για την πρόταση καρτελών για τις ομάδες καρτελών σας
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = Τοπική ΤΝ
+addon-category-mlmodel-title =
+    .title = Τοπική ΤΝ
+mlmodel-heading = Διαχείριση τοπικών μοντέλων τεχνητής νοημοσύνης
+mlmodel-description = Ορισμένες δυνατότητες και επεκτάσεις του { -brand-short-name } βασίζονται σε μοντέλα τεχνητής νοημοσύνης, τα οποία λειτουργούν τοπικά στη συσκευή σας. Αυτή η προσέγγιση προστατεύει το απόρρητό σας και, σε πολλές περιπτώσεις, βελτιώνει τις επιδόσεις. <a data-l10n-name="learn-more">Μάθετε περισσότερα</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = Αφαίρεση
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = Μέγεθος αρχείου
+mlmodel-addon-detail-last-used-label = Τελευταία χρήση
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = Χρήση από
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = Κάρτα μοντέλου
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Προβολή στο Hugging Face

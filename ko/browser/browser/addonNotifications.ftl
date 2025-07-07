@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -67,7 +67,7 @@ webext-perms-sideload-menu-item = { -brand-short-name }에 { $addonName } 부가
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } 확장 기능에 새 권한이 필요함
 # This message is shown when one or more extensions have been imported from a
-# different browser into Waterfox, and the user needs to complete the import to
+# different browser into Firefox, and the user needs to complete the import to
 # start these extensions. This message is shown in the appmenu.
 webext-imported-addons = { -brand-short-name }로 가져온 확장 기능 설치 완료
 
@@ -81,6 +81,8 @@ addon-removal-title = { $name } 부가 기능을 제거하시겠습니까?
 addon-removal-message = { -brand-shorter-name }에서 { $name } 확장 기능을 제거하시겠습니까?
 addon-removal-button = 제거
 addon-removal-abuse-report-checkbox = 이 확장 기능을 { -vendor-short-name }에 신고
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = 이 모델을 사용하는 기능이나 확장 기능을 사용하는 경우 다시 추가됩니다.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying = 부가 기능 { $addonCount }개 다운로드 및 검사 중…
@@ -119,6 +121,8 @@ addon-local-install-error-not-signed = 이 부가 기능은 확인되지 않았�
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName }는 { -brand-short-name } { $appVersion }에서 돌아가지 않으므로 설치할 수 없습니다.
+addon-install-error-hard-blocked = { $addonName } 부가 기능은 BrowserWorks 정책을 위반하므로 { -brand-short-name }에 설치할 수 없습니다.
 addon-install-error-blocklisted = { $addonName }는 불안정하게 만들고 보안 문제를 일으킬 것으로 보여 설치할 수 없습니다.
-# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Waterfox.
+addon-install-error-soft-blocked = { $addonName } 부가 기능은 BrowserWorks 정책을 위반하므로 { -brand-short-name }에 설치할 수 없습니다.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
 addon-install-error-admin-install-only = 최종 사용자로 { $addonName } 부가 기능을 설치할 수 없으며, 엔터프라이즈 정책을 사용하는 조직에서만 설치할 수 있습니다.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -49,7 +49,7 @@ migration-imported-safari-reading-list = 구독 목록 (Safari로부터)
 migration-imported-edge-reading-list = 구독 목록 (Edge로부터)
 
 ## These strings are shown if the selected browser data directory is unreadable.
-## In practice, this tends to only occur on Linux when Waterfox
+## In practice, this tends to only occur on Linux when Firefox
 ## is installed as a Snap.
 
 migration-no-permissions-message = { -brand-short-name }는 이 기기에 설치된 다른 브라우저의 프로필에 액세스할 수 없습니다.
@@ -184,6 +184,14 @@ migration-safari-password-import-step1 = Safari에서 "Safari" 메뉴를 열고 
 migration-safari-password-import-step2 = <img data-l10n-name="safari-icon-3dots"/> 버튼을 선택하고 "모든 비밀번호 내보내기"를 선택하세요
 migration-safari-password-import-step3 = 비밀번호 파일을 저장하세요
 migration-safari-password-import-step4 = 아래의 "파일 선택"을 사용하여 저장한 비밀번호 파일을 선택하세요.
+migration-chrome-windows-password-import-header = Chrome에서 비밀번호를 가져오는 방법
+migration-chrome-windows-password-import-steps-header = Chrome:
+migration-chrome-windows-password-import-step1 = 주 메뉴 <img data-l10n-name="chrome-icon-3dots"/>를 열고, 비밀번호 및 자동 완성 > Google 비밀번호 관리자로 이동하세요.
+migration-chrome-windows-password-import-step2 = 메뉴에서 "설정"을 선택하세요.
+migration-chrome-windows-password-import-step3 = "파일 다운로드"를 선택하고 기기에 저장하세요.
+migration-chrome-windows-password-import-step4 = 가져오기를 마치려면, 여기로 돌아와서 "파일 선택"을 하세요.
+migration-manual-password-import-skip-button = 건너뛰기
+migration-manual-password-import-select-button = 파일 선택
 migration-safari-password-import-skip-button = 건너뛰기
 migration-safari-password-import-select-button = 파일 선택
 # Shown in the migration wizard after importing bookmarks from another
@@ -203,7 +211,7 @@ migration-wizard-progress-success-favorites = 즐겨찾기 { $quantity }개
 
 ## The import process identifies extensions installed in other supported
 ## browsers and installs the corresponding (matching) extensions compatible
-## with Waterfox, if available.
+## with Firefox, if available.
 
 # Shown in the migration wizard after importing all matched extensions
 # from supported browsers.

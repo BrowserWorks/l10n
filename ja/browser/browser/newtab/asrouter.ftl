@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -51,7 +51,7 @@ cfr-doorhanger-extension-rating =
 #   $total (Number) - The total number of users using the add-on
 cfr-doorhanger-extension-total-users = { $total } ユーザー
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = どこからでもブックマークを同期します。
 cfr-doorhanger-bookmark-fxa-body = 見つかっちゃった。ブックマークをこの端末だけに残しておかないで同期して。{ -fxaccount-brand-name } を始めましょう。
@@ -111,7 +111,7 @@ cfr-doorhanger-video-support-primary-button = 今すぐ更新
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = 公共 Wi-Fi を使うかのように
@@ -160,7 +160,7 @@ mr2022-background-update-toast-primary-button-label = 今すぐ { -brand-shorter
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = 後で通知
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = 試してみる
     .accesskey = T
@@ -169,7 +169,7 @@ firefoxview-cfr-secondarybutton = 後で
 firefoxview-cfr-header-v2 = 前回のタブをすばやくピックアップ
 firefoxview-cfr-body-v2 = { -firefoxview-brand-name } で最近閉じたタブを取り戻すだけでなく、端末の壁をシームレスに飛び越えられます。
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = { -firefoxview-brand-name } のご紹介
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -212,7 +212,7 @@ fox-doodle-pin-body = 実は、たったのクリック 1 回でお気に入り�
 fox-doodle-pin-primary = { -brand-short-name } でマイリンクを開く
 fox-doodle-pin-secondary = 後で
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>PDF ファイルを { -brand-short-name } で開くように関連付けられます。</strong> ブラウザー内で編集または署名ができます。動作を変更するには、設定で “PDF” を検索してください。
 set-default-pdf-handler-primary = 了解
@@ -237,6 +237,9 @@ device-migration-fxa-spotlight-older-device-primary-button = アカウントを�
 device-migration-fxa-spotlight-getting-new-device-header-2 = 新しい端末に換えようとしていますか？
 device-migration-fxa-spotlight-getting-new-device-body-2 = いくつかの簡単なステップに従って、ブックマークや履歴、パスワードを新しい端末ですぐに使えるようにしましょう。
 device-migration-fxa-spotlight-getting-new-device-primary-button = データをバックアップする手順
+device-migration-fxa-spotlight-sync-header = シームレスにブラウジング
+device-migration-fxa-spotlight-sync-body = 重要なもの (ブックマークやパスワードなど) は暗号化して同期しましょう。{ -brand-product-name } を使っている場所ならどこからでも、すべてにアクセスできます。
+device-migration-fxa-spotlight-sync-primary-button = 開始
 
 ## Set as Default PDF Reader Infobar
 
@@ -273,3 +276,61 @@ tail-fox-spotlight-title = 迷惑なトラッカーを尻尾で振り払いま�
 tail-fox-spotlight-subtitle = 迷惑な広告トラッカーに別れを告げて、安全で高速なインターネットを体験しましょう。
 tail-fox-spotlight-primary-button = { -brand-short-name } でリンクを開く
 tail-fox-spotlight-secondary-button = 後で
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>{ -brand-short-name } の古いバージョンでは 2025 年 1 月 14 日以降に問題が起こる可能性があります。</strong>
+root-certificate-succession-infobar-march-message = <strong>2025 年 3 月 14 日以降も使い続けるには { -brand-short-name } を更新してください。</strong>
+root-certificate-succession-infobar-link = 更新する必要があるのはなぜですか？
+root-certificate-succession-infobar-primary-button =
+    .label = 今すぐ更新
+    .accesskey = U
+root-certificate-succession-infobar-secondary-button =
+    .label = 後で
+    .accesskey = L
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = { -brand-short-name } の重要な更新が適用されていません
+root-certificate-windows-background-notification-subtitle = 更新しない場合、まもなくブラウザーの一部が機能しなくなります。この機会にユーザーを保護する最新機能を手に入れましょう。
+root-certificate-windows-background-notification-learn-more-button = 詳細情報
+root-certificate-windows-background-notification-update-button = { -brand-short-name } を更新
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = 閉じる
+    .aria-label = 閉じる
+fxa-menu-message-sign-up-button = ログイン
+fxa-menu-message-sync-devices-primary-text = すべての端末を同期しましょう
+fxa-menu-message-sync-devices-secondary-text = { -brand-short-name } を使用しているどこからでもあなたの情報 — ブックマークやパスワードなど — へ即座にアクセスできます。
+fxa-menu-message-sync-devices-collapsed-text = すべての端末を同期しましょう
+fxa-menu-message-backup-data-primary-text = ブラウジングデータをバックアップしましょう
+fxa-menu-message-backup-data-secondary-text = すべての端末にあるブックマークやパスワードなどの情報を、自動的に保護します。
+fxa-menu-message-backup-data-collapsed-text = ブラウジングデータをバックアップしましょう
+fxa-menu-message-backup-sync-primary-text = データを安全に同期しましょう
+fxa-menu-message-backup-sync-secondary-text = ほとんどのデータのバックアップを同期して、{ -brand-short-name } を使用しているどこからでもアクセスできるようにしませんか？
+fxa-menu-message-backup-sync-collapsed-text = データの同期とバックアップをしましょう
+fxa-menu-message-mobile-primary-text = タブを携帯端末に送信しましょう
+fxa-menu-message-mobile-secondary-text = タブを携帯端末と同期すれば、中断したところからすぐに再開できます。
+fxa-menu-message-mobile-collapsed-text = 携帯端末と同期しましょう
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = おかえりなさい
+multi-cta-fox-doodle-set-default-checkbox = { -brand-short-name } を既定のブラウザーに設定する
+multi-cta-fox-doodle-pin-startmenu-checkbox = { -brand-short-name } をスタートメニューにピン留めする
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } を Dock に追加する
+       *[other] { -brand-short-name } をタスクバーにピン留めする
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = ブラウジングを開始
+multi-cta-fox-doodle-main-browser-primary-button-label = { -brand-short-name } をメインのブラウザーにする
+multi-cta-fox-doodle-quick-reminder-subtitle = 実は、たったのクリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けられるんです。
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] クリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けましょう。{ -brand-short-name } をリンクを開く既定のブラウザーに設定したり、Dock に追加したりしませんか。
+       *[other] クリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けましょう。{ -brand-short-name } をリンクを開く既定のブラウザーに設定したり、タスクバーにピン留めしたりしませんか。
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = クリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けましょう。{ -brand-short-name } をリンクを開く既定のブラウザーに設定したり、タスクバーやスタートメニューにピン留めしたりしませんか。

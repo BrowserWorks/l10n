@@ -1,6 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 
 tab-context-new-tab =
     .label = لسان جديد
@@ -28,11 +32,17 @@ duplicate-tabs =
 close-tabs-to-the-start =
     .label = أغلِق الألسنة على اليمين
     .accesskey = م
+close-tabs-to-the-start-vertical =
+    .label = أغلِق الألسنة بالأعلى
+    .accesskey = ل
 # The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
 close-tabs-to-the-end =
     .label = أغلق الألسنة على اليسار
     .accesskey = س
+close-tabs-to-the-end-vertical =
+    .label = أغلِق الألسنة بالأسفل
+    .accesskey = ل
 close-other-tabs =
     .label = أغلق الألسنة الأخرى
     .accesskey = خ
@@ -72,9 +82,22 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = أغلِق أكثر من لسان
     .accesskey = ك
+tab-context-close-duplicate-tabs =
+    .label = أغلِق الألسنة المتكررة
+    .accesskey = ك
 tab-context-share-url =
     .label = شارِك
     .accesskey = ش
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = لسان جديد إلى اليمين
+    .accesskey = ن
+tab-context-new-tab-open-vertical =
+    .label = لسان جديد أسفل
+    .accesskey = ن
+tab-context-new-group =
+    .label = مجموعة جديدة
+    .accesskey = ة
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.

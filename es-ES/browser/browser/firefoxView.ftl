@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -32,6 +32,9 @@ firefoxview-tabpickup-progress-label = { $percentValue }% completado
 firefoxview-tabpickup-step-signin-header = Cambie fácilmente entre dispositivos
 firefoxview-tabpickup-step-signin-description = Para ver las pestañas de su teléfono aquí, primero inicie sesión o cree una cuenta.
 firefoxview-tabpickup-step-signin-primarybutton = Continuar
+firefoxview-syncedtabs-signin-header-2 = { -brand-product-name } en todos los dispositivos
+firefoxview-syncedtabs-signin-description-2 = Para ver las pestañas abiertas en su teléfono y otros dispositivos, inicie sesión o regístrese para obtener una cuenta. Con una cuenta, también se pueden sincronizar las contraseñas, historial y más.
+firefoxview-syncedtabs-signin-primarybutton-2 = Iniciar sesión
 firefoxview-syncedtabs-signin-header = Recupere sus pestañas desde cualquier lugar
 firefoxview-syncedtabs-signin-description = Para ver sus pestañas desde cualquier lugar donde use { -brand-product-name }, inicie sesión en su cuenta. Si no tiene una cuenta, le guiaremos a través del proceso de registro.
 firefoxview-syncedtabs-signin-primarybutton = Iniciar sesión o registrarse
@@ -39,6 +42,8 @@ firefoxview-tabpickup-adddevice-header = Sincronizar { -brand-product-name } en 
 firefoxview-tabpickup-adddevice-description = Descargue { -brand-product-name } para dispositivos móviles e inicie sesión allí.
 firefoxview-tabpickup-adddevice-learn-how = Saber cómo
 firefoxview-tabpickup-adddevice-primarybutton = Obtenga { -brand-product-name } para móviles
+firefoxview-syncedtabs-adddevice-header-2 = Recupere sus pestañas desde cualquier lugar
+firefoxview-syncedtabs-adddevice-description-2 = Inicie sesión en { -brand-product-name } en su teléfono o en otro ordenador para ver las pestañas aquí. Descubra cómo <a data-l10n-name="url">conectar dispositivos adicionales</a>.
 firefoxview-syncedtabs-adddevice-header = Inicie sesión en { -brand-product-name } en sus otros dispositivos
 firefoxview-syncedtabs-adddevice-description = Para ver sus pestañas desde cualquier lugar donde use { -brand-product-name }, inicie sesión en todos sus dispositivos. Obtenga información sobre cómo <a data-l10n-name="url">conectar dispositivos adicionales</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Pruebe { -brand-product-name } para dispositivos móviles
@@ -138,7 +143,7 @@ firefoxview-synced-tabs-header = Pestañas de otros dispositivos
 
 ##
 
-# Used for a link in collapsible cards, in the ’Recent browsing’ page of Waterfox View
+# Used for a link in collapsible cards, in the ’Recent browsing’ page of Firefox View
 firefoxview-view-all-link = Ver todo
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
@@ -164,6 +169,9 @@ firefoxview-search-text-box-history =
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Buscar pestañas cerradas recientemente
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-tabs =
+    .placeholder = Buscar pestañas
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-syncedtabs =
     .placeholder = Buscar en pestañas sincronizadas
@@ -211,7 +219,7 @@ firefoxview-history-site-localhost = (archivos locales)
 firefoxview-show-all-history = Mostrar todo el historial
 firefoxview-view-more-browsing-history = Ver más historial de navegación
 
-## Message displayed in Waterfox View when the user has no history data
+## Message displayed in Firefox View when the user has no history data
 
 firefoxview-history-empty-header = Vuelva a donde ya ha estado
 firefoxview-history-empty-description = A medida que navega, las páginas que visita se mostrarán aquí.
@@ -223,15 +231,17 @@ firefoxview-history-empty-description-two = La protección de su privacidad est�
 firefoxview-choose-browser-button = Elegir navegador
     .title = Elegir navegador
 
-## Message displayed in Waterfox View when the user has chosen to never remember History
+## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Nada que mostrar
 firefoxview-dont-remember-history-empty-description = La protección de su privacidad está en el corazón de lo que hacemos. Por eso puede controlar la actividad que recuerda { -brand-short-name }.
 firefoxview-dont-remember-history-empty-description-two = Según la configuración actual, { -brand-short-name } no recuerda la actividad mientras navega. Para cambiarlo, <a data-l10n-name="history-settings-url-two">modifique la configuración del historial</a>.
+firefoxview-dont-remember-history-empty-header-2 = Usted tiene el control de lo que { -brand-short-name } recuerda
+firefoxview-dont-remember-history-empty-description-one = En este momento, { -brand-short-name } no recuerda la actividad de navegación. Para cambiarlo, <a data-l10n-name="history-settings-url-two">actualice la configuración del historial</a>.
 
 ##
 
-# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Waterfox View
+# This label is read by screen readers when focusing the close button for the "Import history from another browser" banner in Firefox View
 firefoxview-import-history-close-button =
     .aria-label = Cerrar
     .title = Cerrar
@@ -241,7 +251,7 @@ firefoxview-import-history-close-button =
 firefoxview-import-history-header = Importar historial desde otro navegador
 firefoxview-import-history-description = Haga de { -brand-short-name } su navegador favorito. Importe el historial de navegación, los marcadores y más.
 
-## Message displayed in Waterfox View when the user has no recently closed tabs data
+## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = ¿Ha cerrado una pestaña por error?
 firefoxview-recentlyclosed-empty-description = Aquí encontrará las pestañas que ha cerrado recientemente, para que pueda volver a abrir cualquiera de ellas rápidamente.

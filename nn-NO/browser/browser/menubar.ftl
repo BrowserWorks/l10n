@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -60,8 +60,8 @@ menu-file-new-tab =
     .label = Ny fane
     .accesskey = f
 menu-file-new-container-tab =
-    .label = Ny innhaldsfane
-    .accesskey = i
+    .label = Ny behaldarfane
+    .accesskey = b
 menu-file-new-window =
     .label = Nytt vindauge
     .accesskey = N
@@ -70,7 +70,7 @@ menu-file-new-private-window =
     .accesskey = v
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Waterfox is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Opne adresse…
 menu-file-open-file =
@@ -254,6 +254,19 @@ menu-bookmarks-other =
 menu-bookmarks-mobile =
     .label = Mobile bokmerke
 
+## Profiles Menu
+
+menu-profiles =
+    .label = Profilar
+menu-profiles-manage-profiles =
+    .label = Handsam profilar
+menu-profiles-new-profile =
+    .label = Ny profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (gjeldande)
+
 ## Tools Menu
 
 menu-tools =
@@ -262,6 +275,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Nedlastingar
     .accesskey = N
+menu-tools-extensions-and-themes =
+    .label = Utvidingar og tema
+    .accesskey = U
 menu-tools-addons-and-themes =
     .label = Tillegg og tema
     .accesskey = T
@@ -339,7 +355,7 @@ menu-help-exit-troubleshoot-mode =
     .label = Slå av feilsøkingsmodus
     .accesskey = S
 menu-help-switch-device =
-    .label = Byter til ei ny eining
+    .label = Byte til ei ny eining
     .accesskey = B
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

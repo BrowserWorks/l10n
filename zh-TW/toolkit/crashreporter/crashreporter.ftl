@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -8,6 +8,7 @@ crashreporter-crashed-and-restore = { -brand-short-name } 意外碰上問題而�
 crashreporter-plea = 為了協助我們修正相關錯誤，煩請傳回錯誤關閉的資訊報表。
 crashreporter-information = 本程式是為軟體發生錯誤、自行關閉後，回傳錯誤資訊給 { -vendor-short-name } 之用，不應直接執行。
 crashreporter-error = { -brand-short-name } 發生錯誤而自行關閉。可惜，錯誤回報員無法回傳關於這次錯誤的資訊。
+crashreporter-error-details-header = 詳細資訊：
 # $details (String) - the reason that a crash report cannot be submitted
 crashreporter-error-details = 細節如下: { $details }
 crashreporter-no-run-message = 本程式是為軟體出現錯誤、自行關閉時回傳錯誤資訊之用，不應直接執行。
@@ -16,9 +17,13 @@ crashreporter-loading-details = 載入中…
 crashreporter-view-report-title = 報表內容
 crashreporter-comment-prompt = 加上附註（附註會是公開可見的）
 crashreporter-report-info = 報表中另包含程式錯誤關閉時的狀況資訊。
+crashreporter-checkbox-test-hardware = 檢查我的裝置是否有硬體或設定問題。
+crashreporter-checkbox-send-report = 告訴 { -vendor-short-name } 這次錯誤的資訊，讓他們修正。
+crashreporter-checkbox-include-url = 包含我所瀏覽的頁面網址。
 crashreporter-send-report = 告訴 { -vendor-short-name } 這次錯誤的資訊，讓他們修正。
 crashreporter-include-url = 包含我所瀏覽的頁面網址。
 crashreporter-submit-status = 您的資訊報表會在您離開或重開前送出。
+crashreporter-submit-waiting-hardware-tests = 檢查裝置是否有硬體或設定問題…
 crashreporter-submit-in-progress = 送出資訊報表中…
 crashreporter-submit-success = 報表成功送出！
 crashreporter-submit-failure = 送出報表時發生錯誤。
@@ -46,3 +51,4 @@ crashreporter-error-no-home-dir = 缺少家目錄
 # $to (String) - the destination path
 crashreporter-error-moving-path = 無法將 { $from } 移動至 { $to }
 crashreporter-error-version-eol = 版本過舊：已不再接受錯誤回報。
+crashreporter-error-failed-to-generate-minidump = 應用程式產生錯誤資訊時發生錯誤。

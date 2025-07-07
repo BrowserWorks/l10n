@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -162,9 +162,9 @@ extensions-warning-check-compatibility2 =
     .message = A verificação de compatibilidade de extensões está desativada. Você pode ter extensões incompatíveis.
 extensions-warning-check-compatibility-button = Ativar
     .title = Ativar verificação de compatibilidade de extensões
-extensions-warning-update-security = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
+extensions-warning-update-security = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer este computador.
 extensions-warning-update-security2 =
-    .message = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
+    .message = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer este computador.
 extensions-warning-update-security-button = Ativar
     .title = Ativar verificação de segurança da atualização de extensões
 extensions-warning-imported-addons2 =
@@ -205,6 +205,10 @@ addon-updates-manual-updates-found = Ver atualizações disponíveis
 ## Add-on install/debug strings for page options menu
 
 addon-install-from-file = Instalar de um arquivo…
+    .accesskey = I
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = Instalar ou atualizar extensão a partir de arquivo…
     .accesskey = I
 addon-install-from-file-dialog-title = Selecionar extensão para instalar
 addon-install-from-file-filter-name = Extensões
@@ -277,6 +281,12 @@ discopane-notice-recommendations2 =
         Algumas dessas recomendações são personalizadas. Elas são feitas com base 
         em outras extensões que você instalou, preferências de perfil e estatísticas de uso.
 discopane-notice-learn-more = Saiba mais
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Seus temas de esquemas de cores foram removidos.
+    .message = O { -brand-product-name } atualizou sua coleção de esquemas de cores. Removemos as versões antigas da sua lista de temas salvos. Obtenha novas versões no site de extensões.
+colorway-removal-notice-learn-more = Saiba mais
+colorway-removal-notice-button = Obtenha temas de esquemas de cores atualizados
 privacy-policy = Política de privacidade
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -297,6 +307,11 @@ find-more-themes = Encontrar mais temas
 # used for screen readers.
 addon-options-button =
     .aria-label = Mais opções
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 = Extensões e temas permitem personalizar o { -brand-product-name }. Elas podem melhorar a privacidade, aumentar a produtividade, aprimorar mídias, mudar a aparência do { -brand-product-name } e muito mais. Esses pequenos programas geralmente são desenvolvidos por terceiros. Eis uma seleção que o Waterfox <a data-l10n-name="learn-more-trigger">recomenda</a> por ter excepcional segurança, desempenho e funcionalidade.
 
 ## Add-on actions
 
@@ -383,6 +398,10 @@ addon-detail-group-label-updates =
     .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed3 =
+    .title = Permitido em janelas privativas
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Permitido em janelas privativas
     .aria-label = { addon-badge-private-browsing-allowed2.title }
@@ -414,14 +433,32 @@ addon-detail-group-label-quarantined-domains =
 addon-badge-recommended2 =
     .title = O { -brand-product-name } só recomenda extensões que atendem aos nossos padrões de segurança e desempenho
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "BrowserWorks" in the string below because the extensions are built
-# by BrowserWorks and we don't want forks to display "by Fork".
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Extensão oficial desenvolvida pela BrowserWorks. Atende aos padrões de desempenho e segurança
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Esta extensão foi revisada para atender aos nossos padrões de segurança e desempenho.
     .aria-label = { addon-badge-verified2.title }
+# We hard code "Mozilla" in the string below because the extensions are built
+# by Mozilla and we don't want forks to display "by Fork".
+addon-badge-line4 =
+    .title = Extensão oficial desenvolvida pela BrowserWorks. Atende aos padrões de desempenho e segurança
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = Esta extensão foi revisada para atender aos padrões de segurança e desempenho
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = O Waterfox só recomenda extensões que atendem aos padrões de segurança e desempenho
 
 ##
 
@@ -429,6 +466,7 @@ available-updates-heading = Atualizações disponíveis
 recent-updates-heading = Atualizações recentes
 release-notes-loading = Carregando…
 release-notes-error = Desculpe, houve um erro ao carregar as notas de atualização.
+addon-permissions-empty2 = Esta extensão não requer nenhuma permissão.
 addon-permissions-empty = Esta extensão não exige nenhum permissão
 addon-permissions-required = Permissões necessárias para a funcionalidade principal:
 addon-permissions-optional = Permissões opcionais para funcionalidades adicionais:
@@ -438,8 +476,8 @@ recommended-themes-heading = Temas recomendados
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Concede as seguintes capacidades e <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Waterfox Color theme shown at the bottom of the theme
-# list view. The "Waterfox Color" name itself should not be translated.
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Sentindo criatividade? <a data-l10n-name="link">Crie seu próprio tema com o Waterfox Color.</a>
 
 ## Page headings
@@ -456,6 +494,9 @@ shortcuts-heading = Gerenciar atalhos de extensões
 default-heading-search-label = Encontrar mais extensões
 addons-heading-search-input =
     .placeholder = Pesquisar em addons.mozilla.org
+addons-heading-search-button =
+    .title = Pesquisar em addons.mozilla.org
+    .aria-label = Pesquisar em addons.mozilla.org
 addon-page-options-button =
     .title = Ferramentas para todas as extensões
 
@@ -478,10 +519,24 @@ details-notification-unsigned-and-disabled-link = Mais informações
 details-notification-unsigned = { $name } não pôde ser verificado para uso em { -brand-short-name }. Proceda com cautela.
 details-notification-unsigned2 =
     .message = { $name } não pôde ser verificado para uso em { -brand-short-name }. Proceda com cautela.
+details-notification-hard-blocked-extension =
+    .message = Esta extensão foi bloqueada por violar diretrizes da BrowserWorks e foi desativada.
+details-notification-hard-blocked-other =
+    .message = Esta extensão foi bloqueada por violar diretrizes da BrowserWorks e foi desativada.
 details-notification-unsigned-link = Mais informações
 details-notification-blocked = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
 details-notification-blocked2 =
     .message = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
+details-notification-blocked-link2 = Ver detalhes
+details-notification-soft-blocked-extension-disabled =
+    .message = Esta extensão está restrita por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+details-notification-soft-blocked-extension-enabled =
+    .message = Esta extensão viola diretrizes da BrowserWorks. Usar pode ser arriscado.
+details-notification-soft-blocked-other-disabled =
+    .message = Esta extensão está restrita por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+details-notification-soft-blocked-other-enabled =
+    .message = Esta extensão viola diretrizes da BrowserWorks. Usar pode ser arriscado.
+details-notification-softblocked-link2 = Ver detalhes
 details-notification-blocked-link = Mais informações
 details-notification-softblocked = O { $name } é reconhecido como causa de problemas de segurança ou estabilidade.
 details-notification-softblocked2 =
@@ -499,3 +554,41 @@ plugins-openh264-name = Codec de vídeo OpenH264 fornecido por Cisco Systems, In
 plugins-openh264-description = Este plugin é instalado automaticamente pela BrowserWorks em conformidade com a especificação WebRTC e para habilitar chamadas WebRTC com dispositivos que requerem o codec de vídeo H.264. Visite http://www.openh264.org/ para ver o código-fonte do codec e saber mais sobre a implementação.
 plugins-widevine-name = Módulo de descriptografia de conteúdo Widevine fornecido pela Google Inc.
 plugins-widevine-description = Este plugin ativa a reprodução de mídia criptografada, em conformidade com a especificação Encrypted Media Extensions. Mídia criptografada é usada tipicamente por sites para se proteger contra cópia de conteúdo de mídia premium. Visite https://www.w3.org/TR/encrypted-media/ para mais informações sobre Encrypted Media Extensions.
+
+## Headings for the Permissions tab in `about:addons` when the data collection
+## feature is enabled.
+
+addon-permissions-required-data-collection = Coleta de dados necessária:
+addon-permissions-optional-data-collection = Coleta de dados opcional:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = Permissões e dados
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = Usado pela extensão { $extensionName }
+
+## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
+
+mlmodel-about-inference = O { -brand-short-name } usa isso em about:inference
+mlmodel-link-preview = O { -brand-short-name } usa isso para gerar pontos chave ao visualizar links
+mlmodel-pdfjs = O { -brand-short-name } usa isto para criar texto alternativo em imagens que você adiciona a documentos PDF
+mlmodel-smart-tab-topic-engine = O { -brand-short-name } usa isto para sugerir nomes para seus grupos de abas
+mlmodel-smart-tab-embedding-engine = O { -brand-short-name } usa isto para sugerir abas para seus grupos de abas
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = Inteligência artificial no dispositivo
+addon-category-mlmodel-title =
+    .title = Inteligência artificial no dispositivo
+mlmodel-heading = Gerenciar modelos de inteligência artificial no dispositivo
+mlmodel-description = Alguns recursos e extensões do { -brand-short-name } são baseados em modelos de inteligência artificial que funcionam localmente em seu dispositivo. Esta abordagem protege sua privacidade e, em muitos casos, acelera o desempenho. <a data-l10n-name="learn-more">Saiba mais</a>
+# Label for button that when clicked removed local model
+mlmodel-remove-addon-button =
+    .aria-label = Remover
+# Label for the aggregated value of all files for a model
+mlmodel-addon-detail-totalsize-label = Tamanho do arquivo:
+mlmodel-addon-detail-last-used-label = Último uso
+# This is a section label to describe what extensions or features use a specific local AI model
+mlmodel-addon-detail-used-by-label = Usado por
+# This is a section label to describe the link to the model card on the Hugging Face website
+mlmodel-addon-detail-model-card = Cartão de modelo
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Ver no Hugging Face

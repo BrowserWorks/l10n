@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -18,6 +18,10 @@ support-addons-type = 類型
 support-addons-enabled = 已啟用
 support-addons-version = 版本
 support-addons-id = ID
+# In the add-on world, locations are where the addon files are stored. Each
+# location has name. For instance: app-system-addons, app-builtin,
+# app-temporary, etc.
+support-addons-location-name = 位置
 legacy-user-stylesheets-title = 傳統使用者樣式表
 legacy-user-stylesheets-enabled = 啟用
 legacy-user-stylesheets-stylesheet-types = 樣式表
@@ -48,8 +52,8 @@ app-basics-update-dir =
         [linux] 更新目錄
        *[other] 更新資料夾
     }
-app-basics-update-history = 更新記錄
-app-basics-show-update-history = 顯示更新記錄
+app-basics-update-history = 更新紀錄
+app-basics-show-update-history = 顯示更新紀錄
 # Represents the path to the binary used to start the application.
 app-basics-binary = 應用程式二進位檔案
 app-basics-profile-dir =
@@ -184,6 +188,8 @@ media-capabilities-enumerate = 列舉資料庫
 
 media-codec-support-sw-decoding = 軟體解碼
 media-codec-support-hw-decoding = 硬體解碼
+media-codec-support-sw-encoding = 軟體編碼
+media-codec-support-hw-encoding = 硬體編碼
 media-codec-support-codec-name = 解碼器名稱
 media-codec-support-supported = 支援
 media-codec-support-unsupported = 不支援
@@ -221,7 +227,7 @@ intl-regional-prefs = 區域偏好設定
 
 ## Remote Debugging
 ##
-## The Waterfox remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.

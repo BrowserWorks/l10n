@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -15,10 +15,10 @@ format-group-label =
 orientation-label =
     .value = Orientering:
 portrait =
-    .label = Ståande
+    .label = Ståande (portrait)
     .accesskey = t
 landscape =
-    .label = Liggande
+    .label = Liggande (landscape)
     .accesskey = L
 scale =
     .label = Skaler:
@@ -103,7 +103,6 @@ print-window =
     .title = Skriv ut
 print-complete =
     .value = Utskrifta er ferdig.
-
 # Variables
 # $percent (integer) - Number of printed percentage
 print-percent =

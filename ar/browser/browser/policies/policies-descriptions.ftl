@@ -1,10 +1,10 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Waterfox installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -30,10 +30,10 @@ policy-DisableBuiltinPDFViewer = تعطيل PDF.js، عارِض ملفات PDF �
 policy-DisableDefaultBrowserAgent = امنع وكيل المتصفّح المبدئي من اتخاذ أي إجراء. لا ينطبق هذا إلا على وِندوز إذ ليس لبقية المنصات وكلاء.
 policy-DisableDeveloperTools = منع الوصول إلى أدوات المطوّرين.
 policy-DisableFeedbackCommands = تعطيل أوامر إرسال الانطباعات في قائمة المساعدة (”أرسِل تعليقًا“ و ”أبلغ عن موقع مخادع“).
-policy-DisableWaterfoxAccounts = تعطيل الخدمات التي تعتمد { -fxaccount-brand-name }، بما في ذلك المزامنة.
-# Waterfox Screenshots is the name of the feature, and should not be translated.
-policy-DisableWaterfoxScreenshots = تعطيل ميزة لقطات شاشة Waterfox.
-policy-DisableWaterfoxStudies = منع { -brand-short-name } من تشغيل الدارسات.
+policy-DisableFirefoxAccounts = تعطيل الخدمات التي تعتمد { -fxaccount-brand-name }، بما في ذلك المزامنة.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = تعطيل ميزة لقطات شاشة Waterfox.
+policy-DisableFirefoxStudies = منع { -brand-short-name } من تشغيل الدارسات.
 policy-DisableForgetButton = منع الوصول إلى زر النسيان.
 policy-DisableFormHistory = عدم تذكّر تأريخ الاستمارات والبحث.
 policy-DisablePrimaryPasswordCreation = إن كان ”صحيح“، فلا يمكن إنشاء كلمة سر رئيسية.
@@ -47,6 +47,7 @@ policy-DisableSecurityBypass = منع المستخدم من تخطّي أنوا�
 policy-DisableSetAsDesktopBackground = تعطيل أمر القائمة الخاص بالضبط كخلفية سطح مكتب للصور.
 policy-DisableSystemAddonUpdate = منع المتصفّح من تثبيت امتدادات النظام أو تحديثها.
 policy-DisableTelemetry = تعطيل تيليمتري.
+policy-DisableThirdPartyModuleBlocking = امنع المستخدم من حظر وحدات الطرف الثالث التي يتم حقنها في عملية { -brand-short-name }.
 policy-DisplayBookmarksToolbar = عرض شريط أدوات العلامات مبدئيا.
 policy-DisplayMenuBar = عرض شريط القوائم مبدئيا.
 policy-DNSOverHTTPS = ضبط DNS عبر HTTPS
@@ -63,7 +64,7 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = تعطيل الت
 policy-Extensions = تثبيت أو إزالة أو قفل حالة الامتدادات. يأخذ خيار التثبيت مسارات محلية أو شبكية كمعطيات. يأخذ خياري الإزالة والقفل معرّفات الامتدادات.
 policy-ExtensionSettings = إدارة كل ما يتعلّق بتثبيت الامتدادات.
 policy-ExtensionUpdate = تفعيل/تعطيل تحديث الامتدادات تلقائيًا.
-policy-WaterfoxSuggest = اضبط { -firefox-suggest-brand-name }.
+policy-FirefoxSuggest = اضبط { -firefox-suggest-brand-name }.
 policy-Handlers = ضبط طرائق التعامل مع التطبيقات المبدئية.
 policy-HardwareAcceleration = إن كان ”خطأ“، عطِّل التسريع العتادي.
 # “lock” means that the user won’t be able to change this setting
@@ -108,6 +109,7 @@ policy-ShowHomeButton = عرض زر الصفحة الرئيسية في شريط 
 policy-SSLVersionMax = ضبط إصدارة SSL العليا.
 policy-SSLVersionMin = ضبط إصدارة SSL الدنيا.
 policy-SupportMenu = إضافة عنصر ”الدعم“ (يمكن تخصيصه) في قائمة المساعدة.
+policy-TranslateEnabled = فعّل أو عطّل ترجمة صفحة الوِب.
 policy-UserMessaging = عدم عرض بعض الرسائل بعينها للمستخدم.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = منع زيارة المواقع. طالع التوثيق لتفاصيل أكثر بخصوص النسق.

@@ -1,4 +1,4 @@
-# This Source Code Form is subject to the terms of the BrowserWorks Public
+# This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } usuários
     }
 
-## Waterfox Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sincronize seus favoritos em qualquer lugar.
 cfr-doorhanger-bookmark-fxa-body = Ótimo achado! Agora não fique sem este favorito nos seus dispositivos móveis. Comece com uma { -fxaccount-brand-name }.
@@ -120,7 +120,7 @@ cfr-doorhanger-video-support-primary-button = Atualizar agora
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
 ## bit of info about how to improve their privacy and then offered a button
-## to the BrowserWorks VPN page and a link to dismiss the dialog.
+## to the Mozilla VPN page and a link to dismiss the dialog.
 
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Parece que você está usando uma rede pública de WiFi
@@ -169,7 +169,7 @@ mr2022-background-update-toast-primary-button-label = Abrir agora o { -brand-sho
 # exceeding characters will be truncated.
 mr2022-background-update-toast-secondary-button-label = Lembrar mais tarde
 
-## Waterfox View CFR
+## Firefox View CFR
 
 firefoxview-cfr-primarybutton = Experimentar
     .accesskey = E
@@ -178,7 +178,7 @@ firefoxview-cfr-secondarybutton = Agora não
 firefoxview-cfr-header-v2 = Continue rapidamente de onde parou
 firefoxview-cfr-body-v2 = Recupere abas fechadas recentemente, além de alternar facilmente entre dispositivos com o { -firefoxview-brand-name }.
 
-## Waterfox View Spotlight
+## Firefox View Spotlight
 
 firefoxview-spotlight-promo-title = Apresentamos o { -firefoxview-brand-name }
 # “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
@@ -221,7 +221,7 @@ fox-doodle-pin-body = Aqui está um lembrete rápido de que você pode ter seu n
 fox-doodle-pin-primary = Abrir meus links com o { -brand-short-name }
 fox-doodle-pin-secondary = Agora não
 
-## These strings are used in the Set Waterfox as Default PDF Handler for Existing Users experiment
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>Agora seus arquivos PDF são abertos no { -brand-short-name }.</strong> Edite ou assine formulários diretamente em seu navegador. Para alterar, procure “PDF” nas configurações.
 set-default-pdf-handler-primary = Entendi
@@ -246,11 +246,14 @@ device-migration-fxa-spotlight-older-device-primary-button = Criar uma conta
 device-migration-fxa-spotlight-getting-new-device-header-2 = Planeja ter um novo dispositivo?
 device-migration-fxa-spotlight-getting-new-device-body-2 = Siga algumas etapas simples para levar seus favoritos, histórico e senhas com você ao começar a usar um novo dispositivo.
 device-migration-fxa-spotlight-getting-new-device-primary-button = Como fazer backup dos meus dados
+device-migration-fxa-spotlight-sync-header = Navegue sem perder o ritmo
+device-migration-fxa-spotlight-sync-body = Sincronize com criptografia todas as suas informações importantes, como favoritos e senhas. Você pode acessar tudo em qualquer lugar que use o { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Começar
 
 ## Set as Default PDF Reader Infobar
 
 # The question portion of the following message should have the <strong> and </strong> tags surrounding it.
-pdf-default-notification-message = <strong>Tornar o { -brand-short-name } seu leitor padrão de PDF?</strong> Use o { -brand-short-name } para ler e editar arquivos PDF salvos em seu computador.
+pdf-default-notification-message = <strong>Tornar o { -brand-short-name } seu leitor padrão de PDF?</strong> Use o { -brand-short-name } para ler e editar arquivos PDF salvos neste computador.
 pdf-default-notification-set-default-button =
     .label = Definir como padrão
 pdf-default-notification-decline-button =
@@ -258,7 +261,7 @@ pdf-default-notification-decline-button =
 
 ## Launch on login infobar notification
 
-launch-on-login-infobar-message = <strong>Abrir o { -brand-short-name } sempre que reiniciar o computador?</strong> Agora você pode configurar o { -brand-short-name } para abrir automaticamente ao reiniciar o dispositivo.
+launch-on-login-infobar-message = <strong>Quer que o { -brand-short-name } seja aberto sempre que o computador reiniciar?</strong> Agora você pode configurar o { -brand-short-name } para abrir automaticamente ao reiniciar o dispositivo.
 launch-on-login-learnmore = Saiba mais
 launch-on-login-infobar-confirm-button = Sim, abrir o { -brand-short-name }
     .accesskey = S
@@ -282,3 +285,61 @@ tail-fox-spotlight-title = Mantenha rastreadores incômodos fora do seu caminho
 tail-fox-spotlight-subtitle = Diga adeus a rastreadores irritantes de anúncios e relaxe em uma experiência de internet mais rápida e segura.
 tail-fox-spotlight-primary-button = Abrir meus links com o { -brand-short-name }
 tail-fox-spotlight-secondary-button = Agora não
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = <strong>Versões mais antigas do { -brand-short-name } podem começar a ter problemas em 14 de janeiro de 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Atualize para continuar usando o { -brand-short-name } após 14 de março de 2025.</strong>
+root-certificate-succession-infobar-link = Por que devo atualizar?
+root-certificate-succession-infobar-primary-button =
+    .label = Atualizar agora
+    .accesskey = A
+root-certificate-succession-infobar-secondary-button =
+    .label = Mais tarde
+    .accesskey = t
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = Você perdeu uma atualização importante do { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Partes do navegador irão parar de funcionar em breve se você não atualizar. Agora é um ótimo momento para obter nossas proteções e recursos mais recentes.
+root-certificate-windows-background-notification-learn-more-button = Saiba mais
+root-certificate-windows-background-notification-update-button = Atualizar o { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Fechar
+    .aria-label = Fechar
+fxa-menu-message-sign-up-button = Criar uma conta
+fxa-menu-message-sync-devices-primary-text = Sincronize todos os seus dispositivos
+fxa-menu-message-sync-devices-secondary-text = Acesse imediatamente suas informações, como favoritos e senhas, onde quer que use o { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Sincronize todos os seus dispositivos
+fxa-menu-message-backup-data-primary-text = Faça backup dos dados do seu navegador
+fxa-menu-message-backup-data-secondary-text = Proteja automaticamente favoritos, senhas e outras informações em todos os seus dispositivos.
+fxa-menu-message-backup-data-collapsed-text = Faça backup dos dados do navegador
+fxa-menu-message-backup-sync-primary-text = Mantenha seus dados seguros e sincronizados
+fxa-menu-message-backup-sync-secondary-text = A sincronização cria cópia de segurança da maioria dos seus dados, para você poder acessar em qualquer lugar em que use o { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Sincronizar e fazer backup de dados
+fxa-menu-message-mobile-primary-text = Envie abas para seu celular
+fxa-menu-message-mobile-secondary-text = Continue de onde parou num instante ao ter suas abas sincronizadas com um dispositivo móvel.
+fxa-menu-message-mobile-collapsed-text = Sincronizar com celular
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Bom ter você de volta
+multi-cta-fox-doodle-set-default-checkbox = Definir o { -brand-short-name } como padrão
+multi-cta-fox-doodle-pin-startmenu-checkbox = Fixar o { -brand-short-name } no menu Iniciar
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Manter { -brand-short-name } no Dock
+       *[other] Fixar o { -brand-short-name } na barra de tarefas
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Iniciar navegação
+multi-cta-fox-doodle-main-browser-primary-button-label = Tornar o { -brand-short-name } meu navegador principal
+multi-cta-fox-doodle-quick-reminder-subtitle = Este é um lembrete rápido de que você pode ter seu navegador preferido, com foco em privacidade, a apenas um clique.
+multi-cta-fox-doodle-privacy-focused-subtitle =
+    { PLATFORM() ->
+        [macos] Tenha seu navegador preferido, com foco em privacidade, a apenas um clique. Defina o { -brand-short-name } como navegador padrão para abrir links e o mantenha no Dock.
+       *[other] Tenha seu navegador preferido, com foco em privacidade, a apenas um clique. Defina o { -brand-short-name } como navegador padrão para abrir links e fixe na barra de tarefas.
+    }
+multi-cta-fox-doodle-msix-privacy-focused-subtitle = Tenha seu navegador preferido, com foco em privacidade, a apenas um clique. Defina o { -brand-short-name } como navegador padrão para abrir links e fixe na barra de tarefas e no menu Iniciar.
