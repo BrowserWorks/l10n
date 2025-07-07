@@ -3,61 +3,47 @@
 # Make sure to execute from the scripts directory
 cd "$(dirname "$0")"
 
-N=$(getconf _NPROCESSORS_ONLN 2>/dev/null || getconf NPROCESSORS_ONLN)
-
-update_locale() {
-    local AB_CD=$1
-    local TEMP_DIR="temp_$AB_CD"
-
-    rm -rf "$TEMP_DIR" || true
-    mkdir -p "$TEMP_DIR"
-
-    (
-    cd "$TEMP_DIR"
-    curl -L -o "$AB_CD.zip" "https://hg.mozilla.org/l10n-central/$AB_CD/archive/tip.zip"
-    unzip "$AB_CD.zip"
-    rm "$AB_CD.zip"
-
-    for DIR in *; do
-        if [[ $AB_CD == *"-"* ]]; then
-            OUT=$(echo "$DIR" | cut -d '-' -f 1,2)
-        else
-            OUT=$(echo "$DIR" | cut -d '-' -f 1)
-        fi
-
-        mv "$DIR" "$OUT"
-
-        # Preserve existing waterfox.ftl file
-        if [[ -f "../../$OUT/browser/browser/waterfox.ftl" ]]; then
-            mkdir -p "$OUT/browser/browser/"
-            cp "../../$OUT/browser/browser/waterfox.ftl" "$OUT/browser/browser/"
-        fi
-
-        # Replace strings in all files except waterfox.ftl
-        find "$OUT" -type f ! -name "waterfox.ftl" -print0 | xargs -0 sed -i '' \
-            -e 's/Mozilla Firefox/Waterfox/g' \
-            -e 's/Mozilla Foundation/BrowserWorks/g' \
-            -e 's/Firefox/Waterfox/g' \
-            -e 's/Mozilla/BrowserWorks/g'
-
-        # Remove existing locale directory and move the new one in place
-        rm -rf "../../$OUT"
-        mv "$OUT" "../../"
-    done
-    )
-
-    rm -rf "$TEMP_DIR"
-}
-
-LOCALES="ar cs da de el en-GB es-ES es-MX fr hu id it ja ko lt nl nn-NO pl pt-BR pt-PT ru sv-SE th vi zh-CN zh-TW"
-
-for AB_CD in $LOCALES; do
-    update_locale "$AB_CD" &
-    if [[ $(jobs -r -p | wc -l) -ge $N ]]; then
-        wait -n
+# Check if uv is available
+if command -v uv &> /dev/null; then
+    echo "Using uv to run the Python updater..."
+    if [[ -f "update.py" ]]; then
+        uv run update.py "$@"
+        exit $?
+    else
+        echo "Error: update.py not found in current directory"
+        exit 1
     fi
-done
+fi
 
-wait
+# Fallback to regular Python if uv is not available
+echo "uv not found, falling back to Python..."
 
-echo "Finished"
+# Check if Python 3 is available
+if command -v python3 &> /dev/null; then
+    PYTHON_CMD="python3"
+elif command -v python &> /dev/null && python --version 2>&1 | grep -q "Python 3"; then
+    PYTHON_CMD="python"
+else
+    echo "Error: Python 3 is required but not found"
+    echo "Please install Python 3 or uv (recommended)"
+    echo ""
+    echo "To install uv:"
+    echo "  curl -LsSf https://astral.sh/uv/install.sh | sh"
+    echo ""
+    echo "To install Python 3:"
+    echo "  macOS: brew install python3"
+    echo "  Linux: sudo apt install python3 (or equivalent)"
+    exit 1
+fi
+
+# Check if the Python script exists
+if [[ ! -f "update.py" ]]; then
+    echo "Error: update.py not found in current directory"
+    exit 1
+fi
+
+# Run the Python updater
+echo "Starting locale update using Python..."
+$PYTHON_CMD update.py "$@"
+
+echo "Update completed"
