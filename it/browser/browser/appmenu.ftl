@@ -166,6 +166,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Maiusc+2
     }
+profiler-button-dropmarker =
+    .label = Apri pannello del profiler
+    .tooltiptext = Apri pannello del profiler
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -300,4 +303,3 @@ appmenu-edit-profile =
     .aria-label = Modifica profilo
 appmenu-profiles-2 =
     .label = Profili
-
