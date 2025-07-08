@@ -9,16 +9,18 @@ import shutil
 import tarfile
 import re
 import atexit
+import subprocess
 from pathlib import Path
 from urllib.request import urlretrieve
 
 class LocaleUpdater:
-    def __init__(self):
+    def __init__(self, commit=None):
         self.script_dir = Path(__file__).parent
         self.root_dir = self.script_dir
         self.temp_base = self.script_dir / "temp"
-        self.repo_url = "https://github.com/mozilla-l10n/firefox-l10n/archive/refs/heads/master.tar.gz"
-        self.repo_tarball = None
+        self.repo_url = "https://github.com/mozilla-l10n/firefox-l10n"
+        self.repo_cache = self.script_dir / ".firefox-l10n-cache"
+        self.commit = commit or "main"
         self.repo_extracted = None
 
         # Register cleanup function to run on exit
@@ -63,17 +65,96 @@ class LocaleUpdater:
         # Binary/special files to skip
         self.skip_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg', '.woff', '.woff2', '.ttf'}
 
+    def has_git(self):
+        """Check if git is available"""
+        try:
+            subprocess.run(['git', '--version'], capture_output=True, check=True)
+            return True
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            return False
+
+    def update_existing_repo(self):
+        """Update existing cached repository"""
+        print("Updating cached git repository...")
+        try:
+            subprocess.run(['git', 'fetch', 'origin'],
+                         cwd=self.repo_cache, capture_output=True, check=True)
+            subprocess.run(['git', 'reset', '--hard', f'origin/{self.commit}'],
+                         cwd=self.repo_cache, capture_output=True, check=True)
+            return self.repo_cache
+        except subprocess.CalledProcessError as e:
+            print(f"Git update failed: {e.stderr.decode() if e.stderr else 'Unknown error'}")
+            print("Falling back to fresh clone...")
+            shutil.rmtree(self.repo_cache)
+            return None
+
+    def clone_with_branch(self):
+        """Clone repository with specific branch"""
+        try:
+            subprocess.run(['git', 'clone', '--depth', '1', '--branch', self.commit,
+                          self.repo_url, str(self.repo_cache)],
+                         capture_output=True, check=True)
+            return self.repo_cache
+        except subprocess.CalledProcessError as e:
+            print(f"Git clone with branch '{self.commit}' failed: {e.stderr.decode() if e.stderr else 'Unknown error'}")
+            return None
+
+    def clone_and_checkout(self):
+        """Clone repository and checkout specific commit"""
+        try:
+            print("Trying full clone and checkout...")
+            subprocess.run(['git', 'clone', '--depth', '1', self.repo_url, str(self.repo_cache)],
+                         capture_output=True, check=True)
+            subprocess.run(['git', 'fetch', 'origin', self.commit],
+                         cwd=self.repo_cache, capture_output=True, check=True)
+            subprocess.run(['git', 'checkout', self.commit],
+                         cwd=self.repo_cache, capture_output=True, check=True)
+            return self.repo_cache
+        except subprocess.CalledProcessError as e:
+            print(f"Git fallback clone failed: {e.stderr.decode() if e.stderr else 'Unknown error'}")
+            return None
+
+    def update_git_repo(self):
+        """Update or clone the git repository"""
+        if self.repo_cache.exists():
+            result = self.update_existing_repo()
+            if result:
+                return result
+
+        print("Cloning git repository...")
+        result = self.clone_with_branch()
+        if result:
+            return result
+
+        result = self.clone_and_checkout()
+        return result
+
     def download_and_extract_repo(self):
         """Download and extract the entire firefox-l10n repository"""
         if self.repo_extracted and self.repo_extracted.exists():
             return self.repo_extracted
 
+        # Try git first if available
+        if self.has_git():
+            repo_dir = self.update_git_repo()
+            if repo_dir:
+                self.repo_extracted = repo_dir
+                return self.repo_extracted
+
+        # Fall back to tarball download
+        print("Git not available or failed, falling back to tarball download...")
         self.temp_base.mkdir(parents=True, exist_ok=True)
 
         tarball_path = self.temp_base / "firefox-l10n.tar.gz"
+        # For tarball, try different URL formats
+        if self.commit in ['main', 'master']:
+            tarball_url = f"{self.repo_url}/archive/refs/heads/{self.commit}.tar.gz"
+        else:
+            # For commits, tags, or other branches
+            tarball_url = f"{self.repo_url}/archive/{self.commit}.tar.gz"
 
-        print("Downloading firefox-l10n repository...")
-        urlretrieve(self.repo_url, tarball_path)
+        print(f"Downloading firefox-l10n repository (commit: {self.commit})...")
+        urlretrieve(tarball_url, tarball_path)
 
         print("Extracting firefox-l10n repository...")
         with tarfile.open(tarball_path, 'r:gz') as tar:
@@ -85,7 +166,7 @@ class LocaleUpdater:
         except FileNotFoundError:
             pass
 
-        # Find the extracted directory (should be firefox-l10n-master)
+        # Find the extracted directory
         extracted_dirs = [d for d in self.temp_base.iterdir() if d.is_dir() and d.name.startswith('firefox-l10n')]
         if not extracted_dirs:
             raise Exception("Could not find extracted firefox-l10n directory")
@@ -128,61 +209,76 @@ class LocaleUpdater:
                 return True
         return False
 
-    def process_fluent_file(self, file_path):
-        """Process a Fluent (.ftl) file with proper parsing"""
+    def read_file_with_encoding(self, file_path):
+        """Read file with proper encoding handling"""
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
+                return f.read()
         except UnicodeDecodeError:
             # Try with different encodings
             for encoding in ['latin-1', 'iso-8859-1', 'cp1252']:
                 try:
                     with open(file_path, 'r', encoding=encoding) as f:
-                        content = f.read()
-                    break
+                        return f.read()
                 except UnicodeDecodeError:
                     continue
             else:
                 print(f"Warning: Could not decode {file_path}")
-                return False
+                return None
+
+    def process_fluent_line_with_equals(self, line):
+        """Process a Fluent line containing '='"""
+        if self.should_preserve_line(line):
+            return line, False
+
+        key_part, value_part = line.split('=', 1)
+        original_value = value_part
+
+        # Apply replacements only to the value part
+        for old, new in self.replacements:
+            value_part = value_part.replace(old, new)
+
+        new_line = key_part + '=' + value_part
+        return new_line, value_part != original_value
+
+    def process_fluent_line_without_equals(self, line):
+        """Process a Fluent line without '='"""
+        if self.should_preserve_line(line):
+            return line, False
+
+        original_line = line
+        for old, new in self.replacements:
+            line = line.replace(old, new)
+
+        return line, line != original_line
+
+    def process_fluent_file(self, file_path):
+        """Process a Fluent (.ftl) file with proper parsing"""
+        content = self.read_file_with_encoding(file_path)
+        if content is None:
+            return False
 
         lines = content.split('\n')
         modified = False
 
         for i, line in enumerate(lines):
-            original_line = line
-
             # Skip comment lines and empty lines
             if line.strip().startswith('#') or not line.strip():
                 continue
 
             # For Fluent files, only process the value part after '='
             if '=' in line and not line.strip().startswith('#'):
-                # Check if this line should be preserved
-                if self.should_preserve_line(line):
-                    continue
-
-                key_part, value_part = line.split('=', 1)
-
-                # Apply replacements only to the value part
-                for old, new in self.replacements:
-                    value_part = value_part.replace(old, new)
-
-                lines[i] = key_part + '=' + value_part
-
-                if lines[i] != original_line:
+                new_line, line_modified = self.process_fluent_line_with_equals(line)
+                lines[i] = new_line
+                if line_modified:
                     modified = True
 
             # For non-Fluent content in .ftl files (like comments), apply replacements
             elif not line.strip().startswith('#'):
-                # Check if this line should be preserved
-                if not self.should_preserve_line(line):
-                    for old, new in self.replacements:
-                        line = line.replace(old, new)
-
-                    if line != original_line:
-                        lines[i] = line
-                        modified = True
+                new_line, line_modified = self.process_fluent_line_without_equals(line)
+                lines[i] = new_line
+                if line_modified:
+                    modified = True
 
         if modified:
             with open(file_path, 'w', encoding='utf-8') as f:
@@ -355,6 +451,9 @@ class LocaleUpdater:
             if existing_locale.exists():
                 shutil.rmtree(existing_locale)
 
+            # Handle branding directory restructure
+            self.restructure_branding(temp_locale_dir)
+
             # Move new locale directory to root
             shutil.move(str(temp_locale_dir), str(existing_locale))
 
@@ -391,6 +490,32 @@ class LocaleUpdater:
             print(f"Error getting available locales: {e}")
             return []
 
+    def restructure_branding(self, locale_dir):
+        """Move branding files from browser/branding/official to waterfox/browser/branding"""
+        old_branding_path = locale_dir / "browser" / "branding" / "official"
+
+        if old_branding_path.exists():
+            # Create new branding directory structure
+            new_branding_path = locale_dir / "waterfox" / "browser" / "branding"
+            new_branding_path.mkdir(parents=True, exist_ok=True)
+
+            # Move all files from old location to new location
+            for item in old_branding_path.iterdir():
+                if item.is_file():
+                    shutil.copy2(item, new_branding_path / item.name)
+                elif item.is_dir():
+                    shutil.copytree(item, new_branding_path / item.name, dirs_exist_ok=True)
+
+            print(f"Moved branding files from {old_branding_path} to {new_branding_path}")
+
+            # Remove the old branding directory
+            shutil.rmtree(old_branding_path)
+
+            # If browser/branding is now empty, remove it
+            branding_parent = locale_dir / "browser" / "branding"
+            if branding_parent.exists() and not any(branding_parent.iterdir()):
+                branding_parent.rmdir()
+
     def cleanup_temp(self):
         """Clean up temporary directories"""
         if hasattr(self, 'temp_base') and self.temp_base and self.temp_base.exists():
@@ -399,6 +524,15 @@ class LocaleUpdater:
                 print(f"Cleaned up temp directory: {self.temp_base}")
             except Exception as e:
                 print(f"Warning: Could not clean up temp directory {self.temp_base}: {e}")
+
+    def clean_cache(self):
+        """Clean the git repository cache"""
+        if self.repo_cache.exists():
+            try:
+                shutil.rmtree(self.repo_cache)
+                print(f"Cleaned up git cache: {self.repo_cache}")
+            except Exception as e:
+                print(f"Warning: Could not clean up git cache: {e}")
 
     def run(self, target_locales=None):
         """Run the locale update process"""
@@ -451,25 +585,57 @@ class LocaleUpdater:
             self.cleanup_temp()
 
 def main():
-    updater = LocaleUpdater()
+    # Parse command line arguments
+    commit = None
+    target_locales = []
+    clean_cache = False
+    list_locales = False
 
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "--list":
-            # List available locales
-            print("Available locales:")
-            try:
-                locales = updater.get_available_locales()
-                for locale in locales:
-                    print(f"  {locale}")
-            finally:
-                updater.cleanup_temp()
+    i = 1
+    while i < len(sys.argv):
+        arg = sys.argv[i]
+        if arg == "--commit":
+            if i + 1 < len(sys.argv):
+                commit = sys.argv[i + 1]
+                i += 2
+            else:
+                print("Error: --commit requires a commit hash/branch/tag")
+                sys.exit(1)
+        elif arg == "--clean-cache":
+            clean_cache = True
+            i += 1
+        elif arg == "--list":
+            list_locales = True
+            i += 1
+        elif arg.startswith("--"):
+            print(f"Error: Unknown option {arg}")
+            sys.exit(1)
         else:
-            # Update specific locales
-            target_locales = sys.argv[1:]
-            print(f"Updating specific locales: {', '.join(target_locales)}")
-            updater.run(target_locales)
+            target_locales.append(arg)
+            i += 1
+
+    updater = LocaleUpdater(commit=commit)
+
+    if clean_cache:
+        updater.clean_cache()
+        return
+
+    if list_locales:
+        # List available locales
+        print(f"Available locales (commit: {updater.commit}):")
+        try:
+            locales = updater.get_available_locales()
+            for locale in locales:
+                print(f"  {locale}")
+        finally:
+            updater.cleanup_temp()
+    elif target_locales:
+        # Update specific locales
+        print(f"Updating specific locales: {', '.join(target_locales)} (commit: {updater.commit})")
+        updater.run(target_locales)
     else:
         # Update all default locales
+        print(f"Updating all locales (commit: {updater.commit})")
         updater.run()
 
 if __name__ == "__main__":
