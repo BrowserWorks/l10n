@@ -42,6 +42,9 @@ status-bar =
 
 ## about:preferences
 ### Main
+update-application-manual =
+    .label = Never check for updates (not recommended)
+    .accesskey = N
 tab-position-header = Tab Bar Position
 tab-bar-top-above =
     .label = Top above address bar
