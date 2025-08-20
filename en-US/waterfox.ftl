@@ -331,6 +331,12 @@ tree-sticky-sound-playing-tab =
     .accesskey = y
 
 tree-behavior-header = Tree view of tabs
+tree-auto-collapse-expand-subtree-on-attach =
+    .label = When a new tree appears, collapse others automatically
+    .accesskey = c
+tree-auto-collapse-expand-subtree-on-select =
+    .label = When a tab gets focus, expand its tree and collapse others automatically
+    .accesskey = x
 tree-drop-links-on-tab-behavior-caption =
     .value = When a link or URL string is dropped on a tab
     .accesskey = l
