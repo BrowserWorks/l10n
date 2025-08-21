@@ -52,16 +52,6 @@ bookmarks-position-bottom =
 bookmarks-position-top =
     .label = Top
 
-tab-position-header = Tab Bar Position
-tab-bar-top-above =
-    .label = Top above address bar
-tab-bar-top-below =
-    .label = Top below address bar
-tab-bar-bottom-above =
-    .label = Bottom above status bar
-tab-bar-bottom-below =
-    .label = Bottom below status bar
-
 dynamic-theme-header = Dynamic Themes
 dynamic-theme-auto =
     .label = Dynamically Set Light/Dark Mode
