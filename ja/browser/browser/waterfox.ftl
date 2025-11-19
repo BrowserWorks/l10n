@@ -35,7 +35,7 @@ pinned-icon-only =
     .label = ピン留めされたタブを縮小してサイトアイコンだけを表示する
 insert-after-current =
     .label = 現在のタブの後ろに新しいタブを挿入
-insert-related-after-current  =
+insert-related-after-current =
     .label = 現在のタブの後に関連する新しいタブを挿入
 dynamic-theme-header = システムテーマのデザイン設定
 dynamic-theme-dark =
@@ -68,7 +68,6 @@ statusbar-show-links =
     .label = リンクを表示
 statusbar-contrast-text =
     .label = コントラストステータスバーの文字色
-
 bookmarks-bar-position-header = ブックマークツールバーの位置
 bookmarks-position-top =
     .label = 上部
@@ -94,14 +93,12 @@ enable-javascript =
     .label = JavaScript を有効にする
 webrtc-header = WebRTC ピア接続
 ref-header = HTTP リファラヘッダー
-update-updateCheckDisabled =
-    .label = アップデートの確認は現在無効になっています
 statusbar-header = ステータスバー
 private-tab =
     .label =
         { $isPrivate ->
             [true] プライベートタブを終了する
-            *[false] 新しいプライベートタブを作成
+           *[false] 新しいプライベートタブを作成
         }
 
 ## Tree Vertical Tabs
