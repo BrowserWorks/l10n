@@ -236,20 +236,17 @@ monospace-font-theme =
     .label = Enable monospaced font for theme
 tab-context-line =
     .label = Tab Context Line
-
 theme-header = Theme
 appearance-header = Appearance
 interface-component-header = Interface Components
 rounding-header = Rounding
 autohide-hidden-header = Auto Hide & Hidden
 center-header = Center
-
 tab-bar-header = Tab Bar
 nav-bar-header = Nav Bar
 bookmark-header = Bookmarks Bar
 panels-header = Panels
 sidebar-header = Sidebar
-
 font-header = Fonts
 icons-header = Icons
 animation-header = Animations
@@ -262,16 +259,8 @@ telemetry-page-subtitle = Waterfox does not collect telemetry about your install
 telemetry-privacy-policy = Privacy Policy
 onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
-autohide-all =
-    .label =
-        { $isAutohide ->
-            [true] Toggle Autohide Off
-           *[false] Toggle Autohide On
-        }
 enable-panel-transparency =
     .label = Enable panel transparency
 enable-menu-transparency =
     .label = Enable menu transparency
 tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
-enable-dooh =
-    .label = Use DNS over Oblivious HTTP
