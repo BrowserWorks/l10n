@@ -100,3 +100,11 @@ private-tab =
             [true] Ukončit soukromou kartu
            *[false] Vytvořit soukromou kartu
         }
+preferences-doh-ultra-detailed-desc-3 = Maximální DNS ochrana soukromí - nikdo nemůže vidět, které stránky navštěvujete
+pane-theme-title = Vzhled
+animation-header = Pohyb
+bookmark-header = Panel záložek
+center-header = Na střed
+font-header = Písma
+full-screen-header = Celá obrazovka
+icons-header = Ikony
