@@ -6,14 +6,17 @@
 # Localised versions MUST be located in browser/locales/l10n/{locale}/browser/browser/waterfox.ftl
 
 ## Restart Prompt
+
 restart-prompt-question = Are you sure that you want to restart { -brand-short-name }?
 restart-prompt-title = Restart { -brand-short-name }
 
 ## App Menu
+
 appmenuitem-restart-browser =
     .label = Restart
 
 ## Tab Context Menu
+
 copy-all-urls =
     .label = Copy All Tab Links
 copy-url =
@@ -22,6 +25,7 @@ unload-tab =
     .label = Unload Tab
 
 ## Private Tab
+
 new-private-tab =
     .label = New Private Tab
     .tooltiptext = Open a new private tab
@@ -33,6 +37,8 @@ open-link-private =
     .label = Open Link in New Private Tab
 open-private-tab =
     .label = Open in a New Private Tab
+# Variables:
+#   $isPrivate (Boolean) - Whether the selected tab is private.
 private-tab =
     .label =
         { $isPrivate ->
@@ -41,11 +47,13 @@ private-tab =
         }
 
 ## Status Bar
+
 status-bar =
     .label = Status Bar
 
 ## about:preferences
-### Main
+
+# Main
 update-application-manual =
     .label = Never check for updates (not recommended)
     .accesskey = N
@@ -65,7 +73,7 @@ dynamic-theme-light =
     .label = Force Light Mode
 
 geolocation-api-header = Geolocation API
-geolocation-description = Some websites require your location to function. If a website isn't functioning as a result of not being able to find your location, please enable this preference and try again.
+geolocation-description = Some websites require your location to function. If a website isn’t functioning as a result of not being able to find your location, please enable this preference and try again.
 geolocation-api-enabled =
     .label = Enable
 geolocation-api-disabled =
@@ -117,7 +125,7 @@ tab-bar-top-above =
 tab-bar-top-below =
     .label = Top below address bar
 
-### Privacy
+# Privacy
 enable-javascript =
     .label = Enable JavaScript
 load-images =
@@ -126,8 +134,8 @@ load-images =
 preferences-doh-setting-ultra =
   .label = Ultra Protection
   .accesskey = U
-preferences-doh-ultra-desc = { -brand-short-name } will use secure DNS with Oblivious HTTP via Waterfox's privacy relay for maximum protection.
-preferences-doh-ultra-detailed-desc-1 = Uses Waterfox's Oblivious HTTP relay to hide DNS queries even from the DNS provider
+preferences-doh-ultra-desc = { -brand-short-name } will use secure DNS with Oblivious HTTP via Waterfox’s privacy relay for maximum protection.
+preferences-doh-ultra-detailed-desc-1 = Uses Waterfox’s Oblivious HTTP relay to hide DNS queries even from the DNS provider
 preferences-doh-ultra-detailed-desc-2 = Provides an additional layer of encryption beyond standard DNS over HTTPS
 preferences-doh-ultra-detailed-desc-3 = Maximum DNS privacy protection - no one can see which sites you visit
 preferences-doh-ultra-fallback-mode = Fallback behavior:
@@ -138,15 +146,15 @@ ref-header = HTTP Referrer Header
 send-referrer-header-0 =
     .label = Never send the referrer header
 send-referrer-header-1 =
-    .label = Send the referrer header only when clicking on links and similar elements
+    .label = Include the referrer header only when clicking links and similar elements
 send-referrer-header-2 =
-    .label = Send the referrer header on all requests (Default)
+    .label = Include the referrer header on all requests (Default)
 
 webrtc-header = WebRTC peer connection
 enable-webrtc-p2p =
     .label = Enable WebRTC peer connection
 
-### Look & Feel
+# Look & Feel
 pane-theme-title = Look & Feel
 category-theme =
     .tooltiptext = { pane-theme-title }
@@ -290,6 +298,7 @@ tab-context-line =
     .label = Tab Context Line
 
 ## about:telemetry
+
 telemetry-page-subtitle = Waterfox does not collect telemetry about your installation - any telemetry modules are disabled when the browser is built. What you do in your browser is only known by you.
 telemetry-privacy-policy = Privacy Policy
 
@@ -299,6 +308,7 @@ onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, g
 tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
 
 ## Tree Vertical Tabs
+
 pane-tree-title = Tree Vertical Tabs
 category-tree =
     .tooltiptext = { pane-tree-title }
@@ -345,11 +355,11 @@ tree-successor-tab-control-level-caption =
     .value = When the current tab is closed as a last child
     .accesskey = h
 tree-successor-tab-control-level-in-tree =
-    .label = Focus to the previous tab in the tree
+    .label = Move focus to the previous tab in the tree
 tree-successor-tab-control-level-never =
-    .label = Focus to the next tab always (respect the browser or other extension's control)
+    .label = Always move focus to the next tab (respect browser or other extension control)
 tree-successor-tab-control-level-simulate-default =
-    .label = Focus to the next tab always
+    .label = Always move focus to the next tab
 
 tree-tree-double-click-behavior-caption =
     .value = Double-click on a tab
@@ -414,6 +424,7 @@ tree-insert-new-tab-from-pinned-tab-at-top =
     .label = The top of the tree (near the opener)
 
 ## Ad blocking
+
 waterfox-blocker-header = Ad Blocking
 waterfox-blocker-intro-description = Blocks ads, tracking scripts, and other unwanted requests for faster page loads and fewer distractions.
 
@@ -424,7 +435,7 @@ waterfox-blocker-setting-on-description = Waterfox blocks the following:
 waterfox-blocker-blocks-ads = Ads and ad network requests
 waterfox-blocker-blocks-tracking = Tracking scripts and pixels
 waterfox-blocker-blocks-annoyances = Nuisance popups and overlays (with annoyance lists enabled)
-waterfox-blocker-partner-funding-title = Support Waterfox's development
+waterfox-blocker-partner-funding-title = Support Waterfox’s development
 waterfox-blocker-partner-funding-description = Waterfox is free, open source, and independent. Allowing ads on search partner pages is how Waterfox funds development and infrastructure. You can turn this off at any time, but keeping it on is the easiest way to support the project.
 
 waterfox-blocker-setting-off =
@@ -450,6 +461,9 @@ waterfox-blocker-filter-lists-dialog =
     .buttonaccesskeyaccept = S
 waterfox-blocker-filter-lists-description =
     .value = Choose which filter lists are active.
+# Variables:
+#   $activeCount (Number) - Number of enabled filter lists.
+#   $totalCount (Number) - Total number of available filter lists.
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } active of { $totalCount }
 waterfox-blocker-filter-lists-column-enabled =
@@ -467,13 +481,15 @@ waterfox-blocker-extension-detected = Waterfox now has built-in ad blocking. You
 waterfox-blocker-extension-detected-learn-more =
     .label = Learn more
 waterfox-blocker-extension-detected-dismiss =
-    .label = Don't show again
+    .label = Don’t show again
 waterfox-blocker-extension-install-warning = Waterfox already has a built-in ad blocker. Running two ad blockers can cause pages to break or load slowly.
 waterfox-blocker-extension-install-got-it =
     .label = Got it
 waterfox-blocker-extension-install-learn-more =
     .label = Learn more
 
+# Variables:
+#   $extensionName (String) - Name of the third-party extension controlling ad blocking.
 waterfox-blocker-third-party-notice-description = { $extensionName } is also blocking ads. Running two ad blockers can cause issues.
 
 waterfox-blocker-exceptions-window =
@@ -490,6 +506,8 @@ waterfox-blocker-panel-toggle =
 waterfox-blocker-panel-disabled = Ad blocking is off
 waterfox-blocker-panel-site-excepted = Ads allowed on this site
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
+# Variables:
+#   $count (Number) - Number of ads blocked on this site.
 waterfox-blocker-stats =
     { $count ->
         [one] { $count } ad blocked on this site
@@ -523,6 +541,8 @@ waterfox-blocker-filter-lists-refresh-rate-7d =
     .label = Every 7 days
 waterfox-blocker-filter-lists-refresh-now =
     .label = Refresh Now
+# Variables:
+#   $date (String) - Human-readable date/time of the last successful list update.
 waterfox-blocker-filter-lists-last-updated = Updated { $date }
 waterfox-blocker-filter-lists-never-updated =
     .value = Not yet updated
@@ -559,6 +579,8 @@ waterfox-blocker-custom-filters-dialog =
 waterfox-blocker-custom-filters-description = Add your own ad blocking rules. These use standard uBlock Origin filter syntax and are applied alongside your enabled filter lists.
 waterfox-blocker-custom-filters-empty =
     .value = No custom filters.
+# Variables:
+#   $count (Number) - Number of custom filters currently configured.
 waterfox-blocker-custom-filters-status =
     { $count ->
         [0] No custom filters.
@@ -587,11 +609,15 @@ waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
 
 waterfox-blocker-spotlight-title = Waterfox now includes ad blocking
-waterfox-blocker-spotlight-subtitle = We noticed you have { $extensionName } installed. Waterfox now has its own ad blocker. Using it helps support Waterfox, but it's your call.
+# Variables:
+#   $extensionName (String) - Name of the user’s existing ad-blocking extension.
+waterfox-blocker-spotlight-subtitle = We noticed you have { $extensionName } installed. Waterfox now has its own ad blocker. Using it helps support Waterfox, but it’s your call.
 waterfox-blocker-spotlight-primary-button = Keep my current setup
 waterfox-blocker-spotlight-secondary-button = Review settings
 waterfox-blocker-prompt-title = Waterfox ad blocking
-waterfox-blocker-reenable-conflict-message = Running both Waterfox ad blocking and "{ $extensionName }" can cause pages to break. Which would you like to keep?
+# Variables:
+#   $extensionName (String) - Name of the extension that conflicts with built-in ad blocking.
+waterfox-blocker-reenable-conflict-message = Running both Waterfox ad blocking and “{ $extensionName }” can cause pages to break. Which would you like to keep?
 waterfox-blocker-reenable-use-built-in = Use built-in blocker
 waterfox-blocker-reenable-keep-extension = Keep extension blocker
 waterfox-blocker-extension-install-manage-settings = You can manage ad blocking in Settings > Privacy & Security.
@@ -606,6 +632,6 @@ waterfox-blocked-page-details =
 waterfox-blocked-page-blocked-url-label = Blocked URL
 waterfox-blocked-page-matched-rule-label = Matched rule
 waterfox-blocked-page-unavailable = Unavailable
-waterfox-blocked-page-hint = "Load anyway" will temporarily allow this site for the rest of your session.
+waterfox-blocked-page-hint = “Load anyway” will temporarily allow this site for the rest of your session.
 waterfox-blocked-page-go-back = Go back
 waterfox-blocked-page-load-anyway = Load anyway
