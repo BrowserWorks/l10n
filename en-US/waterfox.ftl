@@ -1,3 +1,7 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 # In browser/locales/jar.mn
 # Localised versions MUST be located in browser/locales/l10n/{locale}/browser/browser/waterfox.ftl
 
@@ -409,38 +413,43 @@ tree-insert-new-tab-from-pinned-tab-at-no-control =
 tree-insert-new-tab-from-pinned-tab-at-top =
     .label = The top of the tree (near the opener)
 
-## Ad Blocking
+## Ad blocking
 waterfox-blocker-header = Ad Blocking
-waterfox-blocker-intro-description = Waterfox blocks ads and other nuisance requests.
+waterfox-blocker-intro-description = Blocks ads, tracking scripts, and other unwanted requests for faster page loads and fewer distractions.
 
 waterfox-blocker-setting-on =
-    .label = Enable
-waterfox-blocker-setting-on-description = Block ads and nuisance requests on websites. Allowing search partners as an exception helps sustain and fund Waterfox.
+    .label = On
+waterfox-blocker-setting-on-summary = Blocks ads and trackers with minimal impact on page loading.
+waterfox-blocker-setting-on-description = Waterfox blocks the following:
+waterfox-blocker-blocks-ads = Ads and ad network requests
+waterfox-blocker-blocks-tracking = Tracking scripts and pixels
+waterfox-blocker-blocks-annoyances = Nuisance popups and overlays (with annoyance lists enabled)
+waterfox-blocker-partner-funding-title = Support Waterfox's development
+waterfox-blocker-partner-funding-description = Waterfox is free, open source, and independent. Allowing ads on search partner pages is how Waterfox funds development and infrastructure. You can turn this off at any time, but keeping it on is the easiest way to support the project.
 
 waterfox-blocker-setting-off =
-    .label = Disable
-waterfox-blocker-setting-off-description =
-    .value = Turn off ad blocking.
+    .label = Off
+waterfox-blocker-setting-off-description = No ads or trackers are blocked by Waterfox. Third-party extensions can still block content independently.
 
 waterfox-blocker-dropdown-label =
-    .value = Search partner behaviour:
+    .value = Search partner ads:
 waterfox-blocker-dropdown-option-partner-exception =
-    .label = Allow ads on Waterfox search partners
+    .label = Allow on Waterfox search partners
 waterfox-blocker-dropdown-option-block-everything =
-    .label = Block all ads
+    .label = Disallow on Waterfox search partners
 
 waterfox-blocker-manage-filter-lists =
-    .label = Manage Filter Lists...
+    .label = Manage Filter Lists…
 waterfox-blocker-custom-filter-lists =
-    .label = Custom Filter Lists...
+    .label = Custom Filter Lists…
 
 waterfox-blocker-filter-lists-window =
-    .title = Waterfox Ad Blocking Filter Lists
+    .title = Ad blocking filter lists
 waterfox-blocker-filter-lists-dialog =
     .buttonlabelaccept = Save Changes
     .buttonaccesskeyaccept = S
 waterfox-blocker-filter-lists-description =
-    .value = Choose which filter lists are enabled for ad blocking.
+    .value = Choose which filter lists are active.
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } active of { $totalCount }
 waterfox-blocker-filter-lists-column-enabled =
@@ -454,30 +463,30 @@ waterfox-blocker-filter-lists-enable =
 waterfox-blocker-filter-lists-disable =
     .label = Disable
 
-waterfox-blocker-extension-detected = Waterfox now includes built-in adblocking. You may not need { $extensionName } any more.
+waterfox-blocker-extension-detected = Waterfox now has built-in ad blocking. You can review your setup in settings.
 waterfox-blocker-extension-detected-learn-more =
     .label = Learn more
 waterfox-blocker-extension-detected-dismiss =
-    .label = Don’t show again
-waterfox-blocker-extension-install-warning = Waterfox has a built-in ad blocker already active. Installing { $extensionName } may cause conflicts or reduced performance.
+    .label = Don't show again
+waterfox-blocker-extension-install-warning = Waterfox already has a built-in ad blocker. Running two ad blockers can cause pages to break or load slowly.
 waterfox-blocker-extension-install-got-it =
     .label = Got it
 waterfox-blocker-extension-install-learn-more =
     .label = Learn more
 
-waterfox-blocker-third-party-notice-description = You have { $extensionName } enabled. Only one adblocker can be run at a time.
+waterfox-blocker-third-party-notice-description = { $extensionName } is also blocking ads. Running two ad blockers can cause issues.
 
 waterfox-blocker-exceptions-window =
-    .title = Exceptions for Ad Blocking
-waterfox-blocker-exceptions-description = You can specify which websites have Ad Blocking turned off. Type the exact address of the site you want to manage and then click Add.
+    .title = Ad blocking exceptions
+waterfox-blocker-exceptions-description = You can specify which websites have ad blocking turned off. Type the exact address of the site you want to manage and then click Add.
 
 waterfox-blocker-toolbar-button =
-    .label = Ad Blocking
-    .tooltiptext = Ad Blocking
+    .label = Ad blocking
+    .tooltiptext = Ad blocking
 waterfox-blocker-panel-not-available = Not available on this page
 waterfox-blocker-panel-toggle =
-    .label = Ad Blocking on this site
-    .description = Block ads and nuisance requests on this site.
+    .label = Ad blocking on this site
+    .description = Block ads and trackers on this site.
 waterfox-blocker-panel-disabled = Ad blocking is off
 waterfox-blocker-panel-site-excepted = Ads allowed on this site
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
@@ -486,7 +495,7 @@ waterfox-blocker-stats =
         [one] { $count } ad blocked on this site
        *[other] { $count } ads blocked on this site
     }
-waterfox-blocker-panel-settings-button = Manage ad blocking settings
+waterfox-blocker-panel-settings-button = Ad blocking settings
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
 
@@ -496,7 +505,7 @@ waterfox-blocker-filter-lists-category-annoyances = Annoyances
 waterfox-blocker-filter-lists-category-optional = Optional
 waterfox-blocker-filter-lists-category-regional = Regional
 waterfox-blocker-filter-lists-search =
-    .placeholder = Search filter lists...
+    .placeholder = Search filter lists…
 waterfox-blocker-filter-lists-empty-state = No filter lists available.
 waterfox-blocker-filter-lists-refresh-rate-label =
     .value = Check for updates:
@@ -526,7 +535,7 @@ waterfox-blocker-custom-filter-lists-description = Add URLs of custom filter lis
 waterfox-blocker-filter-lists-custom-heading =
     .value = Custom Filter Lists
 waterfox-blocker-filter-lists-custom-input =
-    .placeholder = Enter filter list URL...
+    .placeholder = Enter filter list URL…
 waterfox-blocker-filter-lists-custom-url-label =
     .value = Filter list URL
 waterfox-blocker-filter-lists-custom-col =
@@ -539,29 +548,64 @@ waterfox-blocker-filter-lists-custom-remove-all =
     .label = Remove All
 waterfox-blocker-filter-lists-custom-empty =
     .value = No custom filter lists added.
+
+waterfox-blocker-custom-filters =
+    .label = My Filters…
+waterfox-blocker-custom-filters-window =
+    .title = My Filters
+waterfox-blocker-custom-filters-dialog =
+    .buttonlabelaccept = Save Changes
+    .buttonaccesskeyaccept = S
+waterfox-blocker-custom-filters-description = Add your own ad blocking rules. These use standard uBlock Origin filter syntax and are applied alongside your enabled filter lists.
+waterfox-blocker-custom-filters-empty =
+    .value = No custom filters.
+waterfox-blocker-custom-filters-status =
+    { $count ->
+        [0] No custom filters.
+        [one] 1 custom filter.
+       *[other] { $count } custom filters.
+    }
+waterfox-blocker-custom-filters-status-unsaved = Unsaved changes.
+waterfox-blocker-custom-filters-import =
+    .label = Import…
+waterfox-blocker-custom-filters-export =
+    .label = Export…
+waterfox-blocker-custom-filters-load-error-title = Load failed
+waterfox-blocker-custom-filters-load-error = Custom filters could not be loaded.
+waterfox-blocker-custom-filters-save-error-title = Save failed
+waterfox-blocker-custom-filters-save-error = Custom filters could not be saved.
+waterfox-blocker-custom-filters-import-error-title = Import failed
+waterfox-blocker-custom-filters-import-error = The selected file could not be imported.
+waterfox-blocker-custom-filters-export-error-title = Export failed
+waterfox-blocker-custom-filters-export-error = Custom filters could not be exported.
+waterfox-blocker-custom-filters-import-picker-title = Import custom filters
+waterfox-blocker-custom-filters-export-picker-title = Export custom filters
+waterfox-blocker-custom-filters-import-replace-title = Replace current filters?
+waterfox-blocker-custom-filters-import-replace-message = Importing will replace everything currently in the editor.
+
 waterfox-blocker-extension-fallback-name-this = this extension
 waterfox-blocker-extension-fallback-name-your = your extension
 
-waterfox-blocker-spotlight-title = Waterfox now includes adblocking
-waterfox-blocker-spotlight-subtitle = We noticed you have { $extensionName } installed. Waterfox now has a native, built-in adblocker. Using it helps support Waterfox, but as always it’s your choice.
-waterfox-blocker-spotlight-primary-button = No thanks, keep my setup
-waterfox-blocker-spotlight-secondary-button = Review ad blocking settings
-waterfox-blocker-prompt-title = Waterfox Ad Blocking
-waterfox-blocker-reenable-conflict-message = Waterfox built-in ad blocking and “{ $extensionName }” can conflict, duplicate blocking, and reduce performance. Choose which blocker to keep active.
+waterfox-blocker-spotlight-title = Waterfox now includes ad blocking
+waterfox-blocker-spotlight-subtitle = We noticed you have { $extensionName } installed. Waterfox now has its own ad blocker. Using it helps support Waterfox, but it's your call.
+waterfox-blocker-spotlight-primary-button = Keep my current setup
+waterfox-blocker-spotlight-secondary-button = Review settings
+waterfox-blocker-prompt-title = Waterfox ad blocking
+waterfox-blocker-reenable-conflict-message = Running both Waterfox ad blocking and "{ $extensionName }" can cause pages to break. Which would you like to keep?
 waterfox-blocker-reenable-use-built-in = Use built-in blocker
 waterfox-blocker-reenable-keep-extension = Keep extension blocker
-waterfox-blocker-extension-install-manage-settings = You can manage built-in ad blocking in Settings > Privacy & Security.
+waterfox-blocker-extension-install-manage-settings = You can manage ad blocking in Settings > Privacy & Security.
 waterfox-blocker-extension-install-anyway = Install anyway
 waterfox-blocker-extension-install-keep-built-in = Keep using built-in blocker
 
 waterfox-blocked-page-title = Waterfox blocked this page
 waterfox-blocked-page-heading = Waterfox blocked this page
-waterfox-blocked-page-description = A filter rule blocked this top-level page load.
+waterfox-blocked-page-description = This page was blocked by an ad blocking filter rule.
 waterfox-blocked-page-details =
     .aria-label = Blocked page details
 waterfox-blocked-page-blocked-url-label = Blocked URL
 waterfox-blocked-page-matched-rule-label = Matched rule
 waterfox-blocked-page-unavailable = Unavailable
-waterfox-blocked-page-hint = Load anyway will temporarily allow this site.
+waterfox-blocked-page-hint = "Load anyway" will temporarily allow this site for the rest of your session.
 waterfox-blocked-page-go-back = Go back
 waterfox-blocked-page-load-anyway = Load anyway
