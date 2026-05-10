@@ -1,15 +1,19 @@
 # In browser/locales/jar.mn
 # Localised versions MUST be located in browser/locales/l10n/{locale}/browser/browser/waterfox.ftl
 
+
 ## Restart Prompt
+
 restart-prompt-title = Restart { -brand-short-name }
 restart-prompt-question = Are you sure that you want to restart { -brand-short-name }?
 
 ## App Menu
+
 appmenuitem-restart-browser =
     .label = Restart
 
 ## Tab Context Menu
+
 copy-url =
     .label = Copy Tab Link
 copy-all-urls =
@@ -18,6 +22,7 @@ unload-tab =
     .label = Unload Tab
 
 ## Private Tab
+
 open-all-private =
     .label = Open All in Private Tabs
 open-all-links-private =
@@ -33,15 +38,19 @@ private-tab =
     .label =
         { $isPrivate ->
             [true] Exit Private Tab
-            *[false] Make Private Tab
+           *[false] Make Private Tab
         }
 
 ## Status Bar
+
 status-bar =
     .label = Status Bar
 
 ## about:preferences
+
+
 ### Main
+
 tab-position-header = Tab Bar Position
 tab-bar-top-above =
     .label = Top above address bar
@@ -101,7 +110,9 @@ geolocation-api-enabled =
     .label = Enable
 geolocation-api-disabled =
     .label = Disable
+
 ### Privacy
+
 send-referrer-header-0 =
     .label = Never send the referrer header
 send-referrer-header-1 =
@@ -116,7 +127,9 @@ enable-javascript =
     .label = Enable JavaScript
 webrtc-header = WebRTC peer connection
 ref-header = HTTP Referrer Header
+
 ### Look & Feel
+
 pane-theme-title = Look & Feel
 category-theme =
     .tooltiptext = { pane-theme-title }
@@ -223,20 +236,17 @@ monospace-font-theme =
     .label = Enable monospaced font for theme
 tab-context-line =
     .label = Tab Context Line
-
 theme-header = Theme
 appearance-header = Appearance
 interface-component-header = Interface Components
 rounding-header = Rounding
 autohide-hidden-header = Auto Hide & Hidden
 center-header = Center
-
 tab-bar-header = Tab Bar
 nav-bar-header = Nav Bar
 bookmark-header = Bookmarks Bar
 panels-header = Panels
 sidebar-header = Sidebar
-
 font-header = Fonts
 icons-header = Icons
 animation-header = Animations
@@ -244,8 +254,8 @@ full-screen-header = Full screen
 media-player-header = Media Player
 
 ## about:telemetry
+
 telemetry-page-subtitle = Waterfox does not collect telemetry about your installation - any telemetry modules are disabled when the browser is built. What you do in your browser is only known by you.
 telemetry-privacy-policy = Privacy Policy
-
 onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
