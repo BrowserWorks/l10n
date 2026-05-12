@@ -492,9 +492,10 @@ waterfox-blocker-extension-install-learn-more =
 #   $extensionName (String) - Name of the third-party extension controlling ad blocking.
 waterfox-blocker-third-party-notice-description = { $extensionName } is also blocking ads. Running two ad blockers can cause issues.
 
-waterfox-blocker-exceptions-window =
-    .title = Ad blocking exceptions
-waterfox-blocker-exceptions-description = You can specify which websites have ad blocking turned off. Type the exact address of the site you want to manage and then click Add.
+permissions-exceptions-waterfox-blocker-window2 =
+    .title = Exceptions for Ad Blocking
+    .style = { permissions-window2.style }
+permissions-exceptions-manage-waterfox-blocker-desc = You can specify which websites have ad blocking turned off. Type the exact address of the site you want to manage and then click Add Exception.
 
 waterfox-blocker-toolbar-button =
     .label = Ad blocking
@@ -525,20 +526,6 @@ waterfox-blocker-filter-lists-category-regional = Regional
 waterfox-blocker-filter-lists-search =
     .placeholder = Search filter lists…
 waterfox-blocker-filter-lists-empty-state = No filter lists available.
-waterfox-blocker-filter-lists-refresh-rate-label =
-    .value = Check for updates:
-waterfox-blocker-filter-lists-refresh-rate-default =
-    .label = Use list default
-waterfox-blocker-filter-lists-refresh-rate-4h =
-    .label = Every 4 hours
-waterfox-blocker-filter-lists-refresh-rate-8h =
-    .label = Every 8 hours
-waterfox-blocker-filter-lists-refresh-rate-12h =
-    .label = Every 12 hours
-waterfox-blocker-filter-lists-refresh-rate-24h =
-    .label = Every 24 hours
-waterfox-blocker-filter-lists-refresh-rate-7d =
-    .label = Every 7 days
 waterfox-blocker-filter-lists-refresh-now =
     .label = Refresh Now
 # Variables:
@@ -546,6 +533,12 @@ waterfox-blocker-filter-lists-refresh-now =
 waterfox-blocker-filter-lists-last-updated = Updated { $date }
 waterfox-blocker-filter-lists-never-updated =
     .value = Not yet updated
+# Variables:
+#   $date (String) - Human-readable date/time of the next scheduled list update.
+waterfox-blocker-filter-lists-next-refresh =
+    .value = Next refresh: { $date }
+waterfox-blocker-filter-lists-next-refresh-unknown =
+    .value = Next refresh: unknown
 waterfox-blocker-custom-filter-lists-window =
     .title = Custom Filter Lists
 waterfox-blocker-custom-filter-lists-dialog =
