@@ -4,54 +4,54 @@
 
 ## Restart Prompt
 
-restart-prompt-title = Restart { -brand-short-name }
-restart-prompt-question = Are you sure that you want to restart { -brand-short-name }?
+restart-prompt-title = { -brand-short-name } újraindítása
+restart-prompt-question = Biztosan újra akarja indítani a(z) { -brand-short-name } alkalmazást?
 
 ## App Menu
 
 appmenuitem-restart-browser =
-    .label = Restart
+    .label = Újraindítás
 
 ## Tab Context Menu
 
 copy-url =
-    .label = Copy Tab Link
+    .label = Laphivatkozás másolása
 copy-all-urls =
-    .label = Copy All Tab Links
+    .label = Összes laphivatkozás másolása
 unload-tab =
-    .label = Unload Tab
+    .label = Lap kiürítése
 
 ## Private Tab
 
 open-all-private =
-    .label = Open All in Private Tabs
+    .label = Összes megnyitása privát lapokon
 open-all-links-private =
-    .label = Open All Links in Private Tabs
+    .label = Összes hivatkozás megnyitása privát lapokon
 open-private-tab =
-    .label = Open in a New Private Tab
+    .label = Megnyitás új privát lapon
 new-private-tab =
-    .label = New Private Tab
-    .tooltiptext = Open a new private tab
+    .label = Új privát lap
+    .tooltiptext = Új privát lap megnyitása
 open-link-private =
-    .label = Open Link in New Private Tab
+    .label = Hivatkozás megnyitása új privát lapon
 private-tab =
     .label =
         { $isPrivate ->
-            [true] Exit Private Tab
-           *[false] Make Private Tab
+            [true] Kilépés a privát lapból
+           *[false] Privát lappá alakítás
         }
 
 ## Status Bar
 
 status-bar =
-    .label = Status Bar
+    .label = Állapotsor
 
 ## about:preferences
 
 
 ### Main
 
-tab-position-header = Tab Bar Position
+tab-position-header = Lapsáv helyzete
 tab-bar-top-above =
     .label = Top above address bar
 tab-bar-top-below =
@@ -60,56 +60,56 @@ tab-bar-bottom-above =
     .label = Bottom above status bar
 tab-bar-bottom-below =
     .label = Bottom below status bar
-tab-additional-header = Additional Tab Preferences
+tab-additional-header = További lapbeállítások
 pinned-icon-only =
-    .label = Shrink pinned tabs to display only the site icon
+    .label = Rögzített lapok kicsinyítése, hogy csak az oldal ikonja jelenjen meg
 insert-after-current =
-    .label = Insert new tab after current tab
+    .label = Új lap beszúrása az aktuális lap után
 insert-related-after-current =
-    .label = Insert related new tab after current tab
-dynamic-theme-header = Dynamic Themes
+    .label = Kapcsolódó új lap beszúrása az aktuális lap után
+dynamic-theme-header = Dinamikus témák
 dynamic-theme-dark =
-    .label = Force Dark Mode
+    .label = Sötét mód kényszerítése
 dynamic-theme-light =
-    .label = Force Light Mode
+    .label = Világos mód kényszerítése
 dynamic-theme-auto =
-    .label = Dynamically Set Light/Dark Mode
-restart-header = Restart Menu Item
+    .label = Világos/sötét mód dinamikus beállítása
+restart-header = Újraindítás menüpont
 restart-show-button =
-    .label = Show restart button in PanelUI
+    .label = Újraindítás gomb megjelenítése a főmenüben
 restart-purge-cache =
-    .label = Clear fast restart cache on browser restart
+    .label = A gyors újraindítási gyorsítótár törlése a böngésző újraindításakor
 restart-require-confirmation =
-    .label = Require restart confirmation
-tab-feature-header = Tab Context Menu
+    .label = Megerősítés kérése újraindításkor
+tab-feature-header = Lap helyi menüje
 show-duplicate-tab =
-    .label = Show duplicate tab menu item
+    .label = A lap duplikálása menüpont megjelenítése
 show-copy-url =
-    .label = Show copy tab url menu item
+    .label = A lap URL-jének másolása menüpont megjelenítése
 enable-copy-active-tab =
-    .label = Copy URL only from active tab
+    .label = URL másolása csak az aktív lapról
 show-copy-all-urls =
-    .label = Show copy all tab urls menu item
+    .label = Az összes lap URL-jének másolása menüpont megjelenítése
 show-unload-tab =
-    .label = Show unload tab menu item
-statusbar-header = Status Bar
+    .label = A lap kiürítése menüpont megjelenítése
+statusbar-header = Állapotsáv
 statusbar-enabled =
-    .label = Show Status Bar
+    .label = Állapotsáv megjelenítése
 statusbar-show-links =
-    .label = Show links
+    .label = Hivatkozások megjelenítése
 statusbar-contrast-text =
-    .label = Contrast status bar text colour
-bookmarks-bar-position-header = Bookmarks Toolbar Position
+    .label = Állapotsor szövegszínének kontrasztossá tétele
+bookmarks-bar-position-header = Könyvjelzősáv helyzete
 bookmarks-position-top =
-    .label = Top
+    .label = Felül
 bookmarks-position-bottom =
-    .label = Bottom
+    .label = Alul
 geolocation-api-header = Geolocation API
-geolocation-description = Some websites require your location to function. If a website isn't functioning as a result of not being able to find your location, please enable this preference and try again.
+geolocation-description = Egyes weboldalak működéséhez szükség van a helyadataira. Ha egy weboldal azért nem működik, mert nem éri el a helyzetét, engedélyezze ezt a beállítást, majd próbálja újra.
 geolocation-api-enabled =
-    .label = Enable
+    .label = Engedélyezés
 geolocation-api-disabled =
-    .label = Disable
+    .label = Letiltás
 
 ### Privacy
 
@@ -259,3 +259,6 @@ telemetry-page-subtitle = Waterfox does not collect telemetry about your install
 telemetry-privacy-policy = Privacy Policy
 onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
+update-application-manual =
+    .label = Frissítések keresésének letiltása (nem ajánlott)
+    .accesskey = L
