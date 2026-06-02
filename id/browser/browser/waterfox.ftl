@@ -82,9 +82,9 @@ geolocation-api-disabled =
 send-referrer-header-0 =
     .label = Jangan mengirim header perujuk
 send-referrer-header-1 =
-    .label = Mengirimkan header perujuk hanya ketika mengklik tautan dan elemen serupa
+    .label = Sertakan header perujuk hanya ketika mengklik tautan dan elemen serupa
 send-referrer-header-2 =
-    .label = Mengirimkan header perujuk pada semua permintaan (Bawaan)
+    .label = Sertakan header perujuk pada semua permintaan (Bawaan)
 enable-webrtc-p2p =
     .label = Aktifkan koneksi rekan WebRTC
 load-images =
@@ -500,9 +500,9 @@ waterfox-blocker-custom-filters-empty =
     .value = Tidak ada filter kustom.
 waterfox-blocker-custom-filters-status =
     { $count ->
-        [0] No custom filters.
-        [one] 1 custom filter.
-       *[other] { $count } custom filters.
+        [0] Tidak ada filter kustom.
+        [one] 1 filter kustom.
+       *[other] { $count } filter kustom.
     }
 waterfox-blocker-custom-filters-status-unsaved = Perubahan belum disimpan.
 waterfox-blocker-custom-filters-import =
