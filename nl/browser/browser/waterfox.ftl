@@ -74,7 +74,7 @@ bookmarks-position-top =
 bookmarks-position-bottom =
     .label = Onderaan
 geolocation-api-header = Geolocatie API
-geolocation-description = Sommige websites hebben je locatie nodig om te functioneren. Als een website niet werkt als gevolg van het niet vinden van uw locatie, schakel deze voorkeur dan in en probeer het opnieuw.
+geolocation-description = Sommige websites hebben je locatie nodig om te functioneren. Als een website niet werkt omdat uw locatie niet kan worden bepaald, schakel deze voorkeur dan in en probeer het opnieuw.
 geolocation-api-enabled =
     .label = Inschakelen
 geolocation-api-disabled =
@@ -100,3 +100,9 @@ private-tab =
             [true] Verlaat privé tabblad
            *[false] Maak een privétabblad
         }
+update-application-manual =
+    .label = Controleer nooit op updates (niet aanbevolen)
+    .accesskey = N
+preferences-doh-setting-ultra =
+    .label = Ultra Bescherming
+    .accesskey = U
