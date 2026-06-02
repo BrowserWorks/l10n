@@ -126,6 +126,10 @@ tab-bar-top-below =
     .label = Top below address bar
 
 # Privacy
+waterfox-data-collection-header = { -brand-short-name } Data Collection and Use
+    .searchkeywords = privacy telemetry data collection privacy notice
+waterfox-data-collection-description = { -brand-short-name } does not collect telemetry or usage data. Optional services, such as Sync, may be governed by their own privacy notices. The <a data-l10n-name="privacy-notice">Privacy Notice</a> is provided here for easy reference.
+
 enable-javascript =
     .label = Enable JavaScript
 load-images =
