@@ -489,3 +489,6 @@ waterfox-blocker-custom-filters-import-picker-title = Importar filtros personali
 waterfox-blocker-custom-filters-export-picker-title = Exportar filtros personalizados
 waterfox-blocker-custom-filters-import-replace-title = ¿Reemplazar los filtros actuales?
 waterfox-blocker-custom-filters-import-replace-message = Importar reemplazará todo lo que hay actualmente en el editor.
+waterfox-data-collection-header = { -brand-short-name } Recopilación y uso de datos
+    .searchkeywords = privacidad telemetría recopilación de datos aviso de privacidad
+waterfox-data-collection-description = { -brand-short-name } no recopila datos de telemetría ni de uso. Los servicios opcionales, como Sync, pueden regirse por sus propios avisos de privacidad. El <a data-l10n-name="privacy-notice">Aviso de privacidad</a> se proporciona aquí para una consulta rápida.
