@@ -521,3 +521,6 @@ waterfox-blocker-filter-lists-next-refresh =
     .value = Nächste Aktualisierung: { $date }
 waterfox-blocker-filter-lists-next-refresh-unknown =
     .value = Nächste Aktualisierung: unbekannt
+waterfox-data-collection-header = { -brand-short-name } Datenerhebung und -nutzung
+    .searchkeywords = Datenschutz Telemetriedatenerfassung Datenschutzerklärung
+waterfox-data-collection-description = { -brand-short-name } erfasst keine Telemetrie- oder Nutzungsdaten. Für optionale Dienste wie Sync gelten möglicherweise eigene Datenschutzhinweise. Die <a data-l10n-name="privacy-notice">Datenschutzerklärung</a> ist hier zur einfachen Einsichtnahme bereitgestellt.

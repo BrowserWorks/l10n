@@ -554,3 +554,6 @@ waterfox-blocked-page-unavailable = Nem érhető el
 waterfox-blocked-page-hint = A „Betöltés mindenképp” ideiglenesen engedélyezi ezt az oldalt a munkamenet hátralévő részére.
 waterfox-blocked-page-go-back = Vissza
 waterfox-blocked-page-load-anyway = Betöltés mindenképp
+waterfox-data-collection-header = { -brand-short-name } adatgyűjtés és adatfelhasználás
+    .searchkeywords = adatvédelem telemetria adatgyűjtés adatkezelési tájékoztató
+waterfox-data-collection-description = A { -brand-short-name } nem gyűjt telemetriai vagy használati adatokat. Az opcionális szolgáltatásokra, például a Syncre, saját adatvédelmi tájékoztatóik vonatkozhatnak. Az <a data-l10n-name="privacy-notice">Adatvédelmi tájékoztató</a> itt található a könnyebb elérés érdekében.
