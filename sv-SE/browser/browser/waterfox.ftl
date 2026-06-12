@@ -521,3 +521,6 @@ waterfox-blocker-filter-lists-next-refresh =
 waterfox-blocker-filter-lists-next-refresh-unknown =
     .value = Nästa uppdatering: okänd
 permissions-exceptions-manage-waterfox-blocker-desc = Du kan specificera vilka webbplatser som har annonsblockering avstängd. Skriv den exakta adressen till webbplatsen du vill hantera och klicka sedan på Lägg till undantag.
+waterfox-data-collection-header = { -brand-short-name }Datainsamling och användning
+    .searchkeywords = integritetsmeddelande för insamling av telemetridata
+waterfox-data-collection-description = { -brand-short-name }samlar inte in telemetri eller användningsdata. Tillvalstjänster, som Sync, kan regleras av sina egna integritetsmeddelanden. <a data-l10n-name="privacy-notice">Integritetsmeddelandet</a> finns här för enkel referens.
