@@ -3,10 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 open-all-private =
-    .label = Otevřít vše v soukromých panelech
+    .label = Otevřít vše v soukromých kartách
 
 open-all-links-private =
-    .label = Otevřít všechny odkazy v soukromých panelech
+    .label = Otevřít všechny odkazy v soukromých kartách
 
 open-private-tab =
     .label = Otevřít v nové soukromé kartě

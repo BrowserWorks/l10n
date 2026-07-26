@@ -10,66 +10,66 @@ appmenuitem-restart-browser =
     .label = Restartovat
 
 copy-tab-link =
-    .label = Kopírovat odkaz na záložku
+    .label = Kopírovat odkaz karty
 
 copy-all-urls =
-    .label = Kopírovat všechny odkazy záložek
+    .label = Kopírovat všechny odkazy karet
 
 unload-tab =
-    .label = Unload Tab
+    .label = Uvolnit kartu
 
-tab-position-header = Pozice panelu záložek
+tab-position-header = Pozice panelu karet
 
 tab-bar-top-above =
-    .label = Horní výše uvedený adresní řádek
+    .label = Nahoře nad adresním řádkem
 
 tab-bar-top-below =
-    .label = Horní pod adresním řádkem
+    .label = Nahoře pod adresním řádkem
 
 tab-bar-bottom-above =
-    .label = Dolní část nad stavovou lištou
+    .label = Dole nad stavovou lištou
 
 tab-bar-bottom-below =
-    .label = Dolů pod stavovou lištou
+    .label = Dole pod stavovou lištou
 
-tab-additional-header = Nastavení další záložky
+tab-additional-header = Další předvolby karet
 
 pinned-icon-only =
-    .label = Zmenšit připnuté panely pro zobrazení pouze ikony webu
+    .label = Zmenšit připnuté karty, aby se zobrazovala pouze ikona webu
 
 insert-after-current =
     .label = Vložit novou kartu za aktuální kartu
 
 insert-related-after-current =
-    .label = Vložit související novou kartu za aktuální panel
+    .label = Vložit související novou kartu za aktuální kartu
 
 restart-header = Restartovat položku nabídky
 
 restart-show-button =
-    .label = Zobrazit tlačítko restartu v panelu
+    .label = Zobrazit tlačítko restartovat v PanelUI
 
 restart-purge-cache =
-    .label = Vymazat mezipaměť rychlého restartování při restartu prohlížeče
+    .label = Vymazat mezipaměť rychlého restartu při restartování prohlížeče
 
 restart-require-confirmation =
     .label = Vyžadovat potvrzení restartu
 
-tab-feature-header = Tab Context Menu
+tab-feature-header = Kontextová nabídka karty
 
 show-duplicate-tab =
-    .label = Show duplicate tab menu item
+    .label = Zobrazit položku nabídky "duplikovat kartu"
 
 show-copy-url =
-    .label = Zobrazit položku menu pro kopírování záložky
+    .label = Zobrazit položku nabídky "kopírovat URL karty"
 
 enable-copy-active-tab =
-    .label = Kopírovat URL pouze z aktivního panelu
+    .label = Kopírovat pouze URL z aktivní karty
 
 show-copy-all-urls =
-    .label = Zobrazit kopii všech URL položek nabídky
+    .label = Zobrazit položku nabídky "kopírovat URL všech karet"
 
 show-unload-tab =
-    .label = Zobrazit položku nabídky nabídky při vykládce
+    .label = Zobrazit položku nabídky "Uvolnit kartu"
 
 bookmarks-bar-position-header = Pozice panelu záložek
 
@@ -77,4 +77,4 @@ bookmarks-position-top =
     .label = Nahoře
 
 bookmarks-position-bottom =
-    .label = Spodní
+    .label = Dole
