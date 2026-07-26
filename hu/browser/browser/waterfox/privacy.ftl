@@ -46,3 +46,10 @@ waterfox-data-collection-header = { -brand-short-name } adatgyűjtés és adatfe
     .searchkeywords = adatvédelem telemetria adatgyűjtés adatkezelési tájékoztató
 
 waterfox-data-collection-description = A { -brand-short-name } nem gyűjt telemetriai vagy használati adatokat. Az opcionális szolgáltatásokra, például a Syncre, saját adatvédelmi tájékoztatóik vonatkozhatnak. Az <a data-l10n-name="privacy-notice">Adatvédelmi tájékoztató</a> itt található a könnyebb elérés érdekében.
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } adatgyűjtés és adatfelhasználás
+    .description = A { -brand-short-name } nem gyűjt telemetriai vagy használati adatokat. Az opcionális szolgáltatásokra, például a Syncre, saját adatvédelmi tájékoztatóik vonatkozhatnak.
+    .searchkeywords = adatvédelem telemetria adatgyűjtés adatkezelési tájékoztató
+
+waterfox-data-collection-link = Adatvédelmi tájékoztató
