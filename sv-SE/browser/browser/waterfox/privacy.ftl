@@ -42,3 +42,10 @@ waterfox-data-collection-header = { -brand-short-name }Datainsamling och använd
     .searchkeywords = integritetsmeddelande för insamling av telemetridata
 
 waterfox-data-collection-description = { -brand-short-name }samlar inte in telemetri eller användningsdata. Tillvalstjänster, som Sync, kan regleras av sina egna integritetsmeddelanden. <a data-l10n-name="privacy-notice">Integritetsmeddelandet</a> finns här för enkel referens.
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Datainsamling och användning
+    .description = { -brand-short-name } samlar inte in telemetri eller användningsdata. Tillvalstjänster, som Sync, kan regleras av sina egna integritetsmeddelanden.
+    .searchkeywords = integritetsmeddelande för insamling av telemetridata
+
+waterfox-data-collection-link = Integritetsmeddelandet
