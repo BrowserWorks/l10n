@@ -42,3 +42,10 @@ waterfox-data-collection-header = { -brand-short-name } Datenerhebung und -nutzu
     .searchkeywords = Datenschutz Telemetriedatenerfassung Datenschutzerklärung
 
 waterfox-data-collection-description = { -brand-short-name } erfasst keine Telemetrie- oder Nutzungsdaten. Für optionale Dienste wie Sync gelten möglicherweise eigene Datenschutzhinweise. Die <a data-l10n-name="privacy-notice">Datenschutzerklärung</a> ist hier zur einfachen Einsichtnahme bereitgestellt.
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Datenerhebung und -nutzung
+    .description = { -brand-short-name } erfasst keine Telemetrie- oder Nutzungsdaten. Für optionale Dienste wie Sync gelten möglicherweise eigene Datenschutzhinweise.
+    .searchkeywords = Datenschutz Telemetriedatenerfassung Datenschutzerklärung
+
+waterfox-data-collection-link = Datenschutzerklärung
