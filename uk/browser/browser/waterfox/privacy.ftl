@@ -42,3 +42,10 @@ waterfox-data-collection-header = { -brand-short-name } Збір та викор
     .searchkeywords = приватність телеметрія дані збір політика конфіденційності
 
 waterfox-data-collection-description = { -brand-short-name } не збирає телеметрію чи дані про використання. Додаткові сервіси, такі як Sync, можуть регулюватися власними окремими політиками конфіденційності. <a data-l10n-name="privacy-notice">Політика конфіденційності</a> надана тут для зручного ознайомлення.
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Збір та використання даних
+    .description = { -brand-short-name } не збирає телеметрію чи дані про використання. Додаткові сервіси, такі як Sync, можуть регулюватися власними окремими політиками конфіденційності.
+    .searchkeywords = приватність телеметрія дані збір політика конфіденційності
+
+waterfox-data-collection-link = Політика конфіденційності
