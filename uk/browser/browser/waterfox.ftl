@@ -521,3 +521,6 @@ waterfox-blocker-filter-lists-next-refresh =
     .value = Наступне оновлення: { $date }
 waterfox-blocker-filter-lists-next-refresh-unknown =
     .value = Наступне оновлення: невідомо
+waterfox-data-collection-header = { -brand-short-name } Збір та використання даних
+    .searchkeywords = приватність телеметрія дані збір політика конфіденційності
+waterfox-data-collection-description = { -brand-short-name } не збирає телеметрію чи дані про використання. Додаткові сервіси, такі як Sync, можуть регулюватися власними окремими політиками конфіденційності. <a data-l10n-name="privacy-notice">Політика конфіденційності</a> надана тут для зручного ознайомлення.
