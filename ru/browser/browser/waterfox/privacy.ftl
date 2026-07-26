@@ -37,3 +37,10 @@ ref-header = HTTP заголовок источника запроса
 telemetry-page-subtitle = Waterfox не собирает телеметрию о вашей установке — любые модули телеметрии отключены при сборке браузера. То, что вы делаете в браузере, известно только вам.
 
 telemetry-privacy-policy = Политика конфиденциальности
+
+waterfox-data-collection-header = { -brand-short-name } Сбор данных и использование
+    .searchkeywords = приватность телеметрия сбор данных политика конфиденциальности
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Сбор данных и использование
+    .searchkeywords = приватность телеметрия сбор данных политика конфиденциальности

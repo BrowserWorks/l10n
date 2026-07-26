@@ -27,13 +27,13 @@ waterfox-blocker-setting-off =
 waterfox-blocker-setting-off-description = Waterfox не блокирует рекламу или трекеры. Сторонние расширения по-прежнему могут блокировать контент независимо.
 
 waterfox-blocker-dropdown-label =
-    .value = Поиск партнерских объявлений:
+    .value = Реклама от поисковых партнёров:
 
 waterfox-blocker-dropdown-option-partner-exception =
-    .label = Разрешить партнёрский поиск в Waterfox
+    .label = Разрешить на поисковых партнёрах Waterfox
 
 waterfox-blocker-dropdown-option-block-everything =
-    .label = Запретить партнерский поиск в Waterfox
+    .label = Запретить на сайтах поисковых партнёров Waterfox
 
 waterfox-blocker-manage-filter-lists =
     .label = Управление списками фильтров…
