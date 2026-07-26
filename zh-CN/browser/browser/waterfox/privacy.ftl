@@ -42,3 +42,10 @@ waterfox-data-collection-header = { -brand-short-name } 数据收集与使用
     .searchkeywords = 隐私 遥测 数据收集 隐私声明
 
 waterfox-data-collection-description = { -brand-short-name } 不会收集遥测或使用数据。可选服务（如同步）可能受其各自的隐私声明约束。此处提供了 <a data-l10n-name="privacy-notice">隐私声明</a> 以便查阅。
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } 数据收集与使用
+    .description = { -brand-short-name } 不会收集遥测或使用数据。可选服务（如同步）可能受其各自的隐私声明约束。
+    .searchkeywords = 隐私 遥测 数据收集 隐私声明
+
+waterfox-data-collection-link = 隐私声明
