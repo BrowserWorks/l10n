@@ -42,3 +42,10 @@ waterfox-data-collection-header = { -brand-short-name } Recopilación y uso de d
     .searchkeywords = privacidad telemetría recopilación de datos aviso de privacidad
 
 waterfox-data-collection-description = { -brand-short-name } no recopila datos de telemetría ni de uso. Los servicios opcionales, como Sync, pueden regirse por sus propios avisos de privacidad. El <a data-l10n-name="privacy-notice">Aviso de privacidad</a> se proporciona aquí para una consulta rápida.
+
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Recopilación y uso de datos
+    .description = { -brand-short-name } no recopila datos de telemetría ni de uso. Los servicios opcionales, como Sync, pueden regirse por sus propios avisos de privacidad.
+    .searchkeywords = privacidad telemetría recopilación de datos aviso de privacidad
+
+waterfox-data-collection-link = Aviso de privacidad
