@@ -1,3 +1,212 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = Dinamikaj etosoj
+
+dynamic-theme-auto =
+    .label = Dinamike agordi (mal)helan reĝimon
+
+dynamic-theme-dark =
+    .label = Devigi malhelan reĝimon
+
+dynamic-theme-light =
+    .label = Devigi helan reĝimon
+
+pane-theme-title = Tajlorado
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = Animacioj
+
+appearance-header = Aspekto
+
+autohide-hidden-header = Aŭtomata kaŝado kaj kaŝitaj
+
+bookmark-header = Ilaro de legosignoj
+
+center-header = Centra
+
+font-header = Tiparoj
+
+full-screen-header = Plenekrana reĝimo
+
+icons-header = Bildetoj
+
+interface-component-header = Komponantoj de interfaco
+
+media-player-header = Ludado de plurmedioj
+
+nav-bar-header = Navigacia breto
+
+panels-header = Paneloj
+
+rounding-header = Rondigo
+
+sidebar-header = Flanka breto
+
+tab-bar-header = Langetaro
+
+theme-header = Etoso
+
+preset-title = Antaŭagordoj
+
+lepton-style =
+    .label = Etoso “Leptono”
+
+proton-style =
+    .label = Etoso “Protono”
+
+waterfox-defaults =
+    .label = Defaŭltoj de Waterfox
+
+auto-blur-tabs =
+    .label = Aŭtomate malklarigi langetojn
+
+auto-hide-back =
+    .label = Aŭtomate kaŝi butonon “malantaŭen”
+
+auto-hide-bookmarkbar =
+    .label = Aŭtomate kaŝi ilaron de legosignoj
+
+auto-hide-forward =
+    .label = Aŭtomate kaŝi butonon “antaŭen”
+
+auto-hide-navbar =
+    .label = Aŭtomate kaŝi navigacian breton
+
+auto-hide-sidebar =
+    .label = Aŭtomate kaŝi flankan strion
+
+auto-hide-tabbar =
+    .label = Aŭtomate kaŝi langetaron
+
+auto-hide-tabs =
+    .label = Aŭtomate kaŝi langetojn
+
+center-navbar-text =
+    .label = Centrigi tekston de navigacia breto
+
+center-tab-content =
+    .label = Centrigi enhavon de langetoj
+
+center-tab-label =
+    .label = Centrigi nur etikedon de langetoj
+
+close-button-hover =
+    .label = Montri butonon por fermado de langetoj dum musumado super elektita langeto, dum multaj langetoj estas malfermitaj
+
+auto-hide-pageaction =
+    .label = Aŭtomate kaŝi paĝajn agojn
+
+compact-bookmark-menu =
+    .label = Malpliigi marĝenojn en menuo de legosignoj
+
+compact-context-menu =
+    .label = Malpliigi marĝenojn en kunteksta menuo
+
+compact-navbar-popup =
+    .label = Malpliigi marĝenojn en ŝprucfenestro de navigacia breto
+
+compact-panel-header =
+    .label = Malpliigi marĝenojn de panelaj kapoj
+
+disable-panel-animate =
+    .label = Malŝalti animacion de panelo de aplikaĵa menuo
+
+disable-sidebar-animate =
+    .label = Malŝalti animacion de panelo de flanka strio
+
+drag-space =
+    .label = Ŝalti fiksitan spacon por trenado
+
+enable-cyan-accent-color =
+    .label = Cejana akcenta koloro
+
+enable-default-accent-color =
+    .label = Defaŭlta akcenta koloro
+
+enable-menu-transparency =
+    .label = Ŝalti travideblecon de menuoj
+
+enable-panel-transparency =
+    .label = Ŝalti travideblecon de paneloj
+
+enable-system-accent-color =
+    .label = Operaciuma akcenta koloro
+
+enable-waterfox-theme-0 =
+    .label = Ŝalti etosajn alĝustigojn de Waterfox por ĉiuj etosoj
+
+enable-waterfox-theme-1 =
+    .label = Ŝalti etosajn alĝustigojn de Waterfox por etosoj de Waterfox
+
+enable-waterfox-theme-2 =
+    .label = Malŝalti etosajn alĝustigojn de Waterfox
+
+full-panel-strip =
+    .label = Plenlarĝaj apartigiloj en aplikaĵaj menuoj
+
+remove-panel-strip =
+    .label = Forigi koloran aparigilon de aplikaĵa menuo
+
+hide-all-icons =
+    .label = Kaŝi ciujn bildetojn
+
+hide-bookmarkbar-icon =
+    .label = Kaŝi bildetojn de ilaro de legosignoj
+
+hide-bookmarkbar-label =
+    .label = Kaŝi etikedojn de ilaro de legosignoj
+
+hide-disabled-menuitems =
+    .label = Kaŝi malebligitajn menuerojn
+
+hide-sidebar-header =
+    .label = Kaŝi kapon de flanka strio
+
+hide-tab-icons =
+    .label = Kaŝi bildetojn de langetoj
+
+hide-urlbar-iconbox =
+    .label = Kaŝi bildetujon de adresa strio
+
+monospace-font =
+    .label = Ŝalti unularĝan tiparon por paĝo
+
+monospace-font-theme =
+    .label = Ŝalti unularĝan tiparon por etoso
+
+show-mac-menu-icons =
+    .label = Montri bildetojn de menuo Mac
+
+show-menu-icons =
+    .label = Montri bildetojn de menuoj
+
+square-button-edges =
+    .label = Kvadrataj anguloj de butonoj
+
+square-checkbox =
+    .label = Kvadrataj markobutonoj
+
+square-field =
+    .label = Kvadrataj anguloj de enigaj kampoj
+
+square-menu-item =
+    .label = Kvadrataj anguloj de menueroj de kunteksta menuo
+
+square-menu-panel =
+    .label = Kvadrataj anguloj de panelo de aplikaĵa menuo
+
+square-menu-popup =
+    .label = Kvadrataj anguloj de panelo de kunteksta menuo
+
+square-panel-item =
+    .label = Kvadrataj anguloj de menueroj de aplikaĵa menuo
+
+square-tab-edges =
+    .label = Kvadrataj anguloj de langetoj
+
+tab-context-line =
+    .label = Kunteksta linio de langetoj
