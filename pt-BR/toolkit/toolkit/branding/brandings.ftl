@@ -31,6 +31,14 @@
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-mdn-brand-name = MDN Web Docs
+-yelp-brand-name = Yelp
+
+##
+
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
 # The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
@@ -40,7 +48,7 @@
 -firefox-suggest-brand-name = Sugestões Waterfox
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-home-brand-name = Tela inicial do Waterfox
+-firefox-home-brand-name = Página inicial do Waterfox
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name = Waterfox View
@@ -49,5 +57,8 @@
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs
--solo-ai-brand-name = Solo
-
+-smart-window-brand-name =
+    { $plural-form ->
+        [true] Janelas inteligentes
+       *[false] Janela inteligente
+    }

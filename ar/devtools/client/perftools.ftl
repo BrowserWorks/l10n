@@ -17,12 +17,15 @@ perftools-intro-description =
 perftools-heading-settings = كل الإعدادات
 perftools-heading-buffer = إعدادات الصِوان
 perftools-heading-features = الميزات
+perftools-heading-features-default = الميزات (موصى بها افتراضيًا)
 perftools-heading-features-disabled = الميزات المعطّلة
 perftools-heading-features-experimental = الميزات التجريبية
 perftools-heading-threads = الخيوط
+perftools-heading-local-build = بناء محلي
 
 ##
 
+perftools-pick-local-build-directory = اختر مجلد البناء
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -32,6 +35,7 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = حجم الصِوان:
+perftools-devtools-interval-label = المدة:
 perftools-devtools-threads-label = الخيوط:
 perftools-devtools-settings-label = الإعدادات
 
@@ -43,6 +47,7 @@ perftools-status-restart-required = يجب إعادة تشغيل المتصفّ�
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
 perftools-request-to-stop-profiler = يُوقف التسجيل
+perftools-request-to-get-profile-and-stop-profiler = التقاط الملف الشخصي
 
 ##
 
@@ -50,21 +55,26 @@ perftools-button-start-recording = ابدأ التسجيل
 perftools-button-cancel-recording = ألغِ التسجيل
 perftools-button-save-settings = احفظ الإعدادات وعُد
 perftools-button-restart = أعِد التشغيل
+perftools-button-add-directory = أضف مجلداً
 perftools-button-remove-directory = أزِل المحدد
 perftools-button-edit-settings = عدّل الإعدادات…
 
 ## More actions menu
 
+perftools-menu-more-actions-button =
+    .title = إجراءات أكثر
 
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
-
-##
-
+perftools-thread-renderer =
+    .title = عند تفعيل WebRender، فإن الخيط الذي ينفذ استدعاءات OpenGL
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
+perftools-onboarding-message = <b>جديد</b>: دُمج { -profiler-brand-name } الآن في أدوات المطورين. <a>اطّلع على المزيد</a> حول هذه الأداة الجديدة القوية.
+perftools-onboarding-close-button =
+    .aria-label = أغلق رسالة الترحيب
 
 ## Profiler presets
 
@@ -78,6 +88,13 @@ perftools-button-edit-settings = عدّل الإعدادات…
 # devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
-
-##
-
+perftools-presets-web-developer-label = مطوّر ويب
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-graphics-label = الرسوميات
+perftools-presets-media-label = الوسائط
+perftools-presets-networking-label = الشبكة
+perftools-presets-networking-with-logs-label = التواصل الشبكي باستخدام السجلات
+perftools-presets-networking-with-logs-description = إعداد مسبق للتحقيق في أخطاء الشبكة في { -brand-shorter-name }، بما في ذلك سجلات الشبكة. قد تحتوي هذه السجلات على معلومات حساسة مثل عناوين المواقع التي تزورها.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = طاقة
+perftools-presets-custom-label = مخصّص

@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = لا تُحدّث
     .accesskey = ث
+primary-password-prompt-message = رجاءً أدخِل كلمة السر الرئيسية.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = لا اسم مستخدم
-password-manager-toggle-password =
-    .label = أظهر كلمة السر
-    .accesskey = ظ
 password-manager-confirm-password-change = أكّد تغيير كلمة السر
 password-manager-select-username = اختر أي بينات ولوج ستُحدّث

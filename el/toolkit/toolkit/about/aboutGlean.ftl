@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Χειροκίνητη δοκιμή
 about-glean-category-adhoc-testing = Δοκιμή Ad Hoc
 about-glean-category-profiler = Χρήση του εργαλείου προφίλ
 about-glean-category-about-data = Σχετικά με τα δεδομένα
+about-glean-category-metrics-table = Πίνακας μετρήσεων
 about-glean-upload-enabled = Η μεταφόρτωση δεδομένων είναι ενεργοποιημένη.
 about-glean-upload-disabled = Η μεταφόρτωση δεδομένων είναι απενεργοποιημένη.
 about-glean-upload-enabled-local = Η μεταφόρτωση δεδομένων είναι ενεργοποιημένη μόνο για αποστολή σε τοπικό διακομιστή.
@@ -92,14 +93,14 @@ about-glean-li-for-visit-gdpv =
 about-glean-adhoc-explanation =
     Για περισσότερες δοκιμές <i>ad hoc</i>,
     μπορείτε να καθορίσετε την τρέχουσα τιμή ενός συγκεκριμένου τμήματος ενοργάνισης
-    ανοίγοντας μια κονσόλα devtools εδώ στο <code>about:glean</code>
+    ανοίγοντας μια κονσόλα εργαλείων ανάπτυξης εδώ στο <code>about:glean</code>
     και χρησιμοποιώντας το <code>testGetValue()</code> API όπως το
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-explanation2 =
     Για περισσότερες δοκιμές <i>ad hoc</i>,
     μπορείτε να καθορίσετε την τρέχουσα τιμή ενός συγκεκριμένου τμήματος ενοργάνισης
-    ανοίγοντας μια κονσόλα devtools εδώ στο <code>about:glean</code>
+    ανοίγοντας μια κονσόλα εργαλείων ανάπτυξης εδώ στο <code>about:glean</code>
     και χρησιμοποιώντας το API <code>testGetValue()</code>, όπως το
     <code>Glean.metricCategory.metricName.testGetValue()</code>,
     για μια μέτρηση με το όνομα <code>metric.category.metric_name</code>.
@@ -139,6 +140,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
     ή να προβάλετε οπτικοποιήσεις των μετρήσεων, συμβουλευτείτε το
     <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>.
 about-glean-about-data-list-item-firefox-profiler = Για να καταγράψετε ένα προφίλ επιδόσεων και να δείτε όλες τις καταγεγραμμένες μετρήσεις, χρησιμοποιήστε το <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Όλες οι μετρήσεις
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Κατηγορία
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Όνομα
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Τύπος
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Τιμή
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Ενέργειες
+about-glean-metrics-table-settings-button = Ρυθμίσεις
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Ρυθμίσεις πίνακα μετρήσεων
+about-glean-metrics-table-settings-category-general = Γενικά
+about-glean-metrics-table-settings-hide-empty-value-rows = Απόκρυψη κενών σειρών τιμών
+about-glean-metrics-table-settings-category-visualizations = Οπτικοποιήσεις
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Παράδειγμα
+about-glean-metrics-table-settings-category-visualizations-histogram = Ιστόγραμμα
+about-glean-metrics-table-settings-histograms-chart-max = Μέγιστο ύψος γραφήματος
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Κλιμακωμένο μέγιστο ύψος
+about-glean-metrics-table-settings-histograms-box-padding = Γέμισμα πλαισίου
+about-glean-metrics-table-settings-histograms-chart-padding = Γέμισμα γραφήματος
+about-glean-metrics-table-settings-histograms-left-padding = Επιπρόσθετο αριστερό γέμισμα
+about-glean-metrics-table-settings-category-visualizations-timeline = Χρονολόγιο
+about-glean-metrics-table-settings-timelines-height = Ύψος
+about-glean-metrics-table-settings-timelines-width = Πλάτος
+about-glean-metrics-table-settings-timelines-chart-padding = Γέμισμα γραφήματος
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Ακτίνα κύκλου
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Οριζόντια μετατόπιση άξονα Υ
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Κάθετη μετατόπιση άξονα Υ
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Φίλτρο
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Αυτό θα φιλτράρει τον παρακάτω πίνακα βάσει κατηγορίας, ονόματος, τύπου και τιμής (αν η τιμή είναι απλός τύπος).
+about-glean-button-load-all = Φόρτωση όλων των τιμών
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Εξαγωγή δεδομένων
+about-glean-button-load-value = Φόρτωση
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Έγγραφα
+about-glean-button-watch = Παρακολούθηση
+# Meaning "to stop watching"
+about-glean-button-unwatch = Διακοπή παρακολούθησης
+about-glean-no-data-to-display = Δεν υπάρχουν δεδομένα προς εμφάνιση.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = Οι μετρήσεις <code>DualLabeledCounter</code> δεν υποστηρίζονται ακόμα στην προβολή <code>about:glean</code>.
+about-glean-unknown-metric-type-warning = Άγνωστος τύπος μέτρησης.
 about-glean-about-data-explanation =
     Για να περιηγηθείτε στη λίστα των συλλεγμένων δεδομένων, συμβουλευτείτε το
     <a data-l10n-name="glean-dictionary-link">Λεξικό του { -glean-brand-name }</a>.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Ενσωματωμένα ping
+about-glean-ping-list-optgroup-custom =
+    .label = Προσαρμοσμένα ping

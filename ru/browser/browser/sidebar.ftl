@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = ИИ-чат-бот
 menu-view-contextual-password-manager =
     .label = Пароли
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Открытые вкладки
 sidebar-options-menu-button =
     .title = Открыть меню
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Изменить размер боковой панели
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Удалить из истории
 sidebar-history-clear =
     .label = Очистить журнал
+sidebar-history-sort-by-heading-menucaption =
+    .label = Сортировать по:
 sidebar-history-sort-by-heading = Сортировать по:
 sidebar-history-sort-option-date =
     .label = Дата
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Управление настройками { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Вертикальные вкладки
+sidebar-settings2 =
+    .label = Настройки
 sidebar-settings =
     .label = Настройки боковой панели
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Развернуть боковую панель при наведении
-sidebar-manage-extensions = Управление расширениями
+sidebar-manage-extensions2 = Управление всеми расширениями
+sidebar-customize-extensions-header2 = Расширения
+sidebar-customize-firefox-tools-header2 =
+    .label = Инструменты
 
 ## Labels for sidebar context menu items
 
@@ -81,7 +96,7 @@ sidebar-context-menu-report-extension =
 sidebar-context-menu-open-in-tab =
     .label = Открыть в новой вкладке
 sidebar-context-menu-open-in-container-tab =
-    .label = Открыть в новой вкладке-контейнере
+    .label = Открыть в новой вкладке в контейнере
 sidebar-context-menu-open-in-window =
     .label = Открыть в новом окне
 sidebar-context-menu-open-in-private-window =
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Удалить страницы из истории
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Изменить закладку…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Удалить закладку
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Удалить
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = Журнал
 sidebar-menu-synced-tabs-label =
     .label = Вкладки с других устройств
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Открытые вкладки
 sidebar-menu-bookmarks-label =
     .label = Закладки
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = Журнал
 sidebar-menu-syncedtabs-header =
     .heading = Вкладки с других устройств
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = из открытых вкладок
 sidebar-menu-cpm-header =
     .heading = Пароли
+sidebar-menu-bookmarks-header =
+    .heading = Закладки
 sidebar-panel-header-close-button =
     .tooltiptext = Закрыть
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Меню закладок
+sidebar-bookmarks-folder-toolbar = Панель закладок
+sidebar-bookmarks-folder-other = Другие закладки
+sidebar-bookmarks-folder-mobile = Мобильные закладки
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Настройка боковой панели
 sidebar-history-title = Журнал
 sidebar-syncedtabs-title = Вкладки с других устройств
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = из открытых вкладок
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Закреплённые вкладки
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Окно { $winID } (текущее)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Окно { $winID }
+sidebar-bookmarks-title = Закладки
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Скрыть боковую панель ({ $shortcut })
     .label = Боковые панели
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Перетащите важные вкладки сюда, чтобы иметь их под рукой

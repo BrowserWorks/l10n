@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Manuelles Testen
 about-glean-category-adhoc-testing = Ad-hoc-Testen
 about-glean-category-profiler = Verwenden des Profilers
 about-glean-category-about-data = Über Daten
+about-glean-category-metrics-table = Metriktabelle
 about-glean-upload-enabled = Das Hochladen von Daten ist aktiviert.
 about-glean-upload-disabled = Das Hochladen von Daten ist deaktiviert.
 about-glean-upload-enabled-local = Das Hochladen von Daten ist nur zum Senden an einen lokalen Server aktiviert.
@@ -140,6 +141,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     Um ein Leistungsprofil aufzuzeichnen und alle aufgezeichneten Messwerte anzusehen, verwenden Sie bitte den
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Alle Metriken
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Kategorie
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Name
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Typ
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Wert
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Aktionen
+about-glean-metrics-table-settings-button = Einstellungen
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Einstellungen der Metriktabelle
+about-glean-metrics-table-settings-category-general = Allgemein
+about-glean-metrics-table-settings-hide-empty-value-rows = Leere Wertezeilen ausblenden
+about-glean-metrics-table-settings-category-visualizations = Visualisierungen
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Beispiel
+about-glean-metrics-table-settings-category-visualizations-histogram = Histogramm
+about-glean-metrics-table-settings-histograms-chart-max = Maximale Höhe des Diagramms
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Skalierte maximale Höhe
+about-glean-metrics-table-settings-histograms-box-padding = Box padding
+about-glean-metrics-table-settings-histograms-chart-padding = Diagramm padding
+about-glean-metrics-table-settings-histograms-left-padding = Zusätzliches padding links
+about-glean-metrics-table-settings-category-visualizations-timeline = Zeitverlauf
+about-glean-metrics-table-settings-timelines-height = Höhe
+about-glean-metrics-table-settings-timelines-width = Breite
+about-glean-metrics-table-settings-timelines-chart-padding = Diagramm padding
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Kreisradius
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y- Achse X-Versatz
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y- Achse Y-Versatz
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Filter
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Dies filtert die folgende Tabelle nach Kategorie, Name, Typ und Wert (wenn der Wert ein einfacher Typ ist).
+about-glean-button-load-all = Alle Werte laden
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Daten exportieren
+about-glean-button-load-value = Laden
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Dokumentation
+about-glean-button-watch = Beobachten
+# Meaning "to stop watching"
+about-glean-button-unwatch = Nicht beobachten
+about-glean-no-data-to-display = Keine Daten zum Anzeigen.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>DualLabeledCounter</code>-Metriken werden in der <code>about:glean</code>-Ansicht noch nicht unterstützt.
+about-glean-unknown-metric-type-warning = Unbekannter Messwerttyp.
 about-glean-about-data-explanation =
     Um die Liste der gesammelten Daten zu durchsuchen, können Sie das
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name }-Wörterbuch</a> lesen.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Eingebaute Pings
+about-glean-ping-list-optgroup-custom =
+    .label = Benutzerdefinierte Pings

@@ -6,10 +6,12 @@ safeb-blocked-phishing-page-title = El sitio es engañoso
 safeb-blocked-malware-page-title = Visitar este sitio web puede dañar tu computadora
 safeb-blocked-unwanted-page-title = El sitio puede contener programas peligrosos
 safeb-blocked-harmful-page-title = El sitio puede contener malware
+safeb-blocked-addon-page-title = Sitio bloqueado por seguridad
 safeb-blocked-phishing-page-short-desc = { -brand-short-name } ha bloqueado esta página porque puede intentar engañarte y lograr que hagas algo peligroso como instalar software o revelar información personal como contraseñas o números de tarjeta de crédito.
 safeb-blocked-malware-page-short-desc = { -brand-short-name } ha bloqueado esta página porque puede intentar instalar software malicioso que podría robar o borrar tu información personal en la computadora.
 safeb-blocked-unwanted-page-short-desc = { -brand-short-name } ha bloqueado esta página porque puede intentar engañarte instalando programas que perjudiquen tu experiencia de navegación (por ejemplo, cambiando tu página de inicio o mostrando más publicidad en los sitios web que visites).
 safeb-blocked-harmful-page-short-desc = { -brand-short-name } ha bloqueado esta página porque podría tratar de instalar aplicaciones peligrosas que roben o eliminen tu información (por ejemplo, fotos, contraseñas, mensajes y tarjetas de crédito).
+safeb-blocked-addon-page-short-desc = { -brand-short-name } bloqueó esta página porque uno de los complementos instalados intentó abrirla. Este sitio podría usarse para el robo de información, como contraseñas o números de tarjetas de crédito.
 # Variables:
 #   $advisoryname (string) - Name of the advisory entity
 safeb-palm-advisory-desc = Advertencia brindada por <a data-l10n-name='advisory_provider'>{ $advisoryname }</a>.
@@ -62,3 +64,13 @@ safeb-blocked-harmful-page-learn-more = Conoce más acerca de la protección con
 safeb-palm-notdeceptive =
     .label = Este no es un sitio engañoso…
     .accesskey = d
+
+## Variables:
+##  $addonName (string) - the name of the harmful add-on
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-addon-page-error-desc-override = <strong>¿Por qué se bloqueó este sitio?</strong>
+safeb-blocked-addon-page-error-desc2-override = Es posible que <strong>{ $sitename }</strong> esté relacionado con actividades engañosas y dañinas.
+safeb-blocked-addon-page-error-desc3-override = <strong>¿Qué puedes hacer al respecto?</strong>
+safeb-blocked-addon-page-error-desc4-override = Para evitar que esto vuelva a suceder, puedes eliminar o desactivar <strong>{ $addonName }</strong> desde about:addons.
+safeb-blocked-addon-page-learn-more3 = <a data-l10n-name='firefox_support_harmful_addons'>Conoce más sobre la protección contra complementos dañinos de { -brand-short-name }</a>.

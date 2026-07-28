@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -110,11 +107,25 @@ browser-main-window-titles-mac =
     .data-content-title-private = { $content-title } — Navigation privée
     .data-content-title-default-with-profile = { $content-title } — { $profile-name }
     .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Navigation privée
-# This gets set as the initial title, and is overridden as soon as we start
-# updating the titlebar based on loaded tabs or private browsing state.
-# This should match the `data-title-default` attribute in both
-# `browser-main-window` and `browser-main-window-mac`.
+# This is the initial default title for the browser window.
+# It gets updated based on loaded tabs or private browsing state.
 browser-main-window-default-title = { -brand-full-name }
+# Note: only on macOS do we use a `-` separator between the brand name and the
+# "Private Browsing" suffix.
+browser-main-private-window-title =
+    { PLATFORM() ->
+        [macos] { -brand-full-name } — Navigation privée de { -brand-full-name }
+       *[other] Navigation privée de { -brand-full-name }
+    }
+# This is only used on macOS; on other OSes we use the full private window
+# title (so including the brand name) as a suffix
+browser-main-private-suffix-for-content = Navigation privée
+popups-infobar-dont-show-message2 =
+    .label = Ne pas afficher ce message lorsque des popups ou des redirections tierces sont bloquées
+    .accesskey = N
+edit-popup-settings2 =
+    .label = Gérer les paramètres des popups et des redirections tierces…
+    .accesskey = G
 
 ##
 
@@ -129,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = Gérer l’envoi de notifications par le site
 urlbar-midi-notification-anchor =
     .tooltiptext = Ouvrir le panneau MIDI
+urlbar-serial-notification-anchor =
+    .tooltiptext = Ouvrir le panneau Série
 urlbar-eme-notification-anchor =
     .tooltiptext = Gérer l’utilisation des logiciels DRM
 urlbar-web-authn-anchor =
@@ -141,6 +154,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = Afficher une notification
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Afficher la demande de géolocalisation
+urlbar-localhost-notification-anchor =
+    .tooltiptext = Gérer l’accès aux appareils locaux pour ce site
+urlbar-local-network-notification-anchor =
+    .tooltiptext = Gérer le partage de l’accès à votre réseau local avec ce site
 urlbar-xr-notification-anchor =
     .tooltiptext = Ouvrir le panneau d’autorisations pour la réalité virtuelle
 urlbar-storage-access-anchor =
@@ -178,6 +195,34 @@ urlbar-result-menu-button =
     .title = Ouvrir le menu
 urlbar-result-menu-button-feedback = Réagir
     .title = Ouvrir le menu
+urlbar-result-menu-learn-more2 = En savoir plus
+    .accesskey = E
+urlbar-result-menu-remove-from-history2 = Supprimer de l’historique
+    .accesskey = S
+urlbar-result-menu-tip-get-help2 = Obtenir de l’aide
+    .accesskey = a
+urlbar-result-menu-dismiss-suggestion2 = Rejeter cette suggestion
+    .accesskey = R
+urlbar-result-menu-manage-firefox-suggest2 = Gérer { -firefox-suggest-brand-name }
+    .accesskey = G
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = Signaler une localisation inexacte
+urlbar-result-menu-show-less-frequently2 = Afficher moins souvent
+urlbar-result-menu-dont-show-weather-suggestions2 = Ne pas afficher les suggestions météo
+# Shown in the urlbar input field context menu to dismiss an adaptive autofill
+# suggestion.
+urlbar-input-dismiss-autofill =
+    .label = Rejeter cette suggestion
+    .accesskey = R
+# Shown in the urlbar input field context menu to remove an adaptive autofill
+# URL from history.
+urlbar-input-remove-from-history =
+    .label = Supprimer de l’historique
+    .accesskey = S
 urlbar-result-menu-learn-more =
     .label = En savoir plus
     .accesskey = E
@@ -207,6 +252,9 @@ urlbar-result-menu-show-less-frequently =
     .label = Afficher moins souvent
 urlbar-result-menu-dont-show-weather-suggestions =
     .label = Ne pas afficher les suggestions météo
+# Used for Split Button.
+urlbar-splitbutton-dropmarker =
+    .title = Ouvrir le menu
 # A message shown in the urlbar when the user submits feedback on a suggestion
 # (e.g., it shows an inaccurate location, it's shown too often, etc.).
 urlbar-feedback-acknowledgment = Merci de votre retour
@@ -238,6 +286,10 @@ urlbar-search-mode-actions = Actions
 
 urlbar-geolocation-blocked =
     .tooltiptext = Vous avez empêché ce site d’accéder à vos données de géolocalisation.
+urlbar-localhost-blocked =
+    .tooltiptext = Vous avez empêché ce site de se connecter à l’appareil local.
+urlbar-local-network-blocked =
+    .tooltiptext = Vous avez empêché ce site de se connecter au réseau local.
 urlbar-xr-blocked =
     .tooltiptext = Vous avez bloqué l’accès aux appareils de réalité virtuelle pour ce site web.
 urlbar-web-notifications-blocked =
@@ -250,6 +302,8 @@ urlbar-screen-blocked =
     .tooltiptext = Vous avez empêché ce site de partager votre écran.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Vous avez empêché ce site d’utiliser le stockage persistant.
+urlbar-popup-blocked2 =
+    .tooltiptext = Vous avez bloqué les popups et les redirections tierces pour ce site web.
 urlbar-popup-blocked =
     .tooltiptext = Vous avez bloqué des popups pour ce site web.
 urlbar-autoplay-media-blocked =
@@ -258,6 +312,8 @@ urlbar-canvas-blocked =
     .tooltiptext = Vous avez empêché ce site d’extraire des informations de canvas.
 urlbar-midi-blocked =
     .tooltiptext = Vous avez bloqué l’accès MIDI pour ce site web.
+urlbar-serial-blocked =
+    .tooltiptext = Vous avez bloqué l’accès au port série pour ce site web.
 urlbar-install-blocked =
     .tooltiptext = Vous avez bloqué l’installation de modules complémentaires pour ce site web.
 # Variables
@@ -268,6 +324,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Marquer cette page ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = Vue scindée
+    .aria-label = Vue scindée
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Effacer l’historique de recherche
+    .accesskey = E
 
 ## Page Action Context Menu
 
@@ -340,7 +405,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Voir les modules
@@ -348,12 +413,16 @@ quickactions-addons = Voir les modules
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = extensions, thèmes, modules, modules complémentaires
+# Opens preferences page at AI controls
+quickactions-manageai = Gérer les paramètres de l’IA
+quickactions-cmd-manageai = désactiver l’IA, gérer l’IA
 quickactions-cmd-addons2 = modules complémentaires
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Organiser les marque-pages
 quickactions-cmd-bookmarks = marque-pages
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Effacer l’historique récent
+quickactions-cmd-clearrecenthistory2 = cookies, effacer les cookies, cache, effacer le cache, données de navigation, effacer les données de navigation, historique, effacer l’historique récent
 quickactions-cmd-clearrecenthistory = effacer l’historique récent, historique
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Effacer l’historique
@@ -363,6 +432,7 @@ quickactions-downloads2 = Afficher les téléchargements
 quickactions-cmd-downloads = téléchargements
 # Opens about:addons page in the extensions section
 quickactions-extensions = Gérer les extensions
+quickactions-cmd-extensions2 = extensions, modules, modules complémentaires
 quickactions-cmd-extensions = extensions
 # Opens Firefox View
 quickactions-firefoxview = Ouvrir { -firefoxview-brand-name }
@@ -376,10 +446,22 @@ quickactions-cmd-help = aide, assistance
 # Opens the devtools web inspector
 quickactions-inspector2 = Ouvrir les outils de développement
 quickactions-cmd-inspector2 = inspecteur, outils de développement
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Choisir une couleur
+quickactions-cmd-colorpicker = sélecteur de couleur, compte-gouttes, choisir une couleur
+# Opens Firefox Library
+quickactions-cmd-library = bibliothèque
+quickactions-library = Ouvrir la bibliothèque
 quickactions-cmd-inspector = inspecteur, outils de développement
 # Opens about:logins
 quickactions-logins2 = Gérer les mots de passe
 quickactions-cmd-logins = identifiants, mots de passe
+# Mutes all tabs playing audio
+quickactions-mute = Couper le son des onglets diffusant du son
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = couper le son, muet, chut
 # Opens about:addons page in the plugins section
 quickactions-plugins = Gérer les plugins
 quickactions-cmd-plugins = plugins
@@ -389,7 +471,9 @@ quickactions-cmd-print = imprimer
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Enregistrer la page au format PDF
 quickactions-cmd-savepdf2 = pdf, enregistrer la page
-quickactions-cmd-savepdf = pdf
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = Ouvrir l’éditeur PDF
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Ouvrir une fenêtre de navigation privée
 quickactions-cmd-private = navigation privée
@@ -402,6 +486,9 @@ quickactions-cmd-restart = redémarrer
 # Opens the screenshot tool
 quickactions-screenshot3 = Effectuer une capture d’écran
 quickactions-cmd-screenshot2 = capture d’écran, prendre une capture d’écran
+# Opens about:translations
+quickactions-translate = Traduire
+quickactions-cmd-translate = traduire
 quickactions-cmd-screenshot = capture d’écran
 # Opens about:preferences
 quickactions-settings2 = Gérer les paramètres
@@ -410,6 +497,10 @@ quickactions-cmd-settings2 = paramètres, préférences, options, gérer
 quickactions-cmd-settings = paramètres, préférences, options
 # Opens about:addons page in the themes section
 quickactions-themes = Gérer les thèmes
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = thèmes, modules, modules complémentaires
 quickactions-cmd-themes = thèmes
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = Mettre à jour { -brand-short-name }
@@ -417,6 +508,9 @@ quickactions-cmd-update = mettre à jour
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Afficher le code source de la page
 quickactions-cmd-viewsource2 = afficher la source, code source, code source de la page
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = Ouvrir { -firefoxlabs-brand-name }
+quickactions-cmd-labs = labo, lab, labs, expérimentation, expérience
 quickactions-cmd-viewsource = afficher la source, source
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -498,7 +592,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Votre connexion à ce site n’est pas sécurisée.
 identity-connection-verified = Votre connexion à ce site est sécurisée.
 identity-ev-owner-label = Certificat émis pour :
+identity-verifier-label = Vérifiée par :
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Qualifié conformément au règlement (UE) n°2024/1183.
 identity-description-custom-root2 = BrowserWorks ne reconnaît pas cet émetteur de certificat. Il a peut-être été ajouté à partir de votre système d’exploitation ou par un administrateur.
+identity-cert-exception-overridden = Vous avez ajouté une exception de sécurité pour ce site.
 identity-remove-cert-exception =
     .label = Supprimer l’exception
     .accesskey = S
@@ -531,6 +629,9 @@ browser-window-restore-down-button =
     .tooltiptext = Restaurer
 browser-window-close-button =
     .tooltiptext = Fermer
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = Retour
 
 ## Tab actions
 
@@ -601,6 +702,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = Désactiver la protection de partage pour cette session
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = Sélectionnez un port série :
+webserial-no-ports-available = Aucun port série disponible
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = Pour vous servir du raccourci F12, commencez par ouvrir les outils de développement en passant par le menu « Outils supplémentaires ».
@@ -666,6 +772,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extension :
+urlbar-go-button2 =
+    .title = Se rendre à la page indiquée dans la barre d’adresse
 urlbar-go-button =
     .tooltiptext = Se rendre à la page indiquée dans la barre d’adresse
 urlbar-page-action-button =
@@ -673,8 +781,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = Afficher l’adresse dans la barre d’adresse
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -691,6 +800,7 @@ urlbar-result-action-search-in-private = Rechercher dans une fenêtre de navigat
 urlbar-result-action-search-w-engine = Rechercher avec { $engine }
 urlbar-result-action-sponsored = Sponsorisé
 urlbar-result-action-switch-tab = Aller à l’onglet
+urlbar-result-action-move-tab-to-split-view = Déplacer l’onglet dans la vue scindée
 urlbar-result-action-visit = Consulter
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -730,6 +840,14 @@ urlbar-result-action-copy-to-clipboard = Copier
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = indéfini
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = Extension { -brand-product-name }
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = Recommandé
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -787,6 +905,160 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · Sponsorisé
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = Demander
+
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = Dernière visite { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days =
+    { $daysAgo ->
+        [one] Dernière visite il y a { $daysAgo } jour
+       *[other] Dernière visite il y a { $daysAgo } jours
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks =
+    { $weeksAgo ->
+        [one] Dernière visite il y a { $weeksAgo } semaine
+       *[other] Dernière visite il y a { $weeksAgo } semaines
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months =
+    { $monthsAgo ->
+        [one] Dernière visite il y a { $monthsAgo } mois
+       *[other] Dernière visite il y a { $monthsAgo } mois
+    }
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = Dernière visite le { $date }
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = Ajouté aux marque-pages le { $date }
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = Dernière visite { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 =
+    { $daysAgo ->
+        [one] Dernière visite il y a { $daysAgo } jour
+       *[other] Dernière visite il y a { $daysAgo } jours
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 =
+    { $weeksAgo ->
+        [one] Dernière visite il y a { $weeksAgo } semaine
+       *[other] Dernière visite il y a { $weeksAgo } semaines
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 = Dernière visite il y a { $monthsAgo } mois
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = Dernière visite le { $date }
+
+## These strings are used for Realtime suggestions in the urlbar.
+## Market refers to stocks, indexes, and funds.
+
+# This string is shown as title when Market suggestion are disabled.
+urlbar-result-market-opt-in-title = Les informations boursières directement dans votre barre de recherche
+# This string is shown as description when Market suggestion are disabled.
+urlbar-result-market-opt-in-description = Afficher l’actualité des marchés et bien d’autres informations de nos partenaires lorsque vous partagez les requêtes de recherche avec { -vendor-short-name }. <a data-l10n-name="learn-more-link">En savoir plus</a>
+# This string is shown as button to activate online when realtime suggestion are disabled.
+urlbar-result-realtime-opt-in-allow = Afficher les suggestions
+# This string is shown in split button to dismiss activation the Realtime suggestion.
+urlbar-result-realtime-opt-in-not-now = Plus tard
+urlbar-result-realtime-opt-in-dismiss = Ignorer
+urlbar-result-realtime-opt-in-dismiss-all2 = Ne pas afficher ces suggestions
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = Ne pas afficher les suggestions liées aux marchés
+urlbar-result-realtime-opt-in-dismiss-all =
+    .label = Ne pas afficher ces suggestions
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market =
+    .label = Ne pas afficher les suggestions liées aux marchés
+# A message that replaces a result when the user dismisses Market suggestions.
+urlbar-result-dismissal-acknowledgment-market = Merci de votre retour. Vous ne verrez plus ces suggestions liées aux marchés.
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = Suggestions boursières
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-result-dismissal-acknowledgment-all = Merci de votre retour. Vous ne verrez plus ces suggestions.
+
+## These strings are used for suggestions of important dates in the urlbar.
+
+# The name of an event and the number of days until it starts separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown =
+    { $daysUntilStart ->
+        [one] { $name } · Dans { $daysUntilStart } jour
+       *[other] { $name } · Dans { $daysUntilStart } jours
+    }
+# The name of a multiple day long event and the number of days until it starts
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown-range =
+    { $daysUntilStart ->
+        [one] { $name } · Débute dans { $daysUntilStart } jour
+       *[other] { $name } · Débute dans { $daysUntilStart } jours
+    }
+# The name of a multiple day long event and the number of days until it ends
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilEnd (integer) - The number of days until the event ends.
+urlbar-result-dates-ongoing =
+    { $daysUntilEnd ->
+        [one] { $name } · Se termine dans { $daysUntilEnd } jour
+       *[other] { $name } · Se termine dans { $daysUntilEnd } jours
+    }
+# The name of an event and a note that it is happening today separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-today = { $name } · Aujourd’hui
+# The name of multiple day long event and a note that it is ends today
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-ends-today = { $name } · Se termine aujourd’hui
 
 ## Strings used for buttons in the urlbar
 
@@ -828,6 +1100,51 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = Aucun raccourci sélectionné, choisissez un raccourci
     .tooltiptext = Aucun raccourci sélectionné, choisissez un raccourci
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }, sélectionner un moteur de recherche
+urlbar-searchmode-button-no-engine2 =
+    .title = Aucun raccourci sélectionné, choisissez un raccourci
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = La recherche par mot-clé est désactivée
+urlbar-searchmode-dropmarker2 =
+    .title = Choisir un moteur de recherche
+urlbar-searchmode-bookmarks3 = Marque-pages
+    .accesskey = M
+urlbar-searchmode-tabs3 = Onglets
+    .accesskey = O
+urlbar-searchmode-history3 = Historique
+    .accesskey = H
+urlbar-searchmode-actions3 = Actions
+    .accesskey = A
+urlbar-searchmode-bookmarks2 = Marque-pages
+urlbar-searchmode-tabs2 = Onglets
+urlbar-searchmode-history2 = Historique
+urlbar-searchmode-actions2 = Actions
+urlbar-searchmode-exit-button2 =
+    .title = Fermer
+urlbar-searchmode-default2 =
+    .title = Moteur de recherche par défaut
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Ajouter « { $engineName } »
+    .title = Ajouter le moteur de recherche « { $engineName } »
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = Pour cette fois-ci, rechercher avec :
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = Rechercher avec :
+urlbar-searchmode-popup-search-settings = Paramètres de recherche
+    .accesskey = P
+urlbar-searchmode-popup-settings = Paramètres
+    .accesskey = P
+urlbar-searchmode-popup-search-settings-panelitem = Paramètres de recherche
+urlbar-searchmode-popup-settings-panelitem = Paramètres
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -843,6 +1160,21 @@ urlbar-result-action-switch-to-tabgroup = Passer à { $group }
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = Ouvrir { $group }
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = Ouvrir dans un nouvel onglet
+    .accesskey = O
+urlbar-view-context-menu-open-in-container-tab =
+    .label = Ouvrir dans un nouvel onglet conteneur
+    .accesskey = d
+urlbar-view-context-menu-open-in-window =
+    .label = Ouvrir dans une nouvelle fenêtre
+    .accesskey = f
+urlbar-view-context-menu-open-in-private-window =
+    .label = Ouvrir dans une nouvelle fenêtre privée
+    .accesskey = p
 
 ## Labels shown above groups of urlbar results
 
@@ -869,6 +1201,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Populaire sur { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = Ne pas afficher les recherches populaires
+    .accesskey = N
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = Sponsorisé
@@ -916,6 +1251,9 @@ fullscreen-warning-no-domain = Ce document est désormais en plein écran
 fullscreen-exit-button = Quitter le mode plein écran (Échap)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
+fullscreen-keyboardlock-exit-button = Quitter le mode plein écran (maintenez Échap)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = Quitter le mode plein écran (maintenez Échap)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1011,7 +1349,7 @@ repair-text-encoding-button =
     .label = Réparer l’encodage du texte
     .tooltiptext = Détermine l’encodage correct du texte depuis le contenu de la page
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1031,6 +1369,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = Mots de passe
     .tooltiptext = Consulter et gérer vos mots de passe enregistrés
+qrcode-panel-error =
+    .message = Échec de la génération du code QR. Veuillez réessayer.
+qrcode-copy-button =
+    .label = Copier
+qrcode-copy-success =
+    .message = Code QR copié dans le presse-papiers.
+qrcode-copy-error =
+    .message = Échec de la copie du code QR.
+qrcode-save-button =
+    .label = Enregistrer
+qrcode-save-success =
+    .message = Code QR enregistré.
+qrcode-save-error =
+    .message = Échec de l’enregistrement du code QR.
+qrcode-save-title = Enregistrer le code QR
+qrcode-save-filter-png = Image PNG
+qrcode-save-filename = codeqr.png
+qrcode-window-title = Code QR
+qrcode-dialog-title = Code QR
+qrcode-image =
+    .aria-label = Code QR
+qrcode-close-button =
+    .aria-label = Fermer
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1044,11 +1405,28 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = Onglets synchronisés
     .tooltiptext = Afficher les onglets d’autres appareils
+toolbar-button-send-tab =
+    .label = Envoyer l’onglet
+    .tooltiptext = Envoyer l’onglet actuel à un autre appareil
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = Nouvelle fenêtre privée
     .tooltiptext = Nouvelle fenêtre de navigation privée ({ $shortcut })
+toolbar-button-share-tab =
+    .label = Partager
+    .tooltiptext = Partager cette page
+toolbar-button-tab-groups =
+    .label = Groupes d’onglets
+    .tooltiptext = Afficher les groupes d’onglets
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = codeqr
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = codeqr-{ $domain }
 
 ## EME notification panel
 
@@ -1062,12 +1440,27 @@ eme-notifications-drm-content-playing-dismiss-accesskey = n
 
 panel-save-update-username = Nom d’utilisateur
 panel-save-update-password = Mot de passe
+panel-save-update-username-2 =
+    .label = Nom d’utilisateur
+panel-save-update-password-2 =
+    .label = Mot de passe
 
 ##
 
 # "More" item in macOS share menu
 menu-share-more =
     .label = Plus…
+menu-share-windows =
+    .label = Options supplémentaires
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label =
+        { $count ->
+            [one] Copier le lien
+           *[other] Copier les { $count } liens
+        }
+    .accesskey = C
 menu-share-copy-link =
     .label = Copier le lien
     .accesskey = l
@@ -1083,6 +1476,9 @@ popups-infobar-allow =
 popups-infobar-block =
     .label = Bloquer les popups pour { $uriHost }
     .accesskey = p
+popups-infobar-allow2 =
+    .label = Autoriser les popups et les redirections tierces pour { $uriHost }
+    .accesskey = A
 
 ##
 
@@ -1145,6 +1541,10 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Lister tous les onglets
     .tooltiptext = Lister tous les onglets
+
+## Drop indicator text for pinned tabs when no tabs are pinned.
+
+pinned-tabs-drop-indicator = Déposez un onglet ici pour l’épingler
 
 ## Infobar shown at startup to suggest session-restore
 
@@ -1215,6 +1615,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = Mettre fin à la session privée
     .tooltiptext = Mettre fin à la session privée
+reset-pbm-panel-heading2 = Effacer les données et démarrer une nouvelle session privée ?
+reset-pbm-panel-description2 = Cette action supprime l’historique, les cookies et toutes les autres données de site sans fermer votre fenêtre de navigation privée.
 reset-pbm-panel-heading = Mettre fin à votre session privée ?
 reset-pbm-panel-description = Fermer tous les onglets privés et supprimer l’historique, les cookies et toutes les autres données des sites.
 reset-pbm-panel-always-ask-checkbox =
@@ -1223,10 +1625,16 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = Annuler
     .accesskey = A
+reset-pbm-panel-confirm-button2 =
+    .label = Effacer la session privée
+    .accesskey = E
 reset-pbm-panel-confirm-button =
     .label = Supprimer les données de la session
     .accesskey = S
 reset-pbm-panel-complete = Données de session privée supprimées
+reset-pbm-toolbar-button2 =
+    .label = Effacer la session privée
+    .tooltiptext = Effacer la session privée
 
 ## Autorefresh blocker
 
@@ -1243,6 +1651,7 @@ firefox-relay-offer-why-to-use-relay = Nos alias sécurisés et faciles à utili
 #  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = Tous les e-mails envoyés à vos alias de messagerie seront transférés à <strong>{ $useremail }</strong> (sauf si vous décidez de les bloquer).
 firefox-relay-offer-legal-notice = En cliquant sur « Utiliser les alias de messagerie », vous acceptez les <label data-l10n-name="tos-url">Conditions d’utilisation</label> et la <label data-l10n-name="privacy-url">Politique de confidentialité</label>.
+firefox-relay-offer-legal-notice-1 = En créant un compte et un alias de messagerie, vous acceptez les <label data-l10n-name="tos-url">Conditions d’utilisation</label> et la <label data-l10n-name="privacy-url">Politique de confidentialité</label>.
 
 ## Add-on Pop-up Notifications
 
@@ -1269,10 +1678,21 @@ popup-warning-message =
         [one] { -brand-short-name } a empêché ce site d’ouvrir une fenêtre popup.
        *[other] { -brand-short-name } a empêché ce site d’ouvrir { $popupCount } fenêtres popup.
     }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+redirect-warning-with-popup-message =
+    { $popupCount ->
+        [0] { -brand-short-name } a empêché ce site d’effectuer une redirection.
+        [1] { -brand-short-name } a empêché ce site d’ouvrir une fenêtre popup et d’effectuer une redirection.
+       *[other] { -brand-short-name } a empêché ce site d’ouvrir { $popupCount } fenêtres popup et d’effectuer une redirection.
+    }
 # The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
 popup-warning-exceeded-message = { -brand-short-name } a empêché ce site d’ouvrir plus de { $popupCount } fenêtres popup.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-with-redirect-message = { -brand-short-name } a empêché ce site d’ouvrir plus de { $popupCount } fenêtres popup et d’effectuer une redirection.
 popup-warning-button =
     .label =
         { PLATFORM() ->
@@ -1288,6 +1708,10 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Afficher « { $popupURI } »
+# Variables:
+#   $redirectURI (String): the URI for the redirect
+popup-trigger-redirect-menuitem =
+    .label = Afficher « { $redirectURI } »
 
 ## File-picker crash notification ("FilePickerCrashed.sys.mjs")
 
@@ -1316,3 +1740,155 @@ onboarding-checklist-button-label = Terminer la configuration
 onboarding-aw-finish-setup-button =
     .label = Terminer la configuration
     .tooltiptext = Terminer la configuration de { -brand-short-name }
+
+## The urlbar trust icon & panel
+
+trustpanel-etp-label-enabled = La protection renforcée contre le pistage est activée
+trustpanel-etp-label-disabled = La protection renforcée contre le pistage est désactivée
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-on =
+    .aria-label = Protection renforcée contre le pistage : activée pour { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-off =
+    .aria-label = Protection renforcée contre le pistage : désactivée pour { $host }
+trustpanel-etp-description-enabled = Si quelque chose semble ne pas fonctionner sur ce site, tentez de désactiver les protections.
+trustpanel-etp-description-disabled = { -brand-product-name } estime que les entreprises devraient moins vous pister. Nous bloquons autant de traqueurs que possible lorsque vous activez les protections.
+trustpanel-connection-label-secure = Connexion sécurisée
+trustpanel-connection-label-insecure = Connexion non sécurisée
+trustpanel-header-enabled = { -brand-product-name } monte la garde
+trustpanel-description-enabled2 = Vous êtes protégé·e. Si nous remarquons quelque chose, nous vous le ferons savoir.
+trustpanel-header-enabled-insecure = Faites attention sur ce site
+trustpanel-description-enabled-insecure = { -brand-product-name } a remarqué quelque chose de suspect.
+trustpanel-header-disabled = Vous avez désactivé les protections
+trustpanel-description-disabled = { -brand-product-name } ne monte pas la garde. Nous vous suggérons de réactiver les protections.
+trustpanel-clear-cookies-button = Effacer les cookies et les données de sites
+trustpanel-privacy-link = Paramètres de vie privée
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-clear-cookies-header =
+    .title = Effacer les cookies et les données de sites pour { $host }
+trustpanel-clear-cookies-description = Supprimer les cookies et les données de sites peut vous déconnecter de sites web et vider vos paniers d’achats.
+trustpanel-clear-cookies-subview-button-clear = Effacer
+trustpanel-clear-cookies-subview-button-cancel = Annuler
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-site-information-header =
+    .title = Protections de connexion pour { $host }
+trustpanel-siteinformation-morelink = Plus d’informations sur le site
+trustpanel-blocker-see-all = Tout afficher
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-blocker-header =
+    .title = Protections contre le pistage pour { $host }
+
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = Non sécurisé
+
+## Variables
+##  $count (String): the number of trackers blocked.
+
+trustpanel-blocker-description = { -brand-product-name } estime que les entreprises devraient moins vous pister. Nous bloquons donc tout ce que nous pouvons.
+trustpanel-blocked-header = { -brand-product-name } a bloqué ces éléments pour vous :
+trustpanel-tracking-header = { -brand-product-name } a autorisé ces éléments afin que les sites continuent de fonctionner :
+trustpanel-tracking-description = Sans les traqueurs, certains boutons, formulaires ou champs de connexion pourraient ne pas fonctionner.
+trustpanel-insecure-section-header = La connexion n’est pas sécurisée
+trustpanel-insecure-description = Les données que vous envoyez vers ce site ne sont pas chiffrées. Elles peuvent être consultées, dérobées ou modifiées.
+trustpanel-list-label-tracking-cookies =
+    { $count ->
+        [one] { $count } cookie de pistage intersites
+       *[other] { $count } cookies de pistage intersites
+    }
+trustpanel-list-label-tracking-content = Contenu utilisé pour le pistage
+trustpanel-list-label-fingerprinter =
+    { $count ->
+        [one] { $count } détecteur d’empreinte numérique
+       *[other] { $count } détecteurs d’empreinte numérique
+    }
+trustpanel-list-label-social-tracking =
+    { $count ->
+        [one] { $count } traqueur de réseaux sociaux
+       *[other] { $count } traqueurs de réseaux sociaux
+    }
+trustpanel-list-label-cryptominer =
+    { $count ->
+        [one] { $count } mineur de cryptomonnaies
+       *[other] { $count } mineurs de cryptomonnaies
+    }
+trustpanel-social-tracking-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a bloqué { $count } traqueur de réseaux sociaux
+       *[other] { -brand-product-name } a bloqué { $count } traqueurs de réseaux sociaux
+    }
+trustpanel-social-tracking-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a autorisé { $count } traqueur de réseaux sociaux
+       *[other] { -brand-product-name } a autorisé { $count } traqueurs de réseaux sociaux
+    }
+trustpanel-tracking-cookies-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a bloqué { $count } cookie de pistage intersites
+       *[other] { -brand-product-name } a bloqué { $count } cookies de pistage intersites
+    }
+trustpanel-tracking-cookies-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a autorisé { $count } cookie de pistage intersites
+       *[other] { -brand-product-name } a autorisé { $count } cookies de pistage intersites
+    }
+trustpanel-tracking-content-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a bloqué { $count } traqueur
+       *[other] { -brand-product-name } a bloqué { $count } traqueurs
+    }
+trustpanel-tracking-content-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a autorisé { $count } traqueur
+       *[other] { -brand-product-name } a autorisé { $count } traqueurs
+    }
+trustpanel-tracking-content-tab-list-header = Les sites suivants tentent de vous pister :
+trustpanel-fingerprinter-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a bloqué { $count } détecteur d’empreinte numérique
+       *[other] { -brand-product-name } a bloqué { $count } détecteurs d’empreinte numérique
+    }
+trustpanel-fingerprinter-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a autorisé { $count } détecteur d’empreinte numérique
+       *[other] { -brand-product-name } a autorisé { $count } détecteurs d’empreinte numérique
+    }
+trustpanel-fingerprinter-list-header = Ces sites tentent de détecter votre empreinte numérique :
+trustpanel-cryptominer-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a bloqué { $count } mineur de cryptomonnaies
+       *[other] { -brand-product-name } a bloqué { $count } mineurs de cryptomonnaies
+    }
+trustpanel-cryptominer-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } a autorisé { $count } mineur de cryptomonnaies
+       *[other] { -brand-product-name } a autorisé { $count } mineurs de cryptomonnaies
+    }
+trustpanel-cryptominer-tab-list-header = Ces sites tentent de miner des cryptomonnaies :
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = Disposez-vous d’un compte sur ce site ?
+trustpanel-breachalerts-anonymous-breached-description = { -brand-product-name } a découvert que ce site a subi une fuite de données au cours des 12 derniers mois. Vérifiez si elle vous concerne.
+trustpanel-breachalerts-anonymous-breached-button-dismiss = Ignorer
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = Lancer une analyse gratuite
+trustpanel-blocker-section-header2 =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span> traqueur bloqué sur ce site
+       *[other] <span data-l10n-name="count">{ $count }</span> traqueurs bloqués sur ce site
+    }
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>Le site ne semble pas fonctionner correctement ?</strong> Actualisez la page pour abaisser temporairement votre protection contre le pistage.
+reduced-protection-infobar-reload-button = Actualiser
+    .accesskey = A
+reduced-protection-infobar-never-show-button = Ne plus afficher
+    .accesskey = N

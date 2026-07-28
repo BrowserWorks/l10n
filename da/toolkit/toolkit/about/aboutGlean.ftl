@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Manuel test
 about-glean-category-adhoc-testing = Ad hoc-test
 about-glean-category-profiler = Brug af profilerings-værktøjet
 about-glean-category-about-data = Om data
+about-glean-category-metrics-table = Tabel med målinger
 about-glean-upload-enabled = Upload af data er aktiveret.
 about-glean-upload-disabled = Upload af data er deaktiveret.
 about-glean-upload-enabled-local = Upload af data er kun aktiveret for at sende til en lokal server.
@@ -140,6 +141,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     For at optage en ydelsesprofil og se alle optagede målinger, skal du bruge 
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Alle målinger
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Kategori
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Navn
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Type
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Værdi
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Handlinger
+about-glean-metrics-table-settings-button = Indstillinger
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Indstillinger for tabel med målinger
+about-glean-metrics-table-settings-category-general = Generelt
+about-glean-metrics-table-settings-hide-empty-value-rows = Skjul rækker uden værdier
+about-glean-metrics-table-settings-category-visualizations = Visualiseringer
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Eksempel
+about-glean-metrics-table-settings-category-visualizations-histogram = Histogram
+about-glean-metrics-table-settings-histograms-chart-max = Maksimal højde for diagram
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Skaleret maksimal højde
+about-glean-metrics-table-settings-histograms-box-padding = Boks-padding
+about-glean-metrics-table-settings-histograms-chart-padding = Diagram-padding
+about-glean-metrics-table-settings-histograms-left-padding = Ekstra afstand til venstre
+about-glean-metrics-table-settings-category-visualizations-timeline = Tidslinje
+about-glean-metrics-table-settings-timelines-height = Højde
+about-glean-metrics-table-settings-timelines-width = Bredde
+about-glean-metrics-table-settings-timelines-chart-padding = Diagram-padding
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Cirkelradius
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = X-forskydning for Y-aksen
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y-forskydning for Y-aksen
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Filtrer
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Dette filtrerer tabellen nedenfor baseret på kategori, navn, type og værdi (hvis værdien er en enkel type).
+about-glean-button-load-all = Indlæs alle værdier
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Eksporter data
+about-glean-button-load-value = Indlæs
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Dokumentation
+about-glean-button-watch = Overvåg
+# Meaning "to stop watching"
+about-glean-button-unwatch = Fjern overvågning
+about-glean-no-data-to-display = Ingen data at vise.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>DualLabeledCounter</code>-målinger er ikke understøttet i <code>about:glean</code>-visningen endnu.
+about-glean-unknown-metric-type-warning = Ukendt type af måling.
 about-glean-about-data-explanation =
     Konsulter <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name }-ordbogen</a> for at gennemse 
     listen med indsamlede data.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Indbyggede pings
+about-glean-ping-list-optgroup-custom =
+    .label = Tilpassede pings

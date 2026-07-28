@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Дозвольте { -bran
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } оброблятиме запити про файли cookie для вас
 about-private-browsing-cookie-banners-promo-body = Тепер ми автоматично відхиляємо багато банерів про файли cookie, щоб зменшити стеження за вами і дати змогу не відволікатися під час користування інтернетом.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Не залишайте слідів на цьому пристрої
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } видаляє ваші файли cookie, історію та дані сайтів, коли ви закриваєте всі приватні вікна.
 about-private-browsing-felt-privacy-v1-info-link = Хто може бачити мою діяльність?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Закриття всіх приватних вікон видаляє файли cookie, історію та дані сайтів.
+about-private-browsing-nova-info-link = Хто все ще може бачити мою активність?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Ваші дані не записуються
+about-private-browsing-nova-info-subheader = Ми зітремо всі пошукові запити та дані входу, коли ви закриєте це вікно. Вбудовані засоби захисту { -brand-short-name }, як-от блокування стеження, також увімкнено.

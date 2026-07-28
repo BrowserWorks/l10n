@@ -6,7 +6,7 @@ profile-window-heading = Выберите профиль { -brand-short-name }
 profile-window-body = Полностью разделите работу и личный просмотр, включая пароли и закладки. Или создайте профили для всех, кто использует это устройство.
 # This checkbox appears in the Choose profile window that appears when the browser is opened. "Show this" refers to this window, which is displayed when the checkbox is enabled.
 profile-window-checkbox-label-2 =
-    .label = Выбрать профиль при открытии { -brand-short-name }
+    .label = Выбирать профиль при открытии { -brand-short-name }
 # This subcopy appears below the checkbox when it is unchecked
 profile-window-checkbox-subcopy = { -brand-short-name } откроет профиль, который вы использовали в последний раз.
 profile-window-create-profile = Создать профиль
@@ -19,19 +19,23 @@ profile-card-delete-button =
 # Variables
 #   $profileName (string) - The name of the profile
 profile-card =
-    .title = Открыть { $profileName }
-    .aria-label = Открыть { $profileName }
+    .title = Открыть «{ $profileName }»
+    .aria-label = Открыть «{ $profileName }»
 # Variables
 #   $number (number) - The number of the profile
 default-profile-name = Профиль { $number }
 # The word 'original' is used in the sense that it is the initial or starting profile when you install Firefox.
 original-profile-name = Исходный файл
+default-desktop-shortcut-name = { -brand-short-name }
 edit-profile-page-title = Редактировать профиль
 edit-profile-page-header = Изменить ваш профиль
 edit-profile-page-profile-name-label = Имя профиля
 edit-profile-page-theme-header-2 =
     .label = Тема
 edit-profile-page-explore-themes = Просмотреть больше тем
+edit-profile-page-desktop-shortcut-header = Создать ярлык на рабочем столе
+edit-profile-page-desktop-shortcut-toggle =
+    .aria-label = Создать ярлык на рабочем столе
 edit-profile-page-avatar-header-2 =
     .label = Аватар
 edit-profile-page-delete-button =
@@ -45,18 +49,27 @@ avatar-selector-save-button =
     .label = Сохранить
 avatar-selector-upload-file = Загрузить файл
 avatar-selector-drag-file = Или перетащите файл сюда
+avatar-selector-add-image = Добавить изображение
+avatar-selector-crop = Обрезать
 edit-profile-page-no-name = Дайте имя этому профилю, чтобы легче находить его позже. Изменяйте его имя в любое время.
 edit-profile-page-duplicate-name = Имя профиля уже используется. Попробуйте новое имя.
 edit-profile-page-profile-saved = Сохранено
 new-profile-page-title = Новый профиль
 new-profile-page-header = Настройка вашего нового профиля
-new-profile-page-header-description = Каждый профиль хранит свою историю просмотров и настройки отдельно от других ваших профилей. Кроме того, надежная защита приватности { -brand-short-name } включена по умолчанию.
+new-profile-page-header-description = Каждый профиль хранит свою историю просмотров и настройки отдельно от других ваших профилей. Кроме того, надёжная защита приватности { -brand-short-name } включена по умолчанию.
 new-profile-page-learn-more = Подробнее
 new-profile-page-input-placeholder =
     .placeholder = Выберите имя, например, «Работа» или «Личное».
 new-profile-page-done-button =
     .label = Завершить редактирование
-profile-window-title-2 = { -brand-short-name } - Выберите профиль
+# Variables
+#   $profilename (String) - The name of the copied profile.
+copied-profile-page-header-2 = Ваша копия «{ $profilename }» готова к настройке
+copied-profile-page-header-description = Мы скопировали ваши данные и настройки в новый профиль. Теперь дайте ему имя, выберите внешний вид и сделайте его своим.
+restored-profile-page-header = Настройка восстановленного профиля
+restored-profile-page-header-description = Каждый профиль хранит свою историю просмотров и настройки отдельно от других ваших профилей. Кроме того, надёжная защита приватности { -brand-short-name } включена по умолчанию.
+restored-profile-page-learn-more = Подробнее
+profile-window-title-2 = { -brand-short-name } — Выбор профиля
 profile-window-logo =
     .alt = Логотип { -brand-short-name }
 
@@ -64,10 +77,10 @@ profile-window-logo =
 
 # Variables
 #   $profilename (String) - The name of the profile.
-delete-profile-page-title = Удалить профиль { $profilename }
+delete-profile-page-title = Удалить профиль «{ $profilename }»
 # Variables
 #   $profilename (String) - The name of the profile.
-delete-profile-header = Удалить профиль { $profilename }?
+delete-profile-header = Удалить профиль «{ $profilename }»?
 delete-profile-description = { -brand-short-name } навсегда удалит следующие данные с этого устройства:
 # Open is an adjective, as in "browser windows currently open".
 delete-profile-windows = Открытые окна
@@ -77,6 +90,9 @@ delete-profile-bookmarks = Закладки
 delete-profile-history = История (посещённые страницы, куки, данные сайтов)
 delete-profile-autofill = Данные автозаполнения (адреса, способы оплаты)
 delete-profile-logins = Пароли
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-page-title-2 = Удалить профиль «{ $profilename }»
 
 ##
 
@@ -93,8 +109,10 @@ profiles-light-theme = Светлая
 profiles-dark-theme = Тёмная
 # The default system theme
 profiles-system-theme = Системная
+profiles-system-theme-title =
+    .title = Применить системную тему
 # This light theme features sunny colors such as goldenrod and pale yellow. Its name evokes the color of a marigold flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
-profiles-marigold-theme-2 = Желтые календулы
+profiles-marigold-theme-2 = Жёлтые календулы
 # This light theme features various shades of soft, muted purples. Its name evokes the color of a lavender flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-lavender-theme-2 = Бледно-лавандовый
 # This light theme features very pale green tones. Its name evokes the color of pale green mint ice cream. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
@@ -107,6 +125,47 @@ profiles-ocean-theme-2 = Морской синий
 profiles-terracotta-theme-2 = Кирпичный красный
 # This dark theme features forest green, dusky green with a gray undertone, and a muted sage green. Its name evokes the rich color of green moss in the forest. This name can be translated directly if its easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-moss-theme-2 = Зелёный мох
+profiles-gray-theme = Серый
+profiles-gray-theme-title =
+    .title = Применить серую тему
+profiles-yellow-theme = Жёлтый
+profiles-yellow-theme-title =
+    .title = Применить жёлтую тему
+profiles-orange-theme = Оранжевый
+profiles-orange-theme-title =
+    .title = Применить оранжевую тему
+profiles-red-theme = Красный
+profiles-red-theme-title =
+    .title = Применить красную тему
+profiles-pink-theme = Розовый
+profiles-pink-theme-title =
+    .title = Применить розовую тему
+profiles-purple-theme = Пурпурный
+profiles-purple-theme-title =
+    .title = Применить пурпурную тему
+profiles-violet-theme = Фиолетовый
+profiles-violet-theme-title =
+    .title = Применить фиолетовую тему
+profiles-blue-theme = Синий
+profiles-blue-theme-title =
+    .title = Применить синюю тему
+profiles-green-theme = Зелёный
+profiles-green-theme-title =
+    .title = Применить зелёную тему
+profiles-cyan-theme = Бирюзовый
+profiles-cyan-theme-title =
+    .title = Применить бирюзовую тему
+profiles-custom-theme-title =
+    .title = Применить пользовательскую тему
+
+## Data collection settings changed (multi-profile)
+
+# Full infobar message with inline bold title followed by body text
+multiprofile-data-collection-message = <strong>Настройки сбора данных изменены.</strong> Изменения, сделанные в другом профиле, будут применены ко всем профилям на этом устройстве.
+# Primary button label to open the Data collection section in Settings
+multiprofile-data-collection-view-settings = Просмотр настроек
+# Secondary button label to dismiss the infobar without action
+multiprofile-data-collection-dismiss = Убрать
 
 ## Alternative text for default profile icons
 
@@ -114,22 +173,174 @@ book-avatar-alt =
     .alt = Книга
 briefcase-avatar-alt =
     .alt = Портфель
+picture-avatar-alt =
+    .alt = Изображение
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-alt =
+    .alt = Создание
 flower-avatar-alt =
     .alt = Цветок
+folder-avatar-alt =
+    .alt = Папка
+hammer-avatar-alt =
+    .alt = Молоток
 heart-avatar-alt =
     .alt = Сердце
+heart-rate-avatar-alt =
+    .alt = Пульс
+clock-avatar-alt =
+    .alt = Часы
+leaf-avatar-alt =
+    .alt = Лист
+lightbulb-avatar-alt =
+    .alt = Лампочка
+makeup-avatar-alt =
+    .alt = Грим
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-alt =
+    .alt = Сообщение
+musical-note-avatar-alt =
+    .alt = Звуковая нота
+palette-avatar-alt =
+    .alt = Палитра
+paw-print-avatar-alt =
+    .alt = Отпечаток лапы
+plane-avatar-alt =
+    .alt = Самолет
+# Present refers to a gift box, not the current time period
+present-avatar-alt =
+    .alt = Присутствие
 shopping-avatar-alt =
     .alt = Тележка покупателя
+soccer-ball-avatar-alt =
+    .alt = Футбольный мяч
+sparkle-single-avatar-alt =
+    .alt = Искра
 star-avatar-alt =
     .alt = Звёздочка
+video-game-controller-avatar-alt =
+    .alt = Контроллер для видеоигр
 custom-avatar-alt =
     .alt = Свой аватар
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-alt =
+    .alt = Глобус
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar-alt =
+    .alt = Бриллиант
+barbell-avatar-alt =
+    .alt = Штанга
+bike-avatar-alt =
+    .alt = Велосипед
 
-## Labels for default avatar icons
+## Tooltips for default avatar icons
 
 book-avatar = Книга
 briefcase-avatar = Портфель
+clock-avatar = Часы
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar = Создание
+custom-avatar = Свой аватар
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar = Бриллиант
 flower-avatar = Цветок
+folder-avatar = Папка
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar = Глобус
+hammer-avatar = Молоток
 heart-avatar = Сердце
+heart-rate-avatar = Пульс
+leaf-avatar = Лист
+lightbulb-avatar = Лампочка
+makeup-avatar = Грим
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar = Сообщение
+musical-note-avatar = Звуковая нота
+palette-avatar = Палитра
+paw-print-avatar = Отпечаток лапы
+picture-avatar = Фото
+plane-avatar = Самолет
+# Present refers to a gift box, not the current time period
+present-avatar = Присутствие
 shopping-avatar = Тележка покупателя
+soccer-ball-avatar = Футбольный мяч
+sparkle-single-avatar = Искра
 star-avatar = Звёздочка
+video-game-controller-avatar = Контроллер для видеоигр
+custom-avatar-crop-back-button =
+    .aria-label = Назад
+custom-avatar-crop-view =
+    .aria-label = Обрезать окно просмотра изображения
+custom-avatar-crop-area =
+    .aria-label = Настройка области кадрирования
+custom-avatar-drag-handle =
+    .aria-label = Изменить размер области кадрирования
+profiles-appmenu-callout-tour-title = Ваш новый профиль готов к работе
+# "Spin up another" means creating another profile, “Hop between your digital lives" is referring to switching between different profiles such as work, personal, etc.
+profiles-appmenu-callout-tour-subtitle = В меню ☰ нажмите имя своего профиля, чтобы открыть другой, отредактировать этот или переключиться между вашими цифровыми жизнями.
+profiles-appmenu-callout-tour-primary-button = Покажите мне, как
+barbell-avatar = Штанга
+bike-avatar = Велосипед
+
+## Tooltips for default avatar icons
+
+barbell-avatar-tooltip =
+    .tooltiptext = Установить аватар со штангой
+bike-avatar-tooltip =
+    .tooltiptext = Установить аватар с байком
+book-avatar-tooltip =
+    .tooltiptext = Установить аватар с книгой
+briefcase-avatar-tooltip =
+    .tooltiptext = Установить аватар с портфелей
+picture-avatar-tooltip =
+    .tooltiptext = Установить аватар-изображение
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-tooltip =
+    .tooltiptext = Установить самодельный аватар
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-tooltip =
+    .tooltiptext = Установить аватар с глобусом
+diamond-avatar-tooltip =
+    .tooltiptext = Установить аватар с бриллиантом
+flower-avatar-tooltip =
+    .tooltiptext = Установить аватар с цветком
+folder-avatar-tooltip =
+    .tooltiptext = Установить аватар с папкой
+hammer-avatar-tooltip =
+    .tooltiptext = Установить аватар с молотком
+heart-avatar-tooltip =
+    .tooltiptext = Установить аватар с сердцем
+heart-rate-avatar-tooltip =
+    .tooltiptext = Настроить аватар с частотой сердцебиения
+clock-avatar-tooltip =
+    .tooltiptext = Установить аватар с часами
+leaf-avatar-tooltip =
+    .tooltiptext = Применить аватар с листом
+lightbulb-avatar-tooltip =
+    .tooltiptext = Установить аватар с лампой
+makeup-avatar-tooltip =
+    .tooltiptext = Установить аватар с макияжем
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-tooltip =
+    .tooltiptext = Установить аватар с сообщением
+musical-note-avatar-tooltip =
+    .tooltiptext = Установить аватар с музыкальной нотой
+palette-avatar-tooltip =
+    .tooltiptext = Применить аватар с палитрой
+paw-print-avatar-tooltip =
+    .tooltiptext = Установить аватар с отпечатком лапы
+plane-avatar-tooltip =
+    .tooltiptext = Установить аватар с самолётом
+# Present refers to a gift box, not the current time period
+present-avatar-tooltip =
+    .tooltiptext = Применить аватар с подарком
+shopping-avatar-tooltip =
+    .tooltiptext = Применить аватар с корзиной покупок
+soccer-ball-avatar-tooltip =
+    .tooltiptext = Установить аватар с футбольным мячом
+sparkle-single-avatar-tooltip =
+    .tooltiptext = Установить аватар с искрой
+star-avatar-tooltip =
+    .tooltiptext = Установить аватар со звёздочкой
+video-game-controller-avatar-tooltip =
+    .tooltiptext = Установить аватар с игровым контроллером

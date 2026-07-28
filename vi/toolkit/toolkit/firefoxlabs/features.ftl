@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Hiển thị trang web
 experimental-features-group-customize-browsing =
     .label = Tùy chỉnh trình duyệt của bạn
+experimental-features-group-productivity =
+    .label = Năng suất
+experimental-features-group-newtab-widgets =
+    .label = Widget trên { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Mật khẩu trong thanh lề
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Phần chủ đề và Theo dõi/Chặn cho Câu chuyện trên thẻ mới
 experimental-features-newtab-sections-follow-block-description = Sắp xếp các câu chuyện trên trang Thẻ mới của bạn thành các phần chủ đề (thể thao, thực phẩm, giải trí và nhiều hơn nữa) để có trải nghiệm có cấu trúc hơn và dễ quét hơn. Sử dụng các tuỳ chọn Theo dõi và Chặn của chúng tôi để tùy chỉnh nội dung bạn thấy. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Thêm trang web vào thanh tác vụ của bạn
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Mở các trang web bạn thường xuyên truy cập dưới dạng ứng dụng web từ thanh tác vụ của bạn. Tìm kiếm biểu tượng “Thêm thẻ vào thanh tác vụ” bên phải thanh địa chỉ để khởi chạy trang web đó trong một cửa sổ được sắp xếp hợp lý với tất cả tính năng bảo vệ của { -brand-product-name }. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Danh sách trên { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Danh sách
+experimental-features-newtab-widget-lists-description = Hãy luôn ghi nhớ danh sách việc cần làm khi bạn mở một thẻ mới. Từ danh sách đóng gói đến danh sách mua sắm, hãy lập kế hoạch trong { -brand-product-name }. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Bộ đếm giờ trên { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Bộ hẹn giờ
+experimental-features-newtab-widget-timer-description = Đặt bộ hẹn giờ để giúp bạn tập trung, thúc đẩy bạn đi đúng hướng hoặc nhắc nhở bạn nạp lại năng lượng. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Danh sách và bộ đếm giờ trên { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Hãy luôn ghi nhớ danh sách việc cần làm khi mở một tab mới. Từ danh sách đóng gói đến danh sách mua sắm, hãy lên kế hoạch trong { -brand-product-name }. Đặt hẹn giờ để giúp bạn tập trung, nhắc nhở bạn đi đúng hướng hoặc nạp lại năng lượng. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Dự báo thời tiết
+experimental-features-newtab-widget-weather-description = Nắm rõ thời tiết hôm nay với dự báo theo giờ. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Ảnh của ngày
+experimental-features-newtab-widget-picture-of-the-day-description = Thêm chút kỳ diệu mỗi ngày vào cuộc sống của bạn. Lấy bức ảnh mới, học được điều gì đó thú vị và đặt hình nền mới chỉ trong tích tắc. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Đồng hồ
+experimental-features-newtab-widget-clocks-description = Thêm tối đa bốn đồng hồ với biệt danh tuỳ chỉnh để theo dõi thời gian ở những nơi quan trọng đối với bạn. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Tìm kiếm lịch sử theo ngữ nghĩa
+experimental-features-semantic-history-search-description = Sử dụng mô hình học máy (Machine Learning) cục bộ để đề xuất các mục từ lịch sử có liên quan đến tìm kiếm của bạn dựa trên sự hiểu biết ngôn ngữ tự nhiên trong thanh địa chỉ { -brand-product-name }. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Ghi chú thẻ
+experimental-features-tab-notes-description = Ghi chú thẻ là một tính năng thử nghiệm cho phép bạn thêm ghi chú dán vào các thẻ trình duyệt. Ghi lại ngữ cảnh, lời nhắc hoặc các bước tiếp theo để bạn có thể quay lại và nhớ lý do tại sao bạn đã mở thẻ đó. Chúng tôi rất mong nhận được phản hồi của bạn để tiếp tục cải thiện tính năng này. <a data-l10n-name="connect">Chia sẻ phản hồi</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Menu thẻ được sắp xếp hợp lý
+experimental-features-tab-context-menu-description = Bạn sẽ thấy menu ngữ cảnh đơn giản hơn khi nhấp chuột phải vào một thẻ. Menu này được thiết kế để giúp bạn dễ dàng tìm thấy các thao tác thường dùng. <a data-l10n-name="connect">Chia sẻ phản hồi</a>

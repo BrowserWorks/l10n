@@ -29,6 +29,7 @@ about-logging-no-log-modules = Nessuno
 about-logging-no-log-file = Nessuno
 about-logging-logging-preset-selector-text = Preset di registrazione:
 about-logging-with-profiler-stacks-checkbox = Attiva analisi dello stack per messaggi di log
+about-logging-with-javascript-tracing-checkbox = Attiva tracciamento JavaScript
 about-logging-menu =
     .title = Opzioni avanzate
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Moduli di registrazione per diagnosticare problemi con decodificatori e codificatori audio/video, e decodificatori di immagini WebCodecs
 about-logging-preset-ml-label = Machine learning
 about-logging-preset-ml-description = Moduli di registrazione per diagnosticare problemi con machine learning
+about-logging-preset-web-compat-label = Compatibilità web
+about-logging-preset-web-compat-description = Moduli di registrazione per diagnosticare problemi di compatibilità web
+about-logging-preset-navigation = Navigazione
+about-logging-preset-navigation-description = Moduli di registrazione per diagnosticare problemi con navigazione e cronologia di sessione
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Moduli di registrazione per diagnosticare problemi con WebGPU
 about-logging-preset-gfx-label = Grafica
@@ -98,5 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Condividi
 about-logging-upload-error = Si è verificato un errore durante il caricamento del profilo: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Si è verificato un errore durante il salvataggio del profilo caricato: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Si è verificato un errore durante il salvataggio del file: { $errorText }
 
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profilo { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Profili caricati
+about-logging-no-uploaded-profiles = Non è stato ancora caricato alcun profilo.
+about-logging-delete-uploaded-profile = Elimina
+about-logging-view-uploaded-profile = Visualizza profilo
+about-logging-delete-profile-confirm-title = Elimina profilo
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Eliminare il profilo “{ $profileName }”? Questa operazione non può essere annullata.
+about-logging-deleting-profile = Eliminazione in corso…

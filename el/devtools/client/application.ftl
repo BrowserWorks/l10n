@@ -77,7 +77,7 @@ manifest-loaded-ok = Η δήλωση φορτώθηκε.
 manifest-loaded-error = Προέκυψε σφάλμα κατά τη φόρτωσης της δήλωσης:
 # Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Σφάλμα Waterfox DevTools
+manifest-loaded-devtools-error = Σφάλμα εργαλείων ανάπτυξης Waterfox
 # Text displayed when the page has no manifest available
 manifest-non-existing = Δεν βρέθηκε δήλωση προς επιθεώρηση.
 # Text displayed when the page has a manifest embedded in a Data URL and
@@ -110,6 +110,17 @@ sidebar-item-manifest = Δήλωση
 sidebar-item-service-workers = Service worker
     .alt = Εικονίδιο service worker
     .title = Service worker
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = Ιστορικό συνεδρίας
+    .alt = Εικονίδιο ιστορικού συνεδρίας
+    .title = Ιστορικό συνεδρίας
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = Εμφάνιση δεδομένων ιστορικού συνεδρίας
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = Το διάγραμμα ιστορικού συνεδρίας δεν είναι διαθέσιμο
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = Ο προορισμός δεν υποστηρίζει την εμφάνιση διαγραμμάτων ιστορικού συνεδρίας
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Εικονίδιο προειδοποίησης

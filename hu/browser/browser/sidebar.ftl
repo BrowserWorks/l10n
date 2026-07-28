@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = MI csevegőbot
 menu-view-contextual-password-manager =
     .label = Jelszavak
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Nyitott lapok
 sidebar-options-menu-button =
     .title = Menü megnyitása
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Oldalsáv átméretezése
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Törlés az előzményekből
 sidebar-history-clear =
     .label = Előzmények törlése
+sidebar-history-sort-by-heading-menucaption =
+    .label = Rendezés szempontja:
 sidebar-history-sort-by-heading = Rendezés szempontja:
 sidebar-history-sort-option-date =
     .label = Dátum
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = A { -brand-short-name } beállításainak kezelése
 sidebar-vertical-tabs =
     .label = Függőleges lapok
+sidebar-settings2 =
+    .label = Beállítások
 sidebar-settings =
     .label = Oldalsáv-beállítások
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Oldalsáv kibontása rámutatáskor
-sidebar-manage-extensions = Kiegészítők kezelése
+sidebar-manage-extensions2 = Összes kiegészítő kezelése
+sidebar-customize-extensions-header2 = Kiegészítők
+sidebar-customize-firefox-tools-header2 =
+    .label = Eszközök
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Oldalak törlése az előzményekből
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Könyvjelző szerkesztése…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Könyvjelző törlése
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Törlés
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = Előzmények
 sidebar-menu-synced-tabs-label =
     .label = Lapok más eszközökről
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Nyitott lapok
 sidebar-menu-bookmarks-label =
     .label = Könyvjelzők
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = Előzmények
 sidebar-menu-syncedtabs-header =
     .heading = Lapok más eszközökről
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Nyitott lapok
 sidebar-menu-cpm-header =
     .heading = Jelszavak
+sidebar-menu-bookmarks-header =
+    .heading = Könyvjelzők
 sidebar-panel-header-close-button =
     .tooltiptext = Bezárás
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Könyvjelzők menü
+sidebar-bookmarks-folder-toolbar = Könyvjelzők eszköztár
+sidebar-bookmarks-folder-other = Más könyvjelzők
+sidebar-bookmarks-folder-mobile = Mobilos könyvjelzők
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Oldalsáv testreszabása
 sidebar-history-title = Előzmények
 sidebar-syncedtabs-title = Lapok más eszközökről
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Nyitott lapok
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Rögzített lapok
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = { $winID }. ablak (jelenlegi)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = { $winID }. ablak
+sidebar-bookmarks-title = Könyvjelzők
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Oldalsáv elrejtése ({ $shortcut })
     .label = Oldalsávok
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Húzza ide a fontos lapokat, hogy kéznél legyenek

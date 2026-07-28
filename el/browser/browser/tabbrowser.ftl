@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] Κλείσιμο καρτέλας
            *[other] Κλείσιμο { $tabCount } καρτελών
         }
+tab-splitview-splitter =
+    .aria-label = Αλλαγή μεγέθους καρτελών διαχωρισμού προβολής
+tab-devtools-splitter =
+    .aria-label = Αλλαγή μεγέθους πίνακα εργαλείων ανάπτυξης
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -162,8 +166,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Να μην εμφανιστεί α�
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Προσοχή
-tabbrowser-confirm-close-duplicate-tabs-text = Θα παραμείνει ανοικτή η τελευταία ενεργή καρτέλα
 tabbrowser-confirm-close-all-duplicate-tabs-title = Κλείσιμο διπλών καρτελών;
 tabbrowser-confirm-close-all-duplicate-tabs-text =
     Θα κλείσουμε τις διπλές καρτέλες σε αυτό το παράθυρο. Η τελευταία ενεργή
@@ -183,8 +185,14 @@ tabbrowser-customizemode-tab-title = Προσαρμογή του { -brand-short-
 tabbrowser-context-mute-tab =
     .label = Σίγαση καρτέλας
     .accesskey = σ
+tabbrowser-context-mute-tab2 =
+    .label = Σίγαση
+    .accesskey = Σ
 tabbrowser-context-unmute-tab =
     .label = Άρση σίγασης καρτέλας
+    .accesskey = σ
+tabbrowser-context-unmute-tab2 =
+    .label = Άρση σίγασης
     .accesskey = σ
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
@@ -224,7 +232,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Τρέχον παράθυρο
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Δημιουργία ομάδας καρτελών
 tab-group-editor-title-edit = Διαχείριση ομάδας καρτελών
@@ -254,16 +262,33 @@ tab-group-editor-color-selector2-gray = Γκρι
     .title = Γκρι
 tab-group-editor-color-selector2-red = Κόκκινο
     .title = Κόκκινο
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Κλειστό
 tab-group-description = { $tabGroupName } — Ομάδα καρτελών
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Συμπτυγμένο
+tab-group-label-tooltip-expanded = { $tabGroupName } — Αναπτυγμένο
+tab-group-preview-name =
+    .aria-label = Καρτέλες σε συμπτυγμένη ομάδα
 tab-context-unnamed-group =
     .label = Ανώνυμη ομάδα
 tab-group-name-default = Ανώνυμη ομάδα
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Ομάδες καρτελών
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Η λίστα καρτελών είναι ανοικτή
+tab-group-preview-closed-description = Η λίστα καρτελών είναι κλειστή
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -279,10 +304,34 @@ tab-context-move-tab-to-group =
            *[other] Προσθήκη καρτελών σε ομάδα
         }
     .accesskey = ο
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Προσθήκη διαχωρισμένης προβολής σε νέα ομάδα
+           *[other] Προσθήκη διαχωρισμένων προβολών σε νέα ομάδα
+        }
+    .accesskey = ο
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Προσθήκη διαχωρισμένης προβολής σε ομάδα
+           *[other] Προσθήκη διαχωρισμένων προβολών σε ομάδα
+        }
+    .accesskey = ο
+tab-context-move-tab-to-group-saved-groups =
+    .label = Κλεισμένες ομάδες
 tab-group-editor-action-new-tab =
     .label = Νέα καρτέλα στην ομάδα
 tab-group-editor-action-new-window =
     .label = Μετακίνηση ομάδας σε νέο παράθυρο
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Αντιγραφή συνδέσμου στην ομάδα
+           *[other] Αντιγραφή { $linkCount } συνδέσμων στην ομάδα
+        }
 tab-group-editor-action-save =
     .label = Αποθήκευση και κλείσιμο ομάδας
 tab-group-editor-action-ungroup =
@@ -292,6 +341,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Τέλος
     .accessKey = Τ
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Κοινή χρήση ομάδας καρτελών
 tab-context-reopen-tab-group =
     .label = Επαναφορά ομάδας καρτελών
 # Variables:
@@ -303,6 +355,26 @@ tab-context-ungroup-tab =
            *[other] Αφαίρεση από ομάδες
         }
     .accesskey = Α
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] { $tabCount } καρτέλα ακόμα
+       *[other] { $tabCount } καρτέλες ακόμα
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Τακτοποιήστε τις καρτέλες σας
+tab-groups-list-empty-description = Σύρετε μία καρτέλα πάνω σε μια άλλη ή κάντε δεξί κλικ σε μια καρτέλα για να ξεκινήσετε την οργάνωση. Θα αποθηκεύσουμε τις ομάδες σας εδώ για εύκολη εύρεση αργότερα.
+tab-groups-list-empty-button = Δημιουργία ομάδας καρτελών
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Νέα ομάδα
 
 ## Open/saved tab group context menu
 
@@ -328,3 +400,87 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Άνοιγμα ομάδας σε νέο παράθυρο
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Προσθήκη σημείωσης
+    .accesskey = Π
+tab-context-edit-note =
+    .label = Επεξεργασία σημείωσης
+    .accesskey = Ε
+tab-context-delete-note =
+    .label = Διαγραφή σημείωσης
+    .accesskey = Δ
+tab-note-editor-title-create = Προσθήκη σημείωσης
+tab-note-editor-title-edit = Επεξεργασία σημείωσης
+tab-note-editor-text-field =
+    .placeholder = Τι θέλετε να θυμάστε από αυτήν την καρτέλα;
+tab-note-editor-button-cancel =
+    .label = Ακύρωση
+    .accesskey = Α
+tab-note-editor-button-save =
+    .label = Αποθήκευση
+    .accesskey = θ
+tab-note-editor-button-delete =
+    .title = Διαγραφή σημείωσης
+    .aria-label = Διαγραφή σημείωσης
+    .accesskey = Δ
+tab-note-preview-edit-icon =
+    .alt = Επεξεργασία σημείωσης
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Διαβάστε περισσότερα
+tab-note-panel-add-note-new-badge =
+    .label = Νέο
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } χαρακτήρες
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Έναρξη διαχωρισμού προβολής
+    .accesskey = ξ
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Άνοιγμα σε διαχωρισμό προβολής
+    .accesskey = γ
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Αναίρεση διαχωρισμού προβολής
+    .accesskey = σ
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Αντιστροφή καρτελών
+    .accesskey = ρ
+tab-context-badge-new = Νέο
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, Διαχωρισμός προβολής αριστερά
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, Διαχωρισμός προβολής δεξιά
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Διαχωρισμός καρτελών
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Αντιστροφή καρτελών
+split-view-menuitem-close-both-tabs =
+    .label = Κλείσιμο και των δύο καρτελών

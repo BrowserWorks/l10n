@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Spør Perplexity
 perplexity-callout-secondary-label-1 = Ignorer
 perplexity-callout-secondary-label-2 = Eg forstår
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Vil du prøve eit nytt personvernfokusert søk?
+start-page-callout-subtitle = Prøv Startpage. Den er utforma for å halde søka dine meir private frå starten av.
+start-page-callout-primary-label = Prøv Startpage
+start-page-callout-secondary-label = Ignorer
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Beskytt passorda dine ved å synkronisere dei 
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registrer deg
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Behald favorittkjeldene dine på oppgåvelinja
+taskbar-tabs-social-callout-subtitle = Start sosiale nettstadar som ein app i eit straumlinjeforma vindauge verna av { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Chatt frå oppgåvelinja di
+taskbar-tabs-chat-callout-subtitle = Start chatte-nettstadar som ein app i eit straumlinjeforma vindauge verna av { -brand-short-name }.
+taskbar-tabs-email-callout-title = Behald e-posten din på oppgåvelinja
+taskbar-tabs-email-callout-subtitle = Start e-post-nettstadar som ein app i eit straumlinjeforma vindauge verna av { -brand-short-name }.
+taskbar-tabs-media-callout-title = Gå tilbake til strøyming frå oppåvelinja
+taskbar-tabs-media-callout-subtitle = Start strøymetenestene som ein app i eit straumlinjeforma vindauge verna av { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Legg til denne nettstaden i oppgåvelinja
+taskbar-tabs-value-prop-callout-subtitle = Start han i eit eige vindauge og eit forenkla grensesnitt med eit enkelt klikk.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Ikkje mist alt du har lagra når du flyttar til Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Synkroniser no for å halda bokmerka, passorda og innstillingane dine for { -brand-short-name } trygge og enkle å gjenopprette.
+windows-10-eos-sync-urgency-title-2 = Skal du seie farvel til Windows 10? Vern dataa dine når du byter.
+windows-10-eos-sync-urgency-subtitle-2 = Sjølv om du ikkje brukar { -brand-short-name } dagleg, bør du synkronisere for å halde bokmerke og passord sikkre og tilgjengelege.
+windows-10-eos-sync-new-device-title-1 = Ikkje risiker å måtta starta på nytt på den neste eininga din.
+windows-10-eos-sync-new-device-subtitle-1 = Synkroniser for å ta med deg bokmerka, passorda og dei føretrekte innstillingane dine frå { -brand-short-name } når du flyttar.
+windows-10-eos-sync-new-device-title-2 = Skal du byte til ei ny eining? Ikkje mist det som betyr noko.
+windows-10-eos-sync-new-device-subtitle-2 = Same kor ofte du brukar { -brand-short-name }, vernar synkronisering bokmerka dine, passord og innstillingar.
+windows-10-eos-sync-new-device-primary-label = Synkroniser no
+windows-10-eos-sync-general-title-1 = Vern { -brand-short-name } slik du har tilpassa han.
+windows-10-eos-sync-general-subtitle-1 = Sikkerheitskopier og synkroniser passorda, bokmerka, innstillingane, og andre data, for å bevare det du er avhengig av.
+windows-10-eos-sync-general-title-2 = Det passar bra no å sikkerheitskopiere passorda og bokmerka dine
+windows-10-eos-sync-general-subtitle-2 = Synkroniser no for å verne det du stolar på { -brand-short-name } med — og få det tilbake kvar som helst, når som helst.
+windows-10-eos-sync-tour-title-1 = For mange faner? Rydd opp med fanegrupper.
+windows-10-eos-sync-tour-subtitle-1 = Dra éi fane oppå ei anna for å opprette ei gruppe og halde ting organisert.
+windows-10-eos-sync-tour-title-2 = Gjer deg klar for Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synkroniser bokmerka, passorda og innstillingane dine for å sikringskopiere dei før du byter.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Vis færre tilrådingar
+windows-10-eos-sync-dismiss-button-label = Ignorer
+windows-10-eos-sync-callout-primary-advance-button-label = Neste
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nyhet: Klikk og hald for å førehandsvise lenker
+link-preview-onboarding-callout-description = Sjå ei kort beskriving, lesetid og meir for å avgjere om ei lenke er verd å klikke på. Også tilgjengeleg via høgreklikk.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Rydd opp med fanegrupper
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Grupper fanene etter oppgåve eller tema. Dra inn fleire etter kvart.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Lag ei gruppe
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Vis fanetitlar i sidestolpen
 sidebar-button-callout-subtitle = Bruk sidestolpeknappen for å utvide sidestolpen, slik at du kan sjå fanetitlar.
 sidebar-button-callout-vertical-tabs = For å vise faneane dine, velg sidestolpe-knappen i verktøylinja.
+sidebar-deprecation-callout-title = Updatert sidedestolpe kjem snart
+sidebar-deprecation-callout-subtitle = Vi avviklar sidestolpeversjonen du brukar no. Prøv den oppdaterte sidestolpen. Den er raskare og gir deg tilgang til fleire verktøy.
+sidebar-deprecation-cta-button = Prøv han no
 
 ## Sidebar Vertical Tabs Strings
 
@@ -147,17 +218,17 @@ pin-tabs-callout-4-title = Fest nettstadar du besøkjer oftast
 ## Sidebar Onboarding Strings
 
 sidebar-customization-callout-1-title = Sidestolpe: staden din for verktøy og faner
-sidebar-customization-callout-1-subtitle = { -brand-product-name }-sidestolpen gir deg rask tilgang til nettlesarhistorikken din, faner frå andre einingar samt ein AI-chatbot — utan å forlate hovudvisinga.
-sidebar-customization-callout-callout-button = Tilpass sidestolpe
+sidebar-customization-callout-1-subtitle = { -brand-product-name }-sidestolpen gir deg rask tilgang til nettlesarhistorikken din, faner frå andre einingar samt ein KI-chatbot — utan å forlate hovudvisinga.
+sidebar-customization-callout-callout-button = Tilpass sidestolpen
 sidebar-customization-callout-dismiss-button = Skjul sidestolpe
 sidebar-customization-callout-2-title = Gjer { -brand-product-name }-sidestolpen til din eigen
-sidebar-customization-callout-2-subtitle = Legg til og fjern verktøy. Plasser fanene dine i sidestolpen. Prøv ein AI-chatbot. Korleis du tilpassar sidestolpen er opp til deg.
+sidebar-customization-callout-2-subtitle = Legg til og fjern verktøy. Plasser fanene dine i sidestolpen. Prøv ein KI-chatbot. Korleis du tilpassar sidestolpen er opp til deg.
 
 ## Sidebar Callout Survey Strings
 
 sidebar-callout-survey-title = Hjelp til med å forbetre { -brand-short-name }
 sidebar-callout-survey-satisfaction-question = Kor fornøgd er du med sidestolpeopplevinga i { -brand-short-name }?
-sidebar-callout-survey-privacy-notice-link = Personvernerklæring
+sidebar-callout-survey-privacy-notice-link = Personvernfråsegn
 sidebar-callout-survey-very-satisfied = Veldig fornøgd
 sidebar-callout-survey-satisfied = Fornøgd
 sidebar-callout-survey-neutral = Nøytral
@@ -178,10 +249,16 @@ sidebar-callout-survey-saved-websites-2 = Rask tilgang til bokmerka dine
 sidebar-callout-survey-none-of-above = Ingen av dei ovanfor
 sidebar-callout-survey-submit = Send inn
 sidebar-callout-survey-thank-you = Takk for tilbakemeldinga!
-sidebar-genai-survey-satisfaction-question = Kor fornøgd er du med å ha tilgang til ein AI-chatbot i sidestolpen?
+sidebar-genai-survey-satisfaction-question = Kor fornøgd er du med å ha tilgang til ein KI-chatbot i sidestolpen?
 sidebar-genai-survey-productive-question =
     I kva grad er du samd eller usamd i denne påstanden:<br/>
-    "AI-chatboten i sidestolpen hjelper meg å bli meir produktiv"?
+    "KI-chatboten i sidestolpen hjelper meg å bli meir produktiv"?
+splitview-onboarding-callout-title-1 = Delt visning: ein betre måte å multitaske på
+splitview-onboarding-callout-subtitle-1 = Høgreklikk på denne fana og vel «Legg til delt visning» for å sjå to faner samtidig.
+splitview-onboarding-callout-cta-1 = Prøv han no
+splitview-onboarding-callout-title-2 = Sjå to faner samtidig med delt visning
+splitview-onboarding-callout-subtitle-2 = Ingen ekstra vindauge. Inga fanebyting. Høgreklikk på denne fana og vel «Legg til delt visning».
+splitview-onboarding-callout-cta-2 = Prøv delt visning
 unified-search-callout-title = Byt mellom søkjemotorar
 unified-search-callout-subtitle = Vel det som fungerer best for ditt spesifikke søk.
 unified-search-callout-primary-label = Neste
@@ -195,6 +272,6 @@ actions-callout-title = Fullfør vanlege oppgåver eller få tilgang til grunnle
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Prøv å skrive inn ei handling som «skriv ut» for å skrive ut ei side, eller «tøm» for å fjerne historikken.

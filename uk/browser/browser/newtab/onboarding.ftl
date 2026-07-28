@@ -63,6 +63,15 @@ mr1-onboarding-theme-label-dark = Темна
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Готово
 
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Призупинити анімацію
+onboarding-animation-play-button =
+    .aria-label = Відтворити анімацію
+
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
 ## doesn't become too long. Line breaks will be preserved when displaying the
@@ -478,12 +487,73 @@ sync-to-mobile-button-label = Синхронізувати з мобільним
 desktop-to-mobile-qr-code-alt =
     .aria-label = QR-код для завантаження { -brand-product-name } для мобільних пристроїв
 
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Переходите на Windows 11?
+    Створімо резервну копію ваших даних { -brand-product-name }.
+create-backup-screen-1-subtitle = Автоматичний захист ваших паролів, закладок та інших даних за 1–2 хвилини.
+create-backup-screen-1-flair = Рекомендовано
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Докладніше</a>
+create-backup-screen-1-sync-label = Синхронізувати з { -brand-product-name }
+create-backup-screen-1-sync-body = Резервне копіювання усіх пристроїв, на яких виконано вхід
+create-backup-screen-1-backup-label = Резервне копіювання на ПК
+create-backup-screen-1-backup-body = Збереження на вашому пристрої або на OneDrive
+create-backup-select-tile-button-label = Вибрати
+create-backup-back-button-label = Назад
+create-backup-show-fewer =
+    .label = Показувати менше
+create-backup-screen-2-title = Виберіть дані { -brand-product-name } для резервного копіювання
+create-backup-screen-2-subtitle = Приділіть лише хвилину, щоб створювати резервні копії ваших даних раз на день.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Легке налаштування
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Закладки, історія, налаштування тощо
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Не включає паролі та платежі
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Без шифрування
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Усі дані
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Включає паролі та платежі
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Шифрування паролем
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Де ви хочете зберегти свою резервну копію?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Створити пароль для резервного файлу
+create-backup-screen-3-subtitle = Потрібно для шифрування ваших даних. Збережіть у місці, яке ви запам'ятаєте.
+fx-backup-opt-in-header = Виберіть розташування файлу
+fx-backup-opt-in-filepath-label = Виберіть місце, з якого ви плануєте перенести дані на новий пристрій, наприклад, OneDrive.
+fx-backup-opt-in-create-password-label = Введіть пароль
+fx-backup-opt-in-confirm-btn-label = Продовжити
+fx-backup-opt-in-cancel-btn-label = Назад
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Ваше резервне копіювання заплановано
+fx-backup-confirmation-screen-close-button = Закрити
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Включено всі дані перегляду
+fx-backup-confirmation-screen-all-data-item-text-2 = Зберігається на вашому пристрої
+fx-backup-confirmation-screen-all-data-item-text-3 = Зашифровано та захищено паролем
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Включено закладки, історія, налаштування та інші дані
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Зберігається на вашому пристрої
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Паролі та платежі не включено
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Відкрийте <a data-l10n-name="settings">Налаштування</a>, щоб включити конфіденційні дані.
+fx-backup-confirmation-screen-item-subtext-1 = Резервне копіювання розпочнеться через кілька хвилин і виконуватиметься раз на день. Ви можете перевірити прогрес у <a data-l10n-name="settings">Налаштуваннях</a>.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } шукатиме вашу резервну копію, якщо вам знадобиться перевстановити браузер.
+
 ## Restore from Backup Flow about:welcome screens
 
 restore-from-backup-secondary-top-button = Відновлення з резервної копії
 restore-from-backup-title = Відновіть усі дані { -brand-short-name }
 restore-from-backup-subtitle = Відновіть усі свої закладки, історію та інші дані, щоб безперебійно продовжити роботу.
 restore-from-backup-secondary-button = Не відновлювати
+multiple-backups-info-tile = <strong>Знайдено кілька файлів резервних копій.</strong> Вибрано найновіший файл. Відновіть інші профілі в <a data-l10n-name="settings-label">Налаштуваннях.</a>
 
 ## Restored from Backup spotlight
 
@@ -496,3 +566,34 @@ restored-from-backup-success-no-checklist-primary-button = Продовжити
 restored-from-backup-error-title = От халепа... Виникла проблема з вашою резервною копією.
 restored-from-backup-error-subtitle = Якщо у вас є інший файл резервної копії { -brand-short-name }, спробуйте відновити дані з нього. <a data-l10n-name="restore-problems">Не вдається усунути проблему?</a>
 restored-from-backup-error-primary-button = Закрити
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Налаштуйте свою { -brand-short-name } роботу
+onboarding-personalization-subtitle = Дайте відповідь на кілька запитань, і ми порекомендуємо функції та розширення, щоб покращити вашу роботу з { -brand-short-name }.
+onboarding-personalization-use-case-title = Для чого ви використовуватимете { -brand-short-name }?
+onboarding-personalization-use-case-personal-option = Особисте використання
+onboarding-personalization-use-case-school-option = Школа
+onboarding-personalization-use-case-work-option = Робота
+onboarding-personalization-motivation-title = Які функції { -brand-short-name } є для вас найважливішими?
+onboarding-personalization-motivation-privacy-option = Приватність і безпека
+onboarding-personalization-motivation-productivity-option = Продуктивність
+onboarding-personalization-motivation-other-option = Інше
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Ми захищаємо ваші дані й автоматично блокуємо стеження компаній за вашими діями.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Ви в надійних руках
+onboarding-refresh-import-subtitle = Перенесіть свої паролі, закладки, історію та інші дані.
+onboarding-refresh-import-title = Зробіть { -brand-short-name } своєю домівкою
+onboarding-refresh-onboarding-addons-subtitle = Розширення – це крихітні програми, які дозволяють вам налаштовувати { -brand-short-name }. Вони можуть покращити вашу приватність, підвищити продуктивність, змінити зовнішній вигляд { -brand-short-name } та багато іншого.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Перейдіть на новий рівень вебперегляду
+onboarding-refresh-sync-subtitle = Користуйтеся закладками, паролями й іншими даними всюди, де ви ввійшли в { -brand-short-name }. Крім того, ваші дані шифруються, тому їх можете бачити лише ви.
+onboarding-refresh-sync-title = Вебперегляд і синхронізація де завгодно.
+onboarding-refresh-gratitude-subtitle = Дякуємо вам за користування { -brand-short-name }, єдиним браузером від некомерційної організації. Завдяки вашій підтримці ми докладаємо зусиль для розвитку безпечнішого інтернету, доступного для всіх.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } працює для вас

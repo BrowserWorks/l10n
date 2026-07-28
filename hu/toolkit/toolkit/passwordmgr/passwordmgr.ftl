@@ -10,10 +10,10 @@
 password-manager-save-password-message = Menti a jelszót ehhez: { $host }?
 password-manager-save-password-button-deny =
     .label = Most nem
-    .accesskey = M
+    .accesskey = n
 password-manager-save-password-button-allow =
     .label = Mentés
-    .accesskey = e
+    .accesskey = M
 password-manager-save-password-button-never =
     .label = Sose mentse
     .accesskey = S
@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = Ne frissítse
     .accesskey = N
+primary-password-prompt-message = Adja meg az elsődleges jelszavát.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = Nincs felhasználónév
-password-manager-toggle-password =
-    .label = Jelszó megjelenítése
-    .accesskey = m
 password-manager-confirm-password-change = Jelszóváltoztatás megerősítése
 password-manager-select-username = Válassza ki a frissítendő bejelentkezést:

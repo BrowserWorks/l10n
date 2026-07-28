@@ -47,10 +47,14 @@ serviceworker-worker-status-stopped = متوقف
 serviceworker-empty-intro2 = لم يوجد عمّال خدمة
 # Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro-link = اطّلع على المزيد
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = تعرّف على كيفية إضافة بيان
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = الأخطاء والتحذيرات
 # Header for the Identity section of Manifest inspection displayed in the application panel.
 manifest-item-identity = الهويّة
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = عرض تقديمي
 # Header for the Icon section of Manifest inspection displayed in the application panel.
 manifest-item-icons = الأيقونات
 # Text displayed while we are loading the manifest file
@@ -65,6 +69,11 @@ manifest-loaded-error = حدث خطأ أثناء تحميل البيان:
 manifest-loaded-devtools-error = خطأ في أدوات Waterfox للمطوّرين
 # Text displayed when the page has no manifest available
 manifest-non-existing = لم نجد بيانًا نفحصه.
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+# Variables:
+#   $purpose (string) - Manifest purpose
+manifest-icon-purpose = الغرض: <code>{ $purpose }</code>
 # Text displayed as the alt attribute for <img> tags showing the icons in the
 # manifest.
 manifest-icon-img =

@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Opne lenke i ny fane
     .accesskey = n
+main-context-menu-open-link-split-view =
+    .label = Opne lenke i delt visning
+    .accesskey = d
 main-context-menu-open-link-container-tab =
     .label = Opne lenke i ny behaldarfane
     .accesskey = O
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Kopier rein lenke
     .accesskey = K
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Kopier lenke utan nettstadsporing
-    .accesskey = o
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Gøym kontrollar
     .accesskey = ø
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Fullskjerm
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Vis skildring
     .accesskey = k
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Søk etter bilde med { $engine }
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = Lagre videoen som…
     .accesskey = a
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Send lydfila med e-post…
     .accesskey = n
+main-context-menu-send-to-device-2 =
+    .label = Send til eining
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = Send til mobil
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = Logg inn for å sende faner
+main-context-menu-send-to-mobile-enable-sync2 = Slå på synkronisering for å sende ei fane
+main-context-menu-send-to-mobile-connect-phone2 = Kople til telefonen din
+main-context-menu-send-to-mobile-device-missing2 = Ser du ikkje eininga di?
+main-context-menu-send-to-mobile-sign-in-from-link = Logg inn for å sende ei lenke
+main-context-menu-send-to-mobile-sign-in-from-page = Logg inn for å sende ei side
+main-context-menu-send-to-mobile-enable-sync3 = Slå på synkronisering for å sende faner
+main-context-menu-send-to-mobile-enable-sync-from-link = Slå på synkronisering for å sende ei lenke
+main-context-menu-send-to-mobile-enable-sync-from-page = Slå på synkronisering for å sende ei side
+main-context-menu-send-to-mobile-connect-phone3 = Kople til ei eining for å sende faner
+main-context-menu-send-to-mobile-connect-phone-from-link = Kople til ei eining for å sende ei lenke
+main-context-menu-send-to-mobile-connect-phone-from-page = Kople til ei eining for å sende ei side
 main-context-menu-save-to-pocket =
     .label = Lagre sida til { -pocket-brand-name }
     .accesskey = k
@@ -313,7 +334,7 @@ main-context-menu-use-relay-mask =
     .label = Bruk { -relay-brand-short-name } e-postalias
     .accesskey = B
 main-context-menu-suggest-strong-password =
-    .label = Foreslå sterkt passord…
+    .label = Føreslå sterkt passord…
     .accesskey = s
 main-context-menu-manage-logins2 =
     .label = Handsam innloggingar…
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Send lenke til eining
     .accesskey = e
+main-context-menu-link-send-to-mobile =
+    .label = Send lenke til mobil
+    .accesskey = n
 main-context-menu-frame =
     .label = Denne ramma
     .accesskey = D
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Vis passord
     .accesskey = V
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Ny
+main-context-menu-pdfjs-copy-page =
+    .label = Kopier side
+main-context-menu-pdfjs-cut-page =
+    .label = Klipp ut side
+main-context-menu-pdfjs-delete-page =
+    .label = Slett side
+main-context-menu-pdfjs-save-page =
+    .label = Lagre utval som…

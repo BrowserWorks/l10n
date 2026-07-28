@@ -8,6 +8,19 @@ tabbrowser-menuitem-close-tab =
     .label = Tutup Tab
 tabbrowser-menuitem-close =
     .label = Tutup
+# Displayed within the tooltip on tabs inside of a tab group.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+tabbrowser-tab-tooltip-tab-group = { $tabGroupName }
+# Displayed within the tooltip on tabs in a container.
+# Variables:
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-container = { $containerName }
+# Displayed within the tooltip on tabs inside of a tab group if the tab is also in a container.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-tab-group-container = { $tabGroupName } — { $containerName }
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
@@ -121,8 +134,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Jangan tampilkan kotak dialog ini la
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Perhatian
-tabbrowser-confirm-close-duplicate-tabs-text = Tab terakhir akan tetap terbuka.
 tabbrowser-confirm-close-all-duplicate-tabs-title = Tutup tab berganda?
 tabbrowser-confirm-close-all-duplicate-tabs-text = Kami akan menutup tab berganda di jendela ini. Tab terakhir akan tetap terbuka.
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Tutup Tab
@@ -181,7 +192,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Jendela kini
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Buat grup tab
 tab-group-editor-title-edit = Kelola grup tab
@@ -211,16 +222,14 @@ tab-group-editor-color-selector2-gray = Kelabu
     .title = Kelabu
 tab-group-editor-color-selector2-red = Merah
     .title = Merah
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
 tab-group-description = { $tabGroupName } — Grup Tab
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Diciutkan
+tab-group-label-tooltip-expanded = { $tabGroupName } — Diperluas
 tab-context-unnamed-group =
     .label = Grup tanpa nama
 tab-group-name-default = Grup Tanpa Nama
 
-## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -236,6 +245,8 @@ tab-context-move-tab-to-group =
            *[other] Tambahkan Tab ke Grup
         }
     .accesskey = G
+tab-context-move-tab-to-group-saved-groups =
+    .label = Grup Tertutup
 tab-group-editor-action-new-tab =
     .label = Tab baru di grup
 tab-group-editor-action-new-window =
@@ -260,6 +271,12 @@ tab-context-ungroup-tab =
            *[other] Hapus dari Grup
         }
     .accesskey = H
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip = { $tabCount } tab lagi
 
 ## Open/saved tab group context menu
 
@@ -285,3 +302,8 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Buka Grup di Jendela Baru
+
+## Tab Notes
+
+tab-note-panel-add-note-new-badge =
+    .label = Baru

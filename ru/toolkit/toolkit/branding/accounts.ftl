@@ -6,10 +6,11 @@
 # and kept in English.
 -fxaccount-brand-name =
     { $case ->
-       *[nominative] Аккаунт Waterfox
-        [genitive] Аккаунта Waterfox
-        [dative] Аккаунту Waterfox
-        [accusative] Аккаунт Waterfox
-        [instrumental] Аккаунтом Waterfox
-        [prepositional] Аккаунте Waterfox
+        [nominative_uppercase] Аккаунт Waterfox
+        [genitive] аккаунта Waterfox
+        [dative] аккаунту Waterfox
+        [accusative] аккаунт Waterfox
+        [instrumental] аккаунтом Waterfox
+        [prepositional] аккаунте Waterfox
+       *[nominative] аккаунт Waterfox
     }

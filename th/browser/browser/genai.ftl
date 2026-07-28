@@ -51,11 +51,25 @@ genai-menu-ask-generic =
 # $provider (string) - name of the provider
 genai-menu-ask-provider =
     .label = ถาม { $provider }
+genai-menu-open-generic =
+    .label = เปิดบอตสนทนา AI
+# $provider (string) - name of the provider
+genai-menu-open-provider =
+    .label = เปิด { $provider }
 genai-menu-remove-generic =
     .label = ลบบอตสนทนา AI
 # $provider (string) - name of the provider
 genai-menu-remove-provider =
     .label = ลบ { $provider }
+genai-menu-remove-sidebar =
+    .label = เอาออกจากแถบข้าง
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = ถาม { $provider }
+genai-menu-new-badge = ใหม่
+genai-menu-summarize-page = สรุปหน้า
+genai-input-ask-smart-window =
+    .placeholder = ถาม…
 genai-input-ask-generic =
     .placeholder = ถามบอตสนทนา AI…
 # $provider (string) - name of the provider
@@ -74,12 +88,29 @@ genai-shortcuts-selected-warning =
     .message = คุณเลือกข้อความไว้ { $selectionLength } อักขระ แต่จำนวนอักขระที่เราสามารถส่งไปยัง{ $provider } ได้นั้นอยู่ที่ { $maxLength } อักขระ
 genai-shortcuts-hide =
     .label = ซ่อนทางลัดบอตสนทนา
+genai-menu-choose-chatbot =
+    .label = เลือกบอตสนทนา AI
+genai-menu-ask-generic-2 =
+    .label = ถามบอตสนทนา AI
+    .accesskey = บ
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = ถาม { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = ถามบอตสนทนา AI
+    .accesskey = บ
+genai-menu-ask-smart-window =
+    .label = ถาม…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = บอตสนทนา AI
 genai-header-provider-menu =
     .title = เลือกบอตสนทนา
+genai-header-settings-button =
+    .title = การตั้งค่าการสนทนากับ AI
 genai-header-options-button =
     .title = เปิดเมนู
 genai-header-close-button =
@@ -98,8 +129,14 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = เกี่ยวกับบอตสนทนา AI ใน { -brand-short-name }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = เนื่องจากหน้าค่อนข้างยาว นี่จึงเป็นเพียงการสรุปบางส่วน
+
 ## Chatbot footer
 
+genai-page-button-summarize = สรุปหน้า
 
 ## Chatbot onboarding
 
@@ -135,6 +172,15 @@ genai-onboarding-select-primary = เริ่มสนทนา
 genai-chatbot-contextual-title = ใช้บอตสนทนา AI โดยไม่ต้องสลับแท็บ
 genai-chatbot-contextual-subtitle = สนทนาและท่องเว็บแบบเคียงข้างกันเมื่อคุณเพิ่มบอตสนทนา AI ในแถบข้างของ { -brand-short-name }
 genai-chatbot-contextual-button = เลือกบอตสนทนา
+genai-chatbot-summarize-title = ใหม่! สรุปหน้าในคลิกเดียว
+genai-chatbot-summarize-button = สรุปหน้า
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-provider-subtitle = คลิกขวาที่บอตสนทนา AI ของคุณในแถบข้างแล้วเลือก “สรุปหน้า”
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-generic-subtitle = คลิกขวาที่ปุ่มประกายไฟในแถบข้าง แล้วเลือก “สรุปหน้า” โดยครั้งแรก คุณจะเลือกบอตสนทนา AI ด้วย
+# “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
+genai-chatbot-summarize-footer-provider-subtitle = เปิดบอตสนทนา AI ของคุณในแถบข้างแล้วเลือก “สรุปหน้า” ที่ด้านล่าง
+genai-chatbot-summarize-footer-generic-subtitle = เพิ่มบอตสนทนา AI ลงในแถบข้างของ { -brand-short-name } เพื่อสรุปหน้าต่าง ๆ ได้อย่างรวดเร็ว
 
 ## Chatbot onboarding choices
 ## These describe features/capabilities of chatbot providers. These are not buttons/actions.
@@ -176,3 +222,48 @@ genai-model-optin-cancel =
 #   $rangePlural (String): The plural category of the range, using the same set as for numbers.
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 link-preview-reading-time = ใช้เวลาอ่าน { $range } นาที
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } ไม่สามารถแสดงตัวอย่างลิงก์นี้ได้
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = เยี่ยมชมลิงก์
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } ไม่สามารถสร้างประเด็นสำคัญสำหรับหน้าเว็บนี้ได้
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = มีบางอย่างผิดพลาด
+# Text for the retry link when generation fails
+link-preview-generation-retry = ลองอีกครั้ง
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = การตั้งค่าการแสดงตัวอย่างลิงก์
+link-preview-settings-enable =
+    .label = เปิดใช้งานการแสดงตัวอย่างลิงก์
+    .description = ดูชื่อหน้า คำอธิบาย และอื่น ๆ เมื่อคุณใช้ทางลัดหรือคลิกขวาที่ลิงก์
+link-preview-settings-key-points =
+    .label = อนุญาตให้ AI อ่านจุดเริ่มต้นของหน้าและสร้างประเด็นสำคัญ
+link-preview-settings-long-press =
+    .label = ทางลัด: คลิกและกดลิงก์ค้างไว้ 1 วินาที (กดยาว)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = ดูตัวอย่างลิงก์ด้วย AI
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } ใช้ AI เพื่ออ่านจุดเริ่มต้นของหน้าและสร้างประเด็นสำคัญบางประเด็น เพื่อให้ความสำคัญกับความเป็นส่วนตัวของคุณ การดำเนินการนี้จะเกิดขึ้นบนอุปกรณ์ของคุณ
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = ใหม่! คลิกและกดลิงก์ค้างไว้เพื่อดูตัวอย่าง
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = ดูคำอธิบายสั้น ๆ เวลาในการอ่าน และอื่น ๆ เพื่อช่วยคุณตัดสินใจว่าลิงก์นี้น่าสนใจพอที่จะเปิดดูหรือไม่ แถมยังสามารถดูได้ด้วยการคลิกขวาเหมือนกัน
+# Header for the key points section
+link-preview-key-points-header = ประเด็นสำคัญ
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = ประเด็นสำคัญถูกสร้างขึ้นโดย AI และอาจมีข้อผิดพลาดได้
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = ตั้งค่าครั้งแรก • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = คุณจะเห็นประเด็นสำคัญได้รวดเร็วยิ่งขึ้นในครั้งถัดไป
+# Onboarding card See a preview button
+link-preview-onboarding-button = ดูตัวอย่าง
+# Onboarding card Close button
+link-preview-onboarding-close = ปิด
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = การตั้งค่าครั้งแรก
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = ขั้นตอนนี้อาจใช้เวลาสักครู่ คุณจะเห็นประเด็นสำคัญได้รวดเร็วยิ่งขึ้นในครั้งหน้า

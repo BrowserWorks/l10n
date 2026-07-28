@@ -20,6 +20,7 @@ about-glean-category-manual-testing = 手动测试
 about-glean-category-adhoc-testing = 临时测试
 about-glean-category-profiler = 使用分析器
 about-glean-category-about-data = 关于数据
+about-glean-category-metrics-table = 指标表
 about-glean-upload-enabled = 已启用数据上传。
 about-glean-upload-disabled = 已禁用数据上传。
 about-glean-upload-enabled-local = 数据上传仅在发送到本地服务器时启用。
@@ -85,4 +86,69 @@ about-glean-about-data-list-item-dictionary = 若要浏览 { -glean-brand-name }
 about-glean-about-data-list-item-about-telemetry = 若要浏览旧版遥测正在收集的数据，请查阅 <a data-l10n-name="about-telemetry-link">about:telemetry</a>。
 about-glean-about-data-list-item-debug-ping-viewer = 若要浏览调试标签、查看所有 ping、查看实时事件流、查看可视化指标，请查阅 <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>。
 about-glean-about-data-list-item-firefox-profiler = 若要记录性能分析、查看已记录的所有指标，请使用 <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>。
+about-glean-metrics-table-header = 所有指标
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = 类别
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = 名称
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = 类型
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = 值
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = 操作
+about-glean-metrics-table-settings-button = 设置
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = 指标表格设置
+about-glean-metrics-table-settings-category-general = 常规
+about-glean-metrics-table-settings-hide-empty-value-rows = 隐藏空值行
+about-glean-metrics-table-settings-category-visualizations = 可视化
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = 示例
+about-glean-metrics-table-settings-category-visualizations-histogram = 直方图
+about-glean-metrics-table-settings-histograms-chart-max = 图表最大高度
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = 缩放后的最大高度
+about-glean-metrics-table-settings-histograms-box-padding = 条形边距
+about-glean-metrics-table-settings-histograms-chart-padding = 图表边距
+about-glean-metrics-table-settings-histograms-left-padding = 额外左边距
+about-glean-metrics-table-settings-category-visualizations-timeline = 时间轴
+about-glean-metrics-table-settings-timelines-height = 高度
+about-glean-metrics-table-settings-timelines-width = 宽度
+about-glean-metrics-table-settings-timelines-chart-padding = 图表边距
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = 圆点半径
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y 轴相对 X 偏移量
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y 轴相对 Y 偏移量
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = 筛选
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = 将根据类别、名称、类型和值（若为简单类型）筛选下方表格。
+about-glean-button-load-all = 加载所有值
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = 导出数据
+about-glean-button-load-value = 加载
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = 文档
+about-glean-button-watch = 监视
+# Meaning "to stop watching"
+about-glean-button-unwatch = 取消监视
+about-glean-no-data-to-display = 没有可显示的数据。
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>about:glean</code> 视图中暂未支持 <code>DualLabeledCounter</code> 指标。
+about-glean-unknown-metric-type-warning = 指标类型未知。
 about-glean-about-data-explanation = 要浏览收集的数据列表，请查阅 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 词典</a>。
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = 内置 Ping
+about-glean-ping-list-optgroup-custom =
+    .label = 自定义 Ping

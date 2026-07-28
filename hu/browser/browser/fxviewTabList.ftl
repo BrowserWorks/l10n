@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Áthelyezés a végére
     .accesskey = v
 fxviewtabrow-move-tab-window = Áthelyezés új ablakba
     .accesskey = a
+fxviewtabrow-send-to-device = Küldés eszközre
+    .accesskey = K
+fxviewtabrow-send-to-mobile = Küldés mobilra
+    .accesskey = m
 fxviewtabrow-send-tab = Lap küldése eszközre
     .accesskey = k
 fxviewtabrow-pin-tab = Lap rögzítése
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Lap visszahangosítása
 fxviewtabrow-options-menu-button =
     .title = A(z) { $tabTitle } beállításai
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Lap némítása
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Lap visszahangosítása
+fxviewtabrow-send-to-mobile-connect-device = Csatlakoztasson egy eszközt a lapok küldéséhez
+fxviewtabrow-send-to-mobile-device-missing2 = Nem látja az eszközét?
+fxviewtabrow-send-to-mobile-not-verified = A fiók nincs ellenőrizve
+fxviewtabrow-send-to-mobile-verify-account = Fiók ellenőrzése
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Jelentkezzen be a lapok küldéséhez
+fxviewtabrow-send-to-mobile-turn-on-sync = Kapcsolja be a szinkronizálást a lapok küldéséhez

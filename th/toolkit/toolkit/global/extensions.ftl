@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = ปฏิเสธ
     .accesskey = ป
 webext-perms-host-description-all-urls = เข้าถึงข้อมูลของคุณสำหรับเว็บไซต์ทั้งหมด
+webext-perms-host-description-file-urls = เข้าถึงไฟล์ในเครื่องคอมพิวเตอร์ของคุณ
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = เข้าถึงข้อมูลของคุณสำหรับไซต์ในโดเมน { $domain }
@@ -126,6 +127,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } ขอก�
 
 webext-site-perms-header-with-gated-perms-midi = ส่วนเสริมนี้จะให้ { $hostname } เข้าถึงอุปกรณ์ MIDI ของคุณได้
 webext-site-perms-header-with-gated-perms-midi-sysex = ส่วนเสริมนี้จะให้ { $hostname } เข้าถึงอุปกรณ์ MIDI ของคุณได้ (พร้อมการรองรับ SysEx)
+webext-site-perms-header-with-gated-perms-serial = ส่วนเสริมนี้จะให้ { $hostname } เข้าถึงอุปกรณ์ซีเรียลของคุณได้
 
 ##
 
@@ -136,6 +138,12 @@ webext-site-perms-description-gated-perms-midi =
     อุปกรณ์เหล่านี้มักเป็นอุปกรณ์เสริม เช่น เครื่องสังเคราะห์เสียง แต่ก็อาจติดตั้งมาพร้อมกับคอมพิวเตอร์ของคุณได้เช่นกัน
     
     โดยปกติแล้ว เว็บไซต์ต่าง ๆ จะไม่ได้รับอนุญาตให้เข้าถึงอุปกรณ์ MIDI การใช้งานอย่างไม่ถูกต้องอาจทำให้เกิดความเสียหายหรือคุกคามความปลอดภัยได้
+webext-site-perms-description-gated-perms-webserial =
+    อุปกรณ์เหล่านี้ได้แก่ ไมโครคอนโทรลเลอร์, เครื่องพิมพ์ 3 มิติ และอุปกรณ์อื่น ๆ ที่เชื่อมต่อผ่าน USB, พอร์ตซีเรียล หรือบลูทูธ
+    
+    คุณสามารถเลือกได้ว่าเว็บไซต์สามารถเข้าถึงอุปกรณ์ใดได้บ้าง
+    
+    เว็บไซต์โดยปกติจะไม่ได้รับอนุญาตให้เข้าถึงอุปกรณ์ซีเรียลได้ เนื่องจากการใช้งานที่ไม่เหมาะสมอาจสร้างความเสียหายหรือช่องโหว่ด้านความปลอดภัยได้
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -150,6 +158,7 @@ webext-site-perms-header-unsigned-with-perms = เพิ่ม { $extension } �
 
 webext-site-perms-midi = เข้าถึงอุปกรณ์ MIDI
 webext-site-perms-midi-sysex = เข้าถึงอุปกรณ์ MIDI พร้อมการรองรับ SysEx
+webext-site-perms-serial = เข้าถึงอุปกรณ์ซีเรียล
 
 ## Colorway theme migration
 

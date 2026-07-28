@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Depuração - Tempo de execução / { 
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Este { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Este { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Este { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Configuração
+about-debugging-sidebar-setup-title =
+    .title = Configuração
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Ferramentas de multiprocessamento
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Processo principal e processos de conteúdo do navegador de destino
+about-debugging-message-error-icon =
+    .alt = Ícone de erro
+about-debugging-message-info-icon =
+    .alt = Ícone de informação
+about-debugging-message-warning-icon =
+    .alt = Ícone de alerta
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Fechar mensagem
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Fechar mensagem
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Detalhes do erro
 about-debugging-message-details-label-warning = Detalhes do aviso
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Detalhes
+about-debugging-sidebar =
+    .heading = Depuração

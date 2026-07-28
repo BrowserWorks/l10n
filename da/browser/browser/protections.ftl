@@ -202,3 +202,47 @@ bar-tooltip-cryptominer =
             [one] { $count } cryptominer ({ $percentage }%)
            *[other] { $count } cryptominers ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Privatlivs-beskyttelse
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } blokeret denne uge
+       *[other] { $count } blokeret denne uge
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } sporings-mekanisme
+       *[other] { $count } sporings-mekanismer
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } fingerprinter
+       *[other] { $count } fingerprinters
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } sporings-cookie
+       *[other] { $count } sporings-cookies
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } sporing via sociale medier
+       *[other] { $count } sporinger via sociale medier
+    }
+privacy-metrics-private-window = { -brand-short-name } fortsætter med at blokere sporings-teknologier i private vinduer, men gemmer ikke en oversigt over, hvad der blev blokeret.
+
+## VPN promo card and banner
+
+protections-get-vpn-link = Få { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Abonnerer
+protections-vpn-banner-link = Få { -mozilla-vpn-brand-name }

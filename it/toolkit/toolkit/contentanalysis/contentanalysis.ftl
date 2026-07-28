@@ -37,8 +37,6 @@ contentanalysis-operationtype-print = stampa
 contentanalysis-upload-description = caricamento di “{ $filename }”
 #   $filename - The filename associated with the request, such as "aFile.txt"
 contentanalysis-download-description = download di “{ $filename }”
-#   $filename - The filename associated with the request, such as "aFile.txt"
-contentanalysis-customdisplaystring-description = caricamento di “{ $filename }”
 contentanalysis-warndialogtitle = Questi contenuti potrebbero essere non sicuri
 # Variables:
 #   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
@@ -92,4 +90,3 @@ contentanalysis-block-dialog-body-print = I criteri per la protezione dei dati s
 contentanalysis-inprogress-quit-title = Uscire da { -brand-shorter-name }?
 contentanalysis-inprogress-quit-message = Ci sono diverse azioni in corso. Uscendo adesso da { -brand-shorter-name } non sarà possibile completarle.
 contentanalysis-inprogress-quit-yesbutton = Sì, esci
-

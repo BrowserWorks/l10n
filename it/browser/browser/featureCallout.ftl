@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Chiedi a Perplexity
 perplexity-callout-secondary-label-1 = Chiudi
 perplexity-callout-secondary-label-2 = OK
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Vuoi provare un nuovo motore di ricerca che mette la privacy al primo posto?
+start-page-callout-subtitle = Prova Startpage. Pensato per proteggere la tua privacy nelle ricerche fin dal primo momento.
+start-page-callout-primary-label = Prova Startpage
+start-page-callout-secondary-label = Chiudi
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Proteggi le tue password sincronizzandole con 
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registrati
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Mantieni i tuoi feed preferiti nella barra delle applicazioni
+taskbar-tabs-social-callout-subtitle = Apri i tuoi social preferiti come un’app, in una finestra ottimizzata e protetta da { -brand-short-name }
+taskbar-tabs-chat-callout-title = Chatta dalla barra delle applicazioni
+taskbar-tabs-chat-callout-subtitle = Apri le tue chat preferite come un’app, in una finestra ottimizzata e protetta da { -brand-short-name }.
+taskbar-tabs-email-callout-title = Mantieni la tua email nella barra delle applicazioni
+taskbar-tabs-email-callout-subtitle = Apri la tua webmail come un’app, in una finestra ottimizzata e protetta da { -brand-short-name }.
+taskbar-tabs-media-callout-title = Riprendi lo streaming dalla barra delle applicazioni
+taskbar-tabs-media-callout-subtitle = Apri i tuoi siti di streaming preferiti come un’app, in una finestra ottimizzata e protetta da { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Aggiungi questo sito alla barra delle applicazioni
+taskbar-tabs-value-prop-callout-subtitle = Aprilo in una finestra separata e con un’interfaccia ottimizzata con un solo clic.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Non perdere tutto ciò che hai salvato quando passi a Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Sincronizza subito per assicurarti che i tuoi segnalibri, password e impostazioni di { -brand-short-name } rimangano al sicuro e siano semplici da ripristinare.
+windows-10-eos-sync-urgency-title-2 = Sei pronto per dire addio a Windows 10? Assicurati di proteggere i tuoi dati quando cambi.
+windows-10-eos-sync-urgency-subtitle-2 = Anche se non utilizzi { -brand-short-name } ogni giorno, utilizza la sincronizzazione per mantenere segnalibri e password al sicuro e sempre accessibili.
+windows-10-eos-sync-new-device-title-1 = Non correre il rischio di dover ricominciare tutto da capo sul tuo nuovo dispositivo.
+windows-10-eos-sync-new-device-subtitle-1 = Sincronizza per avere sempre con te i segnalibri, le password e le impostazioni preferite di { -brand-short-name } quando cambi.
+windows-10-eos-sync-new-device-title-2 = Vuoi passare a un nuovo dispositivo? Non perdere ciò che è importante.
+windows-10-eos-sync-new-device-subtitle-2 = Non importa quanto spesso utilizzi { -brand-short-name }, la sincronizzazione protegge i tuoi segnalibri, password e impostazioni.
+windows-10-eos-sync-new-device-primary-label = Sincronizza adesso
+windows-10-eos-sync-general-title-1 = Proteggi l’esperienza personalizzata che hai creato per { -brand-short-name }.
+windows-10-eos-sync-general-subtitle-1 = Salva e sincronizza password, segnalibri, impostazioni e altri dati per proteggere ciò su cui fai affidamento.
+windows-10-eos-sync-general-title-2 = È il momento giusto per eseguire il backup di password e segnalibri.
+windows-10-eos-sync-general-subtitle-2 = Sincronizza ora per proteggere i dati che affidi a { -brand-short-name }, e per recuperarli in qualsiasi luogo e momento.
+windows-10-eos-sync-tour-title-1 = Troppe schede? Fai un po’ di ordine con i gruppi di schede.
+windows-10-eos-sync-tour-subtitle-1 = Trascina una scheda sopra l’altra per creare un gruppo e mantenere tutto in ordine.
+windows-10-eos-sync-tour-title-2 = Preparati per Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Sincronizza i tuoi segnalibri, password e impostazioni per effettuarne il backup prima di cambiare.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Mostra meno suggerimenti
+windows-10-eos-sync-dismiss-button-label = Chiudi
+windows-10-eos-sync-callout-primary-advance-button-label = Successivo
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Novità: fai clic e tieni premuto per visualizzare un’anteprima dei link
+link-preview-onboarding-callout-description = Visualizza una breve descrizione, la durata della lettura e altre informazioni per valutare se aprire un link. Funzione accessibile anche tramite clic destro del mouse.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Riduci il disordine con i gruppi di schede
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Organizza le tue schede per attività o argomento. Puoi aggiungerne altre trascinandole mentre navighi.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Crea un gruppo
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Mostra i titoli delle schede nella barra laterale
 sidebar-button-callout-subtitle = Utilizza il pulsante della barra laterale per espanderla e visualizzare i titoli delle schede.
 sidebar-button-callout-vertical-tabs = Per visualizzare le schede, seleziona il pulsante della barra laterale nella barra degli strumenti.
+sidebar-deprecation-callout-title = La nuova barra laterale sarà disponibile a breve
+sidebar-deprecation-callout-subtitle = Stiamo progressivamente dismettendo la versione della barra laterale che stai utilizzando. Prova la nuova barra laterale aggiornata: è più rapida e puoi accedere a un maggior numero di strumenti.
+sidebar-deprecation-cta-button = Provala ora
 
 ## Sidebar Vertical Tabs Strings
 
@@ -130,16 +201,16 @@ vertical-tabs-callout-2-subtitle = Questo layout ti permette di esaminare più v
 ## Sidebar Vertical Tabs Pinning Strings
 
 sidebar-pins-callout-title = Perdi traccia delle schede più importanti?
-sidebar-pins-callout-subtitle = Prova ad appuntarle, in questo modo rimarranno sempre in cima all’elenco delle schede. Fai clic con il pulsante destro del mouse su una scheda, quindi scegli Appunta scheda.
+sidebar-pins-callout-subtitle = Prova ad appuntarle, in questo modo rimarranno sempre in cima all’elenco delle schede. Fai clic con il tasto destro del mouse su una scheda, quindi scegli Appunta scheda.
 sidebar-pins-callout-cta-button = Appunta scheda
 
 ## Pinning Tabs Strings
 
 pin-tabs-callout-1-title = Tieni le schede più importanti a portata di mano
-pin-tabs-callout-1-subtitle = Trascina una scheda all’inizio della barra delle schede per appuntarla. Oppure fai clic con il pulsante destro del mouse e scegli Appunta scheda.
+pin-tabs-callout-1-subtitle = Trascina una scheda all’inizio della barra delle schede per appuntarla. Oppure fai clic con il tasto destro del mouse e scegli Appunta scheda.
 pin-tabs-callout-cta-1-button = Appunta questa scheda
 pin-tabs-callout-2-title = Appunta le schede che visiti di più
-pin-tabs-callout-2-subtitle = Per appuntare una scheda, trascinala all’inizio della barra delle schede. Oppure fai clic con il pulsante destro del mouse e scegli Appunta scheda.
+pin-tabs-callout-2-subtitle = Per appuntare una scheda, trascinala all’inizio della barra delle schede. Oppure fai clic con il tasto destro del mouse e scegli Appunta scheda.
 pin-tabs-callout-cta-2-button = Appunta questa scheda
 pin-tabs-callout-3-title = Tieni i siti più importanti a portata di mano
 pin-tabs-callout-4-title = Appunta i siti che visiti di più
@@ -178,6 +249,12 @@ sidebar-callout-survey-submit = Invia
 sidebar-callout-survey-thank-you = Grazie per aver condiviso la tua opinione.
 sidebar-genai-survey-satisfaction-question = Quanto sei soddisfatto dell’accesso a un chatbot basato sull’intelligenza artificiale nella barra laterale?
 sidebar-genai-survey-productive-question = In che misura sei d’accordo o in disaccordo con questa affermazione:<br/> “Il chatbot IA nella barra laterale mi aiuta a essere più produttivo”?
+splitview-onboarding-callout-title-1 = Schermo diviso: la soluzione perfetta per il multitasking
+splitview-onboarding-callout-subtitle-1 = Fai clic con il tasto destro del mouse su questa scheda e scegli “Aggiungi schermo diviso” per visualizzare due schede contemporaneamente.
+splitview-onboarding-callout-cta-1 = Prova ora
+splitview-onboarding-callout-title-2 = Visualizza due schede contemporaneamente con lo schermo diviso
+splitview-onboarding-callout-subtitle-2 = Niente finestre aggiuntive. Niente passaggi tra schede. Fai clic con il tasto destro del mouse su questa scheda e scegli “Aggiungi schermo diviso”.
+splitview-onboarding-callout-cta-2 = Prova schermo diviso
 unified-search-callout-title = Passa da un motore di ricerca all’altro
 unified-search-callout-subtitle = Scegli quello che funziona meglio per la tua ricerca specifica.
 unified-search-callout-primary-label = Successivo
@@ -191,7 +268,6 @@ actions-callout-title = Completa le attività più comuni o accedi alle impostaz
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Prova a digitare un’azione come “stampa” per stampare una pagina o “cancella” per cancellare la cronologia.
-

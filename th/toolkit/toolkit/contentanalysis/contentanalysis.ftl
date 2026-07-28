@@ -30,7 +30,9 @@ contentanalysis-operationtype-clipboard = คลิปบอร์ด
 contentanalysis-operationtype-dropped-text = ข้อความที่ปล่อย
 contentanalysis-operationtype-print = พิมพ์
 #   $filename - The filename associated with the request, such as "aFile.txt"
-contentanalysis-customdisplaystring-description = การอัปโหลด “{ $filename }”
+contentanalysis-upload-description = การอัปโหลด “{ $filename }”
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = การดาวน์โหลด “{ $filename }”
 contentanalysis-warndialogtitle = เนื้อหานี้อาจไม่ปลอดภัย
 # Variables:
 #   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
@@ -71,6 +73,10 @@ contentanalysis-block-dialog-title-upload-file = คุณไม่ได้ร�
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file = ภายใต้นโยบายการปกป้องข้อมูลขององค์กรของคุณ คุณไม่ได้รับอนุญาตให้อัปโหลดไฟล์ “{ $filename }” ให้ติดต่อผู้ดูแลระบบของคุณสำหรับข้อมูลเพิ่มเติม
+contentanalysis-block-dialog-title-download-file = คุณไม่ได้รับอนุญาตให้ดาวน์โหลดไฟล์นี้
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = ภายใต้นโยบายการปกป้องข้อมูลขององค์กรของคุณ คุณไม่ได้รับอนุญาตให้ดาวน์โหลดไฟล์ “{ $filename }” ให้ติดต่อผู้ดูแลระบบของคุณสำหรับข้อมูลเพิ่มเติม
 contentanalysis-block-dialog-title-clipboard = คุณไม่ได้รับอนุญาตให้วางเนื้อหานี้
 contentanalysis-block-dialog-body-clipboard = ภายใต้นโยบายการปกป้องข้อมูลขององค์กรของคุณ คุณไม่ได้รับอนุญาตให้วางเนื้อหานี้ ให้ติดต่อผู้ดูแลระบบของคุณสำหรับข้อมูลเพิ่มเติม
 contentanalysis-block-dialog-title-dropped-text = คุณไม่ได้รับอนุญาตให้ปล่อยเนื้อหานี้

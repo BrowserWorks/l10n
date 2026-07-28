@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Nettlesing- og nedlastingshistorikk
     .accesskey = e
 item-history-and-downloads-description2 = Fjernar nettstads- og nedlastingshistorikk
-item-history-form-data-downloads =
-    .label = Historikk
-    .accesskey = H
-item-history-form-data-downloads-description = Reinsar nettstad- og nedlastingshistorikken, lagra skjemainformasjon og søk
 item-cookies =
     .label = Infokapslar
     .accesskey = I
@@ -71,7 +67,7 @@ item-cookies =
 #   $amount (Number) - Amount of site data currently stored on disk
 #   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
 item-cookies-site-data-with-size =
-    .label = Infokapslar og nettstaddata ({ $amount } { $unit })
+    .label = Infokapslar og nettstad-data ({ $amount } { $unit })
     .accesskey = a
 item-cookies-site-data =
     .label = Infokapsler og nettstedsdata
@@ -132,3 +128,6 @@ sanitize-everything-warning = All historikk vert sletta
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Alle valde element vert sletta
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Bereknar…

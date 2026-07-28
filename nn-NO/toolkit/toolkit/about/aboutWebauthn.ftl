@@ -27,7 +27,7 @@ about-webauthn-text-connect-device = Kople til eit sikkerheits-token
 # If multiple devices are plugged in, they will blink and we are asking the user to select one by touching the device they want.
 about-webauthn-text-select-device = Vel ønskt sikkerheits-token ved å trykkje på eininga.
 # CTAP2 refers to Client to Authenticator Protocol version 2
-about-webauthn-text-non-ctap2-device = Kan ikkje behandle alternativa fordi sikkerheits-tokenet ditt ikkje støttar CTAP2.
+about-webauthn-text-non-ctap2-device = Kan ikkje handsame alternativa fordi sikkerheits-tokenet ditt ikkje støttar CTAP2.
 about-webauthn-text-not-available = Ikkje tilgjengeleg på denne plattforma.
 about-webauthn-bio-enrollment-list-subsection-title = Registreringar
 about-webauthn-add-bio-enrollment-section-title = Legg til ny registrering
@@ -91,7 +91,7 @@ about-webauthn-auth-option-pinuvauthtoken = Kommando-løyve (pinUvAuthToken)
 # MakeCredential and GetAssertion should not be translated.
 about-webauthn-auth-option-nomcgapermissionswithclientpin = Ingen MakeCredential- / GetAssertion-løyve med klient-PIN-kode
 about-webauthn-auth-option-largeblobs = Store blobbar
-about-webauthn-auth-option-ep = Verksemd-sertifisering
+about-webauthn-auth-option-ep = Bedrifts-sertifisering
 about-webauthn-auth-option-bioenroll = Biometrisk registrering
 # FIDO_2_1_PRE should not be translated.
 about-webauthn-auth-option-userverificationmgmtpreview = Prototype for biometrisk registrering (FIDO_2_1_PRE)

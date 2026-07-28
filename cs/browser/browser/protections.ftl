@@ -6,35 +6,56 @@
 #   $count (Number) - Number of tracking events blocked.
 graph-week-summary =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } během minulého týdne zablokoval
-        [feminine] { -brand-short-name } během minulého týdne zablokovala
-        [neuter] { -brand-short-name } během minulého týdne zablokovalo
-       *[other] Aplikace { -brand-short-name } během minulého týdne zablokovala
-    } { $count ->
-        [one] { $count } sledovací prvek
-        [few] { $count } sledovací prvky
-       *[other] { $count } sledovacích prvků
+        [masculine]
+            { $count ->
+                [one] { -brand-short-name } během minulého týdne zablokoval { $count } sledovací prvek
+                [few] { -brand-short-name } během minulého týdne zablokoval { $count } sledovací prvky
+               *[other] { -brand-short-name } během minulého týdne zablokoval { $count } sledovacích prvků
+            }
+        [feminine]
+            { $count ->
+                [one] { -brand-short-name } během minulého týdne zablokovala { $count } sledovací prvek
+                [few] { -brand-short-name } během minulého týdne zablokovala { $count } sledovací prvky
+               *[other] { -brand-short-name } během minulého týdne zablokovala { $count } sledovacích prvků
+            }
+        [neuter]
+            { $count ->
+                [one] { -brand-short-name } během minulého týdne zablokovalo { $count } sledovací prvek
+                [few] { -brand-short-name } během minulého týdne zablokovalo { $count } sledovací prvky
+               *[other] { -brand-short-name } během minulého týdne zablokovalo { $count } sledovacích prvků
+            }
+       *[other]
+            { $count ->
+                [one] Aplikace { -brand-short-name } během minulého týdne zablokovala { $count } sledovací prvek
+                [few] Aplikace { -brand-short-name } během minulého týdne zablokovala { $count } sledovací prvky
+               *[other] Aplikace { -brand-short-name } během minulého týdne zablokovala { $count } sledovacích prvků
+            }
     }
 # Variables:
 #   $count (Number) - Number of tracking events blocked.
 #   $earliestDate (Number) - Unix timestamp in ms, representing a date. The
 # earliest date recorded in the database.
 graph-total-tracker-summary =
-    Od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     { $count ->
-        [one] byl zablokován <b>jeden</b> sledovací prvek
-        [few] byly zablokovány <b>{ $count }</b> sledovací prvky
-       *[other] bylo zablokováno <b>{ $count }</b> sledovacích prvků
-    }.
+        [one]
+            Od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+            byl zablokován <b>jeden</b> sledovací prvek.
+        [few]
+            Od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+            byly zablokovány <b>{ $count }</b> sledovací prvky.
+       *[other]
+            Od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+            bylo zablokováno <b>{ $count }</b> sledovacích prvků.
+    }
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } nadále blokuje sledovací prvky v anonymních oknech, ale neukládá si informace, co bylo zablokováno.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window =
-    Sledovací prvky, které { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } během tohoto týdne zablokoval
-        [feminine] { -brand-short-name } během tohoto týdne zablokovala
-        [neuter] { -brand-short-name } během tohoto týdne zablokovalo
-       *[other] aplikace { -brand-short-name } během tohoto týdne zablokovala
+    { -brand-short-name.gender ->
+        [masculine] Sledovací prvky, které { -brand-short-name } během tohoto týdne zablokoval
+        [feminine] Sledovací prvky, které { -brand-short-name } během tohoto týdne zablokovala
+        [neuter] Sledovací prvky, které { -brand-short-name } během tohoto týdne zablokovalo
+       *[other] Sledovací prvky, které aplikace { -brand-short-name } během tohoto týdne zablokovala
     }
 protection-report-webpage-title = Přehled ochrany soukromí
 protection-report-page-content-title = Přehled ochrany soukromí
@@ -64,7 +85,7 @@ cookie-tab-content = Tyto cookies slouží k vašemu sledování napříč webov
 tracker-tab-title = Sledující obsah
 tracker-tab-description = Webové stránky mohou načítat externí reklamy, videa a další obsah, který obsahuje sledovací kód. Po zablokování sledujícího obsahu se stránky načítají rychleji, ale některá tlačítka nebo formuláře nemusí správně fungovat. <a data-l10n-name="learn-more-link">Zjistit více</a>
 fingerprinter-tab-title = Vytváření otisku prohlížeče
-fingerprinter-tab-content = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími servery a webovými stránkami. <a data-l10n-name="learn-more-link">Zjistit více</a>
+fingerprinter-tab-content = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími weby. <a data-l10n-name="learn-more-link">Zjistit více</a>
 cryptominer-tab-title = Těžba kryptoměn
 cryptominer-tab-content = Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač. <a data-l10n-name="learn-more-link">Zjistit více</a>
 protections-close-button2 =
@@ -148,19 +169,30 @@ monitor-breaches-resolved-description = Pokud se vaše e-mailová adresa objeví
 # $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
 monitor-partial-breaches-title =
     { $numBreachesResolved ->
-        [0] Žádný
-        [one] Jeden
-        [few] { $numBreachesResolved }
-       *[other] { $numBreachesResolved }
-    } { $numBreaches ->
-        [one] z jednoho úniku
-        [few] ze { $numBreaches } úniků
-       *[other] z { $numBreaches } úniků
-    } { $numBreachesResolved ->
-        [0] jste neoznačili jako vyřešený
-        [one] jste označili jako vyřešený
-        [few] jste označili jako vyřešené
-       *[other] jste označili jako vyřešené
+        [0]
+            { $numBreaches ->
+                [one] Žádný z jednoho úniku jste neoznačili jako vyřešený
+                [few] Žádný ze { $numBreaches } úniků jste neoznačili jako vyřešený
+               *[other] Žádný z { $numBreaches } úniků jste neoznačili jako vyřešený
+            }
+        [one]
+            { $numBreaches ->
+                [one] Jeden z jednoho úniku jste označili jako vyřešený
+                [few] Jeden ze { $numBreaches } úniků jste označili jako vyřešený
+               *[other] Jeden z { $numBreaches } úniků jste označili jako vyřešený
+            }
+        [few]
+            { $numBreaches ->
+                [one] { $numBreachesResolved } z jednoho úniku jste označili jako vyřešené
+                [few] { $numBreachesResolved } ze { $numBreaches } úniků jste označili jako vyřešené
+               *[other] { $numBreachesResolved } z { $numBreaches } úniků jste označili jako vyřešené
+            }
+       *[other]
+            { $numBreaches ->
+                [one] { $numBreachesResolved } z jednoho úniku jste označili jako vyřešené
+                [few] { $numBreachesResolved } ze { $numBreaches } úniků jste označili jako vyřešené
+               *[other] { $numBreachesResolved } z { $numBreaches } úniků jste označili jako vyřešené
+            }
     }
 # Variables:
 # $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
@@ -183,39 +215,109 @@ bar-tooltip-social =
     .title = Sledující prvky sociálních sítí
     .aria-label =
         { $count ->
-            [one] Jeden sledující prvek sociálních sítí
-            [few] { $count } sledující prvky sociálních sítí
-           *[other] { $count } sledujících prvků sociálních sítí
-        }  ({ $percentage } %)
+            [one] Jeden sledující prvek sociálních sítí  ({ $percentage } %)
+            [few] { $count } sledující prvky sociálních sítí  ({ $percentage } %)
+           *[other] { $count } sledujících prvků sociálních sítí  ({ $percentage } %)
+        }
 bar-tooltip-cookie =
     .title = Sledovací cookies
     .aria-label =
         { $count ->
-            [one] Jedna sledovací cookie
-            [few] { $count } sledovacích cookies
-           *[other] { $count } sledovacích cookies
-        } ({ $percentage } %)
+            [one] Jedna sledovací cookie ({ $percentage } %)
+            [few] { $count } sledovacích cookies ({ $percentage } %)
+           *[other] { $count } sledovacích cookies ({ $percentage } %)
+        }
 bar-tooltip-tracker =
     .title = Sledující obsah
     .aria-label =
         { $count ->
-            [one] Jeden prvek
-            [few] { $count } prvky
-           *[other] { $count } prvků
-        }  sledujícího obsahu ({ $percentage } %)
+            [one] Jeden prvek sledujícího obsahu ({ $percentage } %)
+            [few] { $count } prvky sledujícího obsahu ({ $percentage } %)
+           *[other] { $count } prvků sledujícího obsahu ({ $percentage } %)
+        }
 bar-tooltip-fingerprinter =
     .title = Vytváření otisku prohlížeče
     .aria-label =
         { $count ->
-            [one] Jeden pokus o vytvoření otisku prohlížeče
-            [few] { $count } pokusy o vytvoření otisku prohlížeče
-           *[other] { $count } pokusů o vytvoření otisku prohlížeče
-        }  ({ $percentage } %)
+            [one] Jeden pokus o vytvoření otisku prohlížeče  ({ $percentage } %)
+            [few] { $count } pokusy o vytvoření otisku prohlížeče  ({ $percentage } %)
+           *[other] { $count } pokusů o vytvoření otisku prohlížeče  ({ $percentage } %)
+        }
 bar-tooltip-cryptominer =
     .title = Těžba kryptoměn
     .aria-label =
         { $count ->
-            [one] Jeden pokus o těžbu kryptoměn
-            [few] { $count } pokusy o těžbu kryptoměn
-           *[other] { $count } pokusů o těžbu kryptoměn
-        } ({ $percentage }%)
+            [one] Jeden pokus o těžbu kryptoměn ({ $percentage }%)
+            [few] { $count } pokusy o těžbu kryptoměn ({ $percentage }%)
+           *[other] { $count } pokusů o těžbu kryptoměn ({ $percentage }%)
+        }
+# Privacy Metrics Card
+privacy-metrics-title = Ochrana soukromí
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } zablokován tento týden
+        [few] { $count } zablokovány tento týden
+        [many] { $count } zablokováno tento týden
+       *[other] { $count } zablokováno tento týden
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } sledovací prvek
+        [few] { $count } sledovací prvky
+        [many] { $count } sledovacích prvků
+       *[other] { $count } sledovacích prvků
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } vytváření otisku prohlížeče
+        [few] { $count } vytváření otisku prohlížeče
+        [many] { $count } vytváření otisku prohlížeče
+       *[other] { $count } vytváření otisku prohlížeče
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } sledovací cookie
+        [few] { $count } sledovací cookies
+        [many] { $count } sledovacích cookies
+       *[other] { $count } sledovacích cookies
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } sledovací prvek sociální sítě
+        [few] { $count } sledovací prvky sociálních sítí
+        [many] { $count } sledovacích prvků sociálních sítí
+       *[other] { $count } sledovacích prvků sociálních sítí
+    }
+privacy-metrics-empty = Tento týden nebyly zablokovány žádné sledovací prvky. { -brand-short-name } vás při prohlížení chrání před následujícími hrozbami.
+privacy-metrics-loading = Načítání statistik ochrany…
+privacy-metrics-error = Nepodařilo se načíst statistiky ochrany.
+privacy-metrics-private-window = { -brand-short-name } pokračuje v blokování sledovacích prvků v oknech anonymního prohlížení, ale neuchovává záznamy o tom, co bylo zablokováno.
+
+## VPN promo card and banner
+
+protections-vpn-title = Rozšiřte ochranu soukromí i mimo prohlížeč
+protections-vpn-header-content = Chraňte celé své zařízení pomocí { -mozilla-vpn-brand-name }. Jedním klepnutím zašifrujete veškerý přenos dat a skryjete svou polohu.
+protections-get-vpn-link = Získat { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Předplacená
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] Pomocí { -mozilla-vpn-brand-name } zašifrujete veškerý svůj datový provoz a skryjete svou polohu – a to až na { $count } zařízení. Využijte své předplatné na maximum – přidejte si jej z <a data-l10n-name="playstore-link">obchodu Google Play</a> nebo <a data-l10n-name="appstore-link">obchodu Apple App Store</a>.
+        [few] Pomocí { -mozilla-vpn-brand-name } zašifrujete veškerý svůj datový provoz a skryjete svou polohu – a to až na { $count } zařízení. Využijte své předplatné na maximum – přidejte si jej z <a data-l10n-name="playstore-link">obchodu Google Play</a> nebo <a data-l10n-name="appstore-link">obchodu Apple App Store</a>.
+        [many] Pomocí { -mozilla-vpn-brand-name } zašifrujete veškerý svůj datový provoz a skryjete svou polohu – a to až na { $count } zařízeních. Využijte své předplatné na maximum – přidejte si jej z <a data-l10n-name="playstore-link">obchodu Google Play</a> nebo <a data-l10n-name="appstore-link">obchodu Apple App Store</a>.
+       *[other] Pomocí { -mozilla-vpn-brand-name } zašifrujete veškerý svůj datový provoz a skryjete svou polohu – a to až na { $count } zařízeních. Využijte své předplatné na maximum – přidejte si jej z <a data-l10n-name="playstore-link">obchodu Google Play</a> nebo <a data-l10n-name="appstore-link">obchodu Apple App Store</a>.
+    }
+protections-vpn-banner-header = Ochrana, která sahá za hranice prohlížeče
+protections-vpn-banner-content = Vyzkoušejte { -mozilla-vpn-brand-name } bez rizika a zjistěte, proč TechRadar píše: „Díky své rychlosti, jednoduchosti a nízké měsíční ceně stojí za to si tuto službu vyzkoušet.“
+protections-vpn-banner-link = Získat { -mozilla-vpn-brand-name }

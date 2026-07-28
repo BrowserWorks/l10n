@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Importer frå ein ann
 contextual-manager-passwords-command-import = Importer frå ei fil…
 contextual-manager-passwords-command-export = Eksporter passord
 contextual-manager-passwords-command-remove-all = Slett alle passorda
+contextual-manager-passwords-command-options = Innstillingar
 contextual-manager-passwords-command-settings = Innstillingar
 contextual-manager-passwords-command-help = HJelp
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Nye: { $added }, Oppdaterte: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Ny: { $added }, oppdatert: { $modified }, duplikat: { $no_change }, feil: { $error }
 contextual-manager-passwords-import-detailed-report = Vis detaljert rapport
 contextual-manager-passwords-import-success-button = Ferdig
 contextual-manager-passwords-import-error-heading-and-message =
@@ -151,7 +158,7 @@ contextual-manager-passwords-password-already-exists-error-button = Gå til pass
 contextual-manager-passwords-update-password-success-heading =
     .heading = Passord lagra
 contextual-manager-passwords-update-password-success-button = Ferdig
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Brukarnamn lagra
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -205,12 +212,15 @@ contextual-manager-passwords-title = Passord
 
 contextual-manager-passwords-create-label =
     .label = Legg til passord
+contextual-manager-passwords-update-label =
+    .label = Oppdater passord
 contextual-manager-passwords-edit-label =
     .label = Rediger passord
 contextual-manager-passwords-remove-label =
     .title = Fjern passord
 contextual-manager-passwords-origin-tooltip = Skriv inn den nøyaktige adressa du brukar for å logge inn på denne nettstaden.
 contextual-manager-passwords-username-tooltip = Skriv inn brukarnamnet, e-postadressa eller kontonummeret du brukar for å logge på.
+contextual-manager-passwords-password-tooltip-2 = Skriv inn passordet for å logge inn på denne kontoen.
 contextual-manager-passwords-password-tooltip = Skriv inn passordet du brukar for å logge inn på denne kontoen.
 
 ## Password Card
@@ -262,6 +272,24 @@ contextual-manager-view-alert-heading =
     .heading = Vis varsel
 contextual-manager-view-alert-button =
     .tooltiptext = Vurder varsel
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-heading-2 =
+    .heading =
+        { $count ->
+            [1] Vis varsel
+            [one] Vis varsel
+           *[other] Vis varsel
+        }
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-button-2 =
+    .tooltiptext =
+        { $count ->
+            [1] Undersøk varsel
+            [one] Undersøk varsel
+           *[other] Undersøk varsel
+        }
 contextual-manager-show-password-button =
     .aria-label = Vis passord
     .title = Vis passord
@@ -271,6 +299,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Fann ingen passord
+contextual-manager-passwords-no-passwords-found-message-2 = Prøv ein annan term og søk på nytt.
 contextual-manager-passwords-no-passwords-found-message = Fann ingen passord. Søk etter ein annan term og prøv på nytt.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -285,6 +314,8 @@ contextual-manager-passwords-no-passwords-message = Alle passord er krypterte, o
 contextual-manager-passwords-no-passwords-get-started-message = Legg dei til her for å kome i gang.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Legg til manuelt
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Lagre passorda dine på ein trygg stad
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -300,3 +331,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] Ja, fjern passordet
        *[other] Yes, remove passwords
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = For å sjå dei lagra passorda dine, skriv inn hovudpassordet ditt.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Skriv inn hovudpassordet
+contextual-manager-primary-password-learn-more-link = Les meir

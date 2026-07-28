@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Lägg till objekt
+storage-delete-all-button =
+    .title = Ta bort alla
 # Refresh button title
 storage-refresh-button =
     .title = Uppdatera objekt
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Upphör / Max-Age
 storage-table-headers-cookies-size = Storlek
 storage-table-headers-cookies-last-accessed = Senaste åtkomst
 storage-table-headers-cookies-creation-time = Skapad
+storage-table-headers-cookies-update-time = Uppdaterad
 storage-table-headers-cache-status = Status
 storage-table-headers-extension-storage-area = Förvaringsutrymme
 

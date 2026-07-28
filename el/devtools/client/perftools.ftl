@@ -33,11 +33,33 @@ perftools-description-local-build =
     Αν δημιουργείτε προφίλ για μια έκδοση που έχετε μεταγλωττίσει μόνοι σας,
     σε αυτήν τη συσκευή, προσθέστε την objdir του έργου σας στην παρακάτω λίστα
     ώστε να μπορεί να χρησιμοποιηθεί για την αναζήτηση πληροφοριών συμβόλων.
+perftools-pick-local-build-directory = Επιλογή καταλόγου ανάπτυξης
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Διάστημα δειγματοληψίας:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -153,12 +175,13 @@ perftools-presets-ml-label = Μηχανική μάθηση
 perftools-presets-ml-description2 = Προεπιλογή για τη διερεύνηση σφαλμάτων μηχανικής μάθησης στο { -brand-shorter-name }.
 perftools-presets-networking-label = Δικτύωση
 perftools-presets-networking-description = Προεπιλογή για τη διερεύνηση σφαλμάτων δικτύωσης στο { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Δικτύωση με αρχεία καταγραφής
+perftools-presets-networking-with-logs-description = Προκαθορισμένη ρύθμιση για τη διερεύνηση σφαλμάτων δικτύου στο { -brand-shorter-name }, συμπεριλαμβανομένων των αρχείων καταγραφής δικτύωσης. Αυτά τα αρχεία ενδέχεται να περιέχουν ευαίσθητες πληροφορίες, όπως τα URL που επισκέπτεστε.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Ενέργεια
 perftools-presets-power-description = Προκαθορισμένη ρύθμιση για τη διερεύνηση σφαλμάτων χρήσης ενέργειας στο { -brand-shorter-name }, με μικρή επιβάρυνση.
 perftools-presets-debug-label = Έλεγχος σφαλμάτων
 perftools-presets-debug-description = Προκαθορισμένη ρύθμιση για έλεγχο σφαλμάτων στο { -brand-shorter-name }. Υψηλός φόρτος, μην τη χρησιμοποιείτε για εργασίες υψηλών επιδόσεων, αλλά για την εστίαση στην κατανόηση της συμπεριφοράς του προγράμματος περιήγησης.
+perftools-presets-web-compat-label = Συμβατότητα ιστού
+perftools-presets-web-compat-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων συμβατότητας ιστοτόπων, αντί για την καταγραφή επιδόσεων.
 perftools-presets-custom-label = Προσαρμογή
-
-##
-

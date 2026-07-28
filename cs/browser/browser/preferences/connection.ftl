@@ -56,7 +56,7 @@ connection-proxy-noproxy-desc = Příklad: .mozilla.org, .net.nz, 192.168.1.0/24
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Spojení na localhost, 127.0.0.1/8 a ::1 nikdy proxy servery nepoužívají.
 connection-proxy-autotype =
-    .label = URL adresa pro automatickou konfiguraci proxy serverů
+    .label = Adresa URL pro automatickou konfiguraci proxy serverů
     .accesskey = m
 connection-proxy-reload =
     .label = Znovu načíst
@@ -79,9 +79,9 @@ connection-proxy-socks-remote-dns =
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
     .label = { $name } (výchozí)
-    .tooltiptext = Použít výchozí URL adresu pro službu DNS over HTTPS
+    .tooltiptext = Použít výchozí adresu URL pro službu DNS over HTTPS
 connection-dns-over-https-url-custom =
     .label = Vlastní
     .accesskey = n
-    .tooltiptext = Zadejte vlastní URL adresu pro službu DNS over HTTPS
+    .tooltiptext = Zadejte vlastní adresu URL pro službu DNS over HTTPS
 connection-dns-over-https-custom-label = Vlastní URL

@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Peržiūra
 download-cert-view-text = Susipažinti su LĮ liudijimu
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -80,8 +77,6 @@ client-auth-cert-details-issued-by = Kas išdavė: „{ $issuedBy }“
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Saugojimo vieta: „{ $storedOn }“
-client-auth-cert-remember-box =
-    .label = Įsiminti šį pasirinkimą
 
 ## Set password (p12) dialog
 
@@ -93,6 +88,3 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Liudijimo atsarginės kopijos slaptažodis (pakartoti):
 set-password-reminder = Svarbu. Jei pamiršite atsarginės kopijos slaptažodį, jo atkurti negalėsite. Todėl jį užsirašykite ir paslėpkite saugioje vietoje.
-
-## Protected authentication alert
-

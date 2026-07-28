@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = { $provider } entfernen
 genai-menu-remove-sidebar =
     .label = Aus Sidebar entfernen
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = { $provider } fragen
 genai-menu-new-badge = Neu
 genai-menu-summarize-page = Seite zusammenfassen
+genai-input-ask-smart-window =
+    .placeholder = Fragen…
 genai-input-ask-generic =
     .placeholder = KI-Chatbot fragen…
 # $provider (string) - name of the provider
@@ -91,16 +96,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Chatbot-Verknüpfung ausblenden
-genai-menu-no-provider =
-    .label = Fragen Sie einen KI-Chatbot
 genai-menu-choose-chatbot =
     .label = Wählen Sie einen KI-Chatbot
+genai-menu-ask-generic-2 =
+    .label = KI-Chatbot fragen
+    .accesskey = K
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = { $provider } fragen
+    .accesskey = f
+genai-menu-no-provider-2 =
+    .label = Einen KI-Chatbot fragen
+    .accesskey = K
+genai-menu-ask-smart-window =
+    .label = Fragen…
+    .accesskey = F
 
 ## Chatbot header
 
 genai-chatbot-title = KI-Chatbot
 genai-header-provider-menu =
     .title = Wählen Sie einen Chatbot
+genai-header-settings-button =
+    .title = Einstellungen für den KI-Chat
 genai-header-options-button =
     .title = Menü öffnen
 genai-header-close-button =
@@ -118,6 +136,11 @@ genai-options-hide-shortcut =
     .label = Verknüpfung beim Auswählen von Text ausblenden
 genai-options-about-chatbot =
     .label = Über KI-Chatbots in { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Da die Seite lang ist, ist dies eine teilweise Zusammenfassung.
 
 ## Chatbot footer
 
@@ -161,6 +184,8 @@ genai-chatbot-summarize-title = Neu! Fassen Sie Seiten mit einem Klick zusammen
 genai-chatbot-summarize-button = Seite zusammenfassen
 # “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
 genai-chatbot-summarize-sidebar-provider-subtitle = Klicken Sie mit der rechten Maustaste auf Ihren KI-Chatbot in der Sidebar und wählen Sie "Seite zusammenfassen".
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-generic-subtitle = Klicken Sie mit der rechten Maustaste auf die Glitzer-Schaltfläche in der Sidebar und wählen Sie "Seite zusammenfassen". Beim ersten Mal wählen Sie auch einen KI-Chatbot.
 # “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
 genai-chatbot-summarize-footer-provider-subtitle = Öffnen Sie Ihren KI-Chatbot in der Sidebar und wählen Sie unten "Seite zusammenfassen".
 genai-chatbot-summarize-footer-generic-subtitle = Fügen Sie einen KI-Chatbot in der { -brand-short-name }-Sidebar hinzu, um Seiten schnell zusammenzufassen.
@@ -209,3 +234,48 @@ link-preview-reading-time =
         [one] { $range } Minute Lesezeit
        *[other] { $range } Minuten Lesezeit
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } kann keine Vorschau dieses Links anzeigen
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Link besuchen
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } kann keine Stichpunkte für diese Webseite erzeugen.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Irgendetwas ist schiefgegangen.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Erneut versuchen
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Einstellungen für die Link-Vorschau
+link-preview-settings-enable =
+    .label = Link-Vorschau aktivieren
+    .description = Sehen Sie den Seitentitel, die Beschreibung und mehr, wenn Sie die Tastenkombination verwenden oder mit der rechten Maustaste auf einen Link klicken.
+link-preview-settings-key-points =
+    .label = Der KI erlauben, den Anfang der Seite zu lesen und Stichpunkte daraus zu generieren
+link-preview-settings-long-press =
+    .label = Verknüpfung: Klicken und halten Sie den Link 1 Sekunde lang (lang drücken)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Mehr sehen mit KI?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } verwendet KI, um den Anfang der Seite zu lesen und ein paar Stichpunkte zu generieren. Um den Schutz Ihrer Daten zu gewährleisten, erfolgt dies auf Ihrem Gerät.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Neu: Klicken Sie auf einen Link und halten Sie ihn gedrückt, um eine Vorschau anzuzeigen
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Sehen Sie sich eine kurze Beschreibung, die Lesezeit und mehr an, um zu entscheiden, ob der Link geöffnet wird. Auch verfügbar mit Rechtsklick.
+# Header for the key points section
+link-preview-key-points-header = Stichpunkte
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Stichpunkte werden KI-generiert und können Fehler enthalten.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Erstmalige Einrichtung • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Stichpunkte werden Ihnen beim nächsten Mal schneller angezeigt.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Vorschau ansehen
+# Onboarding card Close button
+link-preview-onboarding-close = Schließen
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Ersteinrichtung
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Dies kann einen Moment dauern. Wichtige Punkte werden Ihnen beim nächsten Mal schneller angezeigt.

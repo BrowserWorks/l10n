@@ -19,14 +19,14 @@ about-telemetry-current-store = Současné úložiště:
 about-telemetry-more-information = Hledáte více informací?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Dokumentace dat prohlížeče Waterfox</a> obsahuje návody pro práci s našimi datovými nástroji.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentace klienta telemetrie pro prohlížeč Waterfox</a> obsahuje definice pojmů, dokumentaci API a popisy dat.
-about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Nástěnky telemetrie</a> umožňují zobrazovat data, které BrowserWorks získává z telemetrie.
+about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Nástěnky telemetrie</a> umožňují zobrazovat data, která BrowserWorks získává z telemetrie.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> poskytuje podrobnosti a popis sond sbíraných v rámci telemetrie.
 about-telemetry-show-in-Firefox-json-viewer = Otevřít v zobrazení JSONu
 about-telemetry-home-section = Domů
 about-telemetry-general-data-section = Obecná data
 about-telemetry-environment-data-section = Data prostředí
 about-telemetry-session-info-section = Informace o relaci
-about-telemetry-scalar-section =   Skaláry
+about-telemetry-scalar-section = Skaláry
 about-telemetry-keyed-scalar-section = Klíčové skaláry
 about-telemetry-histograms-section = Histogramy
 about-telemetry-keyed-histogram-section = Histogramy s klíčem
@@ -63,10 +63,10 @@ about-telemetry-upload-type =
 #   $sum (number) - Sum of histogram samples
 about-telemetry-histogram-stats =
     { $sampleCount ->
-        [one] { $sampleCount } vzorek
-        [few] { $sampleCount } vzorky
-       *[other] { $sampleCount } vzorků
-    }, průměr = { $prettyAverage }, součet = { $sum }
+        [one] { $sampleCount } vzorek, průměr = { $prettyAverage }, součet = { $sum }
+        [few] { $sampleCount } vzorky, průměr = { $prettyAverage }, součet = { $sum }
+       *[other] { $sampleCount } vzorků, průměr = { $prettyAverage }, součet = { $sum }
+    }
 # Variables:
 #   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle =

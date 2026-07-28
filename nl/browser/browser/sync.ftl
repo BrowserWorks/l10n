@@ -20,6 +20,31 @@ fxa-menu-connect-another-device =
     .label = Een ander apparaat verbinden…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Naar apparaat verzenden
+            [one] { $tabCount } tabblad naar apparaat verzenden
+           *[other] { $tabCount } tabbladen naar apparaat verzenden
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Naar mobiel verzenden
+            [one] { $tabCount } tabblad naar mobiel verzenden
+           *[other] { $tabCount } tabbladen naar mobiel verzenden
+        }
+fxa-menu-send-to-mobile-device-missing2 = Ziet u uw apparaat niet?
+fxviewtabrow-send-to-mobile-not-verified = Account niet geverifieerd
+fxviewtabrow-send-to-mobile-verify-account = Verifieer uw account
+fxa-menu-send-to-mobile-turn-on-sync = Schakel synchronisatie in om tabbladen te verzenden
+fxa-menu-send-to-mobile-connect-device = Verbind een apparaat om tabbladen te verzenden
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -33,7 +58,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Stuur een tabblad direct naar elk apparaat waarop u bent aangemeld.
 fxa-menu-sign-out =
     .label = Afmelden…
-fxa-menu-sync-title = Synchronisatie
 fxa-menu-sync-description = Overal toegang tot uw internet
 fxa-avatar-sign-in = Aanmelden
 fxa-avatar-sign-up = Registreren
@@ -47,6 +71,10 @@ sync-setup-verify-heading = Weet u zeker dat u zich wilt aanmelden om te synchro
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Een andere gebruiker was eerder op deze computer aangemeld om te synchroniseren. Aanmelden zal de bladwijzers, wachtwoorden en andere instellingen van deze browser samenvoegen met die van { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Meld u aan om tabbladen te verzenden
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

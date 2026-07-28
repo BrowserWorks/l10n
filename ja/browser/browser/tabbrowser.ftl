@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] タブを閉じます
            *[other] { $tabCount } 個のタブを閉じます
         }
+tab-splitview-splitter =
+    .aria-label = タブの分割ビューのサイズを変更
+tab-devtools-splitter =
+    .aria-label = 開発ツールパネルのサイズを変更
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -55,8 +59,8 @@ tabbrowser-close-tabs-tooltip =
 tabbrowser-mute-tab-audio-tooltip =
     .label =
         { $tabCount ->
-            [one] タブをミュートします ({ $shortcut })
-           *[other] { $tabCount } 個のタブをミュートします ({ $shortcut })
+            [one] タブをミュートにします ({ $shortcut })
+           *[other] { $tabCount } 個のタブをミュートにします ({ $shortcut })
         }
 # Variables:
 #   $shortcut (String): The keyboard shortcut for "Unmute tab".
@@ -69,8 +73,8 @@ tabbrowser-unmute-tab-audio-tooltip =
 tabbrowser-mute-tab-audio-background-tooltip =
     .label =
         { $tabCount ->
-            [one] タブをミュートします
-           *[other] { $tabCount } 個のタブをミュートします
+            [one] タブをミュートにします
+           *[other] { $tabCount } 個のタブをミュートにします
         }
 tabbrowser-unmute-tab-audio-background-tooltip =
     .label =
@@ -124,7 +128,6 @@ tabbrowser-confirm-close-windows-button =
 
 tabbrowser-confirm-close-tabs-with-key-title = ウィンドウを閉じて { -brand-short-name } を終了しますか？
 tabbrowser-confirm-close-tabs-with-key-button = { -brand-short-name } を終了
-
 # Variables:
 #   $quitKey (String): the text of the keyboard shortcut for quitting.
 tabbrowser-ask-close-tabs-with-key-checkbox = { $quitKey } キーで終了する前に確認する
@@ -160,8 +163,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = 次回からはこのダイアログ
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = お知らせ
-tabbrowser-confirm-close-duplicate-tabs-text = 最後に表示していたタブは閉じずに残します
 tabbrowser-confirm-close-all-duplicate-tabs-title = 重複タブを閉じますか？
 tabbrowser-confirm-close-all-duplicate-tabs-text = このウィンドウ内の重複タブを閉じます。最後に表示していたタブは閉じずに残します。
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = タブを閉じる
@@ -179,8 +180,14 @@ tabbrowser-customizemode-tab-title = { -brand-short-name } をカスタマイズ
 tabbrowser-context-mute-tab =
     .label = タブをミュート
     .accesskey = M
+tabbrowser-context-mute-tab2 =
+    .label = ミュート
+    .accesskey = M
 tabbrowser-context-unmute-tab =
     .label = タブのミュートを解除
+    .accesskey = m
+tabbrowser-context-unmute-tab2 =
+    .label = ミュート解除
     .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
@@ -220,7 +227,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — 現在のウィンドウ
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = タブグループを作成
 tab-group-editor-title-edit = タブグループの管理
@@ -250,16 +257,33 @@ tab-group-editor-color-selector2-gray = グレー
     .title = グレー
 tab-group-editor-color-selector2-red = 赤
     .title = 赤
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — 閉じた
 tab-group-description = { $tabGroupName } — タブグループ
+tab-group-label-tooltip-collapsed = { $tabGroupName } — 折りたたまれた
+tab-group-label-tooltip-expanded = { $tabGroupName } — 展開された
+tab-group-preview-name =
+    .aria-label = グループ内のタブ
 tab-context-unnamed-group =
     .label = 無名のグループ
 tab-group-name-default = 無名のグループ
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = タブグループ
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = タブ一覧が開いています
+tab-group-preview-closed-description = タブ一覧が閉じています
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -275,12 +299,26 @@ tab-context-move-tab-to-group =
            *[other] 選択したタブをグループに追加
         }
     .accesskey = G
+tab-context-move-split-view-to-new-group =
+    .label = 分割ビューを新しいグループに追加
+    .accesskey = G
+tab-context-move-split-view-to-group =
+    .label = 分割ビューをグループに追加
+    .accesskey = G
 tab-context-move-tab-to-group-saved-groups =
     .label = 閉じたグループ
 tab-group-editor-action-new-tab =
     .label = グルーブ内に新しいタブを開く
 tab-group-editor-action-new-window =
     .label = グループを新しいウィンドウへ移動
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] グループ内のリンクをコピー
+           *[other] グループ内の { $linkCount } 個のリンクをコピー
+        }
 tab-group-editor-action-save =
     .label = グループを保存して閉じる
 tab-group-editor-action-ungroup =
@@ -290,8 +328,11 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = 完了
     .accessKey = D
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = タブグループを共有
 tab-context-reopen-tab-group =
-    .label = タブグループを開きなおす
+    .label = タブグループを開き直す
 # Variables:
 #  $groupCount (Number): the number of tab groups that are affected by the action.
 tab-context-ungroup-tab =
@@ -301,6 +342,22 @@ tab-context-ungroup-tab =
            *[other] 選択したタブを各グループから除外
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip = 他 { $tabCount } 個のタブ
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = タブを整理しましょう
+tab-groups-list-empty-description = タブを別のタブへドラッグするか右クリックして整理を始めましょう。ここにグループが保存されるので、後で簡単に見つけられます。
+tab-groups-list-empty-button = タブグループを作成
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = 新しいグループ
 
 ## Open/saved tab group context menu
 
@@ -326,3 +383,87 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = グループを新しいウィンドウで開く
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = ノートを追加
+    .accesskey = A
+tab-context-edit-note =
+    .label = ノートを編集
+    .accesskey = E
+tab-context-delete-note =
+    .label = ノートを削除
+    .accesskey = D
+tab-note-editor-title-create = ノートを追加
+tab-note-editor-title-edit = ノートを編集
+tab-note-editor-text-field =
+    .placeholder = このタブについてのメモを記録します。
+tab-note-editor-button-cancel =
+    .label = キャンセル
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = 保存
+    .accesskey = S
+tab-note-editor-button-delete =
+    .title = ノートを削除します
+    .aria-label = ノートを削除
+    .accesskey = D
+tab-note-preview-edit-icon =
+    .alt = ノートを編集
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = 続きを読む
+tab-note-panel-add-note-new-badge =
+    .label = 新機能
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } 文字
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = 分割ビューを追加
+    .accesskey = t
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = 分割ビューで開く
+    .accesskey = t
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = 分割ビューを終了
+    .accesskey = t
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = 左右のタブを入れ替える
+    .accesskey = r
+tab-context-badge-new = 新機能
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }、分割ビュー左側
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }、分割ビュー右側
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = 分割ビューを終了
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = タブ順を反転
+split-view-menuitem-close-both-tabs =
+    .label = 両方のタブを閉じる

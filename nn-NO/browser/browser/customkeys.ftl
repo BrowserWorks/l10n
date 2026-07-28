@@ -1,0 +1,110 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Added shortcuts:
+
+customkeys-title = Tastatursnarvegar
+customkeys-search = Søk:
+customkeys-change = Endre
+customkeys-reset = Tilbakestill
+customkeys-clear = Tøm
+customkeys-new-key = Trykk på ein ny tast:
+customkeys-reset-all = Tilbakestill alle snarvegar til standard
+# Variables
+# $conflict (string) - The title of the conflicting shortcut.
+customkeys-conflict-confirm = Denne tasten er allereie tildelt { $conflict }. Vil du erstatte han?
+customkeys-reset-all-confirm = Er du sikker på at du vil tilbakestille alle tastatursnarvegar til standardinnstilling?
+customkeys-file-duplicate-tab = Dupliser fane
+customkeys-file-focus-search = Fokuser på søkjefeltet
+customkeys-history-reopen-tab = Opne siste attlatne fane
+customkeys-history-reopen-window = Opne siste attlatne vindauge
+customkeys-sidebar-toggle = Slå av/på sidestolpe
+customkeys-view-bookmarks-toolbar = Vis/skjul bokmerkeverktøylinja
+customkeys-view-picture-in-picture = Bilde-i-bilde
+customkeys-view-add-split-view = Legg til delt visning
+# Separate is a verb
+customkeys-view-separate-split-view = Opphev delt visning
+customkeys-dev-tools = Verktøy for webutviklarar
+customkeys-dev-inspector = DOM and Style Inspector
+customkeys-dev-webconsole = Web Console
+customkeys-dev-debugger = JavaScript Debugger
+customkeys-dev-network = Network Monitor
+customkeys-dev-style = Stilredigerar
+customkeys-dev-performance = Yting
+customkeys-dev-storage = Storage Inspector
+customkeys-dev-dom = DOM
+customkeys-dev-accessibility = Tilgjengelegheit
+customkeys-dev-profiler-toggle = Start/stopp ytingsprofilering
+customkeys-dev-profiler-capture = Ta opp ein ytingsprofil
+customkeys-category-navigation = Navigasjon
+customkeys-nav-back = Tilbake
+customkeys-nav-forward = Fram
+customkeys-nav-home = Heim
+customkeys-nav-reload = Oppdater
+customkeys-nav-reload-skip-cache = Last inn på nytt (overstyr hurtiglager)
+customkeys-nav-stop = Stopp
+customkeys-nav-select-tab-1 = Gå til fane 1
+customkeys-nav-select-tab-2 = Gå til fane 2
+customkeys-nav-select-tab-3 = Gå til fane 3
+customkeys-nav-select-tab-4 = Gå til fane 4
+customkeys-nav-select-tab-5 = Gå til fane 5
+customkeys-nav-select-tab-6 = Gå til fane 6
+customkeys-nav-select-tab-7 = Gå til fane 7
+customkeys-nav-select-tab-8 = Gå til fane 8
+customkeys-nav-select-last-tab = Gå til siste fane
+customkeys-nav-toggle-mute = Lyd av/på
+customkeys-edit-find-previous = Søk etter føregåande
+customkeys-tools-screenshot = Ta eit skjermbilde
+customkeys-category-navigation-2 =
+    .heading = Navigasjon
+customkeys-caution-message = Denne funksjonen er eksperimentell og kan fungere annleis enn forventa.
+# Displayed in the new key field when the key that was pressed isn't valid.
+customkeys-key-invalid = Ugyldig
+customkeys-shortcut-unassigned =
+    .placeholder = Legg til snarveg
+# Variables:
+# $keyLabel (string) - The name of the shortcut, e.g. “New Tab”.
+customkeys-shortcut-input = Snarveg for: { $keyLabel }
+customkeys-key-edit =
+    .aria-label = Rediger
+    .tooltiptext = Rediger
+customkeys-key-clear =
+    .aria-label = Tøm
+    .tooltiptext = Tøm
+customkeys-key-reset =
+    .aria-label = Gjenopprett
+    .tooltiptext = Gjenopprett
+
+## Shortcut actions
+
+customkeys-key-new =
+    .label = Trykk på ein ny tast:
+
+## Confirmation dialogs
+
+customkeys-conflict-confirm-title = Fjerne ein annan hurtigtast?
+# Variables
+# $conflict (string) - The title of the conflicting shortcut.
+customkeys-conflict-confirm-body = Denne hurtigtasten er allereie i bruk av «{ $conflict }».
+customkeys-conflict-confirm-button-confirm = Bruk likevel
+customkeys-conflict-confirm-button-cancel = Avbryt
+customkeys-reset-all-confirm-title = Gjenopprette standardverdiar?
+customkeys-reset-all-confirm-body = Eventuelle tilpassa hurtigtastar du har oppretta, vil bli fjerna.
+customkeys-reset-all-confirm-button-confirm = Gjenopprett standardverdiar
+customkeys-reset-all-confirm-button-cancel = Avbryt
+
+## Sidebar
+
+customkeys-sidebar =
+    .aria-label = Sidestolpe
+customkeys-title-heading =
+    .heading = Tastatursnarvegar
+# Search is a verb, as in "search through shortcuts".
+customkeys-search-input =
+    .aria-label = Søk hurtigtastar
+    .placeholder = Søk hurtigtastar
+customkeys-description = Styr korleis du bevegar deg rundt og samhandlar med { -brand-short-name }.
+customkeys-support-link-text = Les meir
+customkeys-reset-all-button = Gjenopprett standardverdiar

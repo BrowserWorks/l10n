@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = 웹 페이지 표시
 experimental-features-group-customize-browsing =
     .label = 탐색 사용자 지정
+experimental-features-group-productivity =
+    .label = 생산성
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } 위젯
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = 사이드바의 비밀번호
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = 새 탭 이야기에 대한 주제 섹션과 팔로우/차단
 experimental-features-newtab-sections-follow-block-description = 새 탭 페이지의 이야기를 주제 섹션( 스포츠, 음식, 연예 등)으로 구성하여 보다 체계적이고 쉽게 스캔할 수 있습니다. 새로운 팔로우 및 차단 컨트롤을 사용하여 표시할 콘텐츠를 맞춤 설정할 수 있습니다. <a data-l10n-name="connect">의견 공유</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = 작업 표시줄에 사이트 추가
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = 자주 방문하는 사이트를 작업 표시줄에서 웹 앱으로 엽니다. { -brand-product-name }의 모든 보호 기능과 함께 간소화된 창에서 해당 사이트를 실행하려면 주소 표시줄 오른쪽에 있는 "작업 표시줄에 탭 추가" 아이콘을 찾으세요. <a data-l10n-name="connect">의견 공유</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = { -firefox-home-brand-name } 목록
+experimental-features-newtab-widget-lists-new =
+    .label = 목록
+experimental-features-newtab-widget-lists-description = 새 탭을 열 때 할 일 목록을 가장 먼저 염두에 두세요. 포장 목록부터 쇼핑 목록에 이르기까지 { -brand-product-name }에서 계획을 세우세요. <a data-l10n-name="connect">의견 공유</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = { -firefox-home-brand-name } 타이머
+experimental-features-newtab-widget-timer-new =
+    .label = 타이머
+experimental-features-newtab-widget-timer-description = 타이머를 설정하여 집중력을 유지하고, 목표를 향해 계속 나아가도록 상기시켜주거나, 재충전을 하도록 알려줍니다. <a data-l10n-name="connect">의견 공유</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = { -firefox-home-brand-name }의 목록과 타이머
+experimental-features-newtab-widget-lists-and-timer-description = 새 탭을 열 때 할 일 목록을 가장 먼저 염두에 두세요. 포장 목록부터 쇼핑 목록에 이르기까지 { -brand-product-name }에서 계획을 세우세요. 타이머를 설정하여 집중력을 유지하고, 목표를 향해 계속 나아가도록 상기시켜주거나, 재충전을 하도록 알려줍니다. <a data-l10n-name="connect">의견 공유</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 일기예보
+experimental-features-newtab-widget-weather-description = 시간별 일기예보로 오늘의 날씨를 명확하게 파악하세요. <a data-l10n-name="connect">의견 공유</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 오늘의 사진
+experimental-features-newtab-widget-picture-of-the-day-description = 일상에 매일 즐거움을 더하세요. 새로운 사진과 흥미로운 이야기를 만나고, 배경화면까지 한 번에 바꿀 수 있습니다. <a data-l10n-name="connect">의견 공유</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 시계
+experimental-features-newtab-widget-clocks-description = 중요한 장소의 시간을 확인할 수 있도록 맞춤형 별칭이 담긴 시계를 최대 4개까지 추가해 보세요. <a data-l10n-name="connect">의견 공유</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = 의미 기록 검색
+experimental-features-semantic-history-search-description = { -brand-product-name } 주소 표시줄에 자연어 이해를 기반으로 한 검색과 관련된 기록에서 항목을 제안하기 위해 로컬 기계 학습 모델을 사용합니다. <a data-l10n-name="connect">의견 공유</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = 탭 메모
+experimental-features-tab-notes-description = 탭 메모는 브라우저 탭에 메모를 추가할 수 있는 실험적인 기능입니다. 배경 정보, 알림 사항 또는 다음 단계를 간단히 적어두면 나중에 다시 방문했을 때 해당 탭을 열었던 이유를 기억할 수 있습니다. 이 기능을 지속적으로 개선하는 데 여러분의 의견을 보내주세요. <a data-l10n-name="connect">의견 공유</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = 간소화된 탭 메뉴
+experimental-features-tab-context-menu-description = 탭을 마우스 오른쪽 버튼으로 클릭하면 간단한 컨텍스트 메뉴가 표시됩니다. 자주 쓰는 작업을 더 쉽게 찾을 수 있도록 설계되었습니다. <a data-l10n-name="connect">의견 공유</a>

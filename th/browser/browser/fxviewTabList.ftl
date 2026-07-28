@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = ย้ายไปยังจุดสิ้นส�
     .accesskey = E
 fxviewtabrow-move-tab-window = ย้ายไปยังหน้าต่างใหม่
     .accesskey = W
+fxviewtabrow-send-to-device = ส่งไปยังอุปกรณ์
+    .accesskey = ส
+fxviewtabrow-send-to-mobile = ส่งไปยังมือถือ
+    .accesskey = ม
 fxviewtabrow-send-tab = ส่งแท็บไปยังอุปกรณ์
     .accesskey = n
 fxviewtabrow-pin-tab = ปักหมุดแท็บ
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = เปิดเสียงแท็บ
 fxviewtabrow-options-menu-button =
     .title = ตัวเลือกสำหรับ { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = ปิดเสียงแท็บ
 fxviewtabrow-unmute-tab-button-no-context =
     .title = เปิดเสียงแท็บ
+fxviewtabrow-send-to-mobile-connect-device = เชื่อมต่อกับอุปกรณ์เพื่อส่งแท็บ
+fxviewtabrow-send-to-mobile-device-missing2 = ไม่เห็นอุปกรณ์ของคุณ?
+fxviewtabrow-send-to-mobile-not-verified = บัญชีไม่ได้รับการยืนยัน
+fxviewtabrow-send-to-mobile-verify-account = ยืนยันบัญชีของคุณ
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = ลงชื่อเข้าเพื่อส่งแท็บ
+fxviewtabrow-send-to-mobile-turn-on-sync = เปิดการซิงค์เพื่อส่งแท็บ

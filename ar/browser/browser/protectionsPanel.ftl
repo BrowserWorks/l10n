@@ -68,18 +68,27 @@ protections-panel-content-blocking-fingerprinters-label = مسجّلات الب�
 ##   "None Detected" for categories not detected in the current page.
 ##   These strings are used in the header labels of each of these sections.
 
-protections-panel-blocking-label = محجوبة
+protections-panel-blocking-label = محجوب
 protections-panel-not-blocking-label = مسموح بها
 protections-panel-not-found-label = لم تُكتشف في الصفحة
 
 ## Smartblock strings
 
+protections-panel-smartblock-desc-label = يحظر { -brand-short-name } تتبع المحتوى أثناء وجودك على هذا الموقع ما لم تسمح بذلك.
 # Variables
 #  $trackername (String): the name of the tracker that is currently being blocked.
 protections-panel-smartblock-blocking-toggle =
     .label = اسمح { $trackername }
+#  $trackername (String): the name of the tracker that is currently being blocked.
+smartblock-placeholder-title = حُظر متتبعات ومحتوى { $trackername }
+smartblock-placeholder-desc = لقد منع إعدادات { -brand-short-name } هذا المحتوى من تتبعك عبر المواقع أو استخدامه للإعلانات.
 #  $websitehost (String): host of website with blocked content.
 smartblock-placeholder-button-text = اسمح على { $websitehost }
+# Caption shown above the original text and links extracted from a blocked
+# third-party embed (e.g. a Twitter/X or Instagram post) that SmartBlock has
+# replaced with a placeholder. The caption sits above a bordered content box
+# containing the extracted text.
+smartblock-placeholder-content-header = محتوى من تضمين محظور
 
 ##
 
@@ -110,12 +119,13 @@ protections-panel-social-media-trackers = تضع شبكات التواصل ال�
 protections-panel-description-shim-allowed = أُلغي حجب بعض المتعقّبات في هذه الصفحة، والتي عليها علامة أسفله لأنّك تفاعلتَ معها.
 protections-panel-description-shim-allowed-learn-more = اطّلع على المزيد
 protections-panel-shim-allowed-indicator =
-    .tooltiptext = المتعقب غير محجوب جزئيًا
+    .tooltiptext = المتعقب غير محظور جزئيًا
 protections-panel-content-blocking-manage-settings =
     .label = أدِر إعدادات الحماية
     .accesskey = د
 protections-panel-content-blocking-breakage-report-view =
     .title = أبلِغ عن موقع معطوب
+protections-panel-content-blocking-breakage-report-view-description = حجب بعض المتعقبات قد يسبب مشاكل مع بعض المواقع. الإبلاغ عن تلك المشاكل يساعد في إبقاء { -brand-short-name } أفضل للجميع. إرسال هذا التقرير سيرسل رابط الموقع ومعلومات أخرى حول إعدادات متصفحك إلى موزيلا. <label data-l10n-name="learn-more">اعرف المزيد</label>
 protections-panel-content-blocking-breakage-report-view-collection-url = المسار
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = المسار
@@ -142,11 +152,16 @@ protections-panel-cookie-banner-view-turn-off-for-site = أتريد تعطيل �
 protections-panel-cookie-banner-view-turn-on-for-site = أتريد تفعيل تخفيض لافتة ملف التعريف لهذا الموقع؟
 protections-panel-cookie-banner-blocker-view-title =
     .title = مانع لافتة ملفات تعريف الارتباط
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = أطفئ مانع لافتات ملفات تعريف الارتباط ل { $host }؟
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = أشغل مانع لافتات ملفات تعريف الارتباط لهذا الرابط؟
 protections-panel-cookie-banner-view-cookie-clear-warning = سيمسح { -brand-short-name } كعكات هذا الموقع و ينعش الصفحة. مسحك كل الكعكات قد يخرجك أو يمسح خانات التسوق.
 protections-panel-cookie-banner-view-turn-on-description = يحاول { -brand-short-name } رفض جميع طلبات ملفات تعريف الارتباط تلقائيًا على المواقع المدعومة.
 protections-panel-cookie-banner-view-cancel = ألغِ
 protections-panel-cookie-banner-view-turn-off = عطّل
 protections-panel-cookie-banner-view-turn-on = فعّل
+protections-panel-cookie-banner-blocker-view-turn-on-description = شغّل { -brand-short-name } وسيحاول رفض لافتات ملفات تعريف الارتباط على هذا الموقع تلقائيًا.
 protections-panel-cookie-banner-view-cancel-label =
     .label = ألغِ
 protections-panel-cookie-banner-view-turn-off-label =

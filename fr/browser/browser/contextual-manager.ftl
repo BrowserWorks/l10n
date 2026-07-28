@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Importer depuis un au
 contextual-manager-passwords-command-import = Importer depuis un fichier…
 contextual-manager-passwords-command-export = Exporter les mots de passe
 contextual-manager-passwords-command-remove-all = Supprimer tous les mots de passe
+contextual-manager-passwords-command-options = Options
 contextual-manager-passwords-command-settings = Paramètres
 contextual-manager-passwords-command-help = Aide
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Nouveaux : { $added }, mis à jour : { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Nouveaux : { $added }, mis à jour : { $modified }, dupliqués : { $no_change }, en erreur : { $error }
 contextual-manager-passwords-import-detailed-report = Voir un rapport détaillé
 contextual-manager-passwords-import-success-button = Terminé
 contextual-manager-passwords-import-error-heading-and-message =
@@ -155,7 +162,7 @@ contextual-manager-passwords-password-already-exists-error-button = Aller au mot
 contextual-manager-passwords-update-password-success-heading =
     .heading = Mot de passe enregistré
 contextual-manager-passwords-update-password-success-button = Terminé
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Nom d’utilisateur enregistré
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -209,12 +216,15 @@ contextual-manager-passwords-title = Mots de passe
 
 contextual-manager-passwords-create-label =
     .label = Ajouter un mot de passe
+contextual-manager-passwords-update-label =
+    .label = Mettre à jour le mot de passe
 contextual-manager-passwords-edit-label =
     .label = Modifier le mot de passe
 contextual-manager-passwords-remove-label =
     .title = Supprimer le mot de passe
 contextual-manager-passwords-origin-tooltip = Saisissez l’adresse exacte de la page de connexion de ce site.
 contextual-manager-passwords-username-tooltip = Saisissez le nom d’utilisateur, l’adresse e-mail ou le numéro de compte que vous utilisez pour vous connecter.
+contextual-manager-passwords-password-tooltip-2 = Saisissez le mot de passe pour vous connecter à ce compte.
 contextual-manager-passwords-password-tooltip = Saisissez le mot de passe utilisé pour vous connecter à ce compte.
 
 ## Password Card
@@ -291,6 +301,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Aucun mot de passe trouvé
+contextual-manager-passwords-no-passwords-found-message-2 = Essayez un terme différent et recherchez à nouveau.
 contextual-manager-passwords-no-passwords-found-message = Aucun mot de passe trouvé. Essayez une nouvelle recherche.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -305,6 +316,8 @@ contextual-manager-passwords-no-passwords-message = Tous les mots de passe sont 
 contextual-manager-passwords-no-passwords-get-started-message = Ajoutez-les ici pour commencer.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Ajouter manuellement
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Enregistrez vos mots de passe en lieu sûr
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -320,3 +333,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [one] Oui, supprimer le mot de passe
        *[other] Oui, supprimer les mots de passe
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Pour consulter vos mots de passe enregistrés, saisissez votre mot de passe principal.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Saisissez le mot de passe principal
+contextual-manager-primary-password-learn-more-link = En savoir plus

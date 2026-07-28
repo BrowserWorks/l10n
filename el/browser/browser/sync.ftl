@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = Σύνδεση άλλης συσκευής…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Αποστολή σε συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε συσκευή
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Αποστολή σε κινητή συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε κινητή συσκευή
+        }
+fxa-menu-send-to-mobile-device-missing2 = Δεν βλέπετε τη συσκευή σας;
+fxviewtabrow-send-to-mobile-not-verified = Μη επαληθευμένος λογαριασμός
+fxviewtabrow-send-to-mobile-verify-account = Επαλήθευση λογαριασμού
+fxa-menu-send-to-mobile-turn-on-sync = Ενεργοποιήστε τον συγχρονισμό για αποστολή καρτελών
+fxa-menu-send-to-mobile-connect-device = Συνδέστε μια συσκευή για αποστολή καρτελών
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -33,7 +56,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Στείλτε άμεσα μια καρτέλα σε κάθε συσκευή που έχετε συνδεθεί.
 fxa-menu-sign-out =
     .label = Αποσύνδεση…
-fxa-menu-sync-title = Συγχρονισμός
 fxa-menu-sync-description = Πρόσβαση στον ιστό από οπουδήποτε
 fxa-avatar-sign-in = Σύνδεση
 fxa-avatar-sign-up = Εγγραφή
@@ -47,6 +69,10 @@ sync-setup-verify-heading = Θέλετε σίγουρα να κάνετε σύν
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Κάποιος άλλος χρήστης έχει ήδη κάνει σύνδεση για συγχρονισμό σε αυτόν τον υπολογιστή. Αν πραγματοποιήσετε σύνδεση, θα συγχωνευθούν οι σελιδοδείκτες, οι κωδικοί πρόσβασης και οι υπόλοιπες ρυθμίσεις του προγράμματος περιήγησης με το { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Συνδεθείτε για αποστολή καρτελών
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

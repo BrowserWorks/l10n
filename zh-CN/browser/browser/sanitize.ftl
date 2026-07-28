@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = 浏览和下载历史
     .accesskey = B
 item-history-and-downloads-description2 = 清除网站和下载历史
-item-history-form-data-downloads =
-    .label = 历史记录
-    .accesskey = H
-item-history-form-data-downloads-description = 清除浏览、下载、搜索记录，以及保存的表单信息
 item-cookies =
     .label = Cookie
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = 全部历史记录会被清空。
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = 将清空选中的项目内容。
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = 正在计算…

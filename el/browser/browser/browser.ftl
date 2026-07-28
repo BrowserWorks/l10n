@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -110,11 +107,25 @@ browser-main-window-titles-mac =
     .data-content-title-private = { $content-title } — Ιδιωτική περιήγηση
     .data-content-title-default-with-profile = { $content-title } — { $profile-name }
     .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Ιδιωτική περιήγηση
-# This gets set as the initial title, and is overridden as soon as we start
-# updating the titlebar based on loaded tabs or private browsing state.
-# This should match the `data-title-default` attribute in both
-# `browser-main-window` and `browser-main-window-mac`.
+# This is the initial default title for the browser window.
+# It gets updated based on loaded tabs or private browsing state.
 browser-main-window-default-title = { -brand-full-name }
+# Note: only on macOS do we use a `-` separator between the brand name and the
+# "Private Browsing" suffix.
+browser-main-private-window-title =
+    { PLATFORM() ->
+        [macos] { -brand-full-name } — Ιδιωτική περιήγηση
+       *[other] Ιδιωτική περιήγηση { -brand-full-name }
+    }
+# This is only used on macOS; on other OSes we use the full private window
+# title (so including the brand name) as a suffix
+browser-main-private-suffix-for-content = Ιδιωτική περιήγηση
+popups-infobar-dont-show-message2 =
+    .label = Να μην εμφανίζεται αυτό το μήνυμα όταν αποκλείονται αναδυόμενα παράθυρα ή ανακατευθύνσεις τρίτων
+    .accesskey = φ
+edit-popup-settings2 =
+    .label = Διαχείριση ρυθμίσεων αναδυόμενων παραθύρων και ανακατευθύνσεων τρίτων…
+    .accesskey = Δ
 
 ##
 
@@ -129,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = Επιλέξτε εάν θέλετε να λαμβάνετε ειδοποιήσεις από τον ιστότοπο
 urlbar-midi-notification-anchor =
     .tooltiptext = Άνοιγμα πίνακα MIDI
+urlbar-serial-notification-anchor =
+    .tooltiptext = Άνοιγμα πίνακα σειριακών συσκευών
 urlbar-eme-notification-anchor =
     .tooltiptext = Διαχείριση χρήσης λογισμικού DRM
 urlbar-web-authn-anchor =
@@ -141,6 +154,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Άνοιγμα πίνακα αιτήματος τοποθεσίας
+urlbar-localhost-notification-anchor =
+    .tooltiptext = Διαχειριστείτε την πρόσβαση στις τοπικές συσκευές για αυτόν τον ιστότοπο
+urlbar-local-network-notification-anchor =
+    .tooltiptext = Διαχειριστείτε τον διαμοιρασμό της πρόσβασης στο τοπικό δίκτυό σας με αυτόν τον ιστότοπο
 urlbar-xr-notification-anchor =
     .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων εικονικής πραγματικότητας
 urlbar-storage-access-anchor =
@@ -178,6 +195,24 @@ urlbar-result-menu-button =
     .title = Άνοιγμα μενού
 urlbar-result-menu-button-feedback = Σχόλια
     .title = Άνοιγμα μενού
+urlbar-result-menu-learn-more2 = Μάθετε περισσότερα
+    .accesskey = Μ
+urlbar-result-menu-remove-from-history2 = Αφαίρεση από το ιστορικό
+    .accesskey = Α
+urlbar-result-menu-tip-get-help2 = Λήψη βοήθειας
+    .accesskey = β
+urlbar-result-menu-dismiss-suggestion2 = Απόρριψη πρότασης
+    .accesskey = Α
+urlbar-result-menu-manage-firefox-suggest2 = Διαχείριση { -firefox-suggest-brand-name(case: "gen") }
+    .accesskey = Δ
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = Αναφορά ανακριβούς τοποθεσίας
+urlbar-result-menu-show-less-frequently2 = Εμφάνιση σπανιότερα
+urlbar-result-menu-dont-show-weather-suggestions2 = Να μην εμφανίζονται προτάσεις καιρού
 urlbar-result-menu-learn-more =
     .label = Μάθετε περισσότερα
     .accesskey = Μ
@@ -207,6 +242,9 @@ urlbar-result-menu-show-less-frequently =
     .label = Εμφάνιση σπανιότερα
 urlbar-result-menu-dont-show-weather-suggestions =
     .label = Να μην εμφανίζονται προτάσεις καιρού
+# Used for Split Button.
+urlbar-splitbutton-dropmarker =
+    .title = Άνοιγμα μενού
 # A message shown in the urlbar when the user submits feedback on a suggestion
 # (e.g., it shows an inaccurate location, it's shown too often, etc.).
 urlbar-feedback-acknowledgment = Ευχαριστούμε για τα σχόλιά σας
@@ -238,6 +276,10 @@ urlbar-search-mode-actions = Ενέργειες
 
 urlbar-geolocation-blocked =
     .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας σε αυτόν τον ιστότοπο.
+urlbar-localhost-blocked =
+    .tooltiptext = Έχετε αποκλείσει τις συνδέσεις με τις τοπικές συσκευές για αυτόν τον ιστότοπο.
+urlbar-local-network-blocked =
+    .tooltiptext = Έχετε αποκλείσει τις συνδέσεις με το τοπικό δίκτυο για αυτόν τον ιστότοπο.
 urlbar-xr-blocked =
     .tooltiptext = Έχετε αποκλείσει την πρόσβαση συσκευών εικονικής πραγματικότητας σε αυτόν τον ιστότοπο.
 urlbar-web-notifications-blocked =
@@ -250,6 +292,8 @@ urlbar-screen-blocked =
     .tooltiptext = Έχετε αποκλείσει την κοινή χρήση οθόνης σε αυτόν τον ιστότοπο.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Έχετε αποκλείσει τη μόνιμη αποθήκευση σε αυτόν τον ιστότοπο.
+urlbar-popup-blocked2 =
+    .tooltiptext = Έχετε αποκλείσει αναδυόμενα παράθυρα και ανακατευθύνσεις τρίτων σε αυτόν τον ιστότοπο.
 urlbar-popup-blocked =
     .tooltiptext = Έχετε αποκλείσει τα αναδυόμενα παράθυρα σε αυτόν τον ιστότοπο.
 urlbar-autoplay-media-blocked =
@@ -258,6 +302,8 @@ urlbar-canvas-blocked =
     .tooltiptext = Έχετε αποκλείσει την εξαγωγή δεδομένων καμβά σε αυτόν τον ιστότοπο.
 urlbar-midi-blocked =
     .tooltiptext = Έχετε αποκλείσει την πρόσβαση MIDI σε αυτόν τον ιστότοπο.
+urlbar-serial-blocked =
+    .tooltiptext = Έχετε αποκλείσει την πρόσβαση σειριακών θυρών για αυτόν τον ιστότοπο.
 urlbar-install-blocked =
     .tooltiptext = Έχετε αποκλείσει την εγκατάσταση προσθέτων σε αυτόν τον ιστότοπο.
 # Variables
@@ -268,6 +314,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Δημιουργία σελιδοδείκτη για αυτήν τη σελίδα ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = Διαχωρισμός προβολής
+    .aria-label = Διαχωρισμός προβολής
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Απαλοιφή ιστορικού αναζήτησης
+    .accesskey = κ
 
 ## Page Action Context Menu
 
@@ -291,7 +346,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Αυτήν τη φορά, αναζήτηση με:
+search-one-offs-with-title = Τρέχουσα αναζήτηση με:
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Αλλαγή ρυθμίσεων αναζήτησης
 search-one-offs-context-open-new-tab =
@@ -340,7 +395,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Προβολή προσθέτων
@@ -348,12 +403,16 @@ quickactions-addons = Προβολή προσθέτων
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = επεκτάσεις, θέματα, πρόσθετα, addons, add-ons
+# Opens preferences page at AI controls
+quickactions-manageai = Διαχείριση επιλογών ελέγχου ΤΝ
+quickactions-cmd-manageai = απενεργοποίηση ΤΝ, διαχείριση ΤΝ, απενεργοποίηση AI, διαχείριση AI, disable ai, off ai, manage ai
 quickactions-cmd-addons2 = πρόσθετα, add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Διαχείριση σελιδοδεικτών
 quickactions-cmd-bookmarks = σελιδοδείκτες, αγαπημένα
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Απαλοιφή πρόσφατου ιστορικού
+quickactions-cmd-clearrecenthistory2 = cookies, διαγραφή cookies, κρυφή μνήμη, εκκαθάριση κρυφής μνήμης, δεδομένα περιήγησης, εκκαθάριση δεδομένων περιήγησης, ιστορικό, εκκαθάριση πρόσφατου ιστορικού
 quickactions-cmd-clearrecenthistory = απαλοιφή πρόσφατου ιστορικού, ιστορικό
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Απαλοιφή ιστορικού
@@ -363,6 +422,7 @@ quickactions-downloads2 = Προβολή λήψεων
 quickactions-cmd-downloads = λήψεις, αρχεία λήψης
 # Opens about:addons page in the extensions section
 quickactions-extensions = Διαχείριση επεκτάσεων
+quickactions-cmd-extensions2 = επεκτάσεις, πρόσθετα
 quickactions-cmd-extensions = επεκτάσεις
 # Opens Firefox View
 quickactions-firefoxview = Άνοιγμα { -firefoxview-brand-name(case: "gen") }
@@ -376,10 +436,22 @@ quickactions-cmd-help = βοήθεια, υποστήριξη
 # Opens the devtools web inspector
 quickactions-inspector2 = Άνοιγμα εργαλείων ανάπτυξης
 quickactions-cmd-inspector2 = επιθεώρηση, επιθεώρηση σελίδας, εργαλεία ανάπτυξης, ανάπτυξη, devtools
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Επιλογή χρώματος
+quickactions-cmd-colorpicker = εργαλείο επιλογής χρώματος, σταγονόμετρο, επιλογή χρώματος, color picker, eyedropper, pick color
+# Opens Firefox Library
+quickactions-cmd-library = βιβλιοθήκη
+quickactions-library = Άνοιγμα βιβλιοθήκης
 quickactions-cmd-inspector = επιθεώρηση, εργαλεία προγραμματιστή, εργαλεία ανάπτυξης, devtools
 # Opens about:logins
 quickactions-logins2 = Διαχείριση κωδικών πρόσβασης
 quickactions-cmd-logins = συνδέσεις, στοιχεία σύνδεσης, διαπιστευτήρια, κωδικοί πρόσβασης, κωδικοί
+# Mutes all tabs playing audio
+quickactions-mute = Σίγαση καρτελών που αναπαράγουν ήχο
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = σίγαση, σιωπή, σουτ, σσσσς
 # Opens about:addons page in the plugins section
 quickactions-plugins = Διαχείριση αρθρωμάτων
 quickactions-cmd-plugins = αρθρώματα, plugins
@@ -389,7 +461,9 @@ quickactions-cmd-print = εκτύπωση
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Αποθήκευση σελίδας ως PDF
 quickactions-cmd-savepdf2 = pdf, αποθήκευση σελίδας
-quickactions-cmd-savepdf = pdf
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = Άνοιγμα επεξεργασίας PDF
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Άνοιγμα ιδιωτικού παραθύρου
 quickactions-cmd-private = ιδιωτική περιήγηση, ανώνυμη περιήγηση
@@ -402,6 +476,9 @@ quickactions-cmd-restart = επανεκκίνηση
 # Opens the screenshot tool
 quickactions-screenshot3 = Λήψη στιγμιότυπου
 quickactions-cmd-screenshot2 = στιγμιότυπο, στιγμιότυπο οθόνης, λήψη στιγμιότυπου, screenshot
+# Opens about:translations
+quickactions-translate = Μετάφραση
+quickactions-cmd-translate = μετάφραση
 quickactions-cmd-screenshot = στιγμιότυπο, στιγμιότυπο οθόνης, screenshot
 # Opens about:preferences
 quickactions-settings2 = Διαχείριση ρυθμίσεων
@@ -421,6 +498,9 @@ quickactions-cmd-update = ενημέρωση, αναβάθμιση
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Προβολή πηγαίου κώδικα σελίδας
 quickactions-cmd-viewsource2 = προβολή πηγής, πηγή, πηγή σελίδας
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = Άνοιγμα του { -firefoxlabs-brand-name }
+quickactions-cmd-labs = πείραμα, πειράματα, εργαστήριο, εργαστήρια, lab, labs, experiment
 quickactions-cmd-viewsource = προβολή πηγής, πηγαίος κώδικας, πηγή
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -502,11 +582,15 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ασφαλής.
 identity-connection-verified = Η σύνδεσή σας με αυτόν τον ιστότοπο είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
+identity-verifier-label = Επαληθεύτηκε από:
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Πιστοποιημένο όπως ορίζει ο Κανονισμός (ΕΕ) 2024/1183.
 identity-description-custom-root2 = Η BrowserWorks δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή.
+identity-cert-exception-overridden = Έχετε προσθέσει μια εξαίρεση ασφαλείας για αυτόν τον ιστότοπο.
 identity-remove-cert-exception =
     .label = Αφαίρεση εξαίρεσης
     .accesskey = ρ
-identity-description-insecure = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ιδιωτική. Οι υποβληθείσες πληροφορίες μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
+identity-description-insecure = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ιδιωτική. Οι υποβεβλημένες πληροφορίες μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
 identity-description-insecure-login-forms = Τα στοιχεία σύνδεσης που εισαγάγατε στη σελίδα δεν είναι ασφαλή και ενδέχεται να παραβιαστούν.
 identity-description-weak-cipher-intro = Η σύνδεση σας με αυτόν τον ιστότοπο δεν χρησιμοποιεί ισχυρή κρυπτογράφηση και δεν είναι ιδιωτική.
 identity-description-weak-cipher-risk = Τρίτα άτομα μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν τη συμπεριφορά αυτού του ιστοτόπου.
@@ -535,6 +619,9 @@ browser-window-restore-down-button =
     .tooltiptext = Επαναφορά κάτω
 browser-window-close-button =
     .tooltiptext = Κλείσιμο
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = Επιστροφή
 
 ## Tab actions
 
@@ -602,9 +689,14 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = Απενεργοποίηση προστασίας κοινής χρήσης για αυτήν τη συνεδρία
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = Επιλογή σειριακής θύρας:
+webserial-no-ports-available = Καμία διαθέσιμη σειριακή θύρα
+
 ## DevTools F12 popup
 
-enable-devtools-popup-description2 = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού εργαλείων του προγράμματος περιήγησης.
+enable-devtools-popup-description2 = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα εργαλεία ανάπτυξης μέσω του μενού «Εργαλεία προγράμματος περιήγησης».
 
 ## URL Bar
 
@@ -633,7 +725,7 @@ urlbar-placeholder-search-mode-web-2 =
 #  $name (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-placeholder-search-mode-other-engine =
-    .placeholder = Εισαγωγή όρων αναζήτησης
+    .placeholder = Εισαγάγετε όρους αναζήτησης
     .aria-label = Αναζήτηση { $name }
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
@@ -649,7 +741,7 @@ urlbar-placeholder-search-mode-other-tabs =
     .aria-label = Αναζήτηση καρτελών
 # This placeholder is used when searching quick actions.
 urlbar-placeholder-search-mode-other-actions =
-    .placeholder = Εισαγωγή όρων αναζήτησης
+    .placeholder = Εισαγάγετε όρους αναζήτησης
     .aria-label = Αναζήτηση ενεργειών
 # Variables
 #  $name (String): the name of the user's default search engine
@@ -661,12 +753,14 @@ urlbar-placeholder-with-name =
 urlbar-remote-control-notification-anchor2 =
     .tooltiptext = Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα (αιτία: { $component })
 urlbar-permissions-granted =
-    .tooltiptext = Έχετε χορηγήσει επιπλέον άδειες σε αυτόν τον ιστότοπο.
+    .tooltiptext = Έχετε χορηγήσει πρόσθετα δικαιώματα σε αυτόν τον ιστότοπο.
 urlbar-switch-to-tab =
     .value = Εναλλαγή σε καρτέλα:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Επέκταση:
+urlbar-go-button2 =
+    .title = Μετάβαση στη διεύθυνση της γραμμής διευθύνσεων
 urlbar-go-button =
     .tooltiptext = Μετάβαση στη διεύθυνση της γραμμής διευθύνσεων
 urlbar-page-action-button =
@@ -674,8 +768,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = Εμφάνιση διεύθυνσης στη γραμμή τοποθεσίας
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -692,6 +787,7 @@ urlbar-result-action-search-in-private = Αναζήτηση σε ιδιωτικ�
 urlbar-result-action-search-w-engine = Αναζήτηση με { $engine }
 urlbar-result-action-sponsored = Χορηγία
 urlbar-result-action-switch-tab = Εναλλαγή σε καρτέλα
+urlbar-result-action-move-tab-to-split-view = Μετακίνηση καρτέλας στον διαχωρισμό προβολής
 urlbar-result-action-visit = Επίσκεψη
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -731,6 +827,14 @@ urlbar-result-action-copy-to-clipboard = Αντιγραφή
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = δεν ορίζεται
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = Επέκταση { -brand-product-name }
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = Προτείνεται
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -788,6 +892,164 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · Χορηγία
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = Ερώτηση
+
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = Τελευταία επίσκεψη: { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days =
+    { $daysAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $daysAgo } ημέρα
+       *[other] Τελευταία επίσκεψη: πριν από { $daysAgo } ημέρες
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks =
+    { $weeksAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $weeksAgo } εβδομάδα
+       *[other] Τελευταία επίσκεψη: πριν από { $weeksAgo } εβδομάδες
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months =
+    { $monthsAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $monthsAgo } μήνα
+       *[other] Τελευταία επίσκεψη: πριν από { $monthsAgo } μήνες
+    }
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = Τελευταία επίσκεψη: { $date }
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = Προσθήκη σελιδοδείκτη: { $date }
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = Τελευταία επίσκεψη: { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 =
+    { $daysAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $daysAgo } ημέρα
+       *[other] Τελευταία επίσκεψη: πριν από { $daysAgo } ημέρες
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 =
+    { $weeksAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $weeksAgo } εβδομάδα
+       *[other] Τελευταία επίσκεψη: πριν από { $weeksAgo } εβδομάδες
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 =
+    { $monthsAgo ->
+        [one] Τελευταία επίσκεψη: πριν από { $monthsAgo } μήνα
+       *[other] Τελευταία επίσκεψη: πριν από { $monthsAgo } μήνες
+    }
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = Τελευταία επίσκεψη: { $date }
+
+## These strings are used for Realtime suggestions in the urlbar.
+## Market refers to stocks, indexes, and funds.
+
+# This string is shown as title when Market suggestion are disabled.
+urlbar-result-market-opt-in-title = Λάβετε δεδομένα χρηματιστηρίου στη γραμμή αναζήτησης
+# This string is shown as description when Market suggestion are disabled.
+urlbar-result-market-opt-in-description = Να εμφανίζονται ενημερώσεις μετοχών και άλλες από τους συνεργάτες μας όταν κοινοποιούνται δεδομένα ερωτημάτων αναζήτησης στη { -vendor-short-name }. <a data-l10n-name="learn-more-link">Μάθετε περισσότερα</a>
+# This string is shown as button to activate online when realtime suggestion are disabled.
+urlbar-result-realtime-opt-in-allow = Εμφάνιση προτάσεων
+# This string is shown in split button to dismiss activation the Realtime suggestion.
+urlbar-result-realtime-opt-in-not-now = Όχι τώρα
+urlbar-result-realtime-opt-in-dismiss = Απόρριψη
+urlbar-result-realtime-opt-in-dismiss-all2 = Να μην εμφανίζονται αυτές οι προτάσεις
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = Να μην εμφανίζονται προτάσεις μετοχών
+urlbar-result-realtime-opt-in-dismiss-all =
+    .label = Να μην εμφανίζονται αυτές οι προτάσεις
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market =
+    .label = Να μην εμφανίζονται προτάσεις μετοχών
+# A message that replaces a result when the user dismisses Market suggestions.
+urlbar-result-dismissal-acknowledgment-market = Ευχαριστούμε για τα σχόλιά σας. Δεν θα βλέπετε πλέον προτάσεις μετοχών.
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = Προτάσεις χρηματιστηρίου
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-result-dismissal-acknowledgment-all = Ευχαριστούμε για τα σχόλιά σας. Δεν θα βλέπετε πλέον αυτές τις προτάσεις.
+
+## These strings are used for suggestions of important dates in the urlbar.
+
+# The name of an event and the number of days until it starts separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown =
+    { $daysUntilStart ->
+        [one] { $name } · Σε { $daysUntilStart } ημέρα
+       *[other] { $name } · Σε { $daysUntilStart } ημέρες
+    }
+# The name of a multiple day long event and the number of days until it starts
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown-range =
+    { $daysUntilStart ->
+        [one] { $name } · Ξεκινά σε { $daysUntilStart } ημέρα
+       *[other] { $name } · Ξεκινά σε { $daysUntilStart } ημέρες
+    }
+# The name of a multiple day long event and the number of days until it ends
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilEnd (integer) - The number of days until the event ends.
+urlbar-result-dates-ongoing =
+    { $daysUntilEnd ->
+        [one] { $name } · Τελειώνει σε { $daysUntilEnd } ημέρα
+       *[other] { $name } · Τελειώνει σε { $daysUntilEnd } ημέρες
+    }
+# The name of an event and a note that it is happening today separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-today = { $name } · Σήμερα
+# The name of multiple day long event and a note that it is ends today
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-ends-today = { $name } · Τελειώνει σήμερα
 
 ## Strings used for buttons in the urlbar
 
@@ -815,11 +1077,9 @@ urlbar-searchmode-actions =
     .label = Ενέργειες
 urlbar-searchmode-exit-button =
     .tooltiptext = Κλείσιμο
-urlbar-searchmode-default =
-    .tooltiptext = Προεπιλεγμένη μηχανή αναζήτησης
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
-urlbar-searchmode-popup-description = Αυτήν τη φορά αναζήτηση με:
+urlbar-searchmode-popup-description = Τρέχουσα αναζήτηση με:
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = Ρυθμίσεις αναζήτησης
 # Searchmode Switcher button
@@ -831,6 +1091,39 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = Δεν έχει επιλεγεί συντόμευση, επιλέξτε συντόμευση
     .tooltiptext = Δεν έχει επιλεγεί συντόμευση, επιλέξτε συντόμευση
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }, επιλογή μηχανής αναζήτησης
+urlbar-searchmode-button-no-engine2 =
+    .title = Δεν έχει επιλεγεί συντόμευση, επιλέξτε συντόμευση
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = Η αναζήτηση λέξεων-κλειδιών είναι ανενεργή
+urlbar-searchmode-dropmarker2 =
+    .title = Επιλογή μηχανής αναζήτησης
+urlbar-searchmode-bookmarks2 = Σελιδοδείκτες
+urlbar-searchmode-tabs2 = Καρτέλες
+urlbar-searchmode-history2 = Ιστορικό
+urlbar-searchmode-actions2 = Ενέργειες
+urlbar-searchmode-exit-button2 =
+    .title = Κλείσιμο
+urlbar-searchmode-default2 =
+    .title = Προεπιλεγμένη μηχανή αναζήτησης
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Προσθήκη «{ $engineName }»
+    .title = Προσθήκη μηχανής αναζήτησης «{ $engineName }»
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = Τρέχουσα αναζήτηση με:
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = Αναζήτηση με:
+urlbar-searchmode-popup-search-settings-panelitem = Ρυθμίσεις αναζήτησης
+urlbar-searchmode-popup-settings-panelitem = Ρυθμίσεις
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -846,6 +1139,21 @@ urlbar-result-action-switch-to-tabgroup = Εναλλαγή σε «{ $group }»
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = Άνοιγμα «{ $group }»
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = Άνοιγμα σε νέα καρτέλα
+    .accesskey = γ
+urlbar-view-context-menu-open-in-container-tab =
+    .label = Άνοιγμα σε νέα θεματική καρτέλα
+    .accesskey = θ
+urlbar-view-context-menu-open-in-window =
+    .label = Άνοιγμα σε νέο παράθυρο
+    .accesskey = ν
+urlbar-view-context-menu-open-in-private-window =
+    .label = Άνοιγμα σε νέο ιδιωτικό παράθυρο
+    .accesskey = ι
 
 ## Labels shown above groups of urlbar results
 
@@ -872,6 +1180,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Τάσεις στο { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = Απόκρυψη δημοφιλών αναζητήσεων
+    .accesskey = Α
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = Χορηγία
@@ -919,6 +1230,9 @@ fullscreen-warning-no-domain = Αυτό το έγγραφο εμφανίζετα
 fullscreen-exit-button = Έξοδος από πλήρη οθόνη (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
+fullscreen-keyboardlock-exit-button = Έξοδος από την πλήρη οθόνη (Πατήστε παρατεταμένα το Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = Έξοδος από την πλήρη οθόνη (Πατήστε παρατεταμένα το esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1014,7 +1328,7 @@ repair-text-encoding-button =
     .label = Επιδιόρθωση κωδικοποίησης κειμένου
     .tooltiptext = Υπόθεση σωστής κωδικοποίησης κειμένου από το περιεχόμενο της σελίδας
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1034,6 +1348,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = Κωδικοί πρόσβασης
     .tooltiptext = Προβολή και διαχείριση των αποθηκευμένων κωδικών πρόσβασης
+qrcode-panel-error =
+    .message = Αποτυχία δημιουργίας κωδικού QR. Δοκιμάστε ξανά.
+qrcode-copy-button =
+    .label = Αντιγραφή
+qrcode-copy-success =
+    .message = Ο κωδικός QR αντιγράφτηκε στο πρόχειρο.
+qrcode-copy-error =
+    .message = Αποτυχία αντιγραφής κωδικού QR.
+qrcode-save-button =
+    .label = Αποθήκευση
+qrcode-save-success =
+    .message = Ο κωδικός QR αποθηκεύτηκε.
+qrcode-save-error =
+    .message = Αποτυχία αποθήκευσης κωδικού QR.
+qrcode-save-title = Αποθήκευση κωδικού QR
+qrcode-save-filter-png = Εικόνα PNG
+qrcode-save-filename = qrcode.png
+qrcode-window-title = Κωδικός QR
+qrcode-dialog-title = Κωδικός QR
+qrcode-image =
+    .aria-label = Κωδικός QR
+qrcode-close-button =
+    .aria-label = Κλείσιμο
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1047,11 +1384,28 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = Συγχρονισμένες καρτέλες
     .tooltiptext = Εμφάνιση καρτελών από άλλες συσκευές
+toolbar-button-send-tab =
+    .label = Αποστολή καρτέλας
+    .tooltiptext = Αποστολή τρέχουσας καρτέλας σε άλλη συσκευή
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = Νέο ιδιωτικό παράθυρο
     .tooltiptext = Άνοιγμα σε νέο παράθυρο ιδιωτικής περιήγησης ({ $shortcut })
+toolbar-button-share-tab =
+    .label = Κοινοποίηση
+    .tooltiptext = Κοινοποίηση σελίδας
+toolbar-button-tab-groups =
+    .label = Ομάδες καρτελών
+    .tooltiptext = Εμφάνιση των ομάδων καρτελών σας
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = qrcode-{ $domain }
 
 ## EME notification panel
 
@@ -1065,12 +1419,27 @@ eme-notifications-drm-content-playing-dismiss-accesskey = Α
 
 panel-save-update-username = Όνομα χρήστη
 panel-save-update-password = Κωδικός πρόσβασης
+panel-save-update-username-2 =
+    .label = Όνομα χρήστη
+panel-save-update-password-2 =
+    .label = Κωδικός πρόσβασης
 
 ##
 
 # "More" item in macOS share menu
 menu-share-more =
     .label = Περισσότερα…
+menu-share-windows =
+    .label = Περισσότερες επιλογές
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label =
+        { $count ->
+            [one] Αντιγραφή συνδέσμου
+           *[other] Αντιγραφή { $count } συνδέσμων
+        }
+    .accesskey = σ
 menu-share-copy-link =
     .label = Αντιγραφή συνδέσμου
     .accesskey = σ
@@ -1086,6 +1455,9 @@ popups-infobar-allow =
 popups-infobar-block =
     .label = Φραγή αναδυόμενων παραθύρων στο { $uriHost }
     .accesskey = δ
+popups-infobar-allow2 =
+    .label = Αποδοχή αναδυόμενων παραθύρων και ανακατευθύνσεων τρίτων για το { $uriHost }
+    .accesskey = χ
 
 ##
 
@@ -1149,6 +1521,10 @@ tabs-toolbar-list-all-tabs =
     .label = Παράθεση όλων των καρτελών
     .tooltiptext = Παράθεση όλων των καρτελών
 
+## Drop indicator text for pinned tabs when no tabs are pinned.
+
+pinned-tabs-drop-indicator = Αποθέστε εδώ την καρτέλα για καρφίτσωμα
+
 ## Infobar shown at startup to suggest session-restore
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
@@ -1157,7 +1533,7 @@ restore-session-startup-suggestion-button = Εμφάνιση οδηγιών
 
 ## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
 
-filepicker-blocked-infobar = Η εταιρεία σας έχει αποκλείσει την πρόσβαση σε τοπικά αρχεία αυτού του υπολογιστή
+filepicker-blocked-infobar = Ο οργανισμός σας έχει αποκλείσει την πρόσβαση στα τοπικά αρχεία αυτού του υπολογιστή
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
@@ -1218,6 +1594,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = Τερματισμός ιδιωτικής συνεδρίας
     .tooltiptext = Τερματισμός ιδιωτικής συνεδρίας
+reset-pbm-panel-heading2 = Απαλοιφή δεδομένων και έναρξη νέας ιδιωτικής συνεδρίας;
+reset-pbm-panel-description2 = Αυτό διαγράφει το ιστορικό, τα cookie και όλα τα άλλα δεδομένα ιστοτόπων χωρίς να κλείσει το ιδιωτικό σας παράθυρο.
 reset-pbm-panel-heading = Τερματισμός ιδιωτικής συνεδρίας;
 reset-pbm-panel-description = Κλείστε όλες τις ιδιωτικές καρτέλες και διαγράψτε το ιστορικό, τα cookie και όλα τα άλλα δεδομένα ιστοτόπων.
 reset-pbm-panel-always-ask-checkbox =
@@ -1226,10 +1604,16 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = Ακύρωση
     .accesskey = Α
+reset-pbm-panel-confirm-button2 =
+    .label = Απαλοιφή ιδιωτικής συνεδρίας
+    .accesskey = λ
 reset-pbm-panel-confirm-button =
     .label = Διαγραφή δεδομένων συνεδρίας
     .accesskey = Δ
 reset-pbm-panel-complete = Τα δεδομένα της ιδιωτικής συνεδρίας διαγράφηκαν
+reset-pbm-toolbar-button2 =
+    .label = Απαλοιφή ιδιωτικής συνεδρίας
+    .tooltiptext = Απαλοιφή ιδιωτικής συνεδρίας
 
 ## Autorefresh blocker
 
@@ -1244,8 +1628,9 @@ refresh-blocked-allow =
 firefox-relay-offer-why-to-use-relay = Οι ασφαλείς και εύχρηστες μάσκες μας, προστατεύουν την ταυτότητά σας και αποτρέπουν τα ανεπιθύμητα μηνύματα κρύβοντας τη διεύθυνση email σας.
 # Variables:
 #  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-provides = Όλα τα email που αποστέλλονται στις μάσκες email σας θα προωθηθούν στη διεύθυνση <strong>{ $useremail }</strong> (εκτός εάν αποφασίσετε να τα αποκλείσετε).
+firefox-relay-offer-what-relay-provides = Όλα τα email που αποστέλλονται στις μάσκες email σας θα προωθούνται στο <strong>{ $useremail }</strong> (εκτός εάν αποφασίσετε να τα αποκλείσετε).
 firefox-relay-offer-legal-notice = Κάνοντας κλικ στο «Χρήση μάσκας email», συμφωνείτε με τους <label data-l10n-name="tos-url">Όρους υπηρεσίας</label> και τη <label data-l10n-name="privacy-url">Σημείωση απορρήτου </label>.
+firefox-relay-offer-legal-notice-1 = Κάνοντας εγγραφή και δημιουργία μιας μάσκας email, συμφωνείτε με τους <label data-l10n-name="tos-url">Όρους υπηρεσίας</label> και τη <label data-l10n-name="privacy-url">Σημείωση απορρήτου</label>.
 
 ## Add-on Pop-up Notifications
 
@@ -1272,10 +1657,26 @@ popup-warning-message =
         [one] Το { -brand-short-name } εμπόδισε το άνοιγμα ενός αναδυόμενου παραθύρου στον ιστότοπο.
        *[other] Το { -brand-short-name } εμπόδισε το άνοιγμα { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
     }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+redirect-warning-with-popup-message =
+    { $popupCount ->
+        [0] Το { -brand-short-name } εμπόδισε την ανακατεύθυνση στον ιστότοπο.
+        [1] Το { -brand-short-name } εμπόδισε το άνοιγμα και την ανακατεύθυνση αναδυόμενου παραθύρου στον ιστότοπο.
+        [one] Το { -brand-short-name } εμπόδισε το άνοιγμα και την ανακατεύθυνση αναδυόμενου παραθύρου στον ιστότοπο.
+       *[other] Το { -brand-short-name } εμπόδισε το άνοιγμα και την ανακατεύθυνση { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
+    }
 # The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
 popup-warning-exceeded-message = Το { -brand-short-name } εμπόδισε το άνοιγμα περισσότερων από { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-with-redirect-message =
+    { $popupCount ->
+        [one] Το { -brand-short-name } εμπόδισε το άνοιγμα και την ανακατεύθυνση { $popupCount } αναδυόμενου παραθύρου στον ιστότοπο.
+       *[other] Το { -brand-short-name } εμπόδισε το άνοιγμα και την ανακατεύθυνση περισσότερων από { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
+    }
 popup-warning-button =
     .label =
         { PLATFORM() ->
@@ -1291,6 +1692,10 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Εμφάνιση του «{ $popupURI }»
+# Variables:
+#   $redirectURI (String): the URI for the redirect
+popup-trigger-redirect-menuitem =
+    .label = Εμφάνιση του «{ $redirectURI }»
 
 ## File-picker crash notification ("FilePickerCrashed.sys.mjs")
 
@@ -1319,3 +1724,155 @@ onboarding-checklist-button-label = Ολοκλήρωση ρύθμισης
 onboarding-aw-finish-setup-button =
     .label = Ολοκλήρωση ρύθμισης
     .tooltiptext = Ολοκλήρωση της ρύθμισης του { -brand-short-name }
+
+## The urlbar trust icon & panel
+
+trustpanel-etp-label-enabled = Η Ενισχυμένη προστασία από καταγραφή είναι ενεργή
+trustpanel-etp-label-disabled = Η Ενισχυμένη προστασία από καταγραφή είναι ανενεργή
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-on =
+    .aria-label = Ενισχυμένη προστασία από καταγραφή: ενεργή στο { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-off =
+    .aria-label = Ενισχυμένη προστασία από καταγραφή: ανενεργή στο { $host }
+trustpanel-etp-description-enabled = Εάν κάτι δεν λειτουργεί σωστά σε αυτόν τον ιστότοπο, δοκιμάστε να απενεργοποιήσετε την προστασία.
+trustpanel-etp-description-disabled = Το { -brand-product-name } θεωρεί ότι οι εταιρείες θα πρέπει να σας ακολουθούν λιγότερο. Αποκλείουμε όσο περισσότερους ιχνηλάτες μπορούμε όταν ενεργοποιείτε την προστασία.
+trustpanel-connection-label-secure = Ασφαλής σύνδεση
+trustpanel-connection-label-insecure = Μη ασφαλής σύνδεση
+trustpanel-header-enabled = Το { -brand-product-name } είναι σε επιφυλακή
+trustpanel-description-enabled2 = Προστατεύεστε. Αν εντοπίσουμε κάτι, θα σας ενημερώσουμε.
+trustpanel-header-enabled-insecure = Να προσέχετε σε αυτόν τον ιστότοπο
+trustpanel-description-enabled-insecure = Το { -brand-product-name } παρατήρησε κάτι ύποπτο.
+trustpanel-header-disabled = Απενεργοποιήσατε την προστασία
+trustpanel-description-disabled = Το { -brand-product-name } είναι εκτός υπηρεσίας. Προτείνουμε να ενεργοποιήσετε ξανά την προστασία.
+trustpanel-clear-cookies-button = Απαλοιφή cookie και δεδομένων ιστοτόπου
+trustpanel-privacy-link = Ρυθμίσεις απορρήτου
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-clear-cookies-header =
+    .title = Απαλοιφή cookie και δεδομένων ιστοτόπου για το { $host }
+trustpanel-clear-cookies-description = Η διαγραφή των cookie και των δεδομένων ιστοτόπων ενδέχεται να σας αποσυνδέσει από ιστοτόπους και να αδειάσει τα καλάθια αγορών.
+trustpanel-clear-cookies-subview-button-clear = Απαλοιφή
+trustpanel-clear-cookies-subview-button-cancel = Ακύρωση
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-site-information-header =
+    .title = Προστασία σύνδεσης για το { $host }
+trustpanel-siteinformation-morelink = Περισσότερες πληροφορίες ιστοτόπου
+trustpanel-blocker-see-all = Προβολή όλων
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-blocker-header =
+    .title = Προστασία από καταγραφή για το { $host }
+
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = Μη ασφαλής
+
+## Variables
+##  $count (String): the number of trackers blocked.
+
+trustpanel-blocker-description = Το { -brand-product-name } θεωρεί ότι οι εταιρείες πρέπει να σας ακολουθούν λιγότερο. Αποκλείουμε λοιπόν όσους περισσότερους μπορούμε.
+trustpanel-blocked-header = Το { -brand-product-name } απέκλεισε τα παρακάτω στοιχεία για εσάς:
+trustpanel-tracking-header = Το { -brand-product-name } επέτρεψε τα παρακάτω στοιχεία για την εύρυθμη λειτουργία των ιστοτόπων:
+trustpanel-tracking-description = Χωρίς τους ιχνηλάτες, ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
+trustpanel-insecure-section-header = Η σύνδεσή σας δεν είναι ασφαλής
+trustpanel-insecure-description = Τα δεδομένα που στέλνετε σε αυτόν τον ιστότοπο δεν είναι κρυπτογραφημένα. Μπορούν να προβληθούν, να υποκλαπούν ή να αλλοιωθούν.
+trustpanel-list-label-tracking-cookies =
+    { $count ->
+        [one] { $count } cookie καταγραφής μεταξύ ιστοτόπων
+       *[other] { $count } cookie καταγραφής μεταξύ ιστοτόπων
+    }
+trustpanel-list-label-tracking-content = Περιεχόμενο καταγραφής
+trustpanel-list-label-fingerprinter =
+    { $count ->
+        [one] { $count } fingerprinter
+       *[other] { $count } fingerprinter
+    }
+trustpanel-list-label-social-tracking =
+    { $count ->
+        [one] { $count } ιχνηλάτης κοινωνικών δικτύων
+       *[other] { $count } ιχνηλάτες κοινωνικών δικτύων
+    }
+trustpanel-list-label-cryptominer =
+    { $count ->
+        [one] { $count } cryptominer
+       *[other] { $count } cryptominer
+    }
+trustpanel-social-tracking-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } απέκλεισε { $count } ιχνηλάτη κοινωνικών δικτύων
+       *[other] Το { -brand-product-name } απέκλεισε { $count } ιχνηλάτες κοινωνικών δικτύων
+    }
+trustpanel-social-tracking-not-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } επέτρεψε { $count } ιχνηλάτη κοινωνικών δικτύων
+       *[other] Το { -brand-product-name } επέτρεψε { $count } ιχνηλάτες κοινωνικών δικτύων
+    }
+trustpanel-tracking-cookies-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } απέκλεισε { $count } cookie καταγραφής μεταξύ ιστοτόπων
+       *[other] Το { -brand-product-name } απέκλεισε { $count } cookie καταγραφής μεταξύ ιστοτόπων
+    }
+trustpanel-tracking-cookies-not-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } επέτρεψε { $count } cookie καταγραφής μεταξύ ιστοτόπων
+       *[other] Το { -brand-product-name } επέτρεψε { $count } cookie καταγραφής μεταξύ ιστοτόπων
+    }
+trustpanel-tracking-content-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } απέκλεισε { $count } ιχνηλάτη
+       *[other] Το { -brand-product-name } απέκλεισε { $count } ιχνηλάτες
+    }
+trustpanel-tracking-content-not-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } επέτρεψε { $count } ιχνηλάτη
+       *[other] Το { -brand-product-name } επέτρεψε { $count } ιχνηλάτες
+    }
+trustpanel-tracking-content-tab-list-header = Αυτοί οι ιστότοποι προσπαθούν να σας καταγράψουν:
+trustpanel-fingerprinter-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } απέκλεισε { $count } fingerprinter
+       *[other] Το { -brand-product-name } απέκλεισε { $count } fingerprinter
+    }
+trustpanel-fingerprinter-not-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } επέτρεψε { $count } fingerprinter
+       *[other] Το { -brand-product-name } επέτρεψε { $count } fingerprinter
+    }
+trustpanel-fingerprinter-list-header = Αυτοί οι ιστότοποι προσπαθούν να σας αναλύσουν το ψηφιακό σας αποτύπωμα:
+trustpanel-cryptominer-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } απέκλεισε { $count } cryptominer
+       *[other] Το { -brand-product-name } απέκλεισε { $count } cryptominer
+    }
+trustpanel-cryptominer-not-blocking-tab-header =
+    { $count ->
+        [one] Το { -brand-product-name } επέτρεψε { $count } cryptominer
+       *[other] Το { -brand-product-name } επέτρεψε { $count } cryptominer
+    }
+trustpanel-cryptominer-tab-list-header = Αυτοί οι ιστότοποι προσπαθούν να εξορύξουν κρυπτονομίσματα:
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = Έχετε λογαριασμό σε αυτή τη σελίδα;
+trustpanel-breachalerts-anonymous-breached-description = Το { -brand-product-name } διαπίστωσε ότι αυτός ο ιστότοπος παρουσίασε παραβίαση δεδομένων τους τελευταίους 12 μήνες. Μάθετε αν επηρεαστήκατε.
+trustpanel-breachalerts-anonymous-breached-button-dismiss = Απόρριψη
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = Έναρξη δωρεάν σάρωσης
+trustpanel-blocker-section-header2 =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span> αποκλεισμένος ιχνηλάτης σε αυτόν τον ιστότοπο
+       *[other] <span data-l10n-name="count">{ $count }</span> αποκλεισμένοι ιχνηλάτες σε αυτόν τον ιστότοπο
+    }
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>Φαίνεται προβληματικός ο ιστότοπος;</strong> Ανανεώστε τη σελίδα για να μειώσετε προσωρινά την προστασία από καταγραφή.
+reduced-protection-infobar-reload-button = Ανανέωση
+    .accesskey = Α
+reduced-protection-infobar-never-show-button = Να μην εμφανιστεί ξανά
+    .accesskey = Ν

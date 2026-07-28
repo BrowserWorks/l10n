@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = Tiszta hivatkozás másolása
     .accesskey = T
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = Másolás oldalkövetés nélkül
-    .accesskey = n
 text-action-paste =
     .label = Beillesztés
     .accesskey = B
@@ -73,6 +68,9 @@ text-action-search-text-box-clear =
     .title = Törlés
 text-action-highlight-selection =
     .label = Kijelölés kiemelése
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = Megjegyzés hozzáadása a kijelöléshez
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
@@ -84,5 +82,12 @@ text-action-copy-clean-link-to-highlight =
     .label = Tiszta hivatkozás másolása a kiemelésbe
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = Kiemelés eltávolítása
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = Összes kiemelés eltávolítása
+profile-window-menu-edit =
+    .label = Szerkesztés
+    .accesskey = e

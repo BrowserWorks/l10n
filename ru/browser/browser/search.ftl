@@ -13,7 +13,7 @@ opensearch-error-duplicate-desc = { -brand-short-name } не смог устан
 opensearch-error-format-title = Некорректный формат
 opensearch-error-format-desc = { -brand-short-name } не смог установить поисковую систему из: { $location-url }
 opensearch-error-download-title = Ошибка загрузки
-opensearch-error-download-desc = { -brand-short-name } не смог загрузить поисковый плагин с: { $location-url }
+opensearch-error-download-desc = { -brand-short-name } не смог скачать поисковый плагин с: { $location-url }
 
 ##
 
@@ -45,7 +45,7 @@ reset-search-settings-button = OK
 ## Variables
 ## $engineName (String) - the name of the search engine to install.
 
-install-search-engine = Добавить { $engineName } в качестве поисковой системы?
+install-search-engine = Добавить «{ $engineName }» в качестве поисковой системы?
 install-search-engine-add = Добавить
 install-search-engine-no = Нет
 

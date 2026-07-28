@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = Importer fra { $previou
 mr1-onboarding-theme-header = Du bestemmer
 mr1-onboarding-theme-subtitle = Gør { -brand-short-name } mere personlig med et tema.
 mr1-onboarding-theme-secondary-button-label = Ikke nu
-newtab-wallpaper-onboarding-title = Tilføj lidt farve
-newtab-wallpaper-onboarding-subtitle = Vælg en baggrund for at give siden Nyt faneblad et nyt udseende.
-newtab-wallpaper-onboarding-primary-button-label = Indstil baggrund
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Systemets tema
 mr1-onboarding-theme-label-light = Lyst
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = Mørkt
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Færdig
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Sæt animation på pause
+onboarding-animation-play-button =
+    .aria-label = Afspil animation
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -430,7 +436,7 @@ onboarding-horizontal-tabs-description =
 # Additional setup card for setting up aichatbot in the sidebar
 onboarding-genai-sidebar-title = Prøv en AI-chatbot i sidepanelet
 # Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
-onboarding-genai-sidebar-subtitle = Opsummer indhold på nettet, få nye ideer, skriv udkast - mens du browser. Vælg mellem forskellige udbydere. Skift når som helst. <a data-l10n-name="learn-more">Læs mere</a>
+onboarding-genai-sidebar-subtitle = Sammenfat indhold på nettet, få nye ideer, skriv udkast - mens du browser. Vælg mellem forskellige udbydere. Skift når som helst. <a data-l10n-name="learn-more">Læs mere</a>
 onboarding-genai-sidebar-primary-button = Vælg en chatbot
 onboarding-genai-sidebar-secondary-button = Afslut rundvisningen
 
@@ -448,10 +454,16 @@ onboarding-checklist-sign-up = Tilmeld dig eller log ind på din konto
 
 tab-groups-onboarding-feature-callout-title = Prøv fanebladsgrupper for at skabe mere orden og fokus
 tab-groups-onboarding-feature-callout-subtitle = Organiser dine faneblade ved at trække et faneblad hen oven på et andet for at skabe din første gruppe.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Find dine fanebladsgrupper i menuen List alle faneblade.
 tab-groups-onboarding-create-group-title-2 = Find dine fanebladsgrupper her
 tab-groups-onboarding-create-group-no-alltabs-button-title = Find dine grupper ved at søge efter dem i adressefeltet.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Når du lukker en fanebladsgruppe, kan du altid åbne den igen fra menuen List alle faneblade.
 tab-groups-onboarding-saved-groups-title-2 = Når du lukker en fanebladsgruppe, kan du når som helst genåbne den her.
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Find dine lukkede grupper ved at søge efter dem i adressefeltet.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = Åbn dine fanebladsgrupper igen fra menuen List alle faneblade.
 tab-groups-onboarding-session-restore-title = Genåbn dine fanebladsgrupper her.
 tab-groups-onboarding-dismiss = OK
 
@@ -474,3 +486,114 @@ dismiss-button-label = Afvis
 sync-to-mobile-button-label = Synkroniser til mobilen
 desktop-to-mobile-qr-code-alt =
     .aria-label = QR-kode til at hente { -brand-product-name } til mobilen
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Skal du opgradere til Windows 11?
+    Lad os sikkerhedskopiere dine { -brand-product-name }-data.
+create-backup-screen-1-subtitle = Beskyt automatisk dine adgangskoder, bogmærker og mere - det tager højst to minutter.
+create-backup-screen-1-flair = Anbefalet
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Læs mere</a>
+create-backup-screen-1-sync-label = Synkroniser med { -brand-product-name }
+create-backup-screen-1-sync-body = Sikkerhedskopier alle indloggede enheder
+create-backup-screen-1-backup-label = Sikkerhedskopier til din computer
+create-backup-screen-1-backup-body = Gemmes på din enhed eller OneDrive
+create-backup-select-tile-button-label = Vælg
+create-backup-back-button-label = Tilbage
+create-backup-show-fewer =
+    .label = Vis færre beskeder som denne
+create-backup-screen-2-title = Vælg, hvilke { -brand-product-name }-data, som skal sikkerhedskopieres
+create-backup-screen-2-subtitle = Det tager bare et minut. Dine data bliver sikkerhedskopieret en gang i døgnet.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Nem opsætning
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Bogmærker, historik, indstillinger med mere
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Inkluderer ikke adgangskoder og betalingsmetoder
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Ikke krypteret
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Alle data
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Inkluderer adgangskoder og betalingsmetoder
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Krypteret med en adgangskode
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Hvor vil du gemme din sikkerhedskopi?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Opret en adgangskode til din sikkerhedskopi
+create-backup-screen-3-subtitle = Kræves for at kryptere dine data. Gem den et sted, du kan huske.
+fx-backup-opt-in-header = Vælg filplacering
+fx-backup-opt-in-filepath-label = Vælg en placering, du planlægger at overføre til en ny enhed, som fx OneDrive.
+fx-backup-opt-in-create-password-label = Indtast adgangskode
+fx-backup-opt-in-confirm-btn-label = Fortsæt
+fx-backup-opt-in-cancel-btn-label = Tilbage
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Din sikkerhedskopi er planlagt
+fx-backup-confirmation-screen-close-button = Luk
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Inkluderer alle browsing-data
+fx-backup-confirmation-screen-all-data-item-text-2 = Gemt på din enhed
+fx-backup-confirmation-screen-all-data-item-text-3 = Krypteret og beskyttet af en adgangskode
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Bogmærker, historik, indstillinger med mere er inkluderet
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Gemt på din enhed
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Adgangskoder og betalingsmetoder er ikke inkluderet
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Gå til <a data-l10n-name="settings">Indstillinger</a> for at inkludere følsomme data.
+fx-backup-confirmation-screen-item-subtext-1 = Sikkerhedskopieringen starter om et par minutter og kører en gang i døgnet. Du kan se status for processen under <a data-l10n-name="settings">Indstillinger</a>.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } vil lede efter din sikkerhedskopi, hvis du behøver at installere forfra.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Gendan fra sikkerhedskopi
+restore-from-backup-title = Lad os få { -brand-short-name } til at se ud, som den plejer
+restore-from-backup-subtitle = Gendan din historik, dine bogmærker og andre data for at fortsætte, hvor du slap.
+restore-from-backup-secondary-button = Gendan ikke
+multiple-backups-info-tile = <strong>Flere sikkerhedskopier fundet.</strong> Den nyeste fil en valgt. Gendan andre profiler i <a data-l10n-name="settings-label">Indstillinger.</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = Så er vi tilbage! Dine { -brand-short-name }-data er blevet gendannet.
+restored-from-backup-success-with-checklist-subtitle = Vil du have din foretrukne, privatlivs-fokuserede browser et klik borte?
+restored-from-backup-success-no-checklist-subtitle = Du kan slå sikkerhedskopiering for denne enhed til i <a data-l10n-name="settings">Indstillinger</a>.
+restored-from-backup-success-with-checklist-primary-button = Gem og fortsæt
+restored-from-backup-success-with-checklist-secondary-button = Spring dette trin over
+restored-from-backup-success-no-checklist-primary-button = Fortsæt
+restored-from-backup-error-title = Hmm, der var et problem med din sikkerhedskopi.
+restored-from-backup-error-subtitle = Hvis du har en anden { -brand-short-name }-sikkerhedskopi, kan du prøve at gendanne fra den. <a data-l10n-name="restore-problems">Har du stadig problemer?</a>
+restored-from-backup-error-primary-button = Luk
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Tilpas din { -brand-short-name }-oplevelse
+onboarding-personalization-subtitle = Svar på nogle få spørgsmål, så vi kan anbefale funktioner og udvidelser for at gøre din oplevelse med { -brand-short-name } bedre.
+onboarding-personalization-use-case-title = Hvad skal du bruge { -brand-short-name } til?
+onboarding-personalization-use-case-personal-option = Personlig brug
+onboarding-personalization-use-case-school-option = Uddannelse
+onboarding-personalization-use-case-work-option = Arbejde
+onboarding-personalization-motivation-title = Hvilke funktioner i { -brand-short-name } er vigtigst for dig?
+onboarding-personalization-motivation-privacy-option = Privatliv og sikkerhed
+onboarding-personalization-motivation-productivity-option = Produktivitet
+onboarding-personalization-motivation-other-option = Andet
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Vi beskytter dine data og blokerer - helt automatisk - virksomheder i at overvåge dig.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Du er i sikre hænder
+onboarding-refresh-import-subtitle = Tag dine adgangskoder, bogmærker, historik med mere med dig.
+onboarding-refresh-import-title = Få { -brand-short-name } til at føles mere som hjemme
+onboarding-refresh-onboarding-addons-subtitle = Udvidelser er små apps, du kan bruge til at tilpasse { -brand-short-name } til dine behov. De kan sørge for, at dit privatliv er bedre beskyttet, gøre dig mere produktiv, ændre udseendet i { -brand-short-name } - og meget andet.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Giv din browsing et boost
+onboarding-refresh-sync-subtitle = Få adgang til bogmærker, adgangskoder og meget mere, overalt hvor du er logget ind på { -brand-short-name }. Desuden er dine data krypterede, så bare du kan se dem.
+onboarding-refresh-sync-title = Gå hvorhen du vil. Synkroniser overalt.
+onboarding-refresh-gratitude-subtitle = Tak for at du bruger { -brand-short-name }, den eneste store browser, der er støttet af en nonprofit-organisation. Med din hjælp gør vi internettet mere sikkert og tilgængeligt for alle.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } passer på dig

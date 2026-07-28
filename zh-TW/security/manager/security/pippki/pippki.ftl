@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = 檢視
 download-cert-view-text = 檢查憑證機構的憑證
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = 永久
 client-auth-cert-remember-temporarily =
     .label = 只有本次瀏覽階段
-client-auth-cert-remember-box =
-    .label = 記住此決定
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = 憑證備份密碼 (再輸入一次):
 set-password-reminder = 重要: 如果您忘了憑證備份密碼，將會無法回存備份。請多備一份到安全的地方。
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = 受保護的驗證
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = 請使用安全裝置（{ $tokenName }）進行驗證。驗證方式須依裝置而定（例如進行指紋辨識或輸入密碼）。
 
 ## Protected authentication alert
 

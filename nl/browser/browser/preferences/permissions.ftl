@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Toestaan
     .accesskey = T
+permissions-add =
+    .label = Toevoegen
+    .accesskey = T
 permissions-button-off =
     .label = Uitschakelen
     .accesskey = U
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Alle websites verwijderen
     .accesskey = A
+permissions-save-changes-2 =
+    .buttonlabelaccept = Wijzigingen opslaan
+    .buttonaccesskeyaccept = s
 permission-dialog =
     .buttonlabelaccept = Wijzigingen opslaan
     .buttonaccesskeyaccept = s
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = U kunt opgeven welke websites altijd of nooit toestemming hebben om cookies en websitegegevens te gebruiken. Typ het exacte adres van de website die u wilt beheren en klik vervolgens op Blokkeren, Toestaan voor sessie of Toestaan.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Uitzonderingen - Geschiedenis wissen bij afsluiten
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = U kunt opgeven welke websites hun gegevens behouden wanneer { -brand-short-name } geschiedenis bij afsluiten wist. Typ het exacte adres van de website die u wilt beheren en klik vervolgens op Toestaan.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = U kunt de Alleen-HTTPS-modus voor specifieke websites uitschakelen. { -brand-short-name } zal voor die websites niet proberen de verbinding naar veilige HTTPS te upgraden. Uitzonderingen zijn niet van toepassing op privévensters.
 permissions-exceptions-https-only-desc2 = U kunt de Alleen-HTTPS-modus voor specifieke websites uitschakelen. { -brand-short-name } zal voor die websites niet proberen de verbinding naar veilige HTTPS te upgraden.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Toegestane websites - pop-ups en doorleidingen van derden
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = U kunt opgeven welke websites pop-upvensters mogen openen en door frames van derden mogen worden doorgestuurd.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = De volgende websites hebben om toegang tot uw cam
 permissions-site-camera-disable-label =
     .label = Nieuwe verzoeken om toegang tot uw camera blokkeren
 permissions-site-camera-disable-desc = Dit voorkomt dat websites die hierboven niet worden vermeld om toestemming voor toegang tot uw camera vragen. Het blokkeren van toegang tot uw camera kan bepaalde functies van websites verstoren.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Instellingen - Apparaatapps en -services
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Deze websites hebben op dit apparaat toegang tot apps en services gevraagd. U kunt kiezen om dit voor websites toe te staan of te blokkeren.
+permissions-site-localhost-disable-label =
+    .label = Nieuwe aanvragen voor toegang tot apps en services op dit apparaat blokkeren
+permissions-site-localhost-disable-desc = Dit voorkomt dat websites, die hierboven niet worden vermeld, om toegang tot apps en services op dit apparaat vragen. Als u dit doet, kunnen sommige websitefuncties niet werken.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Instellingen - Lokale netwerkapparaten
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Deze websites hebben om toegang gevraagd tot apps en services op apparaten die zijn verbonden met uw wifi- of lokale netwerk. U kunt ervoor kiezen om dit voor websites toe te staan of te blokkeren.
+permissions-site-local-network-disable-label =
+    .label = Nieuwe verzoeken voor toegang tot apps en services blokkeren op apparaten die zijn verbonden met uw wifi- of lokale netwerk.
+permissions-site-local-network-disable-desc = Dit voorkomt dat websites, die hierboven niet worden vermeld, om toegang tot apps en services vragen op apparaten die zijn verbonden met uw wifi- of lokale netwerk. Als u dit doet, kunnen sommige websitefuncties niet werken.
 
 ## Site Permissions - Microphone
 

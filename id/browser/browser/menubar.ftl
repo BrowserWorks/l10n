@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Pengaturan
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Pengaturan…
+menu-application-set-as-default =
+    .label = Atur { -brand-shorter-name } sebagai Peramban Baku
 menu-application-services =
     .label = Layanan
 menu-application-hide-this =
@@ -97,6 +90,9 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Bagikan
     .accesskey = B
+menu-file-share-qrcode =
+    .label = Buat Kode QR…
+    .accesskey = Q
 menu-file-print-setup =
     .label = Tata Laman…
     .accesskey = n
@@ -145,8 +141,6 @@ menu-view-history-button =
     .label = Riwayat
 menu-view-synced-tabs-sidebar =
     .label = Tab yang Disinkronkan
-menu-view-megalist-sidebar =
-    .label = Sandi
 menu-view-full-zoom =
     .label = Perbesaran
     .accesskey = b
@@ -262,6 +256,13 @@ menu-profiles-manage-profiles =
     .label = Kelola profil
 menu-profiles-new-profile =
     .label = Profil baru
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (kini)
+menu-profiles-menu =
+    .label = Profil
+    .accesskey = P
 
 ## Tools Menu
 
@@ -271,6 +272,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Unduhan
     .accesskey = U
+menu-tools-extensions-and-themes =
+    .label = Ekstensi dan Tema
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Pengaya dan Tema
     .accesskey = P

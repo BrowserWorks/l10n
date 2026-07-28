@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = Don’t update
     .accesskey = D
+primary-password-prompt-message = Please enter your Primary Password.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = No username
-password-manager-toggle-password =
-    .label = Show password
-    .accesskey = h
 password-manager-confirm-password-change = Confirm Password Change
 password-manager-select-username = Select which login to update:

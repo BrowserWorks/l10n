@@ -25,6 +25,8 @@ neterror-override-exception-button = Chấp nhận rủi ro và tiếp tục
 neterror-pref-reset-button = Khôi phục cài đặt mặc định
 neterror-return-to-previous-page-button = Quay lại
 neterror-return-to-previous-page-recommended-button = Quay lại (Khuyến nghị)
+neterror-try-again-button-2 = Thử lại
+    .accesskey = T
 neterror-try-again-button = Thử lại
 neterror-add-exception-button = Luôn luôn tiếp tục cho trang web này
 neterror-settings-button = Thay đổi cài đặt DNS
@@ -46,6 +48,10 @@ neterror-load-error-firewall = Nếu máy tính hoặc mạng của bạn đư�
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = Nếu bạn đang cố tải một trang mạng cục bộ, vui lòng kiểm tra xem { -brand-short-name } đã được cấp quyền Mạng cục bộ trong cài đặt Quyền riêng tư & bảo mật trên macOS hay chưa.
 neterror-http-error-page = Kiểm tra để đảm bảo bạn đã gõ địa chỉ trang web một cách chính xác.
+neterror-http-empty-response = Hãy kiểm tra lại xem bạn đã nhập đúng địa chỉ trang web chưa và thử lại sau vài phút.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } đã trả về một trang trống.
 neterror-captive-portal = Bạn cần đăng nhập vào mạng trước khi có thể truy cập Internet.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,6 +60,8 @@ neterror-dns-not-found-hint-header = <strong>Nếu bạn đã nhập đúng đ�
 neterror-dns-not-found-hint-try-again = Thử lại sau
 neterror-dns-not-found-hint-check-network = Kiểm tra kết nối mạng của bạn
 neterror-dns-not-found-hint-firewall = Kiểm tra xem { -brand-short-name } có quyền truy cập web hay không (bạn có thể được kết nối nhưng có tường lửa)
+neterror-dns-not-found-hint-check-network-2 = Kiểm tra kết nối mạng của bạn.
+neterror-dns-not-found-hint-firewall-2 = Kiểm tra xem { -brand-short-name } có quyền truy cập web hay không (bạn có thể được kết nối nhưng có tường lửa).
 neterror-dns-not-found-offline-hint-header = <strong>Bạn có thể làm gì về điều đó?</strong>
 neterror-dns-not-found-offline-hint-different-device = Hãy thử kết nối trên một thiết bị khác.
 neterror-dns-not-found-offline-hint-modem = Kiểm tra modem hoặc bộ định tuyến của bạn.
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = Sự cố không xác định.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } không thể bảo vệ yêu cầu của bạn về địa chỉ trang web này thông qua trình phân giải DNS đáng tin cậy của chúng tôi. Đây là lý do tại sao:
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } không thể bảo vệ yêu cầu của bạn về địa chỉ trang web này thông qua nhà cung cấp DNS an toàn của chúng tôi. Đây là lý do tại sao:
 neterror-dns-not-found-native-fallback-heuristic = DNS qua HTTPS đã bị tắt trên mạng của bạn.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } không thể kết nối với { $trrDomain }.
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } kh
 
 neterror-file-not-found-filename = Kiểm tra tên xem có lỗi gõ HOA-thường hay lỗi nào khác không.
 neterror-file-not-found-moved = Kiểm tra xem tập tin có bị di chuyển, đổi tên hay bị xóa không.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } không thể tìm thấy tập tin tại <strong>{ $path }</strong>. Nó không tồn tại, hoặc đường dẫn không chính xác.
+neterror-file-not-found-what-can-you-do = Nếu bạn nhập địa chỉ theo cách thủ công, hãy kiểm tra xem có lỗi viết hoa hoặc lỗi chính tả nào trong tên tập tin hoặc đường dẫn hay không. Nếu bạn đã theo một dấu trang hoặc liên kết đã lưu, tập tin có thể đã bị di chuyển, đổi tên hoặc xoá kể từ khi được lưu. Hãy thử tìm tập tin đó bằng trình quản lý tập tin hoặc tìm kiếm gần đây.
 neterror-access-denied = Nó có thể đã bị xóa, chuyển đi, hay quyền truy cập tập tin đã bị chặn.
 neterror-unknown-protocol = Có lẽ bạn cần phải cài đặt phần mềm khác mới mở được.
 neterror-redirect-loop = Vấn đề này thỉnh thoảng có thể xảy ra do bạn vô hiệu hóa hoặc từ chối cookie.
+neterror-unknown-socket-type-client-config = Nguyên nhân có thể là do lỗi cấu hình trên client của bạn.
 neterror-unknown-socket-type-psm-installed = Kiểm tra để chắc chắn rằng hệ thống của bạn có Trình quản lí Bảo mật Cá nhân đã được cài đặt.
 neterror-unknown-socket-type-server-config = Điều này có thể là do cấu hình không chuẩn trên máy chủ.
 neterror-not-cached-intro = Tài liệu được yêu cầu không có sẵn trong bộ đệm của { -brand-short-name }.
@@ -168,3 +180,42 @@ certerror-coep-learn-more = Tìm hiểu thêm về Cross Origin Embedder Policie
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Mã lỗi: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Có vẻ như đã xảy ra sự cố với kết nối Internet của bạn
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } không thể tạo kết nối an toàn tới máy chủ tại { $hostname }.
+fp-neterror-offline-intro = { -brand-short-name } không thể kết nối đến máy chủ tại <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = { -brand-short-name } không thể kết nối đến máy chủ tại <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = Máy chủ tại <strong>{ $hostname }</strong> mất quá nhiều thời gian để phản hồi.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = Máy chủ tại <strong>{ $hostname }</strong> đã trả về lỗi: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> gửi lại header có các ký tự trống không được phép theo tiêu chuẩn bảo mật web.
+fp-neterror-content-encoding-intro = Không thể hiển thị trang bạn muốn xem vì nó dùng một dạng thức nén bất hợp lệ hoặc không được hỗ trợ.
+fp-neterror-coop-coep-intro = { -brand-short-name } không tải trang này vì có vẻ như cấu hình bảo mật không khớp với trang trước.
+fp-neterror-blocked-by-policy-intro = Tổ chức của bạn đã chặn quyền truy cập vào trang web này.
+fp-neterror-http-auth-disabled-intro = Ai đó giả vờ là trang web có thể cố gắng đánh cắp những thứ như tên người dùng, mật khẩu hoặc email của bạn.
+fp-neterror-http-auth-disabled-secure-connection = Trang web này yêu cầu kết nối bảo mật và bạn không thể thêm ngoại lệ để truy cập.
+fp-neterror-why-did-this-happen = Tại sao điều này xảy ra?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Có vẻ như trang web này đang sử dụng phần mềm cũ có vấn đề bảo mật đã biết.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } không tin tưởng { $hostname } vì kết nối không an toàn.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Hãy chắc chắn rằng bạn đang sử dụng phiên bản mới nhất của { -brand-short-name }. Đi đến Trợ giúp > Về { -brand-short-name } trong menu. Nếu bạn đang sử dụng phiên bản mới nhất của { -brand-short-name }, vấn đề có thể nằm ở chính trang web đó.
+fp-neterror-offline-what-can-you-do-body = Hãy thử kết nối trên một thiết bị khác. Kiểm tra modem hoặc bộ định tuyến của bạn. Ngắt kết nối và kết nối lại với Wi-Fi.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Hãy thử đổi URL sang HTTPS. Nhưng có khả năng vấn đề nằm ở chính trang web đó.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Đôi khi các trang web thiết lập các biện pháp bảo vệ cho chính họ từ các tương tác không mong muốn với các trang web khác.
+fp-learn-more-about-https-connections = Tìm hiểu về kết nối HTTPS
+fp-neterror-vpn-error-title = Không thể kết nối tới VPN
+fp-neterror-vpn-error-description = Hãy thử lại sau vài phút.
+fp-neterror-denied-port-access = Địa chỉ này dùng một cổng mạng vốn thường được dùng cho mục đích khác chứ không phải duyệt Web. { -brand-short-name } đã hủy bỏ yêu cầu này để bảo vệ bạn.

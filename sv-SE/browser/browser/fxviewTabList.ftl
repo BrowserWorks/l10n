@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Flytta till slutet
     .accesskey = s
 fxviewtabrow-move-tab-window = Flytta till nytt fönster
     .accesskey = n
+fxviewtabrow-send-to-device = Skicka till enhet
+    .accesskey = S
+fxviewtabrow-send-to-mobile = Skicka till mobil
+    .accesskey = S
 fxviewtabrow-send-tab = Skicka flik till enhet
     .accesskey = f
 fxviewtabrow-pin-tab = Fäst flik
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Ljud på för flik
 fxviewtabrow-options-menu-button =
     .title = Alternativ för { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Ljud av för flik
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Ljud på för flik
+fxviewtabrow-send-to-mobile-connect-device = Anslut en enhet för att skicka flikar
+fxviewtabrow-send-to-mobile-device-missing2 = Hittar du inte din enhet?
+fxviewtabrow-send-to-mobile-not-verified = Konto inte verifierat
+fxviewtabrow-send-to-mobile-verify-account = Verifiera ditt konto
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Logga in för att skicka flikar
+fxviewtabrow-send-to-mobile-turn-on-sync = Aktivera synkronisering för att skicka flikar

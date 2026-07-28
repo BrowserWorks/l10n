@@ -26,8 +26,8 @@ about-private-browsing-hide-activity = Скрывайте свою активн�
 about-private-browsing-get-privacy = Получите защиту приватности в любой части Интернета
 about-private-browsing-hide-activity-1 = Скрывайте активность и местоположение в любой части Интернета с помощью { -mozilla-vpn-brand-name }. Одним щелчком мыши создавайте безопасное соединение даже при использовании общедоступной сети Wi-Fi.
 about-private-browsing-prominent-cta = Сохраняйте приватность с { -mozilla-vpn-brand-name }
-about-private-browsing-focus-promo-cta = Загрузить { -focus-brand-name }
-about-private-browsing-focus-promo-header = { -focus-brand-name }: Приватный просмотр сети на лету
+about-private-browsing-focus-promo-cta = Скачивание { -focus-brand-name }
+about-private-browsing-focus-promo-header = { -focus-brand-name }: приватный просмотр сети на лету
 about-private-browsing-focus-promo-text = Наше специальное мобильное приложение для приватного просмотра каждый раз удаляет вашу историю и куки.
 
 ## The following strings will be used for experiments in Fx99 and Fx100
@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Разрешите { -bran
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } позаботится об уведомлениях о куки за вас
 about-private-browsing-cookie-banners-promo-body = Теперь мы автоматически отказываемся от многих уведомлениях о куки, чтобы вас меньше отслеживали и вы могли вернуться к просмотру, не отвлекаясь.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Не оставлять следов на этом устройстве
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } удаляет ваши куки, историю и данные сайтов, когда вы закрываете все свои приватные окна.
 about-private-browsing-felt-privacy-v1-info-link = Кто может видеть мою активность?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Закрытие всех ваших приватных окон удаляет ваши куки, историю и данные сайтов.
+about-private-browsing-nova-info-link = Кто ещё может видеть мою активность?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Вас не записывают
+about-private-browsing-nova-info-subheader = Мы удалим все поисковые запросы и входы, когда вы закроете это окно. Встроенная защита { -brand-short-name } тоже включена, например, блокировка трекеров.

@@ -281,7 +281,7 @@ about-webrtc-jitter-label = 抖動 { $jitter }
 # ICE candidates arriving after the remote answer arrives are considered trickled
 # (an attribute of an ICE candidate). These are highlighted in the ICE stats
 # table with light blue background.
-about-webrtc-trickle-caption-msg = 使用 藍色 強調太晚抵達的候選（接聽後才抵達）
+about-webrtc-trickle-caption-msg = 使用藍色強調太晚抵達的候選（接聽後才抵達）
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -312,6 +312,3 @@ about-webrtc-hide-msg-sdp = 隱藏 SDP
 about-webrtc-media-context-show-msg = 顯示媒體內容環境
 about-webrtc-media-context-hide-msg = 隱藏媒體內容環境
 about-webrtc-media-context-heading = 媒體內容環境
-
-##
-

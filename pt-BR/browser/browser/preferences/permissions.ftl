@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Permitir
     .accesskey = P
+permissions-add =
+    .label = Adicionar
+    .accesskey = A
 permissions-button-off =
     .label = Desativar
     .accesskey = D
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Remover todos os sites
     .accesskey = t
+permissions-save-changes-2 =
+    .buttonlabelaccept = Salvar alterações
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = Salvar alterações
     .buttonaccesskeyaccept = S
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Você pode especificar alguns sites para sempre ou nunca ter permissão para armazenar cookies e dados neste computador. Digite o endereço exato de um site e clique em Permitir, Bloquear ou Permitir nesta sessão.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Exceções - Limpar histórico ao fechar
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Você pode especificar quais sites mantêm seus dados quando o { -brand-short-name } limpa o histórico ao fechar. Digite o endereço exato do site que você quer configurar e clique em Permitir.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Você pode desativar o modo somente HTTPS em sites específicos. O { -brand-short-name } não tenta mudar a conexão para HTTPS seguro nesses sites. As exceções não se aplicam em janelas privativas.
 permissions-exceptions-https-only-desc2 = Você pode desativar o modo somente HTTPS em sites específicos. O { -brand-short-name } não tenta mudar a conexão para HTTPS seguro nesses sites.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Sites permitidos - Abertura de janelas e redirecionamento de terceiros
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Você pode especificar quais sites têm permissão para abrir janelas e ser redirecionados por frames de terceiros.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Os seguintes sites solicitaram acesso à sua câm
 permissions-site-camera-disable-label =
     .label = Bloquear novas solicitações de permissão para acessar sua câmera
 permissions-site-camera-disable-desc = Isso impede que qualquer site solicite nova permissão para acessar sua câmera. Bloquear o acesso à sua câmera pode atrapalhar funcionalidades de alguns sites.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Configurações - Aplicativos e serviços do dispositivo
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Estes sites solicitaram acesso a aplicativos e serviços neste dispositivo. Você pode optar por permitir ou bloquear que sites façam isso.
+permissions-site-localhost-disable-label =
+    .label = Bloquear novas solicitações de acesso a aplicativos e serviços neste dispositivo
+permissions-site-localhost-disable-desc = Isto impede que qualquer site que não esteja na lista acima solicite acesso a aplicativos e serviços neste dispositivo. Fazer isso pode atrapalhar funcionalidades de alguns sites.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Configurações - Dispositivos de rede local
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Estes sites solicitaram acesso a aplicativos e serviços em dispositivos conectados à sua rede local ou WiFi. Você pode optar por permitir ou bloquear que sites façam isso.
+permissions-site-local-network-disable-label =
+    .label = Bloquear novas solicitações de acesso a aplicativos e serviços em dispositivos conectados à sua rede local ou WiFi.
+permissions-site-local-network-disable-desc = Isto impede que qualquer site que não esteja na lista acima solicite acesso a aplicativos e serviços em dispositivos conectados ao seu WiFi ou dispositivos na rede local. Fazer isso pode atrapalhar funcionalidades de alguns sites.
 
 ## Site Permissions - Microphone
 

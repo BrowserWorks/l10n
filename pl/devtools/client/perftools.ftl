@@ -33,11 +33,33 @@ perftools-description-local-build =
     Jeśli profilowana jest samodzielnie skompilowana wersja na tym komputerze,
     dodaj objdir swojej kompilacji do poniższej listy, aby można było wyszukać
     informacje o symbolach.
+perftools-pick-local-build-directory = Wybierz katalog budowania
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Przedział próbkowania:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -149,14 +171,17 @@ perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Ustawienie do badania błędów graficznych w { -brand-shorter-name(case: "loc") }.
 perftools-presets-media-label = Multimedia
 perftools-presets-media-description2 = Ustawienie do badania błędów dźwięku i obrazu w { -brand-shorter-name(case: "loc") }.
+perftools-presets-ml-label = Uczenie maszynowe
+perftools-presets-ml-description2 = Ustawienie do badania błędów uczenia maszynowego w { -brand-shorter-name(case: "loc") }.
 perftools-presets-networking-label = Sieć
 perftools-presets-networking-description = Ustawienie do badania błędów sieciowych w { -brand-shorter-name(case: "loc") }.
+perftools-presets-networking-with-logs-label = Sieć z dziennikami
+perftools-presets-networking-with-logs-description = Ustawienie do badania błędów sieciowych w { -brand-shorter-name(case: "loc") }, wraz z dziennikami sieciowymi. Dzienniki te mogą zawierać prywatne informacje, takie jak adresy odwiedzanych stron.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energia
 perftools-presets-power-description = Ustawienie do badania błędów użycia energii w { -brand-shorter-name(case: "loc") } o niskim wpływie na wydajność.
 perftools-presets-debug-label = Debugowanie
 perftools-presets-debug-description = Ustawienie do debugowania w { -brand-shorter-name(case: "loc") }. Wysoki wpływ na wydajność. Nie należy używać do pracy nad wydajnością, tylko do zrozumienia zachowania przeglądarki.
+perftools-presets-web-compat-label = Zgodność w Internecie
+perftools-presets-web-compat-description = Zalecane ustawienie do debugowania problemów ze zgodnością stron internetowych, a nie do śledzenia wydajności.
 perftools-presets-custom-label = Inne
-
-##
-

@@ -8,6 +8,9 @@ profiles-create = أنشئ لاحة جديدة
 profiles-restart-title = أعِد التشغيل
 profiles-restart-in-safe-mode = أعِد التشغيل مع تعطيل الإضافات…
 profiles-restart-normal = أعد التشغيل في الوضع العادي…
+profiles-flush-fail-title = لم تُحفظ التغييرات
+profiles-flush-failed = حدث خطأ غير متوقع حال دون حفظ التغييرات التي أجريتها.
+profiles-flush-restart-button = أعِد تشغيل { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = ملف شخصي: { $name }
@@ -22,10 +25,12 @@ profiles-rootdir = المجلد الجذر
 profiles-localdir = الملجد المحلي
 profiles-current-profile = هذا الملف الشخصي مستخدم و لا يمكن حذفه.
 profiles-in-use-profile = ملف الإعدادات قيد الاستخدام في تطبيق آخر و لا يمكن حذفه.
+profiles-cannot-delete-profile = لا يمكن حذف ملف شخصي مرتبط بملفات شخصية أخرى.
 profiles-rename = غيّر الاسم
 profiles-remove = أزِل
 profiles-set-as-default = اجعله الملف الشخصي المبدئي
 profiles-launch-profile = ابدأ الملف الشخصي في متصفح جديد
+profiles-cannot-set-as-default-message = لا يمكن تغيير الملف الشخصي المبدئي ل { -brand-short-name }.
 profiles-yes = نعم
 profiles-no = لا
 profiles-rename-profile-title = غيّر اسم الملف الشخصي
@@ -41,8 +46,8 @@ profiles-delete-profile-title = احذف الملف الشخصي
 #   $dir (String) - Path to be displayed
 profiles-delete-profile-confirm =
     حذف ملف شخصي سيزيله من قائمة الملفات الشخصية المتوفرة ولا يمكن التراجع عنه.
-    قد تختار أيضا حذف بيانات الملف الشخصي، بما في ذلك إعداداتك، شهاداتك وغيرها من البيانات الخاصة بالمستخدم. هذا الخيار سيحذف المجلّد ”{ $dir }“ ولا يمكن التراجع عنه.
-    هل تريد حذف بيانات الملف الشخصي؟
+    قد تختار أيضًا حذف بيانات الملف الشخصي، بما في ذلك إعداداتك، شهاداتك وغيرها من البيانات الخاصة بالمستخدم. هذا الخيار سيحذف المجلّد ”{ $dir }“ ولا يمكن التراجع عنه.
+    أتريد حذف بيانات الملف الشخصي؟
 profiles-delete-files = احذف الملفّات
 profiles-dont-delete-files = لا تحذف الملفّات
 profiles-delete-profile-failed-title = خطأ

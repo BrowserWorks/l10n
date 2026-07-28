@@ -11,6 +11,15 @@
 unified-extensions-header-title = Erweiterungen
 unified-extensions-manage-extensions =
     .label = Erweiterungen verwalten
+unified-extensions-discover-extensions =
+    .label = Erweiterungen entdecken
+unified-extensions-empty-reason-private-browsing-not-allowed = Sie haben Erweiterungen installiert, die aber in privaten Fenstern nicht aktiviert sind
+unified-extensions-empty-reason-extension-not-enabled = Sie haben Erweiterungen installiert, aber nicht aktiviert
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Verbessern Sie Ihr Surferlebnis mit Erweiterungen
+unified-extensions-empty-content-explain-enable2 = Wählen Sie „{ unified-extensions-manage-extensions.label }“, um sie in den Einstellungen zu aktivieren.
+unified-extensions-empty-content-explain-manage2 = Wählen Sie "{ unified-extensions-manage-extensions.label }", um diese in den Einstellungen zu verwalten.
+unified-extensions-empty-content-explain-extensions-onboarding = Passen Sie { -brand-short-name } an, indem Sie sein Aussehen und seine Leistung ändern oder Ihre Privatsphäre und Sicherheit verbessern können.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Menü für { $extensionName } öffnen
 unified-extensions-item-message-manage = Erweiterung verwalten
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } ist eingeschränkt. Die Verwendung kann riskant sein.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } verstößt gegen die Richtlinien von BrowserWorks. Die Nutzung kann riskant sein.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = Weitere Informationen
 unified-extensions-mb-about-addons-link = Erweiterungs-Einstellungen ansehen
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } deaktiviert
+    .message =
+        Diese Erweiterung ist eingeschränkt und wurde deaktiviert.
+        Sie können sie in den Einstellungen aktivieren, dies kann aber riskant sein.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } deaktiviert
     .message =
@@ -63,6 +82,15 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } deaktiviert
     .message = Diese Erweiterung verstößt gegen BrowserWorkss Richtlinien und wurde deaktiviert.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+            [one] { $extensionsCount } Erweiterung deaktiviert
+           *[other] { $extensionsCount } Erweiterungen deaktiviert
+        }
+    .message = Diese Erweiterung ist eingeschränkt und wurde deaktiviert. Sie können sie in den Einstellungen aktivieren, dies kann aber riskant sein.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -81,3 +109,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[other] { $extensionsCount } Erweiterungen wurden deaktiviert
         }
     .message = Einige Ihrer Erweiterungen wurden aufgrund von Verstößen gegen BrowserWorkss Richtlinien deaktiviert.
+unified-extensions-notice-safe-mode =
+    .message = Alle Erweiterungen wurden durch den Fehlerbehebungsmodus deaktiviert.

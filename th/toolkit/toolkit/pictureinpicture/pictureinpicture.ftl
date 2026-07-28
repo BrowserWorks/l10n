@@ -2,11 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-pictureinpicture-player-title = ภาพที่เล่นควบคู่
-
-## Variables:
-##   $shortcut (String) - Keyboard shortcut to execute the command.
-
+pictureinpicture-player-title = ภาพซ้อนภาพ
 
 ## Note that this uses .tooltip rather than the standard '.title'
 ## or '.tooltiptext' -  but it has the same effect. Code in the

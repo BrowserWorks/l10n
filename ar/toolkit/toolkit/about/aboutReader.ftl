@@ -34,7 +34,7 @@ about-reader-estimated-read-time =
         [zero] { $range } دقيقة
         [one] { $range } دقيقة
         [two] { $range } دقيقة
-        [few] { $range } دقيقة
+        [few] { $range } دقائق
         [many] { $range } دقيقة
        *[other] { $range } دقيقة
     }
@@ -78,16 +78,6 @@ about-reader-customtheme-tab = مخصّص
 ## The .title element is used to make the editing functionality
 ## clear and give context for screen reader users.
 
-about-reader-custom-colors-foreground = نص
-    .title = حرّر اللون
-about-reader-custom-colors-background = الخلفية
-    .title = حرّر اللون
-about-reader-custom-colors-unvisited-links = الروابط غير المزارة
-    .title = حرّر اللون
-about-reader-custom-colors-visited-links = الروابط المزارة
-    .title = حرّر اللون
-about-reader-custom-colors-selection-highlight = مبرز للقراءة بصوت عالٍ
-    .title = حرّر اللون
 about-reader-reset-button = صفّر الإعداد المبدئي
 about-reader-custom-colors-foreground2 =
     .label = نص
@@ -133,3 +123,5 @@ about-reader-text-alignment-center =
     .title = حاذِ النص للمنتصف
 about-reader-text-alignment-right =
     .title = حاذِ النص لليمين
+about-reader-text-alignment-justify =
+    .title = ساوِ النص

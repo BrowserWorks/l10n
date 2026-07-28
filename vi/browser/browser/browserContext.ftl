@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Mở liên kết trong thẻ mới
     .accesskey = T
+main-context-menu-open-link-split-view =
+    .label = Mở liên kết trong chế độ chia cửa sổ
+    .accesskey = M
 main-context-menu-open-link-container-tab =
     .label = Mở liên kết trong thẻ ngăn chứa mới
     .accesskey = w
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Sao chép liên kết sạch
     .accesskey = u
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Sao chép liên kết (không tham số theo dõi)
-    .accesskey = y
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Ẩn điều khiển
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Toàn màn hình
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Xem mô tả
     .accesskey = D
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Tìm kiếm hình ảnh với { $engine }
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = Lưu video thành…
     .accesskey = v
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Gửi âm thanh qua email…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = Gửi đến thiết bị
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = Gửi tới điện thoại
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = Đăng nhập để gửi thẻ
+main-context-menu-send-to-mobile-enable-sync2 = Bật đồng bộ hoá để gửi một thẻ
+main-context-menu-send-to-mobile-connect-phone2 = Kết nối điện thoại của bạn
+main-context-menu-send-to-mobile-device-missing2 = Không thấy thiết bị của bạn?
+main-context-menu-send-to-mobile-sign-in-from-link = Đăng nhập để gửi liên kết
+main-context-menu-send-to-mobile-sign-in-from-page = Đăng nhập để gửi trang
+main-context-menu-send-to-mobile-enable-sync3 = Bật đồng bộ hóa để gửi thẻ
+main-context-menu-send-to-mobile-enable-sync-from-link = Bật đồng bộ hóa để gửi liên kết
+main-context-menu-send-to-mobile-enable-sync-from-page = Bật đồng bộ hóa để gửi trang
+main-context-menu-send-to-mobile-connect-phone3 = Kết nối với thiết bị khác để gửi thẻ
+main-context-menu-send-to-mobile-connect-phone-from-link = Kết nối với thiết bị khác để gửi liên kết
+main-context-menu-send-to-mobile-connect-phone-from-page = Kết nối với thiết bị khác để gửi trang
 main-context-menu-save-to-pocket =
     .label = Lưu trang vào { -pocket-brand-name }
     .accesskey = k
@@ -329,6 +350,9 @@ main-context-menu-add-engine =
     .accesskey = S
 main-context-menu-link-send-to-device =
     .label = Gửi đường dẫn tới thiết bị
+    .accesskey = n
+main-context-menu-link-send-to-mobile =
+    .label = Gửi liên kết tới điện thoại
     .accesskey = n
 main-context-menu-frame =
     .label = Khung này
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Hiển thị mật khẩu
     .accesskey = v
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Mới
+main-context-menu-pdfjs-copy-page =
+    .label = Sao chép trang
+main-context-menu-pdfjs-cut-page =
+    .label = Cắt trang
+main-context-menu-pdfjs-delete-page =
+    .label = Xoá trang
+main-context-menu-pdfjs-save-page =
+    .label = Lưu phần được chọn thành…

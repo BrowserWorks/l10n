@@ -22,7 +22,7 @@ webext-perms-description-geolocation = معرفة مكانك
 webext-perms-description-history = الوصول إلى تأريخ التصفح
 webext-perms-description-management = مراقبة استخدام الامتدادات وإدارة السمات
 webext-perms-description-nativeMessaging = تبادل الرسائل مع برامج أخرى غير { -brand-short-name }
-webext-perms-description-notifications = عرض التنبيهات
+webext-perms-description-notifications = عرض الإشعارات إليك
 webext-perms-description-pkcs11 = توفر خدمات استيثاق معمّاة
 webext-perms-description-privacy = قراءة و تعديل إعدادات الخصوصية
 webext-perms-description-proxy = التحكم في إعدادات وسيط المتصفح
@@ -31,7 +31,7 @@ webext-perms-description-tabs = الوصول إلى ألسنة المتصفح
 webext-perms-description-tabHide = إخفاء و إظهار ألسنة المتصفح
 webext-perms-description-topSites = الوصول إلى تأريخ التصفح
 webext-perms-description-trialML = تنزيل نماذج الذكاء الاصطناعي وتشغيلها على جهازك
-webext-perms-description-userScripts = السماح لسكربتات الأطراف الثالثة غير الموثوقة بالوصول إلى بياناتك
+webext-perms-description-userScripts = اسمح لسكربتات الأطراف الثالثة غير الموثوقة بالوصول إلى بياناتك
 webext-perms-description-webNavigation = الوصول إلى نشاط المتصفح أثناء التنقل
 
 ## The userScripts permission includes an additional explanation that is
@@ -46,6 +46,30 @@ webext-perms-extra-warning-userScripts-short = قد تشكل السكربتات 
 ##
 ## This is used when the data collection permissions are required.
 
+webext-perms-description-data-short-authenticationInfo = معلومات الاستيثاق
+webext-perms-description-data-short-bookmarksInfo = العلامات
+webext-perms-description-data-short-browsingActivity = نشاط التصفح
+webext-perms-description-data-short-financialAndPaymentInfo = المعلومات المالية ومعلومات الدفع
+webext-perms-description-data-short-healthInfo = المعلومات الصحية
+webext-perms-description-data-short-locationInfo = الموقع الجغرافي
+webext-perms-description-data-short-personalCommunications = الاتصالات الشخصية
+webext-perms-description-data-short-personallyIdentifyingInfo = معلومات التعريف الشخصية
+webext-perms-description-data-short-searchTerms = مصطلحات البحث
+webext-perms-description-data-short-technicalAndInteraction = البيانات التقنية والتفاعلية
+webext-perms-description-data-short-websiteActivity = نشاط الموقع
+webext-perms-description-data-short-websiteContent = محتوى الموقع
 
 ## Long form to be used in `about:addons` when these data collection permissions are optional.
 
+webext-perms-description-data-long-authenticationInfo = شارك بيانات الاستيثاق مع مطوِّر الامتداد
+webext-perms-description-data-long-bookmarksInfo = شارك معلومات العلامات مع مطوِّر الامتداد
+webext-perms-description-data-long-browsingActivity = شارك نشاط التصفح مع مطوِّر الامتداد
+webext-perms-description-data-long-financialAndPaymentInfo = شارك المعلومات المالية ومعلومات الدفع مع مطوِّر الامتداد
+webext-perms-description-data-long-healthInfo = شارك معلوماتك الصحية مع مطوِّر الامتداد
+webext-perms-description-data-long-locationInfo = شارك معلومات الموقع الجغرافي مع مطوِّر الامتداد
+webext-perms-description-data-long-personalCommunications = شارك الاتصالات الشخصية مع مطوِّر الامتداد
+webext-perms-description-data-long-personallyIdentifyingInfo = شارك معلومات التعريف الشخصية مع مطوِّر الامتداد
+webext-perms-description-data-long-searchTerms = شارك مصطلحات البحث مع مطوِّر الامتداد
+webext-perms-description-data-long-technicalAndInteraction = شارك البيانات التقنية والتفاعلية مع مطوِّر الامتدادة
+webext-perms-description-data-long-websiteActivity = شارك نشاط التصفح مع مطوِّر الامتداد
+webext-perms-description-data-long-websiteContent = شارك محتوى الموقع الإلكتروني مع مطوِّر الامتداد

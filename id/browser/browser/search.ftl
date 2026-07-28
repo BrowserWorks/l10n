@@ -38,6 +38,8 @@ remove-search-engine-button = Oke
 ## Variables
 ## $newEngine (String) - the name of the new default search engine.
 
+reset-search-settings-message = Karena masalah teknis, mesin pencari baku Anda telah diubah kembali menjadi { $newEngine }. Untuk mengubah mesin pencari baku, buka pengaturan.
+reset-search-settings-button = OKE
 
 ## Infobar shown when user is prompted to install search engine.
 ## Variables
@@ -52,14 +54,50 @@ install-search-engine-no = Tidak
 add-engine-window =
     .title = Tambah Mesin Pencari
     .style = min-width: 32em;
+edit-engine-window =
+    .title = Sunting Mesin Pencari
+    .style = min-width: 32em;
 add-engine-button = Tambahkan Mesin Khusus
 add-engine-name = Nama mesin pencari
+add-engine-url2 = URL dengan %s sebagai pengganti istilah pencarian
+add-engine-keyword2 = Kata kunci (opsional)
+# POST and GET refer to the HTTP methods.
+add-engine-post-data = POST data dengan %s sebagai pengganti istilah pencarian (biarkan kosong untuk GET)
+add-engine-suggest-url = URL saran dengan %s sebagai pengganti istilah pencarian (opsional)
 
 ## The following placeholders are shown in the inputs when adding a new engine.
 
+add-engine-name-placeholder =
+    .placeholder = mis., BrowserWorks Developer Network
+add-engine-url-placeholder =
+    .placeholder = mis., https://developer.mozilla.com/search?q=%s
+add-engine-keyword-placeholder =
+    .placeholder = mis., @mdn
 
 ## The following strings are used as error messages.
 
+add-engine-keyword-exists = Kata kunci tersebut sudah digunakan. Coba yang lain.
+add-engine-name-exists = Nama tersebut sudah digunakan. Silakan pilih yang lain.
+add-engine-no-name = Tambahkan nama.
+add-engine-no-url = Masukkan URL.
+add-engine-invalid-url = URL tersebut tampaknya salah. Silakan periksa dan coba lagi.
+add-engine-invalid-protocol = URL tersebut tampaknya salah. Gunakan URL yang diawali dengan http atau https.
+# This error is shown when the user typed URL is missing %s.
+add-engine-missing-terms-url = Coba sertakan %s sebagai pengganti istilah pencarian.
+# This error is shown when the user typed post data is missing %s.
+add-engine-missing-terms-post-data = Coba sertakan %s sebagai pengganti istilah pencarian.
 
 ## The following strings are used as labels for the dialog's buttons.
 
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+add-engine-dialog2 =
+    .buttonlabelaccept = Tambahkan Mesin
+    .buttonaccesskeyaccept = A
+    .buttonlabelextra1 = Tingkat Lanjut
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+edit-engine-dialog =
+    .buttonlabelaccept = Simpan Mesin
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra1 = Tingkat Lanjut

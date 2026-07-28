@@ -35,11 +35,33 @@ perftools-description-local-build =
     Se si sta creando il profilo di una build compilata localmente su questo
     dispositivo, aggiungere la cartella “objdir” della build all’elenco seguente
     affinché possa essere utilizzata per la ricerca di informazioni sui simboli.
+perftools-pick-local-build-directory = Scegli cartella di compilazione
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Intervallo di campionamento:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -155,13 +177,13 @@ perftools-presets-ml-label = Machine learning
 perftools-presets-ml-description2 = Preset per la diagnosi di problemi relativi a machine learning in { -brand-shorter-name }.
 perftools-presets-networking-label = Rete
 perftools-presets-networking-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Rete con registri
+perftools-presets-networking-with-logs-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }, includendo i registri di rete. Questi registri possono contenere informazioni sensibili come gli URL visitati.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energia
 perftools-presets-power-description = Preset per la diagnosi di problemi relativi al consumo di energia in { -brand-shorter-name }, con overhead limitato.
 perftools-presets-debug-label = Debug
 perftools-presets-debug-description = Preset per il debug di { -brand-shorter-name }. Overhead elevato, non utilizzare per analisi delle prestazioni ma solo per comprendere il comportamento del browser.
+perftools-presets-web-compat-label = Compatibilità web
+perftools-presets-web-compat-description = Preset consigliato per il debug dei problemi di compatibilità nei siti web, non per monitorare le prestazioni.
 perftools-presets-custom-label = Personalizzato
-
-##
-
-

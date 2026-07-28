@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Ta witryna prosi o dostęp do urządzeń MIDI użytkownika. Można włączyć dostęp, instalując dodatek.
 site-permission-install-first-prompt-midi-message = Bezpieczeństwo tego dostępu nie jest gwarantowane. Kontynuuj wyłącznie wtedy, gdy ufasz tej witrynie.
+site-permission-install-first-prompt-serial-header = Ta witryna prosi o dostęp do urządzeń użytkownika podłączonych przez port szeregowy. Można włączyć dostęp, instalując dodatek.
+site-permission-install-first-prompt-serial-message = Bezpieczeństwo tego dostępu nie jest gwarantowane. Kontynuuj wyłącznie wtedy, gdy ufasz tej witrynie.
 
 ##
 
@@ -133,15 +135,18 @@ addon-install-error-corrupt-file = Dodatek pobrany z tej strony nie może zosta
 addon-install-error-file-access = Dodatek „{ $addonName }” nie może zostać zainstalowany, ponieważ { -brand-short-name } nie może zmodyfikować potrzebnego pliku.
 addon-install-error-not-signed = { -brand-short-name } uniemożliwił tej stronie instalację niezweryfikowanego dodatku.
 addon-install-error-invalid-domain = Dodatek „{ $addonName }” nie może być instalowany z tego miejsca.
+addon-install-error-no-addon-name-file-access = Dodatek nie może zostać zainstalowany, ponieważ { -brand-short-name } nie może zmodyfikować potrzebnego pliku.
 addon-local-install-error-network-failure = Nie udało się zainstalować dodatku z powodu błędu systemu plików.
 addon-local-install-error-incorrect-hash = Nie udało się zainstalować dodatku, ponieważ nie pasuje on do dodatku oczekiwanego przez { -brand-short-name(case: "acc") }.
 addon-local-install-error-corrupt-file = Dodatek nie może zostać zainstalowany, ponieważ wygląda on na uszkodzony.
 addon-local-install-error-file-access = Dodatek „{ $addonName }” nie może zostać zainstalowany, ponieważ { -brand-short-name } nie może zmodyfikować potrzebnego pliku.
 addon-local-install-error-not-signed = Ten dodatek nie może zostać zainstalowany, ponieważ nie został zweryfikowany.
+addon-local-install-no-addon-name-error-file-access = Dodatek nie może zostać zainstalowany, ponieważ { -brand-short-name } nie może zmodyfikować potrzebnego pliku.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = Dodatek „{ $addonName }” nie może zostać zainstalowany, ponieważ nie jest on zgodny z { -brand-short-name(case: "ins") } { $appVersion }.
 addon-install-error-hard-blocked = Dodatek „{ $addonName }” narusza zasady Mozilli i nie można go instalować w { -brand-short-name(case: "loc") }.
+addon-install-error-soft-blocked2 = Dodatek „{ $addonName }” jest ograniczony i nie można go instalować w { -brand-short-name(case: "loc") }.
 addon-install-error-blocklisted = Dodatek „{ $addonName }” nie może zostać zainstalowany, ponieważ obarczony jest on wysokim ryzykiem utraty stabilności lub problemów z bezpieczeństwem.
 addon-install-error-soft-blocked = Dodatek „{ $addonName }” narusza zasady Mozilli i nie można go instalować w { -brand-short-name(case: "loc") }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

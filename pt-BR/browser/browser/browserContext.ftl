@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Abrir link em nova aba
     .accesskey = b
+main-context-menu-open-link-split-view =
+    .label = Abrir link em exibição dividida
+    .accesskey = M
 main-context-menu-open-link-container-tab =
     .label = Abrir link em nova aba contêiner
     .accesskey = c
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Copiar link limpo
     .accesskey = m
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Copiar link sem rastreamento de sites
-    .accesskey = i
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Ocultar controles
     .accesskey = n
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Tela inteira
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Ver descrição
     .accesskey = d
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Pesquisar imagem com { $engine }
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = Salvar vídeo como…
     .accesskey = v
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Enviar áudio por email…
     .accesskey = r
+main-context-menu-send-to-device-2 =
+    .label = Enviar para dispositivo
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = Enviar para celular
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = Entre para enviar abas
+main-context-menu-send-to-mobile-enable-sync2 = Ative a sincronização para enviar uma aba
+main-context-menu-send-to-mobile-connect-phone2 = Conecte seu celular
+main-context-menu-send-to-mobile-device-missing2 = Seu dispositivo não aparece?
+main-context-menu-send-to-mobile-sign-in-from-link = Entre na conta para enviar um link
+main-context-menu-send-to-mobile-sign-in-from-page = Entrar na conta para enviar uma página
+main-context-menu-send-to-mobile-enable-sync3 = Ative a sincronização para enviar abas
+main-context-menu-send-to-mobile-enable-sync-from-link = Ative a sincronização para enviar um link
+main-context-menu-send-to-mobile-enable-sync-from-page = Ative a sincronização para enviar uma página
+main-context-menu-send-to-mobile-connect-phone3 = Conecte um dispositivo para enviar abas
+main-context-menu-send-to-mobile-connect-phone-from-link = Conecte um dispositivo para enviar um link
+main-context-menu-send-to-mobile-connect-phone-from-page = Conecte um dispositivo para enviar uma página
 main-context-menu-save-to-pocket =
     .label = Salvar página no { -pocket-brand-name }
     .accesskey = k
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Enviar link para dispositivo
     .accesskey = d
+main-context-menu-link-send-to-mobile =
+    .label = Enviar link para celular
+    .accesskey = n
 main-context-menu-frame =
     .label = Este frame
     .accesskey = t
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Revelar senha
     .accesskey = v
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Novidade
+main-context-menu-pdfjs-copy-page =
+    .label = Copiar página
+main-context-menu-pdfjs-cut-page =
+    .label = Cortar página
+main-context-menu-pdfjs-delete-page =
+    .label = Excluir página
+main-context-menu-pdfjs-save-page =
+    .label = Salvar seleção como...

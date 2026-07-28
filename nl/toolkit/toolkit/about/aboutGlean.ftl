@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Handmatig testen
 about-glean-category-adhoc-testing = Ad-hoctesten
 about-glean-category-profiler = De Profiler gebruiken
 about-glean-category-about-data = Over gegevens
+about-glean-category-metrics-table = Tabel met statistieken
 about-glean-upload-enabled = Gegevensupload is ingeschakeld.
 about-glean-upload-disabled = Gegevensupload is uitgeschakeld.
 about-glean-upload-enabled-local = Gegevensupload is alleen ingeschakeld voor verzenden naar een lokale server.
@@ -141,6 +142,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     Gebruik voor het opnemen van een prestatieprofiel en het bekijken van alle opgenomen statistieken de
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Alle statistieken
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Categorie
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Naam
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Type
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Waarde
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Acties
+about-glean-metrics-table-settings-button = Instellingen
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Statistiektabelinstellingen
+about-glean-metrics-table-settings-category-general = Algemeen
+about-glean-metrics-table-settings-hide-empty-value-rows = Regels met lege waarden verbergen
+about-glean-metrics-table-settings-category-visualizations = Visualisaties
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Voorbeeld
+about-glean-metrics-table-settings-category-visualizations-histogram = Histogram
+about-glean-metrics-table-settings-histograms-chart-max = Maximale hoogte diagram
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Geschaalde maximumhoogte
+about-glean-metrics-table-settings-histograms-box-padding = Box-opvulling
+about-glean-metrics-table-settings-histograms-chart-padding = Grafiekopvulling
+about-glean-metrics-table-settings-histograms-left-padding = Extra linkeropvulling
+about-glean-metrics-table-settings-category-visualizations-timeline = Tijdlijn
+about-glean-metrics-table-settings-timelines-height = Hoogte
+about-glean-metrics-table-settings-timelines-width = Breedte
+about-glean-metrics-table-settings-timelines-chart-padding = Grafiekopvulling
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Cirkelstraal
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = X-offset Y-as
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y-offset Y-as
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Filteren
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Dit filtert de onderstaande tabel op basis van categorie, naam, type en waarde (als de waarde een eenvoudig type is).
+about-glean-button-load-all = Alle waarden laden
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Gegevens exporteren
+about-glean-button-load-value = Laden
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Documenten
+about-glean-button-watch = Volgen
+# Meaning "to stop watching"
+about-glean-button-unwatch = Niet meer volgen
+about-glean-no-data-to-display = Geen gegevens om weer te geven.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>DualLabeledCounter</code>-statistieken worden nog niet ondersteund in de <code>about:glean</code>-weergave.
+about-glean-unknown-metric-type-warning = Onbekend statistiektype.
 about-glean-about-data-explanation =
     Raadpleeg, om door de lijst met verzamelde gegevens te bladeren, de
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name }-bibliotheek</a>.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Ingebouwde pings
+about-glean-ping-list-optgroup-custom =
+    .label = Aangepaste pings

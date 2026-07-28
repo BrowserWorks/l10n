@@ -48,20 +48,17 @@ download-cert-view-cert =
     .label = Wyświetl
 download-cert-view-text = Sprawdź certyfikat CA
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
     .title = Prośba o identyfikację użytkownika
-client-auth-site-description = Ta witryna poprosiła o przedstawienia certyfikatu w celu dokonania identyfikacji:
+client-auth-site-description = Ta witryna poprosiła o przedstawienie certyfikatu w celu dokonania identyfikacji:
 client-auth-choose-cert = Wybierz certyfikat, który zostanie przedstawiony jako identyfikator użytkownika:
 client-auth-send-no-certificate =
     .label = Nie wysyłaj certyfikatu
 # Variables:
 # $hostname (String) - The domain name of the site requesting the client authentication certificate
-client-auth-site-identification = Witryna „{ $hostname }” poprosiła o przedstawienia certyfikatu w celu dokonania identyfikacji:
+client-auth-site-identification = Witryna „{ $hostname }” poprosiła o przedstawienie certyfikatu w celu dokonania identyfikacji:
 client-auth-cert-details = Szczegóły wybranego certyfikatu:
 # Variables:
 # $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Na stałe
 client-auth-cert-remember-temporarily =
     .label = Na czas tej sesji
-client-auth-cert-remember-box =
-    .label = Pamiętaj decyzję
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Hasło kopii bezpieczeństwa certyfikatu (ponownie):
 set-password-reminder = Ważne: jeżeli hasło zabezpieczające kopię certyfikatu zostanie utracone, późniejsze odtworzenie certyfikatu będzie niemożliwe. Zaleca się zachowanie hasła w bezpiecznym miejscu.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Chronione uwierzytelnienie
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Proszę uwierzytelnić się do urządzenia zabezpieczającego ({ $tokenName }). Metoda uwierzytelnienia zależy od urządzenia (np. za pomocą czytnika linii papilarnych lub przez wpisanie kodu na specjalnej klawiaturze).
 
 ## Protected authentication alert
 

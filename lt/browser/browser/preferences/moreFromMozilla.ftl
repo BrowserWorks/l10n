@@ -19,12 +19,5 @@ more-from-moz-qr-code-firefox-mobile-img =
     .alt = QR kodas, skirtas atsisiųsti mobiliąją „{ -brand-product-name }“
 more-from-moz-button-mozilla-vpn-2 = Gauti VPN
 more-from-moz-learn-more-link = Sužinoti daugiau
-
-## These strings are for the Firefox Relay card in about:preferences moreFromMozilla page
-
-
-## These strings are for the Mozilla Monitor card in about:preferences moreFromMozilla page
-
-
-## These strings are for the Solo card in about:preferences moreFromMozilla page
-
+more-from-moz-title2 = Daugiau iš „{ -vendor-short-name }“
+    .title = Daugiau iš „{ -vendor-short-name }“

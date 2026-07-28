@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Tillad
     .accesskey = T
+permissions-add =
+    .label = Tilføj
+    .accesskey = T
 permissions-button-off =
     .label = Slå fra
     .accesskey = S
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Fjern alle websteder
     .accesskey = a
+permissions-save-changes-2 =
+    .buttonlabelaccept = Gem ændringer
+    .buttonaccesskeyaccept = G
 permission-dialog =
     .buttonlabelaccept = Gem ændringer
     .buttonaccesskeyaccept = G
@@ -85,6 +91,12 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Du kan angive, hvilke websteder der altid eller aldrig har tilladelse til at anvende cookies og websteds-data. Indtast adressen på webstedet, du ønsker at angive tilladelser for, og klik på Bloker, Tillad for sessionen eller Tillad
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Undtagelser - Ryd historik ved lukning
+    .style = { permissions-window2.style }
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +104,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Du kan slå tilstanden Kun-HTTPS fra for bestemte websteder. { -brand-short-name } vil ikke forsøge at opgradere til en sikker forbindelse for de valgte websteder. Undtagelser gælder ikke for private vinduer.
 permissions-exceptions-https-only-desc2 = Du kan slå tilstanden Kun-HTTPS fra for bestemte websteder. { -brand-short-name } vil ikke forsøge at opgradere til en sikker forbindelse for de valgte websteder.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Tillade websteder - Pop op-vinduer og tredjeparts-omdirigeringer
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Du kan angive, hvilke websteder der må åbne pop op-vinduer og blive omdirigeret af tredjeparts-frames.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +186,26 @@ permissions-site-camera-desc = Følgende websteder har anmodet om adgang til dit
 permissions-site-camera-disable-label =
     .label = Bloker nye anmodninger om adgang til dit kamera
 permissions-site-camera-disable-desc = Dette vil forhindre websteder, der ikke er angivet ovenfor, i at anmode om adgang til dit kamera. At blokere adgang til dit kamera kan muligvis forhindre nogle websteder i at fungere optimalt.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Indstillinger - Enhedsapps og -tjenester
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Disse websteder har anmodet om adgang til apps og tjenester på denne enhed. Du kan vælge, om websteder skal have mulighed for at gøre dette.
+permissions-site-localhost-disable-label =
+    .label = Bloker nye anmodninger om adgang til apps og tjenester på denne enhed
+permissions-site-localhost-disable-desc = Dette vil forhindre websteder, der ikke er nævnt ovenfor, i at anmode om adgang til apps og tjenester på denne enhed. Dette kan muligvis forhindre nogle funktioner på websteder i at fungere.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Indstillinger - Lokale netværksenheder
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Disse websteder har anmodet om adgang til apps og tjenester på enheder, der er forbundet til dit wi-fi eller dit lokale netværk. Du kan vælge, om websteder skal have mulighed for at gøre dette.
+permissions-site-local-network-disable-label =
+    .label = Bloker nye anmodninger om adgang til apps og tjenester på enheder, der er tilsluttet dit wi-fi- eller dit lokale netværk.
+permissions-site-local-network-disable-desc = Dette vil forhindre websteder, der ikke er nævnt ovenfor, i at anmode om adgang til apps og tjenester på enheder, der er tilsluttet dit wi-fi eller dit lokale netværk. Dette kan muligvis forhindre nogle funktioner på websteder i at fungere.
 
 ## Site Permissions - Microphone
 

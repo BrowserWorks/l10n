@@ -29,6 +29,7 @@ about-logging-no-log-modules = 無
 about-logging-no-log-file = 無
 about-logging-logging-preset-selector-text = 預設記錄類型：
 about-logging-with-profiler-stacks-checkbox = 開啟紀錄訊息的堆疊追蹤
+about-logging-with-javascript-tracing-checkbox = 開啟 JavaScript 追蹤
 about-logging-menu =
     .title = 進階選項
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = 用來診斷 WebCodecs 影音編解碼器與圖片解碼器問題的記錄模組
 about-logging-preset-ml-label = 機器學習
 about-logging-preset-ml-description = 用來診斷機器學習問題的記錄模組
+about-logging-preset-web-compat-label = Web Compat
+about-logging-preset-web-compat-description = 用來診斷網頁相容性問題的記錄模組
+about-logging-preset-navigation = 導覽
+about-logging-preset-navigation-description = 用來診斷導覽與使用階段紀錄問題的記錄模組
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = 用來診斷 WebGPU 問題的記錄模組
 about-logging-preset-gfx-label = 圖形
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> 分享網
 about-logging-upload-error = 上傳效能檢測檔時發生錯誤：{ $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = 儲存已上傳的檢測檔時發生錯誤：{ $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = 儲存檔案時發生錯誤：{ $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = 檢測檔 { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = 已上傳的檢測檔
+about-logging-no-uploaded-profiles = 尚未上傳任何檢測檔。
+about-logging-delete-uploaded-profile = 刪除
+about-logging-view-uploaded-profile = 檢視檢測檔
+about-logging-delete-profile-confirm-title = 刪除檢測檔
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = 您確定要刪除檢測檔「{ $profileName }」嗎？此動作無法復原。
+about-logging-deleting-profile = 刪除中…

@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Ablehnen
     .accesskey = A
 webext-perms-host-description-all-urls = Auf Ihre Daten für alle Websites zugreifen
+webext-perms-host-description-file-urls = Auf lokale Dateien auf Ihrem Computer zugreifen
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Auf Ihre Daten für die Website { $domain } zugreifen
@@ -138,6 +139,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } bittet um 
 
 webext-site-perms-header-with-gated-perms-midi = Dieses Add-on gewährt { $hostname } Zugriff auf Ihre MIDI-Geräte.
 webext-site-perms-header-with-gated-perms-midi-sysex = Dieses Add-on gewährt { $hostname } Zugriff auf Ihre MIDI-Geräte (mit SysEx-Unterstützung).
+webext-site-perms-header-with-gated-perms-serial = Dieses Add-on gewährt { $hostname } Zugriff auf Ihre seriellen Geräte.
 
 ##
 
@@ -148,6 +150,12 @@ webext-site-perms-description-gated-perms-midi =
     Dies sind normalerweise Plug-in-Geräte wie Audio-Synthesizer, können aber auch in Ihrem Computer integriert sein.
     
     Websites dürfen normalerweise nicht auf MIDI-Geräte zugreifen. Eine unsachgemäße Nutzung könnte Schäden verursachen oder die Sicherheit beeinträchtigen.
+webext-site-perms-description-gated-perms-webserial =
+    Dies sind Geräte wie Mikrocontroller, 3D-Drucker und andere Geräte, die über USB, serielle Ports oder Bluetooth verbunden werden.
+    
+    Sie können auswählen, auf welche Geräte die Website zugreifen darf.
+    
+    Websites dürfen normalerweise nicht auf serielle Geräte zugreifen. Eine unsachgemäße Verwendung kann zu Schäden führen oder die Sicherheit beeinträchtigen.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -162,6 +170,7 @@ webext-site-perms-header-unsigned-with-perms = { $extension } hinzufügen? Diese
 
 webext-site-perms-midi = Auf MIDI-Geräte zugreifen
 webext-site-perms-midi-sysex = Auf MIDI-Geräte mit SysEx-Unterstützung zugreifen
+webext-site-perms-serial = Auf serielle Geräte zugreifen
 
 ## Colorway theme migration
 

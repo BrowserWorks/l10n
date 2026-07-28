@@ -1,0 +1,73 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# The title of the about:translations page.
+about-translations-title = Μεταφράσεις { -brand-short-name }
+# The brief description of the Translations functionality on the page.
+about-translations-description = Άμεσες μεταφράσεις που σέβονται το απόρρητό σας.
+about-translations-learn-more-link = Μάθετε περισσότερα
+# An info message displayed if the device's hardware is not compatible with the Translations feature requirements.
+about-translations-unsupported-info-message-2 =
+    .heading = Η μετάφραση δεν είναι διαθέσιμη σε αυτήν τη συσκευή
+    .message = Δοκιμάστε να μεταβείτε σε μια άλλη συσκευή.
+# An info message displayed when translations are disabled and locked by enterprise policy.
+about-translations-policy-disabled-info-message =
+    .heading = Οι μεταφράσεις δεν είναι διαθέσιμες για τον οργανισμό σας
+    .message = Αυτή είναι μια πολιτική που έχει οριστεί από τον διαχειριστή σας.
+# An info message displayed when translations are disabled but can still be unblocked.
+about-translations-feature-blocked-info-message =
+    .heading = Για τη μετάφραση κειμένου, αναιρέστε τον αποκλεισμό αυτής της λειτουργίας
+    .message = Φαίνεται πως ενημερώσατε τις επιλογές ελέγχου ΤΝ έτσι, ώστε να αποκλείεται αυτή η λειτουργία. Αναιρέστε τον αποκλεισμό ανά πάσα στιγμή για να ξεκινήσετε να τη χρησιμοποιείτε.
+about-translations-feature-blocked-unblock-button = Άρση αποκλεισμού
+# An error message displayed when the language list fails to load.
+about-translations-language-load-error-message-2 =
+    .heading = Δεν ήταν δυνατή η φόρτωση των γλωσσών
+    .message = Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
+about-translations-language-load-error-button = Δοκιμή ξανά
+# An error message displayed when a translation request fails.
+about-translations-translation-error-heading = Προέκυψε πρόβλημα κατά τη μετάφραση
+about-translations-translation-error-subtext = Δοκιμάστε ξανά.
+about-translations-translation-error-button = Δοκιμή ξανά
+# An informational message displayed when the detected language is not supported.
+# Variables:
+#   $language (String) - The display name of the detected language.
+about-translations-detected-language-unsupported-heading-2 = Δυστυχώς, δεν υποστηρίζουμε ακόμα μεταφράσεις από τα { $language }
+about-translations-detected-language-unsupported-heading-unknown-2 = Δυστυχώς, δεν υποστηρίζουμε ακόμα μεταφράσεις από αυτήν τη γλώσσα
+about-translations-detected-language-unsupported-subtext = Επιλέξτε κάποια άλλη γλώσσα.
+# Placeholder text shown in the source-language text area when the user has not typed any text.
+about-translations-input-placeholder =
+    .placeholder = Προσθήκη κειμένου προς μετάφραση
+# Text displayed on the source-language selector when no explicit option is selected
+# and no language has been identified from the content of the source-language text area.
+about-translations-detect-default-label =
+    .label = Εντοπισμός γλώσσας
+# Text displayed on the source-language selector when no explicit option is selected
+# and a valid language has been identified from the content of the source-language text area.
+# Variables:
+#   $language (string) - The localized display name of the detected language
+about-translations-detect-language-label =
+    .label = { $language } (εντοπίστηκε)
+# Placeholder text shown in the target-language output area when no translation has occurred.
+about-translations-output-placeholder =
+    .placeholder = Μετάφραση
+# Button label for copying the translated output to the clipboard.
+about-translations-copy-button-default =
+    .label = Αντιγραφή
+    .title = Αντιγραφή μετάφρασης
+# Button label shown after the translated output has been copied to the clipboard.
+about-translations-copy-button-copied =
+    .label = Αντιγράφηκε
+    .title = Αντιγραφή μετάφρασης
+# Text displayed on target-language selector when no language option is selected.
+about-translations-select-label =
+    .label = Επιλογή γλώσσας
+# A message displayed in the target-language output area while waiting for the translation to complete.
+about-translations-translating-message = Μετάφραση…
+# The title attribute for the swap languages button, which swaps the selected
+# source and target languages, reversing the direction of translation.
+about-translations-swap-languages =
+    .title = Εναλλαγή γλωσσών
+# The title attribute for the button that clears the source text area.
+about-translations-clear-button =
+    .title = Απαλοιφή αρχικού κειμένου

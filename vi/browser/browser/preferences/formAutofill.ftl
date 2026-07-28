@@ -17,7 +17,9 @@ autofill-manage-remove-button = Xóa
 autofill-manage-add-button = Thêm…
 autofill-manage-edit-button = Sửa…
 
-## The address capture doorhanger
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 address-capture-save-doorhanger-header = Lưu địa chỉ?
 address-capture-save-doorhanger-description = Lưu thông tin vào { -brand-short-name } để bạn có thể điền biểu mẫu nhanh chóng.
@@ -41,6 +43,8 @@ address-capture-learn-more-button =
     .label = Tìm hiểu thêm
 address-capture-open-menu-button =
     .aria-label = Mở menu
+address-capture-edit-address-link = Sửa địa chỉ
+    .aria-label = Sửa địa chỉ
 address-capture-edit-address-button =
     .aria-label = Sửa địa chỉ
 # The dialog title for creating addresses in browser preferences.
@@ -55,53 +59,64 @@ autofill-address-organization = Tổ chức
 autofill-address-street-address = Địa chỉ đường phố
 autofill-address-street = Địa chỉ đường phố
 
-## address-level-3 (Sublocality) names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IR, MX
+# Used in Iran (IR), Mexico (MX) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-neighborhood = Khu vực lân cận
-# Used in MY
+# Used in Malaysia (MY) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-village-township = Làng hoặc thị trấn
 autofill-address-island = Đảo
-# Used in IE
+# Used in Ireland (IE) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-townland = Thị trấn
 
-## address-level-2 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-city = Thành phố
-# Used in HK, SD, SY, TR as Address Level-2 and used in KR as Sublocality.
+# Used in Hong Kong (HK), Sudan (SD), Syria (SY), Türkiye (TR) as as secondary address information (2 levels below the country level).
+# Used in Korea as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-district = Quận
-# Used in GB, NO, SE
+# Used in United Kingdom (GB), Norway (NO), Sweden (SE) as as secondary address information (2 levels below the country level).
 autofill-address-post-town = Bưu điện thị trấn
-# Used in AU as Address Level-2 and used in ZZ as Sublocality.
+# Used in Australia (AU) as as secondary address information (below the country level).
+# Used for international addresses as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-suburb = Ngoại thành
 
-## address-level-1 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-province = Tỉnh
 autofill-address-state = Bang
 autofill-address-county = Quận
-# Used in BB, JM
+# Used in Barbados (BB), Jamaica (JM) as primary address information (1 level below the country level).
 autofill-address-parish = Giáo xứ
-# Used in JP
+# Used in Japan (JP) as primary address information (1 level below the country level).
 autofill-address-prefecture = Tỉnh
-# Used in HK
+# Used in Honk Kong (HK) as primary address information (1 level below the country level).
 autofill-address-area = Vùng
-# Used in KR
+# Used in Korea (KO) as primary address information (1 level below the country level).
 autofill-address-do-si = Tỉnh/Thành phố
-# Used in NI, CO
+# Used in Nicaragua (NI), Colombia (CO) as primary address information (1 level below the country level).
 autofill-address-department = Sở
-# Used in AE
+# Used in United Arab Emirates (AE) as primary address information (1 level below the country level).
 autofill-address-emirate = Tiểu Vương quốc
-# Used in RU and UA
+# Used in Russia (RU), Ukraine (UA) as primary address information (1 level below the country level).
 autofill-address-oblast = Tỉnh
 
-## Postal code name types
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IN
+# Postal code field used in India (IN).
 autofill-address-pin = Pin
 autofill-address-postal-code = Mã bưu chính
+# Postal code field.
 autofill-address-zip = Mã bưu chính
-# Used in IE
+# Postal code field used in Ireland (IE).
 autofill-address-eircode = Mã bưu chính
 
 ##
@@ -132,13 +147,29 @@ autofill-message-tooltip = Xem thông báo về tự động điền
 autofill-add-card-title = Thêm thẻ
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title2 = Chỉnh sửa thẻ
+autofill-card-number-2 =
+    .label = Số thẻ
 autofill-card-number = Số thẻ
 autofill-card-invalid-number = Vui lòng nhập số thẻ hợp lệ
+autofill-card-name-on-card-2 =
+    .label = Tên trên thẻ
+autofill-card-expires-month-2 =
+    .label = Hết hạn vào tháng
+autofill-card-expires-year-2 =
+    .label = Hết hạn vào năm
+autofill-card-billing-address-2 =
+    .label = Địa chỉ thanh toán
 autofill-card-name-on-card = Tên trên thẻ
 autofill-card-expires-month = Hết hạn tháng
 autofill-card-expires-year = Hết hạn năm
 autofill-card-billing-address = Địa chỉ thanh toán
 autofill-card-network = Loại thẻ
+# This string is never actually displayed, but is used to make it easier to
+# find the payment methods section of about:settings via the search input. It's
+# simply a comma separated list of additional search keywords for the payment
+# methods section. Localizers should choose terms that make sense for payment
+# methods in their region.
+autofill-card-search-term-credit-cards = thẻ tín dụng, tín dụng, thẻ, thẻ ghi nợ, ghi nợ, ví, thanh toán
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 

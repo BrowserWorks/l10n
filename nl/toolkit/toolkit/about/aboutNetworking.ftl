@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH-URL
 about-networking-dns-trr-mode = DoH-modus
 about-networking-dns-suffix = DNS-achtervoegsel
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Oorsprong
+about-networking-alt-svc-alternate = Alternatief
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Gevalideerd
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isolatiesleutel
 about-networking-refresh = Vernieuwen
 about-networking-auto-refresh = Om de 3 seconden automatisch vernieuwen
 about-networking-hostname = Hostnaam
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS-zoekactie
 about-networking-dns-lookup-button = Omzetten
 about-networking-dns-domain = Domein:
 about-networking-dns-lookup-table-column = IP-adressen
+about-networking-dns-https-rrs-lookup-table-column = HTTPS-RR’s
 about-networking-dns-https-rr-lookup-table-column = HTTP-RR’s
 about-networking-rcwn = RCWN-statistieken
 about-networking-rcwn-status = RCWN-status
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Deze pagina is verplaatst naar <a data-l1
 
 about-networking-networkid-is-up = Koppeling is beschikbaar
 about-networking-networkid-status-known = Koppelingsstatus is bekend
-
-##
-

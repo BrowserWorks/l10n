@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Impor dari Peramban L
 contextual-manager-passwords-command-import = Impor dari Berkas…
 contextual-manager-passwords-command-export = Ekspor sandi
 contextual-manager-passwords-command-remove-all = Hapus seluruh sandi
+contextual-manager-passwords-command-options = Opsi
 contextual-manager-passwords-command-settings = Pengaturan
 contextual-manager-passwords-command-help = Bantuan
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }{ -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Baru: { $added }, Diperbarui: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Baru: { $added }, Diperbarui: { $modified }, Duplikat: { $no_change }, Kesalahan: { $error }
 contextual-manager-passwords-import-detailed-report = Lihat laporan detail
 contextual-manager-passwords-import-success-button = Selesai
 contextual-manager-passwords-import-error-heading-and-message =
@@ -151,6 +158,8 @@ contextual-manager-passwords-password-already-exists-error-button = Buka sandi
 contextual-manager-passwords-update-password-success-heading =
     .heading = Sandi tersimpan
 contextual-manager-passwords-update-password-success-button = Selesai
+contextual-manager-passwords-update-username-success-heading-3 =
+    .heading = Nama pengguna disimpan
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
 contextual-manager-passwords-delete-password-success-heading =
@@ -196,17 +205,21 @@ contextual-manager-passwords-no-username-heading-and-message =
     .heading = Tambahkan nama pengguna
     .message = Tambahkan pengguna untuk masuk lebih cepat
 contextual-manager-passwords-add-username-button = Tambahkan nama pengguna
+contextual-manager-passwords-title = Kata sandi
 
 ## Login Form
 
 contextual-manager-passwords-create-label =
     .label = Tambahkan sandi
+contextual-manager-passwords-update-label =
+    .label = Perbarui sandi
 contextual-manager-passwords-edit-label =
     .label = Edit sandi
 contextual-manager-passwords-remove-label =
     .title = Hapus sandi
 contextual-manager-passwords-origin-tooltip = Masukkan alamat yang tepat untuk masuk ke situs ini.
 contextual-manager-passwords-username-tooltip = Masukkan nama pengguna, alamat surel, atau nomor akun yang Anda gunakan untuk masuk.
+contextual-manager-passwords-password-tooltip-2 = Masukkan sandi untuk masuk ke akun ini.
 contextual-manager-passwords-password-tooltip = Masukkan sandi yang digunakan untuk masuk ke akun ini.
 
 ## Password Card
@@ -258,6 +271,22 @@ contextual-manager-view-alert-heading =
     .heading = Lihat peringatan
 contextual-manager-view-alert-button =
     .tooltiptext = Tinjau peringatan
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-heading-2 =
+    .heading =
+        { $count ->
+            [1] Lihat peringatan
+           *[other] Lihat peringatan
+        }
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-button-2 =
+    .tooltiptext =
+        { $count ->
+            [1] Tinjau peringatan
+           *[other] Tinjau peringatan
+        }
 contextual-manager-show-password-button =
     .aria-label = Tampilkan Sandi
     .title = Tampilkan Sandi
@@ -267,6 +296,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Tidak ada sandi ditemukan
+contextual-manager-passwords-no-passwords-found-message-2 = Coba istilah lain dan cari lagi.
 contextual-manager-passwords-no-passwords-found-message = Tidak ada sandi ditemukan. Cari istilah lain dan coba lagi.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -281,6 +311,8 @@ contextual-manager-passwords-no-passwords-message = Semua sandi dienkripsi, dan 
 contextual-manager-passwords-no-passwords-get-started-message = Tambahkan di sini untuk memulai.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Tambahkan manual
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Simpan kata sandi Anda di tempat yang aman
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -290,3 +322,14 @@ contextual-manager-passwords-discard-changes-heading-and-message =
     .message = Perubahan Anda tidak akan disimpan
 contextual-manager-passwords-discard-changes-close-button = Tutup
 contextual-manager-passwords-discard-changes-go-back-button = Kembali
+#   $total (number) - Total number of passwords
+contextual-manager-passwords-remove-all-passwords-checkbox =
+    { $total ->
+        [1] Ya, hapus kata sandi
+       *[other] Ya, hapus kata sandi
+    }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Untuk melihat sandi tersimpan Anda, masukkan sandi utama Anda.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Masukkan sandi utama
+contextual-manager-primary-password-learn-more-link = Pelajari lebih lanjut

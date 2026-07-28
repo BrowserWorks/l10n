@@ -29,6 +29,7 @@ about-logging-no-log-modules = Nenhum
 about-logging-no-log-file = Nenhum
 about-logging-logging-preset-selector-text = Ajuste prévio de registro de log:
 about-logging-with-profiler-stacks-checkbox = Ativar stack trace em mensagens de log
+about-logging-with-javascript-tracing-checkbox = Ativar registro de JavaScript
 about-logging-menu =
     .title = Opções avançadas
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Módulos de log para diagnosticar problemas com decodificadores e codificadores de áudio/vídeo WebCodecs e com decodificadores de imagens
 about-logging-preset-ml-label = Aprendizado de máquina
 about-logging-preset-ml-description = Módulos de log para diagnosticar problemas de aprendizado de máquina
+about-logging-preset-web-compat-label = Compatibilidade web
+about-logging-preset-web-compat-description = Módulos de log para diagnosticar problemas de compatibilidade web
+about-logging-preset-navigation = Navegação
+about-logging-preset-navigation-description = Módulos de log para diagnosticar problemas de navegação e histórico de sessão
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Módulos de log para diagnosticar problemas de WebGPU
 about-logging-preset-gfx-label = Gráficos
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Compartil
 about-logging-upload-error = Aconteceu um erro ao enviar o profile: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Ocorreu um erro ao armazenar o profile enviado: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Aconteceu um erro ao salvar o arquivo: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profile { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Profiles enviados
+about-logging-no-uploaded-profiles = Nenhum profile foi enviado ainda.
+about-logging-delete-uploaded-profile = Excluir
+about-logging-view-uploaded-profile = Ver perfil
+about-logging-delete-profile-confirm-title = Excluir perfil
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Tem certeza que quer excluir o profile “{ $profileName }”? Isto não pode ser desfeito.
+about-logging-deleting-profile = Excluindo…

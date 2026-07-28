@@ -59,7 +59,7 @@ about-private-browsing-pin-promo-link-text =
         [macos] เก็บไว้ใน Dock
        *[other] ปักหมุดที่แถบงาน
     }
-about-private-browsing-pin-promo-title = ไม่เก็บบันทึกคุกกี้หรือประวัติใดๆ และให้คุณท่องเว็บได้เหมือนไม่มีใครแอบมอง
+about-private-browsing-pin-promo-title = ไม่เก็บบันทึกคุกกี้หรือประวัติใด ๆ และให้คุณท่องเว็บได้เหมือนไม่มีใครแอบมอง
 
 ## Strings used in a promotion message for cookie banner reduction
 
@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = ให้ { -brand-short-n
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } จะดูแลเรื่องแบนเนอร์คุกกี้ให้คุณ
 about-private-browsing-cookie-banners-promo-body = ตอนนี้เราปฏิเสธแบนเนอร์คุกกี้จำนวนมากโดยอัตโนมัติเพื่อให้คุณถูกติดตามได้น้อยลงและกลับไปท่องเว็บโดยปราศจากสิ่งรบกวนได้
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
-about-private-browsing-felt-privacy-v1-info-header = ไม่ทิ้งร่องรอยใดๆ บนอุปกรณ์นี้
+about-private-browsing-felt-privacy-v1-info-header = ไม่ทิ้งร่องรอยบนอุปกรณ์นี้
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } จะลบคุกกี้ ประวัติ และข้อมูลไซต์ของคุณเมื่อคุณปิดหน้าต่างส่วนตัวของคุณทั้งหมด
 about-private-browsing-felt-privacy-v1-info-link = ใครสามารถเห็นกิจกรรมของฉันได้บ้าง?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = การปิดหน้าต่างส่วนตัวทั้งหมดของคุณจะลบคุกกี้ ประวัติ และข้อมูลไซต์ของคุณ
+about-private-browsing-nova-info-link = ใครบ้างที่ยังอาจเห็นกิจกรรมของฉันได้?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = คุณกำลังใช้งานแบบไม่บันทึกประวัติ
+about-private-browsing-nova-info-subheader = เมื่อคุณปิดหน้าต่างนี้ เราจะลบการค้นหาและการลงชื่อเข้าทั้งหมดให้เอง และการปกป้องในตัวของ { -brand-short-name } ก็ยังทำงานอยู่ด้วย เช่น การปิดกั้นตัวติดตาม

@@ -107,6 +107,12 @@ fp-cert-error-code = Kode Kesalahan: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, day: "numeric", month: "short", year: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } tidak memercayai { $hostname } karena tidak dapat membuktikan bahwa itu memenuhi persyaratan transparansi sertifikat publik.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = Mungkin tidak ada yang bisa dilakukan, karena kemungkinan situsnya sendiri yang bermasalah.
 fp-learn-more-about-secure-connection-failures = Pelajari lebih lanjut tentang kegagalan sambungan aman
 fp-learn-more-about-cert-issues = Pelajari lebih lanjut tentang jenis masalah sertifikat ini
 fp-learn-more-about-time-related-errors = Pelajari lebih lanjut tentang pemecahan masalah kesalahan terkait waktu
@@ -114,6 +120,22 @@ fp-learn-more-about-time-related-errors = Pelajari lebih lanjut tentang pemecaha
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
 
+cert-error-revoked-certificate = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } telah dicabut dan tidak dipercaya lagi.
+cert-error-bad-signature = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena tanda tangan pada sertifikat yang disediakan untuk { $hostname } tidak valid.
+cert-error-key-pinning-failure = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } menggunakan kunci publik yang berbeda dari yang diharapkan.
+cert-error-bad-der = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } tidak dikodekan dengan benar.
+cert-error-cert-not-in-name-space = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } tidak mengikuti batasan nama dari sertifikat yang menerbitkannya.
+cert-error-inadequate-cert-type = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } tidak diizinkan untuk digunakan oleh server web.
+cert-error-path-len-constraint-invalid = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } memiliki terlalu banyak sertifikat antara di jalur ke sertifikat root.
+cert-error-invalid-key = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } memiliki kunci yang tidak valid. Kemungkinan besar, terlalu kecil untuk aman.
+cert-error-unknown-critical-extension = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } berisi ekstensi kritikal yang tidak didukung.
+cert-error-extension-value-invalid = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } berisi ekstensi yang tidak valid.
+cert-error-untrusted-issuer = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } dikeluarkan oleh otoritas sertifikat yang tidak dipercaya lagi.
+cert-error-untrusted-cert = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } ditandai sebagai tidak tepercaya.
+cert-error-invalid-integer-encoding = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } mengandung pengodean bilangan bulat yang tidak valid. Penyebab umum termasuk nomor seri negatif, modulus RSA negatif, dan pengodean yang lebih panjang dari yang diperlukan.
+cert-error-unsupported-keyalg = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena sertifikat yang disediakan untuk { $hostname } memiliki jenis kunci yang tidak didukung.
+cert-error-issuer-no-longer-trusted = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena otoritas sertifikat yang mengeluarkan sertifikat yang disediakan untuk { $hostname } tidak dipercaya lagi.
+cert-error-signature-algorithm-mismatch = { -brand-short-name } memblokir kunjungan Anda ke situs ini karena algoritme tanda tangan dari sertifikat yang disediakan untuk { $hostname } tidak cocok dengan bidang algoritme tanda tangannya.
 
 ## Messages used for certificate error titles
 
@@ -122,6 +144,7 @@ deniedPortAccess-title = Penggunaan alamat ini dibatasi
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 dnsNotFound-title = Hmm. Kami kesulitan menemukan situsnya.
+internet-connection-offline-title = Sepertinya ada masalah dengan koneksi internet Anda.
 dns-not-found-trr-only-title2 = Kemungkinan risiko keamanan mencari domain ini
 dns-not-found-native-fallback-title2 = Kemungkinan risiko keamanan mencari domain ini
 fileNotFound-title = Berkas tidak ditemukan
@@ -147,6 +170,7 @@ redirectLoop-title = Laman tidak teralihkan dengan benar
 unknownSocketType-title = Jawaban yang tidak diharapkan dari server
 nssFailure2-title = Sambungan Aman Gagal
 csp-xfo-error-title = { -brand-short-name } Tidak Dapat Membuka Laman Ini
+corruptedContentErrorv2-title = Galat Konten Rusak
 corruptedContentError-title = Galat Konten Rusak
 sslv3Used-title = Gagal Tersambung dengan Aman
 inadequateSecurityError-title = Sambungan Anda tidak aman
@@ -173,3 +197,4 @@ fp-certerror-hide-advanced-button = Sembunyikan tingkat lanjut
 fp-certerror-override-exception-button = Lanjutkan ke { $hostname } (Berrisiko)
 fp-certerror-intro = { -brand-short-name } menemukan masalah keamanan yang berpotensi serius dengan <strong>{ $hostname }</strong>. Seseorang yang berpura-pura menjadi situs dapat mencoba mencuri hal-hal seperti info kartu kredit, kata sandi, atau surel.
 fp-certerror-expired-into = { -brand-short-name } menemukan masalah keamanan dengan <strong>{ $hostname }</strong>. Situs tidak diatur dengan benar atau jam perangkat Anda disetel ke tanggal/waktu yang salah.
+fp-certerror-transparency-intro = Seseorang yang berpura-pura menjadi <strong>{ $hostname }</strong> dapat mencoba mencuri hal-hal seperti info kartu kredit, sandi, atau surel.

@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Allow
     .accesskey = A
+permissions-add =
+    .label = Add
+    .accesskey = A
 permissions-button-off =
     .label = Turn Off
     .accesskey = O
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Remove All Web Sites
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Save Changes
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = Save Changes
     .buttonaccesskeyaccept = S
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = You can specify which web sites are always or never allowed to use cookies and site data.  Type the exact address of the site you want to manage and then click Block, Allow for Session, or Allow.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Exceptions - Clear History on Shutdown
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = You can specify which web sites will keep their data when { -brand-short-name } clears history on close. Type the exact address of the site you want to manage and then click Allow.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = You can turn off HTTPS-Only Mode for specific websites. { -brand-short-name } won’t attempt to upgrade the connection to secure HTTPS for those sites. Exceptions do not apply to private windows.
 permissions-exceptions-https-only-desc2 = You can turn off HTTPS-Only Mode for specific web sites. { -brand-short-name } won’t attempt to upgrade the connection to secure HTTPS for those sites.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Allowed Web Sites - Pop-ups and Third-Party Redirects
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = You can specify which web sites are allowed to open pop-up windows and be redirected by third-party frames.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = The following web sites have requested to access 
 permissions-site-camera-disable-label =
     .label = Block new requests asking to access your camera
 permissions-site-camera-disable-desc = This will prevent any web sites not listed above from requesting permission to access your camera. Blocking access to your camera may break some web site features.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Settings - Device apps and services
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = These web sites have requested access to apps and services on this device. You can choose to allow or block sites from doing this.
+permissions-site-localhost-disable-label =
+    .label = Block new requests to access to apps and services on this device
+permissions-site-localhost-disable-desc = This will stop any web site not listed above from requesting access to apps and services on this device. Doing this may break some web site features.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Settings - Local Network Devices
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = These web sites have requested access to apps and services on devices connected to your Wi-Fi or local network. You can choose to allow or block sites from doing this.
+permissions-site-local-network-disable-label =
+    .label = Block new requests to access apps and services on devices connected to your Wi-Fi or local network.
+permissions-site-local-network-disable-desc = This will stop any web site not listed above from requesting access to apps and services on devices connected to your Wi-Fi or local network devices. Doing this may break some web site features.
 
 ## Site Permissions - Microphone
 

@@ -36,10 +36,17 @@ certificate-viewer-key-size = Μέγεθος κλειδιού
 certificate-viewer-inc-locality = Περιοχή εταιρείας
 certificate-viewer-locality = Περιοχή
 certificate-viewer-location = Τοποθεσία
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Όνομα αρχείου καταγραφής
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID καταγραφής
 certificate-viewer-method = Μέθοδος
 certificate-viewer-modulus = Μέτρο
 certificate-viewer-name = Όνομα
+certificate-viewer-surname = Επώνυμο
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Όνομα
 certificate-viewer-not-after = Όχι μετά
 certificate-viewer-not-before = Όχι πριν
 certificate-viewer-organization = Εταιρεία
@@ -110,6 +117,8 @@ certificate-viewer-export = Εξαγωγή
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (άγνωστο)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = certificate
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

@@ -26,11 +26,33 @@ perftools-heading-local-build = 本地构建版本
 
 perftools-description-intro = 记录器将新建标签页打开 <a>profiler.firefox.com</a>。所有数据存储在本地，您到时也可以选择上传以便分享。
 perftools-description-local-build = 若您要对本机自行编译的构建版本进行测量，请将其 objdir 路径添加至下方列表，以便查询调试符号信息。
+perftools-pick-local-build-directory = 选择构建目录
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = 采样间隔：
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -151,7 +173,6 @@ perftools-presets-power-label = 功耗
 perftools-presets-power-description = 排查 { -brand-shorter-name } 功耗 Bug 时使用，开销较低。
 perftools-presets-debug-label = 调试
 perftools-presets-debug-description = 在 { -brand-shorter-name } 中调试时使用。开销较高，请勿用于性能用途，仅应用于了解浏览器行为。
+perftools-presets-web-compat-label = Web Compat
+perftools-presets-web-compat-description = 适合用于在网站中调试 Web 兼容性问题（非性能跟踪用途）。
 perftools-presets-custom-label = 自定义
-
-##
-

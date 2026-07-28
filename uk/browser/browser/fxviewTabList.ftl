@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Перемістити в кінець
     .accesskey = т
 fxviewtabrow-move-tab-window = Перенести в нове вікно
     .accesskey = н
+fxviewtabrow-send-to-device = Надіслати на пристрій
+    .accesskey = Н
+fxviewtabrow-send-to-mobile = Надіслати на мобільний
+    .accesskey = б
 fxviewtabrow-send-tab = Надіслати вкладку на пристрій
     .accesskey = с
 fxviewtabrow-pin-tab = Закріпити вкладку
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Увімкнути звук вкладки
 fxviewtabrow-options-menu-button =
     .title = Параметри для { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Вимкнути звук вкладки
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Увімкнути звук вкладки
+fxviewtabrow-send-to-mobile-connect-device = Під'єднайте пристрій, щоб надсилати вкладки
+fxviewtabrow-send-to-mobile-device-missing2 = Не бачите свій пристрій?
+fxviewtabrow-send-to-mobile-not-verified = Обліковий запис не підтверджено
+fxviewtabrow-send-to-mobile-verify-account = Підтвердьте свій обліковий запис
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Увійдіть, щоб надсилати вкладки
+fxviewtabrow-send-to-mobile-turn-on-sync = Увімкніть синхронізацію, щоб надсилати вкладки

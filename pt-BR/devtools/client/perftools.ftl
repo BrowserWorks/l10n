@@ -26,11 +26,33 @@ perftools-heading-local-build = Build local
 
 perftools-description-intro = As gravações abrem o <a>profiler.firefox.com</a> em uma nova aba. Todos os dados são armazenados localmente, mas você pode escolher enviar para compartilhar.
 perftools-description-local-build = Se você está gravando um profile de uma build que você mesmo compilou nesta máquina, adicione o objdir da sua build à lista abaixo para que ele possa ser usado para procurar informações de símbolos.
+perftools-pick-local-build-directory = Escolha o diretório de compilação
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Intervalo de amostragem:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -146,12 +168,13 @@ perftools-presets-ml-label = Aprendizado de máquina
 perftools-presets-ml-description2 = Ajuste prévio para investigar bugs de aprendizado de máquina no { -brand-shorter-name }.
 perftools-presets-networking-label = Rede
 perftools-presets-networking-description = Ajuste prévio para investigar bugs de rede no { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Rede com log
+perftools-presets-networking-with-logs-description = Ajuste prévio para investigar bugs de rede no { -brand-shorter-name }, incluindo log de rede. Esses registros podem conter informações sensíveis, como as URLs que você visita.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energia
 perftools-presets-power-description = Ajuste prévio para investigar bugs de uso de energia no { -brand-shorter-name }, com baixa sobrecarga.
 perftools-presets-debug-label = Debug
 perftools-presets-debug-description = Configuração prévia de depuração no { -brand-shorter-name }. Alta sobrecarga, não usar para analisar desempenho, útil para se concentrar em entender o comportamento do navegador.
+perftools-presets-web-compat-label = Compatibilidade web
+perftools-presets-web-compat-description = Ajuste prévio recomendado para depurar problemas de compatibilidade na web em sites, em vez de acompanhar desempenho.
 perftools-presets-custom-label = Personalizado
-
-##
-

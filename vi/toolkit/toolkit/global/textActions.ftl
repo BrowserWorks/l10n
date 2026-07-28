@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = Sao chép liên kết sạch
     .accesskey = n
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = Sao chép (không tham số theo dõi)
-    .accesskey = n
 text-action-paste =
     .label = Dán
     .accesskey = P
@@ -73,6 +68,9 @@ text-action-search-text-box-clear =
     .title = Xóa trắng
 text-action-highlight-selection =
     .label = Đánh dấu lựa chọn
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = Thêm bình luận vào lựa chọn
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
@@ -84,5 +82,12 @@ text-action-copy-clean-link-to-highlight =
     .label = Sao chép liên kết sạch đoạn tô sáng
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = Xoá phần đánh dấu
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = Xoá tất cả tô sáng
+profile-window-menu-edit =
+    .label = Chỉnh sửa
+    .accesskey = E

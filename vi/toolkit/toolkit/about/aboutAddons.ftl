@@ -120,6 +120,8 @@ private-browsing-description2 =
     tiện ích mở rộng sẽ không chạy trong khi duyệt web riêng tư và sẽ không có quyền truy cập vào các hoạt động trực tuyến của bạn.
     Chúng tôi đã thực hiện thay đổi này để giữ trình duyệt của bạn riêng tư.
     <label data-l10n-name="private-browsing-learn-more">Tìm hiểu cách quản lý cài đặt tiện ích mở rộng.</label>
+aboutaddons-sidebar =
+    .heading = Tiện ích
 addon-category-discover = Đề xuất
 addon-category-discover-title =
     .title = Đề xuất
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Bật
 extensions-warning-imported-addons2 =
     .message = Vui lòng hoàn tất việc cài đặt các tiện ích mở rộng đã được nhập vào { -brand-short-name }.
 extensions-warning-imported-addons-button = Cài đặt tiện ích mở rộng
+extensions-warning-safe-mode3 =
+    .message = Tất cả tiện ích đã bị vô hiệu hóa bởi chế độ khắc phục sự cố.
 
 ## Strings connected to add-on updates
 
@@ -290,6 +294,10 @@ colorway-removal-notice-message =
         Nhận phiên bản mới trên trang tiện ích.
 colorway-removal-notice-learn-more = Tìm hiểu thêm
 colorway-removal-notice-button = Nhận chủ đề phối màu được cập nhật
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Cài đặt độ tương phản của Windows của bạn đang ghi đè chủ đề { -brand-short-name }. Tắt các cài đặt này để sử dụng chủ đề trong { -brand-short-name }.
 privacy-policy = Chính sách riêng tư
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -473,11 +481,18 @@ available-updates-heading = Cập nhật có sẵn
 recent-updates-heading = Cập nhật gần đây
 release-notes-loading = Đang tải…
 release-notes-error = Xin lỗi, nhưng có lỗi xảy ra khi mở ghi chú phát hành.
+addon-permissions-heading = Quyền hạn
 addon-permissions-empty2 = Tiện ích mở rộng này không yêu cầu bất kỳ quyền nào.
+addon-permissions-required-label = Bắt buộc:
+addon-permissions-optional-label = Không bắt buộc:
 addon-permissions-empty = Tiện ích mở rộng này không yêu cầu bất kỳ quyền nào
 addon-permissions-required = Các quyền cần thiết cho chức năng cốt lõi:
 addon-permissions-optional = Các quyền tùy chọn cho chức năng được bổ sung:
 addon-permissions-learnmore = Tìm hiểu thêm về quyền hạn
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Một số quyền truy cập được quản lý bởi tổ chức của bạn.
 recommended-extensions-heading = Tiện ích mở rộng được đề xuất
 recommended-themes-heading = Chủ đề được đề xuất
 # Variables:
@@ -532,22 +547,26 @@ details-notification-hard-blocked-other =
     .message = Tiện ích này bị chặn do vi phạm chính sách của BrowserWorks và đã bị vô hiệu hóa.
 details-notification-unsigned-link = Thông tin chi tiết
 details-notification-blocked = { $name } đã bị vô hiệu hóa vì vấn đề bảo mật hoặc tính ổn định.
-details-notification-blocked2 =
-    .message = { $name } đã bị vô hiệu hóa vì vấn đề bảo mật hoặc tính ổn định.
 details-notification-blocked-link2 = Xem chi tiết
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Tiện ích mở rộng này bị hạn chế và đã bị vô hiệu hóa. Bạn có thể bật nó, nhưng việc này có thể tiềm ẩn rủi ro.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Tiện ích mở rộng này bị hạn chế. Sử dụng nó có thể tiềm ẩn rủi ro.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Tiện ích này bị hạn chế và đã bị vô hiệu hóa. Bạn có thể bật nó, nhưng việc này có thể tiềm ẩn rủi ro.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Tiện ích này bị hạn chế. Sử dụng nó có thể tiềm ẩn rủi ro.
 details-notification-soft-blocked-extension-disabled =
-    .message = Tiện ích mở rộng này bị hạn chế do vi phạm chính sách của BrowserWorks và đã bị vô hiệu hóa. Bạn có thể kích hoạt nó, nhưng điều này có thể có rủi ro.
+    .message = Tiện ích mở rộng này bị hạn chế do vi phạm chính sách của BrowserWorks và đã bị vô hiệu hóa. Bạn có thể bật nó, nhưng điều này có thể tiềm ẩn rủi ro.
 details-notification-soft-blocked-extension-enabled =
-    .message = Tiện ích mở rộng này vi phạm chính sách của BrowserWorks. Sử dụng nó có thể có rủi ro.
+    .message = Tiện ích mở rộng này vi phạm chính sách của BrowserWorks. Sử dụng nó có thể tiềm ẩn rủi ro.
 details-notification-soft-blocked-other-disabled =
-    .message = Tiện ích bổ sung này bị hạn chế do vi phạm chính sách của BrowserWorks và đã bị vô hiệu hóa. Bạn có thể kích hoạt nó, nhưng điều này có thể có rủi ro.
+    .message = Tiện ích mở rộng này bị hạn chế do vi phạm chính sách của BrowserWorks và đã bị vô hiệu hóa. Bạn có thể bật nó, nhưng điều này có thể tiềm ẩn rủi ro.
 details-notification-soft-blocked-other-enabled =
-    .message = Tiện ích này vi phạm chính sách của BrowserWorks. Sử dụng nó có thể có rủi ro.
+    .message = Tiện ích này vi phạm chính sách của BrowserWorks. Sử dụng nó có thể tiềm ẩn rủi ro.
 details-notification-softblocked-link2 = Xem chi tiết
 details-notification-blocked-link = Thông tin Chi tiết
 details-notification-softblocked = { $name } được cho là gây ra các vấn đề về bảo mật hoặc tính ổn định.
-details-notification-softblocked2 =
-    .message = { $name } được cho là gây ra các vấn đề về bảo mật hoặc tính ổn định.
 details-notification-softblocked-link = Thông tin Chi tiết
 details-notification-gmp-pending = { $name } sắp được cài.
 details-notification-gmp-pending2 =
@@ -573,14 +592,19 @@ permissions-data-addon-button = Quyền hạn và dữ liệu
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Được sử dụng bởi tiện ích mở rộng { $extensionName }
+addon-permissions-data-collection-heading = Thu thập dữ liệu
+addon-permissions-data-collection-empty = Nhà phát triển cho biết tiện ích mở rộng này không yêu cầu thu thập dữ liệu.
+addon-data-collection-provided = Thông tin được cung cấp bởi nhà phát triển tiện ích mở rộng
+addon-data-collection-learnmore = Tìm hiểu thêm về thu thập dữ liệu
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = { -brand-short-name } sử dụng cái này trên about:inference
-mlmodel-link-preview = { -brand-short-name } sử dụng cái này để tạo ra các điểm chính khi bạn xem trước các liên kết
+mlmodel-link-preview = { -brand-short-name } sử dụng cái này để tạo ra nội dung chính khi bạn xem trước các liên kết
 mlmodel-pdfjs = { -brand-short-name } sử dụng cái này để tạo văn bản thay thế cho hình ảnh bạn thêm vào PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } sử dụng cái này để gợi ý tên cho nhóm thẻ của bạn
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } sử dụng cái này để đề xuất các thẻ cho nhóm thẻ của bạn
+mlmodel-formfill-engine = { -brand-short-name } sử dụng cái này để giúp điền vào các mẫu địa chỉ
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = AI trên thiết bị
 addon-category-mlmodel-title =

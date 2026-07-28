@@ -68,31 +68,32 @@ webext-perms-optional-perms-deny =
     .label = 拒绝
     .accesskey = D
 webext-perms-host-description-all-urls = 访问您在所有网站的数据
+webext-perms-host-description-file-urls = 访问您计算机上的本地文件
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
-webext-perms-host-description-wildcard = 访问您在 { $domain } 域名下的数据
+webext-perms-host-description-wildcard = 访问您用于 { $domain } 域名的网站的数据
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
-webext-perms-host-description-too-many-wildcards = 访问您用于其他 { $domainCount } 个域名的数据
+webext-perms-host-description-too-many-wildcards = 访问您在其他 { $domainCount } 个域名的数据
 # Variables:
 #   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., www.mozilla.org)
-webext-perms-host-description-one-site = 访问您在 { $domain } 的数据
+webext-perms-host-description-one-site = 访问您用于 { $domain } 的数据
 # Variables:
 #   $domainCount (Number): Integer indicating the number of additional
 #     hosts for which this webextension is requesting permission.
-webext-perms-host-description-too-many-sites = 访问您用于其他 { $domainCount } 个网站的数据
+webext-perms-host-description-too-many-sites = 访问您在其他 { $domainCount } 个网站的数据
 # Variables:
 #   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., mozilla.org),
 #     $domain should be treated as plural (because it may also include all subdomains, e.g www.mozilla.org, ftp.mozilla.org).
-webext-perms-host-description-one-domain = 访问您在 { $domain } 域名下的数据
+webext-perms-host-description-one-domain = 访问您用于 { $domain } 域名的网站的数据
 # Permission string used for webextensions requesting access to 2 or more domains (and so $domainCount is expected to always
 # be >= 2, for webextensions requesting access to only one domain the `webext-perms-host-description-one-domain` string is
 # used instead).
 # Variables:
 #   $domainCount (Number): Integer indicating the number of websites domains for which this webextension is requesting permission
 #     (the list of domains will follow this string).
-webext-perms-host-description-multiple-domains = 访问您在 { $domainCount } 个域名下的数据
+webext-perms-host-description-multiple-domains = 访问您用于 { $domainCount } 个域名的网站的数据
 
 ## Strings for data collection permissions in the permission prompt.
 
@@ -126,6 +127,7 @@ webext-perms-optional-text-with-data-collection-only = “{ $extension }”请�
 
 webext-site-perms-header-with-gated-perms-midi = 此附加组件会准许 { $hostname } 访问您的 MIDI 设备。
 webext-site-perms-header-with-gated-perms-midi-sysex = 此附加组件会准许 { $hostname } 访问您的 MIDI 设备（支持 SysEx）。
+webext-site-perms-header-with-gated-perms-serial = 此附加组件会准许 { $hostname } 访问您的串行设备。
 
 ##
 
@@ -136,6 +138,12 @@ webext-site-perms-description-gated-perms-midi =
     这些通常是音频合成器等插拔设备，但也可能内置于您的计算机中。
     
     通常网站不被允许访问 MIDI 设备。使用不当可能会造成损坏或危及信息安全。
+webext-site-perms-description-gated-perms-webserial =
+    此类设备包括微控制器、3D 打印机等通过 USB、串行端口或蓝牙连接的设备。
+    
+    您可以选择网站能够访问哪些设备。
+    
+    通常不应允许网站访问串行设备。不当使用可能会导致设备损坏或引发安全问题。
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -150,6 +158,7 @@ webext-site-perms-header-unsigned-with-perms = 要安装“{ $extension }”吗�
 
 webext-site-perms-midi = 访问 MIDI 设备
 webext-site-perms-midi-sysex = 访问支持 SysEx 的 MIDI 设备
+webext-site-perms-serial = 访问串行设备
 
 ## Colorway theme migration
 

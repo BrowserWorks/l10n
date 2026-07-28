@@ -15,7 +15,7 @@ autofill-use-payment-method-os-prompt-other = { -brand-short-name } 正尝试使
 autofill-edit-payment-method-os-prompt-macos = 显示存储的付款方式信息
 autofill-edit-payment-method-os-prompt-windows = { -brand-short-name } 正尝试显示存储的付款方式信息，请在下方登录此 Windows 账户确认。
 autofill-edit-payment-method-os-prompt-other = { -brand-short-name } 正尝试显示存储的付款方式信息。
-# The links lead users to Form Autofill browser preferences.
+# The link leads users to Form Autofill browser preferences.
 autofill-options-link = 表单自动填写选项
 autofill-options-link-osx = 表单自动填写偏好设置
 
@@ -56,25 +56,25 @@ autofill-manage-payment-methods-label = 管理付款方式
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 
-autofill-card-network-amex = 美国运通（American Express）
+autofill-card-network-amex = 美国运通
 autofill-card-network-cartebancaire = Carte Bancaire
-autofill-card-network-diners = 大来卡（Diners Club）
-autofill-card-network-discover = 发现卡（Discover）
-autofill-card-network-jcb = 吉士美（JCB）
-autofill-card-network-mastercard = 万事达（MasterCard）
+autofill-card-network-diners = Diners Club
+autofill-card-network-discover = Discover
+autofill-card-network-jcb = JCB
+autofill-card-network-mastercard = 万事达卡
 autofill-card-network-mir = MIR
-autofill-card-network-unionpay = 银联（Union Pay）
+autofill-card-network-unionpay = 银联
 autofill-card-network-visa = Visa
 # The warning text that is displayed for informing users what categories are
 # about to be filled.  The text would be, for example,
 #   Also autofills organization, phone, email.
 # Variables:
 #   $categories - one or more of the categories, see autofill-category-X below
-autofill-phishing-warningmessage-extracategory = 还将自动填写 { $categories } 栏
+autofill-phishing-warningmessage-extracategory = 还将自动填写“{ $categories }”栏
 # Variation when all are in the same category.
 # Variables:
 #   $categories - one or more of the categories
-autofill-phishing-warningmessage = 自动填写 { $categories }
+autofill-phishing-warningmessage = 自动填写“{ $categories }”
 # Used in autofill drop down suggestion to indicate what other categories Form Autofill will attempt to fill.
 autofill-category-address = 地址
 autofill-category-name = 姓名
@@ -83,4 +83,4 @@ autofill-category-tel = 电话号码
 autofill-category-email = 电子邮箱
 # This string is used in drop down suggestion when users try to autofill credit
 # card on an insecure website (without https).
-autofill-insecure-field-warning-description = { -brand-short-name } 检测到一个不安全的网站。表单自动填写已暂时禁用
+autofill-insecure-field-warning-description = { -brand-short-name } 检测到此网站不安全。表单自动填写功能已暂时禁用。

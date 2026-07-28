@@ -120,6 +120,8 @@ private-browsing-description2 =
     extension won’t work while private browsing, and won’t have access to your online activities
     there. We’ve made this change to keep your private browsing private.
     <label data-l10n-name="private-browsing-learn-more">Learn how to manage extension settings</label>
+aboutaddons-sidebar =
+    .heading = Add-ons
 addon-category-discover = Recommendations
 addon-category-discover-title =
     .title = Recommendations
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Enable
 extensions-warning-imported-addons2 =
     .message = Please finalise the installation of extensions that were imported to { -brand-short-name }.
 extensions-warning-imported-addons-button = Install Extensions
+extensions-warning-safe-mode3 =
+    .message = All add-ons have been disabled by Troubleshoot Mode.
 
 ## Strings connected to add-on updates
 
@@ -290,6 +294,10 @@ colorway-removal-notice-message =
         the add-ons site.
 colorway-removal-notice-learn-more = Learn more
 colorway-removal-notice-button = Get updated colourways themes
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Your Windows contrast settings are overriding { -brand-short-name } themes. Turn off these settings to use themes in { -brand-short-name }.
 privacy-policy = Privacy Policy
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -474,11 +482,18 @@ available-updates-heading = Available Updates
 recent-updates-heading = Recent Updates
 release-notes-loading = Loading…
 release-notes-error = Sorry, but there was an error loading the release notes.
+addon-permissions-heading = Permissions
 addon-permissions-empty2 = This extension doesn’t require any permissions.
+addon-permissions-required-label = Required:
+addon-permissions-optional-label = Optional:
 addon-permissions-empty = This extension doesn’t require any permissions
 addon-permissions-required = Required permissions for core functionality:
 addon-permissions-optional = Optional permissions for added functionality:
 addon-permissions-learnmore = Learn more about permissions
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Some permissions are managed by your organisation.
 recommended-extensions-heading = Recommended Extensions
 recommended-themes-heading = Recommended Themes
 # Variables:
@@ -533,9 +548,15 @@ details-notification-hard-blocked-other =
     .message = This add-on is blocked for violating BrowserWorks’s policies and has been disabled.
 details-notification-unsigned-link = More Information
 details-notification-blocked = { $name } has been disabled due to security or stability issues.
-details-notification-blocked2 =
-    .message = { $name } has been disabled due to security or stability issues.
 details-notification-blocked-link2 = See Details
+details-notification-soft-blocked-extension-disabled2 =
+    .message = This extension is restricted and has been disabled. You can enable it, but this may be risky.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = This extension is restricted. Using it may be risky.
+details-notification-soft-blocked-other-disabled2 =
+    .message = This add-on is restricted and has been disabled. You can enable it, but this may be risky.
+details-notification-soft-blocked-other-enabled2 =
+    .message = This add-on is restricted. Using it may be risky.
 details-notification-soft-blocked-extension-disabled =
     .message = This extension is restricted for violating BrowserWorks’s policies and has been disabled. You can enable it, but this may be risky.
 details-notification-soft-blocked-extension-enabled =
@@ -547,8 +568,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = See Details
 details-notification-blocked-link = More Information
 details-notification-softblocked = { $name } is known to cause security or stability issues.
-details-notification-softblocked2 =
-    .message = { $name } is known to cause security or stability issues.
 details-notification-softblocked-link = More Information
 details-notification-gmp-pending = { $name } will be installed shortly.
 details-notification-gmp-pending2 =
@@ -574,6 +593,10 @@ permissions-data-addon-button = Permissions and data
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Used by the extension { $extensionName }
+addon-permissions-data-collection-heading = Data Collection
+addon-permissions-data-collection-empty = The developer says this extension doesn’t require data collection.
+addon-data-collection-provided = Info provided by the extension developer
+addon-data-collection-learnmore = Learn more about data collection
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -582,6 +605,7 @@ mlmodel-link-preview = { -brand-short-name } uses this to generate key points wh
 mlmodel-pdfjs = { -brand-short-name } uses this to create alt text for images you add to PDFs
 mlmodel-smart-tab-topic-engine = { -brand-short-name } uses this to suggest names for your tab groups
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } uses this to suggest tabs for your tab groups
+mlmodel-formfill-engine = { -brand-short-name } uses this to help fill in address forms
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = On-device AI
 addon-category-mlmodel-title =

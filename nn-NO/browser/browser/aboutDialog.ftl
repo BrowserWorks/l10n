@@ -12,23 +12,37 @@ update-updateButton =
     .label = Start på nytt for å oppdatere { -brand-shorter-name }
     .accesskey = S
 update-checkingForUpdates = Ser etter oppdateringar…
+settings-update-checking-for-updates =
+    .label = Ser etter oppdateringar…
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
 
 settings-update-downloading = <img data-l10n-name="icon"/>Lastar ned oppdatering — <label data-l10n-name="download-status">{ $transfer }</label>
 aboutdialog-update-downloading = Lastar ned oppdatering — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading-2 =
+    .label = Lastar ned oppdatering — { $transfer }
 
 ##
 
 update-applying = Installerer oppdatering…
+settings-update-applying =
+    .label = Installerer oppdatering…
 update-failed = Mislykka oppdatering. <label data-l10n-name="failed-link">Last ned den nyaste versjonen</label>
 update-failed-main = Mislykka oppdatering. <a data-l10n-name="failed-link-main">Last ned den nyaste versjonen</a>
 update-adminDisabled = Oppdateringar er avslått av systemansvarleg
 update-policy-disabled = Oppdateringar er deaktiverte av organisasjonen din
+settings-update-policy-disabled =
+    .label = Oppdateringar er deaktiverte av organisasjonen din
 update-noUpdatesFound = { -brand-short-name } er oppdatert
+settings-update-no-updates-found =
+    .label = { -brand-short-name } er oppdatert
 aboutdialog-update-checking-failed = Klarte ikkje å sjå etter oppdateringar
+settings-update-checking-failed =
+    .label = Klarte ikkje å sjå etter oppdateringar
 update-otherInstanceHandlingUpdates = { -brand-short-name } vert oppdatert av ein annan instans
+settings-update-other-instance-handling-updates =
+    .label = { -brand-short-name } vert oppdatert av ein annan instans
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -36,8 +50,12 @@ update-otherInstanceHandlingUpdates = { -brand-short-name } vert oppdatert av ei
 aboutdialog-update-manual-with-link = Oppdateringar er tilgjengelege på <label data-l10n-name="manual-link">{ $displayUrl }</label>
 settings-update-manual-with-link = Oppdateringar er tilgjengelege på <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Du kan ikkje utføre fleire oppdateringar på dette systemet. <label data-l10n-name="unsupported-link">Les meir</label>
+settings-update-unsupported = Du kan ikkje utføre fleire oppdateringar på dette systemet. <a data-l10n-name="unsupported-link">Les meir</a>
 update-restarting = Startar på nytt...
+settings-update-restarting =
+    .label = Startar på nytt...
 update-internal-error2 = Klarte ikkje å sjå etter oppdateringar på grunn av intern feil. Oppdateringar tilgjengelege på <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-internal-error = Klarte ikkje å sjå etter oppdateringar på grunn av intern feil. Oppdateringar tilgjengelege på <a data-l10n-name="manual-link">{ $displayUrl }</a>
 
 ##
 
@@ -52,14 +70,14 @@ community-2 = { -brand-short-name } er utvikla av <label data-l10n-name="communi
 helpus = Vil du hjelpe til? <label data-l10n-name="helpus-donateLink">Gje ei pengegåve</label> eller <label data-l10n-name="helpus-getInvolvedLink">ver med!</label>
 bottomLinks-license = Lisensinfo
 bottom-links-terms = Brukarvilkår
-bottom-links-privacy = Personvernerklæring
+bottom-links-privacy = Personvernfråsegn
 bottomLinks-rights = Rettar for sluttbrukarar
 bottomLinks-privacy = Personvernpraksis
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
 #   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
-aboutDialog-version = { $version } ({ $bits }-bitar)
+aboutDialog-version = { $version } ({ $bits }-bit)
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
 #   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1

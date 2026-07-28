@@ -51,11 +51,23 @@ genai-menu-ask-generic =
 # $provider (string) - name of the provider
 genai-menu-ask-provider =
     .label = Pedir ao { $provider }
+genai-menu-open-generic =
+    .label = Abrir o Chatbot de IA
+# $provider (string) - name of the provider
+genai-menu-open-provider =
+    .label = Abrir { $provider }
 genai-menu-remove-generic =
     .label = Remover chatbot de IA
 # $provider (string) - name of the provider
 genai-menu-remove-provider =
     .label = Remover { $provider }
+genai-menu-remove-sidebar =
+    .label = Remover da barra lateral
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Pedir ao { $provider }
+genai-menu-new-badge = Novo
+genai-menu-summarize-page = Resumir página
 genai-input-ask-generic =
     .placeholder = Perguntar ao chatbot de IA…
 # $provider (string) - name of the provider
@@ -82,12 +94,26 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Ocultar atalho do chatbot
+genai-menu-choose-chatbot =
+    .label = Escolher um Chatbot de IA
+genai-menu-ask-generic-2 =
+    .label = Perguntar ao Chatbot de IA
+    .accesskey = z
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Perguntar ao { $provider }
+    .accesskey = z
+genai-menu-no-provider-2 =
+    .label = Perguntar a um Chatbot de IA
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = Chatbot de IA
 genai-header-provider-menu =
     .title = Escolher um chatbot
+genai-header-settings-button =
+    .title = Configurações do Chat de IA
 genai-header-options-button =
     .title = Abrir menu
 genai-header-close-button =
@@ -106,15 +132,21 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = Sobre os chatbots de IA no { -brand-short-name }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = Como a página é longa, este é um resumo parcial.
+
 ## Chatbot footer
 
+genai-page-button-summarize = Resumir página
 
 ## Chatbot onboarding
 
 genai-onboarding-header = Faça resumos, brainstorming e muito mais, enquanto navega
 genai-onboarding-choose-header = Escolha um chatbot de IA para utilizar na barra lateral do { -brand-short-name }
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
-genai-onboarding-description = Escolha um chatbot de IA para utilizar na barra lateral do { -brand-short-name }. Iremos mostrar detalhes sobre cada chatbot quando o selecionar. Mude a qualquer momento. <a data-l10n-name="learn-more">Saber mais</a>
+genai-onboarding-description = Escolha um chatbot de IA para utilizar na barra lateral do { -brand-short-name }. Vamos mostrar detalhes sobre cada chatbot quando o selecionar. Mude a qualquer momento. <a data-l10n-name="learn-more">Saber mais</a>
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
 genai-onboarding-choose-description = Mude a qualquer altura. Para ajudar na escolha, <a data-l10n-name="learn-more">saiba mais sobre cada chatbot</a>.
 genai-onboarding-primary = Continuar
@@ -143,6 +175,15 @@ genai-onboarding-select-primary = Começar a conversar
 genai-chatbot-contextual-title = Utilize um robô de conversação de IA sem mudar de separadores
 genai-chatbot-contextual-subtitle = Converse e navegue, lado a lado, quando adiciona um chatbot com IA à barra lateral do { -brand-short-name }.
 genai-chatbot-contextual-button = Escolha um chatbot
+genai-chatbot-summarize-title = Novo! Resumir páginas com um clique
+genai-chatbot-summarize-button = Resumir página
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-provider-subtitle = Clique com o botão direito no seu chatbot de IA na barra lateral e escolha “Resumir página”.
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-generic-subtitle = Clique com o botão direito no botão de brilhos na barra lateral e escolha “Resumir página”. Na primeira vez, também irá escolher um chatbot de IA.
+# “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
+genai-chatbot-summarize-footer-provider-subtitle = Abra o seu chatbot de IA na barra lateral e escolha “Resumir página” no final.
+genai-chatbot-summarize-footer-generic-subtitle = Adicione um chatbot de IA à barra lateral do { -brand-short-name } para resumir rapidamente as páginas.
 
 ## Chatbot onboarding choices
 ## These describe features/capabilities of chatbot providers. These are not buttons/actions.
@@ -188,3 +229,48 @@ link-preview-reading-time =
         [one] { $range } minuto de tempo de leitura
        *[other] { $range } minutos de tempo de leitura
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = O { -brand-short-name } não pode pré-visualizar esta ligação
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Visitar ligação
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = O { -brand-short-name } não consegue gerar pontos-chave para esta página de Internet.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Algo correu mal.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Tentar novamente
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Definições de pré-visualização de ligações
+link-preview-settings-enable =
+    .label = Ativar pré-visualizações de ligações
+    .description = Veja o título, descrição e mais informações da página quando utiliza um atalho ou utiliza menu de contexto numa ligação.
+link-preview-settings-key-points =
+    .label = Permitir que a IA leia o início da página e crie pontos-chave
+link-preview-settings-long-press =
+    .label = Atalho: clique e mantenha a ligação pressionada durante 1 segundo (toque longo)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Ver mais com a IA?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = O { -brand-short-name } utiliza IA para ler o início da página e gerar alguns pontos-chave. Para priorizar a sua privacidade, isto acontece no seu dispositivo.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Novo: clique e aguarde em qualquer ligação para uma pré-visualização
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Veja uma descrição curta, tempo de leitura, entre outros, para decidir se a ligação merece ser aberta. Também disponível ao clicar com o botão direito do rato.
+# Header for the key points section
+link-preview-key-points-header = Pontos chave
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Os pontos chave são gerados pela IA e podem conter erros.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Primeira configuração • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Vai ver os pontos-chave mais rapidamente da próxima vez.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Ver uma pré-visualização
+# Onboarding card Close button
+link-preview-onboarding-close = Fechar
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Configuração inicial
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Isto poderá demorar algum tempo. Irá ver os pontos chave mais rapidamente da próxima vez.

@@ -6,10 +6,12 @@ safeb-blocked-phishing-page-title = ไซต์หลอกลวงข้า�
 safeb-blocked-malware-page-title = การเยี่ยมชมเว็บไซต์นี้อาจเป็นอันตรายต่อคอมพิวเตอร์ของคุณ
 safeb-blocked-unwanted-page-title = ไซต์ข้างหน้าอาจมีโปรแกรมที่เป็นอันตราย
 safeb-blocked-harmful-page-title = ไซต์ข้างหน้าอาจมีมัลแวร์
+safeb-blocked-addon-page-title = ไซต์ถูกปิดกั้นเพื่อความปลอดภัยของคุณ
 safeb-blocked-phishing-page-short-desc = { -brand-short-name } ได้ปิดกั้นหน้านี้เนื่องจากหน้าอาจหลอกลวงคุณให้ทำบางอย่างที่เป็นอันตรายอย่างติดตั้งซอฟต์แวร์หรือเปิดเผยข้อมูลส่วนบุคคลอย่างรหัสผ่านหรือบัตรเครดิต
 safeb-blocked-malware-page-short-desc = { -brand-short-name } ได้ปิดกั้นหน้านี้เนื่องจากหน้าอาจพยายามติดตั้งซอฟต์แวร์ที่ประสงค์ร้ายที่อาจขโมยหรือลบข้อมูลส่วนบุคคลในคอมพิวเตอร์ของคุณ
 safeb-blocked-unwanted-page-short-desc = { -brand-short-name } ได้ปิดกั้นหน้านี้เนื่องจากหน้าอาจพยายามหลอกลวงคุณให้ติดตั้งโปรแกรมที่เป็นอันตรายต่อประสบการณ์การเรียกดูของคุณ (ตัวอย่างเช่น โดยการเปลี่ยนหน้าแรกของคุณหรือแสดงโฆษณาพิเศษในหน้าที่คุณเยี่ยมชม)
 safeb-blocked-harmful-page-short-desc = { -brand-short-name } ได้ปิดกั้นหน้านี้เนื่องจากหน้าอาจพยายามติดตั้งแอปที่เป็นอันตรายที่ขโมยหรือลบข้อมูลของคุณ (ตัวอย่างเช่น รูปถ่าย, รหัสผ่าน, ข้อความ และบัตรเครดิต)
+safeb-blocked-addon-page-short-desc = { -brand-short-name } ปิดกั้นหน้านี้เนื่องจากส่วนเสริมของคุณพยายามเปิดหน้านี้ ไซต์นี้อาจถูกใช้เพื่อขโมยข้อมูลของคุณ เช่น รหัสผ่าน หรือหมายเลขบัตรเครดิต
 # Variables:
 #   $advisoryname (string) - Name of the advisory entity
 safeb-palm-advisory-desc = คำแนะนำโดย <a data-l10n-name='advisory_provider'>{ $advisoryname }</a>
@@ -62,3 +64,13 @@ safeb-blocked-harmful-page-learn-more = เรียนรู้เพิ่ม�
 safeb-palm-notdeceptive =
     .label = นี่ไม่ใช่ไซต์หลอกลวง…
     .accesskey = ห
+
+## Variables:
+##  $addonName (string) - the name of the harmful add-on
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-addon-page-error-desc-override = <strong>ทำไมไซต์นี้จึงถูกปิดกั้น?</strong>
+safeb-blocked-addon-page-error-desc2-override = <strong>{ $sitename }</strong> อาจเชื่อมโยงกับกิจกรรมหลอกลวงและเป็นอันตราย
+safeb-blocked-addon-page-error-desc3-override = <strong>คุณสามารถทำอะไรได้บ้าง?</strong>
+safeb-blocked-addon-page-error-desc4-override = เพื่อป้องกันไม่ให้เกิดเหตุการณ์นี้ขึ้นอีก คุณสามารถลบหรือปิดใช้งาน <strong>{ $addonName }</strong> จาก about:addons ได้
+safeb-blocked-addon-page-learn-more3 = <a data-l10n-name='firefox_support_harmful_addons'>เรียนรู้เพิ่มเติมเกี่ยวกับการป้องกันส่วนเสริมที่อันตรายของ { -brand-short-name }</a>

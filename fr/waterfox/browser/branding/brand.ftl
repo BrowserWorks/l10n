@@ -25,4 +25,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Waterfox
 -vendor-short-name = BrowserWorks
-trademarkInfo = Waterfox et les logos Waterfox sont des marques déposées de la BrowserWorks.
+trademarkInfo = Waterfox et les logos Waterfox sont des marques déposées de la Fondation BrowserWorks.

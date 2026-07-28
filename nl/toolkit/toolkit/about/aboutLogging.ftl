@@ -31,6 +31,7 @@ about-logging-no-log-modules = Geen
 about-logging-no-log-file = Geen
 about-logging-logging-preset-selector-text = Voorinstelling logging:
 about-logging-with-profiler-stacks-checkbox = Stacktraces voor logboekberichten inschakelen
+about-logging-with-javascript-tracing-checkbox = JavaScript-tracering inschakelen
 about-logging-menu =
     .title = Geavanceerde opties
 
@@ -54,6 +55,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Logboekmodules om problemen met WebCodecs-audio-/videodecoders en -encoders, en afbeeldingsdecoders te diagnosticeren
 about-logging-preset-ml-label = Machinaal leren
 about-logging-preset-ml-description = Logboekmodules om machinevertalingsproblemen te diagnosticeren
+about-logging-preset-web-compat-label = Webcompatibiliteit
+about-logging-preset-web-compat-description = Logboekmodules om webcompatibiliteitsproblemen te diagnosticeren
+about-logging-preset-navigation = Navigatie
+about-logging-preset-navigation-description = Logboekmodules om problemen met navigatie en sessiegeschiedenis te diagnosticeren
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Logboekmodules om WebGPU te diagnosticeren
 about-logging-preset-gfx-label = Grafisch
@@ -100,4 +105,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> URL delen
 about-logging-upload-error = Er is een fout opgetreden bij het uploaden van het profiel: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Er is een fout opgetreden bij het opslaan van het geüploade profiel: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Er is een fout opgetreden bij het opslaan van het bestand: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profiel { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Geüploade profielen
+about-logging-no-uploaded-profiles = Er zijn nog geen profielen geüpload.
+about-logging-delete-uploaded-profile = Verwijderen
+about-logging-view-uploaded-profile = Profiel bekijken
+about-logging-delete-profile-confirm-title = Profiel verwijderen
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Weet u zeker dat u het profiel ‘{ $profileName }’ wilt verwijderen? Dit kan niet ongedaan worden gemaakt.
+about-logging-deleting-profile = Verwijderen…

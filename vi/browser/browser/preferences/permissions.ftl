@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Cho phép
     .accesskey = h
+permissions-add =
+    .label = Thêm
+    .accesskey = A
 permissions-button-off =
     .label = Tắt
     .accesskey = O
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Xóa tất cả các trang web
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Lưu thay đổi
+    .buttonaccesskeyaccept = L
 permission-dialog =
     .buttonlabelaccept = Lưu thay đổi
     .buttonaccesskeyaccept = L
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Bạn có thể chỉ định trang web nào luôn hoặc không bao giờ được phép sử dụng cookie và dữ liệu trang web. Nhập địa chỉ chính xác của trang web bạn muốn quản lý và sau đó nhấp vào Chặn, Chỉ cho phép với phiên này hoặc Cho phép.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = Ngoại lệ - Xóa lịch sử khi tắt trình duyệt
+permissions-exceptions-shutdown-clearing-desc = Bạn có thể chỉ định những trang web nào sẽ giữ lại dữ liệu khi { -brand-short-name } xóa lịch sử lúc đóng ứng dụng. Nhập địa chỉ chính xác của trang web bạn muốn quản lý rồi nhấp vào Cho phép.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Bạn có thể tắt Chế độ chỉ HTTPS cho các trang web cụ thể. { -brand-short-name } sẽ không cố gắng nâng cấp kết nối để bảo mật HTTPS cho các trang web đó. Các trường hợp ngoại lệ không áp dụng cho các cửa sổ riêng tư.
 permissions-exceptions-https-only-desc2 = Bạn có thể tắt Chế độ chỉ HTTPS cho các trang web cụ thể. { -brand-short-name } sẽ không nâng cấp kết nối để bảo mật HTTPS cho các trang web đó.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Các trang web được phép - Cửa sổ bật lên và chuyển hướng của bên thứ ba
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Bạn có thể chỉ định trang web nào được phép mở cửa sổ bật lên và được chuyển hướng bởi frame của bên thứ ba.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Các trang web dưới đây đã yêu cầu quy�
 permissions-site-camera-disable-label =
     .label = Chặn các yêu cầu mới về việc cho phép tru cập máy ảnh của bạn
 permissions-site-camera-disable-desc = Điều này sẽ ngăn chặn bất cứ trang web nào không được liệt kê ở trên gửi yêu cầu cho phép việc truy cập máy ảnh của bạn. Chặn thông báo có thể ảnh hưởng đến một số tính năng trang web.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Cài đặt - Ứng dụng và dịch vụ thiết bị
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Các trang web này đã yêu cầu quyền truy cập vào các ứng dụng và dịch vụ trên thiết bị này. Bạn có thể chọn cho phép hoặc chặn các trang web thực hiện việc này.
+permissions-site-localhost-disable-label =
+    .label = Chặn các yêu cầu mới truy cập vào ứng dụng và dịch vụ trên thiết bị này
+permissions-site-localhost-disable-desc = Thao tác này sẽ ngăn bất kỳ trang web nào không được liệt kê ở trên yêu cầu quyền truy cập vào các ứng dụng và dịch vụ trên thiết bị này. Thao tác này có thể làm hỏng một số tính năng của trang web.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Cài đặt - Thiết bị mạng cục bộ
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Các trang web này đã yêu cầu quyền truy cập vào các ứng dụng và dịch vụ trên thiết bị được kết nối với Wi-Fi hoặc mạng cục bộ của bạn. Bạn có thể chọn cho phép hoặc chặn các trang web thực hiện việc này.
+permissions-site-local-network-disable-label =
+    .label = Chặn các yêu cầu mới truy cập ứng dụng và dịch vụ trên các thiết bị được kết nối với Wi-Fi hoặc mạng cục bộ của bạn.
+permissions-site-local-network-disable-desc = Thao tác này sẽ ngăn bất kỳ trang web nào không được liệt kê ở trên yêu cầu quyền truy cập vào các ứng dụng và dịch vụ trên các thiết bị được kết nối với Wi-Fi hoặc thiết bị mạng cục bộ của bạn. Thao tác này có thể làm hỏng một số tính năng của trang web.
 
 ## Site Permissions - Microphone
 

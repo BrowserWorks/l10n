@@ -20,6 +20,17 @@ permission-dialog-description-file-app = Allow this file to open the { $scheme }
 permission-dialog-description-extension-app = Allow the extension { $extension } to open the { $scheme } link with { $appName }?
 permission-dialog-description-system-app = Open the { $scheme } link with { $appName }?
 permission-dialog-description-system-noapp = Open the { $scheme } link?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Allow this site to open your digital wallet?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = Opening a <strong>{ $scheme }</strong> link allows <strong>{ $host }</strong> to request your real identity with <strong>{ $appName }</strong>. Only continue if you trust this site.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = Opening a <strong>{ $scheme }</strong> link allows this site to request your real identity with <strong>{ $appName }</strong>. Only continue if you trust this site.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = Opening a <strong>{ $scheme }</strong> link allows <strong>{ $host }</strong> to request your real identity from your digital wallet. Only continue if you trust this site.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = Opening a <strong>{ $scheme }</strong> link allows this site to request your real identity from your digital wallet. Only continue if you trust this site.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -68,3 +79,23 @@ choose-app-btn =
 choose-other-app-window-title = Another Application…
 # Displayed under the name of a protocol handler in the Launch Application dialog.
 choose-dialog-privatebrowsing-disabled = Disabled in Private Windows
+
+## Mailto handler picker
+## Shown when the user clicks a mailto: link and lets them pick which configured
+## web mail service (or the OS default app) should handle email links.
+
+mailto-handler-picker-window =
+    .title = Choose your email app
+    .style = min-width: 26em; min-height: 26em;
+mailto-handler-picker-subtitle = Pick the app you’d like to use for email links. You can change this later in Settings.
+# Checkbox letting the user keep being prompted with this picker each time they
+# click an email link, instead of remembering the chosen handler.
+mailto-handler-picker-always-ask = Always ask me when I click an email link
+# Confirms the picker: sets the selected app as the handler for email links.
+mailto-handler-picker-set-default =
+    .label = Set as default
+    .accesskey = S
+# Dismisses the picker without choosing an email app for now.
+mailto-handler-picker-not-now =
+    .label = Not now
+    .accesskey = N

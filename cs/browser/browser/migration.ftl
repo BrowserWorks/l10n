@@ -142,42 +142,42 @@ browser-data-history-label =
 browser-data-formdata-checkbox =
     .label =
         { $browser ->
-            [firefox] Uložené formuláře
-            [chrome] Uložené formuláře
+            [firefox] Uložená historie formulářů
+            [chrome] Uložená historie formulářů
             [edge] Vyplňování formulářů
             [safari] Vyplňování formulářů
-           *[other] Uložené formuláře
+           *[other] Uložená historie formulářů
         }
 browser-data-formdata-label =
     .value =
         { $browser ->
-            [firefox] Uložené formuláře
-            [chrome] Uložené formuláře
+            [firefox] Uložená historie formulářů
+            [chrome] Uložená historie formulářů
             [edge] Vyplňování formulářů
             [safari] Vyplňování formulářů
-           *[other] Uložené formuláře
+           *[other] Uložená historie formulářů
         }
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-checkbox =
     .label =
         { $browser ->
-            [firefox] Uložené přihlašovací údaje a hesla
+            [firefox] Uložená uživatelská jména a hesla
             [chrome] Uložená hesla
             [edge] Uložená hesla
             [safari] Hesla
-           *[other] Uložené přihlašovací údaje a hesla
+           *[other] Uložená uživatelská jména a hesla
         }
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-label =
     .value =
         { $browser ->
-            [firefox] Uložené přihlašovací údaje a hesla
+            [firefox] Uložená uživatelská jména a hesla
             [chrome] Uložená hesla
             [edge] Uložená hesla
             [safari] Hesla
-           *[other] Uložené přihlašovací údaje a hesla
+           *[other] Uložená uživatelská jména a hesla
         }
 browser-data-bookmarks-checkbox =
     .label =
@@ -208,6 +208,6 @@ browser-data-session-checkbox =
 browser-data-session-label =
     .value = Okna a panely
 browser-data-payment-methods-checkbox =
-    .label = Způsoby platby
+    .label = Platební metody
 browser-data-payment-methods-label =
-    .value = Způsoby platby
+    .value = Platební metody

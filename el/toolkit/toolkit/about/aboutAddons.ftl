@@ -119,6 +119,8 @@ private-browsing-description2 =
     { -brand-short-name } δεν θα εκτελούνται από προεπιλογή στα ιδιωτικά παράθυρα. Αν δεν το επιτρέψετε στις ρυθμίσεις, η
     επέκταση δεν θα λειτουργεί κατά την ιδιωτική περιήγηση και δεν θα έχει πρόσβαση στις διαδικτυακές σας δραστηριότητες εκεί. Έχουμε κάνει αυτήν την αλλαγή για να παραμείνει η ιδιωτική σας περιήγηση ιδιωτική.
     <label data-l10n-name="private-browsing-learn-more">Μάθετε πώς να διαχειριστείτε τις ρυθμίσεις επεκτάσεων</label>
+aboutaddons-sidebar =
+    .heading = Πρόσθετα
 addon-category-discover = Προτάσεις
 addon-category-discover-title =
     .title = Προτάσεις
@@ -169,6 +171,8 @@ extensions-warning-update-security-button = Ενεργοποίηση
 extensions-warning-imported-addons2 =
     .message = Ολοκληρώστε την εγκατάσταση των επεκτάσεων που εισήχθησαν στο { -brand-short-name }.
 extensions-warning-imported-addons-button = Εγκατάσταση επεκτάσεων
+extensions-warning-safe-mode3 =
+    .message = Όλα τα πρόσθετα έχουν απενεργοποιηθεί από τη λειτουργία επίλυσης προβλημάτων.
 
 ## Strings connected to add-on updates
 
@@ -288,6 +292,10 @@ colorway-removal-notice-message =
         νέες εκδόσεις από τον ιστότοπο των προσθέτων.
 colorway-removal-notice-learn-more = Μάθετε περισσότερα
 colorway-removal-notice-button = Αποκτήστε τα νέα θέματα χρωματικών συνδυασμών
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Οι ρυθμίσεις αντίθεσης των Windows παρακάμπτουν τα θέματα του { -brand-short-name }. Απενεργοποιήστε αυτές τις ρυθμίσεις για να χρησιμοποιήσετε τα θέματα στο { -brand-short-name }.
 privacy-policy = Πολιτική απορρήτου
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -473,11 +481,18 @@ available-updates-heading = Διαθέσιμες ενημερώσεις
 recent-updates-heading = Πρόσφατες ενημερώσεις
 release-notes-loading = Φόρτωση…
 release-notes-error = Λυπούμαστε, αλλά προέκυψε σφάλμα φόρτωσης των σημειώσεων έκδοσης.
+addon-permissions-heading = Δικαιώματα
 addon-permissions-empty2 = Αυτή η επέκταση δεν απαιτεί κανένα δικαίωμα.
+addon-permissions-required-label = Απαιτούμενα:
+addon-permissions-optional-label = Προαιρετικά:
 addon-permissions-empty = Αυτή η επέκταση δεν απαιτεί δικαιώματα
 addon-permissions-required = Απαιτούμενα δικαιώματα για βασική λειτουργικότητα:
 addon-permissions-optional = Προαιρετικά δικαιώματα για επιπρόσθετη λειτουργικότητα:
 addon-permissions-learnmore = Μάθετε περισσότερα σχετικά με τα δικαιώματα
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Ορισμένα δικαιώματα ρυθμίζονται από τον οργανισμό σας.
 recommended-extensions-heading = Προτεινόμενες επεκτάσεις
 recommended-themes-heading = Προτεινόμενα θέματα
 # Variables:
@@ -532,9 +547,15 @@ details-notification-hard-blocked-other =
     .message = Αυτό το πρόσθετο έχει αποκλειστεί επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
 details-notification-unsigned-link = Περισσότερες πληροφορίες
 details-notification-blocked = Το { $name } έχει απενεργοποιηθεί για λόγους ασφαλείας ή σταθερότητας.
-details-notification-blocked2 =
-    .message = Το { $name } έχει απενεργοποιηθεί για λόγους ασφαλείας ή σταθερότητας.
 details-notification-blocked-link2 = Προβολή λεπτομερειών
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Αυτή η επέκταση είναι περιορισμένη και έχει απενεργοποιηθεί. Μπορείτε να την ενεργοποιήσετε, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Αυτή η επέκταση είναι περιορισμένη. Η χρήση της ενδέχεται να είναι επικίνδυνη.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Αυτό το πρόσθετο είναι περιορισμένο και έχει απενεργοποιηθεί. Μπορείτε να το ενεργοποιήσετε, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Αυτό το πρόσθετο είναι περιορισμένο. Η χρήση του ενδέχεται να είναι επικίνδυνη.
 details-notification-soft-blocked-extension-disabled =
     .message = Αυτή η επέκταση περιορίζεται επειδή παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί. Μπορείτε να το ενεργοποιήσετε, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
 details-notification-soft-blocked-extension-enabled =
@@ -546,8 +567,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Προβολή λεπτομερειών
 details-notification-blocked-link = Περισσότερες πληροφορίες
 details-notification-softblocked = Το { $name } είναι γνωστό ότι προκαλεί προβλήματα ασφαλείας ή σταθερότητας.
-details-notification-softblocked2 =
-    .message = Το { $name } είναι γνωστό ότι προκαλεί προβλήματα ασφαλείας ή σταθερότητας.
 details-notification-softblocked-link = Περισσότερες πληροφορίες
 details-notification-gmp-pending = Το πρόσθετο { $name } θα εγκατασταθεί σύντομα.
 details-notification-gmp-pending2 =
@@ -573,6 +592,10 @@ permissions-data-addon-button = Δικαιώματα και δεδομένα
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Χρησιμοποιείται από την επέκταση { $extensionName }
+addon-permissions-data-collection-heading = Συλλογή δεδομένων
+addon-permissions-data-collection-empty = Ο δημιουργός δηλώνει ότι αυτή η επέκταση δεν απαιτεί συλλογή δεδομένων.
+addon-data-collection-provided = Οι πληροφορίες παρέχονται από τον δημιουργό της επέκτασης
+addon-data-collection-learnmore = Μάθετε περισσότερα σχετικά με τη συλλογή δεδομένων
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -581,6 +604,7 @@ mlmodel-link-preview = Χρησιμοποιείται από το { -brand-short
 mlmodel-pdfjs = Χρησιμοποιείται από το { -brand-short-name } για τη δημιουργία εναλλακτικού κειμένου για τις εικόνες που προσθέτετε σε αρχεία PDF
 mlmodel-smart-tab-topic-engine = Χρησιμοποιείται από το { -brand-short-name } για την πρόταση ονομάτων για τις ομάδες καρτελών σας
 mlmodel-smart-tab-embedding-engine = Χρησιμοποιείται από το { -brand-short-name } για την πρόταση καρτελών για τις ομάδες καρτελών σας
+mlmodel-formfill-engine = Χρησιμοποιείται από το { -brand-short-name } για τη συμπλήρωση φορμών διευθύνσεων
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = Τοπική ΤΝ
 addon-category-mlmodel-title =

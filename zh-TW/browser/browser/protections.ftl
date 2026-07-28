@@ -37,7 +37,7 @@ protection-report-manage-protections = 管理設定
 graph-today = 今天
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = 在這一週當中封鎖的各類型追蹤器的總數圖表
-social-tab-title = 社交媒體追蹤器
+social-tab-title = 社群網路追蹤器
 social-tab-contant = 社群網站會在其他網站放置追蹤器，以追蹤您除了在社群網站分享的東西之外，還在網路上做了或看了什麼，更加了解您的一舉一動。<a data-l10n-name="learn-more-link">了解更多</a>
 cookie-tab-title = 跨網站追蹤 Cookie
 cookie-tab-content = 一些第三方廣告商或分析公司，會設定這些 Cookie 在不同網站間跟蹤您，收集您的上網紀錄。封鎖這些跨網站 Cookie 可減少在網路上跟蹤您的廣告。<a data-l10n-name="learn-more-link">了解更多</a>
@@ -159,10 +159,10 @@ monitor-resolve-breaches-link = 處理資料外洩事件
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = 社交媒體追蹤器
+    .title = 社群網路追蹤器
     .aria-label =
         { $count ->
-           *[other] { $count } 組社交媒體追蹤器（{ $percentage }%）
+           *[other] { $count } 組社群網路追蹤器（{ $percentage }%）
         }
 bar-tooltip-cookie =
     .title = 跨網站追蹤 Cookie
@@ -188,3 +188,37 @@ bar-tooltip-cryptominer =
         { $count ->
            *[other] { $count } 組加密貨幣採礦程式（{ $percentage }%）
         }
+# Privacy Metrics Card
+privacy-metrics-title = 隱私保護
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week = 本週封鎖 { $count } 組追蹤器
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers = { $count } 組追蹤器
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters = { $count } 個數位指紋追蹤程式
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies = { $count } 個追蹤用 Cookie
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social = { $count } 個社群網路追蹤器
+privacy-metrics-empty = 本週沒有封鎖追蹤器。{ -brand-short-name } 會在您上網時保護您不受下列威脅。
+privacy-metrics-loading = 正在載入保護統計…
+privacy-metrics-error = 無法載入保護統計資訊。
+privacy-metrics-private-window = { -brand-short-name } 會繼續在隱私瀏覽視窗當中封鎖追蹤器，但不會對封鎖的項目留下紀錄。
+
+## VPN promo card and banner
+
+protections-vpn-title = 把隱私保護帶到瀏覽器以外
+protections-vpn-header-content = 使用 { -mozilla-vpn-brand-name } 保護您的整台裝置，只要一點即可加密完整流量、隱藏您的所在位置。
+protections-get-vpn-link = 獲得 { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN：已訂閱
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed = 使用 { -mozilla-vpn-brand-name } 於最多 { $count } 台裝置加密您的所有網路流量，隱藏您的實際所在位置。獲得您的訂閱內容的完整功能：請到 <a data-l10n-name="playstore-link">Google Play 商店</a>或 <a data-l10n-name="appstore-link">Apple App Store</a> 下載。
+protections-vpn-banner-header = 保護不僅限於瀏覽器
+protections-vpn-banner-content = 免費試用 { -mozilla-vpn-brand-name }，看看為什麼 TechRadar 說「他的速度、簡潔程度、每月低價格使其值得一試」。
+protections-vpn-banner-link = 下載 { -mozilla-vpn-brand-name }

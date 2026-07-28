@@ -188,3 +188,37 @@ bar-tooltip-cryptominer =
         { $count ->
            *[other] { $count } 个加密货币挖矿程序（{ $percentage }%）
         }
+# Privacy Metrics Card
+privacy-metrics-title = 隐私保护
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week = 本周已拦截 { $count } 个
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers = { $count } 个跟踪器
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters = { $count } 个数字指纹跟踪程序
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies = { $count } 个跟踪性 Cookie
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social = { $count } 个社交媒体跟踪器
+privacy-metrics-empty = 本周未拦截跟踪器。 { -brand-short-name } 会在您浏览时保护您免受以下威胁。
+privacy-metrics-loading = 正在加载保护统计信息…
+privacy-metrics-error = 无法加载保护统计信息。
+privacy-metrics-private-window = { -brand-short-name } 将继续在隐私窗口中拦截跟踪器，但不会记录拦截了什么。
+
+## VPN promo card and banner
+
+protections-vpn-title = 将隐私保护扩展到浏览器外
+protections-vpn-header-content = 使用 { -mozilla-vpn-brand-name }，保护全设备。只需一触，即可加密所有流量，并隐藏真实位置。
+protections-get-vpn-link = 获取 { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN：已订阅
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed = 使用 { -mozilla-vpn-brand-name }，为至多 { $count } 台设备加密全部流量，并隐藏真实位置。可从 <a data-l10n-name="playstore-link">Google Play 商店</a>或<a data-l10n-name="appstore-link">Apple App Store</a>添加，以充分利用您的订阅。
+protections-vpn-banner-header = 将保护扩展到浏览器外
+protections-vpn-banner-content = 放心试用 { -mozilla-vpn-brand-name }，亲身体验 TechRadar 为何评价它“速度快、简单易用、每月费用低，值得一试。”
+protections-vpn-banner-link = 获取 { -mozilla-vpn-brand-name }

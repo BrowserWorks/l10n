@@ -67,10 +67,10 @@ translations-panel-settings-always-offer-translation =
 translations-panel-settings-never-translate-language =
     .label = Nikdy nepřekládat z jazyka { $language }
 translations-panel-settings-never-translate-unknown-language =
-    .label = Nikdy nepřekládat tento jazyk
+    .label = Nikdy nepřekládat z tohoto jazyka
 # Text displayed for the option to never translate this website
 translations-panel-settings-never-translate-site =
-    .label = Nikdy nepřekládat tuto stránku
+    .label = Nikdy nepřekládat tento web
 
 ## The translation panel appears from the url bar, and this view is the default
 ## translation view.
@@ -99,6 +99,14 @@ translations-panel-error-dismiss-button =
     .label = Rozumím
 translations-panel-error-change-button =
     .label = Změnit zdrojový jazyk
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Je nám líto, ale překlady z jazyka { $language } zatím nejsou podporovány.
+translations-panel-error-unsupported-hint-unknown-2 = Omlouváme se, ale překlady z tohoto jazyka zatím nejsou podporovány.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
@@ -165,7 +173,7 @@ translations-settings-close-key =
     .key = w
 translations-settings-always-translate-langs-description = Překlad pro následující jazyky proběhne automaticky
 translations-settings-never-translate-langs-description = Překlad nebude nabízen pro následující jazyky
-translations-settings-never-translate-sites-description = Překlady nebudou nabízeny pro následující stránky
+translations-settings-never-translate-sites-description = Překlad nebude nabízen pro následující weby
 translations-settings-languages-column =
     .label = Jazyky
 translations-settings-remove-language-button =
@@ -175,12 +183,12 @@ translations-settings-remove-all-languages-button =
     .label = Odebrat všechny jazyky
     .accesskey = e
 translations-settings-sites-column =
-    .label = Webové stránky
+    .label = Weby
 translations-settings-remove-site-button =
-    .label = Odebrat stránku
-    .accesskey = s
+    .label = Odebrat web
+    .accesskey = w
 translations-settings-remove-all-sites-button =
-    .label = Odebrat všechny stránky
+    .label = Odebrat všechny weby
     .accesskey = O
 translations-settings-close-dialog =
     .buttonlabelaccept = Zavřít
@@ -244,6 +252,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Při překladu došlo k chybě. Zkuste to prosím znovu.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Je nám líto, ale překlady z jazyka { $language } zatím nejsou podporovány.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Omlouváme se, ale překlady z tohoto jazyka zatím nejsou podporovány.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

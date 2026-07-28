@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Hỏi Perplexity
 perplexity-callout-secondary-label-1 = Bỏ qua
 perplexity-callout-secondary-label-2 = Đã hiểu
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Bạn muốn thử một công cụ tìm kiếm mới tập trung vào quyền riêng tư?
+start-page-callout-subtitle = Hãy thử Startpage. Nó được thiết kế để giữ cho các tìm kiếm của bạn riêng tư hơn ngay từ đầu.
+start-page-callout-primary-label = Thử Startpage
+start-page-callout-secondary-label = Bỏ qua
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Bảo vệ mật khẩu của bạn bằng cá
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Đăng ký
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Giữ các nguồn cấp dữ liệu yêu thích của bạn trong thanh tác vụ
+taskbar-tabs-social-callout-subtitle = Khởi chạy các trang mạng xã hội của bạn như một ứng dụng trong một cửa sổ được sắp xếp hợp lý được bảo vệ bởi { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Trò chuyện từ thanh tác vụ của bạn
+taskbar-tabs-chat-callout-subtitle = Khởi chạy các trang trò chuyện của bạn như một ứng dụng trong một cửa sổ được sắp xếp hợp lý được bảo vệ bởi { -brand-short-name }.
+taskbar-tabs-email-callout-title = Giữ email của bạn trong thanh tác vụ
+taskbar-tabs-email-callout-subtitle = Khởi chạy email của bạn như một ứng dụng trong cửa sổ được sắp xếp hợp lý được bảo vệ bởi { -brand-short-name }.
+taskbar-tabs-media-callout-title = Phát trực tuyến từ thanh tác vụ của bạn
+taskbar-tabs-media-callout-subtitle = Khởi chạy trang web phát trực tuyến của bạn như một ứng dụng trong cửa sổ được sắp xếp hợp lý được bảo vệ bởi { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Thêm trang web này vào thanh tác vụ của bạn
+taskbar-tabs-value-prop-callout-subtitle = Khởi chạy nó trong cửa sổ riêng nó và giao diện đơn giản chỉ bằng một cú nhấp chuột.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Đừng mất mọi thứ bạn đã lưu khi chuyển sang Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Đồng bộ ngay để giữ cho dấu trang, mật khẩu và cài đặt { -brand-short-name } của bạn an toàn và dễ dàng khôi phục.
+windows-10-eos-sync-urgency-title-2 = Tạm biệt Windows 10? Hãy bảo vệ dữ liệu của bạn khi chuyển sang.
+windows-10-eos-sync-urgency-subtitle-2 = Ngay cả khi bạn không sử dụng { -brand-short-name } hàng ngày, hãy đồng bộ hóa để giữ cho dấu trang và mật khẩu an toàn và dễ truy cập.
+windows-10-eos-sync-new-device-title-1 = Đừng khởi đầu lại trên thiết bị tiếp theo của bạn.
+windows-10-eos-sync-new-device-subtitle-1 = Đồng bộ hóa để mang theo dấu trang { -brand-short-name }, mật khẩu và cài đặt ưa thích của bạn khi bạn di chuyển.
+windows-10-eos-sync-new-device-title-2 = Bạn sắp chuyển sang thiết bị mới? Đừng để mất những dữ liệu quan trọng.
+windows-10-eos-sync-new-device-subtitle-2 = Bất kể bạn sử dụng { -brand-short-name } như thế nào, tính năng đồng bộ hóa sẽ bảo vệ dấu trang, mật khẩu và cài đặt của bạn.
+windows-10-eos-sync-new-device-primary-label = Đồng bộ ngay
+windows-10-eos-sync-general-title-1 = Bảo vệ { -brand-short-name } mà bạn đã tạo ra.
+windows-10-eos-sync-general-subtitle-1 = Sao lưu và đồng bộ hóa mật khẩu, dấu trang, cài đặt và dữ liệu khác để bảo toàn những thông tin bạn đã lưu.
+windows-10-eos-sync-general-title-2 = Bây giờ là thời điểm thích hợp để sao lưu mật khẩu và dấu trang của bạn.
+windows-10-eos-sync-general-subtitle-2 = Đồng bộ ngay để bảo vệ những thông tin bạn tin tưởng { -brand-short-name } — và lấy lại thông tin đó ở bất kỳ đâu, bất kỳ lúc nào.
+windows-10-eos-sync-tour-title-1 = Quá nhiều thẻ? Hãy sắp xếp lại bằng cách nhóm thẻ.
+windows-10-eos-sync-tour-subtitle-1 = Kéo thẻ lên trên thẻ khác để tạo nhóm và sắp xếp mọi thứ ngăn nắp.
+windows-10-eos-sync-tour-title-2 = Sắp xếp mọi thứ cho Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Đồng bộ hóa dấu trang, mật khẩu và cài đặt của bạn để sao lưu trước khi chuyển sang.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Hiển thị ít đề xuất hơn
+windows-10-eos-sync-dismiss-button-label = Bỏ qua
+windows-10-eos-sync-callout-primary-advance-button-label = Tiếp theo
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Mới: Nhấp và giữ để xem trước liên kết
+link-preview-onboarding-callout-description = Xem mô tả ngắn, thời gian đọc và nhiều thông tin khác để quyết định xem liên kết có đáng để mở hay không. Bạn cũng có thể nhấp chuột phải để xem.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Giảm lộn xộn bằng cách sử dụng nhóm thẻ.
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Nhóm các thẻ theo nhiệm vụ hoặc chủ đề. Kéo thêm thẻ khi cần.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Bắt đầu tạo một nhóm
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Hiển thị tiêu đề thẻ trong thanh lề
 sidebar-button-callout-subtitle = Sử dụng nút thanh lề để mở rộng thanh lề, để bạn có thể thấy tiêu đề thẻ.
 sidebar-button-callout-vertical-tabs = Để hiển thị các thẻ của bạn, chọn nút thanh lề trong thanh công cụ.
+sidebar-deprecation-callout-title = Bản cập nhật thanh lề sẽ sớm ra mắt.
+sidebar-deprecation-callout-subtitle = Chúng tôi đang ngừng hỗ trợ phiên bản thanh lề mà bạn đang sử dụng. Hãy thử phiên bản thanh lề được cập nhật. Nó nhanh hơn và bạn sẽ có quyền truy cập vào nhiều công cụ hơn.
+sidebar-deprecation-cta-button = Thử ngay bây giờ
 
 ## Sidebar Vertical Tabs Strings
 
@@ -172,7 +243,7 @@ sidebar-callout-survey-agree = Đồng ý
 sidebar-callout-survey-disagree = Không đồng ý
 sidebar-callout-survey-strongly-disagree = Hoàn toàn không đồng ý
 sidebar-callout-survey-features-question = Sau đây là các tính năng có tiềm năng xuất hiện trong thanh lề. Cái nào sẽ cải thiện năng suất của bạn trong { -brand-short-name } nhiều nhất?
-sidebar-callout-survey-split-view = Xem hai trang web bất kỳ cùng một lúc, ở chế độ chia đôi cửa sổ
+sidebar-callout-survey-split-view = Xem hai trang web bất kỳ cùng một lúc, ở chế độ chia cửa sổ
 sidebar-callout-survey-keep-website-open = Giữ trang web, như email hoặc lịch, mở ở thanh lề khi bạn duyệt
 sidebar-callout-survey-saved-websites-2 = Truy cập nhanh vào dấu trang của bạn
 sidebar-callout-survey-none-of-above = Không có cái nào ở trên
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Bạn hài lòng đến mức nào 
 sidebar-genai-survey-productive-question =
     Bạn đồng ý hay không đồng ý với khẳng định này ở mức độ nào:<br/>
     “Chatbot AI trong thanh lề giúp tôi làm việc hiệu quả hơn”?
+splitview-onboarding-callout-title-1 = Chế độ chia cửa sổ: một cách tốt hơn để làm nhiều việc cùng lúc.
+splitview-onboarding-callout-subtitle-1 = Nhấp chuột phải vào thẻ này và chọn “Chế độ xem cửa sổ” để xem hai thẻ cùng một lúc.
+splitview-onboarding-callout-cta-1 = Thử ngay bây giờ
+splitview-onboarding-callout-title-2 = Xem hai thẻ cùng lúc với chế độ chia cửa sổ
+splitview-onboarding-callout-subtitle-2 = Không cần mở thêm cửa sổ. Không cần chuyển đổi thẻ. Nhấp chuột phải vào thẻ này và chọn “Chế độ chia cửa sổ”.
+splitview-onboarding-callout-cta-2 = Thử chế độ chia cửa sổ
 unified-search-callout-title = Chuyển giữa các công cụ tìm kiếm
 unified-search-callout-subtitle = Chọn những gì hoạt động tốt nhất cho tìm kiếm cụ thể của bạn.
 unified-search-callout-primary-label = Tiếp
@@ -195,6 +272,6 @@ actions-callout-title = Hoàn thành các tác vụ phổ biến hoặc truy c�
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Thử gõ một hành động như “in” để in một trang, hoặc “xoá” để xoá lịch sử của bạn.

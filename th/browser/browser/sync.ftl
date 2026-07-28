@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = เชื่อมต่ออุปกรณ์อื่น…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] ส่งไปยังอุปกรณ์
+           *[other] ส่ง { $tabCount } แท็บไปยังอุปกรณ์
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] ส่งไปยังมือถือ
+           *[other] ส่ง { $tabCount } แท็บไปยังมือถือ
+        }
+fxa-menu-send-to-mobile-device-missing2 = ไม่เห็นอุปกรณ์ของคุณ?
+fxviewtabrow-send-to-mobile-not-verified = บัญชีไม่ได้รับการยืนยัน
+fxviewtabrow-send-to-mobile-verify-account = ยืนยันบัญชีของคุณ
+fxa-menu-send-to-mobile-turn-on-sync = เปิดการซิงค์เพื่อส่งแท็บ
+fxa-menu-send-to-mobile-connect-device = เชื่อมต่อกับอุปกรณ์เพื่อส่งแท็บ
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = ส่ง { $tabCount } แท็บไปยังอุปกรณ์
 # This is shown dynamically within "Send tab to device" in fxa menu.
@@ -29,7 +52,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = ส่งแท็บทันทีไปยังอุปกรณ์ใด ๆ ที่คุณลงชื่อเข้าใช้
 fxa-menu-sign-out =
     .label = ลงชื่อออก…
-fxa-menu-sync-title = Sync
 fxa-menu-sync-description = เข้าถึงเว็บของคุณได้ทุกที่
 fxa-avatar-sign-in = ลงชื่อเข้า
 fxa-avatar-sign-up = ลงทะเบียน
@@ -43,6 +65,10 @@ sync-setup-verify-heading = คุณแน่ใจหรือไม่ว่�
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = ผู้ใช้ที่ต่างกันได้ลงชื่อเข้า Sync ก่อนหน้านี้บนคอมพิวเตอร์นี้ การลงชื่อเข้าจะผสานที่คั่นหน้า รหัสผ่าน และการตั้งค่าอื่น ๆ ของเบราว์เซอร์นี้กับ { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = ลงชื่อเข้าเพื่อส่งแท็บ
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

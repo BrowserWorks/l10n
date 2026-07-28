@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Engedélyezés
     .accesskey = E
+permissions-add =
+    .label = Hozzáadás
+    .accesskey = a
 permissions-button-off =
     .label = Kikapcsolás
     .accesskey = K
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Minden weboldal eltávolítása
     .accesskey = M
+permissions-save-changes-2 =
+    .buttonlabelaccept = Változtatások mentése
+    .buttonaccesskeyaccept = V
 permission-dialog =
     .buttonlabelaccept = Változtatások mentése
     .buttonaccesskeyaccept = V
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Megadhatja mely webhelyek nem használhatnak soha sütiket és oldaladatokat, illetve melyek használhatnak mindig. Írja be a kezelendő oldal pontos címét, majd kattintson a Tiltás, Engedélyezés a munkamenetben, vagy az Engedélyezés gombra.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Kivételek – előzmények törlése leállításkor
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Megadhatja azokat a webhelyeket, amelyekről akkor is megtartja az adatokat, ha a { -brand-short-name } bezáráskor törli az előzményeket. Írja be a kezelni kívánt webhely pontos nevét, majd kattintson az Engedélyezés gombra.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Az egyes webhelyeknél kikapcsolhatja a Csak HTTPS módot. A { -brand-short-name } nem próbálja meg biztonságos HTTPS-re frissíteni a kapcsolatot ezeknél a webhelyeknél. A kivételek nem vonatkoznak a privát ablakokra.
 permissions-exceptions-https-only-desc2 = Az egyes webhelyeknél kikapcsolhatja a Csak HTTPS módot. A { -brand-short-name } nem próbálja meg biztonságos HTTPS-re frissíteni a kapcsolatot ezeknél a webhelyeknél.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Engedélyezett webhelyek – Felugró ablakok és harmadik féltől származó átirányítások
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Megadhatja, hogy mely weboldalak nyithatnak felugró ablakokat, és melyeket irányíthatják át a harmadik féltől származó keretek.
 
 ## Exceptions - Pop-ups
 
@@ -161,36 +181,56 @@ permissions-site-xr-disable-desc = Ez megakadályozza, hogy a fent fel nem sorol
 ## Site Permissions - Camera
 
 permissions-site-camera-window2 =
-    .title = Beállítások – Kamera engedélyek
+    .title = Beállítások – Kameraengedélyek
     .style = { permissions-window2.style }
-permissions-site-camera-desc = A következő weboldalak kérték, hogy hozzáférhessenek a kamerájához. Megadhatja, hogy mely weboldalak férjenek hozzá a kamerájához. Az új kamera hozzáférési kéréseket is blokkolhatja.
+permissions-site-camera-desc = A következő weboldalak kérték, hogy hozzáférhessenek a kamerájához. Megadhatja, hogy mely weboldalak férjenek hozzá a kamerájához. Az új kamera-hozzáférési kéréseket is blokkolhatja.
 permissions-site-camera-disable-label =
     .label = Új kérések blokkolása, melyek hozzáférést kérnek a kamerájához
-permissions-site-camera-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak kamera hozzáférést kérjenek. A kamera hozzáférés blokkolása működésképtelenné tehet néhány weboldal-funkciót.
+permissions-site-camera-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak kamera-hozzáférést kérjenek. A kamera-hozzáférés blokkolása működésképtelenné tehet néhány weboldal-funkciót.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Beállítások – Eszközalkalmazások és -szolgáltatások
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Ezek a webhelyek alkalmazásokhoz és szolgáltatásokhoz kértek hozzáférést ezen az eszközön. Kiválaszthatja, hogy engedélyezi vagy letiltja ezt a webhelyek számára.
+permissions-site-localhost-disable-label =
+    .label = Alkalmazások és szolgáltatások elérésére vonatkozó új kérések blokkolása ezen az eszközön
+permissions-site-localhost-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak alkalmazásokhoz és szolgáltatásokhoz kérjenek hozzáférést ezen az eszközön. Emiatt előfordulhat, hogy egyes weboldalfunkciók nem fognak működni.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Beállítások –Helyi hálózati eszközök
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Ezek a webhelyek alkalmazásokhoz és szolgáltatásokhoz kértek hozzáférést a Wi-Fi-jéhez vagy helyi hálózatához csatlakoztatott eszközökön. Kiválaszthatja, hogy engedélyezi vagy letiltja ezt a webhelyek számára.
+permissions-site-local-network-disable-label =
+    .label = A helyi hálózatra csatlakozó eszközök alkalmazásainak és szolgáltatásainak elérésére vonatkozó új kérések blokkolása.
+permissions-site-local-network-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak alkalmazásokhoz és szolgáltatásokhoz kérjenek hozzáférést az Ön Wi-Fi-jéhez csatlakoztatott vagy helyi hálózati eszközökön. Emiatt előfordulhat, hogy egyes weboldalfunkciók nem fognak működni.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window2 =
-    .title = Beállítások – Mikrofon engedélyek
+    .title = Beállítások – Mikrofonengedélyek
     .style = { permissions-window2.style }
 permissions-site-microphone-desc = A következő weboldalak kérték, hogy hozzáférhessenek a mikrofonjához. Megadhatja, hogy mely weboldalak férjenek hozzá a mikrofonjához. Az új mikrofon hozzáférési kéréseket is blokkolhatja.
 permissions-site-microphone-disable-label =
     .label = Új kérések blokkolása, melyek hozzáférést kérnek a mikrofonjához
-permissions-site-microphone-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak mikrofon hozzáférést kérjenek. A mikrofon hozzáférés blokkolása működésképtelenné tehet néhány weboldal-funkciót.
+permissions-site-microphone-disable-desc = Ez megakadályozza, hogy a fent fel nem sorolt weboldalak mikrofon-hozzáférést kérjenek. A mikrofon-hozzáférés blokkolása működésképtelenné tehet néhány weboldal-funkciót.
 
 ## Site Permissions - Speaker
 ##
 ## "Speaker" refers to an audio output device.
 
 permissions-site-speaker-window =
-    .title = Beállítások – Hangszóró engedélyek
+    .title = Beállítások – Hangszóróengedélyek
     .style = { permissions-window2.style }
 permissions-site-speaker-desc = A következő weboldalak kérték, hogy kiválasszanak egy hangkimeneti eszközt. Megadhatja, hogy mely weboldalak választhassanak hangkimeneti eszközt.
 permissions-exceptions-doh-window =
-    .title = Webhely-kivételek a HTTPS feletti DNS-hez
+    .title = Webhelykivételek a HTTPS-en keresztüli DNS-hez
     .style = { permissions-window2.style }
 permissions-exceptions-manage-doh-desc = A { -brand-short-name } nem használ biztonságos DNS-t ezeken a webhelyeken és az aldomainjeiken.
-permissions-doh-entry-field = Adja meg a weboldal domain nevét
+permissions-doh-entry-field = Adja meg a weboldal domainnevét
     .accesskey = d
 permissions-doh-add-exception =
     .label = Hozzáadás

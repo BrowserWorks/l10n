@@ -104,6 +104,14 @@ perplexity-callout-primary-label = 詢問 Perplexity
 perplexity-callout-secondary-label-1 = 知道了！
 perplexity-callout-secondary-label-2 = 知道了！
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = 想試用全新的隱私保護搜尋功能嗎？
+start-page-callout-subtitle = 請試用 Startpage。從一開始使用就讓您的搜尋更有隱私。
+start-page-callout-primary-label = 試用 Startpage
+start-page-callout-secondary-label = 知道了！
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = 加密後同步到其他裝置中，以保護�
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = 註冊
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = 將您最愛的資訊來源放置於工具列
+taskbar-tabs-social-callout-subtitle = 用如同應用程式一般的方式，以流線化的視窗開啟您的社交網路帳號，同時受到 { -brand-short-name } 保護。
+taskbar-tabs-chat-callout-title = 從工具列直接聊天
+taskbar-tabs-chat-callout-subtitle = 用如同應用程式一般的方式，以流線化的視窗開啟您的聊天網站，同時受到 { -brand-short-name } 保護。
+taskbar-tabs-email-callout-title = 在工具列收發信件
+taskbar-tabs-email-callout-subtitle = 用如同應用程式一般的方式，以流線化的視窗開啟您的網頁郵件，同時受到 { -brand-short-name } 保護。
+taskbar-tabs-media-callout-title = 從工作列直接開啟影音串流網站
+taskbar-tabs-media-callout-subtitle = 用如同應用程式一般的方式，以流線化的視窗開啟您的影音串流網站，同時受到 { -brand-short-name } 保護。
+taskbar-tabs-value-prop-callout-title = 將此網站新增至工具列
+taskbar-tabs-value-prop-callout-subtitle = 只要一點，即可透過簡化的介面，用獨立視窗開啟此網站。
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = 別在您升級到 Windows 11 之後遺失所有儲存的資料。
+windows-10-eos-sync-urgency-subtitle-1 = 立即同步，即可確保您 { -brand-short-name } 書籤、密碼與設定資料的安全，並且簡單還原。
+windows-10-eos-sync-urgency-title-2 = 要跟 Windows 10 說再見了嗎？在升級系統前先保護您的資料。
+windows-10-eos-sync-urgency-subtitle-2 = 就算您沒有天天使用 { -brand-short-name }，同步起來也可以確保書籤與密碼安全，可隨時使用。
+windows-10-eos-sync-new-device-title-1 = 不用再冒險於下一台電腦要從頭開始建立設定檔。
+windows-10-eos-sync-new-device-subtitle-1 = 立即同步，即可將您的 { -brand-short-name } 書籤、密碼與偏好設定資料隨身帶著走。
+windows-10-eos-sync-new-device-title-2 = 要換新電腦了？別搞丟重要的東西。
+windows-10-eos-sync-new-device-subtitle-2 = 不論您多常使用 { -brand-short-name }，同步功能皆可保護您的書籤、密碼與設定。
+windows-10-eos-sync-new-device-primary-label = 立刻同步
+windows-10-eos-sync-general-title-1 = 保護您自己打造出來的 { -brand-short-name }。
+windows-10-eos-sync-general-subtitle-1 = 進行備份並同步，以保留您的密碼、書籤、設定與其他資料。
+windows-10-eos-sync-general-title-2 = 現在是個開始備份密碼與書籤的好時機。
+windows-10-eos-sync-general-subtitle-2 = 立即同步，即可保護您信任的 { -brand-short-name } 資料，並且隨時隨地均可取回。
+windows-10-eos-sync-tour-title-1 = 有太多分頁了？使用分頁群組整理起來。
+windows-10-eos-sync-tour-subtitle-1 = 將一個分頁拖曳到另一個分頁上，即可建立群組。
+windows-10-eos-sync-tour-title-2 = 讓 Windows 11 更有條理。
+windows-10-eos-sync-tour-subtitle-2 = 在您升級之前先同步書籤、密碼、設定。
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = 減少顯示建議
+windows-10-eos-sync-dismiss-button-label = 知道了！
+windows-10-eos-sync-callout-primary-advance-button-label = 下一步
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = 新功能：長按鏈結即可預覽內容
+link-preview-onboarding-callout-description = 檢視簡短描述、閱讀時間等資訊，讓您決定該鏈結是否值得一點。也可以用滑鼠右鍵檢視。
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = 使用分頁群組避免畫面雜亂
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = 依照工作或主題幫分頁分組，可以隨時再拖曳更多進去。
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = 建立群組
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = 在側邊欄顯示分頁標題
 sidebar-button-callout-subtitle = 使用側邊欄按鈕展開側邊欄，就可以看到分頁標題。
 sidebar-button-callout-vertical-tabs = 選擇工具列中的側邊欄按鈕，即可顯示您的分頁。
+sidebar-deprecation-callout-title = 即將推出新版側邊欄
+sidebar-deprecation-callout-subtitle = 我們將淘汰您目前使用的側邊欄版本。請試用新版側邊欄，速度更快還可以使用更多工具。
+sidebar-deprecation-cta-button = 立刻試試
 
 ## Sidebar Vertical Tabs Strings
 
@@ -157,7 +228,7 @@ sidebar-customization-callout-2-subtitle = 新增移除工具、將您的分頁�
 
 sidebar-callout-survey-title = 協助改進 { -brand-short-name }
 sidebar-callout-survey-satisfaction-question = 您對 { -brand-short-name } 當中的側邊欄功能使用體驗有多滿意？
-sidebar-callout-survey-privacy-notice-link = 隱私權保護政策
+sidebar-callout-survey-privacy-notice-link = 隱私權公告
 sidebar-callout-survey-very-satisfied = 非常滿意
 sidebar-callout-survey-satisfied = 滿意
 sidebar-callout-survey-neutral = 普通
@@ -178,6 +249,12 @@ sidebar-callout-survey-submit = 送出
 sidebar-callout-survey-thank-you = 感謝您的意見回饋！
 sidebar-genai-survey-satisfaction-question = 您對在側邊欄中能夠直接使用 AI 聊天機器人的功能，有多滿意？
 sidebar-genai-survey-productive-question = 您對下面的描述有多同意：<br/>「側邊欄中的 AI 聊天機器人讓我更有生產力」
+splitview-onboarding-callout-title-1 = 分割畫面：更好的多工工作方式
+splitview-onboarding-callout-subtitle-1 = 對此分頁按右鍵，然後選擇「新增分割畫面」，即可一次看到兩個分頁。
+splitview-onboarding-callout-cta-1 = 立刻試試
+splitview-onboarding-callout-title-2 = 使用分割畫面功能，一次檢視兩個分頁
+splitview-onboarding-callout-subtitle-2 = 不用多開視窗、不用翻轉分頁，只要對此分頁按右鍵，然後選擇「新增分割畫面」。
+splitview-onboarding-callout-cta-2 = 試用分割畫面
 unified-search-callout-title = 切換不同搜尋引擎
 unified-search-callout-subtitle = 選擇最適合您要搜尋的內容的搜尋引擎。
 unified-search-callout-primary-label = 下一步
@@ -191,6 +268,6 @@ actions-callout-title = 完成常見任務或存取基礎設定
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = 可以試著輸入「print」來列印網頁，或輸入「clear」來清除瀏覽紀錄。

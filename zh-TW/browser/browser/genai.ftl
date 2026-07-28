@@ -62,9 +62,14 @@ genai-menu-remove-generic =
 genai-menu-remove-provider =
     .label = 移除 { $provider }
 genai-menu-remove-sidebar =
-    .label = 自側邊列移除
+    .label = 從側邊欄移除
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = 問問 { $provider }
 genai-menu-new-badge = 新增
 genai-menu-summarize-page = 摘要本頁
+genai-input-ask-smart-window =
+    .placeholder = 詢問…
 genai-input-ask-generic =
     .placeholder = 問問 AI 聊天機器人…
 # $provider (string) - name of the provider
@@ -83,16 +88,29 @@ genai-shortcuts-selected-warning =
     .message = 您選擇了大約 { $selectionLength } 個字，我們能傳送給 { $provider } 的最大字數約為 { $maxLength } 個字。
 genai-shortcuts-hide =
     .label = 隱藏聊天機器人捷徑
-genai-menu-no-provider =
-    .label = 問問 AI 聊天機器人
 genai-menu-choose-chatbot =
     .label = 挑選一套機器人
+genai-menu-ask-generic-2 =
+    .label = 問問 AI 聊天機器人
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = 問問 { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = 問問 AI 聊天機器人
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = 詢問…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = AI 聊天機器人
 genai-header-provider-menu =
     .title = 挑選一套機器人
+genai-header-settings-button =
+    .title = AI 聊天選項
 genai-header-options-button =
     .title = 開啟選單
 genai-header-close-button =
@@ -110,6 +128,11 @@ genai-options-hide-shortcut =
     .label = 選擇文字時隱藏捷徑
 genai-options-about-chatbot =
     .label = 關於 { -brand-short-name } 的 AI 聊天機器人功能
+
+## Chatbot message
+
+genai-page-warning =
+    .message = 由於頁面很長，這只是部分摘要。
 
 ## Chatbot footer
 
@@ -199,3 +222,48 @@ genai-model-optin-cancel =
 #   $rangePlural (String): The plural category of the range, using the same set as for numbers.
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 link-preview-reading-time = 閱讀時間 { $range } 分鐘
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } 無法預覽此鏈結
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = 造訪鏈結
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } 無法自動產生此網頁的重點。
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = 有些東西不對勁。
+# Text for the retry link when generation fails
+link-preview-generation-retry = 重試
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = 預覽鏈結選項
+link-preview-settings-enable =
+    .label = 開啟預覽鏈結功能
+    .description = 開啟捷徑或對鏈結按滑鼠右鍵的時候，先檢視頁面標題、描述與更多資訊。
+link-preview-settings-key-points =
+    .label = 允許 AI 讀取頁面頂部，產生頁面重點
+link-preview-settings-long-press =
+    .label = 快速預覽：長按鏈結 1 秒鐘
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = 想要用 AI 看到更多內容嗎？
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } 使用 AI 來讀取頁面頂部，並且快速產生一些重點。為了保護您的隱私，此過程均在您的裝置上執行。
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = 新功能：長按任何鏈結即可預覽
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = 檢視簡短描述、閱讀時間等資訊，讓您決定該鏈結是否值得開啟。也可以用滑鼠右鍵檢視。
+# Header for the key points section
+link-preview-key-points-header = 重點
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = 重點內容是由 AI 整理，可能會有錯誤。
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = 首次設定 • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = 您下次能更快就看到重點內容。
+# Onboarding card See a preview button
+link-preview-onboarding-button = 檢視預覽
+# Onboarding card Close button
+link-preview-onboarding-close = 關閉
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = 首次設定
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = 這可能需要一點時間，下次可以更快看到網頁重點。

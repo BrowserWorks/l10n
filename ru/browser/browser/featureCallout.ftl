@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Спросить Perplexity
 perplexity-callout-secondary-label-1 = Скрыть
 perplexity-callout-secondary-label-2 = Понятно
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Хотите попробовать новый поиск, ориентированный на конфиденциальность?
+start-page-callout-subtitle = Попробуйте Startpage. Он создан, чтобы со старта обеспечить более приватный поиск.
+start-page-callout-primary-label = Попробовать Startpage
+start-page-callout-secondary-label = Убрать
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,15 +120,78 @@ fxa-adoption-passwords-subtitle = Защитите свои пароли, син
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Зарегистрироваться
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Храните ваши любимые ленты новостей на панели задач
+taskbar-tabs-social-callout-subtitle = Запускайте свои соцсети как приложения в удобном окне, защищённом { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Общайтесь из панели задач
+taskbar-tabs-chat-callout-subtitle = Запускайте свои чаты как приложения в удобном окне, защищённом { -brand-short-name }.
+taskbar-tabs-email-callout-title = Держите вашу электронную почту на панели задач
+taskbar-tabs-email-callout-subtitle = Запускайте свою веб-почту как приложение в удобном окне, защищённом { -brand-short-name }.
+taskbar-tabs-media-callout-title = Вернитесь к стримингу с панели задач
+taskbar-tabs-media-callout-subtitle = Запускайте свои стриминговые сайты как приложение в удобном окне, защищённом { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Добавьте этот сайт на панель задач
+taskbar-tabs-value-prop-callout-subtitle = Запустите его в собственном окне и с упрощённым интерфейсом одним щелчком.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Не потеряйте всё, что вы сохранили, при переходе на Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Выполните синхронизацию сейчас, чтобы обезопасить и легко восстановить ваши закладки, пароли и настройки { -brand-short-name }.
+windows-10-eos-sync-urgency-title-2 = Прощаемся с Windows 10? Защитите свои данные при переходе.
+windows-10-eos-sync-urgency-subtitle-2 = Даже если вы не используете { -brand-short-name } каждый день, используйте синхронизацию, чтобы хранить закладки и пароли в безопасном и доступном месте.
+windows-10-eos-sync-new-device-title-1 = Не рискуйте начать сначала на следующем устройстве.
+windows-10-eos-sync-new-device-subtitle-1 = Проводите синхронизацию, чтобы перенести свои закладки, пароли и предпочитаемые настройки на { -brand-short-name } при переходе.
+windows-10-eos-sync-new-device-title-2 = Переходите на новое устройство? Не потеряйте то, что важно.
+windows-10-eos-sync-new-device-subtitle-2 = Независимо от того, как часто вы используете { -brand-short-name }, синхронизация защищает ваши закладки, пароли и настройки.
+windows-10-eos-sync-new-device-primary-label = Синхронизировать
+windows-10-eos-sync-general-title-1 = Защитите { -brand-short-name }, который вы сделали своим.
+windows-10-eos-sync-general-subtitle-1 = Делайте резервные копии и синхронизируйте свои пароли, закладки, настройки и другие данные, чтобы сохранить то, на что вы рассчитываете.
+windows-10-eos-sync-general-title-2 = Пришло время создать резервную копию ваших паролей и закладок.
+windows-10-eos-sync-general-subtitle-2 = Проведите синхронизацию сейчас, чтобы защитить свои данные, которые вы доверяете { -brand-short-name }, и получите к ним доступ в любом месте, в любое время.
+windows-10-eos-sync-tour-title-1 = Слишком много вкладок? Наведите порядок с помощью групп вкладок.
+windows-10-eos-sync-tour-subtitle-1 = Перетащите одну вкладку поверх другой, чтобы создать группу и держать всё в порядке.
+windows-10-eos-sync-tour-title-2 = Будьте организованы для Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Синхронизируйте свои закладки, пароли и настройки, чтобы сохранить их перед переходом.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Показывать меньше рекомендаций
+windows-10-eos-sync-dismiss-button-label = Убрать
+windows-10-eos-sync-callout-primary-advance-button-label = Далее
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Новинка: Нажмите и удерживайте для предпросмотра ссылок
+link-preview-onboarding-callout-description = Посмотрите краткое описание, время чтения и другие параметры, чтобы решить, стоит ли переходить по ссылке. Также доступно по нажатию правой кнопкой мыши.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Избавьтесь от беспорядка с помощью групп вкладок
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Группируйте вкладки по задачам или темам. Вставляйте больше по мере работы.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Создать группу
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Показывать заголовки вкладок на боковой панели
 sidebar-button-callout-subtitle = Используйте кнопку боковой панели, чтобы развернуть боковую панель и увидеть заголовки вкладок.
 sidebar-button-callout-vertical-tabs = Чтобы показать ваши вкладки, нажмите кнопку боковой панели на панели инструментов.
+sidebar-deprecation-callout-title = Скоро появится обновленная боковая панель
+sidebar-deprecation-callout-subtitle = Мы постепенно отказываемся от версии боковой панели, которую вы используете сейчас. Попробуйте обновленную боковую панель. Она быстрее, и вы получаете доступ к большему количеству инструментов.
+sidebar-deprecation-cta-button = Попробовать сейчас
 
 ## Sidebar Vertical Tabs Strings
 
-vertical-tabs-callout-1-title = Перегружены большим количеством вкладок?
+vertical-tabs-callout-1-title = Перегружены тонной вкладок?
 vertical-tabs-callout-1-subtitle = Попробуйте новый макет с вертикальными вкладками, чтобы быстро просмотреть список вкладок. Ранние тестировщики сообщают, что эта компоновка помогает им чувствовать себя более организованными. Переключайтесь в любое время.
 vertical-tabs-callout-1-cta-button = Попробуйте вертикальные вкладки
 vertical-tabs-callout-2-cta-button = Попробуйте сейчас
@@ -136,10 +207,10 @@ sidebar-pins-callout-cta-button = Закрепить вкладку
 ## Pinning Tabs Strings
 
 pin-tabs-callout-1-title = Держите важные вкладки под рукой
-pin-tabs-callout-1-subtitle = Перетащите вкладку в начало панели вкладок, чтобы закрепить её. Или щёлкните правой кнопкой мыши и выберите Закрепить вкладку.
+pin-tabs-callout-1-subtitle = Перетащите вкладку в начало панели вкладок, чтобы закрепить её. Или щёлкните правой кнопкой мыши и выберите «Закрепить вкладку».
 pin-tabs-callout-cta-1-button = Закрепить эту вкладку
 pin-tabs-callout-2-title = Закрепляйте вкладки, которые вы посещаете чаще всего
-pin-tabs-callout-2-subtitle = Чтобы закрепить любую вкладку, перетащите её в начало панели вкладок. Или щёлкните правой кнопкой мыши и выберите Закрепить вкладку.
+pin-tabs-callout-2-subtitle = Чтобы закрепить любую вкладку, перетащите её в начало панели вкладок. Или щёлкните правой кнопкой мыши и выберите «Закрепить вкладку».
 pin-tabs-callout-cta-2-button = Закрепить эту вкладку
 pin-tabs-callout-3-title = Держите важные сайты под рукой
 pin-tabs-callout-4-title = Закрепляйте сайты, которые вы посещаете чаще всего
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Насколько вы довол�
 sidebar-genai-survey-productive-question =
     В какой степени вы согласны или не согласны с этим заявлением:<br/>
     «ИИ-чат-бот на боковой панели помогает мне быть более продуктивным»?
+splitview-onboarding-callout-title-1 = Разделение экрана: лучший метод для многозадачности
+splitview-onboarding-callout-subtitle-1 = Щёлкните правой кнопкой мыши по этой вкладке и выберите «Добавить разделение экрана», чтобы увидеть сразу две вкладки.
+splitview-onboarding-callout-cta-1 = Попробовать сейчас
+splitview-onboarding-callout-title-2 = Смотрите сразу две вкладки с разделением экрана
+splitview-onboarding-callout-subtitle-2 = Без дополнительных окон. Нет листания вкладок. Щёлкните правой кнопкой мыши по этой вкладке и выберите «Добавить разделение экрана».
+splitview-onboarding-callout-cta-2 = Попробовать разделение экрана
 unified-search-callout-title = Переключение между поисковыми системами
 unified-search-callout-subtitle = Выберите, что лучше всего работает для вашего конкретного поиска.
 unified-search-callout-primary-label = Далее
@@ -195,6 +272,6 @@ actions-callout-title = Выполнение типичных задач или 
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Попробуйте ввести действие, например, «печать», чтобы распечатать страницу, или «очистить», чтобы удалить историю.

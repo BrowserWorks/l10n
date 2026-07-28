@@ -20,6 +20,31 @@ fxa-menu-connect-another-device =
     .label = Másik eszköz csatlakoztatása…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Lap küldése az eszközre
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Küldés mobilra
+            [one] { $tabCount } lap küldése mobilra
+           *[other] { $tabCount } lap küldése mobilra
+        }
+fxa-menu-send-to-mobile-device-missing2 = Nem látja az eszközét?
+fxviewtabrow-send-to-mobile-not-verified = A fiók nincs ellenőrizve
+fxviewtabrow-send-to-mobile-verify-account = Fiók ellenőrzése
+fxa-menu-send-to-mobile-turn-on-sync = Kapcsolja be a szinkronizálást a lapok küldéséhez
+fxa-menu-send-to-mobile-connect-device = Csatlakoztasson egy eszközt a lapok küldéséhez
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -33,7 +58,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Küldjön el egy lapot bármely eszközére, amelyen be van jelentkezve.
 fxa-menu-sign-out =
     .label = Kijelentkezés…
-fxa-menu-sync-title = Szinkronizálás
 fxa-menu-sync-description = Érje el a webet bárhol
 fxa-avatar-sign-in = Bejelentkezés
 fxa-avatar-sign-up = Regisztráció
@@ -47,6 +71,10 @@ sync-setup-verify-heading = Biztos, hogy bejelentkezik a szinkronizálásba?
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Egy másik felhasználó korábban bejelentkezett a szinkronizálásba ezen a számítógépen. A bejelentkezés egyesíti ezen böngésző könyvjelzőit, jelszavait és más beállításait ezzel: { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Jelentkezzen be a lapok küldéséhez
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

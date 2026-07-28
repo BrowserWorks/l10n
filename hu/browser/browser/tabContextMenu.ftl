@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = Lap frissítése
     .accesskey = r
+reload-tab2 =
+    .label = Újratöltés
+    .accesskey = r
 select-all-tabs =
     .label = Összes lap kiválasztása
     .accesskey = e
@@ -24,9 +27,15 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = Lap duplikálása
     .accesskey = d
+duplicate-tab2 =
+    .label = Duplikálás
+    .accesskey = D
 duplicate-tabs =
     .label = Lapok duplikálása
     .accesskey = d
+duplicate-tabs2 =
+    .label = Duplikálás
+    .accesskey = D
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
@@ -52,8 +61,14 @@ reload-tabs =
 pin-tab =
     .label = Lap rögzítése
     .accesskey = r
+tab-context-pin-tab2 =
+    .label = Rögzítés
+    .accesskey = g
 unpin-tab =
     .label = Lap feloldása
+    .accesskey = f
+tab-context-unpin-tab2 =
+    .label = Rögzítés feloldása
     .accesskey = f
 pin-selected-tabs =
     .label = Lapok rögzítése
@@ -67,9 +82,16 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = Lap könyvjelzőzése…
     .accesskey = k
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Könyvjelzőzés
+    .accesskey = K
 tab-context-open-in-new-container-tab =
     .label = Megnyitás új konténerlapban
     .accesskey = e
+tab-context-open-in-new-container-tab2 =
+    .label = Megnyitás új konténerlapban
+    .accesskey = o
 move-to-start =
     .label = Áthelyezés az elejére
     .accesskey = e
@@ -79,12 +101,23 @@ move-to-end =
 move-to-new-window =
     .label = Áthelyezés új ablakba
     .accesskey = t
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Áthelyezés ide: { $profileName }
 tab-context-close-multiple-tabs =
     .label = Több lap bezárása
+    .accesskey = T
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Több bezárása
     .accesskey = T
 tab-context-close-duplicate-tabs =
     .label = Ismétlődő lapok bezárása
     .accesskey = I
+tab-context-close-duplicate-tabs2 =
+    .label = Lap másolatainak bezárása
+    .accesskey = z
 tab-context-share-url =
     .label = Megosztás
     .accesskey = M
@@ -118,6 +151,14 @@ tab-context-close-n-tabs =
            *[other] { $tabCount } lap bezárása
         }
     .accesskey = b
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Bezárás
+            [one] { $tabCount } lap bezárása
+           *[other] { $tabCount } lap bezárása
+        }
+    .accesskey = B
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -126,6 +167,44 @@ tab-context-move-tabs =
            *[other] Lapok áthelyezése
         }
     .accesskey = h
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Lap áthelyezése
+            [one] { $tabCount } lap áthelyezése
+           *[other] { $tabCount } lap áthelyezése
+        }
+    .accesskey = h
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Osztott nézet áthelyezése
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Lap küldése az eszközre
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+    .accesskey = l
+tab-context-send-to-device2 =
+    .label = Küldés eszközre
+    .accesskey = d
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Küldés mobilra
+            [one] { $tabCount } lap küldése mobilra
+           *[other] { $tabCount } lap küldése mobilra
+        }
+    .accesskey = m
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Megosztható hivatkozás létrehozása
+    .accesskey = a
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->
@@ -142,3 +221,7 @@ tab-context-unload-n-tabs =
            *[other] { $tabCount } lap kiürítése
         }
     .accesskey = r
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Kisöprés
+    .accesskey = s

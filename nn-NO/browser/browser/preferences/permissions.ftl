@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Tillat
     .accesskey = T
+permissions-add =
+    .label = Legg til
+    .accesskey = L
 permissions-button-off =
     .label = Slå av
     .accesskey = S
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Fjern alle nettstadar
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Lagre endringar
+    .buttonaccesskeyaccept = L
 permission-dialog =
     .buttonlabelaccept = Lagre endringar
     .buttonaccesskeyaccept = L
@@ -81,9 +87,16 @@ permissions-exceptions-manage-etp-desc = Du kan oppgje kva for nettstadar som ha
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window2 =
-    .title = Unntak - Infokapslar og nettstaddata
+    .title = Unntak - Infokapslar og nettstad-data
     .style = { permissions-window2.style }
-permissions-exceptions-cookie-desc = Du kan spesifisere kva for nettstadar som alltid eller aldri får bruke infokapslar og nettstaddata.  Skriv inn den eksakte adressa til nettstaden du vil administrere, og klikk deretter Blokker, Tillat for økt, eller Tillat.
+permissions-exceptions-cookie-desc = Du kan spesifisere kva for nettstadar som alltid eller aldri får bruke infokapslar og nettstad-data.  Skriv inn den eksakte adressa til nettstaden du vil administrere, og klikk deretter Blokker, Tillat for økt, eller Tillat.
+
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Unntak – Tøm historikk ved avslutting
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Du kan angi kva nettstadar som skal behalde dataa sine når { -brand-short-name } tømmer historikken ved avslutning. Skriv inn den nøyaktige adressa til nettstaden du vil behandle, og klikk deretter på Tillat.
 
 ## Exceptions - HTTPS-Only Mode
 
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Du kan slå av berre-HTTPS-modus for bestemte nettstadar. { -brand-short-name } prøver ikkje å oppgradere tilkoplinga for å sikre HTTPS for desse nettstadane. Unntak gjeld ikkje private vindauge.
 permissions-exceptions-https-only-desc2 = Du kan slå av kun-HTTPS-modus for bestemte nettstadar. { -brand-short-name } prøver ikkje å oppgradere tilkoplinga til sikker HTTPS for desse nettstadane.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Tillatne nettstadar – sprettoppvindauge og tredjepartvidaresendingar
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Du kan angi kva nettstadar som har lov til å opne sprettoppvindauge og bli vidaresendt av tredjepartsrammer.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Følgjande nettstadar har bedt om tilgang til kam
 permissions-site-camera-disable-label =
     .label = Blokker nye førespurnadar som ber om tilgang til kameraet ditt
 permissions-site-camera-disable-desc = Dette hindrar nettstadar som ikkje er førte opp ovanfor, og ber om løyve til å få tilgang til kameraet ditt. Viss du blokkerer tilgang til kameraet ditt, kan det hende at nokre nettstadfunksjoner ikkje vil fungere.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Innstillingar – Einingsappar og -tenester
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Desse nettstadane har bede om tilgang til appar og tenester på denne eininga. Du kan velje å tillate eller blokkere nettstadar frå å gjere dette.
+permissions-site-localhost-disable-label =
+    .label = Blokker nye førespurnadar om tilgang til appar og tenester på denne eininga
+permissions-site-localhost-disable-desc = Dette vil hindre nettstadar som ikkje er oppførte ovanfor i å be om tilgang til appar og tenester på denne eininga. Dette kan føre til at enkelte nettstadfunksjonar ikkje fungerer.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Innstillingar - Lokale nettverkseiningar
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Desse nettstadane har bede om tilgang til appar og tenester på einingar som er kopla til Wi-Fi-nettverket eller det lokale nettverket ditt. Du kan velje å tillate eller blokkere nettstadar frå å gjere dette.
+permissions-site-local-network-disable-label =
+    .label = Blokker nye førespurnadar om tilgang til appar og tenester på einingar som er kopla til Wi-Fi-nettverket eller det lokale nettverket ditt.
+permissions-site-local-network-disable-desc = Dette vil hindre nettstadar som ikkje er oppførte ovanfor i å be om tilgang til appar og tenester på einingar som er kopla til Wi-Fi eller lokale nettverkseiningar. Dette kan føre til at enkelte nettstadfunksjonar ikkje fungerer.
 
 ## Site Permissions - Microphone
 

@@ -26,11 +26,33 @@ perftools-heading-local-build = 本機編譯版本
 
 perftools-description-intro = 記錄過程將在新分頁開啟 <a>profiler.firefox.com</a>。所有資料都儲存在您的本機上，但您可以決定是否要上傳分享。
 perftools-description-local-build = 若您使用這台電腦上自行編譯的版本進行測量，請將編譯出的目的碼路徑（objdir）放到下方清單，以用於查詢除錯符號資訊。
+perftools-pick-local-build-directory = 挑選編譯目錄
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = 取樣間隔：
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -146,12 +168,13 @@ perftools-presets-ml-label = 機器學習
 perftools-presets-ml-description2 = 於 { -brand-shorter-name } 診斷機器學習 Bug 時的預設值。
 perftools-presets-networking-label = 網路連線
 perftools-presets-networking-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值。
+perftools-presets-networking-with-logs-label = 網路連線含紀錄
+perftools-presets-networking-with-logs-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值，並包含網路紀錄。這些紀錄內容可能會包含您造訪的網址等敏感資料。
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = 電源
 perftools-presets-power-description = 於 { -brand-shorter-name } 診斷耗電量時的預設值，額外負荷較低。
 perftools-presets-debug-label = 除錯
 perftools-presets-debug-description = { -brand-shorter-name } 的預設除錯選項。額外負荷較高，請只在需要了解瀏覽器行為時使用，勿用於需要較高效能的情境。
+perftools-presets-web-compat-label = Web Compat
+perftools-presets-web-compat-description = 對網站相容性進行除錯，而非效能監控的建議預設值。
 perftools-presets-custom-label = 自訂
-
-##
-

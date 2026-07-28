@@ -29,6 +29,7 @@ about-logging-no-log-modules = Không
 about-logging-no-log-file = Không
 about-logging-logging-preset-selector-text = Ghi nhật ký đặt trước:
 about-logging-with-profiler-stacks-checkbox = Bật dấu vết ngăn xếp (stack trace) cho tin nhắn nhật ký
+about-logging-with-javascript-tracing-checkbox = Bật theo dõi JavaScript
 about-logging-menu =
     .title = Tùy chọn nâng cao
 
@@ -50,6 +51,12 @@ about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Ghi nhật ký các module để chẩn đoán cuộc gọi WebRTC
 about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Module nhật ký để chuẩn đoán sự cố với bộ giải mã và mã hoá âm thanh/video, và giải mã hình ảnh WebCodecs
+about-logging-preset-ml-label = Học máy (Machine Learning)
+about-logging-preset-ml-description = Ghi nhật ký các module để chẩn đoán các vấn đề về học máy (machine learning)
+about-logging-preset-web-compat-label = Web Compat
+about-logging-preset-web-compat-description = Ghi nhật ký module để chẩn đoán các vấn đề tương thích web
+about-logging-preset-navigation = Điều hướng
+about-logging-preset-navigation-description = Ghi nhật ký các mô-đun để chẩn đoán các sự cố về điều hướng và lịch sử phiên.
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Ghi lại các module để chẩn đoán sự cố WebGPU
 about-logging-preset-gfx-label = Đồ họa
@@ -96,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Chia sẻ
 about-logging-upload-error = Đã xảy ra lỗi khi tải lên hồ sơ: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Đã xảy ra lỗi khi lưu trữ hồ sơ đã tải lên: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Đã xảy ra lỗi khi lưu tập tin: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profile { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Hồ sơ đã tải lên
+about-logging-no-uploaded-profiles = Chưa có hồ sơ nào được tải lên.
+about-logging-delete-uploaded-profile = Xóa
+about-logging-view-uploaded-profile = Xem hồ sơ
+about-logging-delete-profile-confirm-title = Xóa hồ sơ
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Bạn có chắc chắn muốn xóa hồ sơ “{ $profileName }” không? Thao tác này không thể hoàn tác.
+about-logging-deleting-profile = Đang xóa…

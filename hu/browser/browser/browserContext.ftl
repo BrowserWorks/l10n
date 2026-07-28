@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Megnyitás új lapon
     .accesskey = l
+main-context-menu-open-link-split-view =
+    .label = Hivatkozás megnyitása Osztott nézetben
+    .accesskey = m
 main-context-menu-open-link-container-tab =
     .label = Hivatkozás megnyitása új konténerlapon
     .accesskey = k
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Tiszta hivatkozás másolása
     .accesskey = m
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Hivatkozás másolása oldalkövetés nélkül
-    .accesskey = v
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Vezérlők elrejtése
     .accesskey = V
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Teljes képernyő
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Leírás megjelenítése
     .accesskey = L
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Kép keresése a(z) { $engine } segítségével
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = Videó mentése más néven…
     .accesskey = v
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Hang küldése e-mailben…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = Küldés eszközre
+    .accesskey = K
+main-context-menu-send-to-mobile-2 =
+    .label = Küldés mobilra
+    .accesskey = m
+main-context-menu-send-to-mobile-sign-in = Jelentkezzen be a lapok küldéséhez
+main-context-menu-send-to-mobile-enable-sync2 = Lap küldéséhez engedélyezze a szinkronizálást
+main-context-menu-send-to-mobile-connect-phone2 = Csatlakoztassa a telefonját
+main-context-menu-send-to-mobile-device-missing2 = Nem látja az eszközét?
+main-context-menu-send-to-mobile-sign-in-from-link = Jelentkezzen be a hivatkozás küldéséhez
+main-context-menu-send-to-mobile-sign-in-from-page = Jelentkezzen be a lap küldéséhez
+main-context-menu-send-to-mobile-enable-sync3 = Kapcsolja be a szinkronizálást a lapok küldéséhez
+main-context-menu-send-to-mobile-enable-sync-from-link = Kapcsolja be a szinkronizálást a hivatkozás küldéséhez
+main-context-menu-send-to-mobile-enable-sync-from-page = Kapcsolja be a szinkronizálást a lap küldéséhez
+main-context-menu-send-to-mobile-connect-phone3 = Csatlakoztasson egy eszközt a lapok küldéséhez
+main-context-menu-send-to-mobile-connect-phone-from-link = Csatlakoztasson egy eszközt a hivatkozás küldéséhez
+main-context-menu-send-to-mobile-connect-phone-from-page = Csatlakoztasson egy eszközt a lap küldéséhez
 main-context-menu-save-to-pocket =
     .label = Oldal mentése a { -pocket-brand-name }be
     .accesskey = k
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Hivatkozás küldése eszközre
     .accesskey = e
+main-context-menu-link-send-to-mobile =
+    .label = Hivatkozás küldése mobilra
+    .accesskey = H
 main-context-menu-frame =
     .label = Ez a keret
     .accesskey = z
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Jelszó felfedése
     .accesskey = f
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Új
+main-context-menu-pdfjs-copy-page =
+    .label = Oldal másolása
+main-context-menu-pdfjs-cut-page =
+    .label = Oldal kivágása
+main-context-menu-pdfjs-delete-page =
+    .label = Oldal törlése
+main-context-menu-pdfjs-save-page =
+    .label = Kiválasztás mentése másként…

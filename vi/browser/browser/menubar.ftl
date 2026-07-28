@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Tùy chỉnh
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Cài đặt…
+menu-application-set-as-default =
+    .label = Đặt { -brand-shorter-name } làm trình duyệt mặc định
 menu-application-services =
     .label = Dịch vụ
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Chia sẻ
     .accesskey = h
+menu-file-share-qrcode =
+    .label = Tạo mã QR…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Tạo mã QR
+    .accesskey = Q
 menu-file-print-setup =
     .label = Thiết lập trang…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Lịch sử
 menu-view-synced-tabs-sidebar =
     .label = Các thẻ đã đồng bộ
-menu-view-megalist-sidebar =
-    .label = Mật khẩu
 menu-view-full-zoom =
     .label = Thu phóng
     .accesskey = Z
@@ -160,7 +157,7 @@ menu-view-full-zoom-actual-size =
     .label = Kích thước thực
     .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = Chỉ phóng to văn bản
+    .label = Chỉ thu phóng văn bản
     .accesskey = T
 menu-view-page-style-menu =
     .label = Kiểu của trang
@@ -262,6 +259,13 @@ menu-profiles-manage-profiles =
     .label = Quản lý hồ sơ
 menu-profiles-new-profile =
     .label = Hồ sơ mới
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (hiện tại)
+menu-profiles-menu =
+    .label = Hồ sơ
+    .accesskey = P
 
 ## Tools Menu
 
@@ -301,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Thông tin trang
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Chỉnh sửa PDF…
+    .accesskey = P
 menu-settings =
     .label = Cài đặt
     .accesskey =

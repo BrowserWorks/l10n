@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = Importuj z przeglądar
 mr1-onboarding-theme-header = Używaj jej po swojemu
 mr1-onboarding-theme-subtitle = Spersonalizuj { -brand-short-name(case: "acc") } za pomocą motywu.
 mr1-onboarding-theme-secondary-button-label = Nie teraz
-newtab-wallpaper-onboarding-title = Wypróbuj odrobiny koloru
-newtab-wallpaper-onboarding-subtitle = Wybierz tapetę, aby nadać nowej karcie świeży wygląd.
-newtab-wallpaper-onboarding-primary-button-label = Ustaw tapetę
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Motyw systemu
 mr1-onboarding-theme-label-light = Jasny
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = Ciemny
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Gotowe
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Wstrzymaj animację
+onboarding-animation-play-button =
+    .aria-label = Włącz animację
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -373,7 +379,7 @@ onboarding-new-user-familiarity-based-survey-title = Jak dobrze znasz { -brand-s
 onboarding-new-user-survey-subtitle = Twoja opinia pomoże nam jeszcze bardziej ulepszyć { -brand-short-name(case: "acc") }.
 # When translating "next" it means the next screen in onboarding.
 onboarding-new-user-survey-next-button-label = Dalej
-onboarding-new-user-survey-legal-link-label = Klikając „{ onboarding-new-user-survey-next-button-label }” wyrażasz zgodę na <a data-l10n-name="privacy_notice">zasady ochrony prywatności</a> { -brand-product-name(case: "gen") }
+onboarding-new-user-survey-legal-link-label = Klikając „{ onboarding-new-user-survey-next-button-label }”, zgadzasz się na <a data-l10n-name="privacy_notice">zasady ochrony prywatności</a> { -brand-product-name(case: "gen") }
 # When translating "brand new" it means completely new.
 onboarding-new-user-survey-time-based-option-1 = Dopiero zaczynam
 onboarding-new-user-survey-time-based-option-2 = Mniej niż miesiąc
@@ -426,6 +432,12 @@ onboarding-horizontal-tabs-tooltip =
 # Description for horizontal tabs image
 onboarding-horizontal-tabs-description =
     .aria-description = Okno przeglądarki wyświetlające karty na górze.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Wypróbuj czatbota opartego na sztucznej inteligencji w panelu bocznym
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Streszczaj treść stron, przeprowadzaj burze mózgów, twórz wersje robocze wiadomości — nie przerywając przeglądania. Wybieraj spośród wielu dostawców. Zmieniaj dostawcę w dowolnej chwili. <a data-l10n-name="learn-more">Więcej informacji</a>
+onboarding-genai-sidebar-primary-button = Wybierz czatbota
+onboarding-genai-sidebar-secondary-button = Zacznij przeglądać Internet
 
 ## New user onboarding checklist
 
@@ -436,15 +448,25 @@ onboarding-checklist-pin = Przypnij { -brand-short-name(case: "acc") } do paska 
 onboarding-checklist-import = Importuj z poprzedniej przeglądarki
 onboarding-checklist-extension = Dodaj rozszerzenie
 onboarding-checklist-sign-up = Zaloguj się lub utwórz konto
+onboarding-checklist-minimize =
+    .label = Minimalizuj
+onboarding-checklist-remove =
+    .label = Usuń listę
 
 ## Tab Groups feature onboarding strings
 
 tab-groups-onboarding-feature-callout-title = Wypróbuj grupy kart, aby zmniejszyć bałagan i zwiększyć koncentrację
 tab-groups-onboarding-feature-callout-subtitle = Wprowadź porządek, przeciągając jedną kartę na drugą, aby utworzyć pierwszą grupę.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = W każdej chwili możesz znaleźć swoje grupy kart w menu „Pokaż wszystkie karty”.
 tab-groups-onboarding-create-group-title-2 = Tutaj możesz w każdej chwili znaleźć swoje grupy kart.
 tab-groups-onboarding-create-group-no-alltabs-button-title = Znajdź swoje grupy, wyszukując je na pasku adresu.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Kiedy zamkniesz grupę kart, w każdej chwili możesz ją przywrócić w menu „Pokaż wszystkie karty”.
 tab-groups-onboarding-saved-groups-title-2 = Kiedy zamkniesz grupę kart, tutaj możesz ją w każdej chwili przywrócić.
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Znajdź zamknięte grupy, wyszukując je na pasku adresu.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = W każdej chwili możesz przywrócić swoje grupy kart w menu „Pokaż wszystkie karty”.
 tab-groups-onboarding-session-restore-title = Tutaj możesz w każdej chwili przywrócić swoje grupy kart.
 tab-groups-onboarding-dismiss = OK
 
@@ -467,3 +489,128 @@ dismiss-button-label = Zamknij
 sync-to-mobile-button-label = Synchronizuj z telefonem
 desktop-to-mobile-qr-code-alt =
     .aria-label = Kod QR do pobrania { -brand-product-name(case: "gen") } na telefon
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Aktualizujesz system do Windows 11? 
+    Utwórzmy kopię zapasową danych { -brand-product-name(case: "gen") }.
+create-backup-screen-1-subtitle = Automatycznie chroń swoje hasła, zakładki i nie tylko w ciągu 1-2 minut.
+create-backup-screen-1-flair = Zalecane
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Więcej informacji</a>
+create-backup-screen-1-sync-label = Synchronizuj za pomocą { -brand-product-name(case: "gen") }
+create-backup-screen-1-sync-body = Tworzy kopie zapasowe wszystkich zalogowanych urządzeń
+create-backup-screen-1-backup-label = Kopia zapasowa na komputerze
+create-backup-screen-1-backup-body = Zachowuje na Twoim urządzeniu lub koncie OneDrive
+create-backup-select-tile-button-label = Wybierz
+create-backup-back-button-label = Wstecz
+create-backup-show-fewer =
+    .label = Pokazuj mniej takich komunikatów
+create-backup-screen-2-title = Wybierz dane { -brand-product-name(case: "gen") } do zachowania w kopii zapasowej
+create-backup-screen-2-subtitle = Zajmie to tylko minutkę. Twoje dane będą zachowywane w kopii zapasowej raz dziennie.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Łatwa konfiguracja
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Zakładki, historia, ustawienia i nie tylko
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Nie obejmuje haseł i metod płatności
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Nieszyfrowane
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Wszystkie dane
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Obejmuje hasła i metody płatności
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Zaszyfrowane za pomocą hasła
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Gdzie zachować kopię zapasową?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Utwórz hasło pliku kopii zapasowej
+create-backup-screen-3-subtitle = Wymagane do zaszyfrowania danych. Przechowuj je w miejscu, którego nie zapomnisz.
+fx-backup-opt-in-header = Wybierz położenie pliku
+fx-backup-opt-in-filepath-label = Wybierz miejsce, które przeniesiesz ze sobą na nowe urządzenie, takie jak konto OneDrive.
+fx-backup-opt-in-create-password-label = Wpisz hasło
+fx-backup-opt-in-confirm-btn-label = Kontynuuj
+fx-backup-opt-in-cancel-btn-label = Wstecz
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Kopia zapasowa została zaplanowana
+fx-backup-confirmation-screen-close-button = Zamknij
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Obejmuje wszystkie dane przeglądania
+fx-backup-confirmation-screen-all-data-item-text-2 = Zachowane na urządzeniu
+fx-backup-confirmation-screen-all-data-item-text-3 = Zaszyfrowane i chronione hasłem
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Obejmuje zakładki, historię, ustawienia i pozostałe dane
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Zachowane na urządzeniu
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Nie obejmuje haseł i metod płatności
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Otwórz <a data-l10n-name="settings">Ustawienia</a>, aby dodać prywatne dane.
+fx-backup-confirmation-screen-item-subtext-1 = Tworzenie kopii zapasowej zacznie się za kilka minut i będzie wykonywane raz dziennie. W <a data-l10n-name="settings">Ustawieniach</a> można sprawdzić postęp.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } wyszuka kopię zapasową, jeśli konieczna będzie ponowna instalacja.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Przywróć z kopii zapasowej
+restore-from-backup-title = Wróćmy do { -brand-short-name(case: "gen") } takiego, jak lubisz
+restore-from-backup-subtitle = Odzyskaj wszystkie swoje zakładki, historię i inne dane, aby wrócić do przeglądania.
+restore-from-backup-secondary-button = Nie przywracaj
+multiple-backups-info-tile = <strong>Odnaleziono więcej niż jeden plik z kopią zapasową.</strong> Wybrano najnowszy plik. Pozostałe profile można przywrócić w <a data-l10n-name="settings-label">Ustawieniach.</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = Wróciliśmy! Twoje dane { -brand-short-name(case: "gen") } zostały przywrócone.
+restored-from-backup-success-with-checklist-subtitle = Chcesz mieć swoją ulubioną przeglądarkę dbającą o prywatność pod jednym kliknięciem?
+restored-from-backup-success-no-checklist-subtitle = W <a data-l10n-name="settings">ustawieniach</a> można włączyć tworzenie kopii zapasowej na tym urządzeniu.
+restored-from-backup-success-with-checklist-primary-button = Zachowaj i kontynuuj
+restored-from-backup-success-with-checklist-secondary-button = Pomiń ten krok
+restored-from-backup-success-no-checklist-primary-button = Kontynuuj
+restored-from-backup-error-title = Niestety, wystąpił problem z plikiem kopii zapasowej.
+restored-from-backup-error-subtitle = Jeśli masz inny plik kopii zapasowej { -brand-short-name(case: "gen") }, spróbuj przywrócić z niego. <a data-l10n-name="restore-problems">Nadal masz problemy?</a>
+restored-from-backup-error-primary-button = Zamknij
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Dostosuj { -brand-short-name(case: "acc") } pod siebie
+onboarding-personalization-subtitle = Odpowiedz na kilka pytań, a my polecimy funkcje i rozszerzenia, które usprawnią korzystanie z { -brand-short-name(case: "gen") }.
+onboarding-personalization-use-case-title = Do czego będziesz korzystać z { -brand-short-name(case: "gen") }?
+onboarding-personalization-use-case-personal-option = Dla siebie
+onboarding-personalization-use-case-school-option = Do szkoły
+onboarding-personalization-use-case-work-option = Do pracy
+onboarding-personalization-motivation-title = Które cechy { -brand-short-name(case: "gen") } są dla Ciebie najważniejsze?
+onboarding-personalization-motivation-privacy-option = Prywatność i bezpieczeństwo
+onboarding-personalization-motivation-productivity-option = Produktywność
+onboarding-personalization-motivation-other-option = Inne
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Chronimy Twoje dane i blokujemy firmom możliwość śledzenia Twoich kliknięć — automatycznie.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Jesteś w dobrych łapkach
+onboarding-refresh-import-subtitle = Przenieś swoje hasła, zakładki, historię i nie tylko.
+onboarding-refresh-import-title = Poczuj się z { -brand-short-name(case: "ins") } bardziej jak w domu
+onboarding-refresh-onboarding-addons-subtitle = Rozszerzenia to niewielkie aplikacje, które pozwalają dostosować { -brand-short-name(case: "acc") }. Mogą one zwiększyć Twoją prywatność, poprawić wydajność, zmienić wygląd { -brand-short-name(case: "gen") } i wiele więcej.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Przeglądaj Internet wygodniej
+onboarding-refresh-sync-subtitle = Korzystaj z zakładek, haseł i nie tylko wszędzie, gdzie zalogujesz się w { -brand-short-name(case: "loc") }. Do tego Twoje dane są szyfrowane, więc tylko Ty je widzisz.
+onboarding-refresh-sync-title = Gdziekolwiek jesteś. Synchronizuj wszystko.
+onboarding-refresh-gratitude-subtitle = Dziękujemy za używanie { -brand-short-name(case: "gen") }, jedynej dużej przeglądarki wspieranej przez organizację non-profit. Z waszą pomocą pracujemy nad tym, aby Internet był bezpieczniejszy i bardziej dostępny dla wszystkich.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } jest po Twojej stronie
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = Warunki korzystania z { -brand-product-name(case: "gen") }
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-primary-button = Kontynuuj
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-dismiss = Nie, dziękuję
+smartwindow-sidebar-auto-open-callout-rejected-title = OK

@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Отладка - Runtime / { $selected
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Этот { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Этот { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Этот { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Настройка
+about-debugging-sidebar-setup-title =
+    .title = Настройка
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -88,13 +96,13 @@ about-debugging-setup-title = Настройка
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Выберите метод подключения, с помощью которого вы хотите удалённо отлаживать ваше устройство.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = Используйте <a>{ about-debugging-this-firefox-runtime-name }</a> для отладки расширений и service worker'ов в этой версии { -brand-shorter-name }.
+about-debugging-setup-this-firefox2 = Используйте «<a>{ about-debugging-this-firefox-runtime-name }</a>» для отладки расширений и Обработчиков (ServiceWorker) в этой версии { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Подключить устройство
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
-about-debugging-setup-usb-disabled = Включение этой функции потребует загрузки и установки необходимых компонентов для отладки Android по USB в { -brand-shorter-name }.
+about-debugging-setup-usb-disabled = Включение этой функции потребует скачивания и установки необходимых компонентов для отладки Android по USB в { -brand-shorter-name }.
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = Включить USB-устройства
@@ -166,11 +174,11 @@ about-debugging-runtime-tabs =
 # Title of the service workers category.
 # .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-service-workers =
-    .name = Service Worker'ы
+    .name = Обработчики
 # Title of the shared workers category.
 # .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-shared-workers =
-    .name = Shared Worker'ы
+    .name = Общие Обработчики
 # Title of the other workers category.
 # .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-other-workers =
@@ -185,7 +193,7 @@ about-debugging-runtime-profile-button2 = Профилировать произ�
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to:
 # https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/index.html#service-workers-not-compatible
-about-debugging-runtime-service-workers-not-compatible = Конфигурация вашего браузера не совместима с Service Worker'ами. <a>Узнайте больше</a>
+about-debugging-runtime-service-workers-not-compatible = Конфигурация вашего браузера не совместима с Обработчиками. <a>Узнайте больше</a>
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
@@ -245,7 +253,7 @@ about-debugging-tmp-extension-remove-button = Удалить
 # Clicking on the button will forcefully terminate the extension background script (button
 # only visible in extensions that includes a non-persistent background script, either an
 # event page or a background service worker).
-about-debugging-tmp-extension-terminate-bgscript-button = Завершить фоновый сценарий
+about-debugging-tmp-extension-terminate-bgscript-button = Завершить фоновый скрипт
 # Message displayed in the file picker that opens to select a temporary extension to load
 # (triggered by the button using "about-debugging-tmp-extension-install-button")
 # manifest.json .xpi and .zip should not be localized.
@@ -272,7 +280,7 @@ about-debugging-extension-id =
 # Text displayed for extensions in "runtime" pages, before displaying the status of the
 # extension background script.
 about-debugging-extension-backgroundscript =
-    .label = Фоновый сценарий
+    .label = Фоновый скрипт
 # Displayed for extension using a non-persistent background page (either an event page or
 # background service worker) when the background script is currently running.
 about-debugging-extension-backgroundscript-status-running = Выполняется
@@ -283,12 +291,12 @@ about-debugging-extension-backgroundscript-status-stopped = Остановлен
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 # .disabledTitle is processed by the fluent-react / ActionButton code.
-about-debugging-worker-action-push2 = Push
-    .disabledTitle = Service Worker push сейчас отключено для мультипроцессного { -brand-shorter-name }
+about-debugging-worker-action-push2 = Отправить
+    .disabledTitle = Отправка через Обработчики сейчас отключена для мультипроцессного { -brand-shorter-name }
 # This string is displayed as a label of the button that starts a service worker.
 # .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-start2 = Запустить
-    .disabledTitle = Запуск Service Worker сейчас отключён для мультипроцессного { -brand-shorter-name }
+    .disabledTitle = Запуск Обработчиков сейчас отключён для мультипроцессного { -brand-shorter-name }
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = Разрегистрировать
 # Displayed for service workers in runtime pages that listen to Fetch events.
@@ -318,7 +326,7 @@ about-debugging-worker-origin =
     .label = Источник
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
-    .title = Отладка Service Worker сейчас отключена для мультипроцессного { -brand-shorter-name }
+    .title = Отладка Обработчика сейчас отключена для мультипроцессного { -brand-shorter-name }
 # Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
 about-debugging-zombie-tab-inspect-action-disabled =
     .title = Вкладка не полностью загружена и не может быть отлажена
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Инструменты мульти�
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Главный процесс и процессы контента целевого браузера
+about-debugging-message-error-icon =
+    .alt = Значок ошибки
+about-debugging-message-info-icon =
+    .alt = Значок информации
+about-debugging-message-warning-icon =
+    .alt = Значок предупреждения
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Закрыть сообщение
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Закрыть сообщение
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Сведения об ошибке
 about-debugging-message-details-label-warning = Сведения о предупреждении
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Подробности
+about-debugging-sidebar =
+    .heading = Отладка

@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = Zmień język źródłowy
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Nie obsługujemy jeszcze tłumaczeń z tego języka ({ $language }).
+translations-panel-error-unsupported-hint-unknown-2 = Nie obsługujemy jeszcze tłumaczeń z tego języka.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -222,12 +230,22 @@ select-translations-panel-try-again-button =
 # Text displayed as a placeholder when the panel is idle.
 select-translations-panel-idle-placeholder-text = Tutaj będzie wyświetlany przetłumaczony tekst.
 # Text displayed as a placeholder when the panel is actively translating.
-select-translations-panel-translating-placeholder-text = Tłumaczenie…
+select-translations-panel-translating-placeholder-text = Trwa tłumaczenie…
 select-translations-panel-init-failure-message =
     .message = Nie można wczytać języków. Sprawdź połączenie z Internetem i spróbuj ponownie.
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Wystąpił problem przy tłumaczeniu. Spróbuj ponownie.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Nie obsługujemy jeszcze tłumaczeń z tego języka ({ $language }).
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Nie obsługujemy jeszcze tłumaczeń z tego języka.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

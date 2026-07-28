@@ -1,0 +1,299 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Toolbar button tooltip reflects VPN state
+
+ipprotection-button =
+    .label = VPN
+    .tooltiptext = VPN
+ipprotection-button-error =
+    .label = VPN 켜기
+    .tooltiptext = VPN 켜기
+
+##
+
+# The word "Beta" is intended to be uppercase in the experiment label.
+ipprotection-experiment-badge =
+    .label = 베타
+ipprotection-help-button =
+    .tooltiptext = VPN 지원 페이지 열기
+ipprotection-title = VPN
+
+## Buttons used for all feature introduction callouts
+
+ipprotection-feature-introduction-title = 브라우저 안에서 바로 VPN을 만나보세요
+ipprotection-feature-introduction-title-1 = { -brand-product-name }에 내장된 VPN을 사용해 보세요
+ipprotection-feature-introduction-link-text-2 = 새로운 <a data-l10n-name="learn-more-vpn">내장 VPN</a>을 사용하여 위치를 숨기고 데이터를 보호하세요.
+# Used for callout for users who expressed interest in privacy in onboarding
+ipprotection-feature-introduction-title-privacy = 또 다른 개인 정보 보호 계층 추가
+ipprotection-feature-introduction-link-text-privacy-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name }에 내장된 VPN</a>이 탐색을 안전하게 보호해 드립니다. 여러 위치 중 원하는 곳을 선택하여 탐색 위치를 더욱 안전하게 보호하세요.
+ipprotection-feature-introduction-link-text-privacy-2 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name }에 내장된 VPN</a>이 탐색을 안전하게 보호해 드립니다. 여러 위치 중 원하는 곳을 선택하여 탐색 위치를 더욱 안전하게 보호하세요.
+ipprotection-feature-introduction-link-text-privacy-3 = 여러 위치 중 원하는 곳을 선택하여 탐색 위치를 숨기는 <a data-l10n-name="learn-more-vpn">추가적인 개인정보 보호</a>를 받으세요.
+ipprotection-feature-introduction-text-summer-promo-1 = 탐색을 더욱 안전하게 보호하려면 기능을 켜 보세요. <a data-l10n-name="summer-promo-link">무제한 대역폭</a>과 더 많은 접속 지역이 제공됩니다. 지금부터 8월 31일까지입니다.
+ipprotection-feature-introduction-title-summer-promo = 여행 계획이 있으신가요? 어디서나 개인 정보를 안전하게 보호하세요.
+ipprotection-feature-introduction-description-summer-promo = { -brand-product-name }에 내장된 VPN으로 더 넓은 세상을 만나보세요. 더 많은 접속 지역과 무제한 대역폭이 8월 31일까지 제공됩니다.
+ipprotection-feature-introduction-link-text-private-browsing-2 = 새로운 <a data-l10n-name="learn-more-vpn">내장 VPN</a>을 사용하여 사생활 보호 창에 있을 때도 위치를 숨기고 데이터를 보호하세요.
+ipprotection-feature-introduction-description-private-browsing = 사생활 보호 창에 있을 때도 위치를 숨겨 탐색을 추가 보호합니다.
+# Used for callout shown on login to public wi-fi through a captive portal
+ipprotection-feature-introduction-title-captive-portal = 공용 Wi-Fi를 사용하고 계십니까? { -brand-product-name }에 내장된 VPN을 사용해 보세요.
+ipprotection-feature-introduction-description-captive-portal = 공용 Wi-Fi에서도 위치를 숨겨 탐색을 추가 보호합니다.
+# Used for discovery callouts for both captive portal login and private browsing
+ipprotection-feature-introduction-link-text-captive-portal-1 = 여러 위치 중 원하는 곳을 선택하여 탐색 위치를 숨기는 <a data-l10n-name="learn-more-vpn">추가적인 개인정보 보호</a>를 받으세요.
+ipprotection-feature-introduction-button-primary = 다음
+ipprotection-feature-introduction-button-secondary-not-now = 나중에
+ipprotection-feature-introduction-button-secondary-not-now-menuitem =
+    .label = 나중에
+ipprotection-feature-introduction-button-secondary-no-thanks = 아니요
+ipprotection-feature-introduction-button-secondary-no-thanks-menuitem =
+    .label = 아니요
+ipprotection-feature-introduction-button-secondary-remove = 도구 모음에서 VPN 제거
+ipprotection-feature-introduction-button-secondary-remove-1 =
+    .label = 도구 모음에서 VPN 제거
+ipprotection-feature-introduction-button-open-vpn = VPN 열기
+ipprotection-feature-introduction-button-get-started = 시작하기
+
+## Site settings callout
+
+ipprotection-site-settings-callout-title = VPN 사용 위치 선택
+ipprotection-site-settings-callout-subtitle = 특정 사이트에 대해 VPN을 끄면 다음에 방문할 때 해당 사이트를 기억합니다.
+ipprotection-site-settings-callout-button = 확인
+
+## Location selection callout
+
+ipprotection-location-selection-callout-title = 새 기능: 위치 전환
+ipprotection-location-selection-callout-description-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name }에 내장된 VPN</a>을 사용하면 여러 탐색 위치 중에서 직접 선택하거나, 가장 빠른 위치를 자동으로 찾을 수 있습니다.
+ipprotection-location-selection-callout-primary-button = 사용해 보기
+ipprotection-location-selection-callout-secondary-button = 닫기
+
+## Panel
+
+# Also used for the callout shown in private browsing
+unauthenticated-vpn-title = { -brand-product-name }에 내장된 VPN을 사용해 보세요
+unauthenticated-hide-location-message-3 = { -brand-product-name }에서 탐색하는 동안 <a data-l10n-name="learn-more-vpn">위치를 숨기세요</a>.
+unauthenticated-private-location-message = { -brand-product-name }에서 <a data-l10n-name="learn-more-vpn">사용자의 위치를 비공개로 유지</a>하는 데 도움이 됩니다.
+unauthenticated-choose-location-message-1 = 여러 위치 중에서 직접 선택하거나, { -brand-product-name }가 가장 빠른 위치를 찾습니다.
+unauthenticated-get-started = 시작하기
+unauthenticated-terms-of-service-privacy-notice = 계속 진행하면, <a data-l10n-name="vpn-terms-of-service">이용 약관</a> 및 <a data-l10n-name="vpn-privacy-notice">개인정보처리방침</a>에 동의하게 됩니다.
+site-exclusion-toggle-enabled-1 =
+    .label = 이 사이트에 VPN 사용
+    .aria-label = 이 사이트에서 VPN이 켜짐
+site-exclusion-toggle-disabled-1 =
+    .label = 이 사이트에 VPN 사용
+    .aria-label = 이 사이트에서 VPN이 꺼짐
+site-exclusion-toggle-description = 사이트가 작동하지 않습니까? VPN을 꺼보세요.
+ipprotection-settings-link =
+    .label = 설정
+
+## Status card
+
+# Button to turn off the VPN
+ipprotection-button-turn-vpn-off = VPN 끄기
+# Button to turn off the VPN when the VPN panel is open while viewing
+# a page from an excluded site.
+ipprotection-button-turn-vpn-off-excluded-site = 모든 곳에서 VPN 끄기
+# Button to turn on the VPN
+ipprotection-button-turn-vpn-on = VPN 켜기
+# Button while VPN is connecting
+ipprotection-button-connecting = 켜는 중…
+ipprotection-connection-status-connected-1 = VPN 켜짐
+    .aria-label = VPN 켜짐
+ipprotection-connection-status-disconnected-1 = VPN 꺼짐
+    .aria-label = VPN 꺼짐
+ipprotection-connection-status-excluded-1 = 이 사이트에서 VPN 꺼짐
+    .aria-label = 이 사이트에서 VPN 꺼짐
+ipprotection-connection-status-connecting-1 = VPN 연결 중…
+    .aria-label = VPN 연결 중…
+
+## Location controls
+
+# The button displays the selected VPN location.
+# This shows the default selection, "Recommended" which is the recommended location as determined by Firefox.
+ipprotection-recommended-location-button = 위치: 추천
+ipprotection-recommended-location-description = { -brand-product-name }가 가장 빠른 위치를 찾습니다.
+ipprotection-recommended-location-badge = 신규
+# Variables
+#   $country (string) - The country selected for the VPN server location
+ipprotection-location-country-button = 위치: { $country }
+ipprotection-locations-subview =
+    .title = 위치 선택
+ipprotection-locations-subview-description = 다른 위치를 선택하여 탐색해 보세요.
+ipprotecion-locations-subview-recommended-label = 추천
+ipprotection-locations-subview-recommended-description = 가장 빠른 위치 찾기
+# Label shown next to a VPN location that the user cannot select.
+# The aria-label is for accessibility, and should communicate that the
+# location is unavailable and the button is disabled.
+ipprotection-locations-unavailable-label-1 = 사용할 수 없음
+    .aria-label = 사용할 수 없음, 비활성화됨
+# Label shown next to a VPN location that the user cannot select.
+ipprotection-locations-unavailable-label = 사용할 수 없음
+ipprotection-locations-subview-promo =
+    .heading = { -mozilla-vpn-brand-name }으로 보호 수준 높이기
+    .message = 300개 이상의 위치 중에서 선택하고, 최대 5개 기기에서 모든 앱을 보호하세요.
+ipprotection-locations-subview-promo-button = { -mozilla-vpn-brand-name } 받기
+
+## VPN paused state
+
+upgrade-vpn-title = 브라우저를 넘어선 추가 보호를 받으세요
+upgrade-vpn-description = VPN 위치를 선택하고, 모든 앱과 최대 5개의 기기에 VPN을 사용하고, 집이든 공용 Wi-Fi든 모든 네트워크에서 보안을 유지하세요.
+upgrade-vpn-button = { -mozilla-vpn-brand-name } 사용해보기
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-connection-status-paused-description-1 = { $maxUsage } GB의 VPN 데이터를 모두 사용했습니다. 접근 권한이 다음 달에 재설정됩니다.
+ipprotection-connection-status-paused-title-2 = VPN이 일시 중지됨
+    .aria-label = VPN이 일시 중지됨
+
+## Messages and errors
+
+ipprotection-connection-status-generic-error-description = 몇 분 후 다시 시도하세요.
+ipprotection-connection-status-generic-error-try-again = 나중에 다시 시도하세요.
+ipprotection-connection-status-network-error-title-1 = 인터넷 연결 확인
+    .aria-label = 인터넷 연결 확인
+ipprotection-connection-status-network-error-description = 인터넷에 연결하고, VPN을 켜보세요.
+ipprotection-connection-status-blocked-error-title-1 = VPN을 사용할 수 없음
+    .aria-label = VPN을 사용할 수 없음
+ipprotection-connection-status-blocked-error-description = 현지 법률에 따라 이 지역에서는 VPN 서비스를 제공할 수 없습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-message-bandwidth-warning =
+    .heading = VPN 사용 한도에 가까워지는 중
+    .message = 이번 달에는 { $maxUsage } GB 중 { $usageLeft } GB가 남았습니다.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-message-bandwidth-warning-mb =
+    .heading = VPN 사용 한도에 가까워지는 중
+    .message = 이번 달에는 { $maxUsage } GB 중 { $usageLeft } MB가 남았습니다.
+ipprotection-message-continuous-onboarding-intro = VPN을 켜서 위치를 숨기고 탐색에 암호화를 추가하세요.
+ipprotection-message-continuous-onboarding-autostart = { -brand-short-name }를 열 때마다 <a data-l10n-name="setting-link">VPN을 켜도록 설정</a>하여 추가 보호 계층을 사용하세요.
+ipprotection-message-continuous-onboarding-site-settings = { -brand-short-name }는 VPN을 사용하도록 설정한 웹 사이트를 기억합니다. <a data-l10n-name="setting-link">설정</a>에서 언제든지 변경할 수 있습니다.
+confirmation-hint-ipprotection-navigated-to-excluded-site = 이 사이트에서 VPN 꺼짐
+ipprotection-open-button = { -brand-product-name } 열기
+ipprotection-come-back-title = 다시 돌아와 내장된 VPN을 이용해 보세요
+ipprotection-message-body-hide-location = { -brand-product-name }에서 탐색할 때 위치를 숨겨 개인 정보 보호를 강화하고 제어 권한을 높여보세요.
+ipprotection-connection-status-generic-error-title-1 = VPN에 연결할 수 없음
+    .aria-label = VPN에 연결할 수 없음
+
+## IP Protection bandwidth callouts
+
+ipprotection-bandwidth-upgrade-title = 내장 VPN이 마음에 드세요? { -mozilla-vpn-brand-name }으로 { -brand-product-name } 외부에서 더 많은 보호를 받으세요.
+ipprotection-bandwidth-upgrade-text = 집이나 공용 Wi-Fi 등 상관없이 VPN 위치를 선택하고 최대 5대의 기기에서 모든 앱에 보호 기능을 추가하세요.
+
+## IP Protection bandwidth warning infobar
+
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+ip-protection-bandwidth-warning-infobar-message-75 = <strong>VPN 사용 한도에 도달했습니다.</strong> { $usageLeft } GB가 남았습니다. 사용자의 데이터는 다음 달 초에 초기화됩니다.
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+ip-protection-bandwidth-warning-infobar-message-90 = <strong>VPN 데이터가 거의 소진되었습니다.</strong> { $usageLeft } GB가 남았습니다. 모두 사용하면 다음 달 1일에 데이터가 초기화될 때까지 VPN이 일시 중지됩니다.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+ip-protection-bandwidth-warning-infobar-message-90-mb = <strong>VPN 데이터가 거의 소진되었습니다.</strong> { $usageLeft } MB가 남았습니다. 모두 사용하면 다음 달 1일에 데이터가 초기화될 때까지 VPN이 일시 중지됩니다.
+
+## IP Protection Settings
+
+ip-protection-description =
+    .label = VPN
+    .description = { -brand-short-name }에서 검색하는 동안 개인정보 보호를 강화하는 VPN이 내장되어 있습니다.
+ip-protection-description-1 =
+    .label = 내장 VPN
+    .description = 탐색하는 동안 위치를 숨겨 개인 정보 보호를 강화하세요.
+ip-protection-learn-more = 더 알아보기
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-not-opted-in-4 =
+    .heading = { -brand-short-name }의 내장 VPN을 사용해 보세요
+    .message = 위치를 숨겨 탐색을 추가 보호합니다.
+ip-protection-not-opted-in-button = 시작하기
+# Variables:
+#   $count (number) - The number of sites saved as VPN exclusions.
+ip-protection-site-exceptions-all-sites-button =
+    .label = 웹 사이트 설정 관리
+    .description = 웹 사이트 { $count }개
+ip-protection-autostart =
+    .label = 자동으로 VPN 켜기
+ip-protection-autostart-checkbox =
+    .label = { -brand-short-name }를 열 때
+ip-protection-autostart-private-checkbox =
+    .label = 사생활 보호 창에서
+ip-protection-vpn-upgrade-link =
+    .label = { -mozilla-vpn-brand-name }으로 { -brand-short-name } 외부에서 더 많은 보호 받기
+    .description = 집이나 공용 Wi-Fi 등 상관없이 사용자 지정 VPN 위치를 선택하고 최대 5대의 기기에서 모든 앱에 보호 기능을 추가하세요.
+ip-protection-vpn-upgrade-link-1 =
+    .label = { -mozilla-vpn-brand-name }으로 보호 수준 높이기
+    .description = 300개 이상의 위치 중에서 선택하고, 최대 5개 기기에서 모든 앱을 보호하세요.
+
+## IP Protection dialogs
+
+ip-protection-exceptions-dialog-window =
+    .title = 웹 사이트 설정 관리
+ip-protection-exclusions-desc = 이 목록에 있는 웹 사이트를 제외한 모든 웹 사이트에서 VPN을 사용하세요. 여기에서 또는 VPN을 열어 웹 사이트를 추가하세요.
+
+## IP Protection Bandwidth
+
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-gb = 이번 달에는 { $maxUsage } GB 중 { $usageLeft } GB 남음
+# The text inside the <span> is emphasized to highlight the amount of data left.
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-gb-1 = <span data-l10n-name="usage">{ $usageLeft } GB</span> / { $maxUsage } GB 남음
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-gb = { $maxUsage } GB 중 { $usageLeft } GB 남음
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-mb = 이번 달에는 { $maxUsage } GB 중 { $usageLeft } MB 남음
+# The text inside the <span> is emphasized to highlight the amount of data left.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-mb-1 = <span data-l10n-name="usage">{ $usageLeft } MB</span> / { $maxUsage } GB 남음
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-mb = { $maxUsage } GB 중 { $usageLeft } MB 남음
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-hit-for-the-month = { $maxUsage } GB의 VPN 데이터를 모두 사용했습니다. 접근 권한이 다음 달에 초기화됩니다.
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-help-text = 매월 1일에 { $maxUsage } GB로 초기화합니다.
+ip-protection-bandwidth-header-1 = 월간 데이터 제한
+
+## IP Protection bandwidth reset callout
+
+# Variables
+#  $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-bandwidth-reset-title = { $maxUsage } GB VPN, 준비 완료
+ipprotection-bandwidth-reset-text = VPN을 켜서 개인 정보 보호를 더욱 강화하세요. 매달 무료로 제공해드립니다.
+ipprotection-bandwidth-reset-button = 확인
+
+## IP Protection add-on breakage warnings
+
+ipp-activator-breakage-sign-in-warning = <strong>이 웹 사이트는 VPN이 작동하지 않을 수 있습니다.</strong> 이 웹사이트를 사용하는 동안 로그인하거나 VPN을 꺼보세요.
+ipp-activator-breakage-turn-off-warning = <strong>이 웹 사이트는 VPN이 작동하지 않을 수 있습니다.</strong> 이 웹사이트를 사용하는 동안 VPN을 꺼보세요.
+
+## IP Protection alerts
+
+vpn-paused-alert-title = VPN 일시 중지됨
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+vpn-paused-alert-body = { $maxUsage } GB의 VPN 데이터를 모두 사용했습니다. 다음 달에 VPN 접근이 초기화됩니다.
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+vpn-error-page-paused-description = { $maxUsage } GB의 VPN 데이터를 모두 사용했습니다. 접근 권한이 다음 달에 재설정됩니다.
+vpn-error-page-continue-description = VPN 없이 계속하는 방법 선택
+vpn-error-page-keep-browsing = 이 세션에서 계속 탐색
+vpn-error-page-new-session = 새 세션 시작
+vpn-paused-alert-close-tabs-button = 모든 탭 닫기
+vpn-paused-alert-continue-wo-vpn-button = VPN 없이 계속하기
+vpn-error-alert-title = VPN이 지금 작동하지 않습니다.
+vpn-error-alert-body = 나중에 다시 시도하세요.

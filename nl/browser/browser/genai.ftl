@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = { $provider } verwijderen
 genai-menu-remove-sidebar =
     .label = Verwijderen uit zijbalk
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = { $provider } vragen
 genai-menu-new-badge = Nieuw
 genai-menu-summarize-page = Pagina samenvatten
+genai-input-ask-smart-window =
+    .placeholder = Vragen…
 genai-input-ask-generic =
     .placeholder = AI-chatbot vragen…
 # $provider (string) - name of the provider
@@ -89,16 +94,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Chatbot-snelkoppeling verbergen
-genai-menu-no-provider =
-    .label = Een AI-chatbot vragen
 genai-menu-choose-chatbot =
     .label = Kies een AI-chatbot
+genai-menu-ask-generic-2 =
+    .label = AI-chatbot vragen
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = { $provider } vragen
+    .accesskey = v
+genai-menu-no-provider-2 =
+    .label = Een AI-chatbot vragen
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = Vragen…
+    .accesskey = V
 
 ## Chatbot header
 
 genai-chatbot-title = AI-chatbot
 genai-header-provider-menu =
     .title = Kies een chatbot
+genai-header-settings-button =
+    .title = AI-chatinstellingen
 genai-header-options-button =
     .title = Menu openen
 genai-header-close-button =
@@ -116,6 +134,11 @@ genai-options-hide-shortcut =
     .label = Snelkoppeling verbergen bij het selecteren van tekst
 genai-options-about-chatbot =
     .label = Over AI-chatbots in { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Aangezien de pagina lang is, is dit een gedeeltelijke samenvatting.
 
 ## Chatbot footer
 
@@ -209,3 +232,48 @@ link-preview-reading-time =
         [one] { $range } minuut leestijd
        *[other] { $range } minuten leestijd
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } kan geen voorbeeld van deze koppeling tonen
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Koppeling bezoeken
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } kan geen hoofdpunten voor deze webpagina aanmaken.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Er is iets misgegaan.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Opnieuw proberen
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Instellingen voor koppelingsvoorbeeld
+link-preview-settings-enable =
+    .label = Koppelingsvoorbeelden inschakelen
+    .description = De paginatitel, beschrijving en meer bekijken, als u de snelkoppeling gebruikt of met uw rechtermuisknop op een koppeling klikt.
+link-preview-settings-key-points =
+    .label = AI toestaan om het begin van de pagina te lezen en hoofdpunten aan te maken
+link-preview-settings-long-press =
+    .label = Snelkoppeling: klik op de koppeling en houd deze 1 seconde ingedrukt (lang indrukken)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Meer zien met AI?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } gebruikt AI om het begin van de pagina te lezen en een paar hoofdpunten aan te maken. Om uw privacy prioriteit te geven, gebeurt dit op uw apparaat.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Nieuw: een koppeling ingedrukt houden voor een voorbeeld
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Bekijk een korte beschrijving, leestijd en meer om te beslissen of de koppeling het openen waard is. Ook beschikbaar via de rechtermuisknop.
+# Header for the key points section
+link-preview-key-points-header = Hoofdpunten
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Hoofdpunten worden door AI aangemaakt en kunnen fouten bevatten.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Eerste installatie • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = U ziet de volgende keer de hoofdpunten sneller.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Voorbeeld bekijken
+# Onboarding card Close button
+link-preview-onboarding-close = Sluiten
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Eerste installatie
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Dit kan even duren. U ziet de belangrijkste punten de volgende keer sneller.

@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = Importeren uit { $previ
 mr1-onboarding-theme-header = Maak het van uzelf
 mr1-onboarding-theme-subtitle = Personaliseer { -brand-short-name } met een thema.
 mr1-onboarding-theme-secondary-button-label = Niet nu
-newtab-wallpaper-onboarding-title = Probeer een vleugje kleur
-newtab-wallpaper-onboarding-subtitle = Kies een achtergrond om uw Nieuw-tabbladpagina een frisse uitstraling te geven.
-newtab-wallpaper-onboarding-primary-button-label = Achtergrond instellen
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Systeemthema
 mr1-onboarding-theme-label-light = Licht
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = Donker
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Gereed
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Animatie pauzeren
+onboarding-animation-play-button =
+    .aria-label = Animatie afspelen
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -443,15 +449,25 @@ onboarding-checklist-pin = { -brand-short-name } aan de taakbalk vastmaken
 onboarding-checklist-import = Importeren uit vorige browser
 onboarding-checklist-extension = Een extensie toevoegen
 onboarding-checklist-sign-up = Registreren of aanmelden bij uw account
+onboarding-checklist-minimize =
+    .label = Minimaliseren
+onboarding-checklist-remove =
+    .label = Checklist verwijderen
 
 ## Tab Groups feature onboarding strings
 
 tab-groups-onboarding-feature-callout-title = Probeer tabbladgroepen voor minder rommel, meer focus
 tab-groups-onboarding-feature-callout-subtitle = Orden door het ene tabblad op het andere te slepen om uw eerste groep aan te maken.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Vind uw tabbladgroepen altijd terug in het menu Alle tabbladtitels tonen.
 tab-groups-onboarding-create-group-title-2 = Vind hier altijd uw tabbladgroepen.
 tab-groups-onboarding-create-group-no-alltabs-button-title = Vind uw groepen door ernaar te zoeken in de adresbalk.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Wanneer u een tabbladgroep sluit, kunt u deze op elk gewenst moment opnieuw openen vanuit het menu Alle tabbladtitels tonen.
 tab-groups-onboarding-saved-groups-title-2 = Wanneer u een tabbladgroep sluit, kunt u deze hier altijd opnieuw openen.
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Vind uw gesloten groepen door ernaar te zoeken in de adresbalk.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = U kunt uw tabbladgroepen op elk gewenst moment opnieuw openen vanuit het menu Alle tabbladtitels tonen.
 tab-groups-onboarding-session-restore-title = Open hier altijd uw tabbladgroepen.
 tab-groups-onboarding-dismiss = OK
 
@@ -474,3 +490,146 @@ dismiss-button-label = Sluiten
 sync-to-mobile-button-label = Synchroniseren met mobiel
 desktop-to-mobile-qr-code-alt =
     .aria-label = QR-code om { -brand-product-name } voor mobiel te downloaden
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Upgraden naar Windows 11?
+    Laten we een reservekopie van uw { -brand-product-name }-gegevens maken
+create-backup-screen-1-subtitle = Bescherm automatisch uw wachtwoorden, bladwijzers en meer in 1–2 minuten.
+create-backup-screen-1-flair = Aanbevolen
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Meer info</a>
+create-backup-screen-1-sync-label = Synchroniseren met { -brand-product-name }
+create-backup-screen-1-sync-body = Maakt een reservekopie van alle aangemelde apparaten
+create-backup-screen-1-backup-label = Reservekopie maken op pc
+create-backup-screen-1-backup-body = Slaat naar uw apparaat of OneDrive op
+create-backup-select-tile-button-label = Selecteren
+create-backup-back-button-label = Terug
+create-backup-show-fewer =
+    .label = Minder zoals dit tonen
+create-backup-screen-2-title = Kies { -brand-product-name }-gegevens om een reservekopie van te maken
+create-backup-screen-2-subtitle = Duurt maar een minuutje. Er wordt eenmaal per dag een reservekopie van uw gegevens gemaakt.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Eenvoudige instellingen
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Bladwijzers, geschiedenis, instellingen en meer
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Bevat geen wachtwoorden en betaalmethoden
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Niet versleuteld
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Alle gegevens
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Bevat wachtwoorden en betaalmethoden
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Versleuteld met een wachtwoord
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Waar wilt u uw reservekopie opslaan?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Wachtwoord voor een reservekopiebestand aanmaken
+create-backup-screen-3-subtitle = Vereist om uw gegevens te versleutelen. Bewaar het op een plek die u kunt onthouden.
+fx-backup-opt-in-header = Bestandslocatie kiezen
+fx-backup-opt-in-filepath-label = Kies een locatie die u naar een nieuw apparaat wilt overzetten, zoals OneDrive.
+fx-backup-opt-in-create-password-label = Voer wachtwoord in
+fx-backup-opt-in-confirm-btn-label = Doorgaan
+fx-backup-opt-in-cancel-btn-label = Terug
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Uw reservekopie is ingepland
+fx-backup-confirmation-screen-close-button = Sluiten
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Alle navigatiegegevens inbegrepen
+fx-backup-confirmation-screen-all-data-item-text-2 = Opgeslagen op uw apparaat
+fx-backup-confirmation-screen-all-data-item-text-3 = Versleuteld en beveiligd met een wachtwoord
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Inclusief bladwijzers, geschiedenis, instellingen en andere gegevens
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Opgeslagen op uw apparaat
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Wachtwoorden en betaalmethoden niet inbegrepen
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Ga naar <a data-l10n-name="settings">Instellingen</a> om gevoelige gegevens op te nemen.
+fx-backup-confirmation-screen-item-subtext-1 = Het maken van uw reservekopie begint over een paar minuten en wordt eenmaal per dag uitgevoerd. U kunt de voortgang controleren in <a data-l10n-name="settings">Instellingen</a>.
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } zoekt naar uw reservekopie als u opnieuw moet installeren.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Herstellen vanuit reservekopie
+restore-from-backup-title = Laten we { -brand-short-name } terugkrijgen zoals u het wilt
+restore-from-backup-subtitle = Herstel al uw bladwijzers, geschiedenis en andere gegevens om terug te keren naar surfen.
+restore-from-backup-secondary-button = Niet herstellen
+multiple-backups-info-tile = <strong>Meerdere reservekopiebestanden gevonden.</strong> Het meest recente bestand is geselecteerd. Herstel andere profielen in <a data-l10n-name="settings-label">Instellingen.</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = We zijn terug! { -brand-short-name }-gegevens zijn hersteld.
+restored-from-backup-success-with-checklist-subtitle = Wilt u uw favoriete op privacy gerichte browser één klik verwijderd houden?
+restored-from-backup-success-no-checklist-subtitle = U kunt back-ups voor dit apparaat inschakelen in <a data-l10n-name="settings">Instellingen</a>.
+restored-from-backup-success-with-checklist-primary-button = Opslaan en doorgaan
+restored-from-backup-success-with-checklist-secondary-button = Deze stap overslaan
+restored-from-backup-success-no-checklist-primary-button = Doorgaan
+restored-from-backup-error-title = Hmm, er is een probleem met uw reservekopiebestand.
+restored-from-backup-error-subtitle = Als u een ander { -brand-short-name }-reservekopiebestand hebt, probeer dat dan terug te zetten. <a data-l10n-name="restore-problems">Ondervindt u nog steeds problemen?</a>
+restored-from-backup-error-primary-button = Sluiten
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Pas uw { -brand-short-name }-ervaring aan
+onboarding-personalization-subtitle = Beantwoord een paar vragen en we zullen functies en extensies aanbevelen om uw gebruik van { -brand-short-name } te verbeteren.
+onboarding-personalization-use-case-title = Waar gaat u { -brand-short-name } voor gebruiken?
+onboarding-personalization-use-case-personal-option = Persoonlijk
+onboarding-personalization-use-case-school-option = School
+onboarding-personalization-use-case-work-option = Werk
+onboarding-personalization-motivation-title = Welke functies van { -brand-short-name } zijn het belangrijkst voor u?
+onboarding-personalization-motivation-privacy-option = Privacy en beveiliging
+onboarding-personalization-motivation-productivity-option = Productiviteit
+onboarding-personalization-motivation-other-option = Overig
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = We beschermen uw gegevens en voorkomen dat bedrijven uw klikken bespioneren – automatisch.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = U bent in veilige pootjes
+onboarding-refresh-import-subtitle = Breng uw wachtwoorden, bladwijzers, geschiedenis en meer over.
+onboarding-refresh-import-title = Laat { -brand-short-name } meer als thuis voelen
+onboarding-refresh-onboarding-addons-subtitle = Extensies zijn kleine apps waarmee u { -brand-short-name } kunt aanpassen. Ze kunnen uw privacy verbeteren, uw productiviteit verbeteren, het uiterlijk van { -brand-short-name } veranderen, en nog veel meer.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Geef uw navigatie een boost
+onboarding-refresh-sync-subtitle = Download bladwijzers, wachtwoorden en meer, overal waar u bent aangemeld bij { -brand-short-name }. Bovendien worden uw gegevens versleuteld, zodat alleen u ze kunt zien.
+onboarding-refresh-sync-title = Ga overal heen. Synchroniseer alles.
+onboarding-refresh-gratitude-subtitle = Bedankt voor het gebruik van { -brand-short-name }, de enige grote browser die wordt gesteund door een non-profitorganisatie. Met uw steun werken we eraan om het internet voor iedereen veiliger en meer toegankelijk te maken.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } is er voor u
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = Wissel op elk gewenst moment tussen Slimme en klassieke vensters.
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = { -brand-product-name }-gebruiksvoorwaarden
+smartwindow-existing-user-fx-tou-body = Om { -smart-window-brand-name } te gebruiken, moet u de <a data-l10n-name="terms_of_use">Gebruiksvoorwaarden</a> en de bijgewerkte <a data-l10n-name="privacy_notice">Privacyverklaring</a> accepteren.
+smartwindow-existing-user-fx-tou-accept = Accepteren
+smartwindow-existing-user-fx-tou-go-back = Terug
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = Maak { -smart-window-brand-name } uw favoriet
+smartwindow-onboarding-subtitle = Vat samen, vergelijk en stel vragen zonder iets te missen.
+smartwindow-onboarding-primary-button = Doorgaan
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = { -brand-product-name }-mascotte (Kit) met sterrenrekwisieten
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = Wilt u de assistent gesloten houden?
+smartwindow-sidebar-auto-open-callout-body = U kunt deze nog steeds openen wanneer u hem nodig hebt.
+smartwindow-sidebar-auto-open-callout-accept = Ja, gesloten houden
+smartwindow-sidebar-auto-open-callout-dismiss = Nee bedankt
+smartwindow-sidebar-auto-open-callout-accepted-title = De assistent blijft gesloten
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = Gebruik Vragen om hem op een pagina te openen. Wijzig dit op elk gewenst moment in <a data-l10n-name="settings">Instellingen</a>.
+smartwindow-sidebar-auto-open-callout-rejected-title = Begrepen
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = Als u van gedachten verandert, kunt u de standaardwaarde altijd bijwerken via de <a data-l10n-name="settings">Instellingen</a>.

@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Tilføj element
+storage-delete-all-button =
+    .title = Slet alle
 # Refresh button title
 storage-refresh-button =
     .title = Genindlæs elementer
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Udløber / Max-age
 storage-table-headers-cookies-size = Størrelse
 storage-table-headers-cookies-last-accessed = Senest tilgået
 storage-table-headers-cookies-creation-time = Oprettet
+storage-table-headers-cookies-update-time = Opdateret
 storage-table-headers-cache-status = Status
 storage-table-headers-extension-storage-area = Lager-område
 

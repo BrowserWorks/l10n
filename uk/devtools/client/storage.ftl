@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Додати елемент
+storage-delete-all-button =
+    .title = Видалити все
 # Refresh button title
 storage-refresh-button =
     .title = Оновити елементи
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Термін дії / Макс. вік
 storage-table-headers-cookies-size = Розмір
 storage-table-headers-cookies-last-accessed = Останній доступ
 storage-table-headers-cookies-creation-time = Створено
+storage-table-headers-cookies-update-time = Оновлено
 storage-table-headers-cache-status = Стан
 storage-table-headers-extension-storage-area = Обсяг сховища
 

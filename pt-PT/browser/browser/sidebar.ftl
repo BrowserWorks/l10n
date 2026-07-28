@@ -30,6 +30,8 @@ sidebar-history-delete =
     .title = Eliminar do histórico
 sidebar-history-clear =
     .label = Limpar histórico
+sidebar-history-sort-by-heading-menucaption =
+    .label = Ordenar por:
 sidebar-history-sort-by-heading = Ordenar por:
 sidebar-history-sort-option-date =
     .label = Data
@@ -56,6 +58,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Gerir as definições do { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Separadores verticais
+sidebar-settings2 =
+    .label = Definições
 sidebar-settings =
     .label = Definições da barra lateral
 sidebar-hide-tabs-and-sidebar =
@@ -68,6 +72,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Expandir barra lateral ao pairar
+sidebar-manage-extensions2 = Gerir todas as extensões
+sidebar-customize-extensions-header2 = Extensões
+sidebar-customize-firefox-tools-header2 =
+    .label = Ferramentas
 
 ## Labels for sidebar context menu items
 
@@ -101,6 +109,10 @@ sidebar-context-menu-customize-sidebar =
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =
     .label = Fechar separador em { $deviceName }
+sidebar-context-menu-remove-extension2 =
+    .label = Remover do { -brand-short-name }
+sidebar-context-menu-unpin-extension =
+    .label = Remover da barra lateral
 
 ## Labels for sidebar history context menu items
 
@@ -110,6 +122,15 @@ sidebar-history-context-menu-bookmark-page =
     .label = Adicionar página aos marcadores…
 sidebar-history-context-menu-delete-pages =
     .label = Eliminar páginas do histórico
+
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Editar marcador…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Eliminar marcador
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Eliminar
 
 ## Labels for sidebar menu items.
 
@@ -125,6 +146,8 @@ sidebar-menu-customize-label =
     .label = Personalizar barra lateral
 sidebar-menu-contextual-password-manager-label =
     .label = Palavras-passe
+sidebar-menu-more-tools-label =
+    .label = Mais ferramentas
 
 ## Tooltips for sidebar menu items.
 
@@ -165,8 +188,17 @@ sidebar-menu-syncedtabs-header =
     .heading = Separadores de outros dispositivos
 sidebar-menu-cpm-header =
     .heading = Palavras-passe
+sidebar-menu-bookmarks-header =
+    .heading = Marcadores
 sidebar-panel-header-close-button =
     .tooltiptext = Fechar
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Menu de marcadores
+sidebar-bookmarks-folder-toolbar = Barra de ferramentas de marcadores
+sidebar-bookmarks-folder-other = Outros marcadores
+sidebar-bookmarks-folder-mobile = Marcadores de dispositivo móvel
 
 ## Titles for sidebar menu panels.
 
@@ -208,3 +240,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Ocultar barra lateral ({ $shortcut })
     .label = Barras laterais
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Arraste para aqui os separadores importantes para tê-los sempre à mão

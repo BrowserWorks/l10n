@@ -31,11 +31,33 @@ perftools-description-local-build =
     Wenn Sie einen auf diesem Computer selbst kompilierten Build untersuchen,
     fügen Sie bitte das objdir des Build zur folgenden Liste hinzu, sodass es
     genutzt werden kann, um Symbolinformationen nachzuschlagen.
+perftools-pick-local-build-directory = Build-Ordner auswählen
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Abtastintervall:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -151,12 +173,13 @@ perftools-presets-ml-label = Maschinelles Lernen
 perftools-presets-ml-description2 = Voreinstellung für die Untersuchung von Problemen mit maschinellem Lernen in { -brand-shorter-name }.
 perftools-presets-networking-label = Netzwerkverbindungen
 perftools-presets-networking-description = Voreinstellung für die Untersuchung von Problemen mit Netzwerkverbindungen in { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Netzwerkverbindungen mit Logs
+perftools-presets-networking-with-logs-description = Voreinstellung für die Untersuchung von Problemen mit Netzwerkverbindungen in { -brand-shorter-name }, einschließlich Netzwerkprotokollen. Diese Protokolle können sensible Informationen wie die von Ihnen besuchten URLs enthalten.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Leistung
 perftools-presets-power-description = Voreinstellung für die Untersuchung von Problemen beim Energieverbrauch in { -brand-shorter-name }, mit geringem Overhead.
 perftools-presets-debug-label = Debuggen
 perftools-presets-debug-description = Voreinstellung für das Debuggen in { -brand-shorter-name }. Großer Overhead, nicht für Arbeiten an der Leistung verwenden, sondern für Fokus auf das Verständnis des Browser-Verhaltens.
+perftools-presets-web-compat-label = Web Compat
+perftools-presets-web-compat-description = Empfohlene Voreinstellung für das Debuggen von Web-Kompatibilitätsproblemen in Websites, anstatt die Leistung zu verfolgen.
 perftools-presets-custom-label = Benutzerdefiniert
-
-##
-

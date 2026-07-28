@@ -133,6 +133,10 @@ place-database-stats-efficiency-perc = ประสิทธิภาพ (%)
 place-database-stats-sequentiality-perc = ความเป็นลำดับ (%)
 place-database-integrity = ความสมบูรณ์
 place-database-verify-integrity = ยืนยันความสมบูรณ์
+place-database-last-idle-maintenance-data = วันที่ Idle Maintenance ล่าสุด
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = วันที่ Vacuum ล่าสุด
+place-database-last-integrity-corruption-date = วันที่ความครบถ้วนเสียหายล่าสุด
 a11y-title = การช่วยการเข้าถึง
 a11y-activated = เปิดใช้งานแล้ว
 a11y-force-disabled = ป้องกันการช่วยการเข้าถึง
@@ -263,7 +267,7 @@ blocked-os-version = ถูกปิดกั้นจากรุ่นระ�
 blocked-mismatched-version = ถูกปิดกั้นจากรุ่นไดรเวอร์กราฟิกของคุณไม่ตรงกันระหว่าง registry และ DLL
 # Variables
 # $driverVersion - The graphics driver version string
-try-newer-driver = ถูกปิดกั้นจากรุ่นไดรเวอร์กราฟิกของคุณ ลองปรับปรุงไดรเวอร์กราฟิกของคุณเป็นรุ่น { $driverVersion } หรือใหม่กว่า
+try-newer-driver = ถูกปิดกั้นจากรุ่นไดรเวอร์กราฟิกของคุณ ลองอัปเดตไดรเวอร์กราฟิกของคุณเป็นรุ่น { $driverVersion } หรือใหม่กว่า
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = พารามิเตอร์ ClearType

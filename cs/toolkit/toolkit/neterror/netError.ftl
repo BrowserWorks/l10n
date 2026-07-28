@@ -11,7 +11,7 @@ certerror-sts-page-title = Nepřipojeno: Možný bezpečnostní problém
 neterror-blocked-by-policy-page-title = Zablokovaná stránka
 neterror-captive-portal-page-title = Přihlásit se do sítě
 neterror-dns-not-found-title = Server nenalezen
-neterror-malformed-uri-page-title = Neplatná URL adresa
+neterror-malformed-uri-page-title = Neplatná adresa URL
 general-body-title = Buďte opatrní. Něco není v pořádku.
 problem-with-this-site-title = Zdá se, že s touto stránkou nastal problém
 
@@ -25,6 +25,8 @@ neterror-override-exception-button = Beru na vědomí a chci pokračovat
 neterror-pref-reset-button = Obnovit výchozí nastavení
 neterror-return-to-previous-page-button = Zpátky
 neterror-return-to-previous-page-recommended-button = Zpátky (doporučeno)
+neterror-try-again-button-2 = Zkusit znovu
+    .accesskey = Z
 neterror-try-again-button = Zkusit znovu
 neterror-add-exception-button = Na tomto webu vždy pokračovat
 neterror-settings-button = Změnit nastavení DNS
@@ -54,7 +56,11 @@ neterror-load-osx-permission =
        *[no-cases] Pokud se pokoušíte načíst stránku místní sítě, zkontrolujte, zda máte v nastavení Soukromí a zabezpečení systému macOS přidělena oprávnění aplikace { -brand-short-name } pro místní síť.
     }
 neterror-http-error-page = Zkontrolujte, zda jste správně zadali adresu webové stránky.
-neterror-captive-portal = Pro přístup k internetu se musíte nejdříve přihlásit k této síti.
+neterror-http-empty-response = Zkontrolujte, že jste adresu webu zadali správně, a zkuste to za chvíli znovu.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = Server { $hostname } vrátil zpět prázdnou stránku.
+neterror-captive-portal = Pro přístup na internet se musíte do této sítě nejprve přihlásit.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
 neterror-dns-not-found-with-suggestion = Chtěli jste navštívit <a data-l10n-name="website">{ $hostAndPath }</a>?
@@ -62,6 +68,8 @@ neterror-dns-not-found-hint-header = <strong>Pokud jste adresu zadali správně:
 neterror-dns-not-found-hint-try-again = Zkuste to znovu
 neterror-dns-not-found-hint-check-network = Zkontrolujte připojení k síti
 neterror-dns-not-found-hint-firewall = Zkontrolujte, zda má { -brand-short-name } povolený přístup na web (může být omezen firewallem).
+neterror-dns-not-found-hint-check-network-2 = Zkontrolujte připojení k síti.
+neterror-dns-not-found-hint-firewall-2 = Zkontrolujte, zda má { -brand-short-name } povolený přístup na web (může být omezen firewallem).
 neterror-dns-not-found-offline-hint-header = <strong>Co s tím můžete dělat?</strong>
 neterror-dns-not-found-offline-hint-different-device = Zkuste se připojit na jiném zařízení.
 neterror-dns-not-found-offline-hint-modem = Zkontrolujte modem nebo router.
@@ -84,7 +92,7 @@ neterror-dns-not-found-trr-only-timeout = Připojení k DNS překladači { $trrD
 neterror-dns-not-found-trr-offline = Nejste připojeni k internetu.
 neterror-dns-not-found-trr-unknown-host2 = Tento server nebyl překladačem { $trrDomain } nalezen.
 neterror-dns-not-found-trr-server-problem = Vyskytl se problém s DNS překladačem { $trrDomain }.
-neterror-dns-not-found-bad-trr-url = Neplatná URL adresa.
+neterror-dns-not-found-bad-trr-url = Neplatná adresa URL.
 neterror-dns-not-found-system-sleep = Systém je v režimu spánku.
 neterror-dns-not-found-trr-unknown-problem = Neočekávaný problém.
 
@@ -93,7 +101,6 @@ neterror-dns-not-found-trr-unknown-problem = Neočekávaný problém.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } nemůže ochránit vaše požadavky pro tento server pomocí důvěryhodného překladače DNS z těchto důvodů:
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } nemůže ochránit váš požadavek na adresu tohoto webu prostřednictvím našeho zabezpečeného poskytovatele DNS. Zde je důvod:
 neterror-dns-not-found-native-fallback-heuristic = DNS over HTTPS je ve vaší síti zakázáno.
 neterror-dns-not-found-native-fallback-not-confirmed2 =
     { -brand-short-name.case-status ->
@@ -105,9 +112,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 =
 
 neterror-file-not-found-filename = Zkontrolujte, že je název souboru napsán správně, a to včetně velikosti písmen.
 neterror-file-not-found-moved = Zkontrolujte, že soubor nebyl přesunut, přejmenován nebo smazán.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } nemůže najít soubor na adrese <strong>{ $path }</strong>. Buď neexistuje, nebo je cesta nesprávná.
+neterror-file-not-found-what-can-you-do = Pokud jste adresu zadali ručně, zkontrolujte, zda v názvu souboru nebo v cestě nejsou chyby ve velkých písmenech nebo překlepy. Pokud jste použili uloženou záložku nebo odkaz, mohl být soubor od doby uložení přesunut, přejmenován nebo smazán. Zkuste jej vyhledat pomocí správce souborů nebo pomocí nedávného vyhledávání.
 neterror-access-denied = Možná byl smazán, přesunut nebo jeho oprávnění zabraňují přístupu.
 neterror-unknown-protocol = Pro otevření této adresy budete patrně potřebovat nainstalovat další software.
 neterror-redirect-loop = Tento problém může být způsoben zakázáním nebo odmítnutím cookies.
+neterror-unknown-socket-type-client-config = To může být způsobeno chybou při konfiguraci vašeho klienta.
 neterror-unknown-socket-type-psm-installed = Zkontrolujte, že je ve vašem systému nainstalován Personal Security Manager.
 neterror-unknown-socket-type-server-config = Tato chyba může být také způsobena nestandardní konfigurací serveru.
 neterror-not-cached-intro =
@@ -152,10 +164,10 @@ certerror-sts-intro =
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-expired-cert-intro =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } zjistil problém a stránku na serveru <b>{ $hostname }</b> nenačetl. Server je buď špatně nastaven a nebo hodiny ve vašem počítači nejdou správně.
-        [feminine] { -brand-short-name } zjistila problém a stránku na serveru <b>{ $hostname }</b> nenačetla. Server je buď špatně nastaven a nebo hodiny ve vašem počítači nejdou správně.
-        [neuter] { -brand-short-name } zjistilo problém a stránku na serveru <b>{ $hostname }</b> nenačetlo. Server je buď špatně nastaven a nebo hodiny ve vašem počítači nejdou správně.
-       *[other] Aplikace { -brand-short-name } zjistila problém a stránku na serveru <b>{ $hostname }</b> nenačetla. Server je buď špatně nastaven a nebo hodiny ve vašem počítači nejdou správně.
+        [masculine] { -brand-short-name } zjistil problém a stránku na serveru <b>{ $hostname }</b> nenačetl. Server je buď špatně nastaven nebo hodiny ve vašem počítači nejdou správně.
+        [feminine] { -brand-short-name } zjistila problém a stránku na serveru <b>{ $hostname }</b> nenačetla. Server je buď špatně nastaven nebo hodiny ve vašem počítači nejdou správně.
+        [neuter] { -brand-short-name } zjistilo problém a stránku na serveru <b>{ $hostname }</b> nenačetlo. Server je buď špatně nastaven nebo hodiny ve vašem počítači nejdou správně.
+       *[other] Aplikace { -brand-short-name } zjistila problém a stránku na serveru <b>{ $hostname }</b> nenačetla. Server je buď špatně nastaven nebo hodiny ve vašem počítači nejdou správně.
     }
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -209,7 +221,7 @@ certerror-mitm-what-can-you-do-about-it-attack = Pokud <b>{ $mitm }</b> neznáte
 certerror-mitm-what-can-you-do-about-it-attack-sts = Pokud <b>{ $mitm }</b> neznáte, může jít i o útok a bohužel pro bezpečné připojení k tomuto serveru nemůžete udělat nic.
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
-certerror-what-should-i-do-bad-sts-cert-explanation = Server <b>{ $hostname }</b> má nastaveno bezpečnostní pravidlo HTTP Strict Transport Security (HSTS), které vynucuje používání pouze zabezpečeného spojení. Pro připojení k této stránce nelze udělit výjimku.
+certerror-what-should-i-do-bad-sts-cert-explanation = Server <b>{ $hostname }</b> má nastaveno bezpečnostní pravidlo HTTP Strict Transport Security (HSTS), které od aplikace { -brand-short-name } vyžaduje použití pouze zabezpečeného spojení. K návštěvě tohoto webu nelze udělit výjimku.
 cert-error-trust-certificate-transparency-what-can-you-do-about-it = Pravděpodobně nic, protože je pravděpodobné, že problém je se samotným webem.
 certerror-blocked-by-corp-headers-description = Někdy webové stránky nastaví ochranu pro sebe a pro lidi, jako jste vy, před nežádoucími interakcemi s jinými stránkami.
 certerror-coop-learn-more = Zjistit více o Cross Origin Opener Policy (COOP)
@@ -218,3 +230,46 @@ certerror-coep-learn-more = Zjistit více o Cross Origin Embedder Policies (COEP
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Kód chyby: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Zdá se, že došlo k problému s připojením k internetu
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } nemůže navázat zabezpečené spojení se serverem { $hostname }.
+fp-neterror-offline-intro = { -brand-short-name } se nemůže připojit k serveru na adrese <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = { -brand-short-name } se nemůže připojit k serveru na adrese <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = Server na adrese <strong>{ $hostname }</strong> reaguje příliš pomalu.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = Server <strong>{ $hostname }</strong> vrátil chybu: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = Server <strong>{ $hostname }</strong> poslal zpět hlavičku s prázdnými znaky, které nejsou povoleny bezpečnostními standardy.
+fp-neterror-content-encoding-intro = Stránka, kterou se snažíte načíst, nemůže být zobrazena, protože server používá neplatný či nepodporovaný způsob komprimace dat.
+fp-neterror-coop-coep-intro = { -brand-short-name } nenačetl tuto stránku, protože nastavení zabezpečení zřejmě neodpovídá předchozí stránce.
+fp-neterror-blocked-by-policy-intro = Přístup k této stránce nebo webovému serveru byl zablokován vaší organizací.
+fp-neterror-http-auth-disabled-intro = Někdo, kdo se vydává za web, by se mohl pokusit ukrást například vaše uživatelské jméno, heslo nebo e-mail.
+fp-neterror-http-auth-disabled-secure-connection = Tato stránka vyžaduje zabezpečené připojení a pro její návštěvu nelze udělit výjimku.
+fp-neterror-why-did-this-happen = Proč se to stalo?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Zdá se, že tento server používá starý software se známými bezpečnostními problémy.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } nedůvěřuje serveru { $hostname }, protože připojení není zabezpečené.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body =
+    { -brand-short-name.case-status ->
+        [with-cases] Ujistěte se, že používáte nejnovější verzi { -brand-short-name(case: "gen") }. Vyberte v nabídce Nápověda > O { -brand-short-name(case: "gen") }. Pokud používáte nejnovější verzi { -brand-short-name(case: "gen") }, je problém pravděpodobně v samotných stránkách.
+       *[no-cases] Ujistěte se, že používáte nejnovější verzi aplikace { -brand-short-name }. Vyberte v nabídce Nápověda > O aplikaci { -brand-short-name }. Pokud používáte nejnovější verzi aplikace { -brand-short-name }, je problém pravděpodobně v samotných stránkách.
+    }
+fp-neterror-offline-what-can-you-do-body = Zkuste se připojit na jiném zařízení. Zkontrolujte modem nebo router. Odpojte se a znovu se připojte k Wi-Fi.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Zkuste změnit adresu URL na HTTPS. Je však pravděpodobné, že problém je v samotném webu.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Někdy si webové stránky nastavují ochranu před nežádoucími interakcemi s jinými stránkami.
+fp-learn-more-about-https-connections = Další informace o připojeních HTTPS
+fp-neterror-vpn-error-title = Nepodařilo se připojit k VPN
+fp-neterror-vpn-error-description = Zkuste to znovu za několik minut.
+fp-neterror-denied-port-access = Tato adresa obsahuje číslo portu, které se obvykle používá k jiným účelům než je prohlížení webových stránek. Z bezpečnostních důvodů byl tento požadavek zrušen.

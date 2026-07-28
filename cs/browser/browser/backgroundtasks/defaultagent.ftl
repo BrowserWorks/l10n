@@ -4,8 +4,18 @@
 
 default-browser-agent-task-description =
     { -brand-short-name.case-status ->
-        [with-cases] Úlohou Default Browser Agenta je kontrola, jestli nedošlo ke změně nastavení výchozího prohlížeče z { -brand-short-name(case: "gen") } na jiný. Pokud k tomu dojde za podezřelých okolností, nabídne vám nastavení { -brand-short-name(case: "gen") } zpět jako výchozí prohlížeč, maximálně však dvakrát. Tento agent je automaticky instalován během instalace nebo aktualizace { -brand-short-name(case: "gen") }. Pokud ho chcete vypnout, změňte hodnotu předvolby „default-browser-agent.enabled“ skrze editor předvoleb about:config, nebo pomocí podnikového pravidla „DisableDefaultBrowserAgent“ { -brand-short-name(case: "gen") }.
-       *[no-cases] Úlohou Default Browser Agenta je kontrola, jestli nedošlo ke změně nastavení výchozího prohlížeče z aplikace { -brand-short-name } na jiný. Pokud k tomu dojde za podezřelých okolností, nabídne vám nastavení aplikace { -brand-short-name } zpět jako výchozí prohlížeč, maximálně však dvakrát. Tento agent je automaticky instalován během instalace nebo aktualizace aplikace { -brand-short-name }. Pokud ho chcete vypnout, změňte hodnotu předvolby „default-browser-agent.enabled“ skrze editor předvoleb about:config, nebo pomocí podnikového pravidla „DisableDefaultBrowserAgent“ aplikace { -brand-short-name }.
+        [with-cases] Úloha Default Browser Agent kontroluje, jestli nedošlo ke změně nastavení výchozího prohlížeče z { -brand-short-name(case: "gen") } na jiný prohlížeč. Pokud k této změně dojde za podezřelých okolností, vyzve uživatele, aby se vrátili zpět k { -brand-short-name(case: "dat") }, a to maximálně dvakrát. Tato úloha se instaluje automaticky během instalace nebo aktualizace { -brand-short-name(case: "gen") }. Chcete-li tuto úlohu zakázat, změňte hodnotu předvolby „default-browser-agent.enabled“ skrze editor předvoleb about:config, nebo pomocí podnikového pravidla { -brand-short-name(case: "gen") } „DisableDefaultBrowserAgent“.
+       *[no-cases] Úloha Default Browser Agent kontroluje, jestli nedošlo ke změně nastavení výchozího prohlížeče z aplikace { -brand-short-name } na jiný prohlížeč. Pokud k této změně dojde za podezřelých okolností, vyzve uživatele, aby se vrátili zpět k aplikaci { -brand-short-name }, a to maximálně dvakrát. Tato úloha se instaluje automaticky během instalace nebo aktualizace aplikace { -brand-short-name }. Chcete-li tuto úlohu zakázat, změňte hodnotu předvolby „default-browser-agent.enabled“ skrze editor předvoleb about:config, nebo pomocí podnikového pravidla aplikace { -brand-short-name } „DisableDefaultBrowserAgent“.
+    }
+default-browser-notification-privacy-header-text =
+    { -brand-short-name.case-status ->
+        [with-cases] Zůstat s { -brand-short-name(case: "ins") }?
+       *[no-cases] Zůstat s aplikací { -brand-short-name }?
+    }
+default-browser-notification-privacy-body-text =
+    { -brand-short-name.case-status ->
+        [with-cases] Vaše výchozí nastavení se změnilo. Vraťte se k { -brand-short-name(case: "dat") } a zajistěte si vestavěné soukromí a ochranu.
+       *[no-cases] Vaše výchozí nastavení se změnilo. Vraťte se k aplikaci { -brand-short-name } a zajistěte si vestavěné soukromí a ochranu.
     }
 default-browser-notification-header-text =
     { -brand-short-name.case-status ->
@@ -18,4 +28,5 @@ default-browser-notification-body-text =
        *[no-cases] Váš výchozí prohlížeč byl nedávno změněn. Klepnutím obnovíte nastavení aplikace { -brand-short-name } jako výchozí.
     }
 default-browser-notification-yes-button-text = Ano
+default-browser-notification-privacy-no-button-text = Ne, děkuji
 default-browser-notification-no-button-text = Ne

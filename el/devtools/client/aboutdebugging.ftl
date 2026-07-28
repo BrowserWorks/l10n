@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Έλεγχος σφαλμάτων - Ε
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Ρύθμιση
+about-debugging-sidebar-setup-title =
+    .title = Ρύθμιση
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -190,7 +198,7 @@ about-debugging-runtime-service-workers-not-compatible = Οι ρυθμίσεις
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
-about-debugging-browser-version-too-old = Η έκδοση του συνδεδεμένου προγράμματος περιήγησης είναι παλιά ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }). Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία του DevTools. Ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Επίλυση προβλημάτων</a>
+about-debugging-browser-version-too-old = Η έκδοση του συνδεδεμένου προγράμματος περιήγησης είναι παλιά ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }). Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία των εργαλείων ανάπτυξης. Ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Επίλυση προβλημάτων</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Waterfox δεν μπορεί να χρησιμοποιηθεί για έλεγχο σφαλμάτων στο Waterfox για Android (68). Προτείνουμε να εγκαταστήσετε το Waterfox για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
@@ -200,7 +208,7 @@ about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του
 # { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης ({ $runtimeVersion }, buildID: { $runtimeID }) είναι πιο πρόσφατο από το { -brand-shorter-name } ({ $localVersion }, buildID: { $localID }) που χρησιμοποιείτε. Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία του DevTools. Ενημερώστε το Waterfox. <a>Επίλυση προβλημάτων</a>
+about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης ({ $runtimeVersion }, buildID: { $runtimeID }) είναι πιο πρόσφατο από το { -brand-shorter-name } ({ $localVersion }, buildID: { $localID }) που χρησιμοποιείτε. Αυτή η διαμόρφωση δεν υποστηρίζεται και ενδέχεται να προκαλέσει αποτυχία των εργαλείων ανάπτυξης. Ενημερώστε το Waterfox. <a>Επίλυση προβλημάτων</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Εργαλειοθήκη πολλα�
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Κύρια διεργασία και διεργασίες περιεχομένου για το πρόγραμμα περιήγησης προορισμού
+about-debugging-message-error-icon =
+    .alt = Εικονίδιο σφάλματος
+about-debugging-message-info-icon =
+    .alt = Εικονίδιο πληροφοριών
+about-debugging-message-warning-icon =
+    .alt = Εικονίδιο προειδοποίησης
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Κλείσιμο μηνύματος
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Κλείσιμο μηνύματος

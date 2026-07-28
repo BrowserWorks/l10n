@@ -11,21 +11,36 @@
 firefox-relay-mask-generation-failed = { -relay-brand-name } не вдалося згенерувати нову маску. Код помилки HTTP: { $status }.
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name } не вдалося знайти багаторазові маски. Код помилки HTTP: { $status }.
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = Ви повинні увійти в { -fxaccount-brand-name }, щоб використовувати { -relay-brand-name }.
 firefox-relay-must-login-to-account = Увійдіть в обліковий запис, щоб використовувати маски електронної пошти { -relay-brand-name }.
 firefox-relay-get-unlimited-masks =
     .label = Керувати масками
     .accesskey = К
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header =
+    { $count ->
+        [one] Ви використали доступну { $count } безплатну маску е-пошти
+        [few] Ви використали доступні { $count } безплатні маски е-пошти
+       *[many] Ви використали доступні { $count } безплатних масок е-пошти
+    }
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = Ви можете повторно використати одну з них або переглянути всі, щоб вибрати іншу.
+firefox-relay-reuse-masks-select-label = Вибрати останню маску
+firefox-relay-see-all-masks =
+    .label = Переглянути всі маски
+    .accesskey = е
+firefox-relay-dismiss =
+    .label = Відхилити
+    .accesskey = х
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Захистіть свою електронну адресу:
-firefox-relay-opt-in-title-2 = Отримайте безплатну маску е-пошти
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = використайте маску електронної пошти { -relay-brand-name }
 firefox-relay-use-mask-title-1 = Використовуйте маску електронної пошти
-firefox-relay-opt-in-subtitle-2 = Захистіть свою поштову скриньку від спаму
 firefox-relay-use-mask-title = Використати маску електронної пошти { -relay-brand-name }
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = Уникайте спаму за допомогою безплатної маски електронної пошти

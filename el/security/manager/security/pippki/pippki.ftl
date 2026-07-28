@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Προβολή
 download-cert-view-text = Εξέταση CA πιστοποιητικού
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Μόνιμα
 client-auth-cert-remember-temporarily =
     .label = Για αυτήν τη συνεδρία
-client-auth-cert-remember-box =
-    .label = Απομνημόνευση απόφασης
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Κωδικός αντιγράφου ασφάλειας πιστοποιητικού (ξανά):
 set-password-reminder = Σημαντικό: Αν ξεχάσετε τον κωδικό πρόσβασης του αντιγράφου ασφαλείας του πιστοποιητικού, δεν θα μπορείτε να ανακτήσετε αυτό το αντίγραφο ασφαλείας αργότερα. Φυλάξτε τον σε ασφαλή τοποθεσία.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Προστατευμένη ταυτοποίηση
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Κάντε ταυτοποίηση στη συσκευή ασφαλείας ({ $tokenName }). Ο τρόπος εξαρτάται από τη συσκευή (για παράδειγμα, με συσκευή ανάγνωσης δακτυλικών αποτυπωμάτων ή εισαγωγή κωδικού με πληκτρολόγιο).
 
 ## Protected authentication alert
 

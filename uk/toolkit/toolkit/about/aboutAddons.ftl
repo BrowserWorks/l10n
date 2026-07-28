@@ -170,6 +170,8 @@ extensions-warning-update-security-button = Увімкнути
 extensions-warning-imported-addons2 =
     .message = Завершіть встановлення розширень, які було імпортовано до { -brand-short-name }.
 extensions-warning-imported-addons-button = Встановити розширення
+extensions-warning-safe-mode3 =
+    .message = Усі додатки вимкнено, оскільки ви в режимі усунення проблем.
 
 ## Strings connected to add-on updates
 
@@ -267,11 +269,11 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Розширення і теми - це невеличкі додатки для вашого браузера, які дозволяють
+    Розширення і теми – це додатки для вашого браузера, за допомогою яких можна
     захищати паролі, завантажувати відео, знаходити пропозиції, блокувати рекламу,
-    змінювати зовнішній вигляд браузера та багато іншого. Ці невеликі програми часто
-    розробляються сторонніми організаціями.
-    Ось декілька <a data-l10n-name="learn-more-trigger">рекомендацій</a> від { -brand-product-name } для виняткової безпеки, швидкодії та функціональності.
+    змінювати зовнішній вигляд браузера та багато іншого. Ці невеликі програми зазвичай
+    розробляються сторонніми розробниками.
+    Ось декілька <a data-l10n-name="learn-more-trigger">рекомендацій</a> від { -brand-product-name } для виняткової безпеки, продуктивності та функціональності.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = Деякі з цих рекомендацій персоналізовані. Вони базуються на ваших вже встановлених розширеннях, налаштуваннях профілю і статистиці використання.
 # Notice to make user aware that the recommendations are personalized.
@@ -287,6 +289,10 @@ colorway-removal-notice-message =
         на сайті додатків.
 colorway-removal-notice-learn-more = Докладніше
 colorway-removal-notice-button = Отримайте оновлені теми забарвлень
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Ваші налаштування контрастності Windows перевизначають теми { -brand-short-name }. Вимкніть ці налаштування, щоб використовувати теми в { -brand-short-name }.
 privacy-policy = Політика приватності
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -437,7 +443,7 @@ addon-detail-group-label-quarantined-domains =
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
 addon-badge-recommended2 =
-    .title = { -brand-product-name } рекомендує лише розширення, що задовольняють наші стандарти безпеки та швидкодії
+    .title = { -brand-product-name } рекомендує лише розширення, які відповідають нашим стандартам безпеки та продуктивності
     .aria-label = { addon-badge-recommended2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
@@ -445,7 +451,7 @@ addon-badge-line3 =
     .title = Офіційне розширення, створене BrowserWorks. Відповідає стандартам безпеки та продуктивності.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
-    .title = Це розширення перевірено на відповідність нашим стандартам безпеки та швидкодії.
+    .title = Це розширення перевірено на відповідність нашим стандартам безпеки та продуктивності.
     .aria-label = { addon-badge-verified2.title }
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
@@ -472,7 +478,10 @@ available-updates-heading = Доступні оновлення
 recent-updates-heading = Недавні оновлення
 release-notes-loading = Завантаження…
 release-notes-error = На жаль, під час завантаження приміток до випуску сталася помилка.
+addon-permissions-heading = Дозволи
 addon-permissions-empty2 = Це розширення не вимагає жодних дозволів.
+addon-permissions-required-label = Обов'язково:
+addon-permissions-optional-label = Необов'язково:
 addon-permissions-empty = Це розширення не потребує дозволів
 addon-permissions-required = Необхідні дозволи для роботи основних функцій:
 addon-permissions-optional = Необов'язкові дозволи для додаткових функцій:
@@ -532,6 +541,14 @@ details-notification-hard-blocked-other =
 details-notification-unsigned-link = Докладніше
 details-notification-blocked = { $name } було вимкнено, у зв'язку з проблемами безпеки чи стабільності.
 details-notification-blocked-link2 = Переглянути подробиці
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Це розширення вимкнено через обмеження. Ви можете його ввімкнути, але це може бути ризиковано.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Це розширення обмежено. Його використання може бути ризикованим.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Цей додаток вимкнено через обмеження. Ви можете його ввімкнути, але це може бути ризиковано.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Цей додаток обмежено. Його використання може бути ризикованим.
 details-notification-soft-blocked-extension-disabled =
     .message = Це розширення обмежено через порушення політик BrowserWorks, тому його було вимкнено. Ви можете ввімкнути його, розуміючи можливі наслідки ризику.
 details-notification-soft-blocked-extension-enabled =
@@ -568,6 +585,10 @@ permissions-data-addon-button = Дозволи й дані
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Використовується розширенням { $extensionName }
+addon-permissions-data-collection-heading = Збір даних
+addon-permissions-data-collection-empty = Розробник стверджує, що це розширення не потребує збору даних.
+addon-data-collection-provided = Інформація надана розробником розширення
+addon-data-collection-learnmore = Докладніше про збір даних
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 

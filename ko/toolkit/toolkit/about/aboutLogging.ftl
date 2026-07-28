@@ -29,6 +29,7 @@ about-logging-no-log-modules = 없음
 about-logging-no-log-file = 없음
 about-logging-logging-preset-selector-text = 로깅 프리셋:
 about-logging-with-profiler-stacks-checkbox = 로그 메시지에 대한 스택 추적 활성화
+about-logging-with-javascript-tracing-checkbox = JavaScript 추적 활성화
 about-logging-menu =
     .title = 고급 옵션
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = WebCodecs 오디오/동영상 디코더와 인코더, 이미지 디코더의 문제를 진단하기 위한 로그 모듈
 about-logging-preset-ml-label = 기계 학습
 about-logging-preset-ml-description = 기계 학습 문제를 진단하기 위한 로그 모듈
+about-logging-preset-web-compat-label = 웹 호환성
+about-logging-preset-web-compat-description = 웹 호환성 문제를 진단하기 위한 로그 모듈
+about-logging-preset-navigation = 탐색
+about-logging-preset-navigation-description = 탐색 및 세션 기록 문제를 진단하기 위한 로그 모듈
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = WebGPU 문제를 진단하기 위한 로그 모듈
 about-logging-preset-gfx-label = 그래픽
@@ -80,7 +85,7 @@ about-logging-configured-via-url = URL을 통해 구성된 옵션
 ## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
 ## set to true. It is false by default, except on Android.
 
-about-logging-upload-question = 프로필 데이터를 캡쳐하였습니다. 저장하거나 업로드하시겠습니까?
+about-logging-upload-question = 프로필 데이터를 캡쳐했습니다. 저장하거나 업로드하시겠습니까?
 about-logging-save-button = 저장
 about-logging-upload-button = 업로드
 # Variables:
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> URL 공�
 about-logging-upload-error = 프로필을 업로드하는 동안 오류가 발생했습니다: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = 업로드된 프로필을 저장하는 동안 오류가 발생했습니다: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = 파일을 저장하는 중 오류가 발생했습니다: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = { DATETIME($date, dateStyle: "short", timeStyle: "medium") } 프로필
+about-logging-uploaded-profiles-title = 업로드한 프로필
+about-logging-no-uploaded-profiles = 아직 프로필이 업로드되지 않았습니다.
+about-logging-delete-uploaded-profile = 삭제
+about-logging-view-uploaded-profile = 프로필 보기
+about-logging-delete-profile-confirm-title = 프로필 삭제
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = “{ $profileName }” 프로필을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.
+about-logging-deleting-profile = 삭제 중…

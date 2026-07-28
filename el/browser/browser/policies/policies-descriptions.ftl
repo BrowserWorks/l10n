@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Ορισμός πολιτικών που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
+policy-AIControls = Ρύθμιση παραμέτρων στοιχείων ελέγχου ΤΝ.
 policy-AllowedDomainsForApps = Καθορισμός τομέων στους οποίους επιτρέπεται πρόσβαση στο Google Workspace.
 policy-AllowFileSelectionDialogs = Να επιτρέπονται τα παράθυρα διαλόγου για επιλογή αρχείων.
 policy-AppAutoUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων εφαρμογής.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Ενεργοποίηση αυτόματης συ
 policy-AutofillCreditCardEnabled = Ενεργοποίηση αυτόματης συμπλήρωσης για μεθόδους πληρωμής.
 policy-AutoLaunchProtocolsFromOrigins = Καθορισμός μιας λίστας με εξωτερικά πρωτόκολλα που μπορούν να χρησιμοποιηθούν από καταχωρημένες προελεύσεις χωρίς να ζητηθεί άδεια από τον χρήστη.
 policy-BackgroundAppUpdate2 = Ενεργοποίηση ή απενεργοποίηση υπηρεσίας ενημερώσεων παρασκηνίου.
+policy-Backup = Απενεργοποίηση της δημιουργίας αντιγράφων ασφαλείας ή της ανάκτησης των δεδομένων προφίλ.
 policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Διαχείριση προσθέτων (about:addons).
 policy-BlockAboutConfig = Αποκλεισμός πρόσβασης στη σελίδα about:config.
 policy-BlockAboutProfiles = Αποκλεισμός πρόσβασης στη σελίδα about:profiles.
@@ -35,6 +37,7 @@ policy-Containers = Ορισμός πολιτικών που σχετίζοντ�
 policy-DisableAccounts = Απενεργοποίηση υπηρεσιών που βασίζονται σε λογαριασμό, συμπεριλαμβανομένου του συγχρονισμού.
 policy-DisabledCiphers = Απενεργοποίηση κρυπτογράφησης.
 policy-DefaultDownloadDirectory = Ορισμός προεπιλεγμένου καταλόγου λήψης.
+policy-DefaultSerialGuardSetting = Έλεγχος της χρήσης του API για σειριακές θύρες.
 policy-DisableAppUpdate = Αποτροπή ενημέρωσης προγράμματος περιήγησης.
 policy-DisableBuiltinPDFViewer = Απενεργοποίηση PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Αποτροπή οποιασδήποτε ενέργειας από την προεπιλεγμένη λειτουργία προγράμματος περιήγησης. Ισχύει μόνο για Windows· οι άλλες πλατφόρμες δεν έχουν τέτοια υπηρεσία.
@@ -55,6 +58,8 @@ policy-DisablePocket2 = Απενεργοποίηση της λειτουργία
 policy-DisablePrivateBrowsing = Απενεργοποίηση ιδιωτικής περιήγησης.
 policy-DisableProfileImport = Απενεργοποίηση της εντολής μενού για εισαγωγή δεδομένων από άλλο πρόγραμμα περιήγησης.
 policy-DisableProfileRefresh = Απενεργοποίηση του κουμπιού ανανέωσης { -brand-short-name } στη σελίδα about:support.
+policy-DisableRemoteImprovements = Αποτροπή της εφαρμογής αλλαγών για επιδόσεις, σταθερότητα και λειτουργίες του { -brand-short-name } μεταξύ των ενημερώσεων.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Απενεργοποίηση απομακρυσμένων ρυθμίσεων.
 policy-DisableSafeMode = Απενεργοποίηση της λειτουργίας για επανεκκίνηση στην Ασφαλή λειτουργία. Σημείωση: το πλήκτρο Shift για είσοδο στην Ασφαλή λειτουργία μπορεί να απενεργοποιηθεί μόνο στα Windows με την Πολιτική ομάδας.
 policy-DisableSecurityBypass = Αποτροπή παράκαμψης ορισμένων προειδοποιήσεων ασφαλείας από τον χρήστη.
 policy-DisableSetAsDesktopBackground = Απενεργοποίηση της εντολής μενού «Ορισμός ως φόντο επιφάνειας εργασίας» για εικόνες.
@@ -77,8 +82,9 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Απενεργο�
 policy-Extensions = Εγκατάσταση, αφαίρεση ή κλείδωμα επεκτάσεων. Η επιλογή εγκατάστασης παίρνει ως παραμέτρους τα URL ή τις διαδρομές. Οι επιλογές αφαίρεσης και κλειδώματος παίρνουν τα ID επεκτάσεων.
 policy-ExtensionSettings = Διαχείριση όλων των πτυχών της εγκατάστασης επεκτάσεων.
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
-policy-FirefoxHome2 = Διαμόρφωση του { -firefox-home-brand-name }.
+policy-FirefoxHome2 = Διαμόρφωση της { -firefox-home-brand-name(case: "gen", capitalization: "upper") }.
 policy-FirefoxSuggest = Ρύθμιση των { -firefox-suggest-brand-name(case: "gen") }.
+policy-GenerativeAI = Ρύθμιση λειτουργιών δημιουργικής τεχνητής νοημοσύνης.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Αναγκαστική πλοήγηση στον ιστότοπο ενδοδικτύου, αντί για αναζήτηση κατά την πληκτρολόγηση μίας λέξης στη γραμμή διευθύνσεων.
 policy-Handlers = Ρύθμιση παραμέτρων χειριστών προεπιλεγμένης εφαρμογής.
 policy-HardwareAcceleration = Αν είναι ψευδές, απενεργοποίηση επιτάχυνσης υλικού.
@@ -87,6 +93,7 @@ policy-Homepage = Ορισμός και προαιρετικό κλείδωμα 
 policy-HttpAllowlist = Προελεύσεις που δεν θα αναβαθμίζονται σε HTTPS.
 policy-HttpsOnlyMode = Να επιτρέπεται η ενεργοποίηση της λειτουργίας «Μόνο HTTPS».
 policy-InstallAddonsPermission = Αποδοχή εγκατάστασης προσθέτων από ορισμένους ιστοτόπους.
+policy-IPProtectionAvailable = Αποτροπή της διάθεσης του ενσωματωμένου VPN στους χρήστες.
 policy-LegacyProfiles = Απενεργοποίηση της λειτουργίας που απαιτεί ξεχωριστό προφίλ για κάθε εγκατάσταση.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Επαναφορά σ�
 ##
 
 policy-LocalFileLinks = Να επιτρέπεται σε συγκεκριμένους ιστοτόπους η σύνδεση με τοπικά αρχεία.
+policy-LocalNetworkAccess = Ενεργοποίηση ή απενεργοποίηση ελέγχων πρόσβασης τοπικού δικτύου.
 policy-ManagedBookmarks = Ρυθμίζει μια λίστα σελιδοδεικτών που ορίζει ένας διαχειριστής και δεν είναι δυνατή η τροποποίησή της από τον χρήστη.
 policy-ManualAppUpdateOnly = Αποδοχή μόνο χειροκίνητων ενημερώσεων χωρίς ειδοποίηση των χρηστών σχετικά με τις ενημερώσεις.
 policy-PrimaryPassword = Απαίτηση ή αποτροπή χρήσης κύριου κωδικού πρόσβασης.
@@ -117,19 +125,22 @@ policy-PostQuantumKeyAgreementEnabled = Ενεργοποίηση μετακβα�
 policy-PDFjs = Απενεργοποίηση ή ρύθμιση του PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-Permissions2 = Ρύθμιση δικαιωμάτων για κάμερα, μικρόφωνο, τοποθεσία, ειδοποιήσεις και αυτόματη αναπαραγωγή.
 policy-PictureInPicture = Ενεργοποίηση ή απενεργοποίηση λειτουργίας «Εικόνα εντός εικόνας».
+policy-PopupBlocking2 = Να επιτρέπεται σε ορισμένους ιστοτόπους η εμφάνιση αναδυόμενων παραθύρων και η ανακατεύθυνσή τους από τρίτα πλαίσια.
 policy-PopupBlocking = Αποδοχή αναδυόμενων από ορισμένους ιστοτόπους, από προεπιλογή.
 policy-Preferences = Ορισμός και κλείδωμα τιμής ενός υποσυνόλου προτιμήσεων.
 policy-PrivateBrowsingModeAvailability = Καθορισμός της διαθεσιμότητας της λειτουργίας ιδιωτικής περιήγησης.
 policy-PromptForDownloadLocation = Ερώτηση για την τοποθεσία αποθήκευσης αρχείων κατά τη λήψη.
 policy-Proxy = Προσαρμογή ρυθμίσεων μεσολάβησης.
+policy-RelaunchRequired = Απαίτηση επανεκκίνησης του { -brand-short-name } εντός δεδομένης περιόδου και ειδοποίηση του χρήστη για την επερχόμενη επανεκκίνηση.
 policy-RequestedLocales = Ορισμός λίστας απαιτούμενων γλωσσών για την εφαρμογή σε σειρά προτίμησης.
-policy-SanitizeOnShutdown2 = Εκκαθάριση δεδομένων πλοήγησης κατά τον τερματισμό λειτουργίας.
+policy-SanitizeOnShutdown2 = Απαλοιφή δεδομένων πλοήγησης κατά τον τερματισμό λειτουργίας.
 policy-SearchBar = Ορισμός της προεπιλεγμένης τοποθεσίας της γραμμής αναζήτησης. Ο χρήστης θα μπορεί να την προσαρμόσει.
 policy-SearchEngines = Διαμόρφωση ρυθμίσεων μηχανής αναζήτησης. Αυτή η πολιτική είναι διαθέσιμη μόνο στην έκδοση εκτεταμένης υποστήριξης (ESR).
 policy-SearchSuggestEnabled = Ενεργοποίηση ή απενεργοποίηση προτάσεων αναζήτησης.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Προσθήκη ή διαγραφή μονάδων PKCS #11.
 policy-ShowHomeButton = Εμφάνιση του κουμπιού αρχικής σελίδας στη γραμμή εργαλείων.
+policy-SitePolicies = Πολιτικές συγκεκριμένων ιστοτόπων.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = Να μην εμφανίζονται οι Όροι χρήσης και η Σημείωση απορρήτου κατά την εκκίνηση. Δηλώνετε ότι αποδέχεστε και έχετε την εξουσιοδότηση να αποδεχτείτε τους Όρους χρήσης εκ μέρους όλων των ατόμων στα οποία παρέχετε πρόσβαση σε αυτό το πρόγραμμα περιήγησης.
 policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
@@ -139,8 +150,11 @@ policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχε�
 policy-TranslateEnabled = Ενεργοποίηση ή απενεργοποίηση μετάφρασης ιστοσελίδων.
 policy-UserMessaging = Απόκρυψη ορισμένων μηνυμάτων από τον χρήστη.
 policy-UseSystemPrintDialog = Εκτύπωση μέσω του διαλόγου εκτύπωσης συστήματος.
+policy-VisualSearchEnabled = Ενεργοποίηση ή απενεργοποίηση οπτικής αναζήτησης.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Φραγή ιστοτόπων προς επίσκεψη. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες σχετικά με τη μορφή.
 policy-Windows10SSO = Να επιτρέπεται η καθολική σύνδεση των Windows για λογαριασμούς Microsoft, εργασίας και σχολείου.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Να επιτρέπεται η καθολική σύνδεση για λογαριασμούς Microsoft Entra.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Ενεργοποίηση ή απενεργοποίηση υποστήριξης για το XSLTProcessor JavaScript API και την οδηγία επεξεργασίας XSLT.

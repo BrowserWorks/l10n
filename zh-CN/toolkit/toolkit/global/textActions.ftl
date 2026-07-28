@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = 复制无跟踪参数链接
     .accesskey = n
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = 复制无跟踪参数链接
-    .accesskey = n
 text-action-paste =
     .label = 粘贴
     .accesskey = P
@@ -73,6 +68,9 @@ text-action-search-text-box-clear =
     .title = 清空
 text-action-highlight-selection =
     .label = 高亮选中部分
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = 为选中部分添加批注
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
@@ -84,5 +82,12 @@ text-action-copy-clean-link-to-highlight =
     .label = 复制指向选中部分的无跟踪参数链接
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = 移除高亮
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = 移除所有高亮
+profile-window-menu-edit =
+    .label = 编辑
+    .accesskey = E

@@ -70,9 +70,17 @@ cert-error-details-cert-chain-label = Tanúsítványlánc:
 open-in-new-window-for-csp-or-xfo-error = Webhely megnyitása új ablakban
 # Variables:
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = A biztonsága érdekében a { $hostname } nem engedi a { -brand-short-name }nak, hogy megjelenítse az oldalt, ha egy másik oldal beágyazta magába. Az oldal megtekintéséhez új ablakban kell megnyitnia.
+csp-xfo-blocked-long-desc = A biztonsága érdekében a { $hostname } nem engedi a { -brand-short-name } számára, hogy megjelenítse az oldalt, ha egy másik oldal beágyazta magába. Az oldal megtekintéséhez új ablakban kell megnyitnia.
 fp-certerror-view-certificate-link = A webhely tanúsítványának megtekintése
+fp-certerror-return-to-previous-page-recommended-button-2 = Visszalépés (ajánlott)
+    .accesskey = V
 fp-certerror-return-to-previous-page-recommended-button = Visszalépés (ajánlott)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = A { -brand-short-name } figyelmezteti az oldalról, mert a(z) { $hostname } tanúsítványát visszavonták, és már nem megbízható.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = Valószínűleg semmit, mert magával az oldallal lehet a probléma. Egyeztessen a webhely tulajdonosával, hogy dolgoznak-e a problémán.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = Visszalépés (ajánlo
 fp-certerror-bad-domain-why-dangerous-body = A webhely úgy van beállítva, hogy csak biztonságos kapcsolatokat engedélyezzen, de probléma van a webhely tanúsítványával. Lehet, hogy egy rosszhiszemű szereplő próbálja megszemélyesíteni a webhelyet. A webhelyek hitelesítésszolgáltatók által kibocsátott tanúsítványokat használnak annak bizonyítására, hogy valóban azok, akiknek mondják magukat. A { -brand-short-name } nem bízik ebben a webhelyben, mert a tanúsítványa nem érvényes a következőre: { $hostname }. A tanúsítvány csak a következőre érvényes: { $validHosts }.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = Valószínűleg semmit, mert valószínűleg magával a webhellyel van a probléma. A webhelyek hitelesítésszolgáltatók által kibocsátott tanúsítványokat használnak annak bizonyítására, hogy valóban azok, akiknek mondják magukat. De ha vállalati hálózaton van, akkor a támogatási csapata több információval rendelkezhet. Ha víruskereső szoftvert használ, próbáljon lehetséges ütközéseket vagy ismert problémákat keresni.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = A { -brand-short-name } figyelmezteti erre az oldalra, mert a(z) { $hostname } tanúsítványát olyan kibocsátó állította ki, amelyik már nem megbízható.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = Valószínűleg semmit, mert magával az oldallal lehet a probléma. Egyeztessen a webhely tulajdonosával, hogy dolgoznak-e a problémán.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = Probléma van a webhely tanúsítványával. Lehet, hogy egy rosszhiszemű szereplő próbálja megszemélyesíteni a webhelyet. A webhelyek hitelesítésszolgáltatók által kiadott tanúsítványokat használnak annak bizonyítására, hogy valóban azok, akiknek mondják magukat. A { -brand-short-name } nem bízik ebben a webhelyben, mert nem tudja megmondani, hogy ki adta ki a tanúsítványt; önaláírt, vagy a webhely nem olyan köztes tanúsítványokat küld, amelyekben nem bízik meg.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = Hibakód: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = A { -brand-short-name } nem bízik a(z) { $hostname } webhelyben, mert nem tudta bizonyítani, hogy megfelel a nyilvános tanúsítványok átláthatósági követelményeinek.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = Valószínűleg semmit, mert jó eséllyel magával a webhellyel van a probléma.
 fp-learn-more-about-secure-connection-failures = Tudjon meg többet a biztonságos kapcsolódást érintő hibákról
 fp-learn-more-about-cert-issues = Tudjon meg többet az ilyen tanúsítványproblémákról
 fp-learn-more-about-time-related-errors = Tudjon meg többet az idővel kapcsolatos hibák elhárításáról
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = A { -brand-short-name } nem bízik ebben a webhelyben, mert úgy tűnik, a megadott tanúsítvány nem érvényes eddig: { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } { DATETIME($date, timeStyle: "short") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = Az eszköz órája a következőre van állítva: { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } { DATETIME($date, timeStyle: "short") }. Ha ez helyes, akkor a biztonsági probléma valószínűleg magán a webhelyen van. Ha hibás, megváltoztathatja az eszköz rendszerbeállításaiban.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = A(z) { $hostname } tulajdonosa nem állította be megfelelően, és nem hozható létre biztonságos kapcsolat.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = A számítógépe szerint a pontos idő { DATETIME($now, dateStyle: "medium") }, és ez megakadályozza, hogy a { -brand-short-name } biztonságosan kapcsolódjon. A(z) <strong>{ $hostname }</strong> felkereséséhez frissítse a rendszerbeállításokban a számítógép óráját a jelenlegi dátumra, időre és időzónára, és frissítse az oldalt.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = A rendszerbeállításokban frissítse a számítógép óráját a jelenlegi dátumra, időre és időzónára. A számítógépe szerint most { DATETIME($now, dateStyle: "medium") } van.
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = Az oldal nem megfelelően van átirányítva
 unknownSocketType-title = Váratlan válasz a kiszolgálótól
 nssFailure2-title = A biztonságos kapcsolat sikertelen
 csp-xfo-error-title = A { -brand-short-name } nem tudja megnyitni ezt az oldalt
+corruptedContentErrorv2-title = Hiba: sérült tartalom
 corruptedContentError-title = Sérült tartalom hiba
 sslv3Used-title = Nem lehet biztonságosan kapcsolódni
 inadequateSecurityError-title = A kapcsolat nem biztonságos
@@ -190,3 +231,6 @@ fp-certerror-hide-advanced-button = Speciális lehetőségek elrejtése
 fp-certerror-override-exception-button = Tovább erre: { $hostname } (kockázatos)
 fp-certerror-intro = A { -brand-short-name } egy lehetséges komoly biztonsági problémát észlelt a(z) <strong>{ $hostname }</strong> webhelyen. Lehet, hogy valaki a webhelynek adja ki magát, és bankkártyaadatokat, jelszavakat vagy e-mail-címeket próbál ellopni.
 fp-certerror-expired-into = A { -brand-short-name } biztonsági problémát észlelt a(z) <strong>{ $hostname }</strong> webhelyen. A webhely nincs jól beállítva, vagy az eszköz órája hibás dátumra és időre van beállítva.
+fp-certerror-transparency-intro = Valaki, aki a(z) <strong>{ $hostname }</strong> webhelynek adja ki magát, megpróbálhatja ellopni a felhasználónevét, jelszavát vagy e-mail-címét.
+fp-certerror-override-exception-button-2 = Tovább erre: { $hostname } (kockázatos)
+    .accesskey = T

@@ -15,7 +15,7 @@ options-select-default-tools-label = Ferramentas de programador predefinidas
 options-tool-not-supported-label = * Não suportado para o destino atual da caixa de ferramentas
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
-options-select-additional-tools-label = Ferramentas de programador instaladas por extras
+options-select-additional-tools-label = Ferramentas de programador instaladas por complementos
 # The label for the heading of group of checkboxes corresponding to the default developer
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = Botões da caixa de ferramentas disponíveis
@@ -30,6 +30,10 @@ options-context-inspector = Inspetor
 options-show-user-agent-styles-label = Mostrar estilos do navegador
 options-show-user-agent-styles-tooltip =
     .title = Ative para que sejam mostrados os estilos predefinidos que são carregados pelo navegador.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Mostrar Shadow DOM do navegador
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Ao ativar esta opção, serão mostrados os elementos do Shadow DOM geridos pelo navegador.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Truncar atributos DOM
 options-collapse-attrs-tooltip =
@@ -116,13 +120,15 @@ options-disable-http-cache-label = Desativar cache HTTP (quando a caixa de ferra
 options-disable-http-cache-tooltip =
     .title = Ligar esta opção irá desativar o cache HTTP para todos os separadores que têm a caixa de ferramentas aberta. Os Service Workers não são afetados por esta opção.
 # The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Desativar JavaScript
+# The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Desativar JavaScript
 options-disable-javascript-tooltip =
     .title = Se ativar esta opção desativa o JavaScript no separador atual. Se o separador ou a caixa de ferramentas for fechado, então esta definição será esquecida.
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
-options-enable-chrome-label = Ativar caixas de ferramentas de depuração do navegador e dos extras
+options-enable-chrome-label = Ativar caixas de ferramentas de depuração do navegador e dos complementos
 options-enable-chrome-tooltip =
-    .title = Ativar esta opção irá permitir que utilize várias ferramentas de programador no contexto do navegador (via Ferramentas > Ferramentas de programação > Caixa de ferramentas do navegador) e depurar extras a partir do Gestor de extras
+    .title = Ativar esta opção irá permitir que utilize várias ferramentas de programador no contexto do navegador (via Ferramentas > Ferramentas de programação > Caixa de ferramentas do navegador) e depurar complementos a partir do Gestor de complementos
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Ativar depuração remota
 options-enable-remote-tooltip2 =
@@ -143,5 +149,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Ativar mapas de fonte
 options-source-maps-tooltip =
     .title = Se ativar esta opção as fontes serão mapeadas nas ferramentas.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (apenas sessão atual, recarrega a página)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Apenas sessão atual, recarrega a página
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (recarrega a página)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Automático
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Descontinuado. Saber mais…

@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = Importar do { $previous
 mr1-onboarding-theme-header = Deixe do seu jeito
 mr1-onboarding-theme-subtitle = Personalize o { -brand-short-name } com um tema.
 mr1-onboarding-theme-secondary-button-label = Agora não
-newtab-wallpaper-onboarding-title = Experimente um toque de cores
-newtab-wallpaper-onboarding-subtitle = Escolha uma imagem de fundo para dar um novo visual à página de nova aba.
-newtab-wallpaper-onboarding-primary-button-label = Definir imagem de fundo
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Tema do sistema
 mr1-onboarding-theme-label-light = Claro
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = Escuro
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = Pronto
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Pausar animação
+onboarding-animation-play-button =
+    .aria-label = Reproduzir animação
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -243,7 +249,7 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Importar do naveg
 mr2022-onboarding-colorway-title = Escolha uma cor que te inspira
 mr2022-onboarding-colorway-subtitle = Vozes independentes podem mudar a cultura.
 mr2022-onboarding-colorway-primary-button-label-continue = Definir e continuar
-mr2022-onboarding-existing-colorway-checkbox-label = Torne a { -firefox-home-brand-name } sua tela inicial colorida
+mr2022-onboarding-existing-colorway-checkbox-label = Torne a { -firefox-home-brand-name } sua página inicial colorida
 mr2022-onboarding-colorway-label-default = Padrão
 mr2022-onboarding-colorway-tooltip-default2 =
     .title = Cores atuais do { -brand-short-name }
@@ -442,15 +448,25 @@ onboarding-checklist-pin = Fixe o { -brand-short-name } na barra de tarefas
 onboarding-checklist-import = Importe do navegador anterior
 onboarding-checklist-extension = Adicione uma extensão
 onboarding-checklist-sign-up = Entre na sua conta ou crie uma
+onboarding-checklist-minimize =
+    .label = Minimizar
+onboarding-checklist-remove =
+    .label = Remover lista de tarefas
 
 ## Tab Groups feature onboarding strings
 
 tab-groups-onboarding-feature-callout-title = Experimente grupos de abas para reduzir a desordem e aumentar a concentração.
 tab-groups-onboarding-feature-callout-subtitle = Organize-se arrastando uma aba sobre outra para criar seu primeiro grupo.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Encontre seus grupos de abas quando quiser no menu de listar todas as abas.
 tab-groups-onboarding-create-group-title-2 = Encontre aqui seus grupos de abas quando quiser.
 tab-groups-onboarding-create-group-no-alltabs-button-title = Encontre seus grupos procurando na barra de endereços.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Após fechar um grupo de abas, reabra quando quiser a partir do menu de listar todas as abas.
 tab-groups-onboarding-saved-groups-title-2 = Grupos de abas fechados podem ser reabertos aqui sempre que precisar.
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Encontre grupos fechados, procurando na barra de endereços.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = Reabra quando quiser seus grupos de abas a partir do menu de listar todas as abas.
 tab-groups-onboarding-session-restore-title = Reabra aqui seus grupos de abas quando quiser.
 tab-groups-onboarding-dismiss = OK
 
@@ -473,3 +489,146 @@ dismiss-button-label = Descartar
 sync-to-mobile-button-label = Sincronização com dispositivos móveis
 desktop-to-mobile-qr-code-alt =
     .aria-label = Código QR para baixar o { -brand-product-name } para dispositivos móveis
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Atualizando para o Windows 11?
+    Vamos fazer backup de seus dados do { -brand-product-name }.
+create-backup-screen-1-subtitle = Proteja automaticamente suas senhas, favoritos e muito mais em menos de 2 minutos.
+create-backup-screen-1-flair = Recomendado
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Saiba mais</a>
+create-backup-screen-1-sync-label = Sincronize com o { -brand-product-name }
+create-backup-screen-1-sync-body = Faz backup de todos os dispositivos conectados na sua conta
+create-backup-screen-1-backup-label = Faça backup de seus dados no computador
+create-backup-screen-1-backup-body = Salva no seu dispositivo ou no OneDrive
+create-backup-select-tile-button-label = Selecionar
+create-backup-back-button-label = Voltar
+create-backup-show-fewer =
+    .label = Mostrar menos mensagens como esta
+create-backup-screen-2-title = Escolha os dados do { -brand-product-name } a salvar no backup
+create-backup-screen-2-subtitle = Leva apenas um minuto. O backup dos seus dados é feito uma vez por dia.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Configuração fácil
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Favoritos, histórico, configurações e mais
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Não inclui senhas e métodos de pagamento
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Não criptografado
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Todos os dados
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Inclui senhas e métodos de pagamento
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Criptografado com senha
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Onde quer que seu backup seja salvo?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Criar uma senha de arquivo de backup
+create-backup-screen-3-subtitle = Necessário para criptografar seus dados. Guarde em um lugar fácil de lembrar.
+fx-backup-opt-in-header = Escolher local do arquivo
+fx-backup-opt-in-filepath-label = Escolha um local que você planeja transferir para um novo dispositivo, como o OneDrive.
+fx-backup-opt-in-create-password-label = Digite a senha
+fx-backup-opt-in-confirm-btn-label = Continuar
+fx-backup-opt-in-cancel-btn-label = Voltar
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Seu backup foi agendado
+fx-backup-confirmation-screen-close-button = Fechar
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Incluídos todos os dados de navegação
+fx-backup-confirmation-screen-all-data-item-text-2 = Salvo no seu dispositivo
+fx-backup-confirmation-screen-all-data-item-text-3 = Criptografado e protegido por senha
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Incluídos favoritos, histórico, configurações e outros dados
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Salvo no seu dispositivo
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Senhas e métodos de pagamentos não incluídos
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Vá em <a data-l10n-name="settings">Configurações</a> para incluir dados sensíveis.
+fx-backup-confirmation-screen-item-subtext-1 = O backup começará em alguns minutos e será feito uma vez por dia. Você pode verificar o progresso nas <a data-l10n-name="settings">Configurações</a>.
+fx-backup-confirmation-screen-item-subtext-2 = O { -brand-short-name } irá procurar seu backup caso precise reinstalar.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Restaurar do backup
+restore-from-backup-title = Vamos deixar o { -brand-short-name } de volta do seu jeito
+restore-from-backup-subtitle = Recupere todos os seus favoritos, histórico e outros dados para retomar a navegação.
+restore-from-backup-secondary-button = Não restaurar
+multiple-backups-info-tile = <strong>Vários arquivos de backup encontrados.</strong> O arquivo mais recente está selecionado. Restaure outros perfis nas <a data-l10n-name="settings-label">configurações.</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = Estamos de volta! Seus dados do { -brand-short-name } foram restaurados.
+restored-from-backup-success-with-checklist-subtitle = Quer manter seu navegador preferido, focado na privacidade, acessível com apenas um clique?
+restored-from-backup-success-no-checklist-subtitle = Você pode ativar o backup neste dispositivo nas <a data-l10n-name="settings">Configurações</a>.
+restored-from-backup-success-with-checklist-primary-button = Salvar e continuar
+restored-from-backup-success-with-checklist-secondary-button = Pular essa etapa
+restored-from-backup-success-no-checklist-primary-button = Continuar
+restored-from-backup-error-title = Hmm, houve um problema com seu arquivo de backup.
+restored-from-backup-error-subtitle = Se você tiver outro arquivo de backup do { -brand-short-name }, tente restaurar a partir dele. <a data-l10n-name="restore-problems">Ainda com problemas?</a>
+restored-from-backup-error-primary-button = Fechar
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = Personalize sua experiência de uso no { -brand-short-name }
+onboarding-personalization-subtitle = Responda algumas perguntas e recomendaremos recursos e extensões para aprimorar seu uso do { -brand-short-name }.
+onboarding-personalization-use-case-title = Para que você irá usar o { -brand-short-name }?
+onboarding-personalization-use-case-personal-option = Pessoal
+onboarding-personalization-use-case-school-option = Escola
+onboarding-personalization-use-case-work-option = Trabalho
+onboarding-personalization-motivation-title = Quais funcionalidades do { -brand-short-name } são mais importantes para você?
+onboarding-personalization-motivation-privacy-option = Privacidade e segurança
+onboarding-personalization-motivation-productivity-option = Produtividade
+onboarding-personalization-motivation-other-option = Outro
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Protegemos seus dados e impedimos que empresas espionem seus cliques, automaticamente.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Você está em boas mãos. Quer dizer, patas.
+onboarding-refresh-import-subtitle = Traga suas senhas, favoritos, histórico e muito mais.
+onboarding-refresh-import-title = Sinta-se em casa com o { -brand-short-name }
+onboarding-refresh-onboarding-addons-subtitle = Extensões são pequenos aplicativos que permitem personalizar o { -brand-short-name }. Eles podem melhorar sua privacidade, aumentar a produtividade, mudar a aparência do { -brand-short-name } e muito mais.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Aprimore sua navegação
+onboarding-refresh-sync-subtitle = Tenha favoritos, senhas e muito mais em qualquer lugar que entrar na sua conta no { -brand-short-name }. Além disso, seus dados são criptografados, então só você pode acessar.
+onboarding-refresh-sync-title = Vá em qualquer lugar. Tenha tudo sincronizado.
+onboarding-refresh-gratitude-subtitle = Obrigado por usar o { -brand-short-name }, o único principal navegador respaldado por uma entidade sem fins lucrativos. Com seu apoio, estamos trabalhando para tornar a internet mais segura e acessível a todos.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } protege você
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = Alterne entre janelas inteligentes e clássicas quando quiser.
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = Termos de uso do { -brand-product-name }
+smartwindow-existing-user-fx-tou-body = Para usar o { -smart-window-brand-name }, aceite os <a data-l10n-name="terms_of_use">Termos de uso</a> e o <a data-l10n-name="privacy_notice">Aviso de privacidade</a> atualizado.
+smartwindow-existing-user-fx-tou-accept = Aceitar
+smartwindow-existing-user-fx-tou-go-back = Voltar
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = Inicie sempre com o { -smart-window-brand-name }
+smartwindow-onboarding-subtitle = Resuma, compare e faça perguntas sem perder o ritmo.
+smartwindow-onboarding-primary-button = Avançar
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = Mascote do { -brand-product-name } (Kit) com acessórios em forma de estrela
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = Quer manter o assistente fechado?
+smartwindow-sidebar-auto-open-callout-body = Você ainda pode abrir sempre que precisar.
+smartwindow-sidebar-auto-open-callout-accept = Sim, manter fechado
+smartwindow-sidebar-auto-open-callout-dismiss = Não, obrigado
+smartwindow-sidebar-auto-open-callout-accepted-title = O assistente permanecerá fechado
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = Use ˝Fazer uma pergunta˝ para abrir em qualquer página. Mude isso quando quiser nas <a data-l10n-name="settings">configurações</a>.
+smartwindow-sidebar-auto-open-callout-rejected-title = Certo
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = Se mudar de ideia, pode mudar o padrão nas <a data-l10n-name="settings">configurações</a> quando quiser.

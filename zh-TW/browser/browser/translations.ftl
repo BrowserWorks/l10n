@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = 更改原始語言
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = 抱歉，我們尚未支援翻譯{ $language }。
+translations-panel-error-unsupported-hint-unknown-2 = 抱歉，我們尚未支援翻譯這種語言。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -210,7 +218,7 @@ select-translations-panel-copy-button =
     .label = 複製
 # Text displayed on the copy button after it is clicked.
 select-translations-panel-copy-button-copied =
-    .label = 已複製！
+    .label = 已複製
 select-translations-panel-done-button =
     .label = 完成
 select-translations-panel-translate-full-page-button =
@@ -228,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = 翻譯時發生問題，請再試一次。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = 抱歉，我們尚未支援翻譯{ $language }。
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = 抱歉，我們尚未支援翻譯這種語言。
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

@@ -40,8 +40,17 @@ options-collapse-attrs-tooltip =
 options-default-color-unit-label = وحدة الألوان المبدئية
 options-default-color-unit-name = أسماء الألوان
 
-## Web Console section
+## Network Monitor section
 
+# The heading
+options-netmonitor-label = مراقب الشبكة
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = غير محدود
+
+## Experimental section
+
+# The heading
+options-experimental-label = ميزات التجريبية
 
 ## Style Editor section
 
@@ -56,6 +65,8 @@ options-stylesheet-autocompletion-tooltip =
 
 # The heading
 options-screenshot-label = سلوك اللقطات
+options-screenshot-clipboard-tooltip2 =
+    .title = يحفظ لقطة الشاشة مباشرةً في الحافظة
 # Label for the checkbox that toggles the camera shutter audio for screenshot tool
 options-screenshot-audio-label = شغّل صوت غالِق الكمرة
 options-screenshot-audio-tooltip =
@@ -78,12 +89,33 @@ options-sourceeditor-tabsize-label = حجم اللسان
 options-sourceeditor-keybinding-label = ربطات المفاتيح
 options-sourceeditor-keybinding-default-label = المبدئي
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = الوضع المحلي
+options-local-mode-only-work-locally = يعمل الوضع المحلي محليًا فقط ويُعطَّل عند تصحيح سياقات بعيدة
+options-local-mode-domain-label = نطاق مخصص:
+options-local-mode-folder-label = مجلد المحلي:
+options-local-mode-choose-folder = تصفّح…
+    .title = اختر مجلدًا محليًا لاستخدامه في هذا التعيين
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = اختر مجلد الوضع المحلي لـ: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = هذا المجلد غير موجود، أو غير صالح.
+options-local-mode-toggle =
+    .title = بدّل هذا التعيين المحلي
+options-local-mode-toggle-enable = فعّل
+options-local-mode-toggle-disable = عطّل
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
 options-context-advanced-settings = إعدادات متقدّمة
 # The label for the checkbox that toggles the HTTP cache on or off
-options-disable-http-cache-label = عطّل خبيئة HTTP (عندما يكون صندوق الأدوات مفتوحا)
+options-disable-http-cache-label = عطّل خبيئة HTTP (عندما يكون صندوق الأدوات مفتوحًا)
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = عطّل جافاسكربت *
 options-disable-javascript-tooltip =
@@ -92,5 +124,13 @@ options-disable-javascript-tooltip =
 options-enable-remote-label = فعِّل التنقيح البعيد
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = فعّل عمّال الخدمة عبر HTTP (عندما يكون صندوق الأدوات مفتوحا)
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * في الجلسة الحالية فقط، تُعيد تحميل الصفحة
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = بائد. اطّلع على المزيد…

@@ -15,10 +15,25 @@ webext-perms-header-with-perms = ¿Añadir { $extension }? Este complemento tend
 webext-perms-header-unsigned = ¿Añadir { $extension }? Este complemento no está verificado. Los complementos maliciosos pueden robar tu información privada y comprometer tu equipo. Instala este complementos sólo si confías en la fuente
 webext-perms-header-unsigned-with-perms = ¿Añadir { $extension }? Este complemento no esta verificado. Los complementos maliciosos pueden robar tu información privada y comprometer tu equipo. Solamente instala este complemento si confías en la fuente. Este complemento tendrá permiso para:
 webext-perms-sideload-header = { $extension } agregado
+webext-perms-optional-perms-header2 = { $extension } requiere permisos adicionales.
 webext-perms-optional-perms-header = { $extension } requiere permisos adicionales.
+webext-perms-header2 = Agregar { $extension }
+webext-perms-list-intro-unsigned = Esta extensión no verificada podría poner en riesgo tu privacidad o comprometer tu dispositivo. Solo añádela si confías en la fuente.
 
 ## Headers used in the webextension permissions dialog, inside the content.
 
+webext-perms-header-required-perms = Permisos necesarios:
+webext-perms-header-optional-settings = Configuraciones opcionales:
+webext-perms-header-update-required-perms = Nuevos permisos necesarios:
+webext-perms-header-optional-required-perms = Nuevos permisos:
+webext-perms-header-data-collection-perms = Recopilación de datos requerida:
+webext-perms-header-data-collection-is-none = Recopilación de datos
+# This is a header used in the add-ons "update" prompt, shown when the new
+# version requires new data collection permissions.
+webext-perms-header-update-data-collection-perms = Nueva recopilación de datos requerida:
+# This is a header used in the add-ons "optional" prompt, shown when the
+# extension requests new data collection permissions programmatically.
+webext-perms-header-optional-data-collection-perms = Nueva recopilación de datos:
 
 ##
 
@@ -38,6 +53,9 @@ webext-perms-sideload-cancel =
     .accesskey = C
 # Variables:
 #   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text2 = { $extension } se actualizó. Debes aprobar los nuevos permisos antes de que se instale la versión actualizada. Si eliges “Cancelar”, se mantendrá la versión actual de tu extensión.
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
 webext-perms-update-text = Se actualizo { $extension }. Tienes que aprobar nuevos permisos antes de que la versión actualizada se instale. Seleccionar “Cancelar” mantendrá la versión actual. Este complemento tendrá permisos para:
 webext-perms-update-accept =
     .label = Actualizar
@@ -50,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Denegar
     .accesskey = D
 webext-perms-host-description-all-urls = Acceder a tus datos para todos los sitios web
+webext-perms-host-description-file-urls = Acceder a los archivos locales de tu computadora
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Acceder a tus datos para los sitios del dominio { $domain }
@@ -90,6 +109,26 @@ webext-perms-host-description-multiple-domains =
 
 ## Strings for data collection permissions in the permission prompt.
 
+webext-perms-description-data-none = El desarrollador dice que esta extensión no requiere recopilación de datos.
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some = El desarrollador dice que esta extensión recopila: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-update = El desarrollador dice que la extensión recopilará: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-optional = El desarrollador dice que la extensión quiere recopilar: { $permissions }
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text-with-data-collection = { $extension } requiere nuevas configuraciones para actualizar
+webext-perms-update-list-intro-with-data-collection = Cancela para conservar la versión y configuración actual, o actualizar para obtener la nueva versión y aprobar los cambios.
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection = { $extension } solicita configuraciones adicionales
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection-only = { $extension } solicita la recopilación de datos adicionales
 
 ## Headers used in the webextension permissions dialog for synthetic add-ons.
 ## The part of the string describing what privileges the extension gives should be consistent
@@ -100,6 +139,7 @@ webext-perms-host-description-multiple-domains =
 
 webext-site-perms-header-with-gated-perms-midi = Este complemento le da a { $hostname } acceso a tus dispositivos MIDI.
 webext-site-perms-header-with-gated-perms-midi-sysex = Este complemento le da a { $hostname } acceso a tus dispositivos MIDI (con soporte SysEx).
+webext-site-perms-header-with-gated-perms-serial = Este complemento le da a { $hostname } acceso a tus dispositivos serie.
 
 ##
 
@@ -110,6 +150,12 @@ webext-site-perms-description-gated-perms-midi =
     Por lo general, se trata de dispositivos como sintetizadores de audio, pero también pueden estar integrados en tu computadora.
     
     Normalmente, los sitios web no pueden acceder a dispositivos MIDI. El uso inadecuado podría causar daños o comprometer la seguridad.
+webext-site-perms-description-gated-perms-webserial =
+    Se trata de dispositivos como microcontroladores, impresoras 3D y otros equipos que se conectan mediante USB, puertos serie o Bluetooth.
+    
+    Podrás elegir a qué dispositivos puede acceder el sitio web.
+    
+    Normalmente, los sitios web no tienen permiso para acceder a dispositivos serie. Un uso inadecuado podría causar daños o comprometer la seguridad.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -124,6 +170,9 @@ webext-site-perms-header-unsigned-with-perms = ¿Agregar { $extension }? Esta ex
 
 webext-site-perms-midi = Acceder a dispositivos MIDI
 webext-site-perms-midi-sysex = Acceder a dispositivos MIDI con soporte para SysEx
+webext-site-perms-serial = Acceder a dispositivos serie
 
 ## Colorway theme migration
 
+webext-colorway-theme-migration-notification-message = <b>Tu tema de combinación de colores se ha eliminado.</b> { -brand-shorter-name } se ha actualizado tu colección de combinaciones de colores. Puedes encontrar las últimas versiones en el sitio de complementos.
+webext-colorway-theme-migration-notification-button = Obtén combinaciones de colores actualizadas

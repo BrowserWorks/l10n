@@ -12,12 +12,37 @@ fxa-signout-dialog-body = Los datos sincronizados permanecerán en tu cuenta.
 fxa-signout-dialog2-button = Cerrar sesión
 fxa-signout-dialog2-checkbox = Eliminar datos de este dispositivo (contraseñas, historial, marcadores, etc.)
 fxa-menu-sync-settings =
-    .label = Configuración de Sync
+    .label = Ajustes de sincronización
 fxa-menu-turn-on-sync =
     .value = Activar Sync
 fxa-menu-turn-on-sync-default = Activar Sync
 fxa-menu-connect-another-device =
     .label = Conectar otro dispositivo…
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Enviar al dispositivo
+            [one] Enviar { $tabCount } pestañas al dispositivo
+           *[other] Enviar { $tabCount } pestañas a los dispositivos
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Enviar al dispositivo móvil
+            [one] Enviar { $tabCount } pestañas al dispositivo móvil
+           *[other] Enviar { $tabCount } pestañas al dispositivo móvil
+        }
+fxa-menu-send-to-mobile-device-missing2 = ¿No ves tu dispositivo?
+fxviewtabrow-send-to-mobile-not-verified = Cuenta no verificada
+fxviewtabrow-send-to-mobile-verify-account = Verifica tu cuenta
+fxa-menu-send-to-mobile-turn-on-sync = Activa la sincronización para enviar pestañas
+fxa-menu-send-to-mobile-connect-device = Conectar un dispositivo para enviar pestañas
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
@@ -33,8 +58,11 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Envía al instante una pestaña a cualquier dispositivo donde hayas iniciado sesión.
 fxa-menu-sign-out =
     .label = Cerrar sesión…
-fxa-menu-sync-title = Sincronizar
 fxa-menu-sync-description = Accede a tu web desde cualquier lugar
+fxa-avatar-sign-in = Iniciar sesión
+fxa-avatar-sign-up = Registrarse
+fxa-avatar-tooltip =
+    .tooltiptext = Ingresa a tu cuenta
 sync-setup-verify-continue = Continuar
 sync-setup-verify-title = Advertencia de fusión
 sync-setup-verify-heading = ¿Realmente deseas iniciar sesión para sincronizar?
@@ -43,6 +71,10 @@ sync-setup-verify-heading = ¿Realmente deseas iniciar sesión para sincronizar?
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Un usuario diferente se conectó anteriormente para sincronizar en esta computadora. Al conectarse se fusionarán los marcadores, contraseñas y otros ajustes con { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Inicia sesión para enviar pestañas
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

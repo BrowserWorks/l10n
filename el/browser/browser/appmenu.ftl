@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = Αδυναμία ενημέρωσης — μη συμβατό σύστημα
 appmenuitem-banner-update-restart =
     .label = Διαθέσιμη ενημέρωση — επανεκκίνηση τώρα
+appmenu-nova-fxa-sign-in = Σύνδεση
+appmenu-nova-switch-device-promo =
+    .message = Θα αποκτήσετε σύντομα νέα συσκευή; Πάρτε το { -brand-short-name } μαζί σας!
+appmenu-nova-switch-device-link = Τρόπος μεταφοράς δεδομένων
 appmenuitem-new-tab =
     .label = Νέα καρτέλα
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = Νέο ιδιωτικό παράθυρο
 appmenuitem-history =
     .label = Ιστορικό
+appmenuitem-tab-groups =
+    .label = Ομάδες καρτελών
 appmenuitem-downloads =
     .label = Λήψεις
 appmenuitem-passwords =
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Άνοιγμα του εργαλείου προφίλ
+    .tooltiptext = Άνοιγμα του εργαλείου προφίλ
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -202,6 +211,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = Προεπιλογή για τη διερεύνηση σφαλμάτων δικτύωσης στο { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Δικτύωση
+profiler-popup-presets-networking-with-logs-description = Προκαθορισμένη ρύθμιση για τη διερεύνηση σφαλμάτων δικτύου στο { -brand-shorter-name }, συμπεριλαμβανομένων των αρχείων καταγραφής δικτύωσης. Αυτά τα αρχεία ενδέχεται να περιέχουν ευαίσθητες πληροφορίες, όπως τα URL που επισκέπτεστε.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Δικτύωση με αρχεία καταγραφής
 profiler-popup-presets-power-description = Προκαθορισμένη ρύθμιση για τη διερεύνηση σφαλμάτων χρήσης ενέργειας στο { -brand-shorter-name }, με μικρή επιβάρυνση.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -209,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Προκαθορισμένη ρύθμιση για έλεγχο σφαλμάτων στο { -brand-shorter-name }. Υψηλός φόρτος, μην τη χρησιμοποιείτε για εργασίες υψηλών επιδόσεων, αλλά για την εστίαση στην κατανόηση της συμπεριφοράς του προγράμματος περιήγησης.
 profiler-popup-presets-debug-label =
     .label = Έλεγχος σφαλμάτων
+profiler-popup-presets-web-compat-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων συμβατότητας ιστοτόπων, αντί για την καταγραφή επιδόσεων.
+profiler-popup-presets-web-compat-label =
+    .label = Συμβατότητα ιστού
 profiler-popup-presets-custom-label =
     .label = Προσαρμογή
 
@@ -248,7 +263,7 @@ appmenu-help-share-ideas =
     .label = Κοινοποίηση ιδεών και σχολίων…
     .accesskey = Κ
 appmenu-help-switch-device =
-    .label = Εναλλαγή σε νέα συσκευή
+    .label = Μετάβαση σε νέα συσκευή
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -274,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Προσαρμογή γραμμής εργαλείων…
+appmenu-abouttranslations =
+    .label = Μετάφραση…
+appmenu-edit-pdf =
+    .label = Επεξεργασία PDF…
 appmenu-developer-tools-subheader = Εργαλεία προγράμματος περιήγησης
 appmenu-developer-tools-extensions =
     .label = Επεκτάσεις για προγραμματιστές
@@ -283,14 +302,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Συνδεθείτε στον λογαριασμό σας
+appmenuitem-monitor-title2 = Προφυλαχτείτε από την υποκλοπή ταυτότητας
+appmenuitem-monitor-description2 = Λάβετε ειδοποιήσεις για παραβιάσεις δεδομένων
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Λάβετε ειδοποιήσεις παραβίασης δεδομένων
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Διατηρήστε το email σας ιδιωτικό
+appmenuitem-relay-description2 = Συμβάλλει στην αποτροπή ανεπιθύμητων μηνυμάτων στα εισερχόμενά σας
 appmenuitem-relay-description = Αποκρύψτε το πραγματικό email και το τηλέφωνό σας
 appmenuitem-services-relay-description = Εκκίνηση πίνακα μασκών email
+appmenuitem-vpn-title2 = Αποκρύψτε την τοποθεσία σας με το { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Κάντε πιο δύσκολη την καταγραφή της περιήγησής σας
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Λάβετε προστασία για ολόκληρη τη συσκευή
 appmenuitem-vpn-description = Προστατέψτε το διαδικτυακό σας απόρρητο
 appmenu-services-header = Οι υπηρεσίες μου
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Εργαλεία απορρήτου
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Δοκιμάστε άλλα εργαλεία προστασίας από τη BrowserWorks:
 appmenu-other-protection-header = Δοκιμάστε άλλα εργαλεία προστασίας από τη { -vendor-short-name }:
 
 ## Profiles panel
@@ -298,6 +332,8 @@ appmenu-other-protection-header = Δοκιμάστε άλλα εργαλεία �
 appmenu-other-profiles = Άλλα προφίλ
 appmenu-manage-profiles =
     .label = Διαχείριση προφίλ
+appmenu-copy-profile =
+    .label = Αντιγραφή προφίλ
 appmenu-create-profile =
     .label = Νέο προφίλ
 appmenu-edit-profile =

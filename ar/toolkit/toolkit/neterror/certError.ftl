@@ -72,7 +72,15 @@ open-in-new-window-for-csp-or-xfo-error = افتح الموقع في نافذة 
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = لحماية أمنك لن يسمح { $hostname } أن يعرض { -brand-short-name } الصفحة إن ضمّنها موقع آخر. لترى هذه الصفحة عليك فتحها في نافذة جديدة.
 fp-certerror-view-certificate-link = اعرض شهادة الموقع
+fp-certerror-return-to-previous-page-recommended-button-2 = عُد للخلف (يُنصح به)
+    .accesskey = د
 fp-certerror-return-to-previous-page-recommended-button = عُد للخلف (يُنصح به)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } يحذرك بشأن هذا الموقع لأن الشهادة المقدمة لـ { $hostname } قد أُلغِيَ ولم يعد موثوقًا.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = على الأرجح لا يوجد شيء، لأن المشكلة على الأرجح في الموقع نفسه. يمكنك التواصل مع مالك الموقع لمعرفة ما إذا كان يعمل على حل المشكلة.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = عُد للخلف (ي�
 fp-certerror-bad-domain-why-dangerous-body = أُعدّ الموقع للسماح بالاتصالات الآمنة فقط، ولكن هناك مشكلة في شهادة الموقع. من المحتمل أن جهة خارجية تحاول انتحال هوية الموقع. تستخدم المواقع شهادات صادرة عن سُلطة الشهادات لإثبات هويتها الحقيقية. لا يثق { -brand-short-name } بهذا الموقع لأن شهادته غير صالحة لـ { $hostname }. الشهادة صالحة فقط لـ: { $validHosts }.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = على الأرجح لا شيء، فمن المرجح وجود مشكلة في الموقع نفسه. تستخدم المواقع شهادات صادرة عن سُلطة الشهادات لإثبات هويتها الحقيقية. ولكن إذا كنت تستخدم شبكة شركة، فقد يكون لدى فريق الدعم لديك معلومات إضافية. إذا كنت تستخدم برنامج مضاد الفيروسات، فحاول البحث عن تعارضات محتملة أو مشاكل معروفة.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } يحذرك بشأن هذا الموقع لأن الشهادة المقدمة لـ { $hostname } قد أُصدرت من قِبل جهة إصدار شهادات لم تعد موثوقة.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = على الأرجح لا يوجد شيء، لأن المشكلة على الأرجح في الموقع نفسه. يمكنك التواصل مع مالك الموقع لمعرفة ما إذا كان يعمل على حل المشكلة.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = هناك مشكلة في شهادة الموقع. من المحتمل أن يكون هناك مُخترق يحاول انتحال هوية الموقع. تستخدم المواقع شهادات صادرة عن سُلطة الشهادات لإثبات هويتها الحقيقية. لا يثق { -brand-short-name } بهذا الموقع لأننا لا نستطيع تحديد مُصدّر الشهادة، أو لأنها موقعة ذاتيًا، أو لأن الموقع لا يُرسل شهادات وسيطة نثق بها.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = رمز الخطأ: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = لا يثق { -brand-short-name } في { $hostname } لأنه لم يتمكن من إثبات أنه يلبي متطلبات شفافية الشهادة العامة.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = ربما لا شيء، لأنه من المحتمل أن تكون هناك مشكلة في الموقع نفسه.
 fp-learn-more-about-secure-connection-failures = اعرف المزيد عن حالات فشل الاتصال الآمن
 fp-learn-more-about-cert-issues = اعرف المزيد عن هذه الأنواع من مشكلات الشهادات
 fp-learn-more-about-time-related-errors = اعرف المزيد عن مواجهة الأعطال المتعلقة بالوقت وإصلاحها
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = لا يثق { -brand-short-name } بهذا الموقع لأنه يبدو أن الشهادة المقدمة غير صالحة حتى { DATETIME($date, timeStyle: "short") } على { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = عُيِّن ساعة جهازك على { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }. إذا كان هذا صحيحًا، فمن المحتمل أن تكون المشكلة الأمنية في الموقع نفسه. أما إذا كان خاطئًا، فيمكنك تغييره من إعدادات نظام جهازك.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = لم يقم مالك { $hostname } بإعداده بشكل صحيح، ولا يمكن إنشاء اتصال آمن.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = يعتقد حاسوبك أنه { DATETIME($now, dateStyle: "medium") }، مما يمنع { -brand-short-name } من الاتصال بشكل آمن. لزيارة <strong>{ $hostname }</strong>، حدِّث ساعة حاسوبك في إعدادات نظامك إلى التاريخ والوقت والمنطقة الزمنية الحالية، ثم حدِّث الصفحة.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = حدِّث ساعة حاسوبك في إعدادات نظامك إلى التاريخ والوقت والمنطقة الزمنية الحالية. يعتقد حاسوبك أنه { DATETIME($now, dateStyle: "medium") }.
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = لا تعيد الصفحة التوجيه بشكل سليم
 unknownSocketType-title = استجابة غير متوقعة من الخادوم
 nssFailure2-title = فشل الاتصال الآمن
 csp-xfo-error-title = لا يمكن أن يعرض { -brand-short-name } الصفحة
+corruptedContentErrorv2-title = خطأ محتوى فاسد
 corruptedContentError-title = خطأ محتوى فاسد
 sslv3Used-title = تعذّر الاتصال بأمان
 inadequateSecurityError-title = اتّصالك غير آمن
@@ -177,7 +218,7 @@ certerror-mitm-title = تمنع البرمجية { -brand-short-name } من ال
 ## Felt Privacy V1 Strings
 
 fp-certerror-page-title = تحذير: خطر أمني
-fp-certerror-body-title = كن حذرا، هناك شيء لا يبدو على ما يرام.
+fp-certerror-body-title = كن حذرًا، هناك شيء لا يبدو على ما يرام.
 fp-certerror-why-site-dangerous = ما الذي يجعل الموقع يبدو خطيرًا؟
 fp-certerror-what-can-you-do = إليك ما تستطيع فعله حيال هذا
 fp-certerror-advanced-title = متقدم
@@ -190,3 +231,6 @@ fp-certerror-hide-advanced-button = أخفِ المتقدم
 fp-certerror-override-exception-button = واصِل إلى { $hostname } (خطر)
 fp-certerror-intro = { -brand-short-name } لاحظ مشكلة أمنية محتملة خطيرة في <strong>{ $hostname }</strong>. قد يحاول شخص ينتحل هوية الموقع سرقة معلومات مثل بيانات بطاقة الائتمان أو كلمات السر أو البريد الإلكتروني.
 fp-certerror-expired-into = { -brand-short-name } لاحظ مشكلة أمنية في <strong>{ $hostname }</strong>. إما أن الموقع غير مُعدّ بشكل صحيح أو أن ساعة جهازك مضبوطة على تاريخ/وقت خاطئ.
+fp-certerror-transparency-intro = قد يحاول شخص يتظاهر بأنه <strong>{ $hostname }</strong> لسرقة أشياء مثل معلومات بطاقة الائتمان أو كلمات السر أو رسائل البريد الإلكتروني.
+fp-certerror-override-exception-button-2 = واصل إلى { $hostname } (خطر)
+    .accesskey = ص

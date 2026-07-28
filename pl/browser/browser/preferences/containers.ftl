@@ -3,15 +3,22 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 containers-window-new2 =
-    .title = Dodawanie kontekstu
+    .title = Dodawanie kontenera
     .style = min-width: 45em
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings2 =
-    .title = Ustawienia kontekstu „{ $name }”
+    .title = Ustawienia kontenera „{ $name }”
     .style = min-width: 45em
 containers-window-close =
     .key = w
+containers-name-label2 =
+    .label = Nazwa
+    .placeholder = Podaj nazwę
+containers-icon-label2 =
+    .label = Ikona
+containers-color-label2 =
+    .label = Kolor
 # This is a term to store style to be applied
 # on the three labels in the containers add/edit dialog:
 #   - name
@@ -26,7 +33,7 @@ containers-name-label = Nazwa:
     .accesskey = N
     .style = { -containers-labels-style }
 containers-name-text =
-    .placeholder = Nazwa kontekstu
+    .placeholder = Nazwa kontenera
 containers-icon-label = Ikona:
     .accesskey = I
     .style = { -containers-labels-style }
@@ -82,3 +89,19 @@ containers-icon-tree =
     .label = Drzewo
 containers-icon-chill =
     .label = Relaks
+containers-window-new3 =
+    .title = Dodawanie kontenera
+    .style = min-width: 32em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings3 =
+    .title = Ustawienia kontenera „{ $name }”
+    .style = min-width: 32em
+
+## Container creation panel, anchored to the URL bar.
+
+containers-panel-title = Dodawanie kontenera
+containers-panel-create-button =
+    .label = Gotowe
+containers-panel-cancel-button =
+    .label = Anuluj

@@ -20,6 +20,32 @@ fxa-menu-connect-another-device =
     .label = Під'єднати інший пристрій…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [one] Надіслати вкладку на пристрій
+            [few] Надіслати { $tabCount } вкладки на пристрій
+           *[many] Надіслати { $tabCount } вкладок на пристрій
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Надіслати на мобільний
+            [one] Надіслати { $tabCount } вкладку на мобільний
+            [few] Надіслати { $tabCount } вкладки на мобільний
+           *[many] Надіслати { $tabCount } вкладок на мобільний
+        }
+fxa-menu-send-to-mobile-device-missing2 = Не бачите свій пристрій?
+fxviewtabrow-send-to-mobile-not-verified = Обліковий запис не підтверджено
+fxviewtabrow-send-to-mobile-verify-account = Підтвердьте свій обліковий запис
+fxa-menu-send-to-mobile-turn-on-sync = Увімкніть синхронізацію, щоб надсилати вкладки
+fxa-menu-send-to-mobile-connect-device = Під'єднайте пристрій, щоб надсилати вкладки
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -47,6 +73,10 @@ sync-setup-verify-heading = Ви дійсно хочете ввійти в си�
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Інший користувач вже входив у синхронізацію на цьому комп'ютері. Вхід об'єднає закладки, паролі та інші налаштування цього браузера з даними { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Увійдіть, щоб надсилати вкладки
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

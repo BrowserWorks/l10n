@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] Fermer l’onglet
            *[other] Fermer { $tabCount } onglets
         }
+tab-splitview-splitter =
+    .aria-label = Redimensionner les onglets de la vue scindée
+tab-devtools-splitter =
+    .aria-label = Redimensionner le panneau des outils de développement
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -158,8 +162,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Ne plus afficher ce dialogue à l’
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Attention
-tabbrowser-confirm-close-duplicate-tabs-text = Nous garderons le dernier onglet actif ouvert
 tabbrowser-confirm-close-all-duplicate-tabs-title = Fermer les onglets en double ?
 tabbrowser-confirm-close-all-duplicate-tabs-text = Nous allons fermer les onglets en double dans cette fenêtre. Le dernier onglet actif restera ouvert.
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Fermer les onglets
@@ -177,8 +179,14 @@ tabbrowser-customizemode-tab-title = Personnaliser { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = Couper le son de l’onglet
     .accesskey = R
+tabbrowser-context-mute-tab2 =
+    .label = Couper le son
+    .accesskey = C
 tabbrowser-context-unmute-tab =
     .label = Réactiver le son de l’onglet
+    .accesskey = R
+tabbrowser-context-unmute-tab2 =
+    .label = Réactiver le son
     .accesskey = R
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
@@ -218,7 +226,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Fenêtre actuelle
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Créer un groupe d’onglets
 tab-group-editor-title-edit = Gérer le groupe d’onglets
@@ -248,16 +256,33 @@ tab-group-editor-color-selector2-gray = Gris
     .title = Gris
 tab-group-editor-color-selector2-red = Rouge
     .title = Rouge
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Fermé
 tab-group-description = { $tabGroupName } — Groupe d’onglets
+tab-group-label-tooltip-collapsed = { $tabGroupName } — réduit
+tab-group-label-tooltip-expanded = { $tabGroupName } — développé
+tab-group-preview-name =
+    .aria-label = Onglets dans un groupe réduit
 tab-context-unnamed-group =
     .label = Groupe sans nom
 tab-group-name-default = Groupe sans nom
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Groupes d’onglets
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Liste des onglets ouverte
+tab-group-preview-closed-description = Liste des onglets fermée
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -270,15 +295,38 @@ tab-context-move-tab-to-new-group =
 tab-context-move-tab-to-group =
     .label =
         { $tabCount ->
-            [1] Ajouter l’onglet au groupe
-            [one] Ajouter l’onglet au groupe
-           *[other] Ajouter les onglets au groupe
+            [1] Ajouter l’onglet à un groupe
+           *[other] Ajouter les onglets à un groupe
         }
     .accesskey = A
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Ajouter la vue scindée à un nouveau groupe
+           *[other] Ajouter les vues scindées à un nouveau groupe
+        }
+    .accesskey = A
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Ajouter la vue scindée à un groupe
+           *[other] Ajouter les vues scindées à un groupe
+        }
+    .accesskey = A
+tab-context-move-tab-to-group-saved-groups =
+    .label = Groupes fermés
 tab-group-editor-action-new-tab =
     .label = Nouvel onglet dans le groupe
 tab-group-editor-action-new-window =
     .label = Déplacer vers une nouvelle fenêtre
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Copier le lien dans le groupe
+           *[other] Copier les { $linkCount } liens dans le groupe
+        }
 tab-group-editor-action-save =
     .label = Enregistrer et fermer le groupe
 tab-group-editor-action-ungroup =
@@ -288,6 +336,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Terminer
     .accessKey = T
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Partager le groupe d’onglets
 tab-context-reopen-tab-group =
     .label = Rouvrir le groupe d’onglets
 # Variables:
@@ -300,6 +351,26 @@ tab-context-ungroup-tab =
            *[other] Retirer des groupes
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] { $tabCount } onglet supplémentaire
+       *[other] { $tabCount } onglets supplémentaires
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Mettez de l’ordre dans vos onglets
+tab-groups-list-empty-description = Faites glisser un onglet sur un autre ou faites un clic droit sur un onglet pour commencer à les organiser. Vos groupes seront enregistrés ici pour que vous puissiez les retrouver facilement par la suite.
+tab-groups-list-empty-button = Créer un groupe d’onglets
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Nouveau groupe
 
 ## Open/saved tab group context menu
 
@@ -325,3 +396,88 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Ouvrir le groupe dans une nouvelle fenêtre
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Ajouter une note
+    .accesskey = A
+tab-context-edit-note =
+    .label = Modifier la note
+    .accesskey = M
+tab-context-delete-note =
+    .label = Supprimer la note
+    .accesskey = S
+tab-note-editor-title-create = Ajouter une note
+tab-note-editor-title-edit = Modifier la note
+tab-note-editor-text-field =
+    .placeholder = Que voulez-vous retenir à propos de cet onglet ?
+tab-note-editor-button-cancel =
+    .label = Annuler
+    .accesskey = A
+tab-note-editor-button-save =
+    .label = Enregistrer
+    .accesskey = E
+tab-note-editor-button-delete =
+    .title = Supprimer la note
+    .aria-label = Supprimer la note
+    .accesskey = S
+tab-note-preview-edit-icon =
+    .alt = Modifier la note
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Lire la suite
+tab-note-panel-add-note-new-badge =
+    .label = Nouveau
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+        [one] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caractère
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caractères
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Ajouter une vue scindée
+    .accesskey = A
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Ouvrir en vue scindée
+    .accesskey = O
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Séparer la vue scindée
+    .accesskey = S
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Inverser les onglets
+    .accesskey = I
+tab-context-badge-new = Nouveau
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, vue scindée à gauche
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, vue scindée à droite
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Séparer les onglets
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Inverser les onglets
+split-view-menuitem-close-both-tabs =
+    .label = Fermer les deux onglets

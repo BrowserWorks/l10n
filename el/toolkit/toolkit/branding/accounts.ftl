@@ -6,19 +6,19 @@
 # and kept in English.
 -fxaccount-brand-name =
     { $case ->
-       *[nom]
-            { $capitalization ->
-               *[upper] Λογαριασμός Waterfox
-                [lower] λογαριασμός Waterfox
-            }
         [gen]
             { $capitalization ->
-               *[upper] Λογαριασμού Waterfox
                 [lower] λογαριασμού Waterfox
+               *[upper] Λογαριασμού Waterfox
             }
         [acc]
             { $capitalization ->
-               *[upper] Λογαριασμό Waterfox
                 [lower] λογαριασμό Waterfox
+               *[upper] Λογαριασμό Waterfox
+            }
+       *[nom]
+            { $capitalization ->
+                [lower] λογαριασμός Waterfox
+               *[upper] Λογαριασμός Waterfox
             }
     }

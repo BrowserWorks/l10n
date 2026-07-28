@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = Ανανέωση καρτέλας
     .accesskey = Α
+reload-tab2 =
+    .label = Ανανέωση
+    .accesskey = Α
 select-all-tabs =
     .label = Επιλογή όλων των καρτελών
     .accesskey = Ε
@@ -24,8 +27,14 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = Αντιγραφή καρτέλας
     .accesskey = Α
+duplicate-tab2 =
+    .label = Αντιγραφή
+    .accesskey = Α
 duplicate-tabs =
     .label = Αντιγραφή καρτελών
+    .accesskey = Α
+duplicate-tabs2 =
+    .label = Αντιγραφή
     .accesskey = Α
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
@@ -52,9 +61,15 @@ reload-tabs =
 pin-tab =
     .label = Καρφίτσωμα καρτέλας
     .accesskey = ρ
+tab-context-pin-tab2 =
+    .label = Καρφίτσωμα
+    .accesskey = ρ
 unpin-tab =
     .label = Ξεκαρφίτσωμα καρτέλας
     .accesskey = κ
+tab-context-unpin-tab2 =
+    .label = Ξεκαρφίτσωμα
+    .accesskey = ρ
 pin-selected-tabs =
     .label = Καρφίτσωμα καρτελών
     .accesskey = Κ
@@ -67,9 +82,16 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = Προσθήκη σελιδοδείκτη…
     .accesskey = Π
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Σελιδοδείκτης
+    .accesskey = Σ
 tab-context-open-in-new-container-tab =
     .label = Άνοιγμα σε νέα θεματική καρτέλα
     .accesskey = ι
+tab-context-open-in-new-container-tab2 =
+    .label = Άνοιγμα σε νέα θεματική καρτέλα
+    .accesskey = ε
 move-to-start =
     .label = Μετακίνηση στην αρχή
     .accesskey = α
@@ -79,12 +101,23 @@ move-to-end =
 move-to-new-window =
     .label = Μετακίνηση σε νέο παράθυρο
     .accesskey = π
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Μετακίνηση στο { $profileName }
 tab-context-close-multiple-tabs =
     .label = Κλείσιμο πολλαπλών καρτελών
     .accesskey = π
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Κλείσιμο πολλαπλών
+    .accesskey = μ
 tab-context-close-duplicate-tabs =
     .label = Κλείσιμο διπλών καρτελών
     .accesskey = λ
+tab-context-close-duplicate-tabs2 =
+    .label = Κλείσιμο διπλότυπων καρτέλας
+    .accesskey = ω
 tab-context-share-url =
     .label = Κοινή χρήση
     .accesskey = χ
@@ -116,6 +149,13 @@ tab-context-close-n-tabs =
            *[other] Κλείσιμο { $tabCount } καρτελών
         }
     .accesskey = Κ
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Κλείσιμο
+           *[other] Κλείσιμο { $tabCount } καρτελών
+        }
+    .accesskey = Κ
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -123,6 +163,41 @@ tab-context-move-tabs =
            *[other] Μετακίνηση καρτελών
         }
     .accesskey = τ
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Μετακίνηση καρτέλας σε
+           *[other] Μετακίνηση { $tabCount } καρτελών σε
+        }
+    .accesskey = ν
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Μετακίνηση διαχωρισμένης προβολής σε
+    .accesskey = ν
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Αποστολή σε συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε συσκευή
+        }
+    .accesskey = π
+tab-context-send-to-device2 =
+    .label = Αποστολή στις συσκευές
+    .accesskey = π
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Αποστολή σε κινητή συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε κινητή συσκευή
+        }
+    .accesskey = π
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Δημιουργία κοινόχρηστου συνδέσμου
+    .accesskey = μ
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->
@@ -137,3 +212,7 @@ tab-context-unload-n-tabs =
            *[other] Εκφόρτωση { $tabCount } καρτελών
         }
     .accesskey = Ε
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Εκφόρτωση
+    .accesskey = φ

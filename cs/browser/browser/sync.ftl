@@ -20,6 +20,35 @@ fxa-menu-connect-another-device =
     .label = Připojit další zařízení…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Poslat do zařízení
+            [one] Poslat do zařízení
+            [few] Poslat { $tabCount } panely do zařízení
+            [many] Poslat { $tabCount } panelů do zařízení
+           *[other] Poslat { $tabCount } panelů do zařízení
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Odeslat do mobilu
+            [one] Odeslat do mobilu
+            [few] Odeslat { $tabCount } panely do mobilu
+            [many] Odeslat { $tabCount } panelů do mobilu
+           *[other] Odeslat { $tabCount } panelů do mobilu
+        }
+fxa-menu-send-to-mobile-device-missing2 = Nevidíte své zařízení?
+fxviewtabrow-send-to-mobile-not-verified = Účet není ověřen
+fxviewtabrow-send-to-mobile-verify-account = Ověřte svůj účet
+fxa-menu-send-to-mobile-turn-on-sync = Pro odeslání panelů zapněte synchronizaci
+fxa-menu-send-to-mobile-connect-device = Pro posílání panelů zařízení připojte
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -34,12 +63,11 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Pošle panel do jiného zařízení, na kterém jste přihlášeni.
 fxa-menu-sign-out =
     .label = Odhlásit se…
-fxa-menu-sync-title = Sync
 fxa-menu-sync-description = Získejte přístup ke svému webu odkudkoliv
 fxa-avatar-sign-in = Přihlásit se
 fxa-avatar-sign-up = Přihlásit se
 fxa-avatar-tooltip =
-    .tooltiptext = Přihlaste se ke svému účtu
+    .tooltiptext = Přihlaste se do svého účtu
 sync-setup-verify-continue = Pokračovat
 sync-setup-verify-title = Upozornění na sloučení
 sync-setup-verify-heading = Opravdu se chcete přihlásit k synchronizaci?
@@ -48,6 +76,10 @@ sync-setup-verify-heading = Opravdu se chcete přihlásit k synchronizaci?
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = K synchronizaci v tomto počítači byl dříve přihlášen jiný uživatel. Po přihlášení se záložky, hesla a další nastavení tohoto prohlížeče sloučí s účtem { $email }.
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Pro posílání panelů se přihlaste
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

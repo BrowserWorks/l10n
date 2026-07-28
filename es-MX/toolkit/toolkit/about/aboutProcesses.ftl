@@ -60,6 +60,20 @@ about-processes-inference-process = Inferencia ({ $pid })
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = Otro: { $type } ({ $pid })
 
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = privado
+about-processes-web-isolated-property-serviceworker = serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT deshabilitado
+about-processes-web-isolated-property-with-coop-coep = cross-origin aislado
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
+
 ## Isolated process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
@@ -131,6 +145,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Utilidades de Windows
 about-processes-utility-actor-windows-file-dialog = Diálogo de archivos de Windows
+about-processes-utility-actor-pkcs11-module = Asistente del módulo de seguridad
 
 ## Displaying CPU (percentage and total)
 ## Variables:

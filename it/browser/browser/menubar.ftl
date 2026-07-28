@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Preferenze
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Impostazioni…
+menu-application-set-as-default =
+    .label = Imposta { -brand-shorter-name } come browser predefinito
 menu-application-services =
     .label = Servizi
 menu-application-hide-this =
@@ -89,6 +82,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Condividi
     .accesskey = d
+menu-file-share-qrcode =
+    .label = Genera codice QR…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Genera codice QR
+    .accesskey = G
 menu-file-print-setup =
     .label = Imposta pagina…
     .accesskey = t
@@ -137,8 +136,6 @@ menu-view-history-button =
     .label = Cronologia
 menu-view-synced-tabs-sidebar =
     .label = Schede sincronizzate
-menu-view-megalist-sidebar =
-    .label = Password
 menu-view-full-zoom =
     .label = Zoom
     .accesskey = Z
@@ -258,6 +255,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (corrente)
+menu-profiles-menu =
+    .label = Profili
+    .accesskey = P
 
 ## Tools Menu
 
@@ -297,6 +297,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Informazioni sulla pagina
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Modifica PDF…
+    .accesskey = M
 menu-settings =
     .label = Impostazioni
     .accesskey =
@@ -359,4 +362,3 @@ menu-help-not-deceptive =
     .accesskey = e
 menu-report-broken-site =
     .label = Segnala problemi con il sito
-

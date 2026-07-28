@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Autoriser
     .accesskey = A
+permissions-add =
+    .label = Ajouter
+    .accesskey = A
 permissions-button-off =
     .label = Désactiver
     .accesskey = D
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Supprimer tous les sites
     .accesskey = u
+permissions-save-changes-2 =
+    .buttonlabelaccept = Enregistrer les modifications
+    .buttonaccesskeyaccept = E
 permission-dialog =
     .buttonlabelaccept = Enregistrer les modifications
     .buttonaccesskeyaccept = E
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Vous pouvez indiquer les sites web qui sont toujours ou ne sont jamais autorisés à utiliser des cookies ou des données de sites. Saisissez l’adresse exacte du site et cliquez sur Bloquer, Autoriser pour la session, ou Autoriser.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Exceptions - Effacer l’historique à la fermeture
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Vous pouvez spécifier quels sites web conserveront leurs données lorsque { -brand-short-name } efface l’historique à la fermeture. Saisissez l’adresse exacte du site que vous souhaitez gérer puis cliquez sur Autoriser.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Vous pouvez désactiver le mode HTTPS uniquement pour des sites web spécifiques. { -brand-short-name } n’essaiera pas de mettre à niveau vers une connexion HTTPS sécurisée pour ces sites. Les exceptions ne s’appliquent pas aux fenêtres privées.
 permissions-exceptions-https-only-desc2 = Vous pouvez désactiver le mode HTTPS uniquement pour des sites web spécifiques. { -brand-short-name } n’essaiera pas de mettre à niveau vers une connexion HTTPS sécurisée pour ces sites.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Sites autorisés - Popups et redirections tierces
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Vous pouvez spécifier quels sites web sont autorisés à ouvrir des fenêtres popup et être redirigés par des cadres tiers.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Les sites web suivants ont demandé l’accès à
 permissions-site-camera-disable-label =
     .label = Bloquer les nouvelles demandes d’accès à votre caméra
 permissions-site-camera-disable-desc = Cela empêchera tous les sites web non listés ci-dessus de demander l’autorisation d’accéder à votre caméra. Bloquer l’accès à votre caméra peut invalider les fonctionnalités de certains sites web.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Paramètres - Applications et services de l’appareil
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Ces sites web ont demandé à accéder aux applications et services de cet appareil. Vous avez la possibilité d’autoriser ou de bloquer l’accès à certains sites.
+permissions-site-localhost-disable-label =
+    .label = Bloquer les nouvelles demandes d’accès aux applications et services sur cet appareil
+permissions-site-localhost-disable-desc = Activer ce paramètre empêchera tous les sites web non listés ci-dessus de demander l’accès aux applications et services sur cet appareil. Certaines fonctionnalités de sites web pourraient ne plus fonctionner.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Paramètres - Appareils du réseau local
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Ces sites web ont demandé à accéder aux applications et services sur les appareils connectés à votre Wi-Fi ou à votre réseau local. Vous avez la possibilité d’autoriser ou de bloquer l’accès à certains sites.
+permissions-site-local-network-disable-label =
+    .label = Bloquer les nouvelles demandes d’accès aux applications et services sur les appareils connectés à votre réseau Wi-Fi ou à votre réseau local.
+permissions-site-local-network-disable-desc = Activer ce paramètre empêchera tous les sites web non listés ci-dessus de demander l’accès aux applications et aux services sur les appareils connectés à votre Wi-Fi ou à votre réseau local. Certaines fonctionnalités de sites web pourraient ne plus fonctionner.
 
 ## Site Permissions - Microphone
 

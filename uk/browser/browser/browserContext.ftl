@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Відкрити посилання в новій вкладці
     .accesskey = т
+main-context-menu-open-link-split-view =
+    .label = Відкрити посилання на розділеному екрані
+    .accesskey = к
 main-context-menu-open-link-container-tab =
     .label = Відкрити посилання в новій вкладці контейнера
     .accesskey = к
@@ -218,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Сховати елементи керування
     .accesskey = к
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = На весь екран
@@ -275,10 +278,6 @@ main-context-menu-image-desc =
 main-context-menu-visual-search-2 =
     .label = Пошук зображення за допомогою { $engine }
     .accesskey = з
-# Variables
-#   $engine (String) - Name of the search engine that will perform the search.
-main-context-menu-visual-search =
-    .label = Пошук зображення за допомогою { $engine }
 main-context-menu-video-save-as =
     .label = Зберегти відео як…
     .accesskey = в
@@ -294,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Переслати аудіо…
     .accesskey = с
+main-context-menu-send-to-device-2 =
+    .label = Надіслати на пристрій
+    .accesskey = Н
+main-context-menu-send-to-mobile-2 =
+    .label = Надіслати на мобільний
+    .accesskey = м
+main-context-menu-send-to-mobile-sign-in = Увійдіть, щоб надсилати вкладки
+main-context-menu-send-to-mobile-enable-sync2 = Увімкніть синхронізацію, щоб надіслати вкладку
+main-context-menu-send-to-mobile-connect-phone2 = Під'єднайте свій телефон
+main-context-menu-send-to-mobile-device-missing2 = Не бачите свій пристрій?
+main-context-menu-send-to-mobile-sign-in-from-link = Увійдіть, щоб надіслати посилання
+main-context-menu-send-to-mobile-sign-in-from-page = Увійдіть, щоб надіслати сторінку
+main-context-menu-send-to-mobile-enable-sync3 = Увімкніть синхронізацію, щоб надсилати вкладки
+main-context-menu-send-to-mobile-enable-sync-from-link = Увімкніть синхронізацію, щоб надіслати посилання
+main-context-menu-send-to-mobile-enable-sync-from-page = Увімкніть синхронізацію, щоб надіслати сторінку
+main-context-menu-send-to-mobile-connect-phone3 = Під'єднайте пристрій, щоб надсилати вкладки
+main-context-menu-send-to-mobile-connect-phone-from-link = Під'єднайте пристрій, щоб надіслати посилання
+main-context-menu-send-to-mobile-connect-phone-from-page = Під'єднайте пристрій, щоб надіслати сторінку
 main-context-menu-save-to-pocket =
     .label = Зберегти сторінку в { -pocket-brand-name }
     .accesskey = с
@@ -334,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Надіслати посилання на пристрій
     .accesskey = Н
+main-context-menu-link-send-to-mobile =
+    .label = Надіслати посилання на мобільний
+    .accesskey = с
 main-context-menu-frame =
     .label = У цьому фреймі
     .accesskey = ь
@@ -403,3 +423,11 @@ main-context-menu-reveal-password =
     .accesskey = П
 # The label of a badge shown in menu items to call out new features.
 main-context-menu-new-feature-badge = Нове
+main-context-menu-pdfjs-copy-page =
+    .label = Копіювати сторінку
+main-context-menu-pdfjs-cut-page =
+    .label = Вирізати сторінку
+main-context-menu-pdfjs-delete-page =
+    .label = Видалити сторінку
+main-context-menu-pdfjs-save-page =
+    .label = Зберегти вибране як…

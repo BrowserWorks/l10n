@@ -5,11 +5,11 @@
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Parte desta página travou.</strong> Para deixar o { -brand-product-name } ter conhecimento deste problema e corrigir mais rápido, envie um relatório.
+crashed-subframe-message = <strong>Parte desta página falhou.</strong> Para deixar o { -brand-product-name } ter conhecimento deste problema e corrigir mais rápido, envie um relatório.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
-    .title = Parte desta página travou. Envie um relatório para o { -brand-product-name } tomar conhecimento deste problema e corrigir mais rápido.
+    .title = Parte desta página falhou. Envie um relatório para o { -brand-product-name } tomar conhecimento deste problema e corrigir mais rápido.
 crashed-subframe-learnmore-link =
     .value = Saiba mais
 crashed-subframe-submit =
@@ -22,8 +22,8 @@ crashed-subframe-submit =
 #   $reportCount (Number): the number of pending crash reports
 pending-crash-reports-message =
     { $reportCount ->
-        [one] Você tem um relatório de travamento não enviado
-       *[other] Você tem { $reportCount } relatórios de travamento não enviados
+        [one] Você tem um relatório de falha não enviado
+       *[other] Você tem { $reportCount } relatórios de falha não enviados
     }
 pending-crash-reports-view-all =
     .label = Ver
@@ -48,3 +48,10 @@ requested-crash-reports-message =
 requested-crash-reports-dont-show-again =
     .label = Não mostrar novamente
     .accesskey = N
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+pending-crash-reports-message-new =
+    { $reportCount ->
+        [one] Você tem um relatório de falha recente não enviado
+       *[other] Você tem { $reportCount } relatórios de falha recentes não enviados
+    }

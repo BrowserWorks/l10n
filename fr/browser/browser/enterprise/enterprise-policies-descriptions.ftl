@@ -1,0 +1,13 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+policy-BlocklistDomainBrowsedTelemetry = Activer et configurer l’enregistrement des évènements de sécurité lorsque { -brand-short-name } bloque la visite d’un domaine présent sur la liste de blocage.
+policy-DownloadTelemetry = Activer et configurer l’enregistrement des évènements de sécurité lorsqu’un téléchargement est déclenché.
+policy-EnterpriseStorageEncryption = Activer la gestion du mot de passe principal par l’entreprise pour le stockage chiffré.
+policy-PrintPageTelemetry = Activer et configurer l’enregistrement des évènements de sécurité lorsqu’une impression est lancée.
+policy-Sync = Activer ou désactiver la synchronisation et déterminer quelles données inclure.
+policy-CrashReportsSubmit = Configurer les paramètres d’envoi des rapports de plantage.
+policy-AIChatbot = Configurer les fournisseurs de chatbot IA disponibles, le fournisseur par défaut et les fonctionnalités liées aux prompts.
+policy-AccessConnector = Configurer un connecteur d’accès pour l’acheminement du trafic web par proxy.
+policy-AccessConnector2 = Paramétrez le { -enterprise-feature-access-connector } afin de rediriger le trafic web via un proxy.

@@ -56,16 +56,16 @@ places-by-day-and-site =
     .label = 按日期和网站
     .accesskey = t
 places-history-search =
-    .placeholder = 在历史记录中搜索
+    .placeholder = 搜索历史记录
 places-history =
     .aria-label = 历史
 places-bookmarks-search =
     .placeholder = 搜索书签
 places-delete-domain-data =
-    .label = 清除此网站相关信息
+    .label = 抹去此网站相关数据
     .accesskey = F
 places-forget-domain-data =
-    .label = 忘记此网站…
+    .label = 抹去此网站相关数据…
     .accesskey = F
 places-sortby-name =
     .label = 按名称排序
@@ -124,8 +124,8 @@ places-delete-bookmark =
 places-create-bookmark =
     .label =
         { $count ->
-            [1] 将页面加入书签…
-           *[other] 将页面加入书签…
+            [1] 为页面添加书签…
+           *[other] 为页面添加书签…
         }
     .accesskey = B
 places-untag-bookmark =
@@ -134,11 +134,11 @@ places-untag-bookmark =
 places-manage-bookmarks =
     .label = 管理书签
     .accesskey = M
-places-forget-about-this-site-confirmation-title = 清除此网站相关信息
+places-forget-about-this-site-confirmation-title = 抹去此网站相关数据
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = 此操作将移除与 { $hostOrBaseDomain } 相关的数据，包括历史记录、Cookie、缓存和内容首选项。书签和密码将会保留。您确定要继续吗？
-places-forget-about-this-site-forget = 清除
+places-forget-about-this-site-forget = 抹去
 places-library3 =
     .title = 我的足迹
 places-organize-button =
@@ -262,3 +262,8 @@ places-search-downloads =
 ##
 
 places-locked-prompt = 由于某个 { -brand-short-name } 的文件正被其他应用程序使用，书签和历史记录系统无法运行。某些安全软件可能引起这类问题。
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder2 =
+    .label = 分享文件夹
+    .badge = 新

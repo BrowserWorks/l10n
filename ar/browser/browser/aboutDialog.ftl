@@ -6,29 +6,43 @@ aboutDialog-title =
     .title = عن { -brand-full-name }
 releaseNotes-link = ما الجديد
 update-checkForUpdatesButton =
-    .label = التمس التحديثات
+    .label = تحقق مِن التحديثات
     .accesskey = ت
 update-updateButton =
     .label = أعد التشغيل لتحديث { -brand-shorter-name }
     .accesskey = د
-update-checkingForUpdates = جاري مراجعة التحديثات…
+update-checkingForUpdates = يتحقق مِن التحديثات…
+settings-update-checking-for-updates =
+    .label = يتحقق مِن التحديثات…
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
 
 settings-update-downloading = <img data-l10n-name="icon"/>جارِ تنزيل التحديث — <label data-l10n-name="download-status">{ $transfer }</label>
 aboutdialog-update-downloading = جارِ تنزيل التحديث — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading-2 =
+    .label = جارِ تنزيل التحديث — { $transfer }
 
 ##
 
 update-applying = يطبّق التحديث…
+settings-update-applying =
+    .label = يطبّق التحديث…
 update-failed = فشل التحديث. <label data-l10n-name="failed-link">نزّل أحدث نسخة</label>
 update-failed-main = فشل التحديث. <a data-l10n-name="failed-link-main">نزّل أحدث نسخة</a>
 update-adminDisabled = عطّلَ مدير النظام التحديثات
 update-policy-disabled = التحديثات مُعطَّلة بواسطة منظّمتك
+settings-update-policy-disabled =
+    .label = التحديثات مُعطَّلة بواسطة منظّمتك
 update-noUpdatesFound = { -brand-short-name } مُحدَّث
-aboutdialog-update-checking-failed = فشل التماس التحديثات.
+settings-update-no-updates-found =
+    .label = { -brand-short-name } مُحدَّث
+aboutdialog-update-checking-failed = فشل التحقق مِن التحديثات.
+settings-update-checking-failed =
+    .label = فشل التحقق مِن التحديثات.
 update-otherInstanceHandlingUpdates = يجري تحديث { -brand-short-name } في سيرورة أخرى
+settings-update-other-instance-handling-updates =
+    .label = يجري تحديث { -brand-short-name } في سيرورة أخرى
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -36,15 +50,19 @@ update-otherInstanceHandlingUpdates = يجري تحديث { -brand-short-name } 
 aboutdialog-update-manual-with-link = التحديثات متاحة في <label data-l10n-name="manual-link">{ $displayUrl }</label>
 settings-update-manual-with-link = التحديثات متاحة في <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = لا يمكنك إجراء أي تحديثات أخرى على هذا النظام. <label data-l10n-name="unsupported-link">اطّلع على المزيد</label>
+settings-update-unsupported = لا يمكنك إجراء أي تحديثات أخرى على هذا النظام. <a data-l10n-name="unsupported-link">اطّلع على المزيد</a>
 update-restarting = يُعيد التشغيل…
+settings-update-restarting =
+    .label = يُعيد التشغيل…
 update-internal-error2 = تعذر التحقق من وجود تحديثات بسبب خطأ داخلي. التحديثات متاحة في <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-internal-error = تعذر التحقق من وجود تحديثات بسبب خطأ داخلي. التحديثات متاحة في <a data-l10n-name="manual-link">{ $displayUrl }</a>
 
 ##
 
 # Variables:
 #   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
 aboutdialog-channel-description = تتلقى التحديثات حاليًا من قناة <label data-l10n-name="current-channel">{ $channel }</label>.
-warningDesc-version = { -brand-short-name } تجريبي و قد لا يكون مستقرا.
+warningDesc-version = { -brand-short-name } تجريبي وقد لا يكون مستقرًا.
 aboutdialog-help-user = مساعدة { -brand-product-name }
 aboutdialog-submit-feedback = أرسِل انطباعاتك
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> هي <label data-l10n-name="community-exp-creditsLink">مجتمعٌ عالميّ</label> يعمل للمحافظة على انفتاح الوب و عموميتها و إتاحتها للجميع.

@@ -31,6 +31,14 @@
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-mdn-brand-name = MDN Web Docs
+-yelp-brand-name = Yelp
+
+##
+
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
 # The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
@@ -42,12 +50,13 @@
 # and kept in English.
 -firefox-home-brand-name =
     { $case ->
-       *[nominative] Домашняя страница Waterfox
-        [genitive] Домашней страницы Waterfox
-        [dative] Домашнюю страницу Waterfox
-        [accusative] Домашнюю страницу Waterfox
-        [instrumental] Домашней страницей Waterfox
-        [prepositional] Домашней странице Waterfox
+        [nominative_uppercase] Домашняя страница Waterfox
+        [genitive] домашней страницы Waterfox
+        [dative] домашнюю страницу Waterfox
+        [accusative] домашнюю страницу Waterfox
+        [instrumental] домашней страницей Waterfox
+        [prepositional] домашней странице Waterfox
+       *[nominative] домашняя страница Waterfox
     }
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
@@ -57,5 +66,26 @@
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs
--solo-ai-brand-name = Solo
-
+-smart-window-brand-name =
+    { $plural-form ->
+        [true]
+            { $case ->
+                [nominative_uppercase] Умные окна
+                [genitive] Умных окон
+                [dative] Умным окнам
+                [accusative] Умные окна
+                [instrumental] Умными окнами
+                [prepositional] Умных окнах
+               *[nominative] Умные окна
+            }
+       *[false]
+            { $case ->
+                [nominative_uppercase] Умное окно
+                [genitive] Умного окна
+                [dative] Умному окну
+                [accusative] Умное окно
+                [instrumental] Умным окном
+                [prepositional] Умном окне
+               *[nominative] Умное окно
+            }
+    }

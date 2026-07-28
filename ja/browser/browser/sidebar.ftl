@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = AI チャットボット
 menu-view-contextual-password-manager =
     .label = パスワード
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = タブを開く
 sidebar-options-menu-button =
     .title = メニューを開く
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = サイドバーのサイズを変更
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = 履歴から削除します
 sidebar-history-clear =
     .label = 履歴を消去
+sidebar-history-sort-by-heading-menucaption =
+    .label = 並べ替え:
 sidebar-history-sort-by-heading = 並べ替え:
 sidebar-history-sort-option-date =
     .label = 日付
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = { -brand-short-name } の設定を管理
 sidebar-vertical-tabs =
     .label = 垂直タブ
+sidebar-settings2 =
+    .label = 設定
 sidebar-settings =
     .label = サイドバー設定
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = カーソルを合わせた時にサイドバーを展開する
-sidebar-manage-extensions = 拡張機能を管理
+sidebar-manage-extensions2 = すべての拡張機能を管理
+sidebar-customize-extensions-header2 = 拡張機能
+sidebar-customize-firefox-tools-header2 =
+    .label = ツール
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = 選択したページを履歴から削除
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = ブックマークを編集...
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = ブックマークを削除
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = 削除
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = 履歴
 sidebar-menu-synced-tabs-label =
     .label = 他の端末からのタブ
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = タブを開く
 sidebar-menu-bookmarks-label =
     .label = ブックマーク
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = 履歴
 sidebar-menu-syncedtabs-header =
     .heading = 他の端末からのタブ
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = タブを開く
 sidebar-menu-cpm-header =
     .heading = パスワード
+sidebar-menu-bookmarks-header =
+    .heading = ブックマーク
 sidebar-panel-header-close-button =
     .tooltiptext = 閉じる
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = ブックマークメニュー
+sidebar-bookmarks-folder-toolbar = ブックマークツールバー
+sidebar-bookmarks-folder-other = 他のブックマーク
+sidebar-bookmarks-folder-mobile = モバイルのブックマーク
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = サイドバーのカスタマイズ
 sidebar-history-title = 履歴
 sidebar-syncedtabs-title = 他の端末からのタブ
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = タブを開く
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = ピン留めしたタブ
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = ウィンドウ { $winID } (現在)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = ウィンドウ { $winID }
+sidebar-bookmarks-title = ブックマーク
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = サイドバーを隠します ({ $shortcut })
     .label = サイドバー
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = 重要なタブをここにドラッグして、手の届くところに置きましょう

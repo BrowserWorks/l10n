@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = ウェブページの表示
 experimental-features-group-customize-browsing =
     .label = ブラウジングのカスタマイズ
+experimental-features-group-productivity =
+    .label = 生産性
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } のウィジェット
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = サイドバーでパスワード管理
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = 新しいタブストーリーのトピックセクションとフォロー/ブロック
 experimental-features-newtab-sections-follow-block-description = 新しいタブページのストーリーを簡単に見つけられるように、分類された各トピック (スポーツ、食べ物、娯楽など) のセクションに整理しましょう。新しいフォロー/ブロックのコントロールで、表示されるコンテンツをカスタマイズできます。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = タスクバーにサイトを追加
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = よく訪れるサイトをウェブアプリとしてタスクバーから開きます。アドレスバー右端の [タブをタスクバーに追加] アイコンをクリックして、そのサイトを { -brand-product-name } の保護機能下にあるウィンドウとして起動できます。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = { -firefox-home-brand-name } の ToDo リスト
+experimental-features-newtab-widget-lists-new =
+    .label = ToDo リスト
+experimental-features-newtab-widget-lists-description = 新しいタブを開いたら ToDo リストを見て思い出しましょう。旅行の荷造りから買い物リストまで、{ -brand-product-name } で計画を立てられます。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = { -firefox-home-brand-name } のタイマー
+experimental-features-newtab-widget-timer-new =
+    .label = タイマー
+experimental-features-newtab-widget-timer-description = タイマーをセットしたら、よそ見をしないで作業に集中。休憩も忘れずに。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = { -firefox-home-brand-name } の ToDo リストとタイマー
+experimental-features-newtab-widget-lists-and-timer-description = 新しいタブを開いたら ToDo リストを見て思い出しましょう。旅行の荷造りから買い物リストまで、{ -brand-product-name } で計画を立てられます。タイマーをセットしたら、よそ見をしないで作業に集中。休憩も忘れずに。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 天気予報
+experimental-features-newtab-widget-weather-description = 今日の天気を時間ごとに見てみましょう。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 今日の一枚
+experimental-features-newtab-widget-picture-of-the-day-description = 毎日の生活にちょっとした驚きを添えます。新しい写真を入手し、興味のあることを学び、新しい壁紙を設定しましょう。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 時計
+experimental-features-newtab-widget-clocks-description = 最大 4 個までの時計を追加できます。気になる場所の時刻を確認しましょう。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = セマンティック履歴検索
+experimental-features-semantic-history-search-description = ローカルの機械学習モデルを使用して、{ -brand-product-name } のアドレスバーで履歴から検索に関連するエントリーを自然言語理解に基づいて提案します。<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Tab Notes
+experimental-features-tab-notes =
+    .label = タブノート
+experimental-features-tab-notes-description = タブノートは付箋をブラウザーのタブに追加できる実験的な機能です。後で開いた時に思い出せるように、状況や備忘録、次の手順などをメモしてください。この機能を改善し続けられるように、<a data-l10n-name="connect">フィードバックを共有してください</a>。
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = 簡素化されたタブメニュー
+experimental-features-tab-context-menu-description = タブを右クリックするとシンプルなコンテキストメニューが表示されます。これは共通の操作が簡単に見つけられるように設計されました。<a data-l10n-name="connect">フィードバックを共有してください</a>。

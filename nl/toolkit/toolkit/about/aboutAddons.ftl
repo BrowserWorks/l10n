@@ -124,6 +124,8 @@ private-browsing-description2 =
     de extensie niet tijdens privénavigatie, en heeft deze daarin geen toegang tot uw online-activiteiten.
     Deze wijziging is aangebracht om uw privénavigatie privé te houden.
     <label data-l10n-name="private-browsing-learn-more">Meer info over het beheren van extensie-instellingen</label>
+aboutaddons-sidebar =
+    .heading = Add-ons
 addon-category-discover = Aanbevelingen
 addon-category-discover-title =
     .title = Aanbevelingen
@@ -174,6 +176,8 @@ extensions-warning-update-security-button = Inschakelen
 extensions-warning-imported-addons2 =
     .message = Voltooi de installatie van extensies die zijn geïmporteerd naar { -brand-short-name }.
 extensions-warning-imported-addons-button = Extensies installeren
+extensions-warning-safe-mode3 =
+    .message = Alle add-ons zijn uitgeschakeld door de Probleemoplossingsmodus.
 
 ## Strings connected to add-on updates
 
@@ -294,6 +298,10 @@ colorway-removal-notice-message =
         de add-onswebsite.
 colorway-removal-notice-learn-more = Meer info
 colorway-removal-notice-button = Bijgewerkte kleurstellingenthema’s verkrijgen
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Uw contrastinstellingen van Windows hebben voorrang op { -brand-short-name }-thema’s. Schakel deze instellingen uit om thema’s in { -brand-short-name } te gebruiken.
 privacy-policy = Privacybeleid
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -478,11 +486,18 @@ available-updates-heading = Beschikbare updates
 recent-updates-heading = Recente updates
 release-notes-loading = Laden…
 release-notes-error = Sorry, maar er is een fout opgetreden bij het laden van de uitgaveopmerkingen.
+addon-permissions-heading = Toestemmingen
 addon-permissions-empty2 = Voor deze extensie zijn geen toestemmingen vereist.
+addon-permissions-required-label = Vereist:
+addon-permissions-optional-label = Optioneel:
 addon-permissions-empty = Voor deze extensie zijn geen toestemmingen vereist
 addon-permissions-required = Vereiste toestemmingen voor kernfunctionaliteit:
 addon-permissions-optional = Optionele toestemmingen voor extra functionaliteit:
 addon-permissions-learnmore = Meer info over toestemmingen
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Sommige machtigingen worden door uw organisatie beheerd.
 recommended-extensions-heading = Aanbevolen extensies
 recommended-themes-heading = Aanbevolen thema’s
 # Variables:
@@ -537,9 +552,15 @@ details-notification-hard-blocked-other =
     .message = Deze add-on is geblokkeerd wegens schending van het beleid van BrowserWorks en is uitgeschakeld.
 details-notification-unsigned-link = Meer informatie
 details-notification-blocked = { $name } is uitgeschakeld vanwege beveiligings- of stabiliteitsproblemen.
-details-notification-blocked2 =
-    .message = { $name } is uitgeschakeld vanwege beveiligings- of stabiliteitsproblemen.
 details-notification-blocked-link2 = Details bekijken
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Deze extensie is beperkt en is uitgeschakeld. U kunt hem inschakelen, maar dit kan riskant zijn.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Deze extensie is beperkt. Het gebruik ervan kan riskant zijn.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Deze add-on is beperkt en is uitgeschakeld. U kunt hem inschakelen, maar dit kan riskant zijn.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Deze add-on is beperkt. Het gebruik ervan kan riskant zijn.
 details-notification-soft-blocked-extension-disabled =
     .message = Deze extensie beperkt wegens schending van het beleid van BrowserWorks en is uitgeschakeld. U kunt hem inschakelen, maar dit kan riskant zijn.
 details-notification-soft-blocked-extension-enabled =
@@ -551,8 +572,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Details bekijken
 details-notification-blocked-link = Meer informatie
 details-notification-softblocked = { $name } staat bekend als veroorzaker van beveiligings- of stabiliteitsproblemen.
-details-notification-softblocked2 =
-    .message = { $name } staat bekend als veroorzaker van beveiligings- of stabiliteitsproblemen.
 details-notification-softblocked-link = Meer informatie
 details-notification-gmp-pending = { $name } zal straks worden geïnstalleerd.
 details-notification-gmp-pending2 =
@@ -578,6 +597,10 @@ permissions-data-addon-button = Toestemmingen en gegevens
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Gebruikt door de extensie { $extensionName }
+addon-permissions-data-collection-heading = Gegevensverzameling
+addon-permissions-data-collection-empty = De ontwikkelaar zegt dat deze extensie geen gegevensverzameling vereist.
+addon-data-collection-provided = Info verstrekt door de extensieontwikkelaar
+addon-data-collection-learnmore = Meer info over gegevensverzameling
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -586,6 +609,7 @@ mlmodel-link-preview = { -brand-short-name } gebruikt dit om belangrijke punten 
 mlmodel-pdfjs = { -brand-short-name } gebruikt dit om alternatieve tekst te maken voor afbeeldingen die u aan PDF’s toevoegt
 mlmodel-smart-tab-topic-engine = { -brand-short-name } gebruikt dit om namen voor uw tabbladgroepen voor te stellen
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } gebruikt dit om tabbladen voor uw tabbladgroepen voor te stellen
+mlmodel-formfill-engine = { -brand-short-name } gebruikt dit om te helpen bij het invullen van adresformulieren
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = AI op apparaat
 addon-category-mlmodel-title =

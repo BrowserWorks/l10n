@@ -6,10 +6,12 @@ safeb-blocked-phishing-page-title = Это поддельный сайт
 safeb-blocked-malware-page-title = Посещение этого веб-сайта может причинить вред вашему компьютеру
 safeb-blocked-unwanted-page-title = Этот сайт может содержать нежелательные программы
 safeb-blocked-harmful-page-title = Этот сайт может содержать вредоносные программы
+safeb-blocked-addon-page-title = Сайт заблокирован для вашей безопасности
 safeb-blocked-phishing-page-short-desc = { -brand-short-name } заблокировал эту страницу, потому что она может попытаться обманом заставить вас произвести опасные действия, например установить программу или раскрыть личную информацию, такую как пароли или реквизиты банковских карт.
 safeb-blocked-malware-page-short-desc = { -brand-short-name } заблокировал эту страницу, потому что она может попытаться установить вредоносные программы, которые могут украсть или удалить личную информацию на вашем компьютере.
 safeb-blocked-unwanted-page-short-desc = { -brand-short-name } заблокировал эту страницу, потому что она может попытаться обманом заставить вас установить программы, которые будут мешать вашей работе в браузере (например, менять стартовую страницу или показывать дополнительную рекламу на сайтах).
 safeb-blocked-harmful-page-short-desc = { -brand-short-name } заблокировал эту страницу, потому что она может попытаться установить опасные программы, которые украдут или удалят вашу информацию (например, фотографии, пароли, сообщения и реквизиты банковских карт).
+safeb-blocked-addon-page-short-desc = { -brand-short-name } заблокировал эту страницу, так как одно из ваших дополнений попыталось её открыть. Этот сайт может быть использован для кражи вашей информации, например, паролей или номеров банковских карт.
 # Variables:
 #   $advisoryname (string) - Name of the advisory entity
 safeb-palm-advisory-desc = Информация получена от <a data-l10n-name='advisory_provider'>{ $advisoryname }</a>.
@@ -62,3 +64,13 @@ safeb-blocked-harmful-page-learn-more = Узнайте больше о Защи�
 safeb-palm-notdeceptive =
     .label = Это не поддельный сайт…
     .accesskey = е
+
+## Variables:
+##  $addonName (string) - the name of the harmful add-on
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-addon-page-error-desc-override = <strong>Почему был заблокирован этот сайт?</strong>
+safeb-blocked-addon-page-error-desc2-override = <strong>{ $sitename }</strong> может быть связан с вводящей в заблуждение и вредоносной активностью.
+safeb-blocked-addon-page-error-desc3-override = <strong>Что вы можете сделать?</strong>
+safeb-blocked-addon-page-error-desc4-override = Чтобы это больше не повторилось, вы можете удалить или отключить «<strong>{ $addonName }</strong>» в about:addons.
+safeb-blocked-addon-page-learn-more3 = <a data-l10n-name='firefox_support_harmful_addons'>Узнайте больше о защите от вредоносных дополнений в { -brand-short-name }</a>.

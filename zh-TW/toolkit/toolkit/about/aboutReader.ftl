@@ -58,7 +58,7 @@ about-reader-toolbar-close = 關閉閱讀畫面
 about-reader-toolbar-type-controls = 字體控制
 about-reader-toolbar-text-layout-controls = 文字與版面
 about-reader-toolbar-theme-controls = 佈景主題
-about-reader-toolbar-savetopocket = 儲存到 { -pocket-brand-name }
+about-reader-toolbar-savetopocket = 儲存至 { -pocket-brand-name }
 
 ## Reader View colors menu
 
@@ -70,16 +70,6 @@ about-reader-customtheme-tab = 自訂
 ## The .title element is used to make the editing functionality
 ## clear and give context for screen reader users.
 
-about-reader-custom-colors-foreground = 文字
-    .title = 編輯色彩
-about-reader-custom-colors-background = 背景
-    .title = 編輯色彩
-about-reader-custom-colors-unvisited-links = 未拜訪鏈結
-    .title = 編輯色彩
-about-reader-custom-colors-visited-links = 已拜訪鏈結
-    .title = 編輯色彩
-about-reader-custom-colors-selection-highlight = 為閱讀功能加上強調效果
-    .title = 編輯色彩
 about-reader-reset-button = 重設為預設值
 about-reader-custom-colors-foreground2 =
     .label = 文字

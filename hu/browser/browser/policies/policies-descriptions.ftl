@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Állítson be házirendeket, amelyeket a WebExtensionök a chrome.storage.managed segítségével érhetnek el.
+policy-AIControls = MI-vezérlők beállítása.
 policy-AllowedDomainsForApps = Adja meg azokat a domaineket, amelyek hozzáférhetnek a Google Workspace-hez.
 policy-AllowFileSelectionDialogs = Fájlválasztó párbeszédablakok engedélyezése.
 policy-AppAutoUpdate = Az automatikus alkalmazásfrissítés engedélyezése vagy letiltása.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Automatikus címkitöltés engedélyezése.
 policy-AutofillCreditCardEnabled = Fizetési módok automatikus kitöltésének engedélyezése.
 policy-AutoLaunchProtocolsFromOrigins = Adjon meg egy listát azokról a külső protokollokról, amelyek a felhasználó megkérdezése nélkül használhatók a felsorolt eredetektől.
 policy-BackgroundAppUpdate2 = Engedélyezze vagy tiltsa le a háttérfrissítőt.
+policy-Backup = Profiladatok biztonsági mentésének vagy helyreállításának letiltása.
 policy-BlockAboutAddons = Hozzáférés blokkolása a Kiegészítőkezelőhöz (about:addons).
 policy-BlockAboutConfig = Hozzáférés blokkolása az about:config oldalhoz.
 policy-BlockAboutProfiles = Hozzáférés blokkolása az about:profiles oldalhoz.
@@ -35,6 +37,7 @@ policy-Containers = A konténerekhez kapcsolódó házirendek beállítása.
 policy-DisableAccounts = Fiókalapú szolgáltatások, köztük a szinkronizálás letiltása.
 policy-DisabledCiphers = Titkosítási módok letiltása.
 policy-DefaultDownloadDirectory = Az alapértelmezett letöltési könyvtár beállítása.
+policy-DefaultSerialGuardSetting = A Serial API használatának irányítása.
 policy-DisableAppUpdate = A böngésző frissítésének megakadályozása.
 policy-DisableBuiltinPDFViewer = A PDF.js-nek, a { -brand-short-name } beépített PDF-megjelenítőjének letiltása.
 policy-DisableDefaultBrowserAgent = Akadályozza meg, hogy az alapértelmezett böngésző-ügynök bármilyen műveletet végezzen. Csak Windowsra vonatkozik, más platformokon nincs meg ez az ügynök.
@@ -55,6 +58,8 @@ policy-DisablePocket2 = A weboldalak { -pocket-brand-name }be mentését biztos�
 policy-DisablePrivateBrowsing = Privát böngészés letiltása.
 policy-DisableProfileImport = A más böngészőből történő adatimportálás parancsok letiltása.
 policy-DisableProfileRefresh = A { -brand-short-name } felfrissítése gomb letiltása az about:support oldalon.
+policy-DisableRemoteImprovements = Megakadályozza, hogy a { -brand-short-name } teljesítményt, stabilitást és funkciókat érintő változtatásokat hajtson végre a frissítések között.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Távoli beállítások letiltása.
 policy-DisableSafeMode = Az Újraindítás letiltott kiegészítőkkel funkció letiltása. Megjegyzés: a kiegészítők nélküli indításhoz használható Shift billentyű csak Windowson tiltható le csoportházirend segítségével.
 policy-DisableSecurityBypass = Annak a megakadályozása, hogy a felhasználó átugorjon bizonyos biztonsági figyelmeztetéseket.
 policy-DisableSetAsDesktopBackground = A Beállítás háttérképként menüparancs letiltása a képeknél.
@@ -79,6 +84,7 @@ policy-ExtensionSettings = Kezelje a kiegészítők telepítésének összes von
 policy-ExtensionUpdate = Az automatikus kiegészítőfrissítések engedélyezése vagy letiltása.
 policy-FirefoxHome2 = A { -firefox-home-brand-name } beállítása.
 policy-FirefoxSuggest = A { -firefox-suggest-brand-name } beállítása.
+policy-GenerativeAI = Generatív MI funkciók beállítása.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = A közvetlen intranetes navigáció kényszerítése a keresés helyett, amikor egyetlen szót ír be a címsorba.
 policy-Handlers = Alapértelmezett alkalmazáskezelők beállítása
 policy-HardwareAcceleration = Ha hamis, akkor kikapcsolja a hardveres gyorsítást.
@@ -87,6 +93,7 @@ policy-Homepage = A kezdőlap beállítása, és választható módon, annak zá
 policy-HttpAllowlist = Eredetek, amelyek nem lesznek HTTPS-re frissítve.
 policy-HttpsOnlyMode = A Csak HTTPS mód bekapcsolásának engedélyezése.
 policy-InstallAddonsPermission = Bizonyos weboldalak telepíthetnek kiegészítőket.
+policy-IPProtectionAvailable = A beépített VPN megakadályozása, hogy a felhasználók elérjék.
 policy-LegacyProfiles = A funkció letiltása, amely kikényszeríti, hogy minden telepítés külön profilt használjon
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = A sütik örökölt Sa
 ##
 
 policy-LocalFileLinks = Lehetővé teszi, hogy bizonyos webhelyek helyi fájlokra hivatkozzanak.
+policy-LocalNetworkAccess = Helyi hálózati hozzáférési ellenőrzések engedélyezése vagy letiltása.
 policy-ManagedBookmarks = Beállítja a rendszergazda által kezelt könyvjelzők listáját, amelyet a felhasználó nem módosíthat.
 policy-ManualAppUpdateOnly = Csak a kézi frissítések engedélyezése, és ne értesítse a felhasználót a frissítésekről.
 policy-PrimaryPassword = Elsődleges jelszó használatának előírása vagy megakadályozása.
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = Kvantumszámítógép-biztos kulcsmegál
 policy-PDFjs = A PDF.js-nek, a { -brand-short-name } beépített PDF-megjelenítőjének, letiltása vagy beállítása.
 policy-Permissions2 = A kamera, mikrofon, helyadatok, értesítések és automatikus lejátszás jogosultságának beállítása.
 policy-PictureInPicture = Kép a képben engedélyezése vagy letiltása.
+policy-PopupBlocking2 = Engedélyezés, hogy bizonyos weboldalak felugró ablakokat jelenítsenek meg, és harmadik féltől származó keretek átirányítsák őket.
 policy-PopupBlocking = Bizonyos weboldalak alapértelmezetten jeleníthessenek meg felugró ablakokat.
 policy-Preferences = Értékek beállítása és zárolása a beállítások egy részhalmazánál.
 policy-PrivateBrowsingModeAvailability = A privát böngészési mód elérhetőségének beállítása.
 policy-PromptForDownloadLocation = Kérdezze meg, hogy hová legyenek letöltve a fájlok.
 policy-Proxy = Proxy-beállítások konfigurálása.
+policy-RelaunchRequired = A { -brand-short-name } egy adott időn belüli újraindításának megkövetelése, és a felhasználó értesítése a közelgő újraindításról.
 policy-RequestedLocales = Adja meg a kért területi beállításokat az alkalmazásnak, az Ön által előnyben részesített sorrendben.
 policy-SanitizeOnShutdown2 = Navigációs adatok törlése leállításkor.
 policy-SearchBar = A keresősáv alapértelmezett helyének megadása. A felhasználó továbbra is testreszabhatja.
@@ -130,6 +140,7 @@ policy-SearchSuggestEnabled = A keresési javaslatok engedélyezése vagy letilt
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11 modulok hozzáadása vagy törlése.
 policy-ShowHomeButton = A kezdőoldal gomb megjelenítése az eszköztáron.
+policy-SitePolicies = Webhelyfüggő házirendek.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = Indításkor ne jelenítse meg a felhasználási feltételeket és az adatvédelmi nyilatkozatot. Ön kijelenti, hogy elfogadja a felhasználási feltételeket, és felhatalmazással rendelkezik arra, hogy elfogadja azok nevében is, akiknek hozzáférést biztosít a böngészőhöz.
 policy-SSLVersionMax = A legmagasabb SSL verzió beállítása.
@@ -139,8 +150,11 @@ policy-SupportMenu = Egyéni támogatási menüpont hozzáadása a súgó menüh
 policy-TranslateEnabled = Weboldalak fordításának engedélyezése vagy letiltása.
 policy-UserMessaging = Ne mutasson bizonyos üzeneteket a felhasználónak.
 policy-UseSystemPrintDialog = Nyomtatás a rendszer nyomtatási párbeszédablakával.
+policy-VisualSearchEnabled = Vizuális keresés engedélyezése vagy letiltása.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Weboldalak felkeresésének blokkolása. Lásd a dokumentációt a formátum részleteiért.
 policy-Windows10SSO = Lehetővé teszi a Windows egyszeri bejelentkezésének használatát a microsoftos, munkahelyi és iskolai fiókok számára.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Egyszeri bejelentkezés engedélyezése a Microsoft Entra-fiókokhoz.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Az XSLTProcessor JavaScript API és az XSLT feldolgozó utasítás támogatásának engedélyezése vagy letiltása.

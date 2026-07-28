@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = 連結其他裝置…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 傳送到裝置
+           *[other] 傳送 { $tabCount } 個分頁到裝置
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 傳送到行動裝置
+           *[other] 傳送 { $tabCount } 個分頁到行動裝置
+        }
+fxa-menu-send-to-mobile-device-missing2 = 沒看到您的裝置嗎？
+fxviewtabrow-send-to-mobile-not-verified = 帳號未驗證
+fxviewtabrow-send-to-mobile-verify-account = 確認您的帳號
+fxa-menu-send-to-mobile-turn-on-sync = 開啟 Sync 即可傳送分頁
+fxa-menu-send-to-mobile-connect-device = 連結裝置即可傳送分頁
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = 傳送 { $tabCount } 個分頁到裝置
 # This is shown dynamically within "Send tab to device" in fxa menu.
@@ -29,12 +52,11 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = 立即傳送分頁到任何您登入過的裝置。
 fxa-menu-sign-out =
     .label = 登出…
-fxa-menu-sync-title = Sync
 fxa-menu-sync-description = 隨時隨地開啟您的網頁
 fxa-avatar-sign-in = 登入
 fxa-avatar-sign-up = 註冊
 fxa-avatar-tooltip =
-    .tooltiptext = 登入帳號
+    .tooltiptext = 登入您的帳號
 sync-setup-verify-continue = 繼續
 sync-setup-verify-title = 資料合併警告
 sync-setup-verify-heading = 您確定要登入至 Sync 嗎？
@@ -43,6 +65,10 @@ sync-setup-verify-heading = 您確定要登入至 Sync 嗎？
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = 先前已有不同使用者於此電腦登入同步。若繼續登入，將會與 { $email } 合併此瀏覽器中的書籤、密碼與其他設定
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = 登入即可傳送分頁
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

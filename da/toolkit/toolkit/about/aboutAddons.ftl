@@ -174,6 +174,8 @@ extensions-warning-update-security-button = Aktiver
 extensions-warning-imported-addons2 =
     .message = Færdiggør installeringen af udvidelser importeret til { -brand-short-name }.
 extensions-warning-imported-addons-button = Installer udvidelser
+extensions-warning-safe-mode3 =
+    .message = Alle tilføjelser er blevet deaktiveret i fejlsøgnings-tilstand.
 
 ## Strings connected to add-on updates
 
@@ -294,6 +296,10 @@ colorway-removal-notice-message =
         nye version på webstedet for tilføjelser.
 colorway-removal-notice-learn-more = Lær mere
 colorway-removal-notice-button = Få opdaterede farvekombinations-temaer
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Dine Windows-indstillinger for kontrast tilsidesætter temaer i { -brand-short-name }. Deaktiver indstillingerne for at bruge temaer i { -brand-short-name }.
 privacy-policy = Privatlivs-politik
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -479,7 +485,10 @@ available-updates-heading = Tilgængelige opdateringer
 recent-updates-heading = Seneste opdateringer
 release-notes-loading = Indlæser…
 release-notes-error = Der opstod en fejl under indlæsning af udgivelsesnoterne.
+addon-permissions-heading = Tilladelser
 addon-permissions-empty2 = Denne udvidelse kræver ingen tilladelser.
+addon-permissions-required-label = Påkrævede:
+addon-permissions-optional-label = Valgfrie:
 addon-permissions-empty = Denne udvidelse kræver ingen tilladelser
 addon-permissions-required = Påkrævede tilladelser for kerne-funktionalitet:
 addon-permissions-optional = Valgfrie tilladelser for yderligere funktionalitet:
@@ -538,9 +547,15 @@ details-notification-hard-blocked-other =
     .message = Denne tilføjelse er blokeret for at overtræde BrowserWorkss politikker og er blevet deaktiveret.
 details-notification-unsigned-link = Læs mere
 details-notification-blocked = { $name } er blevet deaktiveret af sikkerheds- eller stabilitetsgrunde.
-details-notification-blocked2 =
-    .message = { $name } er blevet deaktiveret af sikkerheds- eller stabilitetsgrunde.
 details-notification-blocked-link2 = Vis detaljer
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Denne udvidelse er begrænset og er blevet deaktiveret. Du kan aktivere den, men det kan være risikabelt.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Denne udvidelse er begrænset. Det kan være risikabelt at bruge den.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Denne tilføjelse er begrænset og er blevet deaktiveret. Du kan aktivere den, men det kan være risikabelt.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Denne tilføjelse er begrænset. Det kan være risikabelt at bruge den.
 details-notification-soft-blocked-extension-disabled =
     .message = Denne udvidelse er begrænset, fordi den overtræder BrowserWorkss politikker og derfor er blevet deaktiveret. Du kan aktivere den, men det kan være risikabelt.
 details-notification-soft-blocked-extension-enabled =
@@ -552,8 +567,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Vis detaljer
 details-notification-blocked-link = Mere information
 details-notification-softblocked = { $name } har kendte sikkerheds- og/eller stabilitetsproblemer.
-details-notification-softblocked2 =
-    .message = { $name } har kendte sikkerheds- og/eller stabilitetsproblemer.
 details-notification-softblocked-link = Mere information
 details-notification-gmp-pending = { $name } vil snart blive installeret.
 details-notification-gmp-pending2 =
@@ -579,6 +592,10 @@ permissions-data-addon-button = Tilladelser og data
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Brugt af udvidelsen { $extensionName }
+addon-permissions-data-collection-heading = Indsamling af data
+addon-permissions-data-collection-empty = Udvikleren meddeler, at denne udvidelse ikke kræver indsamling af data.
+addon-data-collection-provided = Oplysninger leveret af udvikleren af udvidelsen
+addon-data-collection-learnmore = Læs mere om indsamling af data
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 

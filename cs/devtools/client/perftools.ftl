@@ -30,11 +30,33 @@ perftools-description-intro =
     Nahrávání spustí v novém panelu <a>profiler.firefox.com</a>. Všechna data jsou
     ukládána lokálně na vašem počítači, ale můžete se rozhodnout je sdílet.
 perftools-description-local-build = Pokud profilujete sestavení, které jste si sami zkompilovali na tomto zařízení, přidejte prosím objdir vašeho sestavení do níže uvedeného seznamu, abyste mohli použít vyhledávání informací o symbolech.
+perftools-pick-local-build-directory = Vyberte adresář se sestavením
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Interval vzorkování:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -97,7 +119,7 @@ perftools-thread-socket-thread =
 perftools-thread-img-decoder =
     .title = Vlákna pro dekódování obrázků
 perftools-thread-dns-resolver =
-    .title = V tomto vklákně probíhá překlad DNS
+    .title = V tomto vlákně probíhá překlad DNS
 perftools-thread-task-controller =
     .title = Vlákno souboru vláken TaskController
 perftools-thread-jvm-gecko =
@@ -166,6 +188,8 @@ perftools-presets-networking-description =
         [with-cases] Doporučené nastavení pro ladění síťových problémů ve { -brand-shorter-name(case: "loc") }.
        *[no-cases] Doporučené nastavení pro ladění síťových problémů v aplikaci { -brand-shorter-name }.
     }
+perftools-presets-networking-with-logs-label = Práce v síti s protokoly
+perftools-presets-networking-with-logs-description = Doporučené nastavení pro ladění síťových chyb v aplikaci { -brand-shorter-name }, včetně síťových protokolů. Tyto protokoly mohou obsahovat citlivé informace, jako jsou například adresy URL, které navštěvujete.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Napájení
 perftools-presets-power-description =
@@ -179,7 +203,6 @@ perftools-presets-debug-description =
         [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "loc") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
        *[no-cases] Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
     }
+perftools-presets-web-compat-label = Webová kompatibilita
+perftools-presets-web-compat-description = Doporučené nastavení pro ladění problémů s kompatibilitou webových stránek, spíše než pro sledování výkonu.
 perftools-presets-custom-label = Vlastní
-
-##
-

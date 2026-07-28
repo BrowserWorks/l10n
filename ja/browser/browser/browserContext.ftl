@@ -89,6 +89,9 @@ toolbar-button-account =
 main-context-menu-page-save =
     .label = 名前を付けてページを保存...
     .accesskey = P
+
+## Simple menu items
+
 main-context-menu-bookmark-page =
     .aria-label = ページをブックマーク...
     .accesskey = m
@@ -127,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = リンクを新しいタブで開く
     .accesskey = T
+main-context-menu-open-link-split-view =
+    .label = リンクを分割ビューで開く
+    .accesskey = M
 main-context-menu-open-link-container-tab =
     .label = リンクを新しいコンテナータブで開く
     .accesskey = b
@@ -159,17 +165,12 @@ main-context-menu-copy-link-simple =
     .accesskey = L
 main-context-menu-preview-link =
     .label = リンク先をプレビュー
-    .accesskey = r
+    .accesskey = J
 # "Copy Clean Link" means that Firefox will remove things from the link you
 # copied, like items that identify you for advertising purposes, and other items
 # sites add into URLs to help them deliver a certain browsing experience.
 main-context-menu-copy-clean-link =
     .label = 追跡を除去したリンクをコピー
-    .accesskey = u
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = サイト追跡を除いたリンクをコピー
     .accesskey = u
 
 ## Media (video/audio) controls
@@ -220,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = コントロールを隠す
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = 全画面表示
@@ -272,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = 画像の詳細情報を表示
     .accesskey = D
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = { $engine } で画像を検索
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = 名前を付けて動画を保存...
     .accesskey = v
@@ -287,6 +293,25 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = 音声の URL をメールで送信...
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = 端末へ送信
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = モバイル端末へ送信
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = ログインしてタブを送信
+main-context-menu-send-to-mobile-enable-sync2 = 同期を有効にしてタブを送信
+main-context-menu-send-to-mobile-connect-phone2 = スマートフォンを接続
+main-context-menu-send-to-mobile-device-missing2 = 端末が見つかりませんか？
+main-context-menu-send-to-mobile-sign-in-from-link = ログインしてリンクを送信
+main-context-menu-send-to-mobile-sign-in-from-page = ログインしてページを送信
+main-context-menu-send-to-mobile-enable-sync3 = 同期を有効にしてタブを送信
+main-context-menu-send-to-mobile-enable-sync-from-link = 同期を有効にしてリンクを送信
+main-context-menu-send-to-mobile-enable-sync-from-page = 同期を有効にしてページを送信
+main-context-menu-send-to-mobile-connect-phone3 = 端末を接続してタブを送信
+main-context-menu-send-to-mobile-connect-phone-from-link = 端末を接続してリンクを送信
+main-context-menu-send-to-mobile-connect-phone-from-page = 端末を接続してページを送信
+# Displayed within the send tab submenu to prompt users to sign in, enable sync, or pair a device
 main-context-menu-save-to-pocket =
     .label = ページを { -pocket-brand-name } に保存
     .accesskey = k
@@ -326,6 +351,9 @@ main-context-menu-add-engine =
     .accesskey = S
 main-context-menu-link-send-to-device =
     .label = リンクを端末へ送信
+    .accesskey = n
+main-context-menu-link-send-to-mobile =
+    .label = リンクをモバイル端末へ送信
     .accesskey = n
 main-context-menu-frame =
     .label = このフレーム
@@ -394,3 +422,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = パスワードを開示
     .accesskey = v
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = 新機能
+main-context-menu-pdfjs-copy-page =
+    .label = ページをコピー
+main-context-menu-pdfjs-cut-page =
+    .label = ページを切り取り
+main-context-menu-pdfjs-delete-page =
+    .label = ページを削除
+main-context-menu-pdfjs-save-page =
+    .label = 選択したページを名前を付けて保存...

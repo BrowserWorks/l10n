@@ -130,9 +130,12 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = افتح الرابط في لسان جديد
     .accesskey = ل
+main-context-menu-open-link-split-view =
+    .label = افتح الرابط في عرض منقسم
+    .accesskey = ف
 main-context-menu-open-link-container-tab =
-    .label = افتح الرابط في لسان حاوِ جديد
-    .accesskey = ح
+    .label = افتح الرابط في لسانٍ حاوٍ جديد
+    .accesskey = ف
 main-context-menu-open-link-new-window =
     .label = افتح الرابط في نافذة جديدة
     .accesskey = ج
@@ -161,7 +164,7 @@ main-context-menu-copy-link-simple =
     .label = انسخ الرابط
     .accesskey = ن
 main-context-menu-preview-link =
-    .label = رابط المعاينة
+    .label = عاين الرابط
     .accesskey = ط
 # "Copy Clean Link" means that Firefox will remove things from the link you
 # copied, like items that identify you for advertising purposes, and other items
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = انسخ الرابط النظيف
     .accesskey = ن
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = انسخ الرابط دون تعقب الموقع
-    .accesskey = خ
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = أخفِ أزرار التحكم
     .accesskey = ك
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = ملء الشاشة
@@ -234,7 +232,7 @@ main-context-menu-media-video-leave-fullscreen =
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-watch-pip =
-    .label = شاهِده بوضع الڤديو المعترِض
+    .label = شاهِده بوضع الفديو المعترِض
     .accesskey = ش
 main-context-menu-image-reload =
     .label = أعِد تحميل الصورة
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = اعرض الوصف
     .accesskey = ص
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = ابحث عن الصورة باستخدام { $engine }
+    .accesskey = ة
 main-context-menu-video-save-as =
     .label = احفظ الڤديو باسم…
     .accesskey = و
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = أرسل الصوت بالبريد…
     .accesskey = ت
+main-context-menu-send-to-device-2 =
+    .label = أرسل إلى جهاز
+    .accesskey = ز
+main-context-menu-send-to-mobile-2 =
+    .label = أرسل إلى الهاتف
+    .accesskey = أ
+main-context-menu-send-to-mobile-sign-in = لِج لإرسال ألسنة
+main-context-menu-send-to-mobile-enable-sync2 = فعِّل المزامنة لإرسال لسان
+main-context-menu-send-to-mobile-connect-phone2 = صل جوالك
+main-context-menu-send-to-mobile-device-missing2 = ألا ترى جهازك؟
+main-context-menu-send-to-mobile-sign-in-from-link = لِج لإرسال رابط
+main-context-menu-send-to-mobile-sign-in-from-page = لِج لإرسال صفحة
+main-context-menu-send-to-mobile-enable-sync3 = شغّل المزامنة لإرسال ألسنة
+main-context-menu-send-to-mobile-enable-sync-from-link = شغّل المزامنة لإرسال رابط
+main-context-menu-send-to-mobile-enable-sync-from-page = شغّل المزامنة لإرسال صفحة
+main-context-menu-send-to-mobile-connect-phone3 = صلّ جهاز لإرسال ألسنة
+main-context-menu-send-to-mobile-connect-phone-from-link = صلّ جهاز لإرسال رابط
+main-context-menu-send-to-mobile-connect-phone-from-page = صلّ جهاز لإرسال صفحة
 main-context-menu-save-to-pocket =
     .label = احفظ الصفحة في { -pocket-brand-name }
     .accesskey = ح
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = أرسل الرابط إلى جهاز
     .accesskey = ه
+main-context-menu-link-send-to-mobile =
+    .label = أرسل الرابط إلى الهاتف
+    .accesskey = أ
 main-context-menu-frame =
     .label = هذا الإطار
     .accesskey = ه
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = أظهر كلمة السر
     .accesskey = ظ
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = جديد
+main-context-menu-pdfjs-copy-page =
+    .label = انسخ الصفحة
+main-context-menu-pdfjs-cut-page =
+    .label = قص الصفحة
+main-context-menu-pdfjs-delete-page =
+    .label = احذف الصفحة
+main-context-menu-pdfjs-save-page =
+    .label = احفظ التحديد باسم...

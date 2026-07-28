@@ -25,6 +25,8 @@ neterror-override-exception-button = أقبلُ المخاطرة فتابِع
 neterror-pref-reset-button = استرجع الإعدادات الأصلية
 neterror-return-to-previous-page-button = عُد للخلف
 neterror-return-to-previous-page-recommended-button = عُد للخلف (يُنصح به)
+neterror-try-again-button-2 = حاول مجددًا
+    .accesskey = و
 neterror-try-again-button = حاول مجددًا
 neterror-add-exception-button = واصِل دائمًا لهذا الموقع
 neterror-settings-button = غيّر إعدادات DNS
@@ -46,14 +48,20 @@ neterror-load-error-firewall = إذا كان حاسوبك محميًا بجدا�
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = إذا كنت تحاول تحميل صفحة شبكة محلية، فيُرجى التأكد مِن منح { -brand-short-name } تصاريح الشبكة المحلية في إعدادات الخصوصية والأمان في نظام التشغيل macOS.
 neterror-http-error-page = تأكد من أنك كتبت عنوان الموقع بشكل صحيح.
+neterror-http-empty-response = تأكد من كتابة عنوان الموقع الإلكتروني بشكل صحيح وحاول مرة أخرى بعد لحظات.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } أعاد صفحة فارغة.
 neterror-captive-portal = تحتاج الولوج إلى هذه الشبكة أولا لتستطيع الوصول إلى الإنترنت.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
-neterror-dns-not-found-with-suggestion = هل قصدت الانتقال إلى <a data-l10n-name="website">{ $hostAndPath }</a>؟
+neterror-dns-not-found-with-suggestion = هل كنت تريد الذهاب إلى <a data-l10n-name="website">{ $hostAndPath }</a>؟
 neterror-dns-not-found-hint-header = <strong>إذا أدخلت العنوان الصحيح، فيمكنك:</strong>
-neterror-dns-not-found-hint-try-again = المحاولة مجددًا لاحقاً
+neterror-dns-not-found-hint-try-again = حاول مجددًا لاحقًا
 neterror-dns-not-found-hint-check-network = فحص اتصال الشبكة
 neterror-dns-not-found-hint-firewall = التأكد من أن { -brand-short-name } لديه إذن للوصول إلى الوب (قد تكون متصلاً ولكن خلف جدار حماية)
+neterror-dns-not-found-hint-check-network-2 = تحقق من اتصالك بالشبكة.
+neterror-dns-not-found-hint-firewall-2 = تأكد من أن { -brand-short-name } لديه إذن بالوصول إلى الإنترنت (قد تكون متصلاً ولكن خلف جدار حماية).
 neterror-dns-not-found-offline-hint-header = <strong>ماذا يمكنك أن تفعل حيال ذلك؟</strong>
 neterror-dns-not-found-offline-hint-different-device = جرّب الاتصال بجهاز مختلف.
 neterror-dns-not-found-offline-hint-modem = تحقق من المودم أو جهاز توجيهك.
@@ -66,11 +74,11 @@ neterror-dns-not-found-offline-hint-reconnect = افصل الاتصال بشبك
 
 neterror-dns-not-found-trr-only-reason = لا يستطيع { -brand-short-name } حماية طلبك للحصول على عنوان هذا الموقع من خلال محلل DNS الموثوق به. إليكم السبب:
 neterror-dns-not-found-trr-only-reason2 = لا يستطيع { -brand-short-name } حماية طلبك للحصول على عنوان هذا الموقع من خلال موفر DNS الآمن الخاص بنا. إليكم السبب:
-neterror-dns-not-found-trr-third-party-warning2 = يمكنك المتابعة مع محلل DNS الافتراضي الخاص بك. ومع ذلك، قد يتمكن طرف ثالث من رؤية مواقع الوب التي تزورها.
+neterror-dns-not-found-trr-third-party-warning2 = يمكنك المتابعة مع محلّل DNS المبدئي الخاص بك. ومع ذلك، قد يتمكن طرف ثالث من رؤية مواقع الوِب التي تزورها.
 neterror-dns-not-found-trr-only-could-not-connect = لم يتمكن { -brand-short-name } من الاتصال بـ { $trrDomain }.
 neterror-dns-not-found-trr-only-timeout = استغرق الاتصال بـ { $trrDomain } وقتًا أطول من المتوقع.
 neterror-dns-not-found-trr-offline = أنت غير متصل بالإنترنت.
-neterror-dns-not-found-trr-unknown-host2 = لم يتم العثور على موقع الوب هذا بواسطة { $trrDomain }.
+neterror-dns-not-found-trr-unknown-host2 = لم يُعثر على موقع الوِب هذا بواسطة { $trrDomain }.
 neterror-dns-not-found-trr-server-problem = حدثت مشكلة في { $trrDomain }.
 neterror-dns-not-found-bad-trr-url = مسار غير صحيح.
 neterror-dns-not-found-system-sleep = النظام في وضع السكون.
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = خطأ غير متوقّع.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = لا يستطيع { -brand-short-name } حماية طلبك للحصول على عنوان هذا الموقع من خلال محلل DNS الموثوق به. إليكم السبب:
-neterror-dns-not-found-native-fallback-reason2 = لا يستطيع { -brand-short-name } حماية طلبك للحصول على عنوان هذا الموقع من خلال موفر DNS الآمن الخاص بنا. إليكم السبب:
 neterror-dns-not-found-native-fallback-heuristic = DNS عبر HTTPS مُعطّل على شبكتك.
 neterror-dns-not-found-native-fallback-not-confirmed2 = لم يتمكن { -brand-short-name } من الاتصال بـ { $trrDomain }.
 
@@ -89,14 +96,19 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = لم يتمكن { -brand
 
 neterror-file-not-found-filename = افحص اسم الملف بحثًا عن أخطاء في الكتابة.
 neterror-file-not-found-moved = تأكد أن الملف لم يُنقل، أو يتغير اسمه، أو يُحذف.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = لا يمكن ل { -brand-short-name } العثور على الملف في المسار <strong>{ $path }</strong>. إما أنه غير موجود أو أن المسار غير صحيح.
+neterror-file-not-found-what-can-you-do = إذا أدخلت العنوان يدويًا، فتحقق من وجود أخطاء في كتابة الأحرف الكبيرة أو الصغيرة أو الأخطاء الإملائية في اسم الملف أو مساره. إذا اتبعت علامة أو رابطًا محفوظًا، فقد يكون الملف قد نُقل أو أُعيد تسميته أو حُذف منذ حفظه. حاول العثور عليه باستخدام مدير الملفات أو من خلال بحث حديث.
 neterror-access-denied = قد يكون حُذِف أو نُقِل أو أن صلاحيّات الملف تمنع الوصول إليه.
 neterror-unknown-protocol = قد تحتاج تنصيب برمجيات أخرى لفتح هذا العنوان.
 neterror-redirect-loop = سبب هذه المشكلة هو تعطيل الكعكات أو عدم قبولها.
+neterror-unknown-socket-type-client-config = قد يكون هذا بسبب خطأ في إعدادات عميلك.
 neterror-unknown-socket-type-psm-installed = تأكّد أنّ مدير الأمن الشخصي مثبت في نظامك.
 neterror-unknown-socket-type-server-config = قد يكون سبب هذا هو إعداد مخالف للمعايير في الخادوم.
 neterror-not-cached-intro = المستند المطلوب لم يعد متوفرًا في ذاكرة { -brand-short-name } الخبيئة.
 neterror-not-cached-sensitive = كإجراء وقائي، { -brand-short-name } لا يعيد طلب المستندات الحساسة بشكل آلي.
-neterror-not-cached-try-again = اضغط على ”حاول مرة أخرى“ لإعادة طلب المستند من الموقع.
+neterror-not-cached-try-again = اضغط على ”حاول مجددًا“ لإعادة طلب المستند من الموقع.
 neterror-net-offline = اضغط على ”حاول مجددًا“ للتبديل إلى وضع الاتصال و إعادة تحميل الصفحة.
 neterror-proxy-resolve-failure-settings = افحص إعدادات الوسيط لتتأكد أنها صحيحة.
 neterror-proxy-resolve-failure-connection = تأكد من أن اتصالك الشبكي يعمل.
@@ -142,11 +154,11 @@ certerror-expired-cert-second-para = أغلب الظن هو أن شهادة ال
 certerror-expired-cert-sts-second-para = أغلب الظن هو أن شهادة الموقع قد انقضت، ما يمنع { -brand-short-name } من الاتصال بطريقة آمنة.
 certerror-what-can-you-do-about-it-title = إليك ما تستطيع فعله حيال هذا
 certerror-unknown-issuer-what-can-you-do-about-it-website = أغلب الظن بأن المشكلة هي بالموقع نفسه، وليس هنالك ما يمكنك فعله لحلها.
-certerror-unknown-issuer-what-can-you-do-about-it-contact-admin = إن كنت متصلا عبر شبكة للشركات أو كنت تستخدم برمجية مضادة للفيروسات، فيمكنك إيصال الأمر إلى فرق الدعم لمساعدتك. يمكنك أيضا إعلام مدير الموقع عن هذه المشكلة.
+certerror-unknown-issuer-what-can-you-do-about-it-contact-admin = إن كنت متصلاً عبر شبكة للشركات أو كنت تستخدم برمجية مضادة للفيروسات، فيمكنك إيصال الأمر إلى فرق الدعم لمساعدتك. يمكنك أيضًا إعلام مدير الموقع عن هذه المشكلة.
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 # $now (Date) - The current datetime, to be formatted as a date
-certerror-expired-cert-what-can-you-do-about-it-clock = ضُبطت ساعة الحاسوب على { DATETIME($now, dateStyle: "medium") }. تحقّق من أن الحاسوب قد ضُبط حسب التاريخ والوقت والمنطقة الزمنية في إعدادات النظام، بعد ذلك أنعِش <b>{ $hostname }</b>.
+certerror-expired-cert-what-can-you-do-about-it-clock = ضُبطت ساعة الحاسوب على { DATETIME($now, dateStyle: "medium") }. تحقّق من أن الحاسوب قد ضُبط حسب التاريخ والوقت والمنطقة الزمنية في إعدادات النظام، بعد ذلك أعد تحميل <b>{ $hostname }</b>.
 certerror-expired-cert-what-can-you-do-about-it-contact-website = إن كانت الساعة مضبوطة على الوقت الصحيح، فأغلب الظن بأن الموقع لم يُضبط كما ينبغي، وليس ثمة ما تقدر على فعله لحل المشكلة. يمكنك إخطار مدير الموقع عن هذه المشكلة.
 certerror-bad-cert-domain-what-can-you-do-about-it = أغلب الظن بأن المشكلة هي بالموقع نفسه، وليس هنالك ما يمكنك فعله لحلها. يمكنك إعلام مدير الموقع عن هذه المشكلة.
 certerror-mitm-what-can-you-do-about-it-antivirus = إن كان لمضادّ الفيروسات لديك ميزة تفحص الاتصالات المعمّاة (غالبًا ما تُسمى بِ‍”فحص الوِب Web scanning“ أو ”فحص https“)، فيمكنك تعطيل تلك الميزة. إن لم يعمل ذلك فيمكنك إزالة وإعادة تثبيت برمجية مضادّ الفيروسات.
@@ -168,3 +180,42 @@ certerror-coep-learn-more = تعرف على المزيد حول سياسات ت�
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = رمز الخطأ: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = يبدو أن هناك مشكلة في اتصالك بالإنترنت
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = لا يستطيع { -brand-short-name } عمل اتصال آمن بالخادم في { $hostname }.
+fp-neterror-offline-intro = لا يمكن لـ { -brand-short-name } الاتصال بالخادم على <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = لا يمكن لـ { -brand-short-name } الاتصال بالخادم على <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = يستغرق الخادم الموجود على <strong>{ $hostname }</strong> وقتًا طويلاً جدًا للاستجابة.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = أعاد الخادم الموجود على <strong>{ $hostname }</strong> خطأً: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> أرسل ترويسة تحتوي على أحرف فارغة غير مسموح بها وفقًا لمعايير أمان الوِب.
+fp-neterror-content-encoding-intro = تعذّر عرض الصفحة التي تحاول فتحها لأن نوع الضغط فيها غير سليم أو غير مدعوم.
+fp-neterror-coop-coep-intro = لم تُحمّل هذه الصفحة بواسطة { -brand-short-name } لأن إعدادات الأمان لا تتطابق مع الصفحة السابقة.
+fp-neterror-blocked-by-policy-intro = حجبت منظّمتك الوصول إلى هذه الصفحة أو إلى هذا الموقع.
+fp-neterror-http-auth-disabled-intro = قد يحاول شخص يتظاهر بأنه مسؤول عن الموقع سرقة أشياء مثل اسم المستخدم أو كلمة السر أو البريد الإلكتروني.
+fp-neterror-http-auth-disabled-secure-connection = يتطلب هذا الموقع اتصالاً آمناً، ولا يمكنك إضافة استثناء لزيارته.
+fp-neterror-why-did-this-happen = لمَ حدث هذا؟
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = يبدو أن هذا الموقع يستخدم برنامجًا قديمًا به مشاكل أمنية معروفة.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } لا يثق في { $hostname } لأن الاتصال غير آمن.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = استخدام أحدث إصدار من { -brand-short-name }. انتقل إلى "مساعدة" > "عن { -brand-short-name }" في القائمة. إذا كنت تستخدم أحدث إصدار، فمن المرجح أن المشكلة في الموقع نفسه.
+fp-neterror-offline-what-can-you-do-body = حاول الاتصال من جهاز آخر. تحقّق من المودم أو جهاز التوجيه. افصل اتصالك بالواي فاي وأعد الاتصال به.
+fp-neterror-http-auth-disabled-what-can-you-do-body = حاول تغيير عنوان الموقع إلى HTTPS. لكن من المحتمل أن تكون هناك مشكلة في الموقع نفسه.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = في بعض الأحيان، تقوم المواقع الإلكترونية بوضع إجراءات حماية لحماية نفسها من التفاعلات غير المرغوب فيها مع المواقع الأخرى.
+fp-learn-more-about-https-connections = تعرّف على اتصالات HTTPS
+fp-neterror-vpn-error-title = تعذّر الاتصال بشبكة VPN
+fp-neterror-vpn-error-description = حاول مرة أخرى بعد بضع دقائق.
+fp-neterror-denied-port-access = يستخدم هذا العنوان منفذ شبكة مستخدم عادة لأغراض غير تصفّح الوِب. ألغى { -brand-short-name } الطلب لحمايتك.

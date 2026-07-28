@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fxa-toolbar-sync-syncing2 = 同期中...
-sync-disconnect-dialog-title2 = 切断しますか？
+sync-disconnect-dialog-title2 = 接続を解除しますか？
 sync-disconnect-dialog-body = { -brand-product-name } はあなたのアカウントの同期を停止しますが、この端末の閲覧データは一切削除されません。
-sync-disconnect-dialog-button = 切断
+sync-disconnect-dialog-button = 接続を解除
 fxa-signout-dialog2-title = { -fxaccount-brand-name }からログアウトしますか？
 fxa-signout-dialog-title2 = アカウントからログアウトしますか？
 fxa-signout-dialog-body = 同期済みデータはあなたのアカウントに残ります。
@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = 別の端末を接続...
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 端末へ送信
+           *[other] { $tabCount } 個のタブを端末へ送信
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] モバイル端末へ送信
+           *[other] { $tabCount } 個のタブをモバイル端末へ送信
+        }
+fxa-menu-send-to-mobile-device-missing2 = 端末が見つかりませんか？
+fxviewtabrow-send-to-mobile-not-verified = アカウントが認証されていません
+fxviewtabrow-send-to-mobile-verify-account = アカウントを認証
+fxa-menu-send-to-mobile-turn-on-sync = 同期を有効にしてタブを送信
+fxa-menu-send-to-mobile-connect-device = 端末を接続してタブを送信
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = { $tabCount } 個のタブを端末へ送信
 # This is shown dynamically within "Send tab to device" in fxa menu.
@@ -29,7 +52,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = ログインしている他の端末に今すぐタブを送ります。
 fxa-menu-sign-out =
     .label = ログアウト...
-fxa-menu-sync-title = 同期
 fxa-menu-sync-description = どこからでもウェブへアクセス
 fxa-avatar-sign-in = ログイン
 fxa-avatar-sign-up = アカウント登録
@@ -43,6 +65,10 @@ sync-setup-verify-heading = 本当に Sync にログインしますか？
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = 以前にこのコンピューターで別のユーザーが Sync にログインしていました。ログインすると、このブラウザーのブックマークとパスワード、設定などが { $email } に統合されます。
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = ログインしてタブを送信
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Indstillinger
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Indstillinger…
+menu-application-set-as-default =
+    .label = Gør { -brand-shorter-name } til standard-browser
 menu-application-services =
     .label = Tjenester
 menu-application-hide-this =
@@ -98,6 +91,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Del
     .accesskey = D
+menu-file-share-qrcode =
+    .label = Opret QR-kode…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Opret QR-kode
+    .accesskey = Q
 menu-file-print-setup =
     .label = Sideopsætning…
     .accesskey = S
@@ -146,8 +145,6 @@ menu-view-history-button =
     .label = Historik
 menu-view-synced-tabs-sidebar =
     .label = Synkroniserede faneblade
-menu-view-megalist-sidebar =
-    .label = Adgangskoder
 menu-view-full-zoom =
     .label = Zoom
     .accesskey = Z
@@ -263,6 +260,13 @@ menu-profiles-manage-profiles =
     .label = Håndter profiler
 menu-profiles-new-profile =
     .label = Ny profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (nuværende)
+menu-profiles-menu =
+    .label = Profiler
+    .accesskey = P
 
 ## Tools Menu
 

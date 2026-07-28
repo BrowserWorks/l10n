@@ -19,7 +19,7 @@ graph-total-tracker-summary =
        *[other] <b>{ $count }</b> elementi traccianti bloccati dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
 # Text displayed instead of the graph when in Private Mode
-graph-private-window = { -brand-short-name } continua a bloccare gli elementi traccianti in navigazione anonima, ma non viene conservato un registro di ciò che è stato bloccato.
+graph-private-window = { -brand-short-name } continua a bloccare gli elementi traccianti in navigazione anonima, ma non tiene traccia di ciò che è stato bloccato.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Elementi traccianti bloccati da { -brand-short-name } questa settimana
 protection-report-webpage-title = Pannello protezioni
@@ -195,3 +195,53 @@ bar-tooltip-fingerprinter =
 bar-tooltip-cryptominer =
     .title = Cryptominer
     .aria-label = { $count } cryptominer ({ $percentage }%)
+# Privacy Metrics Card
+privacy-metrics-title = Protezione della privacy
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloccato questa settimana
+       *[other] { $count } bloccati questa settimana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } elemento tracciante
+       *[other] { $count } elementi traccianti
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters = { $count } fingerprinter
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie tracciante
+       *[other] { $count } cookie traccianti
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } tracciante dei social media
+       *[other] { $count } traccianti dei social media
+    }
+privacy-metrics-empty = Nessun elemento tracciante bloccato questa settimana. { -brand-short-name } ti protegge dalle seguenti minacce durante la navigazione.
+privacy-metrics-loading = Caricamento delle statistiche sulla protezione…
+privacy-metrics-error = Impossibile caricare le statistiche sulla protezione.
+privacy-metrics-private-window = { -brand-short-name } continua a bloccare gli elementi traccianti in navigazione anonima, ma non tiene traccia di ciò che è stato bloccato.
+
+## VPN promo card and banner
+
+protections-vpn-title = Proteggi la tua privacy oltre il browser
+protections-vpn-header-content = Metti al sicuro l’intero dispositivo con { -mozilla-vpn-brand-name }. Basta un tocco per crittare tutto il traffico e nascondere la tua posizione.
+protections-get-vpn-link = Ottieni { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: abbonato
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed = Con { -mozilla-vpn-brand-name } tutto il tuo traffico viene crittato e la tua posizione nascosta, su un massimo di { $count } dispositivi. Sfrutta al meglio il tuo abbonamento: installa l’app da <a data-l10n-name="playstore-link">Google Play Store</a> o <a data-l10n-name="appstore-link">Apple App Store</a>.
+protections-vpn-banner-header = Protezione che va oltre il browser
+protections-vpn-banner-content = Prova { -mozilla-vpn-brand-name } senza rischi e scopri perché, secondo TechRadar, “la velocità, la semplicità e il prezzo mensile contenuto la rendono un prodotto da provare.”
+protections-vpn-banner-link = Ottieni { -mozilla-vpn-brand-name }

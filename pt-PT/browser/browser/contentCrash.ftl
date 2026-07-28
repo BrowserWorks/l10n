@@ -33,6 +33,13 @@ pending-crash-reports-always-send =
     .label = Enviar sempre
 # Variables:
 #   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message-new =
+    { $reportCount ->
+        [one] Tem um relatório de falha não enviado relacionado com falhas que estão a ser investigadas. O envio do mesmo irá ajudar-nos a melhorar o { -brand-product-name }. Fechar esta notificação irá ignorar este relatório.
+       *[other] Tem { $reportCount } relatórios de falhas não enviados relacionados com falhas que estão a ser investigadas. O envio dos mesmos irá ajudar-nos a melhorar o { -brand-product-name }. Fechar esta notificação irá ignorar estes relatórios.
+    }
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
 requested-crash-reports-message =
     { $reportCount ->
         [one] Tem um relatório de falha não enviado que corresponde a falhas em investigação. O envio do mesmo irá ajudar-nos a melhorar o { -brand-product-name }. Fechar esta notificação irá ignorar este relatório.
@@ -41,3 +48,10 @@ requested-crash-reports-message =
 requested-crash-reports-dont-show-again =
     .label = Não voltar a mostrar
     .accesskey = N
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+pending-crash-reports-message-new =
+    { $reportCount ->
+        [one] Tem um relatórios de falha não enviado
+       *[other] Tem { $reportCount } relatórios de falha não enviados
+    }

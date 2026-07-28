@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = Remove { $provider }
 genai-menu-remove-sidebar =
     .label = Remove from Sidebar
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Ask { $provider }
 genai-menu-new-badge = New
 genai-menu-summarize-page = Summarise Page
+genai-input-ask-smart-window =
+    .placeholder = Ask…
 genai-input-ask-generic =
     .placeholder = Ask AI chatbot…
 # $provider (string) - name of the provider
@@ -89,16 +94,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Hide chatbot shortcut
-genai-menu-no-provider =
-    .label = Ask an AI Chatbot
 genai-menu-choose-chatbot =
     .label = Choose an AI Chatbot
+genai-menu-ask-generic-2 =
+    .label = Ask AI Chatbot
+    .accesskey = z
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Ask { $provider }
+    .accesskey = z
+genai-menu-no-provider-2 =
+    .label = Ask an AI Chatbot
+    .accesskey = z
+genai-menu-ask-smart-window =
+    .label = Ask…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = AI chatbot
 genai-header-provider-menu =
     .title = Choose a chatbot
+genai-header-settings-button =
+    .title = AI Chat settings
 genai-header-options-button =
     .title = Open menu
 genai-header-close-button =
@@ -117,6 +135,11 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = About AI chatbots in { -brand-short-name }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = Since the page is long, this is a partial summary.
+
 ## Chatbot footer
 
 genai-page-button-summarize = Summarise page
@@ -126,9 +149,9 @@ genai-page-button-summarize = Summarise page
 genai-onboarding-header = Summarise, brainstorm, and more as you browse
 genai-onboarding-choose-header = Choose an AI chatbot to use in the { -brand-short-name } sidebar
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
-genai-onboarding-description = Choose an AI chatbot to use in the { -brand-short-name } sidebar. We’ll show details about each chatbot when you select it. Switch anytime. <a data-l10n-name="learn-more">Learn more</a>
+genai-onboarding-description = Choose an AI chatbot to use in the { -brand-short-name } sidebar. We’ll show details about each chatbot when you select it. Switch at any time. <a data-l10n-name="learn-more">Learn more</a>
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
-genai-onboarding-choose-description = Switch anytime. For help choosing, <a data-l10n-name="learn-more">learn more about each chatbot</a>.
+genai-onboarding-choose-description = Switch at any time. For help choosing, <a data-l10n-name="learn-more">learn more about each chatbot</a>.
 genai-onboarding-primary = Continue
 genai-onboarding-secondary = Close
 genai-onboarding-claude-tooltip =
@@ -209,3 +232,48 @@ link-preview-reading-time =
         [one] { $range } min reading time
        *[other] { $range } mins reading time
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } can’t preview this link
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Visit link
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } can’t generate key points for this web page.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Something went wrong.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Try again
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Link Preview Settings
+link-preview-settings-enable =
+    .label = Enable link previews
+    .description = See the page title, description, and more when you use the shortcut or right-click on a link.
+link-preview-settings-key-points =
+    .label = Allow AI to read the beginning of the page and generate key points
+link-preview-settings-long-press =
+    .label = Shortcut: Click and hold the link for 1 second (long press)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = See more with AI?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } uses AI to read the beginning of the page and generate a few key points. To prioritise your privacy, this happens on your device.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = New: Click and hold any link for a preview
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = See a short description, reading time, and more to decide if the link is worth opening. Also available on right-click.
+# Header for the key points section
+link-preview-key-points-header = Key points
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Key points are AI-generated and may have mistakes.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = First-time setup • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = You’ll see key points more quickly next time.
+# Onboarding card See a preview button
+link-preview-onboarding-button = See a preview
+# Onboarding card Close button
+link-preview-onboarding-close = Close
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = First-time setup
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = This may take a moment. You’ll see key points more quickly next time.

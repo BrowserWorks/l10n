@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -110,11 +107,25 @@ browser-main-window-titles-mac =
     .data-content-title-private = { $content-title } — Duyệt web riêng tư
     .data-content-title-default-with-profile = { $content-title } — { $profile-name }
     .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Duyệt web riêng tư
-# This gets set as the initial title, and is overridden as soon as we start
-# updating the titlebar based on loaded tabs or private browsing state.
-# This should match the `data-title-default` attribute in both
-# `browser-main-window` and `browser-main-window-mac`.
+# This is the initial default title for the browser window.
+# It gets updated based on loaded tabs or private browsing state.
 browser-main-window-default-title = { -brand-full-name }
+# Note: only on macOS do we use a `-` separator between the brand name and the
+# "Private Browsing" suffix.
+browser-main-private-window-title =
+    { PLATFORM() ->
+        [macos] { -brand-full-name } — Duyệt web riêng tư
+       *[other] { -brand-full-name } duyệt web riêng tư
+    }
+# This is only used on macOS; on other OSes we use the full private window
+# title (so including the brand name) as a suffix
+browser-main-private-suffix-for-content = Duyệt web riêng tư
+popups-infobar-dont-show-message2 =
+    .label = Không hiển thị thông báo này khi cửa sổ bật lên hoặc chuyển hướng của bên thứ ba bị chặn
+    .accesskey = D
+edit-popup-settings2 =
+    .label = Quản lý cài đặt cửa sổ bật lên và chuyển hướng của bên thứ ba…
+    .accesskey = M
 
 ##
 
@@ -129,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = Thay đổi liệu bạn có thể nhận thông báo từ trang web hay không
 urlbar-midi-notification-anchor =
     .tooltiptext = Mở bảng MIDI
+urlbar-serial-notification-anchor =
+    .tooltiptext = Mở bảng Cổng nối tiếp
 urlbar-eme-notification-anchor =
     .tooltiptext = Quản lý sử dụng phần mềm DRM
 urlbar-web-authn-anchor =
@@ -141,6 +154,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = Mở bảng thông báo
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Mở bảng yêu cầu vị trí
+urlbar-localhost-notification-anchor =
+    .tooltiptext = Quản lý quyền truy cập thiết bị cục bộ cho trang web này
+urlbar-local-network-notification-anchor =
+    .tooltiptext = Quản lý việc chia sẻ quyền truy cập mạng cục bộ của bạn với trang web này
 urlbar-xr-notification-anchor =
     .tooltiptext = Mở bảng điều khiển thực tế ảo
 urlbar-storage-access-anchor =
@@ -178,6 +195,24 @@ urlbar-result-menu-button =
     .title = Mở menu
 urlbar-result-menu-button-feedback = Phản hồi
     .title = Mở menu
+urlbar-result-menu-learn-more2 = Tìm hiểu thêm
+    .accesskey = L
+urlbar-result-menu-remove-from-history2 = Xóa khỏi lịch sử
+    .accesskey = R
+urlbar-result-menu-tip-get-help2 = Nhận trợ giúp
+    .accesskey = h
+urlbar-result-menu-dismiss-suggestion2 = Bỏ qua đề xuất này
+    .accesskey = D
+urlbar-result-menu-manage-firefox-suggest2 = Quản lý { -firefox-suggest-brand-name }
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = Báo cáo vị trí không chính xác
+urlbar-result-menu-show-less-frequently2 = Hiển thị ít thường xuyên hơn
+urlbar-result-menu-dont-show-weather-suggestions2 = Không hiển thị đề xuất về thời tiết
 urlbar-result-menu-learn-more =
     .label = Tìm hiểu thêm
     .accesskey = L
@@ -207,6 +242,9 @@ urlbar-result-menu-show-less-frequently =
     .label = Hiển thị ít thường xuyên hơn
 urlbar-result-menu-dont-show-weather-suggestions =
     .label = Không hiển thị đề xuất về thời tiết
+# Used for Split Button.
+urlbar-splitbutton-dropmarker =
+    .title = Mở menu
 # A message shown in the urlbar when the user submits feedback on a suggestion
 # (e.g., it shows an inaccurate location, it's shown too often, etc.).
 urlbar-feedback-acknowledgment = Cảm ơn phản hồi của bạn
@@ -238,6 +276,10 @@ urlbar-search-mode-actions = Hành động
 
 urlbar-geolocation-blocked =
     .tooltiptext = Bạn đã chặn thông tin địa điểm ở trang này.
+urlbar-localhost-blocked =
+    .tooltiptext = Bạn đã chặn kết nối thiết bị cục bộ cho trang web này.
+urlbar-local-network-blocked =
+    .tooltiptext = Bạn đã chặn kết nối mạng cục bộ cho trang web này.
 urlbar-xr-blocked =
     .tooltiptext = Bạn đã chặn truy cập thiết bị thực tế ảo cho trang web này.
 urlbar-web-notifications-blocked =
@@ -250,6 +292,8 @@ urlbar-screen-blocked =
     .tooltiptext = Bạn đã chặn việc chia sẻ màn hình của mình với trang web này.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Bạn đã chặn lưu dữ liệu vào bộ nhớ lâu dài ở trang này.
+urlbar-popup-blocked2 =
+    .tooltiptext = Bạn đã chặn cửa sổ bật lên và chuyển hướng của bên thứ ba cho trang web này.
 urlbar-popup-blocked =
     .tooltiptext = Bạn đã chặn cửa sổ bật lên ở trang web này.
 urlbar-autoplay-media-blocked =
@@ -258,6 +302,8 @@ urlbar-canvas-blocked =
     .tooltiptext = Bạn đã chặn khai thác dữ liệu canvas đối với trang web này.
 urlbar-midi-blocked =
     .tooltiptext = Bạn đã chặn quyền truy cập MIDI của trang web này.
+urlbar-serial-blocked =
+    .tooltiptext = Bạn đã chặn quyền truy cập cổng nối tiếp cho trang web này.
 urlbar-install-blocked =
     .tooltiptext = Bạn đã chặn cài đặt tiện ích cho trang web này.
 # Variables
@@ -268,6 +314,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Đánh dấu trang này ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = Chế độ chia cửa sổ
+    .aria-label = Chế độ chia cửa sổ
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Xóa lịch sử tìm kiếm
+    .accesskey = X
 
 ## Page Action Context Menu
 
@@ -340,7 +395,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Xem tiện tích
@@ -348,12 +403,16 @@ quickactions-addons = Xem tiện tích
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = tiện ích, chủ đề, tien ich, chu de, tiện ích mở rộng, tien ich mo rong
+# Opens preferences page at AI controls
+quickactions-manageai = Quản lý kiểm soát trí tuệ nhân tạo
+quickactions-cmd-manageai = vô hiệu hóa ai, tắt ai, quản lý ai, vo hieu hoa ai, tat ai, quan ly ai, disable ai, off ai, manage ai
 quickactions-cmd-addons2 = xem tiện ích, xem tien ich, tiện ích, tien ich, extensions, add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Quản lý dấu trang
 quickactions-cmd-bookmarks = quản lý dấu trang, quan ly dau trang, quản lí dấu trang, quan li dau trang, dấu trang, dau trang, bookmarks
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Xoá lịch sử gần đây
+quickactions-cmd-clearrecenthistory2 = cookie, xoá cookie, xóa cookie, cache, xoá bộ nhớ đệm, xóa bộ nhớ đệm, xoa bo nho dem, dữ liệu duyệt web, du lieu duyet web, xoá dữ liệu duyệt web, xóa dữ liệu duyệt web, xoa du lieu duyet web, lịch sử, lich su, xoá lịch sử gần đây, xóa lịch sử gần đây, xoa lich su gan day
 quickactions-cmd-clearrecenthistory = xoá lịch sử gần đây, xóa lịch sử gần đây, xoa lich su gan day, lich su
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Xóa lịch sử
@@ -363,6 +422,7 @@ quickactions-downloads2 = Xem tải xuống
 quickactions-cmd-downloads = xem tải xuống, xem tai xuong, tải xuống, tai xuong, downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = Quản lý tiện ích
+quickactions-cmd-extensions2 = tien ich, tiện ích, tien ich mo rong, tiện ích mở rộng, extensions
 quickactions-cmd-extensions = quản lý tiện ích, quan ly tien ich, tiện ích mở rộng, tien ich mo rong, tiện ích, tien ich
 # Opens Firefox View
 quickactions-firefoxview = Mở { -firefoxview-brand-name }
@@ -376,10 +436,22 @@ quickactions-cmd-help = trợ giúp, hỗ trợ, tro giup, ho tro
 # Opens the devtools web inspector
 quickactions-inspector2 = Mở Công cụ dành cho nhà phát triển
 quickactions-cmd-inspector2 = trình kiểm tra, trinh kiem tra, devtools, dev tools
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Chọn một màu
+quickactions-cmd-colorpicker = chọn màu, eyedropper, chon mau, pick color, color picker
+# Opens Firefox Library
+quickactions-cmd-library = mo thu vien, thu vien, mở thư viện, thư viện, library
+quickactions-library = Mở thư viện
 quickactions-cmd-inspector = trình kiểm tra, devtools, trinh kiem tra, nhà phát triển, nha phat trien
 # Opens about:logins
 quickactions-logins2 = Quản lý mật khẩu
 quickactions-cmd-logins = đăng nhập, thông tin đăng nhập, mật khẩu, dang nhap, thong tin dang nhap, mat khau
+# Mutes all tabs playing audio
+quickactions-mute = Tắt tiếng thẻ đang phát âm thanh
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = tắt tiếng, tat tieng, shush, mute, sssssh
 # Opens about:addons page in the plugins section
 quickactions-plugins = Quản lý phần bổ trợ
 quickactions-cmd-plugins = phần bổ trợ, phan bo tro, plugins
@@ -389,7 +461,9 @@ quickactions-cmd-print = in, in trang, print
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Lưu trang dưới dạng PDF
 quickactions-cmd-savepdf2 = pdf, lưu trang, luu trang
-quickactions-cmd-savepdf = pdf, save as pdf
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = Mở trình chỉnh sửa PDF
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Mở cửa sổ riêng tư
 quickactions-cmd-private = duyệt web riêng tư, duyet web rieng tu, cửa sổ riêng tư, cua so rieng tu
@@ -402,6 +476,9 @@ quickactions-cmd-restart = khởi động lại, khoi dong lai
 # Opens the screenshot tool
 quickactions-screenshot3 = Chụp ảnh màn hình
 quickactions-cmd-screenshot2 = chụp màn hình, chup man hinh, ảnh chụp màn hình, anh chup man hinh, screenshot
+# Opens about:translations
+quickactions-translate = Dịch
+quickactions-cmd-translate = dịch
 quickactions-cmd-screenshot = chụp ảnh màn hình, chup anh man hinh
 # Opens about:preferences
 quickactions-settings2 = Quản lý cài đặt
@@ -410,6 +487,10 @@ quickactions-cmd-settings2 = cài đặt, tùy chọn, tùy chỉnh, quản lý,
 quickactions-cmd-settings = cài đặt, tùy chọn, thiết lập, cai dat, tuy chon, thiet lap
 # Opens about:addons page in the themes section
 quickactions-themes = Quản lý chủ đề
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = tien ich, tiện ích, chu de, chủ đề, themes
 quickactions-cmd-themes = chủ đề, chu de, themes
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = Cập nhật { -brand-short-name }
@@ -417,6 +498,9 @@ quickactions-cmd-update = cập nhật, cap nhat, update
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Xem mã nguồn trang
 quickactions-cmd-viewsource2 = xem mã nguồn trang, xem ma nguon trang, trang, source, mã nguồn trang, ma nguon trang
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = Mở { -firefoxlabs-brand-name }
+quickactions-cmd-labs = lab, labs, thử nghiệm, thu nghiem
 quickactions-cmd-viewsource = xem mã nguồn trang, xem ma nguon trang, xem mã nguồn, xem ma nguon, xem nguồn, xem nguon, mã nguồn, ma nguon, source code page, code
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -485,8 +569,8 @@ identity-https-only-info-turn-off2 = Nếu trang có vẻ bị hỏng, bạn có
 identity-https-only-info-turn-on3 = Bật nâng cấp HTTPS cho trang web này nếu bạn muốn { -brand-short-name } nâng cấp kết nối khi có thể.
 identity-https-only-info-turn-off3 = Nếu trang có vẻ bị hỏng, bạn có thể muốn tắt nâng cấp HTTPS cho trang web này để tải lại bằng HTTP không an toàn.
 identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
-identity-permissions-storage-access-header = Cookie trên nhiều trang web
-identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie trên nhiều trang web và lấy thông tin của bạn trên trang web này.
+identity-permissions-storage-access-header = Cookie liên trang web
+identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie liên trang web và lấy thông tin của bạn trên trang web này.
 identity-permissions-storage-access-learn-more = Tìm hiểu thêm
 identity-permissions-reload-hint = Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.
 identity-clear-site-data =
@@ -494,7 +578,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Bạn không được kết nối an toàn với trang web này.
 identity-connection-verified = Bạn đang kết nối an toàn tới trang này.
 identity-ev-owner-label = Chứng nhận được cấp cho:
+identity-verifier-label = Xác minh bởi:
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Được chứng nhận/đủ điều kiện theo quy định tại Quy định (EU) 2024/1183.
 identity-description-custom-root2 = BrowserWorks không công nhận nhà phát hành chứng nhận này. Nó có thể đã được thêm từ hệ điều hành của bạn hoặc bởi quản trị viên.
+identity-cert-exception-overridden = Bạn đã thêm ngoại lệ bảo mật cho trang này.
 identity-remove-cert-exception =
     .label = Loại bỏ ngoại lệ
     .accesskey = R
@@ -527,6 +615,9 @@ browser-window-restore-down-button =
     .tooltiptext = Khôi phục kích thước
 browser-window-close-button =
     .tooltiptext = Đóng
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = Quay lại
 
 ## Tab actions
 
@@ -594,6 +685,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = Vô hiệu hóa bảo vệ chia sẻ cho phiên này
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = Chọn một cổng nối tiếp:
+webserial-no-ports-available = Không có cổng nối tiếp có sẵn
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = Để sử dụng phím tắt F12, trước tiên hãy mở Công cụ phát triển web qua menu Công cụ trình duyệt.
@@ -659,6 +755,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Tiện ích mở rộng:
+urlbar-go-button2 =
+    .title = Mở trang trong thanh địa chỉ
 urlbar-go-button =
     .tooltiptext = Mở trang trong thanh địa chỉ
 urlbar-page-action-button =
@@ -666,8 +764,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = Hiển thị địa chỉ trong thanh địa chỉ
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -684,6 +783,7 @@ urlbar-result-action-search-in-private = Tìm kiếm trong cửa sổ riêng tư
 urlbar-result-action-search-w-engine = Tìm với { $engine }
 urlbar-result-action-sponsored = Được tài trợ
 urlbar-result-action-switch-tab = Chuyển sang thẻ
+urlbar-result-action-move-tab-to-split-view = Di chuyển thẻ sang chế độ chia cửa sổ
 urlbar-result-action-visit = Truy cập
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -723,6 +823,14 @@ urlbar-result-action-copy-to-clipboard = Sao chép
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = không xác định
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = Tiện ích { -brand-product-name }
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = Được đề xuất
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -780,6 +888,128 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · Được tài trợ
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = Hỏi
+
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = Lần cuối bạn truy cập vào { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days = Lần cuối bạn truy cập vào { $daysAgo } ngày trước
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks = Lần cuối bạn truy cập vào { $weeksAgo } tuần trước
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months = Lần cuối bạn truy cập vào { $monthsAgo } tháng trước
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = Lần cuối bạn truy cập vào { $date }
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = Đã đánh dấu { $date }
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = Lần truy cập cuối { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 = Lần truy cập cuối { $daysAgo } ngày trước
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 = Lần truy cập cuối { $weeksAgo } tuần trước
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 = Lần truy cập cuối { $monthsAgo } tháng trước
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = Lần truy cập cuối { $date }
+
+## These strings are used for Realtime suggestions in the urlbar.
+## Market refers to stocks, indexes, and funds.
+
+# This string is shown as title when Market suggestion are disabled.
+urlbar-result-market-opt-in-title = Nhận dữ liệu thị trường chứng khoán ngay trong thanh tìm kiếm của bạn
+# This string is shown as description when Market suggestion are disabled.
+urlbar-result-market-opt-in-description = Hiển thị thông tin cập nhật thị trường và nhiều hơn nữa từ các đối tác của chúng tôi khi bạn chia sẻ dữ liệu truy vấn tìm kiếm với { -vendor-short-name }. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
+# This string is shown as button to activate online when realtime suggestion are disabled.
+urlbar-result-realtime-opt-in-allow = Hiển thị đề xuất
+# This string is shown in split button to dismiss activation the Realtime suggestion.
+urlbar-result-realtime-opt-in-not-now = Không phải bây giờ
+urlbar-result-realtime-opt-in-dismiss = Bỏ qua
+urlbar-result-realtime-opt-in-dismiss-all2 = Không hiển thị những đề xuất này
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = Không hiển thị đề xuất thị trường
+urlbar-result-realtime-opt-in-dismiss-all =
+    .label = Không hiển thị những đề xuất này
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market =
+    .label = Không hiển thị đề xuất thị trường
+# A message that replaces a result when the user dismisses Market suggestions.
+urlbar-result-dismissal-acknowledgment-market = Cảm ơn phản hồi của bạn. Bạn sẽ không thấy đề xuất về thị trường nữa.
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = Gợi ý về thị trường chứng khoán
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-result-dismissal-acknowledgment-all = Cảm ơn phản hồi của bạn. Bạn sẽ không thấy những đề xuất này nữa.
+
+## These strings are used for suggestions of important dates in the urlbar.
+
+# The name of an event and the number of days until it starts separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown = { $name } · Trong { $daysUntilStart } ngày
+# The name of a multiple day long event and the number of days until it starts
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown-range = { $name } · Bắt đầu sau { $daysUntilStart } ngày
+# The name of a multiple day long event and the number of days until it ends
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilEnd (integer) - The number of days until the event ends.
+urlbar-result-dates-ongoing = { $name } · Kết thúc sau { $daysUntilEnd } ngày
+# The name of an event and a note that it is happening today separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-today = { $name } · Hôm nay
+# The name of multiple day long event and a note that it is ends today
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-ends-today = { $name } · Kết thúc hôm nay
 
 ## Strings used for buttons in the urlbar
 
@@ -821,6 +1051,39 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = Không có lối tắt được chọn, hãy chọn một lối tắt
     .tooltiptext = Không có lối tắt được chọn, hãy chọn một lối tắt
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }, chọn một công cụ tìm kiếm
+urlbar-searchmode-button-no-engine2 =
+    .title = Không có lối tắt được chọn, hãy chọn một lối tắt
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = Từ khoá tìm kiếm bị vô hiệu hoá
+urlbar-searchmode-dropmarker2 =
+    .title = Chọn công cụ tìm kiếm
+urlbar-searchmode-bookmarks2 = Dấu trang
+urlbar-searchmode-tabs2 = Thẻ
+urlbar-searchmode-history2 = Lịch sử
+urlbar-searchmode-actions2 = Hành động
+urlbar-searchmode-exit-button2 =
+    .title = Đóng
+urlbar-searchmode-default2 =
+    .title = Công cụ tìm kiếm mặc định
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Thêm “{ $engineName }”
+    .title = Thêm công cụ tìm kiếm “{ $engineName }”
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = Lần này, tìm kiếm với:
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = Tìm kiếm với:
+urlbar-searchmode-popup-search-settings-panelitem = Cài đặt tìm kiếm
+urlbar-searchmode-popup-settings-panelitem = Cài đặt
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -836,6 +1099,21 @@ urlbar-result-action-switch-to-tabgroup = Chuyển đến { $group }
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = Mở { $group }
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = Mở trong thẻ mới
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab =
+    .label = Mở trong thẻ ngăn chứa mới
+    .accesskey = i
+urlbar-view-context-menu-open-in-window =
+    .label = Mở trong cửa sổ mới
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window =
+    .label = Mở trong cửa sổ riêng tư mới
+    .accesskey = P
 
 ## Labels shown above groups of urlbar results
 
@@ -862,6 +1140,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Đang thịnh hành trên { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = Không hiển thị các tìm kiếm thịnh hành
+    .accesskey = K
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = Được tài trợ
@@ -909,6 +1190,9 @@ fullscreen-warning-no-domain = Trang này giờ đã hiển thị toàn màn hì
 fullscreen-exit-button = Thoát toàn màn hình (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Thoát toàn màn hình (esc)
+fullscreen-keyboardlock-exit-button = Thoát toàn màn hình (nhấn và giữ Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = Thoát toàn màn hình (nhấn và giữ esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1004,7 +1288,7 @@ repair-text-encoding-button =
     .label = Sửa chữa mã hóa văn bản
     .tooltiptext = Đoán mã hóa văn bản chính xác từ nội dung trang
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1024,6 +1308,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = Mật khẩu
     .tooltiptext = Xem và quản lý mật khẩu đã lưu của bạn
+qrcode-panel-error =
+    .message = Không thể tạo mã QR. Vui lòng thử lại.
+qrcode-copy-button =
+    .label = Sao chép
+qrcode-copy-success =
+    .message = Đã sao chép mã QR vào bộ nhớ tạm.
+qrcode-copy-error =
+    .message = Không thể sao chép mã QR.
+qrcode-save-button =
+    .label = Lưu
+qrcode-save-success =
+    .message = Đã lưu mã QR.
+qrcode-save-error =
+    .message = Không thể lưu mã QR.
+qrcode-save-title = Lưu mã QR
+qrcode-save-filter-png = Ảnh PNG
+qrcode-save-filename = qrcode.png
+qrcode-window-title = Mã QR
+qrcode-dialog-title = Mã QR
+qrcode-image =
+    .aria-label = Mã QR
+qrcode-close-button =
+    .aria-label = Đóng
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1037,11 +1344,28 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = Các thẻ đã đồng bộ
     .tooltiptext = Hiện thẻ từ các thiết bị khác
+toolbar-button-send-tab =
+    .label = Gửi thẻ
+    .tooltiptext = Gửi thẻ hiện tại sang thiết bị khác
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = Cửa sổ riêng tư mới
     .tooltiptext = Mở một cửa sổ duyệt web riêng tư mới ({ $shortcut })
+toolbar-button-share-tab =
+    .label = Chia sẻ
+    .tooltiptext = Chia sẻ trang này
+toolbar-button-tab-groups =
+    .label = Nhóm thẻ
+    .tooltiptext = Xem nhóm thẻ của bạn
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = qrcode-{ $domain }
 
 ## EME notification panel
 
@@ -1055,12 +1379,23 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 panel-save-update-username = Tên đăng nhập
 panel-save-update-password = Mật khẩu
+panel-save-update-username-2 =
+    .label = Tên đăng nhập
+panel-save-update-password-2 =
+    .label = Mật khẩu
 
 ##
 
 # "More" item in macOS share menu
 menu-share-more =
     .label = Xem thêm…
+menu-share-windows =
+    .label = Tùy chọn khác
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label = Sao chép { $count } liên kết
+    .accesskey = L
 menu-share-copy-link =
     .label = Sao chép liên kết
     .accesskey = L
@@ -1075,6 +1410,9 @@ popups-infobar-allow =
     .accesskey = p
 popups-infobar-block =
     .label = Chặn cửa sổ bật lên từ { $uriHost }
+    .accesskey = p
+popups-infobar-allow2 =
+    .label = Cho phép cửa sổ bật lên và chuyển hướng của bên thứ ba cho { $uriHost }
     .accesskey = p
 
 ##
@@ -1138,6 +1476,10 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Liệt kê tất cả các thẻ
     .tooltiptext = Liệt kê tất cả các thẻ
+
+## Drop indicator text for pinned tabs when no tabs are pinned.
+
+pinned-tabs-drop-indicator = Thả thẻ ở đây để ghim
 
 ## Infobar shown at startup to suggest session-restore
 
@@ -1206,6 +1548,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = Kết thúc phiên riêng tư
     .tooltiptext = Kết thúc phiên riêng tư
+reset-pbm-panel-heading2 = Xoá dữ liệu và bắt đầu phiên riêng tư mới?
+reset-pbm-panel-description2 = Thao tác này sẽ xoá lịch sử, cookie và tất cả dữ liệu khác của trang web mà không đóng Cửa sổ riêng tư.
 reset-pbm-panel-heading = Kết thúc phiên riêng tư của bạn?
 reset-pbm-panel-description = Đóng tất cả các thẻ riêng tư và xóa lịch sử, cookie cũng như tất cả dữ liệu trang web khác.
 reset-pbm-panel-always-ask-checkbox =
@@ -1214,10 +1558,16 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = Hủy bỏ
     .accesskey = C
+reset-pbm-panel-confirm-button2 =
+    .label = Xoá phiên riêng tư
+    .accesskey = l
 reset-pbm-panel-confirm-button =
     .label = Xoá dữ liệu phiên
     .accesskey = D
 reset-pbm-panel-complete = Đã xóa dữ liệu phiên riêng tư
+reset-pbm-toolbar-button2 =
+    .label = Xoá phiên riêng tư
+    .tooltiptext = Xoá phiên riêng tư
 
 ## Autorefresh blocker
 
@@ -1234,6 +1584,7 @@ firefox-relay-offer-why-to-use-relay = Mặt nạ an toàn, dễ sử dụng c�
 #  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = Tất cả email gửi đến email ẩn danh của bạn sẽ được chuyển đến <strong>{ $useremail }</strong> (trừ khi bạn quyết định chặn chúng).
 firefox-relay-offer-legal-notice = Bằng cách nhấp vào “Sử dụng email ẩn danh”, bạn đồng ý với <label data-l10n-name="tos-url">điều khoản sử dụng</label> và <label data-l10n-name="privacy-url">thông báo về quyền riêng tư</label>.
+firefox-relay-offer-legal-notice-1 = Bằng cách đăng ký và tạo email ẩn danh, bạn đồng ý với <label data-l10n-name="tos-url">điều khoản sử dụng</label> và <label data-l10n-name="privacy-url">thông báo về quyền riêng tư</label>.
 
 ## Add-on Pop-up Notifications
 
@@ -1256,10 +1607,24 @@ popup-notification-addon-technical-and-interaction-checkbox =
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
 popup-warning-message = { -brand-short-name } đã chặn trang web này mở { $popupCount } cửa sổ bật lên.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+redirect-warning-with-popup-message =
+    { $popupCount ->
+        [0] { -brand-short-name } đã chặn trang web này chuyển hướng.
+        [1] { -brand-short-name } đã chặn trang web này mở một cửa sổ bật lên và chuyển hướng.
+       *[other] { -brand-short-name } đã chặn trang web này mở { $popupCount } cửa sổ bật lên và chuyển hướng.
+    }
 # The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
 popup-warning-exceeded-message = { -brand-short-name } đã ngăn trang web này mở nhiều hơn { $popupCount } cửa sổ bật lên.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-with-redirect-message =
+    { $popupCount ->
+       *[other] { -brand-short-name } đã chặn trang web này mở nhiều hơn { $popupCount } cửa sổ bật lên và chuyển hướng.
+    }
 popup-warning-button =
     .label =
         { PLATFORM() ->
@@ -1275,6 +1640,10 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Hiển thị '{ $popupURI }'
+# Variables:
+#   $redirectURI (String): the URI for the redirect
+popup-trigger-redirect-menuitem =
+    .label = Hiện “{ $redirectURI }”
 
 ## File-picker crash notification ("FilePickerCrashed.sys.mjs")
 
@@ -1303,3 +1672,95 @@ onboarding-checklist-button-label = Hoàn tất thiết lập
 onboarding-aw-finish-setup-button =
     .label = Hoàn tất thiết lập
     .tooltiptext = Hoàn tất thiết lập { -brand-short-name }
+
+## The urlbar trust icon & panel
+
+trustpanel-etp-label-enabled = Trình chống theo dõi nâng cao đang bật
+trustpanel-etp-label-disabled = Trình chống theo dõi nâng cao đã tắt
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-on =
+    .aria-label = Trình chống theo dõi nâng cao: Đang bật cho { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-off =
+    .aria-label = Trình chống theo dõi nâng cao: Đã tắt cho { $host }
+trustpanel-etp-description-enabled = Nếu có gì đó bị hỏng trên trang web này, hãy thử tắt trình chống.
+trustpanel-etp-description-disabled = { -brand-product-name } cho rằng các công ty nên theo dõi bạn ít hơn. Chúng tôi sẽ chặn càng nhiều trình theo dõi càng tốt khi bạn bật chế độ bảo vệ.
+trustpanel-connection-label-secure = Kết nối an toàn
+trustpanel-connection-label-insecure = Kết nối không an toàn
+trustpanel-header-enabled = { -brand-product-name } đang bảo vệ
+trustpanel-description-enabled2 = Bạn đã được bảo vệ. Nếu chúng tôi phát hiện ra điều gì đó, chúng tôi sẽ cho bạn biết.
+trustpanel-header-enabled-insecure = Hãy cẩn thận trên trang web này
+trustpanel-description-enabled-insecure = { -brand-product-name } nhận thấy điều gì đó đáng ngờ.
+trustpanel-header-disabled = Bạn đã tắt trình chống
+trustpanel-description-disabled = { -brand-product-name } không còn hoạt động. Chúng tôi khuyên bạn nên bật lại trình chống.
+trustpanel-clear-cookies-button = Xóa cookie và dữ liệu trang web
+trustpanel-privacy-link = Cài đặt quyền riêng tư
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-clear-cookies-header =
+    .title = Xóa cookie và dữ liệu trang web cho { $host }
+trustpanel-clear-cookies-description = Việc xóa cookie và dữ liệu trang web có thể khiến bạn đăng xuất khỏi các trang web và xóa giỏ hàng.
+trustpanel-clear-cookies-subview-button-clear = Xóa
+trustpanel-clear-cookies-subview-button-cancel = Hủy bỏ
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-site-information-header =
+    .title = Bảo vệ kết nối cho { $host }
+trustpanel-siteinformation-morelink = Thông tin thêm về trang web
+trustpanel-blocker-see-all = Xem tất cả
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-blocker-header =
+    .title = Trình chống theo dõi cho { $host }
+
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = Không an toàn
+
+## Variables
+##  $count (String): the number of trackers blocked.
+
+trustpanel-blocker-description = { -brand-product-name } cho rằng các công ty nên theo dõi bạn ít hơn. Vì vậy, chúng tôi chặn càng nhiều càng tốt.
+trustpanel-blocked-header = { -brand-product-name } đã chặn những thứ này cho bạn:
+trustpanel-tracking-header = { -brand-product-name } cho phép những điều này để các trang web không bị hỏng:
+trustpanel-tracking-description = Nếu không có trình theo dõi, một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.
+trustpanel-insecure-section-header = Kết nối của bạn không an toàn
+trustpanel-insecure-description = Dữ liệu bạn gửi đến trang web này không được mã hóa. Dữ liệu có thể bị xem, đánh cắp hoặc thay đổi.
+trustpanel-list-label-tracking-cookies = { $count } cookie theo dõi liên trang web
+trustpanel-list-label-tracking-content = Trình theo dõi nội dung
+trustpanel-list-label-fingerprinter = { $count } dấu vết
+trustpanel-list-label-social-tracking = { $count } trình theo dõi truyền thông xã hội
+trustpanel-list-label-cryptominer = { $count } trình đào tiền điện tử
+trustpanel-social-tracking-blocking-tab-header = { -brand-product-name } đã chặn { $count } trình theo dõi truyền thông xã hội
+trustpanel-social-tracking-not-blocking-tab-header = { -brand-product-name } đã cho phép { $count } trình theo dõi truyền thông xã hội
+trustpanel-tracking-cookies-blocking-tab-header = { -brand-product-name } đã chặn { $count } cookie theo dõi liên trang web
+trustpanel-tracking-cookies-not-blocking-tab-header = { -brand-product-name } đã cho phép { $count } cookie theo dõi liên trang web
+trustpanel-tracking-content-blocking-tab-header = { -brand-product-name } đã chặn { $count } trình theo dõi
+trustpanel-tracking-content-not-blocking-tab-header = { -brand-product-name } đã cho phép { $count } trình theo dõi
+trustpanel-tracking-content-tab-list-header = Các trang web này đang cố gắng theo dõi bạn:
+trustpanel-fingerprinter-blocking-tab-header = { -brand-product-name } đã chặn { $count } dấu vết
+trustpanel-fingerprinter-not-blocking-tab-header = { -brand-product-name } đã cho phép { $count } dấu vết
+trustpanel-fingerprinter-list-header = Những trang web này đang cố gắng lấy dấu vết của bạn:
+trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } đã chặn { $count } trình đào tiền điện tử
+trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } đã cho phép { $count } trình đào tiền điện tử
+trustpanel-cryptominer-tab-list-header = Các trang web này đang cố gắng đào tiền điện tử:
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = Đã có tài khoản trên trang web này?
+trustpanel-breachalerts-anonymous-breached-description = { -brand-product-name } phát hiện trang web này đã bị rò rỉ dữ liệu trong vòng 12 tháng qua. Hãy tìm hiểu xem bạn có bị ảnh hưởng hay không.
+trustpanel-breachalerts-anonymous-breached-button-dismiss = Bỏ qua
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = Bắt đầu quét miễn phí
+trustpanel-blocker-section-header2 = <span data-l10n-name="count">{ $count }</span> trình theo dõi bị chặn trên trang web này
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>Trang web bị lỗi?</strong> Tải lại trang để tạm thời giảm mức độ trình chống theo dõi của bạn.
+reduced-protection-infobar-reload-button = Tải lại
+    .accesskey = R
+reduced-protection-infobar-never-show-button = Đừng hiển thị lại
+    .accesskey = D

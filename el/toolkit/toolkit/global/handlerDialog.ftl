@@ -20,6 +20,17 @@ permission-dialog-description-file-app = Να επιτραπεί σε αυτό �
 permission-dialog-description-extension-app = Να επιτραπεί στην επέκταση «{ $extension }» το άνοιγμα του συνδέσμου { $scheme } με το «{ $appName }»;
 permission-dialog-description-system-app = Άνοιγμα του συνδέσμου { $scheme } με το { $appName };
 permission-dialog-description-system-noapp = Άνοιγμα του συνδέσμου { $scheme };
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Να επιτραπεί στον ιστότοπο το άνοιγμα του ψηφιακού πορτοφολιού σας;
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = Το άνοιγμα ενός συνδε΄σμου <strong>{ $scheme }</strong> επιτρέπει στο <strong>{ $host }</strong> να ζητήσει την πραγματική ταυτότητά σας με το <strong>{ $appName }</strong>. Συνεχίστε μόνο αν εμπιστεύεστε αυτόν τον ιστότοπο.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = Το άνοιγμα ενός συνδε΄σμου <strong>{ $scheme }</strong> επιτρέπει σε αυτόν τον ιστότοπο να ζητήσει την πραγματική ταυτότητά σας με το <strong>{ $appName }</strong>. Συνεχίστε μόνο αν εμπιστεύεστε αυτόν τον ιστότοπο.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = Το άνοιγμα ενός συνδε΄σμου <strong>{ $scheme }</strong> επιτρέπει στο <strong>{ $host }</strong> να ζητήσει την πραγματική ταυτότητά σας από το ψηφιακό πορτοφόλι σας. Συνεχίστε μόνο αν εμπιστεύεστε αυτόν τον ιστότοπο.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = Το άνοιγμα ενός συνδε΄σμου <strong>{ $scheme }</strong> επιτρέπει σε αυτόν τον ιστότοπο να ζητήσει την πραγματική ταυτότητά σας από το ψηφιακό πορτοφόλι σας. Συνεχίστε μόνο αν εμπιστεύεστε αυτόν τον ιστότοπο.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start

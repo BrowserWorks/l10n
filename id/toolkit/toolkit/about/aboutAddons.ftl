@@ -492,8 +492,6 @@ details-notification-hard-blocked-other =
     .message = Pengaya ini diblokir karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan.
 details-notification-unsigned-link = Informasi Lebih Lanjut
 details-notification-blocked = { $name } telah dimatikan karena masalah keamanan atau kestabilan.
-details-notification-blocked2 =
-    .message = { $name } telah dimatikan karena masalah keamanan atau kestabilan.
 details-notification-blocked-link2 = Lihat Detail
 details-notification-soft-blocked-extension-disabled =
     .message = Ekstensi ini dibatasi karena melanggar kebijakan BrowserWorks dan telah dinonaktifkan. Anda dapat mengaktifkannya, tetapi ini mungkin berisiko.
@@ -506,8 +504,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Lihat Detail
 details-notification-blocked-link = Informasi Lebih Lanjut
 details-notification-softblocked = { $name } telah dikenali mengakibatkan masalah keamanan atau kestabilan.
-details-notification-softblocked2 =
-    .message = { $name } telah dikenali mengakibatkan masalah keamanan atau kestabilan.
 details-notification-softblocked-link = Informasi Lebih Lanjut
 details-notification-gmp-pending = { $name } akan diinstal sebentar lagi.
 details-notification-gmp-pending2 =
@@ -521,10 +517,3 @@ plugins-openh264-name = Codec Video OpenH264 disediakan oleh Cisco Systems, Inc.
 plugins-openh264-description = Plugin ini diinstal secara otomatis oleh BrowserWorks untuk memenuhi spesifikasi WebRTC dan untuk mengaktifkan panggilan WebRTC dengan perangkat yang menggunakan codec video H.264. Kunjungi http://www.openh264.org/ untuk melihat kode sumber codec dan mempelajari implementasinya lebih lanjut.
 plugins-widevine-name = Modul Dekripsi Konten Widevine disediakan oleh Google Inc.
 plugins-widevine-description = Plugin ini memungkinkan pemutaran media terenkripsi sesuai dengan spesifikasi Encrypted Media Extensions. Media terenkripsi biasanya digunakan oleh situs untuk perlindungan terhadap penyalinan konten media premium. Kunjungi https://www.w3.org/TR/encrypted-media/ untuk informasi lebih lanjut tentang Encrypted Media Extensions.
-
-## Headings for the Permissions tab in `about:addons` when the data collection
-## feature is enabled.
-
-
-## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
-

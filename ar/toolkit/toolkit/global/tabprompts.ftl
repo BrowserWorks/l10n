@@ -5,8 +5,8 @@
 tabmodalprompt-username =
     .value = اسم المستخدم:
 tabmodalprompt-password =
-    .value = كلمة السرّ:
+    .value = كلمة السر:
 tabmodalprompt-ok-button =
-    .label = حسنا
+    .label = حسنًا
 tabmodalprompt-cancel-button =
     .label = ألغِ

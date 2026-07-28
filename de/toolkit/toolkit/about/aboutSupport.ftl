@@ -136,6 +136,10 @@ place-database-stats-efficiency-perc = Effizienz (%)
 place-database-stats-sequentiality-perc = Sequenzialität (%)
 place-database-integrity = Integrität
 place-database-verify-integrity = Integrität überprüfen
+place-database-last-idle-maintenance-data = Datum der letzten Leerlauf-Wartung
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Datum der letzten Bereinigung
+place-database-last-integrity-corruption-date = Datum der letzten Integritätsverletzung
 a11y-title = Barrierefreiheit
 a11y-activated = Aktiviert
 a11y-force-disabled = Barrierefreiheit verhindern
@@ -188,8 +192,8 @@ media-capabilities-enumerate = Datenbankeinträge auflisten
 
 media-codec-support-sw-decoding = Software-Dekodierung
 media-codec-support-hw-decoding = Hardware-Dekodierung
-media-codec-support-sw-encoding = Software-Dekodierung
-media-codec-support-hw-encoding = Hardware-Dekodierung
+media-codec-support-sw-encoding = Software-Kodierung
+media-codec-support-hw-encoding = Hardware-Kodierung
 media-codec-support-codec-name = Codec-Name
 media-codec-support-supported = Unterstützt
 media-codec-support-unsupported = Nicht unterstützt
@@ -337,7 +341,7 @@ support-blocklisted-bug = Aufgrund bekannter Probleme blockiert: <a data-l10n-na
 unknown-failure = Blockiert; Fehlercode { $failureCode }
 d3d11layers-crash-guard = D3D11-Compositor
 glcontext-crash-guard = OpenGL
-wmfvpxvideo-crash-guard = WMF-VPX-Videodekoder
+wmfvpxvideo-crash-guard = WMF-VPX-Videodecoder
 reset-on-next-restart = Bei nächstem Neustart zurücksetzen
 gpu-process-kill-button = GPU-Prozess beenden
 gpu-device-reset = Gerät zurücksetzen
@@ -365,7 +369,7 @@ support-sandbox-gpu-level = Ebene der isolierten Umgebung des GPU-Prozesses
 sandbox-proc-type-content = Inhalt
 sandbox-proc-type-file = Dateiinhalt
 sandbox-proc-type-media-plugin = Medienplugin
-sandbox-proc-type-data-decoder = Datendekoder
+sandbox-proc-type-data-decoder = Datendecoder
 startup-cache-title = Start-Cache
 startup-cache-disk-cache-path = Festplatten-Cache-Ordner
 startup-cache-ignore-disk-cache = Festplatten-Cache ignorieren
@@ -406,7 +410,7 @@ zooming-enabled = sanftes Zoomen durch Antippen aktiviert
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = Asynchone Mausrad-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
+wheel-warning = Asynchrone Mausrad-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
 touch-warning = Asynchrone Berührungs-Eingabe deaktiviert auf Grund nicht unterstützter Einstellung: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.

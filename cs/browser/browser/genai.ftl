@@ -55,12 +55,25 @@ genai-menu-ask-generic =
 # $provider (string) - name of the provider
 genai-menu-ask-provider =
     .label = Zeptat se { $provider }
+genai-menu-open-generic =
+    .label = Otevřít AI chatbota
+# $provider (string) - name of the provider
+genai-menu-open-provider =
+    .label = Otevřít { $provider }
 genai-menu-remove-generic =
     .label = Odebrat AI chatbota
 # $provider (string) - name of the provider
 genai-menu-remove-provider =
     .label = Odebrat { $provider }
-genai-menu-new-badge = Nový
+genai-menu-remove-sidebar =
+    .label = Odebrat z postranní lišty
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Zeptat se { $provider }
+genai-menu-new-badge = Nové
+genai-menu-summarize-page = Shrnutí stránky
+genai-input-ask-smart-window =
+    .placeholder = Zeptejte se…
 genai-input-ask-generic =
     .placeholder = Zeptat se AI chatbota…
 # $provider (string) - name of the provider
@@ -91,12 +104,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Skrýt zkratku chatbota
+genai-menu-choose-chatbot =
+    .label = Vyberte si AI chatbota
+genai-menu-ask-generic-2 =
+    .label = Zeptat se AI chatbota
+    .accesskey = Z
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Zeptat se { $provider }
+    .accesskey = Z
+genai-menu-no-provider-2 =
+    .label = Zeptat se AI chatbota.
+    .accesskey = Z
+genai-menu-ask-smart-window =
+    .label = Zeptejte se
+    .accesskey = Z
 
 ## Chatbot header
 
 genai-chatbot-title = AI chatbot
 genai-header-provider-menu =
     .title = Vyberte si chatbota
+genai-header-settings-button =
+    .title = Nastavení AI chatu
 genai-header-options-button =
     .title = Otevřít nabídku
 genai-header-close-button =
@@ -119,8 +149,14 @@ genai-options-about-chatbot =
            *[no-cases] O AI chatbotech v aplikaci { -brand-short-name }
         }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = Vzhledem k tomu, že stránka je dlouhá, jedná se o částečné shrnutí.
+
 ## Chatbot footer
 
+genai-page-button-summarize = Shrnutí stránky
 
 ## Chatbot onboarding
 
@@ -133,11 +169,11 @@ genai-onboarding-choose-header =
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
 genai-onboarding-description =
     { -brand-short-name.case-status ->
-        [with-cases] Zvolte chatbota AI, kterého chcete používat v postranním panelu  { -brand-short-name(case: "gen") }. Podrobnosti o každém chatbotovi zobrazíte po jeho výběru. Změnit chatbota můžete kdykoliv. <a data-l10n-name="learn-more">Dozvědět se více</a>
-       *[no-cases] Zvolte chatbota AI, kterého chcete používat v postranním panelu aplikace  { -brand-short-name }. Podrobnosti o každém chatbotovi zobrazíte po jeho výběru. Změnit chatbota můžete kdykoliv. <a data-l10n-name="learn-more">Dozvědět se více</a>
+        [with-cases] Zvolte AI chatbota, kterého chcete používat v postranní liště { -brand-short-name(case: "gen") }. Podrobnosti o každém chatbotovi zobrazíte po jeho výběru. Změnit chatbota můžete kdykoliv. <a data-l10n-name="learn-more">Dozvědět se více</a>
+       *[no-cases] Zvolte AI chatbota, kterého chcete používat v postranní liště aplikace { -brand-short-name }. Podrobnosti o každém chatbotovi zobrazíte po jeho výběru. Změnit chatbota můžete kdykoliv. <a data-l10n-name="learn-more">Dozvědět se více</a>
     }
 # "Switch anytime" refers to allowing the user to switch to a different chatbot.
-genai-onboarding-choose-description = Přepnutí je možné kdykoli. Pro pomoc s výběrem si <a data-l10n-name="learn-more">přečtěte více o jednotlivých chatbotech</a>.
+genai-onboarding-choose-description = Přepnutí je možné kdykoliv. Pro pomoc s výběrem si <a data-l10n-name="learn-more">přečtěte více o jednotlivých chatbotech</a>.
 genai-onboarding-primary = Pokračovat
 genai-onboarding-secondary = Zavřít
 genai-onboarding-claude-tooltip =
@@ -168,6 +204,19 @@ genai-chatbot-contextual-subtitle =
        *[no-cases] Můžete chatovat a prohlížet si stránky vedle sebe, když si přidáte AI chatbota do postranní lišty aplikace { -brand-short-name }.
     }
 genai-chatbot-contextual-button = Vyberte si chatbota
+genai-chatbot-summarize-title = Novinka: Shrnutí stránek na jedno klepnutí
+genai-chatbot-summarize-button = Shrnutí stránky
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-provider-subtitle = Klepněte pravým tlačítkem myši na chatbota s umělou inteligencí v postranní liště a vyberte možnost "Shrnutí stránky".
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-generic-subtitle = Klepněte pravým tlačítkem myši na tlačítko s jiskrami v postranní liště a zvolte „Shrnutí stránky“. Poprvé si také vyberete AI chatbota.
+# “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
+genai-chatbot-summarize-footer-provider-subtitle = Otevřete chatbota s umělou inteligencí v postranní liště a dole vyberte možnost "Shrnutí stránky".
+genai-chatbot-summarize-footer-generic-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Přidejte si AI chatbota do postranní lišty { -brand-short-name(case: "gen") } a nechte si rychle zobrazit shrnutí stránek.
+       *[no-cases] Přidejte si AI chatbota do postranní lišty aplikace { -brand-short-name } a nechte si rychle zobrazit shrnutí stránek.
+    }
 
 ## Chatbot onboarding choices
 ## These describe features/capabilities of chatbot providers. These are not buttons/actions.
@@ -215,3 +264,52 @@ link-preview-reading-time =
         [many] Doba čtení: { $range } minut
        *[other] Doba čtení: { $range } minut
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } nedokáže zobrazit náhled tohoto odkazu
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Navštívit odkaz
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } nedokáže pro tuto webovou stránku vygenerovat výčet hlavních myšlenek.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Nastala chyba.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Zkusit znovu
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Nastavení náhledu odkazů
+link-preview-settings-enable =
+    .label = Povolit náhledy odkazů
+    .description = Při použití zkratky nebo klepnutí pravým tlačítkem myši na odkaz se zobrazí název stránky, její popis a další informace.
+link-preview-settings-key-points =
+    .label = Povolit umělé inteligenci přečíst začátek stránky a vygenerovat výčet hlavních myšlenek
+link-preview-settings-long-press =
+    .label = Zkratka: Klepněte na odkaz a ponechte tlačítko myši stisknuté 1 sekundu (dlouhý stisk)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Chcete vidět víc s pomocí umělé inteligence?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message =
+    { -brand-short-name.case-status ->
+        [with-cases] { -brand-short-name } používá umělou inteligenci k přečtení začátku stránky a vygenerování výčtu hlavních myšlenek. Aby bylo upřednostněno vaše soukromí, děje se tak na vašem zařízení.
+       *[no-cases] Aplikace { -brand-short-name } používá umělou inteligenci k přečtení začátku stránky a vygenerování výčtu hlavních myšlenek. Aby bylo upřednostněno vaše soukromí, děje se tak na vašem zařízení.
+    }
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Novinka: Klepněte na libovolný odkaz a ponechte tlačítko myši stisknuté pro vytvoření náhledu
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Zobrazí se krátký popis, odhadovaná doba čtení a další informace, abyste se mohli rozhodnout, zda stojí za to odkaz otevírat. Dostupné také po klepnutí pravým tlačítkem myši.
+# Header for the key points section
+link-preview-key-points-header = Výčet hlavních myšlenek
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Výčet hlavních myšlenek je vygenerován umělou inteligencí a může obsahovat chyby.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = První nastavení • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Příště uvidíte výčet hlavních myšlenek rychleji.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Zobrazit náhled
+# Onboarding card Close button
+link-preview-onboarding-close = Zavřít
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = První nastavení
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Může to chvíli trvat. Příště ale uvidíte výčet hlavních myšlenek rychleji.

@@ -33,11 +33,33 @@ perftools-description-local-build =
     Si está perfilando una compilación hecha por usted mismo en esta
     máquina, añada el objdir de la misma a la lista de abajo para que
     pueda utilizarse para buscar información de símbolos.
+perftools-pick-local-build-directory = Seleccione el directorio de compilación
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Intervalo de muestreo:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -158,7 +180,6 @@ perftools-presets-power-label = Energía
 perftools-presets-power-description = Preestablecido para investigar errores relacionados con el consumo de energía en { -brand-shorter-name }, con poca sobrecarga.
 perftools-presets-debug-label = Depurar
 perftools-presets-debug-description = Preestablecido para depuración en { -brand-shorter-name } Alta sobrecarga, no lo uses para mejoras de rendimiento sino para enfocarte en comprender el comportamiento del navegador.
+perftools-presets-web-compat-label = Compatibilidad web
+perftools-presets-web-compat-description = Ajuste preestablecido recomendado para depurar problemas de compatibilidad en sitios web, en lugar de analizar el rendimiento.
 perftools-presets-custom-label = Personalizado
-
-##
-

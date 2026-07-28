@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Tampilkan
 download-cert-view-text = Periksa sertifikat CA
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -88,10 +85,10 @@ client-auth-cert-details-stored-on = Disimpan di: { $storedOn }
 client-auth-cert-remember-label = Ingat pilihan ini:
 client-auth-cert-remember-never =
     .label = Sekali
+client-auth-cert-remember-always =
+    .label = Secara permanen
 client-auth-cert-remember-temporarily =
     .label = Untuk sesi ini
-client-auth-cert-remember-box =
-    .label = Ingat pilihan ini
 
 ## Set password (p12) dialog
 
@@ -103,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Sandi cadangan sertifikat (ulangi):
 set-password-reminder = Penting: Jika Anda lupa sandi cadangan sertifikat, Anda tidak akan dapat mengembalikan cadangan ini nantinya. Mohon disimpan di lokasi yang aman.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Autentikasi Terlindungi
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Silakan autentikasi ke perangkat keamanan ({ $tokenName }). Cara melakukannya tergantung pada perangkat (misalnya, menggunakan pembaca sidik jari atau memasukkan kode dengan papan tombol).
 
 ## Protected authentication alert
 

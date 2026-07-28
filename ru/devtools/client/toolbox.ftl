@@ -36,10 +36,21 @@ toolbox-mode-everything-sub-label = (Медленнее)
 toolbox-mode-everything-container =
     .title = Отладка всего во всех процессах
 toolbox-mode-parent-process-label = Только родительский процесс
-toolbox-mode-parent-process-sub-label = (Быстро)
+toolbox-mode-parent-process-sub-label = (быстро)
 toolbox-mode-parent-process-container =
     .title = Фокусироваться только на ресурсах родительского процесса.
 toolbox-always-on-top-enabled2 = Отключить всегда наверху
     .title = Это перезапустит Инструменты разработчика
 toolbox-always-on-top-disabled2 = Включить всегда наверху
     .title = Это перезапустит Инструменты разработчика
+
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
+
+# Variables:
+#   $url (String): The local mode URL
+toolbox-local-mode-notice = Этот документ также можно загрузить с «{ $url }», используя «Локальный режим» Инструментов разработчика, который можно включить на панели настроек.
+toolbox-local-mode-notice-add-to-settings-button = Добавить в настройки
+toolbox-local-mode-notice-try-it-button = Попробовать
+toolbox-local-mode-notice-navigate-to-existing-mapping = Перейти к существующему отображению
+toolbox-local-mode-notice-always-hide = Не показывать в следующий раз

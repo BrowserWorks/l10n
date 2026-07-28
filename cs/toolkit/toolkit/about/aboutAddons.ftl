@@ -133,6 +133,8 @@ legacy-extensions-description =
 private-browsing-description2 =
     Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymních oknech mění. Žádné nově nainstalované rozšíření, nebude ve výchozím nastavení v anonymních oknech fungovat, pokud mu to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymních oknech děláte.
     <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření</label>
+aboutaddons-sidebar =
+    .heading = Doplňky
 addon-category-discover = Doporučení
 addon-category-discover-title =
     .title = Doporučení
@@ -183,10 +185,12 @@ extensions-warning-update-security-button = Povolit
 extensions-warning-imported-addons2 =
     .message =
         { -brand-short-name.case-status ->
-            [with-cases] Dokončete instalaci rozšíření importovaných do { -brand-short-name(case: "gen") }.
-           *[no-cases] Dokončete instalaci rozšíření importovaných do aplikace { -brand-short-name }.
+            [with-cases] Dokončete prosím instalaci rozšíření naimportovaných do { -brand-short-name(case: "gen") }.
+           *[no-cases] Dokončete prosím instalaci rozšíření naimportovaných do aplikace { -brand-short-name }.
         }
-extensions-warning-imported-addons-button = Nainstalovat rozšření
+extensions-warning-imported-addons-button = Nainstalovat rozšíření
+extensions-warning-safe-mode3 =
+    .message = Všechny doplňky byly režimem řešení potíží zakázány.
 
 ## Strings connected to add-on updates
 
@@ -246,7 +250,7 @@ shortcuts-remove-button =
     .aria-label = Odebrat zkratku
 shortcuts-browserAction2 = Přidat tlačítko na lištu
 shortcuts-pageAction = Povolit akci stránky
-shortcuts-sidebarAction = Přepnout zobrazení postranního panelu
+shortcuts-sidebarAction = Přepnout zobrazení postranní lišty
 shortcuts-modifier-mac = Zahrnout Ctrl, Alt nebo ⌘
 shortcuts-modifier-other = Zahrnout Ctrl nebo Alt
 shortcuts-invalid = Neplatná kombinace kláves
@@ -290,27 +294,27 @@ header-back-button =
 discopane-intro =
     { -brand-product-name.case-status ->
         [with-cases]
-            Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
+            Rozšíření a vzhledy jsou něco jako aplikace pro váš prohlížeč. S nimi můžete chránit
             svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
             měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
-            někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
+            někdo jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
             pro { -brand-product-name(case: "acc") } díky jejich jedinečné bezpečnosti a funkcím.
        *[no-cases]
-            Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
+            Rozšíření a vzhledy jsou něco jako aplikace pro váš prohlížeč. S nimi můžete chránit
             svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
             měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
-            někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
+            někdo jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
             pro aplikaci { -brand-product-name } díky jejich jedinečné bezpečnosti a funkcím.
     }
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Některá z těchto doporučení se zobrazují na základě informací o ostatních
-    vámi nainstalovaných rozšíření, nastavení profilu a statistik o používání.
+    vámi nainstalovaných rozšířeních, nastavení profilu a statistik o používání.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations2 =
     .message =
         Některá z těchto doporučení se zobrazují na základě informací o ostatních
-        vámi nainstalovaných rozšíření, nastavení profilu a statistik o používání.
+        vámi nainstalovaných rozšířeních, nastavení profilu a statistik o používání.
 discopane-notice-learn-more = Zjistit více
 # Notice for the colorway theme removal
 colorway-removal-notice-message =
@@ -324,6 +328,14 @@ colorway-removal-notice-message =
         }
 colorway-removal-notice-learn-more = Zjistit více
 colorway-removal-notice-button = Získejte aktualizované palety barev
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Nastavení kontrastu ve Windows přepisuje motivy vzhledu { -brand-short-name(case: "gen") }. Pokud chcete používat motivy ve { -brand-short-name(case: "loc") }, vypněte tato nastavení.
+           *[no-cases] Nastavení kontrastu ve Windows přepisuje motivy vzhledu aplikace { -brand-short-name }. Pokud chcete používat motivy v aplikaci { -brand-short-name }, vypněte tato nastavení.
+        }
 privacy-policy = Zásady ochrany osobních údajů
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -534,11 +546,18 @@ available-updates-heading = Dostupné aktualizace
 recent-updates-heading = Aktualizováno
 release-notes-loading = Načítání…
 release-notes-error = Omlouváme se, ale při načítání poznámek k vydání nastala chyba.
+addon-permissions-heading = Oprávnění
 addon-permissions-empty2 = Toto rozšíření nevyžaduje žádná oprávnění.
+addon-permissions-required-label = Vyžadováno:
+addon-permissions-optional-label = Volitelné:
 addon-permissions-empty = Toto rozšíření nevyžaduje žádná oprávnění.
 addon-permissions-required = Vyžadovaná oprávnění pro základní funkce:
 addon-permissions-optional = Volitelná oprávnění pro dodatečné funkce:
 addon-permissions-learnmore = Zjistit více o oprávněních
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Některá oprávnění jsou spravována vaší organizací.
 recommended-extensions-heading = Doporučená rozšíření
 recommended-themes-heading = Doporučené vzhledy
 # Variables:
@@ -621,11 +640,17 @@ details-notification-hard-blocked-other =
     .message = Toto rozšíření bylo zablokováno z důvodu porušování pravidel Mozilly a bylo zakázáno.
 details-notification-unsigned-link = Více informací
 details-notification-blocked = Doplněk { $name } byl zakázán kvůli problémům se zabezpečením nebo stabilitou.
-details-notification-blocked2 =
-    .message = Doplněk { $name } byl zakázán kvůli problémům se zabezpečením nebo stabilitou.
 details-notification-blocked-link2 = Zobrazit podrobnosti
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Toto rozšíření je omezeno a bylo zakázáno. Můžete ho povolit, ale může to být riskantní.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Toto rozšíření je omezeno. Jeho používání může být riskantní.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Tento doplněk je omezen a byl zakázán. Můžete ho povolit, ale může to být riskantní.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Tento doplněk je omezený. Jeho používání může být riskantní.
 details-notification-soft-blocked-extension-disabled =
-    .message = Toto rozšíření porušuje pravidla Mozilly a bylo proto zakázáno. Můžete jej povolit, ale může to být riskantní.
+    .message = Toto rozšíření porušuje pravidla Mozilly a bylo proto zakázáno. Můžete ho povolit, ovšem může to být nebezpečné.
 details-notification-soft-blocked-extension-enabled =
     .message = Toto rozšíření porušuje zásady společnosti BrowserWorks. Jeho používání může být riskantní.
 details-notification-soft-blocked-other-disabled =
@@ -635,8 +660,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Zobrazit podrobnosti
 details-notification-blocked-link = Více informací
 details-notification-softblocked = Doplněk { $name } způsobuje bezpečnostní a výkonnostní problémy.
-details-notification-softblocked2 =
-    .message = Doplněk { $name } způsobuje bezpečnostní a výkonnostní problémy.
 details-notification-softblocked-link = Více informací
 details-notification-gmp-pending = { $name } bude brzy nainstalován.
 details-notification-gmp-pending2 =
@@ -662,23 +685,28 @@ permissions-data-addon-button = Oprávnění a data
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Používáno rozšířením { $extensionName }
+addon-permissions-data-collection-heading = Sběr dat
+addon-permissions-data-collection-empty = Vývojář uvádí, že toto rozšíření nevyžaduje sběr dat.
+addon-data-collection-provided = Informace poskytnuté vývojářem rozšíření
+addon-data-collection-learnmore = Zjistit více o sběru dat
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = { -brand-short-name } to používá na stránce about:inference
-mlmodel-link-preview = { -brand-short-name } toto používá ke generování klíčových bodů když provádíte náhledy odkazů
+mlmodel-link-preview = { -brand-short-name } toto používá ke generování výčtu hlavních myšlenek při zobrazování náhledu odkazů
 mlmodel-pdfjs = { -brand-short-name } toto používá k vytváření alternativního textu pro obrázky, které přidáváte do souborů PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } toto používá k navrhování názvů vašich skupin panelů
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } toto používá k navrhování panelů pro vaše skupiny panelů
+mlmodel-formfill-engine = { -brand-short-name } toto používá při vyplňování formulářů adresy
 # AI Model will be downloaded on the users device and used locally
-addon-category-mlmodel = Umělá inteligence na zařízení
+addon-category-mlmodel = Místně uložená AI
 addon-category-mlmodel-title =
-    .title = Umělá inteligence na zařízení
-mlmodel-heading = Správa modelů umělé inteligence na zařízení
+    .title = Místně uložená umělá inteligence
+mlmodel-heading = Správa místně uložených modelů umělé inteligence
 mlmodel-description =
     { -brand-short-name.case-status ->
-        [with-cases] Některé funkce a rozšíření ve { -brand-short-name(case: "loc") } jsou postaveny na modelech umělé inteligence, které fungují lokálně na vašem zařízení. Tento přístup chrání vaše soukromí a v mnoha případech i zrychluje výkon. <a data-l10n-name="learn-more">Zjistit více</a>
-       *[no-cases] Některé funkce a rozšíření v aplikaci { -brand-short-name } jsou postaveny na modelech umělé inteligence, které fungují lokálně na vašem zařízení. Tento přístup chrání vaše soukromí a v mnoha případech i zrychluje výkon. <a data-l10n-name="learn-more">Zjistit více</a>
+        [with-cases] Některé funkce a rozšíření { -brand-short-name(case: "gen") } využívají modely umělé inteligence, které běží místně na vašem zařízení. Tento přístup chrání vaše soukromí a v mnoha případech i zrychluje výkon. <a data-l10n-name="learn-more">Zjistit více</a>
+       *[no-cases] Některé funkce a rozšíření aplikace { -brand-short-name } využívají modely umělé inteligence, které běží místně na vašem zařízení. Tento přístup chrání vaše soukromí a v mnoha případech i zrychluje výkon. <a data-l10n-name="learn-more">Zjistit více</a>
     }
 # Label for button that when clicked removed local model
 mlmodel-remove-addon-button =

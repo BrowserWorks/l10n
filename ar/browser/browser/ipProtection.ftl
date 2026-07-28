@@ -1,0 +1,261 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Toolbar button tooltip reflects VPN state
+
+ipprotection-button =
+    .label = VPN
+    .tooltiptext = VPN
+ipprotection-button-error =
+    .label = شغِّل VPN
+    .tooltiptext = شغِّل VPN
+
+##
+
+# The word "Beta" is intended to be uppercase in the experiment label.
+ipprotection-experiment-badge =
+    .label = نسخة التجريبية
+ipprotection-help-button =
+    .tooltiptext = افتح صفحة دعم VPN
+ipprotection-title = VPN
+
+## Buttons used for all feature introduction callouts
+
+ipprotection-feature-introduction-title = نقدم لكم خدمة VPN، الآن مباشرة داخل متصفحك
+ipprotection-feature-introduction-title-1 = جرّب خدمة VPN المدمجة في { -brand-product-name }
+ipprotection-feature-introduction-link-text-2 = استخدم خاصية <a data-l10n-name="learn-more-vpn">VPN المدمجة</a> الجديدة لدينا لإخفاء موقعك وحماية بياناتك.
+# Used for callout for users who expressed interest in privacy in onboarding
+ipprotection-feature-introduction-title-privacy = أضف طبقة أخرى من الخصوصية
+ipprotection-feature-introduction-link-text-private-browsing-2 = استخدم خاصية <a data-l10n-name="learn-more-vpn">VPN المدمجة</a> الجديدة لدينا لإخفاء موقعك وحماية بياناتك، حتى عندما تكون في نافذة خاصة.
+ipprotection-feature-introduction-description-private-browsing = تصفح الإنترنت بحماية إضافية عن طريق إخفاء موقعك حتى عندما تكون في نافذة خاصة.
+# Used for callout shown on login to public wi-fi through a captive portal
+ipprotection-feature-introduction-title-captive-portal = هل تستخدم شبكة واي فاي عامة؟ جرّب خدمة VPN المدمجة في { -brand-product-name }.
+ipprotection-feature-introduction-description-captive-portal = تصفح الإنترنت بحماية إضافية عن طريق إخفاء موقعك حتى على شبكات الواي فاي العامة.
+ipprotection-feature-introduction-button-primary = التالي
+ipprotection-feature-introduction-button-secondary-not-now = ليس الآن
+ipprotection-feature-introduction-button-secondary-not-now-menuitem =
+    .label = ليس الآن
+ipprotection-feature-introduction-button-secondary-no-thanks = لا، شكرًا
+ipprotection-feature-introduction-button-secondary-no-thanks-menuitem =
+    .label = لا، شكرًا
+ipprotection-feature-introduction-button-secondary-remove = أزِل الـ VPN من شريط الأدوات
+ipprotection-feature-introduction-button-secondary-remove-1 =
+    .label = أزِل الـ VPN من شريط الأدوات
+ipprotection-feature-introduction-button-get-started = ابدأ
+
+## Site settings callout
+
+ipprotection-site-settings-callout-title = اختر المكان الذي تستخدم فيه VPN
+ipprotection-site-settings-callout-subtitle = أوقِف تشغيل VPN لموقع معين وسنتذكره في المرة القادمة التي تزوره فيها.
+ipprotection-site-settings-callout-button = فهمت
+
+## Location selection callout
+
+ipprotection-location-selection-callout-title = جديد: غيّر موقعك
+ipprotection-location-selection-callout-primary-button = جرّبه
+ipprotection-location-selection-callout-secondary-button = رفض
+
+## Panel
+
+# Also used for the callout shown in private browsing
+unauthenticated-vpn-title = جرّب خدمة VPN المدمجة في { -brand-product-name }
+unauthenticated-hide-location-message-3 = <a data-l10n-name="learn-more-vpn">إخفاء موقعك</a> أثناء التصفح في { -brand-product-name }.
+unauthenticated-private-location-message = يساعد <a data-l10n-name="learn-more-vpn">في الحفاظ على خصوصية موقعك</a> في { -brand-product-name }.
+unauthenticated-get-started = ابدأ
+unauthenticated-terms-of-service-privacy-notice = مِن خلال الاستمرار، فإنك توافق على <a data-l10n-name="vpn-terms-of-service">شروط الخدمة</a> و <a data-l10n-name="vpn-privacy-notice">تنويه الخصوصية</a>.
+site-exclusion-toggle-enabled-1 =
+    .label = استخدم VPN لهذا الموقع
+    .aria-label = ال VPN مفعّل لهذا الموقع
+site-exclusion-toggle-disabled-1 =
+    .label = استخدم VPN لهذا الموقع
+    .aria-label = ال VPN معطّل لهذا الموقع
+site-exclusion-toggle-description = الموقع لا يعمل؟ حاول إيقاف تشغيل VPN.
+ipprotection-settings-link =
+    .label = الإعدادات
+
+## Status card
+
+# Button to turn off the VPN
+ipprotection-button-turn-vpn-off = ال VPN متوقف
+# Button to turn off the VPN when the VPN panel is open while viewing
+# a page from an excluded site.
+ipprotection-button-turn-vpn-off-excluded-site = ال VPN متوقف في كل مكان
+# Button to turn on the VPN
+ipprotection-button-turn-vpn-on = شغِّل VPN
+# Button while VPN is connecting
+ipprotection-button-connecting = يشغل…
+ipprotection-connection-status-connected-1 = ال VPN مفعّل
+    .aria-label = ال VPN مفعّل
+ipprotection-connection-status-disconnected-1 = ال VPN معطّل
+    .aria-label = ال VPN معطّل
+ipprotection-connection-status-excluded-1 = ال VPN معطّل لهذا الموقع
+    .aria-label = ال VPN معطّل لهذا الموقع
+ipprotection-connection-status-connecting-1 = يتصل VPN...
+    .aria-label = يتصل VPN...
+
+## Location controls
+
+# The button displays the selected VPN location.
+# This shows the default selection, "Recommended" which is the recommended location as determined by Firefox.
+ipprotection-recommended-location-button = الموقع: يُنصح به
+ipprotection-recommended-location-description = { -brand-product-name } يجد أسرع موقع
+ipprotection-recommended-location-badge = جديد
+# Variables
+#   $country (string) - The country selected for the VPN server location
+ipprotection-location-country-button = الموقع: { $country }
+ipprotection-locations-subview =
+    .title = اختر الموقع
+ipprotection-locations-subview-description = اختر موقعًا مختلفًا للتصفح منه.
+ipprotecion-locations-subview-recommended-label = يُنصح به
+ipprotection-locations-subview-recommended-description = يجد أسرع موقع
+# Label shown next to a VPN location that the user cannot select.
+# The aria-label is for accessibility, and should communicate that the
+# location is unavailable and the button is disabled.
+ipprotection-locations-unavailable-label-1 = غير متوفر
+    .aria-label = غير متوفر، مُعطّل
+# Label shown next to a VPN location that the user cannot select.
+ipprotection-locations-unavailable-label = غير متوفر
+ipprotection-locations-subview-promo-button = احصل على { -mozilla-vpn-brand-name }
+
+## VPN paused state
+
+upgrade-vpn-title = احصل على حماية إضافية تتجاوز المتصفح
+upgrade-vpn-description = اختر موقع VPN الخاص بك، واستخدم VPN لجميع تطبيقاتك وما يصل إلى 5 أجهزة، وابقَ آمنًا على أي شبكة - سواء في المنزل أو على شبكة Wi-Fi العامة.
+upgrade-vpn-button = جرّب { -mozilla-vpn-brand-name }
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-connection-status-paused-description-1 = لقد استهلكت كامل بيانات VPN الخاصة بك، والتي تبلغ { $maxUsage } ج.بايت. سيُصفّر الوصول الشهر المقبل.
+ipprotection-connection-status-paused-title-2 = توقف خدمة VPN مؤقتًا
+    .aria-label = توقف خدمة VPN مؤقتًا
+
+## Messages and errors
+
+ipprotection-connection-status-generic-error-description = حاول مرة أخرى بعد بضع دقائق.
+ipprotection-connection-status-generic-error-try-again = من فضلك حاول ثانية فيما بعد.
+ipprotection-connection-status-network-error-title-1 = تحقَّق من اتصالك بالإنترنت
+    .aria-label = تحقَّق من اتصالك بالإنترنت
+ipprotection-connection-status-network-error-description = اتصل بالإنترنت، ثم حاول تشغيل VPN.
+ipprotection-connection-status-blocked-error-title-1 = خدمة VPN غير متاحة
+    .aria-label = خدمة VPN غير متاحة
+ipprotection-connection-status-blocked-error-description = تمنعنا القوانين المحلية من تقديم خدمة VPN في هذه المنطقة. <a data-l10n-name="learn-more-link">اطّلع على المزيد</a>
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-message-bandwidth-warning =
+    .heading = اقتربت من الحد الأقصى لاستخدام VPN الخاص بك
+    .message = لديك { $usageLeft }ج.بايت متبقية من { $maxUsage }ج.بايت لهذا الشهر.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-message-bandwidth-warning-mb =
+    .heading = اقتربت من الحد الأقصى لاستخدام VPN الخاص بك
+    .message = لديك { $usageLeft }م.بايت متبقية من { $maxUsage }ج.بايت لهذا الشهر.
+ipprotection-message-continuous-onboarding-intro = شغّل VPN لإخفاء موقعك وإضافة تعمية إضافي لتصفحك.
+ipprotection-message-continuous-onboarding-autostart = <a data-l10n-name="setting-link">عيّن لتشغيل VPN</a> في كل مرة تفتح فيها { -brand-short-name } للحصول على طبقة إضافية من الحماية.
+ipprotection-message-continuous-onboarding-site-settings = سيحفظ { -brand-short-name } المواقع الإلكترونية التي عينتها لاستخدام VPN. يمكنك تحديث هذه الإعدادات في <a data-l10n-name="setting-link">الإعدادات</a> في أي وقت.
+confirmation-hint-ipprotection-navigated-to-excluded-site = ال VPN معطّل لهذا الموقع
+ipprotection-open-button = افتح { -brand-product-name }
+ipprotection-come-back-title = عُد لتجربة VPN المدمج
+ipprotection-connection-status-generic-error-title-1 = تعذّر الاتصال بشبكة VPN
+    .aria-label = تعذّر الاتصال بشبكة VPN
+
+## IP Protection bandwidth callouts
+
+ipprotection-bandwidth-upgrade-title = أتحب استخدام VPN المدمج؟ احصل على حماية أكبر خارج { -brand-product-name } مع { -mozilla-vpn-brand-name }.
+ipprotection-bandwidth-upgrade-text = اختر موقع VPN وأضف الحماية لجميع تطبيقاتك على ما يصل إلى 5 أجهزة، سواء كنت في المنزل أو على شبكة Wi-Fi عامة.
+
+## IP Protection bandwidth warning infobar
+
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+ip-protection-bandwidth-warning-infobar-message-75 = <strong>اقتربت من الحد الأقصى لاستخدام VPN الخاص بك.</strong> لديك { $usageLeft } جي.بايت متبقية. ستُصفّر بياناتك في بداية الشهر القادم.
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+ip-protection-bandwidth-warning-infobar-message-90 = <strong>لقد أوشكت بيانات VPN الخاصة بك على النفاد.</strong> لديك { $usageLeft } ج.بايت متبقية. بمجرد استهلاكها بالكامل، سيتوقف VPN مؤقتًا حتى تُصفَّر بياناتك في الأول من الشهر القادم.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+ip-protection-bandwidth-warning-infobar-message-90-mb = <strong>لقد أوشكت بيانات VPN الخاصة بك على النفاد.</strong> لديك { $usageLeft } م.بايت متبقية. بمجرد استهلاكها بالكامل، سيتوقف VPN مؤقتًا حتى تُصفَّر بياناتك في الأول من الشهر القادم.
+
+## IP Protection Settings
+
+ip-protection-description =
+    .label = VPN
+    .description = VPN مدمج لتعزيز خصوصيتك أثناء التصفح على { -brand-short-name }.
+ip-protection-description-1 =
+    .label = VPN مدمج
+    .description = احصل على خصوصية إضافية من خلال إخفاء موقعك أثناء التصفح.
+ip-protection-learn-more = اطّلع على المزيد
+ip-protection-not-opted-in-button = ابدأ
+ip-protection-autostart =
+    .label = شغِّل VPN تلقائيًا
+ip-protection-autostart-checkbox =
+    .label = عندما أفتح { -brand-short-name }
+ip-protection-autostart-private-checkbox =
+    .label = في النوافذ الخاصة
+ip-protection-vpn-upgrade-link-1 =
+    .label = عزّز حمايتك باستخدام { -mozilla-vpn-brand-name }
+    .description = اختر من بين أكثر من 300 موقع واحمِ جميع تطبيقاتك على ما يصل إلى 5 أجهزة.
+
+## IP Protection dialogs
+
+ip-protection-exceptions-dialog-window =
+    .title = أدِر إعدادات الموقع الإلكتروني
+ip-protection-exclusions-desc = استخدم VPN لجميع المواقع الإلكترونية باستثناء تلك الموجودة في هذه القائمة. أضف موقعًا إلكترونيًا من هنا أو عن طريق تشغيل VPN.
+
+## IP Protection Bandwidth
+
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-gb = { $usageLeft } ج.بايت من أصل { $maxUsage } ج.بايت متبقية هذا الشهر
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-gb = { $usageLeft } ج.بايت من أصل { $maxUsage } ج.بايت متبقية
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-mb = { $usageLeft } ج.بايت من أصل { $maxUsage } ج.بايت متبقية في هذا الشهر
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-mb = { $usageLeft } م.بايت من { $maxUsage } ج.بايت متبقية
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-hit-for-the-month = لقد استهلكت كامل بيانات VPN الخاصة بك، والتي تبلغ { $maxUsage } ج.بايت. يُصفّر الوصول الشهر المقبل.
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-help-text = يُصفّر إلى { $maxUsage } ج.بايت في الأول من كل شهر.
+ip-protection-bandwidth-header-1 = حد البيانات الشهري
+
+## IP Protection bandwidth reset callout
+
+# Variables
+#  $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-bandwidth-reset-title = { $maxUsage } ج.بايت من بيانات VPN، أُنعشت وجاهزة للاستخدام
+ipprotection-bandwidth-reset-text = شغّل VPN لتعزيز خصوصيتك بشكل إضافي، مجانًا كل شهر.
+ipprotection-bandwidth-reset-button = فهمت
+
+## IP Protection add-on breakage warnings
+
+ipp-activator-breakage-sign-in-warning = <strong>قد لا يعمل هذا الموقع الإلكتروني مع شبكة VPN.</strong> حاول ولوج أو إيقاف تشغيل VPN أثناء استخدام هذا الموقع.
+ipp-activator-breakage-turn-off-warning = <strong>قد لا يعمل هذا الموقع الإلكتروني مع شبكة VPN.</strong> حاول إيقاف تشغيل VPN أثناء استخدام هذا الموقع.
+
+## IP Protection alerts
+
+vpn-paused-alert-title = توقف خدمة VPN مؤقتًا
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+vpn-paused-alert-body = لقد استهلكت كامل بيانات VPN الخاصة بك، والتي تبلغ { $maxUsage } ج.بايت. سيتم تصفير الوصول إلى VPN الشهر المقبل.
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+vpn-error-page-paused-description = لقد استهلكت كامل بيانات VPN الخاصة بك، والتي تبلغ { $maxUsage } ج.بايت. سيُصفّر الوصول الشهر المقبل.
+vpn-error-page-continue-description = اختر كيفية المتابعة بدون استخدام VPN
+vpn-error-page-keep-browsing = استمر في التصفح في هذه الجلسة
+vpn-error-page-new-session = ابدأ جلسة جديدة
+vpn-paused-alert-close-tabs-button = أغلق كل الألسنة
+vpn-paused-alert-continue-wo-vpn-button = واصِل بدون VPN
+vpn-error-alert-title = خدمة VPN لا تعمل حاليًا.
+vpn-error-alert-body = حاول مجددًا لاحقًا.

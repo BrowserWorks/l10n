@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = 방문 및 다운로드 기록
     .accesskey = B
 item-history-and-downloads-description2 = 사이트 및 다운로드 기록 지우기
-item-history-form-data-downloads =
-    .label = 기록
-    .accesskey = H
-item-history-form-data-downloads-description = 사이트 및 다운로드 기록과 저장된 양식 정보 및 검색을 지움
 item-cookies =
     .label = 쿠키
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = 모든 기록이 지워집니다.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = 모든 선택한 항목이 지워집니다.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = 계산 중…

@@ -16,11 +16,14 @@ permissions-disable-etp =
     .label = เพิ่มข้อยกเว้น
     .accesskey = ย
 permissions-session =
-    .label = อนุญาตในวาระ
+    .label = อนุญาตในเซสชัน
     .accesskey = น
 permissions-allow =
     .label = อนุญาต
     .accesskey = อ
+permissions-add =
+    .label = เพิ่ม
+    .accesskey = พ
 permissions-button-off =
     .label = ปิด
     .accesskey = ด
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = เอาเว็บไซต์ทั้งหมดออก
     .accesskey = ว
+permissions-save-changes-2 =
+    .buttonlabelaccept = บันทึกการเปลี่ยนแปลง
+    .buttonaccesskeyaccept = บ
 permission-dialog =
     .buttonlabelaccept = บันทึกการเปลี่ยนแปลง
     .buttonaccesskeyaccept = บ
@@ -60,7 +66,7 @@ permissions-capabilities-listitem-allow =
 permissions-capabilities-listitem-block =
     .value = ปิดกั้น
 permissions-capabilities-listitem-allow-session =
-    .value = อนุญาตในวาระ
+    .value = อนุญาตในเซสชัน
 permissions-capabilities-listitem-off =
     .value = ปิด
 permissions-capabilities-listitem-off-temporarily =
@@ -83,7 +89,14 @@ permissions-exceptions-manage-etp-desc = คุณสามารถระบุ
 permissions-exceptions-cookie-window2 =
     .title = ข้อยกเว้น - คุกกี้และข้อมูลไซต์
     .style = { permissions-window2.style }
-permissions-exceptions-cookie-desc = คุณสามารถระบุเว็บไซต์ที่จะอนุญาตหรือไม่อนุญาตให้ใช้คุกกี้และข้อมูลไซต์เสมอได้ พิมพ์ที่อยู่ของไซต์ที่คุณต้องการจัดการแล้วคลิก ปิดกั้น อนุญาตในวาระ หรือ อนุญาต
+permissions-exceptions-cookie-desc = คุณสามารถระบุเว็บไซต์ที่จะอนุญาตหรือไม่อนุญาตให้ใช้คุกกี้และข้อมูลไซต์เสมอได้ พิมพ์ที่อยู่ของไซต์ที่คุณต้องการจัดการแล้วคลิก ปิดกั้น อนุญาตในเซสชัน หรือ อนุญาต
+
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = ข้อยกเว้น - ล้างประวัติเมื่อปิดโปรแกรม
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = คุณสามารถระบุเว็บไซต์ที่เก็บข้อมูลไว้เมื่อ { -brand-short-name } ล้างประวัติตอนปิดได้ พิมพ์ที่อยู่ของไซต์ที่คุณต้องการจัดการแล้วคลิก อนุญาต
 
 ## Exceptions - HTTPS-Only Mode
 
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = คุณสามารถปิดโหมด HTTPS-Only สำหรับแต่ละเว็บไซต์ได้ { -brand-short-name } จะไม่พยายามอัปเกรดการเชื่อมต่อเป็น HTTPS แบบปลอดภัยสำหรับไซต์เหล่านั้น ข้อยกเว้นจะไม่นำไปใช้กับหน้าต่างส่วนตัว
 permissions-exceptions-https-only-desc2 = คุณสามารถปิดโหมด HTTPS-Only สำหรับแต่ละเว็บไซต์ได้ { -brand-short-name } จะไม่พยายามอัปเกรดการเชื่อมต่อเป็น HTTPS แบบปลอดภัยสำหรับไซต์เหล่านั้น
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = เว็บไซต์ที่อนุญาต - ป๊อปอัปและการเปลี่ยนทางจากบุคคลที่สาม
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = คุณสามารถระบุเว็บไซต์ที่จะอนุญาตให้เปิดหน้าต่างป๊อปอัปและเปลี่ยนเส้นทางด้วยเฟรมจากบุคคลที่สามได้
 
 ## Exceptions - Pop-ups
 
@@ -168,6 +188,26 @@ permissions-site-camera-disable-label =
     .label = ปิดกั้นคำร้องขอใหม่ที่ขอเข้าถึงกล้องของคุณ
 permissions-site-camera-disable-desc = นี่จะป้องกันไม่ให้เว็บไซต์ใดๆ ที่ไม่ได้ระบุไว้ด้านบนขออนุญาตเพื่อเข้าถึงกล้องของคุณ การปิดกั้นการเข้าถึงกล้องของคุณอาจทำให้คุณลักษณะบางอย่างของเว็บไซต์ไม่สมบูรณ์
 
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = การตั้งค่า - แอปและบริการบนอุปกรณ์
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = เว็บไซต์เหล่านี้ได้ขอเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์นี้ คุณสามารถเลือกที่จะอนุญาตหรือปิดกั้นไม่ให้ไซต์ทำเช่นนี้ได้
+permissions-site-localhost-disable-label =
+    .label = ปิดกั้นคำขอใหม่ที่ขอเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์นี้
+permissions-site-localhost-disable-desc = นี่จะหยุดเว็บไซต์ใด ๆ ที่ไม่ได้ระบุไว้ด้านบนขออนุญาตเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์นี้ การทำเช่นนี้อาจทำให้คุณลักษณะเว็บไซต์บางอย่างใช้งานไม่ได้
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = การตั้งค่า - อุปกรณ์เครือข่ายเฉพาะที่
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = เว็บไซต์เหล่านี้ได้ขอเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์ที่เชื่อมต่อกับ Wi-Fi หรือเครือข่ายเฉพาะที่ของคุณ คุณสามารถเลือกที่จะอนุญาตหรือปิดกั้นไม่ให้ไซต์ทำเช่นนี้ได้
+permissions-site-local-network-disable-label =
+    .label = ปิดกั้นคำขอใหม่ที่ขอเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์ที่เชื่อมต่อกับ Wi-Fi หรือเครือข่ายเฉพาะที่ของคุณ
+permissions-site-local-network-disable-desc = นี่จะหยุดเว็บไซต์ใด ๆ ที่ไม่ได้ระบุไว้ด้านบนขออนุญาตเข้าถึงแอปและบริการต่าง ๆ บนอุปกรณ์ที่เชื่อมต่อกับ Wi-Fi หรืออุปกรณ์เครือข่ายเฉพาะที่ของคุณ การทำเช่นนี้อาจทำให้คุณลักษณะเว็บไซต์บางอย่างใช้งานไม่ได้
+
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window2 =
@@ -176,7 +216,7 @@ permissions-site-microphone-window2 =
 permissions-site-microphone-desc = เว็บไซต์ดังต่อไปนี้ได้ขอเข้าถึงไมโครโฟนของคุณ คุณสามารถระบุเว็บไซต์ที่อนุญาตให้เข้าถึงไมโครโฟนของคุณ คุณยังสามารถปิดกั้นคำขอใหม่ที่ขอเข้าถึงไมโครโฟนของคุณ
 permissions-site-microphone-disable-label =
     .label = ปิดกั้นคำร้องขอใหม่ที่ขอเข้าถึงไมโครโฟนของคุณ
-permissions-site-microphone-disable-desc = นี่จะป้องกันไม่ให้เว็บไซต์ใดๆ ที่ไม่ได้ระบุไว้ด้านบนขออนุญาตเพื่อเข้าถึงไมโครโฟนของคุณ การปิดกั้นการเข้าถึงไมโครโฟนของคุณอาจทำให้คุณลักษณะบางอย่างของเว็บไซต์ไม่สมบูรณ์
+permissions-site-microphone-disable-desc = นี่จะป้องกันไม่ให้เว็บไซต์ใด ๆ ที่ไม่ได้ระบุไว้ด้านบนขออนุญาตเพื่อเข้าถึงไมโครโฟนของคุณ การปิดกั้นการเข้าถึงไมโครโฟนของคุณอาจทำให้คุณลักษณะบางอย่างของเว็บไซต์ไม่สมบูรณ์
 
 ## Site Permissions - Speaker
 ##

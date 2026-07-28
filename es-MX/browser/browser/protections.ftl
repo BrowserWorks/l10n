@@ -28,12 +28,12 @@ protection-report-page-content-title = Panel de protecciones
 protection-report-page-summary = { -brand-short-name } puede proteger tu privacidad entre bastidores mientras navegas. Este es un resumen personalizado de esas protecciones, incluidas las herramientas para tomar el control de tu seguridad en línea.
 # This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } protege tu privacidad tras bambalinas mientras navegas. Este es un resumen personalizado de estas protecciones, incluyendo herramientas para tomar el control de tu vida en línea.
-protection-report-settings-link = Administrar tu configuración de privacidad y seguridad
+protection-report-settings-link = Administra tu configuración de privacidad y seguridad
 etp-card-title-always = Protección contra rastreo mejorada: siempre activa
 etp-card-title-custom-not-blocking = Protección contra rastreo mejorada: desactivada
 etp-card-content-description = { -brand-short-name } bloquea automáticamente a las compañías que te siguen en secreto por la web.
-protection-report-etp-card-content-custom-not-blocking = Todas las protecciones están desactivadas en este momento. Selecciona qué rastreadores bloquear administrando las configuraciones de protección de { -brand-short-name }.
-protection-report-manage-protections = Administrar configuración
+protection-report-etp-card-content-custom-not-blocking = Todas las protecciones están desactivadas en este momento. Selecciona qué rastreadores bloquear administrando los ajustes de protección de { -brand-short-name }.
+protection-report-manage-protections = Administrar los ajustes
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
 graph-today = Hoy
@@ -203,3 +203,61 @@ bar-tooltip-cryptominer =
             [one] { $count } criptominero ({ $percentage } %)
            *[other] { $count } criptomineros ({ $percentage } %)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Protecciones de privacidad
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqueado esta semana
+       *[other] { $count } bloqueados esta semana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } rastreador
+       *[other] { $count } rastreadores
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } rastreador de huella digital
+       *[other] { $count } rastreadores de huella digital
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de rastreo
+       *[other] { $count } cookies de rastreo
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } rastreador de redes sociales
+       *[other] { $count } rastreadores de redes sociales
+    }
+privacy-metrics-empty = Esta semana no hubo rastreadores bloqueados. { -brand-short-name } te protege de estas amenazas al navegar.
+privacy-metrics-loading = Obteniendo estadísticas de protección…
+privacy-metrics-error = No se pudieron obtener las estadísticas de protección.
+privacy-metrics-private-window = { -brand-short-name } sigue bloqueando rastreadores en las ventanas privadas, pero no guarda un registro de lo que se bloqueó.
+
+## VPN promo card and banner
+
+protections-vpn-title = Lleva la protección de la privacidad más allá del navegador
+protections-vpn-header-content = Protege todo tu dispositivo con { -mozilla-vpn-brand-name }. Un solo toque encripta todo el tráfico y oculta tu ubicación.
+protections-get-vpn-link = Obtén { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Suscripción activa
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] Al usar { -mozilla-vpn-brand-name } se encripta todo tu tráfico y se oculta tu ubicación en hasta { $count } dispositivos. Aprovecha al máximo tu suscripción: agrégala desde <a data-l10n-name="playstore-link">Google Play Store</a> o <a data-l10n-name="appstore-link">Apple App Store</a>.
+       *[other] Al usar { -mozilla-vpn-brand-name } se encripta todo tu tráfico y se oculta tu ubicación en hasta { $count } dispositivos. Aprovecha al máximo tu suscripción: agrégala desde <a data-l10n-name="playstore-link">Google Play Store</a> o <a data-l10n-name="appstore-link">Apple App Store</a>.
+    }
+protections-vpn-banner-header = Protección más allá del navegador
+protections-vpn-banner-content = Prueba { -mozilla-vpn-brand-name } sin riesgos y descubre por qué TechRadar dice: “su velocidad, simplicidad y bajo precio mensual hacen que valga la pena echarle un vistazo”.
+protections-vpn-banner-link = Obtén { -mozilla-vpn-brand-name }

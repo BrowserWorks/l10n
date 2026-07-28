@@ -93,14 +93,14 @@ main-context-menu-page-save =
 ## Simple menu items
 
 main-context-menu-bookmark-page =
-    .aria-label = 将页面加入书签…
+    .aria-label = 为页面添加书签…
     .accesskey = m
-    .tooltiptext = 将页面加入书签
+    .tooltiptext = 为页面添加书签
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-edit-bookmark-mac,
 # so should probably have the same access key if possible.
 main-context-menu-bookmark-page-mac =
-    .label = 将页面加入书签…
+    .label = 为页面添加书签…
     .accesskey = m
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-bookmark-page-mac,
@@ -111,9 +111,9 @@ main-context-menu-edit-bookmark-mac =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-page-with-shortcut =
-    .aria-label = 将页面加入书签…
+    .aria-label = 为页面添加书签…
     .accesskey = m
-    .tooltiptext = 将页面加入书签（{ $shortcut }）
+    .tooltiptext = 为页面添加书签（{ $shortcut }）
 main-context-menu-edit-bookmark =
     .aria-label = 编辑书签…
     .accesskey = m
@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = 新建标签页打开链接
     .accesskey = T
+main-context-menu-open-link-split-view =
+    .label = 分屏打开链接
+    .accesskey = M
 main-context-menu-open-link-container-tab =
     .label = 新建身份标签页打开链接
     .accesskey = C
@@ -140,7 +143,7 @@ main-context-menu-open-link-new-private-window =
     .label = 新建隐私窗口打开链接
     .accesskey = P
 main-context-menu-bookmark-link-2 =
-    .label = 将链接加入书签…
+    .label = 为链接添加书签…
     .accesskey = B
 main-context-menu-save-link =
     .label = 从链接另存文件为…
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = 复制无跟踪参数链接
     .accesskey = u
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = 复制无跟踪参数链接
-    .accesskey = y
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = 隐藏控制界面
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = 全屏
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = 查看描述
     .accesskey = D
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = 使用 { $engine } 搜图
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = 另存视频为…
     .accesskey = v
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = 用邮件发送音频…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = 发送到设备
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = 发送到移动设备
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = 登录以发送标签页
+main-context-menu-send-to-mobile-enable-sync2 = 启用同步以发送标签页
+main-context-menu-send-to-mobile-connect-phone2 = 连接您的手机
+main-context-menu-send-to-mobile-device-missing2 = 看不到您的设备？
+main-context-menu-send-to-mobile-sign-in-from-link = 登录以发送链接
+main-context-menu-send-to-mobile-sign-in-from-page = 登录以发送页面
+main-context-menu-send-to-mobile-enable-sync3 = 开启同步以发送标签页
+main-context-menu-send-to-mobile-enable-sync-from-link = 开启同步以发送链接
+main-context-menu-send-to-mobile-enable-sync-from-page = 开启同步以发送页面
+main-context-menu-send-to-mobile-connect-phone3 = 连接设备以发送标签页
+main-context-menu-send-to-mobile-connect-phone-from-link = 连接设备以发送链接
+main-context-menu-send-to-mobile-connect-phone-from-page = 连接设备以发送页面
 main-context-menu-save-to-pocket =
     .label = 保存页面到 { -pocket-brand-name }
     .accesskey = k
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = 发送链接到设备
     .accesskey = D
+main-context-menu-link-send-to-mobile =
+    .label = 发送链接到移动设备
+    .accesskey = n
 main-context-menu-frame =
     .label = 此框架
     .accesskey = h
@@ -346,7 +370,7 @@ main-context-menu-frame-reload =
     .label = 重新加载框架
     .accesskey = R
 main-context-menu-frame-add-bookmark =
-    .label = 将框架加入书签…
+    .label = 为框架添加书签…
     .accesskey = m
 main-context-menu-frame-save-as =
     .label = 另存框架为…
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = 显示密码
     .accesskey = v
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = 新
+main-context-menu-pdfjs-copy-page =
+    .label = 复制页面
+main-context-menu-pdfjs-cut-page =
+    .label = 剪切页面
+main-context-menu-pdfjs-delete-page =
+    .label = 删除页面
+main-context-menu-pdfjs-save-page =
+    .label = 另存选中内容为…

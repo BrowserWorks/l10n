@@ -21,10 +21,30 @@ about-logging-new-log-modules = وحدات سجل جديدة:
 
 ## Logging presets
 
-
-##
-
+about-logging-preset-networking-http3-upload-speed-label = سرعة رفع HTTP/3
+about-logging-preset-custom-label = مخصّص
 
 ## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
 ## set to true. It is false by default, except on Android.
 
+about-logging-upload-question = جُمّع بيانات الملف الشخصي. أتريد حفظها أم رفعها؟
+about-logging-save-button = احفظ
+about-logging-upload-button = ارفع
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = حُفظ في { $path }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = حدث خطأ أثناء رفع الملف الشخصي: { $errorText }
+
+## Uploaded Profiles section
+
+about-logging-uploaded-profiles-title = الملفات الشخصية المرفوعة
+about-logging-no-uploaded-profiles = لم تُرفع أي ملفات شخصية حتى الآن.
+about-logging-delete-uploaded-profile = احذف
+about-logging-delete-profile-confirm-title = احذف الملف الشخصي
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = أمتأكد من رغبتك في حذف الملف الشخصي "{ $profileName }"؟ لا يمكن التراجع عن هذا الإجراء.
+about-logging-deleting-profile = يحذف…

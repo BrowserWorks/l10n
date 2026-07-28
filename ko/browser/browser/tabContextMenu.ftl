@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = 탭 새로 고침
     .accesskey = R
+reload-tab2 =
+    .label = 새로 고침
+    .accesskey = R
 select-all-tabs =
     .label = 모든 탭 선택
     .accesskey = S
@@ -24,8 +27,14 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = 탭 복제
     .accesskey = D
+duplicate-tab2 =
+    .label = 복제
+    .accesskey = D
 duplicate-tabs =
     .label = 탭 복제
+    .accesskey = D
+duplicate-tabs2 =
+    .label = 복제
     .accesskey = D
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
@@ -52,8 +61,14 @@ reload-tabs =
 pin-tab =
     .label = 탭 고정
     .accesskey = P
+tab-context-pin-tab2 =
+    .label = 고정
+    .accesskey = P
 unpin-tab =
     .label = 탭 고정 해제
+    .accesskey = p
+tab-context-unpin-tab2 =
+    .label = 고정 해제
     .accesskey = p
 pin-selected-tabs =
     .label = 탭 고정
@@ -67,7 +82,14 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = 탭 북마크…
     .accesskey = B
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = 북마크
+    .accesskey = B
 tab-context-open-in-new-container-tab =
+    .label = 새 컨테이너 탭에서 열기
+    .accesskey = e
+tab-context-open-in-new-container-tab2 =
     .label = 새 컨테이너 탭에서 열기
     .accesskey = e
 move-to-start =
@@ -79,12 +101,23 @@ move-to-end =
 move-to-new-window =
     .label = 새 창으로 이동
     .accesskey = W
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = { $profileName } 프로필로 이동
 tab-context-close-multiple-tabs =
+    .label = 여러 탭 닫기
+    .accesskey = M
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
     .label = 여러 탭 닫기
     .accesskey = M
 tab-context-close-duplicate-tabs =
     .label = 중복 탭 닫기
-    .accesskey = u
+    .accesskey = x
+tab-context-close-duplicate-tabs2 =
+    .label = 중복 탭 닫기
+    .accesskey = x
 tab-context-share-url =
     .label = 공유
     .accesskey = h
@@ -116,6 +149,13 @@ tab-context-close-n-tabs =
            *[other] 탭 { $tabCount }개 닫기
         }
     .accesskey = C
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] 닫기
+           *[other] 탭 { $tabCount }개 닫기
+        }
+    .accesskey = C
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -123,6 +163,41 @@ tab-context-move-tabs =
            *[other] 탭 이동
         }
     .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] 탭 이동
+           *[other] 탭 { $tabCount }개 이동
+        }
+    .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = 분할 화면 이동
+    .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 기기로 보내기
+           *[other] 탭 { $tabCount }개를 기기로 보내기
+        }
+    .accesskey = n
+tab-context-send-to-device2 =
+    .label = 내 기기로 보내기
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 모바일로 보내기
+           *[other] 탭 { $tabCount }개를 모바일로 보내기
+        }
+    .accesskey = n
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = 공유 가능한 링크 만들기
+    .accesskey = a
 tab-context-send-tabs-to-device =
     .label = 탭 { $tabCount }개를 기기로 보내기
     .accesskey = n
@@ -132,4 +207,8 @@ tab-context-unload-n-tabs =
             [1] 탭 언로드
            *[other] 탭 { $tabCount }개 언로드
         }
+    .accesskey = U
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = 언로드
     .accesskey = U

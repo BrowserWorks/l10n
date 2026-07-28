@@ -7,7 +7,7 @@ certificate-viewer-certificate-section-title = 인증서
 ## Error messages
 
 certificate-viewer-error-message = 인증서 정보를 찾을 수 없거나 인증서가 손상되었습니다. 다시 시도하세요.
-certificate-viewer-error-title = 뭔가 잘못되었습니다.
+certificate-viewer-error-title = 문제가 발생했습니다.
 
 ## Certificate information labels
 
@@ -36,10 +36,17 @@ certificate-viewer-key-size = 키 크기
 certificate-viewer-inc-locality = 법인 구/군/시
 certificate-viewer-locality = 구/군/시
 certificate-viewer-location = 위치
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = 로그 이름
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = 로그 ID
 certificate-viewer-method = 메소드
 certificate-viewer-modulus = 계수
 certificate-viewer-name = 이름
+certificate-viewer-surname = 성
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = 이름
 certificate-viewer-not-after = 이 시각 이후에는 없음
 certificate-viewer-not-before = 이 시각 이전에는 없음
 certificate-viewer-organization = 조직
@@ -110,6 +117,8 @@ certificate-viewer-export = 내보내기
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (알 수 없음)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = 인증서
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

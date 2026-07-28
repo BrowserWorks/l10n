@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = التفضيلات
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = الإعدادات…
+menu-application-set-as-default =
+    .label = عيّن { -brand-shorter-name } كمتصفح مبدئي
 menu-application-services =
     .label = الخدمات
 menu-application-hide-this =
@@ -102,6 +95,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = شارِك
     .accesskey = ش
+menu-file-share-qrcode =
+    .label = ولّد رمز QR...
+    .accesskey = ل
+menu-file-share-qrcode2 =
+    .label = ولّد رمز QR
+    .accesskey = ل
 menu-file-print-setup =
     .label = إعداد الصفحة…
     .accesskey = ع
@@ -150,8 +149,6 @@ menu-view-history-button =
     .label = التأريخ
 menu-view-synced-tabs-sidebar =
     .label = الألسنة المُزامنة
-menu-view-megalist-sidebar =
-    .label = كلمات السرّ
 menu-view-full-zoom =
     .label = قرّب
     .accesskey = ر
@@ -267,6 +264,13 @@ menu-profiles-manage-profiles =
     .label = أدِر ملفات الإعدادات
 menu-profiles-new-profile =
     .label = ملف إعداد جديد
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (الحالي)
+menu-profiles-menu =
+    .label = ملفات شخصية
+    .accesskey = ل
 
 ## Tools Menu
 

@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } användare
     }
 
-## Firefox Accounts Message
+## Mozilla Account messages
 
 cfr-doorhanger-bookmark-fxa-header = Synkronisera dina bokmärken överallt.
 cfr-doorhanger-bookmark-fxa-body = Bra fynd! Saknar du bokmärket på dina mobila enheter. Kom igång med ett { -fxaccount-brand-name }.
@@ -68,6 +68,13 @@ cfr-doorhanger-bookmark-fxa-link-text = Synkronisera bokmärken nu...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Stäng knapp
     .title = Stäng
+fxa-adoption-addresses-backup-title = Låt oss säkerhetskopiera dina sparade adresser
+fxa-adoption-addresses-backup-subtitle = Skydda dina sparade adresser genom att synkronisera dem till dina enheter med kryptering.
+fxa-adoption-credit-cards-backup-title = Låt oss säkerhetskopiera dina betalningsmetoder
+fxa-adoption-credit-cards-backup-subtitle = Skydda dina betalningsmetoder genom att synkronisera dem till dina enheter med kryptering.
+fxa-adoption-bookmarks-treatment-backup-title = Låt oss säkerhetskopiera dina bokmärken
+fxa-adoption-bookmarks-treatment-backup-subtitle = Skydda dina bokmärken genom att synkronisera dem till dina enheter med kryptering.
+fxa-adoption-primary-button-label = Registrera dig
 
 ## Protections panel
 
@@ -226,6 +233,20 @@ fox-doodle-pin-secondary = Inte nu
 set-default-pdf-handler-headline = <strong>Dina PDF-filer öppnas nu i { -brand-short-name }.</strong> Redigera eller signera formulär direkt i din webbläsare. För att ändra, sök "PDF" i inställningarna.
 set-default-pdf-handler-primary = Jag förstår
 
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = Skriv under på den streckade linjen – eller var som helst!
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = Rita, skriv eller ladda upp din signatur och placera den sedan exakt var du vill. Spara dina favoritsignaturer till nästa gång.
+annotations-make-default-pdf-handler-title = Vill du göra { -brand-short-name } till din standardredigerare för PDF-filer?
+annotations-make-default-pdf-handler-subtitle = Du har tillgång till våra verktyg varje gång du öppnar en PDF.
+annotations-make-default-pdf-primary-cta-label = Ange som standard
+annotations-make-default-pdf-next-label = Nästa
+
 ## FxA sync CFR
 
 fxa-sync-cfr-header = Tänker du skaffa en ny enhet i framtiden?
@@ -275,6 +296,20 @@ launch-on-login-infobar-final-message = <strong>Öppna { -brand-short-name } var
 launch-on-login-infobar-final-reject-button = Nej tack
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = Öppna { -brand-short-name } nästa gång din dator startar?
+launch-on-login-spotlight-startup-checkbox = Starta { -brand-short-name } vid uppstart
+launch-on-login-spotlight-pin-taskbar-checkbox = Fäst till aktivitetsfältet
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = Öppna föregående fönster och flikar
+launch-on-login-spotlight-primary-button = Spara och stäng { -brand-short-name }
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -285,6 +320,12 @@ tail-fox-spotlight-title = Håll oönskade spårare borta
 tail-fox-spotlight-subtitle = Säg adjö till irriterande annonsspårare och njut av en säkrare, snabb internetupplevelse.
 tail-fox-spotlight-primary-button = Öppna mina länkar med { -brand-short-name }
 tail-fox-spotlight-secondary-button = Inte nu
+
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = Ta dig tillbaka till den inbyggda integriteten
+welcome-back-spotlight-subtitle = Välkommen tillbaka till den enda stora webbläsaren som stöds av en ideell organisation. Vi vidtar extra åtgärder för att skydda dina data var du än befinner dig.
+welcome-back-embedded-import-title = Importera dina data och få { -brand-short-name } att kännas som hemma
 
 ## Root Certificate Succession Infobar
 
@@ -311,8 +352,11 @@ fxa-menu-message-close-button =
     .title = Stäng
     .aria-label = Stäng
 fxa-menu-message-sign-up-button = Registrera dig
+fxa-menu-message-sign-in-button = Logga in
+fxa-menu-message-sync-button = Starta synkronisering
 fxa-menu-message-sync-devices-primary-text = Synka alla dina enheter
 fxa-menu-message-sync-devices-secondary-text = Få din information direkt — som bokmärken och lösenord — överallt där du använder { -brand-short-name }.
+fxa-menu-message-sync-devices-secondary-text2 = Få direkt dina bokmärken, lösenord och mer — överallt där du är inloggad på { -brand-short-name }.
 fxa-menu-message-sync-devices-collapsed-text = Synka alla dina enheter
 fxa-menu-message-backup-data-primary-text = Säkerhetskopiera din webbläsardata
 fxa-menu-message-backup-data-secondary-text = Skydda automatiskt bokmärken, lösenord och annan information på alla dina enheter.
@@ -343,3 +387,117 @@ multi-cta-fox-doodle-privacy-focused-subtitle =
        *[other] Håll din favoritwebbläsare med fokus på integritet bara ett klick bort. Ställ in { -brand-short-name } som din standardwebbläsare för att öppna länkar och fäst den i aktivitetsfältet.
     }
 multi-cta-fox-doodle-msix-privacy-focused-subtitle = Håll din favoritwebbläsare med fokus på integritet bara ett klick bort. Ställ in { -brand-short-name } som din standardwebbläsare för att öppna länkar och fäst den i aktivitetsfältet och startmenyn.
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = Uppgraderar du från Windows 10 snart?
+windows-10-eos-sync-spotlight-subtitle = Säkerhetskopiera dina lösenord och bokmärken så att du är redo att ta steget till vilken enhet som helst.
+windows-10-eos-sync-spotlight-primary-label = Säkerhetskopiera { -brand-short-name }
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = Uppgradera till Windows 11? Tappa inte bokmärken och lösenord.
+windows-10-eos-sync-toast-subtitle = Säkerhetskopiera din data så att { -brand-short-name } är redo att användas när som helst, på den här datorn eller nästa.
+windows-10-eos-sync-toast-primary-label = Kom igång
+windows-10-eos-sync-toast-secondary-label = Påminn mig senare
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = { -brand-product-name } är inte förinstallerad som andra stora teknikwebbläsare. Det är poängen.
+windows-10-eos-challenger-sync-callout-subtitle = När du säkerhetskopierar dina bokmärken och lösenord för { -brand-product-name } är det enklare att ta med den webbläsare du valde till din nästa enhet.
+windows-10-eos-challenger-pin-callout-subtitle = Fäst { -brand-shorter-name } i aktivitetsfältet så att webbläsaren du valde alltid finns där när du behöver den.
+windows-10-eos-challenger-sync-primary-button = Säkerhetskopiera { -brand-shorter-name }
+windows-10-eos-challenger-pin-primary-button = Fäst { -brand-shorter-name }
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } blockerar kryptogrävare, sociala mediespårare och fingeravtrycksspårare.
+windows-10-eos-sync-callout-privacy-screen-1-subtitle = Spårare kan inte identifiera din enhet eller följa dig över webben — eftersom vi inte tillåter dem.
+windows-10-eos-sync-callout-privacy-screen-2-title = Säkra dina lösenord och bokmärken för din nästa enhet.
+windows-10-eos-sync-callout-privacy-screen-2-subtitle = Säkerhetskopiering av { -brand-shorter-name } gör det enkelt att ta med dig din data och sekretessinställningar.
+windows-10-eos-sync-callout-privacy-info-button = Se vad som är blockerat
+windows-10-eos-callout-addons-title = Testa tillägg: enkla uppgraderingar, stor effekt
+windows-10-eos-callout-addons-subtitle = Dessa tillägg valdes för att hjälpa dig att hålla dig produktiv, skyddad och fri från distraktion.
+windows-10-eos-callout-addons-primary-button = Se våra val
+windows-10-eos-sync-callout-addons-title = Förlora inte dina tillägg när du uppgraderar från Windows 10.
+windows-10-eos-sync-callout-addons-subtitle = Synkronisera nu så att dina tillägg för { -brand-product-name } alltid är tillgängliga, även efter ett enhetsbyte.
+windows-10-eos-sync-callout-next-button = Nästa
+windows-10-eos-sync-callout-get-started-button = Kom igång
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = Vertikala flikar och flikgrupper är här!
+# In English, "dropped" is a colloquial form for released.
+windows-10-eos-feature-toast-subtitle = På allmän begäran har { -brand-product-name } precis släppt nya funktioner för att hålla din surfning effektiv och fokuserad.
+windows-10-eos-feature-toast-whats-new-button = Se vad som är nytt
+windows-10-eos-feature-toast-dismiss-button = Ignorera
+
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft stöder inte längre Windows 10.</strong> Säkerhetskopiera din information för att förbereda { -brand-product-name } för Windows 11.
+windows-10-eos-global-infobar-primary-button = Aktivera säkerhetskopiering
+    .accesskey = A
+windows-10-eos-global-infobar-learn-more-link = Läs mer
+    .accessKey = L
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-message = <strong>Strikt spårningsskydd kan orsaka fel på webbplatser.</strong> Åtgärda vanliga problem genom att avblockera viktiga element som kan innehålla spårare.
+etp-strict-exceptions-infobar-learn-more = Läs mer
+etp-strict-exceptions-infobar-button = Tillämpa korrigeringar
+    .accesskey = T
+etp-strict-exceptions-infobar-not-now = Inte nu
+    .accesskey = n
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } är inte din standardwebbläsare
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } är inte din primära webbläsare
+set-default-menu-message-row-layout-title = Gör { -brand-short-name } till din primära webbläsare
+set-default-menu-message-row-layout-title-variant = Gör { -brand-short-name } till din standardwebbläsare
+set-default-menu-message-row-layout-subtitle = Få hastighet, säkerhet och integritet varje gång du surfar.
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] Ha alltid { -brand-short-name } nära till hands — gör den till din standard och behåll den i Dock.
+       *[other] Ha alltid { -brand-short-name } nära till hands — gör den till din standard och behåll den i aktivitetsfältet.
+    }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] Ha alltid { -brand-short-name } nära till hands
+       *[other] Öppna alla länkar med { -brand-short-name }
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] Gör den till din standard och behåll den i Dock.
+       *[other] Få snabbare surfning och automatiskt integritetsskydd.
+    }
+set-default-menu-message-primary-button = Ange som standard
+set-default-menu-message-primary-button-variant = Ange som primär webbläsare
+set-default-menu-message-primary-button-short-variant = Gör { -brand-short-name } till standard
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = 50 e-postalias gratis
+relay-50-masks-announcement-subtitle = Nu får du 50 alias gratis (från tidigare 5). Använd ett för varje konto för att hålla din riktiga e-post privat.
+relay-50-masks-announcement-primary-button = Gå till { -relay-brand-name }
+    .accesskey = G
+relay-50-masks-announcement-secondary-button = Ignorera
+    .accesskey = g
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>{ -brand-product-name } får ett nytt utseende.</strong> Du förhandsgranskar en tidig, opolerad version innan lanseringen senare i år.
+nova-early-access-share-feedback-link = Dela feedback
+    .accesskey = D
+nova-early-access-infobar-primary-button = Jag förstår
+    .accesskey = J
+
+## App Exit Spotlight dialog
+
+app-exit-spotlight-title = Starta { -brand-short-name } varje gång du loggar in till Windows?
+app-exit-spotlight-checkbox-launch-on-login = Öppna { -brand-short-name } vid start
+app-exit-spotlight-checkbox-pin-to-taskbar = Fäst i aktivitetsfältet
+app-exit-spotlight-primary-button = Spara och stäng { -brand-short-name }

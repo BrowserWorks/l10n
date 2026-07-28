@@ -31,13 +31,21 @@
 -relay-brand-name = Waterfox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-mdn-brand-name = MDN Web 文档
+-yelp-brand-name = Yelp
+
+##
+
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
 # The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
 -fakespot-brand-full-name = BrowserWorks 支持的 Fakespot
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Waterfox 建议
+-firefox-suggest-brand-name = Waterfox 建议
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name = Waterfox 主页
@@ -49,5 +57,8 @@
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox 实验室
--solo-ai-brand-name = Solo
-
+-smart-window-brand-name =
+    { $plural-form ->
+        [true] 智能窗口
+       *[false] 智能窗口
+    }

@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = Chatbot AI
 menu-view-contextual-password-manager =
     .label = Mật khẩu
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Các thẻ đang mở
 sidebar-options-menu-button =
     .title = Mở menu
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Thay đổi kích thước thanh lề
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Xóa khỏi lịch sử
 sidebar-history-clear =
     .label = Xóa lịch sử
+sidebar-history-sort-by-heading-menucaption =
+    .label = Sắp xếp theo:
 sidebar-history-sort-by-heading = Sắp xếp theo:
 sidebar-history-sort-option-date =
     .label = Ngày
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Cài đặt quản lý { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Thẻ dọc
+sidebar-settings2 =
+    .label = Cài đặt
 sidebar-settings =
     .label = Cài đặt thanh lề
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Mở rộng thanh lề khi di chuột tới nó
-sidebar-manage-extensions = Quản lý tiện ích
+sidebar-manage-extensions2 = Quản lý tất cả tiện ích
+sidebar-customize-extensions-header2 = Tiện ích mở rộng
+sidebar-customize-firefox-tools-header2 =
+    .label = Công cụ
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Xóa trang khỏi lịch sử
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Chỉnh sửa dấu trang…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Xóa dấu trang
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Xóa
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = Lịch sử
 sidebar-menu-synced-tabs-label =
     .label = Thẻ từ thiết bị khác
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Các thẻ đang mở
 sidebar-menu-bookmarks-label =
     .label = Dấu trang
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = Lịch sử
 sidebar-menu-syncedtabs-header =
     .heading = Thẻ từ thiết bị khác
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Các thẻ đang mở
 sidebar-menu-cpm-header =
     .heading = Mật khẩu
+sidebar-menu-bookmarks-header =
+    .heading = Dấu trang
 sidebar-panel-header-close-button =
     .tooltiptext = Đóng
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Trình đơn dấu trang
+sidebar-bookmarks-folder-toolbar = Thanh dấu trang
+sidebar-bookmarks-folder-other = Dấu trang khác
+sidebar-bookmarks-folder-mobile = Dấu trang trên di động
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Tùy biến thanh lề
 sidebar-history-title = Lịch sử
 sidebar-syncedtabs-title = Thẻ từ thiết bị khác
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Các thẻ đang mở
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Thẻ đã ghim
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Cửa sổ { $winID } (hiện tại)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Cửa sổ { $winID }
+sidebar-bookmarks-title = Dấu trang
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Ẩn thanh lề ({ $shortcut })
     .label = Thanh lề
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Kéo các tab quan trọng vào đây để giữ chúng trong tầm tay

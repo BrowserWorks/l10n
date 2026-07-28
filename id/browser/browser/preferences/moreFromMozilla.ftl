@@ -20,6 +20,8 @@ more-from-moz-qr-code-firefox-mobile-img =
     .alt = Kode QR untuk mengunduh { -brand-product-name } Seluler
 more-from-moz-button-mozilla-vpn-2 = Dapatkan VPN
 more-from-moz-learn-more-link = Pelajari lebih lanjut
+more-from-moz-title2 = Lainnya dari { -vendor-short-name }
+    .title = Lainnya dari { -vendor-short-name }
 
 ## These strings are for the Firefox Relay card in about:preferences moreFromMozilla page
 

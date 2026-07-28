@@ -5,13 +5,13 @@
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 cert-error-intro = { $hostname } ใช้ใบรับรองความปลอดภัยที่ไม่ถูกต้อง
-cert-error-mitm-intro = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง ซึ่งจะออกให้โดยผู้ให้บริการออกใบรับรอง
+cert-error-mitm-intro = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง ซึ่งจะออกให้โดยผู้ให้บริการออกใบรับรอง
 cert-error-mitm-mozilla = { -brand-short-name } ได้รับการสนับสนุนโดย BrowserWorks ที่ไม่แสวงหาผลกำไรซึ่งดูแลที่เก็บผู้ให้บริการออกใบรับรอง (CA) ที่เปิดอย่างสมบูรณ์ ที่เก็บ CA ช่วยให้มั่นใจได้ว่าผู้ให้บริการออกใบรับรองปฏิบัติตามแนวทางที่ดีที่สุดเพื่อความปลอดภัยของผู้ใช้
 cert-error-mitm-connection = { -brand-short-name } ใช้ที่เก็บ BrowserWorks CA เพื่อตรวจสอบว่าการเชื่อมต่อนั้นปลอดภัย แทนที่จะใช้ใบรับรองที่มาจากระบบปฏิบัติการของผู้ใช้ ดังนั้นหากโปรแกรมป้องกันไวรัสหรือเครือข่ายขัดขวางการเชื่อมต่อกับใบรับรองความปลอดภัยที่ออกให้โดย CA ที่ไม่ได้อยู่ในที่เก็บ BrowserWorks CA การเชื่อมต่อจะถือว่าไม่ปลอดภัย
 cert-error-trust-unknown-issuer-intro = อาจมีใครบางคนพยายามปลอมแปลงไซต์นี้และคุณไม่ควรดำเนินการต่อ
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-trust-unknown-issuer = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือ { $hostname } เนื่องจากไม่ทราบผู้ออกใบรับรอง ใบรับรองถูกลงชื่อด้วยตนเอง หรือเซิร์ฟเวอร์ไม่ส่งใบรับรองระดับกลางที่ถูกต้องมาให้
+cert-error-trust-unknown-issuer = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือ { $hostname } เนื่องจากไม่ทราบผู้ออกใบรับรอง ใบรับรองถูกลงชื่อด้วยตนเอง หรือเซิร์ฟเวอร์ไม่ส่งใบรับรองระดับกลางที่ถูกต้องมาให้
 cert-error-trust-cert-invalid = ใบรับรองไม่ได้รับความเชื่อถือเนื่องจากออกให้โดยผู้ให้บริการออกใบรับรองที่ไม่ถูกต้อง
 cert-error-trust-untrusted-issuer = ใบรับรองไม่ได้รับความเชื่อถือเนื่องจากออกให้โดยผู้ที่ไม่ได้รับความเชื่อถือ
 cert-error-trust-signature-algorithm-disabled = ใบรับรองไม่ได้รับความเชื่อถือเนื่องจากถูกลงลายเซ็นโดยใช้อัลกอริทึมลายเซ็นที่ถูกปิดใช้งานเนื่องจากอัลกอริทึมนั้นไม่ปลอดภัย
@@ -20,31 +20,31 @@ cert-error-trust-self-signed = ใบรับรองไม่ได้รั�
 cert-error-trust-symantec = ใบรับรองที่ออกโดย GeoTrust, RapidSSL, Symantec, Thawte และ VeriSign จะไม่ได้รับการพิจารณาว่าปลอดภัยอีกต่อไปเนื่องจากผู้ออกใบรับรองเหล่านี้ไม่ปฏิบัติตามแนวทางด้านความปลอดภัยในอดีต
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-trust-certificate-transparency = { -brand-short-name } ไม่เชื่อถือ { $hostname } เนื่องจากไม่สามารถพิสูจน​์ได้ว่าสอดคล้องตามข้อกำหนดความโปร่งใสสำหรับใบรับรองสาธารณะ
+cert-error-trust-certificate-transparency = { -brand-short-name } ไม่เชื่อถือ { $hostname } เนื่องจากไม่สามารถพิสูจน์ได้ว่าสอดคล้องตามข้อกำหนดความโปร่งใสสำหรับใบรับรองสาธารณะ
 cert-error-untrusted-default = ใบรับรองไม่ได้มาจากแหล่งที่ได้รับความเชื่อถือ
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-domain-mismatch = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname }
+cert-error-domain-mismatch = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $alt-name (string) - Alternate domain name for which the cert is valid.
-cert-error-domain-mismatch-single = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับ <a data-l10n-name="domain-mismatch-link">{ $alt-name }</a> เท่านั้น
+cert-error-domain-mismatch-single = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับ <a data-l10n-name="domain-mismatch-link">{ $alt-name }</a> เท่านั้น
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $alt-name (string) - Alternate domain name for which the cert is valid.
-cert-error-domain-mismatch-single-nolink = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับ { $alt-name } เท่านั้น
+cert-error-domain-mismatch-single-nolink = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับ { $alt-name } เท่านั้น
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $subject-alt-names (string) - Alternate domain names for which the cert is valid.
-cert-error-domain-mismatch-multiple = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับชื่อดังต่อไปนี้เท่านั้น: { $subject-alt-names }
+cert-error-domain-mismatch-multiple = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง { -brand-short-name } ไม่เชื่อถือไซต์นี้เนื่องจากใช้ใบรับรองที่ไม่ถูกต้องสำหรับ { $hostname } ใบรับรองดังกล่าวถูกต้องสำหรับชื่อดังต่อไปนี้เท่านั้น: { $subject-alt-names }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $not-after-local-time (Date) - Certificate is not valid after this time.
-cert-error-expired-now = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง ซึ่งมีผลภายในช่วงเวลาที่กำหนดเท่านั้น ใบรับรองสำหรับ { $hostname } หมดอายุเมื่อ { $not-after-local-time }
+cert-error-expired-now = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง ซึ่งมีผลภายในช่วงเวลาที่กำหนดเท่านั้น ใบรับรองสำหรับ { $hostname } หมดอายุเมื่อ { $not-after-local-time }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $not-before-local-time (Date) - Certificate is not valid before this time.
-cert-error-not-yet-valid-now = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรอง ซึ่งมีผลภายในช่วงเวลาที่กำหนดเท่านั้น ใบรับรองสำหรับ { $hostname } จะไม่มีผลจนถึง { $not-before-local-time }
+cert-error-not-yet-valid-now = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรอง ซึ่งมีผลภายในช่วงเวลาที่กำหนดเท่านั้น ใบรับรองสำหรับ { $hostname } จะไม่มีผลจนถึง { $not-before-local-time }
 # Variables:
 #   $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = รหัสข้อผิดพลาด: { $error }
@@ -57,7 +57,7 @@ cert-error-code-prefix-link = รหัสข้อผิดพลาด: <a dat
 cert-error-ssl-connection-error = เกิดข้อผิดพลาดระหว่างเชื่อมต่อกับ { $hostname } { $errorMessage }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-symantec-distrust-description = เว็บไซต์จะพิสูจน์ข้อมูลประจำตัวของตนเองผ่านใบรับรองซึ่งออกให้โดยผู้ให้บริการออกใบรับรอง เบราว์เซอร์ส่วนใหญ่ไม่เชื่อถือใบรับรองที่ออกให้โดย GeoTrust, RapidSSL, Symantec, Thawte, และ VeriSign เนื่องจาก { $hostname } ใช้ใบรับรองจากผู้ให้บริการออกใบรับรองรายใดรายหนึ่งเหล่านี้ จึงไม่สามารถพิสูจน์ข้อมูลประจำตัวของเว็บไซต์ดังกล่าวได้
+cert-error-symantec-distrust-description = เว็บไซต์จะพิสูจน์ข้อมูลตัวตนของตัวเองผ่านใบรับรองซึ่งออกให้โดยผู้ให้บริการออกใบรับรอง เบราว์เซอร์ส่วนใหญ่ไม่เชื่อถือใบรับรองที่ออกให้โดย GeoTrust, RapidSSL, Symantec, Thawte, และ VeriSign เนื่องจาก { $hostname } ใช้ใบรับรองจากผู้ให้บริการออกใบรับรองรายใดรายหนึ่งเหล่านี้ จึงไม่สามารถพิสูจน์ข้อมูลตัวตนของเว็บไซต์ได้
 cert-error-symantec-distrust-admin = คุณสามารถแจ้งปัญหานี้แก่ผู้ดูแลระบบของเว็บไซต์ได้
 cert-error-old-tls-version = เว็บไซต์นี้อาจไม่รองรับโพรโทคอล TLS 1.2 ซึ่งเป็นเวอร์ชันขั้นต่ำที่รองรับโดย { -brand-short-name }
 # Variables:
@@ -72,7 +72,15 @@ open-in-new-window-for-csp-or-xfo-error = เปิดไซต์ในหน�
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = เพื่อปกป้องความปลอดภัยของคุณ { $hostname } จะไม่อนุญาตให้ { -brand-short-name } แสดงหน้าหากไซต์อื่นฝังไว้ หากต้องการดูหน้านี้ คุณต้องเปิดในหน้าต่างใหม่
 fp-certerror-view-certificate-link = ดูใบรับรองของไซต์นี้
+fp-certerror-return-to-previous-page-recommended-button-2 = ย้อนกลับ (แนะนำ)
+    .accesskey = ย
 fp-certerror-return-to-previous-page-recommended-button = ย้อนกลับ (แนะนำ)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } กำลังแจ้งเตือนคุณเกี่ยวกับไซต์นี้เนื่องจากใบรับรองที่ให้ไว้สำหรับ { $hostname } ถูกเพิกถอนแล้ว และเชื่อถือไม่ได้อีกต่อไป
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = น่าจะไม่มีอะไรมากนัก เนื่องจากปัญหาน่าจะอยู่ที่ตัวไซต์เอง คุณสามารถสอบถามเจ้าของเว็บไซต์ได้ว่ากำลังแก้ไขปัญหาอยู่หรือไม่
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = ย้อนกลั�
 fp-certerror-bad-domain-why-dangerous-body = ไซต์นี้ถูกตั้งค่ามาให้อนุญาตเฉพาะการเชื่อมต่อปลอดภัยเท่านั้น แต่มีปัญหากับใบรับรองของไซต์ ซึ่งเป็นไปได้ว่ามีผู้ไม่หวังดีกำลังพยายามปลอมแปลงไซต์นี้ ไซต์ต่างๆ จะใช้ใบรับรองซึ่งออกโดยผู้ออกใบรับรองเพื่อพิสูจน์ตนเองว่าเป็นบุคคลตามที่อ้างจริง { -brand-short-name } จึงไม่เชื่อถือไซต์นี้เนื่องจากใบรับรองของไซต์นั้นใช้ไม่ได้กับ { $hostname } แต่ใช้ได้กับเฉพาะ: { $validHosts }
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = น่าจะไม่ต้องทำอะไร เนื่องจากน่าจะเป็นปัญหากับตัวไซต์มากกว่า ไซต์ต่างๆ จะใช้ใบรับรองซึ่งออกโดยผู้ออกใบรับรองเพื่อพิสูจน์ตนเองว่าเป็นบุคคลตามที่อ้างจริง แต่ถ้าคุณใช้เครือข่ายองค์กร ทีมช่วยเหลือของคุณอาจจะมีข้อมูลมากกว่านี้ ถ้าคุณกำลังใช้ซอฟต์แวร์แอนติไวรัส ให้ลองค้นหาเกี่ยวกับข้อขัดแย้งที่เป็นไปได้หรือปัญหาที่ทราบ
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } กำลังแจ้งเตือนคุณเกี่ยวกับไซต์นี้เนื่องจากใบรับรองที่ให้ไว้สำหรับ { $hostname } ออกโดยผู้ออกใบรับรองที่เชื่อถือไม่ได้อีกต่อไป
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = น่าจะไม่มีอะไรมากนัก เนื่องจากปัญหาน่าจะอยู่ที่ตัวไซต์เอง คุณสามารถสอบถามเจ้าของเว็บไซต์ได้ว่ากำลังแก้ไขปัญหาอยู่หรือไม่
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = มีปัญหาเกี่ยวกับใบรับรองของไซต์ ซึ่งเป็นไปได้ว่ามีผู้ไม่หวังดีกำลังพยายามปลอมแปลงไซต์นี้ ไซต์ต่างๆ จะใช้ใบรับรองซึ่งออกโดยผู้ออกใบรับรองเพื่อพิสูจน์ตนเองว่าเป็นบุคคลตามที่อ้างจริง { -brand-short-name } จึงไม่เชื่อถือไซต์นี้เนื่องจากเราบอกไม่ได้ว่าใครเป็นผู้ออกใบรับรอง หรือใบรับรองนั้นมีการลงลายเซ็นด้วยตัวเอง หรือไซต์นั้นไม่ส่งใบรับรองระดับกลางที่เราเชื่อถือได้
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = รหัสข้อผิดพลาด: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } ไม่เชื่อถือ { $hostname } เนื่องจากไม่สามารถพิสูจน์ได้ว่าสอดคล้องตามข้อกำหนดความโปร่งใสสำหรับใบรับรองสาธารณะ
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = น่าจะไม่ต้องทำอะไร เนื่องจากน่าจะเป็นเพราะมีปัญหากับตัวไซต์มากกว่า
 fp-learn-more-about-secure-connection-failures = เรียนรู้เพิ่มเติมเกี่ยวกับความล้มเหลวในการเชื่อมต่อปลอดภัย
 fp-learn-more-about-cert-issues = เรียนรู้เพิ่มเติมเกี่ยวกับปัญหาใบรับรองประเภทเหล่านี้
 fp-learn-more-about-time-related-errors = เรียนรู้เพิ่มเติมเกี่ยวกับการแก้ไขปัญหาจากข้อผิดพลาดที่เกี่ยวกับเวลา
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = { -brand-short-name } ไม่เชื่อถือเว็บไซต์นี้ เนื่องจากดูเหมือนว่าใบรับรองที่ให้มาจะไม่ถูกต้องจนถึง { DATETIME($date, timeStyle: "short") } ในวันที่ { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = นาฬิกาของอุปกรณ์คุณถูกตั้งเป็น { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } ถ้าเวลาดังกล่าวถูกต้องแล้ว ปัญหาด้านความปลอดภัยน่าจะเป็นที่ตัวไซต์เอง ถ้าเวลาผิด คุณสามารถเปลี่ยนได้ในการตั้งค่าระบบของอุปกรณ์คุณ
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = เจ้าของ { $hostname } ไม่ได้ตั้งค่าให้ถูกต้อง และไม่สามารถสร้างการเชื่อมต่อแบบปลอดภัยได้
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = คอมพิวเตอร์ของคุณคิดว่าเวลาปัจจุบันคือ { DATETIME($now, dateStyle: "medium") } ซึ่งทำให้ { -brand-short-name } ไม่สามารถทำการเชื่อมต่ออย่างปลอดภัยได้ เพื่อเยี่ยมชม <strong>{ $hostname }</strong> ให้อัปเดตนาฬิกาคอมพิวเตอร์ของคุณที่การตั้งค่าระบบของคุณให้เป็นวันที่ เวลา และเขตเวลาปัจจุบันแล้วรีเฟรชหน้าเว็บ
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = อัปเดตนาฬิกาคอมพิวเตอร์ของคุณที่การตั้งค่าระบบของคุณให้เป็นวันที่ เวลา และเขตเวลาปัจจุบัน เนื่องจากคอมพิวเตอร์คิดว่าเวลาปัจจุบันคือ { DATETIME($now, dateStyle: "medium") }
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = หน้าไม่ได้เปลี่ยนเส�
 unknownSocketType-title = การตอบสนองที่ไม่คาดคิดจากเซิร์ฟเวอร์
 nssFailure2-title = การเชื่อมต่อปลอดภัยล้มเหลว
 csp-xfo-error-title = { -brand-short-name } ไม่สามารถเปิดหน้านี้ได้
+corruptedContentErrorv2-title = ข้อผิดพลาดเนื้อหาเสียหาย
 corruptedContentError-title = ข้อผิดพลาดเนื้อหาเสียหาย
 sslv3Used-title = ไม่สามารถเชื่อมต่ออย่างปลอดภัยได้
 inadequateSecurityError-title = การเชื่อมต่อของคุณไม่ปลอดภัย
@@ -190,3 +231,6 @@ fp-certerror-hide-advanced-button = ซ่อนส่วนขั้นสู�
 fp-certerror-override-exception-button = ไปยัง { $hostname } ต่อ (มีความเสี่ยง)
 fp-certerror-intro = { -brand-short-name } พบปัญหาด้านความปลอดภัยที่น่าจะดูร้ายแรงสำหรับ <strong>{ $hostname }</strong> ผู้ที่แอบอ้างไซต์นี้อาจจะพยายามขโมยข้อมูลต่างๆ เช่น ข้อมูลบัตรเครดิต รหัสผ่าน หรืออีเมล
 fp-certerror-expired-into = { -brand-short-name } พบปัญหาด้านความปลอดภัยสำหรับ <strong>{ $hostname }</strong> ซึ่งอาจเป็นเพราะไซต์มีการตั้งค่าไม่ถูกต้อง หรือนาฬิกาของอุปกรณ์คุณถูกตั้งเป็นวันที่/เวลาไม่ถูกต้อง
+fp-certerror-transparency-intro = ผู้ที่แอบอ้างเป็น <strong>{ $hostname }</strong> อาจพยายามขโมยข้อมูลต่าง ๆ เช่น ข้อมูลบัตรเครดิต รหัสผ่าน หรืออีเมล
+fp-certerror-override-exception-button-2 = ไปยัง { $hostname } (มีความเสี่ยง)
+    .accesskey = ป

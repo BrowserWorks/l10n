@@ -37,12 +37,12 @@ protection-report-manage-protections = จัดการการตั้ง�
 graph-today = วันนี้
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = กราฟที่มีจำนวนตัวติดตามแต่ละชนิดทั้งหมดที่ถูกปิดกั้นในสัปดาห์นี้
-social-tab-title = ตัวติดตามสังคมออนไลน์
-social-tab-contant = เครือข่ายสังคมออนไลน์จะวางตัวติดตามบนเว็บไซต์อื่น ๆ เพื่อติดตามสิ่งที่คุณทำ และดูทางออนไลน์ ซึ่งทำให้บริษัทสังคมออนไลน์สามารถเรียนรู้เพิ่มเติมเกี่ยวกับคุณนอกเหนือจากที่คุณแบ่งปันในโปรไฟล์สังคมออนไลน์ของคุณ <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
+social-tab-title = ตัวติดตามสื่อสังคมออนไลน์
+social-tab-contant = เครือข่ายสื่อสังคมออนไลน์จะวางตัวติดตามบนเว็บไซต์อื่น ๆ เพื่อติดตามสิ่งที่คุณทำ และดูทางออนไลน์ ซึ่งทำให้บริษัทสื่อสังคมออนไลน์สามารถเรียนรู้เพิ่มเติมเกี่ยวกับคุณนอกเหนือจากที่คุณแบ่งปันในโปรไฟล์สื่อสังคมออนไลน์ของคุณ <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
 cookie-tab-title = คุกกี้ติดตามข้ามไซต์
 cookie-tab-content = คุกกี้เหล่านี้ติดตามคุณจากไซต์หนึ่งไปยังอีกไซต์หนึ่งเพื่อรวบรวมข้อมูลเกี่ยวกับสิ่งที่คุณทำทางออนไลน์ ซึ่งถูกตั้งค่าโดยบุคคลที่สาม เช่น ผู้โฆษณาและบริษัทการวิเคราะห์ การปิดกั้นคุกกี้ติดตามข้ามไซต์จะช่วยลดจำนวนโฆษณาที่ติดตามคุณไป <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
-tracker-tab-title = ตัวติดตามเนื้อหา
-tracker-tab-description = เว็บไซต์อาจโหลดโฆษณา วิดีโอ และเนื้อหาอื่น ๆ นอกเว็บที่มีโค้ดติดตาม การปิดกั้นเนื้อหาการติดตามจะทำให้เว็บไซต์โหลดเร็วขึ้น แต่ปุ่มบางปุ่ม ฟอร์ม และเขตข้อมูลการเข้าสู่ระบบอาจไม่ทำงาน <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
+tracker-tab-title = เนื้อหาติดตาม
+tracker-tab-description = เว็บไซต์อาจโหลดโฆษณา วิดีโอ และเนื้อหาอื่น ๆ นอกเว็บที่มีโค้ดติดตาม การปิดกั้นเนื้อหาการติดตามจะทำให้เว็บไซต์โหลดเร็วขึ้น แต่ปุ่ม แบบฟอร์ม และช่องข้อมูลเข้าสู่ระบบบางส่วนอาจไม่ทำงาน <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
 fingerprinter-tab-title = ลายนิ้วมือดิจิทัล
 fingerprinter-tab-content = ลายนิ้วมือดิจิทัลรวบรวมการตั้งค่าจากเบราว์เซอร์และคอมพิวเตอร์ของคุณเพื่อสร้างโปรไฟล์ของคุณ การใช้ลายนิ้วมือดิจิทัลจะทำให้สามารถติดตามคุณผ่านเว็บไซต์ต่าง ๆ ได้ <a data-l10n-name="learn-more-link">เรียนรู้เพิ่มเติม</a>
 cryptominer-tab-title = ตัวขุดเหรียญดิจิทัล
@@ -159,10 +159,10 @@ monitor-resolve-breaches-link = แก้ไขการรั่วไหล
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = ตัวติดตามสังคมออนไลน์
+    .title = ตัวติดตามสื่อสังคมออนไลน์
     .aria-label =
         { $count ->
-           *[other] { $count } ตัวติดตามสังคมออนไลน์ ({ $percentage }%)
+           *[other] { $count } ตัวติดตามสื่อสังคมออนไลน์ ({ $percentage }%)
         }
 bar-tooltip-cookie =
     .title = คุกกี้ติดตามข้ามไซต์
@@ -171,10 +171,10 @@ bar-tooltip-cookie =
            *[other] { $count } คุกกี้ติดตามข้ามไซต์ ({ $percentage }%)
         }
 bar-tooltip-tracker =
-    .title = ตัวติดตามเนื้อหา
+    .title = เนื้อหาติดตาม
     .aria-label =
         { $count ->
-           *[other] { $count } ตัวติดตามเนื้อหา ({ $percentage }%)
+           *[other] { $count } เนื้อหาติดตาม ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
     .title = ลายนิ้วมือดิจิทัล
@@ -188,3 +188,37 @@ bar-tooltip-cryptominer =
         { $count ->
            *[other] { $count } ตัวขุดเหรียญดิจิทัล ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = การปกป้องความเป็นส่วนตัว
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week = { $count } ถูกปิดกั้นในสัปดาห์นี้
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers = { $count } ตัวติดตาม
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters = { $count } ลายนิ้วมือดิจิทัล
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies = { $count } คุกกี้ติดตาม
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social = { $count } ตัวตัวตามทางสังคม
+privacy-metrics-empty = ไม่มีตัวติดตามถูกปิดกั้นในสัปดาห์นี้ { -brand-short-name } ปกป้องคุณจากอันตรายต่าง ๆ ในขณะที่คุณเรียกดู
+privacy-metrics-loading = กำลังโหลดสถิติการป้องกัน…
+privacy-metrics-error = ไม่สามารถโหลดสถิติการป้องกันได้
+privacy-metrics-private-window = { -brand-short-name } ยังคงปิดกั้นตัวติดตามในหน้าต่างส่วนตัวต่อไป แต่จะไม่เก็บบันทึกสิ่งที่ถูกปิดกั้นไว้
+
+## VPN promo card and banner
+
+protections-vpn-title = ปกป้องความเป็นส่วนตัวได้มากกว่าแค่ในเบราว์เซอร์
+protections-vpn-header-content = ปกป้องอุปกรณ์ของคุณทั้งหมดด้วย { -mozilla-vpn-brand-name } เพียงแตะครั้งเดียวก็เข้ารหัสลับการรับส่งข้อมูลทั้งหมดและซ่อนตำแหน่งของคุณได้
+protections-get-vpn-link = รับ { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: สมัครสมาชิกแล้ว
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed = การใช้ { -mozilla-vpn-brand-name } จะเข้ารหัสลับการรับส่งข้อมูลทั้งหมดของคุณและซ่อนตำแหน่งของคุณในอุปกรณ์มากถึง { $count } เครื่อง ใช้ประโยชน์จากการสมัครสมาชิกของคุณอย่างเต็มที่โดยดาวน์โหลดแอปจาก <a data-l10n-name="playstore-link">Google Play Store</a> หรือ <a data-l10n-name="appstore-link">Apple App Store</a>
+protections-vpn-banner-header = การปกป้องที่ไม่ได้มีแค่ในเบราว์เซอร์
+protections-vpn-banner-content = ลองใช้ { -mozilla-vpn-brand-name } โดยไม่มีความเสี่ยง และดูว่าทำไม TechRadar ถึงบอกว่า “ความเร็ว ความเรียง่าย และราคารายเดือนที่ต่ำ ทำให้เป็นตัวเลือกที่คุ้มค่าที่จะพิจารณา”
+protections-vpn-banner-link = รับ { -mozilla-vpn-brand-name }

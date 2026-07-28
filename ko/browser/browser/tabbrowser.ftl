@@ -37,6 +37,10 @@ tabbrowser-close-tabs-button =
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label = 탭 { $tabCount }개 닫기
+tab-splitview-splitter =
+    .aria-label = 분할 화면 탭 크기 조정
+tab-devtools-splitter =
+    .aria-label = 개발자 도구 패널 크기 조정
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -134,8 +138,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = 이 대화 상자를 다시 표시�
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = 주의하세요
-tabbrowser-confirm-close-duplicate-tabs-text = 최근 활성 탭을 계속 열어 둡니다.
 tabbrowser-confirm-close-all-duplicate-tabs-title = 중복 탭을 닫으시겠습니까?
 tabbrowser-confirm-close-all-duplicate-tabs-text =
     이 창에서 중복 탭을 닫습니다. 
@@ -155,9 +157,15 @@ tabbrowser-customizemode-tab-title = { -brand-short-name } 사용자 지정
 tabbrowser-context-mute-tab =
     .label = 탭 음소거
     .accesskey = M
+tabbrowser-context-mute-tab2 =
+    .label = 음소거
+    .accesskey = M
 tabbrowser-context-unmute-tab =
     .label = 탭 음소거 해제
     .accesskey = M
+tabbrowser-context-unmute-tab2 =
+    .label = 음소거 해제
+    .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
     .label = 탭 음소거
@@ -196,7 +204,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — 현재 창
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = 탭 그룹 만들기
 tab-group-editor-title-edit = 탭 그룹 관리
@@ -226,16 +234,33 @@ tab-group-editor-color-selector2-gray = 회색
     .title = 회색
 tab-group-editor-color-selector2-red = 빨간색
     .title = 빨간색
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — 닫힘
 tab-group-description = { $tabGroupName } — 탭 그룹
+tab-group-label-tooltip-collapsed = { $tabGroupName } — 접힘
+tab-group-label-tooltip-expanded = { $tabGroupName } — 펼침
+tab-group-preview-name =
+    .aria-label = 접힌 그룹의 탭
 tab-context-unnamed-group =
     .label = 이름없는 그룹
 tab-group-name-default = 이름없는 그룹
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = 탭 그룹
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = 탭 목록 열림
+tab-group-preview-closed-description = 탭 목록 닫힘
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -251,12 +276,34 @@ tab-context-move-tab-to-group =
            *[other] 그룹에 탭 추가
         }
     .accesskey = G
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] 새 그룹에 분할 화면 추가
+           *[other] 새 그룹에 분할 화면 추가
+        }
+    .accesskey = G
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] 그룹에 분할 화면 추가
+           *[other] 그룹에 분할 화면 추가
+        }
+    .accesskey = G
 tab-context-move-tab-to-group-saved-groups =
     .label = 닫힌 그룹
 tab-group-editor-action-new-tab =
     .label = 그룹에 새 탭
 tab-group-editor-action-new-window =
     .label = 그룹을 새 창으로 이동
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] 그룹의 링크 복사
+           *[other] 그룹의 링크 { $linkCount }개 복사
+        }
 tab-group-editor-action-save =
     .label = 그룹 저장 후 닫기
 tab-group-editor-action-ungroup =
@@ -266,6 +313,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = 완료
     .accessKey = D
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = 탭 그룹 공유
 tab-context-reopen-tab-group =
     .label = 탭 그룹 다시 열기
 # Variables:
@@ -277,6 +327,22 @@ tab-context-ungroup-tab =
            *[other] 그룹에서 제거
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }개
+tab-group-overflow-count-tooltip = 탭 { $tabCount }개 더
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = 탭을 정리하세요
+tab-groups-list-empty-description = 탭을 다른 탭 위로 끌어다 놓거나 마우스 오른쪽 버튼을 클릭하여 정리를 시작해 보세요. 나중에 쉽게 찾을 수 있도록 그룹을 여기에 저장합니다.
+tab-groups-list-empty-button = 탭 그룹 만들기
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = 새 그룹
 
 ## Open/saved tab group context menu
 
@@ -302,3 +368,84 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = 그룹을 새 창에서 열기
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = 메모 추가
+    .accesskey = A
+tab-context-edit-note =
+    .label = 메모 편집
+    .accesskey = E
+tab-context-delete-note =
+    .label = 메모 삭제
+    .accesskey = D
+tab-note-editor-title-create = 메모 추가
+tab-note-editor-title-edit = 메모 편집
+tab-note-editor-text-field =
+    .placeholder = 이 탭에 대해 무엇을 기억하고 싶으세요?
+tab-note-editor-button-cancel =
+    .label = 취소
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = 저장
+    .accesskey = S
+tab-note-editor-button-delete =
+    .title = 메모 삭제
+    .aria-label = 메모 삭제
+    .accesskey = D
+tab-note-preview-edit-icon =
+    .alt = 메모 편집
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = 더 읽기
+tab-note-panel-add-note-new-badge =
+    .label = 신규
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit = { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } 문자
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = 분할 화면 추가
+    .accesskey = t
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = 분할 화면에서 열기
+    .accesskey = t
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = 분할 화면 종료
+    .accesskey = t
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = 탭 역순
+    .accesskey = r
+tab-context-badge-new = 신규
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, 분할 화면 왼쪽
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, 분할 화면 오른쪽
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = 탭 분할 해제
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = 탭 역순
+split-view-menuitem-close-both-tabs =
+    .label = 양쪽 탭 닫기

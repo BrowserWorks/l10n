@@ -33,7 +33,7 @@ about-private-browsing-focus-promo-text = A nossa app móvel dedicada a uma nave
 ## The following strings will be used for experiments in Fx99 and Fx100
 
 about-private-browsing-focus-promo-header-b = Leve a navegação privada para o seu telemóvel
-about-private-browsing-focus-promo-text-b = Use o { -focus-brand-name } para as pesquisas privadas que não deseja que o seu navegador principal para dispositivos móveis veja.
+about-private-browsing-focus-promo-text-b = Utilize o { -focus-brand-name } para essas pesquisas privadas que não deseja que o seu navegador móvel principal veja.
 about-private-browsing-focus-promo-header-c = Privacidade do próximo nível em dispositivos móveis
 about-private-browsing-focus-promo-text-c = O { -focus-brand-name } limpa o seu histórico todas as vezes enquanto bloqueia anúncios e rastreadores.
 # This string is the title for the banner for search engine selection
@@ -73,7 +73,7 @@ about-private-browsing-cookie-banners-promo-message = Permitir que o { -brand-sh
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } cuida das faixas de cookies por si
 about-private-browsing-cookie-banners-promo-body = Nós agora recusamos automaticamente muitas faixas de cookies para que possa ser menos monitorizado e volte a navegar sem distrações.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Não deixe vestígios neste dispositivo
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } elimina os seus cookies, histórico e dados do site quando fecha todas as suas janelas privadas.

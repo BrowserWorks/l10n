@@ -11,7 +11,7 @@ callout-primary-complete-button-label = เข้าใจแล้ว!
 
 # "Tab pickup" refers to the section in Firefox View that displays open
 # tabs from other devices
-callout-firefox-view-tab-pickup-title = สับเปลี่ยนไปมาระหว่างอุปกรณ์ต่าง ๆ ด้วยการรับแท็บ
+callout-firefox-view-tab-pickup-title = สับเปลี่ยนไปมาระหว่างอุปกรณ์ด้วยการรับแท็บ
 callout-firefox-view-tab-pickup-subtitle = นำแท็บที่เปิดอยู่จากโทรศัพท์ของคุณมาเปิดที่นี่อย่างรวดเร็วเพื่อให้คุณใช้งานได้อย่างลื่นไหล
 callout-firefox-view-recently-closed-title = นำแท็บที่ปิดไปแล้วของคุณกลับคืนมาในพริบตา
 callout-firefox-view-recently-closed-subtitle = แท็บทั้งหมดที่ปิดไปแล้วของคุณจะปรากฏขึ้นที่นี่ เพื่อไม่ให้คุณต้องกังวลกับการปิดไซต์โดยไม่ได้ตั้งใจอีกต่อไป
@@ -87,7 +87,7 @@ bookmarks-toolbar-callout-2a-primary-button-label = เข้าใจแล้�
 bookmarks-toolbar-callout-2a-secondary-button-label = ซ่อนแถบเครื่องมือ
 # Visible if user declines to add a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
 bookmarks-toolbar-callout-2b-title = เปิดแถบเครื่องมือที่คั่นหน้าของคุณไว้หรือไม่?
-bookmarks-toolbar-callout-2b-subtitle = คุณสามารถเพิ่มไซต์อื่นๆ ที่คุณเยี่ยมชมบ่อยได้ เพียงลากและปล่อยแท็บต่างๆ ที่นี่เพื่อเข้าถึงไซต์โปรดของคุณได้เพียงแค่เอื้อม
+bookmarks-toolbar-callout-2b-subtitle = คุณสามารถเพิ่มไซต์อื่น ๆ ที่คุณเยี่ยมชมบ่อยได้ เพียงลากและปล่อยแท็บที่นี่เพื่อเข้าถึงไซต์โปรดของคุณได้เพียงแค่เอื้อม
 bookmarks-toolbar-callout-2b-primary-button-label = เปิดไว้
 # Reverts the bookmarks toolbar to the default setting
 bookmarks-toolbar-callout-2b-secondary-button-label = ไม่เป็นไร ขอบคุณ
@@ -104,14 +104,90 @@ perplexity-callout-primary-label = ถาม Perplexity
 perplexity-callout-secondary-label-1 = ปิด
 perplexity-callout-secondary-label-2 = เข้าใจแล้ว
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = ต้องการลองการค้นหาที่เน้นความเป็นส่วนตัวแบบใหม่ไหม?
+start-page-callout-subtitle = ลอง Startpage สิ มันถูกออกแบบให้เก็บการค้นหาของคุณเป็นส่วนตัวมากขึ้นตั้งแต่เริ่มต้น
+start-page-callout-primary-label = ลอง Startpage
+start-page-callout-secondary-label = ยกเลิก
+
 ## Account Adoption Passwords callout strings
 
+# Suggestion to backup passwords by signing up for Mozilla account and using sync
+fxa-adoption-passwords-title = บันทึกรหัสผ่านแล้ว มาสำรองรหัสผ่านกันเลย
+fxa-adoption-passwords-subtitle = ปกป้องรหัสผ่านของคุณด้วยการซิงค์กับอุปกรณ์ต่าง ๆ พร้อมการเข้ารหัสลับ
+# Opens Mozilla accounts sign-up page
+fxa-adoption-passwords-primary-button-label = ลงทะเบียน
+
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = ปักหมุดฟีดโปรดไว้ที่แถบงานของคุณ
+taskbar-tabs-social-callout-subtitle = เปิดไซต์โซเชียลของคุณให้เหมือนแอปในหน้าต่างที่เรียบง่ายและปลอดภัยด้วย { -brand-short-name }
+taskbar-tabs-chat-callout-title = สนทนาได้จากแถบงานของคุณ
+taskbar-tabs-chat-callout-subtitle = เปิดไซต์สนทนาของคุณให้เหมือนแอปในหน้าต่างที่เรียบง่ายและปลอดภัยด้วย { -brand-short-name }
+taskbar-tabs-email-callout-title = ปักหมุดอีเมลไว้ที่แถบงานของคุณ
+taskbar-tabs-email-callout-subtitle = เปิดเว็บเมลของคุณให้เหมือนแอปในหน้าต่างที่เรียบง่ายและปลอดภัยด้วย { -brand-short-name }
+taskbar-tabs-media-callout-title = กลับมาสตรีมต่อได้จากแถบงานของคุณ
+taskbar-tabs-media-callout-subtitle = เปิดไซต์สตรีมมิ่งของคุณให้เหมือนแอปในหน้าต่างที่เรียบง่ายและปลอดภัยด้วย { -brand-short-name }
+taskbar-tabs-value-prop-callout-title = เพิ่มไซต์นี้ลงในแถบงานของคุณ
+taskbar-tabs-value-prop-callout-subtitle = เปิดไซต์ในหน้าต่างของตัวเองพร้อมส่วนติดต่อที่เรียบง่ายด้วยการคลิกเพียงครั้งเดียว
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = อย่าปล่อยให้ทุกสิ่งที่คุณบันทึกไว้สูญหายเมื่อเปลี่ยนไปใช้ Windows 11
+windows-10-eos-sync-urgency-subtitle-1 = ซิงค์เลยตอนนี้เพื่อเก็บที่คั่นหน้า รหัสผ่าน และการตั้งค่าใน { -brand-short-name } ของคุณให้ปลอดภัยและง่ายต่อการกู้คืน
+windows-10-eos-sync-urgency-title-2 = จะเลิกใช้ Windows 10 แล้วใช่ไหม? ปกป้องข้อมูลของคุณไว้เมื่อคุณเปลี่ยนไปใช้ระบบใหม่
+windows-10-eos-sync-urgency-subtitle-2 = แม้ว่าคุณจะไม่ได้ใช้ { -brand-short-name } เป็นประจำ ก็ควรซิงค์เพื่อให้ที่คั่นหน้าและรหัสผ่านปลอดภัยและสามารถเข้าถึงได้
+windows-10-eos-sync-new-device-title-1 = ไม่ต้องเสี่ยงกับการเริ่มใหม่ทั้งหมดเมื่อเปลี่ยนอุปกรณ์เครื่องใหม่
+windows-10-eos-sync-new-device-subtitle-1 = ซิงค์เพื่อนำที่คั่นหน้า รหัสผ่าน และการตั้งค่าที่ต้องการใน { -brand-short-name } ไปกับคุณเมื่อคุณเปลี่ยนอุปกรณ์ใหม่
+windows-10-eos-sync-new-device-title-2 = จะย้ายไปใช้อุปกรณ์ใหม่ใช่ไหม? อย่าปล่อยให้สิ่งสำคัญสูญหายไป
+windows-10-eos-sync-new-device-subtitle-2 = ไม่ว่าคุณจะใช้ { -brand-short-name } บ่อยแค่ไหน การซิงค์ก็จะปกป้องที่คั่นหน้า รหัสผ่าน และการตั้งค่าของคุณ
+windows-10-eos-sync-new-device-primary-label = ซิงค์เลย
+windows-10-eos-sync-general-title-1 = ปกป้อง { -brand-short-name } ที่คุณปรับแต่งในแบบของคุณ
+windows-10-eos-sync-general-subtitle-1 = สำรองและซิงค์รหัสผ่าน ที่คั่นหน้า การตั้งค่า และข้อมูลอื่น ๆ เพื่อเก็บรักษาข้อมูลสำคัญของคุณ
+windows-10-eos-sync-general-title-2 = ตอนนี้ได้เวลาสำรองรหัสผ่านและที่คั่นหน้าของคุณแล้ว
+windows-10-eos-sync-general-subtitle-2 = ซิงค์เลยตอนนี้เพื่อปกป้องทุกสิ่งที่คุณเชื่อมั่นให้ { -brand-short-name } ดูแล และเรียกคืนได้ทุกที่ทุกเวลา
+windows-10-eos-sync-tour-title-1 = เปิดแท็บเยอะไปไหม? จัดระเบียบด้วยกลุ่มแท็บได้นะ
+windows-10-eos-sync-tour-subtitle-1 = ลากแท็บหนึ่งไปทับอีกแท็บหนึ่งเพื่อสร้างกลุ่ม และจัดระเบียบสิ่งต่าง ๆ ให้เรียบร้อย
+windows-10-eos-sync-tour-title-2 = เตรียมพร้อมสำหรับ Windows 11 ด้วยการจัดระเบียบ
+windows-10-eos-sync-tour-subtitle-2 = ซิงค์ที่คั่นหน้า รหัสผ่าน และการตั้งค่าของคุณ เพื่อสำรองข้อมูลก่อนที่คุณจะเปลี่ยนไปใช้ระบบใหม่
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = แสดงคำแนะนำน้อยลง
+windows-10-eos-sync-dismiss-button-label = ปิด
+windows-10-eos-sync-callout-primary-advance-button-label = ถัดไป
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = ใหม่: คลิกและกดค้างไว้เพื่อดูตัวอย่างลิงก์
+link-preview-onboarding-callout-description = ดูคำอธิบายสั้น ๆ เวลาในการอ่าน และอื่น ๆ เพื่อช่วยคุณตัดสินใจว่าลิงก์นี้น่าสนใจพอที่จะเปิดดูหรือไม่ แถมยังสามารถดูได้ด้วยการคลิกขวาเหมือนกัน
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = ลดความวุ่นวายด้วยกลุ่มแท็บ
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = จัดกลุ่มแท็บของคุณตามงานหรือหัวข้อ ลากแท็บอื่นเข้ามาเพิ่มได้ตลอด
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = เริ่มกลุ่ม
 
 ## Sidebar Strings
 
 sidebar-button-callout-title = แสดงชื่อแท็บในแถบข้าง
 sidebar-button-callout-subtitle = ใช้ปุ่มแถบข้างเพื่อขยายแถบข้างเพื่อให้คุณสามารถเห็นชื่อแท็บได้
 sidebar-button-callout-vertical-tabs = เมื่อต้องการแสดงแท็บของคุณ ให้เลือกปุ่มแถบข้างในแถบเครื่องมือ
+sidebar-deprecation-callout-title = แถบด้านข้างรุ่นอัปเดตจะพร้อมใช้งานเร็ว ๆ นี้
+sidebar-deprecation-callout-subtitle = เรากำลังทยอยยกเลิกแถบด้านข้างรุ่นที่คุณใช้อยู่ ลองใช้แถบด้านข้างรุ่นใหม่ที่เร็วกว่าและมีเครื่องมือให้ใช้งานมากขึ้น
+sidebar-deprecation-cta-button = ลองเลย
 
 ## Sidebar Vertical Tabs Strings
 
@@ -130,6 +206,14 @@ sidebar-pins-callout-cta-button = ปักหมุดแท็บ
 
 ## Pinning Tabs Strings
 
+pin-tabs-callout-1-title = เก็บแท็บสำคัญไว้ในที่ที่เข้าถึงได้ง่าย
+pin-tabs-callout-1-subtitle = ลากแท็บไปไว้ที่จุดเริ่มต้นของแถบแท็บเพื่อปักหมุด หรือคลิกขวาแล้วเลือก ปักหมุดแท็บ
+pin-tabs-callout-cta-1-button = ปักหมุดแท็บนี้
+pin-tabs-callout-2-title = ปักหมุดแท็บที่คุณเยี่ยมชมบ่อยที่สุด
+pin-tabs-callout-2-subtitle = ถ้าต้องการปักหมุดแท็บใด ๆ ให้ลากแท็บนั้นไปไว้ที่จุดเริ่มต้นของแถบแท็บ หรือคลิกขวาแล้วเลือก ปักหมุดแท็บ
+pin-tabs-callout-cta-2-button = ปักหมุดแท็บนี้
+pin-tabs-callout-3-title = เก็บไซต์สำคัญไว้ในที่ที่เข้าถึงได้ง่าย
+pin-tabs-callout-4-title = ปักหมุดไซต์ที่คุณเยี่ยมชมบ่อยที่สุด
 
 ## Sidebar Onboarding Strings
 
@@ -164,11 +248,17 @@ sidebar-callout-survey-keep-website-open = เปิดเว็บไซต์ 
 sidebar-callout-survey-saved-websites-2 = เข้าถึงที่คั่นหน้าของคุณได้อย่างรวดเร็ว
 sidebar-callout-survey-none-of-above = ไม่มีข้อใดข้างต้น
 sidebar-callout-survey-submit = ส่ง
-sidebar-callout-survey-thank-you = ขอบคุณสำหรับข้อคิดเห็นของคุณ!
+sidebar-callout-survey-thank-you = ขอบคุณสำหรับข้อเสนอแนะของคุณ!
 sidebar-genai-survey-satisfaction-question = คุณพอใจกับการเข้าถึงบอตสนทนา AI ในแถบข้างมากแค่ไหน?
 sidebar-genai-survey-productive-question =
     คุณเห็นด้วยหรือไม่เห็นด้วยกับคำกล่าวนี้มากแค่ไหน:<br/>
     “บอตสนทนา AI ในแถบข้างช่วยให้ฉันทำงานได้คล่องตัวมากขึ้น”?
+splitview-onboarding-callout-title-1 = มุมมองแยก: ทำงานหลายอย่างพร้อมกันได้ดีขึ้น
+splitview-onboarding-callout-subtitle-1 = คลิกขวาที่แท็บนี้ แล้วเลือก “เพิ่มมุมมองแยก” เพื่อดูสองแท็บพร้อมกัน
+splitview-onboarding-callout-cta-1 = ลองเลย
+splitview-onboarding-callout-title-2 = ดูสองแท็บพร้อมกันด้วยมุมมองแยก
+splitview-onboarding-callout-subtitle-2 = ไม่ต้องเปิดหน้าต่างเพิ่ม ไม่ต้องสลับแท็บ คลิกขวาที่แท็บนี้แล้วเลือก “เพิ่มมุมมองแยก”
+splitview-onboarding-callout-cta-2 = ลองใช้มุมมองแยก
 unified-search-callout-title = สลับไปมาระหว่างเครื่องมือค้นหา
 unified-search-callout-subtitle = เลือกสิ่งที่เหมาะที่สุดสำหรับการค้นหาที่เฉพาะเจาะจงของคุณ
 unified-search-callout-primary-label = ถัดไป
@@ -182,6 +272,6 @@ actions-callout-title = ทำงานทั่วไปให้เสร็�
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = ลองพิมพ์การกระทำ อย่างเช่น “print” เพื่อพิมพ์หน้าเว็บ หรือ “clear” เพื่อล้างประวัติของคุณ

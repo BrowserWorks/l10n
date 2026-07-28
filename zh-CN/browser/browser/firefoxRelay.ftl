@@ -11,18 +11,31 @@
 firefox-relay-mask-generation-failed = { -relay-brand-name } 无法生成新马甲。 HTTP 错误代码：{ $status }。
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name } 无法找到可重复使用的马甲。HTTP 错误代码：{ $status }。
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = 您须登录 { -fxaccount-brand-name }才能使用 { -relay-brand-name }。
 firefox-relay-must-login-to-account = 登录账户以使用您的 { -relay-brand-name } 马甲邮箱。
 firefox-relay-get-unlimited-masks =
     .label = 管理马甲
     .accesskey = M
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header = 您已用完 { $count } 个免费马甲邮箱
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = 您可以重复使用某个马甲，或查看所有马甲来另选一个。
+firefox-relay-reuse-masks-select-label = 选择最近使用的马甲
+firefox-relay-see-all-masks =
+    .label = 查看所有马甲
+    .accesskey = S
+firefox-relay-dismiss =
+    .label = 知道了
+    .accesskey = D
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = 保护您的邮箱地址：
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = 使用 { -relay-brand-name } 马甲邮箱
+firefox-relay-use-mask-title-1 = 使用马甲邮箱
 firefox-relay-use-mask-title = 使用 { -relay-brand-name } 马甲邮箱
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = 使用免费马甲邮箱，免受垃圾邮件侵扰
@@ -72,6 +85,8 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain = 获取免费马甲邮箱
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = 使用免费<label data-l10n-name="firefox-relay-learn-more-url">马甲邮箱</label>，隐藏真实邮箱地址，保护收件箱免受垃圾邮件侵扰。<label data-l10n-name="firefox-fxa-and-relay-offer-domain">此网站</label>无法得知您的真实邮箱地址，而您仍能收到其发来的邮件。
+firefox-relay-and-fxa-popup-notification-first-sentence = 使用免费的 <label data-l10n-name="firefox-relay-learn-more-url">{ -relay-brand-name } 马甲邮箱</label>，隐藏真实邮箱地址，保护收件箱免受垃圾邮件侵扰。<label data-l10n-name="firefox-fxa-and-relay-offer-domain">此网站</label>无法得知您的真实邮箱地址，而您仍能收到其发来的邮件。
+firefox-relay-offer-why-to-use-relay-1 = 使用免费的 <label data-l10n-name="firefox-relay-learn-more-url">{ -relay-brand-name } 马甲邮箱</label>，隐藏真实邮箱地址，保护收件箱免受垃圾邮件侵扰。<label data-l10n-name="firefox-fxa-and-relay-offer-domain">此网站</label>无法得知您的真实邮箱地址，而您仍能收到其发来的邮件。
 firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = 请先注册或登录账户，以使用马甲邮箱
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = 注册

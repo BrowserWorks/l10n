@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = 网页显示
 experimental-features-group-customize-browsing =
     .label = 定制浏览体验
+experimental-features-group-productivity =
+    .label = 效率
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } 的小部件
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = 在侧栏中显示密码
@@ -38,8 +42,8 @@ experimental-features-link-previews =
     .label = 链接预览
 experimental-features-link-previews-description =
     { PLATFORM() ->
-        [macos] 若要在点击链接前预先了解网页内容，可将指针悬停在链接上，然后按下 Shift (⇧) 和 Option (⌥)  或 Alt。预览中可能包含标题和阅读所需时间等详细信息。对于部分网页，AI 还可读取页面文字并列出要点。此 AI 为读取和生成英语文本优化。为最大程度保护隐私，AI 会在您的计算机本地运行。<a data-l10n-name="connect">分享反馈</a>
-       *[other] 若要在点击链接前预先了解网页内容，可将指针悬停在链接上，然后按下 Shift + Alt。预览中可能包含标题和阅读所需时间等详细信息。对于部分网页，AI 还可读取页面文字并列出要点。此 AI 为读取和生成英语文本优化。为最大程度保护隐私，AI 会在您的计算机本地运行。<a data-l10n-name="connect">分享反馈</a>
+        [macos] 若要在点击链接前预先了解网页内容，可将指针悬停在链接上，然后按下 Shift (⇧) 和 Option (⌥)  或 Alt。预览中可能包含标题和阅读所需时间等详细信息。对于部分网页，AI 还可读取页面文字并列出要点。此 AI 为读取和生成英语文本优化。为优先保护隐私，AI 会在您的计算机本地运行。<a data-l10n-name="connect">分享反馈</a>
+       *[other] 若要在点击链接前预先了解网页内容，可将指针悬停在链接上，然后按下 Shift + Alt。预览中可能包含标题和阅读所需时间等详细信息。对于部分网页，AI 还可读取页面文字并列出要点。此 AI 为读取和生成英语文本优化。为优先保护隐私，AI 会在您的计算机本地运行。<a data-l10n-name="connect">分享反馈</a>
     }
 # This version of the link previews description does not mention AI.
 experimental-features-link-previews-description-no-ai =
@@ -51,3 +55,47 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = 新标签页文章的主题分组和关注/屏蔽
 experimental-features-newtab-sections-follow-block-description = 将新标签页上的文章按主题（例如体育、美食、娱乐等）分组，浏览体验更直观有序。还可使用全新的“关注”和“屏蔽”控制方式来定制您想看的内容。<a data-l10n-name="connect">分享反馈</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = 将网站添加到任务栏
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = 通过任务栏，以 Web 应用形式打开常用网站。点击地址栏右侧的“添加标签页到任务栏”图标，即可在简化窗口中启动相应网站，同时仍能获得 { -brand-product-name } 的所有保护。<a data-l10n-name="connect">分享反馈</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = { -firefox-home-brand-name }上的清单
+experimental-features-newtab-widget-lists-new =
+    .label = 清单
+experimental-features-newtab-widget-lists-description = 在新标签页中一览待办清单，时刻提醒自己完成任务。从收拾行李到网上购物，都可以在 { -brand-product-name } 中列清单筹划。<a data-l10n-name="connect">分享反馈</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = { -firefox-home-brand-name }上的计时器
+experimental-features-newtab-widget-timer-new =
+    .label = 计时器
+experimental-features-newtab-widget-timer-description = 设置计时器，帮助保持专注，促使全心投入，提醒劳逸结合。<a data-l10n-name="connect">分享反馈</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = { -firefox-home-brand-name }上的清单和计时器
+experimental-features-newtab-widget-lists-and-timer-description = 在新标签页中一览待办清单，时刻提醒自己完成任务。从收拾行李到网上购物，都能在 { -brand-product-name } 中列清单筹划。还可设置计时器，帮助保持专注，促使全心投入，提醒劳逸结合。<a data-l10n-name="connect">分享反馈</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 天气预报
+experimental-features-newtab-widget-weather-description = 查看逐小时预报，今日天气一目了然。<a data-l10n-name="connect">分享反馈</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 每日一图
+experimental-features-newtab-widget-picture-of-the-day-description = 为每一天增添小小惊喜。收取新图片、了解背后趣事，也可快速更换新壁纸。 <a data-l10n-name="connect">分享反馈</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 时钟
+experimental-features-newtab-widget-clocks-description = 添加至多四个时钟，并可自定义昵称，帮助掌握各地时间。<a data-l10n-name="connect">分享反馈</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = 历史记录语义搜索
+experimental-features-semantic-history-search-description = 使用本地机器学习模型，基于对自然语言的理解，从历史记录中筛选与搜索词相关的条目，并在 { -brand-product-name } 地址栏中建议。<a data-l10n-name="connect">分享反馈</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = 标签页备注
+experimental-features-tab-notes-description = 标签页备注是一项实验功能，可让您为浏览器标签页添加“便签”。您可以随手记下背景信息、提醒事项，或接下来要做的事情，以便回想起打开该页面的原因。我们正持续改进此功能，期待收到您的反馈。<a data-l10n-name="connect">分享反馈</a>

@@ -90,7 +90,7 @@ exception-mgr-cert-status-view-cert =
     .label = اعرض…
     .accesskey = ع
 exception-mgr-permanent =
-    .label = احفظ هذا الاستثناء دائما
+    .label = احفظ هذا الاستثناء دائمًا
     .accesskey = د
 pk11-bad-password = كلمة السر المدخلة غير صحيحة.
 pkcs12-decode-err = فشل تظهير الملفّ.  إمّا أنّه ليس بهيئة PKCS #12، أو تلف، أو أنّ كلمة السر غير صحيحة.
@@ -98,7 +98,7 @@ pkcs12-unknown-err-restore = فشلت استعادة ملفّ PKCS #12 لأسب�
 pkcs12-unknown-err-backup = فشل إنشاء ملف النسخة الاحتياطيّة PKCS #12 لأسباب غير معروفة.
 pkcs12-unknown-err = فشلت عمليّة PKCS #12 لأسباب غير معروفة.
 pkcs12-info-no-smartcard-backup = تعذّر النّسخ الاحتياطي لشهادات من جهاز أمن كقارئ بطاقات.
-pkcs12-dup-data = توجد الشّهادة و المفتاح السرّيّ على جهاز الأمن مسبقًا.
+pkcs12-dup-data = توجد الشهادة و المفتاح السري على جهاز الأمن مسبقًا.
 
 ## PKCS#12 file dialogs
 

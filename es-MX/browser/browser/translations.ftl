@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = Cambiar el idioma de origen
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Lo sentimos, aún no ofrecemos traducciones desde el { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Lo sentimos, aún no ofrecemos traducciones desde este idioma.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -230,6 +238,16 @@ select-translations-panel-translation-failure-message =
     .message = Hubo un problema con la traducción. Por favor, inténtalo de nuevo.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Lo sentimos, aún no ofrecemos traducciones desde el { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Lo sentimos, aún no ofrecemos traducciones desde este idioma.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -240,6 +258,6 @@ select-translations-panel-unsupported-language-message-unknown =
     .message = Lo sentimos, todavía no manejamos este idioma.
 # Text displayed on the menuitem that opens the Translation Settings page.
 select-translations-panel-open-translations-settings-menuitem =
-    .label = Configuración de traducción.
+    .label = Ajustes de traducción
 # An announcement made to assistive technology when the translation is complete
 select-translations-panel-translation-complete-announcement = Traducción completa

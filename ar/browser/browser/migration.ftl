@@ -6,8 +6,8 @@ migration-wizard =
     .title = مرشِد الاستيراد
 import-from =
     { PLATFORM() ->
-        [windows] استورد الخيارات، و العلامات، و التّأريخ، و كلمات السرّ و بيانات أخرى من:
-       *[other] استورد التّفضيلات، و العلامات، و التّأريخ، و كلمات السرّ و بيانات أخرى من:
+        [windows] استورد الخيارات والعلامات والتّأريخ، وكلمات السر وبيانات أخرى من:
+       *[other] استورد التّفضيلات والعلامات والتّأريخ، وكلمات السر وبيانات أخرى من:
     }
 import-from-bookmarks = استورد العلامات من:
 import-from-ie =
@@ -20,7 +20,7 @@ import-from-edge-legacy =
     .label = ميكروسوفت إدج العتيق
     .accesskey = م
 import-from-edge-beta =
-    .label = ميكروسوفت إدج بيتا
+    .label = ميكروسوفت إدج تجريبي
     .accesskey = ت
 import-from-nothing =
     .label = لا تستورد أي شيء
@@ -44,7 +44,7 @@ import-from-chrome =
     .label = كروم
     .accesskey = ك
 import-from-chrome-beta =
-    .label = كروم بيتا
+    .label = كروم تجريبي
     .accesskey = ت
 import-from-chrome-dev =
     .label = إصدارة كروم التطويرية
@@ -61,7 +61,7 @@ import-from-360se =
 import-from-opera-gx =
     .label = Opera GX
     .accesskey = G
-no-migration-sources = لم يُعثر على أي برامج تحتوي على بيانات أو علامات أو تأريخ أو كلمات سرّ.
+no-migration-sources = لم يُعثر على أي برامج تحتوي على بيانات أو علامات أو تأريخ أو كلمات سر.
 import-source-page-title = استورد الإعدادات و البيانات
 import-items-page-title = العناصر المراد استيرادها
 import-items-description = اختر أي العناصر تريد استيرادها:

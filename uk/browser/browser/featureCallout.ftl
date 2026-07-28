@@ -149,11 +149,19 @@ windows-10-eos-sync-split-dismiss-button-show-fewer-option =
 windows-10-eos-sync-dismiss-button-label = Відхилити
 windows-10-eos-sync-callout-primary-advance-button-label = Далі
 
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Новинка! Натисніть і утримуйте для перегляду посилань.
+link-preview-onboarding-callout-description = Перегляньте короткий опис, тривалість читання та інші дані, щоб вирішити, чи варто відкривати посилання. Також доступно при натисканні правою кнопкою.
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Показувати заголовки вкладок на бічній панелі
 sidebar-button-callout-subtitle = Натисніть кнопку бічної панелі, щоб розгорнути бічну панель і бачити заголовки вкладок.
 sidebar-button-callout-vertical-tabs = Щоб показати вкладки, натисніть кнопку бічної панелі на панелі інструментів.
+sidebar-deprecation-callout-title = Невдовзі з'явиться оновлена бічна панель
+sidebar-deprecation-callout-subtitle = Ми поступово припиняємо підтримку поточної версії бічної панелі. Спробуйте оновлену бічну панель, яка працює швидше та забезпечує доступ до більшої кількості інструментів.
+sidebar-deprecation-cta-button = Спробувати
 
 ## Sidebar Vertical Tabs Strings
 
@@ -219,6 +227,12 @@ sidebar-genai-survey-satisfaction-question = Як ви оцінюєте взає
 sidebar-genai-survey-productive-question =
     Наскільки ви згодні чи не згодні з цим твердженням:<br/>
     “Чат-бот з ШІ на бічній панелі підвищує мою продуктивність”?
+splitview-onboarding-callout-title-1 = Розділений екран: кращий спосіб багатозадачності
+splitview-onboarding-callout-subtitle-1 = Натисніть правою кнопкою цю вкладку й виберіть “Додати розділений екран”, щоб бачити одночасно дві вкладки.
+splitview-onboarding-callout-cta-1 = Спробувати зараз
+splitview-onboarding-callout-title-2 = Переглядайте дві вкладки одночасно в режимі розділеного екрану
+splitview-onboarding-callout-subtitle-2 = Без зайвих вікон. Без перегортання вкладок. Натисніть правою кнопкою цю вкладку й виберіть “Додати розділений екран”.
+splitview-onboarding-callout-cta-2 = Спробуйте розділений екран
 unified-search-callout-title = Перемикання пошукових систем
 unified-search-callout-subtitle = Виберіть те, що найкраще підходить для вашого конкретного пошуку.
 unified-search-callout-primary-label = Далі
@@ -232,6 +246,6 @@ actions-callout-title = Виконання типових завдань або 
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Спробуйте ввести дію, наприклад, “друк”, щоб надрукувати сторінку, або “очистити”, щоб стерти історію.

@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Manuell testning
 about-glean-category-adhoc-testing = Ad hoc-testning
 about-glean-category-profiler = Använda profileraren
 about-glean-category-about-data = Om data
+about-glean-category-metrics-table = Mätvärdestabell
 about-glean-upload-enabled = Dataöverföring är aktiverad.
 about-glean-upload-disabled = Dataöverföring är inaktiverad.
 about-glean-upload-enabled-local = Dataöverföring är endast aktiverad för sändning till en lokal server.
@@ -120,6 +121,71 @@ about-glean-about-data-list-item-dictionary = Om du vill bläddra i listan över
 about-glean-about-data-list-item-about-telemetry = För att bläddra bland data som samlas in av äldre telemetri, kontakta <a data-l10n-name="about-telemetry-link">about:telemetry</a>.
 about-glean-about-data-list-item-debug-ping-viewer = För att bläddra i felsökningstaggar, se fullständiga pingar, se en livestream av händelser eller se statistikvisualiseringar, se <a data-l10n-name="glean-debug-ping-viewer"> { glean-debug-ping-viewer-brand-name }</a>.
 about-glean-about-data-list-item-firefox-profiler = För att spela in en prestandaprofil och se all inspelad statistik, använd <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Alla mätvärden
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Kategori
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Namn
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Typ
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Värde
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Åtgärder
+about-glean-metrics-table-settings-button = Inställningar
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Inställningar för mätvärdestabeller
+about-glean-metrics-table-settings-category-general = Allmänt
+about-glean-metrics-table-settings-hide-empty-value-rows = Dölj tomma värderader
+about-glean-metrics-table-settings-category-visualizations = Visualiseringar
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Exempel
+about-glean-metrics-table-settings-category-visualizations-histogram = Histogram
+about-glean-metrics-table-settings-histograms-chart-max = Maximal höjd för diagrammet
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Skalad maximal höjd
+about-glean-metrics-table-settings-histograms-box-padding = Boxfyllning
+about-glean-metrics-table-settings-histograms-chart-padding = Diagramfyllning
+about-glean-metrics-table-settings-histograms-left-padding = Ytterligare vänster fyllning
+about-glean-metrics-table-settings-category-visualizations-timeline = Tidslinje
+about-glean-metrics-table-settings-timelines-height = Höjd
+about-glean-metrics-table-settings-timelines-width = Bredd
+about-glean-metrics-table-settings-timelines-chart-padding = Diagramfyllning
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Cirkelradie
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y-axelns X-offset
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y-axelns Y-offset
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Filter
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Detta filtrerar tabellen nedan baserat på kategori, namn, typ och värde (om värdet är en enkel typ).
+about-glean-button-load-all = Ladda alla värden
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Exportera data
+about-glean-button-load-value = Ladda
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Dokumentation
+about-glean-button-watch = Bevaka
+# Meaning "to stop watching"
+about-glean-button-unwatch = Avbevaka
+about-glean-no-data-to-display = Ingen data att visa.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>DualLabeledCounter</code>-mätvärden stöds ännu inte i <code>about:glean</code>-vyn.
+about-glean-unknown-metric-type-warning = Okänd mätvärdestyp.
 about-glean-about-data-explanation =
     För att bläddra i listan över insamlade data, vänligen konsultera
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } ordbok</a>.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Inbyggda pings
+about-glean-ping-list-optgroup-custom =
+    .label = Anpassade pings

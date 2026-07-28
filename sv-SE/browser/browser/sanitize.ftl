@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Besökta sidor och filhämtningshistorik
     .accesskey = B
 item-history-and-downloads-description2 = Rensar webbplats- och nedladdningshistorik
-item-history-form-data-downloads =
-    .label = Historik
-    .accesskey = H
-item-history-form-data-downloads-description = Rensar webbplats och nedladdningshistorik, sparad formulärinformation och sökningar
 item-cookies =
     .label = Kakor
     .accesskey = K
@@ -132,3 +128,6 @@ sanitize-everything-warning = All historik kommer att tas bort.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Alla markerade poster kommer att tas bort.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Beräknar…

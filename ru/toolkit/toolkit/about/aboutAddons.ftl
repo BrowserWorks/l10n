@@ -10,8 +10,8 @@ search-header =
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
 
-list-empty-get-extensions-message = Загрузите расширения и темы на <a data-l10n-name="get-extensions">{ $domain }</a>
-list-empty-get-dictionaries-message = Загрузите словари на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-extensions-message = Скачайте расширения и темы на <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-dictionaries-message = Скачайте словари на <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-language-packs-message = Загрузите языковые пакеты на <a data-l10n-name="get-extensions">{ $domain }</a>
 
 ##
@@ -120,6 +120,8 @@ private-browsing-description2 =
     расширение не будет работать в приватном режиме и не будет иметь доступа к вашей активности в Интернете.
     Мы внесли это изменение, чтобы сделать ваш приватный режим по-настоящему приватным.
     <label data-l10n-name="private-browsing-learn-more">Узнайте, как управлять настройками расширений.</label>
+aboutaddons-sidebar =
+    .heading = Дополнения
 addon-category-discover = Рекомендации
 addon-category-discover-title =
     .title = Рекомендации
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Включить
 extensions-warning-imported-addons2 =
     .message = Пожалуйста, завершите установку расширений, которые были импортированы в { -brand-short-name }.
 extensions-warning-imported-addons-button = Установка расширений
+extensions-warning-safe-mode3 =
+    .message = Все дополнения были отключены Безопасным режимом.
 
 ## Strings connected to add-on updates
 
@@ -268,7 +272,7 @@ header-back-button =
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
     Расширения и темы — это как приложения для вашего браузера, они позволяют вам
-    защищать пароли, загружать видео, находить скидки, блокировать раздражающую рекламу, изменять
+    защищать пароли, скачивать видео, находить скидки, блокировать раздражающую рекламу, изменять
     внешний вид браузера и многое другое. Эти небольшие программные продукты
     обычно разрабатываются сторонними разработчиками. Вот подборка расширений и тем, <a data-l10n-name="learn-more-trigger">рекомендуемых</a> { -brand-product-name } за свою исключительную
     безопасность, производительность и функциональность.
@@ -288,6 +292,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } обновил коллекцию расцветок. Старые версии удалены из списка «Сохранённые темы». Получите новые версии на сайте дополнений.
 colorway-removal-notice-learn-more = Подробнее
 colorway-removal-notice-button = Получить обновлённые темы с расцветками
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Ваши настройки контраста Windows переопределяют темы { -brand-short-name }. Отключите эти настройки, чтобы использовать темы в { -brand-short-name }.
 privacy-policy = Политика приватности
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -473,11 +481,18 @@ available-updates-heading = Доступные обновления
 recent-updates-heading = Недавно обновлённые
 release-notes-loading = Загрузка…
 release-notes-error = При загрузке примечаний к выпуску возникли проблемы.
+addon-permissions-heading = Разрешения
 addon-permissions-empty2 = Это расширение не требует никаких разрешений.
+addon-permissions-required-label = Требуется:
+addon-permissions-optional-label = Необязательно:
 addon-permissions-empty = Это расширение не требует дополнительных разрешений
 addon-permissions-required = Необходимые разрешения для основных функций:
 addon-permissions-optional = Необязательные разрешения для дополнительных функций:
 addon-permissions-learnmore = Узнать больше о разрешениях
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Некоторыми разрешениями управляет ваша организация.
 recommended-extensions-heading = Рекомендуемые расширения
 recommended-themes-heading = Рекомендуемые темы
 # Variables:
@@ -519,9 +534,9 @@ details-notification-incompatible = { $name } несовместимо с { -bra
 details-notification-incompatible2 =
     .message = { $name } несовместимо с { -brand-short-name } { $version }.
 details-notification-incompatible-link = Больше информации
-details-notification-unsigned-and-disabled = Работа { $name } в { -brand-short-name } не была проверена, поэтому оно было отключено.
+details-notification-unsigned-and-disabled = Работа «{ $name }» в { -brand-short-name } не была проверена, поэтому оно было отключено.
 details-notification-unsigned-and-disabled2 =
-    .message = Работа { $name } в { -brand-short-name } не была проверена, поэтому оно было отключено.
+    .message = Работа «{ $name }» в { -brand-short-name } не была проверена, поэтому оно было отключено.
 details-notification-unsigned-and-disabled-link = Подробная информация
 details-notification-unsigned = Работа { $name } в { -brand-short-name } не была проверена. Действуйте с осторожностью.
 details-notification-unsigned2 =
@@ -531,10 +546,16 @@ details-notification-hard-blocked-extension =
 details-notification-hard-blocked-other =
     .message = Это дополнение заблокировано за нарушение политик BrowserWorks, и было отключено.
 details-notification-unsigned-link = Подробная информация
-details-notification-blocked = { $name } было отключено из-за проблем со стабильностью или безопасностью.
-details-notification-blocked2 =
-    .message = { $name } было отключено из-за проблем со стабильностью или безопасностью.
+details-notification-blocked = «{ $name }» было отключено из-за проблем со стабильностью или безопасностью.
 details-notification-blocked-link2 = Узнать подробнее
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Это расширение ограничено и было отключено. Вы можете включить его, но это может быть рискованно.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Это расширение ограничено. Его использование может быть рискованным.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Это дополнение ограничено и было отключено. Вы можете включить его, но это может быть рискованно.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Это дополнение ограничено. Его использование может быть рискованным.
 details-notification-soft-blocked-extension-disabled =
     .message = Это расширение ограничено за нарушение политик BrowserWorks и было отключено. Вы можете включить его, но это может быть рискованно.
 details-notification-soft-blocked-extension-enabled =
@@ -546,8 +567,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Узнать подробнее
 details-notification-blocked-link = Подробная информация
 details-notification-softblocked = { $name } вызывает проблемы со стабильностью или безопасностью.
-details-notification-softblocked2 =
-    .message = { $name } вызывает проблемы со стабильностью или безопасностью.
 details-notification-softblocked-link = Подробная информация
 details-notification-gmp-pending = { $name } будет скоро установлено.
 details-notification-gmp-pending2 =
@@ -573,6 +592,10 @@ permissions-data-addon-button = Разрешения и данные
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Используется расширением { $extensionName }
+addon-permissions-data-collection-heading = Сбор данных
+addon-permissions-data-collection-empty = Разработчик сообщает, что это расширение не требует сбора данных.
+addon-data-collection-provided = Информация предоставлена разработчиком расширения
+addon-data-collection-learnmore = Узнайте больше о сборе данных
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -581,6 +604,7 @@ mlmodel-link-preview = { -brand-short-name } использует это для 
 mlmodel-pdfjs = { -brand-short-name } использует это для создания альтернативного текста для изображений, которые вы добавляете в PDF-файлы.
 mlmodel-smart-tab-topic-engine = { -brand-short-name } использует это, чтобы предлагать имена для ваших групп вкладок
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } использует это, чтобы предлагать вкладки для ваших групп вкладок
+mlmodel-formfill-engine = { -brand-short-name } использует это, чтобы помочь заполнять формы адресов
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = ИИ на устройстве
 addon-category-mlmodel-title =

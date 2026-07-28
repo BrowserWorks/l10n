@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Browsing & download history
     .accesskey = B
 item-history-and-downloads-description2 = Clears site and download history
-item-history-form-data-downloads =
-    .label = History
-    .accesskey = H
-item-history-form-data-downloads-description = Clears site and download history, saved form info, and searches
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -76,7 +72,7 @@ item-cookies-site-data-with-size =
 item-cookies-site-data =
     .label = Cookies and site data
     .accesskey = e
-item-cookies-site-data-description = May sign you out of sites or empty shopping carts
+item-cookies-site-data-description = May sign you out of sites or empty shopping baskets
 item-active-logins =
     .label = Active logins
     .accesskey = L
@@ -132,3 +128,6 @@ sanitize-everything-warning = All history will be cleared.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = All selected items will be cleared.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Calculating…

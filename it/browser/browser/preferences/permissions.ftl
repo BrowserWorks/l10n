@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Consenti
     .accesskey = C
+permissions-add =
+    .label = Aggiungi
+    .accesskey = A
 permissions-button-off =
     .label = Disattiva
     .accesskey = D
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Rimuovi tutti i siti web
     .accesskey = t
+permissions-save-changes-2 =
+    .buttonlabelaccept = Salva modifiche
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = Salva modifiche
     .buttonaccesskeyaccept = S
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = È possibile specificare quali siti web potranno o meno salvare cookie e dati. Inserire l’indirizzo esatto del sito web da gestire e fare clic su Blocca, Consenti per la sessione o Consenti.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Eccezioni - Cancellazione cronologia alla chiusura
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = È possibile specificare quali siti web conserveranno i propri dati quando { -brand-short-name } cancellerà la cronologia alla chiusura. Digitare l’indirizzo esatto del sito che si desidera aggiungere e fare clic su Consenti.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = È possibile disattivare la modalità solo HTTPS per determinati siti. { -brand-short-name } non cercherà di aggiornare la connessione alla versione sicura HTTPS per questi siti. Le eccezioni non sono valide per le finestre anonime.
 permissions-exceptions-https-only-desc2 = È possibile disattivare la modalità solo HTTPS per determinati siti. { -brand-short-name } non cercherà di aggiornare la connessione alla versione sicura HTTPS per questi siti.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Siti web con permesso - Pop-up e reindirizzamenti di terze parti
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = È possibile specificare quali siti web possono aprire finestre pop-up ed essere reindirizzati da frame di terze parti.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = I seguenti siti web hanno richiesto il permesso d
 permissions-site-camera-disable-label =
     .label = Blocca nuove richieste di accesso alla fotocamera
 permissions-site-camera-disable-desc = Verrà impedito a qualunque sito web non presente nell’elenco di richiedere il permesso di accedere alla fotocamera. L’impossibilità di accedere al dispositivo potrebbe comportare il malfunzionamento di alcuni siti web.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Impostazioni - App e servizi del dispositivo
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Questi siti web hanno richiesto l’accesso ad app e servizi su questo dispositivo. Puoi scegliere di consentire o impedire ai siti di eseguire questa operazione.
+permissions-site-localhost-disable-label =
+    .label = Blocca nuove richieste di accesso ad app e servizi su questo dispositivo
+permissions-site-localhost-disable-desc = Verrà impedito a qualunque sito web non presente nell’elenco di richiedere il permesso di accedere ad app e servizi su questo dispositivo. Questo potrebbe comportare il malfunzionamento di alcuni siti web.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Impostazioni - Dispositivi di rete locale
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Questi siti web hanno richiesto l’accesso ad app e servizi su dispositivi connessi alla tua rete Wi-Fi o locale. Puoi scegliere di consentire o impedire ai siti di eseguire questa operazione.
+permissions-site-local-network-disable-label =
+    .label = Blocca nuove richieste di accesso ad app e servizi su dispositivi connessi alla tua rete Wi-Fi o locale.
+permissions-site-local-network-disable-desc = Verrà impedito a qualunque sito web non presente nell’elenco di richiedere il permesso di accedere ad app e servizi su dispositivi connessi al tuo Wi-Fi o dispositivi di rete locale. Questo potrebbe comportare il malfunzionamento di alcuni siti web.
 
 ## Site Permissions - Microphone
 

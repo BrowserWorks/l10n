@@ -30,10 +30,18 @@ options-context-inspector = Inspector
 options-show-user-agent-styles-label = Browserstijlen tonen
 options-show-user-agent-styles-tooltip =
     .title = Aanzetten hiervan toont standaardstijlen die door de browser worden geladen.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Shadow DOM van browser tonen
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Als u dit inschakelt, worden schaduw-DOM-elementen weergegeven die door de browser worden verwerkt.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = DOM-attributen afkappen
 options-collapse-attrs-tooltip =
     .title = Lange attributen in de inspector afkappen
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Opmerkingen tonen
+options-show-comments-tooltip =
+    .title = Opmerkingsnodes in de inspector tonen
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Klik en sleep om de afmetingswaarden te bewerken
 options-inspector-draggable-properties-tooltip =
@@ -67,6 +75,35 @@ options-webconsole-label = Webconsole
 options-webconsole-split-console-label = Gesplitste console inschakelen
 options-webconsole-split-console-tooltip =
     .title = Gesplitste console openen met de Escape-toets
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Netwerkmonitor
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Maximale grootte van verzoek en antwoord (stel in op 0 voor onbeperkt):
+options-netmonitor-body-limit-tooltip =
+    .title = Verzoek- of antwoordteksten die de opgegeven grootte overschrijden, worden ingekort bij weergeven of downloaden in de Netwerkmonitor. Stel in op 0 om geen beperking te hebben.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Onbeperkt
+options-netmonitor-body-limit-button =
+    .title = De maximale verzoek-/antwoordtekstgrootte bewerken.
+options-netmonitor-body-limit-restore-default =
+    .title = De standaardwaarde voor maximale verzoek-/antwoordtekstgrootte herstellen.
+options-netmonitor-body-limit-set =
+    .title = Stel de huidige invoerwaarde in als maximale verzoek-/antwoordtekstgrootte.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Experimentele functies
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Stylesheets in de debugger tonen
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Stylesheets in de debugger opnemen en tonen
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (vereist heropenen van de werkset)
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Tabgrootte
 options-sourceeditor-keybinding-label = Sneltoetsen
 options-sourceeditor-keybinding-default-label = Standaard
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Lokale modus
+options-local-mode-only-work-locally = Lokale modus werkt alleen lokaal en is uitgeschakeld bij het debuggen van externe contexten
+options-local-mode-behavior = In Lokale modus kunt u lokale bestanden laden via de https-URL zonder enige externe afhankelijkheid. De URL’s kunnen alleen vanuit tabbladen met geopende DevTools worden geladen.
+options-local-mode-domain-label = Aangepast domein:
+options-local-mode-origin-input =
+    .placeholder = Oorsprong voor de lokale toewijzing
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Deze oorsprong conflicteert met een andere bestaande toewijzing
+options-local-mode-origin-invalid = Deze oorsprong is ongeldig
+options-local-mode-folder-label = Lokale map:
+options-local-mode-choose-folder = Bladeren…
+    .title = Kies een lokale map voor deze toewijzing
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Map in lokale modus kiezen voor: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Deze map bestaat niet, of is ongeldig.
+options-local-mode-toggle =
+    .title = Deze lokale toewijzing in-/uitschakelen
+options-local-mode-toggle-enable = Inschakelen
+options-local-mode-toggle-disable = Uitschakelen
+options-local-mode-navigate-to =
+    .title = Naar deze toewijzings-URL navigeren
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Wilt u de toewijzing ‘{ $mappingOrigin }’ verwijderen?
+options-local-mode-new-mapping = Een nieuwe lokale toewijzing toevoegen
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +186,8 @@ options-context-advanced-settings = Geavanceerde instellingen
 options-disable-http-cache-label = HTTP-buffer uitschakelen (als werkset is geopend)
 options-disable-http-cache-tooltip =
     .title = Door deze optie aan te zetten, wordt de HTTP-buffer voor alle tabbladen die de werkset hebben geopend uitgeschakeld. Service Workers worden niet door deze optie beïnvloed.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = JavaScript uitschakelen
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = JavaScript uitschakelen *
 options-disable-javascript-tooltip =
@@ -143,5 +216,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Brontoewijzingen inschakelen
 options-source-maps-tooltip =
     .title = Als u deze optie inschakelt, zullen bronnen in de hulpmiddelen worden toegewezen.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (alleen huidige sessie, vernieuwt de pagina)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Alleen huidige sessie, vernieuwt de pagina
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (laadt de pagina opnieuw)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Auto
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Verouderd. Meer info…

@@ -29,6 +29,7 @@ about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Förinställning för loggar:
 about-logging-with-profiler-stacks-checkbox = Aktivera stackspårningar för loggmeddelanden
+about-logging-with-javascript-tracing-checkbox = Aktivera JavaScript-spårning
 about-logging-menu =
     .title = Avancerade alternativ
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Logga moduler för att diagnostisera problem med WebCodecs ljud/video-avkodare och kodare och bildavkodare
 about-logging-preset-ml-label = Maskininlärning
 about-logging-preset-ml-description = Logga moduler för att diagnostisera problem med maskininlärning
+about-logging-preset-web-compat-label = Webbkompatibel
+about-logging-preset-web-compat-description = Logga moduler för att diagnostisera webbkompatibilitetsproblem
+about-logging-preset-navigation = Navigering
+about-logging-preset-navigation-description = Logg amoduler för att diagnostisera problem med navigering och sessionshistorik
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Logga moduler för att diagnostisera WebGPU-problem
 about-logging-preset-gfx-label = Grafik
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Dela webb
 about-logging-upload-error = Ett fel inträffade vid uppladdning av profilen: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Ett fel inträffade vid lagring av den uppladdade profilen: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Ett fel inträffade när filen sparades: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Överförda profiler
+about-logging-no-uploaded-profiles = Inga profiler har laddats upp än.
+about-logging-delete-uploaded-profile = Ta bort
+about-logging-view-uploaded-profile = Visa profil
+about-logging-delete-profile-confirm-title = Ta bort profil
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Är du säker på att du vill ta bort profilen “{ $profileName }”? Detta går inte att ångra.
+about-logging-deleting-profile = Tar bort…

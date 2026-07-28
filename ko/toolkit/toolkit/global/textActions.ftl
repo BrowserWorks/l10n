@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = 링크 정리 복사
     .accesskey = n
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = 사이트 추적 없이 복사
-    .accesskey = n
 text-action-paste =
     .label = 붙여넣기
     .accesskey = P
@@ -73,16 +68,26 @@ text-action-search-text-box-clear =
     .title = 지우기
 text-action-highlight-selection =
     .label = 선택 강조 표시
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = 선택 영역에 주석 추가
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
-    .label = 강조 표시의 링크 복사
+    .label = 강조 링크 복사
 # This combines "Copy Link to Highlight" with "Copy Clean Link", ie.
 # it creates a link with a text fragment to the current selection
 # and it strips trackers etc.
 text-action-copy-clean-link-to-highlight =
-    .label = 강조 표시의 링크 정리 복사
+    .label = 강조 링크 정리 복사
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = 강조 표시 제거
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = 모든 강조 표시 제거
+profile-window-menu-edit =
+    .label = 편집
+    .accesskey = E

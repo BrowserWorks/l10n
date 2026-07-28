@@ -63,6 +63,9 @@ genai-menu-remove-provider =
     .label = Eliminar { $provider }
 genai-menu-remove-sidebar =
     .label = Eliminar de la barra lateral
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Preguntar a { $provider }
 genai-menu-new-badge = Nuevo
 genai-menu-summarize-page = Resumir página
 genai-input-ask-generic =
@@ -91,16 +94,26 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Ocultar el acceso directo del chatbot
-genai-menu-no-provider =
-    .label = Preguntar a un chatbot IA
 genai-menu-choose-chatbot =
     .label = Elija un chatbot IA
+genai-menu-ask-generic-2 =
+    .label = Preguntar al chatbot IA
+    .accesskey = P
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Preguntar a { $provider }
+    .accesskey = P
+genai-menu-no-provider-2 =
+    .label = Preguntar a un chatbot de IA
+    .accesskey = P
 
 ## Chatbot header
 
 genai-chatbot-title = Chatbot de IA
 genai-header-provider-menu =
     .title = Elija un chatbot
+genai-header-settings-button =
+    .title = Configuración del chat de IA
 genai-header-options-button =
     .title = Abrir menú
 genai-header-close-button =
@@ -118,6 +131,11 @@ genai-options-hide-shortcut =
     .label = Ocultar acceso directo al seleccionar texto
 genai-options-about-chatbot =
     .label = Acerca de los chatbots de IA en { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Dado que la página es larga, éste es un resumen parcial.
 
 ## Chatbot footer
 
@@ -211,3 +229,48 @@ link-preview-reading-time =
         [one] { $range } minuto de tiempo de lectura
        *[other] { $range } minutos de tiempo de lectura
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } no puede mostrar una vista previa de este enlace
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Visitar enlace
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } no puede generar los puntos clave de esta página web.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Se ha producido un error.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Reintentar
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Ajustes de previsualización de enlace
+link-preview-settings-enable =
+    .label = Activar vista previa de enlaces
+    .description = Vea el título de la página, descripción y más cuando use el acceso directo o haga clic con el botón derecho sobre un enlace.
+link-preview-settings-key-points =
+    .label = Permitir que el motor de IA lea el comienzo de la página y genere puntos clave
+link-preview-settings-long-press =
+    .label = Atajo. Haga clic en el enlace durante 1 segundo (mantenga presionado el botón)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = ¿Ver más con IA?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } utiliza IA para leer el comienzo de la página y generar puntos clave. Para proteger su privacidad, todo esto se lleva a cabo en su dispositivo.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Nuevo: Mantenga presionado el enlace para obtener una vista previa
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Obtenga una breve descripción, conozca cuánto tiempo le tomará leer la página y más información para decidir si vale la pena abrir el enlace. Esta opción también está disponible si hace clic derecho en el enlace.
+# Header for the key points section
+link-preview-key-points-header = Puntos clave
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Los puntos clave se generan con IA y podrían contener errores.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Configuración inicial • <strong>{ $progress } %</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = La próxima vez, la generación de puntos clave será más rápida.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Ver una vista previa
+# Onboarding card Close button
+link-preview-onboarding-close = Cerrar
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Configuración inicial
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Esto puede tardar un momento. La próxima vez verá los puntos clave más rápidamente.

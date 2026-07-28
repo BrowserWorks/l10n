@@ -19,6 +19,7 @@ about-glean-category-manual-testing = 手動テスト
 about-glean-category-adhoc-testing = アドホックテスト
 about-glean-category-profiler = Profiler を使用
 about-glean-category-about-data = データについて
+about-glean-category-metrics-table = メトリクス表
 about-glean-upload-enabled = データのアップロードが有効です。
 about-glean-upload-disabled = データのアップロードが無効です。
 about-glean-upload-enabled-local = データのアップロードはローカルサーバーへの送信のみ有効です。
@@ -109,4 +110,69 @@ about-glean-about-data-list-item-debug-ping-viewer =
     デバッグタグの閲覧や完全な Ping の確認、ライブイベントストリームの確認、視覚的なメトリクスの表示は、<a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> で調べてください。
 about-glean-about-data-list-item-firefox-profiler =
     パフォーマンスプロファイルの記録と、記録したすべてのメトリクスの確認は <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a> を使用してください。
+about-glean-metrics-table-header = すべてのメトリクス
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = カテゴリー
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = 名前
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = 型
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = 値
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = 操作
+about-glean-metrics-table-settings-button = 設定
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = メトリクス表の設定
+about-glean-metrics-table-settings-category-general = 一般
+about-glean-metrics-table-settings-hide-empty-value-rows = 値が空の列を隠す
+about-glean-metrics-table-settings-category-visualizations = 視覚的表示
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = 表示例
+about-glean-metrics-table-settings-category-visualizations-histogram = ヒストグラム
+about-glean-metrics-table-settings-histograms-chart-max = チャートの最大高さ
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = 拡大時の最大高さ
+about-glean-metrics-table-settings-histograms-box-padding = 柱の間隔
+about-glean-metrics-table-settings-histograms-chart-padding = チャート内の余白
+about-glean-metrics-table-settings-histograms-left-padding = 追加の左側余白
+about-glean-metrics-table-settings-category-visualizations-timeline = タイムライン
+about-glean-metrics-table-settings-timelines-height = 高さ
+about-glean-metrics-table-settings-timelines-width = 幅
+about-glean-metrics-table-settings-timelines-chart-padding = チャート内の余白
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = 円の半径
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y 軸の X オフセット値
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y 軸の Y オフセット値
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = 絞り込み
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = 以下の表のカテゴリー、名前、型、値 からデータを絞り込みます (入れ子でない単純な値を持つ型である場合)。
+about-glean-button-load-all = すべての値を読み込む
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = データをエクスポート
+about-glean-button-load-value = 読み込む
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = ドキュメント
+about-glean-button-watch = 監視
+# Meaning "to stop watching"
+about-glean-button-unwatch = 監視を解除
+about-glean-no-data-to-display = 表示するデータがありません。
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>about:glean</code> ビューでは <code>DualLabeledCounter</code> メトリクスがまだサポートされていません。
+about-glean-unknown-metric-type-warning = メトリクスの型が不明です。
 about-glean-about-data-explanation = 収集したデータのリストの閲覧は、<a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Dictionary</a> で調べてください。
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = 組み込み Ping
+about-glean-ping-list-optgroup-custom =
+    .label = カスタム Ping

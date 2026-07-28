@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = Chatbot ΤΝ
 menu-view-contextual-password-manager =
     .label = Κωδικοί πρόσβασης
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Ανοικτές καρτέλες
 sidebar-options-menu-button =
     .title = Άνοιγμα μενού
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Αλλαγή μεγέθους πλαϊνής γραμμής
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Διαγραφή από ιστορικό
 sidebar-history-clear =
     .label = Απαλοιφή ιστορικού
+sidebar-history-sort-by-heading-menucaption =
+    .label = Ταξινόμηση κατά:
 sidebar-history-sort-by-heading = Ταξινόμηση κατά:
 sidebar-history-sort-option-date =
     .label = Ημερομηνία
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Διαχείριση ρυθμίσεων του { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Κάθετες καρτέλες
+sidebar-settings2 =
+    .label = Ρυθμίσεις
 sidebar-settings =
     .label = Ρυθμίσεις πλαϊνής γραμμής
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Ανάπτυξη πλαϊνής γραμμής με το πέρασμα του κέρσορα
-sidebar-manage-extensions = Διαχείριση επεκτάσεων
+sidebar-manage-extensions2 = Διαχείριση όλων των επεκτάσεων
+sidebar-customize-extensions-header2 = Επεκτάσεις
+sidebar-customize-firefox-tools-header2 =
+    .label = Εργαλεία
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Διαγραφή σελίδων από το ιστορικό
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Επεξεργασία σελιδοδείκτη…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Διαγραφή σελιδοδείκτη
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Διαγραφή
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = Ιστορικό
 sidebar-menu-synced-tabs-label =
     .label = Καρτέλες από άλλες συσκευές
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Ανοικτές καρτέλες
 sidebar-menu-bookmarks-label =
     .label = Σελιδοδείκτες
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = Ιστορικό
 sidebar-menu-syncedtabs-header =
     .heading = Καρτέλες από άλλες συσκευές
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Ανοικτές καρτέλες
 sidebar-menu-cpm-header =
     .heading = Κωδικοί πρόσβασης
+sidebar-menu-bookmarks-header =
+    .heading = Σελιδοδείκτες
 sidebar-panel-header-close-button =
     .tooltiptext = Κλείσιμο
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Μενού σελιδοδεικτών
+sidebar-bookmarks-folder-toolbar = Γραμμή σελιδοδεικτών
+sidebar-bookmarks-folder-other = Άλλοι σελιδοδείκτες
+sidebar-bookmarks-folder-mobile = Σελιδοδείκτες κινητού
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Προσαρμογή πλαϊνής γραμμής
 sidebar-history-title = Ιστορικό
 sidebar-syncedtabs-title = Καρτέλες από άλλες συσκευές
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Ανοικτές καρτέλες
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Καρφιτσωμένες καρτέλες
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Παράθυρο { $winID } (τρέχον)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Παράθυρο { $winID }
+sidebar-bookmarks-title = Σελιδοδείκτες
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Απόκρυψη πλαϊνής γραμμής ({ $shortcut })
     .label = Πλαϊνές γραμμές
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Σύρετε τις σημαντικές καρτέλες εδώ για να τις έχετε κοντά σας

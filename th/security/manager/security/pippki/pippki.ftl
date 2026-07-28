@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = ดู
 download-cert-view-text = ตรวจสอบใบรับรอง CA
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -91,9 +88,7 @@ client-auth-cert-remember-never =
 client-auth-cert-remember-always =
     .label = ทุกครั้ง
 client-auth-cert-remember-temporarily =
-    .label = แค่วาระนี้
-client-auth-cert-remember-box =
-    .label = จดจำการตัดสินใจนี้
+    .label = แค่เซสชันนี้
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = รหัสผ่านสำรองใบรับรอง (อีกครั้ง) :
 set-password-reminder = สำคัญมาก : หากคุณลืมรหัสผ่านสำรองใบรับรอง คุณจะไม่สามารถเรียกคืนข้อมูลที่สำรองไว้ได้อีกต่อไป ควรบันทึกรหัสผ่านนี้ไว้ในที่ปลอดภัย
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = การยืนยันตัวตนที่ถูกปกป้อง
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = โปรดยืนยันตัวตนกับอุปกรณ์ความปลอดภัย ({ $tokenName }) ซึ่งวิธีการดำเนินการจะขึ้นอยู่กับอุปกรณ์นั้น ๆ (เช่น การใช้เครื่องอ่านลายนิ้วมือ หรือการป้อนรหัสด้วยแป้นตัวเลข
 
 ## Protected authentication alert
 

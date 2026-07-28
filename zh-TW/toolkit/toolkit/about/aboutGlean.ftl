@@ -19,6 +19,7 @@ about-glean-category-manual-testing = 手動測試
 about-glean-category-adhoc-testing = 臨時測試
 about-glean-category-profiler = 使用效能分析器
 about-glean-category-about-data = 關於資料
+about-glean-category-metrics-table = 指標表
 about-glean-upload-enabled = 已啟用資料上傳。
 about-glean-upload-disabled = 已停用資料上傳。
 about-glean-upload-enabled-local = 僅允許資料上傳至本機伺服器。
@@ -67,7 +68,7 @@ about-glean-adhoc-explanation = 若需進行 <i>ad hoc 臨時測試</i>，也可
 about-glean-adhoc-explanation2 = 若需進行 <i>ad hoc 臨時測試</i>，也可以在 <code>about:glean</code> 本頁面開啟開發者主控台，使用 <code>Glean.metricCategory.metricName.testGetValue()</code> 等 <code>testGetValue()</code> API 來取得 <code>metric.category.metric_name</code> 儀器中的資訊，決定測試儀器中的特定值。
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-note = 註：您正透過開發者工具主控台使用 Glean JS API。這代表指標的分類與名稱會使用 <code>camelCase</code> 格式顯示，而與 Rust 及 C++ API 格式不同。
-about-glean-profiler-explanation = 您可以使用 { -profiler-brand-name } 來檢視所有紀錄指標。首先您必須<a data-l10n-name="firefox-profiler-link">捕捉效能紀錄檔</a>，捕捉完成後即可選擇<q>標記表</q>，檢視 <q>Telemetry</q> 下方的標記。
+about-glean-profiler-explanation = 您可以使用 { -profiler-brand-name } 來檢視所有紀錄指標。首先您必須<a data-l10n-name="firefox-profiler-link">捕捉效能紀錄檔</a>，捕捉完成後即可選擇 <q>標記表</q>，檢視 <q>Telemetry</q> 下方的標記。
 about-glean-profiler-explanation-profiler = 您可以在效能紀錄檔中看到所有收集到的指標、收集時間，以及收集下來的資料值。將游標停留在各個標記上，即可確認收集到的值、收集時間是否正確。
 controls-button-label-verbose = 套用設定並送出 ping
 about-glean-feedback-settings-only =
@@ -79,6 +80,71 @@ about-glean-about-data-description = 視您想要了解的資料，可以使用�
 about-glean-about-data-description-list-intro = 可參考下列各工具的不同用途：
 about-glean-about-data-list-item-dictionary = 可參考 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 字典</a>瀏覽 { -glean-brand-name } 在每套應用程式收集的資料清單。
 about-glean-about-data-list-item-about-telemetry = 可透過 <a data-l10n-name="about-telemetry-link">about:telemetry</a> 瀏覽傳統 Telemetry 功能收集的資料。
-about-glean-about-data-list-item-debug-ping-viewer = 可使用 <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> 瀏覽除錯標籤、檢視完整的 Ping、檢視即時事件串流，或以視覺化方式檢視指標。
+about-glean-about-data-list-item-debug-ping-viewer = 可使用 <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a>瀏覽除錯標籤、檢視完整的 Ping、檢視即時事件串流，或以視覺化方式檢視指標。
 about-glean-about-data-list-item-firefox-profiler = 可使用 <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a> 捕捉效能紀錄檔，並檢視所有記錄下來的指標。
+about-glean-metrics-table-header = 所有指標
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = 分類
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = 名稱
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = 類型
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = 值
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = 動作
+about-glean-metrics-table-settings-button = 選項
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = 指標表選項
+about-glean-metrics-table-settings-category-general = 一般
+about-glean-metrics-table-settings-hide-empty-value-rows = 隱藏值空白的列
+about-glean-metrics-table-settings-category-visualizations = 視覺化
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = 範例
+about-glean-metrics-table-settings-category-visualizations-histogram = 柱狀圖
+about-glean-metrics-table-settings-histograms-chart-max = 圖表最大高度
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = 縮放最大高度
+about-glean-metrics-table-settings-histograms-box-padding = 外框間距
+about-glean-metrics-table-settings-histograms-chart-padding = 圖表間距
+about-glean-metrics-table-settings-histograms-left-padding = 左邊的額外邊距
+about-glean-metrics-table-settings-category-visualizations-timeline = 時間軸
+about-glean-metrics-table-settings-timelines-height = 高度
+about-glean-metrics-table-settings-timelines-width = 寬度
+about-glean-metrics-table-settings-timelines-chart-padding = 圖表間距
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = 圓圈半徑
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y 軸的 X 位移
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y 軸的 Y 位移
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = 篩選條件
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = 將會依照分類、名稱、類型與值（若是簡單類型）篩選下方表格中的資料。
+about-glean-button-load-all = 載入所有值
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = 匯出資料
+about-glean-button-load-value = 載入
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = 文件
+about-glean-button-watch = 監看
+# Meaning "to stop watching"
+about-glean-button-unwatch = 取消監看
+about-glean-no-data-to-display = 沒有可顯示的資料。
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>about:glean</code> 檢視畫面尚不支援 <code>DualLabeledCounter</code> 指標。
+about-glean-unknown-metric-type-warning = 指標類型未知。
 about-glean-about-data-explanation = 要瀏覽收集的資料清單，請參考 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 字典</a>。
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = 內建 Ping
+about-glean-ping-list-optgroup-custom =
+    .label = 自訂 Ping

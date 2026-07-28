@@ -55,7 +55,7 @@ fx-view-discoverability-secondary-button-label = Eltüntetés
 
 # Blocks the message from showing again
 split-dismiss-button-dont-show-option =
-    .label = Ne jelenítse meg újra ezt a javaslatot
+    .label = Ne jelenjen meg újra ez a javaslat
 # Dismisses message and reduces frequency of message
 split-dismiss-button-show-fewer-option =
     .label = Kevesebb javaslat megjelenítése
@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Kérdezze a Perplexityt
 perplexity-callout-secondary-label-1 = Eltüntetés
 perplexity-callout-secondary-label-2 = Megértettem
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Szeretne kipróbálni egy új, adatvédelem-fókuszú keresőt?
+start-page-callout-subtitle = Próbálja ki a Startpage-et. Arra tervezték, hogy a kereséseit a kezdetektől fogva bizalmasan kezelje.
+start-page-callout-primary-label = Startpage kipróbálása
+start-page-callout-secondary-label = Eltüntetés
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Védje meg a jelszavait azáltal, hogy titkos�
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Regisztráció
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Tartsa a kedvenc hírforrásait a tálcán
+taskbar-tabs-social-callout-subtitle = Indítsa el közösségi oldalait alkalmazásként egy { -brand-short-name } által védett, letisztult ablakban.
+taskbar-tabs-chat-callout-title = Csevegés a tálcáról
+taskbar-tabs-chat-callout-subtitle = Indítsa el csevegőoldalait alkalmazásként egy { -brand-short-name } által védett, letisztult ablakban.
+taskbar-tabs-email-callout-title = Tartsa a postafiókját a tálcán
+taskbar-tabs-email-callout-subtitle = Indítsa el webes levelezését alkalmazásként egy { -brand-short-name } által védett, letisztult ablakban.
+taskbar-tabs-media-callout-title = Visszatérés a közvetítésekhez a tálcáról
+taskbar-tabs-media-callout-subtitle = Indítsa el az élő közvetítési oldalait alkalmazásként egy { -brand-short-name } által védett, letisztult ablakban.
+taskbar-tabs-value-prop-callout-title = A webhely hozzáadása a tálcához
+taskbar-tabs-value-prop-callout-subtitle = Indítsa el a saját ablakában és egyszerűsített felülettel, egyetlen kattintással.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Ne veszítsen el mindent, amit elmentett, amikor a Windows 11-re vált.
+windows-10-eos-sync-urgency-subtitle-1 = Szinkronizáljon most, hogy a { -brand-short-name } könyvjelzői, jelszavai és beállításai biztonságban legyenek, és könnyen vissza lehessen őket állítani.
+windows-10-eos-sync-urgency-title-2 = Búcsút int a Windows 10-nek? Védje meg az adatait a váltáskor.
+windows-10-eos-sync-urgency-subtitle-2 = Még ha nem is használja naponta a { -brand-short-name }ot, szinkronizáljon, hogy a könyvjelzők és jelszavak biztonságban legyenek és hozzáférhetőek legyenek.
+windows-10-eos-sync-new-device-title-1 = Ne kockáztassa meg az újrakezdést a következő eszközön.
+windows-10-eos-sync-new-device-subtitle-1 = Szinkronizáljon, hogy költözéskor magával vigye a { -brand-short-name } könyvjelzőit, jelszavait és előnyben részesített beállításait.
+windows-10-eos-sync-new-device-title-2 = Új eszközre költözik? Ne veszítse el azt, ami számít.
+windows-10-eos-sync-new-device-subtitle-2 = Nem számít, milyen gyakran használja a { -brand-short-name }ot, a szinkronizálás megvédi a könyvjelzőit, jelszavait és beállításait.
+windows-10-eos-sync-new-device-primary-label = Szinkronizálás most
+windows-10-eos-sync-general-title-1 = Védje meg a { -brand-short-name }ot, amelyet a sajátjáévá tett.
+windows-10-eos-sync-general-subtitle-1 = Készítsen biztonsági mentést és szinkronizálja jelszavait, könyvjelzőit, beállításait és egyéb adatait, hogy megőrizze azt, ami számít.
+windows-10-eos-sync-general-title-2 = Itt az alkalom, hogy biztonsági mentést készítsen a jelszavairól és könyvjelzőiről.
+windows-10-eos-sync-general-subtitle-2 = Szinkronizáljon most, hogy megvédje a { -brand-short-name }ra bízott dolgokat – és kapja vissza bárhol, bármikor.
+windows-10-eos-sync-tour-title-1 = Túl sok lap? Tegyen rendet a lapcsoportokkal.
+windows-10-eos-sync-tour-subtitle-1 = Húzzon egy lap egy másikra, hogy csoportot hozzon létre, és rendszerezze a dolgokat.
+windows-10-eos-sync-tour-title-2 = Készüljön elő a Windows 11-re.
+windows-10-eos-sync-tour-subtitle-2 = Váltás előtt szinkronizálja a könyvjelzőit, jelszavait és beállításait, hogy biztonsági mentést készítsen róluk.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Kevesebb javaslat megjelenítése
+windows-10-eos-sync-dismiss-button-label = Eltüntetés
+windows-10-eos-sync-callout-primary-advance-button-label = Tovább
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Új: Kattintson és tartsa lenyomva a hivatkozások előnézetéhez
+link-preview-onboarding-callout-description = Tekintsen meg egy rövid leírást, az olvasáshoz szükséges időt, és egyebeket, hogy eldöntse megéri-e megnyitni a hivatkozást. Jobb kattintással is elérhető.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Szüntesse meg a rendetlenséget a lapcsoportokkal
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Csoportosítsa a lapjait feladatok vagy témák szerint. Húzzon bele többet menet közben.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Csoport indítása
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Lapcímek megjelenítése az oldalsávban
 sidebar-button-callout-subtitle = Az oldalsáv gombjával bontsa ki az oldalsávot, így a lapok címét is láthatja.
 sidebar-button-callout-vertical-tabs = A lapok megjelenítéséhez válassza az oldalsáv gombot az eszköztáron.
+sidebar-deprecation-callout-title = Hamarosan érkezik a frissített oldalsáv
+sidebar-deprecation-callout-subtitle = Fokozatosan kivezetjük a jelenleg használt oldalsávverziót. Próbálja ki a frissített oldalsávot. Gyorsabb, és több eszközhöz jut hozzá.
+sidebar-deprecation-cta-button = Próbálja ki most
 
 ## Sidebar Vertical Tabs Strings
 
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Mennyire elégedett azzal, hogy az 
 sidebar-genai-survey-productive-question =
     Mennyire ért egyet vagy nem ért egyet ezzel az állítással:<br/>
     „Az oldalsávban lévő MI csevegőbot segít abban, hogy hatékonyabb legyek”?
+splitview-onboarding-callout-title-1 = Osztott nézet: a párhuzamos munkavégzés jobb módja
+splitview-onboarding-callout-subtitle-1 = Kattintson jobb gombbal erre a lapra, és válassza a „Hozzáadás osztott nézethez” lehetőséget, hogy egyszerre két lapot lásson.
+splitview-onboarding-callout-cta-1 = Próbálja ki most
+splitview-onboarding-callout-title-2 = Két lap megtekintése egyszerre osztott nézetben
+splitview-onboarding-callout-subtitle-2 = Nincsenek további ablakok. Nincs lapváltás. Kattintson jobb gombbal erre a lapra, és válassza az „Hozzáadás osztott nézethez” lehetőséget.
+splitview-onboarding-callout-cta-2 = Osztott nézet kipróbálása
 unified-search-callout-title = Váltás a keresőszolgáltatások között
 unified-search-callout-subtitle = Válassza ki az adott kereséshez legmegfelelőbbet.
 unified-search-callout-primary-label = Következő
@@ -195,6 +272,6 @@ actions-callout-title = Gyakori feladatok elvégzése vagy alapvető beállítá
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Próbáljon beírni egy műveletet, mint a „nyomtatás” az oldal kinyomtatásához, vagy a „törlés” az előzmények törléséhez.

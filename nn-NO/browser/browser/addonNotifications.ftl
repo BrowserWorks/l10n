@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Denne nettstaden ber om tilgang til MIDI-einingane (Musical Instrument Digital Interface) dine. Tilgang for eininga kan aktiverast ved å installere eit tillegg.
 site-permission-install-first-prompt-midi-message = Denne tilgangen er ikkje garantert å vere sikker. Hald berre fram om du stolar på nettstaden.
+site-permission-install-first-prompt-serial-header = Denne nettsida ber om tilgang til serielle einingar. Tilgang til einingar kan aktiverast ved å installere eit tillegg.
+site-permission-install-first-prompt-serial-message = Denne tilgangen er ikkje garantert å vere sikker. Hald berre fram om du stolar på nettstaden.
 
 ##
 
@@ -125,16 +127,19 @@ addon-install-error-corrupt-file = Klarte ikkje å installere tillegget, lasta n
 addon-install-error-file-access = Klarte ikkje å installere { $addonName } fordi { -brand-short-name } ikkje klarte å endre den påkravde fila.
 addon-install-error-not-signed = { -brand-short-name } har hindra denne sida frå å installere eit ikkje-stadfesta tillegg.
 addon-install-error-invalid-domain = Tillegget { $addonName } kan ikkje installerast frå denne plasseringa.
+addon-install-error-no-addon-name-file-access = Klarte ikkje å installere tillegget fordi { -brand-short-name } ikkje kan endre den nødvendige fila.
 addon-local-install-error-network-failure = Klarte ikkje å installere dette tillegget på grunn av ein feil i filsystemet.
 addon-local-install-error-incorrect-hash = Klarte ikkje å installere dette tillegget på grunn av at det ikkje passar med utvidinga som { -brand-short-name } venta.
 addon-local-install-error-corrupt-file = Klarte ikkje å installere dette tillegget fordi det ser ut til å vere skada.
 addon-local-install-error-file-access = Klarte ikkje å installere { $addonName } fordi { -brand-short-name } kan ikkje endre den påkravde fila.
 addon-local-install-error-not-signed = Klarte ikkje å installere dette tillegget fordi det ikkje er stadfesta.
+addon-local-install-no-addon-name-error-file-access = Klarte ikkje å installere tillegget fordi { -brand-short-name } ikkje kan endre den nødvendige fila.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = Klarte ikkje å installere { $addonName } fordi det ikkje er kompatibelt med { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } bryt med BrowserWorkss retningslinjer og kan ikkje installerast på { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } er avgrensa og kan ikkje installerast på { -brand-short-name }.
 addon-install-error-blocklisted = Klarte ikkje å installere { $addonName } fordi det er fare for at det vert laga tryggings- og stabilitetsproblem.
 addon-install-error-soft-blocked = { $addonName } bryt med BrowserWorkss retningslinjer og kan ikkje installerast på { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
-addon-install-error-admin-install-only = Du kan ikkje installere { $addonName } som sluttbrukar, den kan berre installerast av ein organisasjon som brukar verksemd-policyar.
+addon-install-error-admin-install-only = Du kan ikkje installere { $addonName } som sluttbrukar, den kan berre installerast av ein organisasjon som brukar bedriftspolicyar.

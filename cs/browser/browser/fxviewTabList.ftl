@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Přesunout na konec
     .accesskey = k
 fxviewtabrow-move-tab-window = Přesunout do nového okna
     .accesskey = o
+fxviewtabrow-send-to-device = Poslat do zařízení
+    .accesskey = n
+fxviewtabrow-send-to-mobile = Odeslat do mobilu
+    .accesskey = O
 fxviewtabrow-send-tab = Odeslat panel na zařízení
     .accesskey = z
 fxviewtabrow-pin-tab = Připnout panel
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Zapnout zvuk panelu
 fxviewtabrow-options-menu-button =
     .title = Možnosti pro panel { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Vypnout zvuk panelu
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Zapnout zvuk panelu
+fxviewtabrow-send-to-mobile-connect-device = Pro posílání panelů zařízení připojte
+fxviewtabrow-send-to-mobile-device-missing2 = Nevidíte své zařízení?
+fxviewtabrow-send-to-mobile-not-verified = Účet není ověřen
+fxviewtabrow-send-to-mobile-verify-account = Ověřte svůj účet
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Pro posílání panelů se přihlaste
+fxviewtabrow-send-to-mobile-turn-on-sync = Pro odeslání panelů zapněte synchronizaci

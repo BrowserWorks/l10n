@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = 新建身份标签页
 all-tabs-menu-hidden-tabs =
     .label = 隐藏标签页
+all-tabs-menu-close-duplicate-tabs =
+    .label = 关闭重复标签页
+all-tabs-menu-view-all-tabs =
+    .label = 查看所有标签页
 all-tabs-menu-manage-user-context =
     .label = 管理身份
     .accesskey = O
-all-tabs-menu-close-duplicate-tabs =
-    .label = 关闭重复标签页
 all-tabs-menu-close-all-duplicate-tabs =
     .label = 关闭所有重复标签页
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = 标签页群组
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = 搜索所有标签页

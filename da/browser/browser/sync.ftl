@@ -20,6 +20,20 @@ fxa-menu-connect-another-device =
     .label = Opret forbindelse til en ny enhed…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Send til enhed
+           *[other] Send { $tabCount } faneblade til enhed
+        }
+fxa-menu-send-to-mobile-device-missing2 = Kan du ikke se din enhed?
+fxviewtabrow-send-to-mobile-not-verified = Kontoen er ikke bekræftet
+fxviewtabrow-send-to-mobile-verify-account = Bekræft din konto
+fxa-menu-send-to-mobile-turn-on-sync = Slå synkronisering til for at sende faneblade
+fxa-menu-send-to-mobile-connect-device = Tilslut en enhed for at sende faneblade
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -33,7 +47,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Send hurtigt og nemt faneblade til andre enheder, du er logget ind på.
 fxa-menu-sign-out =
     .label = Log ud…
-fxa-menu-sync-title = Synkroniser
 fxa-menu-sync-description = Få adgang til dit internet overalt
 fxa-avatar-sign-in = Log ind
 fxa-avatar-sign-up = Tilmeld dig
@@ -47,6 +60,10 @@ sync-setup-verify-heading = Er du sikker på, at du vil logge ind for at synkron
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = En anden bruger var tidligere logget ind for at synkronisere på denne computer. Ved at logge ind vil denne browsers bogmærker, adgangskoder og andre indstillinger blive sammenflettet med { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Log ind for at sende faneblade
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

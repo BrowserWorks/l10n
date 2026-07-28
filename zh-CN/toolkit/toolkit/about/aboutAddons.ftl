@@ -25,7 +25,7 @@ list-empty-recent-updates =
 list-empty-find-updates =
     .label = 检查更新
 list-empty-button =
-    .label = 进一步了解附加组件
+    .label = 详细了解附加组件
 help-button = 附加组件帮助
 sidebar-help-button-title =
     .title = 附加组件帮助
@@ -117,6 +117,8 @@ legacy-extensions-description = 这些扩展不符合现今的 { -brand-short-na
 private-browsing-description2 =
     扩展在 { -brand-short-name } 隐私浏览模式中的运行权限有所调整。默认情况下，任何新添加至 { -brand-short-name } 的扩展均不会在隐私窗口中运行。除非您在设置中明确允许，否则扩展将在隐私浏览模式中停止运行，也无法获知您的在线活动。这项调整旨在确保您的隐私浏览足够私密。
     <label data-l10n-name="private-browsing-learn-more">了解如何管理扩展设置。</label>
+aboutaddons-sidebar =
+    .heading = 附加组件
 addon-category-discover = 推荐
 addon-category-discover-title =
     .title = 推荐
@@ -167,6 +169,8 @@ extensions-warning-update-security-button = 启用
 extensions-warning-imported-addons2 =
     .message = 请完成安装导入至 { -brand-short-name } 的扩展。
 extensions-warning-imported-addons-button = 安装扩展
+extensions-warning-safe-mode3 =
+    .message = 所有附加组件都已被排障模式暂时禁用。
 
 ## Strings connected to add-on updates
 
@@ -226,7 +230,7 @@ shortcuts-remove-button =
     .aria-label = 移除快捷方式
 shortcuts-browserAction2 = 激活工具栏按钮
 shortcuts-pageAction = 激活页面动作
-shortcuts-sidebarAction = 切换侧栏
+shortcuts-sidebarAction = 打开/关闭侧栏
 shortcuts-modifier-mac = 包含 Ctrl、Alt 或 ⌘
 shortcuts-modifier-other = 包含 Ctrl 或 Alt
 shortcuts-invalid = 组合无效
@@ -274,6 +278,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } 更新了配色收藏集，因此已从您的“保存的主题”列表移除旧版本。请从附加组件站获取新版本。
 colorway-removal-notice-learn-more = 详细了解
 colorway-removal-notice-button = 获取新版配色主题
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = 您的 Windows 对比度设置将覆盖 { -brand-short-name } 主题。请关闭这些设置以在 { -brand-short-name } 中使用主题。
 privacy-policy = 隐私政策
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -452,11 +460,18 @@ available-updates-heading = 可用更新
 recent-updates-heading = 最近更新
 release-notes-loading = 正在加载…
 release-notes-error = 抱歉，加载发行说明时出错。
+addon-permissions-heading = 权限
 addon-permissions-empty2 = 此扩展未要求任何权限。
+addon-permissions-required-label = 必要：
+addon-permissions-optional-label = 可选：
 addon-permissions-empty = 此扩展未要求任何权限
 addon-permissions-required = 核心功能所需的权限：
 addon-permissions-optional = 附加功能的可选权限：
 addon-permissions-learnmore = 详细了解“权限”
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = 部分权限由您的组织管理。
 recommended-extensions-heading = 推荐扩展
 recommended-themes-heading = 推荐主题
 # Variables:
@@ -511,9 +526,15 @@ details-notification-hard-blocked-other =
     .message = 此附加组件因违反 BrowserWorks 的政策而被阻止，并且已被禁用。
 details-notification-unsigned-link = 了解详情
 details-notification-blocked = { $name } 由于安全或稳定性问题已被禁用。
-details-notification-blocked2 =
-    .message = { $name } 由于安全或稳定性问题已被禁用。
 details-notification-blocked-link2 = 查阅详情
+details-notification-soft-blocked-extension-disabled2 =
+    .message = 此扩展受到限制且已被禁用。您可以重新启用，但可能存在风险。
+details-notification-soft-blocked-extension-enabled2 =
+    .message = 此扩展已受限，继续使用可能存在风险。
+details-notification-soft-blocked-other-disabled2 =
+    .message = 此附加组件受到限制且已被禁用。您可以重新启用，但可能存在风险。
+details-notification-soft-blocked-other-enabled2 =
+    .message = 此附加组件已受限，继续使用可能存在风险。
 details-notification-soft-blocked-extension-disabled =
     .message = 此扩展因违反 BrowserWorks 的政策而受限，并且已经被禁用。您可以重新启用，但可能存在风险。
 details-notification-soft-blocked-extension-enabled =
@@ -525,8 +546,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = 查阅详情
 details-notification-blocked-link = 了解详情
 details-notification-softblocked = { $name } 已知会导致安全性或稳定性问题。
-details-notification-softblocked2 =
-    .message = { $name } 已知会导致安全性或稳定性问题。
 details-notification-softblocked-link = 了解详情
 details-notification-gmp-pending = “{ $name }”即将安装。
 details-notification-gmp-pending2 =
@@ -552,6 +571,10 @@ permissions-data-addon-button = 权限与数据
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = 扩展“{ $extensionName }”使用此模型
+addon-permissions-data-collection-heading = 数据收集
+addon-permissions-data-collection-empty = 开发者称此扩展无需收集数据。
+addon-data-collection-provided = 扩展开发者提供的信息
+addon-data-collection-learnmore = 详细了解数据收集
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -560,6 +583,7 @@ mlmodel-link-preview = { -brand-short-name } 使用此模型在您预览链接�
 mlmodel-pdfjs = { -brand-short-name } 使用此模型为您添加到 PDF 的图像创建替换文字
 mlmodel-smart-tab-topic-engine = { -brand-short-name } 使用此模型建议标签页群组名称
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } 使用此模型为标签页群组建议标签页
+mlmodel-formfill-engine = { -brand-short-name } 使用此模型帮助填写地址表单
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = 端侧 AI
 addon-category-mlmodel-title =

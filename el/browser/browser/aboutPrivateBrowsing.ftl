@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Επιτρέψτε στο 
 about-private-browsing-cookie-banners-promo-heading = Το { -brand-short-name } φροντίζει για εσάς τα μηνύματα για cookie
 about-private-browsing-cookie-banners-promo-body = Απορρίπτουμε πλέον αυτόματα πολλά μηνύματα για cookie, ώστε να σας παρακολουθούν λιγότερο και να περιηγείστε στο διαδίκτυο χωρίς περισπασμούς.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Περιηγηθείτε χωρίς να αφήνετε ίχνη σε αυτήν τη συσκευή
 about-private-browsing-felt-privacy-v1-info-body = Το { -brand-short-name } διαγράφει τα cookie, το ιστορικό και τα δεδομένα ιστοτόπων σας όταν κλείνετε όλα τα ιδιωτικά σας παράθυρα.
 about-private-browsing-felt-privacy-v1-info-link = Ποιος ενδέχεται να μπορεί να δει τη δραστηριότητά μου;
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Κλείνοντας όλα τα ιδιωτικά παράθυρά σας, διαγράφονται τα cookie, το ιστορικό και τα δεδομένα ιστοτόπων σας.
+about-private-browsing-nova-info-link = Ποιος μπορεί ακόμα να δει τη δραστηριότητά μου;
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Η δραστηριότητά σας δεν θα αποθηκευτεί
+about-private-browsing-nova-info-subheader = Θα διαγραφεί κάθε αναζήτηση και σύνδεση όταν κλείσετε αυτό το παράθυρο. Τα ενσωματωμένα μέτρα προστασίας του { -brand-short-name }, όπως ο αποκλεισμός ιχνηλατών, είναι ενεργοποιημένα και εδώ.

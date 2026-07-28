@@ -120,6 +120,8 @@ private-browsing-description2 =
     ในขณะที่เรียกดูแบบส่วนตัว และจะไม่สามารถเข้าถึงกิจกรรมออนไลน์ของคุณที่นั่นได้ เราได้ทำการเปลี่ยนแปลง
     นี้เพื่อรักษาความเป็นส่วนตัวให้กับการเรียกดูแบบส่วนตัวของคุณ
     <label data-l10n-name="private-browsing-learn-more">เรียนรู้วิธีจัดการการตั้งค่าส่วนขยาย</label>
+aboutaddons-sidebar =
+    .heading = ส่วนเสริม
 addon-category-discover = คำแนะนำ
 addon-category-discover-title =
     .title = คำแนะนำ
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = เปิดใช้งาน
 extensions-warning-imported-addons2 =
     .message = โปรดติดตั้งส่วนขยายที่นำเข้าไปยัง { -brand-short-name } ให้เสร็จสิ้น
 extensions-warning-imported-addons-button = ติดตั้งส่วนขยาย
+extensions-warning-safe-mode3 =
+    .message = ส่วนเสริมทั้งหมดได้ถูกปิดใช้งานโดยโหมดแก้ไขปัญหา
 
 ## Strings connected to add-on updates
 
@@ -286,6 +290,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } ได้อัปเดตคอลเลกชันชุดรูปแบบสีใหม่ เราได้เอารุ่นเก่าออกจากรายชื่อ “ชุดตกแต่งที่บันทึกไว้” ของคุณแล้ว ให้รับรุ่นใหม่บนไซต์ส่วนเสริม
 colorway-removal-notice-learn-more = เรียนรู้เพิ่มเติม
 colorway-removal-notice-button = รับชุดตกแต่งชุดรูปแบบสีที่อัปเดตแล้ว
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = การตั้งค่าความเปรียบต่างใน Windows ของคุณกำลังมีผลเหนือกว่าชุดตกแต่งของ { -brand-short-name } ให้ปิดการตั้งค่าเหล่านี้เพื่อใช้ชุดตกแต่งใน { -brand-short-name }
 privacy-policy = นโยบายความเป็นส่วนตัว
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -464,11 +472,18 @@ available-updates-heading = การอัปเดตที่มี
 recent-updates-heading = การอัปเดตล่าสุด
 release-notes-loading = กำลังโหลด…
 release-notes-error = ขออภัย แต่เกิดข้อผิดพลาดในการโหลดบันทึกประจำรุ่น
+addon-permissions-heading = การอนุญาต
 addon-permissions-empty2 = ส่วนขยายนี้ไม่จำเป็นต้องขอสิทธิ์ใด
+addon-permissions-required-label = ที่จำเป็น:
+addon-permissions-optional-label = ที่เลือกได้:
 addon-permissions-empty = ส่วนขยายนี้ไม่จำเป็นต้องขอสิทธิ์ใด
 addon-permissions-required = สิทธิ์ที่ต้องการสำหรับฟังก์ชันการทำงานหลัก:
 addon-permissions-optional = สิทธิ์เผื่อเลือกสำหรับฟังก์ชันการทำงานเพิ่มเติม:
 addon-permissions-learnmore = เรียนรู้เพิ่มเติมเกี่ยวกับการกำหนดสิทธิ์
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = การกำหนดสิทธิ์บางอย่างถูกจัดการโดยองค์กรของคุณ
 recommended-extensions-heading = ส่วนขยายที่แนะนำ
 recommended-themes-heading = ชุดตกแต่งที่แนะนำ
 # Variables:
@@ -523,9 +538,15 @@ details-notification-hard-blocked-other =
     .message = ส่วนเสริมนี้ถูกปิดกั้นเนื่องจากละเมิดนโยบายของ BrowserWorks และถูกปิดใช้งานแล้ว
 details-notification-unsigned-link = ข้อมูลเพิ่มเติม
 details-notification-blocked = { $name } ถูกปิดใช้งานเนื่องจากปัญหาด้านความปลอดภัยหรือเสถียรภาพ
-details-notification-blocked2 =
-    .message = { $name } ถูกปิดใช้งานเนื่องจากปัญหาด้านความปลอดภัยหรือเสถียรภาพ
 details-notification-blocked-link2 = ดูรายละเอียด
+details-notification-soft-blocked-extension-disabled2 =
+    .message = ส่วนขยายนี้ถูกจำกัดและได้ถูกปิดใช้งานแล้ว คุณสามารถเปิดใช้งานได้ แต่อาจมีความเสี่ยง
+details-notification-soft-blocked-extension-enabled2 =
+    .message = ส่วนขยายนี้ถูกจำกัด การใช้ส่วนขยายนี้อาจมีความเสี่ยง
+details-notification-soft-blocked-other-disabled2 =
+    .message = ส่วนเสริมนี้ถูกจำกัดและได้ถูกปิดใช้งานแล้ว คุณสามารถเปิดใช้งานได้ แต่อาจมีความเสี่ยง
+details-notification-soft-blocked-other-enabled2 =
+    .message = ส่วนเสริมนี้ถูกจำกัด การใช้ส่วนเสริมนี้อาจมีความเสี่ยง
 details-notification-soft-blocked-extension-disabled =
     .message = ส่วนขยายนี้ถูกจำกัดเนื่องจากละเมิดนโยบายของ BrowserWorks และถูกปิดใช้งานแล้ว คุณสามารถเปิดใช้งานได้ แต่อาจมีความเสี่ยง
 details-notification-soft-blocked-extension-enabled =
@@ -537,8 +558,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = ดูรายละเอียด
 details-notification-blocked-link = ข้อมูลเพิ่มเติม
 details-notification-softblocked = { $name } เป็นที่ทราบว่าก่อให้เกิดปัญหาด้านความปลอดภัยหรือเสถียรภาพ
-details-notification-softblocked2 =
-    .message = { $name } เป็นที่ทราบว่าก่อให้เกิดปัญหาด้านความปลอดภัยหรือเสถียรภาพ
 details-notification-softblocked-link = ข้อมูลเพิ่มเติม
 details-notification-gmp-pending = { $name } จะถูกติดตั้งในไม่ช้า
 details-notification-gmp-pending2 =
@@ -564,6 +583,10 @@ permissions-data-addon-button = การกำหนดสิทธิ์แล
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = ใช้โดยส่วนขยาย { $extensionName }
+addon-permissions-data-collection-heading = การรวบรวมข้อมูล
+addon-permissions-data-collection-empty = ผู้พัฒนาระบุว่าส่วนขยายนี้ไม่ต้องการการรวบรวมข้อมูล
+addon-data-collection-provided = ข้อมูลที่จัดเตรียมโดยผู้พัฒนาส่วนขยาย
+addon-data-collection-learnmore = เรียนรู้เพิ่มเติมเกี่ยวกับการรวบรวมข้อมูล
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -572,6 +595,7 @@ mlmodel-link-preview = { -brand-short-name } ใช้โมเดลนี้�
 mlmodel-pdfjs = { -brand-short-name } ใช้โมเดลนี้เพื่อสร้างข้อความทดแทนสำหรับภาพที่คุณเพิ่มลงใน PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } ใช้โมเดลนี้เพื่อแนะนำชื่อสำหรับกลุ่มแท็บของคุณ
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } ใช้โมเดลนี้เพื่อแนะนำแท็บสำหรับกลุ่มแท็บของคุณ
+mlmodel-formfill-engine = { -brand-short-name } ใช้สิ่งนี้เพื่อช่วยกรอกข้อมูลในแบบฟอร์มที่อยู่
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = AI บนอุปกรณ์
 addon-category-mlmodel-title =

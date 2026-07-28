@@ -20,9 +20,9 @@ protections-popup-footer-protection-label-standard = 표준
 
 # The text a screen reader speaks when focused on the info button.
 protections-panel-etp-more-info =
-    .aria-label = 향상된 추적 방지에 대한 추가 정보
-protections-panel-etp-on-header = 이 사이트에 향상된 추적 방지 켜짐
-protections-panel-etp-off-header = 이 사이트에 향상된 추적 방지 꺼짐
+    .aria-label = 향상된 추적 방지 기능에 대한 추가 정보
+protections-panel-etp-on-header = 이 사이트에 향상된 추적 방지 기능이 켜짐
+protections-panel-etp-off-header = 이 사이트에 향상된 추적 방지 기능이 꺼짐
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = 사이트가 작동하지 않습니까?
 # The heading/title of the sub-panel view
@@ -35,13 +35,13 @@ protections-panel-site-not-working-view =
 ##   $host (String): the hostname of the site that is being displayed.
 
 protections-panel-etp-toggle-on =
-    .label = 향상된 추적 방지
+    .label = 향상된 추적 방지 기능
     .description = 이 사이트에 켜짐
-    .aria-label = 향상된 추적 방지: { $host }에 켜짐
+    .aria-label = 향상된 추적 방지 기능: { $host }에 켜짐
 protections-panel-etp-toggle-off =
-    .label = 향상된 추적 방지
+    .label = 향상된 추적 방지 기능
     .description = 이 사이트에 꺼짐
-    .aria-label = 향상된 추적 방지: { $host }에 꺼짐
+    .aria-label = 향상된 추적 방지 기능: { $host }에 꺼짐
 
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
@@ -84,6 +84,11 @@ smartblock-placeholder-title = { $trackername } 추적기 및 콘텐츠 차단�
 smartblock-placeholder-desc = { -brand-short-name } 설정으로 인해 이 콘텐츠가 여러 사이트에서 사용자를 추적하거나 광고에 사용되는 것을 차단했습니다.
 #  $websitehost (String): host of website with blocked content.
 smartblock-placeholder-button-text = { $websitehost }에서 허용
+# Caption shown above the original text and links extracted from a blocked
+# third-party embed (e.g. a Twitter/X or Instagram post) that SmartBlock has
+# replaced with a placeholder. The caption sits above a bordered content box
+# containing the extracted text.
+smartblock-placeholder-content-header = 차단된 임베드 콘텐츠
 
 ##
 

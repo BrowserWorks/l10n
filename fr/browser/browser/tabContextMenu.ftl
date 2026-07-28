@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = Actualiser l’onglet
     .accesskey = A
+reload-tab2 =
+    .label = Actualiser
+    .accesskey = A
 select-all-tabs =
     .label = Sélectionner tous les onglets
     .accesskey = S
@@ -24,8 +27,14 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = Dupliquer l’onglet
     .accesskey = D
+duplicate-tab2 =
+    .label = Dupliquer
+    .accesskey = D
 duplicate-tabs =
     .label = Dupliquer les onglets
+    .accesskey = D
+duplicate-tabs2 =
+    .label = Dupliquer
     .accesskey = D
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
@@ -52,9 +61,15 @@ reload-tabs =
 pin-tab =
     .label = Épingler cet onglet
     .accesskey = P
+tab-context-pin-tab2 =
+    .label = Épingler
+    .accesskey = r
 unpin-tab =
     .label = Désépingler cet onglet
     .accesskey = R
+tab-context-unpin-tab2 =
+    .label = Désépingler
+    .accesskey = s
 pin-selected-tabs =
     .label = Épingler les onglets
     .accesskey = p
@@ -67,9 +82,16 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = Ajouter aux marque-pages…
     .accesskey = m
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Ajouter aux marque-pages
+    .accesskey = A
 tab-context-open-in-new-container-tab =
     .label = Ouvrir dans un nouvel onglet conteneur
     .accesskey = e
+tab-context-open-in-new-container-tab2 =
+    .label = Ouvrir dans un nouvel onglet conteneur
+    .accesskey = d
 move-to-start =
     .label = Déplacer vers le début
     .accesskey = S
@@ -79,12 +101,23 @@ move-to-end =
 move-to-new-window =
     .label = Déplacer vers une nouvelle fenêtre
     .accesskey = n
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Déplacer vers { $profileName }
 tab-context-close-multiple-tabs =
     .label = Fermer plusieurs onglets
     .accesskey = l
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Fermer plusieurs onglets
+    .accesskey = o
 tab-context-close-duplicate-tabs =
     .label = Fermer les onglets en double
     .accesskey = u
+tab-context-close-duplicate-tabs2 =
+    .label = Fermer les doublons de cet onglet
+    .accesskey = e
 tab-context-share-url =
     .label = Partager
     .accesskey = P
@@ -118,6 +151,13 @@ tab-context-close-n-tabs =
            *[other] Fermer { $tabCount } onglets
         }
     .accesskey = F
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Fermer
+           *[other] Fermer { $tabCount } onglets
+        }
+    .accesskey = F
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -125,6 +165,41 @@ tab-context-move-tabs =
            *[other] Déplacer les onglets
         }
     .accesskey = c
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Déplacer l’onglet vers
+           *[other] Déplacer { $tabCount } onglets vers
+        }
+    .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Déplacer la vue scindée vers
+    .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Envoyer à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+    .accesskey = E
+tab-context-send-to-device2 =
+    .label = Envoyer à vos appareils
+    .accesskey = E
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Envoyer à un mobile
+           *[other] Envoyer { $tabCount } onglets à un mobile
+        }
+    .accesskey = E
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Créer un lien partageable
+    .accesskey = C
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->
@@ -139,3 +214,7 @@ tab-context-unload-n-tabs =
            *[other] Décharger { $tabCount } onglets
         }
     .accesskey = D
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Décharger
+    .accesskey = h

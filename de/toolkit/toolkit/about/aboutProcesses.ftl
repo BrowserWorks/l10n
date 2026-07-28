@@ -47,7 +47,7 @@ about-processes-privilegedmozilla-process = { -vendor-short-name }-Websites ({ $
 about-processes-gmp-plugin-process = Gecko-Medien-Plugins ({ $pid })
 about-processes-gpu-process = GPU ({ $pid })
 about-processes-vr-process = VR ({ $pid })
-about-processes-rdd-process = Datendekoder ({ $pid })
+about-processes-rdd-process = Datendecoder ({ $pid })
 about-processes-socket-process = Netzwerk ({ $pid })
 about-processes-remote-sandbox-broker-process = Externer Sandbox-Broker ({ $pid })
 about-processes-fork-server-process = Fork-Server ({ $pid })
@@ -59,6 +59,20 @@ about-processes-inference-process = Inferenz ({ $pid })
 #    $pid (String) The process id of this process, assigned by the OS.
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = Andere: { $type } ({ $pid })
+
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = Privat
+about-processes-web-isolated-property-serviceworker = Serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT deaktiviert
+about-processes-web-isolated-property-with-coop-coep = Quellübergreifend (cross-origin) isoliert
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
 
 ## Isolated process names
 ## Variables:
@@ -131,6 +145,7 @@ about-processes-utility-actor-mf-media-engine = Windows-Media-Foundation-Media-E
 about-processes-utility-actor-js-oracle = JavaScript-Oracle
 about-processes-utility-actor-windows-utils = Windows-Dienstprogramme
 about-processes-utility-actor-windows-file-dialog = Windows-Dateidialog
+about-processes-utility-actor-pkcs11-module = Hilfsprogramm für Sicherheitsmodule
 
 ## Displaying CPU (percentage and total)
 ## Variables:

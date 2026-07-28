@@ -27,7 +27,7 @@ about-webrtc-aec-logging-toggled-on-state-msg = AEC-Protokollierung aktiv (sprec
 about-webrtc-aec-logging-unavailable-sandbox = Die Umgebungsvariable MOZ_DISABLE_CONTENT_SANDBOX=1 ist für den Export von AEC-Protokollen erforderlich. Setzen Sie diese Variable nur, wenn Sie die möglichen Risiken verstehen.
 # Variables:
 #  $path (String) - The path to which the aec log file is saved.
-about-webrtc-aec-logging-toggled-off-state-msg = Gespeicherte protokolldateien befinden sich in: { $path }
+about-webrtc-aec-logging-toggled-off-state-msg = Gespeicherte Protokolldateien befinden sich in: { $path }
 
 ##
 
@@ -144,10 +144,10 @@ about-webrtc-raw-cand-show-msg = Unformatierte Kandidaten anzeigen
     .title = Zum Erweitern des Abschnitts anklicken
 about-webrtc-raw-cand-hide-msg = Unformatierte Kandidaten ausblenden
     .title = Zum Minimieren des Abschnitts anklicken
-about-webrtc-raw-cand-section-show-msg = Unformatierte kandidaten anzeigen
-    .title = Zum erweitern des abschnitts anklicken
-about-webrtc-raw-cand-section-hide-msg = Unformatierte kandidaten ausblenden
-    .title = Zum minimieren des abschnitts anklicken
+about-webrtc-raw-cand-section-show-msg = Unformatierte Kandidaten anzeigen
+    .title = Zum Erweitern des Abschnitts anklicken
+about-webrtc-raw-cand-section-hide-msg = Unformatierte Kandidaten ausblenden
+    .title = Zum Minimieren des Abschnitts anklicken
 about-webrtc-priority = Priorität
 about-webrtc-fold-show-msg = Details anzeigen
     .title = Zum Erweitern des Abschnitts anklicken
@@ -317,6 +317,3 @@ about-webrtc-hide-msg-sdp = SDP ausblenden
 about-webrtc-media-context-show-msg = Medienkontext anzeigen
 about-webrtc-media-context-hide-msg = Medienkontext verbergen
 about-webrtc-media-context-heading = Medienkontext
-
-##
-

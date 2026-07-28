@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
+policy-AIControls = AI 制御を設定します。
 policy-AllowedDomainsForApps = Google Workspace へのアクセスを許可するドメインを定義します。
 policy-AllowFileSelectionDialogs = ファイル選択ダイアログを許可します。
 policy-AppAutoUpdate = アプリケーションの自動更新を有効または無効にします。
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = アドレスの自動入力を有効にします
 policy-AutofillCreditCardEnabled = 支払い方法の自動入力を有効にします。
 policy-AutoLaunchProtocolsFromOrigins = ユーザーに確認せずに、列挙された生成元から利用できる外部プロトコルのリストを定義します。
 policy-BackgroundAppUpdate2 = バックグラウンド更新を有効または無効にします。
+policy-Backup = プロファイルデータのバックアップと復元を無効にします。
 policy-BlockAboutAddons = アドオンマネージャー (about:addons) へのアクセスをブロックします。
 policy-BlockAboutConfig = about:config ページへのアクセスをブロックします。
 policy-BlockAboutProfiles = about:profiles ページへのアクセスをブロックします。
@@ -35,6 +37,7 @@ policy-Containers = コンテナーに関連するポリシーを設定します
 policy-DisableAccounts = 同期を含め、アカウントに基づくサービスを無効にします。
 policy-DisabledCiphers = 暗号を無効にします。
 policy-DefaultDownloadDirectory = 既定のダウンロードディレクトリーを設定します。
+policy-DefaultSerialGuardSetting = Serial API の使用を制御します。
 policy-DisableAppUpdate = ブラウザの更新を抑止します。
 policy-DisableBuiltinPDFViewer = { -brand-short-name } 組み込みの PDF ビューアーの PDF.js を無効にします。
 policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションをすべて抑止します。Windows のみ適用可能です。他のプラットフォームにはこのエージェントがありません。
@@ -55,6 +58,8 @@ policy-DisablePocket2 = ウェブページを { -pocket-brand-name } に保存�
 policy-DisablePrivateBrowsing = プライベートブラウジングを無効にします。
 policy-DisableProfileImport = メニューコマンド [他のブラウザーからデータをインポート] を無効にします。
 policy-DisableProfileRefresh = about:support ページの [{ -brand-short-name } をリフレッシュ] ボタンを無効にします。
+policy-DisableRemoteImprovements = 更新間のパフォーマンス、安定性、機能変更を { -brand-short-name } に適用しない。
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = リモート設定を無効化します。
 policy-DisableSafeMode = セーフモードで再起動する機能を無効にします。注意: Shift キーでセーフモードを起動する機能は、Windows でグループポリシーを利用する場合のみ無効にできます。
 policy-DisableSecurityBypass = 特定のセキュリティ警告をユーザーが回避できないようにします。
 policy-DisableSetAsDesktopBackground = メニューコマンド [デスクトップの背景に設定] を無効にします。
@@ -79,6 +84,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 policy-FirefoxHome2 = { -firefox-home-brand-name } を設定します。
 policy-FirefoxSuggest = { -firefox-suggest-brand-name } を設定します。
+policy-GenerativeAI = 生成 AI 機能を設定します。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = アドレスバーに単語を入力すると、検索の代わりにイントラネットサイトへの案内を強制します。
 policy-Handlers = 既定のアプリケーションハンドラーを設定します。
 policy-HardwareAcceleration = false にすると、ハードウェアアクセラレーションをオフにします。
@@ -87,6 +93,7 @@ policy-Homepage = ホームページを設定し、任意でロックします�
 policy-HttpAllowlist = HTTPS にアップグレードされない生成元。
 policy-HttpsOnlyMode = HTTPS-Only モードの有効化を許可します。
 policy-InstallAddonsPermission = 特定のウェブサイトにアドオンのインストールを許可します。
+policy-IPProtectionAvailable = 組み込み VPN をユーザーが利用できないようにします。
 policy-LegacyProfiles = インストレーションごとにプロファイルが分割されるのを強制的に無効にします。
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 特定のサイトで�
 ##
 
 policy-LocalFileLinks = 特定のウェブサイトにローカルファイルへのリンクを許可します。
+policy-LocalNetworkAccess = ローカルネットワークへのアクセス確認を有効または無効にします。
 policy-ManagedBookmarks = システム管理者により管理されたブックマークのリストを設定します。ユーザーはこのブックマークを変更できません。
 policy-ManualAppUpdateOnly = 更新を手動のみにし、更新についてユーザーに通知しないようにします。
 policy-PrimaryPassword = マスターパスワードの使用を要求または抑止します。
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = TLS のポスト量子鍵合意を有効
 policy-PDFjs = { -brand-short-name } の組み込み PDF ビューアー PDF.js を無効化または設定します。
 policy-Permissions2 = カメラ、マイク、位置情報、通知、自動再生の許可と拒否を設定します。
 policy-PictureInPicture = ピクチャーインピクチャーを有効または無効にします。
+policy-PopupBlocking2 = 特定のウェブサイトにポップアップ表示とサードパーティフレームによるリダイレクトを許可します。
 policy-PopupBlocking = 特定のウェブサイトのポップアップ表示を既定で許可します。
 policy-Preferences = 設定のサブセットに対する値を設定してロックします。
 policy-PrivateBrowsingModeAvailability = プライベートブラウジングモードの利用許可を設定します。
 policy-PromptForDownloadLocation = ダウンロード時にファイルの保存先を確認します。
 policy-Proxy = プロキシーの設定を指示します。
+policy-RelaunchRequired = { -brand-short-name } が所定期間内にリニューアルされることを必須にし、今後のリニューアルをユーザーに通知します。
 policy-RequestedLocales = アプリケーションに要求される言語リストと優先順位を設定します。
 policy-SanitizeOnShutdown2 = 終了時にナビゲーションデータを消去します。
 policy-SearchBar = 検索バーの既定の位置を設定します。ユーザーによる設定の変更は許可されます。
@@ -130,6 +140,7 @@ policy-SearchSuggestEnabled = 検索候補の表示機能を有効または無�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11 モジュールを追加または削除します。
 policy-ShowHomeButton = ホームボタンをツールバーに表示します。
+policy-SitePolicies = サイト固有のポリシー。
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = 起動時に利用規約とプライバシー通知を表示しない。この端末のブラウザーにアクセスできるすべてのユーザーに代わって、あなたが利用規約に同意または同意する権限を持っていることを表します。
 policy-SSLVersionMax = SSL の最高バージョンを設定します。
@@ -139,8 +150,11 @@ policy-SupportMenu = ヘルプメニューにカスタムサポートメニュ�
 policy-TranslateEnabled = ウェブページ翻訳を有効または無効にします。
 policy-UserMessaging = 特定のメッセージをユーザーに表示させないようにします。
 policy-UseSystemPrintDialog = システムの印刷ダイアログで印刷します。
+policy-VisualSearchEnabled = ビジュアル検索を有効または無効にします。
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = ウェブサイトを訪問済みにしません。書式の詳細はドキュメントをご覧ください。
 policy-Windows10SSO = Microsoft アカウント、職場または学校アカウントで Windows のシングルサインオンを許可します。
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Microsoft Entra アカウントでシングルサインオンを許可します。
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = XSLTProcessor JavaScript API および XSLT 処理命令のサポートを有効または無効にします。

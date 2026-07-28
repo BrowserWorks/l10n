@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Импорт из д�
 contextual-manager-passwords-command-import = Импорт из файла…
 contextual-manager-passwords-command-export = Экспорт паролей
 contextual-manager-passwords-command-remove-all = Удалить все пароли
+contextual-manager-passwords-command-options = Настройки
 contextual-manager-passwords-command-settings = Настройки
 contextual-manager-passwords-command-help = Помощь
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Добавлено: { $added }, Обновлено: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Новое: { $added }, Обновлено: { $modified }, Дубликаты: { $no_change }, Ошибки: { $error }
 contextual-manager-passwords-import-detailed-report = Просмотреть подробный отчёт
 contextual-manager-passwords-import-success-button = Готово
 contextual-manager-passwords-import-error-heading-and-message =
@@ -161,7 +168,7 @@ contextual-manager-passwords-password-already-exists-error-button = Перейт
 contextual-manager-passwords-update-password-success-heading =
     .heading = Пароль сохранён
 contextual-manager-passwords-update-password-success-button = Готово
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Имя пользователя сохранено
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -205,7 +212,7 @@ contextual-manager-passwords-change-password-button = Сменить парол�
 contextual-manager-passwords-vulnerable-password-heading-and-message =
     .heading = Рекомендуется сменить пароль
     .message = Этот пароль легко угадать. Смените его, чтобы защитить свой аккаунт.
-contextual-manager-passwords-vulnerable-password-link-message = Как { -brand-product-name } узнает о ненадежных паролях?
+contextual-manager-passwords-vulnerable-password-link-message = Как { -brand-product-name } узнает о ненадёжных паролях?
 contextual-manager-passwords-no-username-heading-and-message =
     .heading = Добавьте имя пользователя
     .message = Укажите его, чтобы входить быстрее.
@@ -216,12 +223,15 @@ contextual-manager-passwords-title = Пароли
 
 contextual-manager-passwords-create-label =
     .label = Добавить пароль
+contextual-manager-passwords-update-label =
+    .label = Обновить пароль
 contextual-manager-passwords-edit-label =
     .label = Изменить пароль
 contextual-manager-passwords-remove-label =
     .title = Удалить пароль
 contextual-manager-passwords-origin-tooltip = Введите точный адрес страницы входа на сайт.
 contextual-manager-passwords-username-tooltip = Введите имя пользователя, адрес электронной почты или номер аккаунта, которые вы используете для входа.
+contextual-manager-passwords-password-tooltip-2 = Введите пароль для входа в этот аккаунт.
 contextual-manager-passwords-password-tooltip = Введите пароль, используемый для входа в этот аккаунт.
 
 ## Password Card
@@ -302,6 +312,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Пароли не найдены
+contextual-manager-passwords-no-passwords-found-message-2 = Попробуйте ввести другой запрос и выполните поиск снова.
 contextual-manager-passwords-no-passwords-found-message = Пароли не найдены. Попробуйте другой запрос и повторите попытку.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -316,6 +327,8 @@ contextual-manager-passwords-no-passwords-message = Все пароли заши
 contextual-manager-passwords-no-passwords-get-started-message = Добавьте их здесь, чтобы начать.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Добавить вручную
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Сохраняйте свои пароли в безопасном месте
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -333,3 +346,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [few] Да, удалить пароли
        *[many] Да, удалить пароли
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Чтобы просмотреть сохранённые пароли, введите основной пароль.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Введите основной пароль
+contextual-manager-primary-password-learn-more-link = Подробнее

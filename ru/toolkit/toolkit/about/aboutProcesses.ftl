@@ -61,6 +61,20 @@ about-processes-inference-process = Вывод ({ $pid })
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = Другое: { $type } ({ $pid })
 
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = приватный
+about-processes-web-isolated-property-serviceworker = обработчик
+about-processes-web-isolated-property-jit-disabled = JIT отключён
+about-processes-web-isolated-property-with-coop-coep = изолирован от посторонних источников
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
+
 ## Isolated process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
@@ -134,6 +148,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Утилиты Windows
 about-processes-utility-actor-windows-file-dialog = Диалоговое окно Файл в Windows
+about-processes-utility-actor-pkcs11-module = Помощник модуля защиты
 
 ## Displaying CPU (percentage and total)
 ## Variables:

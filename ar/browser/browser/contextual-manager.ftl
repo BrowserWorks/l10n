@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = استورِد من �
 contextual-manager-passwords-command-import = استورِد من ملف…
 contextual-manager-passwords-command-export = صدّر كلمات السر
 contextual-manager-passwords-command-remove-all = أزل كل كلمات السر
+contextual-manager-passwords-command-options = الخيارات
 contextual-manager-passwords-command-settings = الإعدادات
 contextual-manager-passwords-command-help = مساعدة
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -37,7 +38,7 @@ contextual-manager-passwords-reveal-password-os-auth-dialog-message-macosx = ع�
 contextual-manager-passwords-edit-password-os-auth-dialog-message-win = لتحرير كلمة سرك، أدخل بيانات ولوجك بنظام ويندوز. يساعد هذا في حماية أمان حساباتك.
 # The MacOS string is preceded by the operating system with "Firefox is trying to ".
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-contextual-manager-passwords-edit-password-os-auth-dialog-message-macosx = تحرير كلمة المرور المحفوظة
+contextual-manager-passwords-edit-password-os-auth-dialog-message-macosx = حرّر كلمة السر المحفوظة
 # This message can be seen when attempting to copy a password in contextual password manager on Windows.
 contextual-manager-passwords-copy-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتنسخ كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
 # The MacOS string is preceded by the operating system with "Firefox is trying to ".
@@ -65,16 +66,27 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = جديد: { $added }، حُدِّث: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = جديد: { $added }، حُدّث: { $modified }، تكرارات: { $no_change }، أخطاء: { $error }
 contextual-manager-passwords-import-detailed-report = اعرض التقرير المفصل
 contextual-manager-passwords-import-success-button = تمّ
+contextual-manager-passwords-import-error-heading-and-message =
+    .heading = تعذّر استيراد كلمات السر
+    .message = تأكّد من أن ملفك يتضمّن أعمدة للمواقع وأسماء المستخدمين وكلمات السر.
 contextual-manager-passwords-import-error-button-try-again = حاول مجددًا
 contextual-manager-passwords-import-error-button-cancel = ألغِ
-contextual-manager-passwords-import-learn-more = تعرف على كيفية استيراد كلمات السرّ
+contextual-manager-passwords-import-learn-more = تعرف على كيفية استيراد كلمات السر
 contextual-manager-passwords-export-success-heading =
     .heading = صُدّرت كلمات السر
 contextual-manager-passwords-export-success-button = تمّ
 # Export passwords to file dialog
 contextual-manager-export-passwords-dialog-title = تصدير كلمات السر إلى الملف؟
+# This string recommends to the user that they delete the exported password file that is saved on their local machine.
+contextual-manager-export-passwords-dialog-message = بعد التصدير، نوصي بحذف الملف حتى لا يتمكن مستخدمي هذا الجهاز الآخرون من رؤية كلمات السر خاصتك
 contextual-manager-export-passwords-dialog-confirm-button = متابعة التصدير
 # Title of the file picker dialog
 contextual-manager-passwords-export-file-picker-title = صدّر كلمات السر من { -brand-short-name }
@@ -120,12 +132,22 @@ contextual-manager-passwords-username-label = اسم المستخدم
 # The attribute .data-after describes the text that should be displayed for the ::after pseudo-selector
 contextual-manager-passwords-password-label = كلمة السر
     .data-after = نُسخ
+contextual-manager-passwords-radiogroup-label =
+    .aria-label = تصفية كلمات السر
+# Variables
+#   $url (string) - The url associated with the new login
+contextual-manager-passwords-add-password-success-heading =
+    .heading = أُضيفت كلمة سر لـ { $url }
 contextual-manager-passwords-add-password-success-button = اعرض
-contextual-manager-passwords-password-already-exists-error-button = انتقل إلى كلمة السرّ
+# Variables
+#   $url (string) - The url associated with the existing login
+contextual-manager-passwords-password-already-exists-error-heading =
+    .heading = يوجد بالفعل اسم مستخدم وكلمة سر لـ { $url }
+contextual-manager-passwords-password-already-exists-error-button = انتقل إلى كلمة السر
 contextual-manager-passwords-update-password-success-heading =
     .heading = حُفظت كلمة السر
 contextual-manager-passwords-update-password-success-button = تمّ
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = حُفظ اسم المستخدم
 contextual-manager-passwords-delete-password-success-button = تمّ
 #
@@ -151,16 +173,35 @@ contextual-manager-passwords-alert-back-button =
     .label = السابق
 contextual-manager-passwords-alert-list =
     .aria-label = قائمة التنبيهات
+contextual-manager-passwords-breached-origin-heading-and-message =
+    .heading = يوصى بتغيير كلمة السر
+    .message = بُلِّغ أن كلمات السر في هذا الموقع سُرقت او سُربت. غيّر كلمة السر حتى تحمي حسابك.
+contextual-manager-passwords-breached-origin-link-message = كيف يعرف { -brand-product-name } عن الخروقات؟
+contextual-manager-passwords-change-password-button = غيّر كلمة السر
+contextual-manager-passwords-vulnerable-password-heading-and-message =
+    .heading = يوصى بتغيير كلمة السر
+    .message = كلمة السر هذه سهلة التوقع. غيّر كلمة السر لحماية حسابك.
+contextual-manager-passwords-vulnerable-password-link-message = كيف يعرف { -brand-product-name } عن كلمات السر الضعيفة؟
+contextual-manager-passwords-no-username-heading-and-message =
+    .heading = أضف اسم المستخدم
+    .message = اضف اسم المستخدم للولوج بشكل أسرع
 contextual-manager-passwords-add-username-button = أضف اسم المستخدم
+contextual-manager-passwords-title = كلمات السر
 
 ## Login Form
 
 contextual-manager-passwords-create-label =
     .label = أضِف كلمة سر
+contextual-manager-passwords-update-label =
+    .label = حدّث كلمة السر
 contextual-manager-passwords-edit-label =
     .label = حرّر كلمة السر
 contextual-manager-passwords-remove-label =
     .title = أزِل كلمة السر
+contextual-manager-passwords-origin-tooltip = أدخل بدقة العنوان الذي ستولِج من خلاله إلى هذا الموقع.
+contextual-manager-passwords-username-tooltip = أدخل اسم المستخدم أو عنوان البريد الإلكتروني أو رقم الحساب الذي تستخدمه للولوج.
+contextual-manager-passwords-password-tooltip-2 = أدخل كلمة السر للولوج إلى هذا الحساب.
+contextual-manager-passwords-password-tooltip = أدخل كلمة السر للولوج إلى هذا الحساب.
 
 ## Password Card
 
@@ -181,6 +222,23 @@ contextual-manager-alert-icon =
 contextual-manager-origin-login-line =
     .aria-label = زُر { $url }
     .title = زُر { $url }
+# "(Warning)" indicates that a login's origin field has an alert icon.
+# Variables
+#   $url (string) - The url associated with the login
+contextual-manager-origin-login-line-with-alert =
+    .aria-label = زُر { $url } (تحذير)
+    .title = زُر { $url } (تحذير)
+# Variables
+#   $username (string) - The username associated with the login
+contextual-manager-username-login-line =
+    .aria-label = انسخ اسم المستخدم { $username }
+    .title = انسخ اسم المستخدم { $username }
+# "(Warning)" indicates that a login's username field has an alert icon.
+# Variables
+#   $username (string) - The username associated with the login
+contextual-manager-username-login-line-with-alert =
+    .aria-label = انسخ اسم المستخدم { $username } (تحذير)
+    .title = انسخ اسم المستخدم { $username } (تحذير)
 contextual-manager-password-login-line =
     .aria-label = انسخ كلمة السر
     .title = انسخ كلمة السر
@@ -203,6 +261,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = لم يُعثر على كلمات السر
+contextual-manager-passwords-no-passwords-found-message-2 = حاول مصطلح آخر ثم ابحث مجددًا.
 contextual-manager-passwords-no-passwords-found-message = لم يُعثر على كلمات السر. ابحث عن مصطلح آخر وحاول مرة أخرى.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -217,9 +276,19 @@ contextual-manager-passwords-no-passwords-message = جميع كلمات سرك �
 contextual-manager-passwords-no-passwords-get-started-message = أضفهم هنا للبدء.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = أضف يدويًا
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = احفظ كلمات سرك في مكان آمن
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
 
+contextual-manager-passwords-discard-changes-heading-and-message =
+    .heading = إغلاق دون حفظ؟
+    .message = لن تُحفظ تغييراتك.
 contextual-manager-passwords-discard-changes-close-button = أغلق
 contextual-manager-passwords-discard-changes-go-back-button = عُد
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = لرؤية كلمات سرك المحفوظة، أدخل كلمة سرك الرئيسية.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = أدخل كلمة السر الرئيسية
+contextual-manager-primary-password-learn-more-link = اطّلع على المزيد

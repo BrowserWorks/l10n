@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = Chatbot IA
 menu-view-contextual-password-manager =
     .label = Mots de passe
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Onglets ouverts
 sidebar-options-menu-button =
     .title = Ouvrir le menu
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Redimensionner le panneau latéral
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Supprimer de l’historique
 sidebar-history-clear =
     .label = Effacer l’historique
+sidebar-history-sort-by-heading-menucaption =
+    .label = Trier par :
 sidebar-history-sort-by-heading = Trier par :
 sidebar-history-sort-option-date =
     .label = Date
@@ -56,10 +66,14 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Gérer les paramètres de { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Onglets verticaux
+sidebar-settings2 =
+    .label = Paramètres
 sidebar-settings =
     .label = Paramètres du panneau latéral
 sidebar-hide-tabs-and-sidebar =
     .label = Masquer les onglets et le panneau latéral
+sidebar-open-tools-from-sidebar =
+    .label = Ouvrir les outils depuis le panneau latéral
 sidebar-show-on-the-right =
     .label = Déplacer le panneau latéral à droite
 sidebar-show-on-the-left =
@@ -68,7 +82,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Déployer le panneau latéral au survol
-sidebar-manage-extensions = Gérer les extensions
+sidebar-manage-extensions2 = Gérer toutes les extensions
+sidebar-customize-extensions-header2 = Extensions
+sidebar-customize-firefox-tools-header2 =
+    .label = Outils
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +133,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Supprimer ces pages de l’historique
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Modifier le marque-page…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Supprimer le marque-page
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Supprimer
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +150,11 @@ sidebar-menu-history-label =
     .label = Historique
 sidebar-menu-synced-tabs-label =
     .label = Onglets d’autres appareils
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Onglets ouverts
 sidebar-menu-bookmarks-label =
     .label = Marque-pages
 sidebar-menu-customize-label =
@@ -170,16 +201,49 @@ sidebar-menu-history-header =
     .heading = Historique
 sidebar-menu-syncedtabs-header =
     .heading = Onglets d’autres appareils
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Onglets ouverts
 sidebar-menu-cpm-header =
     .heading = Mots de passe
+sidebar-menu-bookmarks-header =
+    .heading = Marque-pages
 sidebar-panel-header-close-button =
     .tooltiptext = Fermer
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Menu des marque-pages
+sidebar-bookmarks-folder-toolbar = Barre personnelle
+sidebar-bookmarks-folder-other = Autres marque-pages
+sidebar-bookmarks-folder-mobile = Marque-pages des appareils mobiles
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Personnaliser le panneau latéral
 sidebar-history-title = Historique
 sidebar-syncedtabs-title = Onglets d’autres appareils
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Onglets ouverts
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Onglets épinglés
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Fenêtre { $winID } (actuelle)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Fenêtre { $winID }
+sidebar-bookmarks-title = Marque-pages
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +279,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Masquer le panneau latéral ({ $shortcut })
     .label = Panneaux latéraux
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Faites glisser les onglets importants ici pour les garder à portée de main

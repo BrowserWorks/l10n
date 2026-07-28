@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = 瀏覽與下載記錄
     .accesskey = B
 item-history-and-downloads-description2 = 清除網站與下載紀錄
-item-history-form-data-downloads =
-    .label = 瀏覽紀錄
-    .accesskey = H
-item-history-form-data-downloads-description = 清除網站與下載紀錄、儲存的表單資訊與搜尋紀錄
 item-cookies =
     .label = Cookie
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = 所有歷史記錄都會被清除。
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = 將清除所有選擇的項目。
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = 計算中…

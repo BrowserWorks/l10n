@@ -18,6 +18,11 @@ fxa-menu-turn-on-sync =
 fxa-menu-turn-on-sync-default = فعّل المزامنة
 fxa-menu-connect-another-device =
     .label = صِلْ جهازا آخر…
+fxa-menu-send-to-mobile-device-missing2 = ألا ترى جهازك؟
+fxviewtabrow-send-to-mobile-not-verified = الحساب غير مُؤكّد
+fxviewtabrow-send-to-mobile-verify-account = أكّد حسابك
+fxa-menu-send-to-mobile-turn-on-sync = شغّل المزامنة لإرسال ألسنة
+fxa-menu-send-to-mobile-connect-device = صلّ جهاز لإرسال ألسنة
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
@@ -37,6 +42,57 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = أرسِل اللسان مباشرةً إلى أي جهاز ولجت فيه.
 fxa-menu-sign-out =
     .label = اخرج…
+fxa-menu-sync-description = توصّل إلى الإنترنت من أي مكان
+fxa-avatar-sign-in = لِج
+fxa-avatar-sign-up = سجِّل
+fxa-avatar-tooltip =
+    .tooltiptext = لِج إلى حسابك
+sync-setup-verify-continue = واصِل
+sync-setup-verify-title = تحذير دمج
+sync-setup-verify-heading = أمتأكد أنك تريد الولوج إلى المزامنة؟
+# The user was previously signed into sync. This dialog confirms to the user
+# that they will be merging the data from the previously signed in into the newly signed in one
+# Variables:
+#   $email - Email address of a user previously signed into sync.
+sync-setup-verify-description = لِج مستخدم آخر مسبقًا للمزامنة على هذا الحاسوب. سيؤدي الولوج إلى دمج علامات هذا المتصفح وكلمات السر والإعدادات الأخرى مع { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = لِج لإرسال ألسنة
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 
+# Dialog 1 - different account signing in without option to merge
+sync-profile-different-account-title = وصل إلى الحد الأقصى للحساب لهذا الملف الشخصي
+sync-profile-different-account-header = زامَن هذا الملف الشخصي مسبقًا مع حساب مختلف
+# Variables:
+#   $acctEmail (String) - Email of the account signing into sync.
+sync-profile-different-account-description = للحفاظ على بياناتك منظمة وآمنة، لا يمكن مزامنة كل ملف شخصي { -brand-product-name } إلا مع حساب واحد. للولوج باستخدام { $acctEmail }، أنشئ ملف شخصي جديد.
+# Dialog 1 - different account signing in with merge option
+sync-profile-different-account-title-merge = زامَنت الملف الشخصي مع حساب مختلف
+# Variables:
+#   $acctEmail (String) - Email of the account signing into sync.
+#   $profileName (String) - Name of the current profile
+sync-profile-different-account-description-merge = للحفاظ على بياناتك منظمة وآمنة، نوصي بإنشاء ملف شخصي جديد للولوج باستخدام { $acctEmail }. إذا اخترت الاستمرار في المزامنة على هذا الملف الشخصي، فسيتم دمج البيانات من كِلا الحسابين بشكل دائم على "{ $profileName }".
+# Dialog 2 - account signed in on another profile without option to merge
+sync-account-in-use-header = الحساب قيد الاستخدام بالفعل
+# Variables:
+#   $acctEmail (String) - Email of the account signing into sync.
+#   $otherProfile (String) - Name of the other profile that is associated with the account
+sync-account-in-use-header-merge = { $acctEmail } مسجل بالفعل في ملف شخصي "{ $otherProfile }"
+sync-account-in-use-description = لا يمكنك ربط هذا الحساب إلا بملف شخصي واحد على هذا الحاسوب.
+# Dialog 2 - account signed in on another profile with merge option
+sync-account-already-signed-in-header = هذا الحساب مسجل دخوله إلى ملف شخصي آخر. هل تريد مزامنة كِلا الملفين؟
+# Variables:
+#   $acctEmail (String) - Email of the account signing into sync.
+#   $currentProfile (String): Name of the current profile signing in
+#   $otherProfile (String): Name of the profile that is already signed in
+sync-account-in-use-description-merge = ولَج { $acctEmail } إلى الملف الشخصي "{ $otherProfile }" على هذا الحاسوب. ستؤدي مزامنة الملف الشخصي "{ $currentProfile }" إلى دمج البيانات من كِلا الملفين إلى الأبد، مثل كلمات السر والعلامات.
+# Variables:
+#   $profileName (String) - Name of the profile to switch to
+sync-button-switch-profile = بدل إلى  "{ $profileName }"
+sync-button-create-profile = أنشئ ملف شخصي جديد
+sync-button-sync-and-merge = زامِن وادمج البيانات
+# Variables:
+#   $profileName (String) - Name of the profile to switch to
+sync-button-sync-profile = زامِن "{ $profileName }"

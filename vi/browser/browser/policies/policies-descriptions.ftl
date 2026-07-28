@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Đặt chính sách mà WebExtensions có thể truy cập thông qua chrome.storage.managed.
+policy-AIControls = Cấu hình kiểm soát trí tuệ nhân tạo (AI).
 policy-AllowedDomainsForApps = Xác định các miền được phép truy cập Google Workspace.
 policy-AllowFileSelectionDialogs = Cho phép hộp thoại chọn tập tin.
 policy-AppAutoUpdate = Bật hoặc tắt cập nhật chương trình tự động.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Bật tính năng tự động điền địa ch
 policy-AutofillCreditCardEnabled = Bật tính năng tự động điền phương thức thanh toán.
 policy-AutoLaunchProtocolsFromOrigins = Xác định danh sách các giao thức bên ngoài có thể được sử dụng từ các origin được liệt kê mà không cần nhắc người dùng.
 policy-BackgroundAppUpdate2 = Kích hoạt hoặc vô hiệu hóa trình cập nhật nền.
+policy-Backup = Vô hiệu hóa sao lưu hoặc khôi phục dữ liệu hồ sơ.
 policy-BlockAboutAddons = Chặn quyền truy cập vào trình quản lý tiện ích (about: addons).
 policy-BlockAboutConfig = Chặn truy cập vào trang about:config.
 policy-BlockAboutProfiles = Chặn truy cập vào trang about:profiles.
@@ -35,6 +37,7 @@ policy-Containers = Đặt các chính sách liên quan đến ngăn chứa.
 policy-DisableAccounts = Vô hiệu hóa các dịch vụ dựa trên tài khoản, bao gồm cả đồng bộ hóa.
 policy-DisabledCiphers = Vô hiệu hóa thuật toán mã hóa.
 policy-DefaultDownloadDirectory = Đặt thư mục tải xuống mặc định.
+policy-DefaultSerialGuardSetting = Kiểm soát việc sử dụng API cổng nối tiếp.
 policy-DisableAppUpdate = Chặn việc cập nhật trình duyệt.
 policy-DisableBuiltinPDFViewer = Vô hiệu hóa PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Ngăn chặn tác nhân người dùng trình duyệt mặc định làm bất cứ điều gì. Chỉ dành cho Windows, không có tác nhân người dùng nào khả dụng cho các nền tảng khác.
@@ -55,6 +58,8 @@ policy-DisablePocket2 = Tắt tính năng lưu trang web vào { -pocket-brand-na
 policy-DisablePrivateBrowsing = Vô hiệu hóa duyệt web riêng tư.
 policy-DisableProfileImport = Vô hiệu hóa lệnh nhập dữ liệu từ trình duyệt khác trên bảng chọn.
 policy-DisableProfileRefresh = Vô hiệu hóa nút khôi phục { -brand-short-name } trong trang about:support.
+policy-DisableRemoteImprovements = Ngăn chặn { -brand-short-name } áp dụng các thay đổi về hiệu năng, độ ổn định và tính năng giữa các bản cập nhật.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Vô hiệu hoá cài đặt tự xa.
 policy-DisableSafeMode = Tắt tính năng này để khởi động lại ở chế độ an toàn. Lưu ý: phím Shift để vào chế độ an toàn chỉ có thể tắt trên Windows bằng Group Policy.
 policy-DisableSecurityBypass = Ngăn người dùng bỏ qua một số cảnh báo bảo mật nhất định.
 policy-DisableSetAsDesktopBackground = Vô hiệu hóa lệnh đặt làm hình nền desktop trong menu.
@@ -79,6 +84,7 @@ policy-ExtensionSettings = Quản lý các cài đặt cài đặt khác nhau ch
 policy-ExtensionUpdate = Bật hoặc tắt cập nhật tiện ích mở rộng tự động.
 policy-FirefoxHome2 = Định cấu hình { -firefox-home-brand-name }.
 policy-FirefoxSuggest = Định cấu hình { -firefox-suggest-brand-name }.
+policy-GenerativeAI = Cấu hình các tính năng AI tạo ra.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Buộc điều hướng trực tiếp trang web nội bộ thay vì tìm kiếm khi nhập các mục từ đơn lẻ vào thanh địa chỉ.
 policy-Handlers = Cấu hình trình xử lý ứng dụng mặc định.
 policy-HardwareAcceleration = Nếu không đúng, hãy tắt chế độ tăng tốc phần cứng.
@@ -87,6 +93,7 @@ policy-Homepage = Đặt và tùy chọn khóa trang chủ.
 policy-HttpAllowlist = Origin sẽ không được nâng cấp lên HTTPS.
 policy-HttpsOnlyMode = Cho phép bật chế độ chỉ HTTPS.
 policy-InstallAddonsPermission = Cho phép một số trang web cài đặt tiện ích.
+policy-IPProtectionAvailable = Ngăn chặn người dùng truy cập vào VPN tích hợp sẵn.
 policy-LegacyProfiles = Vô hiệu hóa tính năng thực thi một cấu hình riêng cho mỗi cài đặt
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Hoàn nguyên hành vi
 ##
 
 policy-LocalFileLinks = Cho phép các trang web cụ thể để liên kết đến các tập tin cục bộ.
+policy-LocalNetworkAccess = Bật hoặc tắt kiểm tra quyền truy cập mạng cục bộ.
 policy-ManagedBookmarks = Định cấu hình danh sách các dấu trang do quản trị viên quản lý mà người dùng không thể thay đổi.
 policy-ManualAppUpdateOnly = Chỉ cho phép cập nhật thủ công và không thông báo cho người dùng về các bản cập nhật.
 policy-PrimaryPassword = Yêu cầu hoặc ngăn không sử dụng mật khẩu chính.
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = Kích hoạt post-quantum key agreement 
 policy-PDFjs = Vô hiệu hóa hoặc cấu hình PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-Permissions2 = Cấu hình quyền truy cập cho máy ảnh, micrô, vị trí, thông báo và tự động phát.
 policy-PictureInPicture = Kích hoạt hoặc vô hiệu hóa hình trong hình.
+policy-PopupBlocking2 = Cho phép một số trang web hiển thị cửa sổ bật lên và được chuyển hướng bởi khung của bên thứ ba.
 policy-PopupBlocking = Cho phép các trang web nhất định hiển thị cửa sổ bật lên theo mặc định.
 policy-Preferences = Đặt và khóa giá trị cho một tập hợp con ưu tiên.
 policy-PrivateBrowsingModeAvailability = Đặt tính khả dụng của chế độ duyệt web riêng tư.
 policy-PromptForDownloadLocation = Hỏi nơi lưu tập tin khi tải xuống.
 policy-Proxy = Cài đặt cấu hình proxy.
+policy-RelaunchRequired = Yêu cầu { -brand-short-name } phải được khởi chạy lại trong một khoảng thời gian nhất định và thông báo cho người dùng về việc khởi chạy lại sắp tới.
 policy-RequestedLocales = Đặt danh sách các ngôn ngữ được yêu cầu cho ứng dụng theo thứ tự ưu tiên.
 policy-SanitizeOnShutdown2 = Xóa dữ liệu điều hướng khi tắt máy.
 policy-SearchBar = Đặt thanh tìm kiếm ở vị trí mặc định. Người dùng vẫn được phép tùy chỉnh nó.
@@ -130,6 +140,7 @@ policy-SearchSuggestEnabled = Kích hoạt hoặc vô hiệu hóa các đề xu�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Thêm hoặc xóa module PKCS #11.
 policy-ShowHomeButton = Hiển thị nút trang chủ trên thanh công cụ.
+policy-SitePolicies = Các chính sách riêng biệt của từng trang web.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = Không hiển thị điều khoản sử dụng và thông báo về quyền riêng tư khi khởi động. Bạn tuyên bố rằng bạn chấp nhận và có thẩm quyền chấp nhận diều khoản sử dụng thay mặt cho tất cả các cá nhân mà bạn cung cấp quyền truy cập vào trình duyệt này.
 policy-SSLVersionMax = Chỉnh phiên bản SSL tối đa.
@@ -139,8 +150,11 @@ policy-SupportMenu = Thêm một mục menu hỗ trợ tùy chỉnh vào menu tr
 policy-TranslateEnabled = Bật hoặc tắt dịch trang web.
 policy-UserMessaging = Không hiển thị một số thông điệp nhất định cho người dùng.
 policy-UseSystemPrintDialog = In bằng hộp thoại in hệ thống.
+policy-VisualSearchEnabled = Bật hoặc tắt tìm kiếm trực quan (visual search).
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Chặn các trang web không được truy cập. Xem tài liệu để biết thêm chi tiết về định dạng.
 policy-Windows10SSO = Cho phép Windows đăng nhập một lần (SSO) cho tài khoản Microsoft, cơ quan và trường học.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Cho phép đăng nhập một lần (SSO) cho tài khoản Microsoft Entra.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Bật hoặc tắt hỗ trợ cho XSLTProcessor JavaScript API và XSLT processing instruction.

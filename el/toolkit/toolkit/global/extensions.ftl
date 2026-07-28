@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Άρνηση
     .accesskey = ρ
 webext-perms-host-description-all-urls = Πρόσβαση στα δεδομένα σας για κάθε ιστότοπο
+webext-perms-host-description-file-urls = Πρόσβαση σε τοπικά αρχεία του υπολογιστή σας
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Πρόσβαση στα δεδομένα σας για ιστοτόπους στον τομέα { $domain }
@@ -137,6 +138,7 @@ webext-perms-optional-text-with-data-collection-only = Το { $extension } απ�
 
 webext-site-perms-header-with-gated-perms-midi = Αυτό το πρόσθετο παρέχει στο { $hostname } πρόσβαση στις συσκευές MIDI σας.
 webext-site-perms-header-with-gated-perms-midi-sysex = Αυτό το πρόσθετο παρέχει στο { $hostname } πρόσβαση στις συσκευές MIDI σας (με υποστήριξη SysEx).
+webext-site-perms-header-with-gated-perms-serial = Αυτό το πρόσθετο δίνει στο { $hostname } πρόσβαση στις σειριακές σας συσκευές.
 
 ##
 
@@ -147,6 +149,12 @@ webext-site-perms-description-gated-perms-midi =
     Αυτές είναι συνήθως εξωτερικές συσκευές, όπως συνθεσάιζερ ήχου, αλλά ενδέχεται επίσης να είναι ενσωματωμένες στον υπολογιστή σας.
     
     Γενικά, δεν επιτρέπεται στους ιστοτόπους η πρόσβαση σε συσκευές MIDI. Η ακατάλληλη χρήση μπορεί να προκαλέσει βλάβες ή να θέσει σε κίνδυνο την ασφάλειά σας.
+webext-site-perms-description-gated-perms-webserial =
+    Αυτές είναι συσκευές, όπως μικροελεγκτές, εκτυπωτές 3D, καθώς και άλλες συσκευές που συνδέονται μέσω USB, σειριακών θυρών ή Bluetooth.
+    
+    Θα μπορείτε να επιλέξετε σε ποιες συσκευές θα έχει πρόσβαση ο ιστότοπος.
+    
+    Συνήθως, δεν επιτρέπεται στους ιστοτόπους η πρόσβαση σε σειριακές συσκευές. Η ακατάλληλη χρήση μπορεί να προκαλέσει βλάβες ή να θέσει σε κίνδυνο την ασφάλειά σας.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -161,6 +169,7 @@ webext-site-perms-header-unsigned-with-perms = Προσθήκη του { $extens
 
 webext-site-perms-midi = Πρόσβαση σε συσκευές MIDI
 webext-site-perms-midi-sysex = Πρόσβαση σε συσκευές MIDI με υποστήριξη SysEx
+webext-site-perms-serial = Πρόσβαση σε σειριακές συσκευές
 
 ## Colorway theme migration
 

@@ -11,18 +11,31 @@
 firefox-relay-mask-generation-failed = { -relay-brand-name } ไม่สามารถสร้างตัวปกปิดใหม่ได้ รหัสข้อผิดพลาด HTTP: { $status }
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name } ไม่พบตัวปกปิดที่สามารถใช้ซ้ำได้ รหัสข้อผิดพลาด HTTP: { $status }
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = คุณต้องเข้าสู่ระบบ{ -fxaccount-brand-name } จึงจะสามารถใช้ { -relay-brand-name } ได้
 firefox-relay-must-login-to-account = ลงชื่อเข้าบัญชีของคุณเพื่อใช้ตัวปกปิดอีเมล { -relay-brand-name } ของคุณ
 firefox-relay-get-unlimited-masks =
     .label = จัดการตัวปกปิด
     .accesskey = จ
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header = คุณได้ใช้ตัวปกปิดอีเมลฟรีทั้งหมด { $count } อันแล้ว
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = คุณสามารถใช้งานซ้ำหรือดูตัวปกปิดทั้งหมดเพื่อเลือกใช้งานอันใหม่
+firefox-relay-reuse-masks-select-label = เลือกตัวปกปิดล่าสุด
+firefox-relay-see-all-masks =
+    .label = ดูตัวปกปิดทั้งหมด
+    .accesskey = ด
+firefox-relay-dismiss =
+    .label = ยกเลิก
+    .accesskey = ล
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = ปกป้องที่อยู่อีเมลของคุณ:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = ใช้ตัวปกปิดอีเมลของ { -relay-brand-name }
+firefox-relay-use-mask-title-1 = ใช้ตัวปกปิดอีเมล
 firefox-relay-use-mask-title = ใช้ตัวปกปิดอีเมลของ { -relay-brand-name }
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = ป้องกันสแปมด้วยตัวปกปิดอีเมลฟรี
@@ -72,6 +85,8 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain = รับตัวปกปิดอีเมลฟรี
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = ป้องกันกล่องจดหมายของคุณจากสแปมโดยใช้<label data-l10n-name="firefox-relay-learn-more-url">ตัวปกปิดอีเมล</label>ฟรีเพื่อซ่อนที่อยู่จริงของคุณ อีเมลจาก<label data-l10n-name="firefox-fxa-and-relay-offer-domain">ไซต์นี้</label>จะยังคงเข้ามายังกล่องจดหมายของคุณ แต่อีเมลของคุณจะถูกซ่อนไว้
+firefox-relay-and-fxa-popup-notification-first-sentence = ป้องกันกล่องจดหมายของคุณจากสแปมโดยใช้<label data-l10n-name="firefox-relay-learn-more-url">ตัวปกปิดอีเมล { -relay-brand-name }</label> ฟรีเพื่อซ่อนที่อยู่จริงของคุณ อีเมลจาก<label data-l10n-name="firefox-fxa-and-relay-offer-domain">ไซต์นี้</label>จะยังคงเข้ามายังกล่องจดหมายของคุณ แต่อีเมลของคุณจะถูกซ่อนไว้
+firefox-relay-offer-why-to-use-relay-1 = ป้องกันกล่องจดหมายของคุณจากสแปมโดยใช้<label data-l10n-name="firefox-relay-learn-more-url">ตัวปกปิดอีเมล { -relay-brand-name }</label> ฟรีเพื่อซ่อนที่อยู่จริงของคุณ อีเมลจาก<label data-l10n-name="firefox-fxa-and-relay-offer-domain">ไซต์นี้</label>จะยังคงเข้ามายังกล่องจดหมายของคุณ แต่อีเมลของคุณจะถูกซ่อนไว้
 firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = ขั้นตอนแรก ให้ลงทะเบียนหรือลงชื่อเข้าใช้บัญชีของคุณเพื่อใช้ตัวปกปิดอีเมล
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = ลงทะเบียน

@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = Не обновлять
     .accesskey = е
+primary-password-prompt-message = Введите свой основной пароль.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = Нет имени пользователя
-password-manager-toggle-password =
-    .label = Показать пароль
-    .accesskey = о
 password-manager-confirm-password-change = Подтверждение смены пароля
 password-manager-select-username = Выберите логин для обновления:

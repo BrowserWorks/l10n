@@ -33,11 +33,33 @@ perftools-description-local-build =
     Ha egy olyan összeállítást profiloz, amelyet saját maga fordított le,
     ezen a gépen, akkor adja az összeállítás tárgykönyvtárát a lenti listához,
     hogy használható legyen a szimbóluminformációk megkereséséhez.
+perftools-pick-local-build-directory = Válasszon összeállítási könyvtárat
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Mintavételi intervallum:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -149,6 +171,8 @@ perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Előbeállítás a { -brand-shorter-name } grafikai hibák kivizsgálásához.
 perftools-presets-media-label = Média
 perftools-presets-media-description2 = Előbeállítás a { -brand-shorter-name } hang- és videóhibáinak kivizsgálásához.
+perftools-presets-ml-label = Gépi tanulás
+perftools-presets-ml-description2 = Előbeállítás a { -brand-shorter-name } gépi tanulási hibáinak kivizsgálásához.
 perftools-presets-networking-label = Hálózat
 perftools-presets-networking-description = Előbeállítás a { -brand-shorter-name } hálózati hibák kivizsgálásához.
 # "Power" is used in the sense of energy (electricity used by the computer).
@@ -156,7 +180,6 @@ perftools-presets-power-label = Energiagazdálkodás
 perftools-presets-power-description = Előbeállítás a { -brand-shorter-name } energiagazdálkodási hibáinak kivizsgálásához, alacsony többletfogyasztással.
 perftools-presets-debug-label = Hibakeresés
 perftools-presets-debug-description = Előbeállítás a { -brand-shorter-name }ban való hibakereséshez. Magas többletterhelés, ne teljesítménykritikus munkához használja, hanem a böngésző viselkedésének megértéséhez.
+perftools-presets-web-compat-label = Webkompatibilitás
+perftools-presets-web-compat-description = Ajánlott előbeállítás a weboldalak webes kompatibilitási problémáinak kereséséhez, nem pedig a teljesítmény követéséhez.
 perftools-presets-custom-label = Egyéni
-
-##
-

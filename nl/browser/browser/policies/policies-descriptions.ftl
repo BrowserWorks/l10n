@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Beleidsregels instellen zodat WebExtensions via chrome.storage.managed toegang kunnen krijgen.
+policy-AIControls = AI-bedieningselementen configureren.
 policy-AllowedDomainsForApps = Definieer domeinen die toegang hebben tot Google Workspace.
 policy-AllowFileSelectionDialogs = Bestandsselectiedialoogvensters toestaan.
 policy-AppAutoUpdate = Automatische applicatie-update in- of uitschakelen.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Automatisch invullen voor adressen inschakelen.
 policy-AutofillCreditCardEnabled = Automatisch invullen voor betalingsmethoden inschakelen.
 policy-AutoLaunchProtocolsFromOrigins = Definieer een lijst met externe protocollen die vanuit vermelde bronnen kunnen worden gebruikt zonder de gebruiker te vragen.
 policy-BackgroundAppUpdate2 = Achtergrondupdates in- of uitschakelen.
+policy-Backup = Reservekopie maken of herstellen van profielgegevens uitschakelen.
 policy-BlockAboutAddons = Toegang tot de Add-onbeheerder (about:addons) blokkeren.
 policy-BlockAboutConfig = Toegang tot de about:config-pagina blokkeren.
 policy-BlockAboutProfiles = Toegang tot de about:profiles-pagina blokkeren.
@@ -34,7 +36,9 @@ policy-Cookies = Toestaan of weigeren dat websites cookies instellen.
 policy-Containers = Beleid met betrekking tot containers instellen.
 policy-DisableAccounts = Accountgebaseerde services uitschakelen, waaronder synchronisatie.
 policy-DisabledCiphers = Coderingssuites uitschakelen.
+policy-DefaultBrowserSettingEnabled = Bepalen of de gebruiker { -brand-short-name } als de standaardbrowser kan instellen.
 policy-DefaultDownloadDirectory = Standaard downloadmap instellen.
+policy-DefaultSerialGuardSetting = Gebruik van de seriële API beheren.
 policy-DisableAppUpdate = Voorkomen dat de browser wordt bijgewerkt.
 policy-DisableBuiltinPDFViewer = PDF.js uitschakelen, de ingebouwde PDF-viewer in { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Voorkomen dat de standaard browseragent enige actie onderneemt. Alleen van toepassing op Windows; andere platformen beschikken niet over de agent.
@@ -55,6 +59,8 @@ policy-DisablePocket2 = De functie voor het opslaan van webpagina’s naar { -po
 policy-DisablePrivateBrowsing = Privénavigatie uitschakelen.
 policy-DisableProfileImport = De menuopdracht voor het importeren van gegevens vanuit een andere browser uitschakelen.
 policy-DisableProfileRefresh = De knop { -brand-short-name } opfrissen in de about:support-pagina uitschakelen.
+policy-DisableRemoteImprovements = Voorkomen dat { -brand-short-name } prestaties, stabiliteit en functies toepast tussen updates.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Externe instellingen uitschakelen.
 policy-DisableSafeMode = De functie voor het herstarten in Veilige modus uitschakelen. Noot: de Shift-toets voor het betreden van de Veilige modus kan in Windows alleen worden uitgeschakeld via Groepsbeleid.
 policy-DisableSecurityBypass = Voorkomen dat de gebruiker bepaalde beveiligingsinstellingen omzeilt.
 policy-DisableSetAsDesktopBackground = De menuopdracht Als bureaubladachtergrond instellen voor afbeeldingen uitschakelen.
@@ -79,6 +85,7 @@ policy-ExtensionSettings = Alle aspecten van installatie van extensies beheren.
 policy-ExtensionUpdate = Automatische extensie-updates inschakelen of uitschakelen.
 policy-FirefoxHome2 = { -firefox-home-brand-name } configureren.
 policy-FirefoxSuggest = { -firefox-suggest-brand-name } configureren.
+policy-GenerativeAI = Generatieve AI-functies configureren.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Directe navigatie op intranetsites forceren in plaats van zoeken bij het typen van enkele woorden in de adresbalk.
 policy-Handlers = Standaard toepassinghandlers configureren
 policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
@@ -87,6 +94,7 @@ policy-Homepage = De startpagina instellen en optioneel vergrendelen.
 policy-HttpAllowlist = Oorspronkelijke bronnen die niet naar HTTPS worden geüpgraded.
 policy-HttpsOnlyMode = Alleen-HTTPS-modus toestaan om in te schakelen.
 policy-InstallAddonsPermission = Toestaan dat bepaalde websites add-ons installeren.
+policy-IPProtectionAvailable = Voorkomen dat de ingebouwde VPN beschikbaar is voor gebruikers.
 policy-LegacyProfiles = Functie om een afzonderlijk profiel voor elke installatie af te dwingen uitschakelen
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +105,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Op specifieke websites
 ##
 
 policy-LocalFileLinks = Specifieke websites toestaan te koppelen naar lokale bestanden.
+policy-LocalNetworkAccess = Controles op lokale netwerktoegang in- of uitschakelen.
 policy-ManagedBookmarks = Configureert een lijst met bladwijzers die wordt beheerd door een beheerder en die niet door de gebruiker kan worden gewijzigd.
 policy-ManualAppUpdateOnly = Alleen handmatige updates toestaan en de gebruiker niet over updates informeren.
 policy-PrimaryPassword = Een hoofdwachtwoord vereisen of voorkomen.
@@ -117,11 +126,13 @@ policy-PostQuantumKeyAgreementEnabled = Post-kwantumsleutelovereenkomst voor TLS
 policy-PDFjs = PDF.js, de in { -brand-short-name } ingebouwde PDF-lezer, uitschakelen of instellen.
 policy-Permissions2 = Toestemmingen voor camera, microfoon, locatie, notificaties en automatisch afspelen configureren.
 policy-PictureInPicture = Picture-in-picture in- of uitschakelen.
+policy-PopupBlocking2 = Toestaan dat bepaalde websites pop-ups weergeven en door frames van derden worden doorgestuurd.
 policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeven.
 policy-Preferences = De waarde voor een subset van voorkeuren instellen en vergrendelen.
 policy-PrivateBrowsingModeAvailability = Beschikbaarheid van privénavigatiemodus instellen.
 policy-PromptForDownloadLocation = Vragen waar gedownloade bestanden moeten worden opgeslagen.
 policy-Proxy = Proxyinstellingen configureren.
+policy-RelaunchRequired = Vereisen dat { -brand-short-name } binnen een bepaalde periode opnieuw wordt gestart, en de gebruiker op de hoogte stellen van de aanstaande herstart.
 policy-RequestedLocales = De lijst van gevraagde locales voor de toepassing instellen, op volgorde van voorkeur.
 policy-SanitizeOnShutdown2 = Navigatiegegevens wissen bij afsluiten.
 policy-SearchBar = De standaardlocatie van de zoekbalk instellen. De gebruiker mag deze nog steeds aanpassen.
@@ -130,6 +141,7 @@ policy-SearchSuggestEnabled = Zoeksuggesties inschakelen of uitschakelen.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = PKCS #11-modules toevoegen of verwijderen.
 policy-ShowHomeButton = De startpaginaknop op de werkbalk tonen.
+policy-SitePolicies = Websitespecifiek beleid.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = De gebruiksvoorwaarden en privacyverklaring niet tonen bij opstarten. U verklaart dat u de Gebruiksvoorwaarden accepteert en de zeggenschap hebt om deze te accepteren namens alle personen aan wie u toegang tot deze browser geeft.
 policy-SSLVersionMax = De maximale SSL-versie instellen.
@@ -139,8 +151,11 @@ policy-SupportMenu = Een aangepast menu-item voor ondersteuning aan het menu Hel
 policy-TranslateEnabled = Vertaling van webpagina’s in- of uitschakelen.
 policy-UserMessaging = Bepaalde berichten niet aan de gebruiker tonen.
 policy-UseSystemPrintDialog = Afdrukken via het afdrukdialoogvenster van het systeem.
+policy-VisualSearchEnabled = Visueel zoeken inschakelen of uitschakelen.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.
 policy-Windows10SSO = Windows-single-sign-on toestaan voor Microsoft- werk- en schoolaccounts.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Single sign-on voor Microsoft Entra-accounts toestaan.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Ondersteuning voor de XSLTProcessor JavaScript-API en de XSLT-verwerkingsinstructie in- of uitschakelen.

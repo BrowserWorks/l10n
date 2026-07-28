@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } ผู้ใช้
     }
 
-## Firefox Accounts Message
+## Mozilla Account messages
 
 cfr-doorhanger-bookmark-fxa-header = ซิงค์ที่คั่นหน้าของคุณได้ทุกที่
 cfr-doorhanger-bookmark-fxa-body = เยี่ยมมาก! ตอนนี้อย่าออกไปโดยไม่มีที่คั่นหน้านี้บนอุปกรณ์มือถือของคุณ เริ่มต้นกับ { -fxaccount-brand-name }
@@ -66,6 +66,13 @@ cfr-doorhanger-bookmark-fxa-link-text = ซิงค์ที่คั่นห�
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = ปุ่มปิด
     .title = ปิด
+fxa-adoption-addresses-backup-title = มาสำรองที่อยู่ที่คุณบันทึกไว้กันเถอะ
+fxa-adoption-addresses-backup-subtitle = ปกป้องที่อยู่ที่บันทึกไว้ของคุณด้วยการซิงค์กับอุปกรณ์ต่าง ๆ พร้อมการเข้ารหัสลับ
+fxa-adoption-credit-cards-backup-title = มาสำรองวิธีการชำระเงินของคุณกันเถอะ
+fxa-adoption-credit-cards-backup-subtitle = ปกป้องวิธีการชำระเงินของคุณด้วยการซิงค์กับอุปกรณ์ต่าง ๆ พร้อมการเข้ารหัสลับ
+fxa-adoption-bookmarks-treatment-backup-title = มาสำรองที่คั่นหน้าของคุณกันเถอะ
+fxa-adoption-bookmarks-treatment-backup-subtitle = ปกป้องที่คั่นหน้าของคุณด้วยการซิงค์กับอุปกรณ์ต่าง ๆ พร้อมการเข้ารหัสลับ
+fxa-adoption-primary-button-label = ลงทะเบียน
 
 ## Protections panel
 
@@ -223,6 +230,20 @@ fox-doodle-pin-secondary = ยังไม่ทำตอนนี้
 set-default-pdf-handler-headline = <strong>ตอนนี้ไฟล์ PDF ของคุณจะเปิดใน { -brand-short-name }</strong> แก้ไขหรือเซ็นชื่อในแบบฟอร์มได้โดยตรงในเบราว์เซอร์ของคุณ ถ้าต้องการเปลี่ยน ให้ค้นหาคำว่า “PDF” ในการตั้งค่า
 set-default-pdf-handler-primary = เข้าใจแล้ว
 
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = เซ็นชื่อในเอกสารจากที่ไหนก็ได้
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = วาด พิมพ์ หรืออัปโหลดลายเซ็นของคุณ แล้ววางไว้ตรงตำแหน่งที่ต้องการ พร้อมบันทึกลายเซ็นของคุณไว้ใช้ครั้งถัดไป
+annotations-make-default-pdf-handler-title = ต้องการทำให้ { -brand-short-name } เป็นเครื่องมือแก้ไข PDF ค่าเริ่มต้นของคุณหรือไม่?
+annotations-make-default-pdf-handler-subtitle = คุณจะสามารถเข้าถึงเครื่องมือของเราได้ทุกครั้งที่เปิดไฟล์ PDF
+annotations-make-default-pdf-primary-cta-label = ตั้งเป็นค่าเริ่มต้น
+annotations-make-default-pdf-next-label = ถัดไป
+
 ## FxA sync CFR
 
 fxa-sync-cfr-header = คิดจะมีอุปกรณ์ใหม่ในภายหลังใช่ไหม?
@@ -283,6 +304,12 @@ tail-fox-spotlight-subtitle = บอกลาตัวติดตามโฆ�
 tail-fox-spotlight-primary-button = เปิดลิงก์ของฉันด้วย { -brand-short-name }
 tail-fox-spotlight-secondary-button = ยังไม่ทำตอนนี้
 
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = กลับเข้าสู่ความเป็นส่วนตัวในตัว
+welcome-back-spotlight-subtitle = ยินดีต้อนรับกลับสู่เบราว์เซอร์หลักหนึ่งเดียวที่สนับสนุนโดยกลุ่มไม่แสวงหากำไร พวกเราปกป้องข้อมูลของคุณอย่างระมัดระวังไม่ว่าคุณจะท่องไปที่ไหน
+welcome-back-embedded-import-title = นำเข้าข้อมูลของคุณและทำให้ { -brand-short-name } รู้สึกเหมือนบ้าน
+
 ## Root Certificate Succession Infobar
 
 root-certificate-succession-infobar-january-message = <strong>{ -brand-short-name } รุ่นเก่าๆ อาจจะเริ่มมีปัญหาในการทำงานตั้งแต่วันที่ 14 มกราคม 2025</strong>
@@ -308,8 +335,11 @@ fxa-menu-message-close-button =
     .title = ปิด
     .aria-label = ปิด
 fxa-menu-message-sign-up-button = ลงทะเบียน
+fxa-menu-message-sign-in-button = ลงชื่อเข้า
+fxa-menu-message-sync-button = เริ่มซิงค์
 fxa-menu-message-sync-devices-primary-text = ซิงค์อุปกรณ์ทั้งหมดของคุณ
 fxa-menu-message-sync-devices-secondary-text = ดึงข้อมูลต่างๆ เช่น ที่คั่นหน้า และรหัสผ่านของคุณมาได้ทุกที่ที่คุณใช้ { -brand-short-name }
+fxa-menu-message-sync-devices-secondary-text2 = ลงชื่อเข้า { -brand-short-name } เพื่อให้ที่คั่นหน้า รหัสผ่าน และอื่น ๆ ของคุณพร้อมใช้งานในทุกที่
 fxa-menu-message-sync-devices-collapsed-text = ซิงค์อุปกรณ์ทั้งหมดของคุณ
 fxa-menu-message-backup-data-primary-text = สำรองข้อมูลเบราว์เซอร์ของคุณ
 fxa-menu-message-backup-data-secondary-text = ปกป้องที่คั่นหน้า รหัสผ่าน และข้อมูลอื่นๆ โดยอัตโนมัติบนทุกอุปกรณ์ของคุณ
@@ -340,3 +370,99 @@ multi-cta-fox-doodle-privacy-focused-subtitle =
        *[other] นำเบราว์เซอร์โปรดของคุณซึ่งโฟกัสเรื่องความเป็นส่วนตัวมาไว้ใกล้ๆ ให้เข้าถึงได้ด้วยเพียงคลิกเดียว ตั้ง { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของคุณสำหรับเปิดลิงก์และปักหมุดไว้ที่แถบงานของคุณ
     }
 multi-cta-fox-doodle-msix-privacy-focused-subtitle = นำเบราว์เซอร์โปรดของคุณซึ่งโฟกัสเรื่องความเป็นส่วนตัวมาไว้ใกล้ๆ ให้เข้าถึงได้ด้วยเพียงคลิกเดียว ตั้ง { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของคุณสำหรับเปิดลิงก์และปักหมุดไว้ที่แถบงานและเมนูเริ่มของคุณ
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = กำลังจะอัปเกรดจาก Windows 10 ในเร็ว ๆ นี้ใช่ไหม?
+windows-10-eos-sync-spotlight-subtitle = สำรองรหัสผ่านและที่คั่นหน้าของคุณเลยเพื่อให้พร้อมสำหรับการใช้งานในทุกอุปกรณ์
+windows-10-eos-sync-spotlight-primary-label = สำรองข้อมูล { -brand-short-name } ของคุณ
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = กำลังจะอัปเกรดเป็น Windows 11 ใช่ไหม? อย่าให้ที่คั่นหน้าและรหัสผ่านหายไปนะ
+windows-10-eos-sync-toast-subtitle = สำรองข้อมูลของคุณเพื่อให้ { -brand-short-name } พร้อมใช้งานได้ทุกเมื่อ ไม่ว่าจะเป็นบนพีซีเครื่องนี้หรือเครื่องถัดไป
+windows-10-eos-sync-toast-primary-label = เริ่มต้นกัน
+windows-10-eos-sync-toast-secondary-label = เตือนฉันภายหลัง
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = { -brand-product-name } ไม่ได้ติดตั้งมาล่วงหน้าเหมือนเบราว์เซอร์จากค่ายใหญ่ นั่นแหละคือสิ่งที่แตกต่าง
+windows-10-eos-challenger-sync-callout-subtitle = เมื่อคุณสำรองข้อมูลที่คั่นหน้าและรหัสผ่านใน { -brand-product-name } ของคุณแล้ว การย้ายเบราว์เซอร์คู่ใจของคุณไปยังอุปกรณ์เครื่องใหม่ก็จะง่ายขึ้น
+windows-10-eos-challenger-pin-callout-subtitle = ปักหมุด { -brand-shorter-name } ไว้ที่แถบงานของคุณ เพื่อให้เบราว์เซอร์คู่ใจของคุณเข้าถึงได้ทุกเมื่อที่ต้องการ
+windows-10-eos-challenger-sync-primary-button = สำรองข้อมูล { -brand-shorter-name }
+windows-10-eos-challenger-pin-primary-button = ปักหมุด { -brand-shorter-name }
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } ช่วยปิดกั้นตัวขุดเหรียญดิจิทัล ตัวติดตามสื่อสังคมออนไลน์ และลายนิ้วมือดิจิทัล
+windows-10-eos-sync-callout-privacy-screen-1-subtitle = ตัวติดตามจะไม่สามารถระบุอุปกรณ์ของคุณหรือตามรอยคุณบนเว็บได้ เพราะเราจะไม่ยอมให้เกิดขึ้น
+windows-10-eos-sync-callout-privacy-screen-2-title = สำรองรหัสผ่านและบุ๊กมาร์กของคุณให้ปลอดภัยสำหรับอุปกรณ์เครื่องใหม่ของคุณ
+windows-10-eos-sync-callout-privacy-screen-2-subtitle = การสำรองข้อมูล { -brand-shorter-name } ช่วยให้คุณสามารถนำข้อมูลและการตั้งค่าความเป็นส่วนตัวติดตัวคุณไปได้อย่างง่ายดาย
+windows-10-eos-sync-callout-privacy-info-button = ดูว่ามีอะไรถูกปิดกั้นบ้าง
+windows-10-eos-callout-addons-title = ลองใช้ส่วนเสริม: อัปเกรดง่าย ได้ผลลัพธ์ยิ่งใหญ่เกินคาด
+windows-10-eos-callout-addons-subtitle = ส่วนขยายเหล่านี้ถูกเลือกมาเพื่อช่วยให้คุณทำงานได้อย่างมีประสิทธิภาพ ปลอดภัย และปราศจากสิ่งรบกวน
+windows-10-eos-callout-addons-primary-button = ดูตัวเลือกที่เราแนะนำ
+windows-10-eos-sync-callout-addons-title = อัปเกรดจาก Windows 10 โดยไม่ต้องกลัวว่าส่วนเสริมจะหายไป
+windows-10-eos-sync-callout-addons-subtitle = ซิงค์เลยตอนนี้เพื่อให้ส่วนเสริม { -brand-product-name } ของคุณพร้อมใช้งานเสมอ แม้จะเปลี่ยนอุปกรณ์ใหม่แล้ว
+windows-10-eos-sync-callout-next-button = ถัดไป
+windows-10-eos-sync-callout-get-started-button = เริ่มต้นกัน
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = พบกับแท็บแนวตั้งและกลุ่มแท็บได้แล้ว!
+# In English, "dropped" is a colloquial form for released.
+windows-10-eos-feature-toast-subtitle = ตามคำเรียกร้อง { -brand-product-name } ได้เพิ่มคุณสมบัติใหม่เพื่อช่วยให้คุณท่องเว็บได้อย่างลื่นไหลและมีสมาธิยิ่งขึ้น
+windows-10-eos-feature-toast-whats-new-button = ดูว่ามีอะไรใหม่
+windows-10-eos-feature-toast-dismiss-button = ปิด
+
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft ไม่ให้การสนับสนุน Windows 10 อีกต่อไป</strong> สำรองข้อมูลของคุณเพื่อเตรียม { -brand-product-name } ให้พร้อมสำหรับ Windows 11
+windows-10-eos-global-infobar-primary-button = เปิดการสำรองข้อมูล
+    .accesskey = ส
+windows-10-eos-global-infobar-learn-more-link = เรียนรู้เพิ่มเติม
+    .accessKey = ร
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-message = <strong>การป้องกันการติดตามแบบเข้มงวดอาจทำให้บางไซต์ใช้งานไม่ได้</strong> แก้ไขปัญหาที่พบบ่อยได้ง่าย ๆ โดยการเลิกปิดกั้นองค์ประกอบสำคัญที่อาจมีตัวติดตาม
+etp-strict-exceptions-infobar-learn-more = เรียนรู้เพิ่มเติม
+etp-strict-exceptions-infobar-button = ปรับใช้การแก้ไข
+    .accesskey = ป
+etp-strict-exceptions-infobar-not-now = ยังไม่ทำตอนนี้
+    .accesskey = ม
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } ไม่ได้เป็นเบราว์เซอร์เริ่มต้นของคุณ
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } ไม่ได้เป็นเบราว์เซอร์หลักของคุณ
+set-default-menu-message-row-layout-title = ทำให้ { -brand-short-name } เป็นเบราว์เซอร์หลักของคุณ
+set-default-menu-message-row-layout-title-variant = ทำให้ { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของคุณ
+set-default-menu-message-row-layout-subtitle = รับความเร็ว ความปลอดภัย และความเป็นส่วนตัวในทุกครั้งที่คุณเรียกดู
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] นำ { -brand-short-name } มาไว้ที่ปลายนิ้วมือของคุณโดยทำให้เป็นเบราว์เซอร์เริ่มต้นและเก็บไว้ใน Dock ของคุณ
+       *[other] นำ { -brand-short-name } มาไว้ที่ปลายนิ้วมือของคุณโดยทำให้เป็นเบราว์เซอร์เริ่มต้นและเก็บไว้ในแถบงานของคุณ
+    }
+set-default-menu-message-primary-button = ตั้งเป็นค่าเริ่มต้น
+set-default-menu-message-primary-button-variant = ตั้งเป็นเบราว์เซอร์หลัก
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = รับ 50 ตัวปกปิดอีเมลฟรี
+relay-50-masks-announcement-subtitle = ตอนนี้คุณได้รับ 50 ตัวปกปิดอีเมลฟรี (จาก 5 ตัว) ใช้มันสำหรับแต่ละบัญชีเพื่อรักษาอีเมลจริงของคุณให้เป็นส่วนตัว
+relay-50-masks-announcement-primary-button = ไปยัง { -relay-brand-name }
+    .accesskey = ป
+relay-50-masks-announcement-secondary-button = ยกเลิก
+    .accesskey = ย
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>{ -brand-product-name } กำลังจะได้รับการปรับโฉมใหม่</strong> คุณกำลังดูตัวอย่างรุ่นเริ่มแรกที่ยังไม่สมบูรณ์ก่อนที่จะเปิดตัวจริงในปลายปีนี้
+nova-early-access-share-feedback-link = แบ่งปันข้อคิดเห็น
+    .accesskey = บ
+nova-early-access-infobar-primary-button = เข้าใจแล้ว
+    .accesskey = ข

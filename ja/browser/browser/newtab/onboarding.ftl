@@ -53,9 +53,6 @@ mr1-onboarding-import-primary-button-label-attribution = { $previous } からイ
 mr1-onboarding-theme-header = 自分らしく
 mr1-onboarding-theme-subtitle = テーマで { -brand-short-name } をパーソナライズできます。
 mr1-onboarding-theme-secondary-button-label = 後で
-newtab-wallpaper-onboarding-title = カラフルな壁紙を試しましょう
-newtab-wallpaper-onboarding-subtitle = 壁紙を選んで新しいタブをカラフルに彩りましょう。
-newtab-wallpaper-onboarding-primary-button-label = 壁紙を設定
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = システムテーマ
 mr1-onboarding-theme-label-light = Light
@@ -63,6 +60,15 @@ mr1-onboarding-theme-label-dark = Dark
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = 完了
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = アニメーションを一時停止
+onboarding-animation-play-button =
+    .aria-label = アニメーションを再生
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -427,15 +433,25 @@ onboarding-checklist-pin = { -brand-short-name } をタスクバーにピン留�
 onboarding-checklist-import = 以前のブラウザーからインポートする
 onboarding-checklist-extension = 拡張機能を追加する
 onboarding-checklist-sign-up = アカウント登録またはログインする
+onboarding-checklist-minimize =
+    .label = 最小化
+onboarding-checklist-remove =
+    .label = チェックリストを削除
 
 ## Tab Groups feature onboarding strings
 
 tab-groups-onboarding-feature-callout-title = タブをグループ化して整理しましょう
 tab-groups-onboarding-feature-callout-subtitle = タブを別のタブの上にドラッグすると最初のグループが作成できます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = いつでも [タブを一覧表示] メニューからタブグループを見つけられます。
 tab-groups-onboarding-create-group-title-2 = タブグループはここで見つけられます。
 tab-groups-onboarding-create-group-no-alltabs-button-title = アドレスバーで検索するとグループを見つけられます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = タブグループを閉じても、[タブを一覧表示] メニューからいつでも再び開けます。
 tab-groups-onboarding-saved-groups-title-2 = タブグループを閉じても、ここで開き直すことができます。
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = アドレスバーで検索すると閉じてしまったタブグループを見つけられます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = タブグループは [タブを一覧表示] メニューからいつでも再び開けます。
 tab-groups-onboarding-session-restore-title = タブグループはいつでもここで開き直せます。
 tab-groups-onboarding-dismiss = OK
 
@@ -458,3 +474,146 @@ dismiss-button-label = 閉じる
 sync-to-mobile-button-label = モバイル端末と同期
 desktop-to-mobile-qr-code-alt =
     .aria-label = モバイル版 { -brand-product-name } のダウンロード用 QR コード
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Windows 11 にアップグレードしますか？
+    { -brand-product-name } のデータをバックアップしましょう。
+create-backup-screen-1-subtitle = 1-2 分でパスワードやブックマークなどを自動的に保護します。
+create-backup-screen-1-flair = 推奨
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">詳細情報</a>
+create-backup-screen-1-sync-label = { -brand-product-name } と同期
+create-backup-screen-1-sync-body = ログインしているすべての端末のデータをバックアップします
+create-backup-screen-1-backup-label = PC にバックアップ
+create-backup-screen-1-backup-body = 自分の端末または OneDrive に保存します
+create-backup-select-tile-button-label = 選択
+create-backup-back-button-label = 戻る
+create-backup-show-fewer =
+    .label = このような表示を少なくする
+create-backup-screen-2-title = バックアップする { -brand-product-name } のデータを選択してください
+create-backup-screen-2-subtitle = 時間はかかりません。データは 1 日 1 回バックアップされます
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = 簡単セットアップ
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = ブックマーク、履歴、設定など
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = パスワードと支払い情報は含みません
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = 暗号化なし
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = すべてのデータ
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = パスワードと支払い情報を含みます
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = パスワードで暗号化
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = どこにバックアップを保存しますか？
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = バックアップファイルを作成します
+create-backup-screen-3-subtitle = データを暗号化する必要があります。思い出しやすい場所に保管しておいてください。
+fx-backup-opt-in-header = ファイルの保存場所を選択
+fx-backup-opt-in-filepath-label = OneDrive など新しい端末に転送する予定の場所を選択してください。
+fx-backup-opt-in-create-password-label = パスワードを入力
+fx-backup-opt-in-confirm-btn-label = 続ける
+fx-backup-opt-in-cancel-btn-label = 戻る
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = バックアップの設定を完了しました
+fx-backup-confirmation-screen-close-button = 閉じる
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = すべての閲覧データを含みます
+fx-backup-confirmation-screen-all-data-item-text-2 = 端末に保存します
+fx-backup-confirmation-screen-all-data-item-text-3 = 暗号化されパスワードで保護されます
+fx-backup-confirmation-screen-easy-setup-item-text-1 = ブックマーク、履歴、設定などのデータを含みます
+fx-backup-confirmation-screen-easy-setup-item-text-2 = 端末に保存します
+fx-backup-confirmation-screen-easy-setup-item-text-3 = パスワードと支払い方法は含みません
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = 機密性の高い情報を含むには <a data-l10n-name="settings">設定</a> を開いてください。
+fx-backup-confirmation-screen-item-subtext-1 = バックアップはあと数分で開始され、1 日 1 回実行されます。進捗状況は <a data-l10n-name="settings">設定</a> で確認できます。
+fx-backup-confirmation-screen-item-subtext-2 = 再インストールが必要になった場合には、{ -brand-short-name } がバックアップを探します
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = バックアップから復元
+restore-from-backup-title = あなた好みの { -brand-short-name } に戻しましょう
+restore-from-backup-subtitle = ブラウジングに必要なすべてのブックマーク、履歴および他のデータをバックアップデータから復元します。
+restore-from-backup-secondary-button = 復元しない
+multiple-backups-info-tile = <strong>複数のバックアップファイルが見つかりました。</strong> 最近のファイルが選択されています。他のプロファイルは <a data-l10n-name="settings-label">設定</a> で復元してください。
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = お帰りなさい！ { -brand-short-name } が復元されました。
+restored-from-backup-success-with-checklist-subtitle = クリック一つでお気に入りのプライバシー優先ブラウザーを使い続けましょう。
+restored-from-backup-success-no-checklist-subtitle = <a data-l10n-name="settings">設定</a> でこの端末のバックアップをオンにしてください。
+restored-from-backup-success-with-checklist-primary-button = 保存して続ける
+restored-from-backup-success-with-checklist-secondary-button = この手順をスキップ
+restored-from-backup-success-no-checklist-primary-button = 続ける
+restored-from-backup-error-title = 申し訳ありません。バックアップファイルに問題があるようです。
+restored-from-backup-error-subtitle = 別の { -brand-short-name } バックアップファイルがあれば、それで復元を試してください。<a data-l10n-name="restore-problems">まだ問題がある場合はこちら</a>。
+restored-from-backup-error-primary-button = 閉じる
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = { -brand-short-name } をカスタマイズしましょう
+onboarding-personalization-subtitle = いくつかの質問にご回答ください。 { -brand-short-name } を使いこなす、おすすめの機能と拡張機能を紹介します。
+onboarding-personalization-use-case-title = { -brand-short-name } を何のために使いますか？
+onboarding-personalization-use-case-personal-option = 個人
+onboarding-personalization-use-case-school-option = 学校
+onboarding-personalization-use-case-work-option = 仕事
+onboarding-personalization-motivation-title = { -brand-short-name } のどの機能を重視しますか？
+onboarding-personalization-motivation-privacy-option = プライバシーとセキュリティ
+onboarding-personalization-motivation-productivity-option = 生産性
+onboarding-personalization-motivation-other-option = その他
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = 私たちはユーザーデータを保護し、クリックを盗み取る企業を自動的にブロックします。
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = あなたは Waterfox に守られています
+onboarding-refresh-import-subtitle = パスワードブックマーク、履歴などのデータを持ち歩けます。
+onboarding-refresh-import-title = { -brand-short-name } をアットホームな環境にします
+onboarding-refresh-onboarding-addons-subtitle = 拡張機能は { -brand-short-name } をカスタマイズできる小さなアプリです。ユーザーのプライバシーをさらに保護したり、生産性を向上したり、{ -brand-short-name } の外観を変えたり、さらに多くのことができます。
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = ブラウジングを加速します
+onboarding-refresh-sync-subtitle = { -brand-short-name } にログインすれば、どこでもブックマークやパスワードを持ち歩けます。さらにデータは暗号化され、あなただけしか見られません。
+onboarding-refresh-sync-title = どこへでも、すべてのデータを同期して。
+onboarding-refresh-gratitude-subtitle = { -brand-short-name } をご使用いただきありがとうございます。非営利で支持された唯一のメジャーブラウザーです。あなたのご支援により、私たちはインターネットを安全ですべての人々がアクセスできるようにすることができます。
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } へのご支援
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = いつでもスマートウィンドウとクラシックウィンドウを切り替えられます。
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = { -brand-product-name } 利用規約
+smartwindow-existing-user-fx-tou-body = { -smart-window-brand-name }を使用するには、<a data-l10n-name="terms_of_use">利用規約</a> および更新された <a data-l10n-name="privacy_notice">プライバシー通知</a> に承諾していただく必要があります。
+smartwindow-existing-user-fx-tou-accept = 承諾
+smartwindow-existing-user-fx-tou-go-back = 戻る
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = { -smart-window-brand-name }を既定の設定にしましょう
+smartwindow-onboarding-subtitle = いつもの画面で要約、比較、質問を尋ねることができます。
+smartwindow-onboarding-primary-button = 続ける
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = 星のアイテムを付けた { -brand-product-name } のマスコット (Kit)
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = アシスタントを閉じておきますか？
+smartwindow-sidebar-auto-open-callout-body = 必要であればいつでも開けます。
+smartwindow-sidebar-auto-open-callout-accept = はい、閉じます
+smartwindow-sidebar-auto-open-callout-dismiss = いいえ
+smartwindow-sidebar-auto-open-callout-accepted-title = アシスタントは閉じたままです
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = どのページでも尋ねることで開けます。いつでも <a data-l10n-name="settings">設定</a> から変更できます。
+smartwindow-sidebar-auto-open-callout-rejected-title = 了解
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = 気が変わったら、いつでも <a data-l10n-name="settings">設定</a> から既定に設定してください。

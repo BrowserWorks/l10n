@@ -55,7 +55,7 @@ accessibility-text-label-issue-iframe = Použijte atribut <code>title</code> k p
 accessibility-text-label-issue-image = Obsah s obrázky musí být označen. <a>Zjistit více</a>
 accessibility-text-label-issue-interactive = Interaktivní prvky musí být označeny. <a>Zjistit více</a>
 accessibility-text-label-issue-optgroup-label2 = Prvek <span>optgroup</span> označte atributem <code>label</code>. <a>Zjistit více</a>
-accessibility-text-label-issue-toolbar = Panely nástrojů musí být označeny, pokud existuje více než jeden panel nástrojů. <a>Zjistit více</a>
+accessibility-text-label-issue-toolbar = Nástrojové lišty musí být označeny, jestliže existuje více než jedna nástrojová lišta. <a>Zjistit více</a>
 
 ## Text entries for a paragraph used in the accessibility panel sidebar's checks section
 ## that describe that currently selected accessible object has a keyboard accessibility
@@ -66,4 +66,4 @@ accessibility-keyboard-issue-tabindex = Vyhněte se používaní atributu <code>
 accessibility-keyboard-issue-action = Interaktivní prvky musí být možno aktivovat klávesnicí. <a>Zjistit více</a>
 accessibility-keyboard-issue-focusable = Interaktivní prvky musí být přístupné klávesnicí. <a>Zjistit více</a>
 accessibility-keyboard-issue-focus-visible = Pro prvek dosažitelný klávesnicí není pravděpodobně nastaven styl pro případ jeho aktivace. <a>Zjistit více</a>
-accessibility-keyboard-issue-mouse-only = Prvky, na které lze kliknout, musí být dosažitelné pomocí klávesnice, a měly by mít interaktivní sémantiku. <a>Zjistit více</a>
+accessibility-keyboard-issue-mouse-only = Prvky, na které lze klepnout, musí být dosažitelné pomocí klávesnice, a měly by mít interaktivní sémantiku. <a>Zjistit více</a>

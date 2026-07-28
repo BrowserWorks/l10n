@@ -33,11 +33,33 @@ perftools-description-local-build =
     Als u een build profileert die u zelf, op deze machine, gecompileerd heeft,
     voeg dan de objdir van uw build aan de onderstaande lijst toe, zodat
     deze kan worden gebruikt om symboolinformatie op te zoeken.
+perftools-pick-local-build-directory = Buildmap kiezen
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Steekproefinterval:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -153,12 +175,13 @@ perftools-presets-ml-label = Machinaal leren
 perftools-presets-ml-description2 = Voorinstelling voor het onderzoeken van machinevertalingsbugs in { -brand-shorter-name }.
 perftools-presets-networking-label = Netwerk
 perftools-presets-networking-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Netwerken met logboeken
+perftools-presets-networking-with-logs-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }, inclusief netwerklogboeken. Deze logboeken kunnen gevoelige informatie bevatten, zoals de URL’s die u bezoekt.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Vermogen
 perftools-presets-power-description = Voorinstelling voor het onderzoeken van stroomverbruikbugs in { -brand-shorter-name }, met lage overhead.
 perftools-presets-debug-label = Debuggen
 perftools-presets-debug-description = Voorinstelling voor debugging in { -brand-shorter-name }. Hoge overhead, niet gebruiken voor prestatiewerk, maar om te focussen op het begrijpen van browsergedrag.
+perftools-presets-web-compat-label = Webcompatibiliteit
+perftools-presets-web-compat-description = Aanbevolen voorinstelling voor het opsporen van webcompatibiliteitsproblemen in websites, in plaats van prestaties te volgen.
 perftools-presets-custom-label = Aangepast
-
-##
-

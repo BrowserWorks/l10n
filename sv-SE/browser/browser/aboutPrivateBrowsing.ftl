@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Låt { -brand-short-name }
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } tar hand om kakbanners åt dig
 about-private-browsing-cookie-banners-promo-body = Vi vägrar nu automatiskt många kakbanners så att du spåras mindre och kan gå tillbaka till störningsfri surfning.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Lämna inga spår på den här enheten
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } raderar dina kakor, historik och webbplatsdata när du stänger alla dina privata fönster.
 about-private-browsing-felt-privacy-v1-info-link = Vem kan kanske se min aktivitet?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Om du stänger alla dina privata fönster raderas dina kakor, din historik och dina webbplatsdata.
+about-private-browsing-nova-info-link = Vem kan fortfarande se min aktivitet?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Du är privat
+about-private-browsing-nova-info-subheader = Vi tar bort alla sökningar och inloggningar när du stänger det här fönstret. { -brand-short-name }:s inbyggda skydd finns också här, som att blockera spårare.

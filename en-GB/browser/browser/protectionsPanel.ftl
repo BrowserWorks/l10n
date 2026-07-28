@@ -84,6 +84,11 @@ smartblock-placeholder-title = { $trackername } trackers and content blocked
 smartblock-placeholder-desc = Your { -brand-short-name } settings blocked this content from tracking you across sites or being used for ads.
 #  $websitehost (String): host of website with blocked content.
 smartblock-placeholder-button-text = Allow on { $websitehost }
+# Caption shown above the original text and links extracted from a blocked
+# third-party embed (e.g. a Twitter/X or Instagram post) that SmartBlock has
+# replaced with a placeholder. The caption sits above a bordered content box
+# containing the extracted text.
+smartblock-placeholder-content-header = Content from blocked embed
 
 ##
 
@@ -151,7 +156,7 @@ protections-panel-cookie-banner-blocker-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-blocker-view-turn-off-for-site = Turn off Cookie Banner Blocker for { $host }?
 protections-panel-cookie-banner-blocker-view-turn-on-for-site = Turn on Cookie Banner Blocker for this site?
-protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } will clear this site’s cookies and refresh the page. Clearing all cookies may sign you out or empty shopping carts.
+protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } will clear this site’s cookies and refresh the page. Clearing all cookies may sign you out or empty shopping baskets.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } tries to automatically reject all cookie requests on supported sites.
 protections-panel-cookie-banner-view-cancel = Cancel
 protections-panel-cookie-banner-view-turn-off = Turn Off

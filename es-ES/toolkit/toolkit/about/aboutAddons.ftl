@@ -120,6 +120,8 @@ private-browsing-description2 =
     la extensión no funcionará durante la navegación privada, y no tendrá acceso a tus actividades en línea
     ahí. Hemos realizado este cambio para mantener privada tu navegación privada.
     <label data-l10n-name = "private-browsing-learn-more">Descubre cómo administrar la configuración de las extensiones.</label>
+aboutaddons-sidebar =
+    .heading = Complementos
 addon-category-discover = Recomendaciones
 addon-category-discover-title =
     .title = Recomendaciones
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Activar
 extensions-warning-imported-addons2 =
     .message = Finalice la instalación de las extensiones que se importaron a { -brand-short-name }.
 extensions-warning-imported-addons-button = Instalar extensiones
+extensions-warning-safe-mode3 =
+    .message = Todos los complementos fueron desactivados por el modo de solución de problemas.
 
 ## Strings connected to add-on updates
 
@@ -287,6 +291,10 @@ colorway-removal-notice-message =
         el sitio de complementos.
 colorway-removal-notice-learn-more = Saber más
 colorway-removal-notice-button = Obtenga temas de combinaciones de colores actualizados
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = La configuración de contraste de Windows anula los temas de { -brand-short-name }. Desactive estos ajustes para usar temas en { -brand-short-name }.
 privacy-policy = Política de privacidad
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -471,11 +479,18 @@ available-updates-heading = Actualizaciones disponibles
 recent-updates-heading = Actualizaciones recientes
 release-notes-loading = Cargando…
 release-notes-error = Lo sentimos, pero ha sucedido un error al cargar las notas de versión.
+addon-permissions-heading = Permisos
 addon-permissions-empty2 = Esta extensión no requiere ningún permiso.
+addon-permissions-required-label = Requerido:
+addon-permissions-optional-label = Opcional:
 addon-permissions-empty = Esta extensión no requiere ningún permiso.
 addon-permissions-required = Permisos requeridos para la funcionalidad principal:
 addon-permissions-optional = Permisos opcionales para funcionalidades adicionales:
 addon-permissions-learnmore = Saber más sobre los permisos
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Algunos permisos son gestionados por su organización.
 recommended-extensions-heading = Extensiones recomendadas
 recommended-themes-heading = Temas recomendados
 # Variables:
@@ -530,9 +545,15 @@ details-notification-hard-blocked-other =
     .message = Este complemento está bloqueado por violar las políticas de BrowserWorks y ha sido desactivado.
 details-notification-unsigned-link = Más información
 details-notification-blocked = { $name } ha sido desactivado debido a problemas de seguridad o estabilidad.
-details-notification-blocked2 =
-    .message = { $name } ha sido desactivado debido a problemas de seguridad o estabilidad.
 details-notification-blocked-link2 = Ver detalles
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Esta extensión está restringida y ha sido desactivada. Se puede activar, pero podría ser arriesgado.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Esta extensión está restringida. Usarla puede ser arriesgado.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Este complemento está restringido y ha sido desactivado. Se puede activar, pero podría ser arriesgado.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Este complemento está restringido. Usarla puede ser arriesgado.
 details-notification-soft-blocked-extension-disabled =
     .message = Esta extensión está restringida por violar las políticas de BrowserWorks y ha sido desactivada. Se puede activar, pero podría ser arriesgado.
 details-notification-soft-blocked-extension-enabled =
@@ -544,8 +565,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Ver detalles
 details-notification-blocked-link = Más información
 details-notification-softblocked = Se sabe que { $name } es causa de problemas de seguridad o estabilidad.
-details-notification-softblocked2 =
-    .message = Se sabe que { $name } es causa de problemas de seguridad o estabilidad.
 details-notification-softblocked-link = Más información
 details-notification-gmp-pending = { $name } se instalará en breves momentos.
 details-notification-gmp-pending2 =
@@ -571,6 +590,10 @@ permissions-data-addon-button = Permisos y datos
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Utilizado por la extensión { $extensionName }
+addon-permissions-data-collection-heading = Recopilación de datos
+addon-permissions-data-collection-empty = El desarrollador dice que esta extensión no requiere recopilación de datos.
+addon-data-collection-provided = Información proporcionada por el desarrollador de la extensión.
+addon-data-collection-learnmore = Saber más sobre la recopilación de datos
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -579,6 +602,7 @@ mlmodel-link-preview = { -brand-short-name } usa esto para generar puntos clave 
 mlmodel-pdfjs = { -brand-short-name } usa esto para crear texto alternativo para las imágenes que añade a los PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } usa esto para sugerir nombres para sus grupos de pestañas
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } usa esto para sugerir pestañas para sus grupos de pestañas
+mlmodel-formfill-engine = { -brand-short-name } utiliza esto para ayudar a completar formularios de direcciones
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = IA en el dispositivo
 addon-category-mlmodel-title =

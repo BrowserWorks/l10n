@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = Rimuovi { $provider }
 genai-menu-remove-sidebar =
     .label = Rimuovi dalla barra laterale
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Chiedi a { $provider }
 genai-menu-new-badge = Novità
 genai-menu-summarize-page = Riassumi pagina
+genai-input-ask-smart-window =
+    .placeholder = Chiedi…
 genai-input-ask-generic =
     .placeholder = Chiedi al chatbot IA…
 # $provider (string) - name of the provider
@@ -83,16 +88,29 @@ genai-shortcuts-selected-warning =
     .message = Hai selezionato circa { $selectionLength } caratteri. Il numero di caratteri che possiamo inviare a { $provider } è di circa { $maxLength }.
 genai-shortcuts-hide =
     .label = Nascondi scorciatoia per i chatbot
-genai-menu-no-provider =
-    .label = Chiedi a un chatbot IA
 genai-menu-choose-chatbot =
     .label = Scegli un chatbot IA
+genai-menu-ask-generic-2 =
+    .label = Chiedi al chatbot IA
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Chiedi a { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = Chiedi a un chatbot IA
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = Chiedi…
+    .accesskey = C
 
 ## Chatbot header
 
 genai-chatbot-title = Chatbot IA
 genai-header-provider-menu =
     .title = Scegli un chatbot
+genai-header-settings-button =
+    .title = Impostazioni chat IA
 genai-header-options-button =
     .title = Apri menu
 genai-header-close-button =
@@ -110,6 +128,11 @@ genai-options-hide-shortcut =
     .label = Nascondi scorciatoia quando si seleziona del testo
 genai-options-about-chatbot =
     .label = Informazioni sui chatbot IA in { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Questo è un riassunto parziale in quanto la pagina è troppo lunga.
 
 ## Chatbot footer
 
@@ -203,4 +226,48 @@ link-preview-reading-time =
         [one] Tempo di lettura { $range } minuto
        *[other] Tempo di lettura { $range } minuti
     }
-
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } non può generare l’anteprima di questo link
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Visita il link
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } non può generare punti chiave per questa pagina web.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Si è verificato un problema
+# Text for the retry link when generation fails
+link-preview-generation-retry = Riprova
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Impostazioni anteprima link
+link-preview-settings-enable =
+    .label = Attiva anteprima link
+    .description = Visualizza il titolo della pagina, la descrizione e altre informazioni quando utilizzi la scorciatoia o fai clic con il tasto destro del mouse su un link.
+link-preview-settings-key-points =
+    .label = Consenti all’IA di leggere l’inizio della pagina e generare punti chiave
+link-preview-settings-long-press =
+    .label = Scorciatoia: fai clic e tieni premuto il link per 1 secondo (pressione lunga)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Vuoi scoprire di più grazie all’IA?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } sfrutta l’intelligenza artificiale per analizzare l’inizio della pagina e creare alcuni punti chiave. Per tutelare la tua privacy, tutto avviene direttamente sul tuo dispositivo.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Novità: fai clic e tieni premuto su qualsiasi link per visualizzarne l’anteprima
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Visualizza una breve descrizione, la durata della lettura e altre informazioni per valutare se aprire il link. Funzione accessibile anche tramite clic destro del mouse.
+# Header for the key points section
+link-preview-key-points-header = Punti chiave
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = I punti chiave sono generati dall’intelligenza artificiale e potrebbero contenere errori.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Configurazione iniziale • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = La prossima volta i punti chiave verranno visualizzati più rapidamente.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Visualizza un’anteprima
+# Onboarding card Close button
+link-preview-onboarding-close = Chiudi
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Configurazione iniziale
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Questa operazione potrebbe richiedere alcuni minuti. I punti chiave verranno visualizzati più velocemente la prossima volta.

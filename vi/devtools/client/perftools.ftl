@@ -33,11 +33,33 @@ perftools-description-local-build =
     Nếu bạn đang lược tả một bản dựng do chính bạn biên dịch, trên
     máy tính này, vui lòng thêm objdir của bản dựng của bạn vào
     danh sách bên dưới để có thể sử dụng nó để tra cứu thông tin symbol.
+perftools-pick-local-build-directory = Chọn thư mục build
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Khoảng thời gian lấy mẫu:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -98,9 +120,6 @@ perftools-thread-jvm-nimbus =
 perftools-thread-jvm-glean =
     .title = Luồng chính cho Glean telemetry SDK
 
-##
-
-
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
@@ -128,14 +147,17 @@ perftools-presets-graphics-label = Đồ họa
 perftools-presets-graphics-description = Giá trị đặt trước để điều tra lỗi đồ họa trong { -brand-shorter-name }.
 perftools-presets-media-label = Đa phương tiện
 perftools-presets-media-description2 = Giá trị đặt trước để điều tra lỗi âm thanh và video trong { -brand-shorter-name }.
+perftools-presets-ml-label = Học máy (Machine Learning)
+perftools-presets-ml-description2 = Cài đặt trước để điều tra lỗi học máy (machine learning) trong { -brand-shorter-name }.
 perftools-presets-networking-label = Kết nối mạng
 perftools-presets-networking-description = Giá trị đặt trước để điều tra lỗi mạng trong { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Kết nối mạng với nhật ký
+perftools-presets-networking-with-logs-description = Thiết lập sẵn để điều tra các lỗi mạng trong { -brand-shorter-name }, bao gồm cả nhật ký mạng. Các nhật ký này có thể chứa thông tin nhạy cảm như URL bạn truy cập.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Điện năng
 perftools-presets-power-description = Giá trị đặt trước để điều tra lỗi sử dụng điện năng trong { -brand-shorter-name }, với chi phí thấp.
 perftools-presets-debug-label = Gỡ lỗi
 perftools-presets-debug-description = Giá trị đặt trước để gỡ lỗi trong { -brand-shorter-name }. Tải thêm cao, không sử dụng cho công việc về hiệu suất mà sử dụng để tập trung vào việc tìm hiểu hành vi của trình duyệt.
+perftools-presets-web-compat-label = Web Compat
+perftools-presets-web-compat-description = Giá trị đặt trước được đề xuất để gỡ lỗi các sự cố tương thích web, thay vì theo dõi hiệu suất.
 perftools-presets-custom-label = Tùy chọn
-
-##
-

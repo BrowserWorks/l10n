@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -110,11 +107,25 @@ browser-main-window-titles-mac =
     .data-content-title-private = { $content-title } — プライベートブラウジング
     .data-content-title-default-with-profile = { $content-title } — { $profile-name }
     .data-content-title-private-with-profile = { $content-title } — { $profile-name } — プライベートブラウジング
-# This gets set as the initial title, and is overridden as soon as we start
-# updating the titlebar based on loaded tabs or private browsing state.
-# This should match the `data-title-default` attribute in both
-# `browser-main-window` and `browser-main-window-mac`.
+# This is the initial default title for the browser window.
+# It gets updated based on loaded tabs or private browsing state.
 browser-main-window-default-title = { -brand-full-name }
+# Note: only on macOS do we use a `-` separator between the brand name and the
+# "Private Browsing" suffix.
+browser-main-private-window-title =
+    { PLATFORM() ->
+        [macos] { -brand-full-name } — プライベートブラウジング
+       *[other] { -brand-full-name } プライベートブラウジング
+    }
+# This is only used on macOS; on other OSes we use the full private window
+# title (so including the brand name) as a suffix
+browser-main-private-suffix-for-content = プライベートブラウジング
+popups-infobar-dont-show-message2 =
+    .label = ポップアップまたはサードパーティによるリダイレクトがブロックされた場合は、このメッセージを表示しない
+    .accesskey = D
+edit-popup-settings2 =
+    .label = ポップアップおよびサードパーティによるリダイレクトの設定...
+    .accesskey = M
 
 ##
 
@@ -129,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = サイトからの通知の設定を変更します
 urlbar-midi-notification-anchor =
     .tooltiptext = MIDI パネルを開きます
+urlbar-serial-notification-anchor =
+    .tooltiptext = シリアルパネルを開きます
 urlbar-eme-notification-anchor =
     .tooltiptext = DRM ソフトウェアを管理します
 urlbar-web-authn-anchor =
@@ -141,6 +154,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = メッセージパネルを開きます
 urlbar-geolocation-notification-anchor =
     .tooltiptext = 位置情報の要求パネルを開きます
+urlbar-localhost-notification-anchor =
+    .tooltiptext = このサイトのローカル端末へのアクセスを管理します
+urlbar-local-network-notification-anchor =
+    .tooltiptext = このサイトとローカルネットワークのアクセス共有を管理します
 urlbar-xr-notification-anchor =
     .tooltiptext = VR の許可設定パネルを開きます
 urlbar-storage-access-anchor =
@@ -178,6 +195,24 @@ urlbar-result-menu-button =
     .title = メニューを開く
 urlbar-result-menu-button-feedback = フィードバック
     .title = メニューを開く
+urlbar-result-menu-learn-more2 = 詳細情報
+    .accesskey = L
+urlbar-result-menu-remove-from-history2 = 履歴から削除
+    .accesskey = R
+urlbar-result-menu-tip-get-help2 = ヘルプを表示
+    .accesskey = h
+urlbar-result-menu-dismiss-suggestion2 = この検索候補を閉じる
+    .accesskey = D
+urlbar-result-menu-manage-firefox-suggest2 = { -firefox-suggest-brand-name } を管理
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = 位置情報の誤りを報告
+urlbar-result-menu-show-less-frequently2 = 表示頻度を減らす
+urlbar-result-menu-dont-show-weather-suggestions2 = 天気予報の提案を表示しない
 urlbar-result-menu-learn-more =
     .label = 詳細情報
     .accesskey = L
@@ -207,6 +242,9 @@ urlbar-result-menu-show-less-frequently =
     .label = 表示頻度を減らす
 urlbar-result-menu-dont-show-weather-suggestions =
     .label = 天気予報の提案を表示しない
+# Used for Split Button.
+urlbar-splitbutton-dropmarker =
+    .title = メニューを開く
 # A message shown in the urlbar when the user submits feedback on a suggestion
 # (e.g., it shows an inaccurate location, it's shown too often, etc.).
 urlbar-feedback-acknowledgment = フィードバックありがとうございます
@@ -238,6 +276,10 @@ urlbar-search-mode-actions = アクション
 
 urlbar-geolocation-blocked =
     .tooltiptext = このウェブサイトでの位置情報の共有をブロックしました。
+urlbar-localhost-blocked =
+    .tooltiptext = このウェブサイトのローカル端末への接続をブロックしました。
+urlbar-local-network-blocked =
+    .tooltiptext = このウェブサイトのローカルネットワークへの接続をブロックしました。
 urlbar-xr-blocked =
     .tooltiptext = このウェブサイトの VR デバイスへのアクセスをブロックしました。
 urlbar-web-notifications-blocked =
@@ -250,6 +292,8 @@ urlbar-screen-blocked =
     .tooltiptext = このウェブサイトでの画面の共有をブロックしました。
 urlbar-persistent-storage-blocked =
     .tooltiptext = このウェブサイトの永続ストレージの使用をブロックしました。
+urlbar-popup-blocked2 =
+    .tooltiptext = このウェブサイトのポップアップとサードパーティによるリダイレクトをブロックしました。
 urlbar-popup-blocked =
     .tooltiptext = このウェブサイトのポップアップをブロックしました。
 urlbar-autoplay-media-blocked =
@@ -258,6 +302,8 @@ urlbar-canvas-blocked =
     .tooltiptext = このウェブサイトの Canvas データの抽出をブロックしました。
 urlbar-midi-blocked =
     .tooltiptext = このウェブサイトの MIDI へのアクセスをブロックしました。
+urlbar-serial-blocked =
+    .tooltiptext = このウェブサイトのシリアルポートへのアクセスをブロックしました。
 urlbar-install-blocked =
     .tooltiptext = このウェブサイトのアドオンのインストールをブロックしました。
 # Variables
@@ -268,6 +314,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = このページをブックマークに追加します ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = 分割ビュー
+    .aria-label = 分割ビュー
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = 検索履歴を消去
+    .accesskey = H
 
 ## Page Action Context Menu
 
@@ -340,7 +395,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = アドオンを表示
@@ -348,12 +403,16 @@ quickactions-addons = アドオンを表示
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = extensions, themes, addons, add-ons
+# Opens preferences page at AI controls
+quickactions-manageai = AI 制御の管理
+quickactions-cmd-manageai = disable ai, off ai, manage ai
 quickactions-cmd-addons2 = add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = ブックマークを管理
 quickactions-cmd-bookmarks = bookmarks
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = 最近の履歴を消去
+quickactions-cmd-clearrecenthistory2 = cookies, clear cookies, cache, clear cache, browsing data, clear browsing data, history, clear recent history
 quickactions-cmd-clearrecenthistory = clear recent history, history
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = 履歴を消去
@@ -363,6 +422,7 @@ quickactions-downloads2 = ダウンロードを表示
 quickactions-cmd-downloads = downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = 拡張機能を管理
+quickactions-cmd-extensions2 = extensions, addons, add-ons
 quickactions-cmd-extensions = extensions
 # Opens Firefox View
 quickactions-firefoxview = { -firefoxview-brand-name } を開く
@@ -377,9 +437,21 @@ quickactions-cmd-help = help, support
 quickactions-inspector2 = 開発ツールを開く
 quickactions-cmd-inspector2 = inspector, devtools, dev tools
 quickactions-cmd-inspector = inspector, devtools
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Pick a color
+quickactions-cmd-colorpicker = color picker, eyedropper, pick color
+# Opens Firefox Library
+quickactions-library = ライブラリーを開く
+quickactions-cmd-library = library
 # Opens about:logins
 quickactions-logins2 = パスワードを管理
 quickactions-cmd-logins = logins, passwords
+# Mutes all tabs playing audio
+quickactions-mute = 音声再生中のタブをミュート
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = mute, shush, sssssh
 # Opens about:addons page in the plugins section
 quickactions-plugins = プラグインを管理
 quickactions-cmd-plugins = plugins
@@ -389,7 +461,9 @@ quickactions-cmd-print = print
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = ページを PDF 形式で保存
 quickactions-cmd-savepdf2 = pdf, save page
-quickactions-cmd-savepdf = pdf
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = PDF エディターを開く
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = プライベートウィンドウを開く
 quickactions-cmd-private = private browsing
@@ -402,6 +476,9 @@ quickactions-cmd-restart = restart
 # Opens the screenshot tool
 quickactions-screenshot3 = スクリーンショットを撮影
 quickactions-cmd-screenshot2 = screenshot, take a screenshot
+# Opens about:translations
+quickactions-translate = 翻訳
+quickactions-cmd-translate = translate
 quickactions-cmd-screenshot = screenshot
 # Opens about:preferences
 quickactions-settings2 = 設定を管理
@@ -422,6 +499,9 @@ quickactions-cmd-update = update
 quickactions-viewsource2 = ページのソースを表示
 quickactions-cmd-viewsource2 = view source, source, page source
 quickactions-cmd-viewsource = view source, source
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = { -firefoxlabs-brand-name } を開く
+quickactions-cmd-labs = labs, experiment
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
     .title = クイックアクションについての詳細
@@ -502,7 +582,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = このサイトとの接続は安全ではありません。
 identity-connection-verified = このサイトとの接続は安全です。
 identity-ev-owner-label = 証明書の発行先:
+identity-verifier-label = 認証局:
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Regulation (EU) 2024/1183 に規定された要件を満たしています。
 identity-description-custom-root2 = BrowserWorks はこの証明書の発行者を承認していません。OS またはシステム管理者により追加された可能性があります。
+identity-cert-exception-overridden = このサイトはセキュリティ例外として追加されました。
 identity-remove-cert-exception =
     .label = 例外から削除
     .accesskey = R
@@ -535,6 +619,9 @@ browser-window-restore-down-button =
     .tooltiptext = 元に戻す (縮小)
 browser-window-close-button =
     .tooltiptext = 閉じる
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = 戻る
 
 ## Tab actions
 
@@ -602,6 +689,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = このセッションでは共有保護を無効にする。
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = シリアルポートを選択:
+webserial-no-ports-available = 利用可能なシリアルポートがありません
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = F12 ショートカットを使うには、最初にメニューのブラウザーツールから開発ツールを開いてください。
@@ -667,6 +759,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 拡張機能:
+urlbar-go-button2 =
+    .title = アドレスバーに入力された URL へ移動します
 urlbar-go-button =
     .tooltiptext = アドレスバーに入力された URL へ移動します
 urlbar-page-action-button =
@@ -674,8 +768,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = ロケーションバーにアドレスを表示します
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -692,6 +787,7 @@ urlbar-result-action-search-in-private = プライベートウィンドウで検
 urlbar-result-action-search-w-engine = { $engine } で検索
 urlbar-result-action-sponsored = 広告
 urlbar-result-action-switch-tab = タブを表示
+urlbar-result-action-move-tab-to-split-view = タブを分割ビューへ移動
 urlbar-result-action-visit = 開く
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -731,6 +827,14 @@ urlbar-result-action-copy-to-clipboard = コピー
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = 未定義
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = { -brand-product-name } 拡張
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = おすすめ
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -788,6 +892,128 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · 広告
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = 尋ねる
+
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = 最後に訪れたのは { $date } です
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days = 最後に訪れたのは { $daysAgo } 日前です
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks = 最後に訪れたのは { $weeksAgo } 週間前です
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months = 最後に訪れたのは { $monthsAgo } か月前です
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = 最後に訪れたのは { $date } です
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = { $date } にブックマーク済み
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = 最終訪問日: { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 = 最後の訪問は { $daysAgo } 日前です
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 = 最後の訪問は { $weeksAgo } 週間前です
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 = 最後の訪問は { $monthsAgo } か月前です
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = 最終訪問日: { $date }
+
+## These strings are used for Realtime suggestions in the urlbar.
+## Market refers to stocks, indexes, and funds.
+
+# This string is shown as title when Market suggestion are disabled.
+urlbar-result-market-opt-in-title = 株式市場のデータを検索バーで取得
+# This string is shown as description when Market suggestion are disabled.
+urlbar-result-market-opt-in-description = 検索クエリーデータを { -vendor-short-name } と共有すると、市場の更新情報にパートナー企業からの情報を加えて表示します。<a data-l10n-name="learn-more-link">詳細情報</a>
+# This string is shown as button to activate online when realtime suggestion are disabled.
+urlbar-result-realtime-opt-in-allow = 検索候補を表示する
+# This string is shown in split button to dismiss activation the Realtime suggestion.
+urlbar-result-realtime-opt-in-not-now = 後で
+urlbar-result-realtime-opt-in-dismiss = 閉じる
+urlbar-result-realtime-opt-in-dismiss-all2 = これらの候補を表示しない
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = 市場データの候補を表示しない
+urlbar-result-realtime-opt-in-dismiss-all =
+    .label = これらの候補を表示しない
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market =
+    .label = 市場データの候補を表示しない
+# A message that replaces a result when the user dismisses Market suggestions.
+urlbar-result-dismissal-acknowledgment-market = フィードバックありがとうございます。今後は市場データの検索候補を表示しません。
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = 株式市場の候補
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-result-dismissal-acknowledgment-all = フィードバックありがとうございます。今後はこれらの検索候補を表示しません。
+
+## These strings are used for suggestions of important dates in the urlbar.
+
+# The name of an event and the number of days until it starts separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown = { $name } · あと { $daysUntilStart } 日
+# The name of a multiple day long event and the number of days until it starts
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown-range = { $name } · 開始まであと { $daysUntilStart } 日
+# The name of a multiple day long event and the number of days until it ends
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilEnd (integer) - The number of days until the event ends.
+urlbar-result-dates-ongoing = { $name } · あと { $daysUntilEnd } 日で終了
+# The name of an event and a note that it is happening today separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-today = { $name } · 今日
+# The name of multiple day long event and a note that it is ends today
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-ends-today = { $name } · 今日まで
 
 ## Strings used for buttons in the urlbar
 
@@ -815,8 +1041,8 @@ urlbar-searchmode-actions =
     .label = アクション
 urlbar-searchmode-exit-button =
     .tooltiptext = 閉じる
-urlbar-searchmode-default =
-    .tooltiptext = 既定の検索エンジン
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
 urlbar-searchmode-popup-description = 今回だけ使う検索エンジン:
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = 検索設定
@@ -829,6 +1055,39 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = ショートカットが選択されていません。ショートカットを選択
     .tooltiptext = ショートカットが選択されていません。ショートカットを選択します
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = 検索エンジン: { $engine }、別の検索エンジンを選択します
+urlbar-searchmode-button-no-engine2 =
+    .title = ショートカットが選択されていません。ショートカットを選択します
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = キーワード検索が無効です
+urlbar-searchmode-dropmarker2 =
+    .title = 検索エンジンを選択します
+urlbar-searchmode-bookmarks2 = ブックマーク
+urlbar-searchmode-tabs2 = タブ
+urlbar-searchmode-history2 = 履歴
+urlbar-searchmode-actions2 = アクション
+urlbar-searchmode-exit-button2 =
+    .title = 閉じる
+urlbar-searchmode-default2 =
+    .title = 既定の検索エンジン
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = “{ $engineName }” を追加
+    .title = 検索エンジン “{ $engineName }” を追加します
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = 今回だけ使う検索エンジン:
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = 検索エンジン:
+urlbar-searchmode-popup-search-settings-panelitem = 検索設定
+urlbar-searchmode-popup-settings-panelitem = 設定
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -844,6 +1103,21 @@ urlbar-result-action-switch-to-tabgroup = { $group } に切り替え
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = { $group } を開く
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = 新しいタブで開く
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab =
+    .label = 新しいコンテナータブで開く
+    .accesskey = i
+urlbar-view-context-menu-open-in-window =
+    .label = 新しいウィンドウで開く
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window =
+    .label = 新しいプライベートウィンドウで開く
+    .accesskey = P
 
 ## Labels shown above groups of urlbar results
 
@@ -870,6 +1144,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = { $engine } の検索トレンド
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = 検索トレンドを表示しない
+    .accesskey = D
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = 広告
@@ -917,6 +1194,9 @@ fullscreen-warning-no-domain = このページは現在全画面表示モード�
 fullscreen-exit-button = 全画面表示モードを終了 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = 全画面表示モードを終了 (esc)
+fullscreen-keyboardlock-exit-button = 全画面表示モードを終了 (Esc を長押し)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = 全画面表示モードを終了 (esc を長押し)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1012,7 +1292,7 @@ repair-text-encoding-button =
     .label = テキストエンコーディングを修復
     .tooltiptext = ページの内容から正しいテキストエンコーディングを推測します
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1032,6 +1312,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = パスワード
     .tooltiptext = 保存されているパスワードを表示、管理します
+qrcode-panel-error =
+    .message = QR コードの生成に失敗しました。もう一度試してください。
+qrcode-copy-button =
+    .label = コピー
+qrcode-copy-success =
+    .message = QR コードをクリップボードにコピーしました。
+qrcode-copy-error =
+    .message = QR コードのコピーに失敗しました。
+qrcode-save-button =
+    .label = 保存
+qrcode-save-success =
+    .message = QR コードを保存しました。
+qrcode-save-error =
+    .message = QR コードの保存に失敗しました。
+qrcode-save-title = QR コードを保存
+qrcode-save-filter-png = PNG 画像
+qrcode-save-filename = qrcode.png
+qrcode-window-title = QR コード
+qrcode-dialog-title = QR コード
+qrcode-image =
+    .aria-label = QR コード
+qrcode-close-button =
+    .aria-label = 閉じる
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1045,11 +1348,28 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = 同期タブ
     .tooltiptext = 他の端末のタブを表示します
+toolbar-button-send-tab =
+    .label = タブを送信
+    .tooltiptext = 現在のタブを別の端末へ送信します
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = 新しいプライベートウィンドウ
     .tooltiptext = 新しいプライベートブラウジングウィンドウを開きます ({ $shortcut })
+toolbar-button-share-tab =
+    .label = 共有
+    .tooltiptext = このページを共有します
+toolbar-button-tab-groups =
+    .label = タブグループ
+    .tooltiptext = タブグループを表示します
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = qrcode-{ $domain }
 
 ## EME notification panel
 
@@ -1063,12 +1383,27 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 panel-save-update-username = ユーザー名
 panel-save-update-password = パスワード
+panel-save-update-username-2 =
+    .label = ユーザー名
+panel-save-update-password-2 =
+    .label = パスワード
 
 ##
 
 # "More" item in macOS share menu
 menu-share-more =
     .label = その他...
+menu-share-windows =
+    .label = 他のオプション
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label =
+        { $count ->
+            [one] リンクをコピー
+           *[other] { $count } 個のリンクをコピー
+        }
+    .accesskey = L
 menu-share-copy-link =
     .label = リンクをコピー
     .accesskey = L
@@ -1083,6 +1418,9 @@ popups-infobar-allow =
     .accesskey = p
 popups-infobar-block =
     .label = このサイト ({ $uriHost }) によるポップアップを禁止する
+    .accesskey = p
+popups-infobar-allow2 =
+    .label = このサイト ({ $uriHost }) によるポップアップおよびサードパーティによるリダイレクトを許可する
     .accesskey = p
 
 ##
@@ -1144,8 +1482,12 @@ tabs-toolbar =
 tabs-toolbar-new-tab =
     .label = 新しいタブ
 tabs-toolbar-list-all-tabs =
-    .label = タブを一覧表示する
+    .label = タブを一覧表示
     .tooltiptext = タブを一覧表示します
+
+## Drop indicator text for pinned tabs when no tabs are pinned.
+
+pinned-tabs-drop-indicator = タブをここにドロップしてピン留めします
 
 ## Infobar shown at startup to suggest session-restore
 
@@ -1216,6 +1558,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = プライベートセッションを終了
     .tooltiptext = プライベートセッションを終了します
+reset-pbm-panel-heading2 = データを消去して新しいプライベートセッションを開始しますか？
+reset-pbm-panel-description2 = これはプライベートウィンドウを閉じずに、履歴、Cookie、その他すべてのサイトデータを削除します。
 reset-pbm-panel-heading = プライベートセッションを終了しますか？
 reset-pbm-panel-description = すべてのプライベートタブを閉じ、履歴、Cookie、その他すべてのサイトデータを削除します。
 reset-pbm-panel-always-ask-checkbox =
@@ -1224,10 +1568,16 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = キャンセル
     .accesskey = C
+reset-pbm-panel-confirm-button2 =
+    .label = プライベートセッションを消去
+    .accesskey = l
 reset-pbm-panel-confirm-button =
     .label = セッションデータを削除
     .accesskey = D
 reset-pbm-panel-complete = プライベートセッションのデータを削除しました
+reset-pbm-toolbar-button2 =
+    .label = プライベートセッションを消去
+    .tooltiptext = プライベートセッションを消去します
 
 ## Autorefresh blocker
 
@@ -1244,6 +1594,7 @@ firefox-relay-offer-why-to-use-relay = 安全で簡単に使えるメールマ�
 #  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = メールマスクに送信されたすべてのメールは (これらをブロックしない限り) <strong>{ $useremail }</strong> に転送されます。
 firefox-relay-offer-legal-notice = [メールマスクを使用] をクリックすることにより、<label data-l10n-name="tos-url">サービス利用規約</label> および <label data-l10n-name="privacy-url">プライバシー通知</label> に同意したものとみなされます。
+firefox-relay-offer-legal-notice-1 = アカウント登録してメールマスクを作成することにより、<label data-l10n-name="tos-url">サービス利用規約</label> および <label data-l10n-name="privacy-url">プライバシー通知</label> に同意したものとみなされます。
 
 ## Add-on Pop-up Notifications
 
@@ -1258,7 +1609,7 @@ popup-notification-addon-privatebrowsing-checkbox2 =
 # This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
 # but it is used in the install prompt, and it needs an access key.
 popup-notification-addon-technical-and-interaction-checkbox =
-    .label = 技術データと対話データを拡張機能の開発者に共有する
+    .label = 技術データと対話データを拡張機能の開発者と共有する
     .accesskey = S
 
 ## Pop-up warning
@@ -1270,12 +1621,26 @@ popup-warning-message =
         [1] { -brand-short-name } がこのサイトでポップアップウィンドウをブロックしました。
        *[other] { -brand-short-name } がこのサイトで { $popupCount } 個のポップアップウィンドウをブロックしました。
     }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+redirect-warning-with-popup-message =
+    { $popupCount ->
+        [0] { -brand-short-name } がこのサイトでリダイレクトをブロックしました。
+        [1] { -brand-short-name } がこのサイトでポップアップウィンドウとリダイレクトをブロックしました。
+       *[other] { -brand-short-name } がこのサイトで { $popupCount } 個のポップアップウィンドウとリダイレクトをブロックしました。
+    }
 # The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
 popup-warning-exceeded-message =
     { $popupCount ->
        *[other] { -brand-short-name } がこのサイトで { $popupCount } 個以上のポップアップウィンドウをブロックしました。
+    }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-with-redirect-message =
+    { $popupCount ->
+       *[other] { -brand-short-name } がこのサイトで { $popupCount } 個以上のポップアップウィンドウとリダイレクトをブロックしました。
     }
 popup-warning-button =
     .label =
@@ -1292,6 +1657,10 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = “{ $popupURI }” を表示
+# Variables:
+#   $redirectURI (String): the URI for the redirect
+popup-trigger-redirect-menuitem =
+    .label = “{ $redirectURI }” を表示
 
 ## File-picker crash notification ("FilePickerCrashed.sys.mjs")
 
@@ -1320,3 +1689,95 @@ onboarding-checklist-button-label = セットアップを完了
 onboarding-aw-finish-setup-button =
     .label = セットアップ完了
     .tooltiptext = { -brand-short-name } のセットアップを完了します
+
+## The urlbar trust icon & panel
+
+trustpanel-etp-label-enabled = 強化型トラッキング防止はオンです
+trustpanel-etp-label-disabled = 強化型トラッキング防止はオフです
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-on =
+    .aria-label = 強化型トラッキング防止: { $host } でオン
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-off =
+    .aria-label = 強化型トラッキング防止: { $host } でオフ
+trustpanel-etp-description-enabled = このサイトでの動作に問題があるときはトラッキング防止をオフにしてみてください。
+trustpanel-etp-description-disabled = { -brand-product-name } は企業によるユーザー追跡を減らします。トラッキング防止をオンにすると、できるだけ多くのトラッカーをブロックします。
+trustpanel-connection-label-secure = 接続は安全です
+trustpanel-connection-label-insecure = 接続は安全ではありません
+trustpanel-header-enabled = { -brand-product-name } が保護しています
+trustpanel-description-enabled2 = あなたは追跡から保護されています。何か見つけたらお知らせします。
+trustpanel-header-enabled-insecure = このサイトでは注意してください
+trustpanel-description-enabled-insecure = { -brand-product-name } が不審な動作を検出しました。
+trustpanel-header-disabled = 保護がオフになっています
+trustpanel-description-disabled = { -brand-product-name } によるトラッキング防止が動作していません。オンに戻すことをおすすめします。
+trustpanel-clear-cookies-button = Cookie とサイトデータを消去
+trustpanel-privacy-link = プライバシー設定
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-clear-cookies-header =
+    .title = { $host } の Cookie とサイトデータを消去します
+trustpanel-clear-cookies-description = Cookie とサイトデータを消去するとウェブサイトからログアウトし、買い物カゴが空になります。
+trustpanel-clear-cookies-subview-button-clear = 消去
+trustpanel-clear-cookies-subview-button-cancel = キャンセル
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-site-information-header =
+    .title = { $host } への接続の保護
+trustpanel-siteinformation-morelink = サイトの詳細情報
+trustpanel-blocker-see-all = すべて表示
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-blocker-header =
+    .title = { $host } におけるトラッキング防止
+
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = 安全でない
+
+## Variables
+##  $count (String): the number of trackers blocked.
+
+trustpanel-blocker-description = { -brand-product-name } は企業によるユーザー追跡を減らします。トラッキング防止をオンにすると、できるだけ多くのトラッカーをブロックします。
+trustpanel-blocked-header = { -brand-product-name } が以下のトラッカーをブロックしています:
+trustpanel-tracking-header = { -brand-product-name } はサイトが動作するように以下のトラッカーを許可しています:
+trustpanel-tracking-description = トラッカーがブロックされると、一部のボタンやフォーム、ログインフィールドがうまく動作しない場合があります。
+trustpanel-insecure-section-header = 接続が安全ではありません
+trustpanel-insecure-description = このサイトに送信するデータは暗号化されません。第三者によるデータの盗聴や窃取、改竄のおそれがあります。
+trustpanel-list-label-tracking-cookies = { $count } 個のクロスサイトトラッキング Cookie
+trustpanel-list-label-tracking-content = トラッキングコンテンツ
+trustpanel-list-label-fingerprinter = { $count } 個のフィンガープリント採取
+trustpanel-list-label-social-tracking = { $count } 個のソーシャルメディアトラッカー
+trustpanel-list-label-cryptominer = { $count } 個の暗号通貨マイニング
+trustpanel-social-tracking-blocking-tab-header = { -brand-product-name } が { $count } 個のソーシャルメディアトラッカーをブロックしました
+trustpanel-social-tracking-not-blocking-tab-header = { -brand-product-name } が { $count } 個のソーシャルメディアトラッカーを許可しました
+trustpanel-tracking-cookies-blocking-tab-header = { -brand-product-name } が { $count } 個のクロスサイトトラッキング Cookie をブロックしました
+trustpanel-tracking-cookies-not-blocking-tab-header = { -brand-product-name } が { $count } 個のクロスサイトトラッキング Cookie を許可しました
+trustpanel-tracking-content-blocking-tab-header = { -brand-product-name } が { $count } 個のトラッカーをブロックしました
+trustpanel-tracking-content-not-blocking-tab-header = { -brand-product-name } が { $count } 個のトラッカーを許可しました
+trustpanel-tracking-content-tab-list-header = 以下のサイトがあなたを追跡しようとしています:
+trustpanel-fingerprinter-blocking-tab-header = { -brand-product-name } が { $count } 個のフィンガープリント採取をブロックしました
+trustpanel-fingerprinter-not-blocking-tab-header = { -brand-product-name } が { $count } 個のフィンガープリント採取を許可しました
+trustpanel-fingerprinter-list-header = 以下のサイトがあなたのフィンガープリントを採取しようとしています:
+trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } が { $count } 個の暗号通貨マイニングをブロックしました
+trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } が { $count } 個の暗号通貨マイニングを許可しました
+trustpanel-cryptominer-tab-list-header = 以下のサイトがあなたのコンピューターを暗号通貨マイニングに利用しようとしています:
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = このサイトのアカウントをお持ちですか？
+trustpanel-breachalerts-anonymous-breached-description = 過去 12 か月以内にこのサイトのデータが漏洩していたことを { -brand-product-name } が確認しました。あなたのアカウントが含まれていないか調べてください。
+trustpanel-breachalerts-anonymous-breached-button-dismiss = 閉じる
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = 無料のスキャンを開始
+trustpanel-blocker-section-header2 = このサイトで <span data-l10n-name="count">{ $count }</span> 個のトラッカーをブロックしました
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>サイトが動作しない？</strong> ページを再度読み込んで一時的にトラッキング防止を弱めます。
+reduced-protection-infobar-reload-button = 再読み込み
+    .accesskey = R
+reduced-protection-infobar-never-show-button = 今後は表示しない
+    .accesskey = D

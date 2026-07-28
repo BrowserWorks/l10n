@@ -15,6 +15,8 @@ about-logging-set-log-file = Establecer archivo de registro
 about-logging-set-log-modules = Establecer módulos de registro
 about-logging-start-logging = Iniciar registro
 about-logging-stop-logging = Detener registro
+about-logging-copy-as-url = Copiar configuración actual como URL
+about-logging-url-copied = Se copió la configuración de registro al portapapeles como URL de ajuste predefinido
 about-logging-buttons-disabled = Registro configurado a través de variables de entorno, configuración dinámica no disponible.
 about-logging-some-elements-disabled = Registro configurado a través de URL, algunas opciones de configuración no están disponibles
 about-logging-info = Información:
@@ -27,6 +29,9 @@ about-logging-no-log-modules = Ninguno
 about-logging-no-log-file = Ninguno
 about-logging-logging-preset-selector-text = Registro preestablecido:
 about-logging-with-profiler-stacks-checkbox = Habilitar seguimientos de pila para mensajes de registro
+about-logging-with-javascript-tracing-checkbox = Habilitar rastreo de JavaScript
+about-logging-menu =
+    .title = Opciones avanzadas
 
 ## Logging presets
 
@@ -45,6 +50,13 @@ about-logging-preset-media-playback-description = Módulos de registro para diag
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Módulos de registro para diagnosticar llamadas WebRTC
 about-logging-preset-webcodecs-label = Códecs web
+about-logging-preset-webcodecs-description = Módulos de registro para diagnosticar problemas con los descodificadores y codificadores de audio/vídeo y los descodificadores de imágenes de WebCodecs.
+about-logging-preset-ml-label = Machine Learning
+about-logging-preset-ml-description = Módulos de registro para diagnosticar problemas de aprendizaje automático
+about-logging-preset-web-compat-label = Compatibilidad web
+about-logging-preset-web-compat-description = Módulos de registro para diagnosticar problemas de compatibilidad web
+about-logging-preset-navigation = Navegación
+about-logging-preset-navigation-description = Módulos de registro para diagnosticar problemas de navegación e historial de sesiones
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Módulos de registro para diagnosticar problemas de WebGPU
 about-logging-preset-gfx-label = Gráficas
@@ -65,8 +77,53 @@ about-logging-unknown-profiler-preset = Valor preestablecido de perfilador desco
 about-logging-unknown-option = Opción de about:loggin desconocida “{ $k }“
 about-logging-configuration-url-ignored = URL de configuración ignorada
 about-logging-file-and-profiler-override = No se puede forzar la salida a un archivo y anular las opciones del perfilador al mismo tiempo
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Ocurrió un error: { $errorText }
 about-logging-configured-via-url = Opción configurada vía URL
 
 ## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
 ## set to true. It is false by default, except on Android.
 
+about-logging-upload-question = Se han capturado los datos del perfil. ¿Quieres guardarlos o cargarlos?
+about-logging-save-button = Guardar
+about-logging-upload-button = Subir
+# Variables:
+#   $path (string) - The path where the profile can be found.
+about-logging-saved = Guardado en { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Cargando tus datos de perfil: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Se cargaron en <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Compartir URL
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Se produjo un error al cargar el perfil: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Se produjo un error al guardar el perfil subido: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Se produjo un error al guardar el archivo: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Perfil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Perfiles cargados
+about-logging-no-uploaded-profiles = Aún no has cargado ningún perfil.
+about-logging-delete-uploaded-profile = Eliminar
+about-logging-view-uploaded-profile = Ver perfil
+about-logging-delete-profile-confirm-title = Eliminar perfil
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = ¿Seguro que quieres eliminar el perfil “{ $profileName }”? No se puede deshacer.
+about-logging-deleting-profile = Eliminando…

@@ -42,6 +42,15 @@ pending-crash-reports-always-send =
     .label = Vždy odeslat
 # Variables:
 #   $reportCount (Number): the number of pending crash reports
+requested-crash-reports-message-new =
+    { $reportCount ->
+        [one] Máte neodeslané hlášení o pádu týkající se pádu, který řešíme. Jeho odeslání nám pomůže { -brand-product-name } zlepšit. Zavřením tohoto oznámení bude toto hlášení ignorováno.
+        [few] Máte { $reportCount } neodeslaná hlášení o pádech týkající se pádu, který řešíme. Jejich odeslání nám pomůže { -brand-product-name } zlepšit. Zavřením tohoto oznámení bude toto hlášení ignorováno.
+        [many] Máte { $reportCount } neodeslaných hlášení o pádech týkající se pádu, který řešíme. Jejich odeslání nám pomůže { -brand-product-name } zlepšit. Zavřením tohoto oznámení bude toto hlášení ignorováno.
+       *[other] Máte { $reportCount } neodeslaných hlášení o pádech týkající se pádu, který řešíme. Jejich odeslání nám pomůže { -brand-product-name } zlepšit. Zavřením tohoto oznámení bude toto hlášení ignorováno.
+    }
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
 requested-crash-reports-message =
     { $reportCount ->
         [one] Máte neodeslané hlášení o pádu, které odpovídá prošetřovaným pádům. Jeho odesláním nám pomůžete vylepšit aplikaci { -brand-product-name }. Zavřením tohoto oznámení bude toto hlášení ignorováno.
@@ -52,3 +61,12 @@ requested-crash-reports-message =
 requested-crash-reports-dont-show-again =
     .label = Znovu nezobrazovat
     .accesskey = Z
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+pending-crash-reports-message-new =
+    { $reportCount ->
+        [one] Máte { $reportCount } nedávné neodeslané hlášení o pádu
+        [few] Máte { $reportCount } nedávné neodeslané hlášení o pádu
+        [many] Máte { $reportCount } nedávných neodeslaných hlášení o pádu
+       *[other] Máte { $reportCount } nedávných neodeslaných hlášení o pádu
+    }

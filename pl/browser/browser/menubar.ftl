@@ -3,26 +3,19 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Preferencje
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Ustawienia…
+menu-application-set-as-default =
+    .label = Ustaw { -brand-shorter-name(case: "acc") } jako domyślną przeglądarkę
 menu-application-services =
     .label = Usługi
 menu-application-hide-this =
-    .label = Ukryj program { -brand-shorter-name }
+    .label = Ukryj { -brand-shorter-name(case: "acc") }
 menu-application-hide-other =
     .label = Ukryj pozostałe
 menu-application-show-all =
@@ -46,7 +39,7 @@ menu-quit =
         }
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
-    .label = Zakończ program { -brand-shorter-name }
+    .label = Zakończ { -brand-shorter-name(case: "acc") }
 menu-about =
     .label = O programie { -brand-shorter-name }
     .accesskey = O
@@ -60,7 +53,7 @@ menu-file-new-tab =
     .label = Nowa karta
     .accesskey = t
 menu-file-new-container-tab =
-    .label = Nowa karta z kontekstem
+    .label = Nowa karta w kontenerze
     .accesskey = k
 menu-file-new-window =
     .label = Nowe okno
@@ -99,6 +92,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Udostępnij
     .accesskey = s
+menu-file-share-qrcode =
+    .label = Utwórz kod QR…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Utwórz kod QR…
+    .accesskey = Q
 menu-file-print-setup =
     .label = Ustawienia strony…
     .accesskey = U
@@ -147,8 +146,6 @@ menu-view-history-button =
     .label = Historia
 menu-view-synced-tabs-sidebar =
     .label = Karty z innych urządzeń
-menu-view-megalist-sidebar =
-    .label = Hasła
 menu-view-full-zoom =
     .label = Powiększenie
     .accesskey = w
@@ -204,8 +201,8 @@ menu-view-close-readerview =
 ##
 
 menu-view-show-all-tabs =
-    .label = Wyświetl wszystkie karty
-    .accesskey = W
+    .label = Pokaż wszystkie karty
+    .accesskey = w
 menu-view-bidi-switch-page-direction =
     .label = Przełącz kierunek strony
     .accesskey = s
@@ -264,6 +261,13 @@ menu-profiles-manage-profiles =
     .label = Zarządzaj profilami
 menu-profiles-new-profile =
     .label = Nowy profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (bieżący)
+menu-profiles-menu =
+    .label = Profile
+    .accesskey = P
 
 ## Tools Menu
 
@@ -289,7 +293,7 @@ menu-tools-sync-now =
     .label = Synchronizuj teraz
     .accesskey = S
 menu-tools-fxa-re-auth =
-    .label = Zaloguj się ponownie w przeglądarce { -brand-product-name }…
+    .label = Zaloguj się ponownie w { -brand-product-name(case: "loc") }…
     .accesskey = Z
 menu-tools-browser-tools =
     .label = Narzędzia przeglądarki
@@ -303,6 +307,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Informacje o stronie
     .accesskey = m
+menu-tools-edit-pdf =
+    .label = Edytuj plik PDF…
+    .accesskey = F
 menu-settings =
     .label = Ustawienia
     .accesskey =

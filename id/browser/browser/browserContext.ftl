@@ -160,17 +160,15 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Salin Tautan
     .accesskey = S
+main-context-menu-preview-link =
+    .label = Pratinjau Tautan
+    .accesskey = r
 # "Copy Clean Link" means that Firefox will remove things from the link you
 # copied, like items that identify you for advertising purposes, and other items
 # sites add into URLs to help them deliver a certain browsing experience.
 main-context-menu-copy-clean-link =
     .label = Salin Tautan Bersih
     .accesskey = B
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Salin Tautan Tanpa Pelacakan Situs
-    .accesskey = s
 
 ## Media (video/audio) controls
 ##
@@ -220,7 +218,7 @@ main-context-menu-media-hide-controls =
     .label = Sembunyikan Kendali
     .accesskey = S
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Layar Penuh
@@ -272,6 +270,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Tampilkan Deskripsi
     .accesskey = D
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Cari Gambar dengan { $engine }
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = Simpan Video dengan Nama…
     .accesskey = S
@@ -287,6 +290,9 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Surelkan Audio…
     .accesskey = k
+main-context-menu-send-to-device-2 =
+    .label = Kirim ke Perangkat
+    .accesskey = n
 main-context-menu-save-to-pocket =
     .label = Simpan Laman ke { -pocket-brand-name }
     .accesskey = k
@@ -394,3 +400,5 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Tampilkan Sandi
     .accesskey = S
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Baru

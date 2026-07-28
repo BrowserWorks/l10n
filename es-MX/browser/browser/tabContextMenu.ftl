@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = Recargar pestaña
     .accesskey = R
+reload-tab2 =
+    .label = Volver a cargar
+    .accesskey = R
 select-all-tabs =
     .label = Seleccionar todas las pestañas
     .accesskey = S
@@ -24,8 +27,14 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = Duplicar Pestaña
     .accesskey = D
+duplicate-tab2 =
+    .label = Duplicar
+    .accesskey = D
 duplicate-tabs =
     .label = Duplicar Pestañas
+    .accesskey = D
+duplicate-tabs2 =
+    .label = Duplicar
     .accesskey = D
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
@@ -52,9 +61,15 @@ reload-tabs =
 pin-tab =
     .label = Anclar pestaña
     .accesskey = A
+tab-context-pin-tab2 =
+    .label = Anclar
+    .accesskey = P
 unpin-tab =
     .label = Desanclar pestaña
     .accesskey = D
+tab-context-unpin-tab2 =
+    .label = Desanclar
+    .accesskey = p
 pin-selected-tabs =
     .label = Fijar pestañas
     .accesskey = P
@@ -67,8 +82,15 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = Agregar pestaña a marcadores…
     .accesskey = B
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Agregar a marcadores
+    .accesskey = B
 tab-context-open-in-new-container-tab =
     .label = Abrir en nueva pestaña contenedora
+    .accesskey = e
+tab-context-open-in-new-container-tab2 =
+    .label = Abrir en una nueva pestaña de contenedor
     .accesskey = e
 move-to-start =
     .label = Mover al inicio
@@ -79,12 +101,23 @@ move-to-end =
 move-to-new-window =
     .label = Mover a una nueva ventana
     .accesskey = v
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Mover a { $profileName }
 tab-context-close-multiple-tabs =
     .label = Cerrar varias pestañas
     .accesskey = v
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Cerrar múltiples pestañas
+    .accesskey = M
 tab-context-close-duplicate-tabs =
     .label = Cerrar Pestañas Duplicadas
     .accesskey = u
+tab-context-close-duplicate-tabs2 =
+    .label = Cerrar duplicados de esta pestaña
+    .accesskey = x
 tab-context-share-url =
     .label = Compartir
     .accesskey = C
@@ -118,6 +151,14 @@ tab-context-close-n-tabs =
            *[other] Cerrar { $tabCount } pestaña
         }
     .accesskey = C
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Cerrar
+            [one] Cerrar { $tabCount } pestaña
+           *[other] Cerrar { $tabCount } pestañas
+        }
+    .accesskey = C
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -126,6 +167,44 @@ tab-context-move-tabs =
            *[other] Mover pestañas
         }
     .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Mover pestaña a
+            [one] Mover { $tabCount } pestaña a
+           *[other] Mover { $tabCount } pestañas a
+        }
+    .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Mover vista dividida a
+    .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Enviar al dispositivo
+            [one] Enviar { $tabCount } pestañas al dispositivo
+           *[other] Enviar { $tabCount } pestañas al dispositivo
+        }
+    .accesskey = n
+tab-context-send-to-device2 =
+    .label = Enviar a tus dispositivos
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Enviar a dispositivo móvil
+            [one] Enviar { $tabCount } pestañas al dispositivo móvil
+           *[other] Enviar { $tabCount } pestañas al dispositivo móvil
+        }
+    .accesskey = n
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Crear enlace para compartir
+    .accesskey = a
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->
@@ -133,3 +212,15 @@ tab-context-send-tabs-to-device =
            *[other] Enviar { $tabCount } pestañas a dispositivo
         }
     .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Liberar pestaña
+            [one] Liberar { $tabCount } pestañas
+           *[other] Liberar { $tabCount } pestañas
+        }
+    .accesskey = U
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Descargar
+    .accesskey = U

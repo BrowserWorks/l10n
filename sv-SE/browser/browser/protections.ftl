@@ -203,3 +203,61 @@ bar-tooltip-cryptominer =
             [one] { $count } kryptogrävare ({ $percentage }%)
            *[other] { $count } kryptogrävare ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Integritetsskydd
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } blockerad denna vecka
+       *[other] { $count } blockerade denna vecka
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } spårare
+       *[other] { $count } spårare
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } fingeravtrycksspårare
+       *[other] { $count } fingeravtrycksspårare
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } spårningskaka
+       *[other] { $count } spårningskakor
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } social spårare
+       *[other] { $count } sociala spårare
+    }
+privacy-metrics-empty = Inga spårare blockerade denna vecka. { -brand-short-name } skyddar dig från följande hot när du surfar.
+privacy-metrics-loading = Laddar skyddsstatistik…
+privacy-metrics-error = Det gick inte att läsa in skyddsstatistik.
+privacy-metrics-private-window = { -brand-short-name } fortsätter att blockera spårare i privata fönster, men sparar inte vad som blockerades.
+
+## VPN promo card and banner
+
+protections-vpn-title = Integritetsskydd utöver webbläsaren
+protections-vpn-header-content = Skydda hela din enhet med { -mozilla-vpn-brand-name }. Ett tryck krypterar all trafik och döljer din plats.
+protections-get-vpn-link = Hämta { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Prenumererade
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] Genom att använda { -mozilla-vpn-brand-name } krypteras all din trafik och din plats döljs – på upp till { $count } enhet. Få ut det mesta av din prenumeration – lägg till den från <a data-l10n-name="playstore-link">Google Play Store</a> eller <a data-l10n-name="appstore-link">Apple App Store</a>.
+       *[other] Genom att använda { -mozilla-vpn-brand-name } krypteras all din trafik och din plats döljs – på upp till { $count } enheter. Få ut det mesta av din prenumeration – lägg till den från <a data-l10n-name="playstore-link">Google Play Store</a> eller <a data-l10n-name="appstore-link">Apple App Store</a>.
+    }
+protections-vpn-banner-header = Skydd som sträcker sig bortom webbläsaren
+protections-vpn-banner-content = Prova { -mozilla-vpn-brand-name } riskfritt och se varför TechRadar säger att "dess hastighet, enkelhet och låga månadspris gör det värt att ta en titt".
+protections-vpn-banner-link = Hämta { -mozilla-vpn-brand-name }

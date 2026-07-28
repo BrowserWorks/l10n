@@ -38,6 +38,7 @@ account-send-tab-to-device-connectdevice = 他の端末を接続...
 ## and the Sync account is unverified. Redirects to the Sync preferences page.
 
 account-send-tab-to-device-verify-status = アカウントが認証されていません
+account-send-tab-to-device-verify2 = アカウントを認証
 account-send-tab-to-device-verify = アカウントを認証...
 
 ## These strings are used in a notification shown when a new device joins the Firefox account.
@@ -56,7 +57,7 @@ account-connection-connected-with-noname = このコンピューターは新し�
 # Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = ログインできました
 # Used in a notification shown after the Firefox account was disconnected remotely.
-account-connection-disconnected = このコンピューターの接続が切断されました。
+account-connection-disconnected = このコンピューターの接続が解除されました。
 
 ## These strings are used in a notification shown when we're opening
 ## a single tab another device sent us to display.

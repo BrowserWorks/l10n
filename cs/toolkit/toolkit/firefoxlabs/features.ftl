@@ -29,6 +29,10 @@ experimental-features-group-webpage-display =
     .label = Zobrazení webové stránky
 experimental-features-group-customize-browsing =
     .label = Přizpůsobte si své prohlížení
+experimental-features-group-productivity =
+    .label = Produktivita
+experimental-features-group-newtab-widgets =
+    .label = Widgety na { -firefox-home-brand-name(case: "loc") }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Hesla v postranní liště
@@ -42,16 +46,72 @@ experimental-features-link-previews =
     .label = Náhledy odkazů
 experimental-features-link-previews-description =
     { PLATFORM() ->
-        [macos] Pokud se chcete o webové stránce dozvědět více než na ni klepnete, najeďte na odkaz a stiskněte Shift plus volbu (⌥) nebo Alt. Náhledy mohou obsahovat detaily jako nadpis a čas čtení. U některých webových stránek může umělá inteligence číst i text stránky a generovat klíčové body. Umělá inteligence je optimalizována pro čtení a generování anglického textu. Aby bylo upřednostněno vaše soukromí, umělá inteligence běží lokálně na vašem počítači<a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
-       *[other] Pokud se chcete o webové stránce dozvědět více než na ni klepnete, najeďte na odkaz a stiskněte Shift + Alt. Náhledy mohou obsahovat detaily jako nadpis a čas čtení. U některých webových stránek může umělá inteligence číst i text stránky a generovat klíčové body. Umělá inteligence je optimalizována pro čtení a generování anglického textu. Aby bylo upřednostněno vaše soukromí, umělá inteligence běží lokálně na vašem počítači<a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+        [macos] Pokud se chcete o webové stránce předtím, než na ni klepnete, dozvědět více, najeďte na odkaz a stiskněte Shift (⇧) spolu s Option (⌥) nebo Alt. Náhledy mohou obsahovat detaily jako nadpis a odhadovanou dobu čtení. U některých webových stránek může umělá inteligence i přečíst text stránky a vygenerovat výčet jejích hlavních myšlenek. Umělá inteligence je optimalizována pro čtení a generování anglického textu. Aby bylo upřednostněno vaše soukromí, umělá inteligence běží místně na vašem počítači. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+       *[other] Pokud se chcete o webové stránce předtím, než na ni klepnete, dozvědět více, najeďte na odkaz a stiskněte Shift + Alt. Náhledy mohou obsahovat detaily jako nadpis a odhadovanou dobu čtení. U některých webových stránek může umělá inteligence i přečíst text stránky a vygenerovat výčet jejích hlavních myšlenek. Umělá inteligence je optimalizována pro čtení a generování anglického textu. Aby bylo upřednostněno vaše soukromí, umělá inteligence běží místně na vašem počítači. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
     }
 # This version of the link previews description does not mention AI.
 experimental-features-link-previews-description-no-ai =
     { PLATFORM() ->
-        [macos] Pokud se chcete o webové stránce dozvědět více než na ni klepnete, najeďte na odkaz a stiskněte Shift (⇧) plus Option (⌥) nebo Alt. Náhledy mohou obsahovat detaily jako nadpis a čas čtení. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
-       *[other] Pokud se chcete o webové stránce dozvědět více než na ni klepnete, najeďte na odkaz a stiskněte Shift + Alt. Náhledy mohou obsahovat detaily jako nadpis a čas čtení. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+        [macos] Pokud se chcete o webové stránce předtím, než na ni klepnete, dozvědět více, najeďte na odkaz a stiskněte Shift (⇧) spolu s Option (⌥) nebo Alt. Náhledy mohou obsahovat detaily jako nadpis a odhadovanou dobu čtení. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+       *[other] Pokud se chcete o webové stránce předtím, než na ni klepnete, dozvědět více, najeďte na odkaz a stiskněte Shift + Alt. Náhledy mohou obsahovat detaily jako nadpis a odhadovanou dobu čtení. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
     }
 # New Tab Sections with follow and block
 experimental-features-newtab-sections-follow-block =
-    .label = Sekce témat a sledování/blokování pro příběhy na novém panelu
-experimental-features-newtab-sections-follow-block-description = Články na novém panelu si můžete uspořádat do tematických sekcí (Sport, Jídlo, Zábava a další), abyste je měli lépe strukturované a snadno je našli. Použijte naše nové ovládací prvky Sledovat a Blokovat a přizpůsobte si tím, jaký obsah má být zobrazen. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+    .label = Sekce témat a sledování/blokování pro příběhy na stránce nového panelu
+experimental-features-newtab-sections-follow-block-description = Příběhy si na stránce nového panelu můžete uspořádat do tematických sekcí (Sport, Jídlo, Zábava a další), abyste je měli lépe strukturované a snadno je našli. Použijte naše nové ovládací prvky Sledovat a Blokovat a přizpůsobte si tím, jaký obsah má být zobrazen. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Přidání webových stránek na systémový hlavní panel
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description =
+    { -brand-product-name.case-status ->
+        [with-cases] Otevírejte často navštěvované weby jako webovou aplikaci ze systémového hlavního panelu. Hledejte ikonu „Přidat panel na systémový hlavní panel“ vpravo na adresním řádku, abyste daný web spustili ve zjednodušeném okně se všemi ochranami { -brand-product-name(case: "gen") }. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+       *[no-cases] Otevírejte často navštěvované weby jako webovou aplikaci ze systémového hlavního panelu. Hledejte ikonu „Přidat panel na systémový hlavní panel“ vpravo na adresním řádku, abyste daný web spustili ve zjednodušeném okně se všemi ochranami { -brand-product-name(case: "gen") }. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+    }
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Seznamy na { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Seznamy
+experimental-features-newtab-widget-lists-description =
+    { -brand-product-name.case-status ->
+        [with-cases] Při otevření nového panelu mějte seznam úkolů vždy na očích. Od balicích seznamů až po nákupní seznamy - své plány si připravte ve { -brand-product-name(case: "gen") }. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+       *[no-cases] Při otevření nového panelu mějte seznam úkolů vždy na očích. Od balicích seznamů až po nákupní seznamy - své plány si připravte v aplikaci { -brand-product-name }. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+    }
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Časovač na { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Časovač
+experimental-features-newtab-widget-timer-description = Nastavte si časovač, který vás nakopne k udržení cíle, nebo vám připomene, abyste se soustředili. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Seznamy a časovač na { -firefox-home-brand-name(case: "loc") }
+experimental-features-newtab-widget-lists-and-timer-description = Mějte svůj seznam úkolů v první řadě při otevření nového panelu. V aplikaci { -brand-product-name } plánujte, ať už balicí seznam či nákupní seznam. Nastavte si časovač, který vás nakopne k udržení cíle, nebo vám připomene, abyste se soustředili. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Předpověď počasí
+experimental-features-newtab-widget-weather-description = Získejte přehled o dnešním počasí díky hodinovým předpovědím. <a data-l10n-name="connect">Sdělte nám svůj názor</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Obrázek dne
+experimental-features-newtab-widget-picture-of-the-day-description = Dopřejte si každý den trochu úžasu. Najděte si nový obrázek, dozvíte se něco zajímavého a během chvilky si nastavíte novou tapetu. <a data-l10n-name="connect">Sdělte nám svůj názor</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Hodiny
+experimental-features-newtab-widget-clocks-description = Přidejte až čtyři hodiny s vlastními přezdívkami a sledujte čas na místech, která jsou pro vás důležitá. <a data-l10n-name="connect">Sdělte nám svůj názor</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Sémantické vyhledávání v historii
+experimental-features-semantic-history-search-description = Pomocí místního modelu strojového učení můžete na základě porozumění přirozenému jazyku v adresním řádku aplikace { -brand-product-name } navrhovat položky z historie, které souvisejí s vaším vyhledáváním. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Poznámky pro panely
+experimental-features-tab-notes-description = Poznámky na panelech jsou experimentální funkcí, která vám umožňuje přidávat rychlé poznámky k panelům prohlížeče. Zapište si kontext, připomenutí nebo další kroky, abyste se mohli vrátit a vzpomenout si, proč jste jej otevřeli. Budeme rádi za vaši zpětnou vazbu, protože tuto funkci neustále vylepšujeme. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Zjednodušená nabídka nad panelem
+experimental-features-tab-context-menu-description = Zobrazte jednodušší kontextovou nabídku po klepnutí pravým tlačítkem myši na panel. Je navržen tak, aby usnadňoval nalezení běžných akcí. <a data-l10n-name="connect">Sdílet zpětnou vazbu</a>

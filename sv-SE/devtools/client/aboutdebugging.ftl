@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Felsökning - runtime / { $selectedRun
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Detta { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Detta { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Detta { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Konfiguration
+about-debugging-sidebar-setup-title =
+    .title = Konfiguration
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Verktygslåda för multiprocess
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Huvudprocesser och innehållsprocesser för målwebbläsaren
+about-debugging-message-error-icon =
+    .alt = Felikon
+about-debugging-message-info-icon =
+    .alt = Informationsikon
+about-debugging-message-warning-icon =
+    .alt = Varningsikon
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Stäng meddelande
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Stäng meddelande
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Detaljer om felet
 about-debugging-message-details-label-warning = Varningsdetaljer
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Detaljer
+about-debugging-sidebar =
+    .heading = Felsökning

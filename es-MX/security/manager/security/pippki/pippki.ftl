@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Ver
 download-cert-view-text = Examinar certificado de CA
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -85,8 +82,13 @@ client-auth-cert-details-issued-by = Emitido por: { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Almacenado en: { $storedOn }
-client-auth-cert-remember-box =
-    .label = Recordar esta decisión
+client-auth-cert-remember-label = Recordar esta decisión:
+client-auth-cert-remember-never =
+    .label = Una vez
+client-auth-cert-remember-always =
+    .label = Permanentemente
+client-auth-cert-remember-temporarily =
+    .label = Para esta sesión
 
 ## Set password (p12) dialog
 
@@ -98,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Contraseña de respaldo del certificado (confirmar):
 set-password-reminder = Importante: Si olvidas la contraseña de respaldo de tu certificado no podrás restaurarlo más tarde. Guárdala en un lugar seguro.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Autenticación protegida
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Por favor, autentícate en el dispositivo de seguridad ({ $tokenName }). La forma de hacerlo depende del dispositivo (por ejemplo, usando un lector de huellas o ingresando un código en un teclado).
 
 ## Protected authentication alert
 

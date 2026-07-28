@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Koppeling openen in nieuw tabblad
     .accesskey = t
+main-context-menu-open-link-split-view =
+    .label = Koppeling openen in gesplitste weergave
+    .accesskey = s
 main-context-menu-open-link-container-tab =
     .label = Koppeling openen in nieuw containertabblad
     .accesskey = c
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Schone koppeling kopiëren
     .accesskey = k
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Koppeling zonder websitetracking kopiëren
-    .accesskey = i
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Bedieningselementen verbergen
     .accesskey = B
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Volledig scherm
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Beschrijving bekijken
     .accesskey = B
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Afbeelding zoeken met { $engine }
+    .accesskey = z
 main-context-menu-video-save-as =
     .label = Video opslaan als…
     .accesskey = n
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Audio e-mailen…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = Naar apparaat verzenden
+    .accesskey = z
+main-context-menu-send-to-mobile-2 =
+    .label = Naar Mobiel verzenden
+    .accesskey = z
+main-context-menu-send-to-mobile-sign-in = Meld u aan om tabbladen te verzenden
+main-context-menu-send-to-mobile-enable-sync2 = Schakel synchronisatie in om een tabblad te verzenden
+main-context-menu-send-to-mobile-connect-phone2 = Uw telefoon verbinden
+main-context-menu-send-to-mobile-device-missing2 = Ziet u uw apparaat niet?
+main-context-menu-send-to-mobile-sign-in-from-link = Meld u aan om een koppeling te verzenden
+main-context-menu-send-to-mobile-sign-in-from-page = Meld u aan om een pagina te verzenden
+main-context-menu-send-to-mobile-enable-sync3 = Schakel Synchronisatie in om tabbladen te verzenden
+main-context-menu-send-to-mobile-enable-sync-from-link = Schakel Synchronisatie in om een koppeling te verzenden
+main-context-menu-send-to-mobile-enable-sync-from-page = Schakel Synchronisatie in om een pagina te verzenden
+main-context-menu-send-to-mobile-connect-phone3 = Verbind een apparaat om tabbladen te verzenden
+main-context-menu-send-to-mobile-connect-phone-from-link = Verbind een apparaat om een koppeling te verzenden
+main-context-menu-send-to-mobile-connect-phone-from-page = Verbind een apparaat om een pagina te verzenden
 main-context-menu-save-to-pocket =
     .label = Pagina opslaan naar { -pocket-brand-name }
     .accesskey = k
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Koppeling naar apparaat verzenden
     .accesskey = d
+main-context-menu-link-send-to-mobile =
+    .label = Koppeling naar Mobiel verzenden
+    .accesskey = z
 main-context-menu-frame =
     .label = Dit deelvenster
     .accesskey = D
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Wachtwoord onthullen
     .accesskey = u
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Nieuw
+main-context-menu-pdfjs-copy-page =
+    .label = Pagina kopiëren
+main-context-menu-pdfjs-cut-page =
+    .label = Pagina knippen
+main-context-menu-pdfjs-delete-page =
+    .label = Pagina verwijderen
+main-context-menu-pdfjs-save-page =
+    .label = Selectie opslaan als…

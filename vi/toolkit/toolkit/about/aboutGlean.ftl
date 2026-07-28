@@ -21,6 +21,7 @@ about-glean-category-manual-testing = Kiểm thử thủ công
 about-glean-category-adhoc-testing = Kiểm thử Ad Hoc
 about-glean-category-profiler = Sử dụng Profiler
 about-glean-category-about-data = Về dữ liệu
+about-glean-category-metrics-table = Bảng số liệu
 about-glean-upload-enabled = Tải lên dữ liệu được bật.
 about-glean-upload-disabled = Tải lên dữ liệu bị tắt.
 about-glean-upload-enabled-local = Tải lên dữ liệu chỉ được bật để gửi đến máy chủ cục bộ.
@@ -108,6 +109,10 @@ about-glean-adhoc-note =
     Xin lưu ý rằng bạn đang sử dụng API Glean JS bằng cách sử dụng bảng điều khiển devtools.
     Điều này có nghĩa là danh mục chỉ số và tên chỉ số được định dạng trong
     <code>camelCase</code> sẽ không giống như ở Rust và C++ API.
+about-glean-profiler-explanation =
+    Để xem toàn bộ số liệu đã ghi lại, bạn có thể sử dụng { -profiler-brand-name }.
+    Đầu tiên, bạn phải <a data-l10n-name="firefox-profiler-link">ghi lại hồ sơ hiệu suất</a>.
+    Sau khi bạn đã ghi lại hồ sơ hiệu suất, chọn <q>Marker Chart</q> và nhìn vào các đánh dấu bên dưới <q>Telemetry</q>.
 about-glean-profiler-explanation-profiler =
     Trong hồ sơ hiệu suất, bạn có thể xem tất cả số liệu được thu thập, thời điểm chúng được
     thu thập và chính xác những giá trị nào được thu thập. Bằng cách di chuột vào các điểm đánh dấu riêng lẻ,
@@ -137,6 +142,58 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     Để ghi lại hồ sơ hiệu suất và xem tất cả số liệu được ghi lại, vui lòng sử dụng
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Tất cả số liệu
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Phân mục
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Tên
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Kiểu
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Giá trị
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Hành động
+about-glean-metrics-table-settings-button = Cài đặt
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Cài đặt bảng số liệu
+about-glean-metrics-table-settings-category-general = Tổng quát
+about-glean-metrics-table-settings-hide-empty-value-rows = Ẩn các hàng giá trị trống
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Ví dụ
+about-glean-metrics-table-settings-category-visualizations-histogram = Biểu đồ
+about-glean-metrics-table-settings-histograms-chart-max = Chiều rộng tối đa của biểu đồ
+about-glean-metrics-table-settings-category-visualizations-timeline = Dòng thời gian
+about-glean-metrics-table-settings-timelines-height = Chiều rộng
+about-glean-metrics-table-settings-timelines-width = Chiều dài
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Bộ lọc
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Thao tác này sẽ lọc bảng bên dưới theo danh mục, tên, kiểu và giá trị (nếu giá trị là kiểu đơn giản).
+about-glean-button-load-all = Tải tất cả các giá trị
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Xuất dữ liệu
+about-glean-button-load-value = Tải
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Tài liệu
+about-glean-button-watch = Theo dõi
+# Meaning "to stop watching"
+about-glean-button-unwatch = Bỏ theo dõi
+about-glean-no-data-to-display = Không có dữ liệu để hiển thị.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = Các số liệu <code>DualLabeledCounter</code> vẫn chưa được hỗ trợ trong chế độ xem của <code>about:glean</code>.
+about-glean-unknown-metric-type-warning = Kiểu số liệu không xác định.
 about-glean-about-data-explanation =
     Để duyệt danh sách dữ liệu đã thu thập, vui lòng tham khảo
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Dictionary</a>.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Ping tích hợp
+about-glean-ping-list-optgroup-custom =
+    .label = Ping tùy chỉnh

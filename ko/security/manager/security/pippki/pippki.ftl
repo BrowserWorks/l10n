@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = 보기
 download-cert-view-text = 인증 기관 인증서 조사
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = 영구히
 client-auth-cert-remember-temporarily =
     .label = 이 세션만
-client-auth-cert-remember-box =
-    .label = 이 선택 기억하기
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = 인증서 백업 비밀번호 (재입력):
 set-password-reminder = 중요: 만약 인증서 백업 비밀번호를 분실하면 백업한 인증서를 다시 가져올 수 없습니다.  안전한 곳에 기록해 두세요.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = 보호된 인증
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = 보안 기기({ $tokenName })로 인증해 주세요. 인증 방법은 기기에 따라 다릅니다 (예: 지문 인식기 사용 또는 키패드로 코드 입력).
 
 ## Protected authentication alert
 

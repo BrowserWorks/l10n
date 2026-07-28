@@ -17,7 +17,7 @@ page-subtitle =
 crashes-title = Hlášení pádů
 crashes-id = ID hlášení
 crashes-send-date = Odeslaná
-crashes-all-reports = Všechna hlášení o pádech
+crashes-all-reports = Všechna hlášení o pádu
 crashes-no-config = Tato aplikace nebyla pro zobrazení hlášení o pádech nastavena.
 support-addons-title = Doplňky
 support-addons-name = Název
@@ -142,6 +142,10 @@ place-database-stats-efficiency-perc = Efektivita (%)
 place-database-stats-sequentiality-perc = Sekvence (%)
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu
+place-database-last-idle-maintenance-data = Datum poslední údržby v době nečinnosti
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Datum poslední údržby
+place-database-last-integrity-corruption-date = Datum posledního porušení integrity
 a11y-title = Přístupnost
 a11y-activated = Aktivována
 a11y-force-disabled = Zakázána
@@ -168,7 +172,7 @@ startup-cache-dialog-title2 =
         [with-cases] Chcete restartovat { -brand-short-name(case: "acc") } a vymazat mezipaměť spouštění?
        *[no-cases] Chcete restartovat aplikaci { -brand-short-name } a vymazat mezipaměť spouštění?
     }
-startup-cache-dialog-body2 = Vaše nastavení i nainstalována rozšíření nebudou nijak ovlivněna.
+startup-cache-dialog-body2 = Vaše nastavení i nainstalovaná rozšíření nebudou nijak ovlivněna.
 restart-button-label = Restartovat
 
 ## Media titles
@@ -198,9 +202,11 @@ media-capabilities-enumerate = Vypsat databázi
 
 media-codec-support-sw-decoding = Softwarové dekódování
 media-codec-support-hw-decoding = Hardwarové dekódování
+media-codec-support-sw-encoding = Softwarové kódování
+media-codec-support-hw-encoding = Hardwarové kódování
 media-codec-support-codec-name = Název kodeku
 media-codec-support-supported = Podporované
-media-codec-support-unsupported = Nepodporováné
+media-codec-support-unsupported = Nepodporované
 media-codec-support-error = Informace o podpoře kodeků není k dispozici. Zkuste to znovu po přehrání mediálního souboru.
 media-codec-support-lack-of-extension = Nainstalovat rozšíření
 
@@ -351,7 +357,7 @@ unknown-failure = Zablokováno; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video dekodér
-reset-on-next-restart = Obnovit po při příštím restartu
+reset-on-next-restart = Obnovit při příštím restartu
 gpu-process-kill-button = Ukončit GPU proces
 gpu-device-reset = Obnova zařízení
 gpu-device-reset-button = Spustit obnovu zařízení

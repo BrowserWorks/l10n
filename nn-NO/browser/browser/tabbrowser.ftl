@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] Lat att fane
            *[other] Lat at { $tabCount } faner
         }
+tab-splitview-splitter =
+    .aria-label = Endre størrelse på delte visningsfaner
+tab-devtools-splitter =
+    .aria-label = Resize Developer Tools panel
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -162,8 +166,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Ikkje vis denne dialogen igjen.
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Varsel
-tabbrowser-confirm-close-duplicate-tabs-text = Vi held den siste aktive fana open
 tabbrowser-confirm-close-all-duplicate-tabs-title = Late att dupliserte faner?
 tabbrowser-confirm-close-all-duplicate-tabs-text =
     Vi vil late att dupliserte faner i dette vindauget. Siste aktive
@@ -183,9 +185,15 @@ tabbrowser-customizemode-tab-title = Tilpass { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = Lyd av i fane
     .accesskey = L
+tabbrowser-context-mute-tab2 =
+    .label = Slå av lyd
+    .accesskey = S
 tabbrowser-context-unmute-tab =
     .label = Lyd på i fane
     .accesskey = d
+tabbrowser-context-unmute-tab2 =
+    .label = Slå på lyd
+    .accesskey = S
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
     .label = Lyd av i faner
@@ -224,7 +232,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Gjeldande vindauge
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Opprett fanegruppe
 tab-group-editor-title-edit = Handsam fanegruppe
@@ -254,16 +262,33 @@ tab-group-editor-color-selector2-gray = Grå
     .title = Grå
 tab-group-editor-color-selector2-red = Raud
     .title = Raud
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Lukka
 tab-group-description = { $tabGroupName } — Fanegruppe
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Samanfolda
+tab-group-label-tooltip-expanded = { $tabGroupName } — Utfolda
+tab-group-preview-name =
+    .aria-label = Faner i ei samanfalda gruppe
 tab-context-unnamed-group =
     .label = Namnlaus gruppe
 tab-group-name-default = Namnlaus gruppe
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Fanegrupper
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Fanelista er open
+tab-group-preview-closed-description = Fanelista er attlaten
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -279,10 +304,34 @@ tab-context-move-tab-to-group =
            *[other] Legg til faner i gruppe
         }
     .accesskey = g
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Legg delt visning til ny gruppe
+           *[other] Legg delte visningar til ny gruppe
+        }
+    .accesskey = g
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Legg delt visning til ny gruppe
+           *[other] Add Split Views to Group
+        }
+    .accesskey = g
+tab-context-move-tab-to-group-saved-groups =
+    .label = Opne profileringsverktøy-panelet
 tab-group-editor-action-new-tab =
     .label = Ny fane i gruppe
 tab-group-editor-action-new-window =
     .label = Flytt gruppe til nytt vindauge
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Kopier lenke i gruppa
+           *[other] Copy { $linkCount } links in group
+        }
 tab-group-editor-action-save =
     .label = Lagre og lat att gruppe
 tab-group-editor-action-ungroup =
@@ -292,6 +341,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Ferdig
     .accessKey = F
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Del fanegruppe
 tab-context-reopen-tab-group =
     .label = Opne fanegruppe på nytt
 # Variables:
@@ -303,6 +355,26 @@ tab-context-ungroup-tab =
            *[other] Remove from Groups
         }
     .accesskey = F
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] { $tabCount } fane til
+       *[other] { $tabCount } faner til
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Rydd opp i fanene dine
+tab-groups-list-empty-description = Dra ei fane over ei anna eller høgreklikk på ei fane for å starte organisering. Vi vil lagre gruppene dine her slik at dei er lette å finne att seinare.
+tab-groups-list-empty-button = Opprett ei fanegruppe
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Ny gruppe
 
 ## Open/saved tab group context menu
 
@@ -328,3 +400,87 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Opne gruppe i nytt vindauge
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Legg til notat
+    .accesskey = L
+tab-context-edit-note =
+    .label = Rediger notat
+    .accesskey = R
+tab-context-delete-note =
+    .label = Slett notat
+    .accesskey = S
+tab-note-editor-title-create = Legg til notat
+tab-note-editor-title-edit = Rediger notat
+tab-note-editor-text-field =
+    .placeholder = Kva vil du hugse om denne fana?
+tab-note-editor-button-cancel =
+    .label = Avbryt
+    .accesskey = A
+tab-note-editor-button-save =
+    .label = Lagre
+    .accesskey = L
+tab-note-editor-button-delete =
+    .title = SLett notat
+    .aria-label = Slett notat
+    .accesskey = S
+tab-note-preview-edit-icon =
+    .alt = Rediger notat
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Les meir
+tab-note-panel-add-note-new-badge =
+    .label = Ny
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } teikn
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Legg til delt visning
+    .accesskey = e
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Opne i delt visning
+    .accesskey = p
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Opphev delt visning
+    .accesskey = O
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Byt om fanene
+    .accesskey = t
+tab-context-badge-new = Ny
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, Delt vising til venstre
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, Delt vising til høgre
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Splitt faner
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Reverser faner
+split-view-menuitem-close-both-tabs =
+    .label = Lat att begge fanene

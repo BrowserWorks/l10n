@@ -36,10 +36,17 @@ certificate-viewer-key-size = Размер ключа
 certificate-viewer-inc-locality = Населённый пункт юридического лица
 certificate-viewer-locality = Населённый пункт
 certificate-viewer-location = Расположение
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Имя лога
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID лога
 certificate-viewer-method = Метод
 certificate-viewer-modulus = Модуль
 certificate-viewer-name = Имя
+certificate-viewer-surname = Фамилия
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Имя
 certificate-viewer-not-after = Действителен по
 certificate-viewer-not-before = Действителен с
 certificate-viewer-organization = Организация
@@ -83,7 +90,7 @@ certificate-viewer-embedded-scts = Список SCT
 certificate-viewer-crl-endpoints = Точки распределения списков отзыва (CRL)
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
-certificate-viewer-download = Загрузить
+certificate-viewer-download = Скачать
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
 # Variables:
 #   $boolean (String) - true/false value for the specific field
@@ -110,6 +117,8 @@ certificate-viewer-export = Экспортировать
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (неизвестно)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = сертификат
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

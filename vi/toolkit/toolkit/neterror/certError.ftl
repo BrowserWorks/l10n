@@ -72,7 +72,15 @@ open-in-new-window-for-csp-or-xfo-error = Mở trang web trong cửa sổ mới
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = Để bảo vệ tính bảo mật của bạn, { $hostname } sẽ không cho phép { -brand-short-name } hiển thị trang nếu một trang web khác đã nhúng nó. Để xem trang này, bạn cần mở nó trong một cửa sổ mới.
 fp-certerror-view-certificate-link = Xem chứng chỉ của trang
+fp-certerror-return-to-previous-page-recommended-button-2 = Quay lại (khuyến nghị)
+    .accesskey = G
 fp-certerror-return-to-previous-page-recommended-button = Quay lại (khuyến nghị)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } cảnh báo bạn về trang web này vì chứng chỉ được cung cấp cho { $hostname } đã bị thu hồi và không còn đáng tin cậy nữa.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = Có lẽ không có gì, vì rất có thể vấn đề nằm ở chính trang web. Bạn có thể liên hệ với chủ sở hữu trang web để xem họ có đang khắc phục sự cố hay không.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = Quay lại (khuyến n
 fp-certerror-bad-domain-why-dangerous-body = Trang web được thiết lập để chỉ cho phép kết nối an toàn nhưng có vấn đề với chứng chỉ của trang web. Có thể có kẻ xấu đang cố mạo danh trang web. Các trang web sử dụng chứng chỉ do cơ quan cấp chứng chỉ cấp để chứng minh rằng họ thực sự đúng như họ nói. { -brand-short-name } không tin tưởng trang web này vì chứng chỉ của nó không hợp lệ cho { $hostname }. Chứng chỉ chỉ có giá trị cho: { $validHosts }.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = Có lẽ là không có gì, vì rất có thể trang web đó có vấn đề. Các trang web sử dụng chứng chỉ do cơ quan cấp chứng chỉ cấp để chứng minh rằng họ thực sự đúng như những gì họ nói. Tuy nhiên, nếu bạn đang sử dụng mạng công ty, nhóm hỗ trợ của bạn có thể có thêm thông tin. Nếu bạn đang sử dụng phần mềm chống vi-rút, hãy thử tìm kiếm các xung đột tiềm ẩn hoặc sự cố đã biết.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } cảnh báo bạn về trang web này vì chứng chỉ được cung cấp cho { $hostname } được cấp bởi một cơ quan cấp chứng chỉ không còn đáng tin cậy nữa.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = Có lẽ không có gì, vì rất có thể vấn đề nằm ở chính trang web. Bạn có thể liên hệ với chủ sở hữu trang web để xem họ có đang khắc phục sự cố hay không.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = Có vấn đề với chứng chỉ của trang web. Có thể có kẻ xấu đang cố mạo danh trang web. Các trang web sử dụng chứng chỉ do cơ quan cấp chứng chỉ cấp để chứng minh rằng họ thực sự đúng như họ nói. { -brand-short-name } không tin cậy trang web này vì chúng tôi không thể biết ai đã cấp chứng chỉ, chứng chỉ đó tự ký hoặc trang web không gửi chứng chỉ trung gian mà chúng tôi tin cậy.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = Mã lỗi: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } không tin tưởng { $hostname } bởi vì nó không thể chứng minh nó đáp ứng các yêu cầu về tính minh bạch của chứng chỉ công khai.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = Có vẻ không có gì, vì rất có thể trang web đó có vấn đề.
 fp-learn-more-about-secure-connection-failures = Tìm hiểu thêm về lỗi kết nối an toàn
 fp-learn-more-about-cert-issues = Tìm hiểu thêm về các vấn đề liên quan đến chứng chỉ này
 fp-learn-more-about-time-related-errors = Tìm hiểu thêm về cách khắc phục các lỗi liên quan đến thời gian
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = { -brand-short-name } Không tin tưởng trang web này vì có vẻ như chứng chỉ được cung cấp không hợp lệ cho đến { DATETIME($date, timeStyle: "short") } vào { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = Đồng hồ trên thiết bị của bạn được đặt thành { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }. Nếu điều này đúng thì vấn đề bảo mật có thể nằm ở chính trang web đó. Nếu sai, bạn có thể thay đổi nó trong cài đặt hệ thống của thiết bị.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = Chủ sở hữu của { $hostname } chưa thiết lập đúng cách và không thể tạo kết nối an toàn.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = Đồng hồ máy tính của bạn hiện tại là { DATETIME($now, dateStyle: "medium") }, việc này ngăn chặn { -brand-short-name } từ kết nối an toàn. Để truy cập <strong>{ $hostname }</strong>, hãy cập nhật đồng hồ máy tính trong cài đặt hệ thống của bạn thành ngày, giờ và múi giờ hiện tại, sau đó làm mới trang.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = Cập nhật đồng hồ máy tính trong cài đặt hệ thống thành ngày, giờ và múi giờ hiện tại. Máy tính của bạn hiện đang đặt ngày giờ là { DATETIME($now, dateStyle: "medium") }.
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = Trang này không chuyển hướng đúng cách
 unknownSocketType-title = Nhận được phản hồi lạ từ máy chủ
 nssFailure2-title = Không thể kết nối an toàn
 csp-xfo-error-title = { -brand-short-name } không thể mở trang này
+corruptedContentErrorv2-title = Lỗi nội dung không toàn vẹn
 corruptedContentError-title = Lỗi nội dung bị hỏng
 sslv3Used-title = Không thể kết nối một cách an toàn
 inadequateSecurityError-title = Kết nối của bạn không an toàn
@@ -190,3 +231,6 @@ fp-certerror-hide-advanced-button = Ẩn nâng cao
 fp-certerror-override-exception-button = Tiếp tục đến { $hostname } (có rủi ro)
 fp-certerror-intro = { -brand-short-name } phát hiện vấn đề bảo mật nghiêm trọng với <strong>{ $hostname }</strong>. Ai đó giả danh trang web này có thể cố lấy cắp những thứ như thông tin thẻ tín dụng, mật khẩu hoặc email.
 fp-certerror-expired-into = { -brand-short-name } phát hiện vấn đề bảo mật với <strong>{ $hostname }</strong>. Trang web không được thiết lập đúng hoặc đồng hồ trên thiết bị của bạn đã đặt sai.
+fp-certerror-transparency-intro = Một người nào đó giả vờ là <strong>{ $hostname }</strong> có thể cố gắng đánh cắp những thứ như thông tin thẻ tín dụng, mật khẩu hoặc email.
+fp-certerror-override-exception-button-2 = Tiếp tục đến { $hostname } (có rủi ro)
+    .accesskey = P

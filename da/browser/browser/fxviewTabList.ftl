@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Flyt længst til højre
     .accesskey = h
 fxviewtabrow-move-tab-window = Flyt til et nyt vindue
     .accesskey = n
+fxviewtabrow-send-to-device = Send til enhed
+    .accesskey = e
+fxviewtabrow-send-to-mobile = Send til mobil
+    .accesskey = e
 fxviewtabrow-send-tab = Send faneblad til enhed
     .accesskey = e
 fxviewtabrow-pin-tab = Fastgør faneblad
@@ -68,9 +72,17 @@ fxviewtabrow-unmute-tab = Slå lyden til i faneblad
 fxviewtabrow-options-menu-button =
     .title = Valgmuligheder for { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Slå lyden fra i faneblad
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Slå lyden til i faneblad
+fxviewtabrow-send-to-mobile-device-missing2 = Kan du ikke se din enhed?
+fxviewtabrow-send-to-mobile-not-verified = Kontoen er ikke bekræftet
+fxviewtabrow-send-to-mobile-verify-account = Bekræft din konto
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Log ind for at sende faneblade
+fxviewtabrow-send-to-mobile-turn-on-sync = Slå synkronisering til for at sende faneblade

@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Préférences
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Paramètres…
+menu-application-set-as-default =
+    .label = Définir { -brand-shorter-name } comme navigateur par défaut
 menu-application-services =
     .label = Services
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Partager
     .accesskey = P
+menu-file-share-qrcode =
+    .label = Générer un code QR…
+    .accesskey = G
+menu-file-share-qrcode2 =
+    .label = Générer un code QR
+    .accesskey = G
 menu-file-print-setup =
     .label = Mise en page…
     .accesskey = M
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Historique
 menu-view-synced-tabs-sidebar =
     .label = Onglets synchronisés
-menu-view-megalist-sidebar =
-    .label = Mots de passe
 menu-view-full-zoom =
     .label = Zoom
     .accesskey = Z
@@ -262,6 +259,13 @@ menu-profiles-manage-profiles =
     .label = Gérer les profils
 menu-profiles-new-profile =
     .label = Nouveau profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (actuel)
+menu-profiles-menu =
+    .label = Profils
+    .accesskey = P
 
 ## Tools Menu
 
@@ -301,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Informations sur la page
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Modifier un PDF…
+    .accesskey = M
 menu-settings =
     .label = Paramètres
     .accesskey =

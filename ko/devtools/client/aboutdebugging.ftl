@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = 디버깅 - 런타임 / { $selectedRun
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = 이 { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = 이 { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = 이 { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = 설정
+about-debugging-sidebar-setup-title =
+    .title = 설정
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = 다중 프로세스 도구상자
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = 대상 브라우저의 메인 프로세스 및 콘텐츠 프로세스
+about-debugging-message-error-icon =
+    .alt = 오류 아이콘
+about-debugging-message-info-icon =
+    .alt = 정보 아이콘
+about-debugging-message-warning-icon =
+    .alt = 경고 아이콘
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = 메시지 닫기
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = 메시지 닫기
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = 오류 세부 정보
 about-debugging-message-details-label-warning = 경고 세부 정보
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = 상세 정보
+about-debugging-sidebar =
+    .heading = 디버깅

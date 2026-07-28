@@ -130,8 +130,11 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Otwórz odnośnik w nowej karcie
     .accesskey = j
+main-context-menu-open-link-split-view =
+    .label = Otwórz odnośnik w podzielonym widoku
+    .accesskey = m
 main-context-menu-open-link-container-tab =
-    .label = Otwórz odnośnik w nowej karcie z kontekstem
+    .label = Otwórz odnośnik w nowej karcie w kontenerze
     .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Otwórz odnośnik w nowym oknie
@@ -167,11 +170,6 @@ main-context-menu-preview-link =
 # copied, like items that identify you for advertising purposes, and other items
 # sites add into URLs to help them deliver a certain browsing experience.
 main-context-menu-copy-clean-link =
-    .label = Kopiuj odnośnik bez elementów śledzących
-    .accesskey = b
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
     .label = Kopiuj odnośnik bez elementów śledzących
     .accesskey = b
 
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Ukryj elementy sterujące
     .accesskey = e
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Tryb pełnoekranowy
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Pokaż opis
     .accesskey = s
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Szukaj obrazu w { $engine }
+    .accesskey = S
 main-context-menu-video-save-as =
     .label = Zapisz wideo jako…
     .accesskey = s
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Wyślij dźwięk…
     .accesskey = d
+main-context-menu-send-to-device-2 =
+    .label = Wyślij na urządzenie
+    .accesskey = W
+main-context-menu-send-to-mobile-2 =
+    .label = Wyślij na telefon
+    .accesskey = W
+main-context-menu-send-to-mobile-sign-in = Zaloguj się, aby wysyłać karty
+main-context-menu-send-to-mobile-enable-sync2 = Włącz synchronizację, aby wysłać kartę
+main-context-menu-send-to-mobile-connect-phone2 = Połącz swój telefon
+main-context-menu-send-to-mobile-device-missing2 = Nie ma tutaj Twojego urządzenia?
+main-context-menu-send-to-mobile-sign-in-from-link = Zaloguj się, aby wysłać odnośnik
+main-context-menu-send-to-mobile-sign-in-from-page = Zaloguj się, aby wysłać stronę
+main-context-menu-send-to-mobile-enable-sync3 = Włącz synchronizację, aby wysyłać karty
+main-context-menu-send-to-mobile-enable-sync-from-link = Włącz synchronizację, aby wysłać odnośnik
+main-context-menu-send-to-mobile-enable-sync-from-page = Włącz synchronizację, aby wysłać stronę
+main-context-menu-send-to-mobile-connect-phone3 = Połącz urządzenie, aby wysyłać karty
+main-context-menu-send-to-mobile-connect-phone-from-link = Połącz urządzenie, aby wysłać odnośnik
+main-context-menu-send-to-mobile-connect-phone-from-page = Połącz urządzenie, aby wysłać stronę
 main-context-menu-save-to-pocket =
     .label = Wyślij stronę do { -pocket-brand-name }
     .accesskey = l
@@ -329,6 +350,9 @@ main-context-menu-add-engine =
     .accesskey = D
 main-context-menu-link-send-to-device =
     .label = Wyślij odnośnik do
+    .accesskey = W
+main-context-menu-link-send-to-mobile =
+    .label = Wyślij odnośnik na telefon
     .accesskey = W
 main-context-menu-frame =
     .label = Ta ramka
@@ -392,8 +416,18 @@ main-context-menu-eme-learn-more =
 # Variables
 #   $containerName (String): The name of the current container
 main-context-menu-open-link-in-container-tab =
-    .label = Otwórz w nowej karcie z kontekstem „{ $containerName }”
+    .label = Otwórz w nowej karcie w kontenerze „{ $containerName }”
     .accesskey = k
 main-context-menu-reveal-password =
     .label = Widoczne hasło
     .accesskey = h
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Nowe
+main-context-menu-pdfjs-copy-page =
+    .label = Kopiuj stronę
+main-context-menu-pdfjs-cut-page =
+    .label = Wytnij stronę
+main-context-menu-pdfjs-delete-page =
+    .label = Usuń stronę
+main-context-menu-pdfjs-save-page =
+    .label = Zapisz zaznaczone jako…

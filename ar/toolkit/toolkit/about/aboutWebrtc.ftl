@@ -12,9 +12,6 @@ about-webrtc-document-title = داخليات WebRTC
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = احفظ about:webrtc باسم
 
-## These labels are for a disclosure which contains the information for closed PeerConnection sections
-
-
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = سجلات إلغاء صدى الصوت
@@ -106,11 +103,6 @@ about-webrtc-log-section-hide-msg = أخفِ السجل
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (أُغلِقَ) { $now }
 
-## These are used to indicate what direction media is flowing.
-## Variables:
-##  $codecs - a list of media codecs
-
-
 ##
 
 about-webrtc-local-candidate = مرشح محلي
@@ -135,25 +127,15 @@ about-webrtc-fold-default-show-msg = اعرض التفاصيل
     .title = انقر لتوسيع هذا القسم
 about-webrtc-fold-default-hide-msg = أخفِ التفاصيل
     .title = انقر لطي هذا القسم
+about-webrtc-discarded-packets-label = الحزم  المهملة:
 about-webrtc-decoder-label = فاكك الترميز
 about-webrtc-encoder-label = المُرمِّز
-
-## SSRCs are identifiers that represent endpoints in an RTP stream
-
-
-## These are displayed on the button that shows or hides the
-## PeerConnection configuration disclosure
-
+about-webrtc-estimated-framerate = معدّل الإطارات المقدر
 
 ##
 
-
-## These are displayed on the button that shows or hides the
-## user modified configuration disclosure
-
-
-##
-
+# Section header for estimated bandwidths of WebRTC media flows
+about-webrtc-bandwidth-stats-heading = النطاق الترددي المقدر
 
 ##
 
@@ -176,17 +158,8 @@ about-webrtc-jitter-label = التقلقل { $jitter }
 # table with light blue background.
 about-webrtc-trickle-caption-msg = سيظهر المرشحون المتقاطرون (الواصلين بعد الإجابة) باللون الأزرق
 
-## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
-## See http://wikipedia.org/wiki/Session_Description_Protocol
-
-
-## These are displayed on the button that shows or hides the SDP information disclosure
-
-
 ## These are displayed on the button that shows or hides the Media Context information disclosure.
 ## The Media Context is the set of preferences and detected capabilities that informs
 ## the negotiated CODEC settings.
 
-
-##
-
+about-webrtc-media-context-hide-msg = أخفِ سياق الوسائط

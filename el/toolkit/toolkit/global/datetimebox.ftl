@@ -32,7 +32,7 @@ datetime-millisecond =
 datetime-dayperiod =
     .aria-label = ΠΜ/ΜΜ
 
-## Calendar button for input type=date
+## Date/time picker buttons
 
 
 # This label is used by screenreaders and other assistive technology
@@ -41,3 +41,5 @@ datetime-dayperiod =
 
 datetime-calendar =
     .aria-label = Ημερολόγιο
+datetime-time =
+    .aria-label = Ώρα

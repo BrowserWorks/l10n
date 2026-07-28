@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Cronologia navigazione e download
     .accesskey = z
 item-history-and-downloads-description2 = Cancella la cronologia di navigazione e di download
-item-history-form-data-downloads =
-    .label = Cronologia
-    .accesskey = C
-item-history-form-data-downloads-description = Elimina cronologia dei siti visitati e dei file scaricati, informazioni per la compilazione automatica dei moduli, ricerche
 item-cookies =
     .label = Cookie
     .accesskey = o
@@ -132,3 +128,6 @@ sanitize-everything-warning = Tutta la cronologia verrà eliminata.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Tutti gli elementi selezionati verranno eliminati.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Calcolo in corso…

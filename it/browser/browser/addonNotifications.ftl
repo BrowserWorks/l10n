@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Questo sito sta richiedendo accesso ai tuoi dispositivi MIDI (Musical Instrument Digital Interface). È possibile garantire l’accesso installando un componente aggiuntivo.
 site-permission-install-first-prompt-midi-message = Questo accesso potrebbe non essere completamente sicuro. Procedere solo se si considera il sito attendibile.
+site-permission-install-first-prompt-serial-header = Questo sito richiede l’accesso ai tuoi dispositivi seriali. È possibile garantire l’accesso installando un componente aggiuntivo.
+site-permission-install-first-prompt-serial-message = Questo accesso potrebbe non essere completamente sicuro. Procedere solo se si considera il sito attendibile.
 
 ##
 
@@ -125,15 +127,18 @@ addon-install-error-corrupt-file = Impossibile installare il componente aggiunti
 addon-install-error-file-access = Impossibile installare { $addonName } in quanto { -brand-short-name } non è in grado di modificare il file richiesto.
 addon-install-error-not-signed = L’installazione di un componente aggiuntivo non verificato è stata bloccata da { -brand-short-name }.
 addon-install-error-invalid-domain = Impossibile installare il componente aggiuntivo { $addonName } da questo indirizzo.
+addon-install-error-no-addon-name-file-access = Impossibile installare questo componente aggiuntivo in quanto { -brand-short-name } non è in grado di modificare il file richiesto.
 addon-local-install-error-network-failure = Impossibile installare questo componente aggiuntivo in quanto si è verificato un errore nel filesystem.
 addon-local-install-error-incorrect-hash = Impossibile installare questo componente aggiuntivo in quanto non corrisponde al componente aggiuntivo previsto da { -brand-short-name }.
 addon-local-install-error-corrupt-file = Impossibile installare questo componente aggiuntivo in quanto risulta danneggiato.
 addon-local-install-error-file-access = Impossibile installare { $addonName } in quanto { -brand-short-name } non è in grado di modificare il file richiesto.
 addon-local-install-error-not-signed = Impossibile installare questo componente aggiuntivo in quanto non verificato.
+addon-local-install-no-addon-name-error-file-access = Impossibile installare questo componente aggiuntivo in quanto { -brand-short-name } non è in grado di modificare il file richiesto.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = Impossibile installare { $addonName } in quanto non compatibile con { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } viola i criteri di BrowserWorks e non è possibile installarlo in { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } è soggetto a restrizioni e non può essere installato in { -brand-short-name }.
 addon-install-error-blocklisted = Impossibile installare { $addonName } in quanto comporta un rischio elevato per la stabilità o la sicurezza.
 addon-install-error-soft-blocked = { $addonName } viola i criteri di BrowserWorks e non è possibile installarlo in { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

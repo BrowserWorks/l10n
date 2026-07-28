@@ -205,3 +205,54 @@ bar-tooltip-cryptominer =
             [one] { $count } criptominero ({ $percentage }%)
            *[other] { $count } criptomineros ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Protecciones de privacidad
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqueado esta semana
+       *[other] { $count } bloqueados esta semana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } rastreador
+       *[other] { $count } rastreadores
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } creador de huellas digitales
+       *[other] { $count } creadores de huellas digitales
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de rastreo
+       *[other] { $count } cookies de rastreo
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } rastreador social
+       *[other] { $count } rastreadores sociales
+    }
+privacy-metrics-empty = No hay rastreadores bloqueados esta semana. { -brand-short-name } protege de las siguientes amenazas mientras se  navega.
+privacy-metrics-loading = Cargando estadísticas de protección…
+privacy-metrics-error = No se han podido cargar las estadísticas de protección.
+privacy-metrics-private-window = { -brand-short-name } sigue bloqueando rastreadores en ventanas privadas, pero no guarda el registro de lo que se bloqueó.
+
+## VPN promo card and banner
+
+protections-vpn-title = Lleve la protección de privacidad más allá del navegador
+protections-vpn-header-content = Proteja todo su dispositivo con { -mozilla-vpn-brand-name }. Con un solo toque, se cifra todo el tráfico y oculta su ubicación.
+protections-get-vpn-link = Obtener { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Suscrito
+protections-vpn-banner-header = Protección que se extiende más allá del navegador
+protections-vpn-banner-content = Pruebe { -mozilla-vpn-brand-name } sin riesgos y vea por qué TechRadar dice que “su velocidad, simplicidad y bajo precio mensual hacen que valga la pena probarla”.
+protections-vpn-banner-link = Obtener { -mozilla-vpn-brand-name }

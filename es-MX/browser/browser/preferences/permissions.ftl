@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Permitir
     .accesskey = P
+permissions-add =
+    .label = Agregar
+    .accesskey = A
 permissions-button-off =
     .label = Desactivar
     .accesskey = D
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Eliminar todos los sitios web
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Guardar cambios
+    .buttonaccesskeyaccept = G
 permission-dialog =
     .buttonlabelaccept = Guardar cambios
     .buttonaccesskeyaccept = G
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Puedes especificar qué sitios web pueden o no pueden utilizar siempre cookies y datos del sitio.  Escribe la dirección exacta del sitio que quieras gestionar y haz clic en Bloquear, Permitir en esta sesión o Permitir.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Excepciones - Borrar historial al cerrar
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Puedes determinar para cuales sitios web se conservarán datos cuando se elimine el historial al cerrar { -brand-short-name }. Ingresa la dirección exacta del sitio que quieres gestionar y haz clic en Permitir.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Puedes desactivar el modo solo HTTPS para sitios web específicos. { -brand-short-name } no intentará actualizar la conexión a HTTPS seguro para esos sitios. Las excepciones no se aplican a las ventanas privadas.
 permissions-exceptions-https-only-desc2 = Puedes desactivar el modo solo HTTPS para sitios web específicos. { -brand-short-name } no intentará actualizar la conexión a HTTPS seguro para esos sitios.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Sitios web permitidos: ventanas emergentes y redirecciones de terceros
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Puedes especificar qué sitios web tienen permiso para abrir ventanas emergentes y recibir redirecciones de marcos de terceros.
 
 ## Exceptions - Pop-ups
 
@@ -124,7 +144,7 @@ permissions-exceptions-addons-desc = Puedes especificar los sitios web que podr�
 ## Site Permissions - Autoplay
 
 permissions-site-autoplay-window2 =
-    .title = Configuración. Reproducción automática
+    .title = Configuración - Reproducción automática
     .style = { permissions-window2.style }
 permissions-site-autoplay-desc = Puedes administrar aquí los sitios que no siguen la configuración predeterminada de reproducción automática.
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Los siguientes sitios web han solicitado acceso a
 permissions-site-camera-disable-label =
     .label = Bloquear nuevas solicitudes solicitando acceder a tu cámara
 permissions-site-camera-disable-desc = Este evitará que cualquier sitio web no listado solicite permite para acceder a tu cámara. Bloqueando el acceso a tu cámara pueden fallar algunas características de los sitios web.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Ajustes - Apps y servicios del dispositivo
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Estos sitios web han solicitado acceso a las apps y servicios de este dispositivo. Puedes elegir permitir o bloquear que los sitios hagan esto.
+permissions-site-localhost-disable-label =
+    .label = Bloquear nuevas solicitudes de acceso a las apps y servicios en este dispositivo.
+permissions-site-localhost-disable-desc = Esto evitará que cualquier sitio web que no esté en la lista anterior solicite acceso a las apps y servicios de este dispositivo. Hacerlo podría afectar algunas funciones de los sitios.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Ajustes - Dispositivos de la red local
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Estos sitios web han solicitado acceso a las apps y servicios de los dispositivos conectados a tu Wi-Fi o red local. Puedes elegir permitir o bloquear que los sitios hagan esto.
+permissions-site-local-network-disable-label =
+    .label = Bloquear nuevas solicitudes de acceso a las apps y servicios en los dispositivos conectados a tu Wi-Fi o red local.
+permissions-site-local-network-disable-desc = Esto evitará que cualquier sitio web que no esté en la lista anterior solicite acceso a las apps y servicios de los dispositivos conectados a tu Wi-Fi o red local. Hacerlo podría afectar algunas funciones de los sitios.
 
 ## Site Permissions - Microphone
 

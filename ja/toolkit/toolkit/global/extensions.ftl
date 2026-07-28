@@ -67,7 +67,8 @@ webext-perms-optional-perms-allow =
 webext-perms-optional-perms-deny =
     .label = 拒否
     .accesskey = D
-webext-perms-host-description-all-urls = すべてのウェブサイトの保存されたデータへのアクセス
+webext-perms-host-description-all-urls = 保存されたすべてのウェブサイトのユーザーデータへのアクセス
+webext-perms-host-description-file-urls = ユーザーのコンピューター上のローカルファイルへのアクセス
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = { $domain } ドメイン内のサイトの保存されたデータへのアクセス
@@ -129,6 +130,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } が追加�
 
 webext-site-perms-header-with-gated-perms-midi = このアドオンは MIDI デバイスへのアクセスを { $hostname } に許可します。
 webext-site-perms-header-with-gated-perms-midi-sysex = このアドオンは SysEx 対応 MIDI デバイスへのアクセスを { $hostname } に許可します。
+webext-site-perms-header-with-gated-perms-serial = このアドオンはシリアルデバイスへのアクセスを { $hostname } に許可します。
 
 ##
 
@@ -138,7 +140,13 @@ webext-site-perms-header-with-gated-perms-midi-sysex = このアドオンは Sys
 webext-site-perms-description-gated-perms-midi =
     これらは通常、オーディオシンセサイザーのようなプラグインデバイスですが、あなたのコンピューターにも組み込まれているでしょう。
     
-    ウェブサイトは通常、MIDI デバイスへのアクセスを許可されていません。誤った使い方をすると、破損の原因となったりセキュリティの低下を招いたりする恐れがあります。
+    ウェブサイトは通常、MIDI デバイスへのアクセスが許可されていません。誤った使い方をすると、破損の原因となったりセキュリティの低下を招いたりする恐れがあります。
+webext-site-perms-description-gated-perms-webserial =
+    これらは USB または シリアルポート、Bluetooth 経由で接続するマイクロコントローラーや 3D プリンターなどの機器です。
+    
+    ウェブサイトからのアクセスを許可する機器を選べます。
+    
+    ウェブサイトは通常、シリアルデバイスへのアクセスが許可されていません。誤った使い方をすると、破損の原因となったりセキュリティの低下を招いたりする恐れがあります。
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -153,6 +161,7 @@ webext-site-perms-header-unsigned-with-perms = { $extension } を追加します
 
 webext-site-perms-midi = MIDI デバイスへのアクセス
 webext-site-perms-midi-sysex = SysEx 対応 MIDI デバイスへのアクセス
+webext-site-perms-serial = シリアルデバイスへのアクセス
 
 ## Colorway theme migration
 

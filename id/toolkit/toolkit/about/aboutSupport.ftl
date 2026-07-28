@@ -133,6 +133,10 @@ place-database-stats-efficiency-perc = Efisiensi (%)
 place-database-stats-sequentiality-perc = Urutan (%)
 place-database-integrity = Integritas
 place-database-verify-integrity = Verifikasikan Integritas
+place-database-last-idle-maintenance-data = Tanggal Pemeliharaan Menganggur Terakhir
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Tanggal Vakum Terakhir
+place-database-last-integrity-corruption-date = Tanggal Korupsi Integritas Terakhir
 a11y-title = Aksesibilitas
 a11y-activated = Aktif
 a11y-force-disabled = Aksesibilitas Dicegah
@@ -185,6 +189,8 @@ media-capabilities-enumerate = Daftar basis data
 
 media-codec-support-sw-decoding = Dekode Perangkat Lunak
 media-codec-support-hw-decoding = Dekode Perangkat Keras
+media-codec-support-sw-encoding = Pengodean Perangkat Lunak
+media-codec-support-hw-encoding = Pengodean Perangkat Keras
 media-codec-support-codec-name = Nama Codec
 media-codec-support-supported = Didukung
 media-codec-support-unsupported = Tidak didukung

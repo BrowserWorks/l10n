@@ -24,6 +24,10 @@ fxviewtabrow-dismiss-tab-button =
     .title = { $tabTitle } を閉じます
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 fxviewtabrow-just-now-timestamp = 直前
+
+# Strings below are used for context menu options within panel-list.
+# For developers, this duplicates command because the label attribute is required.
+
 # Strings below are used for context menu options within panel-list.
 # For developers, this duplicates command because the label attribute is required.
 fxviewtabrow-delete = 削除
@@ -51,6 +55,10 @@ fxviewtabrow-move-tab-end = 末尾へ移動
     .accesskey = E
 fxviewtabrow-move-tab-window = 新しいウィンドウへ移動
     .accesskey = W
+fxviewtabrow-send-to-device = 端末へ送信
+    .accesskey = n
+fxviewtabrow-send-to-mobile = モバイル端末へ送信
+    .accesskey = n
 fxviewtabrow-send-tab = タブを端末へ送信
     .accesskey = n
 fxviewtabrow-pin-tab = タブをピン留め
@@ -66,9 +74,18 @@ fxviewtabrow-unmute-tab = タブのミュートを解除
 fxviewtabrow-options-menu-button =
     .title = { $tabTitle } タブのオプション
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = タブをミュートにします
 fxviewtabrow-unmute-tab-button-no-context =
     .title = タブのミュートを解除します
+fxviewtabrow-send-to-mobile-connect-device = 端末を接続してタブを送信
+fxviewtabrow-send-to-mobile-device-missing2 = 端末が見つかりませんか？
+fxviewtabrow-send-to-mobile-not-verified = アカウントが未認証です
+fxviewtabrow-send-to-mobile-verify-account = アカウントを認証してください
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = ログインしてタブを送信
+fxviewtabrow-send-to-mobile-turn-on-sync = 同期をオンにしてタブを送信

@@ -7,19 +7,19 @@ profile-window-heading =
         [with-cases] Vyberte profil { -brand-short-name(case: "gen") }
        *[no-cases] Vyberte profil aplikace { -brand-short-name }
     }
-profile-window-body = Pracovní a osobní prohlížení, včetně takových věcí, jako jsou hesla a záložky, mějte zcela oddělené. Nebo si vytvořte profily pro všechny, kteří toto zařízení používají.
+profile-window-body = Pracovní a osobní prohlížení, včetně takových věcí, jako jsou hesla a záložky, mějte zcela oddělené. Nebo vytvořte profil každému, kdo používá toto zařízení.
 # This checkbox appears in the Choose profile window that appears when the browser is opened. "Show this" refers to this window, which is displayed when the checkbox is enabled.
 profile-window-checkbox-label-2 =
     .label =
         { -brand-short-name.case-status ->
-            [with-cases] Zvolit profil při spuštění { -brand-short-name(case: "gen") }
-           *[no-cases] Zvolit profil při spuštění aplikace { -brand-short-name }
+            [with-cases] Zvolit profil pokaždé při spuštění { -brand-short-name(case: "gen") }
+           *[no-cases] Zvolit profil pokaždé při spuštění aplikace { -brand-short-name }
         }
 # This subcopy appears below the checkbox when it is unchecked
 profile-window-checkbox-subcopy =
     { -brand-short-name.case-status ->
-        [with-cases] { -brand-short-name } otevře váš naposledy použitý profil.
-       *[no-cases] Aplikace { -brand-short-name } otevře váš naposledy použitý profil.
+        [with-cases] { -brand-short-name } se otevře s vámi naposledy používaným profilem.
+       *[no-cases] Aplikace { -brand-short-name } se otevře s vámi naposledy používaným profilem.
     }
 profile-window-create-profile = Vytvořit profil
 profile-card-edit-button =
@@ -38,12 +38,16 @@ profile-card =
 default-profile-name = Profil { $number }
 # The word 'original' is used in the sense that it is the initial or starting profile when you install Firefox.
 original-profile-name = Výchozí profil
+default-desktop-shortcut-name = { -brand-short-name }
 edit-profile-page-title = Upravit profil
 edit-profile-page-header = Upravit profil
 edit-profile-page-profile-name-label = Název profilu
 edit-profile-page-theme-header-2 =
     .label = Motiv vzhledu
 edit-profile-page-explore-themes = Prozkoumejte další motivy
+edit-profile-page-desktop-shortcut-header = Vytvořit zástupce na ploše
+edit-profile-page-desktop-shortcut-toggle =
+    .aria-label = Vytvořit zástupce na ploše
 edit-profile-page-avatar-header-2 =
     .label = Avatar
 edit-profile-page-delete-button =
@@ -56,21 +60,31 @@ avatar-selector-cancel-button =
 avatar-selector-save-button =
     .label = Uložit
 avatar-selector-upload-file = Nahrát soubor
-edit-profile-page-no-name = Tento profil pojmenujte, abyste jej později mohli najít. Kdykoli jej můžete přejmenovat.
+avatar-selector-drag-file = Nebo sem soubor přetáhněte
+avatar-selector-add-image = Přidat obrázek
+avatar-selector-crop = Oříznout
+edit-profile-page-no-name = Pojmenujte tento profil, abyste ho později mohli snadno najít. Kdykoliv ho můžete přejmenovat.
 edit-profile-page-duplicate-name = Tento název profilu již existuje. Zvolte jiné jméno.
 edit-profile-page-profile-saved = Uloženo
 new-profile-page-title = Nový profil
 new-profile-page-header = Přizpůsobte si svůj nový profil
 new-profile-page-header-description =
     { -brand-short-name.case-status ->
-        [with-cases] Každý profil uchovává svou jedinečnou historii procházení a nastavení odděleně od ostatních profilů. Navíc je ve výchozím nastavení zapnutá silná ochrana soukromí { -brand-short-name(case: "gen") }.
-       *[no-cases] Každý profil uchovává svou jedinečnou historii procházení a nastavení odděleně od ostatních profilů. Navíc je ve výchozím nastavení zapnutá silná ochrana soukromí aplikace { -brand-short-name }.
+        [with-cases] Každý profil uchovává svou jedinečnou historii prohlížení a svá jedinečná nastavení odděleně od ostatních profilů. Navíc jsou ve výchozím nastavení zapnuta silná opatření { -brand-short-name(case: "gen") } na ochranu soukromí.
+       *[no-cases] Každý profil uchovává svou jedinečnou historii prohlížení a svá jedinečná nastavení odděleně od ostatních profilů. Navíc jsou ve výchozím nastavení zapnuta silná opatření aplikace { -brand-short-name } na ochranu soukromí.
     }
 new-profile-page-learn-more = Zjistit více
 new-profile-page-input-placeholder =
     .placeholder = Zvolte název jako “Práce” nebo “Osobní”
 new-profile-page-done-button =
-    .label = Dokončit úpravy
+    .label = Hotovo
+# Variables
+#   $profilename (String) - The name of the copied profile.
+copied-profile-page-header-2 = Vaše kopie profilu “{ $profilename }” je připravena k přizpůsobení
+copied-profile-page-header-description = Vaše data a nastavení byla zkopírována do nového profilu. Teď mu dejte jméno, vzhled a přizpůsobte si ho podle sebe.
+restored-profile-page-header = Přizpůsobte svůj obnovený profil
+restored-profile-page-header-description = Každý profil uchovává svou jedinečnou historii prohlížení a svá jedinečná nastavení odděleně od ostatních profilů. Navíc jsou ve výchozím nastavení zapnuta silná opatření aplikace { -brand-short-name } na ochranu soukromí.
+restored-profile-page-learn-more = Zjistit více
 profile-window-title-2 = { -brand-short-name } - Výběr profilu
 profile-window-logo =
     .alt =
@@ -93,9 +107,12 @@ delete-profile-windows = Otevřená okna
 # Open is an adjective, as in "browser tabs currently open".
 delete-profile-tabs = Otevřené panely
 delete-profile-bookmarks = Záložky
-delete-profile-history = Historie (navštívené stránky, cookies, údaje stránek)
+delete-profile-history = Historie (navštívené stránky, cookies, data stránek)
 delete-profile-autofill = Automaticky vyplněné údaje (adresy, platební metody)
 delete-profile-logins = Hesla
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-page-title-2 = Smazat profil “{ $profilename }”
 
 ##
 
@@ -112,6 +129,8 @@ profiles-light-theme = Světlý
 profiles-dark-theme = Tmavý
 # The default system theme
 profiles-system-theme = Systémový
+profiles-system-theme-title =
+    .title = Použít motiv podle systému
 # This light theme features sunny colors such as goldenrod and pale yellow. Its name evokes the color of a marigold flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-marigold-theme-2 = Měsíčková žlutá
 # This light theme features various shades of soft, muted purples. Its name evokes the color of a lavender flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
@@ -126,6 +145,47 @@ profiles-ocean-theme-2 = Modrý oceán
 profiles-terracotta-theme-2 = Cihlově červená
 # This dark theme features forest green, dusky green with a gray undertone, and a muted sage green. Its name evokes the rich color of green moss in the forest. This name can be translated directly if its easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-moss-theme-2 = Mechově zelená
+profiles-gray-theme = Šedá
+profiles-gray-theme-title =
+    .title = Použít šedý motiv
+profiles-yellow-theme = Žlutá
+profiles-yellow-theme-title =
+    .title = Použít žlutý motiv
+profiles-orange-theme = Oranžová
+profiles-orange-theme-title =
+    .title = Použít oranžový motiv
+profiles-red-theme = Červená
+profiles-red-theme-title =
+    .title = Použít červený motiv
+profiles-pink-theme = Růžová
+profiles-pink-theme-title =
+    .title = Použít růžový motiv
+profiles-purple-theme = Fialová
+profiles-purple-theme-title =
+    .title = Použít fialový motiv
+profiles-violet-theme = Fialová
+profiles-violet-theme-title =
+    .title = Použít fialový motiv
+profiles-blue-theme = Modrá
+profiles-blue-theme-title =
+    .title = Použít modrý motiv
+profiles-green-theme = Zelená
+profiles-green-theme-title =
+    .title = Použít zelený motiv
+profiles-cyan-theme = Azurová
+profiles-cyan-theme-title =
+    .title = Použít azurový motiv
+profiles-custom-theme-title =
+    .title = Použít vlastní motiv
+
+## Data collection settings changed (multi-profile)
+
+# Full infobar message with inline bold title followed by body text
+multiprofile-data-collection-message = <strong>Nastavení shromažďování dat bylo změněno.</strong> Změny provedené v jiném profilu se projeví ve všech profilech na tomto zařízení.
+# Primary button label to open the Data collection section in Settings
+multiprofile-data-collection-view-settings = Zobrazit nastavení
+# Secondary button label to dismiss the infobar without action
+multiprofile-data-collection-dismiss = Zavřít
 
 ## Alternative text for default profile icons
 
@@ -133,20 +193,174 @@ book-avatar-alt =
     .alt = Kniha
 briefcase-avatar-alt =
     .alt = Kufřík
+picture-avatar-alt =
+    .alt = Obrázek
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-alt =
+    .alt = Řemeslo
 flower-avatar-alt =
     .alt = Květina
+folder-avatar-alt =
+    .alt = Složka
+hammer-avatar-alt =
+    .alt = Kladivo
 heart-avatar-alt =
     .alt = Srdce
+heart-rate-avatar-alt =
+    .alt = Srdeční frekvence
+clock-avatar-alt =
+    .alt = Hodiny
+leaf-avatar-alt =
+    .alt = List
+lightbulb-avatar-alt =
+    .alt = Žárovka
+makeup-avatar-alt =
+    .alt = Líčení
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-alt =
+    .alt = Zpráva
+musical-note-avatar-alt =
+    .alt = Hudební nota
+palette-avatar-alt =
+    .alt = Paleta
+paw-print-avatar-alt =
+    .alt = Otisk tlapky
+plane-avatar-alt =
+    .alt = Letadlo
+# Present refers to a gift box, not the current time period
+present-avatar-alt =
+    .alt = Dárek
 shopping-avatar-alt =
     .alt = Nákupní košík
+soccer-ball-avatar-alt =
+    .alt = Fotbalový míč
+sparkle-single-avatar-alt =
+    .alt = Sparkle
 star-avatar-alt =
     .alt = Hvězdička
+video-game-controller-avatar-alt =
+    .alt = Ovladač pro videohry
+custom-avatar-alt =
+    .alt = Vlastní avatar
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-alt =
+    .alt = Zeměkoule
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar-alt =
+    .alt = Diamant
+barbell-avatar-alt =
+    .alt = Činka
+bike-avatar-alt =
+    .alt = Kolo
 
-## Labels for default avatar icons
+## Tooltips for default avatar icons
 
 book-avatar = Kniha
 briefcase-avatar = Kufřík
+clock-avatar = Hodiny
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar = Řemeslo
+custom-avatar = Vlastní avatar
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar = Diamant
 flower-avatar = Květina
+folder-avatar = Složka
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar = Zeměkoule
+hammer-avatar = Kladivo
 heart-avatar = Srdce
+heart-rate-avatar = Srdeční frekvence
+leaf-avatar = List
+lightbulb-avatar = Žárovka
+makeup-avatar = Líčení
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar = Zpráva
+musical-note-avatar = Hudební nota
+palette-avatar = Paleta
+paw-print-avatar = Otisk tlapky
+picture-avatar = Obrázek
+plane-avatar = Letadlo
+# Present refers to a gift box, not the current time period
+present-avatar = Dárek
 shopping-avatar = Nákupní košík
+soccer-ball-avatar = Fotbalový míč
+sparkle-single-avatar = Sparkle
 star-avatar = Hvězdička
+video-game-controller-avatar = Ovladač pro videohry
+custom-avatar-crop-back-button =
+    .aria-label = Zpět
+custom-avatar-crop-view =
+    .aria-label = Zobrazení oříznutého obrázku
+custom-avatar-crop-area =
+    .aria-label = Upravit oblast oříznutí
+custom-avatar-drag-handle =
+    .aria-label = Změnit velikost oblasti oříznutí
+profiles-appmenu-callout-tour-title = Váš nový profil je připravený
+# "Spin up another" means creating another profile, “Hop between your digital lives" is referring to switching between different profiles such as work, personal, etc.
+profiles-appmenu-callout-tour-subtitle = Klepněte v nabídce ☰ na své profilové jméno a otevřete si další, upravte tento nebo přepněte mezi svými digitálními životy.
+profiles-appmenu-callout-tour-primary-button = Jak na to
+barbell-avatar = Činka
+bike-avatar = Kolo
+
+## Tooltips for default avatar icons
+
+barbell-avatar-tooltip =
+    .tooltiptext = Použít avatar činky
+bike-avatar-tooltip =
+    .tooltiptext = Použít avatar kola
+book-avatar-tooltip =
+    .tooltiptext = Použít avatar knihy
+briefcase-avatar-tooltip =
+    .tooltiptext = Použít avatar aktovky
+picture-avatar-tooltip =
+    .tooltiptext = Použít obrázkový avatar
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-tooltip =
+    .tooltiptext = Použít avatara řemesla
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-tooltip =
+    .tooltiptext = Použít avatar zeměkoule
+diamond-avatar-tooltip =
+    .tooltiptext = Použít diamantový avatar
+flower-avatar-tooltip =
+    .tooltiptext = Použít květinový avatar
+folder-avatar-tooltip =
+    .tooltiptext = Použít avatar složky
+hammer-avatar-tooltip =
+    .tooltiptext = Použít avataru s kladívkem
+heart-avatar-tooltip =
+    .tooltiptext = Použít avatar srdíčka
+heart-rate-avatar-tooltip =
+    .tooltiptext = Použít avatar tepové frekvence
+clock-avatar-tooltip =
+    .tooltiptext = Použít avatar hodin
+leaf-avatar-tooltip =
+    .tooltiptext = Použít avatar listu
+lightbulb-avatar-tooltip =
+    .tooltiptext = Použít avatar žárovky
+makeup-avatar-tooltip =
+    .tooltiptext = Použít avatar make-upu
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-tooltip =
+    .tooltiptext = Použít avatar zprávy
+musical-note-avatar-tooltip =
+    .tooltiptext = Použít avatar hudební noty
+palette-avatar-tooltip =
+    .tooltiptext = Použít avatar palety
+paw-print-avatar-tooltip =
+    .tooltiptext = Použít avatar s potiskem tlapky
+plane-avatar-tooltip =
+    .tooltiptext = Použít avatar letadla
+# Present refers to a gift box, not the current time period
+present-avatar-tooltip =
+    .tooltiptext = Použít současný avatar
+shopping-avatar-tooltip =
+    .tooltiptext = Použít avatar nákupního košíku
+soccer-ball-avatar-tooltip =
+    .tooltiptext = Použít avatar fotbalového míče
+sparkle-single-avatar-tooltip =
+    .tooltiptext = Použít avatar jiskry
+star-avatar-tooltip =
+    .tooltiptext = Použít avatar hvězdičky
+video-game-controller-avatar-tooltip =
+    .tooltiptext = Použít avatar herního ovladače

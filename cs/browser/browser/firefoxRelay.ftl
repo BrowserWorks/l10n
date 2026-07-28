@@ -23,18 +23,37 @@ firefox-relay-get-reusable-masks-failed =
        *[other] Služba { -relay-brand-name } nenašla znovupoužitelné masky. Kód chyby HTTP: { $status }.
     }
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = Abyste mohli používat { -relay-brand-name(case: "acc") }, musíte se přihlásit k { -fxaccount-brand-name(case: "", capitalization: "lower") }.
-firefox-relay-must-login-to-account = Pokud chcete používat své e-mailové masky služby { -relay-brand-name }, přihlaste se ke svému účtu.
+firefox-relay-must-login-to-account = Pokud chcete používat své e-mailové masky služby { -relay-brand-name }, přihlaste se do svého účtu.
 firefox-relay-get-unlimited-masks =
     .label = Spravovat masky
     .accesskey = m
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header =
+    { $count ->
+        [one] Využili jste všechnu { $count } bezplatnou e-mailovou masku
+        [few] Využili jste všechny { $count } bezplatné e-mailové masky
+        [many] Využili jste všech { $count } bezplatných e-mailových masek
+       *[other] Využili jste všech { $count } bezplatných e-mailových masek
+    }
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = Můžete znovu použít jednu z masek, nebo zobrazit všechny masky a vybrat si jinou.
+firefox-relay-reuse-masks-select-label = Vyberte nedávnou masku
+firefox-relay-see-all-masks =
+    .label = Zobrazit všechny masky
+    .accesskey = m
+firefox-relay-dismiss =
+    .label = Zrušit
+    .accesskey = Z
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Chraňte svou e-mailovou adresu:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = Použít e-mailovou masku služby { -relay-brand-name }
+firefox-relay-use-mask-title-1 = Použít e-mailovou masku
 firefox-relay-use-mask-title = Použít e-mailovou masku služby { -relay-brand-name }
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = Předcházejte nevyžádané poště pomocí bezplatné e-mailové masky
@@ -72,14 +91,14 @@ firefox-relay-and-fxa-opt-in-confirmation-postpone =
 
 ## The "control" variation of the Relay offer popup
 
-firefox-relay-and-fxa-popup-notification-second-sentence-control = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste ke svému účtu
+firefox-relay-and-fxa-popup-notification-second-sentence-control = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste do svého účtu
 firefox-relay-offer-legal-notice-control = Registrací a vytvořením e-mailové masky souhlasíte s <label data-l10n-name="tos-url">podmínkami poskytování služby</label> a se <label data-l10n-name="privacy-url">zásadami ochrany osobních údajů</label>.
 
 ## The "basic-info" variation of the Relay offer popup
 
 firefox-relay-and-fxa-popup-notification-header-basic-info = Předcházejte nevyžádané poště pomocí bezplatné e-mailové masky
 firefox-relay-and-fxa-popup-notification-first-sentence-basic-info = Zabraňte nevyžádané poště tím, že skryjete svou skutečnou e-mailovou adresu pomocí bezplatné <label data-l10n-name="firefox-relay-learn-more-url">e-mailové masky</label>. E-maily z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">tohoto webu</label> vám budou stále chodit do schránky, ale se skrytým e-mailem.
-firefox-relay-and-fxa-popup-notification-second-sentence-basic-info = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste ke svému účtu
+firefox-relay-and-fxa-popup-notification-second-sentence-basic-info = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste do svého účtu
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
     .label = Zaregistrovat se
     .accesskey = Z
@@ -88,7 +107,9 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain = Získejte zdarma e-mailovou masku
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = Chraňte svou e-mailovou schránku před nevyžádanou poštou pomocí bezplatné <label data-l10n-name="firefox-relay-learn-more-url">e-mailové masky</label> pro skrytí své skutečné adresy. E-maily z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">této stránky</label> vám budou i nadále chodit do e-mailové schránky, vaše skutečná e-mailová adresa ale zůstane skryta.
-firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste ke svému účtu
+firefox-relay-and-fxa-popup-notification-first-sentence = Chraňte svou schránku před nevyžádanou poštou pomocí bezplatné <label data-l10n-name="firefox-relay-learn-more-url">e-mailové masky { -relay-brand-name } </label>, která skryje vaši skutečnou adresu. E-maily z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">této stránky</label> vám budou stále chodit do schránky, ale se skrytým e-mailem.
+firefox-relay-offer-why-to-use-relay-1 = Chraňte svou schránku před nevyžádanou poštou pomocí bezplatné <label data-l10n-name="firefox-relay-learn-more-url">e-mailové masky { -relay-brand-name } </label>, která skryje vaši skutečnou adresu. E-maily z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">této stránky</label> vám budou stále chodit do schránky, ale se skrytým e-mailem.
+firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste do svého účtu
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = Zaregistrovat se
     .accesskey = Z
@@ -97,7 +118,7 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain-and-value-prop = Chraňte se před nevyžádanou poštou pomocí e-mailové masky
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain-and-value-prop = Chraňte se před nevyžádanou poštou skrytím své skutečné adresy pomocí <label data-l10n-name="firefox-relay-learn-more-url">e-mailové masky</label>. Do vaší běžné e-mailové schránky vám budou i nadále doručovány e-maily z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">této stránky</label>, vaše skutečná adresa ale bude zamaskována.
-firefox-relay-and-fxa-popup-notification-second-sentence-with-domain-and-value-prop = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste ke svému účtu
+firefox-relay-and-fxa-popup-notification-second-sentence-with-domain-and-value-prop = Pro použití e-mailové masky se nejprve zaregistrujte nebo přihlaste do svého účtu
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain-and-value-prop =
     .label = Další
     .accesskey = D

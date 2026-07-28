@@ -23,7 +23,7 @@ xpinstall-prompt-never-allow =
 # Long text in this context make the dropdown menu extend awkwardly to the left,
 # avoid a localization that's significantly longer than the English version.
 xpinstall-prompt-never-allow-and-report =
-    .label = 回報可疑網站
+    .label = 檢舉可疑網站
     .accesskey = R
 # Accessibility Note:
 # Be sure you do not choose an accesskey that is used elsewhere in the active context (e.g. main menu bar, submenu of the warning popup button)
@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = 此網站要求存取您的 MIDI（樂器數位介面）裝置，安裝附加元件後即可存取裝置。
 site-permission-install-first-prompt-midi-message = 這個存取請求不一定是安全的，請只在您信任此網站時才繼續。
+site-permission-install-first-prompt-serial-header = 此網站請求存取您的序列埠裝置。安裝附加元件後即可授權網站進行存取。
+site-permission-install-first-prompt-serial-message = 這個存取請求不一定是安全的，請只在您信任此網站時才繼續。
 
 ##
 
@@ -80,7 +82,7 @@ addon-removal-title = 要移除 { $name } 嗎？
 #   $name (String): the name of the extension which is about to be removed.
 addon-removal-message = 要從 { -brand-shorter-name } 移除 { $name } 嗎？
 addon-removal-button = 移除
-addon-removal-abuse-report-checkbox = 回報此擴充套件給 { -vendor-short-name }
+addon-removal-abuse-report-checkbox = 向 { -vendor-short-name } 檢舉此擴充套件
 # "it" refers to the local AI model that is paired to the AI feature
 addon-mlmodel-removal-body = 若您用到會使用此模型的功能或擴充套件，將會重新安裝此模型。
 # Variables:
@@ -113,15 +115,18 @@ addon-install-error-corrupt-file = 因為檔案看起來已經毀損，無法安
 addon-install-error-file-access = 因為 { -brand-short-name } 無法修改必要的檔案，無法安裝 { $addonName }。
 addon-install-error-not-signed = { -brand-short-name } 已防止此網站安裝未驗證的附加元件。
 addon-install-error-invalid-domain = 無法從此位置安裝 { $addonName } 附加元件。
+addon-install-error-no-addon-name-file-access = 因為 { -brand-short-name } 無法修改必要的檔案，無法安裝附加元件。
 addon-local-install-error-network-failure = 由於檔案系統錯誤，無法安裝此附加元件。
 addon-local-install-error-incorrect-hash = 因為不符合 { -brand-short-name } 所預期的附加元件，無法安裝。
 addon-local-install-error-corrupt-file = 檔案似乎已損毀，無法安裝此附加元件。
 addon-local-install-error-file-access = 因為 { -brand-short-name } 無法修改必要的檔案，無法安裝 { $addonName }。
 addon-local-install-error-not-signed = 因為此附加元件尚未經過驗證，無法安裝。
+addon-local-install-no-addon-name-error-file-access = 因為 { -brand-short-name } 無法修改必要的檔案，無法安裝附加元件。
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = 因為與 { -brand-short-name } { $appVersion } 不相容，無法安裝 { $addonName }。
 addon-install-error-hard-blocked = { $addonName } 違反了 BrowserWorks 的政策規定，無法安裝到 { -brand-short-name }。
+addon-install-error-soft-blocked2 = { $addonName } 受到限制，無法安裝到 { -brand-short-name }。
 addon-install-error-blocklisted = 無法安裝 { $addonName }，因為它很可能會造成穩定性或安全性問題。
 addon-install-error-soft-blocked = { $addonName } 違反了 BrowserWorks 的政策規定，無法安裝到 { -brand-short-name }。
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

@@ -20,6 +20,7 @@ about-glean-category-manual-testing = Ручное тестирование
 about-glean-category-adhoc-testing = Специальное тестирование
 about-glean-category-profiler = Использование профайлера
 about-glean-category-about-data = О данных
+about-glean-category-metrics-table = Таблица метрик
 about-glean-upload-enabled = Выгрузка данных включена.
 about-glean-upload-disabled = Выгрузка данных отключена.
 about-glean-upload-enabled-local = Выгрузка данных включена только для отправки на локальный сервер.
@@ -109,7 +110,7 @@ about-glean-adhoc-note =
 about-glean-profiler-explanation =
     Чтобы просмотреть все записанные метрики, вы можете использовать файл { -profiler-brand-name }.
     Сначала вы должны <a data-l10n-name="firefox-profiler-link">захватить профиль производительности</a>.
-    Записав профиль, выберите <q>Диаграмма маркеров</q> и посмотрите на маркеры в разделе <q>Телеметрия</q>.
+    Записав профиль, выберите «<q>Диаграмма маркеров</q>» и посмотрите на маркеры в разделе «<q>Телеметрия</q>».
 about-glean-profiler-explanation-profiler =
     В профиле производительности вы можете увидеть все собранные метрики, когда они были
     собраны, и какие именно значения были собраны. При наведении на отдельные маркеры,
@@ -124,7 +125,7 @@ about-glean-about-data-description =
     Есть несколько различных инструментов, которые вы можете использовать для просмотра своих данных, в зависимости от
     того, что вы ищете.
 about-glean-about-data-description-list-intro =
-    Пожалуйста, обратитесь к приведенному ниже списку для конкретных сценариев
+    Пожалуйста, обратитесь к приведённому ниже списку для конкретных сценариев
     использования для каждого инструмента:
 about-glean-about-data-list-item-dictionary =
     Чтобы просмотреть список данных, собираемых { -glean-brand-name } для каждого приложения, обратитесь к
@@ -139,6 +140,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     Чтобы записать профиль производительности и просмотреть все записанные метрики, используйте
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>.
+about-glean-metrics-table-header = Все метрики
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Категория
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Имя
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Тип
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Значение
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Действия
+about-glean-metrics-table-settings-button = Настройки
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Настройки таблицы метрик
+about-glean-metrics-table-settings-category-general = Основные
+about-glean-metrics-table-settings-hide-empty-value-rows = Скрыть строки с пустыми значениями
+about-glean-metrics-table-settings-category-visualizations = Визуализации
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Пример
+about-glean-metrics-table-settings-category-visualizations-histogram = Гистограмма
+about-glean-metrics-table-settings-histograms-chart-max = Максимальная высота карты
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Максимальная масштабированная высота
+about-glean-metrics-table-settings-histograms-box-padding = Отступы
+about-glean-metrics-table-settings-histograms-chart-padding = Отступы в диаграмме
+about-glean-metrics-table-settings-histograms-left-padding = Дополнительный отступ слева
+about-glean-metrics-table-settings-category-visualizations-timeline = Временная шкала
+about-glean-metrics-table-settings-timelines-height = Высота
+about-glean-metrics-table-settings-timelines-width = Ширина
+about-glean-metrics-table-settings-timelines-chart-padding = Отступы в диаграмме
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Радиус круга
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Смещение оси Y по X
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Смещение оси Y по Y
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Фильтр
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Это отфильтрует расположенную ниже таблицу на основе категории, имени, типа и значения (если значение имеет простой тип).
+about-glean-button-load-all = Загрузить все значения
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Экспорт данных
+about-glean-button-load-value = Загрузить
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Документация
+about-glean-button-watch = Отслеживать
+# Meaning "to stop watching"
+about-glean-button-unwatch = Снять отслеживание
+about-glean-no-data-to-display = Нет данных для отображения.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = Метрики <code>DualLabeledCounter</code> пока не поддерживаются во вкладке <code>about:glean</code>.
+about-glean-unknown-metric-type-warning = Неизвестный тип метрики.
 about-glean-about-data-explanation =
     Чтобы просмотреть список собранных данных, обратитесь к
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } Словарю</a>.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Встроенные пинги
+about-glean-ping-list-optgroup-custom =
+    .label = Пользовательские пинги

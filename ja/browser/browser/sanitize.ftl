@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = 表示したページとダウンロードの履歴
     .accesskey = B
 item-history-and-downloads-description2 = 表示したページとダウンロードの履歴を消去します
-item-history-form-data-downloads =
-    .label = 履歴
-    .accesskey = H
-item-history-form-data-downloads-description = サイトとダウンロードの履歴、保存したフォーム情報と検索履歴を消去します
 item-cookies =
     .label = Cookie
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = すべての履歴が消去されます。
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = 選択した項目の履歴がすべて消去されます。
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = 計算中...

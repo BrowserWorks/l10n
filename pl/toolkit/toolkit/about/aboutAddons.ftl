@@ -120,6 +120,8 @@ private-browsing-description2 =
     w ustawieniach, rozszerzenie nie będzie działało w trybie prywatnym i nie będzie miało dostępu
     do działań użytkownika. Wprowadziliśmy tę zmianę, aby prywatne przeglądanie zawsze było prywatne.
     <label data-l10n-name="private-browsing-learn-more">Więcej informacji o zarządzaniu ustawieniami rozszerzeń.</label>
+aboutaddons-sidebar =
+    .heading = Dodatki
 addon-category-discover = Polecane
 addon-category-discover-title =
     .title = Polecane
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Włącz
 extensions-warning-imported-addons2 =
     .message = Dokończ instalację rozszerzeń, które zostały zaimportowane do { -brand-short-name(case: "gen") }.
 extensions-warning-imported-addons-button = Zainstaluj rozszerzenia
+extensions-warning-safe-mode3 =
+    .message = Wszystkie dodatki zostały wyłączone z powodu działania w trybie rozwiązywania problemów
 
 ## Strings connected to add-on updates
 
@@ -285,6 +289,10 @@ colorway-removal-notice-message =
     .message = Kolekcja kolorystyk { -brand-product-name(case: "gen") } została odświeżona. Usunęliśmy stare wersje z listy „Zachowane motywy”. Na witrynie z dodatkami znajdziesz nowe.
 colorway-removal-notice-learn-more = Więcej informacji
 colorway-removal-notice-button = Pobierz odświeżone kolorystyki
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Ustawienia kontrastu systemu Windows zastępują motywy { -brand-short-name(case: "gen") }. Wyłącz te ustawienia, aby móc korzystać z motywów w { -brand-short-name(case: "loc") }.
 privacy-policy = Zasady ochrony prywatności
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -465,11 +473,18 @@ available-updates-heading = Dostępne aktualizacje
 recent-updates-heading = Ostatnie aktualizacje
 release-notes-loading = Wczytywanie…
 release-notes-error = Przepraszamy, podczas pobierania informacji o wydaniu wystąpił błąd.
+addon-permissions-heading = Uprawnienia
 addon-permissions-empty2 = To rozszerzenie nie wymaga żadnych uprawnień.
+addon-permissions-required-label = Wymagane:
+addon-permissions-optional-label = Opcjonalne:
 addon-permissions-empty = To rozszerzenie nie wymaga żadnych uprawnień
 addon-permissions-required = Uprawnienia wymagane do działania podstawowych funkcji:
 addon-permissions-optional = Opcjonalne uprawnienia do działania dodatkowych funkcji:
 addon-permissions-learnmore = Więcej informacji o uprawnieniach
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Część uprawnień jest zarządzana przez Twoją organizację.
 recommended-extensions-heading = Polecane rozszerzenia
 recommended-themes-heading = Polecane motywy
 # Variables:
@@ -524,22 +539,26 @@ details-notification-hard-blocked-other =
     .message = Ten dodatek jest zablokowany z powodu naruszenia zasad Mozilli i został wyłączony.
 details-notification-unsigned-link = Więcej informacji
 details-notification-blocked = Dodatek „{ $name }” został wyłączony z powodu problemów z bezpieczeństwem lub stabilnością.
-details-notification-blocked2 =
-    .message = Dodatek „{ $name }” został wyłączony z powodu problemów z bezpieczeństwem lub stabilnością.
 details-notification-blocked-link2 = Szczegóły
+details-notification-soft-blocked-extension-disabled2 =
+    .message = To rozszerzenie jest objęte ograniczeniami i zostało wyłączone. Można je włączyć, ale może to być ryzykowne.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = To rozszerzenie jest objęte ograniczeniami. Korzystanie z niego może być ryzykowne.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Ten dodatek jest objęty ograniczeniami i został wyłączony. Można go włączyć, ale może to być ryzykowne.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Ten dodatek jest objęty ograniczeniami. Korzystanie z niego może być ryzykowne.
 details-notification-soft-blocked-extension-disabled =
-    .message = To rozszerzenie jest ograniczone z powodu naruszania zasad Mozilli i zostało wyłączone. Można je włączyć, ale może to być ryzykowne.
+    .message = To rozszerzenie jest objęte ograniczeniami z powodu naruszania zasad Mozilli i zostało wyłączone. Można je włączyć, ale może to być ryzykowne.
 details-notification-soft-blocked-extension-enabled =
     .message = To rozszerzenie narusza zasady Mozilli. Korzystanie z niego może być ryzykowne.
 details-notification-soft-blocked-other-disabled =
-    .message = Ten dodatek jest ograniczony z powodu naruszania zasad Mozilli i został wyłączony. Można go włączyć, ale może to być ryzykowne.
+    .message = Ten dodatek jest objęty ograniczeniami z powodu naruszania zasad Mozilli i został wyłączony. Można go włączyć, ale może to być ryzykowne.
 details-notification-soft-blocked-other-enabled =
     .message = Ten dodatek narusza zasady Mozilli. Korzystanie z niego może być ryzykowne.
 details-notification-softblocked-link2 = Szczegóły
 details-notification-blocked-link = Więcej informacji
 details-notification-softblocked = Dodatek „{ $name }” został zgłoszony jako powodujący problemy z bezpieczeństwem lub stabilnością.
-details-notification-softblocked2 =
-    .message = Dodatek „{ $name }” został zgłoszony jako powodujący problemy z bezpieczeństwem lub stabilnością.
 details-notification-softblocked-link = Więcej informacji
 details-notification-gmp-pending = Dodatek „{ $name }” zostanie wkrótce zainstalowany.
 details-notification-gmp-pending2 =
@@ -565,14 +584,19 @@ permissions-data-addon-button = Uprawnienia i dane
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Używane przez rozszerzenie { $extensionName }
+addon-permissions-data-collection-heading = Zbieranie danych
+addon-permissions-data-collection-empty = Autorzy tego rozszerzenia twierdzą, że nie wymaga ono zbierania danych.
+addon-data-collection-provided = Informacje podane przez autorów rozszerzenia
+addon-data-collection-learnmore = Więcej informacji o zbieraniu danych
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = { -brand-short-name } używa tego na about:inference
-mlmodel-link-preview = { -brand-short-name } używa tego do generowania punktów kluczowych podczas podglądu odnośników
+mlmodel-link-preview = { -brand-short-name } używa tego do generowania podsumowania podczas podglądu odnośników
 mlmodel-pdfjs = { -brand-short-name } używa tego do tworzenia tekstu alternatywnego dla obrazów dodawanych do plików PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } używa tego do podpowiadania nazw grup kart
-mlmodel-smart-tab-embedding-engine = { -brand-short-name } używa tego do podpowiadania kart grup kart
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } używa tego do proponowania organizacji kart w grupach kart
+mlmodel-formfill-engine = { -brand-short-name } używa tego do wypełniania adresów
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = Sztuczna inteligencja na urządzeniu
 addon-category-mlmodel-title =

@@ -17,7 +17,7 @@ profile-selection-rename-button =
 profile-selection-delete-button =
     .label = 删除配置文件…
     .accesskey = D
-profile-selection-conflict-message = 有另一份 { -brand-product-name } 对配置文件作了更改。您必须重启 { -brand-short-name } 才能再作变更。
+profile-selection-conflict-message = 有另一份 { -brand-product-name } 对配置文件作了更改。您必须重启 { -brand-short-name } 才能再作更改。
 
 ## Messages used in the profile manager
 
@@ -28,3 +28,5 @@ profile-manager-work-offline =
 profile-manager-use-selected =
     .label = 启动时不询问并使用选定的配置文件
     .accesskey = s
+profile-has-selectable-profiles-title = 无法删除已链接到其他配置文件的配置文件
+profile-has-selectable-profiles-message = 若要删除此配置文件，请打开它，然后从 { -brand-short-name } 菜单的配置文件部分中选择“管理配置文件”。删除您在此处创建的其他配置文件后，再返回 about:profiles 并删除此配置文件。

@@ -106,15 +106,15 @@
     }
 -vendor-short-name =
     { $ending ->
-       *[normal]
-            { $case ->
-               *[upper] BrowserWorks
-                [lower] mozilla
-            }
         [accented]
             { $case ->
-               *[upper] Mozillá
                 [lower] mozillá
+               *[upper] Mozillá
+            }
+       *[normal]
+            { $case ->
+                [lower] mozilla
+               *[upper] BrowserWorks
             }
     }
 trademarkInfo = A Waterfox és a Waterfox logó a BrowserWorks védjegye.

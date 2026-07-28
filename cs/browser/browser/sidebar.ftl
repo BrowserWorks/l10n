@@ -3,11 +3,19 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 menu-view-genai-chat =
-    .label = AI Chatbot
+    .label = AI chatbot
 menu-view-contextual-password-manager =
     .label = Hesla
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Otevřené panely
 sidebar-options-menu-button =
     .title = Otevřít nabídku
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Změnit velikosti postranní lišty
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Smazat z historie
 sidebar-history-clear =
     .label = Vymazat historii
+sidebar-history-sort-by-heading-menucaption =
+    .label = Řazení:
 sidebar-history-sort-by-heading = Řazení:
 sidebar-history-sort-option-date =
     .label = Datum
@@ -64,6 +74,8 @@ sidebar-customize-firefox-settings =
     }
 sidebar-vertical-tabs =
     .label = Svislé panely
+sidebar-settings2 =
+    .label = Nastavení
 sidebar-settings =
     .label = Nastavení postranní lišty
 sidebar-hide-tabs-and-sidebar =
@@ -75,7 +87,11 @@ sidebar-show-on-the-left =
 # Option to automatically expand the collapsed sidebar when the mouse pointer
 # hovers over it.
 expand-sidebar-on-hover =
-    .label = Rozbalit postranní panel při najetí myší
+    .label = Rozbalit postranní lištu při najetí myší
+sidebar-manage-extensions2 = Spravovat všechna rozšíření
+sidebar-customize-extensions-header2 = Rozšíření
+sidebar-customize-firefox-tools-header2 =
+    .label = Nástroje
 
 ## Labels for sidebar context menu items
 
@@ -109,6 +125,14 @@ sidebar-context-menu-customize-sidebar =
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =
     .label = Zavřít panel v { $deviceName }
+sidebar-context-menu-remove-extension2 =
+    .label =
+        { -brand-short-name.case-status ->
+            [with-cases] Odebrat z { -brand-short-name(case: "gen") }
+           *[no-cases] Odebrat z aplikace { -brand-short-name }
+        }
+sidebar-context-menu-unpin-extension =
+    .label = Odebrat z postranní lišty
 
 ## Labels for sidebar history context menu items
 
@@ -119,6 +143,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Smazat stránky z historie
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Upravit záložku…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Smazat záložku
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Smazat
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -127,6 +160,11 @@ sidebar-menu-history-label =
     .label = Historie
 sidebar-menu-synced-tabs-label =
     .label = Panely z jiných zařízení
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Otevřené panely
 sidebar-menu-bookmarks-label =
     .label = Záložky
 sidebar-menu-customize-label =
@@ -173,16 +211,49 @@ sidebar-menu-history-header =
     .heading = Historie
 sidebar-menu-syncedtabs-header =
     .heading = Panely z jiných zařízení
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Otevřené panely
 sidebar-menu-cpm-header =
     .heading = Hesla
+sidebar-menu-bookmarks-header =
+    .heading = Záložky
 sidebar-panel-header-close-button =
     .tooltiptext = Zavřít
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Nabídka záložek
+sidebar-bookmarks-folder-toolbar = Lišta záložek
+sidebar-bookmarks-folder-other = Ostatní záložky
+sidebar-bookmarks-folder-mobile = Záložky z mobilu
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Přizpůsobit postranní lištu
 sidebar-history-title = Historie
 sidebar-syncedtabs-title = Panely z jiných zařízení
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Otevřené panely
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Připnuté panely
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Okno { $winID } (aktuální)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Okno { $winID }
+sidebar-bookmarks-title = Záložky
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -218,3 +289,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Skrýt postranní lištu ({ $shortcut })
     .label = Postranní lišty
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Přetáhněte sem důležité panely, abyste je měli na dosah.

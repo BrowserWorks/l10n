@@ -30,11 +30,33 @@ perftools-description-intro =
     Les enregistrements lancent <a>profiler.firefox.com</a> dans un nouvel onglet. Toutes les données sont stockées
     localement, mais vous pouvez choisir de les envoyer pour les partager.
 perftools-description-local-build = Si vous profilez une version que vous avez vous-même compilée, sur cette machine, veuillez ajouter le dossier « objdir » de votre compilation à la liste ci-dessous pour qu’il puisse être utilisé pour rechercher des informations sur les symboles.
+perftools-pick-local-build-directory = Choisir le répertoire de compilation
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Intervalle d’échantillonnage :
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } o
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } Kio
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } Mio
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } Gio
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } Tio
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } Pio
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } Eio
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } Zio
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } Yio
 
 ##
 
@@ -146,14 +168,17 @@ perftools-presets-graphics-label = Accélération graphique
 perftools-presets-graphics-description = Réglage conçu pour examiner les bugs graphiques dans { -brand-shorter-name }.
 perftools-presets-media-label = Multimédia
 perftools-presets-media-description2 = Réglage conçu pour examiner les bugs audio et vidéo dans { -brand-shorter-name }.
+perftools-presets-ml-label = Apprentissage automatique
+perftools-presets-ml-description2 = Réglage conçu pour examiner les bugs d’apprentissage automatique dans { -brand-shorter-name }.
 perftools-presets-networking-label = Réseau
 perftools-presets-networking-description = Réglage conçu pour examiner les bugs réseau dans { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Réseau avec journaux
+perftools-presets-networking-with-logs-description = Réglage conçu pour diagnostiquer les problèmes réseau dans { -brand-shorter-name }, y compris les journaux réseau. Ces journaux peuvent contenir des informations sensibles telles que les adresses web que vous visitez.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Énergie
 perftools-presets-power-description = Réglage conçu pour examiner les bugs liés à la consommation d’énergie dans { -brand-shorter-name }, avec une surcharge faible.
 perftools-presets-debug-label = Débogage
 perftools-presets-debug-description = Réglage conçu pour le débogage dans { -brand-shorter-name }. Sa surcharge est importante, à utiliser non pour étudier les performances, mais pour comprendre le comportement du navigateur.
+perftools-presets-web-compat-label = Compatibilité web
+perftools-presets-web-compat-description = Réglage recommandé pour déboguer les problèmes de compatibilité web avec les sites web, plutôt que pour le suivi des performances.
 perftools-presets-custom-label = Personnalisé
-
-##
-

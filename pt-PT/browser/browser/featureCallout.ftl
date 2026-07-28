@@ -104,14 +104,72 @@ perplexity-callout-primary-label = Pergunte ao Perflexity
 perplexity-callout-secondary-label-1 = Ignorar
 perplexity-callout-secondary-label-2 = Percebi
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Quer experimentar uma nova pesquisa focada na privacidade?
+start-page-callout-subtitle = Experimente o Startpage. Foi desenhado para manter as suas pesquisas mais privadas, desde o começo.
+start-page-callout-primary-label = Experimentar o Startpage
+start-page-callout-secondary-label = Dispensar
+
 ## Account Adoption Passwords callout strings
 
+# Suggestion to backup passwords by signing up for Mozilla account and using sync
+fxa-adoption-passwords-title = Palavra-passe guardada. Vamos fazer a cópia de segurança.
+fxa-adoption-passwords-subtitle = Proteja as suas palavras-passe, sincronizando-as com encriptação nos seus dispositivos.
+# Opens Mozilla accounts sign-up page
+fxa-adoption-passwords-primary-button-label = Registar
+
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Mantenha as suas feeds favoritas na sua barra de tarefas
+taskbar-tabs-social-callout-subtitle = Inicie os seus sites sociais, como uma aplicação numa janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Conversar a partir da sua barra de tarefas
+taskbar-tabs-chat-callout-subtitle = Inicie os seus sites de conversação como uma aplicação numa janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-email-callout-title = Mantenha o seu correio eletrónico na sua barra de tarefas
+taskbar-tabs-email-callout-subtitle = Inicie o seu correio eletrónico como uma aplicação numa janela simplificada protegida pelo { -brand-short-name }.
+taskbar-tabs-media-callout-title = Volte ao streaming a partir da sua barra de tarefas
+taskbar-tabs-media-callout-subtitle = Inicie os seus sites de streaming como uma aplicação numa janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Adicionar este site à sua barra de tarefas
+taskbar-tabs-value-prop-callout-subtitle = Execute-o numa janela própria e numa interface simplificada com um único clique.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Não perca tudo o que guardou quando mudar para o Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Sincronize agora para manter os seus marcadores, palavras-passe e definições do { -brand-short-name } seguros e simples de restaurar.
+windows-10-eos-sync-urgency-title-2 = A dizer adeus ao Windows 10? Proteja os seus dados quando mudar.
+windows-10-eos-sync-urgency-subtitle-2 = Mesmo que não utilize o { -brand-short-name } diariamente, sincronize para manter os marcadores e as palavras-passe seguros e acessíveis.
+windows-10-eos-sync-new-device-title-1 = Não corra o risco de começar do zero no seu próximo dispositivo.
+windows-10-eos-sync-new-device-subtitle-1 = Sincronize para levar os seus marcadores, palavras-passe e definições preferidas do { -brand-short-name } consigo quando mudar.
+windows-10-eos-sync-new-device-title-2 = A mudar para um novo dispositivo? Não perca o que é importante.
+windows-10-eos-sync-new-device-subtitle-2 = Não importa com que frequência utiliza o { -brand-short-name }, a sincronização protege os seus marcadores, palavras-passe e definições.
+windows-10-eos-sync-new-device-primary-label = Sincronizar agora
+windows-10-eos-sync-general-title-1 = Proteja o { -brand-short-name } que tornou seu.
+windows-10-eos-sync-general-subtitle-1 = Efetue uma cópia de segurança e sincronize as suas palavras-passe, marcadores, definições e outros dados para preservar o que conta.
+windows-10-eos-sync-general-title-2 = Agora é uma boa altura para efetuar uma cópia de segurança das suas palavras-passe e marcadores.
+windows-10-eos-sync-general-subtitle-2 = Sincronize agora para proteger as coisas em que confia no { -brand-short-name } — e recupere-as em qualquer lugar, em qualquer momento.
+windows-10-eos-sync-tour-title-1 = Demasiados separadores? Organize com grupos de separadores.
+windows-10-eos-sync-tour-subtitle-1 = Arraste um separador sobre o outro para criar um grupo e manter as coisas organizadas.
+windows-10-eos-sync-tour-title-2 = Organize-se para o Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Sincronize os seus marcadores, palavras-passe e definições para efetuar uma cópia de segurança antes de mudar.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Mostrar menos recomendações
+windows-10-eos-sync-dismiss-button-label = Dispensar
+windows-10-eos-sync-callout-primary-advance-button-label = Seguinte
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Novo: Clique e mantenha pressionado para pré-visualizar ligações
+link-preview-onboarding-callout-description = Veja uma descrição curta, tempo de leitura, entre outros, para decidir se uma ligação merece um clique. Também disponível ao clicar com o botão direito do rato.
 
 ## Sidebar Strings
 
 sidebar-button-callout-title = Mostrar títulos de separadores na barra lateral
 sidebar-button-callout-subtitle = Utilize o botão da barra lateral para expandir a barra lateral, de modo a que possa ver os títulos dos separadores.
 sidebar-button-callout-vertical-tabs = Para mostrar os seus separadores, selecione o botão da barra lateral na barra de ferramentas.
+sidebar-deprecation-callout-title = Brevemente, uma barra lateral atualizada
+sidebar-deprecation-callout-subtitle = Estamos a eliminar a versão da barra lateral que está a utilizar neste momento. Experimente a barra lateral atualizada. É mais rápida e tem acesso a mais ferramentas.
+sidebar-deprecation-cta-button = Experimentar agora
 
 ## Sidebar Vertical Tabs Strings
 
@@ -130,6 +188,14 @@ sidebar-pins-callout-cta-button = Fixar separador
 
 ## Pinning Tabs Strings
 
+pin-tabs-callout-1-title = Mantenha os separadores importantes ao seu alcance
+pin-tabs-callout-1-subtitle = Arraste um separador para o início da faixa de separadores para o afixar. Ou clique com o botão direito e escolha Fixar separador.
+pin-tabs-callout-cta-1-button = Fixar este separador
+pin-tabs-callout-2-title = Fixe os separadores que mais visita
+pin-tabs-callout-2-subtitle = Para fixar qualquer separador, arraste-o para o início da faixa de separadores. Ou clique com o botão direito e escolha Fixar separador.
+pin-tabs-callout-cta-2-button = Fixar este separador
+pin-tabs-callout-3-title = Mantenha os sites importantes ao seu alcance
+pin-tabs-callout-4-title = Fixe os sites que mais visita
 
 ## Sidebar Onboarding Strings
 
@@ -169,7 +235,13 @@ sidebar-genai-survey-satisfaction-question = Qual o seu grau de satisfação por
 sidebar-genai-survey-productive-question =
     Em que medida concorda ou discorda da seguinte afirmação:<br/>
     “O chatbot de IA na barra lateral ajuda-me a aumentar a minha produtividade”?
-unified-search-callout-title = Alternar entre motores de pesquisa
+splitview-onboarding-callout-title-1 = Vista dividida: uma forma melhor de realizar várias tarefas
+splitview-onboarding-callout-subtitle-1 = Clique com o botão direito do rato neste separador e escolha “Adicionar vista dividida” para ver dois separadores em simultâneo.
+splitview-onboarding-callout-cta-1 = Experimentar agora
+splitview-onboarding-callout-title-2 = Veja dois separadores em simultâneo com a vista dividida
+splitview-onboarding-callout-subtitle-2 = Sem janelas adicionais. Sem alternar entre separadores. Clique com o botão direito neste separador e selecione “Adicionar vista dividida.”
+splitview-onboarding-callout-cta-2 = Experimente a vista dividida
+unified-search-callout-title = Mudar entre os motores de pesquisa
 unified-search-callout-subtitle = Escolha o que funciona melhor para a sua pesquisa específica.
 unified-search-callout-primary-label = Seguinte
 unified-search-callout-secondary-label = Dispensar
@@ -182,6 +254,6 @@ actions-callout-title = Conclua tarefas comuns ou aceda às definições básica
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Experimente digitar uma ação como “imprimir” para imprimir uma página ou “limpar” para limpar o seu histórico.

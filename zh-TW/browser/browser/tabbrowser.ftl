@@ -37,6 +37,10 @@ tabbrowser-close-tabs-button =
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label = 關閉 { $tabCount } 個分頁
+tab-splitview-splitter =
+    .aria-label = 調整分割畫面分頁大小
+tab-devtools-splitter =
+    .aria-label = 調整開發者工具面板大小
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -134,8 +138,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = 下次不要再顯示此對話方塊
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = 請注意
-tabbrowser-confirm-close-duplicate-tabs-text = 將只保留最後開啟的分頁
 tabbrowser-confirm-close-all-duplicate-tabs-title = 要關閉重複開啟的分頁嗎？
 tabbrowser-confirm-close-all-duplicate-tabs-text = 將關閉此視窗中重複的分頁，只保留最後一個開啟的分頁。
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = 關閉分頁
@@ -153,9 +155,15 @@ tabbrowser-customizemode-tab-title = 自訂 { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = 分頁靜音
     .accesskey = M
+tabbrowser-context-mute-tab2 =
+    .label = 靜音
+    .accesskey = M
 tabbrowser-context-unmute-tab =
     .label = 取消分頁靜音
     .accesskey = M
+tabbrowser-context-unmute-tab2 =
+    .label = 取消靜音
+    .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
     .label = 分頁靜音
@@ -194,7 +202,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — 目前視窗
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = 建立分頁群組
 tab-group-editor-title-edit = 管理分頁群組
@@ -224,16 +232,33 @@ tab-group-editor-color-selector2-gray = 灰色
     .title = 灰色
 tab-group-editor-color-selector2-red = 紅色
     .title = 紅色
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — 已關閉
 tab-group-description = { $tabGroupName } — 分頁群組
+tab-group-label-tooltip-collapsed = { $tabGroupName } — 摺疊
+tab-group-label-tooltip-expanded = { $tabGroupName } — 展開
+tab-group-preview-name =
+    .aria-label = 折疊群組中的分頁
 tab-context-unnamed-group =
     .label = 未命名群組
 tab-group-name-default = 未命名群組
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = 分頁群組
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = 已開啟分頁清單
+tab-group-preview-closed-description = 已關閉分頁清單
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -249,12 +274,34 @@ tab-context-move-tab-to-group =
            *[other] 將分頁加入至群組
         }
     .accesskey = G
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] 將分割畫面加入新群組
+           *[other] 將分割畫面加入新群組
+        }
+    .accesskey = G
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] 將分割畫面加入群組
+           *[other] 將分割畫面加入群組
+        }
+    .accesskey = G
 tab-context-move-tab-to-group-saved-groups =
     .label = 關閉的群組
 tab-group-editor-action-new-tab =
     .label = 在群組中開啟新分頁
 tab-group-editor-action-new-window =
     .label = 將群組移動至新視窗
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] 複製群組中的鏈結
+           *[other] 複製群組中的 { $linkCount } 的鏈結
+        }
 tab-group-editor-action-save =
     .label = 儲存並關閉群組
 tab-group-editor-action-ungroup =
@@ -264,6 +311,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = 完成
     .accessKey = D
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = 分享分頁群組
 tab-context-reopen-tab-group =
     .label = 重新開啟分頁群組
 # Variables:
@@ -275,6 +325,22 @@ tab-context-ungroup-tab =
            *[other] 從群組移除
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip = 還有 { $tabCount } 個分頁
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = 整理您的分頁
+tab-groups-list-empty-description = 將分頁拖曳到另一個分頁，或對分頁按右鍵即可開始整理。我們會在此儲存您的分頁群組，之後就可以方便尋找。
+tab-groups-list-empty-button = 建立分頁群組
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = 新增群組
 
 ## Open/saved tab group context menu
 
@@ -300,3 +366,84 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = 用新視窗開啟群組
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = 新增註記
+    .accesskey = A
+tab-context-edit-note =
+    .label = 編輯註記
+    .accesskey = E
+tab-context-delete-note =
+    .label = 刪除註記
+    .accesskey = D
+tab-note-editor-title-create = 新增註記
+tab-note-editor-title-edit = 編輯註記
+tab-note-editor-text-field =
+    .placeholder = 您想要在此分頁記下什麼？
+tab-note-editor-button-cancel =
+    .label = 取消
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = 儲存
+    .accesskey = S
+tab-note-editor-button-delete =
+    .title = 刪除註記
+    .aria-label = 刪除註記
+    .accesskey = D
+tab-note-preview-edit-icon =
+    .alt = 編輯註記
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = 閱讀更多
+tab-note-panel-add-note-new-badge =
+    .label = 新功能
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit = { NUMBER($totalCharacters, useGrouping: "false") } 個字元，最多 { NUMBER($maxAllowedCharacters, useGrouping: "false") } 個字元
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = 新增分割畫面
+    .accesskey = t
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = 用分割畫面開啟
+    .accesskey = t
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = 分離分割畫面
+    .accesskey = t
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = 反轉分頁順序
+    .accesskey = r
+tab-context-badge-new = 新功能
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }，分割畫面左方
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }，分割畫面右方
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = 分離分頁
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = 反轉分頁順序
+split-view-menuitem-close-both-tabs =
+    .label = 關閉兩個分頁

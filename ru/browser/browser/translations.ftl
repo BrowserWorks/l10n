@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = Сменить исходный язык
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = К сожалению, мы пока не поддерживаем перевод с { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Извините, мы пока не поддерживаем перевод с этого языка.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -124,14 +132,14 @@ translations-manage-settings-button =
     .accesskey = а
 translations-manage-description = Загрузка языков для перевода без связи с Интернетом.
 translations-manage-all-language = Все языки
-translations-manage-download-button = Загрузить
+translations-manage-download-button = Скачать
 translations-manage-delete-button = Удалить
-translations-manage-intro-2 = Задайте настройки языка и перевода сайта и управляйте языками, загруженными для автономного перевода.
+translations-manage-intro-2 = Задайте настройки языка и перевода сайта и управляйте языками, скачанными для автономного перевода.
 translations-manage-download-description = Загрузка языков для автономного перевода
 translations-manage-language-download-button =
-    .label = Загрузить
+    .label = Скачать
 translations-manage-language-download-all-button =
-    .label = Загрузить все
+    .label = Скачать все
     .accesskey = В
 translations-manage-language-remove-button =
     .label = Удалить
@@ -228,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = При переводе возникла проблема, пожалуйста, попробуйте ещё раз.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = К сожалению, мы пока не поддерживаем перевод с { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Извините, мы пока не поддерживаем перевод с этого языка.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

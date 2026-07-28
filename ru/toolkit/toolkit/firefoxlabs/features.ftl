@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Отображение веб-страницы
 experimental-features-group-customize-browsing =
     .label = Настройте свой просмотр
+experimental-features-group-productivity =
+    .label = Продуктивность
+experimental-features-group-newtab-widgets =
+    .label = Виджеты на { -firefox-home-brand-name(case: "prepositional") }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Пароли на боковой панели
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Тематические разделы и Отслеживать/Блокировать для Историй Новой вкладки
 experimental-features-newtab-sections-follow-block-description = Организуйте статьи на странице Новая вкладка в тематические разделы (Спорт, Еда, Развлечения и другие) для более структурированного и удобного просмотра. Используйте новые элементы управления Отслеживать и Блокировать, чтобы настроить, какой контент вы видите. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Добавьте сайты на панель задач
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Открывайте сайты, которые вы часто посещаете как веб-приложение, с панели задач. Найдите значок «Добавить вкладку на панель задач» справа от адресной строки, чтобы запустить сайт в упрощённом окне со всеми защитами { -brand-product-name }. <a data-l10n-name="connect">Поделитесь отзывом</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Списки на { -firefox-home-brand-name(case: "prepositional") }
+experimental-features-newtab-widget-lists-new =
+    .label = Списки
+experimental-features-newtab-widget-lists-description = Всегда помните о своём списке дел, когда будете открывать новую вкладку. От упаковочных листов до списков покупок, составляйте свои планы в { -brand-product-name }. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Таймер на { -firefox-home-brand-name(case: "prepositional") }
+experimental-features-newtab-widget-timer-new =
+    .label = Таймер
+experimental-features-newtab-widget-timer-description = Установите таймер, чтобы не отвлекаться, подталкивайте себя, чтобы не сходит с пути, или напоминайте о необходимости подзарядиться. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Списки и таймер на { -firefox-home-brand-name(case: "prepositional") }
+experimental-features-newtab-widget-lists-and-timer-description = Держите список дел в фокусе внимания, когда открываете новую вкладку. От списков упаковки до списков покупок, составляйте свои планы в { -brand-product-name }. Установите таймер, чтобы не отвлекаться, подталкивайте себя, чтобы не сходить с пути, или напоминайте о необходимости подзарядиться. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Прогноз погоды
+experimental-features-newtab-widget-weather-description = Получите четкое представление о сегодняшней погоде с почасовым прогнозом. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Изображение дня
+experimental-features-newtab-widget-picture-of-the-day-description = Добавьте немного ежедневного чуда в свой день. Получите новую картинку, узнайте что-то интересное и установите свежие обои в одно мгновение. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Часы
+experimental-features-newtab-widget-clocks-description = Добавьте до четырех часов с собственными названиями, чтобы показывать время в важных для вас местах. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Поиск по истории семантики
+experimental-features-semantic-history-search-description = Используйте локальную модель машинного обучения, чтобы предлагать записи из истории, связанные с вашими поисковыми запросами, на основе обычного языка в адресной строке { -brand-product-name }. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Примечания для вкладок
+experimental-features-tab-notes-description = Примечания для вкладок — это экспериментальная функция, которая позволяет добавлять примечания для вкладок вашего браузера. Записывайте контекст, напоминания или следующие шаги, чтобы вы могли вернуться и вспомнить, почему вы её открыли. Мы будем рады вашему отзыву, так как мы продолжаем улучшать эту функцию. <a data-l10n-name="connect">Поделитесь отзывом</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Оптимизированное меню вкладок
+experimental-features-tab-context-menu-description = При щелчке правой кнопкой мыши по вкладке отображается более простое контекстное меню. Оно помогает быстрее находить часто используемые действия. <a data-l10n-name="connect">Поделитесь отзывом</a>

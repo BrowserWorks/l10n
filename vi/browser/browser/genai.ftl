@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = Xoá { $provider }
 genai-menu-remove-sidebar =
     .label = Gỡ khỏi thanh lề
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Hỏi { $provider }
 genai-menu-new-badge = Mới
 genai-menu-summarize-page = Tóm tắt trang
+genai-input-ask-smart-window =
+    .placeholder = Hỏi…
 genai-input-ask-generic =
     .placeholder = Hỏi chatbot AI…
 # $provider (string) - name of the provider
@@ -89,16 +94,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Ẩn lối tắt chatbot
-genai-menu-no-provider =
-    .label = Hỏi một chatbot AI
 genai-menu-choose-chatbot =
     .label = Chọn một chatbot AI
+genai-menu-ask-generic-2 =
+    .label = Hỏi chatbot AI
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Hỏi { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = Hỏi một chatbot AI
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = Hỏi…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = Chatbot AI
 genai-header-provider-menu =
     .title = Chọn một chatbot
+genai-header-settings-button =
+    .title = Cài đặt trò chuyện AI
 genai-header-options-button =
     .title = Mở menu
 genai-header-close-button =
@@ -116,6 +134,11 @@ genai-options-hide-shortcut =
     .label = Ẩn lối tắt khi chọn văn bản
 genai-options-about-chatbot =
     .label = Về chatbot AI trong { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Vì trang này khá dài nên đây chỉ là bản tóm tắt một phần.
 
 ## Chatbot footer
 
@@ -205,3 +228,48 @@ genai-model-optin-cancel =
 #   $rangePlural (String): The plural category of the range, using the same set as for numbers.
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 link-preview-reading-time = { $range } phút để đọc
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } không thể xem trước liên kết này
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Truy cập liên kết
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } không thể tạo các nội dung chính cho trang web này.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Có gì đó không ổn.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Thử lại
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Cài đặt xem trước liên kết
+link-preview-settings-enable =
+    .label = Bật xem trước liên kết
+    .description = Xem tiêu đề trang, mô tả và nhiều thông tin khác khi bạn sử dụng phím tắt hoặc nhấp chuột phải vào liên kết.
+link-preview-settings-key-points =
+    .label = Cho phép AI đọc phần đầu của trang và tạo ra nội dung chính
+link-preview-settings-long-press =
+    .label = Phím tắt: Nhấp và giữ liên kết trong 1 giây (nhấn và giữ)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Xem thêm với AI?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } sử dụng AI để đọc phần đầu trang và tạo ra một vài nội dung chính. Để ưu tiên quyền riêng tư của bạn, việc này sẽ diễn ra trên thiết bị của bạn.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Mới: Nhấp và giữ bất kỳ liên kết nào để xem trước
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Xem mô tả ngắn, thời gian đọc và nhiều thông tin khác để quyết định xem liên kết có đáng mở hay không. Bạn cũng có thể nhấp chuột phải để xem.
+# Header for the key points section
+link-preview-key-points-header = Nội dung chính
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Nội dung chính được tạo ra bởi AI và có thể có sai sót.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Thiết lập ban đầu • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Lần sau bạn sẽ thấy nội dung chính nhanh hơn.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Xem bản xem trước
+# Onboarding card Close button
+link-preview-onboarding-close = Đóng
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Thiết lập ban đầu
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Việc này có thể mất một chút thời gian. Lần sau bạn sẽ thấy nội dung chính nhanh hơn.

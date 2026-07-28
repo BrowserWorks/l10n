@@ -47,6 +47,10 @@ tabbrowser-close-tabs-tooltip =
             [few] Zamknij { $tabCount } karty
            *[many] Zamknij { $tabCount } kart
         }
+tab-splitview-splitter =
+    .aria-label = Zmień rozmiar kart w podzielonym widoku
+tab-devtools-splitter =
+    .aria-label = Zmień rozmiar panelu narzędzi dla programistów
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -179,8 +183,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Nie pytaj ponownie.
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Uwaga
-tabbrowser-confirm-close-duplicate-tabs-text = Ostatnia aktywna karta nie zostanie zamknięta
 tabbrowser-confirm-close-all-duplicate-tabs-title = Czy zamknąć podwójne karty?
 tabbrowser-confirm-close-all-duplicate-tabs-text =
     Zamkniemy podwójne karty w tym oknie. Ostatnia aktywna
@@ -200,7 +202,13 @@ tabbrowser-customizemode-tab-title = Dostosowywanie { -brand-short-name(case: "g
 tabbrowser-context-mute-tab =
     .label = Wycisz kartę
     .accesskey = W
+tabbrowser-context-mute-tab2 =
+    .label = Wycisz
+    .accesskey = W
 tabbrowser-context-unmute-tab =
+    .label = Włącz dźwięk
+    .accesskey = W
+tabbrowser-context-unmute-tab2 =
     .label = Włącz dźwięk
     .accesskey = W
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
@@ -246,7 +254,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — bieżące okno
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Utwórz grupę kart
 tab-group-editor-title-edit = Zarządzaj grupą kart
@@ -276,16 +284,33 @@ tab-group-editor-color-selector2-gray = Szary
     .title = Szary
 tab-group-editor-color-selector2-red = Czerwony
     .title = Czerwony
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — zamknięte
 tab-group-description = { $tabGroupName } — grupa kart
+tab-group-label-tooltip-collapsed = { $tabGroupName } — zwinięte
+tab-group-label-tooltip-expanded = { $tabGroupName } — rozwinięte
+tab-group-preview-name =
+    .aria-label = Karty w zwiniętej grupie
 tab-context-unnamed-group =
     .label = Grupa bez nazwy
 tab-group-name-default = Grupa bez nazwy
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Grupy kart
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Otwarta lista kart
+tab-group-preview-closed-description = Zamknięta lista kart
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -301,10 +326,35 @@ tab-context-move-tab-to-group =
            *[other] Dodaj karty do grupy
         }
     .accesskey = D
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Dodaj podzielony widok do nowej grupy
+           *[other] Dodaj podzielone widoki do nowej grupy
+        }
+    .accesskey = g
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Dodaj podzielony widok do grupy
+           *[other] Dodaj podzielone widoki do grupy
+        }
+    .accesskey = g
+tab-context-move-tab-to-group-saved-groups =
+    .label = Zamknięte grupy
 tab-group-editor-action-new-tab =
     .label = Nowa karta w grupie
 tab-group-editor-action-new-window =
     .label = Przenieś grupę do nowego okna
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $tabCount ->
+            [one] Kopiuj odnośnik w grupie
+            [few] Kopiuj { $linkCount } odnośniki w grupie
+           *[many] Kopiuj { $linkCount } odnośników w grupie
+        }
 tab-group-editor-action-save =
     .label = Zachowaj i zamknij grupę
 tab-group-editor-action-ungroup =
@@ -314,6 +364,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Gotowe
     .accessKey = G
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Udostępnij grupę kart
 tab-context-reopen-tab-group =
     .label = Przywróć grupę kart
 # Variables:
@@ -325,6 +378,27 @@ tab-context-ungroup-tab =
            *[other] Usuń z grup
         }
     .accesskey = U
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] { $tabCount } karta więcej
+        [few] { $tabCount } karty więcej
+       *[many] { $tabCount } kart więcej
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Uporządkuj swoje karty
+tab-groups-list-empty-description = Przeciągnij jedną kartę na drugą lub kliknij ją prawym przyciskiem, aby zacząć porządkowanie. Zachowamy tutaj Twoje grupy, aby można było łatwo je później znaleźć.
+tab-groups-list-empty-button = Utwórz grupę kart
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Nowe grupa
 
 ## Open/saved tab group context menu
 
@@ -350,3 +424,89 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Otwórz grupę w nowym oknie
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Dodaj notatkę
+    .accesskey = n
+tab-context-edit-note =
+    .label = Edytuj notatkę
+    .accesskey = E
+tab-context-delete-note =
+    .label = Usuń notatkę
+    .accesskey = U
+tab-note-editor-title-create = Dodanie notatki
+tab-note-editor-title-edit = Edycja notatki
+tab-note-editor-text-field =
+    .placeholder = Co chcesz pamiętać o tej karcie?
+tab-note-editor-button-cancel =
+    .label = Anuluj
+    .accesskey = A
+tab-note-editor-button-save =
+    .label = Zachowaj
+    .accesskey = Z
+tab-note-editor-button-delete =
+    .title = Usuń notatkę
+    .aria-label = Usuń notatkę
+    .accesskey = U
+tab-note-preview-edit-icon =
+    .alt = Edytuj notatkę
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Więcej informacji
+tab-note-panel-add-note-new-badge =
+    .label = Nowe
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+        [one] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } znak
+        [few] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } znaki
+       *[many] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } znaków
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Wyświetl w podzielonym widoku
+    .accesskey = y
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Otwórz w podzielonym widoku
+    .accesskey = O
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Rozdziel widok
+    .accesskey = R
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Odwróć kolejność kart
+    .accesskey = O
+tab-context-badge-new = Nowe
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, podzielony widok po lewej
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, podzielony widok po prawej
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Rozdziel karty
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Odwróć kolejność kart
+split-view-menuitem-close-both-tabs =
+    .label = Zamknij obie karty

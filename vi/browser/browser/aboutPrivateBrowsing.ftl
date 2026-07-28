@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Hãy để { -brand-short-
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } tự động loại bỏ các biểu ngữ cookie cho bạn
 about-private-browsing-cookie-banners-promo-body = Giờ đây, chúng tôi tự động từ chối nhiều biểu ngữ cookie để bạn có thể ít bị theo dõi hơn và quay lại duyệt web mà không bị phân tâm.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Không để lại dấu vết trên thiết bị này
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } xóa cookie, lịch sử và dữ liệu trang web của bạn khi bạn đóng tất cả các cửa sổ riêng tư của mình.
 about-private-browsing-felt-privacy-v1-info-link = Ai có thể xem hoạt động của tôi?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Việc đóng tất cả các cửa sổ riêng tư sẽ xóa cookie, lịch sử và dữ liệu trang web của bạn.
+about-private-browsing-nova-info-link = Ai vẫn có thể xem được hoạt động của tôi?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Hạn chế tối đa tiết lộ thông tin của bạn
+about-private-browsing-nova-info-subheader = Chúng tôi sẽ xóa mọi tìm kiếm và thông tin đăng nhập khi bạn đóng cửa sổ này. Các tính năng bảo vệ tích hợp của { -brand-short-name } cũng được bật ở đây, chẳng hạn như chặn trình theo dõi.

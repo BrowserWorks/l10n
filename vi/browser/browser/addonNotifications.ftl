@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Trang web này đang yêu cầu quyền truy cập vào các thiết bị MIDI (Giao diện kỹ thuật số dành cho nhạc cụ) của bạn. Có thể bật quyền truy cập thiết bị bằng cách cài đặt tiện ích mở rộng.
 site-permission-install-first-prompt-midi-message = Lần truy cập này không được đảm bảo an toàn. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
+site-permission-install-first-prompt-serial-header = Trang web này đang yêu cầu quyền truy cập vào thiết bị sử dụng cổng nối tiếp của bạn. Có thể kích hoạt quyền truy cập thiết bị bằng cách cài đặt tiện ích mở rộng.
+site-permission-install-first-prompt-serial-message = Lần truy cập này không được đảm bảo an toàn. Chỉ tiếp tục nếu bạn tin tưởng trang web này.
 
 ##
 
@@ -113,15 +115,18 @@ addon-install-error-corrupt-file = Không thể cài đặt tiện ích được
 addon-install-error-file-access = { $addonName } không thể cài đặt vì { -brand-short-name } không thể sửa đổi tập tin cần thiết.
 addon-install-error-not-signed = { -brand-short-name } không cho phép trang này cài đặt một tiện ích chưa được kiểm định.
 addon-install-error-invalid-domain = Không thể cài đặt tiện ích { $addonName } từ địa chỉ này.
+addon-install-error-no-addon-name-file-access = Không thể cài đặt tiện ích mở rộng vì { -brand-short-name } không thể sửa đổi tập tin cần thiết.
 addon-local-install-error-network-failure = Không thể cài đặt tiện ích này vì có lỗi hệ thống tập tin.
 addon-local-install-error-incorrect-hash = Không thể cài đặt tiện ích này vì nó không khớp với tiện ích { -brand-short-name } được trông đợi.
 addon-local-install-error-corrupt-file = Không thể cài đặt tiện ích này vì có vẻ như nó đã bị hỏng trên đường truyền.
 addon-local-install-error-file-access = { $addonName } không thể cài đặt vì { -brand-short-name } không thể sửa đổi tập tin cần thiết.
 addon-local-install-error-not-signed = Không thể cài đặt tiện ích này vì nó chưa được kiểm định.
+addon-local-install-no-addon-name-error-file-access = Không thể cài đặt tiện ích mở rộng vì { -brand-short-name } không thể sửa đổi tập tin cần thiết.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } không thể cài đặt được vì nó không tương thích với { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } vi phạm chính sách của BrowserWorks và không thể cài đặt trên { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } bị hạn chế và không thể cài đặt trên { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } không thể cài đặt được vì nó có khả năng gây ra các vấn đề về bảo mật và tính ổn định.
 addon-install-error-soft-blocked = { $addonName } vi phạm chính sách của BrowserWorks và không thể cài đặt trên { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

@@ -44,7 +44,7 @@ abuse-report-messagebar-submitted-noremove = Takk for at du sende inn ein rappor
 abuse-report-messagebar-removed-extension = Takk for at du sende inn ein rapport. Du har fjerna utvidinga <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-removed-sitepermission = Takk for at du sende inn ein rapport. Du har fjerna dette tillegget for nettstadløyve <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-removed-theme = Takk for at du sende inn ein rapport. Du har fjerna temaet <span data-l10n-name="addon-name">{ $addon-name }</span>.
-abuse-report-messagebar-error = Det oppsto ein feil ved sending av rapporten for <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-error = Det oppstod ein feil ved sending av rapporten for <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error-recent-submit = Rapporten for <span data-l10n-name="addon-name">{ $addon-name }</span> vart ikkje sendt fordi ein annan rapport nettopp vart sendt inn.
 
 ## Message bars actions.
@@ -62,7 +62,7 @@ abuse-report-messagebar-action-cancel = Avbryt
 
 abuse-report-damage-reason-v2 = Det skada datamaskina mi eller kompromitterte dattaa mine.
 abuse-report-damage-example = Døme: Injiserte skadeleg kode eller stal data
-abuse-report-spam-reason-v2 = Den inneheld spam eller legg inn uønskt annonsering
+abuse-report-spam-reason-v2 = Den inneheld søppelpost eller legg inn uønskt annonsering
 abuse-report-spam-example = Døme: Set inn reklame på nettsider
 abuse-report-settings-reason-v2 = Den endra søkjemotoren min, startside eller ny fane utan å informere eller spørje meg
 abuse-report-settings-suggestions = Før du rapporterer utvidinga, kan du prøve å endre innstillingane dine:

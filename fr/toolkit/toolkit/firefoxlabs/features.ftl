@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Affichage des pages web
 experimental-features-group-customize-browsing =
     .label = Personnalisez votre navigation
+experimental-features-group-productivity =
+    .label = Productivité
+experimental-features-group-newtab-widgets =
+    .label = Widgets sur la { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Mots de passe dans le panneau latéral
@@ -47,3 +51,55 @@ experimental-features-link-previews-description-no-ai =
         [macos] Pour en savoir plus sur une page web avant de cliquer, survolez un lien et appuyez sur Maj (⇧) + Option (⌥) ou Alt. Les aperçus peuvent inclure des détails tels que le titre et la durée de lecture. <a data-l10n-name="connect">Donner votre avis</a>
        *[other] Pour en savoir plus sur une page web avant de cliquer, survolez un lien et appuyez sur Maj + Alt. Les aperçus peuvent inclure des détails tels que le titre et la durée de lecture. <a data-l10n-name="connect">Donner votre avis</a>
     }
+# New Tab Sections with follow and block
+experimental-features-newtab-sections-follow-block =
+    .label = Classement par thème et Suivre ou Bloquer pour les articles de la page de nouvel onglet
+experimental-features-newtab-sections-follow-block-description = Organisez les articles de votre page de nouvel onglet par thèmes (sports, nourriture, divertissement…) pour y accéder de façon plus ordonnée et plus simple. Servez-vous de nos nouveaux contrôles « Suivre » et « Bloquer » pour personnaliser le contenu que vous voyez. <a data-l10n-name="connect">Donnez votre avis</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Ajouter des sites à votre barre des tâches
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Ouvrez les sites que vous visitez fréquemment en tant qu’application web depuis votre barre des tâches. Recherchez l’icône « Ajouter l’onglet à la barre des tâches » à droite de la barre d’adresse pour ouvrir ce site dans une fenêtre épurée mais qui conserve toutes les protections de { -brand-product-name }. <a data-l10n-name="connect">Donnez votre avis</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Listes sur la { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Listes
+experimental-features-newtab-widget-lists-description = Gardez votre liste de tâches en tête lorsque vous ouvrez un nouvel onglet. Qu’il s’agisse de listes pour faire vos valises ou faire les courses, concrétisez vos projets dans { -brand-product-name }. <a data-l10n-name="connect">Donnez votre avis</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Minuteur sur la { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Minuteur
+experimental-features-newtab-widget-timer-description = Réglez un minuteur pour maintenir votre concentration, vous encourager à ne pas vous égarer, ou vous rappeler de faire une pause. <a data-l10n-name="connect">Donnez votre avis</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Listes et minuteur sur la { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Gardez votre liste de tâches en tête lorsque vous ouvrez un nouvel onglet. Qu’il s’agisse de listes pour faire vos valises ou faire les courses, concrétisez vos projets dans { -brand-product-name }. Réglez un minuteur pour maintenir votre concentration, vous encourager à ne pas vous égarer, ou vous rappeler de faire une pause. <a data-l10n-name="connect">Donnez votre avis</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Prévisions météorologiques
+experimental-features-newtab-widget-weather-description = Consultez la météo du jour en détail grâce aux prévisions heure par heure. <a data-l10n-name="connect">Donnez votre avis</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = La photo du jour
+experimental-features-newtab-widget-picture-of-the-day-description = Apportez une touche d’émerveillement à votre quotidien : découvrez chaque jour une nouvelle image, apprenez quelque chose d’inédit et changez de fond d’écran en un instant. <a data-l10n-name="connect">Donnez votre avis</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Horloges
+experimental-features-newtab-widget-clocks-description = Ajoutez jusqu’à quatre horloges avec des noms personnalisés pour suivre l’heure des endroits qui vous importent. <a data-l10n-name="connect">Donnez votre avis</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Recherche sémantique dans l’historique
+experimental-features-semantic-history-search-description = Utiliser un modèle d’apprentissage automatique local pour proposer des éléments de l’historique en lien avec vos recherches, grâce à la compréhension du langage naturel dans la barre d’adresse de { -brand-product-name }. <a data-l10n-name="connect">Donner votre avis</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Notes d’onglets
+experimental-features-tab-notes-description = Les notes d’onglets sont une fonctionnalité expérimentale qui permet l’ajout de notes autocollantes sur les onglets du navigateur. Inscrivez-y le contexte, un mémo ou ce qu’il reste à faire afin que, quand vous reviendrez à l’onglet, vous puissiez vous rappeler pourquoi vous l’aviez ouvert. Nous aimerions beaucoup connaître votre avis comme nous améliorons encore cette fonctionnalité. <a data-l10n-name="connect">Donnez votre avis</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Menu d’onglet simplifié
+experimental-features-tab-context-menu-description = Découvrez un menu contextuel plus simple lorsque vous effectuez un clic droit sur un onglet. Il a été conçu pour faciliter l’accès aux actions courantes. <a data-l10n-name="connect">Donnez votre avis</a>

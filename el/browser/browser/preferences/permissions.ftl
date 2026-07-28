@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Αποδοχή
     .accesskey = Α
+permissions-add =
+    .label = Προσθήκη
+    .accesskey = Π
 permissions-button-off =
     .label = Απενεργοποίηση
     .accesskey = ν
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Αφαίρεση όλων των ιστοτόπων
     .accesskey = λ
+permissions-save-changes-2 =
+    .buttonlabelaccept = Αποθήκευση αλλαγών
+    .buttonaccesskeyaccept = Π
 permission-dialog =
     .buttonlabelaccept = Αποθήκευση αλλαγών
     .buttonaccesskeyaccept = Π
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Μπορείτε να καθορίσετε σε ποιους ιστοτόπους επιτρέπεται πάντα ή δεν επιτρέπεται ποτέ η χρήση των cookie και των δεδομένων ιστοτόπων. Πληκτρολογήστε την ακριβή διεύθυνση του ιστοτόπου που θέλετε να διαχειριστείτε και έπειτα, επιλέξτε «Φραγή», «Αποδοχή για τη συνεδρία» ή «Αποδοχή».
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = Εξαιρέσεις - Απαλοιφή ιστορικού κατά το κλείσιμο
+permissions-exceptions-shutdown-clearing-desc = Μπορείτε να καθορίσετε ποιοι ιστότοποι θα διατηρούν τα δεδομένα τους όταν το { -brand-short-name } διαγράφει το ιστορικό κατά το κλείσιμο. Πληκτρολογήστε την ακριβή διεύθυνση του ιστοτόπου που θέλετε να διαχειριστείτε και επιλέξτε «Αποδοχή».
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Μπορείτε να απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για συγκεκριμένες ιστοτόπους. Το { -brand-short-name } δεν θα επιχειρήσει να κάνει αναβάθμιση σε ασφαλή σύνδεση HTTPS στους ιστοτόπους αυτούς. Οι εξαιρέσεις δεν ισχύουν για ιδιωτικά παράθυρα.
 permissions-exceptions-https-only-desc2 = Μπορείτε να απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για συγκεκριμένους ιστοτόπους. Το { -brand-short-name } δεν θα επιχειρήσει να κάνει αναβάθμιση σε ασφαλή σύνδεση HTTPS σε αυτούς τους ιστοτόπους.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Επιτρεπόμενες ιστοσελίδες - Αναδυόμενα παράθυρα και ανακατευθύνσεις τρίτων
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Μπορείτε να καθορίσετε ποιοι ιστότοποι επιτρέπεται να ανοίγουν αναδυόμενα παράθυρα και να ανακατευθύνονται από τρίτα πλαίσια.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Οι ακόλουθοι ιστότοποι έχο
 permissions-site-camera-disable-label =
     .label = Αποκλεισμός νέων αιτημάτων πρόσβασης στην κάμερά σας
 permissions-site-camera-disable-desc = Αυτό θα εμποδίσει τα αιτήματα πρόσβασης στην κάμερά σας από όλους τους ιστοτόπους που δεν αναγράφονται παραπάνω. Ο αποκλεισμός πρόσβασης στην κάμερά σας ενδέχεται να προκαλέσει δυσλειτουργία σε ορισμένους ιστοτόπους.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Ρυθμίσεις - Εφαρμογές και υπηρεσίες συσκευής
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Αυτοί οι ιστότοποι έχουν ζητήσει πρόσβαση σε εφαρμογές και υπηρεσίες σε αυτήν τη συσκευή. Μπορείτε να επιτρέψετε ή να αποκλείσετε την πρόσβαση σε ιστοτόπους.
+permissions-site-localhost-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων για πρόσβαση σε εφαρμογές και υπηρεσίες σε αυτήν τη συσκευή
+permissions-site-localhost-disable-desc = Αυτό θα σταματήσει τα αιτήματα πρόσβασης σε εφαρμογές και υπηρεσίες αυτής της συσκευής από όλους τους ιστοτόπους που δεν αναφέρονται παραπάνω. Κάτι τέτοιο ενδέχεται να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Ρυθμίσεις - Συσκευές τοπικού δικτύου
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Αυτοί οι ιστότοποι έχουν ζητήσει πρόσβαση σε εφαρμογές και υπηρεσίες συσκευών συνδεδεμένων στο Wi-Fi ή στο τοπικό δίκτυο. Μπορείτε να επιλέξετε να επιτρέψετε ή να αποκλείσετε την πρόσβαση σε ιστοτόπους.
+permissions-site-local-network-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων πρόσβασης σε εφαρμογές και υπηρεσίες σε συσκευές συνδεδεμένες στο Wi-Fi ή στο τοπικό σας δίκτυο.
+permissions-site-local-network-disable-desc = Αυτό θα σταματήσει όλα τα αιτήματα πρόσβασης σε εφαρμογές και υπηρεσίες σε συσκευές συνδεδεμένες στο Wi-Fi ή στο τοπικό σας δίκτυο από όλους τους ιστοτόπους που δεν αναφέρονται παραπάνω. Κάτι τέτοιο ενδέχεται να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες.
 
 ## Site Permissions - Microphone
 

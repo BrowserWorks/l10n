@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH-Adresse
 about-networking-dns-trr-mode = DoH-Modus
 about-networking-dns-suffix = DNS-Suffixe
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Quelle
+about-networking-alt-svc-alternate = Alternativer Dienst
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Überprüft
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isolationsschlüssel
 about-networking-refresh = Aktualisieren
 about-networking-auto-refresh = Automatisch alle 3 Sekunden aktualisieren
 about-networking-hostname = Hostname
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS-Lookup
 about-networking-dns-lookup-button = Auflösen
 about-networking-dns-domain = Domain:
 about-networking-dns-lookup-table-column = IPs
+about-networking-dns-https-rrs-lookup-table-column = HTTPS-RRs
 about-networking-dns-https-rr-lookup-table-column = HTTP-RRs
 about-networking-rcwn = RCWN-Statistiken
 about-networking-rcwn-status = RCWN-Status
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Diese Seite wurde nach <a data-l10n-name=
 
 about-networking-networkid-is-up = Verbindung (Link) bestätigt
 about-networking-networkid-status-known = Status der Verbindung (Link) bekannt
-
-##
-

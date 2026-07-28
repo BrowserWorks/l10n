@@ -4,9 +4,6 @@
 
 do-not-track-description = Kirim sinyal “Jangan Lacak” ke situs web bahwa Anda tidak ingin dilacak
 do-not-track-removal = Kami tidak lagi mendukung sinyal "Jangan Lacak"
-do-not-track-description2 =
-    .label = Kirim sinyal “Jangan Lacak” ke situs web
-    .accesskey = K
 do-not-track-learn-more = Pelajari lebih lanjut
 do-not-track-option-default-content-blocking-known =
     .label = Hanya ketika { -brand-short-name } diatur untuk memblokir pelacak yang diketahui
@@ -15,12 +12,16 @@ do-not-track-option-always =
 global-privacy-control-description =
     .label = Beritahu situs untuk tidak menjual atau membagikan data saya
     .accesskey = s
+non-technical-privacy-group =
+    .label = Pengaturan Privasi Situs
 non-technical-privacy-header = Pengaturan Privasi Situs
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = Pengaturan
+category-nav-heading =
+    .heading = Pengaturan
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -35,23 +36,33 @@ search-input-box2 =
 managed-notice = Peramban Anda dikelola oleh organisasi Anda.
 managed-notice-info-icon =
     .alt = Informasi
+managed-notice-nav =
+    .label = Peramban Anda dikelola oleh organisasi Anda.
 category-list =
     .aria-label = Kategori
 pane-general-title = Umum
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = Beranda
+pane-search-title2 = Cari
+    .title = Cari
+pane-privacy-title3 = Privasi & Keamanan
+    .title = Privasi & Keamanan
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = Cari
 category-search =
     .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = Privasi & Keamanan
 pane-privacy-title = Privasi & Keamanan
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = Sinkronisasi
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
 pane-experimental-title = Eksperimen { -brand-short-name }
 category-experimental =
     .tooltiptext = Eksperimen { -brand-short-name }
@@ -65,12 +76,20 @@ pane-experimental-description3 = Cobalah fitur eksperimental kami! Berbagai fitu
 pane-experimental-reset =
     .label = Pulihkan Bawaan
     .accesskey = B
+help-button-label2 = Dukungan { -brand-short-name }
+    .title = Dukungan { -brand-short-name }
+addons-button-label2 = Ekstensi & Tema
+    .title = Ekstensi & Tema
 help-button-label = Dukungan { -brand-short-name }
 addons-button-label = Ekstensi & Tema
 focus-search =
     .key = f
 close-button =
     .aria-label = Tutup
+do-not-track-removal2 =
+    .label = Kami tidak lagi mendukung sinyal "Jangan Lacak"
+applications-setting-new-file-types =
+    .label = Apa yang sebaiknya { -brand-short-name } lakukan dengan berkas lainnya?
 
 ## Browser Restart Dialog
 
@@ -134,6 +153,8 @@ set-as-my-default-browser =
 startup-restore-windows-and-tabs =
     .label = Buka jendela dan tab sebelumnya
     .accesskey = s
+startup-windows-launch-on-login-profile-disabled =
+    .message = Aktifkan preferensi ini dengan mencentang “{ profile-manager-use-selected.label }“ di jendela “Pilih Profil Pengguna“.
 windows-launch-on-login =
     .label = Buka { -brand-short-name } secara otomatis saat komputer Anda dinyalakan
     .accesskey = o
@@ -148,11 +169,20 @@ preferences-data-migration-description = Impor data markah, sandi, riwayat, dan 
 preferences-data-migration-button =
     .label = Impor Data
     .accesskey = I
+preferences-profiles-group-header =
+    .heading = Profil
+preferences-profiles-subpane-description =
+    .description = Setiap profil memiliki data dan pengaturan penjelajahan terpisah, termasuk riwayat, kata sandi, dan lainnya.
+preferences-profiles-section-header =
+    .label = Profil
+    .description = Setiap profil memiliki data dan pengaturan penjelajahan terpisah, termasuk riwayat, kata sandi, dan lainnya.
 preferences-profiles-header = Profil
 preferences-manage-profiles-description = Setiap profil memiliki data dan pengaturan penjelajahan terpisah, termasuk riwayat, kata sandi, dan lainnya.
 preferences-manage-profiles-learn-more = Pelajari lebih lanjut
 preferences-manage-profiles-button =
     .label = Kelola Profil
+tabs-group-header2 =
+    .label = Tab
 tabs-group-header = Tab
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab berputar melalui tab dalam urutan yang baru saja digunakan
@@ -199,6 +229,8 @@ browser-containers-settings =
     .label = Setelan…
     .accesskey = E
 containers-disable-alert-title = Tutup Semua Kontainer Tab?
+startup-group =
+    .label = Memulai
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
@@ -218,6 +250,11 @@ containers-remove-cancel-button = Jangan hapus Kontainer ini
 settings-tabs-show-image-in-preview =
     .label = Tampilkan pratinjau gambar saat mengarahkan kursor pada tab
     .accessKey = p
+browser-layout-header2 =
+    .label = Tata Letak Peramban
+browser-layout-show-sidebar2 =
+    .label = Tampilkan bilah samping
+    .description = Akses markah, tab dari ponsel Anda, chatbot AI, dan lainnya dengan cepat tanpa meninggalkan tampilan utama Anda.
 browser-layout-header = Tata Letak Peramban
 browser-layout-horizontal-tabs =
     .label = Tab horizontal
@@ -234,6 +271,12 @@ browser-layout-show-sidebar-desc = Akses markah, tab dari ponsel Anda, chatbot A
 language-and-appearance-header = Bahasa dan Tampilan
 preferences-web-appearance-header = Tampilan situs web
 preferences-web-appearance-description = Beberapa situs web menyesuaikan skema warnanya berdasarkan preferensi Anda. Pilih skema warna mana yang ingin Anda gunakan untuk situs tersebut.
+preferences-web-appearance-choice-light2 =
+    .label = Terang
+    .title = Gunakan tampilan terang untuk latar belakang dan konten situs web.
+preferences-web-appearance-choice-dark2 =
+    .label = Gelap
+    .title = Gunakan tampilan gelap untuk latar belakang dan konten situs web.
 preferences-web-appearance-choice-auto = Otomatis
 preferences-web-appearance-choice-light = Terang
 preferences-web-appearance-choice-dark = Gelap
@@ -251,11 +294,13 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
-preferences-web-appearance-override-warning = Pilihan warna Anda mengesampingkan tampilan situs web. <a data-l10n-name="colors-link">Kelola warna</a>
+preferences-web-appearance-override-warning3 =
+    .message = Pengaturan kontrol kontras Anda menimpa penampilan situs web.
+preferences-web-appearance-link =
+    .label = Kelola tema { -brand-short-name } di Ekstensi & Tema
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
-preferences-web-appearance-override-warning2 =
-    .message = Pilihan warna Anda mengesampingkan tampilan situs web.
+preferences-web-appearance-override-warning = Pilihan warna Anda mengesampingkan tampilan situs web. <a data-l10n-name="colors-link">Kelola warna</a>
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Kelola tema { -brand-short-name } di <a data-l10n-name="themes-link">Ekstensi & Tema</a>
@@ -270,11 +315,16 @@ preferences-contrast-control-off =
 preferences-contrast-control-custom =
     .label = Ubahan
     .accesskey = U
+preferences-colors-manage-button2 =
+    .label = Kelola Warna
+    .accesskey = W
 preferences-colors-header = Warna
 preferences-colors-description = Timpa warna baku { -brand-short-name } untuk teks, latar belakang situs web, dan tautan.
 preferences-colors-manage-button =
     .label = Kelola Warna…
     .accesskey = W
+preferences-fonts-header2 =
+    .label = Fon
 preferences-fonts-header = Fon
 default-font = Fon baku
     .accesskey = F
@@ -283,6 +333,9 @@ default-font-size = Ukuran
 advanced-fonts =
     .label = Lebih lanjut…
     .accesskey = L
+preferences-default-zoom-label =
+    .label = Perbesaran baku
+    .accesskey = P
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Perbesaran
 preferences-default-zoom = Perbesaran baku
@@ -307,6 +360,8 @@ manage-browser-languages-button =
     .accesskey = S
 confirm-browser-language-change-description = Mulai ulang { -brand-short-name } untuk menerapkan perubahan
 confirm-browser-language-change-button = Terapkan dan Mulai Ulang
+browser-language-install-error =
+    .message = { -brand-short-name } tidak dapat memperbarui bahasa Anda saat ini. Periksa koneksi internet Anda atau coba lagi.
 translate-web-pages =
     .label = Penerjemahan isi web
     .accesskey = n
@@ -328,6 +383,10 @@ check-user-spelling =
 ## General Section - Files and Applications
 
 files-and-applications-title = Berkas dan Aplikasi
+download-save-files-header =
+    .label = Simpan berkas di
+download-save-where-3 =
+    .aria-label = Simpan berkas di
 download-header = Unduhan
 download-save-where = Simpan berkas di
     .accesskey = S
@@ -352,9 +411,11 @@ applications-filter =
 applications-type-column =
     .label = Tipe Isi
     .accesskey = T
+applications-type-heading = Tipe Isi
 applications-action-column =
     .label = Aksi
     .accesskey = A
+applications-action-heading = Aksi
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = berkas { $extension }
@@ -418,7 +479,7 @@ applications-use-other-label =
 applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
-##
+## Firefox updates
 
 applications-handle-new-file-types-description = Apa yang sebaiknya { -brand-short-name } lakukan dengan berkas lainnya?
 applications-save-for-new-types =
@@ -427,6 +488,8 @@ applications-save-for-new-types =
 applications-ask-before-handling =
     .label = Tanyakan apakah akan membuka atau menyimpan berkas
     .accesskey = a
+drm-group =
+    .label = Konten Digital Rights Management (DRM)
 drm-content-header = Konten Digital Rights Management (DRM)
 play-drm-content =
     .label = Putar konten DRM-terkontrol
@@ -437,6 +500,9 @@ update-application-description = Pastikan { -brand-short-name } selalu mutakhir 
 # Variables:
 # $version (string) - Firefox version
 update-application-version = Versi { $version } <a data-l10n-name="learn-more">Yang baru</a>
+update-history-2 =
+    .label = Tampilkan Riwayat Pemutakhiran
+    .accesskey = P
 update-history =
     .label = Tampilkan Riwayat Pemutakhiran…
     .accesskey = P
@@ -453,6 +519,8 @@ update-application-manual =
 update-application-background-enabled =
     .label = Ketika { -brand-short-name } sedang tidak berjalan
     .accesskey = t
+update-application-warning-cross-user-setting-2 =
+    .message = Pengaturan ini akan berlaku untuk semua akun Windows dan profil { -brand-short-name } yang menggunakan pemasangan { -brand-short-name } ini.
 update-application-warning-cross-user-setting = Pengaturan ini akan berlaku untuk semua akun Windows dan profil { -brand-short-name } yang menggunakan pemasangan { -brand-short-name } ini.
 update-application-use-service =
     .label = Gunakan layanan latar belakang untuk memasang pemutakhiran
@@ -495,10 +563,14 @@ performance-limit-content-process-blocked-desc = Memodifikasi jumlah proses kont
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (baku)
+performance-group =
+    .label = Kinerja
 
-## General Section - Browsing
+## Accessibility page
 
 browsing-title = Jelajah Web
+browsing-group-label =
+    .aria-label = Meramban
 browsing-use-autoscroll =
     .label = Gunakan penggeseran otomatis
     .accesskey = G
@@ -538,6 +610,8 @@ browsing-cfr-features =
     .label = Sarankan fitur seiring penjelajahan Anda
     .accesskey = S
 browsing-cfr-recommendations-learn-more = Pelajari lebih lanjut
+browsing-group =
+    .label = Jelajah Web
 
 ## General Section - Proxy
 
@@ -553,10 +627,18 @@ network-proxy-connection-settings =
 home-new-windows-tabs-header = Jendela dan Tab Baru
 home-new-windows-tabs-description2 = Pilih yang akan dilihat pertama kali ketika membuka beranda, jendela baru, dan tab baru.
 
-## Home Section - Home Page Customization
+## Home Section - Default Browser
+
+set-as-my-default-browser-2 =
+    .label = Jadikan Baku
+    .accesskey = U
+
+## Custom Homepage subpage
 
 home-homepage-mode-label = Laman beranda dan jendela baru
 home-newtabs-mode-label = Tab baru
+home-homepage-new-tabs =
+    .label = Tab baru
 home-restore-defaults =
     .label = Pulihkan Bawaan
     .accesskey = B
@@ -587,11 +669,15 @@ choose-bookmark =
 
 home-prefs-content-header2 = Konten { -firefox-home-brand-name }
 home-prefs-content-description2 = Pilih konten yang diinginkan untuk tampil di layar { -firefox-home-brand-name } Anda.
+home-prefs-firefox-logo-header =
+    .label = Logo { -brand-short-name }
 home-prefs-search-header =
     .label = Pencarian Web
 home-prefs-shortcuts-header =
     .label = Pintasan
 home-prefs-shortcuts-description = Situs yang Anda simpan atau kunjungi
+home-prefs-shortcuts-select =
+    .aria-label = Pintasan
 home-prefs-shortcuts-by-option-sponsored =
     .label = Pintasan bersponsor
 
@@ -622,6 +708,8 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-recent-activity-header =
     .label = Aktivitas terbaru
 home-prefs-recent-activity-description = Pilihan situs dan konten terbaru
+home-prefs-recent-activity-select =
+    .aria-label = Aktivitas terbaru
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -633,6 +721,16 @@ home-prefs-weather-header =
     .label = Cuaca
 home-prefs-weather-description = Sekilas prakiraan hari ini
 home-prefs-weather-learn-more-link = Pelajari lebih lanjut
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Dukung { -brand-product-name }
+home-prefs-mission-message = Sponsor kami mendukung misi kami untuk membangun web yang lebih baik
+home-prefs-mission-message-learn-more-link = Cari tahu bagaimana
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = Ekstensi ({ $extension })
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -662,8 +760,10 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Tampilkan saran pencarian di hasil bilah alamat
     .accesskey = l
-# With this option enabled, on the search results page
-# the URL will be replaced by the search terms in the address bar.
+search-suggestions-cant-show-2 =
+    .message = Saran pencarian tidak akan ditampilkan di hasil bilah lokasi karena Anda telah mengatur { -brand-short-name } agar tidak mengingat riwayat.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
 search-show-search-term-option-2 =
     .label = Tampilkan istilah pencarian di bilah alamat pada laman hasil
 # With this option enabled, on the search results page
@@ -697,6 +797,9 @@ search-remove-engine =
 search-add-engine =
     .label = Tambah
     .accesskey = a
+search-edit-engine =
+    .label = Sunting
+    .accesskey = S
 search-find-more-link = Temukan lebih banyak mesin pencari
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -705,12 +808,19 @@ search-keyword-warning-title = Kata Kunci Ganda
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Anda telah memilih kata kunci yang sama dengan "{ $name }". Silakan pilih kata lain.
 search-keyword-warning-bookmark = Anda telah memilih kata kunci yang sama dengan nama Markah. Silakan pilih kata lain.
+remove-engine-remove = Buang
+search-engine-group =
+    .label = Mesin Pencari Baku
+search-default-engine =
+    .aria-label = Mesin Pencari Baku
 
 ## Containers Section
 
 containers-back-button2 =
     .aria-label = Kembali ke Pengaturan
 containers-header = Tab Kontainer
+containers-section-header =
+    .heading = Tab Kontainer
 containers-add-button =
     .label = Tambahkan Kontainer Baru
     .accesskey = T
@@ -721,6 +831,11 @@ containers-settings-button =
     .label = Pengaturan
 containers-remove-button =
     .label = Hapus
+
+## Account and sync
+
+sync-group-label =
+    .label = Sinkronisasi
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -754,11 +869,18 @@ fxa-login-rejected-warning =
 sync-sign-out =
     .label = Keluar…
     .accesskey = K
+sync-sign-out2 =
+    .label = Keluar
+    .accesskey = K
 sync-manage-account = Kelola Akun
+    .accesskey = o
+sync-manage-account2 =
+    .label = Kelola Akun
     .accesskey = o
 
 ## Variables
 ## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
 
 sync-signedin-unverified = { $email } tidak dapat diverifikasi.
 sync-signedin-login-failure = Mohon masuk untuk menyambungkan ulang { $email }
@@ -785,6 +907,9 @@ prefs-syncing-off = Sinkronisasi: NONAKTIF
 prefs-sync-turn-on-syncing =
     .label = Aktifkan sinkronisasi…
     .accesskey = A
+prefs-sync-turn-on-syncing-2 =
+    .label = Aktifkan sinkronisasi
+    .accesskey = A
 prefs-sync-offer-setup-label2 = Sinkronkan markah, riwayat, tab, sandi, pengaya, dan pengaturan di berbagai perangkat Anda.
 prefs-sync-now =
     .labelnotsyncing = Sinkronkan Sekarang
@@ -793,8 +918,14 @@ prefs-sync-now =
 prefs-sync-now-button =
     .label = Sinkronkan Sekarang
     .accesskey = S
+prefs-sync-now-button-2 =
+    .label = Sinkronkan Sekarang
+    .accesskey = S
 prefs-syncing-button =
     .label = Menyinkronkan…
+prefs-syncing-button-2 =
+    .label = Menyinkronkan…
+    .title = Sinkronkan Sekarang
 
 ## The list of things currently syncing.
 
@@ -875,6 +1006,16 @@ sync-choose-what-to-sync-dialog4 =
 ## The device name controls.
 
 sync-device-name-header = Nama Peranti
+sync-device-name-header-2 =
+    .label = Nama Peranti
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = Nama Peranti
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = Ubah Nama Peranti
+    .accesskey = h
 sync-device-name-change =
     .label = Ubah Nama Peranti…
     .accesskey = h
@@ -885,6 +1026,8 @@ sync-device-name-save =
     .label = Simpan
     .accesskey = S
 sync-connect-another-device = Hubungkan perangkat lain
+sync-connect-another-device-2 =
+    .label = Hubungkan perangkat lain
 
 ## These strings are shown in a desktop notification after the
 ## user requests we resend a verification email.
@@ -910,7 +1053,7 @@ forms-ask-to-save-logins =
     .label = Minta untuk menyimpan info masuk dan kata sandi untuk situs web
     .accesskey = M
 
-## Privacy Section - Passwords
+## Privacy Panel Settings
 
 # "Logins" is the former term for "Passwords". Users should find password settings
 # by searching for the former term "logins". It's not displayed in the UI.
@@ -1015,6 +1158,28 @@ autofill-saved-payment-methods-button = Metode pembayaran tersimpan
 # This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox = Wajibkan info masuk perangkat untuk mengisi dan mengelola metode pembayaran
     .accesskey = W
+autofill-payment-methods-header =
+    .aria-label = Metode pembayaran
+autofill-payment-methods-checkbox-message-2 =
+    .label = Simpan dan isi otomatis info pembayaran
+    .accesskey = p
+autofill-payment-methods-manage-payments-button =
+    .label = Kelola metode pembayaran
+    .accesskey = m
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = Wajibkan masuk perangkat untuk mengisi otomatis dan mengelola metode pembayaran
+    .accesskey = o
+autofill-addresses-checkbox-message =
+    .label = Simpan dan isi otomatis alamat
+    .accesskey = S
+autofill-addresses-manage-addresses-button =
+    .label = Kelola alamat dan lainnya
+    .accesskey = m
+addresses-group =
+    .label = Alamat dan lainnya
+payments-group =
+    .label = Metode pembayaran
 
 ## Privacy Section - History
 
@@ -1036,6 +1201,12 @@ history-remember-option-never =
     .label = tidak akan mengingat data riwayat
 history-remember-option-custom =
     .label = akan menggunakan pengaturan khusus untuk data riwayat
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } akan mengingat penjelajahan, unduhan, formulir, dan riwayat pencarian Anda.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } akan menggunakan pengaturan seperti halnya pengaturan mode penjelajahan pribadi dan tidak akan menyimpan riwayat apa pun ketika Anda menjelajah Web.
 history-remember-description = { -brand-short-name } akan mengingat penjelajahan, unduhan, formulir, dan riwayat pencarian Anda.
 history-dontremember-description = { -brand-short-name } akan menggunakan pengaturan seperti halnya pengaturan mode penjelajahan pribadi dan tidak akan menyimpan riwayat apa pun ketika Anda menjelajah Web.
 history-private-browsing-permanent =
@@ -1056,6 +1227,8 @@ history-clear-on-close-settings =
 history-clear-button =
     .label = Hapus riwayat…
     .accesskey = r
+history-group =
+    .label = Riwayat
 
 ## Privacy Section - Site Data
 
@@ -1069,6 +1242,8 @@ sitedata-learn-more = Pelajari lebih lanjut
 sitedata-delete-on-close =
     .label = Hapus kuki dan data situs ketika { -brand-short-name } ditutup
     .accesskey = H
+sitedata-delete-on-close-private-browsing3 =
+    .message = Berdasarkan pengaturan riwayat Anda, { -brand-short-name } menghapus kuki dan data situs dari sesi Anda saat menutup peramban.
 sitedata-delete-on-close-private-browsing = Pada mode penjelajahan pribadi yang permanen, kuki dan data situs akan selalu dibersihkan saat { -brand-short-name } ditutup.
 sitedata-delete-on-close-private-browsing2 = Berdasarkan pengaturan riwayat Anda, { -brand-short-name } menghapus kuki dan data situs dari sesi Anda saat menutup peramban.
 sitedata-allow-cookies-option =
@@ -1085,6 +1260,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Pelacak lintas situs
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Kuki pelacak lintas situs
+sitedata-option-block-cross-site-cookies2 =
+    .label = Isolasikan kuki lintas situs
 sitedata-option-block-cross-site-cookies =
     .label = Kuki pelacak lintas situs dan mengisolasi kuki lintas situs lainnya
 sitedata-option-block-unvisited =
@@ -1102,6 +1279,8 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Kelola Pengecualian…
     .accesskey = K
+cookies-site-data-group =
+    .label = Kuki dan Data Situs
 
 ## Privacy Section - Cookie Banner Handling
 
@@ -1118,7 +1297,7 @@ forms-handle-cookie-banners =
 cookie-banner-blocker-checkbox-label =
     .label = Otomatis menolak spanduk kuki
 
-## Privacy Section - Address Bar
+## Search Section
 
 addressbar-header = Bilah Alamat
 addressbar-suggest = Saat menggunakan bilah alamat, sarankan
@@ -1154,6 +1333,13 @@ addressbar-locbar-engines-option =
 addressbar-locbar-quickactions-option =
     .label = Tindakan cepat
     .accesskey = T
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = Saran dari { -brand-short-name }
+    .description = Dapatkan saran dari web yang terkait dengan pencarian Anda.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = Saran dari sponsor
+    .description = Dukung { -brand-short-name } dengan saran sponsor sesekali.
 addressbar-suggestions-settings = Ubah pengaturan untuk saran mesin pencari
 addressbar-locbar-showrecentsearches-option =
     .label = Tampilkan pencarian terbaru
@@ -1168,6 +1354,9 @@ addressbar-locbar-suggest-nonsponsored-desc = Dapatkan saran dari web yang terka
 addressbar-locbar-suggest-sponsored-option =
     .label = Saran dari sponsor
 addressbar-locbar-suggest-sponsored-desc = Dukung { -brand-short-name } dengan saran sponsor sesekali.
+addressbar-dismissed-suggestions-label-2 =
+    .label = Abaikan saran
+    .description = Pulihkan saran yang ditolak dari sponsor dan { -brand-short-name }.
 addressbar-quickactions-learn-more = Pelajari lebih lanjut
 addressbar-dismissed-suggestions-label = Abaikan saran
 addressbar-restore-dismissed-suggestions-description = Pulihkan saran yang ditolak dari sponsor dan { -brand-short-name }.
@@ -1209,6 +1398,7 @@ content-blocking-private-windows = Melacak konten di Jendela Pribadi
 content-blocking-cross-site-cookies-in-all-windows2 = Kuki lintas situs di semua jendela
 content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs
 content-blocking-all-cross-site-cookies-private-windows = Kuki lintas situs di Jendela Pribadi
+content-blocking-isolate-cross-site-cookies = Isolasikan kuki lintas situs
 content-blocking-cross-site-tracking-cookies-plus-isolate = Kuki pelacak lintas situs, dan isolasi kuki tersisa
 content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
@@ -1310,6 +1500,8 @@ permissions-notification-link = Pelajari lebih lanjut
 permissions-notification-pause =
     .label = Jeda notifikasi hingga { -brand-short-name } dimulai ulang
     .accesskey = J
+permissions-autoplay2 =
+    .label = Putar Otomatis
 permissions-autoplay = Putar Otomatis
 permissions-autoplay-settings =
     .label = Pengaturan...
@@ -1329,6 +1521,16 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Pengecualian…
     .accesskey = P
+permissions-location2 =
+    .label = Lokasi
+permissions-xr2 =
+    .label = Realitas Virtual
+permissions-camera2 =
+    .label = Kamera
+permissions-microphone2 =
+    .label = Mikrofon
+permissions-notification2 =
+    .label = Notifikasi
 
 ## Privacy Section - Data Collection
 
@@ -1343,6 +1545,9 @@ collection-description = Kami berusaha memberi Anda pilihan dan mengumpulkan han
 collection-privacy-notice = Pemberitahuan Privasi
 collection-health-report-telemetry-disabled = Anda tidak lagi mengizinkan { -vendor-short-name } untuk menangkap data teknis dan interaksi. Semua data sebelumnya akan dihapus dalam waktu 30 hari.
 collection-health-report-telemetry-disabled-link = Pelajari lebih lanjut
+addon-recommendations3 =
+    .label = Izinkan rekomendasi ekstensi yang dipersonalisasi
+    .description = Dapatkan rekomendasi ekstensi untuk meningkatkan pengalaman penjelajahan Anda.
 collection-usage-ping =
     .label = Kirim ping penggunaan harian ke { -vendor-short-name }
     .accesskey = u
@@ -1379,14 +1584,33 @@ addon-recommendations-link = Pelajari lebih lanjut
 collection-health-report-disabled = Pelaporan data dinonaktifkan untuk konfigurasi build ini
 collection-backlogged-crash-reports-with-link = Izinkan { -brand-short-name } mengirim laporan kerusakan sebelumnya atas nama Anda <a data-l10n-name="crash-reports-link">Pelajari lebih lanjut</a>
     .accesskey = l
-collection-backlogged-crash-reports = Izinkan { -brand-short-name } mengirim laporan kerusakan sebelumnya atas nama Anda
-    .accesskey = l
 privacy-segmentation-section-header = Fitur baru yang meningkatkan penjelajahan Anda
 privacy-segmentation-section-description = Saat kami menawarkan fitur yang menggunakan data Anda untuk memberi Anda pengalaman yang lebih pribadi:
 privacy-segmentation-radio-off =
     .label = Gunakan rekomendasi { -brand-product-name }
 privacy-segmentation-radio-on =
     .label = Tampilkan informasi rinci
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = Pengumpulan dan Penggunaan Data { -brand-short-name }
+    .description = Kami berusaha untuk memberi Anda pilihan dan hanya mengumpulkan data minimal yang diperlukan untuk meningkatkan { -brand-product-name } bagi semua orang.
+    .searchkeywords = telemetri
+data-collection-link = Lihat Pemberitahuan Privasi
+data-collection-preferences-across-profiles =
+    .message = Pengaturan ini berlaku untuk setiap profil { -brand-product-name } pada perangkat ini.
+data-collection-profiles-link = Tampilkan semua profil
+data-collection-health-report-telemetry-disabled =
+    .message = Anda tidak lagi mengizinkan { -vendor-short-name } untuk menangkap data teknis dan interaksi. Semua data sebelumnya akan dihapus dalam waktu 30 hari.
+data-collection-health-report =
+    .label = Kirim data teknis dan interaksi ke { -vendor-short-name }
+    .accesskey = r
+    .description = Ini membantu kami meningkatkan fitur, kinerja, dan stabilitas { -brand-product-name }.
+data-collection-studies-link =
+    .label = Lihat kajian { -brand-short-name }
+data-collection-usage-ping =
+    .label = Kirim ping penggunaan harian ke { -vendor-short-name }
+    .description = Ini membantu { -vendor-short-name } untuk memperkirakan pengguna aktif.
+    .accesskey = u
 
 ## Privacy Section - Website Advertising Preferences
 
@@ -1429,6 +1653,7 @@ certs-devices =
 certs-thirdparty-toggle =
     .label = Izinkan { -brand-short-name } untuk secara otomatis mempercayai sertifikat akar pihak ketiga yang Anda pasang
     .accesskey = s
+certs-devices-enable-fips = Aktifkan FIPS
 space-alert-over-5gb-settings-button =
     .label = Buka Pengaturan
     .accesskey = B
@@ -1451,6 +1676,9 @@ httpsonly-radio-disabled3 =
     .description = { -brand-short-name } mungkin masih meningkatkan beberapa koneksi
 httpsonly-radio-disabled =
     .label = Jangan aktifkan Mode Hanya HTTPS
+httpsonly-group =
+    .label = Mode Hanya HTTPS
+    .description = Hanya mengizinkan sambungan aman ke situs web. { -brand-short-name } akan bertanya sebelum menyambung secara tidak aman.
 
 ## DoH Section
 
@@ -1516,3 +1744,8 @@ preferences-doh-manage-exceptions =
 desktop-folder-name = Desktop
 downloads-folder-name = Unduhan
 choose-download-folder-title = Pilih Folder Unduhan:
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = Isolasikan kuki lintas situs

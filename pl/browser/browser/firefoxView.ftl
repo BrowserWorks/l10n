@@ -19,8 +19,6 @@ firefoxview-page-label =
 firefoxview-close-button =
     .title = Zamknij
     .aria-label = Zamknij
-firefoxview-empty-state-icon =
-    .alt = Uwaga:
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 firefoxview-just-now-timestamp = Przed chwilą
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
@@ -35,17 +33,12 @@ firefoxview-tabpickup-step-signin-primarybutton = Kontynuuj
 firefoxview-syncedtabs-signin-header-2 = Twój { -brand-product-name } na wszystkich urządzeniach
 firefoxview-syncedtabs-signin-description-2 = Zaloguj się lub utwórz konto, aby widzieć karty otwarte na telefonie i innych urządzeniach. Za pomocą konta możesz także synchronizować hasła, historię i nie tylko.
 firefoxview-syncedtabs-signin-primarybutton-2 = Zaloguj się
-firefoxview-syncedtabs-signin-header = Otwieraj karty z każdego miejsca
-firefoxview-syncedtabs-signin-description = Zaloguj się na swoje konto, aby widzieć karty z każdego urządzenia, na którym używasz { -brand-product-name(case: "acc") }. Jeśli jeszcze nie masz konta, pomożemy Ci je założyć.
-firefoxview-syncedtabs-signin-primarybutton = Zaloguj się lub utwórz konto
 firefoxview-tabpickup-adddevice-header = Synchronizuj { -brand-product-name(case: "acc") } na telefonie lub tablecie
 firefoxview-tabpickup-adddevice-description = Pobierz { -brand-product-name(case: "acc") } na telefon i zaloguj się na nim.
 firefoxview-tabpickup-adddevice-learn-how = Dowiedz się, jak to zrobić
 firefoxview-tabpickup-adddevice-primarybutton = Pobierz { -brand-product-name(case: "acc") } na telefon
 firefoxview-syncedtabs-adddevice-header-2 = Otwieraj karty z każdego miejsca
 firefoxview-syncedtabs-adddevice-description-2 = Zaloguj się w { -brand-product-name(case: "loc") } na telefonie lub innym komputerze, aby widzieć karty w tym miejscu. Dowiedz się, jak <a data-l10n-name="url">połączyć dodatkowe urządzenia</a>.
-firefoxview-syncedtabs-adddevice-header = Zaloguj się w { -brand-product-name(case: "loc") } na pozostałych urządzeniach
-firefoxview-syncedtabs-adddevice-description = Zaloguj się na wszystkich swoich urządzeniach, aby widzieć karty z każdego urządzenia, na którym używasz { -brand-product-name(case: "acc") }. Dowiedz się, jak <a data-l10n-name="url">połączyć dodatkowe urządzenia</a>.
 firefoxview-syncedtabs-adddevice-primarybutton = Wypróbuj { -brand-product-name(case: "acc") } na telefon
 firefoxview-tabpickup-synctabs-header = Włącz synchronizację kart
 firefoxview-tabpickup-synctabs-description = Pozwól { -brand-short-name(case: "dat") } udostępniać karty między urządzeniami.
@@ -53,11 +46,10 @@ firefoxview-tabpickup-synctabs-learn-how = Dowiedz się, jak to zrobić
 firefoxview-tabpickup-synctabs-primarybutton = Synchronizuj otwarte karty
 firefoxview-syncedtabs-synctabs-header = Zaktualizuj ustawienia synchronizacji
 firefoxview-syncedtabs-synctabs-description = Musisz synchronizować otwarte karty, aby widzieć karty z innych urządzeń.
-firefoxview-syncedtabs-synctabs-checkbox = Zezwól na synchronizację otwartych kart
 firefoxview-syncedtabs-loading-header = Trwa synchronizacja
 firefoxview-syncedtabs-loading-description = Po ukończeniu zobaczysz tutaj wszystkie karty otwarte na innych urządzeniach. Wróć niedługo.
 firefoxview-tabpickup-fxa-admin-disabled-header = Twoja organizacja wyłączyła synchronizację
-firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } nie może synchronizować kart między urządzeniami, ponieważ administrator komputera wyłączył synchronizację.
+firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } nie może synchronizować kart między urządzeniami, ponieważ administrator tego urządzenia wyłączył synchronizację.
 firefoxview-tabpickup-fxa-disabled-by-policy-description = { -brand-short-name } nie może synchronizować kart między urządzeniami, ponieważ Twoja organizacja wyłączyła synchronizację.
 firefoxview-tabpickup-network-offline-header = Sprawdź połączenie z Internetem
 firefoxview-tabpickup-network-offline-description = Jeśli używasz zapory sieciowej lub serwera proxy, upewnij się, że { -brand-short-name } może łączyć się z Internetem.
@@ -67,7 +59,7 @@ firefoxview-tabpickup-generic-sync-error-description = { -brand-short-name } nie
 firefoxview-tabpickup-sync-error-primarybutton = Spróbuj ponownie
 firefoxview-tabpickup-sync-disconnected-header = Włącz synchronizację, aby kontynuować
 firefoxview-tabpickup-sync-disconnected-description = Musisz włączyć synchronizację w { -brand-short-name(case: "loc") }, aby odbierać karty.
-firefoxview-tabpickup-sync-disconnected-primarybutton = Wyłącz synchronizację w ustawieniach
+firefoxview-tabpickup-sync-disconnected-primarybutton = Włącz synchronizację w ustawieniach
 firefoxview-tabpickup-password-locked-header = Wprowadź hasło główne, aby wyświetlić karty
 firefoxview-tabpickup-password-locked-description = Musisz podać hasło główne { -brand-short-name(case: "gen") }, aby odbierać karty.
 firefoxview-tabpickup-password-locked-link = Więcej informacji
@@ -87,7 +79,6 @@ firefoxview-closed-tabs-title = Ostatnio zamknięte
 firefoxview-closed-tabs-description2 = Ponownie otwieraj strony zamknięte w tym oknie.
 firefoxview-closed-tabs-placeholder-header = Nie ma ostatnio zamkniętych kart
 firefoxview-closed-tabs-placeholder-body = Tutaj będzie można odzyskać karty zamknięte w tym oknie.
-firefoxview-closed-tabs-placeholder-body2 = Tutaj będzie można odzyskać zamknięte karty.
 # Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 firefoxview-closed-tabs-dismiss-tab =
@@ -122,6 +113,8 @@ firefoxview-history-nav = Historia
 firefoxview-history-header = Historia
 firefoxview-history-context-delete = Usuń z historii
     .accesskey = U
+firefoxview-history-context-forget-site = Usuń całą witrynę…
+    .accesskey = c
 
 ## Open Tabs in this context refers to all open tabs in the browser
 
@@ -153,8 +146,6 @@ firefoxview-opentabs-window-header =
 #   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
 firefoxview-opentabs-current-window-header =
     .title = Okno { $winID } (bieżące)
-firefoxview-opentabs-focus-tab =
-    .title = Przełącz na tę kartę
 firefoxview-show-more = Więcej
 firefoxview-show-less = Mniej
 firefoxview-show-all = Wszystko
@@ -166,15 +157,15 @@ firefoxview-search-text-box-recentbrowsing =
 # Placeholder for the input field to search in history ("search" is a verb).
 firefoxview-search-text-box-history =
     .placeholder = Szukaj w historii
+# Placeholder for the input field to search in bookmarks ("search" is a verb).
+firefoxview-search-text-box-bookmarks =
+    .placeholder = Szukaj w zakładkach
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = Szukaj w ostatnio zamkniętych kartach
 # Placeholder for the input field to search in tabs from other devices ("search" is a verb).
 firefoxview-search-text-box-tabs =
     .placeholder = Szukaj w kartach
-# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
-firefoxview-search-text-box-syncedtabs =
-    .placeholder = Szukaj w kartach z innych urządzeń
 # Placeholder for the input field to search in open tabs ("search" is a verb).
 firefoxview-search-text-box-opentabs =
     .placeholder = Szukaj w otwartych kartach
@@ -198,10 +189,6 @@ firefoxview-sort-history-by-date-label = Sortuj według dat
 firefoxview-sort-history-by-site-label = Sortuj według witryn
 firefoxview-sort-open-tabs-by-recency-label = Sortuj według ostatniej aktywności
 firefoxview-sort-open-tabs-by-order-label = Sortuj według kolejności kart
-# Variables:
-#   $url (string) - URL that will be opened in the new tab
-firefoxview-opentabs-tab-row =
-    .title = Przejdź do witryny { $url }
 
 ## Variables:
 ##   $date (string) - Date to be formatted based on locale
@@ -218,7 +205,6 @@ firefoxview-history-site-localhost = (pliki lokalne)
 ##
 
 firefoxview-show-all-history = Wyświetl całą historię
-firefoxview-view-more-browsing-history = Wyświetl więcej historii przeglądania
 
 ## Message displayed in Firefox View when the user has no history data
 
@@ -234,9 +220,6 @@ firefoxview-choose-browser-button = Wybierz przeglądarkę
 
 ## Message displayed in Firefox View when the user has chosen to never remember History
 
-firefoxview-dont-remember-history-empty-header = Nic tu nie ma
-firefoxview-dont-remember-history-empty-description = Ochrona Twojej prywatności leży u podstaw naszej działalności. Dlatego możesz kontrolować, co { -brand-short-name } zapamiętuje.
-firefoxview-dont-remember-history-empty-description-two = Z powodu obecnych ustawień { -brand-short-name } nie zapamiętuje tego, co przeglądasz. Możesz zmienić <a data-l10n-name="history-settings-url-two">ustawienia historii</a>, aby to pamiętał.
 firefoxview-dont-remember-history-empty-header-2 = Masz kontrolę nad tym, co { -brand-short-name } zapamiętuje
 firefoxview-dont-remember-history-empty-description-one = W tej chwili { -brand-short-name } nie zapamiętuje tego, co przeglądasz. Możesz zmienić <a data-l10n-name="history-settings-url-two">ustawienia historii</a>.
 

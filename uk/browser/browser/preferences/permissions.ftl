@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Дозволити
     .accesskey = Д
+permissions-add =
+    .label = Додати
+    .accesskey = о
 permissions-button-off =
     .label = Вимкнути
     .accesskey = В
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Вилучити всі вебсайти
     .accesskey = с
+permissions-save-changes-2 =
+    .buttonlabelaccept = Зберегти зміни
+    .buttonaccesskeyaccept = З
 permission-dialog =
     .buttonlabelaccept = Зберегти зміни
     .buttonaccesskeyaccept = З
@@ -175,7 +181,7 @@ permissions-site-camera-disable-label =
     .label = Блокувати нові запити про отримання доступу до вашої камери
 permissions-site-camera-disable-desc = Це не дозволить будь-яким переліченим вгорі вебсайтам запитувати дозвіл на отримання доступу до вашої камери. Блокування доступу до камери може вплинути на деякі функції вебсайтів.
 
-## Site Permissions - Local host
+## Site Permissions - Loopback network
 
 permissions-site-localhost-window =
     .title = Налаштування – Програми та служби пристрою

@@ -11,6 +11,15 @@
 unified-extensions-header-title = Kiegészítők
 unified-extensions-manage-extensions =
     .label = Kiegészítők kezelése
+unified-extensions-discover-extensions =
+    .label = Kiegészítők felfedezése
+unified-extensions-empty-reason-private-browsing-not-allowed = Vannak olyan kiegészítői, amelyek telepítve vannak, de privát ablakokban nincsenek engedélyezve
+unified-extensions-empty-reason-extension-not-enabled = Vannak olyan kiegészítői, amelyek telepítve vannak, de nincsenek engedélyezve
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Emelje új szintre a böngészését kiegészítőkkel
+unified-extensions-empty-content-explain-enable2 = Válassza a „{ unified-extensions-manage-extensions.label }” lehetőséget a beállításokban való engedélyezéshez.
+unified-extensions-empty-content-explain-manage2 = Válassza a „{ unified-extensions-manage-extensions.label }” lehetőséget a beállításokban való kezeléshez.
+unified-extensions-empty-content-explain-extensions-onboarding = Szabja testre a { -brand-short-name }ot a kinézetének megváltoztatásával, vagy az adatvédelem és a biztonság növelésével.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = A(z) { $extensionName } menüjének megnyitása
 unified-extensions-item-message-manage = Kiegészítő kezelése
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = A(z) { $extensionName } kiegészítő korlátozott. Használata kockázatos lehet.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = A(z) { $extensionName } megsérti a BrowserWorks irányelveit. A használata kockázatos lehet.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = További tudnivalók
 unified-extensions-mb-about-addons-link = Ugrás a kiegészítőbeállításokhoz
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } letiltva
+    .message =
+        Ez a kiegészítő korlátozott, és le lett tiltva.
+        Engedélyezheti a beállításokban, de a használata kockázatos lehet.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } letiltva
     .message =
@@ -63,6 +82,17 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } letiltva
     .message = Ez a kiegészítő megsérti a BrowserWorks irányelveit, és le lett tiltva.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+            [one] { $extensionsCount } kiegészítő letiltva
+           *[other] { $extensionsCount } kiegészítő letiltva
+        }
+    .message =
+        Egyes kiegészítői korlátozottak, és le lettek tiltva.
+        Engedélyezheti őket a beállításokban, de a használatuk kockázatos lehet.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -83,3 +113,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[other] { $extensionsCount } kiegészítő letiltva
         }
     .message = Egyes kiegészítői a BrowserWorks irányelveinek megsértése miatt le lettek tiltva.
+unified-extensions-notice-safe-mode =
+    .message = A Hibaelhárítási mód letiltotta az összes kiegészítőt.

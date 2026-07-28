@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -130,11 +127,33 @@ browser-main-window-titles-mac =
     .data-content-title-private = { $content-title } — Anonymní prohlížení
     .data-content-title-default-with-profile = { $content-title } — { $profile-name }
     .data-content-title-private-with-profile = { $content-title } — { $profile-name } — Anonymní prohlížení
-# This gets set as the initial title, and is overridden as soon as we start
-# updating the titlebar based on loaded tabs or private browsing state.
-# This should match the `data-title-default` attribute in both
-# `browser-main-window` and `browser-main-window-mac`.
+# This is the initial default title for the browser window.
+# It gets updated based on loaded tabs or private browsing state.
 browser-main-window-default-title = { -brand-full-name }
+# Note: only on macOS do we use a `-` separator between the brand name and the
+# "Private Browsing" suffix.
+browser-main-private-window-title =
+    { PLATFORM() ->
+        [macos]
+            { -brand-full-name.case-status ->
+                [with-cases] { -brand-full-name } — Anonymní prohlížení
+               *[no-cases] { -brand-full-name } — Anonymní prohlížení
+            }
+       *[other]
+            { -brand-full-name.case-status ->
+                [with-cases] Anonymní prohlížení { -brand-full-name(case: "gen") }
+               *[no-cases] Anonymní prohlížení — { -brand-full-name }
+            }
+    }
+# This is only used on macOS; on other OSes we use the full private window
+# title (so including the brand name) as a suffix
+browser-main-private-suffix-for-content = Anonymní prohlížení
+popups-infobar-dont-show-message2 =
+    .label = Nezobrazovat, pokud jsou blokována vyskakovací okna nebo přesměrování třetích stran
+    .accesskey = N
+edit-popup-settings2 =
+    .label = Spravovat nastavení vyskakovacích oken a přesměrování třetích stran…
+    .accesskey = S
 
 ##
 
@@ -149,6 +168,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = Změní, jestli můžete ze serveru přijímat oznámení
 urlbar-midi-notification-anchor =
     .tooltiptext = Otevřít MIDI panel
+urlbar-serial-notification-anchor =
+    .tooltiptext = Otevřít panel Sériové porty
 urlbar-eme-notification-anchor =
     .tooltiptext = Správa využívání softwaru DRM
 urlbar-web-authn-anchor =
@@ -161,6 +182,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = Otevře panel zpráv
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Otevře panel se žádostmi o polohu
+urlbar-localhost-notification-anchor =
+    .tooltiptext = Správa přístupu k místnímu zařízení pro tento web
+urlbar-local-network-notification-anchor =
+    .tooltiptext = Správa sdílení přístupu k místní síti pomocí tohoto webu
 urlbar-xr-notification-anchor =
     .tooltiptext = Otevře panel oprávnění pro virtuální realitu
 urlbar-storage-access-anchor =
@@ -198,6 +223,24 @@ urlbar-result-menu-button =
     .title = Otevře nabídku
 urlbar-result-menu-button-feedback = Zpětná vazba
     .title = Otevřít nabídku
+urlbar-result-menu-learn-more2 = Zjistit více
+    .accesskey = Z
+urlbar-result-menu-remove-from-history2 = Smazat z historie
+    .accesskey = r
+urlbar-result-menu-tip-get-help2 = Získat pomoc
+    .accesskey = Z
+urlbar-result-menu-dismiss-suggestion2 = Vyřadit tento návrh
+    .accesskey = O
+urlbar-result-menu-manage-firefox-suggest2 = Spravovat { -firefox-suggest-brand-name }
+    .accesskey = S
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = Nahlásit nepřesnou polohu
+urlbar-result-menu-show-less-frequently2 = Zobrazit méně často
+urlbar-result-menu-dont-show-weather-suggestions2 = Nezobrazovat návrhy počasí
 urlbar-result-menu-learn-more =
     .label = Zjistit více
     .accesskey = Z
@@ -208,7 +251,7 @@ urlbar-result-menu-tip-get-help =
     .label = Získat pomoc
     .accesskey = Z
 urlbar-result-menu-dismiss-suggestion =
-    .label = Odmítnout tento návrh
+    .label = Vyřadit tento návrh
     .accesskey = O
 urlbar-result-menu-learn-more-about-firefox-suggest =
     .label = Zjistěte více o { -firefox-suggest-brand-name }
@@ -227,6 +270,9 @@ urlbar-result-menu-show-less-frequently =
     .label = Zobrazit méně často
 urlbar-result-menu-dont-show-weather-suggestions =
     .label = Nezobrazovat návrhy počasí
+# Used for Split Button.
+urlbar-splitbutton-dropmarker =
+    .title = Otevře nabídku
 # A message shown in the urlbar when the user submits feedback on a suggestion
 # (e.g., it shows an inaccurate location, it's shown too often, etc.).
 urlbar-feedback-acknowledgment = Děkujeme za vaši zpětnou vazbu
@@ -240,7 +286,7 @@ urlbar-dismissal-acknowledgment-weather = Děkujeme za vaši zpětnou vazbu. Ná
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z adresního řádku.
-urlbar-search-tips-redirect-2 = Zadejte do adresního řádku vyhledávaný text a uvidíte návrhy z vyhledávače { $engineName } a vaší historie prohlížení.
+urlbar-search-tips-redirect-2 = Zadejte do adresního řádku hledaný text a uvidíte návrhy od vyhledávače { $engineName } a z vaší historie prohlížení.
 # Make sure to match the name of the Search panel in settings.
 urlbar-search-tips-persist = Vyhledávání je nyní jednodušší. Zkuste své vyhledávání upřesnit zde v adresním řádku. Chcete-li místo toho zobrazit adresu URL, přejděte v nastavení do Vyhledávání.
 # Prompts users to use the Urlbar when they are typing in the domain of a
@@ -250,14 +296,18 @@ urlbar-tabtosearch-onboard = Klepněte na tuto zkratku, abyste rychleji našli, 
 ## Local search mode indicator labels in the urlbar
 
 urlbar-search-mode-bookmarks = Záložky
-urlbar-search-mode-tabs = Otevřené panely
-urlbar-search-mode-history = Historie prohlížení
+urlbar-search-mode-tabs = Panely
+urlbar-search-mode-history = Historie
 urlbar-search-mode-actions = Akce
 
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali zjišťovat vaši polohu.
+urlbar-localhost-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali připojení k místním zařízením.
+urlbar-local-network-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali připojení k místní síti.
 urlbar-xr-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali přístup k vašim zařízením pro virtuální realitu.
 urlbar-web-notifications-blocked =
@@ -270,6 +320,8 @@ urlbar-screen-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali sdílení vaší obrazovky.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali ukládání dat natrvalo.
+urlbar-popup-blocked2 =
+    .tooltiptext = Pro tuto webovou stránku jste zablokovali vyskakovací okna a přesměrování třetích stran.
 urlbar-popup-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali otevírání vyskakovacích oken.
 urlbar-autoplay-media-blocked =
@@ -278,6 +330,8 @@ urlbar-canvas-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali přístup k informacím canvasu.
 urlbar-midi-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali přístup k MIDI zařízením.
+urlbar-serial-blocked =
+    .tooltiptext = Zablokovali jste přístup k sériovému portu pro tuto webovou stránku.
 urlbar-install-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali instalaci doplňků.
 # Variables
@@ -288,6 +342,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Přidá tuto stránku do záložek ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = Rozdělené zobrazení
+    .aria-label = Rozdělené zobrazení
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Vymazat historii vyhledávání
+    .accesskey = S
 
 ## Page Action Context Menu
 
@@ -360,7 +423,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Zobrazit doplňky
@@ -368,12 +431,16 @@ quickactions-addons = Zobrazit doplňky
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = rozšíření, motivy vzhledu, doplňky
+# Opens preferences page at AI controls
+quickactions-manageai = Spravovat ovládání AI
+quickactions-cmd-manageai = zakázat ai, vypnout ai, spravovat ai
 quickactions-cmd-addons2 = doplňky
 # Opens the bookmarks library window
 quickactions-bookmarks2 = Správa záložek
 quickactions-cmd-bookmarks = záložky
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Vymazat nedávnou historii
+quickactions-cmd-clearrecenthistory2 = cookies, vymazat  cookies, mezipaměť, vymazat mezipaměť, údaje o prohlížení, vymazat údaje o prohlížení, historie, vymazat nedávnou historii
 quickactions-cmd-clearrecenthistory = vymazat nedávnou historii, historii
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Vymazat historii
@@ -383,6 +450,7 @@ quickactions-downloads2 = Zobrazit stahování
 quickactions-cmd-downloads = stahování
 # Opens about:addons page in the extensions section
 quickactions-extensions = Správa rozšíření
+quickactions-cmd-extensions2 = rozšíření, doplňky
 quickactions-cmd-extensions = rozšíření
 # Opens Firefox View
 quickactions-firefoxview = Otevřít { -firefoxview-brand-name(case: "acc") }
@@ -400,10 +468,22 @@ quickactions-cmd-help = nápověda, podpora
 # Opens the devtools web inspector
 quickactions-inspector2 = Otevřít nástroje pro vývojáře
 quickactions-cmd-inspector2 = inspektor, inspector, devtools, vývojářské nástroje
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Výběr barvy
+quickactions-cmd-colorpicker = výběr barvy, kapátko, sejmutí barvy
+# Opens Firefox Library
+quickactions-cmd-library = knihovna
+quickactions-library = Otevřít Knihovnu stránek
 quickactions-cmd-inspector = průzkumník, nástroje pro vývojáře, devtools
 # Opens about:logins
 quickactions-logins2 = Správa hesel
 quickactions-cmd-logins = přihlašovací údaje, hesla
+# Mutes all tabs playing audio
+quickactions-mute = Ztlumit přehrávání zvuku panelů
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = ztlumit, ticho, pšššt
 # Opens about:addons page in the plugins section
 quickactions-plugins = Správa zásuvných modulů
 quickactions-cmd-plugins = zásuvné moduly
@@ -413,7 +493,9 @@ quickactions-cmd-print = tisk
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = Uložit stránku jako PDF
 quickactions-cmd-savepdf2 = pdf, uložit stránku
-quickactions-cmd-savepdf = pdf
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = Otevřít editor PDF
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Otevřít anonymní okno
 quickactions-cmd-private = anonymní prohlížení
@@ -434,6 +516,9 @@ quickactions-cmd-restart = restart, restartovat
 # Opens the screenshot tool
 quickactions-screenshot3 = Pořídit snímek stránky
 quickactions-cmd-screenshot2 = snímek obrazovky, pořízení snímku obrazovky
+# Opens about:translations
+quickactions-translate = Přeložit
+quickactions-cmd-translate = přeložit
 quickactions-cmd-screenshot = snímek obrazovky, stránky
 # Opens about:preferences
 quickactions-settings2 = Nastavení
@@ -442,6 +527,10 @@ quickactions-cmd-settings2 = nastavení, předvolby, možnosti, spravovat
 quickactions-cmd-settings = nastavení, předvolby, možnosti
 # Opens about:addons page in the themes section
 quickactions-themes = Nastavení vzhledu
+# In English we provide multiple spellings for "add-ons". If that's not
+# applicable to your language, only use the correct spelling (don't repeat the
+# same word).
+quickactions-cmd-themes2 = motivy, vzhledy, doplňky
 quickactions-cmd-themes = motivy vzhledu
 # Opens a SUMO article explaining how to update the browser
 quickactions-update =
@@ -453,6 +542,9 @@ quickactions-cmd-update = aktualizace, aktualizovat
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Zobrazit zdrojový kód stránky
 quickactions-cmd-viewsource2 = zobrazit zdrojový kód, zdrojový kód, zdrojový kód stránky
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = Otevřít { -firefoxlabs-brand-name }
+quickactions-cmd-labs = laboratoř,experiment
 quickactions-cmd-viewsource = zdrojový kód
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -522,9 +614,9 @@ identity-passive-loaded = Části této stránky nejsou zabezpečené (napříkl
 identity-active-loaded = Na této stránce jste ochranu zakázali.
 identity-weak-encryption = Tento server používá slabé šifrování.
 identity-insecure-login-forms = Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.
-identity-https-only-connection-upgraded = (přepnuto na HTTPS)
+identity-https-only-connection-upgraded = (povýšeno na HTTPS)
 identity-https-only-label = Režim „pouze HTTPS“
-identity-https-only-label2 = Automaticky povýšit komunikaci se serverem na bezpečnou
+identity-https-only-label2 = Automaticky povýšit spojení se serverem na zabezpečené
 identity-https-only-dropdown-on =
     .label = Zapnuto
 identity-https-only-dropdown-off =
@@ -533,21 +625,21 @@ identity-https-only-dropdown-off-temporarily =
     .label = Dočasně vypnuto
 identity-https-only-info-turn-on2 =
     { -brand-short-name.gender ->
-        [masculine] Pokud chcete, aby { -brand-short-name } přepnul spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
-        [feminine] Pokud chcete, aby { -brand-short-name } přepnula spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
-        [neuter] Pokud chcete, aby { -brand-short-name } přepnulo spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
-       *[other] Pokud chcete, aby aplikace { -brand-short-name } přepnula spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
+        [masculine] Pokud chcete, aby { -brand-short-name } povýšil spojení na zabezpečené, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
+        [feminine] Pokud chcete, aby { -brand-short-name } povýšila spojení na zabezpečené, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
+        [neuter] Pokud chcete, aby { -brand-short-name } povýšilo spojení na zabezpečené, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
+       *[other] Pokud chcete, aby aplikace { -brand-short-name } povýšila spojení na zabezpečené, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
     }
 identity-https-only-info-turn-off2 = Pokud se zdá, že je stránka rozbitá, zkuste vypnout režim „pouze HTTPS“, aby se znovu načetla pomocí nezabezpečeného spojení HTTP.
 identity-https-only-info-turn-on3 =
     { -brand-short-name.gender ->
-        [masculine] Zapněte povýšení komunikace na HTTPS pro tento server, pokud chcete, aby { -brand-short-name } povýšil komunikaci kdykoliv je to možné.
-        [feminine] Zapněte povýšení komunikace na HTTPS pro tento server, pokud chcete, aby { -brand-short-name } povýšila komunikaci kdykoliv je to možné.
-        [neuter] Zapněte povýšení komunikace na HTTPS pro tento server, pokud chcete, aby { -brand-short-name } povýšilo komunikaci kdykoliv je to možné.
-       *[other] Zapněte povýšení komunikace na HTTPS pro tento server, pokud chcete, aby aplikace { -brand-short-name } povýšila komunikaci kdykoliv je to možné..
+        [masculine] Zapněte pro tento server povýšení komunikace na HTTPS, pokud chcete, aby { -brand-short-name } povýšil komunikaci, kdykoliv je to možné.
+        [feminine] Zapněte pro tento server povýšení komunikace na HTTPS, pokud chcete, aby { -brand-short-name } povýšila komunikaci, kdykoliv je to možné.
+        [neuter] Zapněte pro tento server povýšení komunikace na HTTPS, pokud chcete, aby { -brand-short-name } povýšilo komunikaci, kdykoliv je to možné.
+       *[other] Zapněte pro tento server povýšení komunikace na HTTPS, pokud chcete, aby aplikace { -brand-short-name } povýšila komunikaci, kdykoliv je to možné..
     }
-identity-https-only-info-turn-off3 = Pokud se zdá stránka rozbitá, můžete povýšení na HTTPS vypnout a tím obnovit stránku pomocí nezabezpečeného HTTP.
-identity-https-only-info-no-upgrade = Nepodařilo se přepnout spojení z HTTP.
+identity-https-only-info-turn-off3 = Pokud se zdá stránka rozbitá, můžete povýšení na HTTPS vypnout, aby se znovu načetla za použití nezabezpečeného spojení HTTP.
+identity-https-only-info-no-upgrade = Nepodařilo se povýšit spojení z HTTP.
 identity-permissions-storage-access-header = Cross-site cookies
 identity-permissions-storage-access-hint = Tyto weby mohou používat cross-site cookies a během vaší návštěvy této stránky tak přistupovat k jejím datům.
 identity-permissions-storage-access-learn-more = Zjistit více
@@ -557,11 +649,15 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Spojení s tímto serverem není zabezpečené.
 identity-connection-verified = Spojení s tímto serverem je zabezpečené.
 identity-ev-owner-label = Certifikát vydán pro:
+identity-verifier-label = Ověřil:
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Klasifikovaný podle nařízení (EÚ) 2024/1183.
 identity-description-custom-root2 = BrowserWorks tohoto vydavatele certifikátů nezná. Mohl být přidán operačním systémem nebo správcem vašeho počítače.
+identity-cert-exception-overridden = Tomuto serveru jste udělili bezpečnostní výjimku
 identity-remove-cert-exception =
     .label = Odstranit výjimku
     .accesskey = O
-identity-description-insecure = Vaše připojení k tomuto serveru není soukromé. Informace, které odešlete (jako hesla, zprávy, číslo platební karty atd.), mohou být viděny ostatními.
+identity-description-insecure = Vaše spojení s tímto serverem není soukromé. Informace, které odešlete (jako hesla, zprávy, číslo platební karty atd.), mohou být viděny ostatními.
 identity-description-insecure-login-forms = Přihlašovací údaje, které zadáte na této stránce, nebudou zabezpečeny a mohou být vyzrazeny.
 identity-description-weak-cipher-intro = Vaše spojení s tímto serverem používá slabé šifrování a není soukromé.
 identity-description-weak-cipher-risk = Ostatní lidé mohou vidět vaše informace nebo pozměnit chování stránky.
@@ -581,7 +677,7 @@ identity-description-passive-loaded-mixed2 =
         [neuter] Ačkoli { -brand-short-name } zablokovalo nějaký obsah, stránka stále ještě obsahuje nezabezpečený obsah (například obrázky).
        *[other] Ačkoli aplikace { -brand-short-name } zablokovala nějaký obsah, stránka stále ještě obsahuje nezabezpečený obsah (například obrázky).
     }
-identity-description-active-loaded = Tato webová stránka obsahuje obsah, který není zabezpečen (například skripty), a připojení k tomuto serveru tak není soukromé.
+identity-description-active-loaded = Tato webová stránka obsahuje obsah, který není zabezpečen (například skripty), a spojení s tímto serverem tak není soukromé.
 identity-description-active-loaded-insecure = Informace, které sdílíte s tímto serverem (jako hesla, zprávy, číslo platební karty, atd.), mohou být viděny ostatními.
 identity-disable-mixed-content-blocking =
     .label = Vypnout ochranu
@@ -602,6 +698,9 @@ browser-window-restore-down-button =
     .tooltiptext = Obnovit z maximalizace
 browser-window-close-button =
     .tooltiptext = Zavřít
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = Návrat zpět
 
 ## Tab actions
 
@@ -683,6 +782,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = Zakázat ochranu sdílení pro tuto relaci
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = Výběr seriového portu:
+webserial-no-ports-available = Sériové porty nejsou dostupné
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = Pokud chcete používat zkratku F12, otevřete nejprve DevTools z nabídky Nástroje prohlížeče.
@@ -748,6 +852,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Rozšíření:
+urlbar-go-button2 =
+    .title = Přejde na adresu v adresním řádku
 urlbar-go-button =
     .tooltiptext = Přejde na adresu v adresním řádku
 urlbar-page-action-button =
@@ -755,8 +861,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = Zobrazí adresu v adresním řádku
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -773,6 +880,7 @@ urlbar-result-action-search-in-private = Vyhledat v anonymním okně
 urlbar-result-action-search-w-engine = Vyhledat pomocí { $engine }
 urlbar-result-action-sponsored = Sponzorováno
 urlbar-result-action-switch-tab = Přepnout na panel
+urlbar-result-action-move-tab-to-split-view = Přesunout panel do rozděleného zobrazení
 urlbar-result-action-visit = Navštívit
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -812,6 +920,18 @@ urlbar-result-action-copy-to-clipboard = Kopírovat
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = nedefinováno
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle =
+    { -brand-product-name.case-status ->
+        [with-cases] Rozšíření { -brand-product-name(case: "gen") }
+       *[no-cases] Rozšíření aplikace { -brand-product-name }
+    }
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = Doporučené
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -869,6 +989,182 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · Sponzorované
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = Dotázat se
+
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = Naposledy navštívena { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days =
+    { $daysAgo ->
+        [one] Naposledy navštívena před { $daysAgo } dnem
+        [few] Naposledy navštívena před { $daysAgo } dny
+        [many] Naposledy navštívena před { $daysAgo } dny
+       *[other] Naposledy navštívena před { $daysAgo } dny
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks =
+    { $weeksAgo ->
+        [one] Naposledy navštívena před { $weeksAgo } týdnem
+        [few] Naposledy navštívena před { $weeksAgo } týdny
+        [many] Naposledy navštívena před { $weeksAgo } týdny
+       *[other] Naposledy navštívena před { $weeksAgo } týdny
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months =
+    { $monthsAgo ->
+        [one] Naposledy navštívena před { $monthsAgo }měsícem
+        [few] Naposledy navštívena před { $monthsAgo } měsíci
+        [many] Naposledy navštívena před { $monthsAgo } měsíci
+       *[other] Naposledy navštívena před { $monthsAgo } měsíci
+    }
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = Naposledy navštívena dne { $date }
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = Uloženo do záložek dne { $date }
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = Naposledy navštívena { $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 =
+    { $daysAgo ->
+        [one] Naposledy navštívena před { $daysAgo } dnem
+        [few] Naposledy navštívena před { $daysAgo } dny
+        [many] Naposledy navštívena před { $daysAgo } dny
+       *[other] Naposledy navštívena před { $daysAgo } dny
+    }
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 =
+    { $weeksAgo ->
+        [one] Naposledy navštívena před { $weeksAgo } týdnem
+        [few] Naposledy navštívena před { $weeksAgo } týdny
+        [many] Naposledy navštívena před { $weeksAgo } týdny
+       *[other] Naposledy navštívena před { $weeksAgo } týdny
+    }
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 =
+    { $monthsAgo ->
+        [one] Naposledy navštívena před { $monthsAgo } měsícem
+        [few] Naposledy navštívena před { $monthsAgo } měsíci
+        [many] Naposledy navštívena před { $monthsAgo } měsíci
+       *[other] Naposledy navštívena před { $monthsAgo } měsíci
+    }
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = Naposledy navštívena { $date }
+
+## These strings are used for Realtime suggestions in the urlbar.
+## Market refers to stocks, indexes, and funds.
+
+# This string is shown as title when Market suggestion are disabled.
+urlbar-result-market-opt-in-title = Burzovní informace přímo v našeptávači adresního řádku
+# This string is shown as description when Market suggestion are disabled.
+urlbar-result-market-opt-in-description = Nechte si zobrazovat aktuality z akciového trhu a další informace od našich partnerů, když budete s { -vendor-short-name(case: "ins") } sdílet údaje o vyhledávacích dotazech. <a data-l10n-name="learn-more-link">Zjistit více</a>
+# This string is shown as button to activate online when realtime suggestion are disabled.
+urlbar-result-realtime-opt-in-allow = Povolit našeptávání
+# This string is shown in split button to dismiss activation the Realtime suggestion.
+urlbar-result-realtime-opt-in-not-now = Teď ne
+urlbar-result-realtime-opt-in-dismiss = Zavřít
+urlbar-result-realtime-opt-in-dismiss-all2 = Tyto návrhy nezobrazovat
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = Nezobrazovat návrhy z akciových trhů
+urlbar-result-realtime-opt-in-dismiss-all =
+    .label = Tyto návrhy nezobrazovat
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market =
+    .label = Nezobrazovat návrhy z akciových trhů
+# A message that replaces a result when the user dismisses Market suggestions.
+urlbar-result-dismissal-acknowledgment-market = Děkujeme za vaši zpětnou vazbu. Návrhy z akciových trhů se vám už nebudou zobrazovat.
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = Návrhy pro akciový trh
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-result-dismissal-acknowledgment-all = Děkujeme za vaši zpětnou vazbu. Tyto návrhy se vám už nebudou zobrazovat.
+
+## These strings are used for suggestions of important dates in the urlbar.
+
+# The name of an event and the number of days until it starts separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown =
+    { $daysUntilStart ->
+        [one] { $name } · V { $daysUntilStart } dni
+        [few] { $name } · Ve { $daysUntilStart } dnech
+        [many] { $name } · V { $daysUntilStart } dnech
+       *[other] { $name } · V { $daysUntilStart } dnech
+    }
+# The name of a multiple day long event and the number of days until it starts
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilStart (integer) - The number of days until the event starts.
+urlbar-result-dates-countdown-range =
+    { $daysUntilStart ->
+        [one] { $name } · Začíná za { $daysUntilStart } den
+        [few] { $name } · Začíná za { $daysUntilStart } dny
+        [many] { $name } · Začíná za { $daysUntilStart } dní
+       *[other] { $name } · Začíná za { $daysUntilStart } dní
+    }
+# The name of a multiple day long event and the number of days until it ends
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+#   $daysUntilEnd (integer) - The number of days until the event ends.
+urlbar-result-dates-ongoing =
+    { $daysUntilEnd ->
+        [one] { $name } · Končí za { $daysUntilEnd } den
+        [few] { $name } · Končí za { $daysUntilEnd } dny
+        [many] { $name } · Končí za { $daysUntilEnd } dní
+       *[other] { $name } · Končí za { $daysUntilEnd } dní
+    }
+# The name of an event and a note that it is happening today separated by a
+# middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-today = { $name } · Dnes
+# The name of multiple day long event and a note that it is ends today
+# separated by a middot.
+# Variables:
+#   $name (string) - The name of the event.
+urlbar-result-dates-ends-today = { $name } · Končí dnes
 
 ## Strings used for buttons in the urlbar
 
@@ -896,8 +1192,6 @@ urlbar-searchmode-actions =
     .label = Akce
 urlbar-searchmode-exit-button =
     .tooltiptext = Zavřít
-urlbar-searchmode-default =
-    .tooltiptext = Výchozí vyhledávač
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
 urlbar-searchmode-popup-description = Vyhledat pomocí:
@@ -912,6 +1206,39 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = Není vybrána žádná zkratka, vyberte zkratku
     .tooltiptext = Není vybrána žádná zkratka, vyberte zkratku
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }, vyberte vyhledávač
+urlbar-searchmode-button-no-engine2 =
+    .title = Není vybrána žádná zkratka, vyberte zkratku
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = Vyhledávání pomocí klíčových slov je zakázáno
+urlbar-searchmode-dropmarker2 =
+    .title = Vyberte vyhledávač
+urlbar-searchmode-bookmarks2 = Záložky
+urlbar-searchmode-tabs2 = Panely
+urlbar-searchmode-history2 = Historie
+urlbar-searchmode-actions2 = Akce
+urlbar-searchmode-exit-button2 =
+    .title = Zavřít
+urlbar-searchmode-default2 =
+    .title = Výchozí vyhledávač
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Přidat „{ $engineName }“
+    .title = Přidá vyhledávač „{ $engineName }“
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = Vyhledat pomocí:
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = Vyhledat pomocí:
+urlbar-searchmode-popup-search-settings-panelitem = Nastavení vyhledávání
+urlbar-searchmode-popup-settings-panelitem = Nastavení
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -927,6 +1254,21 @@ urlbar-result-action-switch-to-tabgroup = Přepnout na { $group }
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = Otevřít { $group }
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = Otevřít v novém panelu
+    .accesskey = p
+urlbar-view-context-menu-open-in-container-tab =
+    .label = Otevřít v novém kontejnerovém panelu
+    .accesskey = k
+urlbar-view-context-menu-open-in-window =
+    .label = Otevřít v novém okně
+    .accesskey = o
+urlbar-view-context-menu-open-in-private-window =
+    .label = Otevřít v novém anonymním okně
+    .accesskey = a
 
 ## Labels shown above groups of urlbar results
 
@@ -953,6 +1295,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Populární na { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = Nezobrazovat populární vyhledávání
+    .accesskey = N
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = Sponzorováno
@@ -981,7 +1326,7 @@ reader-view-close-button =
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
 picture-in-picture-urlbar-button-open =
-    .tooltiptext = Otevřít obraz v obraze ({ $shortcut })
+    .tooltiptext = Zobrazit video jako obraz v obraze ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Zavřít obraz v obraze ({ $shortcut })
 picture-in-picture-panel-header = Obraz v obraze
@@ -1000,6 +1345,9 @@ fullscreen-warning-no-domain = Tento dokument je teď v režimu celé obrazovky
 fullscreen-exit-button = Ukončit režim celé obrazovky (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Ukončit režim celé obrazovky (esc)
+fullscreen-keyboardlock-exit-button = Ukončit režim celé obrazovky (stiskněte a podržte klávesu Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = Ukončit režim celé obrazovky (stiskněte a podržte klávesu Esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1095,7 +1443,7 @@ repair-text-encoding-button =
     .label = Opravit znakovou sadu textu
     .tooltiptext = Na základě obsahu stránky odhadne správnou znakovou sadu textu
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1115,6 +1463,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = Hesla
     .tooltiptext = Zobrazení a správa vašich uložených hesel
+qrcode-panel-error =
+    .message = Nepodařilo se vygenerovat QR kód. Zkuste to prosím znovu.
+qrcode-copy-button =
+    .label = Kopírovat
+qrcode-copy-success =
+    .message = QR kód zkopírován do schránky.
+qrcode-copy-error =
+    .message = Kopírování QR kódu se nezdařilo.
+qrcode-save-button =
+    .label = Uložit
+qrcode-save-success =
+    .message = QR kód uložen.
+qrcode-save-error =
+    .message = QR kód se nepodařilo uložit.
+qrcode-save-title = Uložit QR kód
+qrcode-save-filter-png = Obrázek PNG
+qrcode-save-filename = qrcode.png
+qrcode-window-title = QR kód
+qrcode-dialog-title = QR kód
+qrcode-image =
+    .aria-label = QR kód
+qrcode-close-button =
+    .aria-label = Zavřít
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1128,11 +1499,28 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = Synchronizované panely
     .tooltiptext = Zobrazí panely z jiných zařízení
+toolbar-button-send-tab =
+    .label = Poslat panel
+    .tooltiptext = Odešle aktuální panel do jiného zařízení
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = Nové anonymní okno
     .tooltiptext = Otevře nové anonymní okno ({ $shortcut })
+toolbar-button-share-tab =
+    .label = Sdílet
+    .tooltiptext = Sdílet tuto stránku
+toolbar-button-tab-groups =
+    .label = Skupiny panelů
+    .tooltiptext = Zobrazí vaše skupiny panelů
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = qrcode-{ $domain }
 
 ## EME notification panel
 
@@ -1150,12 +1538,29 @@ eme-notifications-drm-content-playing-dismiss-accesskey = Z
 
 panel-save-update-username = Uživatelské jméno
 panel-save-update-password = Heslo
+panel-save-update-username-2 =
+    .label = Uživatelské jméno
+panel-save-update-password-2 =
+    .label = Heslo
 
 ##
 
 # "More" item in macOS share menu
 menu-share-more =
     .label = Více…
+menu-share-windows =
+    .label = Další možnosti
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label =
+        { $count ->
+            [one] Zkopírovat odkaz
+            [few] Zkopírovat { $count } odkazy
+            [many] Zkopírovat { $count } odkazů
+           *[other] Zkopírovat { $count } odkazů
+        }
+    .accesskey = o
 menu-share-copy-link =
     .label = Zkopírovat odkaz
     .accesskey = Z
@@ -1171,6 +1576,9 @@ popups-infobar-allow =
 popups-infobar-block =
     .label = Blokovat vyskakovací okna pro { $uriHost }
     .accesskey = p
+popups-infobar-allow2 =
+    .label = Povolit vyskakovací okna a přesměrování třetích stran pro { $uriHost }
+    .accesskey = P
 
 ##
 
@@ -1188,10 +1596,10 @@ picture-in-picture-hide-toggle =
 ## right-to-left languages should use "Left" and "Right" as in the English strings,
 
 picture-in-picture-move-toggle-right =
-    .label = Přesunout přepínač zobrazení obrazu v obraze doprava
+    .label = Přesunout přepínač obrazu v obraze doprava
     .accesskey = r
 picture-in-picture-move-toggle-left =
-    .label = Přesunout přepínač zobrazení obrazu v obraze doleva
+    .label = Přesunout přepínač obrazu v obraze doleva
     .accesskey = l
 
 ##
@@ -1226,7 +1634,7 @@ navbar-library =
     .label = Knihovna stránek
     .tooltiptext = Zobrazí historii, uložené záložky, a mnoho dalšího
 navbar-search =
-    .title = Vyhledávací pole
+    .title = Pole vyhledávání
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -1237,6 +1645,10 @@ tabs-toolbar-new-tab =
 tabs-toolbar-list-all-tabs =
     .label = Seznam všech panelů
     .tooltiptext = Seznam všech panelů
+
+## Drop indicator text for pinned tabs when no tabs are pinned.
+
+pinned-tabs-drop-indicator = Přetažením panelu sem jej připnete
 
 ## Infobar shown at startup to suggest session-restore
 
@@ -1315,18 +1727,26 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = Ukončit anonymní relaci
     .tooltiptext = Ukončí anonymní relaci
+reset-pbm-panel-heading2 = Vymazat data a zahájit novou anonymní relaci?
+reset-pbm-panel-description2 = Tato akce smaže historii, cookies a všechna další data stránky bez zavření anonymního okna.
 reset-pbm-panel-heading = Ukončit anonymní relaci?
-reset-pbm-panel-description = Zavře všechny anonymní panely a vymažte historii, soubory cookie a všechna další data webu.
+reset-pbm-panel-description = Zavře všechny anonymní panely a vymažte historii, cookies a všechna další data stránek.
 reset-pbm-panel-always-ask-checkbox =
     .label = Vždy se mě zeptat
     .accesskey = V
 reset-pbm-panel-cancel-button =
     .label = Zrušit
     .accesskey = Z
+reset-pbm-panel-confirm-button2 =
+    .label = Vymazat anonymní relaci
+    .accesskey = V
 reset-pbm-panel-confirm-button =
     .label = Smazat data relace
     .accesskey = S
 reset-pbm-panel-complete = Data anonymní relace byla smazána
+reset-pbm-toolbar-button2 =
+    .label = Vymazat anonymní relaci
+    .tooltiptext = Vymaže anonymní relaci
 
 ## Autorefresh blocker
 
@@ -1355,6 +1775,7 @@ firefox-relay-offer-why-to-use-relay = Naše bezpečné, snadno použitelné mas
 #  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = Všechny e-maily odeslané na vaše e-mailové masky budou přeposlány na adresu <strong>{ $useremail }</strong> (dokud se nerozhodnete je zablokovat).
 firefox-relay-offer-legal-notice = Klepnutím na „Použít e-mailovou masku“ souhlasíte s <label data-l10n-name="tos-url">podmínkami poskytování služby</label> a <label data-l10n-name="privacy-url">zásadami ochrany osobních údajů</label>.
+firefox-relay-offer-legal-notice-1 = Registrací a vytvořením e-mailové masky souhlasíte s <label data-l10n-name="tos-url">podmínkami poskytování služby</label> a se <label data-l10n-name="privacy-url">zásadami ochrany osobních údajů</label>.
 
 ## Add-on Pop-up Notifications
 
@@ -1369,7 +1790,7 @@ popup-notification-addon-privatebrowsing-checkbox2 =
 # This string is similar to `webext-perms-description-data-long-technicalAndInteraction`
 # but it is used in the install prompt, and it needs an access key.
 popup-notification-addon-technical-and-interaction-checkbox =
-    .label = Sdílet technická data a data o interakci s vývojářem rozšíření
+    .label = Sdílet s vývojářem rozšíření technické údaje a údaje o interakcích
     .accesskey = S
 
 ## Pop-up warning
@@ -1403,6 +1824,17 @@ popup-warning-message =
                *[other] Aplikace { -brand-short-name } zabránila stránce otevřít { $popupCount } vyskakovacích oken.
             }
     }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+redirect-warning-with-popup-message =
+    { $popupCount ->
+        [0] { -brand-short-name } zabránil této stránce v přesměrování.
+        [1] { -brand-short-name } zabránil této stránce v otevření { $popupCount } vyskakovacího okna a přesměrování.
+        [one] { -brand-short-name } zabránil této stránce v otevření { $popupCount } vyskakovacího okna a přesměrování.
+        [few] { -brand-short-name } zabránil této stránce v otevření { $popupCount } vyskakovacích oken a přesměrování.
+        [many] { -brand-short-name } zabránil této stránce v otevření { $popupCount } vyskakovacích oken a přesměrování.
+       *[other] { -brand-short-name } zabránil této stránce v otevření { $popupCount } vyskakovacích oken a přesměrování.
+    }
 # The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
 # Variables:
 #   $popupCount (Number): the number of pop-ups blocked.
@@ -1433,6 +1865,15 @@ popup-warning-exceeded-message =
                *[other] Aplikace { -brand-short-name } zabránila stránce otevřít více než { $popupCount } vyskakovacích oken.
             }
     }
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-with-redirect-message =
+    { $popupCount ->
+        [one] { -brand-short-name } zabránil této stránce v otevření více než { $popupCount } vyskakovacího okna a přesměrování.
+        [few] { -brand-short-name } zabránil této stránce v otevření více než { $popupCount } vyskakovacích oken a přesměrování.
+        [many] { -brand-short-name } zabránil této stránce v otevření více než { $popupCount } vyskakovacích oken a přesměrování.
+       *[other] { -brand-short-name } zabránil této stránce v otevření více než { $popupCount } vyskakovacích oken a přesměrování.
+    }
 popup-warning-button =
     .label =
         { PLATFORM() ->
@@ -1448,6 +1889,10 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Zobrazit „{ $popupURI }“
+# Variables:
+#   $redirectURI (String): the URI for the redirect
+popup-trigger-redirect-menuitem =
+    .label = Zobrazit “{ $redirectURI }”
 
 ## File-picker crash notification ("FilePickerCrashed.sys.mjs")
 
@@ -1473,3 +1918,200 @@ file-picker-crashed-show-in-folder =
 ## Onboarding Finish Setup checklist
 
 onboarding-checklist-button-label = Dokončit nastavení
+onboarding-aw-finish-setup-button =
+    .label = Dokončit nastavení
+    .tooltiptext = Dokončí nastavení { -brand-short-name(case: "gen") }
+
+## The urlbar trust icon & panel
+
+trustpanel-etp-label-enabled = Rozšířená ochrana proti sledování je zapnuta
+trustpanel-etp-label-disabled = Rozšířená ochrana proti sledování je vypnuta
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-on =
+    .aria-label = Rozšířená ochrana proti sledování: zapnuta pro { $host }
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-etp-toggle-off =
+    .aria-label = Rozšířená ochrana proti sledování: vypnuta na { $host }
+trustpanel-etp-description-enabled = Pokud se vám zdá, že něco na tomto webu nefunguje správně, zkuste ochranu vypnout.
+trustpanel-etp-description-disabled =
+    { -brand-product-name.case-status ->
+        [with-cases] { -brand-product-name } si myslí, že by vás společnosti měly sledovat méně. Když si zapnete ochranu, blokujeme tolik sledovacích prvků, kolik jen můžeme.
+       *[no-cases] Aplikace { -brand-product-name } si myslí, že by vás společnosti měly sledovat méně. Když si zapnete ochranu, blokujeme tolik sledovacích prvků, kolik jen můžeme.
+    }
+trustpanel-connection-label-secure = Zabezpečené spojení
+trustpanel-connection-label-insecure = Spojení není zabezpečené
+trustpanel-header-enabled = { -brand-product-name } je ve střehu
+trustpanel-description-enabled2 = Jste chráněni. Pokud něco zpozorujeme, dáme vám vědět.
+trustpanel-header-enabled-insecure = Buďte na této stránce opatrní
+trustpanel-description-enabled-insecure = { -brand-product-name } si všiml něčeho podezřelého.
+trustpanel-header-disabled = Vypnuli jste ochranu
+trustpanel-description-disabled = { -brand-product-name } není ve střehu. Doporučujeme vám ochranu opět zapnout.
+trustpanel-clear-cookies-button = Vymazat cookies a uložená data
+trustpanel-privacy-link = Nastavení soukromí
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-clear-cookies-header =
+    .title = Vymazat cookies a data stránek pro { $host }
+trustpanel-clear-cookies-description = Smazání cookies a dat stránek vás může odhlásit z webů a vyprázdnit vám nákupní košíky.
+trustpanel-clear-cookies-subview-button-clear = Vymazat
+trustpanel-clear-cookies-subview-button-cancel = Zrušit
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-site-information-header =
+    .title = Ochrana spojení pro { $host }
+trustpanel-siteinformation-morelink = Více informací o webu
+trustpanel-blocker-see-all = Zobrazit vše
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+trustpanel-blocker-header =
+    .title = Ochrana proti sledování pro { $host }
+
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = Nezabezpečeno
+
+## Variables
+##  $count (String): the number of trackers blocked.
+
+trustpanel-blocker-description = { -brand-product-name } si myslí, že by vás společnosti měly sledovat méně. Proto jich blokujeme co nejvíce.
+trustpanel-blocked-header =
+    { -brand-product-name.case-status ->
+        [with-cases] { -brand-product-name } zablokoval tyto věci:
+       *[no-cases] Aplikace { -brand-product-name } zablokovala tyto věci:
+    }
+trustpanel-tracking-header =
+    { -brand-short-name.case-status ->
+        [with-cases] { -brand-product-name } povolil tyto věci, aby se stránky nerozbily:
+       *[no-cases] Aplikace { -brand-product-name } povolila tyto věci, aby se stránky nerozbily:
+    }
+trustpanel-tracking-description = Bez sledovacích prvků nemusí některá tlačítka, formuláře a přihlašovací pole správně fungovat.
+trustpanel-insecure-section-header = Vaše spojení není zabezpečené
+trustpanel-insecure-description = Údaje odesílané na tento server nejsou šifrovány. Mohou být prohlíženy, ukradeny nebo pozměněny.
+trustpanel-list-label-tracking-cookies =
+    { $count ->
+        [one] { $count } sledovací cookie třetí stran
+        [few] { $count } sledovací cookies třetích stran
+        [many] { $count } sledovacích cookies třetích stran
+       *[other] { $count } sledovacích cookies třetích stran
+    }
+trustpanel-list-label-tracking-content = Sledující obsah
+trustpanel-list-label-fingerprinter =
+    { $count ->
+        [one] { $count } vytváření otisku prohlížeče
+        [few] { $count } vytváření otisku prohlížeče
+        [many] { $count } vytváření otisku prohlížeče
+       *[other] { $count } vytváření otisku prohlížeče
+    }
+trustpanel-list-label-social-tracking =
+    { $count ->
+        [one] { $count } sledovací prvek sociálních sítí
+        [few] { $count } sledovací prvky sociálních sítí
+        [many] { $count } sledovacích prvků sociálních sítí
+       *[other] { $count } sledovacích prvků sociálních sítí
+    }
+trustpanel-list-label-cryptominer =
+    { $count ->
+        [one] { $count } těžba kryptoměn
+        [few] { $count } těžby kryptoměn
+        [many] { $count } těžeb kryptoměn
+       *[other] { $count } těžeb kryptoměn
+    }
+trustpanel-social-tracking-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } zablokoval { $count } sledovací prvek sociálních sítí
+        [few] { -brand-product-name } zablokoval { $count } sledovací prvky sociálních sítí
+        [many] { -brand-product-name } zablokoval { $count } sledovacích prvků sociálních sítí
+       *[other] { -brand-product-name } zablokoval { $count } sledovacích prvků sociálních sítí
+    }
+trustpanel-social-tracking-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } povolil { $count } sledovací prvek sociálních sítí
+        [few] { -brand-product-name } povolil { $count } sledovací prvky sociálních sítí
+        [many] { -brand-product-name } povolil { $count } sledovacích prvků sociálních sítí
+       *[other] { -brand-product-name } povolil { $count } sledovacích prvků sociálních sítí
+    }
+trustpanel-tracking-cookies-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } zablokoval { $count } sledovací cookie třetí strany
+        [few] { -brand-product-name } zablokoval { $count } sledovací cookies třetích stran
+        [many] { -brand-product-name } zablokoval { $count } sledovacích cookies třetích stran
+       *[other] { -brand-product-name } zablokoval { $count } sledovacích cookies třetích stran
+    }
+trustpanel-tracking-cookies-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } povolil { $count } sledovací cookie třetí strany
+        [few] { -brand-product-name } povolil { $count } sledovací cookies třetích stran
+        [many] { -brand-product-name } povolil { $count } sledovacích cookies třetích stran
+       *[other] { -brand-product-name } povolil { $count } sledovacích cookies třetích stran
+    }
+trustpanel-tracking-content-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } zablokoval { $count } sledovací prvek
+        [few] { -brand-product-name } zablokoval { $count } sledovací prvky
+        [many] { -brand-product-name } zablokoval { $count } sledovacích prvků
+       *[other] { -brand-product-name } zablokoval { $count } sledovacích prvků
+    }
+trustpanel-tracking-content-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } povolil { $count } sledovací prvek
+        [few] { -brand-product-name } povolil { $count } sledovací prvky
+        [many] { -brand-product-name } povolil { $count } sledovacích prvků
+       *[other] { -brand-product-name } povolil { $count } sledovacích prvků
+    }
+trustpanel-tracking-content-tab-list-header = Tyto weby se vás snaží sledovat:
+trustpanel-fingerprinter-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } zablokoval { $count } vytváření otisku prohlížeče
+        [few] { -brand-product-name } zablokoval { $count } vytváření otisku prohlížeče
+        [many] { -brand-product-name } zablokoval { $count } vytváření otisku prohlížeče
+       *[other] { -brand-product-name } zablokoval { $count } vytváření otisku prohlížeče
+    }
+trustpanel-fingerprinter-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } povolil { $count } vytváření otisku prohlížeče
+        [few] { -brand-product-name } povolil { $count } vytváření otisku prohlížeče
+        [many] { -brand-product-name } povolil { $count } vytváření otisku prohlížeče
+       *[other] { -brand-product-name } povolil { $count } vytváření otisku prohlížeče
+    }
+trustpanel-fingerprinter-list-header = Tyto weby se snaží vytvořit otisk vašeho prohlížeče:
+trustpanel-cryptominer-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } zablokoval { $count } těžbu kryptoměn
+        [few] { -brand-product-name } zablokoval { $count } těžby kryptoměn
+        [many] { -brand-product-name } zablokoval { $count } těžeb kryptoměn
+       *[other] { -brand-product-name } zablokoval { $count } těžeb kryptoměn
+    }
+trustpanel-cryptominer-not-blocking-tab-header =
+    { $count ->
+        [one] { -brand-product-name } povolil { $count } těžbu kryptoměn
+        [few] { -brand-product-name } povolil { $count } těžby kryptoměn
+        [many] { -brand-product-name } povolil { $count } těžeb kryptoměn
+       *[other] { -brand-product-name } povolil { $count } těžeb kryptoměn
+    }
+trustpanel-cryptominer-tab-list-header = Tyto weby se pokouší o těžbu kryptoměn:
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = Máte účet na této stránce?
+trustpanel-breachalerts-anonymous-breached-description = { -brand-product-name } zjistil, že na této stránce došlo v posledních 12 měsících k úniku dat. Zjistěte, zda se vás to týká.
+trustpanel-breachalerts-anonymous-breached-button-dismiss = Zavřít
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = Spustit bezplatné skenování
+trustpanel-blocker-section-header2 =
+    { $count ->
+        [one] Na této stránce je zablokovaný <span data-l10n-name="count">{ $count }</span> sledovací prvek
+        [few] Na této stránce jsou zablokovány <span data-l10n-name="count">{ $count }</span> sledovací prvky
+        [many] Na této stránce je zablokováno <span data-l10n-name="count">{ $count }</span> sledovacích prvků
+       *[other] Na této stránce je zablokováno <span data-l10n-name="count">{ $count }</span> sledovacích prvků
+    }
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>Vypadá stránka nefunkčně?</strong> Obnovte stránku, abyste dočasně snížili úroveň ochrany proti sledování.
+reduced-protection-infobar-reload-button = Obnovit
+    .accesskey = O
+reduced-protection-infobar-never-show-button = Příště už nezobrazovat
+    .accesskey = n

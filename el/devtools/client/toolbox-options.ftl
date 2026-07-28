@@ -30,10 +30,18 @@ options-context-inspector = Επιθεώρηση
 options-show-user-agent-styles-label = Εμφάνιση μορφοποιήσεων προγράμματος περιήγησης
 options-show-user-agent-styles-tooltip =
     .title = Η ενεργοποίηση αυτού θα εμφανίσει τις προεπιλεγμένες μορφοποιήσεις που φορτώνονται από το πρόγραμμα περιήγησης.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Εμφάνιση στοιχείων Shadow DOM προγράμματος περιήγησης
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Η ενεργοποίηση αυτής της ρύθμισης θα εμφανίζει τα στοιχεία Shadow DOM που διαχειρίζεται το πρόγραμμα περιήγησης.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Κόψιμο ιδιοτήτων DOM
 options-collapse-attrs-tooltip =
     .title = Κόψιμο μεγάλων ιδιοτήτων στην επιθεώρηση
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Εμφάνιση σχολίων
+options-show-comments-tooltip =
+    .title = Προβολή κόμβων σχολίων στην επιθεώρηση
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Κάντε κλικ και σύρετε για να επεξεργαστείτε τις τιμές μεγέθους
 options-inspector-draggable-properties-tooltip =
@@ -67,6 +75,35 @@ options-webconsole-label = Κονσόλα ιστού
 options-webconsole-split-console-label = Εμφάνιση διαχωρισμένης κονσόλας
 options-webconsole-split-console-tooltip =
     .title = Άνοιγμα διαχωρισμένης κονσόλας με το πλήκτρο Esc
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Εποπτεία δικτύου
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Μέγιστο μέγεθος αιτήματος και απόκρισης (ορίστε το σε 0 για απεριόριστο):
+options-netmonitor-body-limit-tooltip =
+    .title = Τα σώματα αιτημάτων ή αποκρίσεων που υπερβαίνουν το καθορισμένο μέγεθος θα περικόπτονται κατά την προβολή ή λήψη στην Εποπτεία δικτύου. Ορίστε το σε 0 για να μην υπάρχει περιορισμός.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Απεριόριστο
+options-netmonitor-body-limit-button =
+    .title = Επεξεργασία μέγιστου μεγέθους αιτήματος/απόκρισης.
+options-netmonitor-body-limit-restore-default =
+    .title = Επαναφορά της προεπιλεγμένης τιμής για το μέγιστο μέγεθος αιτήματος/απόκρισης.
+options-netmonitor-body-limit-set =
+    .title = Ορισμός της τρέχουσας τιμής εισόδου ως μέγιστου μεγέθους αιτήματος/απόκρισης.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Πειραματικές λειτουργίες
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Εμφάνιση φύλλων μορφοποίησης στον εντοπισμό σφαλμάτων
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Παράθεση και προβολή φύλλων μορφοποίησης στον εντοπισμό σφαλμάτων
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (απαιτείται εκ νέου άνοιγμα της εργαλειοθήκης)
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Μέγεθος καρτέλας
 options-sourceeditor-keybinding-label = Συντομεύσεις πλήκτρων
 options-sourceeditor-keybinding-default-label = Προεπιλογή
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Τοπική λειτουργία
+options-local-mode-only-work-locally = Η τοπική λειτουργία λειτουργεί μόνο τοπικά και απενεργοποιείται κατά τον έλεγχο για σφάλματα σε απομακρυσμένα περιβάλλοντα
+options-local-mode-behavior = Η τοπική λειτουργία σάς επιτρέπει να φορτώνετε τοπικά αρχεία μέσω URL τύπου https, χωρίς καμία εξωτερική εξάρτηση. Τα URL μπορούν να φορτωθούν μόνο από καρτέλες με ανοικτά τα εργαλεία ανάπτυξης.
+options-local-mode-domain-label = Προσαρμοσμένος τομέας:
+options-local-mode-origin-input =
+    .placeholder = Προέλευση για την τοπική αντιστοίχιση
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Αυτή η προέλευση έρχεται σε διένεξη με μια άλλη υπάρχουσα αντιστοίχιση
+options-local-mode-origin-invalid = Αυτή η προέλευση δεν είναι έγκυρη
+options-local-mode-folder-label = Τοπικός φάκελος:
+options-local-mode-choose-folder = Περιήγηση…
+    .title = Επιλέξτε έναν τοπικό φάκελο για την εξυπηρέτηση αυτής της αντιστοίχισης
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Επιλογή φακέλου τοπικής λειτουργίας για: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Αυτός ο φάκελος δεν υπάρχει ή δεν είναι έγκυρος.
+options-local-mode-toggle =
+    .title = (Απ)ενεργοποίηση τοπικής αντιστοίχισης
+options-local-mode-toggle-enable = Ενεργοποίηση
+options-local-mode-toggle-disable = Απενεργοποίηση
+options-local-mode-navigate-to =
+    .title = Πλοήγηση σε αυτό το URL αντιστοίχισης
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Θέλετε να αφαιρέσετε την αντιστοίχιση «{ $mappingOrigin }»;
+options-local-mode-new-mapping = Προσθήκη νέας τοπικής αντιστοίχισης
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +186,8 @@ options-context-advanced-settings = Σύνθετες ρυθμίσεις
 options-disable-http-cache-label = Απενεργοποίηση κρυφής μνήμης HTTP (όταν είναι ανοικτή η εργαλειοθήκη)
 options-disable-http-cache-tooltip =
     .title = Η ενεργοποίηση αυτής της επιλογής θα απενεργοποιήσει την κρυφή μνήμη HTTP για όλες τις καρτέλες που έχουν ανοικτή την εργαλειοθήκη. Τα service worker δεν επηρεάζονται από αυτήν την επιλογή.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Απενεργοποίηση JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Απενεργοποίηση JavaScript *
 options-disable-javascript-tooltip =
@@ -128,9 +201,9 @@ options-enable-remote-label = Ενεργοποίηση απομακρυσμέν�
 options-enable-remote-tooltip2 =
     .title = Η ενεργοποίηση αυτής της επιλογής θα επιτρέψει τον απομακρυσμένο έλεγχο σφαλμάτων σε αυτό το παράθυρο του προγράμματος περιήγησης
 # The label for checkbox that enables F12 as a shortcut to open DevTools
-options-enable-f12-label = Χρησιμοποιήστε το πλήκτρο F12 για να ανοίξετε ή να κλείσετε τα DevTools
+options-enable-f12-label = Χρησιμοποιήστε το πλήκτρο F12 για να ανοίξετε ή να κλείσετε τα εργαλεία ανάπτυξης
 options-enable-f12-tooltip =
-    .title = Η ενεργοποίηση αυτής της επιλογής θα δεσμεύσει το πλήκτρο F12 με το άνοιγμα ή το κλείσιμο της εργαλειοθήκης DevTools
+    .title = Η ενεργοποίηση αυτής της επιλογής θα δεσμεύσει το πλήκτρο F12 με το άνοιγμα ή το κλείσιμο της εργαλειοθήκης ανάπτυξης
 # The label for checkbox that toggles custom formatters for objects
 options-enable-custom-formatters-label = Ενεργοποίηση προσαρμοσμένων μορφοποιητών
 options-enable-custom-formatters-tooltip =
@@ -143,5 +216,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Ενεργοποίηση χαρτών πηγής
 options-source-maps-tooltip =
     .title = Αν ενεργοποιήσετε αυτήν την επιλογή, οι πηγές θα αντιστοιχηθούν στα εργαλεία.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (μόνο στην τρέχουσα συνεδρία, ανανεώνει τη σελίδα)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Τρέχουσα συνεδρία μόνο, επαναφορτώνει τη σελίδα
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (ανανεώνει τη σελίδα)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Αυτόματο
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Παρωχημένο. Μάθετε περισσότερα…

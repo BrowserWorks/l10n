@@ -10,14 +10,6 @@ learn-more = <span data-l10n-name="link">Μάθετε περισσότερα</sp
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain why
 ## the property is not applied.
-## Variables:
-##   $property (string) - A CSS property name e.g. "color".
-##   $display (string) - A CSS display value e.g. "inline-block".
-
-
-## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain why
-## the property is not applied.
 ## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
 ## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
 ## Variables:
@@ -29,6 +21,10 @@ inactive-css-not-grid-or-flex-container-or-multicol-container = Το <strong>{ $
 inactive-css-not-multicol-container = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι περιέκτης πολλαπλών στηλών.
 inactive-css-column-span = Το <strong>{ $property }</strong> δεν έχει επίδραση διαστήματος σε αυτό το στοιχείο, αφού δεν βρίσκεται εντός περιέκτη πολλαπλών στηλών.
 inactive-css-not-grid-or-flex-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι στοιχείο flex ή πλέγματος.
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι στοιχείο πλέγματος ή flex, ούτε στοιχείο με απόλυτη τοποθεσία.
+inactive-css-not-grid-or-absolutely-positioned-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι στοιχείο πλέγματος, ούτε στοιχείο με απόλυτη τοποθεσία.
+inactive-css-not-absolutely-positioned-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι ένα απολύτως τοποθετημένο στοιχείο.
+inactive-css-no-default-anchor = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν έχει προεπιλεγμένο στοιχείο άγκυρας.
 inactive-css-not-grid-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι στοιχείο πλέγματος.
 inactive-css-not-grid-container = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι περιέκτης πλέγματος.
 inactive-css-not-flex-item = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι στοιχείο flex.
@@ -42,6 +38,8 @@ inactive-css-not-display-block-on-floated = Η τιμή <strong>display</strong>
 inactive-css-not-display-block-on-floated-2 = Η τιμή <strong>display</strong> έχει αλλάξει από τη μηχανή σε <strong>{ $display }</strong> επειδή το στοιχείο είναι <strong>floated</strong>.
 inactive-css-only-non-grid-or-flex-item = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού δεν μπορεί να χρησιμοποιηθεί σε στοιχεία «grid» ή «flex».
 inactive-css-not-block = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «block-level».
+inactive-css-not-block-container = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «block-container».
+inactive-css-not-block-flex-grid-container = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «block, flex και grid -container».
 inactive-css-not-floated = Το <strong>{ $property }</strong> δεν έχει επίδραση, αφού ισχύει μόνο για στοιχεία «floated».
 inactive-css-property-is-impossible-to-override-in-visited = Είναι αδύνατο να παρακάμψετε το <strong>{ $property }</strong> λόγω του περιορισμού <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι τοποθετημένο στοιχείο.
@@ -69,6 +67,7 @@ inactive-css-ruby-element = Το <strong>{ $property }</strong> δεν έχει 
 
 inactive-css-highlight-pseudo-elements-not-supported = Το <strong>{ $property }</strong> δεν υποστηρίζεται στα ψευδοστοιχεία επισήμανσης.
 inactive-css-cue-pseudo-element-not-supported = Το <strong>{ $property }</strong> δεν υποστηρίζεται σε ψευδοστοιχεία ::cue.
+inactive-css-at-position-try-not-supported = Το <strong>{ $property }</strong> δεν υποστηρίζεται σε κανόνες <strong>@position-try</strong>.
 # Variables:
 #   $lineCount (integer) - The number of lines the element has.
 inactive-css-text-wrap-balance-lines-exceeded =
@@ -78,6 +77,7 @@ inactive-css-text-wrap-balance-lines-exceeded =
     }
 inactive-css-text-wrap-balance-fragmented = Το <strong>{ $property }</strong> δεν έχει καμία επίδραση σε αυτό το στοιχείο επειδή είναι κατακερματισμένο, δηλαδή το περιεχόμενό του διαχωρίζεται σε πολλές στήλες ή σελίδες.
 inactive-css-no-width-height = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν είναι δυνατός ο ορισμός του πλάτους και του ύψους του.
+inactive-css-no-principal-box = Το <strong>{ $property }</strong> δεν έχει επίδραση σε αυτό το στοιχείο, αφού δεν δημιουργεί κύριο πλαίσιο.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -89,6 +89,10 @@ inactive-css-not-grid-or-flex-or-block-container-fix = Δοκιμάστε να �
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Δοκιμάστε να προσθέσετε το <strong>display:grid</strong>, το <strong>display:flex</strong> ή το <strong>columns:2</strong>. { learn-more }
 inactive-css-not-multicol-container-fix = Δοκιμάστε να προσθέσετε είτε το <strong>column-count</strong> είτε το <strong>column-width</strong>. { learn-more }
 inactive-css-column-span-fix = Δοκιμάστε να προσθέσετε το <strong>column-count</strong> ή το <strong>column-width</strong> σε ένα από τα προγονικά του στοιχεία. { learn-more }
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item-fix = Δοκιμάστε να προσθέσετε το <strong>position:absolute</strong> στο στοιχείο ή το <strong>display:grid</strong>, το <strong>display:flex</strong>, το <strong>display:inline-grid</strong> ή το <strong>display:inline-flex</strong> στο γονικό στοιχείο. { learn-more }
+inactive-css-not-grid-or-absolutely-positioned-item-fix = Δοκιμάστε να προσθέσετε το <strong>position:absolute</strong> στο στοιχείο, ή το <strong>display:grid</strong> ή το <strong>display:inline-grid</strong> στο γονικό στοιχείο. { learn-more }
+inactive-css-not-absolutely-positioned-item-fix = Δοκιμάστε να προσθέσετε το <strong>position:absolute</strong> στο στοιχείο. { learn-more }
+inactive-css-no-default-anchor-fix = Δοκιμάστε να προσθέσετε το <strong>position-anchor</strong> με έγκυρο όνομα άγκυρας. { learn-more }
 inactive-css-not-grid-or-flex-item-fix-3 = Δοκιμάστε να προσθέσετε το <strong>display:grid</strong>, το <strong>display:flex</strong>, το <strong>display:inline-grid</strong> ή το <strong>display:inline-flex</strong> στο γονικό στοιχείο. { learn-more }
 inactive-css-not-grid-item-fix-2 = Δοκιμάστε να προσθέσετε το <strong>display:grid</strong> ή το <strong>display:inline-grid</strong> στο γονικό στοιχείο. { learn-more }
 inactive-css-not-grid-container-fix = Δοκιμάστε να προσθέσετε το <strong>display:grid</strong> ή το <strong>display:inline-grid</strong>. { learn-more }
@@ -100,6 +104,8 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Δοκι�
 inactive-css-not-display-block-on-floated-fix = Δοκιμάστε να αφαιρέσετε το <strong>float</strong> ή να προσθέσετε το <strong>display:block</strong>. { learn-more }
 inactive-css-only-non-grid-or-flex-item-fix = Δοκιμάστε να αλλάξετε την τιμή του <strong>display</strong> του περιέκτη του στοιχείου σε κάτι άλλο εκτός των <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong> ή <strong>inline-grid</strong>, ή να καταργήσετε το <strong>float</strong>. { learn-more }
 inactive-css-not-block-fix = Δοκιμάστε να προσθέσετε ιδιότητες, όπως <strong>display:block</strong> ή <strong>float:left</strong>. { learn-more }
+inactive-css-not-block-container-fix = Δοκιμάστε να προσθέσετε το <strong>display:block</strong>, το <strong>display:inline-block</strong> ή το <strong>display:flow-root</strong>. { learn-more }
+inactive-css-not-block-flex-grid-container-fix = Δοκιμάστε να προσθέσετε τα <strong>display:block</strong>, <strong>display:inline-block</strong>, <strong>display:flex</strong>, <strong>display:inline-flex</strong>, <strong>display:grid</strong>, <strong>display:inline-grid</strong> ή <strong>display:flow-root</strong>. { learn-more }
 inactive-css-not-floated-fix = Δοκιμάστε να προσθέσετε την ιδιότητα <strong>float</strong> με μια τιμή εκτός της <strong>none</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Δοκιμάστε να ορίσετε την ιδιότητα <strong>position</strong> του σε κάτι άλλο εκτός από <strong>static</strong>. { learn-more }
 inactive-css-only-replaced-elements-fix = Βεβαιωθείτε ότι προσθέτετε την ιδιότητα σε ένα στοιχείο που έχει αντικατασταθεί. { learn-more }
@@ -116,6 +122,7 @@ inactive-css-resize-fix = Δοκιμάστε να ορίσετε το <strong>ov
 inactive-css-ruby-element-fix = Δοκιμάστε να αλλάξετε το <strong>font-size</strong> του κειμένου ruby. { learn-more }
 inactive-css-text-wrap-balance-lines-exceeded-fix = Προσπαθήστε να μειώσετε τον αριθμό των γραμμών. { learn-more }
 inactive-css-text-wrap-balance-fragmented-fix = Αποφύγετε τον διαχωρισμό περιεχομένου του στοιχείου, π.χ. αφαιρώντας τις στήλες ή χρησιμοποιώντας το <strong>page-break-inside:avoid</strong>. { learn-more }
+inactive-css-no-principal-box-fix = Δοκιμάστε να προσθέσετε μια τιμή <strong>display</strong> που δημιουργεί ένα κύριο πλαίσιο, όπως <strong>block</strong>, <strong>inline-block</strong>, <strong>flex</strong> ή <strong>grid</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why
@@ -139,3 +146,13 @@ css-compatibility-learn-more-message = <span data-l10n-name="link">Μάθετε 
 
 # :has() should not be translated
 css-selector-warning-unconstrained-has = Αυτός ο επιλογέας χρησιμοποιεί απεριόριστο <strong>:has()</strong>, το οποίο μπορεί να είναι αργό
+# :scope should not be translated
+css-selector-warning-sibling-combinator-after-scope = Τα αδελφικά στοιχεία επιλογής μετά το <strong>:scope</strong> δεν θα ταιριάξουν ποτέ με τίποτα
+
+## In the Rule View we display a tooltip when a @container condition is hovered.
+## We want to show a specific message if the condition doesn't match a container for the
+## currently selected element
+## Variables:
+##   $name (string) - The condition name.
+
+css-selector-container-query-condition-no-container = Δεν βρέθηκε container με όνομα ‘{ $name }’

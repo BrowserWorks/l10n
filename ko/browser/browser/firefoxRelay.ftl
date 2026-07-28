@@ -11,18 +11,31 @@
 firefox-relay-mask-generation-failed = { -relay-brand-name }가 새 가리기를 생성할 수 없습니다. HTTP 오류 코드: { $status }.
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name }가 재사용 가능한 가리기를 찾을 수 없습니다. HTTP 오류 코드: { $status }.
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = { -relay-brand-name }를 사용하려면 { -fxaccount-brand-name }에 로그인해야 합니다.
 firefox-relay-must-login-to-account = { -relay-brand-name } 이메일 가리기를 사용하려면 계정에 로그인하세요.
 firefox-relay-get-unlimited-masks =
     .label = 가리기 관리
     .accesskey = M
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header = 무료 이메일 가리기 { $count }개를 모두 사용함
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = 하나를 재사용하거나 모든 가리기를 확인하여 다른 것을 선택할 수 있습니다.
+firefox-relay-reuse-masks-select-label = 최근 가리기 선택
+firefox-relay-see-all-masks =
+    .label = 모든 가리기 보기
+    .accesskey = S
+firefox-relay-dismiss =
+    .label = 닫기
+    .accesskey = D
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = 이메일 주소 보호:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = { -relay-brand-name } 이메일 가리기 사용
+firefox-relay-use-mask-title-1 = 이메일 가리기를 사용하세요
 firefox-relay-use-mask-title = { -relay-brand-name } 이메일 가리기 사용
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = 무료 이메일 가리기로 스팸 방지
@@ -72,6 +85,8 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain = 무료 이메일 가리기 받기
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = 무료 <label data-l10n-name="firefox-relay-learn-more-url">이메일 가리기</label>로 실제 주소를 숨겨서 스팸으로부터 받은 편지함을 보호하세요. <label data-l10n-name="firefox-fxa-and-relay-offer-domain">이 사이트</label>에서 보낸 이메일은 받은 편지함으로 받지만 실제 주소는 숨겨집니다.
+firefox-relay-and-fxa-popup-notification-first-sentence = 무료 <label data-l10n-name="firefox-relay-learn-more-url">{ -relay-brand-name } 이메일 가리기</label>로 실제 주소를 숨겨서 스팸으로부터 받은 편지함을 보호하세요. <label data-l10n-name="firefox-fxa-and-relay-offer-domain">이 사이트</label>에서 보낸 이메일은 받은 편지함으로 받지만 실제 주소는 숨겨집니다.
+firefox-relay-offer-why-to-use-relay-1 = 무료 <label data-l10n-name="firefox-relay-learn-more-url">{ -relay-brand-name } 이메일 가리기</label>로 실제 주소를 숨겨서 스팸으로부터 받은 편지함을 보호하세요. <label data-l10n-name="firefox-fxa-and-relay-offer-domain">이 사이트</label>에서 보낸 이메일은 받은 편지함으로 받지만 실제 주소는 숨겨집니다.
 firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = 먼저, 이메일 가리기를 사용하려면 계정에 가입하거나 로그인하세요
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = 가입

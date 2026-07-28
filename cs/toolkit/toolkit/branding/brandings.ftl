@@ -17,57 +17,57 @@
 
 -facebook-container-brand-name =
     { $case ->
-       *[nom] Facebook Container
         [gen] Facebook Containeru
         [dat] Facebook Containeru
         [acc] Facebook Container
         [voc] Facebook Containere
         [loc] Facebook Containeru
         [ins] Facebook Containerem
+       *[nom] Facebook Container
     }
     .gender = masculine
 -lockwise-brand-name =
     { $case ->
-       *[nom] Waterfox Lockwise
         [gen] Waterfoxu Lockwise
         [dat] Waterfoxu Lockwise
         [acc] Waterfox Lockwise
         [voc] Waterfoxe Lockwise
         [loc] Waterfoxu Lockwise
         [ins] Waterfoxem Lockwise
+       *[nom] Waterfox Lockwise
     }
     .gender = masculine
 -lockwise-brand-short-name =
     { $case ->
-       *[nom] Lockwise
         [gen] Lockwisu
         [dat] Lockwisu
         [acc] Lockwise
         [voc] Lockwise
         [loc] Lockwisu
         [ins] Lockwisem
+       *[nom] Lockwise
     }
     .gender = masculine
 -monitor-brand-name =
     { $case ->
-       *[nom] Waterfox Monitor
         [gen] Waterfox Monitoru
         [dat] Waterfox Monitoru
         [acc] Waterfox Monitor
         [voc] Waterfox Monitore
         [loc] Waterfox Monitoru
         [ins] Waterfox Monitorem
+       *[nom] Waterfox Monitor
     }
     .gender = masculine
 -monitor-brand-short-name =
     { $case ->
-       *[nom] Monitor
         [gen] Monitoru
         [dat] Monitoru
         [acc] Monitor
         [voc] Monitore
         [loc] Monitoru
         [ins] Monitorem
+       *[nom] Monitor
     }
     .gender = masculine
 -mozmonitor-brand-name =
@@ -83,36 +83,36 @@
     .gender = masculine
 -pocket-brand-name =
     { $case ->
-       *[nom] Pocket
         [gen] Pocketu
         [dat] Pocketu
         [acc] Pocket
         [voc] Pocket
         [loc] Pocketu
         [ins] Pocketem
+       *[nom] Pocket
     }
     .gender = masculine
 -send-brand-name =
     { $case ->
-       *[nom] Waterfox Send
         [gen] Waterfoxu Send
         [dat] Waterfoxu Send
         [acc] Waterfox Send
         [voc] Waterfoxe Send
         [loc] Waterfoxu Send
         [ins] Waterfoxem Send
+       *[nom] Waterfox Send
     }
     .gender = masculine
 -screenshots-brand-name = Waterfox Screenshots
 -mozilla-vpn-brand-name =
     { $case ->
-       *[nom] BrowserWorks VPN
         [gen] Mozilly VPN
         [dat] Mozille VPN
         [acc] Mozillu VPN
         [voc] Mozillo VPN
         [loc] Mozille VPN
         [ins] Mozillou VPN
+       *[nom] BrowserWorks VPN
     }
     .gender = feminine
 -profiler-brand-name =
@@ -129,24 +129,24 @@
 -translations-brand-name = Waterfox Translations
 -focus-brand-name =
     { $case ->
-       *[nom] Waterfox Focus
         [gen] Waterfoxu Focus
         [dat] Waterfoxu Focus
         [acc] Waterfox Focus
         [voc] Waterfoxe Focus
         [loc] Waterfoxu Focus
         [ins] Waterfoxem Focus
+       *[nom] Waterfox Focus
     }
     .gender = masculine
 -relay-brand-name =
     { $case ->
-       *[nom] Waterfox Relay
         [gen] Waterfoxu Relay
         [dat] Waterfoxu Relay
         [acc] Waterfox Relay
         [voc] Waterfoxe Relay
         [loc] Waterfoxu Relay
         [ins] Waterfoxem Relay
+       *[nom] Waterfox Relay
     }
     .gender = masculine
 -relay-brand-short-name = Relay
@@ -162,6 +162,14 @@
     }
     .gender = masculine
     .case-status = with-cases
+-solo-ai-brand-name = Solo
+-thunderbird-brand-name = BrowserWorks Thunderbird
+-thunderbird-brand-short-name = Thunderbird
+-mdn-brand-name = Webová dokumentace MDN
+-yelp-brand-name = Yelp
+
+##
+
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
 # The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
@@ -170,120 +178,120 @@
 # and kept in English.
 -firefox-suggest-brand-name =
     { $case ->
-       *[nom]
-            { $capitalization ->
-               *[upper] Návrhy od Waterfoxu
-                [lower] návrhy od Waterfoxu
-            }
         [gen]
             { $capitalization ->
-               *[upper] Návrhů od Waterfoxu
                 [lower] návrhů od Waterfoxu
+               *[upper] Návrhů od Waterfoxu
             }
         [dat]
             { $capitalization ->
-               *[upper] Návrhům od Waterfoxu
                 [lower] návrhům od Waterfoxu
+               *[upper] Návrhům od Waterfoxu
             }
         [acc]
             { $capitalization ->
-               *[upper] Návrhy od Waterfoxu
                 [lower] návrhy od Waterfoxu
+               *[upper] Návrhy od Waterfoxu
             }
         [voc]
             { $capitalization ->
-               *[upper] Návrhy od Waterfoxu
                 [lower] návrhy od Waterfoxu
+               *[upper] Návrhy od Waterfoxu
             }
         [loc]
             { $capitalization ->
-               *[upper] Návrzích od Waterfoxu
                 [lower] návrzích od Waterfoxu
+               *[upper] Návrzích od Waterfoxu
             }
         [ins]
             { $capitalization ->
-               *[upper] Návrhy od Waterfoxu
                 [lower] návrhy od Waterfoxu
+               *[upper] Návrhy od Waterfoxu
+            }
+       *[nom]
+            { $capitalization ->
+                [lower] návrhy od Waterfoxu
+               *[upper] Návrhy od Waterfoxu
             }
     }
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name =
     { $case ->
-       *[nom]
-            { $capitalization ->
-               *[upper] Domovská stránka Waterfoxu
-                [lower] domovská stránka Waterfoxu
-            }
         [gen]
             { $capitalization ->
-               *[upper] Domovské stránky Waterfoxu
                 [lower] domovské stránky Waterfoxu
+               *[upper] Domovské stránky Waterfoxu
             }
         [dat]
             { $capitalization ->
-               *[upper] Domovské stránce Waterfoxu
                 [lower] domovské stránce Waterfoxu
+               *[upper] Domovské stránce Waterfoxu
             }
         [acc]
             { $capitalization ->
-               *[upper] Domovskou stránku Waterfoxu
                 [lower] domovskou stránku Waterfoxu
+               *[upper] Domovskou stránku Waterfoxu
             }
         [voc]
             { $capitalization ->
-               *[upper] Domovská stránko Waterfoxu
                 [lower] domovská stránko Waterfoxu
+               *[upper] Domovská stránko Waterfoxu
             }
         [loc]
             { $capitalization ->
-               *[upper] Domovské stránce Waterfoxu
                 [lower] domovské stránce Waterfoxu
+               *[upper] Domovské stránce Waterfoxu
             }
         [ins]
             { $capitalization ->
-               *[upper] Domovskou stránkou Waterfoxu
                 [lower] domovskou stránkou Waterfoxu
+               *[upper] Domovskou stránkou Waterfoxu
+            }
+       *[nom]
+            { $capitalization ->
+                [lower] domovská stránka Waterfoxu
+               *[upper] Domovská stránka Waterfoxu
             }
     }
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name =
     { $case ->
-       *[nom]
-            { $capitalization ->
-               *[upper] Přehled Waterfoxu
-                [lower] přehled Waterfoxu
-            }
         [gen]
             { $capitalization ->
-               *[upper] Přehledu Waterfoxu
                 [lower] přehledu Waterfoxu
+               *[upper] Přehledu Waterfoxu
             }
         [dat]
             { $capitalization ->
-               *[upper] Přehledu Waterfoxu
                 [lower] přehledu Waterfoxu
+               *[upper] Přehledu Waterfoxu
             }
         [acc]
             { $capitalization ->
-               *[upper] Přehled Waterfoxu
                 [lower] přehled Waterfoxu
+               *[upper] Přehled Waterfoxu
             }
         [voc]
             { $capitalization ->
-               *[upper] Přehlede Waterfoxu
                 [lower] přehlede Waterfoxu
+               *[upper] Přehlede Waterfoxu
             }
         [loc]
             { $capitalization ->
-               *[upper] Přehledu Waterfoxu
                 [lower] přehledu Waterfoxu
+               *[upper] Přehledu Waterfoxu
             }
         [ins]
             { $capitalization ->
-               *[upper] Přehledem Waterfoxu
                 [lower] přehledem Waterfoxu
+               *[upper] Přehledem Waterfoxu
+            }
+       *[nom]
+            { $capitalization ->
+                [lower] přehled Waterfoxu
+               *[upper] Přehled Waterfoxu
             }
     }
 # Firefox Labs is the name for a page in Settings to allow users to learn about
@@ -291,5 +299,8 @@
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxlabs-brand-name = Waterfox Labs
--solo-ai-brand-name = Solo
-
+-smart-window-brand-name =
+    { $plural-form ->
+        [true] Chytrá okna
+       *[false] Chytré okno
+    }

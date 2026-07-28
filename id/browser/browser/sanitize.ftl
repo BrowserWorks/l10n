@@ -59,10 +59,7 @@ history-section-label = Riwayat
 item-history-and-downloads =
     .label = Riwayat Penjelajahan dan Unduhan
     .accesskey = R
-item-history-form-data-downloads =
-    .label = Riwayat
-    .accesskey = R
-item-history-form-data-downloads-description = Bersihkan situs dan riwayat unduhan, info formulir tersimpan, dan pencarian
+item-history-and-downloads-description2 = Bersihkan situs dan riwayat unduhan
 item-cookies =
     .label = Kuki
     .accesskey = K
@@ -131,3 +128,6 @@ sanitize-everything-warning = Semua riwayat akan dihapus.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Item yang dipilih akan dibersihkan.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Menghitung…

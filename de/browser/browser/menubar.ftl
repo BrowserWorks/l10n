@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Einstellungen
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Einstellungen…
+menu-application-set-as-default =
+    .label = { -brand-shorter-name } als Standard-Browser festlegen
 menu-application-services =
     .label = Dienste
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Teilen
     .accesskey = e
+menu-file-share-qrcode =
+    .label = QR-Code erzeugen…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = QR-Code erzeugen
+    .accesskey = Q
 menu-file-print-setup =
     .label = Seite einrichten…
     .accesskey = e
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Chronik
 menu-view-synced-tabs-sidebar =
     .label = Synchronisierte Tabs
-menu-view-megalist-sidebar =
-    .label = Passwörter
 menu-view-full-zoom =
     .label = Zoom
     .accesskey = o
@@ -266,6 +263,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (aktuell)
+menu-profiles-menu =
+    .label = Profile
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Seiteninformationen
     .accesskey = S
+menu-tools-edit-pdf =
+    .label = PDF bearbeiten…
+    .accesskey = P
 menu-settings =
     .label = Einstellungen
     .accesskey =

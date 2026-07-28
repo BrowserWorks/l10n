@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Refuser
     .accesskey = R
 webext-perms-host-description-all-urls = Accéder à vos données pour tous les sites web
+webext-perms-host-description-file-urls = Accéder aux fichiers présents sur votre ordinateur
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Accéder à vos données pour les sites du domaine { $domain }
@@ -134,6 +135,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } demande un
 
 webext-site-perms-header-with-gated-perms-midi = Ce module complémentaire donne accès aux périphériques MIDI à { $hostname }.
 webext-site-perms-header-with-gated-perms-midi-sysex = Ce module complémentaire donne accès aux périphériques MIDI (avec la prise en charge de SysEx) à { $hostname }.
+webext-site-perms-header-with-gated-perms-serial = Ce module complémentaire donne accès à vos périphériques série à { $hostname }.
 
 ##
 
@@ -144,6 +146,12 @@ webext-site-perms-description-gated-perms-midi =
     Ces périphériques sont habituellement branchés à votre ordinateur, comme par exemple un synthétiseur audio, mais ils peuvent aussi être intégrés à votre ordinateur.
     
     Les sites web ne sont normalement pas autorisés à accéder aux périphériques MIDI. Une utilisation incorrecte pourrait provoquer des dommages ou compromettre la sécurité.
+webext-site-perms-description-gated-perms-webserial =
+    Il s’agit de périphériques tels que des microcontrôleurs, des imprimantes 3D et d’autres périphériques qui se connectent via un port USB, un port série ou Bluetooth.
+    
+    Vous pourrez choisir les périphériques auxquels le site web peut accéder.
+    
+    Les sites web ne sont normalement pas autorisés à accéder aux périphériques série. Une utilisation inappropriée pourrait entraîner des dommages ou compromettre la sécurité.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -158,6 +166,7 @@ webext-site-perms-header-unsigned-with-perms = Ajouter { $extension } ? Cette e
 
 webext-site-perms-midi = Accéder aux appareils MIDI
 webext-site-perms-midi-sysex = Accéder aux appareils MIDI prenant en charge SysEx
+webext-site-perms-serial = Accéder aux périphériques série
 
 ## Colorway theme migration
 

@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Pergunte ao Perplexity
 perplexity-callout-secondary-label-1 = Descartar
 perplexity-callout-secondary-label-2 = Entendi
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Quer experimentar um novo mecanismo de pesquisa que prioriza a privacidade?
+start-page-callout-subtitle = Experimente o Startpage. Projetado para manter suas pesquisas mais privativas desde o início.
+start-page-callout-primary-label = Experimente o Startpage
+start-page-callout-secondary-label = Descartar
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Proteja suas senhas, sincronizando com seus di
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Criar uma conta
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Mantenha seus canais preferidos na barra de tarefas
+taskbar-tabs-social-callout-subtitle = Abra sites de mídias sociais como um aplicativo, em uma janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Converse a partir da barra de tarefas
+taskbar-tabs-chat-callout-subtitle = Abra sites de conversa como um aplicativo, em uma janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-email-callout-title = Mantenha seu email na barra de tarefas
+taskbar-tabs-email-callout-subtitle = Abra webmail como um aplicativo, em uma janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-media-callout-title = Volte ao streaming a partir da barra de tarefas
+taskbar-tabs-media-callout-subtitle = Abra sites de streaming como um aplicativo, em uma janela simplificada e protegida pelo { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Adicionar este site à barra de tarefas
+taskbar-tabs-value-prop-callout-subtitle = Abra em uma janela separada de interface simplificada com um único clique.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Não perca tudo que você salvou ao mudar para o Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Sincronize agora para manter seus favoritos, senhas e configurações do { -brand-short-name } seguros e fáceis de restaurar.
+windows-10-eos-sync-urgency-title-2 = Se despedindo do Windows 10? Proteja seus dados ao mudar.
+windows-10-eos-sync-urgency-subtitle-2 = Mesmo que você não use o { -brand-short-name } diariamente, sincronize para manter favoritos e senhas seguros e acessíveis.
+windows-10-eos-sync-new-device-title-1 = Não corra o risco de começar novamente no seu próximo dispositivo.
+windows-10-eos-sync-new-device-subtitle-1 = Sincronize para levar seus favoritos, senhas e configurações preferidos do { -brand-short-name } com você ao mudar.
+windows-10-eos-sync-new-device-title-2 = Vai mudar para um novo dispositivo? Não perca o que importa.
+windows-10-eos-sync-new-device-subtitle-2 = Não importa com que frequência você usa o { -brand-short-name }, a sincronização protege seus favoritos, senhas e configurações.
+windows-10-eos-sync-new-device-primary-label = Sincronizar agora
+windows-10-eos-sync-general-title-1 = Proteja o { -brand-short-name } que você deixou do seu jeito.
+windows-10-eos-sync-general-subtitle-1 = Faça backup e sincronize suas senhas, favoritos, configurações e outros dados para preservar o que é importante para você.
+windows-10-eos-sync-general-title-2 = Agora é um bom momento para fazer backup de suas senhas e favoritos.
+windows-10-eos-sync-general-subtitle-2 = Sincronize agora para proteger as coisas em que você confia no { -brand-short-name } e recupere em qualquer lugar, quando quiser.
+windows-10-eos-sync-tour-title-1 = Muitas abas? Organize com grupos de abas.
+windows-10-eos-sync-tour-subtitle-1 = Arraste uma aba sobre outra para criar um grupo e manter as coisas organizadas.
+windows-10-eos-sync-tour-title-2 = Prepare-se para o Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Sincronize seus favoritos, senhas e configurações para ter cópia de segurança antes de mudar.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Mostrar menos recomendações
+windows-10-eos-sync-dismiss-button-label = Descartar
+windows-10-eos-sync-callout-primary-advance-button-label = Próximo
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Novidade: Clique e mantenha pressionado para ver exibição prévia de links
+link-preview-onboarding-callout-description = Veja uma descrição curta, tempo de leitura e mais para decidir se um link vale a pena ser clicado. Também disponível ao clicar com o botão direito do mouse.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Organize a bagunça usando grupos de abas
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Agrupe suas abas por tarefa ou assunto. Adicione mais abas a cada grupo conforme precisar.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Iniciar um grupo
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Mostrar títulos de abas no painel lateral
 sidebar-button-callout-subtitle = Use o botão do painel lateral para expandir e mostrar os títulos das abas.
 sidebar-button-callout-vertical-tabs = Para exibir suas abas, clique no botão de painel lateral na barra de ferramentas.
+sidebar-deprecation-callout-title = Painel lateral atualizado estará disponível em breve
+sidebar-deprecation-callout-subtitle = Estamos descontinuando a versão do painel lateral que você está usando. Experimente o painel lateral atualizado. É mais rápido e oferece acesso a mais ferramentas.
+sidebar-deprecation-cta-button = Experimentar agora
 
 ## Sidebar Vertical Tabs Strings
 
@@ -172,7 +243,7 @@ sidebar-callout-survey-agree = Concordo
 sidebar-callout-survey-disagree = Discordo
 sidebar-callout-survey-strongly-disagree = Discordo totalmente
 sidebar-callout-survey-features-question = Dentre os seguintes potenciais recursos do painel lateral, qual poderia melhorar mais sua produtividade no { -brand-short-name }?
-sidebar-callout-survey-split-view = Ver dois sites ao mesmo tempo, dividindo a janela lado a lado
+sidebar-callout-survey-split-view = Ver dois sites ao mesmo tempo, dividindo a exibição lado a lado
 sidebar-callout-survey-keep-website-open = Manter um site, como de email ou agenda, aberto no painel lateral enquanto você navega em outros sites
 sidebar-callout-survey-saved-websites-2 = Acesso rápido aos seus favoritos
 sidebar-callout-survey-none-of-above = Nenhuma das opções acima
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Qual é seu nível de satisfação 
 sidebar-genai-survey-productive-question =
     Até que ponto você concorda ou discorda com esta declaração?<br/>
     “O chatbot de inteligência artificial no painel lateral me ajuda a ser mais produtivo”
+splitview-onboarding-callout-title-1 = Exibição dividida: um jeito melhor de fazer várias coisas ao mesmo tempo
+splitview-onboarding-callout-subtitle-1 = Clique com o botão direito nesta aba e escolha “Adicionar exibição dividida” para ver duas abas de uma só vez.
+splitview-onboarding-callout-cta-1 = Experimente agora
+splitview-onboarding-callout-title-2 = Veja duas abas ao mesmo tempo com exibição dividida
+splitview-onboarding-callout-subtitle-2 = Nenhuma janela extra. Nenhuma troca de abas. Clique com o botão direito nesta aba e escolha “Adicionar exibição dividida”.
+splitview-onboarding-callout-cta-2 = Experimente a exibição dividida
 unified-search-callout-title = Mudar de mecanismo de pesquisa
 unified-search-callout-subtitle = Escolha o que funciona melhor para sua pesquisa específica.
 unified-search-callout-primary-label = Avançar
@@ -195,6 +272,6 @@ actions-callout-title = Conclua tarefas comuns ou acesse as configurações bás
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Experimente digitar uma ação como “imprimir” para imprimir uma página, ou “limpar” para limpar o histórico.

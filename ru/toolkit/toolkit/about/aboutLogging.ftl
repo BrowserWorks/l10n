@@ -29,6 +29,7 @@ about-logging-no-log-modules = Нет
 about-logging-no-log-file = Нет
 about-logging-logging-preset-selector-text = Предустановка ведения журнала:
 about-logging-with-profiler-stacks-checkbox = Включить трассировку стека для сообщений журнала
+about-logging-with-javascript-tracing-checkbox = Включить трассировку JavaScript
 about-logging-menu =
     .title = Дополнительные настройки
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Модули журнала для диагностики проблем с аудио/видео-декодерами и кодировщиками WebCodecs, а также декодерами изображений
 about-logging-preset-ml-label = Машинное обучение
 about-logging-preset-ml-description = Модули журнала для диагностики проблем машинного обучения
+about-logging-preset-web-compat-label = Веб-совместимость
+about-logging-preset-web-compat-description = Модули журнала для диагностики проблем веб-совместимости
+about-logging-preset-navigation = Навигация
+about-logging-preset-navigation-description = Модули журнала для диагностики проблем с навигацией и историей сессий
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Модули журнала для диагностики проблем WebGPU
 about-logging-preset-gfx-label = Графика
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Поде�
 about-logging-upload-error = При загрузке профиля произошла ошибка: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = При сохранении загруженного профиля произошла ошибка: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = При сохранении файла произошла ошибка: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Профиль { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Загруженные профили
+about-logging-no-uploaded-profiles = Ни одного профиля пока не загружено.
+about-logging-delete-uploaded-profile = Удалить
+about-logging-view-uploaded-profile = Просмотреть профиль
+about-logging-delete-profile-confirm-title = Удалить профиль
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Вы уверены, что хотите удалить профиль «{ $profileName }»? Это действие не может быть отменено.
+about-logging-deleting-profile = Удаление…

@@ -26,6 +26,26 @@ about-debugging-this-firefox-runtime-name =
         [neuter] Toto { -brand-shorter-name }
        *[other] Tato aplikace { -brand-shorter-name }
     }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 =
+    { -brand-shorter-name.gender ->
+        [masculine] Tento { -brand-shorter-name }
+        [feminine] Tato { -brand-shorter-name }
+        [neuter] Toto { -brand-shorter-name }
+       *[other] Tato aplikace { -brand-shorter-name }
+    }
+about-debugging-sidebar-this-firefox-title =
+    .title =
+        { -brand-shorter-name.gender ->
+            [masculine] Tento { -brand-shorter-name }
+            [feminine] Tato { -brand-shorter-name }
+            [neuter] Toto { -brand-shorter-name }
+           *[other] Tato aplikace { -brand-shorter-name }
+        }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Nastavení
+about-debugging-sidebar-setup-title =
+    .title = Nastavení
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -92,7 +112,7 @@ about-debugging-refresh-usb-devices-button = Obnovit seznam zařízení
 # Title of the Setup page.
 about-debugging-setup-title = Nastavení
 # Introduction text in the Setup page to explain how to configure remote debugging.
-about-debugging-setup-intro = Nastavte si způsob připojení pro vzdálení ladění vašeho zařízení.
+about-debugging-setup-intro = Nastavte si způsob připojení pro vzdálené ladění vašeho zařízení.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 =
     { -brand-shorter-name.case-status ->
@@ -305,22 +325,22 @@ about-debugging-extension-backgroundscript-status-stopped = Zastavený
 # .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-push2 = Push
     .disabledTitle =
-        Push od service workeru je pro { -brand-shorter-name.gender ->
-            [masculine] víceprocesový { -brand-shorter-name(case: "acc") }
-            [feminine] víceprocesovou { -brand-shorter-name(case: "acc") }
-            [neuter] víceprocesové { -brand-shorter-name(case: "acc") }
-           *[other] víceprocesovou aplikaci { -brand-shorter-name }
-        } zakázán
+        { -brand-shorter-name.gender ->
+            [masculine] Push od service workeru je pro víceprocesový { -brand-shorter-name(case: "acc") } zakázán
+            [feminine] Push od service workeru je pro víceprocesovou { -brand-shorter-name(case: "acc") } zakázán
+            [neuter] Push od service workeru je pro víceprocesové { -brand-shorter-name(case: "acc") } zakázán
+           *[other] Push od service workeru je pro víceprocesovou aplikaci { -brand-shorter-name } zakázán
+        }
 # This string is displayed as a label of the button that starts a service worker.
 # .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-start2 = Spustit
     .disabledTitle =
-        Spuštění service workeru je pro { -brand-shorter-name.gender ->
-            [masculine] víceprocesový { -brand-shorter-name(case: "acc") }
-            [feminine] víceprocesovou { -brand-shorter-name(case: "acc") }
-            [neuter] víceprocesové { -brand-shorter-name(case: "acc") }
-           *[other] víceprocesovou aplikaci { -brand-shorter-name }
-        } zakázáno
+        { -brand-shorter-name.gender ->
+            [masculine] Spuštění service workeru je pro víceprocesový { -brand-shorter-name(case: "acc") } zakázáno
+            [feminine] Spuštění service workeru je pro víceprocesovou { -brand-shorter-name(case: "acc") } zakázáno
+            [neuter] Spuštění service workeru je pro víceprocesové { -brand-shorter-name(case: "acc") } zakázáno
+           *[other] Spuštění service workeru je pro víceprocesovou aplikaci { -brand-shorter-name } zakázáno
+        }
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = Zrušit registraci
 # Displayed for service workers in runtime pages that listen to Fetch events.
@@ -351,12 +371,12 @@ about-debugging-worker-origin =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title =
-        Zkoumání service workerů je pro { -brand-shorter-name.gender ->
-            [masculine] víceprocesový { -brand-shorter-name(case: "acc") }
-            [feminine] víceprocesovou { -brand-shorter-name(case: "acc") }
-            [neuter] víceprocesové { -brand-shorter-name(case: "acc") }
-           *[other] víceprocesovou aplikaci { -brand-shorter-name }
-        } zakázáno
+        { -brand-shorter-name.gender ->
+            [masculine] Zkoumání service workerů je pro víceprocesový { -brand-shorter-name(case: "acc") } zakázáno
+            [feminine] Zkoumání service workerů je pro víceprocesovou { -brand-shorter-name(case: "acc") } zakázáno
+            [neuter] Zkoumání service workerů je pro víceprocesové { -brand-shorter-name(case: "acc") } zakázáno
+           *[other] Zkoumání service workerů je pro víceprocesovou aplikaci { -brand-shorter-name } zakázáno
+        }
 # Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
 about-debugging-zombie-tab-inspect-action-disabled =
     .title = Panel není plně načtený a nelze ho v průzkumníku otevřít
@@ -366,6 +386,15 @@ about-debugging-multiprocess-toolbox-name = Sada nástrojů pro práci s více p
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Hlavní procesy a procesy pro obsah v cílovém prohlížeči
+about-debugging-message-error-icon =
+    .alt = Ikona chyby
+about-debugging-message-info-icon =
+    .alt = Informační ikona
+about-debugging-message-warning-icon =
+    .alt = Varovná ikona
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Zavřít zprávu
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Zavřít zprávu
@@ -375,3 +404,5 @@ about-debugging-message-details-label-error = Podrobnosti o chybě
 about-debugging-message-details-label-warning = Podrobnosti upozornění
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Podrobnosti
+about-debugging-sidebar =
+    .heading = Ladění

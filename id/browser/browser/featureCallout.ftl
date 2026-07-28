@@ -68,15 +68,57 @@ split-dismiss-button-default-label =
 
 ## Login Status Advisory Callout (points to the account icon)
 
+# The 'account icon' is the toolbar button with a 'profile' icon of a human
+# head/shoulders. It's for dealing with your Mozilla account. When hovering the
+# icon, the tooltip says 'Account'.
+login-status-advisory-title = Anda keluar. Klik ikon akun untuk masuk.
 
 ## Bookmarks toolbar callout strings
 
+bookmarks-toolbar-callout-1-title = Tambahkan situs ini ke bilah alat markah Anda?
+bookmarks-toolbar-callout-1-subtitle = Markah Anda akan disimpan tepat di bawah bilah alamat untuk akses cepat.
+bookmarks-toolbar-callout-1-primary-button-label = Tambah markah
+bookmarks-toolbar-callout-1-secondary-button-label = Tidak, Terima Kasih
+# Visible if user adds a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
+bookmarks-toolbar-callout-2a-title = Tambahkan markah lainnya dengan mudah
+bookmarks-toolbar-callout-2a-subtitle = Anda dapat menyeret dan menjatuhkan tab di sini untuk menjaga lebih banyak situs favorit Anda dalam jangkauan.
+bookmarks-toolbar-callout-2a-primary-button-label = Paham
+# Reverts the bookmarks toolbar to the default setting
+bookmarks-toolbar-callout-2a-secondary-button-label = Sembunyikan Bilah Alat
+# Visible if user declines to add a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
+bookmarks-toolbar-callout-2b-title = Biarkan bilah alat markah Anda tetap terbuka?
+bookmarks-toolbar-callout-2b-subtitle = Anda dapat menambahkan situs lain yang lebih sering Anda kunjungi. Cukup seret dan lepas tab di sini untuk menjaga situs web favorit dalam jangkauan.
+bookmarks-toolbar-callout-2b-primary-button-label = Biarkan terbuka
+# Reverts the bookmarks toolbar to the default setting
+bookmarks-toolbar-callout-2b-secondary-button-label = Tidak, terima kasih
 
 ## Perplexity callout strings
 
+perplexity-callout-theme-1-title = Butuh jawaban yang tepat, segera?
+perplexity-callout-theme-2-title = Coba Perplexity: cara baru untuk mencari
+perplexity-callout-theme-1-subtitle-1 = Coba Perplexity. Pilih dari tombol pencarian jika Anda ingin jawaban lengkap, termasuk sumbernya.
+perplexity-callout-primary-label = Tanya Perplexity
+perplexity-callout-secondary-label-1 = Tutup
+perplexity-callout-secondary-label-2 = Paham
 
 ## Account Adoption Passwords callout strings
 
+# Suggestion to backup passwords by signing up for Mozilla account and using sync
+fxa-adoption-passwords-title = Sandi disimpan. Silakan dicadangkan.
+fxa-adoption-passwords-subtitle = Lindungi kata sandi Anda dengan menyinkronkan mereka ke perangkat Anda dengan enkripsi.
+# Opens Mozilla accounts sign-up page
+fxa-adoption-passwords-primary-button-label = Daftar
+
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Simpan asupan favorit Anda di bilah tugas
+taskbar-tabs-social-callout-subtitle = Luncurkan situs sosial Anda seperti aplikasi di jendela ramping yang dilindungi oleh { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Mengobrol dari bilah tugas
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Jangan kehilangan semua yang telah Anda simpan saat pindah ke Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Sinkronkan sekarang untuk menjaga markah, sandi, dan setelan { -brand-short-name } Anda aman dan mudah dipulihkan.
 
 ## Sidebar Strings
 
@@ -98,9 +140,6 @@ vertical-tabs-callout-2-subtitle = Tata letak ini memudahkan untuk memindai daft
 sidebar-pins-callout-title = Kehilangan jejak tab penting Anda?
 sidebar-pins-callout-subtitle = Coba sematkan, yang membuatnya tetap di bagian atas daftar tab Anda. Klik kanan pada tab yang ingin Anda sematkan, lalu pilih Sematkan Tab.
 sidebar-pins-callout-cta-button = Sematkan tab
-
-## Pinning Tabs Strings
-
 
 ## Sidebar Onboarding Strings
 
@@ -153,6 +192,6 @@ actions-callout-title = Selesaikan tugas umum atau akses pengaturan dasar
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Coba ketikkan tindakan seperti "cetak" untuk mencetak laman, atau "hapus" untuk menghapus riwayat Anda.

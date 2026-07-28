@@ -61,13 +61,9 @@ clear-time-duration-suffix =
 
 history-section-label = Historii
 item-history-and-downloads =
-    .label = Historii prohlížení a stahování
+    .label = Historie prohlížení a stahování
     .accesskey = H
-item-history-and-downloads-description2 = Vymaže historii stránek a stahování
-item-history-form-data-downloads =
-    .label = Historie
-    .accesskey = H
-item-history-form-data-downloads-description = Vymaže historii stránek a stahování, uložené informace z formulářů a vyhledávání
+item-history-and-downloads-description2 = Vymaže historii navštívených stránek a stahovaných souborů
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -80,7 +76,7 @@ item-cookies-site-data-with-size =
 item-cookies-site-data =
     .label = Cookies a data stránek
     .accesskey = C
-item-cookies-site-data-description = Může vás odhlásit z webových stránek nebo vyprázdnit nákupní košíky
+item-cookies-site-data-description = Může vás odhlásit z webů nebo vyprázdnit nákupní košíky
 item-active-logins =
     .label = Aktivní přihlášení
     .accesskey = l
@@ -96,7 +92,7 @@ item-cached-content-with-size =
 item-cached-content =
     .label = Dočasně uložené soubory a stránky
     .accesskey = D
-item-cached-content-description = Vymaže položky, které pomáhají rychlejšímu načítání stránek
+item-cached-content-description = Vymaže věci, které pomáhají rychlejšímu načítání stránek
 item-form-search-history =
     .label = Historii formulářů a hledání
     .accesskey = f
@@ -106,8 +102,8 @@ item-site-prefs =
 item-formdata-prefs =
     .label = Uložené údaje z formulářů
     .accesskey = o
-item-formdata-description = Vymaže jména, e-maily a další informace, které jste zadali do formulářů.
-item-site-prefs-description = Obnoví původní nastavení oprávnění a předvoleb stránek
+item-formdata-description = Vymaže jména, e-mailové adresy a další informace, které jste zadali do formulářů
+item-site-prefs-description = Obnoví výchozí nastavení oprávnění a zruší individuální nastavení webů
 data-section-label = Data
 item-site-settings =
     .label = Nastavení serveru
@@ -136,3 +132,6 @@ sanitize-everything-warning = Celá historie bude vymazána.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Všechny vybrané položky budou smazány.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Probíhá výpočet…

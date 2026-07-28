@@ -36,10 +36,17 @@ certificate-viewer-key-size = Taille de la clé
 certificate-viewer-inc-locality = Siège social
 certificate-viewer-locality = Localité
 certificate-viewer-location = Emplacement
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Nom de l’historique
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID de journal
 certificate-viewer-method = Méthode
 certificate-viewer-modulus = Module
 certificate-viewer-name = Nom
+certificate-viewer-surname = Nom
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Prénom
 certificate-viewer-not-after = Pas après
 certificate-viewer-not-before = Pas avant
 certificate-viewer-organization = Organisation
@@ -110,6 +117,8 @@ certificate-viewer-export = Exporter
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (inconnu)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = certificat
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

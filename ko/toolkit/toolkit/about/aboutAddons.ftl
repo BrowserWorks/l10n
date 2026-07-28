@@ -40,8 +40,8 @@ detail-version =
     .label = 버전
 detail-last-updated =
     .label = 마지막 업데이트
-addon-detail-description-expand = 더 보기
-addon-detail-description-collapse = 덜 보기
+addon-detail-description-expand = 더보기
+addon-detail-description-collapse = 접기
 detail-contributions-description = 이 부가 기능의 개발자가 여러분이 작은 기여로 지속적인 개발을 지원해 줄 것을 요청합니다.
 detail-contributions-button = 기여하기
     .title = 이 부가 기능의 개발에 기여하기
@@ -119,6 +119,8 @@ private-browsing-description2 =
     { -brand-short-name }에 추가되는 모든 새 확장 기능은 기본적으로 사생활 보호 창에서 실행되지 않습니다. 만약 사용자가 설정에서 허용하지 않는다면, 확장 기능은 사생활 보호 모드에서 작동하지 않으며, 사용자 온라인 활동에 접근할 수 없습니다.
     사용자의 사생활 보호 모드를 비공개로 유지 하기 위해 이렇게 변경했습니다.
     <label data-l10n-name="private-browsing-learn-more">확장 기능 설정 관리 방법 알아보기</label>
+aboutaddons-sidebar =
+    .heading = 부가 기능
 addon-category-discover = 추천
 addon-category-discover-title =
     .title = 추천
@@ -169,6 +171,8 @@ extensions-warning-update-security-button = 사용
 extensions-warning-imported-addons2 =
     .message = { -brand-short-name }로 가져온 확장  기능의 설치를 완료하세요.
 extensions-warning-imported-addons-button = 확장 기능 설치
+extensions-warning-safe-mode3 =
+    .message = 모든 부가 기능이 문제해결 모드에 의해 비활성화되었습니다.
 
 ## Strings connected to add-on updates
 
@@ -253,9 +257,9 @@ shortcuts-exists = 이미 { $addon }에서 사용 중입니다.
 #   $numberToShow (number) - Number of other elements available to show
 shortcuts-card-expand-button =
     { $numberToShow ->
-       *[other] { $numberToShow }개 더 보기
+       *[other] { $numberToShow }개 더보기
     }
-shortcuts-card-collapse-button = 덜 보기
+shortcuts-card-collapse-button = 접기
 header-back-button =
     .title = 뒤로 가기
 
@@ -279,6 +283,10 @@ colorway-removal-notice-message =
         부가 기능 사이트에서 새 버전을 받으세요.
 colorway-removal-notice-learn-more = 더 알아보기
 colorway-removal-notice-button = 업데이트된 컬러웨이 테마 받기
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Windows 대비 설정이 { -brand-short-name } 테마를 재정의합니다. { -brand-short-name } 테마를 사용하려면 이 설정을 끄세요.
 privacy-policy = 개인정보처리방침
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -462,11 +470,18 @@ available-updates-heading = 업데이트 있음
 recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
 release-notes-error = 죄송합니다. 출시 정보를 로드하는 중에 오류가 발생했습니다.
+addon-permissions-heading = 권한
 addon-permissions-empty2 = 이 확장 기능은 권한이 필요하지 않습니다.
+addon-permissions-required-label = 필수 항목:
+addon-permissions-optional-label = 선택 항목:
 addon-permissions-empty = 이 확장 기능은 권한이 필요하지 않습니다.
-addon-permissions-required = 핵심 기능에 필요한 필수 권한:
-addon-permissions-optional = 추가 기능에 필요한 선택 권한:
+addon-permissions-required = 핵심 기능을 위한 필수 권한:
+addon-permissions-optional = 추가 기능을 위한 선택 권한:
 addon-permissions-learnmore = 권한에 대해 더 알아보기
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = 일부 권한은 조직에서 관리합니다.
 recommended-extensions-heading = 추천 확장 기능
 recommended-themes-heading = 추천 테마
 # Variables:
@@ -521,9 +536,15 @@ details-notification-hard-blocked-other =
     .message = 이 부가 기능은 BrowserWorks 정책 위반으로 차단되어 비활성화되었습니다.
 details-notification-unsigned-link = 추가 정보
 details-notification-blocked = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
-details-notification-blocked2 =
-    .message = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
 details-notification-blocked-link2 = 상세 보기
+details-notification-soft-blocked-extension-disabled2 =
+    .message = 이 확장 기능은 제한되어 있으며 비활성화되어 있습니다. 활성화할 수는 있지만, 위험할 수 있습니다.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = 이 확장 기능은 제한되어 있습니다. 사용 시 위험할 수 있습니다.
+details-notification-soft-blocked-other-disabled2 =
+    .message = 이 부가 기능은 제한되어 있으며 비활성화되어 있습니다. 활성화할 수는 있지만, 위험할 수 있습니다.
+details-notification-soft-blocked-other-enabled2 =
+    .message = 이 부가 기능은 제한되어 있습니다. 사용 시 위험할 수 있습니다.
 details-notification-soft-blocked-extension-disabled =
     .message = 이 확장 기능은 BrowserWorks 정책 위반으로 제한되어 비활성화되었습니다. 활성화할 수 있지만 위험할 수 있습니다.
 details-notification-soft-blocked-extension-enabled =
@@ -535,8 +556,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = 상세 보기
 details-notification-blocked-link = 추가 정보
 details-notification-softblocked = { $name }는 보안이나 안정성 문제를 일으킬 수 있습니다.
-details-notification-softblocked2 =
-    .message = { $name }는 보안이나 안정성 문제를 일으킬 수 있습니다.
 details-notification-softblocked-link = 추가 정보
 details-notification-gmp-pending = { $name } 부가 기능이 곧 설치됩니다.
 details-notification-gmp-pending2 =
@@ -562,6 +581,10 @@ permissions-data-addon-button = 권한 및 데이터
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = { $extensionName } 확장 기능에서 사용됨
+addon-permissions-data-collection-heading = 데이터 수집
+addon-permissions-data-collection-empty = 개발자는 이 확장 기능이 데이터 수집을 요구하지 않는다고 밝히고 있습니다.
+addon-data-collection-provided = 확장 기능 개발자가 제공한 정보
+addon-data-collection-learnmore = 데이터 수집에 대해 더 알아보기
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -570,6 +593,7 @@ mlmodel-link-preview = { -brand-short-name }는 사용자가 링크를 미리 �
 mlmodel-pdfjs = { -brand-short-name }는 사용자가 PDF에 추가하는 이미지에 대한 대체 텍스트를 생성하기 위해 이것을 사용함
 mlmodel-smart-tab-topic-engine = { -brand-short-name }는 탭 그룹의 이름을 제안하는 데 이것을 사용함
 mlmodel-smart-tab-embedding-engine = { -brand-short-name }는 탭 그룹에 탭을 제안하는 데 이것을 사용함
+mlmodel-formfill-engine = { -brand-short-name }는 이것을 주소 양식을 채우는데 사용함
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = 온디바이스 AI
 addon-category-mlmodel-title =

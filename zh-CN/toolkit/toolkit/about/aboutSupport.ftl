@@ -106,7 +106,7 @@ modified-key-prefs-title = 修改过的重要首选项
 modified-prefs-name = 名称
 modified-prefs-value = 值
 user-js-title = user.js 设置
-user-js-description = 您的配置文件夹中有一个 <a data-l10n-name="user-js-link">user.js 文件</a>，其中包含了一些并非由 { -brand-short-name } 所创建的首选项（偏好设置）。
+user-js-description = 您的配置文件夹中有一个 <a data-l10n-name="user-js-link">user.js 文件</a>，其中包含了一些并非由 { -brand-short-name } 所创建的首选项。
 locked-key-prefs-title = 已锁定的重要首选项
 locked-prefs-name = 名称
 locked-prefs-value = 值
@@ -136,6 +136,10 @@ place-database-stats-efficiency-perc = 效率 (%)
 place-database-stats-sequentiality-perc = 顺序性 (%)
 place-database-integrity = 完整性
 place-database-verify-integrity = 验证完整性
+place-database-last-idle-maintenance-data = 上次空闲维护日期
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = 上次 Vacumm 日期
+place-database-last-integrity-corruption-date = 上次完整性损坏日期
 a11y-title = 无障碍环境
 a11y-activated = 已激活
 a11y-force-disabled = 强制停用无障碍环境

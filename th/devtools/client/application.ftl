@@ -63,7 +63,7 @@ manifest-empty-intro-link = เรียนรู้วิธีเพิ่ม�
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = ข้อผิดพลาดและคำเตือน
 # Header for the Identity section of Manifest inspection displayed in the application panel.
-manifest-item-identity = ข้อมูลประจำตัว
+manifest-item-identity = ข้อมูลตัวตน
 # Header for the Presentation section of Manifest inspection displayed in the application panel.
 manifest-item-presentation = งานนำเสนอ
 # Header for the Icon section of Manifest inspection displayed in the application panel.
@@ -110,6 +110,17 @@ sidebar-item-manifest = ไฟล์กำกับ
 sidebar-item-service-workers = Service Worker
     .alt = ไอคอน Service Worker
     .title = Service Worker
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = ประวัติเซสชัน
+    .alt = ไอคอน ประวัติเซสชัน
+    .title = ประวัติเซสชัน
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = แสดงข้อมูลประวัติเซสชัน
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = แผนภาพประวัติเซสชันไม่พร้อมใช้งาน
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = เป้าหมายไม่รองรับการแสดงแผนภาพประวัติเซสชัน
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = ไอคอนคำเตือน

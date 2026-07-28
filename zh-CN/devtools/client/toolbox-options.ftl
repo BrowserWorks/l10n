@@ -30,10 +30,18 @@ options-context-inspector = 查看器
 options-show-user-agent-styles-label = 显示浏览器样式
 options-show-user-agent-styles-tooltip =
     .title = 启用此选项将显示由浏览器加载的默认样式。
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = 显示浏览器影子 DOM
+options-show-user-agent-shadow-dom-tooltip =
+    .title = 启用此选项后，将显示由浏览器处理的影子 DOM 元素。
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = 截短 DOM 属性
 options-collapse-attrs-tooltip =
     .title = 截短查看器中的长属性
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = 显示注释
+options-show-comments-tooltip =
+    .title = 在查看器中显示注释节点
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = 点击并拖动编辑大小值
 options-inspector-draggable-properties-tooltip =
@@ -107,6 +115,18 @@ options-sourceeditor-tabsize-label = 制表符宽度
 options-sourceeditor-keybinding-label = 按键绑定
 options-sourceeditor-keybinding-default-label = 默认设置
 
+## Local Mode section
+
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = 文件夹不存在或无效。
+options-local-mode-toggle-enable = 启用
+options-local-mode-toggle-disable = 禁用
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = 确定要移除“{ $mappingOrigin }”映射吗？
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +135,8 @@ options-context-advanced-settings = 高级设置
 options-disable-http-cache-label = 禁用 HTTP 缓存（工具箱打开时）
 options-disable-http-cache-tooltip =
     .title = 开启此选项将对所有已打开工具箱的标签页禁用 HTTP 缓存。Service Worker 不会受此选项影响。
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = 禁用 JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = 禁用 JavaScript *
 options-disable-javascript-tooltip =
@@ -143,5 +165,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = 启用源代码映射
 options-source-maps-tooltip =
     .title = 如果您启用此选项，工具中的源代码将被映射。
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = （仅限当前会话，将重新加载当前页面）
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * 仅限当前会话，将重新加载当前页面
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = （将重新加载页面）
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = 自动
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = 已弃用。详细了解…

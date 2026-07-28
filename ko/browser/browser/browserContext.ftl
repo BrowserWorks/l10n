@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = 링크를 새 탭에서 열기
     .accesskey = T
+main-context-menu-open-link-split-view =
+    .label = 링크를 분할 화면에서 열기
+    .accesskey = M
 main-context-menu-open-link-container-tab =
     .label = 링크를 새 컨테이너 탭에서 열기
     .accesskey = C
@@ -168,11 +171,6 @@ main-context-menu-preview-link =
 # sites add into URLs to help them deliver a certain browsing experience.
 main-context-menu-copy-clean-link =
     .label = 링크 정리 복사
-    .accesskey = u
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = 사이트 추적 없이 링크 복사
     .accesskey = u
 
 ## Media (video/audio) controls
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = 컨트롤 숨기기
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = 전체 화면
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = 설명 보기
     .accesskey = D
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = { $engine }로 이미지 검색
+    .accesskey = e
 main-context-menu-video-save-as =
     .label = 동영상을 다른 이름으로 저장…
     .accesskey = v
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = 메일로 오디오 보내기…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = 기기로 보내기
+    .accesskey = n
+main-context-menu-send-to-mobile-2 =
+    .label = 모바일로 보내기
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = 탭을 보내려면 로그인하세요
+main-context-menu-send-to-mobile-enable-sync2 = 탭을 보내려면 동기화를 활성화하세요
+main-context-menu-send-to-mobile-connect-phone2 = 휴대폰 연결
+main-context-menu-send-to-mobile-device-missing2 = 사용자의 기기가 없나요?
+main-context-menu-send-to-mobile-sign-in-from-link = 링크를 보내려면 로그인하세요
+main-context-menu-send-to-mobile-sign-in-from-page = 페이지를 보내려면 로그인하세요
+main-context-menu-send-to-mobile-enable-sync3 = 탭을 보내려면 동기화를 켜세요
+main-context-menu-send-to-mobile-enable-sync-from-link = 링크를 보내려면 동기화를 켜세요
+main-context-menu-send-to-mobile-enable-sync-from-page = 페이지를 보내려면 동기화를 켜세요
+main-context-menu-send-to-mobile-connect-phone3 = 탭을 보내려면 기기를 연결하세요
+main-context-menu-send-to-mobile-connect-phone-from-link = 링크를 보내려면 기기를 연결하세요
+main-context-menu-send-to-mobile-connect-phone-from-page = 페이지를 보내려면 기기를 연결하세요
 main-context-menu-save-to-pocket =
     .label = 페이지를 { -pocket-brand-name }에 저장
     .accesskey = k
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = 링크를 기기로 보내기
     .accesskey = D
+main-context-menu-link-send-to-mobile =
+    .label = 링크를 모바일로 보내기
+    .accesskey = n
 main-context-menu-frame =
     .label = 이 프레임
     .accesskey = h
@@ -367,10 +391,10 @@ main-context-menu-view-selection-source =
     .label = 선택 영역 소스 보기
     .accesskey = e
 main-context-menu-take-screenshot =
-    .label = 스크린샷 찍기
+    .label = 스크린샷
     .accesskey = T
 main-context-menu-take-frame-screenshot =
-    .label = 스크린샷 찍기
+    .label = 스크린샷
     .accesskey = o
 main-context-menu-view-page-source =
     .label = 페이지 소스 보기
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = 비밀번호 표시
     .accesskey = v
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = 신규
+main-context-menu-pdfjs-copy-page =
+    .label = 페이지 복사
+main-context-menu-pdfjs-cut-page =
+    .label = 페이지 잘라내기
+main-context-menu-pdfjs-delete-page =
+    .label = 페이지 삭제
+main-context-menu-pdfjs-save-page =
+    .label = 선택한 페이지 다른 이름으로 저장…

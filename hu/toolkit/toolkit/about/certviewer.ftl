@@ -36,10 +36,17 @@ certificate-viewer-key-size = Kulcsméret
 certificate-viewer-inc-locality = Bejegyzés helyszíne
 certificate-viewer-locality = Helység
 certificate-viewer-location = Hely
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Naplónév
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = Naplóazonosító
 certificate-viewer-method = Módszer
 certificate-viewer-modulus = Modulus
 certificate-viewer-name = Név
+certificate-viewer-surname = Vezetéknév
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Utónév
 certificate-viewer-not-after = Vége
 certificate-viewer-not-before = Kezdete
 certificate-viewer-organization = Szervezet
@@ -110,6 +117,8 @@ certificate-viewer-export = Exportálás
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (ismeretlen)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = tanúsítvány
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

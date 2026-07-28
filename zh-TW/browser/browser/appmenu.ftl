@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = 無法更新 — 系統不相容
 appmenuitem-banner-update-restart =
     .label = 已推出更新 — 立即重新啟動
+appmenu-nova-fxa-sign-in = 登入
+appmenu-nova-switch-device-promo =
+    .message = 快要換新裝置了嗎？把 { -brand-short-name } 一起帶走！
+appmenu-nova-switch-device-link = 如何轉移您的資料
 appmenuitem-new-tab =
     .label = 開新分頁
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = 開新隱私視窗
 appmenuitem-history =
     .label = 歷史
+appmenuitem-tab-groups =
+    .label = 分頁群組
 appmenuitem-downloads =
     .label = 下載項目
 appmenuitem-passwords =
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = 開啟效能分析面版
+    .tooltiptext = 開啟效能分析面版
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -202,6 +211,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值。
 profiler-popup-presets-networking-label =
     .label = 網路連線
+profiler-popup-presets-networking-with-logs-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值，並包含網路紀錄。這些紀錄內容可能會包含您造訪的網址等敏感資料。
+profiler-popup-presets-networking-with-logs-label =
+    .label = 網路連線含紀錄
 profiler-popup-presets-power-description = 於 { -brand-shorter-name } 診斷耗電量時的預設值，額外負荷較低。
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -209,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = { -brand-shorter-name } 的預設除錯選項。額外負荷較高，請只在需要了解瀏覽器行為時使用，勿用於需要較高效能的情境。
 profiler-popup-presets-debug-label =
     .label = 除錯
+profiler-popup-presets-web-compat-description = 對網站相容性進行除錯，而非效能監控的建議預設值。
+profiler-popup-presets-web-compat-label =
+    .label = Web Compat
 profiler-popup-presets-custom-label =
     .label = 自訂
 
@@ -264,7 +279,7 @@ appmenu-help-exit-troubleshoot-mode =
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-report-deceptive-site =
-    .label = 回報詐騙網站…
+    .label = 檢舉詐騙網站…
     .accesskey = D
 appmenu-help-not-deceptive =
     .label = 這不是詐騙網站…
@@ -274,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = 自訂工具列…
+appmenu-abouttranslations =
+    .label = 翻譯…
+appmenu-edit-pdf =
+    .label = 編輯 PDF…
 appmenu-developer-tools-subheader = 瀏覽器工具
 appmenu-developer-tools-extensions =
     .label = 開發者專用的擴充套件
@@ -283,14 +302,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = 登入您的帳號
+appmenuitem-monitor-title2 = 比身分盜用更搶先一步
+appmenuitem-monitor-description2 = 訂閱資料外洩事件警報
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 獲得資料外洩警報
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = 保護您電子郵件地址的隱私
+appmenuitem-relay-description2 = 幫助防止收到垃圾信
 appmenuitem-relay-description = 隱藏您的實際信箱與電話號碼
 appmenuitem-services-relay-description = 啟動轉寄信箱儀錶板
+appmenuitem-vpn-title2 = 使用 { -mozilla-vpn-brand-name } 隱藏您的實際位置
+appmenuitem-vpn-description3 = 讓您上網更不容易被追蹤
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = 獲得完整裝置保護
 appmenuitem-vpn-description = 保護您的線上行為隱私
 appmenu-services-header = 我的服務
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = 隱私權保護工具
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = 請試用來自 BrowserWorks 的其他保護工具：
 appmenu-other-protection-header = 試用來自 { -vendor-short-name } 的其他保護工具：
 
 ## Profiles panel
@@ -298,6 +332,8 @@ appmenu-other-protection-header = 試用來自 { -vendor-short-name } 的其他�
 appmenu-other-profiles = 其他設定檔
 appmenu-manage-profiles =
     .label = 管理設定檔
+appmenu-copy-profile =
+    .label = 複製這組設定檔
 appmenu-create-profile =
     .label = 新增設定檔
 appmenu-edit-profile =

@@ -15,6 +15,12 @@ appmenuitem-banner-update-unsupported =
     .label = Mise à jour impossible — système incompatible
 appmenuitem-banner-update-restart =
     .label = Mise à jour disponible — redémarrer maintenant
+appmenu-nova-update-title = Redémarrez pour mettre à jour { -brand-short-name }
+appmenu-nova-update-description = Vos onglets seront rouverts.
+appmenu-nova-fxa-sign-in = Se connecter
+appmenu-nova-switch-device-promo =
+    .message = Vous allez bientôt changer d’appareil ? Emportez { -brand-short-name } avec vous !
+appmenu-nova-switch-device-link = Comment migrer vos données
 appmenuitem-new-tab =
     .label = Nouvel onglet
 appmenuitem-new-window =
@@ -23,6 +29,8 @@ appmenuitem-new-private-window =
     .label = Nouvelle fenêtre privée
 appmenuitem-history =
     .label = Historique
+appmenuitem-tab-groups =
+    .label = Groupes d’onglets
 appmenuitem-downloads =
     .label = Téléchargements
 appmenuitem-passwords =
@@ -166,6 +174,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Maj+2
     }
+profiler-button-dropmarker =
+    .label = Ouvrir le panneau du profileur
+    .tooltiptext = Ouvrir le panneau du profileur
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -192,9 +203,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Réglage conçu pour examiner les bugs audio et vidéo dans { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Multimédia
+profiler-popup-presets-ml-description = Réglage conçu pour examiner les bugs d’apprentissage automatique dans { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Apprentissage automatique
 profiler-popup-presets-networking-description = Réglage conçu pour examiner les bugs réseau dans { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Réseau
+profiler-popup-presets-networking-with-logs-description = Réglage conçu pour diagnostiquer les problèmes réseau dans { -brand-shorter-name }, y compris les journaux réseau. Ces journaux peuvent contenir des informations sensibles telles que les adresses web que vous visitez.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Réseau avec journaux
 profiler-popup-presets-power-description = Réglage conçu pour examiner les bugs liés à la consommation d’énergie dans { -brand-shorter-name }, avec une surcharge faible.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -202,6 +219,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Réglage conçu pour le débogage dans { -brand-shorter-name }. Sa surcharge est importante, à utiliser non pour étudier les performances, mais pour comprendre le comportement du navigateur.
 profiler-popup-presets-debug-label =
     .label = Débogage
+profiler-popup-presets-web-compat-description = Réglage recommandé pour déboguer les problèmes de compatibilité web avec les sites web, plutôt que pour le suivi des performances.
+profiler-popup-presets-web-compat-label =
+    .label = Compatibilité web
 profiler-popup-presets-custom-label =
     .label = Personnalisés
 
@@ -267,6 +287,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Personnaliser la barre d’outils…
+appmenu-abouttranslations =
+    .label = Traduire…
+appmenu-edit-pdf =
+    .label = Modifier un PDF…
 appmenu-developer-tools-subheader = Outils du navigateur
 appmenu-developer-tools-extensions =
     .label = Extensions de développement
@@ -276,14 +300,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Connectez-vous à votre compte
+appmenuitem-monitor-title2 = Prenez une longueur d’avance sur l’usurpation d’identité
+appmenuitem-monitor-description2 = Recevez des alertes en cas de fuite de données
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Recevez des alertes lors de fuites de données
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Protégez la confidentialité de vos adresses e-mail
+appmenuitem-relay-description2 = Permet de limiter le spam dans votre boîte de réception
 appmenuitem-relay-description = Masquez votre véritable adresse e-mail et votre véritable numéro de téléphone
 appmenuitem-services-relay-description = Ouvrir le tableau de bord des alias de messagerie
+appmenuitem-vpn-title2 = Masquez votre localisation avec { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Rendez votre activité en ligne plus difficile à suivre
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Protégez l’intégralité de votre appareil
 appmenuitem-vpn-description = Protégez vos activités en ligne
 appmenu-services-header = Mes services
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Outils de confidentialité
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Essayez d’autres outils de protection de BrowserWorks :
 appmenu-other-protection-header = Essayez d’autres outils de protection de { -vendor-short-name } :
 
 ## Profiles panel
@@ -291,6 +330,8 @@ appmenu-other-protection-header = Essayez d’autres outils de protection de { -
 appmenu-other-profiles = Autres profils
 appmenu-manage-profiles =
     .label = Gérer les profils
+appmenu-copy-profile =
+    .label = Copier ce profil
 appmenu-create-profile =
     .label = Nouveau profil
 appmenu-edit-profile =

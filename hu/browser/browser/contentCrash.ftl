@@ -26,7 +26,7 @@ pending-crash-reports-message =
        *[other] Van { $reportCount } beküldetlen hibajelentés
     }
 pending-crash-reports-view-all =
-    .label = Megjelenítés
+    .label = Megtekintés
 pending-crash-reports-send =
     .label = Küldés
 pending-crash-reports-always-send =
@@ -48,3 +48,10 @@ requested-crash-reports-message =
 requested-crash-reports-dont-show-again =
     .label = Ne jelenjen meg újra
     .accesskey = N
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+pending-crash-reports-message-new =
+    { $reportCount ->
+        [one] Egy friss elküldetlen hibajelentése van
+       *[other] { $reportCount } friss elküldetlen hibajelentése van
+    }

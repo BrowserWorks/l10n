@@ -203,3 +203,61 @@ bar-tooltip-cryptominer =
             [one] { $count } cryptominer ({ $percentage }%)
            *[other] { $count } cryptominer ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Προστασία απορρήτου
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } αποκλεισμός αυτήν την εβδομάδα
+       *[other] { $count } αποκλεισμοί αυτήν την εβδομάδα
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } ιχνηλάτης
+       *[other] { $count } ιχνηλάτες
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } fingerprinter
+       *[other] { $count } fingerprinter
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie καταγραφής
+       *[other] { $count } cookie καταγραφής
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } ιχνηλάτης κοινωνικών δικτύων
+       *[other] { $count } ιχνηλάτες κοινωνικών δικτύων
+    }
+privacy-metrics-empty = Δεν αποκλείστηκαν ιχνηλάτες αυτήν την εβδομάδα. Το { -brand-short-name } σάς προστατεύει από τις ακόλουθες απειλές κατά την περιήγησή σας.
+privacy-metrics-loading = Φόρτωση στατιστικών προστασίας…
+privacy-metrics-error = Δεν είναι δυνατή η φόρτωση των στατιστικών προστασίας.
+privacy-metrics-private-window = Το { -brand-short-name } συνεχίζει να αποκλείει τους ιχνηλάτες στα ιδιωτικά παράθυρα, αλλά δεν διατηρείται αρχείο καταγραφής των αποκλεισμένων στοιχείων.
+
+## VPN promo card and banner
+
+protections-vpn-title = Λάβετε προστασία απορρήτου πέρα από το πρόγραμμα περιήγησης
+protections-vpn-header-content = Προστατέψτε ολόκληρη τη συσκευή σας με το { -mozilla-vpn-brand-name }. Με ένα πάτημα κρυπτογραφεί όλη την κίνηση και αποκρύπτει την τοποθεσία σας.
+protections-get-vpn-link = Απόκτηση του { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Έχετε εγγραφεί
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] Η χρήση του { -mozilla-vpn-brand-name } κρυπτογραφεί όλη την κίνηση και αποκρύπτει την τοποθεσία σας, σε έως και { $count } συσκευή. Αξιοποιήστε στο έπακρο τη συνδρομή σας, προσθέτοντάς την από το <a data-l10n-name="playstore-link">Google Play Store</a> ή το <a data-l10n-name="appstore-link">Apple App Store </a>.
+       *[other] Η χρήση του { -mozilla-vpn-brand-name } κρυπτογραφεί όλη την κίνηση και αποκρύπτει την τοποθεσία σας, σε έως και { $count } συσκευών. Αξιοποιήστε στο έπακρο τη συνδρομή σας, προσθέτοντάς την από το <a data-l10n-name="playstore-link">Google Play Store</a> ή το <a data-l10n-name="appstore-link">Apple App Store </a>.
+    }
+protections-vpn-banner-header = Προστασία που εκτείνεται πέρα από το πρόγραμμα περιήγησης
+protections-vpn-banner-content = Δοκιμάστε το { -mozilla-vpn-brand-name } και δείτε γιατί αναφέρει το TechRadar: «Η ταχύτητα, η απλότητα και η χαμηλή μηνιαία τιμή του, το κάνουν να αξίζει την προσοχή σας».
+protections-vpn-banner-link = Απόκτηση του { -mozilla-vpn-brand-name }

@@ -49,9 +49,13 @@ fxviewtabrow-move-tab = Tab verschieben
     .accesskey = v
 fxviewtabrow-move-tab-start = An Anfang verschieben
     .accesskey = A
-fxviewtabrow-move-tab-end = An Ende verschieben
+fxviewtabrow-move-tab-end = Ans Ende verschieben
     .accesskey = E
 fxviewtabrow-move-tab-window = In neues Fenster verschieben
+    .accesskey = n
+fxviewtabrow-send-to-device = An Gerät senden
+    .accesskey = G
+fxviewtabrow-send-to-mobile = An Mobilgerät senden
     .accesskey = n
 fxviewtabrow-send-tab = Tab an Gerät senden
     .accesskey = s
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Stummschaltung für Tab aufheben
 fxviewtabrow-options-menu-button =
     .title = Optionen für { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Tab stummschalten
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Stummschaltung für Tab aufheben
+fxviewtabrow-send-to-mobile-connect-device = Verbinden Sie ein Gerät, um Tabs zu senden
+fxviewtabrow-send-to-mobile-device-missing2 = Sie sehen Ihr Gerät nicht?
+fxviewtabrow-send-to-mobile-not-verified = Konto nicht verifiziert
+fxviewtabrow-send-to-mobile-verify-account = Verifizieren Sie Ihr Konto
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Melden Sie sich an, um Tabs zu versenden
+fxviewtabrow-send-to-mobile-turn-on-sync = Synchronisation zum Senden von Tabs aktivieren

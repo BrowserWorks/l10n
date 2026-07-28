@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = لسان حاوٍ جديد
 all-tabs-menu-hidden-tabs =
     .label = الألسنة المخفية
+all-tabs-menu-close-duplicate-tabs =
+    .label = أغلِق الألسنة المتكرّرة
+all-tabs-menu-view-all-tabs =
+    .label = اعرض كل الألسنة
 all-tabs-menu-manage-user-context =
     .label = أدِر الحاويات
     .accesskey = ح
-all-tabs-menu-close-duplicate-tabs =
-    .label = أغلِق الألسنة المتكررة
 all-tabs-menu-close-all-duplicate-tabs =
     .label = أغلِق كل الألسنة المتكررة
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = مجموعات الألسنة
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = ابحث في كل الألسنة

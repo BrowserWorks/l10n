@@ -1,0 +1,236 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### Localization for Developer Tools options
+
+
+## Default Developer Tools section
+
+# The heading
+options-select-default-tools-label = Instrumente pentru dezvoltatori implicite
+# The label for the explanation of the * marker on a tool which is currently not supported
+# for the target of the toolbox.
+options-tool-not-supported-label = * Nu este compatibil pentru ținta actuală a casetei de instrumente
+# The label for the heading of group of checkboxes corresponding to the developer tools
+# added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
+options-select-additional-tools-label = Instrumente pentru dezvoltatori instalate prin suplimente
+# The label for the heading of group of checkboxes corresponding to the default developer
+# tool buttons.
+options-select-enabled-toolbox-buttons-label = Butoane disponibile în caseta de instrumente
+# The label for the heading of the radiobox corresponding to the theme
+options-select-dev-tools-theme-label = Teme
+
+## Inspector section
+
+# The heading
+options-context-inspector = Inspector
+# The label for the checkbox option to show user agent styles
+options-show-user-agent-styles-label = Afișează stilurile browserului
+options-show-user-agent-styles-tooltip =
+    .title = Pornirea acestei opțiuni va afișa stilurile implicite care sunt încărcate de browser.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Afișează Browser Shadow DOM
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Activarea acestei opțiuni va afișa elementele Shadow DOM gestionate de browser.
+# The label for the checkbox option to enable collapse attributes
+options-collapse-attrs-label = Trunchiază atributele DOM
+options-collapse-attrs-tooltip =
+    .title = Trunchiază atributele lungi în inspector
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Afișează comentariile
+options-show-comments-tooltip =
+    .title = Afișează nodurile de comentarii în inspector
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = Dă clic și trage pentru editarea valorilor dimensiunii
+options-inspector-draggable-properties-tooltip =
+    .title = Dă clic și trage pentru editarea valorilor de dimensiune în vizualizarea regulilor inspectorului.
+# The label for the checkbox option to enable simplified highlighting on page elements
+# within the inspector for users who enabled prefers-reduced-motion = reduce
+options-inspector-simplified-highlighters-label = Folosește evidențiatoare mai simple cu prefers-reduced-motion
+options-inspector-simplified-highlighters-tooltip =
+    .title = Activează evidențiatoarele simplificate când este activată „prefers-reduced-motion”. Desenează linii în loc de dreptunghiuri pline în jurul elementelor evidențiate pentru evitarea efectelor de sclipire.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Focalizează următoarea intrare pe <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Când este activată, apăsarea tastei Enter la editarea unui selector, a numelui unei proprietăți sau a unei valori va muta focalizarea pe următoarea intrare.
+
+## "Default Color Unit" options for the Inspector
+
+options-default-color-unit-label = Unitate implicită pentru culori
+options-default-color-unit-authored = Ca la creare
+options-default-color-unit-hex = Hexazecimal
+options-default-color-unit-hsl = HSL(A)
+options-default-color-unit-rgb = RGB(A)
+options-default-color-unit-hwb = HWB
+options-default-color-unit-name = Nume de culori
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Consolă web
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Activează consola divizată
+options-webconsole-split-console-tooltip =
+    .title = Deschide consola divizată cu tasta Escape
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Monitor de rețea
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Mărime maximă a corpului cererii și răspunsului (setează 0 pentru nelimitat):
+options-netmonitor-body-limit-tooltip =
+    .title = Corpurile de cereri sau răspunsuri care depășesc mărimea specificată vor fi trunchiate la afișare sau descărcare în monitorul de rețea. Setează 0 pentru a nu avea nicio limită.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Nelimitat
+options-netmonitor-body-limit-button =
+    .title = Editează mărimea maximă a corpului cererii/răspunsului.
+options-netmonitor-body-limit-restore-default =
+    .title = Restaurează valoarea implicită pentru mărimea maximă a corpului cererii/răspunsului.
+options-netmonitor-body-limit-set =
+    .title = Setează valoarea curentă de intrare ca mărime maximă a corpului cererii/răspunsului.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Funcții experimentale
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Afișează foile de stil în depanator
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Listează și vizualizează foile de stil în depanator
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (necesită redeschiderea trusei de instrumente)
+
+## Style Editor section
+
+# The heading
+options-styleeditor-label = Editor de stiluri
+# The label for the checkbox that toggles autocompletion of css in the Style Editor
+options-stylesheet-autocompletion-label = Completează automat CSS
+options-stylesheet-autocompletion-tooltip =
+    .title = Completează automat proprietăți CSS, valori și selectori în editorul de stiluri pe măsură ce tastezi
+
+## Screenshot section
+
+# The heading
+options-screenshot-label = Comportamentul capturilor de ecran
+# Label for the checkbox that toggles screenshot to clipboard feature
+options-screenshot-clipboard-only-label = Captură de ecran doar în clipboard
+options-screenshot-clipboard-tooltip2 =
+    .title = Salvează captura de ecran direct în clipboard
+# Label for the checkbox that toggles the camera shutter audio for screenshot tool
+options-screenshot-audio-label = Redă sunetul obturatorului de cameră
+options-screenshot-audio-tooltip =
+    .title = Activează semnalul audio al camerei la efectuarea capturilor de ecran
+
+## Editor section
+
+# The heading
+options-sourceeditor-label = Preferințe pentru editor
+options-sourceeditor-detectindentation-tooltip =
+    .title = Dedu indentarea în baza contextului-sursă
+options-sourceeditor-detectindentation-label = Detectează indentările
+options-sourceeditor-autoclosebrackets-tooltip =
+    .title = Inserează automat paranteze și acolade de închidere
+options-sourceeditor-autoclosebrackets-label = Închide automat parantezele și acoladele
+options-sourceeditor-expandtab-tooltip =
+    .title = Folosește spații în locul caracterului de tabulare
+options-sourceeditor-expandtab-label = Indentează folosind spații
+options-sourceeditor-tabsize-label = Mărimea tabulării
+options-sourceeditor-keybinding-label = Combinații de taste
+options-sourceeditor-keybinding-default-label = Implicite
+
+## Local Mode section
+
+# The heading
+options-local-mode-label = Mod local
+options-local-mode-only-work-locally = Modul local funcționează doar local și este dezactivat la depanarea contextelor de la distanță
+options-local-mode-behavior = Modul local îți permite să încarci fișiere locale prin URL https fără nicio dependență externă. URL-urile pot fi încărcate doar din filele cu DevTools deschise.
+options-local-mode-domain-label = Domeniu personalizat:
+options-local-mode-origin-input =
+    .placeholder = Originea mapării locale
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Originea este în conflict cu o altă mapare existentă
+options-local-mode-origin-invalid = Originea este invalidă
+options-local-mode-folder-label = Dosar local:
+options-local-mode-choose-folder = Răsfoiește…
+    .title = Alege un dosar local pentru a servi această mapare
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Alege dosarul în modul local pentru: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Dosarul nu există sau este nevalid.
+options-local-mode-toggle =
+    .title = Activează/dezactivează această mapare locală
+options-local-mode-toggle-enable = Activează
+options-local-mode-toggle-disable = Dezactivează
+options-local-mode-navigate-to =
+    .title = Navighează la această adresă URL de mapare
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Vrei să elimini maparea „{ $mappingOrigin }”?
+options-local-mode-new-mapping = Adăugă o nouă mapare locală
+
+## Advanced section
+
+# The heading (this item is also used in perftools.ftl)
+options-context-advanced-settings = Setări avansate
+# The label for the checkbox that toggles the HTTP cache on or off
+options-disable-http-cache-label = Dezactivează cache-ul HTTP (când este deschisă caseta de instrumente)
+options-disable-http-cache-tooltip =
+    .title = Pornirea acestei opțiuni va dezactiva cache-ul HTTP pentru toate filele care au deschisă caseta de instrumente. Scripturile service worker nu sunt afectate.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Dezactivează JavaScript
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label = Dezactivează JavaScript *
+options-disable-javascript-tooltip =
+    .title = Pornirea acestei opțiuni va dezactiva JavaScript pentru fila actuală. Setarea va fi uitată la închiderea filei sau a casetei de instrumente.
+# The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
+options-enable-chrome-label = Activează casetele de instrumente pentru depanare chrome și suplimente
+options-enable-chrome-tooltip =
+    .title = Pornirea acestei opțiuni îți va permite să folosești diverse instrumente pentru dezvoltatori în contextul browserului (via Instrumente -> Dezvoltator web -> Caseta de instrumente a browserului) și să depanezi suplimente din Managerul de suplimente
+# The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
+options-enable-remote-label = Activează depanarea la distanță
+options-enable-remote-tooltip2 =
+    .title = Pornirea acestei opțiuni va permite depanarea la distanță a acestei instanțe a browserului
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = Folosește tasta F12 ca să deschizi sau să închizi instrumentele de dezvoltare
+options-enable-f12-tooltip =
+    .title = Activarea acestei opțiuni va asocia tasta F12 pentru deschiderea sau închiderea trusei de instrumente de dezvoltare.
+# The label for checkbox that toggles custom formatters for objects
+options-enable-custom-formatters-label = Activează formatoare personalizate
+options-enable-custom-formatters-tooltip =
+    .title = Activarea acestei opțiuni va permite site-urilor să definească formatoare personalizate pentru obiecte DOM
+# The label for checkbox that toggles the service workers testing over HTTP on or off.
+options-enable-service-workers-http-label = Activează scripturile Service Worker prin HTTP (când este deschisă caseta de instrumente)
+options-enable-service-workers-http-tooltip =
+    .title = Pornirea acestei opțiuni va permite trecerea scripturilor service worker prin HTTP pentru toate filele care au caseta de instrumente deschisă.
+# The label for the checkbox that toggles source maps in all tools.
+options-source-maps-label = Activează hărțile de cod-sursă
+options-source-maps-tooltip =
+    .title = Dacă activezi această opțiune, sursele vor fi mapate în instrumente.
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (doar sesiunea actuală, reîncarcă pagina)
+# The message shown for settings that trigger page reload and will only apply to the current session
+options-context-triggers-page-refresh = * Doar sesiunea actuală, reîncarcă pagina
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (reîncarcă pagina)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Auto
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Perimat. Află mai multe…

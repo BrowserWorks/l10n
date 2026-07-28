@@ -34,8 +34,10 @@ xpinstall-prompt-install =
 
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
-site-permission-install-first-prompt-midi-header = このサイトは MIDI (Musical Instrument Digital Interface) デバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効化されます。
+site-permission-install-first-prompt-midi-header = このサイトは MIDI (Musical Instrument Digital Interface) デバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効になります。
 site-permission-install-first-prompt-midi-message = このアクセスは安全性が保証されません。このサイトが信頼できる場合のみ続行してください。
+site-permission-install-first-prompt-serial-header = このサイトは端末のシリアルデバイスへのアクセスを要求しています。デバイスへのアクセスはアドオンをインストールすることにより有効になります。
+site-permission-install-first-prompt-serial-message = このアクセスは安全性が保証されません。このサイトが信頼できる場合のみ続行してください。
 
 ##
 
@@ -128,15 +130,18 @@ addon-install-error-corrupt-file = このサイトからダウンロードした
 addon-install-error-file-access = { -brand-short-name } が必要なファイルを変更できなかったため、{ $addonName } をインストールできませんでした。
 addon-install-error-not-signed = { -brand-short-name } はこのサイトからの未検証のアドオンのインストールをブロックしています。
 addon-install-error-invalid-domain = この場所からは { $addonName } アドオンをインストールできません。
+addon-install-error-no-addon-name-file-access = 必要なファイルを { -brand-short-name } が変更できないため、アドオンをインストールできませんでした。
 addon-local-install-error-network-failure = ファイルシステムエラーのため、アドオンをインストールできませんでした。
 addon-local-install-error-incorrect-hash = アドオンのハッシュ値が { -brand-short-name } に読み込んだものと一致しないため、インストールできませんでした。
 addon-local-install-error-corrupt-file = このアドオンは壊れているため、インストールできませんでした。
 addon-local-install-error-file-access = { -brand-short-name } が必要なファイルが変更できなかったため、{ $addonName } をインストールできませんでした。
 addon-local-install-error-not-signed = このアドオンは検証されていないため、インストールできませんでした。
+addon-local-install-no-addon-name-error-file-access = 必要なファイルを { -brand-short-name } が変更できないため、アドオンをインストールできませんでした。
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { -brand-short-name } { $appVersion } と互換性がないため、{ $addonName } をインストールできませんでした。
 addon-install-error-hard-blocked = { $addonName } は BrowserWorks のポリシーに違反しているため { -brand-short-name } にインストールできません。
+addon-install-error-soft-blocked2 = { $addonName } は制限されており、{ -brand-short-name } にインストールできません。
 addon-install-error-blocklisted = 安定性を大きく損なうかセキュリティに問題があるため、{ $addonName } をインストールできませんでした。
 addon-install-error-soft-blocked = { $addonName } アドオンが BrowserWorks のポリシーに違反しているため { -brand-short-name } にインストールできません。
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

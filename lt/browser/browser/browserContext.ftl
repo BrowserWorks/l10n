@@ -78,9 +78,6 @@ toolbar-button-fxaccount =
     .label = „{ -fxaccount-brand-name }“ paskyra
     .tooltiptext = „{ -fxaccount-brand-name }“ paskyra
 
-## Account toolbar Button
-
-
 ## Save Page
 
 main-context-menu-page-save =
@@ -157,11 +154,6 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Kopijuoti saitą
     .accesskey = t
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Kopijuoti saitą be sekimo dalies
-    .accesskey = u
 
 ## Media (video/audio) controls
 ##
@@ -211,7 +203,7 @@ main-context-menu-media-hide-controls =
     .label = Nerodyti mygtukų
     .accesskey = m
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Visame ekrane

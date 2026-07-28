@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Importálás egy más
 contextual-manager-passwords-command-import = Importálás fájlból…
 contextual-manager-passwords-command-export = Jelszavak exportálása
 contextual-manager-passwords-command-remove-all = Összes jelszó eltávolítása
+contextual-manager-passwords-command-options = Beállítások
 contextual-manager-passwords-command-settings = Beállítások
 contextual-manager-passwords-command-help = Súgó
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Új: { $added }, frissítve: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Új: { $added }, Frissítve: { $modified }, Ismétlődések: { $no_change }, Hibák: { $error }
 contextual-manager-passwords-import-detailed-report = Részletes jelentés megtekintése
 contextual-manager-passwords-import-success-button = Kész
 contextual-manager-passwords-import-error-heading-and-message =
@@ -147,7 +154,7 @@ contextual-manager-passwords-radiogroup-label =
 #   $url (string) - The url associated with the new login
 contextual-manager-passwords-add-password-success-heading =
     .heading = Jelszó hozzáadva a következőhöz: { $url }
-contextual-manager-passwords-add-password-success-button = Nézet
+contextual-manager-passwords-add-password-success-button = Megtekintés
 # Variables
 #   $url (string) - The url associated with the existing login
 contextual-manager-passwords-password-already-exists-error-heading =
@@ -156,7 +163,7 @@ contextual-manager-passwords-password-already-exists-error-button = Ugrás a jel
 contextual-manager-passwords-update-password-success-heading =
     .heading = Jelszó elmentve
 contextual-manager-passwords-update-password-success-button = Kész
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Felhasználónév mentve
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -210,12 +217,15 @@ contextual-manager-passwords-title = Jelszavak
 
 contextual-manager-passwords-create-label =
     .label = Jelszó hozzáadása
+contextual-manager-passwords-update-label =
+    .label = Jelszó frissítése
 contextual-manager-passwords-edit-label =
     .label = Jelszó szerkesztése
 contextual-manager-passwords-remove-label =
     .title = Jelszó eltávolítása
 contextual-manager-passwords-origin-tooltip = Írja be a pontos címet, ahol bejelentkezik ezen az oldalon.
 contextual-manager-passwords-username-tooltip = Adja meg a bejelentkezéshez használt felhasználónevet, e-mail-címet vagy fiókszámot.
+contextual-manager-passwords-password-tooltip-2 = Adja meg a jelszót, hogy bejelentkezzen ebbe a fiókba.
 contextual-manager-passwords-password-tooltip = Adja meg a jelszót, amellyel bejelentkezett ebbe a fiókba.
 
 ## Password Card
@@ -294,6 +304,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Nem találhatók jelszavak
+contextual-manager-passwords-no-passwords-found-message-2 = Próbáljon meg egy másik kifejezést, és keressen újra.
 contextual-manager-passwords-no-passwords-found-message = Nem találhatók jelszavak. Keressen egy másik kifejezést, és próbálja újra.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -308,6 +319,8 @@ contextual-manager-passwords-no-passwords-message = Az összes jelszó titkosít
 contextual-manager-passwords-no-passwords-get-started-message = A kezdéshez adja hozzá őket itt.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Hozzáadás kézileg
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Mentse a jelszavait biztonságos helyre
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -324,3 +337,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [one] Igen, a jelszó eltávolítása
        *[other] Igen, a jelszavak eltávolítása
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = A mentett jelszavak megtekintéséhez adja meg az elsődleges jelszavát.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Írja be az elsődleges jelszót
+contextual-manager-primary-password-learn-more-link = További tudnivalók

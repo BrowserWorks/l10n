@@ -12,6 +12,9 @@ tab-context-new-tab =
 reload-tab =
     .label = أعِد تحميل اللسان
     .accesskey = ح
+reload-tab2 =
+    .label = أعد التحميل
+    .accesskey = ع
 select-all-tabs =
     .label = اختر كل الألسنة
     .accesskey = خ
@@ -24,9 +27,15 @@ tab-context-play-tabs =
 duplicate-tab =
     .label = كرّر اللسان
     .accesskey = ك
+duplicate-tab2 =
+    .label = كرّر
+    .accesskey = ر
 duplicate-tabs =
     .label = كرّر الألسنة
     .accesskey = ك
+duplicate-tabs2 =
+    .label = كرّر
+    .accesskey = ر
 # The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
 # In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
 close-tabs-to-the-start =
@@ -52,9 +61,15 @@ reload-tabs =
 pin-tab =
     .label = ثبّت اللسان
     .accesskey = ث
+tab-context-pin-tab2 =
+    .label = ثبّت
+    .accesskey = ب
 unpin-tab =
     .label = أفلِت اللسان
     .accesskey = ف
+tab-context-unpin-tab2 =
+    .label = ألغ التثبيت
+    .accesskey = غ
 pin-selected-tabs =
     .label = ثبّت الألسنة
     .accesskey = ث
@@ -67,9 +82,16 @@ bookmark-selected-tabs =
 tab-context-bookmark-tab =
     .label = علم اللسان…
     .accesskey = م
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = علّم
+    .accesskey = ل
 tab-context-open-in-new-container-tab =
     .label = افتح في لسانٍ حاوٍ جديد
     .accesskey = س
+tab-context-open-in-new-container-tab2 =
+    .label = افتح في لسانٍ حاوٍ جديد
+    .accesskey = ف
 move-to-start =
     .label = انقل إلى البداية
     .accesskey = د
@@ -79,12 +101,19 @@ move-to-end =
 move-to-new-window =
     .label = انقل إلى نافذة جديدة
     .accesskey = ذ
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = انتقل إلى { $profileName }
 tab-context-close-multiple-tabs =
     .label = أغلِق أكثر من لسان
     .accesskey = ك
 tab-context-close-duplicate-tabs =
     .label = أغلِق الألسنة المتكررة
     .accesskey = ك
+tab-context-close-duplicate-tabs2 =
+    .label = أغلق المكرّرة من هذا اللسان
+    .accesskey = ل
 tab-context-share-url =
     .label = شارِك
     .accesskey = ش
@@ -138,6 +167,17 @@ tab-context-move-tabs =
            *[other] انقل الألسنة
         }
     .accesskey = ن
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = انقل العرض المنقسم إلى
+    .accesskey = ق
+tab-context-send-to-device2 =
+    .label = أرسل إلى أجهزتك
+    .accesskey = أ
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = أنشئ رابط قابل للمشاركة
+    .accesskey = ش
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->
@@ -149,3 +189,19 @@ tab-context-send-tabs-to-device =
            *[other] أرسِل { $tabCount } لسان إلى الجهاز
         }
     .accesskey = س
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] ألغ التحميل
+            [zero] لا إلغاء تحميل
+            [one] ألغ التحميل لسان
+            [two] ألغ التحميل لسانين
+            [few] ألغ التحميل { $tabCount } ألسنة
+            [many] ألغ التحميل { $tabCount } لسانًا
+           *[other] ألغ التحميل { $tabCount } لسان
+        }
+    .accesskey = غ
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = ألغِ التّحميل
+    .accesskey = غ

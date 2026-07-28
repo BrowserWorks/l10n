@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = 连接其他设备…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 发送到设备
+           *[other] 发送 { $tabCount } 个标签页到设备
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 发送到移动设备
+           *[other] 发送 { $tabCount } 个标签页到移动设备
+        }
+fxa-menu-send-to-mobile-device-missing2 = 看不到您的设备？
+fxviewtabrow-send-to-mobile-not-verified = 账户未验证
+fxviewtabrow-send-to-mobile-verify-account = 验证您的账户
+fxa-menu-send-to-mobile-turn-on-sync = 开启同步以发送标签页
+fxa-menu-send-to-mobile-connect-device = 连接设备以发送标签页
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = 发送 { $tabCount } 个标签页到设备
 # This is shown dynamically within "Send tab to device" in fxa menu.
@@ -29,7 +52,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = 立即发送标签页到任何您登录过的设备。
 fxa-menu-sign-out =
     .label = 退出登录…
-fxa-menu-sync-title = 同步
 fxa-menu-sync-description = 让您个性化的网络体验随身相伴
 fxa-avatar-sign-in = 登录
 fxa-avatar-sign-up = 注册
@@ -43,6 +65,10 @@ sync-setup-verify-heading = 您确定要登录同步服务吗？
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = 先前有另外的用户在此计算机上登录过同步服务。若继续同步，将与 { $email } 合并此浏览器的书签、密码等设置
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = 登录以发送标签页
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

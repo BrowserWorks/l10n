@@ -45,6 +45,8 @@ tabbrowser-close-tabs-tooltip =
             [one] Cerrar pestaña
            *[other] Cerrar { $tabCount } pestañas
         }
+tab-splitview-splitter =
+    .aria-label = Cambiar el tamaño de las pestañas de vista dividida
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -162,8 +164,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = No mostrar este diálogo de nuevo.
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Atención
-tabbrowser-confirm-close-duplicate-tabs-text = Mantendremos abierta la última pestaña activa.
 tabbrowser-confirm-close-all-duplicate-tabs-title = ¿Cerrar las pestañas duplicadas?
 tabbrowser-confirm-close-all-duplicate-tabs-text = Cerraremos las pestañas duplicadas en esta ventana. La última pestaña activa permanecerá abierta.
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Cerrar pestañas
@@ -222,7 +222,7 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Ventana actual
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Crear grupo de pestañas
 tab-group-editor-title-edit = Administrar grupo de pestañas
@@ -252,16 +252,33 @@ tab-group-editor-color-selector2-gray = Gris
     .title = Gris
 tab-group-editor-color-selector2-red = Rojo
     .title = Rojo
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Cerrado
 tab-group-description = { $tabGroupName } — Grupo de pestañas
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Contraído
+tab-group-label-tooltip-expanded = { $tabGroupName } — Expandido
+tab-group-preview-name =
+    .aria-label = Pestañas en un grupo contraído
 tab-context-unnamed-group =
     .label = Grupo sin nombre
 tab-group-name-default = Grupo sin nombre
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Grupos de pestañas
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Lista de pestañas abierta
+tab-group-preview-closed-description = Lista de pestañas cerrada
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -279,12 +296,37 @@ tab-context-move-tab-to-group =
            *[other] Añadir pestañas a un grupo
         }
     .accesskey = g
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Añadir vista dividida a un nuevo grupo
+            [one] Añadir vista dividida a un nuevo grupo
+           *[other] Añadir vistas divididas a un nuevo grupo
+        }
+    .accesskey = A
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Añadir vista dividida a grupo
+            [one] Añadir vista dividida a grupo
+           *[other] Añadir vistas divididas a grupo
+        }
+    .accesskey = g
 tab-context-move-tab-to-group-saved-groups =
     .label = Grupos cerrados
 tab-group-editor-action-new-tab =
     .label = Nueva pestaña en el grupo
 tab-group-editor-action-new-window =
     .label = Mover grupo a una nueva ventana
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Copiar enlace en el grupo
+            [one] Copiar { $linkCount } enlace en el grupo
+           *[other] Copiar { $linkCount } enlaces en el grupo
+        }
 tab-group-editor-action-save =
     .label = Guardar y cerrar grupo
 tab-group-editor-action-ungroup =
@@ -294,6 +336,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Hecho
     .accessKey = H
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Compartir grupo de pestañas
 tab-context-reopen-tab-group =
     .label = Reabrir grupo de pestañas
 # Variables:
@@ -306,6 +351,26 @@ tab-context-ungroup-tab =
            *[other] Eliminar de grupos
         }
     .accesskey = r
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] { $tabCount } pestaña más
+       *[other] { $tabCount } pestañas más
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Ordene sus pestañas
+tab-groups-list-empty-description = Arrastre una pestaña sobre otra o haga clic con el botón derecho en una pestaña para empezar a organizarlas. Guardaremos los grupos aquí para que sean fáciles de encontrar más tarde.
+tab-groups-list-empty-button = Crear un grupo de pestañas
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Nuevo grupo
 
 ## Open/saved tab group context menu
 
@@ -331,3 +396,88 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Abrir grupo en una nueva ventana
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Añadir nota
+    .accesskey = A
+tab-context-edit-note =
+    .label = Editar nota
+    .accesskey = E
+tab-context-delete-note =
+    .label = Eliminar nota
+    .accesskey = E
+tab-note-editor-title-create = Añadir nota
+tab-note-editor-title-edit = Editar nota
+tab-note-editor-text-field =
+    .placeholder = ¿Qué quiere recordar acerca de esta pestaña?
+tab-note-editor-button-cancel =
+    .label = Cancelar
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = Guardar
+    .accesskey = G
+tab-note-editor-button-delete =
+    .title = Eliminar nota
+    .aria-label = Eliminar nota
+    .accesskey = E
+tab-note-preview-edit-icon =
+    .alt = Editar nota
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Leer más
+tab-note-panel-add-note-new-badge =
+    .label = Nuevo
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+        [one] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } carácter
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caracteres
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Añadir vista dividida
+    .accesskey = t
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Abrir en vista dividida
+    .accesskey = t
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Separar vista dividida
+    .accesskey = t
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Invertir pestañas
+    .accesskey = r
+tab-context-badge-new = Nuevo
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, vista dividida a la izquierda
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, vista dividida a la derecha
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Pestañas separadas
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Invertir pestañas
+split-view-menuitem-close-both-tabs =
+    .label = Cerrar ambas pestañas

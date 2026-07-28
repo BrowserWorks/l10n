@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] Fechar aba
            *[other] Fechar { $tabCount } abas
         }
+tab-splitview-splitter =
+    .aria-label = Redimensionar abas de exibição dividida
+tab-devtools-splitter =
+    .aria-label = Redimensionar painel de ferramentas de desenvolvimento
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -165,8 +169,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Não mostrar mais este aviso.
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Atenção
-tabbrowser-confirm-close-duplicate-tabs-text = A aba com atividade mais recente permanecerá aberta
 tabbrowser-confirm-close-all-duplicate-tabs-title = Fechar abas duplicadas?
 tabbrowser-confirm-close-all-duplicate-tabs-text =
     As abas duplicadas nesta janela serão fechadas.
@@ -186,9 +188,15 @@ tabbrowser-customizemode-tab-title = Personalizar o { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = Silenciar aba
     .accesskey = S
+tabbrowser-context-mute-tab2 =
+    .label = Silenciar
+    .accesskey = S
 tabbrowser-context-unmute-tab =
     .label = Ativar som da aba
     .accesskey = s
+tabbrowser-context-unmute-tab2 =
+    .label = Ativar som
+    .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
     .label = Silenciar abas
@@ -221,13 +229,13 @@ tabbrowser-manager-close-tab =
 # This is for tab groups that have been "saved and closed" (see tab-group-editor-action-save). It does
 # not include "deleted" tab groups (see tab-group-editor-action-delete).
 tabbrowser-manager-closed-tab-group =
-    .label = 	{ $tabGroupName }
-    .tooltiptext = 	{ $tabGroupName } — Fechado
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Fechado
 tabbrowser-manager-current-window-tab-group =
-    .label = 	{ $tabGroupName }
-    .tooltiptext = 	{ $tabGroupName } — Janela atual
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Janela atual
 
-## Tab Groups
+##
 
 tab-group-editor-title-create = Criar grupo de abas
 tab-group-editor-title-edit = Gerenciar grupo de abas
@@ -257,29 +265,60 @@ tab-group-editor-color-selector2-gray = Cinza
     .title = Cinza
 tab-group-editor-color-selector2-red = Vermelho
     .title = Vermelho
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Fechado
 tab-group-description = { $tabGroupName } — Grupo de abas
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Recolhido
+tab-group-label-tooltip-expanded = { $tabGroupName } — Expandido
+tab-group-preview-name =
+    .aria-label = Abas em um grupo recolhido
 tab-context-unnamed-group =
     .label = Grupo sem nome
 tab-group-name-default = Grupo sem nome
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Grupos de abas
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Lista de abas aberta
+tab-group-preview-closed-description = Lista de abas fechada
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
         { $tabCount ->
             [1] Adicionar aba a um novo grupo
-           *[other] Add Tabs to New Group
+           *[other] Adicionar abas a um novo grupo
         }
     .accesskey = g
 tab-context-move-tab-to-group =
     .label =
         { $tabCount ->
             [1] Adicionar aba a um grupo
-           *[other] Add Tabs to Group
+           *[other] Adicionar abas a um grupo
+        }
+    .accesskey = g
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Adicionar exibição dividida em novo grupo
+           *[other] Adicionar exibições divididas em novo grupo
+        }
+    .accesskey = g
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Adicionar exibição dividida ao grupo
+           *[other] Adicionar exibições divididas ao grupo
         }
     .accesskey = g
 tab-context-move-tab-to-group-saved-groups =
@@ -288,6 +327,14 @@ tab-group-editor-action-new-tab =
     .label = Nova aba no grupo
 tab-group-editor-action-new-window =
     .label = Mover grupo para nova janela
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Copiar link em grupo
+           *[other] Copy { $linkCount } links in group
+        }
 tab-group-editor-action-save =
     .label = Salvar e fechar grupo
 tab-group-editor-action-ungroup =
@@ -297,6 +344,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Pronto
     .accessKey = P
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Compartilhar grupo de abas
 tab-context-reopen-tab-group =
     .label = Reabrir grupo de abas
 # Variables:
@@ -308,6 +358,26 @@ tab-context-ungroup-tab =
            *[other] Remove from Groups
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] Mais { $tabCount } aba
+       *[other] Mais { $tabCount } abas
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Organize suas abas
+tab-groups-list-empty-description = Arraste uma aba sobre outra ou clique com o botão direito em uma aba para começar a organizar. Salvamos seus grupos aqui para ficar fácil encontrar mais tarde.
+tab-groups-list-empty-button = Criar grupo de abas
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Novo grupo
 
 ## Open/saved tab group context menu
 
@@ -333,3 +403,88 @@ tab-group-context-open-saved-group-in-this-window =
 # open the tab group in that window.
 tab-group-context-open-saved-group-in-new-window =
     .label = Abrir grupo em nova janela
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Adicionar nota
+    .accesskey = A
+tab-context-edit-note =
+    .label = Editar nota
+    .accesskey = E
+tab-context-delete-note =
+    .label = Excluir nota
+    .accesskey = E
+tab-note-editor-title-create = Adicionar nota
+tab-note-editor-title-edit = Editar nota
+tab-note-editor-text-field =
+    .placeholder = O que você quer memorizar sobre esta aba?
+tab-note-editor-button-cancel =
+    .label = Cancelar
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = Salvar
+    .accesskey = S
+tab-note-editor-button-delete =
+    .title = Excluir nota
+    .aria-label = Excluir nota
+    .accesskey = x
+tab-note-preview-edit-icon =
+    .alt = Editar nota
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Mais informações
+tab-note-panel-add-note-new-badge =
+    .label = Novidade
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+        [one] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caractere
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caracteres
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Adicionar exibição dividida
+    .accesskey = v
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Abrir em exibição dividida
+    .accesskey = v
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Separar exibição dividida
+    .accesskey = v
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Inverter abas
+    .accesskey = r
+tab-context-badge-new = Novidade
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, exibição dividida à esquerda
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, Exibição dividida à direita
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Separar abas
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Reverter abas
+split-view-menuitem-close-both-tabs =
+    .label = Fechar as duas abas

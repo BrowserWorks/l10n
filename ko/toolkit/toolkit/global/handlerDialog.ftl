@@ -20,6 +20,17 @@ permission-dialog-description-file-app = 이 파일이 { $appName } 애플리케
 permission-dialog-description-extension-app = { $extension } 확장 기능이 { $appName }에서 { $scheme } 링크를 열도록 허용하시겠습니까?
 permission-dialog-description-system-app = { $appName } 애플리케이션으로 { $scheme } 링크를 여시겠습니까?
 permission-dialog-description-system-noapp = { $scheme } 링크를 여시겠습니까?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = 이 사이트에서 디지털 지갑을 열도록 허용하시겠습니까?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = <strong>{ $scheme }</strong> 링크를 열면 <strong>{ $host }</strong> 사이트가 <strong>{ $appName }</strong>를 통해 사용자의 실제 신원을 요청할 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = <strong>{ $scheme }</strong> 링크를 열면 이 사이트가 <strong>{ $appName }</strong>를 통해 사용자의 실제 신원을 요청할 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = <strong>{ $scheme }</strong> 링크를 열면 <strong>{ $host }</strong> 사이트가 사용자의 디지털 지갑으로부터 사용자의 실제 신원을 요청할 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = <strong>{ $scheme }</strong> 링크를 열면 이 사이트가 사용자의 디지털 지갑으로부터 사용자의 실제 신원을 요청할 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -68,3 +79,23 @@ choose-app-btn =
 choose-other-app-window-title = 다른 애플리케이션…
 # Displayed under the name of a protocol handler in the Launch Application dialog.
 choose-dialog-privatebrowsing-disabled = 사생활 보호 창에서 사용 안 함
+
+## Mailto handler picker
+## Shown when the user clicks a mailto: link and lets them pick which configured
+## web mail service (or the OS default app) should handle email links.
+
+mailto-handler-picker-window =
+    .title = 이메일 앱을 선택하세요
+    .style = min-width: 26em; min-height: 26em;
+mailto-handler-picker-subtitle = 이메일 링크에 사용할 앱을 선택하세요. 나중에 설정에서 변경할 수 있습니다.
+# Checkbox letting the user keep being prompted with this picker each time they
+# click an email link, instead of remembering the chosen handler.
+mailto-handler-picker-always-ask = 이메일 링크를 클릭할 때 항상 확인
+# Confirms the picker: sets the selected app as the handler for email links.
+mailto-handler-picker-set-default =
+    .label = 기본으로 설정
+    .accesskey = S
+# Dismisses the picker without choosing an email app for now.
+mailto-handler-picker-not-now =
+    .label = 나중에
+    .accesskey = N

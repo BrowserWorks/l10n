@@ -53,6 +53,10 @@ fxviewtabrow-move-tab-end = Mover al final
     .accesskey = f
 fxviewtabrow-move-tab-window = Mover a una nueva ventana
     .accesskey = v
+fxviewtabrow-send-to-device = Enviar al dispositivo
+    .accesskey = n
+fxviewtabrow-send-to-mobile = Enviar al móvil
+    .accesskey = n
 fxviewtabrow-send-tab = Enviar pestaña al dispositivo
     .accesskey = n
 fxviewtabrow-pin-tab = Fijar pestaña
@@ -68,9 +72,18 @@ fxviewtabrow-unmute-tab = Restaurar sonido en pestaña
 fxviewtabrow-options-menu-button =
     .title = Opciones para { $tabTitle }
 
-## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 fxviewtabrow-mute-tab-button-no-context =
     .title = Silenciar pestaña
 fxviewtabrow-unmute-tab-button-no-context =
     .title = Restaurar sonido en pestaña
+fxviewtabrow-send-to-mobile-connect-device = Conecta un dispositivo para enviar pestañas
+fxviewtabrow-send-to-mobile-device-missing2 = ¿No puede ver su dispositivo?
+fxviewtabrow-send-to-mobile-not-verified = Cuenta no verificada
+fxviewtabrow-send-to-mobile-verify-account = Verifique su cuenta
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Inicia sesión para enviar pestañas
+fxviewtabrow-send-to-mobile-turn-on-sync = Activar la sincronización para enviar pestañas

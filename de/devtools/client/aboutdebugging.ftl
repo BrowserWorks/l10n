@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Debugging - Umgebung / { $selectedRunt
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Dieser { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Dieser { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Dieser { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Konfiguration
+about-debugging-sidebar-setup-title =
+    .title = Konfiguration
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Werkzeuge für mehrere Prozesse
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Hauptprozess und Inhaltsprozesse des Zielbrowsers
+about-debugging-message-error-icon =
+    .alt = Fehlersymbol
+about-debugging-message-info-icon =
+    .alt = Informationssymbol
+about-debugging-message-warning-icon =
+    .alt = Warnsymbol
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Nachricht schließen
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Nachricht schließen
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Fehlerdetails
 about-debugging-message-details-label-warning = Warnungsdetails
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Details
+about-debugging-sidebar =
+    .heading = Debuggen

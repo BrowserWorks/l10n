@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Browser- og filhentningshistorik
     .accesskey = B
 item-history-and-downloads-description2 = Rydder historik for websteder og filhentninger
-item-history-form-data-downloads =
-    .label = Historik
-    .accesskey = s
-item-history-form-data-downloads-description = Rydder websteds- og filhentningshistorik, gemte formularoplysninger og søgehistorik
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = Al historik vil blive ryddet.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Alle valgte emner vil blive ryddet.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Beregner…

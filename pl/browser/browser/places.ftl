@@ -9,7 +9,7 @@ places-open-in-tab =
     .label = Otwórz w nowej karcie
     .accesskey = w
 places-open-in-container-tab =
-    .label = Otwórz w nowej karcie z kontekstem
+    .label = Otwórz w nowej karcie w kontenerze
     .accesskey = k
 places-open-all-bookmarks =
     .label = Otwórz wszystkie zakładki
@@ -267,3 +267,8 @@ places-search-downloads =
 ##
 
 places-locked-prompt = System zakładek i historii nie będzie działał, ponieważ jeden z plików programu { -brand-short-name } jest używany przez inną aplikację. Niektóre programy związane z bezpieczeństwem mogą powodować ten problem.
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder2 =
+    .label = Udostępnij folder
+    .badge = Nowe

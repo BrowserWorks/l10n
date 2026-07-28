@@ -110,6 +110,22 @@ sidebar-item-manifest = Manifesto
 sidebar-item-service-workers = Service worker
     .alt = Icona service worker
     .title = Service worker
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = Cronologia di sessione
+    .alt = Icona per la cronologia di sessione
+    .title = Cronologia di sessione
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = Visualizza i dati della cronologia di sessione
+# Title (tooltip) for the clickable Session History diagram column headers, which
+# navigate the inspected page to that entry in its session history.
+# Variables:
+#   $index (number) - The session history index that will be navigated to.
+session-history-navigate-button-title = Vai alla voce { $index } della cronologia delle sessioni
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = Diagramma della cronologia di sessione non disponibile
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = Il target non supporta la visualizzazione dei diagrammi della cronologia di sessione
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Icona avviso
@@ -118,3 +134,4 @@ icon-warning =
 icon-error =
     .alt = Icona errore
     .title = Errore
+

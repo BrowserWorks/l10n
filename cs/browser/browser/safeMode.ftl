@@ -19,19 +19,19 @@ refresh-profile =
         }
 troubleshoot-mode-description =
     { -brand-short-name.case-status ->
-        [with-cases] Tento režim { -brand-short-name(case: "gen") } vám pomůže s diagnostikou problémů. Vaše rozšíření a uživatelská nastavení budou dočasně zakázána.
-       *[no-cases] Tento režim aplikace { -brand-short-name } vám pomůže s diagnostikou problémů. Vaše rozšíření a uživatelská nastavení budou dočasně zakázána.
+        [with-cases] Tento režim { -brand-short-name(case: "gen") } vám pomůže s diagnostikou problémů. Vaše rozšíření budou dočasně zakázána a uživatelská nastavení potlačena.
+       *[no-cases] Tento režim aplikace { -brand-short-name } vám pomůže s diagnostikou problémů. Vaše rozšíření budou dočasně zakázána a uživatelská nastavení potlačena.
     }
 skip-troubleshoot-refresh-profile =
     { -brand-short-name.case-status ->
-        [with-cases] Také můžete od hledání příčin problémů upustit a provést obnovu { -brand-short-name(case: "gen") }  do výchozího nastavení.
-       *[no-cases] Také můžete od hledání příčin problémů upustit a provést obnovu aplikace { -brand-short-name }  do výchozího nastavení.
+        [with-cases] Také můžete od hledání příčin problémů upustit a provést obnovu { -brand-short-name(case: "gen") } do výchozího nastavení.
+       *[no-cases] Také můžete od hledání příčin problémů upustit a provést obnovu aplikace { -brand-short-name } do výchozího nastavení.
     }
 # Shown on the safe mode dialog after multiple startup crashes.
 auto-safe-mode-description =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } byl při startu neočekávaně ukončen
-        [feminine] { -brand-short-name } byla při startu neočekávaně ukončena
-        [neuter] { -brand-short-name } bylo při startu neočekávaně ukončeno
-       *[other] Aplikace { -brand-short-name } byla při startu neočekávaně ukončena
-    }, což mohlo být způsobeno nainstalovanými doplňky nebo jinými problémy. Můžete se pokusit problémy vyřešit v nouzovém režimu.
+        [masculine] { -brand-short-name } byl při startu neočekávaně ukončen, což mohlo být způsobeno nainstalovanými doplňky nebo jinými problémy. Můžete se pokusit problémy vyřešit v nouzovém režimu.
+        [feminine] { -brand-short-name } byla při startu neočekávaně ukončena, což mohlo být způsobeno nainstalovanými doplňky nebo jinými problémy. Můžete se pokusit problémy vyřešit v nouzovém režimu.
+        [neuter] { -brand-short-name } bylo při startu neočekávaně ukončeno, což mohlo být způsobeno nainstalovanými doplňky nebo jinými problémy. Můžete se pokusit problémy vyřešit v nouzovém režimu.
+       *[other] Aplikace { -brand-short-name } byla při startu neočekávaně ukončena, což mohlo být způsobeno nainstalovanými doplňky nebo jinými problémy. Můžete se pokusit problémy vyřešit v nouzovém režimu.
+    }

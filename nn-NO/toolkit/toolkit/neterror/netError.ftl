@@ -25,6 +25,8 @@ neterror-override-exception-button = Godta risikoen og fortset
 neterror-pref-reset-button = Bruk standardinnstillingar
 neterror-return-to-previous-page-button = Gå tilbake
 neterror-return-to-previous-page-recommended-button = Gå tilbake (Tilrådd)
+neterror-try-again-button-2 = Prøv igjen
+    .accesskey = r
 neterror-try-again-button = Prøv på nytt
 neterror-add-exception-button = Fortset alltid for denne sida
 neterror-settings-button = Endre DNS-instillingar
@@ -46,14 +48,24 @@ neterror-load-error-firewall = Dersom datamaskina er verna av ein brannmur eller
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = Viss du prøver å laste inn ei lokal nettverksside, må du kontrollere at { -brand-short-name } har fått løyve for lokale nettverk i innstillingane for macOS personvern og sikkerheit.
 neterror-http-error-page = Kontroller at du har skrive inn nettadressa rett.
+neterror-http-empty-response = Sjekk at du har skrive inn rett nettstadadresse, og prøv igjen om ei lita stund.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } sende tilbake ei tom side.
 neterror-captive-portal = Du må logge inn på nettverket før du kan kople til Internett.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
 neterror-dns-not-found-with-suggestion = Meinte du å gå til <a data-l10n-name="website">{ $hostAndPath }</a>?
 neterror-dns-not-found-hint-header = <strong>Om du har skrive inn rett adresse, kan du:</strong>
-neterror-dns-not-found-hint-try-again = Prøv på nytt seinare
+neterror-dns-not-found-hint-try-again = Prøve på nytt seinare
 neterror-dns-not-found-hint-check-network = Kontrollere nettverkstilkoplinga di
-neterror-dns-not-found-hint-firewall = Kontrollere at { -brand-short-name } har løyve til å kople til nettet (du kan vere tilkopla, men bak ein brannvegg)
+neterror-dns-not-found-hint-firewall = Kontrollere at { -brand-short-name } har løyve til å kople til nettet (du kan vere tilkopla, men bak ein brannmur)
+neterror-dns-not-found-hint-check-network-2 = Sjekk nettverkstilkoplinga.
+neterror-dns-not-found-hint-firewall-2 = Sjekk at { -brand-short-name } har løyve til å få tilgang til nettet (du kan vere tilkopla, men bak ein brannmur).
+neterror-dns-not-found-offline-hint-header = <strong>Kva kan du gjere med det?</strong>
+neterror-dns-not-found-offline-hint-different-device = Prøv å kople til på ei anna eining.
+neterror-dns-not-found-offline-hint-modem = Sjekk modemet eller ruteren din.
+neterror-dns-not-found-offline-hint-reconnect = Kople frå og kople til Wi-Fi på nytt.
 
 ## TRR-only specific messages
 ## Variables:
@@ -77,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = Uventa problem.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } kan ikkje beskytte førespurnaden din om adressa til denne nettstaden, gjennom den pålitelege DNS-løysaren vår. Årsak:
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } kan ikkje beskytte førespurnaden din om adressa til denne nettstaden gjennom vår sikre DNS-leverandør. Årsak:
 neterror-dns-not-found-native-fallback-heuristic = DNS-over-HTTPS er deaktivert på nettverket ditt.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } klarte ikkje å kople til { $trrDomain }.
 
@@ -85,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } kl
 
 neterror-file-not-found-filename = Kontroller filnamnet etter skilnadar i store/små bokstavar eller andre skrivefeil.
 neterror-file-not-found-moved = Kontroller om fila er flytta, har endra namn eller er sletta.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } finn ikkje fila på <strong>{ $path }</strong>. Ho finst anten ikkje, eller så er filstien feil.
+neterror-file-not-found-what-can-you-do = Om du skreiv inn adressa manuelt, kontroller om det er feil med store og små bokstavar eller skrivefeil i filnamnet eller filstien. Om du følgde eit lagra bokmerke eller ei lenkje, kan fila ha vorte flytta, gitt nytt namn eller sletta sidan ho vart lagra. Prøv å finne henne ved hjelp av filhandsamaren eller eit nyleg søk.
 neterror-access-denied = Den kan ha vorte fjerna, flytta, eller filrettar hindrar tilgang.
 neterror-unknown-protocol = Du må kanskje installere anna programvare for å opne denne adressa.
 neterror-redirect-loop = Dette problemet kan av og til kome av at infokapslar har vorte slått av eller ved å ikkje godta infokapslar.
+neterror-unknown-socket-type-client-config = Dette kan kome av ein konfigurasjonsfeil med klienten din.
 neterror-unknown-socket-type-psm-installed = Kontroller at systemet ditt har Personal Security Manager installert.
 neterror-unknown-socket-type-server-config = Dette problemet kan kome av eit uvanleg oppsett på tenaren.
 neterror-not-cached-intro = Det førespurde dokumentet er ikkje tilgjengeleg i { -brand-short-name } sitt snøgglager.
@@ -157,10 +173,49 @@ certerror-mitm-what-can-you-do-about-it-attack-sts = Viss du ikkje kjenner til <
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> har ein tryggingspolicy kalla HTTP Strict Transport Security (HSTS), som betyr at { -brand-short-name } berre kan kople til han trygt. Du kan ikkje leggje til eit unntak for å besøkje denne nettstaden.
 cert-error-trust-certificate-transparency-what-can-you-do-about-it = Truleg ikkje mykje, det er sannsynleg at det er eit problem med sjølve nettstaden.
-certerror-blocked-by-corp-headers-description = Nokre gongar set nettstader opp vern for seg sjølv og folk som deg mot uønskt samhandling med andre nettstadar.
+certerror-blocked-by-corp-headers-description = Nokre gongar set nettstadar opp vern for seg sjølv og folk som deg mot uønskt samhandling med andre nettstadar.
 certerror-coop-learn-more = Les meir om Cross Origin Opener Policies (COOP)
 certerror-coep-learn-more = Les meir om Cross Origin Embedder Policies (COEP)
 # Variables:
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Feilkode: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Det ser ut til at det er eit problem med internett-tilkoplinga di
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } kan ikkje opprette eit sikkert samband til serveren på { $hostname }.
+fp-neterror-offline-intro = { -brand-short-name } kan ikkje kople til serveren på <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = { -brand-short-name } kan ikkje kople til serveren på <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = Serveren på <strong>{ $hostname }</strong> brukar for lang tid på å svare.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = Serveren på <strong>{ $hostname }</strong> returnerte ein feil: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> sende ein headar med tomme teikn som ikkje er tillatne av nettsikkerheitsstandardar.
+fp-neterror-content-encoding-intro = Nettsida du prøver å vise kan ikkje visast fordi ho brukar ei ugyldig eller ustøtta form for komprimering.
+fp-neterror-coop-coep-intro = { -brand-short-name } lasta ikkje inn denne sida fordi det ser ut til at tryggingskonfigurasjonen ikkje samsvarer med den førre sida.
+fp-neterror-blocked-by-policy-intro = Organisasjonen din har blokkert tilgang til denne sida eller nettstaden.
+fp-neterror-http-auth-disabled-intro = Nokon som gir seg ut for å vere nettstaden kan prøve å stele ting som brukarnamn, passord eller e-post.
+fp-neterror-http-auth-disabled-secure-connection = Denne nettstaden krev ei sikker tilkopling, og du kan ikkje leggje til eit unntak for å besøkje det.
+fp-neterror-why-did-this-happen = Kvifor skjedde dette?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Det ser ut som denne nettstaden brukar gammal programvare med kjende tryggingsproblem.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } stolar ikkje på { $hostname } fordi tilkoplinga ikkje er sikker.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Sørg for at du brukar den nyaste versjonen av { -brand-short-name }. Gå til Hjelp > Om { -brand-short-name } i menyen. Om du brukar den nyaste versjonen av { -brand-short-name }, ligg problemet mest sannsynleg hos sjølve nettstaden.
+fp-neterror-offline-what-can-you-do-body = Prøv å kople til på ei anna eining. Sjekk modemet eller ruteren. Kople frå og kople til Wi-fi igjen.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Prøv å endre URL-en til HTTPS. Men det er sannsynleg at det er eit problem med sjølve nettstaden.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Av og til set nettstadar opp vern for seg sjølve mot uønskte interaksjonar med andre nettstadar.
+fp-learn-more-about-https-connections = Lær om HTTPS-tilkoplingar
+fp-neterror-vpn-error-title = Klarte ikkje å kople til VPN
+fp-neterror-vpn-error-description = Prøv igjen om nokre minutt.
+fp-neterror-denied-port-access = Denne adressa brukar ein nettverksport som vanlegvis vert nytta til andre føremål enn nettlesing. { -brand-short-name } har brote av førespurnaden for å ta vare på på personvernet ditt.

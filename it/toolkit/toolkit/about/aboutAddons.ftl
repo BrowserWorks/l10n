@@ -123,6 +123,8 @@ private-browsing-description2 =
     stata introdotta per garantire la riservatezza dei dati di navigazione
     quando si utilizzano finestre anonime.
     <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni</label>
+aboutaddons-sidebar =
+    .heading = Componenti aggiuntivi
 addon-category-discover = Consigli
 addon-category-discover-title =
     .title = Consigli
@@ -173,6 +175,8 @@ extensions-warning-update-security-button = Attiva
 extensions-warning-imported-addons2 =
     .message = Completa l’installazione delle estensioni importate in { -brand-short-name }.
 extensions-warning-imported-addons-button = Installa estensioni
+extensions-warning-safe-mode3 =
+    .message = Tutti i componenti aggiuntivi sono stati disattivati dalla modalità risoluzione problemi.
 
 ## Strings connected to add-on updates
 
@@ -290,6 +294,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } ha aggiornato la sua collezione di tonalità. Le versioni precedenti sono state rimosse dall’elenco “Temi salvati”. Scarica le nuove versioni sul sito dei componenti aggiuntivi.
 colorway-removal-notice-learn-more = Ulteriori informazioni
 colorway-removal-notice-button = Ottieni tonalità aggiornate
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Le impostazioni del contrasto di Windows hanno la precedenza sui temi di { -brand-short-name }. Disattiva queste impostazioni per utilizzare i temi in { -brand-short-name }.
 privacy-policy = Informativa sulla privacy
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -469,11 +477,18 @@ available-updates-heading = Aggiornamenti disponibili
 recent-updates-heading = Aggiornamenti recenti
 release-notes-loading = Caricamento in corso…
 release-notes-error = Siamo spiacenti, si è verificato un errore durante il caricamento delle note di versione.
+addon-permissions-heading = Permessi
 addon-permissions-empty2 = Questa estensione non richiede alcun permesso.
+addon-permissions-required-label = Obbligatori:
+addon-permissions-optional-label = Facoltativi:
 addon-permissions-empty = Questa estensione non richiede alcun permesso
 addon-permissions-required = Permessi obbligatori per funzionalità principali:
 addon-permissions-optional = Permessi facoltativi per funzionalità aggiuntive:
 addon-permissions-learnmore = Ulteriori informazioni sui permessi
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Alcuni permessi sono gestiti dalla tua organizzazione.
 recommended-extensions-heading = Estensioni consigliate
 recommended-themes-heading = Temi consigliati
 # Variables:
@@ -528,9 +543,15 @@ details-notification-hard-blocked-other =
     .message = Questo componente aggiuntivo è bloccato in quanto viola i criteri di BrowserWorks ed è stato disattivato.
 details-notification-unsigned-link = Ulteriori informazioni
 details-notification-blocked = { $name } è stato disattivato in quanto comporta rischi per la stabilità o la sicurezza.
-details-notification-blocked2 =
-    .message = { $name } è stato disattivato in quanto comporta rischi per la stabilità o la sicurezza.
 details-notification-blocked-link2 = Mostra dettagli
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Questa estensione è soggetta a restrizioni ed è stata disattivata. È possibile attivarla, ma il suo utilizzo potrebbe comportare dei rischi.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Questa estensione è soggetta a restrizioni. Il suo utilizzo potrebbe comportare dei rischi.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Questo componente aggiuntivo è soggetto a restrizioni ed è stato disattivato. È possibile attivarlo, ma il suo utilizzo potrebbe comportare dei rischi.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Questo componente aggiuntivo è soggetto a restrizioni. Il suo utilizzo potrebbe comportare dei rischi.
 details-notification-soft-blocked-extension-disabled =
     .message = Questa estensione è soggetta a limitazioni in quanto viola i criteri di BrowserWorks ed è stata disattivata. È possibile attivarla, ma il suo utilizzo potrebbe comportare dei rischi.
 details-notification-soft-blocked-extension-enabled =
@@ -542,8 +563,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Mostra dettagli
 details-notification-blocked-link = Ulteriori informazioni
 details-notification-softblocked = { $name } è riconosciuto come causa di problemi per la stabilità o la sicurezza.
-details-notification-softblocked2 =
-    .message = { $name } è riconosciuto come causa di problemi per la stabilità o la sicurezza.
 details-notification-softblocked-link = Ulteriori informazioni
 details-notification-gmp-pending = { $name } verrà installato tra qualche istante.
 details-notification-gmp-pending2 =
@@ -569,6 +588,10 @@ permissions-data-addon-button = Permessi e dati
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Utilizzato dall’estensione { $extensionName }
+addon-permissions-data-collection-heading = Raccolta dati
+addon-permissions-data-collection-empty = Lo sviluppatore dichiara che questa estensione non richiede la raccolta di dati.
+addon-data-collection-provided = Informazioni fornite dallo sviluppatore dell’estensione
+addon-data-collection-learnmore = Ulteriori informazioni sulla raccolta dati
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -577,6 +600,7 @@ mlmodel-link-preview = { -brand-short-name } utilizza questo modello per generar
 mlmodel-pdfjs = { -brand-short-name } utilizza questo modello per creare testo alternativo per le immagini che aggiungi ai PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } utilizza questo modello per suggerire nomi per i gruppi di schede
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } utilizza questo modello per suggerire schede per i gruppi di schede
+mlmodel-formfill-engine = { -brand-short-name } utilizza questo modello per compilare gli indirizzi nei moduli
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = IA sul dispositivo
 addon-category-mlmodel-title =
@@ -595,4 +619,3 @@ mlmodel-addon-detail-used-by-label = Utilizzato da
 mlmodel-addon-detail-model-card = Scheda modello
 # This is a label for the Model Card link to Hugging face
 mlmodel-addon-detail-model-card-link-label = Visualizza su Hugging Face
-

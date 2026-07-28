@@ -119,6 +119,8 @@ private-browsing-description2 =
     Neu in { -brand-short-name } installierte Erweiterungen werden standardmäßig in privaten Fenstern nicht ausgeführt und haben keinen Zugriff auf die Online-Aktivitäten in diesen, außer die Erweiterung wird in den Einstellungen für die Verwendung im Privaten Modus freigegeben.
     Diese Änderung dient Ihrem Datenschutz im Privaten Modus.
     <label data-l10n-name="private-browsing-learn-more">Weitere Informationen zur Verwaltung der Erweiterungseinstellungen</label>
+aboutaddons-sidebar =
+    .heading = Erweiterungen
 addon-category-discover = Empfehlungen
 addon-category-discover-title =
     .title = Empfehlungen
@@ -169,6 +171,8 @@ extensions-warning-update-security-button = Aktivieren
 extensions-warning-imported-addons2 =
     .message = Bitte schließen Sie die Installation von Erweiterungen, die in { -brand-short-name } importiert wurden, ab.
 extensions-warning-imported-addons-button = Erweiterungen installieren
+extensions-warning-safe-mode3 =
+    .message = Alle Erweiterungen wurden durch den Fehlerbehebungsmodus deaktiviert.
 
 ## Strings connected to add-on updates
 
@@ -290,6 +294,10 @@ colorway-removal-notice-message =
         neue Versionen auf der Add-ons-Seite.
 colorway-removal-notice-learn-more = Weitere Informationen
 colorway-removal-notice-button = Aktualisierte Farbwelt-Themes holen
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Ihre Windows-Kontrasteinstellungen übergehen { -brand-short-name }-Themes. Diese Einstellungen deaktivieren, um Themes in { -brand-short-name } zu verwenden
 privacy-policy = Datenschutzrichtlinie
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -474,11 +482,18 @@ available-updates-heading = Verfügbare Updates
 recent-updates-heading = Kürzlich durchgeführte Updates
 release-notes-loading = Wird geladen…
 release-notes-error = Es tut uns leid, beim Laden der Versionshinweise trat ein Fehler auf.
+addon-permissions-heading = Berechtigungen
 addon-permissions-empty2 = Diese Erweiterung benötigt keine Berechtigungen.
+addon-permissions-required-label = Erforderlich:
+addon-permissions-optional-label = Optional:
 addon-permissions-empty = Diese Erweiterung benötigt keine Berechtigungen.
 addon-permissions-required = Erforderliche Berechtigungen für die Kernfunktionalität:
 addon-permissions-optional = Optionale Berechtigungen für zusätzliche Funktionalität:
 addon-permissions-learnmore = Weitere Informationen zu Berechtigungen
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Einige Berechtigungen werden von Ihrer Organisation verwaltet.
 recommended-extensions-heading = Empfohlene Erweiterungen
 recommended-themes-heading = Empfohlene Themes
 # Variables:
@@ -533,9 +548,15 @@ details-notification-hard-blocked-other =
     .message = Dieses Add-on wurde wegen eines Verstoßes gegen BrowserWorkss Richtlinien blockiert und deaktiviert.
 details-notification-unsigned-link = Weitere Informationen
 details-notification-blocked = { $name } wurde aus Sicherheits- und Stabilitätsgründen deaktiviert.
-details-notification-blocked2 =
-    .message = { $name } wurde aus Sicherheits- und Stabilitätsgründen deaktiviert.
 details-notification-blocked-link2 = Details ansehen
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Diese Erweiterung ist eingeschränkt und wurde deaktiviert. Sie können sie aktivieren, dies kann aber riskant sein.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Diese Erweiterung ist eingeschränkt. Die Verwendung kann riskant sein.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Diese Erweiterung ist eingeschränkt und wurde deaktiviert. Sie können sie aktivieren, dies kann aber riskant sein.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Dieses Add-on ist eingeschränkt. Die Verwendung kann riskant sein.
 details-notification-soft-blocked-extension-disabled =
     .message = Diese Erweiterung wurde wegen Verstoßes gegen BrowserWorkss Richtlinien eingeschränkt und deaktiviert. Sie können sie aktivieren, dies kann aber riskant sein.
 details-notification-soft-blocked-extension-enabled =
@@ -547,8 +568,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Details ansehen
 details-notification-blocked-link = Weitere Informationen
 details-notification-softblocked = { $name } ist bekannt als Ursache für Sicherheits- und Stabilitätsprobleme.
-details-notification-softblocked2 =
-    .message = { $name } ist bekannt als Ursache für Sicherheits- und Stabilitätsprobleme.
 details-notification-softblocked-link = Weitere Informationen
 details-notification-gmp-pending = { $name } wird in Kürze installiert.
 details-notification-gmp-pending2 =
@@ -574,6 +593,10 @@ permissions-data-addon-button = Berechtigungen und Daten
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Verwendet von der Erweiterung { $extensionName }
+addon-permissions-data-collection-heading = Datenerhebung
+addon-permissions-data-collection-empty = Der Entwickler sagt, diese Erweiterung benötigt keine Datenerhebung.
+addon-data-collection-provided = Vom Entwickler der Erweiterung bereitgestellte Informationen
+addon-data-collection-learnmore = Erfahren Sie mehr über die Datenerhebung
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -582,6 +605,7 @@ mlmodel-link-preview = { -brand-short-name } verwendet dies, um wichtige Punkte 
 mlmodel-pdfjs = { -brand-short-name } verwendet dies, um Alternativ-Text für Grafiken zu erstellen, die Sie zu PDFs hinzufügen
 mlmodel-smart-tab-topic-engine = { -brand-short-name } verwendet dies, um Namen für Ihre Tab-Gruppen vorzuschlagen
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } verwendet dies, um Tabs für Ihre Tab-Gruppen vorzuschlagen
+mlmodel-formfill-engine = { -brand-short-name } verwendet dies, um Adressformulare auszufüllen
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = Geräteinterne KI
 addon-category-mlmodel-title =

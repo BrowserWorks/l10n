@@ -10,29 +10,25 @@ learn-more = <span data-l10n-name="link">เรียนรู้เพิ่ม
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain why
 ## the property is not applied.
-## Variables:
-##   $property (string) - A CSS property name e.g. "color".
-##   $display (string) - A CSS display value e.g. "inline-block".
-
-
-## In the Rule View when a CSS property cannot be successfully applied we display
-## an icon. When this icon is hovered this message is displayed to explain why
-## the property is not applied.
 ## The variables are all passed from the same place, in `InactiveCssTooltipHelper#getTemplate`
 ## (devtools/client/shared/widgets/tooltip/inactive-css-tooltip-helper.js#95)
 ## Variables:
 ##   $property (string) - A CSS property name e.g. "color".
 ##   $display (string) - A CSS display value e.g. "inline-block".
 
-inactive-css-not-grid-or-flex-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบยืดหยุ่นหรือแบบเส้นตาราง
-inactive-css-not-grid-or-flex-container-or-multicol-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบยืดหยุ่น แบบเส้นตาราง หรือแบบหลายคอลัมน์
+inactive-css-not-grid-or-flex-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบ flex หรือ grid
+inactive-css-not-grid-or-flex-container-or-multicol-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบ flex, grid หรือแบบหลายคอลัมน์
 inactive-css-not-multicol-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบหลายคอลัมน์
 inactive-css-column-span = <strong>{ $property }</strong> ไม่มีผลการ span กับอิลิเมนต์นี้เนื่องจากไม่ได้อยู่ภายในตัวบรรจุแบบหลายคอลัมน์
-inactive-css-not-grid-or-flex-item = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบเส้นตารางหรือแบบยืดหยุ่น
+inactive-css-not-grid-or-flex-item = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบ grid หรือ flex
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item = <strong>{ $property }</strong> ไม่มีผลต่ออิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบ grid หรือ flex และไม่ใช่อิลิเมนต์ที่ถูกจัดตำแหน่ง
+inactive-css-not-grid-or-absolutely-positioned-item = <strong>{ $property }</strong> ไม่มีผลต่ออิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบ grid และไม่ใช่อิลิเมนต์ที่ถูกจัดตำแหน่ง
+inactive-css-not-absolutely-positioned-item = <strong>{ $property }</strong> ไม่มีผลต่ออิลิเมนต์นี้เนื่องจากไม่ใช่อิลิเมนต์ที่ถูกจัดตำแหน่งโดยสัมบูรณ์
+inactive-css-no-default-anchor = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่มีอิลิเมนต์สมอยึดเริ่มต้น
 inactive-css-not-grid-item = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบเส้นตาราง
 inactive-css-not-grid-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบเส้นตาราง
-inactive-css-not-flex-item = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบยืดหยุ่น
-inactive-css-not-flex-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบยืดหยุ่น
+inactive-css-not-flex-item = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่รายการแบบ flex
+inactive-css-not-flex-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่ตัวบรรจุแบบ flex
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ใช่อิลิเมนต์แบบอินไลน์หรือแบบเซลล์ตาราง
 inactive-css-first-line-pseudo-element-not-supported = ไม่รองรับ <strong>{ $property }</strong> บนอิลิเมนต์แฝง ::first-line
 inactive-css-first-letter-pseudo-element-not-supported = ไม่รองรับ <strong>{ $property }</strong> บนอิลิเมนต์แฝง ::first-letter
@@ -42,6 +38,8 @@ inactive-css-not-display-block-on-floated = ค่า <strong>display</strong> �
 inactive-css-not-display-block-on-floated-2 = ค่า <strong>display</strong> ได้ถูกเปลี่ยนโดยเอนจินเป็น <strong>{ $display }</strong> เนื่องจากมีอิลิเมนต์แบบ <strong>floated</strong>
 inactive-css-only-non-grid-or-flex-item = <strong>{ $property }</strong> ไม่มีผลเนื่องจากไม่สามารถใช้กับรายการแบบ flex หรือแบบ grid ได้
 inactive-css-not-block = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากใช้ได้กับอิลิเมนต์ block-level เท่านั้น
+inactive-css-not-block-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากใช้ได้กับอิลิเมนต์ตัวบรรจุที่เป็น block เท่านั้น
+inactive-css-not-block-flex-grid-container = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากใช้ได้กับอิลิเมนต์ตัวบรรจุที่เป็น block, flex และ grid เท่านั้น
 inactive-css-not-floated = <strong>{ $property }</strong> ไม่มีผลกับเนื่องจากใช้ได้กับอิลิเมนต์ floated เท่านั้น
 inactive-css-property-is-impossible-to-override-in-visited = ไม่สามารถเขียนทับ <strong>{ $property }</strong> เนื่องจากข้อจำกัดของ <strong>:visited</strong>
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> ไม่มีผลต่ออิลิเมนต์นี้เนื่องจากไม่ใช่อิลิเมนต์ที่ถูกจัดตำแหน่ง
@@ -69,11 +67,13 @@ inactive-css-ruby-element = <strong>{ $property }</strong> ไม่มีผล
 
 inactive-css-highlight-pseudo-elements-not-supported = ไม่รองรับ <strong>{ $property }</strong> บนอิลิเมนต์แฝง highlight
 inactive-css-cue-pseudo-element-not-supported = ไม่รองรับ <strong>{ $property }</strong> บนอิลิเมนต์แฝง ::cue
+inactive-css-at-position-try-not-supported = ไม่รองรับ <strong>{ $property }</strong> ในกฎ <strong>@position-try</strong>
 # Variables:
 #   $lineCount (integer) - The number of lines the element has.
 inactive-css-text-wrap-balance-lines-exceeded = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากมีจำนวนบรรทัดมากกว่า { $lineCount } บรรทัด
 inactive-css-text-wrap-balance-fragmented = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากมีการแยกส่วน กล่าวคือเนื้อหาถูกแบ่งออกเป็นหลายคอลัมน์หรือหลายหน้า
 inactive-css-no-width-height = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่สามารถตั้งความกว้างและความสูงได้
+inactive-css-no-principal-box = <strong>{ $property }</strong> ไม่มีผลกับอิลิเมนต์นี้เนื่องจากไม่ได้สร้าง principal box
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -85,6 +85,10 @@ inactive-css-not-grid-or-flex-or-block-container-fix = ลองเพิ่ม 
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = ลองเพิ่ม <strong>display:grid</strong>, <strong>display:flex</strong>, หรือ <strong>columns:2</strong> { learn-more }
 inactive-css-not-multicol-container-fix = ลองเพิ่ม <strong>column-count</strong> หรือ <strong>column-width</strong> { learn-more }
 inactive-css-column-span-fix = ลองเพิ่ม <strong>column-count</strong> หรือ <strong>column-width</strong> ลงในอิลิเมนต์ระดับบนสุดตัวใดตัวหนึ่ง { learn-more }
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item-fix = ลองเพิ่ม <<strong>position:absolute</strong> ไปยังอิลิเมนต์ หรือ <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> หรือ <strong>display:inline-flex</strong> ไปยังอิลิเมนต์แม่ของอิลิเมนต์ { learn-more }
+inactive-css-not-grid-or-absolutely-positioned-item-fix = ลองเพิ่ม <strong>position:absolute</strong> ไปยังอิลิเมนต์ หรือ <strong>display:grid</strong> หรือ <strong>display:inline-grid</strong> ไปยังอิลิเมนต์แม่ของอิลิเมนต์ { learn-more }
+inactive-css-not-absolutely-positioned-item-fix = ลองเพิ่ม <strong>position:absolute</strong> ให้กับอิลิเมนต์ { learn-more }
+inactive-css-no-default-anchor-fix = ลองเพิ่ม <strong>position-anchor</strong> พร้อมด้วยชื่อสมอยึดที่ถูกต้อง { learn-more }
 inactive-css-not-grid-or-flex-item-fix-3 = ลองเพิ่ม <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> หรือ <strong>display:inline-flex</strong> ไปยังอิลิเมนต์แม่ของอิลิเมนต์ { learn-more }
 inactive-css-not-grid-item-fix-2 = ลองเพิ่ม <strong>display:grid</strong> หรือ <strong>display:inline-grid</strong> ไปยังอิลิเมนต์แม่ของอิลิเมนต์ { learn-more }
 inactive-css-not-grid-container-fix = ลองเพิ่ม <strong>display:grid</strong> หรือ <strong>display:inline-grid</strong> { learn-more }
@@ -96,6 +100,8 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = ลอง
 inactive-css-not-display-block-on-floated-fix = ลองเอา <strong>float</strong> ออกหรือเพิ่ม <strong>display:block</strong> { learn-more }
 inactive-css-only-non-grid-or-flex-item-fix = ลองเปลี่ยนค่าของ <strong>display</strong> ของตัวบรรจุของอิลิเมนต์ให้เป็นค่าอื่นที่ไม่ใช่ <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong> หรือ <strong>inline-grid</strong> หรือเอา <strong>float</strong> ออก { learn-more }
 inactive-css-not-block-fix = ลองเพิ่มคุณสมบัติอย่างเช่น <strong>display:block</strong> หรือ <strong>float:left</strong> { learn-more }
+inactive-css-not-block-container-fix = ลองเพิ่ม <strong>display:block</strong>, <strong>display:inline-block</strong> หรือ <strong>display:flow-root</strong> { learn-more }
+inactive-css-not-block-flex-grid-container-fix = ลองเพิ่ม <strong>display:block</strong>, <strong>display:inline-block</strong>, <strong>display:flex</strong>, <strong>display:inline-flex</strong>, <strong>display:grid</strong>, <strong>display:inline-grid</strong> หรือ <strong>display:flow-root</strong> { learn-more }
 inactive-css-not-floated-fix = ลองเพิ่มคุณสมบัติ <strong>float</strong> ด้วยค่าอื่นที่ไม่ใช่ <strong>none</strong> { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = ลองตั้งค่าคุณสมบัติ <strong>position</strong> เป็นอย่างอื่นนอกจาก <strong>static</strong> { learn-more }
 inactive-css-only-replaced-elements-fix = ตรวจสอบว่าคุณกำลังเพิ่มคุณสมบัติให้กับอิลิเมนต์ที่ถูกแทนที่ { learn-more }
@@ -112,6 +118,7 @@ inactive-css-resize-fix = ลองตั้ง <strong>overflow</strong> เป
 inactive-css-ruby-element-fix = ลองเปลี่ยน <strong>font-size</strong> ของข้อความ ruby { learn-more }
 inactive-css-text-wrap-balance-lines-exceeded-fix = โปรดลองลดจำนวนบรรทัด { learn-more }
 inactive-css-text-wrap-balance-fragmented-fix = หลีกเลี่ยงการแยกเนื้อหาของอิลิเมนต์ เช่น โดยการลบคอลัมน์ออก หรือใช้ <strong>page-break-inside:avoid</strong> { learn-more }
+inactive-css-no-principal-box-fix = ลองเพิ่มค่า <strong>display</strong> ซึ่งสร้าง principal box เช่น <strong>block</strong>, <strong>inline-block</strong>, <strong>flex</strong> หรือ <strong>grid</strong> { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why
@@ -135,3 +142,13 @@ css-compatibility-learn-more-message = <span data-l10n-name="link">เรีย�
 
 # :has() should not be translated
 css-selector-warning-unconstrained-has = เครื่องมือเลือกนี้ใช้ <strong>:has()</strong> แบบไม่มีข้อจำกัด ซึ่งอาจทำงานช้า
+# :scope should not be translated
+css-selector-warning-sibling-combinator-after-scope = Sibling selector ที่อยู่หลัง <strong>:scope</strong> จะไม่เทียบตรงกับอะไรเลย
+
+## In the Rule View we display a tooltip when a @container condition is hovered.
+## We want to show a specific message if the condition doesn't match a container for the
+## currently selected element
+## Variables:
+##   $name (string) - The condition name.
+
+css-selector-container-query-condition-no-container = ไม่พบคอนเทนเนอร์ ‘{ $name }’

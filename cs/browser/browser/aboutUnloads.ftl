@@ -6,22 +6,22 @@
 ### Strings used in about:unloads, allowing users to manage the "tab unloading"
 ### feature.
 
-about-unloads-page-title = Uvolňování panelů
-about-unloads-intro = { -brand-short-name } obsahuje funkci, která automaticky uvolní zdroje panelů z paměti, aby kvůli jejímu nedostatku nedošlo k pádu. Panel k uvolnění je vždy vybrán na základě několika kritérií. Tato stránka ukazuje, jakou dává { -brand-short-name } prioritou jednotlivým panelům a který bude případně uvolněn jako další. Uvolnění panelu můžete spustit ručně klepnutím na tlačítko <em>Uvolnit</em> níže.
+about-unloads-page-title = Uvolňování panelů z paměti
+about-unloads-intro = { -brand-short-name } obsahuje funkci, která automaticky uvolní zdroje panelů z paměti, aby kvůli jejímu nedostatku v případě, že má systém málo volné paměti, nedošlo k pádu aplikace. Panel, co bude uvolněn jako další, se volí na základě několika kritérií. Tato stránka ukazuje, jakou dává { -brand-short-name } prioritu jednotlivým panelům a který bude při spuštění této funkce uvolněn jako další. Spustit ji můžete také ručně klepnutím níže na tlačítko <em>Uvolnit z paměti</em>.
 # The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more = Podrobnosti o této funkci najdete v dokumentaci <a data-l10n-name="doc-link">Tab Unloading</a>.
-about-unloads-last-updated = Poslední aktualizace: { DATETIME($date, year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", hour12: "false") }
-about-unloads-button-unload = Uvolnit
-    .title = Uvolní panel s nejvyšší prioritou (na začátku seznamu)
-about-unloads-no-unloadable-tab = Nejsou dostupné žádné panely k uvolnění.
+about-unloads-last-updated = Naposledy aktualizováno: { DATETIME($date, year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", hour12: "false") }
+about-unloads-button-unload = Uvolnit z paměti
+    .title = Uvolní z paměti panel s nejvyšší prioritou (na začátku seznamu)
+about-unloads-no-unloadable-tab = Momentálně nejsou žádné panely, které by bylo možné uvolnit z paměti.
 about-unloads-column-priority = Priorita
 about-unloads-column-host = Server
 about-unloads-column-last-accessed = Poslední přístup
 about-unloads-column-weight = Základní váha
-    .title = Panely jsou seřazeny podle hodnoty, která je odvozena od toho, zda panel přehrává zvuk, používá WebRTC apod.
+    .title = Panely jsou nejprve seřazeny podle této hodnoty, která je odvozena od toho, zda panel přehrává zvuk, používá WebRTC apod.
 about-unloads-column-sortweight = Doplňková váha
-    .title = Pokud je hodnota dostupná, jsou panely se stejnou základní vahou řazeny také podle doplňkové váhy. Ta je odvozena z množství využívané paměti a počtu procesů.
+    .title = Panely se stejnou základní vahou jsou dále řazeny podle této hodnoty, je-li dostupná. Ta je odvozena z množství využívané paměti a počtu procesů.
 about-unloads-column-memory = Paměť
     .title = Odhadované využití paměti
 about-unloads-column-processes = ID procesů

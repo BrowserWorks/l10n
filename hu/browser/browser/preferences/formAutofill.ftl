@@ -17,7 +17,9 @@ autofill-manage-remove-button = Eltávolítás
 autofill-manage-add-button = Hozzáadás…
 autofill-manage-edit-button = Szerkesztés…
 
-## The address capture doorhanger
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 address-capture-save-doorhanger-header = Menti a címet?
 address-capture-save-doorhanger-description = Mentse az információkat a { -brand-short-name }ba, hogy gyorsan ki tudja tölteni az űrlapokat.
@@ -41,6 +43,8 @@ address-capture-learn-more-button =
     .label = További tudnivalók
 address-capture-open-menu-button =
     .aria-label = Menü megnyitása
+address-capture-edit-address-link = Cím szerkesztése
+    .aria-label = Cím szerkesztése
 address-capture-edit-address-button =
     .aria-label = Cím szerkesztése
 # The dialog title for creating addresses in browser preferences.
@@ -55,53 +59,64 @@ autofill-address-organization = Szervezet
 autofill-address-street-address = Utca, házszám
 autofill-address-street = Utca, házszám
 
-## address-level-3 (Sublocality) names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IR, MX
+# Used in Iran (IR), Mexico (MX) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-neighborhood = Szomszédság
-# Used in MY
+# Used in Malaysia (MY) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-village-township = Falu vagy község
 autofill-address-island = Sziget
-# Used in IE
+# Used in Ireland (IE) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-townland = Townland
 
-## address-level-2 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-city = Város
-# Used in HK, SD, SY, TR as Address Level-2 and used in KR as Sublocality.
+# Used in Hong Kong (HK), Sudan (SD), Syria (SY), Türkiye (TR) as as secondary address information (2 levels below the country level).
+# Used in Korea as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-district = Kerület
-# Used in GB, NO, SE
+# Used in United Kingdom (GB), Norway (NO), Sweden (SE) as as secondary address information (2 levels below the country level).
 autofill-address-post-town = Postaállomás
-# Used in AU as Address Level-2 and used in ZZ as Sublocality.
+# Used in Australia (AU) as as secondary address information (below the country level).
+# Used for international addresses as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-suburb = Külváros
 
-## address-level-1 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-province = Tartomány
 autofill-address-state = Állam
 autofill-address-county = Megye
-# Used in BB, JM
+# Used in Barbados (BB), Jamaica (JM) as primary address information (1 level below the country level).
 autofill-address-parish = Egyházközség
-# Used in JP
+# Used in Japan (JP) as primary address information (1 level below the country level).
 autofill-address-prefecture = Közigazgatási terület
-# Used in HK
+# Used in Honk Kong (HK) as primary address information (1 level below the country level).
 autofill-address-area = Terület
-# Used in KR
+# Used in Korea (KO) as primary address information (1 level below the country level).
 autofill-address-do-si = Do/Si
-# Used in NI, CO
+# Used in Nicaragua (NI), Colombia (CO) as primary address information (1 level below the country level).
 autofill-address-department = Részleg
-# Used in AE
+# Used in United Arab Emirates (AE) as primary address information (1 level below the country level).
 autofill-address-emirate = Emirátus
-# Used in RU and UA
+# Used in Russia (RU), Ukraine (UA) as primary address information (1 level below the country level).
 autofill-address-oblast = Oblaszt
 
-## Postal code name types
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IN
+# Postal code field used in India (IN).
 autofill-address-pin = Pin
 autofill-address-postal-code = Irányítószám
+# Postal code field.
 autofill-address-zip = Irányítószám (Amerikai Egyesült Államok)
-# Used in IE
+# Postal code field used in Ireland (IE).
 autofill-address-eircode = Eircode
 
 ##
@@ -132,13 +147,29 @@ autofill-message-tooltip = Üzenet megtekintése az automatikus kitöltésről
 autofill-add-card-title = Kártya hozzáadása
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title2 = Kártya szerkesztése
+autofill-card-number-2 =
+    .label = Kártyaszám
 autofill-card-number = Kártyaszám
 autofill-card-invalid-number = Írjon be érvényes kártyaszámot
+autofill-card-name-on-card-2 =
+    .label = Kártyán szereplő név
+autofill-card-expires-month-2 =
+    .label = Lejárati hónap
+autofill-card-expires-year-2 =
+    .label = Lejárati év
+autofill-card-billing-address-2 =
+    .label = Számlázási cím
 autofill-card-name-on-card = Kártyán szereplő név
 autofill-card-expires-month = Lejárat hónapja
 autofill-card-expires-year = Lejárat éve
 autofill-card-billing-address = Számlázási cím
 autofill-card-network = Kártyatípus
+# This string is never actually displayed, but is used to make it easier to
+# find the payment methods section of about:settings via the search input. It's
+# simply a comma separated list of additional search keywords for the payment
+# methods section. Localizers should choose terms that make sense for payment
+# methods in their region.
+autofill-card-search-term-credit-cards = hitelkártyák, hitelkártya, hitel, kártyák, kártya, bankkártyák, bankkártya, bank, pénztárca, pénztár, fizetés, vásárlás
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 

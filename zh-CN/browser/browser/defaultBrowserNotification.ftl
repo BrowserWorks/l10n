@@ -40,3 +40,6 @@ default-browser-guidance-notification-body-instruction-win11 =
     第二步：对 { -brand-short-name } 选择“设置默认值”
 default-browser-guidance-notification-info-page = 前往设置
 default-browser-guidance-notification-dismiss = 完成
+default-browser-guidance-notification-v2-title = 完成设置，将 { -brand-short-name } 设为默认浏览器
+default-browser-guidance-notification-v2-body = 在“设置”中，为 { -brand-short-name } 选择“设为默认”。
+default-browser-guidance-notification-v2-title-only = 完成步骤，在“设置”中将 { -brand-short-name } 设为默认浏览器

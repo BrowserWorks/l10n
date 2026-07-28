@@ -9,76 +9,114 @@ autofill-manage-addresses-title = العناوين المحفوظة
 autofill-manage-addresses-list-header = العناوين
 autofill-manage-credit-cards-title = بطاقات الائتمان المحفوظة
 autofill-manage-credit-cards-list-header = بطاقات الائتمان
+autofill-manage-payment-methods-title = طُرق الدفع المحفوظة
+autofill-manage-cards-list-header = بطاقات
 autofill-manage-dialog =
     .style = min-width: 560px
 autofill-manage-remove-button = أزِل
 autofill-manage-add-button = أضِف…
 autofill-manage-edit-button = حرّر…
 
-## The address capture doorhanger
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
+address-capture-save-doorhanger-header = احفظ العنوان؟
+address-capture-save-doorhanger-description = احفظ المعلومات في { -brand-short-name } حتى تتمكن من ملء النماذج بسرعة.
+address-capture-update-doorhanger-header = حدّث العنوان؟
+address-capture-edit-doorhanger-header = حرّر العنوان
+address-capture-save-button =
+    .label = احفظ
+    .accessKey = ح
+address-capture-not-now-button =
+    .label = ليس الآن
+    .accessKey = ي
 address-capture-cancel-button =
     .label = ألغ
     .accessKey = غ
+address-capture-update-button =
+    .label = حدّث
+    .accessKey = د
+address-capture-manage-address-button =
+    .label = إعدادات العنوان
 address-capture-learn-more-button =
     .label = اطلع على المزيد
 address-capture-open-menu-button =
     .aria-label = افتح القائمة
+address-capture-edit-address-link = حرّر العنوان
+    .aria-label = حرّر العنوان
+address-capture-edit-address-button =
+    .aria-label = حرّر العنوان
+# The dialog title for creating addresses in browser preferences.
+autofill-add-address-title = أضف عنوانًا
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = حرّر العنوان
 autofill-address-given-name = الاسم الأول
 autofill-address-additional-name = الاسم الأوسط
 autofill-address-family-name = الاسم الأخير
-autofill-address-organization = المؤسسة
+autofill-address-name = الاسم
+autofill-address-organization = المنظّمة
+autofill-address-street-address = عنوان الشارع
 autofill-address-street = عنوان الشارع
 
-## address-level-3 (Sublocality) names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IR, MX
+# Used in Iran (IR), Mexico (MX) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-neighborhood = الحي
-# Used in MY
+# Used in Malaysia (MY) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-village-township = البلدة
 autofill-address-island = الجزيرة
-# Used in IE
+# Used in Ireland (IE) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-townland = الأرض
 
-## address-level-2 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-city = المدينة
-# Used in HK, SD, SY, TR as Address Level-2 and used in KR as Sublocality.
+# Used in Hong Kong (HK), Sudan (SD), Syria (SY), Türkiye (TR) as as secondary address information (2 levels below the country level).
+# Used in Korea as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-district = المنطقة
-# Used in GB, NO, SE
+# Used in United Kingdom (GB), Norway (NO), Sweden (SE) as as secondary address information (2 levels below the country level).
 autofill-address-post-town = أنزل
-# Used in AU as Address Level-2 and used in ZZ as Sublocality.
+# Used in Australia (AU) as as secondary address information (below the country level).
+# Used for international addresses as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-suburb = الضاحية
 
-## address-level-1 names
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
 autofill-address-province = المقاطعة
 autofill-address-state = الولاية
 autofill-address-county = البلد
-# Used in BB, JM
+# Used in Barbados (BB), Jamaica (JM) as primary address information (1 level below the country level).
 autofill-address-parish = الأبرشيّة
-# Used in JP
+# Used in Japan (JP) as primary address information (1 level below the country level).
 autofill-address-prefecture = المحافظة
-# Used in HK
+# Used in Honk Kong (HK) as primary address information (1 level below the country level).
 autofill-address-area = المنطقة
-# Used in KR
+# Used in Korea (KO) as primary address information (1 level below the country level).
 autofill-address-do-si = Do/Si
-# Used in NI, CO
+# Used in Nicaragua (NI), Colombia (CO) as primary address information (1 level below the country level).
 autofill-address-department = القِسم
-# Used in AE
+# Used in United Arab Emirates (AE) as primary address information (1 level below the country level).
 autofill-address-emirate = الإمارة
-# Used in RU and UA
+# Used in Russia (RU), Ukraine (UA) as primary address information (1 level below the country level).
 autofill-address-oblast = المقاطعة
 
-## Postal code name types
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
 
-# Used in IN
+# Postal code field used in India (IN).
 autofill-address-pin = الرمز البريدي
 autofill-address-postal-code = الرمز البريدي
+# Postal code field.
 autofill-address-zip = الرمز البريدي
-# Used in IE
+# Postal code field used in Ireland (IE).
 autofill-address-eircode = الرمز البريدي الأيرلندي
 
 ##
@@ -86,11 +124,12 @@ autofill-address-eircode = الرمز البريدي الأيرلندي
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = أضِف عنوانا جديدا
 autofill-address-country = المنطقة أو الإقليم
+autofill-address-country-only = البلد
 autofill-address-tel = الهاتف
 autofill-address-email = البريد الإلكتروني
 autofill-cancel-button = ألغِ
 autofill-save-button = احفظ
-autofill-country-warning-message = الملء الآلي للاستمارات متاح حاليا في بعض الدول فحسب.
+autofill-country-warning-message = الملء الآلي للاستمارات متاح حاليًا في بعض الدول فحسب.
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = أضِف بطاقة ائتمان جديدة
 # The dialog title for editing credit cards in browser preferences.
@@ -103,13 +142,30 @@ autofill-edit-card-password-prompt =
         [windows] يحاول { -brand-short-name } عرض معلومات بطاقة الائتمان. أكّد الوصول إلى حساب وِندوز هذا من الأسفل.
        *[other] يحاول { -brand-short-name } عرض معلومات بطاقة الائتمان.
     }
+autofill-message-tooltip = اعرض رسالة حول الملء الآلي
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = أضف بطاقة
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = حرّر البطاقة
+autofill-card-number-2 =
+    .label = رقم البطاقة
 autofill-card-number = رقم البطاقة
 autofill-card-invalid-number = رجاءً أدخِل اسم بطاقة سليم
+autofill-card-name-on-card-2 =
+    .label = الاسم على البطاقة
+autofill-card-billing-address-2 =
+    .label = عنوان إرسال الفواتير
 autofill-card-name-on-card = الاسم على البطاقة
 autofill-card-expires-month = شهر انقضاء الصلاحية
 autofill-card-expires-year = سنة انقضاء الصلاحية
 autofill-card-billing-address = عنوان إرسال الفواتير
 autofill-card-network = نوع البطاقة
+# This string is never actually displayed, but is used to make it easier to
+# find the payment methods section of about:settings via the search input. It's
+# simply a comma separated list of additional search keywords for the payment
+# methods section. Localizers should choose terms that make sense for payment
+# methods in their region.
+autofill-card-search-term-credit-cards = بطاقات الائتمان، الائتمان، البطاقات، بطاقات الخصم، الخصم، المحفظة، الدفع
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 

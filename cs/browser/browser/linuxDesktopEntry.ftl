@@ -9,8 +9,12 @@
 # The entry name is the label on the desktop icon, among other things.
 desktop-entry-name = { -brand-shortcut-name }
 # The comment usually appears as a tooltip when hovering over application menu entry.
+desktop-entry-comment-1 = Rychlý a soukromý prohlížeč
+# The comment usually appears as a tooltip when hovering over application menu entry.
 desktop-entry-comment = Prohlížení stránek World Wide Webu
 desktop-entry-generic-name = Webový prohlížeč
+# Combine Name and GenericName. This string is specific to GNOME.
+desktop-entry-x-gnome-full-name-1 = { -brand-full-name }
 # Combine Name and GenericName. This string is specific to GNOME.
 desktop-entry-x-gnome-full-name = Webový prohlížeč { -brand-shortcut-name }
 # Keywords are search terms used to find this application.
@@ -24,4 +28,4 @@ desktop-entry-keywords = internet;WWW;prohlížeč;web;
 
 desktop-action-new-window-name = Nové okno
 desktop-action-new-private-window-name = Nové anonymní okno
-desktop-action-open-profile-manager = Otevřete Správce profilů
+desktop-action-open-profile-manager = Otevřít Správce profilů

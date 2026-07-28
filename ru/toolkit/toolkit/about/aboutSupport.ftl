@@ -68,7 +68,7 @@ app-basics-os-theme = Тема ОС
 app-basics-rosetta = Бинарная трансляция Rosetta
 app-basics-memory-use = Использование памяти
 app-basics-performance = Производительность
-app-basics-service-workers = Зарегистрированные Service Worker'ы
+app-basics-service-workers = Зарегистрированные Обработчики (Service Worker)
 app-basics-third-party = Сторонние модули
 app-basics-profiles = Профили
 app-basics-launcher-process-status = Запускающий процесс
@@ -79,7 +79,7 @@ app-basics-enterprise-policies = Корпоративные политики
 app-basics-location-service-key-google = Ключ Службы определения местоположения от Google
 app-basics-safebrowsing-key-google = Ключ Google Safebrowsing
 app-basics-key-mozilla = Ключ Службы определения местоположения от BrowserWorks
-app-basics-safe-mode = Безопасный Режим
+app-basics-safe-mode = Безопасный режим
 app-basics-memory-size = Объём памяти (ОЗУ)
 app-basics-disk-available = Доступное место на накопителе
 app-basics-pointing-devices = Манипуляторы
@@ -133,6 +133,10 @@ place-database-stats-efficiency-perc = Эффективность (%)
 place-database-stats-sequentiality-perc = Последовательность (%)
 place-database-integrity = Целостность
 place-database-verify-integrity = Проверить целостность
+place-database-last-idle-maintenance-data = Дата последнего обслуживания при неактивности
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Дата последней очистки
+place-database-last-integrity-corruption-date = Последняя дата нарушения целостности
 a11y-title = Поддержка доступности
 a11y-activated = Активирована
 a11y-force-disabled = Отключение поддержки доступности
@@ -212,7 +216,7 @@ media-hdcp-22-compatible = Совместим с HDCP 2.2
 
 ##
 
-intl-title = Интернационализация и Локализация
+intl-title = Интернационализация и локализация
 intl-app-title = Настройки приложения
 intl-locales-requested = Запрошенные языки
 intl-locales-available = Доступные языки
@@ -395,7 +399,7 @@ fission-status-disabled-by-default = Отключены по умолчанию
 fission-status-enabled-by-user-pref = Включены пользователем
 fission-status-disabled-by-user-pref = Отключены пользователем
 fission-status-disabled-by-e10s-other = E10s отключено
-fission-status-enabled-by-rollout = Включены через поэтапное развертывание
+fission-status-enabled-by-rollout = Включены через поэтапное развёртывание
 async-pan-zoom = Асинхронное панорамирование/зум
 apz-none = нет
 wheel-enabled = включён ввод колесиком

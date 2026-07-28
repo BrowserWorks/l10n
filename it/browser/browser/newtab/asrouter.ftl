@@ -59,7 +59,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } utenti
     }
 
-## Firefox Accounts Message
+## Mozilla Account messages
 
 cfr-doorhanger-bookmark-fxa-header = Sincronizza ovunque i tuoi segnalibri
 cfr-doorhanger-bookmark-fxa-body = Ottima scoperta. Assicurati di non restare senza questo segnalibro sul tuo dispositivo mobile. Crea un { -fxaccount-brand-name }.
@@ -68,6 +68,13 @@ cfr-doorhanger-bookmark-fxa-link-text = Sincronizza subito i segnalibri…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Pulsante di chiusura
     .title = Chiudi
+fxa-adoption-addresses-backup-title = Fai il backup degli indirizzi salvati
+fxa-adoption-addresses-backup-subtitle = Proteggi gli indirizzi che hai salvato sincronizzandoli con i tuoi dispositivi usando la crittografia.
+fxa-adoption-credit-cards-backup-title = Fai il backup dei tuoi metodi di pagamento
+fxa-adoption-credit-cards-backup-subtitle = Proteggi i tuoi metodi di pagamento sincronizzandoli con i tuoi dispositivi usando la crittografia.
+fxa-adoption-bookmarks-treatment-backup-title = Facciamo un backup dei tuoi segnalibri
+fxa-adoption-bookmarks-treatment-backup-subtitle = Proteggi i tuoi segnalibri sincronizzandoli con i tuoi dispositivi usando la crittografia.
+fxa-adoption-primary-button-label = Registrati
 
 ## Protections panel
 
@@ -222,6 +229,20 @@ fox-doodle-pin-secondary = Non adesso
 set-default-pdf-handler-headline = <strong>Ora puoi aprire i tuoi PDF in { -brand-short-name }.</strong> Modifica o firma i moduli direttamente nel tuo browser. Per iniziare, cerca “PDF” nelle impostazioni.
 set-default-pdf-handler-primary = OK
 
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = Firma sulla linea tratteggiata, o dove preferisci
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = Disegna, digita o carica la tua firma, poi inseriscila esattamente dove desideri. Salva le tue firme preferite per riusarle in futuro.
+annotations-make-default-pdf-handler-title = Impostare { -brand-short-name } come editor predefinito per i PDF?
+annotations-make-default-pdf-handler-subtitle = Avrai accesso ai nostri strumenti ogni volta che apri un PDF.
+annotations-make-default-pdf-primary-cta-label = Imposta come predefinito
+annotations-make-default-pdf-next-label = Successivo
+
 ## FxA sync CFR
 
 fxa-sync-cfr-header = Nuovo dispositivo nel tuo futuro?
@@ -271,6 +292,20 @@ launch-on-login-infobar-final-message = <strong>Vuoi aprire { -brand-short-name 
 launch-on-login-infobar-final-reject-button = No grazie
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = Aprire { -brand-short-name } al prossimo avvio del computer?
+launch-on-login-spotlight-startup-checkbox = Apri { -brand-short-name } all’avvio
+launch-on-login-spotlight-pin-taskbar-checkbox = Aggiungi alla barra delle applicazioni
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = Apri finestre e schede esistenti
+launch-on-login-spotlight-primary-button = Salva e chiudi { -brand-short-name }
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -281,6 +316,12 @@ tail-fox-spotlight-title = Liberati dai fastidiosi elementi traccianti
 tail-fox-spotlight-subtitle = Dì addio alle irritanti pubblicità che ti seguono ovunque e vivi Internet in modo più sicuro e veloce.
 tail-fox-spotlight-primary-button = Apri i miei link con { -brand-short-name }
 tail-fox-spotlight-secondary-button = Non adesso
+
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = Torna alla privacy integrata
+welcome-back-spotlight-subtitle = Bentornato nell’unico dei principali browser supportato da un’organizzazione senza fini di lucro. Proteggiamo i tuoi dati con ancora più attenzione, ovunque tu navighi.
+welcome-back-embedded-import-title = Importa i tuoi dati e sentiti subito a casa con { -brand-short-name }
 
 ## Root Certificate Succession Infobar
 
@@ -307,8 +348,11 @@ fxa-menu-message-close-button =
     .title = Chiudi
     .aria-label = Chiudi
 fxa-menu-message-sign-up-button = Registrati
+fxa-menu-message-sign-in-button = Accedi
+fxa-menu-message-sync-button = Avvia la sincronizzazione
 fxa-menu-message-sync-devices-primary-text = Sincronizza tutti i tuoi dispositivi
 fxa-menu-message-sync-devices-secondary-text = Accedi al volo alle tue informazioni, come segnalibri e password, ovunque utilizzi { -brand-short-name }.
+fxa-menu-message-sync-devices-secondary-text2 = Accedi al volo ai tuoi segnalibri, password, e altro ancora, ovunque utilizzi { -brand-short-name }.
 fxa-menu-message-sync-devices-collapsed-text = Sincronizza tutti i tuoi dispositivi
 fxa-menu-message-backup-data-primary-text = Salva i dati del browser
 fxa-menu-message-backup-data-secondary-text = Proteggi automaticamente segnalibri, password e altre informazioni su tutti i tuoi dispositivi.
@@ -328,7 +372,7 @@ multi-cta-fox-doodle-pin-startmenu-checkbox = Aggiungi { -brand-short-name } al 
 multi-cta-fox-doodle-pin-checkbox =
     { PLATFORM() ->
         [macos] Mantieni { -brand-short-name } nel Dock
-       *[other] Aggiungi { -brand-short-name } al menu Start
+       *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni
     }
 multi-cta-fox-doodle-start-browsing-primary-button-label = Inizia a navigare
 multi-cta-fox-doodle-main-browser-primary-button-label = Imposta { -brand-short-name } come browser principale
@@ -339,3 +383,117 @@ multi-cta-fox-doodle-privacy-focused-subtitle =
        *[other] Mantieni il tuo browser preferito incentrato sulla privacy sempre a portata di clic. Imposta { -brand-short-name } come browser predefinito per l’apertura dei link, aggiungilo alla barra delle applicazioni e al menu Start.
     }
 multi-cta-fox-doodle-msix-privacy-focused-subtitle = Mantieni il tuo browser preferito incentrato sulla privacy sempre a portata di clic. Imposta { -brand-short-name } come browser predefinito per l’apertura dei link, aggiungilo alla barra delle applicazioni.
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = Hai in programma di aggiornare a breve da Windows 10?
+windows-10-eos-sync-spotlight-subtitle = Salva password e segnalibri per prepararti al salto verso qualsiasi dispositivo.
+windows-10-eos-sync-spotlight-primary-label = Effettua il backup di { -brand-short-name }
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = Vuoi passare a Windows 11? Non perdere segnalibri e password.
+windows-10-eos-sync-toast-subtitle = Salva i tuoi dati in modo che { -brand-short-name } sia pronto per l’uso in qualsiasi momento, su questo computer o sul prossimo.
+windows-10-eos-sync-toast-primary-label = Inizia
+windows-10-eos-sync-toast-secondary-label = Ricordamelo più tardi
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = { -brand-product-name } non è preinstallato come i browser delle Big Tech. E c’è un motivo.
+windows-10-eos-challenger-sync-callout-subtitle = Facendo il backup di segnalibri e password di { -brand-product-name } potrai trasferire più facilmente il tuo browser preferito sul prossimo dispositivo.
+windows-10-eos-challenger-pin-callout-subtitle = Aggiungi { -brand-shorter-name } alla barra delle applicazioni in modo che il tuo browser preferito sia sempre disponibile quando ne hai bisogno.
+windows-10-eos-challenger-sync-primary-button = Esegui il backup di { -brand-shorter-name }
+windows-10-eos-challenger-pin-primary-button = Aggiungi { -brand-shorter-name }
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } blocca cryptominer, elementi traccianti sui social media e fingerprinter.
+windows-10-eos-sync-callout-privacy-screen-1-subtitle = Gli elementi traccianti non possono identificare il tuo dispositivo o seguirti sul Web, perché non glielo permettiamo.
+windows-10-eos-sync-callout-privacy-screen-2-title = Proteggi password e segnalibri per il tuo prossimo dispositivo.
+windows-10-eos-sync-callout-privacy-screen-2-subtitle = Effettuando il backup di { -brand-shorter-name } puoi portare sempre con te i tuoi dati e le tue impostazioni relative alla privacy.
+windows-10-eos-sync-callout-privacy-info-button = Scopri che cosa viene bloccato
+windows-10-eos-callout-addons-title = Prova i componenti aggiuntivi: piccoli aggiornamenti, grandi risultati
+windows-10-eos-callout-addons-subtitle = Queste estensioni sono state scelte per aiutarti a rimanere produttivo, al sicuro e libero da distrazioni.
+windows-10-eos-callout-addons-primary-button = Scopri le nostre scelte
+windows-10-eos-sync-callout-addons-title = Non perdere i tuoi componenti aggiuntivi quando aggiorni da Windows 10.
+windows-10-eos-sync-callout-addons-subtitle = Sincronizza ora, così i tuoi componenti aggiuntivi per { -brand-product-name } saranno sempre disponibili, anche dopo aver cambiato dispositivo.
+windows-10-eos-sync-callout-next-button = Successivo
+windows-10-eos-sync-callout-get-started-button = Inizia
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = Schede verticali e gruppi di schede: ci siamo!
+# In English, "dropped" is a colloquial form for released.
+windows-10-eos-feature-toast-subtitle = A grande richiesta, { -brand-product-name } ha appena lanciato nuove funzioni per mantenere la tua navigazione ordinata e senza distrazioni.
+windows-10-eos-feature-toast-whats-new-button = Scopri le novità
+windows-10-eos-feature-toast-dismiss-button = Chiudi
+
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft ha terminato il supporto per Windows 10.</strong> Esegui il backup dei tuoi dati per preparare { -brand-product-name } a Windows 11.
+windows-10-eos-global-infobar-primary-button = Attiva backup
+    .accesskey = A
+windows-10-eos-global-infobar-learn-more-link = Ulteriori informazioni
+    .accessKey = U
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-message = <strong>Una protezione antitracciamento restrittiva può causare il malfunzionamento di alcuni siti.</strong> Risolvi i problemi più comuni sbloccando elementi essenziali che potrebbero contenere elementi traccianti.
+etp-strict-exceptions-infobar-learn-more = Ulteriori informazioni
+etp-strict-exceptions-infobar-button = Applica correzioni
+    .accesskey = A
+etp-strict-exceptions-infobar-not-now = Non adesso
+    .accesskey = N
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } non è il tuo browser predefinito
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } non è il tuo browser principale
+set-default-menu-message-row-layout-title = Imposta { -brand-short-name } come browser principale
+set-default-menu-message-row-layout-title-variant = Imposta { -brand-short-name } come browser predefinito
+set-default-menu-message-row-layout-subtitle = Ottieni velocità, sicurezza e privacy ogni volta che navighi.
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] Tieni { -brand-short-name } sempre a portata di mano: impostalo come predefinito e mantienilo nel Dock.
+       *[other] Tieni { -brand-short-name } sempre a portata di mano: impostalo come predefinito e mantienilo nella barra delle applicazioni.
+    }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] Tieni { -brand-short-name } sempre a portata di mano
+       *[other] Apri tutti i link con { -brand-short-name }
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] Impostalo come browser predefinito e mantienilo nel Dock.
+       *[other] Naviga più velocemente e proteggi automaticamente la tua privacy.
+    }
+set-default-menu-message-primary-button = Imposta come predefinito
+set-default-menu-message-primary-button-variant = Imposta come browser principale
+set-default-menu-message-primary-button-short-variant = Imposta { -brand-short-name } come predefinito
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = 50 alias di posta elettronica, in regalo
+relay-50-masks-announcement-subtitle = Ora hai a disposizione 50 alias gratuiti (invece di 5). Usane uno per ogni account per proteggere il tuo indirizzo email reale.
+relay-50-masks-announcement-primary-button = Vai a { -relay-brand-name }
+    .accesskey = V
+relay-50-masks-announcement-secondary-button = Chiudi
+    .accesskey = C
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>È in arrivo un nuovo look per { -brand-product-name }.</strong> Quello che vedi è un’anteprima di una versione ancora in evoluzione, prima del lancio ufficiale previsto entro la fine dell’anno.
+nova-early-access-share-feedback-link = Condividi feedback
+    .accesskey = C
+nova-early-access-infobar-primary-button = OK
+    .accesskey = O
+
+## App Exit Spotlight dialog
+
+app-exit-spotlight-title = Avviare { -brand-short-name } ogni volta che accedi a Windows?
+app-exit-spotlight-checkbox-launch-on-login = Apri { -brand-short-name } all’avvio
+app-exit-spotlight-checkbox-pin-to-taskbar = Aggiungi alla barra delle applicazioni
+app-exit-spotlight-primary-button = Salva e chiudi { -brand-short-name }

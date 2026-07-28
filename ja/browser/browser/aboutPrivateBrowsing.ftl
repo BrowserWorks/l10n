@@ -19,8 +19,8 @@ about-private-browsing-handoff-no-engine =
 about-private-browsing-handoff-text = { $engine } で検索、または URL を入力します
 about-private-browsing-handoff-text-no-engine = 検索語句、または URL を入力します
 about-private-browsing-not-private = これはプライベートウィンドウではありません。
-about-private-browsing-info-description-private-window = プライベートウィンドウ: { -brand-short-name } はプライベートウィンドウをすべて閉じると、検索履歴と閲覧履歴を消去します。匿名化はしません。
-about-private-browsing-info-description-simplified = { -brand-short-name } はプライベートウィンドウをすべて閉じると、検索履歴と閲覧履歴を消去しますが、匿名化されているわけではありません。
+about-private-browsing-info-description-private-window = プライベートウィンドウ: プライベートウィンドウをすべて閉じると、{ -brand-short-name } が検索履歴と閲覧履歴を消去しますが、匿名化はされません。
+about-private-browsing-info-description-simplified = { -brand-short-name } のプライベートウィンドウをすべて閉じると、検索履歴と閲覧履歴が消去されますが、匿名化はされません。
 about-private-browsing-learn-more-link = 詳細情報
 about-private-browsing-hide-activity = あなたの行動と訪問先のすべてを秘匿します
 about-private-browsing-get-privacy = どこでもプライバシーを確保
@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = 目障りな Cookie ポッ
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } が Cookie バナーに対処します
 about-private-browsing-cookie-banners-promo-body = 多くの Cookie バナーを自動的に拒否できるようになったため、目障りなバナーが減り、快適なブラウジングができるようになりました。
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = この端末を追跡させません
 about-private-browsing-felt-privacy-v1-info-body = すべてのプライベートウィンドウを閉じると、{ -brand-short-name } により Cookie、履歴、サイトデータが削除されます。
 about-private-browsing-felt-privacy-v1-info-link = 私の行動を知ることができるのは誰？
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = すべてのプライベートウィンドウを閉じると、Cookie、履歴、サイトデータが削除されます。
+about-private-browsing-nova-info-link = それでも私の行動を知ることができるのは誰？
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = あなたの行動は記録されません
+about-private-browsing-nova-info-subheader = このウィンドウを閉じると、検索履歴とログイン状態がリセットされます。トラッカーのブロックなど { -brand-short-name } に組み込まれた防護機能はここでも有効です。

@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Fråga Perplexity
 perplexity-callout-secondary-label-1 = Ignorera
 perplexity-callout-secondary-label-2 = Jag förstår
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Vill du prova en ny integritetsfokuserad sökning?
+start-page-callout-subtitle = Testa Startpage. Den är utformad för att hålla dina sökningar mer privata från början.
+start-page-callout-primary-label = Testa Startpage
+start-page-callout-secondary-label = Ignorera
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Skydda dina lösenord genom att synkronisera d
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registrera dig
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Spara dina favoritkanaler i aktivitetsfältet
+taskbar-tabs-social-callout-subtitle = Starta dina sociala webbplatser som en app i ett strömlinjeformat fönster som skyddas av { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Chatta från aktivitetsfältet
+taskbar-tabs-chat-callout-subtitle = Starta dina chattsidor som en app i ett strömlinjeformat fönster som skyddas av { -brand-short-name }.
+taskbar-tabs-email-callout-title = Behåll din e-post i aktivitetsfältet
+taskbar-tabs-email-callout-subtitle = Starta din webbmail som en app i ett strömlinjeformat fönster som skyddas av { -brand-short-name }.
+taskbar-tabs-media-callout-title = Gå tillbaka till strömning från aktivitetsfältet
+taskbar-tabs-media-callout-subtitle = Starta dina strömningssajter som en app i ett strömlinjeformat fönster skyddat av { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Lägg till den här sidan i aktivitetsfältet
+taskbar-tabs-value-prop-callout-subtitle = Starta den i ett eget fönster och ett förenklat gränssnitt med ett enda klick.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Förlora inte allt du har sparat när du flyttar till Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Synkronisera nu för att behålla dina bokmärken, lösenord och inställningar för { -brand-short-name } säkra och enkla att återställa.
+windows-10-eos-sync-urgency-title-2 = Säger adjö till Windows 10? Skydda din data när du byter.
+windows-10-eos-sync-urgency-subtitle-2 = Även om du inte använder { -brand-short-name } dagligen, synkronisera för att förvara bokmärken och lösenord säkra och tillgängliga.
+windows-10-eos-sync-new-device-title-1 = Riskera inte att börja om på din nästa enhet.
+windows-10-eos-sync-new-device-subtitle-1 = Synkronisera för att ta med dig dina bokmärken, lösenord och önskade inställningar för { -brand-short-name } när du flyttar.
+windows-10-eos-sync-new-device-title-2 = Byta till en ny enhet? Förlora inte det som är viktigt.
+windows-10-eos-sync-new-device-subtitle-2 = Oavsett hur ofta du använder { -brand-short-name }, skyddar synkronisering dina bokmärken, lösenord och inställningar.
+windows-10-eos-sync-new-device-primary-label = Synkronisera nu
+windows-10-eos-sync-general-title-1 = Skydda { -brand-short-name } som du har gjort till din egen.
+windows-10-eos-sync-general-subtitle-1 = Säkerhetskopiera och synkronisera dina lösenord, bokmärken, inställningar och annan data för att bevara det du litar på.
+windows-10-eos-sync-general-title-2 = Nu är ett bra tillfälle att säkerhetskopiera dina lösenord och bokmärken.
+windows-10-eos-sync-general-subtitle-2 = Synkronisera nu för att skydda de saker du anförtror { -brand-short-name } – och få tillbaka dem var som helst, när som helst.
+windows-10-eos-sync-tour-title-1 = För många flikar? Städa med flikgrupper.
+windows-10-eos-sync-tour-subtitle-1 = Dra en flik ovanpå en annan för att skapa en grupp och hålla ordning på saker.
+windows-10-eos-sync-tour-title-2 = Gör dig redo för Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synkronisera dina bokmärken, lösenord och inställningar för att säkerhetskopiera dem innan du byter.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Visa färre rekommendationer
+windows-10-eos-sync-dismiss-button-label = Ignorera
+windows-10-eos-sync-callout-primary-advance-button-label = Nästa
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nytt: Klicka och håll kvar för att förhandsgranska länkar
+link-preview-onboarding-callout-description = Se en kort beskrivning, lästid och mer för att avgöra om en länk är värd att klicka på. Även tillgängligt med högerklick.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Minska röran med flikgrupper
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Gruppera dina flikar efter uppgift eller ämne. Dra in fler allt eftersom.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Starta en grupp
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Visa fliktitlar i sidofältet
 sidebar-button-callout-subtitle = Använd sidofältsknappen för att utöka sidofältet så att du kan se fliktitlar.
 sidebar-button-callout-vertical-tabs = För att visa dina flikar, välj sidofältsknappen i verktygsfältet.
+sidebar-deprecation-callout-title = Uppdaterat sidofält kommer snart
+sidebar-deprecation-callout-subtitle = Vi fasar ut den sidofältsversion du använder för närvarande. Testa den uppdaterade sidofältsversionen. Den är snabbare och du får tillgång till fler verktyg.
+sidebar-deprecation-cta-button = Testa på en gång
 
 ## Sidebar Vertical Tabs Strings
 
@@ -180,6 +251,12 @@ sidebar-callout-survey-submit = Skicka in
 sidebar-callout-survey-thank-you = Tack för din feedback!
 sidebar-genai-survey-satisfaction-question = Hur nöjd är du med att ha tillgång till en AI-chatbot i sidofältet?
 sidebar-genai-survey-productive-question = I vilken utsträckning håller du med eller håller du inte med om påståendet:<br/> "AI-chatboten i sidofältet hjälper mig att bli mer produktiv"?
+splitview-onboarding-callout-title-1 = Delad vy: ett bättre sätt att multitaska
+splitview-onboarding-callout-subtitle-1 = Högerklicka på den här fliken och välj "Lägg till delad vy" för att se två flikar samtidigt.
+splitview-onboarding-callout-cta-1 = Testa på en gång
+splitview-onboarding-callout-title-2 = Se två flikar samtidigt med delad vy
+splitview-onboarding-callout-subtitle-2 = Inga extra fönster. Ingen flikväxling. Högerklicka på den här fliken och välj "Lägg till delad vy."
+splitview-onboarding-callout-cta-2 = Testa delad vy
 unified-search-callout-title = Växla mellan sökmotorer
 unified-search-callout-subtitle = Välj det som fungerar bäst för din specifika sökning.
 unified-search-callout-primary-label = Nästa
@@ -193,6 +270,6 @@ actions-callout-title = Utför vanliga uppgifter eller komma åt grundinställni
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Prova att skriva en åtgärd som "skriv ut" för att skriva ut en sida eller "rensa" för att rensa historiken.

@@ -54,10 +54,16 @@ install-search-engine-no = Nei
 add-engine-window =
     .title = Legg til søkjemotor
     .style = min-width: 32em;
+edit-engine-window =
+    .title = Rediger søkjemotor
+    .style = min-width: 32em;
 add-engine-button = Legg til eigendefinert søkjemotor
 add-engine-name = Søkjemotornamn
 add-engine-url2 = Nettadresse med %s i staden for søkjeord
 add-engine-keyword2 = Nøkkelord (valfritt)
+# POST and GET refer to the HTTP methods.
+add-engine-post-data = Post-data med %s i staden for søkjeordet (la feltet stå tomt for GET)
+add-engine-suggest-url = Forslagsnettadresse med %s i staden for søkjeord (valfritt)
 
 ## The following placeholders are shown in the inputs when adding a new engine.
 
@@ -70,8 +76,28 @@ add-engine-keyword-placeholder =
 
 ## The following strings are used as error messages.
 
+add-engine-keyword-exists = Det søkjeordet er allereie i bruk. Prøv eit anna.
+add-engine-name-exists = Namnet er allereie i bruk. Vel eit anna.
 add-engine-no-name = Legg til eit namn.
 add-engine-no-url = Skriv inn ein URL.
+add-engine-invalid-url = Nettadressa ser ikkje rett ut. Sjekk henne og prøv på nytt.
+add-engine-invalid-protocol = Nettadressa ser ikkje rett ut. Bruk ei nettadresse som startar med http eller https.
+# This error is shown when the user typed URL is missing %s.
+add-engine-missing-terms-url = Prøv å inkludere %s i staden for søkjeordet.
+# This error is shown when the user typed post data is missing %s.
+add-engine-missing-terms-post-data = Prøv å inkludere %s i staden for søkjeordet.
 
 ## The following strings are used as labels for the dialog's buttons.
 
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+add-engine-dialog2 =
+    .buttonlabelaccept = Legg til s;kjemotor
+    .buttonaccesskeyaccept = L
+    .buttonlabelextra1 = Avansert
+# buttonlabelextra1 is the label of a button to open the advanced section
+# of the dialog.
+edit-engine-dialog =
+    .buttonlabelaccept = Lagre søkjemotor
+    .buttonaccesskeyaccept = L
+    .buttonlabelextra1 = Avansert

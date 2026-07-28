@@ -15,6 +15,12 @@ appmenuitem-banner-update-unsupported =
     .label = 업데이트할 수 없음 — 시스템이 호환되지 않음
 appmenuitem-banner-update-restart =
     .label = 업데이트 있음 — 지금 다시 시작
+appmenu-nova-update-title = { -brand-short-name } 업데이트를 위해 다시 시작
+appmenu-nova-update-description = 탭이 다시 열립니다.
+appmenu-nova-fxa-sign-in = 로그인
+appmenu-nova-switch-device-promo =
+    .message = 곧 새 기기를 받게 되나요? { -brand-short-name }와 함께 하세요!
+appmenu-nova-switch-device-link = 데이터 이전 방법
 appmenuitem-new-tab =
     .label = 새 탭
 appmenuitem-new-window =
@@ -23,6 +29,8 @@ appmenuitem-new-private-window =
     .label = 새 사생활 보호 창
 appmenuitem-history =
     .label = 기록
+appmenuitem-tab-groups =
+    .label = 탭 그룹
 appmenuitem-downloads =
     .label = 다운로드
 appmenuitem-passwords =
@@ -79,8 +87,8 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Sync 켜기…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
 appmenu-remote-tabs-showmore =
-    .label = 탭 더 보기
-    .tooltiptext = 이 기기의 탭 더 보기
+    .label = 탭 더보기
+    .tooltiptext = 이 기기의 탭 더보기
 # This is shown as the label for an element to show inactive tabs from this device.
 appmenu-remote-tabs-show-inactive-tabs =
     .label = 비활성 탭
@@ -157,7 +165,7 @@ profiler-popup-recording-screen = 기록 중…
 profiler-popup-start-recording-button =
     .label = 기록 시작
 profiler-popup-discard-button =
-    .label = 취소
+    .label = 버리기
 profiler-popup-capture-button =
     .label = 캡처
 profiler-popup-start-shortcut =
@@ -170,6 +178,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = 프로파일러 패널 열기
+    .tooltiptext = 프로파일러 패널 열기
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -202,6 +213,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = { -brand-shorter-name }의 네트워킹 버그를 조사하기 위한 프리셋입니다.
 profiler-popup-presets-networking-label =
     .label = 네트워킹
+profiler-popup-presets-networking-with-logs-description = 네트워킹 로그를 포함하여 { -brand-shorter-name }의 네트워킹 버그를 조사하기 위한 프리셋입니다. 이러한 로그에는 방문한 URL과 같은 민감한 정보가 포함되어 있을 수 있습니다.
+profiler-popup-presets-networking-with-logs-label =
+    .label = 로그를 포함한 네트워킹
 profiler-popup-presets-power-description = 오버헤드가 낮은 { -brand-shorter-name }의 전력 사용 버그를 조사하기 위한 프리셋입니다.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -209,6 +223,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = { -brand-shorter-name }에서 디버깅을 위한 프리셋입니다. 오버헤드가 높으므로 성능 작업에 사용하지 말고 브라우저 동작을 이해하는 데 중점을 두는 데 사용하세요.
 profiler-popup-presets-debug-label =
     .label = 디버그
+profiler-popup-presets-web-compat-description = 웹 사이트에서 성능 추적보다 웹 호환성 문제를 디버깅하는 데 권장되는 프리셋입니다.
+profiler-popup-presets-web-compat-label =
+    .label = 웹 호환성
 profiler-popup-presets-custom-label =
     .label = 사용자 지정
 
@@ -240,7 +257,7 @@ appmenu-get-help =
     .label = 도움 받기
     .accesskey = H
 appmenu-help-more-troubleshooting-info =
-    .label = 추가 문제 해결 정보
+    .label = 문제 해결 정보
     .accesskey = T
 appmenu-help-report-site-issue =
     .label = 사이트 문제 보고…
@@ -274,6 +291,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = 도구 모음 사용자 지정…
+appmenu-abouttranslations =
+    .label = 번역…
+appmenu-edit-pdf =
+    .label = PDF 편집…
 appmenu-developer-tools-subheader = 브라우저 도구
 appmenu-developer-tools-extensions =
     .label = 개발자용 확장 기능
@@ -283,14 +304,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = 계정에 로그인
+appmenuitem-monitor-title2 = 신원 도용 피해 미리 예방하기
+appmenuitem-monitor-description2 = 개인 정보 유출 알림 받기
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 데이터 유출 알림 받기
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = 이메일 주소 비공개로 보호하기
+appmenuitem-relay-description2 = 받은 편지함의 스팸 메일 차단 지원
 appmenuitem-relay-description = 실제 이메일과 전화를 가리세요
 appmenuitem-services-relay-description = 이메일 가리기 대시보드 실행
+appmenuitem-vpn-title2 = { -mozilla-vpn-brand-name }으로 내 위치 숨기기
+appmenuitem-vpn-description3 = 탐색 활동 추적 방지
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = 전체 기기 보호 받기
 appmenuitem-vpn-description = 온라인 활동을 보호하세요
 appmenu-services-header = 내 서비스
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = 개인 정보 보호 도구
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = BrowserWorks의 다른 보호 도구를 사용해 보세요:
 appmenu-other-protection-header = { -vendor-short-name }의 다른 보호 도구를 사용해 보세요:
 
 ## Profiles panel
@@ -298,6 +334,8 @@ appmenu-other-protection-header = { -vendor-short-name }의 다른 보호 도구
 appmenu-other-profiles = 다른 프로필
 appmenu-manage-profiles =
     .label = 프로필 관리
+appmenu-copy-profile =
+    .label = 이 프로필 복사
 appmenu-create-profile =
     .label = 새 프로필
 appmenu-edit-profile =

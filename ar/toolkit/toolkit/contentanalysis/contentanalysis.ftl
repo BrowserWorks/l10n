@@ -3,12 +3,21 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 contentanalysis-alert-title = تحليل المحتوى
+# Variables:
+#   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
+contentanalysis-slow-agent-notification = تستغرق أداة تحليل المحتوى وقتًا طويلاً للاستجابة للمورد “{ $content }”
 contentanalysis-slow-agent-dialog-header = جارِ المسح
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $filename - Name of the file being analyzed, such as "aFile.txt"
+contentanalysis-slow-agent-dialog-body-file = يقوم { $agent } بمراجعة "{ $filename }" وفقًا لسياسات بيانات منظّمتك. قد يستغرق هذا بعض الوقت.
 contentanalysis-operationtype-clipboard = الحافظة
 contentanalysis-operationtype-dropped-text = النص المُسقط
 contentanalysis-operationtype-print = اطبع
 #   $filename - The filename associated with the request, such as "aFile.txt"
-contentanalysis-customdisplaystring-description = رفع ”{ $filename }“
+contentanalysis-upload-description = رفع ”{ $filename }“
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = تنزيل “{ $filename }”
 contentanalysis-warndialogtitle = قد يكون هذا المحتوى غير آمن
 contentanalysis-warndialog-response-allow = استخدم المحتوى
 contentanalysis-warndialog-response-deny = ألغِ
@@ -24,8 +33,14 @@ contentanalysis-error-message-print = رُفِضت الطباعة.
 #   $contentName - Description of the content, such as "clipboard" or "aFile.txt"
 contentanalysis-timeout-block-error-message-content = انتهت مهلة الاتصال بـ { $agent }. حُظر { $contentName }.
 contentanalysis-block-dialog-title-upload-file = لا يسمح لك برفع هذا الملف
+contentanalysis-block-dialog-title-download-file = لا يُسمح لك بتنزيل هذا الملف
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = وفقًا لسياسات حماية البيانات الخاصة بمنظّمتك، لا يُسمح لك بتنزيل الملف "{ $filename }". تواصل مع ديرك النظام لمزيد من المعلومات.
 contentanalysis-block-dialog-title-clipboard = لا يسمح لك بلصق هذا المحتوى
 contentanalysis-block-dialog-title-dropped-text = لا يسمح لك بإسقاط هذا المحتوى
 contentanalysis-block-dialog-title-print = لا يسمح لك بطباعة هذا المستند
+contentanalysis-block-dialog-body-print = وفقًا لسياسات حماية البيانات الخاصة بمنظّمتك، لا يُسمح لك بطباعة هذا المستد. تواصل مع مسؤول النظام لمزيد من المعلومات.
 contentanalysis-inprogress-quit-title = إغلاق { -brand-shorter-name }؟
+contentanalysis-inprogress-quit-message = هناك عِدة إجراءات جارية. أنهيت { -brand-shorter-name }، فلن تكتمل هذه الإجراءات.
 contentanalysis-inprogress-quit-yesbutton = نعم، أغلق

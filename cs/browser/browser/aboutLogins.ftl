@@ -26,7 +26,7 @@ menu =
     .title = Otevřít nabídku
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importovat z jiného prohlížeče…
-about-logins-menu-menuitem-import-from-a-file = Importovat ze souboru
+about-logins-menu-menuitem-import-from-a-file = Importovat ze souboru…
 about-logins-menu-menuitem-export-logins = Exportovat přihlašovací údaje
 about-logins-menu-menuitem-remove-all-logins = Smazat všechny přihlašovací údaje
 about-logins-menu-menuitem-export-logins2 = Exportovat hesla…
@@ -47,10 +47,10 @@ login-list =
 login-list-count =
     { $count ->
         [0] žádné přihlašovací údaje
-        [one] jedny přihlašovací údaje
         [2] dvoje přihlašovací údaje
         [3] troje přihlašovací údaje
         [4] čtvery přihlašovací údaje
+        [one] jedny přihlašovací údaje
         [few] { $count } přihlašovací údaje
        *[other] { $count } přihlašovacích údajů
     }
@@ -111,7 +111,7 @@ about-logins-list-item-breach-icon =
     .title = Na tomto serveru došlo k úniku dat
 about-logins-list-item-vulnerable-password-icon =
     .title = Zranitelné heslo
-about-logins-list-section-breach = Servery, kde došlo k úniku dat
+about-logins-list-section-breach = Servery, u nichž došlo k úniku dat
 about-logins-list-section-vulnerable = Zranitelná hesla
 about-logins-list-section-nothing = Žádná upozornění
 about-logins-list-section-today = Dnes
@@ -134,7 +134,7 @@ login-intro-description2 =
         [with-cases] Všechna hesla uložená ve { -brand-product-name(case: "loc") } jsou šifrovaná. Navíc sledujeme, zda se na internetu neobjeví vaše uniklá data, a upozorníme vás, pokud se tak stane. <a data-l10n-name="breach-alert-link">Zjistit více</a>
        *[no-cases] Všechna hesla uložená v aplikaci { -brand-product-name } jsou šifrovaná. Navíc sledujeme, zda se na internetu neobjeví vaše uniklá data, a upozorníme vás, pokud se tak stane. <a data-l10n-name="breach-alert-link">Zjistit více</a>
     }
-login-intro-instructions-fxa2 = Vytvořte nebo se přihlaste ke svému účtu na zařízení, kde máte přihlašovací údaje uložené.
+login-intro-instructions-fxa2 = Přihlaste se do svého účtu nebo si ho vytvořte na zařízení, kde máte přihlašovací údaje uložené.
 login-intro-instructions-fxa-settings = Otevřete Nastavení > Synchronizace > Zapnout synchronizaci… a vyberte položku Přihlašovací údaje.
 login-intro-instructions-fxa-passwords-help = Navštivte <a data-l10n-name="passwords-help-link">nápovědu pro hesla</a>.
 about-logins-intro-browser-only-import =
@@ -232,7 +232,7 @@ about-logins-copy-password-os-auth-dialog-message-macosx = zkopírovat uložené
 about-logins-export-password-os-auth-dialog-message-win = Pro export přihlašovacích údajů prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-export-password-os-auth-dialog-message-macosx = exportovat uložené přihlašovací údaje a hesla
+about-logins-export-password-os-auth-dialog-message-macosx = exportovat uložená uživatelská jména a hesla
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message2-win = Chcete-li exportovat hesla, zadejte přihlašovací údaje do systému Windows. To pomáhá chránit bezpečnost vašich účtů.
 # This message can be seen when attempting to export a password in about:logins
@@ -337,8 +337,8 @@ about-logins-confirm-export-dialog-message = Vaše hesla budou uložena v čitel
 about-logins-confirm-export-dialog-confirm-button = Exportovat…
 about-logins-confirm-export-dialog-title2 = Poznámka k exportování hesel
 about-logins-confirm-export-dialog-message2 =
-    Při exportu jsou vaše hesla uložena do souboru s čitelným textem.
-    Po skončení používání doporučujeme soubor odstranit, aby vaše hesla nemohli vidět ostatní uživatelé tohoto zařízení.
+    Při exportu jsou vaše hesla uložena do souboru ve formátu čitelného textu.
+    Po dokončení práce s tímto souborem ho doporučujeme odstranit, aby vaše hesla nemohli vidět ostatní uživatelé tohoto zařízení.
 about-logins-confirm-export-dialog-confirm-button2 = Pokračovat v exportu
 about-logins-alert-import-title = Import byl dokončen
 about-logins-alert-import-message = Zobrazit podrobné shrnutí importu
@@ -358,7 +358,7 @@ about-logins-breach-alert-link = Přejít na { $hostname }
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = Zranitelné heslo
-about-logins-vulnerable-alert-text2 = Toto heslo jste použili u jiného účtu, který byl pravděpodobně součástí úniku dat. Opakované používání hesel ohrožuje všechny vaše účty. Změňte prosím toto heslo.
+about-logins-vulnerable-alert-text2 = Toto heslo jste použili u jiného účtu, který byl pravděpodobně součástí úniku dat. Opakované používání týchž hesel ohrožuje všechny vaše účty. Změňte si prosím toto heslo.
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Přejít na { $hostname }
@@ -460,7 +460,7 @@ about-logins-import-dialog-error-title = Chyba při importu
 about-logins-import-dialog-error-conflicting-values-title = Více konfliktních hodnot pro jedno přihlášení
 about-logins-import-dialog-error-conflicting-values-description = Například: více uživatelských jmen, hesel, adres atd. pro jedno přihlášení.
 about-logins-import-dialog-error-file-format-title = Problém s formátem souboru
-about-logins-import-dialog-error-file-format-description = V souboru chybí záhlaví sloupců, nebo je nesprávné. Zkontrolujte, že soubor obsahuje sloupce s uživatelským jménem, heslem a URL adresou.
+about-logins-import-dialog-error-file-format-description = V souboru chybí záhlaví sloupců, nebo je nesprávné. Zkontrolujte, že soubor obsahuje sloupce s uživatelským jménem, heslem a adresou URL.
 about-logins-import-dialog-error-file-permission-title = Soubor nelze načíst
 about-logins-import-dialog-error-file-permission-description = { -brand-short-name } nemá oprávnění číst soubor. Zkuste změnit oprávnění souboru.
 about-logins-import-dialog-error-unable-to-read-title = Soubor nelze načíst

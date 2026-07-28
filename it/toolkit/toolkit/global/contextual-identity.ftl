@@ -27,3 +27,65 @@ user-context-none =
 user-context-manage-containers =
     .label = Gestisci contenitori
     .accesskey = G
+user-context-new-tab =
+    .label = Nuova scheda
+    .accesskey = N
+user-context-add-container =
+    .label = Aggiungi nuovo contenitore
+    .accesskey = A
+
+## Container colors, shown as selectable swatches in the container
+## creation/edit dialog.
+
+user-context-color-blue =
+    .label = Blu
+user-context-color-cyan =
+    .label = Ciano
+user-context-color-green =
+    .label = Verde
+user-context-color-yellow =
+    .label = Giallo
+user-context-color-orange =
+    .label = Arancio
+user-context-color-red =
+    .label = Rosso
+user-context-color-pink =
+    .label = Rosa
+user-context-color-purple =
+    .label = Viola
+user-context-color-violet =
+    .label = Violetto
+user-context-color-gray =
+    .label = Grigio
+
+## Container icons, shown as selectable swatches in the container
+## creation/edit dialog.
+
+user-context-icon-fingerprint =
+    .label = Impronta digitale
+user-context-icon-briefcase =
+    .label = Valigetta
+# String represents a money sign but currently uses a dollar sign
+# so don't change to local currency. See Bug 1291672.
+user-context-icon-dollar =
+    .label = Dollaro
+user-context-icon-cart =
+    .label = Carrello
+user-context-icon-vacation =
+    .label = Vacanza
+user-context-icon-gift =
+    .label = Regalo
+user-context-icon-food =
+    .label = Cibo
+user-context-icon-fruit =
+    .label = Frutta
+user-context-icon-pet =
+    .label = Cucciolo
+user-context-icon-tree =
+    .label = Natura
+user-context-icon-chill =
+    .label = Svago
+user-context-icon-circle =
+    .label = Punto
+user-context-icon-fence =
+    .label = Recinto

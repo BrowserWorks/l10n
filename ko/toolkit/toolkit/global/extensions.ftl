@@ -60,7 +60,7 @@ webext-perms-update-text = { $extension } 확장 기능이 업데이트되었습
 webext-perms-update-accept =
     .label = 업데이트
     .accesskey = U
-webext-perms-optional-perms-list-intro = 필요한 권한:
+webext-perms-optional-perms-list-intro = 권한 요청:
 webext-perms-optional-perms-allow =
     .label = 허용
     .accesskey = A
@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = 거부
     .accesskey = D
 webext-perms-host-description-all-urls = 모든 웹 사이트에 대한 사용자 데이터에 접근
+webext-perms-host-description-file-urls = 컴퓨터의 로컬 파일에 접근
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = { $domain } 도메인 사이트에 대한 사용자 데이터에 접근
@@ -92,20 +93,20 @@ webext-perms-host-description-one-domain = { $domain } 도메인 사이트에 �
 # Variables:
 #   $domainCount (Number): Integer indicating the number of websites domains for which this webextension is requesting permission
 #     (the list of domains will follow this string).
-webext-perms-host-description-multiple-domains = { $domainCount }개 도메인 사이트에 대한 사용자 데이터에 접근
+webext-perms-host-description-multiple-domains = 도메인 { $domainCount }개 사이트에 대한 사용자 데이터에 접근
 
 ## Strings for data collection permissions in the permission prompt.
 
-webext-perms-description-data-none = 개발자가 이 확장 기능은 데이터 수집이 필요하지 않다고 말합니다.
+webext-perms-description-data-none = 개발자는 이 확장 기능이 데이터 수집을 요구하지 않는다고 밝히고 있습니다.
 # Variables:
 #    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
-webext-perms-description-data-some = 개발자가 이 확장 기능이 수집한다고 하는 항목: { $permissions }
+webext-perms-description-data-some = 개발자가 이 확장 기능이 수집한다고 밝힌 항목: { $permissions }
 # Variables:
 #    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
-webext-perms-description-data-some-update = 개발자가 확장 기능이 수집하겠다고 하는 항목: { $permissions }
+webext-perms-description-data-some-update = 개발자가 이 확장 기능이 수집하겠다고 밝힌 항목: { $permissions }
 # Variables:
 #    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
-webext-perms-description-data-some-optional = 개발자가 확장 기능이 수집을 원한다고 하는 항목: { $permissions }
+webext-perms-description-data-some-optional = 개발자가 확장 기능이 수집을 원한다고 밝힌 항목: { $permissions }
 # Variables:
 #   $extension (String): replaced with the localized name of the extension.
 webext-perms-update-text-with-data-collection = { $extension } 확장 기능을 업데이트하려면 새 설정이 필요함
@@ -126,6 +127,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } 확장 기
 
 webext-site-perms-header-with-gated-perms-midi = 이 부가 기능은 { $hostname }에 MIDI 기기에 대한 접근 권한을 부여합니다.
 webext-site-perms-header-with-gated-perms-midi-sysex = 이 부가 기능은 { $hostname }에 MIDI 기기에 대한 접근 권한을 부여합니다 (SysEx 지원).
+webext-site-perms-header-with-gated-perms-serial = 이 부가 기능은 { $hostname }에 직렬 기기에 대한 접근 권한을 부여합니다.
 
 ##
 
@@ -136,6 +138,12 @@ webext-site-perms-description-gated-perms-midi =
     이들은 일반적으로 오디오 신디사이저와 같은 플러그인 기기이지만, 컴퓨터에 내장되어 있을 수도 있습니다.
     
     일반적으로 웹 사이트는 MIDI 기기에 접근할 수 없습니다. 부적절한 사용으로 인해 손상이 발생하거나 보안이 손상될 수 있습니다.
+webext-site-perms-description-gated-perms-webserial =
+    마이크로 컨트롤러, 3D 프린터 및 기타 USB, 직렬 포트 또는 블루투스를 통해 연결하는 기기가 여기에 해당됩니다.
+    
+    웹 사이트가 접근할 수 있는 기기를 선택할 수 있습니다.
+    
+    일반적으로 웹 사이트는 직렬 기기에 접근할 수 없습니다. 부적절한 사용은 기기를 손상시키거나 보안을 위협할 수 있습니다.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -150,6 +158,7 @@ webext-site-perms-header-unsigned-with-perms = { $extension } 확장 기능을 �
 
 webext-site-perms-midi = MIDI 기기 접근
 webext-site-perms-midi-sysex = SysEx 지원과 함께 MIDI 기기 접근
+webext-site-perms-serial = 직렬 기기 접근
 
 ## Colorway theme migration
 

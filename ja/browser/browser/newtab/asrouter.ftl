@@ -51,7 +51,7 @@ cfr-doorhanger-extension-rating =
 #   $total (Number) - The total number of users using the add-on
 cfr-doorhanger-extension-total-users = { $total } ユーザー
 
-## Firefox Accounts Message
+## Mozilla Account messages
 
 cfr-doorhanger-bookmark-fxa-header = どこからでもブックマークを同期します。
 cfr-doorhanger-bookmark-fxa-body = 見つかっちゃった。ブックマークをこの端末だけに残しておかないで同期して。{ -fxaccount-brand-name } を始めましょう。
@@ -60,6 +60,13 @@ cfr-doorhanger-bookmark-fxa-link-text = ブックマークを今すぐ同期...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 閉じるボタン
     .title = 閉じる
+fxa-adoption-addresses-backup-title = 保存したアドレスをバックアップしましょう
+fxa-adoption-addresses-backup-subtitle = 保存したアドレスをご使用の端末と同期して暗号化することにより保護します。
+fxa-adoption-credit-cards-backup-title = 支払い方法をバックアップしましょう
+fxa-adoption-credit-cards-backup-subtitle = 支払い方法をご使用の端末と同期して暗号化することにより保護します。
+fxa-adoption-bookmarks-treatment-backup-title = ブックマークをバックアップしましょう
+fxa-adoption-bookmarks-treatment-backup-subtitle = ブックマークをご使用の端末と同期して暗号化することにより保護します。
+fxa-adoption-primary-button-label = アカウント登録
 
 ## Protections panel
 
@@ -217,6 +224,20 @@ fox-doodle-pin-secondary = 後で
 set-default-pdf-handler-headline = <strong>PDF ファイルを { -brand-short-name } で開くように関連付けられます。</strong> ブラウザー内で編集または署名ができます。動作を変更するには、設定で “PDF” を検索してください。
 set-default-pdf-handler-primary = 了解
 
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = 好きなところに署名しましょう！
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = ご自分の署名を手書き、入力またはアップロードしたら、任意の場所に配置してください。次回のために、よく使う署名を保存しておきましょう。
+annotations-make-default-pdf-handler-title = { -brand-short-name } を既定の PDF エディターにしませんか？
+annotations-make-default-pdf-handler-subtitle = PDF を開くと毎回 { -brand-short-name } のツールが使用できるようになります。
+annotations-make-default-pdf-primary-cta-label = 既定に設定
+annotations-make-default-pdf-next-label = 次へ
+
 ## FxA sync CFR
 
 fxa-sync-cfr-header = 未来の新しい端末？
@@ -266,6 +287,20 @@ launch-on-login-infobar-final-message = <strong>コンピューターの再起�
 launch-on-login-infobar-final-reject-button = いいえ、結構です
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = 次回のコンピューター起動時に { -brand-short-name } を開きますか？
+launch-on-login-spotlight-startup-checkbox = 起動時に { -brand-short-name } を開く
+launch-on-login-spotlight-pin-taskbar-checkbox = タスクバーにピン留めする
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = 前回のウィンドウとタブを開く
+launch-on-login-spotlight-primary-button = 保存して { -brand-short-name } を閉じる
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -276,6 +311,12 @@ tail-fox-spotlight-title = 迷惑なトラッカーを尻尾で振り払いま�
 tail-fox-spotlight-subtitle = 迷惑な広告トラッカーに別れを告げて、安全で高速なインターネットを体験しましょう。
 tail-fox-spotlight-primary-button = { -brand-short-name } でリンクを開く
 tail-fox-spotlight-secondary-button = 後で
+
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = 組み込みプライバシーへの回帰
+welcome-back-spotlight-subtitle = 非営利で運営された唯一のメジャーブラウザーがあなたの帰りを待っています。どこでブラウジングしても、いくつかのステップでユーザーデータを保護します。
+welcome-back-embedded-import-title = あなたの個人データをインポートして { -brand-short-name } を自分だけのブラウザーにしてください。
 
 ## Root Certificate Succession Infobar
 
@@ -301,9 +342,12 @@ root-certificate-windows-background-notification-update-button = { -brand-short-
 fxa-menu-message-close-button =
     .title = 閉じる
     .aria-label = 閉じる
-fxa-menu-message-sign-up-button = ログイン
+fxa-menu-message-sign-up-button = アカウント登録
+fxa-menu-message-sign-in-button = ログイン
+fxa-menu-message-sync-button = 同期を開始
 fxa-menu-message-sync-devices-primary-text = すべての端末を同期しましょう
 fxa-menu-message-sync-devices-secondary-text = { -brand-short-name } を使用しているどこからでもあなたの情報 — ブックマークやパスワードなど — へ即座にアクセスできます。
+fxa-menu-message-sync-devices-secondary-text2 = { -brand-short-name } にログインしているどこからでも、ブックマークやパスワード、その他のデータに即座にアクセスできます。
 fxa-menu-message-sync-devices-collapsed-text = すべての端末を同期しましょう
 fxa-menu-message-backup-data-primary-text = ブラウジングデータをバックアップしましょう
 fxa-menu-message-backup-data-secondary-text = すべての端末にあるブックマークやパスワードなどの情報を、自動的に保護します。
@@ -334,3 +378,110 @@ multi-cta-fox-doodle-privacy-focused-subtitle =
        *[other] クリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けましょう。{ -brand-short-name } をリンクを開く既定のブラウザーに設定したり、タスクバーにピン留めしたりしませんか。
     }
 multi-cta-fox-doodle-msix-privacy-focused-subtitle = クリック 1 回でプライバシーを重視するお気に入りのブラウザーを使い続けましょう。{ -brand-short-name } をリンクを開く既定のブラウザーに設定したり、タスクバーやスタートメニューにピン留めしたりしませんか。
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = Windows 10 からアップグレードしますか？
+windows-10-eos-sync-spotlight-subtitle = パスワードとブックマークをバックアップしておけば、どの端末にもすぐに移行できます。
+windows-10-eos-sync-spotlight-primary-label = { -brand-short-name } のデータをバックアップ
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = Windows 11 にアップグレードしますか？ ブックマークとパスワードが失われないようにしましょう。
+windows-10-eos-sync-toast-subtitle = { -brand-short-name } のデータをバックアップしておけば、この PC でも次の新しい端末でも、いつでも移行できます。
+windows-10-eos-sync-toast-primary-label = はじめる
+windows-10-eos-sync-toast-secondary-label = 後で通知する
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = 他のビッグテック企業のブラウザーのように { -brand-product-name } はプリロードされません。そこがポイントです。
+windows-10-eos-challenger-sync-callout-subtitle = { -brand-product-name } のブックマークとパスワードをバックアップしておけば、次の新しい端末へ簡単に移行できます。
+windows-10-eos-challenger-pin-callout-subtitle = { -brand-shorter-name } をタスクバーにピン留めしましょう。あなたの選んだブラウザーがいつでも、必要な時にそこにあります。
+windows-10-eos-challenger-sync-primary-button = { -brand-shorter-name } のデータをバックアップ
+windows-10-eos-challenger-pin-primary-button = { -brand-shorter-name } をピン留め
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } は暗号通貨マイニングやソーシャルメディアトラッカー、フィンガープリント採取をブロックします。
+windows-10-eos-sync-callout-privacy-screen-1-subtitle = 追跡者はあなたの端末を識別したりウェブ上の行動を追跡したりできません。私たちのブラウザーが防いでいます。
+windows-10-eos-sync-callout-privacy-screen-2-title = パスワードとブックマークを次の新しい端末のために保護します。
+windows-10-eos-sync-callout-privacy-screen-2-subtitle = { -brand-shorter-name } のデータをバックアップしておけば、簡単にデータとプライバシー設定を持ち歩けます。
+windows-10-eos-sync-callout-privacy-info-button = ブロックされたものを見る
+windows-10-eos-callout-addons-title = アドオンを試しましょう: シンプルなアップグレード、大きなインパクト
+windows-10-eos-callout-addons-subtitle = これらの拡張機能は、生産性を向上し、ユーザーを保護し、整理整頓に役立つものが選ばれています。
+windows-10-eos-callout-addons-primary-button = おすすめのアドオンを見る
+windows-10-eos-sync-callout-addons-title = Windows 10 からアップグレードしてもアドオンを失わないために
+windows-10-eos-sync-callout-addons-subtitle = { -brand-product-name } のアドオンを同期して、端末を変更した後でも常に使えるようにしましょう。
+windows-10-eos-sync-callout-next-button = 次へ
+windows-10-eos-sync-callout-get-started-button = はじめる
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = 垂直タブとタブグループ機能が搭載されました。
+# In English, "dropped" is a colloquial form for released.
+windows-10-eos-feature-toast-subtitle = ご要望にお応えして { -brand-product-name } に新しい機能が追加され、ブラウジングに集中できるようになりました。
+windows-10-eos-feature-toast-whats-new-button = 新機能を見る
+windows-10-eos-feature-toast-dismiss-button = 閉じる
+
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft は Windows 10 のサポートを終了しました。</strong> { -brand-product-name } のプロファイルデータをバックアップして Windows 11 への準備をしましょう。
+windows-10-eos-global-infobar-primary-button = バックアップを有効化
+    .accesskey = T
+windows-10-eos-global-infobar-learn-more-link = 詳細情報
+    .accessKey = L
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-message = <strong>厳格なトラッキング防止機能によりこのサイトが動作しない可能性があります。</strong> トラッキングを含む主要な要素のブロックを解除することにより問題を修正します。
+etp-strict-exceptions-infobar-learn-more = 詳細情報
+etp-strict-exceptions-infobar-button = 修正を適用
+    .accesskey = A
+etp-strict-exceptions-infobar-not-now = 後で
+    .accesskey = N
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } が既定のブラウザーに設定されていません
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } が優先ブラウザーに設定されていません
+set-default-menu-message-row-layout-title = { -brand-short-name } を優先ブラウザーにしましょう
+set-default-menu-message-row-layout-title-variant = { -brand-short-name } を既定のブラウザーにしましょう
+set-default-menu-message-row-layout-subtitle = いつものブラウジングに速さと安全性、プライバシー保護がもたらされます。
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } を手元に — 既定に設定して Dock に入れましょう。
+       *[other] { -brand-short-name } を手元に — 既定に設定してタスクバーにピン留めしましょう。
+    }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } を手元に置く
+       *[other] すべてのリンクを { -brand-short-name } で開く
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] 既定に設定して Dock に入れましょう。
+       *[other] 高速ブラウジングと自動プライバシー保護を手に入れましょう。
+    }
+set-default-menu-message-primary-button = 既定に設定
+set-default-menu-message-primary-button-variant = 優先ブラウザーに設定
+set-default-menu-message-primary-button-short-variant = { -brand-short-name } を既定に設定
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = メールマスクが 50 個に増量
+relay-50-masks-announcement-subtitle = 無料のメールマスクが (5 個から) 50 個に増えました。すべてのアカウントで実際のメールアドレスをプライベートにできます。
+relay-50-masks-announcement-primary-button = { -relay-brand-name } へ移動
+    .accesskey = G
+relay-50-masks-announcement-secondary-button = 閉じる
+    .accesskey = D
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>{ -brand-product-name } のデザインが新しくなります。</strong> 今年後半にリリース予定の早期バージョンをプレビューしています。
+nova-early-access-share-feedback-link = フィードバックを共有する
+    .accesskey = S
+nova-early-access-infobar-primary-button = 了解
+    .accesskey = G

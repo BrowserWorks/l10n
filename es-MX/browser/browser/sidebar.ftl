@@ -6,6 +6,11 @@ menu-view-genai-chat =
     .label = Chatbot de IA
 menu-view-contextual-password-manager =
     .label = Contraseñas
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Pestañas abiertas
 sidebar-options-menu-button =
     .title = Abrir menú
 
@@ -21,10 +26,26 @@ sidebar-history-date-this-month =
     .heading = { DATETIME($date, dateStyle: "full") }
 sidebar-history-date-prev-month =
     .heading = { DATETIME($date, month: "long", year: "numeric") }
+# When history is sorted by site, this heading is used in place of a domain, in
+# order to group sites that do not come from an outside host.
+# For example, this would be the heading for all file:/// URLs in history.
+sidebar-history-site-localhost =
+    .heading = (archivos locales)
 sidebar-history-delete =
     .title = Eliminar del historial
 sidebar-history-clear =
     .label = Limpiar historial
+sidebar-history-sort-by-heading-menucaption =
+    .label = Ordenar por:
+sidebar-history-sort-by-heading = Ordenar por:
+sidebar-history-sort-option-date =
+    .label = Fecha
+sidebar-history-sort-option-site =
+    .label = Sitio
+sidebar-history-sort-option-date-and-site =
+    .label = Fecha y lugar
+sidebar-history-sort-option-last-visited =
+    .label = Última visita
 
 ## Labels for sidebar search
 
@@ -42,6 +63,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Administrar los ajustes de { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Pestañas verticales
+sidebar-settings2 =
+    .label = Ajustes
 sidebar-settings =
     .label = Ajustes de la barra lateral
 sidebar-hide-tabs-and-sidebar =
@@ -54,6 +77,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Expandir la barra lateral al pasar el mouse
+sidebar-manage-extensions2 = Administrar todas las extensiones
+sidebar-customize-extensions-header2 = Extensiones
+sidebar-customize-firefox-tools-header2 =
+    .label = Herramientas
 
 ## Labels for sidebar context menu items
 
@@ -63,10 +90,16 @@ sidebar-context-menu-remove-extension =
     .label = Eliminar extensión
 sidebar-context-menu-report-extension =
     .label = Reportar extensión
+sidebar-context-menu-open-in-tab =
+    .label = Abrir en una nueva pestaña
+sidebar-context-menu-open-in-container-tab =
+    .label = Abrir en nueva pestaña contenedora
 sidebar-context-menu-open-in-window =
     .label = Abrir en una nueva ventana
 sidebar-context-menu-open-in-private-window =
     .label = Abrir en una nueva ventana privada
+sidebar-context-menu-forget-site =
+    .label = Borrar todos los datos del sitio web…
 sidebar-context-menu-bookmark-tab =
     .label = Agregar pestaña a marcadores…
 sidebar-context-menu-copy-link =
@@ -81,9 +114,28 @@ sidebar-context-menu-customize-sidebar =
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =
     .label = Cerrar pestaña en { $deviceName }
+sidebar-context-menu-remove-extension2 =
+    .label = Eliminar de { -brand-short-name }
+sidebar-context-menu-unpin-extension =
+    .label = Eliminar de la barra lateral
 
 ## Labels for sidebar history context menu items
 
+sidebar-history-context-menu-delete-page-2 =
+    .label = Eliminar página del historial
+sidebar-history-context-menu-bookmark-page =
+    .label = Agregar página a marcadores…
+sidebar-history-context-menu-delete-pages =
+    .label = Eliminar páginas del historial
+
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Editar marcador…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Eliminar marcador
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Eliminar
 
 ## Labels for sidebar menu items.
 
@@ -93,12 +145,19 @@ sidebar-menu-history-label =
     .label = Historial
 sidebar-menu-synced-tabs-label =
     .label = Pestañas de otros dispositivos
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Abrir pestañas
 sidebar-menu-bookmarks-label =
     .label = Marcadores
 sidebar-menu-customize-label =
     .label = Personalizar barra lateral
 sidebar-menu-contextual-password-manager-label =
     .label = Contraseñas
+sidebar-menu-more-tools-label =
+    .label = Más herramientas
 
 ## Tooltips for sidebar menu items.
 
@@ -126,6 +185,7 @@ sidebar-menu-close-bookmarks-tooltip = Cerrar marcadores ({ $shortcut })
 
 sidebar-menu-open-ai-chatbot-tooltip-generic = Chatbot de IA abierta ({ $shortcut })
 sidebar-menu-open-ai-chatbot-provider-tooltip = Abrir { $provider } ({ $shortcut })
+sidebar-menu-close-ai-chatbot-tooltip-generic = Cerrar el chatbot de IA ({ $shortcut })
 sidebar-menu-close-ai-chatbot-provider-tooltip = Cerrar { $provider } ({ $shortcut })
 
 ## Headings for sidebar menu panels.
@@ -136,16 +196,48 @@ sidebar-menu-history-header =
     .heading = Historial
 sidebar-menu-syncedtabs-header =
     .heading = Pestañas de otros dispositivos
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Pestañas abiertas
 sidebar-menu-cpm-header =
     .heading = Contraseñas
+sidebar-menu-bookmarks-header =
+    .heading = Marcadores
 sidebar-panel-header-close-button =
     .tooltiptext = Cerrar
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Menú de marcadores
+sidebar-bookmarks-folder-toolbar = Barra de herramientas de marcadores
+sidebar-bookmarks-folder-other = Otros Marcadores
+sidebar-bookmarks-folder-mobile = Marcadores móviles
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Personalizar barra lateral
 sidebar-history-title = Historial
 sidebar-syncedtabs-title = Pestañas de otros dispositivos
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Pestañas abiertas
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Pestañas fijadas
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Ventana { $winID } (actual)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Ventana { $winID }
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -181,3 +273,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Ocultar barra lateral ({ $shortcut })
     .label = Barras laterales
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Arrastra las pestañas importantes aquí para tenerlas a la mano

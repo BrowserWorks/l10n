@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Προσθήκη στοιχείου
+storage-delete-all-button =
+    .title = Διαγραφή όλων
 # Refresh button title
 storage-refresh-button =
     .title = Ανανέωση στοιχείων
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Λήξη/Μέγιστος χρόνος
 storage-table-headers-cookies-size = Μέγεθος
 storage-table-headers-cookies-last-accessed = Τελευταία πρόσβαση
 storage-table-headers-cookies-creation-time = Δημιουργήθηκε
+storage-table-headers-cookies-update-time = Ενημέρωση
 storage-table-headers-cache-status = Κατάσταση
 storage-table-headers-extension-storage-area = Περιοχή αποθήκευσης
 

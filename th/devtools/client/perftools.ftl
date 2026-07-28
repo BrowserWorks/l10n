@@ -7,7 +7,7 @@
 ### the remote profiling panel. There are additional profiler strings in the appmenu.ftl
 ### file that are used for the profiler popup.
 
-perftools-intro-title = การตั้งค่า Profiler
+perftools-intro-title = การตั้งค่าตัวสร้างโปรไฟล์
 perftools-intro-description =
     การอัดบันทึกจะเปิด profiler.firefox.com ในแท็บใหม่ ข้อมูลทั้งหมดจะถูกเก็บ
     ในเครื่อง แต่คุณสามารถเลือกที่จะอัปโหลดเพื่อแบ่งปันได้
@@ -33,11 +33,33 @@ perftools-description-local-build =
     ถ้าคุณกำลังสร้างโปรไฟล์ให้กับบิลด์ที่คุณคอมไพล์ด้วยตัวเอง บนเครื่องนี้
     โปรดเพิ่ม objdir ของบิลด์ของคุณลงในรายการด้านล่างเพื่อให้สามารถ
     นำมาใช้ในการค้นหาข้อมูลสัญลักษณ์ได้
+perftools-pick-local-build-directory = เลือกไดเรกทอรีการสร้าง
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = ช่วงการสุ่มตัวอย่าง:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } มิลลิวินาที
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -149,6 +171,8 @@ perftools-presets-graphics-label = กราฟิก
 perftools-presets-graphics-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับกราฟิกใน { -brand-shorter-name }
 perftools-presets-media-label = สื่อ
 perftools-presets-media-description2 = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับเสียงและวิดีโอใน { -brand-shorter-name }
+perftools-presets-ml-label = การเรียนรู้ของเครื่อง
+perftools-presets-ml-description2 = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับการเรียนรู้ของเครื่องใน { -brand-shorter-name }
 perftools-presets-networking-label = ระบบเครือข่าย
 perftools-presets-networking-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับระบบเครือข่ายใน { -brand-shorter-name }
 # "Power" is used in the sense of energy (electricity used by the computer).
@@ -156,7 +180,6 @@ perftools-presets-power-label = พลังงาน
 perftools-presets-power-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับการใช้พลังงานใน { -brand-shorter-name } โดยมีโอเวอร์เฮดต่ำ
 perftools-presets-debug-label = ดีบั๊ก
 perftools-presets-debug-description = พรีเซ็ตสำหรับการดีบั๊กใน { -brand-shorter-name }  มีโอเวอร์เฮดสูง อย่าใช้เพื่องานด้านประสิทธิภาพ แต่ให้ใช้เพื่อทำความเข้าใจพฤติกรรมการทำงานของเบราว์เซอร์
+perftools-presets-web-compat-label = Web Compat
+perftools-presets-web-compat-description = พรีเซ็ตที่แนะนำสำหรับการดีบั๊กปัญหาเกี่ยวกับความเข้ากันได้ของเว็บในเว็บไซต์ แทนที่จะติดตามประสิทธิภาพ
 perftools-presets-custom-label = กำหนดเอง
-
-##
-

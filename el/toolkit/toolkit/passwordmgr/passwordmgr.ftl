@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = Να μην ενημερωθεί
     .accesskey = Ν
+primary-password-prompt-message = Εισαγάγετε τον κύριο κωδικό πρόσβασής σας.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = Χωρίς όνομα χρήστη
-password-manager-toggle-password =
-    .label = Εμφάνιση κωδικού πρόσβασης
-    .accesskey = μ
 password-manager-confirm-password-change = Επιβεβαίωση αλλαγής κωδικού
 password-manager-select-username = Επιλέξτε τα στοιχεία σύνδεσης προς ενημέρωση:

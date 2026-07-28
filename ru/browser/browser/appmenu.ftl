@@ -6,15 +6,19 @@
 ## App Menu
 
 appmenuitem-banner-update-downloading =
-    .label = Загрузка обновления { -brand-shorter-name }
+    .label = Скачивание обновления { -brand-shorter-name }
 appmenuitem-banner-update-available =
-    .label = Доступно обновление — загрузить сейчас
+    .label = Доступно обновление — скачать сейчас
 appmenuitem-banner-update-manual =
-    .label = Доступно обновление — загрузить сейчас
+    .label = Доступно обновление — скачать сейчас
 appmenuitem-banner-update-unsupported =
     .label = Не удалось выполнить обновление — несовместимая система
 appmenuitem-banner-update-restart =
     .label = Доступно обновление — перезапустить сейчас
+appmenu-nova-fxa-sign-in = Войти
+appmenu-nova-switch-device-promo =
+    .message = Скоро появится новое устройство? Возьмите { -brand-short-name } с собой!
+appmenu-nova-switch-device-link = Как перенести ваши данные
 appmenuitem-new-tab =
     .label = Новая вкладка
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = Новое приватное окно
 appmenuitem-history =
     .label = Журнал
+appmenuitem-tab-groups =
+    .label = Группы вкладок
 appmenuitem-downloads =
     .label = Загрузки
 appmenuitem-passwords =
@@ -74,7 +80,7 @@ appmenuitem-fullscreen =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-    .label = Войти для синхронизации…
+    .label = Войти в синхронизацию…
 appmenu-remote-tabs-turn-on-sync =
     .label = Включить синхронизацию…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
@@ -101,7 +107,7 @@ appmenu-remote-tabs-unverified = Ваш аккаунт должен быть п�
 appmenuitem-fxa-toolbar-sync-now2 = Синхронизировать
 appmenuitem-fxa-sign-in = Войти в { -brand-product-name }
 appmenuitem-fxa-manage-account = Управление аккаунтом
-appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-fxa-header2 = { -fxaccount-brand-name(case: "nominative_uppercase") }
 appmenu-account-header = Аккаунт
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Открыть панель профайлера
+    .tooltiptext = Открыть панель профайлера
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -202,6 +211,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Сеть
+profiler-popup-presets-networking-with-logs-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }, включая сетевые журналы. Эти журналы могут содержать конфиденциальную информацию, такую как URL-адреса, которые вы посещали.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Сетевой обмен и журналы
 profiler-popup-presets-power-description = Настройки для выявления ошибок потребления энергии в { -brand-shorter-name }, с небольшими накладными расходами.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -209,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Предустановка для отладки в { -brand-shorter-name }. Большие накладные расходы, не используйте для работы с производительностью, а используйте для понимания поведения браузера.
 profiler-popup-presets-debug-label =
     .label = Отладка
+profiler-popup-presets-web-compat-description = Рекомендуемые преднастройки для отладки проблем веб-совместимости на веб-сайтах, а не для отслеживания производительности.
+profiler-popup-presets-web-compat-label =
+    .label = Веб-совместимость
 profiler-popup-presets-custom-label =
     .label = Персональный
 
@@ -274,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Настройка панели инструментов…
+appmenu-abouttranslations =
+    .label = Перевести…
+appmenu-edit-pdf =
+    .label = Изменить PDF…
 appmenu-developer-tools-subheader = Инструменты браузера
 appmenu-developer-tools-extensions =
     .label = Расширения для разработчиков
@@ -283,14 +302,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Войдите в свой аккаунт
+appmenuitem-monitor-title2 = Защитите себя от кражи личных данных
+appmenuitem-monitor-description2 = Получайте оповещения об утечках данных
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Получайте уведомления об утечках данных
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Приватность вашей электронной почты
+appmenuitem-relay-description2 = Помогает предотвратить спам в вашем почтовом ящике
 appmenuitem-relay-description = Скройте свои настоящие электронную почту и телефон
 appmenuitem-services-relay-description = Запустить панель псевдонимов электронной почты
+appmenuitem-vpn-title2 = Скройте свое местоположение с помощью { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Усложните отслеживание вашего веб-сёрфинга
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Получите полную защиту устройства
 appmenuitem-vpn-description = Защитите свою активность в Интернете
 appmenu-services-header = Мои сервисы
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Инструменты приватности
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Попробуйте другие инструменты защиты от BrowserWorks:
 appmenu-other-protection-header = Попробуйте другие инструменты защиты от { -vendor-short-name }:
 
 ## Profiles panel
@@ -298,6 +332,8 @@ appmenu-other-protection-header = Попробуйте другие инстру
 appmenu-other-profiles = Другие профили
 appmenu-manage-profiles =
     .label = Управление профилями
+appmenu-copy-profile =
+    .label = Копировать этот профиль
 appmenu-create-profile =
     .label = Новый профиль
 appmenu-edit-profile =

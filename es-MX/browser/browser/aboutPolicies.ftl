@@ -3,10 +3,20 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-policies-title = Políticas Empresariales
+aboutpolicies-page-heading =
+    .heading = Acerca de las políticas
 # 'Active' is used to describe the policies that are currently active
 active-policies-tab = Activas
 errors-tab = Errores
 documentation-tab = Documentación
+# These title attributes label the navigation buttons when the moz-page-nav
+# sidebar is collapsed and the visible button text is hidden.
+active-policies-tab-title =
+    .title = Activas
+errors-tab-title =
+    .title = Errores
+documentation-tab-title =
+    .title = Documentación
 no-specified-policies-message = El servicio de políticas empresariales está activo pero no hay políticas habilitadas.
 inactive-message = El servicio de políticas empresariales no está activo.
 policy-name = Nombre de la política

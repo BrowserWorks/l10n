@@ -77,12 +77,20 @@ translations-panel-error-translating = Hiba történt a fordítás során. Prób
 translations-panel-error-load-languages = A nyelvek betöltése sikertelen
 translations-panel-error-load-languages-hint = Ellenőrizze az internetkapcsolatát, és próbálja újra.
 translations-panel-error-load-languages-hint-button =
-    .label = Próbálja újra
+    .label = Újrapróbálkozás
 translations-panel-error-unsupported = Ehhez az oldalhoz nem érhető el fordítás
 translations-panel-error-dismiss-button =
     .label = Megértettem!
 translations-panel-error-change-button =
     .label = Forrásnyelv módosítása
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást: { $language }.
+translations-panel-error-unsupported-hint-unknown-2 = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
@@ -218,7 +226,7 @@ select-translations-panel-translate-full-page-button =
 select-translations-panel-translate-button =
     .label = Fordítás
 select-translations-panel-try-again-button =
-    .label = Próbálja újra
+    .label = Újrapróbálkozás
 # Text displayed as a placeholder when the panel is idle.
 select-translations-panel-idle-placeholder-text = A lefordított szöveg itt fog megjelenni.
 # Text displayed as a placeholder when the panel is actively translating.
@@ -228,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = Hiba történt a fordítás során. Próbálja meg újra.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást: { $language }.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = Sajnos még nem támogatjuk az erről a nyelvről történő fordítást.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

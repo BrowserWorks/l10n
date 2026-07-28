@@ -110,6 +110,17 @@ sidebar-item-manifest = Manifest
 sidebar-item-service-workers = Service workery
     .alt = Ikona service workerů
     .title = Service workery
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = Historie relace
+    .alt = Ikona historie relace
+    .title = Historie relace
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = Zobrazit údaje historie relace
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = Diagram historie relací není dostupný
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = Cíl nepodporuje zobrazování diagramů historie relací
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Ikona varování

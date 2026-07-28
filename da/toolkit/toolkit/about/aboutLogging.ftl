@@ -31,6 +31,7 @@ about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Forindstilling for logging:
 about-logging-with-profiler-stacks-checkbox = Aktiver stack-traces for logbeskeder.
+about-logging-with-javascript-tracing-checkbox = Aktiver JavaScript-tracing
 about-logging-menu =
     .title = Avancerede indstillinger
 
@@ -52,6 +53,12 @@ about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Logmoduler til at diagnosticere WebRTC-opkald
 about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Logmoduler til at diagnosticere problemer med WebCodecs audio/video-dekodere og -kodere samt billed-kodere
+about-logging-preset-ml-label = Maskinlæring
+about-logging-preset-ml-description = Logmoduler til at diagnosticere problemer med maskinlæring
+about-logging-preset-web-compat-label = Web-kompatibilitet
+about-logging-preset-web-compat-description = Logmoduler til at diagnosticere web-kompatibilitetsproblemer
+about-logging-preset-navigation = Navigation
+about-logging-preset-navigation-description = Logmoduler til at diagnosticere problemer med navigation og sessionshistorik
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Logmoduler til at diagnosticere WebGPU-problemer
 about-logging-preset-gfx-label = Grafik
@@ -98,4 +105,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Del URL
 about-logging-upload-error = Der opstod en fejl med at uploade profilen: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Der opstod en fejl med at gemme den uploadede profil: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Der opstod en fejl med at gemme filen: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Uploadede profiler
+about-logging-no-uploaded-profiles = Der er ikke uploadet nogen profiler endnu.
+about-logging-delete-uploaded-profile = Slet
+about-logging-view-uploaded-profile = Vis profil
+about-logging-delete-profile-confirm-title = Slet profil
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Er du sikker på, at du vil slette profilen “{ $profileName }”? Dette kan ikke fortrydes.
+about-logging-deleting-profile = Sletter…

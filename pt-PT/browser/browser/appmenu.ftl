@@ -23,6 +23,8 @@ appmenuitem-new-private-window =
     .label = Nova janela privada
 appmenuitem-history =
     .label = Histórico
+appmenuitem-tab-groups =
+    .label = Grupos de separadores
 appmenuitem-downloads =
     .label = Transferências
 appmenuitem-passwords =
@@ -32,7 +34,7 @@ appmenuitem-extensions-and-themes =
 appmenuitem-extensions =
     .label = Extensões
 appmenuitem-addons-and-themes =
-    .label = Extras e temas
+    .label = Complementos e temas
 appmenuitem-print =
     .label = Imprimir…
 appmenuitem-find-in-page =
@@ -170,6 +172,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Abrir o painel do gerador de perfis
+    .tooltiptext = Abrir painel do gerador de perfis
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -196,6 +201,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Predefinição para investigar bugs de áudio e vídeo no { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Multimédia
+profiler-popup-presets-ml-description = Pré-ajuste para investigar erros de aprendizagem automática no { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Aprendizagem Automática
 profiler-popup-presets-networking-description = Predefinição para investigar bugs de rede no { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Rede
@@ -206,6 +214,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Configuração pré-definida para depuração no { -brand-shorter-name }. Apresenta grande sobrecarga, não recomendada para tarefas de desempenho, mas sim para se concentrar em compreender o comportamento do navegador.
 profiler-popup-presets-debug-label =
     .label = Depuração
+profiler-popup-presets-web-compat-description = Predefinição recomendada para depurar problemas de compatibilidade em sites, em vez de monitorizar o desempenho.
+profiler-popup-presets-web-compat-label =
+    .label = Compatibilidade Web
 profiler-popup-presets-custom-label =
     .label = Personalizada
 
@@ -271,6 +282,8 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Personalizar barra de ferramentas…
+appmenu-abouttranslations =
+    .label = Traduzir…
 appmenu-developer-tools-subheader = Ferramentas do navegador
 appmenu-developer-tools-extensions =
     .label = Extensões para Programadores
@@ -286,8 +299,13 @@ appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Mascare o seu e-mail e telefone reais
 appmenuitem-services-relay-description = Iniciar o painel de máscaras de e-mail
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Obtenha proteção para todo o dispositivo
 appmenuitem-vpn-description = Proteja a sua privacidade na Internet
 appmenu-services-header = Os meus serviços
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Experimentar outras ferramentas de proteção da BrowserWorks:
 appmenu-other-protection-header = Experimente outras ferramentas de proteção da { -vendor-short-name }:
 
 ## Profiles panel
@@ -295,6 +313,8 @@ appmenu-other-protection-header = Experimente outras ferramentas de proteção d
 appmenu-other-profiles = Outros perfis
 appmenu-manage-profiles =
     .label = Gerir perfis
+appmenu-copy-profile =
+    .label = Copiar este perfil
 appmenu-create-profile =
     .label = Novo perfil
 appmenu-edit-profile =

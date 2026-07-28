@@ -11,6 +11,15 @@
 unified-extensions-header-title = Tillägg
 unified-extensions-manage-extensions =
     .label = Hantera tillägg
+unified-extensions-discover-extensions =
+    .label = Upptäck tillägg
+unified-extensions-empty-reason-private-browsing-not-allowed = Du har tillägg installerade, men inte aktiverade i privata fönster
+unified-extensions-empty-reason-extension-not-enabled = Du har tillägg installerade, men inte aktiverade
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Höj din surfupplevelse med tillägg
+unified-extensions-empty-content-explain-enable2 = Välj “{ unified-extensions-manage-extensions.label }” för att aktivera dem i inställningarna.
+unified-extensions-empty-content-explain-manage2 = Välj “{ unified-extensions-manage-extensions.label }” för att hantera dem i inställningarna.
+unified-extensions-empty-content-explain-extensions-onboarding = Anpassa { -brand-short-name } genom att ändra dess utseende och prestanda eller förbättra integritet och säkerhet.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Öppna menyn för { $extensionName }
 unified-extensions-item-message-manage = Hantera tillägg
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } är begränsad. Att använda det kan vara riskabelt.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } bryter mot BrowserWorkss policyer. Att använda det kan vara riskabelt.
@@ -53,6 +65,11 @@ unified-extensions-mb-quarantined-domain-learn-more = Läs mer
 unified-extensions-mb-about-addons-link = Gå till tilläggsinställningar
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } inaktiverad
+    .message = Tillägget är begränsat och har inaktiverats. Du kan aktivera det i inställningarna, men det kan vara riskabelt.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } inaktiverad
     .message = Det här tillägget bryter mot BrowserWorkss policyer och har inaktiverats. Du kan aktivera det i inställningarna, men det kan vara riskabelt.
@@ -61,6 +78,14 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } inaktiverad
     .message = Det här tillägget bryter mot BrowserWorkss policyer och har inaktiverats.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+           *[other] { $extensionsCount } extensions disabled
+        }
+    .message = { $extensionsCount } tillägg inaktiverade
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -79,3 +104,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[other] { $extensionsCount } tillägg inaktiverade
         }
     .message = Vissa av dina tillägg har inaktiverats på grund av att de bryter mot BrowserWorkss policyer.
+unified-extensions-notice-safe-mode =
+    .message = Alla tillägg har inaktiverats av felsökningsläget.

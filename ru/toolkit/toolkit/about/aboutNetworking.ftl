@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH URL
 about-networking-dns-trr-mode = Режим DoH
 about-networking-dns-suffix = DNS-суффикс
 about-networking-websockets = Веб-сокеты
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Источник
+about-networking-alt-svc-alternate = Альтернативный
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Проверенный
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Ключ изоляции
 about-networking-refresh = Обновить
 about-networking-auto-refresh = Автообновление каждые 3 секунды
 about-networking-hostname = Имя узла
@@ -39,6 +46,7 @@ about-networking-dns-lookup = Запрос DNS
 about-networking-dns-lookup-button = Запросить
 about-networking-dns-domain = Домен:
 about-networking-dns-lookup-table-column = IP-адреса
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RR-ы
 about-networking-dns-https-rr-lookup-table-column = HTTP RR-ы
 about-networking-rcwn = Статистика RCWN
 about-networking-rcwn-status = Статус RCWN
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Эта страница была пере
 
 about-networking-networkid-is-up = Соединение установлено
 about-networking-networkid-status-known = Состояние соединения известно
-
-##
-

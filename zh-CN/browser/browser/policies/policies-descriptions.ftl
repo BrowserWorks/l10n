@@ -10,7 +10,8 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 存取的策略。
+policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 访问的策略。
+policy-AIControls = 配置 AI 控制。
 policy-AllowedDomainsForApps = 定义允许访问 Google Workspace 的域。
 policy-AllowFileSelectionDialogs = 允许显示文件选择对话框。
 policy-AppAutoUpdate = 启用或禁用应用程序自动更新。
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = 启用自动填写地址功能。
 policy-AutofillCreditCardEnabled = 启用自动填写付款方式功能。
 policy-AutoLaunchProtocolsFromOrigins = 定义一组外部协议列表，可不提示用户直接从列出的来源使用。
 policy-BackgroundAppUpdate2 = 启用或禁用后台更新程序。
+policy-Backup = 禁用配置文件数据的备份或恢复。
 policy-BlockAboutAddons = 阻止访问附加组件管理器（about:addons）。
 policy-BlockAboutConfig = 阻止访问 about:config 页面。
 policy-BlockAboutProfiles = 阻止访问 about:profiles 页面。
@@ -35,6 +37,7 @@ policy-Containers = 设置身份标签页相关策略。
 policy-DisableAccounts = 禁用基于账户的服务，包括同步。
 policy-DisabledCiphers = 禁用加密算法。
 policy-DefaultDownloadDirectory = 设置默认下载目录。
+policy-DefaultSerialGuardSetting = 控制 Serial API 的使用。
 policy-DisableAppUpdate = 阻止浏览器更新。
 policy-DisableBuiltinPDFViewer = 禁用 { -brand-short-name } 内置的 PDF 阅读器 PDF.js。
 policy-DisableDefaultBrowserAgent = 阻止默认浏览器用户代理执行任何操作。仅适用于 Windows，其他平台没有用户代理可用。
@@ -46,7 +49,7 @@ policy-DisableFirefoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务�
 policy-DisableFirefoxAccounts1 = 禁用基于账户的服务，包括同步。
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = 禁用 Waterfox 的“截图”功能。
-policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究实验。
+policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究项目。
 policy-DisableForgetButton = 阻止使用“抹去足迹”按钮。
 policy-DisableFormHistory = 不要记住搜索和表单的历史记录。
 policy-DisablePrimaryPasswordCreation = 若为 true，将无法创建主密码。
@@ -55,6 +58,8 @@ policy-DisablePocket2 = 禁用保存网页到 { -pocket-brand-name } 的功能�
 policy-DisablePrivateBrowsing = 禁用隐私浏览功能。
 policy-DisableProfileImport = 禁用自其他浏览器导入数据的菜单命令。
 policy-DisableProfileRefresh = 禁用 about:support 页面中的“翻新 { -brand-short-name }”按钮。
+policy-DisableRemoteImprovements = 阻止 { -brand-short-name } 在更新间隔期间进行功能、性能、稳定性更改。
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = 禁用远程设置。
 policy-DisableSafeMode = 禁用以安全模式重启浏览器的功能。注意：仅可在 Windows 上使用组策略禁用按住 Shift 键进入安全模式。
 policy-DisableSecurityBypass = 阻止用户绕过某些安全性警告。
 policy-DisableSetAsDesktopBackground = 禁用将图像“设为桌面背景”的菜单命令。
@@ -79,6 +84,7 @@ policy-ExtensionSettings = 管理扩展的各种安装设置。
 policy-ExtensionUpdate = 启用或禁用扩展自动更新。
 policy-FirefoxHome2 = 配置 { -firefox-home-brand-name }。
 policy-FirefoxSuggest = 配置 { -firefox-suggest-brand-name }
+policy-GenerativeAI = 配置生成式 AI 功能。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 在地址栏输入单个词条时，强制导航至内部网站，而非进行网上搜索。
 policy-Handlers = 配置默认应用程序处理方式。
 policy-HardwareAcceleration = 若为 false，将会关闭硬件加速。
@@ -87,6 +93,7 @@ policy-Homepage = 设置主页，可选择锁定。
 policy-HttpAllowlist = 不会被升级为 HTTPS 的来源。
 policy-HttpsOnlyMode = 允许启用 HTTPS-Only 模式。
 policy-InstallAddonsPermission = 允许特定网站安装附加组件。
+policy-IPProtectionAvailable = 阻止向用户提供内置 VPN。
 policy-LegacyProfiles = 禁用要求每个安装实例有不同用户配置文件的功能
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 对指定的网站恢�
 ##
 
 policy-LocalFileLinks = 允许特定网站链接到本地文件。
+policy-LocalNetworkAccess = 启用或禁用本地网络访问检查。
 policy-ManagedBookmarks = 配置由管理员控制的书签列表，用户无法更改。
 policy-ManualAppUpdateOnly = 只允许手动更新，并且不通知用户有可用更新。
 policy-PrimaryPassword = 要求或禁止使用主密码。
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = 启用适用于 TLS 的后量子密钥�
 policy-PDFjs = 禁用或配置 { -brand-short-name } 内置的 PDF 阅读器 PDF.js。
 policy-Permissions2 = 配置摄像头、麦克风、位置、通知和自动播放的权限。
 policy-PictureInPicture = 启用或禁用画中画。
+policy-PopupBlocking2 = 允许特定网站显示弹出式窗口以及由第三方框架重定向。
 policy-PopupBlocking = 默认允许特定网站显示弹出式窗口。
 policy-Preferences = 设置并锁定若干首选项的值。
 policy-PrivateBrowsingModeAvailability = 设置隐私浏览模式的可用性。
 policy-PromptForDownloadLocation = 下载前询问文件保存位置。
 policy-Proxy = 配置代理设置
+policy-RelaunchRequired = 要求 { -brand-short-name } 在指定时间段内重启，并通知用户即将进行的重启。
 policy-RequestedLocales = 设置应用程序表明语言区域偏好的语言区域请求列表。
 policy-SanitizeOnShutdown2 = 关机时，清除上网数据。
 policy-SearchBar = 设置搜索栏的默认位置，用户仍可自定义。
@@ -130,6 +140,7 @@ policy-SearchSuggestEnabled = 启用或禁用搜索建议。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 添加或删除 PKCS #11 模块。
 policy-ShowHomeButton = 在工具栏显示“主页”按钮
+policy-SitePolicies = 特定网站策略。
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = 启动时不显示使用条款和隐私声明。通过启用此策略，您声明自己接受使用条款；若您将此浏览器提供给其他人使用，则还需确认自己有权代表所有相关个人接受使用条款。
 policy-SSLVersionMax = 设置最高 SSL 版本。
@@ -139,8 +150,11 @@ policy-SupportMenu = 向帮助菜单自选添加技术支持项目。
 policy-TranslateEnabled = 启用或禁用网页翻译。
 policy-UserMessaging = 不向用户显示某些消息。
 policy-UseSystemPrintDialog = 使用系统打印对话框打印。
+policy-VisualSearchEnabled = 启用或禁用按图搜索。
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 阻止访问某些网站。参阅文档了解该格式的更多详情。
 policy-Windows10SSO = 允许面向 Microsoft 账户（个人/工作/学校）的 Windows 单点登录。
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = 允许面向 Microsoft Entra 账户的单点登录。
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = 启用或禁用对 XSLTProcessor JavaScript API 和 XSLT 处理指令的支持。

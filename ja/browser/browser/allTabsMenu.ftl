@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = 新しいコンテナータブ
 all-tabs-menu-hidden-tabs =
     .label = 隠しタブ
+all-tabs-menu-close-duplicate-tabs =
+    .label = 重複タブを閉じる
+all-tabs-menu-view-all-tabs =
+    .label = すべてのタブを表示
 all-tabs-menu-manage-user-context =
     .label = コンテナーを管理
     .accesskey = O
-all-tabs-menu-close-duplicate-tabs =
-    .label = 重複タブを閉じる
 all-tabs-menu-close-all-duplicate-tabs =
     .label = すべての重複タブを閉じる
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = タブグループ
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = すべてのタブから検索

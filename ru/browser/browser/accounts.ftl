@@ -38,13 +38,14 @@ account-send-tab-to-device-connectdevice = Подключить другое у�
 ## and the Sync account is unverified. Redirects to the Sync preferences page.
 
 account-send-tab-to-device-verify-status = Аккаунт не подтверждён
+account-send-tab-to-device-verify2 = Подтвердить свой аккаунт
 account-send-tab-to-device-verify = Подтвердить свой аккаунт…
 
 ## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
-account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+account-connection-title = { -fxaccount-brand-name(case: "nominative_uppercase") }
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title-2 = Аккаунт

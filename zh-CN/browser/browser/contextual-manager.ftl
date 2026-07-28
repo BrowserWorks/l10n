@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = 从其他浏览器导
 contextual-manager-passwords-command-import = 从文件导入…
 contextual-manager-passwords-command-export = 导出密码
 contextual-manager-passwords-command-remove-all = 移除所有密码
+contextual-manager-passwords-command-options = 选项
 contextual-manager-passwords-command-settings = 设置
 contextual-manager-passwords-command-help = 帮助
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = 已新增 { $added } 个，已更新 { $modified } 个
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = 新增：{ $added } 个、更新：{ $modified } 个、重复：{ $no_change } 个、错误：{ $error } 个
 contextual-manager-passwords-import-detailed-report = 查看详细报告
 contextual-manager-passwords-import-success-button = 完成
 contextual-manager-passwords-import-error-heading-and-message =
@@ -151,7 +158,7 @@ contextual-manager-passwords-password-already-exists-error-button = 转到密码
 contextual-manager-passwords-update-password-success-heading =
     .heading = 密码已保存
 contextual-manager-passwords-update-password-success-button = 完成
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = 用户名已保存
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -204,12 +211,15 @@ contextual-manager-passwords-title = 密码
 
 contextual-manager-passwords-create-label =
     .label = 添加密码
+contextual-manager-passwords-update-label =
+    .label = 更新密码
 contextual-manager-passwords-edit-label =
     .label = 编辑密码
 contextual-manager-passwords-remove-label =
     .title = 移除密码
 contextual-manager-passwords-origin-tooltip = 输入此网站的准确登录地址。
 contextual-manager-passwords-username-tooltip = 输入用于登录的用户名、邮箱地址或账号。
+contextual-manager-passwords-password-tooltip-2 = 输入密码以登录此账户。
 contextual-manager-passwords-password-tooltip = 输入用于登录此账户的密码。
 
 ## Password Card
@@ -286,6 +296,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = 找不到相关密码
+contextual-manager-passwords-no-passwords-found-message-2 = 请尝试搜索其他关键词。
 contextual-manager-passwords-no-passwords-found-message = 找不到密码，请尝试搜索其他关键词。
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -300,6 +311,8 @@ contextual-manager-passwords-no-passwords-message = 所有密码都受加密保�
 contextual-manager-passwords-no-passwords-get-started-message = 将密码添加到此处，即可开始使用。
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = 手动添加
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = 集中一处，安全保存密码
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -315,3 +328,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] 是，移除密码
        *[other] 是，移除密码
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = 输入主密码以查看保存的密码。
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = 请输入主密码
+contextual-manager-primary-password-learn-more-link = 详细了解

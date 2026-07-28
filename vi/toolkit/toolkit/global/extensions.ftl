@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Từ chối
     .accesskey = D
 webext-perms-host-description-all-urls = Truy cập dữ liệu của bạn trên mọi trang web
+webext-perms-host-description-file-urls = Truy cập các tập tin cục bộ trên máy tính của bạn
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Truy cập dữ liệu của bạn trên trang { $domain }
@@ -126,6 +127,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } yêu cầu
 
 webext-site-perms-header-with-gated-perms-midi = Tiện ích mở rộng này cung cấp { $hostname } quyền truy cập vào các thiết bị MIDI của bạn.
 webext-site-perms-header-with-gated-perms-midi-sysex = Tiện ích mở rộng này cung cấp { $hostname } quyền truy cập vào các thiết bị MIDI của bạn (với hỗ trợ SysEx).
+webext-site-perms-header-with-gated-perms-serial = Tiện ích này sẽ cho phép { $hostname } truy cập vào các thiết bị sử dụng cổng nối tiếp của bạn.
 
 ##
 
@@ -136,6 +138,12 @@ webext-site-perms-description-gated-perms-midi =
     Đây thường là các thiết bị bổ trợ như bộ tổng hợp âm thanh, nhưng cũng có thể được tích hợp vào máy tính của bạn.
     
     Các trang web thường không được phép truy cập vào thiết bị MIDI. Việc sử dụng không đúng cách có thể gây hư hỏng hoặc ảnh hưởng đến bảo mật.
+webext-site-perms-description-gated-perms-webserial =
+    Đây là những thiết bị như vi điều khiển, máy in 3D và các thiết bị khác kết nối qua cổng USB, cổng nối tiếp hoặc Bluetooth.
+    
+    Bạn có thể chọn thiết bị nào cho phép trang web truy cập.
+    
+    Thông thường, các trang web không được phép truy cập vào các thiết bị sử dụng cổng nối tiếp. Việc sử dụng không đúng cách có thể gây hư hỏng hoặc làm giảm bảo mật.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -150,6 +158,7 @@ webext-site-perms-header-unsigned-with-perms = Thêm { $extension }? Tiện ích
 
 webext-site-perms-midi = Truy cập thiết bị MIDI
 webext-site-perms-midi-sysex = Truy cập thiết bị MIDI với hỗ trợ SysEx
+webext-site-perms-serial = Truy cập thiết bị sử dụng cổng nối tiếp
 
 ## Colorway theme migration
 

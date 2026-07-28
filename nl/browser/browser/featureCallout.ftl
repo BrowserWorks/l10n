@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Vraag het Perplexity
 perplexity-callout-secondary-label-1 = Sluiten
 perplexity-callout-secondary-label-2 = Begrepen
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Wilt u een nieuwe, op privacy gerichte zoekopdracht proberen?
+start-page-callout-subtitle = Probeer Startpage. Het is ontworpen om uw zoekopdrachten vanaf het begin meer privé te houden.
+start-page-callout-primary-label = Startpage proberen
+start-page-callout-secondary-label = Sluiten
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Bescherm uw wachtwoorden door ze versleuteld m
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registreren
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Houd uw favoriete feeds in uw taakbalk
+taskbar-tabs-social-callout-subtitle = Start uw sociale websites als een app in een gestroomlijnd venster, beschermd door { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Chat vanaf uw taakbalk
+taskbar-tabs-chat-callout-subtitle = Start uw chatwebsites als een app in een gestroomlijnd venster, beschermd door { -brand-short-name }.
+taskbar-tabs-email-callout-title = Houd uw e-mail in uw taakbalk
+taskbar-tabs-email-callout-subtitle = Start uw webmail als een app in een gestroomlijnd venster, beschermd door { -brand-short-name }.
+taskbar-tabs-media-callout-title = Terug naar streaming vanaf uw taakbalk
+taskbar-tabs-media-callout-subtitle = Start uw streamingwebsites als een app in een gestroomlijnd venster, beschermd door { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Voeg deze website aan uw taakbalk toe
+taskbar-tabs-value-prop-callout-subtitle = Start hem met één klik in een eigen venster en met een vereenvoudigde interface.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Verlies niet alles wat u hebt opgeslagen als u overstapt naar Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Synchroniseer nu om uw { -brand-short-name }-bladwijzers, -wachtwoorden en -instellingen veilig en eenvoudig te herstellen.
+windows-10-eos-sync-urgency-title-2 = Neemt u afscheid van Windows 10? Bescherm uw gegevens wanneer u overstapt.
+windows-10-eos-sync-urgency-subtitle-2 = Synchroniseer om bladwijzers en wachtwoorden veilig en toegankelijk te houden, zelfs als u { -brand-short-name } niet dagelijks gebruikt.
+windows-10-eos-sync-new-device-title-1 = Loop niet het risico om op uw volgende apparaat opnieuw te beginnen.
+windows-10-eos-sync-new-device-subtitle-1 = Synchroniseer om uw { -brand-short-name }-bladwijzers, -wachtwoorden en -voorkeursinstellingen mee te nemen wanneer u verhuist.
+windows-10-eos-sync-new-device-title-2 = Verhuist u naar een nieuw apparaat? Verlies niet wat belangrijk is.
+windows-10-eos-sync-new-device-subtitle-2 = Hoe vaak u { -brand-short-name } ook gebruikt, synchronisatie beschermt uw bladwijzers, wachtwoorden en instellingen.
+windows-10-eos-sync-new-device-primary-label = Nu synchroniseren
+windows-10-eos-sync-general-title-1 = Bescherm de { -brand-short-name } die u van u hebt gemaakt.
+windows-10-eos-sync-general-subtitle-1 = Maak een reservekopie en synchroniseer uw wachtwoorden, bladwijzers, instellingen en andere gegevens om te behouden waar u op rekent.
+windows-10-eos-sync-general-title-2 = Dit is een goed moment om een reservekopie te maken van uw wachtwoorden en bladwijzers.
+windows-10-eos-sync-general-subtitle-2 = Synchroniseer nu om de dingen die u { -brand-short-name } toevertrouwt te beschermen – en krijg het altijd en overal terug.
+windows-10-eos-sync-tour-title-1 = Te veel tabbladen? Ruim op met tabbladgroepen.
+windows-10-eos-sync-tour-subtitle-1 = Sleep het ene tabblad op het andere om een groep aan te maken en dingen geordend te houden.
+windows-10-eos-sync-tour-title-2 = Ordenen voor Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synchroniseer uw bladwijzers, wachtwoorden en instellingen om er een reservekopie van te maken voordat u overschakelt.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Minder aanbevelingen tonen
+windows-10-eos-sync-dismiss-button-label = Sluiten
+windows-10-eos-sync-callout-primary-advance-button-label = Volgende
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nieuw: koppelingen ingedrukt houden voor een voorbeeld
+link-preview-onboarding-callout-description = Bekijk een korte beschrijving, leestijd en meer om te beslissen of een koppeling het klikken waard is. Ook beschikbaar via de rechtermuisknop.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Vermijd rommel met tabbladgroepen
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Groepeer uw tabbladen op taak of onderwerp. Sleep er meer in tijdens het surfen.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Een groep starten
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Tabbladtitels in de zijbalk tonen
 sidebar-button-callout-subtitle = Gebruik de zijbalkknop om de zijbalk uit te vouwen, zodat u tabbladtitels kunt zien.
 sidebar-button-callout-vertical-tabs = Selecteer de zijbalkknop in de werkbalk om uw tabbladen te tonen.
+sidebar-deprecation-callout-title = Binnenkort: bijgewerkte zijbalk
+sidebar-deprecation-callout-subtitle = We faseren de versie van de zijbalk die u momenteel gebruikt uit. Probeer de bijgewerkte zijbalk. Deze is sneller en u krijgt toegang tot meer hulpmiddelen.
+sidebar-deprecation-cta-button = Nu proberen
 
 ## Sidebar Vertical Tabs Strings
 
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Hoe tevreden bent u met toegang tot
 sidebar-genai-survey-productive-question =
     In welke mate bent u het eens of oneens met deze stelling:<br/>
     ‘De AI-chatbot in de zijbalk helpt me productiever te zijn’?
+splitview-onboarding-callout-title-1 = Gesplitste weergave: een betere manier om te multitasken
+splitview-onboarding-callout-subtitle-1 = Klik met uw rechtermuisknop op dit tabblad en kies ‘Gesplitste weergave toevoegen’ om twee tabbladen tegelijk te zien.
+splitview-onboarding-callout-cta-1 = Nu proberen
+splitview-onboarding-callout-title-2 = Bekijk twee tabbladen tegelijk met gesplitste weergave
+splitview-onboarding-callout-subtitle-2 = Geen extra vensters. Geen tabbladen wisselen. Klik met uw rechtermuisknop op dit tabblad en kies ‘Gesplitste weergave toevoegen’.
+splitview-onboarding-callout-cta-2 = Gesplitste weergave proberen
 unified-search-callout-title = Wisselen tussen zoekmachines
 unified-search-callout-subtitle = Kies wat het beste werkt voor uw specifieke zoekopdracht.
 unified-search-callout-primary-label = Volgende
@@ -195,6 +272,6 @@ actions-callout-title = Algemene taken uitvoeren of basisinstellingen benaderen
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Typ een actie zoals ‘afdrukken’ om een pagina af te drukken, of ‘wissen’ om uw geschiedenis te wissen.

@@ -22,7 +22,7 @@ urlbar-translations-button-intro =
 #   $fromLanguage (string) - The original language of the document.
 #   $toLanguage (string) - The target language of the translation.
 urlbar-translations-button-translated =
-    .tooltiptext = { $fromLanguage }에서 { $toLanguage }(으)로 번역된 페이지
+    .tooltiptext = { $fromLanguage }에서 { $toLanguage }로 번역된 페이지
 urlbar-translations-button-loading =
     .tooltiptext = 번역 진행 중
 translations-panel-settings-button =
@@ -85,6 +85,14 @@ translations-panel-error-change-button =
     .label = 원본 언어 변경
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = 죄송합니다. 아직 { $language } 번역은 지원하지 않습니다.
+translations-panel-error-unsupported-hint-unknown-2 = 죄송합니다. 아직 이 언어 번역은 지원하지 않습니다.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -110,7 +118,7 @@ translations-panel-to-label = 대상 언어:
 # Variables:
 #   $fromLanguage (string) - The original language of the document.
 #   $toLanguage (string) - The target language of the translation.
-translations-panel-revisit-header = 이 페이지는 { $fromLanguage }에서 { $toLanguage }(으)로 번역됨
+translations-panel-revisit-header = 이 페이지는 { $fromLanguage }에서 { $toLanguage }로 번역됨
 translations-panel-choose-language =
     .label = 언어 선택
 translations-panel-restore-button =
@@ -180,7 +188,7 @@ main-context-menu-translate-selection =
 # Variables:
 #   $language (string) - The localized display name of the target language
 main-context-menu-translate-selection-to-language =
-    .label = 선택한 텍스트를 { $language }(으)로 번역…
+    .label = 선택한 텍스트를 { $language }로 번역…
     .accesskey = n
 # Text displayed in the right-click context menu for translating
 # the text of a hyperlink to a yet-to-be-determined language.
@@ -193,7 +201,7 @@ main-context-menu-translate-link-text =
 # Variables:
 #   $language (string) - The localized display name of the target language
 main-context-menu-translate-link-text-to-language =
-    .label = 링크 텍스트를 { $language }(으)로 번역
+    .label = 링크 텍스트를 { $language }로 번역
     .accesskey = n
 # Text displayed in the select translations panel header.
 select-translations-panel-header = 번역
@@ -228,6 +236,16 @@ select-translations-panel-init-failure-message =
 # Text displayed when the translation fails to complete.
 select-translations-panel-translation-failure-message =
     .message = 번역하는 중에 문제가 발생했습니다. 다시 시도하세요.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = 죄송합니다. 아직 { $language } 번역은 지원하지 않습니다.
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = 죄송합니다. 아직 이 언어 번역은 지원하지 않습니다.
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }

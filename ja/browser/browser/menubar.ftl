@@ -19,6 +19,11 @@
 
 menu-application-preferences =
     .label = 設定
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = 設定...
+menu-application-set-as-default =
+    .label = { -brand-shorter-name } を既定のブラウザーに設定する
 menu-application-services =
     .label = サービス
 menu-application-hide-this =
@@ -97,6 +102,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = 共有
     .accesskey = h
+menu-file-share-qrcode =
+    .label = QR コードを生成...
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = QR コードを生成
+    .accesskey = Q
 menu-file-print-setup =
     .label = ページ設定...
     .accesskey = u
@@ -144,9 +155,7 @@ menu-view-bookmarks =
 menu-view-history-button =
     .label = 履歴
 menu-view-synced-tabs-sidebar =
-    .label = 同期タブ
-menu-view-megalist-sidebar =
-    .label = パスワード
+    .label = 同期したタブ
 menu-view-full-zoom =
     .label = ズーム
     .accesskey = Z
@@ -266,6 +275,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (使用中)
+menu-profiles-menu =
+    .label = プロファイル
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +317,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = ページの情報
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = PDF を編集...
+    .accesskey = P
 menu-settings =
     .label = 設定
     .accesskey =

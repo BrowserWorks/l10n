@@ -25,6 +25,8 @@ neterror-override-exception-button = 위험을 감수하고 계속
 neterror-pref-reset-button = 기본 설정으로 복원
 neterror-return-to-previous-page-button = 뒤로 가기
 neterror-return-to-previous-page-recommended-button = 뒤로 가기 (권장)
+neterror-try-again-button-2 = 다시 시도
+    .accesskey = T
 neterror-try-again-button = 다시 시도
 neterror-add-exception-button = 이 사이트는 항상 계속
 neterror-settings-button = DNS 설정 변경
@@ -46,6 +48,10 @@ neterror-load-error-firewall = 사용자의 컴퓨터나 네트워크가 방화�
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = 로컬 네트워크 페이지를 로드하려고 하는 경우, macOS 개인정보 보호 및 보안 설정에서 { -brand-short-name }에 로컬 네트워크 권한이 부여되었는지 확인하세요.
 neterror-http-error-page = 웹 사이트 주소를 올바르게 입력했는지 확인하세요.
+neterror-http-empty-response = 웹 사이트 주소를 올바르게 입력했는지 확인하고 잠시 후 다시 시도하세요.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname }에서 빈 페이지를 보냈습니다.
 neterror-captive-portal = 인터넷을 사용하기 위해서 반드시 이 네트워크에 로그인해야 합니다.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,19 +60,21 @@ neterror-dns-not-found-hint-header = <strong>올바른 주소를 입력한 경�
 neterror-dns-not-found-hint-try-again = 나중에 다시 시도하세요
 neterror-dns-not-found-hint-check-network = 네트워크 연결을 확인해 보세요
 neterror-dns-not-found-hint-firewall = { -brand-short-name }에 웹 액세스 권한이 있는지 확인하세요 (연결되어 있지만 방화벽 뒤에 있을 수 있음)
-neterror-dns-not-found-offline-hint-header = <strong>사용자가 무엇을 할 수 있나요?</strong>
+neterror-dns-not-found-hint-check-network-2 = 네트워크 연결을 확인해 보세요.
+neterror-dns-not-found-hint-firewall-2 = { -brand-short-name }에 웹 액세스 권한이 있는지 확인하세요 (연결되어 있지만 방화벽 뒤에 있을 수 있음).
+neterror-dns-not-found-offline-hint-header = <strong>이렇게 해보세요:</strong>
 neterror-dns-not-found-offline-hint-different-device = 다른 기기에서 연결을 시도하세요.
 neterror-dns-not-found-offline-hint-modem = 모뎀이나 공유기를 확인해 보세요.
-neterror-dns-not-found-offline-hint-reconnect = Wi-Fi 연결을 끊었다가 다시 연결해보세요.
+neterror-dns-not-found-offline-hint-reconnect = Wi-Fi 연결을 끊었다가 다시 연결해 보세요.
 
 ## TRR-only specific messages
 ## Variables:
 ##   $hostname (String) - Hostname of the website to which the user was trying to connect.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
-neterror-dns-not-found-trr-only-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 확인자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
+neterror-dns-not-found-trr-only-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 해석기를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
 neterror-dns-not-found-trr-only-reason2 = { -brand-short-name }는 보안 DNS 공급자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
-neterror-dns-not-found-trr-third-party-warning2 = 기본 DNS 확인자로 계속 사용할 수 있습니다. 그러나 제3자는 사용자가 방문하는 웹 사이트를 볼 수 있습니다.
+neterror-dns-not-found-trr-third-party-warning2 = 기본 DNS 해석기로 계속 사용할 수 있습니다. 그러나 제3자는 사용자가 방문하는 웹 사이트를 볼 수 있습니다.
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name }가 { $trrDomain }에 연결할 수 없습니다.
 neterror-dns-not-found-trr-only-timeout = { $trrDomain }에 대한 연결이 예상보다 오래 걸렸습니다.
 neterror-dns-not-found-trr-offline = 인터넷에 연결되어 있지 않습니다.
@@ -80,8 +88,7 @@ neterror-dns-not-found-trr-unknown-problem = 예기치 않은 문제.
 ## Variables:
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
-neterror-dns-not-found-native-fallback-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 확인자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name }는 보안 DNS 공급자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
+neterror-dns-not-found-native-fallback-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 해석기를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
 neterror-dns-not-found-native-fallback-heuristic = 네트워크에서 DNS over HTTP (HTTPS를 통한 DNS)가 비활성화되었습니다.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name }가 { $trrDomain }에 연결할 수 없습니다.
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name }가
 
 neterror-file-not-found-filename = 파일 이름에 대문자 또는 기타 입력 오류가 있는지 확인해 보세요.
 neterror-file-not-found-moved = 파일이 이동, 이름 변경 또는 삭제되었는지 확인해 보세요.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name }가 <strong>{ $path }</strong>에서 파일을 찾을 수 없습니다. 존재하지 않거나 경로가 잘못되었습니다.
+neterror-file-not-found-what-can-you-do = 주소를 직접 입력한 경우, 파일 이름이나 경로에 대소문자 오류나 오타가 없는지 확인해 보세요. 저장된 북마크나 링크를 통해 접속한 경우, 해당 파일이 저장된 이후 이동되었거나 이름이 변경되었거나 삭제되었을 수 있습니다. 파일 관리자를 사용하거나 최근 검색을 통해 파일을 찾아보세요.
 neterror-access-denied = 삭제, 이동 또는 권한이 없어서 접근할 수 없습니다.
 neterror-unknown-protocol = 이 주소를 열기 위해서는 다른 소프트웨어를 설치할 필요가 있습니다.
 neterror-redirect-loop = 이 문제는 드물게 해당 사이트에서 요구하는 쿠키를 차단하여 발생할 수 있습니다.
+neterror-unknown-socket-type-client-config = 클라이언트의 설정 오류가 원인일 수 있습니다.
 neterror-unknown-socket-type-psm-installed = 시스템에 개인 보안 관리자가 설치 되어 있는지 확인해 보세요.
 neterror-unknown-socket-type-server-config = 서버의 정상적이지 않은 설정 때문일 수도 있습니다.
 neterror-not-cached-intro = 요청하신 문서는 { -brand-short-name } 캐시에서 사용할 수 없습니다.
@@ -112,7 +124,7 @@ neterror-nss-failure-not-verified = 받은 데이터의 신뢰성을 확인할 �
 neterror-nss-failure-contact-website = 웹 사이트 관리자에게 연락하여 이 문제를 알려주실 수 있습니다.
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
-certerror-intro = { -brand-short-name }가 잠재적인 보안 위협을 감지하고 <b>{ $hostname }</b> 사이트로 진행하지 않았습니다. 사이트를 방문하면 공격자가 비밀번호나 이메일, 신용카드와 같은 정보를 탈취할 수 있습니다.
+certerror-intro = { -brand-short-name }가 잠재적인 보안 위협을 감지하고 <b>{ $hostname }</b> 사이트로 진행하지 않았습니다. 사이트를 방문하면 공격자가 비밀번호나 이메일, 신용 카드와 같은 정보를 탈취할 수 있습니다.
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 certerror-sts-intro = 이 웹 사이트는 보안 연결을 필요로 하므로 { -brand-short-name }가 잠재적인 보안 위협을 감지하고 <b>{ $hostname }</b> 사이트로 진행하지 않았습니다.
@@ -138,9 +150,9 @@ neterror-inadequate-security-code = 오류 코드: NS_ERROR_NET_INADEQUATE_SECUR
 neterror-clock-skew-error = 컴퓨터의 시계가 { DATETIME($now, dateStyle: "medium") }으로 설정되어 있어서 { -brand-short-name }가 안전하게 연결을 할 수 없습니다. <b>{ $hostname }</b> 방문을 위해서는 컴퓨터의 시계를 올바른 날짜, 시간 및 시간대로 설정하시고 난 후, <b>{ $hostname }</b>를 다시 로드하세요.
 neterror-network-protocol-error-intro = 네트워크 프로토콜에 오류가 감지되어 페이지를 표시할 수 없습니다.
 neterror-network-protocol-error-contact-website = 웹 사이트 관리자에게 연락하여 이 문제를 알려주실 수 있습니다.
-certerror-expired-cert-second-para = 웹 사이트의 인증서가 만료되어 { -brand-short-name }가 안전하게 연결할 수 없습니다. 사이트를 방문하면 공격자가 비밀번호나 이메일, 신용카드와 같은 정보를 탈취할 수 있습니다.
+certerror-expired-cert-second-para = 웹 사이트의 인증서가 만료되어 { -brand-short-name }가 안전하게 연결할 수 없습니다. 사이트를 방문하면 공격자가 비밀번호나 이메일, 신용 카드와 같은 정보를 탈취할 수 있습니다.
 certerror-expired-cert-sts-second-para = 웹 사이트의 인증서가 만료되어 { -brand-short-name }가 안전하게 연결할 수 없습니다.
-certerror-what-can-you-do-about-it-title = 사용자가 무엇을 할 수 있나요?
+certerror-what-can-you-do-about-it-title = 이렇게 해보세요:
 certerror-unknown-issuer-what-can-you-do-about-it-website = 이러한 문제는 대부분 웹 사이트와 관련이 있고 사용자가 할 수 있는 일은 없습니다.
 certerror-unknown-issuer-what-can-you-do-about-it-contact-admin = 회사 네트워크를 사용하고 있고 바이러스 백신 소프트웨어를 사용하고 있다면 지원부서에 지원을 요청할 수 있습니다. 웹 사이트의 관리자에게 문제에 대해 알려주실 수 있습니다.
 # Variables:
@@ -168,3 +180,42 @@ certerror-coep-learn-more = COEP(Cross Origin Embedder Policy)에 대해 더 알
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = 오류 코드: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = 인터넷 연결에 문제가 있는 것 같습니다
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name }는 { $hostname } 서버에 대한 보안 연결을 만들 수 없습니다.
+fp-neterror-offline-intro = { -brand-short-name }가 <strong>{ $hostname }</strong> 서버에 연결할 수 없습니다.
+fp-neterror-offline-intro-2 = { -brand-short-name }가 <strong>{ $hostname }</strong> 서버에 연결할 수 없습니다.
+fp-neterror-net-timeout-intro = <strong>{ $hostname }</strong> 서버가 응답하는 데 시간이 너무 오래 걸립니다.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = <strong>{ $hostname }</strong> 서버가 다음 오류를 보냈습니다: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> 사이트가 웹 보안 표준에서 허용하지 않는 빈 문자가 있는 헤더를 보냈습니다.
+fp-neterror-content-encoding-intro = 유효하지 않거나 지원하지 않는 압축 형식을 사용하므로 페이지를 표시할 수 없습니다.
+fp-neterror-coop-coep-intro = 보안 구성이 이전 페이지와 일치하지 않기 때문에 { -brand-short-name }가 이 페이지를 로드하지 않았습니다.
+fp-neterror-blocked-by-policy-intro = 사용자의 조직에서 이 페이지나 사이트에 접근할 수 없게 차단했습니다.
+fp-neterror-http-auth-disabled-intro = 사이트를 사칭하는 누군가가 사용자 이름, 비밀번호, 이메일 등을 훔칠 수 있습니다.
+fp-neterror-http-auth-disabled-secure-connection = 이 사이트는 보안 연결이 필요하며, 방문하기 위해 예외를 추가할 수 없습니다.
+fp-neterror-why-did-this-happen = 왜 이런 일이 일어났나요?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = 이 사이트는 보안 문제가 알려진 오래된 소프트웨어를 사용하고 있는 것 같습니다.
+fp-neterror-http-auth-disabled-why-dangerous-body = 연결이 안전하지 않기 때문에 { -brand-short-name }는 { $hostname } 사이트를 신뢰하지 않습니다.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = 최신 버전의 { -brand-short-name }를 사용하고 있는지 확인하세요. 메뉴에서 도움말 > { -brand-short-name } 정보로 이동하세요. 최신 { -brand-short-name }를 사용하고 있다면, 사이트 자체에 문제가 있을 가능성이 큽니다.
+fp-neterror-offline-what-can-you-do-body = 다른 기기에 연결해 보세요. 모뎀이나 라우터를 확인하세요. Wi-Fi 연결을 끊었다가 다시 연결해 보세요.
+fp-neterror-http-auth-disabled-what-can-you-do-body = URL을 HTTPS로 변경해 보세요. 하지만 사이트 자체에 문제가 있을 가능성이 높습니다.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = 때로는 웹 사이트가 다른 사이트와의 원치 않는 상호작용으로부터 스스로를 보호하기 위한 방어 장치를 마련하기도 합니다.
+fp-learn-more-about-https-connections = HTTPS 연결에 대해 알아보기
+fp-neterror-vpn-error-title = VPN에 연결할 수 없음
+fp-neterror-vpn-error-description = 몇 분 후 다시 시도하세요.
+fp-neterror-denied-port-access = 이 주소는 일반적으로 웹 탐색 이외의 목적으로 사용되는 네트워크 포트를 사용합니다. { -brand-short-name }가 사용자 보호를 위해 요청을 취소했습니다.

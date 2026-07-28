@@ -1,0 +1,346 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+profile-window-heading = Valitse { -brand-short-name }-profiili
+profile-window-body = Pidä työsi ja henkilökohtainen selaus, mukaan lukien salasanat ja kirjanmerkit, täysin erillään. Tai luo profiileja kaikille tämän laitteen käyttäjille.
+# This checkbox appears in the Choose profile window that appears when the browser is opened. "Show this" refers to this window, which is displayed when the checkbox is enabled.
+profile-window-checkbox-label-2 =
+    .label = Valitse profiili, kun { -brand-short-name } avautuu
+# This subcopy appears below the checkbox when it is unchecked
+profile-window-checkbox-subcopy = { -brand-short-name } avautuu viimeksi käytettyyn profiiliisi.
+profile-window-create-profile = Luo profiili
+profile-card-edit-button =
+    .title = Muokkaa profiilia
+    .aria-label = Muokkaa profiilia
+profile-card-delete-button =
+    .title = Poista profiili
+    .aria-label = Poista profiili
+# Variables
+#   $profileName (string) - The name of the profile
+profile-card =
+    .title = Avaa { $profileName }
+    .aria-label = Avaa { $profileName }
+# Variables
+#   $number (number) - The number of the profile
+default-profile-name = Profiili { $number }
+# The word 'original' is used in the sense that it is the initial or starting profile when you install Firefox.
+original-profile-name = Alkuperäinen profiili
+default-desktop-shortcut-name = { -brand-short-name }
+edit-profile-page-title = Muokkaa profiilia
+edit-profile-page-header = Muokkaa profiiliasi
+edit-profile-page-profile-name-label = Profiilin nimi
+edit-profile-page-theme-header-2 =
+    .label = Teema
+edit-profile-page-explore-themes = Tutustu muihin teemoihin
+edit-profile-page-desktop-shortcut-header = Luo työpöydän pikakuvake
+edit-profile-page-desktop-shortcut-toggle =
+    .aria-label = Luo työpöydän pikakuvake
+edit-profile-page-avatar-header-2 =
+    .label = Profiilikuva
+edit-profile-page-delete-button =
+    .label = Poista
+edit-profile-page-avatar-selector-opener-link = Muokkaa
+avatar-selector-icon-tab = Kuvake
+avatar-selector-custom-tab = Mukautettu
+avatar-selector-cancel-button =
+    .label = Peruuta
+avatar-selector-save-button =
+    .label = Tallenna
+avatar-selector-upload-file = Lähetä tiedosto
+avatar-selector-drag-file = Tai vedä tiedosto tähän
+avatar-selector-add-image = Lisää kuva
+avatar-selector-crop = Rajaa
+edit-profile-page-no-name = Nimeä tämä profiili, jotta tunnistat sen myöhemmin. Nimeä se uudelleen milloin tahansa.
+edit-profile-page-duplicate-name = Profiilin nimi on jo käytössä. Kokeile toista nimeä.
+edit-profile-page-profile-saved = Tallennettu
+new-profile-page-title = Uusi profiili
+new-profile-page-header = Mukauta uutta profiiliasi
+new-profile-page-header-description = Jokainen profiili pitää yksilöllisen selaushistorian ja asetukset erillään muista profiileistasi. Lisäksi { -brand-short-name }in vahvat yksityisyyden suojaukset ovat oletuksena käytössä.
+new-profile-page-learn-more = Lue lisää
+new-profile-page-input-placeholder =
+    .placeholder = Valitse nimi, kuten "Työ" tai "Henkilökohtainen"
+new-profile-page-done-button =
+    .label = Muokkaus valmis
+# Variables
+#   $profilename (String) - The name of the copied profile.
+copied-profile-page-header-2 = Kopio profiilista ”{ $profilename }” on valmis muokattavaksi
+copied-profile-page-header-description = Kopioimme tietosi ja asetuksesi uuteen profiiliin. Anna sille nyt nimi, valitse ulkoasu ja tee siitä omasi.
+restored-profile-page-header = Mukauta palautettua profiiliasi
+restored-profile-page-header-description = Jokainen profiili pitää yksilöllisen selaushistorian ja asetukset erillään muista profiileistasi. Lisäksi { -brand-short-name }in vahvat yksityisyyden suojaukset ovat oletuksena käytössä.
+restored-profile-page-learn-more = Lue lisää
+profile-window-title-2 = { -brand-short-name } - Valitse profiili
+profile-window-logo =
+    .alt = { -brand-short-name }in logo
+
+## Delete profile dialogue that allows users to review what they will lose if they choose to delete their profile. Each item (open windows, etc.) is displayed in a table, followed by a column with the number of items.
+
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-page-title = Poista profiili { $profilename }
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-header = Poistetaanko profiili { $profilename }?
+delete-profile-description = { -brand-short-name } poistaa seuraavat tiedot pysyvästi tältä laitteelta:
+# Open is an adjective, as in "browser windows currently open".
+delete-profile-windows = Avoimet ikkunat
+# Open is an adjective, as in "browser tabs currently open".
+delete-profile-tabs = Avoimet välilehdet
+delete-profile-bookmarks = Kirjanmerkit
+delete-profile-history = Historia (vieraillut sivut, evästeet, sivustotiedot)
+delete-profile-autofill = Automaattisen täytön tiedot (osoitteet, maksutavat)
+delete-profile-logins = Salasanat
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-page-title-2 = Poista profiili ”{ $profilename }”
+
+##
+
+# Button label
+delete-profile-cancel = Peruuta
+# Button label
+delete-profile-confirm = Poista
+
+## These strings are color themes available to select from the profile selection screen. Theme names should be localized.
+
+# The default light theme
+profiles-light-theme = Vaalea
+# The default dark theme
+profiles-dark-theme = Tumma
+# The default system theme
+profiles-system-theme = Järjestelmä
+profiles-system-theme-title =
+    .title = Käytä järjestelmän teemaa
+# This light theme features sunny colors such as goldenrod and pale yellow. Its name evokes the color of a marigold flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-marigold-theme-2 = Kehäkukankeltainen
+# This light theme features various shades of soft, muted purples. Its name evokes the color of a lavender flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-lavender-theme-2 = Vaalea laventeli
+# This light theme features very pale green tones. Its name evokes the color of pale green mint ice cream. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-lichen-theme-2 = Mintunvihreä
+# This light theme features various shades of pink ranging from pale to bold. Its name evokes the color of a pink magnolia flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-magnolia-theme-2 = Magnolianpinkki
+# Ocean blue is a dark theme that features very dark blues and black. Its name evokes the color of the deep ocean water. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-ocean-theme-2 = Merensininen
+# This dark theme features warm oranges, dark mahogany browns, and earthy red/brown colors. The name evokes the earthy colors of brick masonry. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-terracotta-theme-2 = Tiilenpunainen
+# This dark theme features forest green, dusky green with a gray undertone, and a muted sage green. Its name evokes the rich color of green moss in the forest. This name can be translated directly if its easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
+profiles-moss-theme-2 = Sammaleenvihreä
+profiles-gray-theme = Harmaa
+profiles-gray-theme-title =
+    .title = Käytä harmaata teemaa
+profiles-yellow-theme = Keltainen
+profiles-yellow-theme-title =
+    .title = Käytä keltaista teemaa
+profiles-orange-theme = Oranssi
+profiles-orange-theme-title =
+    .title = Käytä oranssia teemaa
+profiles-red-theme = Punainen
+profiles-red-theme-title =
+    .title = Käytä punaista teemaa
+profiles-pink-theme = Pinkki
+profiles-pink-theme-title =
+    .title = Käytä pinkkiä teemaa
+profiles-purple-theme = Liila
+profiles-purple-theme-title =
+    .title = Käytä liilaa teemaa
+profiles-violet-theme = Violetti
+profiles-violet-theme-title =
+    .title = Käytä violettia teemaa
+profiles-blue-theme = Sininen
+profiles-blue-theme-title =
+    .title = Käytä sinistä teemaa
+profiles-green-theme = Vihreä
+profiles-green-theme-title =
+    .title = Käytä vihreää teemaa
+profiles-cyan-theme = Syaani
+profiles-cyan-theme-title =
+    .title = Käytä syaania teemaa
+profiles-custom-theme-title =
+    .title = Käytä mukautettua teemaa
+
+## Data collection settings changed (multi-profile)
+
+# Full infobar message with inline bold title followed by body text
+multiprofile-data-collection-message = <strong>Tiedonkeruun asetuksia on muutettu.</strong> Toisessa profiilissa tehdyt muutokset koskevat kaikkia tämän laitteen profiileja.
+# Primary button label to open the Data collection section in Settings
+multiprofile-data-collection-view-settings = Näytä asetukset
+# Secondary button label to dismiss the infobar without action
+multiprofile-data-collection-dismiss = Hylkää
+
+## Alternative text for default profile icons
+
+book-avatar-alt =
+    .alt = Kirja
+briefcase-avatar-alt =
+    .alt = Salkku
+picture-avatar-alt =
+    .alt = Kuva
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-alt =
+    .alt = Käsityö
+flower-avatar-alt =
+    .alt = Kukka
+folder-avatar-alt =
+    .alt = Kansio
+hammer-avatar-alt =
+    .alt = Vasara
+heart-avatar-alt =
+    .alt = Sydän
+heart-rate-avatar-alt =
+    .alt = Sydänkäyrä
+clock-avatar-alt =
+    .alt = Kello
+leaf-avatar-alt =
+    .alt = Lehti
+lightbulb-avatar-alt =
+    .alt = Lamppu
+makeup-avatar-alt =
+    .alt = Meikki
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-alt =
+    .alt = Viesti
+musical-note-avatar-alt =
+    .alt = Nuotti
+palette-avatar-alt =
+    .alt = Paletti
+paw-print-avatar-alt =
+    .alt = Tassunjälki
+plane-avatar-alt =
+    .alt = Lentokone
+# Present refers to a gift box, not the current time period
+present-avatar-alt =
+    .alt = Lahja
+shopping-avatar-alt =
+    .alt = Ostoskärryt
+soccer-ball-avatar-alt =
+    .alt = Jalkapallo
+sparkle-single-avatar-alt =
+    .alt = Kimallus
+star-avatar-alt =
+    .alt = Tähti
+video-game-controller-avatar-alt =
+    .alt = Peliohjain
+custom-avatar-alt =
+    .alt = Mukautettu profiilikuva
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-alt =
+    .alt = Maapallo
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar-alt =
+    .alt = Timantti
+barbell-avatar-alt =
+    .alt = Painonnostotanko
+bike-avatar-alt =
+    .alt = Polkupyörä
+
+## Tooltips for default avatar icons
+
+book-avatar = Kirja
+briefcase-avatar = Salkku
+clock-avatar = Kello
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar = Käsityö
+custom-avatar = Mukautettu profiilikuva
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar = Timantti
+flower-avatar = Kukka
+folder-avatar = Kansio
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar = Maapallo
+hammer-avatar = Vasara
+heart-avatar = Sydän
+heart-rate-avatar = Sydänkäyrä
+leaf-avatar = Lehti
+lightbulb-avatar = Lamppu
+makeup-avatar = Meikki
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar = Viesti
+musical-note-avatar = Nuotti
+palette-avatar = Paletti
+paw-print-avatar = Tassunjälki
+picture-avatar = Kuva
+plane-avatar = Lentokone
+# Present refers to a gift box, not the current time period
+present-avatar = Lahja
+shopping-avatar = Ostoskärryt
+soccer-ball-avatar = Jalkapallo
+sparkle-single-avatar = Kimallus
+star-avatar = Tähti
+video-game-controller-avatar = Peliohjain
+custom-avatar-crop-back-button =
+    .aria-label = Takaisin
+custom-avatar-crop-view =
+    .aria-label = Rajaa kuvanäkymä
+custom-avatar-crop-area =
+    .aria-label = Säädä rajausaluetta
+custom-avatar-drag-handle =
+    .aria-label = Muuta rajausalueen kokoa
+profiles-appmenu-callout-tour-title = Uusi profiilisi on käyttövalmis
+# "Spin up another" means creating another profile, “Hop between your digital lives" is referring to switching between different profiles such as work, personal, etc.
+profiles-appmenu-callout-tour-subtitle = Napsauta ☰-valikossa profiilinimeäsi luodaksesi uuden profiilin, muokataksesi tätä profiilia tai vaihtaaksesi profiilien välillä.
+profiles-appmenu-callout-tour-primary-button = Näytä ohje
+barbell-avatar = Painonnostotanko
+bike-avatar = Polkupyörä
+
+## Tooltips for default avatar icons
+
+barbell-avatar-tooltip =
+    .tooltiptext = Käytä painonnostotangon kuvaa profiilikuvana
+bike-avatar-tooltip =
+    .tooltiptext = Käytä polkupyörän kuvaa profiilikuvana
+book-avatar-tooltip =
+    .tooltiptext = Käytä kirjan kuvaa profiilikuvana
+briefcase-avatar-tooltip =
+    .tooltiptext = Käytä salkun kuvaa profiilikuvana
+picture-avatar-tooltip =
+    .tooltiptext = Käytä kuvan kuvaa profiilikuvana
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-tooltip =
+    .tooltiptext = Käytä käsityön kuvaa profiilikuvana
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-tooltip =
+    .tooltiptext = Käytä maapallon kuvaa profiilikuvana
+diamond-avatar-tooltip =
+    .tooltiptext = Käytä timantin kuvaa profiilikuvana
+flower-avatar-tooltip =
+    .tooltiptext = Käytä kukan kuvaa profiilikuvana
+folder-avatar-tooltip =
+    .tooltiptext = Käytä kansion kuvaa profiilikuvana
+hammer-avatar-tooltip =
+    .tooltiptext = Käytä vasaran kuvaa profiilikuvana
+heart-avatar-tooltip =
+    .tooltiptext = Käytä sydämen kuvaa profiilikuvana
+heart-rate-avatar-tooltip =
+    .tooltiptext = Käytä sydänkäyrän kuvaa profiilikuvana
+clock-avatar-tooltip =
+    .tooltiptext = Käytä kellon kuvaa profiilikuvana
+leaf-avatar-tooltip =
+    .tooltiptext = Käytä lehden kuvaa profiilikuvana
+lightbulb-avatar-tooltip =
+    .tooltiptext = Käytä lampun kuvaa profiilikuvana
+makeup-avatar-tooltip =
+    .tooltiptext = Käytä meikin kuvaa profiilikuvana
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-tooltip =
+    .tooltiptext = Käytä viestin kuvaa profiilikuvana
+musical-note-avatar-tooltip =
+    .tooltiptext = Käytä nuotin kuvaa profiilikuvana
+palette-avatar-tooltip =
+    .tooltiptext = Käytä paletin kuvaa profiilikuvana
+paw-print-avatar-tooltip =
+    .tooltiptext = Käytä tassunjäljen kuvaa profiilikuvana
+plane-avatar-tooltip =
+    .tooltiptext = Käytä lentokoneen kuvaa profiilikuvana
+# Present refers to a gift box, not the current time period
+present-avatar-tooltip =
+    .tooltiptext = Käytä lahjapaketin kuvaa profiilikuvana
+shopping-avatar-tooltip =
+    .tooltiptext = Käytä ostoskärryjen kuvaa profiilikuvana
+soccer-ball-avatar-tooltip =
+    .tooltiptext = Käytä jalkapallon kuvaa profiilikuvana
+sparkle-single-avatar-tooltip =
+    .tooltiptext = Käytä kimalluksen kuvaa profiilikuvana
+star-avatar-tooltip =
+    .tooltiptext = Käytä tähden kuvaa profiilikuvana
+video-game-controller-avatar-tooltip =
+    .tooltiptext = Käytä videopeliohjaimen kuvaa profiilikuvana

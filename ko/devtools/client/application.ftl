@@ -110,6 +110,22 @@ sidebar-item-manifest = 매니페스트
 sidebar-item-service-workers = Service Worker
     .alt = Service Worker 아이콘
     .title = Service Worker
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = 세션 기록
+    .alt = 세션 기록 아이콘
+    .title = 세션 기록
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = 세션 기록 데이터 보기
+# Title (tooltip) for the clickable Session History diagram column headers, which
+# navigate the inspected page to that entry in its session history.
+# Variables:
+#   $index (number) - The session history index that will be navigated to.
+session-history-navigate-button-title = 세션 기록 항목 { $index }로 이동
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = 세션 기록 다이어그램을 사용할 수 없음
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = 대상이 세션 기록 다이어그램 표시를 지원하지 않음
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = 경고 아이콘

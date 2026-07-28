@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Megjelenítés
 download-cert-view-text = A CA tanúsítványának megvizsgálása
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Véglegesen
 client-auth-cert-remember-temporarily =
     .label = Ebben a munkamenetben
-client-auth-cert-remember-box =
-    .label = A döntés megjegyzése
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Jelszó (ismét):
 set-password-reminder = Fontos: Ha elfelejti a tanúsítványokról készült biztonsági mentéshez használt jelszót, nem fogja tudni visszaállítani a tanúsítványokat a mentésből.  Írja fel biztonságos helyre.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Védett hitelesítés
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Hitelesítsen a(z) „{ $tokenName }” biztonsági eszközön. Ennek módja az eszköztől függ (például ujjlenyomat-olvasó használata vagy kód beírása billentyűzettel).
 
 ## Protected authentication alert
 

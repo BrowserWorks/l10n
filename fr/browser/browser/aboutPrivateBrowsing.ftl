@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Laisser { -brand-short-nam
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } s’occupe pour vous des demandes de cookies.
 about-private-browsing-cookie-banners-promo-body = Désormais, nous refusons automatiquement de nombreuses demandes de dépôt de cookies. Vous pouvez ainsi subir moins de pistage et retrouver une navigation sans distractions.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Ne laissez aucune trace sur cet appareil
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } efface cookies, historique de navigation et données de sites lorsque vous fermez toutes les fenêtres de navigation privée.
 about-private-browsing-felt-privacy-v1-info-link = Qui peut voir mon activité ?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = La fermeture de toutes vos fenêtres privées supprime vos cookies, votre historique et les données des sites.
+about-private-browsing-nova-info-link = Qui pourrait encore voir mon activité ?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Votre historique de navigation ne sera pas enregistré
+about-private-browsing-nova-info-subheader = Nous effacerons toutes les recherches et toutes les connexions à la fermeture de cette fenêtre. Les protections intégrées de { -brand-short-name } sont également activées ici, comme le blocage des traqueurs.

@@ -203,3 +203,61 @@ bar-tooltip-cryptominer =
             [one] { $count } mineur de cryptomonnaies ({ $percentage } %)
            *[other] { $count } mineurs de cryptomonnaies ({ $percentage } %)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Protection de la vie privée
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqué cette semaine
+       *[other] { $count } bloqués cette semaine
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } traqueur
+       *[other] { $count } traqueurs
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } détecteur d’empreinte numérique
+       *[other] { $count } détecteurs d’empreinte numérique
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de pistage
+       *[other] { $count } cookies de pistage
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } traqueur de réseaux sociaux
+       *[other] { $count } traqueurs de réseaux sociaux
+    }
+privacy-metrics-empty = Aucun traqueur bloqué cette semaine. { -brand-short-name } vous protège contre les menaces suivantes pendant votre navigation.
+privacy-metrics-loading = Chargement des statistiques de protection…
+privacy-metrics-error = Impossible de charger les statistiques de protection.
+privacy-metrics-private-window = { -brand-short-name } continue de bloquer les traqueurs dans les fenêtres de navigation privée, mais ne conserve aucune trace de ce qui a été bloqué.
+
+## VPN promo card and banner
+
+protections-vpn-title = Protégez votre vie privée au-delà du navigateur
+protections-vpn-header-content = Sécurisez tout votre appareil avec { -mozilla-vpn-brand-name }. En un seul geste, tout votre trafic est chiffré et votre position reste cachée.
+protections-get-vpn-link = Obtenir { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN : abonné·e
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [1] L’utilisation de { -mozilla-vpn-brand-name } permet de chiffrer tout votre trafic et de masquer votre localisation sur un seul appareil. Tirez le meilleur parti de votre abonnement ; installez-le depuis le <a data-l10n-name="playstore-link">Google Play Store</a> ou l’<a data-l10n-name="appstore-link">App Store d’Apple</a>.
+       *[other] L’utilisation de { -mozilla-vpn-brand-name } permet de chiffrer tout votre trafic et de masquer votre localisation sur un maximum de { $count } appareils. Tirez le meilleur parti de votre abonnement ; installez-le depuis le <a data-l10n-name="playstore-link">Google Play Store</a> ou l’<a data-l10n-name="appstore-link">App Store d’Apple</a>.
+    }
+protections-vpn-banner-header = Une protection qui va au-delà du navigateur
+protections-vpn-banner-content = Essayez { -mozilla-vpn-brand-name } sans risque et voyez pourquoi TechRadar affirme : « sa rapidité, sa simplicité, et son tarif mensuel abordable valent le détour ».
+protections-vpn-banner-link = Obtenir { -mozilla-vpn-brand-name }

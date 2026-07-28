@@ -11,10 +11,15 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = ضبط السياسات التي يمكن لامتدادات الوِب WebExtensions الوصول إليها عبر chrome.storage.managed.
+policy-AIControls = اضبط عناصر التحكم بالذكاء الاصطناعي.
+policy-AllowedDomainsForApps = حدّد النطاقات المسموح لها بالوصول إلى مساحة عمل جوجل.
+policy-AllowFileSelectionDialogs = اسمح بحوارات اختيار الملف.
 policy-AppAutoUpdate = تفعيل/تعطيل تحديث التطبيق تلقائيًا.
 policy-AppUpdatePin = منع تحديث { -brand-short-name } خارج نطاق الإصدارة المحددة.
 policy-AppUpdateURL = ضبط مسار التحديث المخصّص للتطبيق.
 policy-Authentication = ضبط الاستيثاق المتكامل مع المواقع التي تدعمه.
+policy-AutofillAddressEnabled = فعِّل الملء الآلي للعناوين.
+policy-AutofillCreditCardEnabled = فعِّل الملء الآلي لطرق الدفع.
 policy-BackgroundAppUpdate2 = تفعيل/تعطيل أداة التحديث في الخلفية.
 policy-BlockAboutAddons = منع الوصول إلى مدير الإضافات (about:addons).
 policy-BlockAboutConfig = منع الوصول إلى صفحة about:config.
@@ -23,8 +28,11 @@ policy-BlockAboutSupport = منع الوصول إلى صفحة about:support.
 policy-Bookmarks = إنشاء العلامات في شريط العلامات أو في قائمة العلامات أو في مجلد محدّد داخلها.
 policy-CaptivePortal = تفعيل/تعطيل دعم بوّابات التقييد Captive Portal.
 policy-CertificatesDescription = إضافة الشهادات أو استخدام الشهادات المضمّنة.
-policy-Cookies = السماح للمواقع بضبط الكعكات أو الرفض.
-policy-DefaultDownloadDirectory = ضبط دليل التنزيل المبدئي.
+policy-Cookies = اسمح للمواقع بضبط الكعكات أو الرفض.
+# Containers in this context is referring to container tabs in Firefox.
+policy-Containers = عيِّن سياسات متعلقة بالحاويات.
+policy-DisabledCiphers = عطّل التشفيرات.
+policy-DefaultDownloadDirectory = عيّن مجلد التنزيل المبدئي.
 policy-DisableAppUpdate = منع المتصفح من التحديث.
 policy-DisableBuiltinPDFViewer = تعطيل PDF.js، عارِض ملفات PDF المضمّن في { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = امنع وكيل المتصفّح المبدئي من اتخاذ أي إجراء. لا ينطبق هذا إلا على وِندوز إذ ليس لبقية المنصات وكلاء.
@@ -42,6 +50,7 @@ policy-DisablePocket2 = تعطيل ميزة حفظ الصفحات في { -pocket
 policy-DisablePrivateBrowsing = تعطيل التصفح الخاص.
 policy-DisableProfileImport = تعطيل أمر القائمة الخاص باستيراد البيانات من المتصفحات الأخرى.
 policy-DisableProfileRefresh = تعطيل زر ”أنعِش { -brand-short-name }“ في صفحة about:support.
+policy-DisableRemoteImprovements = امنع { -brand-short-name } من تطبيق تغييرات الأداء والاستقرار والميزات بين التحديثات.
 policy-DisableSafeMode = تعطيل ميزة إعادة التشغيل في الوضع الآمن. ملاحظة: لا يمكن تعطيل مفتاح Shift لدخول الوضع الآمن في وِندوز إلا باستخدام سياسة المجموعات.
 policy-DisableSecurityBypass = منع المستخدم من تخطّي أنواع معيّنة من التحذيرات الأمنية.
 policy-DisableSetAsDesktopBackground = تعطيل أمر القائمة الخاص بالضبط كخلفية سطح مكتب للصور.
@@ -52,7 +61,7 @@ policy-DisplayBookmarksToolbar = عرض شريط أدوات العلامات م�
 policy-DisplayMenuBar = عرض شريط القوائم مبدئيا.
 policy-DNSOverHTTPS = ضبط DNS عبر HTTPS
 policy-DontCheckDefaultBrowser = تعطيل التحقق من كون المتصفح هو المبدئي عند بدئه.
-policy-DownloadDirectory = ضبط وقفل دليل التنزيل.
+policy-DownloadDirectory = عيّن واقفل مجلد التنزيل.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = تفعيل أو تعطيل حجب المحتوى وقفل الخيار إن لزم.
 # “lock” means that the user won’t be able to change this setting
@@ -64,12 +73,17 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = تعطيل الت
 policy-Extensions = تثبيت أو إزالة أو قفل حالة الامتدادات. يأخذ خيار التثبيت مسارات محلية أو شبكية كمعطيات. يأخذ خياري الإزالة والقفل معرّفات الامتدادات.
 policy-ExtensionSettings = إدارة كل ما يتعلّق بتثبيت الامتدادات.
 policy-ExtensionUpdate = تفعيل/تعطيل تحديث الامتدادات تلقائيًا.
+policy-FirefoxHome2 = اضبط { -firefox-home-brand-name }.
 policy-FirefoxSuggest = اضبط { -firefox-suggest-brand-name }.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = أجبر التنقل المباشر إلى موقع الإنترانت بدلاً من البحث عند كتابة كلمات مفردة في شريط العناوين.
 policy-Handlers = ضبط طرائق التعامل مع التطبيقات المبدئية.
 policy-HardwareAcceleration = إن كان ”خطأ“، عطِّل التسريع العتادي.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = ضبط صفحة البداية وقفل الخيار إن لزم.
-policy-InstallAddonsPermission = السماح لبعض المواقع بتثبيت الإضافات.
+policy-HttpAllowlist = الأصول التي لن تُرقى إلى HTTPS.
+policy-HttpsOnlyMode = اسمح بتفعيل وضع HTTPS فقط.
+policy-InstallAddonsPermission = اسمح لبعض المواقع بتثبيت الإضافات.
+policy-IPProtectionAvailable = امنع استخدام خدمة VPN المدمجة من قِبل المستخدمين.
 policy-LegacyProfiles = تعطيل الميزة التي تُجبر بوجود ملف منفصل لكلّ نسخة مثبّتة.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -79,10 +93,12 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = العودة إلى س
 
 ##
 
-policy-LocalFileLinks = السماح لمواقع بعينها أن تصنع روابط إلى ملفات محلية.
+policy-LocalFileLinks = اسمح لمواقع بعينها أن تصنع روابط إلى ملفات محلية.
+policy-LocalNetworkAccess = فعِّل أو عطِّل التحقق من الوصول إلى الشبكة المحلية.
 policy-ManagedBookmarks = ضبط قائمة من العلامات المُدارة من الإدارة بحيث لا يمكن للمستخدم تغييرها.
-policy-ManualAppUpdateOnly = السماح بالتحديثات اليدوية فقط وعدم إعلام المستخدم بالتحديثات.
+policy-ManualAppUpdateOnly = اسمح بالتحديثات اليدوية فقط وعدم إعلام المستخدم بالتحديثات.
 policy-PrimaryPassword = طلب استعمال كلمة سر رئيسية، أو منع ذلك.
+policy-PrintingEnabled = فعِّل الطباعة أو عطّلها.
 policy-NetworkPrediction = تفعيل/تعطيل التوقّع الشبكي (الجلب المسبق لِ‍ DNS).
 policy-NewTabPage = تفعيل/تعطيل صفحة ”لسان جديد“.
 policy-NoDefaultBookmarks = تعطيل إنشاء العلامات المبدئية المشمولة في { -brand-short-name }، كما والعلامات الذكية (”الأكثر زيارة“، ”الوسوم الحديثة“). لاحظ: تعمل هذه السياسة إن استُخدمت قبل أول تشغيل لملف الإعدادات، وليس بعد ذلك.
@@ -92,25 +108,43 @@ policy-OverrideFirstRunPage = الكتابة على صفحة ”أوّل تشغ�
 policy-OverridePostUpdatePage = الكتابة على صفحة ”ما الجديد“ التي تأتي بعد التحديث. اضبط السياسة إلى فراغ إن أردت تعطيل صفحة ما بعد تثبيت التحديث.
 policy-PasswordManagerEnabled = تفعيل حفظ كلمات السر في مدير كلمات السر.
 policy-PasswordManagerExceptions = منع { -brand-short-name } من حفظ كلمات السر لمواقع معيّنة.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = فعِّل اتفاقية المفتاح ما بعد الكم لـ TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs = تعطيل أو ضبط PDF.js، عارِض ملفات PDF المضمّن في { -brand-short-name }.
-policy-Permissions2 = ضبط تصاريح الكمرة والمِكرفون والمكان والتنبيهات والتشغيل التلقائي.
-policy-PictureInPicture = تفعيل الڤديو المعترِض أو تعطيله.
-policy-PopupBlocking = السماح لبعض المواقع بعرض المنبثقات مبدئيا.
+policy-Permissions2 = ضبط تصاريح الكمرة والمِكرفون والمكان والإشعارات والتشغيل التلقائي.
+policy-PictureInPicture = فعِّل أو عطِّل الفديو المعترِض.
+policy-PopupBlocking2 = اسمح لمواقع معينة بعرض النوافذ المنبثقة وإعادة التوجيه عبر نوافذ طرف ثالث.
+policy-PopupBlocking = اسمح لبعض المواقع بعرض المنبثقات مبدئيا.
 policy-Preferences = ضبط وقفل قيمة إحدى المجموعات الفرعية في التفضيلات.
+policy-PrivateBrowsingModeAvailability = عيِّن مدى توفر وضع التصفح الخاص.
 policy-PromptForDownloadLocation = السؤال عن مكان حفظ الملفات عند تنزيلها.
 policy-Proxy = ضبط إعدادات الوسيط.
+policy-RelaunchRequired = يتطلب إعادة إطلاق { -brand-short-name } خلال فترة زمنية محددة وإخطار المستخدم بإعادة الإطلاق القادمة.
 policy-RequestedLocales = ضبط قائمة المحليّات المطلوبة للتطبيق بقائمة مرتّبة.
 policy-SanitizeOnShutdown2 = مسح معلومات التنقّل عند الإطفاء.
 policy-SearchBar = ضبط المكان المبدئي لشريط البحث. يمكن للمستخدم تخصيصه.
 policy-SearchEngines = ضبط إعدادات محرّك البحث. هذه السياسة متاحة في النسخة ممتدّة الدعم (ESR) لا غير.
 policy-SearchSuggestEnabled = تفعيل/تعطيل اقتراحات البحث.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = أضف أو احذف وحدات PKCS #11.
 policy-ShowHomeButton = عرض زر الصفحة الرئيسية في شريط الأدوات.
+policy-SitePolicies = سياسات خاصة بموقع.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = لا تعرض شروط الاستخدام وتنويه الخصوصية عند بدء التشغيل. أنت تقرّ بأنك تقبل شروط الاستخدام وتملك الصلاحية لقبولها نيابةً عن جميع الأفراد الذين تمنحهم حق الوصول إلى هذا المتصفح.
 policy-SSLVersionMax = ضبط إصدارة SSL العليا.
 policy-SSLVersionMin = ضبط إصدارة SSL الدنيا.
+policy-StartDownloadsInTempDirectory = أجبر بدء التنزيلات في موقع محلي مؤقت بدلاً من مجلد التنزيل المبدئي.
 policy-SupportMenu = إضافة عنصر ”الدعم“ (يمكن تخصيصه) في قائمة المساعدة.
 policy-TranslateEnabled = فعّل أو عطّل ترجمة صفحة الوِب.
 policy-UserMessaging = عدم عرض بعض الرسائل بعينها للمستخدم.
+policy-UseSystemPrintDialog = الطباعة باستخدام مربع حوار الطباعة الخاص بالنظام.
+policy-VisualSearchEnabled = فعّل أو عطّل البحث المرئي.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = منع زيارة المواقع. طالع التوثيق لتفاصيل أكثر بخصوص النسق.
-policy-Windows10SSO = السماح بالولوج الموحّد من وِندوز إلى حسابات ميكروسوفت وحسابات العمل والحسابات المدرسية.
+policy-Windows10SSO = اسمح بالولوج الموحّد من وِندوز إلى حسابات ميكروسوفت وحسابات العمل والحسابات المدرسية.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = اسمح بتسجيل الدخول مرة واحدة لحسابات Microsoft Entra.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = فعّل أو عطّل دعم واجهة برمجة تطبيقات جافا سكريبت XSLTProcessor وتعليمات معالجة XSLT.

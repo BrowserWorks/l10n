@@ -23,7 +23,7 @@ list-empty-available-updates =
 list-empty-recent-updates =
     .value = لم تحدّث أي إضافات مؤخرًا
 list-empty-find-updates =
-    .label = التمس التحديثات
+    .label = تحقق مِن التحديثات
 list-empty-button =
     .label = اعرف المزيد عن الإضافات
 help-button = دعم الإضافات
@@ -81,9 +81,9 @@ detail-repository =
 detail-repository-value =
     .value = { detail-repository.label }
 detail-check-for-updates =
-    .label = التمس التحديثات
-    .accesskey = س
-    .tooltiptext = التمس التحديثات لهذه الإضافة
+    .label = تحقق مِن التحديثات
+    .accesskey = ت
+    .tooltiptext = تحقق مِن التحديثات لهذه الإضافة
 detail-show-preferences =
     .label =
         { PLATFORM() ->
@@ -108,13 +108,15 @@ disabled-unsigned-heading =
     .value = عُطّلت بعض الإضافات
 disabled-unsigned-description = لم يُتحقق من الإضافات التالية لاستخدامها مع { -brand-short-name }. يمكنك <label data-l10n-name="find-addons">البحث عن بدائل</label> أو أن تطلب من المطوّر أن يجعل موزيلا تتحقق منهم.
 disabled-unsigned-learn-more = اطلع أكثر على مجهوداتنا في إبقائك آمنا على الإنترنت.
-disabled-unsigned-devinfo = المطورين المهتمين بأن تتحقق موزيلا من إضافاتهم، يمكنهم قراءة <label data-l10n-name="learn-more">دليلنا</label>.
+disabled-unsigned-devinfo = المطوِّرين المهتمين بأن تتحقق موزيلا من إضافاتهم، يمكنهم قراءة <label data-l10n-name="learn-more">دليلنا</label>.
 plugin-deprecation-description = أهناك ما تفتقده؟ لم يعد { -brand-short-name } يدعم بعض الملحقات. <label data-l10n-name="learn-more">اطّلع على المزيد.</label>
 legacy-warning-show-legacy = اعرض الامتدادات العتيقة
 legacy-extensions =
     .value = امتدادات عتيقة
 legacy-extensions-description = لا تحقق هذه الامتدادات معايير { -brand-short-name } الحالية، لذا عُطّلت. <label data-l10n-name="legacy-learn-more">تعرّف على التغييرات على الإضافات</label>
 private-browsing-description2 = بدأ { -brand-short-name } بتغيير كيفية عمل الامتدادات في التصفح الخاص. مبدئيًا، لن تعمل أي امتدادات جديدة تُضيفها إلى { -brand-short-name } في النوافذ الخاصة. إن لم تغيّر ذلك وتسمح به في الإعدادات فلن يعمل الامتداد وأنت في التصفح الخاص، ولن يملك حق الوصول إلى نشاطك على الوِب فيها. أجرينا هذا التغيير ليكون التصفح الخاص خاصًا بحق. <label data-l10n-name="private-browsing-learn-more">اطّلع على طريقة إدارة إعدادات الامتدادات</label>
+aboutaddons-sidebar =
+    .heading = الإضافات
 addon-category-discover = مُقترحة عليك
 addon-category-discover-title =
     .title = مُقترحة عليك
@@ -165,10 +167,12 @@ extensions-warning-update-security-button = فعّل
 extensions-warning-imported-addons2 =
     .message = رجاءً إنهي تثبيت الامتدادات التي استوردت إلى { -brand-short-name }.
 extensions-warning-imported-addons-button = تثبيت الامتدادات
+extensions-warning-safe-mode3 =
+    .message = عُطِّل جميع الإضافات بواسطة وضع استكشاف الأخطاء وإصلاحها.
 
 ## Strings connected to add-on updates
 
-addon-updates-check-for-updates = التمس التحديثات
+addon-updates-check-for-updates = تحقق مِن التحديثات
     .accesskey = ت
 addon-updates-view-updates = اعرض التحديثات الأخيرة
     .accesskey = ض
@@ -201,6 +205,10 @@ addon-updates-manual-updates-found = اعرض التحديثات المتاحة
 
 addon-install-from-file = نصّب إضافة من ملف…
     .accesskey = ن
+# Like `addon-install-from-file` but used when the `extensions.webextensions.prefer-update-over-install-for-existing-addon`
+# pref is set.
+addon-install-or-update-from-file = ثبّت أو حدِّث الإضافة من ملف…
+    .accesskey = ب
 addon-install-from-file-dialog-title = اختر إضافة لتنصيبها
 addon-install-from-file-filter-name = الإضافات
 addon-open-about-debugging = نقّح الإضافات
@@ -270,7 +278,19 @@ discopane-notice-recommendations = بعض هذه المُقترحات مخصّص
 discopane-notice-recommendations2 =
     .message = بعض هذه المُقترحات مخصّصة لك، إذ تعتمد على الامتدادات التي ثبّتها وتفضيلات الملف الشخصي وإحصاءات الاستخدام.
 discopane-notice-learn-more = اطّلع على المزيد
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = أُزيلت سمة/ات تلاوينك.
+    .message =
+        قام { -brand-product-name } بتحديث مجموعة أنظمة التلاوين. لقد أزلنا
+        الإصدار/ات القديمة من قائمة "السمات المحفوظة" الخاصة بك. احصل على الإصدارات الجديدة من
+        موقع الإضافات.
 colorway-removal-notice-learn-more = اطّلع على المزيد
+colorway-removal-notice-button = احصل على أحدث سمات تلاوين
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = إعدادات تباين نظام التشغيل ويندوز لديك تتجاوز سمات { -brand-short-name }. عطِّل تشغيل هذه الإعدادات لاستخدام السمات الموجودة في { -brand-short-name }.
 privacy-policy = سياسة الخصوصية
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -291,6 +311,16 @@ find-more-themes = ابحث عن المزيد من السمات
 # used for screen readers.
 addon-options-button =
     .aria-label = خيارات أكثر
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    تتيح لك الإمتدادات والسمات تخصيص { -brand-product-name }. فهي تعزز الخصوصية،
+    وتزيد الإنتاجية، وتحسن جودة الوسائط، وتغير مظهر { -brand-product-name }،
+    وغير ذلك الكثير.
+    غالبًا ما تُطوِّر هذه البرامج الصغيرة بواسطة جهات خارجية. إليك
+    مجموعة مختارة يوصي بها فايرفوكس <a data-l10n-name="learn-more-trigger">لأمان وأداء ووظائف استثنائية.</a>
 
 ## Add-on actions
 
@@ -373,7 +403,7 @@ addon-detail-updates-label = اسمح بالتحديثات التلقائية
 addon-detail-updates-radio-default = المبدئي
 addon-detail-updates-radio-on = مفعّل
 addon-detail-updates-radio-off = معطّل
-addon-detail-update-check-label = التمس التحديثات
+addon-detail-update-check-label = تحقق مِن التحديثات
 install-update-button = حدّث
 # aria-label associated to the updates row to help screen readers to announce the group
 # of input controls being entered.
@@ -428,6 +458,20 @@ addon-badge-verified2 =
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line4 =
     .title = الامتدادات الرسمية التي أنشأتها موزيلا. يستوفي معايير الأمن والأداء
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = جرت مراجعة هذا الامتداد ليفي لمعايير الأمن والأداء
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = يوصي فايرفوكس فقط بالإضافات التي تستوفي معايير الأمان والأداء
 
 ##
 
@@ -435,11 +479,18 @@ available-updates-heading = التحديثات المتاحة
 recent-updates-heading = التحديثات الأخيرة
 release-notes-loading = يحمّل…
 release-notes-error = المعذرة، ولكن حصل خطأ أثناء تحميل ملاحظات الإصدار.
+addon-permissions-heading = الصلاحيات
 addon-permissions-empty2 = لا يطلب هذا الامتداد أيّ صلاحيات.
+addon-permissions-required-label = مطلوب:
+addon-permissions-optional-label = اختياري:
 addon-permissions-empty = لا يطلب هذا الامتداد أيّ صلاحيات
 addon-permissions-required = الصلاحيات المطلوبة للوظيفة الجوهرية:
 addon-permissions-optional = صلاحيات اختيارية للوظائف المضافة:
 addon-permissions-learnmore = اطّلع على المزيد عن التصاريح
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = تُدير منظمتك إدارة بعض الأذونات.
 recommended-extensions-heading = الامتدادات المقترحة
 recommended-themes-heading = السمات المقترحة
 # Variables:
@@ -463,6 +514,9 @@ shortcuts-heading = أدِر اختصارات الامتدادات
 default-heading-search-label = ابحث عن إضافات أكثر
 addons-heading-search-input =
     .placeholder = ابحث في addons.mozilla.org
+addons-heading-search-button =
+    .title = ابحث في addons.mozilla.org
+    .aria-label = ابحث في addons.mozilla.org
 addon-page-options-button =
     .title = أدوات لجميع الإضافات
 
@@ -491,9 +545,15 @@ details-notification-hard-blocked-other =
     .message = حُظرت هذه الإضافة بسبب انتهاكه لسياسات BrowserWorks وعُطّلت.
 details-notification-unsigned-link = المزيد من المعلومات
 details-notification-blocked = عُطّلت { $name } لأسباب تتعلق بالأمن أو الثبات.
-details-notification-blocked2 =
-    .message = عُطّلت { $name } لأسباب تتعلق بالأمن أو الثبات.
 details-notification-blocked-link2 = اعرض التفاصيل
+details-notification-soft-blocked-extension-disabled2 =
+    .message = قٌيّد هذا الامتداد وتم تعطيله. يمكنك تفعيله، ولكن قد يشكل هذا خطرًا عليك.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = هذا الامتداد مُقيد، واستخدامه قد يكون خطيرًا.
+details-notification-soft-blocked-other-disabled2 =
+    .message = هذه الإضافة مقيدة ومعطّلة. يمكنك تفعيلها، ولكن قد يكون ذلك محفوفًا بالمخاطر.
+details-notification-soft-blocked-other-enabled2 =
+    .message = هذه الإضافة مقيدة. استخدامها قد يكون محفوفاً بالمخاطر.
 details-notification-soft-blocked-extension-disabled =
     .message = حُظر هذا الامتداد بسبب انتهاكه لسياسات BrowserWorks وعُطّل. يمكنك تفعيله، ولكن هذا قد يكون محفوفًا بالمخاطر.
 details-notification-soft-blocked-extension-enabled =
@@ -505,8 +565,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = اعرض التفاصيل
 details-notification-blocked-link = مزيد من المعلومات
 details-notification-softblocked = { $name } معروفة بتسببها لمشاكل في الأمن أو الثبات.
-details-notification-softblocked2 =
-    .message = { $name } معروفة بتسببها لمشاكل في الأمن أو الثبات.
 details-notification-softblocked-link = مزيد من المعلومات
 details-notification-gmp-pending = سينصّب { $name } حالًا.
 details-notification-gmp-pending2 =
@@ -524,9 +582,33 @@ plugins-widevine-description = تتيح هذه الملحقة تشغيل الو�
 ## Headings for the Permissions tab in `about:addons` when the data collection
 ## feature is enabled.
 
+addon-permissions-required-data-collection = تجميع البيانات المطلوبة:
+addon-permissions-optional-data-collection = تجميع البيانات بشكل اختياري:
+# Name of the Permissions tab in `about:addons` when the data collection feature is enabled.
+permissions-data-addon-button = الأذونات والبيانات
+# This is a description for extension that use this AI model
+# Variables:
+#   $extensionName (String) - Name of the extension
+mlmodel-extension-label = يستخدم بواسطة الامتداد { $extensionName }
+addon-permissions-data-collection-heading = جمع البيانات
+addon-permissions-data-collection-empty = يقول المطور أن هذا الامتداد لا يتطلب جمع البيانات.
+addon-data-collection-provided = المعلومات مقدمة من مطوِّر الإضافة
+addon-data-collection-learnmore = اطّلع على المزيد حول جمع البيانات
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
+mlmodel-about-inference = { -brand-short-name } يستخدم هذا في صفحة about:inference
+mlmodel-link-preview = { -brand-short-name } يستخدم هذا لتوليد النقاط الرئيسية عند معاينة الروابط
+mlmodel-pdfjs = { -brand-short-name } يستخدم هذا لإنشاء نص بديل للصور التي تضيفها إلى ملفات PDF
+mlmodel-smart-tab-topic-engine = { -brand-short-name } يستخدم هذا لاقتراح أسماء لمجموعات ألسنتك
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } يستخدم هذا لاقتراح ألسنة لمجموعات ألسنتك
+mlmodel-formfill-engine = { -brand-short-name } يستخدم هذا للمساعدة في ملء نماذج العناوين
+# AI Model will be downloaded on the users device and used locally
+addon-category-mlmodel = الذكاء الاصطناعي على الجهاز
+addon-category-mlmodel-title =
+    .title = الذكاء الاصطناعي على الجهاز
+mlmodel-heading = أدِر نماذج الذكاء الاصطناعي على الجهاز
+mlmodel-description = تعتمد بعض الميزات والامتدادات في { -brand-short-name } على نماذج الذكاء الاصطناعي التي تعمل محليًا على جهازك. يحمي هذا الأسلوب خصوصيتك، وفي كثير من الحالات، يُسرّع الأداء. <a data-l10n-name="learn-more">اطّلع على المزيد</a>
 # Label for button that when clicked removed local model
 mlmodel-remove-addon-button =
     .aria-label = أزِل
@@ -537,3 +619,5 @@ mlmodel-addon-detail-last-used-label = آخر استخدام
 mlmodel-addon-detail-used-by-label = يستخدمُها
 # This is a section label to describe the link to the model card on the Hugging Face website
 mlmodel-addon-detail-model-card = بطاقة نموذجية
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = اعرض على Hugging Face

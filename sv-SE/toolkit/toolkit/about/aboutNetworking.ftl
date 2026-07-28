@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH-URL
 about-networking-dns-trr-mode = DoH-läge
 about-networking-dns-suffix = DNS-suffix
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Ursprung
+about-networking-alt-svc-alternate = Alternativ
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Validerad
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isoleringsnyckel
 about-networking-refresh = Uppdatera
 about-networking-auto-refresh = Autouppdatera var 3:e sekund
 about-networking-hostname = Värdnamn
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS-uppslagning
 about-networking-dns-lookup-button = Lös fel
 about-networking-dns-domain = Domän:
 about-networking-dns-lookup-table-column = IPs
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RR
 about-networking-dns-https-rr-lookup-table-column = HTTP-RR
 about-networking-rcwn = RCWN statistik
 about-networking-rcwn-status = RCWN status
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Den här sidan har flyttats till <a data-
 
 about-networking-networkid-is-up = Länken är uppe
 about-networking-networkid-status-known = Länkstatus är känd
-
-##
-

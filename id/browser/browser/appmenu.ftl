@@ -23,10 +23,16 @@ appmenuitem-new-private-window =
     .label = Jendela Mode Pribadi Baru
 appmenuitem-history =
     .label = Riwayat
+appmenuitem-tab-groups =
+    .label = Grup tab
 appmenuitem-downloads =
     .label = Unduhan
 appmenuitem-passwords =
     .label = Kata Sandi
+appmenuitem-extensions-and-themes =
+    .label = Ekstensi dan tema
+appmenuitem-extensions =
+    .label = Ekstensi
 appmenuitem-addons-and-themes =
     .label = Pengaya dan Tema
 appmenuitem-print =
@@ -166,6 +172,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Buka panel profiler
+    .tooltiptext = Buka panel profiler
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -192,6 +201,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Prasetel untuk menyelidiki bug audio dan video di { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Media
+profiler-popup-presets-ml-description = Prasetel untuk menyelidiki bug pembelajaran mesin di { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Pembelajaran Mesin
 profiler-popup-presets-networking-description = Prasetel untuk menyelidiki bug jaringan di { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Jaringan
@@ -202,6 +214,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Prasetel untuk debugging di { -brand-shorter-name }. Profiler ini memiliki overhead tinggi, jangan gunakan untuk kinerja tetapi gunakan untuk fokus pada pemahaman perilaku peramban.
 profiler-popup-presets-debug-label =
     .label = Debug
+profiler-popup-presets-web-compat-description = Prasetel yang disarankan untuk mengawakutu masalah kompatibilitas web di situs web, daripada melacak kinerja.
+profiler-popup-presets-web-compat-label =
+    .label = Kompat Web
 profiler-popup-presets-custom-label =
     .label = Khusus
 
@@ -267,6 +282,8 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Ubahsuai Bilah Alat…
+appmenu-abouttranslations =
+    .label = Terjemahkan…
 appmenu-developer-tools-subheader = Alat Peramban
 appmenu-developer-tools-extensions =
     .label = Ekstensi untuk Pengembang
@@ -282,8 +299,13 @@ appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Tutupi surel dan telepon asli Anda
 appmenuitem-services-relay-description = Luncurkan dasbor masker surel
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Dapatkan perlindungan untuk seluruh perangkat
 appmenuitem-vpn-description = Lindungi aktivitas daring Anda
 appmenu-services-header = Layanan saya
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Coba alat perlindungan lain dari BrowserWorks:
 appmenu-other-protection-header = Coba alat perlindungan lain dari { -vendor-short-name }:
 
 ## Profiles panel
@@ -291,6 +313,8 @@ appmenu-other-protection-header = Coba alat perlindungan lain dari { -vendor-sho
 appmenu-other-profiles = Profil lainnya
 appmenu-manage-profiles =
     .label = Kelola profil
+appmenu-copy-profile =
+    .label = Salin profil ini
 appmenu-create-profile =
     .label = Profil baru
 appmenu-edit-profile =

@@ -8,7 +8,7 @@
 ## must have a corresponding entry in the `PERMISSION_L10N_ID_OVERRIDES` map.
 
 webext-perms-description-bookmarks = Leer y modificar marcadores
-webext-perms-description-browserSettings = Leer y modificar configuración del navegador
+webext-perms-description-browserSettings = Leer y modificar los ajustes del navegador
 webext-perms-description-browsingData = Borrar historial de navegación reciente, cookies y datos relacionados
 webext-perms-description-clipboardRead = Obtener datos desde el portapapeles
 webext-perms-description-clipboardWrite = Ingresar datos desde el portapapeles
@@ -24,8 +24,8 @@ webext-perms-description-management = Controlar el uso de la extensión y admini
 webext-perms-description-nativeMessaging = Intercambiar mensajes con programas distintos a { -brand-short-name }
 webext-perms-description-notifications = Mostrarte notificaciones
 webext-perms-description-pkcs11 = Proporciona servicios autenticación criptográfica
-webext-perms-description-privacy = Leer y modificar la configuración de privacidad
-webext-perms-description-proxy = Controlar configuración del proxy del navegador
+webext-perms-description-privacy = Leer y modificar los ajustes de privacidad
+webext-perms-description-proxy = Controlar los ajustes del proxy del navegador
 webext-perms-description-sessions = Acceder a pestañas recientemente cerradas del navegador
 webext-perms-description-tabs = Acceder a pestañas del navegador
 webext-perms-description-tabHide = Ocultar y mostrar pestañas de navegación
@@ -46,6 +46,30 @@ webext-perms-extra-warning-userScripts-short = Los scripts no verificados pueden
 ##
 ## This is used when the data collection permissions are required.
 
+webext-perms-description-data-short-authenticationInfo = información de autenticación
+webext-perms-description-data-short-bookmarksInfo = marcadores
+webext-perms-description-data-short-browsingActivity = actividad de navegación
+webext-perms-description-data-short-financialAndPaymentInfo = información financiera y de pagos
+webext-perms-description-data-short-healthInfo = información de salud
+webext-perms-description-data-short-locationInfo = ubicación
+webext-perms-description-data-short-personalCommunications = comunicaciones personales
+webext-perms-description-data-short-personallyIdentifyingInfo = información de identificación personal
+webext-perms-description-data-short-searchTerms = términos de búsqueda
+webext-perms-description-data-short-technicalAndInteraction = datos técnicos y de interacción
+webext-perms-description-data-short-websiteActivity = actividad del sitio web
+webext-perms-description-data-short-websiteContent = contenido del sitio web
 
 ## Long form to be used in `about:addons` when these data collection permissions are optional.
 
+webext-perms-description-data-long-authenticationInfo = Compartir información de autenticación con el desarrollador de la extensión
+webext-perms-description-data-long-bookmarksInfo = Compartir información de marcadores con el desarrollador de la extensión
+webext-perms-description-data-long-browsingActivity = Compartir la actividad de navegación con el equipo de desarrollo de la extensión
+webext-perms-description-data-long-financialAndPaymentInfo = Compartir información financiera y de pagos con el equipo de desarrollo de la extensión
+webext-perms-description-data-long-healthInfo = Compartir información de salud con el desarrollador de la extensión
+webext-perms-description-data-long-locationInfo = Compartir información de ubicación con el desarrollador de la extensión
+webext-perms-description-data-long-personalCommunications = Compartir comunicaciones personales con el desarrollador de la extensión
+webext-perms-description-data-long-personallyIdentifyingInfo = Compartir información de identificación personal con el desarrollador de la extensión
+webext-perms-description-data-long-searchTerms = Compartir términos de búsqueda con el desarrollador de la extensión
+webext-perms-description-data-long-technicalAndInteraction = Compartir datos técnicos y de interacción con el desarrollador de la extensión
+webext-perms-description-data-long-websiteActivity = Compartir la actividad del sitio web con el desarrollador de la extensión
+webext-perms-description-data-long-websiteContent = Compartir contenido del sitio web con el desarrollador de la extensión

@@ -30,7 +30,7 @@ webext-perms-description-sessions = Tilgang til nylege attlatne faner
 webext-perms-description-tabs = Få tilgang til faner
 webext-perms-description-tabHide = Gøym og vis nettlesarfaner
 webext-perms-description-topSites = Få tilgang til nettlesarhistorikken
-webext-perms-description-trialML = Last ned og køyr AI-modellar på eininga di
+webext-perms-description-trialML = Last ned og køyr KI-modellar på eininga di
 webext-perms-description-userScripts = Tillat at ikkje stadfesta tredjepartsskript får tilgang til dataa dine
 webext-perms-description-webNavigation = Få tilgang til nettlesaraktivitet under navigasjon
 
@@ -49,6 +49,7 @@ webext-perms-extra-warning-userScripts-short = Ikkje stadfesta skript kan utgjer
 webext-perms-description-data-short-authenticationInfo = autentiseringsinformasjon
 webext-perms-description-data-short-bookmarksInfo = bokmerke
 webext-perms-description-data-short-browsingActivity = nettlesaraktivitet
+webext-perms-description-data-short-financialAndPaymentInfo = finansiell- og betalingsinformasjon
 webext-perms-description-data-short-healthInfo = helseinformasjon
 webext-perms-description-data-short-locationInfo = plassering
 webext-perms-description-data-short-personalCommunications = personleg kommunikasjon
@@ -61,4 +62,14 @@ webext-perms-description-data-short-websiteContent = nettstad-innhald
 ## Long form to be used in `about:addons` when these data collection permissions are optional.
 
 webext-perms-description-data-long-authenticationInfo = Del autentiseringsinformasjon med utvidingsutviklaren
+webext-perms-description-data-long-bookmarksInfo = Del bokmerkeinformasjon med utviklar av utvidinga
+webext-perms-description-data-long-browsingActivity = Del nettlesaraktivitet med utvidingsutviklaren
+webext-perms-description-data-long-financialAndPaymentInfo = Del finansielle opplysningar og betalingsinformasjon med utvidingsutviklaren
+webext-perms-description-data-long-healthInfo = Del helseinformasjon med utvidingsutviklaren
+webext-perms-description-data-long-locationInfo = Del posisjonsinformasjon med utvidingsutviklaren
+webext-perms-description-data-long-personalCommunications = Del personleg kommunikasjon med utvidingsutviklaren
+webext-perms-description-data-long-personallyIdentifyingInfo = Del personleg identifiserbar informasjon med utvidingsutviklaren
+webext-perms-description-data-long-searchTerms = Del søkeord med utvidingsutviklaren
 webext-perms-description-data-long-technicalAndInteraction = Del tekniske data og interaksjonsdata med utvidingsutviklaren
+webext-perms-description-data-long-websiteActivity = Del nettstadaktivitet med utvidingsutviklaren
+webext-perms-description-data-long-websiteContent = Del nettstadinnhald med utvidingsutviklaren

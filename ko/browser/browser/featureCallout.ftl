@@ -58,7 +58,7 @@ split-dismiss-button-dont-show-option =
     .label = 이 추천을 다시 표시 안 함
 # Dismisses message and reduces frequency of message
 split-dismiss-button-show-fewer-option =
-    .label = 추천 적게 표시
+    .label = 추천 줄이기
 # Opens about:preferences#general-cfrfeatures
 split-dismiss-button-manage-settings-option =
     .label = 설정 관리
@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Perplexity에 질문
 perplexity-callout-secondary-label-1 = 닫기
 perplexity-callout-secondary-label-2 = 확인
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = 개인 정보 보호에 중점을 둔 새로운 검색을 사용해 보시겠습니까?
+start-page-callout-subtitle = 시작 페이지를 사용해 보세요. 검색에서 처음부터 개인 정보를 더욱 보호하도록 설계되었습니다.
+start-page-callout-primary-label = 시작 페이지 사용해보기
+start-page-callout-secondary-label = 닫기
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = 암호화를 통해 비밀번호를 기기에 
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = 가입
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = 작업 표시줄에 즐겨찾는 피드를 고정하세요
+taskbar-tabs-social-callout-subtitle = 소셜 사이트를 { -brand-short-name }로 보호되는 간소화된 창에서 앱처럼 실행하세요.
+taskbar-tabs-chat-callout-title = 작업 표시줄에서 채팅하세요
+taskbar-tabs-chat-callout-subtitle = 채팅 사이트를 { -brand-short-name }로 보호되는 간소화된 창에서 앱처럼 실행하세요.
+taskbar-tabs-email-callout-title = 작업 표시줄에 이메일을 고정하세요
+taskbar-tabs-email-callout-subtitle = 웹메일을 { -brand-short-name }로 보호되는 간소화된 창에서 앱처럼 실행하세요.
+taskbar-tabs-media-callout-title = 작업 표시줄에서 스트리밍을 다시 시작하세요
+taskbar-tabs-media-callout-subtitle = 스트리밍 사이트를 { -brand-short-name }로 보호되는 간소화된 창에서 앱처럼 실행하세요.
+taskbar-tabs-value-prop-callout-title = 이 사이트를 작업 표시줄에 추가
+taskbar-tabs-value-prop-callout-subtitle = 한 번의 클릭으로 자체 창과 간소화된 인터페이스에서 실행하세요.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Windows 11로 전환하여 저장한 모든 항목을 잃어버리지 마세요.
+windows-10-eos-sync-urgency-subtitle-1 = { -brand-short-name } 북마크, 비밀번호, 설정을 안전하고 쉽게 복원하려면 지금 동기화하세요.
+windows-10-eos-sync-urgency-title-2 = Windows 10과 작별을 고하시겠습니까? 전환 시에도 데이터를 보호하세요.
+windows-10-eos-sync-urgency-subtitle-2 = { -brand-short-name }를 매일 사용하지 않더라도, 북마크와 비밀번호를 안전하게 보관하고 접근할 수 있도록 동기화하세요.
+windows-10-eos-sync-new-device-title-1 = 다음 기기에서 다시 시작해야 하는 위험을 감수하지 마세요.
+windows-10-eos-sync-new-device-subtitle-1 = 동기화하여 { -brand-short-name } 북마크, 비밀번호, 설정을 기기를 옮길 때 함께 가져갈 수 있습니다.
+windows-10-eos-sync-new-device-title-2 = 새 기기로 옮기시겠습니까? 중요한 것을 잃지 마세요.
+windows-10-eos-sync-new-device-subtitle-2 = { -brand-short-name }를 얼마나 자주 사용하든 동기화는 북마크, 비밀번호, 설정을 보호합니다.
+windows-10-eos-sync-new-device-primary-label = 지금 동기화
+windows-10-eos-sync-general-title-1 = 나만의 것으로 만든 { -brand-short-name }를 보호하세요.
+windows-10-eos-sync-general-subtitle-1 = 중요한 데이터를 보존하기 위해 비밀번호, 북마크, 설정 및 기타 데이터를 백업하고 동기화하세요.
+windows-10-eos-sync-general-title-2 = 지금이 비밀번호와 북마크를 백업할 적기입니다.
+windows-10-eos-sync-general-subtitle-2 = 지금 동기화하여 { -brand-short-name }를 신뢰하는 자료를 보호하고 언제 어디서나 다시 가져올 수 있습니다.
+windows-10-eos-sync-tour-title-1 = 탭이 너무 많나요? 탭 그룹으로 깔끔하게 정리하세요.
+windows-10-eos-sync-tour-subtitle-1 = 그룹을 만들고 정리하려면 한 탭을 다른 탭 위로 드래그하세요.
+windows-10-eos-sync-tour-title-2 = Windows 11에 맞게 정리하세요.
+windows-10-eos-sync-tour-subtitle-2 = 전환하기 전에 북마크, 비밀번호 및 설정을 동기화하여 백업하세요.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = 추천 줄이기
+windows-10-eos-sync-dismiss-button-label = 닫기
+windows-10-eos-sync-callout-primary-advance-button-label = 다음
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = 신규: 길게 눌러 링크 미리보기
+link-preview-onboarding-callout-description = 짧은 설명, 읽는 시간 등을 보고 링크를 누를 가치가 있는지 결정하세요. 마우스 오른쪽 버튼 클릭에서도 사용할 수 있습니다.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = 탭 그룹으로 깔끔하게 정리하세요
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = 작업이나 주제별로 탭을 그룹화해 보세요. 필요할 때마다 드래그해서 추가할 수 있습니다.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = 그룹 시작
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = 사이드바에 탭 제목 표시
 sidebar-button-callout-subtitle = 사이드바 버튼을 사용하여 탭 제목을 볼 수 있도록 사이드바를 확장하세요.
 sidebar-button-callout-vertical-tabs = 탭을 표시하려면, 도구 모음에서 사이드바 버튼 을 선택하세요.
+sidebar-deprecation-callout-title = 업데이트된 사이드바가 곧 제공됨
+sidebar-deprecation-callout-subtitle = 현재 사용하고 계신 사이드바 버전은 단계적으로 사용할 수 없습니다. 업데이트된 사이드바를 사용해 보세요. 더 빠르고 더 많은 도구에 접근할 수 있습니다.
+sidebar-deprecation-cta-button = 지금 사용해보기
 
 ## Sidebar Vertical Tabs Strings
 
@@ -172,7 +243,7 @@ sidebar-callout-survey-agree = 동의함
 sidebar-callout-survey-disagree = 동의 안함
 sidebar-callout-survey-strongly-disagree = 매우 동의 안함
 sidebar-callout-survey-features-question = 다음은 잠재적인 사이드바 기능입니다. { -brand-short-name }에서 생산성을 가장 향상시키는 것은 무엇입니까?
-sidebar-callout-survey-split-view = 두 웹사이트를 나란히 분할해서 보기
+sidebar-callout-survey-split-view = 분할 화면에서 두 웹 사이트를 나란히 보기
 sidebar-callout-survey-keep-website-open = 탐색하는 동안 이메일이나 캘린더와 같은 웹 사이트를 사이드바에 열어 두기
 sidebar-callout-survey-saved-websites-2 = 북마크에 빠르게 접근
 sidebar-callout-survey-none-of-above = 해당 사항 없음
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = 사이드바의 AI 챗봇에 접근
 sidebar-genai-survey-productive-question =
     다음 의견에 얼마나 동의하십니까?<br/>
     "사이드바에 AI 챗봇을 사용하면 생산성을 높일 수 있습니다"
+splitview-onboarding-callout-title-1 = 분할 화면: 멀티태스킹을 위한 더 나은 방법
+splitview-onboarding-callout-subtitle-1 = 이 탭을 마우스 오른쪽 버튼으로 클릭하고 "분할 화면 추가"를 선택하면 한 번에 두 개의 탭을 볼 수 있습니다.
+splitview-onboarding-callout-cta-1 = 지금 사용해보기
+splitview-onboarding-callout-title-2 = 분할 화면으로 한 번에 두 개의 탭 보기
+splitview-onboarding-callout-subtitle-2 = 추가 창이나 탭 전환 없이 사용하세요. 이 탭을 마우스 오른쪽 버튼으로 클릭하고 "분할 화면 추가"를 선택하세요.
+splitview-onboarding-callout-cta-2 = 분할 화면 사용해보기
 unified-search-callout-title = 검색 엔진 전환
 unified-search-callout-subtitle = 특정 검색에 가장 적합한 것을 선택하세요.
 unified-search-callout-primary-label = 다음
@@ -195,6 +272,6 @@ actions-callout-title = 일반 작업 완료 또는 기본 설정 접근
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = "인쇄"와 같은 작업을 입력하여 페이지를 인쇄하거나, "지우기"를 눌러 기록을 지우세요.

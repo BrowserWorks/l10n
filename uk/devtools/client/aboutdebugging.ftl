@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Налагодження - Runtime / {
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Цей { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Цей { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Цей { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Налаштування
+about-debugging-sidebar-setup-title =
+    .title = Налаштування
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -181,7 +189,7 @@ about-debugging-runtime-processes =
     .name = Процеси
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button2 = Профіль швидкодії
+about-debugging-runtime-profile-button2 = Профіль продуктивності
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to:
 # https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/index.html#service-workers-not-compatible
@@ -328,6 +336,9 @@ about-debugging-multiprocess-toolbox-name = Панель багатопроце�
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Основний процес і процеси вмісту цільового браузера
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Закрити повідомлення
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Закрити повідомлення

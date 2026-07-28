@@ -7,6 +7,8 @@ profile-window-body = Jaga pekerjaan dan penjelajahan pribadi Anda, termasuk hal
 # This checkbox appears in the Choose profile window that appears when the browser is opened. "Show this" refers to this window, which is displayed when the checkbox is enabled.
 profile-window-checkbox-label-2 =
     .label = Pilih profil saat { -brand-short-name } terbuka
+# This subcopy appears below the checkbox when it is unchecked
+profile-window-checkbox-subcopy = { -brand-short-name } akan terbuka ke profil yang terakhir Anda gunakan.
 profile-window-create-profile = Buat profil
 profile-card-edit-button =
     .title = Edit Profil
@@ -34,6 +36,17 @@ edit-profile-page-avatar-header-2 =
     .label = Avatar
 edit-profile-page-delete-button =
     .label = Hapus
+edit-profile-page-avatar-selector-opener-link = Sunting
+avatar-selector-icon-tab = Ikon
+avatar-selector-custom-tab = Ubahan
+avatar-selector-cancel-button =
+    .label = Batal
+avatar-selector-save-button =
+    .label = Simpan
+avatar-selector-upload-file = Unggah berkas
+avatar-selector-drag-file = Atau seret berkas ke sini
+avatar-selector-add-image = Tambahkan gambar
+avatar-selector-crop = Pangkas
 edit-profile-page-no-name = Beri nama profil ini untuk membantu Anda menemukannya nanti. Ubah namanya kapan saja.
 edit-profile-page-duplicate-name = Nama profil sudah digunakan. Coba nama baru.
 edit-profile-page-profile-saved = Disimpan
@@ -82,6 +95,8 @@ profiles-light-theme = Terang
 profiles-dark-theme = Gelap
 # The default system theme
 profiles-system-theme = Sistem
+profiles-system-theme-title =
+    .title = Terapkan tema sistem
 # This light theme features sunny colors such as goldenrod and pale yellow. Its name evokes the color of a marigold flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-marigold-theme-2 = Marigold kuning
 # This light theme features various shades of soft, muted purples. Its name evokes the color of a lavender flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
@@ -96,6 +111,45 @@ profiles-ocean-theme-2 = Biru laut
 profiles-terracotta-theme-2 = Merah bata
 # This dark theme features forest green, dusky green with a gray undertone, and a muted sage green. Its name evokes the rich color of green moss in the forest. This name can be translated directly if its easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-moss-theme-2 = Hijau lumut
+profiles-gray-theme = Abu-abu
+profiles-gray-theme-title =
+    .title = Terapkan tema abu-abu
+profiles-yellow-theme = Kuning
+profiles-yellow-theme-title =
+    .title = Terapkan tema kuning
+profiles-orange-theme = Jingga
+profiles-orange-theme-title =
+    .title = Terapkan tema oranye
+profiles-red-theme = Merah
+profiles-red-theme-title =
+    .title = Terapkan tema merah
+profiles-pink-theme = Merah Jambu
+profiles-pink-theme-title =
+    .title = Terapkan tema merah muda
+profiles-purple-theme = Ungu
+profiles-purple-theme-title =
+    .title = Terapkan tema ungu
+profiles-violet-theme = Violet
+profiles-violet-theme-title =
+    .title = Terapkan tema violet
+profiles-blue-theme = Biru
+profiles-blue-theme-title =
+    .title = Terapkan tema biru
+profiles-green-theme = Hijau
+profiles-green-theme-title =
+    .title = Terapkan tema hijau
+profiles-cyan-theme = Sian
+profiles-cyan-theme-title =
+    .title = Terapkan tema sian
+profiles-custom-theme-title =
+    .title = Terapkan tema ubahan
+
+## Data collection settings changed (multi-profile)
+
+# Primary button label to open the Data collection section in Settings
+multiprofile-data-collection-view-settings = Lihat pengaturan
+# Secondary button label to dismiss the infobar without action
+multiprofile-data-collection-dismiss = Tutup
 
 ## Alternative text for default profile icons
 
@@ -103,20 +157,91 @@ book-avatar-alt =
     .alt = Buku
 briefcase-avatar-alt =
     .alt = Tas Kerja
+picture-avatar-alt =
+    .alt = Gambar
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-alt =
+    .alt = Kerajinan
 flower-avatar-alt =
     .alt = Bunga
+folder-avatar-alt =
+    .alt = Folder
+hammer-avatar-alt =
+    .alt = Palu
 heart-avatar-alt =
     .alt = Hati
+heart-rate-avatar-alt =
+    .alt = Detak jantung
+clock-avatar-alt =
+    .alt = Jam
+leaf-avatar-alt =
+    .alt = Daun
+lightbulb-avatar-alt =
+    .alt = Bohlam
+makeup-avatar-alt =
+    .alt = Riasan
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-alt =
+    .alt = Pesan
+musical-note-avatar-alt =
+    .alt = Not musik
+palette-avatar-alt =
+    .alt = Palet
+paw-print-avatar-alt =
+    .alt = Cetakan tapak kaki
+plane-avatar-alt =
+    .alt = Pesawat
+# Present refers to a gift box, not the current time period
+present-avatar-alt =
+    .alt = Hadiah
 shopping-avatar-alt =
     .alt = Keranjang belanja
+soccer-ball-avatar-alt =
+    .alt = Bola sepak
+sparkle-single-avatar-alt =
+    .alt = Berkilau
 star-avatar-alt =
     .alt = Bintang
+custom-avatar-alt =
+    .alt = Avatar ubahan
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-alt =
+    .alt = Bola Dunia
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar-alt =
+    .alt = Berlian
+barbell-avatar-alt =
+    .alt = Barbel
+bike-avatar-alt =
+    .alt = Sepeda
 
-## Labels for default avatar icons
+## Tooltips for default avatar icons
 
 book-avatar = Buku
 briefcase-avatar = Tas Kerja
+clock-avatar = Jam
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar = Kerajinan
+custom-avatar = Avatar ubahan
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar = Berlian
 flower-avatar = Bunga
+folder-avatar = Folder
+hammer-avatar = Palu
 heart-avatar = Hati
+heart-rate-avatar = Detak jantung
+leaf-avatar = Daun
+makeup-avatar = Riasan
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar = Pesan
+musical-note-avatar = Not musik
+palette-avatar = Palet
+plane-avatar = Pesawat
+# Present refers to a gift box, not the current time period
+present-avatar = Hadiah
 shopping-avatar = Keranjang belanja
 star-avatar = Bintang
+custom-avatar-crop-back-button =
+    .aria-label = Kembali
+barbell-avatar = Barbel
+bike-avatar = Sepeda

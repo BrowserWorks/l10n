@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = Nuova scheda contenitore
 all-tabs-menu-hidden-tabs =
     .label = Schede nascoste
+all-tabs-menu-close-duplicate-tabs =
+    .label = Chiudi schede duplicate
+all-tabs-menu-view-all-tabs =
+    .label = Visualizza tutte le schede
 all-tabs-menu-manage-user-context =
     .label = Gestisci contenitori
     .accesskey = G
-all-tabs-menu-close-duplicate-tabs =
-    .label = Chiudi schede duplicate
 all-tabs-menu-close-all-duplicate-tabs =
     .label = Chiudi tutte le schede duplicate
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = Gruppi di schede
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = Cerca in tutte le schede

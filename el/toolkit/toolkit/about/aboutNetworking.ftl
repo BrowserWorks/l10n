@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH URL
 about-networking-dns-trr-mode = Λειτουργία DoH
 about-networking-dns-suffix = Κατάληξη DNS
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Προέλευση
+about-networking-alt-svc-alternate = Εναλλακτικό
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Επικυρώθηκε
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Κλειδί απομόνωσης
 about-networking-refresh = Ανανέωση
 about-networking-auto-refresh = Αυτόματη ανανέωση κάθε 3 δευτερόλεπτα
 about-networking-hostname = Όνομα κεντρικού υπολογιστή
@@ -39,6 +46,7 @@ about-networking-dns-lookup = Αναζήτηση DNS
 about-networking-dns-lookup-button = Επίλυση
 about-networking-dns-domain = Τομέας:
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RR
 about-networking-dns-https-rr-lookup-table-column = HTTP RR
 about-networking-rcwn = Στατιστικά RCWN
 about-networking-rcwn-status = Κατάσταση RCWN
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Αυτή η σελίδα έχει μετ�
 
 about-networking-networkid-is-up = Η σύνδεση είναι ενεργή
 about-networking-networkid-status-known = Η κατάσταση σύνδεσης είναι γνωστή
-
-##
-

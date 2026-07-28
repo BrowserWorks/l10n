@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Preferencias
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Ajustes…
+menu-application-set-as-default =
+    .label = Establecer { -brand-shorter-name } como navegador predeterminado
 menu-application-services =
     .label = Servicios
 menu-application-hide-this =
@@ -98,6 +91,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Compartir
     .accesskey = C
+menu-file-share-qrcode =
+    .label = Generar código QR…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Generar código QR
+    .accesskey = Q
 menu-file-print-setup =
     .label = Configurar página…
     .accesskey = p
@@ -146,8 +145,6 @@ menu-view-history-button =
     .label = Historial
 menu-view-synced-tabs-sidebar =
     .label = Pestañas sincronizadas
-menu-view-megalist-sidebar =
-    .label = Contraseñas
 menu-view-full-zoom =
     .label = Tamaño
     .accesskey = T
@@ -263,6 +260,13 @@ menu-profiles-manage-profiles =
     .label = Administrar perfiles
 menu-profiles-new-profile =
     .label = Nuevo perfil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (actual)
+menu-profiles-menu =
+    .label = Perfiles
+    .accesskey = P
 
 ## Tools Menu
 
@@ -272,6 +276,9 @@ menu-tools =
 menu-tools-downloads =
     .label = Descargas
     .accesskey = D
+menu-tools-extensions-and-themes =
+    .label = Extensiones y Temas
+    .accesskey = E
 menu-tools-addons-and-themes =
     .label = Complementos y temas
     .accesskey = A
@@ -299,12 +306,15 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Información sobre esta página
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Editar PDF…
+    .accesskey = P
 menu-settings =
     .label = Configuración
     .accesskey =
         { PLATFORM() ->
-            [windows] S
-           *[other] n
+            [windows] C
+           *[other] C
         }
 menu-tools-layout-debugger =
     .label = Depurador de diseño

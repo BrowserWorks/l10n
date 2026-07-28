@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = 설정
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = 설정…
+menu-application-set-as-default =
+    .label = { -brand-shorter-name }를 기본 브라우저로 설정
 menu-application-services =
     .label = 서비스
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = 공유
     .accesskey = h
+menu-file-share-qrcode =
+    .label = QR 코드 생성…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = QR 코드 생성
+    .accesskey = Q
 menu-file-print-setup =
     .label = 페이지 설정…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = 기록
 menu-view-synced-tabs-sidebar =
     .label = 동기화된 탭
-menu-view-megalist-sidebar =
-    .label = 비밀번호
 menu-view-full-zoom =
     .label = 확대/축소
     .accesskey = Z
@@ -266,6 +263,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (현재)
+menu-profiles-menu =
+    .label = 프로필
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = 페이지 정보
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = PDF 편집…
+    .accesskey = P
 menu-settings =
     .label = 설정
     .accesskey =
@@ -341,7 +344,7 @@ menu-get-help =
     .label = 도움 받기
     .accesskey = H
 menu-help-more-troubleshooting-info =
-    .label = 추가 문제 해결 정보
+    .label = 문제 해결 정보
     .accesskey = T
 menu-help-report-site-issue =
     .label = 사이트 문제 보고…

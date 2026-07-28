@@ -11,18 +11,35 @@
 firefox-relay-mask-generation-failed = Non è stato possibile generare un nuovo alias { -relay-brand-name }. Codice di errore HTTP: { $status }.
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name } non ha trovato alias riutilizzabili. Codice di errore HTTP: { $status }.
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = È necessario accedere all’{ -fxaccount-brand-name } per utilizzare { -relay-brand-name }.
 firefox-relay-must-login-to-account = È necessario accedere al tuo account per utilizzare gli alias email di { -relay-brand-name }.
 firefox-relay-get-unlimited-masks =
     .label = Gestisci alias
     .accesskey = G
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header =
+    { $count ->
+        [one] Hai utilizzato l’alias di posta elettronica gratuito
+       *[other] Hai utilizzato tutti i { $count } alias di posta elettronica gratuiti
+    }
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = Puoi riutilizzarne uno oppure visualizzare tutti gli alias per sceglierne un altro.
+firefox-relay-reuse-masks-select-label = Seleziona un alias recente
+firefox-relay-see-all-masks =
+    .label = Visualizza tutti gli alias
+    .accesskey = V
+firefox-relay-dismiss =
+    .label = Chiudi
+    .accesskey = C
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Proteggi il tuo indirizzo email:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = utilizza un alias di posta elettronica { -relay-brand-name }
+firefox-relay-use-mask-title-1 = Utilizza un alias di posta elettronica
 firefox-relay-use-mask-title = Utilizza un alias di posta elettronica { -relay-brand-name }
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = Evita lo spam con un alias di posta elettronica gratuito
@@ -73,6 +90,7 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 firefox-relay-and-fxa-popup-notification-header-with-domain = Ottieni un alias di posta elettronica gratuito
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = Proteggi la tua casella di posta dallo spam utilizzando un <label data-l10n-name="firefox-relay-learn-more-url">alias di posta elettronica</label> per nascondere il tuo indirizzo reale. Le email da <label data-l10n-name="firefox-fxa-and-relay-offer-domain">questo sito</label> continueranno ad arrivare nella tua casella di posta, ma il tuo indirizzo email rimarrà al sicuro.
 firefox-relay-and-fxa-popup-notification-first-sentence = Proteggi la tua casella di posta dallo spam utilizzando un <label data-l10n-name="firefox-relay-learn-more-url">alias di posta elettronica { -relay-brand-name }</label> per nascondere il tuo indirizzo reale. Le email da <label data-l10n-name="firefox-fxa-and-relay-offer-domain">questo sito</label> continueranno ad arrivare nella tua casella di posta, ma il tuo indirizzo email rimarrà al sicuro.
+firefox-relay-offer-why-to-use-relay-1 = Proteggi la tua casella di posta dallo spam utilizzando un <label data-l10n-name="firefox-relay-learn-more-url">alias di posta elettronica { -relay-brand-name }</label> per nascondere il tuo indirizzo reale. Le email da <label data-l10n-name="firefox-fxa-and-relay-offer-domain">questo sito</label> continueranno ad arrivare nella tua casella di posta, ma il tuo indirizzo email rimarrà al sicuro.
 firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = Per prima cosa registrati o accedi al tuo account per utilizzare un alias di posta elettronica
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = Registrati

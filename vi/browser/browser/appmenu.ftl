@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = Không thể cập nhật — hệ thống không tương thích
 appmenuitem-banner-update-restart =
     .label = Đã có bản cập nhật — khởi động lại ngay
+appmenu-nova-fxa-sign-in = Đăng nhập
+appmenu-nova-switch-device-promo =
+    .message = Sắp mua thiết bị mới? Hãy mang theo { -brand-short-name } bên bạn!
+appmenu-nova-switch-device-link = Cách di chuyển dữ liệu của bạn
 appmenuitem-new-tab =
     .label = Thẻ mới
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = Cửa sổ riêng tư mới
 appmenuitem-history =
     .label = Lịch sử
+appmenuitem-tab-groups =
+    .label = Nhóm thẻ
 appmenuitem-downloads =
     .label = Tải xuống
 appmenuitem-passwords =
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Mở bảng profiler
+    .tooltiptext = Mở bảng profiler
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -196,9 +205,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Giá trị đặt trước để điều tra lỗi âm thanh và video trong { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = Media
+profiler-popup-presets-ml-description = Cài đặt trước để điều tra lỗi học máy (machine learning) trong { -brand-shorter-name }.
+profiler-popup-presets-ml-label =
+    .label = Học máy (Machine Learning)
 profiler-popup-presets-networking-description = Giá trị đặt trước để điều tra lỗi mạng trong { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Kết nối mạng
+profiler-popup-presets-networking-with-logs-description = Thiết lập sẵn để điều tra các lỗi mạng trong { -brand-shorter-name }, bao gồm cả nhật ký mạng. Các nhật ký này có thể chứa thông tin nhạy cảm như URL bạn truy cập.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Kết nối mạng với nhật ký
 profiler-popup-presets-power-description = Giá trị đặt trước để điều tra lỗi sử dụng điện trong { -brand-shorter-name }, với chi phí thấp.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -206,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Giá trị đặt trước để gỡ lỗi trong { -brand-shorter-name }. Tải thêm cao, không sử dụng cho công việc về hiệu suất mà sử dụng để tập trung vào việc tìm hiểu hành vi của trình duyệt.
 profiler-popup-presets-debug-label =
     .label = Gỡ lỗi
+profiler-popup-presets-web-compat-description = Giá trị đặt trước được đề xuất để gỡ lỗi các sự cố tương thích web, thay vì theo dõi hiệu suất.
+profiler-popup-presets-web-compat-label =
+    .label = Web Compat
 profiler-popup-presets-custom-label =
     .label = Tùy chỉnh
 
@@ -271,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Tùy biến thanh công cụ…
+appmenu-abouttranslations =
+    .label = Dịch…
+appmenu-edit-pdf =
+    .label = Chỉnh sửa PDF…
 appmenu-developer-tools-subheader = Công cụ của trình duyệt
 appmenu-developer-tools-extensions =
     .label = Tiện ích mở rộng dành cho nhà phát triển
@@ -280,14 +302,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Đăng nhập vào tài khoản của bạn
+appmenuitem-monitor-title2 = Luôn đi trước nguy cơ đánh cắp danh tính
+appmenuitem-monitor-description2 = Nhận thông báo về các vụ rò rỉ dữ liệu
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Nhận cảnh báo rò rỉ dữ liệu
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Giữ email của bạn riêng tư
+appmenuitem-relay-description2 = Giúp ngăn chặn thư rác trong hộp thư đến của bạn
 appmenuitem-relay-description = Che giấu email và điện thoại thật của bạn
 appmenuitem-services-relay-description = Khởi chạy bảng điều khiển email ẩn danh
+appmenuitem-vpn-title2 = Ẩn vị trí của bạn với { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Làm cho hoạt động duyệt web của bạn khó bị theo dõi hơn
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Bảo vệ toàn diện cho thiết bị
 appmenuitem-vpn-description = Bảo vệ hoạt động trực tuyến của bạn
 appmenu-services-header = Dịch vụ của tôi
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Các công cụ bảo mật
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Hãy thử các công cụ bảo vệ khác từ BrowserWorks:
 appmenu-other-protection-header = Hãy thử các công cụ bảo vệ khác từ { -vendor-short-name }:
 
 ## Profiles panel
@@ -295,6 +332,8 @@ appmenu-other-protection-header = Hãy thử các công cụ bảo vệ khác t�
 appmenu-other-profiles = Các hồ sơ người dùng khác
 appmenu-manage-profiles =
     .label = Quản lý hồ sơ người dùng
+appmenu-copy-profile =
+    .label = Sao chép hồ sơ này
 appmenu-create-profile =
     .label = Hồ sơ người dùng mới
 appmenu-edit-profile =

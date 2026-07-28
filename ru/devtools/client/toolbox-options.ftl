@@ -30,10 +30,18 @@ options-context-inspector = Инспектор
 options-show-user-agent-styles-label = Отображать стили браузера
 options-show-user-agent-styles-tooltip =
     .title = Включение приведёт к отображению стилей по умолчанию, применяемых браузером.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Показать теневую DOM браузера
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Включение приведёт к отображению элементов теневого DOM, обрабатываемых браузером.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Обрезать атрибуты DOM
 options-collapse-attrs-tooltip =
     .title = Обрезать в инспекторе длинные атрибуты
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Показать комментарии
+options-show-comments-tooltip =
+    .title = Отображать узлы комментариев в инспекторе
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Щёлкните и перетащите, чтобы изменить значения размера
 options-inspector-draggable-properties-tooltip =
@@ -42,7 +50,7 @@ options-inspector-draggable-properties-tooltip =
 # within the inspector for users who enabled prefers-reduced-motion = reduce
 options-inspector-simplified-highlighters-label = Использовать более простые маркеры с prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
-    .title = Включает упрощенные маркеры, когда включена функция prefers-reduced-motion. Рисует линии вместо закрашенных прямоугольников вокруг выделенных элементов, чтобы избежать эффекта мерцания.
+    .title = Включает упрощённые маркеры, когда включена функция prefers-reduced-motion. Рисует линии вместо закрашенных прямоугольников вокруг выделенных элементов, чтобы избежать эффекта мерцания.
 # The label for the checkbox option to make the Enter key move the focus to the next input
 # when editing a property name or value in the Inspector rules view
 options-inspector-rules-focus-next-on-enter-label = Сфокусировать следующий ввод на <kbd>Enter</kbd>
@@ -67,6 +75,35 @@ options-webconsole-label = Веб-консоль
 options-webconsole-split-console-label = Включить разделённую консоль
 options-webconsole-split-console-tooltip =
     .title = Открывать разделённую консоль с помощью клавиши Esc
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Монитор сети
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Максимальный размер тела запроса и ответа (установите 0 для неограниченных):
+options-netmonitor-body-limit-tooltip =
+    .title = Тела запросов или ответов, размер которых превышает указанный, будут обрезаны при отображении или загрузке в Мониторе сети. Установите в 0, чтобы не устанавливать ограничения.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Неограничено
+options-netmonitor-body-limit-button =
+    .title = Изменить максимальный размер тела запроса/ответа.
+options-netmonitor-body-limit-restore-default =
+    .title = Восстановить значение по умолчанию для максимального размера тела запроса/ответа.
+options-netmonitor-body-limit-set =
+    .title = Установить текущее значение ввода как максимальный размер тела запроса/ответа.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Экспериментальные возможности
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Показать таблицы стилей в отладчике
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Показать и просмотреть таблицы стилей в отладчике
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (требует повторного открытия инструментов)
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Ширина табуляции
 options-sourceeditor-keybinding-label = Сочетания клавиш
 options-sourceeditor-keybinding-default-label = По умолчанию
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Локальный режим
+options-local-mode-only-work-locally = Локальный режим работает только локально и отключён при отладке удалённых контекстов
+options-local-mode-behavior = Локальный режим позволяет вам загружать локальные файлы через https URL без какой-либо зависимости извне. URL-адреса могут быть загружены только из вкладок, в которых открыты Инструменты разработчика.
+options-local-mode-domain-label = Пользовательский домен:
+options-local-mode-origin-input =
+    .placeholder = Источник локального отображения
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Этот источник конфликтует с другим существующим отображением
+options-local-mode-origin-invalid = Этот источник недействителен
+options-local-mode-folder-label = Локальная папка:
+options-local-mode-choose-folder = Обзор…
+    .title = Выберите локальную папку для обслуживания этого отображения
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Выберите папку локального режима для: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Эта папка не существует или некорректна.
+options-local-mode-toggle =
+    .title = Переключить это локальное отображение
+options-local-mode-toggle-enable = Включить
+options-local-mode-toggle-disable = Отключить
+options-local-mode-navigate-to =
+    .title = Перейти к этому URL-адресу отображения
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Вы хотите удалить отображение «{ $mappingOrigin }»?
+options-local-mode-new-mapping = Добавить новое локальное отображение
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -116,13 +187,15 @@ options-disable-http-cache-label = Отключить HTTP-кеш (когда о
 options-disable-http-cache-tooltip =
     .title = Включение этой опции отключит HTTP-кеш для всех вкладок, в которых открыта панель инструментов. Эта опция не влияет на Service Worker'ы.
 # The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Отключить JavaScript
+# The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Отключить JavaScript *
 options-disable-javascript-tooltip =
     .title = Включение этой опции приведёт к отключению JavaScript для текущей вкладки. Если вкладка или панель инструментов будут закрыты, то этот параметр будет сброшен.
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
 options-enable-chrome-label = Включить инструменты отладки browser chrome и дополнений
 options-enable-chrome-tooltip =
-    .title = Включение этой опции позволит вам использовать различные инструменты разработчика в контексте браузера (через Инструменты > Веб-разработка > Инструменты браузера) и отлаживать дополнения из окна Управления дополнениями
+    .title = Включение этого параметра позволит вам использовать различные инструменты разработчика в контексте браузера (через «Инструменты» > «Веб-разработка» > «Инструменты браузера») и отлаживать дополнения из окна управления дополнениями
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Включить удалённую отладку
 options-enable-remote-tooltip2 =
@@ -140,8 +213,24 @@ options-enable-service-workers-http-label = Включить Service Worker'ы �
 options-enable-service-workers-http-tooltip =
     .title = Включение этой опции включит service worker'ы поверх HTTP для всех вкладок, в которых открыта панель инструментов.
 # The label for the checkbox that toggles source maps in all tools.
-options-source-maps-label = Включить Карты Исходников
+options-source-maps-label = Включить карты исходников
 options-source-maps-tooltip =
     .title = Если вы включите эту настройку, исходники будут картированы в инструментах.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (только текущая сессия, перезагружает страницу)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Только текущая сессия, перезагружает страницу
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (перезагружает страницу)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Авто
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Устарело. Узнать больше…

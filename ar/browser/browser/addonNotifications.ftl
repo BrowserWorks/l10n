@@ -35,12 +35,14 @@ xpinstall-prompt-install =
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
 site-permission-install-first-prompt-midi-header = يطلب هذا الموقع الوصول إلى أجهزة MIDI لديك (الآلة الموسيقية الواجهة الرقمية). يمكن تفعيل وصول الجهاز بتثبيت الإضافات.
-site-permission-install-first-prompt-midi-message = لا يضمن هذا الوصول أن يكون آمنًا. تابع فقط إذا كنت تثق بهذا الموقع.
+site-permission-install-first-prompt-midi-message = لا يضمن هذا الوصول أن يكون آمنًا. واصِل فقط إذا كنت تثق بهذا الموقع.
+site-permission-install-first-prompt-serial-header = يطلب هذا الموقع الوصول إلى أجهزتك التسلسلية. يمكن تفعيل الوصول إلى الأجهزة عن طريق تثبيت إضافة.
+site-permission-install-first-prompt-serial-message = لا يضمن هذا الوصول أن يكون آمنًا. واصِل فقط إذا كنت تثق بهذا الموقع.
 
 ##
 
 xpinstall-disabled-locked = منع مدير النظام تثبيت البرمجيّات.
-xpinstall-disabled-by-policy = منعت مؤسستك تثبيت البرمجيّات.
+xpinstall-disabled-by-policy = منعت منظّمتك تثبيت البرمجيّات.
 xpinstall-disabled = تثبيت البرمجيّات معطل حاليًا. انقر فعّل و حاول مجددًا.
 xpinstall-disabled-button =
     .label = فعّل
@@ -56,9 +58,9 @@ addon-domain-blocked-by-policy = منع مدير النظام هذا الموق�
 # Variables:
 #   $addonName (String): the name of the add-on.
 #   $addonId (String): the ID of add-on.
-addon-installation-blocked-by-policy = حجبت مؤسستك { $addonName } (معرّفها { $addonId }).
+addon-installation-blocked-by-policy = حجبت منظّمتك { $addonName } (معرّفها { $addonId }).
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
-addon-install-domain-blocked-by-policy = منعت مؤسستك هذا الموقع من سؤالك بتثبيت برمجيّات على حاسوبك.
+addon-install-domain-blocked-by-policy = منعت منظّمتك هذا الموقع من سؤالك بتثبيت برمجيّات على حاسوبك.
 addon-install-full-screen-blocked = يُمنع تثبيت الإضافات في وضع ملء الشاشة، أو قبل الدخول إليه.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -140,15 +142,18 @@ addon-install-error-corrupt-file = تعذر تثبيت الإضافة المنز
 addon-install-error-file-access = تعذر تثبيت الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
 addon-install-error-not-signed = منع { -brand-short-name } هذا الموقع من تثبيت إضافة لم يتحقق منها.
 addon-install-error-invalid-domain = تعذر تثبيت إضافة { $addonName } من هذا المكان.
+addon-install-error-no-addon-name-file-access = فشل تثبيت الإضافة لأن { -brand-short-name } لا يستطيع تعديل الملف المطلوب.
 addon-local-install-error-network-failure = تعذر تثبيت هذه الإضافة بسبب عطل في نظام الملفات.
 addon-local-install-error-incorrect-hash = تعذر تثبيت هذه الإضافة لأنها لم تتوافق مع توقعات { -brand-short-name }.
 addon-local-install-error-corrupt-file = تعذر تثبيت هذه الإضافة لأنها تبدو تالفة.
 addon-local-install-error-file-access = تعذر تثبيت الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
 addon-local-install-error-not-signed = تعذر تثبيت هذه الإضافة إذ لم يُتحقق منها.
+addon-local-install-no-addon-name-error-file-access = فشل تثبيت الإضافة لأن { -brand-short-name } لا يستطيع تعديل الملف المطلوب.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = تعذر تثبيت الإضافة { $addonName } لأنها غير متوافقة مع { -brand-short-name }‏ { $appVersion }.
 addon-install-error-hard-blocked = ينتهك { $addonName } سياسات BrowserWorks ولا يمكن تثبيته على { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } مقيد ولا يمكن تثبيته على { -brand-short-name }.
 addon-install-error-blocklisted = تعذر تثبيت الإضافة { $addonName } بسبب احتمال كبير في تسببها لمشاكل في الأمن أو الثبات.
 addon-install-error-soft-blocked = ينتهك { $addonName } سياسات BrowserWorks ولا يمكن تثبيته على { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

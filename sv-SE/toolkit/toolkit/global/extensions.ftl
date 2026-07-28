@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Neka
     .accesskey = N
 webext-perms-host-description-all-urls = Åtkomst till dina data för alla webbplatser
+webext-perms-host-description-file-urls = Åtkomst till lokala filer på din dator
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Åtkomst till dina data för platser i domänen { $domain }
@@ -137,6 +138,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } begär ytt
 
 webext-site-perms-header-with-gated-perms-midi = Detta tillägg ger { $hostname } åtkomst till dina MIDI-enheter.
 webext-site-perms-header-with-gated-perms-midi-sysex = Detta tillägg ger { $hostname } åtkomst till dina MIDI-enheter (med SysEx-stöd).
+webext-site-perms-header-with-gated-perms-serial = Det här tillägget ger { $hostname } åtkomst till dina seriella enheter.
 
 ##
 
@@ -147,6 +149,12 @@ webext-site-perms-description-gated-perms-midi =
     Dessa är vanligtvis plugin-enheter som ljudsyntar, men de kan också vara inbyggda i din dator.
     
     Webbplatser har normalt inte tillgång till MIDI-enheter. Felaktig användning kan orsaka skada eller äventyra säkerheten.
+webext-site-perms-description-gated-perms-webserial =
+    Det här är enheter som mikrokontroller, 3D-skrivare och andra enheter som ansluts via USB, serieportar eller Bluetooth.
+    
+    Du kommer att kunna välja vilka enheter webbplatsen har åtkomst till.
+    
+    Webbplatser har normalt sett inte åtkomst till seriella enheter. Felaktig användning kan orsaka skador eller äventyra säkerheten.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -161,6 +169,7 @@ webext-site-perms-header-unsigned-with-perms = Vill du lägga till { $extension 
 
 webext-site-perms-midi = Åtkomst till MIDI-enheter
 webext-site-perms-midi-sysex = Åtkomst till MIDI-enheter med SysEx-stöd
+webext-site-perms-serial = Åtkomst till seriella enheter
 
 ## Colorway theme migration
 

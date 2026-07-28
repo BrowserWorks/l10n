@@ -15,6 +15,14 @@ appmenuitem-banner-update-unsupported =
     .label = 更新不可 — システムの互換性なし
 appmenuitem-banner-update-restart =
     .label = 更新可能 — 今すぐ再起動
+# Fresh Firefox refers to the new updated UI
+appmenu-nova-update-promo =
+    .message = すべてのタブはそのままで { -brand-short-name } をリフレッシュ。
+appmenu-nova-update-link = 再起動して更新
+appmenu-nova-fxa-sign-in = ログイン
+appmenu-nova-switch-device-promo =
+    .message = 新しい端末を入手予定ですか？ { -brand-short-name } もご一緒に。
+appmenu-nova-switch-device-link = 設定データを移行するには
 appmenuitem-new-tab =
     .label = 新しいタブ
 appmenuitem-new-window =
@@ -23,6 +31,8 @@ appmenuitem-new-private-window =
     .label = 新しいプライベートウィンドウ
 appmenuitem-history =
     .label = 履歴
+appmenuitem-tab-groups =
+    .label = タブグループ
 appmenuitem-downloads =
     .label = ダウンロード
 appmenuitem-passwords =
@@ -166,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = プロファイラーパネルを開く
+    .tooltiptext = プロファイラーパネルを開きます
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -198,6 +211,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
 profiler-popup-presets-networking-label =
     .label = ネットワーク
+profiler-popup-presets-networking-with-logs-description = { -brand-shorter-name } のネットワークバグをログを記録しながら調査するためのプリセットです。これらのログには訪れたサイトの URL などの機密情報が含まれる可能性があります。
+profiler-popup-presets-networking-with-logs-label =
+    .label = ネットワーク (ログ記録あり)
 profiler-popup-presets-power-description = { -brand-shorter-name } の消費電力のバグを少ないオーバーヘッドで調査するための推奨プリセットです。
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -205,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = { -brand-shorter-name } のデバッグ用プリセットです。オーバーヘッドが高いため、パフォーマンスが求められる作業を避け、ブラウザーの動作を調査する目的で使用してください。
 profiler-popup-presets-debug-label =
     .label = デバッグ
+profiler-popup-presets-web-compat-description = パフォーマンスを追跡するのではなく、ウェブ互換性の問題をデバッグするための推奨プリセットです。
+profiler-popup-presets-web-compat-label =
+    .label = ウェブ互換性
 profiler-popup-presets-custom-label =
     .label = カスタム
 
@@ -270,6 +289,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = ツールバーをカスタマイズ...
+appmenu-abouttranslations =
+    .label = 翻訳...
+appmenu-edit-pdf =
+    .label = PDF を編集...
 appmenu-developer-tools-subheader = ブラウザーツール
 appmenu-developer-tools-extensions =
     .label = 開発者用拡張機能
@@ -279,14 +302,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = アカウントにログイン
+appmenuitem-monitor-title2 = 個人情報の盗難に備えましょう
+appmenuitem-monitor-description2 = データ漏洩についての警告を受け取ります
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = データ漏洩の警告を受け取ります
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = メールアドレスをプライベートに
+appmenuitem-relay-description2 = 受信トレイをスパムから守ります
 appmenuitem-relay-description = 実際のメールアドレスと電話番号を隠します
 appmenuitem-services-relay-description = メールマスクダッシュボードを起動します
+appmenuitem-vpn-title2 = { -mozilla-vpn-brand-name } で位置情報を隠す
+appmenuitem-vpn-description3 = ウェブブラウジングが追跡できないようにします
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = 端末全体を保護しましょう
 appmenuitem-vpn-description = ユーザーのオンラインプライバシーを保護します
 appmenu-services-header = マイサービス
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = プライバシーツール
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = BrowserWorks が提供する他の保護ツールをお試しください:
 appmenu-other-protection-header = { -vendor-short-name } が提供する他の保護ツールをお試しください:
 
 ## Profiles panel
@@ -294,9 +332,20 @@ appmenu-other-protection-header = { -vendor-short-name } が提供する他の�
 appmenu-other-profiles = 他のプロファイル
 appmenu-manage-profiles =
     .label = プロファイルを管理
+appmenu-copy-profile =
+    .label = このプロファイルをコピー
+appmenu-create-profile2 =
+    .label = 新しいプロファイルを作成
 appmenu-create-profile =
     .label = 新しいプロファイル
 appmenu-edit-profile =
     .aria-label = プロファイルを編集
+appmenu-edit-this-profile =
+    .label = このプロファイルを編集
+appmenu-profile-current-in-use = 使用中の現在のプロファイル
 appmenu-profiles-2 =
     .label = プロファイル
+appmenu-profiles-header = プロファイル
+appmenu-all-profiles =
+    .label = すべてのプロファイル
+appmenu-secure-sync-header = 安全に同期

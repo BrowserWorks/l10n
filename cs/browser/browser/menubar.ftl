@@ -3,22 +3,19 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Předvolby
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Nastavení…
+menu-application-set-as-default =
+    .label =
+        { -brand-short-name.case-status ->
+            [with-cases] Nastavit { -brand-shorter-name(case: "acc") } jako výchozí prohlížeč
+           *[no-cases] Nastavit aplikaci { -brand-shorter-name } jako výchozí prohlížeč
+        }
 menu-application-services =
     .label = Služby
 menu-application-hide-this =
@@ -103,6 +100,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Sdílet
     .accesskey = S
+menu-file-share-qrcode =
+    .label = Vygenerovat QR kód…
+    .accesskey = V
+menu-file-share-qrcode2 =
+    .label = Vygenerovat QR kód
+    .accesskey = Q
 menu-file-print-setup =
     .label = Vzhled stránky…
     .accesskey = V
@@ -151,8 +154,6 @@ menu-view-history-button =
     .label = Historie
 menu-view-synced-tabs-sidebar =
     .label = Synchronizované panely
-menu-view-megalist-sidebar =
-    .label = Hesla
 menu-view-full-zoom =
     .label = Velikost stránky
     .accesskey = V
@@ -268,6 +269,13 @@ menu-profiles-manage-profiles =
     .label = Správa profilů
 menu-profiles-new-profile =
     .label = Nový profil
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (aktuální)
+menu-profiles-menu =
+    .label = Profily
+    .accesskey = P
 
 ## Tools Menu
 
@@ -311,6 +319,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Informace o stránce
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Upravit PDF…
+    .accesskey = U
 menu-settings =
     .label = Nastavení
     .accesskey =
@@ -366,10 +377,10 @@ menu-help-switch-device =
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = Nahlásit klamavou stránku…
+    .label = Nahlásit podvodnou stránku…
     .accesskey = l
 menu-help-not-deceptive =
-    .label = Tato stránka není klamavá…
+    .label = Tato stránka není podvodná…
     .accesskey = l
 menu-report-broken-site =
     .label = Nahlásit nefunkční stránku

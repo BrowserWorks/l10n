@@ -35,7 +35,7 @@ about-private-browsing-focus-promo-text = 我们的隐私浏览专用应用，�
 about-private-browsing-focus-promo-header-b = 手机上亦可私密浏览
 about-private-browsing-focus-promo-text-b = 在 { -focus-brand-name } 上隐私搜索不愿被主浏览器记录的内容。
 about-private-browsing-focus-promo-header-c = 移动端更强大的隐私保护
-about-private-browsing-focus-promo-text-c = { -focus-brand-name } 不仅会自动清除历史记录，且能够拦截广告和跟踪器。
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } 不仅能自动清除历史记录，还可以拦截广告和跟踪器。
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = 让 { -brand-short-name } 
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } 为您处理 Cookie 横幅
 about-private-browsing-cookie-banners-promo-body = 我们现在可自动拒绝许多 Cookie 横幅，助您少受跟踪，专注浏览。
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = 不在设备上留痕迹
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } 会在您关闭所有隐私窗口后删除 Cookie、历史记录、网站数据。
 about-private-browsing-felt-privacy-v1-info-link = 谁有可能看到我的活动？
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = 关闭所有隐私窗口时将删除 Cookie、历史记录和网站数据。
+about-private-browsing-nova-info-link = 谁依然可能看到我的活动？
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = 您的浏览不会被记录
+about-private-browsing-nova-info-subheader = 关闭此窗口后，所有搜索记录和登录状态都将被清除。 { -brand-short-name } 内置的保护功能（例如拦截跟踪器）也在此窗口生效。

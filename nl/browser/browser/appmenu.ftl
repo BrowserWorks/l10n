@@ -15,6 +15,12 @@ appmenuitem-banner-update-unsupported =
     .label = Kan niet bijwerken – systeem niet compatibel
 appmenuitem-banner-update-restart =
     .label = Update beschikbaar – nu herstarten
+appmenu-nova-update-title = Herstarten om { -brand-short-name } bij te werken
+appmenu-nova-update-description = Uw tabbladen worden opnieuw geopend.
+appmenu-nova-fxa-sign-in = Aanmelden
+appmenu-nova-switch-device-promo =
+    .message = Krijgt u binnenkort een nieuw apparaat? Neem { -brand-short-name } met u mee!
+appmenu-nova-switch-device-link = Uw gegevens migreren
 appmenuitem-new-tab =
     .label = Nieuw tabblad
 appmenuitem-new-window =
@@ -23,6 +29,8 @@ appmenuitem-new-private-window =
     .label = Nieuw privévenster
 appmenuitem-history =
     .label = Geschiedenis
+appmenuitem-tab-groups =
+    .label = Tabbladgroepen
 appmenuitem-downloads =
     .label = Downloads
 appmenuitem-passwords =
@@ -170,6 +178,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = Profilerpaneel openen
+    .tooltiptext = Profilerpaneel openen
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -202,6 +213,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Netwerk
+profiler-popup-presets-networking-with-logs-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }, inclusief netwerklogboeken. Deze logboeken kunnen gevoelige informatie bevatten, zoals de URL’s die u bezoekt.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Netwerken met logboeken
 profiler-popup-presets-power-description = Voorinstelling voor het onderzoeken van stroomverbruikbugs in { -brand-shorter-name }, met lage overhead.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -209,6 +223,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Voorinstelling voor debugging in { -brand-shorter-name }. Hoge overhead, niet gebruiken voor prestatiewerk, maar om te focussen op het begrijpen van browsergedrag.
 profiler-popup-presets-debug-label =
     .label = Debuggen
+profiler-popup-presets-web-compat-description = Aanbevolen voorinstelling voor het opsporen van webcompatibiliteitsproblemen in websites, in plaats van prestaties te volgen.
+profiler-popup-presets-web-compat-label =
+    .label = Webcompatibiliteit
 profiler-popup-presets-custom-label =
     .label = Aangepast
 
@@ -274,6 +291,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Werkbalk aanpassen…
+appmenu-abouttranslations =
+    .label = Vertalen…
+appmenu-edit-pdf =
+    .label = PDF bewerken…
 appmenu-developer-tools-subheader = Browserhulpmiddelen
 appmenu-developer-tools-extensions =
     .label = Extensies voor ontwikkelaars
@@ -283,14 +304,29 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Aanmelden bij uw account
+appmenuitem-monitor-title2 = Blijf identiteitsdiefstal voor
+appmenuitem-monitor-description2 = Ontvang meldingen over datalekken
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Ontvang waarschuwingen over datalekken
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Houd uw e-mailadres privé
+appmenuitem-relay-description2 = Helpt spam in uw Postvak IN te voorkomen
 appmenuitem-relay-description = Maskeer uw echte e-mailadres en telefoonnummer
 appmenuitem-services-relay-description = Dashboard voor e-mailmaskers starten
+appmenuitem-vpn-title2 = Verberg uw locatie met { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Maak uw navigatie moeilijker te volgen
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Bescherming van uw volledige apparaat ontvangen
 appmenuitem-vpn-description = Bescherm uw online activiteit
 appmenu-services-header = Mijn services
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Privacyhulpmiddelen
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Probeer andere beschermingshulpmiddelen van BrowserWorks:
 appmenu-other-protection-header = Probeer andere beschermingshulpmiddelen van { -vendor-short-name }:
 
 ## Profiles panel
@@ -298,6 +334,8 @@ appmenu-other-protection-header = Probeer andere beschermingshulpmiddelen van { 
 appmenu-other-profiles = Andere profielen
 appmenu-manage-profiles =
     .label = Profielen beheren
+appmenu-copy-profile =
+    .label = Dit profiel kopiëren
 appmenu-create-profile =
     .label = Nieuw profiel
 appmenu-edit-profile =

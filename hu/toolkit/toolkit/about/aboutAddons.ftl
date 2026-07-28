@@ -120,6 +120,8 @@ private-browsing-description2 =
     akkor a kiegészítő nem fog működni privát böngészésben, és ott nem fog hozzáférni az online tevékenységéhez.
     Ezt a változtatást azért hoztuk, hogy a privát böngészése tényleg privát legyen.
     <label data-l10n-name="private-browsing-learn-more">Tudjon meg többet a kiegészítőbeállítások kezeléséről.</label>
+aboutaddons-sidebar =
+    .heading = Kiegészítők
 addon-category-discover = Javaslatok
 addon-category-discover-title =
     .title = Javaslatok
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Engedélyezés
 extensions-warning-imported-addons2 =
     .message = Véglegesítse a { -brand-short-name }ba importált kiegészítők telepítését.
 extensions-warning-imported-addons-button = Kiegészítők telepítése
+extensions-warning-safe-mode3 =
+    .message = A Hibaelhárítási mód letiltotta az összes kiegészítőt.
 
 ## Strings connected to add-on updates
 
@@ -292,6 +296,10 @@ colorway-removal-notice-message =
         a kiegészítők oldalán.
 colorway-removal-notice-learn-more = További tudnivalók
 colorway-removal-notice-button = Frissített színvilágtémák beszerzése
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = A Windows kontrasztbeállításai felülírják a { -brand-short-name } témákat. Kapcsolja ki ezeket a beállításokat, hogy témákat használjon a { -brand-short-name }ban.
 privacy-policy = Adatvédelmi irányelvek
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -471,11 +479,18 @@ available-updates-heading = Elérhető frissítések
 recent-updates-heading = Legutóbbi frissítések
 release-notes-loading = Betöltés…
 release-notes-error = Sajnáljuk, de hiba történt a kiadási megjegyzések betöltésekor.
+addon-permissions-heading = Jogosultságok
 addon-permissions-empty2 = Ez a kiegészítő nem igényel semmilyen engedélyt.
+addon-permissions-required-label = Kötelező:
+addon-permissions-optional-label = Nem kötelező:
 addon-permissions-empty = Ez a kiegészítő nem igényel semmilyen engedélyt
 addon-permissions-required = Az alapvető funkciókhoz szükséges engedélyek:
 addon-permissions-optional = A további funkciókhoz szükséges engedélyek:
 addon-permissions-learnmore = További tudnivalók az engedélyekről
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Néhány engedélyt a szervezete kezel.
 recommended-extensions-heading = Ajánlott kiegészítők
 recommended-themes-heading = Ajánlott témák
 # Variables:
@@ -530,9 +545,15 @@ details-notification-hard-blocked-other =
     .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt blokkolva lett, és le lett tiltva.
 details-notification-unsigned-link = További információ
 details-notification-blocked = A(z) { $name } le lett tiltva biztonsági vagy stabilitási problémák miatt.
-details-notification-blocked2 =
-    .message = A(z) { $name } le lett tiltva biztonsági vagy stabilitási problémák miatt.
 details-notification-blocked-link2 = Részletek megtekintése
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Ez a kiegészítő korlátozott, és le lett tiltva. Engedélyezheti, de ez kockázatos lehet.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Ez a kiegészítő korlátozott. Használata kockázatos lehet.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Ez a kiegészítő korlátozott, és le lett tiltva. Engedélyezheti, de ez kockázatos lehet.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Ez a kiegészítő korlátozott. Használata kockázatos lehet.
 details-notification-soft-blocked-extension-disabled =
     .message = Ez a kiegészítő a BrowserWorks irányelveinek megsértése miatt korlátozva lett, és le lett tiltva. Engedélyezheti, de ez kockázatos lehet.
 details-notification-soft-blocked-extension-enabled =
@@ -544,8 +565,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Részletek megtekintése
 details-notification-blocked-link = További információ
 details-notification-softblocked = A(z) { $name } biztonsági vagy stabilitási problémát okoz.
-details-notification-softblocked2 =
-    .message = A(z) { $name } biztonsági vagy stabilitási problémát okoz.
 details-notification-softblocked-link = További információ
 details-notification-gmp-pending = { $name } hamarosan telepítésre kerül.
 details-notification-gmp-pending2 =
@@ -558,7 +577,7 @@ plugins-gmp-privacy-info = Adatvédelmi információk
 plugins-openh264-name = OpenH264 videokodek a Cisco Systems, Inc.-től
 plugins-openh264-description = Ezt a bővítményt a BrowserWorks automatikusan telepítette a WebRTC specifikációnak való megfelelés érdekében, és a WebRTC hívások lehetővé tételéhez olyan eszközökkel, amelyek a H.264 videokodeket igénylik. Keresse fel a http://www.openh264.org/ oldalt a megvalósítással kapcsolatos további tudnivalókért.
 plugins-widevine-name = Widevine tartalom-visszafejtő modul a Google Inc.-től
-plugins-widevine-description = Ez a bővítmény lehetővé teszi a titkosított médiák lejátszását, az Encrypted Media Extensions specifikációnak megfelelően. Titkosított médiát jellemzően azok az oldalak használnak, amelyek a prémium médiatartalmak másolása ellen védekeznek. A titkosított médiakiterjesztésekről szóló további információkért keresse fel az https://www.w3.org/TR/encrypted-media/ oldalt.
+plugins-widevine-description = Ez a bővítmény lehetővé teszi a titkosított médiák lejátszását, az Encrypted Media Extensions specifikációnak megfelelően. Titkosított médiát jellemzően azok az oldalak használnak, amelyek a prémium médiatartalmak másolása ellen védekeznek. A titkosítottmédia-kiterjesztésekről szóló további információkért keresse fel az https://www.w3.org/TR/encrypted-media/ oldalt.
 
 ## Headings for the Permissions tab in `about:addons` when the data collection
 ## feature is enabled.
@@ -571,6 +590,10 @@ permissions-data-addon-button = Engedélyek és adatok
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = A(z) { $extensionName } kiegészítő használja
+addon-permissions-data-collection-heading = Adatgyűjtés
+addon-permissions-data-collection-empty = A fejlesztő szerint ez a kiegészítő nem igényel adatgyűjtést.
+addon-data-collection-provided = A kiegészítő fejlesztője által megadott információ
+addon-data-collection-learnmore = Tudjon meg többet az adatgyűjtésről
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -579,6 +602,7 @@ mlmodel-link-preview = A { -brand-short-name } használja a kulcspontok előáll
 mlmodel-pdfjs = A { -brand-short-name } használja arra, hogy alternatív szövegeket hozzon létre a PDF-hez hozzáadott képekhez
 mlmodel-smart-tab-topic-engine = A { -brand-short-name } használja, hogy neveket javasoljon a lapcsoportjaihoz
 mlmodel-smart-tab-embedding-engine = A { -brand-short-name } használja, hogy lapokat javasoljon a lapcsoportjaihoz
+mlmodel-formfill-engine = A { -brand-short-name } ezt használja a címeket tartalmazó űrlapok kitöltéséhez
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = Eszközön lévő MI
 addon-category-mlmodel-title =

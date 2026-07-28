@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-migration-wizard-selection-header = Import dat prohlížeče
+migration-wizard-selection-header = Import dat z prohlížeče
 migration-wizard-selection-list = Vyberte data, která chcete importovat.
 # Shown in the new migration wizard's dropdown selector for choosing the browser
 # to import from. This variant is shown when the selected browser doesn't support
@@ -71,7 +71,7 @@ migration-no-permissions-instructions-step2 = V nástroji pro výběr souborů p
 ## These strings will be displayed based on how many resources are selected to import
 
 migration-all-available-data-label = Importovat všechna dostupná data
-migration-no-selected-data-label = Pro import nejsou vybrána žádná data
+migration-no-selected-data-label = K importu nejsou vybrána žádná data
 migration-selected-data-label = Importovat vybraná data
 
 ##
@@ -86,7 +86,7 @@ migration-passwords-option-label = Uložená hesla
 migration-history-option-label = Historie prohlížení
 migration-extensions-option-label = Rozšíření
 migration-form-autofill-option-label = Data pro automatické vyplňování formulářů
-migration-payment-methods-option-label = Způsoby platby
+migration-payment-methods-option-label = Platební metody
 migration-cookies-option-label = Cookies
 migration-session-option-label = Okna a panely
 migration-otherdata-option-label = Ostatní data
@@ -135,7 +135,7 @@ migration-wizard-progress-success-updated-passwords =
         [many] { $updatedEntries } aktualizovaných
        *[other] { $updatedEntries } aktualizovaných
     }
-migration-bookmarks-from-file-picker-title = Importu souboru záložek
+migration-bookmarks-from-file-picker-title = Import souboru záložek
 migration-bookmarks-from-file-progress-header = Probíhá import záložek
 migration-bookmarks-from-file = Záložky
 migration-bookmarks-from-file-success-header = Záložky byly úspěšně naimportovány
@@ -191,7 +191,7 @@ migration-list-password-label = hesla
 migration-list-history-label = historie
 migration-list-extensions-label = rozšíření
 migration-list-autofill-label = data pro automatické vyplňování
-migration-list-payment-methods-label = způsoby platby
+migration-list-payment-methods-label = platební metody
 
 ##
 
@@ -317,10 +317,10 @@ migration-wizard-progress-success-formdata = Historie formulářů
 #  $quantity (Number): the number of successfully imported payment methods
 migration-wizard-progress-success-payment-methods =
     { $quantity ->
-        [one] { $quantity } způsob platby
-        [few] { $quantity } způsoby platby
-        [many] { $quantity } způsobů platby
-       *[other] { $quantity } způsobů platby
+        [one] { $quantity } platební metoda
+        [few] { $quantity } platební metody
+        [many] { $quantity } platebních metod
+       *[other] { $quantity } platebních metod
     }
 migration-wizard-safari-permissions-sub-header = Pro importování záložek a historie prohlížení ze Safari:
 migration-wizard-safari-instructions-continue = Vyberte „Pokračovat“

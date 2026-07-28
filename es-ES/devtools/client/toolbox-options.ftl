@@ -30,10 +30,18 @@ options-context-inspector = Inspector
 options-show-user-agent-styles-label = Mostrar estilos del navegador
 options-show-user-agent-styles-tooltip =
     .title = Activar esto mostrará los estilos predeterminados que se cargan por el navegador.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Mostra el Shadow DOM del navegador
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Al activar esta opción, se mostrarán los elementos Shadow DOM manejados por el navegador.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Truncar atributos DOM
 options-collapse-attrs-tooltip =
     .title = Truncar atributos largos en el inspector
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Mostrar comentarios
+options-show-comments-tooltip =
+    .title = Mostrar comentarios de los nodos en el inspector
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Haga clic y arrastre para editar los valores de tamaño
 options-inspector-draggable-properties-tooltip =
@@ -116,6 +124,8 @@ options-disable-http-cache-label = Desactivar caché HTTP (cuando la caja de her
 options-disable-http-cache-tooltip =
     .title = Activar esta opción desactivará el caché HTTP en todas las pestañas que tengan abierta la caja de herramientas. Los Service Workers no se ven afectados por esta opción.
 # The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Desactivar JavaScript
+# The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Desactivar JavaScript *
 options-disable-javascript-tooltip =
     .title = Activar esta opción desactivará JavaScript en la pestaña actual. Si la pestaña o la caja de herramientas se cierra entonces este ajuste será descartado.
@@ -143,5 +153,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Activar mapas de código fuente
 options-source-maps-tooltip =
     .title = Si activa esta opción, los códigos fuentes serán mapeados en las herramientas.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (sólo sesión actual, recarga la página)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Sólo sesión actual, recarga la página
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (recarga la página)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Auto
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Obsoleto. Saber más…

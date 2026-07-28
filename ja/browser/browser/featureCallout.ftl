@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Perplexity に尋ねる
 perplexity-callout-secondary-label-1 = 閉じる
 perplexity-callout-secondary-label-2 = 了解
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = プライバシー優先の検索を試しませんか？
+start-page-callout-subtitle = スタートページをお試しください。これは最初からユーザーの検索をプライベートに維持するよう設計されています。
+start-page-callout-primary-label = スタートページを試す
+start-page-callout-secondary-label = 閉じる
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = 端末上の暗号化されたパスワード�
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = アカウント登録
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = お気に入りのフィードをタスクバーから
+taskbar-tabs-social-callout-subtitle = ソーシャルサイトをアプリのように、{ -brand-short-name } で保護されたウィンドウで起動します。
+taskbar-tabs-chat-callout-title = タスクバーからチャット
+taskbar-tabs-chat-callout-subtitle = チャットサイトをアプリのように、{ -brand-short-name } で保護されたウィンドウで起動します。
+taskbar-tabs-email-callout-title = ウェブメールをタスクバーから
+taskbar-tabs-email-callout-subtitle = ウェブメールをアプリのように、{ -brand-short-name } で保護されたウィンドウで起動します。
+taskbar-tabs-media-callout-title = タスクバーからストリーミングに接続
+taskbar-tabs-media-callout-subtitle = ストリーミングサイトをアプリのように、{ -brand-short-name } で保護されたウィンドウで起動します。
+taskbar-tabs-value-prop-callout-title = このサイトをタスクバーに追加
+taskbar-tabs-value-prop-callout-subtitle = クリック一つでウェブサイトを簡易インターフェイスのウィンドウに開きます。
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Windows 11 への移行時に保存していたものを何も失わないようにします。
+windows-10-eos-sync-urgency-subtitle-1 = 今すぐ同期して { -brand-short-name } のブックマーク、パスワード、設定を安全に保管し、簡単に復元しましょう。
+windows-10-eos-sync-urgency-title-2 = Windows 10 にさようなら？ 切り替え時にデータを保護します。
+windows-10-eos-sync-urgency-subtitle-2 = 普段 { -brand-short-name } を使用していなくても、同期することでブックマークとパスワードを安全に保管してアクセスできます。
+windows-10-eos-sync-new-device-title-1 = 次に使う端末でも、設定しなおす必要はありません。
+windows-10-eos-sync-new-device-subtitle-1 = 同期して { -brand-short-name } のブックマーク、パスワード、お気に入りの設定を持ち歩きましょう。
+windows-10-eos-sync-new-device-title-2 = 新しい端末に移行しますか？ 大切なものは何も失われません。
+windows-10-eos-sync-new-device-subtitle-2 = { -brand-short-name } をどの程度使用しているかに関わらず、ブックマークとパスワード、設定を同期して保護しましょう。
+windows-10-eos-sync-new-device-primary-label = 今すぐ同期
+windows-10-eos-sync-general-title-1 = あなたの { -brand-short-name } を保護します。
+windows-10-eos-sync-general-subtitle-1 = パスワードおよびブックマーク、設定、その他設定などの大切なデータを守るため、バックアップして同期しましょう。
+windows-10-eos-sync-general-title-2 = パスワードとブックマークをバックアップする良い機会です。
+windows-10-eos-sync-general-subtitle-2 = 今すぐ同期して { -brand-short-name } の大切なデータを保護しましょう。いつでも、どこでも取り戻せます。
+windows-10-eos-sync-tour-title-1 = あなたのタブ、多すぎませんか？ タブグループ機能で整理できます。
+windows-10-eos-sync-tour-subtitle-1 = タブを別のタブの上にドラッグしてグループ化し、散らかったタブを整理しましょう。
+windows-10-eos-sync-tour-title-2 = Windows 11 への移行前に整理整頓。
+windows-10-eos-sync-tour-subtitle-2 = 切り替え前に、ブックマーク、パスワード、設定を同期してバックアップしましょう。
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = おすすめ表示を少なくする
+windows-10-eos-sync-dismiss-button-label = 閉じる
+windows-10-eos-sync-callout-primary-advance-button-label = 次へ
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = 新機能: リンクを長押ししてプレビュー
+link-preview-onboarding-callout-description = 概要や読了時間などを確認して、リンクにクリックする価値があるか確認できます。右クリックからも選択できます。
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = タブのタイトルをサイドバーに表示する
 sidebar-button-callout-subtitle = サイドバーボタンでサイドバーを展開すると、タブのタイトルを確認できます。
 sidebar-button-callout-vertical-tabs = タブを表示するには、ツールバーのサイドバーボタンを選択します。
+sidebar-deprecation-callout-title = 新しくなったサイドバーが間もなく登場
+sidebar-deprecation-callout-subtitle = 現在ご使用のバージョンのサイドバーは段階的に廃止されます。新しいサイドバーをお試しください。より速く、多くのツールにアクセスできます。
+sidebar-deprecation-cta-button = 今すぐ試す
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = タブグループでタブを整理
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = 作業やトピックごとにタブをまとめましょう。タブをドラッグするだけでグループ化できます。
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = グループを作成する
 
 ## Sidebar Vertical Tabs Strings
 
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = サイドバーで AI チャット�
 sidebar-genai-survey-productive-question =
     次の意見にどのくらい同意しますか？<br/>
     「サイドバーに追加した AI チャットボットによって生産性が向上した」
+splitview-onboarding-callout-title-1 = 分割ビュー: 最適なマルチタスク
+splitview-onboarding-callout-subtitle-1 = このタブを右クリックして [分割ビューを追加] を選択すると、一つの画面に 2 個のタブが表示されます。
+splitview-onboarding-callout-cta-1 = 今すぐ試す
+splitview-onboarding-callout-title-2 = 分割ビューで一度に 2 個のタブを表示します
+splitview-onboarding-callout-subtitle-2 = 追加のウィンドウもタブを切り替える必要もありません。このタブを右クリックして [分割ビューを追加] を選んでください。
+splitview-onboarding-callout-cta-2 = 分割ビューを試す
 unified-search-callout-title = 検索エンジン間の切り替え
 unified-search-callout-subtitle = 特定の検索に最も適したものを選んでください。
 unified-search-callout-primary-label = 次へ
@@ -195,6 +272,6 @@ actions-callout-title = 共通のタスクを実行、または基本設定へ�
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = “print” と入力するとページを印刷、“clear” と入力すると履歴を消去できます。

@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = 允許
     .accesskey = A
+permissions-add =
+    .label = 新增
+    .accesskey = A
 permissions-button-off =
     .label = 關閉
     .accesskey = O
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = 移除所有網站
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = 儲存變更
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = 儲存變更
     .buttonaccesskeyaccept = S
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = 您可以指定哪些網站是否可以設定 Cookie 和儲存網站資料。請在下方輸入要指定的完整網址，然後點擊「封鎖」、「此次瀏覽階段允許」或「允許」。
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = 例外 - 結束瀏覽器時清除上網紀錄
+permissions-exceptions-shutdown-clearing-desc = 您可以指定在關閉 { -brand-short-name } 並清除瀏覽紀錄時，要保留哪些網站的資料。請輸入完整網址後按「允許」。
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = 您可以針對特定網站關閉純 HTTPS 模式。連線到這些網站時，{ -brand-short-name } 不會嘗試升級為安全的 HTTPS 連線。例外網站不會在隱私保護視窗中生效。
 permissions-exceptions-https-only-desc2 = 您可以針對特定網站關閉純 HTTPS 模式。連線到這些網站時，{ -brand-short-name } 不會嘗試升級為安全的 HTTPS 連線。
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = 允許彈出型視窗與第三方重新導向的網站
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = 您可以指定要針對哪些網站允許開啟彈出型視窗，並讓第三方畫框重新導向網頁。
 
 ## Exceptions - Pop-ups
 
@@ -168,6 +188,26 @@ permissions-site-camera-disable-label =
     .label = 封鎖新網站使用您攝影機的請求
 permissions-site-camera-disable-desc = 將防止上列以外的網站請您允許使用攝影機。封鎖使用攝影機的權限可能會影響某些網站的功能。
 
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = 設定 - 裝置應用程式與服務
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = 下列網站曾要求存取此裝置中的應用程式或服務。您可以決定要允許或封鎖網站進行此動作。
+permissions-site-localhost-disable-label =
+    .label = 要在此裝置封鎖要連入應用程式或服務的新請求嗎？
+permissions-site-localhost-disable-desc = 將停止任何未列於上方的網站請求存取本裝置當中的應用程式與服務。這樣做可能會導致某些網站功能故障。
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = 設定 - 區域網路裝置
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = 下列網站曾要求存取連結到您 Wi-Fi 或區域網路的裝置當中的應用程式或服務。您可以決定要允許或封鎖網站進行此動作。
+permissions-site-local-network-disable-label =
+    .label = 封鎖存取其他連結到您 Wi-Fi 或區域網路上的其他裝置當中的應用程式與服務的新請求。
+permissions-site-local-network-disable-desc = 將停止任何未列於上方的網站請求存取連結至您 Wi-Fi 或區域網路中的裝置當中的應用程式與服務。這樣做可能會導致某些網站功能故障。
+
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window2 =
@@ -189,7 +229,7 @@ permissions-site-speaker-desc = 下列網站曾要求存取您的音訊輸出裝
 permissions-exceptions-doh-window =
     .title = 使用 DNS over HTTPS 的例外網站
     .style = { permissions-window2.style }
-permissions-exceptions-manage-doh-desc = { -brand-short-name } 不會對下列網站與子網域網站，使用安全的 DNS 進行查詢。
+permissions-exceptions-manage-doh-desc = { -brand-short-name } 不會對下列網站與子網域網站，使用加密 DNS 進行查詢。
 permissions-doh-entry-field = 請輸入網站的網域名稱
     .accesskey = d
 permissions-doh-add-exception =

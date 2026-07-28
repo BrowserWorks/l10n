@@ -12,8 +12,8 @@ about-webauthn-page-title = حول WebAuthn
 ## Section titles
 
 about-webauthn-info-section-title = معلومات الجهاز
-about-webauthn-info-subsection-title = معلومات المصادقة
-about-webauthn-options-subsection-title = خيارات المصادقة
+about-webauthn-info-subsection-title = معلومات الاستيثاق
+about-webauthn-options-subsection-title = خيارات الاستيثاق
 about-webauthn-pin-section-title = إدارة رقم التعريف الشخصي
 about-webauthn-credential-management-section-title = إدارة بيانات الاعتماد
 about-webauthn-pin-required-section-title = رقم التعريف الشخصي مطلوب
@@ -29,14 +29,16 @@ about-webauthn-add-bio-enrollment-section-title = إضافة تسجيل جديد
 
 about-webauthn-results-success = تم!
 about-webauthn-results-general-error = خطأ!
+about-webauthn-results-cancelled-by-user-error = خطأ: ألغِيَ العملية من قبل المستخدم.
 
 ## Labels
 
+about-webauthn-confirm-deletion-label = أنت على وشك حذف:
 
 ## Buttons
 
 about-webauthn-cancel-button = ألغِ
-about-webauthn-send-pin-button = حسنا
+about-webauthn-send-pin-button = حسنًا
 about-webauthn-delete-button = احذف
 about-webauthn-start-enrollment-button = بدء التسجيل
 about-webauthn-update-button = حدّث
@@ -58,6 +60,7 @@ about-webauthn-auth-option-null = غير مدعوم
 
 about-webauthn-auth-info-certifications = الشهادات
 about-webauthn-auth-info-min-pin-length = الحد الأدنى لطول رقم التعريف الشخصي
+about-webauthn-auth-info-force-pin-change = أجبر تغيير رمز PIN
 about-webauthn-auth-info-algorithms = الخوارزميات
 about-webauthn-auth-info-pin-protocols = بروتوكولات رقم التعريف الشخصي
 about-webauthn-auth-info-max-msg-size = الحد الأقصى لحجم الرسالة
@@ -71,11 +74,6 @@ about-webauthn-auth-info-true = صحيح
 about-webauthn-auth-info-false = False
 about-webauthn-auth-info-null = غير مدعوم
 
-## Bio enrollment sample feedbacks
-
-
-## Scan (e.g. of fingerprint) was off-center (e.g. too high, too left, etc.).
-
-
 ##
 
+about-webauthn-ctap2-enroll-feedback-no-user-activity = لا أي نشاط من المستخدم.

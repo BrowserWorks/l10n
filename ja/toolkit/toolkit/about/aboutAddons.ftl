@@ -120,6 +120,8 @@ private-browsing-description2 =
     拡張機能の設定で有効にしない限り、プライベートブラウジング中は拡張機能が動作せず、ユーザーのオンライン行動にもアクセスできません。
     この変更は、ユーザーのプライベートブラウジングの秘密を守るために行われました。
     <label data-l10n-name="private-browsing-learn-more">拡張機能の設定を管理する方法について学ぶ</label>
+aboutaddons-sidebar =
+    .heading = アドオン
 addon-category-discover = おすすめ
 addon-category-discover-title =
     .title = おすすめ
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = 有効化
 extensions-warning-imported-addons2 =
     .message = { -brand-short-name } にインポートされた拡張機能のインストールを完了してください。
 extensions-warning-imported-addons-button = 拡張機能をインストール
+extensions-warning-safe-mode3 =
+    .message = トラブルシューティングモードによりすべてのアドオンが無効化されています。
 
 ## Strings connected to add-on updates
 
@@ -294,7 +298,10 @@ colorway-removal-notice-message =
         アドオンサイトで新しいバージョンを入手してください。
 colorway-removal-notice-learn-more = 詳細情報
 colorway-removal-notice-button = 更新された Colorway テーマを入手
-
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Windows のコントラスト設定が { -brand-short-name } のテーマを上書きしています。{ -brand-short-name } でテーマを使用するには、これらの設定をオフに切り替えてください。
 privacy-policy = プライバシーポリシー
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -475,11 +482,18 @@ available-updates-heading = 更新可能
 recent-updates-heading = 最近の更新
 release-notes-loading = 読み込み中...
 release-notes-error = リリースノートの読み込み中にエラーが発生しました。
+addon-permissions-heading = 権限
 addon-permissions-empty2 = この拡張機能は権限を必要としません。
+addon-permissions-required-label = 必須:
+addon-permissions-optional-label = 任意:
 addon-permissions-empty = この拡張機能は権限を必要としません。
 addon-permissions-required = 中核機能に必要な権限:
 addon-permissions-optional = 追加機能の任意の権限:
 addon-permissions-learnmore = 権限についての詳細情報
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = 一部の権限はあなたの所属組織に管理されています。
 recommended-extensions-heading = おすすめの拡張機能
 recommended-themes-heading = おすすめのテーマ
 # Variables:
@@ -534,9 +548,15 @@ details-notification-hard-blocked-other =
     .message = このアドオンは BrowserWorks のポリシーに違反しているためブロックされ、無効化されています。
 details-notification-unsigned-link = 詳細情報
 details-notification-blocked = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
-details-notification-blocked2 =
-    .message = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
 details-notification-blocked-link2 = 詳細を表示
+details-notification-soft-blocked-extension-disabled2 =
+    .message = この拡張機能は制限され、無効化されています。有効にすると危険を伴う可能性があります。
+details-notification-soft-blocked-extension-enabled2 =
+    .message = この拡張機能は制限されています。使用すると危険を伴う可能性があります。
+details-notification-soft-blocked-other-disabled2 =
+    .message = このアドオンは制限され、無効化されています。有効にすると危険を伴う可能性があります。
+details-notification-soft-blocked-other-enabled2 =
+    .message = このアドオンは制限されています。使用すると危険を伴う可能性があります。
 details-notification-soft-blocked-extension-disabled =
     .message = この拡張機能は BrowserWorks のポリシーに違反しているため制限され、無効化されています。有効にすると危険を伴う可能性があります。
 details-notification-soft-blocked-extension-enabled =
@@ -548,8 +568,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = 詳細を表示
 details-notification-blocked-link = 詳細情報
 details-notification-softblocked = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
-details-notification-softblocked2 =
-    .message = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
 details-notification-softblocked-link = 詳細情報
 details-notification-gmp-pending = { $name } はすぐにインストールされます。
 details-notification-gmp-pending2 =
@@ -575,14 +593,19 @@ permissions-data-addon-button = 権限とデータ
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = 拡張機能 { $extensionName } に利用されています
+addon-permissions-data-collection-heading = データ収集
+addon-permissions-data-collection-empty = 開発者によると、この拡張機能はデータ収集を必要としません。
+addon-data-collection-provided = 拡張機能の開発者から提供された情報
+addon-data-collection-learnmore = データ収集についての詳細情報
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = これは { -brand-short-name } が about:inference で利用しています
 mlmodel-link-preview = これは { -brand-short-name } がリンク先プレビュー時の要点の生成に利用しています
-mlmodel-pdfjs = これは { -brand-short-name } が PDF に追加した画像の代替テキストを作成するのに利用しています
+mlmodel-pdfjs = これは { -brand-short-name } が PDF に追加した画像の代替テキストの作成に利用しています
 mlmodel-smart-tab-topic-engine = これは { -brand-short-name } がタブグループ名を提案するのに利用しています
-mlmodel-smart-tab-embedding-engine = これは { -brand-short-name } タブグループのタブを提案するのに利用しています
+mlmodel-smart-tab-embedding-engine = これは { -brand-short-name } がタブグループのタブを提案するのに利用しています
+mlmodel-formfill-engine = これは { -brand-short-name } がアドレスフォームの入力の補助に利用しています。
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = 端末上の AI
 addon-category-mlmodel-title =

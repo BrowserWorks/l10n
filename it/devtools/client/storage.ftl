@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Aggiungi elemento
+storage-delete-all-button =
+    .title = Elimina tutto
 # Refresh button title
 storage-refresh-button =
     .title = Aggiorna elementi
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Scadenza/Max-Age
 storage-table-headers-cookies-size = Dimensione
 storage-table-headers-cookies-last-accessed = Ultimo accesso
 storage-table-headers-cookies-creation-time = Creazione
+storage-table-headers-cookies-update-time = Aggiornato
 storage-table-headers-cache-status = Stato
 storage-table-headers-extension-storage-area = Area archiviazione
 
@@ -115,4 +118,3 @@ storage-cookie-create-error = Impossibile creare il cookie: “{ $errorString }�
 # Variables:
 #   $errorString (String) - Platform error message
 storage-cookie-edit-error = Impossibile aggiornare il cookie: “{ $errorString }”.
-

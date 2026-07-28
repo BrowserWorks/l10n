@@ -1,0 +1,101 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# The title of the experiment should be kept in English as it may be referenced
+# by various online articles and is technical in nature.
+experimental-features-media-jxl =
+    .label = Mediu: JPEG XL
+experimental-features-media-jxl-description = Cu această funcționalitate activată, { -brand-short-name } acceptă formatul JPEG XL (JXL). Este un format de fișier de imagine îmbunătățit care acceptă tranziții fără pierderi de date de la fișierele JPEG tradiționale. Vezi <a data-l10n-name="bugzilla">tichetul 1539075</a> pentru mai multe detalii.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Activează Warp, un proiect care îmbunătățește performanța JavaScript și utilizarea memoriei.
+# Search during IME
+experimental-features-ime-search =
+    .label = Bară de adrese: afișează rezultatele în timpul compunerii IME
+experimental-features-ime-search-description = Un IME (Editor metodă de intrare) este un instrument care permite introducerea de simboluri complexe, cum ar fi cele utilizate în limbile est-asiatice sau indice, utilizând o tastatură standard. Activarea acestui experiment va menține deschis panoul din bara de adrese, afișând rezultatele căutării și sugestii, în timp ce folosești IME pentru introducerea de text. Reține că IME poate afișa un panou care acoperă rezultatele din bara de adrese; prin urmare, această preferință este sugerată doar pentru IME care nu utilizează acest tip de panou.
+# Auto Picture-in-Picture
+experimental-features-auto-pip =
+    .label = Imagine-în-imagine: deschidere automată la schimbarea filei
+experimental-features-auto-pip-description = Activează imagine-în-imagine pe videoclipuri active la schimbarea filei.
+experimental-features-group-developer-tools =
+    .label = Instrumente de dezvoltare
+experimental-features-group-webpage-display =
+    .label = Afișarea paginii web
+experimental-features-group-customize-browsing =
+    .label = Personalizează-ți navigarea
+experimental-features-group-productivity =
+    .label = Productivitate
+experimental-features-group-newtab-widgets =
+    .label = Widgeturi pe { -firefox-home-brand-name }
+# Contextual Password Manager in sidebar
+experimental-features-contextual-password-manager =
+    .label = Parole în bara laterală
+experimental-features-contextual-password-manager-description = Accesează-ți parolele direct din bara laterală. Gata cu căutatul peste tot și resetarea parolelor când încerci să intri într-un cont. Ca să folosești funcționalitatea, selectează parole în bara laterală. Apoi du-te în setările generale și, sub aspectul browserului, selectează afișarea barei laterale. Apoi, personalizează bara laterală selectând parolele. Dacă o încerci, <a data-l10n-name="connect">zi-ne și nouă ce părere ai</a>.
+# New Tab Custom Wallpapers
+experimental-features-custom-wallpaper =
+    .label = Alege o imagine de fundal sau o culoare personalizată pentru Fila nouă
+experimental-features-custom-wallpaper-description = Încarcă propria ta imagine de fundal sau alege o culoare personalizată pentru fundalul de Filă nouă.
+# Link Previews with AI
+experimental-features-link-previews =
+    .label = Previzualizări linkuri
+experimental-features-link-previews-description =
+    { PLATFORM() ->
+        [macos] Pentru a afla mai multe despre o pagină web înainte de a da clic, plasează cursorul pe un link și apasă Shift (⇧) plus Opțiune (⌥) sau Alt. Previzualizările pot include detalii precum titlul și timpul de citire. Pentru unele pagini web, AI-ul poate citi și textul de pe pagină și poate genera puncte-cheie. AI-ul este optimizat să citească și să genereze text în limba engleză. Pentru a-ți prioritiza confidențialitatea, AI-ul rulează local pe calculator. <a data-l10n-name="connect">Trimite feedback</a>
+       *[other] Pentru a afla mai multe despre o pagină web înainte de a da clic, plasează cursorul pe un link și apasă Shift + Alt. Previzualizările pot include detalii precum titlul și timpul de citire. Pentru unele pagini web, AI-ul poate citi și textul de pe pagină și poate genera puncte-cheie. AI-ul este optimizat să citească și să genereze text în limba engleză. Pentru a-ți prioritiza confidențialitatea, AI-ul rulează local pe calculator. <a data-l10n-name="connect">Trimite feedback</a>
+    }
+# This version of the link previews description does not mention AI.
+experimental-features-link-previews-description-no-ai =
+    { PLATFORM() ->
+        [macos] Pentru a afla mai multe despre o pagină web înainte de a da clic, plasează cursorul pe un link și apasă Shift (⇧) plus Opțiune (⌥) sau Alt. Previzualizările pot include detalii precum titlul și timpul de citire. <a data-l10n-name="connect">Trimite feedback</a>
+       *[other] Pentru a afla mai multe despre o pagină web înainte de a da clic, plasează cursorul pe un link și apasă Shift + Alt. Previzualizările pot include detalii precum titlul și timpul de citire. <a data-l10n-name="connect">Trimite feedback</a>
+    }
+# New Tab Sections with follow and block
+experimental-features-newtab-sections-follow-block =
+    .label = Secțiuni de subiecte și Urmărire/Blocare pentru articolele din filele noi
+experimental-features-newtab-sections-follow-block-description = Organizează articolele de pe pagina filei noi în secțiuni tematice (sport, gastronomie, divertisment și altele) pentru o experiență mai structurată și mai ușor de vizualizat. Folosește noile noastre comenzi „Urmărește” și „Blochează” pentru a personaliza conținutul pe care îl vezi. <a data-l10n-name="connect">Trimite feedback</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Adaugă site-uri în bara de activități
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Deschide site-urile pe care le vizitezi frecvent ca aplicație web în bara de activități. Caută pictograma „Adaugă fila în bara de activități” în dreapta barei de adrese pentru a lansa site-ul respectiv într-o fereastră optimizată, cu toate protecțiile { -brand-product-name }. <a data-l10n-name="connect">Trimite feedback</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Liste pe { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Liste
+experimental-features-newtab-widget-lists-description = Ține-ți lista de sarcini pe primul loc când deschizi o filă nouă. De la liste de împachetare la liste de cumpărături, fă-ți planurile în { -brand-product-name }. <a data-l10n-name="connect">Trimite feedback</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Cronometru în { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Cronometru
+experimental-features-newtab-widget-timer-description = Setează un cronometru pentru a-ți menține concentrarea, pentru a te impulsiona să nu te abați de la ce faci, sau pentru a-ți aminti să iei o pauză. <a data-l10n-name="connect">Trimite feedback</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Liste și cronometru pe { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Fă o prioritate din lista de sarcini când deschizi o filă nouă. De la liste de împachetare la liste de cumpărături, fă-ți planurile în { -brand-product-name }. Setează un cronometru care să te țină concentrat(ă), să te îndemne să te ții de treabă sau să îți reamintească să iei o pauză. <a data-l10n-name="connect">Trimite feedback</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Prognoze meteo
+experimental-features-newtab-widget-weather-description = Fă-ți o imagine clară cum va fi vremea cu prognoze orare. <a data-l10n-name="connect">Trimite feedback</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Imaginea zilei
+experimental-features-newtab-widget-picture-of-the-day-description = Adaugă o mică minune zilnică în viața ta. Obține o imagine nouă, află ceva interesant și setează o imagine de fundal nouă într-o clipă. <a data-l10n-name="connect">Dă-ne feedback</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Ceasuri
+experimental-features-newtab-widget-clocks-description = Adaugă până la patru ceasuri cu denumiri personalizate ca să știi cât e ceasul în locurile care contează pentru tine. <a data-l10n-name="connect">Dă-ne feedback</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Căutare istorică semantică
+experimental-features-semantic-history-search-description = Folosește un model local de învățare automată pentru a sugera intrări din istoric care sunt legate de căutările tale, pe baza înțelegerii limbajului natural din bara de adrese { -brand-product-name }. <a data-l10n-name="connect">Trimite feedback</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Note file
+experimental-features-tab-notes-description = Notele despre file sunt o funcționalitate experimentală care te lasă să adaugi note adezive la filele din browser. Fă adnotări despre context, memento-uri sau pașii următori ca să îți amintești de ce ai deschis o filă când revii pe ea. Ne-ar plăcea să ne dai feedback pe măsură ce continuăm să îmbunătățim această funcționalitate. <a data-l10n-name="connect">Dă-ne feedback</a>

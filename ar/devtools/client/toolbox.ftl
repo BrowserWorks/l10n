@@ -25,5 +25,13 @@ toolbox-meatball-menu-community-label = المجتمع…
 # contributors.
 toolbox-meatball-menu-noautohide-label = عطّل الإخفاء الآلي للمنبثقات
 
-## These labels are shown in the top-toolbar in the Browser Toolbox and Browser Console
+## These two labels are shown when navigating to a file:// URL while having DevTools opened,
+## in order to suggest enabling the Local Mode and load them from https instead.
 
+# Variables:
+#   $url (String): The local mode URL
+toolbox-local-mode-notice = يمكن أيضًا تحميل هذا المستند من "{ $url }" باستخدام "الوضع المحلي" في أدوات المطوِّرين، والذي يمكن تفعيله في لوحة الإعدادات.
+toolbox-local-mode-notice-add-to-settings-button = أضف إلى الإعدادات
+toolbox-local-mode-notice-try-it-button = جرّبه
+toolbox-local-mode-notice-navigate-to-existing-mapping = انتقل إلى الخريطة الحالية
+toolbox-local-mode-notice-always-hide = لا تعرض لي هذا ثانيةً

@@ -8,7 +8,7 @@
 genai-settings-chat-chatgpt-links = Выбирая ChatGPT, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования</a> и <a data-l10n-name="link2">Политикой приватности</a> OpenAl.
 genai-settings-chat-claude-links = Выбирая Anthropic Claude, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования</a>, <a data-l10n-name="link2">Политикой использования</a> и <a data-l10n-name="link3">Политикой конфиденциальности</a> Anthropic.
 genai-settings-chat-copilot-links = Выбирая Copilot, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования ИИ Copilot</a> и <a data-l10n-name="link2">Заявлением о конфиденциальности Microsoft</a>.
-genai-settings-chat-gemini-links = Выбирая Google Gemini, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования Google</a>, <a data-l10n-name="link2">Политикой запрещенного использования генеративного ИИ</a > и <a data-l10n-name="link3">Уведомлением о конфиденциальности приложений Gemini</a>.
+genai-settings-chat-gemini-links = Выбирая Google Gemini, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования Google</a>, <a data-l10n-name="link2">Политикой запрещённого использования генеративного ИИ</a > и <a data-l10n-name="link3">Уведомлением о конфиденциальности приложений Gemini</a>.
 genai-settings-chat-huggingchat-links = Выбирая HuggingChat, вы соглашаетесь с <a data-l10n-name="link1">Уведомлением о конфиденциальности HuggingChat</a> и <a data-l10n-name="link2">Политикой конфиденциальности Hugging Face</a>.
 genai-settings-chat-lechat-links = Выбирая Le Chat Mistral, вы соглашаетесь с <a data-l10n-name="link1">Условиями использования</a> и  <a data-l10n-name="link2">Политикой конфиденциальности</a> Mistral AI.
 genai-settings-chat-localhost-links = Создайте своего приватного локального чат-бота, например, <a data-l10n-name="link1">llamafile</a> из группы инноваций { -vendor-short-name }.
@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = Удалить { $provider }
 genai-menu-remove-sidebar =
     .label = Удалить с боковой панели
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Спросить у { $provider }
 genai-menu-new-badge = Новый
 genai-menu-summarize-page = Резюме по странице
+genai-input-ask-smart-window =
+    .placeholder = Спросить…
 genai-input-ask-generic =
     .placeholder = Спросить у ИИ-чат-бота…
 # $provider (string) - name of the provider
@@ -93,16 +98,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Скрыть ярлык чат-бота
-genai-menu-no-provider =
-    .label = Спросить ИИ-чат-бота
 genai-menu-choose-chatbot =
     .label = Выберите ИИ-чат-бот
+genai-menu-ask-generic-2 =
+    .label = Спросить ИИ-чат-бота
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Спросить { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = Спросить ИИ-чат-бота
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = Спросить…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = ИИ-чат-бот
 genai-header-provider-menu =
     .title = Выберите чат-бот
+genai-header-settings-button =
+    .title = Настройки ИИ-чата
 genai-header-options-button =
     .title = Открыть меню
 genai-header-close-button =
@@ -121,6 +139,11 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = Об ИИ-чат-ботах в { -brand-short-name }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = Так как страница длинная, это частичное описание.
+
 ## Chatbot footer
 
 genai-page-button-summarize = Резюме по странице
@@ -136,7 +159,7 @@ genai-onboarding-choose-description = Вы можете переключитьс
 genai-onboarding-primary = Продолжить
 genai-onboarding-secondary = Закрыть
 genai-onboarding-claude-tooltip =
-    .title = Разумный Клод
+    .title = Anthropic Claude
 genai-onboarding-claude-learn = Узнайте больше о Клоде
 genai-onboarding-chatgpt-tooltip =
     .title = ChatGPT
@@ -186,7 +209,7 @@ genai-onboarding-gemini-analyze = Анализируйте изображени�
 genai-onboarding-gemini-price = Бесплатные и платные опции; требуется аккаунт
 genai-onboarding-huggingchat-generate = Генерация текста и кода
 genai-onboarding-huggingchat-switch = Переключайтесь между разнообразным набором открытых моделей
-genai-onboarding-huggingchat-price-2 = Бесплатно; аккаунт требуется после определенного числа запросов
+genai-onboarding-huggingchat-price-2 = Бесплатно; аккаунт требуется после определённого числа запросов
 genai-onboarding-lechat-generate = Генерация текста и кода
 genai-onboarding-lechat-price = Бесплатно; требуется аккаунт
 
@@ -214,3 +237,48 @@ link-preview-reading-time =
         [few] { $range } минуты чтения
        *[many] { $range } минут чтения
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } не может предпросмотреть эту ссылку
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Перейти по ссылке
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } не может сгенерировать ключевые точки для этой веб-страницы.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Что-то пошло не так.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Попробовать снова
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Настройки предпросмотра ссылок
+link-preview-settings-enable =
+    .label = Включить предпросмотр ссылок
+    .description = Чтобы увидеть заголовок страницы, описание и т.д., воспользуйтесь сочетанием клавиш или щёлкните правой кнопкой мыши на ссылке.
+link-preview-settings-key-points =
+    .label = Разрешить ИИ читать начало страницы и генерировать ключевые точки
+link-preview-settings-long-press =
+    .label = Быстрый доступ: Нажмите и удерживайте ссылку в течение 1 секунды (длительное нажатие)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Увидеть больше с ИИ?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } использует ИИ для чтения начала страницы и генерации нескольких ключевых точек. Чтобы обеспечить приоритет вашей приватности, это происходит на вашем устройстве.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Новинка: Нажмите и удерживайте любую ссылку для предпросмотра
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Посмотрите краткое описание, время чтения и другие параметры, чтобы решить, стоит ли открывать ссылку. Также доступно по щелчку правой кнопкой мыши.
+# Header for the key points section
+link-preview-key-points-header = Ключевые точки
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Ключевые точки сгенерированы ИИ и могут содержать ошибки.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Первая настройка • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = В следующий раз вы увидите ключевые точки быстрее.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Смотреть предпросмотр
+# Onboarding card Close button
+link-preview-onboarding-close = Закрыть
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Первоначальная настройка
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Это может занять некоторое время. В следующий раз вы увидите ключевые точки быстрее.

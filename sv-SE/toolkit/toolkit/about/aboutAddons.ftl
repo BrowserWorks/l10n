@@ -115,6 +115,8 @@ legacy-extensions =
     .value = Äldre tillägg
 legacy-extensions-description = Dessa tillägg uppfyller inte nuvarande standarder i { -brand-short-name } så de har inaktiverats. <label data-l10n-name="legacy-learn-more">Läs mer om ändringar av tillägg</label>
 private-browsing-description2 = { -brand-short-name } ändrar hur tillägg fungerar i privat surfläge. Alla nya tillägg du lägger till i { -brand-short-name } kommer inte att köras som standard i privata fönster. Om du inte tillåter detta i inställningarna, kommer tillägget inte fungera när du är i privat surfläge, och kommer inte ha åtkomst till dina onlineaktiviteter där. Vi har gjort denna ändring för att hålla privat surfning privat. <label data-l10n-name="private-browsing-learn-more">Läs hur du hanterar tilläggsinställningar.</label>
+aboutaddons-sidebar =
+    .heading = Tillägg
 addon-category-discover = Rekommendationer
 addon-category-discover-title =
     .title = Rekommendationer
@@ -165,6 +167,8 @@ extensions-warning-update-security-button = Aktivera
 extensions-warning-imported-addons2 =
     .message = Slutför installationen av tillägg som importerades till { -brand-short-name }.
 extensions-warning-imported-addons-button = Installera tillägg
+extensions-warning-safe-mode3 =
+    .message = Alla tillägg har inaktiverats av felsökningsläget.
 
 ## Strings connected to add-on updates
 
@@ -283,6 +287,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } har uppdaterat sin colorways-kollektion. Vi tog bort den gamla versionen från listan "Sparade teman". Hämta nya versioner på webbplatsen för tillägg.
 colorway-removal-notice-learn-more = Läs mer
 colorway-removal-notice-button = Få uppdaterade colorways-teman
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Dina kontrastinställningar i Windows åsidosätter teman i { -brand-short-name }. Stäng av dessa inställningar för att använda teman i { -brand-short-name }.
 privacy-policy = Sekretesspolicy
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -462,11 +470,18 @@ available-updates-heading = Tillgängliga uppdateringar
 recent-updates-heading = Senaste uppdateringar
 release-notes-loading = Laddar…
 release-notes-error = Tyvärr, men det gick inte att läsa in versionsfakta.
+addon-permissions-heading = Behörigheter
 addon-permissions-empty2 = Detta tillägg kräver inga behörigheter.
+addon-permissions-required-label = Krävs:
+addon-permissions-optional-label = Valfri:
 addon-permissions-empty = Detta tillägg kräver inga behörigheter
 addon-permissions-required = Nödvändiga behörigheter för kärnfunktionalitet:
 addon-permissions-optional = Valfria behörigheter för extra funktionalitet:
 addon-permissions-learnmore = Läs mer om behörigheter
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Vissa behörigheter hanteras av din organisation.
 recommended-extensions-heading = Rekommenderade tillägg
 recommended-themes-heading = Rekommenderade teman
 # Variables:
@@ -521,9 +536,15 @@ details-notification-hard-blocked-other =
     .message = Det här tillägget är blockerat på grund av att det bryter mot BrowserWorkss policyer och har inaktiverats.
 details-notification-unsigned-link = Mer information
 details-notification-blocked = { $name } har inaktiverats av säkerhets- eller stabilitetsskäl.
-details-notification-blocked2 =
-    .message = { $name } har inaktiverats av säkerhets- eller stabilitetsskäl.
 details-notification-blocked-link2 = Se detaljer
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Tillägget är begränsat och har inaktiverats. Du kan aktivera det, men det kan vara riskabelt.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Tillägget är begränsat. Att använda det kan vara riskabelt.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Detta tillägg är begränsat och har inaktiverats. Du kan aktivera det, men det kan vara riskabelt.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Detta tillägg är begränsat. Att använda det kan vara riskabelt.
 details-notification-soft-blocked-extension-disabled =
     .message = Det här tillägget är begränsat på grund av att det bryter mot BrowserWorkss policyer och har inaktiverats. Du kan aktivera det, men det kan vara riskabelt.
 details-notification-soft-blocked-extension-enabled =
@@ -535,8 +556,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Se detaljer
 details-notification-blocked-link = Mer information
 details-notification-softblocked = { $name } har kända säkerhets- eller stabilitetsproblem.
-details-notification-softblocked2 =
-    .message = { $name } har kända säkerhets- eller stabilitetsproblem.
 details-notification-softblocked-link = Mer information
 details-notification-gmp-pending = { $name } kommer att installeras inom kort.
 details-notification-gmp-pending2 =
@@ -562,14 +581,19 @@ permissions-data-addon-button = Behörigheter och data
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Används av tillägget { $extensionName }
+addon-permissions-data-collection-heading = Datainsamling
+addon-permissions-data-collection-empty = Utvecklaren säger att detta tillägg inte kräver datainsamling.
+addon-data-collection-provided = Information tillhandahållen av tilläggsutvecklaren
+addon-data-collection-learnmore = Lär dig mer om datainsamling
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = { -brand-short-name } använder detta på about:inference
-mlmodel-link-preview = { -brand-short-name } använder detta för att generera viktiga punkter när du förhandsgranskar länkar
+mlmodel-link-preview = { -brand-short-name } använder detta för att generera nyckelpunkter när du förhandsgranskar länkar
 mlmodel-pdfjs = { -brand-short-name } använder detta för att skapa alternativ text för bilder du lägger till i PDF-filer
 mlmodel-smart-tab-topic-engine = { -brand-short-name } använder detta för att föreslå namn för dina flikgrupper
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } använder detta för att föreslå flikar för dina flikgrupper
+mlmodel-formfill-engine = { -brand-short-name } använder detta för att fylla i adressformulär
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = AI på enheten
 addon-category-mlmodel-title =

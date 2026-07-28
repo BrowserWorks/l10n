@@ -30,6 +30,10 @@ options-context-inspector = Trình kiểm tra
 options-show-user-agent-styles-label = Hiển thị kiểu của trình duyệt
 options-show-user-agent-styles-tooltip =
     .title = Bật tính năng này sẽ hiển thị các kiểu mặc định được tải bởi trình duyệt.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Hiển thị Shadow DOM của trình duyệt
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Bật tính năng này sẽ hiển thị các phần tử Shadow DOM được trình duyệt xử lý.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Cắt bớt các thuộc tính DOM
 options-collapse-attrs-tooltip =
@@ -60,11 +64,23 @@ options-default-color-unit-name = Tên màu
 ## Web Console section
 
 # The heading
-options-webconsole-label = Bảng điều khiển Web
+options-webconsole-label = Web Console
 # The label for the checkbox that toggle whether the Split console is enabled
 options-webconsole-split-console-label = Bật bảng điều khiển chia tách
 options-webconsole-split-console-tooltip =
     .title = Mở bảng điều khiển chia tách với phím Escape
+
+## Experimental section
+
+# The heading
+options-experimental-label = Các tính năng thử nghiệm
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Hiện các stylesheet trong trình gỡ lỗi
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Liệt kê và xem các stylesheet trong trình gỡ lỗi
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (yêu cầu mở lại hộp công cụ)
 
 ## Style Editor section
 
@@ -105,6 +121,34 @@ options-sourceeditor-tabsize-label = Kích cỡ phím tab
 options-sourceeditor-keybinding-label = Tổ hợp phím
 options-sourceeditor-keybinding-default-label = Mặc định
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Chế độ cục bộ (local mode)
+options-local-mode-only-work-locally = Chế độ cục bộ chỉ hoạt động cục bộ và bị vô hiệu hóa khi gỡ lỗi trong môi trường từ xa
+options-local-mode-behavior = Chế độ cục bộ cho phép bạn tải các tệp cục bộ thông qua URL HTTPS mà không cần bất kỳ phụ thuộc bên ngoài nào. Các URL chỉ có thể được tải từ các thẻ khi DevTools đang mở.
+options-local-mode-folder-label = Thư mục cục bộ:
+options-local-mode-choose-folder = Duyệt…
+    .title = Chọn một thư mục cục bộ để lưu trữ mapping này
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Chọn thư mục chế độ cục bộ cho: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Thư mục này không tồn tại hoặc không hợp lệ.
+options-local-mode-toggle =
+    .title = Kích hoạt/vô hiệu hoá mapping cục bộ này
+options-local-mode-toggle-enable = Kích hoạt
+options-local-mode-toggle-disable = Vô hiệu hóa
+options-local-mode-navigate-to =
+    .title = Điều hướng đến URL mapping này
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Bạn có muốn xoá mapping “{ $mappingOrigin }”?
+options-local-mode-new-mapping = Thêm một mapping cục bộ mới
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -113,6 +157,8 @@ options-context-advanced-settings = Cài đặt nâng cao
 options-disable-http-cache-label = Vô hiệu hóa bộ đệm HTTP (khi hộp công cụ đang mở)
 options-disable-http-cache-tooltip =
     .title = Bật tùy chọn này sẽ vô hiệu hóa bộ đệm HTTP cho tất cả các thẻ có hộp công cụ mở. Service Worker không bị ảnh hưởng bởi tùy chọn này.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Vô hiệu hóa JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Tắt JavaScript *
 options-disable-javascript-tooltip =
@@ -141,5 +187,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Bật bản đồ nguồn
 options-source-maps-tooltip =
     .title = Nếu bạn bật tùy chọn này, các nguồn sẽ được ánh xạ trong các công cụ.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (chỉ phiên hiện tại, tải lại trang)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Chỉ phiên hiện tại, tải lại trang
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (tải lại trang)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Tự động
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Không còn được dùng nữa. Tìm hiểu thêm…

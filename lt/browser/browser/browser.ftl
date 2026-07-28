@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The main browser window's title
-
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -112,6 +109,12 @@ urlbar-tip-icon-description =
     .alt = Patarimas:
 urlbar-result-menu-button =
     .title = Atverti meniu
+urlbar-result-menu-learn-more2 = Sužinoti daugiau
+    .accesskey = S
+urlbar-result-menu-remove-from-history2 = Pašalinti iš žurnalo
+    .accesskey = P
+urlbar-result-menu-tip-get-help2 = Gauti pagalbos
+    .accesskey = p
 urlbar-result-menu-learn-more =
     .label = Sužinoti daugiau
     .accesskey = S
@@ -176,6 +179,12 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Įtraukti šį tinklalapį į adresyną ({ $shortcut })
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Išvalyti paieškos praeities sąrašą
+    .accesskey = v
 
 ## Page Action Context Menu
 
@@ -248,7 +257,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Peržiūrėti priedus
@@ -541,13 +550,16 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Priedas:
+urlbar-go-button2 =
+    .title = Eiti į adreso lauke surinktą adresą
 urlbar-go-button =
     .tooltiptext = Eiti į adreso lauke surinktą adresą
 urlbar-page-action-button =
     .tooltiptext = Tinklalapio veiksmai
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -603,6 +615,15 @@ urlbar-searchmode-history =
     .label = Žurnalas
 urlbar-searchmode-actions =
     .label = Veiksmai
+urlbar-searchmode-bookmarks2 = Adresynas
+urlbar-searchmode-tabs2 = Kortelės
+urlbar-searchmode-history2 = Žurnalas
+urlbar-searchmode-actions2 = Veiksmai
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Pridėti „{ $engineName }“
+    .title = Pridėti ieškyklę „{ $engineName }“
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -753,7 +774,7 @@ repair-text-encoding-button =
     .label = Sutvarkyti simbolių koduotę
     .tooltiptext = Nuspėti tinkamą simbolių koduotę iš puslapio turinio
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -804,6 +825,10 @@ eme-notifications-drm-content-playing-dismiss-accesskey = P
 
 panel-save-update-username = Naudotojo vardas
 panel-save-update-password = Slaptažodis
+panel-save-update-username-2 =
+    .label = Naudotojo vardas
+panel-save-update-password-2 =
+    .label = Slaptažodis
 
 ##
 
@@ -889,9 +914,6 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Atverti ankstesnes korteles?</strong> Galite atkurti savo ankstesnį seansą iš „{ -brand-short-name }“ programos meniu <img data-l10n-name="icon"/>, iš žurnalo.
 restore-session-startup-suggestion-button = Parodyti instrukciją
 
-## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
-
-
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = „{ -brand-short-name }“ automatiškai siunčia tam tikrus duomenis į „{ -vendor-short-name }“ programos gerinimo tikslais.
@@ -916,14 +938,6 @@ unified-extensions-button-permissions-needed =
         Priedai
         Reikia leidimų
 
-## Unified extensions button when some extensions are quarantined.
-## Note that the new line is intentionally part of the tooltip.
-
-
-## Unified extensions button when some extensions are disabled (e.g. through add-ons blocklist).
-## Note that the new line is intentionally part of the tooltip.
-
-
 ## Private browsing reset button
 
 reset-pbm-toolbar-button =
@@ -945,9 +959,6 @@ refresh-blocked-redirect-label = „{ -brand-short-name }“ neleido šiam tinkl
 refresh-blocked-allow =
     .label = Leisti
     .accesskey = L
-
-## Firefox Relay integration
-
 
 ## Add-on Pop-up Notifications
 
@@ -989,16 +1000,3 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Rodyti „{ $popupURI }“
-
-## File-picker crash notification ("FilePickerCrashed.sys.mjs")
-
-
-# Button used with file-picker-crashed-save-default. Opens the folder in Windows
-# Explorer, with the saved file selected and in focus.
-#
-# The wording here should be consistent with the Windows variant of
-# `downloads-cmd-show-menuitem-2` and similar messages.
-
-
-## Onboarding Finish Setup checklist
-

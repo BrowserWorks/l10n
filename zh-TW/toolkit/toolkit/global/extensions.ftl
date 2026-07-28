@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = 拒絕
     .accesskey = D
 webext-perms-host-description-all-urls = 存取您所有網站中的資料
+webext-perms-host-description-file-urls = 存取您電腦上的檔案
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = 存取您在 { $domain } 網域中的資料
@@ -126,6 +127,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } 要求收�
 
 webext-site-perms-header-with-gated-perms-midi = 此附加元件會讓 { $hostname } 能夠存取 MIDI 裝置。
 webext-site-perms-header-with-gated-perms-midi-sysex = 此附加元件會讓 { $hostname } 能夠存取 MIDI 裝置（並支援 SysEx）。
+webext-site-perms-header-with-gated-perms-serial = 此附加元件會讓 { $hostname } 能夠存取序列埠裝置。
 
 ##
 
@@ -136,6 +138,12 @@ webext-site-perms-description-gated-perms-midi =
     通常是連結音效合成器等外接裝置，但也可能是電腦中內建的裝置。
     
     一般來說不該允許網站存取 MIDI 裝置，使用不當的話可能會造成裝置損壞，或有安全性風險。
+webext-site-perms-description-gated-perms-webserial =
+    這是指諸如微控制器、3D 印表機，或其他透過 USB、序列埠或藍牙連接的裝置。
+    
+    您將可以選擇網站可以存取哪些裝置。
+    
+    一般來說，不應允許網站存取序列埠裝置。不正確使用可能會造成損畫，或影響安全性。
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -150,6 +158,7 @@ webext-site-perms-header-unsigned-with-perms = 要安裝 { $extension } 嗎？�
 
 webext-site-perms-midi = 存取 MIDI 裝置
 webext-site-perms-midi-sysex = 存取 MIDI 裝置並支援 SysEx
+webext-site-perms-serial = 存取序列埠裝置
 
 ## Colorway theme migration
 

@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Böngészési és letöltési előzmények
     .accesskey = B
 item-history-and-downloads-description2 = Törli az oldalak és a letöltések előzményeit
-item-history-form-data-downloads =
-    .label = Előzmények
-    .accesskey = E
-item-history-form-data-downloads-description = Törli az oldalak és letöltések előzményeit, a mentett űrlap-információkat és a kereséseket
 item-cookies =
     .label = Sütik
     .accesskey = t
@@ -132,3 +128,6 @@ sanitize-everything-warning = Minden előzmény törölve lesz.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Minden kijelölt elem törölve lesz.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Számítás…

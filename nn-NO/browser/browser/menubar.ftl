@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Innstillingar
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Innstillingar…
+menu-application-set-as-default =
+    .label = Bruk { -brand-shorter-name } som standardnettlesar
 menu-application-services =
     .label = Tenester
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Del
     .accesskey = e
+menu-file-share-qrcode =
+    .label = Generer QR-kode…
+    .accesskey = G
+menu-file-share-qrcode2 =
+    .label = Generer QR-kode
+    .accesskey = G
 menu-file-print-setup =
     .label = Utskriftsformat…
     .accesskey = m
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = Historikk
 menu-view-synced-tabs-sidebar =
     .label = Synkroniserte faner
-menu-view-megalist-sidebar =
-    .label = Passord
 menu-view-full-zoom =
     .label = Skalering
     .accesskey = r
@@ -266,6 +263,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (gjeldande)
+menu-profiles-menu =
+    .label = Profilar
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Sideinformasjon
     .accesskey = d
+menu-tools-edit-pdf =
+    .label = Rediger PDF…
+    .accesskey = R
 menu-settings =
     .label = Innstillingar
     .accesskey =

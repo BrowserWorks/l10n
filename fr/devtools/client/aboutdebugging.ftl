@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Débogage - Exécution / { $selectedRu
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Ce { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Ce { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Ce { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Configuration
+about-debugging-sidebar-setup-title =
+    .title = Configuration
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Boîte à outils multiprocessus
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Processus principal et processus de contenu pour le navigateur cible
+about-debugging-message-error-icon =
+    .alt = Icône d’erreur
+about-debugging-message-info-icon =
+    .alt = Icône d’information
+about-debugging-message-warning-icon =
+    .alt = Icône d’avertissement
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Fermer le message
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Fermer le message
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Détails de l’erreur
 about-debugging-message-details-label-warning = Détails de l’avertissement
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Détails
+about-debugging-sidebar =
+    .heading = Débogage

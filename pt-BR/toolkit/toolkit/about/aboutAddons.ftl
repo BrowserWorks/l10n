@@ -120,6 +120,8 @@ private-browsing-description2 =
     extensão não funcionará durante a navegação privativa e não terá acesso à sua atividade online.
     Fizemos esta alteração para assegurar sua navegação privativa.
     <label data-l10n-name="private-browsing-learn-more">Saiba como gerenciar configurações de extensões.</label>
+aboutaddons-sidebar =
+    .heading = Extensões
 addon-category-discover = Recomendações
 addon-category-discover-title =
     .title = Recomendações
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Ativar
 extensions-warning-imported-addons2 =
     .message = Finalize a instalação das extensões importadas para o { -brand-short-name }.
 extensions-warning-imported-addons-button = Instalar extensões
+extensions-warning-safe-mode3 =
+    .message = Todos os temas e extensões foram desativados pelo modo de solução de problemas.
 
 ## Strings connected to add-on updates
 
@@ -287,6 +291,10 @@ colorway-removal-notice-message =
     .message = O { -brand-product-name } atualizou sua coleção de esquemas de cores. Removemos as versões antigas da sua lista de temas salvos. Obtenha novas versões no site de extensões.
 colorway-removal-notice-learn-more = Saiba mais
 colorway-removal-notice-button = Obtenha temas de esquemas de cores atualizados
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Suas configurações de contraste do Windows estão sobrepondo temas do { -brand-short-name }. Desative essas configurações para usar temas no { -brand-short-name }.
 privacy-policy = Política de privacidade
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -419,7 +427,7 @@ addon-detail-group-label-private-browsing =
 # Used as a description for the option to allow or block an add-on on quarantined domains.
 addon-detail-quarantined-domains-label = Funcionamento em sites com restrições
 # Used as help text part of the quarantined domains UI controls row.
-addon-detail-quarantined-domains-help = Quando permitido, a extensão terá acesso a sites restritos pela { -vendor-short-name }. Permita apenas se você confiar nesta extensão.
+addon-detail-quarantined-domains-help = Quando permitido, a extensão terá acesso a sites com restrição pela { -vendor-short-name }. Permita apenas se você confiar nesta extensão.
 # Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
 addon-detail-quarantined-domains-allow = Permitir
 addon-detail-quarantined-domains-disallow = Não permitir
@@ -466,11 +474,18 @@ available-updates-heading = Atualizações disponíveis
 recent-updates-heading = Atualizações recentes
 release-notes-loading = Carregando…
 release-notes-error = Desculpe, houve um erro ao carregar as notas de atualização.
+addon-permissions-heading = Permissões
 addon-permissions-empty2 = Esta extensão não requer nenhuma permissão.
+addon-permissions-required-label = Necessário:
+addon-permissions-optional-label = Opcional:
 addon-permissions-empty = Esta extensão não exige nenhum permissão
 addon-permissions-required = Permissões necessárias para a funcionalidade principal:
 addon-permissions-optional = Permissões opcionais para funcionalidades adicionais:
 addon-permissions-learnmore = Saiba mais sobre permissões
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Algumas permissões são gerenciadas pela sua organização.
 recommended-extensions-heading = Extensões recomendadas
 recommended-themes-heading = Temas recomendados
 # Variables:
@@ -525,22 +540,26 @@ details-notification-hard-blocked-other =
     .message = Esta extensão foi bloqueada por violar diretrizes da BrowserWorks e foi desativada.
 details-notification-unsigned-link = Mais informações
 details-notification-blocked = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
-details-notification-blocked2 =
-    .message = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
 details-notification-blocked-link2 = Ver detalhes
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Esta extensão está com restrição e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Esta extensão está com restrição. Usar pode ser arriscado.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Esta extensão está com restrição e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Esta extensão está com restrição. Usar pode ser arriscado.
 details-notification-soft-blocked-extension-disabled =
-    .message = Esta extensão está restrita por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+    .message = Esta extensão está com restrição por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
 details-notification-soft-blocked-extension-enabled =
     .message = Esta extensão viola diretrizes da BrowserWorks. Usar pode ser arriscado.
 details-notification-soft-blocked-other-disabled =
-    .message = Esta extensão está restrita por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
+    .message = Esta extensão está com restrição por violar diretrizes da BrowserWorks e foi desativada. Você tem opção de ativar, mas pode ser arriscado.
 details-notification-soft-blocked-other-enabled =
     .message = Esta extensão viola diretrizes da BrowserWorks. Usar pode ser arriscado.
 details-notification-softblocked-link2 = Ver detalhes
 details-notification-blocked-link = Mais informações
 details-notification-softblocked = O { $name } é reconhecido como causa de problemas de segurança ou estabilidade.
-details-notification-softblocked2 =
-    .message = O { $name } é reconhecido como causa de problemas de segurança ou estabilidade.
 details-notification-softblocked-link = Mais informações
 details-notification-gmp-pending = { $name } será instalado em instantes.
 details-notification-gmp-pending2 =
@@ -566,6 +585,10 @@ permissions-data-addon-button = Permissões e dados
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Usado pela extensão { $extensionName }
+addon-permissions-data-collection-heading = Coleta de dados
+addon-permissions-data-collection-empty = O desenvolvedor afirma que esta extensão não requer coleta de dados.
+addon-data-collection-provided = Informações fornecidas pelo desenvolvedor da extensão
+addon-data-collection-learnmore = Saiba mais sobre coleta de dados
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -574,6 +597,7 @@ mlmodel-link-preview = O { -brand-short-name } usa isso para gerar pontos chave 
 mlmodel-pdfjs = O { -brand-short-name } usa isto para criar texto alternativo em imagens que você adiciona a documentos PDF
 mlmodel-smart-tab-topic-engine = O { -brand-short-name } usa isto para sugerir nomes para seus grupos de abas
 mlmodel-smart-tab-embedding-engine = O { -brand-short-name } usa isto para sugerir abas para seus grupos de abas
+mlmodel-formfill-engine = O { -brand-short-name } usa isso para ajudar a preencher formulários de endereços
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = Inteligência artificial no dispositivo
 addon-category-mlmodel-title =

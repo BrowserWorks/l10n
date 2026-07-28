@@ -72,7 +72,7 @@ translations-panel-translate-cancel =
     .label = 取消
 translations-panel-learn-more-link = 详细了解
 translations-panel-intro-header = 试试 { -brand-shorter-name } 注重隐私的翻译功能
-translations-panel-intro-description = 为保护隐私，翻译过程只会在本地进行。我们很快会支持更多语言并带来改进！
+translations-panel-intro-description = 为保护隐私，翻译内容不会离开您的设备。我们很快会支持更多语言并带来改进！
 translations-panel-error-translating = 翻译时遇到问题，请重试。
 translations-panel-error-load-languages = 无法加载语言
 translations-panel-error-load-languages-hint = 请检查您的互联网连接，然后重试。
@@ -85,19 +85,27 @@ translations-panel-error-change-button =
     .label = 更改原始语言
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from this language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+translations-panel-error-unsupported-hint-known-2 = 抱歉，我们尚未支持翻译{ $language }。
+translations-panel-error-unsupported-hint-unknown-2 = 抱歉，我们尚未支持翻译此语言。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
 #   $language (string) - The language of the document.
 translations-panel-error-unsupported-hint-known = 抱歉，我们尚未支持{ $language }。
-translations-panel-error-unsupported-hint-unknown = 抱歉，我们尚未支持这种语言。
+translations-panel-error-unsupported-hint-unknown = 抱歉，我们尚未支持此语言。
 
 ## Each label is followed, on a new line, by a dropdown list of language names.
 ## If this structure is problematic for your locale, an alternative way is to
 ## translate them as `Source language:` and `Target language:`
 
-translations-panel-from-label = 原始语言：
-translations-panel-to-label = 目标语言：
+translations-panel-from-label = 原始语言
+translations-panel-to-label = 目标语言
 
 ## The translation panel appears from the url bar, and this view is the "restore" view
 ## that lets a user restore a page to the original language, or translate into another
@@ -198,9 +206,9 @@ main-context-menu-translate-link-text-to-language =
 # Text displayed in the select translations panel header.
 select-translations-panel-header = 翻译
 # Text displayed above the from-language dropdown menu.
-select-translations-panel-from-label = 原始语言
+select-translations-panel-from-label = 从
 # Text displayed above the to-language dropdown menu.
-select-translations-panel-to-label = 目标语言
+select-translations-panel-to-label = 翻译成
 # Text displayed above the try-another-source-language dropdown menu.
 select-translations-panel-try-another-language-label = 选择其他原始语言
 select-translations-panel-cancel-button =
@@ -230,6 +238,16 @@ select-translations-panel-translation-failure-message =
     .message = 翻译时遇到问题，请重试。
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support translations from { $language } yet.
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known-2 =
+    .message = 抱歉，我们尚未支持翻译{ $language }。
+select-translations-panel-unsupported-language-message-unknown-2 =
+    .message = 抱歉，我们尚未支持翻译此语言。
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Sorry, we don't support the language yet: { $language }
 #
 # Variables:
@@ -237,7 +255,7 @@ select-translations-panel-translation-failure-message =
 select-translations-panel-unsupported-language-message-known =
     .message = 抱歉，我们尚未支持{ $language }。
 select-translations-panel-unsupported-language-message-unknown =
-    .message = 抱歉，我们尚未支持这种语言。
+    .message = 抱歉，我们尚未支持此语言。
 # Text displayed on the menuitem that opens the Translation Settings page.
 select-translations-panel-open-translations-settings-menuitem =
     .label = 翻译设置

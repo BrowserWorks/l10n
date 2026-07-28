@@ -72,7 +72,15 @@ open-in-new-window-for-csp-or-xfo-error = Åbn websted i et nyt vindue
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = For at beskytte din sikkerhed vil { $hostname } ikke tillade, at { -brand-short-name } viser siden, hvis et andet websted har indlejret den. Du skal åbne siden i et nyt vindue for at se den.
 fp-certerror-view-certificate-link = Vis webstedets certifikat
+fp-certerror-return-to-previous-page-recommended-button-2 = Gå tilbage (anbefalet)
+    .accesskey = G
 fp-certerror-return-to-previous-page-recommended-button = Gå tilbage (anbefalet)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } advarer dig om webstedet, fordi certifikatet for { $hostname } er blevet tilbagekaldt og der ikke længere stoles på det.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = Sandsynligvis ingenting, da der sandsynligvis er et problem med selve webstedet. De kan kontakte webstedets ejer for at høre, om vedkommende arbejder på at løse problemet.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = Gå tilbage (anbefalet
 fp-certerror-bad-domain-why-dangerous-body = Dette websted er konfigureret til udelukkende at tillade sikre forbindelser, men der er et problem med webstedets certifikat. En aktør med slette hensigter forsøger muligvis at udgive sig for at være webstedet. Websteder anvender certifikater udstedt af en certifikatautoritet til at bevise, at de virkeligt er hvem de udgiver sig for at være. { -brand-short-name } stoler ikke på dette websted, fordi certifikatet ikke er gyldigt for { $hostname }. Certifikatet er kun gyldigt for { $validHosts }.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = Sandsynligvis ingenting, eftersom det tilsyneladende skyldes et problem med selve webstedet. Websteder bruger certifikater udsted af en certifikatautoritet for at bevise, at de virkeligt er hvem de påstår at de er. Men hvis du befinder dig på et virksomheds-netværker kan det være, at jeres IT-afdeling har flere oplysninger. Hvis du anvender antivirus-software, kan du prøve at søge efter mulige konflikter eller kendte problemer.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } advarer dig om dette webstedet, fordi certifikatet for { $hostname } er udstedt af en certifikatautoritet, der ikke længere stoles på.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = Sandsynligvis ingenting, da der er et problem med selve webstedet. Du kan kontakte webstedets ejer for at høre, om de arbejder på at løse problemet.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = Der er et problem med webstedets certifikat. En aktør med slette hensigter forsøger muligvis at udgive sig for at være webstedet. Websteder anvender certifikater udstedt af en certifikatautoritet til at bevise, at de virkeligt er hvem de udgiver sig for at være. { -brand-short-name } stoler ikke på dette websted, fordi vi ikke kan se, hvem der har udstedt certifikatet, det er underskrevet af indehaveren selv, eller webstedet sender ikke mellemliggende certifikater, vi har tillid til.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,27 @@ fp-cert-error-code = Fejlkode: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } stoler ikke på { $hostname }, fordi den ikke kan bevise at den overholder kravene til gennemsigtighed for offentlige certifikater.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = Sandsynligvis ingenting, da der formentlig er et problem med selve webstedet.
 fp-learn-more-about-secure-connection-failures = Læs mere om fejl med at oprette en sikker forbindelse
 fp-learn-more-about-cert-issues = Læs mere om denne slags certifikat-problemer
 fp-learn-more-about-time-related-errors = Læs mere om at fejlsøge tids-relaterede problemer
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = { -brand-short-name } stoler ikke på dette websted, fordi det ser ud til, at det angivne certifikat ikke er gyldigt før { DATETIME($date, timeStyle: "short") } den { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = Uret i din enhed er indstillet til { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }. Hvis dette er rigtigt, så skyldes sikkerhedsproblemet et problem på webstedet. Hvis tidspunktet ikke er rigtigt, kan du ændre det i systemindstillingerne på din enhed.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = Ejeren af { $hostname } har ikke sat webstedet korrekt op og en sikker forbindelse kan ikke oprettes.
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +196,7 @@ redirectLoop-title = Denne side viderestiller ikke forespørgslen korrekt
 unknownSocketType-title = Uventet svar fra server
 nssFailure2-title = Sikker forbindelse mislykkedes
 csp-xfo-error-title = { -brand-short-name } kan ikke åbne denne side
+corruptedContentErrorv2-title = Fejlbehæftet indhold
 corruptedContentError-title = Fejlbehæftet indhold
 sslv3Used-title = Kan ikke oprette sikker forbindelse
 inadequateSecurityError-title = Din forbindelse er ikke sikker
@@ -190,3 +223,6 @@ fp-certerror-hide-advanced-button = Skjul avanceret
 fp-certerror-override-exception-button = Fortsæt til { $hostname } (Risikabelt)
 fp-certerror-intro = { -brand-short-name } opdagede et potentielt alvorligt sikkerhedsproblem med <strong>{ $hostname }</strong>. Nogen som udgiver sig for at være webstedet kan forsøge at stjæle ting som oplysninger om betalingskort, adgangskoder eller mails.
 fp-certerror-expired-into = { -brand-short-name } opdagede et sikkerhedsproblem med <strong>{ $hostname }</strong>. Enten er webstedet opsat forkert eller også er din enheds ur indstillet til det forkert tidspunkt eller den forkert dato.
+fp-certerror-transparency-intro = Nogen som udgiver sig for at være <strong>{ $hostname }</strong> kan forsøge at stjæle ting som oplysninger om dit betalingskort, adgangskoder eller mails.
+fp-certerror-override-exception-button-2 = Fortsæt til { $hostname } (Risikabelt)
+    .accesskey = F

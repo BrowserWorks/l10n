@@ -76,10 +76,22 @@ fp-certerror-return-to-previous-page-recommended-button = Назад (реком
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } попереджає вас про цей сайт, оскільки сертифікат, наданий для { $hostname }, було відкликано, і він більше не є довіреним.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = Ймовірно, нічого. Здається, проблема власне з сайтом. Ви можете звернутися до власника вебсайту, щоб дізнатися, чи працюють вони над усуненням проблеми.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
 #   $validHosts (String) - Valid hostnames.
 fp-certerror-bad-domain-why-dangerous-body = Сайт налаштовано на дозвіл лише захищених з'єднань, але виникла проблема із сертифікатом сайту. Можливо, зловмисник намагається підмінити сайт. Сайти використовують сертифікати, видані центром сертифікації, щоб підтвердити, що вони справді ті, за кого себе видають. { -brand-short-name } не довіряє цьому сайту, оскільки його сертифікат недійсний для { $hostname }. Сертифікат дійсний лише для: { $validHosts }.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = Швидше за все, нічого, тому що ймовірно проблема з самим сайтом. Сайти використовують сертифікати, видані центром сертифікації, щоб підтвердити, що вони справді ті, за кого себе видають. Але якщо ви працюєте в корпоративній мережі, ваша служба підтримки може мати більше інформації. Якщо ви використовуєте антивірусне програмне забезпечення, спробуйте знайти потенційні конфлікти чи відомі проблеми.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } попереджає вас про цей сайт, оскільки сертифікат, наданий для { $hostname }, виданий центром сертифікації, який більше не вважається довіреним.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = Ймовірно, нічого. Здається, проблема власне з сайтом. Ви можете звернутися до власника вебсайту, щоб дізнатися, чи працюють вони над усуненням проблеми.
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = Виникла проблема із сертифікатом сайту. Можливо, зловмисник намагається підмінити сайт. Сайти використовують сертифікати, видані центром сертифікації, щоб підтвердити, що вони справді ті, за кого себе видають. { -brand-short-name } не довіряє цьому сайту, оскільки неможливо засвідчити видавця сертифіката, він самопідписаний, або сайт не надсилає проміжні довірені сертифікати.
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +119,27 @@ fp-cert-error-code = Код помилки: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } не довіряє { $hostname }, оскільки не зміг довести його відповідність вимогам прозорості загальнодоступних сертифікатів.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = Швидше за все, нічого. Ймовірно, проблема з самим сайтом.
 fp-learn-more-about-secure-connection-failures = Докладніше про збої захищених з'єднань
 fp-learn-more-about-cert-issues = Докладніше про такі проблеми із сертифікатами
 fp-learn-more-about-time-related-errors = Докладніше про усунення помилок, пов'язаних із часом
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = { -brand-short-name } не довіряє цьому сайту, оскільки наданий сертифікат недійсний до { DATETIME($date, timeStyle: "short") } станом на { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = Годинник вашого пристрою встановлено на { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }. Якщо це правильно, проблема з безпекою, ймовірно, у самому сайті. Якщо це неправильно, ви можете змінити час у системних налаштуваннях свого пристрою.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = Власник { $hostname } не налаштував його належним чином, тому неможливо створити захищене з'єднання.
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +194,7 @@ redirectLoop-title = Неналежне перенаправлення на ст
 unknownSocketType-title = Неочікувана відповідь сервера
 nssFailure2-title = Не вдалося встановити захищене з'єднання
 csp-xfo-error-title = { -brand-short-name } не може відкрити цю сторінку
+corruptedContentErrorv2-title = Помилка пошкодженого вмісту
 corruptedContentError-title = Помилка пошкодженого вмісту
 sslv3Used-title = Не вдалося встановити захищене з'єднання
 inadequateSecurityError-title = Ваше з'єднання не захищене
@@ -190,3 +221,4 @@ fp-certerror-hide-advanced-button = Приховати подробиці
 fp-certerror-override-exception-button = Перейти до { $hostname } (ризиковано)
 fp-certerror-intro = { -brand-short-name } виявив потенційно серйозну проблему безпеки з <strong>{ $hostname }</strong>. Той, хто видає себе за сайт, може спробувати викрасти дані кредитної картки, паролі чи електронні листи.
 fp-certerror-expired-into = { -brand-short-name } виявив проблему безпеки з <strong>{ $hostname }</strong>. Сайт або годинник вашого пристрою налаштовано неправильно.
+fp-certerror-transparency-intro = Хтось від імені <strong>{ $hostname }</strong> може спробувати викрасти ваші особисті дані, як-от ім'я користувача, пароль або адресу електронної пошти.

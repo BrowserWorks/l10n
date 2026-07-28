@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = นำเข้าจ�
 mr1-onboarding-theme-header = ทำให้เป็นของคุณเอง
 mr1-onboarding-theme-subtitle = ปรับแต่ง { -brand-short-name } ด้วยชุดตกแต่ง
 mr1-onboarding-theme-secondary-button-label = ไม่ใช่ตอนนี้
-newtab-wallpaper-onboarding-title = ลองเลือกสีสันที่คุณชอบ
-newtab-wallpaper-onboarding-subtitle = เลือกรูปพื้นหลังเพื่อให้แท็บใหม่ของคุณดูสดใหม่
-newtab-wallpaper-onboarding-primary-button-label = ตั้งค่ารูปพื้นหลัง
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = ชุดตกแต่งของระบบ
 mr1-onboarding-theme-label-light = สว่าง
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = มืด
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
 onboarding-theme-primary-button-label = เสร็จสิ้น
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = หยุดภาพเคลื่อนไหวชั่วคราว
+onboarding-animation-play-button =
+    .aria-label = เล่นภาพเคลื่อนไหว
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -296,7 +302,7 @@ mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
 
 mr2022-onboarding-privacy-segmentation-title = เราเคารพความเป็นส่วนตัวของคุณเสมอ
 mr2022-onboarding-privacy-segmentation-subtitle = ไม่ว่าจะเป็นคำแนะนำที่ชาญฉลาดหรือการค้นหาที่ชาญฉลาดยิ่งขึ้น เรากำลังทำงานอย่างต่อเนื่องเพื่อสร้าง { -brand-product-name } ที่ดีและเป็นส่วนตัวมากขึ้น
-mr2022-onboarding-privacy-segmentation-text-cta = คุณต้องการเห็นอะไรเมื่อเรานำเสนอคุณลักษณะใหม่ที่ใช้ข้อมูลของคุณเพื่อทำให้การท่องเว็บของคุณดีขึ้น?
+mr2022-onboarding-privacy-segmentation-text-cta = คุณต้องการเห็นอะไรเมื่อเรานำเสนอคุณลักษณะใหม่ที่ใช้ข้อมูลของคุณเพื่อทำให้การเรียกดูของคุณดีขึ้น?
 mr2022-onboarding-privacy-segmentation-button-primary-label = ใช้คำแนะนำจาก { -brand-product-name }
 mr2022-onboarding-privacy-segmentation-button-secondary-label = แสดงข้อมูลโดยละเอียด
 
@@ -310,7 +316,7 @@ mr2022-onboarding-gratitude-secondary-button-label = เริ่มเรีย
 ## Onboarding spotlight for infrequent users
 
 onboarding-infrequent-import-title = ทำตัวตามสบาย
-onboarding-infrequent-import-subtitle = ไม่ว่าคุณจะต้องการใช้งานไปตลอดหรือแค่แวะมาลองใช้เพียงนิดหน่อยก็ตาม โปรดทราบว่าคุณสามารถนำเข้าที่คั่นหน้า รหัสผ่าน และอื่นๆ ของคุณได้
+onboarding-infrequent-import-subtitle = ไม่ว่าคุณจะต้องการใช้งานไปตลอดหรือแค่แวะมาลองใช้เพียงนิดหน่อยก็ตาม โปรดทราบว่าคุณสามารถนำเข้าที่คั่นหน้า รหัสผ่าน และอื่น ๆ ของคุณได้
 onboarding-infrequent-import-primary-button = นำเข้าไปยัง { -brand-short-name }
 
 ## MR2022 Illustration alt tags
@@ -345,7 +351,7 @@ onboarding-device-migration-primary-button-label = ลงชื่อเข้�
 ## Add-ons Picker screen
 
 amo-picker-title = ปรับแต่ง { -brand-short-name } ของคุณ
-amo-picker-subtitle = ส่วนขยายนั้นเหมือนกับแอปสำหรับเบราว์เซอร์ของคุณ และช่วยให้คุณปกป้องรหัสผ่าน ดาวน์โหลดวิดีโอ ค้นหาโปรโมชั่น ปิดกั้นโฆษณาที่น่ารำคาญ เปลี่ยนรูปลักษณ์ของเบราว์เซอร์ของคุณ และทำสิ่งต่างๆ ได้อีกมากมาย
+amo-picker-subtitle = ส่วนขยายนั้นเหมือนกับแอปสำหรับเบราว์เซอร์ของคุณ และช่วยให้คุณปกป้องรหัสผ่าน ดาวน์โหลดวิดีโอ ค้นหาโปรโมชั่น ปิดกั้นโฆษณาที่น่ารำคาญ เปลี่ยนรูปลักษณ์ของเบราว์เซอร์ของคุณ และทำสิ่งต่าง ๆ ได้อีกมากมาย
 amo-picker-install-button-label = เพิ่มไปยัง { -brand-short-name }
 amo-picker-install-complete-label = ติดตั้งแล้ว
 amo-picker-collection-link = สำรวจส่วนเสริมเพิ่มเติม
@@ -354,16 +360,16 @@ amo-picker-collection-link = สำรวจส่วนเสริมเพิ
 
 # Easy setup screen
 onboarding-easy-setup-security-and-privacy-title = เรารักที่จะดูแลคุณให้ปลอดภัย
-onboarding-easy-setup-security-and-privacy-subtitle = เบราว์เซอร์ที่สนับสนุนโดยองค์กรไม่แสวงหาผลกำไรของเราจะช่วยหยุดบริษัทต่างๆ ไม่ให้แอบติดตามคุณทางเว็บได้
+onboarding-easy-setup-security-and-privacy-subtitle = เบราว์เซอร์ที่สนับสนุนโดยองค์กรไม่แสวงหาผลกำไรของเราจะช่วยหยุดบริษัทต่าง ๆ ไม่ให้แอบติดตามคุณทางเว็บได้
 # Mobile download screen
 onboarding-mobile-download-security-and-privacy-title = คงการเข้ารหัสเมื่อคุณเปลี่ยนจากอุปกรณ์เครื่องหนึ่งไปยังอีกเครื่องหนึ่ง
-onboarding-mobile-download-security-and-privacy-subtitle = เมื่อคุณซิงค์แล้ว { -brand-short-name } จะเข้ารหัสรหัสผ่าน ที่คั่นหน้า และอื่นๆ ของคุณ นอกจากนี้คุณยังสามารถดึงแท็บจากอุปกรณ์อื่นๆ ของคุณเข้ามาได้อีกด้วย
+onboarding-mobile-download-security-and-privacy-subtitle = เมื่อคุณซิงค์แล้ว { -brand-short-name } จะเข้ารหัสรหัสผ่าน ที่คั่นหน้า และอื่น ๆ ของคุณ นอกจากนี้คุณยังสามารถดึงแท็บจากอุปกรณ์อื่น ๆ ของคุณเข้ามาได้อีกด้วย
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } พร้อมดูแลคุณ
 onboarding-gratitude-security-and-privacy-subtitle = ขอบคุณที่ใช้ { -brand-short-name } ซึ่งสนับสนุนโดย BrowserWorks ด้วยการสนับสนุนของคุณ เรากำลังทำงานเพื่อให้อินเทอร์เน็ตปลอดภัยและเข้าถึงได้มากยิ่งขึ้นสำหรับทุกคน
 # Sign up or Sign in screen
-onboarding-sign-up-title = ซิงค์ข้อมูลของคุณระหว่างอุปกรณ์ต่างๆ
-onboarding-sign-up-description = ลงทะเบียนเพื่อสร้างบัญชีและเก็บข้อมูลสำคัญของคุณ เช่น รหัสผ่าน ที่คั่นหน้า และอื่นๆ ซึ่งจะถูกจัดเก็บอย่างปลอดภัยและพร้อมให้ใช้ได้เมื่อคุณลงชื่อเข้าในอุปกรณ์ใดก็ตาม
+onboarding-sign-up-title = ซิงค์ข้อมูลของคุณระหว่างอุปกรณ์ต่าง ๆ
+onboarding-sign-up-description = ลงทะเบียนเพื่อสร้างบัญชีและเก็บข้อมูลสำคัญของคุณ เช่น รหัสผ่าน ที่คั่นหน้า และอื่น ๆ ซึ่งจะถูกจัดเก็บอย่างปลอดภัยและพร้อมให้ใช้ได้เมื่อคุณลงชื่อเข้าในอุปกรณ์ใดก็ตาม
 onboarding-sign-up-button = ลงทะเบียนหรือลงชื่อเข้า
 onboarding-sign-up-secondary-button = เริ่มการเรียกดู
 
@@ -371,7 +377,7 @@ onboarding-sign-up-secondary-button = เริ่มการเรียกด
 
 onboarding-new-user-time-based-survey-title = คุณใช้ { -brand-short-name } มานานเท่าไรแล้ว?
 onboarding-new-user-familiarity-based-survey-title = คุณคุ้นเคยกับ { -brand-short-name } แค่ไหน?
-onboarding-new-user-survey-subtitle = คำติชมของคุณช่วยทำให้ { -brand-short-name } ดียิ่งขึ้นไปอีก
+onboarding-new-user-survey-subtitle = ข้อเสนอแนะของคุณช่วยทำให้ { -brand-short-name } ดียิ่งขึ้นไปอีก
 # When translating "next" it means the next screen in onboarding.
 onboarding-new-user-survey-next-button-label = ถัดไป
 onboarding-new-user-survey-legal-link-label = การเลือก “{ onboarding-new-user-survey-next-button-label }” แสดงว่าคุณยอมรับ<a data-l10n-name="privacy_notice">ประกาศความเป็นส่วนตัว</a>ของ { -brand-product-name }
@@ -430,7 +436,7 @@ onboarding-horizontal-tabs-description =
 # Additional setup card for setting up aichatbot in the sidebar
 onboarding-genai-sidebar-title = ลองใช้บอตสนทนา AI ในแถบข้าง
 # Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
-onboarding-genai-sidebar-subtitle = สรุปเนื้อหาบนเว็บ ระดมความคิด ร่างข้อความ ทั้งหมดนี้ทำได้ในขณะที่คุณท่องเว็บ คุณสามารถเลือกบอตสนทนาจากผู้ให้บริการต่างๆ หลายราย และสามารถสลับเปลี่ยนได้ตลอดเวลา <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
+onboarding-genai-sidebar-subtitle = สรุปเนื้อหาบนเว็บ ระดมความคิด ร่างข้อความ ทั้งหมดนี้ทำได้ในขณะที่คุณเรียกดู คุณสามารถเลือกบอตสนทนาจากผู้ให้บริการต่าง ๆ หลายราย และสามารถสลับเปลี่ยนได้ตลอดเวลา <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
 onboarding-genai-sidebar-primary-button = เลือกบอตสนทนา
 onboarding-genai-sidebar-secondary-button = เริ่มต้นการเรียกดู
 
@@ -448,10 +454,16 @@ onboarding-checklist-sign-up = ลงทะเบียนหรือลงช�
 
 tab-groups-onboarding-feature-callout-title = ลองใช้กลุ่มแท็บเพื่อลดความยุ่งเหยิงและให้คุณมีสมาธิได้มากขึ้น
 tab-groups-onboarding-feature-callout-subtitle = จัดระเบียบได้ด้วยการลากแท็บหนึ่งไปไว้ด้านบนของอีกแท็บหนึ่งเพื่อสร้างกลุ่มแรกของคุณ
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = ค้นหากลุ่มแท็บของคุณได้ตลอดเวลาในเมนู แสดงแท็บทั้งหมด
 tab-groups-onboarding-create-group-title-2 = ค้นหากลุ่มแท็บของคุณได้ตลอดเวลาที่นี่
 tab-groups-onboarding-create-group-no-alltabs-button-title = มองหากลุ่มของคุณได้โดยค้นหาในแถบที่อยู่
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = เมื่อคุณปิดกลุ่มแท็บไปแล้ว สามารถเปิดใหม่อีกครั้งได้ตลอดเวลาจากเมนู แสดงแท็บทั้งหมด
 tab-groups-onboarding-saved-groups-title-2 = เมื่อคุณปิดกลุ่มแท็บ คุณสามารถเปิดใหม่จากที่นี่เมื่อใดก็ได้
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = มองหากลุ่มที่ปิดไปของคุณได้โดยค้นหาในแถบที่อยู่
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = สามารถเปิดกลุ่มแท็บของคุณใหม่อีกครั้งได้ตลอดเวลาจากเมนู แสดงแท็บทั้งหมด
 tab-groups-onboarding-session-restore-title = เปิดกลุ่มแท็บของคุณใหม่ได้ตลอดเวลาที่นี่
 tab-groups-onboarding-dismiss = ตกลง
 
@@ -461,7 +473,7 @@ multi-profile-spotlight-title = พบกับโปรไฟล์ใน { -br
 multi-profile-spotlight-body = สลับระหว่างการเรียกดูเพื่อการทำงานและการเรียกดูเพื่อความสนุกสนานได้อย่างง่ายดาย โปรไฟล์จะเก็บข้อมูลการเรียกดูของคุณ รวมถึงประวัติการค้นหาและรหัสผ่านแยกจากกันโดยสิ้นเชิง เพื่อให้คุณจัดระเบียบได้
 multi-profile-spotlight-cta = สร้างโปรไฟล์
 multi-profile-callout-title = สร้างโปรไฟล์แยกกันสำหรับการทำงานและความบันเทิง
-multi-profile-callout-subtitle = โปรไฟล์ช่วยให้คุณสามารถเก็บข้อมูลการท่องเว็บ เช่น ประวัติการค้นหา และรหัสผ่าน แยกจากกันได้โดยสิ้นเชิง
+multi-profile-callout-subtitle = โปรไฟล์ช่วยให้คุณสามารถเก็บข้อมูลการเรียกดู เช่น ประวัติการค้นหา และรหัสผ่าน แยกจากกันได้โดยสิ้นเชิง
 multi-profile-callout-cta = สร้างโปรไฟล์
 
 ## Desktop to Mobile Adoption feature callout strings
@@ -474,3 +486,114 @@ dismiss-button-label = ปิด
 sync-to-mobile-button-label = ซิงค์กับมือถือ
 desktop-to-mobile-qr-code-alt =
     .aria-label = คิวอาร์โค้ดสำหรับดาวน์โหลด { -brand-product-name } สำหรับมือถือ
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    จะอัปเกรดเป็น Windows 11 งั้นเหรอ?
+    มาสำรองข้อมูลใน { -brand-product-name } กัน
+create-backup-screen-1-subtitle = ปกป้องรหัสผ่าน ที่คั่นหน้า และอื่น ๆ ของคุณแบบอัตโนมัติใน 1–2 นาที
+create-backup-screen-1-flair = แนะนำ
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">เรียนรู้เพิ่มเติม</a>
+create-backup-screen-1-sync-label = ซิงค์ด้วย { -brand-product-name }
+create-backup-screen-1-sync-body = สำรองข้อมูลของอุปกรณ์ที่ลงชื่อเข้าทั้งหมด
+create-backup-screen-1-backup-label = สำรองข้อมูลไปยังพีซี
+create-backup-screen-1-backup-body = บันทึกลงในอุปกรณ์หรือ OneDrive ของคุณ
+create-backup-select-tile-button-label = เลือก
+create-backup-back-button-label = ย้อนกลับ
+create-backup-show-fewer =
+    .label = แสดงแบบนี้น้อยลง
+create-backup-screen-2-title = เลือกข้อมูลใน { -brand-product-name } ที่จะสำรอง
+create-backup-screen-2-subtitle = ใช้เวลาเพียงนาทีเดียว ข้อมูลของคุณจะสำรองวันละครั้ง
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = ตั้งค่าแบบง่าย
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = ที่คั่นหน้า ประวัติ การตั้งค่า และอื่น ๆ
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = ไม่รวมรหัสผ่านและการชำระเงิน
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = ไม่ได้เข้ารหัสลับ
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = ข้อมูลทั้งหมด
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = รวมรหัสผ่านและการชำระเงิน
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = เข้ารหัสลับด้วยรหัสผ่าน
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = คุณต้องการบันทึกข้อมูลสำรองไว้ที่ไหน?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = สร้างรหัสผ่านไฟล์ข้อมูลสำรอง
+create-backup-screen-3-subtitle = ต้องใช้เพื่อเข้ารหัสลับข้อมูลของคุณ โปรดเก็บไว้ในที่ที่คุณจำได้
+fx-backup-opt-in-header = เลือกตำแหน่งที่ตั้งไฟล์
+fx-backup-opt-in-filepath-label = เลือกตำแหน่งที่คุณวางแผนจะถ่ายโอนข้อมูลไปยังอุปกรณ์ใหม่ เช่น OneDrive
+fx-backup-opt-in-create-password-label = ใส่รหัสผ่าน
+fx-backup-opt-in-confirm-btn-label = ดำเนินการต่อ
+fx-backup-opt-in-cancel-btn-label = ย้อนกลับ
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = การสำรองข้อมูลของคุณกำหนดเวลาไว้แล้ว
+fx-backup-confirmation-screen-close-button = ปิด
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = รวมข้อมูลการเรียกดูทั้งหมด
+fx-backup-confirmation-screen-all-data-item-text-2 = บันทึกลงในอุปกรณ์ของคุณ
+fx-backup-confirmation-screen-all-data-item-text-3 = เข้ารหัสลับและป้องกันด้วยรหัสผ่าน
+fx-backup-confirmation-screen-easy-setup-item-text-1 = รวมที่คั่นหน้า ประวัติ การตั้งค่า และข้อมูลอื่น ๆ
+fx-backup-confirmation-screen-easy-setup-item-text-2 = บันทึกลงในอุปกรณ์ของคุณ
+fx-backup-confirmation-screen-easy-setup-item-text-3 = ไม่รวมรหัสผ่านและการชำระเงิน
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = ไปยัง<a data-l10n-name="settings">การตั้งค่า</a>เพื่อรวมข้อมูลที่ละเอียดอ่อน
+fx-backup-confirmation-screen-item-subtext-1 = การสำรองข้อมูลจะเริ่มในอีกไม่กี่นาทีและจะทำงานวันละครั้ง คุณสามารถตรวจความคืบหน้าได้ใน<a data-l10n-name="settings">การตั้งค่า</a>
+fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } จะมองหาข้อมูลสำรองของคุณถ้าคุณต้องการติดตั้งใหม่
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = เรียกคืนจากข้อมูลสำรอง
+restore-from-backup-title = มาทำให้ { -brand-short-name } กลับมาเป็นแบบที่คุณชอบกันเถอะ
+restore-from-backup-subtitle = กู้คืนที่คั่นหน้า ประวัติ และข้อมูลอื่น ๆ ทั้งหมดของคุณเพื่อกลับมาเรียกดูได้อีกครั้ง
+restore-from-backup-secondary-button = ไม่ต้องเรียกคืน
+multiple-backups-info-tile = <strong>พบไฟล์ข้อมูลสำรองหลายไฟล์</strong> โดยได้เลือกไฟล์ล่าสุดแล้ว เรียกคืนโปรไฟล์อื่น ๆ ได้ใน <a data-l10n-name="settings-label">การตั้งค่า</a>
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = เรากลับมาแล้ว! การเรียกคืนข้อมูลใน { -brand-short-name } ของคุณเสร็จเรียบร้อย
+restored-from-backup-success-with-checklist-subtitle = ต้องการให้เบราว์เซอร์ที่เน้นความเป็นส่วนตัวที่คุณชื่นชอบอยู่ห่างออกไปเพียงคลิกเดียวใช่ไหม?
+restored-from-backup-success-no-checklist-subtitle = คุณสามารถเปิดการสำรองข้อมูลสำหรับอุปกรณ์นี้ได้ใน<a data-l10n-name="settings">การตั้งค่า</a>
+restored-from-backup-success-with-checklist-primary-button = บันทึกและดำเนินการต่อ
+restored-from-backup-success-with-checklist-secondary-button = ข้ามขั้นตอนนี้
+restored-from-backup-success-no-checklist-primary-button = ดำเนินการต่อ
+restored-from-backup-error-title = อืม มีปัญหาเกิดขึ้นกับไฟล์ข้อมูลสำรองของคุณ
+restored-from-backup-error-subtitle = หากคุณมีไฟล์ข้อมูลสำรอง { -brand-short-name } ไฟล์อื่น ให้ลองเรียกคืนจากไฟล์นั้น <a data-l10n-name="restore-problems">ยังคงเจอปัญหาอยู่ใช่ไหม?</a>
+restored-from-backup-error-primary-button = ปิด
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = ปรับแต่งประสบการณ์ { -brand-short-name } ของคุณ
+onboarding-personalization-subtitle = ตอบคำถามสักหน่อย แล้วเราจะแนะนำคุณลักษณะและส่วนขยายเพื่อปรับปรุงการใช้ { -brand-short-name } ของคุณ
+onboarding-personalization-use-case-title = คุณจะใช้ { -brand-short-name } สำหรับอะไร?
+onboarding-personalization-use-case-personal-option = ส่วนบุคคล
+onboarding-personalization-use-case-school-option = โรงเรียน
+onboarding-personalization-use-case-work-option = ที่ทำงาน
+onboarding-personalization-motivation-title = คุณลักษณะใดของ { -brand-short-name } สำคัญที่สุดสำหรับคุณ?
+onboarding-personalization-motivation-privacy-option = ความเป็นส่วนตัวและความปลอดภัย
+onboarding-personalization-motivation-productivity-option = ผลผลิต
+onboarding-personalization-motivation-other-option = อื่น ๆ
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = เราปกป้องข้อมูลของคุณและปิดกั้นบริษัทต่าง ๆ ไม่ให้สอดแนมการคลิกของคุณโดยอัตโนมัติ
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = คุณอยู่ในพื้นที่ปลอดภัยแล้ว
+onboarding-refresh-import-subtitle = นำรหัสผ่าน ที่คั่นหน้า ประวัติ และอื่น ๆ ของคุณเข้ามาด้วย
+onboarding-refresh-import-title = ทำให้ { -brand-short-name } เป็นแบบคุณมากขึ้น
+onboarding-refresh-onboarding-addons-subtitle = ส่วนขยายคือแอปขนาดเล็กที่ช่วยให้คุณปรับแต่ง { -brand-short-name } ได้ ส่วนขยายเหล่านี้สามารถเพิ่มความเป็นส่วนตัว เพิ่มผลิตภาพ เปลี่ยนรูปลักษณ์ของ { -brand-short-name } และอื่น ๆ อีกมากมาย
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = เพิ่มประสิทธิภาพการเรียกดูของคุณ
+onboarding-refresh-sync-subtitle = บันทึกที่คั่นหน้า รหัสผ่าน และอื่น ๆ ได้ทุกที่ที่คุณลงชื่อเข้า { -brand-short-name } นอกจากนี้ ข้อมูลของคุณยังเข้ารหัสลับ จึงมีเพียงคุณเท่านั้นที่เห็นได้
+onboarding-refresh-sync-title = ซิงค์ทุกอย่างได้จากทุกที่
+onboarding-refresh-gratitude-subtitle = ขอบคุณที่ใช้ { -brand-short-name } เบราว์เซอร์หลักเพียงตัวเดียวที่สนับสนุนโดยองค์กรไม่แสวงหากำไร ด้วยการสนับสนุนของคุณ เรากำลังทำงานเพื่อให้อินเทอร์เน็ตปลอดภัยและเข้าถึงได้มากยิ่งขึ้นสำหรับทุกคน
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } พร้อมดูแลคุณ

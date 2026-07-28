@@ -11,6 +11,15 @@
 unified-extensions-header-title = Επεκτάσεις
 unified-extensions-manage-extensions =
     .label = Διαχείριση επεκτάσεων
+unified-extensions-discover-extensions =
+    .label = Ανακάλυψη επεκτάσεων
+unified-extensions-empty-reason-private-browsing-not-allowed = Έχετε εγκαταστήσει επεκτάσεις, αλλά δεν τις έχετε ενεργοποιήσει για ιδιωτικά παράθυρα
+unified-extensions-empty-reason-extension-not-enabled = Έχετε εγκαταστήσει επεκτάσεις, αλλά δεν τις έχετε ενεργοποιήσει
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Εξελίξτε την περιήγησή σας με τις επεκτάσεις
+unified-extensions-empty-content-explain-enable2 = Επιλέξτε «{ unified-extensions-manage-extensions.label }» για να τις ενεργοποιήσετε στις ρυθμίσεις.
+unified-extensions-empty-content-explain-manage2 = Επιλέξτε «{ unified-extensions-manage-extensions.label }» για να τις διαχειριστείτε στις ρυθμίσεις.
+unified-extensions-empty-content-explain-extensions-onboarding = Εξατομικεύστε το { -brand-short-name } αλλάζοντας την εμφάνιση και τις επιδόσεις του ή ενισχύοντας το απόρρητο και την ασφάλεια.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Άνοιγμα μενού για το { $extensionName }
 unified-extensions-item-message-manage = Διαχείριση επέκτασης
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = Το { $extensionName } είναι περιορισμένο. Η χρήση του ενδέχεται να είναι επικίνδυνη.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = Η επέκταση { $extensionName } παραβιάζει τις πολιτικές της BrowserWorks. Η χρήση της ενδέχεται να είναι επικίνδυνη.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = Μάθετε περισσ�
 unified-extensions-mb-about-addons-link = Μετάβαση στις ρυθμίσεις επέκτασης
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = Το { $extensionName } απενεργοποιήθηκε
+    .message =
+        Αυτή η επέκταση είναι περιορισμένη και έχει απενεργοποιηθεί.
+        Μπορείτε να την ενεργοποιήσετε στις ρυθμίσεις, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = Το { $extensionName } απενεργοποιήθηκε
     .message =
@@ -63,6 +82,16 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = Το { $extensionName } απενεργοποιήθηκε
     .message = Αυτή η επέκταση παραβιάζει τις πολιτικές της BrowserWorks και έχει απενεργοποιηθεί.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+           *[other] Απενεργοποιήθηκαν { $extensionsCount } επεκτάσεις
+        }
+    .message =
+        Ορισμένες από τις επεκτάσεις σας είναι περιορισμένες και έχουν απενεργοποιηθεί.
+        Μπορείτε να τις ενεργοποιήσετε στις ρυθμίσεις, αλλά αυτό ενδέχεται να είναι επικίνδυνο.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -81,3 +110,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[other] Απενεργοποιήθηκαν { $extensionsCount } επεκτάσεις
         }
     .message = Μερικές από τις επεκτάσεις σας έχουν απενεργοποιηθεί επειδή παραβιάζουν τις πολιτικές της BrowserWorks.
+unified-extensions-notice-safe-mode =
+    .message = Όλες οι επεκτάσεις έχουν απενεργοποιηθεί από τη λειτουργία επίλυσης προβλημάτων.

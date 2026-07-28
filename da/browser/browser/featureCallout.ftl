@@ -104,14 +104,72 @@ perplexity-callout-primary-label = Spørg Perplexity
 perplexity-callout-secondary-label-1 = Afvis
 perplexity-callout-secondary-label-2 = Forstået
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Vil du prøve en ny privatlivs-fokuseret søgning?
+start-page-callout-subtitle = Prøv Startpage. Det er som standard designet til at beskytte dit privatliv, når du søger.
+start-page-callout-primary-label = Prøv Startpage
+start-page-callout-secondary-label = Afvis
+
 ## Account Adoption Passwords callout strings
 
+# Suggestion to backup passwords by signing up for Mozilla account and using sync
+fxa-adoption-passwords-title = Adgangskode gemt. Lad os lave en sikkerhedskopi af den.
+fxa-adoption-passwords-subtitle = Beskyt dine adgangskoder ved at kryptere og synkronisere dem med dine andre enheder.
+# Opens Mozilla accounts sign-up page
+fxa-adoption-passwords-primary-button-label = Tilmeld dig
+
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Behold dine yndlingsfeeds i din proceslinje
+taskbar-tabs-social-callout-subtitle = Få vist dine sociale medier som en app i et separat vindue beskyttet af { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Chat fra din proceslinje
+taskbar-tabs-chat-callout-subtitle = Få vist dine chat-websteder som en app i et separat vindue beskyttet af { -brand-short-name }.
+taskbar-tabs-email-callout-title = Få adgang til din mail i proceslinjen
+taskbar-tabs-email-callout-subtitle = Start din webmail som en app i et separat vindue beskyttet af { -brand-short-name }.
+taskbar-tabs-media-callout-title = Fortsæt streaming fra din proceslinje
+taskbar-tabs-media-callout-subtitle = Åbn dine streaming-websteder som en app i et separat vindue beskyttet af { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Føj dette websted til din proceslinje
+taskbar-tabs-value-prop-callout-subtitle = Åbn det i sit eget vindue med en forenklet brugerflade med et enkelt klik.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Mist ikke alt, hvad du har gemt, når du skifter til Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Synkroniser nu for at gøre dine bogmærker, adgangskoder og indstillinger fra { -brand-short-name }  sikre og nemme at gendanne.
+windows-10-eos-sync-urgency-title-2 = Er det på tide at sige farvel til Windows 10? Beskyt dine data, når du skifter.
+windows-10-eos-sync-urgency-subtitle-2 = Selv hvis du ikke bruger { -brand-short-name } dagligt, bør du synkronisere for at gøre dine bogmærker og adgangskoder sikre og tilgængelige.
+windows-10-eos-sync-new-device-title-1 = Undgå at skulle starte forfra på din næste enhed.
+windows-10-eos-sync-new-device-subtitle-1 = Synkroniser for at tage dine bogmærker, adgangskoder og foretrukne indstillinger fra { -brand-short-name } med dig, når du flytter.
+windows-10-eos-sync-new-device-title-2 = Skifter du til en ny enhed? Behold de vigtige ting.
+windows-10-eos-sync-new-device-subtitle-2 = Uanset hvor ofte du bruger { -brand-short-name }, beskytter synkronisering dine bogmærker, adgangskoder og indstillinger.
+windows-10-eos-sync-new-device-primary-label = Synkroniser nu
+windows-10-eos-sync-general-title-1 = Beskyt din tilpassede version af { -brand-short-name }.
+windows-10-eos-sync-general-subtitle-1 = Sikkerhedskopier og synkroniser dine adgangskoder, bogmærker, indstillinger og andre data for at bevare de ting, du behøver.
+windows-10-eos-sync-general-title-2 = Nu er et godt tidspunkt at sikkerhedskopiere dine adgangskoder og bogmærker.
+windows-10-eos-sync-general-subtitle-2 = Synkroniser nu for at beskytte de ting, du har gemt i { -brand-short-name } – og få dem tilbage hvor som helst og når som helst.
+windows-10-eos-sync-tour-title-1 = For mange faneblade? Ryd op med fanebladsgrupper.
+windows-10-eos-sync-tour-subtitle-1 = Træk et faneblade oven på et andet for at oprette en gruppe og holde tingene organiseret.
+windows-10-eos-sync-tour-title-2 = Forbered dig til Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synkroniser dine bogmærker, adgangskoder og indstillinger for at sikkerhedskopiere dem, før du skifter.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Vis færre anbefalinger
+windows-10-eos-sync-dismiss-button-label = Afvis
+windows-10-eos-sync-callout-primary-advance-button-label = Næste
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nyt: Klik og hold på et link for at se forhåndsvisning
+link-preview-onboarding-callout-description = Se en kort beskrivelse, hvor lang tid det tager at læse teksten med mere. Så kan du hurtigere træffe en beslutning, om det er værd at klikke på linket. Virker også ved højreklik.
 
 ## Sidebar Strings
 
 sidebar-button-callout-title = Vis titler på faneblade i sidepanelet
 sidebar-button-callout-subtitle = Brug sidepanels-knappen til at udvide sidepanelet, så du kan se titler på faneblade.
 sidebar-button-callout-vertical-tabs = For at se dine faneblade skal du klikke på sidepanels-knappen i værktøjslinjen.
+sidebar-deprecation-callout-title = Opdateret sidepanel kommer snart
+sidebar-deprecation-callout-subtitle = Vi udfaser den version af sidepanel, du bruger lige nu. Prøv det opdaterede sidepanel. Det er hurtigere, og du får adgang til mere værktøj.
+sidebar-deprecation-cta-button = Prøv det nu
 
 ## Sidebar Vertical Tabs Strings
 
@@ -130,6 +188,14 @@ sidebar-pins-callout-cta-button = Fastgør faneblad
 
 ## Pinning Tabs Strings
 
+pin-tabs-callout-1-title = Hav vigtige faneblade inden for rækkevidde
+pin-tabs-callout-1-subtitle = Træk et faneblad til starten af fanebladslisten for at fastgøre det. Eller højreklik og vælg Fastgør faneblad.
+pin-tabs-callout-cta-1-button = Fastgør dette faneblad
+pin-tabs-callout-2-title = Fastgør de faneblade, du bruger mest
+pin-tabs-callout-2-subtitle = For at fastgøre et faneblad skal du trække det til starten af fanebladslisten. Eller højreklik og vælg Fastgør faneblad.
+pin-tabs-callout-cta-2-button = Fastgør dette faneblad
+pin-tabs-callout-3-title = Hav vigtige websteder inden for rækkevidde
+pin-tabs-callout-4-title = Fastgør de faneblade, du bruger mest
 
 ## Sidebar Onboarding Strings
 
@@ -169,6 +235,12 @@ sidebar-genai-survey-satisfaction-question = Hvor tilfreds er du med at have adg
 sidebar-genai-survey-productive-question =
     Hvor enig er du i udsagnet: <br/>
     "AI-chatbotten i sidepanelet gør det nemmere for mig at være produktiv"?
+splitview-onboarding-callout-title-1 = Opdelt visning: En bedre måde at multitaske
+splitview-onboarding-callout-subtitle-1 = Højreklik på dette faneblad og vælg "Tilføj opdelt visning" for at se to faneblade på én gang.
+splitview-onboarding-callout-cta-1 = Prøv det nu
+splitview-onboarding-callout-title-2 = Se to faneblade på samme tid med opdelt visning
+splitview-onboarding-callout-subtitle-2 = Ingen ekstra vinduer. Ingen skift mellem faneblade. Højreklik på dette faneblad og vælg "Tilføj opdelt visning".
+splitview-onboarding-callout-cta-2 = Prøv opdelt visning
 unified-search-callout-title = Skift mellem søgetjenester
 unified-search-callout-subtitle = Vælg hvad, der fungerer bedst for din specifikke søgning.
 unified-search-callout-primary-label = Næste
@@ -182,6 +254,6 @@ actions-callout-title = Udfør almindelige opgaver eller få adgang til grundlæ
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Prøv at indtaste en handling som fx "udskriv" for at udskrive en side eller "ryd" for at rydde din historik.

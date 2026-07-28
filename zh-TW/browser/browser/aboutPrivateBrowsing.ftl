@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = 讓 { -brand-short-name } 
 about-private-browsing-cookie-banners-promo-heading = 讓 { -brand-short-name } 幫您處理 Cookie 橫幅
 about-private-browsing-cookie-banners-promo-body = 現在起，我們會自動拒絕許多 Cookie 橫幅，讓您減少被追蹤的機會，上網不用再分心。
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = 在此裝置不留下任何痕跡
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } 會在您關閉所有隱私瀏覽視窗後，清除您的 Cookie、瀏覽紀錄、網站資料。
 about-private-browsing-felt-privacy-v1-info-link = 誰可能看到我的上網紀錄？
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = 關閉您的所有隱私視窗就會清除您的 Cookie、上網紀錄與網站資料。
+about-private-browsing-nova-info-link = 還有誰可能看到我的上網紀錄？
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = 您的上網過程不會被記錄下來
+about-private-browsing-nova-info-subheader = 關閉視窗後，我們就會清除所有搜尋紀錄與登入狀態。{ -brand-short-name } 內建的各種保護功能（如追蹤器封鎖等）於此處也依然有效。

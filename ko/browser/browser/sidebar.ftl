@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = AI 챗봇
 menu-view-contextual-password-manager =
     .label = 비밀번호
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = 열린 탭
 sidebar-options-menu-button =
     .title = 메뉴 열기
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = 사이드바 크기 조정
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = 기록에서 삭제
 sidebar-history-clear =
     .label = 기록 지우기
+sidebar-history-sort-by-heading-menucaption =
+    .label = 정렬 기준:
 sidebar-history-sort-by-heading = 정렬 기준:
 sidebar-history-sort-option-date =
     .label = 날짜
@@ -56,10 +66,14 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = { -brand-short-name } 설정 관리
 sidebar-vertical-tabs =
     .label = 세로 탭
+sidebar-settings2 =
+    .label = 설정
 sidebar-settings =
     .label = 사이드바 설정
 sidebar-hide-tabs-and-sidebar =
     .label = 탭과 사이드바 숨기기
+sidebar-open-tools-from-sidebar =
+    .label = 사이드바에서 도구 열기
 sidebar-show-on-the-right =
     .label = 사이드바를 오른쪽으로 이동
 sidebar-show-on-the-left =
@@ -68,7 +82,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = 마우스를 올려서 사이드바 펼치기
-sidebar-manage-extensions = 확장 기능 관리
+sidebar-manage-extensions2 = 모든 확장 기능 관리
+sidebar-customize-extensions-header2 = 확장 기능
+sidebar-customize-firefox-tools-header2 =
+    .label = 도구
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +133,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = 기록에서 페이지 삭제
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = 북마크 편집…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = 북마크 삭제
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = 삭제
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +150,11 @@ sidebar-menu-history-label =
     .label = 기록
 sidebar-menu-synced-tabs-label =
     .label = 다른 기기의 탭
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = 열린 탭
 sidebar-menu-bookmarks-label =
     .label = 북마크
 sidebar-menu-customize-label =
@@ -170,16 +201,49 @@ sidebar-menu-history-header =
     .heading = 기록
 sidebar-menu-syncedtabs-header =
     .heading = 다른 기기의 탭
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = 열린 탭
 sidebar-menu-cpm-header =
     .heading = 비밀번호
+sidebar-menu-bookmarks-header =
+    .heading = 북마크
 sidebar-panel-header-close-button =
     .tooltiptext = 닫기
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = 북마크 메뉴
+sidebar-bookmarks-folder-toolbar = 북마크 도구 모음
+sidebar-bookmarks-folder-other = 기타 북마크
+sidebar-bookmarks-folder-mobile = 모바일 북마크
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = 사이드바 사용자 지정
 sidebar-history-title = 기록
 sidebar-syncedtabs-title = 다른 기기의 탭
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = 열린 탭
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = 고정된 탭
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = 창 { $winID } (현재)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = 창 { $winID }
+sidebar-bookmarks-title = 북마크
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +279,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = 사이드바 숨기기 ({ $shortcut })
     .label = 사이드바
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = 중요한 탭을 가까운 곳에 두려면 여기로 드래그 하세요

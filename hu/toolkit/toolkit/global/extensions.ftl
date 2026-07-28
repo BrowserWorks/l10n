@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Tiltás
     .accesskey = T
 webext-perms-host-description-all-urls = Az adatai elérése az összes webhelyhez
+webext-perms-host-description-file-urls = Érje el a helyi fájlokat a számítógépén
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Az adatai elérése a(z) { $domain } tartományban lévő lapokhoz
@@ -138,6 +139,7 @@ webext-perms-optional-text-with-data-collection-only = A(z) { $extension } tová
 
 webext-site-perms-header-with-gated-perms-midi = Ez a kiegészítő hozzáférést biztosít a(z) { $hostname } számára a MIDI-eszközeihez.
 webext-site-perms-header-with-gated-perms-midi-sysex = Ez a kiegészítő hozzáférést biztosít a(z) { $hostname } számára a MIDI-eszközeihez (SysEx támogatással).
+webext-site-perms-header-with-gated-perms-serial = Ez a kiegészítő hozzáférést biztosít a(z) { $hostname } számára a soros portos eszközeihez.
 
 ##
 
@@ -148,6 +150,12 @@ webext-site-perms-description-gated-perms-midi =
     Ezek általában bővíthető eszközök, például hangszintetizátorok, de előfordulhatnak a számítógépbe építve is.
     
     A weboldalak általában nem érhetnek el MIDI-eszközöket. A nem megfelelő használatuk kárt okozhat, vagy veszélyeztetheti a biztonságot.
+webext-site-perms-description-gated-perms-webserial =
+    Ezek olyan USB-n, soros porton vagy Bluetooth használatával csatlakozó eszközök, mint a mikrokontrollerek, 3D nyomtatók és egyebek.
+    
+    Kiválaszthatja, hogy mely eszközöket érheti el a webhely.
+    
+    A webhelyek általában nem érhetnek el soros portos eszközöket. A nem megfelelő használat kárt okozhat, vagy veszélyezteti a biztonságot.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -162,6 +170,7 @@ webext-site-perms-header-unsigned-with-perms = Hozzáadja a(z) { $extension } ki
 
 webext-site-perms-midi = MIDI eszközök elérése
 webext-site-perms-midi-sysex = MIDI eszközök elérése SysEx támogatással
+webext-site-perms-serial = Soros portos eszközök elérése
 
 ## Colorway theme migration
 

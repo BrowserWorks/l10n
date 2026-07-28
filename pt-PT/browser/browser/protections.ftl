@@ -42,7 +42,7 @@ graph-legend-description = Um gráfico contendo o número total de cada tipo de 
 social-tab-title = Rastreadores de redes sociais
 social-tab-contant = As redes sociais colocam rastreadores em outros sites para monitorizar o que faz, vê e assiste na Internet. Isto permite que estas empresas de redes sociais saibam mais sobre si, para além do que partilha no seu perfil nas redes sociais. <a data-l10n-name="learn-more-link">Saber mais</a>
 cookie-tab-title = Cookies de monitorização entre sites
-cookie-tab-content = Estas cookies seguem-no entre vários sites para recolher dados sobre o que faz na Internet. São definidas por terceiros, como anunciantes ou empresas de análise. O bloqueio de cookies de rastreamento entre sites reduz o número de anúncios que o seguem. <a data-l10n-name="learn-more-link">Saber mais</a>
+cookie-tab-content = Estes cookies seguem-no de site em site para recolher dados sobre o que faz na Internet. São definidos por terceiros, como anunciantes ou empresas de análise. O bloqueio de cookies cruzados de rastreamento reduz o número de anúncios que o seguem. <a data-l10n-name="learn-more-link">Saber mais</a>
 tracker-tab-title = Monitorização de conteúdo
 tracker-tab-description = Os sites podem carregar anúncios, vídeos e outros conteúdos externos com códigos de rastreamento. O bloqueio de conteúdos de rastreamento pode ajudar os sites a carregar mais rapidamente, mas alguns botões, formulários e campos de autenticação podem não funcionar. <a data-l10n-name="learn-more-link">Saber mais</a>
 fingerprinter-tab-title = Identificadores
@@ -208,3 +208,44 @@ bar-tooltip-cryptominer =
             [one] { $count } cripto-minerador ({ $percentage }%)
            *[other] { $count } cripto-mineradores ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Proteções de privacidade
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqueado esta semana
+       *[other] { $count } bloqueados esta semana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } rastreador
+       *[other] { $count } rastreadores
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } identificador digital
+       *[other] { $count } identificadores digitais
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de monitorização
+       *[other] { $count } cookies de monitorização
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } rastreador social
+       *[other] { $count } rastreadores sociais
+    }
+privacy-metrics-empty = Nenhum rastreador foi bloqueado esta semana. O { -brand-short-name } protege-o das seguintes ameaças enquanto navega.
+privacy-metrics-loading = A carregar as estatísticas de proteção…
+privacy-metrics-error = Não foi possível carregar as estatísticas de proteção.
+privacy-metrics-private-window = O { -brand-short-name } continua a bloquear os rastreadores em janelas privadas, mas não mantém um registo do que foi bloqueado.

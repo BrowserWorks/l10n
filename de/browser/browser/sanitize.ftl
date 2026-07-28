@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Besuchte Seiten & Download-Chronik
     .accesskey = B
 item-history-and-downloads-description2 = Löscht die Chronik von Websites und Downloads
-item-history-form-data-downloads =
-    .label = Chronik
-    .accesskey = C
-item-history-form-data-downloads-description = Löscht die Website- und Download-Chronik, gespeicherte Formularinformationen und Suchanfragen
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = Die gesamte Chronik wird gelöscht.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Alle ausgewählten Elemente werden gelöscht.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Wird berechnet…

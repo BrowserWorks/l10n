@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = اسمح
     .accesskey = س
+permissions-add =
+    .label = أضف
+    .accesskey = ض
 permissions-button-off =
     .label = عطّل
     .accesskey = ط
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = احذف كل مواقع الوِب
     .accesskey = ذ
+permissions-save-changes-2 =
+    .buttonlabelaccept = احفظ التغييرات
+    .buttonaccesskeyaccept = ح
 permission-dialog =
     .buttonlabelaccept = احفظ التغييرات
     .buttonaccesskeyaccept = ح
@@ -85,6 +91,10 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = يمكنك تحديد المواقع التي يُسمح لها دائمًا أو لا يُسمح أبدًا باستخدام الكعكات و بيانات الموقع.  اكتب عنوان الموقع الذي تريد إدارته بدقة ثم انقر فوق ”احجب“، أو ”اسمح لهذه لجلسة“، أو ”اسمح“.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-desc = يمكنك تحديد المواقع الإلكترونية التي ستحتفظ ببياناتها عند محو تأريخ التصفح باستخدام { -brand-short-name } عند الإغلاق. اكتب عنوان الموقع الذي تريد إدارته بدقة، ثم انقر على "اسمح".
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +102,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = يمكنك تعطيل وضع HTTPS فقط لمواقع بعينها. لن يحاول { -brand-short-name } ترقية الاتصال لتأمين HTTPS لهذه المواقع. لا تطبق الاستثناءات على النوافذ الخاصة.
 permissions-exceptions-https-only-desc2 = يمكنك تعطيل وضع HTTPS فقط لمواقع بعينها. لن يحاول { -brand-short-name } ترقية الاتصال لتأمين HTTPS لهذه المواقع.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = المواقع المسموح بها - النوافذ المنبثقة وعمليات إعادة التوجيه من جهات خارجية
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = يمكنك تحديد المواقع الإلكترونية المسموح لها بفتح نوافذ منبثقة وإعادة التوجيه إليها بواسطة إطارات تابعة لجهات خارجية.
 
 ## Exceptions - Pop-ups
 
@@ -131,19 +148,19 @@ permissions-site-autoplay-desc = يمكنك من هنا إدارة المواق�
 ## Site Permissions - Notifications
 
 permissions-site-notification-window2 =
-    .title = الإعدادات - تصاريح التنبيهات
+    .title = الإعدادات - تصاريح الإشعارات
     .style = { permissions-window2.style }
-permissions-site-notification-desc = طلبت المواقع الآتية إرسال التنبيهات. يمكنك تحديد أي المواقع مسموح لها إرسال التنبيهات، ويمكنك أيضا حجب الطلبات الجديدة التي تطلب السماح بالتنبيهات.
+permissions-site-notification-desc = طلبت المواقع الآتية إرسال الإشعارات. يمكنك تحديد أي المواقع مسموح لها إرسال الإشعارات، ويمكنك أيضًا حجب الطلبات الجديدة التي تطلب السماح الإشعارات.
 permissions-site-notification-disable-label =
-    .label = احجب الطلبات الجديدة التي تطلب السماح بالتنبيهات
-permissions-site-notification-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح إرسال التنبيهات. يمكن أن يؤدي حجب التنبيهات إلى عطب مزايا بعض المواقع.
+    .label = احجب الطلبات الجديدة التي تطلب السماح الإشعارات
+permissions-site-notification-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح إرسال الإشعارات. يمكن أن يؤدي حجب الإشعارات إلى عطب مزايا بعض المواقع.
 
 ## Site Permissions - Location
 
 permissions-site-location-window2 =
     .title = الإعدادات - تصاريح المكان
     .style = { permissions-window2.style }
-permissions-site-location-desc = طلبت المواقع الآتية معرفة مكانك. يمكنك تحديد أي المواقع مسموح لها معرفة مكانك، ويمكنك أيضا حجب الطلبات الجديدة التي تطلب معرفة مكانك.
+permissions-site-location-desc = طلبت المواقع الآتية معرفة مكانك. يمكنك تحديد أي المواقع مسموح لها معرفة مكانك، ويمكنك أيضًا حجب الطلبات الجديدة التي تطلب معرفة مكانك.
 permissions-site-location-disable-label =
     .label = احجب الطلبات الجديدة التي تطلب معرفة مكاني
 permissions-site-location-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح معرفة مكانك. يمكن أن يؤدي منع التصريح هذا إلى عطب مزايا بعض المواقع.
@@ -153,7 +170,7 @@ permissions-site-location-disable-desc = سيمنع هذا مواقع الوب �
 permissions-site-xr-window2 =
     .title = الإعدادات - تصاريح الواقع الافتراضي
     .style = { permissions-window2.style }
-permissions-site-xr-desc = طلبت المواقع الآتية الوصول إلى أجهزة الواقع الافتراضي عندك. يمكنك تحديد أي المواقع مسموح لها الوصول إلى تلك الأجهزة، ويمكنك أيضا حجب الطلبات الجديدة التي تطلب الوصول إلى تلك الأجهزة عندك.
+permissions-site-xr-desc = طلبت المواقع الآتية الوصول إلى أجهزة الواقع الافتراضي عندك. يمكنك تحديد أي المواقع مسموح لها الوصول إلى تلك الأجهزة، ويمكنك أيضًا حجب الطلبات الجديدة التي تطلب الوصول إلى تلك الأجهزة عندك.
 permissions-site-xr-disable-label =
     .label = احجب الطلبات الجديدة التي تطلب الوصول إلى أجهزة الواقع الافتراضي عندك
 permissions-site-xr-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح الوصول إلى أجهزة الواقع الافتراضي عندك. يمكن أن يؤدي منع التصريح هذا إلى عطب مزايا بعض المواقع.
@@ -163,17 +180,37 @@ permissions-site-xr-disable-desc = سيمنع هذا مواقع الوب غير 
 permissions-site-camera-window2 =
     .title = الإعدادات - تصاريح الكمرة
     .style = { permissions-window2.style }
-permissions-site-camera-desc = طلبت المواقع الآتية استخدام الكمرة. يمكنك تحديد أي المواقع مسموح لها استخدام الكمرة، ويمكنك أيضا حجب الطلبات الجديدة التي تطلب استخدام الكمرة.
+permissions-site-camera-desc = طلبت المواقع الآتية استخدام الكمرة. يمكنك تحديد أي المواقع مسموح لها استخدام الكمرة، ويمكنك أيضًا حجب الطلبات الجديدة التي تطلب استخدام الكمرة.
 permissions-site-camera-disable-label =
     .label = احجب الطلبات الجديدة التي تطلب استخدام الكمرة
 permissions-site-camera-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح استخدام الكمرة. يمكن أن يؤدي منع الاستخدام هذا إلى عطب مزايا بعض المواقع.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = الإعدادات - تطبيقات وخدمات الجهاز
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = طلبت هذه المواقع الإلكترونية الوصول إلى التطبيقات والخدمات الموجودة على هذا الجهاز. يمكنك اختيار السماح لهذه المواقع أو حظرها من القيام بذلك.
+permissions-site-localhost-disable-label =
+    .label = احظر الطلبات الجديدة للوصول إلى التطبيقات والخدمات على هذا الجهاز
+permissions-site-localhost-disable-desc = سيمنع هذا الإجراء أي موقع وِب غير مدرج أعلاه من طلب الوصول إلى التطبيقات والخدمات على هذا الجهاز. قد يؤدي ذلك إلى تعطيل بعض ميزات مواقع الوِب.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = الإعدادات - أجهزة الشبكة المحلية
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = طلبت هذه المواقع الإلكترونية الوصول إلى التطبيقات والخدمات الموجودة على الأجهزة المتصلة بشبكة واي فاي أو الشبكة المحلية. يمكنك اختيار السماح لهذه المواقع أو حظرها من القيام بذلك.
+permissions-site-local-network-disable-label =
+    .label = احظر الطلبات الجديدة للوصول إلى التطبيقات والخدمات على الأجهزة المتصلة بشبكة واي فاي أو شبكتك المحلية.
+permissions-site-local-network-disable-desc = سيمنع هذا أي موقع وِب غير مدرج أعلاه من طلب الوصول إلى التطبيقات والخدمات على الأجهزة المتصلة بشبكة واي فاي أو الشبكة المحلية. قد يؤدي هذا إلى تعطيل بعض ميزات مواقع الوِب.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window2 =
     .title = الإعدادات - تصاريح الميكروفون
     .style = { permissions-window2.style }
-permissions-site-microphone-desc = طلبت المواقع الآتية استخدام الميكروفون. يمكنك تحديد أي المواقع مسموح لها استخدام الميكروفون، ويمكنك أيضا حجب الطلبات الجديدة التي تطلب استخدام الميكروفون.
+permissions-site-microphone-desc = طلبت المواقع الآتية استخدام الميكروفون. يمكنك تحديد أي المواقع مسموح لها استخدام الميكروفون، ويمكنك أيضًا حجب الطلبات الجديدة التي تطلب استخدام الميكروفون.
 permissions-site-microphone-disable-label =
     .label = احجب الطلبات الجديدة التي تطلب استخدام الميكروفون
 permissions-site-microphone-disable-desc = سيمنع هذا مواقع الوب غير المدرجة أعلاه من طلب تصريح استخدام الميكروفون. يمكن أن يؤدي منع الاستخدام هذا إلى عطب مزايا بعض المواقع.

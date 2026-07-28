@@ -19,21 +19,27 @@ learn-more = <span data-l10n-name="link">Докладніше</span>
 inactive-css-not-grid-or-flex-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є контейнером flex чи grid.
 inactive-css-not-grid-or-flex-container-or-multicol-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є контейнером flex, grid, чи multi-column.
 inactive-css-not-multicol-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є контейнером multi-column.
-inactive-css-column-span = Властивість <strong>{ $property }</strong> не має ефекту охоплення для цього елемента, оскільки він не знаходиться всередині контейнера multi-column.
+inactive-css-column-span = Властивість <strong>{ $property }</strong> не охоплює цей елемент, оскільки він не знаходиться всередині контейнера multi-column.
 inactive-css-not-grid-or-flex-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є елементом grid чи flex.
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є елементом grid чи flex, або абсолютно позиціонованим елементом.
+inactive-css-not-grid-or-absolutely-positioned-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є елементом grid, або абсолютно позиціонованим елементом.
+inactive-css-not-absolutely-positioned-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що це не абсолютно позиціонований елемент.
+inactive-css-no-default-anchor = <strong>{ $property }</strong> не впливає на цей елемент, тому що він не має типового елемента-якоря.
 inactive-css-not-grid-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є елементом grid.
 inactive-css-not-grid-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є контейнером grid.
 inactive-css-not-flex-item = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є елементом flex.
 inactive-css-not-flex-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є контейнером flex.
 inactive-css-not-inline-or-tablecell = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він не є inline чи table-cell елементом.
-inactive-css-first-line-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується в псевдо-елементах ::first-line.
-inactive-css-first-letter-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується в псевдо-елементах ::first-letter.
+inactive-css-first-line-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується у псевдо-елементах ::first-line.
+inactive-css-first-letter-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується у псевдо-елементах ::first-letter.
 inactive-css-placeholder-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується у псевдоелементах ::placeholder.
-inactive-css-property-because-of-display = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він має відображення <strong>{ $display }</strong>.
+inactive-css-property-because-of-display = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що його властивість display має значення <strong>{ $display }</strong>.
 inactive-css-not-display-block-on-floated = Значення <strong>display</strong> було замінено рушієм на <strong>block</strong>, тому що цей елемент <strong>floated</strong>.
 inactive-css-not-display-block-on-floated-2 = Значення <strong>display</strong> було змінено рушієм на <strong>{ $display }</strong>, тому що цей елемент <strong>floated</strong>.
 inactive-css-only-non-grid-or-flex-item = Властивість <strong>{ $property }</strong> не працює, оскільки її не можна використовувати для об'єктів grid або flex.
 inactive-css-not-block = Властивість <strong>{ $property }</strong> не впливає на цей елемент, оскільки вона застосовується лише до блокових елементів.
+inactive-css-not-block-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, оскільки вона застосовується лише до блокових контейнерних елементів.
+inactive-css-not-block-flex-grid-container = Властивість <strong>{ $property }</strong> не впливає на цей елемент, оскільки вона застосовується лише до контейнерних елементів block, flex і grid.
 inactive-css-not-floated = Властивість <strong>{ $property }</strong> не працює, оскільки вона застосовується лише до пливучих елементів.
 inactive-css-property-is-impossible-to-override-in-visited = Неможливо перевизначити властивість <strong>{ $property }</strong>, у зв'язку з обмеженням <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що це не позиціонований елемент.
@@ -61,6 +67,7 @@ inactive-css-ruby-element = Властивість <strong>{ $property }</strong
 
 inactive-css-highlight-pseudo-elements-not-supported = Властивість <strong>{ $property }</strong> не підтримується для виділення псевдоелементів.
 inactive-css-cue-pseudo-element-not-supported = Властивість <strong>{ $property }</strong> не підтримується в псевдо-елементах ::cue.
+inactive-css-at-position-try-not-supported = <strong>{ $property }</strong> не підтримується правилами <strong>@position-try</strong>.
 # Variables:
 #   $lineCount (integer) - The number of lines the element has.
 inactive-css-text-wrap-balance-lines-exceeded =
@@ -71,6 +78,7 @@ inactive-css-text-wrap-balance-lines-exceeded =
     }
 inactive-css-text-wrap-balance-fragmented = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що він фрагментований, тобто його вміст розділений на декілька стовпчиків або сторінок.
 inactive-css-no-width-height = Властивість <strong>{ $property }</strong> не впливає на цей елемент, тому що неможливо встановити його ширину і висоту.
+inactive-css-no-principal-box = Властивість <strong>{ $property }</strong> не впливає на цей елемент, оскільки не створює основний блок.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -82,6 +90,10 @@ inactive-css-not-grid-or-flex-or-block-container-fix = Спробуйте дод
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Спробуйте додати <strong>display:grid</strong>, <strong>display:flex</strong>, або <strong>columns:2</strong>. { learn-more }
 inactive-css-not-multicol-container-fix = Спробуйте додати <strong>column-count</strong> або <strong>column-width</strong>. { learn-more }
 inactive-css-column-span-fix = Спробуйте додати <strong>column-count</strong> або <strong>column-width</strong> до одного з елементів верхнього рівня. { learn-more }
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item-fix = Спробуйте додати <strong>position:absolute</strong> до елемента, або <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, або <strong>display:inline-flex</strong> до елемента вищого рівня. { learn-more }
+inactive-css-not-grid-or-absolutely-positioned-item-fix = Спробуйте додати <strong>position:absolute</strong> до елемента, або <strong>display:grid</strong>, або <strong>display:inline-grid</strong> до елемента вищого рівня. { learn-more }
+inactive-css-not-absolutely-positioned-item-fix = Спробуйте додати <strong>position:absolute</strong> до елемента. { learn-more }
+inactive-css-no-default-anchor-fix = Спробуйте додати <strong>position-anchor</strong> з дійсною назвою якоря. { learn-more }
 inactive-css-not-grid-or-flex-item-fix-3 = Спробуйте додати <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, або <strong>display:inline-flex</strong> до елемента вищого рівня. { learn-more }
 inactive-css-not-grid-item-fix-2 = Спробуйте додати <strong>display:grid</strong> або <strong>display:inline-grid</strong> до елемента вищого рівня. { learn-more }
 inactive-css-not-grid-container-fix = Спробуйте додати <strong>display:grid</strong> або <strong>display:inline-grid</strong>. { learn-more }
@@ -93,6 +105,8 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Спро�
 inactive-css-not-display-block-on-floated-fix = Спробуйте вилучити <strong>float</strong> або додати <strong>display:block</strong>. { learn-more }
 inactive-css-only-non-grid-or-flex-item-fix = Спробуйте змінити значення для <strong>display</strong> контейнера елемента на щось інше, ніж <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong> чи <strong>inline-grid</strong>, або вилучити <strong>float</strong>. { learn-more }
 inactive-css-not-block-fix = Спробуйте додати властивості, як-от <strong>display:block</strong> або <strong>float:left</strong>. { learn-more }
+inactive-css-not-block-container-fix = Спробуйте додати <strong>display:block</strong>, <strong>display:inline-block</strong> або <strong>display:flow-root</strong>. { learn-more }
+inactive-css-not-block-flex-grid-container-fix = Спробуйте додати <strong>display:block</strong>, <strong>display:inline-block</strong>, <strong>display:flex</strong>, <strong>display:inline-flex</strong>, <strong>display:grid</strong>, <strong>display:inline-grid</strong> або <strong>display:flow-root</strong>. { learn-more }
 inactive-css-not-floated-fix = Спробуйте додати властивість <strong>float</strong> зі значенням, відмінним від <strong>none</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Спробуйте налаштувати його властивість <strong>позиції</strong> на щось інше, ніж <strong>static</strong>. { learn-more }
 inactive-css-only-replaced-elements-fix = Переконайтеся, що ви додаєте властивість до заміненого елемента. { learn-more }
@@ -109,6 +123,7 @@ inactive-css-resize-fix = Спробуйте встановити для <strong
 inactive-css-ruby-element-fix = Спробуйте змінити <strong>font-size</strong> тексту ruby. { learn-more }
 inactive-css-text-wrap-balance-lines-exceeded-fix = Спробуйте зменшити кількість рядків. { learn-more }
 inactive-css-text-wrap-balance-fragmented-fix = Уникайте розділення вмісту елемента, наприклад, видаливши стовпчики або використавши <strong>page-break-inside:avoid</strong>. { learn-more }
+inactive-css-no-principal-box-fix = Спробуйте додати значення <strong>display</strong>, яке створює основний блок, наприклад <strong>block</strong>, <strong>inline-block</strong>, <strong>flex</strong> або <strong>grid</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why
@@ -132,3 +147,5 @@ css-compatibility-learn-more-message = <span data-l10n-name="link">Доклад�
 
 # :has() should not be translated
 css-selector-warning-unconstrained-has = Цей селектор використовує необмежений <strong>:has()</strong>, який може бути повільним
+# :scope should not be translated
+css-selector-warning-sibling-combinator-after-scope = Споріднені селектори після <strong>:scope</strong> ніколи не відповідатимуть чому-небудь

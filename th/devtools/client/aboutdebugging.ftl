@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = การดีบั๊ก - รั�
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name } นี้
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = { -brand-shorter-name } นี้
+about-debugging-sidebar-this-firefox-title =
+    .title = { -brand-shorter-name } นี้
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = ตั้งค่า
+about-debugging-sidebar-setup-title =
+    .title = ตั้งค่า
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,9 @@ about-debugging-multiprocess-toolbox-name = กล่องเครื่อง
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = โพรเซสหลักและโพรเซสเนื้อหาสำหรับเบราว์เซอร์เป้าหมาย
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = ปิดข้อความ
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = ปิดข้อความ

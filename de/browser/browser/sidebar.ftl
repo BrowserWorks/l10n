@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = KI-Chatbot
 menu-view-contextual-password-manager =
     .label = Passwörter
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Offene Tabs
 sidebar-options-menu-button =
     .title = Menü öffnen
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Größe der Sidebar ändern
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Aus Chronik löschen
 sidebar-history-clear =
     .label = Chronik löschen
+sidebar-history-sort-by-heading-menucaption =
+    .label = Sortieren nach:
 sidebar-history-sort-by-heading = Sortieren nach:
 sidebar-history-sort-option-date =
     .label = Datum
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = { -brand-short-name }-Einstellungen verwalten
 sidebar-vertical-tabs =
     .label = Vertikale Tabs
+sidebar-settings2 =
+    .label = Einstellungen
 sidebar-settings =
     .label = Sidebar-Einstellungen
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Sidebar ausklappen, wenn der Mauszeiger darauf liegt
-sidebar-manage-extensions = Erweiterungen verwalten
+sidebar-manage-extensions2 = Alle Erweiterungen verwalten
+sidebar-customize-extensions-header2 = Erweiterungen
+sidebar-customize-firefox-tools-header2 =
+    .label = Werkzeuge
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +131,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Seiten aus Chronik löschen
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Lesezeichen bearbeiten…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Lesezeichen löschen
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Löschen
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = Chronik
 sidebar-menu-synced-tabs-label =
     .label = Tabs von anderen Geräten
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Offene Tabs
 sidebar-menu-bookmarks-label =
     .label = Lesezeichen
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = Chronik
 sidebar-menu-syncedtabs-header =
     .heading = Tabs von anderen Geräten
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Offene Tabs
 sidebar-menu-cpm-header =
     .heading = Passwörter
+sidebar-menu-bookmarks-header =
+    .heading = Lesezeichen
 sidebar-panel-header-close-button =
     .tooltiptext = Schließen
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Lesezeichen-Menü
+sidebar-bookmarks-folder-toolbar = Lesezeichen-Symbolleiste
+sidebar-bookmarks-folder-other = Weitere Lesezeichen
+sidebar-bookmarks-folder-mobile = Mobile Lesezeichen
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Sidebar anpassen
 sidebar-history-title = Chronik
 sidebar-syncedtabs-title = Tabs von anderen Geräten
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Offene Tabs
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Angeheftete Tabs
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Fenster { $winID } (aktuell)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Fenster { $winID }
+sidebar-bookmarks-title = Lesezeichen
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Sidebar ausblenden ({ $shortcut })
     .label = Sidebars
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Ziehen Sie wichtige Tabs hierher, um sie in Reichweite zu behalten

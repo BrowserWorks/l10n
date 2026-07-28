@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Visualizzazione pagine web
 experimental-features-group-customize-browsing =
     .label = Personalizza la tua navigazione
+experimental-features-group-productivity =
+    .label = Produttività
+experimental-features-group-newtab-widgets =
+    .label = Widget in { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Password nella barra laterale
@@ -51,4 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Sezioni per argomento e funzioni Segui/Blocca per le storie nella pagina Nuova scheda
 experimental-features-newtab-sections-follow-block-description = Organizza le storie nella pagina Nuova scheda in sezioni tematiche (sport, alimentazione, intrattenimento e altro) per un’esperienza più strutturata e leggibile. Utilizza i nuovi controlli Segui e Blocca per personalizzare i contenuti da visualizzare. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Aggiungi siti alla barra delle applicazioni
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Apri i siti che visiti più spesso come app direttamente dalla barra delle applicazioni. Cerca l’icona “Aggiungi scheda alla barra delle applicazioni” alla destra della barra degli indirizzi per aprire il sito in una finestra ottimizzata con tutte le protezioni di { -brand-product-name }. <a data-l10n-name="connect">Condividi la tua opinione</a>
 
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Liste in { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Liste
+experimental-features-newtab-widget-lists-description = Tieni sempre la tua lista di cose da fare ben visibile ogni volta che apri una nuova scheda. Che si tratti di liste per la spesa o per preparare la valigia, organizza i tuoi piani in { -brand-product-name }. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Timer in { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Timer
+experimental-features-newtab-widget-timer-description = Imposta un timer per aiutarti a restare concentrato, evitare distrazioni o ricordarti di fare una pausa. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Liste e timer in { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Tieni sempre la tua lista di cose da fare ben visibile ogni volta che apri una nuova scheda. Che si tratti di una lista per la spesa o per preparare la valigia, organizza i tuoi piani in { -brand-product-name }. Imposta un timer per aiutarti a restare concentrato, darti una spinta a non perdere il ritmo o ricordarti di fare una pausa. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Previsioni meteo
+experimental-features-newtab-widget-weather-description = Consulta le previsioni meteo orarie per avere una panoramica chiara della giornata. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Immagine del giorno
+experimental-features-newtab-widget-picture-of-the-day-description = Aggiungi un tocco di meraviglia alla tua giornata: scopri una nuova immagine, apprendi curiosità interessanti e cambia sfondo in un attimo. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Orologi
+experimental-features-newtab-widget-clocks-description = Aggiungi fino a quattro orologi con nomi personalizzati per seguire l’ora nei luoghi che contano per te. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Ricerca semantica nella cronologia
+experimental-features-semantic-history-search-description = Utilizza un modello locale di Machine Learning per suggerire, nella barra degli indirizzi di { -brand-product-name }, elementi della cronologia correlati alle tue ricerche grazie alla comprensione del linguaggio naturale. <a data-l10n-name="connect">Condividi la tua opinione</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Note sulle schede
+experimental-features-tab-notes-description = Le note sulle schede sono una funzione sperimentale che ti permette di aggiungere annotazioni, simili a post-it, alle schede del browser. Annota contesto, promemoria o prossimi passi per poter tornare alla scheda e ricordare facilmente perché l’avevi aperta. Ci farebbe piacere conoscere la tua opinione mentre continuiamo a migliorare questa funzionalità. <a data-l10n-name="connect">Condividi il tuo feedback</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Menu semplificato per le schede
+experimental-features-tab-context-menu-description = Visualizza un menu contestuale semplificato quando fai clic con il tasto destro su una scheda. È pensato per aiutarti a trovare più facilmente le azioni più comuni. <a data-l10n-name="connect">Condividi la tua opinione</a>

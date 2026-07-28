@@ -36,10 +36,17 @@ certificate-viewer-key-size = Ukuran Kunci
 certificate-viewer-inc-locality = Lokalitas Perusahaan
 certificate-viewer-locality = Daerah
 certificate-viewer-location = Lokasi
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Nama Log
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID Log
 certificate-viewer-method = Metode
 certificate-viewer-modulus = Modulus
 certificate-viewer-name = Nama
+certificate-viewer-surname = Nama Belakang
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Nama Depan
 certificate-viewer-not-after = Tidak Sesudah
 certificate-viewer-not-before = Tidak Sebelum
 certificate-viewer-organization = Organisasi
@@ -110,6 +117,8 @@ certificate-viewer-export = Ekspor
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (tidak diketahui)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = sertifikat
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

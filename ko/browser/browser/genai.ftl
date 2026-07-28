@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = { $provider } 제거
 genai-menu-remove-sidebar =
     .label = 사이드바에서 제거
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = { $provider }에게 물어보기
 genai-menu-new-badge = 새 기능
 genai-menu-summarize-page = 페이지 요약
+genai-input-ask-smart-window =
+    .placeholder = 묻기…
 genai-input-ask-generic =
     .placeholder = AI 챗봇에게 물어보기…
 # $provider (string) - name of the provider
@@ -83,16 +88,29 @@ genai-shortcuts-selected-warning =
     .message = 약 { $selectionLength }자를 선택하셨습니다. { $provider } 챗봇에 보낼 수 있는 문자 수는 약 { $maxLength }자입니다.
 genai-shortcuts-hide =
     .label = 챗봇 바로 가기 숨기기
-genai-menu-no-provider =
-    .label = AI 챗봇에게 물어보기
 genai-menu-choose-chatbot =
     .label = AI 챗봇 선택
+genai-menu-ask-generic-2 =
+    .label = AI 챗봇에게 물어보기
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = { $provider }에게 물어보기
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = AI 챗봇에게 물어보기
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = 묻기…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = AI 챗봇
 genai-header-provider-menu =
     .title = 챗봇 선택
+genai-header-settings-button =
+    .title = AI 챗 설정
 genai-header-options-button =
     .title = 메뉴 열기
 genai-header-close-button =
@@ -110,6 +128,11 @@ genai-options-hide-shortcut =
     .label = 텍스트 선택 시 바로 가기 숨기기
 genai-options-about-chatbot =
     .label = { -brand-short-name }의 AI 챗봇 정보
+
+## Chatbot message
+
+genai-page-warning =
+    .message = 페이지가 길어서 부분 요약입니다.
 
 ## Chatbot footer
 
@@ -199,3 +222,48 @@ genai-model-optin-cancel =
 #   $rangePlural (String): The plural category of the range, using the same set as for numbers.
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 link-preview-reading-time = 읽기 시간 { $range }분
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name }가 이 링크를 미리 볼 수 없음
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = 링크 방문
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name }가 이 웹 페이지에 대한 요점을 생성할 수 없습니다.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = 문제가 발생했습니다.
+# Text for the retry link when generation fails
+link-preview-generation-retry = 다시 시도
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = 링크 미리보기 설정
+link-preview-settings-enable =
+    .label = 링크 미리보기 사용
+    .description = 단축키나 링크의 해당 컨텍스트 메뉴로 페이지 제목, 설명 등을 확인할 수 있습니다.
+link-preview-settings-key-points =
+    .label = AI가 페이지의 시작 부분을 읽고 요점을 생성하도록 허용
+link-preview-settings-long-press =
+    .label = 바로 가기: 링크를 길게 누르기
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = AI로 더 보고 싶으세요?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name }는 AI를 사용하여 페이지의 시작 부분을 읽고 몇 가지 요점을 생성합니다. 개인 정보 보호를 우선시하기 위해 이 작업은 기기에서 수행됩니다.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = 신규: 링크를 길게 눌러 미리보기
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = 짧은 설명, 읽는 시간 등을 보고 링크를 열 가치가 있는지 결정하세요. 마우스 오른쪽 버튼 클릭에서도 사용할 수 있습니다.
+# Header for the key points section
+link-preview-key-points-header = 요점
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = 요점은 AI로 생성되었으며 오류가 있을 수 있습니다.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = 처음 설정 • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = 다음 번에 요점을 더 빨리 볼 수 있습니다.
+# Onboarding card See a preview button
+link-preview-onboarding-button = 미리보기 보기
+# Onboarding card Close button
+link-preview-onboarding-close = 닫기
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = 초기 설정
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = 잠시 시간이 걸릴 수 있습니다. 다음 번에는 요점을 더 빨리 볼 수 있습니다.

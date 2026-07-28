@@ -152,7 +152,7 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = نسيان هذا الموقع
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-msg = سيؤدي هذا الإجراء إلى إزالة البيانات المتعلقة بـ { $hostOrBaseDomain } بما في ذلك السجل وملفات تعريف الارتباط وذاكرة التخزين المؤقت وتفضيلات المحتوى. لن تُزيل العلامات وكلمات المرور ذات الصلة. هل انت متأكد انك تريد المتابعة؟
+places-forget-about-this-site-confirmation-msg = سيؤدي هذا الإجراء إلى إزالة البيانات المتعلقة بـ { $hostOrBaseDomain } بما في ذلك السجل وملفات تعريف الارتباط وذاكرة التخزين المؤقت وتفضيلات المحتوى. لن تُزيل العلامات وكلمات السر ذات الصلة. هل انت متأكد انك تريد المتابعة؟
 places-forget-about-this-site-forget = انسَ
 places-library3 =
     .title = المكتبة
@@ -285,3 +285,8 @@ places-search-downloads =
 ##
 
 places-locked-prompt = لن يعمل نظام التأريخ و العلامات بشكل صحيح لأنّ أحد ملفات { -brand-short-name } يستخدمه تطبيق آخر. قد يكون المتسبب بهذا أحد برامج الحماية.
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder2 =
+    .label = شارك ملف
+    .badge = جديد

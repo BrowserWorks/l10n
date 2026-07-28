@@ -5,6 +5,8 @@
 screenshot-toolbarbutton =
     .label = لقطة شاشة
     .tooltiptext = خُذ لقطة شاشة
+screenshot-shortcut =
+    .key = S
 screenshots-instructions = اسحب أو انقر في الصفحة لاختيار منطقة. اضغط ESC للإلغاء.
 screenshots-cancel-button = ألغِ
 screenshots-save-visible-button = احفظ الجزء المرئي
@@ -73,6 +75,8 @@ screenshot-toolbar-button =
 ## The below strings are used to capture keydown events so the strings should
 ## not be changed unless the keyboard layout in the locale requires it.
 
+screenshots-component-download-key = S
+screenshots-component-copy-key = C
 
 ##
 

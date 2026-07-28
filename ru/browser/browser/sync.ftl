@@ -20,6 +20,33 @@ fxa-menu-connect-another-device =
     .label = Подключить другое устройство…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Отправить на устройство
+            [one] Отправить { $tabCount } вкладку на устройство
+            [few] Отправить { $tabCount } вкладки на устройство
+           *[many] Отправить { $tabCount } вкладок на устройство
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Отправить на мобильный
+            [one] Отправить { $tabCount } вкладку на мобильный
+            [few] Отправить { $tabCount } вкладки на мобильный
+           *[many] Отправить { $tabCount } вкладок на мобильный
+        }
+fxa-menu-send-to-mobile-device-missing2 = Не видите ваше устройство?
+fxviewtabrow-send-to-mobile-not-verified = Аккаунт не подтверждён
+fxviewtabrow-send-to-mobile-verify-account = Подтвердите свой аккаунт
+fxa-menu-send-to-mobile-turn-on-sync = Включите синхронизацию для отправки вкладок
+fxa-menu-send-to-mobile-connect-device = Подключите устройство для отправки вкладок
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -34,7 +61,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Мгновенно отправляйте вкладку на любое привязанное устройство.
 fxa-menu-sign-out =
     .label = Выйти…
-fxa-menu-sync-title = Синхронизация
 fxa-menu-sync-description = Доступ к Интернету из любого места
 fxa-avatar-sign-in = Войти
 fxa-avatar-sign-up = Зарегистрироваться
@@ -48,6 +74,10 @@ sync-setup-verify-heading = Вы уверены, что хотите войти 
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Другой пользователь ранее входил в синхронизацию на этом компьютере. Вход приведёт к слиянию закладок, паролей и других параметров этого браузера с { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Войдите, чтобы отправлять вкладки
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

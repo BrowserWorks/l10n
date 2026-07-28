@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Importeren vanuit een
 contextual-manager-passwords-command-import = Uit een bestand importeren…
 contextual-manager-passwords-command-export = Wachtwoorden exporteren
 contextual-manager-passwords-command-remove-all = Alle wachtwoorden verwijderen
+contextual-manager-passwords-command-options = Opties
 contextual-manager-passwords-command-settings = Instellingen
 contextual-manager-passwords-command-help = Help
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Nieuw: { $added }, bijgewerkt: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Nieuw: { $added }, bijgewerkt: { $modified }, duplicaten: { $no_change }, fouten: { $error }
 contextual-manager-passwords-import-detailed-report = Gedetailleerd rapport bekijken
 contextual-manager-passwords-import-success-button = Gereed
 contextual-manager-passwords-import-error-heading-and-message =
@@ -156,7 +163,7 @@ contextual-manager-passwords-password-already-exists-error-button = Naar wachtwo
 contextual-manager-passwords-update-password-success-heading =
     .heading = Wachtwoord opgeslagen
 contextual-manager-passwords-update-password-success-button = Gereed
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Gebruikersnaam opgeslagen
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -210,12 +217,15 @@ contextual-manager-passwords-title = Wachtwoorden
 
 contextual-manager-passwords-create-label =
     .label = Wachtwoord toevoegen
+contextual-manager-passwords-update-label =
+    .label = Wachtwoord bijwerken
 contextual-manager-passwords-edit-label =
     .label = Wachtwoord bewerken
 contextual-manager-passwords-remove-label =
     .title = Wachtwoord verwijderen
 contextual-manager-passwords-origin-tooltip = Voer het exacte adres in waar u zich bij deze website zult aanmelden.
 contextual-manager-passwords-username-tooltip = Voer de gebruikersnaam, het e-mailadres of het accountnummer in dat u gebruikt om u aan te melden.
+contextual-manager-passwords-password-tooltip-2 = Voer het wachtwoord in om u aan te melden bij deze account.
 contextual-manager-passwords-password-tooltip = Voer het wachtwoord in dat is gebruikt om u aan te melden bij deze account.
 
 ## Password Card
@@ -294,6 +304,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Geen wachtwoorden gevonden
+contextual-manager-passwords-no-passwords-found-message-2 = Probeer een andere term en zoek opnieuw.
 contextual-manager-passwords-no-passwords-found-message = Geen wachtwoorden gevonden. Zoek een andere term en probeer het opnieuw.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -308,6 +319,8 @@ contextual-manager-passwords-no-passwords-message = Alle wachtwoorden zijn versl
 contextual-manager-passwords-no-passwords-get-started-message = Voeg ze hier toe om te beginnen.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Handmatig toevoegen
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Bewaar uw wachtwoorden op een veilige plek
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -324,3 +337,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [one] Ja, wachtwoord verwijderen
        *[other] Ja, wachtwoorden verwijderen
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Voer uw hoofdwachtwoord in om uw opgeslagen wachtwoorden te bekijken.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Hoofdwachtwoord invoeren
+contextual-manager-primary-password-learn-more-link = Meer info

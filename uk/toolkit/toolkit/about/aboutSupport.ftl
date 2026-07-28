@@ -70,7 +70,7 @@ app-basics-os-theme = Тема ОС
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Перекладено Rosetta
 app-basics-memory-use = Використання пам'яті
-app-basics-performance = Швидкодія
+app-basics-performance = Продуктивність
 app-basics-service-workers = Зареєстровані Service Workers
 app-basics-third-party = Сторонні модулі
 app-basics-profiles = Профілі
@@ -136,6 +136,10 @@ place-database-stats-efficiency-perc = Ефективність (%)
 place-database-stats-sequentiality-perc = Послідовність (%)
 place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
+place-database-last-idle-maintenance-data = Дата останнього обслуговування під час неактивності
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Дата останнього очищення
+place-database-last-integrity-corruption-date = Дата останнього порушення цілісності
 a11y-title = Доступність
 a11y-activated = Активовано
 a11y-force-disabled = Блокувати можливості доступності

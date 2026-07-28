@@ -45,6 +45,10 @@ tabbrowser-close-tabs-tooltip =
             [one] Chiudi scheda
            *[other] Chiudi { $tabCount } schede
         }
+tab-splitview-splitter =
+    .aria-label = Ridimensiona le schede divise
+tab-devtools-splitter =
+    .aria-label = Ridimensiona il pannello strumenti di sviluppo
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -162,8 +166,6 @@ tabbrowser-confirm-caretbrowsing-checkbox = Non visualizzare questo avviso in fu
 
 ## Confirmation dialog for closing all duplicate tabs
 
-tabbrowser-confirm-close-duplicate-tabs-title = Attenzione
-tabbrowser-confirm-close-duplicate-tabs-text = La scheda con attività più recente rimarrà aperta
 tabbrowser-confirm-close-all-duplicate-tabs-title = Chiudere le schede duplicate?
 tabbrowser-confirm-close-all-duplicate-tabs-text = Le schede duplicate in questa finestra verranno chiuse. La scheda con attività più recente rimarrà aperta.
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Chiudi schede
@@ -181,8 +183,14 @@ tabbrowser-customizemode-tab-title = Personalizza { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = Disattiva audio nella scheda
     .accesskey = i
+tabbrowser-context-mute-tab2 =
+    .label = Disattiva audio
+    .accesskey = v
 tabbrowser-context-unmute-tab =
     .label = Attiva audio nella scheda
+    .accesskey = i
+tabbrowser-context-unmute-tab2 =
+    .label = Attiva audio
     .accesskey = i
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
@@ -222,9 +230,9 @@ tabbrowser-manager-current-window-tab-group =
     .label = { $tabGroupName }
     .tooltiptext = { $tabGroupName } — Finestra corrente
 
-## Tab Groups
+##
 
-tab-group-editor-title-create = Crea nuovo gruppo di schede
+tab-group-editor-title-create = Crea gruppo di schede
 tab-group-editor-title-edit = Gestisci gruppo di schede
 tab-group-editor-name-label = Nome
 tab-group-editor-name-field =
@@ -252,16 +260,33 @@ tab-group-editor-color-selector2-gray = Grigio
     .title = Grigio
 tab-group-editor-color-selector2-red = Rosso
     .title = Rosso
-# Variables:
-#  $tabGroupName (String): The name of the tab group. Defaults to the value
-#                          of tab-group-name-default.
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Chiuso
 tab-group-description = { $tabGroupName } — Gruppo di schede
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Compresso
+tab-group-label-tooltip-expanded = { $tabGroupName } — Espanso
+tab-group-preview-name =
+    .aria-label = Schede in un gruppo compresso
 tab-context-unnamed-group =
     .label = Gruppo senza nome
 tab-group-name-default = Gruppo senza nome
 
+## Tab Groups
 ## Variables:
-##  $tabCount (Number): the number of tabs that are affected by the action.
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Gruppi di schede
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Elenco schede aperto
+tab-group-preview-closed-description = Elenco schede chiuso
+
+##
 
 tab-context-move-tab-to-new-group =
     .label =
@@ -277,12 +302,34 @@ tab-context-move-tab-to-group =
            *[other] Aggiungi schede a un gruppo
         }
     .accesskey = u
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Aggiungi schermo diviso a un nuovo gruppo
+           *[other] Aggiungi schermi divisi a un nuovo gruppo
+        }
+    .accesskey = u
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Aggiungi schermo diviso a un gruppo
+           *[other] Aggiungi schermi divisi a un gruppo
+        }
+    .accesskey = u
 tab-context-move-tab-to-group-saved-groups =
     .label = Gruppi chiusi
 tab-group-editor-action-new-tab =
     .label = Nuova scheda nel gruppo
 tab-group-editor-action-new-window =
     .label = Sposta gruppo in una nuova finestra
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Copia link nel gruppo
+           *[other] Copia { $linkCount } link nel gruppo
+        }
 tab-group-editor-action-save =
     .label = Salva e chiudi gruppo
 tab-group-editor-action-ungroup =
@@ -292,6 +339,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = Fatto
     .accessKey = F
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Condividi gruppo di schede
 tab-context-reopen-tab-group =
     .label = Riapri gruppo di schede
 # Variables:
@@ -303,6 +353,26 @@ tab-context-ungroup-tab =
            *[other] Rimuovi dai gruppi
         }
     .accesskey = R
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] Un’altra scheda
+       *[other] Altre { $tabCount } schede
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Metti in ordine le tue schede
+tab-groups-list-empty-description = Trascina una scheda sopra un’altra o fai clic con il tasto destro su una scheda per iniziare a organizzare la tua navigazione. I tuoi gruppi verranno salvati qui per ritrovarli facilmente.
+tab-groups-list-empty-button = Crea un gruppo di schede
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Nuovo gruppo
 
 ## Open/saved tab group context menu
 
@@ -329,3 +399,86 @@ tab-group-context-open-saved-group-in-this-window =
 tab-group-context-open-saved-group-in-new-window =
     .label = Apri gruppo in nuova finestra
 
+## Tab Notes
+
+tab-context-add-note =
+    .label = Aggiungi nota
+    .accesskey = A
+tab-context-edit-note =
+    .label = Modifica nota
+    .accesskey = M
+tab-context-delete-note =
+    .label = Elimina nota
+    .accesskey = E
+tab-note-editor-title-create = Aggiungi nota
+tab-note-editor-title-edit = Modifica nota
+tab-note-editor-text-field =
+    .placeholder = Che cosa vuoi ricordare di questa scheda?
+tab-note-editor-button-cancel =
+    .label = Annulla
+    .accesskey = A
+tab-note-editor-button-save =
+    .label = Salva
+    .accesskey = S
+tab-note-editor-button-delete =
+    .title = Elimina nota
+    .aria-label = Elimina nota
+    .accesskey = E
+tab-note-preview-edit-icon =
+    .alt = Modifica nota
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Ulteriori informazioni
+tab-note-panel-add-note-new-badge =
+    .label = Novità
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } caratteri
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Aggiungi schermo diviso
+    .accesskey = m
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Apri in schermo diviso
+    .accesskey = h
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Separa schermo diviso
+    .accesskey = e
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Scambia schede
+    .accesskey = b
+tab-context-badge-new = Novità
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, parte sinistra dello schermo diviso
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, parte destra dello schermo diviso
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Separa schede
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Scambia schede
+split-view-menuitem-close-both-tabs =
+    .label = Chiudi entrambe le schede

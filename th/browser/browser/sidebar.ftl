@@ -6,6 +6,11 @@ menu-view-genai-chat =
     .label = แชทบอต AI
 menu-view-contextual-password-manager =
     .label = รหัสผ่าน
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = แท็บที่เปิดอยู่
 sidebar-options-menu-button =
     .title = เปิดเมนู
 
@@ -30,6 +35,8 @@ sidebar-history-delete =
     .title = ลบออกจากประวัติ
 sidebar-history-clear =
     .label = ล้างประวัติ
+sidebar-history-sort-by-heading-menucaption =
+    .label = เรียงลำดับตาม:
 sidebar-history-sort-by-heading = เรียงลำดับตาม:
 sidebar-history-sort-option-date =
     .label = วันที่
@@ -56,6 +63,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = จัดการการตั้งค่า { -brand-short-name }
 sidebar-vertical-tabs =
     .label = แท็บแนวตั้ง
+sidebar-settings2 =
+    .label = การตั้งค่า
 sidebar-settings =
     .label = การตั้งค่าแถบข้าง
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +77,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = ขยายแถบข้างเมื่อเลื่อนเมาส์ไปวางแช่
-sidebar-manage-extensions = จัดการส่วนขยาย
+sidebar-manage-extensions2 = จัดการส่วนขยายทั้งหมด
+sidebar-customize-extensions-header2 = ส่วนขยาย
+sidebar-customize-firefox-tools-header2 =
+    .label = เครื่องมือ
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +128,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = ลบหน้าออกจากประวัติ
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = แก้ไขที่คั่นหน้า…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = ลบที่คั่นหน้า
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = ลบ
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +145,11 @@ sidebar-menu-history-label =
     .label = ประวัติ
 sidebar-menu-synced-tabs-label =
     .label = แท็บจากอุปกรณ์อื่น ๆ
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = แท็บที่เปิดอยู่
 sidebar-menu-bookmarks-label =
     .label = ที่คั่นหน้า
 sidebar-menu-customize-label =
@@ -170,16 +196,48 @@ sidebar-menu-history-header =
     .heading = ประวัติ
 sidebar-menu-syncedtabs-header =
     .heading = แท็บจากอุปกรณ์อื่น ๆ
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = แท็บที่เปิดอยู่
 sidebar-menu-cpm-header =
     .heading = รหัสผ่าน
+sidebar-menu-bookmarks-header =
+    .heading = ที่คั่นหน้า
 sidebar-panel-header-close-button =
     .tooltiptext = ปิด
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = เมนูที่คั่นหน้า
+sidebar-bookmarks-folder-toolbar = แถบเครื่องมือที่คั่นหน้า
+sidebar-bookmarks-folder-other = ที่คั่นหน้าอื่น ๆ
+sidebar-bookmarks-folder-mobile = ที่คั่นหน้าบนมือถือ
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = ปรับแต่งแถบข้าง
 sidebar-history-title = ประวัติ
 sidebar-syncedtabs-title = แท็บจากอุปกรณ์อื่น ๆ
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = แท็บที่เปิดอยู่
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = แท็บที่ปักหมุด
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = หน้าต่าง { $winID } (ปัจจุบัน)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = หน้าต่าง { $winID }
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +273,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = ซ่อนแถบข้าง ({ $shortcut })
     .label = แถบข้าง
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = ลากแท็บสำคัญมาที่นี่เพื่อให้เข้าถึงแท็บเหล่านั้นได้ง่าย

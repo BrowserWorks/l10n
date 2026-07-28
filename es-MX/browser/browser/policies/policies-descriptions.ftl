@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Establece políticas a las que WebExtensions pueda acceder a través de chrome.storage.managed.
+policy-AIControls = Configura los ajustes de IA.
 policy-AllowedDomainsForApps = Define los dominios autorizados para acceder a Google Workspace.
 policy-AllowFileSelectionDialogs = Permitir cuadros de diálogo de selección de archivos.
 policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Habilitar autocompletado de direcciones.
 policy-AutofillCreditCardEnabled = Habilitar autocompletado para métodos de pago.
 policy-AutoLaunchProtocolsFromOrigins = Define una lista de protocolos externos que pueden ser usados desde los orígenes que aparecen en la lista sin que se le pregunte al usuario.
 policy-BackgroundAppUpdate2 = Habilitar o deshabilitar la actualización en segundo plano.
+policy-Backup = Desactiva el respaldo o la restauración de los datos del perfil.
 policy-BlockAboutAddons = Bloquear el acceso al administrador de complementos (about:addons).
 policy-BlockAboutConfig = Bloquear acceso a la página about:config
 policy-BlockAboutProfiles = Bloquear acceso a la página about:profiles.
@@ -35,6 +37,7 @@ policy-Containers = Establecer políticas relacionadas con los contenedores.
 policy-DisableAccounts = Deshabilitar los servicios basados en cuentas, incluida la sincronización.
 policy-DisabledCiphers = Desactivar cifrados.
 policy-DefaultDownloadDirectory = Establece el directorio de descarga predeterminado
+policy-DefaultSerialGuardSetting = Controlar el uso de la API serie.
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Deshabilitar PDF.js, el lector de PDF integrado en { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Previene que el agente de navegación predeterminado tome acciones. Solo aplicable a Windows; otras plataformas no tienen el agente.
@@ -55,6 +58,8 @@ policy-DisablePocket2 = Deshabilitar la característica para guardar páginas we
 policy-DisablePrivateBrowsing = Deshabilitar Navegación Privada.
 policy-DisableProfileImport = Deshabilitar el comando de menú para importar datos desde otro navegador.
 policy-DisableProfileRefresh = Deshabilitar el botón "Recargar { -brand-short-name }" en la página about:support.
+policy-DisableRemoteImprovements = Evita que { -brand-short-name } aplique cambios de rendimiento, estabilidad y funciones entre actualizaciones.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Desactivar configuración remota
 policy-DisableSafeMode = Deshabilitar la función para reiniciar en modo seguro. Nota: la tecla Mayús para ingresar al modo seguro solo se puede deshabilitar en Windows usando la política de grupo.
 policy-DisableSecurityBypass = Evitar que el usuario ignore ciertas advertencias de seguridad.
 policy-DisableSetAsDesktopBackground = Deshabilitar el comando de menú configurado como fondo de escritorio para las imágenes.
@@ -79,6 +84,7 @@ policy-ExtensionSettings = Administra todos los aspectos de la instalación de e
 policy-ExtensionUpdate = Habilitar o deshabilitar actualizaciones automáticas de extensiones.
 policy-FirefoxHome2 = Configura { -firefox-home-brand-name }.
 policy-FirefoxSuggest = Configura { -firefox-suggest-brand-name }.
+policy-GenerativeAI = Configurar funciones de IA generativa.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Obliga la navegación directa del sitio de intranet en lugar de buscar al escribir entradas de una sola palabra en la barra de direcciones.
 policy-Handlers = Configurar gestores de aplicación predeterminados.
 policy-HardwareAcceleration = De ser falso, desactiva la aceleración por hardware.
@@ -87,6 +93,7 @@ policy-Homepage = Establecer y opcionalmente bloquear la página de inicio.
 policy-HttpAllowlist = Orígenes que no se actualizarán a HTTPS.
 policy-HttpsOnlyMode = Permitir que se habilite el modo solo HTTPS.
 policy-InstallAddonsPermission = Permitir que algunos sitios web instalen complementos.
+policy-IPProtectionAvailable = Evita que la VPN integrada esté disponible para quienes usan el navegador.
 policy-LegacyProfiles = Deshabilitar la función que obliga a tener un perfil separado para cada instalación
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Volver al comportamien
 ##
 
 policy-LocalFileLinks = Permitir a sitios web específicos para enlazar a archivos locales.
+policy-LocalNetworkAccess = Habilitar o deshabilitar las comprobaciones de acceso a la red local.
 policy-ManagedBookmarks = Configura una lista de marcadores administrada por un administrador que el usuario no puede cambiar.
 policy-ManualAppUpdateOnly = Permitir solo actualizaciones manuales y no notificar al usuario sobre las actualizaciones.
 policy-PrimaryPassword = Requerir o evitar el uso de una contraseña maestra.
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = Habilitar acuerdo de claves post-quantum
 policy-PDFjs = Deshabilitar o configurar PDF.js, el visor de PDF integrado en { -brand-short-name }.
 policy-Permissions2 = Configura permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
 policy-PictureInPicture = Habilitar o deshabilitar Picture-in-Picture.
+policy-PopupBlocking2 = Permitir que ciertos sitios web muestren ventanas emergentes y sean redirigidos por frames de terceros.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de manera predeterminada.
 policy-Preferences = Establece y bloquea el valor para un subconjunto de preferencias.
 policy-PrivateBrowsingModeAvailability = Establecer la disponibilidad del modo de navegación privada.
 policy-PromptForDownloadLocation = Pregunte dónde guardar archivos al descargar.
 policy-Proxy = Configura los ajustes del proxy.
+policy-RelaunchRequired = Solicita que { -brand-short-name } se reinicie en un periodo determinado y notifica a cada persona sobre el próximo reinicio.
 policy-RequestedLocales = Establecer la lista de localizaciones solicitadas para la aplicación, ordenadas por preferencia.
 policy-SanitizeOnShutdown2 = Borrar datos de navegación al apagar.
 policy-SearchBar = Establecer la ubicación predeterminada de la barra de búsqueda. El usuario aún puede personalizarlo.
@@ -130,6 +140,9 @@ policy-SearchSuggestEnabled = Habilitar o deshabilitar sugerencias de búsqueda.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Agregar o eliminar módulos PKCS #11.
 policy-ShowHomeButton = Muestra el botón de inicio en la barra de herramientas.
+policy-SitePolicies = Políticas específicas por sitio
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = No mostrar los Términos de Uso ni el Aviso de Privacidad al iniciar. Declaras que aceptas y tienes la autoridad para aceptar los Términos de Uso en nombre de todas las personas a las que les proporcionas acceso a este navegador.
 policy-SSLVersionMax = Establecer la versión máxima de SSL.
 policy-SSLVersionMin = Establecer la versión mínima de SSL.
 policy-StartDownloadsInTempDirectory = Forzar las descargas para que comiencen en una ubicación temporal local en lugar del directorio de descarga predeterminado.
@@ -137,8 +150,11 @@ policy-SupportMenu = Agregar un elemento personalizado de asistencia al menú de
 policy-TranslateEnabled = Activa o desactiva la traducción de páginas web.
 policy-UserMessaging = No mostrar ciertos mensajes al usuario.
 policy-UseSystemPrintDialog = Imprimir utilizando el cuadro de diálogo de impresión del sistema.
+policy-VisualSearchEnabled = Habilitar o deshabilitar la búsqueda visual.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear sitios web de ser visitado. Consulta la documentación para obtener más detalles sobre el formato.
 policy-Windows10SSO = Permitir inicio de sesión único de Windows para cuentas de Microsoft, el trabajo y la escuela.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Permitir el inicio de sesión único para cuentas de Microsoft Entra.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Habilita o deshabilita el soporte para la API de JavaScript XSLTProcessor y la instrucción de procesamiento XSLT.

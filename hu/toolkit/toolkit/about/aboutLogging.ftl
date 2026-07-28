@@ -31,6 +31,7 @@ about-logging-no-log-modules = Nincs
 about-logging-no-log-file = Nincs
 about-logging-logging-preset-selector-text = Naplózási előbeállítás:
 about-logging-with-profiler-stacks-checkbox = Veremkiíratások engedélyezése a naplóüzeneteknél
+about-logging-with-javascript-tracing-checkbox = JavaScript nyomkövetés engedélyezése
 about-logging-menu =
     .title = Speciális beállítások
 
@@ -52,6 +53,12 @@ about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Naplómodulok a WebRTC hívások diagnosztizálásához
 about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Naplómodulok a WebCodecs hang/videó dekódolók és kódolók, valamint képdekódolók problémáinak diagnosztizálásához
+about-logging-preset-ml-label = Gépi tanulás
+about-logging-preset-ml-description = Naplómodulok a gépi tanulási problémák diagnosztizálásához
+about-logging-preset-web-compat-label = Webkompatibilitás
+about-logging-preset-web-compat-description = Naplómodulok a webes kompatibilitási problémák diagnosztizálásához
+about-logging-preset-navigation = Navigáció
+about-logging-preset-navigation-description = Naplómodulok a navigációs és munkamenetelőzmény-problémák diagnosztizálásához
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Naplómodulok a WebGPU problémák diagnosztizálásához
 about-logging-preset-gfx-label = Grafika
@@ -98,4 +105,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Webcím m
 about-logging-upload-error = Hiba történt a profil feltöltésekor: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Hiba történt a feltöltött profil tárolása során: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Hiba történt a fájl mentésekor: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Feltöltött profilok
+about-logging-no-uploaded-profiles = Még egy profil sem lett feltöltve.
+about-logging-delete-uploaded-profile = Törlés
+about-logging-view-uploaded-profile = Profil megtekintése
+about-logging-delete-profile-confirm-title = Profil törlése
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Biztos, hogy törli ezt a profilt: „{ $profileName }”? Ez nem vonható vissza.
+about-logging-deleting-profile = Törlés…

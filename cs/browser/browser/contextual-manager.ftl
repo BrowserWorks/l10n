@@ -15,9 +15,10 @@ contextual-manager-more-options-popup =
 
 contextual-manager-passwords-command-create = Přidat heslo
 contextual-manager-passwords-command-import-from-browser = Importovat z jiného prohlížeče…
-contextual-manager-passwords-command-import = Importovat ze souboru
+contextual-manager-passwords-command-import = Importovat ze souboru…
 contextual-manager-passwords-command-export = Exportovat hesla
 contextual-manager-passwords-command-remove-all = Odstranit všechna hesla
+contextual-manager-passwords-command-options = Možnosti
 contextual-manager-passwords-command-settings = Nastavení
 contextual-manager-passwords-command-help = Nápověda
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Nové: { $added }, aktualizované: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Nové: { $added }, aktualizováné: { $modified }, duplicity: { $no_change }, chyby: { $error }
 contextual-manager-passwords-import-detailed-report = Zobrazit podrobný report
 contextual-manager-passwords-import-success-button = Hotovo
 contextual-manager-passwords-import-error-heading-and-message =
@@ -169,7 +176,7 @@ contextual-manager-passwords-password-already-exists-error-button = Přejít na 
 contextual-manager-passwords-update-password-success-heading =
     .heading = Heslo uloženo
 contextual-manager-passwords-update-password-success-button = Hotovo
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = Uživatelské jméno uloženo
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -229,12 +236,15 @@ contextual-manager-passwords-title = Hesla
 
 contextual-manager-passwords-create-label =
     .label = Přidat heslo
+contextual-manager-passwords-update-label =
+    .label = Aktualizovat heslo
 contextual-manager-passwords-edit-label =
     .label = Upravit heslo
 contextual-manager-passwords-remove-label =
     .title = Odebrat heslo
 contextual-manager-passwords-origin-tooltip = Zadejte přesnou adresu, na které se budete přihlašovat k tomuto webu.
 contextual-manager-passwords-username-tooltip = Zadejte uživatelské jméno, e-mailovou adresu nebo číslo účtu, které používáte pro přihlášení.
+contextual-manager-passwords-password-tooltip-2 = Pro přihlášení k tomuto účtu zadejte heslo.
 contextual-manager-passwords-password-tooltip = Zadejte heslo, kterým se přihlašujete k tomuto účtu.
 
 ## Password Card
@@ -286,6 +296,28 @@ contextual-manager-view-alert-heading =
     .heading = Zobrazit upozornění
 contextual-manager-view-alert-button =
     .tooltiptext = Zkontrolovat upozornění
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-heading-2 =
+    .heading =
+        { $count ->
+            [1] Zobrazit upozornění
+            [one] Zobrazit upozornění
+            [few] Zobrazit upozornění
+            [many] Zobrazit upozornění
+           *[other] Zobrazit upozornění
+        }
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-button-2 =
+    .tooltiptext =
+        { $count ->
+            [1] Zkontrolovat upozornění
+            [one] Zkontrolovat upozornění
+            [few] Zkontrolovat upozornění
+            [many] Zkontrolovat upozornění
+           *[other] Zkontrolovat upozornění
+        }
 contextual-manager-show-password-button =
     .aria-label = Zobrazit heslo
     .title = Zobrazit heslo
@@ -295,6 +327,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Nebyla nalezena žádná hesla
+contextual-manager-passwords-no-passwords-found-message-2 = Zkuste jiný výraz a hledání zopakujte.
 contextual-manager-passwords-no-passwords-found-message = Nebyla nalezena žádná hesla. Vyhledejte jiný výraz a zkuste to znovu.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -309,6 +342,8 @@ contextual-manager-passwords-no-passwords-message = Všechna hesla jsou šifrov�
 contextual-manager-passwords-no-passwords-get-started-message = Pro začátek si je přidejte sem.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Přidat ručně
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Uložte si svá hesla na bezpečné místo
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -327,3 +362,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [many] Ano, odebrat hesla
        *[other] Ano, odebrat hesla
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Pro zobrazení uložených hesel zadejte své hlavní heslo.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Zadejte hlavní heslo
+contextual-manager-primary-password-learn-more-link = Zjistit více

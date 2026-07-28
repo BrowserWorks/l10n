@@ -37,6 +37,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Hapus Semua Situs Web
     .accesskey = a
+permissions-save-changes-2 =
+    .buttonlabelaccept = Simpan Perubahan
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = Simpan Perubahan
     .buttonaccesskeyaccept = S
@@ -92,6 +95,10 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Anda dapat mematikan Mode HTTPS-Saja untuk situs web tertentu. { -brand-short-name } tidak akan mencoba meningkatkan sambungan ke HTTPS aman untuk situs-situs tersebut. Pengecualian tidak berlaku untuk jendela-jendela pribadi.
 permissions-exceptions-https-only-desc2 = Anda dapat mematikan Mode HTTPS-Saja untuk situs web tertentu. { -brand-short-name } tidak akan mencoba meningkatkan sambungan ke HTTPS aman untuk situs-situs tersebut.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-desc2 = Anda dapat menentukan situs web mana yang diizinkan untuk membuka jendela pop-up dan diarahkan oleh bingkai pihak ketiga.
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +174,12 @@ permissions-site-camera-desc = Situs web berikut ini minta mengakses kamera Anda
 permissions-site-camera-disable-label =
     .label = Blokir permintaan baru untuk mengakses kamera Anda
 permissions-site-camera-disable-desc = Ini akan mencegah situs web apa pun yang tidak tercantum di atas minta mengakses kamera Anda. Memblokir akses ke kamera Anda dapat menghentikan beberapa fitur situs web.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Pengaturan - Aplikasi dan layanan perangkat
+    .style = { permissions-window2.style }
 
 ## Site Permissions - Microphone
 

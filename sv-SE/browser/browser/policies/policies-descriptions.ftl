@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Ange policyer som WebExtensions kan komma åt via chrome.storage.managed.
+policy-AIControls = Konfigurera AI-kontroller.
 policy-AllowedDomainsForApps = Definiera domäner som får åtkomst till Google Workspace.
 policy-AllowFileSelectionDialogs = Tillåt filmarkeringsdialoger.
 policy-AppAutoUpdate = Aktivera eller inaktivera automatisk applikationsuppdatering.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Aktivera autofyll för adresser.
 policy-AutofillCreditCardEnabled = Aktivera autofyll för betalningsmetoder.
 policy-AutoLaunchProtocolsFromOrigins = Definiera en lista över externa protokoll som kan användas från listade ursprung utan att uppmana användaren.
 policy-BackgroundAppUpdate2 = Aktivera eller inaktivera uppdateringar i bakgrunden.
+policy-Backup = Inaktivera säkerhetskopiering eller återställning av profildata.
 policy-BlockAboutAddons = Blockera tillgång till tilläggshanteraren (about:addons)
 policy-BlockAboutConfig = Blockera tillgång till sidan about:config.
 policy-BlockAboutProfiles = Blockera tillgång till sidan about:profiles.
@@ -34,7 +36,9 @@ policy-Cookies = Tillåt eller neka webbplatser att lagra kakor
 policy-Containers = Ange policyer relaterade till behållare.
 policy-DisableAccounts = Inaktivera kontobaserade tjänster, inklusive synkronisering.
 policy-DisabledCiphers = Inaktivera chiffer.
+policy-DefaultBrowserSettingEnabled = Styr om användaren kan ange { -brand-short-name } som standardwebbläsare.
 policy-DefaultDownloadDirectory = Ange standard för nedladdningskatalog.
+policy-DefaultSerialGuardSetting = Kontrollera användningen av det seriella API:t.
 policy-DisableAppUpdate = Förhindra att webbläsaren uppdateras.
 policy-DisableBuiltinPDFViewer = Inaktivera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Förhindra att standardwebbläsaren agerar. Gäller endast Windows; andra plattformar har inte agenten.
@@ -55,6 +59,8 @@ policy-DisablePocket2 = Inaktivera funktionen att spara webbsidor till { -pocket
 policy-DisablePrivateBrowsing = Inaktivera privat surfning.
 policy-DisableProfileImport = Inaktivera menyalternativet att importera data från en annan webbläsare.
 policy-DisableProfileRefresh = Inaktivera knappen Återställ { -brand-short-name } på sidan about:support.
+policy-DisableRemoteImprovements = Förhindra { -brand-short-name } från att tillämpa prestanda, stabilitet och funktionsändringar mellan uppdateringar.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Inaktivera fjärrinställningar.
 policy-DisableSafeMode = Inaktivera funktionen att starta om i felsäkert läge. OBS: Att använda knappen Shift för att starta i felsäkert läge kan bara inaktiveras via grupprinciper på Windows.
 policy-DisableSecurityBypass = Förhindra användaren från att gå vidare vid vissa säkerhetsvarningar.
 policy-DisableSetAsDesktopBackground = Inaktivera menyalternativet Använd som skrivbordsbakgrund för bilder.
@@ -79,6 +85,7 @@ policy-ExtensionSettings = Hantera alla aspekter av tilläggsinstallation.
 policy-ExtensionUpdate = Aktivera eller inaktivera automatiska tilläggsuppdateringar.
 policy-FirefoxHome2 = Konfigurera { -firefox-home-brand-name }.
 policy-FirefoxSuggest = Konfigurera { -firefox-suggest-brand-name }.
+policy-GenerativeAI = Konfigurera generativa AI-funktioner.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Tvinga direkt navigering på intranätet istället för att söka när du skriver in enstaka ord i adressfältet.
 policy-Handlers = Konfigurera standardprogramhanterare.
 policy-HardwareAcceleration = Om inaktiv, stäng av hårdvaruacceleration.
@@ -87,6 +94,7 @@ policy-Homepage = Ställ in och eventuellt lås startsidan.
 policy-HttpAllowlist = Ursprung som inte kommer att uppgraderas till HTTPS.
 policy-HttpsOnlyMode = Tillåt endast HTTPS-läge.
 policy-InstallAddonsPermission = Tillåt vissa webbplatser att installera tillägg.
+policy-IPProtectionAvailable = Förhindra att inbyggt VPN från att vara tillgängligt för användarna.
 policy-LegacyProfiles = Inaktivera funktionen som framtvingar en separat profil för varje installation
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +105,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Återgå till föråld
 ##
 
 policy-LocalFileLinks = Tillåt specifika webbplatser att länka till lokala filer.
+policy-LocalNetworkAccess = Aktivera eller inaktivera kontroller av lokala nätverksåtkomst.
 policy-ManagedBookmarks = Konfigurerar en lista över bokmärken som hanteras av en administratör som inte kan ändras av användaren.
 policy-ManualAppUpdateOnly = Tillåt endast manuella uppdateringar och meddela inte användaren om uppdateringar.
 policy-PrimaryPassword = Kräv eller förhindra användandet av ett huvudlösenord.
@@ -117,11 +126,13 @@ policy-PostQuantumKeyAgreementEnabled = Aktivera post-quantum nyckelöverenskomm
 policy-PDFjs = Inaktivera eller konfigurera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }
 policy-Permissions2 = Konfigurera behörigheter för kamera, mikrofon, plats, aviseringar och autoplay.
 policy-PictureInPicture = Aktivera eller inaktivera bild-i-bild.
+policy-PopupBlocking2 = Tillåt vissa webbplatser visa popup-fönster och omdirigeras av ramar från tredje part.
 policy-PopupBlocking = Tillåt vissa webbplatser att visa popup-fönster som standard.
 policy-Preferences = Ställ in och lås värdet för en delmängd av inställningar.
 policy-PrivateBrowsingModeAvailability = Ange tillgänglighet för privat surfläge.
 policy-PromptForDownloadLocation = Fråga var du ska spara filer när du laddar ner.
 policy-Proxy = Ange inställningar för proxy.
+policy-RelaunchRequired = Kräv att { -brand-short-name } ska återstartas inom en viss period och meddela användaren om den kommande nylanseringen.
 policy-RequestedLocales = Ange listan över begärda språk för programmet efter ordning i inställningar.
 policy-SanitizeOnShutdown2 = Rensa navigeringsdata vid avstängning.
 policy-SearchBar = Ange standardplacering av sökfältet. Användaren kan fortfarande flytta det.
@@ -130,6 +141,7 @@ policy-SearchSuggestEnabled = Aktivera eller inaktivera sökförslag.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Lägg till eller ta bort PKCS #11-moduler.
 policy-ShowHomeButton = Visa hemknappen i verktygsfältet.
+policy-SitePolicies = Platsspecifika policyer.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = Visa inte användarvillkoren och sekretessmeddelandet vid start. Du intygar att du accepterar och har behörighet att acceptera användarvillkoren på uppdrag av alla individer som du ger åtkomst till den här webbläsaren.
 policy-SSLVersionMax = Ange den maximala SSL-versionen.
@@ -139,8 +151,11 @@ policy-SupportMenu = Lägg till ett anpassat menyalternativ med hjälp i hjälpm
 policy-TranslateEnabled = Aktivera eller inaktivera webböversättning.
 policy-UserMessaging = Visa inte vissa meddelanden till användaren.
 policy-UseSystemPrintDialog = Skriv ut med hjälp av systemets utskriftsdialog.
+policy-VisualSearchEnabled = Aktivera eller inaktivera visuell sökning.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blockera besök på webbplatser. Läs dokumentationen för mer detaljer om hur de anges.
 policy-Windows10SSO = Tillåt Windows enkel inloggning för Microsoft-, arbets- och skolkonton.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Tillåt enkel inloggning för Microsoft Entra-konton.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Aktivera eller inaktivera stöd för XSLTProcessor JavaScript API och XSLT-bearbetningsinstruktionen.

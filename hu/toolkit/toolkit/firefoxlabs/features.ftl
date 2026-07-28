@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Weboldal megjelenítése
 experimental-features-group-customize-browsing =
     .label = Szabja testre a böngészést
+experimental-features-group-productivity =
+    .label = Produktivitás
+experimental-features-group-newtab-widgets =
+    .label = Kisalkalmazások a { -firefox-home-brand-name }on
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Jelszavak az oldalsávban
@@ -51,3 +55,47 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Témaszakaszok és követés/blokkolás az Új lap oldal történeteihez
 experimental-features-newtab-sections-follow-block-description = Szervezze a történeteket az Új lap oldalon témacsoportokba (Sport, Étel, Szórakozás és egyebek) a strukturáltabb és könnyen áttekinthető élmény érdekében. Használja az új Követés és Blokkolás vezérlőket a látott tartalmak testreszabásához. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Webhelyek hozzáadása a tálcához
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Nyissa meg a gyakran felkeresett webhelyeket webalkalmazásként a tálcáról. Keresse a „Lap hozzáadása a tálcához” ikont a címsáv jobb oldalán, hogy a webhelyet egy letisztult ablakban nyissa meg, a { -brand-product-name } összes védelmével együtt. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Listák a { -firefox-home-brand-name }on
+experimental-features-newtab-widget-lists-new =
+    .label = Listák
+experimental-features-newtab-widget-lists-description = Tartsa fejben a teendőit amikor megnyit egy új lapot. Csomagolólistáktól a bevásárlólistákig, tervezzen a { -brand-product-name } segítségével. <a data-l10n-name="connect">Visszajelzés</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Időzítő a { -firefox-home-brand-name }on
+experimental-features-newtab-widget-timer-new =
+    .label = Időzítő
+experimental-features-newtab-widget-timer-description = Állítson be egy időzítőt, hogy fókuszált maradjon, és emlékeztesse a feladatnál maradásra vagy a feltöltődésre. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Listák és időzítők a { -firefox-home-brand-name }on
+experimental-features-newtab-widget-lists-and-timer-description = Tartsa fejben a teendőit, amikor megnyit egy új lapot. Csomagolólistáktól a bevásárlólistákig, tervezzen a { -brand-product-name } segítségével. Állítson be egy időzítőt, hogy fókuszált maradjon, és emlékeztesse a feladatnál maradásra vagy a feltöltődésre. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Időjárás-előrejelzések
+experimental-features-newtab-widget-weather-description = Kapjon tiszta képet a mai időjárásról az óránkénti előrejelzésekkel. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = A nap képe
+experimental-features-newtab-widget-picture-of-the-day-description = Adjon a napjához egy kis napi csodát. Kapjon új képet, tanuljon meg valami érdekeset, és állítson be friss háttérképet egy pillanat alatt. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Órák
+experimental-features-newtab-widget-clocks-description = Adjon hozzá akár négy órát egyéni becenevekkel, hogy kövesse az Önnek fontos helyek idejét. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Szemantikus előzménykereső
+experimental-features-semantic-history-search-description = Használjon helyi gépi tanulási modellt, hogy olyan bejegyzéseket javasoljon az előzményekből, amelyek kapcsolódnak a { -brand-product-name } címsorából indított kereséseihez. <a data-l10n-name="connect">Visszajelzés megosztása</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Lapjegyzetek
+experimental-features-tab-notes-description = A lapjegyzetek egy kísérleti funkció, amellyel feljegyzéseket adhat a böngészőlapjaihoz. Jegyezze fel a kontextust, írjon emlékeztetőket vagy írja fel a következő lépéseket, hogy visszatérhessen, és emlékezzen rá, hogy miért nyitotta meg. Örülnénk a visszajelzésének, miközben folyamatosan fejlesztjük a funkciót. <a data-l10n-name="connect">Visszajelzés megosztása</a>

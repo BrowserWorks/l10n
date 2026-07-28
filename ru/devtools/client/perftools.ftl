@@ -33,11 +33,33 @@ perftools-description-local-build =
     Если вы профилируете сборку, которую скомпилировали самостоятельно на этой
     машине, добавьте objdir вашей сборки в список ниже, чтобы
     её можно было использовать в поиске символьной информации.
+perftools-pick-local-build-directory = Выберите каталог для сборки
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Интервал выборки:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } мс
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } байт
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } КиБ
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } МиБ
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } ГиБ
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } ТиБ
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } ПиБ
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } ЭиБ
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ЗиБ
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } ЙиБ
 
 ##
 
@@ -84,7 +106,7 @@ perftools-thread-gecko-main =
 perftools-thread-compositor =
     .title = Объединяет различные отрисованные элементы на странице
 perftools-thread-dom-worker =
-    .title = Обрабатывает как web worker'ы, так и service worker'ы
+    .title = Обрабатывает как Веб-обработчики, так и Обработчики
 perftools-thread-renderer =
     .title = Когда WebRender включён, этот поток выполняет вызовы OpenGL
 perftools-thread-render-backend =
@@ -125,7 +147,7 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
-perftools-onboarding-message = <b>Новое</b>:  В Инструменты разработчика теперь интегрирован { -profiler-brand-name }. <a>Узнайте больше</a> об этом новом, мощном инструменте.
+perftools-onboarding-message = <b>Новое</b>:  В инструменты разработчика теперь интегрирован «{ -profiler-brand-name }». <a>Узнайте больше</a> об этом новом, мощном инструменте.
 perftools-onboarding-close-button =
     .aria-label = Закрыть приветственное сообщение
 
@@ -153,12 +175,13 @@ perftools-presets-ml-label = Машинное обучение
 perftools-presets-ml-description2 = Настройки для выявления ошибок машинного обучения в { -brand-shorter-name }.
 perftools-presets-networking-label = Сеть
 perftools-presets-networking-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Сетевой обмен и журналы
+perftools-presets-networking-with-logs-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }, включая сетевые журналы. Эти журналы могут содержать конфиденциальную информацию, такую как URL-адреса, которые вы посещали.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Электропитание
 perftools-presets-power-description = Настройки для выявления ошибок потребления энергии в { -brand-shorter-name }, с небольшими накладными расходами.
 perftools-presets-debug-label = Отладка
 perftools-presets-debug-description = Предустановка для отладки в { -brand-shorter-name }. Большие накладные расходы, не используйте для работы с производительностью, а используйте для понимания поведения браузера.
+perftools-presets-web-compat-label = Веб-совместимость
+perftools-presets-web-compat-description = Рекомендуемые преднастройки для отладки проблем веб-совместимости на веб-сайтах, а не для отслеживания производительности.
 perftools-presets-custom-label = Персональный
-
-##
-

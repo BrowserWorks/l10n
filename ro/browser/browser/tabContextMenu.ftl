@@ -1,0 +1,235 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-new-tab =
+    .label = Filă nouă
+    .accesskey = w
+reload-tab =
+    .label = Reîncarcă fila
+    .accesskey = R
+reload-tab2 =
+    .label = Reîncarcă
+    .accesskey = R
+select-all-tabs =
+    .label = Selectează toate filele
+    .accesskey = S
+tab-context-play-tab =
+    .label = Redă fila
+    .accesskey = l
+tab-context-play-tabs =
+    .label = Redă filele
+    .accesskey = y
+duplicate-tab =
+    .label = Duplică fila
+    .accesskey = D
+duplicate-tab2 =
+    .label = Duplică
+    .accesskey = D
+duplicate-tabs =
+    .label = Duplică filele
+    .accesskey = D
+duplicate-tabs2 =
+    .label = Duplică
+    .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Închide filele de la stânga
+    .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = Închide filele de mai sus
+    .accesskey = I
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
+close-tabs-to-the-end =
+    .label = Închide filele de la dreapta
+    .accesskey = i
+close-tabs-to-the-end-vertical =
+    .label = Închide filele de mai jos
+    .accesskey = i
+close-other-tabs =
+    .label = Închide celelalte file
+    .accesskey = o
+reload-tabs =
+    .label = Reîncarcă filele
+    .accesskey = R
+pin-tab =
+    .label = Fixează fila
+    .accesskey = P
+tab-context-pin-tab2 =
+    .label = Fixează
+    .accesskey = F
+unpin-tab =
+    .label = Anulează fixarea filei
+    .accesskey = b
+tab-context-unpin-tab2 =
+    .label = Anulează fixarea
+    .accesskey = f
+pin-selected-tabs =
+    .label = Fixează filele
+    .accesskey = P
+unpin-selected-tabs =
+    .label = Anulează fixarea filelor
+    .accesskey = b
+bookmark-selected-tabs =
+    .label = Marchează filele…
+    .accesskey = k
+tab-context-bookmark-tab =
+    .label = Marchează fila…
+    .accesskey = B
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Marcaj
+    .accesskey = B
+tab-context-open-in-new-container-tab =
+    .label = Deschide într-o filă container nouă
+    .accesskey = e
+tab-context-open-in-new-container-tab2 =
+    .label = Deschide într-o filă container nouă
+    .accesskey = e
+move-to-start =
+    .label = Mută la început
+    .accesskey = S
+move-to-end =
+    .label = Mută la sfârșit
+    .accesskey = E
+move-to-new-window =
+    .label = Mută într-o fereastră nouă
+    .accesskey = W
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Mută în { $profileName }
+tab-context-close-multiple-tabs =
+    .label = Închide mai multe file
+    .accesskey = M
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Închide mai multe file
+    .accesskey = m
+tab-context-close-duplicate-tabs =
+    .label = Închide filele duplicate
+    .accesskey = u
+tab-context-close-duplicate-tabs2 =
+    .label = Închide duplicatele acestei file
+    .accesskey = x
+tab-context-share-url =
+    .label = Partajează
+    .accesskey = h
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Filă nouă la dreapta
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = Filă nouă dedesubt
+    .accesskey = w
+tab-context-new-group =
+    .label = Grup nou
+    .accesskey = G
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Redeschide fila închisă
+            [one] Redeschide fila închisă
+            [few] Redeschide filele închise
+           *[other] Redeschide filele închise
+        }
+    .accesskey = o
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Închide fila
+            [one] Închide fila
+            [few] Închide cele { $tabCount } file
+           *[other] Închide cele { $tabCount } de file
+        }
+    .accesskey = C
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Închide
+            [one] Închide { $tabCount } filă
+            [few] Închide { $tabCount } file
+           *[other] Închide { $tabCount } de file
+        }
+    .accesskey = c
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mută fila
+            [one] Mută fila
+            [few] Mută filele
+           *[other] Mută filele
+        }
+    .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Mută fila la
+            [one] Mută { $tabCount } filă la
+            [few] Mută { $tabCount } file la
+           *[other] Mută { $tabCount } de file la
+        }
+    .accesskey = v
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Mută ecranul divizat la
+    .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Trimite către un dispozitiv
+            [one] Trimite { $tabCount } filă către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+    .accesskey = n
+tab-context-send-to-device2 =
+    .label = Trimite către dispozitivul tău
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Trimite către mobil
+            [one] Trimite { $tabCount } filă către mobil
+            [few] Trimite { $tabCount } file către mobil
+           *[other] Trimite { $tabCount } de file către mobil
+        }
+    .accesskey = n
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Creează un link partajabil
+    .accesskey = a
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Trimite fila către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+    .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Descarcă fila din memorie
+            [one] Descarcă { $tabCount } filă
+            [few] Descarcă { $tabCount } file
+           *[other] Descarcă { $tabCount } de file
+        }
+    .accesskey = U
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Descarcă
+    .accesskey = U

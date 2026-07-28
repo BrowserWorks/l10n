@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Debugging - Runtime / { $selectedRunti
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name } ini
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = { -brand-shorter-name } ini
+about-debugging-sidebar-this-firefox-title =
+    .title = { -brand-shorter-name } ini
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Penyiapan
+about-debugging-sidebar-setup-title =
+    .title = Penyiapan
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,9 @@ about-debugging-multiprocess-toolbox-name = Kotak Alat Multiproses
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Proses Utama dan Proses Konten untuk peramban target
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Tutup pesan
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Tutup pesan

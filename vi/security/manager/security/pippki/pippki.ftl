@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Xem
 download-cert-view-text = Kiểm định chứng chỉ của CA
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -85,15 +82,13 @@ client-auth-cert-details-issued-by = Cấp bởi: { $issuedBy }
 # Variables:
 # $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
 client-auth-cert-details-stored-on = Lưu trữ trên: { $storedOn }
-client-auth-cert-remember-label = Hãy nhớ quyết định này:
+client-auth-cert-remember-label = Ghi nhớ quyết định này:
 client-auth-cert-remember-never =
     .label = Một lần
 client-auth-cert-remember-always =
     .label = Vĩnh viễn
 client-auth-cert-remember-temporarily =
     .label = Cho phiên này
-client-auth-cert-remember-box =
-    .label = Ghi nhớ quyết định này
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Mật khẩu sao lưu chứng chỉ (nhập lại):
 set-password-reminder = Quan trọng: Nếu bạn quên mật khẩu sao lưu chứng chỉ, sau này bạn sẽ không thể phục hồi bản sao lưu này. Hãy lưu vào một nơi an toàn.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Xác thực được bảo vệ
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Vui lòng xác thực với thiết bị bảo mật ({ $tokenName }). Cách thực hiện tùy thuộc vào thiết bị (ví dụ: sử dụng đầu đọc vân tay hoặc nhập mã bằng bàn phím).
 
 ## Protected authentication alert
 

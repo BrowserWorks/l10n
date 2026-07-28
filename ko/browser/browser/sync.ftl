@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = 다른 기기 연결…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 기기에 보내기
+           *[other] 탭 { $tabCount }개를 기기로 보내기
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 모바일로 보내기
+           *[other] 탭 { $tabCount }개를 모바일로 보내기
+        }
+fxa-menu-send-to-mobile-device-missing2 = 사용자의 기기가 없나요?
+fxviewtabrow-send-to-mobile-not-verified = 계정이 확인되지 않음
+fxviewtabrow-send-to-mobile-verify-account = 계정 확인
+fxa-menu-send-to-mobile-turn-on-sync = 탭을 보내려면 동기화를 켜세요
+fxa-menu-send-to-mobile-connect-device = 탭을 보내려면 기기를 연결하세요
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = 탭 { $tabCount }개를 기기로 보내기
 # This is shown dynamically within "Send tab to device" in fxa menu.
@@ -29,7 +52,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = 로그인한 모든 기기로 즉시 탭을 보냅니다.
 fxa-menu-sign-out =
     .label = 로그아웃…
-fxa-menu-sync-title = Sync
 fxa-menu-sync-description = 어디서나 웹에 접근하세요
 fxa-avatar-sign-in = 로그인
 fxa-avatar-sign-up = 가입
@@ -43,6 +65,10 @@ sync-setup-verify-heading = Sync에 가입하시겠습니까?
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = 다른 사용자가 이전에 이 컴퓨터에서 Sync에 로그인한 적이 있습니다. 로그인하면 이 브라우저의 북마크, 비밀번호 및 기타 설정이 { $email } 사용자와 병합됩니다.
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = 탭을 보내려면 로그인하세요
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 
@@ -71,7 +97,7 @@ sync-account-already-signed-in-header = 이 계정은 다른 프로필로 로그
 #   $acctEmail (String) - Email of the account signing into sync.
 #   $currentProfile (String): Name of the current profile signing in
 #   $otherProfile (String): Name of the profile that is already signed in
-sync-account-in-use-description-merge = { $acctEmail } 이메일이 이 컴퓨터에서 “{ $otherProfile }” 프로필에 로그인하였습니다. '{ $currentProfile }' 프로필을 동기화하면, 비밀번호, 북마크 등 두 프로필의 데이터가 영구적으로 병합됩니다.
+sync-account-in-use-description-merge = { $acctEmail } 이메일이 이 컴퓨터에서 “{ $otherProfile }” 프로필에 로그인했습니다. '{ $currentProfile }' 프로필을 동기화하면, 비밀번호, 북마크 등 두 프로필의 데이터가 영구적으로 병합됩니다.
 # Variables:
 #   $profileName (String) - Name of the profile to switch to
 sync-button-switch-profile = “{ $profileName }” 프로필로 전환

@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Устанавливает политики, по которым WebExtensions могут получать доступ через chrome.storage.managed.
+policy-AIControls = Настраивает элементы управления ИИ.
 policy-AllowedDomainsForApps = Определяет домены, которым разрешен доступ к Google Workspace.
 policy-AllowFileSelectionDialogs = Разрешить диалоговые окна выбора файлов.
 policy-AppAutoUpdate = Включает или отключает автообновление приложения.
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = Включить автозаполнение а
 policy-AutofillCreditCardEnabled = Включить автозаполнение для способов оплаты.
 policy-AutoLaunchProtocolsFromOrigins = Определяет список внешних протоколов, которые могут быть вызваны из указанных источников без запроса пользователя.
 policy-BackgroundAppUpdate2 = Включает или отключает фоновое обновление.
+policy-Backup = Отключает резервное копирование или восстановление данных профиля.
 policy-BlockAboutAddons = Блокирует доступ к менеджеру дополнений (about:addons).
 policy-BlockAboutConfig = Блокирует доступ к странице about:config.
 policy-BlockAboutProfiles = Блокирует доступ к странице about:profiles.
@@ -35,13 +37,14 @@ policy-Containers = Устанавливает политики, связанн�
 policy-DisableAccounts = Отключает службы на основе аккаунтов, включая синхронизацию.
 policy-DisabledCiphers = Отключает шифры.
 policy-DefaultDownloadDirectory = Устанавливает каталог для загрузок по умолчанию.
+policy-DefaultSerialGuardSetting = Контролирует использование Serial API.
 policy-DisableAppUpdate = Запрещает обновление браузера.
 policy-DisableBuiltinPDFViewer = Отключает PDF.js, встроенный просмотрщик PDF в { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Не позволяет агенту браузера по умолчанию предпринимать какие-либо действия. Применимо только к Windows; на других платформах агента нет.
 policy-DisableDeveloperTools = Блокирует доступ к инструментам разработчика.
 policy-DisableEncryptedClientHello = Отключает использование функции TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Отключает команды отправки отзывов в меню Справка («Отправить отзыв...» и «Сообщить о поддельном сайте...»).
-policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
+policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая синхронизацию.
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
 policy-DisableFirefoxAccounts1 = Отключает службы на основе аккаунтов, включая синхронизацию.
 # Firefox Screenshots is the name of the feature, and should not be translated.
@@ -55,8 +58,10 @@ policy-DisablePocket2 = Отключает сохранение страниц �
 policy-DisablePrivateBrowsing = Отключает приватный режим.
 policy-DisableProfileImport = Отключает команду меню для импорта данных из другого браузера.
 policy-DisableProfileRefresh = Отключает кнопку Обновить { -brand-short-name } на странице about:support.
+policy-DisableRemoteImprovements = Запрещает { -brand-short-name } изменять производительность, стабильность и функции между обновлениями.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Отключить удаленную настройку.
 policy-DisableSafeMode = Отключает функцию для перезапуска в безопасном режиме. Примечание: Клавишу Shift для входа в безопасный режим можно отключить только в Windows с помощью групповой политики.
-policy-DisableSecurityBypass = Не даёт пользователю игнорировать определенные предупреждения системы безопасности.
+policy-DisableSecurityBypass = Не даёт пользователю игнорировать определённые предупреждения системы безопасности.
 policy-DisableSetAsDesktopBackground = Отключает команду меню «Сделать фоновым рисунком рабочего стола…» для изображений.
 policy-DisableSystemAddonUpdate = Запрещает браузеру устанавливать и обновлять системные дополнения.
 policy-DisableTelemetry = Отключает телеметрию.
@@ -79,6 +84,7 @@ policy-ExtensionSettings = Управляет всеми аспектами ус
 policy-ExtensionUpdate = Включает или отключает автоматические обновления расширений.
 policy-FirefoxHome2 = Настройка { -firefox-home-brand-name(case: "genitive") }.
 policy-FirefoxSuggest = Настройка { -firefox-suggest-brand-name }.
+policy-GenerativeAI = Настраивает генеративные функции ИИ.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Принудительный прямой переход на сайт интрасети вместо поиска при вводе отдельных слов в адресной строке.
 policy-Handlers = Настраивает обработчики приложений по умолчанию.
 policy-HardwareAcceleration = Отключает аппаратное ускорение, если установлена в false.
@@ -87,6 +93,7 @@ policy-Homepage = Устанавливает домашнюю страницу �
 policy-HttpAllowlist = Источники, которые не будут обновлены до HTTPS.
 policy-HttpsOnlyMode = Разрешает включить режим «Только HTTPS».
 policy-InstallAddonsPermission = Разрешает некоторым веб-сайтам устанавливать дополнения.
+policy-IPProtectionAvailable = Запрещает пользователям использовать встроенный VPN.
 policy-LegacyProfiles = Отключает функцию для принудительного создания отдельного профиля для каждой установки
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +104,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Переключить
 ##
 
 policy-LocalFileLinks = Разрешает определённым веб-сайтам ссылаться на локальные файлы.
+policy-LocalNetworkAccess = Включает или отключает проверки доступа к локальной сети.
 policy-ManagedBookmarks = Настраивает список закладок, управляемых администратором и недоступных для изменения пользователем.
 policy-ManualAppUpdateOnly = Разрешать только обновления вручную и не уведомлять пользователя об обновлениях.
 policy-PrimaryPassword = Требовать или не допускать использование основного пароля.
@@ -109,7 +117,7 @@ policy-OfferToSaveLoginsDefault = Устанавливает значение п
 policy-OverrideFirstRunPage = Переопределяет первую страницу после запуска. Установите эту политику в пустую, если хотите отключить первую страницу после запуска.
 policy-OverridePostUpdatePage = Переопределяет страницу «Что нового», открывающуюся после обновления. Установите эту политику в пустую, если хотите отключить страницу, открывающуюся после обновления.
 policy-PasswordManagerEnabled = Включает сохранение паролей в менеджере паролей.
-policy-PasswordManagerExceptions = Запрещает { -brand-short-name } сохранять пароли для определенных сайтов.
+policy-PasswordManagerExceptions = Запрещает { -brand-short-name } сохранять пароли для определённых сайтов.
 # Post-quantum refers to cryptography that is safe from attacks by quantum
 # computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
 policy-PostQuantumKeyAgreementEnabled = Включает постквантовое согласование ключей для TLS.
@@ -117,11 +125,13 @@ policy-PostQuantumKeyAgreementEnabled = Включает постквантов�
 policy-PDFjs = Отключает или настраивает PDF.js, встроенный просмотрщик PDF в { -brand-short-name }.
 policy-Permissions2 = Настраивает разрешения для камеры, микрофона, местоположения, уведомлений и автовоспроизведения.
 policy-PictureInPicture = Включает или отключает функцию «Картинка в картинке».
+policy-PopupBlocking2 = Разрешает некоторым веб-сайтам показывать всплывающие окна и перенаправлять их сторонними фреймами.
 policy-PopupBlocking = Разрешает некоторым веб-сайтам открывать всплывающие окна по умолчанию.
 policy-Preferences = Устанавливает и фиксирует значение набора настроек.
 policy-PrivateBrowsingModeAvailability = Устанавливает доступность приватного режима.
-policy-PromptForDownloadLocation = Спрашивает, куда сохранять файлы при загрузке.
+policy-PromptForDownloadLocation = Спрашивает, куда сохранять файлы при скачивании.
 policy-Proxy = Настраивает параметры прокси.
+policy-RelaunchRequired = Требует перезапуска { -brand-short-name } в течение заданного периода времени и уведомляет пользователя о предстоящем перезапуске.
 policy-RequestedLocales = Настраивает список запрашиваемых языков для приложения в порядке предпочтения.
 policy-SanitizeOnShutdown2 = Удаляет данные веб-сёрфинга при закрытии браузера.
 policy-SearchBar = Устанавливает расположение строки поиска по умолчанию. Пользователю всё же разрешено его настраивать.
@@ -130,17 +140,21 @@ policy-SearchSuggestEnabled = Включает или отключает пои�
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Добавляет или удаляет модули PKCS #11.
 policy-ShowHomeButton = Включает кнопку «Домой» на панели инструментов.
+policy-SitePolicies = Политики для конкретных сайтов.
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = Не отображать условия использования и уведомления о конфиденциальности при запуске. Вы заверяете, что принимаете и имеете право принимать Условия использования от имени всех лиц, которым вы предоставляете доступ к этому браузеру.
 policy-SSLVersionMax = Устанавливает максимальную версию SSL.
 policy-SSLVersionMin = Устанавливает минимальную версию SSL.
-policy-StartDownloadsInTempDirectory = Заставляет загрузки запускаться в локальном временном расположении, а не в каталоге загрузки по умолчанию.
+policy-StartDownloadsInTempDirectory = Заставляет скачивания запускаться в локальном временном расположении, а не в каталоге загрузки по умолчанию.
 policy-SupportMenu = Добавляет настраиваемый пункт меню поддержки в меню справки.
 policy-TranslateEnabled = Включает или отключает перевод веб-страниц.
 policy-UserMessaging = Позволяет не показывать определённые сообщения пользователю.
 policy-UseSystemPrintDialog = Использует для печати системный диалог печати.
+policy-VisualSearchEnabled = Включает или отключает визуальный поиск.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Блокирует посещение веб-сайтов. Для получения дополнительной информации о формате обратитесь к документации.
 policy-Windows10SSO = Разрешает единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях.
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = Разрешать единый вход для аккаунтов Microsoft Entra.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Включает или отключает поддержку XSLTProcessor JavaScript API и обработку XSLT-инструкций.

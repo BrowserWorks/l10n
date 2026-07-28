@@ -11,6 +11,15 @@
 unified-extensions-header-title = Розширення
 unified-extensions-manage-extensions =
     .label = Керувати розширеннями
+unified-extensions-discover-extensions =
+    .label = Відкрийте для себе розширення
+unified-extensions-empty-reason-private-browsing-not-allowed = У вас установлені розширення, але вони не ввімкнені в приватних вікнах
+unified-extensions-empty-reason-extension-not-enabled = У вас установлені, але не ввімкнені розширення
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Перейдіть на новий рівень перегляду з розширеннями
+unified-extensions-empty-content-explain-enable2 = Виберіть “{ unified-extensions-manage-extensions.label }”, щоб увімкнути їх у налаштуваннях.
+unified-extensions-empty-content-explain-manage2 = Виберіть “{ unified-extensions-manage-extensions.label }”, щоб керувати ними в налаштуваннях.
+unified-extensions-empty-content-explain-extensions-onboarding = Персоналізуйте { -brand-short-name }, змінивши його вигляд і продуктивність, а також вдосконаливши приватність і безпеку.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Відкрити меню для { $extensionName }
 unified-extensions-item-message-manage = Керувати розширенням
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } обмежено. Його використання може бути ризикованим.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } порушує політики BrowserWorks. Його використання може бути ризикованим.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = Докладніше
 unified-extensions-mb-about-addons-link = Відкрити налаштування розширення
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } вимкнено
+    .message =
+        Це розширення обмежено, тому його вимкнено.
+        Ви можете ввімкнути його в налаштуваннях, але це може бути ризиковано.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } вимкнено
     .message =
@@ -63,6 +82,18 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } вимкнено
     .message = Це розширення порушує політики BrowserWorks, тому його вимкнено.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+            [one] { $extensionsCount } розширення вимкнено
+            [few] { $extensionsCount } розширення вимкнено
+           *[many] { $extensionsCount } розширень вимкнено
+        }
+    .message =
+        Деякі з ваших розширень обмежено, тому їх вимкнено.
+        Ви можете ввімкнути їх у налаштуваннях, але це може бути ризиковано.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -85,3 +116,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[many] { $extensionsCount } розширень вимкнено
         }
     .message = Деякі з ваших розширень вимкнено, оскільки вони порушують політики BrowserWorks.
+unified-extensions-notice-safe-mode =
+    .message = Усі розширення вимкнено, оскільки ви в режимі усунення проблем.

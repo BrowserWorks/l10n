@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Exibição de página web
 experimental-features-group-customize-browsing =
     .label = Personalize sua navegação
+experimental-features-group-productivity =
+    .label = Produtividade
+experimental-features-group-newtab-widgets =
+    .label = Widgets no { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Senhas no painel lateral
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Seções de tópicos e controles de seguir e bloquear em histórias na página de nova aba
 experimental-features-newtab-sections-follow-block-description = Organize as histórias na página nova aba em seções de tópicos (esporte, comida, diversão, etc.) para ter uma experiência mais estruturada e fácil de analisar. Use os novos controles de seguir e bloquear para personalizar que conteúdo aparecer. <a data-l10n-name="connect">Compartilhar opinião</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Adicionar sites à barra de tarefas
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Abra sites que você visita com frequência como aplicativos web a partir da barra de tarefas. Procure o ícone "Adicionar aba à barra de tarefas" à direita da barra de endereços para abrir o site em uma janela simplificada, com todas as proteções do { -brand-product-name }. <a data-l10n-name="connect">Compartilhar opinião</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Listas no { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Listas
+experimental-features-newtab-widget-lists-description = Mantenha sua lista de tarefas sempre à vista ao abrir uma nova aba. Listas de compras, itens de viagem, faça seus planos no { -brand-product-name }. <a data-l10n-name="connect">Compartilhe sua opinião</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Temporizador no { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Temporizador
+experimental-features-newtab-widget-timer-description = Configure um temporizador para te ajudar a se manter concentrado, encorajar a não se distrair, ou lembrar de fazer um intervalo para recarregar as energias. <a data-l10n-name="connect">Compartilhe sua opinião</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Listas e temporizador no { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Mantenha sua lista de tarefas em destaque ao abrir uma nova aba. Itens de viagem, listas de compras, faça seus planos no { -brand-product-name }. Configure um temporizador para te ajudar a se manter concentrado, encorajar a não se distrair, ou lembrar de fazer um intervalo para recarregar as energias. <a data-l10n-name="connect">Compartilhe sua opinião</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Previsões meteorológicas
+experimental-features-newtab-widget-weather-description = Tenha uma visão clara do tempo de hoje com previsões horárias. <a data-l10n-name="connect">Compartilhar opinião</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Imagem do dia
+experimental-features-newtab-widget-picture-of-the-day-description = Dê um toque diário de inspiração. Receba uma nova imagem, descubra algo interessante e altere o fundo de tela rapidamente. <a data-l10n-name="connect">Compartilhe sua opinião</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Relógios
+experimental-features-newtab-widget-clocks-description = Adicione até quatro relógios com apelidos personalizados para acompanhar a hora em lugares importantes para você. <a data-l10n-name="connect">Compartilhar opinião</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Pesquisa semântica no histórico
+experimental-features-semantic-history-search-description = Usar um modelo local de aprendizado de máquina para sugerir, na barra de endereços do { -brand-product-name }, itens do histórico relacionados às suas pesquisas, com base em compreensão do idioma natural. <a data-l10n-name="connect">Compartilhar opinião</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Nota de aba
+experimental-features-tab-notes-description = Nota de aba é um recurso experimental que permite adicionar notas adesivas às abas do navegador. Anote o contexto, lembretes ou as próximas etapas para que você possa voltar e lembrar por que abriu a página. Adoraremos receber sua opinião para continuar melhorando este recurso. <a data-l10n-name="connect">Compartilhar opinião</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Menu de abas simplificado
+experimental-features-tab-context-menu-description = Ter um menu de contexto mais simples ao clicar com o botão direito em uma aba. Projetado para facilitar encontrar as ações comuns. <a data-l10n-name="connect">Compartilhar opinião</a>

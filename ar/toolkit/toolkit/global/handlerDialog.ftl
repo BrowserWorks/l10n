@@ -20,6 +20,17 @@ permission-dialog-description-file-app = أتسمح لهذا الملف بفتح
 permission-dialog-description-extension-app = أأسمح للامتداد { $extension } بفتح رابط { $scheme } باستخدام { $appName }؟
 permission-dialog-description-system-app = أأفتح رابط { $scheme } باستخدام { $appName }؟
 permission-dialog-description-system-noapp = أأفتح الرابط { $scheme }؟
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = أتسمح لهذا الموقع بفتح محفظتك الرقمية؟
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = يُتيح فتح رابط <strong>{ $scheme }</strong> لـ <strong>{ $host }</strong> طلب هويتك الحقيقية باستخدام <strong>{ $appName }</strong>. واصِل فقط إذا كنت تثق بهذا الموقع.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = يُتيح فتح رابط <strong>{ $scheme }</strong> لهذا الموقع طلب هويتك الحقيقية باستخدام <strong>{ $appName }</strong>. واصِل فقط إذا كنت تثق بهذا الموقع.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = يُتيح فتح رابط <strong>{ $scheme }</strong> لـ <strong>{ $host }</strong> طلب هويتك الحقيقية من محفظتك الرقمية. واصِل فقط إذا كنت تثق بهذا الموقع.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = يُتيح فتح رابط <strong>{ $scheme }</strong> لهذا الموقع طلب بيانات هويتك الحقيقية من محفظتك الرقمية. واصِل فقط إذا كنت تثق بهذا الموقع.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -28,9 +39,9 @@ permission-dialog-description-system-noapp = أأفتح الرابط { $scheme }
 ##  $host (string) - The hostname that is initiating the request
 ##  $scheme (string) - The type of link that's being opened.
 
-permission-dialog-remember = اسمح دائما لـ<strong>{ $host }</strong> بفتح روابط <strong>{ $scheme }</strong>
-permission-dialog-remember-file = اسمح دائما لهذا الملف بأن يفتح روابط <strong>{ $scheme }</strong>
-permission-dialog-remember-extension = السماح دائمًا لهذا الامتداد بفتح روابط <strong>{ $scheme }</strong>
+permission-dialog-remember = اسمح دائمًا لـ<strong>{ $host }</strong> بفتح روابط <strong>{ $scheme }</strong>
+permission-dialog-remember-file = اسمح دائمًا لهذا الملف بأن يفتح روابط <strong>{ $scheme }</strong>
+permission-dialog-remember-extension = اسمح دائمًا لهذا الامتداد بفتح روابط <strong>{ $scheme }</strong>
 
 ##
 
@@ -55,7 +66,7 @@ chooser-dialog =
     .buttonaccesskeyaccept = ف
 chooser-dialog-description = اختر تطبيقا لفتح رابط { $scheme }.
 # Please keep the emphasis around the scheme (ie the `<strong>` HTML tags).
-chooser-dialog-remember = استخدم هذا التطبيق دائما لفتح روابط <strong>{ $scheme }</strong>
+chooser-dialog-remember = استخدم هذا التطبيق دائمًا لفتح روابط <strong>{ $scheme }</strong>
 chooser-dialog-remember-extra =
     { PLATFORM() ->
         [windows] يُمكن تغيير هذا من خيارات { -brand-short-name }.

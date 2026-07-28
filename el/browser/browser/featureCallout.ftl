@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Ρωτήστε το Perplexity
 perplexity-callout-secondary-label-1 = Απόρριψη
 perplexity-callout-secondary-label-2 = Το κατάλαβα
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Θέλετε να δοκιμάσετε μια νέα μηχανή αναζήτησης με έμφαση στο απόρρητο;
+start-page-callout-subtitle = Δοκιμάστε το Startpage. Έχει σχεδιαστεί για να διατηρεί εξαρχής τις αναζητήσεις σας πιο ιδιωτικές.
+start-page-callout-primary-label = Δοκιμή του Startpage
+start-page-callout-secondary-label = Απόρριψη
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Προστατέψτε τους κωδικού
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Εγγραφή
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Διατηρήστε τις αγαπημένες σας ροές στη γραμμή εργασιών
+taskbar-tabs-social-callout-subtitle = Εκκινήστε τους ιστοτόπους κοινωνικής δικτύωσης σαν εφαρμογές, σε ένα απλοποιημένο παράθυρο με προστασία από το { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Συνομιλία από τη γραμμή εργασιών
+taskbar-tabs-chat-callout-subtitle = Εκκινήστε τους ιστοτόπους συνομιλίας σαν εφαρμογές, σε ένα απλοποιημένο παράθυρο με προστασία από το { -brand-short-name }.
+taskbar-tabs-email-callout-title = Κρατήστε το email σας στη γραμμή εργασιών
+taskbar-tabs-email-callout-subtitle = Εκκινήστε τους ιστοτόπους ηλεκτρονικής αλληλογραφίας σαν εφαρμογές, σε ένα απλοποιημένο παράθυρο με προστασία από το { -brand-short-name }.
+taskbar-tabs-media-callout-title = Επιστρέψτε στη ροή από τη γραμμή εργαλείων
+taskbar-tabs-media-callout-subtitle = Εκκινήστε τους ιστοτόπους ροής σαν εφαρμογές, σε ένα απλοποιημένο παράθυρο με προστασία από το { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Προσθήκη αυτού του ιστοτόπου στη γραμμή εργασιών
+taskbar-tabs-value-prop-callout-subtitle = Εκκινήστε το σε δικό του παράθυρο με απλοποιημένο περιβάλλον χρήστη, με ένα μόνο κλικ.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Μην χάσετε ό,τι έχετε αποθηκεύσει κατά τη μεταφορά στα Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Κάντε συγχρονισμό τώρα για την προστασία και την εύκολη ανάκτηση των σελιδοδεικτών, των κωδικών πρόσβασης και των ρυθμίσεων του { -brand-short-name }.
+windows-10-eos-sync-urgency-title-2 = Αποχαιρετάτε τα Windows 10; Προστατέψτε τα δεδομένα σας κατά τη μετάβαση.
+windows-10-eos-sync-urgency-subtitle-2 = Ακόμα κι αν δεν χρησιμοποιείτε το { -brand-short-name } καθημερινά, κάντε συγχρονισμό για την προστασία και την εύκολη πρόσβαση στους σελιδοδείκτες και τους κωδικούς πρόσβασής σας.
+windows-10-eos-sync-new-device-title-1 = Μην ρισκάρετε να ξεκινήσετε από την αρχή στην επόμενη συσκευή σας.
+windows-10-eos-sync-new-device-subtitle-1 = Κάντε συγχρονισμό για να πάρετε μαζί σας τους σελιδοδείκτες, τους κωδικούς πρόσβασης και τις ρυθμίσεις του { -brand-short-name } όταν κάνετε τη μετάβαση.
+windows-10-eos-sync-new-device-title-2 = Κάνετε μετάβαση σε νέα συσκευή; Μην χάσετε ό,τι έχει σημασία.
+windows-10-eos-sync-new-device-subtitle-2 = Ανεξάρτητα από το πόσο συχνά χρησιμοποιείτε το { -brand-short-name }, ο συγχρονισμός προστατεύει τους σελιδοδείκτες, τους κωδικούς πρόσβασης και τις ρυθμίσεις σας.
+windows-10-eos-sync-new-device-primary-label = Συγχρονισμός τώρα
+windows-10-eos-sync-general-title-1 = Προστατέψτε το { -brand-short-name } που έχετε κάνει δικό σας.
+windows-10-eos-sync-general-subtitle-1 = Δημιουργήστε αντίγραφα ασφαλείας και συγχρονίστε τους κωδικούς πρόσβασης, τους σελιδοδείκτες, τις ρυθμίσεις και άλλα δεδομένα σας για να διατηρήσετε τα σημαντικά στοιχεία σας.
+windows-10-eos-sync-general-title-2 = Είναι η κατάλληλη στιγμή για να δημιουργήσετε αντίγραφα ασφαλείας των κωδικών πρόσβασης και των σελιδοδεικτών σας.
+windows-10-eos-sync-general-subtitle-2 = Κάντε συγχρονισμό για να προστατέψετε τα δεδομένα που αποθηκεύετε στο { -brand-short-name } και να τα ανακτήσετε οπουδήποτε, οποτεδήποτε.
+windows-10-eos-sync-tour-title-1 = Έχετε πάρα πολλές καρτέλες; Τακτοποιήστε τες με τις ομάδες καρτελών.
+windows-10-eos-sync-tour-subtitle-1 = Σύρετε τη μια καρτέλα πάνω στην άλλη για να δημιουργήσετε μια ομάδα και να οργανώσετε τις καρτέλες σας.
+windows-10-eos-sync-tour-title-2 = Οργανωθείτε για τα Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Συγχρονίστε τους σελιδοδείκτες, τους κωδικούς πρόσβασης και τις ρυθμίσεις σας για να δημιουργήσετε αντίγραφα ασφαλείας πριν από τη μετάβαση.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Εμφάνιση λιγότερων προτάσεων
+windows-10-eos-sync-dismiss-button-label = Απόρριψη
+windows-10-eos-sync-callout-primary-advance-button-label = Επόμενο
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Νέο: Κάντε κλικ παρατεταμένα για προεπισκόπηση συνδέσμων
+link-preview-onboarding-callout-description = Δείτε μια σύντομη περιγραφή, τον χρόνο ανάγνωσης και πολλά άλλα για να αποφασίσετε αν ένας ιστότοπος αξίζει το κλικ. Διαθέσιμο και μέσω δεξιού κλικ.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Περιορίστε τα περιττά στοιχεία με τις ομάδες καρτελών
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Ομαδοποιήστε τις καρτέλες σας κατά εργασία ή θέμα. Προσθέστε περισσότερα στοιχεία όσο περιηγείστε.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Έναρξη ομάδας
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Εμφάνιση τίτλων καρτελών στην πλαϊνή γραμμή
 sidebar-button-callout-subtitle = Χρησιμοποιήστε το κουμπί της πλαϊνής γραμμής για να αναπτύξετε την πλαϊνή γραμμή, ώστε να βλέπετε τους τίτλους καρτελών.
 sidebar-button-callout-vertical-tabs = Για να εμφανιστούν οι καρτέλες σας, επιλέξτε το κουμπί της πλαϊνής γραμμής στη γραμμή εργαλείων.
+sidebar-deprecation-callout-title = Η πλαϊνή γραμμή θα ενημερωθεί σύντομα
+sidebar-deprecation-callout-subtitle = Καταργούμε σταδιακά την έκδοση της πλαϊνής γραμμής που χρησιμοποιείτε. Δοκιμάστε την ενημερωμένη πλαϊνή γραμμή. Είναι ταχύτερη και σας παρέχει πρόσβαση σε περισσότερα εργαλεία.
+sidebar-deprecation-cta-button = Δοκιμή τώρα
 
 ## Sidebar Vertical Tabs Strings
 
@@ -163,7 +234,7 @@ sidebar-callout-survey-satisfied = Ικανοποιημένος/-η
 sidebar-callout-survey-neutral = Ουδέτερος/-η
 sidebar-callout-survey-dissatisfied-2 = Δυσαρεστημένος/-η
 sidebar-callout-survey-very-dissatisfied-2 = Πολύ δυσαρεστημένος/-η
-sidebar-callout-survey-dont-use-it = Δεν το χρησιμοποιώ
+sidebar-callout-survey-dont-use-it = Δεν τη χρησιμοποιώ
 sidebar-callout-survey-productive-question =
     Σε ποιο βαθμό συμφωνείτε ή διαφωνείτε με αυτήν τη δήλωση:<br/>
     «Η πλαϊνή γραμμή του { -brand-short-name } με βοηθά να γίνω πιο παραγωγικός/-ή»;
@@ -173,7 +244,7 @@ sidebar-callout-survey-disagree = Διαφωνώ
 sidebar-callout-survey-strongly-disagree = Διαφωνώ απόλυτα
 sidebar-callout-survey-features-question = Τα παρακάτω είναι πιθανές λειτουργίες της πλαϊνής γραμμής. Τι θα βελτίωνε περισσότερο την παραγωγικότητά σας στο { -brand-short-name };
 sidebar-callout-survey-split-view = Προβολή δύο οποιωνδήποτε ιστοτόπων ταυτόχρονα, σε διαιρεμένη προβολή δίπλα-δίπλα
-sidebar-callout-survey-keep-website-open = Διατηρήστε έναν ιστότοπο, όπως το email ή το ημερολόγιο, ανοικτό στην πλαϊνή γραμμή ενώ περιηγείστε
+sidebar-callout-survey-keep-website-open = Διατήρηση ενός ιστοτόπου, π.χ. με τα email ή τα ημερολόγιά σας, ανοικτού στην πλαϊνή γραμμή κατά την περιήγηση
 sidebar-callout-survey-saved-websites-2 = Γρήγορη πρόσβαση στους σελιδοδείκτες σας
 sidebar-callout-survey-none-of-above = Κανένα από τα παραπάνω
 sidebar-callout-survey-submit = Υποβολή
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Πόσο ικανοποιημένο
 sidebar-genai-survey-productive-question =
     Σε ποιο βαθμό συμφωνείτε ή διαφωνείτε με αυτήν τη δήλωση:<br/>
     «Με βοηθά το chatbot ΤΝ στην πλαϊνή γραμμή να είμαι πιο παραγωγικός/-ή»;
+splitview-onboarding-callout-title-1 = Διαχωρισμός προβολής: ένας καλύτερος τρόπος για πολλαπλές εργασίες ταυτόχρονα
+splitview-onboarding-callout-subtitle-1 = Κάντε δεξί κλικ σε αυτήν την καρτέλα και επιλέξτε «Έναρξη διαχωρισμού προβολής» για να δείτε δύο καρτέλες ταυτόχρονα.
+splitview-onboarding-callout-cta-1 = Δοκιμάστε το τώρα
+splitview-onboarding-callout-title-2 = Προβολή δύο καρτελών ταυτόχρονα με διαχωρισμό προβολής
+splitview-onboarding-callout-subtitle-2 = Χωρίς επιπλέον παράθυρα. Χωρίς αναστροφή καρτελών. Κάντε δεξί κλικ σε αυτήν την καρτέλα και επιλέξτε «Έναρξη διαχωρισμού προβολής».
+splitview-onboarding-callout-cta-2 = Δοκιμή διαχωρισμού προβολής
 unified-search-callout-title = Εναλλαγή μεταξύ μηχανών αναζήτησης
 unified-search-callout-subtitle = Επιλέξτε αυτή που λειτουργεί καλύτερα για τη συγκεκριμένη αναζήτηση.
 unified-search-callout-primary-label = Επόμενο
@@ -195,6 +272,6 @@ actions-callout-title = Ολοκληρώστε κοινές εργασίες ή 
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Δοκιμάστε να πληκτρολογήστε «εκτύπωση» για να εκτυπώσετε μια σελίδα ή «απαλοιφή» για να διαγράψετε το ιστορικό σας.

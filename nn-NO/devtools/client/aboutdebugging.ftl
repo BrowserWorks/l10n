@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Debugging - Runtime / { $selectedRunti
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = This { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = This { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = This { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Setup
+about-debugging-sidebar-setup-title =
+    .title = Setup
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -328,6 +336,15 @@ about-debugging-multiprocess-toolbox-name = Multiprocess Toolbox
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Main Process and Content Processes for the target browser
+about-debugging-message-error-icon =
+    .alt = Error icon
+about-debugging-message-info-icon =
+    .alt = Information icon
+about-debugging-message-warning-icon =
+    .alt = Warning icon
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Close message
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Close message
@@ -337,3 +354,5 @@ about-debugging-message-details-label-error = Error details
 about-debugging-message-details-label-warning = Warning details
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = Details
+about-debugging-sidebar =
+    .heading = Feilretting

@@ -1,0 +1,32 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+profile-selection-window =
+    .title = { -brand-short-name } - Valitse käyttäjäprofiili
+profile-selection-button-accept =
+    .label = Käynnistä { -brand-short-name }
+profile-selection-button-cancel =
+    .label = Lopeta
+profile-selection-new-button =
+    .label = Luo profiili…
+    .accesskey = L
+profile-selection-rename-button =
+    .label = Muuta nimeä…
+    .accesskey = M
+profile-selection-delete-button =
+    .label = Poista profiili…
+    .accesskey = o
+profile-selection-conflict-message = Toinen { -brand-product-name }-kopio on tehnyt muutoksia profiileihin. { -brand-short-name } täytyy käynnistää uudestaan ennen lisämuutosten tekemistä.
+
+## Messages used in the profile manager
+
+profile-manager-description = { -brand-short-name } säilyttää asetuksesi ja muut tiedot käyttäjäprofiilissasi.
+profile-manager-work-offline =
+    .label = Yhteydetön tila
+    .accesskey = Y
+profile-manager-use-selected =
+    .label = Käytä valittua profiilia aina käynnistettäessä
+    .accesskey = K
+profile-has-selectable-profiles-title = Profiilia, joka on linkitetty muihin profiileihin, ei voi poistaa
+profile-has-selectable-profiles-message = Voit poistaa tämän profiilin avaamalla sen ja valitsemalla { -brand-short-name }-valikon Profiilit-osiosta ”Hallitse profiileja”. Kun olet poistanut kaikki luomasi lisäprofiilit, voit palata about:profiles-sivulle ja poistaa tämän profiilin.

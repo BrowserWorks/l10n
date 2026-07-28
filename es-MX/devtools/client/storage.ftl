@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Agregar ítem
+storage-delete-all-button =
+    .title = Eliminar todo
 # Refresh button title
 storage-refresh-button =
     .title = Actualizar elementos
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Expira / Tiempo máximo
 storage-table-headers-cookies-size = Tamaño
 storage-table-headers-cookies-last-accessed = Último acceso
 storage-table-headers-cookies-creation-time = Creación
+storage-table-headers-cookies-update-time = Actualizado
 storage-table-headers-cache-status = Estado
 storage-table-headers-extension-storage-area = Área de almacenamiento
 
@@ -107,3 +110,11 @@ storage-idb-delete-blocked = La base de datos “{ $dbName }” será eliminada 
 # Variables:
 #   $dbName (String) - Name of the database
 storage-idb-delete-error = La base de datos “{ $dbName }” no pudo ser eliminada.
+# Error notification when cookie could not be created (e.g. because it's invalid).
+# Variables:
+#   $errorString (String) - Platform error message
+storage-cookie-create-error = No se pudo crear la cookie: “{ $errorString }”.
+# Error notification when cookie could not be edited (e.g. because it's invalid).
+# Variables:
+#   $errorString (String) - Platform error message
+storage-cookie-edit-error = No se pudo actualizar la cookie: “{ $errorString }”.

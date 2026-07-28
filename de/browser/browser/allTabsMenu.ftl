@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = Neuer Tab in Umgebung
 all-tabs-menu-hidden-tabs =
     .label = Ausgeblendete Tabs
+all-tabs-menu-close-duplicate-tabs =
+    .label = Doppelte Tabs schließen
+all-tabs-menu-view-all-tabs =
+    .label = Alle Tabs anzeigen
 all-tabs-menu-manage-user-context =
     .label = Tab-Umgebungen verwalten
     .accesskey = v
-all-tabs-menu-close-duplicate-tabs =
-    .label = Doppelte Tabs schließen
 all-tabs-menu-close-all-duplicate-tabs =
     .label = Alle doppelten Tabs schließen
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = Tab-Gruppen
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = Alle Tabs durchsuchen

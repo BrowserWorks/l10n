@@ -58,11 +58,11 @@ protections-panel-not-blocking-why-etp-off-tooltip-label =
 
 protections-panel-no-trackers-found =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } na této stránce nenalezl
-        [feminine] { -brand-short-name } na této stránce nenalezla
-        [neuter] { -brand-short-name } na této stránce nenalezlo
-       *[other] Aplikace { -brand-short-name } na této stránce nenalezla
-    } žádné známé sledovací prvky.
+        [masculine] { -brand-short-name } na této stránce nenalezl žádné známé sledovací prvky.
+        [feminine] { -brand-short-name } na této stránce nenalezla žádné známé sledovací prvky.
+        [neuter] { -brand-short-name } na této stránce nenalezlo žádné známé sledovací prvky.
+       *[other] Aplikace { -brand-short-name } na této stránce nenalezla žádné známé sledovací prvky.
+    }
 protections-panel-content-blocking-tracking-protection = Sledující obsah
 protections-panel-content-blocking-socialblock = Sledující prvky sociálních sítí
 protections-panel-content-blocking-cryptominers-label = Těžba kryptoměn
@@ -94,6 +94,11 @@ smartblock-placeholder-desc =
     }
 #  $websitehost (String): host of website with blocked content.
 smartblock-placeholder-button-text = Povolit na { $websitehost }
+# Caption shown above the original text and links extracted from a blocked
+# third-party embed (e.g. a Twitter/X or Instagram post) that SmartBlock has
+# replaced with a placeholder. The caption sits above a bordered content box
+# containing the extracted text.
+smartblock-placeholder-content-header = Obsah z blokovaného vloženého prvku
 
 ##
 
@@ -118,7 +123,7 @@ protections-panel-site-not-working-view-send-report = Poslat hlášení
 
 protections-panel-cross-site-tracking-cookies = Tyto cookies slouží k vašemu sledování napříč webovými stránkami a sběru dat o tom, co na internetu děláte. Používají je třetí strany jako jsou reklamní systémy nebo analytické společnosti.
 protections-panel-cryptominers = Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač.
-protections-panel-fingerprinters = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími servery a webovými stránkami.
+protections-panel-fingerprinters = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími weby.
 protections-panel-tracking-content = Webové stránky mohou načítat externí reklamy, videa a další obsah, který obsahuje sledovací kód. Po zablokování sledujícího obsahu se stránky načítají rychleji, ale některá tlačítka nebo formuláře nemusí správně fungovat.
 protections-panel-social-media-trackers = Sociální sítě umisťují na ostatní stránky sledovací prvky, pomocí kterých mohou sledovat, co na internetu děláte, vidíte a co si pouštíte. To umožňuje společnostem, které tato sociální média vlastní, dozvědět se o vás víc než jen to, co sdílíte na svých profilech.
 protections-panel-description-shim-allowed = Některé níže označené sledovací prvky byly na této stránce částečně povoleny, protože jste s nimi interagovali.

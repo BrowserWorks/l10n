@@ -203,3 +203,61 @@ bar-tooltip-cryptominer =
             [one] { $count } Heimlicher Digitalwährungsberechner (Krypto-Miner) ({ $percentage } %)
            *[other] { $count } Heimliche Digitalwährungsberechner (Krypto-Miner) ({ $percentage } %)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Schutz der Privatsphäre
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } diese Woche blockiert
+       *[other] { $count } diese Woche blockiert
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } Tracker
+       *[other] { $count } Tracker
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } Identifizierer (Fingerprinter)
+       *[other] { $count } Identifizierer (Fingerprinter)
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } Cookie zur Aktivitätenverfolgung
+       *[other] { $count } Cookies zur Aktivitätenverfolgung
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } sozialer Tracker
+       *[other] { $count } soziale Tracker
+    }
+privacy-metrics-empty = Diese Woche wurden keine Tracker blockiert. { -brand-short-name } schützt Sie beim Surfen vor den folgenden Bedrohungen.
+privacy-metrics-loading = Schutzmaßnahmen-Statistiken werden geladen…
+privacy-metrics-error = Schutzmaßnahmen können nicht geladen werden.
+privacy-metrics-private-window = { -brand-short-name } wird weiterhin Elemente zur Aktivitätenverfolgung in privaten Fenstern blockieren, aber nicht aufzeichnen, was blockiert wurde.
+
+## VPN promo card and banner
+
+protections-vpn-title = Bringt Datenschutz über den Browser hinaus
+protections-vpn-header-content = Schützen Sie Ihr gesamtes Gerät mit { -mozilla-vpn-brand-name }. Ein Klick verschlüsselt den gesamten Datenverkehr und verbirgt Ihren Standort.
+protections-get-vpn-link = Holen Sie sich { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Abonniert
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+        [one] Die Verwendung von { -mozilla-vpn-brand-name } verschlüsselt den gesamten Datenverkehr und verbirgt Ihren Standort – auf { $count } Gerät. Holen Sie das Beste aus Ihrem Abonnement heraus – holen Sie es sich aus dem <a data-l10n-name="playstore-link">Google Play Store</a> oder <a data-l10n-name="appstore-link">Apple App Store </a>.
+       *[other] Die Verwendung von { -mozilla-vpn-brand-name } verschlüsselt den gesamten Datenverkehr und verbirgt Ihren Standort – auf bis zu { $count } Geräten. Holen Sie das Beste aus Ihrem Abonnement heraus – holen Sie es sich aus dem <a data-l10n-name="playstore-link">Google Play Store</a> oder <a data-l10n-name="appstore-link">Apple App Store </a>.
+    }
+protections-vpn-banner-header = Schutz, der über den Browser hinausgeht
+protections-vpn-banner-content = Probieren Sie { -mozilla-vpn-brand-name } risikofrei aus und sehen Sie sich an, warum Techradar sagt: „Seine Geschwindigkeit, Benutzerfreundlichkeit und der niedrige monatliche Preis sind einen Blick wert.“
+protections-vpn-banner-link = Holen Sie sich { -mozilla-vpn-brand-name }

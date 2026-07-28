@@ -29,6 +29,7 @@ about-logging-no-log-modules = Καμία
 about-logging-no-log-file = Κανένα
 about-logging-logging-preset-selector-text = Προκαθορισμένη καταγραφή:
 about-logging-with-profiler-stacks-checkbox = Ενεργοποίηση ιχνών στοίβας για μηνύματα καταγραφής
+about-logging-with-javascript-tracing-checkbox = Ενεργοποίηση ιχνηλάτησης JavaScript
 about-logging-menu =
     .title = Σύνθετες επιλογές
 
@@ -51,6 +52,11 @@ about-logging-preset-webrtc-description = Μονάδες καταγραφής γ
 about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Μονάδες καταγραφής για τη διάγνωση ζητημάτων των κωδικοποιητών και των αποκωδικοποιητών ήχου και βίντεο WebCodecs, καθώς και των αποκωδικοποιητών εικόνας
 about-logging-preset-ml-label = Μηχανική μάθηση
+about-logging-preset-ml-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων μηχανικής μάθησης
+about-logging-preset-web-compat-label = Συμβατότητα ιστού
+about-logging-preset-web-compat-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων συμβατότητας ιστού
+about-logging-preset-navigation = Πλοήγηση
+about-logging-preset-navigation-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων πλοήγησης και ιστορικού συνεδρίας
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων WebGPU
 about-logging-preset-gfx-label = Γραφικά
@@ -97,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Κοιν�
 about-logging-upload-error = Προέκυψε σφάλμα κατά τη μεταφόρτωση του προφίλ: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Προέκυψε σφάλμα κατά την αποθήκευση του μεταφορτωμένου προφίλ: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Προέκυψε σφάλμα κατά την αποθήκευση του αρχείου: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Προφίλ { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Μεταφορτωμένα προφίλ
+about-logging-no-uploaded-profiles = Δεν έχει μεταφορτωθεί κανένα προφίλ ακόμα.
+about-logging-delete-uploaded-profile = Διαγραφή
+about-logging-view-uploaded-profile = Προβολή προφίλ
+about-logging-delete-profile-confirm-title = Διαγραφή προφίλ
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Θέλετε σίγουρα να διαγράψετε το προφίλ «{ $profileName }»; Δεν είναι δυνατή η αναίρεση αυτής της ενέργειας.
+about-logging-deleting-profile = Διαγραφή…

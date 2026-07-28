@@ -19,7 +19,7 @@ list-empty-get-language-packs-message = Téléchargez des paquetages linguistiqu
 list-empty-installed =
     .value = Vous n’avez aucun module de ce type installé
 list-empty-available-updates =
-    .value = Aucune mise à jour trouvée
+    .value = Aucune mise à jour disponible
 list-empty-recent-updates =
     .value = Vous n’avez pas mis à jour vos modules complémentaires depuis un certain temps
 list-empty-find-updates =
@@ -119,7 +119,9 @@ private-browsing-description2 =
     { -brand-short-name } ne s’exécutera par défaut dans une fenêtre privée. Si vous ne le permettez pas dans les paramètres, 
     l’extension ne fonctionnera pas en navigation privée et n’aura pas accès à vos activités en ligne.
     Nous avons apporté cette modification pour que votre navigation privée reste confidentielle.
-    <label data-l10n-name="private-browsing-learn-more"> Découvrez comment gérer les paramètres d’extension.</ label>
+    <label data-l10n-name="private-browsing-learn-more"> Découvrez comment gérer les paramètres d’extension.</label>
+aboutaddons-sidebar =
+    .heading = Modules complémentaires
 addon-category-discover = Recommandations
 addon-category-discover-title =
     .title = Recommandations
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Activer
 extensions-warning-imported-addons2 =
     .message = Veuillez terminer l’installation des extensions qui ont été importées dans { -brand-short-name }.
 extensions-warning-imported-addons-button = Installer les extensions
+extensions-warning-safe-mode3 =
+    .message = Tous les modules complémentaires ont été désactivés par le mode de dépannage.
 
 ## Strings connected to add-on updates
 
@@ -278,6 +282,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } a mis à jour sa collection de coloris. Nous avons supprimé la ou les anciennes versions de votre liste « Thèmes enregistrés ». Obtenez les nouvelles versions sur le site des modules complémentaires.
 colorway-removal-notice-learn-more = En savoir plus
 colorway-removal-notice-button = Obtenir des thèmes de coloris mis à jour
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Les paramètres de contraste Windows prennent le dessus sur les thèmes de { -brand-short-name }. Désactivez ces paramètres pour utiliser les thèmes dans { -brand-short-name }.
 privacy-policy = Politique de confidentialité
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -457,11 +465,18 @@ available-updates-heading = Mises à jour disponibles
 recent-updates-heading = Mises à jour récentes
 release-notes-loading = Chargement…
 release-notes-error = Désolé, une erreur s’est produite lors du chargement des notes de version.
+addon-permissions-heading = Permissions
 addon-permissions-empty2 = Cette extension ne nécessite aucune autorisation.
+addon-permissions-required-label = Obligatoires :
+addon-permissions-optional-label = Facultatives :
 addon-permissions-empty = Cette extension ne nécessite aucune autorisation
 addon-permissions-required = Autorisations nécessaires pour les fonctionnalités de base :
 addon-permissions-optional = Autorisations facultatives pour des fonctionnalités supplémentaires :
 addon-permissions-learnmore = En savoir plus à propos des autorisations
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Certaines permissions sont gérées par votre organisation.
 recommended-extensions-heading = Extensions recommandées
 recommended-themes-heading = Thèmes recommandés
 # Variables:
@@ -516,9 +531,15 @@ details-notification-hard-blocked-other =
     .message = Ce module complémentaire est bloqué, car il enfreint les politiques de BrowserWorks et a été désactivé.
 details-notification-unsigned-link = Plus d’informations
 details-notification-blocked = { $name } a été désactivé suite à des problèmes de sécurité ou de stabilité.
-details-notification-blocked2 =
-    .message = { $name } a été désactivé suite à des problèmes de sécurité ou de stabilité.
 details-notification-blocked-link2 = Afficher les détails
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Cette extension est soumise à des restrictions et a été désactivée. Vous pouvez l’activer, mais son utilisation comporte des risques.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Cette extension est soumise à des restrictions. Son utilisation comporte des risques.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Ce module complémentaire est soumis à des restrictions et a été désactivé. Vous pouvez l’activer, mais son utilisation comporte des risques.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Ce module est soumis à des restrictions. Son utilisation comporte des risques.
 details-notification-soft-blocked-extension-disabled =
     .message = Cette extension est restreinte, car elle enfreint les politiques de BrowserWorks et a été désactivée. Vous pouvez l’activer, mais son utilisation comporte des risques.
 details-notification-soft-blocked-extension-enabled =
@@ -530,8 +551,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Afficher les détails
 details-notification-blocked-link = Plus d’informations
 details-notification-softblocked = { $name } est connu pour poser des problèmes de sécurité ou de stabilité.
-details-notification-softblocked2 =
-    .message = { $name } est connu pour poser des problèmes de sécurité ou de stabilité.
 details-notification-softblocked-link = Plus d’informations
 details-notification-gmp-pending = { $name } sera bientôt installé.
 details-notification-gmp-pending2 =
@@ -557,6 +576,10 @@ permissions-data-addon-button = Autorisations et données
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Utilisé par l’extension { $extensionName }
+addon-permissions-data-collection-heading = Collecte de données
+addon-permissions-data-collection-empty = Le développeur indique que cette extension n’a pas besoin de collecter de données.
+addon-data-collection-provided = Informations fournies par le développeur de l’extension
+addon-data-collection-learnmore = En savoir plus sur la collecte de données
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -565,11 +588,12 @@ mlmodel-link-preview = { -brand-short-name } l’utilise pour générer des poin
 mlmodel-pdfjs = { -brand-short-name } l’utilise pour créer le texte alternatif des images que vous ajoutez aux fichiers PDF
 mlmodel-smart-tab-topic-engine = { -brand-short-name } l’utilise pour suggérer les noms de vos groupes d’onglets
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } l’utilise pour suggérer des onglets à ajouter à vos groupes d’onglets
+mlmodel-formfill-engine = { -brand-short-name } l’utilise pour remplir les formulaires d’adresses
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = IA sur l’appareil
 addon-category-mlmodel-title =
     .title = IA sur l’appareil
-mlmodel-heading = Gérer les modèles d’IA sur l’appareil
+mlmodel-heading = Gestion des modèles d’IA sur l’appareil
 mlmodel-description = Certaines fonctionnalités et extensions de { -brand-short-name } s’appuient sur des modèles d’IA qui fonctionnent localement sur votre appareil. Cette approche protège votre vie privée et, dans de nombreux cas, améliore les performances. <a data-l10n-name="learn-more">En savoir plus</a>
 # Label for button that when clicked removed local model
 mlmodel-remove-addon-button =

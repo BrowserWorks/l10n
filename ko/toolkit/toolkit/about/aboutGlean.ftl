@@ -20,6 +20,7 @@ about-glean-category-manual-testing = 수동 테스트
 about-glean-category-adhoc-testing = Ad Hoc 테스트
 about-glean-category-profiler = 프로파일러 사용
 about-glean-category-about-data = 데이터 정보
+about-glean-category-metrics-table = 메트릭 표
 about-glean-upload-enabled = 데이터 업로드가 활성화되었습니다.
 about-glean-upload-disabled = 데이터 업로드가 비활성화되었습니다.
 about-glean-upload-enabled-local = 데이터 업로드는 로컬 서버로 전송하는 경우에만 활성화됩니다.
@@ -139,6 +140,71 @@ about-glean-about-data-list-item-debug-ping-viewer =
 about-glean-about-data-list-item-firefox-profiler =
     성능 프로필을 기록하고 기록된 모든 메트릭을 보려면,
     <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a>를 사용하세요.
+about-glean-metrics-table-header = 모든 메트릭
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = 분류
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = 이름
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = 유형
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = 값
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = 동작
+about-glean-metrics-table-settings-button = 설정
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = 메트릭 표 설정
+about-glean-metrics-table-settings-category-general = 일반
+about-glean-metrics-table-settings-hide-empty-value-rows = 빈 값 행 숨기기
+about-glean-metrics-table-settings-category-visualizations = 시각화
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = 예
+about-glean-metrics-table-settings-category-visualizations-histogram = 히스토그램
+about-glean-metrics-table-settings-histograms-chart-max = 차트 최대 높이
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = 배율 조정된 최대 높이
+about-glean-metrics-table-settings-histograms-box-padding = 박스 패딩
+about-glean-metrics-table-settings-histograms-chart-padding = 차트 패딩
+about-glean-metrics-table-settings-histograms-left-padding = 추가 왼쪽 패딩
+about-glean-metrics-table-settings-category-visualizations-timeline = 타임라인
+about-glean-metrics-table-settings-timelines-height = 높이
+about-glean-metrics-table-settings-timelines-width = 너비
+about-glean-metrics-table-settings-timelines-chart-padding = 차트 패딩
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = 원 반지름
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Y축 X 오프셋
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Y축 Y 오프셋
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = 필터
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = 분류, 이름, 유형, 값 (단순 형식인 경우)에 따라 아래의 표가 필터링 됩니다.
+about-glean-button-load-all = 모든 값 로드
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = 데이터 내보내기
+about-glean-button-load-value = 로드
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = 문서
+about-glean-button-watch = 조사
+# Meaning "to stop watching"
+about-glean-button-unwatch = 조사 해제
+about-glean-no-data-to-display = 표시할 데이터가 없습니다.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = <code>DualLabeledCounter</code> 메트릭은 <code>about:glean</code> 보기에서 아직 지원되지 않습니다.
+about-glean-unknown-metric-type-warning = 알 수 없는 메트릭 유형입니다.
 about-glean-about-data-explanation =
     수집된 데이터 목록을 찾아보려면 
     <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 사전</a>을 참조하세요.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = 내장 Ping
+about-glean-ping-list-optgroup-custom =
+    .label = 사용자 지정 핑

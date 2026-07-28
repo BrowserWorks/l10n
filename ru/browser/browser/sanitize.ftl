@@ -30,7 +30,7 @@ sanitize-on-shutdown-description = Автоматически удалять в�
 ## Time range to clear: (Last Hour, Today, etc.)
 
 clear-time-duration-prefix =
-    .value = Удалить:
+    .value = Диапазон времени для очистки:{ " " }
     .accesskey = т
 clear-time-duration-prefix2 =
     .value = Период:
@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Журнал посещений и загрузок
     .accesskey = п
 item-history-and-downloads-description2 = Очищает историю страниц и загрузок
-item-history-form-data-downloads =
-    .label = Журнал
-    .accesskey = Р
-item-history-form-data-downloads-description = Удаляет историю сайтов и загрузок, информацию сохранённых форм и поисковые запросы
 item-cookies =
     .label = Куки
     .accesskey = у
@@ -92,7 +88,7 @@ item-cached-content-with-size =
 item-cached-content =
     .label = Временные кешированные файлы и страницы
     .accesskey = а
-item-cached-content-description = Удаляет элементы, что помогает сайтам загружаться быстрее
+item-cached-content-description = Удаляет элементы, которые помогают сайтам загружаться быстрее
 item-form-search-history =
     .label = Журнал форм и поиска
     .accesskey = ф
@@ -132,3 +128,6 @@ sanitize-everything-warning = Вся история будет удалена.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Данные всех выделенных пунктов будут удалены.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Вычисление…

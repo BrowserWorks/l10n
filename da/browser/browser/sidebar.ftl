@@ -6,6 +6,11 @@ menu-view-genai-chat =
     .label = AI-Chatbot
 menu-view-contextual-password-manager =
     .label = Adgangskoder
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Åbne faneblade
 sidebar-options-menu-button =
     .title = Åbn menu
 
@@ -30,6 +35,8 @@ sidebar-history-delete =
     .title = Slet fra historik
 sidebar-history-clear =
     .label = Ryd historik
+sidebar-history-sort-by-heading-menucaption =
+    .label = Sorter efter:
 sidebar-history-sort-by-heading = Sorter efter:
 sidebar-history-sort-option-date =
     .label = Dato
@@ -56,6 +63,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Håndter { -brand-short-name }- indstillinger
 sidebar-vertical-tabs =
     .label = Lodrette faneblade
+sidebar-settings2 =
+    .label = Indstillinger
 sidebar-settings =
     .label = Sidepanels-indstillinger
 sidebar-hide-tabs-and-sidebar =
@@ -68,6 +77,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Udvid sidepanel, når markøren holdes over
+sidebar-manage-extensions2 = Håndter alle udvidelser
+sidebar-customize-extensions-header2 = Udvidelser
+sidebar-customize-firefox-tools-header2 =
+    .label = Funktioner
 
 ## Labels for sidebar context menu items
 
@@ -101,6 +114,10 @@ sidebar-context-menu-customize-sidebar =
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =
     .label = Luk fanebladet på { $deviceName }
+sidebar-context-menu-remove-extension2 =
+    .label = Fjern fra { -brand-short-name }
+sidebar-context-menu-unpin-extension =
+    .label = Fjern fra sidepanel
 
 ## Labels for sidebar history context menu items
 
@@ -111,6 +128,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Slet sider fra historik
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Rediger bogmærke…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Slet bogmærke
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Slet
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -119,6 +145,11 @@ sidebar-menu-history-label =
     .label = Historik
 sidebar-menu-synced-tabs-label =
     .label = Faneblade fra andre enheder
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Åbne faneblade
 sidebar-menu-bookmarks-label =
     .label = Bogmærker
 sidebar-menu-customize-label =
@@ -165,16 +196,36 @@ sidebar-menu-history-header =
     .heading = Historik
 sidebar-menu-syncedtabs-header =
     .heading = Faneblade fra andre enheder
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Åbne faneblade
 sidebar-menu-cpm-header =
     .heading = Adgangskoder
+sidebar-menu-bookmarks-header =
+    .heading = Bogmærker
 sidebar-panel-header-close-button =
     .tooltiptext = Luk
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Bogmærke-menuen
+sidebar-bookmarks-folder-toolbar = Bogmærkelinje
+sidebar-bookmarks-folder-other = Andre bogmærker
+sidebar-bookmarks-folder-mobile = Mobil-bogmærker
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Tilpas sidepanel
 sidebar-history-title = Historik
 sidebar-syncedtabs-title = Faneblade fra andre enheder
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Åbne faneblade
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Fastgjorte faneblade
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -210,3 +261,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Skjul sidepanel ({ $shortcut })
     .label = Sidepaneler
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Træk vigtige faneblade her hen for at have dem inden for rækkevidde

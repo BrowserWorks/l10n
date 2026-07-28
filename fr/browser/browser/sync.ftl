@@ -20,6 +20,29 @@ fxa-menu-connect-another-device =
     .label = Connecter un autre appareil…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Envoyer à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Envoyer à un mobile
+           *[other] Envoyer { $tabCount } onglets à un mobile
+        }
+fxa-menu-send-to-mobile-device-missing2 = Vous ne voyez pas votre appareil ?
+fxviewtabrow-send-to-mobile-not-verified = Compte non confirmé
+fxviewtabrow-send-to-mobile-verify-account = Confirmer votre compte
+fxa-menu-send-to-mobile-turn-on-sync = Activez la synchronisation pour envoyer des onglets
+fxa-menu-send-to-mobile-connect-device = Connectez un appareil pour envoyer des onglets
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
@@ -33,7 +56,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Envoyez instantanément un onglet sur n’importe quel appareil où vous êtes connecté·e.
 fxa-menu-sign-out =
     .label = Se déconnecter…
-fxa-menu-sync-title = Synchronisation
 fxa-menu-sync-description = Accédez à votre Web où que vous soyez
 fxa-avatar-sign-in = Connexion
 fxa-avatar-sign-up = Créer un compte
@@ -47,6 +69,10 @@ sync-setup-verify-heading = Voulez-vous vraiment vous connecter pour synchronise
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Un autre utilisateur s’est déjà connecté à la synchronisation sur cet ordinateur. Vous connecter fusionnera les marque-pages, mots de passe et autres paramètres de ce navigateur avec { $email }
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Connectez-vous pour envoyer des onglets
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

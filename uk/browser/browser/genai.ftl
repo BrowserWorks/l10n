@@ -63,6 +63,9 @@ genai-menu-remove-provider =
     .label = Вилучити { $provider }
 genai-menu-remove-sidebar =
     .label = Вилучити з бічної панелі
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Запитати в { $provider }
 genai-menu-new-badge = Нове
 genai-menu-summarize-page = Підсумувати вміст сторінки
 genai-input-ask-generic =
@@ -107,6 +110,8 @@ genai-menu-no-provider-2 =
 genai-chatbot-title = Чат-бот з ШІ
 genai-header-provider-menu =
     .title = Вибір чат-бота
+genai-header-settings-button =
+    .title = Налаштування чату з ШІ
 genai-header-options-button =
     .title = Відкрити меню
 genai-header-close-button =
@@ -224,11 +229,11 @@ link-preview-reading-time =
        *[many] { $range } хв читання
     }
 # Error message displayed when a link preview cannot be generated
-link-preview-error-message = Перегляд цього посилання недоступний
+link-preview-error-message-v2 = { -brand-short-name } не може переглянути це посилання
 # Text for the link to visit the original URL when in error state
 link-preview-visit-link = Відвідати посилання
-# Error message when we can't generate key points (summary highlights or main ideas of page content) for a page
-link-preview-generation-error-missing-data = Неможливо створити ключові тези для цієї вебсторінки.
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } не може згенерувати ключові тези для цієї вебсторінки.
 # Error message when something went wrong during key point generation
 link-preview-generation-error-unexpected = Щось пішло не так.
 # Text for the retry link when generation fails
@@ -264,3 +269,7 @@ link-preview-setup-faster-next-time = Наступного разу ви поб�
 link-preview-onboarding-button = Відкрити перегляд
 # Onboarding card Close button
 link-preview-onboarding-close = Закрити
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Початкові налаштування
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Це може потребувати трохи часу. Наступного разу ви побачите ключові пункти швидше.

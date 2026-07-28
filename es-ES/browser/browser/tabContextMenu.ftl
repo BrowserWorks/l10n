@@ -79,6 +79,10 @@ move-to-end =
 move-to-new-window =
     .label = Mover a una nueva ventana
     .accesskey = V
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Mover a { $profileName }
 tab-context-close-multiple-tabs =
     .label = Cerrar múltiples pestañas
     .accesskey = m
@@ -126,6 +130,28 @@ tab-context-move-tabs =
            *[other] Mover pestañas
         }
     .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Enviar a dispositivo
+            [one] Enviar { $tabCount } pestaña a dispositivo
+           *[other] Enviar { $tabCount } pestañas a dispositivo
+        }
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Enviar al móvil
+            [one] Enviar { $tabCount } pestaña al móvil
+           *[other] Enviar { $tabCount } pestañas al móvil
+        }
+    .accesskey = n
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Crear enlace para compartir
+    .accesskey = a
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

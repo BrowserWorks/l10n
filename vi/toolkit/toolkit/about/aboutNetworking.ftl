@@ -12,6 +12,13 @@ about-networking-dns-trr-url = URL DoH
 about-networking-dns-trr-mode = Chế độ DoH
 about-networking-dns-suffix = Hậu tố DNS
 about-networking-websockets = WebSocket
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Origin
+about-networking-alt-svc-alternate = Alternate
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Đã xác thực
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isolation Key
 about-networking-refresh = Cập nhật
 about-networking-auto-refresh = Tự tải lại sau 3 giây
 about-networking-hostname = Tên máy chủ
@@ -39,6 +46,7 @@ about-networking-dns-lookup = Tra cứu DNS
 about-networking-dns-lookup-button = Xem
 about-networking-dns-domain = Tên miền:
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RRs
 about-networking-dns-https-rr-lookup-table-column = HTTP RRs
 about-networking-rcwn = Chỉ số RCWN
 about-networking-rcwn-status = Trạng thái RCWN
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Trang này đã được chuyển đến 
 
 about-networking-networkid-is-up = Liên kết hoạt động
 about-networking-networkid-status-known = Tình trạng liên kết đã biết
-
-##
-

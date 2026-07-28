@@ -59,6 +59,20 @@ about-processes-inference-process = 推理进程{ $pid }
 #    $type (String) The raw type for this process.
 about-processes-unknown-process = 其他：{ $type }（{ $pid }）
 
+## Properties of isolated web processes
+
+about-processes-web-isolated-property-private = 隐私窗口
+about-processes-web-isolated-property-serviceworker = serviceworker
+about-processes-web-isolated-property-jit-disabled = JIT 已禁用
+about-processes-web-isolated-property-with-coop-coep = 跨源隔离
+
+## Isolated process names
+## Variables:
+##    $origin (String) The domain name for this process.
+##    $properties (String) A formatted list of properties from the above strings.
+
+about-processes-web-isolated-process2 = { $origin } ({ $properties })
+
 ## Isolated process names
 ## Variables:
 ##    $pid (String) The process id of this process, assigned by the OS.
@@ -128,6 +142,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation 媒体�
 about-processes-utility-actor-js-oracle = Oracle
 about-processes-utility-actor-windows-utils = Windows 工具
 about-processes-utility-actor-windows-file-dialog = Windows 文件对话框
+about-processes-utility-actor-pkcs11-module = 安全模块助手
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -180,7 +195,7 @@ duration-unit-d = d
 
 ## Memory units
 
-memory-unit-B =  字节
+memory-unit-B = 字节
 memory-unit-KB = KB
 memory-unit-MB = MB
 memory-unit-GB = GB

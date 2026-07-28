@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = คัดลอกลิงก์แบบสะอาด
     .accesskey = ส
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = คัดลอกโดยไม่ติดตามไซต์
-    .accesskey = n
 text-action-paste =
     .label = วาง
     .accesskey = ว
@@ -53,7 +48,7 @@ text-action-select-all =
 text-action-select-all-shortcut =
     .key = A
 text-action-spell-no-suggestions =
-    .label = ไม่มีข้อเสนอแนะการสะกดคำ
+    .label = ไม่มีคำแนะนำการสะกดคำ
 text-action-spell-add-to-dictionary =
     .label = เพิ่มไปยังพจนานุกรม
     .accesskey = ไ
@@ -73,6 +68,9 @@ text-action-search-text-box-clear =
     .title = ล้าง
 text-action-highlight-selection =
     .label = เน้นสีส่วนที่เลือก
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = เพิ่มความคิดเห็นลงในส่วนที่เลือก
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
@@ -82,6 +80,10 @@ text-action-copy-link-to-highlight =
 # and it strips trackers etc.
 text-action-copy-clean-link-to-highlight =
     .label = คัดลอกลิงก์แบบสะอาดลงในส่วนที่เน้นไว้
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = เอาการเน้นสีออก
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =

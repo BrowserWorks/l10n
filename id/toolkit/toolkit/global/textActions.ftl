@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = Salin Tautan Bersih
     .accesskey = B
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = Salin Tanpa Pelacakan Situs
-    .accesskey = p
 text-action-paste =
     .label = Tempel
     .accesskey = p
@@ -73,6 +68,9 @@ text-action-search-text-box-clear =
     .title = Bersihkan
 text-action-highlight-selection =
     .label = Sorot Pilihan
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = Tambahkan Komentar ke Pilihan
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
@@ -84,5 +82,12 @@ text-action-copy-clean-link-to-highlight =
     .label = Salin Tautan ke Sorotan
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = Hapus Sorotan
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = Hapus Semua Sorotan
+profile-window-menu-edit =
+    .label = Sunting
+    .accesskey = S

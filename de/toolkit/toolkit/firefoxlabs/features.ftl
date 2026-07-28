@@ -25,14 +25,18 @@ experimental-features-group-webpage-display =
     .label = Anzeige von Webseiten
 experimental-features-group-customize-browsing =
     .label = Passen Sie Ihr Surfen an
+experimental-features-group-productivity =
+    .label = Produktivität
+experimental-features-group-newtab-widgets =
+    .label = Widgets auf { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Passwörter in der Sidebar
 experimental-features-contextual-password-manager-description = Greifen Sie direkt aus der Sidebar auf Ihre Passwörter zu. Kein Suchen oder Zurücksetzen von Passwörtern mehr bei der Anmeldung. Um diese Funktion zu nutzen, wählen Sie in der Sidebar Passwörter aus. Gehen Sie dann zu den allgemeinen Einstellungen und wählen Sie unter Browser-Layout die Option "Sidebar anzeigen". Passen Sie dann die Sidebar an, indem Sie Passwörter auswählen. Wenn Sie es ausprobieren, <a data-l10n-name="connect">sagen Sie uns Ihre Meinung</a>.
 # New Tab Custom Wallpapers
 experimental-features-custom-wallpaper =
-    .label = Ein benutzerdefiniertes Hintergrundbild oder eine Farbe für einen neuen Tab wählen
-experimental-features-custom-wallpaper-description = Laden Sie Ihr eigenes Hintergrundbild hoch oder wählen Sie eine benutzerdefinierte Farbe für den Hintergrund für neue Tabs.
+    .label = Ein benutzerdefiniertes Hintergrundbild oder eine Farbe für die Waterfox-Startseite wählen
+experimental-features-custom-wallpaper-description = Laden Sie Ihr eigenes Hintergrundbild hoch oder wählen Sie eine benutzerdefinierte Farbe für den Hintergrund Ihrer Waterfox-Startseite.
 # Link Previews with AI
 experimental-features-link-previews =
     .label = Link-Vorschau
@@ -49,5 +53,53 @@ experimental-features-link-previews-description-no-ai =
     }
 # New Tab Sections with follow and block
 experimental-features-newtab-sections-follow-block =
-    .label = Themenbereiche und Folgen/Blockieren für Geschichten unter Neuer Tab
-experimental-features-newtab-sections-follow-block-description = Gliedern Sie die Geschichten auf Ihrer Neuer-Tab-Seite in Themenbereiche (Sport, Essen, Unterhaltung, etc.), für ein strukturierteres und übersichtlicheres Erlebnis. Verwenden Sie unsere neuen Einstellungsmöglichkeiten "Folgen" und "Blockieren", um anzupassen, welche Inhalte Sie sehen. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+    .label = Themenbereiche und Folgen/Blockieren für Artikel auf der Waterfox-Startseite
+experimental-features-newtab-sections-follow-block-description = Gliedern Sie die Artikel auf Ihrer Waterfox-Startseite in Themenbereiche (Sport, Essen, Unterhaltung, etc.), für ein strukturierteres und übersichtlicheres Erlebnis. Verwenden Sie unsere neuen Einstellungsmöglichkeiten "Folgen" und "Blockieren", um anzupassen, welche Inhalte Sie sehen. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Websites zur Taskleiste hinzufügen
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Öffnen Sie Websites, die Sie häufig besuchen, als Web-App aus Ihrer Taskleiste. Suchen Sie nach dem Symbol "Tab zur Taskleiste hinzufügen" rechts von der Adressleiste, um die Website in einem optimierten Fenster und mit allen Schutzmaßnahmen von { -brand-product-name } zu öffnen. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Listen auf { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Listen
+experimental-features-newtab-widget-lists-description = Rufen Sie sich Ihre Aufgabenliste ins Gedächtnis, jedes Mal wenn Sie die Waterfox-Startseite öffnen. Von Checklisten bis hin zu Einkaufslisten: Machen Sie ihre Pläne in { -brand-product-name }. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Timer bei { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Timer
+experimental-features-newtab-widget-timer-description = Stellen Sie einen Timer ein, damit Sie konzentriert bleiben, auf Kurs bleiben oder daran erinnert werden, neue Energie zu tanken.<a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Listen und Timer auf { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Rufen Sie sich Ihre Aufgabenliste ins Gedächtnis, jedes Mal wenn Sie die Waterfox-Startseite öffnen. Von Checklisten bis hin zu Einkaufslisten: Machen Sie ihre Pläne in { -brand-product-name }. Stellen Sie sich einen Wecker, um am Ball zu bleiben, konzentriert zu arbeiten, oder um regelmäßig neue Energie zu tanken. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Wettervorhersagen
+experimental-features-newtab-widget-weather-description = Verschaffen Sie sich mit stündlichen Vorhersagen einen Überblick über das heutige Wetter. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Bild des Tages
+experimental-features-newtab-widget-picture-of-the-day-description = Fügen Sie Ihrem Tag ein kleines tägliches Wunder hinzu. Sehen Sie ein neues Bild, erfahren Sie etwas Interessantes und legen Sie im Handumdrehen ein neues Hintergrundbild fest. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Uhren
+experimental-features-newtab-widget-clocks-description = Fügen Sie bis zu vier Uhren mit benutzerdefinierten Namen hinzu, um die Zeit an Orten anzuzeigen, die für Sie wichtig sind. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Semantische Chroniksuche
+experimental-features-semantic-history-search-description = Verwenden Sie ein lokales Machine-Learning-Modell, um Einträge aus der Chronik, die sich auf Ihre Suchanfragen beziehen, basierend auf dem Verständnis natürlicher Sprache in der { -brand-product-name }-Adressleiste vorzuschlagen. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Tab-Notizen
+experimental-features-tab-notes-description = Tab-Notizen sind eine experimentelle Funktion, mit der Sie Ihren Browser-Tabs Notizen hinzufügen können. Notieren Sie den Kontext, Erinnerungen oder die nächsten Schritte, damit Sie wiederkommen und sich merken können, warum Sie sie geöffnet haben. Wir würden uns über Ihr Feedback freuen, da wir diese Funktion weiter verbessern. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Optimiertes Tab-Menü
+experimental-features-tab-context-menu-description = Sehen Sie ein einfacheres Kontextmenü nach einem Rechtsklick auf einen Tab. Es wurde entwickelt, um häufige Aktionen einfacher zu finden. <a data-l10n-name="connect">Sagen Sie uns Ihre Meinung</a>

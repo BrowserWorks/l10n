@@ -20,7 +20,7 @@ styleeditor-save-button = Αποθήκευση
     .accesskey = Α
 styleeditor-options-button =
     .tooltiptext = Επιλογές επεξεργασίας στυλ
-styleeditor-at-rules = Κανόνες «At»
+styleeditor-at-rules = Κανόνες @
 styleeditor-editor-textbox =
     .data-placeholder = Πληκτρολογήστε CSS εδώ.
 styleeditor-no-stylesheet = Αυτή η σελίδα δεν έχει φύλλο στυλ.
@@ -54,3 +54,7 @@ styleeditor-pretty-print-button =
 # Title for the pretty print button in the editor footer, when it's disabled
 styleeditor-pretty-print-button-disabled =
     .title = Η μορφοποίηση μπορεί να γίνει μόνο σε αρχεία CSS
+# Title for the pretty print button in the editor footer, when it's disabled because
+# the stylesheet is read-only
+styleeditor-pretty-print-button-disabled-read-only =
+    .title = Δεν είναι δυνατή η ωραιοποιημένη εκτύπωση φύλλου μορφοποίησης μόνο για ανάγνωση.

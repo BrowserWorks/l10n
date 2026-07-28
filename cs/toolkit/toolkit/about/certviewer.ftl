@@ -36,15 +36,22 @@ certificate-viewer-key-size = Velikost klíče
 certificate-viewer-inc-locality = Místo zápisu organizace
 certificate-viewer-locality = Region
 certificate-viewer-location = Umístění
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Název protokolu
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID protokolu
 certificate-viewer-method = Metoda
 certificate-viewer-modulus = Modul
 certificate-viewer-name = Název
+certificate-viewer-surname = Příjmení
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Křestní jméno
 certificate-viewer-not-after = Platnost do
 certificate-viewer-not-before = Platnost od
 certificate-viewer-organization = Organizace
 certificate-viewer-organizational-unit = Jednotka organizace
-certificate-viewer-policy = Zásady
+certificate-viewer-policy = Pravidlo
 certificate-viewer-protocol = Protokol
 certificate-viewer-public-value = Veřejná hodnota
 certificate-viewer-purposes = Účel
@@ -60,7 +67,7 @@ certificate-viewer-sha-256 = SHA-256
 certificate-viewer-serial-number = Sériové číslo
 certificate-viewer-signature-algorithm = Algoritmus podpisu
 certificate-viewer-signature-scheme = Schéma podpisu
-certificate-viewer-timestamp = Časová značka
+certificate-viewer-timestamp = Časové razítko
 certificate-viewer-value = Hodnota
 certificate-viewer-version = Verze
 certificate-viewer-business-category = Druh společnosti
@@ -80,7 +87,7 @@ certificate-viewer-authority-key-id = ID klíče autority
 certificate-viewer-authority-info-aia = Informace o autoritě (AIA)
 certificate-viewer-certificate-policies = Pravidla certifikátu
 certificate-viewer-embedded-scts = Vložené SCTs
-certificate-viewer-crl-endpoints = CRL endpointy
+certificate-viewer-crl-endpoints = Koncové body pro CRL
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = Stáhnout
@@ -98,7 +105,7 @@ certificate-viewer-boolean =
 
 certificate-viewer-download-pem = PEM (certifikát)
     .download = { $fileName }.pem
-certificate-viewer-download-pem-chain = PEM (řetězec)
+certificate-viewer-download-pem-chain = PEM (řetěz)
     .download = { $fileName }-chain.pem
 # The title attribute for Critical Extension icon
 certificate-viewer-critical-extension =
@@ -110,6 +117,8 @@ certificate-viewer-export = Exportovat
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (neznámý)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = certifikát
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

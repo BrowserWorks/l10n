@@ -33,11 +33,33 @@ perftools-description-local-build =
     Om du profilerar ett bygge som du själv har sammanställt, på denna
     maskin, lägg till din bygg-objdir i listan nedan så att
     den kan användas för att slå upp symbolinformation.
+perftools-pick-local-build-directory = Välj byggkatalog
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = Samplingsintervall:
 perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -153,12 +175,13 @@ perftools-presets-ml-label = Maskininlärning
 perftools-presets-ml-description2 = Förinställd för att undersöka maskininlärningsbuggar i { -brand-shorter-name }.
 perftools-presets-networking-label = Nätverk
 perftools-presets-networking-description = Förinställd för att undersöka ljud- och videobuggar i { -brand-shorter-name }.
+perftools-presets-networking-with-logs-label = Nätverk med loggar
+perftools-presets-networking-with-logs-description = Förinställd för att undersöka nätverksbuggar i { -brand-shorter-name }, inklusive nätverksloggar. Dessa loggar kan innehålla känslig information, t.ex. webbadresser du besöker.
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energi
 perftools-presets-power-description = Förinställd för att undersöka buggar för energianvändning i { -brand-shorter-name }, med låg omkostnad.
 perftools-presets-debug-label = Felsök
 perftools-presets-debug-description = Förinställd för felsökning i { -brand-shorter-name }. Hög omkostnad, använd inte för prestandaarbete men för att fokusera på att förstå webbläsarens beteende.
+perftools-presets-web-compat-label = Webbkompatibel
+perftools-presets-web-compat-description = Rekommenderad förinställning för felsökning av webbkompatibilitetsproblem på webbplatser, snarare än att spåra prestanda.
 perftools-presets-custom-label = Anpassad
-
-##
-

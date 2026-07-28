@@ -12,6 +12,13 @@ about-networking-dns-trr-url = URL DoH
 about-networking-dns-trr-mode = โหมด DoH
 about-networking-dns-suffix = คำลงท้าย DNS
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = ที่มา
+about-networking-alt-svc-alternate = ทางเลือก
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = ตรวจสอบแล้ว
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = คีย์การคัดแยก
 about-networking-refresh = เรียกใหม่
 about-networking-auto-refresh = เรียกใหม่อัตโนมัติทุก 3 วินาที
 about-networking-hostname = ชื่อโฮสต์
@@ -39,6 +46,7 @@ about-networking-dns-lookup = การค้นหา DNS
 about-networking-dns-lookup-button = แปลงที่อยู่
 about-networking-dns-domain = โดเมน:
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = RR HTTPS
 about-networking-dns-https-rr-lookup-table-column = RR HTTP
 about-networking-rcwn = สถิติ RCWN
 about-networking-rcwn-status = สถานะ RCWN
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = หน้านี้ถูกย้า�
 
 about-networking-networkid-is-up = ลิงก์ถูกเชื่อมต่อแล้ว
 about-networking-networkid-status-known = ทราบสถานะลิงก์แล้ว
-
-##
-

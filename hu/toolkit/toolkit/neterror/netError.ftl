@@ -25,6 +25,8 @@ neterror-override-exception-button = Kockázat elfogadása és továbblépés
 neterror-pref-reset-button = Alapértelmezett beállítások visszaállítása
 neterror-return-to-previous-page-button = Ugrás vissza
 neterror-return-to-previous-page-recommended-button = Visszalépés (ajánlott)
+neterror-try-again-button-2 = Próbálja újra
+    .accesskey = P
 neterror-try-again-button = Próbálja újra
 neterror-add-exception-button = Folytatás mindig ezen az oldalon
 neterror-settings-button = DNS beállítások módosítása
@@ -46,6 +48,10 @@ neterror-load-error-firewall = Ha a számítógépet vagy a hálózatot tűzfal 
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = Ha egy helyi hálózati oldalt próbál betölteni, akkor ellenőrizze, hogy a { -brand-short-name } megkapta-e a helyi hálózati engedélyeket a macOS adatvédelmi és biztonsági beállításaiban.
 neterror-http-error-page = Ellenőrizze, hogy helyesen írta-e be a webhely címét.
+neterror-http-empty-response = Ellenőrizze, hogy jól írta-e be a webhely címét, és próbálja újra néhány pillanat múlva.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = A(z) { $hostname } üres lapot küldött vissza.
 neterror-captive-portal = Az internet elérése előtt be kell jelentkezni a hálózatra.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,6 +60,8 @@ neterror-dns-not-found-hint-header = <strong>Ha a megfelelő címet adta meg, a 
 neterror-dns-not-found-hint-try-again = Próbálja meg újra később
 neterror-dns-not-found-hint-check-network = Ellenőrizze a hálózati kapcsolatot
 neterror-dns-not-found-hint-firewall = Ellenőrizze, hogy a { -brand-short-name } jogosult-e az internet elérésére (lehet, hogy csatlakozik, de tűzfal mögött van)
+neterror-dns-not-found-hint-check-network-2 = Ellenőrizze a hálózati kapcsolatot.
+neterror-dns-not-found-hint-firewall-2 = Ellenőrizze, hogy a { -brand-short-name } jogosult-e az internet elérésére (lehet, hogy csatlakozik, de tűzfal mögött van).
 neterror-dns-not-found-offline-hint-header = <strong>Mit tehet ez ellen?</strong>
 neterror-dns-not-found-offline-hint-different-device = Próbáljon meg csatlakozni egy másik eszközön.
 neterror-dns-not-found-offline-hint-modem = Ellenőrizze a modemet vagy a routert.
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = Váratlan probléma.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = A { -brand-short-name } nem tudja megvédeni a webhely címére vonatkozó kérését a megbízható DNS-feloldónkon keresztül. Ennek ez az oka:
-neterror-dns-not-found-native-fallback-reason2 = A { -brand-short-name } nem tudja megvédeni a webhely címére vonatkozó kérését a biztonságos DNS-szolgáltatónkon keresztül. Ennek ez az oka:
 neterror-dns-not-found-native-fallback-heuristic = A HTTP-n keresztüli DNS le van tiltva a hálózatán.
 neterror-dns-not-found-native-fallback-not-confirmed2 = A { -brand-short-name } nem tudott csatlakozni a következő domainhoz: { $trrDomain }.
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = A { -brand-short-name } 
 
 neterror-file-not-found-filename = Ellenőrizze a fájlnevet, hogy jól írta-e.
 neterror-file-not-found-moved = Ellenőrizze, hogy a fájlt áthelyezték-e, átnevezték-e vagy eltávolították-e.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = A { -brand-short-name } nem találja a fájlt itt: <strong>{ $path }</strong>. Vagy nem létezik, vagy az elérési út helytelen.
+neterror-file-not-found-what-can-you-do = Ha kézzel írta be a címet, akkor ellenőrizze, hogy nincs-e kis- és nagybetűből eredő hiba a fájlnévben vagy az elérési útban. Ha egy mentett könyvjelzőt vagy hivatkozást követett, akkor lehet, hogy a fájlt áthelyezték, átnevezték vagy törölték a mentés óta. Próbálja megkeresni a fájlkezelővel vagy egy legutóbbi kereséssel.
 neterror-access-denied = Lehet hogy törölve lett, át lett helyezve, vagy a fájljogosultságok megakadályozzák a hozzáférést.
 neterror-unknown-protocol = Lehet, hogy egyéb szoftvert kell telepítenie a cím megnyitásához.
 neterror-redirect-loop = Ez a probléma néha a letiltott vagy visszautasított sütik miatt jelentkezik.
+neterror-unknown-socket-type-client-config = Ezt a kliens konfigurációs hibája okozhatja.
 neterror-unknown-socket-type-psm-installed = Ellenőrizze, hogy a rendszerre telepítve van-e a Personal Security Manager modul.
 neterror-unknown-socket-type-server-config = A hibát okozhatja a kiszolgáló nem szabványos beállítása is.
 neterror-not-cached-intro = A kért dokumentum nem érhető el a { -brand-short-name } gyorsítótárában.
@@ -168,3 +180,42 @@ certerror-coep-learn-more = Tudjon meg többet az eredetek közti beágyazási h
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Hibakód: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Úgy néz ki, hogy probléma van az internetkapcsolatával
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = A { -brand-short-name } nem tud biztonságos kapcsolatot létrehozni a(z) { $hostname } kiszolgálóval.
+fp-neterror-offline-intro = A { -brand-short-name } nem tud kapcsolódni a(z) <strong>{ $hostname }</strong> kiszolgálóhoz
+fp-neterror-offline-intro-2 = A { -brand-short-name } nem tud csatlakozni a(z) <strong>{ $hostname }</strong> kiszolgálóhoz.
+fp-neterror-net-timeout-intro = A(z) <strong>{ $hostname }</strong> kiszolgáló válasza túl hosszú ideig tart.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = A(z) <strong>{ $hostname }</strong> helyen lévő kiszolgáló hibát küldött: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = A(z) <strong>{ $hostname }</strong> olyan fejlécet küldött vissza, amely a webes biztonsági szabványok által nem engedélyezett üres karaktereket tartalmaz.
+fp-neterror-content-encoding-intro = A megtekinteni kívánt oldal nem jeleníthető meg, mert érvénytelen vagy nem támogatott tömörítést használ.
+fp-neterror-coop-coep-intro = A { -brand-short-name } nem töltötte be az oldalt, mert a biztonsági beállítások nem felelnek meg az előző oldalnak.
+fp-neterror-blocked-by-policy-intro = A szervezete blokkolta az oldal vagy webhely elérését.
+fp-neterror-http-auth-disabled-intro = Valaki, aki a webhelynek adja ki magát, megpróbálhatja ellopni a felhasználónevét, jelszavát vagy e-mail-címét.
+fp-neterror-http-auth-disabled-secure-connection = Ez a webhely biztonságos kapcsolatot igényel, és nem adhat hozzá kivételt, hogy felkeresse.
+fp-neterror-why-did-this-happen = Miért történt ez?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Úgy tűnik, hogy ez az oldal régi szoftvert használ, ismert biztonsági problémákkal.
+fp-neterror-http-auth-disabled-why-dangerous-body = A { -brand-short-name } nem bízik a(z) { $hostname } webhelyben, mert a kapcsolat nem biztonságos.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Győződjön meg arról, hogy a { -brand-short-name } legfrissebb verzióját használja. Ugorjon a menü Súgó > A { -brand-short-name } névjegye menüpontjához. Ha a legfrissebb { -brand-short-name } verziót használja, akkor a probléma valószínűleg magával a webhellyel van.
+fp-neterror-offline-what-can-you-do-body = Próbáljon meg csatlakozni egy másik eszközről. Ellenőrizze a modemet vagy útválasztót. Bontsa a kapcsolatot, majd csatlakozzon újra a Wi-Fi-hez.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Próbálja HTTPS-re cserélni a webcímet. De valószínűleg magával a webhellyel van a probléma.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = A webhelyek néha védelmet állítanak be saját maguk számára a más webhelyekkel történő nem kívánt interakciók ellen.
+fp-learn-more-about-https-connections = Tudjon meg többet a HTTPS kapcsolatokról
+fp-neterror-vpn-error-title = Nem sikerült kapcsolódni a VPN-hez
+fp-neterror-vpn-error-description = Próbálja újra néhány perc múlva.
+fp-neterror-denied-port-access = Ez a cím olyan hálózati portot használ, amelyet általában a webböngészéstől eltérő célra szoktak használni. A { -brand-short-name } megszakította ezt a lekérést az Ön védelme érdekében.

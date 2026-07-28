@@ -30,10 +30,18 @@ options-context-inspector = 檢測器
 options-show-user-agent-styles-label = 顯示瀏覽器樣式
 options-show-user-agent-styles-tooltip =
     .title = 開啟此功能將會顯示瀏覽器載入的預設樣式。
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = 顯示瀏覽器 Shadow DOM
+options-show-user-agent-shadow-dom-tooltip =
+    .title = 開啟此選項後，將顯示瀏覽器處理的 Shadow DOM 元素。
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = 截斷 DOM 屬性
 options-collapse-attrs-tooltip =
     .title = 截斷檢測器中的長屬性
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = 顯示註解
+options-show-comments-tooltip =
+    .title = 在檢測器中顯示註解節點
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = 點擊並拖曳，即可編輯大小值
 options-inspector-draggable-properties-tooltip =
@@ -67,6 +75,35 @@ options-webconsole-label = 網頁主控台
 options-webconsole-split-console-label = 啟用分割主控台
 options-webconsole-split-console-tooltip =
     .title = 使用 Esc 鍵開啟分割主控台
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = 網路監測器
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = 最大請求與回覆內容大小（設定為 0 則不限制）：
+options-netmonitor-body-limit-tooltip =
+    .title = 在網路監測器中顯示或下載超過指定大小的請求或回應內容時就自動截斷。設定為 0 則不限制。
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = 無限制
+options-netmonitor-body-limit-button =
+    .title = 編輯最大請求/回覆內容大小。
+options-netmonitor-body-limit-restore-default =
+    .title = 還原最大請求/回覆內容大小的預設值。
+options-netmonitor-body-limit-set =
+    .title = 將目前輸入的值設定為最大請求/回覆內容大小。
+
+## Experimental section
+
+# The heading
+options-experimental-label = 實驗功能
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = 在除錯器中顯示樣式表
+options-stylesheets-in-the-debugger-tooltip =
+    .title = 於除錯器中列出並檢視樣式表
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = （需要重新開啟工具箱）
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Tab 大小
 options-sourceeditor-keybinding-label = Keybinding
 options-sourceeditor-keybinding-default-label = 預設
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = 本機模式
+options-local-mode-only-work-locally = 本機模式僅可於本機端使用，會在對遠端環境除錯時關閉
+options-local-mode-behavior = 本機模式允許您透過 https 網址載入本機檔案，而不需依賴任何外部軟體。網址僅可透過開啟開發者工具的分頁載入。
+options-local-mode-domain-label = 自訂網域：
+options-local-mode-origin-input =
+    .placeholder = 本機對映來源
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = 此來源與另一個現有的對映來源相衝突
+options-local-mode-origin-invalid = 此來源無效
+options-local-mode-folder-label = 本機資料夾：
+options-local-mode-choose-folder = 瀏覽…
+    .title = 請選擇要用來提供對映的本地端資料夾
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = 請選擇下列網址的本機模式資料夾：{ $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = 此資料夾不存在或無效。
+options-local-mode-toggle =
+    .title = 切換此本機對映
+options-local-mode-toggle-enable = 啟用
+options-local-mode-toggle-disable = 停用
+options-local-mode-navigate-to =
+    .title = 導航至此對映網址
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = 您想要移除「{ $mappingOrigin }」對映嗎？
+options-local-mode-new-mapping = 新增本機對映
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +186,8 @@ options-context-advanced-settings = 進階設定
 options-disable-http-cache-label = 停用 HTTP 快取（開啟工具箱時）
 options-disable-http-cache-tooltip =
     .title = 開啟此選項後，將停用所有已開啟工具箱的分頁的 HTTP 快取；Service Worker 不受此選項影響。
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = 關閉 JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = 停用 JavaScript *
 options-disable-javascript-tooltip =
@@ -143,5 +216,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = 開啟原始碼對應表
 options-source-maps-tooltip =
     .title = 若您開啟此選項，將會在開發者工具中進行原始碼對應。
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = （僅在目前瀏覽階段有效，將重新載入頁面）
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * 僅在目前瀏覽階段有效，將會重新載入頁面
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = （將重新載入網頁）
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = 自動
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = 即將退役。了解更多…

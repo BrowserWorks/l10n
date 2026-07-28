@@ -20,7 +20,7 @@ cert-error-trust-self-signed = 自己署名をしているためこの証明書�
 cert-error-trust-symantec = GeoTrust および RapidSSL、Symantec、Thawte、VeriSign により発行された証明書はもはや安全とはみなされません。これらの証明書認証局は過去にセキュリティ規則に従いませんでした。
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-trust-certificate-transparency = { -brand-short-name } は { $hostname } が公的証明書の透明性に必須の要件を満たしているかどうかを検証できないため信頼しません。
+cert-error-trust-certificate-transparency = { $hostname } が証明書の透明性に必須の要件を満たしていることを証明できなかったため、{ -brand-short-name } はこのサイトを信頼しません。
 cert-error-untrusted-default = この証明書は信頼されている提供元から得られたものではありません。
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
@@ -72,7 +72,15 @@ open-in-new-window-for-csp-or-xfo-error = 新しいウィンドウでサイト�
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = 安全のため、{ -brand-short-name } は他のサイトが埋め込まれた { $hostname } のページの表示を許可できません。このページを表示するには、新しいウィンドウで開く必要があります。
 fp-certerror-view-certificate-link = サイトの証明書を表示する
+fp-certerror-return-to-previous-page-recommended-button-2 = 戻る (推奨)
+    .accesskey = G
 fp-certerror-return-to-previous-page-recommended-button = 戻る (推奨)
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } による警告: このサイトは危険です。{ $hostname } の証明書は破棄されており、もはや信頼されていません。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = おそらくサイト側に問題があるため、あなたにできることはないでしょう。ウェブサイトの所有者がこの問題に対処しようとしているか確認してください。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = 戻る (推奨)
 fp-certerror-bad-domain-why-dangerous-body = このサイトは安全な接続のみを許可するように設定されていますが、その証明書に問題があり、悪意を持った者がサイトを詐称することが可能です。サイトが使用している証明書が証明書認証局により発行されたものかどうかを検証して、その真正性をよく確かめてください。{ -brand-short-name } はこのサイトが { $hostname } の正しい証明書を使用していないため信頼しません。この証明書は次のサイトで有効です: { $validHosts }。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = おそらくサイト側に問題があるため、あなたにできることはないでしょう。サイトが使用している証明書が証明書認証局により発行されたものかどうかを検証して、その真正性をよく確かめてください。企業のネットワーク上で利用している場合は組織のサポートチームに問い合わせてください。ウイルス対策ソフトウェアを使用している場合は、潜在的な機能の衝突や既知の問題がないか検索してみてください。
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } による警告: このサイトは危険です。{ $hostname } の証明書は信頼されていない証明書認証局により発行されました。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = サイト側に問題があるため、あなたにできることはないでしょう。ウェブサイトの所有者がこの問題に対処しようとしているか確認してください。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = サイトの証明書に問題があり、悪意を持った者がサイトを詐称することが可能です。サイトが使用している証明書が証明書認証局により発行されたものかどうかを検証して、その真正性をよく確かめてください。{ -brand-short-name } はこのサイトの証明書の発行者を確認できないため信頼しません。自己署名されているか、信頼された中間証明書を送信していないかもしれません。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = エラーコード: { $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { $hostname } が証明書の透明性に必須の要件を満たしていることを証明できなかったため、{ -brand-short-name } はこのサイトを信頼しません。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = おそらくサイト側に問題があるため、あなたにできることはないでしょう。
 fp-learn-more-about-secure-connection-failures = 安全な接続の失敗についての詳細情報
 fp-learn-more-about-cert-issues = このような証明書の問題についての詳細情報
 fp-learn-more-about-time-related-errors = 時刻関連エラーのトラブルシューティングについての詳細情報
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = このサイトの証明書が { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } { DATETIME($date, timeStyle: "short") } まで有効にならないため、{ -brand-short-name } はこのサイトを信頼しません。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = ご使用の端末の時計が { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } { DATETIME($date, timeStyle: "short") } に設定されています。この時刻が正しい場合、おそらくサイト側にセキュリティ上の問題があります。時刻が誤っている場合は、端末のシステム設定で時刻を補正してください。
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = { $hostname } の所有者がサーバーを正しくセットアップしていないため、安全な接続が確立できません。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = コンピューターの時計が { DATETIME($now, dateStyle: "medium") } に設定されており、これが { -brand-short-name } の安全な接続を妨げています。 <strong>{ $hostname }</strong> のサイトを開くには、ご使用のシステムの設定からコンピューターの時計を現在の日時とタイムゾーンに正しく設定し、ページを再度読み込んでください。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = ご使用のシステムの設定からコンピューターの時計を現在の日時とタイムゾーンに正しく設定してください。コンピューターの時計は { DATETIME($now, dateStyle: "medium") } に設定されています。
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = ページの自動転送設定が正しくありません
 unknownSocketType-title = サーバーの応答が不正です
 nssFailure2-title = 安全な接続ができませんでした
 csp-xfo-error-title = { -brand-short-name } はこのページを開けません
+corruptedContentErrorv2-title = コンテンツデータ破損エラー
 corruptedContentError-title = コンテンツデータ破損エラー
 sslv3Used-title = 安全な接続を確保できません
 inadequateSecurityError-title = 接続が安全ではありません
@@ -190,3 +231,6 @@ fp-certerror-hide-advanced-button = 上級者向けの情報を隠す
 fp-certerror-override-exception-button = { $hostname } へ進む (危険)
 fp-certerror-intro = { -brand-short-name } が <strong>{ $hostname }</strong> に潜在的に深刻なセキュリティの問題があることを検知しました。悪意のある者がサイトを偽装してクレジットカード情報やパスワード、メールアドレスなどの個人情報を盗めるようにしています。
 fp-certerror-expired-into = { -brand-short-name } が <strong>{ $hostname }</strong> にセキュリティの問題があることを検知しました。サイトが正しく設定されていないか、ユーザーの端末の時計が誤った日時に設定されています。
+fp-certerror-transparency-intro = 何者かが偽の <strong>{ $hostname }</strong> サイトを装ってあなたのクレジットカード情報やパスワード、メールアドレスを盗み出そうとする可能性があります。
+fp-certerror-override-exception-button-2 = { $hostname } へ進む (危険)
+    .accesskey = P

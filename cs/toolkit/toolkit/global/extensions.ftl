@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Zakázat
     .accesskey = Z
 webext-perms-host-description-all-urls = Přistupovat k vašim datům pro všechny webové stránky
+webext-perms-host-description-file-urls = Přistupovat k místním souborům na vašem počítači
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Přistupovat k vašim datům pro webové stránky na doméně { $domain }
@@ -95,7 +96,7 @@ webext-perms-host-description-too-many-sites =
 # Variables:
 #   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., mozilla.org),
 #     $domain should be treated as plural (because it may also include all subdomains, e.g www.mozilla.org, ftp.mozilla.org).
-webext-perms-host-description-one-domain = Přistupovat k údajům webových stránek v doménách { $domain }
+webext-perms-host-description-one-domain = Přistupovat k vašim datům pro webové stránky na doménách { $domain }
 # Permission string used for webextensions requesting access to 2 or more domains (and so $domainCount is expected to always
 # be >= 2, for webextensions requesting access to only one domain the `webext-perms-host-description-one-domain` string is
 # used instead).
@@ -104,10 +105,10 @@ webext-perms-host-description-one-domain = Přistupovat k údajům webových str
 #     (the list of domains will follow this string).
 webext-perms-host-description-multiple-domains =
     { $domainCount ->
-        [one] Přistupovat k údajům webových stránek v { $domainCount } doméně
-        [few] Přistupovat k údajům webových stránek v { $domainCount } doménách
-        [many] Přistupovat k údajům webových stránek v { $domainCount } doménách
-       *[other] Přistupovat k údajům webových stránek v { $domainCount } doménách
+        [one] Přistupovat k vašim datům pro webové stránky na { $domainCount } doméně
+        [few] Přistupovat k vašim datům pro webové stránky na { $domainCount } doménách
+        [many] Přistupovat k vašim datům pro webové stránky na { $domainCount } doménách
+       *[other] Přistupovat k vašim datům pro webové stránky na { $domainCount } doménách
     }
 
 ## Strings for data collection permissions in the permission prompt.
@@ -142,6 +143,7 @@ webext-perms-optional-text-with-data-collection-only = Rozšíření { $extensio
 
 webext-site-perms-header-with-gated-perms-midi = Tento doplněk poskytuje serveru { $hostname } přístup k vašim MIDI zařízením.
 webext-site-perms-header-with-gated-perms-midi-sysex = Tento doplněk poskytuje serveru { $hostname } přístup k vašim MIDI zařízením (s podporou SysEx).
+webext-site-perms-header-with-gated-perms-serial = Tento doplněk umožňuje serveru { $hostname } přístup k vašim sériovým zařízením.
 
 ##
 
@@ -152,6 +154,12 @@ webext-site-perms-description-gated-perms-midi =
     Obvykle jde o zásuvná zařízení jako zvukové syntezátory, ale může jít i o zařízení zabudované přímo ve vašem počítači.
     
     Webové stránky obvykle k MIDI zařízením nemají přístup povolený. Nesprávné použití může vést k poškození nebo ohrozit zabezpečení.
+webext-site-perms-description-gated-perms-webserial =
+    Jedná se o zařízení jako mikrokontroléry, 3D tiskárny a další zařízení, která se připojují pomocí USB, sériových portů nebo Bluetooth.
+    
+    Budete moci vybrat, ke kterým zařízením bude mít web přístup.
+    
+    Webové stránky obvykle nemají povolený přístup k sériovým zařízením. Nesprávné použití může způsobit poškození nebo ohrozit zabezpečení.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -166,6 +174,7 @@ webext-site-perms-header-unsigned-with-perms = Chcete nainstalovat { $extension 
 
 webext-site-perms-midi = Přistupovat k MIDI zařízením
 webext-site-perms-midi-sysex = Přistupovat k MIDI zařízením s podporou SysEx
+webext-site-perms-serial = Přístup k sériovým zařízením
 
 ## Colorway theme migration
 

@@ -10,14 +10,14 @@
 ## Variables:
 ##   $extension (String): replaced with the localized name of the extension.
 
-webext-perms-header = Добавить { $extension }?
-webext-perms-header-with-perms = Добавить { $extension }? Это расширение будет иметь разрешение на:
-webext-perms-header-unsigned = Добавить { $extension }? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Добавляйте его, только если вы доверяете источнику.
-webext-perms-header-unsigned-with-perms = Добавить { $extension }? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Добавляйте его, только если вы доверяете источнику. Это расширение будет иметь разрешение на:
+webext-perms-header = Добавить «{ $extension }»?
+webext-perms-header-with-perms = Добавить «{ $extension }»? Это расширение будет иметь разрешение на:
+webext-perms-header-unsigned = Добавить «{ $extension }»? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Добавляйте его, только если вы доверяете источнику.
+webext-perms-header-unsigned-with-perms = Добавить «{ $extension }»? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Добавляйте его, только если вы доверяете источнику. Это расширение будет иметь разрешение на:
 webext-perms-sideload-header = { $extension } добавлено
 webext-perms-optional-perms-header2 = { $extension } запрашивает дополнительные разрешения
 webext-perms-optional-perms-header = { $extension } запрашивает дополнительные разрешения.
-webext-perms-header2 = Добавить { $extension }
+webext-perms-header2 = Добавить «{ $extension }»
 webext-perms-list-intro-unsigned = Это непроверенное расширение может поставить под угрозу вашу приватность или подвергнуть риску ваше устройство. Добавляйте его, только если вы доверяете источнику.
 
 ## Headers used in the webextension permissions dialog, inside the content.
@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Отклонить
     .accesskey = О
 webext-perms-host-description-all-urls = Доступ к вашим данным для всех веб-сайтов
+webext-perms-host-description-file-urls = Доступ к локальным файлам на вашем компьютере
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Доступ к вашим данным для сайтов в домене { $domain }
@@ -141,6 +142,7 @@ webext-perms-optional-text-with-data-collection-only = { $extension } запра
 
 webext-site-perms-header-with-gated-perms-midi = Это дополнение предоставляет { $hostname } доступ к вашим MIDI-устройствам.
 webext-site-perms-header-with-gated-perms-midi-sysex = Это дополнение предоставляет { $hostname } доступ к вашим MIDI-устройствам (с поддержкой SysEx).
+webext-site-perms-header-with-gated-perms-serial = Это дополнение предоставляет { $hostname } доступ к вашим последовательным устройствам.
 
 ##
 
@@ -151,6 +153,12 @@ webext-site-perms-description-gated-perms-midi =
     Обычно это подключаемые устройства, такие как синтезаторы звука, но они также могут быть встроены в ваш компьютер.
     
     Веб-сайтам обычно запрещен доступ к MIDI-устройствам. Неправильное использование может привести к повреждению или нарушению безопасности.
+webext-site-perms-description-gated-perms-webserial =
+    Это такие устройства, как микроконтроллеры, 3D-принтеры и другие устройства, подключаемые через USB, последовательные порты или Bluetooth.
+    
+    Вы сможете выбрать, к каким устройствам может получить доступ веб-сайт.
+    
+    Веб-сайтам обычно не разрешен доступ к последовательным устройствам. Неправильное использование может привести к повреждению или нарушению безопасности.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -158,13 +166,14 @@ webext-site-perms-description-gated-perms-midi =
 ##   $extension (String): replaced with the localized name of the extension being installed.
 ##   $hostname (String): will be replaced by the DNS host name for which a webextension enables permissions.
 
-webext-site-perms-header-with-perms = Добавить { $extension }? Это расширение предоставляет { $hostname } следующие возможности:
-webext-site-perms-header-unsigned-with-perms = Добавить { $extension }? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Устанавливайте его, только если вы доверяете его источнику. Это расширение предоставляет { $hostname } следующие возможности:
+webext-site-perms-header-with-perms = Добавить «{ $extension }»? Это расширение предоставляет { $hostname } следующие возможности:
+webext-site-perms-header-unsigned-with-perms = Добавить «{ $extension }»? Это расширение не проверено. Вредоносные расширения могут украсть вашу личную информацию или подвергнуть риску ваш компьютер. Устанавливайте его, только если вы доверяете его источнику. Это расширение предоставляет { $hostname } следующие возможности:
 
 ## These should remain in sync with permissions.NAME.label in sitePermissions.properties
 
 webext-site-perms-midi = Доступ к MIDI-устройствам
 webext-site-perms-midi-sysex = Доступ к MIDI-устройствам с поддержкой SysEx
+webext-site-perms-serial = Доступ к последовательным устройствам
 
 ## Colorway theme migration
 

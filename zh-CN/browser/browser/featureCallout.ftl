@@ -104,6 +104,14 @@ perplexity-callout-primary-label = 询问 Perplexity
 perplexity-callout-secondary-label-1 = 知道了
 perplexity-callout-secondary-label-2 = 明白了
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = 想试试隐私为先的新搜索引擎吗？
+start-page-callout-subtitle = 试试 Startpage。自设计之初，其就以“让搜索更私密”为念。
+start-page-callout-primary-label = 试用 Startpage
+start-page-callout-secondary-label = 知道了
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = 将密码加密同步到您的其他设备，�
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = 注册
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = 从任务栏直达推荐内容
+taskbar-tabs-social-callout-subtitle = 如打开应用般，在简化窗口中打开社交网站，同时仍享 { -brand-short-name } 保护。
+taskbar-tabs-chat-callout-title = 从任务栏直达聊天框
+taskbar-tabs-chat-callout-subtitle = 如打开应用般，在简化窗口中打开聊天网站，同时仍享 { -brand-short-name } 保护。
+taskbar-tabs-email-callout-title = 从任务栏直达邮箱
+taskbar-tabs-email-callout-subtitle = 如打开应用般，在简化窗口中打开网页版邮箱，同时仍享 { -brand-short-name } 保护。
+taskbar-tabs-media-callout-title = 从任务栏直连直播
+taskbar-tabs-media-callout-subtitle = 如打开应用般，在简化窗口中打开直播网站，同时仍享 { -brand-short-name } 保护。
+taskbar-tabs-value-prop-callout-title = 将此网站添加到任务栏
+taskbar-tabs-value-prop-callout-subtitle = 只需一点，即可在有着简化界面的独立窗口中打开此网站。
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = 换用 Windows 11 前，别忘了带走珍贵的数据。
+windows-10-eos-sync-urgency-subtitle-1 = 立即同步，确保 { -brand-short-name } 书签、密码、设置安全无虞，方便以后轻松恢复。
+windows-10-eos-sync-urgency-title-2 = 要告别 Windows 10 了？数据也要安稳搬新家。
+windows-10-eos-sync-urgency-subtitle-2 = 即使您并不经常使用 { -brand-short-name }，也可通过同步来确保书签和密码安全无虞、随时可用。
+windows-10-eos-sync-new-device-title-1 = 从零开始的新设备生活可不好受。
+windows-10-eos-sync-new-device-subtitle-1 = 开启同步，以便日后将 { -brand-short-name } 书签、密码、偏好的设置带进新设备。
+windows-10-eos-sync-new-device-title-2 = 打算换用新设备？别忘了把重要数据带过去。
+windows-10-eos-sync-new-device-subtitle-2 = 无论您是否经常使用 { -brand-short-name }，都可通过同步来保护书签、密码、设置。
+windows-10-eos-sync-new-device-primary-label = 立即同步
+windows-10-eos-sync-general-title-1 = 保护已专属于您的 { -brand-short-name }。
+windows-10-eos-sync-general-subtitle-1 = 备份与同步密码、书签、设置等数据，保护您的珍贵数据。
+windows-10-eos-sync-general-title-2 = 备份密码和书签，时机正好。
+windows-10-eos-sync-general-subtitle-2 = 立即同步，保护 { -brand-short-name } 为您保管的数据，更方便随时随地取用。
+windows-10-eos-sync-tour-title-1 = 标签页太多了？用标签页群组收拾整齐。
+windows-10-eos-sync-tour-subtitle-1 = 将标签页拖放到另一个标签页之上即可创建群组，让标签页井井有条。
+windows-10-eos-sync-tour-title-2 = 做足准备换用 Windows 11。
+windows-10-eos-sync-tour-subtitle-2 = 在更换系统前，同步并备份书签、密码、设置。
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = 减少显示建议
+windows-10-eos-sync-dismiss-button-label = 知道了
+windows-10-eos-sync-callout-primary-advance-button-label = 下一步
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = 新功能：长按预览连接
+link-preview-onboarding-callout-description = 查看简短描述、阅读时长等信息，帮助判断链接是否值得点开。也可通过右键点击使用。
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = 用标签页群组摆脱繁乱
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = 按任务或主题，将标签页分门别类。一边浏览，一边归纳。
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = 创建标签页群组
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = 在侧栏中显示标签页标题
 sidebar-button-callout-subtitle = 使用侧栏按钮展开侧栏，即可查看标签页标题。
 sidebar-button-callout-vertical-tabs = 选择工具栏中的侧栏图标，即可显示标签页栏。
+sidebar-deprecation-callout-title = 即将推出新版侧栏
+sidebar-deprecation-callout-subtitle = 我们正逐步升级目前的侧栏版本。请试用更快捷、工具更丰富的新版侧栏。
+sidebar-deprecation-cta-button = 立即试用
 
 ## Sidebar Vertical Tabs Strings
 
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = 您对在侧栏中能够使用 AI �
 sidebar-genai-survey-productive-question =
     您在多大程度上赞同或反对此说法：<br/>
     “侧栏中的 AI 聊天机器人让我的浏览更高效”？
+splitview-onboarding-callout-title-1 = 分屏浏览：多任务处理新妙招
+splitview-onboarding-callout-subtitle-1 = 右键点击此标签页并选择“添加分屏”，即可同时查看两个标签页。
+splitview-onboarding-callout-cta-1 = 现在就试试
+splitview-onboarding-callout-title-2 = 通过分屏，同时查看两个标签页
+splitview-onboarding-callout-subtitle-2 = 右键点击此标签页并选择“添加分屏”，免于另外打开窗口、反复切换标签页。
+splitview-onboarding-callout-cta-2 = 试试分屏浏览
 unified-search-callout-title = 切换搜索引擎
 unified-search-callout-subtitle = 针对具体搜索内容，选择最合用的搜索引擎。
 unified-search-callout-primary-label = 下一步
@@ -195,6 +272,6 @@ actions-callout-title = 完成常用操作、进行基础设置
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
-actions-callout-subtitle = 键入操作名即可快速进行操作，例如：“打印页面”/“print”、“清除历史”/“clear”。
+actions-callout-subtitle = 键入操作名即可快速进行操作。例如，打印页面：“打印”/“print”，清除历史：“清除”/“clear”。

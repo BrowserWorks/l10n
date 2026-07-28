@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Preguntar a Perplexity
 perplexity-callout-secondary-label-1 = Descartar
 perplexity-callout-secondary-label-2 = Entendido
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = ¿Quiere probar una nueva búsqueda enfocada en la privacidad?
+start-page-callout-subtitle = Pruebe Startpage. Está diseñado para que sus búsquedas sean más privadas desde el primer momento.
+start-page-callout-primary-label = Pruebe Startpage
+start-page-callout-secondary-label = Descartar
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Proteja sus contraseñas sincronizándolas a s
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registrarse
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Mantenga sus canales favoritos en la barra de tareas
+taskbar-tabs-social-callout-subtitle = Abra sus redes sociales como una aplicación en una ventana optimizada protegida por { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Chat desde la barra de tareas
+taskbar-tabs-chat-callout-subtitle = Abra sus sitios de chat como una aplicación en una ventana optimizada protegida por { -brand-short-name }.
+taskbar-tabs-email-callout-title = Mantenga el correo electrónico en la barra de tareas
+taskbar-tabs-email-callout-subtitle = Abra su webmail como una aplicación en una ventana optimizada protegida por { -brand-short-name }.
+taskbar-tabs-media-callout-title = Regresar al streaming desde la barra de tareas
+taskbar-tabs-media-callout-subtitle = Abra sus sitios de streaming como una aplicación en una ventana optimizada protegida por { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Añadir este sitio a la barra de tareas
+taskbar-tabs-value-prop-callout-subtitle = Abralo en su propia ventana y en una interfaz simplificada con un solo clic.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = No pierda todo lo que haya guardado cuando se pase a Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Sincronice ahora para mantener los marcadores, contraseñas y configuraciones de { -brand-short-name } seguros y fáciles de restaurar.
+windows-10-eos-sync-urgency-title-2 = ¿Diciéndole adiós a Windows 10? Proteja sus datos al cambiar.
+windows-10-eos-sync-urgency-subtitle-2 = Incluso si no usa { -brand-short-name } a diario, use la sincronización para mantener los marcadores y contraseñas seguros y accesibles.
+windows-10-eos-sync-new-device-title-1 = No se arriesgue a empezar de nuevo en su próximo dispositivo.
+windows-10-eos-sync-new-device-subtitle-1 = Sincronice para llevar sus marcadores, contraseñas y configuraciones preferidas de { -brand-short-name } cuando cambie de dispositivo.
+windows-10-eos-sync-new-device-title-2 = ¿Cambia de dispositivo? No pierda lo importante.
+windows-10-eos-sync-new-device-subtitle-2 = No importa la frecuencia con la que use { -brand-short-name }, la sincronización protege sus marcadores, contraseñas y configuración.
+windows-10-eos-sync-new-device-primary-label = Sincronizar ahora
+windows-10-eos-sync-general-title-1 = Proteja el { -brand-short-name } que hizo suyo.
+windows-10-eos-sync-general-subtitle-1 = Haga una copia de seguridad y sincronice sus contraseñas, marcadores, configuraciones y otros datos para preservar aquello con lo que cuenta.
+windows-10-eos-sync-general-title-2 = Ahora es un buen momento para hacer una copia de seguridad de sus contraseñas y marcadores.
+windows-10-eos-sync-general-subtitle-2 = Sincronice ahora para proteger las cosas en las que confía { -brand-short-name } y recupérelas en cualquier lugar y en cualquier momento.
+windows-10-eos-sync-tour-title-1 = ¿Demasiadas pestañas? Ordénelas con grupos de pestañas.
+windows-10-eos-sync-tour-subtitle-1 = Arrastre una pestaña sobre otra para crear un grupo y mantener todo organizado.
+windows-10-eos-sync-tour-title-2 = Prepárese para Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Sincronice sus marcadores, contraseñas y configuraciones para hacer una copia de seguridad antes de cambiar.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Mostrar menos recomendaciones
+windows-10-eos-sync-dismiss-button-label = Descartar
+windows-10-eos-sync-callout-primary-advance-button-label = Siguiente
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nuevo: haga clic y mantenga presionado para obtener una vista previa de los enlaces
+link-preview-onboarding-callout-description = Vea una breve descripción, conozca cuánto tiempo le llevará leer la página y más información para decidir si vale la pena hacer clic en un enlace. Esta opción también está disponible si hace clic con el botón derecho del ratón.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Reduzca el desorden con grupos de pestañas
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Agrupe sus pestañas por tarea o tema. Arrastre más según las necesite.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Crear un grupo
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Mostrar títulos de pestañas en la barra lateral
 sidebar-button-callout-subtitle = Utilice el botón de la barra lateral para expandir la barra lateral, de modo que pueda ver los títulos de las pestañas.
 sidebar-button-callout-vertical-tabs = Para mostrar sus pestañas, seleccione el botón de la barra lateral en la barra de herramientas.
+sidebar-deprecation-callout-title = Próximamente una barra lateral actualizada
+sidebar-deprecation-callout-subtitle = Estamos eliminando la versión de la barra lateral que está usando actualmente. Pruebe la barra lateral actualizada. Es más rápida y da acceso a más herramientas.
+sidebar-deprecation-cta-button = Pruébelo ahora
 
 ## Sidebar Vertical Tabs Strings
 
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = ¿En qué medida está satisfecho c
 sidebar-genai-survey-productive-question =
     ¿En qué medida está de acuerdo o en desacuerdo con esta afirmación:<br/>
     “El chatbot de IA de la barra lateral de me ayuda a ser más productivo”?
+splitview-onboarding-callout-title-1 = Vista dividida: una mejor manera de realizar múltiples tareas
+splitview-onboarding-callout-subtitle-1 = Haga clic con el botón derecho en esta pestaña y elija “Añadir vista dividida” para ver dos pestañas a la vez.
+splitview-onboarding-callout-cta-1 = Pruébelo ahora
+splitview-onboarding-callout-title-2 = Ver dos pestañas a la vez con vista dividida
+splitview-onboarding-callout-subtitle-2 = Sin ventanas adicionales. Sin cambio de pestañas. Haga clic con el botón derecho en esta pestaña y seleccione “Añadir vista dividida”.
+splitview-onboarding-callout-cta-2 = Pruebe la vista dividida
 unified-search-callout-title = Cambiar entre buscadores
 unified-search-callout-subtitle = Elija lo que funcione mejor para una búsqueda específica.
 unified-search-callout-primary-label = Siguiente
@@ -195,6 +272,6 @@ actions-callout-title = Completar tareas comunes o acceder a la configuración b
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Pruebe a escribir una acción como “imprimir” para imprimir una página o “borrar” para borrar el historial.

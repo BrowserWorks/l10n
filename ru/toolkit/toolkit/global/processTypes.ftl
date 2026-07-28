@@ -23,7 +23,7 @@ process-type-forkserver = Форк-сервер
 process-type-webisolated = Изолированное веб-содержимое
 # process used to isolate a ServiceWorker to improve
 # performance
-process-type-webserviceworker = Изолированный Service Worker
+process-type-webserviceworker = Изолированный Обработчик
 # process preallocated; may change to other types
 process-type-prealloc = Зарезервирован
 
@@ -43,7 +43,7 @@ process-type-rdd = RDD
 process-type-inference = Вывод
 # process used to run some IPC actor in their own sandbox
 process-type-utility = IPC Actor в песочнице
-process-type-utility-actor-audio-decoder-generic = Утилита Универсальный аудиодекодер
+process-type-utility-actor-audio-decoder-generic = Утилита «Универсальный аудиодекодер»
 process-type-utility-actor-audio-decoder-applemedia = Утилита AppleMedia
 process-type-utility-actor-audio-decoder-wmf = Утилита Windows Media Foundation
 process-type-utility-actor-mf-media-engine = Утилита Media Foundation Engine

@@ -25,6 +25,8 @@ neterror-override-exception-button = Accepter le risque et poursuivre
 neterror-pref-reset-button = Restaurer les paramètres par défaut
 neterror-return-to-previous-page-button = Retour
 neterror-return-to-previous-page-recommended-button = Retour (recommandé)
+neterror-try-again-button-2 = Réessayer
+    .accesskey = R
 neterror-try-again-button = Réessayer
 neterror-add-exception-button = Toujours poursuivre pour ce site
 neterror-settings-button = Modifier les paramètres DNS
@@ -46,6 +48,10 @@ neterror-load-error-firewall = Si votre ordinateur ou votre réseau est protég�
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = Si vous essayez de charger une page sur le réseau local, veuillez vérifier que { -brand-short-name } dispose des autorisations sur le réseau local dans les paramètres Confidentialité et sécurité de macOS.
 neterror-http-error-page = Assurez-vous d’avoir saisi correctement l’adresse du site web.
+neterror-http-empty-response = Vérifiez que vous avez correctement saisi l’adresse du site web et réessayez dans quelques instants.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } a renvoyé une page vide.
 neterror-captive-portal = Ce réseau nécessite que vous vous connectiez à un compte pour utiliser Internet.
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,6 +60,8 @@ neterror-dns-not-found-hint-header = <strong>Si l’adresse saisie était correc
 neterror-dns-not-found-hint-try-again = Réessayer plus tard
 neterror-dns-not-found-hint-check-network = Veuillez vérifier votre connexion réseau
 neterror-dns-not-found-hint-firewall = Vérifier que { -brand-short-name } a l’autorisation d’accéder au Web (votre connexion pourrait être effective, mais protégée par un pare-feu)
+neterror-dns-not-found-hint-check-network-2 = Veuillez vérifier votre connexion réseau.
+neterror-dns-not-found-hint-firewall-2 = Vérifiez que { -brand-short-name } a l’autorisation d’accéder au Web (votre connexion pourrait être effective, mais protégée par un pare-feu).
 neterror-dns-not-found-offline-hint-header = <strong>Que pouvez-vous faire ?</strong>
 neterror-dns-not-found-offline-hint-different-device = Essayez de vous connecter sur un autre appareil.
 neterror-dns-not-found-offline-hint-modem = Vérifiez votre modem ou votre routeur.
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = Problème inattendu.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site par notre serveur DNS de confiance. En voici la raison :
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site via notre fournisseur de serveur DNS sécurisé. En voici la raison :
 neterror-dns-not-found-native-fallback-heuristic = Le DNS via HTTPS a été désactivé sur votre réseau.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } n’a pas pu se connecter à { $trrDomain }.
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } n�
 
 neterror-file-not-found-filename = Vérifiez la syntaxe du nom de fichier (dont le respect des minuscules/majuscules) ;
 neterror-file-not-found-moved = Vérifiez si le fichier n’a pas été déplacé, renommé ou supprimé.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } ne parvient pas à trouver le fichier situé à l’emplacement <strong>{ $path }</strong>. Soit il n’existe pas, soit le chemin est incorrect.
+neterror-file-not-found-what-can-you-do = Si vous avez saisi l’adresse manuellement, vérifiez qu’il n’y a pas d’erreur de majuscule ou de faute de frappe dans le nom ou le chemin du fichier. Si vous avez suivi un marque-page ou un lien enregistré, le fichier a peut-être été déplacé, renommé ou supprimé depuis son enregistrement. Essayez de le localiser en utilisant votre gestionnaire de fichiers ou en effectuant une recherche parmi les fichiers récents.
 neterror-access-denied = Il a peut-être été supprimé, déplacé ou les permissions associées au fichier ne permettent pas d’y accéder.
 neterror-unknown-protocol = Il est peut-être nécessaire d’installer une autre application pour ouvrir ce type d’adresse.
 neterror-redirect-loop = La cause de ce problème peut être la désactivation ou le refus des cookies.
+neterror-unknown-socket-type-client-config = Ceci peut être dû à une erreur de configuration de votre client.
 neterror-unknown-socket-type-psm-installed = Vérifiez que le gestionnaire de sécurité personnelle (PSM) est installé sur votre système.
 neterror-unknown-socket-type-server-config = Ceci peut être dû à une configuration inhabituelle du serveur.
 neterror-not-cached-intro = Le document demandé n’est plus disponible dans le cache de { -brand-short-name }.
@@ -100,7 +112,7 @@ neterror-not-cached-try-again = Cliquez sur Réessayer pour redemander ce docume
 neterror-net-offline = Cliquez sur le bouton « Réessayer » pour revenir en mode connecté et recharger la page.
 neterror-proxy-resolve-failure-settings = Vérifiez que les paramètres du proxy sont corrects ;
 neterror-proxy-resolve-failure-connection = Vérifiez que la connexion réseau de votre ordinateur fonctionne ;
-neterror-proxy-resolve-failure-firewall = Si votre ordinateur ou votre réseau est protégé par un pare-feu ou un proxy, assurez-vous que { -brand-short-name } a l’autorisation d’accéder au Web.
+neterror-proxy-resolve-failure-firewall = Si votre ordinateur ou votre réseau est protégé par un pare-feu ou un proxy, assurez-vous que { -brand-short-name } est autorisé à accéder au Web.
 neterror-proxy-connect-failure-settings = Vérifiez que les paramètres du proxy sont corrects ;
 neterror-proxy-connect-failure-contact-admin = Contactez votre administrateur réseau pour vous assurer que le serveur proxy fonctionne.
 neterror-content-encoding-error = Veuillez contacter les propriétaires du site web pour les informer de ce problème.
@@ -168,3 +180,42 @@ certerror-coep-learn-more = En savoir plus sur les stratégies des intégrations
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Code d’erreur : { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Il semble y avoir un problème avec votre connexion Internet
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } ne peut pas établir de connexion sécurisée avec le serveur à l’adresse { $hostname }.
+fp-neterror-offline-intro = { -brand-short-name } ne peut pas se connecter au serveur à l’adresse <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = { -brand-short-name } ne peut pas se connecter au serveur à l’adresse <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = Le serveur à l’adresse <strong>{ $hostname }</strong> met trop de temps à répondre.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = Le serveur à l’adresse <strong>{ $hostname }</strong> a renvoyé une erreur : { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> a renvoyé un en-tête avec des caractères vides non autorisés par les normes de sécurité du Web.
+fp-neterror-content-encoding-intro = La page que vous essayez de voir ne peut être affichée car elle utilise un type de compression invalide ou non pris en charge.
+fp-neterror-coop-coep-intro = { -brand-short-name } n’a pas chargé cette page, car il semble que la configuration de sécurité ne corresponde pas à la page précédente.
+fp-neterror-blocked-by-policy-intro = Votre organisation a bloqué l’accès à cette page ou à ce site web.
+fp-neterror-http-auth-disabled-intro = Quelqu’un se faisant passer pour le site pourrait tenter de dérober des éléments tels que vos nom d’utilisateur, mot de passe ou adresse e-mail.
+fp-neterror-http-auth-disabled-secure-connection = Ce site exige une connexion sécurisée et il n’est pas possible d’ajouter une exception pour y accéder.
+fp-neterror-why-did-this-happen = Pourquoi est-ce arrivé ?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Il semble que ce site utilise d’anciens logiciels présentant des failles de sécurité connues.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } ne fait pas confiance à { $hostname }, car la connexion n’est pas sécurisée.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Assurez-vous d’utiliser la dernière version de { -brand-short-name }. Dans le menu, sélectionnez Aide > À propos de { -brand-short-name }. Si vous utilisez la dernière version de { -brand-short-name }, le problème vient probablement du site lui-même.
+fp-neterror-offline-what-can-you-do-body = Essayez de vous connecter sur un autre appareil. Vérifiez votre modem ou votre routeur. Déconnectez-vous puis reconnectez-vous au Wi-Fi.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Essayez de changer l’URL en HTTPS. Mais il est probable qu’il y ait un problème avec le site lui-même.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Il arrive que les sites web se protègent contre les interactions indésirables avec d’autres sites.
+fp-learn-more-about-https-connections = En savoir plus sur les connexions HTTPS
+fp-neterror-vpn-error-title = Impossible de se connecter au VPN
+fp-neterror-vpn-error-description = Réessayez dans quelques minutes.
+fp-neterror-denied-port-access = Cette adresse utilise un port réseau inhabituel pour la navigation web. Par mesure de sécurité, { -brand-short-name } a abandonné la requête.

@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = 允许
     .accesskey = A
+permissions-add =
+    .label = 添加
+    .accesskey = A
 permissions-button-off =
     .label = 关闭
     .accesskey = O
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = 移除全部网站
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = 保存更改
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = 保存更改
     .buttonaccesskeyaccept = S
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = 您可以指定一律允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，然后点击“阻止”、“此次浏览期间允许”或“允许”。
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = 例外 - 关闭时清除历史记录
+permissions-exceptions-shutdown-clearing-desc = 您可以指定 { -brand-short-name } 在关闭并清除历史记录时，允许保留数据的网站。请输入要管理的网站的确切地址，然后点击“允许”。
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = 您可以关闭特定网站的 HTTPS-Only 模式。{ -brand-short-name } 将不再尝试将这些网站的连接升级为安全的 HTTPS。“例外”不会应用至隐私窗口。
 permissions-exceptions-https-only-desc2 = 您可以关闭特定网站的 HTTPS-Only 模式。{ -brand-short-name } 将不再尝试将这些网站的连接升级为安全的 HTTPS。
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = 有特殊权限的网站 - 弹出式窗口和第三方重定向
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = 您可以指定哪些网站可以打开弹出式窗口，以及由第三方框架重定向。
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = 下列网站曾请求操控您的摄像头。您�
 permissions-site-camera-disable-label =
     .label = 禁止新的操控摄像头请求
 permissions-site-camera-disable-desc = 所有列表外的网站将无法请求操控您的摄像头。禁止此权限可能会影响某些网站的功能。
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = 设置 - 设备应用和服务
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = 下列网站曾请求访问此设备上的应用和服务，您可以选择允许或阻止其进行访问。
+permissions-site-localhost-disable-label =
+    .label = 禁止新的访问此设备上的应用和服务的请求
+permissions-site-localhost-disable-desc = 这将屏蔽未列于上方的网站对访问此设备上的应用和服务的请求。启用后可能破坏部分网站功能。
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = 设置 - 本地网络设备
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = 下列网站曾请求访问同一 Wi-Fi 或本地网络中的设备上的应用和服务，您可以选择允许或阻止其进行访问。
+permissions-site-local-network-disable-label =
+    .label = 禁止新的访问同一 Wi-Fi 或本地网络中的设备上的应用和服务的请求。
+permissions-site-local-network-disable-desc = 这将屏蔽未列于上方的网站对访问同一 Wi-Fi 或本地网络中的设备上的应用和服务的请求。启用后可能破坏部分网站功能。
 
 ## Site Permissions - Microphone
 

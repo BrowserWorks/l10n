@@ -18,7 +18,7 @@ certificate-viewer-common-name = Tên gọi chung
 certificate-viewer-email-address = Địa chỉ email
 # Variables:
 #   $firstCertName (String) - Common Name for the displayed certificate
-certificate-viewer-tab-title = Chứng nhận cho { $firstCertName }
+certificate-viewer-tab-title = Chứng chỉ cho { $firstCertName }
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Quốc gia hợp nhất
 certificate-viewer-country = Quốc gia
@@ -36,10 +36,17 @@ certificate-viewer-key-size = Kích thước khóa
 certificate-viewer-inc-locality = Địa phương hợp nhất
 certificate-viewer-locality = Thành phố
 certificate-viewer-location = Địa chỉ
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = Tên nhật ký
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID bản ghi
 certificate-viewer-method = Phương thức
 certificate-viewer-modulus = Mô-đun
 certificate-viewer-name = Tên
+certificate-viewer-surname = Họ
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = Tên (tên riêng)
 certificate-viewer-not-after = Hiệu lực đến
 certificate-viewer-not-before = Hiệu lực từ
 certificate-viewer-organization = Tổ chức
@@ -110,10 +117,12 @@ certificate-viewer-export = Xuất
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (không xác định)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = chứng chỉ
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 
-certificate-viewer-tab-mine = Chứng nhận của bạn
+certificate-viewer-tab-mine = Chứng chỉ của bạn
 certificate-viewer-tab-people = Mọi người
 certificate-viewer-tab-servers = Máy chủ
 certificate-viewer-tab-ca = Nhà thẩm định

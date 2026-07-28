@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = AI Chatbot
 menu-view-contextual-password-manager =
     .label = Lösenord
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = Öppna flikar
 sidebar-options-menu-button =
     .title = Öppna meny
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = Ändra storlek på sidofält
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = Ta bort från historik
 sidebar-history-clear =
     .label = Rensa historik
+sidebar-history-sort-by-heading-menucaption =
+    .label = Sortera efter:
 sidebar-history-sort-by-heading = Sortera efter:
 sidebar-history-sort-option-date =
     .label = Datum
@@ -56,10 +66,14 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = Hantera inställningar för { -brand-short-name }
 sidebar-vertical-tabs =
     .label = Vertikala flikar
+sidebar-settings2 =
+    .label = Inställningar
 sidebar-settings =
     .label = Inställningar för sidofält
 sidebar-hide-tabs-and-sidebar =
     .label = Dölj flikar och sidofält
+sidebar-open-tools-from-sidebar =
+    .label = Öppna verktyg från sidofält
 sidebar-show-on-the-right =
     .label = Flytta sidofältet till höger
 sidebar-show-on-the-left =
@@ -68,7 +82,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = Expandera sidofält vid hovring
-sidebar-manage-extensions = Hantera tillägg
+sidebar-manage-extensions2 = Hantera alla tillägg
+sidebar-customize-extensions-header2 = Tillägg
+sidebar-customize-firefox-tools-header2 =
+    .label = Verktyg
 
 ## Labels for sidebar context menu items
 
@@ -116,6 +133,15 @@ sidebar-history-context-menu-bookmark-page =
 sidebar-history-context-menu-delete-pages =
     .label = Ta bort sidor från historiken
 
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = Redigera bokmärke…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = Ta bort bokmärke
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = Ta bort
+
 ## Labels for sidebar menu items.
 
 sidebar-menu-genai-chat-label =
@@ -124,6 +150,11 @@ sidebar-menu-history-label =
     .label = Historik
 sidebar-menu-synced-tabs-label =
     .label = Flikar från andra enheter
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = Öppna flikar
 sidebar-menu-bookmarks-label =
     .label = Bokmärken
 sidebar-menu-customize-label =
@@ -170,16 +201,49 @@ sidebar-menu-history-header =
     .heading = Historik
 sidebar-menu-syncedtabs-header =
     .heading = Flikar från andra enheter
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Öppna flikar
 sidebar-menu-cpm-header =
     .heading = Lösenord
+sidebar-menu-bookmarks-header =
+    .heading = Bokmärken
 sidebar-panel-header-close-button =
     .tooltiptext = Stäng
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = Bokmärkesmeny
+sidebar-bookmarks-folder-toolbar = Verktygsfältet bokmärken
+sidebar-bookmarks-folder-other = Andra bokmärken
+sidebar-bookmarks-folder-mobile = Mobila bokmärken
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = Anpassa sidofält
 sidebar-history-title = Historik
 sidebar-syncedtabs-title = Flikar från andra enheter
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = Öppna flikar
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Fästa flikar
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = Fönster { $winID } (aktuellt)
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Fönster { $winID }
+sidebar-bookmarks-title = Bokmärken
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +279,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = Dölj sidofält ({ $shortcut })
     .label = Sidofält
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Dra viktiga flikar hit för att hålla dem inom räckhåll

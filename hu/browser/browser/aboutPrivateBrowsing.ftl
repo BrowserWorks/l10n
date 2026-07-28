@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = Hagyja, hogy a { -brand-sh
 about-private-browsing-cookie-banners-promo-heading = A { -brand-short-name } gondoskodik a sütibannerekről Ön helyett
 about-private-browsing-cookie-banners-promo-body = Mostantól számos sütibannert automatikusan elutasítunk, így kevesebbet nyomkövetést kap, és visszatérhet a figyelemelterelés nélküli böngészéshez.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = Ne hagyjon nyomot ezen az eszközön
 about-private-browsing-felt-privacy-v1-info-body = A { -brand-short-name } törli a sütiket, előzményeket és oldaladatokat, amikor bezárja az összes privát ablakot.
 about-private-browsing-felt-privacy-v1-info-link = Ki láthatja a tevékenységemet?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Az összes privát ablak bezárása törli a sütijeit, előzményeit és oldaladatait.
+about-private-browsing-nova-info-link = Ki láthatja továbbra is a tevékenységemet?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = A böngészési előzményei törölve lesznek
+about-private-browsing-nova-info-subheader = Az összes keresést és bejelentkezést törölni fogjuk, ha bezárja ezt az ablakot. A { -brand-short-name } beépített védelme itt is be van kapcsolva, például a nyomkövetők blokkolása.

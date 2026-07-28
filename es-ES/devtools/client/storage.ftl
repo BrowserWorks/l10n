@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Añadir elemento
+storage-delete-all-button =
+    .title = Eliminar todo
 # Refresh button title
 storage-refresh-button =
     .title = Actualizar elementos
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Expires / Max-Age
 storage-table-headers-cookies-size = Tamaño
 storage-table-headers-cookies-last-accessed = Último acceso
 storage-table-headers-cookies-creation-time = Creado
+storage-table-headers-cookies-update-time = Actualizado
 storage-table-headers-cache-status = Estado
 storage-table-headers-extension-storage-area = Área de almacenamiento
 

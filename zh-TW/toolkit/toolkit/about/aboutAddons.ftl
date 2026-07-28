@@ -115,6 +115,8 @@ legacy-extensions =
     .value = 傳統擴充套件
 legacy-extensions-description = 這些擴充套件不符合 { -brand-short-name } 目前的標準，已被停用。<label data-l10n-name="legacy-learn-more">了解附加元件有什麼變動</label>
 private-browsing-description2 = { -brand-short-name } 將調整擴充套件於隱私瀏覽模式中運作的方式。預設情況下，任何新安裝至 { -brand-short-name } 的擴充套件都無法在隱私瀏覽視窗中執行。我們這樣做是為了確保您的隱私瀏覽過程更加私密；除非您在設定中允許，否則擴充套件將無法在隱私瀏覽模式中運作，也無法在該模式中存取您的線上行為。<label data-l10n-name="private-browsing-learn-more">了解如何管理擴充套件設定。</label>
+aboutaddons-sidebar =
+    .heading = 附加元件
 addon-category-discover = 推薦項目
 addon-category-discover-title =
     .title = 推薦項目
@@ -165,6 +167,8 @@ extensions-warning-update-security-button = 開啟
 extensions-warning-imported-addons2 =
     .message = 請完成已匯入 { -brand-short-name } 的擴充套件的安裝步驟。
 extensions-warning-imported-addons-button = 安裝擴充套件
+extensions-warning-safe-mode3 =
+    .message = 所有附加元件於「疑難排解模式」中都已停用。
 
 ## Strings connected to add-on updates
 
@@ -251,7 +255,7 @@ shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] 顯示另外 { $numberToShow } 個
     }
-shortcuts-card-collapse-button = 顯示更少
+shortcuts-card-collapse-button = 顯示較少
 header-back-button =
     .title = 回上一頁
 
@@ -272,6 +276,10 @@ colorway-removal-notice-message =
     .message = { -brand-product-name } 已更新配色收藏集。已從您的「儲存的佈景主題」清單移除舊版配色主題，請到附加元件站下載新版主題。
 colorway-removal-notice-learn-more = 更多資訊
 colorway-removal-notice-button = 下載新版配色佈景主題
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = 您的 Windows 對比模式設定會蓋過 { -brand-short-name } 佈景主題。關閉設定後即可使用 { -brand-short-name } 的佈景主題。
 privacy-policy = 隱私權保護政策
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -300,7 +308,7 @@ discopane-intro3 = 您可以使用擴充套件與佈景主題來自訂 { -brand-
 
 ## Add-on actions
 
-report-addon-button = 回報
+report-addon-button = 檢舉
 remove-addon-button = 移除
 # The link will always be shown after the other text.
 remove-addon-disabled-button = 無法移除，<a data-l10n-name="link">為什麼？</a>
@@ -450,11 +458,18 @@ available-updates-heading = 可用的更新
 recent-updates-heading = 最近的更新
 release-notes-loading = 載入中…
 release-notes-error = 抱歉，載入發行公告時發生錯誤。
+addon-permissions-heading = 權限
 addon-permissions-empty2 = 此擴充套件並未要求任何權限。
+addon-permissions-required-label = 必要：
+addon-permissions-optional-label = 選擇性：
 addon-permissions-empty = 此擴充套件並未要求任何權限
 addon-permissions-required = 核心功能需要下列權限：
 addon-permissions-optional = 選用功能需要下列權限：
 addon-permissions-learnmore = 了解權限的更多資訊
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = 某些權限受到您的組織管理。
 recommended-extensions-heading = 推薦的擴充套件
 recommended-themes-heading = 推薦的佈景主題
 # Variables:
@@ -509,9 +524,15 @@ details-notification-hard-blocked-other =
     .message = 此附加元件違反 BrowserWorks 的政策規定，已被停用。
 details-notification-unsigned-link = 更多資訊
 details-notification-blocked = 因為安全性或穩定性因素，{ $name } 已被停用。
-details-notification-blocked2 =
-    .message = 因為安全性或穩定性因素，{ $name } 已被停用。
 details-notification-blocked-link2 = 檢視詳細資訊
+details-notification-soft-blocked-extension-disabled2 =
+    .message = 此擴充套件受到限制，已被停用。您還是可以啟用，但可能會有風險。
+details-notification-soft-blocked-extension-enabled2 =
+    .message = 此擴充套件受到限制，繼續使用可能會有風險。
+details-notification-soft-blocked-other-disabled2 =
+    .message = 此附加元件受到限制，已被停用。您還是可以啟用，但可能會有風險。
+details-notification-soft-blocked-other-enabled2 =
+    .message = 此附加元件受到限制，繼續使用可能會有風險。
 details-notification-soft-blocked-extension-disabled =
     .message = 此擴充套件違反了 BrowserWorks 的政策規定，已被停用。您還是可以開啟，但可能會有風險。
 details-notification-soft-blocked-extension-enabled =
@@ -523,8 +544,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = 檢視詳細資訊
 details-notification-blocked-link = 更多資訊
 details-notification-softblocked = 已知 { $name } 會造成安全性或穩定性問題。
-details-notification-softblocked2 =
-    .message = 已知 { $name } 會造成安全性或穩定性問題。
 details-notification-softblocked-link = 更多資訊
 details-notification-gmp-pending = 即將安裝 { $name }。
 details-notification-gmp-pending2 =
@@ -550,6 +569,10 @@ permissions-data-addon-button = 權限與資料
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = 擴充套件 { $extensionName } 使用
+addon-permissions-data-collection-heading = 資料收集
+addon-permissions-data-collection-empty = 開發者聲稱此擴充套件不要求收集任何資料。
+addon-data-collection-provided = 資訊由擴充套件開發者提供
+addon-data-collection-learnmore = 了解資料收集的更多資訊
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
@@ -558,6 +581,7 @@ mlmodel-link-preview = { -brand-short-name } 使用此功能，在預覽鏈結�
 mlmodel-pdfjs = { -brand-short-name } 使用此功能，為您新增到 PDF 檔案的圖片產生替代文字
 mlmodel-smart-tab-topic-engine = { -brand-short-name } 使用此功能，為您的分頁群組建議名稱
 mlmodel-smart-tab-embedding-engine = { -brand-short-name } 使用此功能，為您的分頁群組建議可加入的分頁
+mlmodel-formfill-engine = { -brand-short-name } 會使用此資訊幫助填寫地址表單
 # AI Model will be downloaded on the users device and used locally
 addon-category-mlmodel = 本機裝置上的 AI
 addon-category-mlmodel-title =

@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = 偏好設定
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = 選項…
+menu-application-set-as-default =
+    .label = 將 { -brand-shorter-name } 設為預設瀏覽器
 menu-application-services =
     .label = 服務
 menu-application-hide-this =
@@ -60,7 +53,7 @@ menu-file-new-tab =
     .label = 開新分頁
     .accesskey = T
 menu-file-new-container-tab =
-    .label = 新增容器分頁
+    .label = 開新容器分頁
     .accesskey = B
 menu-file-new-window =
     .label = 開新視窗
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = 分享
     .accesskey = h
+menu-file-share-qrcode =
+    .label = 產生 QR Code…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = 產生 QR Code
+    .accesskey = Q
 menu-file-print-setup =
     .label = 頁面設定…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = 歷史
 menu-view-synced-tabs-sidebar =
     .label = 同步的分頁
-menu-view-megalist-sidebar =
-    .label = 密碼
 menu-view-full-zoom =
     .label = 縮放
     .accesskey = Z
@@ -266,6 +263,9 @@ menu-profiles-new-profile =
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName }（目前）
+menu-profiles-menu =
+    .label = 設定檔
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = 頁面資訊
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = 編輯 PDF…
+    .accesskey = P
 menu-settings =
     .label = 設定
     .accesskey =
@@ -360,7 +363,7 @@ menu-help-switch-device =
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = 回報詐騙網站…
+    .label = 檢舉詐騙網站…
     .accesskey = D
 menu-help-not-deceptive =
     .label = 這不是詐騙網站…

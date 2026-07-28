@@ -20,6 +20,17 @@ permission-dialog-description-file-app = Consentire a questo file di aprire un l
 permission-dialog-description-extension-app = Consentire all’estensione { $extension } di aprire un link di tipo { $scheme } con { $appName }?
 permission-dialog-description-system-app = Aprire il link di tipo { $scheme } con { $appName }?
 permission-dialog-description-system-noapp = Aprire il link di tipo { $scheme }?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Consentire a questo sito di aprire il tuo portafoglio digitale?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = L’apertura di un link <strong>{ $scheme }</strong> consente a <strong>{ $host }</strong> di richiedere la tua vera identità in <strong>{ $appName }</strong>. Procedere solo se si considera il sito attendibile.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = L’apertura di un link <strong>{ $scheme }</strong> consente a questo sito di richiedere la tua vera identità in <strong>{ $appName }</strong>. Procedere solo se si considera il sito attendibile.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = L’apertura di un link <strong>{ $scheme }</strong> consente a <strong>{ $host }</strong> di richiedere la tua vera identità nel tuo portafoglio digitale. Procedere solo se si considera il sito attendibile.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = L’apertura di un link <strong>{ $scheme }</strong> consente a questo sito di richiedere la tua vera identità nel tuo portafoglio digitale. Procedere solo se si considera il sito attendibile.
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -68,3 +79,24 @@ choose-app-btn =
 choose-other-app-window-title = Altra applicazione…
 # Displayed under the name of a protocol handler in the Launch Application dialog.
 choose-dialog-privatebrowsing-disabled = Disattiva in finestre anonime
+
+## Mailto handler picker
+## Shown when the user clicks a mailto: link and lets them pick which configured
+## web mail service (or the OS default app) should handle email links.
+
+mailto-handler-picker-window =
+    .style = min-width: 26em; min-height: 26em;
+    .title = Scegli l’app di posta elettronica
+mailto-handler-picker-subtitle = Seleziona l’app che vuoi usare per aprire i link email. Potrai cambiare questa scelta in qualunque momento dalle impostazioni.
+# Checkbox letting the user keep being prompted with this picker each time they
+# click an email link, instead of remembering the chosen handler.
+mailto-handler-picker-always-ask = Chiedi sempre quando faccio clic su un link email
+# Confirms the picker: sets the selected app as the handler for email links.
+mailto-handler-picker-set-default =
+    .label = Imposta come predefinito
+    .accesskey = m
+# Dismisses the picker without choosing an email app for now.
+mailto-handler-picker-not-now =
+    .label = Non adesso
+    .accesskey = N
+

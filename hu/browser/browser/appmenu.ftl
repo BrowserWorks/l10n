@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = Nem lehet frissíteni – a rendszer nem kompatibilis
 appmenuitem-banner-update-restart =
     .label = Frissítés érhető el – újraindítás most
+appmenu-nova-fxa-sign-in = Bejelentkezés
+appmenu-nova-switch-device-promo =
+    .message = Hamarosan új eszközt kap? Vigye magával a { -brand-short-name } böngészőt!
+appmenu-nova-switch-device-link = Hogyan költöztesse át az adatait
 appmenuitem-new-tab =
     .label = Új lap
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = Új privát ablak
 appmenuitem-history =
     .label = Előzmények
+appmenuitem-tab-groups =
+    .label = Lapcsoportok
 appmenuitem-downloads =
     .label = Letöltések
 appmenuitem-passwords =
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = A profilozó panel megnyitása
+    .tooltiptext = A profilozó panel megnyitása
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -196,6 +205,9 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = Előbeállítás a { -brand-shorter-name } hang- és videóhibáinak kivizsgálásához.
 profiler-popup-presets-media-label =
     .label = Média
+profiler-popup-presets-ml-description = Előbeállítás a { -brand-shorter-name } gépi tanulási hibáinak kivizsgálásához.
+profiler-popup-presets-ml-label =
+    .label = Gépi tanulás
 profiler-popup-presets-networking-description = Előbeállítás a { -brand-shorter-name } hálózati hibák kivizsgálásához.
 profiler-popup-presets-networking-label =
     .label = Hálózat
@@ -206,6 +218,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Előbeállítás a { -brand-shorter-name }ban való hibakereséshez. Magas többletterhelés, ne teljesítménykritikus munkához használja, hanem a böngésző viselkedésének megértéséhez.
 profiler-popup-presets-debug-label =
     .label = Hibakeresés
+profiler-popup-presets-web-compat-description = Ajánlott előbeállítás a weboldalak webes kompatibilitási problémáinak kereséséhez, nem pedig a teljesítmény követéséhez.
+profiler-popup-presets-web-compat-label =
+    .label = Webkompatibilitás
 profiler-popup-presets-custom-label =
     .label = Egyéni
 
@@ -271,6 +286,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Eszköztár testreszabása…
+appmenu-abouttranslations =
+    .label = Fordítás…
+appmenu-edit-pdf =
+    .label = PDF szerkesztése…
 appmenu-developer-tools-subheader = Böngészőeszközök
 appmenu-developer-tools-extensions =
     .label = Kiegészítők fejlesztőknek
@@ -286,8 +305,17 @@ appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Maszkolja a valódi e-mail-címét és telefonszámát
 appmenuitem-services-relay-description = E-mail-maszkok irányítópultjának elindítása
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Kapjon teljes eszközvédelmet
 appmenuitem-vpn-description = Védje meg az online tevékenységét
 appmenu-services-header = Saját szolgáltatások
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Adatvédelmi eszközök
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Próbálja ki a BrowserWorks más védelmi eszközeit:
 appmenu-other-protection-header = Próbálja ki a { -vendor-short-name } egyéb védelmi eszközeit:
 
 ## Profiles panel
@@ -295,6 +323,8 @@ appmenu-other-protection-header = Próbálja ki a { -vendor-short-name } egyéb 
 appmenu-other-profiles = Egyéb profilok
 appmenu-manage-profiles =
     .label = Profilok kezelése
+appmenu-copy-profile =
+    .label = Profil másolása
 appmenu-create-profile =
     .label = Új profil
 appmenu-edit-profile =

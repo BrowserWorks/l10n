@@ -74,6 +74,8 @@ fxa-adoption-addresses-backup-title = Резервне копіювання зб
 fxa-adoption-addresses-backup-subtitle = Захистіть свої збережені адреси, синхронізувавши їх з іншими пристроями за допомогою шифрування.
 fxa-adoption-credit-cards-backup-title = Резервне копіювання способів оплати
 fxa-adoption-credit-cards-backup-subtitle = Захистіть свої способи оплати, синхронізувавши їх з іншими пристроями за допомогою шифрування.
+fxa-adoption-bookmarks-treatment-backup-title = Створіть резервну копію своїх закладок
+fxa-adoption-bookmarks-treatment-backup-subtitle = Захистіть свої закладки, синхронізувавши їх з іншими пристроями за допомогою шифрування.
 fxa-adoption-primary-button-label = Зареєструватись
 
 ## Protections panel
@@ -233,6 +235,20 @@ fox-doodle-pin-secondary = Не зараз
 
 set-default-pdf-handler-headline = <strong>Тепер ваші файли PDF відкриватимуться в { -brand-short-name }.</strong> Редагуйте й підписуйте форми безпосередньо в браузері. Щоб змінити поведінку, шукайте “PDF” у налаштуваннях.
 set-default-pdf-handler-primary = Зрозуміло
+
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = Поставте свій підпис де завгодно!
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = Намалюйте, надрукуйте або вивантажте свій підпис, а потім розмістіть його саме там, де потрібно. Зберігайте свої підписи для подальшого використання.
+annotations-make-default-pdf-handler-title = Зробити { -brand-short-name } типовим редактором PDF?
+annotations-make-default-pdf-handler-subtitle = Ви матимете доступ до наших інструментів щоразу, коли відкриватимете PDF-файл.
+annotations-make-default-pdf-primary-cta-label = Зробити типовим
+annotations-make-default-pdf-next-label = Далі
 
 ## FxA sync CFR
 
@@ -403,9 +419,24 @@ windows-10-eos-feature-toast-dismiss-button = Відхилити
 ## issues. The infobar offers users the option to apply automatic exceptions
 ## to fix common site breakage by unblocking essential elements.
 
-etp-strict-exceptions-infobar-message = <strong>Надійний захист від відстеження може призвести до збоїв у роботі сайтів.</strong> Усуньте поширені проблеми, розблокувавши важливі елементи, які можуть містити стеження.
+etp-strict-exceptions-infobar-message = <strong>Надійний захист від стеження може призвести до збоїв у роботі сайтів.</strong> Усуньте поширені проблеми, розблокувавши важливі елементи, які можуть містити стеження.
 etp-strict-exceptions-infobar-learn-more = Докладніше
 etp-strict-exceptions-infobar-button = Застосувати усунення проблем
     .accesskey = З
 etp-strict-exceptions-infobar-not-now = Не зараз
     .accesskey = е
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } не є вашим типовим браузером
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } не є вашим основним браузером
+set-default-menu-message-row-layout-title = Зробіть { -brand-short-name } своїм основним браузером
+set-default-menu-message-row-layout-title-variant = Зробіть { -brand-short-name } своїм типовим браузером
+set-default-menu-message-row-layout-subtitle = Отримайте швидкість, безпеку та приватність завжди під час перегляду.
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] Тримайте { -brand-short-name } під рукою – зробіть його своїм типовим браузером і додайте до Dock.
+       *[other] Тримайте { -brand-short-name } під рукою – зробіть його своїм типовим браузером і закріпіть на панелі завдань.
+    }
+set-default-menu-message-primary-button = Зробити типовим
+set-default-menu-message-primary-button-variant = Зробити основним браузером

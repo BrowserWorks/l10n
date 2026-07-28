@@ -35,7 +35,9 @@ xpinstall-prompt-install =
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
 site-permission-install-first-prompt-midi-header = Цей сайт запитує доступ до ваших пристроїв MIDI (цифровий інтерфейс музичних інструментів). Можна надати доступ до пристроїв, установивши додаток.
-site-permission-install-first-prompt-midi-message = Неможливо гарантувати безпеку цього доступу. Продовжуйте, лише якщо ви довіряєте цьому сайту.
+site-permission-install-first-prompt-midi-message = Неможливо гарантувати безпеку цього доступу. Продовжуйте лише якщо ви довіряєте цьому сайту.
+site-permission-install-first-prompt-serial-header = Цей сайт запитує доступ до ваших послідовних пристроїв. Доступ до пристрою можна ввімкнути, встановивши додаток.
+site-permission-install-first-prompt-serial-message = Неможливо гарантувати безпеку цього доступу. Продовжуйте лише якщо ви довіряєте цьому сайту.
 
 ##
 
@@ -144,6 +146,7 @@ addon-local-install-no-addon-name-error-file-access = Не вдалося вст
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } не вдалося встановити через його несумісність з { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = Розширення { $addonName } порушує політики BrowserWorks, тому його не можна встановити в { -brand-short-name }.
+addon-install-error-soft-blocked2 = Розширення { $addonName } має обмеження, тому його не можна встановити в { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } неможливо встановити через високу ймовірність спричинення проблем безпеки та стабільності.
 addon-install-error-soft-blocked = Розширення { $addonName } порушує політики BrowserWorks, тому його не можна встановити в { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

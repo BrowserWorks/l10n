@@ -20,6 +20,7 @@ about-glean-category-manual-testing = Testowanie ręczne
 about-glean-category-adhoc-testing = Testowanie ad hoc
 about-glean-category-profiler = Używanie profilera
 about-glean-category-about-data = Informacje o danych
+about-glean-category-metrics-table = Tabela statystyk
 about-glean-upload-enabled = Przesyłanie danych jest włączone.
 about-glean-upload-disabled = Przesyłanie danych jest wyłączone.
 about-glean-upload-enabled-local = Przesyłanie danych jest włączone tylko do wysyłania do lokalnego serwera.
@@ -82,7 +83,7 @@ about-glean-label-for-controls-submit =
     (Wszystkie pingi wysłane od tej chwili do ponownego uruchomienia aplikacji będą oznaczone jako
     <code>{ $debug-tag }</code>.)
 about-glean-li-for-visit-gdpv =
-    <a data-l10n-name="gdpv-tagged-pings-link">Otwórz stronę programu { glean-debug-ping-viewer-brand-name }, aby zobaczyć pingi z wybranym znacznikiem</a>.
+    <a data-l10n-name="gdpv-tagged-pings-link">Otwórz stronę { glean-debug-ping-viewer-brand-name }, aby zobaczyć pingi z wybranym znacznikiem</a>.
     Od naciśnięcia przycisku do pojawienia się pingu nie powinno upłynąć więcej niż kilka sekund.
     Czasami może to zająć kilka minut.
 # Do not translate strings between <code> </code> tags.
@@ -127,6 +128,71 @@ about-glean-about-data-list-item-dictionary =
 about-glean-about-data-list-item-about-telemetry = <a data-l10n-name="about-telemetry-link">about:telemetry</a> umożliwia przeglądanie danych zbieranych przez starszą telemetrię.
 about-glean-about-data-list-item-debug-ping-viewer = <a data-l10n-name="glean-debug-ping-viewer">{ glean-debug-ping-viewer-brand-name }</a> umożliwia przeglądanie znaczników debugowania, wyświetlanie pełnych pingów, strumienia wydarzeń na żywo i wizualizacji statystyk.
 about-glean-about-data-list-item-firefox-profiler = <a data-l10n-name="about-glean-firefox-profiler">{ -profiler-brand-name }</a> umożliwia zarejestrowanie profilu wydajności i wyświetlenie wszystkich zarejestrowanych statystyk.
+about-glean-metrics-table-header = Wszystkie statystyki
+# This message refers to the category in which a given metric is recorded.
+about-glean-metrics-table-header-category = Kategoria
+# This message refers to the name of a given metric.
+about-glean-metrics-table-header-name = Nazwa
+# This message refers to a given metric's metric type.
+about-glean-metrics-table-header-type = Typ
+# This message refers to the underlying value of a given metric.
+about-glean-metrics-table-header-value = Wartość
+# This message refers to the UI action buttons for a given metric.
+about-glean-metrics-table-header-actions = Działania
+about-glean-metrics-table-settings-button = Ustawienia
+# Settings for the metrics table and its visualizations in about:glean
+about-glean-metrics-table-settings-title = Ustawienia tabeli statystyk
+about-glean-metrics-table-settings-category-general = Ogólne
+about-glean-metrics-table-settings-hide-empty-value-rows = Ukrywanie wierszy z pustymi wartościami
+about-glean-metrics-table-settings-category-visualizations = Wizualizacje
+# This is a heading that is immediately followed by an example data visualization
+about-glean-metrics-table-settings-visualization-example = Przykład
+about-glean-metrics-table-settings-category-visualizations-histogram = Histogram
+about-glean-metrics-table-settings-histograms-chart-max = Maksymalna wysokość wykresu
+# The maximum height after to which the y-values on the chart will be scaled
+about-glean-metrics-table-settings-histograms-scaled-max = Maksymalna wysokość skalowania
+about-glean-metrics-table-settings-histograms-box-padding = Odstęp pola
+about-glean-metrics-table-settings-histograms-chart-padding = Odstęp wykresu
+about-glean-metrics-table-settings-histograms-left-padding = Dodatkowy odstęp po lewej
+about-glean-metrics-table-settings-category-visualizations-timeline = Oś czasu
+about-glean-metrics-table-settings-timelines-height = Wysokość
+about-glean-metrics-table-settings-timelines-width = Szerokość
+about-glean-metrics-table-settings-timelines-chart-padding = Odstęp wykresu
+# The radius of each circle denoting individual events recorded for an event metric
+about-glean-metrics-table-settings-timelines-circle-radius = Promień okręgu
+# The offset on the x-axis from the end of the horizontal line for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-x-offset = Przesunięcie osi X względem osi Y
+# The offset on the y-axis from the x-axis for the y-axis line
+about-glean-metrics-table-settings-timelines-vertical-line-y-offset = Przesunięcie osi Y względem osi Y
+# Label displayed near an input field that can be used to filter metrics
+about-glean-label-for-filter-metrics = Filtruj
+# This message sits alongside an input field, further describing its purpose.
+# Category refers to the category in which a given metric is recorded.
+# Name refers to the name of a given metric.
+# Type refers to a given metric's metric type.
+# Value refers to the underlying value of a given metric.
+# "Simple type" refers to a value type that does not have deeply-nested data, such as a boolean, number, string, or list of strings.
+about-glean-description-for-filter-metrics = Spowoduje to przefiltrowanie poniższej tabeli na podstawie kategorii, nazwy, typu i wartości (jeśli wartość jest typem prostym).
+about-glean-button-load-all = Wczytaj wszystkie wartości
+# A button that, when pressed, exports the data currently shown in the metrics table
+about-glean-button-export-data = Eksportuj dane
+about-glean-button-load-value = Wczytaj
+# "Docs" is shorthand for "documentation"
+about-glean-button-dictionary-link = Dokumentacja
+about-glean-button-watch = Obserwuj
+# Meaning "to stop watching"
+about-glean-button-unwatch = Przestań obserwować
+about-glean-no-data-to-display = Brak danych do wyświetlenia.
+# Do not translate strings between <code> </code> tags.
+about-glean-dual-labeled-metric-warning = Statystyki <code>DualLabeledCounter</code> nie są jeszcze obsługiwane na stronie <code>about:glean</code>.
+about-glean-unknown-metric-type-warning = Nieznany typ statystyk.
 about-glean-about-data-explanation =
     <a data-l10n-name="glean-dictionary-link">Słownik { -glean-brand-name }</a>
     umożliwia przeglądanie listy zebranych danych.
+
+## These labels are displayed to organize the different ping types within the dropdown.
+
+about-glean-ping-list-optgroup-built-in =
+    .label = Wbudowane pingi
+about-glean-ping-list-optgroup-custom =
+    .label = Niestandardowe pingi

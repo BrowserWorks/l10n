@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = 다른 브라우저�
 contextual-manager-passwords-command-import = 파일에서 가져오기…
 contextual-manager-passwords-command-export = 비밀번호 내보내기
 contextual-manager-passwords-command-remove-all = 모든 비밀번호 제거
+contextual-manager-passwords-command-options = 옵션
 contextual-manager-passwords-command-settings = 설정
 contextual-manager-passwords-command-help = 도움말
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = 신규: { $added }개, 업데이트됨: { $modified }개
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = 신규: { $added }개, 업데이트됨: { $modified }, 중복: { $no_change }, 오류: { $error }
 contextual-manager-passwords-import-detailed-report = 자세한 보고서 보기
 contextual-manager-passwords-import-success-button = 완료
 contextual-manager-passwords-import-error-heading-and-message =
@@ -151,7 +158,7 @@ contextual-manager-passwords-password-already-exists-error-button = 비밀번호
 contextual-manager-passwords-update-password-success-heading =
     .heading = 비밀번호 저장됨
 contextual-manager-passwords-update-password-success-button = 완료
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = 사용자 이름 저장됨
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -204,12 +211,15 @@ contextual-manager-passwords-title = 비밀번호
 
 contextual-manager-passwords-create-label =
     .label = 비밀번호 추가
+contextual-manager-passwords-update-label =
+    .label = 비밀번호 업데이트
 contextual-manager-passwords-edit-label =
     .label = 비밀번호 편집
 contextual-manager-passwords-remove-label =
     .title = 비밀번호 제거
 contextual-manager-passwords-origin-tooltip = 이 사이트에 로그인할 정확한 주소를 입력하세요.
 contextual-manager-passwords-username-tooltip = 사용자 이름, 이메일 주소 또는 로그인할 때 사용한 계정 번호를 입력하세요.
+contextual-manager-passwords-password-tooltip-2 = 이 계정에 로그인하려면 비밀번호를 입력하세요.
 contextual-manager-passwords-password-tooltip = 이 계정에 로그인할 때 사용했던 비밀번호를 입력해 주세요.
 
 ## Password Card
@@ -286,6 +296,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = 비밀번호를 찾을 수 없음
+contextual-manager-passwords-no-passwords-found-message-2 = 다른 용어를 사용하고 다시 검색해 보세요.
 contextual-manager-passwords-no-passwords-found-message = 비밀번호를 찾을 수 없습니다. 다른 용어를 검색하고 다시 시도하세요.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -300,6 +311,8 @@ contextual-manager-passwords-no-passwords-message = 모든 비밀번호는 암�
 contextual-manager-passwords-no-passwords-get-started-message = 시작하려면 여기에 추가하세요.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = 직접 추가
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = 비밀번호를 안전한 곳에 저장하세요
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -315,3 +328,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] 예, 비밀번호 제거
        *[other] 예, 비밀번호 제거
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = 저장된 비밀번호를 보려면, 기본 비밀번호를 입력하세요.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = 기본 비밀번호 입력
+contextual-manager-primary-password-learn-more-link = 더 알아보기

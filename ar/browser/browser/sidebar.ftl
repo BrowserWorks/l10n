@@ -2,6 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+menu-view-genai-chat =
+    .label = روبوت دردشة بالذكاء الاصطناعي
+menu-view-contextual-password-manager =
+    .label = كلمات السر
 sidebar-options-menu-button =
     .title = افتح القائمة
 
@@ -17,10 +21,26 @@ sidebar-history-date-this-month =
     .heading = { DATETIME($date, dateStyle: "full") }
 sidebar-history-date-prev-month =
     .heading = { DATETIME($date, month: "long", year: "numeric") }
+# When history is sorted by site, this heading is used in place of a domain, in
+# order to group sites that do not come from an outside host.
+# For example, this would be the heading for all file:/// URLs in history.
+sidebar-history-site-localhost =
+    .heading = (ملفات محلية)
 sidebar-history-delete =
     .title = احذف من التأريخ
 sidebar-history-clear =
     .label = امسح التأريخ
+sidebar-history-sort-by-heading-menucaption =
+    .label = رتّب حسب:
+sidebar-history-sort-by-heading = رتّب حسب:
+sidebar-history-sort-option-date =
+    .label = التاريخ
+sidebar-history-sort-option-site =
+    .label = الموقع
+sidebar-history-sort-option-date-and-site =
+    .label = التاريخ والموقع
+sidebar-history-sort-option-last-visited =
+    .label = آخر زيارة
 
 ## Labels for sidebar search
 
@@ -37,7 +57,25 @@ sidebar-customize-firefox-tools-header =
     .label = أدوات { -brand-product-name }
 sidebar-customize-firefox-settings = إدارة إعدادات { -brand-short-name }
 sidebar-vertical-tabs =
-    .label = ألسنة العمودية
+    .label = ألسنة رأسية
+sidebar-settings2 =
+    .label = الإعدادات
+sidebar-settings =
+    .label = إعدادات الشريط الجانبي
+sidebar-hide-tabs-and-sidebar =
+    .label = أخفِ الألسنة والشريط الجانبي
+sidebar-show-on-the-right =
+    .label = انقل الشريط الجانبي إلى اليمين
+sidebar-show-on-the-left =
+    .label = انقل الشريط الجانبي إلى اليسار
+# Option to automatically expand the collapsed sidebar when the mouse pointer
+# hovers over it.
+expand-sidebar-on-hover =
+    .label = توسيع الشريط عن مرور مؤشر الفأرة
+sidebar-manage-extensions2 = أدِر كل الامتدادات
+sidebar-customize-extensions-header2 = الامتدادات
+sidebar-customize-firefox-tools-header2 =
+    .label = أدوات
 
 ## Labels for sidebar context menu items
 
@@ -47,24 +85,57 @@ sidebar-context-menu-remove-extension =
     .label = أزِل الامتداد
 sidebar-context-menu-report-extension =
     .label = أبلِغ عن الامتداد
+sidebar-context-menu-open-in-tab =
+    .label = افتح في لسان جديد
+sidebar-context-menu-open-in-container-tab =
+    .label = افتح في لسانٍ حاوٍ جديد
 sidebar-context-menu-open-in-window =
     .label = افتح في نافذة جديدة
 sidebar-context-menu-open-in-private-window =
     .label = افتح في نافذة خاصة جديدة
+sidebar-context-menu-forget-site =
+    .label = امحُ كل البيانات الخاصة بالموقع…
 sidebar-context-menu-bookmark-tab =
     .label = علّم اللسان…
 sidebar-context-menu-copy-link =
     .label = انسخ الرابط
+sidebar-context-menu-hide-sidebar =
+    .label = أخفِ الشريط الجانبي
+sidebar-context-menu-enable-vertical-tabs =
+    .label = فعِّل الألسنة الرأسية
+sidebar-context-menu-customize-sidebar =
+    .label = تخصيص الشريط الجانبي
 # Variables:
 #   $deviceName (String) - The name of the device the user is closing a tab for
 sidebar-context-menu-close-remote-tab =
     .label = أغلق اللسان على { $deviceName }
+sidebar-context-menu-remove-extension2 =
+    .label = أزل من { -brand-short-name }
+sidebar-context-menu-unpin-extension =
+    .label = أزل من الشريط الجانبي
 
 ## Labels for sidebar history context menu items
 
+sidebar-history-context-menu-delete-page-2 =
+    .label = احذف الصفحة من التأريخ
+sidebar-history-context-menu-bookmark-page =
+    .label = علِّم الصفحة…
+sidebar-history-context-menu-delete-pages =
+    .label = احذف الصفحات من التأريخ
+
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = حرّر العلامة…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = احذف العلامة
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = احذف
 
 ## Labels for sidebar menu items.
 
+sidebar-menu-genai-chat-label =
+    .label = روبوت دردشة بالذكاء الاصطناعي
 sidebar-menu-history-label =
     .label = التأريخ
 sidebar-menu-synced-tabs-label =
@@ -73,6 +144,10 @@ sidebar-menu-bookmarks-label =
     .label = العلامات
 sidebar-menu-customize-label =
     .label = تخصيص الشريط الجانبي
+sidebar-menu-contextual-password-manager-label =
+    .label = كلمات السر
+sidebar-menu-more-tools-label =
+    .label = المزيد من الأدوات
 
 ## Tooltips for sidebar menu items.
 
@@ -98,6 +173,10 @@ sidebar-menu-close-bookmarks-tooltip = أغلق العلامات ({ $shortcut })
 ##   $shortcut (String) - The OS specific keyboard shortcut.
 ##   $provider (String) - The name of the AI chatbot provider (if available).
 
+sidebar-menu-open-ai-chatbot-tooltip-generic = افتح محادثة الذكاء الاصطناعي ({ $shortcut })
+sidebar-menu-open-ai-chatbot-provider-tooltip = افتح { $provider } ({ $shortcut })
+sidebar-menu-close-ai-chatbot-tooltip-generic = أغلق روبوت المحادثة AI ({ $shortcut })
+sidebar-menu-close-ai-chatbot-provider-tooltip = أغلق { $provider } ({ $shortcut })
 
 ## Headings for sidebar menu panels.
 
@@ -107,14 +186,26 @@ sidebar-menu-history-header =
     .heading = تاريخ
 sidebar-menu-syncedtabs-header =
     .heading = ألسنة من أجهزة أخرى
+sidebar-menu-cpm-header =
+    .heading = كلمات السر
+sidebar-menu-bookmarks-header =
+    .heading = العلامات
 sidebar-panel-header-close-button =
     .tooltiptext = أغلق
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = قائمة العلامات
+sidebar-bookmarks-folder-toolbar = شريط العلامات
+sidebar-bookmarks-folder-other = العلامات الأخرى
+sidebar-bookmarks-folder-mobile = علامات الجوّال
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = تخصيص الشريط الجانبي
 sidebar-history-title = تاريخ
 sidebar-syncedtabs-title = ألسنة من أجهزة أخرى
+sidebar-bookmarks-title = العلامات
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -148,5 +239,9 @@ sidebar-widget-show-sidebar2 =
 # Variables:
 #   $shortcut (String) - The OS specific keyboard shortcut.
 sidebar-widget-hide-sidebar2 =
-    .tooltiptext = إخفاء الشريط الجانبي ({ $shortcut })
+    .tooltiptext = أخفِ الشريط الجانبي ({ $shortcut })
     .label = الأشرطة الجانبية
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = اسحب الألسنة المهمة هنا للوصول السريع

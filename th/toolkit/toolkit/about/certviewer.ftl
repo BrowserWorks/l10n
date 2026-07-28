@@ -36,10 +36,17 @@ certificate-viewer-key-size = ขนาดคีย์
 certificate-viewer-inc-locality = สถานที่ที่ก่อตั้ง
 certificate-viewer-locality = สถานที่
 certificate-viewer-location = ตำแหน่งที่ตั้ง
+# Log is a noun meaning a record of events.
+certificate-viewer-log-name = ชื่อปูม
+# Log is a noun meaning a record of events.
 certificate-viewer-logid = ID รายการบันทึก
 certificate-viewer-method = วิธีการ
 certificate-viewer-modulus = โมดูลัส
 certificate-viewer-name = ชื่อ
+certificate-viewer-surname = นามสกุล
+# See https://datatracker.ietf.org/doc/html/rfc4519#section-2.12
+# Contains name strings that are the part of a person's name that is not their surname.
+certificate-viewer-given-name = ชื่อ
 certificate-viewer-not-after = ก่อน
 certificate-viewer-not-before = หลัง
 certificate-viewer-organization = องค์กร
@@ -110,6 +117,8 @@ certificate-viewer-export = ส่งออก
 
 # Label for a tab where we haven't found a better label:
 certificate-viewer-unknown-group-label = (ไม่ทราบ)
+# Name for a file where we haven't found a better name:
+certificate-viewer-unknown-file-name = ใบรับรอง
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

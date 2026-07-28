@@ -4,9 +4,6 @@
 
 do-not-track-description = أرسل للمواقع إشارة ”لا تتعقبني“ بأنك لا تريد أن يتعقبوك
 do-not-track-removal = لم نعد ندعم إشارة "لا تتعقبني"
-do-not-track-description2 =
-    .label = أرسل للمواقع طلب"لا تتعقبني"
-    .accesskey = س
 do-not-track-learn-more = اطّلع على المزيد
 do-not-track-option-default-content-blocking-known =
     .label = فقط حين يُضبط { -brand-short-name } على حجب المتعقّبات المعروفة
@@ -15,12 +12,23 @@ do-not-track-option-always =
 global-privacy-control-description =
     .label = أخبر مواقع الويب بعدم بيع بياناتي أو مشاركتها
     .accesskey = ش
+non-technical-privacy-group =
+    .label = تفضيلات خصوصية الموقع
+do-not-track-removal3 =
+    .message = لم نعد ندعم ميزة "لا تتعقبني".
+non-technical-privacy-heading =
+    .label = حمايات إضافية
+preferences-privacy-relay-available =
+    .label = اقتراح أقنعة البريد الإلكتروني { -relay-brand-name }
+    .description = يخفي عنوان بريدك الإلكتروني الحقيقي لحماية صندوق الوارد الخاص بك من الرسائل المزعجة.
 non-technical-privacy-header = تفضيلات خصوصية الموقع
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = التحكم العالمي في الخصوصية (GPC)
 settings-page-title = الإعدادات
+category-nav-heading =
+    .heading = الإعدادات
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -32,26 +40,54 @@ settings-page-title = الإعدادات
 search-input-box2 =
     .style = width: 15.4em
     .placeholder = ابحث في الإعدادات
-managed-notice = تُدير منظّمتك المتصفح الذي تستخدم الآن.
+managed-notice = متصفحك يُدار من قِبل منظّمتك.
 managed-notice-info-icon =
     .alt = معلومة
+managed-notice-nav =
+    .label = تُدير منظّمتك المتصفح الذي تستخدم الآن.
 category-list =
     .aria-label = الفئات
 pane-general-title = عام
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = المنزل
+pane-home-startup-title2 = الصفحة الرئيسية والبدء
+    .title = الصفحة الرئيسية والبدء
+pane-search-title2 = البحث
+    .title = البحث
+pane-privacy-title3 = الخصوصية و الأمان
+    .title = الخصوصية و الأمان
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = البحث
 category-search =
     .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = الخصوصية و الأمان
 pane-privacy-title = الخصوصية و الأمان
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = المزامنة
+pane-ai-controls-title2 = أنظمة التحكم بالذكاء الاصطناعي
+    .title = أنظمة التحكم بالذكاء الاصطناعي
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = عن { -brand-short-name }
+    .title = { pane-about-firefox-title }
+pane-appearance-title = المظهر
+    .title = { pane-appearance-title }
+pane-downloads-title2 = التنزيلات
+    .title = التنزيلات
+pane-downloads3 =
+    .heading = التنزيلات
+pane-accessibility-title = الإتاحة
+    .title = { pane-accessibility-title }
+pane-languages-title2 = اللغات
+    .title = اللغات
+preferences-languages-header3 =
+    .heading = اللغات
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
 pane-experimental-title = تجارب { -brand-short-name }
 category-experimental =
     .tooltiptext = تجارب { -brand-short-name }
@@ -59,18 +95,29 @@ pane-experimental-subtitle = واصِل وأنت حذر
 pane-experimental-search-results-header = تجارب { -brand-short-name }: واصِل وأنت حذر
 pane-experimental-description2 = يمكن أن يؤثّر التغيير على إعدادات الضبط المتقدمة أداء { -brand-short-name } وأمنه.
 settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = جرّب ميزاتنا التجريبية! إنها قيد التطوير والتحديث، مما قد يؤثر على طريقة عمل { -brand-short-name } . لا نتلقى بيانات حول استخدامك لهذه الميزات إلا إذا كنت قد فعّلت <a data-l10n-name="data-collection">البيانات التقنية والتفاعلية</a>.
 pane-experimental-description3 = جرّب ميزاتنا التجريبية! فهي قيد التطوير والتطور، مما قد يؤثر على كيفية عمل { -brand-short-name }.
 pane-experimental-reset =
     .label = استعد المبدئيات
     .accesskey = س
+help-button-label2 = دعم { -brand-short-name }
+    .title = دعم { -brand-short-name }
+addons-button-label2 = الامتدادات والسمات
+    .title = الامتدادات والسمات
 help-button-label = دعم { -brand-short-name }
 addons-button-label = الامتدادات والسمات
 focus-search =
     .key = f
 close-button =
     .aria-label = أغلق
+do-not-track-removal2 =
+    .label = لم نعد ندعم إشارة "لا تتعقبني"
+applications-setting-new-file-types =
+    .label = ما الذي يجب أن يفعله { -brand-short-name } مع الملفات الأخرى؟
 
 ## Browser Restart Dialog
 
@@ -112,6 +159,10 @@ extension-controlling-proxy-config = يتحكم <img data-l10n-name ="icon"/> <s
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
 extension-controlled-enable = لتفعيل الامتداد انتقل إلى <img data-l10n-name="addons-icon"/> الإضافات في <img data-l10n-name="menu-icon"/> القائمة.
+extension-controlled-enable-2 = لإعادة تفعيل هذه الامتدادة، تفضل بزيارة <a data-l10n-name="addons-link">الامتدادات والسمات</a>.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = يتحكم { $name } في بعض إعدادات صفحتك الرئيسية.
 
 ## Preferences UI Search Results
 
@@ -137,19 +188,65 @@ startup-restore-windows-and-tabs =
 windows-launch-on-login =
     .label = افتح { -brand-short-name } تلقائيًا عند بدء تشغيل حاسوبك
     .accesskey = ع
+windows-launch-on-login-disabled = عُطّل هذا الخيار في نظام التشغيل ويندوز. لتغييره، انتقل إلى <a data-l10n-name="startup-link">تطبيقات بدء التشغيل</a> في إعدادات النظام.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = افتح أيضًا لسان جديد
+    .accesskey = ف
 startup-restore-warn-on-quit =
     .label = نبّهني عند إنهاء المتصفح
 disable-extension =
     .label = عطّل الامتداد
+preferences-data-migration-group =
+    .label = استورِد بيانات المتصفح
+    .description = استورد العلامات وكلمات السر والسجل والامتدادات وبيانات التعبئة التلقائية من متصفح آخر.
 preferences-data-migration-header = استورد بيانات المتصفح
 preferences-data-migration-description = استورد العلامات وكلمات السر والتأريخ وبيانات الملء الآلي إلى { -brand-short-name }.
 preferences-data-migration-button =
     .label = استورد البيانات
     .accesskey = د
+preferences-profiles-group-header =
+    .heading = ملفات الإعدادات
+preferences-profiles-subpane-description =
+    .description = يحتوي كل ملف شخصي على بيانات وإعدادات تصفح منفصلة، بما في ذلك السجل وكلمات السر والمزيد.
+preferences-profiles-section-header =
+    .label = ملفات شخصية
+    .description = لكل ملف شخصي بيانات تصفح وإعدادات منفصلة، بما في ذلك التأريخ وكلمات السر وغيرها.
 preferences-profiles-header = ملفات الإعدادات
+preferences-manage-profiles-description = يحتوي كل ملف شخصي على بيانات وإعدادات تصفح منفصلة، بما في ذلك السجل وكلمات السر والمزيد.
 preferences-manage-profiles-learn-more = اطّلع على المزيد
 preferences-manage-profiles-button =
     .label = أدِر ملفات الإعدادات
+preferences-profiles-settings-button =
+    .label = الإعدادات
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = انسخ ملف شخصي موجود بالفعل
+    .description = سيقوم الملف الشخصي الجديد بنسخ إعداداتك وإضافاتك وتأريخك وبياناتك المحفوظة مثل العلامات وكلمات السر - ولكن ليس حسابك أو معلومات المزامنة.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = الملف الشخصي المراد نسخه
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = اختر الملف الشخصيّ
+preferences-copy-profile-button = انسخ
+tabs-browsing-section =
+    .heading = الألسنة والتصفح
+pane-tabs-browsing-title2 = الألسنة والتصفح
+    .title = الألسنة والتصفح
+tabs-group-header2 =
+    .label = الألسنة
+tabs-opening-heading =
+    .label = فتح
+tabs-interaction-heading =
+    .label = تفاعل
+tabs-containers-heading =
+    .label = الحاويات
+tabs-closing-heading =
+    .label = إغلاق
 tabs-group-header = الألسنة
 ctrl-tab-recently-used-order =
     .label = ‏Ctrl+Tab يتنقّل عبر الألسنة حسب ترتيب آخر استخدام
@@ -157,6 +254,8 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = افتح الروابط في ألسنة بدل فتح نوافذ جديدة
     .accesskey = ن
+open-external-link-next-to-active-tab =
+    .label = افتح الروابط من التطبيقات الموجودة بجوار اللسان النشط
 ask-on-close-multiple-tabs =
     .label = اسأل قبل محاولة إغلاق عدّة ألسنة
     .accesskey = د
@@ -182,20 +281,31 @@ confirm-on-quit-with-key =
 warn-on-open-many-tabs =
     .label = نبّهني عند فتح عدة ألسنة أن هذا قد يبطئ { -brand-short-name }
     .accesskey = ف
+switch-to-new-tabs-2 =
+    .label = عند فتح الروابط أو الوسائط في ألسنة جديدة، انتقل إليها فورًا.
+    .accesskey = ف
 switch-to-new-tabs =
     .label = عند فتح رابط أو صورة أو وسيط في لسان جديد، انتقل إليه مباشرة
     .accesskey = ع
 show-tabs-in-taskbar =
     .label = أظهِر معاينات للألسنة في شريط مهام ويندوز
     .accesskey = و
+browser-containers-enabled-2 =
+    .label = استخدم الألسنة الحاوية
+    .accesskey = د
 browser-containers-enabled =
     .label = فعل الألسنة الحاوية
     .accesskey = ف
 browser-containers-learn-more = اطّلع على المزيد
+browser-containers-settings-2 =
+    .label = أدر الإعدادات
+    .accesskey = د
 browser-containers-settings =
     .label = الإعدادات…
     .accesskey = د
 containers-disable-alert-title = أأغلق كل الألسنة الحاوية؟
+startup-group =
+    .label = البدء
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
@@ -236,12 +346,29 @@ containers-remove-cancel-button = لا تزِل هذه الحاوية
 settings-tabs-show-image-in-preview =
     .label = أظهِر معاينة الصورة عند التحويم فوق اللسان
     .accessKey = ع
+settings-tabs-drag-to-create-tab-groups =
+    .label = اسحب الألسنة معًا لإنشاء مجموعات الألسنة
+browser-layout-header2 =
+    .label = تخطيط المتصفح
+browser-layout-horizontal-tabs2 =
+    .label = ألسنة أفقية
+    .title = ألسنة في الأعلى
+    .description = ألسنة في الأعلى
+browser-layout-vertical-tabs2 =
+    .label = ألسنة رأسية
+    .title = ألسنة جانبية، في الشريط الجانبي
+    .description = ألسنة جانبية، في الشريط الجانبي
+browser-layout-show-sidebar2 =
+    .label = أظهِر الشريط الجانبي
+    .description = الوصول بسرعة إلى العلامات، والألسنة من هاتفك، ودردشة الذكاء الاصطناعي، والمزيد دون مغادرة واجهتك الرئيسية.
+page-navigation-group =
+    .label = التنقل بين الصفحات
 browser-layout-header = تخطيط المتصفح
 browser-layout-horizontal-tabs =
     .label = ألسنة أفقية
 browser-layout-horizontal-tabs-desc = اعرض في أعلى المتصفح
 browser-layout-vertical-tabs =
-    .label = ألسنة عمودية
+    .label = ألسنة رأسية
 browser-layout-vertical-tabs-desc = اعرض على الجانب، في الشريط الجانبي
 browser-layout-show-sidebar =
     .label = أظهِر الشريط الجانبي
@@ -250,8 +377,22 @@ browser-layout-show-sidebar-desc = الوصول بسرعة إلى العلاما
 ## General Section - Language & Appearance
 
 language-and-appearance-header = اللغة و المظهر
+appearance-group2 =
+    .label = مظهر الموقع
+    .description = تغيّر بعض المواقع الإلكترونية ألوانها لتناسب تفضيلاتك. اختر مخطّط ألوانك.
+preferences-web-appearance-choice-auto3 =
+    .label = النظام
+    .title = تغيير خلفيات ومحتوى المواقع الإلكترونية تلقائيًا بناءً على إعدادات نظامك وسمة { -brand-short-name }.
 preferences-web-appearance-header = مظهر الموقع
 preferences-web-appearance-description = تكيف بعض المواقع مخطط ألوانها بناء على تفضيلاتك. أختر مخطط الألوان الذي تريد إستخدامه لهذه المواقع.
+preferences-web-appearance-choice-light2 =
+    .label = فاتح
+    .title = استخدم مظهرًا فاتحً لخلفيات موقع الويب ومحتواه.
+preferences-web-appearance-choice-dark2 =
+    .label = داكن
+    .title = استخدم مظهرًا داكنًا لخلفيات موقع الويب ومحتواه.
+web-appearance-group =
+    .aria-label = مظهر الموقع
 preferences-web-appearance-choice-auto = تلقائي
 preferences-web-appearance-choice-light = فاتح
 preferences-web-appearance-choice-dark = داكن
@@ -271,17 +412,21 @@ preferences-web-appearance-choice-input-dark =
 # system colors.
 preferences-web-appearance-override-warning3 =
     .message = إعدادات التحكم في التباين لديك تتغلب على مظهر موقع الوِب.
+preferences-web-appearance-link =
+    .label = أدِر سمات { -brand-short-name } في الامتدادات والسمات
+preferences-contrast-control-group =
+    .label = تباين الموقع
+    .description = تستخدم المواقع الإلكترونية مجموعة متنوعة من ألوان الخلفية والنصوص. لضمان تباين ثابت، يمكنك استخدام نفس الألوان عبر جميع المواقع.
+preferences-contrast-control-radio-group =
+    .label = تجاوز الألوان
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = إن اختياراتك للألوان تهيمن على مظهر موقع الويب. <a data-l10n-name="colors-link">إدارة الألوان</a>
-# This can appear when using windows HCM or "Override colors: always" without
-# system colors.
-preferences-web-appearance-override-warning2 =
-    .message = إن اختياراتك للألوان تهيمن على مظهر موقع الويب.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = أدِر سمات { -brand-short-name } في الامتدادات والسمات <a data-l10n-name="themes-link"></a>
 preferences-contrast-control-header = التحكم في التباين
+preferences-contrast-control-description = تتنوع ألوان النصوص والخلفيات في المواقع الإلكترونية. استخدم { -brand-short-name } لتوحيد الألوان في جميع المواقع لتحسين سهولة القراءة.
 preferences-contrast-control-use-platform-settings =
     .label = تلقائي (استخدام إعدادات النظام)
     .accesskey = ع
@@ -291,11 +436,16 @@ preferences-contrast-control-off =
 preferences-contrast-control-custom =
     .label = مخصّص
     .accesskey = ص
+preferences-colors-manage-button2 =
+    .label = أدِر الألوان
+    .accesskey = ر
 preferences-colors-header = الألوان
 preferences-colors-description = تجاوز ألوان { -brand-short-name } الافتراضية للنص، و خلفيات الموقع، و الروابط.
 preferences-colors-manage-button =
     .label = أدِر الألوان…
     .accesskey = ر
+preferences-fonts-header2 =
+    .label = الخطوط
 preferences-fonts-header = الخطوط
 default-font = الخط المبدئي
     .accesskey = ط
@@ -304,6 +454,9 @@ default-font-size = الحجم
 advanced-fonts =
     .label = متقدم…
     .accesskey = د
+preferences-default-zoom-label =
+    .label = التقريب المبدئي
+    .accesskey = ق
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = التقريب
 preferences-default-zoom = التقريب المبدئي
@@ -315,17 +468,53 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = قرّب النص فقط
     .accesskey = ن
+preferences-text-zoom-override-warning2 =
+    .message = إذا كان خيار "قرّب النص فقط" مفعّلاً ولم يكن مستوى التقريب المبدئي لديك 100٪، فقد لا تعرض بعض المواقع المحتوى بشكل صحيح.
+preferences-text-zoom-override-warning =
+    .message = تحذير: حدّدت "قرّب النص فقط" ولم تضبط التقريب المبدئي على 100٪، فقد يتسبب ذلك في تعطّل بعض المواقع أو المحتوى.
 language-header = اللّغات
 choose-language-description = اختر لغتك المفضلة لعرض الصفحات
+website-language-heading =
+    .label = لغة الموقع الإلكتروني
+    .description = تُعرض بعض صفحات الوِب بلغات متعدّدة. اختر اللغات حسب ترتيبك المفضل.
+website-preferred-language =
+    .label = اللغات المفضلة
+website-add-language =
+    .label = أضِف لغة
+website-add-language-button =
+    .aria-label = أضف اللغة المحدّدة
+    .title = أضف اللغة المحدّدة
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = أزِل { $locale }
+    .title = أزِل { $locale }
 choose-button =
     .label = اختر…
     .accesskey = خ
-choose-browser-language-description = اختر اللغات التي ستُستخدم لعرض القوائم والرسائل والتنبيهات من { -brand-short-name }.
+choose-browser-language-description = اختر اللغات التي ستُستخدم لعرض القوائم والرسائل والإشعارات من { -brand-short-name }.
 manage-browser-languages-button =
     .label = اضبط البديلة
     .accesskey = د
 confirm-browser-language-change-description = أعِد تشغيل { -brand-short-name } لتطبيق التغييرات
 confirm-browser-language-change-button = طبِّق وأعِد التشغيل
+browser-language-heading =
+    .label = لغة المتصفّح
+    .description = اختر اللغة المستخدمة لعرض القوائم والرسائل والإشعارات من { -brand-short-name }.
+browser-language-preferred-label =
+    .label = اللغة المفضلة
+browser-language-fallback-label =
+    .label = اللغة الاحتياطية
+    .description = يُستخدم عندما تكون ترجمة اللغة المفضلة غير مكتملة.
+browser-language-install-error =
+    .message = تعذّر على { -brand-short-name } تحديث لغاتك حاليا. تحقق من اتصالك بالإنترنت أو أعِد المحاولة.
 translate-web-pages =
     .label = ترجم محتوى الوب
     .accesskey = ت
@@ -336,17 +525,96 @@ translate-attribution = ترجمات <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = الاستثناءات…
     .accesskey = ث
+settings-translations-header =
+    .label = الترجمات
+    .aria-label = الترجمات
+    .description = ترجم صفحات أو نصوصًا محدّدة. لحماية خصوصيتك، تظل الترجمات على جهازك.
+settings-translations-offer-to-translate-label =
+    .label = قدّم ترجمة الصفحة الكاملة
+settings-translations-more-settings-button =
+    .label = المزيد من إعدادات الترجمة
+    .description = عيّن التفضيلات للغات والمواقع الإلكترونية والترجمة دون اتصال بالإنترنت.
+settings-translations-subpage-header =
+    .heading = المزيد من إعدادات الترجمة
+settings-translations-subpage-speed-up-translation-header =
+    .label = تسريع الترجمة
+    .description = نزّل اللغات الكاملة لترجمة أسرع وللترجمة دون اتصال بالإنترنت.
+settings-translations-subpage-automatic-translation-header =
+    .label = الترجمة التلقائية
+settings-translations-subpage-always-translate-header =
+    .label = ترجم هذه اللغات دائمًا
+settings-translations-subpage-never-translate-header =
+    .label = لا تترجم هذه اللغات أبدًا
+settings-translations-subpage-never-translate-sites-header =
+    .label = لا تترجم هذه المواقع أبدًا
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = لإضافة موقع، افتح لوحة الترجمة <img data-l10n-name="translations-icon"/>، وحدّد إعدادات الترجمة <img data-l10n-name="settings-icon"/>، ثم اختر "لا تترجم هذا الموقع أبدًا".
+settings-translations-subpage-language-select-option =
+    .label = أضِف لغة
+settings-translations-subpage-language-add-button =
+    .aria-label = أضِف لغة
+    .title = أضِف لغة
+settings-translations-subpage-download-languages-header =
+    .label = نزّل اللغات
+settings-translations-subpage-download-languages-select-option =
+    .label = اختر لغة
+settings-translations-subpage-download-languages-button =
+    .aria-label = نزّل اللغة
+    .title = نزّل اللغة
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size } م.بايت)
+    .label = { $language } ({ $size } م.بايت)
+settings-translations-subpage-no-languages-downloaded =
+    .label = لم تُنزل أي لغات
+settings-translations-subpage-no-languages-added =
+    .label = لم تُضيف أي لغات
+settings-translations-subpage-download-progress = جارِ التنزيل…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = تعذّر تنزيل { $language } ({ $size }م.بايت)
+settings-translations-subpage-download-retry-button =
+    .label = حاول مجددًا
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = احذف { $language } ({ $size }م.بايت)؟
+settings-translations-subpage-download-delete-button =
+    .label = احذف
+settings-translations-subpage-download-cancel-button =
+    .label = ألغِ
+settings-translations-subpage-no-sites-added =
+    .label = لم يُضاف أي مواقع
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = استعمل إعدادات نظام التشغيل لتنسيق التواريخ والأوقات والأرقام والمقاييس في ”{ $localeName }“.
+settings-spellcheck-header =
+    .label = التدقيق الإملائي
 check-user-spelling =
     .label = دقق الإملاء أثناء الكتابة
     .accesskey = ك
+spellcheck-download-dictionaries =
+    .label = نزّل القواميس
+spellcheck-promo =
+    .heading = كيفية استخدام التدقيق الإملائي
+    .message = انقر بزر الفأرة الأيمن فوق أي حقل نصي لتشغيل التدقيق الإملائي أو إيقافه، أو لتغيير اللغة. لا تدعم جميع الحقول التدقيق الإملائي.
 
 ## General Section - Files and Applications
 
 files-and-applications-title = الملفات و التطبيقات
+download-save-files-header =
+    .label = احفظ الملفّات في
+download-save-where-3 =
+    .aria-label = احفظ الملفّات في
+download-always-ask-where2 =
+    .label = اسأل عن مكان حفظ الملفات قبل تنزيلها
+    .accesskey = أ
+download-private-browsing-delete2 =
+    .label = احذف التنزيلات من النوافذ الخاصة عند الإغلاق
+    .accesskey = ذ
 download-header = التّنزيلات
 download-save-where = احفظ الملفّات في
     .accesskey = ظ
@@ -366,14 +634,19 @@ download-always-ask-where =
     .accesskey = ن
 applications-header = التطبيقات
 applications-description = اختر كيف يتعامل { -brand-short-name } مع الملفات التي تنزلها من الوب أو التطبيقات التي تستخدمها أثناء التصفح.
+applications-setting2 =
+    .label = الملفات و التطبيقات
+    .description = اختر كيف يتعامل { -brand-short-name } مع الملفات والمحتوى المُنزّل.
 applications-filter =
     .placeholder = ابحث عن أنواع الملفات أو التطبيقات
 applications-type-column =
     .label = نوع المحتوى
     .accesskey = ن
+applications-type-heading = نوع المحتوى
 applications-action-column =
     .label = الإجراء
     .accesskey = ج
+applications-action-heading = الإجراء
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = ملف { $extension }
@@ -437,15 +710,23 @@ applications-use-other-label =
 applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
-##
+## Firefox updates
 
 applications-handle-new-file-types-description = ما الذي يجب أن يفعله { -brand-short-name } مع الملفات الأخرى؟
 applications-save-for-new-types =
     .label = احفظ الملفات
     .accesskey = ح
+applications-save-for-new-types2 =
+    .label = حفظ الملفات تلقائيًا
+    .accesskey = ف
 applications-ask-before-handling =
     .label = اسأل إذا كنت تريد فتح الملفات أو حفظها
     .accesskey = ك
+applications-ask-before-handling2 =
+    .label = اسأل لفتح الملفات أو حفظها
+    .accesskey = أ
+drm-group =
+    .label = محتوى إدارة الحقوق الرقمية (DRM)
 drm-content-header = محتوى إدارة الحقوق الرقمية (DRM)
 play-drm-content =
     .label = شغّل المحتوى الخاضع لإدارة الحقوق الرقمية
@@ -456,6 +737,14 @@ update-application-description = أبقِ { -brand-short-name } محدّثا ل�
 # Variables:
 # $version (string) - Firefox version
 update-application-version = الإصدارة { $version } <a data-l10n-name="learn-more">ما الجديد</a>
+update-history-2 =
+    .label = أظهر تأريخ التحديث
+    .accesskey = ظ
+update-application-installation =
+    .label = التنصيب
+update-application-auto-2 =
+    .label = نزّل التحديثات تلقائيا (مستحسن)
+    .accesskey = ز
 update-history =
     .label = أظهر تأريخ التحديث…
     .accesskey = ظ
@@ -463,6 +752,9 @@ update-application-allow-description = اسمح لِ‍{ -brand-short-name } أ�
 update-application-auto =
     .label = ينزّل التحديثات تلقائيا (مستحسن)
     .accesskey = ن
+update-application-check-choose-2 =
+    .label = تحقق من وجود تحديثات، ولكن اختر وقت التثبيت.
+    .accesskey = ق
 update-application-check-choose =
     .label = يلتمس التحديثات، و لكن يترك لك خيار تثبيتها من عدمه
     .accesskey = ت
@@ -472,13 +764,18 @@ update-application-manual =
 update-application-background-enabled =
     .label = حين لا يعمل { -brand-short-name }
     .accesskey = ح
+update-application-warning-cross-user-setting-2 =
+    .message = سيُطبّق هذا الإعداد على كل حسابات وِندوز وملفات { -brand-short-name } الشخصية التي تستخدم هذه النسخة من { -brand-short-name }.
+update-application-suppress-prompts-2 =
+    .label = اعرض عدد أقل من تذكيرات التحديث
+    .accesskey = ر
 update-application-warning-cross-user-setting = سيُطبّق هذا الإعداد على كل حسابات وِندوز وملفات { -brand-short-name } الشخصية التي تستخدم هذه النسخة من { -brand-short-name }.
 update-application-use-service =
     .label = استخدم خدمة تعمل في الخلفية لِتثبيت التحديثات
     .accesskey = خ
 update-application-suppress-prompts =
     .label = أظهر عدد أقل من مطالبات إشعارات التحديث
-    .accesskey = ن
+    .accesskey = ه
 update-setting-write-failure-title2 = حدث عُطل أثناء تحديث الإعدادات
 # Variables:
 #   $path (string) - Path to the configuration file
@@ -494,6 +791,31 @@ update-in-progress-ok-button = أ&همِل
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = وا&صِل
+
+## About Firefox
+
+about-firefox-header =
+    .heading = عن { -brand-short-name }
+
+## Firefox updates
+
+update-application-heading =
+    .label = تحديثات { -brand-short-name }
+    .description = تعمل التحديثات على تحسين سرعة { -brand-short-name } واستقراره وأمانه.
+update-application-suppress-prompts-heading =
+    .label = الإشعارات
+update-application-updates-managed-by-os =
+    .message = تُدار التحديثات بواسطة نظام تشغيلك
+
+## Firefox support
+
+support-application-heading =
+    .label = دعم { -brand-short-name }
+    .description = حل المشكلات أو شارك الأفكار مع المجتمع.
+support-get-help =
+    .label = احصل على مُساعدة
+support-share-ideas =
+    .label = شارك الأفكار والتعليقات
 
 ## General Section - Performance
 
@@ -514,13 +836,21 @@ performance-limit-content-process-blocked-desc = لا يمكن تعديل عدد
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = ‏{ $num } (المبدئي)
+performance-group =
+    .label = الأداء
 
-## General Section - Browsing
+## Accessibility page
 
 browsing-title = التّصفّح
+browsing-group-label =
+    .aria-label = التّصفّح
 browsing-use-autoscroll =
     .label = استخدم اللّف الآلي
     .accesskey = ف
+keyboard-and-scrolling-group =
+    .label = التنقل والتمرير باستخدام لوحة المفاتيح
+motion-and-link-group =
+    .label = تصميم الحركة والربط
 browsing-use-smooth-scrolling =
     .label = استخدم اللّف السلس
     .accesskey = خ
@@ -542,13 +872,25 @@ browsing-use-full-keyboard-navigation =
 browsing-search-on-start-typing =
     .label = ابحث عن النص مع بداية الكتابة
     .accesskey = ح
+settings-keyboard-shortcuts-customkeys-link =
+    .label = خصّص اختصارات لوحة المفاتيح
+settings-media-group =
+    .label = الوسائط
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = استخدم فديو معترِض
+    .accesskey = د
 browsing-picture-in-picture-toggle-enabled =
-    .label = فعّل عناصر التحكّم بالڤديوهات المعترِضة
+    .label = فعّل عناصر التحكّم بالفديوهات المعترِضة
     .accesskey = ك
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = استمر في تشغيل مقاطع الفيديو في وضع فديو معترِض عند التبديل بين الألسنة
+    .accesskey = م
 browsing-picture-in-picture-learn-more = اطّلع على المزيد
 browsing-media-control =
     .label = تحكّم بالوسائط عبر لوحة المفاتيح أو سماعة الرأس أو الواجهة الافتراضية
     .accesskey = ك
+recommendations-group =
+    .label = التوصيات
 browsing-media-control-learn-more = اطّلع على المزيد
 browsing-cfr-recommendations =
     .label = امتدادات موصى بها وأنت تتصفّح
@@ -557,6 +899,24 @@ browsing-cfr-features =
     .label = مزايا مستحسنة وأنت تتصفّح أرجاء الوِب
     .accesskey = س
 browsing-cfr-recommendations-learn-more = اطّلع على المزيد
+browsing-group =
+    .label = التّصفّح
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = الإتاحة
+preferences-default-zoom-select =
+    .aria-label = التقريب المبدئي
+preferences-fonts-family =
+    .label = عائلة الخط
+    .accesskey = ئ
+preferences-fonts-size =
+    .label = حجم الخط
+    .accesskey = م
+preferences-fonts-advanced-settings =
+    .label = إعدادات متقدّمة
+    .accesskey = ع
 
 ## General Section - Proxy
 
@@ -566,16 +926,41 @@ network-proxy-connection-learn-more = اطّلع على المزيد
 network-proxy-connection-settings =
     .label = الإعدادات…
     .accesskey = ع
+network-proxy-group2 =
+    .label = إعدادات الوسيط
+    .description = أعدّ كيفية اتصال { -brand-short-name } بالإنترنت.
+network-proxy-connection-settings2 =
+    .label = أعدّ الوسيط
+    .description = تغيير هذه الإعدادات قد يتسبب في مشاكل في الاتصال
+    .accesskey = ع
 
 ## Home Section
 
 home-new-windows-tabs-header = النوافذ و الألسنة الجديدة
 home-new-windows-tabs-description2 = اختر ما تراه عندما تفتح صفحة البداية و النوافذ و الألسنة الجديدة.
+home-section =
+    .heading = الصفحة الرئيسية والبدء
 
-## Home Section - Home Page Customization
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = المتصفّح المبدئي
+is-default-browser-2 =
+    .message = { -brand-short-name } هو متصفحك المبدئي. اختيار موفق.
+is-not-default-browser-2 =
+    .message = همم، { -brand-short-name } ليس خيارك المبدئي.
+set-as-my-default-browser-2 =
+    .label = اجعله المبدئي
+    .accesskey = م
+
+## Custom Homepage subpage
 
 home-homepage-mode-label = صفحة البداية و النوافذ الجديدة
+home-homepage-new-windows =
+    .label = نوافذ جديدة
 home-newtabs-mode-label = الألسنة الجديدة
+home-homepage-new-tabs =
+    .label = الألسنة الجديدة
 home-restore-defaults =
     .label = استعد المبدئيات
     .accesskey = س
@@ -587,6 +972,12 @@ home-mode-choice-blank =
     .label = صفحة فارغة
 home-homepage-custom-url =
     .placeholder = ألصِق عنوانا…
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = أدِر الامتداد
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = اختر موقعًا محددًا
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -602,17 +993,59 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = صفحة البداية
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = صفحة بداية مخصّصة
+home-custom-homepage-subpage =
+    .heading = صفحة بداية مخصّصة
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = عنوان(عناوين) الموقع الإلكتروني
+home-custom-homepage-address =
+    .placeholder = أدخل العنوان
+home-custom-homepage-address-button =
+    .label = أضف عنوانًا
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = لم تُضاف أي مواقع إلكترونية حتى الآن.
+home-custom-homepage-delete-address-button =
+    .aria-label = احذف العنوان
+    .title = احذف العنوان
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = استبدل ب
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = الصفحات المفتوحة حاليًا
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = العلامات…
+
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = محتوى { -firefox-home-brand-name }
 home-prefs-content-description2 = اختر المحتوى الذي تريد عرضه في شاشة { -firefox-home-brand-name }.
+home-prefs-firefox-logo-header =
+    .label = شعار { -brand-short-name }
 home-prefs-search-header =
     .label = ابحث في الوِب
+home-prefs-search-header2 =
+    .label = ابحث
 home-prefs-shortcuts-header =
     .label = الاختصارات
 home-prefs-shortcuts-description = المواقع التي حفظتها أو زُرتها
+home-prefs-shortcuts-select =
+    .aria-label = الاختصارات
 home-prefs-shortcuts-by-option-sponsored =
     .label = الاختصارات المموّلة
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -621,6 +1054,13 @@ home-prefs-recommended-by-header =
 home-prefs-recommended-by-description-new = محتوى مميّز جمعه لك { $provider }، وهو جزء من عائلة { -brand-product-name }
 home-prefs-recommended-by-header-generic =
     .label = القصص المُقترحة
+home-prefs-recommended-by-description-generic = محتوى استثنائي منتقى بعناية من قبل عائلة { -brand-product-name }
+home-prefs-stories-header =
+    .label = قصص
+home-prefs-stories-description = قصص مخصّصة بناءً على نشاطك
+home-prefs-stories-header2 =
+    .label = القصص
+    .description = محتوى استثنائي برعاية عائلة { -brand-product-name }
 
 ##
 
@@ -640,6 +1080,8 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-recent-activity-header =
     .label = أحدث الأنشطة
 home-prefs-recent-activity-description = مختارات من المواقع والمحتويات الحديثة
+home-prefs-recent-activity-select =
+    .aria-label = أحدث الأنشطة
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -651,6 +1093,41 @@ home-prefs-weather-header =
     .label = الطقس
 home-prefs-weather-description = لمحة عامة عن توقعات الطقس اليوم
 home-prefs-weather-learn-more-link = اطّلع على المزيد
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = قوائم
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = المؤقت
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = الرياضة
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = ساعة
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = ادعم { -brand-product-name }
+home-prefs-mission-message = يدعم رعاتنا مهمتنا في بناء شبكة إنترنت أفضل
+home-prefs-mission-message-learn-more-link = اكتشف كيف
+home-prefs-mission-message2 =
+    .message = يدعم رعاتنا مهمتنا في بناء شبكة إنترنت أفضل.
+home-prefs-manage-topics-link = أدِر المواضيع
+home-prefs-manage-topics-link2 =
+    .label = أدِر المواضيع
+home-prefs-choose-wallpaper-link = اختر خلفية
+home-prefs-choose-wallpaper-link2 =
+    .label = اختر خلفية
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = لاستخدام هذه الميزات، عيّن ألسنة جديدة أو نوافذ جديدة إلى { -firefox-home-brand-name }.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = الامتداد ({ $extension })
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -688,10 +1165,35 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = أظهر اقتراحات البحث في نتائج شريط العناوين
     .accesskey = ت
-# With this option enabled, on the search results page
-# the URL will be replaced by the search terms in the address bar.
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = اعرض اقتراحات البحث قبل عرض تأريخ التصفح في نتائج شريط العناوين
+search-show-suggestions-private-windows-2 =
+    .label = اقتراحات البحث في النوافذ الخاصة
+search-suggestions-cant-show-2 =
+    .message = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
+addressbar-header-1 =
+    .label = شريط العناوين
+    .description = اختر الاقتراحات التي تظهر في شريط عنوانك
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name }
+    .description = اقتراحات من { -brand-short-name } وشركائنا في شريط عنوانك.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
 search-show-search-term-option-2 =
     .label = أظهِر مصطلحات البحث في شريط العناوين على صفحات النتائج
+search-separate-default-engine-2 =
+    .label = استخدم محرك بحث مبدئي مختلف في النوافذ الخاصة
+    .accesskey = د
+search-separate-default-engine-dropdown =
+    .aria-label = محرك البحث المبدئي في النوافذ الخاصة
+search-suggestions-header-2 =
+    .label = اقتراحات محركات البحث
 # With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
@@ -710,6 +1212,19 @@ suggestions-addressbar-settings-generic2 = غيّر إعدادات اقتراح�
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header2 = اختصارات البحث
 search-one-click-desc = اختر محركات البحث البديلة التي تظهر تحت شريطي العناوين و البحث عندما تكتب كلمة بحث.
+search-one-click-header-3 =
+    .label = محركات بحث إضافية
+    .description = اختر محركات البحث والاختصارات التي تظهر في شريط العنوان لديك.
+update-search-engine-success =
+    .message = حُدِّث محرك البحث بنجاح
+search-edit-engine-2 =
+    .title = تعديل محرك البحث
+search-delete-engine =
+    .title = احذف محرك البحث
+search-enable-engine =
+    .title = فعِّل محرك البحث
+search-outlink-to-extensions-page =
+    .title = أدِر في الامتدادات والسمات
 search-choose-engine-column =
     .label = محرك البحث
 search-choose-keyword-column =
@@ -723,7 +1238,14 @@ search-remove-engine =
 search-add-engine =
     .label = أضِف
     .accesskey = ض
+search-add-engine-2 =
+    .label = أضف محرك بحث
+    .accesskey = ض
+search-edit-engine =
+    .label = حرّر
+    .accesskey = ر
 search-find-more-link = اعثر على المزيد من محركات البحث
+search-filtering-for-add-engine = أضِف محركًا
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = كرر الكلمة المفتاحية
@@ -731,12 +1253,28 @@ search-keyword-warning-title = كرر الكلمة المفتاحية
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = لقد اخترت كلمة مفتاحية يستخدمها ”{ $name }“ حاليا. من فضلك اختر واحدة أخرى.
 search-keyword-warning-bookmark = لقد اخترت كلمة مفتاحية تستخدمها علامة حاليا. من فضلك اختر واحدة أخرى.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = يوجد بالفعل محرك بحث يحمل الاسم "{ $name }". يُرجى اختيار اسم آخر.
+remove-engine-confirmation = أمتأكد من رغبتك في إزالة محرك البحث هذا؟
+remove-engine-remove = أزِل
+remove-addon-engine-alert = لإزالة محرك البحث هذا،أزِل الإضافة المرتبطة به.
+search-engine-group =
+    .label = محرك البحث المبدئي
+search-default-engine =
+    .aria-label = محرك البحث المبدئي
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = ابحث
 
 ## Containers Section
 
 containers-back-button2 =
     .aria-label = عُد إلى الإعدادات
 containers-header = الألسنة الحاوية
+containers-section-header =
+    .heading = الألسنة الحاوية
 containers-add-button =
     .label = أضف حاوية جديدة
     .accesskey = ح
@@ -747,14 +1285,58 @@ containers-settings-button =
     .label = الإعدادات
 containers-remove-button =
     .label = أزِل
+containers-section-header2 =
+    .heading = إعدادات الحاوية
+containers-card-header2 =
+    .label = الحاويات
+    .description = افصل ملفات تعريف الارتباط حسب الحاوية حتى تتمكن من استخدام حسابات مختلفة على نفس الموقع والحد من التعقّب عبر المواقع.
+containers-add-button2 =
+    .label = أضف حاوية جديدة
+    .accesskey = ض
+containers-new-tab-check3 =
+    .label = حدّد حاويًا لكلّ لسان جديد
+    .accesskey = د
+containers-new-tab-check2 =
+    .label = حدّد حاويًا لكلّ لسان جديد
+    .accesskey = د
+    .description = سيؤدي ذلك إلى فتح قائمة الحاويات في كل مرة تضغط فيها على زر ”افتح في لسان جديد“.
+containers-settings-button2 =
+    .title = الإعدادات
+containers-remove-button3 =
+    .title = احذف
+containers-remove-button2 =
+    .title = أزِل
+
+## Account and sync
+
+sync-group-label =
+    .label = المزامنة
+account-group-label2 =
+    .label = الحساب
+account-disabled-group =
+    .label = الحساب
+    .description = إعدادات الحساب غير متاحة.
+account-placeholder2 =
+    .label = لست والجًا
+    .description = لِج وحافظ على خصوصية بياناتك وتعميتها، مع إمكانية الوصول إليها فورًا في كل مكان تستخدم فيه { -brand-short-name }.
+account-sync-section =
+    .heading = الحساب والمزامنة
+pane-account-sync-title2 = الحساب والمزامنة
+    .title = الحساب والمزامنة
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = خُذ الوِب معك
-sync-signedout-description2 = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و الإعدادات بين كل أجهزتك.
+sync-signedout-description2 = زامن علاماتك وتأريخك وألسنتك وكلمات سرك وإضافاتك و الإعدادات بين كل أجهزتك.
 sync-signedout-account-signin3 =
     .label = لِج كي تبدأ المزامنة…
+    .accesskey = ل
+sync-signedout-account-signin-4 =
+    .label = لج إلى حسابك لبدء المزامنة
+    .accesskey = ل
+sync-signedout-account-short =
+    .label = لج
     .accesskey = ل
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -780,14 +1362,37 @@ fxa-login-rejected-warning =
 sync-sign-out =
     .label = اخرج…
     .accesskey = خ
+sync-sign-out2 =
+    .label = اخرج
+    .accesskey = خ
 sync-manage-account = أدِر الحساب
+    .accesskey = س
+sync-manage-account2 =
+    .label = أدِر الحساب
     .accesskey = س
 
 ## Variables
 ## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
 
 sync-signedin-unverified = { $email } ليس مؤكّدًا.
+sync-signedin-unverified2 =
+    .label = لم يُأكّد { $email } بعد
+    .description = تحقق من بريدك الوارد لتأكيد حسابك وجعله رسميًا.
 sync-signedin-login-failure = من فضلك لج لإعادة التوصيل { $email }
+sync-signedin-login-failure2 =
+    .label = لقد سُجّل خروجك من { $email }
+    .description = لِج مرة أخرى لإعادة الاتصال وبدء مزامنة بياناتك.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
 
 ##
 
@@ -807,11 +1412,19 @@ sync-sign-in =
 ## Sync section - enabling or disabling sync.
 
 prefs-syncing-on = المزامنة: مفعلة
+prefs-syncing-on-2 =
+    .label = المزامنة مفعّلة
 prefs-syncing-off = المزامنة: معطلة
+prefs-syncing-off-2 =
+    .label = المزامنة معطّلة
+    .description = فعّل المزامنة للحصول على علاماتك وكلمات مرورك وتأريخك والمزيد على أي جهاز.
 prefs-sync-turn-on-syncing =
     .label = فعّل المزامنة…
     .accesskey = ف
-prefs-sync-offer-setup-label2 = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و الإعدادات بين كل أجهزتك.
+prefs-sync-turn-on-syncing-2 =
+    .label = فعّل المزامنة
+    .accesskey = ف
+prefs-sync-offer-setup-label2 = زامن علاماتك وتأريخك وألسنتك وكلمات سرك وإضافاتك و الإعدادات بين كل أجهزتك.
 prefs-sync-now =
     .labelnotsyncing = زامِن الآن
     .accesskeynotsyncing = م
@@ -819,12 +1432,22 @@ prefs-sync-now =
 prefs-sync-now-button =
     .label = زامِن الآن
     .accesskey = م
+prefs-sync-now-button-2 =
+    .label = زامِن الآن
+    .accesskey = م
 prefs-syncing-button =
     .label = يُزامن…
+prefs-syncing-button-2 =
+    .label = يُزامن…
+    .title = زامِن الآن
 
 ## The list of things currently syncing.
 
 sync-syncing-across-devices-heading = أنت تُزامن هذه العناصر عبر جميع أجهزتك المتصلة:
+sync-syncing-across-devices-heading-2 = البيانات المزامنة عبر الأجهزة
+sync-syncing-across-devices-empty-state2 =
+    .label = أدر البيانات المتزامنة
+    .description = أنت لا تُزامن أي شيء... حتى الآن. ابدأ المزامنة للحصول على جميع بياناتك على جميع أجهزتك.
 sync-currently-syncing-bookmarks = العلامات
 sync-currently-syncing-history = التأريخ
 sync-currently-syncing-tabs = الألسنة المفتوحة
@@ -838,6 +1461,11 @@ sync-currently-syncing-settings = الإعدادات
 sync-manage-options =
     .label = أدر المزامنة…
     .accesskey = د
+sync-manage-options-2 =
+    .label = أدر البيانات المتزامنة
+    .accesskey = د
+settings-sync-disconnect-button =
+    .label = اقطع الاتصال
 sync-change-options =
     .label = غيّرها…
     .accesskey = غ
@@ -890,10 +1518,27 @@ sync-engine-settings =
     .label = الإعدادات
     .tooltiptext = الإعدادات العامة وإعدادات الخصوصية والأمن التي غيّرتها
     .accesskey = ع
+sync-choose-what-to-sync-dialog4 =
+    .title = إدارة ما يُزامِن على جميع أجهزتك المتصلة
+    .style = min-width: 36em;
+    .buttonlabelaccept = احفظ
+    .buttonaccesskeyaccept = ح
+    .buttonlabelextra2 = اقطع الاتصال…
+    .buttonaccesskeyextra2 = ق
 
 ## The device name controls.
 
 sync-device-name-header = اسم الجهاز
+sync-device-name-header-2 =
+    .label = اسم الجهاز
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = اسم الجهاز
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = غيّر اسم الجهاز
+    .accesskey = ه
 sync-device-name-change =
     .label = غيّر اسم الجهاز…
     .accesskey = ه
@@ -904,6 +1549,8 @@ sync-device-name-save =
     .label = احفظ
     .accesskey = ح
 sync-connect-another-device = صِلْ جهازا آخر
+sync-connect-another-device-2 =
+    .label = صِلْ جهازا آخر
 
 ## These strings are shown in a desktop notification after the
 ## user requests we resend a verification email.
@@ -929,16 +1576,22 @@ forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
     .accesskey = ط
 
-## Privacy Section - Passwords
+## Privacy Panel Settings
 
 # "Logins" is the former term for "Passwords". Users should find password settings
 # by searching for the former term "logins". It's not displayed in the UI.
 pane-privacy-passwords-header = كلمات السر
     .searchkeywords = س
+forms-passwords-header =
+    .label = كلمات السر
+    .aria-label = كلمات السر
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-passwords =
     .label = اسأل لحفظ كلمات السر
     .accesskey = ت
+forms-manage-password-exceptions =
+    .label = أدر استثناءات كلمات السر
+    .accesskey = د
 forms-exceptions =
     .label = الاستثناءات…
     .accesskey = س
@@ -954,6 +1607,9 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = اطّلع على المزيد
 preferences-relay-integration-checkbox =
     .label = اقترح أقنعة بريد { -relay-brand-name } لحماية عنوان بريدك الإلكتروني
+preferences-relay-integration-checkbox2 =
+    .label = اقترح استخدام أقنعة البريد الإلكتروني { -relay-brand-name } لحماية عنوان بريدك الإلكتروني
+    .accesskey = ر
 relay-integration-learn-more-link = اطّلع على المزيد
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -966,12 +1622,41 @@ forms-saved-logins =
 forms-fill-usernames-and-passwords =
     .label = املأ أسماء المستخدمين وكلمات السر تلقائيًا
     .accesskey = ر
+forms-fill-usernames-and-passwords-2 =
+    .label = احفظ أسماء المستخدمين وكلمات المرور واملأها تلقائيًا
+    .accesskey = ف
 forms-saved-passwords =
     .label = كلمات السر المحفوظة
     .accesskey = ت
+forms-saved-passwords-2 =
+    .label = أدر كلمات السر المحفوظة
+    .accesskey = د
+forms-saved-passwords-searchkeywords = حُفظت جلسات الولوج للمواقع التالية على حاسوبك
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = حماية إضافية
 forms-primary-pw-use =
     .label = استعمل كلمة سر رئيسيّة
     .accesskey = س
+forms-primary-pw-use-2 =
+    .label = استعمل كلمة سر رئيسية
+    .description = يضيف طبقة حماية إضافية لتأمين كلمات سرك المحفوظة.
+    .accesskey = م
+forms-primary-pw-set =
+    .label = عيِّن كلمة سر رئيسية
+forms-primary-pw-on-2 = كلمة السر الأساسية <strong>مفعّلة</strong>
+forms-primary-pw-on =
+    .label = كلمة السر الأساسية مُفعّلة
+forms-primary-pw-change-2 =
+    .label = غيّر كلمة السر الرئيسية
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = عطّله
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = يتطلب الولوج إلى الجهاز لملء كلمات السر وإدارتها
+forms-os-reauth-2 =
+    .label = تطلب الولوج إلى الجهاز لإدارة كلمات السر
 forms-primary-pw-learn-more-link = اطّلع على المزيد
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -992,7 +1677,18 @@ forms-windows-sso =
     .label = اسمح بالولوج الموحّد من وِندوز إلى حسابات ميكروسوفت وحسابات العمل والحسابات المدرسية.
 forms-windows-sso-learn-more-link = اطّلع على المزيد
 forms-windows-sso-desc = أدِر الحسابات في إعدادات الجهاز
-windows-passkey-settings-label = أدر مفاتيح المرور (passkeys) في إعدادات النظام
+windows-passkey-settings-label = أدر مفاتيح السر (passkeys) في إعدادات النظام
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = إعدادات لوحة الخصوصية
+    .description = احصل على المساعدة لحماية معلوماتك عبر الإنترنت في { -brand-short-name }.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = اعرض رسائل الاختراق
+    .accesskey = ع
 
 ## OS Authentication dialog
 
@@ -1004,6 +1700,12 @@ primary-password-os-auth-dialog-message-win = أدخِل معلومات ولوج
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = أنشِئ كلمة سر رئيسية
 master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] تغيير إعدادات طرق الدفع
+       *[other] يحاول { -brand-short-name } تغيير إعدادات طرق الدفع. استخدم بيانات الولوج الخاصة بجهازك للسماح بذلك.
+    }
 autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy section - Autofill
@@ -1015,8 +1717,84 @@ autofill-saved-addresses-button = العناوين المحفوظة
     .accesskey = ظ
 autofill-payment-methods-checkbox-message = احفظ واملء طرق الدفع
     .accesskey = ف
+autofill-payment-methods-checkbox-submessage = يشمل ذلك بطاقات الائتمان والخصم
+    .accesskey = م
 autofill-saved-payment-methods-button = طرق الدفع المحفوظة
     .accesskey = ع
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = يتطلب الأمر الولوج إلى الجهاز للملء وإدارة طُرق الدفع
+    .accesskey = ط
+autofill-payment-methods-header =
+    .aria-label = طُرق الدفع
+autofill-payment-methods-checkbox-message-2 =
+    .label = احفظ معلومات الدفع واملأها تلقائيًا
+    .accesskey = ف
+autofill-payment-methods-manage-payments-title =
+    .heading = أدر طرق الدفع
+autofill-payment-methods-manage-payments-button =
+    .label = أدر طرق الدفع
+    .accesskey = د
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = يتطلب الأمر الولوج إلى الجهاز للملء الآلي وإدارة طُرق الدفع
+    .accesskey = ط
+autofill-payment-methods-add-button = أضف طريقة دفع جديدة
+payments-list-header =
+    .label = طرق الدفع
+payments-delete-payment-prompt-title = حذف طريقة الدفع هذه؟
+payments-delete-payment-prompt-confirm-button = احذف
+payments-delete-payment-prompt-cancel-button = ألغِ
+payments-delete-payment-button-label =
+    .aria-label = احذف
+payments-edit-payment-button-label =
+    .aria-label = حرّر
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = لم تُضاف أي طُرق دفع
+autofill-addresses-checkbox-message =
+    .label = احفظ واملء آليًا العناوين
+    .accesskey = ح
+autofill-addresses-manage-addresses-button =
+    .label = أدر العناوين والمزيد
+    .accesskey = د
+addresses-list-header =
+    .label = العناوين
+addreses-delete-address-button-label =
+    .aria-label = احذف
+addreses-edit-address-button-label =
+    .aria-label = حرّر
+addresses-delete-address-prompt-title = حذف هذا العنوان؟
+addresses-delete-address-prompt-confirm-button = احذف
+addresses-delete-address-prompt-cancel-button = ألغِ
+autofill-addresses-add-button = أضِف عنوانًا جديدًا
+autofill-addresses-manage-addresses-title =
+    .heading = أدر العناوين والمزيد
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = لم تُضاف أي عناوين
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = كلمات السر والملء الآلي
+    .title = كلمات السر والملء الآلي
+preferences-passwords-autofill-header =
+    .heading = كلمات السر والملء الآلي
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = العناوين والمزيد
+payments-group =
+    .label = طرق الدفع
 
 ## Privacy Section - History
 
@@ -1034,10 +1812,24 @@ history-remember-label = اجعل { -brand-short-name }
     .accesskey = ع
 history-remember-option-all =
     .label = يتذكر التأريخ
+history-remember-option-never2 =
+    .label = لا تتذكر التأريخ أبدًا
+    .description = تعمل كل نافذة كأنها نافذة خاصة. عند تفعيل هذا الخيار، ستحتاج الامتدادات إلى الحصول على إذن للعمل.
+history-remember-option-custom2 =
+    .label = خصّص التأريخ
 history-remember-option-never =
-    .label = لا يتذكر التأريخ أبدًا
+    .label = لا تتذكر التأريخ أبدًا
 history-remember-option-custom =
     .label = يستخدم إعدادات مخصصة للتأريخ
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = سيتذكر { -brand-short-name } تأريخ التصفح، و التنزيلات، و الاستمارات، و البحث.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = سيستخدم { -brand-short-name } نفس إعدادات التصفح الخاص، بحيث لن يحتفظ بأيّ تأريخ لتصفحك للوب.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = سيستخدم { -brand-short-name } إعدادات مخصّصة لتأريخ التصفح والتنزيل والنماذج والبحث.
 history-remember-description = سيتذكر { -brand-short-name } تأريخ التصفح، و التنزيلات، و الاستمارات، و البحث.
 history-dontremember-description = سيستخدم { -brand-short-name } نفس إعدادات التصفح الخاص، بحيث لن يحتفظ بأيّ تأريخ لتصفحك للوب.
 history-private-browsing-permanent =
@@ -1055,9 +1847,26 @@ history-clear-on-close-option =
 history-clear-on-close-settings =
     .label = إعدادات…
     .accesskey = د
+history-shutdown-exceptions =
+    .label = أدر الاستثناءات
+    .accesskey = د
 history-clear-button =
     .label = امسح التأريخ…
     .accesskey = ت
+history-header2 =
+    .heading = التأريخ
+history-section-header =
+    .label = التأريخ
+    .description = اختر ما تريد أن يتذكره { -brand-short-name } عند إغلاق المتصفح.
+history-custom-section-header =
+    .label = إعدادات متقدّمة
+    .description = خصّص ما تريد أن يتذكره { -brand-short-name } عند إغلاق المتصفح.
+history-custom-button =
+    .label = اختر ما تريد أن يتذكره { -brand-short-name }
+history-group =
+    .label = التأريخ
+history-remember-option-all2 =
+    .label = تذكر التأريخ
 
 ## Privacy Section - Site Data
 
@@ -1066,11 +1875,23 @@ sitedata-total-size-calculating = يحسب حجم بيانات الموقع و 
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size3 = تستخدم مواقع الوِب حاليًا <strong>{ $value } { $unit }</strong> من مساحة القرص.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
+sitedata-delete-on-close2 =
+    .label = امحُ ملفات تعريف الارتباط وبيانات الموقع في كل مرة تغلق فيها { -brand-short-name }
+    .accesskey = ت
 sitedata-delete-on-close =
     .label = احذف الكعكات وبيانات المواقع عندما ينغلق { -brand-short-name }
     .accesskey = ذ
+sitedata-delete-on-close-private-browsing3 =
+    .message = استنادًا إلى إعدادات التأريخ لديك، يحذف { -brand-short-name } الكعكات وبيانات الموقع من جلستك عند إغلاق المتصفح.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = لن يُحفظ التأريخ.
+    .message = { -brand-short-name } يمحو ملفات تعريف الارتباط وبيانات الموقع من جلستك عند إغلاق المتصفح.
 sitedata-delete-on-close-private-browsing = في وضع التصفح الخاص الدائم، تُمسح الكعكات وبيانات المواقع متى ما أُغلق { -brand-short-name }.
 sitedata-delete-on-close-private-browsing2 = استنادًا إلى إعدادات التأريخ لديك، يحذف { -brand-short-name } الكعكات وبيانات الموقع من جلستك عند إغلاق المتصفح.
 sitedata-allow-cookies-option =
@@ -1087,6 +1908,8 @@ sitedata-option-block-cross-site-trackers =
     .label = المتعقّبات بين المواقع
 sitedata-option-block-cross-site-tracking-cookies =
     .label = الكعكات التي تتعقّبك بين المواقع
+sitedata-option-block-cross-site-cookies2 =
+    .label = اعزل ملفات تعريف الارتباط بين المواقع
 sitedata-option-block-cross-site-cookies =
     .label = متعقّبات الكعكات التي تعبر المواقع، واعزل الكعكات الأخرى بين المواقع
 sitedata-option-block-unvisited =
@@ -1095,6 +1918,12 @@ sitedata-option-block-all-cross-site-cookies =
     .label = كل الكعكات بين المواقع (قد تتسبب بتعطُل المواقع)
 sitedata-option-block-all =
     .label = كل الكعكات (يمكن أن تعطب المواقع هكذا)
+sitedata-clear2 =
+    .label = امحُ بيانات التصفح
+    .accesskey = م
+sitedata-settings2 =
+    .label = أدر بيانات التصفح
+    .accesskey = د
 sitedata-clear =
     .label = امسح البيانات…
     .accesskey = س
@@ -1104,26 +1933,46 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = أدِر الاستثناءات…
     .accesskey = ت
+sitedata-cookies-exceptions2 =
+    .label = أدر الاستثناءات
+    .accesskey = د
+    .description = يمكنك تحديد المواقع الإلكترونية المسموح لها دائمًا أو غير المسموح لها مطلقًا باستخدام ملفات تعريف الارتباط وبيانات الموقع.
+sitedata-heading =
+    .label = بيانات التصفح
+    .description = أدِر ملفات تعريف الارتباط، والسجل وذاكرة التخزين المؤقت وبيانات موقع الوِب، والمزيد.
+sitedata-settings3 =
+    .label = امحُ بيانات مواقع معينة
+    .accesskey = م
+sitedata-cookies-exceptions3 =
+    .label = أدر الاستثناءات
+    .accesskey = د
+    .description = يمكنك تحديد المواقع الإلكترونية المسموح لها دائمًا أو غير المسموح لها مطلقًا باستخدام ملفات تعريف الارتباط وبيانات الموقع.
+cookies-site-data-group =
+    .label = الكعكات و بيانات المواقع
 
 ## Privacy Section - Cookie Banner Handling
 
 cookie-banner-handling-header = تقليل لافتات ملفات تعريف الارتباط
+cookie-banner-handling-description = { -brand-short-name } يحاول تلقائيًا رفض طلبات ملفات تعريف الارتباط على لافتات ملفات تعريف الارتباط في المواقع المدعومة.
 
 ## Privacy Section - Cookie Banner Blocking
 
 cookie-banner-blocker-header = مانع لافتة ملفات تعريف الارتباط
+cookie-banner-blocker-description = عندما يطلب منك موقع ما الإذن باستخدام ملفات تعريف الارتباط في وضع التصفح الخاص، فإن { -brand-short-name } يرفض ذلك تلقائيًا. هذا متاح فقط على المواقع المدعومة.
 cookie-banner-learn-more = اطّلع على المزيد
 forms-handle-cookie-banners =
     .label = قلّل لافتات ملفات تعريف الارتباط
 cookie-banner-blocker-checkbox-label =
     .label = رفض لافتات ملفات تعريف الارتباط تلقائيًا
 
-## Privacy Section - Address Bar
+## Search Section
 
 addressbar-header = شريط العناوين
 addressbar-suggest = عند استخدام شريط العناوين، اقترح
 # When Firefox Suggest is enabled, this replaces `addressbar-header`.
 addressbar-header-firefox-suggest = شريط العناوين — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = اختر نوع الاقتراحات التي تظهر في شريط العناوين.
 # When Firefox Suggest is enabled, a "Learn more" link appears at the end of
 # `addressbar-suggest-firefox-suggest`.
 addressbar-locbar-firefox-suggest-learn-more = اطّلع على المزيد
@@ -1146,12 +1995,28 @@ addressbar-locbar-shortcuts-option =
 addressbar-locbar-topsites-option =
     .label = المواقع الأكثر زيارة
     .accesskey = ك
+addressbar-locbar-engines-option-1 =
+    .label = اقترح محركات البحث التي يجب استخدامها
+    .accesskey = ر
 addressbar-locbar-engines-option =
     .label = محركات البحث
     .accesskey = ح
 addressbar-locbar-quickactions-option =
     .label = إجراءات سريعة
     .accesskey = س
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = عمليات البحث الأخيرة
+    .accesskey = ل
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = اقتراحات البحث المُتداولة
+    .accesskey = ت
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = اقتراحات من { -brand-short-name }
+    .description = احصل على اقتراحات من الوِب تتعلق ببحثك.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = اقتراحات من الرعاة
+    .description = ادعم { -brand-short-name } باقتراحات برعاية عرضية.
 addressbar-suggestions-settings = غيّر تفضيلات اقتراحات محرّك البحث
 addressbar-locbar-showrecentsearches-option =
     .label = أظهر عمليات البحث الأخيرة
@@ -1166,6 +2031,19 @@ addressbar-locbar-suggest-nonsponsored-desc = احصل على اقتراحات �
 addressbar-locbar-suggest-sponsored-option =
     .label = اقتراحات من الرعاة
 addressbar-locbar-suggest-sponsored-desc = ادعم { -brand-short-name } باقتراحات برعاية عرضية.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = احصل على اقتراحات من BrowserWorks أثناء الكتابة
+addressbar-dismissed-suggestions-label-2 =
+    .label = الاقتراحات المهملة
+    .description = استعِد الاقتراحات المرفوضة من الرعاة و{ -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = استعِد الاقتراحات
 addressbar-quickactions-learn-more = اطّلع على المزيد
 addressbar-dismissed-suggestions-label = الاقتراحات المهملة
 addressbar-restore-dismissed-suggestions-description = استعِد الاقتراحات المرفوضة من الرعاة و{ -brand-short-name }.
@@ -1204,8 +2082,10 @@ content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها �
 content-blocking-etp-custom-desc = اختر المتعقّبات والسكربتات التي تريد حجبها.
 content-blocking-etp-blocking-desc = يحجب { -brand-short-name } الآتي:
 content-blocking-private-windows = المحتوى الذي يتعقّبك في النوافذ الخاصة
+content-blocking-cross-site-cookies-in-all-windows2 = ملفات تعريف الارتباط عبر المواقع في جميع النوافذ
 content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين المواقع
 content-blocking-all-cross-site-cookies-private-windows = الكعكات بين المواقع في النوافذ الخاصة
+content-blocking-isolate-cross-site-cookies = اعزل الكعكات بين المواقع
 content-blocking-cross-site-tracking-cookies-plus-isolate = المتعقّبات التي تعبر المواقع، واعزل بقية الكعكات
 content-blocking-social-media-trackers = متعقبات مواقع التواصل الاجتماعي
 content-blocking-all-cookies = كل الكعكات
@@ -1221,10 +2101,28 @@ content-blocking-known-and-suspected-fingerprinters = المسجّلات الم�
 
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = يحتوي حماية كاملة لملفات تعريف الارتباط على ملفات تعريف الارتباط الخاصة بالموقع الذي تتصفحه، لذلك لا يمكن لبرامج التتبع استخدامها لمتابعتك بين المواقع.
 content-blocking-etp-standard-tcp-rollout-learn-more = اطّلع على المزيد
+content-blocking-etp-standard-tcp-title = يتضمن حماية كاملة لملفات تعريف الارتباط، وهي أقوى ميزة خصوصية لدينا على الإطلاق
 content-blocking-warning-title = انتبه!
+content-blocking-warning-title-2 = قد تتعطل بعض المواقع بسبب الحماية الصارمة من التتبع.
+content-blocking-warning-title-custom = قد تتعطل بعض المواقع بسبب حماية التتبع المخصّصة
+# “Fix site issues” references the string content-blocking-exceptions-subheader
+content-blocking-and-isolating-etp-warning-description-4 = يُوصي { -brand-short-name } باستخدام إعدادات "أصلح مشاكل الموقع" لتقليل مشاكل الموقع والمحتوى. إذا بدا الموقع معطّلاً، فحاول إيقاف حماية التتبع لهذا الموقع لتحميل جميع المحتويات.
 content-blocking-and-isolating-etp-warning-description-2 = قد يتسبّب هذا الإعداد بألّا تعرض بعض المواقع أي محتوى أو ألا تعمل كما ينبغي. إن رأيت الموقع معطوبًا، فيمكنك تعطيل الحماية من التعقّب لهذا الموقع لتحميل محتواه.
 content-blocking-warning-learn-how = اطّلع على المزيد
+content-blocking-baseline-exceptions-3 =
+    .label = أصلح المشاكل الرئيسية في الموقع (موصى به)
+    .description = يساعد في تحميل المواقع والميزات من خلال إلغاء حظر العناصر الأساسية فقط التي قد تحتوي على أدوات تتبع. يغطي معظم المشكلات الشائعة.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = أصلح المشاكل البسيطة في الموقع
+    .description = يستعيد عناصر مثل مقاطع الفيديو في المقالات أو أقسام التعليقات من خلال إلغاء حظر العناصر التي قد تحتوي على أدوات تتبع. قد يقلل هذا من مشاكل الموقع ولكنه يوفر حماية أقل. يجب استخدامه مع إصلاحات للمشاكل الرئيسية.
+content-blocking-baseline-uncheck-warning-dialog-title = هل أنت متأكد من أنك تريد  تعطيل الإصلاحات؟
+content-blocking-baseline-uncheck-warning-dialog-body = يساعد هذا الإعداد في حلّ معظم مشاكل المواقع الشائعة. إذا أوقفت تشغيله، فقد لا تعمل بعض المواقع، ولن يتمكن { -brand-short-name } من المساعدة في حلّ هذه المشاكل.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = تعطيل الإصلاحات
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = إبقاء الإصلاحات مُشغّلة
 content-blocking-reload-description = عليك إعادة تحميل الألسنة لتأخذ هذه التغييرات مفعولها.
 content-blocking-reload-tabs-button =
     .label = أعِد تحميل كل الألسنة
@@ -1269,8 +2167,8 @@ content-blocking-suspected-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = أدِر الاستثناءات…
-    .accesskey = ث
+    .label = أدر الاستثناءات…
+    .accesskey = د
 
 ## Privacy Section - Permissions
 
@@ -1296,18 +2194,36 @@ permissions-speaker = تحديد السماعة
 permissions-speaker-settings =
     .label = الإعدادات…
     .accesskey = د
-permissions-notification = التنبيهات
+permissions-notification = الإشعارات
 permissions-notification-settings =
     .label = الإعدادات…
     .accesskey = ت
 permissions-notification-link = اطّلع على المزيد
 permissions-notification-pause =
-    .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
+    .label = ألبِث الإشعارات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
+permissions-autoplay2 =
+    .label = التشغيل التلقائي
 permissions-autoplay = التشغيل التلقائي
 permissions-autoplay-settings =
     .label = الإعدادات…
     .accesskey = ع
+permissions-block-popups2 =
+    .label = احجب النوافذ المنبثقة وعمليات إعادة التوجيه من جهات خارجية
+    .accesskey = ظ
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = أدر الاستثناءات
+    .description = إضافة مواقع إلكترونية يمكنها فتح نوافذ منبثقة واستخدام عمليات إعادة توجيه من جهات خارجية.
+    .accesskey = د
+    .searchkeywords = نوافذ منبثقة
+permissions-addon-install-warning3 =
+    .label = أظهر تحذير عند محاولة المواقع الإلكترونية تثبيت امتدادات
+    .accesskey = ه
+permissions-addon-exceptions2 =
+    .label = اختر المواقع الإلكترونية التي يمكنها تثبيت الامتدادات.
+    .accesskey = ت
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ
@@ -1323,26 +2239,64 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = الاستثناءات…
     .accesskey = ث
+permissions-location2 =
+    .label = المكان
+permissions-localhost2 =
+    .label = تطبيقات وخدمات الأجهزة
+permissions-local-network2 =
+    .label = أجهزة الشبكة المحلية
+permissions-xr2 =
+    .label = الواقع الافتراضي
+permissions-camera2 =
+    .label = الكاميرا
+permissions-microphone2 =
+    .label = الميكروفون
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = السماعة
+permissions-notification2 =
+    .label = الإشعارات
+permissions-header3 =
+    .label = الأذونات
+    .description = أدِر ما يمكن للمواقع الإلكترونية الوصول إليه أو التحكم فيه أو تفعيله.
+permissions-data-section =
+    .heading = الأذونات والبيانات
+pane-permissions-data-title2 = الأذونات والبيانات
+    .title = الأذونات والبيانات
 
 ## Privacy Section - Data Collection
 
 collection-header = جمع { -brand-short-name } للبيانات و استخدامها
 collection-header2 = جمع { -brand-short-name } للبيانات و إستخدامها
     .searchkeywords = telemetry
+preferences-collection-description = نسعى جاهدين لتزويدكم بالخيارات وجمع الحد الأدنى من البيانات اللازمة لتحسين { -brand-product-name } للجميع.
 preferences-collection-privacy-notice = اعرض تنويه الخصوصية
 preferences-across-profiles = تنطبق هذه الإعدادات على كل ملف تعريف { -brand-product-name } على هذا الجهاز.
 preferences-view-profiles = اعرض جميع الملفات الشخصية
-collection-description = نبذل جهدنا لإعطائك الخيار و جمع ما نحتاجه فقط لتحسين { -brand-short-name }. نطلب الإذن دائمًا قبل استقبال أي معلومات شخصية.
+collection-description = نسعى جاهدين لتزويدكم بالخيارات وجمع ما نحتاجه فقط لتحسين { -brand-short-name }. نطلب الإذن دائمًا قبل استقبال أي معلومات شخصية.
 collection-privacy-notice = تنويه الخصوصية
 collection-health-report-telemetry-disabled = لم تعد تسمح بأن يلتقط { -vendor-short-name } البيانات التقنية والتفاعلية. ستُحذف البيانات القديمة كلها خلال 30 يومًا.
 collection-health-report-telemetry-disabled-link = اطّلع على المزيد
+backup-multi-profile-warning-message =
+    .message = للتأكد من تضمين هذا التغيير في النسخ الاحتياطية، افتح كل ملف تعريف واختر "انسخ احتياطيًا الآن" في الإعدادات.
+nimbus-rollouts =
+    .label = اسمح لـ { -brand-short-name } بتحسين الميزات والأداء والاستقرار بين التحديثات
+    .description = ستطُرح التغييرات عن بُعد.
+addon-recommendations3 =
+    .label = اسمح بتوصيات امتداد مخصّصة
+    .description = احصل على توصيات لامتدادات تحسّن من تجربة التصفح لديك.
 collection-usage-ping =
     .label = أرسل إشعار الاستخدام اليومي إلى { -vendor-short-name }
     .accesskey = ر
+collection-usage-ping-description = يساعد هذا { -vendor-short-name } في تقدير عدد المستخدمين النشطين.
+collection-health-report2 =
+    .label = أرسل البيانات التقنية والتفاعلية إلى { -vendor-short-name }
+    .accesskey = س
 collection-health-report =
     .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى { -vendor-short-name }
     .accesskey = ح
 collection-health-report-link = اطّلع على المزيد
+collection-health-report-description = يساعدنا هذا في تحسين ميزات وأداء واستقرار { -brand-product-name }.
 collection-studies2 =
     .label = تثبيت الدراسات وتشغيلها
 collection-studies-description = جرّب الميزات والأفكار قبل إصدارها للجميع.
@@ -1351,6 +2305,7 @@ collection-studies =
 collection-studies-link = اعرض دراسات { -brand-short-name }
 addon-recommendations2 =
     .label = اسمح بتقديم توصيات مخصّصة لامتداد
+addon-recommendations-description = احصل على توصيات لامتدادات تحسّن من تجربة التصفح لديك.
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled2 = الإبلاغ عن البيانات معطّل في إعدادات البناء.
@@ -1358,6 +2313,12 @@ collection-backlogged-crash-reports2 =
     .label = أرسل تقارير الإنهيار تلقائيًا
     .accesskey = س
 collection-backlogged-crash-reports-description = يساعد هذا { -vendor-short-name } في تشخيص المشكلات وإصلاحها بالمتصفح. قد تتضمن التقارير بيانات شخصية أو حساسة.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = نفس الإعدادات، مظهر جديد!
+    .message = لقد أعدنا تنظيم هذه الصفحة لتسهيل تصفحها واستكشافها. لم تتغير إعداداتك الشخصية، وكل شيء لا يزال موجودًا هنا. نصيحة: استخدم البحث للانتقال مباشرة إلى ما تحتاجه.
+settings-redesign-promo-dismiss-button =
+    .label = فهمت
 addon-recommendations =
     .label = اسمح بأن يقترح { -brand-short-name } الامتدادات المخصّصة لك
 addon-recommendations-link = اطّلع على المزيد
@@ -1367,14 +2328,50 @@ collection-health-report-disabled = الإبلاغ عن البيانات معط�
 collection-backlogged-crash-reports-with-link = اسمح لـ { -brand-short-name } بإرسال تقارير الإنهيار المتراكمة نيابةً عنك<a data-l10n-name="crash-reports-link">معرفة المزيد</a>
     .accesskey = م
 privacy-segmentation-section-header = خصائص جديدة تعزز تصفحك
+privacy-segmentation-section-description = عندما نقدم ميزات تستخدم بياناتك لمنحك تجربة أكثر تخصيصًا:
 privacy-segmentation-radio-off =
     .label = استخدم توصيات { -brand-product-name }
 privacy-segmentation-radio-on =
     .label = أظهِر المعلومات المفصلة
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = جمع واستخدام بيانات { -brand-short-name }
+    .description = نحن نسعى جاهدين لتزويدك بالخيارات، ولا نجمع سوى الحد الأدنى من البيانات اللازمة لتحسين { -brand-product-name } للجميع.
+    .searchkeywords = قياس عن بعد
+data-collection-link = اعرض تنويه الخصوصية
+data-collection-preferences-across-profiles =
+    .message = تنطبق هذه الإعدادات على كل ملف تعريف { -brand-product-name } على هذا الجهاز.
+data-collection-profiles-link = اعرض جميع الملفات الشخصية
+data-collection-health-report-telemetry-disabled =
+    .message = لم تعد تسمح بأن يلتقط { -vendor-short-name } البيانات التقنية والتفاعلية. ستُحذف البيانات القديمة كلها خلال 30 يومًا.
+data-collection-health-report =
+    .label = أرسل البيانات التقنية والتفاعلية إلى { -vendor-short-name }
+    .accesskey = س
+    .description = يساعدنا هذا في تحسين ميزات { -brand-product-name } وأدائه واستقراره.
+data-collection-health-report-disabled =
+    .label = أرسل البيانات التقنية والتفاعلية إلى { -vendor-short-name }
+    .accesskey = س
+    .description = عُطِّل إرسال تقارير البيانات لتضبيط هذا الإصدار.
+data-collection-run-studies =
+    .label = اسمح لـ { -brand-short-name } بتشغيل دراسات الميزات
+    .description = يختار { -brand-short-name } مستخدمين بشكل عشوائي لاختبار الميزات، مما يساعد في تحسين الجودة للجميع.
+data-collection-studies-link =
+    .label = اعرض دراسات { -brand-short-name }
+data-collection-backlogged-crash-reports =
+    .label = إرسال تقارير الإنهيار تلقائيًا
+    .description = يساعد هذا { -vendor-short-name } في تشخيص وإصلاح المشكلات في المتصفح. قد تتضمن التقارير بيانات شخصية أو حساسة.
+    .accesskey = إ
+data-collection-usage-ping =
+    .label = أرسل إشعار الاستخدام اليومي إلى { -vendor-short-name }
+    .description = يساعد هذا { -vendor-short-name } في تقدير عدد المستخدمين النشطين.
+    .accesskey = س
 
 ## Privacy Section - Website Advertising Preferences
 
 website-advertising-header = تفضيلات الإعلان الموقع
+website-advertising-private-attribution =
+    .label = اسمح للمواقع الإلكترونية بإجراء قياسات الإعلانات مع الحفاظ على الخصوصية
+    .accesskey = م
 website-advertising-private-attribution-description = يساعد هذا المواقع على فهم أداء إعلاناتها دون جمع بيانات عنك.
 
 ## Privacy Section - Security
@@ -1383,11 +2380,16 @@ website-advertising-private-attribution-description = يساعد هذا المو
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = الأمان
-security-browsing-protection = الحماية من المحتوى المخادع و البرمجيات الخبيثة
+browsing-protection-group2 =
+    .label = الحماية من المحتوى المخادع والبرمجيات الخبيثة
+    .description = يمكن للمواقع وعمليات التنزيل الخطيرة أن تعرض بياناتك وجهازك للخطر. يقوم { -brand-short-name } بحظرها تلقائيًا، ويحذرك من البرامج الخطيرة أو غير المرغوب فيها.
+security-browsing-protection = الحماية من المحتوى المخادع والبرمجيات الخبيثة
 security-enable-safe-browsing =
-    .label = احجب المحتوى الخطير و المخادع
+    .label = احجب المحتوى الخطير والمخادع
     .accesskey = ح
 security-enable-safe-browsing-link = اطّلع على المزيد
+security-safe-browsing-warning =
+    .message = يؤدي إيقاف تشغيل هذا الخيار إلى تقليل الحماية ضد عمليات الاحتيال والمواقع الضارة والتنزيلات الخطيرة.
 security-block-downloads =
     .label = احجب التنزيلات الخطيرة
     .accesskey = ت
@@ -1410,11 +2412,21 @@ certs-devices =
 certs-thirdparty-toggle =
     .label = اسمح بأن يثق { -brand-short-name } تلقائيا بشهادات جذر من أطراف خارجية تقوم بتثبيتها
     .accesskey = ه
+certs-devices-enable-fips = مكّن FIPS
 space-alert-over-5gb-settings-button =
     .label = افتح الإعدادات
     .accesskey = ف
 space-alert-over-5gb-message2 = <strong>مساحة القرص قاربت على النفاذ من { -brand-short-name }</strong>. قد لا يُعرض محتوى المواقع كما ينبغي. يمكنك مسح البيانات المحفوظة من ”الإعدادات ← الخصوصية والأمان ← الكعكات وبيانات المواقع“.
 space-alert-under-5gb-message2 = <strong>مساحة القرص قاربت على النفاذ من { -brand-short-name }</strong>. قد لا يُعرض محتوى المواقع كما ينبغي. انتقل إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
+certs-description3 =
+    .label = الشهادات
+    .description = اضبط الشهادات التي يستخدمها { -brand-short-name } للتحقق من الاتصالات الآمنة.
+certs-view2 =
+    .label = أدر الشهادات
+    .accesskey = د
+certs-devices2 =
+    .label = أدر أجهزة الأمان
+    .accesskey = د
 
 ## Privacy Section - HTTPS-Only
 
@@ -1432,10 +2444,18 @@ httpsonly-radio-disabled3 =
     .description = قد لا يزال { -brand-short-name } يرقي بعض الاتصالات
 httpsonly-radio-disabled =
     .label = لا تفعّل وضع HTTPS فقط
+httpsonly-group =
+    .label = وضع HTTPS فقط
+    .description = يسمح فقط بالاتصالات الآمنة بمواقع الوب. سيسأل { -brand-short-name } قبل الاتصال بشكل غير آمن.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
 
 ## DoH Section
 
 preferences-doh-header = DNS عبر HTTPS
+dns-over-https-group2 =
+    .label = DNS عبر HTTPS
+    .description = يقوم نظام أسماء النطاقات عبر بروتوكول HTTPS (DoH) بتعمية عمليات البحث عن المواقع، مما يجعل من الصعب على مزود خدمة الإنترنت الخاص بك أو غيره معرفة المواقع التي تنوي زيارتها.
 preferences-doh-description = يرسل نظام اسم المجال (DNS) عبر HTTPS طلبك للحصول على اسم المجال من خلال اتصال مُعمّى، مما يؤدي إلى إنشاء DNS آمن ويجعل من الصعب على الآخرين معرفة موقع الوب الذي أنت على وشك الوصول إليه.
 preferences-doh-description2 = يرسل نظام اسم المجال (DNS) عبر HTTPS طلبك للحصول على اسم مجال من خلال اتصال مُعمّى، مما يوفر DNS آمنًا ويجعل من الصعب على الآخرين رؤية موقع الوب الذي أنت على وشك الوصول إليه.
 # Variables:
@@ -1464,6 +2484,7 @@ preferences-doh-default-desc = يقرر { -brand-short-name } متى يستخد�
 preferences-doh-default-detailed-desc-1 = أستخدم DNS آمن في المناطق التي تكون فيها متاحة
 preferences-doh-default-detailed-desc-2 = أستخدم محلل DNS المبدئي إذا كان هناك مشكلة مع مزود DNS الآمن
 preferences-doh-default-detailed-desc-3 = استخدم مزودًا محليًا، إن أمكن
+preferences-doh-default-detailed-desc-4 = أوقف التشغيل عند تفعيل VPN أو الرقابة الأبوية أو سياسات المؤسسة
 preferences-doh-default-detailed-desc-5 = عطله عندما تخبر الشبكة { -brand-short-name } بأنه لا يجب أن تستخدم DNS آمن
 preferences-doh-setting-enabled =
     .label = حماية متزايدة
@@ -1474,25 +2495,332 @@ preferences-doh-enabled-detailed-desc-2 = أستخدم فقط محلل DNS ال�
 preferences-doh-setting-strict =
     .label = أقصى حماية
     .accesskey = ح
-preferences-doh-strict-desc = سيستخدم { -brand-short-name } دائما DNS آمن. سترى تحذير خطر أمني قبل أن نستخدم نظام DNS الخاص بك.
+preferences-doh-strict-desc = سيستخدم { -brand-short-name } دائمًا DNS آمن. سترى تحذير خطر أمني قبل أن نستخدم نظام DNS الخاص بك.
 preferences-doh-strict-detailed-desc-1 = استخدم فقط المزود الذي تحدده
-preferences-doh-strict-detailed-desc-2 = حذر دائما إذا كان DNS الآمن غير متاح
+preferences-doh-strict-detailed-desc-2 = حذّر دائمًا إذا كان DNS الآمن غير متاح
 preferences-doh-strict-detailed-desc-3 = إذا لم يكن DNS الآمن متاحًا، فلن تتحمل المواقع أو تعمل كما ينبغي
 preferences-doh-setting-off =
     .label = معطّل
     .accesskey = ط
-preferences-doh-off-desc = استخدم محلل DNS الافتراضي الخاص بك
+preferences-doh-off-desc = استخدم محلّل DNS المبدئي الخاص بك
 preferences-doh-checkbox-warn =
     .label = حذر إذا كان هناك طرف ثالث يمنع DNS الآمن
     .accesskey = ح
 preferences-doh-select-resolver = اختر المزود:
 preferences-doh-exceptions-description = لن يستخدم { -brand-short-name } DNS الآمن على هذه المواقع
 preferences-doh-manage-exceptions =
-    .label = أدِر الاستثناءات…
-    .accesskey = ل
+    .label = أدر الاستثناءات…
+    .accesskey = د
+preferences-doh-overview-default =
+    .label = الحماية المبدئية
+    .description = استخدم DNS الآمن في المناطق التي يتوفر فيها.
+preferences-doh-overview-custom =
+    .label = مخصّص
+    .description = استخدم دائمًا DNS آمنًا مع التحكم في مزود الخدمة وسلوك التراجع.
+preferences-doh-overview-off =
+    .label = معطّل
+    .description = استخدم مُحلّل DNS المبدئي الخاص بك.
+preferences-doh-advanced-button =
+    .label = إعدادات متقدّمة
+preferences-doh-advanced-section =
+    .label = إعدادات متقدّمة
+    .description = يقوم نظام أسماء النطاقات عبر بروتوكول HTTPS (DoH) بتعمية عمليات البحث عن المواقع، مما يجعل من الصعب على مزود خدمة الإنترنت الخاص بك أو غيره معرفة المواقع التي تنوي زيارتها.
+preferences-doh-manage-exceptions2 =
+    .label = أدر الاستثناءات
+    .accesskey = د
+preferences-doh-radio-default =
+    .label = المبدئي
+    .description = استخدم DNS الآمن في المناطق التي يتوفر فيها.
+preferences-doh-radio-custom =
+    .label = مخصّص
+    .description = استخدم DNS الآمن في المناطق التي يتوفر فيها.
+preferences-doh-radio-off =
+    .label = معطّل
+    .description = استخدم مُحلّل DNS المبدئي الخاص بك
+preferences-doh-fallback-label =
+    .label = أبلغني دائمًا إذا لم يكن DNS الآمن متاحًا
+preferences-doh-status-item-off =
+    .message = DNS عبر HTTPS مُعطّل
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = لا يعمل DNS عبر HTTPS بسبب حدوث خطأ ({ $reason }) أثناء محاولة استخدام المزود { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = لا يعمل DNS عبر HTTPS لأننا تلقينا عنوان URL غير صالح ({ $reason })
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = يستخدم DNS عبر HTTPS المزود { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = لا يعمل DNS عبر HTTPS بسبب حدوث خطأ ({ $reason }) أثناء محاولة استخدام المزود المحلي { $name }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = يستخدم DNS عبر HTTPS المزود المحلي { $name }
+preferences-doh-select-resolver-label =
+    .label = اختر المزود:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = استخدم هذا المزود لتحليل DNS عبر HTTPS
+preferences-doh-custom-provider-label =
+    .aria-label = أدخل عنوان URL مخصصًا لمزود الخدمة
+preferences-doh-header2 =
+    .heading = DNS عبر HTTPS
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = أمان الاتصال والبرمجيات
+preferences-connection-link-section =
+    .label = أمان الاتصال والبرمجيات
+    .description = تعرّف على كيفية الحفاظ على أمان الاتصالات وحظر البرامج الضارة والتحقق من صحة المواقع الإلكترونية.
+preferences-connection-link-button =
+    .label = إعدادات متقدّمة
 
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = سطح المكتب
 downloads-folder-name = التّنزيلات
 choose-download-folder-title = اختر مجلّد التّنزيلات:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = المظهر
+browser-theme-group =
+    .label = سمة المتصفح
+    .description = صمّم { -brand-short-name } بأسلوبك الخاص. تُطبّق ألوان السمة على أشرطة الأدوات والقوائم والرسائل.
+browser-theme-manage-link =
+    .label = أدِر سمات { -brand-short-name }
+appearance-window-density-group =
+    .label = كثافة النوافذ
+    .description = اضبط التباعد حول عناصر النافذة مثل شريط الأدوات والعلامات والشريط الجانبي.
+appearance-window-density-radio-group =
+    .aria-label = كثافة النوافذ
+appearance-window-density-automatic =
+    .label = تلقائي (المبدئي)
+    .description = يُطبّق التباعد القياسي أو المضغوط أو التباعد باللمس تلقائيًا
+appearance-window-density-automatic-no-touch =
+    .label = تلقائي (المبدئي)
+    .description = يُطبّق التباعد القياسي أو المضغوط تلقائيًا
+appearance-window-density-standard =
+    .label = قياسي
+    .description = تباعد متوازن لمعظم الشاشات
+appearance-window-density-auto-touch-mode =
+    .label = استخدم تباعد اللمس لوضع الجهاز اللوحي
+appearance-window-density-compact =
+    .label = مضغوط
+    .description = تقليل المسافات بين الأحرف لتناسب الشاشات الأصغر حجمًا
+appearance-window-density-touch =
+    .label = لمس
+    .description = عناصر النوافذ وأهداف النقر الأكبر حجمًا، المُحسَّنة للاستخدام مع الشاشات التي تعمل باللمس
+related-settings-group =
+    .label = الإعدادات ذات الصلة
+related-settings-accessibility-link =
+    .label = خصّص إعدادات التقريب وتبعيد والخط في قسم الإتاحة
+related-settings-home-link =
+    .label = خصّص { -firefox-home-brand-name }
+related-settings-tabs-browsing-link =
+    .label = خصّص تخطيط المتصفح
+
+## AI controls page
+
+preferences-ai-controls-description = لديك دائمًا خيار في { -brand-short-name }، بما في ذلك ما إذا كنت ترغب في استخدام الميزات المحسّنة بالذكاء الاصطناعي. المزيد من عناصر التحكم قادمة قريبًا.
+preferences-ai-controls-block-ai-label = احظر تحسينات الذكاء الاصطناعي
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = يعني الحظر أنك لن ترى تحسينات الذكاء الاصطناعي الجديدة أو الحالية في { -brand-short-name }، أو النوافذ المنبثقة المتعلقة بها. <a data-l10n-name="link">للحصول على مزيد من التفاصيل</a> حول ما هو مُضمّن وكيفية التحكم في ميزات التعلّم الآلي التقليدية، مثل اقتراحات البحث والتوصيات.
+preferences-ai-controls-blocked-message =
+    .message = تُحظر التحسينات الجديدة والحالية للذكاء الاصطناعي مبدئيًا. لإلغاء حظر ميزة معينة، استخدم عناصر التحكم أدناه.
+preferences-ai-controls-on-device-group =
+    .label = الذكاء الاصطناعي على الجهاز
+    .description = تستخدم هذه الميزات نماذج ذكاء اصطناعي صغيرة تُنزّل على جهازك عند استخدامها. ويساعد هذا النهج في حماية خصوصيتك.
+preferences-ai-controls-translations-control =
+    .label = الترجمات
+    .description = تصفح الوِب بسهولة في لغتك المفضلة.
+preferences-ai-controls-translations-more-link = المزيد من إعدادات الترجمة
+preferences-ai-controls-pdfjs-control =
+    .label = نص بديل للصورة في عارض PDF { -brand-short-name }
+    .description = عند إضافة صور إلى PDF، يضيف هذا أوصافًا لجعلها ميسرة للوصول.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = اقتراحات مجموعة اللسان
+    .description = احصل على اقتراحات لتسمية ألسنتك وتنظيمها.
+preferences-ai-controls-key-points-control =
+    .label = أهم النقاط في معاينات الروابط
+    .description = اطّلع على ملخص سريع قبل فتح أي رابط.
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = مزودي برامج الدردشة الآلية المدعومة بالذكاء الاصطناعي في الشريط الجانبي
+    .description = أبقِ روبوت الدردشة أمامك أثناء التصفح. اختر من بين Anthropic Claude وChatGPT وCopilot وGoogle Gemini وLe Chat Mistral.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = آلي الدردشة في الشريط الجانبي
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = متاح
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = مفعّل
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = محجوب
+preferences-ai-controls-state-description-before = معنى الخيارات:
+preferences-ai-controls-state-description-available = <strong>متاح:</strong> سترى الميزة ويمكنك استخدامها.
+preferences-ai-controls-state-description-enabled = <strong>مفعّل:</strong> لقد اخترت استخدام هذه الميزة.
+preferences-ai-controls-state-description-blocked = <strong>محجوب:</strong> لن تتمكن من رؤية هذه الميزة أو استخدامها. بالنسبة للذكاء الاصطناعي المُثبّت على الجهاز، ستتم إزالة أي نماذج نُزلت مسبقًا.
+preferences-ai-controls-block-confirmation-heading = احظر تحسينات الذكاء الاصطناعي؟
+preferences-ai-controls-block-confirmation-description = لن ترى أي تحسينات جديدة أو حالية للذكاء الاصطناعي في { -brand-short-name }، أو أي نوافذ منبثقة بشأنها. بعد ذلك، يمكنك إلغاء حظر أي شيء ترغب في الاستمرار باستخدامه.
+preferences-ai-controls-block-confirmation-features-start = ما الذي سيُحظر:
+preferences-ai-controls-block-confirmation-translations = الترجمات
+preferences-ai-controls-block-confirmation-pdfjs = نص بديل للصورة في عارض ملفات PDF { -brand-short-name }
+preferences-ai-controls-block-confirmation-tab-group-suggestions = اقتراحات مجموعات اللسان
+preferences-ai-controls-block-confirmation-key-points = أهم النقاط في معاينات الروابط
+preferences-ai-controls-block-confirmation-sidebar-chatbot = مزودي برامج الدردشة الآلية في الشريط الجانبي
+preferences-ai-controls-block-confirmation-features-after = يؤثر الحظر أيضًا على الإمتدادات التي تستخدم الذكاء الاصطناعي المقدم من { -brand-short-name }.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = ألغِ
+preferences-ai-controls-block-confirmation-confirm =
+    .label = احجب
+preferences-ai-controls-header3 =
+    .heading = أنظمة التحكم بالذكاء الاصطناعي
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = { -brand-short-name } على الحراسة
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name } يوصي ببعض التحسينات الأمنية
+security-privacy-status-ok-label = الحماية الموسّعة من التعقب مفعّلة
+security-privacy-status-problem-label = لقد وجدنا إعدادات تؤثر على حمايتك
+security-privacy-status-problem-helper-label = اعرض المشكلات
+security-privacy-status-pending-trackers-label = البحث عن عدد المتعقبات التي حظرتها { -brand-short-name } خلال الشهر الماضي
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = لديك <a data-l10n-name="strict-tracking-protection">حماية صارمة</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = لديك <a data-l10n-name="custom-tracking-protection">حماية مخصّصة</a>
+security-privacy-status-up-to-date-label = لديك أحدث وأكثر إصدارات { -brand-short-name } أمانًا
+security-privacy-status-update-needed-label = يتوفر إصدار جديد من { -brand-short-name } .
+security-privacy-status-update-error-label = { -brand-short-name } يواجه مشكلة في تحديث نفسه
+security-privacy-status-update-checking-label = { -brand-short-name } يتحقق من وجود تحديثات
+security-privacy-status-update-needed-description = حدِّث للحصول على أحدث التحديثات المتعلقة بالسرعة والاستقرار والأمان.
+security-privacy-status-update-button-label =
+    .label = حدِّث { -brand-short-name }
+security-privacy-image-warning =
+    .alt = درع عليه علامة تعجب، يعبر عن القلق بشأن تحذيراتك الأمنية
+security-privacy-image-ok =
+    .alt = درع عليه علامة صح، مما يدل على عدم وجود أي مشكلات أمنية عالقة.
+security-privacy-issue-card =
+    .heading = تحذيرات أمنية
+issue-card-reset-button =
+    .label = صفّر
+issue-card-dismiss-button =
+    .tooltiptext = أهمِل
+    .aria-label = أهمِل
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = الحماية الموسّعة من التعقب
+    .description = تستخدم المواقع الإلكترونية متعقبات لملاحقتك عبر الإنترنت وعرض إعلانات مزعجة. يحميك { -brand-short-name } أثناء التصفح، حيث يحظر المتعقبات تلقائيًا لتظل أنت المتحكم في أثرك الرقمي.
+preferences-etp-level-standard =
+    .label = قياسي (المبدئي)
+    .description = حماية قوية وموثوقة تعمل بسلاسة مع معظم المواقع الإلكترونية.
+preferences-etp-level-strict =
+    .label = صارم
+    .description = حماية أقوى تحظر المزيد من أدوات التتبع، ولكنها قد تؤدي إلى تعطّل بعض المواقع.
+preferences-etp-level-custom =
+    .label = مخصّص
+    .description = اختر الحمايات التي تريد تفعيلها أو إيقافها.
+preferences-etp-status-advanced-button =
+    .label = إعدادات متقدّمة
+preferences-etp-status-protections-dashboard-link =
+    .label = اطّلع على لوحة معلومات الحماية الشخصية الخاصة بك
+    .description = اكتشف عدد أدوات التتبع الخفية التي حظرها { -brand-short-name } من أجلك، بما في ذلك أدوات تتبع وسائل التواصل الاجتماعي وأدوات البصمة الرقمية وبرمجيات تعدين العملات الرقمية.
+preferences-etp-header =
+    .heading = الحماية الموسّعة من التعقب
+preferences-etp-advanced-settings-group =
+    .label = إعدادات متقدّمة
+    .description = تستخدم المواقع الإلكترونية أدوات تتبع لملاحقتك عبر الإنترنت وعرض إعلانات مزعجة. يحميك { -brand-short-name } أثناء التصفح، حيث يحجب معظم أدوات التتبع تلقائيًا لتظل أنت المتحكم في أثرك الرقمي.
+preferences-etp-customize-button =
+    .label = خصّص حماية التعقب
+preferences-etp-reload-tabs-hint =
+    .message = أعد تحميل ألسنتك لتطبيق هذه التغييرات.
+preferences-etp-reload-tabs-hint-button =
+    .label = أعِد تحميل كل الألسنة
+preferences-etp-rfp-warning-message =
+    .message = أنت تستخدم ميزة Resist Fingerprinting (RFP)، والتي تحل محل بعض إعدادات حماية التبصيم في { -brand-short-name }. قد يتسبب هذا في تعطل بعض المواقع.
+preferences-etp-level-warning-message =
+    .heading = تنبيه! قد لا تعمل بعض المواقع كما هو متوقع.
+    .message = تدمج بعض المواقع أدوات تتبع في ميزاتها أو محتواها. وعندما يحظرها { -brand-short-name }، قد يبدو الموقع معطوبًا. جرّب استخدام "أصلح مشاكل الموقع" أو أوقِف تشغيل الحماية من التتبع في ذلك الموقع.
+preferences-etp-manage-exceptions-button =
+    .label = أدر الاستثناءات
+    .description = إدارة المواقع الإلكترونية التي تم تعطيل "الحماية الموسّعة من التعقب" فيها.
+preferences-etp-customize-header =
+    .heading = خصّص حماية التعقب
+preferences-etp-reset =
+    .label = صفّر ضبط التخصيصات
+    .description = استعادة الإعدادات إلى مستوى حماية مسبق الضبط.
+preferences-etp-reset-standard-button =
+    .label = صفّر إلى قياسي
+preferences-etp-reset-strict-button =
+    .label = صفّر إلى صارم
+preferences-etp-custom-control-group =
+    .label = حماية التعقب
+    .description = اختر الحمايات التي تريد تفعيلها أو إيقافها.
+preferences-etp-custom-cookies-enabled =
+    .label = ملفات تعريف الارتباط
+preferences-etp-custom-cookie-behavior =
+    .aria-label = ملفات تعريف الارتباط
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = اسمح بجميع ملفات تعريف الارتباط
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = احجب ملفات تعريف الإرتباط بين المواقع
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = اعزل ملفات تعريف الارتباط بين المواقع
+preferences-etp-custom-tracking-protection-enabled =
+    .label = محتوى التعقّب
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = محتوى التعقّب
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = المُعدّنات المعمّاة
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = المسجّلات المعروفة
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = المسجّلات المشتبه بها
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = المسجّلات المشتبه بها
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = لا يُحظر المسجّلات المعروفة
+    .description = قد يسمح هذا لبعض المتقعبات بملاحقتك دون استخدام ملفات تعريف الارتباط.
+security-privacy-issue-warning-third-party-cookies =
+    .label = ملفات تعريف الارتباط الخاصة بالجهات الخارجية مُفعّلة
+    .description = تُستخدم ملفات تعريف الارتباط التابعة لجهات خارجية لتتبعك عبر المواقع الإلكترونية.
+security-privacy-issue-warning-password-manager =
+    .label = مدير كلمات السر مُعطّل
+    .description = تُساعدك برامج إدارة كلمات السر على تخزين كلمات سر قوية لحساباتك.
+security-privacy-issue-warning-popup-blocker =
+    .label = مانع النوافذ المنبثقة مُعطّل
+    .description = النوافذ المنبثقة مزعجة وقد تكون ضارة.
+security-privacy-issue-warning-extension-install =
+    .label = يمكن للمواقع الإلكترونية تثبيت امتدادات.
+    .description = يمكن للمواقع الإلكترونية تثبيت امتدادات إلى { -brand-short-name } دون سؤال.
+security-privacy-issue-warning-safe-browsing =
+    .label = لا يُحظر المحتوى الخطير والمضلل
+    .description = تزداد احتمالية تعرضك لعمليات الاحتيال والبرمجيات الخبيثة من المواقع الإلكترونية.
+security-privacy-issue-warning-doh =
+    .label = DNS عبر HTTPS مُعطّل
+    .description = تخفي DNS عبر HTTPS المواقع التي تزورها عن مزود خدمة الشبكة الخاص بك.
+security-privacy-issue-warning-ech =
+    .label = Encrypted Client Hello مُعطّل
+    .description = تعمل ميزة Encrypted Client Hello على إخفاء المواقع التي تزورها عن مزود خدمة الشبكة الخاص بك.
+security-privacy-issue-warning-proxy-autodetection =
+    .label = فُعِّل التضيبط التلقائي للوسيط
+    .description = قد التضيبط التلقائي للوسيط للشبكات غير الموثوقة بمراقبة نشاطك.

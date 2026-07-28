@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } 사용자
     }
 
-## Firefox Accounts Message
+## Mozilla Account messages
 
 cfr-doorhanger-bookmark-fxa-header = 어디서나 북마크 동기화
 cfr-doorhanger-bookmark-fxa-body = 멋진 발견! 이제 다른 휴대 기기에서도 이 북마크를 사용해 보세요. { -fxaccount-brand-name }로 시작해 보세요.
@@ -66,6 +66,13 @@ cfr-doorhanger-bookmark-fxa-link-text = 북마크 지금 동기화…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 닫기 버튼
     .title = 닫기
+fxa-adoption-addresses-backup-title = 저장된 주소를 백업합시다
+fxa-adoption-addresses-backup-subtitle = 암호화를 통해 저장된 주소를 기기에 동기화하여 보호하세요.
+fxa-adoption-credit-cards-backup-title = 결제 수단을 백업합시다
+fxa-adoption-credit-cards-backup-subtitle = 암호화를 통해 결제 수단을 기기에 동기화하여 보호하세요.
+fxa-adoption-bookmarks-treatment-backup-title = 북마크를 백업합시다
+fxa-adoption-bookmarks-treatment-backup-subtitle = 암호화를 통해 북마크를 기기에 동기화하여 보호하세요.
+fxa-adoption-primary-button-label = 가입
 
 ## Protections panel
 
@@ -154,7 +161,7 @@ spotlight-pin-secondary-button = 나중에
 ## Windows and therefore must be as narrow as possible.
 
 mr2022-background-update-toast-title = 새로운 { -brand-short-name }. 사생활을 더 보호합니다. 추적기가 더 적습니다. 타협이 없습니다.
-mr2022-background-update-toast-text = 가장 강력한 추적 방지 보호 기능으로 업그레이드된 최신 { -brand-short-name }를 지금 사용해 보세요.
+mr2022-background-update-toast-text = 가장 강력한 추적 방지 기능으로 업그레이드된 최신 { -brand-short-name }를 지금 사용해 보세요.
 # This button label will be fitted into a narrow fixed-width button by
 # Windows. Try to not exceed the width of the English text (compare it
 # using a variable font like Arial): the button can only fit 1-2
@@ -223,6 +230,20 @@ fox-doodle-pin-secondary = 나중에
 set-default-pdf-handler-headline = <strong>이제 PDF가 { -brand-short-name }에서 열립니다.</strong> 브라우저에서 직접 양식을 편집하거나 서명하세요. 변경하려면, 설정에서 "PDF"를 검색하세요.
 set-default-pdf-handler-primary = 확인
 
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = 서명을 어디든지 추가하세요!
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = 서명을 그리거나 입력하거나 업로드한 후 원하는 위치에 정확히 배치하세요. 자주 사용하는 서명은 다음을 위해 저장하세요.
+annotations-make-default-pdf-handler-title = { -brand-short-name }를 기본 PDF 편집기로 설정하시겠습니까?
+annotations-make-default-pdf-handler-subtitle = PDF를 열 때마다 저희 도구를 사용할 수 있습니다.
+annotations-make-default-pdf-primary-cta-label = 기본으로 설정
+annotations-make-default-pdf-next-label = 다음
+
 ## FxA sync CFR
 
 fxa-sync-cfr-header = 미래의 새 기기?
@@ -272,6 +293,20 @@ launch-on-login-infobar-final-message = <strong>컴퓨터를 다시 시작할 �
 launch-on-login-infobar-final-reject-button = 아니요
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = 다음에 컴퓨터를 시작할 때 { -brand-short-name }를 여시겠습니까?
+launch-on-login-spotlight-startup-checkbox = 시작할 때 { -brand-short-name } 실행
+launch-on-login-spotlight-pin-taskbar-checkbox = 작업 표시줄에 고정
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = 이전 창 및 탭 열기
+launch-on-login-spotlight-primary-button = { -brand-short-name } 저장 후 닫기
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -282,6 +317,12 @@ tail-fox-spotlight-title = 성가신 추적기로부터 벗어나세요
 tail-fox-spotlight-subtitle = 귀찮은 광고 추적기와 작별하고 더 안전하고 빠른 인터넷 경험을 누리세요.
 tail-fox-spotlight-primary-button = { -brand-short-name }로 내 링크 열기
 tail-fox-spotlight-secondary-button = 나중에
+
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = 내장된 개인 정보 보호로 돌아가 보세요
+welcome-back-spotlight-subtitle = 비영리 단체가 운영하는 유일한 주요 브라우저에 오신 것을 환영합니다. 사용자가 어디서든 안전하게 이용할 수 있도록 데이터 보호에 만전을 기하고 있습니다.
+welcome-back-embedded-import-title = 데이터를 가져오고 { -brand-short-name }를 나만의 것으로 만드세요.
 
 ## Root Certificate Succession Infobar
 
@@ -308,8 +349,11 @@ fxa-menu-message-close-button =
     .title = 닫기
     .aria-label = 닫기
 fxa-menu-message-sign-up-button = 가입
+fxa-menu-message-sign-in-button = 로그인
+fxa-menu-message-sync-button = 동기화 시작
 fxa-menu-message-sync-devices-primary-text = 모든 기기 동기화
 fxa-menu-message-sync-devices-secondary-text = { -brand-short-name }를 사용하는 모든 곳에서 북마크나 비밀번호와 같은 정보를 즉시 얻으세요.
+fxa-menu-message-sync-devices-secondary-text2 = { -brand-short-name }에 로그인한 모든 곳에서 북마크, 비밀번호 등을 즉시 사용하세요.
 fxa-menu-message-sync-devices-collapsed-text = 모든 기기 동기화
 fxa-menu-message-backup-data-primary-text = 브라우저 데이터 백업
 fxa-menu-message-backup-data-secondary-text = 모든 기기의 북마크, 비밀번호 및 기타 정보를 자동으로 보호합니다.
@@ -340,3 +384,117 @@ multi-cta-fox-doodle-privacy-focused-subtitle =
        *[other] 개인 정보 보호에 중점을 두는 브라우저를 단 한 번의 클릭으로 사용하세요. 링크를 여는 기본 브라우저를 { -brand-short-name }로 설정하고 작업 표시줄에 고정하세요.
     }
 multi-cta-fox-doodle-msix-privacy-focused-subtitle = 개인 정보 보호에 중점을 두는 브라우저를 단 한 번의 클릭으로 사용하세요. 링크를 여는 기본 브라우저를 { -brand-short-name }로 설정하고 작업 표시줄과 시작 메뉴에 고정하세요.
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = 곧 Windows 10에서 업그레이드하시겠습니까?
+windows-10-eos-sync-spotlight-subtitle = 어떤 기기에서도 바로 사용할 수 있도록 비밀번호와 북마크를 백업하세요.
+windows-10-eos-sync-spotlight-primary-label = { -brand-short-name } 백업
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = Windows 11로 업그레이드하시겠습니까? 북마크와 비밀번호를 잃어버리지 마세요.
+windows-10-eos-sync-toast-subtitle = 이 PC나 다음 PC에서 언제든지 { -brand-short-name }를 사용할 수 있도록 데이터를 백업하세요.
+windows-10-eos-sync-toast-primary-label = 시작하기
+windows-10-eos-sync-toast-secondary-label = 나중에 알림
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = { -brand-product-name }는 다른 대형 기술 기업 브라우저처럼 사전 설치되어 있지 않습니다. 이것이 중요합니다.
+windows-10-eos-challenger-sync-callout-subtitle = { -brand-product-name }의 북마크와 비밀번호를 백업하면, 선택한 브라우저를 다음 기기로 옮기는 것이 더 쉬워집니다.
+windows-10-eos-challenger-pin-callout-subtitle = 선택한 브라우저가 필요할 때 항상 사용할 수 있도록 { -brand-shorter-name }를 작업 표시줄에 고정하세요.
+windows-10-eos-challenger-sync-primary-button = { -brand-shorter-name } 백업
+windows-10-eos-challenger-pin-primary-button = { -brand-shorter-name } 고정
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name }는 암호화폐 채굴기, 소셜 미디어 추적기 및 디지털 지문을 차단합니다.
+windows-10-eos-sync-callout-privacy-screen-1-subtitle = 추적기는 사용자의 기기를 식별하거나 웹을 통해 사용자를 추적할 수 없습니다 — 왜냐하면 우리는 그것을 허용하지 않기 때문입니다.
+windows-10-eos-sync-callout-privacy-screen-2-title = 다음 기기를 위해 비밀번호와 북마크를 보호하세요.
+windows-10-eos-sync-callout-privacy-screen-2-subtitle = { -brand-shorter-name }를 백업하면 데이터 및 개인 정보 설정을 쉽게 가져올 수 있습니다.
+windows-10-eos-sync-callout-privacy-info-button = 차단 된 내용보기
+windows-10-eos-callout-addons-title = 부가 기능을 사용해 보세요: 간단한 업그레이드, 큰 영향력
+windows-10-eos-callout-addons-subtitle = 다음 확장 기능들은 여러분이 생산성을 유지하고, 보호를 받으며, 방해받지 않는걸 돕도록 선택되었습니다.
+windows-10-eos-callout-addons-primary-button = 추천 보기
+windows-10-eos-sync-callout-addons-title = Windows 10에서 업그레이드할 때 부가 기능을 잃어버리지 마세요.
+windows-10-eos-sync-callout-addons-subtitle = 지금 동기화하여 { -brand-product-name } 부가 기능을 기기 변경 후에도 항상 사용할 수 있도록 하세요.
+windows-10-eos-sync-callout-next-button = 다음
+windows-10-eos-sync-callout-get-started-button = 시작하기
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = 세로 탭 및 탭 그룹이 여기에 있습니다!
+# In English, "dropped" is a colloquial form for released.
+windows-10-eos-feature-toast-subtitle = 여러분의 요청에 의해 { -brand-product-name }에 여러분의 탐색을 간소화하고 집중할 수 있게 해 주는 새로운 기능이 추가되었습니다.
+windows-10-eos-feature-toast-whats-new-button = 새 기능 살펴보기
+windows-10-eos-feature-toast-dismiss-button = 닫기
+
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft는 더 이상 Windows 10을 지원하지 않습니다.</strong> Windows 11로 전환할 수 있도록 { -brand-product-name }에 필요한 정보를 백업하세요.
+windows-10-eos-global-infobar-primary-button = 백업 켜기
+    .accesskey = T
+windows-10-eos-global-infobar-learn-more-link = 더 알아보기
+    .accessKey = L
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-message = <strong>엄격한 추적 방지로 인해 사이트가 손상될 수 있습니다.</strong> 추적기를 포함할 수 있는 필수 요소를 차단 해제하여 일반적인 문제를 해결하세요.
+etp-strict-exceptions-infobar-learn-more = 더 알아보기
+etp-strict-exceptions-infobar-button = 해결 사항 적용
+    .accesskey = A
+etp-strict-exceptions-infobar-not-now = 나중에
+    .accesskey = N
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name }가 기본 브라우저가 아닙니다
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name }가 기본 브라우저가 아닙니다
+set-default-menu-message-row-layout-title = { -brand-short-name }를 기본 브라우저로 설정하세요
+set-default-menu-message-row-layout-title-variant = { -brand-short-name }를 기본 브라우저로 설정
+set-default-menu-message-row-layout-subtitle = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] { -brand-short-name }를 손쉽게 사용할 수 있습니다. 기본 브라우저로 설정하고 독에 넣으세요.
+       *[other] { -brand-short-name }를 손쉽게 사용할 수 있습니다. 기본 브라우저로 설정하고 작업 표시줄에 고정하세요.
+    }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] { -brand-short-name }로 모든 링크 열기
+       *[other] { -brand-short-name }로 모든 링크 열기
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] 더 빠른 탐색과 자동으로 개인 정보를 보호해주는 기능을 이용하세요.
+       *[other] 더 빠른 탐색과 자동으로 개인 정보를 보호해주는 기능을 이용하세요.
+    }
+set-default-menu-message-primary-button = 기본으로 설정
+set-default-menu-message-primary-button-variant = 기본 브라우저로 설정
+set-default-menu-message-primary-button-short-variant = { -brand-short-name }를 기본 브라우저로 설정
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = 이메일 가리기 50개 무료
+relay-50-masks-announcement-subtitle = 이제 50개의 무료 이메일 가리기가 제공됩니다 (기존 5개). 계정마다 하나씩 사용하여 실제 이메일 주소를 안전하게 보호하세요.
+relay-50-masks-announcement-primary-button = { -relay-brand-name }로 이동
+    .accesskey = G
+relay-50-masks-announcement-secondary-button = 닫기
+    .accesskey = D
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>{ -brand-product-name }가 새로운 모습으로 바뀌었습니다.</strong> 지금 보고 계신 버전은 올해 말 출시를 앞두고 있는 초기 미완성 버전입니다.
+nova-early-access-share-feedback-link = 의견 공유
+    .accesskey = S
+nova-early-access-infobar-primary-button = 확인
+    .accesskey = G
+
+## App Exit Spotlight dialog
+
+app-exit-spotlight-title = Windows에 로그인할 때마다 { -brand-short-name }를 시작하시겠습니까?
+app-exit-spotlight-checkbox-launch-on-login = 시작할 때 { -brand-short-name } 열기
+app-exit-spotlight-checkbox-pin-to-taskbar = 작업 표시줄에 고정
+app-exit-spotlight-primary-button = { -brand-short-name } 저장 후 닫기

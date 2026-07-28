@@ -71,8 +71,16 @@ open-in-new-window-for-csp-or-xfo-error = 在新窗口中打开网站
 # Variables:
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = 为了保护您的安全，{ $hostname } 将不允许 { -brand-short-name } 显示嵌入了其他网站的页面。要查看此页面，请在新窗口中打开。
-fp-certerror-view-certificate-link = 查看此网站的证书
-fp-certerror-return-to-previous-page-recommended-button = 返回（推荐）
+fp-certerror-view-certificate-link = 查看网站证书
+fp-certerror-return-to-previous-page-recommended-button-2 = 返回（推荐）
+    .accesskey = G
+fp-certerror-return-to-previous-page-recommended-button = 返回上一页（推荐）
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-revoked-why-dangerous-body = { -brand-short-name } 向您警告此网站的风险，因为提供给 { $hostname } 的证书已被吊销，不再受信任。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-revoked-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。您可向网站的管理员了解此问题的处理进展。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
@@ -80,6 +88,12 @@ fp-certerror-return-to-previous-page-recommended-button = 返回（推荐）
 fp-certerror-bad-domain-why-dangerous-body = 此网站已被设置为仅允许安全连接，但其证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，它使用的证书对 { $hostname } 无效。此证书仅对以下网站有效：{ $validHosts }
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-bad-domain-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。各个网站通过证书授权机构颁发的证书证明自己声称的身份。但如果您使用的是企业网络，则您的支持团队可能可以提供更多信息。如果您使用了反病毒软件，请尝试搜索可能存在的冲突和已知问题。
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } 向您警告此网站的风险，因为颁发提供给 { $hostname } 的证书的证书授权机构已不再受信任。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-untrusted-issuer-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。您可向网站的管理员了解此问题的处理进展。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 fp-certerror-unknown-issuer-why-dangerous-body = 此网站的证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，可能是因为无法识别证书的颁发者、证书通过自签名得来，或者网站未发送我们信任的中间证书。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
@@ -107,9 +121,35 @@ fp-cert-error-code = 错误代码：{ $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } 无法信任 { $hostname }，因其无法证明自己符合公开证书透明度要求。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。
 fp-learn-more-about-secure-connection-failures = 详细了解安全连接失败
 fp-learn-more-about-cert-issues = 详细了解此类证书问题
 fp-learn-more-about-time-related-errors = 详细了解时间相关错误的解决办法
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $datetime (Date) - Date the cert becomes valid.
+fp-certerror-pkix-not-yet-valid-why-dangerous-body = { -brand-short-name } 不信任此网站，因为其提供的证书需到 { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } { DATETIME($date, timeStyle: "short") } 才开始生效。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $date (Date) - Device's clock date.
+fp-certerror-pkix-not-yet-valid-what-can-you-do-body = 您的设备时间为 { DATETIME($date, timeStyle: "short") } { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") }。若无误，则这可能是网站自身的安全问题。若有误，可在设备的系统设置中更改。
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-invalid-cert-why-dangerous = { $hostname } 的管理员未正确配置此网站，无法创建安全连接。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-intro = 您计算机上的时间是 { DATETIME($now, dateStyle: "medium") }，{ -brand-short-name } 无法在这个设定的时间下进行安全连接。若要访问 <strong>{ $hostname }</strong>，请前往系统设置，将计算机上的时钟更新至当前日期、时间、时区，然后刷新页面。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+# Variables:
+#   $now (Date) - The current datetime, to be formatted as a date
+fp-certerror-clock-skew-what-can-you-do-body = 请前往系统设置，将计算机上的时钟更新至当前日期、时间、时区。您计算机上设定的时间是 { DATETIME($now, dateStyle: "medium") }。
 
 ## Variables:
 ##   $hostname (string) - Hostname of the website with cert error.
@@ -164,6 +204,7 @@ redirectLoop-title = 此页面不能正确地重定向
 unknownSocketType-title = 服务器响应异常
 nssFailure2-title = 建立安全连接失败
 csp-xfo-error-title = { -brand-short-name } 无法打开此页面
+corruptedContentErrorv2-title = 内容损坏错误
 corruptedContentError-title = 内容损坏错误
 sslv3Used-title = 无法安全地连接
 inadequateSecurityError-title = 您的连接不安全
@@ -177,7 +218,7 @@ certerror-mitm-title = 有软件正在阻止 { -brand-short-name } 安全地连�
 ## Felt Privacy V1 Strings
 
 fp-certerror-page-title = 警告：存在安全风险
-fp-certerror-body-title = 当心，看来有异常情况。
+fp-certerror-body-title = 当心，似乎有异常情况。
 fp-certerror-why-site-dangerous = 为什么此网站可能危险？
 fp-certerror-what-can-you-do = 您可以做什么？
 fp-certerror-advanced-title = 高级
@@ -187,6 +228,9 @@ fp-certerror-hide-advanced-button = 隐藏高级选项
 ## Variables:
 ##   $hostname (String) - Hostname of the website to which the user was trying to connect.
 
-fp-certerror-override-exception-button = 继续前往 { $hostname }（存在风险）
+fp-certerror-override-exception-button = 继续前往 { $hostname }（有风险）
 fp-certerror-intro = { -brand-short-name } 发现 <strong>{ $hostname }</strong> 存在严重的安全隐患。若有人冒充此网站，其可试图窃取您的信用卡信息、密码、邮箱地址等信息。
 fp-certerror-expired-into = { -brand-short-name } 发现 <strong>{ $hostname }</strong> 存在安全问题。此网站可能未正确设置，或者您设备的日期/时间有误。
+fp-certerror-transparency-intro = 若有人冒充 <strong>{ $hostname }</strong>，其可试图窃取您的信用卡信息、密码、邮箱地址等信息。
+fp-certerror-override-exception-button-2 = 继续前往 { $hostname }（有风险）
+    .accesskey = P

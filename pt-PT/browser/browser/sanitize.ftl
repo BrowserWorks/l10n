@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Histórico de navegação e de transferências
     .accesskey = H
 item-history-and-downloads-description2 = Limpa o histórico de pesquisas, sites e transferências
-item-history-form-data-downloads =
-    .label = Histórico
-    .accesskey = H
-item-history-form-data-downloads-description = Limpa o histórico do site e das transferências, informação dos formulários guardada e as pesquisas
 item-cookies =
     .label = Cookies
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = Todo o histórico será limpo.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Serão limpos todos os itens selecionados.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = A calcular…

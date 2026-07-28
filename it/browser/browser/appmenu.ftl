@@ -15,6 +15,12 @@ appmenuitem-banner-update-unsupported =
     .label = Aggiornamento non riuscito - sistema non compatibile
 appmenuitem-banner-update-restart =
     .label = Aggiornamento disponibile — riavvia adesso
+appmenu-nova-update-title = Riavvia per aggiornare { -brand-short-name }
+appmenu-nova-update-description = Le tue schede verranno riaperte.
+appmenu-nova-fxa-sign-in = Accedi
+appmenu-nova-switch-device-promo =
+    .message = Stai per cambiare dispositivo? Porta { -brand-short-name } sempre con te!
+appmenu-nova-switch-device-link = Come migrare i tuoi dati
 appmenuitem-new-tab =
     .label = Nuova scheda
 appmenuitem-new-window =
@@ -23,6 +29,8 @@ appmenuitem-new-private-window =
     .label = Nuova finestra anonima
 appmenuitem-history =
     .label = Cronologia
+appmenuitem-tab-groups =
+    .label = Gruppi di schede
 appmenuitem-downloads =
     .label = Download
 appmenuitem-passwords =
@@ -201,6 +209,9 @@ profiler-popup-presets-ml-label =
 profiler-popup-presets-networking-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = Rete
+profiler-popup-presets-networking-with-logs-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }, includendo i registri di rete. Questi registri possono contenere informazioni sensibili come gli URL visitati.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Rete con registri
 profiler-popup-presets-power-description = Preset per la diagnosi di problemi relativi al consumo di energia in { -brand-shorter-name }, con overhead limitato.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -208,6 +219,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Preset per il debug di { -brand-shorter-name }. Overhead elevato, non utilizzare per analisi delle prestazioni ma solo per comprendere il comportamento del browser.
 profiler-popup-presets-debug-label =
     .label = Debug
+profiler-popup-presets-web-compat-description = Preset consigliato per il debug dei problemi di compatibilità nei siti web, non per monitorare le prestazioni.
+profiler-popup-presets-web-compat-label =
+    .label = Compatibilità web
 profiler-popup-presets-custom-label =
     .label = Personalizzato
 
@@ -273,6 +287,10 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Personalizza barra degli strumenti…
+appmenu-abouttranslations =
+    .label = Traduci…
+appmenu-edit-pdf =
+    .label = Modifica PDF…
 appmenu-developer-tools-subheader = Strumenti del browser
 appmenu-developer-tools-extensions =
     .label = Estensioni per sviluppatori
@@ -282,24 +300,42 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = Accedi al tuo account
+appmenuitem-monitor-title2 = Proteggiti dai furti di identità
+appmenuitem-monitor-description2 = Ricevi avvisi sulle violazioni di dati
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = Ottieni informazioni sulle violazioni di dati
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Mantieni la tua email privata
+appmenuitem-relay-description2 = Contribuisce a bloccare lo spam nella tua casella di posta
 appmenuitem-relay-description = Mantieni al sicuro il tuo indirizzo email e telefono
 appmenuitem-services-relay-description = Apri la dashboard per gli alias di posta elettronica
+appmenuitem-vpn-title2 = Nascondi la tua posizione con { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Rendi la tua navigazione più difficile da tracciare
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Ottieni protezione per l’intero dispositivo
 appmenuitem-vpn-description = Proteggi la tua attività online
 appmenu-services-header = I miei servizi
-appmenu-other-protection-header = Prova altri strumenti di protezione di { -vendor-short-name }:
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Strumenti per la privacy
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Prova altri strumenti di protezione realizzati da BrowserWorks:
+appmenu-other-protection-header = Prova altri strumenti di protezione realizzati da { -vendor-short-name }:
 
 ## Profiles panel
 
 appmenu-other-profiles = Altri profili
 appmenu-manage-profiles =
     .label = Gestisci profili
+appmenu-copy-profile =
+    .label = Copia questo profilo
 appmenu-create-profile =
     .label = Nuovo profilo
 appmenu-edit-profile =
     .aria-label = Modifica profilo
 appmenu-profiles-2 =
     .label = Profili
+

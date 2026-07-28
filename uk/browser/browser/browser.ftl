@@ -140,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = Налаштувати отримання сповіщень від сайту
 urlbar-midi-notification-anchor =
     .tooltiptext = Відкрити MIDI панель
+urlbar-serial-notification-anchor =
+    .tooltiptext = Відкрити панель послідовних портів.
 urlbar-eme-notification-anchor =
     .tooltiptext = Керувати використанням програмного забезпечення DRM
 urlbar-web-authn-anchor =
@@ -193,6 +195,24 @@ urlbar-result-menu-button =
     .title = Відкрити меню
 urlbar-result-menu-button-feedback = Відгук
     .title = Відкрити меню
+urlbar-result-menu-learn-more2 = Докладніше
+    .accesskey = о
+urlbar-result-menu-remove-from-history2 = Вилучити з історії
+    .accesskey = ч
+urlbar-result-menu-tip-get-help2 = Отримати допомогу
+    .accesskey = г
+urlbar-result-menu-dismiss-suggestion2 = Відхилити цю пропозицію
+    .accesskey = х
+urlbar-result-menu-manage-firefox-suggest2 = Керувати { -firefox-suggest-brand-name }
+    .accesskey = К
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = Повідомити про неточне розташування
+urlbar-result-menu-show-less-frequently2 = Показувати рідше
+urlbar-result-menu-dont-show-weather-suggestions2 = Не показувати пропозиції погоди
 urlbar-result-menu-learn-more =
     .label = Докладніше
     .accesskey = о
@@ -282,6 +302,8 @@ urlbar-canvas-blocked =
     .tooltiptext = Ви заблокували видобування даних canvas для цього вебсайту.
 urlbar-midi-blocked =
     .tooltiptext = Ви заблокували MIDI доступ для цього вебсайту.
+urlbar-serial-blocked =
+    .tooltiptext = Ви заблокували цьому вебсайту доступ до послідовного порту.
 urlbar-install-blocked =
     .tooltiptext = Ви заблокували встановлення додатка з цього вебсайту.
 # Variables
@@ -292,6 +314,15 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = Додати сторінку до закладок ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = Розділений екран
+    .aria-label = Розділений екран
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = Стерти історію пошуку
+    .accesskey = С
 
 ## Page Action Context Menu
 
@@ -364,7 +395,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Переглянути додатки
@@ -378,6 +409,7 @@ quickactions-bookmarks2 = Керувати закладками
 quickactions-cmd-bookmarks = закладки
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Очистити недавню історію
+quickactions-cmd-clearrecenthistory2 = файли cookie, очистити файли cookie, кеш, очистити кеш, дані перегляду, очистити дані перегляду, історія, очистити недавню історію
 quickactions-cmd-clearrecenthistory = очистити недавню історію, історія
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Стерти історію
@@ -401,10 +433,22 @@ quickactions-cmd-help = довідка, підтримка
 # Opens the devtools web inspector
 quickactions-inspector2 = Відкрити інструменти розробника
 quickactions-cmd-inspector2 = інспектор, devtools, інструменти розробника
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = Вибрати колір
+quickactions-cmd-colorpicker = палітра кольорів, піпетка, вибір кольору
+# Opens Firefox Library
+quickactions-cmd-library = бібліотека
+quickactions-library = Відкрити бібліотеку
 quickactions-cmd-inspector = інспектор, інструменти розробника
 # Opens about:logins
 quickactions-logins2 = Керувати паролями
 quickactions-cmd-logins = входи, паролі
+# Mutes all tabs playing audio
+quickactions-mute = Вимкнути звук у вкладках, де відтворюється аудіо
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = тихо, тихіше, шшш
 # Opens about:addons page in the plugins section
 quickactions-plugins = Керувати плагінами
 quickactions-cmd-plugins = плагіни
@@ -426,6 +470,9 @@ quickactions-cmd-restart = перезапустити
 # Opens the screenshot tool
 quickactions-screenshot3 = Зробити знімок екрана
 quickactions-cmd-screenshot2 = скріншот, знімок екрана, зробити знімок екрана
+# Opens about:translations
+quickactions-translate = Перекласти
+quickactions-cmd-translate = перекласти
 quickactions-cmd-screenshot = знімок екрана
 # Opens about:preferences
 quickactions-settings2 = Керувати налаштуваннями
@@ -445,6 +492,9 @@ quickactions-cmd-update = оновити
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Програмний код сторінки
 quickactions-cmd-viewsource2 = переглянути джерело, програмний код, код сторінки
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = Відкрити { -firefoxlabs-brand-name }
+quickactions-cmd-labs = лабораторії, експеримент
 quickactions-cmd-viewsource = переглянути джерело, джерело
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -527,7 +577,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Ваше з'єднання з цим сайтом не захищене.
 identity-connection-verified = Ваше з'єднання з цим сайтом захищене.
 identity-ev-owner-label = Сертифікат виданий:
+identity-verifier-label = Засвідчено:
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = Кваліфікований, як зазначено в Регламенті (ЄС) 2024/1183.
 identity-description-custom-root2 = BrowserWorks не розпізнає цього видавця сертифіката. Він міг бути доданий вашою операційною системою чи адміністратором.
+identity-cert-exception-overridden = Ви додали виняток безпеки для цього сайту.
 identity-remove-cert-exception =
     .label = Вилучити виняток
     .accesskey = В
@@ -560,6 +614,9 @@ browser-window-restore-down-button =
     .tooltiptext = Відновити вниз
 browser-window-close-button =
     .tooltiptext = Закрити
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = Повернутися
 
 ## Tab actions
 
@@ -630,6 +687,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = Вимкнути захист спільного доступу для цього сеансу
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = Оберіть послідовний порт:
+webserial-no-ports-available = Немає доступних послідовних портів
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = Для використання клавіші швидкого доступу F12 спершу відкрийте інструменти веброзробника через меню браузера.
@@ -695,6 +757,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Розширення:
+urlbar-go-button2 =
+    .title = Перейти за адресою з панелі адреси
 urlbar-go-button =
     .tooltiptext = Перейти за адресою з панелі адреси
 urlbar-page-action-button =
@@ -702,8 +766,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = Показати адресу в панелі адреси
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -720,6 +785,7 @@ urlbar-result-action-search-in-private = Пошук у приватному ві
 urlbar-result-action-search-w-engine = Шукати за допомогою { $engine }
 urlbar-result-action-sponsored = Спонсоровано
 urlbar-result-action-switch-tab = Перейти на вкладку
+urlbar-result-action-move-tab-to-split-view = Перемістити вкладку на розділений екран
 urlbar-result-action-visit = Відвідати
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -759,6 +825,14 @@ urlbar-result-action-copy-to-clipboard = Копіювати
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = не визначено
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = Розширення { -brand-product-name }
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = Рекомендується
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -816,6 +890,8 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · Спонсоровано
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = Запитати
 
 ## These strings are used for Realtime suggestions in the urlbar.
 ## Market refers to stocks, indexes, and funds.
@@ -829,6 +905,9 @@ urlbar-result-realtime-opt-in-allow = Показувати пропозиції
 # This string is shown in split button to dismiss activation the Realtime suggestion.
 urlbar-result-realtime-opt-in-not-now = Не зараз
 urlbar-result-realtime-opt-in-dismiss = Відхилити
+urlbar-result-realtime-opt-in-dismiss-all2 = Не показувати ці пропозиції
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = Не показувати ринкові пропозиції
 urlbar-result-realtime-opt-in-dismiss-all =
     .label = Не показувати ці пропозиції
 # This string is shown in the result menu.
@@ -836,6 +915,9 @@ urlbar-result-menu-dont-show-market =
     .label = Не показувати ринкові пропозиції
 # A message that replaces a result when the user dismisses Market suggestions.
 urlbar-result-dismissal-acknowledgment-market = Дякуємо за відгук. Ви більше не бачитимете ринкових пропозицій.
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = Пропозиції щодо фондового ринку
 # A message that replaces a result when the user dismisses all suggestions of a
 # particular type.
 urlbar-result-dismissal-acknowledgment-all = Дякуємо за відгук. Ви більше не бачитимете цих пропозицій.
@@ -912,15 +994,11 @@ urlbar-searchmode-actions =
     .label = Дії
 urlbar-searchmode-exit-button =
     .tooltiptext = Закрити
-urlbar-searchmode-default =
-    .tooltiptext = Типова пошукова система
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
 urlbar-searchmode-popup-description = Цього разу шукати з:
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = Налаштування пошуку
-# Label shown next to a new search engine in the Searchmode Switcher popup to promote it.
-urlbar-searchmode-new = Нове
 # Searchmode Switcher button
 # Variables:
 #   $engine (String): the current default search engine.
@@ -930,6 +1008,39 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = Ярлик не вибрано, виберіть ярлик
     .tooltiptext = Ярлик не вибрано, виберіть ярлик
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }, вибрати пошукову систему
+urlbar-searchmode-button-no-engine2 =
+    .title = Ярлик не вибрано, виберіть ярлик
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = Пошук за ключовими словами вимкнено
+urlbar-searchmode-dropmarker2 =
+    .title = Вибрати пошукову систему
+urlbar-searchmode-bookmarks2 = Закладки
+urlbar-searchmode-tabs2 = Вкладки
+urlbar-searchmode-history2 = Історія
+urlbar-searchmode-actions2 = Дії
+urlbar-searchmode-exit-button2 =
+    .title = Закрити
+urlbar-searchmode-default2 =
+    .title = Типова пошукова система
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = Додати “{ $engineName }”
+    .title = Додати пошукову систему “{ $engineName }”
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = Цього разу шукати з:
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = Шукати з:
+urlbar-searchmode-popup-search-settings-panelitem = Налаштування пошуку
+urlbar-searchmode-popup-settings-panelitem = Налаштування
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -945,6 +1056,18 @@ urlbar-result-action-switch-to-tabgroup = Перемкнути на { $group }
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = Відкрити { $group }
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = Відкрити в новій вкладці
+    .accesskey = н
+urlbar-view-context-menu-open-in-window =
+    .label = Відкрити в новому вікні
+    .accesskey = н
+urlbar-view-context-menu-open-in-private-window =
+    .label = Відкрити в приватному вікні
+    .accesskey = п
 
 ## Labels shown above groups of urlbar results
 
@@ -971,6 +1094,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = Популярне в { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = Не показувати популярні пошукові запити
+    .accesskey = Н
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = Спонсоровано
@@ -1018,6 +1144,9 @@ fullscreen-warning-no-domain = Цей документ тепер у повно�
 fullscreen-exit-button = Вийти з повноекранного режиму (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = Вийти з повноекранного режиму (esc)
+fullscreen-keyboardlock-exit-button = Вийти з повноекранного режиму (натисніть і утримуйте Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = Вийти з повноекранного режиму (натисніть і утримуйте esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1113,7 +1242,7 @@ repair-text-encoding-button =
     .label = Виправити кодування тексту
     .tooltiptext = Вгадувати правильне кодування тексту із вмісту сторінки
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1133,6 +1262,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = Паролі
     .tooltiptext = Переглядайте і керуйте збереженими паролями
+qrcode-panel-error =
+    .message = Не вдалося згенерувати QR-код. Спробуйте ще раз.
+qrcode-copy-button =
+    .label = Копіювати
+qrcode-copy-success =
+    .message = QR-код скопійовано в буфер обміну.
+qrcode-copy-error =
+    .message = Не вдалося скопіювати QR-код.
+qrcode-save-button =
+    .label = Зберегти
+qrcode-save-success =
+    .message = QR-код збережено.
+qrcode-save-error =
+    .message = Не вдалося зберегти QR-код
+qrcode-save-title = Зберегти QR-код
+qrcode-save-filter-png = Зображення PNG
+qrcode-save-filename = qrcode.png
+qrcode-window-title = QR-код
+qrcode-dialog-title = QR-код
+qrcode-image =
+    .aria-label = QR-код
+qrcode-close-button =
+    .aria-label = Закрити
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1151,6 +1303,9 @@ toolbar-button-synced-tabs =
 toolbar-button-new-private-window =
     .label = Приватне вікно
     .tooltiptext = Відкрити нове вікно приватного перегляду ({ $shortcut })
+toolbar-button-share-tab =
+    .label = Поділитися
+    .tooltiptext = Поділитися цією сторінкою
 
 ## EME notification panel
 
@@ -1164,6 +1319,10 @@ eme-notifications-drm-content-playing-dismiss-accesskey = х
 
 panel-save-update-username = Ім'я користувача
 panel-save-update-password = Пароль
+panel-save-update-username-2 =
+    .label = Ім'я користувача
+panel-save-update-password-2 =
+    .label = Пароль
 
 ##
 
@@ -1460,11 +1619,11 @@ trustpanel-etp-label-disabled = Розширений захист від сте�
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 trustpanel-etp-toggle-on =
-    .aria-label = Розширений захист від відстеження: увімкнено для { $host }
+    .aria-label = Розширений захист від стеження: увімкнено для { $host }
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 trustpanel-etp-toggle-off =
-    .aria-label = Розширений захист від відстеження: вимкнено для { $host }
+    .aria-label = Розширений захист від стеження: вимкнено для { $host }
 trustpanel-etp-description-enabled = Якщо на цьому сайті щось не працює, спробуйте вимкнути захист.
 trustpanel-etp-description-disabled = { -brand-product-name } вважає, що компанії повинні менше стежити за вами. Ми блокуємо якомога більше елементів стеження, коли ви вмикаєте захист.
 trustpanel-connection-label-secure = Захищене з'єднання
@@ -1473,7 +1632,6 @@ trustpanel-header-enabled = { -brand-product-name } на сторожі
 trustpanel-description-enabled2 = Ви захищені. Якщо ми щось помітимо, то повідомимо вас.
 trustpanel-header-enabled-insecure = Будьте обережні на цьому сайті
 trustpanel-description-enabled-insecure = { -brand-product-name } помітив щось підозріле.
-trustpanel-description-enabled = Ви захищені. Якщо ми щось помітимо, то повідомимо вас
 trustpanel-header-disabled = Ви вимкнули захист
 trustpanel-description-disabled = { -brand-product-name } не працює. Ми пропонуємо знову ввімкнути захист.
 trustpanel-clear-cookies-button = Стерти файли cookie та дані сайтів
@@ -1496,15 +1654,16 @@ trustpanel-blocker-see-all = Показати все
 trustpanel-blocker-header =
     .title = Захист від стеження для { $host }
 
+## The urlbar trust icon & panel
+
+# LOCALIZATION NOTE (trustpanel-urlbar-notsecure-label):
+# Keep this string as short as possible, this is displayed in the URL bar
+# use a synonym for "safe" or "private" if "secure" is too long.
+urlbar-trust-icon-notsecure-label = Не захищено
+
 ## Variables
 ##  $count (String): the number of trackers blocked.
 
-trustpanel-blocker-section-header =
-    { $count ->
-        [one] На цьому сайті заблоковано <span>{ $count }</span> елемент стеження
-        [few] На цьому сайті заблоковано <span>{ $count }</span> елементи стеження
-       *[many] На цьому сайті заблоковано <span>{ $count }</span> елементів стеження
-    }
 trustpanel-blocker-description = { -brand-product-name } вважає, що компанії повинні менше стежити за вами. Тому ми блокуємо якомога більше елементів стеження.
 trustpanel-blocked-header = { -brand-product-name } заблокував ці елементи:
 trustpanel-tracking-header = Щоб не пошкодити сайти, { -brand-product-name } дозволив ці елементи:
@@ -1599,3 +1758,9 @@ trustpanel-cryptominer-not-blocking-tab-header =
        *[many] { -brand-product-name } дозволив { $count } криптомайнерів
     }
 trustpanel-cryptominer-tab-list-header = Ці сайти намагаються використовувати ваш комп'ютер для криптомайнингу:
+trustpanel-blocker-section-header2 =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span> елемент стеження заблоковано на цьому сайті
+        [few] <span data-l10n-name="count">{ $count }</span> елементи стеження заблоковано на цьому сайті
+       *[many] <span data-l10n-name="count">{ $count }</span> елементів стеження заблоковано на цьому сайті
+    }

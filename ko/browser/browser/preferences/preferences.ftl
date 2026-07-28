@@ -4,23 +4,31 @@
 
 do-not-track-description = 웹 사이트에 “추적 안 함” 신호를 보내서 추적을 원하지 않는다고 알림
 do-not-track-removal = "추적 안 함" 신호를 더 이상 지원하지 않음
-do-not-track-description2 =
-    .label = 웹 사이트에 “추적 안 함” 요청 보내기
-    .accesskey = d
 do-not-track-learn-more = 더 알아보기
 do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정된 경우에만
 do-not-track-option-always =
     .label = 항상
 global-privacy-control-description =
-    .label = 웹 사이트에 내 데이터를 판매하거나 공유하지 말라고 요청
+    .label = 웹 사이트에 내 정보 판매 또는 공유 금지 요청
     .accesskey = s
+non-technical-privacy-group =
+    .label = 웹 사이트 개인 정보 보호 설정
+do-not-track-removal3 =
+    .message = “추적 안 함” 기능은 더 이상 지원하지 않습니다.
+non-technical-privacy-heading =
+    .label = 추가 보호
+preferences-privacy-relay-available =
+    .label = { -relay-brand-name } 이메일 가리기 제안
+    .description = 받은편지함을 스팸으로부터 보호하기 위해 실제 이메일 주소를 숨깁니다.
 non-technical-privacy-header = 웹 사이트 개인 정보 보호 설정
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = 설정
+category-nav-heading =
+    .heading = 설정
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -35,23 +43,51 @@ search-input-box2 =
 managed-notice = 이 브라우저는 조직에서 관리하고 있습니다.
 managed-notice-info-icon =
     .alt = 정보
+managed-notice-nav =
+    .label = 이 브라우저는 조직에서 관리하고 있습니다.
 category-list =
     .aria-label = 카테고리
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = 홈
+pane-home-startup-title2 = 홈 및 시작
+    .title = 홈 및 시작
+pane-search-title2 = 검색
+    .title = 검색
+pane-privacy-title3 = 개인 정보 및 보안
+    .title = 개인 정보 및 보안
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = 검색
 category-search =
     .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = 개인 정보 및 보안
 pane-privacy-title = 개인 정보 및 보안
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = Sync
+pane-ai-controls-title2 = AI 제어
+    .title = AI 제어
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = { -brand-short-name } 정보
+    .title = { pane-about-firefox-title }
+pane-appearance-title = 모양
+    .title = { pane-appearance-title }
+pane-downloads-title2 = 다운로드
+    .title = 다운로드
+pane-downloads3 =
+    .heading = 다운로드
+pane-accessibility-title = 접근성
+    .title = { pane-accessibility-title }
+pane-languages-title2 = 언어
+    .title = 언어
+preferences-languages-header3 =
+    .heading = 언어
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
 pane-experimental-title = { -brand-short-name } 실험
 category-experimental =
     .tooltiptext = { -brand-short-name } 실험
@@ -59,18 +95,29 @@ pane-experimental-subtitle = 주의해서 사용하세요
 pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 사용하세요
 pane-experimental-description2 = 고급 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
 settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = 실험 기능을 사용해 보세요! 개발 및 진화 중이므로 { -brand-short-name } 작동 방식에 영향을 미칠 수 있습니다. 해당 기능 사용에 관한 데이터는 <a data-l10n-name="data-collection">기술 및 상호 작용 데이터</a>가 켜져 있는 경우에만 수집됩니다.
 pane-experimental-description3 = 실험 기능을 사용해 보세요! 개발 및 진화 중이므로 { -brand-short-name } 작동 방식에 영향을 미칠 수 있습니다.
 pane-experimental-reset =
     .label = 기본값으로 복원
     .accesskey = R
+help-button-label2 = { -brand-short-name } 도움말
+    .title = { -brand-short-name } 도움말
+addons-button-label2 = 확장 기능 및 테마
+    .title = 확장 기능 및 테마
 help-button-label = { -brand-short-name } 도움말
 addons-button-label = 확장 기능 및 테마
 focus-search =
     .key = f
 close-button =
     .aria-label = 닫기
+do-not-track-removal2 =
+    .label = "추적 안 함" 신호를 더 이상 지원하지 않음
+applications-setting-new-file-types =
+    .label = { -brand-short-name }로 다른 파일 형식은 어떤 작업을 하시겠습니까?
 
 ## Browser Restart Dialog
 
@@ -112,6 +159,10 @@ extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $na
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
 extension-controlled-enable = 확장 기능을 사용하려면 <img data-l10n-name="menu-icon"/> 메뉴에서 <img data-l10n-name="addons-icon"/> 부가 기능으로 이동하세요.
+extension-controlled-enable-2 = 이 확장 기능을 다시 활성화하려면 <a data-l10n-name="addons-link">확장 기능 및 테마</a>를 방문하세요.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = { $name } 확장 기능이 일부 홈페이지 설정을 제어합니다.
 
 ## Preferences UI Search Results
 
@@ -124,7 +175,7 @@ search-results-help-link = 도움이 필요하세요? <a data-l10n-name="url">{ 
 
 startup-header = 시작 페이지
 always-check-default =
-    .label = { -brand-short-name }가 기본 브라우저인지 항상 확인
+    .label = 항상 { -brand-short-name }가 기본 브라우저인지 확인
     .accesskey = w
 is-default = 현재 { -brand-short-name }가 기본 브라우저입니다
 is-not-default = { -brand-short-name }가 기본 브라우저가 아닙니다
@@ -134,25 +185,71 @@ set-as-my-default-browser =
 startup-restore-windows-and-tabs =
     .label = 이전 창 및 탭 열기
     .accesskey = s
+startup-windows-launch-on-login-profile-disabled =
+    .message = “사용자 프로필 선택” 창에서 “{ profile-manager-use-selected.label }”에 체크하여 이 설정을 활성화하세요.
 windows-launch-on-login =
     .label = 컴퓨터가 시작될 때 자동으로 { -brand-short-name } 열기
     .accesskey = O
 windows-launch-on-login-disabled = 이 설정은 Windows에서 비활성화되었습니다. 변경하려면, 시스템 설정에서 <a data-l10n-name="startup-link">시작 프로그램</a>을 방문하세요.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = 새 탭도 열기
+    .accesskey = n
 windows-launch-on-login-profile-disabled = “사용자 프로필 선택” 창에서 “{ profile-manager-use-selected.label }”에 체크하여 이 설정을 활성화하세요.
 startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
 disable-extension =
     .label = 확장 기능 사용 안 함
+preferences-data-migration-group =
+    .label = 브라우저 데이터 가져오기
+    .description = 다른 브라우저에서 북마크, 비밀번호, 기록, 확장 기능 및 자동 채우기 데이터를 가져오세요.
 preferences-data-migration-header = 브라우저 데이터 가져오기
 preferences-data-migration-description = 북마크, 비밀번호, 기록 및 자동 채우기 데이터를 { -brand-short-name }로 가져옵니다.
 preferences-data-migration-button =
     .label = 데이터 가져오기
     .accesskey = m
+preferences-profiles-group-header =
+    .heading = 프로필
+preferences-profiles-subpane-description =
+    .description = 각 프로필에는 기록, 비밀번호 등을 포함한 별도의 탐색 데이터와 설정이 있습니다.
+preferences-profiles-section-header =
+    .label = 프로필
+    .description = 각 프로필에는 기록, 비밀번호 등을 포함한 별도의 탐색 데이터와 설정이 있습니다.
 preferences-profiles-header = 프로필
 preferences-manage-profiles-description = 각 프로필에는 기록, 비밀번호 등을 포함한 별도의 탐색 데이터와 설정이 있습니다.
 preferences-manage-profiles-learn-more = 더 알아보기
 preferences-manage-profiles-button =
     .label = 프로필 관리
+preferences-profiles-settings-button =
+    .label = 설정
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = 기존 프로필 복사
+    .description = 새 프로필은 설정, 부가 기능, 기록, 북마크 및 비밀번호와 같은 저장된 데이터를 복사하지만 계정이나 동기화 정보는 복사하지 않습니다.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = 복사할 프로필
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = 프로필 선택
+preferences-copy-profile-button = 복사
+tabs-browsing-section =
+    .heading = 탭 및 탐색
+pane-tabs-browsing-title2 = 탭 및 탐색
+    .title = 탭 및 탐색
+tabs-group-header2 =
+    .label = 탭
+tabs-opening-heading =
+    .label = 열기
+tabs-interaction-heading =
+    .label = 상호작용
+tabs-containers-heading =
+    .label = 컨테이너
+tabs-closing-heading =
+    .label = 닫기
 tabs-group-header = 탭
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab 단축키로 최근 사용한 순서대로 탭 순환
@@ -160,6 +257,8 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = 링크를 새 창 대신 새 탭에서 열기
     .accesskey = w
+open-external-link-next-to-active-tab =
+    .label = 다른 앱의 링크를 활성 탭 옆에 열기
 ask-on-close-multiple-tabs =
     .label = 여러 탭을 닫기 전에 묻기
     .accesskey = m
@@ -185,20 +284,31 @@ confirm-on-quit-with-key =
 warn-on-open-many-tabs =
     .label = 여러개의 탭을 열어서 { -brand-short-name }가 느려질 수 있으면 알려주기
     .accesskey = d
+switch-to-new-tabs-2 =
+    .label = 링크나 미디어를 새 탭에서 열면 해당 탭으로 즉시 전환
+    .accesskey = h
 switch-to-new-tabs =
     .label = 링크, 이미지 또는 미디어를 새 탭에서 열면 해당 탭으로 즉시 전환
     .accesskey = h
 show-tabs-in-taskbar =
     .label = Windows 작업 표시줄에 탭 미리 보기 표시
     .accesskey = k
+browser-containers-enabled-2 =
+    .label = 컨테이너 탭 사용
+    .accesskey = n
 browser-containers-enabled =
     .label = 컨테이너 탭 사용
     .accesskey = n
 browser-containers-learn-more = 더 알아보기
+browser-containers-settings-2 =
+    .label = 설정 관리
+    .accesskey = i
 browser-containers-settings =
     .label = 설정…
     .accesskey = i
 containers-disable-alert-title = 모든 컨테이너 탭을 닫으시겠습니까?
+startup-group =
+    .label = 시작 페이지
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
@@ -218,6 +328,23 @@ containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
 settings-tabs-show-image-in-preview =
     .label = 탭 위로 마우스를 올리면 이미지 미리 보기 표시
     .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = 탭 그룹을 만들기 위해 탭을 서로 끌어서 놓기
+browser-layout-header2 =
+    .label = 브라우저 레이아웃
+browser-layout-horizontal-tabs2 =
+    .label = 가로 탭
+    .title = 상단에 탭 표시
+    .description = 상단에 탭 표시
+browser-layout-vertical-tabs2 =
+    .label = 세로 탭
+    .title = 사이드바의 측면에 표시
+    .description = 사이드바의 측면에 표시
+browser-layout-show-sidebar2 =
+    .label = 사이드바 표시
+    .description = 주 화면을 떠나지 않고 북마크, 휴대폰의 탭, AI 챗봇 등에 빠르게 접근하세요.
+page-navigation-group =
+    .label = 페이지 탐색
 browser-layout-header = 브라우저 레이아웃
 browser-layout-horizontal-tabs =
     .label = 가로 탭
@@ -232,8 +359,22 @@ browser-layout-show-sidebar-desc = 주 화면을 떠나지 않고 북마크, 휴
 ## General Section - Language & Appearance
 
 language-and-appearance-header = 언어 및 모양
+appearance-group2 =
+    .label = 웹 사이트 모양
+    .description = 일부 웹사이트는 사용자의 선호도에 맞춰 색상을 변경합니다. 원하는 색상 테마를 선택하세요.
+preferences-web-appearance-choice-auto3 =
+    .label = 시스템
+    .title = 시스템 설정과 { -brand-short-name } 테마에 따라 웹 사이트 배경과 콘텐츠를 자동으로 변경합니다.
 preferences-web-appearance-header = 웹 사이트 모양
 preferences-web-appearance-description = 일부 웹 사이트는 사용자 설정에 따라 색 구성표를 조정합니다. 이러한 사이트에 사용할 색 구성표를 선택하세요.
+preferences-web-appearance-choice-light2 =
+    .label = 밝게
+    .title = 웹 사이트 배경 및 콘텐츠에 밝은 화면 배색을 사용합니다.
+preferences-web-appearance-choice-dark2 =
+    .label = 어둡게
+    .title = 웹 사이트 배경 및 콘텐츠에 어두운 화면 배색을 사용합니다.
+web-appearance-group =
+    .aria-label = 웹 사이트 모양
 preferences-web-appearance-choice-auto = 자동
 preferences-web-appearance-choice-light = 밝게
 preferences-web-appearance-choice-dark = 어둡게
@@ -253,13 +394,16 @@ preferences-web-appearance-choice-input-dark =
 # system colors.
 preferences-web-appearance-override-warning3 =
     .message = 대비 제어 설정이 웹 사이트 화면 배색보다 우선합니다.
+preferences-web-appearance-link =
+    .label = 확장 기능 및 테마에서 { -brand-short-name } 테마 관리
+preferences-contrast-control-group =
+    .label = 웹 사이트 대비
+    .description = 웹 사이트는 다양한 전경색과 배경색을 사용합니다. 일관된 대비를 위해 웹 사이트 전체에 동일한 색상을 사용할 수 있습니다.
+preferences-contrast-control-radio-group =
+    .label = 색상 재정의
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = 선택한 색상이 웹 사이트 화면 배색보다 우선합니다. <a data-l10n-name="colors-link">색상 관리</a>
-# This can appear when using windows HCM or "Override colors: always" without
-# system colors.
-preferences-web-appearance-override-warning2 =
-    .message = 선택한 색상이 웹 사이트 화면 배색보다 우선합니다.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = <a data-l10n-name="themes-link">확장 기능 및 테마</a>에서 { -brand-short-name } 테마 관리
@@ -274,11 +418,16 @@ preferences-contrast-control-off =
 preferences-contrast-control-custom =
     .label = 사용자 지정
     .accesskey = C
+preferences-colors-manage-button2 =
+    .label = 색상 관리
+    .accesskey = C
 preferences-colors-header = 색상
 preferences-colors-description = 텍스트, 웹 사이트 배경 및 링크에 대한 { -brand-short-name }의 기본 색상을 재정의합니다.
 preferences-colors-manage-button =
     .label = 색상 관리…
     .accesskey = C
+preferences-fonts-header2 =
+    .label = 글꼴
 preferences-fonts-header = 글꼴
 default-font = 기본 글꼴
     .accesskey = D
@@ -287,6 +436,9 @@ default-font-size = 크기
 advanced-fonts =
     .label = 고급…
     .accesskey = A
+preferences-default-zoom-label =
+    .label = 기본 확대/축소
+    .accesskey = z
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = 확대/축소
 preferences-default-zoom = 기본 확대/축소
@@ -298,10 +450,34 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = 글자 크기만 조정
     .accesskey = t
+preferences-text-zoom-override-warning2 =
+    .message = "글자 크기만 조정" 옵션이 켜져 있고 기본 확대/축소가 100%가 아닌 경우, 일부 사이트에서는 콘텐츠가 제대로 표시되지 않을 수 있습니다.
 preferences-text-zoom-override-warning =
     .message = 경고: "글자 크기만 조정"을 선택하고 기본 확대/축소가 100%로 설정되지 않은 경우, 일부 사이트나 콘텐츠가 깨질 수 있습니다.
 language-header = 언어
 choose-language-description = 웹 페이지를 표시할 기본 언어 선택
+website-language-heading =
+    .label = 웹 사이트 언어
+    .description = 일부 웹 페이지는 여러 언어로 표시됩니다. 선호하는 순서대로 언어를 선택하세요.
+website-preferred-language =
+    .label = 선호 언어
+website-add-language =
+    .label = 언어 추가
+website-add-language-button =
+    .aria-label = 선택한 언어 추가
+    .title = 선택한 언어 추가
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = { $locale } 제거
+    .title = { $locale } 제거
 choose-button =
     .label = 선택…
     .accesskey = o
@@ -311,6 +487,16 @@ manage-browser-languages-button =
     .accesskey = I
 confirm-browser-language-change-description = 변경 내용 적용을 위해 { -brand-short-name } 다시 시작
 confirm-browser-language-change-button = 적용하고 다시 시작
+browser-language-heading =
+    .label = 브라우저 언어
+    .description = { -brand-short-name }에서 메뉴, 메시지 및 알림을 표시하는 데 사용할 언어를 선택하세요.
+browser-language-preferred-label =
+    .label = 선호 언어
+browser-language-fallback-label =
+    .label = 대체 언어
+    .description = 선호하는 언어의 현지화가 완료되지 않은 경우에 사용됩니다.
+browser-language-install-error =
+    .message = { -brand-short-name }가 지금 언어를 업데이트할 수 없습니다. 인터넷에 연결되어 있는지 확인하거나 다시 시도하세요.
 translate-web-pages =
     .label = 웹 콘텐츠 번역하기
     .accesskey = T
@@ -321,17 +507,96 @@ translate-attribution = 번역:  <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = 예외…
     .accesskey = x
+settings-translations-header =
+    .label = 번역
+    .aria-label = 번역
+    .description = 페이지 또는 선택한 텍스트를 번역합니다. 개인 정보를 보호하기 위해 번역은 기기에 유지됩니다.
+settings-translations-offer-to-translate-label =
+    .label = 전체 페이지 번역 제공
+settings-translations-more-settings-button =
+    .label = 추가 번역 설정
+    .description = 언어, 웹 사이트, 오프라인 번역에 대한 설정을 하세요.
+settings-translations-subpage-header =
+    .heading = 추가 번역 설정
+settings-translations-subpage-speed-up-translation-header =
+    .label = 번역 속도 높이기
+    .description = 더 빠른 번역과 오프라인 번역을 위해 전체 언어를 다운로드하세요.
+settings-translations-subpage-automatic-translation-header =
+    .label = 자동 번역
+settings-translations-subpage-always-translate-header =
+    .label = 항상 이 언어 번역
+settings-translations-subpage-never-translate-header =
+    .label = 항상 이 언어 번역 안 함
+settings-translations-subpage-never-translate-sites-header =
+    .label = 항상 이 사이트 번역 안 함
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = 사이트를 추가하려면, <img data-l10n-name="translations-icon"/> 번역 패널을 열고, <img data-l10n-name="settings-icon"/> 번역 설정을 선택한 다음, "항상 이 사이트 번역 안 함"을 선택하세요.
+settings-translations-subpage-language-select-option =
+    .label = 언어 추가
+settings-translations-subpage-language-add-button =
+    .aria-label = 언어 추가
+    .title = 언어 추가
+settings-translations-subpage-download-languages-header =
+    .label = 언어 다운로드
+settings-translations-subpage-download-languages-select-option =
+    .label = 언어 선택
+settings-translations-subpage-download-languages-button =
+    .aria-label = 언어 다운로드
+    .title = 언어 다운로드
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size }MB)
+    .label = { $language } ({ $size }MB)
+settings-translations-subpage-no-languages-downloaded =
+    .label = 다운로드한 언어 없음
+settings-translations-subpage-no-languages-added =
+    .label = 추가된 언어 없음
+settings-translations-subpage-download-progress = 다운로드 진행 중…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = { $language } ({ $size }MB)를 다운로드할 수 없음
+settings-translations-subpage-download-retry-button =
+    .label = 다시 시도
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = { $language } ({ $size }MB)를 삭제하시겠습니까?
+settings-translations-subpage-download-delete-button =
+    .label = 삭제
+settings-translations-subpage-download-cancel-button =
+    .label = 취소
+settings-translations-subpage-no-sites-added =
+    .label = 추가된 사이트 없음
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = 날짜, 시간, 숫자 및 측정 단위에 운영 체제의 “{ $localeName }” 형식 사용
+settings-spellcheck-header =
+    .label = 맞춤법 검사
 check-user-spelling =
     .label = 입력할 때 맞춤법 검사
     .accesskey = t
+spellcheck-download-dictionaries =
+    .label = 사전 다운로드
+spellcheck-promo =
+    .heading = 맞춤법 검사 사용법
+    .message = 맞춤법 검사를 켜거나 끄거나 언어를 변경하려면 텍스트 필드를 마우스 오른쪽 버튼으로 누르세요. 모든 필드가 맞춤법 검사를 지원하는 것은 아닙니다.
 
 ## General Section - Files and Applications
 
 files-and-applications-title = 파일 및 애플리케이션
+download-save-files-header =
+    .label = 저장 위치
+download-save-where-3 =
+    .aria-label = 저장 위치
+download-always-ask-where2 =
+    .label = 다운로드하기 전에 파일 저장 위치 묻기
+    .accesskey = A
+download-private-browsing-delete2 =
+    .label = 닫을 때 사생활 보호 창 다운로드를 삭제
+    .accesskey = D
 download-header = 다운로드
 download-save-where = 저장 위치
     .accesskey = v
@@ -349,19 +614,21 @@ download-choose-folder =
 download-always-ask-where =
     .label = 파일을 저장할 위치를 항상 묻기
     .accesskey = A
-download-private-browsing-delete =
-    .label = 모든 사생활 보호 창이 닫힐 때, 사생활 보호 모드에서 다운로드한 파일 삭제
-    .accesskey = D
 applications-header = 애플리케이션
 applications-description = { -brand-short-name }가 웹에서 다운로드한 파일이나 탐색하는 동안에 사용하는 애플리케이션을 처리하는 방법을 선택하세요.
+applications-setting2 =
+    .label = 파일 및 애플리케이션
+    .description = { -brand-short-name }가 다운로드한 파일과 콘텐츠를 처리하는 방식을 선택하세요.
 applications-filter =
     .placeholder = 파일 형식 또는 애플리케이션 검색
 applications-type-column =
     .label = 콘텐츠 유형
     .accesskey = T
+applications-type-heading = 콘텐츠 유형
 applications-action-column =
     .label = 동작
     .accesskey = A
+applications-action-heading = 동작
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = { $extension } 파일
@@ -425,15 +692,23 @@ applications-use-other-label =
 applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
-##
+## Firefox updates
 
 applications-handle-new-file-types-description = { -brand-short-name }로 다른 파일 형식은 어떤 작업을 하시겠습니까?
 applications-save-for-new-types =
     .label = 파일 저장
     .accesskey = S
+applications-save-for-new-types2 =
+    .label = 자동으로 파일 저장
+    .accesskey = S
 applications-ask-before-handling =
     .label = 파일을 열지 저장할지 묻기
     .accesskey = A
+applications-ask-before-handling2 =
+    .label = 파일을 열지 저장할지 묻기
+    .accesskey = A
+drm-group =
+    .label = 디지털 권한 관리 (DRM) 콘텐츠
 drm-content-header = 디지털 권한 관리 (DRM) 콘텐츠
 play-drm-content =
     .label = DRM 제어 콘텐츠 재생
@@ -444,6 +719,14 @@ update-application-description = { -brand-short-name }가 최상의 성능, 안�
 # Variables:
 # $version (string) - Firefox version
 update-application-version = { $version } 버전 <a data-l10n-name="learn-more">새 기능</a>
+update-history-2 =
+    .label = 업데이트 기록 보기
+    .accesskey = p
+update-application-installation =
+    .label = 설치
+update-application-auto-2 =
+    .label = 자동으로 업데이트 설치 (권장)
+    .accesskey = A
 update-history =
     .label = 업데이트 기록 보기…
     .accesskey = p
@@ -451,6 +734,9 @@ update-application-allow-description = { -brand-short-name } 설치 방법
 update-application-auto =
     .label = 자동으로 업데이트 설치 (권장)
     .accesskey = A
+update-application-check-choose-2 =
+    .label = 업데이트를 확인하지만, 설치할 때를 선택
+    .accesskey = C
 update-application-check-choose =
     .label = 업데이트를 확인하지만 설치할지는 묻기
     .accesskey = C
@@ -460,12 +746,17 @@ update-application-manual =
 update-application-background-enabled =
     .label = { -brand-short-name }가 실행 중이 아닐 때
     .accesskey = W
+update-application-warning-cross-user-setting-2 =
+    .message = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 Windows 계정 및 { -brand-short-name } 프로필에 적용됩니다.
+update-application-suppress-prompts-2 =
+    .label = 업데이트 알림 줄이기
+    .accesskey = n
 update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 Windows 계정 및 { -brand-short-name } 프로필에 적용됩니다.
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
 update-application-suppress-prompts =
-    .label = 업데이트 알림 프롬프트 적게 표시
+    .label = 업데이트 알림 프롬프트 줄이기
     .accesskey = n
 update-setting-write-failure-title2 = 업데이트 설정 저장 중 오류 발생
 # Variables:
@@ -478,10 +769,35 @@ update-setting-write-failure-message2 =
     파일에 쓸 수 없음: { $path }
 update-in-progress-title = 업데이트 진행 중
 update-in-progress-message = { -brand-short-name }가 이 업데이트를 계속하길 원하십니까?
-update-in-progress-ok-button = 취소(&D)
+update-in-progress-ok-button = 버리기(&D)
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = 계속(&C)
+
+## About Firefox
+
+about-firefox-header =
+    .heading = { -brand-short-name } 정보
+
+## Firefox updates
+
+update-application-heading =
+    .label = { -brand-short-name } 업데이트
+    .description = 업데이트를 통해 { -brand-short-name }의 속도, 안정성 및 보안이 향상됩니다.
+update-application-suppress-prompts-heading =
+    .label = 알림
+update-application-updates-managed-by-os =
+    .message = 운영 체제에서 업데이트를 관리합니다.
+
+## Firefox support
+
+support-application-heading =
+    .label = { -brand-short-name } 지원
+    .description = 문제를 해결하거나 커뮤니티와 아이디어를 공유하세요.
+support-get-help =
+    .label = 도움 받기
+support-share-ideas =
+    .label = 아이디어 및 의견 공유
 
 ## General Section - Performance
 
@@ -502,8 +818,14 @@ performance-limit-content-process-blocked-desc = 콘텐츠 프로세스 갯수 �
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (기본값)
+performance-group =
+    .label = 성능
+performance-use-recommended-settings-checkbox-2 =
+    .label = 권장 성능 설정을 사용
+    .description = 이 설정은 사용자의 하드웨어 및 운영 체제에 맞게 조정됩니다.
+    .accesskey = U
 
-## General Section - Browsing
+## Accessibility page
 
 browsing-title = 탐색
 browsing-group-label =
@@ -511,6 +833,10 @@ browsing-group-label =
 browsing-use-autoscroll =
     .label = 자동 스크롤 사용
     .accesskey = a
+keyboard-and-scrolling-group =
+    .label = 키보드 탐색 및 스크롤
+motion-and-link-group =
+    .label = 동작 및 링크 스타일
 browsing-use-smooth-scrolling =
     .label = 부드러운 스크롤 사용
     .accesskey = m
@@ -532,13 +858,28 @@ browsing-use-full-keyboard-navigation =
 browsing-search-on-start-typing =
     .label = 입력을 시작할 때 텍스트 찾기
     .accesskey = x
+settings-keyboard-shortcuts-group =
+    .label = 키보드 단축키
+    .description = { -brand-short-name }에서 이동하고 상호 작용하는 방식을 제어하세요.
+settings-keyboard-shortcuts-customkeys-link =
+    .label = 키보드 단축키 사용자 지정
+settings-media-group =
+    .label = 미디어
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = 화면 속 화면 사용
+    .accesskey = e
 browsing-picture-in-picture-toggle-enabled =
     .label = 화면 속 화면 비디오 컨트롤 사용
     .accesskey = E
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = 탭을 전환할 때 화면 속 화면에서 동영상을 계속 재생
+    .accesskey = s
 browsing-picture-in-picture-learn-more = 더 알아보기
 browsing-media-control =
     .label = 키보드, 헤드셋 또는 가상 인터페이스를 통해 미디어 제어
     .accesskey = v
+recommendations-group =
+    .label = 추천
 browsing-media-control-learn-more = 더 알아보기
 browsing-cfr-recommendations =
     .label = 탐색할 때 확장 기능 추천
@@ -547,6 +888,24 @@ browsing-cfr-features =
     .label = 탐색할 때 기능 추천
     .accesskey = f
 browsing-cfr-recommendations-learn-more = 더 알아보기
+browsing-group =
+    .label = 탐색
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = 접근성
+preferences-default-zoom-select =
+    .aria-label = 기본 확대/축소
+preferences-fonts-family =
+    .label = 글꼴 집합
+    .accesskey = D
+preferences-fonts-size =
+    .label = 글꼴 크기
+    .accesskey = s
+preferences-fonts-advanced-settings =
+    .label = 고급 설정
+    .accesskey = A
 
 ## General Section - Proxy
 
@@ -556,16 +915,41 @@ network-proxy-connection-learn-more = 더 알아보기
 network-proxy-connection-settings =
     .label = 설정…
     .accesskey = e
+network-proxy-group2 =
+    .label = 프록시 설정
+    .description = { -brand-short-name }가 인터넷에 연결되는 방법을 구성합니다.
+network-proxy-connection-settings2 =
+    .label = 프록시 구성
+    .description = 이 설정을 변경하면 연결 문제가 발생할 수 있음
+    .accesskey = p
 
 ## Home Section
 
 home-new-windows-tabs-header = 새 창과 탭
 home-new-windows-tabs-description2 = 홈페이지, 새 창 및 새 탭을 열 때 표시되는 것을 선택하세요.
+home-section =
+    .heading = 홈 및 시작
 
-## Home Section - Home Page Customization
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = 기본 브라우저
+is-default-browser-2 =
+    .message = { -brand-short-name }가 기본 브라우저입니다. 좋은 선택입니다.
+is-not-default-browser-2 =
+    .message = 잠시만요! { -brand-short-name }가 기본 브라우저가 아닙니다.
+set-as-my-default-browser-2 =
+    .label = 기본 브라우저로
+    .accesskey = D
+
+## Custom Homepage subpage
 
 home-homepage-mode-label = 홈페이지와 새 창
+home-homepage-new-windows =
+    .label = 새 창
 home-newtabs-mode-label = 새 탭
+home-homepage-new-tabs =
+    .label = 새 탭
 home-restore-defaults =
     .label = 기본값으로 복원
     .accesskey = R
@@ -577,6 +961,12 @@ home-mode-choice-blank =
     .label = 빈 페이지
 home-homepage-custom-url =
     .placeholder = URL 붙여넣기…
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = 확장 기능 관리
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = 특정 사이트 선택
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -592,17 +982,59 @@ choose-bookmark =
     .label = 북마크 사용…
     .accesskey = B
 
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = 홈페이지
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = 사용자 지정 홈페이지
+home-custom-homepage-subpage =
+    .heading = 사용자 지정 홈페이지
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = 웹 사이트 주소
+home-custom-homepage-address =
+    .placeholder = 주소 입력
+home-custom-homepage-address-button =
+    .label = 주소 추가
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = 아직 추가된 웹 사이트가 없습니다.
+home-custom-homepage-delete-address-button =
+    .aria-label = 주소 삭제
+    .title = 주소 삭제
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = 대체:
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = 현재 열려있는 페이지
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = 북마크…
+
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } 콘텐츠
 home-prefs-content-description2 = { -firefox-home-brand-name } 화면에서 원하는 콘텐츠를 선택하세요.
+home-prefs-firefox-logo-header =
+    .label = { -brand-short-name } 로고
 home-prefs-search-header =
     .label = 웹 검색
+home-prefs-search-header2 =
+    .label = 검색
 home-prefs-shortcuts-header =
     .label = 바로 가기
 home-prefs-shortcuts-description = 저장하거나 방문한 사이트
+home-prefs-shortcuts-select =
+    .aria-label = 바로 가기
 home-prefs-shortcuts-by-option-sponsored =
     .label = 스폰서 바로 가기
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -612,6 +1044,12 @@ home-prefs-recommended-by-description-new = { -brand-product-name } 제품군의
 home-prefs-recommended-by-header-generic =
     .label = 추천 이야기
 home-prefs-recommended-by-description-generic = { -brand-product-name } 제품군이 선별한 뛰어난 콘텐츠
+home-prefs-stories-header =
+    .label = 이야기
+home-prefs-stories-description = 활동에 기반한 개인화된 이야기
+home-prefs-stories-header2 =
+    .label = 이야기
+    .description = { -brand-product-name } 제품군이 선별한 뛰어난 콘텐츠
 
 ##
 
@@ -631,6 +1069,8 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-recent-activity-header =
     .label = 최근 활동
 home-prefs-recent-activity-description = 최근 사이트 및 콘텐츠 선택
+home-prefs-recent-activity-select =
+    .aria-label = 최근 활동
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -642,14 +1082,43 @@ home-prefs-weather-header =
     .label = 날씨
 home-prefs-weather-description = 오늘의 일기예보를 한눈에
 home-prefs-weather-learn-more-link = 더 알아보기
-home-prefs-trending-search-header =
-    .label = 인기 검색어
-home-prefs-trending-search-description = 인기 있고 자주 검색되는 주제
+home-prefs-widgets-header =
+    .label = 위젯
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = 목록
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = 타이머
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = 스포츠
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = 시계
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
     .label = { -brand-product-name } 지원
-home-prefs-mission-message = 스폰서는 더 나은 웹을 만들려는 우리의 사명을 지원합니다
+home-prefs-mission-message = 스폰서는 더 나은 웹을 만들려는 저희를 지원합니다
 home-prefs-mission-message-learn-more-link = 방법 알아보기
+home-prefs-mission-message2 =
+    .message = 스폰서는 더 나은 웹을 만들려는 저희를 지원합니다.
+home-prefs-manage-topics-link = 주제 관리
+home-prefs-manage-topics-link2 =
+    .label = 주제 관리
+home-prefs-choose-wallpaper-link = 배경 화면 선택
+home-prefs-choose-wallpaper-link2 =
+    .label = 배경 화면 선택
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = 이 기능을 사용하려면, 새 탭이나 새 창을 { -firefox-home-brand-name }으로 설정하세요.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = 확장 기능 ({ $extension })
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -679,10 +1148,35 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = 주소 표시줄 결과에 검색 제안 표시
     .accesskey = l
-# With this option enabled, on the search results page
-# the URL will be replaced by the search terms in the address bar.
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = 주소 표시줄 결과에서 방문 기록 보다 검색 제안을 먼저 표시
+search-show-suggestions-private-windows-2 =
+    .label = 사생활 보호 창에서 검색 제안
+search-suggestions-cant-show-2 =
+    .message = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
+addressbar-header-1 =
+    .label = 주소 표시줄
+    .description = 주소 표시줄에 표시할 제안 선택
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name }
+    .description = 주소 표시줄에 { -brand-short-name } 및 파트너사의 제안이 표시됩니다.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
 search-show-search-term-option-2 =
     .label = 결과 페이지의 주소 표시줄에 검색어 표시
+search-separate-default-engine-2 =
+    .label = 사생활 보호 창에서 다른 기본 검색 엔진 사용
+    .accesskey = U
+search-separate-default-engine-dropdown =
+    .aria-label = 사생활 보호 창의 기본 검색 엔진
+search-suggestions-header-2 =
+    .label = 검색 엔진 제안
 # With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
@@ -701,6 +1195,19 @@ suggestions-addressbar-settings-generic2 = 다른 주소 표시줄 제안에 대
 search-suggestions-cant-show = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
 search-one-click-header2 = 검색 바로 가기
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
+search-one-click-header-3 =
+    .label = 추가 검색 엔진
+    .description = 주소 표시줄에 표시할 검색 엔진과 바로 가기를 선택하세요.
+update-search-engine-success =
+    .message = 검색 엔진 업데이트 완료
+search-edit-engine-2 =
+    .title = 검색 엔진 편집
+search-delete-engine =
+    .title = 검색 엔진 삭제
+search-enable-engine =
+    .title = 검색 엔진 사용
+search-outlink-to-extensions-page =
+    .title = 확장 기능 및 테마에서 관리
 search-choose-engine-column =
     .label = 검색 엔진
 search-choose-keyword-column =
@@ -714,10 +1221,14 @@ search-remove-engine =
 search-add-engine =
     .label = 추가
     .accesskey = A
+search-add-engine-2 =
+    .label = 검색 엔진 추가
+    .accesskey = A
 search-edit-engine =
     .label = 편집
     .accesskey = E
 search-find-more-link = 검색 엔진 더 찾기
+search-filtering-for-add-engine = 엔진 추가
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = 키워드 복사
@@ -732,12 +1243,21 @@ edit-engine-name-warning-duplicate = 이미 “{ $name }” 이름의 검색 엔
 remove-engine-confirmation = 이 검색 엔진을 제거하시겠습니까?
 remove-engine-remove = 제거
 remove-addon-engine-alert = 이 검색 엔진을 제거하려면 관련 부가 기능도 삭제하세요.
+search-engine-group =
+    .label = 기본 검색 엔진
+search-default-engine =
+    .aria-label = 기본 검색 엔진
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = 검색
 
 ## Containers Section
 
 containers-back-button2 =
     .aria-label = 설정으로 돌아가기
 containers-header = 컨테이너 탭
+containers-section-header =
+    .heading = 컨테이너 탭
 containers-add-button =
     .label = 새 컨테이너 추가
     .accesskey = A
@@ -748,6 +1268,44 @@ containers-settings-button =
     .label = 설정
 containers-remove-button =
     .label = 삭제
+containers-section-header2 =
+    .heading = 컨테이너 설정
+containers-card-header2 =
+    .label = 컨테이너
+    .description = 쿠키를 컨테이너별로 분리하여 동일한 사이트에서 여러 계정을 사용할 수 있도록 하고 사이트 간 추적을 제한하세요.
+containers-add-button2 =
+    .label = 새 컨테이너 추가
+    .accesskey = A
+containers-new-tab-check3 =
+    .label = 새 탭마다 컨테이너 선택
+    .accesskey = S
+containers-new-tab-check2 =
+    .label = 새 탭마다 컨테이너 선택
+    .accesskey = S
+    .description = 새 탭 열기 버튼을 누를 때마다 컨테이너 메뉴가 열립니다.
+containers-settings-button2 =
+    .title = 설정
+containers-remove-button3 =
+    .title = 삭제
+containers-remove-button2 =
+    .title = 제거
+
+## Account and sync
+
+sync-group-label =
+    .label = Sync
+account-group-label2 =
+    .label = 계정
+account-disabled-group =
+    .label = 계정
+    .description = 계정 설정을 사용할 수 없습니다.
+account-placeholder2 =
+    .label = 로그인되어 있지 않음
+    .description = 로그인하여 { -brand-short-name }를 사용하는 모든 곳에서 데이터를 안전하게 보호하고, 암호화하며, 언제 어디서나 즉시 사용할 수 있도록 하세요.
+account-sync-section =
+    .heading = 계정 및 동기화
+pane-account-sync-title2 = 계정 및 동기화
+    .title = 계정 및 동기화
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -756,6 +1314,12 @@ sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 sync-signedout-account-signin3 =
     .label = Sync에 로그인…
+    .accesskey = i
+sync-signedout-account-signin-4 =
+    .label = 계정에 로그인하여 동기화를 시작하세요
+    .accesskey = i
+sync-signedout-account-short =
+    .label = 로그인
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -781,14 +1345,37 @@ fxa-login-rejected-warning =
 sync-sign-out =
     .label = 로그아웃…
     .accesskey = g
+sync-sign-out2 =
+    .label = 로그아웃
+    .accesskey = g
 sync-manage-account = 계정 관리
+    .accesskey = o
+sync-manage-account2 =
+    .label = 계정 관리
     .accesskey = o
 
 ## Variables
 ## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
 
 sync-signedin-unverified = { $email } 은 아직 인증되지 않았습니다.
+sync-signedin-unverified2 =
+    .label = { $email } 이메일이 아직 확인되지 않음
+    .description = 계정을 확인하고 공식화하려면 받은 편지함을 확인하세요.
 sync-signedin-login-failure = { $email }으로 다시 연결하려면 로그인하세요
+sync-signedin-login-failure2 =
+    .label = { $email }에서 로그아웃됨
+    .description = 다시 연결하고 데이터 동기화를 시작하려면 다시 로그인하세요.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
 
 ##
 
@@ -808,9 +1395,17 @@ sync-sign-in =
 ## Sync section - enabling or disabling sync.
 
 prefs-syncing-on = 동기화: 켜짐
+prefs-syncing-on-2 =
+    .label = 동기화 켜짐
 prefs-syncing-off = 동기화: 꺼짐
+prefs-syncing-off-2 =
+    .label = 동기화 꺼짐
+    .description = 동기화를 켜면 북마크, 비밀번호, 기록 등을 모든 기기에서 사용할 수 있습니다.
 prefs-sync-turn-on-syncing =
     .label = 동기화 켜기…
+    .accesskey = s
+prefs-sync-turn-on-syncing-2 =
+    .label = 동기화 켜기
     .accesskey = s
 prefs-sync-offer-setup-label2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 prefs-sync-now =
@@ -820,25 +1415,40 @@ prefs-sync-now =
 prefs-sync-now-button =
     .label = 지금 동기화
     .accesskey = N
+prefs-sync-now-button-2 =
+    .label = 지금 동기화
+    .accesskey = N
 prefs-syncing-button =
     .label = 동기화중…
+prefs-syncing-button-2 =
+    .label = 동기화중…
+    .title = 지금 동기화
 
 ## The list of things currently syncing.
 
 sync-syncing-across-devices-heading = 연결된 모든 기기에서 다음 항목을 동기화하고 있습니다:
+sync-syncing-across-devices-heading-2 = 여러 기기에서 데이터 동기화됨
+sync-syncing-across-devices-empty-state2 =
+    .label = 동기화된 데이터 관리
+    .description = 아직 아무것도 동기화하고 있지 않습니다. 지금 동기화를 시작하여 모든 기기에서 데이터를 확인해 보세요.
 sync-currently-syncing-bookmarks = 북마크
 sync-currently-syncing-history = 기록
 sync-currently-syncing-tabs = 열린 탭
 sync-currently-syncing-logins-passwords = 로그인과 비밀번호
 sync-currently-syncing-passwords = 비밀번호
 sync-currently-syncing-addresses = 주소
-sync-currently-syncing-creditcards = 신용카드
-sync-currently-syncing-payment-methods = 결제 방법
+sync-currently-syncing-creditcards = 신용 카드
+sync-currently-syncing-payment-methods = 결제 수단
 sync-currently-syncing-addons = 부가 기능
 sync-currently-syncing-settings = 설정
 sync-manage-options =
     .label = 동기화 관리…
     .accesskey = M
+sync-manage-options-2 =
+    .label = 동기화된 데이터 관리
+    .accesskey = M
+settings-sync-disconnect-button =
+    .label = 연결 끊기
 sync-change-options =
     .label = 변경…
     .accesskey = C
@@ -876,11 +1486,11 @@ sync-engine-addresses =
     .tooltiptext = 저장한 우편 주소(데스크탑)
     .accesskey = e
 sync-engine-creditcards =
-    .label = 신용카드
+    .label = 신용 카드
     .tooltiptext = 이름, 숫자 그리고 만료 날짜 (데스크톱만)
     .accesskey = C
 sync-engine-payment-methods2 =
-    .label = 결제 방법
+    .label = 결제 수단
     .tooltiptext = 이름, 카드 번호, 만료일
     .accesskey = n
 sync-engine-addons =
@@ -902,6 +1512,16 @@ sync-choose-what-to-sync-dialog4 =
 ## The device name controls.
 
 sync-device-name-header = 기기 이름
+sync-device-name-header-2 =
+    .label = 기기 이름
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = 기기 이름
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = 기기 이름 변경
+    .accesskey = h
 sync-device-name-change =
     .label = 기기 이름 변경…
     .accesskey = h
@@ -912,6 +1532,8 @@ sync-device-name-save =
     .label = 저장
     .accesskey = v
 sync-connect-another-device = 다른 기기 연결
+sync-connect-another-device-2 =
+    .label = 다른 기기 연결
 
 ## These strings are shown in a desktop notification after the
 ## user requests we resend a verification email.
@@ -937,16 +1559,22 @@ forms-ask-to-save-logins =
     .label = 웹 사이트의 로그인과 비밀번호를 기억할지 묻기
     .accesskey = r
 
-## Privacy Section - Passwords
+## Privacy Panel Settings
 
 # "Logins" is the former term for "Passwords". Users should find password settings
 # by searching for the former term "logins". It's not displayed in the UI.
 pane-privacy-passwords-header = 비밀번호
     .searchkeywords = 로그인
+forms-passwords-header =
+    .label = 비밀번호
+    .aria-label = 비밀번호
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-passwords =
     .label = 비밀번호 저장 요청
     .accesskey = A
+forms-manage-password-exceptions =
+    .label = 비밀번호 예외 관리
+    .accesskey = M
 forms-exceptions =
     .label = 예외…
     .accesskey = x
@@ -977,15 +1605,41 @@ forms-saved-logins =
 forms-fill-usernames-and-passwords =
     .label = 사용자 이름과 비밀번호를 자동으로 채우기
     .accesskey = F
+forms-fill-usernames-and-passwords-2 =
+    .label = 사용자 이름과 비밀번호 저장 및 자동 채우기
+    .accesskey = f
 forms-saved-passwords =
     .label = 저장된 비밀번호
     .accesskey = d
+forms-saved-passwords-2 =
+    .label = 저장된 비밀번호 관리
+    .accesskey = d
+forms-saved-passwords-searchkeywords = 다음 사이트에 대한 로그인 정보가 컴퓨터에 저장됨
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = 추가 보호
 forms-primary-pw-use =
     .label = 기본 비밀번호 사용
     .accesskey = U
+forms-primary-pw-use-2 =
+    .label = 기본 비밀번호 사용
+    .description = 저장된 비밀번호를 보호하기 위한 추가 보안 계층을 제공합니다.
+    .accesskey = U
+forms-primary-pw-set =
+    .label = 기본 비밀번호 설정
+forms-primary-pw-on-2 = 기본 비밀번호가 <strong>켜짐</strong>
+forms-primary-pw-on =
+    .label = 기본 비밀번호가 켜짐
+forms-primary-pw-change-2 =
+    .label = 기본 비밀번호 변경
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = 끄기
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
-    .label = 비밀번호를 입력하고 관리하는 데 기기 로그인 요구
+    .label = 비밀번호 채우기 및 관리에 기기 로그인 요구
+forms-os-reauth-2 =
+    .label = 비밀번호를 관리하기 위해 기기 로그인 요구
 forms-primary-pw-learn-more-link = 더 알아보기
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -1003,10 +1657,21 @@ forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
 forms-master-pw-fips-desc = 비밀번호 변경 실패
 forms-windows-sso =
-    .label = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On 허용
+    .label = Microsoft, 회사 및 학교 계정에 Windows 단일 로그인 (SSO) 허용
 forms-windows-sso-learn-more-link = 더 알아보기
-forms-windows-sso-desc = 기기 설정에서 계정 관리
+forms-windows-sso-desc = 기기 설정에서 계정 관리를 합니다.
 windows-passkey-settings-label = 시스템 설정에서 패스키 관리
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = 개인 정보 패널 설정
+    .description = { -brand-short-name }에서 온라인 개인 정보 보호에 대한 도움을 받으세요.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = 유출 메시지 보기
+    .accesskey = s
 
 ## OS Authentication dialog
 
@@ -1021,8 +1686,8 @@ master-password-os-auth-dialog-caption = { -brand-full-name }
 # The macOS string is preceded by the operating system with "Firefox is trying to ".
 autofill-creditcard-os-dialog-message =
     { PLATFORM() ->
-        [macos] 결제 방법 설정 변경
-       *[other] { -brand-short-name }가 결제 방법 설정을 변경하려고 합니다. 이를 허용하려면 기기 로그인을 사용하세요.
+        [macos] 결제 수단 설정 변경
+       *[other] { -brand-short-name }가 결제 수단 설정을 변경하려고 합니다. 이를 허용하려면 기기 로그인을 사용하세요.
     }
 autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
 
@@ -1033,15 +1698,86 @@ autofill-addresses-checkbox = 주소 저장 및 채우기
     .accesskey = a
 autofill-saved-addresses-button = 저장된 주소
     .accesskey = S
-autofill-payment-methods-checkbox-message = 결제 방법 저장 및 작성
+autofill-payment-methods-checkbox-message = 결제 수단 저장 및 채우기
     .accesskey = m
 autofill-payment-methods-checkbox-submessage = 신용/직불 카드 포함
     .accesskey = I
-autofill-saved-payment-methods-button = 저장된 결제 방법
+autofill-saved-payment-methods-button = 저장된 결제 수단
     .accesskey = v
 # This operation requires the user to authenticate with the operating system (device sign-in)
-autofill-reauth-payment-methods-checkbox = 결제 방법을 작성하고 관리하려면 기기 로그인이 필요합니다.
+autofill-reauth-payment-methods-checkbox = 결제 수단을 채우고 관리하려면 기기 로그인이 필요합니다.
     .accesskey = o
+autofill-payment-methods-header =
+    .aria-label = 결제 수단
+autofill-payment-methods-checkbox-message-2 =
+    .label = 결제 정보 저장 및 자동 채우기
+    .accesskey = p
+autofill-payment-methods-manage-payments-title =
+    .heading = 결제 수단 관리
+autofill-payment-methods-manage-payments-button =
+    .label = 결제 수단 관리
+    .accesskey = m
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = 자동 채우기 및 결제 수단 관리에 기기 로그인 요구
+    .accesskey = o
+autofill-payment-methods-add-button = 새 결제 수단 추가
+payments-list-header =
+    .label = 결제 수단
+payments-delete-payment-prompt-title = 이 결제 수단을 삭제하시겠습니까?
+payments-delete-payment-prompt-confirm-button = 삭제
+payments-delete-payment-prompt-cancel-button = 취소
+payments-delete-payment-button-label =
+    .aria-label = 삭제
+payments-edit-payment-button-label =
+    .aria-label = 편집
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = 추가된 결제 수단 없음
+autofill-addresses-checkbox-message =
+    .label = 주소 저장 및 자동 채우기
+    .accesskey = S
+autofill-addresses-manage-addresses-button =
+    .label = 주소 및 기타 관리
+    .accesskey = M
+addresses-list-header =
+    .label = 주소
+addreses-delete-address-button-label =
+    .aria-label = 삭제
+addreses-edit-address-button-label =
+    .aria-label = 편집
+addresses-delete-address-prompt-title = 이 주소를 삭제하시겠습니까?
+addresses-delete-address-prompt-confirm-button = 삭제
+addresses-delete-address-prompt-cancel-button = 취소
+autofill-addresses-add-button = 새 주소 추가
+autofill-addresses-manage-addresses-title =
+    .heading = 주소 및 기타 관리
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = 추가된 주소 없음
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = 비밀번호 및 자동 채우기
+    .title = 비밀번호 및 자동 채우기
+preferences-passwords-autofill-header =
+    .heading = 비밀번호 및 자동 채우기
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = 주소 및 기타
+payments-group =
+    .label = 결제 수단
 
 ## Privacy Section - History
 
@@ -1059,10 +1795,24 @@ history-remember-label = { -brand-short-name }가
     .accesskey = w
 history-remember-option-all =
     .label = 기록을 기억함
+history-remember-option-never2 =
+    .label = 기록을 기억 안 함
+    .description = 모든 창은 사생활 보호 창처럼 작동합니다. 켜져 있으면 확장 기능을 허용해야 합니다.
+history-remember-option-custom2 =
+    .label = 기록 사용자 지정
 history-remember-option-never =
     .label = 기록을 기억 안 함
 history-remember-option-custom =
     .label = 기록에 사용자 지정 설정 사용
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name }가 방문, 다운로드, 양식 및 검색 기록을 기억합니다.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며, 웹 사이트 방문 중 어떤 기록도 기억하지 않습니다.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name }가 탐색, 다운로드, 양식 및 검색 기록에 대해 사용자 지정 설정을 사용합니다.
 history-remember-description = { -brand-short-name }가 방문, 다운로드, 양식 및 검색 기록을 기억합니다.
 history-dontremember-description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며, 웹 사이트 방문 중 어떤 기록도 기억하지 않습니다.
 history-private-browsing-permanent =
@@ -1080,9 +1830,26 @@ history-clear-on-close-option =
 history-clear-on-close-settings =
     .label = 설정…
     .accesskey = t
+history-shutdown-exceptions =
+    .label = 예외 관리
+    .accesskey = x
 history-clear-button =
     .label = 기록 지우기…
     .accesskey = s
+history-header2 =
+    .heading = 기록
+history-section-header =
+    .label = 기록
+    .description = 브라우저를 닫을 때 { -brand-short-name }가 기억할 항목을 선택하세요.
+history-custom-section-header =
+    .label = 고급 설정
+    .description = 브라우저를 닫을 때 { -brand-short-name }가 기억할 항목을 사용자 지정하세요.
+history-custom-button =
+    .label = { -brand-short-name }가 기억할 항목을 선택하세요
+history-group =
+    .label = 기록
+history-remember-option-all2 =
+    .label = 기록 기억
 
 ## Privacy Section - Site Data
 
@@ -1091,18 +1858,30 @@ sitedata-total-size-calculating = 사이트 데이터와 캐시 크기 계산 �
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = 현재 저장된 쿠키, 사이트 데이터 및 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
+sitedata-total-size3 = 웹 사이트가 현재 <strong>{ $value } { $unit }</strong>의 디스크 공간을 사용하고 있습니다.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = 저장된 쿠키, 사이트 데이터 및 캐시가 현재 { $value } { $unit }의 디스크 공간을 사용하고 있습니다.
 sitedata-learn-more = 더 알아보기
+sitedata-delete-on-close2 =
+    .label = { -brand-short-name }를 닫을 때마다 쿠키와 사이트 데이터를 지움
+    .accesskey = c
 sitedata-delete-on-close =
     .label = { -brand-short-name }를 닫을 때 쿠키와 사이트 데이터를 삭제
     .accesskey = c
+sitedata-delete-on-close-private-browsing3 =
+    .message = 기록 설정에 따라 { -brand-short-name }는 브라우저를 닫을 때 세션에서 쿠키와 사이트 데이터를 삭제합니다.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = 기록이 저장되지 않습니다.
+    .message = { -brand-short-name }는 브라우저를 닫을 때 세션에서 쿠키와 사이트 데이터를 지웁니다.
 sitedata-delete-on-close-private-browsing = 영구 사생활 보호 모드에서는 { -brand-short-name }를 닫으면 쿠키와 사이트 데이터가 항상 지워집니다.
 sitedata-delete-on-close-private-browsing2 = 기록 설정에 따라 { -brand-short-name }는 브라우저를 닫을 때 세션에서 쿠키와 사이트 데이터를 삭제합니다.
 sitedata-allow-cookies-option =
-    .label = 쿠키와 사이트 데이터 허용
+    .label = 쿠키 및 사이트 데이터 허용
     .accesskey = A
 sitedata-disallow-cookies-option =
-    .label = 쿠키와 사이트 데이터 차단
+    .label = 쿠키 및 사이트 데이터 차단
     .accesskey = B
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
@@ -1112,6 +1891,8 @@ sitedata-option-block-cross-site-trackers =
     .label = 교차 사이트 추적기
 sitedata-option-block-cross-site-tracking-cookies =
     .label = 교차 사이트 추적 쿠키
+sitedata-option-block-cross-site-cookies2 =
+    .label = 교차 사이트 쿠키 격리
 sitedata-option-block-cross-site-cookies =
     .label = 교차 사이트 추적 쿠키, 그리고 기타 교차 사이트 쿠키 격리
 sitedata-option-block-unvisited =
@@ -1119,7 +1900,13 @@ sitedata-option-block-unvisited =
 sitedata-option-block-all-cross-site-cookies =
     .label = 모든 교차 사이트 쿠키 (웹 사이트가 제대로 작동 안 할 수 있음)
 sitedata-option-block-all =
-    .label = 모든 쿠키 (웹 사이트가 제대로 작동 안하게 됨)
+    .label = 모든 쿠키 (웹 사이트가 깨질 수 있음)
+sitedata-clear2 =
+    .label = 탐색 데이터 지우기
+    .accesskey = l
+sitedata-settings2 =
+    .label = 탐색 데이터 관리
+    .accesskey = M
 sitedata-clear =
     .label = 데이터 지우기…
     .accesskey = l
@@ -1129,6 +1916,22 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = 예외 관리…
     .accesskey = x
+sitedata-cookies-exceptions2 =
+    .label = 예외 관리
+    .accesskey = x
+    .description = 쿠키 및 사이트 데이터 사용을 항상 허용하거나 허용하지 않을 웹 사이트를 지정할 수 있습니다.
+sitedata-heading =
+    .label = 탐색 데이터
+    .description = 쿠키, 기록, 캐시, 웹사이트 데이터 등을 관리합니다.
+sitedata-settings3 =
+    .label = 특정 사이트에 대한 데이터 지우기
+    .accesskey = s
+sitedata-cookies-exceptions3 =
+    .label = 예외 관리
+    .accesskey = x
+    .description = 특정 사이트에서 쿠키 및 사이트 데이터를 처리하는 방법을 선택합니다.
+cookies-site-data-group =
+    .label = 쿠키 및 사이트 데이터
 
 ## Privacy Section - Cookie Banner Handling
 
@@ -1145,7 +1948,7 @@ forms-handle-cookie-banners =
 cookie-banner-blocker-checkbox-label =
     .label = 쿠키 배너 자동 거부
 
-## Privacy Section - Address Bar
+## Search Section
 
 addressbar-header = 주소 표시줄
 addressbar-suggest = 주소 표시줄에서 제안할 항목
@@ -1175,12 +1978,28 @@ addressbar-locbar-shortcuts-option =
 addressbar-locbar-topsites-option =
     .label = 상위 사이트
     .accesskey = T
+addressbar-locbar-engines-option-1 =
+    .label = 사용할 검색 엔진 제안
+    .accesskey = a
 addressbar-locbar-engines-option =
     .label = 검색 엔진
     .accesskey = a
 addressbar-locbar-quickactions-option =
     .label = 빠른 작업
     .accesskey = Q
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = 최근 검색
+    .accesskey = r
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = 인기 검색어 제안
+    .accesskey = t
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = { -brand-short-name }의 제안
+    .description = 검색어와 관련된 웹 제안을 받습니다.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = 스폰서 제안
+    .description = 가끔씩 스폰서 제안으로 { -brand-short-name }를 지원합니다.
 addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 addressbar-locbar-showrecentsearches-option =
     .label = 최근 검색 표시
@@ -1195,15 +2014,28 @@ addressbar-locbar-suggest-nonsponsored-desc = 사용자 검색과 관련된 웹 
 addressbar-locbar-suggest-sponsored-option =
     .label = 스폰서 제안
 addressbar-locbar-suggest-sponsored-desc = 가끔씩 스폰서 제안으로 { -brand-short-name }를 지원합니다.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = 입력할 때 BrowserWorks에서 제안을 가져옴
+addressbar-dismissed-suggestions-label-2 =
+    .label = 거절한 제안
+    .description = 거절한 스폰서와 { -brand-short-name }의 제안을 복원합니다.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = 제안 복원
 addressbar-quickactions-learn-more = 더 알아보기
-addressbar-dismissed-suggestions-label = 닫은 제안
-addressbar-restore-dismissed-suggestions-description = 스폰서와 { -brand-short-name }로부터 닫은 제안을 복원합니다.
+addressbar-dismissed-suggestions-label = 거절한 제안
+addressbar-restore-dismissed-suggestions-description = 거절한 스폰서와 { -brand-short-name }의 제안을 복원합니다.
 addressbar-restore-dismissed-suggestions-button =
     .label = 복원
 
 ## Privacy Section - Content Blocking
 
-content-blocking-enhanced-tracking-protection = 향상된 추적 방지
+content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 content-blocking-learn-more = 더 알아보기
 content-blocking-fpi-incompatibility-warning = { -brand-short-name }의 일부 쿠키 설정을 재정의하는 자사 격리 (FPI)를 사용 중입니다.
@@ -1236,6 +2068,7 @@ content-blocking-private-windows = 사생활 보호 창의 추적 콘텐츠
 content-blocking-cross-site-cookies-in-all-windows2 = 모든 창에서 교차 사이트 쿠키
 content-blocking-cross-site-tracking-cookies = 교차 사이트 추적 쿠키
 content-blocking-all-cross-site-cookies-private-windows = 사생활 보호 창에서 교차 사이트 쿠키
+content-blocking-isolate-cross-site-cookies = 교차 사이트 쿠키 격리
 content-blocking-cross-site-tracking-cookies-plus-isolate = 교차 사이트 추적 쿠키, 그리고 나머지 쿠키 격리
 content-blocking-social-media-trackers = 소셜 미디어 추적기
 content-blocking-all-cookies = 모든 쿠키
@@ -1256,8 +2089,23 @@ content-blocking-etp-standard-tcp-rollout-description = 전체 쿠키 보호는 
 content-blocking-etp-standard-tcp-rollout-learn-more = 더 알아보기
 content-blocking-etp-standard-tcp-title = 가장 강력한 개인 정보 보호 기능인 전체 쿠키 보호 포함
 content-blocking-warning-title = 주의하세요!
+content-blocking-warning-title-2 = 일부 사이트는 엄격한 추적 방지 기능으로 인해 손상될 수 있음
+content-blocking-warning-title-custom = 일부 사이트는 사용자 지정 추적 방지 기능으로 인해 손상될 수 있음
+# “Fix site issues” references the string content-blocking-exceptions-subheader
+content-blocking-and-isolating-etp-warning-description-4 = { -brand-short-name }는 손상된 사이트 기능 및 콘텐츠를 줄이기 위해 "사이트 문제 해결" 설정을 사용할 것을 권장합니다. 사이트가 손상된 것 같으면 해당 사이트에 대한 추적 방지 기능을 해제하여 모든 콘텐츠를 로드해 보세요.
 content-blocking-and-isolating-etp-warning-description-2 = 이 설정으로 인해 일부 웹 사이트가 콘텐츠를 표시하지 않거나 제대로 작동하지 않을 수 있습니다. 사이트가 손상된 것 같으면 해당 사이트에 대한 추적 방지 기능을 해제하여 모든 콘텐츠를 로드할 수 있습니다.
 content-blocking-warning-learn-how = 방법 알아보기
+content-blocking-baseline-exceptions-3 =
+    .label = 주요 사이트 문제 해결 (권장)
+    .description = 추적기가 포함되어 있을 수 있는 필수 요소만 차단 해제하여 사이트와 기능을 로드하는 데 도움을 줍니다. 대부분의 일반적인 문제를 해결합니다.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = 사소한 사이트 문제 해결
+    .description = 추적기가 포함되어 있을 수 있는 요소를 차단 해제하여 글이나 댓글란의 동영상 등을 복원합니다. 이는 사이트 문제를 줄일 수 있지만 보호 수준은 낮아집니다. 주요 사이트 문제 해결과 함께 사용해야 합니다.
+content-blocking-baseline-uncheck-warning-dialog-title = 정말로 사이트 문제 해결을 끄시겠습니까?
+content-blocking-baseline-uncheck-warning-dialog-body = 이 설정은 가장 일반적인 사이트 문제를 해결하는 데 도움이 됩니다. 이 기능을 끄면 일부 사이트가 작동하지 않을 수 있으며 { -brand-short-name }가 이러한 문제 해결을 돕지 못할 수 있습니다.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = 끄기
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = 계속 켜기
 content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
     .label = 모든 탭 새로 고침
@@ -1337,10 +2185,28 @@ permissions-notification-link = 더 알아보기
 permissions-notification-pause =
     .label = { -brand-short-name }가 다시 시작될 때까지 알림을 일시 중지
     .accesskey = n
+permissions-autoplay2 =
+    .label = 자동 재생
 permissions-autoplay = 자동 재생
 permissions-autoplay-settings =
     .label = 설정…
     .accesskey = t
+permissions-block-popups2 =
+    .label = 팝업 및 제3자 리디렉션 차단
+    .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = 예외 관리
+    .description = 팝업을 열고 제3자 리디렉션을 사용할 수 있는 웹 사이트를 추가하세요.
+    .accesskey = E
+    .searchkeywords = 팝업
+permissions-addon-install-warning3 =
+    .label = 웹 사이트가 확장 기능을 설치하려고 할 때 경고 표시
+    .accesskey = W
+permissions-addon-exceptions2 =
+    .label = 확장 기능을 설치할 수 있는 웹 사이트 선택
+    .accesskey = E
 permissions-block-popups =
     .label = 팝업 창 차단
     .accesskey = B
@@ -1351,11 +2217,35 @@ permissions-block-popups-exceptions-button =
     .accesskey = E
     .searchkeywords = 팝업
 permissions-addon-install-warning =
-    .label = 웹 사이트가 부가 기능을 설치하려 할 때 경고
+    .label = 웹 사이트가 부가 기능을 설치하려고 할 때 경고
     .accesskey = W
 permissions-addon-exceptions =
     .label = 예외…
     .accesskey = E
+permissions-location2 =
+    .label = 위치
+permissions-localhost2 =
+    .label = 기기 앱과 서비스
+permissions-local-network2 =
+    .label = 로컬 네트워크 기기
+permissions-xr2 =
+    .label = 가상 현실
+permissions-camera2 =
+    .label = 카메라
+permissions-microphone2 =
+    .label = 마이크
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = 스피커
+permissions-notification2 =
+    .label = 알림
+permissions-header3 =
+    .label = 권한
+    .description = 어떤 웹 사이트가 접근, 제어 또는 실행할 수 있는지 관리합니다.
+permissions-data-section =
+    .heading = 권한 및 데이터
+pane-permissions-data-title2 = 권한 및 데이터
+    .title = 권한 및 데이터
 
 ## Privacy Section - Data Collection
 
@@ -1368,8 +2258,16 @@ preferences-across-profiles = 이 설정은 이 기기의 모든 { -brand-produc
 preferences-view-profiles = 모든 프로필 보기
 collection-description = 저희는 사용자에게 선택권을 제공하고 모두를 위해 { -brand-short-name }를 제공하고 개선하는 데 필요한 정보만 수집하기 위해 노력합니다. 개인정보를 전송하기 전에 항상 사용자의 동의를 구합니다.
 collection-privacy-notice = 개인정보 보호정책
-collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
+collection-health-report-telemetry-disabled = 더 이상 { -vendor-short-name }에서 기술 및 상호 작용 데이터를 수집하도록 허용하지 않습니다. 모든 기존 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
+backup-multi-profile-warning-message =
+    .message = 이 변경 사항을 백업에 적용하려면, 각 프로필을 열고 설정에서 “지금 백업”을 선택하세요.
+nimbus-rollouts =
+    .label = 업데이트 간에 { -brand-short-name }가 기능, 성능 및 안정성을 개선할 수 있도록 허용
+    .description = 변경사항은 원격으로 적용됩니다.
+addon-recommendations3 =
+    .label = 개인화된 확장 기능 추천 허용
+    .description = 탐색 경험을 향상시키기 위한 확장 기능 추천을 받으세요.
 collection-usage-ping =
     .label = { -vendor-short-name }에 일일 사용량 핑 보내기
     .accesskey = U
@@ -1395,9 +2293,15 @@ addon-recommendations-description = 탐색 경험을 향상시키기 위한 확�
 # or builds with no Telemetry support available.
 collection-health-report-disabled2 = 이 빌드 구성에서는 데이터 보고를 하지 않습니다.
 collection-backlogged-crash-reports2 =
-    .label = 자동으로 충돌 보고서 제출
+    .label = 자동으로 충돌 보고서 보내기
     .accesskey = c
 collection-backlogged-crash-reports-description = { -vendor-short-name }가 브라우저의 문제를 진단하고 해결하는 데 도움이 됩니다. 보고서에는 개인 정보나 민감한 정보가 포함되어 있을 수 있습니다.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = 동일한 설정, 새로운 모습!
+    .message = 더 쉽게 스캔하고 탐색할 수 있도록 이 페이지를 재구성했습니다. 개인 설정은 변경되지 않았으며 모든 것이 그대로 유지됩니다. 팁: 검색을 사용하여 필요한 항목으로 바로 이동하세요.
+settings-redesign-promo-dismiss-button =
+    .label = 확인
 addon-recommendations =
     .label = { -brand-short-name }가 개인화된 확장 기능 추천을 할 수 있도록 허용
 addon-recommendations-link = 더 알아보기
@@ -1406,14 +2310,44 @@ addon-recommendations-link = 더 알아보기
 collection-health-report-disabled = 이 빌드 설정에서는 데이터 보고가 비활성화 되어 있음
 collection-backlogged-crash-reports-with-link = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용 <a data-l10n-name="crash-reports-link">더 알아보기</a>
     .accesskey = c
-collection-backlogged-crash-reports = { -brand-short-name }가 사용자를 대신하여 백로그된 충돌 보고서를 보내도록 허용
-    .accesskey = c
 privacy-segmentation-section-header = 탐색을 향상시키는 새로운 기능
 privacy-segmentation-section-description = 더 개인적인 경험을 제공하기 위해 사용자의 데이터를 사용하는 기능을 제공하는 경우:
 privacy-segmentation-radio-off =
     .label = { -brand-product-name } 추천 사용
 privacy-segmentation-radio-on =
     .label = 자세한 정보 표시
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = { -brand-short-name } 데이터 수집과 사용
+    .description = 우리는 사용자에게 선택권을 제공하고 모두를 위해 { -brand-product-name }를 개선하는 데 필요한 최소한의 데이터만 수집하기 위해 노력합니다.
+    .searchkeywords = 원격 분석
+data-collection-link = 개인정보처리방침 보기
+data-collection-preferences-across-profiles =
+    .message = 이 설정은 이 기기의 모든 { -brand-product-name } 프로필에 적용됩니다.
+data-collection-profiles-link = 모든 프로필 보기
+data-collection-health-report-telemetry-disabled =
+    .message = 더 이상 { -vendor-short-name }에서 기술 및 상호 작용 데이터를 수집하도록 허용하지 않습니다. 모든 기존 데이터는 30일 이내에 삭제됩니다.
+data-collection-health-report =
+    .label = { -vendor-short-name }로 기술 및 상호 작용 데이터 보내기
+    .accesskey = r
+    .description = { -brand-product-name }의 기능, 성능, 안정성을 개선하는 데 도움이 됩니다.
+data-collection-health-report-disabled =
+    .label = { -vendor-short-name }로 기술 및 상호 작용 데이터 보내기
+    .accesskey = r
+    .description = 이 빌드 구성에서는 데이터 보고가 비활성화되었습니다.
+data-collection-run-studies =
+    .label = { -brand-short-name }가 기능 연구를 실행하도록 허용
+    .description = { -brand-short-name }가 사용자를 무작위로 선택하여 기능을 테스트하므로 모든 사람의 품질을 향상시키는 데 도움이 됩니다.
+data-collection-studies-link =
+    .label = { -brand-short-name } 연구 보기
+data-collection-backlogged-crash-reports =
+    .label = 자동으로 충돌 보고서 보내기
+    .description = { -vendor-short-name }가 브라우저 문제를 진단하고 해결하는 데 도움이 됩니다. 보고서에는 개인 또는 민감한 데이터가 포함될 수 있습니다.
+    .accesskey = c
+data-collection-usage-ping =
+    .label = { -vendor-short-name }에 일일 사용량 핑 보내기
+    .description = { -vendor-short-name }가 활성 사용자를 예측하는 데 도움이 됩니다.
+    .accesskey = U
 
 ## Privacy Section - Website Advertising Preferences
 
@@ -1429,16 +2363,21 @@ website-advertising-private-attribution-description = 이를 통해 사이트에
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 보안
+browsing-protection-group2 =
+    .label = 사기성 콘텐츠 및 위험한 소프트웨어 보호
+    .description = 위험한 사이트와 다운로드로 인해 데이터와 기기가 위험해질 수 있습니다. { -brand-short-name }는 이를 자동으로 차단하고 위험하거나 원치 않는 소프트웨어에 대해 경고합니다.
 security-browsing-protection = 사기성 콘텐츠 및 위험한 소프트웨어 보호
 security-enable-safe-browsing =
     .label = 위험하고 사기성 있는 콘텐츠 차단
     .accesskey = B
 security-enable-safe-browsing-link = 더 알아보기
+security-safe-browsing-warning =
+    .message = 이 옵션을 끄면 사기, 악성 사이트 및 위험한 다운로드에 대한 보호 기능이 저하됩니다.
 security-block-downloads =
     .label = 위험한 다운로드 차단
     .accesskey = D
 security-block-uncommon-software =
-    .label = 사용자 동의 없이 설치되거나 흔하지 않은 소프트웨어에 대해 경고
+    .label = 원치 않거나 흔하지 않은 소프트웨어에 대해 경고
     .accesskey = C
 
 ## Privacy Section - Certificates
@@ -1456,11 +2395,21 @@ certs-devices =
 certs-thirdparty-toggle =
     .label = 사용자가 설치한 제3자 루트 인증서를 { -brand-short-name }가 자동으로 신뢰하도록 허용
     .accesskey = t
+certs-devices-enable-fips = FIPS 사용
 space-alert-over-5gb-settings-button =
     .label = 설정 열기
     .accesskey = O
 space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 디스크 용량이 부족합니다.</strong> 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
 space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 디스크 용량이 부족합니다.</strong> 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
+certs-description3 =
+    .label = 인증서
+    .description = 보안 연결을 확인하기 위해 { -brand-short-name }가 사용하는 인증서를 구성합니다.
+certs-view2 =
+    .label = 인증서 관리
+    .accesskey = C
+certs-devices2 =
+    .label = 보안 기기 관리
+    .accesskey = D
 
 ## Privacy Section - HTTPS-Only
 
@@ -1478,10 +2427,18 @@ httpsonly-radio-disabled3 =
     .description = { -brand-short-name }는 여전히 ​​일부 연결을 업그레이드 할 수 있음
 httpsonly-radio-disabled =
     .label = HTTPS 전용 모드 사용 안 함
+httpsonly-group =
+    .label = HTTPS 전용 모드
+    .description = 웹 사이트에 보안 연결만 허용합니다. { -brand-short-name }는 안전하지 않은 연결을 하기 전에 묻습니다.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
 
 ## DoH Section
 
 preferences-doh-header = DNS over HTTPS
+dns-over-https-group2 =
+    .label = DNS over HTTPS
+    .description = HTTPS를 통한 DNS (DoH)는 사이트 조회를 암호화하므로 인터넷 공급자나 다른 사람이 사용자가 방문하려는 웹 사이트를 확인하기가 더 어렵습니다.
 preferences-doh-description = DNS over HTTPS (HTTPS를 통한 DNS)는 암호화된 연결을 통해 도메인 이름에 대한 요청을 전송하여 보안 DNS를 생성하고 다른 사람들이 사용자가 액세스하려는 웹 사이트를 보기 어렵게 만듭니다.
 preferences-doh-description2 = DNS over HTTPS (HTTPS를 통한 DNS)는 암호화된 연결을 통해 도메인 이름에 대한 요청을 전송하여 보안 DNS를 제공하고 다른 사람들이 사용자가 액세스하려는 웹 사이트를 보기 어렵게 만듭니다.
 # Variables:
@@ -1508,7 +2465,7 @@ preferences-doh-setting-default =
     .accesskey = D
 preferences-doh-default-desc = { -brand-short-name }가 보안 DNS를 사용하여 개인 정보를 보호할 때를 결정합니다.
 preferences-doh-default-detailed-desc-1 = 사용 가능한 지역에서 보안 DNS 사용
-preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 확인자 사용
+preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 해석기 사용
 preferences-doh-default-detailed-desc-3 = 가능하면 로컬 공급자를 사용
 preferences-doh-default-detailed-desc-4 = VPN, 자녀 보호 또는 엔터프라이즈 정책이 활성화되면 끄기
 preferences-doh-default-detailed-desc-5 = 네트워크에서 { -brand-short-name }에 보안 DNS를 사용하지 말라고 하면 끄기
@@ -1517,7 +2474,7 @@ preferences-doh-setting-enabled =
     .accesskey = I
 preferences-doh-enabled-desc = 보안 DNS를 사용할 때를 제어하고 공급자를 선택합니다.
 preferences-doh-enabled-detailed-desc-1 = 선택한 공급자 사용
-preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우에만 기본 DNS 확인자 사용
+preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우에만 기본 DNS 해석기 사용
 preferences-doh-setting-strict =
     .label = 최대 보호
     .accesskey = M
@@ -1528,7 +2485,7 @@ preferences-doh-strict-detailed-desc-3 = 보안 DNS를 사용할 수 없으면 �
 preferences-doh-setting-off =
     .label = 끄기
     .accesskey = O
-preferences-doh-off-desc = 기본 DNS 확인자 사용
+preferences-doh-off-desc = 기본 DNS 해석기 사용
 preferences-doh-checkbox-warn =
     .label = 제3자가 보안 DNS를 능동적으로 막는 경우 경고
     .accesskey = W
@@ -1537,9 +2494,326 @@ preferences-doh-exceptions-description = { -brand-short-name }는 다음 사이�
 preferences-doh-manage-exceptions =
     .label = 예외 관리…
     .accesskey = x
+preferences-doh-overview-default =
+    .label = 기본 보호
+    .description = 가능한 지역에서는 보안 DNS를 사용합니다.
+preferences-doh-overview-custom =
+    .label = 사용자 지정
+    .description = 항상 공급자와 대체 동작을 제어할 수 있는 보안 DNS를 사용합니다.
+preferences-doh-overview-off =
+    .label = 끄기
+    .description = 기본 DNS 해석기를 사용합니다.
+preferences-doh-advanced-button =
+    .label = 고급 설정
+preferences-doh-advanced-section =
+    .label = 고급 설정
+    .description = HTTPS를 통한 DNS (DoH)는 사이트 조회를 암호화하므로 인터넷 공급자나 다른 사람이 사용자가 방문하려는 웹 사이트를 확인하기가 더 어렵습니다.
+preferences-doh-manage-exceptions2 =
+    .label = 예외 관리
+    .accesskey = x
+preferences-doh-radio-default =
+    .label = 기본
+    .description = 사용 가능한 지역에서 보안 DNS를 사용함
+preferences-doh-radio-custom =
+    .label = 사용자 지정
+    .description = 항상 공급자와 대체 동작을 제어할 수 있는 보안 DNS를 사용함
+preferences-doh-radio-off =
+    .label = 끄기
+    .description = 기본 DNS 해석기를 사용함
+preferences-doh-fallback-label =
+    .label = 보안 DNS를 사용할 수 없는 경우 항상 경고
+preferences-doh-status-item-off =
+    .message = DNS over HTTPS가 꺼짐
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = { $name } 공급자를 사용하는 동안 오류({ $reason })가 발생하여 HTTPS를 통한 DNS가 작동하지 않습니다.
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = 잘못된 URL({ $reason })을 받아 HTTPS를 통한 DNS가 작동하지 않음
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = HTTPS를 통한 DNS가 { $name } 공급자를 사용 중
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = 로컬 공급자 { $name }를 사용하는 동안 오류({ $reason })가 발생하여 HTTPS를 통한 DNS가 작동하지 않습니다.
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = HTTPS를 통한 DNS가 { $name } 로컬 공급자를 사용하고 있습니다.
+preferences-doh-select-resolver-label =
+    .label = 공급자 선택:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = HTTPS를 통한 DNS 해석에 이 공급자를 사용
+preferences-doh-custom-provider-label =
+    .aria-label = 사용자 지정 공급자 URL 입력
+preferences-doh-header2 =
+    .heading = DNS over HTTPS
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = 연결 및 소프트웨어 보안
+preferences-connection-link-section =
+    .label = 연결 및 소프트웨어 보안
+    .description = 연결이 어떻게 안전하게 유지되고, 유해한 소프트웨어가 차단되며, 웹사이트가 어떻게 검증되는지 확인해 보세요.
+preferences-connection-link-button =
+    .label = 고급 설정
 
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = 바탕 화면
 downloads-folder-name = 다운로드
 choose-download-folder-title = 다운로드 폴더 선택:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = 모양
+browser-theme-group =
+    .label = 브라우저 테마
+    .description = { -brand-short-name } 스타일을 원하는 대로 지정하세요. 테마 색상은 도구 모음, 메뉴 및 메시지에 적용됩니다.
+browser-theme-manage-link =
+    .label = { -brand-short-name } 테마 관리
+appearance-window-density-group =
+    .label = 창 밀도
+    .description = 도구 모음, 탭, 사이드바와 같은 창 요소 주변의 간격을 조정하세요.
+appearance-window-density-radio-group =
+    .aria-label = 창 밀도
+appearance-window-density-automatic =
+    .label = 자동 (기본값)
+    .description = 보통, 좁게, 또는 터치 간격이 자동으로 적용됩니다.
+appearance-window-density-automatic-no-touch =
+    .label = 자동 (기본값)
+    .description = 보통 또는 좁게 간격이 자동으로 적용됩니다.
+appearance-window-density-standard =
+    .label = 보통
+    .description = 대부분의 화면에 적합한 균형 잡힌 간격
+appearance-window-density-auto-touch-mode =
+    .label = 태블릿 모드에서 터치 간격 사용
+appearance-window-density-compact =
+    .label = 좁게
+    .description = 작은 화면에 적합한 조밀한 간격
+appearance-window-density-touch =
+    .label = 터치
+    .description = 터치 스크린에 최적화된 더 넓은 창 요소 및 클릭 영역
+related-settings-group =
+    .label = 관련 설정
+related-settings-accessibility-link =
+    .label = 접근성에서 확대/축소 및 글꼴 설정 사용자 지정
+related-settings-home-link =
+    .label = { -firefox-home-brand-name } 사용자 지정
+related-settings-tabs-browsing-link =
+    .label = 브라우저 레이아웃 사용자 지정
+
+## AI controls page
+
+preferences-ai-controls-description = AI로 향상된 기능을 사용할지 여부를 포함하여 항상 { -brand-short-name }에서 선택할 수 있습니다. 더 많은 제어 옵션이 곧 제공될 예정입니다.
+preferences-ai-controls-block-ai-label = AI 향상 기능 차단
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = 차단은 { -brand-short-name }의 신규 또는 현재의 AI 향상 기능이나 관련 팝업을 보지 않음을 의미합니다. 포함된 내용과 검색 제안 및 추천과 같은 기존의 기계 학습 기능을 제어하는 방법에 대한 <a data-l10n-name="link">자세한 내용</a>을 확인하세요.
+preferences-ai-controls-blocked-message =
+    .message = 신규 및 현재의 AI 향상 기능은 기본적으로 차단됩니다. 특정 기능을 차단 해제하려면 아래 컨트롤을 사용하세요.
+preferences-ai-controls-on-device-group =
+    .label = 온디바이스 AI
+    .description = 이 기능을 사용하면 기기에 다운로드되는 작은 AI 모델을 사용합니다. 이 접근 방식은 개인 정보를 보호하는 데 도움이 됩니다.
+preferences-ai-controls-translations-control =
+    .label = 번역
+    .description = 원하는 언어로 웹을 원활하게 탐색하세요.
+preferences-ai-controls-translations-more-link = 기타 번역 설정
+preferences-ai-controls-pdfjs-control =
+    .label = { -brand-short-name } PDF 뷰어의 이미지 대체 텍스트
+    .description = PDF에 이미지를 추가하면 접근성을 위해 설명이 추가됩니다.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = 탭 그룹 제안
+    .description = 탭 이름과 탭 정리를 위한 제안을 받아보세요.
+preferences-ai-controls-key-points-control =
+    .label = 링크 미리보기의 요점
+    .description = 링크를 열기 전에 간략한 요약을 확인하세요.
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = 사이드바의 AI 챗봇 공급자
+    .description = 탐색하는 동안 챗봇을 시야에 두세요. Anthropic Claude, ChatGPT, Copilot, Google Gemini 및 Le Chat Mistral 중에서 선택하세요.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = 사이드바의 챗봇
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = 사용 가능
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = 사용함
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = 차단됨
+preferences-ai-controls-state-description-before = 옵션의 의미:
+preferences-ai-controls-state-description-available = <strong>사용 가능:</strong> 기능을 확인하고 사용할 수 있습니다.
+preferences-ai-controls-state-description-enabled = <strong>사용함:</strong> 이 기능을 사용하기로 했습니다.
+preferences-ai-controls-state-description-blocked = <strong>차단됨:</strong> 기능을 볼 수 없으며 사용할 수 없습니다. 온디바이스 AI의 경우 이미 다운로드된 모델은 제거됩니다.
+preferences-ai-controls-block-confirmation-heading = AI 향상 기능을 차단하시겠습니까?
+preferences-ai-controls-block-confirmation-description = { -brand-short-name }에서 신규 또는 현재의 AI 향상 기능이나 관련 팝업이 표시되지 않습니다. 나중에 계속 사용하고 싶은 항목을 차단 해제할 수 있습니다.
+preferences-ai-controls-block-confirmation-features-start = 차단할 항목:
+preferences-ai-controls-block-confirmation-translations = 번역
+preferences-ai-controls-block-confirmation-pdfjs = { -brand-short-name } PDF 뷰어의 이미지 대체 텍스트
+preferences-ai-controls-block-confirmation-tab-group-suggestions = 탭 그룹 제안
+preferences-ai-controls-block-confirmation-key-points = 링크 미리보기의 요점
+preferences-ai-controls-block-confirmation-sidebar-chatbot = 사이드바의 챗봇 공급자
+preferences-ai-controls-block-confirmation-features-after = 차단은 { -brand-short-name }에서 제공하는 AI를 사용하는 확장 기능에도 영향을 줍니다.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = 취소
+preferences-ai-controls-block-confirmation-confirm =
+    .label = 차단
+preferences-ai-controls-header3 =
+    .heading = AI 제어
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = { -brand-short-name }가 경계 중
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name }가 몇 가지 보안 개선 사항을 권장함
+security-privacy-status-ok-label = 향상된 추적 방지 기능이 켜짐
+security-privacy-status-problem-label = 보호 기능에 영향을 미치는 설정을 찾음
+security-privacy-status-problem-helper-label = 이슈 보기
+security-privacy-status-pending-trackers-label = 지난 한 달 동안 { -brand-short-name }가 차단한 추적기 수를 조회 중
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label = 지난 한 달 동안 추적기{ $trackerCount }개가 차단됨
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = <a data-l10n-name="strict-tracking-protection">엄격한 보호</a> 중
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = <a data-l10n-name="custom-tracking-protection">사용자 지정 보호</a> 중
+security-privacy-status-up-to-date-label = 가장 안전한 { -brand-short-name } 최신 버전을 사용 중
+security-privacy-status-update-needed-label = 새 { -brand-short-name } 버전이 있습니다.
+security-privacy-status-update-error-label = { -brand-short-name }가 자체 업데이트를 하는 데 문제가 있음
+security-privacy-status-update-checking-label = { -brand-short-name }가 업데이트를 확인 중
+security-privacy-status-update-needed-description = 최신 속도, 안정성 및 보안 업데이트를 위해 업데이트하세요.
+security-privacy-status-update-button-label =
+    .label = { -brand-short-name } 업데이트
+security-privacy-image-warning =
+    .alt = 보안 경고에 대한 우려를 나타내는 느낌표가 있는 방패
+security-privacy-image-ok =
+    .alt = 해결되지 않은 보안 문제가 없음을 나타내는 체크 표시가 있는 방패
+security-privacy-issue-card =
+    .heading = 보안 경고
+issue-card-reset-button =
+    .label = 재설정
+issue-card-dismiss-button =
+    .tooltiptext = 닫기
+    .aria-label = 닫기
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = 향상된 추적 방지 기능
+    .description = 사이트에서는 추적기를 사용하여 온라인에서 사용자를 추적하고 불쾌한 광고를 표시합니다. { -brand-short-name }는 탐색하는 동안 사용자를 보호하고 추적기를 자동으로 차단하여 디지털 흔적을 제어할 수 있도록 합니다.
+preferences-etp-level-standard =
+    .label = 표준 (기본값)
+    .description = 대부분의 웹 사이트에서 원활하게 작동하는 강력하고 안정적인 보호 기능입니다.
+preferences-etp-level-strict =
+    .label = 엄격
+    .description = 더 많은 추적기를 차단하는 강력한 보호 기능이 있지만 일부 사이트가 깨질 수 있습니다.
+preferences-etp-level-custom =
+    .label = 사용자 지정
+    .description = 어떤 보호 기능을 켜거나 끌지 선택합니다.
+preferences-etp-status-advanced-button =
+    .label = 고급 설정
+preferences-etp-status-protections-dashboard-link =
+    .label = 개인화된 보호 대시보드 보기
+    .description = { -brand-short-name }가 소셜 미디어 추적기, 디지털 지문, 암호화폐 채굴기를 포함하여 얼마나 많은 은밀한 추적기를 차단했는지 확인하세요.
+preferences-etp-header =
+    .heading = 향상된 추적 방지 기능
+preferences-etp-advanced-settings-group =
+    .label = 고급 설정
+    .description = 사이트에서는 추적기를 사용하여 온라인에서 사용자를 추적하고 불쾌한 광고를 표시합니다. { -brand-short-name }는 탐색하는 동안 사용자를 보호하고 대부분의 추적기를 자동으로 차단하여 디지털 흔적을 제어할 수 있도록 합니다.
+preferences-etp-customize-button =
+    .label = 추적 방지 기능 사용자 지정
+preferences-etp-reload-tabs-hint =
+    .message = 변경 사항을 적용하려면 탭을 새로 고침하세요.
+preferences-etp-reload-tabs-hint-button =
+    .label = 모든 탭 새로 고침
+preferences-etp-rfp-warning-message =
+    .message = { -brand-short-name }의 디지털 지문 보호 설정 중 일부를 대체하는 RFP (Resist Fingerprinting)를 사용하고 있습니다. 이로 인해 일부 사이트가 깨질 수 있습니다.
+preferences-etp-level-warning-message =
+    .heading = 조심하세요! 일부 사이트는 예상대로 작동하지 않을 수 있습니다.
+    .message = 일부 사이트는 기능이나 콘텐츠에 추적기를 구축합니다. { -brand-short-name }가 이를 차단하면 사이트가 손상된 것처럼 보입니다. "사이트 문제 해결"을 사용하거나 해당 사이트에서 추적 방지 기능을 꺼보세요.
+preferences-etp-manage-exceptions-button =
+    .label = 예외 관리
+    .description = 향상된 추적 방지 기능이 비활성화된 웹 사이트를 관리합니다.
+preferences-etp-customize-header =
+    .heading = 추적 방지 기능 사용자 지정
+preferences-etp-reset =
+    .label = 사용자 지정 초기화
+    .description = 설정을 사전 설정된 보호 수준으로 복원합니다.
+preferences-etp-reset-standard-button =
+    .label = 표준으로 재설정
+preferences-etp-reset-strict-button =
+    .label = 엄격으로 재설정
+preferences-etp-custom-control-group =
+    .label = 추적 방지 기능
+    .description = 어떤 보호 기능을 켜거나 끌지 선택하세요.
+preferences-etp-custom-cookies-enabled =
+    .label = 쿠키
+preferences-etp-custom-cookie-behavior =
+    .aria-label = 쿠키
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = 모든 쿠키 허용
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = 교차 사이트 쿠키 차단
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = 교차 사이트 쿠키 격리
+preferences-etp-custom-cookie-behavior-block-unvisited =
+    .label = 방문하지 않은 웹 사이트의 쿠키 차단
+preferences-etp-custom-cookie-behavior-block-all-cross-site-cookies =
+    .label = 모든 교차 사이트 쿠키 차단 (웹 사이트가 제대로 작동 안 할 수 있음)
+preferences-etp-custom-cookie-behavior-block-all =
+    .label = 모든 쿠키 차단 (웹 사이트가 깨질 수 있음)
+preferences-etp-custom-tracking-protection-enabled =
+    .label = 추적 콘텐츠
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = 추적 콘텐츠
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = 암호화폐 채굴기
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = 알려진 디지털 지문
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = 의심되는 디지털 지문
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = 의심되는 디지털 지문
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = 알려진 디지털 지문은 차단되지 않습니다.
+    .description = 이로 인해 일부 추적기가 쿠키 없이 사용자를 따라갈 수 있습니다.
+security-privacy-issue-warning-third-party-cookies =
+    .label = 제3자 쿠키가 활성화됨
+    .description = 제3자 쿠키는 여러 웹 사이트에서 사용자를 추적하는 데 사용됩니다.
+security-privacy-issue-warning-password-manager =
+    .label = 비밀번호 관리자가 비활성화됨
+    .description = 비밀번호 관리자는 계정에 대한 강력한 비밀번호를 저장하는 데 도움이 됩니다.
+security-privacy-issue-warning-popup-blocker =
+    .label = 팝업 차단기가 비활성화됨
+    .description = 팝업은 방해가 되며 잠재적으로 해로울 수 있습니다.
+security-privacy-issue-warning-extension-install =
+    .label = 웹 사이트에서 확장 기능을 설치할 수 있음
+    .description = 웹 사이트에서 묻지 않고도 { -brand-short-name }에 확장 기능을 설치할 수 있습니다.
+security-privacy-issue-warning-safe-browsing =
+    .label = 위험하고 사기성 콘텐츠가 차단되지 않음
+    .description = 웹 사이트의 사기 및 악성 코드에 대한 노출이 증가합니다.
+security-privacy-issue-warning-doh =
+    .label = DNS over HTTPS가 꺼짐
+    .description = HTTPS를 통한 DNS는 사용자가 방문하는 사이트를 네트워크 공급자로부터 숨깁니다.
+security-privacy-issue-warning-ech =
+    .label = 암호화된 클라이언트 Hello가 비활성화됨
+    .description = 암호화된 클라이언트 Hello는 사용자가 방문하는 사이트를 네트워크 공급자로부터 숨깁니다.
+security-privacy-issue-warning-proxy-autodetection =
+    .label = 프록시 자동 구성이 활성화됨
+    .description = 프록시 자동 구성을 사용하면 신뢰할 수 없는 네트워크가 사용자의 활동을 모니터링할 수 있습니다.

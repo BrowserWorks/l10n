@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = 網頁顯示
 experimental-features-group-customize-browsing =
     .label = 自訂您的上網體驗
+experimental-features-group-productivity =
+    .label = 生產力
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } 當中的小工具
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = 在側邊欄顯示密碼
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = 主題區段與關注/封鎖新分頁文章
 experimental-features-newtab-sections-follow-block-description = 將「新分頁」頁面中的文章整理成不同主題區塊（體育、美食、娛樂等），讓您獲得更有條理的上網體驗。使用全新的關注或封鎖元件來自訂您要看到的內容。<a data-l10n-name="connect">分享意見回饋</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = 將網站新增至工具列
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = 將您常造訪的網站放置於工具列，以網頁應用程式方式開啟。可尋找網址列右方的「將分頁新增至工具列」圖示，即可以流線化的視窗開啟該網站，並依然獲得 { -brand-product-name } 的所有保護機制。<a data-l10n-name="connect">分享意見回饋</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = { -firefox-home-brand-name } 當中的清單
+experimental-features-newtab-widget-lists-new =
+    .label = 清單
+experimental-features-newtab-widget-lists-description = 開啟新分頁時自動列出待辦清單，不論是要打包的項目，還是購物清單都可以在 { -brand-product-name } 當中安排。<a data-l10n-name="connect">分享意見回饋</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = { -firefox-home-brand-name } 當中的計時器
+experimental-features-newtab-widget-timer-new =
+    .label = 計時器
+experimental-features-newtab-widget-timer-description = 設定計時器讓您保持專心，並且搖晃視窗請您保持進度，或提醒該小歇一下了。<a data-l10n-name="connect">分享意見回饋</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = { -firefox-home-brand-name }當中的清單與計時器
+experimental-features-newtab-widget-lists-and-timer-description = 開啟新分頁時自動列出待辦清單，不論是要打包的項目，還是購物清單都可以在 { -brand-product-name } 當中安排。設定計時器讓您保持專心，並且搖晃視窗請您保持進度，或提醒該小歇一下了。<a data-l10n-name="connect">分享意見回饋</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 天氣預報
+experimental-features-newtab-widget-weather-description = 透過每小時天氣預報，讓您更能掌握今天的天氣。<a data-l10n-name="connect">意見回饋</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 每日一圖
+experimental-features-newtab-widget-picture-of-the-day-description = 為每一天加上小小驚奇。獲得一張新照片、了解一些豆知識，或快速設定全新背景圖。<a data-l10n-name="connect">意見回饋</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 時鐘
+experimental-features-newtab-widget-clocks-description = 新增最多四個可自訂暱稱的時鐘，讓您掌握各地時間。<a data-l10n-name="connect">意見回饋</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = 語意化紀錄搜尋
+experimental-features-semantic-history-search-description = 使用本機上的機器學習模型，根據 { -brand-product-name } 網址列中輸入的自然語言理解來建議瀏覽紀錄內容。<a data-l10n-name="connect">提供意見回饋</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = 分頁註記
+experimental-features-tab-notes-description = 「分頁註記」是一個可讓您幫分頁加上便條紙的實驗性功能。您可以記錄分頁開啟原因、提醒資訊，或接下來要做什麼事，這樣之後就可以快速想起為什麼要開啟該分頁。我們會持續改善本功能，也樂意聽到您的意見回饋。<a data-l10n-name="connect">分享意見回饋</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = 流線型的分頁選單
+experimental-features-tab-context-menu-description = 對分頁按右鍵時可看到更簡潔的選單，這樣的設計是為了讓您更容易尋找常見功能。<a data-l10n-name="connect">分享意見回饋</a>

@@ -35,7 +35,9 @@ contentanalysis-operationtype-clipboard = schowek
 contentanalysis-operationtype-dropped-text = przeciągnięty tekst
 contentanalysis-operationtype-print = wydruk
 #   $filename - The filename associated with the request, such as "aFile.txt"
-contentanalysis-customdisplaystring-description = przesłanie pliku „{ $filename }”
+contentanalysis-upload-description = przesłanie pliku „{ $filename }”
+#   $filename - The filename associated with the request, such as "aFile.txt"
+contentanalysis-download-description = pobieranie pliku „{ $filename }”
 contentanalysis-warndialogtitle = Ta treść może być niebezpieczna
 # Variables:
 #   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
@@ -76,6 +78,10 @@ contentanalysis-block-dialog-title-upload-file = Brak uprawnienia do przesłania
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
 contentanalysis-block-dialog-body-upload-file = Zgodnie z zasadami ochrony danych Twojej organizacji nie masz uprawnienia do przesłania pliku „{ $filename }”. Skontaktuj się z administratorem, aby dowiedzieć się więcej.
+contentanalysis-block-dialog-title-download-file = Brak uprawnienia do pobrania tego pliku
+# Variables:
+#   $filename - Name of the file that was blocked, such as "aFile.txt"
+contentanalysis-block-dialog-body-download-file = Zgodnie z zasadami ochrony danych Twojej organizacji nie masz uprawnienia do pobrania pliku „{ $filename }”. Skontaktuj się z administratorem, aby dowiedzieć się więcej.
 contentanalysis-block-dialog-title-clipboard = Brak uprawnienia do wklejenia tej treści
 contentanalysis-block-dialog-body-clipboard = Zgodnie z zasadami ochrony danych Twojej organizacji nie masz uprawnienia do wklejenia tej treści. Skontaktuj się z administratorem, aby dowiedzieć się więcej.
 contentanalysis-block-dialog-title-dropped-text = Brak uprawnienia do przeciągnięcia tej treści

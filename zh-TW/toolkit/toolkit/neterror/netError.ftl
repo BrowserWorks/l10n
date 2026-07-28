@@ -25,6 +25,8 @@ neterror-override-exception-button = 接受風險並繼續
 neterror-pref-reset-button = 還原預設設定
 neterror-return-to-previous-page-button = 返回
 neterror-return-to-previous-page-recommended-button = 返回上一頁（建議）
+neterror-try-again-button-2 = 重試
+    .accesskey = T
 neterror-try-again-button = 重試
 neterror-add-exception-button = 總是繼續開啟此網站
 neterror-settings-button = 更改 DNS 設定
@@ -46,6 +48,10 @@ neterror-load-error-firewall = 若電腦或網路被防火牆或 Proxy 保護，
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = 若您要開啟的本地區域網路頁面，請確認已經在 macOS 的「隱私權與安全性」選項當中，授權 { -brand-short-name } 存取本地網路權限。
 neterror-http-error-page = 請檢查是否正確輸入網址。
+neterror-http-empty-response = 請檢查您輸入的網址是否正確，並稍後再試。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } 回傳了空白的頁面。
 neterror-captive-portal = 您必須先登入才能存取網際網路。
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,8 +60,10 @@ neterror-dns-not-found-hint-header = <strong>若您確認輸入的網址是正�
 neterror-dns-not-found-hint-try-again = 稍後再試
 neterror-dns-not-found-hint-check-network = 檢查網際網路連線是否正常
 neterror-dns-not-found-hint-firewall = 檢查 { -brand-short-name } 是否有權限開啟網頁（可能已經連上網路，但被防火牆阻擋）
+neterror-dns-not-found-hint-check-network-2 = 檢查網際網路連線是否正常。
+neterror-dns-not-found-hint-firewall-2 = 檢查 { -brand-short-name } 是否有權限開啟網頁（可能已經連上網路，但被防火牆阻擋）。
 neterror-dns-not-found-offline-hint-header = <strong>您可以做什麼？</strong>
-neterror-dns-not-found-offline-hint-different-device = 嘗試改連線到其他裝置。
+neterror-dns-not-found-offline-hint-different-device = 嘗試用其他裝置連線。
 neterror-dns-not-found-offline-hint-modem = 檢查您的數據機或路由器。
 neterror-dns-not-found-offline-hint-reconnect = 中斷，然後重新連線到 Wi-Fi 網路。
 
@@ -65,7 +73,7 @@ neterror-dns-not-found-offline-hint-reconnect = 中斷，然後重新連線到 W
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name } 無法透過信任的 DNS 解析器保護您對本網址的瀏覽請求。原因如下：
-neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 無法透過我們的安全 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 無法透過我們的加密 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
 neterror-dns-not-found-trr-third-party-warning2 = 您可以繼續使用預設 DNS 解析器，但第三方仍可能得知您造訪過哪些網站。
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } 無法連線到 { $trrDomain }。
 neterror-dns-not-found-trr-only-timeout = 連線到 { $trrDomain } 的時間比預期得久。
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = 發生未預期的問題。
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } 無法透過信任的 DNS 解析器保護您對本網址的瀏覽請求。原因如下：
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } 無法透過我們的安全 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
 neterror-dns-not-found-native-fallback-heuristic = 您的網路已停用 DNS over HTTPS。
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } 無法連線到 { $trrDomain }。
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } �
 
 neterror-file-not-found-filename = 請檢查檔名是否有大小寫錯誤、拼錯字。
 neterror-file-not-found-moved = 請檢查檔案是否已被移動、改名或刪除。
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } 找不到位於 <strong>{ $path }</strong> 的檔案。不是檔案不存在，就是路徑不正確。
+neterror-file-not-found-what-can-you-do = 若您手動輸入網址，請確認檔名或路徑是否有大小寫錯誤，或是打錯字；若您是開啟書籤或點擊鏈結而來，可能是該檔案已經被移動、更名，或刪除。請使用檔案管理員或近期的搜尋紀錄找出該檔案正確的路徑與名稱。
 neterror-access-denied = 可能是檔案被移走、移除，或存取權限不正確，造成無法存取。
 neterror-unknown-protocol = 您可能需要安裝其他軟體才能開啟此網址。
 neterror-redirect-loop = 有時候停用或拒絕接受 Cookie 會造成此問題。
+neterror-unknown-socket-type-client-config = 可能是您的客戶端設定有誤。
 neterror-unknown-socket-type-psm-installed = 請確定電腦已安裝個人安全管理員 (Personal Security Manager)。
 neterror-unknown-socket-type-server-config = 可能是伺服器上的非標準設定所造成的。
 neterror-not-cached-intro = 您所請求的文件已不存在於 { -brand-short-name } 的快取當中。
@@ -135,7 +147,7 @@ neterror-inadequate-security-code = 錯誤代碼：NS_ERROR_NET_INADEQUATE_SECUR
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 # $now (Date) - The current datetime, to be formatted as a date
-neterror-clock-skew-error = 您的電腦認為目前時間為 { DATETIME($now, dateStyle: "medium") }，不讓 { -brand-short-name } 建立安全連線。若要造訪 <b>{ $hostname }</b>，請到系統設定中確認日期、時間、時區設定是否正確，然後重新載入 <b>{ $hostname }</b>。
+neterror-clock-skew-error = 您的電腦認為目前時間為 { DATETIME($now, dateStyle: "medium") }，所以 { -brand-short-name } 無法建立安全連線。若要造訪 <b>{ $hostname }</b>，請到系統設定中確認日期、時間、時區設定是否正確，然後重新載入 <b>{ $hostname }</b>。
 neterror-network-protocol-error-intro = 因為偵測到網路通訊協定中的問題，無法顯示您嘗試檢視的頁面。
 neterror-network-protocol-error-contact-website = 請向網站擁有者回報此問題。
 certerror-expired-cert-second-para = 可能是網站的憑證已經過期，讓 { -brand-short-name } 無法安全地連線。若您造訪此網站，攻擊者可能嘗試偷走您的密碼、電子郵件、信用卡資料等個人資訊。
@@ -168,3 +180,42 @@ certerror-coep-learn-more = 了解 Cross Origin Embedder Policies（COEP）的�
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = 錯誤代碼：{ $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = 您的網路連線可能有點問題
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } 無法與伺服器 { $hostname } 建立安全連線。
+fp-neterror-offline-intro = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器
+fp-neterror-offline-intro-2 = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器。
+fp-neterror-net-timeout-intro = 位於 <strong>{ $hostname }</strong> 的伺服器花了太久時間，還是沒有回應。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = 位於 <strong>{ $hostname }</strong> 的伺服器回傳了錯誤：{ $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> 送回了網頁安全標準不允許的含有空白字元的檔頭。
+fp-neterror-content-encoding-intro = 您嘗試檢視的頁面無法顯示，因為其中使用了無效或不支援的壓縮類型。
+fp-neterror-coop-coep-intro = 因為此頁面的安全性設定與前一頁不符，{ -brand-short-name } 並未載入此頁面。
+fp-neterror-blocked-by-policy-intro = 您的組織已封鎖存取此網頁或網站。
+fp-neterror-http-auth-disabled-intro = 可能是其他假扮為該網站的有心人，正嘗試偷走您的帳號、密碼、信箱等資料。
+fp-neterror-http-auth-disabled-secure-connection = 此網站要求必須使用安全連線，您無法加入例外造訪此網站。
+fp-neterror-why-did-this-happen = 為什麼會發生？
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = 看來此網站仍在使用已知有安全性漏洞的舊版軟體。
+fp-neterror-http-auth-disabled-why-dangerous-body = 由於連線不安全，{ -brand-short-name } 不信任 { $hostname }。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = 請確認您使用的是最新版的 { -brand-short-name }。可前往選單中的「說明 > 關於 { -brand-short-name }」確認。若您已經使用最新版的 { -brand-short-name }，那麼最有可能是網站本身的問題。
+fp-neterror-offline-what-can-you-do-body = 您可以試著用其他裝置連線、檢查您的數據機或路由器，或將 Wi-Fi 斷線重連。
+fp-neterror-http-auth-disabled-what-can-you-do-body = 這通常是網站本身的問題，但您可以試著將網址開頭改為 HTTPS 再開啟。
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = 有時網站會設定一些保護機制，避免網站本身受到與其他網站間不必要的互動影響。
+fp-learn-more-about-https-connections = 了解 HTTPS 連線的更多資訊
+fp-neterror-vpn-error-title = 無法連線至 VPN
+fp-neterror-vpn-error-description = 請稍候幾分鐘再試一次。
+fp-neterror-denied-port-access = 此網址所用的通訊埠 (Port) 通常不是用於網路瀏覽。為了安全性考量，{ -brand-short-name } 已經取消連線要求。

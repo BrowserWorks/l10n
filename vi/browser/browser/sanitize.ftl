@@ -60,10 +60,6 @@ item-history-and-downloads =
     .label = Lịch sử duyệt web & tải xuống
     .accesskey = d
 item-history-and-downloads-description2 = Xóa lịch sử trang web và tải xuống
-item-history-form-data-downloads =
-    .label = Lịch sử
-    .accesskey = H
-item-history-form-data-downloads-description = Xóa trang web và lịch sử tải xuống, thông tin biểu mẫu đã lưu và tìm kiếm
 item-cookies =
     .label = Cookie
     .accesskey = C
@@ -132,3 +128,6 @@ sanitize-everything-warning = Toàn bộ lịch sử sẽ bị xóa.
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
 sanitize-selected-warning = Tất cả các mục đã chọn sẽ bị xóa.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Đang tính…

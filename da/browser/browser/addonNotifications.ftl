@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Webstedet anmoder om adgang til dine MIDI-enheder (Musical Instrument Digital Interface). Adgang kan aktiveres ved at installere en tilføjelse.
 site-permission-install-first-prompt-midi-message = Der er ingen garanti for, at adgangen er sikker. Fortsæt kun, hvis du stoler på webstedet.
+site-permission-install-first-prompt-serial-header = Webstedet beder om adgang til dine serielle enheder. Du kan aktivere adgang til enheder ved at installere en tilføjelse.
+site-permission-install-first-prompt-serial-message = Der er ingen garanti for, at adgangen er sikker. Fortsæt kun, hvis du stoler på webstedet.
 
 ##
 
@@ -125,15 +127,18 @@ addon-install-error-corrupt-file = Tilføjelsen fra dette websted kunne ikke ins
 addon-install-error-file-access = { $addonName } kunne ikke installeres, fordi { -brand-short-name } ikke kan redigere den nødvendige fil.
 addon-install-error-not-signed = { -brand-short-name } har forhindret dette websted i at installere en uverificeret tilføjelse.
 addon-install-error-invalid-domain = Tilføjelsen { $addonName } kan ikke installeres fra denne placering.
+addon-install-error-no-addon-name-file-access = Tilføjelsen kunne ikke installeres, fordi { -brand-short-name } ikke kan redigere den nødvendige fil.
 addon-local-install-error-network-failure = Denne tilføjelse kunne ikke installeres på grund af en filsystemsfejl.
 addon-local-install-error-incorrect-hash = Denne tilføjelse kunne ikke installeres, fordi den ikke matcher den tilføjelse { -brand-short-name } forventede.
 addon-local-install-error-corrupt-file = Denne tilføjelse kunne ikke installeres, fordi den lader til at være ødelagt.
 addon-local-install-error-file-access = { $addonName } kunne ikke installeres, fordi { -brand-short-name } ikke kan redigere den nødvendige fil.
 addon-local-install-error-not-signed = Denne tilføjelse kunne ikke installeres, fordi den ikke er blevet verificeret.
+addon-local-install-no-addon-name-error-file-access = Tilføjelsen kunne ikke installeres, fordi { -brand-short-name } ikke kan redigere den nødvendige fil.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } kunne ikke installeres, da den ikke er kompatibel med { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } overtræder BrowserWorkss politikker og kan ikke installeres i { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } er begrænset og kan ikke installeres i { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } kunne ikke installeres, fordi der er høj risiko for, at den forårsager stabilitets- eller sikkerhedsproblemer.
 addon-install-error-soft-blocked = { $addonName } overtræder BrowserWorkss politikker og kan ikke installeres i { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

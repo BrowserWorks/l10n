@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = التنقيح - زمن التشغيل
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name } هذا
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = { -brand-shorter-name } هذا
+about-debugging-sidebar-this-firefox-title =
+    .title = { -brand-shorter-name } هذا
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = الإعداد
+about-debugging-sidebar-setup-title =
+    .title = الإعداد
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -112,6 +120,8 @@ about-debugging-setup-usb-step-enable-dev-menu2 = فعّل قائمة ”مطو�
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = فعّل ”تصحيح أخطاء USB/‏USB Debugging“ في قائمة ”مطور البرامج/Developer“.
 # USB section step by step guide
+about-debugging-setup-usb-step-enable-file-transfer = فعِّل نقل الملفات وتأكد من أن جهازك ليس في وضع الشحن فقط.
+# USB section step by step guide
 about-debugging-setup-usb-step-enable-debug-firefox2 = فعّل التنقيح عبر USB في متصفح Waterfox على أجهزة أندرويد.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = أوصِل جهاز أندرويد بهذا الحاسوب.
@@ -179,7 +189,7 @@ about-debugging-runtime-processes =
     .name = العمليات
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button2 = أداء الملف الشخصي
+about-debugging-runtime-profile-button2 = تحليل الأداء
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to:
 # https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/index.html#service-workers-not-compatible
@@ -206,6 +216,12 @@ about-debugging-runtime-name = ‏{ $name } ‏({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = اقطع الاتصال
+# Text of the connection prompt button displayed in Runtime pages, when the preference
+# "devtools.debugger.prompt-connection" is false on the target runtime.
+about-debugging-connection-prompt-enable-button = فعّل موجه الاتصال
+# Text of the connection prompt button displayed in Runtime pages, when the preference
+# "devtools.debugger.prompt-connection" is true on the target runtime.
+about-debugging-connection-prompt-disable-button = عطّل موجه الاتصال
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = محلّل الأداء
 # Clicking on the header of a debug target category will expand or collapse the debug
@@ -264,7 +280,10 @@ about-debugging-zombie-tab-inspect-action-disabled =
     .title = لم يُحمّل اللسان تمامًا ولا يمكن فحصه
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-multiprocess-toolbox-name = شريط أدوات السيرورات المتعددة
+about-debugging-multiprocess-toolbox-name = صندوق أدوات السيرورات المتعددة
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = أغلِق الرسالة
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = أغلِق الرسالة

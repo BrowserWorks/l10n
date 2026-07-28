@@ -38,7 +38,7 @@ pippki-reset-password-confirmation-message = Vaše hlavní heslo bylo obnoveno.
 download-cert-window2 =
     .title = Stažení certifikátu
     .style = min-width: 46em
-download-cert-message = Byli jste požádáni o uznání nové Certifikační Autority (CA).
+download-cert-message = Byli jste požádáni o uznání nové certifikační autority (CA).
 download-cert-trust-ssl =
     .label = Uznat tuto CA pro identifikaci serverů.
 download-cert-trust-email =
@@ -47,9 +47,6 @@ download-cert-message-desc = Před uznáním této CA, a to pro jakýkoliv úče
 download-cert-view-cert =
     .label = Zobrazit
 download-cert-view-text = Zobrazit certifikát CA
-
-## Client Authorization Ask dialog
-
 
 ## Client Authentication Ask dialog
 
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Trvale
 client-auth-cert-remember-temporarily =
     .label = Pro tuto relaci
-client-auth-cert-remember-box =
-    .label = Zapamatovat si toto rozhodnutí
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Heslo zálohy certifikátu (znovu):
 set-password-reminder = Důležité: Pokud zapomenete svoje heslo zálohy certifikátu, nebude později možno tuto zálohu obnovit. Heslo si poznamenejte na BEZPEČNÉ místo.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Zabezpečené ověřování
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Přihlaste se prosím k bezpečnostnímu zařízení ({ $tokenName }). Způsob přihlášení závisí na konkrétním zařízení (například pomocí čtečky otisků prstů nebo zadáním kódu na klávesnici).
 
 ## Protected authentication alert
 

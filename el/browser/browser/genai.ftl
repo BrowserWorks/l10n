@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = Αφαίρεση του { $provider }
 genai-menu-remove-sidebar =
     .label = Αφαίρεση από την πλαϊνή γραμμή
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Ερώτηση στο { $provider }
 genai-menu-new-badge = Νέο
 genai-menu-summarize-page = Σύνοψη σελίδας
+genai-input-ask-smart-window =
+    .placeholder = Ερώτηση…
 genai-input-ask-generic =
     .placeholder = Ερώτηση στο chatbot ΤΝ…
 # $provider (string) - name of the provider
@@ -89,16 +94,29 @@ genai-shortcuts-selected-warning =
         }
 genai-shortcuts-hide =
     .label = Απόκρυψη συντόμευσης chatbot
-genai-menu-no-provider =
-    .label = Ερώτηση σε chatbot ΤΝ
 genai-menu-choose-chatbot =
     .label = Επιλέξτε ένα chatbot ΤΝ
+genai-menu-ask-generic-2 =
+    .label = Ερώτηση στο chatbot ΤΝ
+    .accesskey = ρ
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Ερώτηση στο { $provider }
+    .accesskey = ρ
+genai-menu-no-provider-2 =
+    .label = Ερώτηση σε chatbot ΤΝ
+    .accesskey = ρ
+genai-menu-ask-smart-window =
+    .label = Ερώτηση…
+    .accesskey = ρ
 
 ## Chatbot header
 
 genai-chatbot-title = Chatbot ΤΝ
 genai-header-provider-menu =
     .title = Επιλέξτε ένα chatbot
+genai-header-settings-button =
+    .title = Ρυθμίσεις συνομιλίας ΤΝ
 genai-header-options-button =
     .title = Άνοιγμα μενού
 genai-header-close-button =
@@ -116,6 +134,11 @@ genai-options-hide-shortcut =
     .label = Απόκρυψη συντόμευσης κατά την επιλογή κειμένου
 genai-options-about-chatbot =
     .label = Σχετικά με τα chatbot ΤΝ στο { -brand-short-name }
+
+## Chatbot message
+
+genai-page-warning =
+    .message = Επειδή η σελίδα είναι μεγάλη, αυτή είναι μια μερική σύνοψη.
 
 ## Chatbot footer
 
@@ -209,3 +232,48 @@ link-preview-reading-time =
         [one] Χρόνος ανάγνωσης: { $range } λεπτό
        *[other] Χρόνος ανάγνωσης: { $range } λεπτά
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = Το { -brand-short-name } δεν μπορεί να κάνει προεπισκόπηση αυτού του συνδέσμου
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Επίσκεψη στον σύνδεσμο
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = Το { -brand-short-name } δεν μπορεί να δημιουργήσει τα κύρια σημεία για αυτήν την ιστοσελίδα.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Κάτι πήγε στραβά.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Δοκιμή ξανά
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Ρυθμίσεις προεπισκόπησης συνδέσμων
+link-preview-settings-enable =
+    .label = Ενεργοποίηση προεπισκοπήσεων συνδέσμων
+    .description = Δείτε τον τίτλο, την περιγραφή της σελίδας και πολλά άλλα όταν χρησιμοποιείτε τη συντόμευση ή κάνετε δεξί κλικ σε έναν σύνδεσμο.
+link-preview-settings-key-points =
+    .label = Να επιτρέπεται στην τεχνητή νοημοσύνη η ανάγνωση της αρχής της σελίδας και η δημιουργία κύριων σημείων
+link-preview-settings-long-press =
+    .label = Συντόμευση: Κάντε κλικ παρατεταμένα στον σύνδεσμο για 1 δευτερόλεπτο (παρατεταμένο πάτημα)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Θέλετε να δείτε περισσότερα με την ΤΝ;
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = Το { -brand-short-name } χρησιμοποιεί τεχνητή νοημοσύνη για να διαβάσει την αρχή της σελίδας και να δημιουργήσει μερικά κύρια σημεία. Για την προστασία του απορρήτου σας, αυτό συμβαίνει στη συσκευή σας.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Νέο: Κάντε παρατεταμένο κλικ σε οποιονδήποτε σύνδεσμο για προεπισκόπηση
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Δείτε μια σύντομη περιγραφή, τον χρόνο ανάγνωσης και πολλά άλλα για να αποφασίσετε αν αξίζει να ανοίξετε τον σύνδεσμο. Διαθέσιμο και μέσω δεξιού κλικ.
+# Header for the key points section
+link-preview-key-points-header = Κύρια σημεία
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Τα κύρια σημεία δημιουργούνται με τεχνητή νοημοσύνη και ενδέχεται να περιέχουν λάθη.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Πρώτη ρύθμιση • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Θα δείτε τα κύρια σημεία πιο γρήγορα την επόμενη φορά.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Προβολή προεπισκόπησης
+# Onboarding card Close button
+link-preview-onboarding-close = Κλείσιμο
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Πρώτη ρύθμιση
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Αυτό μπορεί να διαρκέσει λίγη ώρα. Θα δείτε τα κύρια σημεία πιο γρήγορα την επόμενη φορά.

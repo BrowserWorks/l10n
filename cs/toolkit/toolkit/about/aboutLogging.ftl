@@ -15,10 +15,10 @@ about-logging-set-log-file = Nastavit soubor protokolu
 about-logging-set-log-modules = Nastavit moduly protokolu
 about-logging-start-logging = Spustit ukládání protokolu
 about-logging-stop-logging = Ukončit ukládání protokolu
-about-logging-copy-as-url = Zkopírovat aktuální nastavení jako URL adresu
-about-logging-url-copied = Nastavení protokolování zkopírována do schránky v podobě URL adresy přednastavení
+about-logging-copy-as-url = Zkopírovat aktuální nastavení jako adresu URL
+about-logging-url-copied = Nastavení protokolování zkopírována do schránky v podobě adresy URL přednastavení
 about-logging-buttons-disabled = Protokolování je nastaveno pomocí proměnných prostředí, dynamické nastavení není dostupné.
-about-logging-some-elements-disabled = Protokolování je nastaveno pomocí URL, některé možnosti nejsou dostupné
+about-logging-some-elements-disabled = Protokolování je nastaveno pomocí URL, některé možnosti nejsou dostupné.
 about-logging-info = Informace:
 about-logging-log-modules-selection = Výběr modulu protokolů
 about-logging-new-log-modules = Nové moduly protokolů:
@@ -29,6 +29,7 @@ about-logging-no-log-modules = Žádný
 about-logging-no-log-file = Žádný
 about-logging-logging-preset-selector-text = Přednastavené protokolování:
 about-logging-with-profiler-stacks-checkbox = Povolit výpis zásobníku pro zprávy protokolu
+about-logging-with-javascript-tracing-checkbox = Povolit sledování JavaScriptu
 about-logging-menu =
     .title = Rozšířené možnosti
 
@@ -52,6 +53,10 @@ about-logging-preset-webcodecs-label = WebCodecs
 about-logging-preset-webcodecs-description = Moduly protokolu pro diagnostiku problémů s dekodéry a enkodéry zvuku/videa a dekodéry obrazu WebCodecs
 about-logging-preset-ml-label = Strojové učení
 about-logging-preset-ml-description = Moduly protokolů pro diagnostiku problémů se strojovým učením
+about-logging-preset-web-compat-label = Webová kompatibilita
+about-logging-preset-web-compat-description = Moduly protokolů pro diagnostiku problémů s kompatibilitou webů
+about-logging-preset-navigation = Navigace
+about-logging-preset-navigation-description = Moduly protokolů pro diagnostiku problémů s navigací a historií relací
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Moduly protokolů pro diagnostiku problémů s WebGPU.
 about-logging-preset-gfx-label = Grafika
@@ -70,7 +75,7 @@ about-logging-invalid-output = Neplatná hodnota „{ $v }“ pro klíč „{ $k
 about-logging-unknown-logging-preset = Neznámá předvolba protokolování „{ $v }“
 about-logging-unknown-profiler-preset = Neznámá předvolba profilování „{ $v }“
 about-logging-unknown-option = Neznámá možnost „{ $k }“ stránky about:logging
-about-logging-configuration-url-ignored = Konfigurační URL adresa ignorována
+about-logging-configuration-url-ignored = Konfigurační adresa URL ignorována
 about-logging-file-and-profiler-override = Vynucení výstupu do souboru a nastavení profilování není zároveň možné
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
@@ -98,4 +103,27 @@ about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Sdílet a
 about-logging-upload-error = Při nahrávání profilu nastala chyba: { $errorText }
 # Variables:
 #   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Při ukládání nahraného profilu došlo k chybě: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
 about-logging-save-error = Při ukládání souboru nastala chyba: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Nahrané profily
+about-logging-no-uploaded-profiles = Zatím nebyl nahrán žádný profil.
+about-logging-delete-uploaded-profile = Smazat
+about-logging-view-uploaded-profile = Zobrazit profil
+about-logging-delete-profile-confirm-title = Smazat profil
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Opravdu chcete smazat profil „{ $profileName }“? Tuto akci nelze vzít zpět.
+about-logging-deleting-profile = Mazání…

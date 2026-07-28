@@ -2,11 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-pictureinpicture-player-title = ڤديو معترِض
-
-## Variables:
-##   $shortcut (String) - Keyboard shortcut to execute the command.
-
+pictureinpicture-player-title = فديو معترِض
 
 ## Note that this uses .tooltip rather than the standard '.title'
 ## or '.tooltiptext' -  but it has the same effect. Code in the
@@ -56,11 +52,11 @@ pictureinpicture-toggle-fullscreen-shortcut =
 ## DOM node that then shows the tooltip.
 
 pictureinpicture-seekbackward-btn =
-    .aria-label = انتقال للخلف
-    .tooltip = انتقال للخلف (→)
+    .aria-label = انتقل للخلف
+    .tooltip = انتقل للخلف (→)
 pictureinpicture-seekforward-btn =
-    .aria-label = انتقال للأمام
-    .tooltip = انتقال للأمام (←)
+    .aria-label = انتقل للأمام
+    .tooltip = انتقل للأمام (←)
 
 ##
 

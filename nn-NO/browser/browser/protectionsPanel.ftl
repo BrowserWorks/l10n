@@ -84,10 +84,15 @@ smartblock-placeholder-title = { $trackername } sporarar og innhald blokkert
 smartblock-placeholder-desc = { -brand-short-name }-innstillingane dine sperra dette innhaldet frå å spore deg på tvers av nettstadar eller bli brukt til annonser.
 #  $websitehost (String): host of website with blocked content.
 smartblock-placeholder-button-text = Tillat på { $websitehost }
+# Caption shown above the original text and links extracted from a blocked
+# third-party embed (e.g. a Twitter/X or Instagram post) that SmartBlock has
+# replaced with a placeholder. The caption sits above a bordered content box
+# containing the extracted text.
+smartblock-placeholder-content-header = Innhald frå blokkert innbygging
 
 ##
 
-protections-panel-settings-label = Innstillingar for vern
+protections-panel-settings-label = Verneinnstillingar
 protections-panel-protectionsdashboard-label = Tryggingsoversyn
 
 ## In the Site Not Working? view, we suggest turning off protections if
@@ -116,7 +121,7 @@ protections-panel-description-shim-allowed-learn-more = Les meir
 protections-panel-shim-allowed-indicator =
     .tooltiptext = Sporing delvis avblokkert
 protections-panel-content-blocking-manage-settings =
-    .label = Handsam instillingar for vern
+    .label = Handsam verneinnstillingar
     .accesskey = n
 protections-panel-content-blocking-breakage-report-view =
     .title = Rapporter problem med ein nettstad

@@ -43,6 +43,8 @@ address-capture-learn-more-button =
     .label = Докладніше
 address-capture-open-menu-button =
     .aria-label = Відкрити меню
+address-capture-edit-address-link = Редагувати адресу
+    .aria-label = Редагувати адресу
 address-capture-edit-address-button =
     .aria-label = Редагувати адресу
 # The dialog title for creating addresses in browser preferences.
@@ -145,13 +147,25 @@ autofill-message-tooltip = Переглянути повідомлення пр�
 autofill-add-card-title = Додати картку
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title2 = Редагувати картку
+autofill-card-number-2 =
+    .label = Номер картки
 autofill-card-number = Номер картки
 autofill-card-invalid-number = Введіть правильний номер картки
+autofill-card-name-on-card-2 =
+    .label = Ім'я на картці
+autofill-card-billing-address-2 =
+    .label = Платіжний адреса
 autofill-card-name-on-card = Ім'я на картці
 autofill-card-expires-month = Місяць завершення
 autofill-card-expires-year = Рік завершення
 autofill-card-billing-address = Платіжний адреса
 autofill-card-network = Тип картки
+# This string is never actually displayed, but is used to make it easier to
+# find the payment methods section of about:settings via the search input. It's
+# simply a comma separated list of additional search keywords for the payment
+# methods section. Localizers should choose terms that make sense for payment
+# methods in their region.
+autofill-card-search-term-credit-cards = банківські картки, кредит, картки, дебетові картки, дебет, гаманець, оформлення замовлення
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 

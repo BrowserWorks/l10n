@@ -1,0 +1,180 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### These strings are used in DevTools’ performance-new panel, about:profiling, and
+### the remote profiling panel. There are additional profiler strings in the appmenu.ftl
+### file that are used for the profiler popup.
+
+perftools-intro-title = Profiler Ayarları
+perftools-intro-description = Kayıtlar yeni bir sekmede profiler.firefox.com adresini açar. Tüm veriler cihazınızda yerel olarak depolanır. Paylaşmak istediklerinizi karşıya yükleyebilirsiniz.
+
+## All of the headings for the various sections.
+
+perftools-heading-settings = Tüm ayarlar
+perftools-heading-buffer = Tampon ayarları
+perftools-heading-features = Özellikler
+perftools-heading-features-default = Özellikler (Varsayılan olarak açık kalması önerilenler)
+perftools-heading-features-disabled = Devre dışı özellikler
+perftools-heading-features-experimental = Deneysel
+perftools-heading-threads = İş parçacıkları
+perftools-heading-threads-jvm = JVM iş parçacıkları
+perftools-heading-local-build = Yerel build
+
+##
+
+perftools-description-intro = Kayıtlar yeni bir sekmede <a>profiler.firefox.com</a> adresini açar. Tüm veriler cihazınızda yerel olarak depolanır. Paylaşmak istediklerinizi karşıya yükleyebilirsiniz.
+perftools-description-local-build = Eğer bu makinede kendi derlediğiniz bir yapının profilini çıkarıyorsanız, lütfen yapı objdir’inizi aşağıdaki listeye ekleyin. Böylece sembol bilgilerini aramak için kullanılabilir.
+perftools-pick-local-build-directory = Build klasörünü seçin
+
+## The controls for the interval at which the profiler samples the code.
+
+perftools-range-interval-label = Örnekleme aralığı:
+perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 2) } ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
+
+##
+
+# The size of the memory buffer used to store things in the profiler.
+perftools-range-entries-label = Tampon boyutu:
+perftools-custom-threads-label = Ada göre özel iş parçacığı ekle:
+perftools-devtools-interval-label = Aralık:
+perftools-devtools-threads-label = İş parçacıkları:
+perftools-devtools-settings-label = Ayarlar
+
+## Various statuses that affect the current state of profiling, not typically displayed.
+
+perftools-status-recording-stopped-by-another-tool = Kayıt başka bir araç tarafından durduruldu.
+perftools-status-restart-required = Bu özelliği etkinleştirmek için tarayıcı yeniden başlatılmalıdır.
+
+## These are shown briefly when the user is waiting for the profiler to respond.
+
+perftools-request-to-stop-profiler = Kaydı durdur
+perftools-request-to-get-profile-and-stop-profiler = Profil yakalanıyor
+
+##
+
+perftools-button-start-recording = Kaydı başlat
+perftools-button-capture-recording = Kaydı yakala
+perftools-button-cancel-recording = Kaydı iptal et
+perftools-button-save-settings = Ayarları kaydet ve geri dön
+perftools-button-restart = Yeniden başlat
+perftools-button-add-directory = Klasör ekle
+perftools-button-remove-directory = Seçilenleri sil
+perftools-button-edit-settings = Ayarları düzenle…
+
+## More actions menu
+
+perftools-menu-more-actions-button =
+    .title = Diğer eylemler
+perftools-menu-more-actions-restart-with-profiling = Başlangıç profili oluşturmayı etkinleştirerek { -brand-shorter-name } tarayıcısını yeniden başlat
+perftools-menu-more-actions-copy-for-startup = Başlangıç profili oluşturma için ortam değişkenlerini kopyala
+perftools-menu-more-actions-copy-for-perf-tests = Performans testleri için parametreleri kopyala
+
+## These messages are descriptions of the threads that can be enabled for the profiler.
+
+perftools-thread-gecko-main =
+    .title = Hem üst işlem hem de içerik işlemleri için ana işlemler
+perftools-thread-compositor =
+    .title = Sayfadaki farklı paint edilmiş elemanları bir araya getirir
+perftools-thread-dom-worker =
+    .title = Bu, hem web worker’ları hem de service worker’ları işler
+perftools-thread-renderer =
+    .title = WebRender etkinleştirildiğinde OpenGL çağrılarını yürüten iş parçacığı
+perftools-thread-render-backend =
+    .title = WebRender RenderBackend iş parçacığı
+perftools-thread-timer =
+    .title = İş parçacığı işleme zamanlayıcıları (setTimeout, setInterval, nsITimer)
+perftools-thread-style-thread =
+    .title = Stil hesaplaması birden çok iş parçacığına bölünür
+pref-thread-stream-trans =
+    .title = Ağ akışı aktarımı
+perftools-thread-socket-thread =
+    .title = Ağ kodunun engelleyici soket çağrılarını çalıştırdığı iş parçacığı
+perftools-thread-img-decoder =
+    .title = Görüntü çözme iş parçacıkları
+perftools-thread-dns-resolver =
+    .title = DNS çözümleme bu iş parçacığında gerçekleşir
+perftools-thread-task-controller =
+    .title = TaskController iş parçacığı havuzu iş parçacıkları
+perftools-thread-jvm-gecko =
+    .title = Ana Gecko JVM iş parçacığı
+perftools-thread-jvm-nimbus =
+    .title = Nimbus deney SDK’inin ana iş parçacıkları
+perftools-thread-jvm-default-dispatcher =
+    .title = Kotlin eşyordam kitaplığı için varsayılan işlemci zamanlayıcısı
+perftools-thread-jvm-glean =
+    .title = Glean telemetri SDK’inin ana iş parçacıkları
+perftools-thread-jvm-arch-disk-io =
+    .title = Kotlin eşyordam kitaplığı için G/Ç işlemci zamanlayıcısı
+perftools-thread-jvm-pool =
+    .title = Adsız bir iş parçacığı havuzunda oluşturulan iş parçacıkları
+
+##
+
+perftools-record-all-registered-threads = Yukarıdaki seçimleri atla ve tüm kayıtlı iş parçacıklarını kaydet
+perftools-tools-threads-input-label =
+    .title = Bu iş parçacığı adları, profiler’da profili çıkarılacak iş parçacıklarının virgülle ayrılmış listesidir. İş parçacığı adının dahil edilmesi için kısmi eşleşme olması yeterlidir. Adlar boşluk karakterine duyarlıdır.
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
+
+perftools-onboarding-message = <b>Yeni</b>: { -profiler-brand-name } artık geliştirici araçlarına entegre edildi. Bu güçlü yeni araç hakkında <a>daha fazla bilgi edinin</a>.
+perftools-onboarding-close-button =
+    .aria-label = Tanıtım mesajını kapat
+
+## Profiler presets
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+perftools-presets-web-developer-label = Web geliştirici
+perftools-presets-web-developer-description = Çoğu web uygulamasında hata ayıklama için önerilen ayarlar, düşük ek yük.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = { -brand-shorter-name } tarayıcısını profilleme için önerilen ayar.
+perftools-presets-graphics-label = Grafik
+perftools-presets-graphics-description = { -brand-shorter-name } tarayıcısında grafik hatalarını araştırma ayarı.
+perftools-presets-media-label = Ortam
+perftools-presets-media-description2 = { -brand-shorter-name } tarayıcısında ses ve video hatalarını araştırma ayarı.
+perftools-presets-ml-label = Makine öğrenimi
+perftools-presets-ml-description2 = { -brand-shorter-name } tarayıcısında makine öğrenimi hatalarını araştırma ayarı.
+perftools-presets-networking-label = Ağ
+perftools-presets-networking-description = { -brand-shorter-name } tarayıcısında ağ hatalarını araştırma ayarı.
+perftools-presets-networking-with-logs-label = Ağ (loglarla birlikte)
+perftools-presets-networking-with-logs-description = { -brand-shorter-name } tarayıcısında ağ loglarını da dahil ederek ağ hatalarını araştırma ayarı. Bu loglar hassas bilgiler içerebilir (örn. ziyaret ettiğiniz adresler).
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Güç
+perftools-presets-power-description = { -brand-shorter-name } tarayıcısında güç tüketimi hatalarını araştırma ayarı, düşük ek yük.
+perftools-presets-debug-label = Hata ayıklama
+perftools-presets-debug-description = { -brand-shorter-name } tarayıcısında hata ayıklama ayarı. Yüksek ek yük nedeniyle performans çalışması için uygun değildir, tarayıcı davranışını anlamaya odaklanmak için kullanın.
+perftools-presets-web-compat-label = Web uyumluluğu
+perftools-presets-web-compat-description = Performansı izlemek için değil de web sitelerindeki web uyumluluğu sorunlarıyla ilgili hata ayıklamak için önerilen ayarlar.
+perftools-presets-custom-label = Özel

@@ -3,12 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 content-blocking-trackers-view-empty = Không phát hiện trên trang web này
-content-blocking-cookies-blocking-trackers-label = Cookie theo dõi trên nhiều trang web
+content-blocking-cookies-blocking-trackers-label = Cookie theo dõi liên trang web
 content-blocking-cookies-blocking-third-party-label = Cookie của bên thứ ba
 content-blocking-cookies-blocking-unvisited-label = Cookie trang web chưa truy cập
 content-blocking-cookies-blocking-all-label = Tất cả các cookie
 content-blocking-cookies-view-first-party-label = Từ trang web này
-content-blocking-cookies-view-trackers-label = Cookie theo dõi trên nhiều trang web
+content-blocking-cookies-view-trackers-label = Cookie theo dõi liên trang web
 content-blocking-cookies-view-third-party-label = Cookie của bên thứ ba
 # This label is shown next to a cookie origin in the cookies subview.
 # It forms the end of the (imaginary) sentence "www.example.com [was] Allowed"
@@ -22,7 +22,7 @@ content-blocking-cookies-view-blocked-label =
 #   $domain (String): the domain of the site.
 content-blocking-cookies-view-remove-button =
     .tooltiptext = Xóa ngoại lệ cookie cho { $domain }
-tracking-protection-icon-active = Chặn trình theo dõi phương tiện truyền thông xã hội, cookie theo dõi trên nhiều trang web và dấu vết.
+tracking-protection-icon-active = Chặn trình theo dõi phương tiện truyền thông xã hội, cookie theo dõi liên trang web và dấu vết.
 tracking-protection-icon-active-container =
     .aria-label = { tracking-protection-icon-active }
 tracking-protection-icon-disabled = Trình chống theo dõi nâng cao đã bị TẮT cho trang này.
@@ -43,9 +43,9 @@ protections-header = Trạng thái bảo vệ cho { $host }
 protections-blocking-fingerprinters =
     .title = Đã chặn dấu vết
 protections-blocking-cryptominers =
-    .title = Đã chặn tiền điện tử
+    .title = Đã chặn trình đào tiền điện tử
 protections-blocking-cookies-trackers =
-    .title = Đã chặn cookie theo dõi trên nhiều trang web
+    .title = Đã chặn cookie theo dõi liên trang web
 protections-blocking-cookies-third-party =
     .title = Đã chặn cookie của bên thứ ba
 protections-blocking-cookies-all =
@@ -59,13 +59,13 @@ protections-blocking-social-media-trackers =
 protections-not-blocking-fingerprinters =
     .title = Không chặn dấu vết
 protections-not-blocking-cryptominers =
-    .title = Không chặn tiền điện tử
+    .title = Không chặn trình đào tiền điện tử
 protections-not-blocking-cookies-third-party =
     .title = Không chặn cookie của bên thứ ba
 protections-not-blocking-cookies-all =
     .title = Không chặn cookie
 protections-not-blocking-cross-site-tracking-cookies =
-    .title = Không chặn cookie theo dõi trên nhiều trang web
+    .title = Không chặn cookie theo dõi liên trang web
 protections-not-blocking-tracking-content =
     .title = Không chặn trình theo dõi nội dung
 protections-not-blocking-social-media-trackers =

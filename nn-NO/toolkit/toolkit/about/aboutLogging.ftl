@@ -15,6 +15,8 @@ about-logging-set-log-file = Vel loggfil
 about-logging-set-log-modules = Vel loggmodular
 about-logging-start-logging = Start loggføring
 about-logging-stop-logging = Stopp loggføring
+about-logging-copy-as-url = Kopier gjeldande innstillingar som URL
+about-logging-url-copied = Loggingsinnstillingar kopierte til utklippstavla som ein førehandsinnstilt urL
 about-logging-buttons-disabled = Logging konfigurert via miljøvariablar, dynamisk konfigurasjon er ikkje tilgjengeleg.
 about-logging-some-elements-disabled = Logging konfigurert via URL, nokre konfigurasjonsalternativ er ikkje tilgjengelege
 about-logging-info = Info:
@@ -27,6 +29,7 @@ about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Førehandsval for logging:
 about-logging-with-profiler-stacks-checkbox = Aktiver stack-sporing for loggmeldingar
+about-logging-with-javascript-tracing-checkbox = Aktiver JavaScript-sporing
 about-logging-menu =
     .title = Avanserte innstillingar
 
@@ -47,7 +50,13 @@ about-logging-preset-media-playback-description = Loggmodular for å diagnostise
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Loggmodular for å diagnostisere WebRTC-oppkall
 about-logging-preset-webcodecs-label = WebCodecs
+about-logging-preset-webcodecs-description = Loggmodular for å diagnostisere problem med WebCodecs lyd-/videodekodarar og -kodarar, og bildedekodarar
 about-logging-preset-ml-label = Maskinlæring
+about-logging-preset-ml-description = Profildataa er registrerte. Vil du lagre eller laste dei opp?
+about-logging-preset-web-compat-label = Webbkompatibilitet
+about-logging-preset-web-compat-description = Loggmodular for å diagnostisere problem med webbkompatibilitet
+about-logging-preset-navigation = Navigasjon
+about-logging-preset-navigation-description = Loggmodular for å diagnostisere problem med navigasjon og økthistorikk
 about-logging-preset-webgpu-label = WebGPU
 about-logging-preset-webgpu-description = Loggmodular for å diagnostisere WebGPU-problem
 about-logging-preset-gfx-label = Grafikk
@@ -68,13 +77,53 @@ about-logging-unknown-profiler-preset = Ukjent førehandsval for profilering «{
 about-logging-unknown-option = Ukjent alternativ for about:logging «{ $k }»
 about-logging-configuration-url-ignored = Konfigurasjons-URL ignorert
 about-logging-file-and-profiler-override = Kan ikkje tvinge utdata for fil og overstyre innstillingar for profilering samtidig
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-unknown-error = Det oppstod ein feil: { $errorText }
 about-logging-configured-via-url = Alternativ sett opp via URL
 
 ## The upload interface is shown only with the preference toolkit.aboutLogging.uploadProfileToCloud
 ## set to true. It is false by default, except on Android.
 
+about-logging-upload-question = Profildataa er registrerte. Vil du lagre eller laste dei opp?
 about-logging-save-button = Lagre
 about-logging-upload-button = Last opp
 # Variables:
 #   $path (string) - The path where the profile can be found.
 about-logging-saved = Lagra til { $path }
+# Variables:
+#   $percent (number) - The upload completion progress, to be displayed as a percentage. This is a value between 0 and 1.
+about-logging-uploading-progress = Lastar opp profildata: { NUMBER($percent, maximumSignificantDigits: 2, style: "percent") }
+# Variables:
+#   $url (string) - The URL where the profile can be found
+about-logging-uploaded = Lasta opp til <a data-l10n-name="uploaded-message-url">{ $url }</a>
+about-logging-share-uploaded-url = <img data-l10n-name="share-image"/> Del URL
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-upload-error = Det oppstod ein feil under opplasting av profilen: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-profile-storage-error = Det oppstod ein feil under lagring av den opplasta profilen: { $errorText }
+# Variables:
+#   $errorText (string) - The received error message, inserted as is.
+about-logging-save-error = Det oppstod ein feil under lagring av fila: { $errorText }
+
+## Uploaded Profiles section
+
+# This string is used as the default name for performance profiles when they are
+# uploaded from about:logging and saved to the local database. The generated
+# name will appear in the "Uploaded Profiles" section list, allowing users to
+# identify when each profile was captured.
+# Variables:
+#   $date (date) - The date and time when the profile was uploaded
+about-logging-uploaded-profile-name = Profil { DATETIME($date, dateStyle: "short", timeStyle: "medium") }
+about-logging-uploaded-profiles-title = Opplasta profilar
+about-logging-no-uploaded-profiles = Ingen profilar er lasta opp enno.
+about-logging-delete-uploaded-profile = Slett
+about-logging-view-uploaded-profile = Vis profil
+about-logging-delete-profile-confirm-title = Slett profilen
+# Confirmation message shown when deleting an uploaded profile.
+# Variables:
+#   $profileName (string) - The name of the profile being deleted.
+about-logging-delete-profile-confirm = Er du sikker på at du vil slette profilen «{ $profileName }»? Dette kan ikkje angrast.
+about-logging-deleting-profile = Slettar…

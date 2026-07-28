@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = 이 사이트는 MIDI (Musical Instrument Digital Interface) 기기에 대한 접근을 요청하고 있습니다. 부가 기능을 설치하여 기기에 대한 접근을 활성화할 수 있습니다.
 site-permission-install-first-prompt-midi-message = 이 액세스는 안전하지 않을 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
+site-permission-install-first-prompt-serial-header = 이 사이트는 직렬 기기에 대한 접근을 요청하고 있습니다. 부가 기능을 설치하여 기기에 대한 접근을 활성화할 수 있습니다.
+site-permission-install-first-prompt-serial-message = 이 접근은 안전하지 않을 수 있습니다. 이 사이트를 신뢰하는 경우에만 계속하세요.
 
 ##
 
@@ -113,15 +115,18 @@ addon-install-error-corrupt-file = 이 사이트에서 다운로드한 부가 �
 addon-install-error-file-access = { -brand-short-name }가 필요한 파일을 고칠 수 없어 { $addonName }를 설치할 수 없습니다.
 addon-install-error-not-signed = { -brand-short-name }가 이 사이트에서 확인되지 않은 부가 기능을 설치하지 못하게 막았습니다.
 addon-install-error-invalid-domain = { $addonName } 부가기능은 이 위치에서 설치할 수 없습니다.
+addon-install-error-no-addon-name-file-access = 이 부가 기능은 { -brand-short-name }가 필요한 파일을 고칠 수 없어 설치할 수 없습니다.
 addon-local-install-error-network-failure = 이 부가 기능은 파일 시스템에서 잘못되어 설치할 수 없습니다.
 addon-local-install-error-incorrect-hash = 이 부가 기능은 { -brand-short-name }가 찾고 있던 것과 다므르로 설치할 수 없습니다.
 addon-local-install-error-corrupt-file = 이 부가 기능은 손상된 것 같으므로 설치할 수 없습니다.
 addon-local-install-error-file-access = { -brand-short-name }가 필요한 파일을 고칠 수 없어 { $addonName }를 설치할 수 없습니다.
 addon-local-install-error-not-signed = 이 부가 기능은 확인되지 않았으므로 설치할 수 없습니다.
+addon-local-install-no-addon-name-error-file-access = 이 부가 기능은 { -brand-short-name }가 필요한 파일을 고칠 수 없어 설치할 수 없습니다.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName }는 { -brand-short-name } { $appVersion }에서 돌아가지 않으므로 설치할 수 없습니다.
 addon-install-error-hard-blocked = { $addonName } 부가 기능은 BrowserWorks 정책을 위반하므로 { -brand-short-name }에 설치할 수 없습니다.
+addon-install-error-soft-blocked2 = { $addonName } 부가 기능은 사용이 제한되어 { -brand-short-name }에 설치할 수 없습니다.
 addon-install-error-blocklisted = { $addonName }는 불안정하게 만들고 보안 문제를 일으킬 것으로 보여 설치할 수 없습니다.
 addon-install-error-soft-blocked = { $addonName } 부가 기능은 BrowserWorks 정책을 위반하므로 { -brand-short-name }에 설치할 수 없습니다.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = Elem hozzáadása
+storage-delete-all-button =
+    .title = Összes törlése
 # Refresh button title
 storage-refresh-button =
     .title = Elemek frissítése
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Lejárat / Maximális élettartam
 storage-table-headers-cookies-size = Méret
 storage-table-headers-cookies-last-accessed = Utolsó hozzáférés
 storage-table-headers-cookies-creation-time = Létrehozva
+storage-table-headers-cookies-update-time = Frissítve
 storage-table-headers-cache-status = Állapot
 storage-table-headers-extension-storage-area = Tárterület
 

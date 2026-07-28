@@ -12,6 +12,13 @@ containers-window-update-settings2 =
     .style = min-width: 45em
 containers-window-close =
     .key = w
+containers-name-label2 =
+    .label = Όνομα
+    .placeholder = Προσθήκη ονόματος
+containers-icon-label2 =
+    .label = Εικονίδιο
+containers-color-label2 =
+    .label = Χρώμα
 # This is a term to store style to be applied
 # on the three labels in the containers add/edit dialog:
 #   - name
@@ -82,3 +89,19 @@ containers-icon-tree =
     .label = Δέντρο
 containers-icon-chill =
     .label = Ξεκούραση
+containers-window-new3 =
+    .title = Προσθήκη νέας θεματικής ενότητας
+    .style = min-width: 35em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings3 =
+    .title = Ρυθμίσεις θεματικής ενότητας «{ $name }»
+    .style = min-width: 35em
+
+## Container creation panel, anchored to the URL bar.
+
+containers-panel-title = Προσθήκη νέας θεματικής ενότητας
+containers-panel-create-button =
+    .label = Τέλος
+containers-panel-cancel-button =
+    .label = Ακύρωση

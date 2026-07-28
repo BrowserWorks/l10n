@@ -203,3 +203,60 @@ bar-tooltip-cryptominer =
             [one] { $count } criptominerador ({ $percentage }%)
            *[other] { $count } criptomineradores ({ $percentage }%)
         }
+# Privacy Metrics Card
+privacy-metrics-title = Proteções de privacidade
+# Variables:
+#   $count (Number) - Total number of trackers blocked this week
+privacy-metrics-blocked-this-week =
+    { $count ->
+        [one] { $count } bloqueado esta semana
+       *[other] { $count } bloqueados esta semana
+    }
+# Variables:
+#   $count (Number) - Number of trackers blocked
+privacy-metrics-trackers =
+    { $count ->
+        [one] { $count } rastreador
+       *[other] { $count } rastreadores
+    }
+# Variables:
+#   $count (Number) - Number of fingerprinters blocked
+privacy-metrics-fingerprinters =
+    { $count ->
+        [one] { $count } fingerprinter
+       *[other] { $count } fingerprinters
+    }
+# Variables:
+#   $count (Number) - Number of tracking cookies blocked
+privacy-metrics-cookies =
+    { $count ->
+        [one] { $count } cookie de rastreamento
+       *[other] { $count } cookies de rastreamento
+    }
+# Variables:
+#   $count (Number) - Number of social trackers blocked
+privacy-metrics-social =
+    { $count ->
+        [one] { $count } rastreador de mídias sociais
+       *[other] { $count } rastreadores de mídias sociais
+    }
+privacy-metrics-empty = Nenhum rastreador bloqueado esta semana. O { -brand-short-name } te protege das seguintes ameaças enquanto você navega.
+privacy-metrics-loading = Carregando estatísticas de proteção…
+privacy-metrics-error = Não foi possível carregar estatísticas de proteção.
+privacy-metrics-private-window = O { -brand-short-name } continua a bloquear rastreadores em janelas privativas, mas não guarda registro do que foi bloqueado.
+
+## VPN promo card and banner
+
+protections-vpn-title = Proteja sua privacidade além do navegador
+protections-vpn-header-content = Proteja todo seu dispositivo com o { -mozilla-vpn-brand-name }. Um único toque para ativar, criptografa todo o tráfego de rede e oculta sua localização.
+protections-get-vpn-link = Obtenha o { -mozilla-vpn-brand-name }
+protections-vpn-title-subscribed = VPN: Assinatura ativa
+# Variables
+#   $count (number): Number of devices
+protections-vpn-header-content-subscribed =
+    { $count ->
+       *[other] O { -mozilla-vpn-brand-name } criptografa todo seu tráfego de rede e oculta sua localização, em até { $count } dispositivos. Aproveite sua assinatura ao máximo, instale o aplicativo da <a data-l10n-name="playstore-link">Google Play Store</a> ou <a data-l10n-name="appstore-link">Apple App Store </a>.
+    }
+protections-vpn-banner-header = Proteção que vai além do navegador
+protections-vpn-banner-content = Experimente o { -mozilla-vpn-brand-name } sem riscos e veja por que o TechRadar diz: “sua velocidade, simplicidade e seu baixo preço mensal fazem valer a pena dar uma olhada”.
+protections-vpn-banner-link = Obtenha o { -mozilla-vpn-brand-name }

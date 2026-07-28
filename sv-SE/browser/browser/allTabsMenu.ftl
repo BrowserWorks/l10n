@@ -9,11 +9,13 @@ all-tabs-menu-new-user-context =
     .label = Ny innehållsflik
 all-tabs-menu-hidden-tabs =
     .label = Dolda flikar
+all-tabs-menu-close-duplicate-tabs =
+    .label = Stäng dubbletter av flikar
+all-tabs-menu-view-all-tabs =
+    .label = Visa alla flikar
 all-tabs-menu-manage-user-context =
     .label = Hantera behållare
     .accesskey = b
-all-tabs-menu-close-duplicate-tabs =
-    .label = Stäng dubbla flikar
 all-tabs-menu-close-all-duplicate-tabs =
     .label = Stäng alla dubbla flikar
 all-tabs-menu-synced-tabs =
@@ -28,3 +30,6 @@ all-tabs-menu-tab-groups-show-all =
 # This is header for the sub view listing _all_ open and saved tab groups.
 all-tabs-menu-tab-groups-sub-view =
     .title = Flikgrupper
+# "Search" is a verb, as in "Search through all tabs".
+all-tabs-menu-search-all-tabs =
+    .label = Sök i alla flikar

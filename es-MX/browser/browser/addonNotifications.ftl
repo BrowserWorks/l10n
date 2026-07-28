@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-xpinstall-prompt = { -brand-short-name } evitó que este sitio web te pidiera instalar software en tu equipo.
+xpinstall-prompt = { -brand-short-name }  evitó que este sitio web te pidiera instalar software en tu equipo.
 
 ## Variables:
 ##   $host (String): The hostname of the site the add-on is being installed from.
@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Este sitio solicita acceso a tus dispositivos MIDI (Interfaz Digital de Instrumentos Musicales). El acceso al dispositivo se puede activar instalando un complemento.
 site-permission-install-first-prompt-midi-message = No se garantiza que este acceso sea seguro. Continúa solo si confías en este sitio.
+site-permission-install-first-prompt-serial-header = Este sitio solicita acceso a tus dispositivos serie. Para permitirlo, es necesario instalar un complemento.
+site-permission-install-first-prompt-serial-message = No hay garantía de que este acceso sea seguro. Continúa solo si el sitio es de confianza.
 
 ##
 
@@ -81,6 +83,8 @@ addon-removal-title = ¿Eliminar { $name }?
 addon-removal-message = ¿Eliminar { $name } desde { -brand-shorter-name }?
 addon-removal-button = Eliminar
 addon-removal-abuse-report-checkbox = Informar de esta extensión a { -vendor-short-name }
+# "it" refers to the local AI model that is paired to the AI feature
+addon-mlmodel-removal-body = Si usas las funciones o extensiones que utilizan este modelo, se volverá a agregar.
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -123,15 +127,18 @@ addon-install-error-corrupt-file = El complemento descargado desde este sitio no
 addon-install-error-file-access = { $addonName } no pudo ser instalado porque { -brand-short-name } no puede modificar el archivo necesario.
 addon-install-error-not-signed = { -brand-short-name } evitó que este sitio instalara un complemento sin verificar.
 addon-install-error-invalid-domain = El complemento { $addonName } no puede ser instalado desde esta ubicación.
+addon-install-error-no-addon-name-file-access = Este complemento no puede instalarse porque { -brand-short-name } no puede modificar el archivo necesario.
 addon-local-install-error-network-failure = Este complemento no se pudo instalar debido a un error de sistema de archivos.
 addon-local-install-error-incorrect-hash = Este complemento no se pudo instalar porque no coincide el complemento { -brand-short-name } esperado.
 addon-local-install-error-corrupt-file = Este complemento no se pudo instalar debido a que parece estar dañado.
 addon-local-install-error-file-access = { $addonName } no pudo ser instalado porque { -brand-short-name } no puede modificar el archivo necesario.
 addon-local-install-error-not-signed = Este complemento no se pudo instalar debido a que no ha sido verificado.
+addon-local-install-no-addon-name-error-file-access = Este complemento no puede instalarse porque { -brand-short-name } no puede modificar el archivo necesario.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } no pudo ser instalado porque no es compatible con { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } infringe las políticas de BrowserWorks y no se puede instalar en { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } está restringido y no se puede instalar en { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } no pudo ser instalado porque tiene un alto riesgo de causar problemas de seguridad.
 addon-install-error-soft-blocked = { $addonName } infringe las políticas de BrowserWorks y no se puede instalar en { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

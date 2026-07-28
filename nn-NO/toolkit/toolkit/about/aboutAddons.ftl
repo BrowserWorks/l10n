@@ -58,7 +58,7 @@ detail-update-manual =
     .label = Av
     .tooltiptext = Ikkje installer oppdateringar automatisk
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Køyr i privat vindauge
+detail-private-browsing-label = Køyr i private vindauge
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Ikkje tillate i private vindauge
@@ -108,7 +108,7 @@ disabled-unsigned-heading =
     .value = Nokre tillegg er slått av
 disabled-unsigned-description = Desse utvidingane har ikkje blitt kontrollert for bruk i { -brand-short-name }. Du kan <label data-l10n-name="find-addons">finne erstatningar</label> eller spørje utviklaren om å få dei stadfesta.
 disabled-unsigned-learn-more = Les meir om tiltaka våre for å halde deg trygg på nettet.
-disabled-unsigned-devinfo = Utviklarar som er interesserte i å få utvidingane sine stadfesta kan halde fram ved å lese <label data-l10n-name="learn-more">manualen vår</label>.
+disabled-unsigned-devinfo = Utviklarar som er interesserte i å få tillegga sine stadfesta kan halde fram ved å lese <label data-l10n-name="learn-more">manualen vår</label>.
 plugin-deprecation-description = Saknar du noko? Nokre programtillegg er ikkje lenger støtta av { -brand-short-name }. <label data-l10n-name="learn-more">Les meir.</label>
 legacy-warning-show-legacy = Vis forelda utvidingar
 legacy-extensions =
@@ -120,6 +120,8 @@ private-browsing-description2 =
     Utvidinga vil ikkje fungere under privat nettlesing, og vil ikkje ha tilgang til aktivitetane dine på nettet.
     Vi har gjort denne endringa for å halde privat nettlesing privat.
     <label data-l10n-name="private-browsing-learn-more">Les om korleis du administrerer utvidingsinnstillingar.</label>
+aboutaddons-sidebar =
+    .heading = Tillegg
 addon-category-discover = Tilrådingar
 addon-category-discover-title =
     .title = Tilrådingar
@@ -159,7 +161,7 @@ extensions-warning-check-compatibility = Kompatiblitetskonroll er avslegen. Du h
 extensions-warning-safe-mode2 =
     .message = Alle tillegg er avslegne av trygg-modus.
 extensions-warning-check-compatibility2 =
-    .message = Kompatiblitetskonroll er avslegen. Du har kanskje ikkje-kompatible tillegg.
+    .message = Kompatiblitetskonroll for tillegg er slått av. Du har kanskje ikkje-kompatible tillegg.
 extensions-warning-check-compatibility-button = Slå på
     .title = Slå på kompatibilitetskontroll
 extensions-warning-update-security = Tryggingskontroll av tilleggsoppdateringar er slått av. Du er sårbar for skadelege oppdateringar.
@@ -170,6 +172,8 @@ extensions-warning-update-security-button = Slå på
 extensions-warning-imported-addons2 =
     .message = Fullfør installasjonen av utvidingar som vart importerte til { -brand-short-name }.
 extensions-warning-imported-addons-button = Installer utvidingar
+extensions-warning-safe-mode3 =
+    .message = Alle tillegg er deaktiverte av feilsøkingsmodus.
 
 ## Strings connected to add-on updates
 
@@ -281,7 +285,19 @@ discopane-notice-recommendations2 =
         Nokre av desse tilrådingane er målretta deg. Dei er baserte på andre
         utvidingar du har installert, profilinnstillingar og statistikk for bruk.
 discopane-notice-learn-more = Les meir
+# Notice for the colorway theme removal
+colorway-removal-notice-message =
+    .heading = Fargetemaet/-temaa dine vart fjerna.
+    .message =
+        { -brand-product-name } oppdaterte fargetema-kolleksjonen sin. Vi fjerna
+        den/dei gamle versjonen(e) frå lista over «Lagra tema». Få nye versjonar på 
+        nettstaden for tillegg.
 colorway-removal-notice-learn-more = Les meir
+colorway-removal-notice-button = Få oppdaterte fargetema
+# Notice to make user aware that themes are not applied in forced colors mode.
+# This notice is only visible on Windows.
+forced-colors-theme-notice =
+    .message = Kontrastinnstillingane i Windows overstyrer temaa i { -brand-short-name }. Slå av desse innstillingane for å bruke tema i { -brand-short-name }.
 privacy-policy = Personvernpraksis
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
@@ -302,6 +318,13 @@ find-more-themes = Finn fleire tema
 # used for screen readers.
 addon-options-button =
     .aria-label = Fleire innstillingar
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+# We hard code "Firefox" because we do not want to imply that a Firefox fork is
+# making this recommendation.
+discopane-intro3 =
+    Utvidingar og tema lèt deg tilpasse { -brand-product-name }. Dei kan auke personvernet, forbetre produktiviteten, forbetre media, endre korleis { -brand-product-name } ser ut og mykje meir. Desse små programvarene er ofte utvikla av ein tredjepart. Her er eit utval Firefox <a data-l10n-name="learn-more-trigger">tilrår</a> for
+    eksepsjonell sikkerheit, yting og funksjonalitet.
 
 ## Add-on actions
 
@@ -435,6 +458,20 @@ addon-badge-verified2 =
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line4 =
     .title = Offisiell utviding utvikla av BrowserWorks. Oppfyller sikkerheits- og ytingsstandardar.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are performing the
+# security or performance reviews. As such, we avoid personalising language
+# like the words "our" or "we".
+addon-badge-verified4 =
+    .title = Denne utvidinga er gjennomgått for å oppfylle standardar for sikkerheit og yting.
+# This string needs to work in the context of other forks that are not Firefox
+# or built by Mozilla. In particular, we do not want to imply that an
+# organisation other than Mozilla or the Firefox team are making the
+# recommendation. As such, we hard code "Firefox" and avoid personalising
+# language like the words "our" or "we".
+addon-badge-recommended4 =
+    .title = Waterfox tilrår berre utvidingar som oppfyller standardar for sikkerheit og yting.
 
 ##
 
@@ -442,11 +479,18 @@ available-updates-heading = Tilgjengelege oppdateringar
 recent-updates-heading = Nylege oppdateringar
 release-notes-loading = Lastar…
 release-notes-error = Beklagar, men ein feil oppstod under lasting av versjonsnotatet.
+addon-permissions-heading = Løyve
 addon-permissions-empty2 = Denne utvidinga krev ingen løyve.
+addon-permissions-required-label = Påkravd:
+addon-permissions-optional-label = Valfri:
 addon-permissions-empty = Denne utvidinga krev inkje løyve
 addon-permissions-required = Påkravde løyve for kjernefunksjonalitet:
 addon-permissions-optional = Valfrie løyve for ekstra funksjonalitet:
 addon-permissions-learnmore = Les meir om løyve
+# Shown above the permissions list when one or more permissions for this
+# extension are controlled by an enterprise policy and cannot be changed by
+# the user.
+addon-permissions-managed-by-policy = Nokre løyve blir administrerte av organisasjonen din.
 recommended-extensions-heading = Tilrådde utvidingar
 recommended-themes-heading = Tilrådde tema
 # Variables:
@@ -501,9 +545,15 @@ details-notification-hard-blocked-other =
     .message = Dette tillegget er blokkert for brot på BrowserWorkss retningslinjer, og har blitt deaktivert.
 details-notification-unsigned-link = Meir informasjon
 details-notification-blocked = { $name } er slått av grunna tryggings- eller stabilitetsomsyn.
-details-notification-blocked2 =
-    .message = { $name } er slått av grunna tryggings- eller stabilitetsomsyn.
 details-notification-blocked-link2 = Vis detaljar
+details-notification-soft-blocked-extension-disabled2 =
+    .message = Denne utvidinga er avgrensa og har vorte deaktivert. Du kan aktivere henne, men dette kan vere risikabelt.
+details-notification-soft-blocked-extension-enabled2 =
+    .message = Denne utvidinga er avgrensa. Bruk av henne kan vere risikabelt.
+details-notification-soft-blocked-other-disabled2 =
+    .message = Dette tillegget er avgrensa og har vorte deaktivert. Du kan aktivere det, men dette kan vere risikabelt.
+details-notification-soft-blocked-other-enabled2 =
+    .message = Dette tillegget er avgrensa. Bruk av den kan vere risikabelt.
 details-notification-soft-blocked-extension-disabled =
     .message = Denne utvideinga har blitt avgrensa for brot på BrowserWorkss retningslinjer og har blitt deaktivert. Du kan aktivere henne, men dette kan vere risikabelt.
 details-notification-soft-blocked-extension-enabled =
@@ -515,8 +565,6 @@ details-notification-soft-blocked-other-enabled =
 details-notification-softblocked-link2 = Vis detaljar
 details-notification-blocked-link = Meir informasjon
 details-notification-softblocked = { $name } har kjende tryggings- eller stabilitetsproblem.
-details-notification-softblocked2 =
-    .message = { $name } har kjende tryggings- eller stabilitetsproblem.
 details-notification-softblocked-link = Meir informasjon
 details-notification-gmp-pending = { $name } vert installert snart.
 details-notification-gmp-pending2 =
@@ -542,19 +590,25 @@ permissions-data-addon-button = Løyve og data
 # Variables:
 #   $extensionName (String) - Name of the extension
 mlmodel-extension-label = Blir brukt av utvidinga { $extensionName }
+addon-permissions-data-collection-heading = Datainnsamling
+addon-permissions-data-collection-empty = Utviklaren seier at denne utvidinga ikkje krev datainnsamling.
+addon-data-collection-provided = Informasjon levert av utvidingsutviklaren
+addon-data-collection-learnmore = Les meir om datainnsamling
 
 ## Mapping Engine IDs from AI models to how that feature represented by the engine Id is described in the used by section in local model management
 
 mlmodel-about-inference = { -brand-short-name } brukar dette på about:inference
 mlmodel-link-preview = { -brand-short-name } bruker denne modellen til å generere hovudpunkt når du førehandsviser lenkjar
 mlmodel-pdfjs = { -brand-short-name } brukar dette til å lage alt-tekst for bilde du legg til i PDF-ar
-mlmodel-smart-tab-topic-engine = { -brand-short-name } brukar dette til å foreslå namn for fanegruppene dine
-mlmodel-smart-tab-embedding-engine = { -brand-short-name } brukar dette til å foreslå faner for fanegruppene dine
+mlmodel-smart-tab-topic-engine = { -brand-short-name } brukar dette til å føreslå namn for fanegruppene dine
+mlmodel-smart-tab-embedding-engine = { -brand-short-name } brukar dette til å føreslå faner for fanegruppene dine
+mlmodel-formfill-engine = { -brand-short-name } brukar dette til å fylle ut adresseskjema
 # AI Model will be downloaded on the users device and used locally
-addon-category-mlmodel = AI på eininga
+addon-category-mlmodel = KI på eininga
 addon-category-mlmodel-title =
-    .title = AI på eininga
-mlmodel-heading = Handsam AI-modellar på eininga
+    .title = KI på eininga
+mlmodel-heading = Handsam KI-modellar på eininga
+mlmodel-description = Nokre funksjonar og utvidingar i { -brand-short-name } blir drivne av KI-modellar som fungerer lokalt på eininga di. Denne tilnærminga tek vare på personvernet ditt og aukar i mange tilfelle ytinga. <a data-l10n-name="learn-more">Les meir</a>
 # Label for button that when clicked removed local model
 mlmodel-remove-addon-button =
     .aria-label = Fjern
@@ -565,3 +619,5 @@ mlmodel-addon-detail-last-used-label = Sist brukt
 mlmodel-addon-detail-used-by-label = Brukt av
 # This is a section label to describe the link to the model card on the Hugging Face website
 mlmodel-addon-detail-model-card = Modellkort
+# This is a label for the Model Card link to Hugging face
+mlmodel-addon-detail-model-card-link-label = Vis på Hugging Face

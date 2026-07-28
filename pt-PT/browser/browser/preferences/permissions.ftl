@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Permitir
     .accesskey = P
+permissions-add =
+    .label = Adicionar
+    .accesskey = A
 permissions-button-off =
     .label = Desligar
     .accesskey = D
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Remover todos os sites
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Guardar alterações
+    .buttonaccesskeyaccept = G
 permission-dialog =
     .buttonlabelaccept = Guardar alterações
     .buttonaccesskeyaccept = G
@@ -93,6 +99,13 @@ permissions-exceptions-https-only-window2 =
 permissions-exceptions-https-only-desc = Pode desativar o modo apenas HTTPS para sites específicos. O { -brand-short-name } não tentará atualizar a ligação para HTTPS seguro  para estes sites. As exceções não se aplicam a janelas privadas.
 permissions-exceptions-https-only-desc2 = Pode desativar o Modo Apenas HTTPS para sites específicos. O { -brand-short-name } não tentará atualizar a ligação para HTTPS seguro nesses sites.
 
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Sites permitidos - Popus e redirecionamentos de terceiros
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Pode especificar quais os sites que têm permissão para abrir janelas de popup e serem redirecionados por frames de terceiros.
+
 ## Exceptions - Pop-ups
 
 permissions-exceptions-popup-window2 =
@@ -117,9 +130,9 @@ permissions-exceptions-saved-passwords-desc = O { -brand-short-name } não irá 
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-window2 =
-    .title = Sites permitidos - Instalação de Extras
+    .title = Sites permitidos - Instalação de complementos
     .style = { permissions-window2.style }
-permissions-exceptions-addons-desc = Pode especificar quais os sites que têm permissão para instalar extras. Digite o endereço exato do site que pretende permitir e depois clique em Permitir.
+permissions-exceptions-addons-desc = Pode especificar quais os sites que têm permissão para instalar complementos. Digite o endereço exato do site que pretende permitir e depois clique em Permitir.
 
 ## Site Permissions - Autoplay
 
@@ -167,6 +180,26 @@ permissions-site-camera-desc = Os sites seguintes solicitaram acesso à sua câm
 permissions-site-camera-disable-label =
     .label = Bloquear novos pedidos de acesso à sua câmara
 permissions-site-camera-disable-desc = Isto irá impedir quaisquer sites não listados acima de solicitar permissão para aceder à sua câmara. Bloquear o acesso à sua câmara pode quebrar algumas funcionalidades dos sites.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Definições - aplicações e serviços do dispositivo
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Estes sites solicitaram acesso às aplicações e serviços neste dispositivo. Pode optar por permitir ou bloquear sites que façam isto.
+permissions-site-localhost-disable-label =
+    .label = Bloquear novos pedidos de acesso a aplicações e serviços neste dispositivo
+permissions-site-localhost-disable-desc = Isto impedirá que qualquer site não listado acima peça acesso a aplicações e serviços neste dispositivo. Esta ação pode fazer com que algumas funcionalidades dos sites falhem.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Definições - dispositivos da rede local
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Estes sites solicitaram acesso a aplicações e serviços em dispositivos ligados à sua rede local ou Wi-Fi. Pode optar por permitir ou bloquear que os sites o façam.
+permissions-site-local-network-disable-label =
+    .label = Bloquear novos pedidos de acesso a aplicações e serviços em dispositivos ligados à sua rede local ou Wi-Fi.
+permissions-site-local-network-disable-desc = Isto irá impedir que qualquer site não listado acima possa solicitar acesso a aplicações e serviços nos dispositivos ligados ao seu Wi-Fi ou dispositivos de rede local. Esta ação pode fazer com que algumas funcionalidades dos sites falhem.
 
 ## Site Permissions - Microphone
 

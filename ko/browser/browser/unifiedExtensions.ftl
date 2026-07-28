@@ -11,6 +11,15 @@
 unified-extensions-header-title = 확장 기능
 unified-extensions-manage-extensions =
     .label = 확장 기능 관리
+unified-extensions-discover-extensions =
+    .label = 확장 기능 살펴보기
+unified-extensions-empty-reason-private-browsing-not-allowed = 확장 기능이 설치되어 있지만 사생활 보호 모드에서 활성화되지 않음
+unified-extensions-empty-reason-extension-not-enabled = 확장 기능이 설치되어 있지만 활성화되지 않음
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = 확장 기능으로 탐색 수준을 높여보세요
+unified-extensions-empty-content-explain-enable2 = 설정에서 활성화하려면 “{ unified-extensions-manage-extensions.label }”를 선택하세요.
+unified-extensions-empty-content-explain-manage2 = 설정에서 관리하려면 “{ unified-extensions-manage-extensions.label }”를 선택하세요.
+unified-extensions-empty-content-explain-extensions-onboarding = { -brand-short-name }의 모양과 성능을 변경하거나 개인정보 보호 및 안전성을 강화하여 개인화해 보세요.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = { $extensionName } 메뉴 열기
 unified-extensions-item-message-manage = 확장 기능 관리
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } 확장 기능은 제한되어 있습니다. 사용 시 위험 할 수 있습니다.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } 확장 기능은 BrowserWorks 정책을 위반합니다. 위험 할 수 있습니다.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = 더 알아보기
 unified-extensions-mb-about-addons-link = 확장 기능 설정으로 이동
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } 비활성화됨
+    .message =
+        이 확장 기능은 제한되어 있어 비활성화되었습니다.
+        설정에서 활성화할 수는 있지만 위험할 수 있습니다.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } 비활성화됨
     .message =
@@ -65,13 +84,25 @@ unified-extensions-mb-blocklist-error-single =
     .message = 이 확장 기능은 BrowserWorks의 정책을 위반하여 비활성화되었습니다.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+           *[other] { $extensionsCount }개 확장 기능이 비활성화됨
+        }
+    .message =
+        일부 확장 기능은 제한되어 있어 비활성화되었습니다.
+        설정에서 활성화할 수는 있지만 위험할 수 있습니다.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
-    .heading = { $extensionsCount } 확장 기능이 비활성화됨
+    .heading = { $extensionsCount }개 확장 기능이 비활성화됨
     .message =
         일부 확장 기능이 BrowserWorks 정책을 위반하여 비활성화되었습니다.
         설정에서 활성화할 수는 있지만 위험할 수 있습니다.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through hard-blocks.
 unified-extensions-mb-blocklist-error-multiple =
-    .heading = { $extensionsCount } 확장 기능이 비활성화됨
+    .heading = { $extensionsCount }개 확장 기능이 비활성화됨
     .message = 일부 확장 기능이 BrowserWorks 정책을 위반하여 비활성화되었습니다.
+unified-extensions-notice-safe-mode =
+    .message = 모든 확장 기능이 문제해결 모드에 의해 비활성화되었습니다.

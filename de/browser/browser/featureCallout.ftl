@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Perplexity fragen
 perplexity-callout-secondary-label-1 = Verwerfen
 perplexity-callout-secondary-label-2 = Verstanden
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Möchten Sie eine neue Suche mit Fokus auf Datenschutz ausprobieren?
+start-page-callout-subtitle = Probieren Sie Startpage aus. Es wurde entwickelt, um Ihre Suchanfragen von Anfang an privater zu halten.
+start-page-callout-primary-label = Startpage ausprobieren
+start-page-callout-secondary-label = Schließen
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,16 +120,79 @@ fxa-adoption-passwords-subtitle = Schützen Sie Ihre Passwörter, indem Sie dies
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Registrieren
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Behalten Sie Ihre Lieblings-Feeds in der Taskleiste
+taskbar-tabs-social-callout-subtitle = Starten Sie Ihre sozialen Websites wie eine App in einem optimierten Fenster, das von { -brand-short-name } geschützt wird.
+taskbar-tabs-chat-callout-title = Chatten Sie über die Taskleiste
+taskbar-tabs-chat-callout-subtitle = Starten Sie Ihre Chat-Websites wie eine App in einem optimierten Fenster, das von { -brand-short-name } geschützt wird.
+taskbar-tabs-email-callout-title = Halten Sie Ihre E-Mails in der Taskleiste bereit
+taskbar-tabs-email-callout-subtitle = Starten Sie Ihre Webmail-Seite wie eine App in einem optimierten Fenster, das von { -brand-short-name } geschützt wird.
+taskbar-tabs-media-callout-title = Streamen Sie aus der Taskleiste weiter
+taskbar-tabs-media-callout-subtitle = Starten Sie Ihre Streaming-Websites wie eine App in einem optimierten Fenster, das von { -brand-short-name } geschützt wird.
+taskbar-tabs-value-prop-callout-title = Diese Website zur Taskleiste hinzufügen
+taskbar-tabs-value-prop-callout-subtitle = Starten Sie es in einem eigenen Fenster und einer vereinfachten Benutzeroberfläche mit einem einzigen Klick.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Verlieren Sie beim Umstieg zu Windows 11 nicht alles, was Sie gespeichert haben.
+windows-10-eos-sync-urgency-subtitle-1 = Synchronisieren Sie jetzt, um Ihre Lesezeichen, Passwörter und Einstellungen von { -brand-short-name } zu sichern und einfach wiederherzustellen.
+windows-10-eos-sync-urgency-title-2 = Verabschieden Sie sich von Windows 10? Schützen Sie Ihre Daten beim Wechsel.
+windows-10-eos-sync-urgency-subtitle-2 = Auch wenn Sie { -brand-short-name } nicht täglich verwenden, synchronisieren Sie, um Lesezeichen und Passwörter sicher und zugänglich zu speichern.
+windows-10-eos-sync-new-device-title-1 = Gehen Sie nicht das Risiko ein, auf Ihrem nächsten Gerät von vorn beginnen zu müssen.
+windows-10-eos-sync-new-device-subtitle-1 = Synchronisieren Sie, um die Lesezeichen, Passwörter und bevorzugten Einstellungen von { -brand-short-name } beim Wechsel mitzunehmen.
+windows-10-eos-sync-new-device-title-2 = Umzug auf ein neues Gerät? Verlieren Sie nicht, was wichtig ist.
+windows-10-eos-sync-new-device-subtitle-2 = Egal, wie oft Sie { -brand-short-name } verwenden, die Synchronisierung schützt Ihre Lesezeichen, Passwörter und Einstellungen.
+windows-10-eos-sync-new-device-primary-label = Jetzt synchronisieren
+windows-10-eos-sync-general-title-1 = Schützen Sie den { -brand-short-name }, den Sie sich zu eigen gemacht haben.
+windows-10-eos-sync-general-subtitle-1 = Sichern und synchronisieren Sie Ihre Passwörter, Lesezeichen, Einstellungen und andere Daten, um zu erhalten, was Ihnen wichtig ist.
+windows-10-eos-sync-general-title-2 = Jetzt ist ein guter Zeitpunkt, um Ihre Passwörter und Lesezeichen zu sichern.
+windows-10-eos-sync-general-subtitle-2 = Synchronisieren Sie jetzt, um die Daten zu schützen, die Sie { -brand-short-name } anvertrauen — und sie überall und jederzeit wiederherzustellen.
+windows-10-eos-sync-tour-title-1 = Zu viele Tabs? Mit Tab-Gruppen können Sie aufräumen.
+windows-10-eos-sync-tour-subtitle-1 = Ziehen Sie einen Tab über den anderen, um eine Gruppe zu erstellen und Ordnung zu halten.
+windows-10-eos-sync-tour-title-2 = Bleiben Sie organisiert für Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synchronisieren Sie Lesezeichen, Passwörter und Einstellungen, um sie vor dem Wechseln zu sichern.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Weniger Empfehlungen anzeigen
+windows-10-eos-sync-dismiss-button-label = Schließen
+windows-10-eos-sync-callout-primary-advance-button-label = Weiter
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Neu: Anklicken und halten, um Links in der Vorschau anzuzeigen
+link-preview-onboarding-callout-description = Sehen Sie sich eine kurze Beschreibung, die Lesezeit und mehr an, um zu entscheiden, ob ein Link den Klick wert ist. Auch verfügbar mit Rechtsklick.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Schaffen Sie Ordnung mit Tab-Gruppen
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Gruppieren Sie Ihre Tabs nach Aufgabe oder Thema. Fügen Sie nach und nach weitere hinzu.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Eine Tab-Gruppe erstellen
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Tab-Titel in der Sidebar anzeigen
 sidebar-button-callout-subtitle = Verwenden Sie die Sidebar-Schaltfläche, um die Sidebar einzuklappen, sodass Sie Tab-Titel sehen können.
 sidebar-button-callout-vertical-tabs = Um Ihre Tabs anzuzeigen, klicken Sie auf die Sidebar-Schaltfläche in der Symbolleiste.
+sidebar-deprecation-callout-title = Aktualisierte Sidebar erscheint bald
+sidebar-deprecation-callout-subtitle = Wir stellen die Sidebar-Version, die Sie derzeit verwenden, ab. Probieren Sie die aktualisierte Sidebar aus. Sie ist schneller und Sie erhalten Zugriff auf mehr Werkzeuge.
+sidebar-deprecation-cta-button = Jetzt ausprobieren
 
 ## Sidebar Vertical Tabs Strings
 
 vertical-tabs-callout-1-title = Von zu vielen Tabs überfordert?
-vertical-tabs-callout-1-subtitle = Probieren Sie unser neues Layout für vertikale Tabs aus, um Ihre Tab-Liste schnell zu durchsuchen. Erste Tester berichten, dass dieses Layout ihnen hilft, sich organisierter zu fühlen. Jederzeit wechseln.
+vertical-tabs-callout-1-subtitle = Probieren Sie unser neues Layout für vertikale Tabs aus, um Ihre Tab-Liste schnell zu durchsuchen. Erste Tester berichten, dass dieses Layout ihnen hilft, sich besser zu organisieren. Sie können jederzeit zum alten Layout zurückkehren.
 vertical-tabs-callout-1-cta-button = Vertikale Tabs ausprobieren
 vertical-tabs-callout-2-cta-button = Jetzt ausprobieren
 vertical-tabs-callout-2-title = Haben Sie viele Tabs offen? Probieren Sie vertikale Tabs aus.
@@ -182,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Wie zufrieden bist du damit, Zugrif
 sidebar-genai-survey-productive-question =
     Inwieweit stimmen Sie dieser Aussage zu oder nicht:<br/>
     „Der KI-Chatbot in der Sidebar hilft mir, produktiver zu sein“?
+splitview-onboarding-callout-title-1 = Geteilte Ansicht: Eine bessere Möglichkeit für Multitasking
+splitview-onboarding-callout-subtitle-1 = Klicken Sie mit der rechten Maustaste auf diesen Tab und wählen Sie "Geteilte Ansicht hinzufügen", um zwei Tabs gleichzeitig zu sehen.
+splitview-onboarding-callout-cta-1 = Jetzt ausprobieren
+splitview-onboarding-callout-title-2 = Zwei Tabs gleichzeitig anzeigen mit "geteilte Ansicht"
+splitview-onboarding-callout-subtitle-2 = Keine zusätzlichen Fenster. Kein Wechseln der Tabs. Klicken Sie mit der rechten Maustaste auf diesen Tab und wählen Sie "Geteilte Ansicht hinzufügen".
+splitview-onboarding-callout-cta-2 = Probieren Sie die geteilte Ansicht aus
 unified-search-callout-title = Zwischen Suchmaschinen wechseln
 unified-search-callout-subtitle = Wählen Sie aus, was für Ihre spezifische Suche am besten funktioniert.
 unified-search-callout-primary-label = Weiter
@@ -195,6 +272,6 @@ actions-callout-title = Häufige Aufgaben erledigen oder auf grundlegende Einste
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Versuchen Sie, Aktionen einzugeben; z. B. "drucken", um die Seite zu drucken, oder "Chronik löschen", um die Chronik zu löschen.

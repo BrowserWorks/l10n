@@ -133,6 +133,10 @@ place-database-stats-efficiency-perc = Hatékonyság (%)
 place-database-stats-sequentiality-perc = Sorozatosság (%)
 place-database-integrity = Sértetlenség
 place-database-verify-integrity = Sértetlenség ellenőrzése
+place-database-last-idle-maintenance-data = Utolsó tétlen karbantartás dátuma
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = Vacuum parancs utolsó futtatási dátuma
+place-database-last-integrity-corruption-date = Legutóbbi integritássérülés dátuma
 a11y-title = Kisegítő lehetőségek
 a11y-activated = Aktiválva
 a11y-force-disabled = Kisegítő lehetőségek letiltása

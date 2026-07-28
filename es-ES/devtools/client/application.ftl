@@ -110,6 +110,17 @@ sidebar-item-manifest = Manifesto
 sidebar-item-service-workers = Service Workers
     .alt = Icono de Service Workers
     .title = Service Workers
+# Sidebar navigation item for Session History sidebar item section
+sidebar-item-session-history = Historial de sesión
+    .alt = Icono del historial de sesión
+    .title = Historial de sesión
+# Entry in the Session History diagram
+session-history-entry-info-button-title =
+    .title = Mostrar datos del historial de sesión
+# Header for the Session History page when session history diagrams are unavailable
+session-history-unavailable = Diagrama del historial de sesiones no disponible
+# Text displayed for when the target does not support showing session history diagrams
+session-history-target-unsupported = El destino no admite la visualización de diagramas del historial de sesiones.
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Icono de advertencia

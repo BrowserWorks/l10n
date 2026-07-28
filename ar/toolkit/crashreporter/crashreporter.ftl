@@ -9,8 +9,6 @@ crashreporter-plea = لتساعدنا في حل هذه المشكلة، يمكن
 crashreporter-information = يُشغيل هذا التطبيق بعد حدوث إنهيار للإبلاغ عن المشكلة إلى { -vendor-short-name }. لا ينبغي تشغيله مباشرةً.
 crashreporter-error = واجه { -brand-short-name } مشكلةً انهار. للأسف، لا يستطيع مُبلّغ ﻹنهيار إرسال تقرير عن هذا ﻹنهيار.
 crashreporter-error-details-header = التفاصيل:
-# $details (String) - the reason that a crash report cannot be submitted
-crashreporter-error-details = التفاصيل: { $details }
 crashreporter-no-run-message = يعمل هذا التطبيق بعد حدوث الانهيار لإبلاغ مُنتِج التطبيق.  لا يفترض تشغيله مباشرة.
 crashreporter-button-details = التفاصيل…
 crashreporter-loading-details = يحمّل…
@@ -20,8 +18,6 @@ crashreporter-report-info = يحتوي هذا البلاغ على معلومات
 crashreporter-checkbox-test-hardware = التحقق من وجود مشاكل في الأجهزة والتضبيط على جهازي.
 crashreporter-checkbox-send-report = أخبر { -vendor-short-name } عن هذا ﻹنهيار حتى يتمكنوا من إصلاحه.
 crashreporter-checkbox-include-url = اشمل عنوان الصفحة التي كنت أزورها.
-crashreporter-send-report = أخبر { -vendor-short-name } عن هذا ﻹنهيار حتى يتمكنوا من إصلاحه.
-crashreporter-include-url = اشمل عنوان الصفحة التي كنت أزورها.
 crashreporter-submit-status = سيُرسل بلاغ الانهيار قبل أن تخرج أو تعيد التشغيل.
 crashreporter-submit-waiting-hardware-tests = التحقق من وجود مشاكل في الأجهزة والتضبيط…
 crashreporter-submit-in-progress = يُرسِل بلاغك…
@@ -30,7 +26,7 @@ crashreporter-submit-failure = حدثت مشكلة أثناء إرسال الب�
 crashreporter-resubmit-status = يُعيد إرسال البلاغات التي فشل إرسالها في السابق…
 crashreporter-button-quit = اخرج من { -brand-short-name }
 crashreporter-button-restart = أعِد تشغيل { -brand-short-name }
-crashreporter-button-ok = حسنا
+crashreporter-button-ok = حسنًا
 crashreporter-button-close = أغلق
 # $id (String) - the crash id from the server, typically a UUID
 crashreporter-crash-identifier = معرّف الانهيار: { $id }
@@ -39,14 +35,13 @@ crashreporter-crash-details = يمكنك عرض تفاصيل هذا ﻹنهيا�
 
 # Error strings
 
-crashreporter-error-minidump-analyzer = فشل تشغيل minidump-analyzer
 # $path (String) - the file path
 crashreporter-error-opening-file = فشل فتح ملف ({ $path })
 # $path (String) - the file path
 crashreporter-error-loading-file = فشل تحميل ملف ({ $path })
 # $path (String) - the path
-crashreporter-error-creating-dir = فشل إنشاء الدليل ({ $path })
-crashreporter-error-no-home-dir = دليل المنزل مفقود
+crashreporter-error-creating-dir = فشل في إنشاء مجلد ({ $path })
+crashreporter-error-no-home-dir = مجلد المنزل مفقود
 # $from (String) - the source path
 # $to (String) - the destination path
 crashreporter-error-moving-path = فشل نقل { $from } إلى { $to }

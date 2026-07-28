@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = Preferences
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = Settings…
+menu-application-set-as-default =
+    .label = Set { -brand-shorter-name } as Default Browser
 menu-application-services =
     .label = Services
 menu-application-hide-this =
@@ -97,6 +90,12 @@ menu-file-email-link =
 menu-file-share-url =
     .label = Share
     .accesskey = h
+menu-file-share-qrcode =
+    .label = Generate QR Code…
+    .accesskey = Q
+menu-file-share-qrcode2 =
+    .label = Generate QR Code
+    .accesskey = Q
 menu-file-print-setup =
     .label = Page Setup…
     .accesskey = u
@@ -145,8 +144,6 @@ menu-view-history-button =
     .label = History
 menu-view-synced-tabs-sidebar =
     .label = Synced Tabs
-menu-view-megalist-sidebar =
-    .label = Passwords
 menu-view-full-zoom =
     .label = Zoom
     .accesskey = Z
@@ -259,13 +256,16 @@ menu-bookmarks-mobile =
 menu-profiles =
     .label = Profiles
 menu-profiles-manage-profiles =
-    .label = Manage profiles
+    .label = Manage Profiles
 menu-profiles-new-profile =
-    .label = New profile
+    .label = New Profile
 # Variables:
 #  $profileName (String): the name of the users profile
 menu-profiles-current =
     .label = { $profileName } (current)
+menu-profiles-menu =
+    .label = Profiles
+    .accesskey = P
 
 ## Tools Menu
 
@@ -305,6 +305,9 @@ menu-tools-page-source =
 menu-tools-page-info =
     .label = Page Info
     .accesskey = I
+menu-tools-edit-pdf =
+    .label = Edit PDF…
+    .accesskey = P
 menu-settings =
     .label = Settings
     .accesskey =

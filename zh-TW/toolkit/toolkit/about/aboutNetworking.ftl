@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH 網址
 about-networking-dns-trr-mode = DoH 模式
 about-networking-dns-suffix = DNS 後綴
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = 來源
+about-networking-alt-svc-alternate = 替代
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = 已驗證
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isolation Key
 about-networking-refresh = 更新
 about-networking-auto-refresh = 每三秒自動重新整理
 about-networking-hostname = 主機名稱
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS 查詢
 about-networking-dns-lookup-button = 解析
 about-networking-dns-domain = 網域：
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RRs
 about-networking-dns-https-rr-lookup-table-column = HTTP RRs
 about-networking-rcwn = RCWN 統計
 about-networking-rcwn-status = RCWN 狀態
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = 此頁面已移動至 <a data-l10n-name="
 
 about-networking-networkid-is-up = 網路已連線
 about-networking-networkid-status-known = 已知網路連線狀態
-
-##
-

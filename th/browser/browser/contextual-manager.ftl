@@ -18,28 +18,29 @@ contextual-manager-passwords-command-import-from-browser = นำเข้าจ
 contextual-manager-passwords-command-import = นำเข้าจากไฟล์…
 contextual-manager-passwords-command-export = ส่งออกรหัสผ่าน
 contextual-manager-passwords-command-remove-all = เอารหัสผ่านทั้งหมดออก
+contextual-manager-passwords-command-options = ตัวเลือก
 contextual-manager-passwords-command-settings = การตั้งค่า
 contextual-manager-passwords-command-help = ช่วยเหลือ
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
 # This message can be seen when attempting to export a password in about:logins on Windows.
-contextual-manager-passwords-export-os-auth-dialog-message-win = ถ้าต้องการส่งออกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+contextual-manager-passwords-export-os-auth-dialog-message-win = ถ้าต้องการส่งออกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # This message can be seen when attempting to export a password in about:logins
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. only provide the reason that account verification is needed. Do not put a complete sentence here.
 contextual-manager-passwords-export-os-auth-dialog-message-macosx = ส่งออกรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to reveal a password in contextual password manager on Windows
-contextual-manager-passwords-reveal-password-os-auth-dialog-message-win = ถ้าต้องการดูรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+contextual-manager-passwords-reveal-password-os-auth-dialog-message-win = ถ้าต้องการดูรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # The MacOS string is preceded by the operating system with "Firefox is trying to ".
 # Only provide the reason that account verification is needed. Do not put a complete sentence here.
 contextual-manager-passwords-reveal-password-os-auth-dialog-message-macosx = เผยรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to edit a login in contextual password manager on Windows.
-contextual-manager-passwords-edit-password-os-auth-dialog-message-win = ถ้าต้องการแก้ไขรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+contextual-manager-passwords-edit-password-os-auth-dialog-message-win = ถ้าต้องการแก้ไขรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # The MacOS string is preceded by the operating system with "Firefox is trying to ".
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 contextual-manager-passwords-edit-password-os-auth-dialog-message-macosx = แก้ไขรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to copy a password in contextual password manager on Windows.
-contextual-manager-passwords-copy-password-os-auth-dialog-message-win = ถ้าต้องการคัดลอกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่างๆ ของคุณ
+contextual-manager-passwords-copy-password-os-auth-dialog-message-win = ถ้าต้องการคัดลอกรหัสผ่านของคุณ ให้ป้อนข้อมูลรับรองสำหรับการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีของคุณ
 # The MacOS string is preceded by the operating system with "Firefox is trying to ".
 # Only provide the reason that account verification is needed. Do not put a complete sentence here.
 contextual-manager-passwords-copy-password-os-auth-dialog-message-macosx = คัดลอกรหัสผ่านที่บันทึกไว้
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = ใหม่: { $added }, อัปเดต: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = ใหม่: { $added }, อัปเดต: { $modified }, ซ้ำกัน: { $no_change }, ผิดพลาด: { $error }
 contextual-manager-passwords-import-detailed-report = ดูรายงานแบบละเอียด
 contextual-manager-passwords-import-success-button = เสร็จสิ้น
 contextual-manager-passwords-import-error-heading-and-message =
@@ -120,7 +127,7 @@ contextual-manager-passwords-remove-all-confirm-button =
 contextual-manager-passwords-remove-all-message =
     { $total ->
         [1] การกระทำนี้จะลบรหัสผ่านของคุณที่บันทึกลงใน { -brand-short-name } และการแจ้งเตือนการรั่วไหลทั้งหมด คุณจะไม่สามารถเรียกคืนการกระทำนี้ได้
-       *[other] การกระทำนี้จะลบรหัสผ่านต่างๆ ที่บันทึกลงใน { -brand-short-name } และการแจ้งเตือนการรั่วไหลทั้งหมด คุณจะไม่สามารถเรียกคืนการกระทำนี้ได้
+       *[other] การกระทำนี้จะลบรหัสผ่านที่บันทึกลงใน { -brand-short-name } และการแจ้งเตือนการรั่วไหลทั้งหมด คุณจะไม่สามารถเรียกคืนการกระทำนี้ได้
     }
 # Message for modal to confirm the removal of all saved passwords when user HAS SYNC
 #   $total (number) - Total number of passwords
@@ -151,6 +158,8 @@ contextual-manager-passwords-password-already-exists-error-button = ไปที
 contextual-manager-passwords-update-password-success-heading =
     .heading = บันทึกรหัสผ่านแล้ว
 contextual-manager-passwords-update-password-success-button = เสร็จสิ้น
+contextual-manager-passwords-update-username-success-heading-3 =
+    .heading = บันทึกชื่อผู้ใช้แล้ว
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
 contextual-manager-passwords-delete-password-success-heading =
@@ -196,17 +205,21 @@ contextual-manager-passwords-no-username-heading-and-message =
     .heading = เพิ่มชื่อผู้ใช้
     .message = เพิ่มมาหนึ่งชื่อเพื่อลงชื่อเข้าได้เร็วขึ้น
 contextual-manager-passwords-add-username-button = เพิ่มชื่อผู้ใช้
+contextual-manager-passwords-title = รหัสผ่าน
 
 ## Login Form
 
 contextual-manager-passwords-create-label =
     .label = เพิ่มรหัสผ่าน
+contextual-manager-passwords-update-label =
+    .label = อัปเดตรหัสผ่าน
 contextual-manager-passwords-edit-label =
     .label = แก้ไขรหัสผ่าน
 contextual-manager-passwords-remove-label =
     .title = ลบรหัสผ่าน
 contextual-manager-passwords-origin-tooltip = ป้อนที่อยู่จริงที่คุณใช้ลงชื่อเข้าไซต์นี้
 contextual-manager-passwords-username-tooltip = ป้อนชื่อผู้ใช้ ที่อยู่อีเมล หรือหมายเลขบัญชีที่คุณใช้ลงชื่อเข้า
+contextual-manager-passwords-password-tooltip-2 = ป้อนรหัสผ่านเพื่อลงชื่อเข้าบัญชีนี้
 contextual-manager-passwords-password-tooltip = ป้อนรหัสผ่านที่คุณใช้ลงชื่อเข้าบัญชีนี้
 
 ## Password Card
@@ -258,6 +271,22 @@ contextual-manager-view-alert-heading =
     .heading = ดูการแจ้งเตือน
 contextual-manager-view-alert-button =
     .tooltiptext = ตรวจสอบการแจ้งเตือน
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-heading-2 =
+    .heading =
+        { $count ->
+            [1] ดูการแจ้งเตือน
+           *[other] ดูการแจ้งเตือน
+        }
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-button-2 =
+    .tooltiptext =
+        { $count ->
+            [1] ตรวจสอบการแจ้งเตือน
+           *[other] ตรวจสอบการแจ้งเตือน
+        }
 contextual-manager-show-password-button =
     .aria-label = แสดงรหัสผ่าน
     .title = แสดงรหัสผ่าน
@@ -267,6 +296,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = ไม่พบรหัสผ่าน
+contextual-manager-passwords-no-passwords-found-message-2 = ลองใช้คำอื่นแล้วค้นหาอีกครั้ง
 contextual-manager-passwords-no-passwords-found-message = ไม่พบรหัสผ่าน โปรดค้นหาด้วยคำอื่นแล้วลองอีกครั้ง
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -281,6 +311,8 @@ contextual-manager-passwords-no-passwords-message = รหัสผ่านท�
 contextual-manager-passwords-no-passwords-get-started-message = เพิ่มรหัสผ่านเหล่านั้นที่นี่เพื่อเริ่มต้นใช้งาน
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = เพิ่มด้วยตนเอง
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = บันทึกรหัสผ่านของคุณไว้ในที่ปลอดภัย
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -296,3 +328,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] ใช่ ลบรหัสผ่าน
        *[other] ใช่ ลบรหัสผ่าน
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = ถ้าต้องการดูรหัสผ่านที่คุณบันทึกไว้ ให้ป้อนรหัสผ่านหลักของคุณ
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = ป้อนรหัสผ่านหลัก
+contextual-manager-primary-password-learn-more-link = เรียนรู้เพิ่มเติม

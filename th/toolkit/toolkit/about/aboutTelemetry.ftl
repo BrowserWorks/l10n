@@ -5,7 +5,7 @@
 about-telemetry-ping-data-source = แหล่งข้อมูล Ping:
 about-telemetry-show-current-data = ข้อมูลปัจจุบัน
 about-telemetry-show-archived-ping-data = ข้อมูล ping ที่เก็บถาวร
-about-telemetry-show-subsession-data = แสดงข้อมูลการส่ง
+about-telemetry-show-subsession-data = แสดงข้อมูลเซสชันย่อย
 about-telemetry-choose-ping = เลือก ping:
 about-telemetry-archive-ping-type = ชนิด Ping
 about-telemetry-archive-ping-header = Ping
@@ -25,7 +25,7 @@ about-telemetry-show-in-Firefox-json-viewer = เปิดในตัวดู 
 about-telemetry-home-section = หน้าแรก
 about-telemetry-general-data-section = ข้อมูลทั่วไป
 about-telemetry-environment-data-section = ข้อมูลสภาพแวดล้อม
-about-telemetry-session-info-section = ข้อมูลวาระ
+about-telemetry-session-info-section = ข้อมูลเซสชัน
 about-telemetry-scalar-section = สเกลาร์
 about-telemetry-keyed-scalar-section = สเกลาร์ที่สำคัญ
 about-telemetry-histograms-section = ฮิสโทแกรม
@@ -67,7 +67,7 @@ about-telemetry-histogram-stats =
     }
 # Variables:
 #   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = หน้านี้แสดงข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งที่เก็บรวบรวมไว้โดยตัววัดและส่งข้อมูลทางไกล ข้อมูลนี้จะถูกส่งไปยัง { $telemetryServerOwner } เพื่อช่วยปรับปรุง { -brand-full-name }
+about-telemetry-page-subtitle = หน้านี้แสดงข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งที่รวบรวมไว้โดยตัววัดและส่งข้อมูลทางไกล ข้อมูลนี้จะถูกส่งไปยัง { $telemetryServerOwner } เพื่อช่วยปรับปรุง { -brand-full-name }
 about-telemetry-settings-explanation = การวัดและส่งข้อมูลทางไกลกำลังรวบรวม { about-telemetry-data-type } และการอัปโหลด<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>
 # Variables:
 #   $name (string) - Ping name, e.g. “saved-session”

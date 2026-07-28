@@ -25,6 +25,10 @@ experimental-features-group-webpage-display =
     .label = Websiteweergave
 experimental-features-group-customize-browsing =
     .label = Pas uw browser aan
+experimental-features-group-productivity =
+    .label = Productiviteit
+experimental-features-group-newtab-widgets =
+    .label = Widgets op { -firefox-home-brand-name }
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = Wachtwoorden in de zijbalk
@@ -51,3 +55,51 @@ experimental-features-link-previews-description-no-ai =
 experimental-features-newtab-sections-follow-block =
     .label = Onderwerpsecties en volgen/blokkeren voor nieuwe tabbladverhalen
 experimental-features-newtab-sections-follow-block-description = Orden de verhalen op uw Nieuw-tabbladpagina in onderwerpsecties (Sport, Eten, Amusement en meer) voor een meer gestructureerde en eenvoudig te scannen ervaring. Gebruik onze nieuwe volg- en blokkeringsknoppen om aan te passen welke inhoud u ziet. <a data-l10n-name="connect">Feedback delen</a>
+# Firefox Web Apps
+experimental-features-fx-web-apps =
+    .label = Websites aan uw taakbalk toevoegen
+# “Add tab to taskbar” is found in the tooltip text of `-taskbar-tab-urlbar-button-open`.
+experimental-features-fx-web-apps-description = Open websites die u regelmatig bezoekt als een webapp vanuit uw taakbalk. Zoek naar het pictogram ‘Tabblad aan taakbalk toevoegen’ rechts in de adresbalk om die website in een gestroomlijnd venster te openen, met alle beschermingen van { -brand-product-name }. <a data-l10n-name="connect">Feedback delen</a>
+
+## New Tab Productivity Widgets
+
+# Lists Widget
+experimental-features-newtab-widget-lists =
+    .label = Lijsten op { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-new =
+    .label = Lijsten
+experimental-features-newtab-widget-lists-description = Houd uw to-dolijst in gedachten wanneer u een nieuw tabblad opent. Van paklijsten tot boodschappenlijstjes, maak uw plannen in { -brand-product-name }. <a data-l10n-name="connect">Feedback delen</a>
+# Timer Widget
+experimental-features-newtab-widget-timer =
+    .label = Timer op { -firefox-home-brand-name }
+experimental-features-newtab-widget-timer-new =
+    .label = Timer
+experimental-features-newtab-widget-timer-description = Stel een timer in om u gefocust te houden, een duwtje in de rug te geven om op het goede spoor te blijven of u eraan te herinneren dat u moet opladen. <a data-l10n-name="connect">Feedback delen</a>
+# Lists and Timer Widget (Combined)
+experimental-features-newtab-widget-lists-and-timer =
+    .label = Lijsten en timer op { -firefox-home-brand-name }
+experimental-features-newtab-widget-lists-and-timer-description = Houd uw to-dolijst in gedachten wanneer u een nieuw tabblad opent. Van paklijsten tot boodschappenlijstjes, maak uw plannen in { -brand-product-name }. Stel een timer in om u gefocust te houden, een duwtje in de rug te geven om op het goede spoor te blijven of u eraan te herinneren dat u moet opladen. <a data-l10n-name="connect">Feedback delen</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = Weersvoorspellingen
+experimental-features-newtab-widget-weather-description = Krijg een duidelijk beeld van het weer van vandaag met weersvoorspellingen per uur. <a data-l10n-name="connect">Feedback delen</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = Foto van de dag
+experimental-features-newtab-widget-picture-of-the-day-description = Voeg een klein dagelijks wonder aan uw dag toe. Maak in een handomdraai een nieuwe afbeelding, leer iets interessants en stel een nieuwe achtergrond in. <a data-l10n-name="connect">Feedback delen</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = Klokken
+experimental-features-newtab-widget-clocks-description = Voeg maximaal vier klokken met aangepaste bijnamen toe om de tijd bij te houden op plaatsen die belangrijk voor u zijn. <a data-l10n-name="connect">Feedback delen</a>
+# Semantic History Search
+experimental-features-semantic-history-search =
+    .label = Geschiedenis semantisch doorzoeken
+experimental-features-semantic-history-search-description = Een lokaal Machine Learning-model gebruiken om items uit de geschiedenis die gerelateerd zijn aan uw zoekopdrachten voor te stellen op basis van begrip van natuurlijke taal in de { -brand-product-name }-adresbalk. <a data-l10n-name="connect">Feedback delen</a>
+# Tab Notes
+experimental-features-tab-notes =
+    .label = Tabbladnotities
+experimental-features-tab-notes-description = Tabbladnotities zijn een experimentele functie waarmee u plakbriefjes aan uw browsertabbladen kunt toevoegen. Noteer context, herinneringen of volgende stappen, zodat u kunt terugkomen en zich kunt herinneren waarom u de pagina hebt geopend. We horen graag uw feedback terwijl we deze functie blijven verbeteren. <a data-l10n-name="connect">Feedback delen</a>
+# Streamlined Tab Context Menu
+experimental-features-tab-context-menu =
+    .label = Gestroomlijnd tabbladmenu
+experimental-features-tab-context-menu-description = Zie een eenvoudiger contextmenu wanneer u met de rechtermuisknop op een tabblad klikt. Het is ontworpen om veelgebruikte acties beter vindbaar te maken. <a data-l10n-name="connect">Feedback delen</a>

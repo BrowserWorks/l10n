@@ -54,6 +54,10 @@ neterror-dns-not-found-hint-header = <strong>Jika Anda memasukkan alamat yang be
 neterror-dns-not-found-hint-try-again = Coba lagi nanti
 neterror-dns-not-found-hint-check-network = Periksa sambungan jaringan Anda
 neterror-dns-not-found-hint-firewall = Periksa apakah { -brand-short-name } memiliki izin untuk mengakses web (Anda mungkin tersambung tetapi berada di balik firewall)
+neterror-dns-not-found-offline-hint-header = <strong>Apa yang dapat Anda lakukan?</strong>
+neterror-dns-not-found-offline-hint-different-device = Coba sambungkan di perangkat lain.
+neterror-dns-not-found-offline-hint-modem = Periksa modem atau router Anda.
+neterror-dns-not-found-offline-hint-reconnect = Putuskan dan sambungkan kembali ke Wi-Fi.
 
 ## TRR-only specific messages
 ## Variables:
@@ -77,7 +81,6 @@ neterror-dns-not-found-trr-unknown-problem = Kesalahan tak terduga.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } tidak dapat melindungi permintaan Anda untuk alamat situs ini melalui resolusi DNS yang terpercaya kami. Alasannya adalah sebagai berikut:
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } tidak dapat melindungi permintaan Anda untuk alamat situs ini melalui penyedia DNS aman kami. Alasannya sebagai berikut:
 neterror-dns-not-found-native-fallback-heuristic = DNS lewat HTTP telah dinonaktifkan pada jaringan Anda.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } tidak dapat terhubung ke { $trrDomain }.
 
@@ -164,3 +167,13 @@ certerror-coep-learn-more = Pelajari lebih lanjut tentang Cross Origin Embedder 
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = Kode kesalahan: { $responsestatus } { $responsestatustext }
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } tidak dapat membuat sambungan aman ke server di { $hostname }.
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Sepertinya situs ini menggunakan perangkat lunak lama dengan masalah keamanan yang diketahui.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Pastikan Anda menggunakan { -brand-short-name } versi terbaru. Buka Bantuan > Tentang { -brand-short-name } di menu. Jika Anda menggunakan { -brand-short-name } terbaru, kemungkinan besar masalahnya ada pada situs itu sendiri.
+fp-neterror-denied-port-access = Alamat ini menggunakan port jaringan yang umumnya digunakan untuk keperluan selain penjelajahan Web. { -brand-short-name } telah menganulir hal ini untuk keamanan Anda.

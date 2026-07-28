@@ -3,10 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 page-title = 疑難排解資訊
-page-subtitle =
-    此頁面包含技術資訊，可能可以幫您解決一些問題。
-    如果您正在尋找關於 { -brand-short-name } 的一些常見問題，
-    請看看我們的<a data-l10n-name="support-link">支援網站</a>。
+page-subtitle = 此頁面包含可能可以幫您解決問題的技術資訊。如果您正在尋找關於 { -brand-short-name } 的常見問題，請看看我們的<a data-l10n-name="support-link">技術支援站</a>。
 crashes-title = 錯誤資訊報表
 crashes-id = 報表編號
 crashes-send-date = 送出日期
@@ -136,6 +133,10 @@ place-database-stats-efficiency-perc = 效率 (%)
 place-database-stats-sequentiality-perc = 順序性 (%)
 place-database-integrity = 資料完整
 place-database-verify-integrity = 確認資料完整
+place-database-last-idle-maintenance-data = 最後一次系統閒置自動維護日期
+# Vacuum refers to a type of database maintenance process
+place-database-last-vacuum-date = 最後一次資料庫 Vacuum 整理日期
+place-database-last-integrity-corruption-date = 最後一次完整性檢查日期
 a11y-title = 輔助功能
 a11y-activated = 已啟用
 a11y-force-disabled = 已強迫停用輔助功能

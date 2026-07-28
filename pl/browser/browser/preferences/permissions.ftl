@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Zezwalaj
     .accesskey = Z
+permissions-add =
+    .label = Dodaj
+    .accesskey = o
 permissions-button-off =
     .label = Wyłącz
     .accesskey = W
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Usuń wszystkie witryny
     .accesskey = w
+permissions-save-changes-2 =
+    .buttonlabelaccept = Zachowaj
+    .buttonaccesskeyaccept = h
 permission-dialog =
     .buttonlabelaccept = Zachowaj
     .buttonaccesskeyaccept = h
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Określ zasady akceptacji ciasteczek i danych witryn. Podaj dokładny adres witryny, której uprawnienia chcesz zmodyfikować, a następnie naciśnij Zezwalaj, Blokuj lub Zezwalaj na czas sesji.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = Czyszczenie historii podczas wyłączania — wyjątki
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = Określ, których witryn dane nie będą usuwane, kiedy { -brand-short-name } czyści historię podczas zamykania. Podaj dokładny adres witryny, która będzie zarządzana przez użytkownika, i naciśnij Zezwalaj.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -93,12 +106,19 @@ permissions-exceptions-https-only-window2 =
 permissions-exceptions-https-only-desc = Określ, na których witrynach nie korzystać z trybu używania wyłącznie protokołu HTTPS. { -brand-short-name } nie będzie próbował przełączyć na zabezpieczone połączenie HTTPS na tych witrynach. Wyjątki nie są uwzględniane w oknach prywatnych.
 permissions-exceptions-https-only-desc2 = Określ, na których witrynach nie korzystać z trybu używania wyłącznie protokołu HTTPS. { -brand-short-name } nie będzie próbował przełączyć na zabezpieczone połączenie HTTPS na tych witrynach.
 
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Wyskakujące okna i zewnętrzne przekierowania — uprawnione witryny
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Określ, które witryny mogą otwierać wyskakujące okna i być przekierowywane przez zewnętrzne ramki.
+
 ## Exceptions - Pop-ups
 
 permissions-exceptions-popup-window2 =
     .title = Wyskakujące okna — uprawnione witryny
     .style = { permissions-window2.style }
-permissions-exceptions-popup-desc = Określ, które witryny mogą otwierać wyskakujące okna. Podaj dokładny adres witryny, której chcesz na to zezwolić, i naciśnij Zezwalaj.
+permissions-exceptions-popup-desc = Określ, które witryny mogą otwierać wyskakujące okna. Podaj dokładny adres witryny, której chcesz na to zezwolić, i naciśnij Zezwalaj.
 
 ## Exceptions - Saved Logins
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Następujące strony prosiły o dostęp do kamer
 permissions-site-camera-disable-label =
     .label = Blokowanie nowych próśb o dostęp do kamery
 permissions-site-camera-disable-desc = Uniemożliwi to witrynom spoza listy powyżej proszenie o dostęp do kamery. Zablokowanie dostępu do kamery może spowodować, że niektóre funkcje witryny nie będą działać.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Aplikacje i usługi na urządzeniu — uprawnione witryny
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Te strony prosiły o dostęp do aplikacji i usług na tym urządzeniu. Możesz na to zezwolić lub zablokować witrynom ten dostęp.
+permissions-site-localhost-disable-label =
+    .label = Blokowanie nowych próśb o dostęp do aplikacji i usług na tym urządzeniu
+permissions-site-localhost-disable-desc = Spowoduje to, że witryny spoza powyższej listy nie będą mogły prosić o dostęp do aplikacji i usług na tym urządzeniu. Może to sprawić, że niektóre funkcje witryny nie będą poprawnie działać.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Urządzenia w sieci lokalnej — uprawnione witryny
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Te strony prosiły o dostęp do aplikacji i usług na urządzeniach podłączonych do sieci lokalnej lub Wi-Fi. Możesz na to zezwolić lub zablokować witrynom ten dostęp.
+permissions-site-local-network-disable-label =
+    .label = Blokowanie nowych próśb o dostęp do aplikacji i usług na urządzeniach podłączonych do sieci lokalnej lub Wi-Fi
+permissions-site-local-network-disable-desc = Spowoduje to, że witryny spoza powyższej listy nie będą mogły prosić o dostęp do aplikacji i usług na urządzeniach podłączonych do sieci lokalnej lub Wi-Fi. Może to sprawić, że niektóre funkcje witryny nie będą poprawnie działać.
 
 ## Site Permissions - Microphone
 

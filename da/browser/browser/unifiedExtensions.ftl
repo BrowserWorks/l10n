@@ -11,6 +11,15 @@
 unified-extensions-header-title = Udvidelser
 unified-extensions-manage-extensions =
     .label = Håndter udvidelser
+unified-extensions-discover-extensions =
+    .label = Opdag udvidelser
+unified-extensions-empty-reason-private-browsing-not-allowed = Du har installeret udvidelser, der ikke er aktiverede i private vinduer
+unified-extensions-empty-reason-extension-not-enabled = Du har udvidelser installeret, men ikke aktiveret
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = Få en bedre oplevelse med udvidelser
+unified-extensions-empty-content-explain-enable2 = Vælg "{ unified-extensions-manage-extensions.label }" for at aktivere dem i indstillingerne.
+unified-extensions-empty-content-explain-manage2 = Vælg "{ unified-extensions-manage-extensions.label }" for at håndtere dem i indstillingerne.
+unified-extensions-empty-content-explain-extensions-onboarding = Tilpas, hvordan { -brand-short-name } ser ud og fungerer - og forbedrer din sikkerhed og beskyttelsen af dit privatliv.
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = Åbn menuen for { $extensionName }
 unified-extensions-item-message-manage = Håndter udvidelse
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } er begrænset. Det kan være risikabelt at anvende den.
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } overtræder BrowserWorkss politikker. Det kan være risikabelt at bruge den.
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = Læs mere
 unified-extensions-mb-about-addons-link = Gå til indstillingerne for udvidelser
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } er deaktiveret
+    .message =
+        Denne udvidelse er begrænset og er blevet deaktiveret
+        Du kan aktivere den i indstillinger, men det kan være risikabelt.
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } deaktiveret
     .message =
@@ -63,6 +82,17 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } deaktiveret
     .message = Denne udvidelse overtræder BrowserWorkss politikker og er blevet deaktiveret.
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+            [one] { $extensionsCount } deaktiveret udvidelse
+           *[other] { $extensionsCount } deaktiverede udvidelser
+        }
+    .message =
+        Nogle af dine udvidelser er begrænsede og er blevet deaktiveret.
+        Du kan aktivere dem i indstillingerne, men det kan være risikabelt.
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -83,3 +113,5 @@ unified-extensions-mb-blocklist-error-multiple =
            *[other] { $extensionsCount } udvidelser deaktiveret
         }
     .message = Nogen af dine udvidelser er blevet deaktiveret, fordi de overtræder BrowserWorkss politikker.
+unified-extensions-notice-safe-mode =
+    .message = Alle udvidelser er blevet deaktiveret i fejlsøgnings-tilstand.

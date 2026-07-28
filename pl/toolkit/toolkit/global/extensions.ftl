@@ -68,6 +68,7 @@ webext-perms-optional-perms-deny =
     .label = Zabroń
     .accesskey = a
 webext-perms-host-description-all-urls = Dostęp do danych użytkownika na wszystkich stronach
+webext-perms-host-description-file-urls = Dostęp do lokalnych plików na tym komputerze
 # Variables:
 #   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
 webext-perms-host-description-wildcard = Dostęp do danych na stronach w domenie { $domain }
@@ -141,6 +142,7 @@ webext-perms-optional-text-with-data-collection-only = Rozszerzenie „{ $exten
 
 webext-site-perms-header-with-gated-perms-midi = Ten dodatek daje witrynie { $hostname } dostęp do urządzeń MIDI użytkownika.
 webext-site-perms-header-with-gated-perms-midi-sysex = Ten dodatek daje witrynie { $hostname } dostęp do urządzeń MIDI użytkownika (z obsługą SysEx).
+webext-site-perms-header-with-gated-perms-serial = Ten dodatek daje witrynie { $hostname } dostęp do urządzeń użytkownika podłączonych przez port szeregowy.
 
 ##
 
@@ -151,6 +153,12 @@ webext-site-perms-description-gated-perms-midi =
     Są to zwykle urządzenia podłączane do komputera, takie jak syntezatory dźwięku, ale mogą być również wbudowane w komputer.
     
     Witryny zazwyczaj nie mają dostępu do urządzeń MIDI. Niewłaściwe użycie może spowodować uszkodzenia lub zagrozić bezpieczeństwu.
+webext-site-perms-description-gated-perms-webserial =
+    Są to urządzenia podłączane przez porty USB, szeregowe lub Bluetooth, takie jak mikrokontrolery, drukarki 3D i nie tylko.
+    
+    Będzie można wybrać, do których urządzeń witryna ma dostęp.
+    
+    Witryny zazwyczaj nie mają dostępu do urządzeń podłączonych przez port szeregowy. Niewłaściwe użycie może spowodować uszkodzenia lub zagrozić bezpieczeństwu.
 
 ## Headers used in the webextension permissions dialog.
 ## Note: This string will be used as raw markup. Avoid characters like <, >, &
@@ -165,6 +173,7 @@ webext-site-perms-header-unsigned-with-perms = Czy dodać „{ $extension }”? 
 
 webext-site-perms-midi = Dostęp do urządzeń MIDI
 webext-site-perms-midi-sysex = Dostęp do urządzeń MIDI z obsługą SysEx
+webext-site-perms-serial = Dostęp do urządzeń podłączonych przez port szeregowy
 
 ## Colorway theme migration
 

@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = ตั้งนโยบายที่ WebExtensions สามารถเข้าถึงผ่าน chrome.storage.managed
+policy-AIControls = กำหนดค่าการควบคุม AI
 policy-AllowedDomainsForApps = กำหนดโดเมนที่อนุญาตให้เข้าถึง Google Workspace
 policy-AllowFileSelectionDialogs = อนุญาตกล่องโต้ตอบการเลือกไฟล์
 policy-AppAutoUpdate = เปิดใช้งานหรือปิดใช้งานการอัปเดตแอปพลิเคชันอัตโนมัติ
@@ -21,6 +22,7 @@ policy-AutofillAddressEnabled = เปิดใช้งานการป้อ
 policy-AutofillCreditCardEnabled = เปิดใช้งานการป้อนอัตโนมัติสำหรับวิธีการชำระเงิน
 policy-AutoLaunchProtocolsFromOrigins = กำหนดรายชื่อโพรโทคอลภายนอกที่ใช้ได้จากต้นทางที่อยู่ในรายชื่อโดยไม่ต้องถามผู้ใช้
 policy-BackgroundAppUpdate2 = เปิดใช้งานหรือปิดใช้งานตัวอัปเดตเบื้องหลัง
+policy-Backup = ปิดใช้งานการสำรองหรือเรียกคืนข้อมูลโปรไฟล์
 policy-BlockAboutAddons = ปิดกั้นการเข้าถึงตัวจัดการส่วนเสริม (about:addons)
 policy-BlockAboutConfig = ปิดกั้นการเข้าถึงหน้า about:config
 policy-BlockAboutProfiles = ปิดกั้นการเข้าถึงหน้า about:profiles
@@ -31,16 +33,17 @@ policy-CertificatesDescription = เพิ่มใบรับรองหร�
 policy-ContentAnalysis = เปิดหรือปิดใช้งานการเชื่อมต่อกับตัวแทนการป้องกันข้อมูลสูญหาย
 policy-Cookies = อนุญาตหรือปฏิเสธเว็บไซต์เพื่อตั้งคุกกี้
 # Containers in this context is referring to container tabs in Firefox.
-policy-Containers = ตั้งค่านโยบายที่เกี่ยวข้องกับการแยกข้อมูล
+policy-Containers = ตั้งค่านโยบายที่เกี่ยวข้องกับที่แยกข้อมูล
 policy-DisableAccounts = ปิดใช้บริการที่ใช้บัญชี รวมถึงการซิงค์
 policy-DisabledCiphers = ปิดการใช้งานรหัสลับ
 policy-DefaultDownloadDirectory = ตั้งไดเรกทอรีการดาวน์โหลดเริ่มต้น
+policy-DefaultSerialGuardSetting = ควบคุมการใช้ API ซีเรียล
 policy-DisableAppUpdate = ป้องกันไม่ให้เบราว์เซอร์อัปเดต
 policy-DisableBuiltinPDFViewer = ปิดใช้งาน PDF.js ตัวดู PDF ในตัวใน { -brand-short-name }
 policy-DisableDefaultBrowserAgent = ป้องกันไม่ให้ตัวแทนเบราว์เซอร์เริ่มต้นทำงานใด ๆ ใช้ได้กับ Windows เท่านั้น เนื่องจากแพลตฟอร์มอื่น ๆ ไม่มีตัวแทน
 policy-DisableDeveloperTools = ปิดกั้นการเข้าถึงเครื่องมือนักพัฒนา
 policy-DisableEncryptedClientHello = ปิดใช้คุณลักษณะ Encrypted Client Hello (ECH) ของ TLS
-policy-DisableFeedbackCommands = ปิดใช้งานคำสั่งสำหรับส่งความคิดเห็นจากเมนู วิธีใช้ (ส่งความคิดเห็นและรายงานไซต์หลอกลวง)
+policy-DisableFeedbackCommands = ปิดใช้งานคำสั่งสำหรับส่งข้อเสนอแนะจากเมนู วิธีใช้ (ส่งข้อเสนอแนะและรายงานไซต์หลอกลวง)
 policy-DisableFirefoxAccounts = ปิดใช้งานบริการที่ใช้ { -fxaccount-brand-name } รวมถึง Sync ด้วย
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
 policy-DisableFirefoxAccounts1 = ปิดใช้บริการที่ใช้บัญชี รวมถึงการซิงค์
@@ -55,6 +58,7 @@ policy-DisablePocket2 = ปิดใช้งานคุณลักษณะ�
 policy-DisablePrivateBrowsing = ปิดใช้งานการเรียกดูแบบส่วนตัว
 policy-DisableProfileImport = ปิดใช้งานคำสั่งเมนูในการนำเข้าข้อมูลจากเบราว์เซอร์อื่น
 policy-DisableProfileRefresh = ปิดใช้งานปุ่ม ล้าง { -brand-short-name } ใหม่ ในหน้า about:support
+policy-DisableRemoteImprovements = ป้องกันไม่ให้ { -brand-short-name } ปรับใช้การเปลี่ยนแปลงด้านประสิทธิภาพ ความเสถียร และคุณลักษณะระหว่างการอัปเดต
 policy-DisableSafeMode = ปิดใช้งานคุณลักษณะสำหรับเริ่มการทำงานใหม่ในโหมดปลอดภัย หมายเหตุ: สามารถปิดใช้งานแป้น Shift สำหรับเข้าสู่โหมดปลอดภัยได้บน Windows เท่านั้นโดยใช้นโยบายกลุ่ม
 policy-DisableSecurityBypass = ป้องกันไม่ให้ผู้ใช้เลี่ยงคำเตือนเกี่ยวกับความปลอดภัยบางรายการ
 policy-DisableSetAsDesktopBackground = ปิดใช้งานคำสั่งเมนู ตั้งเป็นพื้นหลังเดสก์ท็อป
@@ -79,6 +83,7 @@ policy-ExtensionSettings = จัดการการติดตั้งส�
 policy-ExtensionUpdate = เปิดใช้งานหรือปิดใช้งานการอัปเดตส่วนขยายอัตโนมัติ
 policy-FirefoxHome2 = กำหนดค่า { -firefox-home-brand-name }
 policy-FirefoxSuggest = กำหนดค่า { -firefox-suggest-brand-name }
+policy-GenerativeAI = กำหนดค่าคุณลักษณะ AI เชิงสร้างสรรค์
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = บังคับใช้การนำทางไซต์อินทราเน็ตโดยตรงแทนการค้นหาเมื่อพิมพ์รายการคำเดียวในแถบที่อยู่
 policy-Handlers = กำหนดค่าตัวจัดการแอปพลิเคชันเริ่มต้น
 policy-HardwareAcceleration = ถ้าค่าเป็นเท็จ ให้ปิดการเร่งด้วยฮาร์ดแวร์
@@ -87,6 +92,7 @@ policy-Homepage = ตั้งค่าหน้าแรกโดยอาจ�
 policy-HttpAllowlist = ที่มาที่จะไม่ได้รับการอัปเกรดเป็น HTTPS
 policy-HttpsOnlyMode = อนุญาตให้เปิดใช้โหมด HTTPS-Only ได้
 policy-InstallAddonsPermission = อนุญาตให้บางเว็บไซต์ติดตั้งส่วนเสริม
+policy-IPProtectionAvailable = ป้องกันไม่ให้ VPN ในตัวพร้อมใช้งานสำหรับผู้ใช้
 policy-LegacyProfiles = ปิดใช้งานคุณลักษณะการบังคับใช้โปรไฟล์แยกต่างหากสำหรับการติดตั้งในแต่ละครั้ง
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -97,6 +103,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = แปลงกลั�
 ##
 
 policy-LocalFileLinks = อนุญาตให้เว็บไซต์ที่ระบุเชื่อมโยงไปยังไฟล์ในเครื่อง
+policy-LocalNetworkAccess = เปิดหรือปิดใช้งานการตรวจสอบการเข้าถึงเครือข่ายเฉพาะที่
 policy-ManagedBookmarks = กำหนดค่ารายชื่อที่คั่นหน้าที่จัดการโดยผู้ดูแลระบบที่ไม่สามารถเปลี่ยนโดยผู้ใช้ได้
 policy-ManualAppUpdateOnly = อนุญาตการอัปเดตด้วยตนเองและไม่ต้องแจ้งให้ผู้ใช้ทราบเกี่ยวกับการอัปเดต
 policy-PrimaryPassword = ต้องการหรือป้องกันการใช้รหัสผ่านหลัก
@@ -116,20 +123,23 @@ policy-PostQuantumKeyAgreementEnabled = เปิดใช้ข้อตกล�
 # PDF.js and PDF should not be translated
 policy-PDFjs = ปิดใช้งานหรือกำหนดค่า PDF.js ตัวดู PDF ในตัวใน { -brand-short-name }
 policy-Permissions2 = กำหนดค่าการอนุญาตสิทธิ์สำหรับกล้อง ไมโครโฟน ตำแหน่งที่ตั้ง การแจ้งเตือน และการเล่นอัตโนมัติ
-policy-PictureInPicture = เปิดหรือปิดใช้งานภาพที่เล่นควบคู่
+policy-PictureInPicture = เปิดหรือปิดใช้งานภาพซ้อนภาพ
+policy-PopupBlocking2 = อนุญาตให้บางเว็บไซต์แสดงหน้าต่างป๊อปอัปและถูกเปลี่ยนเส้นทางโดยเฟรมจากภายนอกได้
 policy-PopupBlocking = อนุญาตให้บางเว็บไซต์แสดงป็อปอัปตามค่าเริ่มต้น
 policy-Preferences = ตั้งค่าและล็อคค่าสำหรับชุดย่อยของค่าปรับแต่ง
 policy-PrivateBrowsingModeAvailability = ตั้งค่าความพร้อมใช้งานของโหมดการเรียกดูแบบส่วนตัว
 policy-PromptForDownloadLocation = ถามตำแหน่งที่จะบันทึกไฟล์เมื่อดาวน์โหลด
 policy-Proxy = กำหนดค่าการตั้งค่าพร็อกซี
+policy-RelaunchRequired = บังคับให้ { -brand-short-name } ต้องเปิดใหม่ภายในระยะเวลาที่กำหนด และแจ้งผู้ใช้ก่อนการเปิดใหม่
 policy-RequestedLocales = ตั้งค่ารายการรูปแบบภาษาสำหรับแอปพลิเคชันตามลำดับในค่าปรับแต่ง
 policy-SanitizeOnShutdown2 = ล้างข้อมูลการนำทางเมื่อปิดเครื่อง
 policy-SearchBar = ตั้งค่าตำแหน่งที่ตั้งเริ่มต้นของแถบค้นหา โดยที่ผู้ใช้ยังคงสามารถปรับแต่งได้
 policy-SearchEngines = กำหนดค่าการตั้งค่าเครื่องมือค้นหา นโยบายนี้ใช้ได้บนรุ่น Extended Support Release (ESR) เท่านั้น
-policy-SearchSuggestEnabled = เปิดใช้งานหรือปิดใช้งานข้อเสนอแนะการค้นหา
+policy-SearchSuggestEnabled = เปิดใช้งานหรือปิดใช้งานคำแนะนำการค้นหา
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = เพิ่มหรือลบโมดูล PKCS #11
 policy-ShowHomeButton = แสดงปุ่มหน้าแรกบนแถบเครื่องมือ
+policy-SitePolicies = นโยบายเฉพาะของไซต์
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = ไม่ต้องแสดงเงื่อนไขการใช้งานและประกาศความเป็นส่วนตัวเมื่อเริ่มการทำงาน คุณรับรองว่าคุณยอมรับและมีอำนาจที่จะยอมรับเงื่อนไขการใช้งานในนามบุคคลทั้งหมดที่คุณให้สิทธิ์เข้าถึงเบราว์เซอร์นี้ไว้
 policy-SSLVersionMax = ตั้งรุ่น SSL สูงสุด
@@ -139,8 +149,11 @@ policy-SupportMenu = เพิ่มชิ้นเมนูการสนั�
 policy-TranslateEnabled = เปิดหรือปิดใช้งานการแปลหน้าเว็บ
 policy-UserMessaging = ไม่ต้องแสดงข้อความบางส่วนถึงผู้ใช้
 policy-UseSystemPrintDialog = พิมพ์โดยใช้กล่องโต้ตอบระบบพิมพ์…
+policy-VisualSearchEnabled = เปิด/ปิดการค้นหาด้วยรูปภาพ
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = ปิดกั้นไม่ให้เยี่ยมชมเว็บไซต์ ดูคู่มือสำหรับรายละเอียดเพิ่มเติมเกี่ยวกับรูปแบบ
 policy-Windows10SSO = อนุญาต Windows single sign-on สำหรับบัญชีที่ทำงานและโรงเรียนของ Microsoft
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = อนุญาต Single Sign-On สำหรับบัญชี Microsoft Entra
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = เปิดหรือปิดการใช้งานการสนับสนุนสำหรับ XSLTProcessor JavaScript API และคำสั่งประมวลผล XSLT

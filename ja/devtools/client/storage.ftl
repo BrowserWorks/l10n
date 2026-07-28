@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = アイテムを追加
+storage-delete-all-button =
+    .title = すべて削除
 # Refresh button title
 storage-refresh-button =
     .title = アイテムを再読み込み
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = 有効期限
 storage-table-headers-cookies-size = サイズ
 storage-table-headers-cookies-last-accessed = アクセス日時
 storage-table-headers-cookies-creation-time = 作成日時
+storage-table-headers-cookies-update-time = 更新日時
 storage-table-headers-cache-status = 状態
 storage-table-headers-extension-storage-area = ストレージ領域
 

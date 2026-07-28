@@ -11,6 +11,15 @@
 unified-extensions-header-title = ส่วนขยาย
 unified-extensions-manage-extensions =
     .label = จัดการส่วนขยาย
+unified-extensions-discover-extensions =
+    .label = ค้นพบส่วนขยาย
+unified-extensions-empty-reason-private-browsing-not-allowed = คุณได้ติดตั้งส่วนขยายไว้แล้ว แต่ไม่ได้เปิดใช้งานในหน้าต่างส่วนตัว
+unified-extensions-empty-reason-extension-not-enabled = คุณได้ติดตั้งส่วนขยายไว้แล้ว แต่ไม่ได้เปิดใช้งาน
+# In this headline, “Level up” means to enhance your browsing experience.
+unified-extensions-empty-reason-zero-extensions-onboarding = ยกระดับการเรียกดูของคุณด้วยส่วนขยาย
+unified-extensions-empty-content-explain-enable2 = เลือก “{ unified-extensions-manage-extensions.label }” เพื่อเปิดใช้งานส่วนขยายเหล่านั้นในการตั้งค่า
+unified-extensions-empty-content-explain-manage2 = เลือก “{ unified-extensions-manage-extensions.label }” เพื่อจัดการส่วนขยายเหล่านั้นในการตั้งค่า
+unified-extensions-empty-content-explain-extensions-onboarding = ปรับแต่ง { -brand-short-name } โดยเปลี่ยนหน้าตาและการทำงานหรือเพิ่มความเป็นส่วนตัวและความปลอดภัย
 
 ## An extension in the main list
 
@@ -21,6 +30,9 @@ unified-extensions-manage-extensions =
 unified-extensions-item-open-menu =
     .aria-label = เปิดเมนูสำหรับ { $extensionName }
 unified-extensions-item-message-manage = จัดการส่วนขยาย
+# Variables:
+#   $extensionName (String) - Name of the user-enabled soft-blocked extension.
+unified-extensions-item-messagebar-softblocked2 = { $extensionName } ถูกจำกัด การใช้ส่วนขยายนี้อาจมีความเสี่ยง
 # Variables:
 #   $extensionName (String) - Name of the user-enabled soft-blocked extension.
 unified-extensions-item-messagebar-softblocked = { $extensionName } ละเมิดนโยบายของ BrowserWorks การใช้ส่วนขยายนี้อาจมีความเสี่ยง
@@ -53,6 +65,13 @@ unified-extensions-mb-quarantined-domain-learn-more = เรียนรู้�
 unified-extensions-mb-about-addons-link = ไปยังการตั้งค่าส่วนขยาย
 # Variables:
 #   $extensionName (String) - Name of the extension disabled through a soft-block.
+unified-extensions-mb-blocklist-warning-single2 =
+    .heading = { $extensionName } ถูกปิดใช้งานแล้ว
+    .message =
+        ส่วนขยายนี้ถูกจำกัดและได้ถูกปิดใช้งานแล้ว
+        คุณสามารถเปิดใช้งานส่วนขยายนี้ได้ในการตั้งค่า แต่การทำเช่นนี้อาจมีความเสี่ยง
+# Variables:
+#   $extensionName (String) - Name of the extension disabled through a soft-block.
 unified-extensions-mb-blocklist-warning-single =
     .heading = { $extensionName } ถูกปิดใช้งาน
     .message =
@@ -63,6 +82,16 @@ unified-extensions-mb-blocklist-warning-single =
 unified-extensions-mb-blocklist-error-single =
     .heading = { $extensionName } ถูกปิดใช้งาน
     .message = ส่วนขยายนี้ละเมิดนโยบายของ BrowserWorks และได้ถูกปิดใช้งาน
+# Variables:
+#   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
+unified-extensions-mb-blocklist-warning-multiple2 =
+    .heading =
+        { $extensionsCount ->
+           *[other] ส่วนขยาย { $extensionsCount } ตัวถูกปิดใช้งานแล้ว
+        }
+    .message =
+        มีส่วนขยายบางตัวของคุณถูกจำกัดและได้ถูกปิดใช้งานแล้ว
+        คุณสามารถเปิดใช้งานส่วนขยายเหล่านั้นได้ในการตั้งค่า แต่การทำเช่นนี้อาจมีความเสี่ยง
 # Variables:
 #   $extensionsCount (Number) - Number of extensions disabled through both soft and hard-blocks (always going to be greater than 1)
 unified-extensions-mb-blocklist-warning-multiple =
@@ -78,3 +107,5 @@ unified-extensions-mb-blocklist-warning-multiple =
 unified-extensions-mb-blocklist-error-multiple =
     .heading = ส่วนขยาย { $extensionsCount } ตัวถูกปิดใช้งาน
     .message = ส่วนขยายบางตัวของคุณได้ถูกปิดใช้งานเนื่องจากละเมิดนโยบายของ BrowserWorks
+unified-extensions-notice-safe-mode =
+    .message = ส่วนขยายทั้งหมดได้ถูกปิดใช้งานโดยโหมดแก้ไขปัญหา

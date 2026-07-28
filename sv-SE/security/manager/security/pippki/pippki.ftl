@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Visa
 download-cert-view-text = Undersök CA-certifikat
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Permanent
 client-auth-cert-remember-temporarily =
     .label = För denna session
-client-auth-cert-remember-box =
-    .label = Kom ihåg detta beslut
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Lösenord för certifikatets säkerhetskopia (bekräftas):
 set-password-reminder = Viktigt: Om du glömmer detta lösenord kommer du inte att kunna återställa denna säkerhetskopia senare. Lagra detta lösenord på en säker plats.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Skyddad autentisering
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Autentisera dig mot säkerhetsenheten ({ $tokenName }). Hur du gör det beror på enheten (till exempel om du använder en fingeravtrycksläsare eller anger en kod med en knappsats).
 
 ## Protected authentication alert
 

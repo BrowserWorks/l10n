@@ -11,18 +11,36 @@
 firefox-relay-mask-generation-failed = { -relay-brand-name } nie może wygenerować nowej maski. Kod błędu HTTP: { $status }.
 firefox-relay-get-reusable-masks-failed = { -relay-brand-name } nie odnalazł masek wielokrotnego użytku. Kod błędu HTTP: { $status }.
 
-## The "control" variation of the Relay offer popup
+##
 
 firefox-relay-must-login-to-fxa = Do korzystania z { -relay-brand-name } wymagane jest zalogowanie na { -fxaccount-brand-name(case: "loc", capitalization: "lower") }.
 firefox-relay-must-login-to-account = Zaloguj się na swoje konto, aby korzystać z masek dla adresów e-mail { -relay-brand-name }.
 firefox-relay-get-unlimited-masks =
     .label = Zarządzaj maskami
     .accesskey = Z
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header =
+    { $count ->
+        [one] Bezpłatna maska dla adresu e-mail została już wykorzystana
+        [few] Wszystkie { $count } bezpłatne maski dla adresu e-mail zostały już wykorzystane
+       *[many] Wszystkie { $count } bezpłatnych masek dla adresu e-mail zostało już wykorzystanych
+    }
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = Można ponownie wykorzystać jedną z nich lub wybrać konkretną.
+firefox-relay-reuse-masks-select-label = Wybierz ostatnią maskę
+firefox-relay-see-all-masks =
+    .label = Wyświetl wszystkie maski
+    .accesskey = W
+firefox-relay-dismiss =
+    .label = Zamknij
+    .accesskey = Z
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Chroń swój adres e-mail:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = Użyj maski { -relay-brand-name } dla adresu e-mail
+firefox-relay-use-mask-title-1 = Użyj maski dla adresu e-mail
 firefox-relay-use-mask-title = Użyj maski { -relay-brand-name } dla adresu e-mail
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = Unikaj spamu dzięki bezpłatnej masce dla adresu e-mail
@@ -57,7 +75,7 @@ firefox-relay-and-fxa-opt-in-confirmation-postpone =
 ## The "control" variation of the Relay offer popup
 
 firefox-relay-and-fxa-popup-notification-second-sentence-control = Najpierw utwórz konto lub zaloguj się na istniejące, aby używać maski dla adresu e-mail
-firefox-relay-offer-legal-notice-control = Tworząc konto i maskę dla adresu e-mail, wyrażasz zgodę na <label data-l10n-name="tos-url">regulamin usługi</label> i <label data-l10n-name="privacy-url">zasady ochrony prywatności</label>.
+firefox-relay-offer-legal-notice-control = Tworząc konto i maskę dla adresu e-mail, zgadzasz się na <label data-l10n-name="tos-url">regulamin usługi</label> i <label data-l10n-name="privacy-url">zasady ochrony prywatności</label>.
 
 ## The "basic-info" variation of the Relay offer popup
 
@@ -72,6 +90,8 @@ firefox-relay-and-fxa-opt-in-confirmation-enable-button-basic-info =
 
 firefox-relay-and-fxa-popup-notification-header-with-domain = Otrzymaj bezpłatną maskę dla adresu e-mail
 firefox-relay-and-fxa-popup-notification-first-sentence-with-domain = Chroń swoją pocztę przed spamem, korzystając z bezpłatnej <label data-l10n-name="firefox-relay-learn-more-url">maski dla adresu e-mail</label> do ukrywania Twojego prawdziwego adresu. Wiadomości z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">tej witryny</label> nadal będą trafiać do Twojej skrzynki, ale z ukrytym adresem e-mail.
+firefox-relay-and-fxa-popup-notification-first-sentence = Chroń swoją pocztę przed spamem, korzystając z bezpłatnej <label data-l10n-name="firefox-relay-learn-more-url">maski dla adresu e-mail { -relay-brand-name }</label> do ukrywania Twojego prawdziwego adresu. Wiadomości z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">tej witryny</label> nadal będą trafiać do Twojej skrzynki, ale z ukrytym adresem e-mail.
+firefox-relay-offer-why-to-use-relay-1 = Chroń swoją pocztę przed spamem, korzystając z bezpłatnej <label data-l10n-name="firefox-relay-learn-more-url">maski dla adresu e-mail { -relay-brand-name }</label> do ukrywania Twojego prawdziwego adresu. Wiadomości z <label data-l10n-name="firefox-fxa-and-relay-offer-domain">tej witryny</label> nadal będą trafiać do Twojej skrzynki, ale z ukrytym adresem e-mail.
 firefox-relay-and-fxa-popup-notification-second-sentence-with-domain = Najpierw utwórz konto lub zaloguj się na istniejące, aby używać maski dla adresu e-mail
 firefox-relay-and-fxa-opt-in-confirmation-enable-button-with-domain =
     .label = Utwórz konto

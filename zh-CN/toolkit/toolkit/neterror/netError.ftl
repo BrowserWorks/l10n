@@ -12,7 +12,7 @@ neterror-blocked-by-policy-page-title = 页面已封锁
 neterror-captive-portal-page-title = 请登录网络
 neterror-dns-not-found-title = 找不到服务器
 neterror-malformed-uri-page-title = 无效网址
-general-body-title = 当心，看来有异常情况。
+general-body-title = 当心，似乎有异常情况。
 problem-with-this-site-title = 此网站似乎存在问题
 
 ## Error page actions
@@ -25,6 +25,8 @@ neterror-override-exception-button = 接受风险并继续
 neterror-pref-reset-button = 恢复默认设置
 neterror-return-to-previous-page-button = 后退
 neterror-return-to-previous-page-recommended-button = 返回上一页（推荐）
+neterror-try-again-button-2 = 重试
+    .accesskey = T
 neterror-try-again-button = 重试
 neterror-add-exception-button = 总是继续打开此网站
 neterror-settings-button = 更改 DNS 设置
@@ -46,6 +48,10 @@ neterror-load-error-firewall = 如果您的计算机或网络受到防火墙或�
 # This warning is only shown on macOS Sequoia and later (see bug 1929377)
 neterror-load-osx-permission = 若您正尝试加载本地网络页面，请在 macOS 的“隐私与安全性”设置中检查是否已允许 { -brand-short-name } 访问“本地网络”。
 neterror-http-error-page = 请确认输入的网址是否正确。
+neterror-http-empty-response = 请检查输入的网址是否正确，并在稍后重试。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } 发回了空白页。
 neterror-captive-portal = 您必须先登录此网络才能访问互联网。
 # Variables:
 # $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
@@ -54,6 +60,8 @@ neterror-dns-not-found-hint-header = <strong>若您确认输入的是正确网�
 neterror-dns-not-found-hint-try-again = 稍后再试
 neterror-dns-not-found-hint-check-network = 检查您的网络连接
 neterror-dns-not-found-hint-firewall = 检查 { -brand-short-name } 是否有联网权限（可能已接入网络，但被防火墙阻止）
+neterror-dns-not-found-hint-check-network-2 = 请检查网络连接。
+neterror-dns-not-found-hint-firewall-2 = 检查 { -brand-short-name } 是否有联网权限（可能已接入网络，但被防火墙阻止）。
 neterror-dns-not-found-offline-hint-header = <strong>您可以：</strong>
 neterror-dns-not-found-offline-hint-different-device = 尝试通过其他设备连接。
 neterror-dns-not-found-offline-hint-modem = 检查调制解调器和路由器。
@@ -81,7 +89,6 @@ neterror-dns-not-found-trr-unknown-problem = 未知问题。
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } 无法通过可信 DNS 解析器保护您对本网址的请求。原因如下：
-neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } 无法通过我们的安全 DNS 提供方来保护您对此网址的请求。原因如下：
 neterror-dns-not-found-native-fallback-heuristic = 您的网络已禁用基于 HTTPS 的 DNS。
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } 无法连接至 { $trrDomain }。
 
@@ -89,9 +96,14 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } �
 
 neterror-file-not-found-filename = 请检查文件名是否大小写输错，或者有其他输入错误。
 neterror-file-not-found-moved = 请检查文件是否已被移动、重命名或删除。
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } 在 <strong>{ $path }</strong> 找不到该文件。该文件可能不存在，或路径不正确。
+neterror-file-not-found-what-can-you-do = 如果您是手动输入地址，请检查文件名或路径中是否存在大小写或拼写错误。如果您是通过保存的书签或链接打开，则文件自保存后可能已被移动、重命名或删除。请尝试使用文件管理器或最近搜索功能定位该文件。
 neterror-access-denied = 文件可能已被删除、移动，或者因文件权限问题被拒绝访问。
 neterror-unknown-protocol = 您可能需要安装其他软件才能打开此网址。
 neterror-redirect-loop = 有时候禁用或拒绝接受 Cookie 会导致此问题。
+neterror-unknown-socket-type-client-config = 这可能是由于您的客户端配置错误所致。
 neterror-unknown-socket-type-psm-installed = 请检查您的系统是否安装了个人安全管理器（PSM）。
 neterror-unknown-socket-type-server-config = 这可能是由服务器端的非标准配置所致。
 neterror-not-cached-intro = 您请求的文档已无法在 { -brand-short-name } 的缓存中找到。
@@ -138,7 +150,7 @@ neterror-inadequate-security-code = 错误代码：NS_ERROR_NET_INADEQUATE_SECUR
 neterror-clock-skew-error = 您计算机上的时间是 { DATETIME($now, dateStyle: "medium") }，{ -brand-short-name } 无法在这个设定的时间下进行安全连接。要访问 <b>{ $hostname }</b>，请在您的系统设置中确认当前的日期、时间、时区设置是否正确，然后重新加载 <b>{ $hostname }</b>。
 neterror-network-protocol-error-intro = 您尝试查看的页面无法显示，因为检测到了网络协议中的错误。
 neterror-network-protocol-error-contact-website = 建议向此网站的管理员反馈这个问题。
-certerror-expired-cert-second-para = 很可能该网站的证书已过期，因而阻碍 { -brand-short-name } 安全地连接。如果您继续访问该网站，攻击者可能尝试窃取您的密码、电子邮件或信用卡等信息。
+certerror-expired-cert-second-para = 可能是网站的证书已过期，致使 { -brand-short-name } 无法安全地连接。若您继续访问该网站，攻击者可能会尝试窃取您的密码、电子邮件或信用卡等信息。
 certerror-expired-cert-sts-second-para = 很可能该网站的证书已过期，因而阻碍 { -brand-short-name } 安全地连接。
 certerror-what-can-you-do-about-it-title = 您可以做什么？
 certerror-unknown-issuer-what-can-you-do-about-it-website = 这个问题大多与网站有关，无法通过您的操作解决。
@@ -168,3 +180,42 @@ certerror-coep-learn-more = 详细了解跨源嵌入程序策略（COEP）
 #   $responsestatus (string) - HTTP response status code (e.g., 500).
 #   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
 neterror-response-status-code = 错误代码：{ $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = 您的网络连接似乎出了点问题
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } 无法与 { $hostname } 的服务器创建安全连接。
+fp-neterror-offline-intro = { -brand-short-name } 无法连接到 <strong>{ $hostname }</strong> 的服务器
+fp-neterror-offline-intro-2 = { -brand-short-name } 无法连接到 <strong>{ $hostname }</strong> 的服务器。
+fp-neterror-net-timeout-intro = <strong>{ $hostname }</strong> 的服务器响应时间过长。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = <strong>{ $hostname }</strong> 的服务器发回一个错误：{ $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> 发回了一个消息头，其中包含 Web 安全标准所不允许的空字符。
+fp-neterror-content-encoding-intro = 您尝试查看的页面无法显示，因为它使用了无效的或者不支持的压缩格式。
+fp-neterror-coop-coep-intro = { -brand-short-name } 未加载此页面，因为其安全配置与上个页面似乎不一致。
+fp-neterror-blocked-by-policy-intro = 您的组织已屏蔽此页面或网站。
+fp-neterror-http-auth-disabled-intro = 若有人冒充此网站，其可试图窃取您的用户名、密码、邮箱地址等信息。
+fp-neterror-http-auth-disabled-secure-connection = 此网站需要安全连接，且无法添加例外以访问。
+fp-neterror-why-did-this-happen = 为什么会出现此情况？
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = 此网站似乎正在使用已知存在安全问题的旧版软件。
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } 不信任 { $hostname }，因为连接不安全。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = 请确认您正在使用最新版本的 { -brand-short-name }，方法是在菜单中前往“帮助”>“关于 { -brand-short-name }”查看。如果您已使用最新版 { -brand-short-name }，那么可能是网站自身存在问题。
+fp-neterror-offline-what-can-you-do-body = 请尝试通过其他设备连接、检查调制解调器或路由器、断开 Wi-Fi 连接后重新连接。
+fp-neterror-http-auth-disabled-what-can-you-do-body = 尝试将网址改为 HTTPS（虽然很可能网站自身就存在问题）。
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = 有时网站会为自身设置保护措施，阻止与其他网站进行非预期的交互。
+fp-learn-more-about-https-connections = 了解 HTTPS 连接
+fp-neterror-vpn-error-title = 无法连接到 VPN
+fp-neterror-vpn-error-description = 请在几分钟后重试。
+fp-neterror-denied-port-access = 此网址使用了一个通常用于网络浏览以外目的的端口。出于安全原因，{ -brand-short-name } 取消了该请求。

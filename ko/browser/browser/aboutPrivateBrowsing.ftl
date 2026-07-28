@@ -73,8 +73,18 @@ about-private-browsing-cookie-banners-promo-message = { -brand-short-name }가 �
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name }가 쿠키 배너를 처리해 드립니다
 about-private-browsing-cookie-banners-promo-body = 이제 자동으로 많은 쿠키 배너를 거부하므로 추적을 줄이고 방해 없는 탐색으로 돌아갈 수 있습니다.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
 about-private-browsing-felt-privacy-v1-info-header = 이 기기에 흔적을 남기지 마세요
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name }는 모든 사생활 보호 창을 닫을 때 쿠키, 기록 및 사이트 데이터를 삭제합니다.
 about-private-browsing-felt-privacy-v1-info-link = 누가 내 활동을 볼 수 있나요?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = 모든 사생활 보호 창을 닫으면 쿠키, 기록 및 사이트 데이터가 삭제됩니다.
+about-private-browsing-nova-info-link = 누가 여전히 내 활동을 볼 수 있나요?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = 기록이 남지 않습니다
+about-private-browsing-nova-info-subheader = 이 창을 닫으면 모든 검색과 로그인이 삭제됩니다. 여기에서도 추적기 차단 같은 { -brand-short-name }의 내장 보호 기능을 사용할 수 있습니다.

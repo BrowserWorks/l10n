@@ -37,7 +37,7 @@ genai-prompts-explain =
     .value = Magyarázza le a kulcsfogalmakat a kijelölésben, egyszerű szavakat használva. Használjon példákat is.
 # Prompt purpose: writing tool that helps users with spelling and grammar mistakes and produce a response that identifies errors and rewrites the inputted text correctly
 genai-prompts-proofread =
-    .label = Lektorálás
+    .label = Lektorálja
     .value = Lektorálja a kijelölést helyesírási és nyelvtani hibák szempontjából. Azonosítsa a hibákat, és adja vissza a szöveg javított változatát. Tartsa meg a jelentést és a tényszerű információkat, és először írja ki a javasolt javításokat, majd azt kövesse a szöveg javított változata.
 # This prompt is added to the beginning of selection prompts sent to a chatbot.
 # $tabTitle (string) - title of the webpage
@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = A(z) { $provider } eltávolítása
 genai-menu-remove-sidebar =
     .label = Eltávolítás az oldalsávról
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = A(z) { $provider } megkérdezése
 genai-menu-new-badge = Új
-genai-menu-summarize-page = Összefoglaló oldal
+genai-menu-summarize-page = Oldal összegzése
+genai-input-ask-smart-window =
+    .placeholder = Kérdés…
 genai-input-ask-generic =
     .placeholder = Az MI csevegőbot megkérdezése…
 # $provider (string) - name of the provider
@@ -90,17 +95,30 @@ genai-shortcuts-selected-warning =
            *[other] Körülbelül { $selectionLength } karaktert választott ki. A(z) { $provider } számára küldhető karakterek száma körülbelül { $maxLength }.
         }
 genai-shortcuts-hide =
-    .label = Csevegőbot indítójának elrejtése
-genai-menu-no-provider =
-    .label = MI csevegőbot megkérdezése
+    .label = Csevegőbot gyorsindítójának elrejtése
 genai-menu-choose-chatbot =
     .label = MI csevegőbot választása
+genai-menu-ask-generic-2 =
+    .label = MI csevegőbot megkérdezése
+    .accesskey = c
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = A(z) { $provider } megkérdezése
+    .accesskey = k
+genai-menu-no-provider-2 =
+    .label = MI csevegőbot megkérdezése
+    .accesskey = c
+genai-menu-ask-smart-window =
+    .label = Kérdés…
+    .accesskey = K
 
 ## Chatbot header
 
 genai-chatbot-title = MI csevegőbot
 genai-header-provider-menu =
     .title = Válasszon csevegőbotot
+genai-header-settings-button =
+    .title = MI csevegés beállításai
 genai-header-options-button =
     .title = Menü megnyitása
 genai-header-close-button =
@@ -119,9 +137,14 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = A { -brand-short-name } MI csevegőbotjainak névjegye
 
+## Chatbot message
+
+genai-page-warning =
+    .message = A weboldal hosszúsága miatt ez egy részleges összegzés.
+
 ## Chatbot footer
 
-genai-page-button-summarize = Összefoglaló oldal
+genai-page-button-summarize = Oldal összegzése
 
 ## Chatbot onboarding
 
@@ -157,8 +180,8 @@ genai-onboarding-select-primary = Kezdjen csevegni
 genai-chatbot-contextual-title = Használjon egy MI csevegőbotot lapváltás nélkül
 genai-chatbot-contextual-subtitle = Csevegjen és böngésszen egymás mellett, ha felvesz egy MI csevegőbotot a { -brand-short-name } oldalsávba.
 genai-chatbot-contextual-button = Válasszon csevegőbotot
-genai-chatbot-summarize-title = Új! Foglalja össze az oldalakat egyetlen kattintással.
-genai-chatbot-summarize-button = Összefoglaló oldal
+genai-chatbot-summarize-title = Új! Összegezze az oldalakat egyetlen kattintással.
+genai-chatbot-summarize-button = Oldal összegzése
 # “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
 genai-chatbot-summarize-sidebar-provider-subtitle = Kattintson jobb gombbal az MI csevegőbotjára az oldalsávban, és válassza az „Oldal összegzése” lehetőséget.
 # “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
@@ -211,3 +234,48 @@ link-preview-reading-time =
         [one] { $range } perc olvasási idő
        *[other] { $range } perc olvasási idő
     }
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = A { -brand-short-name } nem tudja megnézni ezen hivatkozás előnézetét
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Hivatkozás meglátogatása
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = A { -brand-short-name } nem tud kulcspontokat előállítani ehhez a weboldalhoz.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Valami hiba történt.
+# Text for the retry link when generation fails
+link-preview-generation-retry = Újrapróbálkozás
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Hivatkozás-előnézeti beállítások
+link-preview-settings-enable =
+    .label = Hivatkozások előnézetének engedélyezése
+    .description = Az oldal címének, leírásának és egyéb információinak megjelenítése gyorsbillentyű vagy jobb kattintás használatával.
+link-preview-settings-key-points =
+    .label = Engedélyezés, hogy az MI elolvassa az oldal elejét, és kulcspontokat állítson elő
+link-preview-settings-long-press =
+    .label = Gyors elérés: Kattintson a hivatkozásra, és tartsa lenyomva 1 másodpercig (hosszan nyomva)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Megtekint többet az MI-vel?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = A(z) { -brand-short-name } MI segítségével olvassa be az oldal elejét, és néhány kulcspontot állít elő. Az adatvédelmét előtérbe helyezve, mindez a saját eszközén történik.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Új: Kattintson és tartsa lenyomva bármelyik hivatkozást az előnézethez
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Tekintsen meg egy rövid leírást, az olvasáshoz szükséges időt, és egyebeket, hogy eldöntse megéri-e megnyitni a hivatkozást. Jobb kattintással is elérhető.
+# Header for the key points section
+link-preview-key-points-header = Kulcspontok
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = A kulcspontokat MI állítja elő, lehetnek bennük hibák.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Első beállítás • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Legközelebb a kulcspontokat gyorsabban fogja látni.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Előnézet megjelenítése
+# Onboarding card Close button
+link-preview-onboarding-close = Bezárás
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Első beállítás
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Ez eltarthat egy darabig. Legközelebb gyorsabban látni fogja a kulcspontokat.

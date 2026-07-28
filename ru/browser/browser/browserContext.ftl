@@ -75,8 +75,8 @@ toolbar-button-stop-reload =
 ## Firefox Account Button
 
 toolbar-button-fxaccount =
-    .label = { -fxaccount-brand-name }
-    .tooltiptext = { -fxaccount-brand-name }
+    .label = { -fxaccount-brand-name(case: "nominative_uppercase") }
+    .tooltiptext = { -fxaccount-brand-name(case: "nominative_uppercase") }
 
 ## Account toolbar Button
 
@@ -130,6 +130,9 @@ main-context-menu-open-link =
 main-context-menu-open-link-new-tab =
     .label = Открыть ссылку в новой вкладке
     .accesskey = в
+main-context-menu-open-link-split-view =
+    .label = Открыть ссылку в разделении экрана
+    .accesskey = М
 main-context-menu-open-link-container-tab =
     .label = Открыть ссылку в новой вкладке в контейнере
     .accesskey = к
@@ -169,11 +172,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = Копировать очищенную ссылку
     .accesskey = г
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-main-context-menu-strip-on-share-link =
-    .label = Копировать ссылку без параметров отслеживания
-    .accesskey = н
 
 ## Media (video/audio) controls
 ##
@@ -223,7 +221,7 @@ main-context-menu-media-hide-controls =
     .label = Скрыть элементы управления
     .accesskey = у
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = Перейти в полноэкранный режим
@@ -275,6 +273,11 @@ main-context-menu-image-info =
 main-context-menu-image-desc =
     .label = Описание изображения
     .accesskey = а
+# Variables
+#   $engine (String) - Name of the search engine that will perform the search.
+main-context-menu-visual-search-2 =
+    .label = Поиск изображений с помощью { $engine }
+    .accesskey = у
 main-context-menu-video-save-as =
     .label = Сохранить видео как…
     .accesskey = о
@@ -290,6 +293,24 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Отправить аудио по почте…
     .accesskey = а
+main-context-menu-send-to-device-2 =
+    .label = Отправить на устройство
+    .accesskey = т
+main-context-menu-send-to-mobile-2 =
+    .label = Отправить на мобильный
+    .accesskey = n
+main-context-menu-send-to-mobile-sign-in = Войдите, чтобы отправлять вкладки
+main-context-menu-send-to-mobile-enable-sync2 = Включить синхронизацию для отправки вкладки
+main-context-menu-send-to-mobile-connect-phone2 = Подключите ваш телефон
+main-context-menu-send-to-mobile-device-missing2 = Не видите ваше устройство?
+main-context-menu-send-to-mobile-sign-in-from-link = Войдите, чтобы отправить ссылку
+main-context-menu-send-to-mobile-sign-in-from-page = Войдите, чтобы отправить страницу
+main-context-menu-send-to-mobile-enable-sync3 = Включить синхронизацию, чтобы отправить вкладки
+main-context-menu-send-to-mobile-enable-sync-from-link = Включить синхронизацию, чтобы отправить ссылку
+main-context-menu-send-to-mobile-enable-sync-from-page = Включить синхронизацию, чтобы отправить страницу
+main-context-menu-send-to-mobile-connect-phone3 = Подключить устройство, чтобы отправить вкладки
+main-context-menu-send-to-mobile-connect-phone-from-link = Подключить устройство, чтобы отправить ссылку
+main-context-menu-send-to-mobile-connect-phone-from-page = Подключить устройство, чтобы отправить страницу
 main-context-menu-save-to-pocket =
     .label = Сохранить страницу в { -pocket-brand-name }
     .accesskey = ь
@@ -304,7 +325,7 @@ main-context-menu-use-saved-login =
     .accesskey = й
 # Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
-    .label = Использовать сохраненный пароль
+    .label = Использовать сохранённый пароль
     .accesskey = н
 
 ##
@@ -313,7 +334,7 @@ main-context-menu-use-relay-mask =
     .label = Использовать псевдоним эл. почты { -relay-brand-short-name }
     .accesskey = н
 main-context-menu-suggest-strong-password =
-    .label = Предложить надежный пароль…
+    .label = Предложить надёжный пароль…
     .accesskey = ж
 main-context-menu-manage-logins2 =
     .label = Управление логинами
@@ -330,6 +351,9 @@ main-context-menu-add-engine =
 main-context-menu-link-send-to-device =
     .label = Отправить ссылку на устройство
     .accesskey = п
+main-context-menu-link-send-to-mobile =
+    .label = Отправить ссылку на мобильный
+    .accesskey = n
 main-context-menu-frame =
     .label = В этом фрейме
     .accesskey = ф
@@ -397,3 +421,13 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-reveal-password =
     .label = Показать пароль
     .accesskey = з
+# The label of a badge shown in menu items to call out new features.
+main-context-menu-new-feature-badge = Новое
+main-context-menu-pdfjs-copy-page =
+    .label = Копировать страницу
+main-context-menu-pdfjs-cut-page =
+    .label = Вырезать страницу
+main-context-menu-pdfjs-delete-page =
+    .label = Удалить страницу
+main-context-menu-pdfjs-save-page =
+    .label = Сохранить выбранное как…

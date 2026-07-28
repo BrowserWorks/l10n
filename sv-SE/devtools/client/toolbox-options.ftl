@@ -30,10 +30,18 @@ options-context-inspector = Inspektör
 options-show-user-agent-styles-label = Visa webbläsarstilar
 options-show-user-agent-styles-tooltip =
     .title = Slå på detta kommer att visa standard stilar som är laddade av webbläsaren.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Visa Browser Shadow DOM
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Aktivera detta kommer att visa Shadow DOM-element som hanteras av webbläsaren.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Trunkera DOM-attribut
 options-collapse-attrs-tooltip =
     .title = Trunkera långa attribut i inspektören
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Visa kommentarer
+options-show-comments-tooltip =
+    .title = Visa kommentarnoder i inspektören
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Klicka och dra för att redigera storleksvärden
 options-inspector-draggable-properties-tooltip =
@@ -67,6 +75,35 @@ options-webconsole-label = Webbkonsol
 options-webconsole-split-console-label = Aktivera delad konsol
 options-webconsole-split-console-tooltip =
     .title = Öppna delad konsol med Escape-tangenten
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Nätverksövervakare
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Maximal förfrågan och svarstext (inställd till 0 för obegränsat):
+options-netmonitor-body-limit-tooltip =
+    .title = Förfrågningar eller svarsinnehåll som överskrider den angivna storleken kommer att trunkeras när de visas eller hämtas i Network Monitor. Sätt till 0 för att inte ha någon begränsning.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Obegränsat
+options-netmonitor-body-limit-button =
+    .title = Redigera den maximala förfrågan/svaret.
+options-netmonitor-body-limit-restore-default =
+    .title = Återställ standardvärdet för maximal begäran/svarstext.
+options-netmonitor-body-limit-set =
+    .title = Ställ in det aktuella inmatningsvärdet som maximal begäran/svarstext.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Experimentella funktioner
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Visa stilmallar i avlusaren
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Lista och visa stilmallar i avlusaren
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (kräver återöppnande av verktygslådan)
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Tabbstorlek
 options-sourceeditor-keybinding-label = Snabbtangenter
 options-sourceeditor-keybinding-default-label = Standard
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Lokalt läge
+options-local-mode-only-work-locally = Lokalt läge fungerar endast lokalt och är inaktiverat vid felsökning av fjärrkontexter
+options-local-mode-behavior = Lokalt läge låter dig ladda lokala filer via https-URL utan externa beroenden. URL:erna kan bara laddas från flikar med DevTools öppna.
+options-local-mode-domain-label = Anpassad domän:
+options-local-mode-origin-input =
+    .placeholder = Ursprung för den lokala mappningen
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Detta ursprung är i konflikt med en annan befintlig mappning
+options-local-mode-origin-invalid = Detta ursprung är ogiltigt
+options-local-mode-folder-label = Lokal mapp:
+options-local-mode-choose-folder = Bläddra…
+    .title = Välj en lokal mapp för att hantera denna mappning
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Välj mapp för lokalt läge för: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Den här mappen finns inte eller är ogiltig.
+options-local-mode-toggle =
+    .title = Växla denna lokala mappning
+options-local-mode-toggle-enable = Aktivera
+options-local-mode-toggle-disable = Inaktivera
+options-local-mode-navigate-to =
+    .title = Navigera till denna mappnings-URL
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Vill du ta bort mappningen “{ $mappingOrigin }”?
+options-local-mode-new-mapping = Lägg till en ny lokal mappning
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +186,8 @@ options-context-advanced-settings = Avancerade inställningar
 options-disable-http-cache-label = Inaktivera HTTP Cache (när verktygslådan är öppen)
 options-disable-http-cache-tooltip =
     .title = Aktivera det här alternativet inaktiverar HTTP-cache för alla flikar som har verktygslådan öppen. Service Workers påverkas inte av det här alternativet.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Inaktivera JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Inaktivera JavaScript *
 options-disable-javascript-tooltip =
@@ -143,5 +216,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Aktivera källmappning
 options-source-maps-tooltip =
     .title = Om du aktiverar det här alternativet kommer källor att mappas i verktygen.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (endast aktuell session, laddar om sidan)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Endast aktuell session, laddar om sidan
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (laddar om sidan)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Automatisk
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Föråldrad. Läs mer…

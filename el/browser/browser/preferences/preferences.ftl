@@ -4,9 +4,6 @@
 
 do-not-track-description = Αποστολή σήματος «Αποτροπή καταγραφής», ώστε να μην καταγράφεστε από ιστοτόπους
 do-not-track-removal = Δεν υποστηρίζουμε πλέον το σήμα αποτροπής καταγραφής.
-do-not-track-description2 =
-    .label = Αποστολή αιτήματος «Αποτροπή καταγραφής» στους ιστοτόπους
-    .accesskey = τ
 do-not-track-learn-more = Μάθετε περισσότερα
 do-not-track-option-default-content-blocking-known =
     .label = Μόνο όταν το { -brand-short-name } έχει ρυθμιστεί για φραγή γνωστών ιχνηλατών
@@ -15,12 +12,23 @@ do-not-track-option-always =
 global-privacy-control-description =
     .label = Αποστολή αιτήματος μη πώλησης ή κοινοποίησης δεδομένων στους ιστοτόπους
     .accesskey = σ
+non-technical-privacy-group =
+    .label = Προτιμήσεις απορρήτου ιστοτόπων
+do-not-track-removal3 =
+    .message = Δεν υποστηρίζουμε πλέον τη λειτουργία «Αποτροπή καταγραφής».
+non-technical-privacy-heading =
+    .label = Πρόσθετα μέτρα προστασίας
+preferences-privacy-relay-available =
+    .label = Πρόταση μασκών email του { -relay-brand-name }
+    .description = Αποκρύπτει την πραγματική σας διεύθυνση email για την προστασία των εισερχομένων σας από ανεπιθύμητα μηνύματα.
 non-technical-privacy-header = Προτιμήσεις απορρήτου ιστοτόπων
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = Ρυθμίσεις
+category-nav-heading =
+    .heading = Ρυθμίσεις
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -35,23 +43,51 @@ search-input-box2 =
 managed-notice = Το πρόγραμμα περιήγησής σας ρυθμίζεται από τον οργανισμό σας.
 managed-notice-info-icon =
     .alt = Πληροφορίες
+managed-notice-nav =
+    .label = Το πρόγραμμα περιήγησής σας ρυθμίζεται από τον οργανισμό σας.
 category-list =
     .aria-label = Κατηγορίες
 pane-general-title = Γενικά
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = Αρχική
+pane-home-startup-title2 = Αρχική σελίδα και εκκίνηση
+    .title = Αρχική σελίδα και εκκίνηση
+pane-search-title2 = Αναζήτηση
+    .title = Αναζήτηση
+pane-privacy-title3 = Απόρρητο και ασφάλεια
+    .title = Απόρρητο και ασφάλεια
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = Αναζήτηση
 category-search =
     .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = Απόρρητο και ασφάλεια
 pane-privacy-title = Απόρρητο και ασφάλεια
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = Συγχρονισμός
+pane-ai-controls-title2 = Επιλογές ελέγχου ΤΝ
+    .title = Επιλογές ελέγχου ΤΝ
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = Σχετικά με το { -brand-short-name }
+    .title = { pane-about-firefox-title }
+pane-appearance-title = Εμφάνιση
+    .title = { pane-appearance-title }
+pane-downloads-title2 = Λήψεις
+    .title = Λήψεις
+pane-downloads3 =
+    .heading = Λήψεις
+pane-accessibility-title = Προσβασιμότητα
+    .title = { pane-accessibility-title }
+pane-languages-title2 = Γλώσσες
+    .title = Γλώσσες
+preferences-languages-header3 =
+    .heading = Γλώσσες
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
 pane-experimental-title = Πειράματα { -brand-short-name }
 category-experimental =
     .tooltiptext = Πειράματα { -brand-short-name }
@@ -59,18 +95,29 @@ pane-experimental-subtitle = Συνεχίστε με προσοχή
 pane-experimental-search-results-header = Πειράματα { -brand-short-name }: Συνεχίστε με προσοχή
 pane-experimental-description2 = Η αλλαγή παραμέτρων των σύνθετων ρυθμίσεων μπορεί να επηρεάσει την απόδοση ή την ασφάλεια του { -brand-short-name }.
 settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = Δοκιμάστε τις πειραματικές μας λειτουργίες! Βρίσκονται υπό ανάπτυξη και εξέλιξη, γεγονός που μπορεί να επηρεάσει τον τρόπο λειτουργίας του { -brand-short-name }. Λαμβάνουμε δεδομένα σχετικά με τη χρήση αυτών των λειτουργιών μόνο εφόσον έχετε ενεργοποιήσει τα <a data-l10n-name="data-collection">τεχνικά δεδομένα και τα δεδομένα αλληλεπίδρασης</a>.
 pane-experimental-description3 = Δοκιμάστε τις νέες μας λειτουργίες! Βρίσκονται υπό ανάπτυξη και εξέλιξη, γεγονός που θα μπορούσε να επηρεάσει τον τρόπο λειτουργίας του { -brand-short-name }.
 pane-experimental-reset =
     .label = Επαναφορά προεπιλογών
     .accesskey = Ε
+help-button-label2 = Υποστήριξη { -brand-short-name }
+    .title = Υποστήριξη { -brand-short-name }
+addons-button-label2 = Επεκτάσεις και θέματα
+    .title = Επεκτάσεις και θέματα
 help-button-label = Υποστήριξη { -brand-short-name }
 addons-button-label = Επεκτάσεις και θέματα
 focus-search =
     .key = f
 close-button =
     .aria-label = Κλείσιμο
+do-not-track-removal2 =
+    .label = Δεν υποστηρίζουμε πλέον το σήμα «Αποτροπή καταγραφής»
+applications-setting-new-file-types =
+    .label = Τι να κάνει το { -brand-short-name } με άλλα αρχεία;
 
 ## Browser Restart Dialog
 
@@ -112,6 +159,10 @@ extension-controlling-proxy-config = Το <img data-l10n-name="icon"/> <strong>{
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
 extension-controlled-enable = Για να ενεργοποιήσετε την επέκταση, μεταβείτε στα <img data-l10n-name="addons-icon"/> «Πρόσθετα» στο μενού <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable-2 = Για να ενεργοποιήσετε ξανά αυτήν την επέκταση, επισκεφθείτε τη σελίδα <a data-l10n-name="addons-link">Επεκτάσεις και θέματα</a>.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = Το { $name } ελέγχει ορισμένες από τις ρυθμίσεις της αρχικής σελίδας σας.
 
 ## Preferences UI Search Results
 
@@ -134,32 +185,80 @@ set-as-my-default-browser =
 startup-restore-windows-and-tabs =
     .label = Άνοιγμα προηγούμενων παραθύρων και καρτελών
     .accesskey = π
+startup-windows-launch-on-login-profile-disabled =
+    .message = Ενεργοποιήστε αυτήν την προτίμηση επιλέγοντας «{ profile-manager-use-selected.label }» στο παράθυρο «Επιλογή προφίλ χρήστη».
 windows-launch-on-login =
     .label = Άνοιγμα του { -brand-short-name } αυτόματα κατά την εκκίνηση του υπολογιστή
     .accesskey = ν
 windows-launch-on-login-disabled = Αυτή η προτίμηση έχει απενεργοποιηθεί στα Windows. Για να την αλλάξετε, επισκεφτείτε τις <a data-l10n-name="startup-link">Εφαρμογές εκκίνησης</a> στις ρυθμίσεις συστήματος.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = Επίσης, άνοιγμα νέας καρτέλας
+    .accesskey = ν
 windows-launch-on-login-profile-disabled = Ενεργοποιήστε αυτήν την προτίμηση επιλέγοντας «{ profile-manager-use-selected.label }» στο παράθυρο «Επιλογή προφίλ χρήστη».
 startup-restore-warn-on-quit =
     .label = Προειδοποίηση κατά τον τερματισμό του προγράμματος περιήγησης
 disable-extension =
     .label = Απενεργοποίηση επέκτασης
+preferences-data-migration-group =
+    .label = Εισαγωγή δεδομένων προγράμματος περιήγησης
+    .description = Εισαγάγετε σελιδοδείκτες, κωδικούς πρόσβασης, ιστορικό, πρόσθετα και δεδομένα αυτόματης συμπλήρωσης από άλλο πρόγραμμα περιήγησης.
 preferences-data-migration-header = Εισαγωγή δεδομένων προγράμματος περιήγησης
 preferences-data-migration-description = Εισαγάγετε τους σελιδοδείκτες, τους κωδικούς πρόσβασης, το ιστορικό και τα δεδομένα αυτόματης συμπλήρωσης στο { -brand-short-name }.
 preferences-data-migration-button =
     .label = Εισαγωγή δεδομένων
     .accesskey = ι
+preferences-profiles-group-header =
+    .heading = Προφίλ
+preferences-profiles-subpane-description =
+    .description = Κάθε προφίλ περιέχει ξεχωριστά δεδομένα και ρυθμίσεις περιήγησης, όπως ιστορικό, κωδικοί πρόσβασης και πολλά άλλα.
+preferences-profiles-section-header =
+    .label = Προφίλ
+    .description = Κάθε προφίλ περιέχει ξεχωριστά δεδομένα και ρυθμίσεις περιήγησης, όπως ιστορικό, κωδικοί πρόσβασης και πολλά άλλα.
 preferences-profiles-header = Προφίλ
 preferences-manage-profiles-description = Κάθε προφίλ περιέχει ξεχωριστά δεδομένα και ρυθμίσεις περιήγησης, όπως ιστορικό, κωδικοί πρόσβασης και πολλά άλλα.
 preferences-manage-profiles-learn-more = Μάθετε περισσότερα
 preferences-manage-profiles-button =
     .label = Διαχείριση προφίλ
+preferences-profiles-settings-button =
+    .label = Ρυθμίσεις
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = Αντιγραφή υπάρχοντος προφίλ
+    .description = Το νέο προφίλ θα αντιγράψει τις ρυθμίσεις, τα πρόσθετα, το ιστορικό και τα αποθηκευμένα δεδομένα, όπως σελιδοδείκτες και κωδικούς πρόσβασης, όχι όμως τον λογαριασμό ή τις πληροφορίες συγχρονισμού σας.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = Προφίλ προς αντιγραφή
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = Επιλογή προφίλ
+preferences-copy-profile-button = Αντιγραφή
+tabs-browsing-section =
+    .heading = Καρτέλες και περιήγηση
+pane-tabs-browsing-title2 = Καρτέλες και περιήγηση
+    .title = Καρτέλες και περιήγηση
+tabs-group-header2 =
+    .label = Καρτέλες
+tabs-opening-heading =
+    .label = Άνοιγμα
+tabs-interaction-heading =
+    .label = Αλληλεπίδραση
+tabs-containers-heading =
+    .label = Θεματικές ενότητες
+tabs-closing-heading =
+    .label = Κλείσιμο
 tabs-group-header = Καρτέλες
 ctrl-tab-recently-used-order =
-    .label = Εναλλαγή καρτελών με το Ctrl+Tab σε σειρά πρόσφατης χρήσης
+    .label = Εναλλαγή καρτελών με τα Ctrl+Tab σε σειρά πρόσφατης χρήσης
     .accesskey = T
 open-new-link-as-tabs =
     .label = Άνοιγμα συνδέσμων σε καρτέλες αντί για νέα παράθυρα
     .accesskey = π
+open-external-link-next-to-active-tab =
+    .label = Άνοιγμα συνδέσμων από εφαρμογές δίπλα στην ενεργή καρτέλα
 ask-on-close-multiple-tabs =
     .label = Ερώτηση πριν από το κλείσιμο πολλαπλών καρτελών
     .accesskey = π
@@ -185,20 +284,31 @@ confirm-on-quit-with-key =
 warn-on-open-many-tabs =
     .label = Προειδοποίηση όταν το άνοιγμα πολλαπλών καρτελών ενδέχεται να επιβραδύνει το { -brand-short-name }
     .accesskey = β
+switch-to-new-tabs-2 =
+    .label = Άμεση εναλλαγή στη νέα καρτέλα όταν ανοίγουν σύνδεσμοι ή πολυμέσα
+    .accesskey = η
 switch-to-new-tabs =
     .label = Κατά το άνοιγμα συνδέσμου, εικόνας ή πολυμέσου σε νέα καρτέλα, να γίνεται άμεση εναλλαγή σε αυτή
     .accesskey = μ
 show-tabs-in-taskbar =
     .label = Προβολή προεπισκόπησης καρτελών στη γραμμή εργασιών των Windows
     .accesskey = ε
+browser-containers-enabled-2 =
+    .label = Χρήση θεματικών καρτελών
+    .accesskey = ν
 browser-containers-enabled =
     .label = Ενεργοποίηση θεματικών καρτελών
     .accesskey = ν
 browser-containers-learn-more = Μάθετε περισσότερα
+browser-containers-settings-2 =
+    .label = Διαχείριση ρυθμίσεων
+    .accesskey = ι
 browser-containers-settings =
     .label = Ρυθμίσεις…
     .accesskey = ι
 containers-disable-alert-title = Κλείσιμο όλων των θεματικών καρτελών;
+startup-group =
+    .label = Εκκίνηση
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
@@ -230,6 +340,23 @@ containers-remove-cancel-button = Διατήρηση θεματικής ενότ
 settings-tabs-show-image-in-preview =
     .label = Εμφάνιση εικόνας προεπισκόπησης όταν τοποθετείτε τον δείκτη του ποντικιού σε μια καρτέλα
     .accessKey = μ
+settings-tabs-drag-to-create-tab-groups =
+    .label = Σύρετε τις καρτέλες μαζί για να δημιουργήσετε ομάδες
+browser-layout-header2 =
+    .label = Διάταξη προγράμματος περιήγησης
+browser-layout-horizontal-tabs2 =
+    .label = Οριζόντιες καρτέλες
+    .title = Καρτέλες στο πάνω μέρος
+    .description = Καρτέλες στο πάνω μέρος
+browser-layout-vertical-tabs2 =
+    .label = Κάθετες καρτέλες
+    .title = Καρτέλες στο πλάι, στην πλαϊνή γραμμή
+    .description = Καρτέλες στο πλάι, στην πλαϊνή γραμμή
+browser-layout-show-sidebar2 =
+    .label = Εμφάνιση πλαϊνής γραμμής
+    .description = Αποκτήστε γρήγορη πρόσβαση σε σελιδοδείκτες, καρτέλες από το τηλέφωνό σας, chatbot ΤΝ και πολλά άλλα χωρίς να αποχωρήσετε από την κύρια προβολή.
+page-navigation-group =
+    .label = Πλοήγηση στις σελίδες
 browser-layout-header = Διάταξη προγράμματος περιήγησης
 browser-layout-horizontal-tabs =
     .label = Οριζόντιες καρτέλες
@@ -244,8 +371,22 @@ browser-layout-show-sidebar-desc = Αποκτήστε γρήγορη πρόσβ�
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Γλώσσα και εμφάνιση
+appearance-group2 =
+    .label = Εμφάνιση ιστοτόπων
+    .description = Ορισμένοι ιστότοποι αλλάζουν τα χρώματά τους ανάλογα με τις προτιμήσεις σας. Επιλέξτε το σύνολο χρωμάτων σας.
+preferences-web-appearance-choice-auto3 =
+    .label = Σύστημα
+    .title = Αυτόματη αλλαγή του φόντου και του περιεχομένου των ιστοτόπων με βάση τις ρυθμίσεις του συστήματός σας και το θέμα του { -brand-short-name }.
 preferences-web-appearance-header = Εμφάνιση ιστοτόπου
 preferences-web-appearance-description = Ορισμένοι ιστότοποι προσαρμόζουν το σύνολο χρωμάτων τους με βάση τις προτιμήσεις σας. Επιλέξτε ποιο σύνολο χρωμάτων θέλετε να χρησιμοποιήσετε για αυτούς τους ιστοτόπους.
+preferences-web-appearance-choice-light2 =
+    .label = Ανοιχτόχρωμο
+    .title = Χρήση ανοιχτόχρωμης εμφάνισης για φόντο και περιεχόμενο ιστοτόπων.
+preferences-web-appearance-choice-dark2 =
+    .label = Σκουρόχρωμο
+    .title = Χρήση σκουρόχρωμης εμφάνισης για φόντο και περιεχόμενο ιστοτόπων.
+web-appearance-group =
+    .aria-label = Εμφάνιση ιστοτόπων
 preferences-web-appearance-choice-auto = Αυτόματο
 preferences-web-appearance-choice-light = Ανοιχτόχρωμο
 preferences-web-appearance-choice-dark = Σκουρόχρωμο
@@ -265,40 +406,51 @@ preferences-web-appearance-choice-input-dark =
 # system colors.
 preferences-web-appearance-override-warning3 =
     .message = Οι ρυθμίσεις σας για τον έλεγχο αντίθεσης υπερισχύουν της εμφάνισης του ιστοτόπου.
+preferences-web-appearance-link =
+    .label = Διαχείριση των θεμάτων του { -brand-short-name } στην ενότητα «Επεκτάσεις και θέματα»
+preferences-contrast-control-group =
+    .label = Αντίθεση ιστοτόπων
+    .description = Οι ιστότοποι χρησιμοποιούν μια ποικιλία χρωμάτων προσκηνίου και παρασκηνίου. Για τη συνέπεια των ρυθμίσεων αντίθεσης, μπορείτε να χρησιμοποιήσετε τα ίδια χρώματα σε όλους τους ιστοτόπους.
+preferences-contrast-control-radio-group =
+    .label = Παράκαμψη χρωμάτων
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Οι επιλογές χρωμάτων σας υπερισχύουν της εμφάνισης του ιστοτόπου. <a data-l10n-name="colors-link">Διαχείριση χρωμάτων</a>
-# This can appear when using windows HCM or "Override colors: always" without
-# system colors.
-preferences-web-appearance-override-warning2 =
-    .message = Οι επιλογές χρωμάτων σας υπερισχύουν της εμφάνισης του ιστοτόπου.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = Διαχειριστείτε τα θέματα του { -brand-short-name } στην ενότητα <a data-l10n-name="themes-link">Επεκτάσεις και θέματα</a>
+preferences-web-appearance-footer = Διαχείριση των θεμάτων του { -brand-short-name } στις <a data-l10n-name="themes-link">Επεκτάσεις και θέματα</a>
 preferences-contrast-control-header = Έλεγχος αντίθεσης
 preferences-contrast-control-description = Οι ιστότοποι διαθέτουν μια ποικιλία χρωμάτων προσκηνίου και παρασκηνίου. Ρυθμίστε το { -brand-short-name }, ώστε να χρησιμοποιεί τα ίδια χρώματα σε όλους τους ιστοτόπους για ευκολότερη ανάγνωση.
 preferences-contrast-control-use-platform-settings =
-    .label = Αυτόματος (χρήση ρυθμίσεων συστήματος)
+    .label = Αυτόματα (χρήση ρυθμίσεων συστήματος)
     .accesskey = Α
 preferences-contrast-control-off =
-    .label = Ανενεργός
+    .label = Ανενεργή
     .accesskey = ν
 preferences-contrast-control-custom =
-    .label = Προσαρμοσμένος
+    .label = Προσαρμοσμένη
     .accesskey = Π
+preferences-colors-manage-button2 =
+    .label = Διαχείριση χρωμάτων
+    .accesskey = ω
 preferences-colors-header = Χρώματα
 preferences-colors-description = Αντικατάσταση των προεπιλεγμένων χρωμάτων του { -brand-short-name } για κείμενο, παρασκήνια ιστοτόπων και συνδέσμους.
 preferences-colors-manage-button =
     .label = Διαχείριση χρωμάτων…
     .accesskey = ω
+preferences-fonts-header2 =
+    .label = Γραμματοσειρές
 preferences-fonts-header = Γραμματοσειρές
 default-font = Προεπιλεγμένη γραμματοσειρά
     .accesskey = Π
 default-font-size = Μέγεθος
     .accesskey = Μ
 advanced-fonts =
-    .label = Σύνθετα…
+    .label = Σύνθετες επιλογές…
     .accesskey = Σ
+preferences-default-zoom-label =
+    .label = Προεπιλεγμένο ζουμ
+    .accesskey = ζ
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Ζουμ
 preferences-default-zoom = Προεπιλεγμένο ζουμ
@@ -310,10 +462,34 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = Ζουμ μόνο στο κείμενο
     .accesskey = κ
+preferences-text-zoom-override-warning2 =
+    .message = Εάν είναι ενεργή η επιλογή «Ζουμ μόνο στο κείμενο» και το προεπιλεγμένο ζουμ δεν είναι 100%, ορισμένοι ιστότοποι ενδέχεται να μην εμφανίζουν σωστά το περιεχόμενό τους.
 preferences-text-zoom-override-warning =
     .message = Προειδοποίηση: Εάν επιλέξετε «Ζουμ μόνο στο κείμενο» και το προεπιλεγμένο ζουμ δεν έχει οριστεί στο 100%, ενδέχεται να προκληθεί δυσλειτουργία σε ορισμένους ιστοτόπους ή περιεχόμενο.
 language-header = Γλώσσα
 choose-language-description = Επιλέξτε την προτιμώμενη γλώσσα για την εμφάνιση σελίδων
+website-language-heading =
+    .label = Γλώσσα ιστοτόπων
+    .description = Ορισμένες ιστοσελίδες προβάλλονται σε πολλαπλές γλώσσες. Επιλέξτε γλώσσες με τη σειρά προτίμησής σας.
+website-preferred-language =
+    .label = Προτιμώμενες γλώσσες
+website-add-language =
+    .label = Προσθήκη γλώσσας
+website-add-language-button =
+    .aria-label = Προσθήκη επιλεγμένης γλώσσας
+    .title = Προσθήκη επιλεγμένης γλώσσας
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = Αφαίρεση της γλώσσας «{ $locale }»
+    .title = Αφαίρεση της γλώσσας «{ $locale }»
 choose-button =
     .label = Επιλογή…
     .accesskey = λ
@@ -323,6 +499,16 @@ manage-browser-languages-button =
     .accesskey = ν
 confirm-browser-language-change-description = Επανεκκίνηση του { -brand-short-name } για εφαρμογή αλλαγών
 confirm-browser-language-change-button = Εφαρμογή και επανεκκίνηση
+browser-language-heading =
+    .label = Γλώσσα προγράμματος περιήγησης
+    .description = Επιλέξτε τη γλώσσα που χρησιμοποιείται για την εμφάνιση των μενού, μηνυμάτων και ειδοποιήσεων από το { -brand-short-name }.
+browser-language-preferred-label =
+    .label = Προτιμώμενη γλώσσα
+browser-language-fallback-label =
+    .label = Εφεδρική γλώσσα
+    .description = Χρησιμοποιείται όταν η μετάφραση στην προτιμώμενη γλώσσα δεν είναι ολοκληρωμένη.
+browser-language-install-error =
+    .message = Το { -brand-short-name } δεν μπορεί να ενημερώσει τις γλώσσες σας αυτήν τη στιγμή. Ελέγξτε αν έχετε συνδεθεί στο διαδίκτυο ή δοκιμάστε ξανά.
 translate-web-pages =
     .label = Μετάφραση περιεχομένου του ιστού
     .accesskey = τ
@@ -333,17 +519,96 @@ translate-attribution = Μεταφράσεις από <img data-l10n-name="logo"
 translate-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
+settings-translations-header =
+    .label = Μεταφράσεις
+    .aria-label = Μεταφράσεις
+    .description = Μετάφραση σελίδων ή επιλεγμένου κειμένου. Για την προστασία του απορρήτου σας, οι μεταφράσεις παραμένουν στη συσκευή σας.
+settings-translations-offer-to-translate-label =
+    .label = Προσφορά ολοσέλιδης μετάφρασης
+settings-translations-more-settings-button =
+    .label = Περισσότερες ρυθμίσεις μετάφρασης
+    .description = Καθορίστε προτιμήσεις για γλώσσες, ιστοτόπους και μετάφραση εκτός σύνδεσης.
+settings-translations-subpage-header =
+    .heading = Περισσότερες ρυθμίσεις μετάφρασης
+settings-translations-subpage-speed-up-translation-header =
+    .label = Επιτάχυνση μετάφρασης
+    .description = Κάντε λήψη ολόκληρων γλωσσών για ταχύτερες μεταφράσεις και μετάφραση εκτός σύνδεσης.
+settings-translations-subpage-automatic-translation-header =
+    .label = Αυτόματη μετάφραση
+settings-translations-subpage-always-translate-header =
+    .label = Να μεταφράζονται πάντα αυτές οι γλώσσες
+settings-translations-subpage-never-translate-header =
+    .label = Να μην μεταφράζονται ποτέ αυτές οι γλώσσες
+settings-translations-subpage-never-translate-sites-header =
+    .label = Να μην μεταφράζονται ποτέ αυτοί οι ιστότοποι
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = Για να προσθέσετε έναν ιστότοπο, ανοίξτε τον <img data-l10n-name="translations-icon"/> πίνακα μεταφράσεων, επιλέξτε τις <img data-l10n-name="settings-icon"/> ρυθμίσεις μετάφρασης και επιλέξτε «Να μην μεταφράζεται ποτέ αυτός ο ιστότοπος»
+settings-translations-subpage-language-select-option =
+    .label = Προσθήκη γλώσσας
+settings-translations-subpage-language-add-button =
+    .aria-label = Προσθήκη γλώσσας
+    .title = Προσθήκη γλώσσας
+settings-translations-subpage-download-languages-header =
+    .label = Λήψη γλωσσών
+settings-translations-subpage-download-languages-select-option =
+    .label = Επιλογή γλώσσας
+settings-translations-subpage-download-languages-button =
+    .aria-label = Λήψη γλώσσας
+    .title = Λήψη γλώσσας
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size }MB)
+    .label = { $language } ({ $size }MB)
+settings-translations-subpage-no-languages-downloaded =
+    .label = Δεν έχει γίνει λήψη γλωσσών
+settings-translations-subpage-no-languages-added =
+    .label = Δεν έχουν προστεθεί γλώσσες
+settings-translations-subpage-download-progress = Λήψη σε εξέλιξη…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = Δεν ήταν δυνατή η λήψη της γλώσσας «{ $language }» ({ $size }MB)
+settings-translations-subpage-download-retry-button =
+    .label = Δοκιμή ξανά
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = Διαγραφή της γλώσσας «{ $language }» ({ $size }MB);
+settings-translations-subpage-download-delete-button =
+    .label = Διαγραφή
+settings-translations-subpage-download-cancel-button =
+    .label = Ακύρωση
+settings-translations-subpage-no-sites-added =
+    .label = Δεν έχουν προστεθεί ιστότοποι
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = Χρήση ρυθμίσεων λειτουργικού συστήματος για τα «{ $localeName }» για μορφοποίηση ημερομηνίας, ώρας, αριθμών και μετρήσεων.
+settings-spellcheck-header =
+    .label = Ορθογραφικός έλεγχος
 check-user-spelling =
     .label = Έλεγχος ορθογραφίας κατά την πληκτρολόγηση
     .accesskey = π
+spellcheck-download-dictionaries =
+    .label = Λήψη λεξικών
+spellcheck-promo =
+    .heading = Οδηγίες χρήσης του ορθογραφικού ελέγχου
+    .message = Κάντε δεξί κλικ σε ένα πεδίο κειμένου για να (απ)ενεργοποιήσετε τον ορθογραφικό έλεγχο ή να αλλάξετε τη γλώσσα. Ο ορθογραφικός έλεγχος δεν υποστηρίζεται σε όλα τα πεδία.
 
 ## General Section - Files and Applications
 
 files-and-applications-title = Αρχεία και εφαρμογές
+download-save-files-header =
+    .label = Αποθήκευση αρχείων σε
+download-save-where-3 =
+    .aria-label = Αποθήκευση αρχείων σε
+download-always-ask-where2 =
+    .label = Ερώτηση για την τοποθεσία αποθήκευσης αρχείων πριν από τη λήψη
+    .accesskey = α
+download-private-browsing-delete2 =
+    .label = Διαγραφή των λήψεων από ιδιωτικά παράθυρα κατά το κλείσιμο
+    .accesskey = Δ
 download-header = Λήψεις
 download-save-where = Αποθήκευση αρχείων σε
     .accesskey = θ
@@ -361,19 +626,21 @@ download-choose-folder =
 download-always-ask-where =
     .label = Να γίνεται πάντα ερώτηση για την τοποθεσία αποθήκευσης αρχείων
     .accesskey = α
-download-private-browsing-delete =
-    .label = Διαγραφή αρχείων λήψης της ιδιωτικής περιήγησης κατά το κλείσιμο όλων των ιδιωτικών παραθύρων
-    .accesskey = Δ
 applications-header = Εφαρμογές
 applications-description = Επιλέξτε πώς θα χειρίζεται το { -brand-short-name } τα αρχεία λήψης από το διαδίκτυο ή τις εφαρμογές που χρησιμοποιείτε κατά την περιήγηση.
+applications-setting2 =
+    .label = Αρχεία και εφαρμογές
+    .description = Επιλέξτε πώς θα χειρίζεται το { -brand-short-name } τα αρχεία και το περιεχόμενο λήψης.
 applications-filter =
     .placeholder = Αναζήτηση τύπων αρχείων ή εφαρμογών
 applications-type-column =
     .label = Τύπος περιεχομένου
     .accesskey = Τ
+applications-type-heading = Τύπος περιεχομένου
 applications-action-column =
     .label = Ενέργεια
     .accesskey = Ε
+applications-action-heading = Ενέργεια
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = Αρχείο { $extension }
@@ -437,15 +704,23 @@ applications-use-other-label =
 applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
-##
+## Firefox updates
 
 applications-handle-new-file-types-description = Τι να κάνει το { -brand-short-name } με άλλα αρχεία;
 applications-save-for-new-types =
     .label = Αποθήκευση αρχείων
     .accesskey = Α
+applications-save-for-new-types2 =
+    .label = Αυτόματη αποθήκευση αρχείων
+    .accesskey = σ
 applications-ask-before-handling =
     .label = Ερώτηση για το εάν θα γίνεται άνοιγμα ή αποθήκευση των αρχείων
     .accesskey = Ε
+applications-ask-before-handling2 =
+    .label = Ερώτηση για άνοιγμα ή αποθήκευση των αρχείων
+    .accesskey = α
+drm-group =
+    .label = Περιεχόμενο διαχείρισης ψηφιακών δικαιωμάτων (DRM)
 drm-content-header = Περιεχόμενο διαχείρισης ψηφιακών δικαιωμάτων (DRM)
 play-drm-content =
     .label = Αναπαραγωγή περιεχομένου με έλεγχο DRM
@@ -456,6 +731,14 @@ update-application-description = Διατηρείτε το { -brand-short-name }
 # Variables:
 # $version (string) - Firefox version
 update-application-version = Έκδοση { $version } <a data-l10n-name="learn-more">Τι νέο υπάρχει</a>
+update-history-2 =
+    .label = Εμφάνιση ιστορικού ενημερώσεων
+    .accesskey = ν
+update-application-installation =
+    .label = Εγκατάσταση
+update-application-auto-2 =
+    .label = Αυτόματη εγκατάσταση ενημερώσεων (προτείνεται)
+    .accesskey = Α
 update-history =
     .label = Εμφάνιση ιστορικού ενημερώσεων…
     .accesskey = ν
@@ -463,6 +746,9 @@ update-application-allow-description = Να επιτρέπεται στο { -bra
 update-application-auto =
     .label = Αυτόματη εγκατάσταση ενημερώσεων (συνιστάται)
     .accesskey = Α
+update-application-check-choose-2 =
+    .label = Έλεγχος για ενημερώσεις, αλλά επιλογή για το πότε θα γίνει εγκατάσταση
+    .accesskey = γ
 update-application-check-choose =
     .label = Έλεγχος για ενημερώσεις, αλλά με δυνατότητα επιλογής για εγκατάσταση
     .accesskey = Ε
@@ -472,6 +758,11 @@ update-application-manual =
 update-application-background-enabled =
     .label = Όταν δεν εκτελείται το { -brand-short-name }
     .accesskey = Ό
+update-application-warning-cross-user-setting-2 =
+    .message = Αυτή η ρύθμιση θα εφαρμοστεί σε όλους τους λογαριασμούς των Windows και τα προφίλ του { -brand-short-name } που χρησιμοποιούν αυτήν την εγκατάσταση του { -brand-short-name }.
+update-application-suppress-prompts-2 =
+    .label = Εμφάνιση λιγότερων υπενθυμίσεων για ενημερώσεις
+    .accesskey = ν
 update-application-warning-cross-user-setting = Αυτή η ρύθμιση θα εφαρμοστεί σε όλους τους λογαριασμούς των Windows και τα προφίλ του { -brand-short-name } που χρησιμοποιούν αυτήν την εγκατάσταση του { -brand-short-name }.
 update-application-use-service =
     .label = Χρήση υπηρεσίας παρασκηνίου για την εγκατάσταση ενημερώσεων
@@ -495,6 +786,31 @@ update-in-progress-ok-button = &Απόρριψη
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Συνέχεια
 
+## About Firefox
+
+about-firefox-header =
+    .heading = Σχετικά με το { -brand-short-name }
+
+## Firefox updates
+
+update-application-heading =
+    .label = Ενημερώσεις του { -brand-short-name }
+    .description = Οι ενημερώσεις βελτιώνουν την ταχύτητα, τη σταθερότητα και την ασφάλεια του { -brand-short-name }.
+update-application-suppress-prompts-heading =
+    .label = Ειδοποιήσεις
+update-application-updates-managed-by-os =
+    .message = Η διαχείριση των ενημερώσεων γίνεται από το λειτουργικό σας σύστημα
+
+## Firefox support
+
+support-application-heading =
+    .label = Υποστήριξη { -brand-short-name }
+    .description = Επιλύστε ζητήματα ή μοιραστείτε ιδέες με την κοινότητα.
+support-get-help =
+    .label = Λήψη βοήθειας
+support-share-ideas =
+    .label = Κοινοποίηση ιδεών και σχολίων
+
 ## General Section - Performance
 
 performance-title = Επιδόσεις
@@ -514,8 +830,14 @@ performance-limit-content-process-blocked-desc = Η τροποποίηση το�
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (προεπιλογή)
+performance-group =
+    .label = Επιδόσεις
+performance-use-recommended-settings-checkbox-2 =
+    .label = Χρήση προτεινόμενων ρυθμίσεων επιδόσεων
+    .description = Αυτές οι ρυθμίσεις έχουν προσαρμοστεί στο υλικό και το λειτουργικό σύστημά σας.
+    .accesskey = υ
 
-## General Section - Browsing
+## Accessibility page
 
 browsing-title = Περιήγηση
 browsing-group-label =
@@ -523,6 +845,10 @@ browsing-group-label =
 browsing-use-autoscroll =
     .label = Χρήση αυτόματης κύλισης
     .accesskey = α
+keyboard-and-scrolling-group =
+    .label = Πλοήγηση και κύλιση με πληκτρολόγιο
+motion-and-link-group =
+    .label = Κίνηση και μορφοποίηση συνδέσμων
 browsing-use-smooth-scrolling =
     .label = Χρήση ομαλής κύλισης
     .accesskey = μ
@@ -544,21 +870,54 @@ browsing-use-full-keyboard-navigation =
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη της πληκτρολόγησης
     .accesskey = μ
+settings-keyboard-shortcuts-group =
+    .label = Συντομεύσεις πληκτρολογίου
+    .description = Ελέγξτε τον τρόπο με τον οποίο πλοηγείστε και αλληλεπιδράτε με το { -brand-short-name }.
+settings-keyboard-shortcuts-customkeys-link =
+    .label = Προσαρμογή συντομεύσεων πληκτρολογίου
+settings-media-group =
+    .label = Πολυμέσα
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = Χρήση εικόνας εντός εικόνας
+    .accesskey = ε
 browsing-picture-in-picture-toggle-enabled =
     .label = Ενεργοποίηση στοιχείων ελέγχου βίντεο σε λειτουργία εικόνας εντός εικόνας
     .accesskey = Ε
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = Συνέχεια αναπαραγωγής βίντεο σε λειτουργία «Εικόνα εντός εικόνας» κατά την εναλλαγή καρτελών
+    .accesskey = Σ
 browsing-picture-in-picture-learn-more = Μάθετε περισσότερα
 browsing-media-control =
     .label = Έλεγχος πολυμέσων με πληκτρολόγιο, ακουστικά ή εικονική διεπαφή
     .accesskey = λ
+recommendations-group =
+    .label = Προτάσεις
 browsing-media-control-learn-more = Μάθετε περισσότερα
 browsing-cfr-recommendations =
-    .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
+    .label = Πρόταση επεκτάσεων κατά την περιήγηση
     .accesskey = Π
 browsing-cfr-features =
-    .label = Πρόταση λειτουργιών κατά την περιήγησή σας
+    .label = Πρόταση λειτουργιών κατά την περιήγηση
     .accesskey = λ
 browsing-cfr-recommendations-learn-more = Μάθετε περισσότερα
+browsing-group =
+    .label = Περιήγηση
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = Προσβασιμότητα
+preferences-default-zoom-select =
+    .aria-label = Προεπιλεγμένο ζουμ
+preferences-fonts-family =
+    .label = Οικογένεια γραμματοσειράς
+    .accesskey = γ
+preferences-fonts-size =
+    .label = Μέγεθος γραμματοσειράς
+    .accesskey = μ
+preferences-fonts-advanced-settings =
+    .label = Σύνθετες ρυθμίσεις
+    .accesskey = Σ
 
 ## General Section - Proxy
 
@@ -568,16 +927,41 @@ network-proxy-connection-learn-more = Μάθετε περισσότερα
 network-proxy-connection-settings =
     .label = Ρυθμίσεις…
     .accesskey = θ
+network-proxy-group2 =
+    .label = Ρυθμίσεις διακομιστή μεσολάβησης
+    .description = Ρυθμίστε τον τρόπο σύνδεσης του { -brand-short-name } με το διαδίκτυο.
+network-proxy-connection-settings2 =
+    .label = Ρύθμιση διακομιστή μεσολάβησης
+    .description = Η αλλαγή αυτών των ρυθμίσεων ενδέχεται να προκαλέσει ζητήματα σύνδεσης
+    .accesskey = δ
 
 ## Home Section
 
 home-new-windows-tabs-header = Νέα παράθυρα και καρτέλες
 home-new-windows-tabs-description2 = Επιλέξτε τι θα βλέπετε όταν ανοίγετε την αρχική σας σελίδα, νέα παράθυρα και νέες καρτέλες.
+home-section =
+    .heading = Αρχική σελίδα και εκκίνηση
 
-## Home Section - Home Page Customization
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = Προεπιλεγμένο πρόγραμμα περιήγησης
+is-default-browser-2 =
+    .message = Το { -brand-short-name } είναι το προεπιλεγμένο σας πρόγραμμα περιήγησης. Καλή επιλογή!
+is-not-default-browser-2 =
+    .message = Ψιτ, το { -brand-short-name } δεν έχει οριστεί ως προεπιλογή.
+set-as-my-default-browser-2 =
+    .label = Ορισμός ως προεπιλογή
+    .accesskey = Π
+
+## Custom Homepage subpage
 
 home-homepage-mode-label = Αρχική σελίδα και νέα παράθυρα
+home-homepage-new-windows =
+    .label = Νέα παράθυρα
 home-newtabs-mode-label = Νέες καρτέλες
+home-homepage-new-tabs =
+    .label = Νέες καρτέλες
 home-restore-defaults =
     .label = Επαναφορά προεπιλογών
     .accesskey = Ε
@@ -589,6 +973,12 @@ home-mode-choice-blank =
     .label = Κενή σελίδα
 home-homepage-custom-url =
     .placeholder = Επικόλληση URL…
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = Διαχείριση επέκτασης
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = Επιλογή συγκεκριμένου ιστοτόπου
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -604,17 +994,59 @@ choose-bookmark =
     .label = Χρήση σελιδοδείκτη…
     .accesskey = σ
 
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = Αρχική σελίδα
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = Προσαρμοσμένη αρχική σελίδα
+home-custom-homepage-subpage =
+    .heading = Προσαρμοσμένη αρχική σελίδα
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = Διευθύνσεις ιστοτόπων
+home-custom-homepage-address =
+    .placeholder = Εισαγάγετε διεύθυνση
+home-custom-homepage-address-button =
+    .label = Προσθήκη διεύθυνσης
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = Δεν έχουν προστεθεί ακόμα ιστότοποι.
+home-custom-homepage-delete-address-button =
+    .aria-label = Διαγραφή διεύθυνσης
+    .title = Διαγραφή διεύθυνσης
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = Αντικατάσταση με
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = Τρέχουσες ανοικτές σελίδες
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = Σελιδοδείκτες…
+
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header2 = Περιεχόμενο οθόνης «{ -firefox-home-brand-name }»
+home-prefs-content-header2 = Περιεχόμενο { -firefox-home-brand-name(case: "gen", capitalization: "upper") }
 home-prefs-content-description2 = Επιλέξτε το περιεχόμενο που θέλετε στην οθόνη «{ -firefox-home-brand-name }».
+home-prefs-firefox-logo-header =
+    .label = Λογότυπο { -brand-short-name }
 home-prefs-search-header =
     .label = Διαδικτυακή αναζήτηση
+home-prefs-search-header2 =
+    .label = Αναζήτηση
 home-prefs-shortcuts-header =
     .label = Συντομεύσεις
 home-prefs-shortcuts-description = Ιστότοποι από σελιδοδείκτες ή ιστορικό
+home-prefs-shortcuts-select =
+    .aria-label = Συντομεύσεις
 home-prefs-shortcuts-by-option-sponsored =
     .label = Χορηγούμενες συντομεύσεις
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -624,12 +1056,18 @@ home-prefs-recommended-by-description-new = Εξαιρετικό περιεχό�
 home-prefs-recommended-by-header-generic =
     .label = Προτεινόμενα άρθρα
 home-prefs-recommended-by-description-generic = Εξαιρετικό περιεχόμενο από την οικογένεια του { -brand-product-name }
+home-prefs-stories-header =
+    .label = Άρθρα
+home-prefs-stories-description = Εξατομικευμένα άρθρα με βάση τη δραστηριότητά σας
+home-prefs-stories-header2 =
+    .label = Άρθρα
+    .description = Εξαιρετικό περιεχόμενο από την οικογένεια του { -brand-product-name }
 
 ##
 
 home-prefs-recommended-by-learn-more = Πώς λειτουργεί
 home-prefs-recommended-by-option-sponsored-stories =
-    .label = Χορηγούμενες ιστορίες
+    .label = Χορηγούμενα άρθρα
 home-prefs-recommended-by-option-recent-saves =
     .label = Εμφάνιση πρόσφατων αποθηκεύσεων
 home-prefs-highlights-option-visited-pages =
@@ -643,6 +1081,8 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-recent-activity-header =
     .label = Πρόσφατη δραστηριότητα
 home-prefs-recent-activity-description = Μια συλλογή πρόσφατων ιστοτόπων και περιεχομένου
+home-prefs-recent-activity-select =
+    .aria-label = Πρόσφατη δραστηριότητα
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -654,14 +1094,43 @@ home-prefs-weather-header =
     .label = Καιρός
 home-prefs-weather-description = Σημερινή πρόγνωση με μια ματιά
 home-prefs-weather-learn-more-link = Μάθετε περισσότερα
-home-prefs-trending-search-header =
-    .label = Δημοφιλείς αναζητήσεις
-home-prefs-trending-search-description = Δημοφιλή και συνήθη θέματα αναζήτησης
+home-prefs-widgets-header =
+    .label = Γραφικά στοιχεία
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = Λίστες
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = Αντίστροφη μέτρηση
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = Αθλήματα
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = Ρολόι
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
-    .label = Υποστηρίξτε τη { -brand-product-name }
+    .label = Υποστηρίξτε το { -brand-product-name }
 home-prefs-mission-message = Οι χορηγοί μας υποστηρίζουν την αποστολή μας για ένα καλύτερο διαδίκτυο
 home-prefs-mission-message-learn-more-link = Μάθετε πώς
+home-prefs-mission-message2 =
+    .message = Οι χορηγοί μας υποστηρίζουν την αποστολή μας για ένα καλύτερο διαδίκτυο.
+home-prefs-manage-topics-link = Διαχείριση θεμάτων
+home-prefs-manage-topics-link2 =
+    .label = Διαχείριση θεμάτων
+home-prefs-choose-wallpaper-link = Επιλογή ταπετσαρίας
+home-prefs-choose-wallpaper-link2 =
+    .label = Επιλογή ταπετσαρίας
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = Για να χρησιμοποιήσετε αυτές τις λειτουργίες, ρυθμίστε τις νέες καρτέλες ή τα νέα παράθυρα στην { -firefox-home-brand-name }.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = Επέκταση ({ $extension })
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -695,10 +1164,35 @@ search-show-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Εμφάνιση προτάσεων αναζήτησης στα αποτελέσματα της γραμμής διευθύνσεων
     .accesskey = τ
-# With this option enabled, on the search results page
-# the URL will be replaced by the search terms in the address bar.
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = Εμφάνιση προτάσεων αναζήτησης πριν από το ιστορικό περιήγησης στα αποτελέσματα της γραμμής διευθύνσεων
+search-show-suggestions-private-windows-2 =
+    .label = Προτάσεις αναζήτησης σε ιδιωτικά παράθυρα
+search-suggestions-cant-show-2 =
+    .message = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } έτσι ώστε να μην διατηρεί ποτέ το ιστορικό.
+addressbar-header-1 =
+    .label = Γραμμή διευθύνσεων
+    .description = Επιλέξτε ποιες προτάσεις θα εμφανίζονται στη γραμμή διευθύνσεων
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name(case: "nom") }
+    .description = Προτάσεις από το { -brand-short-name } και τους συνεργάτες μας στη γραμμή διευθύνσεών σας.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
 search-show-search-term-option-2 =
-    .label = Εμφάνιση όρων αναζήτησης στη γραμμή διευθύνσεων όταν βρίσκεστε σε σελίδες αποτελεσμάτων
+    .label = Εμφάνιση όρων αναζήτησης στη γραμμή διευθύνσεων για σελίδες αποτελεσμάτων
+search-separate-default-engine-2 =
+    .label = Χρήση διαφορετικής μηχανής αναζήτησης στα ιδιωτικά παράθυρα
+    .accesskey = Χ
+search-separate-default-engine-dropdown =
+    .aria-label = Προεπιλεγμένη μηχανή αναζήτησης σε ιδιωτικά παράθυρα
+search-suggestions-header-2 =
+    .label = Προτάσεις μηχανής αναζήτησης
 # With this option enabled, on the search results page
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
@@ -710,19 +1204,32 @@ search-show-search-term-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Εμφάνιση προτάσεων αναζήτησης πριν από το ιστορικό περιήγησης στα αποτελέσματα γραμμής διευθύνσεων
+    .label = Εμφάνιση προτάσεων αναζήτησης πριν από το ιστορικό περιήγησης στα αποτελέσματα της γραμμής διευθύνσεων
 search-show-suggestions-private-windows =
     .label = Εμφάνιση προτάσεων αναζήτησης σε ιδιωτικά παράθυρα
 suggestions-addressbar-settings-generic2 = Αλλαγή ρυθμίσεων για άλλες προτάσεις της γραμμής διευθύνσεων
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } έτσι ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header2 = Συντομεύσεις αναζήτησης
 search-one-click-desc = Επιλέξτε τις εναλλακτικές μηχανές αναζήτησης που εμφανίζονται κάτω από τη γραμμή διευθύνσεων και τη γραμμή αναζήτησης όταν αρχίσετε να πληκτρολογείτε μια λέξη-κλειδί.
+search-one-click-header-3 =
+    .label = Πρόσθετες μηχανές αναζήτησης
+    .description = Επιλέξτε ποιες μηχανές αναζήτησης και συντομεύσεις θα εμφανίζονται στη γραμμή διευθύνσεων.
+update-search-engine-success =
+    .message = Επιτυχής ενημέρωση μηχανής αναζήτησης
+search-edit-engine-2 =
+    .title = Επεξεργασία μηχανής αναζήτησης
+search-delete-engine =
+    .title = Διαγραφή μηχανής αναζήτησης
+search-enable-engine =
+    .title = Ενεργοποίηση μηχανής αναζήτησης
+search-outlink-to-extensions-page =
+    .title = Διαχείριση στη σελίδα «Επεκτάσεις και θέματα»
 search-choose-engine-column =
     .label = Μηχανή αναζήτησης
 search-choose-keyword-column =
     .label = Λέξη-κλειδί
 search-restore-default =
-    .label = Επαναφορά προεπιλεγμένων μηχανών αναζήτησης
+    .label = Επαναφορά προεπιλογών
     .accesskey = φ
 search-remove-engine =
     .label = Αφαίρεση
@@ -730,10 +1237,14 @@ search-remove-engine =
 search-add-engine =
     .label = Προσθήκη
     .accesskey = Π
+search-add-engine-2 =
+    .label = Προσθήκη μηχανής αναζήτησης
+    .accesskey = Π
 search-edit-engine =
     .label = Επεξεργασία
     .accesskey = Ε
 search-find-more-link = Εύρεση περισσότερων μηχανών αναζήτησης
+search-filtering-for-add-engine = Προσθήκη μηχανής
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Διπλή λέξη-κλειδί
@@ -748,12 +1259,21 @@ edit-engine-name-warning-duplicate = Υπάρχει ήδη μια μηχανή �
 remove-engine-confirmation = Θέλετε σίγουρα να αφαιρέσετε αυτήν τη μηχανή αναζήτησης;
 remove-engine-remove = Αφαίρεση
 remove-addon-engine-alert = Για να αφαιρέσετε αυτήν τη μηχανή αναζήτησης, καταργήστε το σχετικό πρόσθετο.
+search-engine-group =
+    .label = Προεπιλεγμένη μηχανή αναζήτησης
+search-default-engine =
+    .aria-label = Προεπιλεγμένη μηχανή αναζήτησης
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = Αναζήτηση
 
 ## Containers Section
 
 containers-back-button2 =
     .aria-label = Πίσω στις ρυθμίσεις
 containers-header = Θεματικές καρτέλες
+containers-section-header =
+    .heading = Θεματικές καρτέλες
 containers-add-button =
     .label = Προσθήκη νέας θεματικής ενότητας
     .accesskey = Π
@@ -764,6 +1284,44 @@ containers-settings-button =
     .label = Ρυθμίσεις
 containers-remove-button =
     .label = Αφαίρεση
+containers-section-header2 =
+    .heading = Ρυθμίσεις θεματικών ενοτήτων
+containers-card-header2 =
+    .label = Θεματικές ενότητες
+    .description = Διαχωρίζοντας τα cookie ανά θεματική ενότητα, μπορείτε να χρησιμοποιείτε διαφορετικούς λογαριασμούς στον ίδιο ιστότοπο και να περιορίζετε την καταγραφή μεταξύ των ιστοτόπων.
+containers-add-button2 =
+    .label = Προσθήκη νέας θεματικής ενότητας
+    .accesskey = α
+containers-new-tab-check3 =
+    .label = Επιλογή θεματικής ενότητας για κάθε νέα καρτέλα
+    .accesskey = Ε
+containers-new-tab-check2 =
+    .label = Επιλογή θεματικής ενότητας για κάθε νέα καρτέλα
+    .accesskey = Ε
+    .description = Το μενού θεματικών ενοτήτων θα ανοίγει κάθε φορά που επιλέγετε το κουμπί ανοίγματος νέας καρτέλας.
+containers-settings-button2 =
+    .title = Ρυθμίσεις
+containers-remove-button3 =
+    .title = Διαγραφή
+containers-remove-button2 =
+    .title = Αφαίρεση
+
+## Account and sync
+
+sync-group-label =
+    .label = Συγχρονισμός
+account-group-label2 =
+    .label = Λογαριασμός
+account-disabled-group =
+    .label = Λογαριασμός
+    .description = Δεν είναι διαθέσιμες οι ρυθμίσεις λογαριασμού.
+account-placeholder2 =
+    .label = Δεν έχετε συνδεθεί
+    .description = Συνδεθείτε και διατηρήστε τα δεδομένα σας ιδιωτικά, κρυπτογραφημένα και άμεσα προσβάσιμα, οπουδήποτε χρησιμοποιείτε το { -brand-short-name }.
+account-sync-section =
+    .heading = Λογαριασμός και συγχρονισμός
+pane-account-sync-title2 = Λογαριασμός και συγχρονισμός
+    .title = Λογαριασμός και συγχρονισμός
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -772,6 +1330,12 @@ sync-signedout-caption = Πάρτε μαζί σας το διαδίκτυο
 sync-signedout-description2 = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις ρυθμίσεις σας σε όλες τις συσκευές σας.
 sync-signedout-account-signin3 =
     .label = Σύνδεση για συγχρονισμό…
+    .accesskey = ν
+sync-signedout-account-signin-4 =
+    .label = Συνδεθείτε στον λογαριασμό σας για να ξεκινήσει ο συγχρονισμός
+    .accesskey = ν
+sync-signedout-account-short =
+    .label = Σύνδεση
     .accesskey = ν
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -797,14 +1361,37 @@ fxa-login-rejected-warning =
 sync-sign-out =
     .label = Αποσύνδεση…
     .accesskey = ν
+sync-sign-out2 =
+    .label = Αποσύνδεση
+    .accesskey = ν
 sync-manage-account = Διαχείριση λογαριασμού
+    .accesskey = η
+sync-manage-account2 =
+    .label = Διαχείριση λογαριασμού
     .accesskey = η
 
 ## Variables
 ## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
 
 sync-signedin-unverified = { $email } Μη επαληθευμένος.
+sync-signedin-unverified2 =
+    .label = Το { $email } δεν έχει επιβεβαιωθεί ακόμα
+    .description = Ελέγξτε τα εισερχόμενά σας για να επιβεβαιώσετε τον λογαριασμό σας.
 sync-signedin-login-failure = Συνδεθείτε ξανά για επανασύνδεση του { $email }
+sync-signedin-login-failure2 =
+    .label = Έχετε αποσυνδεθεί από το { $email }
+    .description = Συνδεθείτε ξανά για να ξεκινήσετε τον συγχρονισμό των δεδομένων σας.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
 
 ##
 
@@ -824,9 +1411,17 @@ sync-sign-in =
 ## Sync section - enabling or disabling sync.
 
 prefs-syncing-on = Συγχρονισμός: ΕΝΕΡΓΟΣ
+prefs-syncing-on-2 =
+    .label = Ο συγχρονισμός είναι ΕΝΕΡΓΟΣ
 prefs-syncing-off = Συγχρονισμός: ΑΝΕΝΕΡΓΟΣ
+prefs-syncing-off-2 =
+    .label = Ο συγχρονισμός είναι ΑΝΕΝΕΡΓΟΣ
+    .description = Ενεργοποιήστε τον συγχρονισμό για να λάβετε τους σελιδοδείκτες, τους κωδικούς πρόσβασης, το ιστορικό και πολλά άλλα σε οποιαδήποτε συσκευή.
 prefs-sync-turn-on-syncing =
     .label = Ενεργοποίηση συγχρονισμού…
+    .accesskey = ρ
+prefs-sync-turn-on-syncing-2 =
+    .label = Ενεργοποίηση συγχρονισμού
     .accesskey = ρ
 prefs-sync-offer-setup-label2 = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις ρυθμίσεις σας σε όλες τις συσκευές σας.
 prefs-sync-now =
@@ -836,12 +1431,22 @@ prefs-sync-now =
 prefs-sync-now-button =
     .label = Συγχρονισμός τώρα
     .accesskey = τ
+prefs-sync-now-button-2 =
+    .label = Συγχρονισμός τώρα
+    .accesskey = τ
 prefs-syncing-button =
     .label = Συγχρονισμός…
+prefs-syncing-button-2 =
+    .label = Συγχρονισμός…
+    .title = Συγχρονισμός τώρα
 
 ## The list of things currently syncing.
 
 sync-syncing-across-devices-heading = Μπορείτε να συγχρονίσετε αυτά τα στοιχεία σε όλες τις συνδεδεμένες συσκευές σας:
+sync-syncing-across-devices-heading-2 = Συγχρονισμένα δεδομένα μεταξύ των συσκευών
+sync-syncing-across-devices-empty-state2 =
+    .label = Διαχείριση συγχρονισμένων δεδομένων
+    .description = Δεν συγχρονίζετε τίποτα… ακόμα. Ξεκινήστε τον συγχρονισμό για να λάβετε όλα τα δεδομένα σας σε όλες τις συσκευές σας.
 sync-currently-syncing-bookmarks = Σελιδοδείκτες
 sync-currently-syncing-history = Ιστορικό
 sync-currently-syncing-tabs = Ανοικτές καρτέλες
@@ -855,6 +1460,11 @@ sync-currently-syncing-settings = Ρυθμίσεις
 sync-manage-options =
     .label = Διαχείριση συγχρονισμού…
     .accesskey = Δ
+sync-manage-options-2 =
+    .label = Διαχείριση συγχρονισμένων δεδομένων
+    .accesskey = Δ
+settings-sync-disconnect-button =
+    .label = Αποσύνδεση
 sync-change-options =
     .label = Αλλαγή…
     .accesskey = Α
@@ -908,8 +1518,8 @@ sync-engine-settings =
     .tooltiptext = Ρυθμίσεις που έχετε αλλάξει στις ενότητες «Γενικά» και «Απόρρητο και ασφάλεια»
     .accesskey = θ
 sync-choose-what-to-sync-dialog4 =
-    .title = Διαχειριστείτε τι συγχρονίζεται σε όλες τις συνδεδεμένες συσκευές σας
-    .style = min-width: 36em;
+    .title = Διαχείριση δεδομένων προς συγχρονισμό με όλες τις συνδεδεμένες συσκευές
+    .style = min-width: 39em;
     .buttonlabelaccept = Αποθήκευση
     .buttonaccesskeyaccept = Α
     .buttonlabelextra2 = Αποσύνδεση…
@@ -918,6 +1528,16 @@ sync-choose-what-to-sync-dialog4 =
 ## The device name controls.
 
 sync-device-name-header = Όνομα συσκευής
+sync-device-name-header-2 =
+    .label = Όνομα συσκευής
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = Όνομα συσκευής
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = Αλλαγή ονόματος συσκευής
+    .accesskey = λ
 sync-device-name-change =
     .label = Αλλαγή ονόματος συσκευής…
     .accesskey = λ
@@ -928,6 +1548,8 @@ sync-device-name-save =
     .label = Αποθήκευση
     .accesskey = θ
 sync-connect-another-device = Σύνδεση άλλης συσκευής
+sync-connect-another-device-2 =
+    .label = Σύνδεση άλλης συσκευής
 
 ## These strings are shown in a desktop notification after the
 ## user requests we resend a verification email.
@@ -953,16 +1575,22 @@ forms-ask-to-save-logins =
     .label = Ερώτηση για αποθήκευση στοιχείων σύνδεσης για ιστοτόπους
     .accesskey = ρ
 
-## Privacy Section - Passwords
+## Privacy Panel Settings
 
 # "Logins" is the former term for "Passwords". Users should find password settings
 # by searching for the former term "logins". It's not displayed in the UI.
 pane-privacy-passwords-header = Κωδικοί πρόσβασης
     .searchkeywords = συνδέσεις
+forms-passwords-header =
+    .label = Κωδικοί πρόσβασης
+    .aria-label = Κωδικοί πρόσβασης
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-passwords =
     .label = Ερώτηση για αποθήκευση κωδικών πρόσβασης
     .accesskey = Ε
+forms-manage-password-exceptions =
+    .label = Διαχείριση εξαιρέσεων κωδικών πρόσβασης
+    .accesskey = Δ
 forms-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
@@ -993,15 +1621,41 @@ forms-saved-logins =
 forms-fill-usernames-and-passwords =
     .label = Αυτόματη συμπλήρωση ονομάτων χρήστη και κωδικών πρόσβασης
     .accesskey = υ
+forms-fill-usernames-and-passwords-2 =
+    .label = Αποθήκευση και αυτόματη συμπλήρωση ονομάτων χρήστη και κωδικών πρόσβασης
+    .accesskey = θ
 forms-saved-passwords =
     .label = Αποθηκευμένοι κωδικοί πρόσβασης
     .accesskey = θ
+forms-saved-passwords-2 =
+    .label = Διαχείριση αποθηκευμένων κωδικών πρόσβασης
+    .accesskey = χ
+forms-saved-passwords-searchkeywords = Οι συνδέσεις των ακόλουθων ιστοσελίδων αποθηκεύονται στον υπολογιστή σας
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = Πρόσθετα μέτρα προστασίας
 forms-primary-pw-use =
     .label = Χρήση κύριου κωδικού πρόσβασης
     .accesskey = Χ
+forms-primary-pw-use-2 =
+    .label = Χρήση κύριου κωδικού πρόσβασης
+    .description = Προσθέτει ένα επιπλέον επίπεδο ασφαλείας για την προστασία των αποθηκευμένων κωδικών πρόσβασής σας.
+    .accesskey = Χ
+forms-primary-pw-set =
+    .label = Ορισμός κύριου κωδικού πρόσβασης
+forms-primary-pw-on-2 = Ο κύριος κωδικός πρόσβασης είναι <strong>ΕΝΕΡΓΟΣ</strong>
+forms-primary-pw-on =
+    .label = Ο κύριος κωδικός πρόσβασης είναι ΕΝΕΡΓΟΣ
+forms-primary-pw-change-2 =
+    .label = Αλλαγή κύριου κωδικού πρόσβασης
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = Απενεργοποίηση
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
     .label = Απαίτηση σύνδεσης μέσω συσκευής για συμπλήρωση και διαχείριση κωδικών πρόσβασης
+forms-os-reauth-2 =
+    .label = Απαίτηση σύνδεσης μέσω συσκευής για τη διαχείριση των κωδικών πρόσβασης
 forms-primary-pw-learn-more-link = Μάθετε περισσότερα
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -1023,6 +1677,17 @@ forms-windows-sso =
 forms-windows-sso-learn-more-link = Μάθετε περισσότερα
 forms-windows-sso-desc = Διαχειριστείτε τους λογαριασμούς σας στις ρυθμίσεις συσκευής
 windows-passkey-settings-label = Διαχείριση κλειδιών πρόσβασης στις ρυθμίσεις συστήματος
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = Ρυθμίσεις πίνακα απορρήτου
+    .description = Λάβετε βοήθεια με την προστασία των πληροφοριών σας στο { -brand-short-name }.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = Εμφάνιση μηνυμάτων παραβίασης
+    .accesskey = υ
 
 ## OS Authentication dialog
 
@@ -1058,6 +1723,77 @@ autofill-saved-payment-methods-button = Αποθηκευμένες μέθοδο�
 # This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox = Απαίτηση σύνδεσης μέσω συσκευής για συμπλήρωση και διαχείριση μεθόδων πληρωμής
     .accesskey = σ
+autofill-payment-methods-header =
+    .aria-label = Μέθοδοι πληρωμής
+autofill-payment-methods-checkbox-message-2 =
+    .label = Αποθήκευση και αυτόματη συμπλήρωση στοιχείων πληρωμής
+    .accesskey = π
+autofill-payment-methods-manage-payments-title =
+    .heading = Διαχείριση μεθόδων πληρωμής
+autofill-payment-methods-manage-payments-button =
+    .label = Διαχείριση μεθόδων πληρωμής
+    .accesskey = μ
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = Απαίτηση σύνδεσης μέσω συσκευής για αυτόματη συμπλήρωση και διαχείριση μεθόδων πληρωμής
+    .accesskey = π
+autofill-payment-methods-add-button = Προσθήκη νέας μεθόδου πληρωμής
+payments-list-header =
+    .label = Μέθοδοι πληρωμής
+payments-delete-payment-prompt-title = Αφαίρεση μεθόδου πληρωμής;
+payments-delete-payment-prompt-confirm-button = Διαγραφή
+payments-delete-payment-prompt-cancel-button = Ακύρωση
+payments-delete-payment-button-label =
+    .aria-label = Διαγραφή
+payments-edit-payment-button-label =
+    .aria-label = Επεξεργασία
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = Δεν έχουν προστεθεί μέθοδοι πληρωμής
+autofill-addresses-checkbox-message =
+    .label = Αποθήκευση και αυτόματη συμπλήρωση διευθύνσεων
+    .accesskey = Α
+autofill-addresses-manage-addresses-button =
+    .label = Διαχείριση διευθύνσεων και άλλων
+    .accesskey = Δ
+addresses-list-header =
+    .label = Διευθύνσεις
+addreses-delete-address-button-label =
+    .aria-label = Διαγραφή
+addreses-edit-address-button-label =
+    .aria-label = Επεξεργασία
+addresses-delete-address-prompt-title = Διαγραφή διεύθυνσης;
+addresses-delete-address-prompt-confirm-button = Διαγραφή
+addresses-delete-address-prompt-cancel-button = Ακύρωση
+autofill-addresses-add-button = Προσθήκη νέας διεύθυνσης
+autofill-addresses-manage-addresses-title =
+    .heading = Διαχείριση διευθύνσεων και άλλων
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = Δεν έχουν προστεθεί διευθύνσεις
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = Κωδικοί πρόσβασης και αυτόματη συμπλήρωση
+    .title = Κωδικοί πρόσβασης και αυτόματη συμπλήρωση
+preferences-passwords-autofill-header =
+    .heading = Κωδικοί πρόσβασης και αυτόματη συμπλήρωση
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = Διευθύνσεις και άλλα
+payments-group =
+    .label = Μέθοδοι πληρωμής
 
 ## Privacy Section - History
 
@@ -1075,10 +1811,24 @@ history-remember-label = Το { -brand-short-name }
     .accesskey = ο
 history-remember-option-all =
     .label = Θα διατηρεί το ιστορικό
+history-remember-option-never2 =
+    .label = Διαγραφή ιστορικού
+    .description = Κάθε παράθυρο λειτουργεί ως ιδιωτικό. Όταν είναι ενεργή αυτή η ρύθμιση, θα πρέπει να επιτρέπετε την εκτέλεση των επεκτάσεων.
+history-remember-option-custom2 =
+    .label = Προσαρμογή ιστορικού
 history-remember-option-never =
     .label = Δεν θα διατηρεί ποτέ το ιστορικό
 history-remember-option-custom =
     .label = Θα κάνει χρήση προσαρμοσμένων ρυθμίσεων ιστορικού
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = Το { -brand-short-name } θα αποθηκεύει το ιστορικό περιήγησης, λήψεων, φορμών και αναζητήσεων.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = Το { -brand-short-name } θα χρησιμοποιεί τις ίδιες ρυθμίσεις με την ιδιωτική περιήγηση και δεν θα διατηρεί το ιστορικό περιήγησης σας.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = Το { -brand-short-name } θα χρησιμοποιεί προσαρμοσμένες ρυθμίσεις για το ιστορικό περιήγησης, λήψεων, φορμών και αναζητήσεων.
 history-remember-description = Το { -brand-short-name } θα αποθηκεύει το ιστορικό περιήγησης, λήψεων, φορμών και αναζητήσεων.
 history-dontremember-description = Το { -brand-short-name } θα χρησιμοποιεί τις ίδιες ρυθμίσεις με την ιδιωτική περιήγηση και δεν θα διατηρεί το ιστορικό περιήγησης σας.
 history-private-browsing-permanent =
@@ -1096,9 +1846,26 @@ history-clear-on-close-option =
 history-clear-on-close-settings =
     .label = Ρυθμίσεις…
     .accesskey = θ
+history-shutdown-exceptions =
+    .label = Διαχείριση εξαιρέσεων
+    .accesskey = χ
 history-clear-button =
     .label = Απαλοιφή ιστορικού…
     .accesskey = σ
+history-header2 =
+    .heading = Ιστορικό
+history-section-header =
+    .label = Ιστορικό
+    .description = Επιλέξτε τι θέλετε να απομνημονεύει το { -brand-short-name } όταν κλείνετε το πρόγραμμα περιήγησης.
+history-custom-section-header =
+    .label = Σύνθετες ρυθμίσεις
+    .description = Προσαρμόστε τα στοιχεία που θέλετε να απομνημονεύει το { -brand-short-name } όταν το κλείνετε.
+history-custom-button =
+    .label = Επιλέξτε τι θέλετε να απομνημονεύει το { -brand-short-name }
+history-group =
+    .label = Ιστορικό
+history-remember-option-all2 =
+    .label = Διατήρηση ιστορικού
 
 ## Privacy Section - Site Data
 
@@ -1107,11 +1874,23 @@ sitedata-total-size-calculating = Υπολογισμός μεγέθους δεδ
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size3 = Οι ιστότοποι χρησιμοποιούν επί του παρόντος <strong>{ $value } { $unit }</strong> χώρου δίσκου.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Αυτήν τη στιγμή, τα αποθηκευμένα cookie, τα δεδομένα ιστοτόπων και η κρυφή μνήμη καταλαμβάνουν { $value } { $unit } χώρου στον δίσκο.
 sitedata-learn-more = Μάθετε περισσότερα
+sitedata-delete-on-close2 =
+    .label = Διαγραφή cookie και δεδομένων ιστοτόπων σε κάθε κλείσιμο του { -brand-short-name }
+    .accesskey = φ
 sitedata-delete-on-close =
     .label = Διαγραφή cookie και δεδομένων ιστοτόπων όταν κλείνει το { -brand-short-name }
     .accesskey = c
+sitedata-delete-on-close-private-browsing3 =
+    .message = Βάσει των ρυθμίσεων ιστορικού σας, το { -brand-short-name } διαγράφει τα cookie και τα δεδομένα ιστοτόπων από τη συνεδρία σας όταν κλείνετε το πρόγραμμα περιήγησης.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = Το ιστορικό δεν θα αποθηκεύεται.
+    .message = Το { -brand-short-name } διαγράφει τα cookie και τα δεδομένα ιστοτόπων από τη συνεδρία σας όταν κλείνετε το πρόγραμμα περιήγησης.
 sitedata-delete-on-close-private-browsing = Στη λειτουργία μόνιμης ιδιωτικής περιήγησης, τα cookie και τα δεδομένα ιστοτόπων θα διαγράφονται πάντα όταν κλείνει το { -brand-short-name }.
 sitedata-delete-on-close-private-browsing2 = Βάσει των ρυθμίσεων ιστορικού σας, το { -brand-short-name } διαγράφει τα cookie και τα δεδομένα ιστοτόπων από τη συνεδρία σας όταν κλείνετε το πρόγραμμα περιήγησης.
 sitedata-allow-cookies-option =
@@ -1128,6 +1907,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Ιχνηλάτες μεταξύ ιστοτόπων
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Cookie καταγραφής μεταξύ ιστοτόπων
+sitedata-option-block-cross-site-cookies2 =
+    .label = Απομόνωση cookie μεταξύ ιστοτόπων
 sitedata-option-block-cross-site-cookies =
     .label = Cookie καταγραφής μεταξύ ιστοτόπων και απομόνωση άλλων cookie μεταξύ ιστοτόπων
 sitedata-option-block-unvisited =
@@ -1136,6 +1917,12 @@ sitedata-option-block-all-cross-site-cookies =
     .label = Όλα τα cookie μεταξύ ιστοτόπων (πιθανή δυσλειτουργία ιστοτόπων)
 sitedata-option-block-all =
     .label = Όλα τα cookie (προκαλεί δυσλειτουργία ιστοτόπων)
+sitedata-clear2 =
+    .label = Απαλοιφή δεδομένων περιήγησης
+    .accesskey = φ
+sitedata-settings2 =
+    .label = Διαχείριση δεδομένων περιήγησης
+    .accesskey = Δ
 sitedata-clear =
     .label = Απαλοιφή δεδομένων…
     .accesskey = ι
@@ -1145,6 +1932,22 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Διαχείριση εξαιρέσεων…
     .accesskey = σ
+sitedata-cookies-exceptions2 =
+    .label = Διαχείριση εξαιρέσεων
+    .accesskey = χ
+    .description = Μπορείτε να καθορίσετε σε ποιους ιστοτόπους επιτρέπεται ή απαγορεύεται πάντα η χρήση cookie και δεδομένων ιστοτόπου.
+sitedata-heading =
+    .label = Δεδομένα περιήγησης
+    .description = Διαχειριστείτε τα cookie, το ιστορικό, την προσωρινή μνήμη, τα δεδομένα ιστοτόπων και πολλά άλλα.
+sitedata-settings3 =
+    .label = Απαλοιφή δεδομένων για συγκεκριμένους ιστοτόπους
+    .accesskey = σ
+sitedata-cookies-exceptions3 =
+    .label = Διαχείριση εξαιρέσεων
+    .accesskey = χ
+    .description = Επιλέξτε πώς χειρίζονται συγκεκριμένοι ιστότοποι τα cookie και τα δεδομένα ιστοτόπων.
+cookies-site-data-group =
+    .label = Cookie και δεδομένα ιστοτόπων
 
 ## Privacy Section - Cookie Banner Handling
 
@@ -1161,7 +1964,7 @@ forms-handle-cookie-banners =
 cookie-banner-blocker-checkbox-label =
     .label = Αυτόματη απόρριψη μηνυμάτων για cookie
 
-## Privacy Section - Address Bar
+## Search Section
 
 addressbar-header = Γραμμή διευθύνσεων
 addressbar-suggest = Κατά τη χρήση της γραμμής διευθύνσεων, να γίνονται προτάσεις από
@@ -1191,12 +1994,28 @@ addressbar-locbar-shortcuts-option =
 addressbar-locbar-topsites-option =
     .label = Κορυφαίους ιστοτόπους
     .accesskey = Κ
+addressbar-locbar-engines-option-1 =
+    .label = Πρόταση μηχανών αναζήτησης προς χρήση
+    .accesskey = ρ
 addressbar-locbar-engines-option =
     .label = Μηχανές αναζήτησης
     .accesskey = α
 addressbar-locbar-quickactions-option =
     .label = Γρήγορες ενέργειες
     .accesskey = Γ
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = Πρόσφατες αναζητήσεις
+    .accesskey = φ
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = Δημοφιλείς προτάσεις αναζήτησης
+    .accesskey = μ
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = Προτάσεις από το { -brand-short-name }
+    .description = Λάβετε προτάσεις από το διαδίκτυο που σχετίζονται με την αναζήτησή σας.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = Προτάσεις από χορηγούς
+    .description = Υποστηρίξτε το { -brand-short-name } με περιστασιακές προτάσεις από χορηγούς.
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 addressbar-locbar-showrecentsearches-option =
     .label = Εμφάνιση πρόσφατων αναζητήσεων
@@ -1211,6 +2030,19 @@ addressbar-locbar-suggest-nonsponsored-desc = Λάβετε προτάσεις α
 addressbar-locbar-suggest-sponsored-option =
     .label = Προτάσεις από χορηγούς
 addressbar-locbar-suggest-sponsored-desc = Υποστηρίξτε το { -brand-short-name } με περιστασιακές προτάσεις από χορηγούς.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = Λήψη προτάσεων από τη BrowserWorks κατά την πληκτρολόγηση
+addressbar-dismissed-suggestions-label-2 =
+    .label = Απορριφθείσες προτάσεις
+    .description = Επαναφέρετε τις απορριφθείσες προτάσεις από χορηγούς και το { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = Επαναφορά προτάσεων
 addressbar-quickactions-learn-more = Μάθετε περισσότερα
 addressbar-dismissed-suggestions-label = Απορριφθείσες προτάσεις
 addressbar-restore-dismissed-suggestions-description = Επαναφέρετε τις απορριφθείσες προτάσεις από χορηγούς και το { -brand-short-name }.
@@ -1252,6 +2084,7 @@ content-blocking-private-windows = Περιεχόμενο καταγραφής �
 content-blocking-cross-site-cookies-in-all-windows2 = Cookie μεταξύ ιστοτόπων σε όλα τα παράθυρα
 content-blocking-cross-site-tracking-cookies = Cookie καταγραφής μεταξύ ιστοτόπων
 content-blocking-all-cross-site-cookies-private-windows = Cookie μεταξύ ιστοτόπων σε ιδιωτικά παράθυρα
+content-blocking-isolate-cross-site-cookies = Απομόνωση cookie μεταξύ ιστοτόπων
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie καταγραφής μεταξύ ιστοτόπων και απομόνωση των υπόλοιπων
 content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
 content-blocking-all-cookies = Όλα τα cookie
@@ -1272,8 +2105,23 @@ content-blocking-etp-standard-tcp-rollout-description = Η Ολική προστ
 content-blocking-etp-standard-tcp-rollout-learn-more = Μάθετε περισσότερα
 content-blocking-etp-standard-tcp-title = Περιλαμβάνει την Ολική προστασία cookie, την πιο ισχυρή μας λειτουργία απορρήτου
 content-blocking-warning-title = Προσοχή!
+content-blocking-warning-title-2 = Ορισμένοι ιστότοποι ενδέχεται να μην λειτουργούν με την αυστηρή προστασία από καταγραφή
+content-blocking-warning-title-custom = Ορισμένοι ιστότοποι ενδέχεται να μην λειτουργούν με την προσαρμοσμένη προστασία από καταγραφή
+# “Fix site issues” references the string content-blocking-exceptions-subheader
+content-blocking-and-isolating-etp-warning-description-4 = Το { -brand-short-name } συνιστά τη χρήση των ρυθμίσεων «Διόρθωση ζητημάτων ιστοτόπου» για τη μείωση των προβλημάτων με τις λειτουργίες και το περιεχόμενο των ιστοτόπων. Αν κάποιος ιστότοπος δεν λειτουργεί σωστά, δοκιμάστε να απενεργοποιήσετε την προστασία από καταγραφή για να φορτωθεί όλο το περιεχόμενό του.
 content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία ορισμένων ιστοτόπων. Αν κάποιος ιστότοπος δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου.
 content-blocking-warning-learn-how = Μάθετε πώς
+content-blocking-baseline-exceptions-3 =
+    .label = Διόρθωση σημαντικών ζητημάτων ιστοτόπου (προτείνεται)
+    .description = Βοηθά στη φόρτωση ιστοτόπων και λειτουργιών άροντας τον αποκλεισμό μόνο των βασικών στοιχείων που ενδέχεται να περιέχουν ιχνηλάτες. Διορθώνει τα πιο κοινά προβλήματα.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = Διόρθωση μικρών ζητημάτων ιστοτόπου
+    .description = Επαναφέρει στοιχεία, όπως βίντεο σε άρθρα ή ενότητες σχολίων, άροντας τον αποκλεισμό των στοιχείων που ενδέχεται να περιέχουν ιχνηλάτες. Αυτό μπορεί να μειώσει τα ζητήματα σε ιστοτόπους, αλλά προσφέρει λιγότερη προστασία. Πρέπει να χρησιμοποιείται με τις διορθώσεις σημαντικών ζητημάτων.
+content-blocking-baseline-uncheck-warning-dialog-title = Θέλετε σίγουρα να απενεργοποιήσετε τις διορθώσεις;
+content-blocking-baseline-uncheck-warning-dialog-body = Αυτή η ρύθμιση συμβάλλει στη διόρθωση των πιο κοινών προβλημάτων των ιστοτόπων. Αν την απενεργοποιήσετε, ορισμένοι ιστότοποι ενδέχεται να μην λειτουργούν και το { -brand-short-name } δεν θα μπορεί να βοηθήσει στην επίλυση αυτών των ζητημάτων.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = Απενεργοποίηση διορθώσεων
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = Διατήρηση διορθώσεων
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
 content-blocking-reload-tabs-button =
     .label = Ανανέωση όλων των καρτελών
@@ -1353,10 +2201,28 @@ permissions-notification-link = Μάθετε περισσότερα
 permissions-notification-pause =
     .label = Παύση ειδοποιήσεων μέχρι να επανεκκινηθεί το { -brand-short-name }
     .accesskey = ε
+permissions-autoplay2 =
+    .label = Αυτόματη αναπαραγωγή
 permissions-autoplay = Αυτόματη αναπαραγωγή
 permissions-autoplay-settings =
     .label = Ρυθμίσεις…
     .accesskey = θ
+permissions-block-popups2 =
+    .label = Φραγή αναδυόμενων παραθύρων και ανακατευθύνσεις τρίτων
+    .accesskey = Φ
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = Διαχείριση εξαιρέσεων
+    .description = Προσθέστε ιστοτόπους που μπορούν να ανοίγουν αναδυόμενα παράθυρα και να χρησιμοποιούν ανακατευθύνσεις τρίτων.
+    .accesskey = ε
+    .searchkeywords = αναδυόμενα, αναδυόμενα παράθυρα, popups, popup, pop-up, pop-ups
+permissions-addon-install-warning3 =
+    .label = Εμφάνιση προειδοποίησης όταν οι ιστότοποι προσπαθούν να εγκαταστήσουν επεκτάσεις
+    .accesskey = φ
+permissions-addon-exceptions2 =
+    .label = Επιλέξτε ποιοι ιστότοποι μπορούν να εγκαθιστούν επεκτάσεις
+    .accesskey = Ε
 permissions-block-popups =
     .label = Φραγή αναδυόμενων παραθύρων
     .accesskey = Φ
@@ -1372,6 +2238,30 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = Ε
+permissions-location2 =
+    .label = Τοποθεσία
+permissions-localhost2 =
+    .label = Εφαρμογές και υπηρεσίες συσκευής
+permissions-local-network2 =
+    .label = Συσκευές τοπικού δικτύου
+permissions-xr2 =
+    .label = Εικονική πραγματικότητα
+permissions-camera2 =
+    .label = Κάμερα
+permissions-microphone2 =
+    .label = Μικρόφωνο
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = Ηχείο
+permissions-notification2 =
+    .label = Ειδοποιήσεις
+permissions-header3 =
+    .label = Δικαιώματα
+    .description = Διαχειριστείτε τι θα μπορούν να προσπελάσουν, να ελέγξουν ή να ενεργοποιήσουν οι ιστότοποι.
+permissions-data-section =
+    .heading = Δικαιώματα και δεδομένα
+pane-permissions-data-title2 = Δικαιώματα και δεδομένα
+    .title = Δικαιώματα και δεδομένα
 
 ## Privacy Section - Data Collection
 
@@ -1386,6 +2276,14 @@ collection-description = Αγωνιζόμαστε για να σας παρέχ�
 collection-privacy-notice = Σημείωση απορρήτου
 collection-health-report-telemetry-disabled = Δεν επιτρέπεται πλέον στη { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν μέσα σε 30 ημέρες.
 collection-health-report-telemetry-disabled-link = Μάθετε περισσότερα
+backup-multi-profile-warning-message =
+    .message = Για να βεβαιωθείτε ότι αυτή η αλλαγή θα συμπεριληφθεί στα αντίγραφα ασφαλείας σας, ανοίξτε καθένα από τα προφίλ και επιλέξτε «Δημιουργία τώρα» στις Ρυθμίσεις.
+nimbus-rollouts =
+    .label = Να επιτρέπεται στο { -brand-short-name } η βελτίωση των δυνατοτήτων, των επιδόσεων και της σταθερότητας μεταξύ των ενημερώσεων
+    .description = Οι αλλαγές θα διατίθενται απομακρυσμένα.
+addon-recommendations3 =
+    .label = Να επιτρέπονται εξατομικευμένες προτάσεις επεκτάσεων
+    .description = Λάβετε προτάσεις επεκτάσεων για να βελτιώσετε την εμπειρία περιήγησής σας.
 collection-usage-ping =
     .label = Αποστολή ping ημερήσιας χρήσης στη { -vendor-short-name }
     .accesskey = σ
@@ -1413,7 +2311,13 @@ collection-health-report-disabled2 = Η αναφορά δεδομένων είν
 collection-backlogged-crash-reports2 =
     .label = Αυτόματη αποστολή αναφορών κατάρρευσης
     .accesskey = τ
-collection-backlogged-crash-reports-description = Αυτό βοηθά τη { -vendor-short-name } να διαγνώσει και να επιλύσει προβλήματα με το πρόγραμμα περιήγησης. Οι αναφορές ενδέχεται να περιέχουν προσωπικά ή ευαίσθητα δεδομένα.
+collection-backlogged-crash-reports-description = Αυτό βοηθά τη { -vendor-short-name } να διαγνώσει και να επιλύσει προβλήματα του προγράμματος περιήγησης. Οι αναφορές ενδέχεται να περιέχουν προσωπικά ή ευαίσθητα δεδομένα.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = Ίδιες ρυθμίσεις, νέα εμφάνιση!
+    .message = Αναδιοργανώσαμε αυτήν τη σελίδα ώστε να είναι ευκολότερη η ανάγνωση και η εξερεύνησή της. Οι προσωπικές σας ρυθμίσεις δεν έχουν αλλάξει και όλα βρίσκονται ακόμα εδώ. Συμβουλή: χρησιμοποιήστε την αναζήτηση για να μεταβείτε απευθείας σε αυτό που χρειάζεστε.
+settings-redesign-promo-dismiss-button =
+    .label = Το κατάλαβα
 addon-recommendations =
     .label = Αποδοχή εξατομικευμένων προτάσεων για επεκτάσεις από το { -brand-short-name }
 addon-recommendations-link = Μάθετε περισσότερα
@@ -1422,14 +2326,44 @@ addon-recommendations-link = Μάθετε περισσότερα
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτήν τη ρύθμιση δομής
 collection-backlogged-crash-reports-with-link = Να επιτρέπεται στο { -brand-short-name } η αποστολή εκκρεμών αναφορών κατάρρευσης <a data-l10n-name="crash-reports-link">Μάθετε περισσότερα</a>
     .accesskey = κ
-collection-backlogged-crash-reports = Να επιτρέπεται στο { -brand-short-name } η αποστολή εκκρεμών αναφορών κατάρρευσης
-    .accesskey = κ
 privacy-segmentation-section-header = Νέες λειτουργίες που βελτιώνουν την περιήγησή σας
 privacy-segmentation-section-description = Όταν προσφέρουμε λειτουργίες που χρησιμοποιούν τα δεδομένα σας για μια πιο εξατομικευμένη εμπειρία:
 privacy-segmentation-radio-off =
     .label = Χρήση προτάσεων του { -brand-product-name }
 privacy-segmentation-radio-on =
     .label = Εμφάνιση λεπτομερών πληροφοριών
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = Συλλογή και χρήση δεδομένων { -brand-short-name }
+    .description = Προσπαθούμε να σας παρέχουμε επιλογές και να συλλέγουμε μόνο τα ελάχιστα δεδομένα που απαιτούνται για τη βελτίωση του { -brand-product-name } για όλους.
+    .searchkeywords = τηλεμετρία
+data-collection-link = Προβολή σημείωσης απορρήτου
+data-collection-preferences-across-profiles =
+    .message = Αυτές οι ρυθμίσεις ισχύουν για κάθε προφίλ του { -brand-product-name } σε αυτήν τη συσκευή.
+data-collection-profiles-link = Προβολή όλων των προφίλ
+data-collection-health-report-telemetry-disabled =
+    .message = Δεν επιτρέπεται πλέον στη { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν μέσα σε 30 ημέρες.
+data-collection-health-report =
+    .label = Αποστολή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης στη { -vendor-short-name }
+    .accesskey = λ
+    .description = Αυτό μάς βοηθά να βελτιώσουμε τις λειτουργίες, τις επιδόσεις και τη σταθερότητα του { -brand-product-name }.
+data-collection-health-report-disabled =
+    .label = Αποστολή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης στη { -vendor-short-name }
+    .accesskey = δ
+    .description = Η αναφορά δεδομένων είναι απενεργοποιημένη για αυτήν τη διαμόρφωση δομής.
+data-collection-run-studies =
+    .label = Να επιτρέπεται στο { -brand-short-name } να εκτελεί μελέτες λειτουργιών
+    .description = Το { -brand-short-name } επιλέγει τυχαία χρήστες για δοκιμή λειτουργιών, βελτιώνοντας την ποιότητα για όλους.
+data-collection-studies-link =
+    .label = Προβολή μελετών του { -brand-short-name }
+data-collection-backlogged-crash-reports =
+    .label = Αυτόματη αποστολή αναφορών κατάρρευσης
+    .description = Αυτό βοηθά τη { -vendor-short-name } να διαγνώσει και να επιλύσει προβλήματα του προγράμματος περιήγησης. Οι αναφορές ενδέχεται να περιέχουν προσωπικά ή ευαίσθητα δεδομένα.
+    .accesskey = μ
+data-collection-usage-ping =
+    .label = Αποστολή ping ημερήσιας χρήσης στη { -vendor-short-name }
+    .description = Αυτό βοηθά τη { -vendor-short-name } να εκτιμήσει τους ενεργούς χρήστες.
+    .accesskey = σ
 
 ## Privacy Section - Website Advertising Preferences
 
@@ -1445,11 +2379,16 @@ website-advertising-private-attribution-description = Αυτή η επιλογή
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = Ασφάλεια
+browsing-protection-group2 =
+    .label = Προστασία από παραπλανητικό περιεχόμενο και επικίνδυνο λογισμικό
+    .description = Οι επικίνδυνοι ιστότοποι και λήψεις μπορούν να θέσουν σε κίνδυνο τα δεδομένα και τη συσκευή σας. Το { -brand-short-name } τα αποκλείει αυτόματα και σας προειδοποιεί για επικίνδυνο ή ανεπιθύμητο λογισμικό.
 security-browsing-protection = Προστασία από παραπλανητικό περιεχόμενο και επικίνδυνο λογισμικό
 security-enable-safe-browsing =
     .label = Φραγή επικίνδυνου και παραπλανητικού περιεχομένου
     .accesskey = Φ
 security-enable-safe-browsing-link = Μάθετε περισσότερα
+security-safe-browsing-warning =
+    .message = Η απενεργοποίηση αυτής της λειτουργίας μειώνει την προστασία από απάτες, κακόβουλους ιστοτόπους και επικίνδυνες λήψεις.
 security-block-downloads =
     .label = Φραγή επικίνδυνων λήψεων
     .accesskey = λ
@@ -1472,11 +2411,21 @@ certs-devices =
 certs-thirdparty-toggle =
     .label = Να επιτρέπεται στο { -brand-short-name } να εμπιστεύεται αυτόματα τα τρίτα πιστοποιητικά ρίζας που εγκαθιστάτε
     .accesskey = π
+certs-devices-enable-fips = Ενεργοποίηση FIPS
 space-alert-over-5gb-settings-button =
     .label = Άνοιγμα ρυθμίσεων
     .accesskey = Ά
 space-alert-over-5gb-message2 = <strong>Το { -brand-short-name } δεν διαθέτει επαρκή χώρο στον δίσκο.</strong> Το περιεχόμενο των ιστοτόπων ενδέχεται να μην εμφανίζεται κανονικά. Μπορείτε να διαγράψετε τα αποθηκευμένα δεδομένα στις Ρυθμίσεις > Απόρρητο και ασφάλεια > Cookie και δεδομένα ιστοτόπων.
 space-alert-under-5gb-message2 = <strong>Το { -brand-short-name } δεν διαθέτει επαρκή χώρο στον δίσκο.</strong> Το περιεχόμενο των ιστοτόπων ενδέχεται να μην εμφανίζεται κανονικά. Επισκεφθείτε το «Μάθετε περισσότερα» για να βελτιστοποιήσετε τη χρήση δίσκου σας για μια καλύτερη εμπειρία περιήγησης.
+certs-description3 =
+    .label = Πιστοποιητικά
+    .description = Ρυθμίστε τα πιστοποιητικά που χρησιμοποιεί το { -brand-short-name } για επαλήθευση των ασφαλών συνδέσεων.
+certs-view2 =
+    .label = Διαχείριση πιστοποιητικών
+    .accesskey = π
+certs-devices2 =
+    .label = Διαχείριση συσκευών ασφαλείας
+    .accesskey = σ
 
 ## Privacy Section - HTTPS-Only
 
@@ -1494,10 +2443,18 @@ httpsonly-radio-disabled3 =
     .description = Το { -brand-short-name } ενδέχεται και πάλι να αναβαθμίσει ορισμένες συνδέσεις
 httpsonly-radio-disabled =
     .label = Να μην ενεργοποιηθεί η λειτουργία «Μόνο HTTPS»
+httpsonly-group =
+    .label = Λειτουργία «Μόνο HTTPS»
+    .description = Επιτρέπει μόνο τις ασφαλείς συνδέσεις με ιστοτόπους. Το { -brand-short-name } θα σας ρωτήσει πριν πραγματοποιήσει μη ασφαλή σύνδεση.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
 
 ## DoH Section
 
 preferences-doh-header = DNS μέσω HTTPS
+dns-over-https-group2 =
+    .label = DNS μέσω HTTPS
+    .description = Η λειτουργία «Σύστημα ονομάτων τομέων μέσω HTTPS» (DoH) κρυπτογραφεί τις αναζητήσεις ιστοτόπων, ώστε να είναι πιο δύσκολο για τον πάροχο διαδικτύου σας ή άλλα μέρη να βλέπουν ποιους ιστοτόπους πρόκειται να επισκεφθείτε.
 preferences-doh-description = Το DNS (Domain Name System) μέσω HTTPS στέλνει το αίτημά σας για όνομα τομέα μέσω κρυπτογραφημένης σύνδεσης, δημιουργώντας ένα ασφαλές DNS και δυσκολεύοντας τους άλλους να δουν σε ποιον ιστότοπο πρόκειται να αποκτήσετε πρόσβαση.
 preferences-doh-description2 = Το DNS (Domain Name System) μέσω HTTPS στέλνει το αίτημά σας για όνομα τομέα μέσω κρυπτογραφημένης σύνδεσης, παρέχοντας ένα ασφαλές DNS και δυσκολεύοντας τους άλλους να δουν σε ποιον ιστότοπο πρόκειται να αποκτήσετε πρόσβαση.
 # Variables:
@@ -1553,9 +2510,330 @@ preferences-doh-exceptions-description = Το { -brand-short-name } δεν θα 
 preferences-doh-manage-exceptions =
     .label = Διαχείριση εξαιρέσεων…
     .accesskey = χ
+preferences-doh-overview-default =
+    .label = Προεπιλεγμένη προστασία
+    .description = Χρήση ασφαλούς DNS στις περιοχές όπου είναι διαθέσιμο.
+preferences-doh-overview-custom =
+    .label = Προσαρμογή
+    .description = Πάντα χρήση ασφαλούς DNS με δυνατότητα ελέγχου του παρόχου και της εφεδρικής συμπεριφοράς.
+preferences-doh-overview-off =
+    .label = Ανενεργό
+    .description = Χρήση της προεπιλεγμένης υπηρεσίας ανάλυσης DNS.
+preferences-doh-advanced-button =
+    .label = Σύνθετες ρυθμίσεις
+preferences-doh-advanced-section =
+    .label = Σύνθετες ρυθμίσεις
+    .description = Η λειτουργία «Σύστημα ονομάτων τομέων μέσω HTTPS» (DoH) κρυπτογραφεί τις αναζητήσεις ιστοτόπων, ώστε να είναι πιο δύσκολο για τον πάροχο διαδικτύου σας ή άλλα μέρη να βλέπουν ποιους ιστοτόπους πρόκειται να επισκεφθείτε.
+preferences-doh-manage-exceptions2 =
+    .label = Διαχείριση εξαιρέσεων
+    .accesskey = χ
+preferences-doh-radio-default =
+    .label = Προεπιλογή
+    .description = Χρήση ασφαλούς DNS στις περιοχές όπου είναι διαθέσιμο
+preferences-doh-radio-custom =
+    .label = Προσαρμογή
+    .description = Πάντα χρήση ασφαλούς DNS με δυνατότητα ελέγχου του παρόχου και της εφεδρικής συμπεριφοράς
+preferences-doh-radio-off =
+    .label = Ανενεργό
+    .description = Χρήση της προεπιλεγμένης υπηρεσίας ανάλυσης DNS
+preferences-doh-fallback-label =
+    .label = Πάντα προειδοποίηση αν το ασφαλές DNS δεν είναι διαθέσιμο
+preferences-doh-status-item-off =
+    .message = Το DNS μέσω HTTPS είναι ανενεργό
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = Το DNS μέσω HTTPS δεν λειτουργεί επειδή αντιμετωπίσαμε σφάλμα ({ $reason }) κατά την προσπάθεια χρήσης του παρόχου { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = Το DNS μέσω HTTPS δεν λειτουργεί επειδή λάβαμε ένα μη έγκυρο URL ({ $reason })
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = Το DNS μέσω HTTPS χρησιμοποιεί τον πάροχο { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = Το DNS μέσω HTTPS δεν λειτουργεί επειδή αντιμετωπίσαμε σφάλμα ({ $reason }) κατά την προσπάθεια χρήσης του τοπικού παρόχου { $name }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = Το DNS μέσω HTTPS χρησιμοποιεί τον τοπικό πάροχο { $name }
+preferences-doh-select-resolver-label =
+    .label = Επιλογή παρόχου:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = Χρήση αυτού του παρόχου για την ανάλυση DNS μέσω HTTPS
+preferences-doh-custom-provider-label =
+    .aria-label = Εισαγάγετε ένα προσαρμοσμένο URL παρόχου
+preferences-doh-header2 =
+    .heading = DNS μέσω HTTPS
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = Ασφάλεια συνδέσεων και λογισμικού
+preferences-connection-link-section =
+    .label = Ασφάλεια συνδέσεων και λογισμικού
+    .description = Δείτε πώς παραμένουν ασφαλείς οι συνδέσεις, πώς αποκλείεται το επιβλαβές λογισμικό και πώς επαληθεύονται οι ιστότοποι.
+preferences-connection-link-button =
+    .label = Σύνθετες ρυθμίσεις
 
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = Επιφάνεια εργασίας
 downloads-folder-name = Λήψεις
 choose-download-folder-title = Επιλογή φακέλου λήψεων:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = Εμφάνιση
+browser-theme-group =
+    .label = Θέμα προγράμματος περιήγησης
+    .description = Προσαρμόστε το στυλ του { -brand-short-name } ανάλογα με το προσωπικό σας γούστο. Τα χρώματα του θέματος εφαρμόζονται στις γραμμές εργαλείων, τα μενού και τα μηνύματα.
+browser-theme-manage-link =
+    .label = Διαχείριση των θεμάτων του { -brand-short-name }
+appearance-window-density-group =
+    .label = Πυκνότητα παραθύρου
+    .description = Προσαρμόστε την απόσταση γύρω από τα στοιχεία του παραθύρου, όπως η γραμμή εργαλείων, οι καρτέλες και η πλαϊνή γραμμή.
+appearance-window-density-radio-group =
+    .aria-label = Πυκνότητα παραθύρου
+appearance-window-density-automatic =
+    .label = Αυτόματα (προεπιλογή)
+    .description = Επιλέγεται αυτόματα τυπική, πυκνή ή αραιή (για οθόνες αφής) προβολή
+appearance-window-density-automatic-no-touch =
+    .label = Αυτόματα (προεπιλογή)
+    .description = Επιλέγεται αυτόματα τυπική ή πυκνή προβολή
+appearance-window-density-standard =
+    .label = Τυπική
+    .description = Ισορροπημένες αποστάσεις για τις περισσότερες οθόνες
+appearance-window-density-auto-touch-mode =
+    .label = Χρήση αραιής προβολής για τη λειτουργία tablet
+appearance-window-density-compact =
+    .label = Πυκνή
+    .description = Μειωμένες αποστάσεις για μικρότερες οθόνες
+appearance-window-density-touch =
+    .label = Αραιή
+    .description = Μεγαλύτερα στοιχεία παραθύρου και ενεργές περιοχές, βελτιστοποιημένα για οθόνες αφής
+related-settings-group =
+    .label = Σχετικές ρυθμίσεις
+related-settings-accessibility-link =
+    .label = Προσαρμογή ρυθμίσεων ζουμ και γραμματοσειράς στην ενότητα «Προσβασιμότητα»
+related-settings-home-link =
+    .label = Προσαρμογή { -firefox-home-brand-name(case: "gen", capitalization: "upper") }
+related-settings-tabs-browsing-link =
+    .label = Προσαρμογή διάταξης προγράμματος περιήγησης
+
+## AI controls page
+
+preferences-ai-controls-description = Το { -brand-short-name } δίνει πάντα την επιλογή σε εσάς, ακόμα κι όταν αφορά τη χρήση λειτουργιών που έχουν ενισχυθεί με τεχνητή νοημοσύνη. Σύντομα θα έχετε ακόμα περισσότερες επιλογές ελέγχου.
+preferences-ai-controls-block-ai-label = Αποκλεισμός βελτιώσεων ΤΝ
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = Ο αποκλεισμός σημαίνει ότι δεν θα βλέπετε νέες ή τρέχουσες βελτιώσεις τεχνητής νοημοσύνης στο { -brand-short-name }, ούτε αναδυόμενα παράθυρα σχετικά με αυτές. <a data-l10n-name="link">Μάθετε περισσότερες λεπτομέρειες</a> σχετικά με το τι περιλαμβάνει και τον τρόπο ελέγχου των παραδοσιακών λειτουργιών μηχανικής εκμάθησης, όπως είναι οι προτάσεις αναζήτησης και οι συστάσεις.
+preferences-ai-controls-blocked-message =
+    .message = Οι νέες και οι τρέχουσες βελτιώσεις τεχνητής νοημοσύνης αποκλείονται από προεπιλογή. Για να άρετε τον αποκλεισμό μιας συγκεκριμένης λειτουργίας, χρησιμοποιήστε τα παρακάτω κουμπιά ελέγχου.
+preferences-ai-controls-on-device-group =
+    .label = Τοπική ΤΝ
+    .description = Αυτά χρησιμοποιούν μικρά μοντέλα τεχνητής νοημοσύνης που αποθηκεύονται στη συσκευή σας εφόσον χρησιμοποιείτε τη λειτουργία. Αυτή η προσέγγιση συμβάλλει στην προστασία του απορρήτου σας.
+preferences-ai-controls-translations-control =
+    .label = Μεταφράσεις
+    .description = Περιηγηθείτε απρόσκοπτα στο διαδίκτυο, στην προτιμώμενη γλώσσα σας.
+preferences-ai-controls-translations-more-link = Περισσότερες ρυθμίσεις μεταφράσεων
+preferences-ai-controls-pdfjs-control =
+    .label = Εναλλακτικό κείμενο εικόνας στο εργαλείο προβολής PDF του { -brand-short-name }
+    .description = Όταν προσθέτετε εικόνες σε αρχεία PDF, αυτή η επιλογή προσθέτει περιγραφές για λόγους προσβασιμότητας.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = Προτάσεις ομάδων καρτελών
+    .description = Λάβετε προτάσεις για την ονομασία και την οργάνωση των καρτελών σας.
+preferences-ai-controls-key-points-control =
+    .label = Kύρια σημεία στις προεπισκοπήσεις συνδέσμων
+    .description = Δείτε μια γρήγορη σύνοψη πριν από το άνοιγμα ενός συνδέσμου.
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = Πάροχοι chatbot ΤΝ στην πλαϊνή γραμμή
+    .description = Διατηρήστε ένα chatbot κοντά σας κατά την περιήγηση. Επιλέξτε ανάμεσα στα Anthropic Claude, ChatGPT, Copilot, Google Gemini και Le Chat Mistral.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = Chatbot στην πλαϊνή γραμμή
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = Διαθέσιμο
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = Ενεργό
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = Αποκλεισμένο
+preferences-ai-controls-state-description-before = Τι σημαίνουν οι επιλογές:
+preferences-ai-controls-state-description-available = <strong>Διαθέσιμο:</strong> Θα βλέπετε τη λειτουργία και θα μπορείτε να τη χρησιμοποιήσετε.
+preferences-ai-controls-state-description-enabled = <strong>Ενεργό:</strong> Έχετε επιλέξει να χρησιμοποιήσετε τη λειτουργία.
+preferences-ai-controls-state-description-blocked = <strong>Αποκλεισμένο:</strong> Δεν μπορείτε να δείτε, ούτε να χρησιμοποιήσετε τη λειτουργία. Όσον αφορά την τοπική τεχνητή νοημοσύνη, αφαιρούνται τυχόν μοντέλα που έχουν ήδη ληφθεί.
+preferences-ai-controls-block-confirmation-heading = Αποκλεισμός βελτιώσεων ΤΝ;
+preferences-ai-controls-block-confirmation-description = Δεν θα βλέπετε τις νέες ή τρέχουσες βελτιώσεις τεχνητής νοημοσύνης στο { -brand-short-name }, ούτε αναδυόμενα παράθυρα σχετικά με αυτές. Μπορείτε μετέπειτα να άρετε τον αποκλεισμό όποιας λειτουργίας θέλετε να συνεχίσετε να χρησιμοποιείτε.
+preferences-ai-controls-block-confirmation-features-start = Τι θα αποκλειστεί:
+preferences-ai-controls-block-confirmation-translations = Μεταφράσεις
+preferences-ai-controls-block-confirmation-pdfjs = Εναλλακτικό κείμενο εικόνας στο εργαλείο προβολής PDF του { -brand-short-name }
+preferences-ai-controls-block-confirmation-tab-group-suggestions = Προτάσεις ομάδων καρτελών
+preferences-ai-controls-block-confirmation-key-points = Kύρια σημεία στις προεπισκοπήσεις συνδέσμων
+preferences-ai-controls-block-confirmation-sidebar-chatbot = Πάροχοι chatbot στην πλαϊνή γραμμή
+preferences-ai-controls-block-confirmation-features-after = Ο αποκλεισμός επηρεάζει επίσης τις επεκτάσεις που χρησιμοποιούν τεχνητή νοημοσύνη που παρέχεται από το { -brand-short-name }.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = Ακύρωση
+preferences-ai-controls-block-confirmation-confirm =
+    .label = Αποκλεισμός
+preferences-ai-controls-header3 =
+    .heading = Επιλογές ελέγχου ΤΝ
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = Το { -brand-short-name } είναι σε επιφυλακή
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = Το { -brand-short-name } προτείνει ορισμένες βελτιώσεις ασφαλείας
+security-privacy-status-ok-label = Η Ενισχυμένη προστασία από καταγραφή είναι ενεργή
+security-privacy-status-problem-label = Εντοπίσαμε ρυθμίσεις που επηρεάζουν την προστασία σας
+security-privacy-status-problem-helper-label = Προβολή ζητημάτων
+security-privacy-status-pending-trackers-label = Αναζήτηση του αριθμού των ιχνηλατών που απέκλεισε το { -brand-short-name } τον τελευταίο μήνα
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label =
+    { $trackerCount ->
+        [one] { $trackerCount } αποκλεισμένος ιχνηλάτης τον τελευταίο μήνα
+       *[other] { $trackerCount } αποκλεισμένοι ιχνηλάτες τον τελευταίο μήνα
+    }
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = Διαθέτετε <a data-l10n-name="strict-tracking-protection">αυστηρή προστασία</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = Διαθέτετε <a data-l10n-name="custom-tracking-protection">προσαρμοσμένη προστασία</a>
+security-privacy-status-up-to-date-label = Διαθέτετε την πιο πρόσφατη και ασφαλή έκδοση του { -brand-short-name }
+security-privacy-status-update-needed-label = Διατίθεται μια νέα έκδοση του { -brand-short-name }.
+security-privacy-status-update-error-label = Το { -brand-short-name } αντιμετωπίζει πρόβλημα με την ενημέρωσή του
+security-privacy-status-update-checking-label = Το { -brand-short-name } ελέγχει για ενημερώσεις
+security-privacy-status-update-needed-description = Κάντε ενημέρωση για τις πιο πρόσφατες βελτιώσεις ταχύτητας, σταθερότητας και ασφάλειας.
+security-privacy-status-update-button-label =
+    .label = Ενημέρωση του { -brand-short-name }
+security-privacy-image-warning =
+    .alt = Μια ασπίδα με θαυμαστικό, που εκφράζει ανησυχία για τις προειδοποιήσεις ασφαλείας σας
+security-privacy-image-ok =
+    .alt = Μια ασπίδα με σημάδι ελέγχου, που δείχνει ότι δεν έχετε εκκρεμή ζητήματα ασφαλείας
+security-privacy-issue-card =
+    .heading = Προειδοποιήσεις ασφαλείας
+issue-card-reset-button =
+    .label = Επαναφορά
+issue-card-dismiss-button =
+    .tooltiptext = Απόρριψη
+    .aria-label = Απόρριψη
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = Ενισχυμένη προστασία από καταγραφή
+    .description = Οι ιστότοποι χρησιμοποιούν ιχνηλάτες για να σας ακολουθούν στο διαδίκτυο και να εμφανίζουν διαφημίσεις. Το { -brand-short-name } σάς προστατεύει κατά την περιήγησή σας, αποκλείοντας τους περισσότερους ιχνηλάτες αυτόματα, ώστε να έχετε τον έλεγχο των ψηφιακών σας ιχνών.
+preferences-etp-level-standard =
+    .label = Τυπική (προεπιλογή)
+    .description = Ισχυρή, αξιόπιστη προστασία που λειτουργεί ομαλά με τους περισσότερους ιστοτόπους.
+preferences-etp-level-strict =
+    .label = Αυστηρή
+    .description = Ισχυρότερη προστασία που αποκλείει περισσότερους ιχνηλάτες, αλλά ενδέχεται να προκαλέσει τη δυσλειτουργία ορισμένων ιστοτόπων.
+preferences-etp-level-custom =
+    .label = Προσαρμοσμένη
+    .description = Επιλέξτε ποια μέτρα προστασίας θα (απ)ενεργοποιήσετε.
+preferences-etp-status-advanced-button =
+    .label = Σύνθετες ρυθμίσεις
+preferences-etp-status-protections-dashboard-link =
+    .label = Προβολή εξατομικευμένου πίνακα προστασίας
+    .description = Δείτε πόσους ύπουλους ιχνηλάτες έχει αποκλείσει το { -brand-short-name } για εσάς, όπως ιχνηλάτες μέσων κοινωνικής δικτύωσης, fingerprinter και cryptominer.
+preferences-etp-header =
+    .heading = Ενισχυμένη προστασία από καταγραφή
+preferences-etp-advanced-settings-group =
+    .label = Σύνθετες ρυθμίσεις
+    .description = Οι ιστότοποι χρησιμοποιούν ιχνηλάτες για να σας ακολουθούν στο διαδίκτυο και να εμφανίζουν διαφημίσεις. Το { -brand-short-name } σάς προστατεύει κατά την περιήγησή σας, αποκλείοντας τους περισσότερους ιχνηλάτες αυτόματα, ώστε να έχετε τον έλεγχο των ψηφιακών σας ιχνών.
+preferences-etp-customize-button =
+    .label = Προσαρμογή προστασίας από καταγραφή
+preferences-etp-reload-tabs-hint =
+    .message = Φορτώστε εκ νέου τις καρτέλες σας για να εφαρμόσετε αυτές τις αλλαγές.
+preferences-etp-reload-tabs-hint-button =
+    .label = Επαναφόρτωση όλων των καρτελών
+preferences-etp-rfp-warning-message =
+    .message = Χρησιμοποιείτε το Resist Fingerprinting (RFP), το οποίο αντικαθιστά ορισμένες από τις ρυθμίσεις προστασίας του { -brand-short-name } ενάντια στο fingerprinting. Αυτό μπορεί να προκαλέσει δυσλειτουργίες σε ορισμένους ιστοτόπους.
+preferences-etp-level-warning-message =
+    .heading = Προσοχή! Ορισμένοι ιστότοποι ενδέχεται να μην λειτουργούν όπως πρέπει.
+    .message = Ορισμένοι ιστότοποι ενσωματώνουν ιχνηλάτες στις λειτουργίες ή το περιεχόμενό τους. Όταν αυτοί αποκλείονται από το { -brand-short-name }, ο ιστότοπος δεν θα εμφανίζεται σωστά. Δοκιμάστε να χρησιμοποιήσετε την επιλογή «Διόρθωση ζητήματος ιστοτόπου» ή να απενεργοποιήσετε την προστασία από καταγραφή στον συγκεκριμένο ιστότοπο.
+preferences-etp-manage-exceptions-button =
+    .label = Διαχείριση εξαιρέσεων
+    .description = Διαχειριστείτε τους ιστοτόπους όπου η Ενισχυμένη προστασία από καταγραφή είναι ανενεργή.
+preferences-etp-customize-header =
+    .heading = Προσαρμογή προστασίας από καταγραφή
+preferences-etp-reset =
+    .label = Επαναφορά προσαρμογών
+    .description = Επαναφορά των ρυθμίσεων στο προκαθορισμένο επίπεδο προστασίας.
+preferences-etp-reset-standard-button =
+    .label = Επαναφορά στην τυπική
+preferences-etp-reset-strict-button =
+    .label = Επαναφορά στην αυστηρή
+preferences-etp-custom-control-group =
+    .label = Προστασία από καταγραφή
+    .description = Επιλέξτε ποια μέτρα προστασίας θέλετε να (απ)ενεργοποιήσετε.
+preferences-etp-custom-cookies-enabled =
+    .label = Cookie
+preferences-etp-custom-cookie-behavior =
+    .aria-label = Cookie
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = Αποδοχή όλων των cookie
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = Φραγή cookie μεταξύ ιστοτόπων
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = Απομόνωση cookie μεταξύ ιστοτόπων
+preferences-etp-custom-cookie-behavior-block-unvisited =
+    .label = Φραγή cookie από ιστοτόπους που δεν έχετε επισκεφθεί
+preferences-etp-custom-cookie-behavior-block-all-cross-site-cookies =
+    .label = Φραγή όλων των cookie μεταξύ ιστοτόπων (πιθανή δυσλειτουργία ιστοτόπων)
+preferences-etp-custom-cookie-behavior-block-all =
+    .label = Φραγή όλων των cookie (προκαλεί δυσλειτουργία ιστοτόπων)
+preferences-etp-custom-tracking-protection-enabled =
+    .label = Περιεχόμενο καταγραφής
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = Περιεχόμενο καταγραφής
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = Cryptominer
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = Γνωστά fingerprinter
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = Πιθανά fingerprinter
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = Πιθανά fingerprinter
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = Τα γνωστά fingerprinter δεν αποκλείονται
+    .description = Αυτό ενδέχεται να επιτρέπει σε ορισμένους ιχνηλάτες να σας ακολουθούν χωρίς cookie.
+security-privacy-issue-warning-third-party-cookies =
+    .label = Τα cookie τρίτων είναι ενεργά
+    .description = Τα cookie τρίτων χρησιμοποιούνται για την καταγραφή σας μεταξύ των ιστοτόπων.
+security-privacy-issue-warning-password-manager =
+    .label = Η διαχείριση κωδικών πρόσβασης είναι ανενεργή
+    .description = Οι εφαρμογές διαχείρισης κωδικών πρόσβασης σάς βοηθούν να αποθηκεύετε ισχυρούς κωδικούς πρόσβασης για τους λογαριασμούς σας.
+security-privacy-issue-warning-popup-blocker =
+    .label = Η φραγή αναδυόμενων παραθύρων είναι ανενεργή
+    .description = Τα αναδυόμενα παράθυρα διακόπτουν την περιήγησή σας και είναι δυνητικά επιβλαβή.
+security-privacy-issue-warning-extension-install =
+    .label = Οι ιστότοποι μπορούν να εγκαθιστούν επεκτάσεις
+    .description = Οι ιστότοποι μπορούν να εγκαθιστούν επεκτάσεις στο { -brand-short-name } χωρίς να ζητούν την άδειά σας.
+security-privacy-issue-warning-safe-browsing =
+    .label = Το επικίνδυνο και παραπλανητικό περιεχόμενο δεν αποκλείεται
+    .description = Η έκθεσή σας σε απάτες και κακόβουλο λογισμικό από ιστοτόπους είναι αυξημένη.
+security-privacy-issue-warning-doh =
+    .label = Το DNS μέσω HTTPS είναι ανενεργό
+    .description = Το DNS μέσω HTTPS αποκρύπτει ποιους ιστοτόπους επισκέπτεστε από τον πάροχο δικτύου σας.
+security-privacy-issue-warning-ech =
+    .label = Το Encrypted Client Hello είναι απενεργοποιημένο
+    .description = Το Encrypted Client Hello αποκρύπτει ποιους ιστοτόπους επισκέπτεστε από τον πάροχο δικτύου σας.
+security-privacy-issue-warning-proxy-autodetection =
+    .label = Η αυτόματη ρύθμιση διακομιστή μεσολάβησης είναι ενεργή
+    .description = Η αυτόματη ρύθμιση διακομιστή μεσολάβησης θα μπορούσε να επιτρέψει σε αναξιόπιστα δίκτυα να παρακολουθήσουν τη δραστηριότητά σας.

@@ -6,8 +6,16 @@ menu-view-genai-chat =
     .label = AI 聊天机器人
 menu-view-contextual-password-manager =
     .label = 密码
+# Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
+menu-view-open-tabs =
+    .label = 打开的标签页
 sidebar-options-menu-button =
     .title = 打开菜单
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = 调整侧栏大小
 
 ## Labels for sidebar history panel
 
@@ -30,6 +38,8 @@ sidebar-history-delete =
     .title = 从历史记录中删除
 sidebar-history-clear =
     .label = 清除历史记录
+sidebar-history-sort-by-heading-menucaption =
+    .label = 排序依据：
 sidebar-history-sort-by-heading = 排序依据：
 sidebar-history-sort-option-date =
     .label = 日期
@@ -56,6 +66,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = 管理 { -brand-short-name } 设置
 sidebar-vertical-tabs =
     .label = 垂直标签页
+sidebar-settings2 =
+    .label = 设置
 sidebar-settings =
     .label = 侧栏设置
 sidebar-hide-tabs-and-sidebar =
@@ -68,7 +80,10 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = 悬停时展开侧栏
-sidebar-manage-extensions = 管理扩展
+sidebar-manage-extensions2 = 管理所有扩展
+sidebar-customize-extensions-header2 = 扩展
+sidebar-customize-firefox-tools-header2 =
+    .label = 工具
 
 ## Labels for sidebar context menu items
 
@@ -89,7 +104,7 @@ sidebar-context-menu-open-in-private-window =
 sidebar-context-menu-forget-site =
     .label = 清除网站的所有数据…
 sidebar-context-menu-bookmark-tab =
-    .label = 将标签页加入书签…
+    .label = 为标签页添加书签…
 sidebar-context-menu-copy-link =
     .label = 复制链接
 sidebar-context-menu-hide-sidebar =
@@ -112,9 +127,18 @@ sidebar-context-menu-unpin-extension =
 sidebar-history-context-menu-delete-page-2 =
     .label = 从历史记录中删除页面
 sidebar-history-context-menu-bookmark-page =
-    .label = 将页面加入书签…
+    .label = 为页面添加书签…
 sidebar-history-context-menu-delete-pages =
     .label = 从历史记录中删除页面
+
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-edit-bookmark =
+    .label = 编辑书签…
+sidebar-bookmarks-context-menu-delete-bookmark =
+    .label = 删除书签
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = 删除
 
 ## Labels for sidebar menu items.
 
@@ -124,6 +148,11 @@ sidebar-menu-history-label =
     .label = 历史记录
 sidebar-menu-synced-tabs-label =
     .label = 其他设备上的标签页
+# Label for the Open Tabs panel in the sidebar tools list and customize
+# menu. "Open tabs" is a noun phrase referring to the tabs currently open
+# in the browser, not an instruction to open tabs.
+sidebar-menu-open-tabs-label =
+    .label = 打开的标签页
 sidebar-menu-bookmarks-label =
     .label = 书签
 sidebar-menu-customize-label =
@@ -170,16 +199,49 @@ sidebar-menu-history-header =
     .heading = 历史记录
 sidebar-menu-syncedtabs-header =
     .heading = 其他设备上的标签页
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = 打开的标签页
 sidebar-menu-cpm-header =
     .heading = 密码
+sidebar-menu-bookmarks-header =
+    .heading = 书签
 sidebar-panel-header-close-button =
     .tooltiptext = 关闭
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-menu = 书签菜单
+sidebar-bookmarks-folder-toolbar = 书签工具栏
+sidebar-bookmarks-folder-other = 其他书签
+sidebar-bookmarks-folder-mobile = 移动设备上的书签
 
 ## Titles for sidebar menu panels.
 
 sidebar-customize-title = 定制侧栏
 sidebar-history-title = 历史记录
 sidebar-syncedtabs-title = 其他设备上的标签页
+# Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
+# currently open in the browser.
+sidebar-opentabs-title = 打开的标签页
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = 固定的标签页
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = 窗口 { $winID }（当前）
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = 窗口 { $winID }
+sidebar-bookmarks-title = 书签
 
 ## Context for closing synced tabs when hovering over the items
 
@@ -215,3 +277,7 @@ sidebar-widget-show-sidebar2 =
 sidebar-widget-hide-sidebar2 =
     .tooltiptext = 隐藏侧栏 ({ $shortcut })
     .label = 侧栏
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = 重要标签页可拖到此处，使其触手可及

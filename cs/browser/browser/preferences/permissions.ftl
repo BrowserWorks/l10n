@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = Povolit
     .accesskey = P
+permissions-add =
+    .label = Přidat
+    .accesskey = P
 permissions-button-off =
     .label = Vypnout
     .accesskey = o
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = Odebrat všechny servery
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = Uložit změny
+    .buttonaccesskeyaccept = U
 permission-dialog =
     .buttonlabelaccept = Uložit změny
     .buttonaccesskeyaccept = U
@@ -85,13 +91,27 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Zde můžete určit, které servery mohou nebo nesmí používat cookies a data stránek. Zadejte přesnou adresu serveru a klepněte na tlačítko Blokovat, Povolit pro relaci nebo Povolit.
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = Výjimky – Vymazání historie při vypnutí
+permissions-exceptions-shutdown-clearing-desc = Můžete určit, které webové stránky si ponechají svá data, když { -brand-short-name } při zavření vymaže historii. Zadejte přesnou adresu stránky, kterou chcete spravovat, a poté klepněte na Povolit.
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
     .title = Servery, které mohou používat nezabezpečený protokol HTTP
     .style = { permissions-window2.style }
-permissions-exceptions-https-only-desc = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o automatické navázání spojení skrze protokol HTTPS. Pro anonymní okna tento seznam výjimek neplatí.
-permissions-exceptions-https-only-desc2 = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o automatické navázání spojení skrze protokol HTTPS.
+permissions-exceptions-https-only-desc = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o navázání spojení skrze zabezpečený protokol HTTPS. Pro anonymní okna tento seznam výjimek neplatí.
+permissions-exceptions-https-only-desc2 = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o navázání zabezpečeného spojení skrze protokol HTTPS.
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = Povolené weby - vyskakovací okna a přesměrování třetích stran
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = Zde můžete určit, které servery mohou otevírat vyskakovací okna a být přesměrovány pomocí rámů třetích stran.
 
 ## Exceptions - Pop-ups
 
@@ -131,12 +151,12 @@ permissions-site-autoplay-desc = Níže můžete nastavit výjimky a vlastní na
 ## Site Permissions - Notifications
 
 permissions-site-notification-window2 =
-    .title = Oprávnění posílat oznámení
+    .title = Oprávnění zasílat oznámení
     .style = { permissions-window2.style }
-permissions-site-notification-desc = Následující servery požádaly o povolení vám posílat oznámení. Zde můžete určit, které servery mají nebo nemají povoleno vám oznámení posílat. Můžete zde také zablokovat nové žádosti o povolení.
+permissions-site-notification-desc = Následující servery požádaly o povolení vám zasílat oznámení. Zde můžete určit, které servery mají nebo nemají povoleno vám oznámení zasílat. Můžete zde také zablokovat nové žádosti o povolení.
 permissions-site-notification-disable-label =
-    .label = Blokovat nové žádosti o povolení posílat oznámení
-permissions-site-notification-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o povolení vám posílat oznámení. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
+    .label = Blokovat nové žádosti o povolení zasílat oznámení
+permissions-site-notification-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o povolení vám zasílat oznámení. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
 
 ## Site Permissions - Location
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = Následující servery požádaly o přístup k v
 permissions-site-camera-disable-label =
     .label = Blokovat nové žádosti o přístup k vaší kameře
 permissions-site-camera-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o přístup k vaší kameře. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = Nastavení - Aplikace a služby v zařízení
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = Tyto servery požádaly o přístup k aplikacím a službám na tomto zařízení. Můžete jim ho povolit nebo zakázat.
+permissions-site-localhost-disable-label =
+    .label = Blokovat nové žádosti o přístup k aplikacím a službám na tomto zařízení
+permissions-site-localhost-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o přístup k aplikacím a službám v tomto zařízení. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = Nastavení - Zařízení v místní síti
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = Tyto servery požádaly o přístup k aplikacím a službám na zařízeních připojených k vaší Wi-Fi nebo místní síti. Můžete jim ho povolit nebo zakázat.
+permissions-site-local-network-disable-label =
+    .label = Blokovat nové žádosti o přístup k aplikacím a službám na zařízeních připojených k vaší Wi-Fi nebo místní síti.
+permissions-site-local-network-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o přístup k aplikacím a službám na zařízeních připojených k vaší Wi-Fi nebo místní síti. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
 
 ## Site Permissions - Microphone
 

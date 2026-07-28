@@ -21,6 +21,9 @@ permissions-session =
 permissions-allow =
     .label = 許可
     .accesskey = A
+permissions-add =
+    .label = 追加
+    .accesskey = A
 permissions-button-off =
     .label = オフにする
     .accesskey = O
@@ -37,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = すべてのウェブサイトを削除
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = 変更を保存
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = 変更を保存
     .buttonaccesskeyaccept = S
@@ -68,8 +74,8 @@ permissions-capabilities-listitem-off-temporarily =
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = 無効なホスト名が入力されました
-permissions-invalid-uri-label = 有効なホスト名を入力してください
+permissions-invalid-uri-title = 不正なホスト名が入力されました
+permissions-invalid-uri-label = 正しいホスト名を入力してください
 
 ## Exceptions - Tracking Protection
 
@@ -85,6 +91,13 @@ permissions-exceptions-cookie-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = Cookie とサイトデータの使用を許可するかどうかウェブサイトごとに指定できます。個別に設定するサイトの正確なアドレスを入力して [不許可]、[現在のセッションのみ]、[許可] のいずれかをクリックしてください。
 
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .title = 例外 - シャットダウン時に履歴を消去
+    .style = { permissions-window2.style }
+permissions-exceptions-shutdown-clearing-desc = { -brand-short-name } を閉じて履歴を消去する際にデータを保存しておくウェブサイトを指定してください。管理したいサイトのアドレスを正確に入力し、[許可] をクリックしてください。
+
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
@@ -92,6 +105,13 @@ permissions-exceptions-https-only-window2 =
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = HTTPS-Only モードをオフにするウェブサイトを指定できます。{ -brand-short-name } はこれらのサイトでは安全な接続にアップグレードしません。プライベートウィンドウではこの例外は適用されません。
 permissions-exceptions-https-only-desc2 = HTTPS-Only モードをオフにするウェブサイトを指定できます。{ -brand-short-name } はこれらのサイトでは安全な接続にアップグレードしません。
+
+## Exceptions - Pop-ups And Third-Party Redirects
+
+permissions-exceptions-popup-window3 =
+    .title = 許可されたウェブサイト - ポップアップとサードパーティによるリダイレクト
+    .style = { permissions-window2.style }
+permissions-exceptions-popup-desc2 = ポップアップウィンドウの表示とサードパーティフレームによるリダイレクトを許可するウェブサイトを指定できます。
 
 ## Exceptions - Pop-ups
 
@@ -167,6 +187,26 @@ permissions-site-camera-desc = 次のウェブサイトがカメラへのアク�
 permissions-site-camera-disable-label =
     .label = カメラへのアクセスの要求をブロックする
 permissions-site-camera-disable-desc = 上記以外のウェブサイトは、カメラへのアクセスを要求させないようにします。カメラへのアクセスをブロックすると、一部のウェブサイトが機能しなくなる可能性があります。
+
+## Site Permissions - Loopback network
+
+permissions-site-localhost-window =
+    .title = 設定 - 端末のアプリとサービス
+    .style = { permissions-window2.style }
+permissions-site-localhost-desc = 次のウェブサイトがこの端末上のアプリとサービスへのアクセスを要求しています。サイトのアクセスを許可またはブロックしてください。
+permissions-site-localhost-disable-label =
+    .label = この端末上のアプリとサービスへの新たなアクセス要求をブロックする
+permissions-site-localhost-disable-desc = 上記以外のウェブサイトには、この端末上のアプリとサービスへのアクセスを要求させません。一部のウェブサイトの機能が正しく動作しなくなる可能性があります。
+
+## Site Permissions - Local network
+
+permissions-site-local-network-window =
+    .title = 設定 - ローカルネットワークの端末
+    .style = { permissions-window2.style }
+permissions-site-local-network-desc = 次のウェブサイトが Wi-Fi やローカルネットワークに接続された端末上のアプリとサービスへのアクセスを要求しています。サイトのアクセスを許可またはブロックしてください。
+permissions-site-local-network-disable-label =
+    .label = Wi-Fi やローカルネットワークに接続された端末上のアプリとサービスへの新たなアクセスの要求をブロックする
+permissions-site-local-network-disable-desc = 上記以外のウェブサイトには、Wi-Fi やローカルネットワークに接続されている端末上のアプリとサービスへのアクセスを要求させません。一部のウェブサイトの機能が正しく動作しなくなる可能性があります。
 
 ## Site Permissions - Microphone
 

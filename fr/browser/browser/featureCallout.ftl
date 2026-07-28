@@ -104,6 +104,14 @@ perplexity-callout-primary-label = Demandez à Perplexity
 perplexity-callout-secondary-label-1 = Ignorer
 perplexity-callout-secondary-label-2 = J’ai compris
 
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Envie de tester un moteur de recherche axé sur la confidentialité ?
+start-page-callout-subtitle = Essayez Startpage. Il est conçu pour que vos recherches soient plus privées par défaut.
+start-page-callout-primary-label = Essayer Startpage
+start-page-callout-secondary-label = Ignorer
+
 ## Account Adoption Passwords callout strings
 
 # Suggestion to backup passwords by signing up for Mozilla account and using sync
@@ -112,11 +120,74 @@ fxa-adoption-passwords-subtitle = Protégez vos mots de passe en les chiffrant e
 # Opens Mozilla accounts sign-up page
 fxa-adoption-passwords-primary-button-label = Créer un compte
 
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Conservez vos fils d’actualité préférés dans votre barre des tâches
+taskbar-tabs-social-callout-subtitle = Ouvrez vos réseaux sociaux sous forme d’application dans une fenêtre épurée et sécurisée par { -brand-short-name }.
+taskbar-tabs-chat-callout-title = Discutez depuis la barre des tâches
+taskbar-tabs-chat-callout-subtitle = Ouvrez vos sites de discussion sous forme d’application dans une fenêtre épurée et sécurisée par { -brand-short-name }.
+taskbar-tabs-email-callout-title = Gardez votre compte e-mail dans la barre des tâches
+taskbar-tabs-email-callout-subtitle = Ouvrez votre messagerie web sous forme d’application dans une fenêtre épurée et sécurisée par { -brand-short-name }.
+taskbar-tabs-media-callout-title = Reprenez le stream depuis la barre des tâches
+taskbar-tabs-media-callout-subtitle = Ouvrez vos sites de streaming sous forme d’application dans une fenêtre épurée et sécurisée par { -brand-short-name }.
+taskbar-tabs-value-prop-callout-title = Ajouter ce site à votre barre des tâches
+taskbar-tabs-value-prop-callout-subtitle = Lancez-le dans sa propre fenêtre et dans une interface simplifiée d’un simple clic.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Ne perdez pas tout ce que vous avez enregistré lorsque vous passez à Windows 11.
+windows-10-eos-sync-urgency-subtitle-1 = Synchronisez maintenant pour conserver vos marque-pages, mots de passe et paramètres { -brand-short-name } en toute sécurité et faciliter leur restauration.
+windows-10-eos-sync-urgency-title-2 = Vous dites adieu à Windows 10 ? Protégez vos données lors de la mise à niveau.
+windows-10-eos-sync-urgency-subtitle-2 = Même si vous n’utilisez pas { -brand-short-name } au quotidien, synchronisez vos données afin que vos marque-pages et mots de passe restent accessibles et soient conservés en toute sécurité.
+windows-10-eos-sync-new-device-title-1 = Ne prenez pas le risque de repartir de zéro sur votre prochain appareil.
+windows-10-eos-sync-new-device-subtitle-1 = Activez la synchronisation pour emporter avec vous vos marque-pages, mots de passe et paramètres { -brand-short-name } lorsque vous changerez d’appareil.
+windows-10-eos-sync-new-device-title-2 = Vous changez d’appareil ? Ne perdez pas l’essentiel.
+windows-10-eos-sync-new-device-subtitle-2 = Quelle que soit votre fréquence d’utilisation de { -brand-short-name }, la synchronisation protège vos marque-pages, vos mots de passe et vos paramètres.
+windows-10-eos-sync-new-device-primary-label = Synchroniser maintenant
+windows-10-eos-sync-general-title-1 = Conservez votre personnalisation de { -brand-short-name }
+windows-10-eos-sync-general-subtitle-1 = Sauvegardez et synchronisez vos mots de passe, marque-pages, paramètres et autres données pour préserver ce qui vous est indispensable.
+windows-10-eos-sync-general-title-2 = C’est le bon moment pour sauvegarder vos mots de passe et vos marque-pages.
+windows-10-eos-sync-general-subtitle-2 = Synchronisez maintenant pour protéger les données que vous avez confiées à { -brand-short-name } et récupérez-les à tout moment, où vous en avez besoin.
+windows-10-eos-sync-tour-title-1 = Vous avez trop d’onglets ? Faites de la place avec les groupes d’onglets.
+windows-10-eos-sync-tour-subtitle-1 = Déposez un onglet au-dessus d’un autre pour créer un groupe et mettre de l’ordre dans vos onglets.
+windows-10-eos-sync-tour-title-2 = Préparez-vous pour Windows 11.
+windows-10-eos-sync-tour-subtitle-2 = Synchronisez vos marque-pages, mots de passe et paramètres pour les sauvegarder avant d’effectuer la mise à niveau.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Afficher moins de recommandations
+windows-10-eos-sync-dismiss-button-label = Ignorer
+windows-10-eos-sync-callout-primary-advance-button-label = Suivant
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Nouveau : cliquez et maintenez pour prévisualiser les liens
+link-preview-onboarding-callout-description = Affichez une courte description, la durée de lecture, etc. pour décider si un lien vaut la peine d’être cliqué. Également disponible avec un clic droit.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Éliminez le superflu avec les groupes d’onglets
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Regroupez vos onglets par tâche ou sujet. Ajoutez-en d’autres au fil de votre navigation.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Créer un groupe
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = Afficher le titre des onglets dans le panneau latéral
 sidebar-button-callout-subtitle = Utilisez le bouton du panneau latéral pour développer le panneau latéral, afin de voir le titre des onglets.
 sidebar-button-callout-vertical-tabs = Pour afficher vos onglets, cliquez sur le bouton du panneau latéral dans la barre d’outils.
+sidebar-deprecation-callout-title = Panneau latéral mis à jour disponible prochainement
+sidebar-deprecation-callout-subtitle = Nous allons progressivement supprimer la version du panneau latéral que vous utilisez actuellement. Essayez le nouveau panneau latéral. Il est plus rapide et vous avez accès à davantage d’outils.
+sidebar-deprecation-cta-button = Essayer maintenant
 
 ## Sidebar Vertical Tabs Strings
 
@@ -136,8 +207,13 @@ sidebar-pins-callout-cta-button = Épingler cet onglet
 ## Pinning Tabs Strings
 
 pin-tabs-callout-1-title = Gardez les onglets importants à portée de main
+pin-tabs-callout-1-subtitle = Faites glisser un onglet en début de la liste pour l’épingler. Ou faites un clic droit et choisissez « Épingler l’onglet ».
 pin-tabs-callout-cta-1-button = Épingler cet onglet
 pin-tabs-callout-2-title = Épinglez les onglets que vous ouvrez le plus souvent
+pin-tabs-callout-2-subtitle = Pour épingler un onglet quelconque, faites-le glisser au début de la liste des onglets. Ou faites un clic droit et choisissez « Épingler l’onglet ».
+pin-tabs-callout-cta-2-button = Épingler cet onglet
+pin-tabs-callout-3-title = Gardez les sites importants à portée de main
+pin-tabs-callout-4-title = Épinglez les sites que vous ouvrez le plus souvent
 
 ## Sidebar Onboarding Strings
 
@@ -146,7 +222,7 @@ sidebar-customization-callout-1-subtitle = Le panneau latéral de { -brand-produ
 sidebar-customization-callout-callout-button = Personnaliser le panneau latéral
 sidebar-customization-callout-dismiss-button = Masquer le panneau latéral
 sidebar-customization-callout-2-title = Personnalisez le panneau latéral de { -brand-product-name }
-sidebar-customization-callout-2-subtitle = Ajouter et supprimer des outils. Placez vos onglets dans le panneau latéral. Essayez un chatbot IA. C’est vous qui décidez comment vous personnalisez votre panneau latéral.
+sidebar-customization-callout-2-subtitle = Ajoutez et supprimez des outils. Placez vos onglets dans le panneau latéral. Essayez un chatbot IA. C’est vous qui décidez comment vous personnalisez votre panneau latéral.
 
 ## Sidebar Callout Survey Strings
 
@@ -177,6 +253,12 @@ sidebar-genai-survey-satisfaction-question = Quel est votre degré de satisfacti
 sidebar-genai-survey-productive-question =
     Jusqu’à quel point êtes vous d’accord ou non avec cette affirmation :<br/>
     « Le chatbot IA dans le panneau latéral me permet d’être plus efficace » ?
+splitview-onboarding-callout-title-1 = Vue scindée : une méthode plus efficace pour effectuer plusieurs tâches en même temps
+splitview-onboarding-callout-subtitle-1 = Faites un clic droit sur cet onglet et choisissez « Ajouter une vue scindée » pour afficher deux onglets en même temps.
+splitview-onboarding-callout-cta-1 = Essayer maintenant
+splitview-onboarding-callout-title-2 = Affichez deux onglets en même temps avec la vue scindée
+splitview-onboarding-callout-subtitle-2 = Aucune fenêtre supplémentaire. Aucun changement d’onglet. Faites un clic droit sur cet onglet et choisissez « Ajouter une vue scindée ».
+splitview-onboarding-callout-cta-2 = Essayer la vue scindée
 unified-search-callout-title = Changer de moteur de recherche
 unified-search-callout-subtitle = Choisissez ce qui correspond le mieux à votre recherche.
 unified-search-callout-primary-label = Suivant
@@ -190,6 +272,6 @@ actions-callout-title = Effectuez des tâches courantes ou accédez aux paramèt
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = Essayez de saisir une action, comme « imprimer » pour imprimer une page ou « effacer » pour effacer votre historique.

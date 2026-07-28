@@ -21,8 +21,8 @@ genai-settings-chat-localhost-links = 引入您私有的本地聊天机器人，
 
 # Prompt purpose: help users understand what a selection covers at a glance
 genai-prompts-summarize =
-    .label = 摘要总结
-    .value = 请简要概括所选内容。用标题分节、列表分点，做到一目了然。据实总结，不要脱离原意。
+    .label = 生成摘要
+    .value = 请简要概括所选内容。用标题分节、列表分点，做到一目了然。据实生成摘要，不要脱离原意。
 # Prompt purpose: make a selection easier to read
 genai-prompts-simplify =
     .label = 简化措辞
@@ -63,8 +63,13 @@ genai-menu-remove-provider =
     .label = 移除 { $provider }
 genai-menu-remove-sidebar =
     .label = 从侧栏移除
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = 询问 { $provider }
 genai-menu-new-badge = 新
-genai-menu-summarize-page = 总结页面
+genai-menu-summarize-page = 生成页面摘要
+genai-input-ask-smart-window =
+    .placeholder = 询问…
 genai-input-ask-generic =
     .placeholder = 询问 AI 聊天机器人…
 # $provider (string) - name of the provider
@@ -83,16 +88,29 @@ genai-shortcuts-selected-warning =
     .message = 您选中了约 { $selectionLength } 个字符，我们最多可向 { $provider } 发送约 { $maxLength } 个字符。
 genai-shortcuts-hide =
     .label = 隐藏聊天机器人快捷方式
-genai-menu-no-provider =
-    .label = 询问 AI 聊天机器人
 genai-menu-choose-chatbot =
     .label = 选择 AI 聊天机器人
+genai-menu-ask-generic-2 =
+    .label = 询问 AI 聊天机器人
+    .accesskey = h
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = 询问 { $provider }
+    .accesskey = h
+genai-menu-no-provider-2 =
+    .label = 询问 AI 聊天机器人
+    .accesskey = h
+genai-menu-ask-smart-window =
+    .label = 询问…
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = AI 聊天机器人
 genai-header-provider-menu =
     .title = 选择聊天机器人
+genai-header-settings-button =
+    .title = AI 聊天设置
 genai-header-options-button =
     .title = 打开菜单
 genai-header-close-button =
@@ -111,9 +129,14 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = 关于 { -brand-short-name } 中的 AI 聊天机器人
 
+## Chatbot message
+
+genai-page-warning =
+    .message = 由于页面篇幅较长，此处为部分内容摘要。
+
 ## Chatbot footer
 
-genai-page-button-summarize = 总结页面
+genai-page-button-summarize = 生成页面摘要
 
 ## Chatbot onboarding
 
@@ -149,15 +172,15 @@ genai-onboarding-select-primary = 开始聊天
 genai-chatbot-contextual-title = 使用 AI 聊天机器人时，无需再切换标签页
 genai-chatbot-contextual-subtitle = 在 { -brand-short-name } 侧栏中添加 AI 聊天机器人，让聊天与浏览齐驱并进。
 genai-chatbot-contextual-button = 选择聊天机器人
-genai-chatbot-summarize-title = 新功能！一键总结页面
-genai-chatbot-summarize-button = 总结页面
+genai-chatbot-summarize-title = 新功能！一键生成页面摘要
+genai-chatbot-summarize-button = 生成页面摘要
 # “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
-genai-chatbot-summarize-sidebar-provider-subtitle = 右键点击侧栏中的 AI 聊天机器人，然后选择“总结页面”。
+genai-chatbot-summarize-sidebar-provider-subtitle = 右键点击侧栏中的 AI 聊天机器人，然后选择“生成页面摘要”。
 # “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
-genai-chatbot-summarize-sidebar-generic-subtitle = 右键点击侧栏中的星芒按钮，然后选择“总结页面”。首次使用时，需要先选择 AI 聊天机器人。
+genai-chatbot-summarize-sidebar-generic-subtitle = 右键点击侧栏中的星芒按钮，然后选择“生成页面摘要”。首次使用时，需要先选择 AI 聊天机器人。
 # “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
-genai-chatbot-summarize-footer-provider-subtitle = 在侧栏中打开 AI 聊天机器人，然后选择底部的“总结页面”。
-genai-chatbot-summarize-footer-generic-subtitle = 将 AI 聊天机器人添加到 { -brand-short-name } 侧栏，方便快速总结页面。
+genai-chatbot-summarize-footer-provider-subtitle = 在侧栏中打开 AI 聊天机器人，然后选择底部的“生成页面摘要”。
+genai-chatbot-summarize-footer-generic-subtitle = 将 AI 聊天机器人添加到 { -brand-short-name } 侧栏，方便快速生成页面摘要。
 
 ## Chatbot onboarding choices
 ## These describe features/capabilities of chatbot providers. These are not buttons/actions.
@@ -172,7 +195,7 @@ genai-onboarding-copilot-generate = 生成文本、图像、代码
 genai-onboarding-copilot-analyze = 分析图像
 genai-onboarding-copilot-price = 提供免费和付费选项；处理部分任务需要登录账户
 genai-onboarding-gemini-generate = 生成文本、图像、代码
-genai-onboarding-gemini-analyze = 分析图像（免费）和文本（付费）
+genai-onboarding-gemini-analyze = 分析图像（免费）和文档（付费）
 genai-onboarding-gemini-price = 提供免费和付费选项；需要登录账户
 genai-onboarding-huggingchat-generate = 生成文本和代码
 genai-onboarding-huggingchat-switch = 可在多个开源模型间切换
@@ -199,3 +222,48 @@ genai-model-optin-cancel =
 #   $rangePlural (String): The plural category of the range, using the same set as for numbers.
 #   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
 link-preview-reading-time = 阅读时间 { $range } 分钟
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } 无法预览此链接
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = 访问链接
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } 无法为此网页生成要点。
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = 出了点问题。
+# Text for the retry link when generation fails
+link-preview-generation-retry = 重试
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = 预览链接设置
+link-preview-settings-enable =
+    .label = 启用预览链接
+    .description = 使用快捷方式或右击链接，查看页面标题、描述等信息。
+link-preview-settings-key-points =
+    .label = 允许 AI 读取页面开头并生成要点
+link-preview-settings-long-press =
+    .label = 快捷方式：长按链接 1 秒
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = 想用 AI 看到更多内容吗？
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } 使用 AI 读取页面开头部分，并生成若干要点。为优先保护隐私，处理过程会在您的设备上进行。
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = 新功能：长按任意链接即可预览
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = 查看简短描述、阅读时长等信息，帮助判断链接是否值得点开。也可通过右键点击使用。
+# Header for the key points section
+link-preview-key-points-header = 要点
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = 要点由 AI 生成，可能存在错误。
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = 首次运行设置 • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = 您下次就能更快看到要点。
+# Onboarding card See a preview button
+link-preview-onboarding-button = 查看预览
+# Onboarding card Close button
+link-preview-onboarding-close = 关闭
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = 首次运行设置
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = 此过程可能需要一些时间。下次您将更快看到要点。

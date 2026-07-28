@@ -57,7 +57,7 @@ about-private-browsing-pin-promo-header = Svoboda soukromého prohlížení na j
 about-private-browsing-pin-promo-link-text =
     { PLATFORM() ->
         [macos] Připnout do docku
-       *[other] Připnout na lištu
+       *[other] Připnout na systémový hlavní panel
     }
 about-private-browsing-pin-promo-title = Žádné uložené cookies ani historie, přímo z vaší plochy. Prohlížejte, jako když se nikdo nedívá.
 
@@ -68,17 +68,31 @@ about-private-browsing-pin-promo-title = Žádné uložené cookies ani historie
 about-private-browsing-cookie-banners-promo-header = Cookie lišty jsou fuč!
 about-private-browsing-cookie-banners-promo-button = Omezit cookie lišty
 about-private-browsing-cookie-banners-promo-message =
-    Nechte { -brand-short-name.case-status ->
-        [with-cases] { -brand-short-name(case: "acc") }
-       *[no-cases] aplikaci { -brand-short-name }
-    } automaticky odpovídat na vyskakovací okna souborů cookie za vás, abyste se mohli vrátit k procházení bez rozptylování. { -brand-short-name } odmítne všechny požadavky, pokud je to možné.
+    { -brand-short-name.case-status ->
+        [with-cases] Nechte { -brand-short-name(case: "acc") } automaticky odpovídat na vyskakovací okna souborů cookie za vás, abyste se mohli vrátit k procházení stránek bez rozptylování. { -brand-short-name } odmítne všechny požadavky, pokud je to možné.
+       *[no-cases] Nechte aplikaci { -brand-short-name } automaticky odpovídat na vyskakovací okna souborů cookie za vás, abyste se mohli vrátit k procházení stránek bez rozptylování. { -brand-short-name } odmítne všechny požadavky, pokud je to možné.
+    }
 # Simplified version of the headline if the original text doesn't work
 # in your language: `{ -brand-short-name } will show fewer cookie requests`
 about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } se za vás postará o lišty cookie
 about-private-browsing-cookie-banners-promo-body = Nyní automaticky odmítáme mnoho lišt cookie, abyste byli méně sledováni a mohli se vrátit k prohlížení bez rozptylování.
 
-## Strings for Felt Privacy v1 experiments in 119
+## Strings for the info section of about:privatebrowsing
 
-about-private-browsing-felt-privacy-v1-info-header = Nezanechávejte na tomto zařízení žádné stopy
-about-private-browsing-felt-privacy-v1-info-body = Když zavřete všechna anonymní okna, { -brand-short-name } odstraní vaše soubory cookie, historii a data stránek.
+about-private-browsing-felt-privacy-v1-info-header = Nezanechá stopy
+about-private-browsing-felt-privacy-v1-info-body = Když zavřete všechna anonymní okna, { -brand-short-name } vymaže vaše cookies, historii a data stránek.
 about-private-browsing-felt-privacy-v1-info-link = Kdo může vidět mou aktivitu?
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = Zavřením všech anonymních oken smažete cookies, historii a data stránek.
+about-private-browsing-nova-info-link = Kdo stále může vidět mou aktivitu?
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = Historie vašeho prohlížení nebude zaznamenávána
+about-private-browsing-nova-info-subheader =
+    { -brand-short-name.case-status ->
+        [with-cases] Jakmile toto okno zavřete, vymažeme všechna vyhledávání a přihlášení. Jsou zde také aktivní vestavěné ochranné funkce { -brand-short-name(case: "gen") }, jako například blokování sledovacích prvků.
+       *[no-cases] Jakmile toto okno zavřete, vymažeme všechna vyhledávání a přihlášení. Jsou zde také aktivní vestavěné ochranné funkce aplikace { -brand-short-name }, jako například blokování sledovacích prvků.
+    }

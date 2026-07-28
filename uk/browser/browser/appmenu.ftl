@@ -23,6 +23,8 @@ appmenuitem-new-private-window =
     .label = Приватне вікно
 appmenuitem-history =
     .label = Історія
+appmenuitem-tab-groups =
+    .label = Групи вкладок
 appmenuitem-downloads =
     .label = Завантаження
 appmenuitem-passwords =
@@ -108,7 +110,7 @@ appmenu-account-header = Обліковий запис
 # 3 hours ago, etc.)
 appmenu-fxa-last-sync = Востаннє синхронізовано { $time }
     .label = Востаннє синхронізовано { $time }
-appmenu-fxa-sync-and-save-data2 = Синхронізувати та зберегти дані
+appmenu-fxa-sync-and-save-data2 = Синхронізувати й зберегти дані
 appmenu-fxa-signed-in-label = Увійти
 appmenu-fxa-setup-sync =
     .label = Увімкнути синхронізацію…
@@ -145,7 +147,7 @@ profiler-popup-reveal-description-button =
     .aria-label = Розкрити більше інформації
 profiler-popup-description-title =
     .value = Записуйте, аналізуйте, діліться
-profiler-popup-description = Співпрацюйте над проблемами швидкодії, оприлюднюючи профілі для своєї команди.
+profiler-popup-description = Співпрацюйте над проблемами продуктивності, оприлюднюючи профілі для своєї команди.
 profiler-popup-learn-more-button =
     .label = Докладніше
 profiler-popup-settings =
@@ -212,6 +214,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = Задані параметри для налагодження у { -brand-shorter-name }. Високе споживання ресурсів. Не використовуйте для високопродуктивних завдань, а щоб зрозуміти поведінку браузера.
 profiler-popup-presets-debug-label =
     .label = Налагодження
+profiler-popup-presets-web-compat-description = Рекомендований заданий параметр для налагодження проблем сумісності вебсайтів, а не для відстеження продуктивності.
+profiler-popup-presets-web-compat-label =
+    .label = Web Compat
 profiler-popup-presets-custom-label =
     .label = Власний
 
@@ -277,6 +282,8 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Налаштувати панель інструментів…
+appmenu-abouttranslations =
+    .label = Перекласти…
 appmenu-developer-tools-subheader = Інструменти браузера
 appmenu-developer-tools-extensions =
     .label = Розширення для розробників
@@ -292,8 +299,13 @@ appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = Маскуйте свою справжню електронну адресу та телефон
 appmenuitem-services-relay-description = Відкрити панель масок електронної пошти
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Отримайте захист усього пристрою
 appmenuitem-vpn-description = Захистіть свою онлайн-діяльність
 appmenu-services-header = Мої послуги
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Спробуйте інші інструменти захисту від BrowserWorks:
 appmenu-other-protection-header = Спробуйте інші інструменти захисту від { -vendor-short-name }:
 
 ## Profiles panel
@@ -301,6 +313,8 @@ appmenu-other-protection-header = Спробуйте інші інструмен
 appmenu-other-profiles = Інші профілі
 appmenu-manage-profiles =
     .label = Керувати профілями
+appmenu-copy-profile =
+    .label = Скопіювати цей профіль
 appmenu-create-profile =
     .label = Новий профіль
 appmenu-edit-profile =

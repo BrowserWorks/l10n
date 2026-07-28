@@ -3,22 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
-
-# NOTE: For English locales, strings in this file should be in APA-style Title Case.
-# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
-#
-# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
-
-
 ## Application Menu (macOS only)
 
 menu-application-preferences =
     .label = ค่าปรับแต่ง
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = การตั้งค่า…
+menu-application-set-as-default =
+    .label = ตั้ง { -brand-shorter-name } เป็นเบราว์เซอร์เริ่มต้น
 menu-application-services =
     .label = บริการ
 menu-application-hide-this =
@@ -97,6 +90,9 @@ menu-file-email-link =
 menu-file-share-url =
     .label = แบ่งปัน
     .accesskey = h
+menu-file-share-qrcode =
+    .label = สร้างรหัส QR…
+    .accesskey = Q
 menu-file-print-setup =
     .label = ตั้งค่าหน้ากระดาษ…
     .accesskey = ร
@@ -145,8 +141,6 @@ menu-view-history-button =
     .label = ประวัติ
 menu-view-synced-tabs-sidebar =
     .label = แท็บที่ซิงค์
-menu-view-megalist-sidebar =
-    .label = รหัสผ่าน
 menu-view-full-zoom =
     .label = ซูม
     .accesskey = ม
@@ -220,7 +214,7 @@ menu-history-clear-recent-history =
 menu-history-synced-tabs =
     .label = แท็บที่ซิงค์
 menu-history-restore-last-session =
-    .label = เรียกคืนวาระก่อนหน้า
+    .label = เรียกคืนเซสชันก่อนหน้า
 menu-history-hidden-tabs =
     .label = แท็บที่ซ่อนอยู่
 menu-history-undo-menu =
@@ -262,6 +256,13 @@ menu-profiles-manage-profiles =
     .label = จัดการโปรไฟล์
 menu-profiles-new-profile =
     .label = โปรไฟล์ใหม่
+# Variables:
+#  $profileName (String): the name of the users profile
+menu-profiles-current =
+    .label = { $profileName } (ปัจจุบัน)
+menu-profiles-menu =
+    .label = โปรไฟล์
+    .accesskey = ป
 
 ## Tools Menu
 

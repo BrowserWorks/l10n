@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = تعذّر التحديث — النظام غير متطابق
 appmenuitem-banner-update-restart =
     .label = يتوفّر تحديث — أعِد التشغيل
+appmenu-nova-fxa-sign-in = لِج
+appmenu-nova-switch-device-promo =
+    .message = هل ستحصل على جهازًا جديدًا قريبًا؟ خذ معك { -brand-short-name }!
+appmenu-nova-switch-device-link = كيفية نقل بياناتك
 appmenuitem-new-tab =
     .label = لسان جديد
 appmenuitem-new-window =
@@ -23,6 +27,8 @@ appmenuitem-new-private-window =
     .label = نافذة خاصة جديدة
 appmenuitem-history =
     .label = التأريخ
+appmenuitem-tab-groups =
+    .label = مجموعات الألسنة
 appmenuitem-downloads =
     .label = التنزيلات
 appmenuitem-passwords =
@@ -170,6 +176,9 @@ profiler-popup-capture-shortcut =
         [macos] ⌃⇧2
        *[other] Ctrl+Shift+2
     }
+profiler-button-dropmarker =
+    .label = افتح لوحة محلّل الأداء
+    .tooltiptext = افتح لوحة محلّل الأداء
 
 ## Profiler presets
 ## They are shown in the popup's select box.
@@ -196,9 +205,15 @@ profiler-popup-presets-graphics-label =
 profiler-popup-presets-media-description2 = إعداد مسبق للتحرّي عن مشاكل الصوت والفيديو في { -brand-shorter-name }.
 profiler-popup-presets-media-label =
     .label = الوسائط
+profiler-popup-presets-ml-description = الإعداد المسبق لتشخيص أخطاء التعلُّم الآلي في { -brand-shorter-name }
+profiler-popup-presets-ml-label =
+    .label = التعلم الآلي
 profiler-popup-presets-networking-description = إعداد مسبق للتحرّي عن مشاكل الشبكة في { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
     .label = الشبكة
+profiler-popup-presets-networking-with-logs-description = إعداد مسبق للتحقيق في أخطاء الشبكة في { -brand-shorter-name }، بما في ذلك سجلات الشبكة. قد تحتوي هذه السجلات على معلومات حساسة مثل عناوين المواقع التي تزورها.
+profiler-popup-presets-networking-with-logs-label =
+    .label = التواصل الشبكي باستخدام السجلات
 profiler-popup-presets-power-description = إعداد مسبق للتحرّي عن العلل التي تستخدم الطاقة في { -brand-shorter-name }، مع حمل منخفض.
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
@@ -206,6 +221,9 @@ profiler-popup-presets-power-label =
 profiler-popup-presets-debug-description = إعداد مسبق للتنقيح في { -brand-shorter-name }. تكلفة إضافية عالية، لا تستخدمه لأعمال الأداء ولكن استخدمه للتركيز على فهم سلوك المتصفح.
 profiler-popup-presets-debug-label =
     .label = نقّح
+profiler-popup-presets-web-compat-description = الإعداد المسبق الموصى به لتصحيح أخطاء توافق الوِب في مواقع الوِب، بدلاً من تتبع الأداء.
+profiler-popup-presets-web-compat-label =
+    .label = توافق الوِب
 profiler-popup-presets-custom-label =
     .label = مخصّص
 
@@ -271,6 +289,8 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = خصّص شريط الأدوات…
+appmenu-abouttranslations =
+    .label = ترجم…
 appmenu-developer-tools-subheader = أدوات المتصفّح
 appmenu-developer-tools-extensions =
     .label = الامتدادات التي تخصّ المطوّرين
@@ -286,8 +306,17 @@ appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-description = أخفِ بريدك الإلكتروني ورقم هاتفك الحقيقي
 appmenuitem-services-relay-description = إطلاق لوحة معلومات أقنعة البريد الإلكتروني
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = احصل على حماية كاملة للجهاز
 appmenuitem-vpn-description = احمِ نشاطك على الإنترنت
 appmenu-services-header = خدماتي
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = أدوات الخصوصية
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = جرّب أدوات الحماية الأخرى من BrowserWorks:
 appmenu-other-protection-header = جرّب أدوات حماية أخرى من { -vendor-short-name }:
 
 ## Profiles panel
@@ -295,6 +324,8 @@ appmenu-other-protection-header = جرّب أدوات حماية أخرى من {
 appmenu-other-profiles = ملفات تعريف أخرى
 appmenu-manage-profiles =
     .label = أدِر ملفات التعريف
+appmenu-copy-profile =
+    .label = انسخ هذا الملف الشخصي
 appmenu-create-profile =
     .label = ملف شخصي جديد
 appmenu-edit-profile =

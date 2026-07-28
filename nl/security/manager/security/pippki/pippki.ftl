@@ -48,9 +48,6 @@ download-cert-view-cert =
     .label = Weergeven
 download-cert-view-text = CA-certificaat bestuderen
 
-## Client Authorization Ask dialog
-
-
 ## Client Authentication Ask dialog
 
 client-auth-window =
@@ -92,8 +89,6 @@ client-auth-cert-remember-always =
     .label = Blijvend
 client-auth-cert-remember-temporarily =
     .label = Voor deze sessie
-client-auth-cert-remember-box =
-    .label = Deze beslissing onthouden
 
 ## Set password (p12) dialog
 
@@ -105,6 +100,14 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Wachtwoord voor de reservekopie van het certificaat (nogmaals):
 set-password-reminder = Belangrijk: als u uw wachtwoord voor de reservekopie van het certificaat vergeet, kunt u deze reservekopie later niet herstellen. Berg het op een veilige plek op.
+
+## Protected authentication dialog
+
+protected-auth-window =
+    .title = Beschermde authenticatie
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, “OS Client Cert Token (Modern)”)
+protected-auth-prompt = Authenticeer bij het beveiligingsapparaat ({ $tokenName }). Hoe u dit doet, hangt af van het apparaat (bijvoorbeeld met behulp van een vingerafdruklezer of het invoeren van een code met een toetsenbord).
 
 ## Protected authentication alert
 

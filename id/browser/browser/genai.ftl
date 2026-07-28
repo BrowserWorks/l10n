@@ -51,11 +51,23 @@ genai-menu-ask-generic =
 # $provider (string) - name of the provider
 genai-menu-ask-provider =
     .label = Tanyakan { $provider }
+genai-menu-open-generic =
+    .label = Buka Chatbot AI
+# $provider (string) - name of the provider
+genai-menu-open-provider =
+    .label = Buka { $provider }
 genai-menu-remove-generic =
     .label = Hapus chatbot AI
 # $provider (string) - name of the provider
 genai-menu-remove-provider =
     .label = Hapus { $provider }
+genai-menu-remove-sidebar =
+    .label = Hapus dari Bilah Samping
+# $provider (string) - name of the AI chat provider
+genai-shortcut-button =
+    .aria-label = Tanyakan { $provider }
+genai-menu-new-badge = Baru
+genai-menu-summarize-page = Ringkaskan Laman
 genai-input-ask-generic =
     .placeholder = Tanyakan chatbot AI…
 # $provider (string) - name of the provider
@@ -74,12 +86,26 @@ genai-shortcuts-selected-warning =
     .message = Anda telah memilih sekitar { $selectionLength } karakter. Banyaknya karakter yang dapat kami kirim ke { $provider } adalah sekitar { $maxLength }.
 genai-shortcuts-hide =
     .label = Sembunyikan pintasan bot obrolan
+genai-menu-choose-chatbot =
+    .label = Pilih Chatbot AI
+genai-menu-ask-generic-2 =
+    .label = Tanyakan Chatbot AI
+    .accesskey = z
+# $provider (string) - name of the provider
+genai-menu-ask-provider-2 =
+    .label = Tanya { $provider }
+    .accesskey = z
+genai-menu-no-provider-2 =
+    .label = Tanyakan pada Chatbot AI
+    .accesskey = z
 
 ## Chatbot header
 
 genai-chatbot-title = Bot obrolan AI
 genai-header-provider-menu =
     .title = Pilih bot obrolan
+genai-header-settings-button =
+    .title = Pengaturan Obrolan AI
 genai-header-options-button =
     .title = Buka menu
 genai-header-close-button =
@@ -98,8 +124,14 @@ genai-options-hide-shortcut =
 genai-options-about-chatbot =
     .label = Tentang bot obrolan AI dalam { -brand-short-name }
 
+## Chatbot message
+
+genai-page-warning =
+    .message = Karena lamannya panjang, ini adalah ringkasan sebagian.
+
 ## Chatbot footer
 
+genai-page-button-summarize = Ringkas laman
 
 ## Chatbot onboarding
 
@@ -132,6 +164,18 @@ genai-onboarding-lechat-learn = Pelajari lebih lanjut tentang Le Chat
 genai-onboarding-select-header = Pilih teks untuk melihat saran
 genai-onboarding-select-description = Saat Anda memilih teks, kami akan menyarankan perintah yang dapat Anda kirim ke bot obrolan. Anda juga dapat menulis di prompt Anda sendiri.
 genai-onboarding-select-primary = Mulai mengobrol
+genai-chatbot-contextual-title = Gunakan chatbot AI tanpa berpindah tab
+genai-chatbot-contextual-subtitle = Mengobrol dan meramban secara berdampingan saat Anda menambahkan chatbot AI di bilah samping { -brand-short-name }.
+genai-chatbot-contextual-button = Pilih chatbot
+genai-chatbot-summarize-title = Baru! Ringkas laman dalam satu klik
+genai-chatbot-summarize-button = Ringkas laman
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-provider-subtitle = Klik kanan pada chatbot AI Anda di bilah samping dan pilih “Ringkas Laman”.
+# “Summarize Page” should be consistent with the translation for the string genai-menu-summarize-page
+genai-chatbot-summarize-sidebar-generic-subtitle = Klik kanan tombol kelip di bilah sisi dan pilih "Ringkas Halaman". Pertama kali dijalankan, Anda juga akan memilih suatu chatbot AI.
+# “Summarize page” should be consistent with the translation for the string genai-page-button-summarize
+genai-chatbot-summarize-footer-provider-subtitle = Buka chatbot AI Anda di bilah samping dan pilih "Ringkas halaman" di bagian bawah.
+genai-chatbot-summarize-footer-generic-subtitle = Tambahkan chatbot AI ke bilah samping { -brand-short-name } untuk meringkas laman dengan cepat.
 
 ## Chatbot onboarding choices
 ## These describe features/capabilities of chatbot providers. These are not buttons/actions.
@@ -165,3 +209,56 @@ genai-model-optin-cancel =
 
 ## Link previews
 
+# ‘min’ is short for “minute”
+# ‘mins’ is short for “minutes”
+# An estimate for how long it takes to read an article,
+# expressed as a range covering both slow and fast readers.
+# Variables:
+#   $rangePlural (String): The plural category of the range, using the same set as for numbers.
+#   $range (String): The range of minutes as a localised string. Examples: "3-7", "~1".
+link-preview-reading-time = { $range } mnt waktu membaca
+# Error message displayed when a link preview cannot be generated
+link-preview-error-message-v2 = { -brand-short-name } tidak dapat melihat pratinjau tautan ini
+# Text for the link to visit the original URL when in error state
+link-preview-visit-link = Kunjungi tautan
+# Error message when key points generation (summary highlights or main ideas of page content) fails for a page
+link-preview-generation-error-missing-data-v2 = { -brand-short-name } tidak dapat menghasilkan poin kunci untuk laman web ini.
+# Error message when something went wrong during key point generation
+link-preview-generation-error-unexpected = Ada yang salah
+# Text for the retry link when generation fails
+link-preview-generation-retry = Coba lagi
+# Button that opens the Link Preview settings
+link-preview-settings-button =
+    .title = Pengaturan Pratinjau Tautan
+link-preview-settings-enable =
+    .label = Fungsikan pratinjau tautan
+    .description = Lihat judul halaman, deskripsi, dan yang lain ketika Anda memakai pintasan atau klik kanan pada suatu tautan.
+link-preview-settings-key-points =
+    .label = Izinkan AI untuk membaca awal laman dan menghasilkan poin-poin penting
+link-preview-settings-long-press =
+    .label = Pintasan: Klik dan tahan tautan selama 1 detik (tekan lama)
+# Title that appears when user is shown the opt-in flow for link previews
+link-preview-optin-title = Lihat lebih banyak dengan AI?
+# Message that appears when user is shown the opt-in flow for link previews
+link-preview-optin-message = { -brand-short-name } menggunakan AI untuk membaca awal laman dan menghasilkan beberapa poin kunci. Untuk memprioritaskan privasi Anda, ini terjadi pada perangkat Anda.
+# Onboarding card title for long press
+link-preview-onboarding-title-long-press = Baru: Klik dan tahan tautan apa saja untuk pratinjau
+# Onboarding card description for long press
+link-preview-onboarding-description-long-press = Lihat deskripsi singkat, waktu membaca, dan lainnya untuk memutuskan apakah tautan layak dibuka. Juga tersedia di klik kanan.
+# Header for the key points section
+link-preview-key-points-header = Poin-poin penting
+# Disclaimer for AI-generated key points
+link-preview-key-points-disclaimer = Poin-poin kunci dihasilkan oleh AI dan mungkin memiliki kesalahan.
+# Progress message for the first-time setup
+# $progress (number) - The percentage value 1-100 indicating the progress of the setup.
+link-preview-setup = Penyiapan pertama kali • <strong>{ $progress }%</strong>
+# Message indicating faster performance after initial setup
+link-preview-setup-faster-next-time = Anda akan melihat poin-poin penting lebih cepat di lain waktu.
+# Onboarding card See a preview button
+link-preview-onboarding-button = Lihat pratinjau
+# Onboarding card Close button
+link-preview-onboarding-close = Tutup
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = Penyiapan pertama kali
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = Mungkin perlu beberapa saat. Anda akan melihat poin-poin penting lebih cepat di lain waktu.

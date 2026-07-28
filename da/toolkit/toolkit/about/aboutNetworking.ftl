@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH-URL
 about-networking-dns-trr-mode = DoH-tilstand
 about-networking-dns-suffix = DNS-suffiks
 about-networking-websockets = WebSockets
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = Oprindelse
+about-networking-alt-svc-alternate = Alternativ
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = Valideret
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = Isolationsnøgle
 about-networking-refresh = Opdater
 about-networking-auto-refresh = Opdater hvert 3. sekund
 about-networking-hostname = Værtsnavn
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS-opslag
 about-networking-dns-lookup-button = Slå op
 about-networking-dns-domain = Domæne:
 about-networking-dns-lookup-table-column = IP-adresser
+about-networking-dns-https-rrs-lookup-table-column = HTTPS RRs
 about-networking-dns-https-rr-lookup-table-column = HTTP RRs
 about-networking-rcwn = RCWN Stats
 about-networking-rcwn-status = RCWN Status
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = Denne side er flyttet til <a data-l10n-na
 
 about-networking-networkid-is-up = Netværksforbindelsen er oppe
 about-networking-networkid-status-known = Netværksforbindelsens status er kendt
-
-##
-

@@ -20,12 +20,37 @@ fxa-menu-connect-another-device =
     .label = Połącz inne urządzenie…
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-device =
+    .label =
+        { $tabCount ->
+            [one] Wyślij na urządzenie
+            [few] Wyślij { $tabCount } karty na urządzenie
+           *[many] Wyślij { $tabCount } kart na urządzenie
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [one] Wyślij na telefon
+            [few] Wyślij { $tabCount } karty na telefon
+           *[many] Wyślij { $tabCount } kart na telefon
+        }
+fxa-menu-send-to-mobile-device-missing2 = Nie ma tutaj Twojego urządzenia?
+fxviewtabrow-send-to-mobile-not-verified = Konto nie zostało zweryfikowane
+fxviewtabrow-send-to-mobile-verify-account = Zweryfikuj konto
+fxa-menu-send-to-mobile-turn-on-sync = Włącz synchronizację, aby wysyłać karty
+fxa-menu-send-to-mobile-connect-device = Połącz urządzenie, aby wysyłać karty
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label =
         { $tabCount ->
-            [one] Wyślij kartę do
-            [few] Wyślij { $tabCount } karty do
-           *[many] Wyślij { $tabCount } kart do
+            [one] Wyślij kartę na urządzenie
+            [few] Wyślij { $tabCount } karty na urządzenie
+           *[many] Wyślij { $tabCount } kart na urządzenie
         }
 # This is shown dynamically within "Send tab to device" in fxa menu.
 fxa-menu-send-tab-to-device-syncnotready =
@@ -34,7 +59,6 @@ fxa-menu-send-tab-to-device-syncnotready =
 fxa-menu-send-tab-to-device-description = Błyskawicznie prześlij kartę na dowolne urządzenie, na którym się zalogujesz.
 fxa-menu-sign-out =
     .label = Wyloguj się…
-fxa-menu-sync-title = Synchronizacja
 fxa-menu-sync-description = Korzystaj ze swojej sieci gdziekolwiek jesteś
 fxa-avatar-sign-in = Zaloguj się
 fxa-avatar-sign-up = Utwórz konto
@@ -48,6 +72,10 @@ sync-setup-verify-heading = Czy na pewno zalogować do synchronizacji?
 # Variables:
 #   $email - Email address of a user previously signed into sync.
 sync-setup-verify-description = Inny użytkownik był wcześniej zalogowany do synchronizacji na tym urządzeniu. Po zalogowaniu, zakładki, hasła i inne ustawienia tej przeglądarki zostaną połączone z danymi z konta { $email }.
+
+## The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, pair a device, troubleshoot device issues, or verify account.
+
+fxa-menu-send-to-mobile-sign-in = Zaloguj się, aby wysyłać karty
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 

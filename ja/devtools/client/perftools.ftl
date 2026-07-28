@@ -26,11 +26,33 @@ perftools-heading-local-build = ローカルビルド
 
 perftools-description-intro = 記録したデータは新しいタブの <a>profiler.firefox.com</a> で開きます。データはすべてローカルに保存されますが、アップロードして共有することもできます。
 perftools-description-local-build = この端末で自身でコンパイルしたビルドをプロファイリングする場合は、ビルドの objdir を以下のリストに追加して、シンボル情報の検索に利用できるようにしてください。
+perftools-pick-local-build-directory = ビルドディレクトリーを選択
 
 ## The controls for the interval at which the profiler samples the code.
 
 perftools-range-interval-label = サンプリング間隔:
 perftools-range-interval-milliseconds = {NUMBER($interval, maxFractionalUnits: 2)} ms
+
+## Generic memory units that can be used in various places, eg for the buffer size.
+
+# Byte
+perftools-memory-unit-b = { NUMBER($num, maxFractionalUnits: 2) } B
+# Kibibyte
+perftools-memory-unit-kib = { NUMBER($num, maxFractionalUnits: 2) } KiB
+# Mebibyte
+perftools-memory-unit-mib = { NUMBER($num, maxFractionalUnits: 2) } MiB
+# Gibibyte
+perftools-memory-unit-gib = { NUMBER($num, maxFractionalUnits: 2) } GiB
+# Tebibyte
+perftools-memory-unit-tib = { NUMBER($num, maxFractionalUnits: 2) } TiB
+# Pebibyte
+perftools-memory-unit-pib = { NUMBER($num, maxFractionalUnits: 2) } PiB
+# Exbibyte
+perftools-memory-unit-eib = { NUMBER($num, maxFractionalUnits: 2) } EiB
+# Zebibyte
+perftools-memory-unit-zib = { NUMBER($num, maxFractionalUnits: 2) } ZiB
+# Yobibyte
+perftools-memory-unit-yib = { NUMBER($num, maxFractionalUnits: 2) } YiB
 
 ##
 
@@ -140,11 +162,15 @@ perftools-presets-ml-label = 機械学習
 perftools-presets-ml-description2 = { -brand-shorter-name } の機械学習のバグを調査するための推奨プリセットです。
 perftools-presets-networking-label = ネットワーク
 perftools-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
+perftools-presets-networking-with-logs-label = ネットワーク (ログ記録あり)
+perftools-presets-networking-with-logs-description = { -brand-shorter-name } のネットワークバグをログを記録しながら調査するためのプリセットです。これらのログには訪れたサイトの URL などの機密情報が含まれる可能性があります。
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = 消費電力
 perftools-presets-power-description = { -brand-shorter-name } の消費電力のバグを少ないオーバーヘッドで調査するための推奨プリセットです。
 perftools-presets-debug-label = デバッグ
 perftools-presets-debug-description = { -brand-shorter-name } のデバッグ用プリセットです。オーバーヘッドが高いため、パフォーマンスが求められる作業を避け、ブラウザーの動作を調査する目的で使用してください。
+perftools-presets-web-compat-label = ウェブ互換性
+perftools-presets-web-compat-description = パフォーマンスを追跡するのではなく、ウェブ互換性の問題をデバッグするための推奨プリセットです。
 perftools-presets-custom-label = カスタム
 
 ##

@@ -36,6 +36,8 @@ xpinstall-prompt-install =
 
 site-permission-install-first-prompt-midi-header = Ce site demande l’accès à vos périphériques MIDI (Musical Instrument Digital Interface). L’accès aux périphériques peut être accordé par l’installation d’un module complémentaire.
 site-permission-install-first-prompt-midi-message = La sécurité de cet accès n’est pas garantie. Ne continuez que si vous faites confiance à ce site.
+site-permission-install-first-prompt-serial-header = Ce site demande un accès à vos périphériques série. Cet accès peut être rendu possible par l’installation d’un module complémentaire.
+site-permission-install-first-prompt-serial-message = La sécurité de cet accès n’est pas garantie. Ne continuez que si vous faites confiance à ce site.
 
 ##
 
@@ -125,15 +127,18 @@ addon-install-error-corrupt-file = Le module complémentaire téléchargé depui
 addon-install-error-file-access = { $addonName } n’a pas pu être installé car un fichier n’a pas pu être modifié par { -brand-short-name }.
 addon-install-error-not-signed = { -brand-short-name } a empêché ce site d’installer un module complémentaire non vérifié.
 addon-install-error-invalid-domain = Le module complémentaire { $addonName } ne peut pas être installé depuis cet emplacement.
+addon-install-error-no-addon-name-file-access = Ce module complémentaire n’a pas pu être installé car un fichier n’a pas pu être modifié par { -brand-short-name }.
 addon-local-install-error-network-failure = Ce module complémentaire n’a pas pu être installé à cause d’une erreur du système de fichiers.
 addon-local-install-error-incorrect-hash = Ce module complémentaire n’a pas pu être installé car il ne correspond pas au module attendu par { -brand-short-name }.
 addon-local-install-error-corrupt-file = Ce module complémentaire n’a pas pu être installé car il semble être corrompu.
 addon-local-install-error-file-access = { $addonName } n’a pas pu être installé car un fichier n’a pas pu être modifié par { -brand-short-name }.
 addon-local-install-error-not-signed = Ce module complémentaire n’a pas pu être installé car il n’a pas été vérifié.
+addon-local-install-no-addon-name-error-file-access = Ce module complémentaire n’a pas pu être installé car un fichier n’a pas pu être modifié par { -brand-short-name }.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } n’a pas pu être installé car il n’est pas compatible avec { -brand-short-name } { $appVersion }.
 addon-install-error-hard-blocked = { $addonName } enfreint les politiques de BrowserWorks et ne peut pas être installé sur { -brand-short-name }.
+addon-install-error-soft-blocked2 = { $addonName } est soumis à des restrictions et ne peut pas être installé sur { -brand-short-name }.
 addon-install-error-blocklisted = { $addonName } n’a pas pu être installé car il présente un risque élevé de causer des problèmes de stabilité ou de sécurité.
 addon-install-error-soft-blocked = { $addonName } enfreint les politiques de BrowserWorks et ne peut pas être installé sur { -brand-short-name }.
 # Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.

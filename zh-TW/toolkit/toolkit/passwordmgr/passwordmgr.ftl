@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = 不要更新
     .accesskey = D
+primary-password-prompt-message = 請輸入您的主控密碼。
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = 無使用者名稱
-password-manager-toggle-password =
-    .label = 顯示密碼
-    .accesskey = h
 password-manager-confirm-password-change = 確定變更密碼
 password-manager-select-username = 選擇要更新哪筆登入資訊:

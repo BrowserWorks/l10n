@@ -28,11 +28,6 @@ text-action-copy-shortcut =
 text-action-copy-clean-link =
     .label = Копировать очищенную ссылку
     .accesskey = т
-# This command copies the link, removing additional
-# query parameters used to track users across sites.
-text-action-strip-on-share =
-    .label = Копировать без параметров отслеживания
-    .accesskey = е
 text-action-paste =
     .label = Вставить
     .accesskey = с
@@ -73,16 +68,26 @@ text-action-search-text-box-clear =
     .title = Очистить
 text-action-highlight-selection =
     .label = Подсветить выделение
+# This adds a comment to selected text within the PDF viewer.
+text-action-comment-selection-1 =
+    .label = Добавить комментарий к выделению
 # "Copy Link to Highlight" creates a permanent 'Text Fragment' link
 # to the current selection, and copies it into the user's clipboard.
 text-action-copy-link-to-highlight =
-    .label = Скопировать ссылку для выделения
+    .label = Копировать ссылку для выделения
 # This combines "Copy Link to Highlight" with "Copy Clean Link", ie.
 # it creates a link with a text fragment to the current selection
 # and it strips trackers etc.
 text-action-copy-clean-link-to-highlight =
-    .label = Скопировать чистую ссылку для выделения
+    .label = Копировать чистую ссылку для выделения
+# If the page has been loaded with a text fragment and text is
+# visibly highlighted, this removes any highlighted sections on the page.
+text-action-remove-highlight =
+    .label = Снять выделение
 # If the page has been loaded with a text fragment and text is
 # visibly highlighted, this removes any highlighted sections on the page.
 text-action-remove-all-highlights =
     .label = Удалить всё выделенное
+profile-window-menu-edit =
+    .label = Изменить
+    .accesskey = У

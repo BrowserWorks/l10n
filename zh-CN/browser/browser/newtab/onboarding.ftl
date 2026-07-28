@@ -55,9 +55,6 @@ mr1-onboarding-import-primary-button-label-attribution = 从 { $previous } 导�
 mr1-onboarding-theme-header = 我有我的范儿
 mr1-onboarding-theme-subtitle = 换上主题，让 { -brand-short-name } 有您的个性。
 mr1-onboarding-theme-secondary-button-label = 暂时不要
-newtab-wallpaper-onboarding-title = 试用新色彩
-newtab-wallpaper-onboarding-subtitle = 选张壁纸，给新标签页加点新鲜感。
-newtab-wallpaper-onboarding-primary-button-label = 设置壁纸
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = 系统主题
 mr1-onboarding-theme-label-light = 明亮
@@ -65,6 +62,15 @@ mr1-onboarding-theme-label-dark = 深邃
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = 染山霞
 onboarding-theme-primary-button-label = 完成
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = 暂停动画
+onboarding-animation-play-button =
+    .aria-label = 播放动画
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
@@ -426,15 +432,25 @@ onboarding-checklist-pin = 将 { -brand-short-name } 固定到任务栏
 onboarding-checklist-import = 从先前所用浏览器导入
 onboarding-checklist-extension = 添加扩展
 onboarding-checklist-sign-up = 注册或登录账户
+onboarding-checklist-minimize =
+    .label = 最小化
+onboarding-checklist-remove =
+    .label = 移除核对清单
 
 ## Tab Groups feature onboarding strings
 
 tab-groups-onboarding-feature-callout-title = 用标签页群组摆脱繁乱，专注浏览
 tab-groups-onboarding-feature-callout-subtitle = 将标签页拖放到另一个标签页之上，即可创建首个群组，让标签页井井有条。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = 随时可在“列出所有标签页”菜单找到标签页群组。
 tab-groups-onboarding-create-group-title-2 = 可随时在此找到您的标签页群组。
 tab-groups-onboarding-create-group-no-alltabs-button-title = 在地址栏搜索即可找到您的群组。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = 关闭标签页群组后，可随时从“列出所有标签页”菜单重新打开。
 tab-groups-onboarding-saved-groups-title-2 = 关闭的标签页群组可随时在此处重新打开。
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = 在地址栏中搜索即可查找已关闭的群组。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = 随时可从“列出所有标签页”菜单重新打开标签页群组。
 tab-groups-onboarding-session-restore-title = 可随时在此重新打开您的标签页群组。
 tab-groups-onboarding-dismiss = 确定
 
@@ -457,3 +473,144 @@ dismiss-button-label = 知道了
 sync-to-mobile-button-label = 同步到移动设备
 desktop-to-mobile-qr-code-alt =
     .aria-label = 用于下载移动版 { -brand-product-name } 的二维码
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    准备升级到 Windows 11？
+    一起来备份 { -brand-product-name } 数据。
+create-backup-screen-1-subtitle = 只需 1–2 分钟，即可自动保护您的密码、书签等数据。
+create-backup-screen-1-flair = 推荐
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">详细了解</a>
+create-backup-screen-1-sync-label = 与 { -brand-product-name } 同步
+create-backup-screen-1-sync-body = 备份所有已登录设备
+create-backup-screen-1-backup-label = 备份到电脑
+create-backup-screen-1-backup-body = 保存到您的设备或 OneDrive
+create-backup-select-tile-button-label = 选择
+create-backup-back-button-label = 返回
+create-backup-show-fewer =
+    .label = 减少显示此类内容
+create-backup-screen-2-title = 选择要备份的 { -brand-product-name } 数据
+create-backup-screen-2-subtitle = 只需一分钟即可完成。您的数据每天都将备份一次。
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = 简易设置
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = 书签、历史记录、设置等
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = 不包含密码和付款信息
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = 不受加密保护
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = 所有数据
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = 包含密码和付款信息
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = 由密码加密保护
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = 选择备份文件的保存位置
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = 创建备份文件的密码
+create-backup-screen-3-subtitle = 加密数据所需。请将其保存在您不会遗忘的地方。
+fx-backup-opt-in-header = 选择文件位置
+fx-backup-opt-in-filepath-label = 选择一个位置（例如 OneDrive），数据将由该位置转移到新设备。
+fx-backup-opt-in-create-password-label = 请输入密码
+fx-backup-opt-in-confirm-btn-label = 继续
+fx-backup-opt-in-cancel-btn-label = 返回
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = 已安排备份
+fx-backup-confirmation-screen-close-button = 关闭
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = 包含所有浏览数据
+fx-backup-confirmation-screen-all-data-item-text-2 = 保存到您的设备
+fx-backup-confirmation-screen-all-data-item-text-3 = 加密并受密码保护
+fx-backup-confirmation-screen-easy-setup-item-text-1 = 包含书签、历史记录、设置等数据
+fx-backup-confirmation-screen-easy-setup-item-text-2 = 保存到您的设备
+fx-backup-confirmation-screen-easy-setup-item-text-3 = 不包含密码和付款信息
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = 可前往<a data-l10n-name="settings">设置</a>将敏感数据纳入备份。
+fx-backup-confirmation-screen-item-subtext-1 = 备份将在几分钟后开始，并将每天进行一次。您可以在<a data-l10n-name="settings">设置</a>中检查进度。
+fx-backup-confirmation-screen-item-subtext-2 = 需要重新安装时，{ -brand-short-name } 将查找您的备份。
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = 从备份恢复
+restore-from-backup-title = 按您需要，取回熟悉的 { -brand-short-name } 体验
+restore-from-backup-subtitle = 恢复您的所有书签、历史记录和其他数据，立即接续浏览。
+restore-from-backup-secondary-button = 不恢复
+multiple-backups-info-tile = <strong>发现多个备份文件。</strong>已选中最近的文件，如需还原其他配置文件，请前往<a data-l10n-name="settings-label">设置</a>。
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = 都回来了！您的 { -brand-short-name } 数据已恢复。
+restored-from-backup-success-with-checklist-subtitle = 想一键打开您最爱的隐私为先浏览器吗？
+restored-from-backup-success-no-checklist-subtitle = 您可以在<a data-l10n-name="settings">设置</a>中为此设备开启备份。
+restored-from-backup-success-with-checklist-primary-button = 保存并继续
+restored-from-backup-success-with-checklist-secondary-button = 跳过此步骤
+restored-from-backup-success-no-checklist-primary-button = 继续
+restored-from-backup-error-title = 嗯… 您的备份文件似乎存在问题。
+restored-from-backup-error-subtitle = 若您还有其他 { -brand-short-name } 备份文件，请尝试从那份文件恢复。<a data-l10n-name="restore-problems">仍有问题？</a>
+restored-from-backup-error-primary-button = 关闭
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = 定制您的 { -brand-short-name } 使用体验
+onboarding-personalization-subtitle = 回答几个问题，我们将为您推荐能优化 { -brand-short-name } 使用体验的功能和扩展。
+onboarding-personalization-use-case-title = 您会将 { -brand-short-name } 用于什么情景？
+onboarding-personalization-use-case-personal-option = 个人
+onboarding-personalization-use-case-school-option = 学习
+onboarding-personalization-use-case-work-option = 工作
+onboarding-personalization-motivation-title = 您最看重 { -brand-short-name } 的哪些特色？
+onboarding-personalization-motivation-privacy-option = 隐私和安全
+onboarding-personalization-motivation-productivity-option = 效率
+onboarding-personalization-motivation-other-option = 其他
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = 我们会保护您的数据，并自动阻止大公司窥探您的浏览活动。
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Waterfox 护您周全
+onboarding-refresh-import-subtitle = 将密码、书签、历史记录等数据搬到这里。
+onboarding-refresh-import-title = 让 { -brand-short-name } 亲切如家
+onboarding-refresh-onboarding-addons-subtitle = 扩展就像“小程序”，可用于定制 { -brand-short-name }，帮助增强隐私保护、提高效率、更改 { -brand-short-name } 外观，还有更多妙用。
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = 提升浏览体验
+onboarding-refresh-sync-subtitle = 让书签、密码等数据在已登录 { -brand-short-name } 的各设备上触手可得。数据受加密保护，只有您自己能查看。
+onboarding-refresh-sync-title = 畅行千里，同步万物。
+onboarding-refresh-gratitude-subtitle = 感谢您使用 { -brand-short-name }，这是唯一由非营利组织支持的主流浏览器。您的支持激励着我们为更开放、更美好且人人可用的互联网继续奋斗。
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } 为您护航
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = 随时在智能窗口与经典窗口间切换。
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = { -brand-product-name } 使用条款
+smartwindow-existing-user-fx-tou-body = 若要使用{ -smart-window-brand-name }，请接受<a data-l10n-name="terms_of_use">使用条款</a>和更新后的<a data-l10n-name="privacy_notice">隐私声明</a>。
+smartwindow-existing-user-fx-tou-accept = 接受
+smartwindow-existing-user-fx-tou-go-back = 返回
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = 将{ -smart-window-brand-name }设为默认窗口
+smartwindow-onboarding-primary-button = 继续
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = { -brand-product-name } 吉祥物（Kit）手持星星道具
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = 要默认关闭助理吗？
+smartwindow-sidebar-auto-open-callout-body = 您仍可在需要时打开。
+smartwindow-sidebar-auto-open-callout-accept = 是，默认关闭
+smartwindow-sidebar-auto-open-callout-dismiss = 不用了
+smartwindow-sidebar-auto-open-callout-accepted-title = 助理将默认关闭
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = 您可以在任意页面上使用“询问”来打开它。可随时在<a data-l10n-name="settings">设置</a>中更改此决定。
+smartwindow-sidebar-auto-open-callout-rejected-title = 知道了

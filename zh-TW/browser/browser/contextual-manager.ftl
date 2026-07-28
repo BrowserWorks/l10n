@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = 從另一套瀏覽器
 contextual-manager-passwords-command-import = 從檔案匯入…
 contextual-manager-passwords-command-export = 匯出密碼
 contextual-manager-passwords-command-remove-all = 刪除所有密碼
+contextual-manager-passwords-command-options = 選項
 contextual-manager-passwords-command-settings = 設定
 contextual-manager-passwords-command-help = 說明
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = 新增：{ $added } 筆，更新：{ $modified } 筆
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = 新增：{ $added }，更新：{ $modified }，重複：{ $no_change }，錯誤：{ $error }
 contextual-manager-passwords-import-detailed-report = 檢視詳細報告
 contextual-manager-passwords-import-success-button = 完成
 contextual-manager-passwords-import-error-heading-and-message =
@@ -151,7 +158,7 @@ contextual-manager-passwords-password-already-exists-error-button = 前往密碼
 contextual-manager-passwords-update-password-success-heading =
     .heading = 已儲存密碼
 contextual-manager-passwords-update-password-success-button = 完成
-contextual-manager-passwords-update-username-success-heading =
+contextual-manager-passwords-update-username-success-heading-3 =
     .heading = 已儲存使用者名稱
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
@@ -189,7 +196,7 @@ contextual-manager-passwords-breached-origin-heading-and-message =
     .heading = 建議更改密碼
     .message = 此網站的密碼失竊或外洩，請更改密碼以保護您的帳號。
 contextual-manager-passwords-breached-origin-link-message = { -brand-product-name } 如何知道發生資料外洩事件的？
-contextual-manager-passwords-change-password-button = 更改密碼
+contextual-manager-passwords-change-password-button = 變更密碼
 contextual-manager-passwords-vulnerable-password-heading-and-message =
     .heading = 建議更改密碼
     .message = 此密碼太容易被猜到，請更改密碼以保護您的帳號。
@@ -204,12 +211,15 @@ contextual-manager-passwords-title = 密碼
 
 contextual-manager-passwords-create-label =
     .label = 新增密碼
+contextual-manager-passwords-update-label =
+    .label = 已更新密碼
 contextual-manager-passwords-edit-label =
     .label = 編輯密碼
 contextual-manager-passwords-remove-label =
     .title = 刪除密碼
 contextual-manager-passwords-origin-tooltip = 請輸入用於登入此網站的完整網址。
 contextual-manager-passwords-username-tooltip = 請輸入用於登入此網站的帳號、使用者名稱，或電子郵件地址。
+contextual-manager-passwords-password-tooltip-2 = 請輸入登入此網站的密碼。
 contextual-manager-passwords-password-tooltip = 請輸入用於登入此網站的密碼。
 
 ## Password Card
@@ -286,6 +296,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = 找不到密碼
+contextual-manager-passwords-no-passwords-found-message-2 = 可試著改用其他關鍵字重新搜尋。
 contextual-manager-passwords-no-passwords-found-message = 找不到密碼，請用其他關鍵字重新搜尋。
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -300,6 +311,8 @@ contextual-manager-passwords-no-passwords-message = 所有密碼都經過加密�
 contextual-manager-passwords-no-passwords-get-started-message = 加到此處開始使用。
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = 手動新增
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = 將您的密碼儲存於安全的地方
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -315,3 +328,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] 好，請移除密碼
        *[other] 好，請移除密碼
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = 若要檢視您儲存的密碼，請先輸入主控密碼。
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = 請輸入主控密碼
+contextual-manager-primary-password-learn-more-link = 更多資訊

@@ -29,7 +29,7 @@ pending-crash-reports-always-send =
     .label = 總是傳送
 # Variables:
 #   $reportCount (Number): the number of pending crash reports
-requested-crash-reports-message-new = 您有 { $reportCount } 筆錯誤報告，與我們正在調查中的錯誤有關。若您願意回報，可幫助我們改進 { -brand-product-name }；關閉本通知即可忽略這些報告。
+requested-crash-reports-message-new = 您有 { $reportCount } 筆未傳送的錯誤報告，與我們正在調查中的錯誤有關。若您願意回報，可幫助我們改進 { -brand-product-name }；關閉本通知即可忽略這些報告。
 # Variables:
 #   $reportCount (Number): the number of pending crash reports
 requested-crash-reports-message =
@@ -40,3 +40,6 @@ requested-crash-reports-message =
 requested-crash-reports-dont-show-again =
     .label = 不要再顯示
     .accesskey = D
+# Variables:
+#   $reportCount (Number): the number of pending crash reports
+pending-crash-reports-message-new = 您有 { $reportCount } 筆未送出的錯誤回報

@@ -12,6 +12,13 @@ about-networking-dns-trr-url = DoH 网址
 about-networking-dns-trr-mode = DoH 模式
 about-networking-dns-suffix = DNS 后缀
 about-networking-websockets = WebSocket
+about-networking-alt-svc = Alt-Svc
+about-networking-alt-svc-origin = 来源
+about-networking-alt-svc-alternate = 替代方案
+about-networking-alt-svc-alpn = ALPN
+about-networking-alt-svc-validated = 已验证
+about-networking-alt-svc-ttl = TTL
+about-networking-alt-svc-origin-attributes-suffix = 隔离键
 about-networking-refresh = 刷新
 about-networking-auto-refresh = 每 3 秒自动刷新
 about-networking-hostname = 主机名
@@ -27,11 +34,11 @@ about-networking-received = 已接收
 about-networking-family = 协议族
 about-networking-trr = TRR
 about-networking-addresses = 地址
-about-networking-expires = 过期时间 (秒)
-about-networking-originAttributesSuffix = 隔离键(值)
+about-networking-expires = 过期时间（秒）
+about-networking-originAttributesSuffix = 隔离键（值）
 about-networking-flags = 其他标志
-about-networking-messages-sent = 发出的信息数
-about-networking-messages-received = 收到的信息数
+about-networking-messages-sent = 发出的消息数
+about-networking-messages-received = 收到的消息数
 about-networking-bytes-sent = 发送字节数
 about-networking-bytes-received = 接收字节数
 about-networking-logging = 日志
@@ -39,6 +46,7 @@ about-networking-dns-lookup = DNS 查询
 about-networking-dns-lookup-button = 解析
 about-networking-dns-domain = 域名：
 about-networking-dns-lookup-table-column = IP
+about-networking-dns-https-rrs-lookup-table-column = HTTPS 资源记录（RR）
 about-networking-dns-https-rr-lookup-table-column = HTTP 资源记录（RR）
 about-networking-rcwn = RCWN 统计
 about-networking-rcwn-status = RCWN 状态
@@ -64,6 +72,3 @@ about-networking-moved-about-logging = 此页面已移动至 <a data-l10n-name="
 
 about-networking-networkid-is-up = 网络已连接
 about-networking-networkid-status-known = 已知网络连接状态
-
-##
-

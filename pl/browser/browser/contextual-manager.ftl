@@ -18,6 +18,7 @@ contextual-manager-passwords-command-import-from-browser = Importuj z innej prz
 contextual-manager-passwords-command-import = Importuj z pliku…
 contextual-manager-passwords-command-export = Eksportuj hasła
 contextual-manager-passwords-command-remove-all = Usuń wszystkie hasła
+contextual-manager-passwords-command-options = Opcje
 contextual-manager-passwords-command-settings = Ustawienia
 contextual-manager-passwords-command-help = Pomoc
 contextual-manager-passwords-os-auth-dialog-caption = { -brand-full-name }
@@ -65,6 +66,12 @@ contextual-manager-passwords-import-success-heading =
 #   $added (number) - Number of added passwords
 #   $modified (number) - Number of modified passwords
 contextual-manager-passwords-import-success-message = Nowe: { $added }, zaktualizowane: { $modified }
+# Variables
+#   $added (number) - Number of added passwords
+#   $modified (number) - Number of modified passwords
+#   $no_change (number) - Number of duplicate passwords
+#   $error (number) - Number of invalid passwords
+contextual-manager-passwords-import-success-message-2 = Nowe: { $added }, zaktualizowane: { $modified }, podwójne: { $no_change }, błędy: { $error }
 contextual-manager-passwords-import-detailed-report = Szczegółowy raport
 contextual-manager-passwords-import-success-button = Gotowe
 contextual-manager-passwords-import-error-heading-and-message =
@@ -152,6 +159,8 @@ contextual-manager-passwords-password-already-exists-error-button = Przejdź do 
 contextual-manager-passwords-update-password-success-heading =
     .heading = Zachowano hasło
 contextual-manager-passwords-update-password-success-button = Gotowe
+contextual-manager-passwords-update-username-success-heading-3 =
+    .heading = Zachowano nazwę użytkownika
 # Message to confirm successful removal of a password/passwords.
 #   $total (number) - Total number of passwords
 contextual-manager-passwords-delete-password-success-heading =
@@ -197,17 +206,21 @@ contextual-manager-passwords-no-username-heading-and-message =
     .heading = Dodaj nazwę użytkownika
     .message = Dodaj ją, aby przyspieszyć logowanie.
 contextual-manager-passwords-add-username-button = Dodaj nazwę użytkownika
+contextual-manager-passwords-title = Hasła
 
 ## Login Form
 
 contextual-manager-passwords-create-label =
     .label = Dodaj hasło
+contextual-manager-passwords-update-label =
+    .label = Aktualizuj hasło
 contextual-manager-passwords-edit-label =
     .label = Edytuj hasło
 contextual-manager-passwords-remove-label =
     .title = Usuń hasło
 contextual-manager-passwords-origin-tooltip = Wprowadź dokładny adres logowania do tej witryny.
 contextual-manager-passwords-username-tooltip = Wprowadź nazwę użytkownika, adres e-mail lub numer konta używany do logowania.
+contextual-manager-passwords-password-tooltip-2 = Wprowadź hasło, aby zalogować się na to konto.
 contextual-manager-passwords-password-tooltip = Wprowadź hasło używane do logowania się na to konto.
 
 ## Password Card
@@ -259,6 +272,22 @@ contextual-manager-view-alert-heading =
     .heading = Wyświetl powiadomienie
 contextual-manager-view-alert-button =
     .tooltiptext = Przejrzyj powiadomienie
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-heading-2 =
+    .heading =
+        { $count ->
+            [1] Wyświetl powiadomienie
+           *[other] Wyświetl powiadomienia
+        }
+# Variables
+#   $count (number) - The number of active alerts associated with the login
+contextual-manager-view-alert-button-2 =
+    .tooltiptext =
+        { $count ->
+            [1] Przejrzyj powiadomienie
+           *[other] Przejrzyj powiadomienia
+        }
 contextual-manager-show-password-button =
     .aria-label = Pokaż hasło
     .title = Pokaż hasło
@@ -268,6 +297,7 @@ contextual-manager-hide-password-button =
 # The message displayed when the search text does not match any of the user's saved logins.
 contextual-manager-passwords-no-passwords-found-header =
     .heading = Nie odnaleziono żadnych haseł
+contextual-manager-passwords-no-passwords-found-message-2 = Spróbuj wyszukać ponownie za pomocą innego słowa.
 contextual-manager-passwords-no-passwords-found-message = Nie odnaleziono żadnych haseł. Spróbuj ponownie za pomocą innego słowa.
 
 ## When the user has no saved passwords, we display the following messages to inform the user they can save
@@ -282,6 +312,8 @@ contextual-manager-passwords-no-passwords-message = Wszystkie hasła są zaszyfr
 contextual-manager-passwords-no-passwords-get-started-message = Dodaj je tutaj, aby zacząć.
 # This string is displayed in a button. If the user clicks it, they will be taken to a form to create a new password.
 contextual-manager-passwords-add-manually = Dodaj ręcznie
+# This string encourages the user to save their passwords in Firefox (the "safe spot").
+contextual-manager-passwords-no-passwords-header-2 = Zachowuj swoje hasła w bezpiecznym miejscu
 
 ## When the user cancels a login that's currently being edited, we display a message to confirm whether
 ## or not the user wants to discard their current edits to the login.
@@ -297,3 +329,8 @@ contextual-manager-passwords-remove-all-passwords-checkbox =
         [1] Tak, usuń hasło
        *[other] Tak, usuń hasła
     }
+# This string informs the user they need to provide their primary password for FireFox to access their saved passwords in Firefox.
+contextual-manager-primary-password-reauth-header = Wprowadź hasło główne, aby wyświetlić zachowane hasła.
+# This string informs the user their primary password is used to authenticate and access their passwords
+contextual-manager-primary-password-reauth-button = Wprowadź hasło główne
+contextual-manager-primary-password-learn-more-link = Więcej informacji

@@ -36,6 +36,8 @@ storage-variable-view-search-box =
 # Add Item button title
 storage-add-button =
     .title = 新增項目
+storage-delete-all-button =
+    .title = 全部刪除
 # Refresh button title
 storage-refresh-button =
     .title = 重新整理項目
@@ -71,6 +73,7 @@ storage-table-headers-cookies-expires = Expires / Max-Age
 storage-table-headers-cookies-size = 大小
 storage-table-headers-cookies-last-accessed = 最後存取於
 storage-table-headers-cookies-creation-time = 建立於
+storage-table-headers-cookies-update-time = 最後更新於
 storage-table-headers-cache-status = 狀態
 storage-table-headers-extension-storage-area = 儲存區域
 

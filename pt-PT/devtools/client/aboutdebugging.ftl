@@ -20,6 +20,14 @@ about-debugging-page-title-runtime-page = Depuração - Runtime / { $selectedRun
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = Este { -brand-shorter-name }
+# Sidebar heading and title for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox2 = Este { -brand-shorter-name }
+about-debugging-sidebar-this-firefox-title =
+    .title = Este { -brand-shorter-name }
+# Sidebar heading and title for connecting to some remote source
+about-debugging-sidebar-setup2 = Configuração
+about-debugging-sidebar-setup-title =
+    .title = Configuração
 # Sidebar heading for selecting the currently running instance of Firefox
 # .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
@@ -232,9 +240,9 @@ about-debugging-debug-target-list-empty = Nada ainda.
 about-debugging-debug-target-inspect-button = Inspecionar
 # Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
-about-debugging-tmp-extension-install-button = Carregar extra temporário…
+about-debugging-tmp-extension-install-button = Carregar complemento temporário…
 # Text displayed when trying to install a temporary extension in the "This Firefox" page.
-about-debugging-tmp-extension-install-error = Ocorreu um erro durante a instalação do extra temporário.
+about-debugging-tmp-extension-install-error = Ocorreu um erro durante a instalação do complemento temporário.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Recarregar
@@ -328,6 +336,9 @@ about-debugging-multiprocess-toolbox-name = Caixa de ferramentas multi-processos
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Processo principal e processos de conteúdo para o navegador alvo
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon2 =
+    .tooltiptext = Fechar mensagem
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Fechar mensagem

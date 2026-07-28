@@ -30,10 +30,18 @@ options-context-inspector = Inspecteur
 options-show-user-agent-styles-label = Afficher les styles du navigateur
 options-show-user-agent-styles-tooltip =
     .title = Activer cette option affichera les styles par défaut chargés par le navigateur
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Afficher le Shadow DOM du navigateur
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Activer cette option affichera les éléments du Shadow DOM gérés par le navigateur.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Tronquer les attributs DOM
 options-collapse-attrs-tooltip =
     .title = Tronquer les longs attributs dans l’inspecteur
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Afficher les commentaires
+options-show-comments-tooltip =
+    .title = Afficher les nœuds de commentaires dans l’inspecteur
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = Cliquer et faire glisser pour modifier les valeurs de la taille
 options-inspector-draggable-properties-tooltip =
@@ -67,6 +75,35 @@ options-webconsole-label = Console web
 options-webconsole-split-console-label = Activer la console scindée
 options-webconsole-split-console-tooltip =
     .title = Ouvrir la console scindée avec la touche Échap
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Moniteur réseau
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Taille maximale du corps des requêtes et des réponses (définir à 0 pour une taille illimitée) :
+options-netmonitor-body-limit-tooltip =
+    .title = Les corps de requêtes ou de réponses qui dépassent la taille spécifiée seront tronqués lors de leur affichage ou de leur téléchargement dans le moniteur réseau. Définir à 0 pour qu’il n’y ait aucune limitation.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Illimité
+options-netmonitor-body-limit-button =
+    .title = Modifier la taille maximale pour le corps d’une requête/réponse.
+options-netmonitor-body-limit-restore-default =
+    .title = Restaurer la valeur par défaut pour la taille maximale du corps d’une requête/réponse.
+options-netmonitor-body-limit-set =
+    .title = Définir la valeur actuellement saisie comme taille maximale pour le corps d’une requête/réponse.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Fonctionnalités expérimentales
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Afficher les feuilles de style dans le débogueur
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Lister et afficher les feuilles de style dans le débogueur
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (nécessite la réouverture de la boîte à outils)
 
 ## Style Editor section
 
@@ -107,6 +144,40 @@ options-sourceeditor-tabsize-label = Taille des tabulations
 options-sourceeditor-keybinding-label = Raccourcis clavier
 options-sourceeditor-keybinding-default-label = Par défaut
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = Mode local
+options-local-mode-only-work-locally = Le mode local ne fonctionne que localement et est désactivé lors du débogage de contextes distants
+options-local-mode-behavior = Le mode local vous permet de charger des fichiers locaux via une URL https sans dépendance externe. Les adresses ne peuvent être chargées qu’à partir d’onglets dans lesquels les outils de développement sont ouverts.
+options-local-mode-domain-label = Domaine personnalisé :
+options-local-mode-origin-input =
+    .placeholder = Origine du mappage local
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Cette origine est en conflit avec un autre mappage existant
+options-local-mode-origin-invalid = Cette origine est invalide
+options-local-mode-folder-label = Dossier local :
+options-local-mode-choose-folder = Parcourir…
+    .title = Choisir un dossier local pour fournir ce mappage
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Choisir un dossier en mode local pour : { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Ce dossier n’existe pas ou n’est pas valide.
+options-local-mode-toggle =
+    .title = Activer/Désactiver ce mappage local
+options-local-mode-toggle-enable = Activer
+options-local-mode-toggle-disable = Désactiver
+options-local-mode-navigate-to =
+    .title = Se rendre vers cette URL de mappage
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Voulez-vous supprimer le mappage « { $mappingOrigin } » ?
+options-local-mode-new-mapping = Ajouter un nouveau mappage local
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
@@ -115,6 +186,8 @@ options-context-advanced-settings = Paramètres avancés
 options-disable-http-cache-label = Désactiver le cache HTTP (lorsque la boîte à outils est ouverte)
 options-disable-http-cache-tooltip =
     .title = Activer cette option désactivera le cache HTTP pour l’ensemble des onglets dans lesquels la boîte à outils est ouverte. Cette option n’a aucun effet sur les service workers.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Désactiver JavaScript
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Désactiver JavaScript *
 options-disable-javascript-tooltip =
@@ -143,5 +216,21 @@ options-enable-service-workers-http-tooltip =
 options-source-maps-label = Activer les liens vers les sources
 options-source-maps-tooltip =
     .title = En activant cette option, les sources seront liées dans les outils.
-# The message shown for settings that trigger page reload
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (pour cette session, recharge la page)
+# The message shown for settings that trigger page reload and will only apply to the current session
 options-context-triggers-page-refresh = * Pour cette session, recharge la page
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (actualise la page)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Auto
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Obsolète. En savoir plus…

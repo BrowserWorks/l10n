@@ -26,12 +26,16 @@ profile-card =
 default-profile-name = Profil { $number }
 # The word 'original' is used in the sense that it is the initial or starting profile when you install Firefox.
 original-profile-name = Oprindelig profil
+default-desktop-shortcut-name = { -brand-short-name }
 edit-profile-page-title = Rediger profil
 edit-profile-page-header = Rediger din profil
 edit-profile-page-profile-name-label = Profilnavn
 edit-profile-page-theme-header-2 =
     .label = Tema
 edit-profile-page-explore-themes = Udforsk flere temaer
+edit-profile-page-desktop-shortcut-header = Opret skrivebordsgenvej
+edit-profile-page-desktop-shortcut-toggle =
+    .aria-label = Opret skrivebordsgenvej
 edit-profile-page-avatar-header-2 =
     .label = Avatar
 edit-profile-page-delete-button =
@@ -45,6 +49,8 @@ avatar-selector-save-button =
     .label = Gem
 avatar-selector-upload-file = Upload en fil
 avatar-selector-drag-file = Eller træk en fil herhen.
+avatar-selector-add-image = Tilføj et billede
+avatar-selector-crop = Beskær
 edit-profile-page-no-name = Giv denne profil et navn for at hjælpe dig med at finde den senere. Omdøb den når som helst.
 edit-profile-page-duplicate-name = Profilnavnet er allerede i brug. Prøv et nyt navn.
 edit-profile-page-profile-saved = Gemt
@@ -56,6 +62,13 @@ new-profile-page-input-placeholder =
     .placeholder = Vælg et navn, fx "Arbejde" eller "Personligt"
 new-profile-page-done-button =
     .label = Redigering fuldført
+# Variables
+#   $profilename (String) - The name of the copied profile.
+copied-profile-page-header-2 = Din kopi af "{ $profilename }" er klar til at blive tilpasset
+copied-profile-page-header-description = Vi har kopieret dine data og indstillinger til en ny profil. Giv profilen et navn, vælg et udseende, og gør den til din egen.
+restored-profile-page-header = Tilpas din gendannede profil
+restored-profile-page-header-description = Hver profil har sin egen browserhistorik og sine egne indstillinger, som er adskilt fra dine andre profiler. Desuden er { -brand-short-name }' stærke beskyttelse af dit privatliv aktiveret som standard.
+restored-profile-page-learn-more = Læs mere
 profile-window-title-2 = { -brand-short-name } - Vælg en profil
 profile-window-logo =
     .alt = { -brand-short-name }-logo
@@ -77,6 +90,9 @@ delete-profile-bookmarks = Bogmærker
 delete-profile-history = Historik (besøgte sider, cookies, webstedsdata)
 delete-profile-autofill = Data til autofyldning (adresser, betalingsmetoder)
 delete-profile-logins = Adgangskoder
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-page-title-2 = Slet profilen "{ $profilename }"
 
 ##
 
@@ -93,6 +109,8 @@ profiles-light-theme = Lyst
 profiles-dark-theme = Mørkt
 # The default system theme
 profiles-system-theme = System
+profiles-system-theme-title =
+    .title = Anvend systemets tema
 # This light theme features sunny colors such as goldenrod and pale yellow. Its name evokes the color of a marigold flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-marigold-theme-2 = Fløjlsblomst-gul
 # This light theme features various shades of soft, muted purples. Its name evokes the color of a lavender flower. This name can be translated directly if it's easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
@@ -107,29 +125,222 @@ profiles-ocean-theme-2 = Havblå
 profiles-terracotta-theme-2 = Murstensrød
 # This dark theme features forest green, dusky green with a gray undertone, and a muted sage green. Its name evokes the rich color of green moss in the forest. This name can be translated directly if its easily understood in your language, or adapted to a more natural sounding name that fits the color scheme.
 profiles-moss-theme-2 = Mosgrøn
+profiles-gray-theme = Grå
+profiles-gray-theme-title =
+    .title = Anvend gråt tema
+profiles-yellow-theme = Gul
+profiles-yellow-theme-title =
+    .title = Anvend gult tema
+profiles-orange-theme = Orange
+profiles-orange-theme-title =
+    .title = Anvend orange tema
+profiles-red-theme = Rød
+profiles-red-theme-title =
+    .title = Anvend rødt tema
+profiles-pink-theme = Pink
+profiles-pink-theme-title =
+    .title = Anvend pink tema
+profiles-purple-theme = Lilla
+profiles-purple-theme-title =
+    .title = Anvend lilla tema
+profiles-violet-theme = Violet
+profiles-violet-theme-title =
+    .title = Anvend violet tema
+profiles-blue-theme = Blå
+profiles-blue-theme-title =
+    .title = Anvend blåt tema
+profiles-green-theme = Grøn
+profiles-green-theme-title =
+    .title = Anvend grønt tema
+profiles-cyan-theme = Cyan
+profiles-cyan-theme-title =
+    .title = Anvend cyan tema
+profiles-custom-theme-title =
+    .title = Anvend tilpasset tema
+
+## Data collection settings changed (multi-profile)
+
+# Full infobar message with inline bold title followed by body text
+multiprofile-data-collection-message = <strong>Indstillinger for dataindsamling er blevet ændret.</strong> Ændringerne lavet i en anden profil gælder alle profiler på denne enhed.
+# Primary button label to open the Data collection section in Settings
+multiprofile-data-collection-view-settings = Se indstillinger
+# Secondary button label to dismiss the infobar without action
+multiprofile-data-collection-dismiss = Afvis
 
 ## Alternative text for default profile icons
 
 book-avatar-alt =
     .alt = Bog
 briefcase-avatar-alt =
-    .alt = Mappe
+    .alt = Attachemappe
+picture-avatar-alt =
+    .alt = Billede
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-alt =
+    .alt = Håndværk
 flower-avatar-alt =
     .alt = Blomst
+folder-avatar-alt =
+    .alt = Mappe
+hammer-avatar-alt =
+    .alt = Hammer
 heart-avatar-alt =
     .alt = Hjerte
+heart-rate-avatar-alt =
+    .alt = Hjerterytme
+clock-avatar-alt =
+    .alt = Ur
+leaf-avatar-alt =
+    .alt = Blad
+lightbulb-avatar-alt =
+    .alt = Lyspære
+makeup-avatar-alt =
+    .alt = Makeup
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-alt =
+    .alt = Besked
+musical-note-avatar-alt =
+    .alt = Node (musik)
+palette-avatar-alt =
+    .alt = Palet
+paw-print-avatar-alt =
+    .alt = Poteaftryk
+plane-avatar-alt =
+    .alt = Fly
+# Present refers to a gift box, not the current time period
+present-avatar-alt =
+    .alt = Gave
 shopping-avatar-alt =
     .alt = Indkøbsvogn
+soccer-ball-avatar-alt =
+    .alt = Fodbold
+sparkle-single-avatar-alt =
+    .alt = Glitter
 star-avatar-alt =
     .alt = Stjerne
+video-game-controller-avatar-alt =
+    .alt = Videospils-controller
 custom-avatar-alt =
     .alt = Tilpas avatar
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-alt =
+    .alt = Klode
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar-alt =
+    .alt = Diamant
+barbell-avatar-alt =
+    .alt = Vægtstang
+bike-avatar-alt =
+    .alt = Cykel
 
-## Labels for default avatar icons
+## Tooltips for default avatar icons
 
 book-avatar = Bog
-briefcase-avatar = Mappe
+briefcase-avatar = Attachemappe
+clock-avatar = Ur
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar = Håndværk
+custom-avatar = Tilpasset avatar
+# Diamond refers to the precious stone, not the geometric shape
+diamond-avatar = Diamant
 flower-avatar = Blomst
+folder-avatar = Mappe
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar = Klode
+hammer-avatar = Hammer
 heart-avatar = Hjerte
+heart-rate-avatar = Hjerterytme
+leaf-avatar = Blad
+lightbulb-avatar = Lyspære
+makeup-avatar = Makeup
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar = Meddelelse
+musical-note-avatar = Node (musik)
+palette-avatar = Palet
+paw-print-avatar = Poteaftryk
+picture-avatar = Billede
+plane-avatar = Fly
+# Present refers to a gift box, not the current time period
+present-avatar = Gave
 shopping-avatar = Indkøbsvogn
+soccer-ball-avatar = Fodbold
+sparkle-single-avatar = Glitter
 star-avatar = Stjerne
+video-game-controller-avatar = Videospils-controller
+custom-avatar-crop-back-button =
+    .aria-label = Tilbage
+custom-avatar-crop-view =
+    .aria-label = Beskær visning af billede
+custom-avatar-crop-area =
+    .aria-label = Tilpas område for beskæring
+custom-avatar-drag-handle =
+    .aria-label = Ændr størrelsen på beskæringsområdet
+profiles-appmenu-callout-tour-title = Din nye profil er klar til brug
+# "Spin up another" means creating another profile, “Hop between your digital lives" is referring to switching between different profiles such as work, personal, etc.
+profiles-appmenu-callout-tour-subtitle = Tryk på dit profilnavn i menuen ☰ for at oprette en ny, redigere denne profil, eller skifte mellem dine profiler.
+profiles-appmenu-callout-tour-primary-button = Vis mig hvordan
+barbell-avatar = Vægtstang
+bike-avatar = Cykel
+
+## Tooltips for default avatar icons
+
+barbell-avatar-tooltip =
+    .tooltiptext = Anvend vægtstangs-avatar
+bike-avatar-tooltip =
+    .tooltiptext = Anvend cykel-avatar
+book-avatar-tooltip =
+    .tooltiptext = Anvend bog-avatar
+briefcase-avatar-tooltip =
+    .tooltiptext = Anvend attachemappe-avatar
+picture-avatar-tooltip =
+    .tooltiptext = Anvende billede-avatar
+# Craft refers to hobby arts and crafts, represented by a button/fastener commonly found on clothing like shirts
+craft-avatar-tooltip =
+    .tooltiptext = Anvend håndværks-avatar
+# Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
+globe-avatar-tooltip =
+    .tooltiptext = Anvende klode-avatar
+diamond-avatar-tooltip =
+    .tooltiptext = Anvend diamant-avatar
+flower-avatar-tooltip =
+    .tooltiptext = Anvend blomst-avatar
+folder-avatar-tooltip =
+    .tooltiptext = Anvend mappe-avatar
+hammer-avatar-tooltip =
+    .tooltiptext = Anvend hammer-avatar
+heart-avatar-tooltip =
+    .tooltiptext = Anvend hjerte-avatar
+heart-rate-avatar-tooltip =
+    .tooltiptext = Anvend hjerterytme-avatar
+clock-avatar-tooltip =
+    .tooltiptext = Anvend ur-avatar
+leaf-avatar-tooltip =
+    .tooltiptext = Anvend blad-avatar
+lightbulb-avatar-tooltip =
+    .tooltiptext = Anvend lyspære-avatar
+makeup-avatar-tooltip =
+    .tooltiptext = Anvend makeup-avatar
+# Message refers to a text message, not a traditional letter/envelope message
+message-avatar-tooltip =
+    .tooltiptext = Anvend beskeds-avatar
+musical-note-avatar-tooltip =
+    .tooltiptext = Anvend node-avatar
+palette-avatar-tooltip =
+    .tooltiptext = Anvend palet-avatar
+paw-print-avatar-tooltip =
+    .tooltiptext = Anvende poteaftryks-avatar
+plane-avatar-tooltip =
+    .tooltiptext = Anvend fly-avatar
+# Present refers to a gift box, not the current time period
+present-avatar-tooltip =
+    .tooltiptext = Anvend gave-avatar
+shopping-avatar-tooltip =
+    .tooltiptext = Anvend indkøbsvogn-avatar
+soccer-ball-avatar-tooltip =
+    .tooltiptext = Anvend fodbold-avatar
+sparkle-single-avatar-tooltip =
+    .tooltiptext = Anvende glitter-avatar
+star-avatar-tooltip =
+    .tooltiptext = Anvend stjerne-avatar
+video-game-controller-avatar-tooltip =
+    .tooltiptext = Anvend videospilscontroller-avatar

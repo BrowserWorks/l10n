@@ -1,0 +1,81 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Permission Dialog
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+##  $appName (string) - Name of the application that will be opened.
+##  $extension (string) - Name of extension that initiated the request
+
+permission-dialog-description = Bu site { $scheme } bağlantısını açabilsin mi?
+permission-dialog-description-file = Bu dosya { $scheme } bağlantısını açabilsin mi?
+permission-dialog-description-host = { $host } sitesi { $scheme } bağlantısını açabilsin mi?
+permission-dialog-description-extension = { $extension } uzantısı { $scheme } bağlantısını açabilsin mi?
+permission-dialog-description-app = Bu site { $scheme } bağlantısını { $appName } ile açabilsin mi?
+permission-dialog-description-host-app = { $host } sitesi { $scheme } bağlantısını { $appName } ile açabilsin mi?
+permission-dialog-description-file-app = Bu dosya { $scheme } bağlantısını { $appName } ile açabilsin mi?
+permission-dialog-description-extension-app = { $extension } uzantısının { $scheme } bağlantısını { $appName } ile açmasına izin verilsin mi?
+permission-dialog-description-system-app = { $scheme } bağlantısı { $appName } ile açılsın mı?
+permission-dialog-description-system-noapp = { $scheme } bağlantısı açılsın mı?
+# Header on a permission prompt, asking the user if they should allow the website to continue.
+wallet-custom-scheme-warning-heading =
+    .heading = Bu site dijital cüzdanınızı açabilsin mi?
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host-app = <strong>{ $scheme }</strong> bağlantılarını açtığınızda <strong>{ $host }</strong> sitesi <strong>{ $appName }</strong> aracılığıyla gerçek kimliğinizi isteyebilir. Yalnızca bu siteye güveniyorsanız devam edin.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-app = <strong>{ $scheme }</strong> bağlantılarını açtığınızda bu site <strong>{ $appName }</strong> aracılığıyla gerçek kimliğinizi isteyebilir. Yalnızca bu siteye güveniyorsanız devam edin.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning-host = <strong>{ $scheme }</strong> bağlantılarını açtığınızda <strong>{ $host }</strong> sitesi dijital cüzdanınızdan gerçek kimliğinizi isteyebilir. Yalnızca bu siteye güveniyorsanız devam edin.
+# Warning given to the user that the current page is trying to open their digital wallet app
+wallet-custom-scheme-warning = <strong>{ $scheme }</strong> bağlantılarını açtığınızda bu site dijital cüzdanınızdan gerçek kimliğinizi isteyebilir. Yalnızca bu siteye güveniyorsanız devam edin.
+
+## Please keep the emphasis around the hostname and scheme (ie the
+## `<strong>` HTML tags). Please also keep the hostname as close to the start
+## of the sentence as your language's grammar allows.
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+
+permission-dialog-remember = <strong>{ $host }</strong> sitesinin <strong>{ $scheme }</strong> bağlantılarını açmasına her zaman izin ver
+permission-dialog-remember-file = <strong>{ $scheme }</strong> bağlantılarını açmak için bu dosyaya her zaman izin ver
+permission-dialog-remember-extension = Bu uzantının <strong>{ $scheme }</strong> bağlantılarını açmasına her zaman izin ver
+
+##
+
+permission-dialog-btn-open-link =
+    .label = Bağlantıyı aç
+    .accessKey = B
+permission-dialog-btn-choose-app =
+    .label = Uygulama seç
+    .accessKey = U
+permission-dialog-unset-description = Bir uygulama seçmelisiniz.
+permission-dialog-set-change-app-link = Başka bir uygulama seçin.
+
+## Chooser dialog
+## Variables:
+##  $scheme (string) - The type of link that's being opened.
+
+chooser-window =
+    .title = Uygulama seçimi
+    .style = min-width: 26em; min-height: 26em;
+chooser-dialog =
+    .buttonlabelaccept = Bağlantıyı aç
+    .buttonaccesskeyaccept = B
+chooser-dialog-description = { $scheme } bağlantısını açmak için bir uygulama seçin.
+# Please keep the emphasis around the scheme (ie the `<strong>` HTML tags).
+chooser-dialog-remember = <strong>{ $scheme }</strong> bağlantılarını her zaman bu uygulamayla aç
+chooser-dialog-remember-extra =
+    { PLATFORM() ->
+        [windows] Bu ayarı { -brand-short-name } seçeneklerinden değiştirebilirsiniz.
+       *[other] Bu ayarı { -brand-short-name } tercihlerinden değiştirebilirsiniz.
+    }
+choose-other-app-description = Başka bir uygulama seç
+choose-app-btn =
+    .label = Seç…
+    .accessKey = S
+choose-other-app-window-title = Başka bir uygulama…
+# Displayed under the name of a protocol handler in the Launch Application dialog.
+choose-dialog-privatebrowsing-disabled = Gizli pencerelerde devre dışı

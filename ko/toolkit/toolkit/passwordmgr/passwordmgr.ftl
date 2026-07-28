@@ -30,10 +30,8 @@ password-manager-password-password-button-allow =
 password-manager-update-password-button-deny =
     .label = 업데이트 안 함
     .accesskey = D
+primary-password-prompt-message = 기본 비밀번호를 입력하세요.
 # This is displayed in place of the username when it is missing.
 password-manager-no-username-placeholder = 사용자 이름 없음
-password-manager-toggle-password =
-    .label = 비밀번호 보기
-    .accesskey = h
 password-manager-confirm-password-change = 비밀번호 변경 확인
 password-manager-select-username = 업데이트 할 계정 선택:
