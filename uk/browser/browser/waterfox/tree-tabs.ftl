@@ -1,0 +1,155 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+pane-tree-title = Деревоподібні вертикальні вкладки
+
+category-tree =
+    .tooltiptext = { pane-tree-title }
+
+browser-layout-tree-vertical-tabs =
+    .label = Деревоподібні вертикальні вкладки
+
+sidebar-tree-vertical-tabs =
+    .label = Деревоподібні вертикальні вкладки
+
+tree-header = Деревоподібні вертикальні вкладки
+
+tree-appearance-header = Зовнішній вигляд
+
+tree-auto-sticky-header = Закріплення вкладок на краях панелі, коли вони прокручені за її межі
+
+tree-faviconize-pinned-tabs =
+    .label = Показувати закріплені вкладки лише іконками
+    .accesskey = П
+
+tree-sticky-active-tab =
+    .label = Активна вкладка
+    .accesskey = к
+
+tree-sticky-sharing-tab =
+    .label = Вкладки, що використовують камеру/мікрофон/екран
+    .accesskey = т
+
+tree-sticky-sound-playing-tab =
+    .label = Вкладки, що відтворюють звук
+    .accesskey = и
+
+tree-behavior-header = Деревоподібний перегляд вкладок
+
+tree-auto-collapse-expand-subtree-on-attach =
+    .label = Коли з'являється нове дерево, згортати інші автоматично
+    .accesskey = з
+
+tree-auto-collapse-expand-subtree-on-select =
+    .label = Коли вкладка отримує фокус, розгорнути її дерево та згорнути інші автоматично
+    .accesskey = а
+
+tree-drop-links-on-tab-behavior-caption =
+    .value = Коли посилання чи стрічка URL перенесена на вкладку
+    .accesskey = о
+
+tree-drop-links-on-tab-behavior-ask =
+    .label = Завжди питати
+
+tree-drop-links-on-tab-behavior-load =
+    .label = Завантажити вкладку
+
+tree-drop-links-on-tab-behavior-newtab =
+    .label = Відкрити дочірню вкладку
+
+tree-successor-tab-control-level-caption =
+    .value = Коли поточна вкладка закривається як остання дочірня
+    .accesskey = л
+
+tree-successor-tab-control-level-in-tree =
+    .label = Перемістити фокус на попередню вкладку в дереві
+
+tree-successor-tab-control-level-never =
+    .label = Завжди переміщувати фокус на наступну вкладку (враховувати налаштування браузер або іншго розширення)
+
+tree-successor-tab-control-level-simulate-default =
+    .label = Завжди переміщувати фокус на наступну вкладку
+
+tree-tree-double-click-behavior-caption =
+    .value = Подвійне клацання на вкладці
+    .accesskey = д
+
+tree-tree-double-click-behavior-toggle-close =
+    .label = Закриє вкладку
+
+tree-tree-double-click-behavior-toggle-collapsed =
+    .label = Згорне/розгорне дерево
+
+tree-tree-double-click-behavior-toggle-none =
+    .label = Нічого не робитиме
+
+tree-tree-double-click-behavior-toggle-sticky =
+    .label = Прикріпить до меж панелі вкладок / Відкріпить від меж панелі вкладок
+
+tree-auto-attach-header = Автоматичне впорядкування дерева вкладок
+
+tree-auto-attach-child-end =
+    .label = Останню дочірню вкладку батьківської вкладки
+
+tree-auto-attach-child-next-to-last-related-tab =
+    .label = Дочірню вкладку батьківської, поруч із нещодавно відкритою дочірньою
+
+tree-auto-attach-child-top =
+    .label = Першу дочірню вкладку батьківської вкладки
+
+tree-auto-attach-independent =
+    .label = Незалежну вкладку
+
+tree-auto-attach-next-sibling =
+    .label = Наступну сусідню вкладку батьківської вкладки
+
+tree-auto-attach-no-control =
+    .label = (не контролювати)
+
+tree-auto-attach-sibling =
+    .label = Сусідню вкладку батьківської вкладки
+
+tree-auto-attach-on-any-other-trigger-caption =
+    .value = Вкладки з будь-якого іншого джерела: Відкривати як
+    .accesskey = б
+
+tree-auto-attach-on-duplicated-caption =
+    .value = Дублювати вкладку як
+    .accesskey = у
+
+tree-auto-attach-on-new-tab-button-middle-click-caption =
+    .value = Для середнього клацання відкривати нову порожню вкладку як
+    .accesskey = с
+
+tree-auto-attach-on-new-tab-command-caption =
+    .value = Відкривати нову порожню вкладку як
+    .accesskey = н
+
+tree-auto-attach-on-opened-from-external-caption =
+    .value = Нова вкладка з інших програм: Відкривати як
+    .accesskey = і
+
+tree-auto-attach-on-opened-with-owner-caption =
+    .value = Коли вкладка відкрита з наявної, відкривати як
+    .accesskey = в
+
+tree-auto-attach-same-site-orphan-caption =
+    .value = Нова вкладка з тим самим сайтом, що й поточна, відкривана з адресного рядка, закладок, історії або інших джерел: Відкривати як
+    .accesskey = щ
+
+tree-insert-new-tab-from-pinned-tab-at-caption =
+    .value = Позиція вставлення нових дочірніх вкладок із закріплених вкладок (будуть відображатися як кореневі)
+    .accesskey = р
+
+tree-insert-new-tab-from-pinned-tab-at-end =
+    .label = Кінець дерева
+
+tree-insert-new-tab-from-pinned-tab-at-next-to-last-related-tab =
+    .label = Поруч із нещодавно відкритою дочірньою або поруч із вкладкою, що відкрила
+
+tree-insert-new-tab-from-pinned-tab-at-no-control =
+    .label = Не контролювати (з урахуванням рішень браузера та інших розширень вкладок)
+
+tree-insert-new-tab-from-pinned-tab-at-top =
+    .label = Верхівка дерева (поруч із вкладкою, що відкрила)

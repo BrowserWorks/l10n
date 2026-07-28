@@ -377,13 +377,13 @@ class LocaleUpdater:
         """Process all files in a locale directory"""
         files_processed = 0
         files_modified = 0
+        waterfox_dir = locale_dir / "browser" / "browser" / "waterfox"
 
         for file_path in locale_dir.rglob('*'):
             if not file_path.is_file():
                 continue
 
-            # Skip waterfox.ftl files
-            if file_path.name == 'waterfox.ftl':
+            if waterfox_dir in file_path.parents:
                 continue
 
             # Skip binary files
@@ -421,13 +421,14 @@ class LocaleUpdater:
         return files_processed, files_modified
 
     def preserve_waterfox_files(self, temp_locale_dir, out_name):
-        """Preserve existing waterfox.ftl files"""
-        existing_waterfox = self.root_dir / out_name / "browser" / "browser" / "waterfox.ftl"
-        if existing_waterfox.exists():
-            new_waterfox_dir = temp_locale_dir / "browser" / "browser"
-            new_waterfox_dir.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(existing_waterfox, new_waterfox_dir / "waterfox.ftl")
-            print(f"Preserved waterfox.ftl for {out_name}")
+        """Preserve existing Waterfox localisation files"""
+        existing_waterfox = self.root_dir / out_name / "browser" / "browser" / "waterfox"
+        if existing_waterfox.is_dir():
+            new_waterfox = temp_locale_dir / "browser" / "browser" / "waterfox"
+            if new_waterfox.exists():
+                shutil.rmtree(new_waterfox)
+            shutil.copytree(existing_waterfox, new_waterfox)
+            print(f"Preserved Waterfox localisation files for {out_name}")
 
     def update_locale(self, locale_code):
         """Update a single locale"""
@@ -439,7 +440,7 @@ class LocaleUpdater:
             return False
 
         try:
-            # Preserve existing waterfox.ftl
+            # Preserve existing Waterfox localisation files
             self.preserve_waterfox_files(temp_locale_dir, out_name)
 
             # Process files

@@ -1,0 +1,212 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = Dynamische Themes
+
+dynamic-theme-dark =
+    .label = Dunklen Modus erzwingen
+
+dynamic-theme-light =
+    .label = Hellen Modus erzwingen
+
+dynamic-theme-auto =
+    .label = Hellen/Dunklen Modus dynamisch einstellen
+
+pane-theme-title = Aussehen
+
+animation-header = Animationen
+
+appearance-header = Erscheinungsbild
+
+bookmark-header = Lesezeichenleiste
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+media-player-header = Medienwiedergabe
+
+nav-bar-header = Navigationsleiste
+
+tab-bar-header = Tableiste
+
+theme-header = Theme
+
+enable-waterfox-theme-0 =
+    .label = Waterfox-Theme-Anpassungen für alle Themes aktivieren
+
+enable-waterfox-theme-1 =
+    .label = Waterfox-Theme-Anpassungen für alle Waterfox-Themes aktivieren
+
+enable-waterfox-theme-2 =
+    .label = Waterfox-Theme-Anpassungen deaktivieren
+
+monospace-font-theme =
+    .label = Feste Schriftbreite für Theme aktivieren
+
+sidebar-header = Seitenleiste
+
+preset-title = Voreinstellungen
+
+full-screen-header = Vollbild
+
+icons-header = Symbole
+
+hide-all-icons =
+    .label = Alle Symbole ausblenden
+
+hide-bookmarkbar-icon =
+    .label = Lesezeichenleisten-Symbole ausblenden
+
+hide-tab-icons =
+    .label = Tab-Symbole ausblenden
+
+hide-urlbar-iconbox =
+    .label = URL-Leisten-Symbolfeld ausblenden
+
+show-mac-menu-icons =
+    .label = Mac-Menü-Symbole anzeigen
+
+show-menu-icons =
+    .label = Menüsymbole anzeigen
+
+autohide-hidden-header = Automatisch ausblenden & Ausgeblendet
+
+auto-hide-back =
+    .label = Schaltfläche „Zurück“ automatisch ausblenden
+
+auto-hide-bookmarkbar =
+    .label = Lesezeichenleiste automatisch ausblenden
+
+auto-hide-forward =
+    .label = Schaltfläche „Weiter“ automatisch ausblenden
+
+auto-hide-navbar =
+    .label = Navigationsleiste automatisch ausblenden
+
+auto-hide-pageaction =
+    .label = Seitenaktion automatisch ausblenden
+
+auto-hide-sidebar =
+    .label = Seitenleiste automatisch ausblenden
+
+auto-hide-tabbar =
+    .label = Tableiste automatisch ausblenden
+
+auto-hide-tabs =
+    .label = Tabs automatisch ausblenden
+
+hide-bookmarkbar-label =
+    .label = Beschriftungen der Lesezeichenleiste ausblenden
+
+hide-disabled-menuitems =
+    .label = Deaktivierte Menüelemente ausblenden
+
+hide-sidebar-header =
+    .label = Seitenleistenkopf ausblenden
+
+monospace-font =
+    .label = Feste Schriftbreite für Seite aktivieren
+
+font-header = Schriftarten
+
+lepton-style =
+    .label = Lepton-Stil
+
+proton-style =
+    .label = Proton-Stil
+
+waterfox-defaults =
+    .label = Waterfox-Standardeinstellungen
+
+center-header = Zentrieren
+
+rounding-header = Rundung
+
+center-tab-content =
+    .label = Tab-Inhalt zentrieren
+
+center-tab-label =
+    .label = Nur Tab-Beschriftung zentrieren
+
+center-navbar-text =
+    .label = Text der Navigationsleiste zentrieren
+
+auto-blur-tabs =
+    .label = Tabs automatisch verschleiern
+
+close-button-hover =
+    .label = Schließen-Schaltfläche beim Bewegen des Mauszeigers über den ausgewählten Tab anzeigen, wenn viele Tabs geöffnet sind
+
+enable-default-accent-color =
+    .label = Standard-Akzentfarbe
+
+enable-system-accent-color =
+    .label = System-Akzentfarbe
+
+enable-cyan-accent-color =
+    .label = Cyan als Akzentfarbe
+
+enable-menu-transparency =
+    .label = Menütransparenz aktivieren
+
+enable-panel-transparency =
+    .label = Panel-Transparenz aktivieren
+
+square-menu-popup =
+    .label = Eckiges Kontextmenü-Panel
+
+square-menu-panel =
+    .label = Eckiges Anwendungsmenü-Panel
+
+square-menu-item =
+    .label = Eckige Kontextmenü-Einträge
+
+square-field =
+    .label = Eckige Eingabefelder
+
+square-button-edges =
+    .label = Eckige Schaltflächen
+
+square-panel-item =
+    .label = Eckige Anwendungsmenü-Einträge
+
+square-tab-edges =
+    .label = Eckige Tabs
+
+square-checkbox =
+    .label = Eckige Kontrollkästchen
+
+tab-context-line =
+    .label = Tab-Kontextzeile
+
+remove-panel-strip =
+    .label = Farbige Trennlinie im Anwendungsmenü entfernen
+
+panels-header = Panels
+
+compact-bookmark-menu =
+    .label = Abstand im Lesezeichen-Menü verringern
+
+compact-context-menu =
+    .label = Abstand im Kontextmenü verringern
+
+compact-navbar-popup =
+    .label = Abstand der Pop-ups in der Navigationsleiste verringern
+
+compact-panel-header =
+    .label = Abstand der Panel-Kopfzeilen verringern
+
+disable-panel-animate =
+    .label = Animation des Anwendungsmenü-Panels deaktivieren
+
+disable-sidebar-animate =
+    .label = Animation des Seitenleisten-Panels deaktivieren
+
+drag-space =
+    .label = Festen Ziehenbereich aktivieren
+
+full-panel-strip =
+    .label = Anwendungsmenü-Trennlinie in voller Breite
+
+interface-component-header = Komponenten

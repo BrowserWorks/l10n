@@ -1,0 +1,212 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-auto =
+    .label = Динамічно встановлювати світлий/темний режим
+
+dynamic-theme-dark =
+    .label = Примусово темний режим
+
+dynamic-theme-light =
+    .label = Примусово світлий режим
+
+dynamic-theme-header = Динамічні теми
+
+pane-theme-title = Зовнішній вигляд і поведінка
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = Анімації
+
+appearance-header = Зовнішній вигляд
+
+autohide-hidden-header = Автоховання та приховане
+
+bookmark-header = Рядок закладок
+
+center-header = Вирівняти по центру
+
+font-header = Шрифти
+
+full-screen-header = Повний екран
+
+icons-header = Іконки
+
+interface-component-header = Складники інтерфейсу
+
+media-player-header = Програвач медіа
+
+nav-bar-header = Панель навігації
+
+panels-header = Панелі
+
+rounding-header = Скруглення
+
+sidebar-header = Бічна панель
+
+tab-bar-header = Панель вкладок
+
+theme-header = Тема
+
+preset-title = Пресети
+
+lepton-style =
+    .label = Стиль Lepton
+
+proton-style =
+    .label = Стиль Proton
+
+waterfox-defaults =
+    .label = Стандартно у Waterfox
+
+auto-blur-tabs =
+    .label = Автоматично розмивати вкладки
+
+auto-hide-back =
+    .label = Автоматично приховувати кнопку «Назад»
+
+auto-hide-bookmarkbar =
+    .label = Автоматично приховувати рядок закладок
+
+auto-hide-forward =
+    .label = Автоматично приховувати кнопку «Вперед»
+
+auto-hide-navbar =
+    .label = Автоматично приховувати панель навігації
+
+auto-hide-pageaction =
+    .label = Автоматично приховувати дії сторінки
+
+auto-hide-sidebar =
+    .label = Автоматично приховувати бічну панель
+
+auto-hide-tabbar =
+    .label = Автоматично приховувати панель вкладок
+
+auto-hide-tabs =
+    .label = Автоматично приховувати вкладки
+
+center-navbar-text =
+    .label = Вирівняти по центру текст панелі навігації
+
+center-tab-content =
+    .label = Вирівняти по центру зміст вкладки
+
+center-tab-label =
+    .label = Вирівняти по центру тільки назву
+
+close-button-hover =
+    .label = Показувати кнопку «Закрити» при наведенні на обрану вкладку, коли вкладок багато
+
+compact-bookmark-menu =
+    .label = Зменшити відступи в меню закладок
+
+compact-context-menu =
+    .label = Зменшити відступи в контекстному меню
+
+compact-navbar-popup =
+    .label = Зменшити відступи в панелі навігації
+
+compact-panel-header =
+    .label = Зменшити відступи в заголовках панелей
+
+disable-panel-animate =
+    .label = Вимкнути анімацію панелі меню застосунку
+
+disable-sidebar-animate =
+    .label = Вимкнути анімацію бічної панелі
+
+drag-space =
+    .label = Увімкнути фіксовану зону перетягування
+
+enable-cyan-accent-color =
+    .label = Блакитний колір акценту
+
+enable-default-accent-color =
+    .label = Колір акценту за замовчуванням
+
+enable-menu-transparency =
+    .label = Увімкнути прозорість меню
+
+enable-panel-transparency =
+    .label = Увімкнути прозорість панелей
+
+enable-system-accent-color =
+    .label = Системний колір акценту
+
+enable-waterfox-theme-0 =
+    .label = Увімкнути налаштування тем Waterfox для усіх тем
+
+enable-waterfox-theme-1 =
+    .label = Увімкнути налаштування тем Waterfox для тем Waterfox
+
+enable-waterfox-theme-2 =
+    .label = Вимкнути налаштування тем Waterfox
+
+full-panel-strip =
+    .label = Роздільник меню застосунку на повну ширину
+
+remove-panel-strip =
+    .label = Прибрати кольоровий роздільник меню застосунку
+
+hide-all-icons =
+    .label = Приховати усі іконки
+
+hide-bookmarkbar-icon =
+    .label = Приховати іконки в рядку закладок
+
+hide-bookmarkbar-label =
+    .label = Приховати імена в рядку закладок
+
+hide-disabled-menuitems =
+    .label = Приховати неактивні пункти меню
+
+hide-sidebar-header =
+    .label = Приховати заголовок бічної панелі
+
+hide-tab-icons =
+    .label = Приховати іконки вкладок
+
+hide-urlbar-iconbox =
+    .label = Приховати область іконок адресного рядка
+
+monospace-font =
+    .label = Ввімкнути моноширинний шрифт для сторінки
+
+monospace-font-theme =
+    .label = Ввімкнути моноширинний шрифт для теми
+
+show-mac-menu-icons =
+    .label = Показати іконки меню Mac
+
+show-menu-icons =
+    .label = Показати іконки меню
+
+square-button-edges =
+    .label = Квадратні кути кнопок
+
+square-checkbox =
+    .label = Прапорець із квадратними кутами
+
+square-field =
+    .label = Квадратні кути полів для введення
+
+square-menu-item =
+    .label = Квадратні кути елементів контекстного меню
+
+square-menu-panel =
+    .label = Квадратні кути панелі меню застосунку
+
+square-menu-popup =
+    .label = Квадратні кути панелі контекстного меню
+
+square-panel-item =
+    .label = Квадратні кути елементів меню застосунку
+
+square-tab-edges =
+    .label = Квадратні кути вкладок
+
+tab-context-line =
+    .label = Контекстна лінія вкладок

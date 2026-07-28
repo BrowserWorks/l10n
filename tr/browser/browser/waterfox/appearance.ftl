@@ -1,0 +1,212 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = Dinamik Temalar
+
+dynamic-theme-auto =
+    .label = Dinamik Olarak Açık/Koyu Modunu Ayarla
+
+dynamic-theme-dark =
+    .label = Karanlık Modu Zorla
+
+dynamic-theme-light =
+    .label = Açık Modu Zorla
+
+pane-theme-title = Görünüm & His
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = Animasyonlar
+
+appearance-header = Görünüm
+
+autohide-hidden-header = Otomatik Gizle & Gizli
+
+bookmark-header = Sık Kullanılanlar Çubuğu
+
+center-header = Merkez
+
+font-header = Yazı tipleri
+
+full-screen-header = Tam ekran
+
+icons-header = Simgeler
+
+interface-component-header = Arayüz Bileşenleri
+
+media-player-header = Medya Oynatıcı
+
+nav-bar-header = Gezinme Çubuğu
+
+panels-header = Paneller
+
+rounding-header = Yuvarlama
+
+sidebar-header = Kenar çubuğu
+
+tab-bar-header = Sekme Çubuğu
+
+theme-header = Tema
+
+preset-title = Ön Ayarlar
+
+lepton-style =
+    .label = Lepton Stili
+
+proton-style =
+    .label = Proton Stili
+
+waterfox-defaults =
+    .label = Waterfox Varsayılanları
+
+auto-blur-tabs =
+    .label = Sekmeleri Otomatik Bulanıklaştır
+
+auto-hide-back =
+    .label = Geri Düğmesini Otomatik Gizle
+
+auto-hide-bookmarkbar =
+    .label = Sık Kullanılanlar Çubuğunu Otomatik Gizle
+
+auto-hide-forward =
+    .label = İleri Düğmesini Otomatik Gizle
+
+auto-hide-navbar =
+    .label = Gezinme Çubuğunu Otomatik Gizle
+
+auto-hide-pageaction =
+    .label = Sayfa Eylemini Otomatik Gizle
+
+auto-hide-sidebar =
+    .label = Kenar Çubuğunu Otomatik Gizle
+
+auto-hide-tabbar =
+    .label = Sekme Çubuğunu Otomatik Gizle
+
+auto-hide-tabs =
+    .label = Sekmeleri Otomatik Gizle
+
+center-navbar-text =
+    .label = Merkez Gezinme Çubuğu Metni
+
+center-tab-content =
+    .label = Merkez Sekme İçeriği
+
+center-tab-label =
+    .label = Yalnızca Merkez Sekme Etiketi
+
+close-button-hover =
+    .label = Birden fazla sekme açıkken seçili sekmenin üzerine gelindiğinde sekmeyi kapat düğmesini göster
+
+compact-bookmark-menu =
+    .label = Sık Kullanılanlar Menüsü Dolgusunu Azalt
+
+compact-context-menu =
+    .label = Bağlam Menüsü Dolgusunu Azalt
+
+compact-navbar-popup =
+    .label = Navigasyon Çubuğu Açılır Penceresi Dolgusunu Azalt
+
+compact-panel-header =
+    .label = Panel Başlığı Dolgusunu Azalt
+
+disable-panel-animate =
+    .label = Uygulama menüsü paneli animasyonunu devre dışı bırak
+
+disable-sidebar-animate =
+    .label = Kenar çubuğu paneli animasyonunu devre dışı bırak
+
+drag-space =
+    .label = Sabit Sürükleme Alanını Etkinleştir
+
+enable-cyan-accent-color =
+    .label = Camgöbeği Vurgu Rengi
+
+enable-default-accent-color =
+    .label = Varsayılan Vurgu Rengi
+
+enable-menu-transparency =
+    .label = Menü şeffaflığını etkinleştir
+
+enable-panel-transparency =
+    .label = Panel şeffaflığını etkinleştir
+
+enable-system-accent-color =
+    .label = Sistem Vurgu Rengi
+
+enable-waterfox-theme-0 =
+    .label = Tüm temalarda Waterfox tema özelleştirmelerini etkinleştir
+
+enable-waterfox-theme-1 =
+    .label = Waterfox temalarında Waterfox tema özelleştirmelerini etkinleştir
+
+enable-waterfox-theme-2 =
+    .label = Waterfox tema özelleştirmelerini devre dışı bırak
+
+full-panel-strip =
+    .label = Tam Genişlikte Uygulama Menüsü Ayırıcı
+
+remove-panel-strip =
+    .label = Renkli Uygulama Menüsü Ayırıcısını Kaldır
+
+hide-all-icons =
+    .label = Tüm Simgeleri Gizle
+
+hide-bookmarkbar-icon =
+    .label = Sık Kullanılanlar Çubuğu Simgelerini Gizle
+
+hide-bookmarkbar-label =
+    .label = Sık Kullanılanlar Çubuğu Etiketlerini Gizle
+
+hide-disabled-menuitems =
+    .label = Devre Dışı Bırakılmış Menü Öğelerini Gizle
+
+hide-sidebar-header =
+    .label = Kenar Çubuğu Başlığını Gizle
+
+hide-tab-icons =
+    .label = Sekme Simgelerini Gizle
+
+hide-urlbar-iconbox =
+    .label = URL Çubuğu Simge Kutusunu Gizle
+
+monospace-font =
+    .label = Sayfa için tek aralıklı yazı tipini etkinleştir
+
+monospace-font-theme =
+    .label = Tema için tek aralıklı yazı tipini etkinleştir
+
+show-mac-menu-icons =
+    .label = Mac Menü Simgelerini Göster
+
+show-menu-icons =
+    .label = Menü Simgelerini Göster
+
+square-button-edges =
+    .label = Kare Düğme Köşeleri
+
+square-checkbox =
+    .label = Kare Onay Kutusu
+
+square-field =
+    .label = Kare Giriş Alanı Köşeleri
+
+square-menu-item =
+    .label = Kare Bağlam Menüsü Öğesi Köşeleri
+
+square-menu-panel =
+    .label = Kare Uygulama Menüsü Panel Köşeleri
+
+square-menu-popup =
+    .label = Kare Bağlam Menüsü Paneli Köşeleri
+
+square-panel-item =
+    .label = Kare Uygulama Menüsü Öğesi Köşeleri
+
+square-tab-edges =
+    .label = Kare Sekme Köşeleri
+
+tab-context-line =
+    .label = Sekme Bağlam Satırı

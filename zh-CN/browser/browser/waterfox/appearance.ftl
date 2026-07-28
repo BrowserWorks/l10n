@@ -1,0 +1,212 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = 动态主题
+
+dynamic-theme-dark =
+    .label = 强制暗色模式
+
+dynamic-theme-light =
+    .label = 强制光线模式
+
+dynamic-theme-auto =
+    .label = 动态设置灯光/暗色模式
+
+pane-theme-title = 外观
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = 动画
+
+appearance-header = 外观
+
+autohide-hidden-header = 自动影响
+
+bookmark-header = 书签栏
+
+center-header = 中心
+
+font-header = 字体
+
+full-screen-header = 全屏
+
+icons-header = 图标
+
+interface-component-header = 组件接口
+
+media-player-header = 媒体播放器
+
+nav-bar-header = 导航条
+
+panels-header = 面板
+
+rounding-header = 圆角
+
+sidebar-header = 侧栏
+
+tab-bar-header = 菜单
+
+theme-header = 主题
+
+preset-title = 默认值
+
+lepton-style =
+    .label = Lepton 风格
+
+proton-style =
+    .label = Proton 风格
+
+waterfox-defaults =
+    .label = Waterfox 默认
+
+auto-blur-tabs =
+    .label = 标签自动模糊
+
+auto-hide-back =
+    .label = 自动隐藏后退按钮
+
+auto-hide-bookmarkbar =
+    .label = 自动隐藏书签栏
+
+auto-hide-forward =
+    .label = 自动隐藏前进按钮
+
+auto-hide-navbar =
+    .label = 自动隐藏导航栏
+
+auto-hide-pageaction =
+    .label = 自动隐藏页面操作
+
+auto-hide-sidebar =
+    .label = 自动隐藏侧栏
+
+auto-hide-tabbar =
+    .label = 自动隐藏标签栏
+
+auto-hide-tabs =
+    .label = 自动隐藏标签页
+
+center-navbar-text =
+    .label = 使导航栏文字居中
+
+center-tab-content =
+    .label = 使页面内容居中
+
+hide-all-icons =
+    .label = 隐藏所有图标
+
+hide-bookmarkbar-icon =
+    .label = 隐藏书签栏图标
+
+hide-bookmarkbar-label =
+    .label = 隐藏书签栏标签
+
+hide-disabled-menuitems =
+    .label = 隐藏禁用的菜单项
+
+hide-sidebar-header =
+    .label = 隐藏侧栏标题
+
+hide-tab-icons =
+    .label = 隐藏标签页图标
+
+hide-urlbar-iconbox =
+    .label = 隐藏地址栏图标框
+
+monospace-font =
+    .label = 对页面启用等宽字体
+
+monospace-font-theme =
+    .label = 对主题启用等宽字体
+
+show-mac-menu-icons =
+    .label = 显示 Mac 菜单图标
+
+show-menu-icons =
+    .label = 显示菜单图标
+
+square-button-edges =
+    .label = 方块按钮边角
+
+square-checkbox =
+    .label = 方形复选框
+
+square-field =
+    .label = 方形条目字段边角
+
+center-tab-label =
+    .label = 仅居中标签页标签
+
+close-button-hover =
+    .label = 在打开多个标签页时当悬停于选定标签页时显示关闭标签页按钮
+
+enable-menu-transparency =
+    .label = 启用菜单透明
+
+enable-panel-transparency =
+    .label = 启用面板透明化
+
+enable-waterfox-theme-0 =
+    .label = 在所有主题上启用 Waterfox 主题定制
+
+enable-waterfox-theme-1 =
+    .label = 在 Waterfox 主题上启用 Waterfox 主题定制
+
+enable-waterfox-theme-2 =
+    .label = 禁用 Waterfox 主题定制
+
+full-panel-strip =
+    .label = 全宽应用菜单分隔符
+
+remove-panel-strip =
+    .label = 移除彩色应用菜单分隔符
+
+square-menu-item =
+    .label = 方形上下文菜单项边角
+
+square-menu-panel =
+    .label = 方形应用菜单面板边角
+
+square-menu-popup =
+    .label = 方形上下文菜单边角
+
+square-panel-item =
+    .label = 方形应用菜单项边角
+
+square-tab-edges =
+    .label = 方形标签页边角
+
+tab-context-line =
+    .label = 标签页上下文行
+
+compact-bookmark-menu =
+    .label = 缩小书签菜单间距
+
+compact-context-menu =
+    .label = 缩小右键菜单间距
+
+compact-navbar-popup =
+    .label = 缩小导航栏弹出菜单间距
+
+compact-panel-header =
+    .label = 缩小面板标题栏间距
+
+disable-panel-animate =
+    .label = 关闭应用菜单面板动画效果
+
+disable-sidebar-animate =
+    .label = 关闭侧边栏面板动画效果
+
+drag-space =
+    .label = 启用固定拖动区域
+
+enable-cyan-accent-color =
+    .label = 青色主题强调色
+
+enable-default-accent-color =
+    .label = 默认主题强调色
+
+enable-system-accent-color =
+    .label = 跟随系统强调色

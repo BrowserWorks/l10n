@@ -1,0 +1,121 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = Dynaamiset teemat
+
+dynamic-theme-auto =
+    .label = Aseta mukautuen vaalea tai tumma teema
+
+dynamic-theme-dark =
+    .label = Pakota tumma tila
+
+dynamic-theme-light =
+    .label = Pakota vaalea tila
+
+pane-theme-title = Ulkoasu ja kokemus
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = Animaatiot
+
+appearance-header = Ulkoasu
+
+bookmark-header = Kirjanmerkkipalkki
+
+font-header = Fontit
+
+full-screen-header = Koko näyttö
+
+icons-header = Kuvakkeet
+
+interface-component-header = Käyttöliittymän osat
+
+media-player-header = Mediasoitin
+
+sidebar-header = Sivupalkki
+
+tab-bar-header = Välilehtipalkki
+
+theme-header = Teema
+
+preset-title = Esiasetukset
+
+lepton-style =
+    .label = Lepton-tyyli
+
+proton-style =
+    .label = Proton-tyyli
+
+waterfox-defaults =
+    .label = Waterfox-oletukset
+
+auto-blur-tabs =
+    .label = Sumenna välilehdet automaattisesti
+
+auto-hide-back =
+    .label = Piilota Taaksepäin-painike automaattisesti
+
+auto-hide-bookmarkbar =
+    .label = Piilota kirjanmerkkipalkki automaattisesti
+
+auto-hide-forward =
+    .label = Piilota Eteenpäin-painike automaattisesti
+
+auto-hide-sidebar =
+    .label = Piilota sivupalkki automaattisesti
+
+auto-hide-tabbar =
+    .label = Piilota välilehtipalkki automaattisesti
+
+auto-hide-tabs =
+    .label = Piilota välilehdet automaattisesti
+
+enable-cyan-accent-color =
+    .label = Syaanin korostusväri
+
+enable-default-accent-color =
+    .label = Oletusarvoinen korostusväri
+
+enable-menu-transparency =
+    .label = Käytä valikon läpinäkyvyyttä
+
+enable-panel-transparency =
+    .label = Käytä paneelin läpinäkyvyyttä
+
+enable-system-accent-color =
+    .label = Järjestelmän korostusväri
+
+enable-waterfox-theme-0 =
+    .label = Käytä Waterfox-teemamukautuksia kaikissa teemoissa
+
+enable-waterfox-theme-1 =
+    .label = Käytä Waterfox-teemamukautuksia Waterfox-teemoissa
+
+enable-waterfox-theme-2 =
+    .label = Poista Waterfox-teemamukautukset käytöstä
+
+hide-all-icons =
+    .label = Piilota kaikki kuvakkeet
+
+hide-bookmarkbar-icon =
+    .label = Piilota kirjanmerkkipalkin kuvakkeet
+
+hide-tab-icons =
+    .label = Piilota välilehtien kuvakkeet
+
+show-menu-icons =
+    .label = Näytä valikkokuvakkeet
+
+center-tab-content =
+    .label = Keskitä välilehden sisältö
+
+hide-bookmarkbar-label =
+    .label = Piilota kirjanmerkkipalkin nimikkeet
+
+center-header = Keskellä
+
+nav-bar-header = Navigointipalkki
+
+panels-header = Paneelit

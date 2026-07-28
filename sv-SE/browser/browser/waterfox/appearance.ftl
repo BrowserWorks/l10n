@@ -1,0 +1,212 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+dynamic-theme-header = Dynamiska teman
+
+dynamic-theme-dark =
+    .label = Tvinga mörkt läge
+
+dynamic-theme-light =
+    .label = Tvinga ljusläge
+
+dynamic-theme-auto =
+    .label = Ställ in ljus/mörkt läge dynamiskt
+
+pane-theme-title = Utseende & känsla
+
+category-theme =
+    .tooltiptext = { pane-theme-title }
+
+animation-header = Animationer
+
+appearance-header = Utseende
+
+autohide-hidden-header = Automatiskt dölj & dold
+
+bookmark-header = Bokmärkesfält
+
+center-header = Mitten
+
+font-header = Teckensnitt
+
+full-screen-header = Helskärm
+
+icons-header = Ikoner
+
+interface-component-header = Gränssnittskomponenter
+
+media-player-header = Mediaspelare
+
+nav-bar-header = Navigeringsfält
+
+panels-header = Paneler
+
+rounding-header = Rundning
+
+sidebar-header = Sidofält
+
+tab-bar-header = Flikfält
+
+theme-header = Tema
+
+preset-title = Förinställningar
+
+lepton-style =
+    .label = Lepton stil
+
+proton-style =
+    .label = Proton stil
+
+waterfox-defaults =
+    .label = Waterfox standardinställningar
+
+auto-blur-tabs =
+    .label = Automatiskt oskärpa flikar
+
+auto-hide-back =
+    .label = Automatiskt dölj bakåt knappen
+
+auto-hide-bookmarkbar =
+    .label = Automatiskt dölj bokmärkesfältet
+
+auto-hide-forward =
+    .label = Automatiskt dölj framåt knappen
+
+auto-hide-navbar =
+    .label = Automatiskt dölj navigeringsfältet
+
+auto-hide-pageaction =
+    .label = Automatiskt dölj sidoåtgärd
+
+auto-hide-sidebar =
+    .label = Automatiskt dölj sidofältet
+
+auto-hide-tabbar =
+    .label = Automatiskt dölj flikfältet
+
+auto-hide-tabs =
+    .label = Automatiskt dölj flikar
+
+center-navbar-text =
+    .label = Centrera navigationsfältets text
+
+center-tab-content =
+    .label = Centrera flik innehåll
+
+center-tab-label =
+    .label = Centrera flik etikett endast
+
+close-button-hover =
+    .label = Visa stängningsknappen för flik när du håller muspekaren över den markerade fliken när många flikar är öppna
+
+compact-bookmark-menu =
+    .label = Minska utfyllnaden i bokmärkesmenyn
+
+compact-context-menu =
+    .label = Minska utfyllnaden i kontextmenyn
+
+compact-navbar-popup =
+    .label = Minska utfyllnaden i navigeringsfältets popup-fönster
+
+compact-panel-header =
+    .label = Minska utfyllnaden i panelrubriken
+
+disable-panel-animate =
+    .label = Inaktivera appens menypanel animering
+
+disable-sidebar-animate =
+    .label = Inaktivera sidofältets panel animering
+
+drag-space =
+    .label = Aktivera fast draavstånd
+
+enable-cyan-accent-color =
+    .label = Cyan accentfärg
+
+enable-default-accent-color =
+    .label = Standard accentfärg
+
+enable-menu-transparency =
+    .label = Aktivera menytransparens
+
+enable-panel-transparency =
+    .label = Aktivera paneltransparens
+
+enable-system-accent-color =
+    .label = Systemets accentfärg
+
+enable-waterfox-theme-0 =
+    .label = Aktivera Waterfox-temanpassningar på alla teman
+
+enable-waterfox-theme-1 =
+    .label = Aktivera Waterfox-temanpassningar på Waterfox-teman
+
+enable-waterfox-theme-2 =
+    .label = Inaktivera anpassningar av Waterfox-teman
+
+full-panel-strip =
+    .label = Full bredd appmenyavgränsare
+
+remove-panel-strip =
+    .label = Ta bort färgad appmenyavgränsare
+
+hide-all-icons =
+    .label = Dölj alla ikoner
+
+hide-bookmarkbar-icon =
+    .label = Dölj bokmärkesfältets ikoner
+
+hide-bookmarkbar-label =
+    .label = Dölj bokmärkesfältets etiketter
+
+hide-disabled-menuitems =
+    .label = Dölj inaktiverade menyalternativ
+
+hide-sidebar-header =
+    .label = Dölj sidofältets rubrik
+
+hide-tab-icons =
+    .label = Dölj flikikoner
+
+hide-urlbar-iconbox =
+    .label = Dölj URL-fältets ikonruta
+
+monospace-font =
+    .label = Aktivera monospaced-teckensnitt för sida
+
+monospace-font-theme =
+    .label = Aktivera monospaced-teckensnitt för tema
+
+show-mac-menu-icons =
+    .label = Visa Mac menyikoner
+
+show-menu-icons =
+    .label = Visa menyikoner
+
+square-button-edges =
+    .label = Fyrkantiga knapphörn
+
+square-checkbox =
+    .label = Fyrkantig kryssruta
+
+square-field =
+    .label = Fyrkantiga ingångsfälthörn
+
+square-menu-item =
+    .label = Fyrkantig kontextmeny hörn
+
+square-menu-panel =
+    .label = Fyrkantiga appmenyn panelhörn
+
+square-menu-popup =
+    .label = Fyrkantiga kontextmenyn panelhörn
+
+square-panel-item =
+    .label = yrkantiga appmenyn objekthörn
+
+square-tab-edges =
+    .label = Fyrkantiga flik hörn
+
+tab-context-line =
+    .label = Flikens kontextrad
