@@ -621,6 +621,39 @@ waterfox-blocker-extension-install-manage-settings = You can manage ad blocking 
 waterfox-blocker-extension-install-anyway = Install anyway
 waterfox-blocker-extension-install-keep-built-in = Keep using built-in blocker
 
+pane-waterfox-blocker-title = Ad Blocking
+    .title = { pane-waterfox-blocker-title }
+waterfox-blocker-pane-header =
+    .heading = Ad Blocking
+
+waterfox-blocker-group =
+    .label = Ad blocking
+    .description = Blocks ads, tracking scripts, and other unwanted requests for faster page loads and fewer distractions.
+waterfox-blocker-enabled-toggle =
+    .label = Block ads and trackers
+    .description = Blocks ads and trackers with minimal impact on page loading.
+# Variables:
+#   $extensionName (String) - Name of the third-party extension that also blocks ads.
+waterfox-blocker-extension-notice =
+    .message = { $extensionName } is also blocking ads. Running two ad blockers can cause issues.
+waterfox-blocker-partner-select =
+    .label = Search partner ads
+    .description = Waterfox is free, open source, and independent. Allowing ads on search partner pages is how Waterfox funds development and infrastructure. You can turn this off at any time, but keeping it on is the easiest way to support the project.
+
+waterfox-blocker-lists-group =
+    .label = Filter lists
+waterfox-blocker-manage-lists-button =
+    .label = Manage filter lists
+waterfox-blocker-custom-lists-button =
+    .label = Custom filter lists
+waterfox-blocker-my-filters-button =
+    .label = My filters
+
+waterfox-blocker-exceptions-group =
+    .label = Exceptions
+waterfox-blocker-exceptions-button =
+    .label = Manage exceptions
+
 waterfox-blocked-page-title = Waterfox blocked this page
 waterfox-blocked-page-heading = Waterfox blocked this page
 waterfox-blocked-page-description = This page was blocked by an ad blocking filter rule.
