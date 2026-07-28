@@ -471,6 +471,15 @@ telemetry-privacy-policy = Privacy Policy
 onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
 
+## Upgrade dialog
+
+waterfox-upgrade-dialog-title = Welcome to { -brand-short-name } 153
+waterfox-upgrade-dialog-subtitle = This update brings a newer browser engine, tree tabs, built-in ad blocking, and the { -brand-short-name } controls you expect.
+waterfox-upgrade-dialog-primary-button = Start browsing
+waterfox-upgrade-dialog-continue-button = Continue
+waterfox-upgrade-dialog-appearance-title = Choose your look
+waterfox-upgrade-dialog-appearance-subtitle = Keep the Photon look you have now, or switch to the new Nova style. You can change this later in Settings.
+
 tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
 
 waterfox-tabs-group =
