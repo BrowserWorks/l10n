@@ -58,6 +58,11 @@ update-application-manual =
     .label = Never check for updates (not recommended)
     .accesskey = N
 
+## Settings panes
+
+# Badge shown on Settings groups and controls that are exclusive to Waterfox.
+waterfox-settings-exclusive-badge = Waterfox Exclusive
+
 bookmarks-bar-position-header = Bookmarks Toolbar Position
 bookmarks-position-bottom =
     .label = Bottom
