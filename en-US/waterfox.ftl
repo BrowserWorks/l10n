@@ -103,6 +103,22 @@ waterfox-home-prefs-content-description = Choose what content you want on your H
 waterfox-home-disabled-notice =
     .message = To use these features, set new tabs or new windows to Home.
 
+waterfox-addressbar-header-suggestions =
+    .label = Suggestions
+    .description = Address bar suggestions from { -brand-short-name }.
+waterfox-urlbar-group-suggestions =
+    .label = Suggestions
+waterfox-urlbar-result-menu-manage-suggestions =
+    .label = Manage Suggestions
+    .accesskey = M
+
+waterfox-search-address-bar-behavior-heading =
+    .label = Address bar behavior
+waterfox-search-click-selects-all-toggle =
+    .label = Select all text when clicking the address bar or search bar
+waterfox-search-double-click-selects-all-toggle =
+    .label = Select all text when double-clicking the address bar or search bar
+
 geolocation-api-header = Geolocation API
 geolocation-description = Some websites require your location to function. If a website isn’t functioning as a result of not being able to find your location, please enable this preference and try again.
 geolocation-api-enabled =
