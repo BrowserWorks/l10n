@@ -107,6 +107,11 @@ statusbar-enabled =
 statusbar-show-links =
     .label = Show links
 
+waterfox-status-bar-toolbar =
+    .toolbarname = Status Bar
+waterfox-status-bar-text =
+    .label = Status text
+
 tab-additional-header = Additional Tab Preferences
 insert-after-current =
     .label = Insert new tab after current tab
