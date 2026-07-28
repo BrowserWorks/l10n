@@ -45,6 +45,8 @@ private-tab =
             [true] Exit Private Tab
             *[false] Make Private Tab
         }
+waterfox-tabs-private-new-tab-button-toggle =
+    .label = Show a private tab button next to the new tab button
 
 ## Status Bar
 
