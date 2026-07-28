@@ -535,119 +535,76 @@ waterfox-copy-url-notification = URL copied
 
 ## Tree Vertical Tabs
 
-pane-tree-title = Tree Vertical Tabs
-category-tree =
-    .tooltiptext = { pane-tree-title }
-
-browser-layout-tree-vertical-tabs =
-    .label = Tree vertical tabs
 sidebar-tree-vertical-tabs =
     .label = Tree vertical tabs
-tree-header = Tree Vertical Tabs
 
-tree-appearance-header = Appearance
-tree-auto-sticky-header = Tabs sticked to edges of the tab bar when they are scrolled out
-tree-faviconize-pinned-tabs =
-    .label = Show pinned tabs only with their icon
-    .accesskey = S
-tree-sticky-active-tab =
-    .label = Active Tab
-    .accesskey = k
-tree-sticky-sharing-tab =
-    .label = Tabs Sharing Camera/Microphone/Screen
-    .accesskey = g
-tree-sticky-sound-playing-tab =
-    .label = Sound Playing Tabs
-    .accesskey = y
+## Tab context menu commands for tree vertical tabs
 
-tree-behavior-header = Tree view of tabs
-tree-auto-collapse-expand-subtree-on-attach =
-    .label = When a new tree appears, collapse others automatically
-    .accesskey = c
-tree-auto-collapse-expand-subtree-on-select =
-    .label = When a tab gets focus, expand its tree and collapse others automatically
-    .accesskey = x
-tree-drop-links-on-tab-behavior-caption =
-    .value = When a link or URL string is dropped on a tab
-    .accesskey = l
-tree-drop-links-on-tab-behavior-ask =
-    .label = Always ask me how to treat it
-tree-drop-links-on-tab-behavior-load =
-    .label = Load to the tab
-tree-drop-links-on-tab-behavior-newtab =
-    .label = Open new child tab
+waterfox-tab-context-collapse-tree =
+    .label = Collapse Tree
+waterfox-tab-context-expand-tree =
+    .label = Expand Tree
+waterfox-tab-context-close-tree =
+    .label = Close Tree
+waterfox-tab-context-close-descendants =
+    .label = Close Children
+waterfox-tab-context-collapse-all-trees =
+    .label = Collapse All Trees
+waterfox-tab-context-expand-all-trees =
+    .label = Expand All Trees
 
-tree-successor-tab-control-level-caption =
-    .value = When the current tab is closed as a last child
-    .accesskey = h
-tree-successor-tab-control-level-in-tree =
-    .label = Move focus to the previous tab in the tree
-tree-successor-tab-control-level-never =
-    .label = Always move focus to the next tab (respect browser or other extension control)
-tree-successor-tab-control-level-simulate-default =
-    .label = Always move focus to the next tab
+## Tree tabs settings
 
-tree-tree-double-click-behavior-caption =
-    .value = Double-click on a tab
-    .accesskey = D
-tree-tree-double-click-behavior-toggle-close =
-    .label = Close tab
-tree-tree-double-click-behavior-toggle-collapsed =
-    .label = Collapse/expand tree
-tree-tree-double-click-behavior-toggle-none =
-    .label = Do nothing
-tree-tree-double-click-behavior-toggle-sticky =
-    .label = Stick to tab bar edges / Unstick from tab bar edges
+waterfox-tabs-tree-heading =
+    .label = Tree tabs
 
-tree-auto-attach-header = Auto-organizing of tabs tree
-tree-auto-attach-child-end =
-    .label = Last Child of the parent tab
-tree-auto-attach-child-next-to-last-related-tab =
-    .label = Child of the parent tab, next to the recently opened child
-tree-auto-attach-child-top =
-    .label = First Child of the parent tab
-tree-auto-attach-independent =
-    .label = Independent tab
-tree-auto-attach-next-sibling =
-    .label = Next Sibling of the parent tab
-tree-auto-attach-no-control =
-    .label = (no control)
-tree-auto-attach-sibling =
-    .label = Sibling of the parent tab
+waterfox-tabs-tree-enable-toggle =
+    .label = Show tabs as a tree
+    .description = Tabs you open from another tab tuck in underneath it, so you can fold and move whole groups at once. This also turns on vertical tabs.
 
-tree-auto-attach-on-any-other-trigger-caption =
-    .value = Tabs from any other trigger: Open as
-    .accesskey = t
-tree-auto-attach-on-duplicated-caption =
-    .value = Duplicate the tab as
-    .accesskey = u
-tree-auto-attach-on-new-tab-button-middle-click-caption =
-    .value = For middle click, open new blank tab as
-    .accesskey = m
-tree-auto-attach-on-new-tab-command-caption =
-    .value = Open new blank tab as
-    .accesskey = n
-tree-auto-attach-on-opened-from-external-caption =
-    .value = New tab from Other Applications: Open as
-    .accesskey = A
-tree-auto-attach-on-opened-with-owner-caption =
-    .value = When a tab is opened from existing tab, open it as
-    .accesskey = D
-tree-auto-attach-same-site-orphan-caption =
-    .value = New tab with the same website as the current tab from the location bar, bookmarks, histories, or other cases: Open as
-    .accesskey = w
+waterfox-tabs-tree-auto-attach-select =
+    .label = Open new tabs
+waterfox-tabs-tree-auto-attach-option-root =
+    .label = On their own
+waterfox-tabs-tree-auto-attach-option-child =
+    .label = Tucked under the tab that opened them
+waterfox-tabs-tree-auto-attach-option-sibling =
+    .label = Next to the tab that opened them
 
-tree-insert-new-tab-from-pinned-tab-at-caption =
-    .value = Insertion position of new child tabs from pinned tabs (will appear as root tabs)
-    .accesskey = p
-tree-insert-new-tab-from-pinned-tab-at-end =
-    .label = The end of the tree
-tree-insert-new-tab-from-pinned-tab-at-next-to-last-related-tab =
-    .label = Next to the recently opened child, or near the opener
-tree-insert-new-tab-from-pinned-tab-at-no-control =
-    .label = No control (respect the decision by the browser or other tab extensions)
-tree-insert-new-tab-from-pinned-tab-at-top =
-    .label = The top of the tree (near the opener)
+waterfox-tabs-tree-auto-collapse-on-select-toggle =
+    .label = Open the active tab’s branch and fold the others away
+waterfox-tabs-tree-auto-collapse-on-attach-toggle =
+    .label = Open a branch when a new tab joins it
+
+waterfox-tabs-tree-close-parent-select =
+    .label = When you close a parent tab
+waterfox-tabs-tree-close-parent-option-promote-first =
+    .label = Put its first child in its place
+waterfox-tabs-tree-close-parent-option-promote-all =
+    .label = Lift its children up a level
+waterfox-tabs-tree-close-parent-option-close-all =
+    .label = Close the whole branch
+waterfox-tabs-tree-close-parent-option-detach =
+    .label = Move its children to the top level
+
+waterfox-tabs-tree-double-click-select =
+    .label = Double clicking a tab
+waterfox-tabs-tree-double-click-option-toggle =
+    .label = Folds or opens its branch
+waterfox-tabs-tree-double-click-option-close =
+    .label = Closes its branch
+waterfox-tabs-tree-double-click-option-none =
+    .label = Does nothing
+
+waterfox-tabs-tree-sticky-active-toggle =
+    .label = Keep the current tab in view when its branch is folded away
+waterfox-tabs-tree-propagate-muted-toggle =
+    .label = Mute a tab’s children along with it
+
+waterfox-tabs-tree-max-depth-select =
+    .label = Limit how deep tabs can nest
+waterfox-tabs-tree-max-depth-option-unlimited =
+    .label = No limit
 
 ## Ad blocking
 
