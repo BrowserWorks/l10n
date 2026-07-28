@@ -146,11 +146,11 @@ tab-bar-top-below =
 
 # Privacy
 identity-allow-site-data = Always store cookies/data for this site
-
-# Privacy
-waterfox-data-collection-header = { -brand-short-name } Data Collection and Use
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Data Collection and Use
+    .description = { -brand-short-name } does not collect telemetry or usage data. Optional services, such as Sync, may be governed by their own privacy notices.
     .searchkeywords = privacy telemetry data collection privacy notice
-waterfox-data-collection-description = { -brand-short-name } does not collect telemetry or usage data. Optional services, such as Sync, may be governed by their own privacy notices. The <a data-l10n-name="privacy-notice">Privacy Notice</a> is provided here for easy reference.
+waterfox-data-collection-link = View Privacy Notice
 
 enable-javascript =
     .label = Enable JavaScript

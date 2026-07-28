@@ -444,6 +444,9 @@ waterfox-blocker-panel-settings-button = 广告拦截设置
 waterfox-blocker-show-badge-pref =
     .label = 在工具栏按钮上显示已拦截数量
 waterfox-blocker-setting-on-summary = 拦截广告和跟踪器，对页面加载影响最小。
+waterfox-data-collection-header = { -brand-short-name } 数据收集与使用
+    .searchkeywords = 隐私 遥测 数据收集 隐私声明
+waterfox-data-collection-description = { -brand-short-name } 不会收集遥测或使用数据。可选服务（如同步）可能受其各自的隐私声明约束。此处提供了 <a data-l10n-name="privacy-notice">隐私声明</a> 以便查阅。
 waterfox-blocker-blocks-ads = 广告和广告网络请求
 waterfox-blocker-blocks-tracking = 跟踪脚本和像素
 waterfox-blocker-blocks-annoyances = 干扰弹窗和覆盖层（启用干扰元素列表后）
