@@ -1,0 +1,236 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### Localization for Developer Tools options
+
+
+## Default Developer Tools section
+
+# The heading
+options-select-default-tools-label = 標準の開発ツール
+# The label for the explanation of the * marker on a tool which is currently not supported
+# for the target of the toolbox.
+options-tool-not-supported-label = * 現在のツールボックスには対応していません
+# The label for the heading of group of checkboxes corresponding to the developer tools
+# added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
+options-select-additional-tools-label = 開発ツールのアドオン
+# The label for the heading of group of checkboxes corresponding to the default developer
+# tool buttons.
+options-select-enabled-toolbox-buttons-label = 利用可能なツールボックスボタン
+# The label for the heading of the radiobox corresponding to the theme
+options-select-dev-tools-theme-label = テーマ
+
+## Inspector section
+
+# The heading
+options-context-inspector = 調査
+# The label for the checkbox option to show user agent styles
+options-show-user-agent-styles-label = ブラウザー CSS を表示
+options-show-user-agent-styles-tooltip =
+    .title = このオプションを有効にすると、ブラウザーが読み込んだデフォルトスタイルを表示します。
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = ブラウザーの Shadow DOM を表示
+options-show-user-agent-shadow-dom-tooltip =
+    .title = このオプションを有効にすると、ブラウザーが保持している Shadow DOM 要素が表示されます。
+# The label for the checkbox option to enable collapse attributes
+options-collapse-attrs-label = DOM 属性値を省略
+options-collapse-attrs-tooltip =
+    .title = 値の長い属性を省略します。
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = コメントを表示する
+options-show-comments-tooltip =
+    .title = インスペクターでコメントノードを表示します。
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = ドラッグでサイズの値を編集
+options-inspector-draggable-properties-tooltip =
+    .title = インスペクターのルール表示で、サイズの値をクリックしてドラッグすると値を編集できます。
+# The label for the checkbox option to enable simplified highlighting on page elements
+# within the inspector for users who enabled prefers-reduced-motion = reduce
+options-inspector-simplified-highlighters-label = prefers-reduced-motion で簡易強調にする
+options-inspector-simplified-highlighters-tooltip =
+    .title = prefers-reduced-motion が有効な場合、簡易強調を有効にしてアニメーションを抑制します。フラッシュ効果を避けるため、強調された要素の周りに塗りつぶされた四角形ではなく直線を描画します。
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = <kbd>Enter</kbd> キーで次の input にフォーカスする
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = この設定が有効な場合、セレクターやプロパティ名、値の編集時に Enter キーを入力すると、次の input 要素へフォーカスを移動します。
+
+## "Default Color Unit" options for the Inspector
+
+options-default-color-unit-label = デフォルトカラー単位
+options-default-color-unit-authored = 記述通りの単位
+options-default-color-unit-hex = 16 進数
+options-default-color-unit-hsl = HSL(A)
+options-default-color-unit-rgb = RGB(A)
+options-default-color-unit-hwb = HWB
+options-default-color-unit-name = カラーの名前
+
+## Web Console section
+
+# The heading
+options-webconsole-label = ウェブコンソール
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = 分割コンソールを有効化
+options-webconsole-split-console-tooltip =
+    .title = ESC キーで分割コンソールを開きます
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = ネットワークモニター
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = 要求ボディと応答ボディの最大サイズ (0 に設定で制限なし):
+options-netmonitor-body-limit-tooltip =
+    .title = 要求ボディや応答ボディが指定のサイズに達すると、ネットワークモニター内に表示またはダウンロードされた内容が省略されます。値を 0 に設定することで制限なしになります。
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = 制限なし
+options-netmonitor-body-limit-button =
+    .title = 要求/応答ボディの最大サイズを編集します。
+options-netmonitor-body-limit-restore-default =
+    .title = 要求/応答ボディの最大サイズをデフォルトにリセットします。
+options-netmonitor-body-limit-set =
+    .title = 現在の入力値を要求/応答ボディの最大サイズに設定します。
+
+## Experimental section
+
+# The heading
+options-experimental-label = 実験的な機能
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = デバッガーにスタイルシートを表示する
+options-stylesheets-in-the-debugger-tooltip =
+    .title = デバッガー内にスタイルシートをリスト表示します
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (ツールボックスを開き直す必要があります)
+
+## Style Editor section
+
+# The heading
+options-styleeditor-label = スタイルエディター
+# The label for the checkbox that toggles autocompletion of css in the Style Editor
+options-stylesheet-autocompletion-label = CSS 自動補完
+options-stylesheet-autocompletion-tooltip =
+    .title = スタイルエディターで、CSS プロパティ、値、セレクターの入力時に自動補完します
+
+## Screenshot section
+
+# The heading
+options-screenshot-label = スクリーンショットの動作
+# Label for the checkbox that toggles screenshot to clipboard feature
+options-screenshot-clipboard-only-label = スクリーンショットをクリップボードだけにコピー
+options-screenshot-clipboard-tooltip2 =
+    .title = スクリーンショットをクリップボードに直接保存します
+# Label for the checkbox that toggles the camera shutter audio for screenshot tool
+options-screenshot-audio-label = カメラのシャッター音を再生
+options-screenshot-audio-tooltip =
+    .title = スクリーンショット撮影時のカメラ音声を有効にします
+
+## Editor section
+
+# The heading
+options-sourceeditor-label = エディター設定
+options-sourceeditor-detectindentation-tooltip =
+    .title = ソースの内容からインデントを推測します
+options-sourceeditor-detectindentation-label = インデントを検知
+options-sourceeditor-autoclosebrackets-tooltip =
+    .title = 閉じ括弧を自動的に入力します
+options-sourceeditor-autoclosebrackets-label = 閉じ括弧自動入力
+options-sourceeditor-expandtab-tooltip =
+    .title = タブ文字の代わりにスペース文字を使います
+options-sourceeditor-expandtab-label = インデントにスペース文字を使う
+options-sourceeditor-tabsize-label = タブ幅
+options-sourceeditor-keybinding-label = キー割り当て
+options-sourceeditor-keybinding-default-label = デフォルト
+
+## Local Mode section
+
+# The heading
+options-local-mode-label = ローカルモード
+options-local-mode-only-work-locally = ローカルモードはローカルでのみ動作します。リモートコンテキストをデバッグする際は無効になります。
+options-local-mode-behavior = ローカルモードでは外部に依存せずに https URL 経由でローカルファイルを読み込めます。URL は開発ツールを開いているタブからしか読み込めません。
+options-local-mode-domain-label = カスタムドメイン:
+options-local-mode-origin-input =
+    .placeholder = ローカルマッピングのオリジン
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = このオリジンは既存の別のマッピングと衝突します
+options-local-mode-origin-invalid = このオリジンは無効です
+options-local-mode-folder-label = ローカルフォルダー:
+options-local-mode-choose-folder = 選択...
+    .title = このマッピングを配信するローカルフォルダーを選択してください
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = 次の URL のローカルモードフォルダーを選択: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = このフォルダーは存在しないか無効です。
+options-local-mode-toggle =
+    .title = このローカルマッピングを切り替える
+options-local-mode-toggle-enable = 有効化
+options-local-mode-toggle-disable = 無効化
+options-local-mode-navigate-to =
+    .title = このマッピング URL へ移動する
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = “{ $mappingOrigin }” マッピングを削除してもよろしいですか？
+options-local-mode-new-mapping = 新規ローカルマッピングを追加
+
+## Advanced section
+
+# The heading (this item is also used in perftools.ftl)
+options-context-advanced-settings = 詳細設定
+# The label for the checkbox that toggles the HTTP cache on or off
+options-disable-http-cache-label = HTTP キャッシュを無効化 (ツールボックスを開いているとき)
+options-disable-http-cache-tooltip =
+    .title = このオプションを有効にすると、ツールボックスを開いているときはすべてのタブの HTTP キャッシュを無効にします。ただし、Service Worker はこのオプションに影響されません
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = JavaScript を無効化
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label = JavaScript を無効化 *
+options-disable-javascript-tooltip =
+    .title = このオプションを有効にすると、現在のタブの JavaScript を無効にします。タブまたはツールボックスを閉じると、この設定は取り消されます
+# The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
+options-enable-chrome-label = ブラウザーとアドオンのデバッガーを有効化
+options-enable-chrome-tooltip =
+    .title = さまざまな開発ツールがブラウザーコンテキスト (ツール > ウェブ開発 > ブラウザーツールボックス) とアドオンマネージャーからのアドオンデバッグで使えるようになります
+# The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
+options-enable-remote-label = リモートデバッガーを有効化
+options-enable-remote-tooltip2 =
+    .title = このオプションを有効にすると、このブラウザーインスタンスをリモートでデバッグできるようになります
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = F12 キーで DevTools を開閉する
+options-enable-f12-tooltip =
+    .title = このオプションを有効にすると、F12 キーに DevTools ツールボックスの開閉を割り当てます
+# The label for checkbox that toggles custom formatters for objects
+options-enable-custom-formatters-label = カスタムフォーマッターを有効化
+options-enable-custom-formatters-tooltip =
+    .title = このオプションを有効にすると、DOM オブジェクトに対するカスタムフォーマッターの定義をサイトに許可します。
+# The label for checkbox that toggles the service workers testing over HTTP on or off.
+options-enable-service-workers-http-label = HTTP による Service Worker を有効化 (ツールボックスを開いたとき)
+options-enable-service-workers-http-tooltip =
+    .title = このオプションを有効にすると、ツールボックスを開いているすべてのタブで HTTP による Service Worker を有効にします
+# The label for the checkbox that toggles source maps in all tools.
+options-source-maps-label = ソースマップを有効化
+options-source-maps-tooltip =
+    .title = このオプションを有効にすると、ソースがツールにマッピングされます
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (現在のセッションのみ有効、ページを再読み込みします)
+# The message shown for settings that trigger page reload and will only apply to the current session
+options-context-triggers-page-refresh = * 現在のセッションのみ有効、ページを再読み込みします
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (このページを再読み込み)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = 自動
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = 非推奨です。詳細情報...

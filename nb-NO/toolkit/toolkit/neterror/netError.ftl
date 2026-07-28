@@ -1,0 +1,221 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Error page titles
+
+neterror-page-title = Problem ved lasting av side
+certerror-page-title = Advarsel: Potensiell sikkerhetsrisiko forut
+certerror-sts-page-title = Koblet ikke til: Potensielt sikkerhetsproblem
+neterror-blocked-by-policy-page-title = Blokkert side
+neterror-captive-portal-page-title = Logg inn på nettverket
+neterror-dns-not-found-title = Serveren ikke funnet
+neterror-malformed-uri-page-title = Ugyldig nettadresse
+general-body-title = Vær forsiktig. Noe ser ikke riktig ut.
+problem-with-this-site-title = Det ser ut til at det er et problem med dette nettstedet
+
+## Error page actions
+
+neterror-advanced-button = Avansert…
+neterror-copy-to-clipboard-button = Kopier tekst til utklippstavlen
+neterror-learn-more-link = Les mer …
+neterror-open-portal-login-page-button = Åpne innloggingsside for nettverk
+neterror-override-exception-button = Godta risikoen og fortsett
+neterror-pref-reset-button = Gjenopprett standardinnstillinger
+neterror-return-to-previous-page-button = Gå tilbake
+neterror-return-to-previous-page-recommended-button = Gå tilbake (Anbefalt)
+neterror-try-again-button-2 = Prøv igjen
+    .accesskey = r
+neterror-try-again-button = Prøv igjen
+neterror-add-exception-button = Fortsett alltid for denne siden
+neterror-settings-button = Endre DNS-innstillinger.
+neterror-view-certificate-link = Vis sertifikat
+neterror-trr-continue-this-time = Fortsett denne gangen
+neterror-disable-native-feedback-warning = Fortsett alltid
+
+##
+
+neterror-pref-reset = Det ser ut til at nettverkets sikkerhetsinnstillinger kan være årsak til dette. Vil du tilbakestille til standardinnstillinger?
+neterror-error-reporting-automatic = Rapporter feil som dette for å hjelpe { -vendor-short-name } med å identifisere og blokkere skadelige nettsteder.
+
+## Specific error messages
+
+neterror-generic-error = { -brand-short-name } klarte ikke å laste denne siden av ukjent årsak.
+neterror-load-error-try-again = Nettstedet kan være midlertidig utilgjengelig eller opptatt. Prøv igjen om en liten stund.
+neterror-load-error-connection = Dersom du ikke klarer å laste noen sider, kontroller at datamaskinens nettverkstilkobling er i orden.
+neterror-load-error-firewall = Dersom datamaskinen er beskyttet av en brannmur eller proxy, kontroller at { -brand-short-name } har tillatelse til å bruke nettet (www).
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = Hvis du prøver å laste inn en lokal nettverksside, må du kontrollere at { -brand-short-name } har fått tillatelser for lokale nettverk i innstillingene for macOS personvern og sikkerhet.
+neterror-http-error-page = Kontroller at du har skrevet inn nettadressen riktig.
+neterror-http-empty-response = Sjekk at du har skrevet inn riktig nettstedsadresse, og prøv igjen om noen øyeblikk.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } sendte tilbake en tom side.
+neterror-captive-portal = Du må logge inn på nettverket før du får tilgang til Internett.
+# Variables:
+# $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
+neterror-dns-not-found-with-suggestion = Mente du å gå til <a data-l10n-name="website">{ $hostAndPath }</a>?
+neterror-dns-not-found-hint-header = <strong>Hvis du skrev inn riktig adresse, kan du:</strong>
+neterror-dns-not-found-hint-try-again = Prøv igjen senere
+neterror-dns-not-found-hint-check-network = Sjekk nettverkstilkoblingen
+neterror-dns-not-found-hint-firewall = Sjekk at { -brand-short-name } har tillatelse til å få tilgang til nettet (du kan være tilkoblet, men bak en brannmur)
+neterror-dns-not-found-hint-check-network-2 = Sjekk nettverkstilkoblingen.
+neterror-dns-not-found-hint-firewall-2 = Sjekk at { -brand-short-name } har tillatelse til å få tilgang til nettet (du kan være tilkoblet, men bak en brannmur).
+neterror-dns-not-found-offline-hint-header = <strong>Hva kan du gjøre med det?</strong>
+neterror-dns-not-found-offline-hint-different-device = Prøv å koble til på en annen enhet.
+neterror-dns-not-found-offline-hint-modem = Sjekk modemet eller ruteren din.
+neterror-dns-not-found-offline-hint-reconnect = Koble fra og koble til Wi-Fi på nytt.
+
+## TRR-only specific messages
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
+
+neterror-dns-not-found-trr-only-reason = { -brand-short-name } kan ikke beskytte forespørselen din om dette nettstedets adresse gjennom vår pålitelige DNS-resolver. Årsak:
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } kan ikke beskytte forespørselen din om dette nettstedets adresse gjennom vår sikre DNS-leverandør. Årsak:
+neterror-dns-not-found-trr-third-party-warning2 = Du kan fortsette med din standard DNS-resolver. En tredjepart kan imidlertid være i stand til å se hvilke nettsteder du besøker.
+neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } kunne ikke koble til { $trrDomain }.
+neterror-dns-not-found-trr-only-timeout = Tilkoblingen til { $trrDomain } tok lengre tid enn forventet.
+neterror-dns-not-found-trr-offline = Du er ikke koblet til internett.
+neterror-dns-not-found-trr-unknown-host2 = Dette nettstedet ble ikke funnet av { $trrDomain }.
+neterror-dns-not-found-trr-server-problem = Det oppstod et problem med { $trrDomain }.
+neterror-dns-not-found-bad-trr-url = Ugyldig nettadresse.
+neterror-dns-not-found-system-sleep = Systemet er i hvilemodus.
+neterror-dns-not-found-trr-unknown-problem = Uventet feil oppstod.
+
+## Native fallback specific messages
+## Variables:
+##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
+
+neterror-dns-not-found-native-fallback-reason = { -brand-short-name } kan ikke beskytte forespørselen din om dette nettstedets adresse gjennom vår pålitelige DNS-resolver. Årsak:
+neterror-dns-not-found-native-fallback-heuristic = DNS-over-HTTPS er deaktivert på nettverket ditt.
+neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } kunne ikke koble til { $trrDomain }.
+
+##
+
+neterror-file-not-found-filename = Kontroller filnavnet etter forskjeller i store/små bokstaver eller andre skrivefeil.
+neterror-file-not-found-moved = Sjekk om filen er flyttet, har endret navn eller er slettet.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } finner ikke filen på <strong>{ $path }</strong>. Den finnes enten ikke, eller så er filstien feil.
+neterror-file-not-found-what-can-you-do = Hvis du skrev inn adressen manuelt, kontroller om det er feil med store og små bokstaver eller skrivefeil i filnavnet eller filstien. Hvis du fulgte et lagret bokmerke eller en lenke, kan filen ha blitt flyttet, gitt nytt navn eller slettet siden den ble lagret. Prøv å finne den ved hjelp av filbehandleren eller et nylig søk.
+neterror-access-denied = Den kan være fjernet, flyttet eller filrettighetene forhindrer tilgang.
+neterror-unknown-protocol = Det er mulig du må installere annen programvare for å åpne denne adressen.
+neterror-redirect-loop = Dette problemet kan av og til skyldes at infokapsler er avslått eller ved å ikke godta infokapsler.
+neterror-unknown-socket-type-client-config = Dette kan skyldes en konfigurasjonsfeil med klienten din.
+neterror-unknown-socket-type-psm-installed = Kontroller at systemet ditt har Personal Security Manager installert.
+neterror-unknown-socket-type-server-config = Dette problemet kan skyldes en uvanlig konfigurasjon på serveren.
+neterror-not-cached-intro = Det forespurte dokumentet er ikke tilgjengelig i { -brand-short-name } sitt hurtiglager.
+neterror-not-cached-sensitive = Av sikkerhetshensyn tillater ikke { -brand-short-name } å automatisk hente sensitive dokumenter på nytt.
+neterror-not-cached-try-again = Trykk Prøv igjen for å hente dokumentet på nytt fra nettstedet.
+neterror-net-offline = Trykk «Prøv igjen» for å bytte til tilkoblet modus og laste siden på nytt.
+neterror-proxy-resolve-failure-settings = Kontroller at proxyinnstillingene er riktige.
+neterror-proxy-resolve-failure-connection = Kontroller at datamaskinen har en virkende nettverksforbindelse.
+neterror-proxy-resolve-failure-firewall = Dersom datamaskinen din eller nettverket er beskyttet av en brannmur eller proxy, kontroller at { -brand-short-name } har tillatelse til å få tilgang til Internett.
+neterror-proxy-connect-failure-settings = Kontroller at proxy-innstillingene er riktige.
+neterror-proxy-connect-failure-contact-admin = Kontakt nettverksansvarlig og forsikre deg om at proxyen virker.
+neterror-content-encoding-error = Kontakt eieren av nettstedet og informer om problemet.
+neterror-unsafe-content-type = Kontakt nettsideeierne og informer dem om dette problemet.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth = { -brand-short-name } stoler ikke på { $hostname } fordi tilkoblingen ikke er sikker. Prøv å endre URL-en til HTTPS.
+neterror-nss-failure-not-verified = Siden du forsøker åpne kan ikke vises fordi det ikke kunne bekreftes at overført data er autentisk.
+neterror-nss-failure-contact-website = Kontakt nettstedseieren og informer om problemet.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-intro = { -brand-short-name } oppdaget en potensiell sikkerhetstrussel og fortsatte ikke til <b>{ $hostname }</b>. Hvis du besøker dette nettstedet, kan angriperne prøve å stjele informasjon som passord, e-post eller betalingskortdetaljer.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-sts-intro = { -brand-short-name } oppdaget en potensiell sikkerhetstrussel og fortsatte ikke til <b>{ $hostname }</b> fordi dette nettstedet krever en sikker tilkobling.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-expired-cert-intro = { -brand-short-name } oppdaget et problem og fortsatte ikke til <b>{ $hostname }</b>. Nettstedet er enten feilkonfigurert eller datamaskinens klokke er innstilt til feil tid.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm = <b>{ $hostname }</b> er sannsynligvis et sikkert nettsted, men en sikker tilkobling kunne ikke etableres. Problemet forårsakes av <b>{ $mitm }</b> som enten er et program på din datamaskin eller ditt nettverk.
+neterror-corrupted-content-intro = Siden du forsøker å vise kan ikke åpnes fordi en feil i dataoverføringen ble oppdaget.
+neterror-corrupted-content-contact-website = Kontakt nettstedseierne og informer dem om dette problemet.
+# Do not translate "SSL_ERROR_UNSUPPORTED_VERSION".
+neterror-sslv3-used = Avansert info: SSL_ERROR_UNSUPPORTED_VERSION
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-inadequate-security-intro = <b>{ $hostname }</b> bruker sikkerhetsteknologi som er utdatert og sårbar for angrep. En angriper kan enkelt fremskaffe informasjon som du trodde var sikker. Nettstedsadministratoren må endre serveren først, før du kan besøke nettstedet.
+# Do not translate "NS_ERROR_NET_INADEQUATE_SECURITY".
+neterror-inadequate-security-code = Feilkode: NS_ERROR_NET_INADEQUATE_SECURITY
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $now (Date) - The current datetime, to be formatted as a date
+neterror-clock-skew-error = Datamaskinen din tror det er { DATETIME($now, dateStyle: "medium") }, som hindrer { -brand-short-name } fra å koble til sikkert. For å besøke <b>{ $hostname }</b>, oppdater datamaskinens klokke i systeminnstillingene til gjeldende dato, klokkeslett og tidssone, og oppdater deretter <b>{ $hostname }</b>.
+neterror-network-protocol-error-intro = Siden du forsøker å vise kan ikke åpnes fordi en feil i nettverksprotokollen ble oppdaget.
+neterror-network-protocol-error-contact-website = Kontakt nettstedseierne og informer dem om dette problemet.
+certerror-expired-cert-second-para = Det er sannsynligvis at nettstedets sertifikat er utløpt, noe som forhindrer { -brand-short-name } fra å koble til sikkert. Hvis du besøker dette nettstedet, kan angriperne prøve å stjele informasjon som passord, e-post eller betalingskortdetaljer.
+certerror-expired-cert-sts-second-para = Nettstedets sertifikat er sannsynligvis utløpt, noe som forhindrer { -brand-short-name } fra å opprette en sikker forbindelse.
+certerror-what-can-you-do-about-it-title = Hva kan du gjøre med det?
+certerror-unknown-issuer-what-can-you-do-about-it-website = Problemet er mest sannsynlig med nettstedet, og det er ingenting du kan gjøre for å løse det.
+certerror-unknown-issuer-what-can-you-do-about-it-contact-admin = Hvis du er på et bedriftsnettverk eller bruker antivirusprogramvare, kan du kontakte brukerstøtten for hjelp. Du kan også varsle nettstedets administrator om problemet.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $now (Date) - The current datetime, to be formatted as a date
+certerror-expired-cert-what-can-you-do-about-it-clock = Klokken på datamaskinen er satt til { DATETIME($now, dateStyle: "medium") }. Kontroller at datamaskinen er satt til riktig dato, klokkeslett og tidssone i systeminnstillingene, og last deretter <b>{ $hostname }</b> på nytt.
+certerror-expired-cert-what-can-you-do-about-it-contact-website = Hvis klokken din allerede er satt til riktig tidspunkt, er nettstedet sannsynligvis feilkonfigurert, og det er ingenting du kan gjøre for å løse problemet. Du kan varsle nettstedets administrator om problemet.
+certerror-bad-cert-domain-what-can-you-do-about-it = Problemet er mest sannsynlig med nettstedet, og det er ingenting du kan gjøre for å løse det. Du kan varsle nettstedets administrator om problemet.
+certerror-mitm-what-can-you-do-about-it-antivirus = Hvis antivirusprogrammet ditt inneholder en funksjon som skanner krypterte tilkoblinger (ofte kalt «webscanning» eller «https-skanning»), kan du deaktivere denne funksjonen. Hvis det ikke virker, kan du fjerne og installere antivirusprogrammet på nytt.
+certerror-mitm-what-can-you-do-about-it-corporate = Om du er i et bedriftsnettverk, kan du kontakte din IT-avdeling.
+# Variables:
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm-what-can-you-do-about-it-attack = Hvis du ikke kjenner til <b>{ $mitm }</b>, kan dette være et angrep, og du bør ikke fortsette til nettstedet.
+# Variables:
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm-what-can-you-do-about-it-attack-sts = Hvis du ikke kjenner til <b>{ $mitm }</b>, kan dette være et angrep, og det er ingenting du kan gjøre for å få tilgang til nettstedet.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> har en sikkerhetspolicy kalt HTTP Strict Transport Security (HSTS), som betyr at { -brand-short-name } bare kan koble til den sikkert. Du kan ikke legge til et unntak for å besøke dette nettstedet.
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = Trolig ikke mye, det er sannsynlig at det er et problem med selve nettstedet.
+certerror-blocked-by-corp-headers-description = Noen ganger setter nettsteder opp beskyttelse for seg selv og folk som deg mot uønsket interaksjon med andre nettsteder.
+certerror-coop-learn-more = Les mer om Cross Origin Opener Policies (COOP)
+certerror-coep-learn-more = Les mer om Cross Origin Embedder Policies (COEP)
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = Feilkode: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Det ser ut til at det er et problem med internett-tilkoblingen din
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name } kan ikke opprette en sikker forbindelse til serveren på { $hostname }.
+fp-neterror-offline-intro = { -brand-short-name } kan ikke koble til serveren på <strong>{ $hostname }</strong>
+fp-neterror-offline-intro-2 = { -brand-short-name } kan ikke koble til serveren på <strong>{ $hostname }</strong>.
+fp-neterror-net-timeout-intro = Serveren på <strong>{ $hostname }</strong> bruker for lang tid på å svare.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = Serveren på <strong>{ $hostname }</strong> returnerte en feil: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> sendte en header med tomme tegn som ikke er tillatt av nettsikkerhetsstandarder.
+fp-neterror-content-encoding-intro = Nettsiden du forsøker å åpne kan ikke vises fordi den bruker ugyldig eller ustøttet komprimering.
+fp-neterror-coop-coep-intro = { -brand-short-name } lastet ikke inn denne siden fordi det ser ut til at sikkerhetskonfigurasjonen ikke samsvarer med den forrige siden.
+fp-neterror-blocked-by-policy-intro = Organisasjonen din har blokkert tilgang til denne nettsiden eller nettstedet.
+fp-neterror-http-auth-disabled-intro = Noen som utgir seg for å være nettstedet kan prøve å stjele ting som brukernavn, passord eller e-postadresse.
+fp-neterror-http-auth-disabled-secure-connection = Dette nettstedet krever en sikker tilkobling, og du kan ikke legge til et unntak for å besøke det.
+fp-neterror-why-did-this-happen = Hvorfor skjedde dette?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Det ser ut som dette nettstedet bruker gammel programvare med kjente sikkerhetsproblemer.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } stoler ikke på { $hostname } fordi tilkoblingen ikke er sikker.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Sørg for at du bruker den nyeste versjonen av { -brand-short-name }. Gå til Hjelp > Om { -brand-short-name } i menyen. Hvis du bruker den nyeste versjonen av { -brand-short-name }, ligger problemet mest sannsynlig hos selve nettstedet.
+fp-neterror-offline-what-can-you-do-body = Prøv å koble til på en annen enhet. Sjekk modemet eller ruteren. Koble fra og koble til Wi-Fi igjen.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Prøv å endre URL-en til HTTPS. Men det er sannsynlig at det er et problem med selve nettstedet.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Noen ganger setter nettsteder opp beskyttelser for seg selv mot uønskede interaksjoner med andre nettsteder.
+fp-learn-more-about-https-connections = Les om HTTPS-tilkoblinger
+fp-neterror-vpn-error-title = Kunne ikke koble til VPN
+fp-neterror-vpn-error-description = Prøv igjen om noen minutter.
+fp-neterror-denied-port-access = Denne adressen bruker en nettverksport som vanligvis brukes til andre formål enn webben. { -brand-short-name } har avbrutt forespørselen for å beskytte personvernet ditt.

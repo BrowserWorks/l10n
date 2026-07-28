@@ -1,0 +1,68 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# The title of the about:translations page.
+about-translations-title = Përkthime { -brand-short-name }
+# The brief description of the Translations functionality on the page.
+about-translations-description = Përkthime të menjëhershme që respektojnë privatësinë tuaj.
+about-translations-learn-more-link = Mësoni më tepër
+# An info message displayed if the device's hardware is not compatible with the Translations feature requirements.
+about-translations-unsupported-info-message-2 =
+    .heading = Përkthimi s’është i mundshëm në këtë pajisje
+    .message = Provoni të kaloni në një pajisje tjetër.
+# An info message displayed when translations are disabled and locked by enterprise policy.
+about-translations-policy-disabled-info-message =
+    .heading = Përkthimet s’janë të përdorshme për entin tuaj
+    .message = Ky është një rregull i vendosur nga përgjegjësi juaj.
+# An info message displayed when translations are disabled but can still be unblocked.
+about-translations-feature-blocked-info-message =
+    .heading = Që të përkthehet tekst, shkyçeni këtë veçori
+    .message = Duket sikur keni përditësuar kontrollet IA për ta bllokuar këtë veçori. Që të filloni ta përdorni, zhbllokojeni.
+about-translations-feature-blocked-unblock-button = Zhbllokoje
+# An error message displayed when the language list fails to load.
+about-translations-language-load-error-message-2 =
+    .heading = S’u ngarkuan dot gjuhë
+    .message = Kontrolloni lidhjen tuaj internet dhe riprovoni.
+about-translations-language-load-error-button = Riprovoni
+# An error message displayed when a translation request fails.
+about-translations-translation-error-heading = Pati një problem me përkthimin
+about-translations-translation-error-subtext = Ju lutemi, riprovoni.
+about-translations-translation-error-button = Riprovoni
+about-translations-detected-language-unsupported-subtext = Ju lutemi, përzgjidhni një gjuhë tjetër.
+# Placeholder text shown in the source-language text area when the user has not typed any text.
+about-translations-input-placeholder =
+    .placeholder = Shtoni tekst të përkthehet
+# Text displayed on the source-language selector when no explicit option is selected
+# and no language has been identified from the content of the source-language text area.
+about-translations-detect-default-label =
+    .label = Pikas gjuhën
+# Text displayed on the source-language selector when no explicit option is selected
+# and a valid language has been identified from the content of the source-language text area.
+# Variables:
+#   $language (string) - The localized display name of the detected language
+about-translations-detect-language-label =
+    .label = { $language } (e pikasur)
+# Placeholder text shown in the target-language output area when no translation has occurred.
+about-translations-output-placeholder =
+    .placeholder = Përkthim
+# Button label for copying the translated output to the clipboard.
+about-translations-copy-button-default =
+    .label = Kopjoje
+    .title = Kopjoni përkthimin
+# Button label shown after the translated output has been copied to the clipboard.
+about-translations-copy-button-copied =
+    .label = U kopjua
+    .title = Kopjoni përkthimin
+# Text displayed on target-language selector when no language option is selected.
+about-translations-select-label =
+    .label = Përzgjidhni gjuhë
+# A message displayed in the target-language output area while waiting for the translation to complete.
+about-translations-translating-message = Po përkthehet…
+# The title attribute for the swap languages button, which swaps the selected
+# source and target languages, reversing the direction of translation.
+about-translations-swap-languages =
+    .title = Shkëmbeni gjuhët
+# The title attribute for the button that clears the source text area.
+about-translations-clear-button =
+    .title = Spastro tekst burim

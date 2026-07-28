@@ -1,0 +1,73 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+appmenu-update-available2 =
+    .label = Հասանելի է թարմացում
+    .buttonlabel = Ներբեռնել
+    .buttonaccesskey = Ն
+    .secondarybuttonlabel = Բաց թողնել
+    .secondarybuttonaccesskey = թ
+appmenu-update-available-message2 = Ներբեռնել { -brand-shorter-name }-ի վերջին թարմացումը
+appmenu-update-manual2 =
+    .label = Հասանելի է թարմացում
+    .buttonlabel = Ներբեռնել
+    .buttonaccesskey = Ն
+    .secondarybuttonlabel = Բաց թողնել
+    .secondarybuttonaccesskey = թ
+appmenu-update-manual-message2 = { -brand-shorter-name }-ը չկարողացավ թարմացվել ինքնաբերաբար: Ներբեռնեք նոր տարբերակը. դուք չեք կորցնի պահված տեղեկատվությունը կամ հարմարեցումները:
+appmenu-update-unsupported2 =
+    .label = Հնարավոր չէ թարմացնել
+    .buttonlabel = Իմանալ ավելին
+    .buttonaccesskey = Ի
+    .secondarybuttonlabel = Բաց թողնել
+    .secondarybuttonaccesskey = թ
+appmenu-update-unsupported-message2 = Ձեր օպերացիոն համակարգը համատեղելի չէ { -brand-shorter-name }-ի վերջին տարբերակի հետ:
+appmenu-update-restart2 =
+    .label = Թարմացում է մատչելի
+    .buttonlabel = Թարմացնել և վերամեկնարկել
+    .buttonaccesskey = U
+    .secondarybuttonlabel = Բաց թողնել
+    .secondarybuttonaccesskey = U
+appmenu-update-restart-message2 = Ստացեք { -brand-shorter-name }-ի վերջին տարբերակը: Բացված ներդիրները և պատուհանները կվերականգնվեն:
+appmenu-theme-installed =
+    .secondarybuttonlabel = Հետարկել
+    .secondarybuttonaccesskey = U
+appmenu-update-other-instance =
+    .label = { -brand-shorter-name }-ը հնարավոր չէ արդիացնել նոր տարբերակի:
+    .buttonlabel = Այդոհանդերձ, թարմացնել { -brand-shorter-name }-ը
+    .buttonaccesskey = U
+    .secondarybuttonlabel = Ոչ հիմա
+    .secondarybuttonaccesskey = N
+appmenu-update-other-instance-message = Հասանելի է { -brand-shorter-name }-ի նոր տարբերակը, բայց այն չի կարող տեղա.դրվել, քանի որ աշխատեցված է { -brand-shorter-name }-ի մեկ այլ օրինակ: Փակեք այն՝ թարմացումը շարունակելու համար կամ ընտրեք այդուհանդերձ թարմացնել (այլ օրինակը կարող է նորմալ չաշխատի, քանի դեռ դուքչվերամեկնարկեք այն):
+appmenu-addon-private-browsing-installed2 =
+    .buttonlabel = Լավ
+    .buttonaccesskey = O
+appmenu-addon-post-install-message3 = Կառավարեք Ձեր հավելումները և ոճերը հավելվածի ցանկով:
+# This string is used in the confirmation popup displayed after an extension
+# has been installed, when the data collection feature is enabled.
+appmenu-addon-post-install-message-with-data-collection = Թարմացրեք թույլտվությունները և տվյալների նախապատվությունները ցանկացած պահի <a data-l10n-name="settings-link">ընդլայնման կարգավորումներում</a>:
+appmenu-addon-post-install-pin-toolbarbutton-checkbox =
+    .label = Ամրացնել ընդլայնումը գործիքագոտում
+    .accesskey = P
+appmenu-addon-post-install-incognito-checkbox =
+    .label = Թույլատրել այս ընդլայնմանը աշխատեցնել Գաղտնի պատուհանը
+    .accesskey = A
+appmenu-new-tab-controlled-changes =
+    .label = Ձեր նոր ներդիրը փոխվել է:
+    .buttonlabel = Պահել փոփոխությունները
+    .buttonaccesskey = Պ
+    .secondarybuttonlabel = Կառավարել նոր ներդիրները
+    .secondarybuttonaccesskey = Կ
+appmenu-homepage-controlled-changes =
+    .label = Ձեր տնային էջը փոխվել է:
+    .buttonlabel = Պահել փոփոխությունը
+    .buttonaccesskey = K
+    .secondarybuttonlabel = Կառավարել տնային էջը
+    .secondarybuttonaccesskey = M
+appmenu-tab-hide-controlled =
+    .label = Մուտք գործել ձեր թաքնված ներդիրներում
+    .buttonlabel = Թաքնված պահել ներդիրները
+    .buttonaccesskey = K
+    .secondarybuttonlabel = Անջատել ընդլայնումը
+    .secondarybuttonaccesskey = D

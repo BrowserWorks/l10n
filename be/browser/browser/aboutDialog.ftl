@@ -1,0 +1,97 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+aboutDialog-title =
+    .title = Пра { -brand-full-name }
+releaseNotes-link = Што новага
+update-checkForUpdatesButton =
+    .label = Праверыць наяўнасць абнаўленняў
+    .accesskey = П
+update-updateButton =
+    .label = Перазапуск для абнаўлення { -brand-shorter-name }
+    .accesskey = П
+update-checkingForUpdates = Праверка існавання абнаўленняў…
+settings-update-checking-for-updates =
+    .label = Праверка існавання абнаўленняў…
+
+## Variables:
+##   $transfer (string) - Transfer progress.
+
+settings-update-downloading = <img data-l10n-name="icon"/>Сцягваецца абнаўленне — <label data-l10n-name="download-status">{ $transfer }</label>
+aboutdialog-update-downloading = Сцягваецца абнаўленне — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading-2 =
+    .label = Сцягваецца абнаўленне — { $transfer }
+
+##
+
+update-applying = Прымяняецца абнаўленне…
+settings-update-applying =
+    .label = Прымяняецца абнаўленне…
+update-failed = Няўдача абнаўлення. <label data-l10n-name="failed-link">Сцягнуць апошнюю версію</label>
+update-failed-main = Няўдача абнаўлення. <a data-l10n-name="failed-link-main">Сцягнуць апошнюю версію</a>
+update-adminDisabled = Абнаўленні забаронены вашым сістэмным адміністратарам
+update-policy-disabled = Абнаўленні адключаны вашай арганізацыяй
+settings-update-policy-disabled =
+    .label = Абнаўленні адключаны вашай арганізацыяй
+update-noUpdatesFound = { -brand-short-name } абноўлены
+settings-update-no-updates-found =
+    .label = { -brand-short-name } абноўлены
+aboutdialog-update-checking-failed = Не ўдалося праверыць наяўнасць абнаўленняў.
+settings-update-checking-failed =
+    .label = Не ўдалося праверыць наяўнасць абнаўленняў.
+update-otherInstanceHandlingUpdates = { -brand-short-name } абнаўляецца іншым асобнікам
+settings-update-other-instance-handling-updates =
+    .label = { -brand-short-name } абнаўляецца іншым асобнікам
+
+## Variables:
+##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
+
+aboutdialog-update-manual-with-link = Абнаўленні даступныя на <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-manual-with-link = Абнаўленні даступныя на <a data-l10n-name="manual-link">{ $displayUrl }</a>
+update-unsupported = Вы не можаце працягнуць абнаўленне на гэтай сістэме. <label data-l10n-name="unsupported-link">Падрабязней</label>
+settings-update-unsupported = Вы не можаце працягнуць абнаўленне на гэтай сістэме. <a data-l10n-name="unsupported-link">Падрабязней</a>
+update-restarting = Перазапуск…
+settings-update-restarting =
+    .label = Перазапуск…
+update-internal-error2 = Немагчыма праверыць наяўнасць абнаўленняў з-за ўнутранай памылкі. Абнаўленні даступныя па адрасе <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-internal-error = Немагчыма праверыць наяўнасць абнаўленняў з-за ўнутранай памылкі. Абнаўленні даступныя па адрасе <a data-l10n-name="manual-link">{ $displayUrl }</a>
+
+##
+
+# Variables:
+#   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
+aboutdialog-channel-description = Зараз вы на <label data-l10n-name="current-channel">{ $channel }</label> канале абнаўленняў.
+warningDesc-version = { -brand-short-name } — эксперыментальны, і можа быць няўстойлівым.
+aboutdialog-help-user = Даведка { -brand-product-name }
+aboutdialog-submit-feedback = Падаць водгук
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> — <label data-l10n-name="community-exp-creditsLink">сусветнае згуртаванне</label>, якое працуе разам, каб захаваць Сеціва адкрытым, публічным і даступным кожнаму.
+community-2 = { -brand-short-name } распрацаваны <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, <label data-l10n-name="community-creditsLink">сусветным згуртаваннем</label>, якое працуе разам, каб захаваць Сеціва адкрытым, публічным і даступным кожнаму.
+helpus = Хочаце дапамагчы? <label data-l10n-name="helpus-donateLink">Зрабіце ахвяраванне</label> або <label data-l10n-name="helpus-getInvolvedLink">далучайцеся да нас!</label>
+bottomLinks-license = Звесткі пра ліцэнзію
+bottom-links-terms = Умовы выкарыстання
+bottom-links-privacy = Паведамленне аб прыватнасці
+bottomLinks-rights = Правы канчатковага карыстальніка
+bottomLinks-privacy = Палітыка прыватнасці
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits }-біт)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-біт)
+# Example of resulting string: 131.0a1 (aarch64)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch = { $version } ({ $arch })
+# Example of resulting string: 131.0a1 (2024-08-27) (aarch64)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch-nightly = { $version } ({ $isodate }) ({ $arch })

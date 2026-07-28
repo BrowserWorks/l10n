@@ -1,0 +1,236 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### Localization for Developer Tools options
+
+
+## Default Developer Tools section
+
+# The heading
+options-select-default-tools-label = Үнсіз келісім бойынша әзірлеуші құралдары
+# The label for the explanation of the * marker on a tool which is currently not supported
+# for the target of the toolbox.
+options-tool-not-supported-label = * Ағымдағы құралдар панелінің мақсаты үшін қолдауы жоқ
+# The label for the heading of group of checkboxes corresponding to the developer tools
+# added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
+options-select-additional-tools-label = Қосымшалармен орнатылған әзірлеуші құралдары
+# The label for the heading of group of checkboxes corresponding to the default developer
+# tool buttons.
+options-select-enabled-toolbox-buttons-label = Қолжетімді құралдар панелі батырмалары
+# The label for the heading of the radiobox corresponding to the theme
+options-select-dev-tools-theme-label = Темалар
+
+## Inspector section
+
+# The heading
+options-context-inspector = Бақылаушы
+# The label for the checkbox option to show user agent styles
+options-show-user-agent-styles-label = Браузер стильдерін көрсету
+options-show-user-agent-styles-tooltip =
+    .title = Бұны іске қосу нәтижесінде браузер жүктеген үнсіз келісім стильдері көрсетілетін болады.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Браузердің көлеңкелі DOM-ын көрсету
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Бұл мүмкіндікті қосу браузер басқаратын көлеңкелі DOM элементтерін көрсетеді.
+# The label for the checkbox option to enable collapse attributes
+options-collapse-attrs-label = DOM атрибуттарын қысқарту
+options-collapse-attrs-tooltip =
+    .title = Бақылаушыда ұзын атрибуттарды қысқарту
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Түсіндірмелерді көрсету
+options-show-comments-tooltip =
+    .title = Инспекторда түсіндірме түйіндерін көрсету
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = Өлшем мәндерін түзету үшін басыңыз және сүйреңіз
+options-inspector-draggable-properties-tooltip =
+    .title = Бақылаушы ережелері көрінісінде өлшем мәндерін өзгерту үшін, шертіп, тартыңыз.
+# The label for the checkbox option to enable simplified highlighting on page elements
+# within the inspector for users who enabled prefers-reduced-motion = reduce
+options-inspector-simplified-highlighters-label = prefers-reduced-motion опциясымен қарапайымдау маркерлерді қолдану
+options-inspector-simplified-highlighters-tooltip =
+    .title = prefers-reduced-motion опциясы іске қосулы кезінде қарапайымдау маркерлерді іске қосады. Жыпылықтау әсерлерін болдырмау үшін түспен ерекшеленген элементтердің айналасында толтырылған тіктөртбұрыштардың орнына сызықтар салады.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = <kbd>Enter</kbd> арқылы келесі енгізу өрісіне фокусты орнату
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Іске қосылған кезде селекторды, қасиет атауын немесе мәнді түзету кезінде Enter пернесін басу фокусты келесі енгізуге жылжытады.
+
+## "Default Color Unit" options for the Inspector
+
+options-default-color-unit-label = Негізгі түс бірлігі
+options-default-color-unit-authored = As Authored
+options-default-color-unit-hex = Он алтылық
+options-default-color-unit-hsl = HSL(A)
+options-default-color-unit-rgb = RGB(A)
+options-default-color-unit-hwb = HWB
+options-default-color-unit-name = Түстер аттары
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Веб консолі
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Бөлінген консольді іске қосу
+options-webconsole-split-console-tooltip =
+    .title = Бөлінген консольді Esc пернесімен ашу
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Желі бақылаушысы
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Сұрау мен жауаптың негізгі мәтінінің максималды өлшемі (шектеусіз болуы үшін 0 орнатыңыз):
+options-netmonitor-body-limit-tooltip =
+    .title = Көрсетілген өлшемнен асатын сұрау немесе жауаптың негізгі мәтіндері Желі бақылаушысында көрсетілгенде немесе жүктеп алынғанда қысқартылады. Шектеуді алып тастау үшін 0 мәнін орнатыңыз.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Шектеусіз
+options-netmonitor-body-limit-button =
+    .title = Сұрау/жауаптың негізгі мәтінінің максималды өлшемін түзету.
+options-netmonitor-body-limit-restore-default =
+    .title = Сұрау/жауаптың негізгі мәтінінің максималды өлшемі үшін бастапқы мәнді қалпына келтіру.
+options-netmonitor-body-limit-set =
+    .title = Ағымдағы кіріс мәнін сұрау/жауаптың негізгі мәтінінің максималды өлшемі ретінде орнату.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Эксперименталды мүмкіндіктер
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Жөндеушіде стиль кестелерін көрсету
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Жөндеушіде стиль кестелерін тізіп шығару және қарау
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (құралдар панелін қайта ашуды қажет етеді)
+
+## Style Editor section
+
+# The heading
+options-styleeditor-label = Стильдер түзеткіші
+# The label for the checkbox that toggles autocompletion of css in the Style Editor
+options-stylesheet-autocompletion-label = CSS автотолтыруы
+options-stylesheet-autocompletion-tooltip =
+    .title = Стильдер түзеткіште CSS қасиеттерді, мәндерді және таңдаушыларды енгізген кезде, оларды автотолтыру
+
+## Screenshot section
+
+# The heading
+options-screenshot-label = Скриншот мінез-құлығы
+# Label for the checkbox that toggles screenshot to clipboard feature
+options-screenshot-clipboard-only-label = Тек алмасу буферіне скриншотты жасау
+options-screenshot-clipboard-tooltip2 =
+    .title = Скриншотты тікелей алмасу буферіне сақтайды
+# Label for the checkbox that toggles the camera shutter audio for screenshot tool
+options-screenshot-audio-label = Камера түсіргішінің дыбысын ойнату
+options-screenshot-audio-tooltip =
+    .title = Скриншотты түсіру кезінде камера түсіру дыбысын іске қосады
+
+## Editor section
+
+# The heading
+options-sourceeditor-label = Түзетуші баптаулары
+options-sourceeditor-detectindentation-tooltip =
+    .title = Бастапқы код құрамасына негізделіп, шегінуді анықтау
+options-sourceeditor-detectindentation-label = Шегінуді анықтау
+options-sourceeditor-autoclosebrackets-tooltip =
+    .title = Жабатын жақшаларды автокірістіру
+options-sourceeditor-autoclosebrackets-label = Жақшаларды автожабу
+options-sourceeditor-expandtab-tooltip =
+    .title = Табуляция орнына бос аралық таңбасын қолдану
+options-sourceeditor-expandtab-label = Шегіністі бос аралықтармен жасау
+options-sourceeditor-tabsize-label = Табуляция өлшемі
+options-sourceeditor-keybinding-label = Пернетақта байланыстары
+options-sourceeditor-keybinding-default-label = Бастапқы
+
+## Local Mode section
+
+# The heading
+options-local-mode-label = Жергілікті режим
+options-local-mode-only-work-locally = Жергілікті режим тек жергілікті түрде жұмыс істейді және қашықтағы контексттерді жөндеу кезінде сөндіріледі
+options-local-mode-behavior = Жергілікті режим ешбір сыртқы тәуелділіксіз https URL арқылы жергілікті файлдарды жүктеуге мүмкіндік береді. URL адрестерін тек әзірлеуші құралдары ашылған беттерден жүктеуге болады.
+options-local-mode-domain-label = Пайдаланушылық домен:
+options-local-mode-origin-input =
+    .placeholder = Жергілікті сәйкестендірудің бастау нүктесі
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Бұл бастау нүктесі басқа бар сәйкестендірумен қайшылық тудырады
+options-local-mode-origin-invalid = Бұл бастау нүктесі жарамсыз
+options-local-mode-folder-label = Жергілікті бума:
+options-local-mode-choose-folder = Шолу…
+    .title = Осы сәйкестендіруге қызмет көрсету үшін жергілікті буманы таңдаңыз
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = { $url } үшін жергілікті режим бумасын таңдаңыз
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Бұл бума жоқ немесе жарамсыз.
+options-local-mode-toggle =
+    .title = Осы жергілікті сәйкестендіруді іске қосу/сөндіру
+options-local-mode-toggle-enable = Іске қосу
+options-local-mode-toggle-disable = Сөндіру
+options-local-mode-navigate-to =
+    .title = Осы сәйкестендіру URL адресіне өту
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = «{ $mappingOrigin }» сәйкестендіруін өшіру керек пе?
+options-local-mode-new-mapping = Жаңа жергілікті сәйкестендіруді қосу
+
+## Advanced section
+
+# The heading (this item is also used in perftools.ftl)
+options-context-advanced-settings = Кеңейтілген баптаулар
+# The label for the checkbox that toggles the HTTP cache on or off
+options-disable-http-cache-label = HTTP кэшін сөндіру (құралдар панелі ашық кезде)
+options-disable-http-cache-tooltip =
+    .title = Бұл опцияны іске қосу HTTP кэшін барлық құралдар панелі ашық беттері үшін сөндіреді. Бұл опция Service Workers үшін іске аспайды.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = JavaScript сөндіру
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label = JavaScript сөндіру *
+options-disable-javascript-tooltip =
+    .title = Бұл баптауды іске қосу нәтижесінде ағымдағы бетте JavaScript сөндіріледі. Егер бет немесе құралдар панелі жабылса, бұл баптау ұмытылады.
+# The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
+options-enable-chrome-label = Браузердің chrome және қосымшаларды жөндеу құралдар панельдерін іске қосу
+options-enable-chrome-tooltip =
+    .title = Бұл баптауды іске қосу (Құралдар > Веб-әзірлеуші > Браузердің құралдар панелі) нәтижесінде сіз браузер контекстінде түрлі әзірлеуші құралдарын қолдана алатын боласыз, және қосымшаларды Қосымшалар Басқарушысынан жөндей алатын боласыз.
+# The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
+options-enable-remote-label = Қашықтан жөндеуді іске қосу
+options-enable-remote-tooltip2 =
+    .title = Бұл параметрді іске қосу осы браузер экземплярын қашықтан жөндеуге мүмкіндік береді
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = DevTools ашу немесе жабу үшін F12 пернесін пайдаланыңыз
+options-enable-f12-tooltip =
+    .title = Бұл опцияны іске қосу DevTools құралдар жинағын ашу немесе жабу үшін F12 пернесін байланыстырады
+# The label for checkbox that toggles custom formatters for objects
+options-enable-custom-formatters-label = Арнаулы пішімдеушілерді іске қосу
+options-enable-custom-formatters-tooltip =
+    .title = Бұл опцияны іске қосу сайттарға DOM объектілері үшін өзіндік пішімдеушілерді анықтауға мүмкіндік береді
+# The label for checkbox that toggles the service workers testing over HTTP on or off.
+options-enable-service-workers-http-label = HTTP арқылы жасайтын қызметтік жұмыс үрдістерін іске қосу (құралдар панелі ашық болған кезде)
+options-enable-service-workers-http-tooltip =
+    .title = Бұл баптауды іске қосу нәтижесінде құралдар панелі ашық тұрған барлық беттер үшін HTTP service workers іске қосылады.
+# The label for the checkbox that toggles source maps in all tools.
+options-source-maps-label = Бастапқы код карталарын іске қосу
+options-source-maps-tooltip =
+    .title = Бұл опцияны іске қоссаңыз, бастапқы код құралдарда сәйкестелген болады.
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (тек ағымдағы сессия, бетті қайта жүктейді)
+# The message shown for settings that trigger page reload and will only apply to the current session
+options-context-triggers-page-refresh = * Ағымдағы сессия ғана, парақты қайта жүктейді
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (бетті қайта жүктейді)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Автоматты түрде
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Ескірген. Көбірек білу…

@@ -1,0 +1,90 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Added shortcuts:
+
+customkeys-title = ره نهنگا تخته کیلیت
+customkeys-search = پیتینیڌن:
+customkeys-change = آلشت
+customkeys-reset = وورنشۊوی
+customkeys-clear = پاک کردن
+customkeys-new-key = کیلیت نۊ ن فشار بڌین:
+customkeys-reset-all = وورگندن پوی ره نهنگا و هالت پؽش فرز
+customkeys-file-duplicate-tab = لف گیری بلگه
+customkeys-history-reopen-tab = گۊشیڌن دووارته بلگه بسته وابیڌه دیندایی
+customkeys-history-reopen-window = گۊشیڌن دووارته نیمدری بسته وابیڌه دیندایی
+customkeys-view-picture-in-picture = شؽوات من شؽوات
+customkeys-view-add-split-view = ٱووردن نما تقسیم وابیڌه
+customkeys-dev-tools = ٱوزارا برنومه نویس وب
+customkeys-dev-inspector = بازرسِ DOM وو سبک
+customkeys-dev-webconsole = Web Console
+customkeys-dev-debugger = موشکل زودا جاوا اسکریپت
+customkeys-dev-network = نزارت ری شبکه
+customkeys-dev-style = آلشتگر سبک
+customkeys-dev-performance = کارایی
+customkeys-dev-storage = بازرسِ جاگه زفت کردن
+customkeys-dev-dom = DOM
+customkeys-dev-accessibility = دسرسی پزیری
+customkeys-category-navigation = ناوبری
+customkeys-nav-back = وورگشتن
+customkeys-nav-forward = جلاو رئڌن
+customkeys-nav-home = هووه
+customkeys-nav-reload = گۊشیڌن دووارته
+customkeys-nav-stop = واڌاشتن
+customkeys-nav-select-tab-1 = و بلگه 1 بریوین
+customkeys-nav-select-tab-2 = و بلگه 2 بریوین
+customkeys-nav-select-tab-3 = و بلگه 3 بریوین
+customkeys-nav-select-tab-4 = و بلگه 4 بریوین
+customkeys-nav-select-tab-5 = و بلگه 5 بریوین
+customkeys-nav-select-tab-6 = و بلگه 6 بریوین
+customkeys-nav-select-tab-7 = و بلگه 7 بریوین
+customkeys-nav-select-tab-8 = و بلگه 8 بریوین
+customkeys-nav-select-last-tab = رئڌن و بلگه دیندایی
+customkeys-nav-toggle-mute = بؽ دونگ/وا دونگ کردن آرنگ
+customkeys-edit-find-previous = جوستن پؽشی
+customkeys-tools-screenshot = شؽوات ز بلگه بگیرین
+customkeys-category-navigation-2 =
+    .heading = ناوبری
+# Displayed in the new key field when the key that was pressed isn't valid.
+customkeys-key-invalid = ناموعتبر
+customkeys-shortcut-unassigned =
+    .placeholder = ٱووردن ره نهنگ
+# Variables:
+# $keyLabel (string) - The name of the shortcut, e.g. “New Tab”.
+customkeys-shortcut-input = ره نهنگ سی: { $keyLabel }
+customkeys-key-edit =
+    .aria-label = آلشت
+    .tooltiptext = آلشت
+customkeys-key-clear =
+    .aria-label = پاک کردن
+    .tooltiptext = پاک کردن
+customkeys-key-reset =
+    .aria-label = وورگندن
+    .tooltiptext = وورگندن
+
+## Shortcut actions
+
+customkeys-key-new =
+    .label = کیلیت نۊ ن فشار بڌین:
+
+## Confirmation dialogs
+
+customkeys-conflict-confirm-button-cancel = لقو
+customkeys-reset-all-confirm-title = وورگندن پؽش فرزا؟
+customkeys-reset-all-confirm-button-confirm = وورگندن پؽش فرزا
+customkeys-reset-all-confirm-button-cancel = لقو
+
+## Sidebar
+
+customkeys-sidebar =
+    .aria-label = نوار کلی
+customkeys-title-heading =
+    .heading = ره نهنگا تخته کیلیت
+# Search is a verb, as in "search through shortcuts".
+customkeys-search-input =
+    .aria-label = پیتینیڌن ره نهنگا
+    .placeholder = پیتینیڌن ره نهنگا
+customkeys-support-link-text = قلوه دووسته بۊین
+customkeys-reset-all-button = وورگندن پؽش فرزا

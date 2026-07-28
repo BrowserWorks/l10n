@@ -1,0 +1,356 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## App Menu
+
+appmenuitem-banner-update-downloading =
+    .label =
+        { -brand-shorter-name.gender ->
+            [masculine] Преузимање ажурирања { -brand-shorter-name(case: "gen") }
+            [feminine] Преузимање ажурирања { -brand-shorter-name(case: "gen") }
+            [neuter] Преузимање ажурирања { -brand-shorter-name(case: "gen") }
+           *[other] Преузимање ажурирања програма { -brand-shorter-name }
+        }
+appmenuitem-banner-update-available =
+    .label = Доступно је ажурирање – преузмите га
+appmenuitem-banner-update-manual =
+    .label = Доступно је ажурирање – преузмите га
+appmenuitem-banner-update-unsupported =
+    .label = Ажурирање није могуће – некомпатибилан систем
+appmenuitem-banner-update-restart =
+    .label = Доступно је ажурирање – поново покрените прегледач
+appmenu-nova-fxa-sign-in = Пријавите се
+appmenu-nova-switch-device-promo =
+    .message = Ускоро набављате нови уређај? Понесите { -brand-short-name } са собом!
+appmenu-nova-switch-device-link = Како да преселите ваше податке
+appmenuitem-new-tab =
+    .label = Нови језичак
+appmenuitem-new-window =
+    .label = Нови прозор
+appmenuitem-new-private-window =
+    .label = Нови приватни прозор
+appmenuitem-history =
+    .label = Историја
+appmenuitem-tab-groups =
+    .label = Групе језичака
+appmenuitem-downloads =
+    .label = Преузимања
+appmenuitem-passwords =
+    .label = Лозинке
+appmenuitem-extensions-and-themes =
+    .label = Додаци и теме
+appmenuitem-extensions =
+    .label = Додаци
+appmenuitem-addons-and-themes =
+    .label = Додаци и теме
+appmenuitem-print =
+    .label = Штампај…
+appmenuitem-find-in-page =
+    .label = Пронађи на страници…
+appmenuitem-translate =
+    .label = Преведи страницу…
+appmenuitem-zoom =
+    .value = Увећај
+appmenuitem-more-tools =
+    .label = Више алатки
+appmenuitem-help =
+    .label = Помоћ
+appmenuitem-exit2 =
+    .label = Изађи
+appmenu-menu-button-closed2 =
+    .tooltiptext = Отвори мени програма
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = Затвори мени програма
+    .label = { -brand-short-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Подешавања
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Увећај
+appmenuitem-zoom-reduce =
+    .label = Смањите
+appmenuitem-fullscreen =
+    .label = Преко целог екрана
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+appmenu-remote-tabs-sign-into-sync =
+    .label = Пријавите се ради усклађивања…
+appmenu-remote-tabs-turn-on-sync =
+    .label = Укључи усклађивање
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = Прикажи још језичака
+    .tooltiptext = Прикажи више језичака са овог уређаја
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Неактивни језичци
+    .tooltiptext = Погледај неактивне језичке на овом уређају
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = Нема отворених језичака
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = Укључите усклађивање да бисте видели списак језичака са других уређаја.
+appmenu-remote-tabs-opensettings =
+    .label = Подешавања
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = Желите ли да овде видите језичке са других уређаја?
+appmenu-remote-tabs-connectdevice =
+    .label = Повежи други уређај
+appmenu-remote-tabs-welcome = Погледајте списак језичака са других уређаја.
+appmenu-remote-tabs-unverified = Потребно је да потврдите налог.
+appmenuitem-fxa-toolbar-sync-now2 = Усклади
+appmenuitem-fxa-sign-in = Пријавите се у { -brand-product-name }
+appmenuitem-fxa-manage-account = Управљај налогом
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Налог
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = Последње усклађивање { $time }
+    .label = Последње усклађивање { $time }
+appmenu-fxa-sync-and-save-data2 = Усклади и сачувај податке
+appmenu-fxa-signed-in-label = Пријава
+appmenu-fxa-setup-sync =
+    .label = Укључи усклађивање
+appmenu-fxa-setup-sync-new = Укључи
+appmenuitem-save-page =
+    .label = Сачувај страницу као…
+appmenuitem-fxa-sync-off-title = Усклађивање је искључено
+appmenuitem-fxa-sync-off-description = Заштитите и приступите вашим обележивачима, лозинкама и другим подацима било где.
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Шта је ново
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Обавести о новим функцијама
+    .accesskey = О
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-button-idle =
+    .label = Профајлер
+    .tooltiptext = Сними профил учинка
+profiler-popup-button-recording =
+    .label = Профајлер
+    .tooltiptext = Профајлер снима профил
+profiler-popup-button-capturing =
+    .label = Профајлер
+    .tooltiptext = Профајлер снима профил
+profiler-popup-header-text = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Откриј више информација
+profiler-popup-description-title =
+    .value = Снимите, анализирајте и делите
+profiler-popup-description = Сарађујте на решавању проблема са перформансама дељењем профила са својим тимом.
+profiler-popup-learn-more-button =
+    .label = Сазнајте више
+profiler-popup-settings =
+    .value = Подешавања
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Уреди подешавања…
+profiler-popup-recording-screen = Снимање…
+profiler-popup-start-recording-button =
+    .label = Почни снимање
+profiler-popup-discard-button =
+    .label = Одбаци
+profiler-popup-capture-button =
+    .label = Capture
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+profiler-button-dropmarker =
+    .label = Отворите панел профилера
+    .tooltiptext = Отворите панел профилера
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-description = Препоручена опција за отклањање грешака у већини веб апликација, са малим оптерећењем.
+profiler-popup-presets-web-developer-label =
+    .label = Програмер
+profiler-popup-presets-firefox-description = Препоручена опција за { -brand-shorter-name } профилисање.
+profiler-popup-presets-firefox-label =
+    .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = Препоручена подешавања за решавање { -brand-shorter-name } графичких грешака.
+profiler-popup-presets-graphics-label =
+    .label = Графика
+profiler-popup-presets-media-description2 = Препоручена подешавања за решавање { -brand-shorter-name } аудио и видео грешака.
+profiler-popup-presets-media-label =
+    .label = Медији
+profiler-popup-presets-ml-description = Унапред подешена вредност за истраживање грешака машинског учења у { -brand-shorter-name }-у.
+profiler-popup-presets-ml-label =
+    .label = Машинско учење
+profiler-popup-presets-networking-description = Препоручена подешавања за решавање { -brand-shorter-name } мрежних грешака.
+profiler-popup-presets-networking-label =
+    .label = Мрежа
+profiler-popup-presets-networking-with-logs-description = Подешеност за истраживање мрежних програмских грешака у { -brand-shorter-name }, укључујући мрежне дневнике. Ови дневници могу садржати поверљиве податке, као што су веб-адресе које посећујете.
+profiler-popup-presets-networking-with-logs-label =
+    .label = Умрежавање са дневницима
+profiler-popup-presets-power-description = Препоручена подешавања за решавање { -brand-shorter-name } грешака са напајањем, са малим трошковима.
+# "Power" is used in the sense of energy (electricity used by the computer).
+profiler-popup-presets-power-label =
+    .label = Напајање
+profiler-popup-presets-debug-description = Препоручене поставке за отклањање грешака у { -brand-shorter-name }-у. Високо оптерећење, за задатке високих перформанси, већ да за фокусирање на разумевање понашања прегледача.
+profiler-popup-presets-debug-label =
+    .label = Отклањање грешака
+profiler-popup-presets-web-compat-description = Препоручена подешеност за отклањање грешака у вези са веб компатибилношћу на веб страницама, уместо праћења перформанси.
+profiler-popup-presets-web-compat-label =
+    .label = Веб компатибилност
+profiler-popup-presets-custom-label =
+    .label = Прилагођено
+
+## History panel
+
+appmenu-manage-history =
+    .label = Управљај историјом
+appmenu-restore-session =
+    .label = Врати претходну сесију
+appmenu-clear-history =
+    .label = Обриши историју…
+appmenu-recent-history-subheader = Недавна историја
+appmenu-recently-closed-tabs =
+    .label = Недавно затворени језичци
+appmenu-recently-closed-windows =
+    .label = Недавно затворени прозори
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = Претражи историју
+
+## Help panel
+
+appmenu-help-header =
+    .title =
+        { -brand-shorter-name.gender ->
+            [masculine] Помоћ за { -brand-shorter-name(case: "acc") }
+            [feminine] Помоћ за { -brand-shorter-name(case: "acc") }
+            [neuter] Помоћ за { -brand-shorter-name(case: "acc") }
+           *[other] Помоћ за програм { -brand-shorter-name }
+        }
+appmenu-about =
+    .label =
+        { -brand-shorter-name.gender ->
+            [masculine] О { -brand-shorter-name(case: "loc") }
+            [feminine] О { -brand-shorter-name(case: "loc") }
+            [neuter] О { -brand-shorter-name(case: "loc") }
+           *[other] О програму { -brand-shorter-name }
+        }
+    .accesskey = О
+appmenu-get-help =
+    .label = Потражи помоћ
+    .accesskey = П
+appmenu-help-more-troubleshooting-info =
+    .label = Подаци о решавању проблема
+    .accesskey = д
+appmenu-help-report-site-issue =
+    .label = Пријави проблем са сајтом…
+appmenu-help-share-ideas =
+    .label = Поделите идеје и повратне податке…
+    .accesskey = д
+appmenu-help-switch-device =
+    .label = Пребацивање на нови уређај
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = Режим за решавање проблема…
+    .accesskey = Р
+appmenu-help-exit-troubleshoot-mode =
+    .label = Искључи режим за решавање проблема
+    .accesskey = р
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Пријави обмањујућ сајт…
+    .accesskey = б
+appmenu-help-not-deceptive =
+    .label = Ово није обмањујућ сајт…
+    .accesskey = б
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Прилагоди траку са алаткама…
+appmenu-abouttranslations =
+    .label = Преведи…
+appmenu-edit-pdf =
+    .label = Уреди ПДФ…
+appmenu-developer-tools-subheader = Алатке прегледача
+appmenu-developer-tools-extensions =
+    .label = Додаци за програмере
+appmenuitem-report-broken-site =
+    .label = Пријавите неисправну страницу
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Пријавите се у ваш налог
+appmenuitem-monitor-title2 = Будите корак испред крађе идентитета
+appmenuitem-monitor-description2 = Примајте упозорења о цурењу података
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Добијајте упозорења о цурењу података
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = Задржите своју е-пошту приватном
+appmenuitem-relay-description2 = Помаже у спречавању непожељних порука у вашем пријемном сандучету
+appmenuitem-relay-description = Маскирајте вашу праву адресу е-поште и број телефона
+appmenuitem-services-relay-description = Покрените контролну таблу маски е-поште
+appmenuitem-vpn-title2 = Сакријте своју локацију уз { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description3 = Отежајте праћење вашег прегледања
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description-2 = Набавите заштиту за цео уређај
+appmenuitem-vpn-description = Заштитите ваше радње на мрежи
+appmenu-services-header = Моје услуге
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = Алати за приватност
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = Испробајте друге BrowserWorks-ине алате за заштиту:
+appmenu-other-protection-header = Пробајте друге заштитне алате од { -vendor-short-name }:
+
+## Profiles panel
+
+appmenu-other-profiles = Други профили
+appmenu-manage-profiles =
+    .label = Управљај профилима
+appmenu-copy-profile =
+    .label = Копирај овај профил
+appmenu-create-profile =
+    .label = Нови профил
+appmenu-edit-profile =
+    .aria-label = Измени профил
+appmenu-profiles-2 =
+    .label = Профили

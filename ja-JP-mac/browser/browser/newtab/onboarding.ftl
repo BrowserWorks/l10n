@@ -1,0 +1,619 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### UI strings for the MR1 onboarding / multistage about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## Welcome page strings
+
+onboarding-welcome-header = { -brand-short-name } にようこそ
+onboarding-start-browsing-button-label = ブラウジングを開始
+onboarding-not-now-button-label = 後で
+mr1-onboarding-get-started-primary-button-label = はじめましょう
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = { -brand-short-name } をインストールしました
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = <img data-l10n-name="icon"/> <b>{ $addon-name }</b> をインストールしてみましょう。
+return-to-amo-add-extension-label = 拡張機能を追加
+return-to-amo-add-theme-label = テーマを追加
+return-to-amo-theme-install-complete-label = テーマをインストールしました
+return-to-amo-extension-install-complete-label = 拡張機能をインストールしました
+
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = { -brand-short-name } をどうぞよろしく
+mr1-return-to-amo-addon-title = 高速でプライベートなブラウザーをあなたの手元に。<b>{ $addon-name }</b> を追加して、{ -brand-short-name } でより多くのことができるようになります。
+mr1-return-to-amo-add-extension-label = { $addon-name } を追加
+
+## Multistage onboarding strings (about:welcome pages)
+
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator-label =
+    .aria-label = 完了まで: { $current } / { $total }
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = アニメーションをオフにする
+# String for the Firefox Accounts button
+mr1-onboarding-sign-in-button-label = ログイン
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = { $previous } から読み込む
+mr1-onboarding-theme-header = 自分らしく
+mr1-onboarding-theme-subtitle = テーマで { -brand-short-name } をパーソナライズできます。
+mr1-onboarding-theme-secondary-button-label = 後で
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = システムテーマ
+mr1-onboarding-theme-label-light = Light
+mr1-onboarding-theme-label-dark = Dark
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+onboarding-theme-primary-button-label = 完了
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = アニメーションを一時停止
+onboarding-animation-play-button =
+    .aria-label = アニメーションを再生
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title = OS のボタン、メニュー、ウインドウの外観です。
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description = OS のボタン、メニュー、ウインドウの外観です。
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title = 明るい外観のボタン、メニュー、ウインドウを使用します。
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description = 明るい外観のボタン、メニュー、ウインドウを使用します。
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title = 暗い外観のボタン、メニュー、ウインドウを使用します。
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description = 暗い外観のボタン、メニュー、ウインドウを使用します。
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title = ダイナミックでカラフルな外観のボタン、メニュー、ウインドウを使用します。
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description = ダイナミックでカラフルな外観のボタン、メニュー、ウインドウを使用します。
+# Selector description for default themes
+mr2-onboarding-default-theme-label = デフォルトテーマを見てみます。
+
+## Strings for Thank You page
+
+mr2-onboarding-thank-you-header = ありがとうございます
+mr2-onboarding-thank-you-text = { -brand-short-name } は非営利を背景とする独立したブラウザーです。私たちはユーザーとともにウェブをより安全、健全にし、個人情報を保護していきます。
+mr2-onboarding-start-browsing-button-label = ブラウジングを開始
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
+##   $systemLanguage (String) - The name of the system language, e.g "Español (ES)"
+##   $appLanguage (String) - The name of the language shipping in the browser build, e.g. "English (EN)"
+
+onboarding-live-language-header = 言語を選択してください
+mr2022-onboarding-live-language-text = { -brand-short-name } はあなたの言語を話します
+mr2022-language-mismatch-subtitle = コミュニティのおかげで、{ -brand-short-name } は 90 を超える言語に翻訳されています。あなたのシステムは { $systemLanguage } を使っているようです。{ -brand-short-name } は { $appLanguage } を使っています。
+onboarding-live-language-button-label-downloading = { $negotiatedLanguage } の言語パックをダウンロード中...
+onboarding-live-language-waiting-button = 利用可能な言語を取得中...
+onboarding-live-language-installing = { $negotiatedLanguage } の言語パックをインストール...
+mr2022-onboarding-live-language-switch-to = { $negotiatedLanguage } に切り替える
+mr2022-onboarding-live-language-continue-in = { $appLanguage } のままにする
+onboarding-live-language-secondary-cancel-download = キャンセル
+onboarding-live-language-skip-button-label = スキップ
+
+## Firefox 100 Thank You screens
+
+# "Hero Text" displayed on left side of welcome screen. This text can be
+# formatted to span multiple lines as needed. The <span data-l10n-name="zap">
+# </span> in this string allows a "zap" underline style to be automatically
+# added to the text inside it. "Yous" should stay inside the zap span, but
+# "Thank" can be put inside instead if there's no "you" in the translation.
+# The English text would normally be "100 Thank-Yous" i.e., plural noun, but for
+# aesthetics of splitting it across multiple lines, the hyphen is omitted.
+fx100-thank-you-hero-text =
+    100
+    Thank
+    <span data-l10n-name="zap">You</span>
+fx100-thank-you-subtitle = 100 番目のリリースです！ より良い健全なインターネットの構築へのご協力に感謝します。
+fx100-thank-you-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } を Dock に追加
+       *[other] { -brand-short-name } をタスクバーにピン留め
+    }
+fx100-upgrade-thanks-header = 100 Thank You
+# Message shown with a start-browsing button. Emphasis <em> should be for "you"
+# but "Thank" can be used instead if there's no "you" in the translation.
+fx100-upgrade-thank-you-body = { -brand-short-name } の 100 番目のリリースです。より良い健全なインターネットの構築へのご協力に感謝します。
+# Message shown with either a pin-to-taskbar or set-default button.
+fx100-upgrade-thanks-keep-body = 100 番目のリリースです！ 私たちのコミュニティへの参加に感謝します。次の 100 番目まで { -brand-short-name } を 1 クリックで使えるようにしましょう。
+mr2022-onboarding-secondary-skip-button-label = この手順をスキップ
+
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = 保存して続ける
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = { -brand-short-name } を デフォルトウェブブラウザーに設定する
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = 以前のブラウザーから読み込む
+
+## MR2022 New User Pin Firefox screen strings
+
+# Title used on about:welcome for new users when Firefox is not pinned.
+# In this context, open up is synonymous with "Discover".
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
+# If this translation does not make sense in your language, feel free to use the word "discover."
+mr2022-onboarding-welcome-pin-header = 素晴らしいインターネットへの扉を開きましょう
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
+mr2022-onboarding-welcome-pin-subtitle = クリック一つでどこからでも { -brand-short-name } は起動します。その一回一回が、より開かれて独立したウェブへの選択です。
+# Primary button string used on welcome page for when Firefox is not pinned.
+mr2022-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } を Dock に追加
+       *[other] { -brand-short-name } をタスクバーにピン留め
+    }
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = { -brand-short-name } をタスクバーとスタートメニューにピン留め
+# Subtitle will be used when user already has Firefox pinned, but
+# has not set it as their default browser.
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-set-default-only-subtitle = 非営利のブラウザーで始めましょう。ウェブを巡るあなたのプライバシーを守ります。
+
+## MR2022 Existing User Pin Firefox Screen Strings
+
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
+mr2022-onboarding-existing-pin-header = { -brand-product-name } をご愛用いただき、ありがとうございます
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
+mr2022-onboarding-existing-pin-subtitle = クリック一つでどこからでもより健全なインターネットが始まります。最新の更新にはきっと気に入っていただける新機能が満載です。
+# Subtitle will be used on the welcome screen for existing users
+# when they already have Firefox pinned but not set as default
+mr2022-onboarding-existing-set-default-only-subtitle = ウェブを巡るあなたのプライバシーを守るブラウザーを使いましょう。きっと気に入っていただける新機能が満載です。
+mr2022-onboarding-existing-pin-checkbox-label = { -brand-short-name } プライベートブラウジングも追加する
+
+## MR2022 New User Set Default screen strings
+
+# This string is the title used when the user already has pinned the browser, but has not set default.
+mr2022-onboarding-set-default-title = { -brand-short-name } をお気に入りのブラウザーにしましょう
+mr2022-onboarding-set-default-primary-button-label = { -brand-short-name } をデフォルトウェブブラウザーに設定する
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-set-default-subtitle = 非営利のブラウザーを使いましょう。ウェブを巡るあなたのプライバシーを守ります。
+
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
+
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-get-started-primary-subtitle = この最新版はユーザー中心で設計されており、これまで以上に簡単にウェブを巡ることができます。 きっと気に入っていただける新機能が満載です。
+mr2022-onboarding-get-started-primary-button-label = 今すぐ設定する
+
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
+
+mr2022-onboarding-import-header = 高速セットアップ
+mr2022-onboarding-import-subtitle = { -brand-short-name } をあなたの好みの設定にしましょう。ブックマーク、パスワード、その他を以前の古いブラウザーから追加します。
+mr2022-onboarding-import-primary-button-label-no-attribution = 以前のブラウザーから読み込む
+
+## If your language uses grammatical genders, in the description for the
+## colorway feel free to switch from "You are a X. You…" (e.g. "You are a
+## Playmaker. You create…") to "X: you…" ("Playmaker: You create…"). This might
+## help creating a more inclusive translation.
+
+mr2022-onboarding-colorway-title = あなたを励ますカラーを選びましょう
+mr2022-onboarding-colorway-subtitle = 揺るぎない声はカルチャーを変えられる。
+mr2022-onboarding-colorway-primary-button-label-continue = 設定して次へ
+mr2022-onboarding-existing-colorway-checkbox-label = { -firefox-home-brand-name } をホームページにしてカラーを合わせる
+mr2022-onboarding-colorway-label-default = デフォルト
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = 現在の { -brand-short-name } のカラー
+mr2022-onboarding-colorway-description-default = <b>現在の { -brand-short-name } カラーを使用する。</b>
+mr2022-onboarding-colorway-label-playmaker = Playmaker
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Playmaker (赤)
+mr2022-onboarding-colorway-description-playmaker = <b>Playmaker</b>: 勝利への道を切り開け。あなたのプレーは周囲を巻き込みゲームを盛り上げる。
+mr2022-onboarding-colorway-label-expressionist = Expressionist
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Expressionist (黄)
+mr2022-onboarding-colorway-description-expressionist = <b>Expressionist</b>: 内なる感情を世界に刻め。あなたの表現に映る歪みが人の心をかき乱す。
+mr2022-onboarding-colorway-label-visionary = Visionary
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionary (緑)
+mr2022-onboarding-colorway-description-visionary = <b>Visionary</b>: 現状に疑問を投げかけろ。より良い未来に人を動かすのはあなたのビジョンだ。
+mr2022-onboarding-colorway-label-activist = Activist
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Activist (青)
+mr2022-onboarding-colorway-description-activist = <b>Activist</b>: 今いる世界をより良い場所に変えていけ。あなたの活動が人を導き同志へ変える。
+mr2022-onboarding-colorway-label-dreamer = Dreamer
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Dreamer (紫)
+mr2022-onboarding-colorway-description-dreamer = <b>Dreamer</b>: 大胆に幸運を引き寄せろ。夢を掲げるあなたの姿は人の勇気を呼び覚ます。
+mr2022-onboarding-colorway-label-innovator = Innovator
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innovator (オレンジ)
+mr2022-onboarding-colorway-description-innovator = <b>Innovator</b>: あらゆる場所で機会をつかめ。あなたがもたらす革新は周囲の人生を震わせる。
+
+## MR2022 Multistage Mobile Download screen strings
+
+mr2022-onboarding-mobile-download-title = ノート PC と携帯端末を自由に行き来する
+mr2022-onboarding-mobile-download-subtitle = ある端末からタブを取り出して、別の端末で中断したところから再開できます。さらに、どこで { -brand-product-name } を使っていてもブックマークとパスワードを同期できます。
+mr2022-onboarding-mobile-download-cta-text = QR をスキャンしてモバイル版 { -brand-product-name } を入手するか、<a data-l10n-name="download-label">ダウンロードリンクをあなたの携帯端末に送信しましょう。</a>
+mr2022-onboarding-no-mobile-download-cta-text = QR をスキャンしてモバイル版 { -brand-product-name } を入手しましょう。
+
+## MR2022 Upgrade Dialog screens
+## Pin private window screen shown only for users who don't have Firefox private pinned
+
+mr2022-upgrade-onboarding-pin-private-window-header = クリック一つで自由にプライベートブラウジング
+mr2022-upgrade-onboarding-pin-private-window-subtitle = Cookie や履歴を保存せず、デスクトップからすぐ使えます。誰からも監視されずブラウジングできます。
+mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } プライベートブラウジングを Dock に追加
+       *[other] { -brand-short-name } プライベートブラウジングをタスクバーにピン留め
+    }
+
+## MR2022 Privacy Segmentation screen strings
+
+mr2022-onboarding-privacy-segmentation-title = 私たちはいつもあなたのプライバシーを尊重します
+mr2022-onboarding-privacy-segmentation-subtitle = 知的なサジェストからスマートな検索まで、より良いパーソナルな { -brand-product-name } の開発を続けます。
+mr2022-onboarding-privacy-segmentation-text-cta = より良いユーザー体験のために、あなたのデータを使用する新機能を提案されたときはどうしましょうか？
+mr2022-onboarding-privacy-segmentation-button-primary-label = { -brand-product-name } のおすすめを利用する
+mr2022-onboarding-privacy-segmentation-button-secondary-label = 詳細情報を表示する
+
+## MR2022 Multistage Gratitude screen strings
+
+mr2022-onboarding-gratitude-title = より良いウェブ構築の助けになります
+mr2022-onboarding-gratitude-subtitle = BrowserWorks が提供する { -brand-short-name } のご利用ありがとうございます。あなたのご協力とともに、よりオープンでアクセシブルな、すべての人にとってのより良いインターネットの構築に努めます。
+mr2022-onboarding-gratitude-primary-button-label = 新機能を確認する
+mr2022-onboarding-gratitude-secondary-button-label = ブラウジングを開始する
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = ゆっくりしていってね
+onboarding-infrequent-import-subtitle = ちょっと使っただけだとしても、ブックマーク、パスワードなどを読み込めることをお忘れなく。
+onboarding-infrequent-import-primary-button = { -brand-short-name } に読み込み
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = 満点の星空の下でノート PC で仕事する人
+mr2022-onboarding-default-image-alt =
+    .aria-label = { -brand-product-name } ロゴを抱きしめる人
+mr2022-onboarding-import-image-alt =
+    .aria-label = ソフトウェアのアイコンが入った箱を持ってスケートボードに乗る人
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = 真ん中にモバイル版 { -brand-product-name } のダウンロード QR コードが入ったスイレンの葉を跳ね回るカエル
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = 帽子から { -brand-product-name } プライベートブラウジングのロゴを取り出せる魔法の杖
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = ハイタッチしている色白の手と色黒の手
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = キツネのいる窓から眺める夕日と窓台に置かれた鉢植え
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = 緑色の目、オレンジ色の靴、赤色のバスケットボール、紫色のヘッドフォン、青色のハート、黄色の王冠のカラフルなコラージュを描くハンドスプレー
+
+## Device migration onboarding
+
+onboarding-device-migration-image-alt =
+    .aria-label = ラップトップコンピューターの画面上のキツネがウェーブしています。ラップトップにマウスが接続されています。
+onboarding-device-migration-title = おかえりなさい！
+onboarding-device-migration-subtitle = { -fxaccount-brand-name(capitalization: "sentence") } にログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
+onboarding-device-migration-subtitle2 = アカウントにログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
+onboarding-device-migration-primary-button-label = ログイン
+
+## Add-ons Picker screen
+
+amo-picker-title = { -brand-short-name } をカスタマイズ
+amo-picker-subtitle = 拡張機能はブラウザー用のアプリのようなものです。パスワード保護や動画のダウンロード、取引の検索、迷惑な広告のブロック、ブラウザーの外観の変更など、さらに多くの拡張機能があります。
+amo-picker-install-button-label = { -brand-short-name } に追加
+amo-picker-install-complete-label = インストール完了
+amo-picker-collection-link = 他のアドオンを探す
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = あなたの安全を守ります
+onboarding-easy-setup-security-and-privacy-subtitle = 私たちの非営利組織によるブラウザーがウェブ上であなたを秘密裏に付け回す企業を阻止します。
+
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = 端末を切り替える時も暗号化されます
+onboarding-mobile-download-security-and-privacy-subtitle = 同期した端末でも { -brand-short-name } があなたのパスワードやブックマークを暗号化して保護します。さらに開いているタブを他の端末で持ち歩くことができます。
+
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } はあなたの味方です
+onboarding-gratitude-security-and-privacy-subtitle = BrowserWorks による { -brand-short-name } をご使用くださりありがとうございます。あなたのご支援によって、私たちはインターネットをすべての人々のために安全でアクセシブルなものにすることができます。
+# Sign up or Sign in screen
+onboarding-sign-up-title = 端末間でデータを同期する
+onboarding-sign-up-description = アカウント登録すると、パスワードやブックマークなど、すべての重要な情報を安全に保管し、ログインしたどの端末でも利用できるようになります。
+onboarding-sign-up-button = 登録またはログイン
+onboarding-sign-up-secondary-button = ブラウジングを開始
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = { -brand-short-name } をどのくらい長く使っていますか？
+onboarding-new-user-familiarity-based-survey-title = { -brand-short-name } にどのくらい親しんでいますか？
+onboarding-new-user-survey-subtitle = あなたのフィードバックが { -brand-short-name } をより良くします。
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = 次へ
+onboarding-new-user-survey-legal-link-label = “{ onboarding-new-user-survey-next-button-label }” を選択すると、{ -brand-product-name } の <a data-l10n-name="privacy_notice">プライバシー通知</a> に同意したものとみなされます。
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = 初めて使う
+onboarding-new-user-survey-time-based-option-2 = 使い始めて 1 か月未満
+onboarding-new-user-survey-time-based-option-3 = 1 か月以上、よく使う
+onboarding-new-user-survey-time-based-option-4 = 1 か月以上、たまに使う
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = 初めて使う
+onboarding-new-user-survey-familiarity-based-option-2 = 何度か使っている
+onboarding-new-user-survey-familiarity-based-option-3 = よく使っている
+onboarding-new-user-survey-familiarity-based-option-4 = 以前使ったことがあり、久しぶりに使う
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = タブを配置したい場所を教えてください
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = サイドバー設定でいつでも垂直タブに切り替えられます。
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = あなたのタブをお好みの場所に
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = 多くのタブを開いておきたいときは、サイドバーに配置して能率的に表示しましょう。または、いつでも従来のように最上部の配置に切り替えられます。
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = タブのレイアウトを選んでください
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = タブをサイドバーに配置して能率的な表示にすることで作業に集中できます。または、いつでも従来のように最上部の配置に切り替えられます。
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = タブをサイドに配置
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = タブを最上部に配置
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = 垂直タブがここに表示されます
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = 垂直タブの導入
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = タブをサイドバーに配置してみましょう。サイドバー設定でいつでも切り替えられます。
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = 垂直タブを試す
+onboarding-flair-text = 新機能！
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = 水平タブのままにする
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = ブラウザーウインドウのタブが画面の側面に { -brand-shorter-name } サイドバーの一部として表示されます。
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = ブラウザーウインドウのタブが画面の側面に { -brand-shorter-name } サイドバーの一部として表示されます。
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = ブラウザーウインドウのタブが最上部に表示されます。
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = ブラウザーウインドウのタブが最上部に表示されます。
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = サイドバーで AI チャットボットを試してみよう
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = AI によるウェブコンテンツの要約、アイデアのブレーンストーミング、メッセージの下書きなどをブラウジングしながら。複数の AI プロバイダーから選んでください。いつでも切り替えられます。<a data-l10n-name="learn-more">詳細情報</a>
+onboarding-genai-sidebar-primary-button = チャットボットを選ぶ
+onboarding-genai-sidebar-secondary-button = ブラウジングを始める
+
+## New user onboarding checklist
+
+onboarding-checklist-title = { -brand-short-name } のセットアップを完了してください
+onboarding-checklist-subtitle = これらのステップを完了して、ブラウジングを最大限快適にしましょう。
+onboarding-checklist-set-default = { -brand-short-name } を デフォルトウェブブラウザーに設定する
+onboarding-checklist-pin = { -brand-short-name } をタスクバーにピン留めする
+onboarding-checklist-import = 以前のブラウザーから読み込む
+onboarding-checklist-extension = 拡張機能を追加する
+onboarding-checklist-sign-up = アカウント登録またはログインする
+onboarding-checklist-minimize =
+    .label = 最小化
+onboarding-checklist-remove =
+    .label = チェックリストを削除
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = タブをグループ化して整理しましょう
+tab-groups-onboarding-feature-callout-subtitle = タブを別のタブの上にドラッグすると最初のグループが作成できます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = いつでも “タブを一覧表示” メニューからタブグループを見つけられます。
+tab-groups-onboarding-create-group-title-2 = タブグループはここで見つけられます。
+tab-groups-onboarding-create-group-no-alltabs-button-title = アドレスバーで検索するとグループを見つけられます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = タブグループを閉じても、“タブを一覧表示” メニューからいつでも再び開けます。
+tab-groups-onboarding-saved-groups-title-2 = タブグループを閉じても、ここで開き直すことができます。
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = アドレスバーで検索すると閉じてしまったタブグループを見つけられます。
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = タブグループは “タブを一覧表示” メニューからいつでも再び開けます。
+tab-groups-onboarding-session-restore-title = タブグループはいつでもここで開き直せます。
+tab-groups-onboarding-dismiss = OK
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = { -brand-product-name } プロファイルにご挨拶
+multi-profile-spotlight-body = 仕事用と趣味用のブラウジングを簡単に切り替えられます。検索履歴やパスワードなど、プロファイルごとにユーザーのブラウジング情報が保存され、完全に別のデータとして整理できます。
+multi-profile-spotlight-cta = プロファイルを作成
+multi-profile-callout-title = 仕事用と趣味用で別のプロファイルを作成
+multi-profile-callout-subtitle = プロファイルには検索履歴やパスワードなどのブラウジング情報が保存され、完全に分かれています。
+multi-profile-callout-cta = プロファイルを作成
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = ダウンロード、同期、モバイル GO!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = QR コードをスキャンしてモバイル版 { -brand-product-name } をダウンロードしてください。インストールが完了したら “モバイル端末と同期” するだけで、パスワードやブックマークなどのデータを持ち歩けます。
+dismiss-button-label = 閉じる
+sync-to-mobile-button-label = モバイル端末と同期
+desktop-to-mobile-qr-code-alt =
+    .aria-label = モバイル版 { -brand-product-name } のダウンロード用 QR コード
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Windows 11 にアップグレードしますか？
+    { -brand-product-name } のデータをバックアップしましょう。
+create-backup-screen-1-subtitle = 1-2 分でパスワードやブックマークなどを自動的に保護します。
+create-backup-screen-1-flair = 推奨
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">詳細情報</a>
+create-backup-screen-1-sync-label = { -brand-product-name } と同期
+create-backup-screen-1-sync-body = ログインしているすべての端末のデータをバックアップします
+create-backup-screen-1-backup-label = PC にバックアップ
+create-backup-screen-1-backup-body = 自分の端末または OneDrive に保存します
+create-backup-select-tile-button-label = 選択
+create-backup-back-button-label = 戻る
+create-backup-show-fewer =
+    .label = このような表示を少なくする
+create-backup-screen-2-title = バックアップする { -brand-product-name } のデータを選択してください
+create-backup-screen-2-subtitle = 時間はかかりません。データは 1 日 1 回バックアップされます
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = 簡単セットアップ
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = ブックマーク、履歴、設定など
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = パスワードと支払い情報は含みません
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = 暗号化なし
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = すべてのデータ
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = パスワードと支払い情報を含みます
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = パスワードで暗号化
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = どこにバックアップを保存しますか？
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = バックアップファイルを作成します
+create-backup-screen-3-subtitle = データを暗号化する必要があります。思い出しやすい場所に保管しておいてください。
+fx-backup-opt-in-header = ファイルの保存場所を選択
+fx-backup-opt-in-filepath-label = OneDrive など新しい端末に転送する予定の場所を選択してください。
+fx-backup-opt-in-create-password-label = パスワードを入力
+fx-backup-opt-in-confirm-btn-label = 続ける
+fx-backup-opt-in-cancel-btn-label = 戻る
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = バックアップの設定を完了しました
+fx-backup-confirmation-screen-close-button = 閉じる
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = すべての閲覧データを含みます
+fx-backup-confirmation-screen-all-data-item-text-2 = 端末に保存します
+fx-backup-confirmation-screen-all-data-item-text-3 = 暗号化されパスワードで保護されます
+fx-backup-confirmation-screen-easy-setup-item-text-1 = ブックマーク、履歴、設定などのデータを含みます
+fx-backup-confirmation-screen-easy-setup-item-text-2 = 端末に保存します
+fx-backup-confirmation-screen-easy-setup-item-text-3 = パスワードと支払い方法は含みません
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = 機密性の高い情報を含むには <a data-l10n-name="settings">設定</a> を開いてください。
+fx-backup-confirmation-screen-item-subtext-1 = バックアップはあと数分で開始され、1 日 1 回実行されます。進捗状況は <a data-l10n-name="settings">設定</a> で確認できます。
+fx-backup-confirmation-screen-item-subtext-2 = 再インストールが必要になった場合には、{ -brand-short-name } がバックアップを探します
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = バックアップから復元
+restore-from-backup-title = あなた好みの { -brand-short-name } に戻しましょう
+restore-from-backup-subtitle = ブラウジングに必要なすべてのブックマーク、履歴および他のデータをバックアップデータから復元します。
+restore-from-backup-secondary-button = 復元しない
+multiple-backups-info-tile = <strong>複数のバックアップファイルが見つかりました。</strong> 最近のファイルが選択されています。他のプロファイルは <a data-l10n-name="settings-label">設定</a> で復元してください。
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = お帰りなさい！ { -brand-short-name } が復元されました。
+restored-from-backup-success-with-checklist-subtitle = クリック一つでお気に入りのプライバシー優先ブラウザーを使い続けましょう。
+restored-from-backup-success-no-checklist-subtitle = <a data-l10n-name="settings">設定</a> でこの端末のバックアップをオンにしてください。
+restored-from-backup-success-with-checklist-primary-button = 保存して続ける
+restored-from-backup-success-with-checklist-secondary-button = この手順をスキップ
+restored-from-backup-success-no-checklist-primary-button = 続ける
+restored-from-backup-error-title = 申し訳ありません。バックアップファイルに問題があるようです。
+restored-from-backup-error-subtitle = 別の { -brand-short-name } バックアップファイルがあれば、それで復元を試してください。<a data-l10n-name="restore-problems">まだ問題がある場合はこちら</a>。
+restored-from-backup-error-primary-button = 閉じる
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = { -brand-short-name } をカスタマイズしましょう
+onboarding-personalization-subtitle = いくつかの質問にご回答ください。 { -brand-short-name } を使いこなす、おすすめの機能と拡張機能を紹介します。
+onboarding-personalization-use-case-title = { -brand-short-name } を何のために使いますか？
+onboarding-personalization-use-case-personal-option = 個人
+onboarding-personalization-use-case-school-option = 学校
+onboarding-personalization-use-case-work-option = 仕事
+onboarding-personalization-motivation-title = { -brand-short-name } のどの機能を重視しますか？
+onboarding-personalization-motivation-privacy-option = プライバシーとセキュリティ
+onboarding-personalization-motivation-productivity-option = 生産性
+onboarding-personalization-motivation-other-option = その他
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = 私たちはユーザーデータを保護し、クリックを盗み取る企業を自動的にブロックします。
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = あなたは Waterfox に守られています
+onboarding-refresh-import-subtitle = パスワードブックマーク、履歴などのデータを持ち歩けます。
+onboarding-refresh-import-title = { -brand-short-name } をアットホームな環境にします
+onboarding-refresh-onboarding-addons-subtitle = 拡張機能は { -brand-short-name } をカスタマイズできる小さなアプリです。ユーザーのプライバシーをさらに保護したり、生産性を向上したり、{ -brand-short-name } の外観を変えたり、さらに多くのことができます。
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = ブラウジングを加速します
+onboarding-refresh-sync-subtitle = { -brand-short-name } にログインすれば、どこでもブックマークやパスワードを持ち歩けます。さらにデータは暗号化され、あなただけしか見られません。
+onboarding-refresh-sync-title = どこへでも、すべてのデータを同期して。
+onboarding-refresh-gratitude-subtitle = { -brand-short-name } をご使用いただきありがとうございます。非営利で支持された唯一のメジャーブラウザーです。あなたのご支援により、私たちはインターネットを安全ですべての人々がアクセスできるようにすることができます。
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } へのご支援
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = いつでもスマートウインドウとクラシックウインドウを切り替えられます。
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = { -brand-product-name } 利用規約
+smartwindow-existing-user-fx-tou-body = { -smart-window-brand-name }を使用するには、<a data-l10n-name="terms_of_use">利用規約</a> および更新された <a data-l10n-name="privacy_notice">プライバシー通知</a> に承諾していただく必要があります。
+smartwindow-existing-user-fx-tou-accept = 承諾
+smartwindow-existing-user-fx-tou-go-back = 戻る
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = { -smart-window-brand-name }をデフォルト設定にしましょう
+smartwindow-onboarding-subtitle = いつもの画面で要約、比較、質問を尋ねることができます。
+smartwindow-onboarding-primary-button = 続ける
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = 星のアイテムを付けた { -brand-product-name } のマスコット (Kit)
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = アシスタントを閉じておきますか？
+smartwindow-sidebar-auto-open-callout-body = 必要であればいつでも開けます。
+smartwindow-sidebar-auto-open-callout-accept = はい、閉じます
+smartwindow-sidebar-auto-open-callout-dismiss = いいえ
+smartwindow-sidebar-auto-open-callout-accepted-title = アシスタントは閉じたままです
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = どのページでも尋ねることで開けます。いつでも <a data-l10n-name="settings">設定</a> から変更できます。
+smartwindow-sidebar-auto-open-callout-rejected-title = 了解
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = 気が変わったら、いつでも <a data-l10n-name="settings">設定</a> からデフォルトに設定してください。

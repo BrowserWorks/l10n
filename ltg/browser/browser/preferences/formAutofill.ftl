@@ -1,0 +1,76 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## The address and credit card autofill management dialog in browser preferences
+
+autofill-manage-addresses-title = Saglobōtōs adresis
+autofill-manage-addresses-list-header = Adresis
+autofill-manage-credit-cards-title = Saglobōtōs bankas kartes
+autofill-manage-credit-cards-list-header = Bankas kartes
+autofill-manage-dialog =
+    .style = min-width: 560px
+autofill-manage-remove-button = Nūjimt
+autofill-manage-add-button = Pīvīnōt…
+autofill-manage-edit-button = Redigeit…
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+# The dialog title for editing addresses in browser preferences.
+autofill-edit-address-title = Lobōt adresi
+autofill-address-given-name = Vōrds
+autofill-address-additional-name = Ūtrais vōrds
+autofill-address-family-name = Uzvōrds
+autofill-address-organization = Uzjāmums
+autofill-address-street = Adrese
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+autofill-address-city = Piļsāta
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+autofill-address-province = Nūvods
+autofill-address-state = Štats
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+autofill-address-postal-code = Posta indekss
+# Postal code field.
+autofill-address-zip = Posta indekss
+
+##
+
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = Pīvīnōt jaunu adresi
+autofill-address-country = Vaļsts voi reģions
+autofill-address-tel = Telefona numers
+autofill-address-email = E-posts
+autofill-cancel-button = Atceļt
+autofill-save-button = Saglobōt
+autofill-country-warning-message = Formu automatiskō aizpiļdiešona ņiuļa ir pīejama viņ pōrs vaļstīs.
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-new-card-title = Pīvīnōt jaunu bankas karti
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title = Lobōt bankas kartes datus
+autofill-card-number-2 =
+    .label = Kartes numers
+autofill-card-number = Kartes numers
+autofill-card-invalid-number = Lyudzu, īvodi dereigu kartes numeri
+autofill-card-name-on-card-2 =
+    .label = Kartes eipašnīks
+autofill-card-billing-address-2 =
+    .label = Moksōšonys adrese
+autofill-card-name-on-card = Kartes eipašnīks
+autofill-card-expires-month = Deireiguma beigu mieness
+autofill-card-expires-year = Deireiguma beigu gods
+autofill-card-billing-address = Moksōšonys adrese

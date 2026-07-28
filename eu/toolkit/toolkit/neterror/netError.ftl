@@ -1,0 +1,223 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Error page titles
+
+neterror-page-title = Arazoa orria kargatzerakoan
+certerror-page-title = Abisua: balizko segurtasun arriskua
+certerror-sts-page-title = Ez da konektatu: balizko segurtasun-arazoa
+neterror-blocked-by-policy-page-title = Blokeatutako orria
+neterror-captive-portal-page-title = Hasi saioa sarean
+neterror-dns-not-found-title = Ez da zerbitzaria aurkitu
+neterror-malformed-uri-page-title = URL baliogabea
+general-body-title = Kontuz. Badirudi zerbait oker dagoela.
+problem-with-this-site-title = Badirudi arazo bat dagoela gune honekin
+
+## Error page actions
+
+neterror-advanced-button = Aurreratua…
+neterror-copy-to-clipboard-button = Kopiatu testua arbelean
+neterror-learn-more-link = Argibide gehiago…
+neterror-open-portal-login-page-button = Ireki sarearen saio-hasiera orria
+neterror-override-exception-button = Onartu arriskua eta jarraitu
+neterror-pref-reset-button = Berrezarri ezarpen lehenetsiak
+neterror-return-to-previous-page-button = Joan atzera
+neterror-return-to-previous-page-recommended-button = Itzuli (gomendatua)
+neterror-try-again-button-2 = Saiatu berriro
+    .accesskey = S
+neterror-try-again-button = Saiatu berriro
+neterror-add-exception-button = Jarraitu beti gune honetarako
+neterror-settings-button = Aldatu DNS ezarpenak
+neterror-view-certificate-link = Ikusi ziurtagiria
+neterror-trr-continue-this-time = Jarraitu oraingo honetan
+neterror-disable-native-feedback-warning = Jarraitu beti
+
+##
+
+neterror-pref-reset = Badirudi zure sareko segurtasun-ezarpenek eragiten dutela hau. Ezarpen lehenetsiak berrezarri nahi dituzu?
+neterror-error-reporting-automatic = Eman honen gisako erroreen berri { -vendor-short-name }ri asmo txarreko guneak identifikatzen eta blokeatzen laguntzeko
+
+## Specific error messages
+
+neterror-generic-error = { -brand-short-name }(e)k ezin du orria kargatu.
+neterror-load-error-try-again = Gunea une batez desgaituta edo oso lanpetuta egon daiteke. Saiatu berriro geroago.
+neterror-load-error-connection = Beste inolako orririk ezin baduzu kargatu, egiaztatu ordenagailuaren sareko konexioa.
+neterror-load-error-firewall = Ordenagailua edo sarea suebaki edo proxy baten bidez babestuta badaude, egiaztatu { -brand-short-name }(e)k webera sartzeko baimena daukala.
+# This warning is only shown on macOS Sequoia and later (see bug 1929377)
+neterror-load-osx-permission = Sare lokaleko orri bat kargatzen saiatzen ari bazara, egiaztatu { -brand-short-name }(e)k sare lokalerako baimena duela macOS-en pribatutasun- eta segurtasun-ezarpenetan.
+neterror-http-error-page = Ziurtatu webgunearen helbidea ondo idatzi duzula.
+neterror-http-empty-response = Egiaztatu webgunearen helbidea ondo idatzi duzula eta saiatu berriro geroago.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-http-empty-response-description = { $hostname } ostalariak orri hutsa itzuli du.
+neterror-captive-portal = Internetera sartu ahal izateko saioa hasi behar duzu sare honetan.
+# Variables:
+# $hostAndPath (String) - a suggested site (e.g. "www.example.com") that the user may have meant instead.
+neterror-dns-not-found-with-suggestion = <a data-l10n-name="website">{ $hostAndPath }</a> helbidera joan nahi zenuen?
+neterror-dns-not-found-hint-header = <strong>Helbide zuzena sartu baduzu, ondorengoa proba dezakezu:</strong>
+neterror-dns-not-found-hint-try-again = Saiatu berriro geroago
+neterror-dns-not-found-hint-check-network = Egiaztatu zure Interneterako konexioa
+neterror-dns-not-found-hint-firewall = Egiaztatu { -brand-short-name }(e)k webera sartzeko baimenak dituela (konektatuta egon zaitezke baina suebaki baten atzean)
+neterror-dns-not-found-hint-check-network-2 = Egiaztatu zure Interneterako konexioa.
+neterror-dns-not-found-hint-firewall-2 = Egiaztatu { -brand-short-name }(e)k webera sartzeko baimenak dituela (konektatuta egon zaitezke baina suebaki baten atzean).
+neterror-dns-not-found-offline-hint-header = <strong>Zer egin dezakezu?</strong>
+neterror-dns-not-found-offline-hint-different-device = Saiatu beste gailu batean konektatzen.
+neterror-dns-not-found-offline-hint-modem = Egiaztatu zure modem edo routerra.
+neterror-dns-not-found-offline-hint-reconnect = Deskonektatu eta birkonektatu Wi-Fi sarera.
+
+## TRR-only specific messages
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
+
+neterror-dns-not-found-trr-only-reason = { -brand-short-name }(e)k ezin du gune honen helbiderako zure eskaera babestu gure konfiantzazko DNS ebazlearen bidez. Hona hemen zergatik:
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name }(e)k ezin du gune honen helbiderako zure eskaera babestu gure DNS ebazle seguruaren bidez. Hona hemen zergatik:
+neterror-dns-not-found-trr-third-party-warning2 = Zure DNS ebazle lehenetsiarekin jarrai dezakezu. Halere, hirugarren batentzat posible izan liteke bisitatzen dituzun webguneak ikustea.
+neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name }(e) ezin izan du { $trrDomain } ostalarira konektatu.
+neterror-dns-not-found-trr-only-timeout = { $trrDomain } ostalarirako konexioak uste baino denbora gehiago behar izan du.
+neterror-dns-not-found-trr-offline = Ez zaude Internetera konektatuta.
+neterror-dns-not-found-trr-unknown-host2 = Webgune hau ez du aurkitu { $trrDomain } ostalariak
+neterror-dns-not-found-trr-server-problem = Arazo bat egon da { $trrDomain } ostalariarekin.
+neterror-dns-not-found-bad-trr-url = URL baliogabea.
+neterror-dns-not-found-system-sleep = Sistema lotarako moduan dago.
+neterror-dns-not-found-trr-unknown-problem = Ustekabeko arazoa.
+
+## Native fallback specific messages
+## Variables:
+##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
+
+neterror-dns-not-found-native-fallback-reason = { -brand-short-name }(e)k ezin du gune honen helbiderako zure eskaera babestu gure konfiantzazko DNS ebazlearen bidez. Hona hemen zergatik:
+neterror-dns-not-found-native-fallback-heuristic = HTTPS againeko DNSa desgaitu egin da zure sarean.
+neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name }(e) ezin izan du { $trrDomain } ostalarira konektatu.
+
+##
+
+neterror-file-not-found-filename = Egiaztatu fitxategi-izenaren kapitalizazioa edo bestelako idazketa-erroreak.
+neterror-file-not-found-moved = Egiaztatu ea fitxategia lekuz aldatu, berrizendatu edo ezabatu egin den.
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name }(e)k ezin du <strong>{ $path }</strong> bideko fitxategia aurkitu. Edo fitxategia ez dago, edo bidea okerra da.
+neterror-file-not-found-what-can-you-do = Helbidea eskuz idatzi baduzu, egiaztatu letra larri/xeheak ondo daudela edo bestelako idazketa-akatsak ez dituela fitxategi-izenean edo bidean. Gordetako laster-marka edo lotura bat jarraitu baduzu, baliteke gorde zen unetik fitxategia lekuz aldatua, berrizendatua edo ezabatua izana. Saiatu sistemaren fitxategi-kudeatzailearekin edo bilaketarako tresnarekin bilatzen.
+neterror-access-denied = Kendua edo lekuz aldatua egon liteke, edo fitxategi-baimenek sarrera eragotz lezakete.
+neterror-unknown-protocol = Agian bestelako softwarea instalatu behar duzu helbide hau irekitzeko.
+neterror-redirect-loop = Arazo hau baliteke cookieak desgaituta eduki edo ez onartzeagatik izatea.
+neterror-unknown-socket-type-client-config = Zure bezeroaren konfigurazio-errore batengatik izan daiteke hau.
+neterror-unknown-socket-type-psm-installed = Egiaztatu zure sistemak Personal Security Manager delakoa instalatuta duela.
+neterror-unknown-socket-type-server-config = Baliteke zerbitzariaren konfigurazio ez-estandar batengatik izatea.
+neterror-not-cached-intro = Eskatutako dokumentua ez dago { -brand-short-name }(r)en cache memorian.
+neterror-not-cached-sensitive = Segurtasun-neurri gisa, { -brand-short-name }(e)k ez ditu berriro automatikoki eskatzen informazio pertsonala izan dezaketen dokumentuak.
+neterror-not-cached-try-again = Egin klik 'Saiatu berriro' botoian webguneko dokumentua berriro eskatzeko.
+neterror-net-offline = Sakatu “Saiatu berriro” linean jarri eta orria berritzeko.
+neterror-proxy-resolve-failure-settings = Egiaztatu proxy-aren konexioaren ezarpenak.
+neterror-proxy-resolve-failure-connection = Egiaztatu zure ordenagailuak sareko konexioa duela.
+neterror-proxy-resolve-failure-firewall = Ordenagailua edo sarea suebaki edo proxy baten bidez babestuta badaude, egiaztatu { -brand-short-name }(e)k webera sartzeko baimena daukala.
+neterror-proxy-connect-failure-settings = Egiaztatu proxy-aren konexioaren ezarpenak.
+neterror-proxy-connect-failure-contact-admin = Jarri harremanetan sarearen kudeatzailearekin proxy-zerbitzaria martxan dagoela ziurtatzeko.
+neterror-content-encoding-error = Jarri harremanetan webgunearen jabeekin arazo honen berri emateko.
+neterror-unsafe-content-type = Jarri harremanetan webgunearen jabeekin arazo honen berri emateko.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-basic-http-auth =
+    { -brand-short-name } ez da { $hostname } ostalariaz fidatzen
+    konexioa ez delako segurua. Saiatu URLa HTTPSra aldatzen.
+neterror-nss-failure-not-verified = Ikusten saiatzen ari zaren orria ezin da erakutsi jasotako datuen egiazkotasuna ezin delako egiaztatu.
+neterror-nss-failure-contact-website = Mesedez jarri harremanetan webgunearen jabeekin arazoaren berri emateko.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-intro = { -brand-short-name }(e)k balizko segurtasun-mehatxu bat antzeman du eta ez du jarraitu <b>{ $hostname }</b> ostalarira. Gune hau bisitatzen baduzu, erasotzaileak zure pasahitzak, mezu elektronikoak edo kreditu-txartelen xehetasunak lapurtzen saia litezke.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-sts-intro = { -brand-short-name }(e)k balizko segurtasun-mehatxu bat antzeman du eta ez du jarraitu <b>{ $hostname }</b> ostalarira webguneak konexio segurua eskatzen duelako.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-expired-cert-intro = { -brand-short-name }(e)k arazo bat antzeman du eta ez du jarraitu <b>{ $hostname }</b> ostalarira. Webgunea gaizki konfiguratuta dago edo zure ordenagailuko ordulariaren ordua ez dago ondo.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm = Litekeena da <b>{ $hostname }</b> gune segurua izatea baina ezin da konexio segururik ezarri. Arazo hau zure ordenagailuan edo sarean dagoen <b>{ $mitm }</b> softwareak eragina da.
+neterror-corrupted-content-intro = Ikusten saiatzen ari zaren orria ezin da erakutsi errore bat detektatu delako datu-transmisioan.
+neterror-corrupted-content-contact-website = Jar zaitez harremanetan webgunearen jabeekin arazo honen berri emateko.
+# Do not translate "SSL_ERROR_UNSUPPORTED_VERSION".
+neterror-sslv3-used = Informazio aurreratua: SSL_ERROR_UNSUPPORTED_VERSION
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+neterror-inadequate-security-intro = <b>{ $hostname }</b> ostalariak zaharkituta dagoen eta erasoen aurrean babesik ez duen segurtasun-teknologia erabiltzen du. Segurua zela uste zenuen informazioa erraz agerraraz lezake erasotzaile batek. Zuk gunea bisitatu ahal izan aurretik zerbitzaria konpondu behar du webgunearen kudeatzaileak.
+# Do not translate "NS_ERROR_NET_INADEQUATE_SECURITY".
+neterror-inadequate-security-code = Errore-kodea: NS_ERROR_NET_INADEQUATE_SECURITY
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $now (Date) - The current datetime, to be formatted as a date
+neterror-clock-skew-error = Zure ordenagailuak uste du { DATETIME($now, dateStyle: "medium") } dela eta honek { -brand-short-name }(r)i modu seguruan konektatzea eragozten dio. <b>{ $hostname }</b> bisitatzeko, jarri egunean zure ordenagailuaren erlojua sistemaren ezarpenetan uneko data, ordua eta ordu-zona kontuan hartuz, eta gero berritu <b>{ $hostname }</b>.
+neterror-network-protocol-error-intro = Ikusten saiatzen ari zaren orria ezin da erakutsi errore bat detektatu delako sareko protokoloan.
+neterror-network-protocol-error-contact-website = Jar zaitez harremanetan webgunearen jabeekin arazo honen berri emateko.
+certerror-expired-cert-second-para = Litekeena da webgunearen ziurtagiria iraungita egotea eta honek { -brand-short-name }(r)i modu seguruan konektatzea eragozten dio. Gune hau bisitatzen baduzu, erasotzaileren bat zure informazioa lapurtzen saia liteke, adibidez pasahitzak, mezu elektronikoak edo kreditu txarteleko xehetasunak.
+certerror-expired-cert-sts-second-para = Litekeena da webgunearen ziurtagiria iraungita egotea eta honek { -brand-short-name }(r)i modu seguruan konektatzea eragozten dio.
+certerror-what-can-you-do-about-it-title = Zer egin dezakezu?
+certerror-unknown-issuer-what-can-you-do-about-it-website = Litekeena da arazoa webguneak izatea eta ezin duzu ezer egin hau konpontzeko.
+certerror-unknown-issuer-what-can-you-do-about-it-contact-admin = Enpresako sare batean bazaude edo antibirus softwarea badarabilzu, laguntza-zerbitzuengana jo dezakezu sostengu eske. Webgunearen kudeatzaileari arazoaren berri ere eman diezaiokezu.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+# $now (Date) - The current datetime, to be formatted as a date
+certerror-expired-cert-what-can-you-do-about-it-clock = Zure ordenagailuaren erlojuan { DATETIME($now, dateStyle: "medium") } da. Ziurtatu sistemaren ezarpenetan zure ordenagailuaren erlojuak data, ordua eta ordu-zona ondo dituela, eta gero berritu <b>{ $hostname }</b>.
+certerror-expired-cert-what-can-you-do-about-it-contact-website = Zure erlojua ondo badago, litekeena da webgunea gaizki konfiguratuta egotea eta ezingo duzu ezer egin arazoa konpontzeko. Webgunearen kudeatzaileari arazoaren berri eman diezaiokezu.
+certerror-bad-cert-domain-what-can-you-do-about-it = Litekeena da arazoa webguneak izatea eta ezin duzu ezer egin hau konpontzeko. Webgunearen kudeatzaileari arazoaren berri eman diezaiokezu
+certerror-mitm-what-can-you-do-about-it-antivirus = Zure antibirus softwareak konexio zifratuak eskaneatzeko eginbiderik balu (sarritan "web eskaneatzea" edo "https eskaneatzea" deitua), desgaitu egin dezakezu. Horrekin ez badabil, antibirus softwarea ken eta berrinstala dezakezu.
+certerror-mitm-what-can-you-do-about-it-corporate = Enpresako sare batean bazaude, jar zaitezke harremanetan bertako informatika sailarekin.
+# Variables:
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm-what-can-you-do-about-it-attack = Ez bazaizu <b>{ $mitm }</b> ezaguna egiten, eraso baten aurrean egon zintezke eta ez zenuke gunera jarraitu behar.
+# Variables:
+# $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
+certerror-mitm-what-can-you-do-about-it-attack-sts = Ez bazaizu <b>{ $mitm }</b> ezaguna egiten, eraso baten aurrean egon zintezke eta ezin duzu ezer egin gunera sartzeko.
+# Variables:
+# $hostname (String) - Hostname of the website to which the user was trying to connect.
+certerror-what-should-i-do-bad-sts-cert-explanation = <b>{ $hostname }</b> guneak HTTP Strict Transport Security (HSTS) izeneko segurtasun-politika dauka eta { -brand-short-name } modu seguruan konekta daiteke soilik. Ezin duzu gunea bisitatzeko salbuespenik gehitu.
+cert-error-trust-certificate-transparency-what-can-you-do-about-it = Ziurrenik ezer ez, litekeena baita gunearekin berarekin arazo bat dagoela.
+certerror-blocked-by-corp-headers-description = Batzuetan beraientzat eta zu bezalako jendearentzat babesak ezartzen dituzte webguneek, beste guneekin nahi ez diren interakzioetatik kanpo mantentzeko.
+certerror-coop-learn-more = Cross Origin Opener Policies (COOP) politikari buruzko argibide gehiago
+certerror-coep-learn-more = Cross Origin Embedder Policies (COEP) politikari buruzko argibide gehiago
+# Variables:
+#   $responsestatus (string) - HTTP response status code (e.g., 500).
+#   $responsestatustext (string) - HTTP response status text (e.g., "Internal Server Error").
+neterror-response-status-code = Errore-kodea: { $responsestatus } { $responsestatustext }
+
+## Felt Privacy V1 Strings
+
+fp-neterror-offline-body-title = Badirudi zure Interneterako konexioak arazoren bat duela
+
+## Variables:
+##   $hostname (String) - Hostname of the website to which the user was trying to connect.
+
+fp-neterror-connection-intro = { -brand-short-name }(e)k ezin du sortu konexio segurua { $hostname } helbideko zerbitzariarekin.
+fp-neterror-offline-intro = { -brand-short-name }(e)k ezin du konektatu <strong>{ $hostname }</strong> helbideko zerbitzariarekin
+fp-neterror-offline-intro-2 = { -brand-short-name }(e)k ezin du konektatu <strong>{ $hostname }</strong> helbideko zerbitzariarekin.
+fp-neterror-net-timeout-intro = <strong>{ $hostname }</strong> ostalariko zerbitzaria erantzuteko denbora gehiegi ari da hartzen.
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = <strong>{ $hostname }</strong> ostalariko zerbitzariak errore bat itzuli du: { $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> ostalariak web segurtasunaren estandarrek onartzen ez dituzten karaktere hutsak bidali ditu goiburu batean.
+fp-neterror-content-encoding-intro = Ikusten saiatzen ari zaren orria ezin da erakutsi baliogabeko edo onartzen ez den konpresio mota bat erabiltzen duelako.
+fp-neterror-coop-coep-intro = { -brand-short-name }(e)k ez du orri hau kargatu bere segurtasun-konfigurazioa aurreko orriarenarekin bat ez datorrela baitirudi.
+fp-neterror-blocked-by-policy-intro = Zure erakundeak blokeatu egin du orri edo gune honetarako sarbidea.
+fp-neterror-http-auth-disabled-intro = Gunearen itxurak egiten dituen norbait saia liteke lapurtzen zure erabiltzaile-izena, pasahitza edo posta elektronikoko mezuak.
+fp-neterror-http-auth-disabled-secure-connection = Gune honek konexio segurua eskatzen du eta ezin duzu bisitatzeko salbuespenik gehitu.
+fp-neterror-why-did-this-happen = Zergatik gertatu da hau?
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+fp-neterror-cypher-overlap-why-dangerous-body = Badirudi gune honek segurtasun-arazo ezagunak dituen software zaharra darabilela.
+fp-neterror-http-auth-disabled-why-dangerous-body = { -brand-short-name } ez da { $hostname } ostalariaz fio konexioa ez delako segurua.
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-neterror-cypher-overlap-what-can-you-do-body = Ziurtatu { -brand-short-name }(e)n azken bertsioa darabilzula. Zoaz Laguntza > { -brand-short-name }(r)i buruz menu-aukerara. Dagoeneko { -brand-short-name }(e)n azken bertsioa badarabilzu, litekeena da arazoa guneak berak izatea.
+fp-neterror-offline-what-can-you-do-body = Saiatu beste gailu batekin konektatzen. Egiaztatu zure modem edo routerra. Deskonektatu eta konektatu berriro Wi-Fi sarera.
+fp-neterror-http-auth-disabled-what-can-you-do-body = Saiatu URLa HTTPSra aldatzen. Litekeena da arazoa guneak berak izatea.
+# This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
+fp-neterror-coop-coep-why-did-this-happen-body = Batzuetan beraientzat babesak ezartzen dituzte webguneek, beste guneekin nahi ez diren interakzioetatik kanpo mantentzeko.
+fp-learn-more-about-https-connections = HTTPS konexioei buruzko argibide gehiago
+fp-neterror-vpn-error-title = Ezin da VPNra konektatu
+fp-neterror-vpn-error-description = Saiatu berriro minutu batzuk barru.
+fp-neterror-denied-port-access = Helbide honek weba nabigatzeko ez den ataka bat erabiltzen du. { -brand-short-name }ek bertan behera utzi du eskaera zure babeserako.

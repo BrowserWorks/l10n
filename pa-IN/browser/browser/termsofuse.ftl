@@ -1,0 +1,21 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Existing User Terms of Use InfoBar
+
+#  Full infobar message, with inline links to the Terms of Use and Privacy Notice that will be added at runtime.
+existing-user-tou-message = <strong>ਅੱਪਡੇਟ</strong> ਅਸੀਂ { -brand-short-name }<a data-l10n-name="terms-of-use-link">ਵਰਤਣ ਦੀਆਂ ਸ਼ਰਤਾਂ</a> ਪੇਸ਼ ਕੀਤੀਆਂ ਅਤੇ ਸਾਡੀ <a data-l10n-name="privacy-notice-link">ਪਰਦੇਦਾਰੀ ਸੂਚਨਾ</a> ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਪੜਤਾਲ ਕਰਨ ਅਤੇ ਮਨਜ਼ੂਰ ਕਰਨ ਲਈ ਸਮਾਂ ਦਿਓ।
+# Infobar message for when the Privacy Notice is updated.
+existing-user-privacy-notice-update-message = { -brand-short-name } ਦੇ ਨਵੇਂ ਫ਼ੀਚਰਾਂ ਮੁਤਾਬਕ ਢਾਲਣ ਲਈ ਅਸੀਂ ਆਪਣੀ <a data-l10n-name="privacy-notice-link">ਪਰਦੇਦਾਰੀ ਸੂਚਨਾ</a> ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਹੈ।
+# Text for secondary button linking to FAQ page
+existing-user-tou-learn-more = ਹੋਰ ਜਾਣੋ
+# Text for primary button
+existing-user-tou-accept = ਮਨਜ਼ੂਰ
+
+## Existing User Terms of Use Spotlight
+
+# Full Spotlight body message, with inline links to the Terms of Use, Privacy Notice, and Learn More FAQ that will be added at runtime.
+tou-existing-user-spotlight-body = ਅਸੀਂ ਨਵੀਆਂ <a data-l10n-name="terms-of-use">ਵਰਤਣ ਦੀਆਂ ਸ਼ਰਤਾਂ</a> ਪੇਸ਼ ਕੀਤੀਆਂ ਹਨ ਅਤੇ <a data-l10n-name="privacy-notice">ਪਰਦੇਦਾਰੀ ਨੀਤੀ</a> ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਹੈ। ਥੋੜ੍ਹਾ ਵਕਤ ਦੇ ਕੇ ਪੜਤਾਲ ਕਰੋ ਅਤੇ ਮਨਜ਼ੂਰ ਕਰੋ। <a data-l10n-name="learn-more">ਹੋਰ ਜਾਣੋ</a>।
+tou-existing-user-spotlight-remind-me-later = ਮੈਨੂੰ ਬਾਅਦ ਵਿੱਚ ਚੇਤੇ ਕਰਵਾਓ

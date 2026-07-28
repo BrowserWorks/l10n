@@ -1,0 +1,420 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## These messages are used as headings in the recommendation doorhanger
+
+cfr-doorhanger-extension-heading = Estensione cussigiada
+cfr-doorhanger-feature-heading = Funtzionalidade cussigiada
+
+##
+
+cfr-doorhanger-extension-sumo-link =
+    .tooltiptext = Pro ite bido custu?
+cfr-doorhanger-extension-cancel-button = Immoe nono
+    .accesskey = I
+cfr-doorhanger-extension-ok-button = Agiunghe immoe
+    .accesskey = A
+cfr-doorhanger-extension-manage-settings-button = Gesti sa cunfiguratzione de is cussìgios
+    .accesskey = G
+cfr-doorhanger-extension-never-show-recommendation = No m'ammustres prus custu cussìgiu
+    .accesskey = o
+cfr-doorhanger-extension-learn-more-link = Àteras informatziones
+# This string is used on a new line below the add-on name
+# Variables:
+#   $name (String) - Add-on author name
+cfr-doorhanger-extension-author = dae { $name }
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-extension-notification = Cussìgiu
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
+cfr-doorhanger-extension-notification2 = Cussìgiu
+    .tooltiptext = Estensione cussigiada
+    .a11y-announcement = Estensione cussigiada a disponimentu
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
+cfr-doorhanger-feature-notification = Cussìgiu
+    .tooltiptext = Funtzionalidade cussigiada
+    .a11y-announcement = Funtzionalidade cussigiada a disponimentu
+
+## Add-on statistics
+## These strings are used to display the total number of
+## users and rating for an add-on. They are shown next to each other.
+
+# Variables:
+#   $total (Number) - The rating of the add-on from 1 to 5
+cfr-doorhanger-extension-rating =
+    .tooltiptext =
+        { $total ->
+            [one] { $total } isteddu
+           *[other] { $total } isteddos
+        }
+# Variables:
+#   $total (Number) - The total number of users using the add-on
+cfr-doorhanger-extension-total-users =
+    { $total ->
+        [one] { $total } utente
+       *[other] { $total } utentes
+    }
+
+## Mozilla Account messages
+
+cfr-doorhanger-bookmark-fxa-header = Sincroniza is sinnalibros tuos in ònnia logu.
+cfr-doorhanger-bookmark-fxa-body = Ite iscoberta! Immoe no abarres chenecustu sinnalibru in is dispositivos tuos. Est tempus de impreare { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = Ite iscoberta! Immoe no abarres chene custu sinnalibru in is dispositivos tuos. Est tempus de creare unu contu.
+cfr-doorhanger-bookmark-fxa-link-text = Sincroniza is sinnalibros immoe…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Butone Serra
+    .title = Serra
+fxa-adoption-addresses-backup-title = Immoe amus a fàghere una còpia de seguresa de is indiritzos sarvados
+fxa-adoption-addresses-backup-subtitle = Ampara is indiritzos sarvados cun una sincronizatzione tzifrada intre dispositivos.
+fxa-adoption-credit-cards-backup-title = Immoe amus a fàghere una còpia de seguresa de is mètodos de pagamentu
+fxa-adoption-credit-cards-backup-subtitle = Ampara is mètodos de pagamentu tuos cun una sincronizatzione tzifrada intre dispositivos.
+fxa-adoption-bookmarks-treatment-backup-title = Fatzamus una còpia de seguresa de is sinnalibros tuos
+fxa-adoption-primary-button-label = Registra·ti
+
+## Protections panel
+
+cfr-protections-panel-header = Nàviga chene sighiduras
+cfr-protections-panel-body = Ampara is datos tuos. { -brand-short-name } amparat dae is sighidores prus currentes chi sighint su chi ses faghende in lìnia.
+cfr-protections-panel-link-text = Àteras informatziones
+
+## What's New toolbar button and panel
+
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Funtzionalidade noa:
+cfr-whatsnew-button =
+    .label = Novidades
+    .tooltiptext = Novidades
+cfr-whatsnew-release-notes-link-text = Leghe is notas de sa versione
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (Datetime) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } at blocadu <b>{ $blockedCount }</b> sighidore dae su { DATETIME($date, month: "long", year: "numeric") }
+       *[other] { -brand-short-name } at blocadu prus de <b>{ $blockedCount }</b> sighidores dae su{ DATETIME($date, month: "long", year: "numeric") }
+    }
+cfr-doorhanger-milestone-ok-button = Ammustra totu
+    .accesskey = A
+cfr-doorhanger-milestone-close-button = Serra
+    .accesskey = S
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Sa seguresa tua est de importu. Immoe { -brand-short-name } imbia is rechestas DNS tuas in manera segura, cando possìbile, a unu servìtziu assotziadu pro t'amparare cando ses in lìnia.
+cfr-doorhanger-doh-header = Consultas prus seguras e tzifradas
+cfr-doorhanger-doh-primary-button-2 = AB
+    .accesskey = A
+cfr-doorhanger-doh-secondary-button = Disativa
+    .accesskey = D
+
+## Full Video Support CFR message
+
+cfr-doorhanger-video-support-body = Podet èssere chi is vìdeos de custu situ no siant ammustrados in manera curreta in custa versione de { -brand-short-name }. Pro una riprodutzione curreta, agiorna { -brand-short-name } immoe.
+cfr-doorhanger-video-support-header = Agiorna pro { -brand-short-name } bìdere su vìdeu
+cfr-doorhanger-video-support-primary-button = Agiorna immoe
+    .accesskey = i
+
+## VPN promotion dialog for public Wi-Fi users
+##
+## If a user is detected to be on a public Wi-Fi network, they are given a
+## bit of info about how to improve their privacy and then offered a button
+## to the Mozilla VPN page and a link to dismiss the dialog.
+
+# This header text can be explicitly wrapped.
+spotlight-public-wifi-vpn-header = Paret chi ses impreende una rete Wi-Fi pùblica
+spotlight-public-wifi-vpn-body = Pro cuare sa positzione tua e s'atividade de navigatzione, cunsìdera de impreare una rete privada virtuale (VPN). T'at a agiudare a abarrare suta amparu cando ses navighende in logos pùblicos comente aeroportos e tzilleris.
+spotlight-public-wifi-vpn-primary-button = Abarra suta amparu cun { -mozilla-vpn-brand-name }
+    .accesskey = s
+spotlight-public-wifi-vpn-link = Immoe nono
+    .accesskey = n
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Un’internet mègius cumintzat dae tue
+spotlight-better-internet-body = Impreende { -brand-short-name }, ses votende pro unu internet prus abertu e atzessìbile, chi est mègius pro totus.
+spotlight-peace-mind-header = Semus semper cun tue
+spotlight-peace-mind-body = Ònnia mese, { -brand-short-name } blocat una mèdia de prus che 3.000 sighiduras pro ònnia utente. Proite nudda si diat dèpere pònnere in mesu intre tue e s'internet bonu, mescamente genas pro sa riservadesa che a is sighiduras.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Apica a su Dock
+       *[other] Apica a sa barra de is tareas
+    }
+spotlight-pin-secondary-button = Immoe nono
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Su { -brand-short-name } nou. Prus privadu. Prus pagu sighiduras. Nissunu cumpromissu.
+mr2022-background-update-toast-text = Proa su { -brand-short-name } nou immoe, atualizadu cun sa prus protetzione manna contra a is sighiduras.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Aberi { -brand-shorter-name } immoe
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Regorda·mi·ddu a pustis
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Proa immoe
+    .accesskey = P
+firefoxview-cfr-secondarybutton = Immoe nono
+    .accesskey = n
+firefoxview-cfr-header-v2 = Recùpera a lestru dae ue dd'aias lassadu
+firefoxview-cfr-body-v2 = Recùpera is ischedas serradas dae pagu, e passa chene interrutziones dae unu dispositivu a s'àteru cun { -firefoxview-brand-name }.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Saluda a { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Boles abèrrere cussa ischeda in su telèfonu tuo? Piga·dda. Ti serbit cussu situ chi as bidu immoe immoe? Dd'agatas in { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-primarybutton = Càstia comente funtzionat
+firefoxview-spotlight-promo-secondarybutton = Brinca
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Sèbera sa cumbinatzione de colores
+    .accesskey = S
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Colora su navigadore tuo cun { -brand-short-name } cumbinatziones esclusivas ispiradas a is boghes chi ant cambiadu sa cultura.
+colorways-cfr-header-28days = Is cumbinatziones de colores Boghes indipendentes iscadint su 16 de ghennàrgiu
+colorways-cfr-header-14days = Is cumbinatziones de colores Boghes indipendentes iscadint de oe a duas chidas
+colorways-cfr-header-7days = Is cumbinatziones de colores Boghes indipendentes iscadint custa chida
+colorways-cfr-header-today = Is cumbinatziones de colores Boghes indipendentes iscadint oe
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = Boles permìtere a { -brand-short-name } de refudare is avisos de testimòngios?
+cfr-cbh-body = { -brand-short-name } podet refudare in automàticu medas de is rechestas de is avisos de testimòngios.
+cfr-cbh-confirm-button = Refuda is avisos de testimòngios
+    .accesskey = R
+cfr-cbh-dismiss-button = Immoe nono
+    .accesskey = n
+cookie-banner-blocker-onboarding-header = { -brand-short-name } at refudadu immoe immoe un’avisu de testimòngios pro tue
+cookie-banner-blocker-onboarding-body = Prus pagas distratziones, prus pagos testimòngios sighende·ti in custu situ.
+cookie-banner-blocker-onboarding-learn-more = Àteras informatziones
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Semus semper cun tue
+july-jam-body = { -brand-short-name } blocat unos 3000 e prus sighiduras a su mese pro onni utente, e ti donat un’atzessu a internet prus seguru, lestru e de calidade.
+july-jam-set-default-primary = Aberi is ligòngios cun { -brand-short-name }
+fox-doodle-pin-headline = Ti donamus torra su benebènnidu!
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Un’apuntu a su bolu: podes portare su navigadore tuo indipendente preferidu semper acanta.
+fox-doodle-pin-primary = Aberi is ligòngios mios cun { -brand-short-name }
+fox-doodle-pin-secondary = Immoe nono
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline =
+    <strong>Immoe podes abèrrere is documentos PDF in { -brand-short-name }.</strong>
+    Modìfica o firma is formulàrios deretu in su navigadore tuo. Pro cambiare custa optzione, chirca “PDF” in is cunfiguratziones.
+set-default-pdf-handler-primary = Apo cumprèndidu
+
+## PDF Annotations strings
+
+# “Sign on the dotted line” is an idiomatic English expression about
+# where to place your signature.
+# If this expression doesn’t have a direct translation, please
+# translate this alternative string: "Add your signature anywhere!"
+annotations-default-pdf-handler-headline = Agiunghe sa firma tua in onni logu!
+# “Go-to” is an idiomatic English expression referring to something that is used often.
+annotations-default-pdf-handler-body = Disinna, iscrie o càrriga sa firma tua, pone·dda in su logu chi ti serbit e sarva is firmas tuas pro sa borta chi benit.
+annotations-make-default-pdf-handler-title = Boles cunfigurare { -brand-short-name } comente s’editore de PDF predefinidu?
+annotations-make-default-pdf-handler-subtitle = As a tènnere atzessu a is ainas nostras onni borta chi abèrgias unu PDF.
+annotations-make-default-pdf-primary-cta-label = Cunfigura comente predefinidu
+annotations-make-default-pdf-next-label = Imbeniente
+
+## FxA sync CFR
+
+fxa-sync-cfr-header = Ses acanta de tènnere unu dispositivu nou?
+fxa-sync-cfr-body = Assegura·ti chi is ùrtimos sinnalibros, craes e ischedas bèngiant cun tue in ònnia momentu cando aberis unu navigadore { -brand-product-name } nou.
+fxa-sync-cfr-primary = Àteras informatziones
+    .accesskey = A
+fxa-sync-cfr-secondary = Regorda·mi·ddu prus tardu
+    .accesskey = R
+
+## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-heavy-user-header = Non t’iscaressas de fàghere una còpia de seguresa de is datos tuos
+device-migration-fxa-spotlight-heavy-user-body = Assegura·ti chi informatziones de importu, comente sinnalibros e craes, siant atuales e protetas in totu is dispositivos tuos.
+device-migration-fxa-spotlight-heavy-user-primary-button = Cumintza
+device-migration-fxa-spotlight-older-device-header = Trancuillidade, dae { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = Unu contu cunservat is informatziones tuas de importu atualizadas e amparadas in cale si siat dispositivu acàpies.
+device-migration-fxa-spotlight-older-device-primary-button = Crea unu contu
+device-migration-fxa-spotlight-getting-new-device-header-2 = Ses acanta de tènnere unu dispositivu nou?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Sighi una pariga de passos simpres pro ti nche portare a fatu sinnalibros, cronologia e craes cando incumentzas cun unu dispositivu nou.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Comente potzo fàghere una còpia de is datos mios?
+device-migration-fxa-spotlight-sync-header = Nàviga chene de ti pèrdere nudda
+device-migration-fxa-spotlight-sync-body = Sincroniza e tzifra totu s’informatzione de importu, comente sinnalibros e craes. Podes atzèdere a totu is datos tuos in onni logu si impreas { -brand-product-name }.
+device-migration-fxa-spotlight-sync-primary-button = Cumintza
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Boles chi { -brand-short-name } siat su programma predefinidu pro lèghere is PDF?</strong> Imprea { -brand-short-name } pro lèghere e cambiare is PDF sarbados in s’elaboradore tuo.
+pdf-default-notification-set-default-button =
+    .label = Cunfigura comente predefinidu
+pdf-default-notification-decline-button =
+    .label = Immoe nono
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>Boles abèrrere { -brand-short-name } ònnia borta chi torras a aviare s’elaboradore?</strong> Immoe podes cunfigurare { -brand-short-name } pro s’abèrgiat in automàticu cando torras a aviare su dispositivu.
+launch-on-login-learnmore = Àteras informatziones
+launch-on-login-infobar-confirm-button = Eja, aberi { -brand-short-name }
+    .accesskey = E
+launch-on-login-infobar-reject-button = Immoe nono
+    .accesskey = n
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>Boles abèrrere { -brand-short-name } ònnia borta chi torras a aviare s’elaboradore?</strong> Pro gestire is preferèntzias de aviu, chirca “aviu” in sa cunfiguratzione.
+launch-on-login-infobar-final-reject-button = No, gràtzias
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Lassa·nche is sighidores infadosos a tesu
+tail-fox-spotlight-subtitle = Nara adiosu a publitzidades infadosas chi ti sighint e gosa·ti un’esperièntzia de navigatzione segura e lestra.
+tail-fox-spotlight-primary-button = Aberi is ligòngios mios cun { -brand-short-name }
+tail-fox-spotlight-secondary-button = Immoe nono
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-january-message = Podet èssere chi <strong>is versiones betzas de { -brand-short-name } cumintzent a tènnere problemas su 14 de ghennàrgiu de su 2025.</strong>
+root-certificate-succession-infobar-march-message = <strong>Atualiza pro sighire a impreare { -brand-short-name } a pustis de su 14 de martzu de su 2025.</strong>
+root-certificate-succession-infobar-link = Pro ite depo atualizare?
+root-certificate-succession-infobar-primary-button =
+    .label = Atualiza immoe
+    .accesskey = A
+root-certificate-succession-infobar-secondary-button =
+    .label = A pustis
+    .accesskey = p
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-title = As pèrdidu un’atualizatzione de importu de { -brand-short-name }
+root-certificate-windows-background-notification-subtitle = Partes de importu de su navigadore no ant a funtzionare prus in pagora si no installas is atualizatziones. Est unu momentu bonu pro otènnere is ùrtimas protetziones e funtziones.
+root-certificate-windows-background-notification-learn-more-button = Àteras informatziones
+root-certificate-windows-background-notification-update-button = Atualiza { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Serra
+    .aria-label = Serra
+fxa-menu-message-sign-up-button = Registra·ti
+fxa-menu-message-sign-in-button = Identìfica·ti
+fxa-menu-message-sync-button = Avia sa sincronizatzione
+fxa-menu-message-sync-devices-primary-text = Sincroniza totu is dispositivos tuos
+fxa-menu-message-sync-devices-secondary-text = Atzede deretu a totu is datos tuos, comente sinnalibros e craes, in onni logu cun { -brand-short-name }.
+fxa-menu-message-sync-devices-secondary-text2 = Atzede deretu a totu is sinnalibros, is craes e àteru, dae totu is dispositivos in ue as fatu s’identificatzione cun { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Sincroniza totu is dispositivos tuos
+fxa-menu-message-backup-data-primary-text = Faghe una còpia de seguresa de is datos de navigatzione tuos
+fxa-menu-message-backup-data-secondary-text = Ampara in automàticu is sinnalibros, is craes e àteras informatziones in totu is dispositivos tuos.
+fxa-menu-message-backup-data-collapsed-text = Faghe una còpia de seguresa de is datos de navigatzione
+fxa-menu-message-backup-sync-primary-text = Mantene is datos tuos seguros e sincronizados
+fxa-menu-message-backup-sync-secondary-text = Sync faghet una còpia de seguresa de su prus de is datos tuos in manera chi nche potzas atzèdere dae ònnia logu cun { -brand-short-name }.
+fxa-menu-message-backup-sync-collapsed-text = Sincroniza e faghe una còpia de seguresa de is datos tuos
+fxa-menu-message-mobile-primary-text = Imbia ischedas a su telèfonu
+fxa-menu-message-mobile-secondary-text = Torra a cumintzare dae ue aias lassadu cando sincronizas is ischedas cun unu dispositivu mòbile.
+fxa-menu-message-mobile-collapsed-text = Sincroniza cun su telèfonu
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-title = Ti donamus torra su benebènnidu!
+multi-cta-fox-doodle-set-default-checkbox = Faghe de { -brand-short-name } su navigadore predefinidu
+multi-cta-fox-doodle-pin-startmenu-checkbox = Apica { -brand-short-name } a su menù de aviu
+multi-cta-fox-doodle-pin-checkbox =
+    { PLATFORM() ->
+        [macos] Mantene { -brand-short-name } in su Dock
+       *[other] Apica { -brand-short-name } a sa barra de is tareas
+    }
+multi-cta-fox-doodle-start-browsing-primary-button-label = Cumintza a navigare
+multi-cta-fox-doodle-main-browser-primary-button-label = Faghe de { -brand-short-name } su navigadore predefinidu
+multi-cta-fox-doodle-quick-reminder-subtitle = Un’apuntu a su bolu: podes portare su navigadore tuo preferidu e rispetosu de sa riservadesa semper acanta.
+
+## Windows 10 EoS Sync messages group 1 spotlight
+
+windows-10-eos-sync-spotlight-title = Depes atualizare dae Windows 10 de immoe a pagu?
+windows-10-eos-sync-spotlight-subtitle = Faghe una còpia de seguresa de is craes e de is sinnalibros in preparatzione pro brincare a cale si siat dispositivu.
+windows-10-eos-sync-spotlight-primary-label = Faghe una còpia de seguresa de { -brand-short-name }
+
+## Windows 10 EoS Sync messages group 1 toast notification
+
+windows-10-eos-sync-toast-title = Ses atualizende a Windows 11? Non perdas is sinnalibros e is craes.
+windows-10-eos-sync-toast-subtitle = Faghe una còpia de seguresa de is datos tuos in manera chi { -brand-short-name } siat prontu in cale si siat momentu, in custu elaboradore o in cussu imbeniente.
+windows-10-eos-sync-toast-primary-label = Cumintza
+windows-10-eos-sync-toast-secondary-label = Regorda·mi·ddu prus tardu
+
+## Windows 10 EoS sync messages group 2 feature callouts
+
+windows-10-eos-challenger-callout-title = { -brand-product-name } no est installadu in manera predefinida comente is àteros navigadores de is gigantes de sa tecnologia. Pro una resone.
+windows-10-eos-challenger-sync-callout-subtitle = Cando faghes una còpia de seguresa de is sinnalibros e is craes de { -brand-product-name }, est prus fàtzile a tramudare su navigadore chi preferis a su dispositivu imbeniente tuo.
+windows-10-eos-challenger-pin-callout-subtitle = Apica { -brand-shorter-name } a sa barra de tareas in manera chi su navigadore chi preferis siat semper in ue ti serbit.
+windows-10-eos-challenger-sync-primary-button = Faghe una còpia de seguresa de { -brand-shorter-name }
+windows-10-eos-challenger-pin-primary-button = Apica { -brand-shorter-name }
+windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } blocat is cripto-minadores, is sighiduras de retes sotziales e is generadores de imprentas digitales.
+windows-10-eos-sync-callout-privacy-screen-2-title = Pone is craes e is sinnalibros in seguresa pro su dispositivu imbeniente.
+windows-10-eos-callout-addons-primary-button = Càstia sa seletzione nostra
+windows-10-eos-sync-callout-addons-title = Non perdas is cumplementos tuos durante s’atualizatzione dae Windows 10.
+windows-10-eos-sync-callout-next-button = Imbeniente
+windows-10-eos-sync-callout-get-started-button = Cumintza
+
+## Windows 10 EoS Sync messages group 2 toast notification
+
+windows-10-eos-feature-toast-title = Is ischedas verticales e is grupos de ischedas sunt inoghe!
+windows-10-eos-feature-toast-whats-new-button = Bide is novidades
+windows-10-eos-feature-toast-dismiss-button = Iscarta
+
+## ETP (Enhanced Tracking Protection) Strict exceptions infobar
+##
+## These strings are displayed in an infobar notification that appears when
+## Enhanced Tracking Protection's Strict mode is causing website functionality
+## issues. The infobar offers users the option to apply automatic exceptions
+## to fix common site breakage by unblocking essential elements.
+
+etp-strict-exceptions-infobar-learn-more = Àteras informatziones
+etp-strict-exceptions-infobar-button = Àplica is curretziones
+    .accesskey = A
+etp-strict-exceptions-infobar-not-now = Immoe nono
+    .accesskey = n
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } no est su navigadore predefinidu tuo
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } no est su navigadore printzipale
+set-default-menu-message-row-layout-title = Faghe chi { -brand-short-name } siat su navigadore printzipale
+set-default-menu-message-row-layout-title-variant = Cunfigura { -brand-short-name } comente su navigadore predefinidu
+set-default-menu-message-row-layout-subtitle = Nàviga semper a sa lestra, cun seguresa e in manera privada.
+set-default-menu-message-primary-button = Cunfigura comente predefinidu
+set-default-menu-message-primary-button-variant = Cunfigura comente navigadore printzipale

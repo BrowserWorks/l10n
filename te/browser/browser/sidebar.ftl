@@ -1,0 +1,76 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+menu-view-contextual-password-manager =
+    .label = సంకేతపదాలు
+
+## Labels for sidebar history panel
+
+# Variables:
+#   $date (string) - Date to be formatted based on locale
+sidebar-history-date-today =
+    .heading = ఈరోజు - { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-yesterday =
+    .heading = నిన్న - { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-this-month =
+    .heading = { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-prev-month =
+    .heading = { DATETIME($date, month: "long", year: "numeric") }
+sidebar-history-delete =
+    .title = చరిత్ర నుండి తొలగించు
+sidebar-history-sort-option-date =
+    .label = తేదీ
+
+## Labels for sidebar customize panel
+
+sidebar-customize-firefox-tools-header =
+    .label = { -brand-product-name } పనిముట్లు
+
+## Labels for sidebar context menu items
+
+sidebar-context-menu-open-in-window =
+    .label = కొత్త కిటికీలో తెరువు
+sidebar-context-menu-open-in-private-window =
+    .label = కొత్త అంతరంగిక కిటికీలో తెరువు
+sidebar-context-menu-copy-link =
+    .label = లంకెను కాపీచేయి
+
+## Labels for sidebar bookmarks context menu items
+
+sidebar-bookmarks-context-menu-delete-separator =
+    .label = తొలగించు
+
+## Labels for sidebar menu items.
+
+sidebar-menu-history-label =
+    .label = చరిత్ర
+sidebar-menu-synced-tabs-label =
+    .label = ఇతర పరికరాల నుండి ట్యాబులు
+sidebar-menu-bookmarks-label =
+    .label = ఇష్టాంశాలు
+sidebar-menu-contextual-password-manager-label =
+    .label = సంకేతపదాలు
+sidebar-menu-more-tools-label =
+    .label = మరిన్ని పనిముట్లు
+
+## Headings for sidebar menu panels.
+
+sidebar-menu-history-header =
+    .heading = చరిత్ర
+sidebar-menu-syncedtabs-header =
+    .heading = ఇతర పరికరాల నుండి ట్యాబులు
+sidebar-menu-cpm-header =
+    .heading = సంకేతపదాలు
+sidebar-panel-header-close-button =
+    .tooltiptext = మూసివేయి
+
+## Titles for sidebar menu panels.
+
+sidebar-history-title = చరిత్ర
+
+## Context for closing synced tabs when hovering over the items
+
+show-sidebars =
+    .tooltiptext = పక్కపట్టీలు చూపించు
+    .label = పక్కపట్టీలు

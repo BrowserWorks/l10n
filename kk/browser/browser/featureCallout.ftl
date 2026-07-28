@@ -1,0 +1,277 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Callout dialog primary button to advance to next screen
+callout-primary-advance-button-label = Келесі
+# Callout dialog primary button to complete the feature tour
+callout-primary-complete-button-label = Түсіндім!
+
+## Firefox View feature tour strings
+
+# "Tab pickup" refers to the section in Firefox View that displays open
+# tabs from other devices
+callout-firefox-view-tab-pickup-title = Құрылғылар арасында ауысып, беттерді алып жүріңіз
+callout-firefox-view-tab-pickup-subtitle = Телефоныңыздан ашық беттерді жылдам алып, оларды осы жерде жұмысты жалғастыру үшін ашыңыз.
+callout-firefox-view-recently-closed-title = Жабылған беттерді жылдам қайтарыңыз
+callout-firefox-view-recently-closed-subtitle = Барлық жабық беттеріңіз осы жерде сиқырлы түрде көрсетіледі. Ешқашан сайтты кездейсоқ жабу туралы енді алаңдамаңыз.
+callout-firefox-view-colorways-title = Түстер шашырауын қосыңыз
+# "Shade" refer to different color options in each colorway.
+callout-firefox-view-colorways-subtitle = Өзіңізге сай келетін түсті түстер схемасы көмегімен таңдаңыз. Тек { -brand-product-name } ішінде.
+callout-firefox-view-colorways-reminder-title = Біздің соңғы түстер схемаларын зерттеңіз
+# “Shades” refers to the different color options in each colorways
+callout-firefox-view-colorways-reminder-subtitle = Браузеріңізді тәуелсіз дауыстармен шабыттандырылған осы айтулы реңктермен бояу. Тек { -brand-product-name } ішінде.
+
+## Continuous Onboarding - Firefox View: Tab pick up
+
+# “Boost your browsing” refers to the added benefit the user receives from having
+# access to the same browsing experience when moving from one browser to another.
+# Alternative: ”Improve your browsing experience with tab pickup”
+continuous-onboarding-firefox-view-tab-pickup-title = Беттерді таңдау арқылы веб-шолуды жылдамдатыңыз
+continuous-onboarding-firefox-view-tab-pickup-subtitle = Кез келген құрылғыдан ашық беттеріңізге қол жеткізіңіз. Оған қоса бетбелгілер, парольдер және т.б. синхрондаңыз.
+continuous-onboarding-firefox-view-tab-pickup-primary-button-label = Бастау
+
+## PDF.js Feature Tour Strings
+
+callout-pdfjs-edit-title = Жаңа мәтіндік құралымызбен PDF файлдарын өңдеңіз
+callout-pdfjs-edit-body-a = Тура { -brand-short-name } ішінде формаларды толтырыңыз, пікірлер немесе жазбаларды қосыңыз.
+callout-pdfjs-edit-body-b = Тегін онлайн түзеткіштерді енді іздемей-ақ қойыңыз. Тура { -brand-short-name } ішінде формаларды толтырыңыз, пікірлер немесе жазбаларды қосыңыз.
+callout-pdfjs-edit-button = Келесі
+callout-pdfjs-draw-title = Құжаттарға біздің жаңа сурет салу құралымен қол қойыңыз
+# “Mark up” refers to the process of “annotating” or adding free hand text or diagramming to the document.
+callout-pdfjs-draw-body-a = PDF файлдарын белгілеп, өзгерістерді сақтаңыз.
+# “Mark up” refers to the process of “annotating” or adding free hand text or diagramming to the document.
+callout-pdfjs-draw-body-b = Енді баспаға шығару мен сканерлеу керек емес. PDF файлдарын белгілеп, өзгерістерді сақтаңыз.
+callout-pdfjs-draw-button = Түсіндім!
+
+## Firefox View Discoverability Strings
+
+fx-view-discoverability-title = Бұл бетті жапқыңыз келмеді ма?
+fx-view-discoverability-subtitle = Оны осы жерден жылдам тауып, қайта ашыңыз. Біз сіз үшін жақында жабылған беттер тарихын сақтаймыз.
+fx-view-discoverability-primary-button-label = { -firefoxview-brand-name } ашу
+fx-view-discoverability-secondary-button-label = Елемеу
+
+## Split Dismiss Button Labels
+
+# Blocks the message from showing again
+split-dismiss-button-dont-show-option =
+    .label = Бұл ұсынысты қайта көрсетпеу
+# Dismisses message and reduces frequency of message
+split-dismiss-button-show-fewer-option =
+    .label = Азырақ ұсыныстарды көрсету
+# Opens about:preferences#general-cfrfeatures
+split-dismiss-button-manage-settings-option =
+    .label = Баптауларды басқару
+# Accessibility label for dropdown menu button
+split-dismiss-button-default-label =
+    .title = Көбірек опциялар
+
+## Login Status Advisory Callout (points to the account icon)
+
+# The 'account icon' is the toolbar button with a 'profile' icon of a human
+# head/shoulders. It's for dealing with your Mozilla account. When hovering the
+# icon, the tooltip says 'Account'.
+login-status-advisory-title = Сіз жүйеден шықтыңыз. Жүйеге кіру үшін тіркелгі таңбашасын басыңыз.
+
+## Bookmarks toolbar callout strings
+
+bookmarks-toolbar-callout-1-title = Бұл сайтты сіздің бетбелгілер панеліне қосу керек пе?
+bookmarks-toolbar-callout-1-subtitle = Жылдам қол жеткізу үшін бетбелгіңіз адрес жолағының астында сақталады.
+bookmarks-toolbar-callout-1-primary-button-label = Бетбелгіні қосу
+bookmarks-toolbar-callout-1-secondary-button-label = Жоқ, рахмет
+# Visible if user adds a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
+bookmarks-toolbar-callout-2a-title = Қосымша бетбелгілерді оңай қосыңыз
+bookmarks-toolbar-callout-2a-subtitle = Беттерді осында сүйреп апарып тастаңыз — сүйікті сайттарыңызды әрдайым қолжетімді етуге болады.
+bookmarks-toolbar-callout-2a-primary-button-label = Түсіндім
+# Reverts the bookmarks toolbar to the default setting
+bookmarks-toolbar-callout-2a-secondary-button-label = Құралдар панелін жасыру
+# Visible if user declines to add a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
+bookmarks-toolbar-callout-2b-title = Бетбелгілер панелін ашық ұстау керек пе?
+bookmarks-toolbar-callout-2b-subtitle = Жиі кіретін басқа сайттарды да қоса аласыз. Сүйікті веб-сайттарыңыз әрдайым қолжетімді болуы үшін беттерді осында сүйреп апарып тастаңыз.
+bookmarks-toolbar-callout-2b-primary-button-label = Ашық ұстау
+# Reverts the bookmarks toolbar to the default setting
+bookmarks-toolbar-callout-2b-secondary-button-label = Жоқ, рахмет
+
+## Perplexity callout strings
+
+perplexity-callout-theme-1-title = Бірден дұрыс жауап керек пе?
+perplexity-callout-theme-2-title = Perplexity қолданып көріңіз: іздеудің жаңа әдісі
+perplexity-callout-theme-1-subtitle-1 = Perplexity қолданып көріңіз. Дереккөздері көрсетілген толық жауаптарды алғыңыз келсе, оны іздеу батырмасынан таңдаңыз.
+perplexity-callout-theme-1-subtitle-2 = Сұрақтар қойыңыз. Толық, дәлелді жауаптар алыңыз. Perplexity қолданып көру үшін оны іздеу батырмасынан таңдаңыз.
+perplexity-callout-theme-2-subtitle-1 = Perplexity сұраңыз. Толық жауаптар мен дереккөздері беріледі.
+perplexity-callout-theme-2-subtitle-2 = Сұрақтар қойыңыз. Толық, дәлелді жауаптар алыңыз.
+perplexity-callout-primary-label = Perplexity сұрау
+perplexity-callout-secondary-label-1 = Елемеу
+perplexity-callout-secondary-label-2 = Түсіндім
+
+## Startpage callout strings. Startpage (https://www.startpage.com/) is a
+## brand name and should not be translated or transliterated.
+
+start-page-callout-title = Жекелікке бағытталған жаңа іздеуді қолданып көргіңіз келе ме?
+start-page-callout-subtitle = Startpage қызметін қолданып көріңіз. Ол іздеулеріңізді басынан бастап жеке етуге арналған.
+start-page-callout-primary-label = Startpage қолданып көру
+start-page-callout-secondary-label = Елемеу
+
+## Account Adoption Passwords callout strings
+
+# Suggestion to backup passwords by signing up for Mozilla account and using sync
+fxa-adoption-passwords-title = Пароль сақталды. Оның сақтық көшірмесін жасайық.
+fxa-adoption-passwords-subtitle = Парольдеріңізді құрылғыларыңызбен шифрленген түрде синхрондау арқылы қорғаңыз.
+# Opens Mozilla accounts sign-up page
+fxa-adoption-passwords-primary-button-label = Тіркелу
+
+## Taskbar Tabs callout strings
+
+taskbar-tabs-social-callout-title = Сүйікті таспаларыңызды тапсырмалар панелінде сақтаңыз
+taskbar-tabs-social-callout-subtitle = Әлеуметтік желілеріңізді { -brand-short-name } арқылы қорғалған, оңтайландырылған терезеде қолданба ретінде іске қосыңыз.
+taskbar-tabs-chat-callout-title = Тапсырмалар панелінен чаттасыңыз
+taskbar-tabs-chat-callout-subtitle = Чат сайттарыңызды { -brand-short-name } арқылы қорғалған, оңтайландырылған терезеде қолданба ретінде іске қосыңыз.
+taskbar-tabs-email-callout-title = Эл. поштаңызды тапсырмалар тақтасында сақтаңыз
+taskbar-tabs-email-callout-subtitle = Электрондық поштаны { -brand-short-name } арқылы қорғалған, оңтайландырылған терезеде қолданба ретінде іске қосыңыз.
+taskbar-tabs-media-callout-title = Тапсырмалар панелі арқылы стримингке қайта оралыңыз
+taskbar-tabs-media-callout-subtitle = Стимингтік сайттарыңызды { -brand-short-name } арқылы қорғалған, оңтайландырылған терезеде қолданба ретінде іске қосыңыз.
+taskbar-tabs-value-prop-callout-title = Бұл сайтты тапсырмалар панеліне қосыңыз
+taskbar-tabs-value-prop-callout-subtitle = Оны бір рет басу арқылы жеке терезеде және оңтайландырылған интерфейспен іске қосыңыз.
+
+## Windows 10 EoS Sync messages group 1 callouts
+
+windows-10-eos-sync-urgency-title-1 = Windows 11-ге ауысқан кезде сақталған деректеріңіздің барлығын жоғалтып алмаңыз.
+windows-10-eos-sync-urgency-subtitle-1 = { -brand-short-name } бетбелгілерін, парольдер және баптауларын қауіпсіз сақтау әрі оңай қалпына келтіру үшін қазір синхрондаңыз.
+windows-10-eos-sync-urgency-title-2 = Windows 10-мен қоштасып жатырсыз ба? Ауысқан кезде деректеріңізді қорғаңыз.
+windows-10-eos-sync-urgency-subtitle-2 = { -brand-short-name } браузерін күнделікті пайдаланбасаңыз да, бетбелгілер мен парольдер қауіпсіздігін және қолжетімділігін қамтамасыз ету үшін синхрондауды іске қосыңыз.
+windows-10-eos-sync-new-device-title-1 = Келесі құрылғыңызда бәрін басынан бастау қаупіне жол бермеңіз.
+windows-10-eos-sync-new-device-subtitle-1 = Жаңа құрылғыға ауысқан кезде { -brand-short-name } бетбелгілерін, парольдер және таңдаулы баптауларын өзіңізбен бірге алып жүру үшін синхрондаңыз.
+windows-10-eos-sync-new-device-title-2 = Жаңа құрылғыға көшіп жатырсыз ба? Маңызды нәрселеріңізді жоғалтып алмаңыз.
+windows-10-eos-sync-new-device-subtitle-2 = { -brand-short-name } браузерін қаншалықты жиі пайдалансаңыз да, синхрондау бетбелгілеріңізді, парольдер және баптауларыңызды қорғайды.
+windows-10-eos-sync-new-device-primary-label = Қазір синхрондау
+windows-10-eos-sync-general-title-1 = Өзіңізге ыңғайлап баптаған { -brand-short-name } браузерін қорғаңыз.
+windows-10-eos-sync-general-subtitle-1 = Өзіңіз үшін маңызды деректерді сақтап қалу үшін парольдер, бетбелгілер, баптаулар және басқа да деректерді сақтық көшірмеге алыңыз және синхрондаңыз.
+windows-10-eos-sync-general-title-2 = Қазір парольдер бен бетбелгілеріңіздің көшірмесін жасап алу үшін қолайлы сәт.
+windows-10-eos-sync-general-subtitle-2 = { -brand-short-name } браузеріне сеніп тапсырған деректеріңізді қорғау және оларды кез келген жерде, кез келген уақытта қайта алу үшін қазір синхрондаңыз.
+windows-10-eos-sync-tour-title-1 = Беттер тым көп пе? Беттерді топтарға біріктіріп ретке келтіріңіз.
+windows-10-eos-sync-tour-subtitle-1 = Бір бетті екіншісінің үстіне сүйреп апарып, топ құрыңыз және жұмысыңызды реттеңіз.
+windows-10-eos-sync-tour-title-2 = Windows 11 үшін жұмысыңызды ретке келтіріңіз.
+windows-10-eos-sync-tour-subtitle-2 = Ауыспас бұрын бетбелгілер, парольдер және баптауларыңыздың сақтық көшірмесін жасау үшін оларды синхрондаңыз.
+windows-10-eos-sync-split-dismiss-button-show-fewer-option =
+    .label = Азырақ ұсыныстарды көрсету
+windows-10-eos-sync-dismiss-button-label = Елемеу
+windows-10-eos-sync-callout-primary-advance-button-label = Келесі
+
+## Link Preview Onboarding message callout strings
+
+link-preview-onboarding-callout-title = Жаңа: Сілтемелерді алдын ала қарау үшін шертіп, басып тұрыңыз
+link-preview-onboarding-callout-description = Сілтеменің басуға тұрарлық екенін анықтау үшін қысқаша сипаттаманы, оқу уақытын және т.б. ақпаратты көріңіз. Сондай-ақ бұл функция тышқанның оң жақ батырмасын басқанда да қолжетімді.
+
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = Беттер топтары арқылы ретсіздіктен арылыңыз
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = Беттерді тапсырма немесе тақырып бойынша топтастырыңыз. Керек болса, басқаларын сүйреп қосыңыз.
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = Топты жасау
+
+## Sidebar Strings
+
+sidebar-button-callout-title = Беттер атауларын бүйір панельде көрсету
+sidebar-button-callout-subtitle = Бүйір панелін кеңейту үшін бүйір панелі батырмасын пайдаланыңыз, осылай беттер атауларын көре аласыз.
+sidebar-button-callout-vertical-tabs = Бертерді көрсету үшін құралдар тақтасындағы бүйірлік панель батырмасын басыңыз.
+sidebar-deprecation-callout-title = Жаңартылған бүйірлік панель жақын арада қолжетімді болады
+sidebar-deprecation-callout-subtitle = Біз сіз қазір қолданып отырған бүйірлік панель нұсқасын біртіндеп қолданыстан шығарып жатырмыз. Жаңартылған бүйірлік панельді байқап көріңіз. Ол жылдамырақ жұмыс істейді және сізге көбірек құралдарға қолжетімділік береді.
+sidebar-deprecation-cta-button = Оны қазір қолданып көру
+
+## Sidebar Vertical Tabs Strings
+
+vertical-tabs-callout-1-title = Көптеген беттерден шаршадыңыз ба?
+vertical-tabs-callout-1-subtitle = Бетбелгілер тізімін жылдам шолу үшін тік беттердің жаңа орналасуын қолданып көріңіз. Алғашқы сынақтан өткізушілер бұл орналасу өздерін реттелген сезінуге көмектесетінін айтты. Қалаған кезде ауыстыра аласыз.
+vertical-tabs-callout-1-cta-button = Вертикалды беттерді қолданып көру
+vertical-tabs-callout-2-cta-button = Қазір қолданып көру
+vertical-tabs-callout-2-title = Көптеген беттерді ашық ұстау керек пе? Тік беттерді қолданып көріңіз.
+vertical-tabs-callout-2-subtitle = Бұл жайма беттер тізімін жылдам шолуға мүмкіндік береді. Сондай-ақ, бет атауларын көбірек не азырақ көру үшін енін реттеуге болады.
+
+## Sidebar Vertical Tabs Pinning Strings
+
+sidebar-pins-callout-title = Маңызды беттеріңізден жаңылысып жүрсіз бе?
+sidebar-pins-callout-subtitle = Беттер тізімінің жоғарғы жағына қою үшін оларды бекітіп көріңіз. Бекіткіңіз келетін бетке тышқанның оң жақ пернесін басып, «Бетті бекіту» командасын таңдаңыз.
+sidebar-pins-callout-cta-button = Бетті бекіту
+
+## Pinning Tabs Strings
+
+pin-tabs-callout-1-title = Маңызды беттерді қол жетімді жерде сақтаңыз
+pin-tabs-callout-1-subtitle = Бетті бекіту үшін оны беттер жолағының басына қарай сүйреңіз. Немесе тышқанның оң жақ батырмасын басып, «Бетті бекіту» командасын таңдаңыз.
+pin-tabs-callout-cta-1-button = Бұл бетті бекіту
+pin-tabs-callout-2-title = Жиі кіретін беттерді бекітіңіз
+pin-tabs-callout-2-subtitle = Кез келген бетті бекіту үшін оны беттер жолағының басына сүйреңіз. Немесе тышқанның оң жақ батырмасын басып, "Бетті бекіту" таңдаңыз.
+pin-tabs-callout-cta-2-button = Бұл бетті бекіту
+pin-tabs-callout-3-title = Маңызды сайттарды қол жетімді жерде сақтаңыз
+pin-tabs-callout-4-title = Жиі кіретін сайттарды бекітіңіз
+
+## Sidebar Onboarding Strings
+
+sidebar-customization-callout-1-title = Бүйір панелі: құралдар мен беттерге арналған орын
+sidebar-customization-callout-1-subtitle = { -brand-product-name } бүйірлік панелі сізге шолу тарихына, басқа құрылғылардағы беттерге және ЖИ чатботқа негізгі терезеден шықпай-ақ жедел қол жеткізуге мүмкіндік береді.
+sidebar-customization-callout-callout-button = Бүйір панелін баптау
+sidebar-customization-callout-dismiss-button = Бүйір панельді жасыру
+sidebar-customization-callout-2-title = { -brand-product-name } бүйірлік панелін өз қалауыңызша баптаңыз
+sidebar-customization-callout-2-subtitle = Құралдарды қосыңыз және алып тастаңыз. Беттерді бүйірлік панельге орналастырыңыз. ЖИ чат-ботын қолданып көріңіз. Бүйірлік панельді қалай баптауды өзіңіз шешесіз.
+
+## Sidebar Callout Survey Strings
+
+sidebar-callout-survey-title = { -brand-short-name } жақсартуға көмектесіңіз
+sidebar-callout-survey-satisfaction-question = { -brand-short-name } бүйір панелін қолдану тәжірибесіне қаншалықты көңіліңіз толады?
+sidebar-callout-survey-privacy-notice-link = Жекелік ескертуі
+sidebar-callout-survey-very-satisfied = Өте жақсы
+sidebar-callout-survey-satisfied = Жақсы
+sidebar-callout-survey-neutral = Бейтарап
+sidebar-callout-survey-dissatisfied-2 = Нашар
+sidebar-callout-survey-very-dissatisfied-2 = Өте нашар
+sidebar-callout-survey-dont-use-it = Мен оны қолданбаймын
+sidebar-callout-survey-productive-question =
+    Сіз бұл мәлімдемемен қаншалықты келісесіз:<br/>
+    "{ -brand-short-name } бүйір панелі маған өнімдірек болуыма көмектеседі"?
+sidebar-callout-survey-strongly-agree = Толықтай келісемін
+sidebar-callout-survey-agree = Келісемін
+sidebar-callout-survey-disagree = Келіспеймін
+sidebar-callout-survey-strongly-disagree = Мүлдем келіспеймін
+sidebar-callout-survey-features-question = Төменде ықтимал бүйір панелі мүмкіндіктері берілген. Олардың қайсысы { -brand-short-name } ішінде өнімділігіңізді көбірек арттырады?
+sidebar-callout-survey-split-view = Кез келген екі веб-сайтты қатар бөлінген көріністе бірден қараңыз
+sidebar-callout-survey-keep-website-open = Шолу кезінде веб-сайтты эл. пошта немесе күнтізбе сияқты бүйір панелінде ашық ұстаңыз
+sidebar-callout-survey-saved-websites-2 = Бетбелгілерге жылдам қол жеткізу
+sidebar-callout-survey-none-of-above = Жоғарыдағы ешқайсысы
+sidebar-callout-survey-submit = Жіберу
+sidebar-callout-survey-thank-you = Пікіріңізге рахмет!
+sidebar-genai-survey-satisfaction-question = Бүйір панелінде AI чат-ботына қол жеткізу мүмкіндігіне қаншалықты қанағаттанасыз?
+sidebar-genai-survey-productive-question =
+    Сіз бұл мәлімдемемен қаншалықты келісесіз:<br/>
+    "Бүйір панеліндегі AI чат-боты маған өнімдірек болуға көмектеседі"?
+splitview-onboarding-callout-title-1 = Бөлінген көрініс: көп тапсырманы орындаудың жақсырақ жолы
+splitview-onboarding-callout-subtitle-1 = Бір уақытта екі бетті көру үшін осы бетті тышқанның оң жағымен шертіп, «Бөлінген көріністі қосу» таңдаңыз.
+splitview-onboarding-callout-cta-1 = Қазір қолданып көру
+splitview-onboarding-callout-title-2 = Бөлінген көрініспен бір уақытта екі бетті көру
+splitview-onboarding-callout-subtitle-2 = Қосымша терезесіз. Беттерді ауыстырусыз. Осы бетті тышқанның оң жағымен шертім, «Бөлінген көріністі қосу» таңдаңыз.
+splitview-onboarding-callout-cta-2 = Бөлінген көріністі қолданып көру
+unified-search-callout-title = Іздеу жүйелері арасында ауысу
+unified-search-callout-subtitle = Нақты іздеуіңізге ең қолайлы нұсқаны таңдаңыз.
+unified-search-callout-primary-label = Келесі
+unified-search-callout-secondary-label = Елемеу
+unified-search-engines-callout-title = Жарлық арқылы іздеу
+unified-search-engines-callout-subtitle = Тарихыңыздан, бетбелгілерден, беттерден немесе басқа іздеу жүйесі арқылы іздеу үшін «@» белгісін және одан кейін кілт сөзді теріңіз.
+unified-search-engines-callout-primary-label = Түсіндім
+actions-callout-title = Жалпы тапсырмаларды орындау немесе негізгі баптауларға қол жеткізу
+# The user can type "print" and "clear" and a button will appear in the
+# search bar (e.g. Print page) the user can click to initiate the action.
+# These example text inputs correlate to the the following strings
+# (either matching the whole string, or the first word of the string).
+# "print" - quickactions-cmd-print
+# "clear" - quickactions-cmd-clearrecenthistory2
+# When localizing, ensure the translations match to ensure the action button appears as expected.
+actions-callout-subtitle = Бетті басып шығару үшін «print» немесе тарихты тазалау үшін «clear» сияқты әрекетті жазып көріңіз.

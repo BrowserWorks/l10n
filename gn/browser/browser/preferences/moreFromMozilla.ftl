@@ -1,0 +1,113 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## These strings are used in the about:preferences moreFromMozilla page
+
+more-from-moz-title = Hetave { -vendor-short-name }-gui
+more-from-moz-page-header =
+    .heading = Hetave { -vendor-short-name }-gui
+more-from-moz-category =
+    .tooltiptext = Hetave { -vendor-short-name }-gui
+more-from-moz-subtitle = Ehecha ambue { -vendor-short-name } ojapopyre oikóva oykeko hag̃ua Ñanduti hesãivape.
+more-from-moz-firefox-mobile-title = { -brand-product-name } pumbyrýpe g̃uarã
+more-from-moz-firefox-mobile-description = Pumbyry kundahára omotendéva nde rekoñemi.
+more-from-moz-firefox-mobile-title-1 = { -brand-product-name } pumbyrýpe g̃uarã
+more-from-moz-firefox-mobile =
+    .label = { -brand-product-name } pumbyrýpe g̃uarã
+    .description = Kundahára pumbyrygua omotenondéva nde rekoñemi.
+more-from-moz-mozilla-vpn-title = { -mozilla-vpn-brand-name }
+more-from-moz-mozilla-vpn-description = Ejuhu peteĩ ñepytyvõ kundahára ha ñemo’ã ojekuaa’ỹvagui.
+more-from-moz-qr-code-box-firefox-mobile-title = Emboguejy ne pumbyrýpe. Emoma’ẽ ne ra’ãnganohẽha pe QR ayvu rehe. Osẽvove pe juajuha, eiporavóke.
+more-from-moz-qr-code-box-firefox-mobile-button = Emondo mboguejy juajuha ne pumbyrýpe
+more-from-moz-qr-code-firefox-mobile-img =
+    .alt = QR ayvu pumbyrygua emboguejy { -brand-product-name } ndive
+more-from-moz-button-mozilla-vpn-2 = Ereko VPN
+more-from-moz-learn-more-link = Kuaave
+more-from-moz-title2 = Hetave { -vendor-short-name }-gui
+    .title = Hetave { -vendor-short-name }-gui
+
+## These strings are for the Firefox Relay card in about:preferences moreFromMozilla page
+
+more-from-moz-firefox-relay-title = { -relay-brand-name }
+more-from-moz-firefox-relay-description = Emo’ã ñanduti veve g̃uahẽha ha heraite ñanduti veve rovamo’ãha reiguáva ndive.
+more-from-moz-firefox-relay-button = Erekóke { -relay-brand-short-name }
+
+## These strings are for the Mozilla Monitor card in about:preferences moreFromMozilla page
+
+more-from-moz-mozilla-monitor-title = { -mozmonitor-brand-name }
+more-from-moz-mozilla-monitor-us-description = Egueru ijehegui ne maranduete jehechapyréva.
+more-from-moz-mozilla-monitor-global-description = Tog̃uahẽ kyhyjerã ne mba’ekuaarã oñemboguáramo.
+more-from-moz-mozilla-monitor-button = Erekóke { -monitor-brand-short-name }
+
+## These strings are for the Solo card in about:preferences moreFromMozilla page
+
+more-from-moz-solo-title = { -solo-ai-brand-name } AI
+more-from-moz-solo-description = Emoheñói ne ñanduti rendarã ha eiporu hendatee voi viru’ỹetére.
+more-from-moz-solo-button = Eiporu { -solo-ai-brand-name }
+more-from-moz-solo-title-2 = { -solo-ai-brand-name } IA ñanduti rogue moheñoiha
+
+## These strings are for the MDN card in about:preferences moreFromMozilla page
+
+more-from-moz-mdn-description = Eikuaa ñanduti ñemboguata kuaukaha ndive ha opamba’e reigua ha tuichaháicha.
+more-from-moz-mdn-button = Eñembokatupyry ñanduti mboguatarãme
+more-from-moz-mdn-title2 = { -mdn-brand-name }
+
+## These strings are for the Thunderbird card in about:preferences moreFromMozilla page
+
+more-from-moz-thunderbird-title = { -thunderbird-brand-name }
+more-from-moz-thunderbird-description = Ñanduti veve, arapapaha ha ñehenoirã reigua, hendáva ipotaháicha.
+more-from-moz-thunderbird-button = Erekóke { -thunderbird-brand-short-name }
+
+## These strings are for the Mozilla New Products card in about:preferences moreFromMozilla page
+
+more-from-moz-new-products-title = { -vendor-short-name } Apopyre Pyahu
+more-from-moz-new-products-description = Eikuaa umi mba’e ipyahuvéva { -vendor-short-name } rehegua.
+more-from-moz-new-products-button = Ehecha apopyre pyahu
+
+## These strings are for the config-based (SRD) moreFromMozilla page using
+## moz-promo, moz-fieldset (.label/.description), and moz-box-link (.label).
+
+more-from-moz-firefox-mobile-qr-promo =
+    .message = Emoha’ãnga ne pumbyry térã tabléta guive ereko hag̃ua tembiporu’i. Eikutu juajuha osẽ vove.
+more-from-moz-firefox-mobile-email-link = Emondo juajuha mboguejyrã ñanduti veve rupi ne pumbyrýpe
+
+## Product card strings for the config-based path. Each entry provides both
+## .label (title) and .description for a moz-fieldset inside a moz-card.
+
+more-from-moz-mozilla-monitor-card =
+    .label = { -mozmonitor-brand-name }
+    .description = Eikuaa moõpa ojekuaa ne maranduete ñandutípe ñemoha’ãnga reigua rupi.
+more-from-moz-mozilla-vpn-card =
+    .label = { -mozilla-vpn-brand-name }
+    .description = Ereko ñemo’ã opaite tembiporu’ípe g̃uarã, ani ne mohendahápe año. Ereko mba’ekuaarã tekorosãme Wi-Fi ha ñanduti hekorosã’ỹvape.
+more-from-moz-firefox-relay-card =
+    .label = { -relay-brand-name }
+    .description = Emo’ã ne ñe’ẽmondo g̃uahẽha spam-gui ñanduti veve rovamo’ãha reigua rupi.
+more-from-moz-mdn-card =
+    .label = { -mdn-brand-name }
+    .description = Eikuaa ñanduti mboguata guatarã ha hesegua reigua.
+more-from-moz-thunderbird-card =
+    .label = { -thunderbird-brand-name }
+    .description = Eike ñanduti vevépe, arapapaha ha ñe’ẽrã tembiporu’i ipya’évape.
+more-from-moz-solo-card-1 =
+    .label = { -solo-ai-brand-name }
+    .description = Emoheñói ne ñanduti rogue pya’e ha embojoaju ne rendaite teéva reiete.
+more-from-moz-new-products-card2 =
+    .label = { -vendor-short-name } Apopyre pyahu
+    .description = Eikuaa ore remiandu ha tembiporupyahu ipyahuvéva.
+more-from-moz-mozilla-monitor-box-link =
+    .label = Erekóke { -monitor-brand-short-name }
+more-from-moz-mozilla-vpn-box-link =
+    .label = Ereko { -mozilla-vpn-brand-name }
+more-from-moz-firefox-relay-box-link =
+    .label = Erekóke { -relay-brand-short-name }
+more-from-moz-mdn-box-link =
+    .label = MDN-pe jeike
+more-from-moz-thunderbird-box-link =
+    .label = Erekóke { -thunderbird-brand-short-name }
+more-from-moz-solo-box-link =
+    .label = Eiporu { -solo-ai-brand-name }
+more-from-moz-new-products-box-link =
+    .label = Ehecha apopyre pyahu

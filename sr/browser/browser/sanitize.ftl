@@ -1,0 +1,133 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+sanitize-prefs2 =
+    .title = Подешавања за брисање историје
+    .style = min-width: 34em
+sanitize-prefs-style =
+    .style = width: 17em
+sanitize-dialog-title2 =
+    .title = Обриши податке прегледања и колачиће
+    .style = min-width: 34em
+sanitize-dialog-title =
+    .title = Брисање историје
+    .style = min-width: 34em
+# When "Time range to clear" is set to "Everything", this message is used for the
+# title instead of dialog-title.
+sanitize-dialog-title-everything =
+    .title = Брисање све историје
+    .style = min-width: 34em
+clear-data-settings-label = При затварању { -brand-short-name } аутоматски брише све
+sanitize-on-shutdown-description = Аутоматски обриши све означене ставке када се { -brand-short-name } затвори.
+
+## clear-time-duration-prefix is followed by a dropdown list, with
+## values localized using clear-time-duration-value-* messages.
+## clear-time-duration-suffix is left empty in English, but can be
+## used in other languages to change the structure of the message.
+##
+## This results in English:
+## Time range to clear: (Last Hour, Today, etc.)
+
+clear-time-duration-prefix =
+    .value = Временски опсег за брисање:{ " " }
+    .accesskey = В
+clear-time-duration-prefix2 =
+    .value = Када:
+    .accesskey = К
+clear-time-duration-value-last-hour =
+    .label = последњи сат
+clear-time-duration-value-last-2-hours =
+    .label = последња два сата
+clear-time-duration-value-last-4-hours =
+    .label = последња четири сата
+# Variables:
+#   $midnightTime (String) - Time of midnight (00:00 hours) - to inform the user that history will be cleared after midnight
+clear-time-duration-value-since-midnight =
+    .label = Од { $midnightTime }
+clear-time-duration-value-today =
+    .label = данас
+clear-time-duration-value-everything =
+    .label = све
+clear-time-duration-suffix =
+    .value = { "" }
+
+## These strings are used as section comments and checkboxes
+## to select the items to remove
+
+history-section-label = Историја
+item-history-and-downloads =
+    .label = Историја прегледања и преузимања
+    .accesskey = И
+item-history-and-downloads-description2 = Брише историју сајтова и преузимања
+item-cookies =
+    .label = Колачићи
+    .accesskey = К
+# Variables:
+#   $amount (Number) - Amount of site data currently stored on disk
+#   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
+item-cookies-site-data-with-size =
+    .label = Колачићи и подаци сајтова ({ $amount } { $unit })
+    .accesskey = л
+item-cookies-site-data =
+    .label = Колачићи и подаци сајта
+    .accesskey = ц
+item-cookies-site-data-description = Може вас одјавити са сајтова или испразнити корпе за куповину
+item-active-logins =
+    .label = Активне сесије
+    .accesskey = А
+item-cache =
+    .label = Кеш
+    .accesskey = ш
+# Variables:
+#   $amount (Number) - Amount of cached data
+#   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
+item-cached-content-with-size =
+    .label = Привремене кеширане датотеке и странице ({ $amount } { $unit })
+    .accesskey = т
+item-cached-content =
+    .label = Привремене кеширане датотеке и странице
+    .accesskey = в
+item-cached-content-description = Чисти ставке које помажу сајтовима да се брже учитавају
+item-form-search-history =
+    .label = Историја образаца и претраге
+    .accesskey = с
+item-site-prefs =
+    .label = Подешавања сајта
+    .accesskey = ј
+item-formdata-prefs =
+    .label = Сачувани подаци из образаца
+    .accesskey = о
+item-formdata-description = Чисти ствари као што су имена, е-поште и друге ставке које уносите у обрасце
+item-site-prefs-description = Враћа ваша овлашћења и поставке сајта на изворна подешавања
+data-section-label = Подаци
+item-site-settings =
+    .label = Подешавања сајта
+    .accesskey = S
+item-offline-apps =
+    .label = Офлајн садржај
+    .accesskey = ф
+sanitize-everything-undo-warning = Ова радња се не може опозвати.
+window-close =
+    .key = w
+sanitize-button-ok =
+    .label = Обриши
+sanitize-button-ok2 =
+    .label = Очисти
+sanitize-button-ok-on-shutdown =
+    .label = Сачувај измене
+# The label for the default button between the user clicking it and the window
+# closing.  Indicates the items are being cleared.
+sanitize-button-clearing =
+    .label = Брисање
+# Warning that appears when "Time range to clear" is set to "Everything" in Clear
+# Recent History dialog, provided that the user has not modified the default set
+# of history items to clear.
+sanitize-everything-warning = Обрисаћете сву историју.
+# Warning that appears when "Time range to clear" is set to "Everything" in Clear
+# Recent History dialog, provided that the user has modified the default set of
+# history items to clear.
+sanitize-selected-warning = Обрисаћете све изабране ставке.
+# Label shown next to the loading spinner while calculating the size of cached data
+# and cookies in the clear data dialog.
+sanitize-calculating-size = Израчунавам…

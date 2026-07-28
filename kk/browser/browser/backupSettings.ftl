@@ -1,0 +1,268 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# This string is used to name the folder that users will save backups to.
+# "Restore" is an action and intended for prompting users to select this folder
+# when following backup restoration steps. Please only include characters that
+# can be used for folders. Invalid characters will be automatically stripped out
+# or replaced with underscores.
+backup-folder-name = { -brand-product-name } қалпына келтіру
+# This string is used for the generated file that will be stored within the
+# backup-folder-name folder. It will have the profile name and an encoding of
+# the backup date appended to it, followed by `.html`. Please only include
+# characters that can be used for filenames. Invalid characters will be
+# automatically stripped out or replaced with underscores.
+#
+# This is an example of what the final filename might look like after the
+# profile name and backup date are appended to it:
+#
+# FirefoxBackup_default_20240606-1830.html
+backup-file-name = { -brand-product-name } сақтық көшірмесі
+settings-data-backup-header2 =
+    .label = Сақтық көшірме
+    .description = Бетбелгілер, тарих пен басқа деректеріңізді автоматты түрде қорғау.
+settings-data-backup-toggle = Сақтық көшірмені басқару
+settings-data-backup-toggle-on2 =
+    .label = Қор көшірмені іске қосу
+settings-data-backup-toggle-off2 =
+    .label = Қор көшірмені сөндіру
+settings-data-backup-trigger-button = Қазір сақтық көшірме жасау
+settings-data-backup-in-progress-button = Сақтық көшірме жасалуда…
+settings-data-backup-in-progress-message =
+    .message = Сақтық көшірме жасалуда…
+settings-data-backup-last-backup-date = Соңғы сақтық көшірме: { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") }
+settings-data-backup-scheduled-backups-on2 =
+    .label = Сақтық көшірме: ІСКЕ ҚОСУЛЫ
+settings-data-backup-scheduled-backups-off2 =
+    .label = Сақтық көшірме: СӨНДІРУЛІ
+# "Location" refers to the folder where backups are being written to.
+settings-data-backup-last-backup-location2 =
+    .label = Сақтық көшірме орны
+settings-data-backup-last-backup-location-show-in-folder = Бумада көрсету
+settings-data-backup-last-backup-location-edit = Түзету…
+settings-data-create-backup-error = { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") } уақытында сақтық көшірмені жасау кезінде қате орын алды
+settings-sensitive-data-encryption-description = Парольдеріңіз бен төлем әдістеріңізді сақтық көшірмеге сақтаңыз және барлық деректеріңізді шифрлеу арқылы қауіпсіз ұстаңыз.
+settings-data-toggle-encryption-label2 =
+    .label = Сезімтал деректеріңіздің сақтық көшірмесін жасаңыз
+    .description = Парольдер мен төлем әдістеріңіздің сақтық көшірмесін жасаңыз, және де деректеріңізді шифрлеумен қауіпсіз түрде ұстаңыз.
+# Variables:
+#   $fileName (String) - The file name of the last backup that was created.
+settings-data-backup-last-backup-filename = Файл атауы: { $fileName }
+settings-data-backup-restore-scheduled-on =
+    .label = Деректерді қалпына келтіру
+    .description = { -brand-product-name } деректерін соңғы рет жасалған сақтық көшірмеден қалпына келтіру.
+settings-data-backup-restore-scheduled-off =
+    .label = Деректерді қалпына келтіру
+    .description = Басқа құрылғыдағы { -brand-product-name } қор көшірмесін деректеріңізді қалпына келтіру үшін қолданыңыз.
+
+##
+
+settings-sensitive-data =
+    .label = Сезімтал деректер
+settings-data-toggle-encryption-support-link = Көбірек білу
+settings-data-change-password2 =
+    .label = Парольді өзгерту
+
+## These strings are displayed in a modal when users want to turn on scheduled backups.
+
+turn-on-scheduled-backups-header = Сақтық көшірме жасауды іске қосу
+turn-on-scheduled-backups-description = { -brand-short-name } деректеріңіздің көшірмесін әр 24 сағат сайын жасап отырады. Мәселе туындаса немесе жаңа құрылғы алсаңыз, оны қалпына келтіре аласыз.
+turn-on-scheduled-backups-support-link = Ненің сақтық көшірмесі жасалады?
+# "Location" refers to the save location or a folder where users want backups stored.
+turn-on-scheduled-backups-location-label = Орналасу
+# Variables:
+#   $recommendedFolder (String) - Name of the recommended folder for saving backups
+turn-on-scheduled-backups-location-default-folder =
+    .value = { $recommendedFolder } (ұсынылады)
+turn-on-scheduled-backups-location-choose-folder =
+    .value = Орналасуды таңдау
+turn-on-scheduled-backups-location-choose-button =
+    { PLATFORM() ->
+        [macos] Таңдау…
+       *[other] Шолу…
+    }
+turn-on-scheduled-backups-encryption-label = Сезімтал деректеріңіздің сақтық көшірмесін жасаңыз
+turn-on-scheduled-backups-encryption-create-password-label = Пароль
+# Users will be prompted to re-type a password, to ensure that the password is entered correctly.
+turn-on-scheduled-backups-encryption-repeat-password-label = Парольді қайталау
+turn-on-scheduled-backups-cancel-button = Бас тарту
+turn-on-scheduled-backups-confirm-button = Сақтық көшірме жасауды іске қосу
+# Tell the user there was an error accessing the user's selected backup
+# folder. The folder may be invalid or inaccessible.
+turn-on-scheduled-backups-error-file-system = Таңдалған сақтық көшірме бумасында қате орын алды. Басқа буманы таңдап, қайталап көріңіз.
+turn-on-scheduled-backups-error-default-dir-denied = Сіздің сақтық көшірме бумасыңызға қол жеткізе алмадық. Жаңа орналасуды таңдап көріңіз.
+backup-error-file-system = { -brand-short-name } сақтық көшірмесін жасау кезінде таңдалған сақтық көшірме бумасымен мәселе туындады.
+
+## These strings are displayed in a modal when users want to turn off scheduled backups.
+
+turn-off-scheduled-backups-header = Сақтық көшірмені сөндіру керек пе?
+turn-off-scheduled-backups-description = Бұл барлық сақтық көшірме деректеріңізді өшіреді. Бұл әрекетті кері қайтару мүмкін емес.
+turn-off-scheduled-backups-support-link = Көбірек білу
+turn-off-scheduled-backups-cancel-button = Бас тарту
+turn-off-scheduled-backups-confirm-button = Сөндіру және сақтық көшірмені өшіру
+
+## These strings are displayed in a modal when users want restore from a backup.
+
+restore-from-backup-header = Деректерді қалпына келтіру
+# Variables:
+#   $date (string) - Date to be formatted based on locale
+restore-from-backup-support-link1 = Не қалпына келтіріледі?
+restore-from-backup-filepicker-label = Сақтық көшірме файлы
+restore-from-backup-filepicker-title = Сақтық көшірме файлын таңдаңыз:
+restore-from-backup-file-choose-button =
+    { PLATFORM() ->
+        [macos] Таңдау…
+       *[other] Шолу…
+    }
+restore-from-backup-password-label = Пароль
+restore-from-backup-password-description = Бұл сіздің шифрленген сақтық көшірмеңіздің құлпын ашады.
+restore-from-backup-cancel-button = Бас тарту
+restore-from-backup-confirm-button = Қалпына келтіріп, қайта іске қосу
+restore-from-backup-restoring-button = Қалпына келтірілуде…
+restore-from-backup-type-group-label =
+    .label = Ағымдағы профильді алмастыру керек пе?
+restore-from-backup-type-replace =
+    .label = Барлық деректерді осы сақтық көшірмемен алмастыру
+restore-from-backup-type-add =
+    .label = Деректерді сақтау және жаңа профиль жасау
+restore-from-backup-profiles-disabled-message = Бұл сіздің барлық ағымдағы { -brand-short-name } деректеріңізді сақтық көшірмемен алмастырады.
+
+## These strings are displayed in a small error message bar in the settings
+## menu if there was an error when trying to restore a backed up profile
+
+# User is not authorized to restore a particular backup file, usually because
+# the backup file is encrypted and the user provided a recovery password that
+# was different than the password the user configured for their backup file
+backup-service-error-incorrect-password = Пароль қате. <a data-l10n-name="incorrect-password-support-link">Әлі де мәселелер бар ма?</a>
+# The backup file (or specific data files within the backup file) could not be
+# loaded and parsed correctly, most likely due to data corruption of the
+# backup file itself
+backup-service-error-corrupt-file =
+    .heading = Бұл файл жұмыс істемейді
+    .message = Сақтық көшірме файлында қате орын алды. Басқа файлды таңдап, қайталап көріңіз.
+# The backup file cannot be restored. The currently running application may
+# be too old and may not support features in the backed up profile.
+# Alternatively, the backup file may be too old and some of the feature in
+# the backed up profile may no longer be supported.
+backup-service-error-unsupported-version =
+    .heading = Бұл файл жұмыс істемейді
+    .message = Сіз таңдаған файл { -brand-short-name } бағдарламасының осы нұсқасымен үйлесімді емес. Басқа файлды таңдап, қайталап көріңіз.
+# The backup file cannot be restored. The currently running application is not
+# the same application that created the backup file (e.g. Firefox cannot
+# restore a Thunderbird profile backup).
+backup-service-error-unsupported-application =
+    .heading = Бұл файл жұмыс істемейді
+    .message = Сіз таңдаған файл { -brand-short-name } арқылы жасалмаған. Басқа файлды таңдап, қайталап көріңіз.
+# Recovery from backup did not succeed. Potential causes could be file system
+# errors, internal code errors, decryption errors, etc.
+backup-service-error-recovery-failed =
+    .heading = { -brand-short-name } қалпына келтіре алмады
+    .message = { -brand-short-name } бағдарламасын қайта іске қосып, сақтық көшірмені қалпына келтіруді қайталап көріңіз.
+# There was some error in the backup service but we don't have a more specific
+# idea of what went wrong
+backup-service-error-went-wrong2 =
+    .heading = Өкінішке орай, сақтық көшірме жасау кезінде қате орын алды.
+    .message = Бірнеше минуттан кейін қайталап көріңіз.
+
+## These strings are displayed in a modal when users want to enable encryption or change the password for an existing backup.
+
+enable-backup-encryption-header = Сезімтал деректеріңіздің сақтық көшірмесін жасаңыз
+enable-backup-encryption-support-link = Көбірек білу
+enable-backup-encryption-create-password-label = Пароль
+# Users will be prompted to re-type a password, to ensure that the password is entered correctly.
+enable-backup-encryption-repeat-password-label = Парольді қайталау
+enable-backup-encryption-cancel-button = Бас тарту
+enable-backup-encryption-confirm-button = Сақтау
+change-backup-encryption-header = Сақтық көшірме паролін өзгерту
+
+## These strings are displayed in a tooltip showing what requirements are met while creating a password.
+
+password-rules-header = Парольге қойылатын талаптар
+password-rules-length-description = Кемінде 8 таңба
+password-rules-email-description = Сіздің эл. пошта адресіңіз емес
+password-rules-disclaimer = Қауіпсіз болыңыз — парольдерді қайта қолданбаңыз. <a data-l10n-name="password-support-link">Мықты парольдерді жасау</a> бойынша қосымша кеңестерді қараңыз.
+password-validity-has-email = Эл. пошта адресі болмауы тиіс
+password-validity-do-not-match = Парольдер өзара сәйкес келмейді
+
+## These strings are only used for assistive technologies, like screen readers, in the password requirements tooltip.
+
+password-rules-a11y-success =
+    .alt = Сәтті
+password-rules-a11y-warning =
+    .alt = Ескерту
+
+## These strings are displayed in a modal when users want to disable encryption for an existing backup.
+
+disable-backup-encryption-header = Парольмен қорғауды алып тастау
+disable-backup-encryption-description2 = Сақталған парольдер мен төлем әдістеріңіздің сақтық көшірмесі енді жасалмайды.
+disable-backup-encryption-support-link = Ненің сақтық көшірмесі жасалады?
+disable-backup-encryption-cancel-button = Бас тарту
+disable-backup-encryption-confirm-button = Парольді өшіру
+
+## These strings are used to tell users when errors occur when using
+## the backup system
+
+backup-error-password-requirements = Пароліңіз талаптарға сай емес. Басқа парольді қолданып көріңіз.
+# This error message will be shown to the user when something went wrong with
+# the backup system but we do not have any more specific idea of what went
+# wrong. This message invites the user to try an action again because there
+# is a chance that the action will succeed if retried.
+backup-error-retry = Бірнәрсе қате кетті. Қайталап көріңіз.
+
+## These strings are inserted into the generated single-file backup archive.
+## The single-file backup archive is a specially-crafted, static HTML file
+## that is placed within a user specified directory (the Documents folder by
+## default) within a folder labelled with the "backup-folder-name" string.
+
+backup-file-header = { -brand-short-name } қалпына келтіруге дайын
+backup-file-title = { -brand-short-name } қалпына келтіру
+backup-file-intro = Шолуға қайта оралып, барлық бетбелгілерді, тарихты және басқа деректерді қалпына келтіріңіз. <a data-l10n-name="backup-file-support-link">Көбірек білу</a>
+backup-file-path-label = Сақтық көшірме файлы:
+backup-file-encryption-state-label = Шифрленген:
+backup-file-encryption-state-value-encrypted = Иә
+backup-file-encryption-state-value-not-encrypted = Жоқ
+backup-file-creation-device-label = Құрылғы:
+backup-file-creation-date-label = Жасалған:
+# Variables:
+#   $date (Datetime) - The date the backup was created
+backup-file-creation-date-value = { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") }
+backup-file-how-to-restore-header = Қалай қалпына келтіруге болады:
+# The ☰ character is intended as a visual icon representing the Firefox
+# application menu.
+backup-file-moz-browser-restore-step-1 = Қолданба ☰ мәзірін ашып, Баптаулар > Синхрондау бөліміне өтіңіз
+backup-file-moz-browser-restore-step-2-1 = «Деректерді қалпына келтіру» басып, осы файлды таңдаңыз
+backup-file-moz-browser-restore-step-2 = "Сақтық көшірме файлын таңдау" басып, осы файлды таңдаңыз
+backup-file-moz-browser-restore-step-3 = Сұралған кезде { -brand-short-name } қайта іске қосыңыз
+backup-file-other-browser-restore-step-1 = { -brand-short-name } жүктеп алып, орнатыңыз
+backup-file-download-moz-browser-button = Жүктеп алу
+# The ☰ character is intended as a visual icon representing the Firefox
+# application menu.
+backup-file-other-browser-restore-step-2 = { -brand-short-name } іске қосып, қолданба мәзірін ☰ ашып, Баптаулар > Синхрондау бөліміне өтіңіз
+backup-file-other-browser-restore-step-3-1 = «Деректерді қалпына келтіру» басып, осы файлды таңдаңыз
+backup-file-other-browser-restore-step-3 = "Сақтық көшірме файлын таңдау" басып, осы файлды таңдаңыз
+backup-file-other-browser-restore-step-4 = Сұралған кезде { -brand-short-name } қайта іске қосыңыз
+
+## These strings are used in the about:restore and about:welcome pages
+## These pages guide the user on browser startup to help them restore a backup
+## if they have one on their file system.
+
+# Variables:
+# $numberOfOtherBackupsFound (number) - The number of backups found other than the displayed default backup
+other-backup-files-founds =
+    { $numberOfOtherBackupsFound ->
+        [one] <b>Ескерту:</b> { $numberOfOtherBackupsFound } басқа сақтық көшірме файлы табылды
+       *[other] <b>Note:</b> { $numberOfOtherBackupsFound } басқа сақтық көшірме файлы табылды
+    }
+# Variables:
+#   $profileName (String) - The name of the profile that was backed up.
+#   $date (Datetime) - The date the backup was created.
+#   $machineName (String) - Name of the machine that the backup was created on.
+backup-file-creation-metadata2 = <b>{ $profileName }</b>, { $machineName } жерінде { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } күні жасалған
+# Variables:
+#   $deviceName (String) - The name of the device from which the backup was created.
+#   $date (Number) - The epoch timestamp of the restore.
+backup-restored-profile-name = { $deviceName } құрылғысынан { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") }, { DATETIME($date, hour: "2-digit", minute: "2-digit") } уақытында қалпына келтірілді.
+backup-file-restore-file-validation-error = Бұл файл жұмыс істемейді. Басқа файлды таңдап көріңіз. <a data-l10n-name="restore-problems">Әлі де мәселелер бар ма?</a>
+restore-from-backup-filepicker-input =
+    .placeholder = Ешбір файл таңдалмады

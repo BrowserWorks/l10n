@@ -1,0 +1,97 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+aboutDialog-title =
+    .title = زبار { -brand-full-name }
+releaseNotes-link = چ چیه نۊ هڌ
+update-checkForUpdatesButton =
+    .label = واجۊری سی ورۊ رسۊوی
+    .accesskey = C
+update-updateButton =
+    .label = سی ورۊ رسۊوی { -brand-shorter-name } ز نۊ ره‌س ونین
+    .accesskey = R
+update-checkingForUpdates = واجۊری سی ورۊ رسۊویا…
+settings-update-checking-for-updates =
+    .label = واجۊری سی ورۊ رسۊویا…
+
+## Variables:
+##   $transfer (string) - Transfer progress.
+
+settings-update-downloading = <img data-l10n-name="icon"/>دانلود ورۊ رسۊوی — <label data-l10n-name="download-status">{ $transfer }</label>
+aboutdialog-update-downloading = دانلود ورۊ رسۊوی — <label data-l10n-name="download-status">{ $transfer }</label>
+settings-update-downloading-2 =
+    .label = دانلود ورۊ رسۊوی — { $transfer }
+
+##
+
+update-applying = ائمال کردن ورۊ رسۊوی…
+settings-update-applying =
+    .label = ائمال کردن ورۊ رسۊوی…
+update-failed = ورۊ رسۊوی شکست خرد. <label data-l10n-name="failed-link">نوسخه نۊ ن دانلود کۊنین</label>
+update-failed-main = ورۊ رسۊوی شکست خرد. <a data-l10n-name="failed-link-main">نوسخه نۊ ن دانلود کۊنین</a>
+update-adminDisabled = دؽوۉدار سیستوم تووݩ ورۊ رسۊویا ن ز کار ونده
+update-policy-disabled = ورۊ رسۊویا و دست سازمووݩ ایسا قیر فعال وابیڌه
+settings-update-policy-disabled =
+    .label = ورۊ رسۊویا و دست سازمووݩ ایسا قیر فعال وابیڌه
+update-noUpdatesFound = { -brand-short-name } ورۊ هڌ
+settings-update-no-updates-found =
+    .label = { -brand-short-name } ورۊ هڌ
+aboutdialog-update-checking-failed = واجۊری سی ورۊ رسۊویا شکست خرد.
+settings-update-checking-failed =
+    .label = واجۊری سی ورۊ رسۊویا شکست خرد.
+update-otherInstanceHandlingUpdates = { -brand-short-name } هونی ز ی نمووه دی ورۊ ابۊ
+settings-update-other-instance-handling-updates =
+    .label = { -brand-short-name } هونی ز ی نمووه دی ورۊ ابۊ
+
+## Variables:
+##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
+
+aboutdialog-update-manual-with-link = ورۊ رسۊویا من <label data-l10n-name="manual-link">{ $displayUrl }</label> هڌسووݩ
+settings-update-manual-with-link = ورۊ رسۊویا من <a data-l10n-name="manual-link">{ $displayUrl }</a> هڌسووݩ
+update-unsupported = ری ای سیستوم نترین بیشتر ز یو ورۊ کۊنین. <label data-l10n-name="unsupported-link">قلوه دووسته بۊین</label>
+settings-update-unsupported = ری ای سیستوم نترین بیشتر ز یو ورۊ کۊنین. <a data-l10n-name="unsupported-link">قلوه دووسته بۊین</a>
+update-restarting = ره وندن دووارته…
+settings-update-restarting =
+    .label = ره وندن دووارته…
+update-internal-error2 = سی دل ختایی منی، واجۊری سی ورۊ رسۊوی یل ٱنجوم نوابی. ورۊ رسۊوی یل من <label data-l10n-name="manual-link">{ $displayUrl }</label> هڌسووݩ
+settings-update-internal-error = سی دل ختایی منی، واجۊری سی ورۊ رسۊوی یل ٱنجوم نوابی. ورۊ رسۊوی یل من <a data-l10n-name="manual-link">{ $displayUrl }</a> هڌسووݩ
+
+##
+
+# Variables:
+#   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
+aboutdialog-channel-description = هیم سکو من تورگه ورۊ رسۊوی <label data-l10n-name="current-channel">{ $channel }</label> هڌین.
+warningDesc-version = { -brand-short-name } آزمایشی هڌ وو گاشڌ نا پایدار بۊ.
+aboutdialog-help-user = { -brand-product-name } هیاری
+aboutdialog-submit-feedback = سبت منشڌ
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> ی <label data-l10n-name="community-exp-creditsLink">یکاگری جهۊوی</label> هڌ ک سی وب واز، پوی وولاتی وو من دسرس سی پوی کار اکونه.
+community-2 = { -brand-short-name } و دست <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> تراهی وابیڌه ک <label data-l10n-name="community-creditsLink">یکاگری جهۊوی</label> ز آڌومیلی هڌ ک سی وب واز، پوی وولاتی وو من دسرس سی پوی کار اکونن.
+helpus = اخۊین هیاری کۊنین؟ <label data-l10n-name="helpus-donateLink">هیاری نقدی</label> یا <label data-l10n-name="helpus-getInvolvedLink">بنین پا مشارکت!</label>
+bottomLinks-license = دووسمندیا موجوز
+bottom-links-terms = شرتا و کار گرؽڌن
+bottom-links-privacy = نوکات زفت مهرمووه ای
+bottomLinks-rights = هوقۊق منتورووݩ دیندایی
+bottomLinks-privacy = سیاست زفت مهرمووه ای
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits } بیتی)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ‫({ $isodate }) ({ $bits } بیتی)
+# Example of resulting string: 131.0a1 (aarch64)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch = { $version } ({ $arch })
+# Example of resulting string: 131.0a1 (2024-08-27) (aarch64)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $arch (String): name of the architecture (arm, aarch64, etc.)
+aboutdialog-version-arch-nightly = { $version } ({ $isodate }) ({ $arch })

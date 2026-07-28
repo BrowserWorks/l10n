@@ -1,0 +1,634 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### UI strings for the MR1 onboarding / multistage about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## Welcome page strings
+
+onboarding-welcome-header = { -brand-short-name } өніміне қош келдіңіз
+onboarding-start-browsing-button-label = Шолуды бастау
+onboarding-not-now-button-label = Қазір емес
+mr1-onboarding-get-started-primary-button-label = Бастау
+
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Тамаша, сіз { -brand-short-name } орнаттыңыз
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Енді сізге <img data-l10n-name="icon"/> <b>{ $addon-name }</b> орнатайық.
+return-to-amo-add-extension-label = Кеңейтуді қосу
+return-to-amo-add-theme-label = Теманы қосу
+return-to-amo-theme-install-complete-label = Тема орнатылды
+return-to-amo-extension-install-complete-label = Кеңейту орнатылды
+
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = { -brand-short-name } өніміне сәлем айтыңыз
+mr1-return-to-amo-addon-title = Сіздің қолыңызда жылдам, жеке браузер. Енді сіз <b>{ $addon-name }</b> қосып, { -brand-short-name } көмегімен одан да көп нәрсені жасай аласыз.
+mr1-return-to-amo-add-extension-label = { $addon-name } қосу
+
+## Multistage onboarding strings (about:welcome pages)
+
+
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Орындалу барысы: қадам { $current }, { $total } ішінен
+# This button will open system settings to turn on prefers-reduced-motion
+mr1-onboarding-reduce-motion-button-label = Анимацияларды сөндіру
+# String for the Firefox Accounts button
+mr1-onboarding-sign-in-button-label = Кіру
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
+# Variables:
+#   $previous (Str) - Previous browser name, such as Edge, Chrome
+mr1-onboarding-import-primary-button-label-attribution = { $previous } ішінен импорттау
+mr1-onboarding-theme-header = Оны өзіңіздікі етіп қылу
+mr1-onboarding-theme-subtitle = { -brand-short-name } өнімін тема көмегімен жеке қылыңыз.
+mr1-onboarding-theme-secondary-button-label = Қазір емес
+# System theme uses operating system color settings
+mr1-onboarding-theme-label-system = Жүйелік тема
+mr1-onboarding-theme-label-light = Ашық түсті
+mr1-onboarding-theme-label-dark = Күңгірт
+# "Alpenglow" here is the name of the theme, and should be kept in English.
+mr1-onboarding-theme-label-alpenglow = Alpenglow
+onboarding-theme-primary-button-label = Дайын
+
+## Accessible labels for the icon-only play/pause toggle that controls animated
+## illustrations on the onboarding screen. The button replaces the animation
+## with a static image when clicked.
+
+onboarding-animation-pause-button =
+    .aria-label = Анимацияны аялдату
+onboarding-animation-play-button =
+    .aria-label = Анимацияны ойнату
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of system theme
+mr1-onboarding-theme-tooltip-system =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйе баптауларын қолдану.
+# Input description for system theme
+mr1-onboarding-theme-description-system =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйе баптауларын қолдану.
+# Tooltip displayed on hover of light theme
+mr1-onboarding-theme-tooltip-light =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті теманы қолдану.
+# Input description for light theme
+mr1-onboarding-theme-description-light =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті теманы қолдану.
+# Tooltip displayed on hover of dark theme
+mr1-onboarding-theme-tooltip-dark =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті теманы қолдану.
+# Input description for dark theme
+mr1-onboarding-theme-description-dark =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті теманы қолдану.
+# Tooltip displayed on hover of Alpenglow theme
+mr1-onboarding-theme-tooltip-alpenglow =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        динамикалық, түрлі-түсті теманы қолдану.
+# Input description for Alpenglow theme
+mr1-onboarding-theme-description-alpenglow =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        динамикалық, түрлі-түсті теманы қолдану.
+# Selector description for default themes
+mr2-onboarding-default-theme-label = Бастапқы темаларды шолу.
+
+## Strings for Thank You page
+
+mr2-onboarding-thank-you-header = Бізді таңдағаныңызға рахмет
+mr2-onboarding-thank-you-text = { -brand-short-name } — коммерциялық емес ұйым қолдайтын тәуелсіз браузер. Біз интернетті бірге қауіпсіз, сау және жеке етіп жасаймыз.
+mr2-onboarding-start-browsing-button-label = Шолуды бастау
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
+##   $systemLanguage (String) - The name of the system language, e.g "Español (ES)"
+##   $appLanguage (String) - The name of the language shipping in the browser build, e.g. "English (EN)"
+
+onboarding-live-language-header = Өз тіліңізді таңдаңыз
+mr2022-onboarding-live-language-text = { -brand-short-name } сіздің тіліңізде сөйлейді
+mr2022-language-mismatch-subtitle = Біздің қауымдастықтың арқасында { -brand-short-name } 90-нан астам тілге аударылған. Жүйеңіз { $systemLanguage } тілін пайдаланып жатқан сияқты және { -brand-short-name } { $appLanguage } тілін пайдаланады.
+onboarding-live-language-button-label-downloading = { $negotiatedLanguage } тілдік дестесі жүктеліп алынуда…
+onboarding-live-language-waiting-button = Қолжетімді тілдер алынуда…
+onboarding-live-language-installing = { $negotiatedLanguage } тілдік дестесі орнатылуда…
+mr2022-onboarding-live-language-switch-to = { $negotiatedLanguage } тіліне ауысу
+mr2022-onboarding-live-language-continue-in = { $appLanguage } тілінде жалғастыру
+onboarding-live-language-secondary-cancel-download = Бас тарту
+onboarding-live-language-skip-button-label = Аттап кету
+
+## Firefox 100 Thank You screens
+
+# "Hero Text" displayed on left side of welcome screen. This text can be
+# formatted to span multiple lines as needed. The <span data-l10n-name="zap">
+# </span> in this string allows a "zap" underline style to be automatically
+# added to the text inside it. "Yous" should stay inside the zap span, but
+# "Thank" can be put inside instead if there's no "you" in the translation.
+# The English text would normally be "100 Thank-Yous" i.e., plural noun, but for
+# aesthetics of splitting it across multiple lines, the hyphen is omitted.
+fx100-thank-you-hero-text =
+    100
+    <span data-l10n-name="zap">рахмет</span>
+fx100-thank-you-subtitle = Бұл біздің 100-ші шығарылымымыз! Жақсырақ, сау интернет құруға көмектескеніңіз үшін рақмет.
+fx100-thank-you-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } өнімін Dock ішіне бекіту
+       *[other] { -brand-short-name } өнімін тапсырмалар панеліне бекіту
+    }
+fx100-upgrade-thanks-header = 100 рахмет
+# Message shown with a start-browsing button. Emphasis <em> should be for "you"
+# but "Thank" can be used instead if there's no "you" in the translation.
+fx100-upgrade-thank-you-body = Бұл - біздің 100-ші { -brand-short-name } шығарылымымыз. Жақсырақ, сау интернет құруға көмектескеніңіз үшін <em>сізге</em> рахмет.
+# Message shown with either a pin-to-taskbar or set-default button.
+fx100-upgrade-thanks-keep-body = Бұл біздің 100-ші шығарылымымыз! Біздің қауымдастықтың бір бөлігі болғаныңыз үшін рахмет. Келесі 100 шығарылым үшін { -brand-short-name } жақын ұстаңыз.
+mr2022-onboarding-secondary-skip-button-label = Бұл қадамды аттап кету
+
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Сақтау және жалғастыру
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = { -brand-short-name } өнімін негізгі браузер ету
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Бұрынғы браузерден импорттау
+
+## MR2022 New User Pin Firefox screen strings
+
+# Title used on about:welcome for new users when Firefox is not pinned.
+# In this context, open up is synonymous with "Discover".
+# The metaphor is that when they open their Firefox browser, it helps them discover an amazing internet.
+# If this translation does not make sense in your language, feel free to use the word "discover."
+mr2022-onboarding-welcome-pin-header = Ғажайып интернетті ашыңыз
+# Subtitle is used on onboarding page for new users page when Firefox is not pinned
+mr2022-onboarding-welcome-pin-subtitle = { -brand-short-name } қолданбасын кез келген жерден бір шерту арқылы іске қосыңыз. Сіз осы әрекетті жасаған сайын әр ретте ашық және тәуелсіз интернетті таңдайсыз.
+# Primary button string used on welcome page for when Firefox is not pinned.
+mr2022-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } өнімін Dock ішінде ұстау
+       *[other] { -brand-short-name } өнімін тапсырмалар панеліне бекіту
+    }
+# Primary button string used on welcome page for when Firefox is not pinned on MSIX
+mr2022-onboarding-pin-primary-button-label-msix = { -brand-short-name } өнімін тапсырмалар панеліне және басты мәзірге бекіту
+# Subtitle will be used when user already has Firefox pinned, but
+# has not set it as their default browser.
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-set-default-only-subtitle = Коммерциялық емес ұйым қолдайтын браузерден бастаңыз. Сіз интернетті шолған кезде біз сіздің жекелігіңізді қорғаймыз.
+
+## MR2022 Existing User Pin Firefox Screen Strings
+
+# Title used on multistage onboarding page for existing users when Firefox is not pinned
+mr2022-onboarding-existing-pin-header = { -brand-product-name } өніміне сүйіспеншілігіңіз үшін рахмет
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
+mr2022-onboarding-existing-pin-subtitle = Бір шерту арқылы кез келген жерден сауырақ Интернетті іске қосыңыз. Біздің соңғы жаңартуымыз сізге ұнайтын жаңа нәрселерге толы.
+# Subtitle will be used on the welcome screen for existing users
+# when they already have Firefox pinned but not set as default
+mr2022-onboarding-existing-set-default-only-subtitle = Интернетте шолу жасағанда жекелігіңізді қорғайтын браузерді пайдаланыңыз. Біздің соңғы жаңартуымыз сізге ұнайтын нәрселерге толы.
+mr2022-onboarding-existing-pin-checkbox-label = Сонымен қатар, { -brand-short-name } жекелік шолуын қосу
+
+## MR2022 New User Set Default screen strings
+
+# This string is the title used when the user already has pinned the browser, but has not set default.
+mr2022-onboarding-set-default-title = { -brand-short-name } өнімін негізгі браузер қылыңыз
+mr2022-onboarding-set-default-primary-button-label = { -brand-short-name } өнімін негізгі браузер етіңіз
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-set-default-subtitle = Коммерциялық емес ұйым қолдайтын браузерді қолданыңыз. Сіз интернетті шолған кезде біз сіздің жекелігіңізді қорғаймыз.
+
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
+
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-get-started-primary-subtitle = Біздің соңғы нұсқамыз сіз үшін жасалған, бұл интернетті шолуды бұрынғыдан да жеңілдетеді. Ол жаңа мүмкіндіктерге толы, олар сізге ұнайды деп ойлаймыз.
+mr2022-onboarding-get-started-primary-button-label = Бірнеше секундта баптау
+
+## MR2022 Get Started screen strings.
+## These strings will be used on the welcome page
+## when Firefox is already set to default and pinned.
+
+mr2022-onboarding-import-header = Найзағайдай жылдам баптау
+mr2022-onboarding-import-subtitle = { -brand-short-name } өнімін өзіңізге ұнайтындай етіп баптаңыз . Ескі браузерден бетбелгілер, парольдер және т.б. қосыңыз.
+mr2022-onboarding-import-primary-button-label-no-attribution = Бұрынғы браузерден импорттау
+
+## If your language uses grammatical genders, in the description for the
+## colorway feel free to switch from "You are a X. You…" (e.g. "You are a
+## Playmaker. You create…") to "X: you…" ("Playmaker: You create…"). This might
+## help creating a more inclusive translation.
+
+mr2022-onboarding-colorway-title = Сізге шабыт беретін түсті таңдаңыз
+mr2022-onboarding-colorway-subtitle = Тәуелсіз дауыстар мәдениетті өзгерте алады.
+mr2022-onboarding-colorway-primary-button-label-continue = Орнатып, жалғастыру
+mr2022-onboarding-existing-colorway-checkbox-label = { -firefox-home-brand-name } өнімін түрлі-түсті басты бетіңіз етіп жасаңыз
+mr2022-onboarding-colorway-label-default = Бастапқы
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Ағымдағы { -brand-short-name } түстері
+mr2022-onboarding-colorway-description-default = <b>Менің ағымдағы { -brand-short-name } түстерін қолдану.</b>
+mr2022-onboarding-colorway-label-playmaker = Плеймейкер
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Ойын жасаушысы (қызыл)
+mr2022-onboarding-colorway-description-playmaker = <b>Сіз ойын жасаушысыз.</b> Сіз жеңу мүмкіндігін жасайсыз және айналаңыздағы барлық адамдарға өз ойынын көтеруге көмектесесіз.
+mr2022-onboarding-colorway-label-expressionist = Экспрессионист
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Экспрессионист (сары)
+mr2022-onboarding-colorway-description-expressionist = <b>Сіз экспрессионистсіз.</b> Сіз әлемді басқаша көресіз және сіздің туындыларыңыз басқалардың эмоцияларын қорғайды.
+mr2022-onboarding-colorway-label-visionary = Визионер
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Көреген (жасыл)
+mr2022-onboarding-colorway-description-visionary = <b>Сіз көрегенсіз.</b> Сіз статус-квоға күмән келтіресіз және басқаларды жақсы болашақты елестетуге итермелейсіз.
+mr2022-onboarding-colorway-label-activist = Активист
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Белсенді (көк)
+mr2022-onboarding-colorway-description-activist = <b>Сіз белсендісіз.</b> Сіз әлемді өзіңіз тапқаннан да жақсы күйде қалдырып, басқаларды сенуге жетелейсіз.
+mr2022-onboarding-colorway-label-dreamer = Армандаушы
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Армандаушы (күлгін)
+mr2022-onboarding-colorway-description-dreamer = <b>Сіз армандаушысыз.</b> Сіз сәттілікке батылдар ұнайтынына сенесіз және басқаларды батыл болуға шабыттандырасыз.
+mr2022-onboarding-colorway-label-innovator = Жаңашыл
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Жаңашыл (қызғылт сары)
+mr2022-onboarding-colorway-description-innovator = <b>Сіз жаңашылсыз.</b> Сіз барлық жерде мүмкіндіктерді көресіз және айналаңыздағы адамдардың өміріне әсер етесіз.
+
+## MR2022 Multistage Mobile Download screen strings
+
+mr2022-onboarding-mobile-download-title = Ноутбуктен телефонға және кері өтіңіз
+mr2022-onboarding-mobile-download-subtitle = Беттерді бір құрылғыдан алып, тоқтаған жерінен басқа құрылғыда жалғастырыңыз. Оған қоса { -brand-product-name } пайдаланатын кез келген жерде бетбелгілер мен парольдерді синхрондаңыз.
+mr2022-onboarding-mobile-download-cta-text = Мобильді { -brand-product-name } алу үшін QR кодын сканерлеңіз немесе <a data-l10n-name="download-label">өзіңізге жүктеп алу сілтемесін жіберіңіз</a>.
+mr2022-onboarding-no-mobile-download-cta-text = Мобильді { -brand-product-name } жүктеп алу үшін, QR кодын сканерлеңіз
+
+## MR2022 Upgrade Dialog screens
+## Pin private window screen shown only for users who don't have Firefox private pinned
+
+mr2022-upgrade-onboarding-pin-private-window-header = Бір рет басу арқылы жеке шолу еркіндігін алыңыз
+mr2022-upgrade-onboarding-pin-private-window-subtitle = Сақталған cookie файлдары немесе тарихы жоқ, тікелей жұмыс үстеліңізден. Ешкім көрмейтіндей шолыңыз.
+mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
+    { PLATFORM() ->
+        [macos] { -brand-short-name } жекелік шолуын Dock-та ұстау
+       *[other] { -brand-short-name } жекелік шолуын тапсырмалар панеліне бекіту
+    }
+
+## MR2022 Privacy Segmentation screen strings
+
+mr2022-onboarding-privacy-segmentation-title = Біз әрқашан сіздің жекелігіңізді құрметтейміз
+mr2022-onboarding-privacy-segmentation-subtitle = Зияткерлік ұсыныстардан ақылдырақ іздеуге дейін біз үнемі жақсырақ, жекелігі көбірек { -brand-product-name } жасау үшін жұмыс жасаймыз.
+mr2022-onboarding-privacy-segmentation-text-cta = Шолуды жақсарту үшін деректеріңізді пайдаланатын жаңа мүмкіндіктерді ұсынғанда не көргіңіз келеді?
+mr2022-onboarding-privacy-segmentation-button-primary-label = { -brand-product-name } ұсыныстарын қолдану
+mr2022-onboarding-privacy-segmentation-button-secondary-label = Көбірек ақпаратты көрсету
+
+## MR2022 Multistage Gratitude screen strings
+
+mr2022-onboarding-gratitude-title = Сіз бізге жақсырақ Интернетті жасауға көмектесіп жатырсыз
+mr2022-onboarding-gratitude-subtitle = BrowserWorks ұсынған { -brand-short-name } қолданбасын пайдаланғаныңыз үшін рахмет. Сіздің қолдауыңызбен біз интернетті барлығына ашық, қолжетімді және жақсырақ ету үшін жұмыс істеп жатырмыз.
+mr2022-onboarding-gratitude-primary-button-label = Жаңалықтарын біліңіз
+mr2022-onboarding-gratitude-secondary-button-label = Шолуды бастау
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Өз үйіңіздегідей сезініңіз
+onboarding-infrequent-import-subtitle = Осында көпке дейін тұрақтап, немесе тек таныс болсаңыз да, бетбелгілер, парольдер және т.б. импорттай алатыныңызды есте сақтаңыз.
+onboarding-infrequent-import-primary-button = { -brand-short-name } ішіне импорттау
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Жұлдыздар мен гүлдермен қоршалған ноутбукта жұмыс істейтін адам
+mr2022-onboarding-default-image-alt =
+    .aria-label = { -brand-product-name } логотипін құшақтап тұрған адам
+mr2022-onboarding-import-image-alt =
+    .aria-label = Бағдарламалар таңбашалары қорабы бар скейтборд мінген адам
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Орталықта мобильді { -brand-product-name } жүктеп алу үшін QR коды бар лала гүлінің үстінен секірген бақалар
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Сиқырлы таяқша { -brand-product-name } жеке шолу логотипін қалпақтан шығарады
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Терілері ашық және күңгірт түсті қолдар сәлемдесуде
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Терезедегі түлкі мен үй өсімдігі бар терезе арқылы күннің батуы көрінісі
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Қол спрейі жасыл көздің, қызғылт сары аяқ киімнің, қызыл баскетбол добының, күлгін құлаққаптың, көк жүректің және сары тәждің түрлі-түсті коллажын бояйды
+
+## Device migration onboarding
+
+onboarding-device-migration-image-alt =
+    .aria-label = Ноутбук экранындағы түлкі қол бұлғап тұр. Ноутбукке тышқан жалғанған.
+onboarding-device-migration-title = Қайта келуіңізбен!
+onboarding-device-migration-subtitle = Бетбелгілер, парольдер және тарихты жаңа құрылғыда өзіңізбен бірге алып келу үшін{ -fxaccount-brand-name(capitalization: "sentence") } тіркегісіне кіріңіз.
+onboarding-device-migration-subtitle2 = Жаңа құрылғыңызға бетбелгілер, парольдер және тарихты өзіңізбен бірге алып келу үшін өз тіркелгіңізге кіріңіз.
+onboarding-device-migration-primary-button-label = Кіру
+
+## Add-ons Picker screen
+
+amo-picker-title = Өз { -brand-short-name } баптаңыз
+amo-picker-subtitle = Кеңейтулер браузеріңізге арналған қолданбалар сияқты және олар парольдерді қорғау, видеоларды жүктеп алу, мәмілелерді табу, тітіркендіргіш жарнамаларды блоктау, браузердің сыртқы түрін өзгерту және т.б. мүмкіндіктерін береді.
+amo-picker-install-button-label = { -brand-short-name } ішіне қосу
+amo-picker-install-complete-label = Орнатылған
+amo-picker-collection-link = Көбірек қосымшаларды шолу
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Біз сіздің қауіпсіздігіңізді қамтамасыз етуді жақсы көреміз
+onboarding-easy-setup-security-and-privacy-subtitle = Коммерциялық емес ұйымы қолдауымен жасалатын біздің браузер компанияларды интернетте сізді жасырын түрде бақылауын автоматты түрде тоқтатуға көмектеседі.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Құрылғылар арасында өткенде шифрленген күйде қала беріңіз
+onboarding-mobile-download-security-and-privacy-subtitle = Синхрондалған кезде, { -brand-short-name } сіздің парольдер, бетбелгілер және т.б. шифрлейді. Осыған қоса, басқа құрылғыларыңыздан беттерді ала аласыз.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } сізді қолдайды
+onboarding-gratitude-security-and-privacy-subtitle = BrowserWorks ұсынған { -brand-short-name } қолданбасын пайдаланғаныңыз үшін рахмет. Сіздің қолдауыңызбен біз интернетті қауіпсіздеу және әркім үшін қолжетімді ету үшін жұмыс істеп жатырмыз.
+# Sign up or Sign in screen
+onboarding-sign-up-title = Деректеріңізді құрылғылар арасында синхрондау
+onboarding-sign-up-description = Тіркелгі жасаңых және барлық маңызды ақпаратыңыз — парольдер, бетбелгілер және т.б. — қауіпсіз сақталады және кез келген құрылғыға кірген кезде қолжетімді болады.
+onboarding-sign-up-button = Тіркелгіні жасау немесе кіру
+onboarding-sign-up-secondary-button = Шолуды бастау
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = { -brand-short-name } қолданып жүргеніңізге қанша уақыт болды?
+onboarding-new-user-familiarity-based-survey-title = { -brand-short-name } өнімімен қаншалықты таныссыз?
+onboarding-new-user-survey-subtitle = Сіздің пікіріңіз { -brand-short-name } өнімін одан сайын жақсартуға көмектеседі.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Келесі
+onboarding-new-user-survey-legal-link-label = "{ onboarding-new-user-survey-next-button-label }" таңдау арқылы, сіз { -brand-product-name } өнімінің <a data-l10n-name="privacy_notice">Жекелік ескертуімен</a> келісесіз
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Мен жаңадан келдім
+onboarding-new-user-survey-time-based-option-2 = 1 айдан аз
+onboarding-new-user-survey-time-based-option-3 = 1 айдан астам, жүйелі түрде
+onboarding-new-user-survey-time-based-option-4 = 1 айдан астам, кейде
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Мен жаңадан келдім
+onboarding-new-user-survey-familiarity-based-option-2 = Мен оны біраз қолдандым
+onboarding-new-user-survey-familiarity-based-option-3 = Мен онымен өте жақсы таныспын
+onboarding-new-user-survey-familiarity-based-option-4 = Мен оны бұрын қолдандым, бірақ біраз уақыт өтті
+
+## UI strings for the sidebar and vertical tabs
+
+# Setup screen for vertical tabs
+onboarding-new-tabs-title = Беттер қай жерде көргіңіз келетініңізді айтыңыз
+# Setup screen for vertical tabs - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-new-tabs-subtitle = Бүйір панелінің параметрлерінде оны кез келген уақытта ауыстырыңыз.
+# Setup screen for vertical tabs - too many tabs variation
+onboarding-many-tabs-title = Сіздің беттеріңіз, сіздің жолыңызбен
+# Setup screen for vertical tabs - subtitle for too many tabs variation
+onboarding-many-tabs-subtitle = Көптеген беттерді ашық ұстап отырсыз ба? Оңтайлы көрініс үшін бүйір панелі беттерін қолданып көріңіз. Немесе оны жоғарғы жағындағы беттермен классикалық күйде сақтаңыз. Кез келген уақытта ауысыңыз.
+# Setup screen for vertical tabs - focused variation
+onboarding-focused-tabs-title = Беттер жаймасын таңдаңыз
+# Setup screen for vertical tabs - subtitle for focused variation
+onboarding-focused-tabs-subtitle = Назарды сақтауға көмектесетін ықшам көрініс үшін беттерді бүйірге орналастырып көріңіз. Немесе классикалық жоғарыдағы орналасуды таңдаңыз. Қалаған кезіңізде ауыстыруға болады.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-new-vertical-tabs-label = Беттер бүйір жақта
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-new-horizontal-tabs-label = Беттер жоғарыда
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title = Вертикалды беттер осында
+# Setup screen for vertical tabs for existing users
+onboarding-existing-tabs-title2 = Вертикалды беттер ұсынылады
+# Setup screen for vertical tabs for existing users - "Switch it up" refers to switching between horizontal and vertical tabs.
+onboarding-existing-tabs-subtitle = Бүйір жағындағы беттерді қолданып көріңіз. Бүйір панелі параметрлерінде оны кез келген уақытта ауыстырыңыз.
+# Text underneath an image used for selecting browser tabs to appear on the side of the browser.
+onboarding-existing-vertical-tabs-label = Вертикалды беттерді қолданып көріңіз
+onboarding-flair-text = Жаңа!
+# Text underneath an image used for selecting browser tabs to appear at the top of the browser.
+onboarding-existing-horizontal-tabs-label = Горизонталды беттерді қолдана беру
+# Tooltip displayed on hover for vertical tabs image
+onboarding-vertical-tabs-tooltip =
+    .title = { -brand-shorter-name } бүйір панелінің бөлігі ретінде экран бүйіріндегі беттерді көрсететін браузер терезесі.
+# Description for vertical tabs image
+onboarding-vertical-tabs-description =
+    .aria-description = { -brand-shorter-name } бүйір панелінің бөлігі ретінде экран бүйіріндегі беттерді көрсететін браузер терезесі.
+# Tooltip displayed on hover for horizontal tabs image
+onboarding-horizontal-tabs-tooltip =
+    .title = Жоғарғы жағында беттерді көрсететін браузер терезесі.
+# Description for horizontal tabs image
+onboarding-horizontal-tabs-description =
+    .aria-description = Жоғарғы жағында беттерді көрсететін браузер терезесі.
+# Additional setup card for setting up aichatbot in the sidebar
+onboarding-genai-sidebar-title = Бүйір панелінде ЖИ чат-ботын қолданып көріңіз
+# Setup card for setting up AI chatbot in the sidebar; "Providers" refers to AI chatbot providers (e.g. OpenAI, etc). "Switch anytime" refers to allowing the user to switch to a different chatbot.
+onboarding-genai-sidebar-subtitle = Веб-мазмұнды қорытындылау, идеяларды талқылау, хабарламаларды жобалау - барлығын шолу кезінде жасаңыз. Бірнеше провайдерлерден таңдаңыз. Кез келген уақытта ауысыңыз.<a data-l10n-name="learn-more">Көбірек білу</a>
+onboarding-genai-sidebar-primary-button = Чат-ботты таңдау
+onboarding-genai-sidebar-secondary-button = Шолуды бастау
+
+## New user onboarding checklist
+
+onboarding-checklist-title = { -brand-short-name } баптауды аяқтау
+onboarding-checklist-subtitle = Шолу тәжірибесін барынша пайдалану үшін осы қадамдарды орындаңыз.
+onboarding-checklist-set-default = { -brand-short-name } өнімін негізгі браузер ету
+onboarding-checklist-pin = { -brand-short-name } өнімін тапсырмалар панеліне бекіту
+onboarding-checklist-import = Бұрынғы браузерден импорттау
+onboarding-checklist-extension = Кеңейтуді қосу
+onboarding-checklist-sign-up = Тіркеліңіз немесе тіркелгіңізге кіріңіз
+onboarding-checklist-minimize =
+    .label = Қайыру
+onboarding-checklist-remove =
+    .label = Тексеру тізімін өшіру
+
+## Tab Groups feature onboarding strings
+
+tab-groups-onboarding-feature-callout-title = Артық шашыраңқылықты азайтып, зейінді арттыру үшін беттер топтарын қолданып көріңіз.
+tab-groups-onboarding-feature-callout-subtitle = Алғашқы беттер тобыңызды жасау үшін бір бетті екіншісінің үстіне сүйреп апарыңыз, осылайша ретпен ұйымдастыра аласыз.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-create-group-title-3 = Беттер топтарын кез келген уақытта Барлық беттер тізімін шығару мәзірінен табыңыз.
+tab-groups-onboarding-create-group-title-2 = Беттер топтарын осы жерден кез келген уақытта табыңыз.
+tab-groups-onboarding-create-group-no-alltabs-button-title = Топтарыңызды адрестік жолақтан іздеу арқылы табыңыз.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-saved-groups-title-3 = Беттер тобын жапқан кезде, оны кез келген уақытта Барлық беттер тізімін шығару мәзірінен қайта ашыңыз.
+tab-groups-onboarding-saved-groups-title-2 = Беттер тобын жапқан кезде, оны кез келген уақытта осы жерден қайта аша аласыз.
+tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = Жабылған топтарыңызды адрестік жолақтан іздеу арқылы табыңыз.
+# The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
+tab-groups-onboarding-session-restore-title-2 = Беттер топтарын кез келген уақытта Барлық беттер тізімін шығару мәзірінен қайта ашыңыз.
+tab-groups-onboarding-session-restore-title = Беттер топтарын осы жерден кез келген уақытта қайта ашыңыз.
+tab-groups-onboarding-dismiss = ОК
+
+## Multi Profiles feature onboarding messages
+
+multi-profile-spotlight-title = { -brand-product-name } профильдеріне сәлем айтыңыз
+multi-profile-spotlight-body = Жұмыс пен көңіл көтеру үшін шолу режимдерін оңай ауыстырыңыз. Профильдер іздеу тарихы мен пароль сияқты шолу деректеріңізді мүлде бөлек сақтайды, осылайша тәртіпті сақтай аласыз.
+multi-profile-spotlight-cta = Профиль жасау
+multi-profile-callout-title = Жұмыс және көңіл көтеру үшін әртүрлі профильдер жасау
+multi-profile-callout-subtitle = Профильдер іздеу тарихы мен парольдер сияқты шолу деректеріңізді мүлде бөлек сақтауға мүмкіндік береді.
+multi-profile-callout-cta = Профиль жасау
+
+## Desktop to Mobile Adoption feature callout strings
+
+# If translating the headline is challenging, consider using a simplified alternative as a reference: 'Sync your browsing with Firefox for mobile.'
+desktop-to-mobile-headline = Жүктеп алыңыз, синхрондаңыз және алға жүріңіз!
+# The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
+desktop-to-mobile-subtitle = Мобильді құрылғыға { -brand-product-name } жүктеп алу үшін QR кодты сканерлеңіз. Жолда жүргенде парольдерге, бетбелгілерге және басқа да деректерге қол жеткізу үшін орнатылғаннан кейін "Мобильді құрылғымен синхрондау" командасын таңдаңыз.
+dismiss-button-label = Елемеу
+sync-to-mobile-button-label = Мобильді құрылғымен синхрондау
+desktop-to-mobile-qr-code-alt =
+    .aria-label = Мобильді { -brand-product-name } жүктеп алу үшін QR коды
+
+## Fx Backup onboarding: Create Backup spotlight
+
+create-backup-screen-1-title =
+    Windows 11 нұсқасына жаңартып жатсыз ба?
+    { -brand-product-name } деректеріңіздің сақтық көшірмесін жасайық.
+create-backup-screen-1-subtitle = Парольдер, бетбелгілер және т.б. деректеріңізді 1–2 минут ішінде автоматты түрде қорғаңыз.
+create-backup-screen-1-flair = Ұсынылатын
+create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Көбірек білу</a>
+create-backup-screen-1-sync-label = { -brand-product-name } өнімімен синхрондау
+create-backup-screen-1-sync-body = Жүйеге кірген барлық құрылғылардың сақтық көшірмесін жасайды
+create-backup-screen-1-backup-label = Компьютерге сақтық көшірме жасау
+create-backup-screen-1-backup-body = Сіздің құрылғыңызға немесе OneDrive ішіне сақтайды
+create-backup-select-tile-button-label = Таңдау
+create-backup-back-button-label = Артқа
+create-backup-show-fewer =
+    .label = Осыған ұқсастарды азырақ көрсету
+create-backup-screen-2-title = Сақтық көшірме жасау үшін { -brand-product-name } деректерін таңдаңыз
+create-backup-screen-2-subtitle = Бұл бар болғаны бір минут уақытты алады. Деректеріңіздің сақтық көшірмесі күніне бір рет жасалып тұрады.
+# Label for the "Easy setup" backup option
+create-backup-screen-2-easy-label = Оңай баптау
+# Preceded by a green check mark indicating that these are included in "Easy setup" backup
+create-backup-screen-2-easy-list-1 = Бетбелгілер, тарих, баптаулар және т.б.
+# Preceded by a red X indicating that these are not included in the "Easy setup" backup
+create-backup-screen-2-easy-list-2 = Парольдер мен төлемдерді қамтымайды
+# Preceded by a red X indicating that "Easy setup" backups are not encrypted
+create-backup-screen-2-easy-list-3 = Шифрленбеген
+# Label for the "All data" backup option
+create-backup-screen-2-all-label = Барлық деректер
+# Preceded by a green check mark indicating that these are included in the "All data" backup
+create-backup-screen-2-all-list-2 = Парольдер мен төлемдерді қамтиды
+# Preceded by a green check mark and shield indicating "All data" backups are encrypted
+create-backup-screen-2-all-list-3 = Парольмен шифрленген
+# Title for a screen asking users to choose a file location
+create-backup-screen-3-location = Сақтық көшірменің қайда сақталғанын қалайсыз?
+# Title for a screen asking users to create a password that will encrypt the backup
+create-backup-screen-3-title = Сақтық көшірме файлының паролін жасау
+create-backup-screen-3-subtitle = Деректеріңізді шифрлеу үшін қажет. Есіңізде қалатын жерде сақтаңыз.
+fx-backup-opt-in-header = Файл орналасуын таңдау
+fx-backup-opt-in-filepath-label = OneDrive сияқты жаңа құрылғыға көшіруді жоспарлап отырған орынды таңдаңыз.
+fx-backup-opt-in-create-password-label = Парольді енгізіңіз
+fx-backup-opt-in-confirm-btn-label = Жалғастыру
+fx-backup-opt-in-cancel-btn-label = Артқа
+
+## Fx Backup confirmation screen strings
+
+fx-backup-confirmation-screen-title = Сақтық көшірмеңіз жоспарланған
+fx-backup-confirmation-screen-close-button = Жабу
+
+## These strings appear as a confirmation of which items will or won't be included as part of the selected backup method.
+
+fx-backup-confirmation-screen-all-data-item-text-1 = Барлық шолу деректері қамтылған
+fx-backup-confirmation-screen-all-data-item-text-2 = Сіздің құрылғыңызға сақталды
+fx-backup-confirmation-screen-all-data-item-text-3 = Шифрленген және парольмен қорғалған
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Бетбелгілер, тарих, параметрлер және басқа деректер қамтылған
+fx-backup-confirmation-screen-easy-setup-item-text-2 = Сіздің құрылғыңызға сақталды
+fx-backup-confirmation-screen-easy-setup-item-text-3 = Парольдер мен төлемдер қамтылмаған
+fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Сезімтал деректерді қосу үшін <a data-l10n-name="settings">Баптаулар</a> бөліміне өтіңіз.
+fx-backup-confirmation-screen-item-subtext-1 = Сақтық көшірме жасау бірнеше минуттан кейін басталады және күніне бір рет орындалып тұрады. Орындалу барысын <a data-l10n-name="settings">Баптаулар</a> ішінен тексере аласыз.
+fx-backup-confirmation-screen-item-subtext-2 = Қайта орнату қажет болған жағдайда, { -brand-short-name } сақтық көшірмеңізді автоматты түрде іздейді.
+
+## Restore from Backup Flow about:welcome screens
+
+restore-from-backup-secondary-top-button = Сақтық көшірмеден қалпына келтіру
+restore-from-backup-title = { -brand-short-name } браузерін өзіңізге ұнайтын күйге қайта келтірейік
+restore-from-backup-subtitle = Шолуға қайта оралу үшін барлық бетбелгілер, тарих және басқа деректерді қалпына келтіріңіз.
+restore-from-backup-secondary-button = Қалпына келтірмеу
+multiple-backups-info-tile = <strong>Бірнеше қор көшірме файлы табылды.</strong> Ең соңғы файл таңдалды. Басқа профильдерді <a data-l10n-name="settings-label">Баптаулар</a> ішінен қалпына келтіріңіз.
+
+## Restored from Backup spotlight
+
+restored-from-backup-success-title = Біз қайтып келдік! { -brand-short-name } деректері қалпына келтірілді.
+restored-from-backup-success-with-checklist-subtitle = Сүйікті әрі құпиялылыққа бағытталған браузеріңіздің бір шерту жерде тұрғанын қалайсыз ба?
+restored-from-backup-success-no-checklist-subtitle = Бұл құрылғы үшін сақтық көшірме жасауды <a data-l10n-name="settings">Баптаулар</a> ішінде іске қосуға болады.
+restored-from-backup-success-with-checklist-primary-button = Сақтау және жалғастыру
+restored-from-backup-success-with-checklist-secondary-button = Бұл қадамды аттап кету
+restored-from-backup-success-no-checklist-primary-button = Жалғастыру
+restored-from-backup-error-title = Өкінішке қарай, сақтық көшірме файлыңызда ақаулық орын алды.
+restored-from-backup-error-subtitle = Егер сізде басқа { -brand-short-name } сақтық көшірме файлы болса, содан қалпына келтіріп көріңіз. <a data-l10n-name="restore-problems">Әлі де мәселе бар ма?</a>
+restored-from-backup-error-primary-button = Жабу
+
+## Onboarding Personalization Screen
+## A screen shown to users during the onboarding process that asks them two qualifying questions about their use of the browser
+
+onboarding-personalization-title = { -brand-short-name } мүмкіндіктерін өз қалауыңызша баптаңыз
+onboarding-personalization-subtitle = Бірнеше сұраққа жауап беріңіз, ал біз { -brand-short-name } браузерін пайдалану мүмкіндіктерін арттыру үшін сізге сәйкес функциялар мен кеңейтулерді ұсынамыз.
+onboarding-personalization-use-case-title = Сіз { -brand-short-name } браузерін не үшін пайдаланатын боласыз?
+onboarding-personalization-use-case-personal-option = Жеке
+onboarding-personalization-use-case-school-option = Мектеп
+onboarding-personalization-use-case-work-option = Жұмыс
+onboarding-personalization-motivation-title = { -brand-short-name } браузерінің қай функциялары сіз үшін ең маңызды?
+onboarding-personalization-motivation-privacy-option = Жекелік және қауіпсіздік
+onboarding-personalization-motivation-productivity-option = Өнімділік
+onboarding-personalization-motivation-other-option = Басқа
+
+## Onboarding 2026 brand refresh
+
+onboarding-refresh-pin-set-default-subtitle = Біз деректеріңізді қорғаймыз және компаниялардың әрбір шертуіңізді аңдуына бұғаттау қоямыз — автоматты түрде.
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Сіз қауіпсіз жердесіз
+onboarding-refresh-import-subtitle = Парольдер, бетбелгілер, шолу тарихы және басқа да деректеріңізді көшіріп алыңыз.
+onboarding-refresh-import-title = { -brand-short-name } өзіңізге ыңғайлы әрі жайлы етіңіз
+onboarding-refresh-onboarding-addons-subtitle = Кеңейтулер — бұл { -brand-short-name } браузерін өз қалауыңызша баптауға мүмкіндік беретін шағын қолданбалар. Олар жекелікті күшейтіп, өнімділікті арттырып, { -brand-short-name } браузерінің сыртқы түрін өзгертіп және басқа да көптеген функцияларды қоса алады.
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = Шолуыңызды жақсартыңыз
+onboarding-refresh-sync-subtitle = { -brand-short-name } ішіне кірген барлық жерде бетбелгілер, парольдер және басқа да деректеріңізді жылдам алыңыз. Сонымен қатар, деректеріңіз шифрленген, сондықтан оларды тек сіз ғана көре аласыз.
+onboarding-refresh-sync-title = Кез келген жерге барыңыз. Барлығын синхрондаңыз.
+onboarding-refresh-gratitude-subtitle = Коммерциялық емес ұйым ұсынған жалғыз браузері, { -brand-short-name } пайдаланғаныңыз үшін рахмет. Сіздің қолдауыңызбен біз интернетті қауіпсіздеу және әркім үшін қолжетімді ету үшін жұмыс істеп жатырмыз.
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-gratitude-title = { -brand-short-name } сізді қолдайды
+
+## Smart window switcher callout
+
+smartwindow-switcher-callout = Ақылды және классикалық терезелер арасында кез келген уақытта ауысуға болады.
+
+## Smart Window ToU modal
+
+# Existing users
+smartwindow-existing-user-fx-tou-title = { -brand-product-name } пайдалану шарттары
+smartwindow-existing-user-fx-tou-body = { -smart-window-brand-name } қолдану үшін, <a data-l10n-name="terms_of_use">Қолдану шарттары</a> және жаңартылған <a data-l10n-name="privacy_notice">Жекелік ескертуі</a> шарттарын қабылдаңыз.
+smartwindow-existing-user-fx-tou-accept = Қабылдау
+smartwindow-existing-user-fx-tou-go-back = Артқа
+
+## Smart Window about:welcome screen
+
+smartwindow-onboarding-title = { -smart-window-brand-name } өнімін негізгі құралыңыз етіп қойыңыз
+smartwindow-onboarding-subtitle = Қорытындылау, салыстыру және сұрақтарды еш қиындықсыз қоюға болады.
+smartwindow-onboarding-primary-button = Жалғастыру
+# Kit is referring to the Firefox mascot
+smartwindow-onboarding-image-alt =
+    .aria-label = Жұлдызшалы безендіруі бар { -brand-product-name } бойтұмары (Кит)
+
+## Smart Window Sidebar Auto-Open Pref
+
+smartwindow-sidebar-auto-open-callout-title = Көмекшіні жабық күйінде қалдырғыңыз келе ме?
+smartwindow-sidebar-auto-open-callout-body = Қажет болған кезде оны аша аласыз.
+smartwindow-sidebar-auto-open-callout-accept = Иә, жабық қалдыру
+smartwindow-sidebar-auto-open-callout-dismiss = Жоқ, рахмет
+smartwindow-sidebar-auto-open-callout-accepted-title = Көмекші жабық күйінде қалады
+smartwindow-sidebar-auto-open-callout-accepted-subtitle = Оны кез келген бетте ашу үшін "Сұрау" батырмасын пайдаланыңыз. Мұны кез келген уақытта <a data-l10n-name="settings">Баптаулар</a> бөлімінде өзгертуге болады.
+smartwindow-sidebar-auto-open-callout-rejected-title = Түсіндім
+smartwindow-sidebar-auto-open-callout-rejected-subtitle = Егер ойыңызды өзгертсеңіз, әдепкі параметрді <a data-l10n-name="settings">Баптаулар</a> бөлімінде кез келген уақытта жаңарта аласыз.

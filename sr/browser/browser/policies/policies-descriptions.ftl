@@ -1,0 +1,160 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## The Enterprise Policies feature is aimed at system administrators
+## who want to deploy these settings across several Firefox installations
+## all at once. This is traditionally done through the Windows Group Policy
+## feature, but the system also supports other forms of deployment.
+## These are short descriptions for individual policies, to be displayed
+## in the documentation section in about:policies.
+
+policy-3rdparty = Поставите правила којим WebExtensions може приступити преко chrome.storage.managed.
+policy-AIControls = Подесите ВИ контроле.
+policy-AllowedDomainsForApps = Дефинише домене који могу да приступе Google Workspace-у.
+policy-AllowFileSelectionDialogs = Дозволи дијалошке оквире за бирање датотеке.
+policy-AppAutoUpdate = Омогућава или онемогућава аутоматско ажурирање програма.
+policy-AppUpdatePin = Спречите да се { -brand-short-name } ажурира даље од наведене верзије.
+policy-AppUpdateURL = Подеси прилагођену адресу за ажурирање програма.
+policy-Authentication = Подесите уграђену идентификацију за сајтове који то подржавају.
+policy-AutofillAddressEnabled = Омогући аутоматско попуњавање адреса.
+policy-AutofillCreditCardEnabled = Омогући аутоматско попуњавање начина плаћања.
+policy-AutoLaunchProtocolsFromOrigins = Дефинишите листу спољних протокола који се могу користити из наведених извора без питања корисника.
+policy-BackgroundAppUpdate2 = Омогућава или онемогућава ажурирање у позадини.
+policy-Backup = Онемогући прављење резерве или враћање података профила.
+policy-BlockAboutAddons = Блокира приступ управнику додатака (about:addons).
+policy-BlockAboutConfig = Блокирај приступ страници about:config.
+policy-BlockAboutProfiles = Блокирај приступ страници about:profiles.
+policy-BlockAboutSupport = Блокирај приступ страници about:support.
+policy-Bookmarks = Правите обележиваче у траци са обележивачима, менију са обележивачима или у наведеној фасцикли унутар.
+policy-CaptivePortal = Омогући или онемогући подршку за каптивне портале.
+policy-CertificatesDescription = Додај сертификате или користи уграђене сертификате.
+policy-ContentAnalysis = Омогући или онемогући везу са агентом за спречавање губљења података.
+policy-Cookies = Дозволи или забрани сајтовима да остављају колачиће.
+# Containers in this context is referring to container tabs in Firefox.
+policy-Containers = Подесите правила у вези са контејнерима.
+policy-DisableAccounts = Онемогући услуге преко налога, укључујући усклађивање.
+policy-DisabledCiphers = Онемогућите алгоритам шифровања.
+policy-DefaultDownloadDirectory = Поставите подразумевану фасциклу за преузимања.
+policy-DefaultSerialGuardSetting = Управљајте коришћењем серијског API-ја.
+policy-DisableAppUpdate = Спречи ажурирање прегледача.
+policy-DisableBuiltinPDFViewer = Онемогући PDF.js, уграђеног прегледача PDF-ова у програму { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Спречава подразумеваног агента прегледача да извршава било какве радње. Доступно само на Windows-у; друге платформе немају агент.
+policy-DisableDeveloperTools = Блокирај приступ програмерским алаткама.
+policy-DisableEncryptedClientHello = Онемогући употребу TLS функције Encrypted Client Hello (ECH).
+policy-DisableFeedbackCommands = Онемогући наредбе за слање повратних информација из менија „Помоћ“ (опције „Пошаљи повратне информације“ и „Пријави обманљив сајт“).
+policy-DisableFirefoxAccounts = Онемогућите услуге засноване на { -fxaccount-brand-name(case: "loc") }, укључујући усклађивање.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Онемогући услуге преко налога, укључујући усклађивање.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Онемогућава функцију Waterfox Screenshots.
+policy-DisableFirefoxStudies = Спречи извођење { -brand-short-name } студија.
+policy-DisableForgetButton = Спречи приступ дугмету „Заборави“.
+policy-DisableFormHistory = Не памти историју претраживања и формулара.
+policy-DisablePrimaryPasswordCreation = Ако је тачно, главна лозинка се не може направити.
+policy-DisablePasswordReveal = Не дозволите приказивање лозинке у сачуваним подацима за пријаву.
+policy-DisablePocket2 = Онемогућава чување веб-страница у { -pocket-brand-name }-у.
+policy-DisablePrivateBrowsing = Онемогући приватно прегледање.
+policy-DisableProfileImport = Онемогући наредбу у менију за увоз података из других прегледача.
+policy-DisableProfileRefresh = Онемогући дугме за освежавање програма { -brand-short-name } на страни about:support.
+policy-DisableRemoteImprovements = Спречи { -brand-short-name } да примењује промене перформанси, стабилности и функција између ажурирања.
+policy-DisableRemoteSettingsAndAcceptSecurityConsequences = Онемогућите даљинска подешавања.
+policy-DisableSafeMode = Онемогући могућност поновног покретања програма у безбедном режиму. Напомена: онемогућавање уласка у безбедни режим преко тастера Shift се може онемогућити на Windows-у само коришћењем групне полисе.
+policy-DisableSecurityBypass = Спречи кориснику заобилажење одређених безбедносних упозорења.
+policy-DisableSetAsDesktopBackground = Онемогући наредбу менија „Постави на радну површину“ за слике.
+policy-DisableSystemAddonUpdate = Спречи прегледача да инсталира и ажурира системске додатке.
+policy-DisableTelemetry = Искључи телеметрију.
+policy-DisableThirdPartyModuleBlocking = Спречите кориснике да блокирају модуле треће стране који су имплементирани у { -brand-short-name } процесу.
+policy-DisplayBookmarksToolbar = Подразумевано приказује траку са обележивачима.
+policy-DisplayMenuBar = Подразумевано приказује траку са менијем.
+policy-DNSOverHTTPS = Подеси DNS преко HTTPS-а.
+policy-DontCheckDefaultBrowser = Онемогући проверу подразумеваног прегледача при покретању.
+policy-DownloadDirectory = Поставите и закључајте фасциклу за преузимања.
+# “lock” means that the user won’t be able to change this setting
+policy-EnableTrackingProtection = Омогући или онемогући блокирање садржаја и (изборно) закључај подешавање.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Омогућава или онемогућава функцију Encrypted Media Extensions и опционално је закључава.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Онемогућите упозорења на основу екстензија датотека за одређене типове датотека и домене.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs.
+policy-Extensions = Инсталира, деинсталира или закључава додатке. За инсталацију је потребно као параметар задати URL или путању, а за деинсталацију или закључавање – ID додатка.
+policy-ExtensionSettings = Управља свим аспектима инсталације додатка.
+policy-ExtensionUpdate = Омогућава или онемогућава аутоматско ажурирање додатака.
+policy-FirefoxHome2 = Подесите { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Подеси { -firefox-suggest-brand-name }.
+policy-GenerativeAI = Подеси функције генеративне вештачке интелигенције.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Присилите директну интранет навигацију уместо да претражујете када унесете један термин у траку за адресу.
+policy-Handlers = Подесите подразумеване управнике апликација.
+policy-HardwareAcceleration = Ако је нетачно, искључи хардверско убрзавање.
+# “lock” means that the user won’t be able to change this setting
+policy-Homepage = Постави и по избору закључај почетну страну.
+policy-HttpAllowlist = Порекла која неће бити надограђена на HTTPS.
+policy-HttpsOnlyMode = Дозволи омогућавање режима „само HTTPS”.
+policy-InstallAddonsPermission = Дозволи инсталирање додатака за одређене веб сајтове.
+policy-IPProtectionAvailable = Спречите да уграђени VPN буде доступан корисницима.
+policy-LegacyProfiles = Онемогућите функцију намећући посебан налог за сваку инсталацију
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Омогућите подразумевано наслеђено подешавање понашања SameSite колачића.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Вратите се на наслеђено SameSite понашање за колачиће на одређеним страницама.
+
+##
+
+policy-LocalFileLinks = Дозвољава одређеним веб-сајтовима да наводе на локалне датотеке.
+policy-LocalNetworkAccess = Омогући или онемогући провере приступа локалној мрежи.
+policy-ManagedBookmarks = Конфигурише списак обележивача којима управља администратор, а које корисник не може мењати.
+policy-ManualAppUpdateOnly = Дозволи само ручна ажирирања и не обавештавај корисника о ажурирањима.
+policy-PrimaryPassword = Захтевајте или спречите употребу главне лозинке.
+policy-PrintingEnabled = Омогући или онемогући штампање.
+policy-NetworkPrediction = Омогући или онемогући предвиђање мрежних захтева (превентивни DNS упити).
+policy-NewTabPage = Омогућава или онемогућава страницу новог језичка.
+policy-NoDefaultBookmarks = Онемогући стварање подразумеваних белешки упакованих уз програм { -brand-short-name } и стварање паметних белешки (најчешће посећене, недавне ознаке). Напомена: ова полиса је делотворна само ако се искористи пре првог покретања профила.
+policy-OfferToSaveLogins = Наметни подешавање да би дозволили програму { -brand-short-name } да понуди чување пријава и лозинки. Дозвољене вредности су тачно или нетачно.
+policy-OfferToSaveLoginsDefault = Дефинишите да ли би, подразумевано, { -brand-short-name } требало да нуди чување пријава и лозинки. И истинске и лажне вредности се прихватају.
+policy-OverrideFirstRunPage = Премости подешавање странице првог покретања. Испразните ову полису уколико желите да онемогућите страницу за прво покретање програма.
+policy-OverridePostUpdatePage = Премости страницу „Шта је ново“ која се појављује након ажурирања. Испразните ову полису уколико желите да онемогућите ову страницу након ажурирања.
+policy-PasswordManagerEnabled = Омогућите снимање лозинки у управнику лозинки.
+policy-PasswordManagerExceptions = Спречите { -brand-short-name } да чува лозинке за одређене странице.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Омогући пост-квантни споразум о кључу за TLS.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Онемогућите или подесите PDF.js, уграђени PDF читач за { -brand-short-name }.
+policy-Permissions2 = Конфигуришите дозволе за камеру, микрофон, локацију, обавештења и аутоматску репродукцију.
+policy-PictureInPicture = Омогућите или онемогућите режим слике-у-слици.
+policy-PopupBlocking2 = Дозволи одређеним веб страницама да приказују искачуће прозоре и да буду преусмерене од стране оквира трећих страна.
+policy-PopupBlocking = Подразумевано дозволи одређеним сајтовима приказ искачућих прозора .
+policy-Preferences = Подесите и закључајте вредност за подскуп поставки.
+policy-PrivateBrowsingModeAvailability = Постави доступност режима приватног прегледања.
+policy-PromptForDownloadLocation = Упитај где треба сачувати датотеке након преузимања.
+policy-Proxy = Подеси подешавања проксија.
+policy-RelaunchRequired = Захтевајте да се { -brand-short-name } поново покрене у датом периоду и обавестите корисника о предстојећем поновном покретању.
+policy-RequestedLocales = Постави списак тражених језика у програму по жељеном редоследу.
+policy-SanitizeOnShutdown2 = Очистити навигационе податке на искључењу.
+policy-SearchBar = Подеси подразумевано место приказа траке за претраживање. Кориснику је и даље дозвољено прилагођавање.
+policy-SearchEngines = Подеси поставке претраживача. Ова полиса је доступна само у издањима са продуженом подршком (ткз. ESR издања).
+policy-SearchSuggestEnabled = Омогућите или онемогућите предлоге за претрагу.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Додај или избриши PKCS #11 модуле.
+policy-ShowHomeButton = Приказује дугме „Почетна” на траци са алаткама.
+policy-SitePolicies = Полисе специфичне за сајт.
+# ”You represent that...” means ”You confirm/declare that...”
+policy-SkipTermsOfUse2 = Не приказуј услове коришћења и обавештење о приватности при покретању. Изјављујете да прихватате и да имате овлашћење да прихватите услове коришћења у име свих појединаца којима омогућавате приступ овом прегледачу.
+policy-SSLVersionMax = Поставља максималну верзију SSL-a.
+policy-SSLVersionMin = Поставља минималну верзију SSL-a.
+policy-StartDownloadsInTempDirectory = Присилите да преузимања почну у локалној, привременој локацији, а не у подразумеваном директоријуму за преузимање.
+policy-SupportMenu = Додаје прилагођену ставку за подршку у менију помоћи.
+policy-TranslateEnabled = Омогући или онемогући превод веб страница.
+policy-UserMessaging = Скрива одређене поруке од корисника.
+policy-UseSystemPrintDialog = Штампајте помоћу системског дијалога.
+policy-VisualSearchEnabled = Омогући или онемогући визуелну претрагу.
+# “format” refers to the format used for the value of this policy.
+policy-WebsiteFilter = Блокирај посету веб сајтовима. Погледајте документацију за више детаља о формату.
+policy-Windows10SSO = Дозволите јединствено пријављивање у Windows-у за Microsoft, пословне и школске налоге.
+# Entra is the name of a Microsoft product.
+policy-MicrosoftEntraSSO = Дозволи једнократну пријаву за Microsoft Entra налоге.
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = Омогућите или онемогућите подршку за XSLTProcessor JavaScript API и XSLT инструкцију за обраду.

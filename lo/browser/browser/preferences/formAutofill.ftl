@@ -1,0 +1,167 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## The address and credit card autofill management dialog in browser preferences
+
+autofill-manage-addresses-title = ທີ່ຢູ່ທີ່ບັນທຶກໄວ້
+autofill-manage-addresses-list-header = ທີ່ຢູ່
+autofill-manage-credit-cards-title = ບັດເຄຣດິດທີ່ບັນທຶກໄວ້
+autofill-manage-credit-cards-list-header = ບັດເຄຣດິດ
+autofill-manage-cards-list-header = ບັດ
+autofill-manage-dialog =
+    .style = min-width: 560px
+autofill-manage-remove-button = ລຶບ
+autofill-manage-add-button = ເພີ່ມ…
+autofill-manage-edit-button = ແກ້ໄຂ…
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+address-capture-update-doorhanger-header = ຕ້ອງການອັບເດດທີ່ຢູ່ຫລືບໍ?
+address-capture-edit-doorhanger-header = ແກ້ໄຂທີ່ຢູ່
+address-capture-save-button =
+    .label = ບັນທຶກ
+    .accessKey = S
+address-capture-not-now-button =
+    .label = ບໍ່​ແມ່ນ​ຕອນ​ນີ້
+    .accessKey = N
+address-capture-cancel-button =
+    .label = ຍົກເລີກ
+    .accessKey = C
+address-capture-update-button =
+    .label = ອັບເດດ
+    .accessKey = U
+address-capture-manage-address-button =
+    .label = ການຕັ້ງຄ່າທີ່ຢູ່
+address-capture-learn-more-button =
+    .label = ຮຽນຮູ້ເພີ່ມເຕີມ
+address-capture-open-menu-button =
+    .aria-label = ເປີດເມນູ
+address-capture-edit-address-button =
+    .aria-label = ແກ້ໄຂທີ່ຢູ່
+# The dialog title for creating addresses in browser preferences.
+autofill-add-address-title = ເພີ່ມທີ່ຢູ່
+# The dialog title for editing addresses in browser preferences.
+autofill-edit-address-title = ແກ້ໄຂທີ່ຢູ່
+autofill-address-given-name = ຊື່ແທ້
+autofill-address-additional-name = ຊື່ກາງ
+autofill-address-family-name = ນາມສະກຸນ
+autofill-address-name = ຊື່
+autofill-address-organization = ອົງການຈັດຕັ້ງ
+autofill-address-street-address = ທີ່​ຢູ່​ຖະ​ຫນົນ
+autofill-address-street = ທີ່​ຢູ່​ຖະ​ຫນົນ
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+# Used in Iran (IR), Mexico (MX) as sublocality (civil entity below a locality, e.g. within a city).
+autofill-address-neighborhood = ບ້ານໃກ້ເຮືອນຄຽງ
+# Used in Malaysia (MY) as sublocality (civil entity below a locality, e.g. within a city).
+autofill-address-village-township = ບ້ານ ຫຼື ເມືອງ
+autofill-address-island = ເກາະ
+# Used in Ireland (IE) as sublocality (civil entity below a locality, e.g. within a city).
+autofill-address-townland = ບ້ານເມືອງ
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+autofill-address-city = ເມືອງ
+# Used in Hong Kong (HK), Sudan (SD), Syria (SY), Türkiye (TR) as as secondary address information (2 levels below the country level).
+# Used in Korea as sublocality (civil entity below a locality, e.g. within a city).
+autofill-address-district = ແຂວງ
+# Used in United Kingdom (GB), Norway (NO), Sweden (SE) as as secondary address information (2 levels below the country level).
+autofill-address-post-town = ເມືອງ
+# Used in Australia (AU) as as secondary address information (below the country level).
+# Used for international addresses as sublocality (civil entity below a locality, e.g. within a city).
+autofill-address-suburb = ຊານເມືອງ
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+autofill-address-province = ແຂວງ
+autofill-address-state = ລັດ
+autofill-address-county = ປະເທດ
+# Used in Barbados (BB), Jamaica (JM) as primary address information (1 level below the country level).
+autofill-address-parish = ເມືອງ
+# Used in Japan (JP) as primary address information (1 level below the country level).
+autofill-address-prefecture = ແຂວງ
+# Used in Honk Kong (HK) as primary address information (1 level below the country level).
+autofill-address-area = ພື້ນທີ່
+# Used in Korea (KO) as primary address information (1 level below the country level).
+autofill-address-do-si = Do/Si
+# Used in Nicaragua (NI), Colombia (CO) as primary address information (1 level below the country level).
+autofill-address-department = ພະແນກ
+# Used in United Arab Emirates (AE) as primary address information (1 level below the country level).
+autofill-address-emirate = ເອມິເຣດ
+# Used in Russia (RU), Ukraine (UA) as primary address information (1 level below the country level).
+autofill-address-oblast = ເຂດ
+
+## Labels for address fields (e.g. for a mailing address) used as part of the form
+## autofill feature. For more information on the address structure (e.g. levels),
+## see also https://developers.google.com/maps/documentation/javascript/geocoding
+
+# Postal code field used in India (IN).
+autofill-address-pin = ປັກໝຸດ
+autofill-address-postal-code = ລະ​ຫັດ​ໄປ​ສະ​ນີ
+# Postal code field.
+autofill-address-zip = ລະຫັດໄປສະນີ
+# Postal code field used in Ireland (IE).
+autofill-address-eircode = Eircode
+
+##
+
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = ເພີ່ມທີ່ຢູ່ໃໝ່
+autofill-address-country = ປະເທດ ຫຼືພາກພື້ນ
+autofill-address-country-only = ປະເທດ
+autofill-address-tel = ໂທລະສັບ
+autofill-address-email = ອີເມວ
+autofill-cancel-button = ຍົກເລີກ
+autofill-save-button = ບັນທຶກ
+autofill-country-warning-message = ການຕື່ມແບບຟອມອັດຕະໂນມັດແມ່ນສາມາດໃຊ້ໄດ້ກັບບາງປະເທດເທົ່ານັ້ນ.
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-new-card-title = ເພີ່ມບັດເຄຣດິດໃໝ່
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title = ແກ້ໄຂບັດເຄຣດິດ
+autofill-message-tooltip = ເບິ່ງຂໍ້ຄວາມກ່ຽວກັບການຕື່ມຂໍ້ມູນອັດຕະໂນມັດ
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = ເພີ່ມບັດ
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = ແກ້ໄຂບັດ
+autofill-card-number-2 =
+    .label = ເລກບັດ
+autofill-card-number = ເລກບັດ
+autofill-card-invalid-number = ກະລຸນາໃສ່ໝາຍເລກບັດທີ່ຖືກຕ້ອງ
+autofill-card-name-on-card-2 =
+    .label = ຊື່ໃນບັດ
+autofill-card-billing-address-2 =
+    .label = ທີ່ຢູ່ໃບບິນ
+autofill-card-name-on-card = ຊື່ໃນບັດ
+autofill-card-expires-month = ໝົດອາຍຸ ເດືອນ
+autofill-card-expires-year = ໝົດອາຍຸ ປີ
+autofill-card-billing-address = ທີ່ຢູ່ໃບບິນ
+autofill-card-network = ປະເພດບັດ
+# This string is never actually displayed, but is used to make it easier to
+# find the payment methods section of about:settings via the search input. It's
+# simply a comma separated list of additional search keywords for the payment
+# methods section. Localizers should choose terms that make sense for payment
+# methods in their region.
+autofill-card-search-term-credit-cards = ບັດເຄຣດິດ, ເຄຣດິດ, ບັດຕ່າງໆ, ບັດເດບິດ, ເດບິດ, ກະເປົາເງິນ, ການຈ່າຍເງິນ
+
+## These are brand names and should only be translated when a locale-specific name for that brand is in common use
+
+autofill-card-network-amex = American Express
+autofill-card-network-cartebancaire = Carte Bancaire
+autofill-card-network-diners = Diners Club
+autofill-card-network-discover = ຄົ້ນພົບ
+autofill-card-network-jcb = JCB
+autofill-card-network-mastercard = MasterCard
+autofill-card-network-mir = MIR
+autofill-card-network-unionpay = Union Pay
+autofill-card-network-visa = Visa

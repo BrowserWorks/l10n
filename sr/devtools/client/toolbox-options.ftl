@@ -1,0 +1,236 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### Localization for Developer Tools options
+
+
+## Default Developer Tools section
+
+# The heading
+options-select-default-tools-label = Default Developer Tools
+# The label for the explanation of the * marker on a tool which is currently not supported
+# for the target of the toolbox.
+options-tool-not-supported-label = * Not supported for current toolbox target
+# The label for the heading of group of checkboxes corresponding to the developer tools
+# added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
+options-select-additional-tools-label = Developer Tools installed by add-ons
+# The label for the heading of group of checkboxes corresponding to the default developer
+# tool buttons.
+options-select-enabled-toolbox-buttons-label = Available Toolbox Buttons
+# The label for the heading of the radiobox corresponding to the theme
+options-select-dev-tools-theme-label = Themes
+
+## Inspector section
+
+# The heading
+options-context-inspector = Inspector
+# The label for the checkbox option to show user agent styles
+options-show-user-agent-styles-label = Show Browser Styles
+options-show-user-agent-styles-tooltip =
+    .title = Turning this on will show default styles that are loaded by the browser.
+# The label for the checkbox option to show all anonymous content
+options-show-user-agent-shadow-dom-label = Прикажи DOM сенку прегледача
+options-show-user-agent-shadow-dom-tooltip =
+    .title = Укључивање овога ће приказати Shadow DOM елементе којима управља прегледач.
+# The label for the checkbox option to enable collapse attributes
+options-collapse-attrs-label = Truncate DOM attributes
+options-collapse-attrs-tooltip =
+    .title = Truncate long attributes in the inspector
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = Прикажи напомене
+options-show-comments-tooltip =
+    .title = Прикажи чворове напомена у инспектору
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = Click and drag to edit size values
+options-inspector-draggable-properties-tooltip =
+    .title = Click and drag to edit size values in the inspector rules view.
+# The label for the checkbox option to enable simplified highlighting on page elements
+# within the inspector for users who enabled prefers-reduced-motion = reduce
+options-inspector-simplified-highlighters-label = Use simpler highlighters with prefers-reduced-motion
+options-inspector-simplified-highlighters-tooltip =
+    .title = Enables simplified highlighters when prefers-reduced-motion is enabled. Draws lines instead of filled rectangles around highlighted elements to avoid flashing effects.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Фокусирај следећи унос на <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Када је омогућено, притисак на тастер Enter приликом уређивања селектора, назива својства или вредности ће померити фокус на следећи унос.
+
+## "Default Color Unit" options for the Inspector
+
+options-default-color-unit-label = Default color unit
+options-default-color-unit-authored = As Authored
+options-default-color-unit-hex = Hex
+options-default-color-unit-hsl = HSL(A)
+options-default-color-unit-rgb = RGB(A)
+options-default-color-unit-hwb = HWB
+options-default-color-unit-name = Color Names
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Веб конзола
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Омогући подељену конзолу
+options-webconsole-split-console-tooltip =
+    .title = Отвори подељену конзолу помоћу тастера Escape
+
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = Надгледач мреже
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = Највећа величина тела захтева и одговора (поставите на 0 за неограничено):
+options-netmonitor-body-limit-tooltip =
+    .title = Тела захтева или одговора која прекорачују наведену величину биће скраћена при приказивању или преузимању у Надгледачу мреже. Поставите на 0 да не би било ограничења.
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = Неограничено
+options-netmonitor-body-limit-button =
+    .title = Уреди највећу величину тела захтева/одговора.
+options-netmonitor-body-limit-restore-default =
+    .title = Поврати подразумевану вредност за највећу величину тела захтева/одговора.
+options-netmonitor-body-limit-set =
+    .title = Постави тренутну вредност уноса као највећу величину тела захтева/одговора.
+
+## Experimental section
+
+# The heading
+options-experimental-label = Експерименталне могућности
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = Стилови у дебагеру
+options-stylesheets-in-the-debugger-tooltip =
+    .title = Можете приказати списак стилова и прегледати их у дебагеру
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = (захтева поновно отварање алатнице)
+
+## Style Editor section
+
+# The heading
+options-styleeditor-label = Style Editor
+# The label for the checkbox that toggles autocompletion of css in the Style Editor
+options-stylesheet-autocompletion-label = Autocomplete CSS
+options-stylesheet-autocompletion-tooltip =
+    .title = Autocomplete CSS properties, values and selectors in Style Editor as you type
+
+## Screenshot section
+
+# The heading
+options-screenshot-label = Screenshot Behavior
+# Label for the checkbox that toggles screenshot to clipboard feature
+options-screenshot-clipboard-only-label = Screenshot to clipboard only
+options-screenshot-clipboard-tooltip2 =
+    .title = Saves the screenshot directly to the clipboard
+# Label for the checkbox that toggles the camera shutter audio for screenshot tool
+options-screenshot-audio-label = Play camera shutter sound
+options-screenshot-audio-tooltip =
+    .title = Enables the camera audio sound when taking screenshot
+
+## Editor section
+
+# The heading
+options-sourceeditor-label = Editor Preferences
+options-sourceeditor-detectindentation-tooltip =
+    .title = Guess indentation based on source content
+options-sourceeditor-detectindentation-label = Detect indentation
+options-sourceeditor-autoclosebrackets-tooltip =
+    .title = Automatically insert closing brackets
+options-sourceeditor-autoclosebrackets-label = Autoclose brackets
+options-sourceeditor-expandtab-tooltip =
+    .title = Use spaces instead of the tab character
+options-sourceeditor-expandtab-label = Indent using spaces
+options-sourceeditor-tabsize-label = Tab size
+options-sourceeditor-keybinding-label = Keybindings
+options-sourceeditor-keybinding-default-label = Default
+
+## Local Mode section
+
+# The heading
+options-local-mode-label = Локални режим
+options-local-mode-only-work-locally = Локални режим ради само локално и онемогућен је при отклањању грешака у удаљеним контекстима
+options-local-mode-behavior = Локални режим вам омогућава да учитате локалне датотеке преко https УРЛ-а без било каквих спољних зависности. Те УРЛ-ове је могуће учитати само из језикаца у којима су отворени DevTools.
+options-local-mode-domain-label = Прилагођени домен:
+options-local-mode-origin-input =
+    .placeholder = Извор за локално мапирање
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = Овај извор се сукобљава са другим постојећим мапирањем
+options-local-mode-origin-invalid = Овај извор је неисправан
+options-local-mode-folder-label = Локална фасцикла:
+options-local-mode-choose-folder = Прегледај…
+    .title = Избор локалне фасцикле за ово мапирање
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = Избор фасцикле за локални режим за: { $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = Ова фасцикла не постоји или је неисправна.
+options-local-mode-toggle =
+    .title = Промена овог локалног мапирања
+options-local-mode-toggle-enable = Омогући
+options-local-mode-toggle-disable = Онемогући
+options-local-mode-navigate-to =
+    .title = Навигирање до URL-а овог мапирања
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = Желите ли да уклоните мапирање „{ $mappingOrigin }“?
+options-local-mode-new-mapping = Додај ново локално мапирање
+
+## Advanced section
+
+# The heading (this item is also used in perftools.ftl)
+options-context-advanced-settings = Advanced settings
+# The label for the checkbox that toggles the HTTP cache on or off
+options-disable-http-cache-label = Disable HTTP Cache (when toolbox is open)
+options-disable-http-cache-tooltip =
+    .title = Turning this option on will disable the HTTP cache for all tabs that have the toolbox open. Service Workers are not affected by this option.
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label-2 = Онемогући JavaScript
+# The label for checkbox that toggles JavaScript on or off
+options-disable-javascript-label = Disable JavaScript *
+options-disable-javascript-tooltip =
+    .title = Turning this option on will disable JavaScript for the current tab. If the tab or the toolbox is closed then this setting will be forgotten.
+# The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
+options-enable-chrome-label = Enable browser chrome and add-on debugging toolboxes
+options-enable-chrome-tooltip =
+    .title = Turning this option on will allow you to use various developer tools in browser context (via Tools > Web Developer > Browser Toolbox) and debug add-ons from the Add-ons Manager
+# The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
+options-enable-remote-label = Enable remote debugging
+options-enable-remote-tooltip2 =
+    .title = Turning this option on will allow to debug this browser instance remotely
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = Use the F12 key to open or close DevTools
+options-enable-f12-tooltip =
+    .title = Turning this option on will bind the F12 key to open or close the DevTools toolbox
+# The label for checkbox that toggles custom formatters for objects
+options-enable-custom-formatters-label = Enable custom formatters
+options-enable-custom-formatters-tooltip =
+    .title = Turning this option on will allow sites to define custom formatters for DOM objects
+# The label for checkbox that toggles the service workers testing over HTTP on or off.
+options-enable-service-workers-http-label = Enable Service Workers over HTTP (when toolbox is open)
+options-enable-service-workers-http-tooltip =
+    .title = Turning this option on will enable the service workers over HTTP for all tabs that have the toolbox open.
+# The label for the checkbox that toggles source maps in all tools.
+options-source-maps-label = Enable Source Maps
+options-source-maps-tooltip =
+    .title = If you enable this option sources will be mapped in the tools.
+# The message shown for settings that trigger page reload and will only apply to the current session
+# This appears underneath the applicable options (e.g. options-disable-javascript-label-2).
+options-context-triggers-page-refresh-temporary = (само за тренутну сесију, поново учитава страницу)
+# The message shown for settings that trigger page reload and will only apply to the current session
+options-context-triggers-page-refresh = * Current session only, reloads the page
+# The message shown for settings that trigger page reload
+# This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
+options-context-triggers-page-refresh-persists = (поново учитава страницу)
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = Auto
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = Deprecated. Learn More…

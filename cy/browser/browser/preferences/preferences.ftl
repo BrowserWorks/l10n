@@ -1,0 +1,2859 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+do-not-track-description = Anfon neges “Dim Tracio” at wefannau nad ydych am gael eich tracio
+do-not-track-removal = Nid ydym bellach yn cefnogi'r signal “Peidiwch â Thracio”.
+do-not-track-learn-more = Darllen rhagor
+do-not-track-option-default-content-blocking-known =
+    .label = Dim ond pan mae { -brand-short-name } wedi ei osod i rwystro tracwyr hysbys.
+do-not-track-option-always =
+    .label = Bob tro
+global-privacy-control-description =
+    .label = Dweud wrth wefannau i beidio â gwerthu neu rannu fy nata
+    .accesskey = g
+non-technical-privacy-group =
+    .label = Dewisiadau Preifatrwydd Gwefan
+do-not-track-removal3 =
+    .message = Dydyn ni ddim bellach yn cefnogi'r nodwedd “Peidio Tracio”.
+non-technical-privacy-heading =
+    .label = Diogelu ychwanegol
+preferences-privacy-relay-available =
+    .label = Awgrymu arallenwau e-bost { -relay-brand-name }
+    .description = Mae'n cuddio'ch cyfeiriad go-iawn er mwyn diogelu eich blwch derbyn rhag sbam.
+non-technical-privacy-header = Dewisiadau Preifatrwydd Gwefan
+# Do not translate.
+# "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
+# included to facilitate power-user search of the about:preferences page.
+global-privacy-control-search = Rheoli Preifatrwydd Eang (GPC)
+settings-page-title = Gosodiadau
+category-nav-heading =
+    .heading = Gosodiadau
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Canfod yn y Gosodiadau
+managed-notice = Mae eich porwr yn cael ei reoli gan eich sefydliad.
+managed-notice-info-icon =
+    .alt = Manylion
+managed-notice-nav =
+    .label = Mae eich porwr yn cael ei reoli gan eich sefydliad.
+category-list =
+    .aria-label = Categorïau
+pane-general-title = Cyffredinol
+category-general =
+    .tooltiptext = { pane-general-title }
+pane-home-title = Cartref
+pane-home-startup-title2 = Cartref a chychwyn
+    .title = Cartref a chychwyn
+pane-search-title2 = Chwilio
+    .title = Chwilio
+pane-privacy-title3 = Preifatrwydd a Diogelwch
+    .title = Preifatrwydd a Diogelwch
+category-home =
+    .tooltiptext = { pane-home-title }
+pane-search-title = Chwilio
+category-search =
+    .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = Preifatrwydd a Diogelwch
+pane-privacy-title = Preifatrwydd a Diogelwch
+category-privacy =
+    .tooltiptext = { pane-privacy-title }
+pane-sync-title3 = Sync
+pane-ai-controls-title2 = Rheoli AI
+    .title = Rheoli AI
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = Ynghylch { -brand-short-name }
+    .title = { pane-about-firefox-title }
+pane-appearance-title = Gwedd
+    .title = { pane-appearance-title }
+pane-downloads-title2 = Llwythi
+    .title = Llwythi
+pane-downloads3 =
+    .heading = Llwythi
+pane-accessibility-title = Hygyrchedd
+    .title = { pane-accessibility-title }
+pane-languages-title2 = Iaith
+    .title = Iaith
+preferences-languages-header3 =
+    .heading = Iaith
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
+pane-experimental-title = Arbrofion { -brand-short-name }
+category-experimental =
+    .tooltiptext = Arbrofion { -brand-short-name }
+pane-experimental-subtitle = Byddwch Ofalus
+pane-experimental-search-results-header = Arbrofion { -brand-short-name }: Byddwch yn Ofalus
+pane-experimental-description2 = Gall newid dewisiadau ffurfweddiad uwch effeithio ar berfformiad neu ddiogelwch { -brand-short-name }.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = Rhowch gynnig ar ein nodweddion arbrofol! Maen nhw'n cael eu datblygu ac yn esblygu, sy'n gallu effeithio ar sut mae { -brand-short-name } yn gweithio. Dim ond os ydych wedi troi <a data-l10n-name="data-collection">data technegol a rhyngweithio</a> ymlaen y byddwn yn derbyn data am eich defnydd o'r nodweddion hyn.
+pane-experimental-description3 = Rhowch gynnig ar ein nodweddion arbrofol! Maen nhw'n cael eu datblygu ac yn esblygu, a allai effeithio ar sut mae { -brand-short-name } yn gweithio.
+pane-experimental-reset =
+    .label = Adfer y Rhagosodiadau
+    .accesskey = A
+help-button-label2 = Cefnogaeth { -brand-short-name }
+    .title = Cefnogaeth { -brand-short-name }
+addons-button-label2 = Estyniadau a Themâu
+    .title = Estyniadau a Themâu
+help-button-label = Cefnogaeth { -brand-short-name }
+addons-button-label = Estyniadau a Themâu
+focus-search =
+    .key = f
+close-button =
+    .aria-label = Cau
+do-not-track-removal2 =
+    .label = Dydyn ni ddim bellach yn cefnogi'r signal “Peidiwch â Thracio”.
+applications-setting-new-file-types =
+    .label = Beth ddylai { -brand-short-name } wneud gyda ffeiliau eraill?
+
+## Browser Restart Dialog
+
+feature-enable-requires-restart = Rhaid ailgychwyn { -brand-short-name } i alluogi'r nodwedd hon.
+feature-disable-requires-restart = Rhaid ailgychwyn { -brand-short-name } i analluogi'r nodwedd hon.
+should-restart-title = Ailgychwyn { -brand-short-name }
+should-restart-ok = Ailgychwynnwch { -brand-short-name } nawr
+cancel-no-restart-button = Diddymu
+restart-later = Ailgychwyn Rhywbryd Eto
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> sy'n rheoli'r gosodiad hwn.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> sy'n rheoli'r gosodiad hwn.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = Mae <img data-l10n-name="icon"/> <strong>{ $name }</strong> angen Tabiau Cynhwysydd.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> sy'n rheoli'r gosodiad hwn.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = Mae estyniad <img data-l10n-name="icon"/> <strong>{ $name }</strong>, yn rheoli sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = I alluogi'r estyniad ewch i Ychwanegion <img data-l10n-name="addons-icon"/> yn y ddewislen <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable-2 = I ail-alluogi'r estyniad hwn ewch i <a data-l10n-name="addons-link">Estyniadau a themâu</a>.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = Mae { $name } yn rheoli rhai o osodiadau eich cartref.
+
+## Preferences UI Search Results
+
+search-results-header = Canlyniadau Chwilio
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Ymddiheuriadau! Nid oes canlyniadau yn y Dewisiadau ar gyfer “<span data-l10n-name="query"></span>”.
+search-results-help-link = Angen help? Ewch i <a data-l10n-name="url">Cefnogaeth { -brand-short-name }</a>
+
+## General Section
+
+startup-header = Cychwyn
+always-check-default =
+    .label = Wrth gychwyn, gwirio ai { -brand-short-name } yw eich porwr ragosodedig
+    .accesskey = W
+is-default = { -brand-short-name } yw eich porwr rhagosodedig cyfredol
+is-not-default = { -brand-short-name } yw eich porwr rhagosodedig cyfredol
+set-as-my-default-browser =
+    .label = Gwneud yr Arferol…
+    .accesskey = A
+startup-restore-windows-and-tabs =
+    .label = Agor ffenestri a thabiau blaenorol
+    .accesskey = A
+startup-windows-launch-on-login-profile-disabled =
+    .message = Galluogwch y dewis hwn trwy dicio “{ profile-manager-use-selected.label }” yn y ffenestr “Dewis Proffil Defnyddiwr”.
+windows-launch-on-login =
+    .label = Agor { -brand-short-name } yn awtomatig pan fydd eich cyfrifiadur yn cychwyn
+    .accesskey = A
+windows-launch-on-login-disabled = Mae'r dewis hwn wedi'i analluogi yn Windows. I'w newid, ewch i <a data-l10n-name="startup-link">Startup Apps</a> yng ngosodiadau System.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = Hefyd agor tab newydd
+    .accesskey = H
+windows-launch-on-login-profile-disabled = Galluogwch y dewis hwn trwy dicio “{ profile-manager-use-selected.label }” yn y ffenestr “Dewis Proffil Defnyddiwr”.
+startup-restore-warn-on-quit =
+    .label = Rhybuddio wrth adael y porwr
+disable-extension =
+    .label = Analluogi Estyniad
+preferences-data-migration-group =
+    .label = Mewnforio data porwr
+    .description = Dewch â'ch nodau tudalen, cyfrineiriau, hanes, estyniadau ac awto llanw data o borwr arall.
+preferences-data-migration-header = Mewnforio Data Porwr
+preferences-data-migration-description = Mewnforio nodau tudalen, cyfrineiriau, hanes, a data awtolenwi i { -brand-short-name }.
+preferences-data-migration-button =
+    .label = Mewnforio Data
+    .accesskey = M
+preferences-profiles-group-header =
+    .heading = Proffiliau
+preferences-profiles-subpane-description =
+    .description = Mae gan bob proffil ddata pori a gosodiadau ar wahân, gan gynnwys hanes, cyfrineiriau, a mwy.
+preferences-profiles-section-header =
+    .label = Proffiliau
+    .description = Mae gan bob proffil ddata pori a gosodiadau ar wahân, gan gynnwys hanes, cyfrineiriau, a mwy.
+preferences-profiles-header = Proffiliau
+preferences-manage-profiles-description = Mae gan bob proffil ddata pori a gosodiadau ar wahân, gan gynnwys hanes, cyfrineiriau, a mwy.
+preferences-manage-profiles-learn-more = Darllen rhagor
+preferences-manage-profiles-button =
+    .label = Rheoli Proffiliau
+preferences-profiles-settings-button =
+    .label = Gosodiadau
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = Copïo'r proffil presennol
+    .description = Bydd y proffil hwn yn copïo eich gosodiadau, ychwanegion, hanes, a data wedi'i gadw fel nodau tudalen a chyfrineiriau — ond nid eich cyfrif na manylion cydweddu.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = Y proffil i'w gopïo
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = Dewis proffil
+preferences-copy-profile-button = Copïo
+tabs-browsing-section =
+    .heading = Tabiau a phori
+pane-tabs-browsing-title2 = Tabiau a phori
+    .title = Tabiau a phori
+tabs-group-header2 =
+    .label = Tabiau
+tabs-opening-heading =
+    .label = Yn agor
+tabs-interaction-heading =
+    .label = Rhyngweithiad
+tabs-containers-heading =
+    .label = Cynwysyddion
+tabs-closing-heading =
+    .label = Cau
+tabs-group-header = Tabiau
+ctrl-tab-recently-used-order =
+    .label = Mae Ctrl+Tab yn cylchdroi drwy dabiau yn y drefn y'u defnyddiwyd yn ddiweddar
+    .accesskey = T
+open-new-link-as-tabs =
+    .label = Agor dolenni mewn tabiau ac nid mewn ffenestri newydd
+    .accesskey = f
+open-external-link-next-to-active-tab =
+    .label = Agor dolenni o apiau nesaf at eich tab gweithredol
+ask-on-close-multiple-tabs =
+    .label = Gofyn cyn cau tabiau niferus
+    .accesskey = G
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Gofyn cyn gadael gyda { $quitKey }
+    .accesskey = n
+confirm-on-close-multiple-tabs =
+    .label = Cadarnhau cyn cau tabiau lluosog
+    .accesskey = l
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Cadarnhau cyn gadael gyda { $quitKey }
+    .accesskey = g
+warn-on-open-many-tabs =
+    .label = Rhybuddio y gall agor mwy nag un tab arafu { -brand-short-name }
+    .accesskey = a
+switch-to-new-tabs-2 =
+    .label = Wrth agor dolenni neu gyfryngau mewn tab newydd, newid iddo ar unwaith
+    .accesskey = W
+switch-to-new-tabs =
+    .label = Wrth agor dolen, delwedd neu gyfrwng mewn tab newydd, symud yn syth iddo
+    .accesskey = s
+show-tabs-in-taskbar =
+    .label = Dangos rhagolwg tab ym mar tasgau Windows
+    .accesskey = D
+browser-containers-enabled-2 =
+    .label = Defnyddio Tabiau Cynhwysydd
+    .accesskey = D
+browser-containers-enabled =
+    .label = Galluogi Tabiau Cynwysyddion
+    .accesskey = G
+browser-containers-learn-more = Darllen rhagor
+browser-containers-settings-2 =
+    .label = Rheoli gosodiadau
+    .accesskey = R
+browser-containers-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+containers-disable-alert-title = Cau Tabiau Pob Cynhwysydd?
+startup-group =
+    .label = Cychwyn
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
+containers-disable-alert-desc =
+    { $tabCount ->
+        [zero] Os fyddwch yn analluogi'r Tabiau Cynhwysydd, nid fydd tabiau cynhwysydd yn cael eu cau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+        [one] Os fyddwch yn analluogi Tabiau Cynwysyddion nawr, bydd { $tabCount } cynhwysydd tabiau yn cael ei gau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+        [two] Os fyddwch yn analluogi Tabiau Cynwysyddion nawr, bydd { $tabCount } gynhwysydd tabiau yn cael eu cau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+        [few] Os fyddwch yn analluogi Tabiau Cynwysyddion nawr, bydd { $tabCount } chynhwysydd tabiau yn cael eu cau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+        [many] Os fyddwch yn analluogi Tabiau Cynwysyddion nawr, bydd { $tabCount } cynhwysydd tabiau yn cael eu cau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+       *[other] Os fyddwch yn analluogi Tabiau Cynwysyddion nawr, bydd { $tabCount } cynhwysydd tabiau yn cael eu cau. Ydych chi'n siŵr eich bod am analluogi Tabiau Cynhwysyddion?
+    }
+containers-disable-alert-ok-button =
+    { $tabCount ->
+        [zero] Peidio Cau Tabiau Cynhwysydd
+        [one] Cau { $tabCount } Tab Cynhwysydd
+        [two] Cau { $tabCount } Dab Cynhwysydd
+        [few] Cau { $tabCount } Thab Cynhwysydd
+        [many] Cau { $tabCount } Thab Cynhwysydd
+       *[other] Cau { $tabCount } Tab Cynhwysydd
+    }
+
+##
+
+containers-disable-alert-cancel-button = Cadw wedi ei alluogi
+containers-remove-alert-title = Tynnu'r Cynhwysydd Hwn?
+# Variables:
+#   $count (number) - Number of tabs that will be closed.
+containers-remove-alert-msg =
+    { $count ->
+        [zero] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, ni fydd tabiau yn cael eu cau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+        [one] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, bydd { $count } tab yn cael ei gau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+        [two] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, bydd { $count } dab yn cael eu cau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+        [few] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, bydd { $count } thab yn cael eu cau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+        [many] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, bydd { $count } thab yn cael eu cau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+       *[other] Os fyddwch yn tynnu'r cynhwysydd hwn nawr, bydd { $count } tab yn cael eu cau. Ydych chi'n siŵr eich bod am dynnu'r Cynhwysydd hwn?
+    }
+containers-remove-ok-button = Tynnu'r Cynhwysydd Hwn
+containers-remove-cancel-button = Peidio Tynnu'r Cynhwysydd Hwn
+settings-tabs-show-image-in-preview =
+    .label = Dangos ragolwg delwedd pan fyddwch chi'n hofran ar dab
+    .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = Llusgo'r tabiau at ei gilydd i greu grwpiau tabiau
+browser-layout-header2 =
+    .label = Cynllun Porwr
+browser-layout-horizontal-tabs2 =
+    .label = Tabiau llorweddol
+    .title = Tabiau ar y brig
+    .description = Tabiau ar y brig
+browser-layout-vertical-tabs2 =
+    .label = Tabiau fertigol
+    .title = Tabiau ar yr ochr, yn y bar ochr
+    .description = Tabiau ar yr ochr, yn y bar ochr
+browser-layout-show-sidebar2 =
+    .label = Dangos y bar ochr
+    .description = Cael mynediad cyflym at nodau tudalen, tabiau o'ch ffôn, sgwrsfotiau AI a mwy yn gyflym heb adael eich prif olwg.
+page-navigation-group =
+    .label = Llywio tudalen
+browser-layout-header = Cynllun Porwr
+browser-layout-horizontal-tabs =
+    .label = Tabiau llorweddol
+browser-layout-horizontal-tabs-desc = Dangos ar frig y porwr
+browser-layout-vertical-tabs =
+    .label = Tabiau fertigol
+browser-layout-vertical-tabs-desc = Dangos ar yr ochr, yn y bar ochr
+browser-layout-show-sidebar =
+    .label = Dangos y bar ochr
+browser-layout-show-sidebar-desc = Cael mynediad cyflym at nodau tudalen, tabiau o'ch ffôn, sgwrsfotiau AI a mwy yn gyflym heb adael eich prif olwg.
+
+## General Section - Language & Appearance
+
+language-and-appearance-header = Iaith a Gwedd
+appearance-group2 =
+    .label = Gwedd gwefan
+    .description = Mae rhai gwefannau'n newid eu lliwiau i gyd-fynd â'ch dewis. Dewiswch eich thema lliw.
+preferences-web-appearance-choice-auto3 =
+    .label = System
+    .title = Newid cefndiroedd a chynnwys gwefannau ar sail gosodiadau eich system a thema { -brand-short-name }.
+preferences-web-appearance-header = Gwedd gwefan
+preferences-web-appearance-description = Mae rhai gwefannau yn addasu eu cynllun lliw yn seiliedig ar eich dewisiadau. Dewiswch pa gynllun lliw hoffech ei ddefnyddio ar gyfer y gwefannau hynny.
+preferences-web-appearance-choice-light2 =
+    .label = Golau
+    .title = Defnyddio gwedd olau ar gyfer cefndiroedd gwefannau a chynnwys.
+preferences-web-appearance-choice-dark2 =
+    .label = Tywyll
+    .title = Defnyddio gwedd dywyll ar gyfer cefndiroedd gwefan a chynnwys.
+web-appearance-group =
+    .aria-label = Gwedd gwefan
+preferences-web-appearance-choice-auto = Awtomatig
+preferences-web-appearance-choice-light = Golau
+preferences-web-appearance-choice-dark = Tywyll
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Newidiwch gefndir a chynnwys gwefan yn awtomatig yn seiliedig ar osodiadau eich system a thema { -brand-short-name }.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Defnyddio gwedd olau ar gyfer cefndiroedd gwefannau a chynnwys.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Defnyddio gwedd dywyll ar gyfer cefndiroedd gwefan a chynnwys.
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Mae eich gosodiadau rheoli cyferbyniad yn drech na gwedd y wefan.
+preferences-web-appearance-link =
+    .label = Rheoli themâu { -brand-short-name } yn Estyniadau a Themâu
+preferences-contrast-control-group =
+    .label = Cyferbyniad gwefan
+    .description = Mae gwefannau yn defnyddio amrywiaeth o liwiau blaendir a chefndir. Er mawyn cysondeb cydweddiad mae modd i chi ddefnyddio 'r un lliwiau ar draws gwefannau.
+preferences-contrast-control-radio-group =
+    .label = Diystyru lliwiau
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Mae eich dewisiadau lliw yn drech nag gwedd gwefan. <a data-l10n-name="colors-link">Rheoli lliwiau</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Rheoli themâu { -brand-short-name } yn <a data-l10n-name="themes-link">Estyniadau a Themâu</a>
+preferences-contrast-control-header = Rheoli Cyferbyniad
+preferences-contrast-control-description = Mae gan wefannau amrywiaeth o liwiau blaendir a chefndir. Ffurfweddwch { -brand-short-name } i ddefnyddio'r un lliwiau ar draws gwefannau i wella darllenadwyedd.
+preferences-contrast-control-use-platform-settings =
+    .label = Awtomatig (defnyddio gosodiadau'r system)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Diffodd
+    .accesskey = D
+preferences-contrast-control-custom =
+    .label = Cyfaddasu
+    .accesskey = C
+preferences-colors-manage-button2 =
+    .label = Rheoli Lliwiau
+    .accesskey = R
+preferences-colors-header = Lliwiau
+preferences-colors-description = Diystyru lliwiau rhagosodedig { -brand-short-name } mewn perthynas â thestun, cefndiroedd gwefannau a dolenni.
+preferences-colors-manage-button =
+    .label = Rheoli Lliwiau…
+    .accesskey = R
+preferences-fonts-header2 =
+    .label = Ffontiau
+preferences-fonts-header = Ffontiau
+default-font = Ffont rhagosodedig:
+    .accesskey = F
+default-font-size = Maint
+    .accesskey = M
+advanced-fonts =
+    .label = Uwch…
+    .accesskey = w
+preferences-default-zoom-label =
+    .label = Chwyddo rhagosodedig
+    .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Chwyddo
+preferences-default-zoom = Chwyddo rhagosodedig
+    .accesskey = C
+# Variables:
+#   $percentage (number) - Zoom percentage value
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Chwyddo testun yn unig
+    .accesskey = t
+preferences-text-zoom-override-warning2 =
+    .message = Os yw “Chwyddo testun yn unig” ymlaen ac nad yw eich chwyddo rhagosodedig yn 100%, efallai na fydd rhai gwefannau'n dangos cynnwys yn gywir.
+preferences-text-zoom-override-warning =
+    .message = Rhybudd: Os fyddwch yn dewis “Chwyddo testun yn unig” ac nad yw'ch chwyddo rhagosodedig wedi'i osod i 100%, gall achosi i rai gwefannau neu gynnwys dorri.
+language-header = Iaith
+choose-language-description = Dewis pa iaith i ddangos tudalennau
+website-language-heading =
+    .label = Iaith gwefan
+    .description = Mae rhai gwefannau'n cael eu dangos mewn nifer o ieithoedd. Dewiswch ieithoedd yn ôl eich trefn.
+website-preferred-language =
+    .label = Dewis iaith
+website-add-language =
+    .label = Ychwanegu iaith
+website-add-language-button =
+    .aria-label = Ychwanegu iaith a ddewiswyd
+    .title = Ychwanegu iaith a ddewiswyd
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = Tynnu { $locale }
+    .title = Tynnu { $locale }
+choose-button =
+    .label = Dewis…
+    .accesskey = D
+choose-browser-language-description = Dewiswch yr iaith i ddangos dewislenni, negeseuon a hysbysiadau gan { -brand-short-name }
+manage-browser-languages-button =
+    .label = Gosod Rhai Eraill
+    .accesskey = G
+confirm-browser-language-change-description = Ailgychwyn { -brand-short-name } i osod y newidiadau hyn
+confirm-browser-language-change-button = Gosod ac Ailgychwyn
+browser-language-heading =
+    .label = Iaith y porwr
+    .description = Dewiswch yr iaith sy'n cael ei defnyddio i ddangos dewislenni, negeseuon a hysbysiadau gan { -brand-short-name }.
+browser-language-preferred-label =
+    .label = Dewis iaith
+browser-language-fallback-label =
+    .label = Iaith wrth gefn
+    .description = Yn cael ei ddefnyddio pan mae cyfieithiad y dewis iaith yn anghyflawn.
+browser-language-install-error =
+    .message = Nid yw { -brand-short-name } yn gallu diweddaru eich iaith ar hyn o bryd. Gwiriwch eich bod wedi eich cysylltu i'r rhyngrwyd neu ceisiwch eto.
+translate-web-pages =
+    .label = Cyfieithu cynnwys gwe
+    .accesskey = C
+fx-translate-web-pages = { -translations-brand-name }
+# The <img> element is replaced by the logo of the provider
+# used to provide machine translations for web pages.
+translate-attribution = Cyfieithiadau gan <img data-l10n-name="logo"/>
+translate-exceptions =
+    .label = Eithriadau…
+    .accesskey = i
+settings-translations-header =
+    .label = Cyfieithu
+    .aria-label = Cyfieithu
+    .description = Cyfieithu tudalennau neu ddewis testun. I ddiogelu eich preifatrwydd, mae cyfieithiadau'n aros ar eich dyfais.
+settings-translations-offer-to-translate-label =
+    .label = Cynnig cyfieithiad tudalen lawn
+settings-translations-more-settings-button =
+    .label = Rhagor o osodiadau cyfieithu
+    .description = Gosod dewisiadau ar gyfer ieithoedd, gwefannau a chyfieithu all-lein.
+settings-translations-subpage-header =
+    .heading = Rhagor o osodiadau cyfieithu
+settings-translations-subpage-speed-up-translation-header =
+    .label = Cyflymu cyfieithu
+    .description = Llwythwch ieithoedd cyfan i lawr ar gyfer cyfieithu cyflymach ac i gyfieithu all-lein.
+settings-translations-subpage-automatic-translation-header =
+    .label = Cyfieithu awtomatig
+settings-translations-subpage-always-translate-header =
+    .label = Cyfieithu'r ieithoedd hyn bob tro
+settings-translations-subpage-never-translate-header =
+    .label = Peidio byth cyfieithu'r ieithoedd hyn
+settings-translations-subpage-never-translate-sites-header =
+    .label = Peidio â chyfieithu'r gwefannau hyn
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = I ychwanegu gwefan, agorwch y panel cyfieithu <img data-l10n-name="translations-icon"/>, dewiswch osodiadau cyfieithu <img data-l10n-name="settings-icon"/> yna dewiswch “Peidio byth cyfieithu'r wefan hon”
+settings-translations-subpage-language-select-option =
+    .label = Ychwanegu Iaith
+settings-translations-subpage-language-add-button =
+    .aria-label = Ychwanegu Iaith
+    .title = Ychwanegu Iaith
+settings-translations-subpage-download-languages-header =
+    .label = Llwytho ieithoedd i lawr
+settings-translations-subpage-download-languages-select-option =
+    .label = Dewis iaith
+settings-translations-subpage-download-languages-button =
+    .aria-label = Llwytho iaith i lawr
+    .title = Llwytho iaith i lawr
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size }MB)
+    .label = { $language } ({ $size }MB)
+settings-translations-subpage-no-languages-downloaded =
+    .label = Heb lwytho negeseuon i lawr
+settings-translations-subpage-no-languages-added =
+    .label = Dim ieithoedd wedi'u hychwanegu
+settings-translations-subpage-download-progress = Wrthi'n llwytho i lawr…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = Methu llwytho { $language } i lawr ( { $size }MB )
+settings-translations-subpage-download-retry-button =
+    .label = Ceisio eto
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = Dileu { $language } ( { $size }MB)?
+settings-translations-subpage-download-delete-button =
+    .label = Dileu
+settings-translations-subpage-download-cancel-button =
+    .label = Na
+settings-translations-subpage-no-sites-added =
+    .label = Dim gwefannau wedi'u hychwanegu
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Defnyddio gosodiadau eich system weithredu ar gyfer “{ $localeName }” i fformatio dyddiadau, amseroedd, rhifau a mesuriadau.
+settings-spellcheck-header =
+    .label = Gwirio sillafu
+check-user-spelling =
+    .label = Gwirio'r sillafu wrth deipio
+    .accesskey = G
+spellcheck-download-dictionaries =
+    .label = Llwytho geiriaduron i lawr
+spellcheck-promo =
+    .heading = Sut i ddefnyddio gwirio sillafu
+    .message = Cliciwch i'r dde ar faes testun i droi gwirio sillafu ymlaen neu i ffwrdd neu i newid iaith. Dyw pob maes ddim yn cefnogi gwirio sillafu.
+
+## General Section - Files and Applications
+
+files-and-applications-title = Ffeiliau a Rhaglenni
+download-save-files-header =
+    .label = Cadw ffeiliau yn
+download-save-where-3 =
+    .aria-label = Cadw ffeiliau yn
+download-always-ask-where2 =
+    .label = Gofyn ble i gadw ffeiliau cyn eu llwytho i lawr
+    .accesskey = G
+download-private-browsing-delete2 =
+    .label = Dileu llwytho i lawr ffenestr preifat wrth gau
+    .accesskey = l
+download-header = Llwythi i lawr
+download-save-where = Cadw ffeiliau yn
+    .accesskey = a
+download-choose-folder =
+    .label =
+        { PLATFORM() ->
+            [macos] Dewis…
+           *[other] Pori…
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] D
+           *[other] P
+        }
+download-always-ask-where =
+    .label = Gofyn i mi lle i gadw ffeiliau
+    .accesskey = G
+applications-header = Rhaglenni
+applications-description = Dewiswch sut mae { -brand-short-name } yn trin y ffeiliau rydych wedi eu llwytho i lawr o'r we neu'r rhaglenni rydych yn eu defnyddio wrth bori.
+applications-setting2 =
+    .label = Ffeiliau a Rhaglenni
+    .description = Dewis sut fydd { -brand-short-name } yn trin ffeiliau wedi'u llwytho i lawr a chynnwys.
+applications-filter =
+    .placeholder = Chwilio'r mathau o ffeil neu raglenni
+applications-type-column =
+    .label = Math o Gynnwys
+    .accesskey = M
+applications-type-heading = Math o Gynnwys
+applications-action-column =
+    .label = Gweithred
+    .accesskey = G
+applications-action-heading = Gweithred
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Ffeil { $extension }
+applications-action-save =
+    .label = Cadw Ffeil
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Defnyddio { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Defnyddio { $app-name } (rhagosodiad)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Defnyddio rhaglen ragosodedig macOS
+            [windows] Defnyddio rhaglen ragosodedig Windows
+           *[other] Defnyddio rhaglen ragosodedig y system
+        }
+applications-use-other =
+    .label = Defnyddio rhywbeth arall…
+applications-select-helper = Dewis Rhaglen Gynorthwyol
+applications-manage-app =
+    .label = Manylion y Rhaglen…
+applications-always-ask =
+    .label = Gofyn bob tro
+# Variables:
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Defnyddio { $plugin-name } (yn { -brand-short-name })
+applications-open-inapp =
+    .label = Agor yn { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
+
+## Firefox updates
+
+applications-handle-new-file-types-description = Beth ddylai { -brand-short-name } wneud gyda ffeiliau eraill?
+applications-save-for-new-types =
+    .label = Cadw'r ffeiliau
+    .accesskey = f
+applications-save-for-new-types2 =
+    .label = Cadw ffeiliau'n awtomatig
+    .accesskey = a
+applications-ask-before-handling =
+    .label = Gofyn a ydych am agor neu gadw ffeiliau
+    .accesskey = G
+applications-ask-before-handling2 =
+    .label = Gofyn i agor neu gadw ffeiliau
+    .accesskey = G
+drm-group =
+    .label = Cynnwys Rheoli Hawliau Digidol (DRM)
+drm-content-header = Cynnwys Rheoli Hawliau Digidol (DRM)
+play-drm-content =
+    .label = Chwarae cynnwys wedi ei reoli gan DRM
+    .accesskey = D
+play-drm-content-learn-more = Darllen rhagor
+update-application-title = Diweddariadau { -brand-short-name }
+update-application-description = Cadwch { -brand-short-name } yn gyfredol am y perfformiad, y sefydlogrwydd a'r diogelwch gorau.
+# Variables:
+# $version (string) - Firefox version
+update-application-version = Fersiwn { $version } <a data-l10n-name="learn-more">Beth sy'n newydd</a>
+update-history-2 =
+    .label = Dangos Hanes Diweddaru
+    .accesskey = D
+update-application-installation =
+    .label = Gosod
+update-application-auto-2 =
+    .label = Gosod diweddariadau'n awtomatig (argymhell)
+    .accesskey = G
+update-history =
+    .label = Dangos Hanes Diweddaru…
+    .accesskey = D
+update-application-allow-description = Caniatáu i { -brand-short-name }
+update-application-auto =
+    .label = Gosod diweddariadau'n awtomatig (argymell)
+    .accesskey = G
+update-application-check-choose-2 =
+    .label = Gwirio'r ddiweddariadau, ond dewis pryd i'w gosod
+    .accesskey = G
+update-application-check-choose =
+    .label = Gwirio am ddiweddariadau, ond gadael i mi ddewis i'w gosod a'i peidio
+    .accesskey = G
+update-application-manual =
+    .label = Byth gwirio am ddiweddariadau (ddim yn argymell)
+    .accesskey = B
+update-application-background-enabled =
+    .label = Pan nad yw { -brand-short-name } yn rhedeg
+    .accesskey = P
+update-application-warning-cross-user-setting-2 =
+    .message = Bydd y gosodiad hwn yn berthnasol i bob cyfrif Windows a proffiliau { -brand-short-name } sy'n ddefnyddio'r gosodiad { -brand-short-name } hwn.
+update-application-suppress-prompts-2 =
+    .label = Dangos llai o negeseuon atgoffa i ddiweddaru
+    .accesskey = D
+update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnasol i bob cyfrif Windows a proffiliau { -brand-short-name } sy'n ddefnyddio'r gosodiad { -brand-short-name } hwn.
+update-application-use-service =
+    .label = Defnyddio gwasanaethau cefndirol i osod diweddariadau
+    .accesskey = c
+update-application-suppress-prompts =
+    .label = Dangos llai o anogwyr hysbysu diweddariadau
+    .accesskey = D
+update-setting-write-failure-title2 = Gwall wrth gadw dewisiadau Diweddaru
+# Variables:
+#   $path (string) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    Bu gwall ar { -brand-short-name } ac nid yw wedi cadw'r newid hwn. Sylwch fod gosod caniatâd ar gyfer y diweddariad hwn yn gofyn am ganiatâd i ysgrifennu at y ffeil isod. Efallai y byddwch chi neu weinyddwr system yn gallu datrys y gwall trwy roi rheolaeth lawn i'r ffeil hon i'r grŵp Defnyddwyr.
+    
+    Methu ysgrifennu i ffeil: { $path }
+update-in-progress-title = Wrthi'n Diweddaru
+update-in-progress-message = Hoffech chi i { -brand-short-name } barhau gyda'r diweddariad hwn?
+update-in-progress-ok-button = &Dileu
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Parhau
+
+## About Firefox
+
+about-firefox-header =
+    .heading = Ynghylch { -brand-short-name }
+
+## Firefox updates
+
+update-application-heading =
+    .label = Diweddariadau { -brand-short-name }
+    .description = Mae diweddariadau { -brand-short-name } yn gwella cyflymder, sefydlogrwydd a diogelwch.
+update-application-suppress-prompts-heading =
+    .label = Hysbysiadau
+update-application-updates-managed-by-os =
+    .message = Mae diweddariadau'n cael eu rheoli gan eich system weithredu
+
+## Firefox support
+
+support-application-heading =
+    .label = Cefnogaeth { -brand-short-name }
+    .description = Datrys materion a rhannu syniadau gyda'r gymuned
+support-get-help =
+    .label = Derbyn cymorth
+support-share-ideas =
+    .label = Rhannu syniadau ac adborth…
+
+## General Section - Performance
+
+performance-title = Perfformiad
+performance-use-recommended-settings-checkbox =
+    .label = Defnyddio'r gosodiadau perfformiad sy'n cael eu hargymell
+    .accesskey = D
+performance-use-recommended-settings-desc = Mae'r gosodiadau hyn wedi eu teilwrio i galedwedd a system weithredu eich cyfrifiadur.
+performance-settings-learn-more = Darllen rhagor
+performance-allow-hw-accel =
+    .label = Defnyddio cyflymu caledwedd pan fydd ar gael
+    .accesskey = e
+performance-limit-content-process-option = Terfyn proses cynnwys
+    .accesskey = T
+performance-limit-content-process-enabled-desc = Mae rhagor o brosesau cynnwys yn gallu gwella perfformiad pan yn defnyddio tabiau lluosog, ond fydd hefyd yn defnyddio mwy o gof.
+performance-limit-content-process-blocked-desc = Dim ond yn y fersiwn amlbroses o { -brand-short-name } y mae newid y nifer o brosesau cynnwys yn bosib. <a data-l10n-name="learn-more">Dysgwch sut i weld os yw aml-brosesu wedi ei alluogi</a>
+# Variables:
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
+performance-default-content-process-count =
+    .label = { $num } (rhagosodiad)
+performance-group =
+    .label = Perfformiad
+performance-use-recommended-settings-checkbox-2 =
+    .label = Defnyddio gosodiadau perfformiad sy'n cael eu hargymell
+    .description = Mae'r gosodiadau wedi eu haddasu ar gyfer eich caledwedd a system weithredu.
+    .accesskey = g
+
+## Accessibility page
+
+browsing-title = Pori
+browsing-group-label =
+    .aria-label = Yn Pori
+browsing-use-autoscroll =
+    .label = Defnyddio awto sgrolio
+    .accesskey = a
+keyboard-and-scrolling-group =
+    .label = Llywio a sgrolio bysellfwrdd
+motion-and-link-group =
+    .label = Arddull dolenni a symudedd
+browsing-use-smooth-scrolling =
+    .label = Defnyddio sgrolio llyfn
+    .accesskey = s
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Dangos bariau sgrolio bob tro
+    .accesskey = D
+browsing-always-underline-links =
+    .label = Tanlinellu dolenni bob tro
+    .accesskey = T
+browsing-use-onscreen-keyboard =
+    .label = Dangos bysellfwrdd cyffwrdd pan fydd angen
+    .accesskey = b
+browsing-use-cursor-navigation =
+    .label = Defnyddio bysellau'r cyrchwr ar gyfer symud o fewn tudalennau
+    .accesskey = D
+browsing-use-full-keyboard-navigation =
+    .label = Defnyddiwch y bysell tab i symud ffocws rhwng rheolyddion ffurf a chysylltiadau
+    .accesskey = D
+browsing-search-on-start-typing =
+    .label = Chwilio am destun wrth i mi gychwyn teipio
+    .accesskey = d
+settings-keyboard-shortcuts-group =
+    .label = Llwybrau byr bysellfwrdd
+    .description = Rheoli sut rydych yn symud o amgylch a rhyngweithio gyda { -brand-short-name }.
+settings-keyboard-shortcuts-customkeys-link =
+    .label = Cyfaddasu llwybrau byr bysellfwrdd
+settings-media-group =
+    .label = Cyfrwng
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = Defnyddio Llun-mewn-Llun
+    .accesskey = L
+browsing-picture-in-picture-toggle-enabled =
+    .label = Galluogi rheolyddion fideo Llun-mewn-Llun
+    .accesskey = G
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = Cadw i chwarae fideos yn Llun-mewn-Llun wrth newid tabiau
+    .accesskey = L
+browsing-picture-in-picture-learn-more = Darllen rhagor
+browsing-media-control =
+    .label = Rheoli cyfryngau trwy fysellfwrdd, penset neu ryngwyneb rhithwir
+    .accesskey = t
+recommendations-group =
+    .label = Argymhellion
+browsing-media-control-learn-more = Darllen rhagor
+browsing-cfr-recommendations =
+    .label = Argymell estyniadau wrth i chi bori
+    .accesskey = A
+browsing-cfr-features =
+    .label = Argymell nodweddion wrth i chi bori
+    .accesskey = A
+browsing-cfr-recommendations-learn-more = Darllen rhagor
+browsing-group =
+    .label = Pori
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = Hygyrchedd
+preferences-default-zoom-select =
+    .aria-label = Chwyddo rhagosodedig
+preferences-fonts-family =
+    .label = Teulu ffontiau
+    .accesskey = T
+preferences-fonts-size =
+    .label = Maint ffont
+    .accesskey = M
+preferences-fonts-advanced-settings =
+    .label = Gosodiadau uwch
+    .accesskey = G
+
+## General Section - Proxy
+
+network-settings-title = Gosodiadau Rhwydwaith
+network-proxy-connection-description = Ffurfweddwch sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
+network-proxy-connection-learn-more = Darllen rhagor
+network-proxy-connection-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+network-proxy-group2 =
+    .label = Gosodiadau dirprwy
+    .description = Ffurfweddu sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
+network-proxy-connection-settings2 =
+    .label = Ffurfweddu dirprwy
+    .description = Gall newid y gosodiadau hyn greu anhawsterau cysylltu
+    .accesskey = d
+
+## Home Section
+
+home-new-windows-tabs-header = Ffenestri a Thabiau Newydd
+home-new-windows-tabs-description2 = Dewiswch beth fyddwch yn ei weld wrth i chi agor eich tudalen cartref, ffenestri newydd a thabiau newydd.
+home-section =
+    .heading = Cartref a chychwyn
+
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = Porwr Rhagosodedig
+is-default-browser-2 =
+    .message = { -brand-short-name } yw eich porwr rhagosodedig. Dewis da.
+is-not-default-browser-2 =
+    .message = Pst, nid { -brand-short-name } yw eich porwr arferol.
+set-as-my-default-browser-2 =
+    .label = Gwneud yr Arferol
+    .accesskey = A
+
+## Custom Homepage subpage
+
+home-homepage-mode-label = Tudalen cartref a ffenestri newydd
+home-homepage-new-windows =
+    .label = Ffenestri newydd
+home-newtabs-mode-label = Tabiau newydd
+home-homepage-new-tabs =
+    .label = Tabiau newydd
+home-restore-defaults =
+    .label = Adfer y Rhagosodiadau
+    .accesskey = A
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (Rhagosodedig)
+home-mode-choice-custom =
+    .label = URLau Cyfaddas...
+home-mode-choice-blank =
+    .label = Tudalen Wag
+home-homepage-custom-url =
+    .placeholder = Gludo URL...
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = Rheoli estyniad
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = Dewis safle penodol
+# This string has a special case for '1' and [other] (default). If necessary for
+# your language, you can add {$tabCount} to your translations and use the
+# standard CLDR forms, or only use the form for [other] if both strings should
+# be identical.
+use-current-pages =
+    .label =
+        { $tabCount ->
+            [1] Defnyddio'r Dudalen Bresennol
+           *[other] Defnyddio'r Dudalen Bresennol
+        }
+    .accesskey = B
+choose-bookmark =
+    .label = Defnyddio Nod Tudalen…
+    .accesskey = N
+
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = Tudalen Cartref
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = Tudalen Cartref Cyfaddas
+home-custom-homepage-subpage =
+    .heading = Tudalen Cartref Cyfaddas
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = Cyfeiriad(au) gwefan
+home-custom-homepage-address =
+    .placeholder = Rhowch gyfeiriad
+home-custom-homepage-address-button =
+    .label = Ychwanegu cyfeiriad
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = Dim gwefannau wedi'u hychwanegu eto.
+home-custom-homepage-delete-address-button =
+    .aria-label = Dileu cyfeiriad
+    .title = Dileu cyfeiriad
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = Amnewid gyda
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = Tudalennau ar agor nawr
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = Nodau Tudalen…
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header2 = Cynnwys { -firefox-home-brand-name }
+home-prefs-content-description2 = Dewiswch pa gynnwys rydych chi eisiau ar eich sgrin { -firefox-home-brand-name }.
+home-prefs-firefox-logo-header =
+    .label = Logo { -brand-short-name }
+home-prefs-search-header =
+    .label = Chwilio'r We
+home-prefs-search-header2 =
+    .label = Chwilio
+home-prefs-shortcuts-header =
+    .label = Llwybrau Byr
+home-prefs-shortcuts-description = Gwefannau rydych yn eu cadw neu'n ymweld â nhw
+home-prefs-shortcuts-select =
+    .aria-label = Llwybrau Byr
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Llwybrau byr wedi'u noddi
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-recommended-by-header =
+    .label = Argymhellwyd gan { $provider }
+home-prefs-recommended-by-description-new = Cynnwys eithriadol wedi'u curadu gan { $provider }, rhan o deulu { -brand-product-name }
+home-prefs-recommended-by-header-generic =
+    .label = Straeon cymeradwy
+home-prefs-recommended-by-description-generic = Cynnwys eithriadol wedi'i gasglu gan deulu { -brand-product-name }
+home-prefs-stories-header =
+    .label = Straeon
+home-prefs-stories-description = Straeon personol ar sail eich gweithgaredd
+home-prefs-stories-header2 =
+    .label = Straeon
+    .description = Cynnwys eithriadol wedi'i gasglu gan deulu { -brand-product-name }
+
+##
+
+home-prefs-recommended-by-learn-more = Sut mae'n gweithio
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Straeon wedi’u noddi
+home-prefs-recommended-by-option-recent-saves =
+    .label = Dangos Eitemau wedi'u Cadw'n Diweddar
+home-prefs-highlights-option-visited-pages =
+    .label = Tudalennau Ymwelwyd â Nhw
+home-prefs-highlights-options-bookmarks =
+    .label = Nodau Tudalen
+home-prefs-highlights-option-most-recent-download =
+    .label = Y Llwytho i Lawr Diweddaraf
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Tudalennau wedi eu Cadw i { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Gweithgaredd diweddar
+home-prefs-recent-activity-description = Detholiad o wefannau a chynnwys diweddar
+home-prefs-recent-activity-select =
+    .aria-label = Gweithgaredd diweddar
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Pytiau
+home-prefs-snippets-description-new = Awgrymiadau a newyddion gan { -vendor-short-name } a { -brand-product-name }
+home-prefs-weather-header =
+    .label = Y Tywydd
+home-prefs-weather-description = Cipolwg ar ragolygon tywydd heddiw
+home-prefs-weather-learn-more-link = Rhagor
+home-prefs-widgets-header =
+    .label = Teclynnau
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = Rhestrau
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = Amserydd
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = Chwaraeon
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = Cloc
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Cefnogi { -brand-product-name }
+home-prefs-mission-message = Mae ein noddwyr yn cefnogi ein cenhadaeth i adeiladu gwe well
+home-prefs-mission-message-learn-more-link = Dyma sut
+home-prefs-mission-message2 =
+    .message = Mae ein noddwyr yn cefnogi ein cenhadaeth i adeiladu gwe well
+home-prefs-manage-topics-link = Rheoli pynciau
+home-prefs-manage-topics-link2 =
+    .label = Rheoli pynciau
+home-prefs-choose-wallpaper-link = Dewis Papur Wal
+home-prefs-choose-wallpaper-link2 =
+    .label = Dewis Papur Wal
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = I ddefnyddio'r nodweddion hyn, gosodwch dabiau newydd neu ffenestri newydd i { -firefox-home-brand-name }.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = Estyniad ( { $extension } )
+# Variables:
+#   $num (number) - Number of rows displayed
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [zero] { $num } rhesi
+            [one] { $num } rhes
+            [two] { $num } res
+            [few] { $num } rhes
+            [many] { $num } rhes
+           *[other] { $num } rhes
+        }
+
+## Search Section
+
+search-bar-header = Bar Chwilio
+search-bar-hidden =
+    .label = Defnyddio'r bar cyfeiriadau ar gyfer chwilio a llywio
+search-bar-shown =
+    .label = Ychwanegu'r bar chwilio i'r bar offer
+search-engine-default-header = Peiriant Chwilio Rhagosodedig
+search-engine-default-desc-2 = Hwn yw'ch peiriant chwilio rhagosodedig yn y bar cyfeiriad a'r bar chwilio. Gallwch ei newid ar unrhyw adeg.
+search-engine-default-private-desc-2 = Dewiswch beiriant chwilio rhagosodedig i'w ddefnyddio yn y Ffenestr Breifat yn unig.
+search-separate-default-engine =
+    .label = Defnyddio'r peiriant chwilio hwn mewn Ffenestri Preifat
+    .accesskey = D
+search-suggestions-header = Awgrymiadau Chwilio
+search-suggestions-desc = Dewiswch sut fydd awgrymiadau gan beiriannau chwilio yn ymddangos.
+search-suggestions-option =
+    .label = Darparu awgrymiadau chwilio
+    .accesskey = c
+search-show-suggestions-option =
+    .label = Dangos awgrymiadau chwilio
+    .accesskey = D
+search-show-suggestions-url-bar-option =
+    .label = Dangos awgrymiadau chwilio yng nghanlyniadau'r bar lleoliad
+    .accesskey = D
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = Dangos awgrymiadau chwilio cyn hanes pori yng nghanlyniadau'r bar cyfeiriad
+search-show-suggestions-private-windows-2 =
+    .label = Awgrymiadau chwilio mewn ffenestri preifat
+search-suggestions-cant-show-2 =
+    .message = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
+addressbar-header-1 =
+    .label = Bar Cyfeiriadau
+    .description = Dewiswch pa awgrymiadau sy'n cael eu dangos yn eich bar cyfeiriad
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name }
+    .description = Awgrymiadau gan { -brand-short-name } a'n partneriaid yn eich bar cyfeiriad.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
+search-show-search-term-option-2 =
+    .label = Dangos termau chwilio yn y bar cyfeiriad ar dudalennau canlyniadau
+search-separate-default-engine-2 =
+    .label = Defnyddiwch beiriant chwilio rhagosodedig gwahanol mewn ffenestri preifat
+    .accesskey = b
+search-separate-default-engine-dropdown =
+    .aria-label = Peiriant chwilio rhagosodedig mewn ffenestri preifat
+search-suggestions-header-2 =
+    .label = Awgrymiadau peiriannau chwilio
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Dangos termau chwilio yn lle URL ar dudalen canlyniadau peiriannau chwilio rhagosodedig
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "ahead" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option =
+    .label = Dangos awgrymiadau chwilio o flaen hanes yng nghanlyniadau'r bar cyfeiriadau
+search-show-suggestions-private-windows =
+    .label = Dangos awgrymiadau chwilio mewn Ffenestri Preifat
+suggestions-addressbar-settings-generic2 = Newid dewisiadau awgrymiadau eraill y bar cyfeiriad
+search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
+search-one-click-header2 = Chwilio'r Llwybrau Byr
+search-one-click-desc = Dewiswch beiriant chwilio arall sy'n ymddangos o dan y bar cyfeiriad a'r bar chwilio pan fyddwch yn cychwyn allweddair.
+search-one-click-header-3 =
+    .label = Peiriannau chwilio ychwanegol
+    .description = Dewiswch ba beiriannau chwilio a llwybrau byr sy'n ymddangos yn eich bar cyfeiriad.
+update-search-engine-success =
+    .message = Diweddarwyd y peiriant chwilio yn llwyddiannus
+search-edit-engine-2 =
+    .title = Golygu peiriant chwilio
+search-delete-engine =
+    .title = Dileu peiriant chwilio
+search-enable-engine =
+    .title = Galluogi peiriant chwilio
+search-outlink-to-extensions-page =
+    .title = Rheoli mewn estyniadau a themâu
+search-choose-engine-column =
+    .label = Peiriannau Chwilio
+search-choose-keyword-column =
+    .label = Allweddair
+search-restore-default =
+    .label = Adfer Peiriannau Chwilio Rhagosodedig
+    .accesskey = A
+search-remove-engine =
+    .label = Tynnu
+    .accesskey = T
+search-add-engine =
+    .label = Ychwanegu
+    .accesskey = Y
+search-add-engine-2 =
+    .label = Ychwanegu peiriant chwilio
+    .accesskey = Y
+search-edit-engine =
+    .label = Golygu
+    .accesskey = G
+search-find-more-link = Ychwanegu peiriannau chwilio eraill
+search-filtering-for-add-engine = Ychwanegu Peiriant
+# This warning is displayed when the chosen keyword is already in use
+# ('Duplicate' is an adjective)
+search-keyword-warning-title = Allweddair Dyblyg
+# Variables:
+#   $name (string) - Name of a search engine.
+search-keyword-warning-engine = Rydych wedi defnyddio allweddair sy'n cael ei ddefnyddio gan "{ $name }". Dewiswch un arall.
+search-keyword-warning-bookmark = Rydych wedi defnyddio allweddair sy'n cael ei ddefnyddio gan nod tudalen. Dewiswch un arall.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Mae peiriant chwilio eisoes o'r enw “{ $name }”. Dewiswch enw arall.
+remove-engine-confirmation = Ydych chi'n siŵr eich bod am dynnu'r peiriant chwilio hwn?
+remove-engine-remove = Tynnu
+remove-addon-engine-alert = I dynnu'r peiriant chwilio hwn, tynnwch yr ychwanegyn cysylltiedig.
+search-engine-group =
+    .label = Peiriant Chwilio Rhagosodedig
+search-default-engine =
+    .aria-label = Peiriant Chwilio Rhagosodedig
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = Chwilio
+
+## Containers Section
+
+containers-back-button2 =
+    .aria-label = Nôl i'r Gosodiadau
+containers-header = Tabiau Cynwysyddion
+containers-section-header =
+    .heading = Tabiau Cynwysyddion
+containers-add-button =
+    .label = Ychwanegu Cynhwysydd Newydd
+    .accesskey = Y
+containers-new-tab-check =
+    .label = Dewiswch gynhwysydd ar gyfer pob tab newydd
+    .accesskey = g
+containers-settings-button =
+    .label = Gosodiadau
+containers-remove-button =
+    .label = Tynnu
+containers-section-header2 =
+    .heading = Gosodiadau cynhwysydd
+containers-card-header2 =
+    .label = Cynwysyddion
+    .description = Gwahanwch gwcis yn ôl cynwysyddion fel bod modd i chi ddefnyddio cyfrifon gwahanol ar yr un gwefannau a chyfyngu tracio traws-gwefan.
+containers-add-button2 =
+    .label = Ychwanegu cynhwysydd newydd
+    .accesskey = Y
+containers-new-tab-check3 =
+    .label = Dewis cynhwysydd ar gyfer pob tab newydd
+    .accesskey = D
+containers-new-tab-check2 =
+    .label = Dewis cynhwysydd ar gyfer pob tab newydd
+    .accesskey = D
+    .description = Bydd hyn yn agor y ddewislen cynhwysyddion bob tro fyddwch yn pwyso'r botwm agor tab newydd.
+containers-settings-button2 =
+    .title = Gosodiadau
+containers-remove-button3 =
+    .title = Dileu
+containers-remove-button2 =
+    .title = Tynnu
+
+## Account and sync
+
+sync-group-label =
+    .label = Sync
+account-group-label2 =
+    .label = Cyfrif
+account-disabled-group =
+    .label = Cyfrif
+    .description = Dyw gosodiadau cyfrif ddim ar gael.
+account-placeholder2 =
+    .label = Dydych chi heb fewngofnodi
+    .description = Mewngofnodwch a  chadw'ch data yn breifat, wedi'i amgryptio ac ar gael yn syth lle bynnag fyddwch yn defnyddio { -brand-short-name }.
+account-sync-section =
+    .heading = Cyfrif a chydweddu
+pane-account-sync-title2 = Cyfrif a chydweddu
+    .title = Cyfrif a chydweddu
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
+sync-signedout-caption = Mynd â'ch  Gwe gyda Chi
+sync-signedout-description2 = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ar draws eich holl ddyfeisiau.
+sync-signedout-account-signin3 =
+    .label = Mewngofnodi i Sync…
+    .accesskey = M
+sync-signedout-account-signin-4 =
+    .label = Mewngofnodwch i'ch cyfrif i gychwyn cydweddu
+    .accesskey = M
+sync-signedout-account-short =
+    .label = Mewngofnodi
+    .accesskey = M
+# This message contains two links and two icon images.
+#   `<img data-l10n-name="android-icon"/>` - Android logo icon
+#   `<a data-l10n-name="android-link">` - Link to Android Download
+#   `<img data-l10n-name="ios-icon">` - iOS logo icon
+#   `<a data-l10n-name="ios-link">` - Link to iOS Download
+#
+# They can be moved within the sentence as needed to adapt
+# to your language, but should not be changed or translated.
+sync-mobile-promo = Llwytho Waterfox i lawr ar gyfer <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> neu <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> i gydweddu gyda'ch dyfais symudol.
+
+## Firefox account - Signed in
+
+sync-profile-picture =
+    .tooltiptext = Newid llun proffil
+sync-profile-picture-with-alt =
+    .tooltiptext = Newid llun proffil
+    .alt = Newid llun proffil
+sync-profile-picture-account-problem =
+    .alt = Llun proffil cyfrif
+fxa-login-rejected-warning =
+    .alt = Rhybudd
+sync-sign-out =
+    .label = Allgofnodi…
+    .accesskey = A
+sync-sign-out2 =
+    .label = Allgofnodi
+    .accesskey = A
+sync-manage-account = Rheoli cyfrif
+    .accesskey = R
+sync-manage-account2 =
+    .label = Rheoli cyfrif
+    .accesskey = R
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-signedin-unverified = { $email } wedi ei wirio.
+sync-signedin-unverified2 =
+    .label = Nid yw { $email } wedi'i gadarnhau eto
+    .description = Gwiriwch eich blwch derbyn i gadarnhau'ch cyfrif ac i'w wneud yn swyddogol.
+sync-signedin-login-failure = Ail fewngofnodwch er mwyn ailgysylltu { $email }
+sync-signedin-login-failure2 =
+    .label = Rydych wedi allgofnodi o { $email }
+    .description = Mewngofnodwch i ailgysylltu ac i gychwyn cydweddu'ch data.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
+
+##
+
+sync-resend-verification =
+    .label = Ail Anfon Dilysiad
+    .accesskey = A
+sync-verify-account =
+    .label = Dilysu Cyfrif
+    .accesskey = D
+sync-remove-account =
+    .label = Tynnu Cyfrif
+    .accesskey = T
+sync-sign-in =
+    .label = Mewngofnodi
+    .accesskey = M
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Cydweddu: YMLAEN
+prefs-syncing-on-2 =
+    .label = Cydweddu YMLAEN
+prefs-syncing-off = Cydweddu: DIFFODD
+prefs-syncing-off-2 =
+    .label = Cydweddu I FFWRDD
+    .description = Trowch cydweddu ymlaen i gael eich nodau tudalen, cyfrineiriau, hanes a rhagor ar unrhyw ddyfais.
+prefs-sync-turn-on-syncing =
+    .label = Cychwyn cydweddu…
+    .accesskey = C
+prefs-sync-turn-on-syncing-2 =
+    .label = Cychwyn cydweddu
+    .accesskey = C
+prefs-sync-offer-setup-label2 = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ar draws eich holl ddyfeisiau.
+prefs-sync-now =
+    .labelnotsyncing = Cydweddu Nawr
+    .accesskeynotsyncing = N
+    .labelsyncing = Cydweddu…
+prefs-sync-now-button =
+    .label = Cydweddu Nawr
+    .accesskey = N
+prefs-sync-now-button-2 =
+    .label = Cydweddu Nawr
+    .accesskey = N
+prefs-syncing-button =
+    .label = Cydweddu…
+prefs-syncing-button-2 =
+    .label = Cydweddu…
+    .title = Cydweddu Nawr
+
+## The list of things currently syncing.
+
+sync-syncing-across-devices-heading = Rydych yn cydweddu'r eitemau hyn i'ch holl ddyfeisiau cysylltiedig:
+sync-syncing-across-devices-heading-2 = Data wedi'u cydweddu ar draws dyfeisiau
+sync-syncing-across-devices-empty-state2 =
+    .label = Rheoli data wedi'i gydweddu
+    .description = Dydych chi ddim yn cydweddu dim… eto. Cychwynnwch gydweddu i gael y cyfan o'ch data ar eich holl ddyfeisiau.
+sync-currently-syncing-bookmarks = Nodau Tudalen
+sync-currently-syncing-history = Hanes
+sync-currently-syncing-tabs = Tabiau ar agor
+sync-currently-syncing-logins-passwords = Mewngofnodion a chyfrineiriau
+sync-currently-syncing-passwords = Cyfrineiriau
+sync-currently-syncing-addresses = Cyfeiriadau
+sync-currently-syncing-creditcards = Cardiau Credyd
+sync-currently-syncing-payment-methods = Dulliau talu
+sync-currently-syncing-addons = Ychwanegion
+sync-currently-syncing-settings = Gosodiadau
+sync-manage-options =
+    .label = Rheoli cydweddu…
+    .accesskey = R
+sync-manage-options-2 =
+    .label = Rheoli data wedi'u cydweddu
+    .accesskey = R
+settings-sync-disconnect-button =
+    .label = Datgysylltu
+sync-change-options =
+    .label = Newid…
+    .accesskey = N
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog3 =
+    .title = Dewis Beth i'w Gydweddu
+    .style = min-width: 36em;
+    .buttonlabelaccept = Cadw Newidiadau
+    .buttonaccesskeyaccept = N
+    .buttonlabelextra2 = Datgysylltu…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Bydd y newidiadau i'r rhestr o eitemau i'w cydweddu'n i'w gweld ar eich holl ddyfeisiau cysylltiedig.
+sync-engine-bookmarks =
+    .label = Nodau Tudalen
+    .accesskey = T
+sync-engine-history =
+    .label = Hanes
+    .accesskey = H
+sync-engine-tabs =
+    .label = Tabiau ar agor
+    .tooltiptext = Rhestr o'r hyn sydd ar agor ar bob dyfais wedi eu cydweddu
+    .accesskey = T
+sync-engine-logins-passwords =
+    .label = Mewngofnodion a chyfrineiriau
+    .tooltiptext = Enwau defnyddwyr a chyfrineiriau rydych wedi'u cadw
+    .accesskey = M
+sync-engine-passwords =
+    .label = Cyfrineiriau
+    .tooltiptext = Cyfrineiriau rydych wedi'u cadw
+    .accesskey = C
+sync-engine-addresses =
+    .label = Cyfeiriadau
+    .tooltiptext = Cyfeiriadau post rydych wedi eu cadw (bwrdd gwaith yn unig)
+    .accesskey = y
+sync-engine-creditcards =
+    .label = Cardiau Credyd
+    .tooltiptext = Enwau, rhifau a dyddiadau dod i ben (bwrdd gwaith yn unig)
+    .accesskey = r
+sync-engine-payment-methods2 =
+    .label = Dulliau talu
+    .tooltiptext = Enwau, rhifau cardiau a dyddiau dod i ben
+    .accesskey = D
+sync-engine-addons =
+    .label = Ychwanegion
+    .tooltiptext = Estyniadau a themâu ar gyfer Waterfox bwrdd gwaith
+    .accesskey = Y
+sync-engine-settings =
+    .label = Gosodiadau
+    .tooltiptext = Gosodiadau Cyffredinol, Preifatrwydd a Diogelwch rydych wedi'u newid
+    .accesskey = G
+sync-choose-what-to-sync-dialog4 =
+    .title = Rheoli'r hyn sy'n cydweddu ar eich holl ddyfeisiau cysylltiedig
+    .style = min-width: 36em;
+    .buttonlabelaccept = Cadw
+    .buttonaccesskeyaccept = C
+    .buttonlabelextra2 = Datgysylltu…
+    .buttonaccesskeyextra2 = D
+
+## The device name controls.
+
+sync-device-name-header = Enw Dyfais
+sync-device-name-header-2 =
+    .label = Enw Dyfais
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = Enw Dyfais
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = Newid Enw'r Ddyfais
+    .accesskey = N
+sync-device-name-change =
+    .label = Newid Enw'r Ddyfais…
+    .accesskey = N
+sync-device-name-cancel =
+    .label = Diddymu
+    .accesskey = D
+sync-device-name-save =
+    .label = Cadw
+    .accesskey = C
+sync-connect-another-device = Cysylltu dyfais arall
+sync-connect-another-device-2 =
+    .label = Cysylltu dyfais arall
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Dilysiad wedi'i anfon
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Mae dolen dilysu wedi'i anfon at { $email }.
+sync-verification-not-sent-title = Methu Anfon y Dilysiad
+sync-verification-not-sent-body = Nid ydym yn gallu anfon e-bost dilysu ar hy o bryd, ceisiwch eto'n hwyrach.
+
+## Privacy Section
+
+privacy-header = Preifatrwydd y Porwr
+
+## Privacy Section - Logins and Passwords
+
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Mewngofnodion a Chyfrineiriau
+    .searchkeywords = { -lockwise-brand-short-name }
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-logins =
+    .label = Gofyn i gadw mewngofnodion a chyfrineiriau ar gyfer gwefannau
+    .accesskey = G
+
+## Privacy Panel Settings
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = Cyfrineiriau
+    .searchkeywords = mewngofnodion
+forms-passwords-header =
+    .label = Cyfrineiriau
+    .aria-label = Cyfrineiriau
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = Gofyn i gadw cyfrineiriau
+    .accesskey = G
+forms-manage-password-exceptions =
+    .label = Rheoli eithriadau cyfrineiriau
+    .accesskey = R
+forms-exceptions =
+    .label = Eithriadau…
+    .accesskey = i
+forms-generate-passwords =
+    .label = Awgrymu a chynhyrchu cyfrineiriau cryf
+    .accesskey = A
+forms-suggest-passwords =
+    .label = Awgrymu cyfrineiriau cryf
+    .accesskey = A
+forms-breach-alerts =
+    .label = Dangos rhybuddion am gyfrineiriau ar gyfer gwefannau sydd wedi cael tor-data
+    .accesskey = r
+forms-breach-alerts-learn-more-link = Darllen rhagor
+preferences-relay-integration-checkbox =
+    .label = Awgrymu arallenwau e-byst { -relay-brand-name } i ddiogelu eich cyfeiriad e-bost
+preferences-relay-integration-checkbox2 =
+    .label = Awgrymu arallenwau e-byst { -relay-brand-name } i ddiogelu eich cyfeiriad e-bost
+    .accesskey = w
+relay-integration-learn-more-link = Darllen rhagor
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = Awtolanw mewngofnodion a chyfrineiriau
+    .accesskey = A
+forms-saved-logins =
+    .label = Mewngofnodion wedi eu Cadw…
+    .accesskey = M
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = Llanw enwau defnyddwyr a chyfrineiriau'n awtomatig
+    .accesskey = L
+forms-fill-usernames-and-passwords-2 =
+    .label = Cadw ac awtolenwi enw defnyddwyr a chyfrineiriau
+    .accesskey = a
+forms-saved-passwords =
+    .label = Cyfrineiriau wedi'u cadw
+    .accesskey = C
+forms-saved-passwords-2 =
+    .label = Rheoli cyfrineiriau wedi'u cadw
+    .accesskey = c
+forms-saved-passwords-searchkeywords = Mae mewngofnodion ar gyfer y gwefannau canlynol yn cael eu cadw ar eich cyfrifiadur
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = Diogelu ychwanegol
+forms-primary-pw-use =
+    .label = Defnyddio Prif Gyfrinair
+    .accesskey = P
+forms-primary-pw-use-2 =
+    .label = Defnyddio prif gyfrinair
+    .description = Yn ychwanegu haen ychwanegol o ddiogelwch i amddiffyn eich cyfrineiriau wedi'u cadw.
+    .accesskey = D
+forms-primary-pw-set =
+    .label = Gosod y prif gyfrinair
+forms-primary-pw-on-2 = Mae'r prif gyfrinair <strong>YMLAEN</strong>
+forms-primary-pw-on =
+    .label = Mae'r prif gyfrinair YMLAEN
+forms-primary-pw-change-2 =
+    .label = Newid y prif gyfrinair
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = Diffodd
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = Gofyn am fewngofnodi dyfais i lenwi a rheoli cyfrineiriau
+forms-os-reauth-2 =
+    .label = Gofyn am fewngofnodi dyfais i reoli cyfrineiriau
+forms-primary-pw-learn-more-link = Darllen rhagor
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
+forms-master-pw-change =
+    .label = Newid y Prif Gyfrinair…
+    .accesskey = N
+forms-primary-pw-change =
+    .label = Newid y Prif Gyfrinair…
+    .accesskey = N
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Hysbys yn flaenorol fel y Prif Gyfrinair
+forms-primary-pw-fips-title = Rydych ym modd FIPS. Mae FIPS angen Prif Gyfrinair nad yw'n wag.
+forms-master-pw-fips-desc = Methu Newid eich Cyfrinair
+forms-windows-sso =
+    .label = Caniatáu mewngofnodiad unigol cyfrifon Microsoft, gwaith ac ysgol.
+forms-windows-sso-learn-more-link = Darllen rhagor
+forms-windows-sso-desc = Rheoli cyfrifon yn eich gosodiadau dyfais
+windows-passkey-settings-label = Rheoli cyfrinallweddi o fewn gosodiadau system
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = Gosodiadau panel preifatrwydd
+    .description = Cael cymorth i ddiogelu eich manylion ar-lein o fewn { -brand-short-name }.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = Dangos negeseuon tor-ddata
+    .accesskey = D
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, nodwch fanylion eich mewngofnodi Windows. Mae hyn yn helpu i ddiogelu eich cyfrifon.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = creu Prif Gyfrinair
+master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] newid gosodiadau'r dulliau talu
+       *[other] Mae { -brand-short-name } yn ceisio newid gosodiadau cyfrineiriau. Defnyddiwch fewngofnodi eich dyfais i ganiatáu hyn.
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = Awtolanw
+autofill-addresses-checkbox = Cadw a llanw cyfeiriadau
+    .accesskey = l
+autofill-saved-addresses-button = Cyfeiriadau wedi'u cadw
+    .accesskey = y
+autofill-payment-methods-checkbox-message = Dulliau cadw a llanw taliadau
+    .accesskey = D
+autofill-payment-methods-checkbox-submessage = Yn cynnwys cardiau credyd a debyd
+    .accesskey = Y
+autofill-saved-payment-methods-button = Dulliau talu wedi'u cadw
+    .accesskey = D
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = Gofyn am fewngofnodi dyfais i lenwi a rheoli dulliau talu
+    .accesskey = t
+autofill-payment-methods-header =
+    .aria-label = Dulliau talu
+autofill-payment-methods-checkbox-message-2 =
+    .label = Cadw ac awtolenwi manylion talu
+    .accesskey = t
+autofill-payment-methods-manage-payments-title =
+    .heading = Rheoli dulliau talu
+autofill-payment-methods-manage-payments-button =
+    .label = Rheoli dulliau talu
+    .accesskey = d
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = Disgwyl i ddyfais fewngofnodi i awtolenwi a rheoli dulliau talu
+    .accesskey = f
+autofill-payment-methods-add-button = Ychwanegu dull talu newydd
+payments-list-header =
+    .label = Dulliau talu
+payments-delete-payment-prompt-title = Dileu'r dull talu hwn?
+payments-delete-payment-prompt-confirm-button = Dileu
+payments-delete-payment-prompt-cancel-button = Diddymu
+payments-delete-payment-button-label =
+    .aria-label = Dileu
+payments-edit-payment-button-label =
+    .aria-label = Golygu
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = Dim dulliau talu wedi'u hychwanegu
+autofill-addresses-checkbox-message =
+    .label = Cadw ac awtolenwi cyfeiriadau
+    .accesskey = C
+autofill-addresses-manage-addresses-button =
+    .label = Rheoli cyfeiriadau a mwy
+    .accesskey = R
+addresses-list-header =
+    .label = Cyfeiriadau
+addreses-delete-address-button-label =
+    .aria-label = Dileu
+addreses-edit-address-button-label =
+    .aria-label = Golygu
+addresses-delete-address-prompt-title = Dileu'r cyfeiriad hwn?
+addresses-delete-address-prompt-confirm-button = Dileu
+addresses-delete-address-prompt-cancel-button = Diddymu
+autofill-addresses-add-button = Ychwanegu cyfeiriad newydd
+autofill-addresses-manage-addresses-title =
+    .heading = Rheoli cyfeiriadau a rhagor
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = Dim cyfeiriadau wedi'u hychwanegu
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = Cyfrineiriau ac awtolenwi
+    .title = Cyfrineiriau ac awtolenwi
+preferences-passwords-autofill-header =
+    .heading = Cyfrineiriau ac awtolenwi
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = Cyfeiriadau a mwy
+payments-group =
+    .label = Dulliau talu
+
+## Privacy Section - History
+
+history-header = Hanes
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label = Bydd { -brand-short-name } yn
+    .accesskey = B
+history-remember-option-all =
+    .label = Cofio hanes
+history-remember-option-never2 =
+    .label = Peidio cofio hanes
+    .description = Mae pob ffenestr yn ymddwyn fel ffenestr breifat. Pan ymlaen, rhaid caniatáu ffenestri.
+history-remember-option-custom2 =
+    .label = Cyfaddasu hanes
+history-remember-option-never =
+    .label = Peidio â chofio hanes
+history-remember-option-custom =
+    .label = Defnyddio gosodiadau cyfaddas ar gyfer hanes
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = Bydd { -brand-short-name } yn cofio eich hanes pori, llwytho i lawr, ffurflenni a chwilio.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = Bydd { -brand-short-name } yn defnyddio'r un gosodiadau â phori preifat, ond ni fydd yn cofio unrhyw hanes wrth i chi bori'r We.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = Bydd { -brand-short-name } yn defnyddio gosodiadau cyfaddas ar gyfer eich hanes pori, llwytho i lawr, ffurflenni a chwilio.
+history-remember-description = Bydd { -brand-short-name } yn cofio eich hanes pori, llwytho i lawr, ffurflenni a chwilio.
+history-dontremember-description = Bydd { -brand-short-name } yn defnyddio'r un gosodiadau â phori preifat, ond ni fydd yn cofio unrhyw hanes wrth i chi bori'r We.
+history-private-browsing-permanent =
+    .label = Defnyddio'r modd pori preifat bob tro
+    .accesskey = p
+history-remember-browser-option =
+    .label = Cofio hanes pori a llwytho i lawr
+    .accesskey = h
+history-remember-search-option =
+    .label = Cofio hanes chwilio a ffurflen
+    .accesskey = C
+history-clear-on-close-option =
+    .label = Clirio hanes pan fydd { -brand-short-name } yn cau
+    .accesskey = l
+history-clear-on-close-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+history-shutdown-exceptions =
+    .label = Rheoli Eithriadau
+    .accesskey = R
+history-clear-button =
+    .label = Clirio Hanes…
+    .accesskey = H
+history-header2 =
+    .heading = Hanes
+history-section-header =
+    .label = Hanes
+    .description = Dewiswch beth mae { -brand-short-name } i fod ei gofio wrth i chi gau'r porwr
+history-custom-section-header =
+    .label = Gosodiadau uwch
+    .description = Cyfaddasu beth mae { -brand-short-name } i fod ei gofio wrth i chi gau'r porwr
+history-custom-button =
+    .label = Dewis beth mae { -brand-short-name } i fod ei gofio
+history-group =
+    .label = Hanes
+history-remember-option-all2 =
+    .label = Cofio hanes
+
+## Privacy Section - Site Data
+
+sitedata-header = Cwcis a Data Gwefan
+sitedata-total-size-calculating = Cyfrifo maint data gwefan a storfa dros dro…
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size3 = Mae gwefannau'n defnyddio <strong>{ $value } { $unit }</strong> o ofod disg ar hyn o bryd.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Mae'r cwcis, data gwefan a storfa dros dro yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
+sitedata-learn-more = Darllen rhagor
+sitedata-delete-on-close2 =
+    .label = Clirio cwcis a data gwefan bob tro byddwch yn cau { -brand-short-name }
+    .accesskey = g
+sitedata-delete-on-close =
+    .label = Dileu cwcis a data'r wefan pan fydd { -brand-short-name } yn cau
+    .accesskey = D
+sitedata-delete-on-close-private-browsing3 =
+    .message = Yn seiliedig ar eich gosodiadau hanes, mae { -brand-short-name } yn dileu cwcis a data gwefan o'ch sesiwn pan fyddwch yn cau'r porwr.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = Bydd hanes ddim yn cael ei gadw.
+    .message = Mae { -brand-short-name } yn clirio cwcis a data gwefan o'ch sesiwn wrth i chi gau'r porwr.
+sitedata-delete-on-close-private-browsing = Yn y modd pori preifat parhaol, bydd cwcis a data'r wefan yn cael eu clirio bob tro pan fydd { -brand-short-name } yn cau.
+sitedata-delete-on-close-private-browsing2 = Yn seiliedig ar eich gosodiadau hanes, mae { -brand-short-name } yn dileu cwcis a data gwefan o'ch sesiwn pan fyddwch yn cau'r porwr.
+sitedata-allow-cookies-option =
+    .label = Derbyn cwcis a data gan wefannau
+    .accesskey = D
+sitedata-disallow-cookies-option =
+    .label = Rhwystro cwcis a data gwefan
+    .accesskey = R
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Mathau wedi'u rhwystro
+    .accesskey = M
+sitedata-option-block-cross-site-trackers =
+    .label = Tracwyr traws-gwefan
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Cwcis tracio traws-gwefan
+sitedata-option-block-cross-site-cookies2 =
+    .label = Ynysu cwcis traws-gwefan
+sitedata-option-block-cross-site-cookies =
+    .label = Cwcis tracio traws-gwefan, ac ynysu cwcis traws-gwefan eraill
+sitedata-option-block-unvisited =
+    .label = Cwcis o wefannau heb ymweld â nhw
+sitedata-option-block-all-cross-site-cookies =
+    .label = Pob cwci traws-safle (gall achosi i wefannau dorri)
+sitedata-option-block-all =
+    .label = Pob cwci (bydd yn achosi i wefannau dorri)
+sitedata-clear2 =
+    .label = Clirio eich hanes pori
+    .accesskey = h
+sitedata-settings2 =
+    .label = Rheoli data pori
+    .accesskey = R
+sitedata-clear =
+    .label = Clirio Data…
+    .accesskey = l
+sitedata-settings =
+    .label = Rheoli Data…
+    .accesskey = R
+sitedata-cookies-exceptions =
+    .label = Rheoli Eithriadau…
+    .accesskey = R
+sitedata-cookies-exceptions2 =
+    .label = Rheoli eithriadau
+    .accesskey = e
+    .description = Gallwch bennu pa wefannau sy'n cael neu beidio cael defnyddio cwcis neu ddata gwefannau.
+sitedata-heading =
+    .label = Data pori
+    .description = Rheolwch eich cwcis, hanes, storfa, data gwefan a rhagor.
+sitedata-settings3 =
+    .label = Clirio data gwefannau penodol
+    .accesskey = w
+sitedata-cookies-exceptions3 =
+    .label = Rheoli eithriadau
+    .accesskey = e
+    .description = Dewis sur mae gwefannau penodol yn trin cwcis a data gwefannau.
+cookies-site-data-group =
+    .label = Cwcis a Data Gwefan
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Cyfyngu Baneri Cwcis
+cookie-banner-handling-description = Mae { -brand-short-name } yn ceisio gwrthod yn awtomatig pob cais cwci ar wefannau sy’n cael eu cefnogi.
+
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-blocker-header = Rhwystrydd Baneri Cwcis
+cookie-banner-blocker-description = Pan fydd gwefan yn gofyn os gawn nhw ddefnyddio cwcis yn y modd pori preifat, mae { -brand-short-name } yn eu gwrthod yn awtomatig ar eich rhan. Dim ond ar wefannau sy'n cael eu cefnogi.
+cookie-banner-learn-more = Darllen Rhagor
+forms-handle-cookie-banners =
+    .label = Cyfyngu Baneri Cwcis
+cookie-banner-blocker-checkbox-label =
+    .label = Gwrthod baneri cwcis yn awtomatig
+
+## Search Section
+
+addressbar-header = Bar Cyfeiriadau
+addressbar-suggest = Pan yn defnyddio'r bar cyfeiriad, cynnig
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Bar Cyfeiriad — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Dewiswch y math o awgrymiadau sy'n ymddangos yn y bar cyfeiriad.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Dysgu rhagor
+addressbar-locbar-history-option =
+    .label = Hanes pori
+    .accesskey = p
+addressbar-locbar-bookmarks-option =
+    .label = Nodau Tudalen
+    .accesskey = N
+addressbar-locbar-clipboard-option =
+    .label = Clipfwrdd
+    .accesskey = C
+addressbar-locbar-openpage-option =
+    .label = Tabiau ar agor
+    .accesskey = T
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Llwybrau Byr
+    .accesskey = L
+addressbar-locbar-topsites-option =
+    .label = Hoff wefannau
+    .accesskey = H
+addressbar-locbar-engines-option-1 =
+    .label = Awgrymu peiriannau chwilio i'w defnyddio
+    .accesskey = A
+addressbar-locbar-engines-option =
+    .label = Peiriannau chwilio
+    .accesskey = P
+addressbar-locbar-quickactions-option =
+    .label = Gweithredoedd cyflym
+    .accesskey = c
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = Chwilio diweddar
+    .accesskey = C
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = Awgrymiadau chwilio sy'n trendio
+    .accesskey = A
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = Awgrymiadau gan { -brand-short-name }
+    .description = Derbyn awgrymiadau o'r we am eich chwilio.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = Awgrymiadau gan ein noddwyr
+    .description = Cefnogwch { -brand-short-name } drwy'r awgrymiadau noddedig achlysurol.
+addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chwilio
+addressbar-locbar-showrecentsearches-option =
+    .label = Dangos y chwilio diweddar
+    .accesskey = D
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Dangos awgrymiadau chwilio tuedd
+    .accesskey = t
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Awgrymiadau gan { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Derbyn awgrymiadau o'r we am eich chwilio.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Awgrymiadau gan ein noddwyr
+addressbar-locbar-suggest-sponsored-desc = Cefnogwch { -brand-short-name } drwy'r awgrymiadau noddedig achlysurol.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = Cael awgrymiadau gan BrowserWorks wrth i chi deipio
+addressbar-dismissed-suggestions-label-2 =
+    .label = Awgrymiadau wedi'u cau
+    .description = Adfer awgrymiadau wedi'u cau gan noddwyr a { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = Adfer awgrymiadau
+addressbar-quickactions-learn-more = Darllen rhagor
+addressbar-dismissed-suggestions-label = Awgrymiadau wedi'u cau
+addressbar-restore-dismissed-suggestions-description = Adfer awgrymiadau wedi'u cau gan noddwyr a { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Adfer
+
+## Privacy Section - Content Blocking
+
+content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
+content-blocking-section-top-level-description = Mae tracwyr yn eich dilyn ar-lein i gasglu gwybodaeth am eich arferion pori a'ch diddordebau. Mae { -brand-short-name } yn rhwystro llawer o'r tracwyr hyn a sgriptiau maleisus eraill.
+content-blocking-learn-more = Darllen rhagor
+content-blocking-fpi-incompatibility-warning = Rydych yn defnyddio Ynysu Parti Cyntaf (FPI), sy’n gwrthwneud rhai o osodiadau cwci { -brand-short-name } ’.
+# There is no need to translate "Resist Fingerprinting (RFP)". This is a
+# feature that can only be enabled via about:config, and it's not exposed to
+# standard users (e.g. via Settings).
+content-blocking-rfp-incompatibility-warning = Rydych chi'n defnyddio Resist Fingerprinting (RFP), sy'n disodli rhai o osodiadau diogelu bysbrintio { -brand-short-name }. Gall hyn achosi i rai gwefannau dorri.
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Safonol
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Llym
+    .accesskey = L
+enhanced-tracking-protection-setting-custom =
+    .label = Cyfaddasu
+    .accesskey = C
+
+##
+
+content-blocking-etp-standard-desc = Cydbwysedd rhwng diogelwch a pherfformiad. Bydd tudalennau'n llwytho fel arfer.
+content-blocking-etp-strict-desc = Diogelwch cryfach, ond gall achosi i rai gwefannau neu gynnwys dorri.
+content-blocking-etp-custom-desc = Dewiswch pa dracwyr a sgriptiau i'w rhwystro.
+content-blocking-etp-blocking-desc = Mae { -brand-short-name } yn rhwystro'r canlynol:
+content-blocking-private-windows = Tracio cynnwys mewn Ffenestri Preifat
+content-blocking-cross-site-cookies-in-all-windows2 = Cwcis traws-safle ym mhob ffenestr
+content-blocking-cross-site-tracking-cookies = Cwcis tracio traws-gwefan
+content-blocking-all-cross-site-cookies-private-windows = Cwcis traws-safle mewn Ffenestri Preifat
+content-blocking-isolate-cross-site-cookies = Ynysu cwcis traws-gwefan
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cwcis tracio traws-safle, ac ynysu'r cwcis sy'n weddill
+content-blocking-social-media-trackers = Tracwyr cyfryngau cymdeithasol
+content-blocking-all-cookies = Pob cwci
+content-blocking-unvisited-cookies = Cwcis o safleoedd heb ymweld â nhw
+content-blocking-all-windows-tracking-content = Tracio cynnwys ym mhob ffenestr
+content-blocking-all-cross-site-cookies = Pob cwci traws-gwefan
+content-blocking-cryptominers = Cryptogloddwyr
+content-blocking-fingerprinters = Bysbrintwyr
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
+# the suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-known-and-suspected-fingerprinters = Bysbrintwyr hysbys ac amheus
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Mae Diogelwch Cwcis Llwyr yn cyfyngu cwcis i'r wefan rydych chi arni, felly nid yw tracwyr yn gallu eu defnyddio i'ch dilyn rhwng gwefannau.
+content-blocking-etp-standard-tcp-rollout-learn-more = Darllen rhagor
+content-blocking-etp-standard-tcp-title = Yn cynnwys Diogelwch Cwcis Llwyr, ein nodwedd preifatrwydd mwyaf pwerus erioed
+content-blocking-warning-title = Rhybudd!
+content-blocking-warning-title-2 = Efallai y bydd rhai gwefannau'n torri diogelwch tracio llym
+content-blocking-warning-title-custom = Mae'n bosibl y bydd rhai gwefannau'n torri gyda diogelu tracio cyfaddas
+# “Fix site issues” references the string content-blocking-exceptions-subheader
+content-blocking-and-isolating-etp-warning-description-4 = Mae { -brand-short-name } yn argymell defnyddio'r gosodiadau “Datrys problemau gwefan” i leihau nodweddion a chynnwys gwefan sydd wedi torri. Os yw gwefan yn ymddangos ei fod wedi torri, ceisiwch ddiffodd diogelwch rhag tracio er mwyn i'r wefan honno lwytho'r holl gynnwys.
+content-blocking-and-isolating-etp-warning-description-2 = Gall y gosodiad hwn beri i rai gwefannau beidio a dangos cynnwys na gweithio'n iawn. Os yw gwefan yn ymddangos wedi torri, efallai yr hoffech chi ddiffodd diogelu rhag tracio i'r wefan honno lwytho'r holl gynnwys.
+content-blocking-warning-learn-how = Sut mae gwneud
+content-blocking-baseline-exceptions-3 =
+    .label = Datrys problemau mawr gwefan (argymell)
+    .description = Yn helpu i lwytho gwefannau a nodweddion trwy ddadrwystro dim ond elfennau hanfodol sy'n gallu cynnwys tracwyr. Mae'n datrys y problemau mwyaf cyffredin.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = Datrys problemau bach gwefan (argymell)
+    .description = Mae'n adfer pethau fel fideos mewn erthygl neu adrannau sylwadau trwy ddadrwystro elfennau sy'n gallu cynnwys tracwyr. Gall hyn leihau problemau gwefan ond mae'n cynnig llai o ddiogelwch. Rhaid ei ddefnyddio gyda datrysiadau ar gyfer materion mawr.
+content-blocking-baseline-uncheck-warning-dialog-title = Ydych chi'n siŵr eich bod am ddiffodd datrysiadau?
+content-blocking-baseline-uncheck-warning-dialog-body = Mae'r gosodiad hwn yn helpu i ddatrys y problemau gwefannau mwyaf cyffredin. Os byddwch yn ei ddiffodd, efallai na fydd rhai gwefannau'n gweithio, ac ni fydd { -brand-short-name } yn gallu helpu i ddatrys y problemau hynny.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = Diffodd datrysiadau
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = Cadw datrysiadau ymlaen
+content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.
+content-blocking-reload-tabs-button =
+    .label = Ail lwytho Pob Tab
+    .accesskey = A
+content-blocking-tracking-content-label =
+    .label = Cynnwys tracio
+    .accesskey = t
+content-blocking-tracking-protection-option-all-windows =
+    .label = Ym mhob ffenestr
+    .accesskey = f
+content-blocking-option-private =
+    .label = Dim ond mewn Ffenestri Preifat
+    .accesskey = P
+content-blocking-tracking-protection-change-block-list = Newid y rhestr rhwystro
+content-blocking-cookies-label =
+    .label = Cwcis
+    .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Rhagor o wybodaeth
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Cryptogloddwyr
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Bysbrintwyr
+    .accesskey = B
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = Bysbrintwyr hysbys
+    .accesskey = B
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = Bysbrintwyr o dan amheuaeth
+    .accesskey = a
+
+## Privacy Section - Tracking
+
+tracking-manage-exceptions =
+    .label = Rheoli Eithriadau…
+    .accesskey = R
+
+## Privacy Section - Permissions
+
+permissions-header = Caniatâd
+permissions-location = Lleoliad
+permissions-location-settings =
+    .label = Gosodiadau…
+    .accesskey = d
+permissions-xr = Rhithrealaeth
+permissions-xr-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+permissions-camera = Camera
+permissions-camera-settings =
+    .label = Gosodiadau…
+    .accesskey = s
+permissions-microphone = Meicroffon
+permissions-microphone-settings =
+    .label = Gosodiadau…
+    .accesskey = o
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Dewis Seinydd
+permissions-speaker-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+permissions-notification = Hysbysiadau
+permissions-notification-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+permissions-notification-link = Darllen rhagor
+permissions-notification-pause =
+    .label = Oedi fy hysbysiadau tan { -brand-short-name } ailgychwyn
+    .accesskey = O
+permissions-autoplay2 =
+    .label = Awtochwarae
+permissions-autoplay = Awtochwarae
+permissions-autoplay-settings =
+    .label = Gosodiadau…
+    .accesskey = G
+permissions-block-popups2 =
+    .label = Rhwystro llamlenni ac ailgyfeirio trydydd parti
+    .accesskey = l
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = Rheoli eithriadau
+    .description = Ychwanegu gwefannau sy'n gallu agor llamlenni a defnyddio ailgyfeirio trydydd parti
+    .accesskey = e
+    .searchkeywords = llamlenni
+permissions-addon-install-warning3 =
+    .label = Dangos rhybudd pan fydd gwefannau'n ceisio gosod estyniadau
+    .accesskey = r
+permissions-addon-exceptions2 =
+    .label = Dewis pa wefannau all osod estyniadau
+    .accesskey = D
+permissions-block-popups =
+    .label = Rhwystro ffenestri llamlen
+    .accesskey = R
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Eithriadau…
+    .accesskey = E
+    .searchkeywords = llamlenni
+permissions-addon-install-warning =
+    .label = Rhybuddio pan fydd gwefan yn ceisio gosod ychwanegion
+    .accesskey = y
+permissions-addon-exceptions =
+    .label = Eithriadau…
+    .accesskey = E
+permissions-location2 =
+    .label = Lleoliad
+permissions-localhost2 =
+    .label = Apiau a gwasanaethau dyfais
+permissions-local-network2 =
+    .label = Dyfeisiau Rhwydwaith Lleol
+permissions-xr2 =
+    .label = Rhithrealaeth
+permissions-camera2 =
+    .label = Camera
+permissions-microphone2 =
+    .label = Meicroffon
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = Seinyddion
+permissions-notification2 =
+    .label = Hysbysiadau
+permissions-header3 =
+    .label = Caniatâd
+    .description = Rheoli beth mae gwefannau'n gallu cael mynediad iddo, rheoli neu gychwyn.
+permissions-data-section =
+    .heading = Caniatâd a data
+pane-permissions-data-title2 = Caniatâd a data
+    .title = Caniatâd a data
+
+## Privacy Section - Data Collection
+
+collection-header = Casglu Data a'r Defnydd o { -brand-short-name }
+collection-header2 = Casglu Data a'r Defnydd o { -brand-short-name }
+    .searchkeywords = telemetreg
+preferences-collection-description = Rydym yn ymdrechu i roi i chi ddewisiadau a chasglu dim ond y lleiafswm data sydd ei angen i wella { -brand-product-name } i bawb.
+preferences-collection-privacy-notice = Gweld yr Hysbysiad Preifatrwydd
+preferences-across-profiles = Mae'r gosodiadau hyn yn berthnasol i bob proffil { -brand-product-name } ar y ddyfais hon.
+preferences-view-profiles = Gweld pob proffil
+collection-description = Rydym yn ceisio darparu dewisiadau i chi a chasglu dim ond beth sydd ei angen arnom i ddarparu a gwella { -brand-short-name } ar gyfer pawb. Rydym yn gofyn caniatâd bob tro cyn derbyn manylion personol.
+collection-privacy-notice = Hysbysiad Preifatrwydd
+collection-health-report-telemetry-disabled = Nid ydych bellach yn caniatáu i { -vendor-short-name } ddal data technegol a rhyngweithiol. Bydd holl ddata'r gorffennol yn cael ei ddileu cyn pen 30 diwrnod.
+collection-health-report-telemetry-disabled-link = Darllen rhagor
+backup-multi-profile-warning-message =
+    .message = I wneud yn siŵr bod y newid hwn wedi'i gynnwys yn eich copïau wrth gefn, agorwch bob proffil a dewis "Gwneud copi wrth gefn nawr" yn y Gosodiadau.
+nimbus-rollouts =
+    .label = Caniatáu i { -brand-short-name } wella nodweddion, perfformiad, a sefydlogrwydd rhwng diweddariadau
+    .description = Bydd newidiadau'n cael eu cyflwyno o bell
+addon-recommendations3 =
+    .label = Caniatáu argymhellion estyniadau personoledig
+    .description = Cael argymhellion estyniadau i wella'ch profiad pori.
+collection-usage-ping =
+    .label = Anfon ping defnydd dyddiol at { -vendor-short-name }
+    .accesskey = A
+collection-usage-ping-description = Mae hyn yn helpu { -vendor-short-name } i amcangyfrif defnyddwyr gweithredol.
+collection-health-report2 =
+    .label = Anfon data technegol a rhyngweithio at { -vendor-short-name }
+    .accesskey = d
+collection-health-report =
+    .label = Caniatáu i { -brand-short-name } anfon data technegol a rhyngweithio i { -vendor-short-name }
+    .accesskey = r
+collection-health-report-link = Darllen rhagor
+collection-health-report-description = Mae hyn yn ein helpu i wella nodweddion, perfformiad a sefydlogrwydd { -brand-product-name }.
+collection-studies2 =
+    .label = Gosod a rhedeg astudiaethau
+collection-studies-description = Rhowch gynnig ar nodweddion a syniadau cyn iddyn nhw gael eu rhyddhau i bawb.
+collection-studies =
+    .label = Caniatáu i { -brand-short-name } osod a rhedeg astudiaethau
+collection-studies-link = Gweld astudiaethau { -brand-short-name }
+addon-recommendations2 =
+    .label = Caniatáu argymhellion estyniadau personoledig
+addon-recommendations-description = Cael argymhellion estyniadau i wella'ch profiad pori.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Mae adrodd ar ddata wedi'i analluogi ar gyfer y ffurfweddiad adeiladu hwn.
+collection-backlogged-crash-reports2 =
+    .label = Anfon adroddiadau chwalu'n awtomatig
+    .accesskey = c
+collection-backlogged-crash-reports-description = Mae hyn yn helpu { -vendor-short-name } i wneud diagnosis a thrwsio problemau gyda'r porwr. Gall adroddiadau gynnwys data personol neu sensitif.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = Yr un gosodiadau, golwg newydd!
+    .message = Rydym wedi ad-drefnu'r dudalen hon fel ei bod yn haws ei ddarllen a'i harchwilio. Dyw eich gosodiadau personol heb newid ac mae popeth dal yma. Awgrym: defnyddiwch chwilio i fynd i le'n union rydych eisiau mynd iddo.
+settings-redesign-promo-dismiss-button =
+    .label = Iawn
+addon-recommendations =
+    .label = Caniatáu i { -brand-short-name } wneud argymhellion personol am estyniadau
+addon-recommendations-link = Darllen rhagor
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = Mae adrodd ar ddata wedi ei analluogi ar gyfer ffurfweddiad yr adeiledd hwn
+collection-backlogged-crash-reports-with-link = Caniatáu i { -brand-short-name } anfon adroddiadau chwalu sydd wedi'u crynhoi ar eich rhan <a data-l10n-name="crash-reports-link">Darllen rhagor</a>
+    .accesskey = C
+privacy-segmentation-section-header = Nodweddion newydd sy'n gwella eich pori
+privacy-segmentation-section-description = Pan fyddwn yn cynnig nodweddion sy'n defnyddio'ch data i roi profiad mwy personol i chi:
+privacy-segmentation-radio-off =
+    .label = Defnyddio argymhellion { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Dangos gwybodaeth fanwl
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = Casglu Data a'r Defnydd o { -brand-short-name }
+    .description = Rydym yn ymdrechu i roi i chi ddewisiadau a chasglu dim ond y lleiafswm data sydd ei angen i wella { -brand-product-name } i bawb.
+    .searchkeywords = telemetreg
+data-collection-link = Gweld yr Hysbysiad Preifatrwydd
+data-collection-preferences-across-profiles =
+    .message = Mae'r gosodiadau hyn yn berthnasol i bob proffil { -brand-product-name } ar y ddyfais hon.
+data-collection-profiles-link = Gweld pob proffil
+data-collection-health-report-telemetry-disabled =
+    .message = Nid ydych bellach yn caniatáu i { -vendor-short-name } ddal data technegol a rhyngweithiol. Bydd holl ddata'r gorffennol yn cael ei ddileu cyn pen 30 diwrnod.
+data-collection-health-report =
+    .label = Anfon data technegol a rhyngweithio at { -vendor-short-name }
+    .accesskey = d
+    .description = Mae hyn yn ein helpu i wella nodweddion, perfformiad a sefydlogrwydd { -brand-product-name }.
+data-collection-health-report-disabled =
+    .label = Anfon data technegol a rhyngweithio at { -vendor-short-name }
+    .accesskey = d
+    .description = Mae adrodd ar ddata wedi'i atal ar gyfer ffurfweddiad y fersiwn yma.
+data-collection-run-studies =
+    .label = Caniatáu i { -brand-short-name } redeg astudiaethau nodwedd
+    .description = Mae { -brand-short-name } yn dewis defnyddwyr ar hap i brofi nodweddion, sy'n helpu i wella ansawdd ar gyfer pawb.
+data-collection-studies-link =
+    .label = Gweld astudiaethau { -brand-short-name }
+data-collection-backlogged-crash-reports =
+    .label = Anfon adroddiadau chwalu'n awtomatig
+    .description = Mae hyn yn helpu i { -vendor-short-name } ddarganfod a chywiro gwallau'r porwr. Gall adroddiadau gynnwys data personol neu sensitif.
+    .accesskey = c
+data-collection-usage-ping =
+    .label = Anfon ping defnydd dyddiol at { -vendor-short-name }
+    .description = Mae hyn yn helpu { -vendor-short-name } i amcangyfrif defnyddwyr gweithredol.
+    .accesskey = A
+
+## Privacy Section - Website Advertising Preferences
+
+website-advertising-header = Dewisiadau Preifatrwydd Gwefan
+website-advertising-private-attribution =
+    .label = Caniatáu i wefannau fesur hysbysebion sy'n cadw preifatrwydd
+    .accesskey = h
+website-advertising-private-attribution-description = Mae hyn yn helpu gwefannau i ddeall sut mae eu hysbysebion yn perfformio heb gasglu data amdanoch chi.
+
+## Privacy Section - Security
+##
+## It is important that wording follows the guidelines outlined on this page:
+## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
+
+security-header = Diogelwch
+browsing-protection-group2 =
+    .label = Cynnwys twyllodrus a diogelwch rhag meddalwedd peryglus
+    .description = Gall gwefannau a llwythi i lawr beri risg uchel i'ch data a'ch dyfais. Mae { -brand-short-name } yn eu rhwystro'n awtomatig ac yn eich rhybuddio am feddalwedd diofyn amdano neu beryglus.
+security-browsing-protection = Diogelwch rhag Cynnwys Twyllodrus a Meddalwedd Peryglus
+security-enable-safe-browsing =
+    .label = Rhwystro cynnwys peryglus a thwyllodrus
+    .accesskey = R
+security-enable-safe-browsing-link = Darllen rhagor
+security-safe-browsing-warning =
+    .message = Mae diffodd hwn yn lleihau diogelwch rhag sgamiau, gwefannau maleisus, a llwythi peryglus.
+security-block-downloads =
+    .label = Rhwystro llwytho i lawr peryglus
+    .accesskey = p
+security-block-uncommon-software =
+    .label = Rhybuddio am feddalwedd digroeso ac anghyffredin
+    .accesskey = a
+
+## Privacy Section - Certificates
+
+certs-header = Tystysgrifau
+certs-enable-ocsp =
+    .label = Gofyn i weinyddion atebwr OCSP i gadarnhau dilysrwydd cyfredol y tystysgrifau
+    .accesskey = G
+certs-view =
+    .label = Darllen Tystysgrifau…
+    .accesskey = D
+certs-devices =
+    .label = Dyfeisiau Diogelwch…
+    .accesskey = y
+certs-thirdparty-toggle =
+    .label = Caniatáu i { -brand-short-name } ymddiried yn awtomatig yn nhystysgrifau gwraidd trydydd parti rydych yn eu gosod
+    .accesskey = y
+certs-devices-enable-fips = Galluogi FIPS
+space-alert-over-5gb-settings-button =
+    .label = Agor y Gosodiadau
+    .accesskey = A
+space-alert-over-5gb-message2 = <strong>Mae { -brand-short-name } yn brin o le ar ddisg.</strong> Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Mae modd i chi glirio data wedi ei storio yn Dewisiadau > Preifatrwydd a Diogelwch > Cwcis a Data Gwefan.
+space-alert-under-5gb-message2 = <strong>Mae { -brand-short-name } yn brin o le ar ddisg.</strong> Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Ewch i “Learn More” i wella'r defnydd o'r disg ar gyfer gwell profiad pori.
+certs-description3 =
+    .label = Tystysgrifau
+    .description = Ffurfweddu'r tystysgrifau mae { -brand-short-name } yn eu defnyddio i ddilysu cysylltiadau.
+certs-view2 =
+    .label = Rheoli tystysgrifau
+    .accesskey = t
+certs-devices2 =
+    .label = Rheoli dyfeisiau diogelwch
+    .accesskey = d
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modd HTTPS-yn-Unig
+httpsonly-description3 = Dim ond yn caniatáu cysylltiadau diogel â gwefannau. Bydd { -brand-short-name } yn gofyn cyn cysylltu'n anniogel.
+httpsonly-learn-more2 = Sut mae HTTPS-yn Unig yn gweithio
+httpsonly-description = Mae HTTPS yn darparu cysylltiad diogel, wedi'i amgryptio rhwng  { -brand-short-name } a'r gwefannau rydych chi'n ymweld â nhw. Mae'r mwyafrif o wefannau yn cefnogi HTTPS, ac os yw Modd HTTPS-yn-Unig wedi'i alluogi, yna bydd { -brand-short-name } yn uwchraddio'r holl gysylltiadau â HTTPS.
+httpsonly-learn-more = Darllen rhagor
+httpsonly-radio-enabled =
+    .label = Galluogi Modd HTTPS-yn-Unig ym mhob ffenestr
+httpsonly-radio-enabled-pbm =
+    .label = Galluogi Modd HTTPS-yn-Unig mewn ffenestri preifat yn unig
+httpsonly-radio-disabled3 =
+    .label = Peidio â galluogi'r Modd HTTPS yn Unig
+    .description = Gall { -brand-short-name } uwchraddio rhai cysylltiadau
+httpsonly-radio-disabled =
+    .label = Peidio â galluogi Modd HTTPS-yn-Unig
+httpsonly-group =
+    .label = Modd HTTPS-yn-Unig
+    .description = Dim ond yn caniatáu cysylltiadau diogel â gwefannau. Bydd { -brand-short-name } yn gofyn cyn cysylltu'n anniogel.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
+
+## DoH Section
+
+preferences-doh-header = DNS dros HTTPS
+dns-over-https-group2 =
+    .label = DNS dros HTTPS
+    .description = Mae'r Domain Name System over HTTPS (DoH) yn amgryptio eich chwilio gwefannau fel ei bod yn anoddach i'ch darparwr rhyngrwyd neu eraill weld pa wefannau rydych ar fin ymweld â nhw.
+preferences-doh-description = Mae System Enw Parth (DNS) dros HTTPS yn anfon eich cais am enw parth trwy gysylltiad wedi'i amgryptio, gan greu DNS diogel a'i gwneud hi'n anoddach i eraill weld pa wefan rydych chi ar fin mynd iddi.
+preferences-doh-description2 = Mae System Enw Parth (DNS) dros HTTPS yn anfon eich cais am enw parth trwy gysylltiad wedi'i amgryptio, gan greu DNS diogel a'i gwneud hi'n anoddach i eraill weld pa wefan rydych chi ar fin mynd iddi.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Statws: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Darparwr: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL annilys
+preferences-doh-steering-status = Yn defnyddio darparwr lleol
+preferences-doh-status-active = Gweithredol
+preferences-doh-status-disabled = Diffodd
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Ddim yn weithredol ( { $reason } )
+preferences-doh-group-message = Galluogi DNS diogel gan ddefnyddio:
+preferences-doh-group-message2 = Galluogi DNS dros HTTPS
+preferences-doh-expand-section =
+    .tooltiptext = Rhagor o wybodaeth
+preferences-doh-setting-default =
+    .label = Diogelu Rhagosodedig
+    .accesskey = D
+preferences-doh-default-desc = Mae { -brand-short-name } yn penderfynu pryd i ddefnyddio DNS diogel i ddiogelu eich preifatrwydd.
+preferences-doh-default-detailed-desc-1 = Defnyddio DNS diogel mewn ardaloedd lle mae ar gael
+preferences-doh-default-detailed-desc-2 = Defnyddio'ch datrysiad DNS rhagosodedig os oes problem gyda'r darparwr DNS diogel
+preferences-doh-default-detailed-desc-3 = Defnyddio darparwr lleol, os yn bosibl
+preferences-doh-default-detailed-desc-4 = Diffodd pan fydd VPN, rheolaeth rhieni, neu bolisïau menter yn weithredol
+preferences-doh-default-detailed-desc-5 = Diffodd pan fydd rhwydwaith yn dweud wrth { -brand-short-name } na ddylai ddefnyddio DNS diogel
+preferences-doh-setting-enabled =
+    .label = Rhagor o Ddiogelwch
+    .accesskey = R
+preferences-doh-enabled-desc = Chi sy'n rheoli pryd i ddefnyddio DNS diogel a dewis eich darparwr.
+preferences-doh-enabled-detailed-desc-1 = Defnyddiwch y darparwr rydych chi'n ei ddewis
+preferences-doh-enabled-detailed-desc-2 = Defnyddio'ch datrysiad DNS rhagosodedig dim ond os oes problem gyda DNS diogel
+preferences-doh-setting-strict =
+    .label = Y Diogelwch Eithaf
+    .accesskey = Y
+preferences-doh-strict-desc = Bydd { -brand-short-name } bob tro'n defnyddio DNS diogel. Byddwch yn gweld rybudd risg diogelwch cyn i ni ddefnyddio DNS eich system.
+preferences-doh-strict-detailed-desc-1 = Defnyddio dim ond y darparwr rydych chi'n ei ddewis
+preferences-doh-strict-detailed-desc-2 = Rhybuddio bob tro os nad yw DNS diogel ar gael
+preferences-doh-strict-detailed-desc-3 = Os nad yw DNS diogel ar gael ni fydd gwefannau'n llwytho nac yn gweithio'n iawn
+preferences-doh-setting-off =
+    .label = Diffodd
+    .accesskey = D
+preferences-doh-off-desc = Defnyddio'ch datrysydd DNS rhagosodedig
+preferences-doh-checkbox-warn =
+    .label = Rhybuddio os yw trydydd parti yn atal DNS diogel yn weithredol
+    .accesskey = a
+preferences-doh-select-resolver = Dewis darparwr:
+preferences-doh-exceptions-description = Ni fydd { -brand-short-name } yn defnyddio DNS diogel ar y gwefannau hyn
+preferences-doh-manage-exceptions =
+    .label = Rheoli Eithriadau…
+    .accesskey = E
+preferences-doh-overview-default =
+    .label = Diogelu rhagosodedig
+    .description = Defnyddio DNS diogel mewn ardaloedd lle mae ar gael,
+preferences-doh-overview-custom =
+    .label = Cyfaddas
+    .description = Defnyddio DNS diogel gyda rheolaeth dros eich darparwr ac ymddygiad wrth gefn.
+preferences-doh-overview-off =
+    .label = I Ffwrdd
+    .description = Defnyddiwch eich datrysydd rhagosodedig.
+preferences-doh-advanced-button =
+    .label = Gosodiadau uwch
+preferences-doh-advanced-section =
+    .label = Gosodiadau uwch
+    .description = Mae System Enw Parth dros HTTPS (DoH) yn amgryptio chwilio gwefannau fel ei bod hi'n anoddach i'ch darparwr rhyngrwyd neu eraill weld pa wefannau rydych ar fin ymweld â nhw.
+preferences-doh-manage-exceptions2 =
+    .label = Rheoli eithriadau
+    .accesskey = e
+preferences-doh-radio-default =
+    .label = Rhagosodiad
+    .description = Defnyddio DNS diogel mewn  ardaloedd lle mae ar gael
+preferences-doh-radio-custom =
+    .label = Cyfaddas
+    .description = Pob tro defnyddio DNS diogel gyda rheolaeth dros eich darparwr a'r gallu i ddychwelyd
+preferences-doh-radio-off =
+    .label = I Ffwrdd
+    .description = Defnyddio eich datrysydd DNS
+preferences-doh-fallback-label =
+    .label = Rhybuddio bob tro os nad yw DNS diogel ar gael
+preferences-doh-status-item-off =
+    .message = Mae DNS dros HTTPS i ffwrdd
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = Dyw DNS dros HTTPS ddim yn gweithio oherwydd i ni ddod ar draws y gwall ( { $reason } ) wrth geisio defnyddio'r darparwr { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = Dyw DNS dros HTTPS ddim yn gweithio oherwydd i ni dderbyn URL annilys ( { $reason } )
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = Mae DNS dros HTTPS yn defnyddio'r darparwr { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = Dyw DNS dros HTTPS ddim yn gweithio oherwydd i ni ganfod y gwall ( { $reason } ) wrth geisio defnyddio'r darparwr lleol { $name }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = Mae DNS dros HTTPS yn defnyddio'r darparwr lleol { $name }
+preferences-doh-select-resolver-label =
+    .label = Dewis darparwr:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = Defnyddio'r darparwr ar gyfer datrys DNS dros HTTPS
+preferences-doh-custom-provider-label =
+    .aria-label = Rhowch URL darparwr cyfaddas
+preferences-doh-header2 =
+    .heading = DNS Dros HTTPS
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = Diogelwch cysylltiad a meddalwedd
+preferences-connection-link-section =
+    .label = Diogelwch cysylltiad a meddalwedd
+    .description = Gweld sut mae cysylltiadau'n parhau'n ddiogel, mae meddalwedd bygythiol yn cael eu rhwystro a gwefannau'n cael eu gwirio.
+preferences-connection-link-button =
+    .label = Gosodiadau uwch
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Bwrdd Gwaith
+downloads-folder-name = Llwythi i lawr
+choose-download-folder-title = Dewis Ffolder Llwytho i Lawr:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = Gwedd
+browser-theme-group =
+    .label = Thema Porwr
+    .description = Lliwiwch { -brand-short-name } fel rydych chi'n ei hoffi. Mae lliwiau thema'n ymddangos ar farrau offer, dewislenni a negeseuon..
+browser-theme-manage-link =
+    .label = Rheoli themâu { -brand-short-name }
+appearance-window-density-group =
+    .label = Dwysedd ffenestr
+    .description = Amrywiwch y bylchu o amgylch elfennau ffenestr fel barau offer, tabiau a'r bariau offer
+appearance-window-density-radio-group =
+    .aria-label = Dwysedd ffenestr
+appearance-window-density-automatic =
+    .label = Awtomatig (rhagosodedig)
+    .description = Mae bylchu safonol, cryno a chyffwrdd yn cael ei osod yn awtomatig
+appearance-window-density-automatic-no-touch =
+    .label = Awtomatig (rhagosodedig)
+    .description = Mae bylchu safonol neu gryno'n cael ei osod yn awtomatig
+appearance-window-density-standard =
+    .label = Safonol
+    .description = Mae bylchu cytbwys ar gyfer y rhan fwyaf o sgriniau
+appearance-window-density-auto-touch-mode =
+    .label = Defnyddiwch fylchu cyffwrdd ar gyfer y modd tabled
+appearance-window-density-compact =
+    .label = Cryno
+    .description = Yn lleihau bylchu ar gyfer sgriniau bychan
+appearance-window-density-touch =
+    .label = Cyffwrdd
+    .description = Elfennau ffenestri mwy a thargedau clicio, addas ar gyfer sgriniau cyffwrdd
+related-settings-group =
+    .label = Gosodiadau cysylltiedig
+related-settings-accessibility-link =
+    .label = Cyfaddasu gosodiadau chwyddo a ffont yn Hygyrchedd
+related-settings-home-link =
+    .label = Cyfaddasu { -firefox-home-brand-name }
+related-settings-tabs-browsing-link =
+    .label = Cyfaddasu cynllun porwr
+
+## AI controls page
+
+preferences-ai-controls-description = Mae  { -brand-short-name } bob amser yn cynnig dewisiadau, gan gynnwys ydych chi eisiau defnyddio nodweddion sydd wedi'u cyfoethogi ag AI. Bydd rhagor o gyfleoedd rheoli cyn hir.
+preferences-ai-controls-block-ai-label = Rhwystro nodweddion AI
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = Mae rhwystro'n golygu fyddwch chi ddim yn gweld nodweddion AI newydd neu rhai cyfredol yn { -brand-short-name }, na llamlenni amdanyn nhw chwaith. Mae modd cael mwy o <a data-l10n-name="link">fanylion</a> am yr hyn sydd wedi'i gynnwys a sut i reoli nodweddion dysgu peirianyddol traddodiadol, fel awgrymiadau chwilio ac argymhellion.
+preferences-ai-controls-blocked-message =
+    .message = Mae nodweddion AI newydd a rhai cyfredol yn cael eu rhwystro fel rhagosodiad. I ddadrwystro nodwedd benodol, defnyddiwch y rheolyddion isod.
+preferences-ai-controls-on-device-group =
+    .label = AI Ar y Ddyfais
+    .description = Mae'r rhain yn defnyddio modelau AI bychain sy'n cael eu llwytho i lawr i'ch dyfais os ydych yn defnyddio'r nodwedd hon. Mae'r dull yma'n helpu i ddiogelu eich preifatrwydd.
+preferences-ai-controls-translations-control =
+    .label = Cyfieithu
+    .description = Porwch y we'n rhwydd yn eich dewis iaith
+preferences-ai-controls-translations-more-link = Rhagor o osodiadau cyfieithu
+preferences-ai-controls-pdfjs-control =
+    .label = Testun amgen delwedd yn narllenydd PDF { -brand-short-name }
+    .description = Pan fyddwch yn ychwanegu delweddau PDF, mae hyn yn ychwanegu disgrifiadau i'w gwneud yn hygyrch.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = Awgrymu grwpiau tabiau
+    .description = Cael awgrymiadau i enwi a threfnu eich tabiau.
+preferences-ai-controls-key-points-control =
+    .label = Prif bwyntiau rhagolwg dolen
+    .description = Cael crynodeb byr cyn agor dolen
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = Darparwyr sgwrsfotiau AI yn y bar ochr
+    .description = Cadw sgwrsfotiau yn y golwg wrth bori. Dewiswch Anthropic Claude, ChatGPT, Copilot, Google Gemini, neu Le Chat Mistral.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = Sgwrsfot yn y bar ochr
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = Ar Gael
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = Galluogi
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = Rhwystro
+preferences-ai-controls-state-description-before = Beth yw ystyr y dewis:
+preferences-ai-controls-state-description-available = <strong>Ar gael:</strong> Gweld y nodwedd a gallu ei defnyddio.
+preferences-ai-controls-state-description-enabled = <strong>Galluogi:</strong> Wedi dewis defnyddio'r nodwedd.
+preferences-ai-controls-state-description-blocked = <strong>Rhwystro:</strong> Fyddwch chi ddim yn gweld nac yn gallu defnyddio'r nodwedd. Pan fydd AI ar y ddyfais, mae unrhyw fodelau sydd eisoes wedi'u llwytho i lawr yn cael eu dileu.
+preferences-ai-controls-block-confirmation-heading = Rhwystro nodweddion AI?
+preferences-ai-controls-block-confirmation-description = Fyddwch chi ddim yn gweld nodweddion AI cyfredol na newydd yn { -brand-short-name }, na llamlenni amdanyn nhw. Wedi hynny, gallwch agor unrhyw beth rydych chi am barhau i'w ddefnyddio.
+preferences-ai-controls-block-confirmation-features-start = Beth fydd yn cael ei rwystro:
+preferences-ai-controls-block-confirmation-translations = Cyfieithu
+preferences-ai-controls-block-confirmation-pdfjs = Testun amgen delwedd yn narllenydd PDF { -brand-short-name }
+preferences-ai-controls-block-confirmation-tab-group-suggestions = Awgrymiadau grwpiau tabiau
+preferences-ai-controls-block-confirmation-key-points = Prif bwyntiau rhagolygon dolenni
+preferences-ai-controls-block-confirmation-sidebar-chatbot = Darparwyr sgwrsfotiau AI yn y bar ochr
+preferences-ai-controls-block-confirmation-features-after = Mae rhwystro hefyd yn effeithio ar estyniadau sy'n defnyddio AI sy'n cael eu darparu gan { -brand-short-name }.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = Diddymu
+preferences-ai-controls-block-confirmation-confirm =
+    .label = Rhwystro
+preferences-ai-controls-header3 =
+    .heading = Rheoli AI
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = Mae { -brand-short-name } yn gwarchod
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = Mae { -brand-short-name } yn argymell rhai gwelliannau diogelwch
+security-privacy-status-ok-label = Mae Diogelwch Uwch Rhag Tracio ymlaen
+security-privacy-status-problem-label = Rydym wedi gweld gosodiadau sy'n effeithio ar eich diogelwch
+security-privacy-status-problem-helper-label = Gweld anhawsterau
+security-privacy-status-pending-trackers-label = Yn edrych i weld faint o dracwyr mae { -brand-short-name } wedi'u rhwystro dros y mis diwethaf
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label =
+    { $trackerCount ->
+        [zero] { $trackerCount } tracwyr wedi'u rhwystro dros y mis diwethaf
+        [one] { $trackerCount } traciwr wedi'i rwystro dros y mis diwethaf
+        [two] { $trackerCount } draciwr wedi'u rhwystro dros y mis diwethaf
+        [few] { $trackerCount } traciwr wedi'u rhwystro dros y mis diwethaf
+        [many] { $trackerCount } thraciwr wedi'u rhwystro dros y mis diwethaf
+       *[other] { $trackerCount } traciwr wedi'u rhwystro dros y mis diwethaf
+    }
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = Mae gennych <a data-l10n-name="strict-tracking-protection">ddiogelwch llym</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = Mae gennych <a data-l10n-name="custom-tracking-protection">diogelwch cyfaddas</a>
+security-privacy-status-up-to-date-label = Mae gennych y fersiwn diweddaraf, mwyaf diogel o { -brand-short-name }
+security-privacy-status-update-needed-label = Mae fersiwn newydd o { -brand-short-name } ar gael.
+security-privacy-status-update-error-label = Mae { -brand-short-name } yn cael trafferth diweddaru ei hun
+security-privacy-status-update-checking-label = Mae { -brand-short-name } yn chwilio am ddiweddariadau
+security-privacy-status-update-needed-description = Diweddarwch ar gyfer y diweddariadau cyflymder, sefydlogrwydd a diogelwch diweddaraf.
+security-privacy-status-update-button-label =
+    .label = Diweddaru { -brand-short-name }
+security-privacy-image-warning =
+    .alt = Tarian gydag ebychnod, yn mynegi pryder ynghylch eich rhybuddion diogelwch
+security-privacy-image-ok =
+    .alt = Tarian gyda marc tic, yn dangos nad oes gennych unrhyw faterion diogelwch heb eu datrys
+security-privacy-issue-card =
+    .heading = Rhybuddion diogelwch
+issue-card-reset-button =
+    .label = Ailosod
+issue-card-dismiss-button =
+    .tooltiptext = Cau
+    .aria-label = Cau
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = Defnyddiwch Diogelwch Uwch Rhag Tracio
+    .description = Mae gwefannau'n defnyddio tracwyr i'ch dilyn chi ar-lein a dangos hysbysebion anghynnes. Mae { -brand-short-name } yn eich diogelu wrth i chi bori, gan rwystro tracwyr yn awtomatig fel eich bod yn gallu rheoli eich ôl digidol.
+preferences-etp-level-standard =
+    .label = Safonol (rhagosodedig)
+    .description = Diogelwch cryf dibynadwy sy'n gweithio'n llyfn gyda'r rhan fwyaf o wefannau.
+preferences-etp-level-strict =
+    .label = Llym
+    .description = Diogelwch cryfach sy'n rhwystro rhagor o dracwyr ond yn achosi rhai gwefannau i dorri.
+preferences-etp-level-custom =
+    .label = Cyfaddas
+    .description = Dewis pa ddiogelwch i'w troi ymlaen neu ddiffodd
+preferences-etp-status-advanced-button =
+    .label = Gosodiadau uwch
+preferences-etp-status-protections-dashboard-link =
+    .label = Gweld eich bwrdd rheoli diogelwch personol
+    .description = Gweld faint o dracwyr slei mae { -brand-short-name } wedi'u rhwystro ar eich cyfer, gan gynnwys tracwyr cyfryngau cymdeithasol, bysbrintwyr a chryptogloddwyr.
+preferences-etp-header =
+    .heading = Diogelwch Uwch Rhag Tracio
+preferences-etp-advanced-settings-group =
+    .label = Gosodiadau uwch
+    .description = Mae gwefannau'n defnyddio tracwyr i'ch dilyn chi ar-lein a dangos hysbysebion anghynnes. Mae { -brand-short-name } yn eich diogelu wrth i chi bori, gan rwystro tracwyr yn awtomatig fel eich bod yn gallu rheoli eich ôl digidol.
+preferences-etp-customize-button =
+    .label = Cyfaddasu diogelwch rhag tracio
+preferences-etp-reload-tabs-hint =
+    .message = Ail-lwythwch eich tabiau i osod y newidiadau hyn.
+preferences-etp-reload-tabs-hint-button =
+    .label = Ail lwytho pob tab
+preferences-etp-rfp-warning-message =
+    .message = Rydych chi'n defnyddio Gwrthod Bysbrintio (RFP), sy'n disodli rhai o osodiadau diogelu bysbrintio { -brand-short-name }. Gall hyn achosi i rai gwefannau dorri.
+preferences-etp-level-warning-message =
+    .heading = Cofiwch! Efallai na fydd rhai gwefannau'n gweithio yn ôl y disgwyl.
+    .message = Mae rhai gwefannau'n adeiladu tracwyr o fewn eu nodweddion neu gynnwys. Pan fydd { -brand-short-name } yn eu rhwystro, bydd y wefan yn edrych fel ei bod wedi torri. Ceisiwch ddefnyddio "Trwsio anhawster gwefan" neu ddiffodd diogelwch rhag tracio ar y wefan honno.
+preferences-etp-manage-exceptions-button =
+    .label = Rheoli eithriadau
+    .description = Rheoli gwefannau lle mae Diogelwch Tracio Uwch wedi' analluogi.
+preferences-etp-customize-header =
+    .heading = Cyfaddasu diogelwch rhag tracio
+preferences-etp-reset =
+    .label = Ailosod cyfaddasiadau
+    .description = Adfer y gosodiadau i lefel diogelwch rhagosodedig.
+preferences-etp-reset-standard-button =
+    .label = Ailosod i'r safonol
+preferences-etp-reset-strict-button =
+    .label = Ailosod i llym
+preferences-etp-custom-control-group =
+    .label = Diogelwch rhag tracio
+    .description = Dewis pa ddiogelwch i'w droi mlaen neu ddiffodd
+preferences-etp-custom-cookies-enabled =
+    .label = Cwcis
+preferences-etp-custom-cookie-behavior =
+    .aria-label = Cwcis
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = Caniatáu pob cwci
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = Rhwystro cwcis traws-gwefan
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = Ynysu cwcis traws-gwefan
+preferences-etp-custom-cookie-behavior-block-unvisited =
+    .label = Rhwystro cwcis o wefannau heb ymweld â nhw
+preferences-etp-custom-cookie-behavior-block-all-cross-site-cookies =
+    .label = Rhwystro pob cwci (bydd yn achosi i wefannau dorri)
+preferences-etp-custom-cookie-behavior-block-all =
+    .label = Rhwystro pob cwci (bydd yn achosi i wefannau dorri)
+preferences-etp-custom-tracking-protection-enabled =
+    .label = Cynnwys tracio
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = Cynnwys tracio
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = Cryptogloddwyr
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = Bysbrintwyr hysbys
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = Bysbrintwyr posib
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = Bysbrintwyr posib
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = Bysbrintwyr hysbys sydd ddim yn cael eu rhwystro
+    .description = Gall hyn ganiatáu i rai tracwyr eich dilyn heb gwcis.
+security-privacy-issue-warning-third-party-cookies =
+    .label = Mae cwcis trydydd parti wedi'u galluogi
+    .description = Mae cwcis trydydd parti yn cael eu defnyddio i'ch tracio ar draws gwefannau.
+security-privacy-issue-warning-password-manager =
+    .label = Mae'r rheolwr cyfrineiriau wedi'i analluogi
+    .description = Mae rheolwyr cyfrineiriau yn eich helpu i gadw cyfrineiriau cryf ar gyfer eich cyfrifon.
+security-privacy-issue-warning-popup-blocker =
+    .label = Mae'r rhwystrydd lamlenni wedi'i analluogi
+    .description = Mae llamlenni'n ymyrol ac o bosib yn niweidiol.
+security-privacy-issue-warning-extension-install =
+    .label = Gall wefannau osod estyniadau
+    .description = Gall wefannau osod estyniadau i { -brand-short-name } heb ofyn.
+security-privacy-issue-warning-safe-browsing =
+    .label = Dyw cynnwys peryglus a thwyllodrus ddim yn cael ei rwystro
+    .description = Mae'r tebygrwydd i chi gael eich sgamio a derbyn drwgwar yn uwch.
+security-privacy-issue-warning-doh =
+    .label = Mae DNS dros HTTPS wedi'i analluogi
+    .description = Mae DNS dros HTTPS yn cuddio pa wefannau rydych chi'n ymweld â nhw rhag eich darparwr rhwydwaith.
+security-privacy-issue-warning-ech =
+    .label = Mae'r Cleient wedi'i Amgryptio Helo wedi'i analluogi
+    .description = Mae'r Cleient wedi'i Amgryptio Helo yn cuddio pa wefannau rydych yn ymweld â nhw rhag eich darparwr rhwydwaith.
+security-privacy-issue-warning-proxy-autodetection =
+    .label = Mae awtoffurfweddu dirprwyol wedi'i alluogi
+    .description = Dyw awtoffurfweddu dirprwyol ddim yn caniatáu i rwydweithiau heb ymddiriedaeth fonito'ch gweithgaredd.

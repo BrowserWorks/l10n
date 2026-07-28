@@ -1,0 +1,106 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+### Datetimepicker - Dialog for default HTML's <input type="datetime-local">
+
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the purpose of this picker as both a calendar with a month-year
+## and a time selection dialog for HTML's <input type="datetime-local">
+
+datetime-picker-label =
+    .aria-label = Dewis dyddiad ac amser
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the purpose of a date picker calendar and a month-year selection
+## spinner dialogs for HTML's default <input type="date">
+
+date-picker-label =
+    .aria-label = Dewiswch ddyddiad
+date-spinner-label =
+    .aria-label = Dewiswch fis a blwyddyn
+
+## Text of the clear button
+
+date-picker-clear-button = Clirio
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the purpose of buttons that leaf through months of a calendar
+
+date-picker-previous =
+    .aria-label = Mis blaenorol
+date-picker-next =
+    .aria-label = Mis nesaf
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the type of a value/unit that is being selected within a
+## Month/Year date spinner dialogs on a datepicker calendar dialog
+
+date-spinner-month =
+    .aria-label = Mis
+date-spinner-year =
+    .aria-label = Blwyddyn
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the purpose of buttons that leaf through either months
+## or years of a Month/Year date spinner on a datepicker calendar dialog
+
+date-spinner-month-previous =
+    .aria-label = Mis blaenorol
+date-spinner-month-next =
+    .aria-label = Mis nesaf
+date-spinner-year-previous =
+    .aria-label = Llynedd
+date-spinner-year-next =
+    .aria-label = Blwyddyn nesaf
+
+## This label is used by screenreaders and other assistive technology
+## to indicate the purpose of a time picker dialog
+## for HTML's default <input type="time">
+
+time-picker-label =
+    .aria-label = Dewis amser
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the type of a value/unit that is being selected within a
+## time spinners on a timepicker dialog
+
+time-spinner-hour-label =
+    .aria-label = Awr
+time-spinner-minute-label =
+    .aria-label = Munud
+time-spinner-second-label =
+    .aria-label = Eiliad
+time-spinner-millisecond-label =
+    .aria-label = Milieiliad
+# For example, in English, when the 24 hours of the day are divided into two
+# periods of 12 hours, the time of the day, or the period of the day is either
+# AM (for 00:00-11:59) or PM (for 12:00-23:59), i.e. noon is 12 PM, midnight - 12 AM
+time-spinner-day-period-label =
+    .aria-label = Cyfnod y dydd
+
+## These labels are used by screenreaders and other assistive technology
+## to indicate the purpose of buttons that leaf through time units of a spinner on a timepicker dialog
+
+time-spinner-hour-previous =
+    .aria-label = Yr awr flaenorol
+time-spinner-hour-next =
+    .aria-label = Yr awr nesaf
+time-spinner-minute-previous =
+    .aria-label = Y funud flaenorol
+time-spinner-minute-next =
+    .aria-label = Y funud nesaf
+time-spinner-second-previous =
+    .aria-label = Yr eiliad flaenorol
+time-spinner-second-next =
+    .aria-label = Yr eiliad nesaf
+time-spinner-millisecond-previous =
+    .aria-label = Y milieiliad blaenorol
+time-spinner-millisecond-next =
+    .aria-label = Y milieiliad nesaf
+time-spinner-day-period-previous =
+    .aria-label = Cyfnod blaenorol y dydd
+time-spinner-day-period-next =
+    .aria-label = Cyfnod nesaf y dydd

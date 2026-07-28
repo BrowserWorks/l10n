@@ -1,0 +1,72 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Added shortcuts:
+
+customkeys-title = Teklatuaren lasterbideak
+customkeys-search = Bilatu:
+customkeys-change = Aldatu
+customkeys-reset = Berrezarri
+customkeys-clear = Garbitu
+customkeys-new-key = Sakatu tekla berria:
+customkeys-reset-all = Berrezarri lasterbide guztiak lehenespenetara
+# Variables
+# $conflict (string) - The title of the conflicting shortcut.
+customkeys-conflict-confirm = Tekla hau lehendik ere { $conflict }-era esleitua dago. Ordezkatu egin nahi duzu?
+customkeys-reset-all-confirm = Ziur zaude teklatuaren lasterbide guztiak lehenespenetara berrezarri nahi dituzula?
+customkeys-file-duplicate-tab = Bikoiztu fitxa
+customkeys-file-focus-search = Jarri fokua bilaketa-barran
+customkeys-history-reopen-tab = Ireki berriro itxitako azken fitxa
+customkeys-history-reopen-window = Ireki berriro itxitako azken leihoa
+customkeys-sidebar-toggle = Txandakatu alboko barra
+customkeys-view-bookmarks-toolbar = Txandakatu laster-marken tresna-barra
+customkeys-view-picture-in-picture = Bideoa beste leiho batean
+customkeys-view-add-split-view = Gehitu ikuspegi zatitua
+# Separate is a verb
+customkeys-view-separate-split-view = Banandu ikuspegi zatitua
+customkeys-dev-tools = Web garatzaile-tresnak
+customkeys-dev-inspector = DOM- eta estilo-ikuskatzailea
+customkeys-dev-webconsole = Web kontsola
+customkeys-dev-debugger = JavaScript araztailea
+customkeys-dev-network = Sareko monitorea
+customkeys-dev-style = Estilo-editorea
+customkeys-dev-performance = Errendimendua
+customkeys-dev-storage = Biltegiratzearen ikuskatzailea
+customkeys-dev-dom = DOM
+customkeys-dev-accessibility = Erabilgarritasuna
+customkeys-dev-profiler-toggle = Hasi/gelditu errendimenduaren analizatzailea
+customkeys-dev-profiler-capture = Grabatu errendimenduaren profila
+customkeys-category-navigation = Nabigazioa
+customkeys-nav-back = Atzera
+customkeys-nav-forward = Aurrera
+customkeys-nav-home = Hasiera
+customkeys-nav-reload = Berritu
+customkeys-nav-reload-skip-cache = Berritu (gainidatzi cachea)
+customkeys-nav-stop = Gelditu
+customkeys-nav-select-tab-1 = 1. fitxara joan
+customkeys-nav-select-tab-2 = 2. fitxara joan
+customkeys-nav-select-tab-3 = 3. fitxara joan
+customkeys-nav-select-tab-4 = 4. fitxara joan
+customkeys-nav-select-tab-5 = 5. fitxara joan
+customkeys-nav-select-tab-6 = 6. fitxara joan
+customkeys-nav-select-tab-7 = 7. fitxara joan
+customkeys-nav-select-tab-8 = 8. fitxara joan
+customkeys-nav-select-last-tab = Azken fitxara joan
+customkeys-nav-toggle-mute = Mututu/ez mututu audioa
+customkeys-edit-find-previous = Bilatu aurrekoa
+customkeys-tools-screenshot = Hartu pantaila-argazkia
+customkeys-category-navigation-2 =
+    .heading = Nabigazioa
+customkeys-caution-message = Eginbide hau esperimentala da eta baliteke behar bezala ez ibiltzea.
+# Displayed in the new key field when the key that was pressed isn't valid.
+customkeys-key-invalid = Baliogabea
+customkeys-key-clear =
+    .aria-label = Garbitu
+    .tooltiptext = Garbitu
+
+## Shortcut actions
+
+customkeys-key-new =
+    .label = Sakatu tekla berria:

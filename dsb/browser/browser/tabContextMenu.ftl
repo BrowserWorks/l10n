@@ -1,0 +1,244 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-new-tab =
+    .label = Nowy rejtarik
+    .accesskey = N
+reload-tab =
+    .label = Rejtarik znowego zacytaś
+    .accesskey = R
+reload-tab2 =
+    .label = Znowego zacytaś
+    .accesskey = n
+select-all-tabs =
+    .label = Wšykne rejtariki wubraś
+    .accesskey = W
+tab-context-play-tab =
+    .label = Rejtarik wótgraś
+    .accesskey = R
+tab-context-play-tabs =
+    .label = Rejtariki wótgraś
+    .accesskey = g
+duplicate-tab =
+    .label = Rejatark pódwójś
+    .accesskey = R
+duplicate-tab2 =
+    .label = Dwójny
+    .accesskey = D
+duplicate-tabs =
+    .label = Rejtariki pódwójś
+    .accesskey = R
+duplicate-tabs2 =
+    .label = Dwójny
+    .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Rejtariki nalěwo zacyniś
+    .accesskey = l
+close-tabs-to-the-start-vertical =
+    .label = Rejtariki górjejce zacyniś
+    .accesskey = z
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
+close-tabs-to-the-end =
+    .label = Rejtariki napšawo zacyniś
+    .accesskey = n
+close-tabs-to-the-end-vertical =
+    .label = Rejtariki dołojce zacyniś
+    .accesskey = d
+close-other-tabs =
+    .label = Druge rejtariki zacyniś
+    .accesskey = D
+reload-tabs =
+    .label = Rejtariki znowego zacytaś
+    .accesskey = n
+pin-tab =
+    .label = Rejtarik pśipěś
+    .accesskey = R
+tab-context-pin-tab2 =
+    .label = Pśipěś
+    .accesskey = P
+unpin-tab =
+    .label = Rejtarik wótpěś
+    .accesskey = w
+tab-context-unpin-tab2 =
+    .label = Wótpěś
+    .accesskey = t
+pin-selected-tabs =
+    .label = Rejtariki pśipěś
+    .accesskey = R
+unpin-selected-tabs =
+    .label = Rejtariki wótpěś
+    .accesskey = t
+bookmark-selected-tabs =
+    .label = Rejtariki ako cytańske znamjenja składowaś…
+    .accesskey = k
+tab-context-bookmark-tab =
+    .label = Rejtarik ako cytańske znamje składowaś …
+    .accesskey = R
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Ako cytańske znamje składowaś
+    .accesskey = A
+tab-context-open-in-new-container-tab =
+    .label = W nowem kontejnerowem rejtariku wócyniś
+    .accesskey = k
+tab-context-open-in-new-container-tab2 =
+    .label = W nowem kontejnerowem rejtariku wócyniś
+    .accesskey = k
+move-to-start =
+    .label = K zachopjeńkoju pśesunuś
+    .accesskey = K
+move-to-end =
+    .label = Ku kóńcoju pśesunuś
+    .accesskey = c
+move-to-new-window =
+    .label = Do nowego wokna pśesunuś
+    .accesskey = n
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Do { $profileName } pśesunuś
+tab-context-close-multiple-tabs =
+    .label = Někotare rejtariki zacyniś
+    .accesskey = N
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Někotare zacyniś
+    .accesskey = N
+tab-context-close-duplicate-tabs =
+    .label = Dwójne rejtariki zacyniś
+    .accesskey = D
+tab-context-close-duplicate-tabs2 =
+    .label = Duplikaty toś togo rejtarika zacyniś
+    .accesskey = l
+tab-context-share-url =
+    .label = Źěliś
+    .accesskey = i
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Nowy rejtarik napšawo
+    .accesskey = w
+tab-context-new-tab-open-vertical =
+    .label = Nowy rejtarik dołojce
+    .accesskey = w
+tab-context-new-group =
+    .label = Nowa kupka
+    .accesskey = o
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zacynjony rejtarik znowego wócyniś
+            [one] $tabCount zacynjony rejtarik znowego wócyniś
+            [two] $tabCount zacynjonej rejtarika znowego wócyniś
+            [few] $tabCount zacynjone rejtariki znowego wócyniś
+           *[other] $tabCount zacynjonych rejtarikow znowego wócyniś
+        }
+    .accesskey = z
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Rejtarik zacyniś
+            [one] { $tabCount } rejtarik zacyniś
+            [two] { $tabCount } rejtarika zacyniś
+            [few] { $tabCount } rejtariki zacyniś
+           *[other] { $tabCount } rejtarikow zacyniś
+        }
+    .accesskey = z
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Zacyniś
+            [one] { $tabCount } rejtarik zacyniś
+            [two] { $tabCount } rejtarika zacyniś
+            [few] { $tabCount } rejtariku zacyniś
+           *[other] { $tabCount } rejtarikow zacyniś
+        }
+    .accesskey = Z
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] { $tabCount } rejtarik pśesunuś
+            [one] { $tabCount } rejtarik pśesunuś
+            [two] { $tabCount } rejtarika pśesunuś
+            [few] { $tabCount } rejtariki pśesunuś
+           *[other] { $tabCount } rejtarikow pśesunuś
+        }
+    .accesskey = s
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Rejtarik pśesunuś do
+            [one] { $tabCount } rejtarik pśesunuś do
+            [two] { $tabCount } rejtarika pśesunuś do
+            [few] { $tabCount } rejtariki pśesunuś do
+           *[other] { $tabCount } rejtarikow pśesunuś do
+        }
+    .accesskey = R
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Źělony naglěd pśesunuś do
+    .accesskey = l
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Na rěd pósłaś
+            [one] { $tabCount } rejtarik na rěd pósłaś
+            [two] { $tabCount } rejtarika na rěd pósłaś
+            [few] { $tabCount } rejtariki na rěd pósłaś
+           *[other] { $tabCount } rejtarikow na rěd pósłaś
+        }
+    .accesskey = r
+tab-context-send-to-device2 =
+    .label = Na waše rědy pósłaś
+    .accesskey = r
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Na mobilny rěd pósłaś
+            [one] { $tabCount } rejtarik na mobilny rěd pósłaś
+            [two] { $tabCount } rejtarika na mobilny rěd pósłaś
+            [few] { $tabCount } rejtariki na mobilny rěd pósłaś
+           *[other] { $tabCount } rejtarikow na mobilny rěd pósłaś
+        }
+    .accesskey = r
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Źělobny wótkaz napóraś
+    .accesskey = l
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] { $tabCount } rejtarik na rěd pósłaś
+            [two] { $tabCount } rejtarika na rěd pósłaś
+            [few] { $tabCount } rejtariki na rěd pósłaś
+           *[other] { $tabCount } rejtarikow na rěd pósłaś
+        }
+    .accesskey = r
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Rejtarik pušćiś
+            [one] { $tabCount } rejtarik pušćiś
+            [two] { $tabCount } rejtarika pušćiś
+            [few] { $tabCount } rejtariki pušćiś
+           *[other] { $tabCount } rejtarikow pušćiś
+        }
+    .accesskey = r
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Wótpóraś
+    .accesskey = t

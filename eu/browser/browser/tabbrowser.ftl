@@ -1,0 +1,484 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+tabbrowser-empty-tab-title = Fitxa berria
+tabbrowser-empty-private-tab-title = Fitxa pribatu berria
+tabbrowser-menuitem-close-tab =
+    .label = Itxi fitxa
+tabbrowser-menuitem-close =
+    .label = Itxi
+# Displayed within the tooltip on tabs inside of a tab group.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+tabbrowser-tab-tooltip-tab-group = { $tabGroupName }
+# Displayed within the tooltip on tabs in a container.
+# Variables:
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-container = { $containerName }
+# Displayed within the tooltip on tabs inside of a tab group if the tab is also in a container.
+# Variables:
+#   $tabGroupName (String): the user-defined name of the current tab group.
+#   $containerName (String): the name of the current container.
+tabbrowser-tab-tooltip-tab-group-container = { $tabGroupName } — { $containerName }
+# Displayed as a tooltip on container tabs
+# Variables:
+#   $title (String): the title of the current tab.
+#   $containerName (String): the name of the current container.
+tabbrowser-container-tab-title = { $title } - { $containerName }
+# This text serves as an on-screen tooltip as well as an accessible name for
+# the "X" button that is shown on the active tab or, when multiple tabs are
+# selected, to all their "X" buttons.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-button =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Itxi fitxa
+           *[other] Itxi { $tabCount } fitxa
+        }
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-close-tabs-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Itxi fitxa
+           *[other] Itxi { $tabCount } fitxa
+        }
+tab-splitview-splitter =
+    .aria-label = Aldatu tamainaz ikuspegi zatituko fitxak
+
+## Tooltips for tab audio control
+## Variables:
+##   $tabCount (Number): The number of tabs that will be affected.
+
+# Variables:
+#   $shortcut (String): The keyboard shortcut for "Mute tab".
+tabbrowser-mute-tab-audio-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Mututu fitxa ({ $shortcut })
+           *[other] Mututu { $tabCount } fitxa ({ $shortcut })
+        }
+# Variables:
+#   $shortcut (String): The keyboard shortcut for "Unmute tab".
+tabbrowser-unmute-tab-audio-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Ez mututu fitxa ({ $shortcut })
+           *[other] Ez mututu { $tabCount } fitxa ({ $shortcut })
+        }
+tabbrowser-mute-tab-audio-background-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Mututu fitxa
+           *[other] Mututu { $tabCount } fitxa
+        }
+tabbrowser-unmute-tab-audio-background-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Ez mututu fitxa
+           *[other] Ez mututu { $tabCount } fitxa
+        }
+tabbrowser-unblock-tab-audio-tooltip =
+    .label =
+        { $tabCount ->
+            [one] Erreproduzitu fitxa
+           *[other] Erreproduzitu { $tabCount } fitxa
+        }
+
+## Tooltips for tab audio control
+
+tabbrowser-unmute-tab-audio-aria-label =
+    .aria-label = Ez mututu fitxa
+tabbrowser-mute-tab-audio-aria-label =
+    .aria-label = Mututu fitxa
+# Used to unblock a tab with audio from autoplaying
+tabbrowser-unblock-tab-audio-aria-label =
+    .aria-label = Erreproduzitu fitxa
+
+## Confirmation dialog when closing a window with more than one tab open,
+## or when quitting when only one window is open.
+
+# The singular form is not considered since this string is used only for multiple tabs.
+# Variables:
+#   $tabCount (Number): The number of tabs that will be closed.
+tabbrowser-confirm-close-tabs-title = Itxi { $tabCount } fitxa?
+tabbrowser-confirm-close-tabs-button = Itxi fitxak
+tabbrowser-ask-close-tabs-checkbox = Galdetu hainbat fitxa itxi aurretik
+tabbrowser-confirm-close-tabs-checkbox = Berretsi hainbat fitxa itxi aurretik
+
+## Confirmation dialog when quitting using the menu and multiple windows are open.
+
+# The forms for 0 or 1 items are not considered since this string is used only for
+# multiple windows.
+# Variables:
+#   $windowCount (Number): The number of windows that will be closed.
+tabbrowser-confirm-close-windows-title = Itxi { $windowCount } leiho?
+tabbrowser-confirm-close-windows-button =
+    { PLATFORM() ->
+        [windows] Itxi eta irten
+       *[other] Itxi eta irten
+    }
+
+## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
+## Windows does not show a prompt on quit when using the keyboard shortcut by default.
+
+tabbrowser-confirm-close-tabs-with-key-title = Itxi leihoa eta { -brand-short-name }(e)tik irten?
+tabbrowser-confirm-close-tabs-with-key-button = Irten { -brand-short-name }(e)tik
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-ask-close-tabs-with-key-checkbox = Galdetu { $quitKey } lasterbidearekin irten aurretik
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-confirm-close-tabs-with-key-checkbox = Berretsi irten aurretik { $quitKey } erabiltzean
+
+## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
+## and browser.warnOnQuitShortcut is true.
+
+tabbrowser-confirm-close-warn-shortcut-title = Irten { -brand-short-name }(e)tik edo itxi uneko fitxa?
+tabbrowser-confirm-close-windows-warn-shortcut-button =
+    { PLATFORM() ->
+        [windows] Irten { -brand-short-name }(e)tik
+       *[other] Irten { -brand-short-name }(e)tik
+    }
+tabbrowser-confirm-close-tab-only-button = Itxi uneko fitxa
+
+## Confirmation dialog when opening multiple tabs simultaneously
+
+tabbrowser-confirm-open-multiple-tabs-title = Berretsi irekitzea
+# Variables:
+#   $tabCount (Number): The number of tabs that will be opened.
+tabbrowser-confirm-open-multiple-tabs-message =
+    { $tabCount ->
+       *[other] { $tabCount } fitxa irekitzera zoaz. Honek { -brand-short-name } motel dezake orriak kargatzen diren bitartean. Ziur zaude jarraitu egin nahi duzula?
+    }
+tabbrowser-confirm-open-multiple-tabs-button = Ireki fitxak
+tabbrowser-confirm-open-multiple-tabs-checkbox = Abisatu hainbat fitxa aldi berean irekitzeak { -brand-short-name } motel balezake
+
+## Confirmation dialog for enabling caret browsing
+
+tabbrowser-confirm-caretbrowsing-title = Kurtsore bidezko nabigazioa
+tabbrowser-confirm-caretbrowsing-message = F7 zapaltzeak kurtsore bidezko nabigazioa gaitzen edo desgaitzen du. Eginbide honek web orrietan kurtsore bat ezartzen du testua teklatuarekin aukeratzea baimenduz. Kurtsore bidezko nabigazioa gaitu nahi duzu?
+tabbrowser-confirm-caretbrowsing-checkbox = Ez erakutsi berriro elkarrizketa-koadro hau.
+
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-all-duplicate-tabs-title = Bikoiztutako fitxak itxi?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    Leiho honetan bikoiztuta dauden fitxak itxiko ditugu. Azken
+    fitxa aktiboa irekita mantenduko da.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Itxi fitxak
+
+##
+
+# Variables:
+#   $domain (String): URL of the page that is trying to steal focus.
+tabbrowser-allow-dialogs-to-get-focus =
+    .label = Baimendu { $domain } helbideko gisa honetako jakinarazpenek bere fitxara aldaraztea
+tabbrowser-customizemode-tab-title = Pertsonalizatu { -brand-short-name }
+
+## Context menu buttons, of which only one will be visible at a time
+
+tabbrowser-context-mute-tab =
+    .label = Mututu fitxa
+    .accesskey = M
+tabbrowser-context-mute-tab2 =
+    .label = Mututu
+    .accesskey = M
+tabbrowser-context-unmute-tab =
+    .label = Ez mututu fitxa
+    .accesskey = m
+tabbrowser-context-unmute-tab2 =
+    .label = Ez mututu
+    .accesskey = z
+# The accesskey should match the accesskey for tabbrowser-context-mute-tab
+tabbrowser-context-mute-selected-tabs =
+    .label = Mututu fitxak
+    .accesskey = M
+# The accesskey should match the accesskey for tabbrowser-context-unmute-tab
+tabbrowser-context-unmute-selected-tabs =
+    .label = Ez mututu fitxak
+    .accesskey = z
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = Audioa erreproduzitzen
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label = Zerrendatu fitxa guztiak ({ $tabCount })
+
+## Tab manager menu buttons
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = Mututu fitxa
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = Ez mututu fitxa
+tabbrowser-manager-close-tab =
+    .tooltiptext = Itxi fitxa
+# This is for tab groups that have been "saved and closed" (see tab-group-editor-action-save). It does
+# not include "deleted" tab groups (see tab-group-editor-action-delete).
+tabbrowser-manager-closed-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Itxita
+tabbrowser-manager-current-window-tab-group =
+    .label = { $tabGroupName }
+    .tooltiptext = { $tabGroupName } — Uneko leihoa
+
+##
+
+tab-group-editor-title-create = Sortu fitxa-taldea
+tab-group-editor-title-edit = Kudeatu fitxa-taldea
+tab-group-editor-name-label = Izena
+tab-group-editor-name-field =
+    .placeholder = Adibidea: erosketak
+tab-group-editor-cancel =
+    .label = Utzi
+    .accesskey = z
+tab-group-editor-color-selector =
+    .aria-label = Fitxa-taldearen kolorea
+tab-group-editor-color-selector2-blue = Urdina
+    .title = Urdina
+tab-group-editor-color-selector2-purple = Morea
+    .title = Morea
+tab-group-editor-color-selector2-cyan = Ziana
+    .title = Ziana
+tab-group-editor-color-selector2-orange = Laranja
+    .title = Laranja
+tab-group-editor-color-selector2-yellow = Horia
+    .title = Horia
+tab-group-editor-color-selector2-pink = Arrosa
+    .title = Arrosa
+tab-group-editor-color-selector2-green = Berdea
+    .title = Berdea
+tab-group-editor-color-selector2-gray = Grisa
+    .title = Grisa
+tab-group-editor-color-selector2-red = Gorria
+    .title = Gorria
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — Itxita
+tab-group-description = { $tabGroupName } — Fitxa-taldea
+tab-group-label-tooltip-collapsed = { $tabGroupName } — Tolestuta
+tab-group-label-tooltip-expanded = { $tabGroupName } — Zabalduta
+tab-group-preview-name =
+    .aria-label = Fitxak tolestutako talde batean
+tab-context-unnamed-group =
+    .label = Talde izengabea
+tab-group-name-default = Talde izengabea
+
+## Tab Groups
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = Fitxa-taldeak
+
+## When collapsed, the tab group label's aria-description will indicate
+## whether the hover menu is open or closed.
+
+tab-group-preview-open-description = Fitxen zerrenda zabalik
+tab-group-preview-closed-description = Fitxen zerrenda itxita
+
+##
+
+tab-context-move-tab-to-new-group =
+    .label =
+        { $tabCount ->
+            [1] Gehitu fitxa talde berrira
+           *[other] Gehitu fitxak talde berrira
+        }
+    .accesskey = G
+tab-context-move-tab-to-group =
+    .label =
+        { $tabCount ->
+            [1] Gehitu fitxa taldera
+           *[other] Gehitu fitxak taldera
+        }
+    .accesskey = G
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] Gehitu ikuspegi zatitua talde berrira
+           *[other] Gehitu ikuspegi zatituak talde berrira
+        }
+    .accesskey = G
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] Gehitu ikuspegi zatitua taldera
+           *[other] Gehitu ikuspegi zatituak taldera
+        }
+    .accesskey = G
+tab-context-move-tab-to-group-saved-groups =
+    .label = Itxitako taldeak
+tab-group-editor-action-new-tab =
+    .label = Fitxa berria taldean
+tab-group-editor-action-new-window =
+    .label = Eraman taldea leiho berrira
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] Kopiatu taldeko lotura
+           *[other] Kopiatu taldeko { $linkCount } lotura
+        }
+tab-group-editor-action-save =
+    .label = Gorde eta itxi taldea
+tab-group-editor-action-ungroup =
+    .label = Destaldekatu fitxak
+tab-group-editor-action-delete =
+    .label = Ezabatu taldea
+tab-group-editor-done =
+    .label = Eginda
+    .accessKey = E
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = Partekatu fitxa-taldea
+tab-context-reopen-tab-group =
+    .label = Ireki berriro fitxa-taldea
+# Variables:
+#  $groupCount (Number): the number of tab groups that are affected by the action.
+tab-context-ungroup-tab =
+    .label =
+        { $groupCount ->
+            [1] Kendu taldetik
+           *[other] Kendu taldeetatik
+        }
+    .accesskey = K
+# When a tab group containing the active tab is collapsed, the active tab
+# remains visible. An indicator appears at the end of the group showing the
+# number of remaining tabs that are hidden by the collapsed group,
+# e.g. "+2" for a group with 3 total tabs.
+tab-group-overflow-count = +{ $tabCount }
+tab-group-overflow-count-tooltip =
+    { $tabCount ->
+        [one] Fitxa { $tabCount } gehiago
+       *[other] { $tabCount } fitxa gehiago
+    }
+
+## The tab groups list provides a list of all open tab groups and saved tab
+## groups in one place. When the user has no tab groups, the list instead
+## recommends that the user create a tab group.
+
+tab-groups-list-empty-header = Txukundu zure fitxak
+tab-groups-list-empty-description = Antolatzen hasteko, arrastatu fitxa bat bestearen gainera edo egin eskuin-klika fitxa batean. Zure taldeak hemen gordeko ditugu aurkitzeko errazagoak izan daitezen.
+tab-groups-list-empty-button = Sortu fitxa-taldea
+# Text for a button that, when clicked, creates a new tab group
+tab-groups-list-create-group-button = Talde berria
+
+## Open/saved tab group context menu
+
+# For a tab group open in any window, clicking this will create a new
+# window and move this tab group to that new window.
+tab-group-context-move-to-new-window =
+    .label = Eraman taldea leiho berrira
+# For a tab group open in a different window from the one that the
+# user is using to access the tab group menu, move that tab group into the
+# user's current window.
+tab-group-context-move-to-this-window =
+    .label = Ekarri taldea leiho honetara
+# For a tab group that is open in any window, close the tab group and
+# do not save it. For a tab group that is closed but saved by the user, clicking
+# this will forget the saved tab group.
+tab-group-context-delete =
+    .label = Ezabatu taldea
+# For a saved tab group that is not open in any window, open the tab group
+# in the user's current window.
+tab-group-context-open-saved-group-in-this-window =
+    .label = Ireki taldea leiho honetan
+# For a saved tab group that is not open in any window, create a new window and
+# open the tab group in that window.
+tab-group-context-open-saved-group-in-new-window =
+    .label = Ireki taldea leiho berrian
+
+## Tab Notes
+
+tab-context-add-note =
+    .label = Gehitu oharra
+    .accesskey = G
+tab-context-edit-note =
+    .label = Editatu oharra
+    .accesskey = E
+tab-context-delete-note =
+    .label = Ezabatu oharra
+    .accesskey = z
+tab-note-editor-title-create = Gehitu oharra
+tab-note-editor-title-edit = Editatu oharra
+tab-note-editor-text-field =
+    .placeholder = Zer gogoratu nahi duzu fitxa honi buruz?
+tab-note-editor-button-cancel =
+    .label = Utzi
+    .accesskey = U
+tab-note-editor-button-save =
+    .label = Gorde
+    .accesskey = G
+tab-note-editor-button-delete =
+    .title = Ezabatu oharra
+    .aria-label = Ezabatu oharra
+    .accesskey = E
+tab-note-preview-edit-icon =
+    .alt = Editatu oharra
+# Link to show the full tab note in case it was truncated.
+tab-note-preview-expand = Irakurri gehiago
+tab-note-panel-add-note-new-badge =
+    .label = Berria
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit =
+    { $maxAllowedCharacters ->
+       *[other] { NUMBER($totalCharacters, useGrouping: "false") }/{ NUMBER($maxAllowedCharacters, useGrouping: "false") } karaktere
+    }
+
+## Split View
+
+# Open a new tab next to the current tab and display their contents side by side
+tab-context-add-split-view =
+    .label = Gehitu ikuspegi zatitua
+    .accesskey = z
+# Display the two selected tabs' contents side by side
+tab-context-open-in-split-view =
+    .label = Ireki ikuspegi zatituan
+    .accesskey = k
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view =
+    .label = Banandu ikuspegi zatitua
+    .accesskey = z
+# Reverse the order of the two tabs in the split view
+tab-context-reverse-split-view =
+    .label = Alderantzikatu fitxak
+    .accesskey = d
+tab-context-badge-new = Berria
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the left tab inside of a tab split view
+# "left" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-left = { $label }, ikuspegi zatitua ezkerrean
+# Split view tabs display their respective contents side by side
+# Displayed within the tooltip on the right tab inside of a tab split view
+# "right" corresponds to the visual position. Translate literally; do not swap for RTL languages.
+# Variables:
+#   $label (String): the text label of the tab visible in the tab strip
+tabbrowser-tab-label-tab-split-view-right = { $label }, ikuspegi zatitua eskuinean
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = Banandu fitxak
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = Alderantzikatu fitxak
+split-view-menuitem-close-both-tabs =
+    .label = Itxi bi fitxak

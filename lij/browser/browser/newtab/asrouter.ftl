@@ -1,0 +1,189 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## These messages are used as headings in the recommendation doorhanger
+
+cfr-doorhanger-extension-heading = Estenscioin consegiæ
+cfr-doorhanger-feature-heading = Fonçion consegiâ
+
+##
+
+cfr-doorhanger-extension-sumo-link =
+    .tooltiptext = Perché mi veddo questo?
+cfr-doorhanger-extension-cancel-button = Òua no
+    .accesskey = O
+cfr-doorhanger-extension-ok-button = Azonzi òua
+    .accesskey = A
+cfr-doorhanger-extension-manage-settings-button = Gestisci inpostaçioin consegiæ
+    .accesskey = G
+cfr-doorhanger-extension-never-show-recommendation = No mostrame sti conseggi
+    .accesskey = N
+cfr-doorhanger-extension-learn-more-link = Atre informaçioin
+# This string is used on a new line below the add-on name
+# Variables:
+#   $name (String) - Add-on author name
+cfr-doorhanger-extension-author = da { $name }
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-extension-notification = Conseggi
+
+## Add-on statistics
+## These strings are used to display the total number of
+## users and rating for an add-on. They are shown next to each other.
+
+# Variables:
+#   $total (Number) - The rating of the add-on from 1 to 5
+cfr-doorhanger-extension-rating =
+    .tooltiptext =
+        { $total ->
+            [one] { $total } stelinn-a
+           *[other] { $total } stelinn-e
+        }
+# Variables:
+#   $total (Number) - The total number of users using the add-on
+cfr-doorhanger-extension-total-users =
+    { $total ->
+        [one] { $total } utente
+       *[other] { $total } utenti
+    }
+
+## Mozilla Account messages
+
+cfr-doorhanger-bookmark-fxa-header = Sincronizza i teu segnalibbri dapertùtto.
+cfr-doorhanger-bookmark-fxa-link-text = Sincronizza i segnalibbri òua…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .title = Særa
+    .aria-label = Pomello pe serâ
+fxa-adoption-primary-button-label = Registrite
+
+## Protections panel
+
+cfr-protections-panel-link-text = Atre informaçioin
+
+## What's New toolbar button and panel
+
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Neuve fonçioin
+cfr-whatsnew-button =
+    .label = Cöse gh'é de neuvo
+    .tooltiptext = Cöse gh'é de neuvo
+cfr-whatsnew-release-notes-link-text = Lezi e nòtte de version
+
+## Enhanced Tracking Protection Milestones
+
+cfr-doorhanger-milestone-ok-button = Amia tutto
+    .accesskey = A
+cfr-doorhanger-milestone-close-button = Særa
+    .accesskey = S
+
+## DOH Message
+
+cfr-doorhanger-doh-primary-button-2 = Va ben
+    .accesskey = V
+cfr-doorhanger-doh-secondary-button = Dizativa
+    .accesskey = D
+
+## Full Video Support CFR message
+
+cfr-doorhanger-video-support-primary-button = Agiorna òua
+    .accesskey = u
+
+## VPN promotion dialog for public Wi-Fi users
+##
+## If a user is detected to be on a public Wi-Fi network, they are given a
+## bit of info about how to improve their privacy and then offered a button
+## to the Mozilla VPN page and a link to dismiss the dialog.
+
+spotlight-public-wifi-vpn-link = Oua No
+    .accesskey = N
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Preuvilo
+    .accesskey = P
+firefoxview-cfr-secondarybutton = Oua no
+    .accesskey = n
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-secondarybutton = Sâta
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-dismiss-button = Oua no
+    .accesskey = n
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+fox-doodle-pin-headline = Benvegnuo torna
+fox-doodle-pin-secondary = Oua no
+
+## FxA sync CFR
+
+fxa-sync-cfr-primary = Atre informaçioin
+    .accesskey = A
+fxa-sync-cfr-secondary = Ricordimelo dòppo
+    .accesskey = R
+
+## Set as Default PDF Reader Infobar
+
+pdf-default-notification-decline-button =
+    .label = Oua no
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-reject-button = No graçie
+    .accesskey = N
+
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = Arvî { -brand-short-name } a-a proscima acençion de l'elaboratô?
+launch-on-login-spotlight-startup-checkbox = Arvi { -brand-short-name } quando t'açendi l'elaboratô
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = Arvi barcoin e feuggi existenti
+launch-on-login-spotlight-primary-button = Sarva e særa { -brand-short-name }
+
+## Welcome Back Spotlight and Import
+
+welcome-back-spotlight-title = Vanni a-a privacy integrâ
+
+## Root Certificate Succession Infobar
+
+root-certificate-succession-infobar-primary-button =
+    .label = Agiorna oua
+    .accesskey = A
+root-certificate-succession-infobar-secondary-button =
+    .label = Dòppo
+    .accesskey = D
+
+## Root Certificate Succession Windows Background Notification
+
+root-certificate-windows-background-notification-learn-more-button = Atre informaçioin
+root-certificate-windows-background-notification-update-button = Agiorna { -brand-short-name }
+
+## FxA Menu Message variants
+
+fxa-menu-message-close-button =
+    .title = Særa
+    .aria-label = Særa
+fxa-menu-message-sign-up-button = Registrite
+fxa-menu-message-sign-in-button = Intra
+fxa-menu-message-sync-button = Iniçia a sincronizaçion
+fxa-menu-message-sync-devices-secondary-text = Piggite subito e-e teu informaçioin comme segnalibbri e poule segrete, donde se segge ti deuvi { -brand-short-name }.
+fxa-menu-message-sync-devices-collapsed-text = Scincronizza tutti i teu dispoxitivi
+fxa-menu-message-backup-data-primary-text = Sarva i dæti do navegatô
+fxa-menu-message-backup-data-collapsed-text = Sarva i dæti do navegatô
+
+## Multi-CTA Fox Doodle Spotlight
+
+multi-cta-fox-doodle-set-default-checkbox = Inpòsta { -brand-short-name } comme predefinio
+multi-cta-fox-doodle-pin-startmenu-checkbox = Azonzi { -brand-short-name } a-o menû de inçio

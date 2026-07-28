@@ -1,0 +1,89 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+fxviewtabrow-open-menu-button =
+    .title = Abrir menú
+# Variables:
+#   $date (string) - Date to be formatted based on locale
+fxviewtabrow-date = { DATETIME($date, dateStyle: "short") }
+# Variables:
+#   $time (string) - Time to be formatted based on locale
+fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
+# Variables:
+#   $targetURI (string) - URL of tab that will be opened in the new tab
+fxviewtabrow-tabs-list-tab =
+    .title = Abrir { $targetURI } en una pestaña nueva
+# Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = Cerrar { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+fxviewtabrow-dismiss-tab-button =
+    .title = Descartar { $tabTitle }
+# Used instead of the localized relative time when a timestamp is within a minute or so of now
+fxviewtabrow-just-now-timestamp = Ahora mismo
+
+# Strings below are used for context menu options within panel-list.
+# For developers, this duplicates command because the label attribute is required.
+
+fxviewtabrow-delete = Borrar
+    .accesskey = B
+fxviewtabrow-forget-about-this-site = Olvidar este sitio…
+    .accesskey = O
+fxviewtabrow-open-in-window = Abrir en nueva ventana
+    .accesskey = n
+fxviewtabrow-open-in-private-window = Abrir en nueva ventana privada
+    .accesskey = p
+# “Bookmark” is a verb, as in "Bookmark this page" (add to bookmarks).
+fxviewtabrow-add-bookmark = Marcar…
+    .accesskey = M
+fxviewtabrow-save-to-pocket = Guardar en { -pocket-brand-name }
+    .accesskey = o
+fxviewtabrow-copy-link = Copiar enlace
+    .accesskey = l
+fxviewtabrow-close-tab = Cerrar la pestaña
+    .accesskey = C
+fxviewtabrow-move-tab = Mover pestaña
+    .accesskey = v
+fxviewtabrow-move-tab-start = Mover al inicio
+    .accesskey = i
+fxviewtabrow-move-tab-end = Mover al final
+    .accesskey = E
+fxviewtabrow-move-tab-window = Mover a una nueva ventana
+    .accesskey = u
+fxviewtabrow-send-to-device = Enviar a dispositivo
+    .accesskey = n
+fxviewtabrow-send-to-mobile = Enviar a móvil
+    .accesskey = n
+fxviewtabrow-send-tab = Enviar la pestaña a un dispositivo
+    .accesskey = n
+fxviewtabrow-pin-tab = Pegar pestaña
+    .accesskey = P
+fxviewtabrow-unpin-tab = Despegar pestaña
+    .accesskey = p
+fxviewtabrow-mute-tab = Enmudecer pestaña
+    .accesskey = m
+fxviewtabrow-unmute-tab = Desenmudecer pestaña
+    .accesskey = m
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Opciones para { $tabTitle }
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Enmudecer pestaña
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Desenmudecer pestaña
+fxviewtabrow-send-to-mobile-connect-device = Conectar un dispositivo para enviar pestañas
+fxviewtabrow-send-to-mobile-device-missing2 = ¿No se puede ver el dispositivo?
+fxviewtabrow-send-to-mobile-not-verified = Cuenta no verificada
+fxviewtabrow-send-to-mobile-verify-account = Verificar cuenta
+
+## The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
+
+fxviewtabrow-send-to-mobile-sign-in = Iniciar sesión para enviar pestañas
+fxviewtabrow-send-to-mobile-turn-on-sync = Habilitar sincronización para enviar pestañas

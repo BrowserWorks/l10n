@@ -1,0 +1,36 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+# This file intentionally uses hard-coded brand names instead of Fluent terms.
+# This approach minimizes issues across multiple release channels and rebranded
+# versions.
+
+default-bookmarks-title = نشووکا
+default-bookmarks-heading = نشووکا
+default-bookmarks-toolbarfolder = دوبلگه نوار ٱوزار نشووکا
+# link title for https://www.mozilla.org/firefox/central/
+default-bookmarks-getting-started = ناهاڌن پا کار
+# Firefox links folder name
+default-bookmarks-firefox-heading = Waterfox
+# link title for https://www.mozilla.org/firefox/help/
+default-bookmarks-firefox-get-help = گرؽڌن هیاری
+# link title for https://www.mozilla.org/firefox/customize/
+default-bookmarks-firefox-customize = سفارشی کردن Waterfox
+# link title for https://www.mozilla.org/about/
+default-bookmarks-firefox-about = زبار ایما
+# Firefox Nightly links folder name
+default-bookmarks-nightly-heading = بونچکا Waterfox شاوونه
+# Nightly builds only, link title for https://blog.nightly.mozilla.org/
+default-bookmarks-nightly-blog = وب هؽل Waterfox شاوونه
+# Nightly builds only, link title for https://bugzilla.mozilla.org/
+default-bookmarks-bugzilla = رڌجۊر اشکال BrowserWorks
+# Nightly builds only, link title for https://developer.mozilla.org/
+default-bookmarks-mdn = شبکه برنومه نویسووݩ BrowserWorks
+# Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
+default-bookmarks-nightly-tester-tools = ٱوزارا آزمایشگر شاوونه
+# Nightly builds only, link title for about:crashes
+default-bookmarks-crashes = پوی خراویا ایسا
+# Nightly builds only, link title for https://planet.mozilla.org/
+default-bookmarks-planet = سیاره BrowserWorks

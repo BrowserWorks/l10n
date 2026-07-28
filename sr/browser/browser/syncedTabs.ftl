@@ -1,0 +1,72 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+synced-tabs-sidebar-title = Усклађени језичци
+synced-tabs-sidebar-noclients-subtitle = Желите ли овде да видите језичке са других уређаја?
+synced-tabs-sidebar-intro = Погледајте листу језичака са других уређаја.
+synced-tabs-sidebar-unverified = Ваш налог мора бити потврђен.
+synced-tabs-sidebar-notabs = Нема отворених језичака
+synced-tabs-sidebar-open-settings = Отвори подешавања усклађивања
+synced-tabs-sidebar-tabsnotsyncing = Укључите усклађивање да бисте видели списак језичака са других уређаја.
+synced-tabs-sidebar-connect-another-device = Повежи други уређај
+synced-tabs-sidebar-search =
+    .placeholder = Претражите усклађене језичке
+
+## Displayed in the Synced Tabs sidebar's context menu when right-clicking tabs
+## and/or devices in the list. The "Open" strings below should be translated
+## consistently with the equivalent strings for the bookmarks manager's context
+## menu. That menu is activated by right-clicking a bookmark in the Library
+## window. The bookmarks manager context's strings are located in places.ftl.
+
+synced-tabs-context-open =
+    .label = Отвори
+    .accesskey = О
+synced-tabs-context-open-in-tab =
+    .label = Отвори у новом језичку
+    .accesskey = м
+synced-tabs-context-open-in-container-tab =
+    .label = Отвори у новом контејнер језичку
+    .accesskey = у
+synced-tabs-context-open-in-window =
+    .label = Отвори у новом прозору
+    .accesskey = О
+synced-tabs-context-open-in-private-window =
+    .label = Отвори у новом приватном прозору
+    .accesskey = п
+
+##
+
+# Displayed in the Synced Tabs sidebar's context menu when right-clicking tabs
+# and/or devices in the list. This string is for a menuitem equivalent to one in
+# the tab context menu (activated by right-clicking a tab in the tabstrip). That
+# string is located in tabContextMenu.ftl. So, this string should be translated
+# consistently with the "Bookmark Tab…" string there.
+synced-tabs-context-bookmark =
+    .label = Обележи језичак
+    .accesskey = б
+synced-tabs-context-copy =
+    .label = Копирај
+    .accesskey = К
+synced-tabs-context-open-all-in-tabs =
+    .label = Отвори све у језичцима
+    .accesskey = О
+synced-tabs-context-manage-devices =
+    .label = Управљај уређајима…
+    .accesskey = У
+synced-tabs-context-manage-this-device =
+    .label = Управљај овим уређајем
+    .accesskey = ј
+synced-tabs-context-connect-another-device =
+    .label = Повежи други уређај
+    .accesskey = а
+synced-tabs-context-sync-now =
+    .label = Усклади
+    .accesskey = с
+synced-tabs-fxa-sign-in = Пријавите се ради усклађивања
+synced-tabs-turn-on-sync = Укључите усклађивање
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables
+# $deviceName - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab = Затвори језичак на { $deviceName }

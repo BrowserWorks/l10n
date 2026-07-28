@@ -1,0 +1,24 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+about-policies-title = Políticas empresariales
+aboutpolicies-page-heading =
+    .heading = Acerca de las políticas
+# 'Active' is used to describe the policies that are currently active
+active-policies-tab = Activa
+errors-tab = Errores
+documentation-tab = Documentación
+# These title attributes label the navigation buttons when the moz-page-nav
+# sidebar is collapsed and the visible button text is hidden.
+active-policies-tab-title =
+    .title = Activa
+errors-tab-title =
+    .title = Errores
+documentation-tab-title =
+    .title = Documentación
+no-specified-policies-message = El servicio de Políticas Empresariales está activo pero no hay políticas habilitadas.
+inactive-message = El servicio de Políticas Empresariales está inactivo.
+policy-name = Nombre de la política
+policy-value = Valor de la política
+policy-errors = Errores de la política

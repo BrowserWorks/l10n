@@ -1,0 +1,142 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## The Enterprise Policies feature is aimed at system administrators
+## who want to deploy these settings across several Firefox installations
+## all at once. This is traditionally done through the Windows Group Policy
+## feature, but the system also supports other forms of deployment.
+## These are short descriptions for individual policies, to be displayed
+## in the documentation section in about:policies.
+
+policy-3rdparty = Iestatiet politikas, caur kurām chrome.storage.managed var piekļūt WebExtensions.
+policy-AllowedDomainsForApps = Definējiet domēnus, kuriem ir atļauts piekļūt Google Workspace.
+policy-AllowFileSelectionDialogs = Atļaut datņu atlases dialoglodziņus.
+policy-AppAutoUpdate = Ieslēgt vai izslēgt automātisku lietotnes atjaunināšanu.
+policy-AppUpdatePin = Neļaut { -brand-short-name } atjaunināt pēc norādītās versijas.
+policy-AppUpdateURL = Iestatīs pielāgotu atjaunināšanas adresi
+policy-Authentication = Konfigurēt integrēto autentifikāciju lapām, kas to atbalsta.
+policy-AutofillAddressEnabled = Ieslēgt adrešu automātisko aizpildīšanu.
+policy-AutofillCreditCardEnabled = Ieslēgt automātisko aizpildīšanu maksājumu veidiem.
+policy-AutoLaunchProtocolsFromOrigins = Definējiet sarakstu ar ārējiem protokoliem, kurus var izmantot no uzskaitītajiem avotiem, neprasot lietotājam.
+policy-BackgroundAppUpdate2 = Ieslēgt vai izslēgt fona atjauninātāju.
+policy-BlockAboutAddons = Bloķēt piekļuvi papildinājumu pārvaldniekam (about:addons).
+policy-BlockAboutConfig = Bloķēt pieeju about:config lapai.
+policy-BlockAboutProfiles = Bloķēt pieeju about:profiles lapai.
+policy-BlockAboutSupport = Bloķēt pieeju about:support lapai.
+policy-Bookmarks = Izveidojiet grāmatzīmes grāmatzīmju rīkjoslā, grāmatzīmju izvēlnē vai konkrētā mapē kādā no šīm vietām.
+policy-CaptivePortal = Ieslēgt vai izslēgt caurlaides portālu atbalstu.
+policy-CertificatesDescription = Pievienojiet sertifikātus vai izmantojiet iebūvētos sertifikātus.
+policy-ContentAnalysis = Ieslēgt vai izslēgt savienojumu ar datu zudumu novēršanas aģentu.
+policy-Cookies = Atļaujiet vai aizliedziet vietnēm iestatīt sīkdatnes.
+# Containers in this context is referring to container tabs in Firefox.
+policy-Containers = Iestatīt ar konteineriem saistītās politikas.
+policy-DisableAccounts = Izslēgt ar kontu saistītus pakalpojumus, tostarp sinhronizāciju.
+policy-DisabledCiphers = Liegt šifrus.
+policy-DefaultDownloadDirectory = Iestatīt noklusējuma lejupielādes mapi.
+policy-DisableAppUpdate = Neļaut pārlūkam atjaunināties.
+policy-DisableBuiltinPDFViewer = Izslēgt PDF.js, { -brand-short-name } iebūvēto PDF lasītāju.
+policy-DisableDefaultBrowserAgent = Liegt noklusējuma pārlūka aģentam veikt jebkādas darbības. Attiecas tikai uz Windows; citās platformās aģentu nav.
+policy-DisableDeveloperTools = Bloķēt pieeju izstrādātāju rīkiem.
+policy-DisableEncryptedClientHello = Izslēgt TLS funkcijas Encrypted Client Hello (ECH) izmantošanu.
+policy-DisableFeedbackCommands = Atspējo komandas, kas var nosūtīt atsauksmes no Palīdzības izvēlnes (Sūtīt atsauksmi un Ziņot par krāpnieku lapu).
+policy-DisableFirefoxAccounts = Izslēgt uz { -fxaccount-brand-name } balstītus pakalpojumus, tostarp Sync.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Izslēgt ar kontu saistītus pakalpojumus, tostarp sinhronizāciju.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Izslēgt Waterfox ekrānuzņēmumu iespēju.
+policy-DisableFirefoxStudies = Liedz { -brand-short-name } veikt pētījumus.
+policy-DisableForgetButton = Liedz pieeju Aizmirst pogai.
+policy-DisableFormHistory = Neatceras meklēšanu un formu vēsturi.
+policy-DisablePrimaryPasswordCreation = Ja iestatīts, nevar izveidot galveno paroli.
+policy-DisablePasswordReveal = Liegt izpaust paroles pie saglabātajiem lietotājvārdiem.
+policy-DisablePocket2 = Izslēgt iespēju saglabāt tīmekļlapas { -pocket-brand-name }.
+policy-DisablePrivateBrowsing = Izslēgt privāto pārūkošanu.
+policy-DisableProfileImport = Izslēgt izvēlnes vienumu datu importēšanai no cita pārlūka.
+policy-DisableProfileRefresh = Izslēgt { -brand-short-name } atsvaidzināšanas pogu lapā about:support
+policy-DisableSafeMode = Deaktivē iespēju pārstartēties drošajā režīmā. Piezīme: Shift taustiņa lietošanu, lai ieslēgtos drošajā režīmā ir iespējams atslēgt vienīgi Windows platformā.
+policy-DisableSecurityBypass = Liedz lietotājam apiet noteiktus drošības brīdinājumus.
+policy-DisableSetAsDesktopBackground = Atspējot izvēlnes iespēju "Iestatīt kā darbvirsmas fona attēlu" attēliem.
+policy-DisableSystemAddonUpdate = Liedz pārlūkam atjaunināt un uzstādīt sistēmas papildinājumus.
+policy-DisableTelemetry = Atslēdz telemetriju.
+policy-DisableThirdPartyModuleBlocking = Liegt lietotājam bloķēt trešās puses moduļus, kas tiek injicēti { -brand-short-name } procesā.
+policy-DisplayBookmarksToolbar = Pēc noklusējuma rāda grāmatzīmju rīkjoslu.
+policy-DisplayMenuBar = Pēc noklusējuma rāda izvēlnes joslu.
+policy-DNSOverHTTPS = DNS konfigurēšana, izmantojot HTTPS.
+policy-DontCheckDefaultBrowser = Atspējot noklusējuma pārlūka pārbaudi pēc palaišanas.
+policy-DownloadDirectory = Iestatīt un noslēgt lejupielādes mapi.
+# “lock” means that the user won’t be able to change this setting
+policy-EnableTrackingProtection = Iespējot vai atspējot satura aizturēšanu un pēc izvēles to aizslēgt.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Ieslēgt vai izslēgt šifrētos multivides paplašinājumus un pēc izvēles tos noslēgt.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Izslēgt brīdinājumus, kuru pamatā ir datņu paplašinājumi noteiktiem datņu tipiem domēnos.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs.
+policy-Extensions = Uzstāda, noņem vai slēdz paplašinājumus. Uzstādīšanas iespējai kā parametri ir jānorāda URL vai ceļi. Noņemšanas un slēgšanas iespējām - paplašinājuma identifikators.
+policy-ExtensionSettings = Pārvaldīt visus paplašinājumu uzstādīšanas aspektus.
+policy-ExtensionUpdate = Ieslēgt vai izslēgt automātisku paplašinājumu atjaunināšanu.
+policy-FirefoxHome2 = Konfigurēt { -firefox-home-brand-name }.
+policy-FirefoxSuggest = Konfigurēt { -firefox-suggest-brand-name }.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Piespiest skatīties iekšējā tīkla vietnēs, nevis meklēt, kad adreses joslā ieraksta vienu vārdu.
+policy-Handlers = Konfigurēt noklusējuma lietotņu apstrādātājus.
+policy-HardwareAcceleration = Ja atslēgts (false), atslēdz aparatūras paātrināšanu.
+# “lock” means that the user won’t be able to change this setting
+policy-Homepage = Iestata un iespējams fiksē sākuma lapu.
+policy-HttpAllowlist = Izcelsmes, kuras netiks uzlabotas uz HTTPS.
+policy-HttpsOnlyMode = Atļaut ieslēgt režīmu Tikai-HTTPS.
+policy-InstallAddonsPermission = Ļauj konkrētām lapām instalēt papildinājumus.
+policy-LegacyProfiles = Izslēgt funkciju, kas katrai instalācijai nodrošina atsevišķu profilu.
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Ieslēgt mantoto noklusējuma SameSite sīkdatņu uzvedības iestatījumu.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Noteiktajās vietnēs atgriezties pie mantotās SameSite uzvedības sīkdatnēm.
+
+##
+
+policy-LocalFileLinks = Ļaut norādītajām vietnēm izveidot saites uz vietējām datnēm.
+policy-ManagedBookmarks = Konfigurē administratora pārvaldīto grāmatzīmju sarakstu, kuras lietotājs nevar mainīt.
+policy-ManualAppUpdateOnly = Atļaut tikai manuālus atjauninājumus un nepaziņojiet lietotājam par atjauninājumiem.
+policy-PrimaryPassword = Pieprasīt vai aizliegt izmantot galveno paroli.
+policy-PrintingEnabled = Ieslēgt vai izslēgt drukāšanu.
+policy-NetworkPrediction = Ieslēgt vai izslēgt tīkla paredzēšanu (DNS priekšpiegādi).
+policy-NewTabPage = Ieslēgt vai izslēgt lapu ”jauna cilne“.
+policy-NoDefaultBookmarks = Deaktivē standarta { -brand-short-name } grāmatzīmju izveidi, piemēram Biežāk izmantotās, Jaunākie tagi. Piezīme: Šī politika būs efektīva vienīgi, ja ir aktivēta pirms pirmās pārlūka palaišanas.
+policy-OfferToSaveLogins = Iestata vērtību { -brand-short-name } paroļu saglabāšanas iespējai. Iespējamās vērtības it gan true gan false.
+policy-OfferToSaveLoginsDefault = Iestatīt noklusējuma vērtību, vai ļaut { -brand-short-name } piedāvāt atcerēties saglabātos lietotājvārdus un paroles. Tiek pieņemtas vērtības “patiess” un “aplams”.
+policy-OverrideFirstRunPage = Pārraksta pirmās palaišanas lapu. Iestatiet šeit tukšumu, lai deaktivētu pirmās palaišanas lapu.
+policy-OverridePostUpdatePage = Pārraksta pēc atjauninājumu "Kas jauns" lapu. Iestatiet šeit tukšumu, lai deaktivētu šo lapu.
+policy-PasswordManagerEnabled = Ieslēgt paroļu saglabāšanu paroļu pārvaldniekā.
+policy-PasswordManagerExceptions = Liegt { -brand-short-name } saglabāt paroles noteiktām vietnēm.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Ieslēgt pēckvantu atslēgas līgumu TLS savienojumiem.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Izslēgt vai konfigurēt PDF.js, iebūvēto { -brand-short-name } PDF skatītāju.
+policy-Permissions2 = Konfigurēt kameras, mikrofona, atrašanās vietas, paziņojumu un automātiskās atskaņošanas atļaujas.
+policy-PictureInPicture = Ieslēgt vai izslēgt funkciju attēls-attēlā.
+policy-PopupBlocking = Ļaut zināmām lapām pēc noklusējuma rādīt uznirstošos logus.
+policy-Preferences = Iestatīt un noslēgt perefreneču apakškopu vērtības.
+policy-PrivateBrowsingModeAvailability = Iestatīt privātās pārlūkošanas režīma pieejamību.
+policy-PromptForDownloadLocation = Lejuplādējot vaicāt, kur saglabāt datnes.
+policy-Proxy = Konfigurē starpniekservera iestatījumus.
+policy-RequestedLocales = Iestatiet pieejamo valodu sarakstu prioritātes secībā.
+policy-SanitizeOnShutdown2 = Izslēdzot notīrīt navigācijas datus.
+policy-SearchBar = Iestata noklusēto meklēšanas joslas atrašanos. Šis joprojām ļauj lietotājam to mainīt.
+policy-SearchEngines = Konfigurē meklētāju iestatījumus. Šī politika ir pieejama vienīgi pagarinātā atbalsta laidienos (ESR).
+policy-SearchSuggestEnabled = Ieslēgt vai izslēgt meklēšanas ieteikumus.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Pievienot vai dzēst PKCS #11 moduļus.
+policy-ShowHomeButton = Rīkjoslā rādīt sākuma pogu.
+policy-SSLVersionMax = Iestatīt maksimālo SSL versiju.
+policy-SSLVersionMin = Iestatīt minimālo SSL versiju.
+policy-StartDownloadsInTempDirectory = Piespiest lejupielādes sākt lokālā pagaidu vietā, nevis noklusējuma lejupielāžu direktorijā.
+policy-SupportMenu = Palīdzības izvēlnē pievienot pielāgotu atbalsta izvēlnes vienumu.
+policy-TranslateEnabled = Ieslēgt vai izslēgt tīmekļa lapas tulkošanu.
+policy-UserMessaging = Nerādīt lietotājam noteiktus ziņojumus.
+policy-UseSystemPrintDialog = Drukāt, izmantojot sistēmas drukāšanas dialoglodziņu.
+# “format” refers to the format used for the value of this policy.
+policy-WebsiteFilter = Bloķēt lapu apmeklēšanu. Sīkāka informācija par formātu pieejama dokumentācijā.
+policy-Windows10SSO = Atļaut Windows vienreizējo ierakstīšanos Microsoft, darba un mācību iestādes kontiem.

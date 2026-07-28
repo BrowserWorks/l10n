@@ -1,0 +1,428 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+pane-general-title = Gyɛnɛral
+category-general =
+    .tooltiptext = { pane-general-title }
+pane-search-title2 = Hwehwɛ
+    .title = Hwehwɛ
+pane-search-title = Hwehwɛ
+category-search =
+    .tooltiptext = { pane-search-title }
+category-privacy =
+    .tooltiptext = { pane-privacy-title }
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
+focus-search =
+    .key = f
+close-button =
+    .aria-label = To-mu
+
+## Browser Restart Dialog
+
+feature-enable-requires-restart = Ɛwɔ sɛ { -brand-short-name } san hyɛ ase de sɔ adeyɛ yi.
+feature-disable-requires-restart = Ɛwɔ sɛ { -brand-short-name } san hyɛ ase de dum adeyɛ yi.
+should-restart-title = San hyɛ { -brand-short-name } ase
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
+
+## Preferences UI Search Results
+
+
+## General Section
+
+startup-header = Nhyɛase
+is-default = { -brand-short-name } yɛ wo brawsa a ɛyɛ difɔlt seisei
+tabs-group-header2 =
+    .label = Ntab
+tabs-group-header = Ntab
+show-tabs-in-taskbar =
+    .label = Kyerɛ ntab priviw wɔ Windows taskbaa ne so
+    .accesskey = b
+startup-group =
+    .label = Nhyɛase
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
+
+##
+
+
+## General Section - Language & Appearance
+
+advanced-fonts =
+    .label = Akɔenim…
+    .accesskey = A
+choose-language-description = Paw kasa a wo pɛ sɛ wo de kyerɛ nkrataafa
+choose-button =
+    .label = Paw…
+    .accesskey = w
+translate-exceptions =
+    .label = Ngyegye…
+    .accesskey = g
+
+## General Section - Files and Applications
+
+download-save-files-header =
+    .label = Sie mfael kɔ
+download-save-where-3 =
+    .aria-label = Sie mfael kɔ
+download-header = Ntwe
+download-save-where = Sie mfael kɔ
+    .accesskey = e
+download-choose-folder =
+    .label =
+        { PLATFORM() ->
+            [macos] Paw…
+           *[other] Brawse…
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] w
+           *[other] a
+        }
+applications-type-column =
+    .label = Emu nsɛm tebea
+    .accesskey = t
+applications-type-heading = Emu nsɛm tebea
+applications-action-column =
+    .label = Dwumadi
+    .accesskey = D
+applications-action-heading = Dwumadi
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } fael
+applications-action-save =
+    .label = Fa fael no sie
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Fa { $app-name } yɛ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Fa { $app-name } (difɔlt)
+applications-use-other =
+    .label = Fa foforo…
+applications-select-helper = Paw ɔboafo aplekehyen
+applications-manage-app =
+    .label = Aplekehyen nhunumu…
+applications-always-ask =
+    .label = Bisa bere biara
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Fa { $plugin-name } yɛ (wɔ { -brand-short-name })
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+## Firefox updates
+
+update-application-use-service =
+    .label = Fa ndaekyiri asom no instɔɔle ntoso bi
+    .accesskey = n
+
+## About Firefox
+
+
+## Firefox updates
+
+
+## Firefox support
+
+
+## General Section - Performance
+
+performance-allow-hw-accel =
+    .label = Fa hardware aksɛlɛrehyɛn di dwuma bere a ɛda hɔ biara
+    .accesskey = h
+
+## Accessibility page
+
+browsing-title = Ɛrebrawse
+browsing-use-autoscroll =
+    .label = Yɛ otomatik mpia
+    .accesskey = o
+browsing-use-smooth-scrolling =
+    .label = Yɛ apia tɔtee
+    .accesskey = p
+browsing-use-cursor-navigation =
+    .label = Fa kɛɛsa akee nom kyini akrataafa mu
+    .accesskey = k
+browsing-group =
+    .label = Ɛrebrawse
+
+## Accessibility page
+
+
+## General Section - Proxy
+
+network-proxy-connection-settings =
+    .label = Nhyehyɛe…
+    .accesskey = y
+
+## Home Section
+
+
+## Home Section - Default Browser
+
+
+## Custom Homepage subpage
+
+# This string has a special case for '1' and [other] (default). If necessary for
+# your language, you can add {$tabCount} to your translations and use the
+# standard CLDR forms, or only use the form for [other] if both strings should
+# be identical.
+use-current-pages =
+    .label =
+        { $tabCount ->
+            [1] Fa Krataafa Seiseiara di dwuma
+           *[other] Fa Nkrataafa Nseiseiara di dwuma
+        }
+    .accesskey = S
+choose-bookmark =
+    .label = Fa Bukmaak di dwuma…
+    .accesskey = B
+
+## Home Section - Home Page Customization
+
+
+## Custom Homepage subpage
+
+
+## Home Section - Firefox Home Content Customization
+
+
+## Home Section - Firefox Home Content Customization
+
+
+##
+
+
+## Search Section
+
+search-remove-engine =
+    .label = Yi
+    .accesskey = Y
+# This warning is displayed when the chosen keyword is already in use
+# ('Duplicate' is an adjective)
+search-keyword-warning-title = San kyerɛw Kasafua-titiriw
+# Variables:
+#   $name (String) - Name of a search engine.
+search-keyword-warning-engine = Wo apaw kasafua-titiriw a "{ $name }" de redi dwuma seiseiara. Yɛsrɛ wo sɛ paw foforo.
+search-keyword-warning-bookmark = Wo apaw kasafua-titiriw a bukmaak de redi dwuma seiseiara. Yɛsrɛ wo sɛ paw foforo.
+
+## Containers Section
+
+
+## Account and sync
+
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
+
+## Firefox account - Signed in
+
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+
+##
+
+
+## Sync section - enabling or disabling sync.
+
+
+## The list of things currently syncing.
+
+
+## The "Choose what to sync" dialog.
+
+sync-engine-bookmarks =
+    .label = Mbukmaak
+    .accesskey = m
+sync-engine-history =
+    .label = Abakɔsɛm
+    .accesskey = s
+
+## The device name controls.
+
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+
+## Privacy Section
+
+
+## Privacy Section - Logins and Passwords
+
+
+## Privacy Panel Settings
+
+forms-exceptions =
+    .label = Ngyegye…
+    .accesskey = g
+forms-master-pw-change =
+    .label = Sesa Ehintasɛmfua Panin…
+    .accesskey = m
+forms-master-pw-fips-desc = Ehintasɛmfua nsakrae dii nkugu
+
+## Privacy Panel Settings
+
+
+## OS Authentication dialog
+
+
+## Privacy section - Autofill
+
+
+## Privacy Section - History
+
+history-remember-option-all =
+    .label = Kae abakɔsɛm
+history-remember-option-never =
+    .label = Mma nnkae abakɔsɛm biara
+history-remember-option-custom =
+    .label = Hyehyɛ abakɔsɛm ankorankorɛ
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } de nhyehyɛe te sɛ brawsen praevet de bedi dwuma, na ɔrennkae wo abakɔsɛm biara wɔ bere a wo brawse Wɛb no so.
+history-dontremember-description = { -brand-short-name } de nhyehyɛe te sɛ brawsen praevet de bedi dwuma, na ɔrennkae wo abakɔsɛm biara wɔ bere a wo brawse Wɛb no so.
+history-private-browsing-permanent =
+    .label = Fa tebea praevet a wɔde brawse di dwuma abere biara
+    .accesskey = p
+history-remember-search-option =
+    .label = Kae abakɔsɛm fa nhwehwɛ ne fɔɔm ho
+    .accesskey = f
+history-clear-on-close-option =
+    .label = Pepa abakɔsɛm sɛ { -brand-short-name } to mu a
+    .accesskey = a
+history-clear-on-close-settings =
+    .label = Nhyehyɛe…
+    .accesskey = h
+
+## Privacy Section - Site Data
+
+
+## Privacy Section - Cookie Banner Handling
+
+
+## Privacy Section - Cookie Banner Blocking
+
+
+## Search Section
+
+
+## Privacy Section - Content Blocking
+
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
+
+## Privacy Section - Tracking
+
+
+## Privacy Section - Permissions
+
+permissions-block-popups =
+    .label = Siw ntokuro mpɔpap
+    .accesskey = S
+permissions-addon-exceptions =
+    .label = Ngyegye…
+    .accesskey = e
+
+## Privacy Section - Data Collection
+
+
+## Privacy Section - Website Advertising Preferences
+
+
+## Privacy Section - Security
+##
+## It is important that wording follows the guidelines outlined on this page:
+## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
+
+
+## Privacy Section - Certificates
+
+certs-header = Abasobɔde nkrataa
+certs-devices-enable-fips = Ekyisobozisa FIPS
+
+## Privacy Section - HTTPS-Only
+
+
+## DoH Section
+
+
+## Connection and software security section
+
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Dɛsktɔp
+downloads-folder-name = Atwe siane
+choose-download-folder-title = Paw atwe folda:
+
+## Appearance page
+
+
+## AI controls page
+
+
+## Privacy and security status card
+
+
+## Enhanced Tracking Protection (ETP) status section
+
+
+## Warnings section
+

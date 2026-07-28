@@ -1,0 +1,98 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+report-broken-site-mainview-title = Informar sitio que no carga
+report-broken-site-panel-header =
+    .label = Informar sitio que no carga
+    .title = Informar sitio que no carga
+report-broken-site-panel-intro-text = Tu reporte nos ayuda a comprender y solucionar los problemas en { -brand-product-name } para que sea una experiencia mejor para todos.
+report-broken-site-panel-learn-more-link = Más información
+report-broken-site-panel-url-label = URL del sitio que no carga
+report-broken-site-panel-reason-intro-text = ¿Qué es lo que no funciona?
+report-broken-site-panel-reason-load-moz-box-button =
+    .label = El sitio no carga
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout-moz-box-button =
+    .label = No puedo pagar ni comprar
+report-broken-site-panel-reason-slow-moz-box-button =
+    .label = El sitio esta lento
+report-broken-site-panel-reason-media-moz-box-button =
+    .label = El video no se reproduce ni carga
+report-broken-site-panel-reason-content-moz-box-button =
+    .label = Contenido faltante
+report-broken-site-panel-reason-account-moz-box-button =
+    .label = No puedo conectarme ni registrarme
+report-broken-site-panel-reason-adblocker-moz-box-button =
+    .label = El sitio solicitó desactivar el bloqueador de anuncios
+report-broken-site-panel-reason-notsupported-moz-box-button =
+    .label = El navegador no es compatible o está bloqueado
+report-broken-site-panel-reason-deceptive-moz-box-button =
+    .label = El sitio es engañoso
+report-broken-site-panel-reason-other-moz-box-button =
+    .label = Otra cosa
+report-broken-site-panel-instructions-other = Describe el problema en detalle para ayudarnos a investigarlo.
+report-broken-site-panel-instructions-other-optional = Describe el problema en detalle para ayudarnos a investigarlo. (opcional)
+report-broken-site-panel-description2 =
+    .placeholder = ¿Qué sucedió? ¿Qué esperabas que sucediera? Por favor, proporciona los pasos para reproducir el problema.
+report-broken-site-panel-send-more-info-button =
+    .label = Enviar más información
+report-broken-site-panel-intro = Ayuda a que { -brand-product-name } sea mejor para todos. { -vendor-short-name } utiliza la información que envías para solucionar problemas del sitio web.
+report-broken-site-panel-url = URL
+report-broken-site-panel-reason-label = ¿Qué es lo que falla?
+report-broken-site-panel-reason-optional-label = ¿Qué es lo que falla? (opcional)
+report-broken-site-panel-reason-choose =
+    .label = Elige el motivo
+report-broken-site-panel-reason-load =
+    .label = El sitio no carga
+# These terms are referring to ecommerce websites
+report-broken-site-panel-reason-checkout =
+    .label = No puedo pagar ni comprar
+report-broken-site-panel-reason-slow2 =
+    .label = El sitio esta lento
+report-broken-site-panel-reason-media2 =
+    .label = El video no se reproduce ni carga
+report-broken-site-panel-reason-content2 =
+    .label = Contenido faltante
+report-broken-site-panel-reason-account2 =
+    .label = No puedo conectarme ni registrarme
+report-broken-site-panel-reason-adblocker2 =
+    .label = El sitio solicitó desactivar el bloqueador de anuncios
+report-broken-site-panel-reason-notsupported =
+    .label = El navegador no es compatible o está bloqueado
+report-broken-site-panel-reason-other =
+    .label = Otra cosa
+report-broken-site-panel-description-label = Describe el problema
+report-broken-site-panel-description-optional-label = Describe el problema (opcional)
+report-broken-site-panel-send-more-info-link = Enviar más información
+report-broken-site-panel-button-cancel =
+    .label = Cancelar
+report-broken-site-panel-button-okay =
+    .label = Confirmar
+report-broken-site-panel-button-send-report =
+    .label = Enviar informe
+report-broken-site-panel-button-send =
+    .label = Enviar
+report-broken-site-panel-report-sent-label = Tu reporte ha sido enviado
+report-broken-site-panel-report-sent-header =
+    .label = Tu reporte ha sido enviado
+    .title = Tu reporte ha sido enviado
+report-broken-site-panel-report-sent-text = Gracias por ayudar a { -brand-product-name } a hacer que la Web sea más abierta, accesible y mejor para todos.
+report-broken-site-panel-invalid-url-label = Por favor, ingresa una URL válida
+# $minLength (number) - The minimum number of characters required in the description textarea.
+report-broken-site-panel-invalid-description-label =
+    { $minLength ->
+        [one] Por favor, introduce al menos { $minLength } carácter
+       *[other] Por favor, introduce al menos { $minLength } caracteres
+    }
+report-broken-site-panel-screenshot-label =
+    .label = Enviar una captura de pantalla
+report-broken-site-panel-blocked-trackers-label2 =
+    .label = Enviar lista de elementos bloqueados por la protección de seguimiento.
+report-broken-site-panel-url-input-label =
+    .aria-label = URL de la página que se estás reportando
+report-broken-site-panel-missing-reason-label = Por favor, elige un motivo
+report-broken-site-panel-preview-button =
+    .label = Previsualizar reporte
+report-broken-site-panel-preview-header2 =
+    .title = Previsualizar reporte

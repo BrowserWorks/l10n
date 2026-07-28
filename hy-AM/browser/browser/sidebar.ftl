@@ -1,0 +1,231 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+menu-view-genai-chat =
+    .label = ԱԲ չաթբոտ
+menu-view-contextual-password-manager =
+    .label = Գաղտնաբառեր
+sidebar-options-menu-button =
+    .title = Բացել ցանկը
+
+## Labels for sidebar history panel
+
+# Variables:
+#   $date (string) - Date to be formatted based on locale
+sidebar-history-date-today =
+    .heading = Այսօր՝ { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-yesterday =
+    .heading = Երեկ՝ { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-this-month =
+    .heading = { DATETIME($date, dateStyle: "full") }
+sidebar-history-date-prev-month =
+    .heading = { DATETIME($date, month: "long", year: "numeric") }
+sidebar-history-delete =
+    .title = Ջնջել պատմությունից
+sidebar-history-clear =
+    .label = Մաքրել պատմությունը
+sidebar-history-sort-by-heading-menucaption =
+    .label = Տեսակավարել ըստ՝
+sidebar-history-sort-by-heading = Տեսակավարել ըստ՝
+sidebar-history-sort-option-date =
+    .label = Ամսաթվի
+sidebar-history-sort-option-site =
+    .label = Կայքի
+sidebar-history-sort-option-date-and-site =
+    .label = Ամսաթվի և կայքի
+sidebar-history-sort-option-last-visited =
+    .label = Վերջին այցելության
+
+## Labels for sidebar search
+
+# "Search" is a noun (as in "Results of the search for")
+# Variables:
+#   $query (String) - The search query used for searching through browser history.
+sidebar-search-results-header =
+    .heading = «{ $query }»-ի որոնման արդյունքները
+
+## Labels for sidebar customize panel
+
+sidebar-customize-extensions-header = Կողագոտու ընդլայնումներ
+sidebar-customize-firefox-tools-header =
+    .label = { -brand-product-name }--ի գործիքներ
+sidebar-customize-firefox-settings = Կառավարել { -brand-short-name }-ի կարգավորումները
+sidebar-vertical-tabs =
+    .label = Ուղղահայաց ներդիրներ
+sidebar-settings =
+    .label = Կողագոտու կարգավորումներ
+sidebar-hide-tabs-and-sidebar =
+    .label = Թաքցնել ներդիրները և կողագոտին
+sidebar-show-on-the-right =
+    .label = Տեղափոխել Կողագոտին աջ
+sidebar-show-on-the-left =
+    .label = Տեղափոխել Կողագոտին ձախ
+# Option to automatically expand the collapsed sidebar when the mouse pointer
+# hovers over it.
+expand-sidebar-on-hover =
+    .label = Ընդարձակել կողագոտին վրան պահելիս
+
+## Labels for sidebar context menu items
+
+sidebar-context-menu-manage-extension =
+    .label = Կառավարել ընդլայնումը
+sidebar-context-menu-remove-extension =
+    .label = Հեռացնել ընդլայնումը
+sidebar-context-menu-report-extension =
+    .label = Զեկուցել ընդլայնման մասին
+sidebar-context-menu-open-in-tab =
+    .label = Բացել նոր ներդիրում
+sidebar-context-menu-open-in-container-tab =
+    .label = Բացել նոր պարունակ ներդիրում
+sidebar-context-menu-open-in-window =
+    .label = Բացել նոր պատուհանում
+sidebar-context-menu-open-in-private-window =
+    .label = Բացել նոր գաղտնի պատուհանում
+sidebar-context-menu-forget-site =
+    .label = Մաքրել բոլոր տվյալները վեբ կայքի համար…
+sidebar-context-menu-bookmark-tab =
+    .label = Էջանշել ներդիրը…
+sidebar-context-menu-copy-link =
+    .label = Պատճենել հղումը
+sidebar-context-menu-hide-sidebar =
+    .label = Թաքցնել կողագոտին
+sidebar-context-menu-enable-vertical-tabs =
+    .label = Միացնել ուղղահայաց ներդիրները
+sidebar-context-menu-customize-sidebar =
+    .label = Հարմարեցնել կողագոտին
+# Variables:
+#   $deviceName (String) - The name of the device the user is closing a tab for
+sidebar-context-menu-close-remote-tab =
+    .label = Փակել ներդիրը { $deviceName }-ում
+sidebar-context-menu-remove-extension2 =
+    .label = Հեռացնել { -brand-short-name }-ից
+sidebar-context-menu-unpin-extension =
+    .label = Հեռացնել կողագոտուց
+
+## Labels for sidebar history context menu items
+
+sidebar-history-context-menu-delete-page-2 =
+    .label = Ջնջել էջը պատմությունից
+sidebar-history-context-menu-bookmark-page =
+    .label = Էջանշել էջը…
+sidebar-history-context-menu-delete-pages =
+    .label = Ջնջել էջերը պատմությունից
+
+## Labels for sidebar menu items.
+
+sidebar-menu-genai-chat-label =
+    .label = ԱԲ չաթբոտ
+sidebar-menu-history-label =
+    .label = Պատմություն
+sidebar-menu-synced-tabs-label =
+    .label = Ներդիրներ այլ սարքերից
+sidebar-menu-bookmarks-label =
+    .label = Էջանիշեր
+sidebar-menu-customize-label =
+    .label = Հարմարեցնել կողագոտին
+sidebar-menu-contextual-password-manager-label =
+    .label = Գաղտնաբառեր
+sidebar-menu-more-tools-label =
+    .label = Լրացուցիչ գործիքներ
+
+## Tooltips for sidebar menu items.
+
+# The tooltip to show over the history icon, when history is not currently showing.
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-menu-open-history-tooltip = Բացել պատմությունը ({ $shortcut })
+# The tooltip to show over the history icon, when history is currently showing.
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-menu-close-history-tooltip = Փակել պատմությունը ({ $shortcut })
+# The tooltip to show over the bookmarks icon, when bookmarks is not currently showing.
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-menu-open-bookmarks-tooltip = Բացել էջանիշները ({ $shortcut })
+# The tooltip to show over the bookmarks icon, when bookmarks is currently showing.
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-menu-close-bookmarks-tooltip = Փակել էջանիշները ({ $shortcut })
+
+## Tooltips displayed over the AI chatbot icon.
+## Variables:
+##   $shortcut (String) - The OS specific keyboard shortcut.
+##   $provider (String) - The name of the AI chatbot provider (if available).
+
+sidebar-menu-open-ai-chatbot-tooltip-generic = Բացել ԱԲ չաթբոտը ({ $shortcut })
+sidebar-menu-open-ai-chatbot-provider-tooltip = Բացել { $provider } ({ $shortcut })
+sidebar-menu-close-ai-chatbot-tooltip-generic = Բացել ԱԲ չաթբոտը ({ $shortcut })
+sidebar-menu-close-ai-chatbot-provider-tooltip = Փակել { $provider } ({ $shortcut })
+
+## Headings for sidebar menu panels.
+
+sidebar-menu-customize-header =
+    .heading = Հարմարեցնել կողագոտին
+sidebar-menu-history-header =
+    .heading = Պատմություն
+sidebar-menu-syncedtabs-header =
+    .heading = Ներդիրներ այլ սարքերից
+# Heading shown at the top of the Open Tabs sidebar panel. "Open tabs"
+# refers to the tabs currently open in the browser.
+sidebar-menu-open-tabs-header =
+    .heading = Բացել ներդիրները
+sidebar-menu-cpm-header =
+    .heading = Գաղտնաբառեր
+sidebar-panel-header-close-button =
+    .tooltiptext = Փակել
+
+## Labels for sidebar bookmarks panel folder names.
+
+sidebar-bookmarks-folder-other = Այլ Էջանիշեր
+sidebar-bookmarks-folder-mobile = Բջջային էջանիշեր
+
+## Titles for sidebar menu panels.
+
+sidebar-customize-title = Հարմարեցնել կողագոտին
+sidebar-history-title = Պատմություն
+sidebar-syncedtabs-title = Ներդիրներ այլ սարքերից
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = Ամրացված ներդիրներ
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = Պատուհան՝ { $winID }
+
+## Context for closing synced tabs when hovering over the items
+
+# Context for hovering over the close tab button that will
+# send a push to the device to close said tab
+# Variables:
+#   $deviceName (String) - the name of the device the user is closing a tab for
+synced-tabs-context-close-tab-title =
+    .title = Փակել ներդիրը { $deviceName }-ում
+show-sidebars =
+    .tooltiptext = Ցուցադրել կողագոտիները
+    .label = Կողագոտիներ
+
+## Tooltips for the sidebar toolbar widget.
+
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-widget-expand-sidebar2 =
+    .tooltiptext = Ընդարձակել կողագոտին ({ $shortcut })
+    .label = Կողագոտիներ
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-widget-show-sidebar2 =
+    .tooltiptext = Ցուցադրել ({ $shortcut }) կողագոտին
+    .label = Կողագոտիներ
+# Variables:
+#   $shortcut (String) - The OS specific keyboard shortcut.
+sidebar-widget-hide-sidebar2 =
+    .tooltiptext = Թաքցնել կողագոտին ({ $shortcut })
+    .label = Կողագոտիներ
+# Promotional message displayed in the expanded sidebar state for Vertical Tabs
+# users who do not have any pinned tabs. Indicates that they can drop tabs in
+# this area to pin them.
+sidebar-pins-promo-text = Քաշեք կարևոր ներդիրներն այստեղ՝ դրանք հասանելի պահելու համար

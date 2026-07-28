@@ -1,0 +1,268 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# This string is used to name the folder that users will save backups to.
+# "Restore" is an action and intended for prompting users to select this folder
+# when following backup restoration steps. Please only include characters that
+# can be used for folders. Invalid characters will be automatically stripped out
+# or replaced with underscores.
+backup-folder-name = Restaurar { -brand-product-name }
+# This string is used for the generated file that will be stored within the
+# backup-folder-name folder. It will have the profile name and an encoding of
+# the backup date appended to it, followed by `.html`. Please only include
+# characters that can be used for filenames. Invalid characters will be
+# automatically stripped out or replaced with underscores.
+#
+# This is an example of what the final filename might look like after the
+# profile name and backup date are appended to it:
+#
+# FirefoxBackup_default_20240606-1830.html
+backup-file-name = CopiaDe{ -brand-product-name }
+settings-data-backup-header2 =
+    .label = Copia de seguridad
+    .description = Protección automática para marcadores, historial y otros datos.
+settings-data-backup-toggle = Administrar respaldo
+settings-data-backup-toggle-on2 =
+    .label = Activar copia de seguridad
+settings-data-backup-toggle-off2 =
+    .label = Desactivar copia de seguridad
+settings-data-backup-trigger-button = Respaldar ahora
+settings-data-backup-in-progress-button = Copia de seguridad en proceso…
+settings-data-backup-in-progress-message =
+    .message = Copia de seguridad en proceso…
+settings-data-backup-last-backup-date = Última copia de seguridad: { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") }
+settings-data-backup-scheduled-backups-on2 =
+    .label = Copia de seguridad ACTIVADA
+settings-data-backup-scheduled-backups-off2 =
+    .label = Copia de seguridad DESACTIVADA
+# "Location" refers to the folder where backups are being written to.
+settings-data-backup-last-backup-location2 =
+    .label = Ubicación de la copia de seguridad
+settings-data-backup-last-backup-location-show-in-folder = Mostrar en carpeta
+settings-data-backup-last-backup-location-edit = Editar…
+settings-data-create-backup-error = Hubo un error creando la copia de seguridad el { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") }
+settings-sensitive-data-encryption-description = Haga una copia de seguridad de contraseñas y métodos de pago, además de mantener todos los datos seguros con cifrado.
+settings-data-toggle-encryption-label2 =
+    .label = Respaldar los datos sensibles
+    .description = Copia de seguridad de contraseñas y métodos de pago, además de mantener todos los datos seguros con cifrado.
+# Variables:
+#   $fileName (String) - The file name of the last backup that was created.
+settings-data-backup-last-backup-filename = Nombre de archivo: { $fileName }
+settings-data-backup-restore-scheduled-on =
+    .label = Restaurar los datos
+    .description = Recupere los datos de { -brand-product-name } desde la última vez que se hizo una copia de seguridad.
+settings-data-backup-restore-scheduled-off =
+    .label = Restaurar los datos
+    .description = Use una copia de seguridad de { -brand-product-name } desde otro dispositivo para restaurar los datos.
+
+##
+
+settings-sensitive-data =
+    .label = Datos sensibles
+settings-data-toggle-encryption-support-link = Conocer más
+settings-data-change-password2 =
+    .label = Cambiar contraseña
+
+## These strings are displayed in a modal when users want to turn on scheduled backups.
+
+turn-on-scheduled-backups-header = Activar copia de seguridad
+turn-on-scheduled-backups-description = { -brand-short-name } creará una captura de sus datos cada 24 horas. Se pueden restaurar si hay un problema o si compra un nuevo dispositivo.
+turn-on-scheduled-backups-support-link = ¿Qué será respaldado?
+# "Location" refers to the save location or a folder where users want backups stored.
+turn-on-scheduled-backups-location-label = Ubicación
+# Variables:
+#   $recommendedFolder (String) - Name of the recommended folder for saving backups
+turn-on-scheduled-backups-location-default-folder =
+    .value = { $recommendedFolder } (recomendado)
+turn-on-scheduled-backups-location-choose-folder =
+    .value = Elegir una ubicación
+turn-on-scheduled-backups-location-choose-button =
+    { PLATFORM() ->
+        [macos] Seleccionar…
+       *[other] Examinar…
+    }
+turn-on-scheduled-backups-encryption-label = Respaldar los datos sensibles
+turn-on-scheduled-backups-encryption-create-password-label = Contraseña
+# Users will be prompted to re-type a password, to ensure that the password is entered correctly.
+turn-on-scheduled-backups-encryption-repeat-password-label = Repetir contraseña
+turn-on-scheduled-backups-cancel-button = Cancelar
+turn-on-scheduled-backups-confirm-button = Activar copia de seguridad
+# Tell the user there was an error accessing the user's selected backup
+# folder. The folder may be invalid or inaccessible.
+turn-on-scheduled-backups-error-file-system = Hubo un problema con la carpeta de respaldo seleccionada. Elija una carpeta diferente e intente nuevamente.
+turn-on-scheduled-backups-error-default-dir-denied = No pudimos acceder a la carpeta de respaldo. Pruebe elegir una nueva ubicación.
+backup-error-file-system = Hubo un problema con la carpeta de respaldo seleccionada mientras se hacía la copia de seguridad de { -brand-short-name }.
+
+## These strings are displayed in a modal when users want to turn off scheduled backups.
+
+turn-off-scheduled-backups-header = ¿Desactivar copia de seguridad?
+turn-off-scheduled-backups-description = Esto también borra todos los datos de respaldo. No se puede deshacer.
+turn-off-scheduled-backups-support-link = Conocer más
+turn-off-scheduled-backups-cancel-button = Cancelar
+turn-off-scheduled-backups-confirm-button = Desactivar y eliminar la copia de seguridad
+
+## These strings are displayed in a modal when users want restore from a backup.
+
+restore-from-backup-header = Restaurar los datos
+# Variables:
+#   $date (string) - Date to be formatted based on locale
+restore-from-backup-support-link1 = ¿Qué será restaurado?
+restore-from-backup-filepicker-label = Archivo de copia de seguridad
+restore-from-backup-filepicker-title = Seleccionar archivo de respaldo:
+restore-from-backup-file-choose-button =
+    { PLATFORM() ->
+        [macos] Seleccionar…
+       *[other] Examinar…
+    }
+restore-from-backup-password-label = Contraseña
+restore-from-backup-password-description = Esto desbloquea la copia de seguridad cifrada.
+restore-from-backup-cancel-button = Cancelar
+restore-from-backup-confirm-button = Restaurar y reiniciar
+restore-from-backup-restoring-button = Restaurando…
+restore-from-backup-type-group-label =
+    .label = ¿Reemplazar el perfil actual?
+restore-from-backup-type-replace =
+    .label = Reemplazar todos los datos con esta copia de seguridad
+restore-from-backup-type-add =
+    .label = Mantener datos y crear nuevo perfil
+restore-from-backup-profiles-disabled-message = Esto reemplazará todos los datos actuales de { -brand-short-name } con la copia de seguridad.
+
+## These strings are displayed in a small error message bar in the settings
+## menu if there was an error when trying to restore a backed up profile
+
+# User is not authorized to restore a particular backup file, usually because
+# the backup file is encrypted and the user provided a recovery password that
+# was different than the password the user configured for their backup file
+backup-service-error-incorrect-password = Contraseña incorrecta. <a data-l10n-name="incorrect-password-support-link">¿Sigue teniendo problemas?</a>
+# The backup file (or specific data files within the backup file) could not be
+# loaded and parsed correctly, most likely due to data corruption of the
+# backup file itself
+backup-service-error-corrupt-file =
+    .heading = Este archivo no funciona
+    .message = Hubo un problema con el archivo de copia de seguridad. Seleccione un archivo diferente y pruebe nuevamente.
+# The backup file cannot be restored. The currently running application may
+# be too old and may not support features in the backed up profile.
+# Alternatively, the backup file may be too old and some of the feature in
+# the backed up profile may no longer be supported.
+backup-service-error-unsupported-version =
+    .heading = Este archivo no funciona
+    .message = El archivo seleccionado no es compatible con esta versión de { -brand-short-name }. Seleccione un archivo diferente y pruebe nuevamente.
+# The backup file cannot be restored. The currently running application is not
+# the same application that created the backup file (e.g. Firefox cannot
+# restore a Thunderbird profile backup).
+backup-service-error-unsupported-application =
+    .heading = Este archivo no funciona
+    .message = El archivo seleccionado no fue creado por { -brand-short-name }. Seleccione un archivo diferente y pruebe nuevamente.
+# Recovery from backup did not succeed. Potential causes could be file system
+# errors, internal code errors, decryption errors, etc.
+backup-service-error-recovery-failed =
+    .heading = { -brand-short-name } no pudo restaurar
+    .message = Reinicie { -brand-short-name } y trate de restaurar desde la copia de seguridad nuevamente.
+# There was some error in the backup service but we don't have a more specific
+# idea of what went wrong
+backup-service-error-went-wrong2 =
+    .heading = Hmm, hubo un problema al realizar la copia de seguridad.
+    .message = Pruebe de nuevo en unos minutos.
+
+## These strings are displayed in a modal when users want to enable encryption or change the password for an existing backup.
+
+enable-backup-encryption-header = Respaldar los datos sensibles
+enable-backup-encryption-support-link = Conocer más
+enable-backup-encryption-create-password-label = Contraseña
+# Users will be prompted to re-type a password, to ensure that the password is entered correctly.
+enable-backup-encryption-repeat-password-label = Repetir contraseña
+enable-backup-encryption-cancel-button = Cancelar
+enable-backup-encryption-confirm-button = Guardar
+change-backup-encryption-header = Cambiar contraseña del respaldo
+
+## These strings are displayed in a tooltip showing what requirements are met while creating a password.
+
+password-rules-header = Requisitos de contraseña
+password-rules-length-description = Al menos 8 caracteres
+password-rules-email-description = Que no sea su dirección de correo electrónico
+password-rules-disclaimer = Manténgase seguro — no reutilice contraseñas. Vea más consejos para <a data-l10n-name="password-support-link">crear contraseñas seguras</a>.
+password-validity-has-email = No puede ser una dirección de correo electrónico
+password-validity-do-not-match = Las contraseñas no coinciden
+
+## These strings are only used for assistive technologies, like screen readers, in the password requirements tooltip.
+
+password-rules-a11y-success =
+    .alt = Éxito
+password-rules-a11y-warning =
+    .alt = Advertencia
+
+## These strings are displayed in a modal when users want to disable encryption for an existing backup.
+
+disable-backup-encryption-header = Eliminar protección de contraseña
+disable-backup-encryption-description2 = Las contraseñas guardadas y métodos de pago ya no serán respaldadas.
+disable-backup-encryption-support-link = ¿Qué será respaldado?
+disable-backup-encryption-cancel-button = Cancelar
+disable-backup-encryption-confirm-button = Eliminar contraseña
+
+## These strings are used to tell users when errors occur when using
+## the backup system
+
+backup-error-password-requirements = La contraseña no cumple los requisitos. Intente otra contraseña.
+# This error message will be shown to the user when something went wrong with
+# the backup system but we do not have any more specific idea of what went
+# wrong. This message invites the user to try an action again because there
+# is a chance that the action will succeed if retried.
+backup-error-retry = Algo salió mal. Intente de nuevo.
+
+## These strings are inserted into the generated single-file backup archive.
+## The single-file backup archive is a specially-crafted, static HTML file
+## that is placed within a user specified directory (the Documents folder by
+## default) within a folder labelled with the "backup-folder-name" string.
+
+backup-file-header = { -brand-short-name } está listo para ser restaurado
+backup-file-title = Restaurar { -brand-short-name }
+backup-file-intro = Vuelva a navegar y recupere todos los marcadores, historial y otros datos. <a data-l10n-name="backup-file-support-link">Conocer más</a>
+backup-file-path-label = Archivo de copia de seguridad:
+backup-file-encryption-state-label = Cifrado:
+backup-file-encryption-state-value-encrypted = Sí
+backup-file-encryption-state-value-not-encrypted = No
+backup-file-creation-device-label = Dispositivo:
+backup-file-creation-date-label = Creado:
+# Variables:
+#   $date (Datetime) - The date the backup was created
+backup-file-creation-date-value = { DATETIME($date, timeStyle: "short") }, { DATETIME($date, dateStyle: "short") }
+backup-file-how-to-restore-header = Cómo restaurar:
+# The ☰ character is intended as a visual icon representing the Firefox
+# application menu.
+backup-file-moz-browser-restore-step-1 = Abra el menú de aplicaciones ☰ y vaya a Preferencias > Sync
+backup-file-moz-browser-restore-step-2-1 = Haga clic en “Restaurar los datos” y seleccione este archivo
+backup-file-moz-browser-restore-step-2 = Haga clic en “Seleccionar archivo de respaldo” y seleccione este archivo
+backup-file-moz-browser-restore-step-3 = Reinicie { -brand-short-name } cuando se le pida
+backup-file-other-browser-restore-step-1 = Descargar e instalar { -brand-short-name }
+backup-file-download-moz-browser-button = Descargar
+# The ☰ character is intended as a visual icon representing the Firefox
+# application menu.
+backup-file-other-browser-restore-step-2 = Inicie { -brand-short-name }, abra el menú de aplicaciones ☰ y vaya a Preferencias > Sync
+backup-file-other-browser-restore-step-3-1 = Haga clic en “Restaurar los datos” y seleccione este archivo
+backup-file-other-browser-restore-step-3 = Haga clic en “Seleccionar archivo de respaldo” y seleccione este archivo
+backup-file-other-browser-restore-step-4 = Reinicie { -brand-short-name } cuando se le pida
+
+## These strings are used in the about:restore and about:welcome pages
+## These pages guide the user on browser startup to help them restore a backup
+## if they have one on their file system.
+
+# Variables:
+# $numberOfOtherBackupsFound (number) - The number of backups found other than the displayed default backup
+other-backup-files-founds =
+    { $numberOfOtherBackupsFound ->
+        [one] <b>Nota:</b> { $numberOfOtherBackupsFound } archivo de respaldo encontrado
+       *[other] <b>Nota:</b> { $numberOfOtherBackupsFound } otros archivos de respaldo encontrados
+    }
+# Variables:
+#   $profileName (String) - The name of the profile that was backed up.
+#   $date (Datetime) - The date the backup was created.
+#   $machineName (String) - Name of the machine that the backup was created on.
+backup-file-creation-metadata2 = <b>{ $profileName }</b> creado el { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } en { $machineName }
+# Variables:
+#   $deviceName (String) - The name of the device from which the backup was created.
+#   $date (Number) - The epoch timestamp of the restore.
+backup-restored-profile-name = Restaurado desde { $deviceName } el { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } a las { DATETIME($date, hour: "2-digit", minute: "2-digit") }
+backup-file-restore-file-validation-error = Este archivo no funciona. Intente seleccionar otro archivo. <a data-l10n-name="restore-problems">¿Todavía tiene problemas?</a>
+restore-from-backup-filepicker-input =
+    .placeholder = No se seleccionó un archivo

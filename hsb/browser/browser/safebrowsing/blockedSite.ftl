@@ -1,0 +1,76 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+safeb-blocked-phishing-page-title = Wobšudne sydło
+safeb-blocked-malware-page-title = Wopyt tutoho websydła móže waš ličak poškodźić
+safeb-blocked-unwanted-page-title = Tute sydło móže škódne programy wobsahować
+safeb-blocked-harmful-page-title = Sydło prědku móže škódnu softwaru wobsahować
+safeb-blocked-addon-page-title = Sydło je za wašu wěstotu zablokowane
+safeb-blocked-phishing-page-short-desc = { -brand-short-name } je tutu stronu zablokował, dokelž móhła was zawjedować, něšto strašne činił, kaž na přikład softwaru instalować abo wosobinske daty kaž hesła abo kreditne karty přeradzić.
+safeb-blocked-malware-page-short-desc = { -brand-short-name } je tutu stronu zablokował, dokelž móhła pospytować, złóstnu softwaru instalować, kotraž móhła wosobinske daty na wašim ličaku kradnyć abo zhašeć.
+safeb-blocked-unwanted-page-short-desc = { -brand-short-name } je tutu stronu zablokował, dokelž móhła pospytować, was zawjedować, programy instalować, kotrež wašemu přehladowanskemu dožiwjenju škodźeć (na přikład přez to, zo wašu startowu stronu měnjeja abo přidatne wabjenje na sydłach, kotrež wopytujeće, pokazuja).
+safeb-blocked-harmful-page-short-desc = { -brand-short-name } je tutu stronu zablokował, dokelž móhła strašne nałoženja instalować, kotrež waše daty kradnu abo hašeja (na přikład fota, hesła, powěsće a kreditne karty).
+safeb-blocked-addon-page-short-desc = { -brand-short-name } je tutu webstronu zablokował, dokelž jedyn z wašich přidatkow spyta ju wočinić. Tute sydło móhło so wužiwać, zo by waše informacije kradnyło – na přikład hesła abo čisła kreditnych kartow.
+# Variables:
+#   $advisoryname (string) - Name of the advisory entity
+safeb-palm-advisory-desc = Rada data wot <a data-l10n-name='advisory_provider'>{ $advisoryname }</a>.
+safeb-palm-accept-label = Wróćo
+safeb-palm-see-details-label = Hlejće podrobnosće
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-phishing-page-error-desc-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span> je <a data-l10n-name='error_desc_link'>wobšudne sydło</a>. Móžeće <a data-l10n-name='report_detection'>problem ze spóznaćom zdźělić</a> abo <a data-l10n-name='ignore_warning_link'>riziko ignorować</a> a tute njewěste sydło wopytać.
+safeb-blocked-phishing-page-error-desc-no-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span> je <a data-l10n-name='error_desc_link'>wobšudne sydło</a>. Móžeće <a data-l10n-name='report_detection'>problem ze spóznaćom zdźělić</a>.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-phishing-page-learn-more = Zhońće na <a data-l10n-name='learn_more_link'>www.antiphishing.org</a>wjace wo wobšudnych sydłach a kradnjenju datow. Zhońće na <a data-l10n-name='firefox_support'>support.mozilla.org</a>wjace wo škiće { -brand-short-name } přećiwo kradnjenju datow a škódnej softwarje.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-malware-page-error-desc-override-sumo = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>złóstnu softwaru wobsahuje</a>. Móžeće <a data-l10n-name='ignore_warning_link'>riziko ignorować</a> a tute njewěste sydło wopytał.
+safeb-blocked-malware-page-error-desc-no-override-sumo = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>złóstnu softwaru wobsahuje</a>.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-malware-page-learn-more-sumo = Zhońće na <a data-l10n-name='firefox_support'>support.mozilla.org</a>wjace wo škiće { -brand-short-name } přećiwo kradnjenju datow a škódnej softwarje.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-unwanted-page-error-desc-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>škódnu softwaru wobsahuje</a>. Móžeće <a data-l10n-name='ignore_warning_link'>riziko ignorować</a> a tute njewěste sydło wopytał.
+safeb-blocked-unwanted-page-error-desc-no-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>škódnu softwaru wobsahuje</a>.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-unwanted-page-learn-more = Zhońće wjace wo škódnej a njewitanej softwarje w <a data-l10n-name='learn_more_link'>prawidłach wo njewitanej softwarje</a>. Zhońće na <a data-l10n-name='firefox_support'>support.mozilla.org</a> wjace wo škiće { -brand-short-name } přećiwo kradnjenju datow a škódnym programam.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-harmful-page-error-desc-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>potencielnje škódne nałoženje wobsahuje</a>. Móžeće <a data-l10n-name='ignore_warning_link'>riziko ignorować</a> tute njewěste sydło wopytać.
+safeb-blocked-harmful-page-error-desc-no-override = Je so zdźěliło, zo sydło <span data-l10n-name='sitename'>{ $sitename }</span><a data-l10n-name='error_desc_link'>potencielnje škódne nałoženje wobsahuje</a>.
+
+## Variables
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-harmful-page-learn-more = Zhońće na <a data-l10n-name='firefox_support'>support.mozilla.org</a>wjace wo škiće { -brand-short-name } přećiwo kradnjenju datow a škódnej softwarje.
+safeb-palm-notdeceptive =
+    .label = To wobšudne sydło njeje…
+    .accesskey = d
+
+## Variables:
+##  $addonName (string) - the name of the harmful add-on
+##  $sitename (string) - Domain name for the blocked page
+
+safeb-blocked-addon-page-error-desc-override = <strong>Čehodla je so tute sydło zablokowało?</strong>
+safeb-blocked-addon-page-error-desc2-override = <strong>{ $sitename }</strong> je snano z wobšudniskej a škódnej aktiwitu zwjazany.
+safeb-blocked-addon-page-error-desc3-override = <strong>Što móžeće přećiwo tomu činić?</strong>
+safeb-blocked-addon-page-error-desc4-override = Zo njeby so to hišće raz stało, móžeće <strong>{ $addonName }</strong> z about:addons wotstronić.
+safeb-blocked-addon-page-learn-more3 = <a data-l10n-name='firefox_support_harmful_addons'>Zhońće wjace wo škiće přećiwo škódnym přidatkam přez { -brand-short-name }</a>.

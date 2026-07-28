@@ -1,0 +1,281 @@
+SET UTF-8
+TRY aioertnsclmdpgubzfvhàq'ACMSkBGPLxEyRTVòIODNwFéùèìjUZKHWJYQXÙÀÒÈÌÉ
+
+MAP 5
+MAP aàAÀ
+MAP eéèEÉÈ
+MAP iìIÌ
+MAP oòOÒ
+MAP uùUÙ
+
+REP 5
+REP ó ò
+REP á à
+REP ú ù
+REP í ì
+REP ^tg ch
+
+ICONV 1
+ICONV ’ '
+
+OCONV 1
+OCONV ' ’
+
+# negaziun, avant vocal ed avant h
+PFX O Y 19
+PFX O 0 n' [aeiouhèòêôîAEIOUH]
+PFX O a n'a a
+PFX O e n'e e
+PFX O i n'i i
+PFX O o n'o o
+PFX O u n'u u
+PFX O h n'h h
+PFX O è n'è è
+PFX O ò n'ò ò
+PFX O ê n'ê ê
+PFX O ô n'ô ô
+PFX O î n'î î
+PFX O 0 N' [AEIOUH]
+PFX O A N'A A
+PFX O E N'E E
+PFX O I N'I I
+PFX O O N'O O
+PFX O U N'U U
+PFX O H N'U H
+
+PFX T Y 165
+PFX T 0 l' [aeiouhèòêôîAEIOUH]
+PFX T a l'A a
+PFX T e l'E e
+PFX T i l'I i
+PFX T o l'O o
+PFX T u l'U u
+PFX T h l'H h
+PFX T 0 L' [AEIOUH]
+PFX T a L'A a
+PFX T e L'E e
+PFX T i L'I i
+PFX T o L'O o
+PFX T u L'U u
+PFX T h L'H h
+PFX T 0 L' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 in' [aeiouhèòêôîAEIOUH]
+PFX T a in'A a
+PFX T e in'E e
+PFX T i in'I i
+PFX T o in'O o
+PFX T u in'U u
+PFX T h in'H h
+PFX T 0 In' [AEIOUH]
+PFX T a In'A a
+PFX T e In'E e
+PFX T i In'I i
+PFX T o In'O o
+PFX T u In'U u
+PFX T h In'H h
+PFX T 0 IN' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 d' [aeiouhèòêôîAEIOUH]
+PFX T a d'A a
+PFX T e d'E e
+PFX T i d'I i
+PFX T o d'O o
+PFX T u d'U u
+PFX T h d'H h
+PFX T 0 D' [AEIOUH]
+PFX T a D'A a
+PFX T e D'E e
+PFX T i D'I i
+PFX T o D'O o
+PFX T u D'U u
+PFX T h D'H h
+PFX T 0 D' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 quest' [aeiouhèòêôîAEIOUH]
+PFX T a quest'A a
+PFX T e quest'E e
+PFX T i quest'I i
+PFX T o quest'O o
+PFX T u quest'U u
+PFX T h quest'H h
+PFX T 0 Quest' [AEIOUH]
+PFX T a Quest'A a
+PFX T e Quest'E e
+PFX T i Quest'I i
+PFX T o Quest'O o
+PFX T u Quest'U u
+PFX T h Quest'H h
+PFX T 0 QUEST' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 quell' [aeiouhèòêôîAEIOUH]
+PFX T a quell'A a
+PFX T e quell'E e
+PFX T i quell'I i
+PFX T o quell'O o
+PFX T u quell'U u
+PFX T h quell'H h
+PFX T 0 Quell' [AEIOUH]
+PFX T a Quell'A a
+PFX T e Quell'E e
+PFX T i Quell'I i
+PFX T o Quell'O o
+PFX T u Quell'U u
+PFX T h Quell'H h
+PFX T 0 QUELL' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 tschell' [aeiouhèòêôîAEIOUH]
+PFX T a tschell'A a
+PFX T e tschell'E e
+PFX T i tschell'I i
+PFX T o tschell'O o
+PFX T u tschell'U u
+PFX T h tschell'H h
+PFX T 0 Tschell' [AEIOUH]
+PFX T a Tschell'A a
+PFX T e Tschell'E e
+PFX T i Tschell'I i
+PFX T o Tschell'O o
+PFX T u Tschell'U u
+PFX T h Tschell'H h
+PFX T 0 TSCHELL' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 lezz' [aeiouhèòêôîAEIOUH]
+PFX T a lezz'A a
+PFX T e lezz'E e
+PFX T i lezz'I i
+PFX T o lezz'O o
+PFX T u lezz'U u
+PFX T h lezz'H h
+PFX T 0 Lezz' [AEIOUH]
+PFX T a Lezz'A a
+PFX T e Lezz'E e
+PFX T i Lezz'I i
+PFX T o Lezz'O o
+PFX T u Lezz'U u
+PFX T h Lezz'H h
+PFX T 0 LEZZ' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 ch' [aeiouhèòêôîAEIOUH]
+PFX T a ch'A a
+PFX T e ch'E e
+PFX T i ch'I i
+PFX T o ch'O o
+PFX T u ch'U u
+PFX T h ch'H h
+PFX T 0 Ch' [AEIOUH]
+PFX T a Ch'A a
+PFX T e Ch'E e
+PFX T i Ch'I i
+PFX T o Ch'O o
+PFX T u Ch'U u
+PFX T h Ch'H h
+PFX T 0 CH' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 sch' [aeiouhèòêôîAEIOUH]
+PFX T a sch'A a
+PFX T e sch'E e
+PFX T i sch'I i
+PFX T o sch'O o
+PFX T u sch'U u
+PFX T h sch'H h
+PFX T 0 Sch' [AEIOUH]
+PFX T a Sch'A a
+PFX T e Sch'E e
+PFX T i Sch'I i
+PFX T o Sch'O o
+PFX T u Sch'U u
+PFX T h Sch'H h
+PFX T 0 SCH' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 senz' [aeiouhèòêôîAEIOUH]
+PFX T a senz'A a
+PFX T e senz'E e
+PFX T i senz'I i
+PFX T o senz'O o
+PFX T u senz'U u
+PFX T h senz'H h
+PFX T 0 Senz' [AEIOUH]
+PFX T a Senz'A a
+PFX T e Senz'E e
+PFX T i Senz'I i
+PFX T o Senz'O o
+PFX T u Senz'U u
+PFX T h Senz'H h
+PFX T 0 SENZ' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+PFX T 0 mintg' [aeiouhèòêôîAEIOUH]
+PFX T a mintg'A a
+PFX T e mintg'E e
+PFX T i mintg'I i
+PFX T o mintg'O o
+PFX T u mintg'U u
+PFX T h mintg'H h
+PFX T 0 Mintg' [AEIOUH]
+PFX T a Mintg'A a
+PFX T e Mintg'E e
+PFX T i Mintg'I i
+PFX T o Mintg'O o
+PFX T u Mintg'U u
+PFX T h Mintg'H h
+PFX T 0 MINTG' [AEIOUH][ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+
+# pronoms reflexivs apostrofads
+# pronom object cumbinà cun l'imperativ u cun in auter cumplement verbal
+PFX P Y 57
+PFX P 0 m' [aeiouhèòêôîAEIOUH]
+PFX P a m'a a
+PFX P e m'e e
+PFX P i m'i i
+PFX P o m'o o
+PFX P u m'u u
+PFX P h m'h h
+PFX P è m'è è
+PFX P ò m'ò ò
+PFX P ê m'ê ê
+PFX P ô m'ô ô
+PFX P î m'î î
+PFX P 0 M' [AEIOUH]
+PFX P A M'a A
+PFX P E M'e E
+PFX P I M'i I
+PFX P O M'o O
+PFX P U M'u U
+PFX P H M'h H
+PFX P 0 t' [aeiouhèòêôîAEIOUH]
+PFX P a t'a a
+PFX P e t'e e
+PFX P i t'i i
+PFX P o t'o o
+PFX P u t'u u
+PFX P h t'h h
+PFX P è t'è è
+PFX P ò t'ò ò
+PFX P ê t'ê ê
+PFX P ô t'ô ô
+PFX P î t'î î
+PFX P 0 T' [AEIOUH]
+PFX P A T'a A
+PFX P E T'e E
+PFX P I T'i I
+PFX P O T'o O
+PFX P U T'u U
+PFX P H T'h H
+PFX P 0 s' [aeiouhèòêôîAEIOUH]
+PFX P a s'a a
+PFX P e s'e e
+PFX P i s'i i
+PFX P o s'o o
+PFX P u s'u u
+PFX P h s'h h
+PFX P è s'è è
+PFX P ò s'ò ò
+PFX P ê s'ê ê
+PFX P ô s'ô ô
+PFX P î s'î î
+PFX P 0 S' [AEIOUH]
+PFX P A S'a A
+PFX P E S'e E
+PFX P I S'i I
+PFX P O S'o O
+PFX P U S'u U
+PFX P H S'h H
+
+# pronom impersunal 'ins' cumbinà cun 3. pers. sing. preschent indicativ, na vala betg per las finiziuns: -ia (p.ex. legia, maglia, annunzia)
+# pronom impersunal 'ins' cumbinà cun 3. pers. sing. imperfect indicativ
+SFX Q Y 5
+SFX Q a 'ins a
+SFX Q e 'ins e
+SFX Q i 'ins i
+SFX Q o 'ins o
+SFX Q u 'ins u

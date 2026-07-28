@@ -1,0 +1,60 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Names of the default containers in Firefox.
+## See https://support.mozilla.org/kb/how-use-firefox-containers
+
+user-context-personal =
+    .label = Ezobuqu
+    .accesskey = E
+user-context-work =
+    .label = Umsebenzi
+    .accesskey = U
+user-context-banking =
+    .label = Ukubhankisha
+    .accesskey = U
+user-context-shopping =
+    .label = Ukuthenga
+    .accesskey = U
+
+##
+
+user-context-none =
+    .label = Ayikho iKhonteyina
+    .accesskey = A
+
+## Container colors, shown as selectable swatches in the container
+## creation/edit dialog.
+
+user-context-color-blue =
+    .label = eBlue
+user-context-color-green =
+    .label = Luhlaza
+user-context-color-yellow =
+    .label = eYellow
+user-context-color-orange =
+    .label = EOrenji
+user-context-color-red =
+    .label = eBomvu
+user-context-color-pink =
+    .label = EPinki
+user-context-color-purple =
+    .label = Epurple
+
+## Container icons, shown as selectable swatches in the container
+## creation/edit dialog.
+
+user-context-icon-fingerprint =
+    .label = Umzila womnwe
+user-context-icon-briefcase =
+    .label = Ibrufkheyisi
+# String represents a money sign but currently uses a dollar sign
+# so don't change to local currency. See Bug 1291672.
+user-context-icon-dollar =
+    .label = Umqondiso wedola
+user-context-icon-cart =
+    .label = Itroli yokuthenga
+user-context-icon-circle =
+    .label = IChaphaza

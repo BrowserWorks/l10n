@@ -1,0 +1,2725 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+do-not-track-description = Mande ai sîts web un segnâl “Do Not Track” che al indiche che no tu vuelis vignî spiât
+do-not-track-removal = No supuartìn plui il segnâl “Do Not Track”
+do-not-track-learn-more = Plui informazions
+do-not-track-option-default-content-blocking-known =
+    .label = Dome cuant che { -brand-short-name } al è configurât par blocâ lis spiis (trackers) cognossudis
+do-not-track-option-always =
+    .label = Simpri
+global-privacy-control-description =
+    .label = Dîs ai sîts web di no sta vendi o condividi i miei dâts
+    .accesskey = s
+non-technical-privacy-group =
+    .label = Preferencis pe riservatece dai sîts web
+do-not-track-removal3 =
+    .message = No supuartìn plui la funzion "Do not Track".
+non-technical-privacy-heading =
+    .label = Protezions in plui
+preferences-privacy-relay-available =
+    .label = Consee mascaris di e-mail di { -relay-brand-name }
+    .description = Al plate la tô vere e-mail par parâ la tô casele di pueste dal spam.
+non-technical-privacy-header = Preferencis pe riservatece dai sîts web
+# Do not translate.
+# "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
+# included to facilitate power-user search of the about:preferences page.
+global-privacy-control-search = Global Privacy Control (GPC)
+settings-page-title = Impostazions
+category-nav-heading =
+    .heading = Impostazions
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 16em
+    .placeholder = Cîr tes impostazions
+managed-notice = Il to navigadôr al ven gjestît de tô organizazion.
+managed-notice-info-icon =
+    .alt = Informazion
+managed-notice-nav =
+    .label = Il to navigadôr al ven gjestît de tô organizazion.
+category-list =
+    .aria-label = Categoriis
+pane-general-title = Gjenerâl
+category-general =
+    .tooltiptext = { pane-general-title }
+pane-home-title = Pagjine iniziâl
+pane-home-startup-title2 = Pagjine iniziâl e inviament
+    .title = Pagjine iniziâl e inviament
+pane-search-title2 = Ricercje
+    .title = Ricercje
+pane-privacy-title3 = Riservatece e sigurece
+    .title = Riservatece e sigurece
+category-home =
+    .tooltiptext = { pane-home-title }
+pane-search-title = Ricercje
+category-search =
+    .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = Riservatece e sigurece
+pane-privacy-title = Riservatece e sigurece
+category-privacy =
+    .tooltiptext = { pane-privacy-title }
+pane-sync-title3 = Sincronizazion
+pane-ai-controls-title2 = Controi IA
+    .title = Controi IA
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = Informazions su { -brand-short-name }
+    .title = { pane-about-firefox-title }
+pane-appearance-title = Aspiet
+    .title = { pane-appearance-title }
+pane-downloads-title2 = Discjariâts
+    .title = Discjariâts
+pane-downloads3 =
+    .heading = Discjariâts
+pane-accessibility-title = Acès facilitât
+    .title = { pane-accessibility-title }
+pane-languages-title2 = Lenghis
+    .title = Lenghis
+preferences-languages-header3 =
+    .heading = Lenghis
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
+pane-experimental-title = Esperiments di { -brand-short-name }
+category-experimental =
+    .tooltiptext = Esperiments di { -brand-short-name }
+pane-experimental-subtitle = Continue cun cautele
+pane-experimental-search-results-header = Esperiments di { -brand-short-name }: continue cun cautele
+pane-experimental-description2 = La modifiche des impostazions di configurazion avanzadis e pues influî su lis prestazions o la sigurece di { -brand-short-name }.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = Prove lis nestris funzions sperimentâls. A son in fase di svilup e in continue evoluzion, par chest al podarès vignî intacât il funzionament di { -brand-short-name }. O ricevìn informazions su la tô utilizazion di chestis funzions dome se tu âs ativât l’inviament di <a data-l10n-name="data-collection">dâts tecnics e di interazion</a>.
+pane-experimental-description3 = Prove lis nestris funzions sperimentâls! A son in disvilup e in continue evoluzion, chest al podarès lâ a tocjâ il mût di funzionâ di { -brand-short-name }.
+pane-experimental-reset =
+    .label = Ripristine predefinîts
+    .accesskey = R
+help-button-label2 = Supuart par { -brand-short-name }
+    .title = Supuart par { -brand-short-name }
+addons-button-label2 = Estensions e temis
+    .title = Estensions e temis
+help-button-label = Supuart par { -brand-short-name }
+addons-button-label = Estensions e temis
+focus-search =
+    .key = f
+close-button =
+    .aria-label = Siere
+do-not-track-removal2 =
+    .label = No supuartìn plui il segnâl “Do Not Track”
+applications-setting-new-file-types =
+    .label = Ce aial di fâ { -brand-short-name } cun chei altris files?
+
+## Browser Restart Dialog
+
+feature-enable-requires-restart = Si scugne tornâ a inviâ { -brand-short-name } par ativâ cheste funzion.
+feature-disable-requires-restart = Si scugne tornâ a inviâ { -brand-short-name } par disativâ cheste funzion.
+should-restart-title = Torne invie { -brand-short-name }
+should-restart-ok = Torne invie { -brand-short-name } cumò
+cancel-no-restart-button = Anule
+restart-later = Torne invie plui indenant
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> al controle cheste impostazion.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> al controle cheste impostazion.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = Lis schedis contignidôr a coventin a <img data-l10n-name="icon"/> <strong>{ $name }</strong> par funzionâ.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/><strong>{ $name }</strong> al controle cheste impostazion.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> al controle cemût che { -brand-short-name } si conet a internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Par ativâ la estension va su <img data-l10n-name="addons-icon"/>Components adizionâi tal <img data-l10n-name="menu-icon"/>menù.
+extension-controlled-enable-2 = Par tornâ a ativâ cheste estension, va su <a data-l10n-name="addons-link">Estensions e temis</a>.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = { $name } controle cualchi impostazion te pagjine iniziâl.
+
+## Preferences UI Search Results
+
+search-results-header = Risultâts de ricercje
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = Nus displâs, nol è stât cjatât nissun risultât par “<span data-l10n-name="query"></span>” tes impostazions.
+search-results-help-link = Convential jutori? Visite il <a data-l10n-name="url">Supuart di { -brand-short-name }</a>
+
+## General Section
+
+startup-header = Inviament
+always-check-default =
+    .label = Controle simpri se { -brand-short-name } al è il tô navigadôr predefinît
+    .accesskey = è
+is-default = In chest moment { -brand-short-name } al è il to navigadôr predefinît
+is-not-default = { -brand-short-name } nol è il to navigadôr predefinît
+set-as-my-default-browser =
+    .label = Definìs come predefinît…
+    .accesskey = d
+startup-restore-windows-and-tabs =
+    .label = Vierç schedis e barcons che a jerin vierzûts la volte prime
+    .accesskey = s
+startup-windows-launch-on-login-profile-disabled =
+    .message = Ative cheste preference selezionant “{ profile-manager-use-selected.label }” tal barcon “Sielte dal profîl utent”.
+windows-launch-on-login =
+    .label = Vierç in automatic { -brand-short-name } cuant che il computer si invie
+    .accesskey = V
+windows-launch-on-login-disabled = Cheste opzion e je stade disativade in Windows. Par cambiâle, visite <a data-l10n-name="startup-link">Aplicazions di inviament</a> tes impostazions di sisteme.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = Vierç ancje une gnove schede
+    .accesskey = n
+windows-launch-on-login-profile-disabled = Ative cheste preference selezionant “{ profile-manager-use-selected.label }” tal barcon “Sielte dal profîl utent”.
+startup-restore-warn-on-quit =
+    .label = Vise cuant che tu jessis dal navigadôr
+disable-extension =
+    .label = Disative estension
+preferences-data-migration-group =
+    .label = Impuarte dâts dal navigadôr
+    .description = Puarte achì di un altri navigadôr i tiei segnelibris, lis passwords, la cronologjie, lis estensions e i dâts di compilazion dai formularis.
+preferences-data-migration-header = Impuarte dâts dal navigadôr
+preferences-data-migration-description = Impuarte segnelibris, passwords, cronologjie e i dâts pe compilazion automatiche dai formularis in { -brand-short-name }.
+preferences-data-migration-button =
+    .label = Impuarte dâts
+    .accesskey = m
+preferences-profiles-group-header =
+    .heading = Profîi
+preferences-profiles-subpane-description =
+    .description = Ogni profîl al manten dâts di navigazion e impostazions indipendentis, includûts cronologjie, passwords e altris dâts.
+preferences-profiles-section-header =
+    .label = Profîi
+    .description = Ogni profîl al manten dâts di navigazion e impostazions indipendentis, includûts cronologjie, passwords e altris dâts.
+preferences-profiles-header = Profîi
+preferences-manage-profiles-description = Ogni profîl al manten dâts di navigazion e impostazions indipendentis, includûts cronologjie, passwords e altris dâts.
+preferences-manage-profiles-learn-more = Plui informazions
+preferences-manage-profiles-button =
+    .label = Gjestìs profîi
+preferences-profiles-settings-button =
+    .label = Impostazions
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = Copie un profîl esistent
+    .description = Il gnûf profîl al copiarà lis impostazions, i components adizionâi, la cronologjie e i dâts salvâts come i segnelibris e lis passwords — ma no il to account o lis informazions di sincronizazion.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = Profîl di copiâ
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = Selezione profîl
+preferences-copy-profile-button = Copie
+tabs-browsing-section =
+    .heading = Schedis e navigazion
+pane-tabs-browsing-title2 = Schedis e navigazion
+    .title = Schedis e navigazion
+tabs-group-header2 =
+    .label = Schedis
+tabs-opening-heading =
+    .label = Vierzidure
+tabs-interaction-heading =
+    .label = Interazion
+tabs-containers-heading =
+    .label = Contignidôrs
+tabs-closing-heading =
+    .label = Sieradure
+tabs-group-header = Schedis
+ctrl-tab-recently-used-order =
+    .label = Ctrl+Tab al fâs scori lis schedis lant daûr l'ordin di chês dopradis plui di resint
+    .accesskey = T
+open-new-link-as-tabs =
+    .label = Vierç i colegaments in schedin invezit che in gnûfs barcons
+    .accesskey = b
+open-external-link-next-to-active-tab =
+    .label = Vierç i colegaments di altris aplicazions doncje de schede ative
+ask-on-close-multiple-tabs =
+    .label = Domande prime di sierâ plui schedis
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Domande prime di jessî cun { $quitKey }
+    .accesskey = b
+confirm-on-close-multiple-tabs =
+    .label = Conferme prime di sierâ plui schedis
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Conferme prime di jessî cun { $quitKey }
+    .accesskey = j
+warn-on-open-many-tabs =
+    .label = Vise cuant che vierzint plui schedis tu puedis morestâ { -brand-short-name }
+    .accesskey = d
+switch-to-new-tabs-2 =
+    .label = Puarte denant daurman lis schedis cuant che a vegnin vierts colegaments o contignûts multimediâi
+    .accesskey = h
+switch-to-new-tabs =
+    .label = Cuant che tu vierzi un colegament, imagjin o flus multimediâl intune gnove schede, passe a cheste daurman
+    .accesskey = h
+show-tabs-in-taskbar =
+    .label = Mostre lis anteprimis des schedis inte sbare des aplicazions di Windows
+    .accesskey = W
+browser-containers-enabled-2 =
+    .label = Dopre schedis contignidôr
+    .accesskey = n
+browser-containers-enabled =
+    .label = Abilite lis schedis contignidôr
+    .accesskey = n
+browser-containers-learn-more = Plui informazions
+browser-containers-settings-2 =
+    .label = Gjestìs impostazions
+    .accesskey = i
+browser-containers-settings =
+    .label = Impostazions…
+    .accesskey = I
+containers-disable-alert-title = Sierâ dutis lis schedis contignidôr?
+startup-group =
+    .label = Inviament
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
+containers-disable-alert-desc =
+    { $tabCount ->
+        [one] Se tu disativis cumò lis schedis contignidôr, { $tabCount } schede contignidôr e vignarà sierade. Disativâ pardabon lis schedis contignidôr?
+       *[other] Se tu disativis cumò lis schedis contignidôr, { $tabCount } schedis contignidôr a vignaran sieradis. Disativâ pardabon lis schedis contignidôr?
+    }
+containers-disable-alert-ok-button =
+    { $tabCount ->
+        [one] Siere { $tabCount } schede contignidôr
+       *[other] Siere { $tabCount } schedis contignidôr
+    }
+
+##
+
+containers-disable-alert-cancel-button = Ten abilitadis
+containers-remove-alert-title = Gjavâ chest contignidôr?
+# Variables:
+#   $count (number) - Number of tabs that will be closed.
+containers-remove-alert-msg =
+    { $count ->
+        [one] Se tu gjavis cumò chest contignidôr, { $count } schede contignidôr e vignarà sierade. Gjavâ pardabon chest contignidôr?
+       *[other] Se tu gjavis cumò chest contignidôr, { $count } schedis contignidôr a vignaran sieradis. Gjavâ pardabon chest contignidôr?
+    }
+containers-remove-ok-button = Gjave chest contignidôr
+containers-remove-cancel-button = No sta gjavâ chest contignidôr
+settings-tabs-show-image-in-preview =
+    .label = Mostre une imagjin di anteprime cuant che tu passis cul pontadôr sore di une schede
+    .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = Strissine lis schedis adun par creâ un grup di schedis
+browser-layout-header2 =
+    .label = Disposizion dal navigadôr
+browser-layout-horizontal-tabs2 =
+    .label = Schedis orizontâls
+    .title = Schedis parsore
+    .description = Schedis parsore
+browser-layout-vertical-tabs2 =
+    .label = Schedis verticâls
+    .title = Schedis in bande, inte sbare laterâl.
+    .description = Schedis in bande, inte sbare laterâl.
+browser-layout-show-sidebar2 =
+    .label = Mostre la sbare laterâl
+    .description = Rive intun lamp a segnelibris, schedis dal to telefon, chatbots AI e tant altri cence lâ fûr de videade principâl.
+page-navigation-group =
+    .label = Navigazion tra lis pagjinis
+browser-layout-header = Disposizion dal navigadôr
+browser-layout-horizontal-tabs =
+    .label = Schedis orizontâls
+browser-layout-horizontal-tabs-desc = Visualize te part superiôr dal navigadôr
+browser-layout-vertical-tabs =
+    .label = Schedis verticâls
+browser-layout-vertical-tabs-desc = Visualize in bande, te sbare laterâl
+browser-layout-show-sidebar =
+    .label = Mostre la sbare laterâl
+browser-layout-show-sidebar-desc = Rive intun lamp a segnelibris, schedis dal to telefon, chatbots AI e tant altri cence lâ fûr de videade principâl.
+
+## General Section - Language & Appearance
+
+language-and-appearance-header = Lenghe e aspiet
+appearance-group2 =
+    .label = Aspiet dai sîts web
+    .description = Cualchi sît al cambie il so colôr par rispietâ lis tôs preferencis. Sielç il to scheme di colôrs.
+preferences-web-appearance-choice-auto3 =
+    .label = Sisteme
+    .title = Cambie in automatic i fonts dai sîts web e il contignût in base aes tôs impostazions di sisteme e al teme di { -brand-short-name }.
+preferences-web-appearance-header = Aspiet dai sîts web
+preferences-web-appearance-description = Cualchi sît web al adate il so scheme di colôrs in base aes tôs preferencis. Sielç cuâl scheme di colôrs doprâ par chei sîts.
+preferences-web-appearance-choice-light2 =
+    .label = Clâr
+    .title = Dopre un aspiet clâr pal fonts e pai contignûts dai sîts.
+preferences-web-appearance-choice-dark2 =
+    .label = Scûr
+    .title = Dopre un aspiet scûr pal fonts e pai contignûts dai sîts.
+web-appearance-group =
+    .aria-label = Aspiet dai sîts web
+preferences-web-appearance-choice-auto = Automatic
+preferences-web-appearance-choice-light = Clâr
+preferences-web-appearance-choice-dark = Scûr
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Cambie in automatic i fonts e il contignût in base aes impostazions dal sisteme e al teme di { -brand-short-name }.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Dopre un aspiet clâr pal fonts e pai contignûts dai sîts.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Dopre un aspiet scûr pal fonts e pai contignûts dai sîts.
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Lis tôs impostazions di control dal contrast a stan sostituint l'aspiet dai sîts web.
+preferences-web-appearance-link =
+    .label = Gjestìs i temis di { -brand-short-name } in Estensions e temis
+preferences-contrast-control-group =
+    .label = Contrast tai sîts web
+    .description = I sîts web a doprin une varietât di colôrs pal prin plan e pal sotfont. Par vê un contrast coerent, tu puedis doprâ i stes colôrs su ducj i sîts web.
+preferences-contrast-control-radio-group =
+    .label = Sostituìs colôrs
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = L'aspiet dal sît web al è stât sostituît de tô selezion di colôrs. <a data-l10n-name="colors-link"> Gjestìs i colôrs</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Gjestìs i temis di { -brand-short-name } in <a data-l10n-name="themes-link">Estensions e temis</a>
+preferences-contrast-control-header = Gjestion dal contrast
+preferences-contrast-control-description = I sîts web a doprin une schirie di colôrs di prin plan e di fonts. Configure { -brand-short-name } par doprâ i stes colôrs su ducj i sîts web e miorâ la facilitât di leture.
+preferences-contrast-control-use-platform-settings =
+    .label = Automatic (dopre lis impostazions di sisteme)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Disativât
+    .accesskey = D
+preferences-contrast-control-custom =
+    .label = Personalizât
+    .accesskey = P
+preferences-colors-manage-button2 =
+    .label = Gjestìs colôrs
+    .accesskey = c
+preferences-colors-header = Colôrs
+preferences-colors-description = Sostituìs i colôrs predefinîts di { -brand-short-name } par test, fonts di sît web e colegaments.
+preferences-colors-manage-button =
+    .label = Gjestìs colôrs…
+    .accesskey = c
+preferences-fonts-header2 =
+    .label = Caratars
+preferences-fonts-header = Caratars
+default-font = Caratar predefinît
+    .accesskey = d
+default-font-size = Dimension
+    .accesskey = s
+advanced-fonts =
+    .label = Avanzadis…
+    .accesskey = v
+preferences-default-zoom-label =
+    .label = Ingrandiment predefinît
+    .accesskey = f
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Ingrandiment
+preferences-default-zoom = Ingrandiment predefinît
+    .accesskey = f
+# Variables:
+#   $percentage (number) - Zoom percentage value
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Ingrandìs dome il test
+    .accesskey = t
+preferences-text-zoom-override-warning2 =
+    .message = Se “Ingrandìs nome il test” al è atîf e il zoom predefinît al è diviers di 100%, al è pussibil che il contignût di cualchi sît nol vegni visualizât ben.
+preferences-text-zoom-override-warning =
+    .message = Atenzion: se tu selezionis “Ingrandìs dome il test” e il zoom predefinît nol è metût a 100%, cualchi sît o contignût al podarès funzionâ mâl.
+language-header = Lenghe
+choose-language-description = Sielç la tô lenghe preferide par visualizâ lis pagjinis
+website-language-heading =
+    .label = Lenghe dal sît
+    .description = Cualchi pagjine web e ven mostrade in plui lenghis. Sielç lis lenghis tal ordin che tu preferissis.
+website-preferred-language =
+    .label = Lenghis preferidis
+website-add-language =
+    .label = Zonte lenghe
+website-add-language-button =
+    .aria-label = Zonte lenghe selezionade
+    .title = Zonte lenghe selezionade
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = Gjave { $locale }
+    .title = Gjave { $locale }
+choose-button =
+    .label = Sielç…
+    .accesskey = S
+choose-browser-language-description = Sielç lis lenghis dopradis par visualizâ i menù, i messaçs e lis notifichis di { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Stabilìs lis alternativis…
+    .accesskey = l
+confirm-browser-language-change-description = Torne invie { -brand-short-name } par aplicâ chestis modifichis
+confirm-browser-language-change-button = Apliche e torne invie
+browser-language-heading =
+    .label = Lenghe dal navigadôr
+    .description = Sielç la lenghe di doprâ par mostrâ il menù, i messaçs e lis notifichis di { -brand-short-name }.
+browser-language-preferred-label =
+    .label = Lenghe preferide
+browser-language-fallback-label =
+    .label = Lenghe alternative
+    .description = Doprade dome se la localizazion de lenghe preferide no je complete.
+browser-language-install-error =
+    .message = In chest moment { -brand-short-name } nol rive a inzornâ la tô lenghe. Controle la conession a internet e torne prove.
+translate-web-pages =
+    .label = Volte il contignût web
+    .accesskey = t
+fx-translate-web-pages = { -translations-brand-name }
+# The <img> element is replaced by the logo of the provider
+# used to provide machine translations for web pages.
+translate-attribution = Traduzions di <img data-l10n-name="logo"/>
+translate-exceptions =
+    .label = Ecezions…
+    .accesskey = z
+settings-translations-header =
+    .label = Traduzions
+    .aria-label = Traduzions
+    .description = Volte lis pagjinis o il test selezionât. Par protezi la tô riservatece, lis traduzions a restin sul to dispositîf.
+settings-translations-offer-to-translate-label =
+    .label = Da une traduzion di dute la pagjine
+settings-translations-more-settings-button =
+    .label = Altris impostazions di traduzion
+    .description = Stabilìs preferencis pes lenghis, sîts web e traduzions fûr rêt.
+settings-translations-subpage-header =
+    .heading = Altris impostazions di traduzion
+settings-translations-subpage-speed-up-translation-header =
+    .label = Sveltìs la traduzion
+    .description = Discjame lis lenghis interiis par vê traduzions plui sveltis e par voltâ fûr rêt.
+settings-translations-subpage-automatic-translation-header =
+    .label = Traduzion automatiche
+settings-translations-subpage-always-translate-header =
+    .label = Tradûs simpri chestis lenghis
+settings-translations-subpage-never-translate-header =
+    .label = No ta tradusi mai chestis lenghis
+settings-translations-subpage-never-translate-sites-header =
+    .label = No sta tradusi mai chescj sîts
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = Par zontâ un sît, vierç il panel di traduzion <img data-l10n-name="translations-icon"/>, selezione lis <img data-l10n-name="settings-icon"/>impostazions di traduzion e dopo sielç “No sta tradusi mai chest sît”
+settings-translations-subpage-language-select-option =
+    .label = Zonte lenghe
+settings-translations-subpage-language-add-button =
+    .aria-label = Zonte lenghe
+    .title = Zonte lenghe
+settings-translations-subpage-download-languages-header =
+    .label = Discjame lenghis
+settings-translations-subpage-download-languages-select-option =
+    .label = Selezione lenghe
+settings-translations-subpage-download-languages-button =
+    .aria-label = Discjame lenghe
+    .title = Discjame lenghe
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size } MB)
+    .label = { $language } ({ $size } MB)
+settings-translations-subpage-no-languages-downloaded =
+    .label = Nissune lenghe discjariade
+settings-translations-subpage-no-languages-added =
+    .label = Nissune lenghe zontade
+settings-translations-subpage-download-progress = Discjariament in cors…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = Impussibil discjariâ { $language } ({ $size } MB)
+settings-translations-subpage-download-retry-button =
+    .label = Torne prove
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = Eliminâ { $language } ({ $size } MB)?
+settings-translations-subpage-download-delete-button =
+    .label = Elimine
+settings-translations-subpage-download-cancel-button =
+    .label = Anule
+settings-translations-subpage-no-sites-added =
+    .label = Nissun sît zontât
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Dopre lis impostazions dal to sisteme operatîf in “{ $localeName }” par formatâ datis, oris, numars e misuris.
+settings-spellcheck-header =
+    .label = Control ortografic
+check-user-spelling =
+    .label = Controle la ortografie intant che tu scrivis
+    .accesskey = t
+spellcheck-download-dictionaries =
+    .label = Discjame dizionaris
+spellcheck-promo =
+    .heading = Cemût doprâ il control ortografic
+    .message = Fâs clic diestri cul mouse suntun cjamp di test par ativâ o disativâ il control ortografic o par cambiâ la lenghe. No ducj i cjamps a supuartin il control ortografic.
+
+## General Section - Files and Applications
+
+files-and-applications-title = Files e aplicazions
+download-save-files-header =
+    .label = Salve i files in
+download-save-where-3 =
+    .aria-label = Salve i files in
+download-always-ask-where2 =
+    .label = Domande dulà salvâ i files prime di discjariâju
+    .accesskey = D
+download-private-browsing-delete2 =
+    .label = Sierant, elimine i files discjariâts dai barcons privâts
+    .accesskey = d
+download-header = Discjamâts
+download-save-where = Salve i files in
+    .accesskey = S
+download-choose-folder =
+    .label =
+        { PLATFORM() ->
+            [macos] Sielç…
+           *[other] Sgarfe…
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] S
+           *[other] g
+        }
+download-always-ask-where =
+    .label = Domande simpri dulà salvâ i files
+    .accesskey = a
+applications-header = Aplicazions
+applications-description = Sielç cemût che { -brand-short-name } al à di gjestî i files che tu discjariis dal web o lis aplicazions che tu dopris intant che tu navighis.
+applications-setting2 =
+    .label = Files e aplicazions
+    .description = Sielç cemût che { -brand-short-name } al à di gjestî i files e i contignûts.
+applications-filter =
+    .placeholder = Cîr gjenars di file o aplicazions
+applications-type-column =
+    .label = Gjenar di contignût
+    .accesskey = t
+applications-type-heading = Gjenar di contignût
+applications-action-column =
+    .label = Azion
+    .accesskey = A
+applications-action-heading = Azion
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = file { $extension }
+applications-action-save =
+    .label = Salve file
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Dopre { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Dopre { $app-name } (predefinide)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Dopre la aplicazion predefinide di macOS
+            [windows] Dopre la aplicazion predefinide di Windows
+           *[other] Dopre la aplicazion predefinide dal sisteme
+        }
+applications-use-other =
+    .label = Dopre alc altri…
+applications-select-helper = Selezione la aplicazion di supuart
+applications-manage-app =
+    .label = Detais de aplicazion…
+applications-always-ask =
+    .label = Domande simpri
+# Variables:
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Dopre { $plugin-name } (in { -brand-short-name })
+applications-open-inapp =
+    .label = Vierç in { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
+
+## Firefox updates
+
+applications-handle-new-file-types-description = Ce aial di fâ { -brand-short-name } cun chei altris files?
+applications-save-for-new-types =
+    .label = Salve i files
+    .accesskey = S
+applications-save-for-new-types2 =
+    .label = Salve in automatic i files
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Domande se vierzi o salvâ i files
+    .accesskey = D
+applications-ask-before-handling2 =
+    .label = Domande di vierzi o salvâ i files
+    .accesskey = a
+drm-group =
+    .label = Contignût DRM (Digital Rights Management, gjestion dai dirits digjitâi)
+drm-content-header = Contignût DRM (Digital Rights Management, gjestion dai dirits digjitâi)
+play-drm-content =
+    .label = Riprodûs contignût protet di DRM
+    .accesskey = p
+play-drm-content-learn-more = Plui informazions
+update-application-title = Inzornaments di { -brand-short-name }
+update-application-description = Ten { -brand-short-name } inzornât par vê lis miôrs prestazions, stabilitât e sigurece.
+# Variables:
+# $version (string) - Firefox version
+update-application-version = Version { $version } <a data-l10n-name="learn-more">Novitâts</a>
+update-history-2 =
+    .label = Mostre cronologjie inzornaments
+    .accesskey = M
+update-application-installation =
+    .label = Instalazion
+update-application-auto-2 =
+    .label = Instale in automatic i inzornaments (conseât)
+    .accesskey = a
+update-history =
+    .label = Mostre cronologjie inzornaments…
+    .accesskey = M
+update-application-allow-description = Permet a { -brand-short-name } di
+update-application-auto =
+    .label = Instale i inzornaments in automatic (conseât)
+    .accesskey = a
+update-application-check-choose-2 =
+    .label = Al controle la disponibilitât di inzornaments, ma tu sielzis tu cuant instalâju.
+    .accesskey = C
+update-application-check-choose =
+    .label = Controlâ la disponibilitât di inzornaments ma permeti al utent di sielzi se instalâju
+    .accesskey = C
+update-application-manual =
+    .label = Mai controlâ la disponibilitât di inzornaments (disconseât)
+    .accesskey = M
+update-application-background-enabled =
+    .label = Cuant che { -brand-short-name } nol è in esecuzion
+    .accesskey = C
+update-application-warning-cross-user-setting-2 =
+    .message = Cheste impostazion e vignarà aplicade a ducj i account di Windows e ai profîi di { -brand-short-name } che a doprin cheste instalazion di { -brand-short-name }.
+update-application-suppress-prompts-2 =
+    .label = Mostre mancul pro memoria di inzornaments
+    .accesskey = n
+update-application-warning-cross-user-setting = Cheste impostazion e vignarà aplicade a ducj i account di Windows e ai profîi di { -brand-short-name } che a doprin cheste instalazion di { -brand-short-name }.
+update-application-use-service =
+    .label = Dopre un servizi in sotfont par instalâ i inzornaments
+    .accesskey = v
+update-application-suppress-prompts =
+    .label = Mostre mancul notifichis pai inzornaments
+    .accesskey = n
+update-setting-write-failure-title2 = Erôr tal salvâ lis impostazions di inzornament
+# Variables:
+#   $path (string) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } al à vût un erôr e nol à salvât cheste modifiche. Viôt che par modificâ cheste impostazion di inzornament tu scugnis vê i permès di scriture sul file chi sot. Tu o l'aministradôr di sisteme o podaressis risolvi chest erôr dant al grup Utents (Users) il plen control di chest file.
+    
+    Impussibil scrivi sul file: { $path }
+update-in-progress-title = Inzornament in vore
+update-in-progress-message = Desideristu che { -brand-short-name } al continui cun chest inzornament?
+update-in-progress-ok-button = &Interomp
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continue
+
+## About Firefox
+
+about-firefox-header =
+    .heading = Informazions su { -brand-short-name }
+
+## Firefox updates
+
+update-application-heading =
+    .label = Inzornaments di { -brand-short-name }
+    .description = I inzornaments a miorin la velocitât, la stabilitât e la sigurece di { -brand-short-name }.
+update-application-suppress-prompts-heading =
+    .label = Notifichis
+update-application-updates-managed-by-os =
+    .message = I inzornaments a vegnin gjestîts dal to sisteme operatîf
+
+## Firefox support
+
+support-application-heading =
+    .label = Supuart par { -brand-short-name }
+    .description = Risolf problemis o condivît ideis cu la comunitât.
+support-get-help =
+    .label = Oten jutori
+support-share-ideas =
+    .label = Condivît ideis e opinions
+
+## General Section - Performance
+
+performance-title = Prestazions
+performance-use-recommended-settings-checkbox =
+    .label = Dopre lis impostazions conseadis pes prestazions
+    .accesskey = o
+performance-use-recommended-settings-desc = Chestis impostazions a son justadis pal hardware dal to computer e pal to sisteme operatîf.
+performance-settings-learn-more = Plui informazions
+performance-allow-hw-accel =
+    .label = Dopre acelerazion hardware se disponibile
+    .accesskey = r
+performance-limit-content-process-option = Numar massim di procès pai contignûts
+    .accesskey = N
+performance-limit-content-process-enabled-desc = Un numar plui grant di procès pe gjestion dai contignûts e pues miorâ lis prestazions cuant che si doprin tantis schedis, ma chest al puarte a doprâ plui memorie.
+performance-limit-content-process-blocked-desc = Si pues modificâ il numar di procès pai contignûts dome cu la version multiprocès di { -brand-short-name }. <a data-l10n-name="learn-more">Scuvierç cemût controlâ se al è atîf il multiprocès</a>
+# Variables:
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
+performance-default-content-process-count =
+    .label = { $num } (predefinît)
+performance-group =
+    .label = Prestazions
+performance-use-recommended-settings-checkbox-2 =
+    .label = Dopre lis impostazions conseadis pes prestazions
+    .description = Chestis impostazions a son stadis perfezionadis pal to hardware e pal to sisteme operatîf.
+    .accesskey = U
+
+## Accessibility page
+
+browsing-title = Navigazion
+browsing-group-label =
+    .aria-label = Navigazion
+browsing-use-autoscroll =
+    .label = Dopre scoriment automatic
+    .accesskey = a
+keyboard-and-scrolling-group =
+    .label = Navigazion e scoriment cu la tastiere
+motion-and-link-group =
+    .label = Animazions e stîl dai colegaments
+browsing-use-smooth-scrolling =
+    .label = Dopre scoriment delicât
+    .accesskey = c
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Mostre simpri lis sbaris di scoriment
+    .accesskey = o
+browsing-always-underline-links =
+    .label = Sotlinee simpri i colegaments
+    .accesskey = S
+browsing-use-onscreen-keyboard =
+    .label = Se al è necessari, mostre une tastiere virtuâl
+    .accesskey = c
+browsing-use-cursor-navigation =
+    .label = Dopre simpri i tascj di direzion de tastiere par navigâ intes pagjinis
+    .accesskey = D
+browsing-use-full-keyboard-navigation =
+    .label = Dopre il tast di tabulazion (Tab) par spostâ la selezion tra i controi dai modui e i colegaments
+    .accesskey = t
+browsing-search-on-start-typing =
+    .label = Cîr tal test cuant che tu scrivis alc
+    .accesskey = s
+settings-media-group =
+    .label = Media
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = Dopre Picture-in-Picture
+    .accesskey = e
+browsing-picture-in-picture-toggle-enabled =
+    .label = Abilite i controi video picture-in-picture
+    .accesskey = e
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = Continue a riprodusi i videos in modalitât Picture-in-Picture cuant che tu passis di une schede a chê altre
+    .accesskey = s
+browsing-picture-in-picture-learn-more = Plui informazions
+browsing-media-control =
+    .label = Controle i flus multimediâi cu la tastiere, lis scufis o la interface virtuâl
+    .accesskey = v
+recommendations-group =
+    .label = Conseis
+browsing-media-control-learn-more = Plui informazions
+browsing-cfr-recommendations =
+    .label = Consee estensions intant che tu navighis
+    .accesskey = C
+browsing-cfr-features =
+    .label = Consee funzionalitâts intant che tu navighis
+    .accesskey = f
+browsing-cfr-recommendations-learn-more = Plui informazions
+browsing-group =
+    .label = Navigazion
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = Acès facilitât
+preferences-default-zoom-select =
+    .aria-label = Ingrandiment predefinît
+preferences-fonts-family =
+    .label = Famee di caratars
+    .accesskey = D
+preferences-fonts-size =
+    .label = Dimension dal caratar
+    .accesskey = s
+preferences-fonts-advanced-settings =
+    .label = Impostazions avanzadis
+    .accesskey = A
+
+## General Section - Proxy
+
+network-settings-title = Impostazions di rêt
+network-proxy-connection-description = Configure cemût che { -brand-short-name } si conet a internet.
+network-proxy-connection-learn-more = Plui informazions
+network-proxy-connection-settings =
+    .label = Impostazions…
+    .accesskey = I
+network-proxy-group2 =
+    .label = Impostazions dal proxy
+    .description = Configure cemût che { -brand-short-name } si conet a internet.
+network-proxy-connection-settings2 =
+    .label = Configure il proxy
+    .description = La modifiche di chestis impostazions e podarès causâ problemis di conession
+    .accesskey = p
+
+## Home Section
+
+home-new-windows-tabs-header = Gnûfs barcons e schedis
+home-new-windows-tabs-description2 = Sielç ce che tu viodis cuant che tu vierzis la pagjine iniziâl, i gnûfs barcons e lis gnovis schedis.
+home-section =
+    .heading = Pagjine iniziâl e inviament
+
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = Navigadôr predefinît
+is-default-browser-2 =
+    .message = { -brand-short-name } al è il to navigadôr predefinît. Ben fate.
+is-not-default-browser-2 =
+    .message = Di po, { -brand-short-name } nol è il to predefinît.
+set-as-my-default-browser-2 =
+    .label = Definìs come predefinît
+    .accesskey = d
+
+## Custom Homepage subpage
+
+home-homepage-mode-label = Pagjine iniziâl e gnûfs barcons
+home-homepage-new-windows =
+    .label = Gnûfs barcons
+home-newtabs-mode-label = Gnovis schedis
+home-homepage-new-tabs =
+    .label = Gnovis schedis
+home-restore-defaults =
+    .label = Ripristine predefinîts
+    .accesskey = R
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (predefinît)
+home-mode-choice-custom =
+    .label = Direzions web personalizadis…
+home-mode-choice-blank =
+    .label = Pagjine vueide
+home-homepage-custom-url =
+    .placeholder = Tache un URL…
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = Gjestìs estension
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = Sielç un sît specific
+# This string has a special case for '1' and [other] (default). If necessary for
+# your language, you can add {$tabCount} to your translations and use the
+# standard CLDR forms, or only use the form for [other] if both strings should
+# be identical.
+use-current-pages =
+    .label =
+        { $tabCount ->
+            [1] Dopre la pagjine corinte
+           *[other] Dopre lis pagjinis corintis
+        }
+    .accesskey = c
+choose-bookmark =
+    .label = Dopre segnelibri…
+    .accesskey = b
+
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = Pagjine iniziâl
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = Pagjine iniziâl personalizade
+home-custom-homepage-subpage =
+    .heading = Pagjine iniziâl personalizade
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = Direzions di sîts web
+home-custom-homepage-address =
+    .placeholder = Inserìs une direzion
+home-custom-homepage-address-button =
+    .label = Zonte direzion
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = Nol è stât zontât ancjemò nissun sît.
+home-custom-homepage-delete-address-button =
+    .aria-label = Elimine la direzion
+    .title = Elimine la direzion
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = Sostituìs cun
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = Pagjinis viertis in chest moment
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = Segnelibris…
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header2 = Contignûts par { -firefox-home-brand-name }
+home-prefs-content-description2 = Sielç cuai contignûts vê su la tô videade di { -firefox-home-brand-name }.
+home-prefs-firefox-logo-header =
+    .label = Logo di { -brand-short-name }
+home-prefs-search-header =
+    .label = Ricercje sul Web
+home-prefs-search-header2 =
+    .label = Ricercje
+home-prefs-shortcuts-header =
+    .label = Scurtis
+home-prefs-shortcuts-description = Sîts che tu salvis o visitis
+home-prefs-shortcuts-select =
+    .aria-label = Scurtis
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Scurtis sponsorizadis
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-recommended-by-header =
+    .label = Conseât di { $provider }
+home-prefs-recommended-by-description-new = Contignûts ecezionâi par cure di { $provider }, part de famee { -brand-product-name }
+home-prefs-recommended-by-header-generic =
+    .label = Storiis conseadis
+home-prefs-recommended-by-description-generic = Contignûts ecezionâi curâts de famee di prodots { -brand-product-name }
+home-prefs-stories-header =
+    .label = Storiis
+home-prefs-stories-description = Storiis personalizadis in base ae tô ativitât
+home-prefs-stories-header2 =
+    .label = Storiis
+    .description = Contignûts ecezionâi curâts de famee di prodots { -brand-product-name }
+
+##
+
+home-prefs-recommended-by-learn-more = Cemût funzionial?
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Storiis patrocinadis
+home-prefs-recommended-by-option-recent-saves =
+    .label = Mostre salvaments resints
+home-prefs-highlights-option-visited-pages =
+    .label = Pagjinis visitadis
+home-prefs-highlights-options-bookmarks =
+    .label = Segnelibris
+home-prefs-highlights-option-most-recent-download =
+    .label = Discjariâts plui di resint
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pagjinis salvadis su { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Ativitât resinte
+home-prefs-recent-activity-description = Une selezion di sîts e contignûts resints
+home-prefs-recent-activity-select =
+    .aria-label = Ativitât resinte
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Piçulis notis
+home-prefs-snippets-description-new = Sugjeriments e novitâts di { -vendor-short-name } e { -brand-product-name }
+home-prefs-weather-header =
+    .label = Meteo
+home-prefs-weather-description = Previsions par vuê cuntune voglade
+home-prefs-weather-learn-more-link = Plui informazions
+home-prefs-widgets-header =
+    .label = Widgets
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = Listis
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = Temporizadôr
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = Sports
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = Orloi
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Prudele { -brand-product-name }
+home-prefs-mission-message = I nestris prudeladôrs a sostegnin la nestre mission di fâ sù un web miôr
+home-prefs-mission-message-learn-more-link = Scuvierç cemût
+home-prefs-mission-message2 =
+    .message = I nestris prudeladôrs a sostegnin la nestre mission di fâ sù un web miôr.
+home-prefs-manage-topics-link = Gjestìs argoments
+home-prefs-manage-topics-link2 =
+    .label = Gjestìs argoments
+home-prefs-choose-wallpaper-link = Sielç un fonts
+home-prefs-choose-wallpaper-link2 =
+    .label = Sielç un fonts
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = Par doprâ chestis funzions, stabilìs gnovis schedis o gnûfs barcons su { -firefox-home-brand-name }.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = Estension ({ $extension })
+# Variables:
+#   $num (number) - Number of rows displayed
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rie
+           *[other] { $num } riis
+        }
+
+## Search Section
+
+search-bar-header = Sbare di ricercje
+search-bar-hidden =
+    .label = Dopre la sbare de direzion par ricercjis e pe navigazion
+search-bar-shown =
+    .label = Zonte la sbare di ricercje te sbare dai struments
+search-engine-default-header = Motôr di ricercje predefinît
+search-engine-default-desc-2 = Chest al è il to motôr di ricercje predefinît inte sbare de direzion e te sbare di ricercje. Tu puedis cambiâlu cuant che tu vûs.
+search-engine-default-private-desc-2 = Sielç un motôr di ricercje predefinît diferent dome pai barcons privâts
+search-separate-default-engine =
+    .label = Dopre chest motôr di ricercje tai barcons privâts
+    .accesskey = p
+search-suggestions-header = Sugjeriments di ricercje
+search-suggestions-desc = Sielç cemût che a vegnin mostrâts i sugjeriments dai motôrs di ricercje.
+search-suggestions-option =
+    .label = Visualize sugjeriments di ricercje
+    .accesskey = s
+search-show-suggestions-option =
+    .label = Mostre sugjeriment di ricercje
+    .accesskey = s
+search-show-suggestions-url-bar-option =
+    .label = Mostre i sugjeriments di ricercje tai risultâts de sbare de direzion
+    .accesskey = M
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = Tai risultâts de sbare de direzion, mostre i sugjeriments di ricercje prime de cronologjie di navigazion.
+search-show-suggestions-private-windows-2 =
+    .label = Sugjeriments di ricercje tai barcons privâts
+search-suggestions-cant-show-2 =
+    .message = No vignaran mostrâts sugjeriments di ricercje tai risultâts de sbare di posizion, stant che tu âs configurât { -brand-short-name } in mût che no si visi mai la cronologjie.
+addressbar-header-1 =
+    .label = Sbare de direzion
+    .description = Sielç cuai sugjeriments mostrâ te sbare de direzion
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name }
+    .description = Sugjeriments di { -brand-short-name } e dai nestris colaboradôrs te sbare de direzion.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
+search-show-search-term-option-2 =
+    .label = Mostre i tiermins di ricercje te sbare de direzion su la pagjine dai risultâts
+search-separate-default-engine-2 =
+    .label = Dopre un motôr di ricercje predefinît diviers tai barcons privâts
+    .accesskey = D
+search-separate-default-engine-dropdown =
+    .aria-label = Motôr di ricercje predefinît tai barcons privâts
+search-suggestions-header-2 =
+    .label = Sugjeriments dai motôrs di ricercje
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Mostre i tiermins di cirî invezit che l'URL te pagjine dai risultâts dal motôr di ricercje predefinît
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "ahead" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option =
+    .label = Mostre sugjeriments di ricercje prime de cronologjie di navigazion tai risultâts de sbare de direzion
+search-show-suggestions-private-windows =
+    .label = Mostre i sugjeriments di ricercje tai barcons privâts
+suggestions-addressbar-settings-generic2 = Cambie lis impostazions pai altris sugjeriments de sbare de direzion
+search-suggestions-cant-show = No vignaran mostrâts sugjeriments di ricercje tai risultâts de sbare di posizion, stant che tu âs configurât { -brand-short-name } in mût che no si visi mai la cronologjie.
+search-one-click-header2 = Scurtis di ricercje
+search-one-click-desc = Cuant che tu scomencis a scrivi une peraule, sielç i motôrs di ricercje alternatîfs che a vegnin fûr sot de sbare de direzion e de sbare di ricercje.
+search-one-click-header-3 =
+    .label = Altris motôrs di ricercje
+    .description = Sielç ce motôrs di ricercje e ce scurtis mostrâ inte sbare de direzion.
+update-search-engine-success =
+    .message = Motôr di ricercje inzornât cun sucès
+search-edit-engine-2 =
+    .title = Modifiche motôr di ricercje
+search-delete-engine =
+    .title = Elimine motôr di ricercje
+search-enable-engine =
+    .title = Ative motôr di ricercje
+search-outlink-to-extensions-page =
+    .title = Gjestìs in estensions e temis
+search-choose-engine-column =
+    .label = Motôr di ricercje
+search-choose-keyword-column =
+    .label = Peraule clâf
+search-restore-default =
+    .label = Ripristine motôrs di ricercje predefinîts
+    .accesskey = d
+search-remove-engine =
+    .label = Gjave
+    .accesskey = G
+search-add-engine =
+    .label = Zonte
+    .accesskey = Z
+search-add-engine-2 =
+    .label = Zonte motôr di ricercje
+    .accesskey = Z
+search-edit-engine =
+    .label = Modifiche
+    .accesskey = e
+search-find-more-link = Cjate altris motôrs di ricercje
+search-filtering-for-add-engine = Zonte motôr
+# This warning is displayed when the chosen keyword is already in use
+# ('Duplicate' is an adjective)
+search-keyword-warning-title = Peraule clâf duplicade
+# Variables:
+#   $name (string) - Name of a search engine.
+search-keyword-warning-engine = Tu âs sielzût une peraule clâf za doprade par "{ $name }". Sielç une altre.
+search-keyword-warning-bookmark = Tu âs sielzût une peraule clâf za doprade par un segnelibri. Sielç une altre.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Al esist za un motôr di ricercje cul non “{ $name }”. Sielç un altri non.
+remove-engine-confirmation = Desideristu pardabon gjavâ chest motôr di ricercje?
+remove-engine-remove = Gjave
+remove-addon-engine-alert = Par gjavâ chest motôr di ricercje gjave il component adizionâl associât.
+search-engine-group =
+    .label = Motôr di ricercje predefinît
+search-default-engine =
+    .aria-label = Motôr di ricercje predefinît
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = Ricercje
+
+## Containers Section
+
+containers-back-button2 =
+    .aria-label = Torne aes impostazions
+containers-header = Schedis contignidôr
+containers-section-header =
+    .heading = Schedis contignidôr
+containers-add-button =
+    .label = Zonte gnûf contignidôr
+    .accesskey = Z
+containers-new-tab-check =
+    .label = Selezione un contignidôr par ogni gnove schede
+    .accesskey = S
+containers-settings-button =
+    .label = Impostazions
+containers-remove-button =
+    .label = Gjave
+containers-section-header2 =
+    .heading = Impostazions contignidôr
+containers-card-header2 =
+    .label = Contignidôrs
+    .description = Separe i cookies par contignidôr, cussì tu puedis doprâ plui accounts tal stes sît e limitâ lis spiis inter-sît.
+containers-add-button2 =
+    .label = Zonte gnûf contignidôr
+    .accesskey = Z
+containers-new-tab-check3 =
+    .label = Sielç un contignidôr par ogni gnove schede
+    .accesskey = S
+containers-new-tab-check2 =
+    .label = Sielç un contignidôr par ogni gnove schede
+    .accesskey = S
+    .description = Al vignarà vierzût il menù dai contignidôrs ogni volte che tu frachis il boton par vierzi une gnove schede.
+containers-settings-button2 =
+    .title = Impostazions
+containers-remove-button2 =
+    .title = Gjave
+
+## Account and sync
+
+sync-group-label =
+    .label = Sincronizazion
+account-group-label2 =
+    .label = Account
+account-disabled-group =
+    .label = Account
+    .description = Lis impostazions pal account no son disponibilis.
+account-placeholder2 =
+    .label = No tu âs fat l’acès
+    .description = Jentre cu lis credenziâls e ten i tiei dâts risiervâts, cifrâts e a disposizion dapardut là che tu dopris { -brand-short-name }.
+account-sync-section =
+    .heading = Account e sincronizazion
+pane-account-sync-title2 = Account e sincronizazion
+    .title = Account e sincronizazion
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
+sync-signedout-caption = Puartiti daûr il to Web
+sync-signedout-description2 = Sincronize segnelibris, cronologjie, schedis, passwords, components adizionâi e impostazions tra ducj i tiei dispositîfs.
+sync-signedout-account-signin3 =
+    .label = Jentre par sincronizâ…
+    .accesskey = J
+sync-signedout-account-signin-4 =
+    .label = Jentre tal to account par inviâ la sincronizazion
+    .accesskey = J
+sync-signedout-account-short =
+    .label = Jentre
+    .accesskey = J
+# This message contains two links and two icon images.
+#   `<img data-l10n-name="android-icon"/>` - Android logo icon
+#   `<a data-l10n-name="android-link">` - Link to Android Download
+#   `<img data-l10n-name="ios-icon">` - iOS logo icon
+#   `<a data-l10n-name="ios-link">` - Link to iOS Download
+#
+# They can be moved within the sentence as needed to adapt
+# to your language, but should not be changed or translated.
+sync-mobile-promo = Discjame Waterfox par <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> par sincronizâ cul to dispositîf mobil.
+
+## Firefox account - Signed in
+
+sync-profile-picture =
+    .tooltiptext = Cambie la imagjin dal profîl
+sync-profile-picture-with-alt =
+    .tooltiptext = Cambie la imagjin dal profîl
+    .alt = Cambie la imagjin dal profîl
+sync-profile-picture-account-problem =
+    .alt = Imagjin dal profîl pal account
+fxa-login-rejected-warning =
+    .alt = Avertiment
+sync-sign-out =
+    .label = Disconet…
+    .accesskey = g
+sync-sign-out2 =
+    .label = Disconet
+    .accesskey = g
+sync-manage-account = Gjestìs account
+    .accesskey = o
+sync-manage-account2 =
+    .label = Gjestìs account
+    .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-signedin-unverified = L'account { $email } nol è verificât.
+sync-signedin-unverified2 =
+    .label = { $email } no je inmò confermade
+    .description = Verifiche la tô casele di pueste par confermâ il to account e rindilu uficiâl.
+sync-signedin-login-failure = Jentre par tornâ a coneti { $email }
+sync-signedin-login-failure2 =
+    .label = Tu sês disconetût/disconetude di { $email }
+    .description = Torne jentre par tornâ a conetiti e inviâ la sincronizazion dai tiei dâts.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
+
+##
+
+sync-resend-verification =
+    .label = Torne invie la verifiche
+    .accesskey = d
+sync-verify-account =
+    .label = Verifiche account
+    .accesskey = V
+sync-remove-account =
+    .label = Gjave l'account
+    .accesskey = G
+sync-sign-in =
+    .label = Jentre
+    .accesskey = J
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronizazion: ATIVE
+prefs-syncing-on-2 =
+    .label = La sincronizazion e je ATIVE
+prefs-syncing-off = Sincronizazion: DISATIVADE
+prefs-syncing-off-2 =
+    .label = La sincronizazion e je DISATIVADE
+    .description = Ative la sincronizazion par recuperâ segnelibris, passwords, cronologjie e tant altri su cualsisei dispositîf.
+prefs-sync-turn-on-syncing =
+    .label = Ative la sincronizazion…
+    .accesskey = s
+prefs-sync-turn-on-syncing-2 =
+    .label = Ative la sincronizazion
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Sincronize segnelibris, cronologjie, schedis, passwords, components adizionâi e impostazions tra ducj i tiei dispositîfs.
+prefs-sync-now =
+    .labelnotsyncing = Sincronize cumò
+    .accesskeynotsyncing = u
+    .labelsyncing = Sincronizazion…
+prefs-sync-now-button =
+    .label = Sincronize cumò
+    .accesskey = u
+prefs-sync-now-button-2 =
+    .label = Sincronize cumò
+    .accesskey = u
+prefs-syncing-button =
+    .label = Sincronizazion…
+prefs-syncing-button-2 =
+    .label = Sincronizazion…
+    .title = Sincronize cumò
+
+## The list of things currently syncing.
+
+sync-syncing-across-devices-heading = Tu stâs sincronizant chescj elements su ducj i dispositîfs conetûts:
+sync-syncing-across-devices-heading-2 = Dâts sincronizâts tra dispositîfs
+sync-syncing-across-devices-empty-state2 =
+    .label = Gjestìs i dâts sincronizâts
+    .description = No tu stâs sincronizant nuie...par cumò. Scomence a sincronizâ par vê ducj i tiei dâts su ducj i tiei dispositîfs.
+sync-currently-syncing-bookmarks = Segnelibris
+sync-currently-syncing-history = Cronologjie
+sync-currently-syncing-tabs = Schedis viertis
+sync-currently-syncing-logins-passwords = Credenziâls e passwords
+sync-currently-syncing-passwords = Passwords
+sync-currently-syncing-addresses = Direzions
+sync-currently-syncing-creditcards = Cjartis di credit
+sync-currently-syncing-payment-methods = Metodis di paiament
+sync-currently-syncing-addons = Components adizionâi
+sync-currently-syncing-settings = Impostazions
+sync-manage-options =
+    .label = Gjestìs sincronizazion…
+    .accesskey = G
+sync-manage-options-2 =
+    .label = Gjestìs dâts sincronizâts
+    .accesskey = G
+settings-sync-disconnect-button =
+    .label = Disconet
+sync-change-options =
+    .label = Cambie…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog3 =
+    .title = Sielç ce sincronizâ
+    .style = min-width: 36em;
+    .buttonlabelaccept = Salve modifichis
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Disconet…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Lis modifichis ae liste di elements di sincronizâ a vignaran rifletûts su ducj i tiei dispositîfs conetûts.
+sync-engine-bookmarks =
+    .label = Segnelibris
+    .accesskey = l
+sync-engine-history =
+    .label = Cronologjie
+    .accesskey = r
+sync-engine-tabs =
+    .label = Schedis viertis
+    .tooltiptext = Une liste di ce che al è viert su ducj i dispositîfs sincronizâts
+    .accesskey = t
+sync-engine-logins-passwords =
+    .label = Credenziâls e passwords
+    .tooltiptext = Non utents e passwords che tu âs salvât
+    .accesskey = w
+sync-engine-passwords =
+    .label = Passwords
+    .tooltiptext = Lis passwords che tu âs salvât
+    .accesskey = P
+sync-engine-addresses =
+    .label = Direzions
+    .tooltiptext = Recapits salvâts (dome par scritori)
+    .accesskey = e
+sync-engine-creditcards =
+    .label = Cjartis di credit
+    .tooltiptext = Nons, numars e datis di scjadince (dome par scritori)
+    .accesskey = C
+sync-engine-payment-methods2 =
+    .label = Metodis di paiament
+    .tooltiptext = Nons, numars des cjartis e datis di scjadince
+    .accesskey = n
+sync-engine-addons =
+    .label = Components adizionâi
+    .tooltiptext = Estensions e temis par Waterfox desktop
+    .accesskey = C
+sync-engine-settings =
+    .label = Impostazions
+    .tooltiptext = Lis impostazions gjenerâls, di riservatece e sigurece che tu âs cambiât
+    .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Gjestìs ce sincronizâ sui dispositîfs colegâts
+    .style = min-width: 36em;
+    .buttonlabelaccept = Salve
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Disconet…
+    .buttonaccesskeyextra2 = D
+
+## The device name controls.
+
+sync-device-name-header = Non dispositîf
+sync-device-name-header-2 =
+    .label = Non dispositîf
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = Non dispositîf
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = Cambie non dal dispositîf
+    .accesskey = n
+sync-device-name-change =
+    .label = Cambie non dal dispositîf…
+    .accesskey = n
+sync-device-name-cancel =
+    .label = Anule
+    .accesskey = n
+sync-device-name-save =
+    .label = Salve
+    .accesskey = v
+sync-connect-another-device = Conet un altri dispositîf
+sync-connect-another-device-2 =
+    .label = Conet un altri dispositîf
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verifiche mandade
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Al è stât inviât a { $email } un colegament pe verifiche.
+sync-verification-not-sent-title = Impussibil mandâ la verifiche
+sync-verification-not-sent-body = No sin rivâts a mandâ une mail di verifiche in chest moment, par plasê torne prove plui indenant.
+
+## Privacy Section
+
+privacy-header = Riservatece dal navigadôr
+
+## Privacy Section - Logins and Passwords
+
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Credenziâls e passwords
+    .searchkeywords = { -lockwise-brand-short-name }
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-logins =
+    .label = Domande se salvâ credenziâls e passwords pai sîts web
+    .accesskey = r
+
+## Privacy Panel Settings
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = Passwords
+    .searchkeywords = credenziâls
+forms-passwords-header =
+    .label = Passwords
+    .aria-label = Passwords
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = Domande se salvâ lis passwords
+    .accesskey = D
+forms-manage-password-exceptions =
+    .label = Gjestìs ecezions pes passwords
+    .accesskey = G
+forms-exceptions =
+    .label = Ecezions…
+    .accesskey = z
+forms-generate-passwords =
+    .label = Sugjerìs e gjenere passwords complessis
+    .accesskey = u
+forms-suggest-passwords =
+    .label = Sugjerìs passwords complessis
+    .accesskey = S
+forms-breach-alerts =
+    .label = Mostre avîs pes passwords di sîts cjapadis dentri di violazions di dâts
+    .accesskey = t
+forms-breach-alerts-learn-more-link = Plui informazions
+preferences-relay-integration-checkbox =
+    .label = Sugjerìs mascaris di pueste eletroniche { -relay-brand-name } par protezi la tô direzion e-mail
+preferences-relay-integration-checkbox2 =
+    .label = Sugjerìs mascare e-mail di { -relay-brand-name } par protezi la tô direzion e-mail
+    .accesskey = r
+relay-integration-learn-more-link = Plui informazions
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = Compile in automatic credenziâls e passwords
+    .accesskey = i
+forms-saved-logins =
+    .label = Credenziâls salvadis…
+    .accesskey = l
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = Compile in automatic nons utent e passwords
+    .accesskey = C
+forms-fill-usernames-and-passwords-2 =
+    .label = Salve e compile in automatic nons utent e passwords
+    .accesskey = c
+forms-saved-passwords =
+    .label = Passwords salvadis
+    .accesskey = d
+forms-saved-passwords-2 =
+    .label = Gjestìs passwords salvadis
+    .accesskey = d
+forms-saved-passwords-searchkeywords = Sul to computer a son stadis memorizadis lis credenziâls par chescj sîts
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = Protezions in plui
+forms-primary-pw-use =
+    .label = Dopre une password principâl
+    .accesskey = U
+forms-primary-pw-use-2 =
+    .label = Dopre une password principâl
+    .description = Al zonte un nivel di sigurece in plui par protezi lis passwords salvadis.
+    .accesskey = U
+forms-primary-pw-set =
+    .label = Stabilìs password principâl
+forms-primary-pw-on-2 = La password principâl e je <strong>ATIVE</strong>
+forms-primary-pw-on =
+    .label = La password principâl e je ATIVE
+forms-primary-pw-change-2 =
+    .label = Cambie password principâl
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = Disativile
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = Domande la conferme dal acès al dispositîf par compilâ in automatic e gjestî lis passwords
+forms-os-reauth-2 =
+    .label = Pretint la conferme dal acès al dispositîf par gjestî lis passwords
+forms-primary-pw-learn-more-link = Plui informazions
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
+forms-master-pw-change =
+    .label = Cambie la password principâl…
+    .accesskey = m
+forms-primary-pw-change =
+    .label = Cambie password principâl…
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Une volte cognossude tant che password principâl
+forms-primary-pw-fips-title = Tu sês cumò te modalitât FIPS. FIPS al domande une password principâl no vueide.
+forms-master-pw-fips-desc = No si à rivât a cambiâ la password
+forms-windows-sso =
+    .label = Permet di doprâ l'acès unic di Windows pai accounts Microsoft, di vore e di scuele.
+forms-windows-sso-learn-more-link = Plui informazions
+forms-windows-sso-desc = Gjestìs i accounts tes tôs impostazions dal dispositîf
+windows-passkey-settings-label = Gjestìs passkeys tes impostazions di sisteme
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = Impostazions dal panel su la riservatece
+    .description = Oten assistence par protezi lis tôs informazions in rêt in { -brand-short-name }.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = Mostre i avîs di violazion
+    .accesskey = s
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Par creâ une password principâl, inserìs lis tôs credenziâls di acès a Windows. Chest al jude a protezi la sigurece dai tiei accounts.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = creâ une password principâl
+master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] cambiâ lis impostazions pai metodis di paiament
+       *[other] { -brand-short-name } al sta cirint di modificâ lis impostazions pai metodis di paiament. Par permeti la operazion, conferme l’acès al dispositîf.
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = Compilazion automatiche
+autofill-addresses-checkbox = Salve e compile direzions
+    .accesskey = a
+autofill-saved-addresses-button = Recapits salvâts
+    .accesskey = S
+autofill-payment-methods-checkbox-message = Salve e compile i metodis di paiament
+    .accesskey = m
+autofill-payment-methods-checkbox-submessage = Al inclût cjartis di credit e di debit
+    .accesskey = I
+autofill-saved-payment-methods-button = Metodis di paiament salvâts
+    .accesskey = v
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = Domande la conferme dal acès al dispositîf par compilâ in automatic e gjestî i metodis di paiament
+    .accesskey = o
+autofill-payment-methods-header =
+    .aria-label = Metodis di paiament
+autofill-payment-methods-checkbox-message-2 =
+    .label = Salve e auto-compile lis informazions di paiament
+    .accesskey = p
+autofill-payment-methods-manage-payments-title =
+    .heading = Gjestìs metodis di paiament
+autofill-payment-methods-manage-payments-button =
+    .label = Gjestìs i metodis di paiament
+    .accesskey = m
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = Domande conferme dal acès al dispositîf par compilâ in automatic e gjestî i metodis di paiament
+    .accesskey = o
+autofill-payment-methods-add-button = Zonte gnûf metodi di paiament
+payments-list-header =
+    .label = Metodis di paiament
+payments-delete-payment-prompt-title = Eliminâ chest metodi di paiament?
+payments-delete-payment-prompt-confirm-button = Elimine
+payments-delete-payment-prompt-cancel-button = Anule
+payments-delete-payment-button-label =
+    .aria-label = Elimine
+payments-edit-payment-button-label =
+    .aria-label = Modifiche
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = Nissun metodi di paiament zontât
+autofill-addresses-checkbox-message =
+    .label = Salve e compile in automatic i recapits
+    .accesskey = S
+autofill-addresses-manage-addresses-button =
+    .label = Gjestìs recapits e altris dâts
+    .accesskey = G
+addresses-list-header =
+    .label = Direzions
+addreses-delete-address-button-label =
+    .aria-label = Elimine
+addreses-edit-address-button-label =
+    .aria-label = Modifiche
+addresses-delete-address-prompt-title = Eliminâ cheste direzion?
+addresses-delete-address-prompt-confirm-button = Elimine
+addresses-delete-address-prompt-cancel-button = Anule
+autofill-addresses-add-button = Zonte gnûf recapit
+autofill-addresses-manage-addresses-title =
+    .heading = Gjestìs recapits e altris dâts
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = Nissun recapit zontât
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = Passwords e compilazion automatiche
+    .title = Passwords e compilazion automatiche
+preferences-passwords-autofill-header =
+    .heading = Passwords e compilazion automatiche
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = Recapits e altris dâts
+payments-group =
+    .label = Metodis di paiament
+
+## Privacy Section - History
+
+history-header = Cronologjie
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label = { -brand-short-name }
+    .accesskey = w
+history-remember-option-all =
+    .label = Si visarà la cronologjie
+history-remember-option-never2 =
+    .label = No sta memorizâ mai la cronologjie
+    .description = Ogni barcon si compuarte come un barcon privât. Se atîf, tu scugnis autorizâ lis estensions.
+history-remember-option-custom2 =
+    .label = Personalize la cronologjie
+history-remember-option-never =
+    .label = No si visarà mai la cronologjie
+history-remember-option-custom =
+    .label = Al doprarà lis impostazions personalizadis pe cronologjie
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } si visarà de navigazion, dai discjariaments, dai formularis e de cronologjie di ricercje.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } al doprarà lis stessis impostazions de navigazion privade, e nol tignarà in memorie nissune cronologjie di navigazion.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } al doprarà impostazions personalizadis pe navigazion, par discjariâ, pai formularis e pe cronologjie di ricercje.
+history-remember-description = { -brand-short-name } si visarà de navigazion, dai discjariaments, dai formularis e de cronologjie di ricercje.
+history-dontremember-description = { -brand-short-name } al doprarà lis stessis impostazions de navigazion privade, e nol tignarà in memorie nissune cronologjie di navigazion.
+history-private-browsing-permanent =
+    .label = Dopre simpri la modalitât di navigazion privade
+    .accesskey = p
+history-remember-browser-option =
+    .label = Memorize la cronologjie di navigazion e dai discjariaments
+    .accesskey = M
+history-remember-search-option =
+    .label = Memorize la cronologjie des ricercjis e dai formularis
+    .accesskey = M
+history-clear-on-close-option =
+    .label = Nete fûr la cronologjie cuant che si siere { -brand-short-name }
+    .accesskey = r
+history-clear-on-close-settings =
+    .label = Impostazions…
+    .accesskey = t
+history-shutdown-exceptions =
+    .label = Gjestìs ecezions
+    .accesskey = x
+history-clear-button =
+    .label = Nete la cronologjie…
+    .accesskey = s
+history-header2 =
+    .heading = Cronologjie
+history-section-header =
+    .label = Cronologjie
+    .description = Sielç ce che { -brand-short-name } al à di visâsi cuant che tu sieris il navigadôr.
+history-custom-section-header =
+    .label = Impostazions avanzadis
+    .description = Personalize ce che { -brand-short-name } al à di visâsi cuant che tu sieris il navigadôr.
+history-custom-button =
+    .label = Sielç ce che { -brand-short-name } al à di visâsi
+history-group =
+    .label = Cronologjie
+history-remember-option-all2 =
+    .label = Salve la cronologjie
+
+## Privacy Section - Site Data
+
+sitedata-header = Cookies e dâts dai sîts
+sitedata-total-size-calculating = Daûr a calcolâ la dimension dai dâts dai sîts e de cache…
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size3 = I sîts web a stan doprant <strong>{ $value } { $unit }</strong> di spazi sul disc.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = I tiei cookies, i dâts dai sîts e la cache memorizâts a stan doprant{ $value } { $unit } di spazi su disc.
+sitedata-learn-more = Plui informazions
+sitedata-delete-on-close2 =
+    .label = Nete vie i cookies e i dâts dai sîts web ogni volte che tu sieris { -brand-short-name }
+    .accesskey = c
+sitedata-delete-on-close =
+    .label = Elimine i cookies e i dâts dai sîts cuant che al ven sierât { -brand-short-name }
+    .accesskey = c
+sitedata-delete-on-close-private-browsing3 =
+    .message = In base aes impostazions de cronologjie, i cookies e i dâts dai sîts de tô session a vignaran eliminâts cuant che tu sierarâs { -brand-short-name }.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = La cronologjie no vignarà salvade.
+    .message = { -brand-short-name } al nete vie i cookies e i dâts dai sîts pe tô session cuant che tu sieris il navigadôr.
+sitedata-delete-on-close-private-browsing = in modalitât navigazion privade permanente, i cookies e i dâts dai sîts a vignaran simpri netâts cuant che si sierarà { -brand-short-name }.
+sitedata-delete-on-close-private-browsing2 = In base aes impostazions de cronologjie, i cookies e i dâts dai sîts de tô session a vignaran eliminâts cuant che tu sierarâs { -brand-short-name }.
+sitedata-allow-cookies-option =
+    .label = Acete i cookies e i dâts dai sîts
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloche i cookies e i dâts dai sîts
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Gjenar blocât
+    .accesskey = t
+sitedata-option-block-cross-site-trackers =
+    .label = Spiis (trackers) inter-sît
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Cookies inter-sît che a spiin
+sitedata-option-block-cross-site-cookies2 =
+    .label = Isole i cookies inter-sît
+sitedata-option-block-cross-site-cookies =
+    .label = Cookies inter-sît che a spiin e isole altris cookies inter-sît
+sitedata-option-block-unvisited =
+    .label = Cookies dai sîts web no visitâts
+sitedata-option-block-all-cross-site-cookies =
+    .label = Ducj i cookies inter-sît (cualchi sît al podarès funzionâ mâl)
+sitedata-option-block-all =
+    .label = Ducj i cookies (al causarà malfunzionaments dai sîts web)
+sitedata-clear2 =
+    .label = Nete dâts di navigazion
+    .accesskey = N
+sitedata-settings2 =
+    .label = Gjestìs dâts di navigazion
+    .accesskey = G
+sitedata-clear =
+    .label = Nete fûr i dâts…
+    .accesskey = û
+sitedata-settings =
+    .label = Gjestìs i dâts…
+    .accesskey = ì
+sitedata-cookies-exceptions =
+    .label = Gjestìs ecezions…
+    .accesskey = c
+sitedata-cookies-exceptions2 =
+    .label = Gjestìs ecezions
+    .accesskey = c
+    .description = Tu puedis specificâ i sîts web che ur ven simpri o mai concedude la utilizazion di cookies e dâts dai sîts.
+sitedata-heading =
+    .label = Dâts di navigazion
+    .description = Gjestìs cookies, cronologje, cache, dâts sît web e tant altri.
+sitedata-settings3 =
+    .label = Nete vie i dâts par specifics sîts
+    .accesskey = s
+sitedata-cookies-exceptions3 =
+    .label = Gjestìs ecezions
+    .accesskey = x
+    .description = Sielç cemût che sîts specifics a gjestissin i cookies e i dâts dai sîts.
+cookies-site-data-group =
+    .label = Cookies e dâts dai sîts
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Riduzion strissons pai cookies
+cookie-banner-handling-description = { -brand-short-name } al cîr in automatic di refudâ, tai sîts supuartâts, lis richiestis dai cookies sul strisson pai cookies.
+
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-blocker-header = Bloc dai strissons pai cookies
+cookie-banner-blocker-description = Cuant che un sît al domande di podê doprâ i cookies te navigazion privade, { -brand-short-name } al refude in automatic al puest to. Dome sui sîts supuartâts.
+cookie-banner-learn-more = Plui informazions
+forms-handle-cookie-banners =
+    .label = Ridûs i strissons pai cookies
+cookie-banner-blocker-checkbox-label =
+    .label = Refude in automatic i strissons pai cookies
+
+## Search Section
+
+addressbar-header = Sbare de direzion
+addressbar-suggest = Cuant che tu dopris la sbare de direzion, sugjerìs
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Sbare de direzion — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Sielç il gjenar di sugjeriments di visualizâ te sbare de direzion.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Plui informazions
+addressbar-locbar-history-option =
+    .label = Cronologjie di navigazion
+    .accesskey = r
+addressbar-locbar-bookmarks-option =
+    .label = Segnelibris
+    .accesskey = k
+addressbar-locbar-clipboard-option =
+    .label = Notis
+    .accesskey = N
+addressbar-locbar-openpage-option =
+    .label = Schedis viertis
+    .accesskey = v
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Scurtis
+    .accesskey = S
+addressbar-locbar-topsites-option =
+    .label = Sîts principâi
+    .accesskey = T
+addressbar-locbar-engines-option-1 =
+    .label = Sugjerìs motôrs di ricercje di doprâ
+    .accesskey = S
+addressbar-locbar-engines-option =
+    .label = Motôrs di ricercje
+    .accesskey = o
+addressbar-locbar-quickactions-option =
+    .label = Azions sveltis
+    .accesskey = Z
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = Ricercjis resintis
+    .accesskey = r
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = Sugjeriments di ricercje di tindince
+    .accesskey = t
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = Sugjeriments di { -brand-short-name }
+    .description = Ricêf sugjeriments dal web relatîfs ae tô ricercje.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = Sugjeriments dai sponsors
+    .description = Supuarte { -brand-short-name } cun sugjeriments sponsorizâts ocasionâi.
+addressbar-suggestions-settings = Modifiche lis preferencis pai sugjeriments dai motôrs di ricercje
+addressbar-locbar-showrecentsearches-option =
+    .label = Mostre ricercjis resintis
+    .accesskey = r
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Mostre sugjeriments di ricercje di tindince
+    .accesskey = t
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = Sugjeriments di { -brand-short-name }
+addressbar-locbar-suggest-nonsponsored-desc = Ricêf sugjeriments dal web relatîfs ae tô ricercje.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Sugjeriments dai sponsors
+addressbar-locbar-suggest-sponsored-desc = Supuarte { -brand-short-name } cun sugjeriments sponsorizâts ocasionâi.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = Oten sugjeriments di BrowserWorks intant che tu scrivis
+addressbar-dismissed-suggestions-label-2 =
+    .label = Sugjeriments ignorâts
+    .description = Ripristine i sugjeriments ignorâts dai sponsors e di { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = Ripristine sugjeriments
+addressbar-quickactions-learn-more = Plui informazions
+addressbar-dismissed-suggestions-label = Sugjeriments ignorâts
+addressbar-restore-dismissed-suggestions-description = Ripristine i sugjeriments ignorâts dai sponsors e di { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Ripristine
+
+## Privacy Section - Content Blocking
+
+content-blocking-enhanced-tracking-protection = Protezion miorade da lis spiis
+content-blocking-section-top-level-description = Lis spiis (trackers) ti stan daûr ator pe rêt par colezionâ informazions su lis tôs abitudinis di navigazion e su ce che ti interesse. { -brand-short-name } al bloche tancj di chestis spiis e altris scripts malevui.
+content-blocking-learn-more = Plui informazions
+content-blocking-fpi-incompatibility-warning = Tu stâs doprant First Party Isolation (FPI), che al passe parsore di cualchidune des impostazions di { -brand-short-name } sui cookies.
+# There is no need to translate "Resist Fingerprinting (RFP)". This is a
+# feature that can only be enabled via about:config, and it's not exposed to
+# standard users (e.g. via Settings).
+content-blocking-rfp-incompatibility-warning = O stin doprant “Resist al rilevament di stamp numeric” (Resist Fingerprinting - RFP), che al sostituìs cualchi impostazion di { -brand-short-name } relative ae protezion dal rilevament di stamp numeric. Chest al podarès causâ il malfunzionament di cualchi sît.
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Restritîf
+    .accesskey = R
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizât
+    .accesskey = P
+
+##
+
+content-blocking-etp-standard-desc = Belançât par vê protezion e prestazions. Lis pagjinis si cjariaran in maniere normâl.
+content-blocking-etp-strict-desc = Protezion miorade, ma cualchi sît o contignût al podarès no funzionâ ben.
+content-blocking-etp-custom-desc = Sielç cualis spiis (trackers) e scripts blocâ.
+content-blocking-etp-blocking-desc = { -brand-short-name } al bloche chescj:
+content-blocking-private-windows = Contignûts che a spiin tai barcons privâts
+content-blocking-cross-site-cookies-in-all-windows2 = Cookies inter-sît in ducj i barcons
+content-blocking-cross-site-tracking-cookies = Cookies inter-sît che a spiin
+content-blocking-all-cross-site-cookies-private-windows = Cookies inter-sît tai barcons privâts
+content-blocking-isolate-cross-site-cookies = Isole i cookies inter-sît
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies inter-sît che a spiin e isole i cookies che a restin
+content-blocking-social-media-trackers = Spiis (trackers) dai social media
+content-blocking-all-cookies = Ducj i cookies
+content-blocking-unvisited-cookies = Cookies dai sîts no visitâts
+content-blocking-all-windows-tracking-content = Contignûts che a spiin in ducj i barcons
+content-blocking-all-cross-site-cookies = Ducj i cookies inter-sît
+content-blocking-cryptominers = Minadôrs di criptomonede
+content-blocking-fingerprinters = Rilevadôrs di stamp numeric (fingerprinters)
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
+# the suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-known-and-suspected-fingerprinters = Rilevadôrs di stamp numeric cognossûts o suspiets
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Protezion totâl dai cookies al conten i cookies al sît che tu stâs navigant, cussì che i spions no puedin doprâju par stâti daûr tra i sîts.
+content-blocking-etp-standard-tcp-rollout-learn-more = Plui informazions
+content-blocking-etp-standard-tcp-title = Al inclût Protezion Totâl dai Cookies, la nestre miôr funzionalitât pal massim de riservatece
+content-blocking-warning-title = Atenzion!
+content-blocking-warning-title-2 = Al è pussibil che cualchi sît nol funzioni ben cuntune protezion da lis spiis restritive
+content-blocking-warning-title-custom = Al è pussibil che cualchi sît nol funzioni ben cuntune protezion da lis spiis personalizade
+# “Fix site issues” references the string content-blocking-exceptions-subheader
+content-blocking-and-isolating-etp-warning-description-4 = { -brand-short-name } al consee di doprâ lis impostazions “Risolf problemis cui sîts” par diminuî i malfunzionaments e i problemis cui contignûts. Se un sît nol funzione ben, prove a disativâ la protezion da lis spiis par cjariâ ducj i contignûts.
+content-blocking-and-isolating-etp-warning-description-2 = In cualchi sît cheste impostazion e podarès impedî la visualizazion dai contignûts o di lavorâ ben. Se un sît al somee vuast, tu puedis disativâ la protezion da lis spiis par chel sît e cjariâ ducj i contignûts.
+content-blocking-warning-learn-how = Impare cemût
+content-blocking-baseline-exceptions-3 =
+    .label = Risolf problemis plui grivis cui sîts (opzion conseade)
+    .description = Al jude a cjariâ e a funzionâ i sîts, lant a sblocâ nome i elements essenziâi che a podaressin contignî spiis. Cheste soluzion e permet di risolvi i problemis plui comuns.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = Risolf problemis plui piçui cui sîts
+    .description = Al ripristine robis come i videos intun articul o lis sezions dai coments, lant a sblocâ i elements che a podaressin contignî spiis. Chest al pues diminuî i problemis dai sîts ma al da mancul protezion. Tu scugnis doprâlu adun cu lis corezions pai problemis plui grivis.
+content-blocking-baseline-uncheck-warning-dialog-title = Disativâ pardabon lis corezions?
+content-blocking-baseline-uncheck-warning-dialog-body = Cheste impostazion e permet di risolvi i problemis plui comuns cui sîts. Se tu le disativis, al è pussibil che cualchi sît nol funzioni e { -brand-short-name } nol rivarà a judâti a risolvi chescj problemis.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = Disative corezions
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = Ten ativis lis corezions
+content-blocking-reload-description = Tu varâs di tornâ a cjariâ lis tôs schedis par aplicâ chestis modifichis.
+content-blocking-reload-tabs-button =
+    .label = Torne cjarie dutis lis schedis
+    .accesskey = r
+content-blocking-tracking-content-label =
+    .label = Contignûts che a spiin
+    .accesskey = t
+content-blocking-tracking-protection-option-all-windows =
+    .label = In ducj i barcons
+    .accesskey = a
+content-blocking-option-private =
+    .label = Dome tai barcons privâts
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Cambie la liste dai blocs
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Altris informazions
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Minadôrs di criptomonede
+    .accesskey = M
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Rilevadôrs di stamp numeric
+    .accesskey = l
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = Rilevadôrs di stamp numeric cognossûts
+    .accesskey = K
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = Rilevadôrs di stamp numeric suspiets
+    .accesskey = S
+
+## Privacy Section - Tracking
+
+tracking-manage-exceptions =
+    .label = Gjestìs ecezions…
+    .accesskey = j
+
+## Privacy Section - Permissions
+
+permissions-header = Permès
+permissions-location = Posizion
+permissions-location-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-xr = Realtât virtuâl
+permissions-xr-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-camera = Fotocjamare
+permissions-camera-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-microphone = Microfon
+permissions-microphone-settings =
+    .label = Impostazions…
+    .accesskey = t
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Selezion cassis
+permissions-speaker-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-notification = Notifichis
+permissions-notification-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-notification-link = Plui informazions
+permissions-notification-pause =
+    .label = Met in pause lis notifichis sin cuant che si torne a inviâ { -brand-short-name }
+    .accesskey = n
+permissions-autoplay2 =
+    .label = Riproduzion automatiche
+permissions-autoplay = Riproduzion automatiche
+permissions-autoplay-settings =
+    .label = Impostazions…
+    .accesskey = t
+permissions-block-popups2 =
+    .label = Bloche barcons a comparse e indreçaments di tiercis bandis
+    .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = Gjestìs ecezions
+    .description = Zonte sîts web che puedin vierzi i barcons a comparse e doprâ indreçaments di tiercis bandis.
+    .accesskey = E
+    .searchkeywords = comparse
+permissions-addon-install-warning3 =
+    .label = Mostre un avis cuant che i sîts web a provin a instalâ estensions
+    .accesskey = W
+permissions-addon-exceptions2 =
+    .label = Sielç i sîts web che a puedin instalâ estensions
+    .accesskey = e
+permissions-block-popups =
+    .label = Bloche i barcons a comparse
+    .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Ecezions…
+    .accesskey = E
+    .searchkeywords = comparse
+permissions-addon-install-warning =
+    .label = Vise cuant che i sîts web a cirin di instalâ components adizionâi
+    .accesskey = V
+permissions-addon-exceptions =
+    .label = Ecezions…
+    .accesskey = E
+permissions-location2 =
+    .label = Posizion
+permissions-localhost2 =
+    .label = Aplicazions e servizis dal dispositîf
+permissions-local-network2 =
+    .label = Dispositîfs di rêt locâl
+permissions-xr2 =
+    .label = Realtât virtuâl
+permissions-camera2 =
+    .label = Fotocjamare
+permissions-microphone2 =
+    .label = Microfon
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = Cassis
+permissions-notification2 =
+    .label = Notifichis
+permissions-header3 =
+    .label = Permès
+    .description = Gjestìs ce che i sîts web a puedin doprâ ,controlâ o ativâ.
+permissions-data-section =
+    .heading = Permès e dâts
+pane-permissions-data-title2 = Permès e dâts
+    .title = Permès e dâts
+
+## Privacy Section - Data Collection
+
+collection-header = Racuelte e ûs dai dâts di { -brand-short-name }
+collection-header2 = Racuelte e utilizazion dâts di { -brand-short-name }
+    .searchkeywords = telemetrie
+preferences-collection-description = O combatìn par dâti la pussibilitât di sielzi e i tirìn sù dome i minims dâts necessaris par miorâ { -brand-product-name } par ducj.
+preferences-collection-privacy-notice = Viôt la informative su la riservatece
+preferences-across-profiles = Chestis impostazions a vegnin aplicadis a ducj i profîi di { -brand-product-name } su chest dispositîf.
+preferences-view-profiles = Viôt ducj i profîi
+collection-description = O cirìn di dâ ai utents la pussibilitât si sielzi e tirâ sù dome i dâts necessaris par realizâ e miorâ { -brand-short-name } par ducj. O domandìn simpri il permès prime di ricevi informazions personâls.
+collection-privacy-notice = Informative su la riservatece
+collection-health-report-telemetry-disabled = No tu stâs plui permetint a { -vendor-short-name } di caturâ dâts tecnics e di interazion. Ducj i dâts esistents a vignaran eliminâts chi di 30 dîs.
+collection-health-report-telemetry-disabled-link = Plui informazions
+backup-multi-profile-warning-message =
+    .message = Par jessi sigûrs che cheste modifiche e vignarà includude tai tiei backups, vierç ogni profîl e sielç "Fâs backup cumò" tes impostazions.
+nimbus-rollouts =
+    .label = Permet a { -brand-short-name } di miorâ lis funzionalitâts, lis prestazions e la stabilitât tra un inzornament e chel altri.
+    .description = Lis modifichis a vignaran aplicadis di lontan.
+addon-recommendations3 =
+    .label = Permet racomandazions personalizadis su lis estensions
+    .description = Ricêf conseis su estensions che ti permetin di miorâ la tô esperience di navigazion.
+collection-usage-ping =
+    .label = Mande ping di utilizazion zornaliere a { -vendor-short-name }
+    .accesskey = u
+collection-usage-ping-description = Chest al permet a { -vendor-short-name } di stimâ il numar di utents atîfs.
+collection-health-report2 =
+    .label = Mande dâts tecnics e di interazion a { -vendor-short-name }
+    .accesskey = r
+collection-health-report =
+    .label = Permet a { -brand-short-name } di inviâ dâts tecnics e di interazion a { -vendor-short-name }
+    .accesskey = r
+collection-health-report-link = Plui informazions
+collection-health-report-description = Chest nus jude a miorâ funzionalitâts, prestazions e stabilitât di { -brand-product-name }
+collection-studies2 =
+    .label = Instale e fâs studis
+collection-studies-description = Prove lis funzionalitâts e lis ideis prime che a vegnin publicadis par ducj.
+collection-studies =
+    .label = Permet a { -brand-short-name } di instalâ e puartâ indenant studis
+collection-studies-link = Visualize i studis di { -brand-short-name }
+addon-recommendations2 =
+    .label = Permet racomandazions personalizadis su lis estensions
+addon-recommendations-description = Ricêf conseis su estensions che ti permetin di miorâ la tô esperience di navigazion.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Te configurazion di cheste version e al è stât disativât l'inviament dai dâts.
+collection-backlogged-crash-reports2 =
+    .label = Mande in automatic lis segnalazions sui colàs
+    .accesskey = c
+collection-backlogged-crash-reports-description = Chest al jude { -vendor-short-name } a diagnosticâ e risolvi problemis cul navigadôr. Lis segnalazions a puedin includi dâts personâi e sensibii.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = Stessis impostazions, gnûf aspiet!
+    .message = O vin metût sù une pagjine plui facile di viodi e di esplorâ. Lis tôs impostazions personâls no son cambiadis  e dut al è restât al so puest. Sugjeriment: dopre la funzion di ricercje par cjatâ daurman ce che ti covente.
+settings-redesign-promo-dismiss-button =
+    .label = Capît
+addon-recommendations =
+    .label = Permet a { -brand-short-name } di rindi personalizâts i conseis di estensions
+addon-recommendations-link = Plui informazions
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = La segnalazion di dâts e je stade disativade te configurazion di cheste compilazion
+collection-backlogged-crash-reports-with-link = Permet a { -brand-short-name } di inviâ a to non segnalazions di colàs regjistradis in precedence <a data-l10n-name="crash-reports-link">Plui informazions</a>
+    .accesskey = c
+privacy-segmentation-section-header = Gnovis funzionalitâts che a miorin la navigazion
+privacy-segmentation-section-description = Cuant che us ufrìn funzionalitâts che a doprin i vuestris dâts par dâus esperience plui personâl:
+privacy-segmentation-radio-off =
+    .label = Dopre lis impostazions conseadis di { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Mostre informazions detaiadis
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = Racuelte e utilizazion dâts di { -brand-short-name }
+    .description = O combatìn par dâti la pussibilitât di sielzi e i tirìn sù dome i minims dâts necessaris par miorâ { -brand-product-name } par ducj.
+    .searchkeywords = telemetrie
+data-collection-link = Viôt la informative su la riservatece
+data-collection-preferences-across-profiles =
+    .message = Chestis impostazions a vegnin aplicadis a ducj i profîi di { -brand-product-name } su chest dispositîf.
+data-collection-profiles-link = Viôt ducj i profîi
+data-collection-health-report-telemetry-disabled =
+    .message = No tu stâs plui permetint a { -vendor-short-name } di caturâ dâts tecnics e di interazion. Ducj i dâts esistents a vignaran eliminâts chi di 30 dîs.
+data-collection-health-report =
+    .label = Mande dâts tecnics e di interazion a { -vendor-short-name }
+    .accesskey = r
+    .description = Chest nus jude a miorâ funzionalitâts, prestazions e stabilitât di { -brand-product-name }
+data-collection-health-report-disabled =
+    .label = Mande i dâts tecnics e di interazion a { -vendor-short-name }
+    .accesskey = r
+    .description = La comunicazion dai dâts e je disativade te configurazion doprade par cheste version.
+data-collection-run-studies =
+    .label = Permet a { -brand-short-name } di puartâ indenant studis su lis funzionalitâts
+    .description = { -brand-short-name } al sielç a câs i utents par provâ lis funzionalitâts, cussì di rivâ a miorâ la cualitât par ducj.
+data-collection-studies-link =
+    .label = Visualize i studis di { -brand-short-name }
+data-collection-backlogged-crash-reports =
+    .label = Mande in automatic i segnalazions di colàs
+    .description = Chest al jude { -vendor-short-name } a diagnosticâ e risolvi problemis cul navigadôr. Lis segnalazions a puedin contignî dâts personâi o sensibii.
+    .accesskey = c
+data-collection-usage-ping =
+    .label = Mande ping di utilizazion zornaliere a { -vendor-short-name }
+    .description = Chest al permet a { -vendor-short-name } di stimâ il numar di utents atîfs.
+    .accesskey = u
+
+## Privacy Section - Website Advertising Preferences
+
+website-advertising-header = Impostazions pes publicitâts tai sîts web
+website-advertising-private-attribution =
+    .label = Permet ai sîts web di fâ misurazions publicitariis tal rispiet de riservatece
+    .accesskey = a
+website-advertising-private-attribution-description = Chest al permet ai sîts di valutâ lis prestazions dai lôr anuncis cence tirâ sù dâts personâi.
+
+## Privacy Section - Security
+##
+## It is important that wording follows the guidelines outlined on this page:
+## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
+
+security-header = Sigurece
+browsing-protection-group2 =
+    .label = Protezion dai contignûts ingjanôs e dal software pericolôs.
+    .description = I sîts e i files discjariâts pericolôs a puedin meti in pericul i tiei dâts e il tô dispositîf. { -brand-short-name } ju bloche in automatic e ti vise in câs di software pericolôs o malvolût.
+security-browsing-protection = Protezion dai contignûts ingjanôs e dal software pericolôs
+security-enable-safe-browsing =
+    .label = Bloche i contignûts pericolôs e ingjanôs
+    .accesskey = B
+security-enable-safe-browsing-link = Plui informazions
+security-safe-browsing-warning =
+    .message = Se tu disativis cheste funzion, tu ridusis il nivel di protezion cuintri fraudis, sîts danôs e files discjariâts pericolôs.
+security-block-downloads =
+    .label = Bloche i discjariaments pericolôs
+    .accesskey = d
+security-block-uncommon-software =
+    .label = Vise in câs di software indesiderât e no comun
+    .accesskey = c
+
+## Privacy Section - Certificates
+
+certs-header = Certificâts
+certs-enable-ocsp =
+    .label = Domande ai servidôrs dai rispuindidôrs OCSP di confermâ la validitât corinte dai certificâts
+    .accesskey = Q
+certs-view =
+    .label = Visualize certificâts…
+    .accesskey = c
+certs-devices =
+    .label = Dispositîfs di sigurece…
+    .accesskey = D
+certs-thirdparty-toggle =
+    .label = Permet a { -brand-short-name } di considerâ atendibii in automatic i certificâts lidrîs di tiercis parts che tu instalis
+    .accesskey = t
+certs-devices-enable-fips = Ative FIPS
+space-alert-over-5gb-settings-button =
+    .label = Vierç Impostazions
+    .accesskey = I
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } al sta finint il spazi su disc.</strong> Al è pussibil che i contignûts dai sîts web no vignedin visualizâts ben. Tu puedis netâ i dâts archiviâts in Impostazions > Riservatece e sigurece > Cookies e dâts di sîts.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } al sta finint il spazi su disc.</strong> Al è pussibil che i contignûts dai sîts web no vignedin visualizâts ben. Visite “Plui informazions” par otimizâ la utilizazion dal to disc cussì di vê une esperience di navigazion miorade.
+certs-description3 =
+    .label = Certificâts
+    .description = Al configure i certificâts che { -brand-short-name } al dopre par verificâ lis conessions siguris.
+certs-view2 =
+    .label = Gjestìs certificâts
+    .accesskey = C
+certs-devices2 =
+    .label = Gjestìs i dispositîfs di sigurece
+    .accesskey = D
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modalitât Dome-HTTPS
+httpsonly-description3 = Permet dome conessions siguris ai sîts web. { -brand-short-name } al domandarà prime di stabilî une conession che no je sigure.
+httpsonly-learn-more2 = Cemût che e funzione la modalitât dome-HTTPS
+httpsonly-description = HTTPS al da une conession sigure e cifrade tra { -brand-short-name } e i sîts web che tu visitis. La plui part dai sîts web e supuarte HTTPS e se la modalitât Dome-HTTPS e je ative, alore { -brand-short-name } al doprarà HTTPS in dutis lis conessions.
+httpsonly-learn-more = Plui informazions
+httpsonly-radio-enabled =
+    .label = Abilite la modalitât Dome-HTTPS in ducj i barcons
+httpsonly-radio-enabled-pbm =
+    .label = Abilite la modalitât Dome-HTTPS dome intai barcons privâts
+httpsonly-radio-disabled3 =
+    .label = No sta ativâ la modalitât dome-HTTPS
+    .description = Al è pussibil che { -brand-short-name } al inzorni distès cualchi conession
+httpsonly-radio-disabled =
+    .label = No sta abilitâ la modalitât Dome-HTTPS
+httpsonly-group =
+    .label = Modalitât Dome-HTTPS
+    .description = Permet dome conessions siguris ai sîts web. { -brand-short-name } al domandarà prime di stabilî une conession che no je sigure.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
+
+## DoH Section
+
+preferences-doh-header = DNS sore HTTPS
+dns-over-https-group2 =
+    .label = DNS sore HTTPS
+    .description = Il mecanisim di risoluzion dai nons di domini sore HTTPS (DNS sore HTTPS) al cifre lis ricercjis di sîts in mût che al sedi plui dificil savê ce che tu visitis pal to furnidôr di servizi internet o par altris.
+preferences-doh-description = La risoluzion dai nons di domini (DNS) sore HTTPS e mande lis richiestis pai nons dai dominis midiant une conession cifrade, creant un DNS sigûr e fasint in mût che al sedi plui dificil par altris sogjets viodi i sîts che tu stâs par visitâ.
+preferences-doh-description2 = Il sisteme di risoluzion dai nons di domini (DNS) sore HTTPS al invie lis richiestis pai nons di domini a traviers di une conession cifrade, furnint un DNS sigûr e fasint in mût che al sedi plui dificil scuvierzi i sîts web che tu stâs par visitâ.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Stât: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Furnidôr: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL no valit
+preferences-doh-steering-status = Daûr a doprâ il furnidôr locâl
+preferences-doh-status-active = Atîf
+preferences-doh-status-disabled = Disativât
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = No atîf ({ $reason })
+preferences-doh-group-message = Ative il DNS sigûr doprant:
+preferences-doh-group-message2 = Ative DNS sore HTTPS doprant:
+preferences-doh-expand-section =
+    .tooltiptext = Altris informazions
+preferences-doh-setting-default =
+    .label = Protezion predefinide
+    .accesskey = d
+preferences-doh-default-desc = { -brand-short-name } al decît cuant doprâ un DNS sigûr par protezi la tô riservatece.
+preferences-doh-default-detailed-desc-1 = Dopre un DNS sigur tes regjons dulà che al è disponibil
+preferences-doh-default-detailed-desc-2 = Dopre il to risolvidôr di DNS predefinît se al capite un probleme cul furnidôr di DNS sigûr
+preferences-doh-default-detailed-desc-3 = Dopre un furnidôr locâl, se pussibil
+preferences-doh-default-detailed-desc-4 = Disative se daûr di VPN o se a son atîfs controi parentâi o politichis di aziende
+preferences-doh-default-detailed-desc-5 = Disative se une rêt e domande a { -brand-short-name } di no doprâ un DNS sigûr
+preferences-doh-setting-enabled =
+    .label = Protezion aumentade
+    .accesskey = I
+preferences-doh-enabled-desc = Tu puedis decidi se doprâ un DNS sigûr e sielzi il furnidôr.
+preferences-doh-enabled-detailed-desc-1 = Dopre il furnidôr che tu âs sielt
+preferences-doh-enabled-detailed-desc-2 = Dopre il to risolvidôr di DNS predefinît dome se a vegnin fûr problemis cul DNS sigûr
+preferences-doh-setting-strict =
+    .label = Protezion massime
+    .accesskey = m
+preferences-doh-strict-desc = { -brand-short-name } al doprarà simpri un DNS sigûr. Tu viodarâs un avîs sui risis di sigurece prime di doprâ il to DNS di sisteme.
+preferences-doh-strict-detailed-desc-1 = Dopre dome il furnidôr che tu âs selezionât
+preferences-doh-strict-detailed-desc-2 = Vise simpri se il DNS sigûr nol è disponibil
+preferences-doh-strict-detailed-desc-3 = Se il DNS sigûr nol è disponibil i sîts no si cjariaran o no funzionaran ben
+preferences-doh-setting-off =
+    .label = Disativât
+    .accesskey = O
+preferences-doh-off-desc = Dopre il to risolvidôr DNS predefinît
+preferences-doh-checkbox-warn =
+    .label = Vise se une tierce part e impedìs di doprâ il DNS sigûr
+    .accesskey = W
+preferences-doh-select-resolver = Sielç il furnidôr:
+preferences-doh-exceptions-description = { -brand-short-name } nol doprarà il DNS sigûr su chescj sîts
+preferences-doh-manage-exceptions =
+    .label = Gjestìs ecezions…
+    .accesskey = x
+preferences-doh-overview-default =
+    .label = Protezion predefinide
+    .description = Dopre il DNS sigûr dulà che al è disponibil.
+preferences-doh-overview-custom =
+    .label = Personalizade
+    .description = Dopre simpri il DNS sigûr vint il control sul tô provider e il compuartament di repeç.
+preferences-doh-overview-off =
+    .label = Disativade
+    .description = Dopre il to risolutôr DNS predefinît.
+preferences-doh-advanced-button =
+    .label = Impostazions avanzadis
+preferences-doh-advanced-section =
+    .label = Impostazions avanzadis
+    .description = Il mecanisim di risoluzion dai nons di domini midiant HTTPS (DoH) al cifre lis ricercjis sui sîts in mût che al sedi plui dificil pal tô furnidôr di internet, o par altris, viodi ce che tu stâs visitant.
+preferences-doh-manage-exceptions2 =
+    .label = Gjestìs ecezions
+    .accesskey = x
+preferences-doh-radio-default =
+    .label = Predefinît
+    .description = Dopre il DNS sigûr dulà che al è disponibil
+preferences-doh-radio-custom =
+    .label = Personalizât
+    .description = Dopre simpri un DNS sigûr vint il control sul to furnidôr di servizis internet e su la modalitât di repeç
+preferences-doh-radio-off =
+    .label = Disativât
+    .description = Dopre il to risolvidôr di nons (DNS) predefinît
+preferences-doh-fallback-label =
+    .label = Visimi simpri se il DNS sigûr nol è disponibil
+preferences-doh-status-item-off =
+    .message = DNS sore HTTPS al è disativât
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = DNS sore HTTPS nol funzione parcè che al è vignût fûr un erôr ({ $reason }) intant che si cirive di doprâ il furnidôr { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = DNS sore HTTPS nol funzione parcè che o vin ricevût un URL che nol jere valit ({ $reason })
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = DNS sore HTTPS al dopre il furnidôr { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = DNS sore HTTPS nol funzione parcè che al è vignût fûr un erôr ({ $reason }) intant che si cirive di doprâ il furnidôr locâl { $name }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = DNS sore HTTPS al dopre il furnidôr locâl { $name }
+preferences-doh-select-resolver-label =
+    .label = Sielç il furnidôr:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = Dopre chest furnidôr pe risoluzion DNS sore HTTPS
+preferences-doh-custom-provider-label =
+    .aria-label = Inserìs un URL personalizât pal funidôr
+preferences-doh-header2 =
+    .heading = DNS sore HTTPS
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = Sigurece de conession e dal software
+preferences-connection-link-section =
+    .label = Sigurece de conession e dal software
+    .description = Scuvierç cemût che lis conessions a restin siguris, il software danôs al ven blocât e i sîts web a vegnin verificâts.
+preferences-connection-link-button =
+    .label = Impostazions avanzadis
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Scritori
+downloads-folder-name = Discjamâts
+choose-download-folder-title = Sielç une cartele pai files discjamâts:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = Aspiet
+browser-theme-manage-link =
+    .label = Gjestìs i temis di { -brand-short-name }
+related-settings-group =
+    .label = Impostazions coreladis
+
+## AI controls page
+
+preferences-ai-controls-description = Cun { -brand-short-name } tu âs simpri une sielte, ancje par doprâ o mancul lis gnovis funzionalitâts basadis su la IA. Ca di pôc a rivaran gnûfs controi.
+preferences-ai-controls-block-ai-label = Bloche i mioraments basâts su la IA.
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = Se tu blochis cheste funzion in { -brand-short-name }, no tu viodarâs i mioraments basâts su la IA, sedino gnûfs o za esistents, ni tu viodarâs i barcons a comparse relatîfs. <a data-l10n-name="link">Scuvierç altris detais</a> su ce che al è includût e cemût controlâ lis funzionalitâts basadis sul tradizionâl machine learning (aprendiment de machine), come i sugjeriments di ricercje e lis racomandazions.
+preferences-ai-controls-blocked-message =
+    .message = Tant che impostazion predefinide, lis funzionalitâts basadis su la IA, sedino gnovis o za presintis, a saran blocadis. Par ativâ une specifiche funzion, dopre i controi chi sot.
+preferences-ai-controls-on-device-group =
+    .label = IA sul dispositîf
+    .description = Chestis funzions a doprin piçui modei di IA che a vegnin discjariâts sul tô dispositîf cuant che tu lis dopris. Fasint cussì la tô riservatece e ven tutelade.
+preferences-ai-controls-translations-control =
+    .label = Traduzions
+    .description = Navighe sul web cence interuzions te tô lenghe preferide.
+preferences-ai-controls-translations-more-link = Altris impostazions pes traduzions
+preferences-ai-controls-pdfjs-control =
+    .label = Test alternatîf pes imagjins tal visualizadôr PDF di { -brand-short-name }
+    .description = Cuant che tu zontis imagjins ai PDFs, a vegnin zontadis descrizions par rindilis plui acessibilis.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = Sugjeriments pai grups di schedis
+    .description = Fati dâ sugjeriments su cemût clamâ i grups e organizâ lis tôs schedis.
+preferences-ai-controls-key-points-control =
+    .label = Ponts di rilêf tes anteprimis dai colegaments
+    .description = Viôt une curte sintesi prime di vierzi un colegament.
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = Furnidôrs di chatbot IA te sbare laterâl
+    .description = Ten di voli un chatbot cuant che tu navighis. Sielç tra Anthropic Claude, ChatGPT, Copilot, Google Gemini, e Le Chat Mistral.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = Chatbot te sbare laterâl
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = Disponibile
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = Ativade
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = Blocade
+preferences-ai-controls-state-description-before = Significât des opzions:
+preferences-ai-controls-state-description-available = <strong>Disponibile:</strong>  tu viodarâs la funzion e tu podarâs doprâle.
+preferences-ai-controls-state-description-enabled = <strong>Ativade:</strong> tu âs ativade cheste funzion.
+preferences-ai-controls-state-description-blocked = <strong>Blocade:</strong> ni tu viodarâs la funzion ni tu podarâs doprâle. Se e dopre la IA sul dispositîf, ducj i modei za discjariâts a vignaran gjavâts.
+preferences-ai-controls-block-confirmation-heading = Blocâ i mioraments basâts su la IA?
+preferences-ai-controls-block-confirmation-description = In { -brand-short-name } no tu viodarâs mioraments basâts su la IA, sedino gnûfs o za presints, ni i relatîfs messaçs a comparse. Dopo, tu podarâs sblocâ dutis lis funzions che tu desideris continuâ a doprâ.
+preferences-ai-controls-block-confirmation-features-start = Ce che al vignarà blocât:
+preferences-ai-controls-block-confirmation-translations = Traduzions
+preferences-ai-controls-block-confirmation-pdfjs = Test alternatîf pes imagjins tal visualizadôr PDF di { -brand-short-name }
+preferences-ai-controls-block-confirmation-tab-group-suggestions = Sugjeriments pai grups di schedis
+preferences-ai-controls-block-confirmation-key-points = Ponts di rilêf tes anteprimis dai colegaments
+preferences-ai-controls-block-confirmation-sidebar-chatbot = Furnidôrs di chatbot inte sbare laterâl
+preferences-ai-controls-block-confirmation-features-after = Il bloc al cjape dentri ancje lis estensions che doprin la IA di { -brand-short-name }.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = Anule
+preferences-ai-controls-block-confirmation-confirm =
+    .label = Bloche
+preferences-ai-controls-header3 =
+    .heading = Controi IA
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = { -brand-short-name } al è in vuaite
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name } al sugjerìs cualchi modifiche par miorâ la sigurece
+security-privacy-status-ok-label = La protezion miorade da lis spiis e je ative
+security-privacy-status-problem-label = O vin cjatât impostazions che a van a tocjâ la tô protezion
+security-privacy-status-problem-helper-label = Viôt i problemis
+security-privacy-status-pending-trackers-label = Ricercje dal numar di spiis blocadis di { -brand-short-name } tal ultin mês
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label =
+    { $trackerCount ->
+        [one] { $trackerCount } spie blocade intal ultin mês
+       *[other] { $trackerCount } spiis blocadis intal ultin mês
+    }
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = Tu stâs doprant la <a data-l10n-name="strict-tracking-protection">protezion restritive</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = Tu stâs doprant la <a data-l10n-name="custom-tracking-protection">protezion personalizade</a>
+security-privacy-status-up-to-date-label = Tu âs instalade la ultime e plui sigure version di { -brand-short-name }
+security-privacy-status-update-needed-label = E je disponibile une gnove version di { -brand-short-name }.
+security-privacy-status-update-error-label = { -brand-short-name } al à fastidis a inzornâsi
+security-privacy-status-update-checking-label = { -brand-short-name } al sta controlant la presince di inzornaments
+security-privacy-status-update-needed-description = Inzorne par vê i ultins mioraments in velocitât, stabilitât e sigurece.
+security-privacy-status-update-button-label =
+    .label = Inzorne { -brand-short-name }
+security-privacy-image-warning =
+    .alt = Un scût cul pont esclamatîf par mostrâti preocupazion sui tiei avîs di sigurece.
+security-privacy-image-ok =
+    .alt = Un scût segnât par mostrâ che no tu âs problemis di sigurece in pîts
+security-privacy-issue-card =
+    .heading = Avîs di sigurece
+issue-card-reset-button =
+    .label = Ripristine
+issue-card-dismiss-button =
+    .tooltiptext = Ignore
+    .aria-label = Ignore
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = Protezion miorade da lis spiis
+    .description = I sîts web a doprin spiis par stâ daûr ai tiei moviments in rêt e par mostrâti publicitât invasive. { -brand-short-name } ti fâs scût intant che tu navighis e ti bloche in automatic lis spiis, cussì che tu âs tu il plen control de tô ativitât digjitâl.
+preferences-etp-level-standard =
+    .label = Standard (predefinît)
+    .description = Fuarte e afidabile protezion che e funzione ben cu la maiorance dai sîts web.
+preferences-etp-level-strict =
+    .label = Restritive
+    .description = Protezions plui fuartis che a fermin plui spiis, ma che a puedin creâ malfunzionaments su cualchi sît.
+preferences-etp-level-custom =
+    .label = Personalizade
+    .description = Sielç ce protezion ativâ o disativâ.
+preferences-etp-status-advanced-button =
+    .label = Impostazions avanzadis
+preferences-etp-status-protections-dashboard-link =
+    .label = Viôt il cruscot cu lis protezions personalizadis
+    .description = Viôt tropis spiis insidiosis che { -brand-short-name } al à blocât par te, includudis spiis dai social media, rilevadôrs di stamp numeric e minadôrs di criptomonede.
+preferences-etp-header =
+    .heading = Protezion miorade da lis spiis
+preferences-etp-advanced-settings-group =
+    .label = Impostazions avanzadis
+    .description = I sîts web a doprin spiis par stâ daûr dai tiei moviments in rêt e mostrâti  publicitât invasive. { -brand-short-name } ti fâs scût intant che tu navighis, blocant in automatic la plui part des spiis cussì che tu sês tu a vê il control su la tô ativitât digjitâl.
+preferences-etp-customize-button =
+    .label = Personalize la protezion da lis spiis
+preferences-etp-reload-tabs-hint =
+    .message = Torne cjarie lis schedis par aplicâ chestis modifichis.
+preferences-etp-reload-tabs-hint-button =
+    .label = Torne cjame dutis lis schedis
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = Isole i cookies inter-sît

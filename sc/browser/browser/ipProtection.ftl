@@ -1,0 +1,123 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Toolbar button tooltip reflects VPN state
+
+ipprotection-button =
+    .label = VPN
+    .tooltiptext = VPN
+ipprotection-button-error =
+    .label = Ativa sa VPN
+    .tooltiptext = Ativa sa VPN
+
+##
+
+# The word "Beta" is intended to be uppercase in the experiment label.
+ipprotection-experiment-badge =
+    .label = BETA
+ipprotection-help-button =
+    .tooltiptext = Aberi sa pàgina de agiudu pro VPN
+ipprotection-title = VPN
+
+## Buttons used for all feature introduction callouts
+
+ipprotection-feature-introduction-title = Iscoberi sa VPN, immoe a disponimentu deretu dae su navigadore
+ipprotection-feature-introduction-title-1 = Proa sa VPN integrada de { -brand-product-name }
+ipprotection-feature-introduction-link-text-2 = Imprea sa <a data-l10n-name="learn-more-vpn">VPN nostra</a>, una funtzionalidade noa e integrada pro cuare sa positzione tua e amparare is datos tuos.
+ipprotection-feature-introduction-link-text-private-browsing-2 = Imprea sa <a data-l10n-name="learn-more-vpn">VPN nostra</a>, una funtzionalidade noa e integrada pro cuare sa positzione tua e amparare is datos tuos, fintzas cando ses impreende sa Navigatzione privada.
+ipprotection-feature-introduction-description-private-browsing = Nàviga in una manera galu prus segura cuende sa positzione tua, fintzas cando impreas una ventana privada.
+ipprotection-feature-introduction-description-captive-portal = Nàviga in una manera galu prus segura cuende sa positzione tua, fintzas cando impreas retes Wi-FI pùblicas.
+ipprotection-feature-introduction-button-primary = Imbeniente
+ipprotection-feature-introduction-button-secondary-not-now = Immoe nono
+ipprotection-feature-introduction-button-secondary-not-now-menuitem =
+    .label = Immoe nono
+ipprotection-feature-introduction-button-secondary-no-thanks = No, gràtzias
+ipprotection-feature-introduction-button-secondary-no-thanks-menuitem =
+    .label = No, gràtzias
+ipprotection-feature-introduction-button-get-started = Cumintza
+
+## Site settings callout
+
+ipprotection-site-settings-callout-title = Sèbera in ue boles impreare sa VPN
+ipprotection-site-settings-callout-subtitle = Disativa sa VPN pro unu situ ispetzìficu e dd’amus a regordare cando dd’as a torrare a visitare.
+ipprotection-site-settings-callout-button = Apo cumprèndidu
+
+## Location selection callout
+
+ipprotection-location-selection-callout-primary-button = Proa immoe
+ipprotection-location-selection-callout-secondary-button = Iscarta
+
+## Panel
+
+# Also used for the callout shown in private browsing
+unauthenticated-vpn-title = Proa sa VPN integrada de { -brand-product-name }
+unauthenticated-hide-location-message-3 = <a data-l10n-name="learn-more-vpn">Cua sa positzione tua</a> durante sa navigatzione cun { -brand-product-name }.
+unauthenticated-get-started = Cumintza
+site-exclusion-toggle-enabled-1 =
+    .label = Imprea sa VPN pro custu situ
+    .aria-label = Sa VPN est ativa pro custu situ
+site-exclusion-toggle-disabled-1 =
+    .label = Imprea sa VPN pro custu situ
+    .aria-label = Sa VPN est disativada pro custu situ
+ipprotection-settings-link =
+    .label = Cunfiguratzione
+
+## Status card
+
+# Button to turn off the VPN
+ipprotection-button-turn-vpn-off = Disativa sa VPN
+# Button to turn off the VPN when the VPN panel is open while viewing
+# a page from an excluded site.
+ipprotection-button-turn-vpn-off-excluded-site = Disativa sa VPN in totue
+# Button to turn on the VPN
+ipprotection-button-turn-vpn-on = Ativa sa VPN
+# Button while VPN is connecting
+ipprotection-button-connecting = Ativatzione in cursu…
+ipprotection-connection-status-connected-1 = Sa VPN est ativada
+    .aria-label = Sa VPN est ativada
+ipprotection-connection-status-disconnected-1 = Sa VPN est disativada
+    .aria-label = Sa VPN est disativada
+ipprotection-connection-status-excluded-1 = Sa VPN est disativada pro custu situ
+    .aria-label = Sa VPN est disativada pro custu situ
+ipprotection-connection-status-connecting-1 = Connessione VPN in cursu…
+    .aria-label = Connessione VPN in cursu…
+
+## Location controls
+
+# The button displays the selected VPN location.
+# This shows the default selection, "Recommended" which is the recommended location as determined by Firefox.
+ipprotection-recommended-location-button = Positzione: cussigiadu
+ipprotection-recommended-location-badge = NOU
+# Variables
+#   $country (string) - The country selected for the VPN server location
+ipprotection-location-country-button = Positzione: { $country }
+# Label shown next to a VPN location that the user cannot select.
+ipprotection-locations-unavailable-label = No a disponimentu
+
+## VPN paused state
+
+upgrade-vpn-button = Proa { -mozilla-vpn-brand-name }
+
+## Messages and errors
+
+ipprotection-connection-status-generic-error-description = Torra·nche a proare de immoe a calicunu minutu.
+ipprotection-connection-status-generic-error-try-again = Torra·nche a proare a pustis.
+ipprotection-connection-status-network-error-title-1 = Controlla sa connessione a sa rete
+    .aria-label = Controlla sa connessione a sa rete
+ipprotection-connection-status-blocked-error-title-1 = Sa VPN no est a disponimentu
+    .aria-label = Sa VPN no est a disponimentu
+confirmation-hint-ipprotection-navigated-to-excluded-site = Sa VPN est disativada pro custu situ
+ipprotection-connection-status-generic-error-title-1 = Impossìbile connètere a sa VPN
+    .aria-label = Impossìbile connètere a sa VPN
+
+## IP Protection Settings
+
+ip-protection-autostart-private-checkbox =
+    .label = In ventanas privadas
+
+## IP Protection alerts
+
+vpn-paused-alert-close-tabs-button = Serra totu is ischedas
+vpn-error-alert-body = Torra·nche a proare a pustis.

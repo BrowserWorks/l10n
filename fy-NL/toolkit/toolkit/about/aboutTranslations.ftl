@@ -1,0 +1,73 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# The title of the about:translations page.
+about-translations-title = { -brand-short-name }-oersettingen
+# The brief description of the Translations functionality on the page.
+about-translations-description = Direkte oersettingen dy’t jo privacy respektearje.
+about-translations-learn-more-link = Mear ynfo
+# An info message displayed if the device's hardware is not compatible with the Translations feature requirements.
+about-translations-unsupported-info-message-2 =
+    .heading = Oersetting is net beskikber op dit apparaat
+    .message = Probearje nei in oar apparaat oer te stappen.
+# An info message displayed when translations are disabled and locked by enterprise policy.
+about-translations-policy-disabled-info-message =
+    .heading = Oersettingen binne foar jo organisaasje net beskikber
+    .message = Dit is belied dat troch jo behearder ynsteld is.
+# An info message displayed when translations are disabled but can still be unblocked.
+about-translations-feature-blocked-info-message =
+    .heading = Deblokkearje dizze funksje om tekst oer te setten
+    .message = It liket derop dat jo AI-betsjinningseleminten bywurke hawwe om dizze funksje te blokkearjen. Deblokkearje de funksje op elk winske momint om dizze brûken te gean.
+about-translations-feature-blocked-unblock-button = Blokkearring opheffe
+# An error message displayed when the language list fails to load.
+about-translations-language-load-error-message-2 =
+    .heading = Kin talen net lade
+    .message = Kontrolearje jo ynternetferbining en probearje it opnij.
+about-translations-language-load-error-button = Opnij probearje
+# An error message displayed when a translation request fails.
+about-translations-translation-error-heading = Der is in probleem bard by it oersetten
+about-translations-translation-error-subtext = Probearje it opnij.
+about-translations-translation-error-button = Opnij probearje
+# An informational message displayed when the detected language is not supported.
+# Variables:
+#   $language (String) - The display name of the detected language.
+about-translations-detected-language-unsupported-heading-2 = Sorry, wy stypje noch gjin oersettingen fan it { $language } út
+about-translations-detected-language-unsupported-heading-unknown-2 = Sorry, wy stypje noch gjin oersettingen fan dizze taal út
+about-translations-detected-language-unsupported-subtext = Kies in oare taal.
+# Placeholder text shown in the source-language text area when the user has not typed any text.
+about-translations-input-placeholder =
+    .placeholder = Oer te setten tekst tafoegje
+# Text displayed on the source-language selector when no explicit option is selected
+# and no language has been identified from the content of the source-language text area.
+about-translations-detect-default-label =
+    .label = Taal detektearje
+# Text displayed on the source-language selector when no explicit option is selected
+# and a valid language has been identified from the content of the source-language text area.
+# Variables:
+#   $language (string) - The localized display name of the detected language
+about-translations-detect-language-label =
+    .label = { $language } (detektearre)
+# Placeholder text shown in the target-language output area when no translation has occurred.
+about-translations-output-placeholder =
+    .placeholder = Oersetting
+# Button label for copying the translated output to the clipboard.
+about-translations-copy-button-default =
+    .label = Kopiearje
+    .title = Oersetting kopiearje
+# Button label shown after the translated output has been copied to the clipboard.
+about-translations-copy-button-copied =
+    .label = Kopiearre
+    .title = Oersetting kopiearre
+# Text displayed on target-language selector when no language option is selected.
+about-translations-select-label =
+    .label = Taal selektearje
+# A message displayed in the target-language output area while waiting for the translation to complete.
+about-translations-translating-message = Oersette…
+# The title attribute for the swap languages button, which swaps the selected
+# source and target languages, reversing the direction of translation.
+about-translations-swap-languages =
+    .title = Talen wikselje
+# The title attribute for the button that clears the source text area.
+about-translations-clear-button =
+    .title = Boarnetekst wiskje

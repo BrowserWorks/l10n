@@ -1,0 +1,291 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## App Menu
+
+appmenuitem-banner-update-downloading =
+    .label = កំពុងទាញយក​បច្ចុប្បន្នភាព { -brand-shorter-name }
+appmenuitem-banner-update-available =
+    .label = មានបច្ចុប្បន្នភាព — ទាញយក​ឥឡូវនេះ
+appmenuitem-banner-update-manual =
+    .label = មានបច្ចុប្បន្នភាព — ទាញយក​ឥឡូវនេះ
+appmenuitem-banner-update-unsupported =
+    .label = មិន​អាច​ធ្វើបច្ចុប្បន្នភាពបានទេ — ប្រព័ន្ធ​មិន​ត្រូវគ្នា
+appmenuitem-banner-update-restart =
+    .label = មានបច្ចុប្បន្នភាព — ចាប់ផ្ដើម​ឡើងវិញ​ឥឡូវនេះ
+appmenuitem-new-tab =
+    .label = ផ្ទាំង​ថ្មី
+appmenuitem-new-window =
+    .label = បង្អួច​​​ថ្មី
+appmenuitem-new-private-window =
+    .label = បង្អួច​ឯកជន​ថ្មី
+appmenuitem-history =
+    .label = ប្រវត្តិ
+appmenuitem-downloads =
+    .label = ទាញ​យក
+appmenuitem-passwords =
+    .label = ពាក្យសម្ងាត់
+appmenuitem-extensions-and-themes =
+    .label = ផ្នែកបន្ថែម និងរចនាប័ទ្ម
+appmenuitem-extensions =
+    .label = ផ្នែក​បន្ថែម
+appmenuitem-addons-and-themes =
+    .label = កម្មវិធីបន្ថែមស្បែក
+appmenuitem-print =
+    .label = បោះពុម្ព…
+appmenuitem-find-in-page =
+    .label = ស្វែងរកក្នុងទំព័រ…
+appmenuitem-translate =
+    .label = បកប្រែទំព័រ…
+appmenuitem-zoom =
+    .value = ពង្រីក
+appmenuitem-more-tools =
+    .label = ឧបករណ៍ច្រើនទៀត
+appmenuitem-help =
+    .label = ជំនួយ
+appmenuitem-exit2 =
+    .label =
+        { PLATFORM() ->
+            [linux] ចេញ
+           *[other] ចេញ
+        }
+appmenu-menu-button-closed2 =
+    .tooltiptext = បើកមុីនុយកម្មវិធី
+    .label = { -brand-short-name }
+appmenu-menu-button-opened2 =
+    .tooltiptext = បឹទមុីនុយកម្មវិធី
+    .label = { -brand-short-name }
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = ការកំណត់
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-zoom-enlarge =
+    .label = ពង្រីក
+appmenuitem-zoom-reduce =
+    .label = បង្រួម
+appmenuitem-fullscreen =
+    .label = អេក្រង់​ពេញ
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+appmenu-remote-tabs-sign-into-sync =
+    .label = ចូល​ដើម្បី​ធ្វើ​សមកាលកម្ម…
+appmenu-remote-tabs-turn-on-sync =
+    .label = បើកសមកាលកម្ម...
+# This is shown after the tabs list if we can display more tabs by clicking on the button
+appmenu-remote-tabs-showmore =
+    .label = បង្ហាញផ្ទាំងច្រើនទៀត
+    .tooltiptext = បង្ហាញផ្ទាំងច្រើនទៀតពីឧបករណ៍នេះ
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = ផ្ទាំងអសកម្ម
+    .tooltiptext = មើលផ្ទាំងដែលអសកម្មនៅលើឧបករណ៍នេះ
+# This is shown beneath the name of a device when that device has no open tabs
+appmenu-remote-tabs-notabs = គ្មានផ្ទាំងបើកទេ
+# This is shown when Sync is configured but syncing tabs is disabled.
+appmenu-remote-tabs-tabsnotsyncing = បើកសមកាលកម្មផ្ទាំងដើម្បីបង្ហាញបញ្ជីនៃផ្ទាំងពីឧបករណ៍ផ្សេងទៀតរបស់អ្នក ។
+appmenu-remote-tabs-opensettings =
+    .label = ការ​កំណត់
+# This is shown when Sync is configured but this appears to be the only device attached to
+# the account. We also show links to download Firefox for android/ios.
+appmenu-remote-tabs-noclients = ចង់​មើល​ផ្ទាំង​របស់​អ្នក​ពី​ឧបករណ៍​ផ្សេង​នៅ​ទីនេះ​មែន​ទេ?
+appmenu-remote-tabs-connectdevice =
+    .label = ភ្ជាប់​ឧបករណ៍​ផ្សេង
+appmenu-remote-tabs-welcome = មើលបញ្ជីផ្ទាំងពីឧបករណ៍ផ្សេងទៀតរបស់អ្នក។
+appmenu-remote-tabs-unverified = គណនី​របស់​អ្នក​ត្រូវធ្វើការ​​ផ្ទៀងផ្ទាត់។
+appmenuitem-fxa-toolbar-sync-now2 = ធ្វើសមកាលកម្មឥឡូវនេះ
+appmenuitem-fxa-sign-in = ចូលទៅកាន់ { -brand-product-name }
+appmenuitem-fxa-manage-account = គ្រប់គ្រង​គណនី
+appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = គណនី
+# Variables
+# $time (string) - Localized relative time since last sync (e.g. 1 second ago,
+# 3 hours ago, etc.)
+appmenu-fxa-last-sync = ធ្វើសកម្មកាលចុងក្រោយ { $time }
+    .label = ធ្វើសកម្មកាលចុងក្រោយ { $time }
+appmenu-fxa-sync-and-save-data2 = ធ្វើសមកាលកម្ម និងរក្សាទុកទិន្នន័យ
+appmenu-fxa-signed-in-label = ចូល
+appmenu-fxa-setup-sync =
+    .label = បើកការធ្វើសមកាលកម្ម ...
+appmenu-fxa-setup-sync-new = បើក
+appmenuitem-save-page =
+    .label = រក្សា​ទុក​ទំព័រជា...
+appmenuitem-fxa-sync-off-title = សមកាលកម្មត្រូវបានបិទ
+appmenuitem-fxa-sync-off-description = ការពារ និងចូលប្រើចំណាំ ពាក្យសម្ងាត់ និងច្រើនទៀតរបស់អ្នកនៅគ្រប់ទីកន្លែង។
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = អ្វីដែលថ្មី
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = ជួបដំណឹងមុខងារថ្មីៗ
+    .accesskey = f
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-button-idle =
+    .label = កម្រងព័ត៌មាន
+    .tooltiptext = ថត​កម្រងព័ត៌មាន​ប្រតិបត្តិការ
+profiler-popup-button-recording =
+    .label = កម្រងព័ត៌មាន
+    .tooltiptext = កម្រងព័ត៌មាន​កំពុងថត​ប្រវត្តិរូប
+profiler-popup-header-text = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = បង្ហាញព័ត៌មានបន្ថែម
+profiler-popup-description-title =
+    .value = កាត់ត្រា វិភាគ ចែករំលែក
+profiler-popup-description = សហការ​ទាក់ទង​នឹង​បញ្ហា​ប្រតិបត្តិការ​ដោយ​ផ្សព្វផ្សាយ​កម្រងព័ត៌មាន​ដើម្បីចែករំលែក​ជាមួយ​ក្រុម​របស់អ្នក។
+profiler-popup-learn-more-button =
+    .label = ស្វែងយល់បន្ថែម
+profiler-popup-settings =
+    .value = ការកំណត់
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = កែសម្រួួលការកំណត់…
+profiler-popup-recording-screen = កំពុងថត …
+profiler-popup-start-recording-button =
+    .label = ចាប់ផ្ដើមថត
+profiler-popup-discard-button =
+    .label = បោះបង់
+profiler-popup-capture-button =
+    .label = ចាប់យក
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## Profiler presets
+## They are shown in the popup's select box.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+profiler-popup-presets-web-developer-label =
+    .label = អ្នកអភិវឌ្ឍន៍គេហទំព័រ
+profiler-popup-presets-graphics-label =
+    .label = ក្រាហ្វិក
+profiler-popup-presets-media-label =
+    .label = មេឌៀ
+profiler-popup-presets-ml-label =
+    .label = សិក្ខាម៉ាស៊ីន
+profiler-popup-presets-networking-label =
+    .label = បណ្តាញ
+# "Power" is used in the sense of energy (electricity used by the computer).
+profiler-popup-presets-power-label =
+    .label = ថាមពល
+
+## History panel
+
+appmenu-manage-history =
+    .label = គ្រប់គ្រងប្រវត្តិ
+appmenu-restore-session =
+    .label = ស្ដារ​សម័យ​មុន
+appmenu-clear-history =
+    .label = សម្អាត​ប្រវត្តិ​ថ្មីៗ…
+appmenu-recent-history-subheader = ប្រវត្តិ​ថ្មីៗ
+appmenu-recently-closed-tabs =
+    .label = ផ្ទាំង​ដែល​បិទ​ថ្មីៗ
+appmenu-recently-closed-windows =
+    .label = បង្អួច​ដែល​បាន​បិទ​ថ្មីៗ
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = ស្វែងរក​ប្រវត្តិ
+
+## Help panel
+
+appmenu-help-header =
+    .title = ជំនួយ { -brand-shorter-name }
+appmenu-about =
+    .label = អំពី { -brand-shorter-name }
+    .accesskey = A
+appmenu-get-help =
+    .label = ទទួលបានជំនួយ
+    .accesskey = H
+appmenu-help-more-troubleshooting-info =
+    .label = ព័ត៌មាន​អំពី​ដំណោះស្រាយ​បញ្ហាបន្ថែម
+    .accesskey = t
+appmenu-help-report-site-issue =
+    .label = រាយការណ៍​បញ្ហា​គេហទំព័រ…
+appmenu-help-share-ideas =
+    .label = ចែករំលែកគំនិតនិងមតិយោបល់…
+    .accesskey = S
+appmenu-help-switch-device =
+    .label = ការប្តូរទៅឧបករណ៍ថ្មី
+
+## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-enter-troubleshoot-mode2 =
+    .label = របៀបដោះស្រាយបញ្ហា…
+    .accesskey = M
+appmenu-help-exit-troubleshoot-mode =
+    .label = បិទរបៀបដោះស្រាយបញ្ហា
+    .accesskey = M
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = រាយការណ៍​អំពី​វេបសាយ​បញ្ឆោត…
+    .accesskey = D
+appmenu-help-not-deceptive =
+    .label = នេះ​មិនមែន​ជា​វេបសាយ​បញ្ឆោត​ទេ…
+    .accesskey = d
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = ប្តូរ​របារ​ឧបករណ៍​តាម​បំណង…
+appmenu-abouttranslations =
+    .label = បកប្រែ…
+appmenu-developer-tools-subheader = របារឧបករណ៍កម្មវិធីស្វែងរុករក
+appmenu-developer-tools-extensions =
+    .label = ផ្នែកបន្ថែមសម្រាប់អ្នកអភិវឌ្ឍន៍
+appmenuitem-report-broken-site =
+    .label = រាយការណ៍គេហទំព័រដែលខូច
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = ចូលទៅក្នុងគណនីរបស់អ្នក
+appmenuitem-vpn-description = ការពារសកម្មភាពអនឡាញរបស់អ្នក
+appmenu-services-header = សេវាកម្មរបស់ខ្ញុំ
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header2 = សាកល្បងឧបករណ៍ការពារផ្សេងទៀតពី BrowserWorks៖
+appmenu-other-protection-header = សាកល្បងឧបករណ៍ការពារផ្សេងទៀតពី { -vendor-short-name }៖
+
+## Profiles panel
+
+appmenu-other-profiles = ប្រវត្តិរូបផ្សេងទៀត
+appmenu-manage-profiles =
+    .label = គ្រប់គ្រងប្រវត្តិរូប
+appmenu-copy-profile =
+    .label = ចម្លងប្រវត្តិរូបនេះ
+appmenu-create-profile =
+    .label = ប្រវត្តិរូបថ្មី
+appmenu-edit-profile =
+    .aria-label = កែសម្រួលប្រវត្តិរូប
+appmenu-profiles-2 =
+    .label = ប្រវត្តិរូប

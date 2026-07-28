@@ -1,0 +1,24 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+about-policies-title = Reglur fyrirtækis
+aboutpolicies-page-heading =
+    .heading = Um stefnur okkar
+# 'Active' is used to describe the policies that are currently active
+active-policies-tab = Virkar
+errors-tab = Villur
+documentation-tab = Hjálparskjöl
+# These title attributes label the navigation buttons when the moz-page-nav
+# sidebar is collapsed and the visible button text is hidden.
+active-policies-tab-title =
+    .title = Virkar
+errors-tab-title =
+    .title = Villur
+documentation-tab-title =
+    .title = Hjálparskjöl
+no-specified-policies-message = Enterprise Policy þjónustan er virk, en engar reglur hafa verið virkjaðar.
+inactive-message = Enterprise Policy þjónustan er óvirkjuð.
+policy-name = Nafn á reglu
+policy-value = Gildi reglu
+policy-errors = Villur við stefnu

@@ -1,0 +1,2828 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+do-not-track-description = Emondo ñanduti rendápe kuaaharã “Jehapykueho’ỹ” ipota’ỹva ojehapykueho
+do-not-track-removal = Nañamoneĩvéima pe kuaaukaha “Ani ehapykueho”
+do-not-track-learn-more = Kuaave
+do-not-track-option-default-content-blocking-known =
+    .label = { -brand-short-name } oñemboheko jave ojoko hag̃ua tapykuehohápe añoite
+do-not-track-option-always =
+    .label = Katui
+global-privacy-control-description =
+    .label = Ejerure ñanduti rendápe ani ovende ha omoherakuã che mba’ekuaarã
+    .accesskey = s
+non-technical-privacy-group =
+    .label = Ñanduti renda marandu’i ñemigua
+do-not-track-removal3 =
+    .message = Noromoneĩvéima pe tembiapoite “Ani ehapykueho”.
+non-technical-privacy-heading =
+    .label = Ñemo’ã jo’ajo’áva
+preferences-privacy-relay-available =
+    .label = Eiporuka ñanduti veve rovamo’ãha { -relay-brand-name }
+    .description = Eñomi ne ñanduti veve kundaharape emo’ã hag̃ua ne ñe’ẽmondo g̃uahẽha spam-gui.
+non-technical-privacy-header = Ñanduti renda marandu’i ñemigua
+# Do not translate.
+# "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
+# included to facilitate power-user search of the about:preferences page.
+global-privacy-control-search = Global Privacy Control (GPC)
+settings-page-title = Ñemboheko
+category-nav-heading =
+    .heading = Ñemboheko
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box2 =
+    .style = width: 15.4em
+    .placeholder = Eheka ñembohekópe
+managed-notice = Pe kundaha rehe oñangareko atyguasu.
+managed-notice-info-icon =
+    .alt = Ñemomarandu
+managed-notice-nav =
+    .label = Pe kundaha rehe oñangareko atyguasu.
+category-list =
+    .aria-label = Mboja’opy
+pane-general-title = Tuichakue
+category-general =
+    .tooltiptext = { pane-general-title }
+pane-home-title = Ñepyrũ
+pane-home-startup-title2 = Moñepyrũ ha jeku’e
+    .title = Moñepyrũ ha jeku’e
+pane-search-title2 = Heka
+    .title = Heka
+pane-privacy-title3 = Ñemigua ha Tekorosã
+    .title = Ñemigua ha Tekorosã
+category-home =
+    .tooltiptext = { pane-home-title }
+pane-search-title = Heka
+category-search =
+    .tooltiptext = { pane-search-title }
+pane-privacy-section =
+    .heading = Ñemigua ha Tekorosã
+pane-privacy-title = Ñemigua ha Tekorosã
+category-privacy =
+    .tooltiptext = { pane-privacy-title }
+pane-sync-title3 = Mbojuehe
+pane-ai-controls-title2 = IA mongu’eha
+    .title = IA mongu’eha
+category-sync3 =
+    .tooltiptext = { pane-sync-title3 }
+pane-about-firefox-title = { -brand-short-name } rehegua
+    .title = { pane-about-firefox-title }
+pane-appearance-title = Hechapy
+    .title = { pane-appearance-title }
+pane-downloads-title2 = Mboguejyeta
+    .title = Mboguejyeta
+pane-downloads3 =
+    .heading = Mboguejyeta
+pane-accessibility-title = Jeikekuaa
+    .title = { pane-accessibility-title }
+pane-languages-title2 = Ñe’ẽnguéra
+    .title = Ñe’ẽnguéra
+preferences-languages-header3 =
+    .heading = Ñe’ẽnguéra
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
+pane-experimental-title = { -brand-short-name } Mba’epyahu
+category-experimental =
+    .tooltiptext = { -brand-short-name } Mba’epyahu
+pane-experimental-subtitle = Ejapóke mbeguekatu
+pane-experimental-search-results-header = { -brand-short-name } Mba’epyahu: Ejapo mbeguekatu
+pane-experimental-description2 = Emoambue umi moĩporã ñemboheko ombyaikuaáava { -brand-short-name } rembiapokue ýrõ hekorosã.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description3 = ¡Eiporu ore rembiapokue ipyahuvéva! Oñemboguata ha okakuaahína, ikatúva ojehecha { -brand-short-name } jeporukuévo.
+pane-experimental-reset =
+    .label = Embojevy tekoypykue
+    .accesskey = R
+help-button-label2 = { -brand-short-name } mombytaha
+    .title = { -brand-short-name } mombytaha
+addons-button-label2 = Jepysokue ha téma
+    .title = Jepysokue ha téma
+help-button-label = { -brand-short-name } mombytaha
+addons-button-label = Jepysokue ha téma
+focus-search =
+    .key = f
+close-button =
+    .aria-label = Mboty
+do-not-track-removal2 =
+    .label = Nañamoneĩvéima pe kuaaukaha “Ani ehapykueho”
+applications-setting-new-file-types =
+    .label = ¿Mba’e ojapova’erã { -brand-short-name } ambue marandurenda ndive?
+
+## Browser Restart Dialog
+
+feature-enable-requires-restart = { -brand-short-name } toñepyrũjey emyandy hag̃ua koichagua.
+feature-disable-requires-restart = { -brand-short-name } toñepyrũjey emboguete hag̃ua koichagua.
+should-restart-title = Ñepyrũjey { -brand-short-name }
+should-restart-ok = Emoñepyrũjey { -brand-short-name } ko’ág̃a
+cancel-no-restart-button = Heja
+restart-later = Emoñepyrũjey ag̃ave
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/><strong>{ $name }</strong> oikotevẽ Tendayke Ryru rehe.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/><strong>{ $name }</strong> ohechameme ko ñemboheko.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> oma’ẽag̃ui mba’éichapa ojuaju { -brand-short-name } ñandutíre.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Emyendy hag̃ua moĩmbaha rehova’erã <img data-l10n-name="addons-icon"/> Moĩmbaha poravorã rysýi <img data-l10n-name="menu-icon"/> pe.
+extension-controlled-enable-2 = Embojuruja jey hag̃ua ko jepysokue, eike <a data-l10n-name="addons-link">Jepysokue ha téma</a>.
+# This string is shown to notify the user that their home page or new tab preferences
+# are being controlled by an extension.
+extension-controlling-homepage = { $name } ohecha nde kuatiarogue ñepyrũha ñemboheko.
+
+## Preferences UI Search Results
+
+search-results-header = Jehekakue rehegua
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message2 = ¡Rombyasy! ndaipóri tapykuere “<span data-l10n-name="query"></span>” peg̃uarã moĩporãme.
+search-results-help-link = ¿Eokitevẽpa pytyvõ? Eoke <a data-l10n-name="url">{ -brand-short-name } Ñepytyvõ</a> pe
+
+## General Section
+
+startup-header = Ñepyrũha
+always-check-default =
+    .label = Ehecha tapia ha’épa { -brand-short-name } kundaha ypykuéva
+    .accesskey = y
+is-default = { -brand-short-name } ko’ág̃a nde hekaha ypykuéva
+is-not-default = { -brand-short-name } ndaha’éi kundahára ypykuéva
+set-as-my-default-browser =
+    .label = Ejapo chugui yjypykuéva…
+    .accesskey = D
+startup-restore-windows-and-tabs =
+    .label = Embojuruja ovetã ha tendayke ymavegua
+    .accesskey = s
+startup-windows-launch-on-login-profile-disabled =
+    .message = Emyandy ko erohoryvéva emongurusúvo “{ profile-manager-use-selected.label }” ovetã “Eiporavo poruhára mba’ete”.
+windows-launch-on-login =
+    .label = Embjuruja { -brand-short-name } ijeheguiete hendývo ne mohendaha
+    .accesskey = O
+windows-launch-on-login-disabled = Ko jeguerohoryvéva osẽma Windows-gui. Emoambue hag̃ua, eike <a data-l10n-name="startup-link">Tembiporu’i ñepyrũgua</a> apopyvusu ñembohekópe.
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = Tendayke pyahúpe jeike
+    .accesskey = n
+windows-launch-on-login-profile-disabled = Emyandy ko erohoryvéva emongurusúvo “{ profile-manager-use-selected.label }” ovetã “Eiporavo poruhára mba’ete”.
+startup-restore-warn-on-quit =
+    .label = Eñatoĩva’erã esẽnguévo kundahágui.
+disable-extension =
+    .label = Moĩmbaha Monge
+preferences-data-migration-group =
+    .label = Egueru mba’ekuaarã kundaháragui
+    .description = Egueru techaukaha, ñe’ẽñemi, tembiasakue, jepysokue ha mba’ekuaarã ijeheguíva ambue kundaháragui.
+preferences-data-migration-header = Emba’egueru kundahára mba’ekuaarãgui
+preferences-data-migration-description = Egueru techaukaha, ñe’ẽñemi, tembiasakue ha mba’ekuaarã henyhẽva ijehegui { -brand-short-name }-pe.
+preferences-data-migration-button =
+    .label = Mba’ekuaarã Mba’egueru
+    .accesskey = m
+preferences-profiles-group-header =
+    .heading = Mba’etekuéra
+preferences-profiles-subpane-description =
+    .description = Peteĩteĩva mba’ete oreko ñeikundaha mba’ekuaarã ha ñemboheko oñondive’ỹva, oĩhápe tembiasakue, ñe’ẽñemi ha hetave.
+preferences-profiles-section-header =
+    .label = Mba’etekuéra
+    .description = Peteĩteĩva mba’ete oreko ñeikundaha mba’ekuaarã ha ñemboheko oñondive’ỹva, oĩhápe tembiasakue, ñe’ẽñemi ha hetave.
+preferences-profiles-header = Mba’etekuéra
+preferences-manage-profiles-description = Peteĩteĩva mba’ete oreko ñeikundaha mba’ekuaarã ha ñemboheko oñondive’ỹva, oĩhápe tembiasakue, ñe’ẽñemi ha hetave.
+preferences-manage-profiles-learn-more = Kuaave
+preferences-manage-profiles-button =
+    .label = Eñangareko Mba’etekuérare
+preferences-profiles-settings-button =
+    .label = Ñemboheko
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = Emonguatia mba’ete oĩva
+    .description = Mba’ete pyahu omonguatia ñemboheko, moĩmbaha, tembiasakue ha mba’ekuaarã ñongatupyre, ha’éva techaukaha ha ñe’ẽñemi, ha’eỹva ne mba’ete, marandu ñembojuehegua.
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = Mba’ete emonguatia hag̃ua
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = Eiporavo mba’ete
+preferences-copy-profile-button = Monguatia
+tabs-browsing-section =
+    .heading = Tendayke ha ñeikundaha
+pane-tabs-browsing-title2 = Tendaykeita ha ñeikundaha
+    .title = Tendaykeita ha ñeikundaha
+tabs-group-header2 =
+    .label = Tendayke
+tabs-opening-heading =
+    .label = Mbojuruja
+tabs-interaction-heading =
+    .label = Ñomongu’e
+tabs-containers-heading =
+    .label = Mba’eryruita
+tabs-closing-heading =
+    .label = Ñemboty
+tabs-group-header = Tendayke
+ctrl-tab-recently-used-order =
+    .label = Ctrl+Tab cycles tendayke rupive eiporu ramovévape
+    .accesskey = T
+open-new-link-as-tabs =
+    .label = Eike tendayke joajuhápe ovetã pyahu rendaguépe
+    .accesskey = E
+open-external-link-next-to-active-tab =
+    .label = Embojuruja tembiporu’i juajuha ne rendayke hendývandi
+ask-on-close-multiple-tabs =
+    .label = Eporandu emboty mboyve heta tendayke
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+ask-on-quit-with-key =
+    .label = Eporandu esẽ mboyve { $quitKey } ndive
+    .accesskey = b
+confirm-on-close-multiple-tabs =
+    .label = Emoneĩ emboty mboyve heta tendayke
+    .accesskey = m
+# This string is used for the confirm before quitting preference.
+# Variables:
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
+#                       in the same manner as it would appear,
+#                       for example, in the File menu.
+confirm-on-quit-with-key =
+    .label = Emoneĩ esẽ mboyve { $quitKey } ndive
+    .accesskey = b
+warn-on-open-many-tabs =
+    .label = Emomarandúrõ eiketaha heta tendayképe ikatu omombegue down { -brand-short-name }
+    .accesskey = d
+switch-to-new-tabs-2 =
+    .label = Eikévo peteĩ joajuha ovetã pyahúpe, eho pépe pya’eterei
+    .accesskey = h
+switch-to-new-tabs =
+    .label = Eikévo peteĩ joajuha, ta’ãnga téra marandurenda tendayke pyahúpe, emoambue pya’eterei
+    .accesskey = h
+show-tabs-in-taskbar =
+    .label = Ehechauka chéve tendayke ra’ãnga’i Windows rembiaporã rendápe.
+    .accesskey = k
+browser-containers-enabled-2 =
+    .label = Eiporu tendayke guerekoháva
+    .accesskey = n
+browser-containers-enabled =
+    .label = Embojuruja tendayke guerekoha
+    .accesskey = n
+browser-containers-learn-more = Kuaave
+browser-containers-settings-2 =
+    .label = Eñangareko ñembohekóre
+    .accesskey = i
+browser-containers-settings =
+    .label = Ñemboheko…
+    .accesskey = i
+containers-disable-alert-title = ¿Emmbotypaite tendayke guerekoha pegua?
+startup-group =
+    .label = Ñepyrũha
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
+containers-disable-alert-desc =
+    { $tabCount ->
+        [one] Embotýramo ko’ág̃a umi guerekoha rendayke, tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
+       *[other] Embotýramo tendayke guerekoha ko’ág̃a, umi tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
+    }
+containers-disable-alert-ok-button =
+    { $tabCount ->
+        [one] Emboty { $tabCount } tendayke guerekoha
+       *[other] Emboty { $tabCount } tendayke guerekoha
+    }
+
+##
+
+containers-disable-alert-cancel-button = Emyandy memete
+containers-remove-alert-title = ¿Eipe’a ko guerekoha?
+# Variables:
+#   $count (number) - Number of tabs that will be closed.
+containers-remove-alert-msg =
+    { $count ->
+        [one] Eipe’áramo ko’ág̃a guerekoha, tendayke guerekoha { $count } oñembotýta. ¿Embotyse añetehápe ko guerekoha?
+       *[other] Embotýramo ko guerekoha ko’ág̃a, umi tendayke guerekoha { $count } oñembotýta. ¿Embotyse añetehápe ko guerekoha?
+    }
+containers-remove-ok-button = Eipe’a ko guerekoha
+containers-remove-cancel-button = Aníke eipe’a ko guerekoha
+settings-tabs-show-image-in-preview =
+    .label = Ehechauka hechaha ypy embohasávo hekaha tendayke ári
+    .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = Embosyryry tendayke emoheñói hag̃ua tendayke aty
+browser-layout-header2 =
+    .label = Kundahára jeporukuaa
+browser-layout-horizontal-tabs2 =
+    .label = Tendaykeita ñeno
+    .title = Tendaykeita yvate gotyo
+    .description = Tendaykeita yvate gotyo
+browser-layout-vertical-tabs2 =
+    .label = Tendaykeita ñembo’y
+    .title = Tendaykeita yke gotyo, tenda yképe
+    .description = Tendaykeita yke gotyo, tenda yképe
+browser-layout-show-sidebar2 =
+    .label = Ehechauka tenda yke
+    .description = Eike pya’e techaukaha, pumbyry rendayke, chatbots IA ha ko’ãva esẽ mboyve  mba’erechaha tuichavévagui.
+page-navigation-group =
+    .label = Ñeikundaha kuatiarogue ndive
+browser-layout-header = Kundahára jeporukuaa
+browser-layout-horizontal-tabs =
+    .label = Tendayke ñeno
+browser-layout-horizontal-tabs-desc = Ehechauka yvate gotyo kundahárape
+browser-layout-vertical-tabs =
+    .label = Tendayke ñembo’y
+browser-layout-vertical-tabs-desc = Ehechauka peteĩ yképe, tenda yképe
+browser-layout-show-sidebar =
+    .label = Ehechauka tenda yke
+browser-layout-show-sidebar-desc = Eike pya’e techaukaha, pumbyry rendayke, chatbots IA ha ko’ãva esẽ mboyve  mba’erechaha tuichavévagui.
+
+## General Section - Language & Appearance
+
+language-and-appearance-header = Ñe’ẽ ha Mba’ejeguarã
+appearance-group2 =
+    .label = Mba’éicha ojehecha ñanduti rogue
+    .description = Oĩ ñanduti rogue iñambuéva isa’y ojuehe hag̃ua erohoryvévare. Eiporavo nde sa’y aty.
+preferences-web-appearance-choice-auto3 =
+    .label = Apopyvusu
+    .title = Emoambue ijeheguiete ñanduti rogue rugua ha tetepy nde apopyvusu ha téma { -brand-short-name }.
+preferences-web-appearance-header = Mba’éicha ojehecha ñanduti renda
+preferences-web-appearance-description = Heta ñanduti renda omohenda isa’y jeporukuaa umi ojeguerohoryvévaicha. Eiporavo sa’y jeporukuaa reipotáva umi tendápe g̃uarã.
+preferences-web-appearance-choice-light2 =
+    .label = Tesakã
+    .title = Eiporu jehecharã sakã tugua ha tetepy ñanduti renda pegua.
+preferences-web-appearance-choice-dark2 =
+    .label = Ypytũ
+    .title = Eiporu jehecharã pytũva tugua ha tetepy ñanduti renda pegua.
+web-appearance-group =
+    .aria-label = Mba’éicha ojehecha ñanduti rogue
+preferences-web-appearance-choice-auto = ijeheguietéva
+preferences-web-appearance-choice-light = Tesakã
+preferences-web-appearance-choice-dark = Ypytũ
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Iñambue ijehegui pe ñanduti renda rugua ha hetepy oĩháicha apopyvusu ñemboheko ha { -brand-short-name } téma.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Eiporu jehecharã sakã tugua ha tetepy ñanduti renda pegua.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Eiporu jehecharã pytũva tugua ha tetepy ñanduti renda pegua.
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning3 =
+    .message = Sa’y poravopyre omboyke mba’éichapa ojehecha ñanduti renda.
+preferences-web-appearance-link =
+    .label = Eñangareko téma { -brand-short-name } mba’ére Jepysokue ha téma rupi
+preferences-contrast-control-group =
+    .label = Ñanduti rogue moesakãha
+    .description = Ñanduti rogueita oiporu opaichagua sa’y tenonde ha huguapeguáva. Tesakã jojarã, eiporukuaa peteĩchagua sa’y opaite ñanduti roguépe.
+preferences-contrast-control-radio-group =
+    .label = Embogue sa’yita
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Sa’y poravopyre omboyke mba’éichapa ojehecha ñanduti renda. <a data-l10n-name="colors-link">Eñangareko sa’ýre</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Eñangareko téma { -brand-short-name } mba’ére <a data-l10n-name="themes-link">Jepysokue ha téma</a> rupi
+preferences-contrast-control-header = Mbojovake rehegua
+preferences-contrast-control-description = Umi ñanduti rogue oreko heta sa’y tenondegua ha tuguápe. Emboheko { -brand-short-name } eiporu hag̃ua erekovavoi opaite ñanduti roguépe ha péicha taiporãve.
+preferences-contrast-control-use-platform-settings =
+    .label = Ijeheguíva (oiporu apopyvusu ñemboheko)
+    .accesskey = A
+preferences-contrast-control-off =
+    .label = Mbogue
+    .accesskey = O
+preferences-contrast-control-custom =
+    .label = Mboherapyre
+    .accesskey = C
+preferences-colors-manage-button2 =
+    .label = Sa’ýre ñeñangareko
+    .accesskey = C
+preferences-colors-header = Sa’y
+preferences-colors-description = Emboyke sa’y ypyguáva { -brand-short-name } mba’e moñe’ẽrã, ñanduti renda rugua ha juajuhápe g̃uarã.
+preferences-colors-manage-button =
+    .label = Sa’ýre ñeñangareko…
+    .accesskey = C
+preferences-fonts-header2 =
+    .label = Teñoiha
+preferences-fonts-header = Teñoiha
+default-font = Teñoiha ijypykuéva:
+    .accesskey = D
+default-font-size = Tuichakue:
+    .accesskey = T
+advanced-fonts =
+    .label = Opanungáva…
+    .accesskey = A
+preferences-default-zoom-label =
+    .label = Moañete ypyguáva
+    .accesskey = z
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Moañete
+preferences-default-zoom = Moañete ypyguáva
+    .accesskey = z
+# Variables:
+#   $percentage (number) - Zoom percentage value
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Emoañete moñe’ẽrã año
+    .accesskey = t
+preferences-text-zoom-override-warning =
+    .message = Kyhyjerã: eiporavóramo “Moñe’ẽrã mbotuichave añoite” ha pe zoom ijypyguáva noñembohekói 100%, ikatu heta tenda ndoikoporãmbái.
+language-header = Ñe’ẽ
+choose-language-description = Eipoiravo pe ñe’ẽ erohoryvéva ehechauka hag̃ua ñanduti kuatiarogue
+website-language-heading =
+    .label = Ñanduti rogue ñe’ẽ
+    .description = Oĩhína ñanduti rogue ojehechaukáva heta ñe’ẽme. Eiporavo umi ñe’ẽ ejaposehaichaite.
+website-preferred-language =
+    .label = Ñe’ẽita ojeporuvéva
+website-add-language =
+    .label = Embojuaju ñe’ẽ
+website-add-language-button =
+    .aria-label = Embojuaju ñe’ẽ poravopyre
+    .title = Embojuaju ñe’ẽ poravopyre
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = Embogue { $locale }
+    .title = Embogue { $locale }
+choose-button =
+    .label = Poravo…
+    .accesskey = o
+choose-browser-language-description = Eiporavo ñe’ẽ ojeporúva ehechauka hag̃ua poravorã, ñe’ẽmondo ha momarandu { -brand-short-name } rehegua.
+manage-browser-languages-button =
+    .label = Emopyenda mokõiháva
+    .accesskey = l
+confirm-browser-language-change-description = Emoñepyrũjey { -brand-short-name } oñemboheko hag̃ua ko’ã moambuepyre
+confirm-browser-language-change-button = Mohembiapo ha ñepyrũjey
+browser-language-heading =
+    .label = Kundahára ñe’ẽ
+    .description = Eiporavo ñe’ẽ ojeporútava ojehechauka hag̃ua poravorã, ñe’ẽmondo ha momarandu { -brand-short-name } rehegua.
+browser-language-preferred-label =
+    .label = Ñe’ẽ ojeporuvéva
+browser-language-fallback-label =
+    .label = Ñe’ẽ jopyrurã
+    .description = Ojepuru upe ñemoñe’ẽasa ojeporuvéva noĩmbáiramo.
+browser-language-install-error =
+    .message = { -brand-short-name } ndaikatúi ombohekopyahu ne ñe’ẽnguéra ko’ág̃a. Ehechajey eikekuaápa ñandutípe térã eha’ã jey.
+translate-web-pages =
+    .label = Ñanduti retepy ñe’ẽasa
+    .accesskey = T
+fx-translate-web-pages = { -translations-brand-name }
+# The <img> element is replaced by the logo of the provider
+# used to provide machine translations for web pages.
+translate-attribution = Ñe’ẽasaha <img data-l10n-name="logo"/>
+translate-exceptions =
+    .label = Oĩ’ỹva…
+    .accesskey = x
+settings-translations-header =
+    .label = Ñemoñe’ẽasa
+    .aria-label = Ñemoñe’ẽasa
+    .description = Emoñe’ẽasa kuatiarogue térã moñe’ẽrã poravopyre. Emo’ã hag̃ua ne rekoñemi, ñe’ẽasaita opyta ne mba’e’okápe.
+settings-translations-offer-to-translate-label =
+    .label = Eikuave’ẽ kuatiarogue tuichakue ñe’ẽasa
+settings-translations-more-settings-button =
+    .label = Ñembohekove ñe’ẽasa
+    .description = Emboaje erohoryvéva ñe’ẽitápe g̃uarã, ñanduti rogue ha moñe’ẽasa ñanduti’ỹre.
+settings-translations-subpage-header =
+    .heading = Ñembohekove ñe’ẽasa
+settings-translations-subpage-speed-up-translation-header =
+    .label = Embopya’e moñe’ẽasa
+    .description = Emboguejy ñe’ẽita moñe’ẽasa pya’everã ha emoñe’ẽasa hag̃ua ñanduti’ỹre.
+settings-translations-subpage-automatic-translation-header =
+    .label = Moñe’ẽasa ijeheguíva
+settings-translations-subpage-always-translate-header =
+    .label = Emoñe’ẽasameme ko’ã ñe’ẽ
+settings-translations-subpage-never-translate-header =
+    .label = Ani araka’eve emoñe’ẽasa ko’ã ñe’ẽ
+settings-translations-subpage-never-translate-sites-header =
+    .label = Araka’eve ani emoñe’ẽasa ko’ã tenda
+# The icon placeholders show the translations button and the settings gear in the urlbar panel.
+settings-translations-subpage-never-translate-sites-description = Embojuaju hag̃ua tenda, embojuruja <img data-l10n-name="translations-icon"/> ñe’ẽasa rupa, eiporavo <img data-l10n-name="settings-icon"/> ñe’ẽasa ñemoĩporã ha eiporavo “Aníke emoñe’ẽasa tenda”.
+settings-translations-subpage-language-select-option =
+    .label = Embojuaju ñe’ẽ
+settings-translations-subpage-language-add-button =
+    .aria-label = Embojuaju ñe’ẽ
+    .title = Embojuaju ñe’ẽ
+settings-translations-subpage-download-languages-header =
+    .label = Emboguejy ñe’ẽita
+settings-translations-subpage-download-languages-select-option =
+    .label = Eiporavo ñe’ẽ
+settings-translations-subpage-download-languages-button =
+    .aria-label = Emboguejy ñe’ẽ
+    .title = Emboguejy ñe’ẽ
+# Variables:
+#   $language (string) - Localized name of the language to download.
+#   $size (string) - Download size in megabytes, formatted for the locale.
+settings-translations-subpage-download-language-option = { $language } ({ $size }MB)
+    .label = { $language } ({ $size }MB)
+settings-translations-subpage-no-languages-downloaded =
+    .label = Noñemboguejýi ñe’ẽita
+settings-translations-subpage-no-languages-added =
+    .label = Noñembojuajúi ñe’ẽita
+settings-translations-subpage-download-progress = Oñemboguejyvahína…
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-error = Ndaikatúi oñemboguejy { $language } ({ $size }MB)
+settings-translations-subpage-download-retry-button =
+    .label = Eha’ã jey
+# Variables:
+#   $language (string) - The localized display name of the language.
+#   $size (string) - The download size of the language in megabytes.
+settings-translations-subpage-download-delete-confirm = ¿Emboguete { $language } ({ $size }MB)?
+settings-translations-subpage-download-delete-button =
+    .label = Mboguete
+settings-translations-subpage-download-cancel-button =
+    .label = Heja
+settings-translations-subpage-no-sites-added =
+    .label = Ndaipóri tenda mbojuajupyre
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Eiporu ñemboheko nde apopyvusu oku’éva pegua “{ $localeName }” emonandi hag̃ua ára, aravo, papapy ha ha’ãha.
+settings-spellcheck-header =
+    .label = Jehaipy ñemoĩporã
+check-user-spelling =
+    .label = Haingatu jehaikuévo jehechajey
+    .accesskey = t
+spellcheck-download-dictionaries =
+    .label = Emboguejy ñe’ẽryruita
+spellcheck-promo =
+    .heading = Mba’éicha eiporúta ñe’ẽ jehaiporãha
+    .message = Eikutu akatúa gotyo moñe’ẽrã korápe emyandy térã embogue hag̃ua ñe’ẽ jehaiporãha térã emoambuévo ñe’ẽ. Ndaopvavéi kora omoneĩ ñe’ẽ jehaiporãha.
+
+## General Section - Files and Applications
+
+files-and-applications-title = Marandurenda ha Tembiporu’i
+download-save-files-header =
+    .label = Marandurenda ñongatu ko’ápe
+download-save-where-3 =
+    .aria-label = Marandurenda ñongatu ko’ápe
+download-always-ask-where2 =
+    .label = Eporandu moõpa eñongatúta marandurenda emboguejy mboyve
+    .accesskey = A
+download-private-browsing-delete2 =
+    .label = Embogue mboguejy ovetã ñemigua embotývo
+    .accesskey = D
+download-header = Ñemboguejy
+download-save-where = Marandurenda ñongatu ko’ápe
+    .accesskey = v
+download-choose-folder =
+    .label =
+        { PLATFORM() ->
+            [macos] Poravo…
+           *[other] Poravo…
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [macos] e
+           *[other] o
+        }
+download-always-ask-where =
+    .label = Eporandumeméke chéve moõpa añongatúta marandurenda
+    .accesskey = A
+applications-header = Tembiporu’i
+applications-description = Eiporavo { -brand-short-name } eiporu marandurenda ñemboguejy ñanduti guive térã umi tembiporu’i eiporúva eikundaha aja.
+applications-setting2 =
+    .label = Marandurenda ha tembipuru’i
+    .description = Eiporavo mba’éicha { -brand-short-name } oñatende umi marandurenda ha tetepy mboguejypyre.
+applications-filter =
+    .placeholder = Eheka marandurenda peteĩchagua térã tembiporu’i
+applications-type-column =
+    .label = Peteĩchagua tetepy
+    .accesskey = T
+applications-type-heading = Peteĩchagua tetepy
+applications-action-column =
+    .label = Ñemongu’e
+    .accesskey = A
+applications-action-heading = Ñemongu’e
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } marandurenda
+applications-action-save =
+    .label = Marandurenda ñongatu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } jeporu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } jeporu (ijypykue)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Eiporu tembiporu’i macOS ijypykuéva
+            [windows] Eiporu tembiporu’i Windows ijypykuéva
+           *[other] Eiporu tembiporu’i apopyvusugua ijypykuéva
+        }
+applications-use-other =
+    .label = Ambuéva jeporu…
+applications-select-helper = Eiporavo tembiporu’i pytyvõrãva
+applications-manage-app =
+    .label = Tembiporu’i mba’emimi…
+applications-always-ask =
+    .label = Porandu tapia
+# Variables:
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } jeporu ({ -brand-short-name }-pe)
+applications-open-inapp =
+    .label = Ijurujáva { -brand-short-name }-pe
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
+
+## Firefox updates
+
+applications-handle-new-file-types-description = ¿Mba’e ojapova’erã { -brand-short-name } ambue marandurenda ndive?
+applications-save-for-new-types =
+    .label = Eñongatu marandurenda
+    .accesskey = S
+applications-save-for-new-types2 =
+    .label = Eñongatu marandurenda ijeheguiete
+    .accesskey = S
+applications-ask-before-handling =
+    .label = Eporandu embojuruja térã eñongatúta marandurenda
+    .accesskey = A
+applications-ask-before-handling2 =
+    .label = Eporandu embojuruja térã eñongatu hag̃ua marandurenda
+    .accesskey = A
+drm-group =
+    .label = Tembiapo Ñandutigua Derécho (TÑD) retepy
+drm-content-header = Tembiapo Ñandutigua Derécho (TÑD) retepy
+play-drm-content =
+    .label = Emboheta tetepy oñangarekóva DRM rehe
+    .accesskey = E
+play-drm-content-learn-more = Kuaave
+update-application-title = { -brand-short-name } mbohekopyahu
+update-application-description = Eguereko { -brand-short-name } tekopyahúreve hembiapo porã, hekopyta ha hekorosã hag̃ua.
+# Variables:
+# $version (string) - Firefox version
+update-application-version = Peteĩchagua{ $version } <a data-l10n-name="learn-more">Oĩpa mba’e pyahu</a>
+update-history-2 =
+    .label = Tembiasakue rekopyahu jehechauka
+    .accesskey = p
+update-application-installation =
+    .label = Ñemohenda
+update-application-auto-2 =
+    .label = Emohenda umi ñembohekopyahu ijeheguíva (je’epyre)
+    .accesskey = A
+update-history =
+    .label = Tembiasakue rekopyahu jehechauka…
+    .accesskey = p
+update-application-allow-description = Emomeĩ { -brand-short-name }
+update-application-auto =
+    .label = Emohenda ñembohekopyahu ijeheguíva (je’epyréva)
+    .accesskey = A
+update-application-check-choose-2 =
+    .label = Eheka mbohekopyahu, hákatu eikuaa emohenda hag̃ua
+    .accesskey = C
+update-application-check-choose =
+    .label = Tekopyahu jejhechajeýva, hákatu eheja taiporavo amboguejysépa
+    .accesskey = C
+update-application-manual =
+    .label = Ani eheka ñembohekopyahu (jerovia’ỹ)
+    .accesskey = N
+update-application-background-enabled =
+    .label = { -brand-short-name } nomba’apói jave
+    .accesskey = W
+update-application-warning-cross-user-setting-2 =
+    .message = Ko ñemboheko ojogueraháta opaite Windows mba’ete ndive ha umi teratee { -brand-short-name } rehegua oiporúvo ko { -brand-short-name } ñemohenda.
+update-application-suppress-prompts-2 =
+    .label = Ehechauke’ive mandu’arã mbohekopyahugua
+    .accesskey = n
+update-application-warning-cross-user-setting = Ko ñemboheko ojogueraháta opaite Windows mba’ete ndive ha umi teratee { -brand-short-name } rehegua oiporúvo ko { -brand-short-name } ñemohenda.
+update-application-use-service =
+    .label = Eiporu peteĩ mba’epytyvõrã mokõiha pegua remboguejy hag̃ua tekopyahu
+    .accesskey = b
+update-application-suppress-prompts =
+    .label = Ehechauka’ive marandu’i ñembohekopyahu rehegua
+    .accesskey = n
+update-setting-write-failure-title2 = Ojavy eñongatúvo mbohekopyahu ñemboheko
+# Variables:
+#   $path (string) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message2 =
+    { -brand-short-name } ojuhu jejavy ha noñongatúi ko moambue. Ehecháke ko ñembohekopyahu moĩporã oikotevẽha ñemoneĩ ehai hag̃ua marandurenda oĩmava ko’ág̃a guive. Nde térã ñangarekoha apopyvusu pegua omoĩporãkuaa jejavy eme’ẽvo Poruhára atýpe oñangarekóvo marandurendáre.
+    
+    Ndaikatúi ojehai marandurendápe: { $path }
+update-in-progress-title = Oñembohekopyahuhína
+update-in-progress-message = ¿Eipotápa { -brand-short-name } omongu’ejey ñembohekopyahu?
+update-in-progress-ok-button = &Hejarei
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Ku’ejey
+
+## About Firefox
+
+about-firefox-header =
+    .heading = { -brand-short-name } rehegua
+
+## Firefox updates
+
+update-application-heading =
+    .label = { -brand-short-name } mbohekopyahu
+    .description = Ñembohekopyahuita omoporãve { -brand-short-name } pya’e, rekopyta ha rekorosã.
+update-application-suppress-prompts-heading =
+    .label = Ñemomarandu
+update-application-updates-managed-by-os =
+    .message = Ñembohekopyahuita omboguata nde apopyvusu
+
+## Firefox support
+
+support-application-heading =
+    .label = { -brand-short-name } ñepytyvõ
+    .description = Emoĩporã apañuái térã ere ne remiandu tekoha ndive.
+support-get-help =
+    .label = Eipota ñepytyvõ
+support-share-ideas =
+    .label = Emoherakuã ãroky ha ñe’ẽngue
+
+## General Section - Performance
+
+performance-title = Mba’eaporã
+performance-use-recommended-settings-checkbox =
+    .label = Eiporu ñemboheko tembiapokue oje’epyréva
+    .accesskey = U
+performance-use-recommended-settings-desc = Ko’ã ñemoĩporã oñombojuehe hardware ha ne mohendaha apopyvusu rembiapo rehe.
+performance-settings-learn-more = Kuaave
+performance-allow-hw-accel =
+    .label = Hardware mbopya’eha oĩmba vove jeporu
+    .accesskey = r
+performance-limit-content-process-option = Tetepy ha tembe’y mba’eapo
+    .accesskey = l
+performance-limit-content-process-enabled-desc = Umi taperekogua tetepy mbohetapy ikatu omopu’ã apopyre oiporúvo heta tendayke, hákatu avei oiporúta hetave mandu’arenda.
+performance-limit-content-process-blocked-desc = Pe mba’eapo papapy moambue retepy ikatu oiko mba’eapoita { -brand-short-name } ndive añónte. <a data-l10n-name="learn-more">Eikuaa mba’éichapa ehechajeýta mba’eapoita ijuruja jave</a>
+# Variables:
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
+performance-default-content-process-count =
+    .label = { $num } (ijypykue)
+performance-group =
+    .label = Mba’eaporã
+performance-use-recommended-settings-checkbox-2 =
+    .label = Eiporu tembiapokue je’epyre moĩporã
+    .description = Ko’ã ñemoĩporã ojokupyty nde hardware ha apopyvusu oikóva rehe.
+    .accesskey = U
+
+## Accessibility page
+
+browsing-title = Kundaha
+browsing-group-label =
+    .aria-label = Kundaha
+browsing-use-autoscroll =
+    .label = Oku’éva ijehegui jeporu
+    .accesskey = a
+keyboard-and-scrolling-group =
+    .label = Ñeikundaha ha jeva haiha rupive
+motion-and-link-group =
+    .label = Jeku’ekuaa ha juajuha
+browsing-use-smooth-scrolling =
+    .label = Oku’éva mbeguemi jeporu
+    .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Ehechauka meme ñemongu’eha renda
+    .accesskey = o
+browsing-always-underline-links =
+    .label = Ehaiguymeme umi juajuha
+    .accesskey = u
+browsing-use-onscreen-keyboard =
+    .label = Ehechauka peteĩ tairenda jepokokuaáva oñeikotevẽ jave
+    .accesskey = k
+browsing-use-cursor-navigation =
+    .label = Eiporu tapia tairenda hu’ykuéra aikundaha kuatiaroguépe
+    .accesskey = k
+browsing-use-full-keyboard-navigation =
+    .label = Eiporu jetavulaha emongu’e hag̃ua mba’e myanyhẽha ha juajuha pa’ũme
+    .accesskey = t
+browsing-search-on-start-typing =
+    .label = Eheka moñe’ẽrã ehaikuévo
+    .accesskey = x
+settings-keyboard-shortcuts-group =
+    .label = Tairenda mbopya’eha
+    .description = Ehecha mba’éichapa eku’e ha eñomongeta { -brand-short-name } ndive.
+settings-keyboard-shortcuts-customkeys-link =
+    .label = Emboava tairenda mbopya’eha
+settings-media-group =
+    .label = Momaranduha
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = Eiporu Picture-in-Picture
+    .accesskey = e
+browsing-picture-in-picture-toggle-enabled =
+    .label = Embojuruja ta’ãngamýi ñangarekoha picture-in-picture
+    .accesskey = E
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = Esegi embopu taʼãngamyita taʼanga’ive rekópe emoambuévo tendayke
+    .accesskey = s
+browsing-picture-in-picture-learn-more = Kuaave
+browsing-media-control =
+    .label = Ehecha tairenda, henduha térã jehechaha ñandutigua ndive
+    .accesskey = v
+recommendations-group =
+    .label = Je’eporãpyreita
+browsing-media-control-learn-more = Kuaave
+browsing-cfr-recommendations =
+    .label = Eñe’ẽporã jepysokue rehe eikumdaha aja
+    .accesskey = R
+browsing-cfr-features =
+    .label = Eñe’ẽporã tembiapoitére eikundahakuévo
+    .accesskey = f
+browsing-cfr-recommendations-learn-more = Kuaave
+browsing-group =
+    .label = Kundaha
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = Jeikekuaa
+preferences-default-zoom-select =
+    .aria-label = Zoom ypyguáva
+preferences-fonts-family =
+    .label = Tai’aty renda
+    .accesskey = D
+preferences-fonts-size =
+    .label = Tai tuichakue
+    .accesskey = s
+preferences-fonts-advanced-settings =
+    .label = Ñemboheko opapotáva
+    .accesskey = A
+
+## General Section - Proxy
+
+network-settings-title = Jeike ñemboheko
+network-proxy-connection-description = Emboheko { -brand-short-name } ramo ojuajúvo ñanduti rehe.
+network-proxy-connection-learn-more = Kuaave
+network-proxy-connection-settings =
+    .label = Ñemboheko…
+    .accesskey = e
+network-proxy-group2 =
+    .label = Proxy ñemboheko
+    .description = Emboheko mba’éichapa { -brand-short-name } ojuaju ñandutíre.
+network-proxy-connection-settings2 =
+    .label = Emboheko proxy
+    .description = Emoambuévo ko’ã ñemboheko omoapañuaikuaa nde jeike
+    .accesskey = p
+
+## Home Section
+
+home-new-windows-tabs-header = Ovetã ha tendayke pyahu
+home-new-windows-tabs-description2 = Eiporavo ehecháva eikévo ne kuatiarogue iporãvévape, ovetã ha tendayke pyahúpe.
+home-section =
+    .heading = Moñepyrũ ha jeku’e
+
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = Kundaha ypykuéva
+is-default-browser-2 =
+    .message = { -brand-short-name } ha’e kundaha ypykuéva. Eiporavo porã.
+is-not-default-browser-2 =
+    .message = Psst, { -brand-short-name } ndaha’éi ne kundaha ypykuéva.
+set-as-my-default-browser-2 =
+    .label = Ejapo chugui yjypykuéva
+    .accesskey = D
+
+## Custom Homepage subpage
+
+home-homepage-mode-label = Togue moñepyrũ ha ovetã pyahu
+home-homepage-new-windows =
+    .label = Ovetã pyahu
+home-newtabs-mode-label = tendayke pyahu
+home-homepage-new-tabs =
+    .label = tendayke pyahu
+home-restore-defaults =
+    .label = mbopyahujey techa mboyvegua
+    .accesskey = m
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (Ijypykue)
+home-mode-choice-custom =
+    .label = URLs ñemomba’e…
+home-mode-choice-blank =
+    .label = Kuatiarogue morotĩva
+home-homepage-custom-url =
+    .placeholder = Emboja URL...
+# This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
+home-homepage-manage-extension-button =
+    .label = Eñangareko jepysokuére
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = Eiporavo peteĩ tendaite
+# This string has a special case for '1' and [other] (default). If necessary for
+# your language, you can add {$tabCount} to your translations and use the
+# standard CLDR forms, or only use the form for [other] if both strings should
+# be identical.
+use-current-pages =
+    .label =
+        { $tabCount ->
+            [1] Kuatiarogue Ag̃agua jeporu
+           *[other] Kuatiarogue ag̃agua jeporu
+        }
+    .accesskey = C
+choose-bookmark =
+    .label = Techaukaha poru…
+    .accesskey = B
+
+## Home Section - Home Page Customization
+
+home-homepage-title =
+    .label = Kuatiarogue ñepyrũha
+
+## Custom Homepage subpage
+
+home-custom-homepage-header = Emboava kuatiarogue ñepyrũgua
+home-custom-homepage-subpage =
+    .heading = Emboava kuatiarogue ñepyrũgua
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = Ñanduti kundaharape(ita)
+home-custom-homepage-address =
+    .placeholder = Ehai kundaharape
+home-custom-homepage-address-button =
+    .label = Embojuaju kundaharape
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = Ndaipóri ñanduti rogue mbojuajupyre.
+home-custom-homepage-delete-address-button =
+    .aria-label = Embogue kundaharape
+    .title = Embogue kundaharape
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = Emyengovia kóvandi
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = Kuatiarogue ijurujavahína
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = Techaukahaita…
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header2 = { -firefox-home-brand-name } Retepy
+home-prefs-content-description2 = Eiporavo mba’e retepýpa eipota { -firefox-home-brand-name } mba’erechahápe.
+home-prefs-firefox-logo-header =
+    .label = { -brand-short-name } ra’ãnga’i
+home-prefs-search-header =
+    .label = Ñandutípe jeheka
+home-prefs-search-header2 =
+    .label = Heka
+home-prefs-shortcuts-header =
+    .label = Jeike pya’eha
+home-prefs-shortcuts-description = Tenda eñongatúva térã eikeha
+home-prefs-shortcuts-select =
+    .aria-label = Jeike pya’eha
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Jeike pya’eha jehepyme’ẽpyre
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-recommended-by-header =
+    .label = { $provider } he’i ndéve reike hag̃ua
+home-prefs-recommended-by-description-new = Tetepy iporãva { $provider } oiporavopyre, { -brand-product-name } mba’éva pegua
+home-prefs-recommended-by-header-generic =
+    .label = Tembiasakue momba’epyre
+home-prefs-recommended-by-description-generic = Tetepy oiporavóva { -brand-product-name } reheguáva
+home-prefs-stories-header =
+    .label = Tembiasakue
+home-prefs-stories-description = Tembiasakueita teéva ipyendáva ne rembiapóre
+home-prefs-stories-header2 =
+    .label = Tembiasakue
+    .description = Tetepy oiporavóva { -brand-product-name } reheguáva
+
+##
+
+home-prefs-recommended-by-learn-more = Mba’éichapa omba’apo
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Tembiasakue jehepyme’ẽguáva
+home-prefs-recommended-by-option-recent-saves =
+    .label = Ehechauka eñongaturamóva
+home-prefs-highlights-option-visited-pages =
+    .label = Tenda jeikepyre
+home-prefs-highlights-options-bookmarks =
+    .label = Techaukaha
+home-prefs-highlights-option-most-recent-download =
+    .label = Oñemboguejy ramovéva
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Kuatiarogue ñongatupyre { -pocket-brand-name }-pe
+home-prefs-recent-activity-header =
+    .label = Tembiapo ramovegua
+home-prefs-recent-activity-description = Tenda jeporavo ha tetepy ramovegua
+home-prefs-recent-activity-select =
+    .aria-label = Tembiapo ramovegua
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Mba’epehẽ
+home-prefs-snippets-description-new = Ñemoñe’ẽ ha marandu { -vendor-short-name } ha { -brand-product-name } rehegua
+home-prefs-weather-header =
+    .label = Arapytu
+home-prefs-weather-description = Ehecha arapytu reko ko ára rehegua
+home-prefs-weather-learn-more-link = Eikuaave
+home-prefs-widgets-header =
+    .label = Widgets
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = Tysyieta
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = Aravojere
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = Jehugarã
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = Aravopapaha
+# "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
+home-prefs-support-firefox-header =
+    .label = Eipytyvõ { -brand-product-name }
+home-prefs-mission-message = Ore ykekohára oipytyvõ romombareteve hag̃ua ñanduti rogue
+home-prefs-mission-message-learn-more-link = Eikuaa mba’éichapa
+home-prefs-mission-message2 =
+    .message = Ore ykekohára oipytyvõ romombareteve hag̃ua ñanduti rogue.
+home-prefs-manage-topics-link = Eñangareko témare
+home-prefs-manage-topics-link2 =
+    .label = Eñangareko témare
+home-prefs-choose-wallpaper-link = Eiporavo mba’erechaha rugua
+home-prefs-choose-wallpaper-link2 =
+    .label = Eiporavo mba’erechaha rugua
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = Eiporu hag̃ua ko’ã tembiapoite, emboheko tendayke térã ovetã pyahu { -firefox-home-brand-name } ndive.
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = Jepysokue ({ $extension })
+# Variables:
+#   $num (number) - Number of rows displayed
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rysýi
+           *[other] { $num } rysýi
+        }
+
+## Search Section
+
+search-bar-header = Jeheka Renda
+search-bar-hidden =
+    .label = Eiporu kundaharape renda oñeikundaha ha ojeheka hag̃ua
+search-bar-shown =
+    .label = Toñembojoaju jeheka renda tembiporu rendápe
+search-engine-default-header = Hekaha ypykuéva
+search-engine-default-desc-2 = Kóva nde jeheka mongu’eha ypyguáva kundaharape renda ha jehekeha rendápe.
+search-engine-default-private-desc-2 = Emoĩ jeheka mongu’eha ypyguáramo ovetã ñemíme g̃uarã
+search-separate-default-engine =
+    .label = Eiporu ko jehekaha mongu’eha ovetã ñemíme.
+    .accesskey = U
+search-suggestions-header = Ñe’ẽporã jehekarã
+search-suggestions-desc = Eiporavo mba’éichapa osẽta ñe’ẽporã jehekaha mongu’eha.
+search-suggestions-option =
+    .label = Ehechauka ñe’ẽreka joguaha
+    .accesskey = s
+search-show-suggestions-option =
+    .label = Ehechauka ñemoñe’ẽ jehekarã
+    .accesskey = S
+search-show-suggestions-url-bar-option =
+    .label = Ehechauka ñe’ẽreka joguaha kundaharape ha avei jejuhu hague rendápe
+    .accesskey = l
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "before" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option-2 =
+    .label = Tojehechauka jehekaha kundahára rembiasakue mboyve kundaharape rendápe
+search-show-suggestions-private-windows-2 =
+    .label = Ehechauka jehekaha ovetã ñemiguávape
+search-suggestions-cant-show-2 =
+    .message = Jeheka je’epyréva ndojekuaamo’ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu’a tembiasakuére.
+addressbar-header-1 =
+    .label = Kundaharape renda
+    .description = Eiporavo mba’e ñemoñe’ẽ ojehecháta nde kundaha rupápe
+# When Firefox Suggest is enabled, this replaces `addressbar-header-1`.
+addressbar-header-firefox-suggest-2 =
+    .label = { -firefox-suggest-brand-name }
+    .description = He’íva { -brand-short-name } ha ore irũnguéra ikundaharape rupápe.
+# With this option enabled, while on a SERP, the URL normally displayed in the
+# address bar will be replaced with the search term used to generate that SERP.
+search-show-search-term-option-2 =
+    .label = Ehechauka ñe’ẽ ehekaséva kundaharape renda kuatiarogue jehechatahápe
+search-separate-default-engine-2 =
+    .label = Eiporu peteĩ jehekaha ypygua ambuéva ovetãita ñemíme
+    .accesskey = U
+search-separate-default-engine-dropdown =
+    .aria-label = Jehekaha ypyguáva ovetãita ñemíme
+search-suggestions-header-2 =
+    .label = Je’e jehekaha mongu’eha rehegua
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Ehechauka jeheka rapykuere URL rendaguépe kuatiarogue jehechahague jehekaha ijypykuévape
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "ahead" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option =
+    .label = Tojechauka kundaharape rendápe ñe’ẽreka joguaha tembiasakue mboyve
+search-show-suggestions-private-windows =
+    .label = Ehechauka jehekaha Windows ñemiguávape
+suggestions-addressbar-settings-generic2 = Emoambue ñemboheko ambue ñe’ãporãpe g̃uarã kundaharape rendápe
+search-suggestions-cant-show = Jeheka je’epyréva ndojekuaamo’ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu’a tembiasakuére.
+search-one-click-header2 = Jeheka mbopya’eha
+search-one-click-desc = Eiporavo hekaha mongu’eha mbojopyrukuaa ojekuaáva kundaharape ha jehekaha renda guýpe eñepyrũvo emoinge pe ñe’ẽ ñemigua.
+search-one-click-header-3 =
+    .label = Hekaha mongu’eha mokõiháva
+    .description = Embojuaju hekaha mongu’eha ha jeike pya’eha ojekuaa nde kundaharape rupápe.
+update-search-engine-success =
+    .message = Jehekaha mongu’eha hekopyahu hekopete
+search-edit-engine-2 =
+    .title = Embosako’i hekaha mongu’eha
+search-delete-engine =
+    .title = Embogue hekaha mongu’eha
+search-enable-engine =
+    .title = Embojuruja hekaha mongu’eha
+search-outlink-to-extensions-page =
+    .title = Eñangareko jepysokue ha témare
+search-choose-engine-column =
+    .label = Jehekaha
+search-choose-keyword-column =
+    .label = Jehero
+search-restore-default =
+    .label = Embojevy ijypykuéva ha jehekaha mongu’eha
+    .accesskey = D
+search-remove-engine =
+    .label = Pe’a
+    .accesskey = R
+search-add-engine =
+    .label = Mbojuaju
+    .accesskey = A
+search-add-engine-2 =
+    .label = Embojuaju hekaha
+    .accesskey = A
+search-edit-engine =
+    .label = Mbosako’i
+    .accesskey = E
+search-find-more-link = Ejuhu hetave hekaha mongu’eha
+search-filtering-for-add-engine = Embojuaju Jehekaha
+# This warning is displayed when the chosen keyword is already in use
+# ('Duplicate' is an adjective)
+search-keyword-warning-title = Jehero jo’apyre
+# Variables:
+#   $name (string) - Name of a search engine.
+search-keyword-warning-engine = Eiporavókuri peteĩ jehero oiporúmava "{ $name }". Ikatúpiko eiporavo ambue.
+search-keyword-warning-bookmark = Eiporavókuri peteĩ jehero oiporúmava ambue techaukaha. Ikatúpiko eiporavo ambue.
+# This warning is displayed when the chosen name is already in use.
+# Variables:
+#   $name (string) - Name of a search engine.
+edit-engine-name-warning-duplicate = Oĩma peteĩ hekaha hérava “{ $name }”. Ikatúnepa eiporavomi ambue téra.
+remove-engine-confirmation = Emboguese añetehápepa ko jehekaha
+remove-engine-remove = Mboguete
+remove-addon-engine-alert = Emboguete hag̃ua ko jehekaha, embogue pe moĩmbaha hesegua.
+search-engine-group =
+    .label = Hekaha ypykuéva
+search-default-engine =
+    .aria-label = Hekaha ypykuéva
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = Eheka
+
+## Containers Section
+
+containers-back-button2 =
+    .aria-label = Eguevi ñembohekópe
+containers-header = Tendayke guerekoha
+containers-section-header =
+    .heading = Tendayke guerekoha
+containers-add-button =
+    .label = Embojuaju guerekoha pyahu
+    .accesskey = E
+containers-new-tab-check =
+    .label = Eiporavo mbyatyha embojuruja hag̃ua peteĩteĩva tendayke
+    .accesskey = S
+containers-settings-button =
+    .label = Ñemboheko
+containers-remove-button =
+    .label = Mboguete
+containers-section-header2 =
+    .heading = Mba’yru ñemboheko
+containers-card-header2 =
+    .label = Mba’eryruita
+    .description = Eipe’a ojuehegui kookieita peteĩteĩva mba’yru rupi eiporu hag̃ua ambue mba’ete ha emombyky tapykueho tendaita apytépe.
+containers-add-button2 =
+    .label = Embojuaju mba’yru pyahu
+    .accesskey = A
+containers-new-tab-check3 =
+    .label = Eiporavo mbyatyha peteĩteĩva tendayképe g̃uarã
+    .accesskey = E
+containers-new-tab-check2 =
+    .label = Eiporavo mbyatyha peteĩteĩva tendayke pyahúpe g̃uarã
+    .accesskey = S
+    .description = Kóva oipe’áta mbyatyha poravoha eikúvo pe votõ embojuruja hag̃ua tendayke pyahu.
+containers-settings-button2 =
+    .title = Ñemboheko
+containers-remove-button3 =
+    .title = Mboguete
+containers-remove-button2 =
+    .title = Mboguete
+
+## Account and sync
+
+sync-group-label =
+    .label = Mbojuehe
+account-group-label2 =
+    .label = Mba’ete
+account-disabled-group =
+    .label = Mba’ete
+    .description = Mba’ete ñemboheko ndojeporukuaái.
+account-placeholder2 =
+    .label = Avave ndojeikéi gueteri
+    .description = Eike ha eñongatu nde VPN mba’ekuaarã ñemi, ipapapypy ha ojeikekuaaha opaite reiporusehápe { -brand-short-name }.
+account-sync-section =
+    .heading = Mba’ete ha ñembojuehe
+pane-account-sync-title2 = Mba’ete ha ñembojuehe
+    .title = Mba’ete ha ñembojuehe
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
+sync-signedout-caption = Eraha neñanduti nendive
+sync-signedout-description2 = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha ñemoĩporã opaite ne mba’e’okápe.
+sync-signedout-account-signin3 =
+    .label = Eike embojuehe hag̃ua…
+    .accesskey = i
+sync-signedout-account-signin-4 =
+    .label = Eike ne mba’etépe ha eñepyrũ embojuehe
+    .accesskey = i
+sync-signedout-account-short =
+    .label = Eñemboheraguapy
+    .accesskey = i
+# This message contains two links and two icon images.
+#   `<img data-l10n-name="android-icon"/>` - Android logo icon
+#   `<a data-l10n-name="android-link">` - Link to Android Download
+#   `<img data-l10n-name="ios-icon">` - iOS logo icon
+#   `<a data-l10n-name="ios-link">` - Link to iOS Download
+#
+# They can be moved within the sentence as needed to adapt
+# to your language, but should not be changed or translated.
+sync-mobile-promo = Emboguejy Waterfox kóvape g̃uarã:<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> térã <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> embojuehe hag̃ua nemba’e’oka oku’éva rehe.
+
+## Firefox account - Signed in
+
+sync-profile-picture =
+    .tooltiptext = Emoambue nera’ãnga nemba’ete pegua
+sync-profile-picture-with-alt =
+    .tooltiptext = Emoambue nera’ãnga nemba’ete pegua
+    .alt = Emoambue nera’ãnga nemba’ete pegua
+sync-profile-picture-account-problem =
+    .alt = Ta’ãnga mba’etepegua
+fxa-login-rejected-warning =
+    .alt = Kyhyjerã
+sync-sign-out =
+    .label = Ñesẽte
+    .accesskey = ñ
+sync-sign-out2 =
+    .label = Ñesẽte
+    .accesskey = ñ
+sync-manage-account = Mba’ete ñangarekoha
+    .accesskey = o
+sync-manage-account2 =
+    .label = Mba’ete ñangarekoha
+    .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-signedin-unverified = { $email } ndojehechajeýi gueteri.
+sync-signedin-unverified2 =
+    .label = { $email } noñemoneĩri gueteri
+    .description = Ehecha ne ñe’ẽmondo g̃uahẽha emoneĩ hag̃ua ne mba’ete ha ehechauka.
+sync-signedin-login-failure = Eñepyrũ tembiapo eikejey hag̃ua { $email }
+sync-signedin-login-failure2 =
+    .label = Embotýma nde jeike { $email }-pegua
+    .description = Eike jey ikatu hag̃ua embojuaju ne mba’ekuaarãita.
+
+## Variables
+## $email (string) - Email used for Firefox account
+## $name (string) - Name used for Firefox account
+
+sync-account-signed-in =
+    .label = { $email }
+sync-account-signed-in-display-name =
+    .label = { $name }
+    .description = { $email }
+
+##
+
+sync-resend-verification =
+    .label = Emondo jehechajey pyahu
+    .accesskey = d
+sync-verify-account =
+    .label = Ehechajey mba’ete
+    .accesskey = V
+sync-remove-account =
+    .label = Mba’ete mbogue
+    .accesskey = R
+sync-sign-in =
+    .label = Eñemboheraguapy
+    .accesskey = g
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Ñembojuehe: ON
+prefs-syncing-on-2 =
+    .label = Ñembojuehe HENDY
+prefs-syncing-off = Ñembojuehe: OFF
+prefs-syncing-off-2 =
+    .label = Ñembojuehe OGUE
+    .description = Emyandy ñembojuehe ehupyty hag̃ua tendayke, ñe’ẽñemi, tembiasakue oimeraẽva mba’e’okápe.
+prefs-sync-turn-on-syncing =
+    .label = Emyandy ñembojuehe…
+    .accesskey = s
+prefs-sync-turn-on-syncing-2 =
+    .label = Emyandy ñembojuehe
+    .accesskey = s
+prefs-sync-offer-setup-label2 = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha ñemoĩporã opaite ne mba’e’okápe.
+prefs-sync-now =
+    .labelnotsyncing = Embojuehe ko’ág̃a
+    .accesskeynotsyncing = N
+    .labelsyncing = Embojuehe...
+prefs-sync-now-button =
+    .label = Embojuehe ko’ág̃a
+    .accesskey = N
+prefs-sync-now-button-2 =
+    .label = Embojuehe ko’ág̃a
+    .accesskey = N
+prefs-syncing-button =
+    .label = Embojuehe...
+prefs-syncing-button-2 =
+    .label = Embojuehe...
+    .title = Embojuehe ko’ág̃a
+
+## The list of things currently syncing.
+
+sync-syncing-across-devices-heading = Oñembojuehepa ko’ã kyta opavavete ne mba’e’oka omba’apóvape:
+sync-syncing-across-devices-heading-2 = Mba’ekuaarã mbojuehepyre mba’e’okaita pa’ũme
+sync-syncing-across-devices-empty-state2 =
+    .label = Eñangareko mba’ekuaarã mobjuehepyrére
+    .description = Ne’írã embojuehe mba’eve. Eñepyrũ embojuehe ehupyty hag̃ua mba’ekuaarãita ne mba’e’okaitápe.
+sync-currently-syncing-bookmarks = Techaukaha
+sync-currently-syncing-history = Tembiasakue
+sync-currently-syncing-tabs = Tendayke ijurujáva
+sync-currently-syncing-logins-passwords = Tembiapo ñepyrũ ha ñe’ẽñemi
+sync-currently-syncing-passwords = Ñe’ẽñemi
+sync-currently-syncing-addresses = Kundaharape
+sync-currently-syncing-creditcards = Kuatia’atã ñemurã
+sync-currently-syncing-payment-methods = Mba’éicha ehepyme’ẽta
+sync-currently-syncing-addons = Moĩmbaha
+sync-currently-syncing-settings = Ñemboheko
+sync-manage-options =
+    .label = Eñangareko ñembojuehére
+    .accesskey = M
+sync-manage-options-2 =
+    .label = Eñangareko mba’ekuaarã mobjuehepyrére
+    .accesskey = M
+settings-sync-disconnect-button =
+    .label = Ñesẽte
+sync-change-options =
+    .label = Moambue
+    .accesskey = M
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog3 =
+    .title = Eiporavo embojueheséva
+    .style = min-width: 36em;
+    .buttonlabelaccept = Eñongatu moambuepy
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Emboty tembiapo…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Umi moambuepy kyta rysýigua oñembojuehétava ojehecháta opaite ne mba’e’oka omba’apóvape.
+sync-engine-bookmarks =
+    .label = Techaukaha
+    .accesskey = m
+sync-engine-history =
+    .label = Tembiasakue
+    .accesskey = r
+sync-engine-tabs =
+    .label = Tendayképe jeike
+    .tooltiptext = Tysýi ojehechaukahápe opa mba’e jurujáva oĩva mba’e’oka mbojuehepyrépe
+    .accesskey = T
+sync-engine-logins-passwords =
+    .label = Tembiapo ñepyrũ ha ñe’ẽñemi
+    .tooltiptext = Poruhára réra ha ñe’ẽñemi ñongatupyre
+    .accesskey = L
+sync-engine-passwords =
+    .label = Ñe’ẽñemi
+    .tooltiptext = Ñe’ẽñemi eñongatupyre
+    .accesskey = P
+sync-engine-addresses =
+    .label = Kundaharape
+    .tooltiptext = Pareha Papapy reñongatuva’ekue (mohendahápe g̃uarãnte)
+    .accesskey = e
+sync-engine-creditcards =
+    .label = Kuatia’atã ñemurã
+    .tooltiptext = Téra, papapy ha ndoikoveimaha arange (mohendahápe g̃uarã)
+    .accesskey = C
+sync-engine-payment-methods2 =
+    .label = Mba’éicha ehepyme’ẽta
+    .tooltiptext = Téra, kuatia’atã ha araka’epevépa
+    .accesskey = n
+sync-engine-addons =
+    .label = Moĩmbaha
+    .tooltiptext = Waterfox mohendahápe g̃uarã Moĩmbaha ha Jeguaha
+    .accesskey = A
+sync-engine-settings =
+    .label = Ñemboheko
+    .tooltiptext = Ñembokeo tuichaháicha, ñemigua ha tekorosã emoambuéva
+    .accesskey = s
+sync-choose-what-to-sync-dialog4 =
+    .title = Eñengareko embojuehéva ne mba’e’oka pa’ũmere
+    .style = min-width: 36em;
+    .buttonlabelaccept = Ñongatu
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Embogue…
+    .buttonaccesskeyextra2 = D
+
+## The device name controls.
+
+sync-device-name-header = Mba’e’oka Réra
+sync-device-name-header-2 =
+    .label = Mba’e’oka Réra
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = Mba’e’oka Réra
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = Emoambue mba’e’oka réra
+    .accesskey = h
+sync-device-name-change =
+    .label = Emoambue mba’e’oka réra…
+    .accesskey = h
+sync-device-name-cancel =
+    .label = Heja
+    .accesskey = n
+sync-device-name-save =
+    .label = Eñongatu
+    .accesskey = v
+sync-connect-another-device = Embojuaju ambue mba’e’oka
+sync-connect-another-device-2 =
+    .label = Embojuaju ambue mba’e’oka
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Jehechajey ñemondo
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Joajuha jehechajey rehegua oñemondo { $email }-pe.
+sync-verification-not-sent-title = Ndaikatúi oñemondo jehechajey
+sync-verification-not-sent-body = Ndaikatúi rorahauka ñanduti veve jehechajeyrã ko’ág̃a, ikatu eha’ã ag̃amieve.
+
+## Privacy Section
+
+privacy-header = Kundahára Ñemigua
+
+## Privacy Section - Logins and Passwords
+
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Tembiapo ñepyrũ ha ñe’ẽñemi
+    .searchkeywords = { -lockwise-brand-short-name }
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-logins =
+    .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe
+    .accesskey = E
+
+## Privacy Panel Settings
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = Ñe’ẽñemi
+    .searchkeywords = eñepyrũ tembiapo
+forms-passwords-header =
+    .label = Ñe’ẽñemieta
+    .aria-label = Ñe’ẽñemieta
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = Ejerure ñe’ẽñemi ñongatu
+    .accesskey = A
+forms-manage-password-exceptions =
+    .label = Eñangareko ñe’ẽñemi ykepegua
+    .accesskey = M
+forms-exceptions =
+    .label = Oĩ’ỹva…
+    .accesskey = x
+forms-generate-passwords =
+    .label = Ere ha emoheñói ñe’ẽñemi hekorosãva
+    .accesskey = u
+forms-suggest-passwords =
+    .label = Ejerure ñe’ẽñemi hekorosãva
+    .accesskey = S
+forms-breach-alerts =
+    .label = Ehechauka kyhyjerã ñe’ẽñemi rehegua tenda imarãvape
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Kuaave
+preferences-relay-integration-checkbox =
+    .label = Emoĩ ñanduti veve reragua’u { -relay-brand-name } emo’ã hag̃ua ne ñanduti veve kundaharape
+preferences-relay-integration-checkbox2 =
+    .label = Ere ñanduti veve rovamo’ãha { -relay-brand-name } emo’ã hag̃ua ne ñanduti veve kundaharape
+    .accesskey = r
+relay-integration-learn-more-link = Kuaave
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = Tembiapo ñepyrũ ha ñe’ẽñemi myanyhẽjehegui
+    .accesskey = i
+forms-saved-logins =
+    .label = Emoñepyrũ tembiapo ñongatupyre…
+    .accesskey = L
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = Emoĩmba poruhára réra ha ñe’ẽñemi ijeheguiete
+    .accesskey = F
+forms-fill-usernames-and-passwords-2 =
+    .label = Eñongatu ha emyanyhẽjey poruhára réra ha ñe’ẽñemi
+    .accesskey = f
+forms-saved-passwords =
+    .label = Ñe’ẽñemi ñongatupyre
+    .accesskey = d
+forms-saved-passwords-2 =
+    .label = Eñangareko ñe’ẽñemi ñongatupyrére
+    .accesskey = d
+forms-saved-passwords-searchkeywords = Tembiapo ñepyrũ heta tendápe g̃uarã oñeñogatu ne mohendahápe
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = Ñemo’ã jo’ajo’a
+forms-primary-pw-use =
+    .label = Eiporu ñe’ẽñemi ñepyrũgua
+    .accesskey = U
+forms-primary-pw-use-2 =
+    .label = Eiporu ñe’ẽñemi ha’etéva
+    .description = Embojuaju ape pyahu mokõiha tekorosãrã emo’ã hag̃ua ne ñe’ẽñemi ñongatupyre.
+    .accesskey = U
+forms-primary-pw-set =
+    .label = Emboaje ñe’ẽñemi ha’etéva
+forms-primary-pw-on-2 = Ñe’ẽñemi ha’evéva <strong>HENDY</strong>
+forms-primary-pw-on =
+    .label = Ñe’ẽñemi ha’etéva hendyhína
+forms-primary-pw-change-2 =
+    .label = Emoambue ñe’ẽñemi ha’etéva
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = Eipe’aite
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = Emoñepyrũ tembiapo mba’e’okápe emoinge ha eñangareko hag̃ua ñe’ẽñemíre
+forms-os-reauth-2 =
+    .label = Eikotevẽ eñepyrũ tembiapo mba’e’okápe eñangareko hag̃ua ñe’ẽñemi
+forms-primary-pw-learn-more-link = Eikuaave
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
+forms-master-pw-change =
+    .label = Ñe’ẽñemiguasu moambue…
+    .accesskey = M
+forms-primary-pw-change =
+    .label = Emoambue ñe’ẽñemi ha’etéva…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Ymave ojehero Ñe’ẽñemi Ha’etéva
+forms-primary-pw-fips-title = Ko’ag̃aite eime FIPS rekópe. FIPS oikotevẽ ñe’ẽñemi ñepyrũgua inandi’ỹva.
+forms-master-pw-fips-desc = Ñe’ẽñemi moambue jejavy
+forms-windows-sso =
+    .label = Emoneĩ tembiapo ñepyrũ Windows rupi Microsoft-pe, mba’apo ha mbo’ehaogua mba’ete.
+forms-windows-sso-learn-more-link = Kuaave
+forms-windows-sso-desc = Eñangareko mba’ete mba’e’oka ñembohekópe
+windows-passkey-settings-label = Eñangareko jeikeha mba’eñemíre apopyvusu ñembohekópe
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = Tekoñemi rupa ñemoĩporã
+    .description = Ehupyty pytyvõ eñangareko hag̃ua ne marandu ñandutipegua { -brand-short-name }-pe.
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = Ehechauka ñe’ẽmondo ñembogua rehegua
+    .accesskey = s
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Emoheñói hag̃ua ñe’ẽñemi ha’etéva, emoinge nde reraite Windows rembiapo ñepyrũme. Oipytyvõta emo’ãvo ne mba’etekuéra rekorosã.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = emoheñói Ñe’ẽñemi Ñepyrũgua
+master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] emoambue jehepyme’ẽrã ñemboheko
+       *[other] { -brand-short-name } omoambuese jehepyme’ẽrã ñemboheko. Emoñepyrũ tembiapo ne mba’e’okápe emoneĩ hag̃ua ko jeku’e.
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = Myanyhẽjehegui
+autofill-addresses-checkbox = Eñongatu ha emyanyhẽ kundaharape
+    .accesskey = a
+autofill-saved-addresses-button = Kundaharape ñongatupyre
+    .accesskey = S
+autofill-payment-methods-checkbox-message = Eñongatu ha emyanyhẽ mba’éicha ehepyme’ẽta
+    .accesskey = m
+autofill-payment-methods-checkbox-submessage = Oike kuatia’atã ñemurã ha virunohẽha
+    .accesskey = I
+autofill-saved-payment-methods-button = Mba’éicha ehepyme’ẽta ñongatupyre
+    .accesskey = v
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = Emoñepyrũ tembiapo mba’e’okápe emoinge ha eñangareko hag̃ua jehepyme’ẽrã
+    .accesskey = o
+autofill-payment-methods-header =
+    .aria-label = Mba’éicha ehepyme’ẽta
+autofill-payment-methods-checkbox-message-2 =
+    .label = Eñongatu ha emyanyhẽ mba’éicha ehepyme’ẽta
+    .accesskey = p
+autofill-payment-methods-manage-payments-title =
+    .heading = Eñangareko mba’éichapa ehepyme’ẽta
+autofill-payment-methods-manage-payments-button =
+    .label = Eñangareko mba’éichapa ehepyme’ẽta
+    .accesskey = m
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox-2 =
+    .label = Emoñepyrũ tembiapo mba’e’okápe emoimba ha eñangareko hag̃ua jehepyme’ẽrãre
+    .accesskey = o
+autofill-payment-methods-add-button = Embojuaju mba’éicha ehepyme’ẽta
+payments-list-header =
+    .label = Mba’éicha ehepyme’ẽta
+payments-delete-payment-prompt-title = ¿Eipe’a mba’éichapa ehepyme’ẽta?
+payments-delete-payment-prompt-confirm-button = Mboguete
+payments-delete-payment-prompt-cancel-button = Eheja
+payments-delete-payment-button-label =
+    .aria-label = Mboguete
+payments-edit-payment-button-label =
+    .aria-label = Mbosako’i
+# This message is displayed when no payment methods such as credit card are stored in Firefox
+payments-no-payments-stored-message =
+    .label = Ndaipóri mba’éicha ehepyme’ẽta
+autofill-addresses-checkbox-message =
+    .label = Eñongatu ha emyanyhẽ kundaharape
+    .accesskey = S
+autofill-addresses-manage-addresses-button =
+    .label = Eñangareko kundaharape ha hetave
+    .accesskey = M
+addresses-list-header =
+    .label = Kundaharape
+addreses-delete-address-button-label =
+    .aria-label = Mboguete
+addreses-edit-address-button-label =
+    .aria-label = Mbosako’i
+addresses-delete-address-prompt-title = ¿Embogue ko kundaharape?
+addresses-delete-address-prompt-confirm-button = Mboguete
+addresses-delete-address-prompt-cancel-button = Eheja
+autofill-addresses-add-button = Embojuaju kundaharape pyahu
+autofill-addresses-manage-addresses-title =
+    .heading = Eñangareko kundaharape ha hetave
+# This message is displayed when no addresses are stored in Firefox
+addresses-no-addresses-stored-message =
+    .label = Ndaipóri kundaharape
+# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
+# Variables:
+#   $name (string) - The name associated with the address
+#   $address (string) - The address
+address-moz-box-item =
+    .label = { $name }
+    .description = { $address }
+pane-passwords-autofill-title2 = Ñe’ẽñemi ha moĩjehegui
+    .title = Ñe’ẽñemi ha moĩjehegui
+preferences-passwords-autofill-header =
+    .heading = Ñe’ẽñemi ha moĩjehegui
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
+addresses-group =
+    .label = Kundaharape ha hetave
+payments-group =
+    .label = Mba’éicha ehepyme’ẽta
+
+## Privacy Section - History
+
+history-header = Tembiasakue
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label = { -brand-short-name } ikatútapa
+    .accesskey = w
+history-remember-option-all =
+    .label = Tembiasakuére ñemandu’a
+history-remember-option-never2 =
+    .label = Ani nemandu’a tembiasakuére
+    .description = Peteĩteĩva tendayke oku’e ovetã ñemiguárõ. Hendy jave, emoneĩva’erã jepysokue.
+history-remember-option-custom2 =
+    .label = Emboava tembiasakue
+history-remember-option-never =
+    .label = Ani nemandu’a tembiasakuére
+history-remember-option-custom =
+    .label = Eiporu peteĩ ñemboheko mba’etéva tembiasakuépe g̃uarã
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } imandu’áta ne kundaha, ñamboguejy, myanyhẽha ha jeheka rembiasakue rehe.
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } oiporujeýta ñemboheko kundaha ñemiguáva, ha noñongatumo’ãi mba’ekuaarã tembiasakuéva oikundahávo ñandutípe.
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } oiporúta ñemboheko mba’eteéva, kundaha rehegua, ñemboguejy, myanyhẽha ha jeheka.
+history-remember-description = { -brand-short-name } imandu’áta ne kundaha, ñamboguejy, myanyhẽha ha jeheka rembiasakue rehe.
+history-dontremember-description = { -brand-short-name } oiporujeýta ñemboheko kundaha ñemiguáva, ha noñongatumo’ãi mba’ekuaarã tembiasakuéva oikundahávo ñandutípe.
+history-private-browsing-permanent =
+    .label = Kundaha ñemi jeporu tapia
+    .accesskey = p
+history-remember-browser-option =
+    .label = Kundaha rembiasakue ha ñemboguejy mandu’a
+    .accesskey = b
+history-remember-search-option =
+    .label = Tembiasakue myanyhẽha ha jehekaha momangu’a
+    .accesskey = f
+history-clear-on-close-option =
+    .label = Tembiasakue Mopotĩ { -brand-short-name } oñembotývo
+    .accesskey = r
+history-clear-on-close-settings =
+    .label = Ñemboheko…
+    .accesskey = t
+history-shutdown-exceptions =
+    .label = Eñangareko Oĩ’ỹva rehe
+    .accesskey = x
+history-clear-button =
+    .label = Tembiasakue ñemopotĩ…
+    .accesskey = s
+history-header2 =
+    .heading = Tembiasakue
+history-section-header =
+    .label = Tembiasakue
+    .description = Eiporu eipotáva { -brand-short-name } oñemomandu’a embotykuévo pe kundahára.
+history-custom-section-header =
+    .label = Jepovorã opapotáva
+    .description = Emboava eipotáva { -brand-short-name } imandu’a embotykuávo kundahára.
+history-custom-button =
+    .label = Eiporavo mba’etépa imandu’áta { -brand-short-name }
+history-group =
+    .label = Tembiasakue
+history-remember-option-all2 =
+    .label = Tembiasakuére ñemandu’a
+
+## Privacy Section - Site Data
+
+sitedata-header = Kookie ha tenda mbakuaarã
+sitedata-total-size-calculating = Eikuaase tenda mba’ekuaarã ha kache tuichakue…
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size3 = Ñanduti rogueita oiporu ko’ág̃a <strong>{ $value } { $unit }</strong> disco ñeñongaturãgua.
+# Variables:
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Umi kookie, tenda mba’ekuaarã ha kache mandu’arenda oiporuhína { $value } { $unit } disco pegua pa’ũ.
+sitedata-learn-more = Kuaave
+sitedata-delete-on-close2 =
+    .label = Embogue kookieta ha tenda mba’ekuaarã embotývo { -brand-short-name }
+    .accesskey = c
+sitedata-delete-on-close =
+    .label = Embogue kookie ha mba’ekuaarã rendagua oñemboty vove { -brand-short-name }
+    .accesskey = c
+sitedata-delete-on-close-private-browsing3 =
+    .message = Iñemboheko hembiasakuépe, { -brand-short-name } ombogue umi kookie ha mba’ekuaarã tendakuérape oñembotývo kundahára.
+sitedata-delete-on-close-private-browsing4 =
+    .heading = Tembiasakue ndojesalvamo’ãi.
+    .message = { -brand-short-name } ombogue kookieita ha tenda mba’ekuaarã eikehague emboty vove kundahára.
+sitedata-delete-on-close-private-browsing = Kundaha ñemigua tapiagua rekópe, umi kookie ha tenda mba’ekuaarã oguéta oñymbotykuévo { -brand-short-name }.
+sitedata-delete-on-close-private-browsing2 = Iñemboheko hembiasakuépe, { -brand-short-name } ombogue umi kookie ha mba’ekuaarã tendakuérape oñembotývo kundahára.
+sitedata-allow-cookies-option =
+    .label = Emoneĩ kookie ha tenda mba’ekuaarã
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Ejoko kookie ha tenda mba’ekuaarã
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Peteĩchagua tetepy jokopyre
+    .accesskey = T
+sitedata-option-block-cross-site-trackers =
+    .label = Tenda ojoasáva rapykuehóva
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = Kookie rapykuehoha hendaitáva
+sitedata-option-block-cross-site-cookies2 =
+    .label = Eipe’a kookie ñanduti rogue okayguágui
+sitedata-option-block-cross-site-cookies =
+    .label = Kookie rapykueho tenda ojuasávape, ha eipe’a kookiegui tenda ojuasávape
+sitedata-option-block-unvisited =
+    .label = Ñanduto renda kookie ojeike’ỹha
+sitedata-option-block-all-cross-site-cookies =
+    .label = Opaite kookie tenda pa’ũgua (ojavykakuaa ñanduti rendápe)
+sitedata-option-block-all =
+    .label = Opaite umi kookie (ombojavýta ñanduti renda)
+sitedata-clear2 =
+    .label = Embogue kundahára rapykuere
+    .accesskey = l
+sitedata-settings2 =
+    .label = Eñangareko kundahára mba’ekuaarãre
+    .accesskey = M
+sitedata-clear =
+    .label = Mba’ekuaarã mopotĩ…
+    .accesskey = l
+sitedata-settings =
+    .label = Eñangareko mba’ekuaarãre…
+    .accesskey = M
+sitedata-cookies-exceptions =
+    .label = Emongu’e oĩ’ỹva…
+    .accesskey = x
+sitedata-cookies-exceptions2 =
+    .label = Eñangareko oĩ’ỹva…
+    .accesskey = x
+    .description = Eremi mba’e ñanduti roguépa tapia térã araka’eve oiporu kookie ha tenda mba’ekuaarã.
+sitedata-heading =
+    .label = Kundahára mba’ekuaarã
+    .description = Emboaje nde kookieita, tembiasakue, kache, ñanduti rogue mba’ekuaarã ha hetave.
+sitedata-settings3 =
+    .label = Embogue mba’ekuaarã tenda ha’etévape g̃uarã
+    .accesskey = s
+sitedata-cookies-exceptions3 =
+    .label = Eñangareko oĩ’ỹva
+    .accesskey = x
+    .description = Eiporavo mba’éichapa emboguatáta ñanduti rogue, kookieita ha tenda mba’ekuaarã.
+cookies-site-data-group =
+    .label = Kookie ha tenda mbakuaarã
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Kookie Banner Ñemomichĩ
+cookie-banner-handling-description = { -brand-short-name } omboykese ijehegui opaite kookie mba’ejerure umi tenda ojokupytývape.
+
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-blocker-header = Ejoko Banner kookie rehegua
+cookie-banner-blocker-description = Peteĩ tenda oporandúramo oiporukuaápa kookie ñeikundaha ñemi ayvúpe jave, { -brand-short-name } ombotove ijeheguiete. Tenda ojokupytývape añoite.
+cookie-banner-learn-more = Kuaave
+forms-handle-cookie-banners =
+    .label = Emomichĩ kookie banner
+cookie-banner-blocker-checkbox-label =
+    .label = Tomboyke ijehegui umi banner kookie rehegua
+
+## Search Section
+
+addressbar-header = Kundaharape renda
+addressbar-suggest = Eiporúramo kundaharape renda, eñemoñe’ẽ
+# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+addressbar-header-firefox-suggest = Kundaharape rupa — { -firefox-suggest-brand-name }
+# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+addressbar-suggest-firefox-suggest = Eiporavo umi ñemoñe’ẽ ojehecháva upe kundaha rupápe.
+# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# `addressbar-suggest-firefox-suggest`.
+addressbar-locbar-firefox-suggest-learn-more = Eikuaave
+addressbar-locbar-history-option =
+    .label = Kundaha rembiasakue
+    .accesskey = h
+addressbar-locbar-bookmarks-option =
+    .label = Techaukaha
+    .accesskey = k
+addressbar-locbar-clipboard-option =
+    .label = Kuatiajokoha
+    .accesskey = C
+addressbar-locbar-openpage-option =
+    .label = Tendayke ijurujáva
+    .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Jeike pya’eha
+    .accesskey = S
+addressbar-locbar-topsites-option =
+    .label = Tenda jehayhuvéva
+    .accesskey = T
+addressbar-locbar-engines-option-1 =
+    .label = Eikuave’ẽ jehekaha mongu’eha eiporukuaáva
+    .accesskey = a
+addressbar-locbar-engines-option =
+    .label = Hekaha mongu’eha
+    .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = Jeku’e pya’e
+    .accesskey = Q
+addressbar-locbar-showrecentsearches-option-2 =
+    .label = Ojeheka ramóva
+    .accesskey = r
+addressbar-locbar-showtrendingsuggestions-option-2 =
+    .label = Umi jehekarã ojeporuvéva
+    .accesskey = t
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option-2 =
+    .label = { -brand-short-name } ñemoñe’ẽ
+    .description = Erekóta ñanduti ñemoñe’ẽ ojokupytýva rehekáva ndive.
+addressbar-locbar-suggest-sponsored-option-2 =
+    .label = Pytyvõhára ñemoñe’ẽ
+    .description = Eykeko { -brand-short-name } ñemoñe’ẽ jehepyme’ẽrã sapy’apy’agua.
+addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu’eha je’epyre moambue
+addressbar-locbar-showrecentsearches-option =
+    .label = Ehechauka ojeheka ramóva
+    .accesskey = r
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Ehechauka jehekarã ojeporuvévape
+    .accesskey = t
+# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+addressbar-locbar-suggest-nonsponsored-option =
+    .label = { -brand-short-name } ñemoñe’ẽ
+addressbar-locbar-suggest-nonsponsored-desc = Erekóta ñanduti ñemoñe’ẽ ojokupytýva rehekáva ndive.
+addressbar-locbar-suggest-sponsored-option =
+    .label = Pytyvõhára ñemoñe’ẽ
+addressbar-locbar-suggest-sponsored-desc = Eykeko { -brand-short-name } ñemoñe’ẽ jehepyme’ẽrã sapy’apy’agua.
+# This string is used for a checkbox in the settings UI that opts the
+# user into "online" Firefox Suggest, allowing them to receive suggestions from
+# Mozilla's Merino server.
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since the online suggest is created and maintained
+# by Mozilla.
+addressbar-firefox-suggest-online =
+    .label = Eguerekokuaa BrowserWorks oikuave’ẽva ehai aja
+addressbar-dismissed-suggestions-label-2 =
+    .label = Ñemoñe’ẽ mboykepyre
+    .description = Eguerujey ñe’ẽporã omboykémava jeykekohára ha { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button-2 =
+    .label = Ñemoñe’ẽ mbojevy
+addressbar-quickactions-learn-more = Kuaave
+addressbar-dismissed-suggestions-label = Ñemoñe’ẽ mboykepyre
+addressbar-restore-dismissed-suggestions-description = Eguerujey ñe’ẽporã omboykémava jeykekohára ha { -brand-short-name }.
+addressbar-restore-dismissed-suggestions-button =
+    .label = Mbojevy
+
+## Privacy Section - Content Blocking
+
+content-blocking-enhanced-tracking-protection = Tapykueho mo’ãha iporãvéva
+content-blocking-section-top-level-description = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
+content-blocking-learn-more = Eikuaave
+content-blocking-fpi-incompatibility-warning = Eiporuhína First Party Isolation (FPI), oipe’áva ndahetái kookie ñemboheko { -brand-short-name } mba’éva.
+# There is no need to translate "Resist Fingerprinting (RFP)". This is a
+# feature that can only be enabled via about:config, and it's not exposed to
+# standard users (e.g. via Settings).
+content-blocking-rfp-incompatibility-warning = Eiporu Resist Fingerprinting (RFP), omyengoviáva peteĩva umi kuãhũ ñemboheko mo’ãha { -brand-short-name } mba’évape. Kóva omoapañuaikuaa tendakuérape.
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Ypykue
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Mbaretépe
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Ñemomba’epyre
+    .accesskey = C
+
+##
+
+content-blocking-etp-standard-desc = Imbytéva ñemo’ã ha tembiapokuépe g̃uarã. Umi kuatiarogue henyhẽta hekoitépe.
+content-blocking-etp-strict-desc = Ñemo’ãve, hákatu ikatu ndahetái tenda térã tetepy nahenyhẽi.
+content-blocking-etp-custom-desc = Eiporavo mba’ete tapykuehoha ha scripts ejokose.
+content-blocking-etp-blocking-desc = { -brand-short-name } ojoko ko’ãva:
+content-blocking-private-windows = Tetepy rapykueho ovetã ñemíme
+content-blocking-cross-site-cookies-in-all-windows2 = Kookie renda ojuasáva opavavete ovetãme
+content-blocking-cross-site-tracking-cookies = Kookie rapykuehoha hendaitáva
+content-blocking-all-cross-site-cookies-private-windows = Tenda ojuasáva kookie Ovetã Ñemiguápe
+content-blocking-isolate-cross-site-cookies = Eipe’a kookie tenda ojuasávagui
+content-blocking-cross-site-tracking-cookies-plus-isolate = Kookie rapykueho tendápe ha eipe’a kookie hembýva
+content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
+content-blocking-all-cookies = Opavavete kookie
+content-blocking-unvisited-cookies = Kookie eike’ỹ hague
+content-blocking-all-windows-tracking-content = Tetepy rapykuehoha opaite ovetãme
+content-blocking-all-cross-site-cookies = Opaite kookie tenda pa’ũgua
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
+# the suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-known-and-suspected-fingerprinters = Kuãhũ japyhyha ojekuaáva ha ivaikuaáva
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Ñemo’ãmbaite kookie rovake oreko kookie tenda reimehápe g̃uarã, avei tapykuehoha ndojeporukuaái ohapykueho hag̃ua tendakuéra pa’ũme.
+content-blocking-etp-standard-tcp-rollout-learn-more = Kuaave
+content-blocking-etp-standard-tcp-title = Oikehápe Total Cookie Protection, ore ñemigua rembiapoite imbaretevéva ko’ag̃aite peve
+content-blocking-warning-title = ¡Ema’ẽmi!
+content-blocking-warning-title-2 = Oĩ tenda ikatúva ombyai ñemo’ã jehapykueho rehegua.
+content-blocking-warning-title-custom = Oĩ tenda ikatúva ombyai ñemo’ã jehapykueho rehegua.
+content-blocking-and-isolating-etp-warning-description-2 = Ko ñemoĩporã ikatu peteĩva ñanduti renda ndohechaukái tetepy térã ndoikoporãmbái. Peteĩ tenda ndojehechaukaporãirõ, ikatu oipe’a ñemo’ã jehapykuehogua omyanyhẽmba hag̃ua tetepy.
+content-blocking-warning-learn-how = Mba’éichapa eikuaáta
+content-blocking-baseline-exceptions-3 =
+    .label = Emyatyrõ ñanduti rogue (ñemoñe’ẽmbyre)
+    .description = Oipytyvõ henyhẽ hag̃ua ñanduti rogue ha tembiapoite ojokóvo mba’eporurã añoite orekokuaáva tapykuehoha. Omyatyrõ opaichaguanunga apañuái.
+# This option to fix minor site issues must be used with the option to fix major site issues (string content-blocking-baseline-exceptions-3)
+content-blocking-convenience-exceptions-3 =
+    .label = Emyatyrõ apañuái tendagua
+    .description = Erujey mba’eporu ikatúva ta’ãngamýi jehaipyre térã je’epyre vore, emboty’óvo mba’eporu orekóva tapykuehoha apopyvusu. Kóva omoĩporãkuaa apañuái ñanduti roguépe, hákatu ome’ẽkuaa ñemo’ã sa’imi. Ojeporuva’erã ambue moĩporã ndive umi apañuái ivaivévape g̃uarã.
+content-blocking-baseline-uncheck-warning-dialog-title = ¿Ehejasépa añetehápe ko’ã ñemoĩporãha?
+content-blocking-baseline-uncheck-warning-dialog-body = Ko ñemboheko oipytyvõta oñemyatyrõkuaa hag̃ua umi mba’e ojehúva tendápe. Ojejokórõ, oĩkuaa tenda ndoikóiva ha { -brand-short-name } noipytyvõmo’ãi oñemyatyrõ hag̃ua apañuái.
+content-blocking-baseline-uncheck-warning-dialog-ok-button = Eipe’a myatyrõha
+content-blocking-baseline-uncheck-warning-dialog-cancel-button = Emyandy myatyrõha
+content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
+content-blocking-reload-tabs-button =
+    .label = Embohekopyahu opaite tendayke
+    .accesskey = E
+content-blocking-tracking-content-label =
+    .label = Tetepy rapykuehoha
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Opaite ovetãme
+    .accesskey = A
+content-blocking-option-private =
+    .label = Ovetã ñemiguápe añoite
+    .accesskey = P
+content-blocking-tracking-protection-change-block-list = Emoambue jokoha rysýi
+content-blocking-cookies-label =
+    .label = Kookie
+    .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Maranduve
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Criptominero
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Fingerprinters
+    .accesskey = F
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = Kuãhũ ojekuaáva
+    .accesskey = K
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = Kuãhũngue ikatukuaáva
+    .accesskey = S
+
+## Privacy Section - Tracking
+
+tracking-manage-exceptions =
+    .label = Ykepeguére ñangareko
+    .accesskey = x
+
+## Privacy Section - Permissions
+
+permissions-header = Ñemoneĩkuéra
+permissions-location = Tenda
+permissions-location-settings =
+    .label = Ñangareko…
+    .accesskey = t
+permissions-xr = Añetegua ñanduti
+permissions-xr-settings =
+    .label = Ñemboheko…
+    .accesskey = t
+permissions-camera = Cámara
+permissions-camera-settings =
+    .label = Ñangareko…
+    .accesskey = t
+permissions-microphone = Ñe’ẽmbotuichaha
+permissions-microphone-settings =
+    .label = Ñangareko…
+    .accesskey = t
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Ñe’ẽataha Jeporavo
+permissions-speaker-settings =
+    .label = Ñemboheko…
+    .accesskey = t
+permissions-notification = Marandu’i
+permissions-notification-settings =
+    .label = Ñangareko…
+    .accesskey = t
+permissions-notification-link = Eikuaave
+permissions-notification-pause =
+    .label = Tojejoko momarandu’i oñepyrũjey peve { -brand-short-name }
+    .accesskey = n
+permissions-autoplay2 =
+    .label = Mbohetajehegui
+permissions-autoplay = Mbohetajehegui
+permissions-autoplay-settings =
+    .label = Ñemboheko
+    .accesskey = t
+permissions-block-popups2 =
+    .label = Ejoko ovetã apysẽ ha emoma’ẽ mohapyháa gotyo
+    .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = Eñangareko oĩ’ỹva
+    .description = Embojuaju ñanduti renda ombojurujátava ovetã apysẽ ha oiporúva mbohapejey mbohapyháva.
+    .accesskey = E
+    .searchkeywords = ovetãita apysẽ
+permissions-addon-install-warning3 =
+    .label = Ehechauka kyhyjerã oĩrõ ñanduti rogue omohendaséva jepysokue
+    .accesskey = W
+permissions-addon-exceptions2 =
+    .label = Eiporavo mba’e ñanduti rogue omohendakuaa jepysokue
+    .accesskey = E
+permissions-block-popups =
+    .label = Ovetã apysẽ joko
+    .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = Oĩ’ỹva…
+    .accesskey = E
+    .searchkeywords = ovetã apysẽ
+permissions-addon-install-warning =
+    .label = Ehechakuaa oĩ jave tenda omohendaséva moĩmbaha.
+    .accesskey = E
+permissions-addon-exceptions =
+    .label = Oĩ’ỹva…
+    .accesskey = E
+permissions-location2 =
+    .label = Tenda
+permissions-localhost2 =
+    .label = Tembiporu’i ha mba’epytyvõrã mba’e’okagua
+permissions-local-network2 =
+    .label = Mba’e’oka ñanduti rehegua
+permissions-xr2 =
+    .label = Añetegua ñanduti
+permissions-camera2 =
+    .label = Cámara
+permissions-microphone2 =
+    .label = Ñe’ẽmbotuichaha
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = Ñe’ẽatãha
+permissions-notification2 =
+    .label = Marandu’i
+permissions-header3 =
+    .label = Ñemoneĩ
+    .description = Eñangareko mba’e ñanduti rogue oikekuaa, ohechameme térã omyandy.
+permissions-data-section =
+    .heading = Ñemoneĩ ha mba’ekuaarã
+pane-permissions-data-title2 = Ñemoneĩ ha mba’ekuaarã
+    .title = Ñemoneĩ ha mba’ekuaarã
+
+## Privacy Section - Data Collection
+
+collection-header = { -brand-short-name } Ñembyaty ha mba’ekuaarã jeporu
+collection-header2 = { -brand-short-name } Ñembyaty ha mba’ekuaarã jeporu
+    .searchkeywords = telemetría
+preferences-collection-description = Roñeha’ãmbaite heta mba’erã ha rombyaty umi mba’ekuaarã tekotevẽvante oiko porãve hag̃ua { -brand-product-name } opavavépe g̃uarã.
+preferences-collection-privacy-notice = Ehecha marandu’i ñemi rehegua
+preferences-across-profiles = Ño ñemboheko oiko opaite mba’ete { -brand-product-name } pegua ko mba’e’okápe.
+preferences-view-profiles = Ehechapa mba’etekuéra
+collection-description = Roñeha’ãmbaite rome’ẽ hag̃ua jeporavorã ha rombyaty roikotevẽva rome’ẽ ha romoĩporãve { -brand-short-name } arapy tuichakue javépe g̃uarã. Rojerure ñemoneĩ marandu og̃uahẽ mboyve oréve.
+collection-privacy-notice = Marandu Ñemigua
+collection-health-report-telemetry-disabled = Nomoneĩvéima { -vendor-short-name } ojapyhývo mba’ekuaarã aporekogua ha oñondiveguáva. Opaite mba’ekuaarã itujavéva oguéta 30 ára ohasávo.
+collection-health-report-telemetry-disabled-link = Kuaave
+backup-multi-profile-warning-message =
+    .message = Emoañete hag̃ua moambuepy toike ne monguatiápe, embojuruja peteĩteĩva mba’ete ha eiporavo “Ejapo ñongatujey ko’ág̃a” Moĩporãhápe.
+nimbus-rollouts =
+    .label = Emoneĩ { -brand-short-name } omoporãvévo tembiapoite, jeku’eporã ha tekopyta ñembohekopyahu pa’ũme
+    .description = Umi ñemoambue oñemogu’éta oka guive.
+addon-recommendations3 =
+    .label = Emoneĩ jepysokue mboherapyre ñemoñe’ẽ
+    .description = Erekokuaa jepysokuégui ñe’ẽporã oiko porãve hag̃ua ne kundahára.
+collection-usage-ping =
+    .label = Emondo { -vendor-short-name }-pe ping eiporúva ára ha ára
+    .accesskey = u
+collection-usage-ping-description = Kóva oipytyvõ { -vendor-short-name } oikuaa hag̃ua mboy poruhárapa oĩ.
+collection-health-report2 =
+    .label = Emondo mba’ekuaarã aporekogua ha ñomongeta { -vendor-short-name }-pe
+    .accesskey = r
+collection-health-report =
+    .label = Toñemoneĩ { -brand-short-name } omondo hag̃ua kuaapy aporeko rehegua { -vendor-short-name }-pe
+    .accesskey = r
+collection-health-report-link = Kuaave
+collection-health-report-description = Kóva ñanepytyvõta oiko porãve, ha’eve ha hekopyta hag̃ua { -brand-product-name }.
+collection-studies2 =
+    .label = Emohenda ha emongu’e mba’ekuaarã
+collection-studies-description = Eiporu tembiapoite ha temimo’ã opavavete oiporukuaa mboyve.
+collection-studies =
+    .label = Emoneĩ { -brand-short-name } omohenda ha omongu’e hag̃ua kuaarã
+collection-studies-link = Ehecha kuaarã { -brand-short-name } mba’éva
+addon-recommendations2 =
+    .label = Emoneĩ jepysokue mboherapyre ñemoñe’ẽ
+addon-recommendations-description = Erekokuaa jepysokuégui ñe’ẽporã oiko porãve hag̃ua ne kundahára.
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled2 = Pe mba’ekuaarã ñemondo oñemboguéma ko ñemboheko guasúpe g̃uarã.
+collection-backlogged-crash-reports2 =
+    .label = Toho ijehegui marandu jejavy rehegua
+    .accesskey = c
+collection-backlogged-crash-reports-description = Kóva oipytyvõ { -vendor-short-name }-pe roikuaa ha romyatyrõvo apañuái kundahára ndive. Umi marandu’ípe oĩkuaa mba’ekuaarã nemba’ete ha ñemiguáva.
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = ¡Heko orekovavoi, ijehecha iñambue!
+    .message = Romohenda jey ko kuatiarogue hasy’ỹve hag̃ua ñeporandu ha jeikekuaa. Ne ñemboheko tee naiñambuéi ha oĩ hendáicha. Ñemoñe’ẽ: eiporu hekaha ejuhu hag̃ua eikotevẽva guive.
+settings-redesign-promo-dismiss-button =
+    .label = Aikũmby
+addon-recommendations =
+    .label = Emoneĩ { -brand-short-name } ojapóvo ñe’ẽporã jepysokue momba’epyrépe
+addon-recommendations-link = Kuaave
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = Pe mba’ekuaarã momarandu oñemboguéma ko ñemboheko guasúpe g̃uarã
+collection-backlogged-crash-reports-with-link = Emoneĩ { -brand-short-name } omomarandúvo jejavymeme nde rérape <a data-l10n-name="crash-reports-link">Eikuaave</a>
+    .accesskey = c
+privacy-segmentation-section-header = Tembiapoite pyahu ombopya’evéva ne ñeikundaha
+privacy-segmentation-section-description = Roikuave’ẽ vove tembiapoite oiporúva mba’ekuaarã ome’ẽségui jehasakue nemba’erãva:
+privacy-segmentation-radio-off =
+    .label = Eiporu he’iháicha { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Eike marandurenda hesa’ỹijopyrévape
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = { -brand-short-name } Ñembyaty ha mba’ekuaarã jeporu
+    .description = Roñeha’ãmbaite heta mba’erã ha rombyaty umi mba’ekuaarã tekotevẽvante oiko porãve hag̃ua { -brand-product-name } opavavépe g̃uarã.
+    .searchkeywords = telemetría
+data-collection-link = Ehecha marandu’i ñemi rehegua
+data-collection-preferences-across-profiles =
+    .message = Ño ñemboheko oiko opaite mba’ete { -brand-product-name } pegua ko mba’e’okápe.
+data-collection-profiles-link = Ehechapa mba’etekuéra
+data-collection-health-report-telemetry-disabled =
+    .message = Nomoneĩvéima { -vendor-short-name } ojapyhývo mba’ekuaarã aporekogua ha oñondiveguáva. Opaite mba’ekuaarã itujavéva oguéta 30 ára ohasávo.
+data-collection-health-report =
+    .label = Emondo mba’ekuaarã aporekogua ha ñomongeta { -vendor-short-name }-pe
+    .accesskey = r
+    .description = Kóva ñanepytyvõta oiko porãve, ha’eve ha hekopyta hag̃ua { -brand-product-name }.
+data-collection-health-report-disabled =
+    .label = Emondo mba’ekuaarã aporekogua ha ñomongeta { -vendor-short-name }-pe
+    .accesskey = r
+    .description = Marandu’i ñemombe’u mba’ekuaarãgua oñembogue ko ñemopu’ã ñembohekorã.
+data-collection-run-studies =
+    .label = Emoneĩ { -brand-short-name } ojapóvo tembiapoite jekuaaukarã
+    .description = { -brand-short-name } oiporavo puruhárape peichareínte tembiapoite jeporu, oipytyvõva omoporãve hag̃ua opavavépe g̃uarã.
+data-collection-studies-link =
+    .label = Ehecha kuaarã { -brand-short-name } mba’éva
+data-collection-backlogged-crash-reports =
+    .label = Emondo marandu jejavy rehegua
+    .description = Kóva oipytyvõta { -vendor-short-name } ohecha ha omyatyrõ hag̃ua apañuái kundahára rehegua. Umi marandu ogueroikekuaa mba’ekuaarãita nde rehegua térã ñemiguáva.
+    .accesskey = c
+data-collection-usage-ping =
+    .label = Emondo { -vendor-short-name }-pe ping eiporúva ára ha ára
+    .description = Kóva oipytyvõ { -vendor-short-name } oikuaa hag̃ua mboy poruhárapa oĩ.
+    .accesskey = u
+
+## Privacy Section - Website Advertising Preferences
+
+website-advertising-header = Ñanduti rogue maranduñemurãva
+website-advertising-private-attribution =
+    .label = Emoneĩ ñanduti rogue oha’ãvo maranduñemurã omomba’évo tekoñemi
+    .accesskey = a
+website-advertising-private-attribution-description = Kóva oipytyvõta tendakuérape oikumbývo maranduñemurã ombyaty’ỹre poruhára mba’ekuaarã.
+
+## Privacy Section - Security
+##
+## It is important that wording follows the guidelines outlined on this page:
+## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
+
+security-header = Tekorosã
+browsing-protection-group2 =
+    .label = Tetepy hekomarãkuaáva ñemo’ã ha software vai
+    .description = Tendaita ha mba’evai ñemboguejy omoapañuaikuaa ne mba’ekuaarã ha mba’e’oka. { -brand-short-name } ojoko ijehegui umíva ha nemomarandu software vai térã eipota’ỹva.
+security-browsing-protection = Ñemo’ã Mba’e Ag̃ave’ỹvagui
+security-enable-safe-browsing =
+    .label = Ejoko tetepy kyhyjerã ha imarãkuaáva
+    .accesskey = E
+security-enable-safe-browsing-link = Kuaave
+security-safe-browsing-warning =
+    .message = Eipe’ávo ko tembiapoite sa’ivéta ne ñemo’ã, kuatiarogue ivaíva ha ñemboguejy imarãva renondépe.
+security-block-downloads =
+    .label = Ejoko ñemboguejy kyhyjerãva
+    .accesskey = d
+security-block-uncommon-software =
+    .label = Ejesareko software oiko’ỹva ha ojekuaa’ỹva
+    .accesskey = c
+
+## Privacy Section - Certificates
+
+certs-header = Mboajepyréva
+certs-enable-ocsp =
+    .label = Mohendahavusu mbohovái porandu OCSP rehegua emoañete hag̃ua oiko gueteriha umi mboajepyre ag̃aguáva.
+    .accesskey = Q
+certs-view =
+    .label = Mboajepyre jehecha…
+    .accesskey = M
+certs-devices =
+    .label = Tekorosã mba’e’oka rehegua…
+    .accesskey = D
+certs-thirdparty-toggle =
+    .label = Emoneĩ { -brand-short-name } tojerovia ijehegui jeguerohoryvéva mbohapyha omohendáva
+    .accesskey = t
+certs-devices-enable-fips = Embojuruja FIPS
+space-alert-over-5gb-settings-button =
+    .label = Embojuruja ñemboheko
+    .accesskey = O
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } henyhẽma idísco.</strong> Umi tetepy ñanduti rendagua ikatu ndojehechaporãi. Omopotĩkuaa mba’ekuaarã tenda ñongatupyre Ñemoĩporãme > Tekoñemi ha Tekorosã > Kookie ha tenda mba’ekuaarã.
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } opyta disco pa’ũ’ỹre.</strong> Ikatu ñanduti renda retepy ndojehechaukaporãi. Eike “Kuaavépe” eiporu porã hag̃ua nde disco ne kundaha hekoresã hag̃ua avei.
+certs-description3 =
+    .label = Mboajepyréva
+    .description = Emboheko mboajepyréva { -brand-short-name } oiporúva ohechajey hag̃ua jeike hekorosãva.
+certs-view2 =
+    .label = Eñangareko mboajepyrére
+    .accesskey = C
+certs-devices2 =
+    .label = Eñangareko mba’e’oka tekorosãrãre
+    .accesskey = D
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS año ayvu
+httpsonly-description3 = Omoneĩ jeike tekorosãme añoite ñanduti roguépe. { -brand-short-name } oporandúta eike mboyve tekorosã’ỹme.
+httpsonly-learn-more2 = Mba’éichapa oku’e HTTPS ayvu ha’eño
+httpsonly-description = HTTPS ome’ẽ jeikekatu ha ipapapýva { -brand-short-name } ha ñanduti renda eike hague pa’ũme. Heta ñanduti renda omoneĩ HTTPS, ha pe ayvu ha’eñóva-HTTPS oñemoneĩma, upévare { -brand-short-name } ombohekopyahúta opaite HTTPS-pe jeike.
+httpsonly-learn-more = Eikuaave
+httpsonly-radio-enabled =
+    .label = Emyandy HTTPS año ayvu opaite ovetãme
+httpsonly-radio-enabled-pbm =
+    .label = Embojuruja HTTPS año ayvu opaite ovetãme
+httpsonly-radio-disabled3 =
+    .label = Ani emyandy HTTPS ayvu ha’eño
+    .description = { -brand-short-name } ombohekopyahukuaa gueteri heta juajurã
+httpsonly-radio-disabled =
+    .label = Ani embojuruja HTTPS año ayvu
+httpsonly-group =
+    .label = HTTPS año ayvu
+    .description = Omoneĩ jeike tekorosãme añoite ñanduti roguépe. { -brand-short-name } oporandúta eike mboyve tekorosã’ỹme.
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
+
+## DoH Section
+
+preferences-doh-header = DNS HTTPS reheguáva
+dns-over-https-group2 =
+    .label = DNS HTTPS rehegua
+    .description = Pe tendaite réra HTTPS (DoH) rehegua ombopapapy porandu ñanduti rogue, ombohasýva ñanduti me’ẽha térã ambue tohecha mba’e ñanduti roguépepa eikéta.
+preferences-doh-description = Pe apopyvusu rendatee réra (DNS) HTTPS rehegua omondo mba’ejerure tendatee réra jeike ipapapýva rupive, omoheñóiva peteĩ DNS hekorosãva ha ombohasyve ambuépe ohechávo mba’ete ñanduti rendápe ojeike.
+preferences-doh-description2 = Pe apopyvusu rendatee réra (DNS) HTTPS rehegua omondo mba’ejerure tendatee réra jeike ipapapýva rupive, omoheñóiva peteĩ DNS hekorosãva ha ombohasyve ambuépe ohechávo mba’ete ñanduti rendápe ojeike.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Tekotee: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Me’ẽhára: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL ndoikóiva
+preferences-doh-steering-status = Eiporúvo me’ẽhára pepeteguáva
+preferences-doh-status-active = Myandy
+preferences-doh-status-disabled = Mboguepyre
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Oku’e’ỹva ({ $reason })
+preferences-doh-group-message = Embojuruja DNS hekorosãva eiporúvo:
+preferences-doh-group-message2 = Emyandy DNS HTTPS ári eiporúvo:
+preferences-doh-expand-section =
+    .tooltiptext = Maranduve
+preferences-doh-setting-default =
+    .label = Ñemo’ã ijypyguáva
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name } oikuaa oiporúta vove DNS hekorosãva omo’ã hag̃ua nde rekoñemi.
+preferences-doh-default-detailed-desc-1 = Eiporu DNS hekorosãva tendaguasu ikatuhápe
+preferences-doh-default-detailed-desc-2 = Eiporu DNS rechaporãha ijypykuéva oĩramo apañuái DNS hekorosãva me’ẽhára ndive
+preferences-doh-default-detailed-desc-3 = Eiporu me’ẽhára ag̃uigua ikatúrõ
+preferences-doh-default-detailed-desc-4 = Eipe’a pe VPN, pehẽngue jehecharã térã mba’apohaguasu oñemyandývo
+preferences-doh-default-detailed-desc-5 = Eipe’a pe pyha he’ívo { -brand-short-name }-pe ani hag̃ua oiporu DNS hekorosãva
+preferences-doh-setting-enabled =
+    .label = Ñemo’ã Tuichavéva
+    .accesskey = I
+preferences-doh-enabled-desc = Nde eikuaáta araka’e eiporúta DNS hekorosãva ha eiporavo me’ẽhára.
+preferences-doh-enabled-detailed-desc-1 = Eiporu me’ẽhára poravopyre
+preferences-doh-enabled-detailed-desc-2 = Eiporu DNS rechaporãha ijypykuéva oĩramo apañuái DNS hekorosãva me’ẽhára ndive
+preferences-doh-setting-strict =
+    .label = Ñemo’ã tuichavéva
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } oiporumeméta DNS hekorosãva. Ojehecháta kyhyjerã tekorosã marãkuaáva roiporu mboyve DNS apopyvusugua.
+preferences-doh-strict-detailed-desc-1 = Eiporu me’ẽhára poravopyre añoite
+preferences-doh-strict-detailed-desc-2 = Emombe’úke pe DNS hekorosãva ndoikóiramo
+preferences-doh-strict-detailed-desc-3 = Pe DNS hekorosãva ndojeporukuaáiramo tenda nahenyhẽi ha ndoikoporãmo’ãi.
+preferences-doh-setting-off =
+    .label = Mboguepyre
+    .accesskey = O
+preferences-doh-off-desc = Eiporu DNS rekochaukaha ijypykuéva
+preferences-doh-checkbox-warn =
+    .label = Ehecháke ambuéva ojokoséramo DNS hekorosãva
+    .accesskey = W
+preferences-doh-select-resolver = Eiporavo me’ẽha:
+preferences-doh-exceptions-description = { -brand-short-name } ndoiporumo’ãi DNS hekorosãva ko’ã tendápe
+preferences-doh-manage-exceptions =
+    .label = Eñangareko oĩ’ỹva…
+    .accesskey = x
+preferences-doh-overview-default =
+    .label = Ñemo’ã ijypyguáva
+    .description = Eiporu DNS hekorosãva tendaguasu oĩhápe.
+preferences-doh-overview-custom =
+    .label = Mboava
+    .description = Eiporu DNS hekorosãva me’ẽhára jehechameme reheve ha jeykekoha reko.
+preferences-doh-overview-off =
+    .label = Mbogue
+    .description = Eiporu DNS moĩporãha ijypykuéva.
+preferences-doh-advanced-button =
+    .label = Ñemoĩporã opapotáva
+preferences-doh-advanced-section =
+    .label = Ñemoĩporã opapotáva
+    .description = Pe tendatee apopysu réra HTTPS (DoH) rehegua ombopapapy porandu ñanduti rogue rehegua, ombohasyvéva ñanduti me’ẽhára térã ambue ohechávo mba’e ñanduti roguépepa oikéta.
+preferences-doh-manage-exceptions2 =
+    .label = Eñangareko oĩ’ỹva
+    .accesskey = x
+preferences-doh-radio-default =
+    .label = Ijypykue
+    .description = Eiporu DNS hekorosãva tendaguasu ojeporukuaahápe
+preferences-doh-radio-custom =
+    .label = Mboava
+    .description = Eiporu DNS hekorosãva me’ẽhára jehechameme reheve ha jeykekoha reko
+preferences-doh-radio-off =
+    .label = Mbogue
+    .description = Eiporu DNS moĩporãha ijypykuéva
+preferences-doh-fallback-label =
+    .label = Emombe’úke pe DNS hekorosãva ndoikóiramo
+preferences-doh-status-item-off =
+    .message = DNS HTTPS rehegua ojepe’a
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = DNS HTTPS rehegua ndoikói rojuhu haguére peteĩ jejavy ({ $reason }) eiporusévo pe me’ẽhára { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = DNS HTTPS rehegua ndoikói og̃uahẽre oréve peteĩ URL oiko’ỹva ({ $reason })
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = DNS HTTPS rehegua oiporu me’ẽhára { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = DNS HTTPS rehegua ndoikói hína rojuhu haguére peteĩ jejavy ({ $reason }) eiporusévo pe me’ẽhára { $name }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = DNS HTTPS rehegua oiporuhína me’ẽhára { $name }
+preferences-doh-select-resolver-label =
+    .label = Eiporavo me’ẽha:
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = Eiporu ko me’ẽhára emoĩporã hag̃ua DNS HTTPS rupive
+preferences-doh-custom-provider-label =
+    .aria-label = Emoinge URL me’ẽhára mboavapyréva
+preferences-doh-header2 =
+    .heading = DNS HTTPS rehegua
+
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = Jeike ha software rekorosã
+preferences-connection-link-section =
+    .label = Jeike ha software rekorosã
+    .description = Ehecha mba’éichapa hekorosã jeikerã, ojejokóvo pe software vai ha ojehecha jey ñanduti rogue.
+preferences-connection-link-button =
+    .label = Ñemoĩporã opapotáva
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Mba’erechaha
+downloads-folder-name = Ñemboguejy
+choose-download-folder-title = Ñemboguejy ñongatuha poravo:
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = Mba'ejeguarã:
+browser-theme-group =
+    .label = Kundahára téma
+    .description = Mboaváva { -brand-short-name } eipotaháicha. Téma sa’ykuéra oñemoĩ tembiporu rupápe, poravorã ha ñe’ẽmondo.
+browser-theme-manage-link =
+    .label = Eñangareko téma { -brand-short-name }
+appearance-window-density-group =
+    .label = Ovetã tuichakue
+    .description = Emoĩporã pa’ũ ovetã mba’eporurã, taha’e tembiporu rupa, tendayke ha tenda ykegua.
+appearance-window-density-radio-group =
+    .aria-label = Ovetã tuichakue
+appearance-window-density-automatic =
+    .label = Ijeheguíva (ypykuéva)
+    .description = Pe pa’ũ ijypykuéva, hatã térã pokogua oku’éva ijehegui
+appearance-window-density-automatic-no-touch =
+    .label = Ijeheguíva (ypykuéva)
+    .description = Upe espaciado estándar térã oñemoatãva oku’e ijehegui
+appearance-window-density-standard =
+    .label = Ypyguáva
+    .description = Imombyrýva hetave mba’erechaha g̃uarã
+appearance-window-density-auto-touch-mode =
+    .label = Eiporu imombyrýva jepoko tabléta rekópe g̃uarã
+appearance-window-density-compact =
+    .label = Hatãva
+    .description = Pa’ũ’ive mba’erechaha michĩvévape g̃uarã
+appearance-window-density-touch =
+    .label = Jepoko
+    .description = Ovetã mba’eporu ha jekutuha tuichavéva, oikóva mba’erechaha jepokoguápe g̃uarã
+related-settings-group =
+    .label = Ñemoĩporã ojuehegua
+related-settings-accessibility-link =
+    .label = Emboava pe ñembotuicha ha teñoiha Jeikekuaahápe
+related-settings-home-link =
+    .label = Emboava { -firefox-home-brand-name }
+related-settings-tabs-browsing-link =
+    .label = Emboava pe kundahára ra’ãnga
+
+## AI controls page
+
+preferences-ai-controls-description = Akóinte eiporavokuaa { -brand-short-name }-pe, umíva apytépe eipurusépa umi tembiapoite iporãvéva IA ndive. Tenondeve oĩvéta control.
+preferences-ai-controls-block-ai-label = Iporãve IA jejokorãme
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-blocked-message =
+    .message = IA ñemoporãve, taha’e ipyahu térã oĩva, ojejoko ijypykue rupi. Embojuruja hag̃ua tembiapoite, eiporu mongu’eha ehechátava eku’evévo.
+preferences-ai-controls-on-device-group =
+    .label = IA mba’e’okápe
+    .description = Oiporu IA michĩvéva oñemboguejýva ne mba’e’okápe eiporúvo tembiapoite. Ko jehechapy oipytyvõ omo’ãvo nde rekoñemi.
+preferences-ai-controls-translations-control =
+    .label = Moñe’ẽasa
+    .description = Eikundaha apañuai’ỹre ñandutípe ne ñe’ẽ eiporuvévape.
+preferences-ai-controls-translations-more-link = Emoĩporãve moñe’ẽasaita
+preferences-ai-controls-pdfjs-control =
+    .label = Ta’ãnga moñe’ẽrã ykepegua PDF jehechahápe { -brand-short-name } mba’e
+    .description = Emoĩvévo ta’ãnga PDF marandurendápe, oñembojuaju oiko hag̃ua chugui jeikerã hasy’ỹva.
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = Ñe’ẽporã tendayke atygua
+    .description = Ejapyhy ñemoñe’ẽ embohéra ha emoĩporã hag̃ua tendaykeita.
+preferences-ai-controls-key-points-control =
+    .label = Kyta ha’etéva juajuha jehecha ypýpe
+    .description = Ehecha mombyky pya’éva embojuruja mboyve juajuha.
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = Chatbots me’ẽha tenda yképe
+    .description = Ereko chatbot ehecha hag̃uáme eikundaha aja. Eiporavo Anthropic Claude, ChatGPT, Copilot, Google Gemini ha Le Chat Mistral apytépe.
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = Chatbot tenda yképe
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = Ojeporukuaáva
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = Myandypyre
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = Jokopyre
+preferences-ai-controls-state-description-before = Mba’e he’ise umi jeporavoha:
+preferences-ai-controls-state-description-available = <strong>Eiporukuaa:</strong> Ehechakuaáta tembiapoite ha eiporukuaa.
+preferences-ai-controls-state-description-enabled = <strong>Hendypyre:</strong> Ahecháma eiporuha tembiapoite.
+preferences-ai-controls-block-confirmation-heading = ¿Ejoko moporãmby IA ndive jejapopyre?
+preferences-ai-controls-block-confirmation-features-start = Mba’épa pe ojejokótava:
+preferences-ai-controls-block-confirmation-translations = Ñemoñe’ẽasa
+preferences-ai-controls-block-confirmation-pdfjs = Ta’ãnga moñe’ẽrã ykepegua PDF jehechahápe { -brand-short-name } mba’e
+preferences-ai-controls-block-confirmation-tab-group-suggestions = Ñe’ẽporã tendayke atygua
+preferences-ai-controls-block-confirmation-key-points = Kyta ha’etéva juajuha jehecha ypýpe
+preferences-ai-controls-block-confirmation-sidebar-chatbot = Chatbots me’ẽha tenda yképe
+preferences-ai-controls-block-confirmation-features-after = Upe jejoko omomarã jepysokueita oiporúva IA ome’ẽva { -brand-short-name }.
+preferences-ai-controls-block-confirmation-cancel =
+    .label = Heja
+preferences-ai-controls-block-confirmation-confirm =
+    .label = Joko
+preferences-ai-controls-header3 =
+    .heading = IA mongu’eha
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = { -brand-short-name } oma’ẽmeme
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name } oikuaauka oipotaha tekorosãve
+security-privacy-status-ok-label = Tapykueho mo’ãha iporãvéva hendýma
+security-privacy-status-problem-label = Rojuhu ñemboheko omoapañuaáiva ñemo’ã
+security-privacy-status-problem-helper-label = Ehecha apañuái
+security-privacy-status-pending-trackers-label = Ohekávo mboy tapykuehoha ojoko { -brand-short-name } jasy ohasaramóvape
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label =
+    { $trackerCount ->
+        [one] { $trackerCount } tapykuehoha jokopyre jasy ohasaramóvape
+       *[other] { $trackerCount } tapykuehohaita jokopyre jasy ohasaramóvape
+    }
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = Ereko <a data-l10n-name="strict-tracking-protection">ñemo’ã oikóva</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = Ereko <a data-l10n-name="custom-tracking-protection">ñemo’ã mboavapyre</a>
+security-privacy-status-up-to-date-label = Emboguejy { -brand-short-name } ipyahu ha hekorosãvéva.
+security-privacy-status-update-needed-label = Oĩma ipyahúva { -brand-short-name } eipurukuáva.
+security-privacy-status-update-error-label = { -brand-short-name } iñapañuãi oñembohekopyahu hag̃ua
+security-privacy-status-update-checking-label = { -brand-short-name } ohekahína tekopyahurã
+security-privacy-status-update-needed-description = Embohekopyahu ereko hag̃ua ipyahuvéva tekopyahurã ipya’e, hekopyta ha tekorosãverã.
+security-privacy-status-update-button-label =
+    .label = Embohekopyahu { -brand-short-name }
+security-privacy-image-warning =
+    .alt = Peteĩ ñemo’ãha orekóva kyndýi, ohechaukáva ojepyʼapyha umi jyhyjerã tekorosãrãve
+security-privacy-image-ok =
+    .alt = Peteĩ ñemo’ãha orekóva jehecharã ohechaukáva ndaiporiha apañuái tekorosãrã rehegua
+security-privacy-issue-card =
+    .heading = Jesarekorã tekorosãrã
+issue-card-reset-button =
+    .label = Mbojevyjey
+issue-card-dismiss-button =
+    .tooltiptext = Mboyke
+    .aria-label = Mboyke
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = Tapykueho mo’ãha tuichavéva
+    .description = Umi sitio oiporu umi tapykuehoha rosegui hag̃ua ñandutípe ha tohechauka marandu ndoikóiva. { -brand-short-name } nemo’ã eikundaha aja, ojokóvo ijeheguiete tapykuehohaita ereko hag̃ua nde pópe nde rapykuere.
+preferences-etp-level-standard =
+    .label = Ypyguaite (ijypygua)
+    .description = Ñemo’ã mbarete ha jeroviaha omba’apóva hekopete ñanduti rogueita ndive.
+preferences-etp-level-strict =
+    .label = Mbaretépe
+    .description = Ñemo’ãita imbaretevéva ojokóva hetave tapykuehoha, hákatu omoapañuaikuaáva ñanduti rogue.
+preferences-etp-level-custom =
+    .label = Mboava
+    .description = Eiporu mba’e ñemo’ã emyandy téra emboguétava.
+preferences-etp-status-advanced-button =
+    .label = Ñemboheko opapotáva
+preferences-etp-status-protections-dashboard-link =
+    .label = Ehechajey ne mba’erupaite mboavapyre
+    .description = Ehecha mboy tapykuehoha ñemi { -brand-short-name } ojoko nde rehehápe, umíva apytépe oĩ tapykuehoha red social pegua, kuã hũ ha criptominerokuéra.
+preferences-etp-header =
+    .heading = Tapykueho mo’ãha iporãvéva
+preferences-etp-advanced-settings-group =
+    .label = Jepovorã opapotáva
+    .description = Ñanduti rogueita oiporu tapykuehoha ndesegi hag̃ua eikundahávo ha ohechauka marandu ñemugua. { -brand-short-name } nemo’ã eikundaha aja, ojokóvo ijehegui tapykuehohaita eikundaha hag̃ua apañuai’ỹre.
+preferences-etp-customize-button =
+    .label = Emboava tapykuehoha ñemo’ã
+preferences-etp-reload-tabs-hint =
+    .message = Emyanyhẽjey tendaykeita oiko hag̃ua ko’ã moambuepy.
+preferences-etp-reload-tabs-hint-button =
+    .label = Emyanyhẽpaite tendayke
+preferences-etp-rfp-warning-message =
+    .message = Eiporu Resist Fingerprinting (RFP), omyengoviáva peteĩva umi jeporavorã mo’ãha { -brand-short-name } mba’évape. Kóva omoapañuaikuaa ñanduti roguépe.
+preferences-etp-manage-exceptions-button =
+    .label = Eñangareko oĩ’ỹva
+    .description = Eñangareko ñandutieta rogue pe tapykuehoha ñemo’ã iporãvéva oñemboguehápe.
+preferences-etp-customize-header =
+    .heading = Emboava tapykuehoha ñemo’ã
+preferences-etp-reset =
+    .label = Eguerujey ñemboavaita
+    .description = Emyatyrõ ñemboheko ñemo’ã ijypykuéva rupi.
+preferences-etp-reset-standard-button =
+    .label = Emoĩjey oĩhaguéicha
+preferences-etp-reset-strict-button =
+    .label = Emoĩjey oĩhápe
+preferences-etp-custom-control-group =
+    .label = Tapykuehoha ñemo’ã
+    .description = Eiporavo mba’e ñemo’ã emyandy térã embogue.
+preferences-etp-custom-cookies-enabled =
+    .label = Kookie
+preferences-etp-custom-cookie-behavior =
+    .aria-label = Kookie
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = Emoneĩmbaite kookieita
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = Ejoko kookie tenda pa’ũme
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = Eipe’a kookie ñanduti rogue okayguágui
+preferences-etp-custom-cookie-behavior-block-unvisited =
+    .label = Ejoko ñanduti rogue kookie eike’ỹhague
+preferences-etp-custom-cookie-behavior-block-all-cross-site-cookies =
+    .label = Ejokopaite kookie tenda pa’ũme (ikatu ojavyka ñanduti roguépe)
+preferences-etp-custom-cookie-behavior-block-all =
+    .label = Ejokopaite kookie (ojavykáta ñanduti roguépe)
+preferences-etp-custom-tracking-protection-enabled =
+    .label = Tetepy rapykuehoha
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = Tetepy rapykuehoha
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = Criptominero
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = Mokuãhũha ojekuaáva
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = Ojapyhyséva mokuãhũha
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = Ojapyhyséva mokuãhũha
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = Kuãhũita moheñoiha ojekuaáva ojejokóma
+    .description = Kóva omoneĩkuaa tapykuehohaita ndesegívo kookie’ỹre.
+security-privacy-issue-warning-third-party-cookies =
+    .label = Kookie mbohapyháva ijurujááma
+    .description = Kookieita mbohapyháva ojeporu ojehapykueho hag̃ua heta ñanduti roguépe.
+security-privacy-issue-warning-password-manager =
+    .label = Pe ñe’ẽñemi ñangarekoha ojepe’áma
+    .description = Ñe’ẽñemi ñangarekoha nepytyvõ embyaty hag̃ua ñe’ẽñemi hekorosãva ne mba’etépe g̃uarã.
+security-privacy-issue-warning-popup-blocker =
+    .label = Ovetã apysẽ jokoha oñembogue
+    .description = Umi ovetã iñapysẽva imarãkuaa ha ikatúva ivai.
+security-privacy-issue-warning-extension-install =
+    .label = Ñanduti rogueita omohendakuaa jepysokue
+    .description = Ñanduti rogueita omohendakuaa jepysokue { -brand-short-name }-pe oporandu’ỹre.
+security-privacy-issue-warning-safe-browsing =
+    .label = Tetepy imarã ha nembotavykuaáva ndojejokói
+    .description = Eimeve ñembotavyrãme ha software ivaíva oúva ñanduti roguégui.
+security-privacy-issue-warning-doh =
+    .label = DNS HTTPS rehegua ojepe’a
+    .description = DNS HTTPS rehegua oñomi ne ñanduti me’ẽhágui ñanduti rogue reikeha.
+security-privacy-issue-warning-ech =
+    .label = Encrypted Client Hello ojejokóma
+    .description = Encrypted Client Hello oñomi ne ñanduti me’ẽhágui ñanduti rogue reikeha.
+security-privacy-issue-warning-proxy-autodetection =
+    .label = Pe ñemboheko proxy ijeheguíva oñembojurujáma
+    .description = Proxy ñemboheko ikatu omoneĩ ñanduti jerovia’ỹha ohechávo ne rembiapo.

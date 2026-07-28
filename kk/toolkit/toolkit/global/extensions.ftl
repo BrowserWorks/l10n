@@ -1,0 +1,178 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Headers used in the webextension permissions dialog,
+## See https://bug1308309.bmoattachments.org/attachment.cgi?id=8814612
+## for an example of the full dialog.
+## Note: This string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $extension (String): replaced with the localized name of the extension.
+
+webext-perms-header = { $extension } қосу керек пе?
+webext-perms-header-with-perms = { $extension } қосу керек пе? Бұл кеңейтудің келесі рұқсаттары болады:
+webext-perms-header-unsigned = { $extension } қосу керек пе? Бұл кеңейту расталмаған. Зиянкес кеңейтулер сіздің жеке деректеріңізді ұрлай алады. Бұны тек шыққан көзіне сенсеңіз, орнатуға болады.
+webext-perms-header-unsigned-with-perms = { $extension } қосу керек пе? Бұл кеңейту расталмаған. Зиянкес кеңейтулер сіздің жеке деректеріңізді ұрлай алады. Бұны тек шыққан көзіне сенсеңіз, орнатуға болады. Бұл кеңейтудің келесі рұқсаттары болады:
+webext-perms-sideload-header = { $extension } қосылды
+webext-perms-optional-perms-header2 = { $extension } қосымша рұқсаттарды сұрайды
+webext-perms-optional-perms-header = { $extension } қосымша рұқсаттарды сұрайды.
+webext-perms-header2 = { $extension } қосу
+webext-perms-list-intro-unsigned = Бұл тексерілмеген кеңейту жекелігіңізге қауіп төндіруі немесе құрылғыңыздың қауіпсіздігіне нұқсан келтіруі мүмкін. Оны тек дереккөзіне сенсеңіз ғана қосыңыз.
+
+## Headers used in the webextension permissions dialog, inside the content.
+
+webext-perms-header-required-perms = Керек рұқсаттар:
+webext-perms-header-optional-settings = Қосымша баптаулар:
+webext-perms-header-update-required-perms = Жаңа талап етілетін рұқсаттар:
+webext-perms-header-optional-required-perms = Жаңа рұқсаттар:
+webext-perms-header-data-collection-perms = Міндетті деректерді жинау:
+webext-perms-header-data-collection-is-none = Деректер жинау:
+# This is a header used in the add-ons "update" prompt, shown when the new
+# version requires new data collection permissions.
+webext-perms-header-update-data-collection-perms = Жаңа міндетті деректерді жинау:
+# This is a header used in the add-ons "optional" prompt, shown when the
+# extension requests new data collection permissions programmatically.
+webext-perms-header-optional-data-collection-perms = Жаңа деректер жинауы:
+
+##
+
+webext-perms-add =
+    .label = Қосу
+    .accesskey = о
+webext-perms-cancel =
+    .label = Бас тарту
+    .accesskey = с
+webext-perms-sideload-text = Компьютеріңіздегі басқа бағдарлама браузерге кері әсерін тигізе алатын кеңейтуді орнатқан. Бұл кеңейтудің рұқсаттарға талаптарын қарап шығып, Іске қосуды немесе оны сөндірілген күйінде қалдыру үшін Бас тартуды таңдаңыз.
+webext-perms-sideload-text-no-perms = Компьютеріңіздегі басқа бағдарлама браузерге кері әсерін тигізе алатын кеңейтуді орнатқан. Іске қосуды немесе оны сөндірілген күйінде қалдыру үшін Бас тартуды таңдаңыз.
+webext-perms-sideload-enable =
+    .label = Іске қосу
+    .accesskey = с
+webext-perms-sideload-cancel =
+    .label = Бас тарту
+    .accesskey = с
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text2 = { $extension } жаңартылды. Жаңартылған нұсқасы орнатылу алдында жаңа рұқсаттарды сізге растау керек. "Бас тарту" таңдасаңыз, кеңейтудің ағымдағы нұсқасы қалатын болады.
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text = { $extension } жаңартылды. Жаңартылған нұсқасы орнатылу алдында жаңа рұқсаттарды сізге растау керек. "Бас тарту" таңдасаңыз, кеңейтудің ағымдағы нұсқасы қалатын болады. Бұл кеңейтудің келесі рұқсаттары болады:
+webext-perms-update-accept =
+    .label = Жаңарту
+    .accesskey = Ж
+webext-perms-optional-perms-list-intro = Оның талаптары:
+webext-perms-optional-perms-allow =
+    .label = Рұқсат ету
+    .accesskey = а
+webext-perms-optional-perms-deny =
+    .label = Тыйым салу
+    .accesskey = Т
+webext-perms-host-description-all-urls = Барлық вебсайттар үшін деректеріңізге қатынау
+webext-perms-host-description-file-urls = Компьютеріңіздегі жергілікті файлдарға қол жеткізу
+# Variables:
+#   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
+webext-perms-host-description-wildcard = { $domain } доменіндегі сайттар үшін деректеріңізге қатынау
+# Variables:
+#   $domainCount (Number): Integer indicating the number of additional
+#     hosts for which this webextension is requesting permission.
+webext-perms-host-description-too-many-wildcards =
+    { $domainCount ->
+        [one] Басқа { $domainCount } домендегі деректеріңізге қатынау
+       *[other] Басқа { $domainCount } домендегі деректеріңізге қатынау
+    }
+# Variables:
+#   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., www.mozilla.org)
+webext-perms-host-description-one-site = { $domain } үшін деректеріңізге қатынау
+# Variables:
+#   $domainCount (Number): Integer indicating the number of additional
+#     hosts for which this webextension is requesting permission.
+webext-perms-host-description-too-many-sites =
+    { $domainCount ->
+        [one] Басқа { $domainCount } сайттағы деректеріңізге қатынау
+       *[other] Басқа { $domainCount } сайттағы деректеріңізге қатынау
+    }
+# Variables:
+#   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., mozilla.org),
+#     $domain should be treated as plural (because it may also include all subdomains, e.g www.mozilla.org, ftp.mozilla.org).
+webext-perms-host-description-one-domain = { $domain } домендеріндегі сайттар үшін деректеріңізге қатынау
+# Permission string used for webextensions requesting access to 2 or more domains (and so $domainCount is expected to always
+# be >= 2, for webextensions requesting access to only one domain the `webext-perms-host-description-one-domain` string is
+# used instead).
+# Variables:
+#   $domainCount (Number): Integer indicating the number of websites domains for which this webextension is requesting permission
+#     (the list of domains will follow this string).
+webext-perms-host-description-multiple-domains =
+    { $domainCount ->
+        [one] { $domainCount } домендегі сайттар үшін деректеріңізге қатынау
+       *[other] { $domainCount } домендегі сайттар үшін деректеріңізге қатынау
+    }
+
+## Strings for data collection permissions in the permission prompt.
+
+webext-perms-description-data-none = Әзірлеуші бұл кеңейту деректер жинауды қажет етпейтінін хабарлады.
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some = Әзірлеуші бұл кеңейту келесіні жинайтынын хабарлады: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-update = Әзірлеуші бұл кеңейту келесіні жинайтынын хабарлады: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-optional = Әзірлеуші бұл кеңейту келесіні жинағысы келетінін хабарлады: { $permissions }
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text-with-data-collection = { $extension } жаңарту үшін жаңа параметрлерді қажет етеді
+webext-perms-update-list-intro-with-data-collection = Ағымдағы нұсқа мен параметрлерді сақтап қалу үшін бас тартыңыз немесе жаңа нұсқаны алу және өзгерістерді растау үшін жаңартыңыз.
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection = { $extension } қосымша баптауларды сұрайды
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection-only = { $extension } қосымша деректер жинауды сұрайды
+
+## Headers used in the webextension permissions dialog for synthetic add-ons.
+## The part of the string describing what privileges the extension gives should be consistent
+## with the value of webext-site-perms-description-gated-perms-{sitePermission}.
+## Note, this string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $hostname (String): the hostname of the site the add-on is being installed from.
+
+webext-site-perms-header-with-gated-perms-midi = Бұл қосымша { $hostname } үшін MIDI құрылғыларыңызға қатынауға рұқсат береді.
+webext-site-perms-header-with-gated-perms-midi-sysex = Бұл қосымша { $hostname } үшін MIDI құрылғыларыңызға (SysEx қолдауымен) қатынауға рұқсат береді.
+webext-site-perms-header-with-gated-perms-serial = Бұл қосымша { $hostname } үшін тізбекті порттарға қол жеткізуді рұқсат етеді.
+
+##
+
+# This string is used as description in the webextension permissions dialog for synthetic add-ons.
+# Note, the empty line is used to create a line break between the two sections.
+# Note, this string will be used as raw markup. Avoid characters like <, >, &
+webext-site-perms-description-gated-perms-midi =
+    Бұл әдетте дыбыс синтезаторлары сияқты жалғанатын құрылғылар, бірақ компьютерге де кіріктірілген болуы мүмкін.
+    
+    Веб-сайттарға әдетте MIDI құрылғыларына кіруге рұқсат етілмейді. Дұрыс пайдаланбау зақым келтіруі немесе қауіпсіздікті бұзуы мүмкін.
+webext-site-perms-description-gated-perms-webserial =
+    Бұл — микроконтроллерлер, 3D принтерлер, USB, тізбекті порттар, Bluetooth арқылы қосылатын басқа да құрылғылар.
+    
+    Веб-сайттың қай құрылғыларға қол жеткізе алатынын өзіңіз таңдай аласыз.
+    
+    Әдетте веб-сайттарға тізбекті құрылғыларға қол жеткізуге рұқсат берілмейді. Оларды дұрыс пайдаланбау зақымдануға немесе қауіпсіздіктің бұзылуына әкеп соғуы мүмкін.
+
+## Headers used in the webextension permissions dialog.
+## Note: This string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $extension (String): replaced with the localized name of the extension being installed.
+##   $hostname (String): will be replaced by the DNS host name for which a webextension enables permissions.
+
+webext-site-perms-header-with-perms = { $extension } қосу керек пе? Бұл кеңейту { $hostname } үшін келесі мүмкіндіктерді береді:
+webext-site-perms-header-unsigned-with-perms = { $extension } қосу керек пе? Бұл кеңейту расталмаған. Зиянкес кеңейтулер сіздің жеке деректеріңізді ұрлай алады. Бұны тек шыққан көзіне сенсеңіз, орнатуға болады. Бұл кеңейту { $hostname } үшін келесі мүмкіндіктерді береді:
+
+## These should remain in sync with permissions.NAME.label in sitePermissions.properties
+
+webext-site-perms-midi = MIDI құрылғыларына қатынау
+webext-site-perms-midi-sysex = SysEx қолдауы бар MIDI құрылғыларына қатынау
+webext-site-perms-serial = Тізбекті құрылғыларға қол жеткізу
+
+## Colorway theme migration
+
+webext-colorway-theme-migration-notification-message = <b>Түстер нұсқасы тақырыбыңыз өшірілді.</b> { -brand-shorter-name } өзінің түстер нұсқалары топтамасын жаңартты. Соңғы нұсқаларды қосымшалар сайтынан таба аласыз.
+webext-colorway-theme-migration-notification-button = Жаңартылған түстер нұсқаларын алу

@@ -1,0 +1,238 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-new-tab =
+    .label = Nová karta
+    .accesskey = N
+reload-tab =
+    .label = Obnoviť kartu
+    .accesskey = O
+reload-tab2 =
+    .label = Obnoviť
+    .accesskey = b
+select-all-tabs =
+    .label = Vybrať všetky karty
+    .accesskey = v
+tab-context-play-tab =
+    .label = Prehrať kartu
+    .accesskey = P
+tab-context-play-tabs =
+    .label = Prehrať karty
+    .accesskey = y
+duplicate-tab =
+    .label = Duplikovať kartu
+    .accesskey = D
+duplicate-tab2 =
+    .label = Duplikovať
+    .accesskey = D
+duplicate-tabs =
+    .label = Duplikovať karty
+    .accesskey = D
+duplicate-tabs2 =
+    .label = Duplikovať
+    .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Zavrieť karty naľavo
+    .accesskey = a
+close-tabs-to-the-start-vertical =
+    .label = Zavrieť karty vyššie
+    .accesskey = v
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
+close-tabs-to-the-end =
+    .label = Zavrieť karty napravo
+    .accesskey = n
+close-tabs-to-the-end-vertical =
+    .label = Zavrieť karty nižšie
+    .accesskey = n
+close-other-tabs =
+    .label = Zavrieť ostatné karty
+    .accesskey = e
+reload-tabs =
+    .label = Obnoviť karty
+    .accesskey = r
+pin-tab =
+    .label = Pripnúť kartu
+    .accesskey = i
+tab-context-pin-tab2 =
+    .label = Pripnúť
+    .accesskey = r
+unpin-tab =
+    .label = Zrušiť pripnutie karty
+    .accesskey = i
+tab-context-unpin-tab2 =
+    .label = Zrušiť pripnutie
+    .accesskey = r
+pin-selected-tabs =
+    .label = Pripnúť karty
+    .accesskey = P
+unpin-selected-tabs =
+    .label = Zrušiť pripnutie kariet
+    .accesskey = i
+bookmark-selected-tabs =
+    .label = Pridať karty medzi záložky…
+    .accesskey = a
+tab-context-bookmark-tab =
+    .label = Pridať kartu medzi záložky…
+    .accesskey = r
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Pridať medzi záložky
+    .accesskey = z
+tab-context-open-in-new-container-tab =
+    .label = Otvoriť na novej kontajnerovej karte
+    .accesskey = k
+tab-context-open-in-new-container-tab2 =
+    .label = Otvoriť na novej kontajnerovej karte
+    .accesskey = k
+move-to-start =
+    .label = Presunúť na začiatok
+    .accesskey = z
+move-to-end =
+    .label = Presunúť na koniec
+    .accesskey = k
+move-to-new-window =
+    .label = Presunúť do nového okna
+    .accesskey = d
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Presunúť do profilu { $profileName }
+tab-context-close-multiple-tabs =
+    .label = Zavrieť viaceré karty
+    .accesskey = c
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Zavrieť viacero
+    .accesskey = v
+tab-context-close-duplicate-tabs =
+    .label = Zavrieť duplicitné karty
+    .accesskey = u
+tab-context-close-duplicate-tabs2 =
+    .label = Zavrieť duplikáty tejto karty
+    .accesskey = d
+tab-context-share-url =
+    .label = Zdieľať
+    .accesskey = e
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Nová karta vpravo
+    .accesskey = v
+tab-context-new-tab-open-vertical =
+    .label = Nová karta nižšie
+    .accesskey = i
+tab-context-new-group =
+    .label = Nová skupina
+    .accesskey = N
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Obnoviť zatvorenú kartu
+            [one] Obnoviť zatvorenú kartu
+            [few] Obnoviť zatvorené karty
+           *[other] Obnoviť zatvorené karty
+        }
+    .accesskey = b
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zavrieť kartu
+            [one] Zavrieť kartu
+            [few] Zavrieť { $tabCount } karty
+           *[other] Zavrieť { $tabCount } kariet
+        }
+    .accesskey = Z
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Zavrieť
+            [one] Zavrieť
+            [few] Zavrieť { $tabCount } karty
+            [many] Zavrieť { $tabCount } kariet
+           *[other] Zavrieť { $tabCount } kariet
+        }
+    .accesskey = Z
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Presunúť kartu
+           *[other] Presunúť karty
+        }
+    .accesskey = s
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Presunúť kartu do
+            [one] Presunúť kartu do
+            [few] Presunúť { $tabCount } karty do
+            [many] Presunúť { $tabCount } kariet do
+           *[other] Presunúť { $tabCount } kariet do
+        }
+    .accesskey = r
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Presunúť rozdelené zobrazenie do
+    .accesskey = P
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Odoslať do zariadenia
+            [one] Odoslať do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+            [many] Odoslať { $tabCount } kariet do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+    .accesskey = d
+tab-context-send-to-device2 =
+    .label = Odoslať do vašich zariadení
+    .accesskey = c
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Odoslať { $tabCount } kartu do mobilu
+            [one] Odoslať { $tabCount } kartu do mobilu
+            [few] Odoslať { $tabCount } karty do mobilu
+            [many] Odoslať { $tabCount } kariet do mobilu
+           *[other] Odoslať { $tabCount } kariet do mobilu
+        }
+    .accesskey = m
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Vytvoriť odkaz na zdieľanie
+    .accesskey = V
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] Odoslať kartu do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+    .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Uvoľniť kartu
+            [one] Uvoľniť kartu
+            [few] Uvoľniť { $tabCount } karty
+            [many] Uvoľniť { $tabCount } kariet
+           *[other] Uvoľniť { $tabCount } kariet
+        }
+    .accesskey = U
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Uvoľniť
+    .accesskey = U

@@ -1,0 +1,262 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-new-tab =
+    .label = Tab Newydd
+    .accesskey = T
+reload-tab =
+    .label = Ail lwytho Tab
+    .accesskey = A
+reload-tab2 =
+    .label = Ail-lwytho
+    .accesskey = A
+select-all-tabs =
+    .label = Dewis Pob Tab
+    .accesskey = D
+tab-context-play-tab =
+    .label = Chwarae'r Tab
+    .accesskey = h
+tab-context-play-tabs =
+    .label = Chwarae Tabiau
+    .accesskey = C
+duplicate-tab =
+    .label = Dyblygu Tab
+    .accesskey = D
+duplicate-tab2 =
+    .label = Dyblyg
+    .accesskey = D
+duplicate-tabs =
+    .label = Tabiau Dyblyg
+    .accesskey = D
+duplicate-tabs2 =
+    .label = Dyblyg
+    .accesskey = D
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = Cau Tabiau i'r Chwith
+    .accesskey = h
+close-tabs-to-the-start-vertical =
+    .label = Cau'r Tabiau Uchod
+    .accesskey = U
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
+close-tabs-to-the-end =
+    .label = Cau Tabiau i'r Dde
+    .accesskey = D
+close-tabs-to-the-end-vertical =
+    .label = Cau'r Tabiau Isod
+    .accesskey = I
+close-other-tabs =
+    .label = Cau Tabiau Eraill
+    .accesskey = C
+reload-tabs =
+    .label = Ail-lwytho Tabiau
+    .accesskey = A
+pin-tab =
+    .label = Pinio Tab
+    .accesskey = P
+tab-context-pin-tab2 =
+    .label = Pinio
+    .accesskey = P
+unpin-tab =
+    .label = Dadbinio Tab
+    .accesskey = D
+tab-context-unpin-tab2 =
+    .label = Dadbinio
+    .accesskey = b
+pin-selected-tabs =
+    .label = Pinio Tabiau
+    .accesskey = P
+unpin-selected-tabs =
+    .label = Dadbinio Tabiau
+    .accesskey = b
+bookmark-selected-tabs =
+    .label = Gosod Nod Tudalen i'r Tabiau…
+    .accesskey = T
+tab-context-bookmark-tab =
+    .label = Gosod Nod Tudalen i'r Tab
+    .accesskey = T
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = Nod Tudalen
+    .accesskey = N
+tab-context-open-in-new-container-tab =
+    .label = Agor mewn Tab Cynhwysydd Newydd
+    .accesskey = A
+tab-context-open-in-new-container-tab2 =
+    .label = Agor mewn Tab Cynhwysydd Newydd
+    .accesskey = A
+move-to-start =
+    .label = Symud i'r Cychwyn
+    .accesskey = C
+move-to-end =
+    .label = Symud i'r Diwedd
+    .accesskey = D
+move-to-new-window =
+    .label = Symud i Ffenestr Newydd
+    .accesskey = N
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = Mynd at “{ $profileName }”
+tab-context-close-multiple-tabs =
+    .label = Cau Tabiau Lluosog
+    .accesskey = L
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = Cau Lluosog
+    .accesskey = L
+tab-context-close-duplicate-tabs =
+    .label = Cau Tabiau Dyblyg
+    .accesskey = T
+tab-context-close-duplicate-tabs2 =
+    .label = Cau Dyblygiadau'r Tab Hwn
+    .accesskey = a
+tab-context-share-url =
+    .label = Rhannu
+    .accesskey = R
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = Tab Newydd i'r Dde
+    .accesskey = D
+tab-context-new-tab-open-vertical =
+    .label = Tab Newydd Isod
+    .accesskey = s
+tab-context-new-group =
+    .label = Grŵp Newydd
+    .accesskey = G
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ailagor Tabiau wedi'u Cau
+            [zero] Ailagor Tabiau wedi'u Cau
+            [one] Ailagor Tab wedi'i Gau
+            [two] Ailagor Tabiau wedi'u Cau
+            [few] Ailagor Tabiau wedi'u Cau
+            [many] Ailagor Tabiau wedi'u Cau
+           *[other] Ailagor Tabiau wedi'u Cau
+        }
+    .accesskey = A
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Cau Tab
+            [zero] Cau { $tabCount } Tabiau
+            [one] Cau { $tabCount } Tab
+            [two] Cau { $tabCount } Dab
+            [few] Cau { $tabCount } Tab
+            [many] Cau { $tabCount } Thab
+           *[other] Cau { $tabCount } Tab
+        }
+    .accesskey = T
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Cau
+            [zero] Cau { $tabCount } Tabiau
+            [one] Cau { $tabCount } Tab
+            [two] Cau { $tabCount } Dab
+            [few] Cau { $tabCount } Tab
+            [many] Cau { $tabCount } Thab
+           *[other] Cau { $tabCount } Tab
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Symud Tab
+            [zero] Symud Tab
+            [one] Symud Tab
+            [two] Symud Tab
+            [few] Symud Tab
+            [many] Symud Tab
+           *[other] Symud Tab
+        }
+    .accesskey = S
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] Symud Tab i
+            [zero] Symud { $tabCount } Tabiau i
+            [one] Symud { $tabCount } Tab i
+            [two] Symud { $tabCount } Dab i
+            [few] Symud { $tabCount } Tab i
+            [many] Symud { $tabCount } Thab i
+           *[other] Symud { $tabCount } Tab i
+        }
+    .accesskey = S
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = Symud Golwg Hollt i
+    .accesskey = G
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] Anfon Tab i Ddyfais
+            [zero] Anfon { $tabCount } Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Thab i Ddyfais
+            [few] Anfon { $tabCount } Tab i Ddyfais
+            [many] Anfon { $tabCount } Thab i Ddyfais
+           *[other] Anfon { $tabCount } Tab i Ddyfais
+        }
+    .accesskey = A
+tab-context-send-to-device2 =
+    .label = Anfon at Eich Dyfeisiau
+    .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] Anfon i'r Symudol
+            [zero] Anfon { $tabCount } Tabiau i'r Symudol
+            [one] Anfon { $tabCount } Tab i'r Symudol
+            [two] Anfon { $tabCount } Dab i'r Symudol
+            [few] Anfon { $tabCount } Tab i'r Symudol
+            [many] Anfon { $tabCount } Thab i'r Symudol
+           *[other] Anfon { $tabCount } Tab i'r Symudol
+        }
+    .accesskey = A
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = Creu Dolen i'w Rhannu
+    .accesskey = R
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [zero] Anfon Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Dab i Ddyfais
+            [few] Anfon { $tabCount } Thab i Ddyfais
+            [many] Anfon { $tabCount } Tab i Ddyfais
+           *[other] Anfon { $tabCount } Thab i Ddyfais
+        }
+    .accesskey = n
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] Dadlwytho { $tabCount } Tab
+            [zero] Dadlwytho { $tabCount } Tabiau
+            [one] Dadlwytho { $tabCount } Tab
+            [two] Dadlwythwch { $tabCount } Dab
+            [few] Dadlwytho { $tabCount } Tab
+            [many] Dadlwytho { $tabCount } Tab
+           *[other] Dadlwytho { $tabCount } Tab
+        }
+    .accesskey = D
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = Llwytho i fyny
+    .accesskey = L

@@ -1,0 +1,220 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-new-tab =
+    .label = לשונית חדשה
+    .accesskey = ל
+reload-tab =
+    .label = טעינת לשונית מחדש
+    .accesskey = ט
+reload-tab2 =
+    .label = טעינה מחדש
+    .accesskey = ט
+select-all-tabs =
+    .label = בחירת כל הלשוניות
+    .accesskey = ב
+tab-context-play-tab =
+    .label = ניגון לשונית
+    .accesskey = נ
+tab-context-play-tabs =
+    .label = ניגון לשוניות
+    .accesskey = נ
+duplicate-tab =
+    .label = שכפול לשונית
+    .accesskey = כ
+duplicate-tab2 =
+    .label = שכפול
+    .accesskey = ש
+duplicate-tabs =
+    .label = שכפול לשוניות
+    .accesskey = כ
+duplicate-tabs2 =
+    .label = שכפול
+    .accesskey = ש
+# The following string is displayed on a menuitem that will close the tabs from the start of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Left" and in right-to-left languages this should use "Right".
+close-tabs-to-the-start =
+    .label = סגירת כל הלשוניות מימין
+    .accesskey = מ
+close-tabs-to-the-start-vertical =
+    .label = סגירת הלשוניות שלמעלה
+    .accesskey = מ
+# The following string is displayed on a menuitem that will close the tabs from the end of the tabstrip to the currently targeted tab (excluding the currently targeted and any other selected tabs).
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left".
+close-tabs-to-the-end =
+    .label = סגירת כל הלשוניות משמאל
+    .accesskey = ש
+close-tabs-to-the-end-vertical =
+    .label = סגירת הלשוניות שלמטה
+    .accesskey = ט
+close-other-tabs =
+    .label = סגירת לשוניות אחרות
+    .accesskey = א
+reload-tabs =
+    .label = טעינת לשוניות מחדש
+    .accesskey = ט
+pin-tab =
+    .label = נעיצת לשונית
+    .accesskey = נ
+tab-context-pin-tab2 =
+    .label = נעיצה
+    .accesskey = נ
+unpin-tab =
+    .label = ביטול נעיצת לשונית
+    .accesskey = ב
+tab-context-unpin-tab2 =
+    .label = ביטול נעיצה
+    .accesskey = ב
+pin-selected-tabs =
+    .label = נעיצת לשוניות
+    .accesskey = נ
+unpin-selected-tabs =
+    .label = ביטול נעיצת לשוניות
+    .accesskey = ב
+bookmark-selected-tabs =
+    .label = יצירת סימנייה ללשוניות…
+    .accesskey = נ
+tab-context-bookmark-tab =
+    .label = יצירת סימנייה ללשונית…
+    .accesskey = ס
+# Context menu item used to bookmark 1 or more selected tabs
+tab-context-bookmark-tab2 =
+    .label = הוספה לסימניות
+    .accesskey = ס
+tab-context-open-in-new-container-tab =
+    .label = פתיחה במגירת לשוניות חדשה
+    .accesskey = ג
+tab-context-open-in-new-container-tab2 =
+    .label = פתיחה במגירת לשוניות חדשה
+    .accesskey = מ
+move-to-start =
+    .label = העברה להתחלה
+    .accesskey = ת
+move-to-end =
+    .label = העברה לסוף
+    .accesskey = ס
+move-to-new-window =
+    .label = העברה לחלון חדש
+    .accesskey = ח
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = העברה ל־{ $profileName }
+tab-context-close-multiple-tabs =
+    .label = סגירת לשוניות מרובות
+    .accesskey = מ
+# Sub-menu label in context menu with different options to close multiple tabs (e.g. close to right, left, etc.).
+tab-context-close-multiple-tabs2 =
+    .label = סגירה מרובה
+    .accesskey = מ
+tab-context-close-duplicate-tabs =
+    .label = סגירת לשוניות כפולות
+    .accesskey = כ
+tab-context-close-duplicate-tabs2 =
+    .label = סגירת כפילויות של לשונית זו
+    .accesskey = כ
+tab-context-share-url =
+    .label = שיתוף
+    .accesskey = ש
+# In left-to-right languages this should use "Right" and in right-to-left languages this should use "Left" to indicate the direction a new tab will open.
+tab-context-new-tab-open =
+    .label = לשוניות חדשה מצד שמאל
+    .accesskey = מ
+tab-context-new-tab-open-vertical =
+    .label = לשונית חדשה למטה
+    .accesskey = ח
+tab-context-new-group =
+    .label = קבוצה חדשה
+    .accesskey = ק
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-reopen-closed-tabs =
+    .label =
+        { $tabCount ->
+            [1] פתיחת הלשונית שנסגרה מחדש
+           *[other] פתיחת הלשוניות שנסגרו מחדש
+        }
+    .accesskey = מ
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] סגירת לשונית
+            [one] סגירת לשונית
+           *[other] סגירת { $tabCount } לשוניות
+        }
+    .accesskey = ס
+tab-context-close-n-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] סגירה
+           *[other] סגירת { $tabCount } לשוניות
+        }
+    .accesskey = ס
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] העברת לשונית
+           *[other] העברת לשוניות
+        }
+    .accesskey = ע
+# Context menu option, highlighting this shows a submenu of potential destinations to move one or more tabs to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-tabs2 =
+    .label =
+        { $tabCount ->
+            [1] העברת לשונית אל
+           *[other] העברת { $tabCount } לשוניות אל
+        }
+    .accesskey = ע
+# Context menu option, highlighting this shows a submenu of potential destinations to move two tabs of a split view together to (tab groups, windows, profiles, start, end, etc.)
+tab-context-move-split-view =
+    .label = העברת התצוגה המפוצלת אל
+    .accesskey = צ
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] שליחה למכשיר
+            [one] שליחת לשונית אחת למכשיר
+           *[other] שליחת { $tabCount } לשוניות למכשיר
+        }
+    .accesskey = ש
+tab-context-send-to-device2 =
+    .label = שליחה למכשירים שלך
+    .accesskey = ש
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] שליחה לנייד
+           *[other] שליחת { $tabCount } לשוניות לנייד
+        }
+    .accesskey = ש
+# Verb: share a collection of selected tabs as a link
+tab-context-share-selected-tabs =
+    .label = יצירת קישור הניתן לשיתוף
+    .accesskey = י
+tab-context-send-tabs-to-device =
+    .label =
+        { $tabCount ->
+            [one] שליחת לשונית למכשיר
+           *[other] שליחת { $tabCount } לשוניות למכשיר
+        }
+    .accesskey = ש
+tab-context-unload-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] ביטול טעינת לשונית
+           *[other] ביטול טעינת { $tabCount } לשוניות
+        }
+    .accesskey = ב
+# Context menu option, alternate label for unloading the content of 1 or more tabs to reduce memory usage
+tab-context-unload-tabs =
+    .label = ביטול טעינה
+    .accesskey = ט

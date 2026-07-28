@@ -1,0 +1,162 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Headers used in the webextension permissions dialog,
+## See https://bug1308309.bmoattachments.org/attachment.cgi?id=8814612
+## for an example of the full dialog.
+## Note: This string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $extension (String): replaced with the localized name of the extension.
+
+webext-perms-header = Bæta við { $extension }?
+webext-perms-header-with-perms = Bæta við { $extension }? Þessi viðbót mun hafa leyfi til að:
+webext-perms-header-unsigned = Bæta við { $extension }? Þessi forritsauki er óstaðfestur. Skaðlegir forritsaukar geta stolið einkaupplýsingunum þínum eða berskjaldað tölvuna þína. Bættu honum aðeins við ef þú treystir upprunanum.
+webext-perms-header-unsigned-with-perms = Bæta við { $extension }? Þessi forritsauki er óstaðfestur. Skaðlegir forritsaukar geta stolið einkaupplýsingunum þínum eða berskjaldað tölvuna þína. Bættu honum aðeins við ef þú treystir upprunanum. Þessi forritsauki mun hafa heimildir til að:
+webext-perms-sideload-header = { $extension } bætt við
+webext-perms-optional-perms-header2 = { $extension } þarfnast auka heimilda
+webext-perms-optional-perms-header = { $extension } þarfnast auka heimilda.
+webext-perms-header2 = Bæta við { $extension }
+
+## Headers used in the webextension permissions dialog, inside the content.
+
+webext-perms-header-required-perms = Nauðsynlegar heimildir:
+webext-perms-header-optional-settings = Valkvæðar stillingar:
+webext-perms-header-update-required-perms = Nýjar nauðsynlegar heimildir:
+webext-perms-header-optional-required-perms = Nýjar heimildir:
+webext-perms-header-data-collection-perms = Nauðsynleg gagnasöfnun:
+webext-perms-header-data-collection-is-none = Gagnasöfnun:
+# This is a header used in the add-ons "update" prompt, shown when the new
+# version requires new data collection permissions.
+webext-perms-header-update-data-collection-perms = Ný nauðsynleg gagnasöfnun:
+# This is a header used in the add-ons "optional" prompt, shown when the
+# extension requests new data collection permissions programmatically.
+webext-perms-header-optional-data-collection-perms = Ný gagnasöfnun:
+
+##
+
+webext-perms-add =
+    .label = Bæta við
+    .accesskey = a
+webext-perms-cancel =
+    .label = Hætta við
+    .accesskey = H
+webext-perms-sideload-text = Eitthvað annað forrit á tölvunni setti inn viðbót sem gæti haft á vafrann. Prófaðu að athuga heimildir fyrir viðbótina og veldu að Virkja eða Óvirkja (til að hafa það áfram óvirkt).
+webext-perms-sideload-text-no-perms = Eitthvað annað forrit á tölvunni setti inn viðbót sem gæti haft á vafrann. Veldu að Virkja eða Óvirkja (til að hafa það áfram óvirkt).
+webext-perms-sideload-enable =
+    .label = Virkja
+    .accesskey = V
+webext-perms-sideload-cancel =
+    .label = Hætta við
+    .accesskey = H
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text2 = Búið er að uppfæra { $extension }. Þú verður að samþykkja nýju heimildirnar áður en hægt er að setja inn nýju útgáfuna. Ef þú velur “Hætta við” verður núverandi útgáfa af forritsaukanum notuð í staðinn.
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text = Búið er að uppfæra { $extension }. Þú verður að samþykkja nýju heimildirnar áður en hægt er að setja inn nýju útgáfuna. Ef þú velur “Hætta við” verður núverandi útgáfa af forritsaukanum notuð í staðinn. Þessi forritsauki mun hafa heimildir til að:
+webext-perms-update-accept =
+    .label = Uppfæra
+    .accesskey = U
+webext-perms-optional-perms-list-intro = Það vill:
+webext-perms-optional-perms-allow =
+    .label = Leyfa
+    .accesskey = a
+webext-perms-optional-perms-deny =
+    .label = Hafna
+    .accesskey = H
+webext-perms-host-description-all-urls = Skoða gögnin þín fyrir öll vefsvæði
+# Variables:
+#   $domain (String): will be replaced by the DNS domain for which a webextension is requesting access (e.g., mozilla.org)
+webext-perms-host-description-wildcard = Skoða gögnin þín fyrir vefsvæði á { $domain } léninu
+# Variables:
+#   $domainCount (Number): Integer indicating the number of additional
+#     hosts for which this webextension is requesting permission.
+webext-perms-host-description-too-many-wildcards =
+    { $domainCount ->
+        [one] Skoða gögnin þín á { $domainCount } öðru léni
+       *[other] Skoða gögnin þín á { $domainCount } öðrum lénum
+    }
+# Variables:
+#   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., www.mozilla.org)
+webext-perms-host-description-one-site = Skoða gögnin þín fyrir { $domain }
+# Variables:
+#   $domainCount (Number): Integer indicating the number of additional
+#     hosts for which this webextension is requesting permission.
+webext-perms-host-description-too-many-sites =
+    { $domainCount ->
+        [one] Skoða gögnin þín á { $domainCount } öðru vefsvæði
+       *[other] Skoða gögnin þín á { $domainCount } öðrum vefsvæðum
+    }
+# Variables:
+#   $domain (String): will be replaced by the DNS host name for which a webextension is requesting access (e.g., mozilla.org),
+#     $domain should be treated as plural (because it may also include all subdomains, e.g www.mozilla.org, ftp.mozilla.org).
+webext-perms-host-description-one-domain = Skoða gögnin þín fyrir vefsvæði á { $domain } lénum
+# Permission string used for webextensions requesting access to 2 or more domains (and so $domainCount is expected to always
+# be >= 2, for webextensions requesting access to only one domain the `webext-perms-host-description-one-domain` string is
+# used instead).
+# Variables:
+#   $domainCount (Number): Integer indicating the number of websites domains for which this webextension is requesting permission
+#     (the list of domains will follow this string).
+webext-perms-host-description-multiple-domains =
+    { $domainCount ->
+        [one] Skoða gögnin þín fyrir vefsvæði á { $domainCount } léni
+       *[other] Skoða gögnin þín fyrir vefsvæði á { $domainCount } lénum
+    }
+
+## Strings for data collection permissions in the permission prompt.
+
+webext-perms-description-data-none = Forritarinn segir að þessi forritsauki krefjist ekki gagnasöfnunar.
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some = Forritarinn segir að þessi forritsauki safni: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-update = Forritarinn segir að þessi forritsauki muni safna: { $permissions }
+# Variables:
+#    $permissions (String): a list of data collection permissions formatted with `Intl.ListFormat` using the "narrow" style.
+webext-perms-description-data-some-optional = Forritarinn segir að þessi forritsauki vilji safna: { $permissions }
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-update-text-with-data-collection = { $extension } krefst nýrra stillinga til að uppfærast
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection = { $extension } þarfnast viðbótarstillinga
+# Variables:
+#   $extension (String): replaced with the localized name of the extension.
+webext-perms-optional-text-with-data-collection-only = { $extension } óskar eftir frekari gagnasöfnun
+
+## Headers used in the webextension permissions dialog for synthetic add-ons.
+## The part of the string describing what privileges the extension gives should be consistent
+## with the value of webext-site-perms-description-gated-perms-{sitePermission}.
+## Note, this string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $hostname (String): the hostname of the site the add-on is being installed from.
+
+webext-site-perms-header-with-gated-perms-midi = Þessi viðbót veitir { $hostname } aðgang að MIDI-tækjunum þínum.
+webext-site-perms-header-with-gated-perms-midi-sysex = Þessi viðbót veitir { $hostname } aðgang að MIDI-tækjunum þínum (með stuðningi við SysEx).
+
+##
+
+# This string is used as description in the webextension permissions dialog for synthetic add-ons.
+# Note, the empty line is used to create a line break between the two sections.
+# Note, this string will be used as raw markup. Avoid characters like <, >, &
+webext-site-perms-description-gated-perms-midi =
+    Þetta eru venjulega tengjanleg tæki á borð við hljóðgervla, en gætu líka verið innbyggð í tölvuna þína.
+    
+    Vefsvæði hafa venjulega ekki aðgang að MIDI-tækjum. Óviðeigandi notkun gæti valdið skemmdum eða skert öryggi.
+
+## Headers used in the webextension permissions dialog.
+## Note: This string will be used as raw markup. Avoid characters like <, >, &
+## Variables:
+##   $extension (String): replaced with the localized name of the extension being installed.
+##   $hostname (String): will be replaced by the DNS host name for which a webextension enables permissions.
+
+webext-site-perms-header-with-perms = Bæta við { $extension }? Þessi forritsauki veitir { $hostname } eftirfarandi eiginleika:
+webext-site-perms-header-unsigned-with-perms = Bæta við { $extension }? Þessi forritsauki er óstaðfestur. Skaðlegir forritsaukar geta stolið einkaupplýsingunum þínum eða berskjaldað tölvuna þína. Bættu honum aðeins við ef þú treystir upprunanum. Þessi forritsauki veitir { $hostname } eftirfarandi eiginleika:
+
+## These should remain in sync with permissions.NAME.label in sitePermissions.properties
+
+webext-site-perms-midi = Tengjast við MIDI-tæki
+webext-site-perms-midi-sysex = Tengjast við MIDI-tæki með stuðning við SysEx
