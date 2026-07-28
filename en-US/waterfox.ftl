@@ -86,6 +86,23 @@ waterfox-appearance-statusbar-enabled-toggle =
 waterfox-appearance-statusbar-links-toggle =
     .label = Show link destinations in the status bar
 
+waterfox-home-mode-choice-default =
+    .label = Home (Default)
+waterfox-home-mode-choice-custom-new-tab-url =
+    .label = Custom URL
+waterfox-home-new-tab-custom-url =
+    .label = Custom new tab URL
+    .description = Opens this URL when you create a new tab.
+waterfox-home-new-tab-custom-url-input =
+    .label = URL
+    .placeholder = https://example.com
+waterfox-home-prefs-content-header =
+    .label = Home
+waterfox-home-prefs-content-header2 = Home Content
+waterfox-home-prefs-content-description = Choose what content you want on your Home screen.
+waterfox-home-disabled-notice =
+    .message = To use these features, set new tabs or new windows to Home.
+
 geolocation-api-header = Geolocation API
 geolocation-description = Some websites require your location to function. If a website isn’t functioning as a result of not being able to find your location, please enable this preference and try again.
 geolocation-api-enabled =
