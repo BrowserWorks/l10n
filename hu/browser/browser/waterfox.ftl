@@ -14,7 +14,7 @@ appmenuitem-restart-browser =
 
 ## Tab Context Menu
 
-copy-url =
+copy-tab-link =
     .label = Laphivatkozás másolása
 copy-all-urls =
     .label = Összes laphivatkozás másolása

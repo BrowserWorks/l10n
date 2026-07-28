@@ -14,7 +14,7 @@ appmenuitem-restart-browser =
 
 ## Tab Context Menu
 
-copy-url =
+copy-tab-link =
     .label = Copy Tab Link
 copy-all-urls =
     .label = Copy All Tab Links

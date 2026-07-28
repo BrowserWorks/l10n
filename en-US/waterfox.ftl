@@ -19,7 +19,7 @@ appmenuitem-restart-browser =
 
 copy-all-urls =
     .label = Copy All Tab Links
-copy-url =
+copy-tab-link =
     .label = Copy Tab Link
 unload-tab =
     .label = Unload Tab
@@ -434,6 +434,66 @@ onboarding-grassroots-title = Supporting the grassroots
 onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, grassroots browser. With your support, we’re building a sustainable alternative to the big players out there.
 
 tabbrowser-confirm-session-restore-checkbox = Open previous windows and tabs
+
+waterfox-tabs-group =
+    .label = Waterfox tabs
+    .description = Where the tab and bookmarks toolbars sit, the extra menu entries, and automatic tab grouping.
+waterfox-tabs-position-heading =
+    .label = Toolbar positions
+waterfox-tabs-tab-bar-position-select =
+    .label = Tab bar position
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Above the navigation toolbar
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Below the navigation toolbar
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = At the bottom, above the status bar
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = At the bottom, below the status bar
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Bookmarks toolbar position
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Top
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Bottom
+waterfox-tabs-menu-heading =
+    .label = Tab context menu
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Show the duplicate tab entry
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Show the copy tab URL entry
+waterfox-tabs-copy-active-url-toggle =
+    .label = Copy the URL of the active tab instead of the clicked tab
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Show the copy all tab URLs entry
+waterfox-tabs-restart-heading =
+    .label = Restarting
+waterfox-tabs-restart-menu-toggle =
+    .label = Show a restart entry in the menus
+waterfox-tabs-restart-confirm-toggle =
+    .label = Ask for confirmation before restarting
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Clear the startup cache when restarting
+waterfox-tabs-display-heading =
+    .label = Tab display
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Shrink pinned tabs to just the site icon
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Hide the close button on tabs
+waterfox-tabs-grouping-heading =
+    .label = Automatic tab grouping
+waterfox-tabs-auto-group-toggle =
+    .label = Group new tabs with the tab that opened them
+waterfox-tabs-auto-group-placement-select =
+    .label = Where new tabs join the group
+waterfox-tabs-auto-group-placement-option-after =
+    .label = After the tab that opened them
+waterfox-tabs-auto-group-placement-option-first =
+    .label = At the start of the group
+waterfox-tabs-auto-group-placement-option-last =
+    .label = At the end of the group
+
+waterfox-copy-url-notification = URL copied
 
 ## Tree Vertical Tabs
 
