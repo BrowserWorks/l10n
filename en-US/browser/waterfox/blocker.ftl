@@ -108,25 +108,77 @@ waterfox-blocker-toolbar-button =
 
 waterfox-blocker-panel-not-available = Not available on this page
 
-waterfox-blocker-panel-toggle =
-    .label = Ad blocking on this site
-    .description = Block ads and trackers on this site.
-
 waterfox-blocker-panel-disabled = Ad blocking is off
-
-waterfox-blocker-panel-site-excepted = Ads allowed on this site
 
 waterfox-blocker-panel-partner-allowed = Ads allowed for search partners
 
 # Variables:
-#   $count (Number) - Number of ads blocked on this site.
-waterfox-blocker-stats =
+#   $count (Number) - Number of requests blocked on this page.
+waterfox-blocker-panel-hero-count = { $count } blocked
+
+waterfox-blocker-panel-hero-paused = Paused
+
+# Variables:
+#   $host (String) - Host of the current page.
+waterfox-blocker-panel-hero-subtitle = on { $host }
+
+waterfox-blocker-panel-category-ads = Ads
+
+waterfox-blocker-panel-category-trackers = Trackers
+
+waterfox-blocker-panel-category-popups = Pop-ups
+
+waterfox-blocker-panel-see-all = See everything blocked
+
+waterfox-blocker-panel-toggle2 =
+    .label = Block ads on this site
+
+waterfox-blocker-panel-paused-card = This site is on your allowlist. Ads, pop-ups, and trackers can load until you turn blocking back on.
+
+waterfox-blocker-panel-allowlist = Manage allowlist
+
+# Variables:
+#   $count (Number) - Number of sites on the allowlist.
+waterfox-blocker-panel-allowlist-count =
     { $count ->
-        [one] { $count } ad blocked on this site
-       *[other] { $count } ads blocked on this site
+        [one] { $count } site
+       *[other] { $count } sites
     }
 
-waterfox-blocker-panel-settings-button = Ad blocking settings
+# Variables:
+#   $count (Number) - Number of requests blocked since installation.
+#   $size (String) - Localized estimate of data saved, e.g. "41 MB".
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> blocked all time · { $size } saved
+
+waterfox-blocker-panel-footer-settings = Settings
+
+waterfox-blocker-panel-back =
+    .aria-label = Back
+
+waterfox-blocker-panel-detail-title = Blocked on this page
+
+waterfox-blocker-panel-detail-section-ads = Advertising
+
+waterfox-blocker-panel-detail-section-trackers = Trackers
+
+waterfox-blocker-panel-detail-section-popups = Pop-ups
+
+# Variables:
+#   $count (Number) - Number of blocked pop-up windows.
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } pop-up window was blocked automatically.
+       *[other] { $count } pop-up windows were blocked automatically.
+    }
+
+# Variables:
+#   $domain (String) - Domain the user can allow on the current site.
+waterfox-blocker-panel-allow-domain = Allow
+    .aria-label = Allow { $domain }
+
+# Variables:
+#   $count (Number) - Number of times requests to the domain were blocked.
+waterfox-blocker-panel-domain-count = ×{ $count }
 
 waterfox-blocker-show-badge-pref =
     .label = Show blocked count on toolbar button
