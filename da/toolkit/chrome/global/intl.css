@@ -6,9 +6,13 @@
  * This file contains all localizable skin settings such as 
  *   font, layout, and geometry
  */
-window { 
-  font: 3mm tahoma,arial,helvetica,sans-serif;
+window {
+  font:
+    3mm tahoma,
+    arial,
+    helvetica,
+    sans-serif;
 }
 dialog#advancedScripts {
- width: 35em !important;
+  width: 35em !important;
 }

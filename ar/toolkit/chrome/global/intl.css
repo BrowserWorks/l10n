@@ -10,9 +10,12 @@
  *   Reuven Gonen  (linxspider@yahoo.com)
  */
 window {
-  font: 3mm tahoma,arial,helvetica,sans-serif;
+  font:
+    3mm tahoma,
+    arial,
+    helvetica,
+    sans-serif;
 }
-
 
 /**************************
 **  Global Settings  **
@@ -20,7 +23,14 @@ window {
 
 /*make UI RTL */
 
-window,prefwindow,dialog,wizard,page,menu { direction: rtl; }
+window,
+prefwindow,
+dialog,
+wizard,
+page,
+menu {
+  direction: rtl;
+}
 
 /*
    chrome://browser/skin/pageInfo.css uses italic font style for the disabled textboxes.
@@ -39,11 +49,9 @@ parsererror {
   direction: rtl;
 }
 
-
 /********************
 **  Waterfox  **
 *********************/
-
 
 /*
     Set LTR for url and file paths and align them to the right - Bug 289934
@@ -51,21 +59,24 @@ parsererror {
     - Removed #downloadFolder (bug 1457720).
 */
 
-#link-url-text, #source, #path, #url, #feedurl, #urltext {
+#link-url-text,
+#source,
+#path,
+#url,
+#feedurl,
+#urltext {
   direction: ltr !important;
   text-align: right !important;
 }
-
 
 /********************
 **  Thunderbird  **
 *********************/
 
-
 #statusbar-display {
   direction: ltr !important;
   text-align: right !important;
-  }
+}
 
 /* Set Folder Pane on the left side of window */
 
@@ -90,5 +101,6 @@ parsererror {
 **  Extensions  **
 *********************/
 
-#adblockPreferencesWindow
-{direction: ltr !important }
+#adblockPreferencesWindow {
+  direction: ltr !important;
+}

@@ -6,7 +6,7 @@
  * This file contains all localizable skin settings such as
  *   font, layout, and geometry
  */
-window { 
+window {
   font:
     3mm tahoma,
     arial,
@@ -18,5 +18,3 @@ window {
 #autoSelectLastProfile {
   white-space: nowrap;
 }
-
-

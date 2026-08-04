@@ -10,21 +10,15 @@
 
  */
 
-window { 
-
-  font: 3mm tahoma,arial,helvetica,sans-serif;
-
+window {
+  font:
+    3mm tahoma,
+    arial,
+    helvetica,
+    sans-serif;
 }
-
-
 
 menu.bookmark-item,
-
 menuitem.bookmark-item {
-
   max-width: 27em !important;
-
 }
-
-
-
