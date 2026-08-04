@@ -3,80 +3,110 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 restart-prompt-question = Ви впевнені, що хочете перезапустити { -brand-short-name }?
-
 restart-prompt-title = Перезапуск { -brand-short-name }
-
 appmenuitem-restart-browser =
     .label = Перезапустити
-
 copy-all-urls =
     .label = Скопіювати посилання всіх вкладок
-
 copy-tab-link =
     .label = Скопіювати посилання вкладки
-
 unload-tab =
     .label = Вивантажити вкладку
-
 bookmarks-bar-position-header = Розташування рядка закладок
-
 bookmarks-position-bottom =
     .label = Знизу
-
 bookmarks-position-top =
     .label = Згори
-
 restart-header = Елемент перезапуску у головному меню
-
 restart-purge-cache =
     .label = Очищати кеш швидкого запуску під час перезапуску браузера
-
 restart-require-confirmation =
     .label = Вимагати підтвердження перезапуску
-
 restart-show-button =
     .label = Показувати кнопку перезапуску у PanelUI
-
 tab-additional-header = Додаткові налаштування вкладок
-
 insert-after-current =
     .label = Вставляти нову вкладку після поточної
-
 insert-related-after-current =
-    .label = Вставляти пов'язану нову вкладку за поточною
-
+    .label = Вставляти пов’язану нову вкладку за поточною
 pinned-icon-only =
-    .label = Стискати закріплені вкладки, щоб показувати лише іконку сайту
-
+    .label = Стискати закріплені вкладки, щоб показувати лише значок сайту
 tab-feature-header = Контекстне меню вкладки
-
 enable-copy-active-tab =
-    .label = Копіювати URL тільки з активної вкладки
-
+    .label = Копіювати URL тільки з поточної вкладки
 show-copy-all-urls =
     .label = Показувати елемент меню «Скопіювати усі посилання вкладок»
-
 show-copy-url =
     .label = Показувати елемент меню «Скопіювати посилання вкладки»
-
 show-duplicate-tab =
     .label = Показувати елемент меню «Дублювати вкладку»
-
 show-unload-tab =
     .label = Показувати елемент меню «Вивантажити вкладку»
-
 tab-position-header = Розташування панелі вкладок
-
 tab-bar-bottom-above =
     .label = Знизу над рядком стану
-
 tab-bar-bottom-below =
     .label = Знизу під рядком стану
-
 tab-bar-top-above =
     .label = Згори над адресним рядком
-
 tab-bar-top-below =
     .label = Згори під адресним рядком
-
 tabbrowser-confirm-session-restore-checkbox = Відкрити попередні вікна та вкладки
+waterfox-tabs-group =
+    .label = Вкладки Waterfox
+    .description = Там, де розташовані вкладки, закладки, додаткові пункти меню та автоматичне групування вкладок.
+waterfox-tabs-position-heading =
+    .label = Розташування панелі інструментів
+waterfox-tabs-tab-bar-position-select =
+    .label = Розташування панелі вкладок
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Над навігаційною панеллю
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Під навігаційною панеллю
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = Знизу, над рядком стану
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = Знизу, під рядком стану
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Розташування рядка закладок
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Згори
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Знизу
+waterfox-tabs-menu-heading =
+    .label = Контекстне меню вкладки
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Показувати пункт «Дублювати вкладку»
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Показувати пункт «Скопіювати посилання вкладки»
+waterfox-tabs-copy-active-url-toggle =
+    .label = Копіювати URL поточної вкладки замість обраної
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Показувати пункт «Скопіювати посилання всіх вкладок»
+waterfox-tabs-restart-heading =
+    .label = Перезапуск
+waterfox-tabs-restart-menu-toggle =
+    .label = Показувати пункт «Перезапустити» в меню
+waterfox-tabs-restart-confirm-toggle =
+    .label = Питати підтвердження перед перезапуском
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Очищувати кеш запуску перед перезапуском
+waterfox-tabs-display-heading =
+    .label = Відображення вкладок
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Стискати прикріплені вкладки до іконки сайту
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Ховати кнопку закриття на вкладках
+waterfox-tabs-grouping-heading =
+    .label = Автоматичне групування вкладок
+waterfox-tabs-auto-group-toggle =
+    .label = Групувати нові вкладки з вкладкою, що відкрила їх
+waterfox-tabs-auto-group-placement-select =
+    .label = Нові вкладки додаватимуться в групу
+waterfox-tabs-auto-group-placement-option-after =
+    .label = Після вкладки, що відкрила їх
+waterfox-tabs-auto-group-placement-option-first =
+    .label = На початку групи
+waterfox-tabs-auto-group-placement-option-last =
+    .label = З кінця групи
+waterfox-copy-url-notification = URL скопійовано

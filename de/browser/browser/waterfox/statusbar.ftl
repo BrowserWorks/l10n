@@ -4,14 +4,14 @@
 
 status-bar =
     .label = Statusleiste
-
 statusbar-enabled =
     .label = Statusleiste anzeigen
-
 statusbar-show-links =
     .label = Links anzeigen
-
 statusbar-contrast-text =
     .label = Textfarbe der Statusleiste kontrastieren
-
 statusbar-header = Statusleiste
+waterfox-status-bar-toolbar =
+    .toolbarname = Statusleiste
+waterfox-status-bar-text =
+    .label = Statustext

@@ -5,3 +5,4 @@
 update-application-manual =
     .label = Nie nach Updates suchen (nicht empfohlen)
     .accesskey = N
+waterfox-settings-exclusive-badge = Exklusiv bei Waterfox

@@ -4,4 +4,5 @@
 
 update-application-manual =
     .label = Ніколи не перевіряти наявність оновлень (не рекомендовано)
-    .accesskey = N
+    .accesskey = Н
+waterfox-settings-exclusive-badge = Ексклюзивно для Waterfox

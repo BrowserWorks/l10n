@@ -4,283 +4,200 @@
 
 waterfox-blocker-filter-lists-column-name =
     .label = Filterliste
-
 waterfox-blocker-filter-lists-column-category =
     .label = Kategorie
-
 waterfox-blocker-filter-lists-enable =
     .label = Aktivieren
-
 waterfox-blocker-filter-lists-disable =
     .label = Deaktivieren
-
 waterfox-blocker-filter-lists-column-enabled =
     .label = Aktiviert
-
 waterfox-blocker-setting-off =
     .label = Aus
-
 waterfox-blocker-header = Werbeblocker
-
 waterfox-blocker-setting-on =
     .label = Ein
-
 waterfox-blocker-dropdown-option-block-everything =
     .label = Bei Waterfox-Suchpartnern deaktivieren
-
 waterfox-blocker-manage-filter-lists =
     .label = Filterlisten verwalten…
-
 waterfox-blocker-filter-lists-window =
     .title = Filterlisten für Werbeblocker
-
 waterfox-blocker-filter-lists-dialog =
     .buttonlabelaccept = Änderungen speichern
     .buttonaccesskeyaccept = s
-
 waterfox-blocker-extension-install-learn-more =
     .label = Mehr erfahren
-
 waterfox-blocker-extension-detected-learn-more =
     .label = Mehr erfahren
-
 waterfox-blocker-extension-detected-dismiss =
     .label = Nicht erneut anzeigen
-
 waterfox-blocker-extension-install-got-it =
     .label = Verstanden
-
 waterfox-blocker-filter-lists-category-core = Standard
-
 waterfox-blocker-filter-lists-category-privacy = Datenschutz
-
 waterfox-blocker-filter-lists-category-optional = Optional
-
 waterfox-blocker-filter-lists-category-regional = Regional
-
 waterfox-blocked-page-blocked-url-label = Blockierte URL
-
 waterfox-blocked-page-unavailable = Nicht verfügbar
-
 waterfox-blocked-page-go-back = Zurück
-
 waterfox-blocked-page-load-anyway = Trotzdem laden
-
 waterfox-blocker-intro-description = Blockiert Werbung, Tracking-Skripte und andere unerwünschte Anfragen, um Seiten schneller zu laden und Ablenkungen zu vermeiden.
-
 waterfox-blocker-setting-off-description = Waterfox blockiert weder Werbung noch Tracker. Erweiterungen von Drittanbietern können Inhalte weiterhin eigenständig blockieren.
-
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } von { $totalCount } aktiv
-
 waterfox-blocker-dropdown-option-partner-exception =
     .label = Bei Waterfox-Suchpartnern zulassen
-
 waterfox-blocker-dropdown-label =
     .value = Werbung von Suchpartnern:
-
 waterfox-blocker-filter-lists-category-annoyances = Belästigungen
-
 waterfox-blocker-extension-fallback-name-this = diese Erweiterung
-
 waterfox-blocker-extension-fallback-name-your = Ihre Erweiterung
-
 waterfox-blocker-spotlight-title = Waterfox verfügt nun über einen Werbeblocker
-
 waterfox-blocker-spotlight-primary-button = Meine aktuelle Konfiguration beibehalten
-
 waterfox-blocker-filter-lists-empty-state = Es sind keine Filterlisten verfügbar.
-
 waterfox-blocker-filter-lists-description =
     .value = Wählen Sie aus, welche Filterlisten aktiv sein sollen.
-
 waterfox-blocker-third-party-notice-description = { $extensionName } blockiert ebenfalls Werbung. Der gleichzeitige Einsatz von zwei Werbeblockern kann zu Problemen führen.
-
 waterfox-blocker-prompt-title = Werbeblocker für Waterfox
-
 waterfox-blocker-reenable-conflict-message = Wenn sowohl der Werbeblocker von Waterfox als auch „{ $extensionName }“ aktiv sind, kann es zu Darstellungsfehlern auf Webseiten kommen. Was möchten Sie beibehalten?
-
 waterfox-blocker-reenable-use-built-in = Integrierten Blocker verwenden
-
 waterfox-blocker-spotlight-secondary-button = Einstellungen überprüfen
-
 waterfox-blocker-reenable-keep-extension = Erweiterungsblocker beibehalten
-
 waterfox-blocker-extension-install-anyway = Trotzdem installieren
-
 waterfox-blocker-extension-install-keep-built-in = Den integrierten Blocker weiterhin verwenden
-
 waterfox-blocked-page-title = Waterfox hat diese Seite blockiert
-
 waterfox-blocked-page-heading = Waterfox hat diese Seite blockiert
-
 waterfox-blocked-page-details =
     .aria-label = Details zur blockierten Seite
-
 waterfox-blocked-page-matched-rule-label = Übereinstimmende Regel
-
 waterfox-blocked-page-hint = Mit „Trotzdem laden“ wird diese Website für den Rest Ihrer Sitzung vorübergehend zugelassen.
-
 waterfox-blocked-page-description = Diese Seite wurde durch eine Regel des Werbeblockers blockiert.
-
 waterfox-blocker-setting-on-description = Waterfox blockiert Folgendes:
-
 waterfox-blocker-extension-detected = Waterfox verfügt nun über einen integrierten Werbeblocker. Sie können Ihre Einstellungen in den Einstellungen überprüfen.
-
 waterfox-blocker-extension-install-warning = Waterfox verfügt bereits über einen integrierten Werbeblocker. Der gleichzeitige Einsatz von zwei Werbeblockern kann dazu führen, dass Webseiten nicht richtig angezeigt werden oder nur langsam geladen werden.
-
 waterfox-blocker-spotlight-subtitle = Wir haben festgestellt, dass Sie { $extensionName } installiert haben. Waterfox verfügt nun über einen eigenen Werbeblocker. Wenn Sie diesen nutzen, unterstützen Sie Waterfox. Die Entscheidung liegt jedoch ganz bei Ihnen.
-
 waterfox-blocker-extension-install-manage-settings = Den Werbeblocker können Sie unter „Einstellungen“ > „Datenschutz & Sicherheit“ verwalten.
-
 waterfox-blocker-panel-disabled = Werbeblocker ist deaktiviert
-
 waterfox-blocker-panel-site-excepted = Werbung ist auf dieser Website erlaubt
-
 waterfox-blocker-panel-partner-allowed = Für Suchpartner ist Werbung erlaubt
-
 waterfox-blocker-panel-not-available = Auf dieser Seite nicht verfügbar
-
 waterfox-blocker-panel-toggle =
     .label = Werbeblocker auf dieser Website
     .description = Werbung und Tracker auf dieser Website blockieren.
-
 waterfox-blocker-toolbar-button =
     .label = Werbeblocker
     .tooltiptext = Werbeblocker
-
 waterfox-blocker-stats =
     { $count ->
         [eine] { $count } Werbung auf dieser Website blockiert
        *[andere] { $count } Werbung auf dieser Website blockiert
     }
-
 waterfox-blocker-panel-settings-button = Einstellungen für Werbeblocker
-
 waterfox-blocker-show-badge-pref =
     .label = Anzahl der blockierten Elemente auf der Symbolleisten-Schaltfläche anzeigen
-
 waterfox-blocker-custom-filter-lists =
     .label = Benutzerdefinierte Filterlisten…
-
 waterfox-blocker-filter-lists-search =
     .placeholder = Filterlisten suchen…
-
 waterfox-blocker-filter-lists-refresh-now =
     .label = Jetzt aktualisieren
-
 waterfox-blocker-filter-lists-last-updated = Aktualisiert am { $date }
-
 waterfox-blocker-filter-lists-never-updated =
     .value = Noch nicht aktualisiert
-
 waterfox-blocker-custom-filter-lists-window =
     .title = Benutzerdefinierte Filterlisten
-
 waterfox-blocker-custom-filter-lists-dialog =
     .buttonlabelaccept = Änderungen speichern
     .buttonaccesskeyaccept = s
-
 waterfox-blocker-custom-filter-lists-description = Fügen Sie URLs für benutzerdefinierte Filterlisten hinzu. Die Listen werden abgerufen und zusätzlich zu den integrierten Filtern angewendet.
-
 waterfox-blocker-filter-lists-custom-heading =
     .value = Benutzerdefinierte Filterlisten
-
 waterfox-blocker-filter-lists-custom-input =
     .placeholder = Geben Sie die URL der Filterliste ein…
-
 waterfox-blocker-filter-lists-custom-url-label =
     .value = URL der Filterliste
-
 waterfox-blocker-filter-lists-custom-col =
     .label = URL
-
 waterfox-blocker-filter-lists-custom-add =
     .label = Hinzufügen
-
 waterfox-blocker-filter-lists-custom-remove =
     .label = Entfernen
-
 waterfox-blocker-filter-lists-custom-remove-all =
     .label = Alle entfernen
-
 waterfox-blocker-filter-lists-custom-empty =
     .value = Es wurden keine benutzerdefinierten Filterlisten hinzugefügt.
-
 waterfox-blocker-setting-on-summary = Blockiert Werbung und Tracker, ohne das Laden der Seite nennenswert zu beeinträchtigen.
-
 waterfox-blocker-blocks-ads = Werbung und Anfragen von Werbenetzwerken
-
 waterfox-blocker-blocks-tracking = Tracking-Skripte und Pixel
-
 waterfox-blocker-blocks-annoyances = Lästige Pop-ups und Einblendungen (bei aktivierten Sperrlisten)
-
 waterfox-blocker-partner-funding-title = Unterstützen Sie die Entwicklung von Waterfox
-
 waterfox-blocker-partner-funding-description = Waterfox ist kostenlos, Open Source und unabhängig. Durch die Anzeige von Werbung auf den Seiten unserer Suchpartner finanziert Waterfox die Entwicklung und die Infrastruktur. Sie können dies jederzeit deaktivieren, doch es eingeschaltet zu lassen, ist der einfachste Weg, das Projekt zu unterstützen.
-
 waterfox-blocker-custom-filters =
     .label = Meine Filter…
-
 waterfox-blocker-custom-filters-window =
     .title = Meine Filter
-
 waterfox-blocker-custom-filters-dialog =
     .buttonlabelaccept = Änderungen speichern
     .buttonaccesskeyaccept = s
-
 waterfox-blocker-custom-filters-description = Fügen Sie eigene Regeln zum Blockieren von Werbung hinzu. Diese verwenden die Standard-Filtersyntax von uBlock Origin und werden zusätzlich zu Ihren aktivierten Filterlisten angewendet.
-
 waterfox-blocker-custom-filters-empty =
     .value = Keine benutzerdefinierten Filter.
-
 waterfox-blocker-custom-filters-status =
     { $count ->
         [0] Keine benutzerdefinierten Filter.
         [one] 1 benutzerdefinierter Filter.
        *[other] { $count } benutzerdefinierte Filter.
     }
-
 waterfox-blocker-custom-filters-status-unsaved = Nicht gespeicherte Änderungen.
-
 waterfox-blocker-custom-filters-import =
     .label = Importieren…
-
 waterfox-blocker-custom-filters-export =
     .label = Exportieren…
-
 waterfox-blocker-custom-filters-load-error-title = Laden fehlgeschlagen
-
 waterfox-blocker-custom-filters-load-error = Benutzerdefinierte Filter konnten nicht geladen werden.
-
 waterfox-blocker-custom-filters-save-error-title = Speichern fehlgeschlagen
-
 waterfox-blocker-custom-filters-save-error = Benutzerdefinierte Filter konnten nicht gespeichert werden.
-
 waterfox-blocker-custom-filters-import-error-title = Import fehlgeschlagen
-
 waterfox-blocker-custom-filters-import-error = Die ausgewählte Datei konnte nicht importiert werden.
-
 waterfox-blocker-custom-filters-export-error-title = Export fehlgeschlagen
-
 waterfox-blocker-custom-filters-export-error = Benutzerdefinierte Filter konnten nicht exportiert werden.
-
 waterfox-blocker-custom-filters-import-picker-title = Benutzerdefinierte Filter importieren
-
 waterfox-blocker-custom-filters-export-picker-title = Benutzerdefinierte Filter exportieren
-
 waterfox-blocker-custom-filters-import-replace-title = Die aktuellen Filter austauschen?
-
 waterfox-blocker-custom-filters-import-replace-message = Durch den Import wird der gesamte derzeit im Editor angezeigte Inhalt überschrieben.
-
 permissions-exceptions-waterfox-blocker-window2 =
     .title = Ausnahmen für Werbeblocker
     .style = { permissions-window2.style }
-
 permissions-exceptions-manage-waterfox-blocker-desc = Sie können festlegen, auf welchen Websites der Werbeblocker deaktiviert werden soll. Geben Sie die genaue Adresse der Website ein, die Sie verwalten möchten, und klicken Sie dann auf „Ausnahme hinzufügen“.
-
 waterfox-blocker-filter-lists-next-refresh =
     .value = Nächste Aktualisierung: { $date }
-
 waterfox-blocker-filter-lists-next-refresh-unknown =
     .value = Nächste Aktualisierung: unbekannt
+pane-waterfox-blocker-title = Werbeblocker
+    .title = { pane-waterfox-blocker-title }
+waterfox-blocker-pane-header =
+    .heading = Werbeblocker
+waterfox-blocker-lists-group =
+    .label = Filterlisten
+waterfox-blocker-manage-lists-button =
+    .label = Filterlisten verwalten
+waterfox-blocker-custom-lists-button =
+    .label = Benutzerdefinierte Filterlisten
+waterfox-blocker-my-filters-button =
+    .label = Meine Filter
+waterfox-blocker-exceptions-group =
+    .label = Ausnahmen
+waterfox-blocker-exceptions-button =
+    .label = Ausnahmen verwalten
+waterfox-blocker-group =
+    .label = Werbeblocker
+    .description = Blockiert Werbung, Tracking-Skripte und andere unerwünschte Anfragen, um Seiten schneller zu laden und Ablenkungen zu vermeiden.
+waterfox-blocker-enabled-toggle =
+    .label = Werbung und Tracker blockieren
+    .description = Blockiert Werbung und Tracker, ohne das Laden der Seite nennenswert zu beeinträchtigen.
+waterfox-blocker-extension-notice =
+    .message = { $extensionName } blockiert ebenfalls Werbung. Der gleichzeitige Einsatz von zwei Werbeblockern kann zu Problemen führen.
+waterfox-blocker-partner-select =
+    .label = Werbung von Suchpartnern
+    .description = Waterfox ist kostenlos, Open Source und unabhängig. Durch die Anzeige von Werbung auf den Seiten unserer Suchpartner finanziert Waterfox die Entwicklung und die Infrastruktur. Sie können dies jederzeit deaktivieren, doch es eingeschaltet zu lassen, ist der einfachste Weg, das Projekt zu unterstützen.
