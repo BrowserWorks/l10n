@@ -3,6 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 aboutdialog-brand-name = { -brand-short-name }
+aboutdialog-close-button =
+    .title = Close
+    .aria-label = Close
 aboutdialog-update-channel = Update channel
 aboutdialog-updates-disabled = Updates disabled
 aboutdialog-help-label = Help
