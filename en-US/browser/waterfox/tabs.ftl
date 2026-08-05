@@ -91,6 +91,10 @@ waterfox-tabs-group =
     .label = Waterfox tabs
     .description = Where the tab and bookmarks toolbars sit, the extra menu entries, and automatic tab grouping.
 
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Keep window open when closing the last tab
+    .accesskey = l
+
 waterfox-tabs-position-heading =
     .label = Toolbar positions
 
