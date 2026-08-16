@@ -14,6 +14,26 @@ from pathlib import Path
 from urllib.request import urlretrieve
 
 
+UNSUPPORTED_LOCALES = {
+    "ace",
+    "bqi",
+    "ckb",
+    "frp",
+    "hto",
+    "ilo",
+    "ixl",
+    "pai",
+    "pbb",
+    "ppl",
+    "quy",
+    "qvi",
+    "sah",
+    "scn",
+    "tsz",
+    "xcl",
+}
+
+
 class LocaleUpdater:
     def __init__(self, commit=None):
         self.script_dir = Path(__file__).parent
@@ -492,6 +512,12 @@ class LocaleUpdater:
 
     def update_locale(self, locale_code):
         """Update a single locale"""
+        if locale_code in UNSUPPORTED_LOCALES:
+            print(
+                f"Warning: Locale {locale_code} is unsupported and will not be updated"
+            )
+            return False
+
         print(f"Processing locale: {locale_code}")
 
         # Extract locale from repository
@@ -548,7 +574,9 @@ class LocaleUpdater:
                     if (item / "browser").exists() or (item / "toolkit").exists():
                         locales.append(item.name)
 
-            return sorted(locales)
+            return sorted(
+                locale for locale in locales if locale not in UNSUPPORTED_LOCALES
+            )
         except Exception as e:
             print(f"Error getting available locales: {e}")
             return []
