@@ -2,7 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-waterfox-upgrade-dialog-title = Willkommen bei { -brand-short-name } 153
+# Variables:
+#   $version (String) - The Waterfox release series, e.g. 6.7.
+waterfox-upgrade-dialog-title = Willkommen bei { -brand-short-name } { $version }
 waterfox-upgrade-dialog-primary-button = Jetzt surfen
 waterfox-upgrade-dialog-continue-button = Weiter
 waterfox-upgrade-dialog-appearance-title = Wählen Sie Ihr Design

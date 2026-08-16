@@ -4,7 +4,9 @@
 
 ## Upgrade dialog
 
-waterfox-upgrade-dialog-title = Welcome to { -brand-short-name } 153
+# Variables:
+#   $version (String) - The Waterfox release series, e.g. 6.7.
+waterfox-upgrade-dialog-title = Welcome to { -brand-short-name } { $version }
 
 waterfox-upgrade-dialog-subtitle = This update brings a newer browser engine, tree tabs, built-in ad blocking, and the { -brand-short-name } controls you expect.
 
@@ -14,4 +16,4 @@ waterfox-upgrade-dialog-continue-button = Continue
 
 waterfox-upgrade-dialog-appearance-title = Choose your look
 
-waterfox-upgrade-dialog-appearance-subtitle = Keep the Photon look you have now, or switch to the new Nova style. You can change this later in Settings.
+waterfox-upgrade-dialog-appearance-subtitle = Keep your current look, or choose Nova, Proton, or Photon. You can change this later in Settings.

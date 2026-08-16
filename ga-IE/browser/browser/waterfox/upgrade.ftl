@@ -2,7 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-waterfox-upgrade-dialog-title = Fáilte go dtí { -brand-short-name } 153
+# Variables:
+#   $version (String) - The Waterfox release series, e.g. 6.7.
+waterfox-upgrade-dialog-title = Fáilte go dtí { -brand-short-name } { $version }
 waterfox-upgrade-dialog-subtitle = Tugann an nuashonrú seo inneall brabhsálaí níos nuaí, cluaisíní crann, blocáil fógraí ionsuite, agus na rialuithe { -brand-short-name } a bhfuil súil agat leo.
 waterfox-upgrade-dialog-primary-button = Tosaigh ag brabhsáil
 waterfox-upgrade-dialog-continue-button = Lean ar aghaidh
