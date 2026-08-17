@@ -10,7 +10,12 @@ onboarding-grassroots-subtitle = Thank you for using Waterfox, an independent, g
 waterfox-onboarding-welcome-title = Welcome to { -brand-short-name }
 waterfox-onboarding-welcome-subtitle = Independent, fast, and built with the Waterfox controls you expect.
 waterfox-onboarding-start-button = Get started
+waterfox-onboarding-language-hint = You can change this anytime in Settings.
 waterfox-onboarding-language-error = { -brand-short-name } couldn’t change the language. Your previous language is still active.
+
+# $current (number) - Step the user is on, starting at 1
+# $total (number) - Total number of setup steps
+waterfox-onboarding-step-label = Step { $current } of { $total }
 
 ## Import
 
@@ -38,6 +43,7 @@ waterfox-onboarding-customize-appearance-button = Customize appearance in Settin
 
 waterfox-onboarding-theme-color-title = Make it feel like yours
 waterfox-onboarding-theme-color-subtitle = Pick a theme color that makes each window your own.
+waterfox-onboarding-appearance-subtitle = Pick the shape, density, and color. You can fine tune everything later in Settings.
 waterfox-onboarding-theme-mode-legend = Color scheme
 waterfox-onboarding-theme-mode-system-label = System
 waterfox-onboarding-theme-mode-light-label = Light
@@ -72,6 +78,7 @@ waterfox-onboarding-location-top-above-label = Above the toolbar
 waterfox-onboarding-location-top-below-label = Below the toolbar
 waterfox-onboarding-location-bottom-above-label = Above the status bar
 waterfox-onboarding-location-bottom-below-label = Below the status bar
+waterfox-onboarding-tabs-location-hint = Applies to horizontal tabs. More positions are in Settings.
 waterfox-onboarding-customize-tabs-button = Customize tabs in Settings
 
 ## Privacy
@@ -91,6 +98,7 @@ waterfox-onboarding-default-primary-button = Set as default
 
 waterfox-onboarding-finish-title = You are all set
 waterfox-onboarding-finish-subtitle = Thanks for choosing Waterfox. Your browser is ready.
+waterfox-onboarding-finish-privacy-note = Ad blocking and tracking protection are already on.
 waterfox-onboarding-finish-primary-button = Start browsing
 
 ## Shared buttons
@@ -99,3 +107,4 @@ waterfox-onboarding-continue-button = Continue
 waterfox-onboarding-save-continue-button = Save and continue
 waterfox-onboarding-skip-button = Not now
 waterfox-onboarding-skip-step-button = Skip this step
+waterfox-onboarding-back-button = Back
