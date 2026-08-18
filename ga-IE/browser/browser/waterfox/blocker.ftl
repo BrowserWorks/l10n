@@ -201,3 +201,35 @@ waterfox-blocked-page-unavailable = Gan a bheith ar fáil
 waterfox-blocked-page-hint = Ceadóidh “Lódáil ar aon nós” an suíomh seo go sealadach don chuid eile de do sheisiún.
 waterfox-blocked-page-go-back = Téigh ar ais
 waterfox-blocked-page-load-anyway = Luchtaigh ar aon nós
+waterfox-blocker-panel-hero-count = { $count } blocáilte
+waterfox-blocker-panel-hero-paused = Sosaithe
+waterfox-blocker-panel-hero-subtitle = ar { $host }
+waterfox-blocker-panel-category-ads = Fógraí
+waterfox-blocker-panel-category-trackers = Rianaitheoirí
+waterfox-blocker-panel-category-popups = Preabfhuinneoga
+waterfox-blocker-panel-see-all = Féach ar gach rud atá blocáilte
+waterfox-blocker-panel-toggle2 =
+    .label = Blocáil fógraí ar an suíomh seo
+waterfox-blocker-panel-paused-card = Tá an suíomh seo ar do liosta ceadanna. Is féidir fógraí, fuinneoga aníos agus rianaitheoirí a lódáil go dtí go gcuirfidh tú bac air arís.
+waterfox-blocker-panel-allowlist = Bainistigh an liosta ceadanna
+waterfox-blocker-panel-allowlist-count =
+    { $count ->
+        [one] { $count } suíomh
+       *[other] { $count } suíomhanna
+    }
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> blocáilte an t-am ar fad · { $size } sábháilte
+waterfox-blocker-panel-footer-settings = Socruithe
+waterfox-blocker-panel-back =
+    .aria-label = Ar ais
+waterfox-blocker-panel-detail-title = Blocáilte ar an leathanach seo
+waterfox-blocker-panel-detail-section-ads = Fógraíocht
+waterfox-blocker-panel-detail-section-trackers = Rianaitheoirí
+waterfox-blocker-panel-detail-section-popups = Preabfhuinneoga
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } cuireadh bac ar an bhfuinneog aníos go huathoibríoch.
+       *[other] { $count } cuireadh bac ar na fuinneoga aníos go huathoibríoch.
+    }
+waterfox-blocker-panel-allow-domain = Ceadaigh
+    .aria-label = Ceadaigh { $domain }
+waterfox-blocker-panel-domain-count = ×{ $count }
