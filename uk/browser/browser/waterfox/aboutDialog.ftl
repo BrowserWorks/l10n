@@ -7,3 +7,6 @@ aboutdialog-community = { -brand-short-name } розробляється <label 
 aboutdialog-donate-link = Зробити пожертву
 aboutdialog-get-involved-link = Долучайтеся
 aboutdialog-license-link = Ліцензування
+aboutdialog-close-button =
+    .title = Закрити
+    .aria-label = Закрити
