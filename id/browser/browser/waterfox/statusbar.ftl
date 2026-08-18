@@ -4,14 +4,14 @@
 
 status-bar =
     .label = Bilah Status
-
 statusbar-enabled =
     .label = Tampilkan Bilah Status
-
 statusbar-show-links =
     .label = Tampilkan tautan
-
 statusbar-contrast-text =
     .label = Warna teks bilah status kontras
-
 statusbar-header = Bilah Status
+waterfox-status-bar-toolbar =
+    .toolbarname = Bilah Status
+waterfox-status-bar-text =
+    .label = Teks status

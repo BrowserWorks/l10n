@@ -3,210 +3,208 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 dynamic-theme-header = Tema Dinamis
-
 dynamic-theme-dark =
     .label = Paksa Mode Gelap
-
 dynamic-theme-light =
     .label = Paksa Mode Tenang
-
 dynamic-theme-auto =
     .label = Atur Mode Tenang/Gelap Secara Dinamis
-
 pane-theme-title = Tampilan & Nuansa
-
 category-theme =
     .tooltiptext = { pane-theme-title }
-
 animation-header = Animasi
-
 appearance-header = Tampilan
-
 autohide-hidden-header = Sembunyi Otomatis & Tersembunyi
-
 bookmark-header = Bilah Penanda
-
 center-header = Tengah
-
 font-header = Font
-
 full-screen-header = Layar penuh
-
 icons-header = Ikon
-
 interface-component-header = Komponen Antarmuka
-
 media-player-header = Pemutar Media
-
 nav-bar-header = Bilah Navigasi
-
 panels-header = Panel
-
 rounding-header = Pembulatan
-
 sidebar-header = Bilah Samping
-
 tab-bar-header = Bilah Tab
-
 theme-header = Tema
-
 preset-title = Preset
-
 lepton-style =
     .label = Gaya Lepton
-
 proton-style =
     .label = Gaya Proton
-
 waterfox-defaults =
     .label = Bawaan Waterfox
-
 auto-blur-tabs =
     .label = Kaburkan Tab Otomatis
-
 auto-hide-back =
     .label = Sembunyikan Tombol Kembali Otomatis
-
 auto-hide-bookmarkbar =
     .label = Sembunyikan Bilah Penanda Otomatis
-
 auto-hide-forward =
     .label = Sembunyikan Tombol Maju Otomatis
-
 auto-hide-navbar =
     .label = Sembunyikan Bilah Navigasi Otomatis
-
 auto-hide-pageaction =
     .label = Sembunyikan Tindakan Halaman Otomatis
-
 auto-hide-sidebar =
     .label = Sembunyikan Bilah Samping Otomatis
-
 auto-hide-tabbar =
     .label = Sembunyikan Bilah Tab Otomatis
-
 auto-hide-tabs =
     .label = Sembunyikan Tab Otomatis
-
 center-navbar-text =
     .label = Pusatkan Teks Bilah Navigasi
-
 center-tab-content =
     .label = Pusatkan Konten Tab
-
 center-tab-label =
     .label = Pusatkan Hanya Label Tab
-
 close-button-hover =
     .label = Tampilkan tombol tutup tab saat kursor diarahkan pada tab yang dipilih ketika banyak tab terbuka
-
 compact-bookmark-menu =
     .label = Kurangi Jarak Menu Penanda
-
 compact-context-menu =
     .label = Kurangi Jarak Menu Konteks
-
 compact-navbar-popup =
     .label = Kurangi Jarak Popup Bilah Navigasi
-
 compact-panel-header =
     .label = Kurangi Jarak Header Panel
-
 disable-panel-animate =
     .label = Nonaktifkan animasi panel menu aplikasi
-
 disable-sidebar-animate =
     .label = Nonaktifkan animasi panel bilah samping
-
 drag-space =
     .label = Aktifkan Ruang Seret Tetap
-
 enable-cyan-accent-color =
     .label = Warna Aksen Sian
-
 enable-default-accent-color =
     .label = Warna Aksen Bawaan
-
 enable-menu-transparency =
     .label = Aktifkan transparansi menu
-
 enable-panel-transparency =
     .label = Aktifkan transparansi panel
-
 enable-system-accent-color =
     .label = Warna Aksen Sistem
-
 enable-waterfox-theme-0 =
     .label = Aktifkan kustomisasi tema Waterfox pada semua tema
-
 enable-waterfox-theme-1 =
     .label = Aktifkan kustomisasi tema Waterfox pada tema Waterfox
-
 enable-waterfox-theme-2 =
     .label = Nonaktifkan kustomisasi tema Waterfox
-
 full-panel-strip =
     .label = Pemisah Menu Aplikasi Lebar Penuh
-
 remove-panel-strip =
     .label = Hapus Pemisah Menu Aplikasi Berwarna
-
 hide-all-icons =
     .label = Sembunyikan Semua Ikon
-
 hide-bookmarkbar-icon =
     .label = Sembunyikan Ikon Bilah Penanda
-
 hide-bookmarkbar-label =
     .label = Sembunyikan Label Bilah Penanda
-
 hide-disabled-menuitems =
     .label = Sembunyikan Item Menu Nonaktif
-
 hide-sidebar-header =
     .label = Sembunyikan Header Bilah Samping
-
 hide-tab-icons =
     .label = Sembunyikan Ikon Tab
-
 hide-urlbar-iconbox =
     .label = Sembunyikan Kotak Ikon Bilah URL
-
 monospace-font =
     .label = Aktifkan font monospace untuk halaman
-
 monospace-font-theme =
     .label = Aktifkan font monospace untuk tema
-
 show-mac-menu-icons =
     .label = Tampilkan Ikon Menu Mac
-
 show-menu-icons =
     .label = Tampilkan Ikon Menu
-
 square-button-edges =
     .label = Sudut Tombol Persegi
-
 square-checkbox =
     .label = Kotak Centang Persegi
-
 square-field =
     .label = Sudut Kolom Entri Persegi
-
 square-menu-item =
     .label = Sudut Item Menu Konteks Persegi
-
 square-menu-panel =
     .label = Sudut Panel Menu Aplikasi Persegi
-
 square-menu-popup =
     .label = Sudut Panel Menu Konteks Persegi
-
 square-panel-item =
     .label = Sudut Item Menu Aplikasi Persegi
-
 square-tab-edges =
     .label = Sudut Tab Persegi
-
 tab-context-line =
     .label = Garis Konteks Tab
+waterfox-appearance-statusbar-heading =
+    .label = Bilah Status
+waterfox-appearance-statusbar-enabled-toggle =
+    .label = Tampilkan bilah status
+    .description = Tampilkan bilah alat di bagian bawah jendela.
+waterfox-appearance-statusbar-links-toggle =
+    .label = Tampilkan tujuan tautan di bilah status
+waterfox-appearance-browser-style-group =
+    .label = Gaya browser
+    .description = Pilih tampilan Waterfox secara keseluruhan.
+waterfox-appearance-browser-style-option-nova =
+    .label = Nova
+    .title = Tampilan khas Waterfox pada chrome browser standar.
+waterfox-appearance-browser-style-option-proton =
+    .label = Proton
+    .title = Gaya browser standar yang modern.
+waterfox-appearance-browser-style-option-photon =
+    .label = Photon
+    .title = Gaya Waterfox klasik dengan chrome yang disempurnakan.
+waterfox-appearance-theme-colors-group =
+    .label = Palet Warna
+    .description = Pilih palet warna Waterfox dan apakah mengikuti tema sistem Anda.
+waterfox-appearance-theme-mode-picker =
+    .label = Mode tema
+waterfox-appearance-theme-mode-option-system =
+    .label = Sistem
+waterfox-appearance-theme-mode-option-light =
+    .label = Terang
+waterfox-appearance-theme-mode-option-dark =
+    .label = Gelap
+waterfox-appearance-theme-color-picker =
+    .label = Warna tema
+waterfox-appearance-theme-color-option-default =
+    .label = Bawaan
+waterfox-appearance-theme-color-option-smoke =
+    .label = Smoke
+waterfox-appearance-theme-color-option-ash =
+    .label = Ash
+waterfox-appearance-theme-color-option-sun =
+    .label = Sun
+waterfox-appearance-theme-color-option-spark =
+    .label = Spark
+waterfox-appearance-theme-color-option-flame =
+    .label = Flame
+waterfox-appearance-theme-color-option-flare =
+    .label = Flare
+waterfox-appearance-theme-color-option-lavender =
+    .label = Lavender
+waterfox-appearance-theme-color-option-dusk =
+    .label = Dusk
+waterfox-appearance-theme-color-option-lagoon =
+    .label = Lagoon
+waterfox-appearance-theme-color-option-tide =
+    .label = Tide
+waterfox-appearance-theme-color-option-pine =
+    .label = Pine
+waterfox-appearance-details-group =
+    .label = Lebih banyak opsi tampilan
+    .description = Sesuaikan antarmuka Waterfox lebih detail.
+waterfox-appearance-transparent-toggle =
+    .label = Panel dan menu transparan
+waterfox-appearance-autohide-tabbar-toggle =
+    .label = Sembunyikan bilah tab hingga Anda mengarahkan kursor
+waterfox-appearance-autohide-bookmarks-toggle =
+    .label = Sembunyikan bilah bookmark hingga Anda mengarahkan kursor
+waterfox-appearance-autohide-sidebar-toggle =
+    .label = Sembunyikan bilah samping hingga Anda mengarahkan kursor
+waterfox-appearance-autohide-navigation-toggle =
+    .label = Sembunyikan tombol mundur dan maju ketika tidak berfungsi
+waterfox-appearance-close-button-hover-toggle =
+    .label = Tampilkan tombol tutup tab hanya saat kursor diarahkan
+waterfox-appearance-drag-space-toggle =
+    .label = Pertahankan ruang seret di atas tab
