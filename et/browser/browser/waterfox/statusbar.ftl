@@ -13,3 +13,5 @@ waterfox-status-bar-toolbar =
     .toolbarname = Olekuriba
 waterfox-status-bar-text =
     .label = Olekuriba tekst
+statusbar-contrast-text =
+    .label = Muuda olekuriba tekst kontrastsemaks
