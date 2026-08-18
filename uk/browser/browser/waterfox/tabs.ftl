@@ -110,3 +110,6 @@ waterfox-tabs-auto-group-placement-option-first =
 waterfox-tabs-auto-group-placement-option-last =
     .label = З кінця групи
 waterfox-copy-url-notification = URL скопійовано
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Не закривати вікно після закриття останньої вкладки
+    .accesskey = l

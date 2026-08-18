@@ -203,3 +203,37 @@ waterfox-blocker-exceptions-group =
     .label = Винятки
 waterfox-blocker-exceptions-button =
     .label = Керувати винятками
+waterfox-blocker-panel-hero-count = { $count } заблоковано
+waterfox-blocker-panel-hero-paused = Призупинено
+waterfox-blocker-panel-hero-subtitle = на { $host }
+waterfox-blocker-panel-category-ads = Реклама
+waterfox-blocker-panel-category-trackers = Відстежувачів
+waterfox-blocker-panel-category-popups = Спливні вікна
+waterfox-blocker-panel-see-all = Переглянути все заблоковане
+waterfox-blocker-panel-toggle2 =
+    .label = Блокувати рекламу на цьому сайті
+waterfox-blocker-panel-paused-card = Цей сайт у вашому списку дозволених. Реклама, спливні вікна та відстежувачі можуть завантажуватися, доки ви знову не ввімкнете блокування.
+waterfox-blocker-panel-allowlist = Керувати списком дозволеного
+waterfox-blocker-panel-allowlist-count =
+    { $count ->
+        [one] { $count } сайт
+        [few] { $count } сайти
+       *[other] { $count } сайтів
+    }
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> заблоковано за весь час · { $size } заощаджено
+waterfox-blocker-panel-footer-settings = Налаштування
+waterfox-blocker-panel-back =
+    .aria-label = Назад
+waterfox-blocker-panel-detail-title = Заблоковано на цій сторінці
+waterfox-blocker-panel-detail-section-ads = Рекламування
+waterfox-blocker-panel-detail-section-trackers = Відстежувачів
+waterfox-blocker-panel-detail-section-popups = Спливні вікна
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } спливне вікно було автоматично заблоковано.
+        [few] { $count } спливні вікна були автоматично заблоковані.
+       *[other] { $count } спливних вікон було автоматично заблоковано.
+    }
+waterfox-blocker-panel-allow-domain = Дозволити
+    .aria-label = Дозволити { $domain }
+waterfox-blocker-panel-domain-count = ×{ $count }
