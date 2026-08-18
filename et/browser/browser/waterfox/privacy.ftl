@@ -3,3 +3,30 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 telemetry-privacy-policy = Andmekaitsepõhimõtted
+geolocation-api-header = Asukohatuvastuse API
+geolocation-description = Mõned veebisaidid eeldavad, et sinu arvutis/seadmes on asukohatuvastus lubatud. Kui veebisait ei toimi korrektselt, sest sinu asukohta ei õnnestu kindlaks teha, siis palun luba see seadistustest ja proovi uuesti.
+geolocation-api-enabled =
+    .label = Lülita sisse
+geolocation-api-disabled =
+    .label = Lülita välja
+identity-allow-site-data = Luba alati salvestada selle veebisaidi küpsiseid ja andmeid
+waterfox-data-collection-group =
+    .label = { -brand-short-name } Andmete kogumine ja kasutus
+    .description = { -brand-short-name } ei kogu telemeetria ega kasutusandmeid. Täiendavad teenused, nagu näiteks Sync, võib juhinduda oma privaatsusreeglitest.
+    .searchkeywords = privaatsus telemeetria andmekogumine andmed
+waterfox-data-collection-link = Vaata privaatsusteatist
+enable-javascript =
+    .label = Luba JavaScripti kasutamine
+load-images =
+    .label = Laadi pildid automaatselt
+ref-header = HTTP viitav päisekirje
+send-referrer-header-0 =
+    .label = Ära iialgi lisa viitavat päisekirjet
+send-referrer-header-1 =
+    .label = Lisa viitav päisekirja vaid siis, kui ise klõpsad linke või sarnaseid elemente
+send-referrer-header-2 =
+    .label = Lisa viitav päisekirja kõikidesse päringutesse (vaikimisi valik)
+webrtc-header = WebRTC-ühendused võrdõigusvõrgus
+enable-webrtc-p2p =
+    .label = Luba võrdõigusvõrgus kasutada WebRTC-ühendusi
+telemetry-page-subtitle = Waterfox ei saa sinu paigalduse kohta koguda telemeetrilisi andmeid, sest kõik telemeetriamoodulid on komplieerimisel lülitatud välja. See, mida sa oma veebibrauseris toimetad on teada vaid sinule.

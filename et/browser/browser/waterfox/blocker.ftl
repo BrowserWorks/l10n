@@ -65,3 +65,20 @@ waterfox-blocker-stats =
        *[other] Selles saidis on blokeeritud { $count } reklaami
     }
 waterfox-blocker-panel-settings-button = Reklaamiblokeerija seadistused
+waterfox-blocker-panel-hero-count = { $count } on blokeeritud
+waterfox-blocker-panel-hero-paused = Peatatud
+waterfox-blocker-panel-hero-subtitle = serveris { $host }
+waterfox-blocker-panel-category-ads = Reklaamid
+waterfox-blocker-panel-category-trackers = Jälitajad
+waterfox-blocker-panel-category-popups = Hüpikaknad
+waterfox-blocker-panel-toggle2 =
+    .label = Blokeeri selle saidi reklaame
+waterfox-blocker-panel-see-all = Näed kõike liigset blokeerituna
+waterfox-blocker-setting-on-summary = Reklaamine ja jälitajate blokeerimine minimaalse mõjuga lehtede laadimisele.
+waterfox-blocker-partner-funding-description = Waterfox on vaba, tasuta, avatud lähtekoodiga ja sõltumatu. Waterfox rahastab oma arendustööd ja taristut, lubades reklaame oma otsingupartnerite lehtedel. Saad selle funktsionaalsuse igal ajal välja lülitada, kuid selle sisselülitamine on lihtsaim viis projekti toetamiseks.
+waterfox-blocker-setting-off =
+    .label = Väljas
+waterfox-blocker-setting-off-description = Hetkel Waterfox ei blokeeri reklaame aga jälitajaid. Kui kasutad kolmandate osapoolte loodud blokeerijaid, siis see toimib sõltumatult.
+waterfox-blocker-extension-detected = Waterfoxis on nüüd sisseehitatud reklaamiblokeerija. Seda saad hallata seadistustest.
+waterfox-blocker-extension-install-warning = Waterfoxis on juba olemas sisseehitatud reklaamiblokeerija. Kahe erineva reklaamiblokeerija kasutamine võib veebilehed muuta mittetoimivateks ja/või aeglasteks.
+permissions-exceptions-manage-waterfox-blocker-desc = Sa võid määratleda veebisaite, kus reklaamide blokeerimine pole kasutusel. Sisesta soovitud saidi aadress ja klõpsa „Lisa erand“.
