@@ -3,153 +3,162 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 pane-tree-title = Tab Vertikal Berstruktur Pohon
-
 category-tree =
     .tooltiptext = { pane-tree-title }
-
 browser-layout-tree-vertical-tabs =
     .label = Tab vertikal berstruktur pohon
-
 sidebar-tree-vertical-tabs =
-    .label = Tab vertikal berstruktur pohon
-
+    .label = Tab vertikal pohon
 tree-header = Tab Vertikal Berstruktur Pohon
-
 tree-appearance-header = Tampilan
-
 tree-auto-sticky-header = Tab yang menempel di tepi bilah tab ketika digulir keluar
-
 tree-faviconize-pinned-tabs =
     .label = Tampilkan tab yang disematkan hanya dengan ikonnya
     .accesskey = S
-
 tree-sticky-active-tab =
     .label = Tab Aktif
     .accesskey = k
-
 tree-sticky-sharing-tab =
     .label = Tab yang Berbagi Kamera/Mikrofon/Layar
     .accesskey = g
-
 tree-sticky-sound-playing-tab =
     .label = Tab yang Memutar Suara
     .accesskey = y
-
 tree-behavior-header = Tampilan pohon tab
-
 tree-auto-collapse-expand-subtree-on-attach =
     .label = Saat pohon baru muncul, lipat yang lain secara otomatis
     .accesskey = c
-
 tree-auto-collapse-expand-subtree-on-select =
     .label = Saat tab mendapat fokus, perluas pohonnya dan lipat yang lain secara otomatis
     .accesskey = x
-
 tree-drop-links-on-tab-behavior-caption =
     .value = Saat tautan atau string URL dijatuhkan ke tab
     .accesskey = l
-
 tree-drop-links-on-tab-behavior-ask =
     .label = Selalu tanyakan bagaimana menanganinya
-
 tree-drop-links-on-tab-behavior-load =
     .label = Muat ke tab
-
 tree-drop-links-on-tab-behavior-newtab =
     .label = Buka tab anak baru
-
 tree-successor-tab-control-level-caption =
     .value = Saat tab saat ini ditutup sebagai anak terakhir
     .accesskey = h
-
 tree-successor-tab-control-level-in-tree =
     .label = Pindahkan fokus ke tab sebelumnya di pohon
-
 tree-successor-tab-control-level-never =
     .label = Selalu pindahkan fokus ke tab berikutnya (ikuti kontrol browser atau ekstensi lain)
-
 tree-successor-tab-control-level-simulate-default =
     .label = Selalu pindahkan fokus ke tab berikutnya
-
 tree-tree-double-click-behavior-caption =
     .value = Klik ganda pada tab
     .accesskey = D
-
 tree-tree-double-click-behavior-toggle-close =
     .label = Tutup tab
-
 tree-tree-double-click-behavior-toggle-collapsed =
     .label = Lipat/perluas pohon
-
 tree-tree-double-click-behavior-toggle-none =
     .label = Jangan lakukan apa pun
-
 tree-tree-double-click-behavior-toggle-sticky =
     .label = Tempelkan ke tepi bilah tab / Lepaskan dari tepi bilah tab
-
 tree-auto-attach-header = Pengaturan otomatis pohon tab
-
 tree-auto-attach-child-end =
     .label = Anak terakhir dari tab induk
-
 tree-auto-attach-child-next-to-last-related-tab =
     .label = Anak dari tab induk, di samping anak yang baru dibuka
-
 tree-auto-attach-child-top =
     .label = Anak pertama dari tab induk
-
 tree-auto-attach-independent =
     .label = Tab independen
-
 tree-auto-attach-next-sibling =
     .label = Saudara berikutnya dari tab induk
-
 tree-auto-attach-no-control =
     .label = (tidak ada kontrol)
-
 tree-auto-attach-sibling =
     .label = Saudara dari tab induk
-
 tree-auto-attach-on-any-other-trigger-caption =
     .value = Tab dari pemicu lain mana pun: Buka sebagai
     .accesskey = t
-
 tree-auto-attach-on-duplicated-caption =
     .value = Gandakan tab sebagai
     .accesskey = u
-
 tree-auto-attach-on-new-tab-button-middle-click-caption =
     .value = Untuk klik tengah, buka tab kosong baru sebagai
     .accesskey = m
-
 tree-auto-attach-on-new-tab-command-caption =
     .value = Buka tab kosong baru sebagai
     .accesskey = n
-
 tree-auto-attach-on-opened-from-external-caption =
     .value = Tab baru dari Aplikasi Lain: Buka sebagai
     .accesskey = A
-
 tree-auto-attach-on-opened-with-owner-caption =
     .value = Saat tab dibuka dari tab yang ada, buka sebagai
     .accesskey = D
-
 tree-auto-attach-same-site-orphan-caption =
     .value = Tab baru dengan situs yang sama seperti tab saat ini dari bilah lokasi, penanda, riwayat, atau kasus lainnya: Buka sebagai
     .accesskey = w
-
 tree-insert-new-tab-from-pinned-tab-at-caption =
     .value = Posisi penyisipan tab anak baru dari tab yang disematkan (akan muncul sebagai tab akar)
     .accesskey = p
-
 tree-insert-new-tab-from-pinned-tab-at-end =
     .label = Akhir dari pohon
-
 tree-insert-new-tab-from-pinned-tab-at-next-to-last-related-tab =
     .label = Di samping anak yang baru dibuka, atau dekat pembukanya
-
 tree-insert-new-tab-from-pinned-tab-at-no-control =
     .label = Tidak ada kontrol (menghormati keputusan peramban atau ekstensi tab lainnya)
-
 tree-insert-new-tab-from-pinned-tab-at-top =
     .label = Puncak pohon (dekat pembuka)
+waterfox-tab-context-collapse-tree =
+    .label = Lipat Pohon
+waterfox-tab-context-expand-tree =
+    .label = Bentangkan Pohon
+waterfox-tab-context-close-tree =
+    .label = Tutup Pohon
+waterfox-tab-context-close-descendants =
+    .label = Tutup Anak
+waterfox-tab-context-collapse-all-trees =
+    .label = Lipat Semua Pohon
+waterfox-tab-context-expand-all-trees =
+    .label = Bentangkan Semua Pohon
+waterfox-tabs-tree-heading =
+    .label = Tab pohon
+waterfox-tabs-tree-enable-toggle =
+    .label = Tampilkan tab sebagai pohon
+    .description = Tab yang Anda buka dari tab lain terselip di bawahnya, sehingga Anda dapat melipat dan memindahkan seluruh grup sekaligus. Ini juga mengaktifkan tab vertikal.
+waterfox-tabs-tree-auto-attach-select =
+    .label = Buka tab baru
+waterfox-tabs-tree-auto-attach-option-root =
+    .label = Sendirian
+waterfox-tabs-tree-auto-attach-option-child =
+    .label = Terselip di bawah tab yang membukanya
+waterfox-tabs-tree-auto-attach-option-sibling =
+    .label = Di sebelah tab yang membukanya
+waterfox-tabs-tree-auto-collapse-on-select-toggle =
+    .label = Buka cabang tab aktif dan lipat yang lainnya
+waterfox-tabs-tree-auto-collapse-on-attach-toggle =
+    .label = Buka cabang saat tab baru bergabung dengannya
+waterfox-tabs-tree-close-parent-select =
+    .label = Saat Anda menutup tab induk
+waterfox-tabs-tree-close-parent-option-promote-first =
+    .label = Tempatkan anak pertamanya di tempat tab induk
+waterfox-tabs-tree-close-parent-option-promote-all =
+    .label = Angkat anak-anaknya naik satu tingkat
+waterfox-tabs-tree-close-parent-option-close-all =
+    .label = Tutup seluruh cabang
+waterfox-tabs-tree-close-parent-option-detach =
+    .label = Pindahkan anak-anaknya ke tingkat atas
+waterfox-tabs-tree-double-click-select =
+    .label = Mengklik ganda sebuah tab
+waterfox-tabs-tree-double-click-option-toggle =
+    .label = Melipat atau membuka cabangnya
+waterfox-tabs-tree-double-click-option-close =
+    .label = Menutup cabangnya
+waterfox-tabs-tree-double-click-option-none =
+    .label = Tidak melakukan apa-apa
+waterfox-tabs-tree-sticky-active-toggle =
+    .label = Pertahankan tab saat ini tetap terlihat saat cabangnya dilipat
+waterfox-tabs-tree-propagate-muted-toggle =
+    .label = Bisukan anak-anak tab bersama dengan tab induknya
+waterfox-tabs-tree-max-depth-select =
+    .label = Batasi seberapa dalam tab dapat bersarang
+waterfox-tabs-tree-max-depth-option-unlimited =
+    .label = Tanpa batas

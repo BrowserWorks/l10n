@@ -3,80 +3,110 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 restart-prompt-title = Mulai ulang { -brand-short-name }
-
 restart-prompt-question = Anda yakin bahwa Anda ingin memulai ulang { -brand-short-name }?
-
 appmenuitem-restart-browser =
     .label = Mulai ulang
-
 copy-tab-link =
     .label = Salin Tautan Tab
-
 copy-all-urls =
     .label = Salin Semua Tautan Tab
-
 unload-tab =
     .label = Bongkar Tab
-
 tab-position-header = Posisi Bilah Tab
-
 tab-bar-top-above =
     .label = Teratas atas bilah alamat
-
 tab-bar-top-below =
     .label = Teratas di bawah bilah alamat
-
 tab-bar-bottom-above =
     .label = Terbawah di atas bilah status
-
 tab-bar-bottom-below =
     .label = Terbawah di bawah bilah status
-
 tab-additional-header = Preferensi Tab Tambahan
-
 pinned-icon-only =
     .label = Kecilkan tab yang disematkan agar hanya menampilkan ikon situs
-
 insert-after-current =
     .label = Sisipkan tab baru setelah tab saat ini
-
 insert-related-after-current =
     .label = Masukkan tab baru yang terkait setelah tab saat ini
-
 restart-header = Mulai Ulang Item Menu
-
 restart-show-button =
     .label = Tampilkan tombol mulai ulang di PanelUI
-
 restart-purge-cache =
     .label = Hapus cache mulai ulang cepat pada mulai ulang browser
-
 restart-require-confirmation =
     .label = Memerlukan konfirmasi mulai ulang
-
 tab-feature-header = Menu Konteks Tab
-
 show-duplicate-tab =
     .label = Tampilkan item menu tab duplikat
-
 show-copy-url =
     .label = Tampilkan item menu salin url tab
-
 enable-copy-active-tab =
     .label = Salin URL hanya dari tab aktif
-
 show-copy-all-urls =
     .label = Tampilkan salin semua item menu urls tab
-
 show-unload-tab =
     .label = Tampilkan item menu tab bongkar muatan
-
 bookmarks-bar-position-header = Posisi Bilah Alat Bookmark
-
 bookmarks-position-top =
     .label = Atas
-
 bookmarks-position-bottom =
     .label = Bawah
-
 tabbrowser-confirm-session-restore-checkbox = Buka jendela dan tab sebelumnya
+waterfox-tabs-position-heading =
+    .label = Posisi bilah alat
+waterfox-tabs-tab-bar-position-select =
+    .label = Posisi bilah tab
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Di atas bilah alat navigasi
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Di bawah bilah alat navigasi
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = Di bagian bawah, di atas bilah status
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = Di bagian bawah, di bawah bilah status
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Posisi bilah bookmark
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Atas
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Bawah
+waterfox-tabs-menu-heading =
+    .label = Menu konteks tab
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Tampilkan entri tab duplikat
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Tampilkan entri salin URL tab
+waterfox-tabs-copy-active-url-toggle =
+    .label = Salin URL tab aktif alih-alih tab yang diklik
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Tampilkan entri salin semua URL tab
+waterfox-tabs-restart-heading =
+    .label = Memulai ulang
+waterfox-tabs-restart-menu-toggle =
+    .label = Tampilkan entri mulai ulang di menu
+waterfox-tabs-restart-confirm-toggle =
+    .label = Minta konfirmasi sebelum memulai ulang
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Hapus cache saat memulai ulang
+waterfox-tabs-display-heading =
+    .label = Tampilan tab
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Kecilkan tab yang disematkan hanya menjadi ikon situs
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Sembunyikan tombol tutup pada tab
+waterfox-tabs-grouping-heading =
+    .label = Pengelompokan tab otomatis
+waterfox-tabs-auto-group-toggle =
+    .label = Kelompokkan tab baru dengan tab yang membukanya
+waterfox-tabs-auto-group-placement-select =
+    .label = Tempat tab baru bergabung dengan grup
+waterfox-tabs-auto-group-placement-option-after =
+    .label = Setelah tab yang membukanya
+waterfox-tabs-auto-group-placement-option-first =
+    .label = Di awal grup
+waterfox-tabs-auto-group-placement-option-last =
+    .label = Di akhir grup
+waterfox-copy-url-notification = URL disalin
+waterfox-tabs-group =
+    .label = Tab Waterfox
+    .description = Lokasi bilah alat tab dan markah, entri menu tambahan, serta pengelompokan tab otomatis.

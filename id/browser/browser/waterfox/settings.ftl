@@ -5,3 +5,4 @@
 update-application-manual =
     .label = Jangan pernah memeriksa pembaruan (tidak disarankan)
     .accesskey = N
+waterfox-settings-exclusive-badge = Eksklusif Waterfox

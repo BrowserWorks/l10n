@@ -3,284 +3,233 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 waterfox-blocker-intro-description = Memblokir iklan, skrip pelacak, dan permintaan yang tidak diinginkan untuk pemuatan halaman yang lebih cepat dan lebih sedikit gangguan.
-
 waterfox-blocker-setting-on =
     .label = Aktif
-
 waterfox-blocker-setting-on-description = Waterfox memblokir hal berikut:
-
 waterfox-blocker-setting-off =
     .label = Nonaktif
-
 waterfox-blocker-setting-off-description = Tidak ada iklan atau pelacak yang diblokir oleh Waterfox. Ekstensi pihak ketiga masih dapat memblokir konten secara mandiri.
-
 waterfox-blocker-dropdown-label =
     .value = Iklan mitra pencarian:
-
 waterfox-blocker-dropdown-option-partner-exception =
     .label = Izinkan di mitra pencarian Waterfox
-
 waterfox-blocker-dropdown-option-block-everything =
     .label = Larang di mitra pencarian Waterfox
-
 waterfox-blocker-manage-filter-lists =
     .label = Kelola Daftar Filter…
-
 waterfox-blocker-filter-lists-window =
     .title = Daftar filter pemblokir iklan
-
 waterfox-blocker-filter-lists-dialog =
     .buttonlabelaccept = Simpan Perubahan
     .buttonaccesskeyaccept = S
-
 waterfox-blocker-filter-lists-description =
     .value = Pilih daftar filter mana yang aktif.
-
 waterfox-blocker-filter-lists-active-count =
     .value = { $activeCount } aktif dari { $totalCount }
-
 waterfox-blocker-filter-lists-column-enabled =
     .label = Diaktifkan
-
 waterfox-blocker-filter-lists-column-name =
     .label = Daftar Filter
-
 waterfox-blocker-filter-lists-column-category =
     .label = Kategori
-
 waterfox-blocker-filter-lists-enable =
     .label = Aktifkan
-
 waterfox-blocker-filter-lists-disable =
     .label = Nonaktifkan
-
 waterfox-blocker-extension-detected = Waterfox kini memiliki pemblokir iklan bawaan. Anda dapat meninjau pengaturan di setelan.
-
 waterfox-blocker-extension-detected-learn-more =
     .label = Pelajari lebih lanjut
-
 waterfox-blocker-extension-detected-dismiss =
     .label = Jangan tampilkan lagi
-
 waterfox-blocker-extension-install-warning = Waterfox sudah memiliki pemblokir iklan bawaan. Menjalankan dua pemblokir iklan dapat menyebabkan halaman rusak atau memuat dengan lambat.
-
 waterfox-blocker-extension-install-got-it =
     .label = Mengerti
-
 waterfox-blocker-extension-install-learn-more =
     .label = Pelajari lebih lanjut
-
 waterfox-blocker-third-party-notice-description = { $extensionName } juga memblokir iklan. Menjalankan dua pemblokir iklan dapat menimbulkan masalah.
-
 waterfox-blocker-filter-lists-category-core = Baku
-
 waterfox-blocker-filter-lists-category-privacy = Privasi
-
 waterfox-blocker-filter-lists-category-annoyances = Gangguan
-
 waterfox-blocker-filter-lists-category-optional = Opsional
-
 waterfox-blocker-filter-lists-category-regional = Regional
-
 waterfox-blocker-filter-lists-empty-state = Tidak ada daftar filter yang tersedia.
-
 waterfox-blocker-extension-fallback-name-this = ekstensi ini
-
 waterfox-blocker-extension-fallback-name-your = ekstensi Anda
-
 waterfox-blocker-spotlight-title = Waterfox kini menyertakan pemblokiran iklan
-
 waterfox-blocker-spotlight-subtitle = Kami mendeteksi Anda telah memasang { $extensionName }. Waterfox kini memiliki pemblokir iklan sendiri. Menggunakannya membantu mendukung Waterfox, tetapi keputusan ada di tangan Anda.
-
 waterfox-blocker-spotlight-primary-button = Pertahankan pengaturan saya saat ini
-
 waterfox-blocker-spotlight-secondary-button = Tinjau pengaturan
-
 waterfox-blocker-prompt-title = Pemblokiran iklan Waterfox
-
 waterfox-blocker-reenable-conflict-message = Menjalankan pemblokiran iklan Waterfox dan "{ $extensionName }" secara bersamaan dapat menyebabkan halaman rusak. Mana yang ingin Anda pertahankan?
-
 waterfox-blocker-reenable-use-built-in = Gunakan pemblokir bawaan
-
 waterfox-blocker-reenable-keep-extension = Tetap gunakan pemblokir ekstensi
-
 waterfox-blocker-extension-install-manage-settings = Anda dapat mengelola pemblokiran iklan di Pengaturan > Privasi & Keamanan.
-
 waterfox-blocker-extension-install-anyway = Pasang saja
-
 waterfox-blocker-extension-install-keep-built-in = Tetap gunakan pemblokir bawaan
-
 waterfox-blocked-page-title = Waterfox memblokir halaman ini
-
 waterfox-blocked-page-heading = Waterfox memblokir halaman ini
-
 waterfox-blocked-page-description = Halaman ini diblokir oleh aturan filter pemblokiran iklan.
-
 waterfox-blocked-page-details =
     .aria-label = Detail halaman yang diblokir
-
 waterfox-blocked-page-blocked-url-label = URL yang diblokir
-
 waterfox-blocked-page-matched-rule-label = Aturan yang cocok
-
 waterfox-blocked-page-unavailable = Tidak tersedia
-
 waterfox-blocked-page-hint = "Muat tetap" akan mengizinkan situs ini untuk sementara hingga sesi Anda berakhir.
-
 waterfox-blocked-page-go-back = Kembali
-
 waterfox-blocked-page-load-anyway = Muat saja
-
 waterfox-blocker-header = Pemblokiran Iklan
-
 waterfox-blocker-toolbar-button =
     .label = Pemblokiran iklan
     .tooltiptext = Pemblokiran iklan
-
 waterfox-blocker-panel-not-available = Tidak tersedia di halaman ini
-
 waterfox-blocker-panel-toggle =
     .label = Pemblokiran iklan di situs ini
     .description = Blokir iklan dan pelacak di situs ini.
-
 waterfox-blocker-panel-disabled = Pemblokiran iklan nonaktif
-
 waterfox-blocker-panel-site-excepted = Iklan diizinkan di situs ini
-
 waterfox-blocker-panel-partner-allowed = Iklan diizinkan untuk mitra penelusuran
-
 waterfox-blocker-stats =
     { $count ->
         [one] { $count } iklan diblokir di situs ini
        *[other] { $count } iklan diblokir di situs ini
     }
-
 waterfox-blocker-panel-settings-button = Pengaturan pemblokiran iklan
-
 waterfox-blocker-show-badge-pref =
     .label = Tampilkan jumlah yang diblokir pada tombol bilah alat
-
 waterfox-blocker-custom-filter-lists =
     .label = Daftar Filter Kustom…
-
 waterfox-blocker-filter-lists-search =
     .placeholder = Cari daftar filter…
-
 waterfox-blocker-filter-lists-refresh-now =
     .label = Perbarui Sekarang
-
 waterfox-blocker-filter-lists-last-updated = Diperbarui { $date }
-
 waterfox-blocker-filter-lists-never-updated =
     .value = Belum diperbarui
-
 waterfox-blocker-custom-filter-lists-window =
     .title = Daftar Filter Kustom
-
 waterfox-blocker-custom-filter-lists-dialog =
     .buttonlabelaccept = Simpan Perubahan
     .buttonaccesskeyaccept = S
-
 waterfox-blocker-custom-filter-lists-description = Tambahkan URL daftar filter kustom. Daftar akan diambil dan diterapkan bersama filter bawaan.
-
 waterfox-blocker-filter-lists-custom-heading =
     .value = Daftar Filter Kustom
-
 waterfox-blocker-filter-lists-custom-input =
     .placeholder = Masukkan URL daftar filter…
-
 waterfox-blocker-filter-lists-custom-url-label =
     .value = URL daftar filter
-
 waterfox-blocker-filter-lists-custom-col =
     .label = URL
-
 waterfox-blocker-filter-lists-custom-add =
     .label = Tambah
-
 waterfox-blocker-filter-lists-custom-remove =
     .label = Hapus
-
 waterfox-blocker-filter-lists-custom-remove-all =
     .label = Hapus Semua
-
 waterfox-blocker-filter-lists-custom-empty =
     .value = Tidak ada daftar filter kustom yang ditambahkan.
-
 waterfox-blocker-setting-on-summary = Memblokir iklan dan pelacak dengan dampak minimal pada pemuatan halaman.
-
 waterfox-blocker-blocks-ads = Iklan dan permintaan jaringan iklan
-
 waterfox-blocker-blocks-tracking = Skrip dan piksel pelacak
-
 waterfox-blocker-blocks-annoyances = Popup dan hamparan yang mengganggu (dengan daftar gangguan diaktifkan)
-
 waterfox-blocker-partner-funding-title = Dukung pengembangan Waterfox
-
 waterfox-blocker-partner-funding-description = Waterfox gratis, sumber terbuka, dan independen. Mengizinkan iklan di halaman mitra pencarian adalah cara Waterfox mendanai pengembangan dan infrastruktur. Anda dapat mematikannya kapan saja, tetapi membiarkannya aktif adalah cara termudah untuk mendukung proyek ini.
-
 permissions-exceptions-waterfox-blocker-window2 =
     .title = Pengecualian untuk Pemblokiran Iklan
     .style = { permissions-window2.style }
-
 permissions-exceptions-manage-waterfox-blocker-desc = Anda dapat menentukan situs web mana yang pemblokiran iklannya dinonaktifkan. Ketik alamat lengkap situs yang ingin Anda kelola lalu klik Tambah Pengecualian.
-
 waterfox-blocker-filter-lists-next-refresh =
     .value = Pembaruan berikutnya: { $date }
-
 waterfox-blocker-filter-lists-next-refresh-unknown =
     .value = Pembaruan berikutnya: tidak diketahui
-
 waterfox-blocker-custom-filters =
     .label = Filter Saya…
-
 waterfox-blocker-custom-filters-window =
     .title = Filter Saya
-
 waterfox-blocker-custom-filters-dialog =
     .buttonlabelaccept = Simpan Perubahan
     .buttonaccesskeyaccept = S
-
 waterfox-blocker-custom-filters-description = Tambahkan aturan pemblokiran iklan Anda sendiri. Aturan ini menggunakan sintaksis filter uBlock Origin standar dan diterapkan bersama daftar filter yang Anda aktifkan.
-
 waterfox-blocker-custom-filters-empty =
     .value = Tidak ada filter kustom.
-
 waterfox-blocker-custom-filters-status =
     { $count ->
         [0] Tidak ada filter kustom.
         [one] 1 filter kustom.
        *[other] { $count } filter kustom.
     }
-
 waterfox-blocker-custom-filters-status-unsaved = Perubahan belum disimpan.
-
 waterfox-blocker-custom-filters-import =
     .label = Impor…
-
 waterfox-blocker-custom-filters-export =
     .label = Ekspor…
-
 waterfox-blocker-custom-filters-load-error-title = Gagal memuat
-
 waterfox-blocker-custom-filters-load-error = Filter kustom tidak dapat dimuat.
-
 waterfox-blocker-custom-filters-save-error-title = Gagal menyimpan
-
 waterfox-blocker-custom-filters-save-error = Filter kustom tidak dapat disimpan.
-
 waterfox-blocker-custom-filters-import-error-title = Gagal mengimpor
-
 waterfox-blocker-custom-filters-import-error = File yang dipilih tidak dapat diimpor.
-
 waterfox-blocker-custom-filters-export-error-title = Gagal mengekspor
-
 waterfox-blocker-custom-filters-export-error = Filter kustom tidak dapat diekspor.
-
 waterfox-blocker-custom-filters-import-picker-title = Impor filter kustom
-
 waterfox-blocker-custom-filters-export-picker-title = Ekspor filter kustom
-
 waterfox-blocker-custom-filters-import-replace-title = Ganti filter saat ini?
-
 waterfox-blocker-custom-filters-import-replace-message = Mengimpor akan mengganti semua konten yang saat ini ada di editor.
+waterfox-blocker-panel-hero-count = { $count } diblokir
+waterfox-blocker-panel-hero-paused = Dijeda
+waterfox-blocker-panel-hero-subtitle = di { $host }
+waterfox-blocker-panel-category-ads = Iklan
+waterfox-blocker-panel-category-trackers = Pelacak
+waterfox-blocker-panel-category-popups = Pop-up
+waterfox-blocker-panel-see-all = Lihat semua yang diblokir
+waterfox-blocker-panel-toggle2 =
+    .label = Blokir iklan di situs ini
+waterfox-blocker-panel-paused-card = Situs ini ada di daftar izin Anda. Iklan, pop-up, dan pelacak dapat dimuat hingga Anda mengaktifkan kembali pemblokiran.
+waterfox-blocker-panel-allowlist = Kelola daftar izin
+waterfox-blocker-panel-allowlist-count =
+    { $count ->
+        [one] { $count } situs
+       *[other] { $count } situs
+    }
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> diblokir sepanjang waktu · { $size } dihemat
+waterfox-blocker-panel-footer-settings = Pengaturan
+waterfox-blocker-panel-back =
+    .aria-label = Kembali
+waterfox-blocker-panel-detail-title = Diblokir di halaman ini
+waterfox-blocker-panel-detail-section-ads = Periklanan
+waterfox-blocker-panel-detail-section-trackers = Pelacak
+waterfox-blocker-panel-detail-section-popups = Pop-up
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } jendela pop-up diblokir secara otomatis.
+       *[other] { $count } jendela pop-up diblokir secara otomatis.
+    }
+waterfox-blocker-panel-allow-domain = Izinkan
+    .aria-label = Izinkan { $domain }
+waterfox-blocker-panel-domain-count = ×{ $count }
+pane-waterfox-blocker-title = Pemblokiran Iklan
+    .title = { pane-waterfox-blocker-title }
+waterfox-blocker-pane-header =
+    .heading = Pemblokiran Iklan
+waterfox-blocker-group =
+    .label = Pemblokiran iklan
+    .description = Memblokir iklan, skrip pelacakan, dan permintaan tidak diinginkan lainnya untuk memuat halaman lebih cepat dan mengurangi gangguan.
+waterfox-blocker-enabled-toggle =
+    .label = Blokir iklan dan pelacak
+    .description = Memblokir iklan dan pelacak dengan dampak minimal terhadap pemuatan halaman.
+waterfox-blocker-extension-notice =
+    .message = { $extensionName } juga memblokir iklan. Menjalankan dua pemblokir iklan dapat menyebabkan masalah.
+waterfox-blocker-partner-select =
+    .label = Iklan mitra pencarian
+    .description = Waterfox bersifat gratis, open source, dan independen. Mengizinkan iklan pada halaman mitra pencarian adalah cara Waterfox mendanai pengembangan dan infrastruktur. Anda dapat menonaktifkannya kapan saja, tetapi mengaktifkannya adalah cara termudah untuk mendukung proyek ini.
+waterfox-blocker-lists-group =
+    .label = Daftar filter
+waterfox-blocker-manage-lists-button =
+    .label = Kelola daftar filter
+waterfox-blocker-custom-lists-button =
+    .label = Daftar filter kustom
+waterfox-blocker-my-filters-button =
+    .label = Filter saya
+waterfox-blocker-exceptions-group =
+    .label = Pengecualian
+waterfox-blocker-exceptions-button =
+    .label = Kelola pengecualian
