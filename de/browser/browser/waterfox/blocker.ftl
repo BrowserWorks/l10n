@@ -40,7 +40,7 @@ waterfox-blocker-filter-lists-category-optional = Optional
 waterfox-blocker-filter-lists-category-regional = Regional
 waterfox-blocked-page-blocked-url-label = Blockierte URL
 waterfox-blocked-page-unavailable = Nicht verfügbar
-waterfox-blocked-page-go-back = Zurück
+waterfox-blocked-page-go-back = Zurückgehen
 waterfox-blocked-page-load-anyway = Trotzdem laden
 waterfox-blocker-intro-description = Blockiert Werbung, Tracking-Skripte und andere unerwünschte Anfragen, um Seiten schneller zu laden und Ablenkungen zu vermeiden.
 waterfox-blocker-setting-off-description = Waterfox blockiert weder Werbung noch Tracker. Erweiterungen von Drittanbietern können Inhalte weiterhin eigenständig blockieren.
@@ -201,3 +201,35 @@ waterfox-blocker-extension-notice =
 waterfox-blocker-partner-select =
     .label = Werbung von Suchpartnern
     .description = Waterfox ist kostenlos, Open Source und unabhängig. Durch die Anzeige von Werbung auf den Seiten unserer Suchpartner finanziert Waterfox die Entwicklung und die Infrastruktur. Sie können dies jederzeit deaktivieren, doch es eingeschaltet zu lassen, ist der einfachste Weg, das Projekt zu unterstützen.
+waterfox-blocker-panel-hero-paused = Pausiert
+waterfox-blocker-panel-hero-subtitle = auf { $host }
+waterfox-blocker-panel-category-ads = Werbung
+waterfox-blocker-panel-category-trackers = Tracker
+waterfox-blocker-panel-category-popups = Pop-ups
+waterfox-blocker-panel-hero-count = { $count } blockiert
+waterfox-blocker-panel-see-all = Alles als blockiert anzeigen
+waterfox-blocker-panel-toggle2 =
+    .label = Werbung auf dieser Website blockieren
+waterfox-blocker-panel-footer-settings = Einstellungen
+waterfox-blocker-panel-back =
+    .aria-label = Zurück
+waterfox-blocker-panel-detail-title = Auf dieser Seite blockiert
+waterfox-blocker-panel-detail-section-ads = Werbung
+waterfox-blocker-panel-detail-section-trackers = Tracker
+waterfox-blocker-panel-detail-section-popups = Pop-ups
+waterfox-blocker-panel-allow-domain = Erlauben
+    .aria-label = { $domain } erlauben
+waterfox-blocker-panel-domain-count = ×{ $count }
+waterfox-blocker-panel-paused-card = Diese Website steht auf Ihrer Whitelist. Anzeigen, Pop-ups und Tracker können geladen werden, bis Sie die Blockierung wieder aktivieren.
+waterfox-blocker-panel-allowlist = Whitelist verwalten
+waterfox-blocker-panel-allowlist-count =
+    { $count ->
+        [one] { $count } Website
+       *[other] { $count } Websites
+    }
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> insgesamt blockiert · { $size } gespeichert
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } Pop-up-Fenster wurde automatisch blockiert.
+       *[other] { $count } Pop-up-Fenster wurden automatisch blockiert.
+    }

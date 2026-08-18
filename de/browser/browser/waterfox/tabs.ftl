@@ -3,80 +3,113 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 restart-prompt-title = { -brand-short-name } neu starten
-
 restart-prompt-question = Möchten Sie { -brand-short-name } wirklich neu starten?
-
 appmenuitem-restart-browser =
     .label = Neu starten
-
 copy-tab-link =
     .label = Tab-Adresse kopieren
-
 copy-all-urls =
     .label = Alle Tab-Adressen kopieren
-
 unload-tab =
     .label = Tab entladen
-
 tab-position-header = Position der Tableiste
-
 tab-bar-top-above =
     .label = Oben über der Adressleiste
-
 tab-bar-top-below =
     .label = Oben unter der Adressleiste
-
 tab-bar-bottom-above =
     .label = Unten über der Statusleiste
-
 tab-bar-bottom-below =
     .label = Unten unter der Statusleiste
-
 tab-additional-header = Zusätzliche Tab-Einstellungen
-
 pinned-icon-only =
     .label = Angeheftete Tabs verkleinern, um nur das Seitensymbol anzuzeigen
-
 insert-after-current =
     .label = Neuen Tab nach aktuellem Tab einfügen
-
 insert-related-after-current =
     .label = Zugehörigen neuen Tab nach aktuellem Tab einfügen
-
 restart-header = Menüpunkt neu starten
-
 restart-show-button =
     .label = Neustart-Schaltfläche im PanelUI anzeigen
-
 restart-purge-cache =
     .label = Schnellneustart-Cache beim Neustart des Browsers leeren
-
 restart-require-confirmation =
     .label = Bestätigung für Neustart erforderlich
-
 tab-feature-header = Tab-Kontextmenü
-
 show-duplicate-tab =
     .label = Menüpunkt „Tab duplizieren“ anzeigen
-
 show-copy-url =
     .label = Menüpunkt „Tab-Adresse kopieren“ anzeigen
-
 enable-copy-active-tab =
     .label = Adresse nur vom aktiven Tab kopieren
-
 show-copy-all-urls =
     .label = Menüpunkt „Alle Tab-Adressen kopieren“ anzeigen
-
 show-unload-tab =
     .label = Menüpunkt „Tab entladen“ anzeigen
-
 bookmarks-bar-position-header = Position der Lesezeichen-Symbolleiste
-
 bookmarks-position-top =
     .label = Oben
-
 bookmarks-position-bottom =
     .label = Unten
-
 tabbrowser-confirm-session-restore-checkbox = Vorherige Fenster und Tabs öffnen
+waterfox-tabs-position-heading =
+    .label = Positionen der Symbolleisten
+waterfox-tabs-tab-bar-position-select =
+    .label = Position der Tableiste
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Über der Navigationsleiste
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Unter der Navigationsleiste
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = Unten, oberhalb der Statusleiste
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = Unten, unterhalb der Statusleiste
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Position der Lesezeichen-Symbolleiste
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Oben
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Unten
+waterfox-tabs-menu-heading =
+    .label = Tab-Kontextmenü
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Eintrag „Tab duplizieren“ anzeigen
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Eintrag „Tab-Adresse kopieren“ anzeigen
+waterfox-tabs-copy-active-url-toggle =
+    .label = Die URL des aktiven Tabs anstelle der des angeklickten Tabs kopieren
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Eintrag „Alle Tab-Adressen kopieren“ anzeigen
+waterfox-tabs-restart-heading =
+    .label = Neustart
+waterfox-tabs-restart-menu-toggle =
+    .label = Einen Neustart-Eintrag in den Menüs anzeigen
+waterfox-tabs-restart-confirm-toggle =
+    .label = Vor dem Neustart um Bestätigung bitten
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Beim Neustart den Startcache löschen
+waterfox-tabs-display-heading =
+    .label = Tab-Anzeige
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Angeheftete Tabs auf das Website-Symbol reduzieren
+waterfox-copy-url-notification = URL kopiert
+waterfox-tabs-group =
+    .label = Waterfox-Tabs
+    .description = Die Position der Symbolleisten für Tabs und Lesezeichen, die zusätzlichen Menüeinträge und die automatische Gruppierung von Tabs.
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Schaltfläche „Schließen“ auf den Tabs ausblenden
+waterfox-tabs-grouping-heading =
+    .label = Automatische Gruppierung von Tabs
+waterfox-tabs-auto-group-toggle =
+    .label = Neue Tabs mit dem Tab gruppieren, über den sie geöffnet wurden
+waterfox-tabs-auto-group-placement-select =
+    .label = Wo neue Tabs der Gruppe hinzugefügt werden
+waterfox-tabs-auto-group-placement-option-after =
+    .label = Nach dem Tab, in dem sie geöffnet wurden
+waterfox-tabs-auto-group-placement-option-first =
+    .label = Zu Beginn der Gruppe
+waterfox-tabs-auto-group-placement-option-last =
+    .label = Am Ende der Gruppe
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Fenster beim Schließen des letzten Tabs offen lassen
+    .accesskey = l
