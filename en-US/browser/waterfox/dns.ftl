@@ -71,3 +71,10 @@ waterfox-doh-ultra-endpoint =
 #   $provider (String) - The OHTTP DNS provider name.
 waterfox-doh-status-ultra-active =
     .message = DNS over OHTTP is using the relay { $relay } and the provider { $provider }
+
+# Variables:
+#   $relay (String) - The OHTTP relay name.
+#   $provider (String) - The OHTTP DNS provider name.
+#   $reason (String) - The technical reason lookups are failing.
+waterfox-doh-status-ultra-error =
+    .message = DNS over OHTTP isn’t working. Lookups through the relay { $relay } and the provider { $provider } are failing for reason ({ $reason }).
