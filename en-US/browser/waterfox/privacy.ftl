@@ -22,27 +22,46 @@ waterfox-data-collection-group =
 
 waterfox-data-collection-link = View Privacy Notice
 
+waterfox-advanced-web-privacy-group =
+    .label = Advanced web privacy
+    .description = Control global connection and referrer behavior for websites.
+
+waterfox-web-content-group =
+    .label = Web content
+    .description = These settings apply globally to every website.
+
 enable-javascript =
     .label = Enable JavaScript
+    .description = Applies to pages loaded after this setting changes.
 
 load-images =
     .label = Load images automatically
+    .description = Applies to future image loads on HTTP and HTTPS pages.
 
 ref-header = HTTP Referrer Header
 
+waterfox-referrer-header-policy =
+    .label = Referrer header policy
+    .description = Site policies and privacy protections may still trim or omit the header.
+
 send-referrer-header-0 =
-    .label = Never send the referrer header
+    .label = Never send a referrer
 
 send-referrer-header-1 =
-    .label = Include the referrer header only when clicking links and similar elements
+    .label = Send for document navigations only
 
 send-referrer-header-2 =
-    .label = Include the referrer header on all requests (Default)
+    .label = Send for navigations and page resources (default)
 
 webrtc-header = WebRTC peer connection
 
 enable-webrtc-p2p =
-    .label = Enable WebRTC peer connection
+    .label = Enable WebRTC peer connections
+    .description = Applies to pages loaded after this setting changes.
+
+# Variables:
+#   $name (string) - Name of the extension
+waterfox-extension-controlling-setting = <img data-l10n-name="icon"/> <strong>{ $name }</strong> controls this setting.
 
 ## about:telemetry
 
