@@ -3,89 +3,56 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 appearance-header = Izskats
-
 font-header = Fonti
-
 icons-header = Ikonas
-
 panels-header = Paneļi
-
 sidebar-header = Sānjosla
-
 theme-header = Motīvs
-
 bookmark-header = Grāmatzīmju josla
-
 interface-component-header = Saskarnes komponenti
-
 media-player-header = Multimediju atskaņotājs
-
 nav-bar-header = Navigācijas josla
-
 tab-bar-header = Cilņu josla
-
 pane-theme-title = Izskats un sajūtas
-
 center-header = Vidū
-
 rounding-header = Noapaļošana
-
 category-theme =
     .tooltiptext = { pane-theme-title }
-
 auto-blur-tabs =
     .label = Automātiski aizmiglot cilnes
-
 auto-hide-sidebar =
     .label = Automātiski paslēpt sānjoslu
-
 auto-hide-tabs =
     .label = Automātiski paslēpt cilnes
-
 center-tab-content =
     .label = Centrēt (ielikt vidū) cilnes saturu
-
 show-menu-icons =
     .label = Rādīt izvēlnes ikonas
-
 square-button-edges =
     .label = Kvadrātveida pogu stūri
-
 square-tab-edges =
     .label = Kvadrātveida cilnes stūri
-
 auto-hide-navbar =
     .label = Automātiski paslēpt navigācijas joslu
-
 compact-bookmark-menu =
     .label = Samazināt grāmatzīmju izvēlnes atstarpi
-
 compact-panel-header =
     .label = Samazināt paneļa galvenes atstarpi
-
 enable-waterfox-theme-2 =
     .label = Atspējot Waterfox motīvu pielāgošanu
-
 hide-bookmarkbar-icon =
     .label = Paslēpt grāmatzīmju joslas ikonas
-
 square-menu-item =
     .label = Kvadrātveida kontekstizvēlnes vienuma stūri
-
 enable-waterfox-theme-0 =
     .label = Iespējot Waterfox motīvu pielāgošanu visiem motīviem
-
 enable-waterfox-theme-1 =
     .label = Iespējot Waterfox motīvu pielāgošanu visiem Waterfox motīviem
-
 auto-hide-back =
     .label = Automātiski paslēpt "Atpakaļ" pogu
-
 auto-hide-bookmarkbar =
     .label = Automātiski paslēpt grāmatzīmju joslu
-
 enable-menu-transparency =
     .label = Iespējot izvēlnes caurspīdīgumu
-
 enable-panel-transparency =
     .label = Iespējot paneļa caurspīdīgumu
