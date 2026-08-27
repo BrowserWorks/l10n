@@ -44,3 +44,5 @@ waterfox-doh-ultra-endpoint =
     .description = { $uri }
 waterfox-doh-status-ultra-active =
     .message = DNS через OHTTP використовує ретранслятор { $relay } та провайдера { $provider }
+waterfox-doh-status-ultra-error =
+    .message = DNS через OHTTP не працює. Запити через ретранслятор { $relay } та провайдера { $provider } зазнають невдачі з причини ({ $reason }).
