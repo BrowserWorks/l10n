@@ -3,210 +3,135 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 dynamic-theme-header = Teme dinamice
-
 dynamic-theme-auto =
     .label = Stabilește dinamic modul luminos/întunecos
-
 dynamic-theme-dark =
     .label = Forțează modul întunecos
-
 dynamic-theme-light =
     .label = Forțează modul luminos
-
 pane-theme-title = Aspect și experiență
-
 category-theme =
     .tooltiptext = { pane-theme-title }
-
 animation-header = Animații
-
 appearance-header = Aspect
-
 autohide-hidden-header = Ascundere automată și ascunse
-
 bookmark-header = Bara de marcaje
-
 center-header = Centru
-
 font-header = Fonturi
-
 full-screen-header = Ecran complet
-
 icons-header = Iconițe
-
 interface-component-header = Componentele interfeței
-
 media-player-header = Lector audiovizual
-
 nav-bar-header = Bara de navigare
-
 panels-header = Panouri
-
 rounding-header = Rotunjire
-
 sidebar-header = Bara laterală
-
 tab-bar-header = Bara cu file
-
 theme-header = Temă
-
 preset-title = Propuneri
-
 lepton-style =
     .label = Stilul Lepton
-
 proton-style =
     .label = Stilul Proton
-
 waterfox-defaults =
     .label = Standard Waterfox
-
 auto-blur-tabs =
     .label = Estompează automat filele
-
 auto-hide-back =
     .label = Ascunde automat butonul „înapoi”
-
 auto-hide-bookmarkbar =
     .label = Ascunde automat bara de marcaje
-
 auto-hide-forward =
     .label = Ascunde automat butonul „înainte”
-
 auto-hide-navbar =
     .label = Ascunde automat bara de navigare
-
 auto-hide-pageaction =
     .label = Ascunde automat acțiunea paginii
-
 auto-hide-sidebar =
     .label = Ascunde automat bara laterală
-
 auto-hide-tabbar =
     .label = Ascunde automat bara cu file
-
 auto-hide-tabs =
     .label = Ascunde automat filele
-
 center-navbar-text =
     .label = Centrează textul barei de navigare
-
 center-tab-content =
     .label = Centrează conținutul filelor
-
 center-tab-label =
     .label = Centrează doar eticheta filelor
-
 close-button-hover =
     .label = Arată butonul de închidere la planarea pe fila selectată, atunci când sunt multe file deschise
-
 compact-bookmark-menu =
     .label = Redu adaosul de spațiu în meniul de marcaje
-
 compact-context-menu =
     .label = Redu adaosul de spațiu în meniul suplimentar
-
 compact-navbar-popup =
     .label = Redu adaosul de spațiu în balonul barei de navigare
-
 compact-panel-header =
     .label = Redu adaosul de spațiu în antetul panoului
-
 disable-panel-animate =
     .label = Dezactivează animația panoului meniului de aplicație
-
 disable-sidebar-animate =
     .label = Dezactivează animația panoului barei laterale
-
 drag-space =
     .label = Activează spațiul de tragere fix
-
 enable-cyan-accent-color =
     .label = Culoare de accent turcoaz
-
 enable-default-accent-color =
     .label = Culoare de accent standard
-
 enable-menu-transparency =
     .label = Activează transparența meniurilor
-
 enable-panel-transparency =
     .label = Activează transparența panourilor
-
 enable-system-accent-color =
     .label = Culoarea de accent a sistemului
-
 enable-waterfox-theme-0 =
     .label = Activează personalizările Waterfox pe toate temele
-
 enable-waterfox-theme-1 =
     .label = Activează personalizările Waterfox pe temele Waterfox
-
 enable-waterfox-theme-2 =
     .label = Dezactivează personalizările Waterfox
-
 full-panel-strip =
     .label = Separator de lățime completă în meniul aplicației
-
 remove-panel-strip =
     .label = Suprimă separatorul colorat din meniul aplicației
-
 hide-all-icons =
     .label = Ascunde toate iconițele
-
 hide-bookmarkbar-icon =
     .label = Ascunde iconițele din bara de marcaje
-
 hide-bookmarkbar-label =
     .label = Ascunde etichetele din bara de marcaje
-
 hide-disabled-menuitems =
     .label = Ascunde elementele dezactivate din meniuri
-
 hide-sidebar-header =
     .label = Ascunde antetul barei laterale
-
 hide-tab-icons =
     .label = Ascunde iconițele filelor
-
 hide-urlbar-iconbox =
     .label = Ascunde caseta cu iconiță din bara de URL
-
 monospace-font =
     .label = Folosește fontul monospațiat pentru pagină
-
 monospace-font-theme =
     .label = Folosește fontul monospațiat pentru temă
-
 show-mac-menu-icons =
     .label = Arată iconițele în meniul Macintosh
-
 show-menu-icons =
     .label = Arată iconițele în meniuri
-
 square-button-edges =
     .label = Colțuri pătrate pe butoane
-
 square-checkbox =
     .label = Casetă de bifare pătrată
-
 square-field =
     .label = Colțuri pătrate pe caseta de scriere
-
 square-menu-item =
     .label = Colțuri pătrate pe elementele din meniul suplimentar
-
 square-menu-panel =
     .label = Colțuri pătrate pe panoul meniului de aplicație
-
 square-menu-popup =
     .label = Colțuri pătrate pe panoul meniului suplimentar
-
 square-panel-item =
     .label = Colțuri pătrate pe elementele din meniul de aplicație
-
 square-tab-edges =
     .label = Colțuri pătrate pe file
-
 tab-context-line =
     .label = Rândul de context în file
