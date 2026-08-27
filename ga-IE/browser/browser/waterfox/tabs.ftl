@@ -110,3 +110,6 @@ waterfox-tabs-auto-group-placement-option-first =
 waterfox-tabs-auto-group-placement-option-last =
     .label = Ag deireadh an ghrúpa
 waterfox-copy-url-notification = URL cóipeáilte
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Coinnigh an fhuinneog ar oscailt agus an cluaisín deireanach á dhúnadh
+    .accesskey = l
