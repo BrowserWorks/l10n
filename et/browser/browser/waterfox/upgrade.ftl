@@ -9,4 +9,4 @@ waterfox-upgrade-dialog-subtitle = Selle uuendusega lisandub uuem renderdusmooto
 waterfox-upgrade-dialog-primary-button = Alusta veebisirvimisega
 waterfox-upgrade-dialog-continue-button = Jätka
 waterfox-upgrade-dialog-appearance-title = Vali välimus, mis sulle meeldib
-waterfox-upgrade-dialog-appearance-subtitle = Jätka hetkel nähtava Photoni välimuse kasutamist või võta kasutusele uus Nova välimus. Seda saad hiljem ka seadistustest muuta.
+waterfox-upgrade-dialog-appearance-subtitle = Jätka senise välimuse kasutamist või võta kasutusele Nova, Protoni või Photoni välimus. Seda saad hiljem ka seadistustest muuta.
