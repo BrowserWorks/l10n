@@ -3,206 +3,134 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 dynamic-theme-header = Dynamic Themes
-
 dynamic-theme-dark =
     .label = Force Dark Mode
-
 dynamic-theme-light =
     .label = Force Light Mode
-
 dynamic-theme-auto =
     .label = Dynamically Set Light/Dark Mode
 
 ### Look & Feel
 
 pane-theme-title = Look & Feel
-
 category-theme =
     .tooltiptext = { pane-theme-title }
-
 preset-title = Presets
-
 waterfox-defaults =
     .label = Waterfox Defaults
-
 lepton-style =
     .label = Lepton Style
-
 proton-style =
     .label = Proton Style
-
 enable-waterfox-theme-0 =
     .label = Enable Waterfox theme customisations on all themes
-
 enable-waterfox-theme-1 =
     .label = Enable Waterfox theme customisations on Waterfox themes
-
 enable-waterfox-theme-2 =
     .label = Disable Waterfox theme customisations
-
 enable-default-accent-color =
     .label = Default Accent Color
-
 enable-cyan-accent-color =
     .label = Cyan Accent Color
-
 enable-system-accent-color =
     .label = System Accent Color
-
 disable-panel-animate =
     .label = Disable app menu panel animation
-
 disable-sidebar-animate =
     .label = Disable sidebar panel animation
-
 auto-hide-tabs =
     .label = Auto Hide Tabs
-
 auto-blur-tabs =
     .label = Auto Blur Tabs
-
 auto-hide-tabbar =
     .label = Auto Hide Tab Bar
-
 auto-hide-navbar =
     .label = Auto Hide Nav Bar
-
 auto-hide-bookmarkbar =
     .label = Auto Hide Bookmarks Bar
-
 auto-hide-sidebar =
     .label = Auto Hide Sidebar
-
 auto-hide-back =
     .label = Auto Hide Back Button
-
 auto-hide-forward =
     .label = Auto Hide Forward Button
-
 auto-hide-pageaction =
     .label = Auto Hide Page Action
-
 hide-all-icons =
     .label = Hide All Icons
-
 hide-tab-icons =
     .label = Hide Tab Icons
-
 hide-sidebar-header =
     .label = Hide Sidebar Header
-
 hide-urlbar-iconbox =
     .label = Hide URL Bar Icon Box
-
 hide-bookmarkbar-icon =
     .label = Hide Bookmarks Bar Icons
-
 hide-bookmarkbar-label =
     .label = Hide Bookmarks Bar Labels
-
 hide-disabled-menuitems =
     .label = Hide Disabled Menu Items
-
 center-tab-content =
     .label = Center Tab Content
-
 center-tab-label =
     .label = Center Tab Label Only
-
 center-navbar-text =
     .label = Center Nav Bar Text
-
 square-tab-edges =
     .label = Square Tab Corners
-
 square-button-edges =
     .label = Square Button Corners
-
 square-menu-panel =
     .label = Square App Menu Panel Corners
-
 square-panel-item =
     .label = Square App Menu Item Corners
-
 square-menu-popup =
     .label = Square Context Menu Panel Corners
-
 square-menu-item =
     .label = Square Context Menu Item Corners
-
 square-field =
     .label = Square Entry Field Corners
-
 square-checkbox =
     .label = Square Checkbox
-
 drag-space =
     .label = Enable Fixed Drag Space
-
 compact-context-menu =
     .label = Reduce Context Menu Padding
-
 compact-bookmark-menu =
     .label = Reduce Bookmarks Menu Padding
-
 compact-panel-header =
     .label = Reduce Panel Header Padding
-
 compact-navbar-popup =
     .label = Reduce Nav Bar Popup Padding
-
 close-button-hover =
     .label = Display close tab button on hover of selected tab when many tabs are open
-
 remove-panel-strip =
     .label = Remove Coloured App Menu Separator
-
 full-panel-strip =
     .label = Full Width App Menu Separator
-
 show-menu-icons =
     .label = Show Menu Icons
-
 show-mac-menu-icons =
     .label = Show Mac Menu Icons
-
 monospace-font =
     .label = Enable monospaced font for page
-
 monospace-font-theme =
     .label = Enable monospaced font for theme
-
 tab-context-line =
     .label = Tab Context Line
-
 theme-header = Theme
-
 appearance-header = Appearance
-
 interface-component-header = Interface Components
-
 rounding-header = Rounding
-
 autohide-hidden-header = Auto Hide & Hidden
-
 center-header = Center
-
 tab-bar-header = Tab Bar
-
 nav-bar-header = Nav Bar
-
 bookmark-header = Bookmarks Bar
-
 panels-header = Panels
-
 sidebar-header = Sidebar
-
 font-header = Fonts
-
 icons-header = Icons
-
 animation-header = Animations
-
 full-screen-header = Full screen
-
 media-player-header = Media Player
