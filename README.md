@@ -46,3 +46,13 @@ If you have any questions or need assistance, please:
 - Ask in the [Reddit community](https://www.reddit.com/r/waterfox)
 
 Thank you for contributing to making Waterfox accessible to users around the world!
+
+## Repository Validation
+
+Before submitting localization changes, run the locale layout check:
+
+```sh
+python3 tools/validate_locale_layout.py
+```
+
+The case-sensitive canonical locale list is kept in the following location: `tools/allowed-locales.txt`.
