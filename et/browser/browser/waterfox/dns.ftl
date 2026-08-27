@@ -44,3 +44,5 @@ waterfox-doh-ultra-endpoint =
     .description = { $uri }
 waterfox-doh-status-ultra-active =
     .message = Nimelahendus üle OHTTP kasutab edastusserverit { $relay } ja teenusepakkujat { $provider }
+waterfox-doh-status-ultra-error =
+    .message = OHTTP-põhine nimelahendus ei toimi. Nimepäringud läbi edastusserveri { $relay } ja teenusepakkuja { $provider } ebaõnnestuvad ja põhjuseks on: { $reason }.
