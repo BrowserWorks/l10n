@@ -3,212 +3,138 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 dynamic-theme-header = Dinamikus témák
-
 dynamic-theme-dark =
     .label = Sötét mód kényszerítése
-
 dynamic-theme-light =
     .label = Világos mód kényszerítése
-
 dynamic-theme-auto =
     .label = Világos/sötét mód dinamikus beállítása
 
 ### Look & Feel
 
 pane-theme-title = Megjelenés
-
 category-theme =
     .tooltiptext = { pane-theme-title }
-
 preset-title = Előbeállítások
-
 waterfox-defaults =
     .label = Waterfox alapbeállítások
-
 lepton-style =
     .label = Lepton stílus
-
 proton-style =
     .label = Proton stílus
-
 enable-waterfox-theme-0 =
     .label = Waterfox téma-testreszabások engedélyezése minden témánál
-
 enable-waterfox-theme-1 =
     .label = Waterfox téma-testreszabások engedélyezése Waterfox témáknál
-
 enable-waterfox-theme-2 =
     .label = Waterfox téma-testreszabások letiltása
-
 enable-default-accent-color =
     .label = Alapértelmezett kiemelőszín
-
 enable-cyan-accent-color =
     .label = Cián kiemelőszín
-
 enable-system-accent-color =
     .label = Rendszer kiemelőszíne
-
 disable-panel-animate =
     .label = Alkalmazásmenü panel animációjának letiltása
-
 disable-sidebar-animate =
     .label = Oldalsáv panel animációjának letiltása
-
 auto-hide-tabs =
     .label = Lapok automatikus elrejtése
-
 auto-blur-tabs =
     .label = Lapok automatikus elhomályosítása
-
 auto-hide-tabbar =
     .label = Lapsáv automatikus elrejtése
-
 auto-hide-navbar =
     .label = Navigációs sáv automatikus elrejtése
-
 auto-hide-bookmarkbar =
     .label = Könyvjelzősáv automatikus elrejtése
-
 auto-hide-sidebar =
     .label = Oldalsáv automatikus elrejtése
-
 auto-hide-back =
     .label = Vissza gomb automatikus elrejtése
-
 auto-hide-forward =
     .label = Előre gomb automatikus elrejtése
-
 auto-hide-pageaction =
     .label = Oldalműveletek automatikus elrejtése
-
 hide-all-icons =
     .label = Összes ikon elrejtése
-
 hide-tab-icons =
     .label = Lap ikonok elrejtése
-
 hide-sidebar-header =
     .label = Oldalsáv fejlécének elrejtése
-
 hide-urlbar-iconbox =
     .label = URL-sáv ikondobozának elrejtése
-
 hide-bookmarkbar-icon =
     .label = Könyvjelzősáv ikonjainak elrejtése
-
 hide-bookmarkbar-label =
     .label = Könyvjelzősáv címkéinek elrejtése
-
 hide-disabled-menuitems =
     .label = Letiltott menüelemek elrejtése
-
 center-tab-content =
     .label = Lap tartalmának középre igazítása
-
 center-tab-label =
     .label = Csak a lap címének középre igazítása
-
 center-navbar-text =
     .label = Navigációs sáv szövegének középre igazítása
-
 square-tab-edges =
     .label = Szögletes lapsarkok
-
 square-button-edges =
     .label = Szögletes gombsarkok
-
 square-menu-panel =
     .label = Szögletes alkalmazásmenü panel sarkok
-
 square-panel-item =
     .label = Szögletes alkalmazásmenü elem sarkok
-
 square-menu-popup =
     .label = Szögletes helyi menü panel sarkok
-
 square-menu-item =
     .label = Szögletes helyi menüelem sarkok
-
 square-field =
     .label = Szögletes beviteli mező sarkok
-
 square-checkbox =
     .label = Szögletes jelölőnégyzet
-
 drag-space =
     .label = Rögzített húzási terület engedélyezése
-
 compact-context-menu =
     .label = Helyi menü térközének csökkentése
-
 compact-bookmark-menu =
     .label = Könyvjelzőmenü térközének csökkentése
-
 compact-panel-header =
     .label = Panel fejlécének térközének csökkentése
-
 compact-navbar-popup =
     .label = Navigációs sáv felugró ablakainak térközének csökkentése
-
 close-button-hover =
     .label = A lapbezáró gomb megjelenítése a kijelölt lapon rámutatáskor, ha sok lap van nyitva
-
 remove-panel-strip =
     .label = Színes alkalmazásmenü elválasztó eltávolítása
-
 full-panel-strip =
     .label = Teljes szélességű alkalmazásmenü elválasztó
-
 show-menu-icons =
     .label = Menüikonok megjelenítése
-
 show-mac-menu-icons =
     .label = Mac menüikonok megjelenítése
-
 monospace-font =
     .label = Rögzített szélességű betűtípus használata az oldalakon
-
 monospace-font-theme =
     .label = Rögzített szélességű betűtípus használata a témában
-
 tab-context-line =
     .label = Lap kontextusvonal
-
 theme-header = Téma
-
 appearance-header = Megjelenés
-
 interface-component-header = Felületi elemek
-
 rounding-header = Lekerekítés
-
 autohide-hidden-header = Automatikus elrejtés és rejtett elemek
-
 center-header = Középre igazítás
-
 tab-bar-header = Lapsáv
-
 nav-bar-header = Navigációs sáv
-
 bookmark-header = Könyvjelzősáv
-
 panels-header = Panelek
-
 sidebar-header = Oldalsáv
-
 font-header = Betűtípusok
-
 icons-header = Ikonok
-
 animation-header = Animációk
-
 full-screen-header = Teljes képernyő
-
 media-player-header = Médialejátszó
-
 enable-menu-transparency =
     .label = Menü átlátszóságának engedélyezése
-
 enable-panel-transparency =
     .label = Panel átlátszóságának engedélyezése
