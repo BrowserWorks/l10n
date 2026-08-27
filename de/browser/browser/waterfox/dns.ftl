@@ -44,3 +44,5 @@ waterfox-doh-radio-ultra =
     .description = Sicheres DNS mit Oblivious HTTP über den Datenschutz-Relay von Waterfox
 waterfox-doh-status-ultra-active =
     .message = DNS über OHTTP nutzt den Relay-Server { $relay } und den Provider { $provider }
+waterfox-doh-status-ultra-error =
+    .message = DNS über OHTTP funktioniert nicht. Abfragen über das Relay { $relay } und den Provider { $provider } schlagen aus dem Grund ({ $reason }) fehl.
