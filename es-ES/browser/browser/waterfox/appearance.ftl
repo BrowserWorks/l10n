@@ -3,161 +3,103 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 dynamic-theme-header = Temas Dinámicos
-
 dynamic-theme-dark =
     .label = Forzar Modo Oscuro
-
 dynamic-theme-light =
     .label = Forzar Modo Luz
-
 dynamic-theme-auto =
     .label = Definir dinámicamente el modo Luz/Oscuro
-
 animation-header = Animaciones
-
 appearance-header = Apariencia
-
 autohide-hidden-header = Auto-ocultar y ocultos
-
 bookmark-header = Barra de marcadores
-
 center-header = Centrar
-
 font-header = Fuentes
-
 full-screen-header = Pantalla completa
-
 icons-header = Iconos
-
 interface-component-header = Componentes de la interfaz
-
 media-player-header = Reproductor multimedia
-
 nav-bar-header = Barra de navegación
-
 panels-header = Paneles
-
 rounding-header = Redondeo
-
 sidebar-header = Barra lateral
-
 tab-bar-header = Barra de pestañas
-
 theme-header = Tema
-
 lepton-style =
     .label = Estilo Lepton
-
 proton-style =
     .label = Estilo Proton
-
 close-button-hover =
     .label = Mostrar el botón de cerrar pestaña al pasar el cursor sobre la pestaña seleccionada cuando hay muchas pestañas abiertas
-
 compact-bookmark-menu =
     .label = Reducir el espaciado del menú de marcadores
-
 compact-context-menu =
     .label = Reducir el espaciado del menú contextual
-
 compact-navbar-popup =
     .label = Reducir el espaciado del menú emergente de la barra de navegación
-
 compact-panel-header =
     .label = Reducir el espaciado del encabezado del panel
-
 disable-sidebar-animate =
     .label = Desactivar la animación del panel lateral
-
 drag-space =
     .label = Activar espacio fijo para arrastrar
-
 enable-cyan-accent-color =
     .label = Color de acento cian
-
 enable-default-accent-color =
     .label = Color de acento predeterminado
-
 enable-menu-transparency =
     .label = Activar la transparencia del menú
-
 enable-panel-transparency =
     .label = Activar la transparencia del panel
-
 enable-system-accent-color =
     .label = Color de acento del sistema
-
 enable-waterfox-theme-0 =
     .label = Activar las personalizaciones de tema de Waterfox en todos los temas
-
 enable-waterfox-theme-1 =
     .label = Activar las personalizaciones de tema de Waterfox solo en los temas de Waterfox
-
 enable-waterfox-theme-2 =
     .label = Desactivar las personalizaciones de tema de Waterfox
-
 full-panel-strip =
     .label = Separador del menú de la aplicación de ancho completo
-
 remove-panel-strip =
     .label = Eliminar el separador de color del menú de la aplicación
-
 hide-all-icons =
     .label = Ocultar todos los iconos
-
 hide-bookmarkbar-icon =
     .label = Ocultar los iconos de la barra de marcadores
-
 hide-bookmarkbar-label =
     .label = Ocultar las etiquetas de la barra de marcadores
-
 hide-disabled-menuitems =
     .label = Ocultar los elementos de menú deshabilitados
-
 hide-sidebar-header =
     .label = Ocultar el encabezado de la barra lateral
-
 hide-tab-icons =
     .label = Ocultar los iconos de las pestañas
-
 hide-urlbar-iconbox =
     .label = Ocultar el recuadro de iconos de la barra de direcciones
-
 monospace-font =
     .label = Activar fuente monoespaciada para la página
-
 monospace-font-theme =
     .label = Activar fuente monoespaciada para el tema
-
 show-mac-menu-icons =
     .label = Mostrar iconos del menú en macOS
-
 show-menu-icons =
     .label = Mostrar los iconos del menú
-
 square-button-edges =
     .label = Esquinas cuadradas en los botones
-
 square-checkbox =
     .label = Casilla de verificación cuadrada
-
 square-field =
     .label = Esquinas cuadradas en los campos de entrada
-
 square-menu-item =
     .label = Esquinas cuadradas en los elementos del menú contextual
-
 square-menu-panel =
     .label = Esquinas cuadradas en el panel del menú de la aplicación
-
 square-menu-popup =
     .label = Esquinas cuadradas en el panel del menú contextual
-
 square-panel-item =
     .label = Esquinas cuadradas en los elementos del menú de la aplicación
-
 square-tab-edges =
     .label = Esquinas cuadradas en las pestañas
-
 tab-context-line =
     .label = Línea de contexto de pestañas
