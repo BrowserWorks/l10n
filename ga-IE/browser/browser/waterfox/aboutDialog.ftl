@@ -7,3 +7,6 @@ aboutdialog-community = Tá { -brand-short-name } forbartha ag <label data-l10n-
 aboutdialog-donate-link = Déan síntiús
 aboutdialog-get-involved-link = Bí páirteach
 aboutdialog-license-link = Ceadúnú
+aboutdialog-close-button =
+    .title = Dún
+    .aria-label = Dún
