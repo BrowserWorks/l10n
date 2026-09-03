@@ -82,3 +82,10 @@ waterfox-blocker-setting-off-description = Hetkel Waterfox ei blokeeri reklaame 
 waterfox-blocker-extension-detected = Waterfoxis on nüüd sisseehitatud reklaamiblokeerija. Seda saad hallata seadistustest.
 waterfox-blocker-extension-install-warning = Waterfoxis on juba olemas sisseehitatud reklaamiblokeerija. Kahe erineva reklaamiblokeerija kasutamine võib veebilehed muuta mittetoimivateks ja/või aeglasteks.
 permissions-exceptions-manage-waterfox-blocker-desc = Sa võid määratleda veebisaite, kus reklaamide blokeerimine pole kasutusel. Sisesta soovitud saidi aadress ja klõpsa „Lisa erand“.
+waterfox-blocker-panel-paused-card = See veebisait on sinu lubatud saitide loendis. Reklaamide, hüpikakende ja jälitajate laadimine toimib seni, kuni sa blokeerimise uuesti sisse lülitad.
+waterfox-blocker-panel-allowlist = Halda lubatud loendit
+waterfox-blocker-panel-allowlist-count =
+    { $count ->
+        [one] { $count } veebisait
+       *[other] { $count } veebisaiti
+    }
