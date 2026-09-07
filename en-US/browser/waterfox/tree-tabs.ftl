@@ -76,10 +76,13 @@ waterfox-tabs-tree-auto-attach-option-sibling =
     .label = Next to the tab that opened them
 
 waterfox-tabs-tree-auto-collapse-on-select-toggle =
-    .label = Open the active tab’s branch and fold the others away
+    .label = When selecting a tab, automatically expand its branch and collapse the others
 
 waterfox-tabs-tree-auto-collapse-on-attach-toggle =
     .label = Open a branch when a new tab joins it
+
+waterfox-tabs-tree-expand-native-group-toggle =
+    .label = Expanding a branch also expands its tab group
 
 waterfox-tabs-tree-close-parent-select =
     .label = When you close a parent tab
@@ -98,6 +101,21 @@ waterfox-tabs-tree-close-parent-option-detach =
 
 waterfox-tabs-tree-close-parent-option-group =
     .label = Replace it with a group tab
+
+waterfox-tabs-tree-successor-toggle =
+    .label = Use tree relationships to choose the next active tab when closing a tab
+
+waterfox-tabs-tree-drop-links-select =
+    .label = When dropping links onto a tab
+
+waterfox-tabs-tree-drop-links-option-load =
+    .label = Open in that tab
+
+waterfox-tabs-tree-drop-links-option-ask =
+    .label = Ask each time
+
+waterfox-tabs-tree-drop-links-option-child =
+    .label = Open as child tabs
 
 waterfox-tabs-tree-double-click-select =
     .label = Double clicking a tab
@@ -126,11 +144,17 @@ waterfox-tabs-tree-sticky-active-toggle =
 waterfox-tabs-tree-propagate-muted-toggle =
     .label = Mute a tab’s children along with it
 
-waterfox-tabs-tree-max-depth-select =
-    .label = Limit how deep tabs can nest
+waterfox-tabs-tree-indent-input =
+    .label = Indentation per level (pixels)
+    .description = Space added for each nesting level, at least 1 pixel.
 
-waterfox-tabs-tree-max-depth-option-unlimited =
-    .label = No limit
+waterfox-tabs-tree-limit-depth-toggle =
+    .label = Limit how deeply tabs can nest
+    .description = Turn off for unlimited nesting.
+
+waterfox-tabs-tree-max-depth-input =
+    .label = Maximum nesting level
+    .description = Top-level tabs are level 0. Existing branches are not rearranged.
 
 ## Dialog shown when a link is dropped onto a tab
 
