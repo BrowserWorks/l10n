@@ -568,3 +568,5 @@ waterfox-opt-player-click-to-play =
     .description = Fügt der vorhandenen Einblendung einen Schwebestil und einen Zeiger-Cursor hinzu.
 waterfox-opt-player-animate =
     .label = Die Steuerelemente animieren
+waterfox-opt-tab-unloaded-grayscale =
+    .label = Leere Tab-Symbole in Graustufen darstellen
