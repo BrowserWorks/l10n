@@ -155,6 +155,9 @@ waterfox-tabs-display-heading =
 waterfox-tabs-pinned-icon-only-toggle =
     .label = Shrink pinned tabs to just the site icon
 
+waterfox-tabs-italicize-unread-toggle =
+    .label = Italicize unread tabs
+
 waterfox-tabs-hide-close-buttons-toggle =
     .label = Hide the close button on tabs
 

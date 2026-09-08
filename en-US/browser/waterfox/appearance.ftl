@@ -480,6 +480,9 @@ waterfox-opt-tab-sound-with-favicons-on-center =
 waterfox-opt-tab-unloaded =
     .label = Fade unloaded tabs
 
+waterfox-opt-tab-unloaded-grayscale =
+    .label = Make unloaded tab icons grayscale
+
 waterfox-opt-tab-crashed =
     .label = Show only the crash indicator on crashed tabs
 
