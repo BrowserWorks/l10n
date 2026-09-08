@@ -7,6 +7,12 @@
 sidebar-tree-vertical-tabs =
     .label = Tree vertical tabs
 
+# $tabTitle (String) - The title of the tab that owns this tree.
+waterfox-tree-disclosure-collapse = Collapse tree for { $tabTitle }
+
+# $tabTitle (String) - The title of the tab that owns this tree.
+waterfox-tree-disclosure-expand = Expand tree for { $tabTitle }
+
 ## Tab context menu commands for tree vertical tabs
 
 waterfox-tab-context-reload-tree =
