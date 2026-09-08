@@ -55,4 +55,16 @@ Before submitting localization changes, run the locale layout check:
 python3 tools/validate_locale_layout.py
 ```
 
-The case-sensitive canonical locale list is kept in the following location: `tools/allowed-locales.txt`.
+Locale directories are developer-controlled. `tools/allowed-locales.txt` defines their case-sensitive canonical names. Create new supported locales and files deliberately in Git, updating the list when adding a locale; do not generate them automatically in Weblate. Zero-byte Fluent (`.ftl`) files are forbidden. English source strings and translation units are managed in Git.
+
+The `Locale layout` CI check validates repository layout, not translation quality. Protect `main` with `Locale layout` as a required check.
+
+## Weblate Configuration
+
+Maintain the following configuration:
+
+- `appearance` is the sole repository-owning component; the other 13 canonical components link to `weblate://waterfox/appearance`.
+- Use one component per translation file. Back up history and metadata before retiring duplicate components.
+- Set `new_lang` to `none` and restrict the language filter to the canonical locale list.
+- Disable source editing and translation-unit management (`edit_template` and `manage_units` set to `false`).
+- Do not install **Add missing languages**, automatic component discovery, or the squash add-on.
