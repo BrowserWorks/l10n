@@ -113,3 +113,5 @@ waterfox-tabs-auto-group-placement-option-last =
 waterfox-tabs-keep-window-open-with-last-tab =
     .label = Fenster beim Schließen des letzten Tabs offen lassen
     .accesskey = l
+waterfox-tabs-italicize-unread-toggle =
+    .label = Ungelesene Tabs kursiv darstellen
