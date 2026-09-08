@@ -36,3 +36,13 @@ waterfox-data-collection-group =
     .searchkeywords = Datenschutz Telemetriedatenerfassung Datenschutzerklärung
 waterfox-data-collection-link = Datenschutzerklärung anzeigen
 identity-allow-site-data = Cookies/Daten für diese Website immer speichern
+waterfox-advanced-web-privacy-group =
+    .label = Erweiterter Datenschutz im Web
+    .description = Steuert das globale Verbindungs- und Referrer-Verhalten für Websites.
+waterfox-web-content-group =
+    .label = Webinhalte
+    .description = Diese Einstellungen gelten allgemein für alle Websites.
+waterfox-referrer-header-policy =
+    .label = Richtlinie zu Referrer-Headern
+    .description = Website-Richtlinien und Datenschutzmaßnahmen können den Header weiterhin beschneiden oder weglassen.
+waterfox-extension-controlling-setting = <img data-l10n-name="icon"/> <strong>{ $name }</strong> steuert diese Einstellung.
