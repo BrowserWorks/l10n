@@ -44,3 +44,5 @@ waterfox-doh-ultra-endpoint =
     .description = { $uri }
 waterfox-doh-status-ultra-active =
     .message = Tá DNS thar OHTTP ag baint úsáide as an athsheachadán { $relay } agus an soláthraí { $provider }
+waterfox-doh-status-ultra-error =
+    .message = Níl DNS thar OHTTP ag obair. Tá cuardaigh tríd an athsheoltóir { $relay } agus an soláthraí { $provider } ag teip ar chúis ({ $reason }).
