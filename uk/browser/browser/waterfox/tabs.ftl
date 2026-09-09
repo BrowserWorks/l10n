@@ -113,3 +113,5 @@ waterfox-copy-url-notification = URL скопійовано
 waterfox-tabs-keep-window-open-with-last-tab =
     .label = Не закривати вікно після закриття останньої вкладки
     .accesskey = l
+waterfox-tabs-italicize-unread-toggle =
+    .label = Писати назви невідвіданих вкладок курсивом
