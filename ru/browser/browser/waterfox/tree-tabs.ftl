@@ -3,66 +3,167 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 pane-tree-title = Дерево вертикальных вкладок
-
 category-tree =
     .tooltiptext = { pane-tree-title }
-
 browser-layout-tree-vertical-tabs =
     .label = Дерево вертикальных вкладок
-
 sidebar-tree-vertical-tabs =
     .label = Дерево вертикальных вкладок
-
 tree-header = Дерево вертикальных вкладок
-
 tree-appearance-header = Внешний вид
-
 tree-auto-sticky-header = Вкладки прилипают к краям панели вкладок, когда они прокручиваются за пределы видимости
-
 tree-faviconize-pinned-tabs =
     .label = Показывать только закрепленные вкладки с их иконкой
     .accesskey = S
-
 tree-sticky-active-tab =
     .label = Активная вкладка
     .accesskey = k
-
 tree-behavior-header = Древовидный вид вкладок
-
 tree-auto-collapse-expand-subtree-on-attach =
     .label = Когда появляется новое дерево, другие сворачиваются автоматически
     .accesskey = c
-
 tree-auto-collapse-expand-subtree-on-select =
     .label = Когда вкладка получает фокус, развернуть её дерево и автоматически свернуть другие
     .accesskey = x
-
 tree-drop-links-on-tab-behavior-ask =
     .label = Всегда спрашивать меня как с этим обращаться
-
 tree-drop-links-on-tab-behavior-load =
     .label = Загрузить во вкладку
-
 tree-drop-links-on-tab-behavior-newtab =
     .label = Открыть новую дочернюю вкладку
-
 tree-tree-double-click-behavior-toggle-close =
     .label = Закрыть вкладку
-
 tree-tree-double-click-behavior-toggle-collapsed =
     .label = Свернуть/развернуть дерево
-
 tree-tree-double-click-behavior-toggle-none =
     .label = Ничего не делать
-
 tree-auto-attach-on-new-tab-command-caption =
     .value = Открыть новую пустую вкладку как
     .accesskey = N
-
 tree-auto-attach-on-opened-from-external-caption =
     .value = Новая вкладка из других программ: Открыть как
     .accesskey = A
-
 tree-auto-attach-on-opened-with-owner-caption =
     .value = Когда вкладка открыта из существующей вкладки, открывать её как
     .accesskey = D
+waterfox-tree-disclosure-collapse = Свернуть дерево для { $tabTitle }
+waterfox-tree-disclosure-expand = Развернуть дерево для { $tabTitle }
+waterfox-tab-context-reload-tree =
+    .label = Перезагрузить дерево
+waterfox-tab-context-mute-tree =
+    .label = Отключить звук дерева
+waterfox-tab-context-unmute-tree =
+    .label = Включить звук дерева
+waterfox-tab-context-unload-tree =
+    .label = Выгрузить дерево
+waterfox-tab-context-collapse-tree =
+    .label = Свернуть дерево
+waterfox-tab-context-collapse-tree-recursively =
+    .label = Свернуть дерево рекурсивно
+waterfox-tab-context-expand-tree-recursively =
+    .label = Развернуть дерево рекурсивно
+waterfox-tab-context-expand-tree =
+    .label = Развернуть дерево
+waterfox-tab-context-close-tree =
+    .label = Закрыть дерево
+waterfox-tab-context-close-descendants =
+    .label = Закрыть дочерние вкладки
+waterfox-tab-context-bookmark-tree =
+    .label = Добавить это дерево в закладки…
+waterfox-tab-context-copy-tree-links =
+    .label = Копировать дерево как ссылки
+waterfox-tab-context-copy-descendants-links =
+    .label = Копировать дочерние вкладки как ссылки
+waterfox-tab-context-collapse-all-trees =
+    .label = Свернуть все деревья
+waterfox-tab-context-expand-all-trees =
+    .label = Развернуть все деревья
+waterfox-tabs-tree-heading =
+    .label = Древовидные вкладки
+waterfox-tabs-tree-enable-toggle =
+    .label = Показывать вкладки в виде дерева
+    .description = Вкладки, открытые из другой вкладки, вкладываются под неё, благодаря чему можно сворачивать и перемещать целые группы разом. Это также включает вертикальные вкладки.
+waterfox-tabs-tree-auto-attach-select =
+    .label = Открывать новые вкладки
+waterfox-tabs-tree-auto-attach-option-root =
+    .label = Независимо
+waterfox-tabs-tree-auto-attach-option-child =
+    .label = Вложенными под открывшую их вкладку
+waterfox-tabs-tree-auto-attach-option-sibling =
+    .label = Рядом с открывшей их вкладкой
+waterfox-tabs-tree-auto-collapse-on-select-toggle =
+    .label = При выборе вкладки автоматически разворачивать её ветку и сворачивать остальные
+waterfox-tabs-tree-auto-collapse-on-attach-toggle =
+    .label = Разворачивать ветку при добавлении в неё новой вкладки
+waterfox-tabs-tree-expand-native-group-toggle =
+    .label = Разворачивание ветки также разворачивает её группу вкладок
+waterfox-tabs-tree-close-parent-select =
+    .label = При закрытии родительской вкладки
+waterfox-tabs-tree-close-parent-option-promote-first =
+    .label = Поставить на её место первую дочернюю вкладку
+waterfox-tabs-tree-close-parent-option-promote-all =
+    .label = Поднять её дочерние вкладки на уровень выше
+waterfox-tabs-tree-close-parent-option-close-all =
+    .label = Закрыть всю ветку
+waterfox-tabs-tree-close-parent-option-detach =
+    .label = Переместить её дочерние вкладки на верхний уровень
+waterfox-tabs-tree-close-parent-option-group =
+    .label = Заменить её групповой вкладкой
+waterfox-tabs-tree-successor-toggle =
+    .label = Учитывать структуру дерева при выборе следующей активной вкладки после закрытия
+waterfox-tabs-tree-drop-links-select =
+    .label = При перетаскивании ссылки на вкладку
+waterfox-tabs-tree-drop-links-option-load =
+    .label = Открывать в этой вкладке
+waterfox-tabs-tree-drop-links-option-ask =
+    .label = Спрашивать каждый раз
+waterfox-tabs-tree-drop-links-option-child =
+    .label = Открывать как дочерние вкладки
+waterfox-tabs-tree-double-click-select =
+    .label = Двойной клик по вкладке
+waterfox-tabs-tree-double-click-option-toggle =
+    .label = Сворачивает или разворачивает её ветку
+waterfox-tabs-tree-double-click-option-close =
+    .label = Закрывает её ветку
+waterfox-tabs-tree-double-click-option-none =
+    .label = Ничего не делает
+waterfox-tabs-tree-auto-group-pinned-toggle =
+    .label = Группировать вкладки, открытые из одной закреплённой вкладки
+waterfox-tabs-tree-bookmark-restore-toggle =
+    .label = Восстанавливать структуру дерева при открытии папок закладок
+waterfox-tabs-tree-bookmark-group-toggle =
+    .label = Группировать несколько деревьев, открытых из папки закладок
+waterfox-tabs-tree-sticky-active-toggle =
+    .label = Оставлять текущую вкладку видимой при сворачивании её ветки
+waterfox-tabs-tree-propagate-muted-toggle =
+    .label = Отключать звук у дочерних вкладок вместе с родительской
+waterfox-tabs-tree-indent-input =
+    .label = Отступ на уровень (в пикселях)
+    .description = Дополнительное пространство для каждого уровня вложенности, минимум 1 пиксель.
+waterfox-tabs-tree-limit-depth-toggle =
+    .label = Ограничить глубину вложенности вкладок
+    .description = Отключите для неограниченной вложенности.
+waterfox-tabs-tree-max-depth-input =
+    .label = Максимальный уровень вложенности
+    .description = Вкладки верхнего уровня имеют уровень 0. Существующие ветки не перестраиваются.
+waterfox-tree-drop-link-title = Открытие перетащенной ссылки
+waterfox-tree-drop-link-message = Где открыть перетащенную ссылку?
+waterfox-tree-drop-link-load = Загрузить в этой вкладке
+waterfox-tree-drop-link-child = Открыть как дочернюю вкладку
+waterfox-tree-drop-link-remember = Запомнить этот выбор
+waterfox-tree-new-tab-action-button =
+    .label = Выбрать позицию новой вкладки
+    .tooltiptext = Открыть новую вкладку в выбранной позиции дерева
+waterfox-tree-new-tab-independent =
+    .label = Независимая вкладка
+waterfox-tree-new-tab-child =
+    .label = Дочерняя для текущей вкладки
+waterfox-tree-new-tab-sibling =
+    .label = Последняя соседняя с текущей вкладкой
+waterfox-tree-new-tab-next-sibling =
+    .label = Следующая соседняя с текущей вкладкой
+waterfox-tree-group-default-title = Группа
+waterfox-tree-group-title-and-more = { $title } и другие
+waterfox-tree-group-tabs-from = Вкладки из { $title }
+waterfox-tree-group-temporary-label = Закрывать эту группу, когда в ней не останется вкладок
+waterfox-tree-group-temporary-aggressive-label = Закрывать эту группу, когда в ней останется одна вкладка
