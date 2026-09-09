@@ -568,3 +568,5 @@ waterfox-opt-player-click-to-play =
     .description = Додає стилізацію при наведенні та курсор у формі руки до наявного накладання.
 waterfox-opt-player-animate =
     .label = Анімувати елементи керування
+waterfox-opt-tab-unloaded-grayscale =
+    .label = Зробити іконки вивантажених вкладок у відтінках сірого
