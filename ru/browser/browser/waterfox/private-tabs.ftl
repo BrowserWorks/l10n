@@ -4,23 +4,20 @@
 
 open-all-private =
     .label = Открыть всё в приватных вкладках
-
 open-all-links-private =
     .label = Открыть все ссылки в приватных вкладках
-
 open-private-tab =
     .label = Открыть в новой приватной вкладке
-
 new-private-tab =
     .label = Новая приватная вкладка
     .tooltiptext = Открыть новую приватную вкладку
-
 open-link-private =
     .label = Открыть ссылку в новой приватной вкладке
-
 private-tab =
     .label =
         { $isPrivate ->
             [true] Сделать обычной вкладкой
            *[false] Сделать приватной вкладкой
         }
+waterfox-tabs-private-new-tab-button-toggle =
+    .label = Показывать кнопку приватной вкладки рядом с кнопкой новой вкладки
