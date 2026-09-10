@@ -4,14 +4,14 @@
 
 status-bar =
     .label = Строка состояния
-
 statusbar-enabled =
     .label = Показывать строку состояния
-
 statusbar-show-links =
     .label = Показывать ссылки
-
 statusbar-contrast-text =
     .label = Контрастный цвет текста строки состояния
-
 statusbar-header = Строка состояния
+waterfox-status-bar-toolbar =
+    .toolbarname = Строка состояния
+waterfox-status-bar-text =
+    .label = Текст строки состояния
