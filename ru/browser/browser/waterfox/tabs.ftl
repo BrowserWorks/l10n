@@ -3,80 +3,115 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 restart-prompt-title = Перезапуск { -brand-short-name }
-
 restart-prompt-question = Вы уверены, что хотите перезапустить { -brand-short-name }?
-
 appmenuitem-restart-browser =
     .label = Перезапуск
-
 copy-tab-link =
     .label = Скопировать ссылку вкладки
-
 copy-all-urls =
     .label = Скопировать все ссылки вкладок
-
 unload-tab =
     .label = Выгрузить вкладку
-
 tab-position-header = Расположение панели вкладок
-
 tab-bar-top-above =
     .label = Наверху над адресной строкой
-
 tab-bar-top-below =
     .label = Наверху под адресной строкой
-
 tab-bar-bottom-above =
     .label = Внизу над строкой состояния
-
 tab-bar-bottom-below =
     .label = Внизу под строкой состояния
-
 tab-additional-header = Дополнительные настройки вкладок
-
 pinned-icon-only =
     .label = Сжать закреплённые вкладки для отображения только значка сайта
-
 insert-after-current =
     .label = Вставить новую вкладку после текущей
-
 insert-related-after-current =
     .label = Вставить связанную новую вкладку после текущей
-
 restart-header = Пункт меню перезапуска
-
 restart-show-button =
     .label = Показывать кнопку перезапуска в PanelUI
-
 restart-purge-cache =
     .label = Очистить кэш быстрого перезапуска при перезагрузке браузера
-
 restart-require-confirmation =
     .label = Спрашивать разрешение на перезапуск
-
 tab-feature-header = Контекстное меню вкладки
-
 show-duplicate-tab =
     .label = Показывать пункт меню "Дублировать вкладку"
-
 show-copy-url =
     .label = Показывать пункт меню "Скопировать ссылку вкладки"
-
 enable-copy-active-tab =
     .label = Копировать URL только из активной вкладки
-
 show-copy-all-urls =
     .label = Показывать пункт меню "Скопировать все ссылки вкладок"
-
 show-unload-tab =
     .label = Показывать пункт меню "Выгрузить вкладку"
-
 bookmarks-bar-position-header = Расположение панели закладок
-
 bookmarks-position-top =
     .label = Наверху
-
 bookmarks-position-bottom =
     .label = Внизу
-
 tabbrowser-confirm-session-restore-checkbox = Открыть предыдущие окна и вкладки
+waterfox-tabs-group =
+    .label = Вкладки Waterfox
+    .description = Расположение панелей вкладок и закладок, дополнительные пункты меню и автоматическая группировка вкладок.
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Не закрывать окно при закрытии последней вкладки
+    .accesskey = п
+waterfox-tabs-position-heading =
+    .label = Расположение панелей
+waterfox-tabs-tab-bar-position-select =
+    .label = Расположение панели вкладок
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Над панелью навигации
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Под панелью навигации
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = Внизу, над строкой состояния
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = Внизу, под строкой состояния
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Расположение панели закладок
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Сверху
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Снизу
+waterfox-tabs-menu-heading =
+    .label = Контекстное меню вкладки
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Показывать пункт «Дублировать вкладку»
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Показывать пункт «Копировать URL вкладки»
+waterfox-tabs-copy-active-url-toggle =
+    .label = Копировать URL активной вкладки вместо той, по которой щёлкнули
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Показывать пункт «Копировать все URL вкладок»
+waterfox-tabs-restart-heading =
+    .label = Перезапуск
+waterfox-tabs-restart-menu-toggle =
+    .label = Показывать пункт перезапуска в меню
+waterfox-tabs-restart-confirm-toggle =
+    .label = Запрашивать подтверждение перед перезапуском
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Очищать кэш запуска при перезапуске
+waterfox-tabs-display-heading =
+    .label = Отображение вкладок
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Сжимать закреплённые вкладки до значка сайта
+waterfox-tabs-italicize-unread-toggle =
+    .label = Выделять курсивом непрочитанные вкладки
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Скрыть кнопку закрытия на вкладках
+waterfox-tabs-grouping-heading =
+    .label = Автоматическая группировка вкладок
+waterfox-tabs-auto-group-toggle =
+    .label = Группировать новые вкладки с открывшей их вкладкой
+waterfox-tabs-auto-group-placement-select =
+    .label = Куда добавлять новые вкладки в группе
+waterfox-tabs-auto-group-placement-option-after =
+    .label = После открывшей их вкладки
+waterfox-tabs-auto-group-placement-option-first =
+    .label = В начало группы
+waterfox-tabs-auto-group-placement-option-last =
+    .label = В конец группы
+waterfox-copy-url-notification = URL скопирован
