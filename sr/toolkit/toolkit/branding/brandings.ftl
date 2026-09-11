@@ -105,12 +105,12 @@
     .declinable = true
 -screenshots-brand-name =
     { $case ->
-        [gen] BrowserWorks Screenshots-а
-        [dat] BrowserWorks Screenshots-у
-        [acc] BrowserWorks Screenshots
-        [ins] BrowserWorks Screenshots-ом
-        [loc] BrowserWorks Screenshots-у
-       *[nom] BrowserWorks Screenshots
+        [gen] Waterfox Screenshots-а
+        [dat] Waterfox Screenshots-у
+        [acc] Waterfox Screenshots
+        [ins] Waterfox Screenshots-ом
+        [loc] Waterfox Screenshots-у
+       *[nom] Waterfox Screenshots
     }
     .gender = masculine
     .declinable = true
