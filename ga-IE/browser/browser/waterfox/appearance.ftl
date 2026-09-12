@@ -568,3 +568,5 @@ waterfox-opt-player-click-to-play =
     .description = Cuireann sé stíliú luiche agus cúrsóir pointeora leis an bhforleagan atá ann cheana féin.
 waterfox-opt-player-animate =
     .label = Beochan na rialuithe
+waterfox-opt-tab-unloaded-grayscale =
+    .label = Déan deargán liathscála de dheilbhíní cluaisíní nach bhfuil luchtaithe
