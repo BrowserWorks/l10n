@@ -113,3 +113,5 @@ waterfox-copy-url-notification = URL cóipeáilte
 waterfox-tabs-keep-window-open-with-last-tab =
     .label = Coinnigh an fhuinneog ar oscailt agus an cluaisín deireanach á dhúnadh
     .accesskey = l
+waterfox-tabs-italicize-unread-toggle =
+    .label = Cuir cló iodálach ar chluaisíní neamhléite
