@@ -570,3 +570,5 @@ waterfox-opt-player-animate =
     .label = Анімувати елементи керування
 waterfox-opt-tab-unloaded-grayscale =
     .label = Зробити іконки вивантажених вкладок у відтінках сірого
+waterfox-opt-tab-prevent-audio-widening =
+    .label = Запобігати розширенню горизонтальних вкладок через індикатори відтворення аудіо
