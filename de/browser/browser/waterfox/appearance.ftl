@@ -570,3 +570,5 @@ waterfox-opt-player-animate =
     .label = Steuerelemente animieren
 waterfox-opt-tab-unloaded-grayscale =
     .label = Leere Tab-Symbole in Graustufen darstellen
+waterfox-opt-tab-prevent-audio-widening =
+    .label = Verhindern, dass Audioanzeigen horizontale Tabs verbreitern
