@@ -190,10 +190,10 @@ main-context-menu-media-pause =
 
 main-context-menu-media-mute =
     .label = Muet
-    .accesskey = u
+    .accesskey = M
 main-context-menu-media-unmute =
     .label = Audible
-    .accesskey = u
+    .accesskey = b
 main-context-menu-media-play-speed-2 =
     .label = Vitesse
     .accesskey = V

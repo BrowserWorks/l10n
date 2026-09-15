@@ -358,6 +358,9 @@ waterfox-opt-tabbar-heading =
 waterfox-opt-tabbar-fill-width =
     .label = Stretch tabs to fill the width
 
+waterfox-opt-tab-prevent-audio-widening =
+    .label = Prevent audio indicators from widening horizontal tabs
+
 waterfox-opt-tabbar-as-titlebar =
     .label = Show only the current tab in the title bar
 
