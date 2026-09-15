@@ -57,59 +57,27 @@ python3 tools/validate_locale_layout.py
 
 Locale directories are developer-controlled. `tools/allowed-locales.txt` defines their case-sensitive canonical names. Create new supported locales and files deliberately in Git, updating the list when adding a locale; do not generate them automatically in Weblate. Zero-byte Fluent (`.ftl`) files are forbidden. English source strings and translation units are managed in Git.
 
-The `Locale layout` CI check validates repository layout, not translation quality. Protect `main` with `Locale layout` as a required check.
+The `Locale layout` CI check validates repository layout, not translation quality. It runs on pull requests and pushes, but is not a required check for pushing to `main`. Keep force-push and branch-deletion protection enabled.
 
 ## Maintainer Pushes Without a Pull Request
 
-Maintainers with push access can update `main` directly, but the required **Locale layout** check must pass on the exact commit being pushed. This also applies to administrators. Keep branch protection enabled: first push to a `maintenance/**` branch, let CI validate it, then fast-forward `main` to that same commit.
+Maintainers with push access can update `main` directly without a maintenance branch or a successful CI run beforehand. CI still validates the commit after it is pushed.
 
-Run the following commands from this repository's root (`waterfox/browser/locales` inside the browser checkout). Commit your changes and ensure the working tree is clean before starting. Use your own maintenance branch name if `maintenance/direct-l10n` is already in use.
+Run the following commands from this repository's root (`waterfox/browser/locales` inside the browser checkout). Commit your changes and ensure the working tree is clean before starting:
 
-1. Fetch the latest `main` and confirm your commit includes it:
+```sh
+git fetch origin
+git merge-base --is-ancestor origin/main HEAD
+python3 tools/validate_locale_layout.py
+```
 
-   ```sh
-   git fetch origin
-   git merge-base --is-ancestor origin/main HEAD
-   python3 tools/validate_locale_layout.py
-   ```
+Stop if either check fails. If `main` has advanced, rebase your unpublished commits onto `origin/main`, resolve any conflicts, and validate again. Then push without force:
 
-   Stop if either check fails. If `main` has advanced, rebase your unpublished commits onto `origin/main`, resolve any conflicts, and validate again.
+```sh
+git push origin HEAD:main
+```
 
-2. Push the commit to a maintenance branch, without force:
-
-   ```sh
-   git push origin HEAD:refs/heads/maintenance/direct-l10n
-   ```
-
-3. Find the workflow run for your commit:
-
-   ```sh
-   git rev-parse HEAD
-   gh run list --repo BrowserWorks/l10n --workflow locale-layout.yml \
-     --branch maintenance/direct-l10n --event push \
-     --json databaseId,headSha,status,conclusion,url
-   ```
-
-   Match `headSha` to the output of `git rev-parse HEAD`. Workflow creation can take a few seconds. Replace `RUN_ID` below with that run's `databaseId`, and wait for success:
-
-   ```sh
-   gh run watch RUN_ID --repo BrowserWorks/l10n --exit-status
-   ```
-
-4. After the check passes, verify that `main` has not advanced beyond your commit and publish it:
-
-   ```sh
-   git fetch origin
-   git merge-base --is-ancestor origin/main HEAD && git push origin HEAD:main
-   ```
-
-   Do not amend, squash, or rebase between the successful check and this push: doing so changes the commit SHA and requires another maintenance-branch CI run. If the ancestry check or push fails because `main` advanced, rebase onto the new `origin/main` and repeat validation and CI using a fresh maintenance branch. Do not force-push `main` or disable its required check.
-
-5. After the push succeeds, remove your temporary branch:
-
-   ```sh
-   git push origin --delete maintenance/direct-l10n
-   ```
+If another push advances `main` before yours, integrate those changes and retry. Do not force-push `main`.
 
 Finally, from the **browser repository root**, stage the new submodule pointer:
 
@@ -123,7 +91,9 @@ Commit or fixup/autosquash that pointer according to the browser patch-stack wor
 
 Maintain the following configuration:
 
-- `appearance` is the sole repository-owning component; the other 13 canonical components link to `weblate://waterfox/appearance`.
+- `appearance` is the sole repository-owning component; the other 14 canonical components, including `feeds`, link to `weblate://waterfox/appearance`.
+- On `appearance`, use the `Git` backend, `main` as the branch, and `git@github.com:BrowserWorks/l10n.git` as both the repository and push URL. Leave the push branch empty, enable push on commit, and use merge rather than rebase to preserve translation history.
+- Give Hosted Weblate's `weblate` GitHub user write access to this repository. Do not require a successful CI check before accepting its pushes to `main`.
 - Use one component per translation file. Back up history and metadata before retiring duplicate components.
 - Set `new_lang` to `none` and restrict the language filter to the canonical locale list.
 - Disable source editing and translation-unit management (`edit_template` and `manage_units` set to `false`).
