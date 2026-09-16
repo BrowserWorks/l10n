@@ -570,3 +570,5 @@ waterfox-opt-player-animate =
     .label = Beochan na rialuithe
 waterfox-opt-tab-unloaded-grayscale =
     .label = Déan deargán liathscála de dheilbhíní cluaisíní nach bhfuil luchtaithe
+waterfox-opt-tab-prevent-audio-widening =
+    .label = Cosc a chur ar thábanna cothrománacha leathnú de bharr táscairí fuaime
