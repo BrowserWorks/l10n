@@ -1,3 +1,80 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+feeds-page-title = Live-Lesezeichen
+feeds-page-description = RSS- und Atom-Feeds mit Live-Lesezeichen abonnieren.
+feeds-private-notice = Das Abonnieren, Entfernen, Neuladen und Importieren von Feeds ist im privaten Modus deaktiviert. Sie können jedoch weiterhin zwischengespeicherte Elemente anzeigen oder Ihre Abonnements exportieren.
+feeds-subscribe-heading = Einen Feed abonnieren
+feeds-url-label = Feed-URL
+feeds-title-label = Titel (optional)
+feeds-subscribe-note = Abonnements werden auf diesem Gerät im Lesezeichen-Menü separat von der Synchronisierung gespeichert. Die Feeds werden im Hintergrund aktualisiert, ohne dass Cookies oder Anmeldedaten an den Feed-Server gesendet werden.
+feeds-subscribe-button = Abonnieren
+    .label = Abonnieren
+    .accesskey = A
+feeds-subscribe-title =
+    .value = Name
+    .accesskey = N
+feeds-subscribe-url =
+    .value = Feed-URL
+    .accesskey = U
+feeds-subscribe-folder =
+    .value = Speichern in
+    .accesskey = i
+feeds-subscribe-choose-folder =
+    .label = Anderen Ordner auswählen…
+feeds-subscribe-untitled-folder =
+    .label = Unbenannter Ordner
+feeds-subscribe-cancel =
+    .label = Abbrechen
+    .accesskey = b
+feeds-subscribe-private = Feed-Abonnements können in einem privaten Fenster nicht geändert werden.
+feeds-subscribe-busy = Wird abonniert… Das Schließen dieses Fensters führt nicht zur Kündigung des Abonnements.
+feeds-subscribe-invalid-url = Geben Sie eine HTTP- oder HTTPS-Feed-URL ohne Benutzernamen oder Passwort ein, die maximal 4096 Zeichen lang ist.
+feeds-subscribe-invalid-title = Der Name darf maximal 1024 Zeichen lang sein.
+feeds-subscribe-folder-error = Wählen Sie einen vorhandenen Lesezeichenordner aus und versuchen Sie es erneut.
+feeds-subscribe-error = Dieser Feed konnte nicht abonniert werden. Überprüfen Sie die Feed-URL und den Zielordner und versuchen Sie es dann erneut.
+feeds-subscribe-setup-error = Das Abonnement-Panel konnte nicht geladen werden. Schließen Sie es und versuchen Sie es erneut.
+feeds-subscriptions-heading = Ihre Abonnements
+feeds-import-button = OPML importieren…
+feeds-export-button = OPML exportieren…
+feeds-empty = Es gibt noch keine Feed-Abonnements.
+feeds-preview-button = Vorschau
+    .aria-label = Vorschau{ $title }
+feeds-reload-button = Neu laden
+    .aria-label = Neu laden{ $title }
+feeds-remove-button = Entfernen
+    .aria-label = Entfernen{ $title }
+feeds-preview-heading = Feed-Vorschau
+feeds-opml-file-filter = OPML-Dateien
+feeds-export-filename = feeds.opml
+feeds-import-picker-title = Feed-Abonnements importieren
+feeds-export-picker-title = Feed-Abonnements exportieren
+feeds-status-loading = Abonnements werden geladen…
+feeds-status-working = Wird bearbeitet…
+feeds-status-ready = Abonnements wurden geladen.
+feeds-status-subscribed = Feed abonniert.
+feeds-preview-note = Es werden nur zwischengespeicherte Titel und Links angezeigt, maximal 200 Einträge. Artikel-Links werden in einem neuen Tab geöffnet.
+feeds-preview-empty = Es sind keine Elemente im Cache gespeichert. Laden Sie dieses Abonnement in einem nicht privaten Fenster neu, um die neuesten Elemente abzurufen.
+feeds-item-untitled = Unbenannter Eintrag
+feeds-status-removed = Abonnement gekündigt.
+feeds-status-reloaded = Feed wurde neu geladen.
+feeds-status-preview = Es werden zwischengespeicherte Elemente angezeigt.
+feeds-status-canceled = Vorgang abgebrochen.
+feeds-status-exported = Abonnements exportiert.
+feeds-status-imported =
+    { $count ->
+        [one] Ein Abonnement wurde importiert.
+       *[other] { $count } Abonnements wurden importiert.
+    }
+feeds-error-unavailable = Die Feed-Verwaltung ist auf dieser Seite nicht verfügbar. Öffnen Sie „about:feeds“ in einem neuen Tab.
+feeds-error-private = Öffnen Sie diese Seite in einem nicht privaten Fenster, um Abonnements zu ändern oder Feeds neu zu laden.
+feeds-error-invalid-request = Die Feed-Anfrage war ungültig.
+feeds-error-invalid-url = Geben Sie eine gültige HTTP- oder HTTPS-Feed-URL ohne Benutzernamen oder Passwort ein.
+feeds-error-busy = Derzeit läuft ein weiterer Feed-Vorgang. Versuchen Sie es erneut, sobald dieser abgeschlossen ist.
+feeds-error-not-found = Dieses Abonnement existiert nicht mehr.
+feeds-error-operation = Der Feed-Vorgang konnte nicht abgeschlossen werden. Überprüfen Sie die Feed-Adresse und die Verbindung. Ein Ordner mit gespeicherten Lesezeichen kann hier nicht entfernt werden.
+feeds-error-not-active = Wählen Sie diesen Tab aus, bevor Sie die Dateiauswahl öffnen.
+feeds-error-invalid-opml = Wählen Sie eine gültige UTF-8-OPML-Datei ohne DTD- oder Entitätsdeklarationen aus.
+feeds-error-file-too-large = Wählen Sie eine OPML-Datei aus, die nicht größer als 2 MiB ist.
+feeds-page-action = Feeds auf dieser Seite abonnieren
