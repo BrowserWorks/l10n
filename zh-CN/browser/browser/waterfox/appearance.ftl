@@ -143,3 +143,7 @@ waterfox-appearance-theme-mode-option-system =
     .label = 系统主题
 waterfox-appearance-theme-mode-option-light =
     .label = 明亮
+waterfox-density-touch =
+    .label = 触摸
+waterfox-appearance-theme-color-option-sun =
+    .label = 太阳
