@@ -147,3 +147,7 @@ waterfox-density-touch =
     .label = 触摸
 waterfox-appearance-theme-color-option-sun =
     .label = 太阳
+waterfox-appearance-theme-color-option-default =
+    .label = 默认
+waterfox-appearance-theme-mode-picker =
+    .label = 主题模式
