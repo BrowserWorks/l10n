@@ -21,3 +21,11 @@ waterfox-search-click-selects-all-toggle =
 
 waterfox-search-double-click-selects-all-toggle =
     .label = Select all text when double-clicking the address bar or search bar
+
+waterfox-search-suggestions-proxy-option =
+    .label = Route search terms through the Waterfox privacy proxy
+    .description = When off, suggestions are fetched directly from the search engine.
+
+waterfox-search-disable-ai-option =
+    .label = Disable AI features in search results
+    .description = Opts out of AI features in engines that allow disabling them.
