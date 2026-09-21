@@ -142,6 +142,6 @@ feeds-entry-visited =
 #   $title (String) - The feed entry's title.
 #   $url (String) - The feed entry's web address.
 feeds-entry-unvisited =
-    .label = { $title } (not visited)
+    .label = { $title }
     .aria-label = { $title } (not visited)
     .tooltiptext = { $url } (not visited)
