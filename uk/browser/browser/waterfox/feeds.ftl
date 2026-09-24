@@ -115,6 +115,6 @@ feeds-entry-visited =
     .aria-label = { $title } (відвідано)
     .tooltiptext = { $url } (відвідано)
 feeds-entry-unvisited =
-    .label = { $title } (не відвідано)
+    .label = { $title }
     .aria-label = { $title } (не відвідано)
     .tooltiptext = { $url } (не відвідано)
