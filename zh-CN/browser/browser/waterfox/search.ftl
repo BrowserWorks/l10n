@@ -6,3 +6,5 @@ waterfox-urlbar-group-suggestions =
     .label = 建议
 waterfox-search-address-bar-behavior-heading =
     .label = 地址栏行为
+waterfox-search-click-selects-all-toggle =
+    .label = 点击地址栏或搜索栏时，选择所有文字
