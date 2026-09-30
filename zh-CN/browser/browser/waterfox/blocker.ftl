@@ -193,3 +193,43 @@ waterfox-blocker-panel-allowlist-count =
 waterfox-blocker-panel-footer-settings = 设置
 waterfox-blocker-panel-back =
     .aria-label = 返回
+waterfox-blocker-panel-detail-title = 对此页面进行拦截
+waterfox-blocker-panel-detail-section-ads = 广告
+waterfox-blocker-panel-detail-section-trackers = 跟踪器
+waterfox-blocker-panel-detail-section-popups = 弹窗
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } 个弹窗已被自动拦截。
+       *[other] { $count } 个弹窗已被自动拦截。
+    }
+waterfox-blocker-panel-allow-domain = 允许
+    .aria-label = 允许{ $domain }
+waterfox-blocker-panel-domain-count = { $count }个
+pane-waterfox-blocker-title = 广告拦截
+    .title = { pane-waterfox-blocker-title }
+waterfox-blocker-pane-header =
+    .heading = 广告拦截
+waterfox-blocker-group =
+    .label = 广告拦截
+    .description = 拦截广告、跟踪器脚本以及其他无用请求，已加快页面加载并减少造成分心。
+waterfox-blocker-enabled-toggle =
+    .label = 拦截广告与跟踪器
+    .description = 感觉对页面加载造成轻度影响的广告与跟踪器。
+waterfox-blocker-extension-notice =
+    .message = { $extensionName }也在拦截广告。运行两个广告拦截器可能会造成问题。
+waterfox-blocker-partner-select =
+    .label = 搜索引擎合作伙伴广告
+    .description = Waterfox属于自由、开源、独立的项目。允许展示搜索引擎合作伙伴页面的广告属于Waterfox开发和基础设施的资助方式。您可以随时关闭这个选项，但是最容易支持此项目的方法是保持这个选项打开。
+waterfox-blocker-lists-group =
+    .label = 过滤列表
+waterfox-blocker-manage-lists-button =
+    .label = 管理过滤列表
+waterfox-blocker-custom-lists-button =
+    .label = 自定义过滤列表
+waterfox-blocker-my-filters-button =
+    .label = 我的过滤器
+waterfox-blocker-exceptions-group =
+    .label = 例外
+waterfox-blocker-exceptions-button =
+    .label = 管理例外列表
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> 次拦截记录 · 已节省 { $size } 流量
