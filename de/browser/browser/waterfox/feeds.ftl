@@ -157,3 +157,121 @@ feeds-display-cards = Kartenansicht
 feeds-back = Zurück
 feeds-previous = Vorherige
 feeds-clear-search = Suche löschen
+feeds-subscribe-preview-invalid = Geben Sie eine gültige Feed-URL ein, um eine Vorschau der Überschriften anzuzeigen.
+feeds-subscribe-preview-error = Die neuesten Überschriften konnten nicht geladen werden. Sie können dennoch versuchen, sie zu abonnieren.
+feeds-subscribe-open = In „Meine Feeds“ öffnen
+    .label = In „Meine Feeds“ öffnen
+feeds-subscribe-undo-error = Dieses Abonnement konnte nicht aufgehoben werden. Möglicherweise hat es sich geändert oder enthält gespeicherte Lesezeichen.
+feeds-subscribe-removing = Abonnement wird entfernt… Das Schließen dieses Fensters hebt den Löschvorgang nicht auf.
+feeds-subscribe-close = Schließen
+    .label = Schließen
+    .accesskey = S
+feeds-health-idle = Es gibt keine aktuellen Updates. Bitte laden Sie die Seite neu, um nach neuen Einträgen zu suchen.
+feeds-health-error = Dieser Feed konnte nicht aktualisiert werden. Laden Sie die Seite neu, um es erneut zu versuchen.
+feeds-last-updated = Zuletzt geprüft: { DATETIME($date, dateStyle: "medium", timeStyle: "short") }
+feeds-error-preview-expired = Diese Vorschau ist nicht mehr verfügbar. Öffnen Sie erneut die URL des Original-Feeds.
+feeds-reader-load-error = Dieser Artikel konnte nicht angezeigt werden. Gehen Sie zurück und versuchen Sie es erneut, oder wählen Sie „Original öffnen“, um ihn auf der Website zu lesen.
+feeds-error-retry-later = Der Feed-Server hat uns gebeten, zu warten. Versuchen Sie es später noch einmal.
+feeds-error-saved-limit = Sie haben das Limit für gespeicherte Artikel erreicht. Löschen Sie einen gespeicherten Artikel, bevor Sie einen weiteren speichern.
+feeds-add-folder-label = Speichern unter
+feeds-open-feeds = In „Meine Feeds“ öffnen
+feeds-undo = Abonnement beenden
+feeds-manage = Feeds verwalten
+feeds-search-articles = Artikel suchen
+feeds-order-newest = Neueste zuerst
+feeds-order-oldest = Älteste zuerst
+feeds-open-original = Original öffnen
+feeds-mark-read = Als gelesen markieren
+    .title = Als gelesen markieren
+feeds-mark-unread = Als ungelesen markieren
+    .title = Als ungelesen markieren
+feeds-save = Artikel speichern
+    .title = Artikel speichern
+feeds-unsave = Aus den gespeicherten Einträgen entfernen
+    .title = Aus den gespeicherten Einträgen entfernen
+feeds-mark-read-button =
+    .aria-label = Als gelesen markieren
+    .title = Als gelesen markieren
+feeds-mark-unread-button =
+    .aria-label = Als ungelesen markieren
+    .title = Als ungelesen markieren
+feeds-save-button =
+    .aria-label = Artikel speichern
+    .title = Artikel speichern
+feeds-unsave-button =
+    .aria-label = Aus den gespeicherten Einträgen entfernen
+    .title = Aus den gespeicherten Einträgen entfernen
+feeds-summary-notice = Dieser Inhalt wurde über den Feed bereitgestellt. Öffnen Sie den Originalartikel, wenn Sie mehr lesen möchten.
+feeds-no-content = Dieser Feed enthält keinen Artikeltext. Öffnen Sie den Originalartikel, um ihn zu lesen.
+feeds-open-article =
+    .aria-label = { $title } in Waterfox lesen
+feeds-empty-unread = Sie sind auf dem neuesten Stand.
+feeds-empty-saved = Gespeicherte Artikel werden hier angezeigt, sobald Sie sie aus einem Feed speichern.
+feeds-empty-results = Keine passenden Artikel gefunden.
+feeds-show-all = Alle Artikel anzeigen
+feeds-preview-loading = Feed-Vorschau wird geladen…
+feeds-preview-invalid = Dieser Feed konnte nicht in der Vorschau angezeigt werden. Überprüfen Sie die Feed-URL und versuchen Sie es erneut.
+feeds-subscription-exists = Sie haben diesen Feed bereits abonniert.
+feeds-nav =
+    .aria-label = Feed-Navigation
+feeds-filter-label =
+    .aria-label = Artikel-Filter
+feeds-order-label =
+    .aria-label = Artikelreihenfolge
+feeds-display-label =
+    .aria-label = Artikelanzeige
+feeds-article-count =
+    { $count ->
+        [one] Ein Artikel
+       *[other] { $count } Artikel
+    }
+feeds-source-count = { $title } ({ $count })
+feeds-saved-in = Gespeichert in { $folder }
+feeds-show-more = Weitere Artikel anzeigen
+feeds-live-bookmarks-heading = Live-Lesezeichen
+feeds-search-placeholder =
+    .placeholder = Artikel suchen
+feeds-recent-posts = Neueste Beiträge
+feeds-back-to-feeds = Zurück zu den Feeds
+feeds-subscribe-preview-heading = Diesen Feed abonnieren
+feeds-feed-url-heading = Feed-URL
+feeds-visit-website = Website besuchen
+feeds-preview-state-unsubscribed = Feed-Vorschau · nicht abonniert
+feeds-preview-state-subscribed = Feed-Vorschau · abonniert
+feeds-close =
+    .aria-label = Schließen
+feeds-source-button =
+    .aria-label =
+        { $title }, { $count } ungelesen { $count ->
+            [one] Artikel
+           *[other] Artikel
+        }
+feeds-all-scope-button =
+    .aria-label =
+        Alle Feeds, { $count } ungelesen { $count ->
+            [one] Artikel
+           *[other] Artikel
+        }
+feeds-article-date = { DATETIME($date, dateStyle: "long") }
+feeds-today = Heute
+feeds-yesterday = Gestern
+feeds-undated = Weitere Artikel
+feeds-subscribe-rename =
+    .label = Umbenennen
+feeds-subscribed-heading = Abonniert
+feeds-rail-settings = Einstellungen
+feeds-add-dialog-title = Feed hinzufügen
+feeds-reader-save = Speichern
+feeds-reader-saved = Gespeichert
+feeds-back-to-collection = Zurück zu { $title }
+feeds-display-list-button =
+    .aria-label = Listenansicht
+    .title = Listenansicht
+feeds-display-grid-button =
+    .aria-label = Kartenansicht
+    .title = Kartenansicht
+feeds-unread-count =
+    { $count } ungelesene Beiträge in { $feeds } { $feeds ->
+        [one] Feed
+       *[other] Feeds
+    }
