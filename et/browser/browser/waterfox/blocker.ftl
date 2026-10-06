@@ -89,3 +89,16 @@ waterfox-blocker-panel-allowlist-count =
         [one] { $count } veebisait
        *[other] { $count } veebisaiti
     }
+waterfox-blocker-panel-footer-stats = <b data-l10n-name="total">{ $count }</b> päringut on blokeeritud läbi aegade · oled säästnud { $size } andmemahtu
+waterfox-blocker-panel-footer-settings = Seadistused
+waterfox-blocker-panel-back =
+    .aria-label = Tagasi
+waterfox-blocker-panel-detail-title = Blokeeritud sellel lehel
+waterfox-blocker-panel-detail-section-ads = Reklaamid
+waterfox-blocker-panel-detail-section-trackers = Jälitajad
+waterfox-blocker-panel-detail-section-popups = Hüpikaknad
+waterfox-blocker-panel-detail-popup-note =
+    { $count ->
+        [one] { $count } hüpikaken on blokeeritud automaatselt.
+       *[other] { $count } hüpikakent on blokeeritud automaatselt.
+    }
