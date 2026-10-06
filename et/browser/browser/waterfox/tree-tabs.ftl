@@ -36,3 +36,6 @@ waterfox-tabs-tree-heading =
     .label = Puu vahekaardid
 waterfox-tabs-tree-auto-attach-select =
     .label = Ava uued vahekaardid
+waterfox-tree-new-tab-action-button =
+    .label = Vali uue vahekaardi asukoht
+    .tooltiptext = Vali koht, kus kohas kaardipuus uus vahekaart avatakse
