@@ -38,6 +38,12 @@ waterfox-feeds-opening-reader =
 waterfox-feeds-opening-original =
     .label = Open the original article
 
+waterfox-feeds-opening-original-tab =
+    .label = Open the original article in a new tab
+
+waterfox-feeds-opening-original-window =
+    .label = Open the original article in a new window
+
 waterfox-feeds-load-images-toggle =
     .label = Load article images automatically
 
