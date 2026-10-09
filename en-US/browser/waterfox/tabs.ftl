@@ -158,6 +158,10 @@ waterfox-tabs-pinned-icon-only-toggle =
 waterfox-tabs-italicize-unread-toggle =
     .label = Italicize unread tabs
 
+waterfox-tabs-close-by-double-click-toggle =
+    .label = Close tabs with a double-click
+    .description = Tree tabs use their own double-click behavior.
+
 waterfox-tabs-hide-close-buttons-toggle =
     .label = Hide the close button on tabs
 
