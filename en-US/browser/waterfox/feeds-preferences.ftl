@@ -15,6 +15,9 @@ waterfox-feeds-group =
 waterfox-feeds-discovery-toggle =
     .label = Discover feeds on websites
 
+waterfox-feeds-menu-toggle =
+    .label = Show Live Bookmarks in the Bookmarks menu
+
 waterfox-feeds-preview-toggle =
     .label = Preview feed URLs in Waterfox
     .description = When turned off, opening a feed URL shows the original document instead of the feed preview.
