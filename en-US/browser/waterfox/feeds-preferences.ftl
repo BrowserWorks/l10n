@@ -15,6 +15,10 @@ waterfox-feeds-group =
 waterfox-feeds-discovery-toggle =
     .label = Discover feeds on websites
 
+waterfox-feeds-preview-toggle =
+    .label = Preview feed URLs in Waterfox
+    .description = When turned off, opening a feed URL shows the original document instead of the feed preview.
+
 waterfox-feeds-open-link =
     .label = Open Feeds
     .description = Read updates and manage your live bookmark subscriptions.
