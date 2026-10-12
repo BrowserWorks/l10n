@@ -32,3 +32,6 @@ feeds-subscribe-busy = 正在关注… 关闭此面板不会取消关注。
 feeds-subscribe-invalid-url = 输入无用户名、密码HTTP或HTTPS的订阅URL，需要低于4,096个字符。
 feeds-subscribe-invalid-title = 确保订阅名不大于1,024个字符。
 feeds-subscribe-error = 无法关注此订阅。请检查订阅URL与目标文件夹，并重试。
+feeds-subscribe-preview-source = { $title } · { $url }
+feeds-subscribe-folder-error = 请选择一个已有书签文件夹，并重试。
+feeds-subscribe-setup-error = 无法加载订阅面板。请关闭后重试。
