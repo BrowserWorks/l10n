@@ -481,3 +481,6 @@ waterfox-opt-panel-icons-photon =
     .label = Solo elementos principales
 waterfox-opt-panel-icons-full =
     .label = Cada elemento
+waterfox-opt-rounding-heading =
+    .label = Esquinas
+    .description = Eliminar el redondeo de las esquinas de la interfaz.
