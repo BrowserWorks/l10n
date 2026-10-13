@@ -4,23 +4,20 @@
 
 open-all-private =
     .label = Abrir todo en Pestañas Privadas
-
 open-all-links-private =
     .label = Abrir todos los enlaces en pestañas privadas
-
 open-private-tab =
     .label = Abrir en una nueva pestaña privada
-
 new-private-tab =
     .label = Nueva pestaña privada
     .tooltiptext = Abrir una nueva pestaña privada
-
 open-link-private =
     .label = Abrir enlace en nueva pestaña privada
-
 private-tab =
     .label =
         { $isPrivate ->
             [true] Salir de la pestaña privada
            *[false] Hacer pestaña privada
         }
+waterfox-tabs-private-new-tab-button-toggle =
+    .label = Mostrar un botón de pestaña privada junto al botón de nueva pestaña
