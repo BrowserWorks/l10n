@@ -15,3 +15,6 @@ waterfox-home-new-tab-custom-url-input =
 waterfox-home-prefs-content-header =
     .label = 主页
 waterfox-home-prefs-content-header2 = 主页内容
+waterfox-home-prefs-content-description = 选择您想要显示在主页的内容。
+waterfox-home-disabled-notice =
+    .message = 要使用这些功能，请先将新标签页或者新窗口设为主页。
