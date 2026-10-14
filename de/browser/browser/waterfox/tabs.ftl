@@ -115,3 +115,6 @@ waterfox-tabs-keep-window-open-with-last-tab =
     .accesskey = l
 waterfox-tabs-italicize-unread-toggle =
     .label = Ungelesene Tabs kursiv darstellen
+waterfox-tabs-close-by-double-click-toggle =
+    .label = Tabs mit einem Doppelklick schließen
+    .description = Baum-Tabs verfügen über ein eigenes Doppelklick-Verhalten.
