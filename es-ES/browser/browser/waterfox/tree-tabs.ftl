@@ -3,153 +3,228 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 pane-tree-title = Pestañas verticales en árbol
-
 category-tree =
     .tooltiptext = { pane-tree-title }
-
 browser-layout-tree-vertical-tabs =
     .label = Pestañas verticales en árbol
-
 sidebar-tree-vertical-tabs =
     .label = Pestañas verticales en árbol
-
 tree-header = Pestañas verticales en árbol
-
 tree-appearance-header = Apariencia
-
 tree-auto-sticky-header = Pestañas fijadas a los bordes de la barra cuando salen de la vista al desplazarse
-
 tree-faviconize-pinned-tabs =
     .label = Mostrar las pestañas ancladas solo con su icono
     .accesskey = S
-
 tree-sticky-active-tab =
     .label = Pestaña activa
     .accesskey = k
-
 tree-sticky-sharing-tab =
     .label = Pestañas que comparten cámara/micrófono/pantalla
     .accesskey = g
-
 tree-sticky-sound-playing-tab =
     .label = Pestañas con sonido en reproducción
     .accesskey = y
-
 tree-behavior-header = Vista en árbol de las pestañas
-
 tree-auto-collapse-expand-subtree-on-attach =
     .label = Cuando aparece un nuevo árbol, contraer automáticamente los demás
     .accesskey = c
-
 tree-auto-collapse-expand-subtree-on-select =
     .label = Al enfocar una pestaña, expandir su árbol y contraer las demás automáticamente
     .accesskey = x
-
 tree-drop-links-on-tab-behavior-caption =
     .value = Cuando se suelta un enlace o una URL sobre una pestaña
     .accesskey = l
-
 tree-drop-links-on-tab-behavior-ask =
     .label = Preguntarme siempre cómo tratarlo
-
 tree-drop-links-on-tab-behavior-load =
     .label = Cargar en la pestaña
-
 tree-drop-links-on-tab-behavior-newtab =
     .label = Abrir una nueva pestaña hija
-
 tree-successor-tab-control-level-caption =
     .value = Cuando la pestaña actual se cierra siendo la última hija
     .accesskey = h
-
 tree-successor-tab-control-level-in-tree =
     .label = Mover el foco a la pestaña anterior en el árbol
-
 tree-successor-tab-control-level-never =
     .label = Siempre mover el foco a la siguiente pestaña (respetar el control del navegador o de otras extensiones)
-
 tree-successor-tab-control-level-simulate-default =
     .label = Siempre mover el foco a la siguiente pestaña
-
 tree-tree-double-click-behavior-caption =
     .value = Doble clic en una pestaña
     .accesskey = D
-
 tree-tree-double-click-behavior-toggle-close =
     .label = Cerrar pestaña
-
 tree-tree-double-click-behavior-toggle-collapsed =
     .label = Contraer/expandir árbol
-
 tree-tree-double-click-behavior-toggle-none =
     .label = No hacer nada
-
 tree-tree-double-click-behavior-toggle-sticky =
     .label = Fijar a los bordes de la barra de pestañas / Desfijar de los bordes de la barra de pestañas
-
 tree-auto-attach-header = Organización automática del árbol de pestañas
-
 tree-auto-attach-child-end =
     .label = Último hijo de la pestaña principal
-
 tree-auto-attach-child-next-to-last-related-tab =
     .label = Hijo de la pestaña principal, junto al hijo abierto recientemente
-
 tree-auto-attach-child-top =
     .label = Primer hijo de la pestaña principal
-
 tree-auto-attach-independent =
     .label = Pestaña independiente
-
 tree-auto-attach-next-sibling =
     .label = Siguiente hermano de la pestaña principal
-
 tree-auto-attach-no-control =
     .label = (sin control)
-
 tree-auto-attach-sibling =
     .label = Hermano de la pestaña principal
-
 tree-auto-attach-on-any-other-trigger-caption =
     .value = Pestañas desde cualquier otro origen: Abrir como
     .accesskey = t
-
 tree-auto-attach-on-duplicated-caption =
     .value = Duplicar la pestaña como
     .accesskey = u
-
 tree-auto-attach-on-new-tab-button-middle-click-caption =
     .value = Al hacer clic central, abrir nueva pestaña en blanco como
     .accesskey = m
-
 tree-auto-attach-on-new-tab-command-caption =
     .value = Abrir nueva pestaña en blanco como
     .accesskey = n
-
 tree-auto-attach-on-opened-from-external-caption =
     .value = Nueva pestaña desde otras aplicaciones: Abrir como
     .accesskey = A
-
 tree-auto-attach-on-opened-with-owner-caption =
     .value = Cuando una pestaña se abre desde otra existente, abrirla como
     .accesskey = D
-
 tree-auto-attach-same-site-orphan-caption =
     .value = Nueva pestaña con el mismo sitio que la actual desde la barra de direcciones, marcadores, historial u otros: Abrir como
     .accesskey = w
-
 tree-insert-new-tab-from-pinned-tab-at-caption =
     .value = Posición de inserción de nuevas pestañas hijas desde pestañas ancladas (aparecerán como pestañas raíz)
     .accesskey = p
-
 tree-insert-new-tab-from-pinned-tab-at-end =
     .label = Al final del árbol
-
 tree-insert-new-tab-from-pinned-tab-at-next-to-last-related-tab =
     .label = Junto al hijo abierto recientemente o cerca de la pestaña de origen
-
 tree-insert-new-tab-from-pinned-tab-at-no-control =
     .label = Sin control (respetar la decisión del navegador o de otras extensiones)
-
 tree-insert-new-tab-from-pinned-tab-at-top =
     .label = En la parte superior del árbol (cerca de la pestaña de origen)
+waterfox-tree-disclosure-collapse = Contraer árbol de { $tabTitle }
+waterfox-tree-disclosure-expand = Expandir árbol de { $tabTitle }
+waterfox-tab-context-reload-tree =
+    .label = Recargar árbol
+waterfox-tab-context-mute-tree =
+    .label = Silenciar árbol
+waterfox-tab-context-unmute-tree =
+    .label = Activar sonido del árbol
+waterfox-tab-context-unload-tree =
+    .label = Descargar árbol
+waterfox-tab-context-collapse-tree =
+    .label = Contraer árbol
+waterfox-tab-context-collapse-tree-recursively =
+    .label = Contraer árbol recursivamente
+waterfox-tab-context-expand-tree-recursively =
+    .label = Expandir el árbol recursivamente
+waterfox-tab-context-expand-tree =
+    .label = Expandir árbol
+waterfox-tab-context-close-tree =
+    .label = Cerrar árbol
+waterfox-tab-context-close-descendants =
+    .label = Cerrar subpestañas
+waterfox-tab-context-bookmark-tree =
+    .label = Añadir este árbol a marcadores…
+waterfox-tab-context-copy-tree-links =
+    .label = Copiar árbol como enlaces
+waterfox-tab-context-copy-descendants-links =
+    .label = Copiar descendientes como enlaces
+waterfox-tab-context-collapse-all-trees =
+    .label = Contraer todos los árboles
+waterfox-tab-context-expand-all-trees =
+    .label = Expandir todos los árboles
+waterfox-tabs-tree-heading =
+    .label = Pestañas en árbol
+waterfox-tabs-tree-enable-toggle =
+    .label = Mostrar las pestañas como un árbol
+    .description = Las pestañas que abres desde otra pestaña se colocan debajo de ella, para que puedas plegar y mover grupos enteros a la vez. Esto también activa las pestañas verticales.
+waterfox-tabs-tree-auto-attach-select =
+    .label = Abrir pestañas nuevas
+waterfox-tabs-tree-auto-attach-option-root =
+    .label = Por su cuenta
+waterfox-tabs-tree-auto-attach-option-child =
+    .label = Debajo de la pestaña que las abrió
+waterfox-tabs-tree-auto-attach-option-sibling =
+    .label = Junto a la pestaña que las abrió
+waterfox-tabs-tree-auto-collapse-on-select-toggle =
+    .label = Al seleccionar una pestaña, expandir automáticamente su rama y contraer las demás
+waterfox-tabs-tree-auto-collapse-on-attach-toggle =
+    .label = Abrir una rama cuando se une una pestaña nueva
+waterfox-tabs-tree-expand-native-group-toggle =
+    .label = Expandir una rama también expande su grupo de pestañas
+waterfox-tabs-tree-close-parent-select =
+    .label = Cuando cierras una pestaña principal
+waterfox-tabs-tree-close-parent-option-promote-first =
+    .label = Colocar su primera pestaña descendiente en su lugar
+waterfox-tabs-tree-close-parent-option-promote-all =
+    .label = Subir sus subpestañas un nivel
+waterfox-tabs-tree-close-parent-option-detach =
+    .label = Mover sus subpestañas al nivel superior
+waterfox-tabs-tree-propagate-muted-toggle =
+    .label = Silenciar las subpestañas junto con la principal
+waterfox-tabs-tree-close-parent-option-close-all =
+    .label = Cerrar toda la rama
+waterfox-tabs-tree-close-parent-option-group =
+    .label = Reemplazarla por una pestaña de grupo
+waterfox-tabs-tree-successor-toggle =
+    .label = Usar las relaciones del árbol para elegir la siguiente pestaña activa al cerrar una pestaña
+waterfox-tabs-tree-drop-links-select =
+    .label = Al soltar enlaces sobre una pestaña
+waterfox-tabs-tree-drop-links-option-load =
+    .label = Abrir en esa pestaña
+waterfox-tabs-tree-drop-links-option-ask =
+    .label = Preguntar cada vez
+waterfox-tabs-tree-drop-links-option-child =
+    .label = Abrir como pestañas hijas
+waterfox-tabs-tree-double-click-select =
+    .label = Al hacer doble clic en una pestaña
+waterfox-tabs-tree-double-click-option-toggle =
+    .label = Pliega o abre su rama
+waterfox-tabs-tree-double-click-option-close =
+    .label = Cierra su rama
+waterfox-tabs-tree-double-click-option-none =
+    .label = No hace nada
+waterfox-tabs-tree-auto-group-pinned-toggle =
+    .label = Agrupar las pestañas abiertas desde la misma pestaña fijada
+waterfox-tabs-tree-bookmark-restore-toggle =
+    .label = Restaurar la estructura de árbol al abrir carpetas de marcadores
+waterfox-tabs-tree-bookmark-group-toggle =
+    .label = Agrupar varios árboles abiertos desde una carpeta de marcadores
+waterfox-tabs-tree-sticky-active-toggle =
+    .label = Mantener la pestaña actual a la vista cuando su rama se pliega
+waterfox-tabs-tree-indent-input =
+    .label = Sangría por nivel (píxeles)
+    .description = Espacio añadido por cada nivel de anidamiento, al menos 1 píxel.
+waterfox-tabs-tree-limit-depth-toggle =
+    .label = Limitar la profundidad de anidamiento de las pestañas
+    .description = Desactívalo para un anidamiento ilimitado.
+waterfox-tabs-tree-max-depth-input =
+    .label = Maximum nesting level
+    .description = Las pestañas de nivel superior son el nivel 0. Las ramas existentes no se reorganizan.
+waterfox-tree-drop-link-title = Abrir enlace soltado
+waterfox-tree-drop-link-message = ¿Dónde debería abrirse el enlace soltado?
+waterfox-tree-drop-link-load = Cargar en esta pestaña
+waterfox-tree-drop-link-child = Abrir como pestaña hija
+waterfox-tree-drop-link-remember = Recordar esta elección
+waterfox-tree-new-tab-action-button =
+    .label = Elegir la posición de la nueva pestaña
+    .tooltiptext = Abrir una nueva pestaña en una posición concreta del árbol
+waterfox-tree-new-tab-independent =
+    .label = Pestaña independiente
+waterfox-tree-new-tab-child =
+    .label = Hija de la pestaña actual
+waterfox-tree-new-tab-sibling =
+    .label = Última hermana de la pestaña actual
+waterfox-tree-new-tab-next-sibling =
+    .label = Siguiente hermana de la pestaña actual
+waterfox-tree-group-default-title = Grupo
+waterfox-tree-group-title-and-more = { $title } y más
+waterfox-tree-group-tabs-from = Pestañas de { $title }
+waterfox-tree-group-temporary-label = Cerrar este grupo cuando no tenga pestañas
+waterfox-tree-group-temporary-aggressive-label = Cerrar este grupo cuando quede una pestaña

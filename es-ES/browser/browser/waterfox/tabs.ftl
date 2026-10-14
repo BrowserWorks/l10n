@@ -3,80 +3,118 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 restart-prompt-title = Reiniciar { -brand-short-name }
-
 restart-prompt-question = ¿Está seguro que desea reiniciar { -brand-short-name }?
-
 appmenuitem-restart-browser =
     .label = Reiniciar
-
 copy-tab-link =
     .label = Copiar enlace pestaña
-
 copy-all-urls =
     .label = Copiar todos los enlaces a la pestaña
-
 unload-tab =
     .label = Descargar pestaña
-
 tab-position-header = Posición de la barra de pestaña
-
 tab-bar-top-above =
     .label = Arriba, encima de la barra de direcciones
-
 tab-bar-top-below =
     .label = Arriba, debajo de la barra de direcciones
-
 tab-bar-bottom-above =
     .label = Abajo, encima de la barra de estado
-
 tab-bar-bottom-below =
     .label = Abajo, debajo de la barra de estado
-
 tab-additional-header = Preferencias adicionales de Tab
-
 pinned-icon-only =
     .label = Contraer pestañas fijadas para mostrar sólo el icono del sitio
-
 insert-after-current =
     .label = Insertar nueva pestaña después de la pestaña actual
-
 insert-related-after-current =
     .label = Insertar nueva pestaña relacionada después de la pestaña actual
-
 restart-header = Reiniciar elemento de menú
-
 restart-show-button =
     .label = Mostrar botón de reiniciar en PanelUI
-
 restart-purge-cache =
     .label = Borrar caché de reinicio rápido al reiniciar el navegador
-
 restart-require-confirmation =
     .label = Requiere confirmación de reinicio
-
 tab-feature-header = Tab Context Menu
-
 show-duplicate-tab =
     .label = Mostrar la opción «Duplicar pestaña»
-
 show-copy-url =
     .label = Mostrar elemento del menú de la pestaña de copia
-
 enable-copy-active-tab =
     .label = Copiar URL sólo desde la pestaña activa
-
 show-copy-all-urls =
     .label = Mostrar copia de todas las urls de la pestaña
-
 show-unload-tab =
     .label = Mostrar elemento de menú de pestaña de descarga
-
 bookmarks-bar-position-header = Posición de la barra de marcadores
-
 bookmarks-position-top =
     .label = Subir
-
 bookmarks-position-bottom =
     .label = Abajo
-
 tabbrowser-confirm-session-restore-checkbox = Abrir las ventanas y pestañas anteriores
+waterfox-tabs-group =
+    .label = Pestañas de Waterfox
+    .description = Dónde se sitúan las barras de pestañas y marcadores, las entradas adicionales del menú y la agrupación automática de pestañas.
+waterfox-tabs-keep-window-open-with-last-tab =
+    .label = Mantener la ventana abierta al cerrar la última pestaña
+    .accesskey = l
+waterfox-tabs-position-heading =
+    .label = Posiciones de las barras de herramientas
+waterfox-tabs-tab-bar-position-select =
+    .label = Posición de la barra de pestañas
+waterfox-tabs-tab-bar-option-top-above =
+    .label = Encima de la barra de navegación
+waterfox-tabs-tab-bar-option-top-below =
+    .label = Debajo de la barra de navegación
+waterfox-tabs-tab-bar-option-bottom-above =
+    .label = Abajo, encima de la barra de estado
+waterfox-tabs-tab-bar-option-bottom-below =
+    .label = Abajo, debajo de la barra de estado
+waterfox-tabs-bookmarks-bar-position-select =
+    .label = Posición de la barra de marcadores
+waterfox-tabs-bookmarks-bar-option-top =
+    .label = Arriba
+waterfox-tabs-bookmarks-bar-option-bottom =
+    .label = Abajo
+waterfox-tabs-menu-heading =
+    .label = Menú contextual de la pestaña
+waterfox-tabs-duplicate-menu-toggle =
+    .label = Mostrar la entrada de duplicar pestaña
+waterfox-tabs-copy-url-menu-toggle =
+    .label = Mostrar la entrada de copiar URL de la pestaña
+waterfox-tabs-copy-active-url-toggle =
+    .label = Copiar la URL de la pestaña activa en lugar de la pestaña en la que se ha hecho clic
+waterfox-tabs-copy-all-urls-menu-toggle =
+    .label = Mostrar la entrada de copiar todas las URL de las pestañas
+waterfox-tabs-restart-heading =
+    .label = Reinicio
+waterfox-tabs-restart-menu-toggle =
+    .label = Mostrar una entrada de reinicio en los menús
+waterfox-tabs-restart-confirm-toggle =
+    .label = Pedir confirmación antes de reiniciar
+waterfox-tabs-restart-clear-cache-toggle =
+    .label = Borrar la caché de inicio al reiniciar
+waterfox-tabs-display-heading =
+    .label = Visualización de pestañas
+waterfox-tabs-pinned-icon-only-toggle =
+    .label = Reducir las pestañas fijadas a solo el icono del sitio
+waterfox-tabs-italicize-unread-toggle =
+    .label = Poner en cursiva las pestañas no leídas
+waterfox-tabs-close-by-double-click-toggle =
+    .label = Cerrar pestañas con doble clic
+    .description = Las pestañas en árbol usan su propio comportamiento de doble clic.
+waterfox-tabs-hide-close-buttons-toggle =
+    .label = Ocultar el botón de cerrar en las pestañas
+waterfox-tabs-grouping-heading =
+    .label = Agrupación automática de pestañas
+waterfox-tabs-auto-group-toggle =
+    .label = Agrupar las pestañas nuevas con la pestaña que las abrió
+waterfox-tabs-auto-group-placement-select =
+    .label = Dónde se unen las pestañas nuevas al grupo
+waterfox-tabs-auto-group-placement-option-after =
+    .label = Después de la pestaña que las abrió
+waterfox-tabs-auto-group-placement-option-first =
+    .label = Al principio del grupo
+waterfox-tabs-auto-group-placement-option-last =
+    .label = Al final del grupo
+waterfox-copy-url-notification = URL copiada
