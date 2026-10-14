@@ -115,3 +115,6 @@ waterfox-tabs-keep-window-open-with-last-tab =
     .accesskey = l
 waterfox-tabs-italicize-unread-toggle =
     .label = Cuir cló iodálach ar chluaisíní neamhléite
+waterfox-tabs-close-by-double-click-toggle =
+    .label = Dún cluaisíní le cliceáil dhúbailte
+    .description = Úsáideann cluaisíní crannacha a n-iompar cliceála dúbailte féin.
