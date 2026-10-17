@@ -115,3 +115,6 @@ waterfox-tabs-keep-window-open-with-last-tab =
     .accesskey = l
 waterfox-tabs-italicize-unread-toggle =
     .label = Писати назви невідвіданих вкладок курсивом
+waterfox-tabs-close-by-double-click-toggle =
+    .label = Закривати вкладки подвійним клацанням
+    .description = Вкладки дерева використовують власну поведінку подвійного клацання.
