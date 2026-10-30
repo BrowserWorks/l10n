@@ -137,3 +137,61 @@ feeds-unsave-button =
     .aria-label = 从保存文章中移除
     .title = 从保存文章中移除
 feeds-back = 返回
+feeds-display-list-button =
+    .aria-label = 列表视图
+    .title = 列表视图
+feeds-display-grid-button =
+    .aria-label = 卡片视图
+    .title = 卡片视图
+feeds-rail-settings = 设置
+feeds-unread-count =
+    总共{ $feeds }，{ $count }篇未读 { $feeds ->
+        [one] 篇订阅
+       *[other] 篇订阅
+    }
+feeds-back-to-collection = 返回到{ $title }
+feeds-reader-save = 保存
+feeds-reader-saved = 已保存
+feeds-close =
+    .aria-label = 关闭
+feeds-today = 今天
+feeds-yesterday = 昨天
+feeds-undated = 其他文章
+feeds-feed-url-heading = 订阅URL
+feeds-rail-feeds = 订阅
+feeds-show-all = 显示所有文章
+feeds-next = 下一文章
+feeds-summary-notice = 此内容是由订阅提供的。如果您想要阅读更多内容，请打开原文查看。
+feeds-no-content = 此订阅不提供文章文本。如果您想要阅读更多内容，请打开原文查看。
+feeds-open-article =
+    .aria-label = 在Waterfox内阅读{ $title }
+feeds-empty-saved = 当您从订阅中保存文章时，保存过的文章将会显示在这里。
+feeds-empty-results = 没有符合搜索词的文章。
+feeds-clear-search = 清除搜索词
+feeds-preview-loading = 正在加载订阅预览…
+feeds-preview-invalid = 无法预览此订阅，请检查订阅URL并重试。
+feeds-subscription-exists = 您已经关注过此订阅了。
+feeds-filter-label =
+    .aria-label = 文章筛选器
+feeds-order-label =
+    .aria-label = 文章顺序
+feeds-display-label =
+    .aria-label = 文章显示
+feeds-article-count =
+    { $count ->
+        [one] 一篇文章
+       *[other] { $count } 篇文章
+    }
+feeds-source-count = { $title }{ $count }
+feeds-saved-in = 保存到{ $folder }
+feeds-show-more = 显示更多文章
+feeds-live-bookmarks-heading = 动态书签
+feeds-search-placeholder =
+    .placeholder = 搜索文章
+feeds-recent-posts = 最近发布
+feeds-back-to-feeds = 返回到订阅
+feeds-subscribe-preview-heading = 关注此订阅
+feeds-visit-website = 访问网站
+feeds-subscribe-rename =
+    .label = 重命名
+feeds-subscribed-heading = 已关注
