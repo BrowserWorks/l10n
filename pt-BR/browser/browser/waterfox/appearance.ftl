@@ -541,3 +541,7 @@ waterfox-opt-player-click-to-play =
     .description = Adicionar estilo ao passar o cursor à sobreposição existente.
 waterfox-opt-player-animate =
     .label = Animar os controles
+proton-style =
+    .label = Estilo Proton
+lepton-style =
+    .label = Estilo Lepton
