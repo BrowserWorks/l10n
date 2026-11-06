@@ -4,14 +4,14 @@
 
 status-bar =
     .label = 状态栏
-
 statusbar-enabled =
     .label = 显示状态栏
-
 statusbar-show-links =
     .label = 显示链接
-
 statusbar-contrast-text =
     .label = 对比状态栏文本颜色
-
 statusbar-header = 状态栏
+waterfox-status-bar-toolbar =
+    .toolbarname = 状态栏
+waterfox-status-bar-text =
+    .label = 状态文本
