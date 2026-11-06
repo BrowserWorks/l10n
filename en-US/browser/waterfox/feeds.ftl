@@ -99,6 +99,7 @@ feeds-status-ready = Subscriptions loaded.
 feeds-status-subscribed = Subscribed to the feed.
 feeds-status-removed = Subscription removed.
 feeds-status-reloaded = Feed reloaded.
+feeds-status-reloaded-all = Feeds updated.
 feeds-status-preview = Showing saved feed content.
 feeds-status-direct-preview = Showing feed preview.
 
@@ -110,6 +111,16 @@ feeds-error-invalid-request = The feed request was not valid.
 feeds-error-invalid-url = Enter a valid HTTP or HTTPS feed URL without a username or password.
 feeds-error-busy = Another feed operation is in progress. Try again when it finishes.
 feeds-error-retry-later = The feed server asked us to wait. Try reloading later.
+# Variables:
+#   $limit (Number) - The maximum number of feed subscriptions.
+feeds-error-subscription-limit = You can subscribe to at most { $limit } feeds. Remove a subscription before adding another.
+# Variables:
+#   $count (Number) - The number of subscriptions that failed to update.
+feeds-error-refresh-all =
+    { $count ->
+        [one] One feed couldn’t be updated. Cached articles are still available. Try again later.
+       *[other] { $count } feeds couldn’t be updated. Cached articles are still available. Try again later.
+    }
 feeds-error-saved-limit = You have reached the saved article limit. Remove a saved article before saving another.
 feeds-error-not-found = This subscription no longer exists.
 feeds-error-operation = The feed operation could not be completed. Check the feed address and connection. A folder containing saved bookmarks cannot be removed here.
@@ -169,6 +180,8 @@ feeds-entry-unvisited =
 feeds-all = All feeds
 feeds-saved = Saved
 feeds-add = Add feed
+feeds-refresh-all = Update all feeds
+feeds-refreshing-all = Updating feeds…
 feeds-add-url-label = Feed URL
 feeds-add-preview = Preview feed
 feeds-add-cancel = Cancel
