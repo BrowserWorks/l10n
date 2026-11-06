@@ -246,6 +246,53 @@ feeds-source-count = { $title } ({ $count })
 #   $folder (String) - The bookmark folder holding the subscription.
 feeds-saved-in = Saved in { $folder }
 feeds-show-more = Show more articles
+sidebar-menu-feeds-label =
+    .label = Feeds
+feeds-sidebar-header =
+    .heading = Feeds
+feeds-sidebar-search =
+    .aria-label = Search feeds and headlines
+    .placeholder = Search feeds
+feeds-sidebar-unread = All unread
+feeds-sidebar-refresh =
+    .title = Refresh feeds
+    .aria-label = Refresh feeds
+feeds-sidebar-open-reader = Open full reader
+feeds-sidebar-open-reader-button =
+    .aria-label = Open full reader
+    .title = Open full reader
+feeds-sidebar-article-read =
+    .aria-description = Read
+feeds-sidebar-article-unread =
+    .aria-description = Unread
+# Variables:
+#   $title (String) - The article title.
+feeds-sidebar-mark-read =
+    .aria-label = Mark “{ $title }” as read
+    .title = Mark as read
+# Variables:
+#   $title (String) - The article title.
+feeds-sidebar-mark-unread =
+    .aria-label = Mark “{ $title }” as unread
+    .title = Mark as unread
+# Variables:
+#   $title (String) - The feed title.
+feeds-sidebar-open-source =
+    .aria-label = Open full reader for { $title }
+
+feeds-sidebar-error = Couldn’t update feeds. Try again later.
+feeds-sidebar-storage-error = Couldn’t load your feed subscriptions. Open the full reader to try again.
+feeds-sidebar-recovery-notice = Your feed subscriptions were recovered from a backup or cached feeds.
+# Variables:
+#   $title (String) - The subscription title.
+#   $count (Number) - Its unread article count.
+feeds-sidebar-source =
+    .aria-label =
+        { $title }, { $count } unread { $count ->
+            [one] article
+           *[other] articles
+        }
+
 feeds-rail-feeds = Feeds
 feeds-live-bookmarks-heading = Live Bookmarks
 feeds-search-placeholder =
