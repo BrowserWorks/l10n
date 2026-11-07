@@ -275,3 +275,48 @@ feeds-unread-count =
         [one] Feed
        *[other] Feeds
     }
+feeds-status-reloaded-all = Feeds aktualisiert.
+feeds-error-subscription-limit = Sie können maximal { $limit } Feeds abonnieren. Beenden Sie ein Abonnement, bevor Sie ein neues hinzufügen.
+feeds-error-refresh-all =
+    { $count ->
+        [one] Ein Feed konnte nicht aktualisiert werden. Die im Cache gespeicherten Artikel sind weiterhin verfügbar. Versuchen Sie es später erneut.
+       *[other] { $count } Feeds konnten nicht aktualisiert werden. Die im Cache gespeicherten Artikel sind weiterhin verfügbar. Versuchen Sie es später erneut.
+    }
+feeds-refresh-all = Alle Feeds aktualisieren
+feeds-refreshing-all = Feeds werden aktualisiert…
+sidebar-menu-feeds-label =
+    .label = Feeds
+feeds-sidebar-header =
+    .heading = Feeds
+feeds-sidebar-search =
+    .aria-label = Feeds und Schlagzeilen suchen
+    .placeholder = Feeds suchen
+feeds-sidebar-unread = Alle ungelesen
+feeds-sidebar-refresh =
+    .title = Feeds aktualisieren
+    .aria-label = Feeds aktualisieren
+feeds-sidebar-open-reader = Vollständigen Reader öffnen
+feeds-sidebar-open-reader-button =
+    .aria-label = Vollständigen Reader öffnen
+    .title = Vollständigen Reader öffnen
+feeds-sidebar-article-read =
+    .aria-description = Gelesen
+feeds-sidebar-article-unread =
+    .aria-description = Ungelesen
+feeds-sidebar-mark-read =
+    .aria-label = „{ $title }“ als gelesen markieren
+    .title = Als gelesen markieren
+feeds-sidebar-mark-unread =
+    .aria-label = „{ $title }“ als ungelesen markieren
+    .title = Als ungelesen markieren
+feeds-sidebar-open-source =
+    .aria-label = Vollständigen Reader für { $title } öffnen
+feeds-sidebar-error = Feeds konnten nicht aktualisiert werden. Versuchen Sie es später erneut.
+feeds-sidebar-storage-error = Ihre Feed-Abonnements konnten nicht geladen werden. Öffnen Sie den vollständigen Reader, um es erneut zu versuchen.
+feeds-sidebar-recovery-notice = Ihre Feed-Abonnements wurden aus einem Backup oder aus zwischengespeicherten Feeds wiederhergestellt.
+feeds-sidebar-source =
+    .aria-label =
+        { $title }, { $count } ungelesen { $count ->
+            [one] Artikel
+           *[other] Artikel
+        }
