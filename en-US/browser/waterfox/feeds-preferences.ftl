@@ -109,6 +109,18 @@ waterfox-feeds-error-import-changed =
     .message = Subscriptions changed since the import review. Review the OPML file again before importing.
 waterfox-feeds-error-export =
     .message = Could not export subscriptions. Check that you can save to the chosen location.
+# Variables:
+#   $limit (Number) - The maximum number of feed subscriptions.
+waterfox-feeds-error-subscription-limit =
+    .message = You can subscribe to at most { $limit } feeds. Import fewer feeds or remove existing subscriptions.
+# Variables:
+#   $message (String) - The reason an OPML import failed.
+waterfox-feeds-error-import-details =
+    .message = Could not import subscriptions: { $message }
+# Variables:
+#   $message (String) - The reason an OPML export failed.
+waterfox-feeds-error-export-details =
+    .message = Could not export subscriptions: { $message }
 waterfox-feeds-error-invalid-opml =
     .message = Choose a valid UTF-8 OPML file without DTD or entity declarations.
 waterfox-feeds-error-file-too-large =

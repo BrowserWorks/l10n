@@ -99,6 +99,7 @@ feeds-status-ready = Subscriptions loaded.
 feeds-status-subscribed = Subscribed to the feed.
 feeds-status-removed = Subscription removed.
 feeds-status-reloaded = Feed reloaded.
+feeds-status-reloaded-all = Feeds updated.
 feeds-status-preview = Showing saved feed content.
 feeds-status-direct-preview = Showing feed preview.
 
@@ -110,6 +111,16 @@ feeds-error-invalid-request = The feed request was not valid.
 feeds-error-invalid-url = Enter a valid HTTP or HTTPS feed URL without a username or password.
 feeds-error-busy = Another feed operation is in progress. Try again when it finishes.
 feeds-error-retry-later = The feed server asked us to wait. Try reloading later.
+# Variables:
+#   $limit (Number) - The maximum number of feed subscriptions.
+feeds-error-subscription-limit = You can subscribe to at most { $limit } feeds. Remove a subscription before adding another.
+# Variables:
+#   $count (Number) - The number of subscriptions that failed to update.
+feeds-error-refresh-all =
+    { $count ->
+        [one] One feed couldn’t be updated. Cached articles are still available. Try again later.
+       *[other] { $count } feeds couldn’t be updated. Cached articles are still available. Try again later.
+    }
 feeds-error-saved-limit = You have reached the saved article limit. Remove a saved article before saving another.
 feeds-error-not-found = This subscription no longer exists.
 feeds-error-operation = The feed operation could not be completed. Check the feed address and connection. A folder containing saved bookmarks cannot be removed here.
@@ -169,6 +180,8 @@ feeds-entry-unvisited =
 feeds-all = All feeds
 feeds-saved = Saved
 feeds-add = Add feed
+feeds-refresh-all = Update all feeds
+feeds-refreshing-all = Updating feeds…
 feeds-add-url-label = Feed URL
 feeds-add-preview = Preview feed
 feeds-add-cancel = Cancel
@@ -246,6 +259,53 @@ feeds-source-count = { $title } ({ $count })
 #   $folder (String) - The bookmark folder holding the subscription.
 feeds-saved-in = Saved in { $folder }
 feeds-show-more = Show more articles
+sidebar-menu-feeds-label =
+    .label = Feeds
+feeds-sidebar-header =
+    .heading = Feeds
+feeds-sidebar-search =
+    .aria-label = Search feeds and headlines
+    .placeholder = Search feeds
+feeds-sidebar-unread = All unread
+feeds-sidebar-refresh =
+    .title = Refresh feeds
+    .aria-label = Refresh feeds
+feeds-sidebar-open-reader = Open full reader
+feeds-sidebar-open-reader-button =
+    .aria-label = Open full reader
+    .title = Open full reader
+feeds-sidebar-article-read =
+    .aria-description = Read
+feeds-sidebar-article-unread =
+    .aria-description = Unread
+# Variables:
+#   $title (String) - The article title.
+feeds-sidebar-mark-read =
+    .aria-label = Mark “{ $title }” as read
+    .title = Mark as read
+# Variables:
+#   $title (String) - The article title.
+feeds-sidebar-mark-unread =
+    .aria-label = Mark “{ $title }” as unread
+    .title = Mark as unread
+# Variables:
+#   $title (String) - The feed title.
+feeds-sidebar-open-source =
+    .aria-label = Open full reader for { $title }
+
+feeds-sidebar-error = Couldn’t update feeds. Try again later.
+feeds-sidebar-storage-error = Couldn’t load your feed subscriptions. Open the full reader to try again.
+feeds-sidebar-recovery-notice = Your feed subscriptions were recovered from a backup or cached feeds.
+# Variables:
+#   $title (String) - The subscription title.
+#   $count (Number) - Its unread article count.
+feeds-sidebar-source =
+    .aria-label =
+        { $title }, { $count } unread { $count ->
+            [one] article
+           *[other] articles
+        }
+
 feeds-rail-feeds = Feeds
 feeds-live-bookmarks-heading = Live Bookmarks
 feeds-search-placeholder =
