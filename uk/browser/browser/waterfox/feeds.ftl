@@ -285,3 +285,52 @@ feeds-unread-count =
         [few] каналах
        *[many] каналах
     }
+feeds-status-reloaded-all = Канали оновлено.
+feeds-error-subscription-limit = Ви можете підписатися на якнайбільше { $limit } каналів. Вилучіть підписку перед додаванням ще однієї.
+feeds-error-refresh-all =
+    { $count ->
+        [one] Не вдалося оновити один канал. Кешовані статті залишаються доступними. Спробуйте ще раз пізніше.
+        [few] Не вдалося оновити { $count } канали. Кешовані статті залишаються доступними. Спробуйте ще раз пізніше.
+        [many] Не вдалося оновити { $count } каналів. Кешовані статті залишаються доступними. Спробуйте ще раз пізніше.
+       *[other] Не вдалося оновити { $count } каналу. Кешовані статті залишаються доступними. Спробуйте ще раз пізніше.
+    }
+feeds-refresh-all = Оновити усі канали
+feeds-refreshing-all = Оновлення каналів…
+sidebar-menu-feeds-label =
+    .label = Канали
+feeds-sidebar-header =
+    .heading = Канали
+feeds-sidebar-search =
+    .aria-label = Пошук каналів та заголовків
+    .placeholder = Пошук каналів
+feeds-sidebar-unread = Всі непрочитані
+feeds-sidebar-refresh =
+    .title = Оновити канали
+    .aria-label = Оновити канали
+feeds-sidebar-open-reader = Відкрити повний текст
+feeds-sidebar-open-reader-button =
+    .aria-label = Відкрити повний текст
+    .title = Відкрити повний текст
+feeds-sidebar-article-read =
+    .aria-description = Прочитано
+feeds-sidebar-article-unread =
+    .aria-description = Непрочитано
+feeds-sidebar-mark-read =
+    .aria-label = Позначити “{ $title }” як прочитаний
+    .title = Позначити як прочитаний
+feeds-sidebar-mark-unread =
+    .aria-label = Позначити “{ $title }” як непрочитаний
+    .title = Позначити як непрочитаний
+feeds-sidebar-open-source =
+    .aria-label = Відкрити повний текст для { $title }
+feeds-sidebar-error = Не вдалося оновити канали. Спробуйте ще раз пізніше.
+feeds-sidebar-storage-error = Не вдалося завантажити ваші підписки на канали. Відкрийте повний текст та спробуйте ще раз.
+feeds-sidebar-recovery-notice = Ваші підписки на канали відновлено з резервної копії або кешованих каналів.
+feeds-sidebar-source =
+    .aria-label =
+        { $title }, непрочитаних: { $count } { $count ->
+            [one] стаття
+            [few] статті
+            [many] статей
+           *[other] статті
+        }
