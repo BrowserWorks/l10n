@@ -1,24 +1,61 @@
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+geolocation-api-header = API geolokalizacji
 
-geolocation-api-header = Geolokalizacja
-geolocation-description = Niektóre strony internetowe wymagają twojej lokalizacji do poprawnego działania. Jeżeli strona nie działa prawidłowo z powodu problemu z ustaleniem lokalizacji, włącz geolokalizację i spróbuj ponownie wczytać stronę.
+geolocation-description = Niektóre witryny do poprawnego działania wymagają informacji o Twoim położeniu. Jeśli witryna nie działa z powodu braku dostępu do Twojej lokalizacji, włącz tę opcję i spróbuj ponownie.
+
 geolocation-api-enabled =
     .label = Włącz
+
 geolocation-api-disabled =
     .label = Wyłącz
-send-referrer-header-0 =
-    .label = Nigdy nie będzie wysyłał nagłówka odsyłającego
-send-referrer-header-1 =
-    .label = Będzie wysyłał nagłówek odsyłający, jedynie podczas klikania na linki i podobne elementy
-send-referrer-header-2 =
-    .label = Będzie wysyłał nagłówek odsyłający w przypadku wszystkich żądań (Domyślnie)
-enable-webrtc-p2p =
-    .label = Włącz połączenie WebRTC P2P
+
+identity-allow-site-data = Zawsze przechowuj ciasteczka i dane tej witryny
+
+waterfox-data-collection-group =
+    .label = Zbieranie i wykorzystanie danych w programie { -brand-short-name }
+    .description = Program { -brand-short-name } nie gromadzi danych telemetrycznych ani danych o użytkowaniu. Opcjonalne usługi, takie jak Sync, mogą podlegać własnym zasadom ochrony prywatności.
+    .searchkeywords = prywatność telemetria zbieranie danych zasady ochrony prywatności
+
+waterfox-data-collection-link = Wyświetl zasady ochrony prywatności
+
+waterfox-advanced-web-privacy-group =
+    .label = Zaawansowana ochrona prywatności w sieci
+    .description = Kontroluj globalne zachowanie połączeń i nagłówka referrer dla witryn internetowych.
+
+waterfox-web-content-group =
+    .label = Zawartość sieciowa
+    .description = Te ustawienia mają zastosowanie globalnie do każdej witryny.
+
+enable-javascript =
+    .label = Włącz JavaScript
+    .description = Dotyczy stron wczytywanych po zmianie tego ustawienia.
+
 load-images =
     .label = Automatycznie wczytuj obrazy
-enable-javascript =
-    .label = Włącz obsługę JavaScript
-webrtc-header = Połączenie WebRTC P2P
-ref-header = Nagłówek HTTP odsyłający
+    .description = Dotyczy przyszłych wczytywań obrazów na stronach HTTP i HTTPS.
+
+ref-header = Nagłówek HTTP Referrer
+
+waterfox-referrer-header-policy =
+    .label = Zasady nagłówka Referrer
+    .description = Zasady witryn i zabezpieczenia prywatności mogą nadal skracać lub pomijać ten nagłówek.
+
+send-referrer-header-0 =
+    .label = Nigdy nie wysyłaj nagłówka referrer
+
+send-referrer-header-1 =
+    .label = Wysyłaj tylko podczas przechodzenia między dokumentami
+
+send-referrer-header-2 =
+    .label = Wysyłaj podczas przechodzenia oraz dla zasobów strony (domyślnie)
+
+webrtc-header = Połączenia bezpośrednie WebRTC
+
+enable-webrtc-p2p =
+    .label = Włącz połączenia bezpośrednie WebRTC
+    .description = Dotyczy stron wczytywanych po zmianie tego ustawienia.
+
+waterfox-extension-controlling-setting = <img data-l10n-name="icon"/> Rozszerzenie <strong>{ $name }</strong> kontroluje to ustawienie.
+
+telemetry-page-subtitle = Waterfox nie gromadzi danych telemetrycznych na temat Twojej instalacji – wszelkie moduły telemetryczne są wyłączone na etapie kompilacji przeglądarki. To, co robisz w przeglądarce, pozostaje wyłącznie Twoją wiedzą.
+
+telemetry-privacy-policy = Zasady ochrony prywatności
