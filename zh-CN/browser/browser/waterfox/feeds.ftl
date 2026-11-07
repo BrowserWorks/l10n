@@ -195,3 +195,4 @@ feeds-visit-website = 访问网站
 feeds-subscribe-rename =
     .label = 重命名
 feeds-subscribed-heading = 已关注
+feeds-add-dialog-title = 添加一个订阅
