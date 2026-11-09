@@ -275,3 +275,48 @@ feeds-unread-count =
         [one] fotha
        *[other] fothaí
     }
+feeds-status-reloaded-all = Nuashonraíodh na fothaí.
+feeds-error-subscription-limit = Is féidir leat síntiús a fháil le { $limit } fotha ar a mhéad. Bain síntiús amháin sula gcuireann tú ceann eile leis.
+feeds-error-refresh-all =
+    { $count ->
+        [one] Níorbh fhéidir fotha amháin a nuashonrú. Tá na hailt atá sa taisce fós ar fáil. Bain triail as arís níos déanaí.
+       *[other] Níorbh fhéidir { $count } fhotha a nuashonrú. Tá na hailt atá sa taisce fós ar fáil. Bain triail as arís níos déanaí.
+    }
+feeds-refresh-all = Nuashonraigh gach fotha
+feeds-refreshing-all = Ag nuashonrú fothaí…
+sidebar-menu-feeds-label =
+    .label = Fothaí
+feeds-sidebar-header =
+    .heading = Fothaí
+feeds-sidebar-search =
+    .aria-label = Cuardaigh fothaí agus ceannlínte
+    .placeholder = Cuardaigh fothaí
+feeds-sidebar-unread = Gach rud gan léamh
+feeds-sidebar-refresh =
+    .title = Athnuaigh fothaí
+    .aria-label = Athnuaigh fothaí
+feeds-sidebar-open-reader = Oscail an léitheoir iomlán
+feeds-sidebar-open-reader-button =
+    .aria-label = Oscail an léitheoir iomlán
+    .title = Oscail an léitheoir iomlán
+feeds-sidebar-article-read =
+    .aria-description = Léigh
+feeds-sidebar-article-unread =
+    .aria-description = Gan Léamh
+feeds-sidebar-mark-read =
+    .aria-label = Marcáil “{ $title }” mar léite
+    .title = Marcáil mar léite
+feeds-sidebar-mark-unread =
+    .aria-label = Marcáil “{ $title }” mar rud nár léadh
+    .title = Marcáil mar rud nár léadh
+feeds-sidebar-open-source =
+    .aria-label = Oscail an léitheoir iomlán le haghaidh { $title }
+feeds-sidebar-error = Níorbh fhéidir fothaí a nuashonrú. Bain triail as arís níos déanaí.
+feeds-sidebar-storage-error = Níorbh fhéidir do shíntiúis fhreatha a luchtú. Oscail an léitheoir iomlán chun triail eile a bhaint as.
+feeds-sidebar-recovery-notice = Athchóiríodh do shíntiúis fhotha ó chúltaca nó ó fhothaí a bhí i dtaisce.
+feeds-sidebar-source =
+    .aria-label =
+        { $title }, { $count } rud gan léamh { $count ->
+            [one] alt
+           *[other] altanna
+        }
